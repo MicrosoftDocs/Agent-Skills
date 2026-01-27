@@ -66,7 +66,7 @@ Each skill provides:
 1. **Clone the repo:**
    ```bash
    # For GitHub Copilot (recommended)
-   git clone https://github.com/YourOrg/Agent-Skills.git .github/skills
+   git clone https://github.com/MicrosoftDocs/agent-skills.git .github/skills
    ```
 
 2. **Pick your service** — Browse the `skills/` directory for Azure services you're working with.
@@ -138,41 +138,41 @@ Choose the installation path based on your preferred AI coding assistant:
 
 ```bash
 # Clone to your project's .github/skills directory
-git clone https://github.com/YourOrg/Agent-Skills.git .github/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git .github/skills
 ```
 
 ### For Claude Code
 
 ```bash
 # Project-level skills
-git clone https://github.com/YourOrg/Agent-Skills.git .claude/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git .claude/skills
 
 # Or personal skills (available across all projects)
-git clone https://github.com/YourOrg/Agent-Skills.git ~/.claude/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git ~/.claude/skills
 ```
 
 ### For OpenAI Codex
 
 ```bash
 # Project-level skills
-git clone https://github.com/YourOrg/Agent-Skills.git .codex/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git .codex/skills
 
 # Or user-level skills
-git clone https://github.com/YourOrg/Agent-Skills.git ~/.codex/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git ~/.codex/skills
 ```
 
 ### For Cursor
 
 ```bash
 # Clone to .cursor/skills directory
-git clone https://github.com/YourOrg/Agent-Skills.git .cursor/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git .cursor/skills
 ```
 
 ### For Gemini CLI
 
 ```bash
 # Clone to .gemini/skills directory
-git clone https://github.com/YourOrg/Agent-Skills.git .gemini/skills
+git clone https://github.com/MicrosoftDocs/agent-skills.git .gemini/skills
 ```
 
 ---
