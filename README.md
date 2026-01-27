@@ -1,14 +1,16 @@
 # ☁️ Azure Agent Skills
 
-> **70+ Agentic Skills for Azure Development** — Designed for GitHub Copilot, Claude Code, Cursor, Gemini CLI & More
+> **70+ Agentic Skills for Azure Development** — Designed for GitHub Copilot, Claude Code, Cursor, OpenAI Codex & More
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-green)](https://agentskills.io/)
 [![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Compatible-blue)](https://github.com/features/copilot)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-purple)](https://claude.ai/)
 [![Cursor](https://img.shields.io/badge/Cursor-Compatible-orange)](https://cursor.sh/)
+[![OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-Compatible-black)](https://openai.com/codex)
 
-Azure Agent Skills is a curated collection of **70+ high-quality agentic skills** specifically designed for Azure cloud development. These skills work seamlessly with modern AI coding assistants to provide expert-level guidance on Azure services.
+Azure Agent Skills is a curated collection of **70+ high-quality agentic skills** specifically designed for Azure cloud development. These skills follow the [Agent Skills open standard](https://agentskills.io/) and work seamlessly with modern AI coding assistants to provide expert-level guidance on Azure services.
 
 ---
 
@@ -17,9 +19,9 @@ Azure Agent Skills is a curated collection of **70+ high-quality agentic skills*
 - [🚀 New Here? Start Here!](#-new-here-start-here)
 - [🔌 Compatibility & Invocation](#-compatibility--invocation)
 - [📦 Features & Categories](#-features--categories)
-- [📜 Full Skill Registry](#-full-skill-registry)
 - [🛠️ Installation](#️-installation)
 - [🧠 How to Use](#-how-to-use)
+- [📖 Agent Skills Documentation](#-agent-skills-documentation)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚖️ License](#️-license)
 
@@ -29,7 +31,9 @@ Azure Agent Skills is a curated collection of **70+ high-quality agentic skills*
 
 ### 1. 🐣 What is this?
 
-AI Agents (like GitHub Copilot, Claude Code, or Cursor) are smart, but they lack specific, up-to-date knowledge about Azure services. **Skills** are markdown files that teach them how to work with Azure services correctly, every time.
+AI Agents (like GitHub Copilot, Claude Code, or Cursor) are smart, but they lack specific, up-to-date knowledge about Azure services. **Skills** are folders containing markdown instructions, scripts, and resources that teach AI agents how to work with Azure services correctly, every time.
+
+> 💡 Skills are reusable, filesystem-based resources that provide AI agents with domain-specific expertise. They load on-demand and eliminate the need to repeatedly provide the same guidance across conversations.
 
 Each skill provides:
 - 📚 Curated documentation links organized by topic
@@ -41,14 +45,21 @@ Each skill provides:
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/YourOrg/Agent-Skills.git .copilot/skills
+   # For GitHub Copilot (recommended)
+   git clone https://github.com/YourOrg/Agent-Skills.git .github/skills
    ```
 
 2. **Pick your service** — Browse the `skills/` directory for Azure services you're working with.
 
-3. **Start coding** — Your AI assistant will now have expert-level Azure knowledge!
+3. **Start coding** — Your AI assistant will automatically discover and use relevant skills!
 
-### 3. 🧠 How to Use
+### 3. 🧠 How Skills Work
+
+Skills use **progressive disclosure** to efficiently load content only when needed:
+
+1. **Level 1 - Discovery**: Agent reads skill `name` and `description` from YAML frontmatter
+2. **Level 2 - Instructions**: When triggered, agent loads the full `SKILL.md` content
+3. **Level 3 - Resources**: Agent accesses additional files (scripts, examples) as needed
 
 Once installed, just ask your AI assistant naturally:
 
@@ -64,16 +75,18 @@ The skills will automatically provide context from official Microsoft documentat
 
 ## 🔌 Compatibility & Invocation
 
-These skills follow the universal `SKILL.md` format and work with any AI coding assistant that supports agentic skills.
+These skills follow the [Agent Skills open standard](https://agentskills.io/) (`SKILL.md` format) and work with any AI coding assistant that supports agentic skills.
 
-| Agent | Type | How to Invoke | Skill Path |
-|-------|------|---------------|------------|
-| **GitHub Copilot** | VS Code Ext | Chat with @workspace | `.copilot/skills/` |
-| **Claude Code** | CLI | `/skill-name` or natural language | `.claude/skills/` |
-| **Cursor** | IDE | `@skill-name` in Chat | `.cursor/skills/` |
-| **Gemini CLI** | CLI | Natural language | `.gemini/skills/` |
+| Agent | Type | Skill Path | How to Invoke | Documentation |
+|-------|------|------------|---------------|---------------|
+| **GitHub Copilot** | VS Code / CLI | `.github/skills/` | Natural language or `@workspace` | [Docs](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) |
+| **VS Code Copilot** | IDE | `.github/skills/` | Agent mode chat | [Docs](https://code.visualstudio.com/docs/copilot/customization/agent-skills) |
+| **Claude Code** | CLI | `.claude/skills/` | Natural language | [Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) |
+| **OpenAI Codex** | CLI | `.codex/skills/` | `$skill-name` or natural language | [Docs](https://developers.openai.com/codex/skills/) |
+| **Cursor** | IDE | `.cursor/skills/` | `@skill-name` in Chat | [Docs](https://cursor.sh/) |
+| **Gemini CLI** | CLI | `.gemini/skills/` | Natural language | [Docs](https://github.com/google-gemini/gemini-cli) |
 
-> 💡 **Tip:** We recommend cloning to `.copilot/skills/` for GitHub Copilot users. Adjust the path based on your AI assistant.
+> 💡 **Tip:** We recommend cloning to `.github/skills/` for GitHub Copilot users. This is the recommended path per the [Agent Skills specification](https://agentskills.io/specification).
 
 ---
 
@@ -93,55 +106,39 @@ The repository is organized by Azure service domains:
 | 💰 **Management** | ~5 | Cost Management, Governance, Azure Monitor, Automation |
 | 🎮 **Specialized** | ~10+ | IoT, Digital Twins, Communication Services, Bot Service |
 
----
-
-## 📜 Full Skill Registry
-
-| Skill | Description | Path |
-|-------|-------------|------|
-| ai-foundry | Azure AI Foundry development guidance | `skills/ai-foundry` |
-| api-center | API Center configuration and management | `skills/api-center` |
-| api-management | Azure API Management patterns and best practices | `skills/api-management` |
-| app-service | Azure App Service deployment and configuration | `skills/app-service` |
-| application-gateway | Application Gateway setup and troubleshooting | `skills/application-gateway` |
-| architecture | Azure architecture patterns and design | `skills/architecture` |
-| automation | Azure Automation runbooks and configuration | `skills/automation` |
-| azure-functions | Azure Functions development and Durable Functions | `skills/azure-functions` |
-| azure-monitor | Monitoring, logging, and alerting | `skills/azure-monitor` |
-| azure-sql | Azure SQL Database patterns and optimization | `skills/azure-sql` |
-| container-apps | Azure Container Apps development | `skills/container-apps` |
-| data-factory | Data pipelines and ETL patterns | `skills/data-factory` |
-| digital-twins | Azure Digital Twins modeling and integration | `skills/digital-twins` |
-| iot | Azure IoT Hub and IoT solutions | `skills/iot` |
-| logic-apps | Logic Apps workflows and connectors | `skills/logic-apps` |
-| machine-learning | Azure ML model training and deployment | `skills/machine-learning` |
-| networking | Virtual networks, subnets, and network security | `skills/networking` |
-| private-link | Private endpoints and secure connectivity | `skills/private-link` |
-| redis | Azure Cache for Redis patterns | `skills/redis` |
-| role-based-access-control | RBAC configuration and custom roles | `skills/role-based-access-control` |
-| static-web-apps | Static Web Apps deployment | `skills/static-web-apps` |
-| synapse-analytics | Synapse Analytics data warehousing | `skills/synapse-analytics` |
-| virtual-machines | VM provisioning and management | `skills/virtual-machines` |
-| ... | *And 50+ more Azure services!* | `skills/` |
-
-> 📁 Browse the full `skills/` directory for all available skills.
+> 📁 Browse the full `skills/` directory for all 70+ available Azure skills.
 
 ---
 
 ## 🛠️ Installation
 
+Choose the installation path based on your preferred AI coding assistant:
+
 ### For GitHub Copilot (Recommended)
 
 ```bash
-# Clone to your project's .copilot/skills directory
-git clone https://github.com/YourOrg/Agent-Skills.git .copilot/skills
+# Clone to your project's .github/skills directory
+git clone https://github.com/YourOrg/Agent-Skills.git .github/skills
 ```
 
 ### For Claude Code
 
 ```bash
-# Clone to .claude/skills directory
+# Project-level skills
 git clone https://github.com/YourOrg/Agent-Skills.git .claude/skills
+
+# Or personal skills (available across all projects)
+git clone https://github.com/YourOrg/Agent-Skills.git ~/.claude/skills
+```
+
+### For OpenAI Codex
+
+```bash
+# Project-level skills
+git clone https://github.com/YourOrg/Agent-Skills.git .codex/skills
+
+# Or user-level skills
+git clone https://github.com/YourOrg/Agent-Skills.git ~/.codex/skills
 ```
 
 ### For Cursor
@@ -190,6 +187,49 @@ Most skills require **network access** to fetch the latest documentation from Mi
 
 ---
 
+## 📖 Agent Skills Documentation
+
+Agent Skills is an **open standard** for giving AI agents new capabilities. Learn more about how each platform implements skills:
+
+### Official Documentation
+
+| Platform | Documentation | Description |
+|----------|---------------|-------------|
+| **Agent Skills Standard** | [agentskills.io](https://agentskills.io/) | The open specification for `SKILL.md` format |
+| **GitHub Copilot** | [About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) | Skills for Copilot coding agent, CLI, and VS Code |
+| **VS Code Copilot** | [Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills) | Using skills in VS Code with agent mode |
+| **Claude Code** | [Agent Skills Overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | Skills in Claude Code and Claude API |
+| **OpenAI Codex** | [Agent Skills](https://developers.openai.com/codex/skills/) | Skills for Codex CLI and IDE extensions |
+
+### Example Skill Repositories
+
+| Repository | Description |
+|------------|-------------|
+| [anthropics/skills](https://github.com/anthropics/skills) | Official Anthropic skills (DOCX, PDF, PPTX, XLSX) |
+| [openai/skills](https://github.com/openai/skills) | OpenAI Codex skills catalog |
+| [github/awesome-copilot](https://github.com/github/awesome-copilot) | Community collection for GitHub Copilot |
+
+### Skill Structure
+
+Every skill requires a `SKILL.md` file with YAML frontmatter:
+
+```yaml
+---
+name: your-skill-name        # Lowercase, hyphens only, max 64 chars
+description: What it does    # When to use it, max 1024 chars
+---
+
+# Your Skill Name
+
+## Instructions
+[Clear, step-by-step guidance for the AI agent]
+
+## Examples
+[Concrete examples of using this skill]
+```
+
+---
+
 ## 🤝 How to Contribute
 
 We welcome contributions from the community! To add a new skill:
@@ -227,15 +267,16 @@ This project uses a dual license:
 
 ## 📚 Additional Resources
 
+- [Agent Skills Specification](https://agentskills.io/specification) - The complete format specification
 - [Microsoft Learn Documentation](https://learn.microsoft.com/)
 - [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/)
-- [Azure Best Practices](https://learn.microsoft.com/azure/well-architected/)
+- [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/)
 
 ---
 
 ## 🏷️ Topics
 
-`azure` `azure-functions` `azure-container-apps` `agent-skills` `ai-coding` `github-copilot` `claude-code` `cursor` `agentic-skills` `llm-tools` `microsoft-learn` `SKILL.md`
+`azure` `azure-functions` `azure-container-apps` `agent-skills` `ai-coding` `github-copilot` `claude-code` `cursor` `openai-codex` `agentic-skills` `llm-tools` `microsoft-learn` `SKILL.md`
 
 ---
 
