@@ -1,6 +1,6 @@
 # ☁️ Azure Agent Skills
 
-> **70+ Agentic Skills for Azure Development** — Designed for GitHub Copilot, Claude Code, Cursor, OpenAI Codex & More
+> **Agentic Skills for Azure Development** — Designed for GitHub Copilot, Claude Code, Cursor, OpenAI Codex & More
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,7 +10,7 @@
 [![Cursor](https://img.shields.io/badge/Cursor-Compatible-orange)](https://cursor.sh/)
 [![OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-Compatible-black)](https://openai.com/codex)
 
-Azure Agent Skills is a curated collection of **70+ high-quality agentic skills** specifically designed for Azure cloud development. These skills follow the [Agent Skills open standard](https://agentskills.io/) and work seamlessly with modern AI coding assistants to provide expert-level guidance on Azure services.
+Azure Agent Skills is a curated collection of **high-quality agentic skills** specifically designed for Azure cloud development. These skills follow the [Agent Skills open standard](https://agentskills.io/) and work seamlessly with modern AI coding assistants to provide expert-level guidance on Azure services.
 
 ---
 
@@ -35,13 +35,33 @@ AI Agents (like GitHub Copilot, Claude Code, or Cursor) are smart, but they lack
 
 > 💡 Skills are reusable, filesystem-based resources that provide AI agents with domain-specific expertise. They load on-demand and eliminate the need to repeatedly provide the same guidance across conversations.
 
+### 2. 📚 How These Skills Are Created
+
+Microsoft Learn documentation already encodes **decisions, procedures, best practices, and constraints** — exactly what agents need to act effectively. Rather than relying on RAG to retrieve and summarize raw text every time, we **pre-compile this knowledge into structured, executable skills**.
+
+**Documentation as Pre-Built Skills**: Many effective agent skills are not new inventions — they are structured patterns, workflows, and decision logic that already exist in documentation. Consider what Learn content contains:
+
+- API patterns and usage guidance
+- Service configuration procedures  
+- Platform best practices and constraints
+- Troubleshooting decision trees
+- Security and compliance requirements
+
+**Our approach:**
+
+1. **Extract** high-value, task-oriented capabilities from Learn content
+2. **Classify** by purpose (limits, troubleshooting, configuration, architecture, etc.)
+3. **Reveal** only when relevant to the user's intent
+
+The knowledge is **pre-compiled into actions, choices, and guardrails** the agent can use directly — not raw text that needs interpretation.
+
 Each skill provides:
 - 📚 Curated documentation links organized by topic
 - 🔗 Direct access to Microsoft Learn content
 - 🎯 Best practices and architecture patterns
 - ⚠️ Troubleshooting guides and common pitfalls
 
-### 2. ⚡️ Quick Start
+### 3. ⚡️ Quick Start
 
 1. **Clone the repo:**
    ```bash
@@ -53,7 +73,7 @@ Each skill provides:
 
 3. **Start coding** — Your AI assistant will automatically discover and use relevant skills!
 
-### 3. 🧠 How Skills Work
+### 4. 🧠 How Skills Work
 
 Skills use **progressive disclosure** to efficiently load content only when needed:
 
@@ -106,7 +126,7 @@ The repository is organized by Azure service domains:
 | 💰 **Management** | ~5 | Cost Management, Governance, Azure Monitor, Automation |
 | 🎮 **Specialized** | ~10+ | IoT, Digital Twins, Communication Services, Bot Service |
 
-> 📁 Browse the full `skills/` directory for all 70+ available Azure skills.
+> 📁 Browse the full `skills/` directory for all available Azure skills.
 
 ---
 
