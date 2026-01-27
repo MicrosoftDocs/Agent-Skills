@@ -92,7 +92,17 @@ Each skill provides:
 
    > 💡 Replace `/path/to/agent-skills` or `C:\path\to\agent-skills` with the actual path where you cloned the repository.
 
-3. **Start coding** — Your AI assistant will automatically discover and use relevant skills!
+3. **Enable Agent Skills in VS Code** (Required for VS Code users):
+
+   Agent Skills is currently an **experimental feature**. You must enable it manually:
+
+   1. Open VS Code Settings (`Ctrl+,` on Windows/Linux, `Cmd+,` on macOS)
+   2. Search for `chat.agent.skills`
+   3. Check the box for **"Chat: Use Agent Skills"**
+
+   > ⚠️ **Important:** Without this setting enabled, VS Code will not load or use any skills!
+
+4. **Start coding** — Your AI assistant will automatically discover and use relevant skills!
 
 ### 4. 🧠 How Skills Work
 
