@@ -30,7 +30,7 @@ stages:
       - job: Job
         pool:
           vmImage: ubuntu-latest
-        timeoutInMinutes: 60
+        timeoutInMinutes: 240
 
         steps:
           # 1. Checkout GitHub repo (self - contains products/, skills/)
