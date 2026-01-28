@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-01-28 11:19:00
-**Total Duration**: 4m 24s
+**Generated**: 2026-01-28 11:27:30
+**Total Duration**: 4m 48s
 
 ## Product Crawl Summary
 
@@ -39,10 +39,10 @@ Quick overview for reviewers. See individual product reports for details.
 | 28 | Backup | 391 | 288 | 0 | 0 | 0 | ✓ |
 | 29 | Batch | 114 | 90 | 0 | 0 | 0 | ✓ |
 | 30 | Biztalk Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 31 | Bot Service | 101 | 73 | 10 | 0 | 30 | ✓ |
+| 31 | Bot Service | 190 | 142 | 89 | 0 | 0 | ✓ |
 | 32 | Cache | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 33 | SAP on Azure | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 34 | AI Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 33 | SAP on Azure | 202 | 168 | 0 | 0 | 0 | ✓ |
+| 34 | AI Services | 260 | 188 | 0 | 0 | 122 | ✓ |
 | 35 | Communication Services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 36 | Container Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 37 | CycleCloud | 0 | 0 | 0 | 0 | 0 | ✓ |
@@ -99,25 +99,25 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 86 success, 0 failed
-- **Total Pages**: 4485
-- **Total Classified**: 3119
-- **Total New Pages**: 10
+- **Total Pages**: 5036
+- **Total Classified**: 3544
+- **Total New Pages**: 89
 - **Total Updated Pages**: 0
-- **Total Deleted Pages**: 30
+- **Total Deleted Pages**: 122
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 92 |
-| best-practices | 263 |
-| comparing | 27 |
-| configuration | 986 |
-| deployment | 212 |
-| integrations | 619 |
-| limits-quotas | 174 |
-| security | 451 |
-| troubleshooting | 295 |
+| architecture-patterns | 117 |
+| best-practices | 286 |
+| comparing | 29 |
+| configuration | 1111 |
+| deployment | 269 |
+| integrations | 751 |
+| limits-quotas | 183 |
+| security | 491 |
+| troubleshooting | 307 |
 
 ---
 
