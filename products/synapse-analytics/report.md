@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:04:24
-- **Duration**: 0m 15s
+- **Crawl Time**: 2026-01-28 04:42:41
+- **Duration**: 0m 12s
 - **Total Pages**: 382
 - **Fetched**: 382
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 382
 - **Deleted Pages**: 0
-- **Compared With**: `products\synapse-analytics\synapse-analytics.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/synapse-analytics/synapse-analytics.csv`
 
 ## Classification Statistics
 

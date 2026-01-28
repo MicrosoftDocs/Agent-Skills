@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:00:57
-- **Duration**: 0m 1s
+- **Crawl Time**: 2026-01-28 04:40:16
+- **Duration**: 0m 0s
 - **Total Pages**: 26
 - **Fetched**: 26
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 26
 - **Deleted Pages**: 0
-- **Compared With**: `products\data-manager-for-agri\data-manager-for-agri.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-manager-for-agri/data-manager-for-agri.csv`
 
 ## Classification Statistics
 

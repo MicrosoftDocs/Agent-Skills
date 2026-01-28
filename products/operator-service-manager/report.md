@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:08:25
-- **Duration**: 0m 2s
+- **Crawl Time**: 2026-01-28 04:45:03
+- **Duration**: 0m 1s
 - **Total Pages**: 47
 - **Fetched**: 47
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 47
 - **Deleted Pages**: 0
-- **Compared With**: `products\operator-service-manager\operator-service-manager.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/operator-service-manager/operator-service-manager.csv`
 
 ## Classification Statistics
 

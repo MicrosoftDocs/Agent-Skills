@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:00:52
-- **Duration**: 0m 28s
+- **Crawl Time**: 2026-01-28 04:40:14
+- **Duration**: 0m 20s
 - **Total Pages**: 538
 - **Fetched**: 538
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 538
 - **Deleted Pages**: 0
-- **Compared With**: `products\data-factory\data-factory.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-factory/data-factory.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:57:51
-- **Duration**: 0m 29s
+- **Crawl Time**: 2026-01-28 04:38:06
+- **Duration**: 0m 22s
 - **Total Pages**: 499
 - **Fetched**: 499
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 499
 - **Deleted Pages**: 0
-- **Compared With**: `products\azure-resource-manager\azure-resource-manager.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
 ## Classification Statistics
 

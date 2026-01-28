@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:56:04
-- **Duration**: 0m 2s
+- **Crawl Time**: 2026-01-28 04:36:52
+- **Duration**: 0m 1s
 - **Total Pages**: 42
 - **Fetched**: 42
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 42
 - **Deleted Pages**: 0
-- **Compared With**: `products\managed-grafana\managed-grafana.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/managed-grafana/managed-grafana.csv`
 
 ## Classification Statistics
 

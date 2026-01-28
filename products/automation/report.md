@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:55:35
-- **Duration**: 0m 7s
+- **Crawl Time**: 2026-01-28 04:36:32
+- **Duration**: 0m 4s
 - **Total Pages**: 115
 - **Fetched**: 115
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 115
 - **Deleted Pages**: 0
-- **Compared With**: `products\automation\automation.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/automation/automation.csv`
 
 ## Classification Statistics
 

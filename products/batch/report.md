@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:58:28
-- **Duration**: 0m 5s
+- **Crawl Time**: 2026-01-28 04:38:30
+- **Duration**: 0m 3s
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 114
 - **Deleted Pages**: 0
-- **Compared With**: `products\batch\batch.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/batch/batch.csv`
 
 ## Classification Statistics
 

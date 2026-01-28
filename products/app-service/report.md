@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:54:55
+- **Crawl Time**: 2026-01-28 04:36:05
 - **Duration**: 0m 9s
 - **Total Pages**: 238
 - **Fetched**: 238
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 238
 - **Deleted Pages**: 0
-- **Compared With**: `products\app-service\app-service.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/app-service/app-service.csv`
 
 ## Classification Statistics
 

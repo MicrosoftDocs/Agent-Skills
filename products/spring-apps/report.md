@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:08:05
-- **Duration**: 0m 8s
+- **Crawl Time**: 2026-01-28 04:44:51
+- **Duration**: 0m 5s
 - **Total Pages**: 152
 - **Fetched**: 152
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 152
 - **Deleted Pages**: 0
-- **Compared With**: `products\spring-apps\spring-apps.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/spring-apps/spring-apps.csv`
 
 ## Classification Statistics
 

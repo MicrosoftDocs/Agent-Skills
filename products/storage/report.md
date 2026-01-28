@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:06:34
-- **Duration**: 0m 24s
+- **Crawl Time**: 2026-01-28 04:43:49
+- **Duration**: 0m 18s
 - **Total Pages**: 513
 - **Fetched**: 513
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 513
 - **Deleted Pages**: 0
-- **Compared With**: `products\storage\storage.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/storage/storage.csv`
 
 ## Classification Statistics
 

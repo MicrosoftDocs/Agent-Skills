@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:55:39
-- **Duration**: 0m 3s
+- **Crawl Time**: 2026-01-28 04:36:34
+- **Duration**: 0m 1s
 - **Total Pages**: 49
 - **Fetched**: 49
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 49
 - **Deleted Pages**: 0
-- **Compared With**: `products\update-center\update-center.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/update-center/update-center.csv`
 
 ## Classification Statistics
 

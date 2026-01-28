@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:58:21
-- **Duration**: 0m 19s
+- **Crawl Time**: 2026-01-28 04:38:26
+- **Duration**: 0m 13s
 - **Total Pages**: 391
 - **Fetched**: 391
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 391
 - **Deleted Pages**: 0
-- **Compared With**: `products\backup\backup.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/backup/backup.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:02:30
-- **Duration**: 0m 5s
+- **Crawl Time**: 2026-01-28 04:41:23
+- **Duration**: 0m 3s
 - **Total Pages**: 104
 - **Fetched**: 104
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 104
 - **Deleted Pages**: 0
-- **Compared With**: `products\lab-services\lab-services.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/lab-services/lab-services.csv`
 
 ## Classification Statistics
 

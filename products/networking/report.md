@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:03:32
+- **Crawl Time**: 2026-01-28 04:42:04
 - **Duration**: 0m 1s
 - **Total Pages**: 22
 - **Fetched**: 22
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 22
 - **Deleted Pages**: 0
-- **Compared With**: `products\networking\networking.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/networking/networking.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:05:17
-- **Duration**: 0m 50s
+- **Crawl Time**: 2026-01-28 04:43:05
+- **Duration**: 0m 23s
 - **Total Pages**: 583
 - **Fetched**: 583
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 583
 - **Deleted Pages**: 0
-- **Compared With**: `products\azure-sql\azure-sql.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql/azure-sql.csv`
 
 ## Classification Statistics
 

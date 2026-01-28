@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:58:52
-- **Duration**: 0m 11s
+- **Crawl Time**: 2026-01-28 04:38:45
+- **Duration**: 0m 7s
 - **Total Pages**: 202
 - **Fetched**: 202
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 202
 - **Deleted Pages**: 0
-- **Compared With**: `products\sap\sap.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/sap/sap.csv`
 
 ## Classification Statistics
 

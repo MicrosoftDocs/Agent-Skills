@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:01:44
-- **Duration**: 0m 17s
+- **Crawl Time**: 2026-01-28 04:40:52
+- **Duration**: 0m 13s
 - **Total Pages**: 364
 - **Fetched**: 364
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 364
 - **Deleted Pages**: 0
-- **Compared With**: `products\guidance\guidance.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/guidance/guidance.csv`
 
 ## Classification Statistics
 

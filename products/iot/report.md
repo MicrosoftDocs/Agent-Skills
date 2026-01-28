@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:57:21
-- **Duration**: 0m 2s
+- **Crawl Time**: 2026-01-28 04:37:43
+- **Duration**: 0m 1s
 - **Total Pages**: 40
 - **Fetched**: 40
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 40
 - **Deleted Pages**: 0
-- **Compared With**: `products\iot\iot.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/iot/iot.csv`
 
 ## Classification Statistics
 

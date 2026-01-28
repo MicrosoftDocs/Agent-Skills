@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:00:55
-- **Duration**: 0m 3s
+- **Crawl Time**: 2026-01-28 04:40:15
+- **Duration**: 0m 1s
 - **Total Pages**: 50
 - **Fetched**: 50
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 50
 - **Deleted Pages**: 0
-- **Compared With**: `products\energy-data-services\energy-data-services.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/energy-data-services/energy-data-services.csv`
 
 ## Classification Statistics
 

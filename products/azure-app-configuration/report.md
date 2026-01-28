@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:54:46
-- **Duration**: 0m 7s
+- **Crawl Time**: 2026-01-28 04:35:56
+- **Duration**: 0m 5s
 - **Total Pages**: 158
 - **Fetched**: 158
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 158
 - **Deleted Pages**: 0
-- **Compared With**: `products\azure-app-configuration\azure-app-configuration.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
 ## Classification Statistics
 

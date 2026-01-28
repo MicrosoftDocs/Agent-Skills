@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:58:02
+- **Crawl Time**: 2026-01-28 04:38:12
 - **Duration**: 0m 0s
 - **Total Pages**: 8
 - **Fetched**: 8
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 8
 - **Deleted Pages**: 0
-- **Compared With**: `products\baremetal-infrastructure\baremetal-infrastructure.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/baremetal-infrastructure/baremetal-infrastructure.csv`
 
 ## Classification Statistics
 

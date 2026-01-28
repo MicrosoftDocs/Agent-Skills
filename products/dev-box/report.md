@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:08:09
-- **Duration**: 0m 3s
+- **Crawl Time**: 2026-01-28 04:44:53
+- **Duration**: 0m 2s
 - **Total Pages**: 65
 - **Fetched**: 65
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 65
 - **Deleted Pages**: 0
-- **Compared With**: `products\dev-box\dev-box.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/dev-box/dev-box.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:58:40
-- **Duration**: 0m 11s
+- **Crawl Time**: 2026-01-28 04:38:37
+- **Duration**: 0m 7s
 - **Total Pages**: 190
 - **Fetched**: 190
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 190
 - **Deleted Pages**: 0
-- **Compared With**: `products\bot-service\bot-service.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/bot-service/bot-service.csv`
 
 ## Classification Statistics
 

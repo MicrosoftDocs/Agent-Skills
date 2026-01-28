@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:07:49
-- **Duration**: 0m 1s
+- **Crawl Time**: 2026-01-28 04:44:42
+- **Duration**: 0m 0s
 - **Total Pages**: 12
 - **Fetched**: 12
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 12
 - **Deleted Pages**: 0
-- **Compared With**: `products\devtest\devtest.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/devtest/devtest.csv`
 
 ## Classification Statistics
 

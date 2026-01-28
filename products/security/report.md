@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:03:57
-- **Duration**: 0m 5s
+- **Crawl Time**: 2026-01-28 04:42:20
+- **Duration**: 0m 3s
 - **Total Pages**: 111
 - **Fetched**: 111
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 111
 - **Deleted Pages**: 0
-- **Compared With**: `products\security\security.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/security/security.csv`
 
 ## Classification Statistics
 

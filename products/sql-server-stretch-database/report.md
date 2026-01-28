@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:05:54
-- **Duration**: 0m 36s
+- **Crawl Time**: 2026-01-28 04:43:29
+- **Duration**: 0m 23s
 - **Total Pages**: 583
 - **Fetched**: 583
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 583
 - **Deleted Pages**: 0
-- **Compared With**: `products\sql-server-stretch-database\sql-server-stretch-database.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/sql-server-stretch-database/sql-server-stretch-database.csv`
 
 ## Classification Statistics
 

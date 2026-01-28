@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:00:06
-- **Duration**: 0m 30s
+- **Crawl Time**: 2026-01-28 04:39:42
+- **Duration**: 0m 18s
 - **Total Pages**: 515
 - **Fetched**: 515
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 515
 - **Deleted Pages**: 0
-- **Compared With**: `products\communication-services\communication-services.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/communication-services/communication-services.csv`
 
 ## Classification Statistics
 

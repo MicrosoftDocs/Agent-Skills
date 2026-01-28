@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:00:15
-- **Duration**: 0m 9s
+- **Crawl Time**: 2026-01-28 04:39:49
+- **Duration**: 0m 6s
 - **Total Pages**: 192
 - **Fetched**: 192
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 192
 - **Deleted Pages**: 0
-- **Compared With**: `products\container-apps\container-apps.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/container-apps/container-apps.csv`
 
 ## Classification Statistics
 

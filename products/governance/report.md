@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:01:26
-- **Duration**: 0m 21s
+- **Crawl Time**: 2026-01-28 04:40:39
+- **Duration**: 0m 19s
 - **Total Pages**: 212
 - **Fetched**: 212
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 212
 - **Deleted Pages**: 0
-- **Compared With**: `products\governance\governance.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/governance/governance.csv`
 
 ## Classification Statistics
 

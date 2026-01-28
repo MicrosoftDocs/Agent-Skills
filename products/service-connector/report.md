@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:07:54
-- **Duration**: 0m 3s
+- **Crawl Time**: 2026-01-28 04:44:44
+- **Duration**: 0m 2s
 - **Total Pages**: 63
 - **Fetched**: 63
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 63
 - **Deleted Pages**: 0
-- **Compared With**: `products\service-connector\service-connector.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/service-connector/service-connector.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:02:08
-- **Duration**: 0m 19s
+- **Crawl Time**: 2026-01-28 04:41:08
+- **Duration**: 0m 14s
 - **Total Pages**: 427
 - **Fetched**: 427
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 427
 - **Deleted Pages**: 0
-- **Compared With**: `products\hdinsight\hdinsight.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/hdinsight/hdinsight.csv`
 
 ## Classification Statistics
 

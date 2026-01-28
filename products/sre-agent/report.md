@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:06:01
-- **Duration**: 0m 3s
+- **Crawl Time**: 2026-01-28 04:43:30
+- **Duration**: 0m 0s
 - **Total Pages**: 25
 - **Fetched**: 25
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 25
 - **Deleted Pages**: 0
-- **Compared With**: `products\sre-agent\sre-agent.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/sre-agent/sre-agent.csv`
 
 ## Classification Statistics
 

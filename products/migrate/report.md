@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:03:30
-- **Duration**: 0m 10s
+- **Crawl Time**: 2026-01-28 04:42:03
+- **Duration**: 0m 5s
 - **Total Pages**: 144
 - **Fetched**: 144
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 144
 - **Deleted Pages**: 0
-- **Compared With**: `products\migrate\migrate.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/migrate/migrate.csv`
 
 ## Classification Statistics
 

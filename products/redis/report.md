@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 10:08:29
-- **Duration**: 0m 4s
+- **Crawl Time**: 2026-01-28 04:45:06
+- **Duration**: 0m 2s
 - **Total Pages**: 60
 - **Fetched**: 60
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 60
 - **Deleted Pages**: 0
-- **Compared With**: `products\redis\redis.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/redis/redis.csv`
 
 ## Classification Statistics
 

@@ -2,8 +2,8 @@
 
 ## Summary
 
-- **Crawl Time**: 2026-01-28 09:59:35
-- **Duration**: 0m 42s
+- **Crawl Time**: 2026-01-28 04:39:23
+- **Duration**: 0m 38s
 - **Total Pages**: 382
 - **Fetched**: 382
 - **Fetch Failed**: 0
@@ -15,7 +15,7 @@
 - **Updated Pages**: 0
 - **Unchanged**: 382
 - **Deleted Pages**: 0
-- **Compared With**: `products\ai-services\ai-services.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/ai-services/ai-services.csv`
 
 ## Classification Statistics
 
