@@ -2,7 +2,8 @@
 name: iot
 description: Expert knowledge for Iot development including configuration, integrations & coding patterns, best practices, architecture & design patterns, comparing x vs. y, security, and troubleshooting. Use when building, debugging, or optimizing Iot applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
-generated_at: "2026-01-28"
+metadata:
+  generated_at: "2026-01-28"
 ---
 
 # Iot Skill
@@ -11,7 +12,7 @@ This skill provides expert guidance for Iot development. It combines local quick
 
 ## Prerequisites
 
-> **Agent Note**: If `generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+> **Agent Note**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` to fetch documentation:
 

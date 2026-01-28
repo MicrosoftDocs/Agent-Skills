@@ -2,7 +2,8 @@
 name: update-center
 description: Expert knowledge for Update Center development including configuration, security, comparing x vs. y, best practices, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Update Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
-generated_at: "2026-01-28"
+metadata:
+  generated_at: "2026-01-28"
 ---
 
 # Update Center Skill
@@ -11,7 +12,7 @@ This skill provides expert guidance for Update Center development. It combines l
 
 ## Prerequisites
 
-> **Agent Note**: If `generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+> **Agent Note**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` to fetch documentation:
 

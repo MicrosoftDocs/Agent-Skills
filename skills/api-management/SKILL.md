@@ -2,7 +2,8 @@
 name: api-management
 description: Expert knowledge for Api Management development including configuration, integrations & coding patterns, limits & quotas, security, architecture & design patterns, troubleshooting, comparing x vs. y, deployment, and best practices. Use when building, debugging, or optimizing Api Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
-generated_at: "2026-01-28"
+metadata:
+  generated_at: "2026-01-28"
 ---
 
 # Api Management Skill
@@ -11,7 +12,7 @@ This skill provides expert guidance for Api Management development. It combines 
 
 ## Prerequisites
 
-> **Agent Note**: If `generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+> **Agent Note**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` to fetch documentation:
 
