@@ -159,6 +159,23 @@ The repository is organized by Azure service domains:
 
 > 📁 Browse the full `skills/` directory for all available Azure skills.
 
+### 📂 Repository Structure
+
+| Directory | Purpose |
+|-----------|---------|
+| `skills/` | Production-ready skills for AI agents to consume |
+| `products/` | Scan results, raw data, and reporting artifacts |
+
+#### About the `products/` Directory
+
+The `products/` folder stores **scan pipeline outputs** and is used for:
+
+- **Raw Data**: Results from the latest documentation scan, including extracted nodes and metadata
+- **Classification Reports**: Detailed records of why each node was classified as a skill (or excluded)
+- **Incremental Tracking**: Historical scan data to support delta processing and change detection
+
+> ⚠️ **Note:** The `products/` directory is for internal pipeline use and contributor reference. End users only need the `skills/` directory.
+
 ---
 
 ## 🛠️ Installation
