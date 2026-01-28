@@ -6,8 +6,7 @@
 # 3. Runs docs2skills to crawl and classify docs
 # 4. Pushes results back to GitHub repo
 
-trigger:
-  enabled: false
+trigger: none
 
 schedules:
   - cron: "0 2 * * *"  # Daily at 2:00 AM UTC
@@ -43,7 +42,7 @@ stages:
           - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
             displayName: 'Checkout ADO repo (code)'
             inputs:
-              repository: git://Engineering/Learn.Docs2AgentSkills@refs/heads/create_skills
+              repository: git://Docs/Learn.Docs2AgentSkills@refs/heads/main  # TODO: Update project/repo
 
           # 3. Setup Python
           - task: UsePythonVersion@0
