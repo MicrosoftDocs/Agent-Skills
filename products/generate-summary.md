@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-01-28 11:50:16
-**Total Duration**: 3m 48s
+**Generated**: 2026-01-28 12:54:35
+**Total Duration**: 10m 28s
 
 ## Product Crawl Summary
 
@@ -39,29 +39,29 @@ Quick overview for reviewers. See individual product reports for details.
 | 28 | Backup | 391 | 288 | 0 | 0 | 0 | ✓ |
 | 29 | Batch | 114 | 90 | 0 | 0 | 0 | ✓ |
 | 30 | Biztalk Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 31 | Bot Service | 80 | 55 | 0 | 0 | 110 | ✓ |
+| 31 | Bot Service | 190 | 128 | 110 | 0 | 0 | ✓ |
 | 32 | Cache | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 33 | SAP on Azure | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 34 | AI Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 35 | Communication Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 36 | Container Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 37 | CycleCloud | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 33 | SAP on Azure | 202 | 168 | 0 | 0 | 0 | ✓ |
+| 34 | AI Services | 382 | 284 | 122 | 0 | 0 | ✓ |
+| 35 | Communication Services | 515 | 381 | 0 | 0 | 0 | ✓ |
+| 36 | Container Apps | 192 | 121 | 0 | 0 | 0 | ✓ |
+| 37 | CycleCloud | 110 | 85 | 0 | 0 | 0 | ✓ |
 | 38 | Storage | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 39 | Data Factory | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 40 | Azure Data Manager for Energy | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 41 | Data Manager for Agriculture | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 42 | Azure DevTest Labs | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 43 | Governance | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 44 | Guidance | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 45 | HDInsight | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 46 | Health Data Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 47 | Health Insights | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 48 | Jenkins | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 49 | Lab Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 50 | Azure Business Process Tracking | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 51 | Azure Integration Environments | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 52 | Azure Logic Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 53 | Machine Learning | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 39 | Data Factory | 538 | 436 | 0 | 0 | 0 | ✓ |
+| 40 | Azure Data Manager for Energy | 50 | 23 | 0 | 0 | 0 | ✓ |
+| 41 | Data Manager for Agriculture | 26 | 17 | 0 | 0 | 0 | ✓ |
+| 42 | Azure DevTest Labs | 98 | 75 | 0 | 0 | 0 | ✓ |
+| 43 | Governance | 212 | 159 | 0 | 0 | 0 | ✓ |
+| 44 | Guidance | 364 | 258 | 0 | 0 | 0 | ✓ |
+| 45 | HDInsight | 427 | 343 | 0 | 0 | 0 | ✓ |
+| 46 | Health Data Services | 210 | 129 | 0 | 0 | 0 | ✓ |
+| 47 | Health Insights | 39 | 15 | 0 | 0 | 0 | ✓ |
+| 48 | Jenkins | 13 | 1 | 0 | 0 | 0 | ✓ |
+| 49 | Lab Services | 104 | 63 | 0 | 0 | 0 | ✓ |
+| 50 | Azure Business Process Tracking | 6 | 3 | 0 | 0 | 0 | ✓ |
+| 51 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | ✓ |
+| 52 | Azure Logic Apps | 200 | 146 | 0 | 0 | 0 | ✓ |
+| 53 | Machine Learning | 150 | 95 | 40 | 0 | 49 | ✓ |
 | 54 | Messaging services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 55 | Migrate | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 56 | Mobile Services | 0 | 0 | 0 | 0 | 0 | ✓ |
@@ -99,25 +99,25 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 86 success, 0 failed
-- **Total Pages**: 4464
-- **Total Classified**: 3101
-- **Total New Pages**: 0
+- **Total Pages**: 8416
+- **Total Classified**: 5976
+- **Total New Pages**: 272
 - **Total Updated Pages**: 0
-- **Total Deleted Pages**: 110
+- **Total Deleted Pages**: 49
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 92 |
-| best-practices | 263 |
-| comparing | 27 |
-| configuration | 983 |
-| deployment | 208 |
-| integrations | 610 |
-| limits-quotas | 173 |
-| security | 450 |
-| troubleshooting | 295 |
+| architecture-patterns | 345 |
+| best-practices | 418 |
+| comparing | 74 |
+| configuration | 1738 |
+| deployment | 376 |
+| integrations | 1331 |
+| limits-quotas | 284 |
+| security | 824 |
+| troubleshooting | 586 |
 
 ---
 
