@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 35s
+- **Duration**: 0m 7s
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 197
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-explorer/data-explorer.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 49 | 24.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Isolated compute](https://learn.microsoft.com/en-us/azure/data-explorer/isolated-compute)
-  - Updated: 2024-05-20T00:00:00Z → 2024-06-02T11:05:00.000Z
-- [Confidential compute](https://learn.microsoft.com/en-us/azure/data-explorer/confidential-compute)
-  - Updated: 2025-09-30T00:00:00Z → 2025-10-10T17:04:00.000Z
-- [Network security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-overview)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T11:05:00.000Z
-- [Private endpoints overview](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint)
-  - Updated: 2025-09-28T00:00:00Z → 2025-09-30T22:03:00.000Z
-- [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create)
-  - Updated: 2022-04-05T00:00:00Z → 2023-11-23T17:54:00.000Z
-- [Create a managed private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-managed-private-endpoint-create)
-  - Updated: 2024-11-18T00:00:00Z → 2025-01-27T18:01:00.000Z
-- [Manage public access to your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-restrict-public-access)
-  - Updated: 2023-08-09T00:00:00Z → 2025-04-14T11:05:00.000Z
-- [Troubleshoot private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-troubleshoot)
-  - Updated: 2022-04-05T00:00:00Z → 2025-07-14T17:02:00.000Z
-- [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint)
-  - Updated: 2024-10-07T00:00:00Z → 2025-03-17T17:00:00.000Z
-- [Restrict outbound requests](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-restrict-outbound-access)
-  - Updated: 2025-12-01T00:00:00Z → 2025-12-01T08:00:00.000Z
-- [Cluster encryption overview](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-overview)
-  - Updated: 2022-04-12T00:00:00Z → 2022-06-26T00:00:00.000Z
-- [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double)
-  - Updated: 2025-02-04T00:00:00Z → 2025-02-04T08:00:00.000Z
-- [Enable disk encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-disk)
-  - Updated: 2022-04-12T00:00:00Z → 2024-12-08T12:04:00.000Z
-- [Managed identities overview](https://learn.microsoft.com/en-us/azure/data-explorer/managed-identities-overview)
-  - Updated: 2023-07-17T00:00:00Z → 2025-09-17T22:03:00.000Z
-- [Configure managed identities on your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/configure-managed-identities-cluster)
-  - Updated: 2025-11-03T00:00:00Z → 2025-11-05T18:28:00.000Z
-- [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities)
-  - Updated: 2023-04-20T00:00:00Z → 2024-05-21T11:04:00.000Z
-- [Ingest data using managed identity authentication](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-managed-identity)
-  - Updated: 2023-05-09T00:00:00Z → 2024-09-29T23:06:00.000Z
-- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys)
-  - Updated: 2023-05-10T00:00:00Z → 2026-01-21T18:03:00.000Z
-- [Create Microsoft Entra app](https://learn.microsoft.com/en-us/azure/data-explorer/provision-entra-id-app)
-  - Updated: 2024-01-11T00:00:00Z → 2024-01-30T12:03:00.000Z
-- [Conditional Access](https://learn.microsoft.com/en-us/azure/data-explorer/security-conditional-access)
-  - Updated: 2022-07-03T00:00:00Z → 2024-08-14T11:11:00.000Z
-- *...and 177 more*
 
 ## Classified Pages
 

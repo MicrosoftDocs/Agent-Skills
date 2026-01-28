@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 45s
+- **Duration**: 0m 10s
 - **Total Pages**: 238
 - **Fetched**: 238
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 238
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 238
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/app-service/app-service.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 79 | 33.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [About App Service](https://learn.microsoft.com/en-us/azure/app-service/overview)
-  - Updated: 2025-04-24T00:00:00Z → 2025-11-18T17:01:00.000Z
-- [About App Service Environments](https://learn.microsoft.com/en-us/azure/app-service/environment/overview)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-11T08:00:00.000Z
-- [Managed Instance overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-instance)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T08:00:00.000Z
-- [Integrate AI with App Service](https://learn.microsoft.com/en-us/azure/app-service/overview-ai-integration)
-  - Updated: 2025-12-12T00:00:00Z → 2025-12-16T18:11:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/app-service/getting-started)
-  - Updated: 2025-02-05T00:00:00Z → 2025-08-26T05:10:00.000Z
-- [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore)
-  - Updated: 2025-12-15T00:00:00Z → 2025-12-17T12:14:00.000Z
-- [ASP.NET](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-framework)
-  - Updated: 2025-07-07T00:00:00Z → 2025-07-07T08:00:00.000Z
-- [ASP.NET Core](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnetcore)
-  - Updated: 2025-07-07T00:00:00Z → 2025-07-07T08:00:00.000Z
-- [ASP.NET Core with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app)
-  - Updated: 2025-06-30T00:00:00Z → 2025-06-30T08:00:00.000Z
-- [ASP.NET with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)
-  - Updated: 2025-06-26T00:00:00Z → 2025-06-26T22:19:00.000Z
-- [Connect .NET app to SQL database](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database)
-  - Updated: 2025-06-26T00:00:00Z → 2025-06-26T22:19:00.000Z
-- [to Microsoft Graph with managed identity](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app)
-  - Updated: 2023-04-05T00:00:00Z → 2023-08-18T11:30:00.000Z
-- [to Microsoft Graph as user](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user)
-  - Updated: 2023-09-15T00:00:00Z → 2025-11-29T12:17:00.000Z
-- [to other Azure services with managed identity](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-storage)
-  - Updated: 2023-07-31T00:00:00Z → 2023-07-31T08:00:00.000Z
-- [to SQL database as user](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-sql-database-as-user-dotnet)
-  - Updated: 2025-07-10T00:00:00Z → 2025-09-01T17:17:00.000Z
-- [Assess .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-assess-net)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-15T18:25:00.000Z
-- [Discover .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-discover-net)
-  - Updated: 2025-11-17T00:00:00Z → 2025-12-12T23:21:00.000Z
-- [Migrate .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration)
-  - Updated: 2025-04-23T00:00:00Z → 2025-05-01T22:41:00.000Z
-- [Migrate to Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/quickstart-managed-instance)
-  - Updated: 2025-11-18T00:00:00Z → 2025-11-18T17:01:00.000Z
-- [Chatbot with OpenAI](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-chatbot-dotnet)
-  - Updated: 2025-11-18T00:00:00Z → 2025-11-18T08:00:00.000Z
-- *...and 218 more*
 
 ## Classified Pages
 

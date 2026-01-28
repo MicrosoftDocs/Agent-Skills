@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 27s
+- **Duration**: 0m 2s
 - **Total Pages**: 80
 - **Fetched**: 80
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 80
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/partner-solutions/partner-solutions.csv`
 
@@ -28,50 +28,6 @@
 | *(Unclassified)* | 55 | 68.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Apache Airflow on Astro – An Azure Native ISV Service?](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/overview)
-  - Updated: 2025-01-17T00:00:00Z → 2025-01-21T23:02:00.000Z
-- [Astro resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/tools)
-  - Updated: 2025-09-15T00:00:00Z → 2025-09-15T08:00:00.000Z
-- [Create an Apache Airflow deployment on Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/create)
-  - Updated: 2025-02-07T00:00:00Z → 2025-03-13T11:18:00.000Z
-- [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage)
-  - Updated: 2025-02-07T00:00:00Z → 2025-09-05T17:17:00.000Z
-- [What is Apache Kafka & Apache Flink on Confluent Cloud?](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/overview)
-  - Updated: 2025-01-22T00:00:00Z → 2025-09-02T17:11:00.000Z
-- [Confluent resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/confluent-tools)
-  - Updated: 2025-09-17T00:00:00Z → 2025-12-03T18:18:00.000Z
-- [Create a resource - Azure portal](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create)
-  - Updated: 2025-02-07T00:00:00Z → 2025-09-02T17:11:00.000Z
-- [Create a resource - Azure CLI](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-cli)
-  - Updated: 2025-09-17T00:00:00Z → 2025-12-03T18:18:00.000Z
-- [Create a resource - Azure PowerShell](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-powershell)
-  - Updated: 2025-09-17T00:00:00Z → 2025-12-03T18:18:00.000Z
-- [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources)
-  - Updated: 2024-11-22T00:00:00Z → 2025-09-02T17:11:00.000Z
-- [Create a connector to Blob Storage](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-confluent-connectors)
-  - Updated: 2025-10-30T00:00:00Z → 2025-11-05T23:10:00.000Z
-- [Create a connector to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-cosmos-db-connector)
-  - Updated: 2025-10-30T00:00:00Z → 2025-11-05T23:10:00.000Z
-- [Manage a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage)
-  - Updated: 2025-02-27T00:00:00Z → 2025-09-19T22:11:00.000Z
-- [Manage access](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage-access)
-  - Updated: 2025-09-19T00:00:00Z → 2025-10-20T22:18:00.000Z
-- [Manage confluent connectors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/manage-confluent-connectors)
-  - Updated: 2025-10-30T00:00:00Z → 2025-11-05T23:10:00.000Z
-- [Connect to compute services](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-connectors)
-  - Updated: 2025-09-19T00:00:00Z → 2025-09-19T08:00:00.000Z
-- [Get support](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/get-support)
-  - Updated: 2025-09-17T00:00:00Z → 2025-12-03T18:18:00.000Z
-- [Fix common errors](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/troubleshoot)
-  - Updated: 2025-09-19T00:00:00Z → 2025-09-19T08:00:00.000Z
-- [What is Datadog?](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/overview)
-  - Updated: 2025-03-10T00:00:00Z → 2025-12-10T23:18:00.000Z
-- [Create new Datadog org](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create)
-  - Updated: 2025-12-01T00:00:00Z → 2025-12-10T23:18:00.000Z
-- *...and 60 more*
 
 ## Classified Pages
 

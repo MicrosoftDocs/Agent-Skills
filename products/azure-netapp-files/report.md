@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 38s
+- **Duration**: 0m 8s
 - **Total Pages**: 215
 - **Fetched**: 215
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 215
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 108 | 50.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understand name mapping using LDAP](https://learn.microsoft.com/en-us/azure/azure-netapp-files/lightweight-directory-access-protocol-name-mapping)
-  - Updated: 2025-02-18T00:00:00Z → 2025-02-19T18:02:00.000Z
-- [Understand the allow local NFS users with LDAP option](https://learn.microsoft.com/en-us/azure/azure-netapp-files/lightweight-directory-access-protocol-local-users)
-  - Updated: 2025-02-18T00:00:00Z → 2025-02-19T18:02:00.000Z
-- [Understand LDAP schemas](https://learn.microsoft.com/en-us/azure/azure-netapp-files/lightweight-directory-access-protocol-schemas)
-  - Updated: 2025-02-18T00:00:00Z → 2025-02-19T18:02:00.000Z
-- [Understand NFS group memberships and supplemental groups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-file-system-group-memberships)
-  - Updated: 2025-01-02T00:00:00Z → 2025-01-02T08:00:00.000Z
-- [Understand file locking](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-file-locks)
-  - Updated: 2025-07-20T00:00:00Z → 2025-07-20T08:00:00.000Z
-- [Understand volume languages](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-volume-languages)
-  - Updated: 2025-06-03T00:00:00Z → 2025-06-03T08:00:00.000Z
-- [Understand file path lengths](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-path-lengths)
-  - Updated: 2025-07-22T00:00:00Z → 2025-07-30T11:10:00.000Z
-- [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-11T08:00:00.000Z
-- [Service levels for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels)
-  - Updated: 2025-09-16T00:00:00Z → 2025-09-16T08:00:00.000Z
-- [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies)
-  - Updated: 2025-04-03T00:00:00Z → 2025-04-25T17:04:00.000Z
-- [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-13T18:15:00.000Z
-- [Migrating data into Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/migrate-data)
-  - Updated: 2026-01-20T00:00:00Z → 2026-01-20T06:09:00.000Z
-- [Understand large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-13T18:15:00.000Z
-- [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-13T18:15:00.000Z
-- [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept)
-  - Updated: 2025-10-13T00:00:00Z → 2025-10-13T22:14:00.000Z
-- [Understand maximum directory sizes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/directory-sizes-concept)
-  - Updated: 2025-07-23T00:00:00Z → 2025-07-23T08:00:00.000Z
-- [Ways to monitor Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/monitor-azure-netapp-files)
-  - Updated: 2025-04-18T00:00:00Z → 2025-04-18T08:00:00.000Z
-- [Metrics for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-metrics)
-  - Updated: 2026-01-16T00:00:00Z → 2026-01-16T08:00:00.000Z
-- [Azure Policy definitions for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-policy-definitions)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- [Storage service add-ons](https://learn.microsoft.com/en-us/azure/azure-netapp-files/storage-service-add-ons)
-  - Updated: 2025-02-10T00:00:00Z → 2025-02-19T23:01:00.000Z
-- *...and 195 more*
 
 ## Classified Pages
 

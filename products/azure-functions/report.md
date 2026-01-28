@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 2m 37s
+- **Duration**: 0m 15s
 - **Total Pages**: 351
 - **Fetched**: 351
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 351
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 351
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 76 | 21.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij)
-  - Updated: 2024-05-28T00:00:00Z → 2024-05-29T11:30:00.000Z
-- [Quarkus](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-quarkus)
-  - Updated: 2023-01-10T00:00:00Z → 2023-03-17T00:00:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-bicep)
-  - Updated: 2025-03-17T00:00:00Z → 2025-03-20T11:11:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-resource-manager)
-  - Updated: 2025-03-17T00:00:00Z → 2025-03-20T11:11:00.000Z
-- [Terraform](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-terraform)
-  - Updated: 2025-07-22T00:00:00Z → 2025-07-23T22:09:00.000Z
-- [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs)
-  - Updated: 2023-01-31T00:00:00Z → 2024-03-31T11:22:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code)
-  - Updated: 2024-04-25T00:00:00Z → 2024-04-26T22:09:00.000Z
-- [Command line](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-cli)
-  - Updated: 2024-12-29T00:00:00Z → 2024-12-29T08:00:00.000Z
-- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code)
-  - Updated: 2024-04-25T00:00:00Z → 2024-04-26T22:09:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code)
-  - Updated: 2024-12-29T00:00:00Z → 2024-12-29T08:00:00.000Z
-- [OpenAI](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-openai-text-completion)
-  - Updated: 2024-07-11T00:00:00Z → 2025-08-11T22:18:00.000Z
-- [Functions with Logic Apps](https://learn.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)
-  - Updated: 2021-04-10T00:00:00Z → 2024-08-09T05:35:00.000Z
-- [Host MCP servers for AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-tutorial)
-  - Updated: 2025-11-14T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Develop Python functions with VS Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code?pivots=programming-language-python)
-  - Updated: 2025-11-25T00:00:00Z → 2025-12-03T23:21:00.000Z
-- [Create serverless APIs using Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/openapi-apim-integrate-visual-studio)
-  - Updated: 2024-08-04T00:00:00Z → 2024-08-07T22:04:00.000Z
-- [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-18T23:12:00.000Z
-- [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet)
-  - Updated: 2023-03-24T00:00:00Z → 2025-05-13T05:03:00.000Z
-- [Establish private site access](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-private-site-access)
-  - Updated: 2020-06-17T00:00:00Z → 2022-06-28T17:04:00.000Z
-- [Use an outbound NAT gateway](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-nat-gateway)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Use identity for host connections](https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial)
-  - Updated: 2024-06-27T00:00:00Z → 2024-06-27T08:00:00.000Z
-- *...and 331 more*
 
 ## Classified Pages
 

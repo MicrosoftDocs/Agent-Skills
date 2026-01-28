@@ -96,7 +96,7 @@ When you need the latest official documentation, use `mcp_microsoftdocs:microsof
 | Configure Job Router operational logs with Azure Monitor | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/router-logs |
 | Configure Azure Monitor logging for ACS SMS | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/sms-logs |
 | Configure ACS voice and video call logging | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/voice-and-video-logs |
-| Configure Log Analytics queries for ACS call logs | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
+| Query Azure Communication Services call logs with Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Query Azure Communication Services call logs with Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Understand Azure Communication Services Rooms metrics definitions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/rooms-metrics |
 | Configure monitoring and alerts for ACS calling | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/set-up-call-monitoring |

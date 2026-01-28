@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 4s
+- **Duration**: 0m 6s
 - **Total Pages**: 158
 - **Fetched**: 158
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 158
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 158
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 28 | 17.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app)
-  - Updated: 2025-08-25T00:00:00Z → 2025-08-25T08:00:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-java-spring-app)
-  - Updated: 2025-10-07T00:00:00Z → 2025-10-07T08:00:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot)
-  - Updated: 2025-08-25T00:00:00Z → 2025-08-25T08:00:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider)
-  - Updated: 2024-12-03T00:00:00Z → 2024-12-04T23:05:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python)
-  - Updated: 2024-12-03T00:00:00Z → 2024-12-04T23:05:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-python)
-  - Updated: 2024-07-01T00:00:00Z → 2024-07-01T08:00:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript-provider)
-  - Updated: 2024-11-07T00:00:00Z → 2024-12-17T05:33:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-javascript)
-  - Updated: 2025-01-20T00:00:00Z → 2025-05-19T17:08:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-javascript)
-  - Updated: 2025-09-30T00:00:00Z → 2025-09-30T08:00:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app)
-  - Updated: 2025-03-31T00:00:00Z → 2025-06-16T11:11:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-go-console-app)
-  - Updated: 2025-05-22T00:00:00Z → 2025-06-16T11:11:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-console)
-  - Updated: 2025-07-03T00:00:00Z → 2025-08-26T11:22:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-web-app)
-  - Updated: 2025-03-31T00:00:00Z → 2025-06-16T11:11:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-gin-web-app)
-  - Updated: 2025-05-27T00:00:00Z → 2025-06-16T11:11:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-go-gin)
-  - Updated: 2025-07-03T00:00:00Z → 2025-08-26T11:22:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-21T08:00:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-azure-functions-csharp)
-  - Updated: 2025-03-09T00:00:00Z → 2025-03-13T11:18:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-azure-functions-csharp)
-  - Updated: 2025-03-15T00:00:00Z → 2025-03-18T05:34:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-kubernetes-service)
-  - Updated: 2025-07-30T00:00:00Z → 2025-09-02T17:11:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-azure-kubernetes-service)
-  - Updated: 2024-02-16T00:00:00Z → 2025-06-16T11:11:00.000Z
-- *...and 138 more*
 
 ## Classified Pages
 

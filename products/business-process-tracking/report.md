@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 7s
+- **Duration**: 0m 0s
 - **Total Pages**: 6
 - **Fetched**: 6
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 6
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/business-process-tracking/business-process-tracking.csv`
 
@@ -25,21 +25,6 @@
 | *(Unclassified)* | 3 | 50.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Business Process Tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/overview)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Create a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/create-business-process)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Map business process to workflow](https://learn.microsoft.com/en-us/azure/business-process-tracking/map-business-process-workflow)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Deploy business process and tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/deploy-business-process)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Set up CI/CD pipelines](https://learn.microsoft.com/en-us/azure/business-process-tracking/set-up-continuous-integration-deployment)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Manage a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/manage-business-process)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
 
 ## Classified Pages
 

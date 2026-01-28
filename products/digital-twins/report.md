@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 33s
+- **Duration**: 0m 2s
 - **Total Pages**: 66
 - **Fetched**: 66
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 66
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/digital-twins/digital-twins.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 22 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-28T12:10:00.000Z
-- [Get started with Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-azure-digital-twins-explorer)
-  - Updated: 2025-02-27T00:00:00Z → 2025-02-27T23:02:00.000Z
-- [Get started with 3D Scenes Studio](https://learn.microsoft.com/en-us/azure/digital-twins/quickstart-3d-scenes-studio)
-  - Updated: 2025-02-24T00:00:00Z → 2025-02-28T05:35:00.000Z
-- [Code a client app](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-code)
-  - Updated: 2025-02-14T00:00:00Z → 2025-02-18T23:02:00.000Z
-- [Use a sample client app](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-app)
-  - Updated: 2025-02-14T00:00:00Z → 2025-02-14T08:00:00.000Z
-- [Use the Azure CLI commands](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-cli)
-  - Updated: 2025-04-17T00:00:00Z → 2025-04-28T22:06:00.000Z
-- [Connect an end-to-end solution](https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-end-to-end)
-  - Updated: 2025-02-20T00:00:00Z → 2025-02-20T08:00:00.000Z
-- [DTDL models](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-models)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [What is an ontology?](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies)
-  - Updated: 2025-12-12T00:00:00Z → 2025-12-12T08:00:00.000Z
-- [Adopting DTDL-based industry ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt)
-  - Updated: 2025-01-27T00:00:00Z → 2025-03-07T23:05:00.000Z
-- [Extending ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-extend)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [Converting ontologies](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [Digital twins and the twin graph](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-twins-graph)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [Query language](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-language)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-28T12:10:00.000Z
-- [Query Units](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-units)
-  - Updated: 2025-04-11T00:00:00Z → 2025-04-15T17:03:00.000Z
-- [Data history (with Azure Data Explorer)](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-history)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [Querying with the Azure Data Explorer plugin](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [Azure Digital Twins Explorer](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-azure-digital-twins-explorer)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-28T12:10:00.000Z
-- [APIs and SDKs](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-apis-sdks)
-  - Updated: 2025-01-27T00:00:00Z → 2025-01-27T08:00:00.000Z
-- [CLI command set](https://learn.microsoft.com/en-us/azure/digital-twins/concepts-cli)
-  - Updated: 2025-04-09T00:00:00Z → 2025-04-18T11:09:00.000Z
-- *...and 46 more*
 
 ## Classified Pages
 

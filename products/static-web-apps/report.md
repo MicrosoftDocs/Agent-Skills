@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 31s
+- **Duration**: 0m 3s
 - **Total Pages**: 79
 - **Fetched**: 79
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 79
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 79
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/static-web-apps/static-web-apps.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 28 | 35.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/overview)
-  - Updated: 2024-06-24T00:00:00Z → 2024-06-24T17:04:00.000Z
-- [Hosting plans](https://learn.microsoft.com/en-us/azure/static-web-apps/plans)
-  - Updated: 2025-01-28T00:00:00Z → 2025-04-28T22:06:00.000Z
-- [Web frameworks](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-web-framework)
-  - Updated: 2024-09-18T00:00:00Z → 2024-09-18T08:00:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started)
-  - Updated: 2024-04-02T00:00:00Z → 2024-04-02T22:08:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-portal)
-  - Updated: 2024-09-18T00:00:00Z → 2024-09-18T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-cli)
-  - Updated: 2024-09-18T00:00:00Z → 2024-09-18T08:00:00.000Z
-- [2 - Add authentication](https://learn.microsoft.com/en-us/azure/static-web-apps/add-authentication)
-  - Updated: 2024-07-02T00:00:00Z → 2024-07-04T05:39:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/front-end-frameworks)
-  - Updated: 2024-06-24T00:00:00Z → 2024-06-24T08:00:00.000Z
-- [Angular](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-angular)
-  - Updated: 2024-07-24T00:00:00Z → 2024-07-24T08:00:00.000Z
-- [Blazor](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
-  - Updated: 2024-09-27T00:00:00Z → 2024-09-27T08:00:00.000Z
-- [Gatsby](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-gatsby)
-  - Updated: 2024-01-10T00:00:00Z → 2024-01-10T08:00:00.000Z
-- [Hugo](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo)
-  - Updated: 2024-01-10T00:00:00Z → 2025-09-29T17:17:00.000Z
-- [Jekyll](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-jekyll)
-  - Updated: 2021-05-11T00:00:00Z → 2023-05-30T22:04:00.000Z
-- [React](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-react)
-  - Updated: 2024-05-23T00:00:00Z → 2024-05-24T20:19:00.000Z
-- [Next.js](https://learn.microsoft.com/en-us/azure/static-web-apps/nextjs)
-  - Updated: 2024-04-25T00:00:00Z → 2024-08-02T11:27:00.000Z
-- [Hybrid Next.js application (preview)](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-hybrid)
-  - Updated: 2024-04-25T00:00:00Z → 2024-08-02T11:27:00.000Z
-- [Statically generated Next.js](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-static-export)
-  - Updated: 2022-10-12T00:00:00Z → 2022-10-28T22:03:00.000Z
-- [Nuxt.js](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nuxtjs)
-  - Updated: 2022-09-01T00:00:00Z → 2023-06-22T17:03:00.000Z
-- [Vue](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-vue)
-  - Updated: 2023-08-02T00:00:00Z → 2024-05-07T22:04:00.000Z
-- [VuePress](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-vuepress)
-  - Updated: 2024-01-10T00:00:00Z → 2024-01-10T08:00:00.000Z
-- *...and 59 more*
 
 ## Classified Pages
 

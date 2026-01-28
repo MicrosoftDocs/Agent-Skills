@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 39s
+- **Duration**: 0m 7s
 - **Total Pages**: 210
 - **Fetched**: 210
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 210
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 210
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/healthcare-apis/healthcare-apis.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 81 | 38.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Health Data Services?](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- [FHIR service](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/overview)
-  - Updated: 2025-10-10T00:00:00Z → 2025-10-10T08:00:00.000Z
-- [DICOM service](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/overview)
-  - Updated: 2025-07-23T00:00:00Z → 2025-07-23T08:00:00.000Z
-- [MedTech service](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview)
-  - Updated: 2025-08-18T00:00:00Z → 2025-08-21T22:11:00.000Z
-- [De-identification service](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/overview)
-  - Updated: 2025-10-24T00:00:00Z → 2026-01-27T18:10:00.000Z
-- [Events](https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-overview)
-  - Updated: 2024-11-26T00:00:00Z → 2024-11-26T08:00:00.000Z
-- [Azure API for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/overview)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-21T08:00:00.000Z
-- [Business continuity & disaster recovery](https://learn.microsoft.com/en-us/azure/healthcare-apis/business-continuity-disaster-recovery)
-  - Updated: 2025-06-02T00:00:00Z → 2025-09-29T17:17:00.000Z
-- [Regional availability of services & features](https://learn.microsoft.com/en-us/azure/healthcare-apis/services-features-regional-availability)
-  - Updated: 2024-11-01T00:00:00Z → 2025-09-08T22:37:00.000Z
-- [Availability zones](https://learn.microsoft.com/en-us/azure/healthcare-apis/availability-zones)
-  - Updated: 2024-10-15T00:00:00Z → 2025-07-23T22:09:00.000Z
-- [Manage network access security](https://learn.microsoft.com/en-us/azure/healthcare-apis/network-access-security)
-  - Updated: 2025-06-09T00:00:00Z → 2025-06-09T08:00:00.000Z
-- [Workspace overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
-  - Updated: 2025-06-09T00:00:00Z → 2025-06-09T08:00:00.000Z
-- [Deployment overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/health-data-services-get-started)
-  - Updated: 2025-05-24T00:00:00Z → 2025-05-24T08:00:00.000Z
-- [Azure Health Data Services quickstart](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-quickstart)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- [Deploy services programmatically](https://learn.microsoft.com/en-us/azure/healthcare-apis/deploy-healthcare-apis-using-bicep)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- [Get an access token](https://learn.microsoft.com/en-us/azure/healthcare-apis/get-access-token)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- [Manage user access and permissions](https://learn.microsoft.com/en-us/azure/healthcare-apis/authentication-authorization)
-  - Updated: 2025-05-24T00:00:00Z → 2025-05-24T08:00:00.000Z
-- [Register an application via Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application)
-  - Updated: 2025-06-09T00:00:00Z → 2025-06-09T08:00:00.000Z
-- [Register an application by using scripts](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application-cli-rest)
-  - Updated: 2025-06-09T00:00:00Z → 2025-06-09T08:00:00.000Z
-- [Grant permissions via Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-02T08:00:00.000Z
-- *...and 190 more*
 
 ## Classified Pages
 

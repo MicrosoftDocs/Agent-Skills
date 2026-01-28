@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 3m 12s
+- **Duration**: 0m 14s
 - **Total Pages**: 391
 - **Fetched**: 391
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 391
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 391
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/backup/backup.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 103 | 26.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview of Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-overview)
-  - Updated: 2026-01-23T00:00:00Z → 2026-01-23T08:00:00.000Z
-- [What's new in Azure Backup](https://learn.microsoft.com/en-us/azure/backup/whats-new)
-  - Updated: 2025-11-20T00:00:00Z → 2025-11-20T08:00:00.000Z
-- [Back up a VM - Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-portal)
-  - Updated: 2026-01-27T00:00:00Z → 2026-01-27T08:00:00.000Z
-- [Back up a VM - PowerShell](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-powershell)
-  - Updated: 2025-12-19T00:00:00Z → 2025-12-19T08:00:00.000Z
-- [Back up a VM - CLI](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-cli)
-  - Updated: 2025-12-19T00:00:00Z → 2025-12-19T08:00:00.000Z
-- [Back up a VM - ARM template](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-template)
-  - Updated: 2025-12-19T00:00:00Z → 2025-12-19T08:00:00.000Z
-- [Back up a VM - Bicep file](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-bicep-file)
-  - Updated: 2025-12-19T00:00:00Z → 2025-12-19T08:00:00.000Z
-- [Back up a VM - Terraform](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-terraform)
-  - Updated: 2025-04-03T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Back up the database - Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-backup-postgresql-database-portal)
-  - Updated: 2026-01-27T00:00:00Z → 2026-01-27T08:00:00.000Z
-- [Using the Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-cross-region-restore)
-  - Updated: 2026-01-27T00:00:00Z → 2026-01-27T08:00:00.000Z
-- [With Azure PowerShell](https://learn.microsoft.com/en-us/azure/backup/quick-secondary-region-restore-postgresql-powershell)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-03T18:18:00.000Z
-- [From the Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-backup-aks)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T12:11:00.000Z
-- [With Azure CLI](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-cli)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T08:00:00.000Z
-- [With PowerShell](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-powershell)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T08:00:00.000Z
-- [With Azure Resource Manager](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-arm)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T08:00:00.000Z
-- [With Bicep](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-bicep)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T12:11:00.000Z
-- [With Terraform](https://learn.microsoft.com/en-us/azure/backup/quick-kubernetes-backup-terraform)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T08:00:00.000Z
-- [With Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-backup-postgresql-flexible-server-portal)
-  - Updated: 2026-01-22T00:00:00Z → 2026-01-22T08:00:00.000Z
-- [With Azure CLI](https://learn.microsoft.com/en-us/azure/backup/quick-backup-postgresql-flexible-server-cli)
-  - Updated: 2026-01-19T00:00:00Z → 2026-01-19T08:00:00.000Z
-- [With PowerShell](https://learn.microsoft.com/en-us/azure/backup/quick-backup-postgresql-flexible-server-powershell)
-  - Updated: 2026-01-19T00:00:00Z → 2026-01-19T08:00:00.000Z
-- *...and 371 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 10s
+- **Duration**: 0m 0s
 - **Total Pages**: 13
 - **Fetched**: 13
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 13
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/jenkins/jenkins.csv`
 
@@ -24,35 +24,6 @@
 | *(Unclassified)* | 12 | 92.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Jenkins on Azure](https://learn.microsoft.com/en-us/azure/developer/jenkins/overview)
-  - Updated: 2020-11-10T00:00:00Z → 2021-02-11T18:05:00.000Z
-- [Install Jenkins on a Linux VM](https://learn.microsoft.com/en-us/azure/developer/jenkins/configure-on-linux-vm)
-  - Updated: 2024-08-13T00:00:00Z → 2024-08-13T08:00:00.000Z
-- [Scale with Azure Container Instances](https://learn.microsoft.com/en-us/azure/developer/jenkins/azure-container-instances-as-jenkins-build-agent)
-  - Updated: 2021-01-08T00:00:00Z → 2024-09-04T16:58:00.000Z
-- [Scale with Azure VM agents](https://learn.microsoft.com/en-us/azure/developer/jenkins/scale-deployments-using-vm-agents)
-  - Updated: 2021-01-08T00:00:00Z → 2022-03-24T17:26:00.000Z
-- [Deploy to Azure Spring Apps using the Azure CLI](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-to-azure-spring-apps-using-azure-cli)
-  - Updated: 2022-01-28T00:00:00Z → 2023-05-30T17:14:00.000Z
-- [CI/CD to Kubernetes](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-from-github-to-aks)
-  - Updated: 2024-08-07T00:00:00Z → 2024-08-07T08:00:00.000Z
-- [Create Azure resources in a pipeline job](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-to-azure-app-service-using-azure-cli)
-  - Updated: 2021-01-06T00:00:00Z → 2023-05-30T17:14:00.000Z
-- [Use Jenkins with Azure DevOps](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-to-linux-vm-using-azure-devops-services)
-  - Updated: 2024-08-13T00:00:00Z → 2024-08-13T08:00:00.000Z
-- [Deploy to Azure Functions](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-to-azure-functions)
-  - Updated: 2022-01-27T00:00:00Z → 2023-05-30T17:14:00.000Z
-- [Publish to Azure Storage](https://learn.microsoft.com/en-us/azure/developer/jenkins/azure-storage-blobs-as-build-artifact-repository)
-  - Updated: 2021-01-12T00:00:00Z → 2021-08-08T02:43:00.000Z
-- [CI/CD to Linux VMs](https://learn.microsoft.com/en-us/azure/developer/jenkins/pipeline-with-github-and-docker)
-  - Updated: 2017-03-27T00:00:00Z → 2021-01-22T18:01:00.000Z
-- [CI/CD to Service Fabric](https://learn.microsoft.com/en-us/azure/developer/jenkins/deploy-to-service-fabric-cluster)
-  - Updated: 2018-07-31T00:00:00Z → 2021-01-22T18:01:00.000Z
-- [Jenkins plug-in for Azure](https://learn.microsoft.com/en-us/azure/developer/jenkins/plug-ins-for-azure)
-  - Updated: 2025-05-08T00:00:00Z → 2025-05-08T17:06:00.000Z
 
 ## Classified Pages
 

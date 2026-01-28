@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 49s
+- **Duration**: 0m 22s
 - **Total Pages**: 212
 - **Fetched**: 212
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 212
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 212
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/governance/governance.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 53 | 25.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/iso27001-ase-sql-workload/deploy)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Control mapping](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/control-mapping)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/swift-2020/deploy)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [UK OFFICIAL and UK NHS](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/ukofficial-uknhs)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-foundation/deploy)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/)
-  - Updated: 2023-09-07T00:00:00Z → 2024-06-13T22:17:00.000Z
-- [Steps to deploy](https://learn.microsoft.com/en-us/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Lifecycle of a blueprint](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/lifecycle)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Stages of a blueprint deployment](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/deployment-stages)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Dynamic parameters in a blueprint](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/parameters)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Sequencing order of blueprint deployment](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/sequencing-order)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Resource locking in Azure Blueprints](https://learn.microsoft.com/en-us/azure/governance/blueprints/concepts/resource-locking)
-  - Updated: 2023-12-05T00:00:00Z → 2023-12-05T08:00:00.000Z
-- [Manage assignments with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/manage-assignments-ps)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Import and export with PowerShell](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/import-export-ps)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-07T08:00:00.000Z
-- [Update existing assignments from the portal](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/update-existing-assignments)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Configure your environment for a Blueprint Operator](https://learn.microsoft.com/en-us/azure/governance/blueprints/how-to/configure-for-blueprint-operator)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/governance/blueprints/troubleshoot/general)
-  - Updated: 2023-09-07T00:00:00Z → 2023-09-15T17:19:00.000Z
-- [Blueprint functions](https://learn.microsoft.com/en-us/azure/governance/blueprints/reference/blueprint-functions)
-  - Updated: 2025-02-12T00:00:00Z → 2025-02-12T08:00:00.000Z
-- *...and 192 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 24s
+- **Duration**: 0m 2s
 - **Total Pages**: 49
 - **Fetched**: 49
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 49
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/update-center/update-center.csv`
 
@@ -30,50 +30,6 @@
 | *(Unclassified)* | 21 | 42.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Update options and orchestration](https://learn.microsoft.com/en-us/azure/update-manager/updates-maintenance-schedules)
-  - Updated: 2025-06-11T00:00:00Z → 2025-09-14T22:14:00.000Z
-- [Assessment options](https://learn.microsoft.com/en-us/azure/update-manager/assessment-options)
-  - Updated: 2024-12-06T00:00:00Z → 2024-12-06T18:02:00.000Z
-- [Cross-subscription patching](https://learn.microsoft.com/en-us/azure/update-manager/cross-subscription-patching)
-  - Updated: 2025-02-04T00:00:00Z → 2025-02-20T18:03:00.000Z
-- [Overview of Pre and Post Events](https://learn.microsoft.com/en-us/azure/update-manager/pre-post-scripts-overview)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Manage updates on multiple machines](https://learn.microsoft.com/en-us/azure/update-manager/manage-multiple-machines)
-  - Updated: 2024-12-04T00:00:00Z → 2024-12-04T08:00:00.000Z
-- [Workbooks](https://learn.microsoft.com/en-us/azure/update-manager/workbooks)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [ARG queries to access Azure Update Manager operations data](https://learn.microsoft.com/en-us/azure/update-manager/sample-query-logs)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Configure Windows Update client](https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent)
-  - Updated: 2025-02-27T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Check update compliance](https://learn.microsoft.com/en-us/azure/update-manager/view-updates)
-  - Updated: 2025-08-21T00:00:00Z → 2025-09-14T22:14:00.000Z
-- [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Deploy updates and track results](https://learn.microsoft.com/en-us/azure/update-manager/deploy-updates)
-  - Updated: 2025-03-07T00:00:00Z → 2025-03-07T08:00:00.000Z
-- [Manage update settings](https://learn.microsoft.com/en-us/azure/update-manager/manage-update-settings)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Schedule updates](https://learn.microsoft.com/en-us/azure/update-manager/scheduled-patching)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Manage cross-subscription patching](https://learn.microsoft.com/en-us/azure/update-manager/enable-cross-subscription-patching)
-  - Updated: 2025-03-13T00:00:00Z → 2025-12-18T12:10:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/update-manager/dynamic-scope-overview)
-  - Updated: 2025-08-21T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Manage dynamic scope](https://learn.microsoft.com/en-us/azure/update-manager/manage-dynamic-scoping)
-  - Updated: 2025-01-09T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Create pre and post events](https://learn.microsoft.com/en-us/azure/update-manager/pre-post-events-schedule-maintenance-configuration)
-  - Updated: 2025-08-21T00:00:00Z → 2025-08-21T08:00:00.000Z
-- [Manage pre and post events](https://learn.microsoft.com/en-us/azure/update-manager/manage-pre-post-events)
-  - Updated: 2025-02-18T00:00:00Z → 2025-02-18T08:00:00.000Z
-- [Manage Hotpatches on Arc-Enabled Machines (preview)](https://learn.microsoft.com/en-us/azure/update-manager/manage-hot-patching-arc-machines)
-  - Updated: 2025-08-21T00:00:00Z → 2025-12-11T18:27:00.000Z
-- *...and 29 more*
 
 ## Classified Pages
 

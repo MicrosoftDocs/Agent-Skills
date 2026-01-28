@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 58s
+- **Duration**: 0m 11s
 - **Total Pages**: 274
 - **Fetched**: 274
 - **Fetch Failed**: 0
@@ -10,9 +10,9 @@
 - **Unclassified**: 58
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 272
-- **Unchanged**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 274
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/api-management/api-management.csv`
 
@@ -32,54 +32,6 @@
 | *(Unclassified)* | 58 | 21.2% |
 
 ## Changes
-
-### New Pages
-
-- [Access resource protected by network security perimeter](https://learn.microsoft.com/en-us/azure/api-management/using-network-security-perimeter)
-
-### Updated Pages
-
-- [9 - Customize developer portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize)
-  - Updated: 2025-05-28T00:00:00Z → 2025-05-28T08:00:00.000Z
-- [10 - Manage APIs in Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-management/visual-studio-code-tutorial)
-  - Updated: 2025-02-20T00:00:00Z → 2025-02-20T08:00:00.000Z
-- [11 - Link to an API Center](https://learn.microsoft.com/en-us/azure/api-management/tutorials/link-api-center)
-  - Updated: 2025-10-20T00:00:00Z → 2025-10-24T22:12:00.000Z
-- [Use capacity for scaling decisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-capacity)
-  - Updated: 2025-06-16T00:00:00Z → 2025-07-17T05:09:00.000Z
-- [Upgrade and scale](https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-11T08:00:00.000Z
-- [Configure autoscale](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-autoscale)
-  - Updated: 2025-06-03T00:00:00Z → 2025-06-05T05:17:00.000Z
-- [Plan and manage costs](https://learn.microsoft.com/en-us/azure/api-management/plan-manage-costs)
-  - Updated: 2025-10-08T00:00:00Z → 2025-10-10T06:02:00.000Z
-- [Understand service limits](https://learn.microsoft.com/en-us/azure/api-management/service-limits)
-  - Updated: 2025-12-15T00:00:00Z → 2025-12-16T18:11:00.000Z
-- [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain)
-  - Updated: 2025-07-25T00:00:00Z → 2025-07-25T08:00:00.000Z
-- [Use an external cache](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache-external)
-  - Updated: 2025-10-27T00:00:00Z → 2025-10-30T22:11:00.000Z
-- [Configure update settings](https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings)
-  - Updated: 2025-11-25T00:00:00Z → 2025-11-25T23:25:00.000Z
-- [Move instances between regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-migrate)
-  - Updated: 2025-09-02T00:00:00Z → 2025-10-02T17:11:00.000Z
-- [Recover a deleted instance](https://learn.microsoft.com/en-us/azure/api-management/soft-delete)
-  - Updated: 2025-11-26T00:00:00Z → 2025-11-26T23:19:00.000Z
-- [Use role-based access control](https://learn.microsoft.com/en-us/azure/api-management/api-management-role-based-access-control)
-  - Updated: 2025-08-08T00:00:00Z → 2025-08-08T08:00:00.000Z
-- [Use managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity)
-  - Updated: 2025-12-18T00:00:00Z → 2025-12-19T18:11:00.000Z
-- [Send events to Event Grid](https://learn.microsoft.com/en-us/azure/api-management/how-to-event-grid)
-  - Updated: 2025-05-07T00:00:00Z → 2025-05-08T05:10:00.000Z
-- [Reduce environmental impact](https://learn.microsoft.com/en-us/azure/api-management/sustainability)
-  - Updated: 2025-09-30T00:00:00Z → 2025-09-30T17:14:00.000Z
-- [Networking options](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-concepts)
-  - Updated: 2025-11-13T00:00:00Z → 2025-11-13T08:00:00.000Z
-- [Virtual network injection (classic tiers) - requirements](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-injection-resources)
-  - Updated: 2025-04-17T00:00:00Z → 2025-07-08T17:24:00.000Z
-- [Deploy to virtual network - external](https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet)
-  - Updated: 2026-01-08T00:00:00Z → 2026-01-08T23:15:00.000Z
-- *...and 252 more*
 
 ## Classified Pages
 

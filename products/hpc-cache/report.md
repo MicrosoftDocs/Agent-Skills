@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 16s
+- **Duration**: 0m 1s
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 34
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/hpc-cache/hpc-cache.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 4 | 11.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up directory services](https://learn.microsoft.com/en-us/azure/hpc-cache/directory-services)
-  - Updated: 2022-07-27T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Contact support](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-support-ticket)
-  - Updated: 2022-07-21T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Increase quota](https://learn.microsoft.com/en-us/azure/hpc-cache/increase-quota)
-  - Updated: 2022-07-25T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Troubleshoot NFS storage target creation](https://learn.microsoft.com/en-us/azure/hpc-cache/troubleshoot-nas)
-  - Updated: 2022-08-29T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Work around Blob storage account firewall settings](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-blob-firewall-fix)
-  - Updated: 2021-03-18T00:00:00Z → 2021-10-25T22:03:00.000Z
-- [Recover from a regional outage](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-region-recovery)
-  - Updated: 2021-08-19T00:00:00Z → 2021-10-25T22:03:00.000Z
-- [Move a cache](https://learn.microsoft.com/en-us/azure/hpc-cache/move-resource)
-  - Updated: 2022-03-03T00:00:00Z → 2022-05-04T22:13:00.000Z
-- [Use NFS-mounted blob storage with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/nfs-blob-considerations)
-  - Updated: 2022-03-02T00:00:00Z → 2022-03-03T23:03:00.000Z
-- [Use Azure NetApp Files with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-netapp)
-  - Updated: 2021-05-05T00:00:00Z → 2023-02-22T18:04:00.000Z
-- [Use customer-managed encryption keys](https://learn.microsoft.com/en-us/azure/hpc-cache/customer-keys)
-  - Updated: 2022-11-02T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Load balance client traffic](https://learn.microsoft.com/en-us/azure/hpc-cache/client-load-balancing)
-  - Updated: 2021-09-20T00:00:00Z → 2021-10-25T22:03:00.000Z
-- [Customize file write-back](https://learn.microsoft.com/en-us/azure/hpc-cache/custom-flush-script)
-  - Updated: 2022-07-07T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Prime the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/prime-cache)
-  - Updated: 2022-06-01T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Set up Azure CLI for Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/az-cli-prerequisites)
-  - Updated: 2020-07-08T00:00:00Z → 2025-03-07T18:03:00.000Z
-- [What is Azure HPC Cache?](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-overview)
-  - Updated: 2025-10-01T00:00:00Z → 2025-10-01T17:42:00.000Z
-- [Decide if HPC Cache is the right solution](https://learn.microsoft.com/en-us/azure/hpc-cache/usage-scenarios)
-  - Updated: 2021-03-29T00:00:00Z → 2021-10-25T22:03:00.000Z
-- [Plan the aggregated namespace](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-namespace)
-  - Updated: 2022-05-02T00:00:00Z → 2023-02-24T23:03:00.000Z
-- [Understand cache usage models](https://learn.microsoft.com/en-us/azure/hpc-cache/cache-usage-models)
-  - Updated: 2024-02-16T00:00:00Z → 2024-02-16T18:10:00.000Z
-- [Security information](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-security-info)
-  - Updated: 2022-04-06T00:00:00Z → 2022-05-31T17:07:00.000Z
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-prerequisites)
-  - Updated: 2023-02-15T00:00:00Z → 2023-04-13T11:17:00.000Z
-- *...and 14 more*
 
 ## Classified Pages
 

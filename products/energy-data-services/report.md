@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 30s
+- **Duration**: 0m 2s
 - **Total Pages**: 50
 - **Fetched**: 50
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 50
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/energy-data-services/energy-data-services.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 27 | 54.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Entitlements](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-entitlements)
-  - Updated: 2023-02-10T00:00:00Z → 2024-02-13T23:32:00.000Z
-- [Tier details](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-tier-details)
-  - Updated: 2025-10-03T00:00:00Z → 2025-10-10T22:10:00.000Z
-- [Syncing Reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values)
-  - Updated: 2025-12-18T00:00:00Z → 2026-01-11T12:09:00.000Z
-- [Manage users](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-users)
-  - Updated: 2022-08-19T00:00:00Z → 2024-05-23T05:37:00.000Z
-- [Manage ACLs](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-acls)
-  - Updated: 2023-12-11T00:00:00Z → 2024-01-24T05:45:00.000Z
-- [Manage legal tags](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-legal-tags)
-  - Updated: 2023-02-20T00:00:00Z → 2024-11-19T23:02:00.000Z
-- [Manage data partitions](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-add-more-data-partitions)
-  - Updated: 2022-07-05T00:00:00Z → 2023-06-29T11:24:00.000Z
-- [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz)
-  - Updated: 2024-05-11T00:00:00Z → 2024-11-20T18:03:00.000Z
-- [Deploy OSDU Admin UI](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui)
-  - Updated: 2024-02-15T00:00:00Z → 2024-10-22T22:04:00.000Z
-- [How to enable External Data Sources (EDS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-external-data-sources)
-  - Updated: 2024-03-14T00:00:00Z → 2025-08-05T05:29:00.000Z
-- [How to register External Data Sources (EDS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-register-external-data-sources)
-  - Updated: 2024-03-14T00:00:00Z → 2025-03-31T22:05:00.000Z
-- [How to enable legal tags restricted COO (Country of Origin)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin)
-  - Updated: 2025-02-08T00:00:00Z → 2025-04-08T11:16:00.000Z
-- [How to enable Reservoir DDMS](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-reservoir-ddms)
-  - Updated: 2025-02-08T00:00:00Z → 2025-11-26T12:09:00.000Z
-- [Airflow task logs integration with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-airflow-logs-with-azure-monitor)
-  - Updated: 2022-08-18T00:00:00Z → 2023-06-28T17:04:00.000Z
-- [Elastic logs integration with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-elastic-logs-with-azure-monitor)
-  - Updated: 2022-08-18T00:00:00Z → 2023-06-28T11:14:00.000Z
-- [Integrate OSDU Service Logs with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-osdu-service-logs-with-azure-monitor)
-  - Updated: 2023-04-19T00:00:00Z → 2023-05-08T22:04:00.000Z
-- [Set up Private Links](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-set-up-private-links)
-  - Updated: 2022-09-29T00:00:00Z → 2024-09-27T11:13:00.000Z
-- [Set up Customer managed encryption keys (CMEK)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption)
-  - Updated: 2022-10-06T00:00:00Z → 2025-03-07T05:34:00.000Z
-- [Set up Lockbox](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-create-lockbox)
-  - Updated: 2022-12-21T00:00:00Z → 2023-06-28T11:14:00.000Z
-- [Set up Managed Identity](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-use-managed-identity)
-  - Updated: 2023-01-04T00:00:00Z → 2023-10-11T05:36:00.000Z
-- *...and 30 more*
 
 ## Classified Pages
 

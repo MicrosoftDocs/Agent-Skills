@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 3s
+- **Duration**: 0m 6s
 - **Total Pages**: 144
 - **Fetched**: 144
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 144
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 144
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/migrate/migrate.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 72 | 50.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Appliance diagnostics](https://learn.microsoft.com/en-us/azure/migrate/troubleshoot-appliance-diagnostic?view=migrate)
-  - Updated: 2025-02-06T00:00:00Z → 2025-04-23T05:33:00.000Z
-- [Discover Virtual Machines](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-vmware?view=migrate)
-  - Updated: 2025-05-12T00:00:00Z → 2025-07-07T17:10:00.000Z
-- [Scoped discovery of VMware hosted VMs](https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate)
-  - Updated: 2025-05-12T00:00:00Z → 2025-05-13T05:03:00.000Z
-- [Support matrix for VMware discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware?view=migrate)
-  - Updated: 2025-05-09T00:00:00Z → 2025-05-13T05:03:00.000Z
-- [Discover Virtual Machines](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-hyper-v?view=migrate)
-  - Updated: 2025-02-07T00:00:00Z → 2025-11-10T18:13:00.000Z
-- [Support matrix for Hyper-V discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v?view=migrate)
-  - Updated: 2025-04-04T00:00:00Z → 2025-12-30T06:12:00.000Z
-- [Discover physical servers and servers running in AWS and GCP](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-physical?view=migrate)
-  - Updated: 2025-02-07T00:00:00Z → 2025-09-15T22:11:00.000Z
-- [Support matrix for Physical server discovery](https://learn.microsoft.com/en-us/azure/migrate/migrate-support-matrix-physical?view=migrate)
-  - Updated: 2025-04-04T00:00:00Z → 2025-12-30T06:12:00.000Z
-- [Discover software and workloads](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-applications?view=migrate)
-  - Updated: 2025-02-06T00:00:00Z → 2025-10-27T17:10:00.000Z
-- [Discover SQL servers](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-sql-existing-project?view=migrate)
-  - Updated: 2025-03-21T00:00:00Z → 2025-09-11T22:22:00.000Z
-- [Create least privileged credentials for SQL discovery](https://learn.microsoft.com/en-us/azure/migrate/least-privilege-credentials?view=migrate)
-  - Updated: 2025-02-06T00:00:00Z → 2025-04-23T05:33:00.000Z
-- [Create least privileged credentials for PostgreSQL discovery](https://learn.microsoft.com/en-us/azure/migrate/postgresql-least-privilege-configuration?view=migrate)
-  - Updated: 2025-08-01T00:00:00Z → 2025-09-19T05:15:00.000Z
-- [Discover MySQL database instances](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-mysql-database-instances?view=migrate)
-  - Updated: 2025-03-03T00:00:00Z → 2025-10-08T11:21:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/migrate/concepts-arc-resource-discovery?view=migrate)
-  - Updated: 2025-10-23T00:00:00Z → 2025-11-05T12:23:00.000Z
-- [Manage Arc resource sync](https://learn.microsoft.com/en-us/azure/migrate/how-to-manage-arc-resource-sync?view=migrate)
-  - Updated: 2025-10-23T00:00:00Z → 2025-11-05T12:23:00.000Z
-- [Collect additional data about Arc enabled servers](https://learn.microsoft.com/en-us/azure/migrate/how-to-enable-additional-data-collection-for-arc-servers?view=migrate)
-  - Updated: 2025-10-23T00:00:00Z → 2025-11-05T12:23:00.000Z
-- [Azure Migrate VM Extension for Arc-enabled servers](https://learn.microsoft.com/en-us/azure/migrate/migrate-virtual-machine-extension-reference?view=migrate)
-  - Updated: 2025-10-23T00:00:00Z → 2025-11-05T12:23:00.000Z
-- [CSV import](https://learn.microsoft.com/en-us/azure/migrate/tutorial-discover-import?view=migrate)
-  - Updated: 2025-02-07T00:00:00Z → 2025-04-23T05:33:00.000Z
-- [RVTools import](https://learn.microsoft.com/en-us/azure/migrate/tutorial-import-vmware-using-rvtools-xlsx?view=migrate)
-  - Updated: 2025-05-12T00:00:00Z → 2025-12-31T18:12:00.000Z
-- [Discovered metadata](https://learn.microsoft.com/en-us/azure/migrate/discovered-metadata?view=migrate)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T17:16:00.000Z
-- *...and 124 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 45s
+- **Duration**: 0m 4s
 - **Total Pages**: 115
 - **Fetched**: 115
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 115
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/automation/automation.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 35 | 30.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview)
-  - Updated: 2025-04-24T00:00:00Z → 2025-04-24T08:00:00.000Z
-- [What are the various Automation services in Azure?](https://learn.microsoft.com/en-us/azure/automation/automation-services)
-  - Updated: 2024-08-09T00:00:00Z → 2024-08-12T11:22:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/automation/automation-faq)
-  - Updated: 2024-08-20T00:00:00Z → 2024-08-20T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new)
-  - Updated: 2025-08-12T00:00:00Z → 2025-08-12T08:00:00.000Z
-- [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive)
-  - Updated: 2023-08-01T00:00:00Z → 2023-08-01T08:00:00.000Z
-- [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-portal)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Create Automation account - Terraform](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-terraform)
-  - Updated: 2025-01-15T00:00:00Z → 2025-01-15T23:02:00.000Z
-- [Update runbook from PowerShell 7.1 to PowerShell 7.4](https://learn.microsoft.com/en-us/azure/automation/quickstart-update-runbook-in-runtime-environment)
-  - Updated: 2025-06-27T00:00:00Z → 2025-06-27T22:11:00.000Z
-- [Run Azure CLI commands in PowerShell 7.4 runbooks](https://learn.microsoft.com/en-us/azure/automation/quickstart-cli-support-powershell-runbook-runtime-environment)
-  - Updated: 2025-06-27T00:00:00Z → 2025-06-27T22:11:00.000Z
-- [Install Hybrid Worker extension - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/install-hybrid-worker-extension)
-  - Updated: 2024-03-05T00:00:00Z → 2024-03-05T08:00:00.000Z
-- [Enable managed identities - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/enable-managed-identity)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Enable Desired State Configuration for a machine](https://learn.microsoft.com/en-us/azure/automation/quickstarts/dsc-configuration)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Create PowerShell runbook using managed identity](https://learn.microsoft.com/en-us/azure/automation/learn/powershell-runbook-managed-identity)
-  - Updated: 2025-06-27T00:00:00Z → 2025-06-27T22:11:00.000Z
-- [Create a PowerShell Workflow runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Create a Python 3 runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual-python-3)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Manage databases in Azure SQL database using Azure Automation](https://learn.microsoft.com/en-us/azure/automation/manage-sql-server-in-automation)
-  - Updated: 2024-09-15T00:00:00Z → 2024-09-15T08:00:00.000Z
-- [Configure data based on STIG](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-configuration-based-on-stig)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Configure data at scale](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-config-data-at-scale)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Create config from existing servers](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-config-from-server)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- [Convert configurations to composite resources](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-create-composite)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-17T08:00:00.000Z
-- *...and 95 more*
 
 ## Classified Pages
 

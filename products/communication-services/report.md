@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 3m 49s
+- **Duration**: 0m 20s
 - **Total Pages**: 515
 - **Fetched**: 515
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 515
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 515
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/communication-services/communication-services.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 134 | 26.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Communication Services?](https://learn.microsoft.com/en-us/azure/communication-services/overview)
-  - Updated: 2021-06-30T00:00:00Z → 2024-05-09T17:55:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/communication-services/whats-new)
-  - Updated: 2025-06-24T00:00:00Z → 2025-06-26T05:14:00.000Z
-- [Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/services)
-  - Updated: 2024-01-01T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Create a Communication Services resource](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource)
-  - Updated: 2021-06-30T00:00:00Z → 2024-05-09T17:55:00.000Z
-- [Managed applications](https://learn.microsoft.com/en-us/azure/communication-services/concepts/managed-apps)
-  - Updated: 2025-04-09T00:00:00Z → 2025-05-05T11:12:00.000Z
-- [SDKs and APIs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sdk-options)
-  - Updated: 2024-06-04T00:00:00Z → 2025-02-14T23:44:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/communication-services/concepts/service-limits)
-  - Updated: 2023-03-31T00:00:00Z → 2025-08-08T05:15:00.000Z
-- [Data residency and user privacy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/privacy)
-  - Updated: 2023-03-07T00:00:00Z → 2025-06-04T22:03:00.000Z
-- [European Union Data Boundary](https://learn.microsoft.com/en-us/azure/communication-services/concepts/european-union-data-boundary)
-  - Updated: 2025-08-25T00:00:00Z → 2025-08-27T05:11:00.000Z
-- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
-  - Updated: 2023-03-09T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/identity-model)
-  - Updated: 2024-01-02T00:00:00Z → 2025-11-06T18:18:00.000Z
-- [Access tokens for end users](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/identity/access-tokens)
-  - Updated: 2021-11-17T00:00:00Z → 2025-03-06T23:16:00.000Z
-- [Authenticate Microsoft Entra ID users](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/identity/microsoft-entra-id-authentication-integration)
-  - Updated: 2025-05-06T00:00:00Z → 2025-11-06T18:18:00.000Z
-- [Sign an HTTP Request using HMAC](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial)
-  - Updated: 2021-06-30T00:00:00Z → 2025-03-05T05:33:00.000Z
-- [Authenticate services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/authentication)
-  - Updated: 2024-09-05T00:00:00Z → 2024-09-12T17:07:00.000Z
-- [Enable managed identity](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/managed-identity)
-  - Updated: 2023-07-24T00:00:00Z → 2025-04-17T05:15:00.000Z
-- [Understand identifiers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/identifiers)
-  - Updated: 2022-08-30T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Credentials best practices](https://learn.microsoft.com/en-us/azure/communication-services/concepts/credentials-best-practices)
-  - Updated: 2022-01-30T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Use cases for string identifiers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/raw-id-use-cases)
-  - Updated: 2022-12-23T00:00:00Z → 2025-04-03T22:05:00.000Z
-- [Build an authentication service using Azure Functions](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/trusted-service-tutorial)
-  - Updated: 2021-06-30T00:00:00Z → 2025-03-05T05:33:00.000Z
-- *...and 495 more*
 
 ## Classified Pages
 
@@ -389,7 +345,7 @@
 | [Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/phone-capabilities) | configuration | 0.65 | Provides detailed descriptions of phone calling features for Teams users via the ACS Calling SDK, which are product-specific capability and configuration details. |
 | [Pricing](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms-pricing) | comparing | 0.65 | Pricing model article will include region- and number-type-specific pricing tables and conditions, which are concrete numeric comparisons between options. |
 | [Provisioning and authorization](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-provisioning) | configuration | 0.65 | Provisioning article is likely to include specific tenant settings, required resources, and configuration steps/parameters unique to enabling TPE. |
-| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.65 | Concept for querying call logs via Log Analytics will include table names, column names, and KQL examples specific to ACS call logs, which are configuration/query details. |
+| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.65 | Covers using Log Analytics for call summary/diagnostic logs; likely includes log categories, schema, and query configuration details specific to ACS. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.65 | Covers using Log Analytics for call summary/diagnostic logs; likely includes log categories, schema, and query configuration details specific to ACS. |
 | [Real Time Text (RTT)](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/real-time-text) | security | 0.65 | RTT is tied to EU accessibility compliance and ACS implementation details. The article likely includes specific configuration steps, feature flags, and behavior unique to ACS RTT, which are product-specific and compliance-related. |
 | [Rooms API for structured meetings](https://learn.microsoft.com/en-us/azure/communication-services/concepts/rooms/room-concept) | security | 0.65 | Describes Rooms API with emphasis on user access security and controls (who can join, what actions they can take); likely includes product-specific roles/permissions and access control patterns. |

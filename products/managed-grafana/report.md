@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 20s
+- **Duration**: 0m 1s
 - **Total Pages**: 42
 - **Fetched**: 42
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 42
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/managed-grafana/managed-grafana.csv`
 
@@ -30,50 +30,6 @@
 | *(Unclassified)* | 10 | 23.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview)
-  - Updated: 2025-09-29T00:00:00Z → 2025-09-30T22:16:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/managed-grafana/known-limitations)
-  - Updated: 2025-08-19T00:00:00Z → 2025-08-19T08:00:00.000Z
-- [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal)
-  - Updated: 2025-09-29T00:00:00Z → 2025-09-29T08:00:00.000Z
-- [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli)
-  - Updated: 2025-09-29T00:00:00Z → 2025-09-29T08:00:00.000Z
-- [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-21T08:00:00.000Z
-- [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings)
-  - Updated: 2025-11-10T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Configure Grafana resource authentication and permissions](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-authentication-permissions)
-  - Updated: 2025-09-29T00:00:00Z → 2025-10-01T11:10:00.000Z
-- [Modify access permissions to Azure Monitor](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-permissions)
-  - Updated: 2025-09-30T00:00:00Z → 2025-09-30T08:00:00.000Z
-- [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities)
-  - Updated: 2025-01-15T00:00:00Z → 2025-02-20T12:33:00.000Z
-- [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups)
-  - Updated: 2025-07-22T00:00:00Z → 2025-08-29T17:12:00.000Z
-- [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-21T08:00:00.000Z
-- [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace)
-  - Updated: 2024-12-19T00:00:00Z → 2025-02-20T12:33:00.000Z
-- [Configure bundled Prometheus](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-bundled-prometheus)
-  - Updated: 2025-07-09T00:00:00Z → 2025-07-18T11:10:00.000Z
-- [Add Azure Data Explorer](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-data-explorer)
-  - Updated: 2025-09-18T00:00:00Z → 2025-09-18T11:11:00.000Z
-- [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise)
-  - Updated: 2025-04-16T00:00:00Z → 2025-09-17T11:11:00.000Z
-- [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins)
-  - Updated: 2024-12-19T00:00:00Z → 2024-12-20T12:09:00.000Z
-- [Create a dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-create-dashboard)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-21T08:00:00.000Z
-- [Share a dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-share-dashboard)
-  - Updated: 2025-02-06T00:00:00Z → 2025-02-20T12:33:00.000Z
-- [Use reporting and image rendering](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-reporting-and-image-rendering)
-  - Updated: 2025-09-30T00:00:00Z → 2025-10-01T11:10:00.000Z
-- [Azure AI Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard)
-  - Updated: 2025-11-03T00:00:00Z → 2025-11-19T12:10:00.000Z
-- *...and 22 more*
 
 ## Classified Pages
 

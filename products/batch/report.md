@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 52s
+- **Duration**: 0m 4s
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 114
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/batch/batch.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 24 | 21.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/batch/security-controls-policy)
-  - Updated: 2024-04-29T00:00:00Z → 2024-04-29T08:00:00.000Z
-- [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Batch service workflow and resources](https://learn.microsoft.com/en-us/azure/batch/batch-service-workflow-features)
-  - Updated: 2025-04-02T00:00:00Z → 2025-04-02T08:00:00.000Z
-- [Batch accounts](https://learn.microsoft.com/en-us/azure/batch/accounts)
-  - Updated: 2025-04-02T00:00:00Z → 2025-04-02T08:00:00.000Z
-- [Nodes and pools](https://learn.microsoft.com/en-us/azure/batch/nodes-and-pools)
-  - Updated: 2025-04-17T00:00:00Z → 2025-04-17T08:00:00.000Z
-- [Jobs and tasks](https://learn.microsoft.com/en-us/azure/batch/jobs-and-tasks)
-  - Updated: 2025-03-21T00:00:00Z → 2025-12-04T06:11:00.000Z
-- [Files and directories](https://learn.microsoft.com/en-us/azure/batch/files-and-directories)
-  - Updated: 2024-06-13T00:00:00Z → 2025-04-28T11:15:00.000Z
-- [APIs and tools](https://learn.microsoft.com/en-us/azure/batch/batch-apis-tools)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Error handling and detection](https://learn.microsoft.com/en-us/azure/batch/error-handling)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices)
-  - Updated: 2026-01-06T00:00:00Z → 2026-01-06T08:00:00.000Z
-- [Quotas and limits](https://learn.microsoft.com/en-us/azure/batch/batch-quota-limit)
-  - Updated: 2024-06-05T00:00:00Z → 2024-06-05T08:00:00.000Z
-- [Supported VM sizes](https://learn.microsoft.com/en-us/azure/batch/batch-pool-vm-sizes)
-  - Updated: 2026-01-05T00:00:00Z → 2026-01-05T08:00:00.000Z
-- [Task runtime environment variables](https://learn.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables)
-  - Updated: 2026-01-05T00:00:00Z → 2026-01-05T08:00:00.000Z
-- [VHD and Managed Images](https://learn.microsoft.com/en-us/azure/batch/batch-custom-image-pools-to-azure-compute-gallery-migration-guide)
-  - Updated: 2025-04-25T00:00:00Z → 2025-04-25T08:00:00.000Z
-- [Low-priority virtual machines](https://learn.microsoft.com/en-us/azure/batch/low-priority-vms-retirement-migration-guide)
-  - Updated: 2025-11-20T00:00:00Z → 2025-11-20T23:11:00.000Z
-- [Classic compute node communication model](https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide)
-  - Updated: 2025-04-02T00:00:00Z → 2025-04-02T08:00:00.000Z
-- [Manage Batch accounts in the Azure portal](https://learn.microsoft.com/en-us/azure/batch/batch-account-create-portal)
-  - Updated: 2025-04-02T00:00:00Z → 2025-04-02T08:00:00.000Z
-- [Manage Batch accounts with Batch Management .NET](https://learn.microsoft.com/en-us/azure/batch/batch-management-dotnet)
-  - Updated: 2025-05-09T00:00:00Z → 2025-05-09T08:00:00.000Z
-- [Plan to manage costs for Azure Batch](https://learn.microsoft.com/en-us/azure/batch/plan-to-manage-costs)
-  - Updated: 2025-03-27T00:00:00Z → 2025-03-27T08:00:00.000Z
-- [Configure public network access with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/public-network-access)
-  - Updated: 2024-11-21T00:00:00Z → 2024-11-21T08:00:00.000Z
-- *...and 94 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 14s
+- **Duration**: 0m 1s
 - **Total Pages**: 20
 - **Fetched**: 20
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 20
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/business-continuity-center/business-continuity-center.csv`
 
@@ -26,49 +26,6 @@
 | *(Unclassified)* | 10 | 50.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-overview)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Understand the protection estate](https://learn.microsoft.com/en-us/azure/resiliency/quick-understand-protection-estate)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [View protectable resources](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protectable-resources)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Configure protection for datasources](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-configure-protection-datasource)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Reconfigure Backup in an alternate vault](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-reconfigure-backup-alternate-vault)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Recover item](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-recover-deleted-item)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [View protected items and perform actions](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-view-protected-items-and-perform-actions)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Review security posture](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-review-security-posture)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Monitor jobs](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-monitor-operate)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Monitor alerts and metrics](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-monitor-alerts-metrics)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Monitor protection summary](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-monitor-protection-summary)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Configure and view reports](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-reporting-for-data-insights)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Govern and view compliance](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-govern-monitor-compliance)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Manage the Business Continuity and Disaster Recovery estate using Copilot](https://learn.microsoft.com/en-us/azure/resiliency/tutorial-manage-data-using-copilot)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Support matrices](https://learn.microsoft.com/en-us/azure/resiliency/resiliency-support-matrix)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Security levels](https://learn.microsoft.com/en-us/azure/resiliency/security-levels-concept)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-vaults)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-vault)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Create](https://learn.microsoft.com/en-us/azure/resiliency/backup-protection-policy)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/resiliency/manage-protection-policy)
-  - Updated: 2025-11-19T00:00:00Z → 2025-11-19T08:00:00.000Z
 
 ## Classified Pages
 

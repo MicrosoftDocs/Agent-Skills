@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 6s
+- **Duration**: 0m 0s
 - **Total Pages**: 8
 - **Fetched**: 8
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 8
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/baremetal-infrastructure/baremetal-infrastructure.csv`
 
@@ -24,25 +24,6 @@
 | *(Unclassified)* | 7 | 87.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is BareMetal Infrastructure?](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/concepts-baremetal-infrastructure-overview)
-  - Updated: 2024-08-15T00:00:00Z → 2024-08-15T08:00:00.000Z
-- [Know the terms](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/know-baremetal-terms)
-  - Updated: 2024-08-15T00:00:00Z → 2024-08-15T08:00:00.000Z
-- [Connect BareMetal instances in Azure](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/connect-baremetal-infrastructure)
-  - Updated: 2024-08-15T00:00:00Z → 2024-08-15T08:00:00.000Z
-- [About Nutanix Cloud Clusters on Azure](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/about-nc2-on-azure)
-  - Updated: 2025-03-28T00:00:00Z → 2025-03-31T22:05:00.000Z
-- [Available Regions and SKUs](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus)
-  - Updated: 2025-03-28T00:00:00Z → 2026-01-14T18:16:00.000Z
-- [Architecture](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/architecture)
-  - Updated: 2025-04-23T00:00:00Z → 2025-04-23T22:04:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started)
-  - Updated: 2025-07-30T00:00:00Z → 2025-07-31T17:19:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/faq)
-  - Updated: 2024-12-10T00:00:00Z → 2025-07-30T22:07:00.000Z
 
 ## Classified Pages
 

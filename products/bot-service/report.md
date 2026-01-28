@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 24s
+- **Duration**: 0m 7s
 - **Total Pages**: 190
 - **Fetched**: 190
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 190
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 190
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/bot-service/bot-service.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 48 | 25.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Bot Framework SDK documentation](https://learn.microsoft.com/en-us/azure/bot-service/index-bf-sdk?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2025-11-26T01:01:00Z
-- [What is the Bot Framework SDK?](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-overview?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2026-01-08T07:01:00.000Z
-- [Choose the right chatbot solution](https://learn.microsoft.com/en-us/azure/bot-service/bot-overview?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2025-12-16T01:01:00.000Z
-- [Create a basic bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-create-bot?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2025-12-16T01:01:00.000Z
-- [Create an Azure Bot resource](https://learn.microsoft.com/en-us/azure/bot-service/abs-quickstart?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-12-19T01:00:00.000Z
-- [Bot Service encryption](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-encryption?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Authentication basics](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-basics?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Authentication types](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication-types?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [User authentication basics](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Identity providers](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Identity providers proxy](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-identity-providers-proxy?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Single sign-on](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-sso?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Add authentication to a bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-12-19T01:00:00.000Z
-- [Add single sign-on to a bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-sso?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Add authentication using federated credentials](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-federated-credential?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2025-12-16T01:01:00.000Z
-- [Enhanced authentication](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-security-enhanced?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Security guidelines](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-security-guidelines?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [How bots work](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- [Managing state](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T00:00:00Z → 2024-10-09T08:00:00.000Z
-- *...and 170 more*
 
 ## Classified Pages
 

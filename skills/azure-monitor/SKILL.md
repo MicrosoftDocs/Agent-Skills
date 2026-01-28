@@ -410,9 +410,9 @@ When you need the latest official documentation, use `mcp_microsoftdocs:microsof
 | Configure Network Security Perimeter for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/network-security-perimeter |
 | Azure Monitor Network Security Perimeter scenarios | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/network-security-perimeter-scenarios |
 | Apply Azure Monitor built-in Azure Policy definitions | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/policy-reference |
-| Apply RBAC roles and security for Azure Monitor resources | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
 | Configure RBAC roles and permissions in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
-| Azure Monitor regulatory compliance policy controls | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
+| Configure RBAC roles and permissions in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
+| Use Azure Policy compliance controls for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
 | Use Azure Policy compliance controls for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
 | Authenticate to Azure Monitor Log Analytics API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/access-api |
 | Register apps for Azure Monitor API access | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/register-app-for-token |

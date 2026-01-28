@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 34s
+- **Duration**: 0m 9s
 - **Total Pages**: 200
 - **Fetched**: 200
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 200
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 200
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/logic-apps/logic-apps.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 54 | 27.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-example-consumption-workflow)
-  - Updated: 2025-11-18T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [Portal - Templates gallery](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates)
-  - Updated: 2025-07-03T00:00:00Z → 2025-07-10T22:09:00.000Z
-- [Visual Studio](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-logic-apps-with-visual-studio)
-  - Updated: 2024-12-10T00:00:00Z → 2024-12-18T12:12:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-logic-apps-visual-studio-code)
-  - Updated: 2024-01-04T00:00:00Z → 2024-01-04T08:00:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-bicep)
-  - Updated: 2025-02-20T00:00:00Z → 2025-02-20T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-azure-resource-manager-template)
-  - Updated: 2025-02-19T00:00:00Z → 2025-02-19T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-logic-apps-azure-cli)
-  - Updated: 2025-02-20T00:00:00Z → 2025-02-20T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-logic-apps-azure-powershell)
-  - Updated: 2025-02-20T00:00:00Z → 2025-02-20T08:00:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-azure-portal)
-  - Updated: 2025-12-05T00:00:00Z → 2025-12-05T08:00:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-visual-studio-code)
-  - Updated: 2025-10-27T00:00:00Z → 2025-10-27T08:00:00.000Z
-- [Create Consumption schedule-based workflow](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Create Consumption approval-based workflow](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-mailing-list-subscriptions-workflow)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Create Consumption workflow with Azure Storage and Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Azure CLI - Consumption workflow sample script](https://learn.microsoft.com/en-us/azure/logic-apps/sample-logic-apps-cli-script)
-  - Updated: 2025-07-18T00:00:00Z → 2025-07-18T08:00:00.000Z
-- [Custom connectors](https://learn.microsoft.com/en-us/azure/logic-apps/custom-connector-overview)
-  - Updated: 2025-06-19T00:00:00Z → 2025-06-19T08:00:00.000Z
-- [Scheduled recurring workflows](https://learn.microsoft.com/en-us/azure/logic-apps/concepts-schedule-automated-recurring-tasks-workflows)
-  - Updated: 2025-07-14T00:00:00Z → 2025-07-14T08:00:00.000Z
-- [Serverless with Azure](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-serverless-overview)
-  - Updated: 2025-07-22T00:00:00Z → 2025-07-23T05:09:00.000Z
-- [AI playbook and solution development](https://learn.microsoft.com/en-us/azure/logic-apps/ai-resources)
-  - Updated: 2025-09-14T00:00:00Z → 2025-09-16T22:10:00.000Z
-- [AI agent workflows](https://learn.microsoft.com/en-us/azure/logic-apps/agent-workflows-concepts)
-  - Updated: 2025-11-18T00:00:00Z → 2025-11-18T18:43:00.000Z
-- *...and 180 more*
 
 ## Classified Pages
 

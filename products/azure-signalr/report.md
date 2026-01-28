@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 35s
+- **Duration**: 0m 2s
 - **Total Pages**: 73
 - **Fetched**: 73
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 73
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr/azure-signalr.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 14 | 19.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-overview)
-  - Updated: 2023-11-11T00:00:00Z → 2023-11-11T08:00:00.000Z
-- [ASP.NET Core - C#](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-dotnet-core)
-  - Updated: 2023-11-11T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [ASP.NET - C#](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-dotnet)
-  - Updated: 2020-09-28T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Azure Functions - JavaScript](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-functions-javascript)
-  - Updated: 2023-04-19T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Azure Functions - C#](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-functions-csharp)
-  - Updated: 2024-05-16T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Azure Functions - Java](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-functions-java)
-  - Updated: 2022-04-04T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Azure Functions - Python](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-functions-python)
-  - Updated: 2024-01-23T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Azure SignalR Service deployment - Bicep](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-signalr-service-bicep)
-  - Updated: 2022-05-18T00:00:00Z → 2023-03-09T00:00:00.000Z
-- [Azure SignalR Service deployment - ARM template](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-azure-signalr-service-arm-template)
-  - Updated: 2020-10-02T00:00:00Z → 2024-02-18T12:14:00.000Z
-- [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api)
-  - Updated: 2024-09-03T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Build a group chat app with OpenAI](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-group-chat-with-openai)
-  - Updated: 2024-09-09T00:00:00Z → 2024-09-09T11:20:00.000Z
-- [Build a serverless real-time app with authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions)
-  - Updated: 2024-03-18T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Build a Blazor Server chat app](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-build-blazor-server-chat-app)
-  - Updated: 2024-08-28T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-reference-cli)
-  - Updated: 2019-11-13T00:00:00Z → 2023-04-09T00:00:00.000Z
-- [Create SignalR Service](https://learn.microsoft.com/en-us/azure/azure-signalr/scripts/signalr-cli-create-service)
-  - Updated: 2022-03-30T00:00:00Z → 2024-08-02T11:27:00.000Z
-- [Create SignalR Service and Web App](https://learn.microsoft.com/en-us/azure/azure-signalr/scripts/signalr-cli-create-with-app-service)
-  - Updated: 2022-03-30T00:00:00Z → 2024-12-11T23:02:00.000Z
-- [Create SignalR Service and Web App with GitHub OAuth](https://learn.microsoft.com/en-us/azure/azure-signalr/scripts/signalr-cli-create-with-app-service-github-oauth)
-  - Updated: 2022-03-30T00:00:00Z → 2025-03-31T22:05:00.000Z
-- [Azure SignalR Service internals](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-internals)
-  - Updated: 2024-08-09T00:00:00Z → 2024-08-09T08:00:00.000Z
-- [Service mode](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-service-mode)
-  - Updated: 2024-08-30T00:00:00Z → 2024-09-10T17:10:00.000Z
-- [Connection string](https://learn.microsoft.com/en-us/azure/azure-signalr/concept-connection-string)
-  - Updated: 2024-08-09T00:00:00Z → 2024-12-11T23:02:00.000Z
-- *...and 53 more*
 
 ## Classified Pages
 

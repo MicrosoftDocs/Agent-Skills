@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 3s
+- **Duration**: 0m 0s
 - **Total Pages**: 4
 - **Fetched**: 4
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 4
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/integration-environments/integration-environments.csv`
 
@@ -21,17 +21,6 @@
 *No classified pages*
 
 ## Changes
-
-### Updated Pages
-
-- [About integration environments](https://learn.microsoft.com/en-us/azure/integration-environments/overview)
-  - Updated: 2025-09-10T00:00:00Z → 2025-09-10T08:00:00.000Z
-- [Create an integration environment](https://learn.microsoft.com/en-us/azure/integration-environments/create-integration-environment)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Create an application group](https://learn.microsoft.com/en-us/azure/integration-environments/create-application-group)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
-- [Monitor health and performance](https://learn.microsoft.com/en-us/azure/integration-environments/monitor-resources-create-alerts)
-  - Updated: 2025-09-11T00:00:00Z → 2025-09-11T08:00:00.000Z
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 3m 39s
+- **Duration**: 0m 15s
 - **Total Pages**: 427
 - **Fetched**: 427
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 427
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 427
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/hdinsight/hdinsight.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 84 | 19.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure HDInsight?](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-overview)
-  - Updated: 2025-02-24T00:00:00Z → 2025-02-24T08:00:00.000Z
-- [Before you start](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-overview-before-you-start)
-  - Updated: 2025-02-21T00:00:00Z → 2025-02-21T08:00:00.000Z
-- [Create HDInsight clusters](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters)
-  - Updated: 2025-01-08T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Manage HDInsight clusters - Portal](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-portal-linux)
-  - Updated: 2024-07-23T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Manage HDInsight clusters - CLI](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-command-line)
-  - Updated: 2024-12-02T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Manage HDInsight clusters - .NET SDK](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)
-  - Updated: 2024-12-02T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Manage HDInsight clusters - PowerShell](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-administer-use-powershell)
-  - Updated: 2024-10-17T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Create clusters with Runbooks](https://learn.microsoft.com/en-us/azure/hdinsight/manage-clusters-runbooks)
-  - Updated: 2024-12-02T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Apache Ambari email notifications](https://learn.microsoft.com/en-us/azure/hdinsight/apache-ambari-email)
-  - Updated: 2024-06-15T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Build an ETL pipeline](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sales-insights-etl)
-  - Updated: 2024-06-14T00:00:00Z → 2025-02-21T05:40:00.000Z
-- [Azure CLI samples](https://learn.microsoft.com/en-us/azure/hdinsight/azure-cli-samples)
-  - Updated: 2024-09-06T00:00:00Z → 2024-09-06T08:00:00.000Z
-- [.NET samples](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sdk-dotnet-samples)
-  - Updated: 2024-10-17T00:00:00Z → 2025-03-20T11:11:00.000Z
-- [Java samples](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sdk-java-samples)
-  - Updated: 2024-06-13T00:00:00Z → 2025-03-20T11:11:00.000Z
-- [Python samples](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-sdk-python-samples)
-  - Updated: 2024-06-13T00:00:00Z → 2025-03-20T11:11:00.000Z
-- [Versioning introduction](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-overview-versioning)
-  - Updated: 2024-04-11T00:00:00Z → 2024-04-11T08:00:00.000Z
-- [HDInsight versions](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning)
-  - Updated: 2024-11-04T00:00:00Z → 2025-11-19T23:11:00.000Z
-- [HDInsight version 4.0](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-40-component-versioning)
-  - Updated: 2024-04-11T00:00:00Z → 2024-04-11T08:00:00.000Z
-- [HDInsight version 5.x](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-5x-component-versioning)
-  - Updated: 2024-10-17T00:00:00Z → 2024-10-17T08:00:00.000Z
-- [Retired HDInsight versions](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-retired-versions)
-  - Updated: 2024-07-10T00:00:00Z → 2024-07-10T17:04:00.000Z
-- [Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/enterprise-security-package)
-  - Updated: 2024-09-06T00:00:00Z → 2025-07-15T17:10:00.000Z
-- *...and 407 more*
 
 ## Classified Pages
 

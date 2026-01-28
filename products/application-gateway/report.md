@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 0s
+- **Duration**: 0m 5s
 - **Total Pages**: 136
 - **Fetched**: 136
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 136
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 136
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/application-gateway/application-gateway.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 53 | 39.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Redirection](https://learn.microsoft.com/en-us/azure/application-gateway/redirect-overview)
-  - Updated: 2022-04-19T00:00:00Z → 2025-07-16T05:10:00.000Z
-- [Rewrite HTTP headers and URL](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url)
-  - Updated: 2025-12-09T00:00:00Z → 2025-12-09T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/application-gateway/tcp-tls-proxy-overview)
-  - Updated: 2025-11-26T00:00:00Z → 2025-11-26T08:00:00.000Z
-- [Client IP preservation](https://learn.microsoft.com/en-us/azure/application-gateway/proxy-protocol-header)
-  - Updated: 2025-11-17T00:00:00Z → 2025-11-18T18:43:00.000Z
-- [High traffic support](https://learn.microsoft.com/en-us/azure/application-gateway/high-traffic-support)
-  - Updated: 2023-05-19T00:00:00Z → 2023-05-19T08:00:00.000Z
-- [Autoscaling v2 SKU](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant)
-  - Updated: 2023-11-02T00:00:00Z → 2025-04-25T17:04:00.000Z
-- [WebSocket support](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-websocket)
-  - Updated: 2024-08-22T00:00:00Z → 2024-08-22T17:04:00.000Z
-- [Ingress for AKS](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview)
-  - Updated: 2025-08-26T00:00:00Z → 2025-08-26T08:00:00.000Z
-- [Understanding pricing](https://learn.microsoft.com/en-us/azure/application-gateway/understanding-pricing)
-  - Updated: 2025-11-04T00:00:00Z → 2025-11-04T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
-  - Updated: 2025-04-30T00:00:00Z → 2026-01-26T18:11:00Z
-- [Private Deployment](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-private-deployment)
-  - Updated: 2025-12-18T00:00:00Z → 2025-12-18T18:11:00.000Z
-- [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link)
-  - Updated: 2026-01-21T00:00:00Z → 2026-01-21T18:19:00.000Z
-- [Secure with SSL](https://learn.microsoft.com/en-us/azure/application-gateway/create-ssl-portal)
-  - Updated: 2022-06-30T00:00:00Z → 2023-04-13T22:15:00.000Z
-- [SSL termination and end to end SSL](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-overview)
-  - Updated: 2025-10-09T00:00:00Z → 2025-10-09T17:32:00.000Z
-- [SSL policy overview](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Mutual authentication](https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-overview)
-  - Updated: 2025-11-18T00:00:00Z → 2026-01-23T08:00:00.000Z
-- [JSON Web Token (JWT) Configuration](https://learn.microsoft.com/en-us/azure/application-gateway/json-web-token-overview)
-  - Updated: 2025-11-18T00:00:00Z → 2026-01-15T23:11:00.000Z
-- [Using Key Vault](https://learn.microsoft.com/en-us/azure/application-gateway/key-vault-certs)
-  - Updated: 2024-02-02T00:00:00Z → 2024-02-02T08:00:00.000Z
-- [SSL certificate management](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-certificate-management)
-  - Updated: 2024-03-19T00:00:00Z → 2024-11-05T23:02:00.000Z
-- [FIPS 140 support on V2](https://learn.microsoft.com/en-us/azure/application-gateway/fips)
-  - Updated: 2025-12-01T00:00:00Z → 2025-12-02T12:09:00.000Z
-- *...and 116 more*
 
 ## Classified Pages
 

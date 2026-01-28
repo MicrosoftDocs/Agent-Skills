@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 16s
+- **Duration**: 0m 1s
 - **Total Pages**: 35
 - **Fetched**: 35
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 35
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/api-center/api-center.csv`
 
@@ -27,50 +27,6 @@
 | *(Unclassified)* | 18 | 51.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/api-center/agent-to-agent-overview)
-  - Updated: 2025-11-03T00:00:00Z → 2025-11-18T23:12:00.000Z
-- [Register and manage agents](https://learn.microsoft.com/en-us/azure/api-center/register-manage-agents)
-  - Updated: 2025-11-11T00:00:00Z → 2025-11-18T23:12:00.000Z
-- [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server)
-  - Updated: 2025-09-08T00:00:00Z → 2025-09-09T05:11:00.000Z
-- [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata)
-  - Updated: 2025-08-28T00:00:00Z → 2025-09-08T22:37:00.000Z
-- [Govern APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/govern-apis-vscode-extension)
-  - Updated: 2024-10-16T00:00:00Z → 2025-03-27T06:08:00.000Z
-- [API analysis - Microsoft managed](https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting)
-  - Updated: 2025-03-31T00:00:00Z → 2025-04-07T22:02:00.000Z
-- [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting)
-  - Updated: 2024-12-03T00:00:00Z → 2024-12-03T08:00:00.000Z
-- [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access)
-  - Updated: 2025-06-02T00:00:00Z → 2025-06-03T05:25:00.000Z
-- [Workflow automation to set API status](https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow)
-  - Updated: 2024-10-18T00:00:00Z → 2024-10-20T23:16:00.000Z
-- [Enable API Center portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal)
-  - Updated: 2025-08-05T00:00:00Z → 2025-08-10T11:10:00.000Z
-- [Customize API Center portal](https://learn.microsoft.com/en-us/azure/api-center/customize-api-center-portal)
-  - Updated: 2025-08-07T00:00:00Z → 2025-08-10T11:10:00.000Z
-- [Enable API Center portal view - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-portal-vs-code-extension)
-  - Updated: 2025-05-27T00:00:00Z → 2025-05-30T22:09:00.000Z
-- [Self-host Azure API Center portal](https://learn.microsoft.com/en-us/azure/api-center/self-host-api-center-portal)
-  - Updated: 2026-01-13T00:00:00Z → 2026-01-14T06:10:00.000Z
-- [Discover and consume APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/discover-apis-vscode-extension)
-  - Updated: 2025-05-27T00:00:00Z → 2025-05-30T22:09:00.000Z
-- [Samples and labs](https://learn.microsoft.com/en-us/azure/api-center/resources)
-  - Updated: 2025-09-25T00:00:00Z → 2025-09-29T17:17:00.000Z
-- [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview)
-  - Updated: 2025-01-06T00:00:00Z → 2026-01-06T18:11:00.000Z
-- [Key concepts](https://learn.microsoft.com/en-us/azure/api-center/key-concepts)
-  - Updated: 2024-11-15T00:00:00Z → 2024-12-19T12:13:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions)
-  - Updated: 2024-11-15T00:00:00Z → 2025-05-01T05:13:00Z
-- [Create an API center - portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center)
-  - Updated: 2025-10-13T00:00:00Z → 2025-10-13T08:00:00.000Z
-- [Create an API center - CLI](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-azure-cli)
-  - Updated: 2025-10-15T00:00:00Z → 2025-10-15T08:00:00.000Z
-- *...and 15 more*
 
 ## Classified Pages
 

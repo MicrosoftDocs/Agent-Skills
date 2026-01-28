@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 3m 42s
+- **Duration**: 0m 24s
 - **Total Pages**: 499
 - **Fetched**: 499
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 499
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 499
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 119 | 23.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use template reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-template-reference)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-30T22:11:00.000Z
-- [Create multiple instances](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Set resource deployment order](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-templates-with-dependent-resources)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Use deployment script](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-deployment-script)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Use conditions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-conditions)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Integrate Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-key-vault)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Deploy VM extensions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-deploy-vm-extensions)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Template best practices](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/best-practices)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [Data types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/data-types)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/frequently-asked-questions)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-30T22:11:00Z
-- [Templates for cloud consistency](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-cloud-consistency)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [Deployment modes](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [Deployment history deletions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history-deletions)
-  - Updated: 2025-05-27T00:00:00Z → 2025-05-28T17:04:00.000Z
-- [Deployment complete mode deletion](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-complete-mode-deletion)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [JSON structure](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax)
-  - Updated: 2026-01-13T00:00:00Z → 2026-01-13T08:00:00.000Z
-- [Write template expressions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-expressions)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-09T23:14:00.000Z
-- [Definitions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/definitions)
-  - Updated: 2025-04-28T00:00:00Z → 2025-12-08T23:11:00.000Z
-- [Parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameters)
-  - Updated: 2025-04-28T00:00:00Z → 2025-04-28T08:00:00.000Z
-- [Variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/variables)
-  - Updated: 2025-08-08T00:00:00Z → 2025-08-08T08:00:00.000Z
-- [User-defined functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/user-defined-functions)
-  - Updated: 2025-07-17T00:00:00Z → 2025-07-17T22:14:00.000Z
-- *...and 479 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 38s
+- **Duration**: 0m 8s
 - **Total Pages**: 202
 - **Fetched**: 202
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 202
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/sap/sap.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 34 | 16.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/sap/sap-on-azure-overview)
-  - Updated: 2024-08-22T00:00:00Z → 2024-08-22T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sap/workloads/get-started)
-  - Updated: 2025-11-04T00:00:00Z → 2025-11-04T08:00:00.000Z
-- [What SAP workloads run on Azure?](https://learn.microsoft.com/en-us/azure/sap/workloads/certifications)
-  - Updated: 2022-01-25T00:00:00Z → 2023-02-10T23:04:00.000Z
-- [SAP and Microsoft integration scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/integration-get-started)
-  - Updated: 2025-09-29T00:00:00Z → 2025-09-29T08:00:00.000Z
-- [Supported scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations)
-  - Updated: 2022-01-27T00:00:00Z → 2023-02-10T23:04:00.000Z
-- [Supported SAP software for Azure deployments](https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure)
-  - Updated: 2022-02-02T00:00:00Z → 2023-02-10T23:04:00.000Z
-- [Checklist to deploy an SAP workload on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-checklist)
-  - Updated: 2024-11-19T00:00:00Z → 2024-11-19T08:00:00.000Z
-- [Plan and implement an SAP deployment on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide)
-  - Updated: 2023-05-30T00:00:00Z → 2023-05-30T08:00:00.000Z
-- [Deploy an SAP workload on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-guide)
-  - Updated: 2023-06-14T00:00:00Z → 2023-06-14T08:00:00.000Z
-- [SAP Business One on Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/business-one-azure)
-  - Updated: 2022-02-11T00:00:00Z → 2023-02-10T23:04:00.000Z
-- [Connect to SAP LaMa](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation)
-  - Updated: 2019-07-29T00:00:00Z → 2023-04-18T22:04:00.000Z
-- [SAP ILM](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-information-lifecycle-management)
-  - Updated: 2022-01-28T00:00:00Z → 2023-02-10T23:04:00.000Z
-- [SAP RISE integration overview](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration)
-  - Updated: 2023-12-21T00:00:00Z → 2024-01-15T23:12:00.000Z
-- [Network connectivity with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network)
-  - Updated: 2025-05-14T00:00:00Z → 2025-12-16T12:11:00.000Z
-- [Azure services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services)
-  - Updated: 2023-12-21T00:00:00Z → 2023-12-21T23:04:00.000Z
-- [Identity and security services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security)
-  - Updated: 2023-12-21T00:00:00Z → 2025-06-26T11:11:00.000Z
-- [Flexible scale sets deployment guide](https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide)
-  - Updated: 2024-03-20T00:00:00Z → 2024-03-21T05:59:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-faq)
-  - Updated: 2025-03-31T00:00:00Z → 2025-03-31T08:00:00.000Z
-- [Prerequisites Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap)
-  - Updated: 2021-06-22T00:00:00Z → 2023-04-25T17:12:00.000Z
-- [New version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-new)
-  - Updated: 2021-06-22T00:00:00Z → 2025-04-04T22:04:00.000Z
-- *...and 182 more*
 
 ## Classified Pages
 

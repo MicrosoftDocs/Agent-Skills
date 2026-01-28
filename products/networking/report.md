@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 17s
+- **Duration**: 0m 1s
 - **Total Pages**: 22
 - **Fetched**: 22
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 22
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/networking/networking.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 10 | 45.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Resource Graph queries](https://learn.microsoft.com/en-us/azure/networking/fundamentals/resource-graph-samples)
-  - Updated: 2023-05-28T00:00:00Z → 2024-06-12T05:46:00.000Z
-- [Lumenisity UoS Patents](https://learn.microsoft.com/en-us/azure/networking/fundamentals/lumenisity-patent-list)
-  - Updated: 2023-05-31T00:00:00Z → 2024-11-21T23:02:00.000Z
-- [About Azure networking](https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
-  - Updated: 2025-06-26T00:00:00Z → 2025-06-26T08:00:00.000Z
-- [Azure for network engineers](https://learn.microsoft.com/en-us/azure/networking/azure-for-network-engineers)
-  - Updated: 2020-06-25T00:00:00Z → 2021-08-16T17:04:00.000Z
-- [Choose a secure network topology](https://learn.microsoft.com/en-us/azure/networking/secure-network-topology)
-  - Updated: 2024-06-17T00:00:00Z → 2024-06-17T08:00:00.000Z
-- [Choose a secure application delivery service](https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery)
-  - Updated: 2024-06-17T00:00:00Z → 2024-06-17T08:00:00.000Z
-- [Support for working remotely](https://learn.microsoft.com/en-us/azure/networking/working-remotely-support)
-  - Updated: 2023-04-09T00:00:00Z → 2023-04-10T00:00:00.000Z
-- [Load balancing and content delivery](https://learn.microsoft.com/en-us/azure/networking/load-balancer-content-delivery/)
-  - Updated: 2025-05-27T00:00:00Z → 2025-06-26T15:48:00Z
-- [Preface and Test Setup](https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-preface)
-  - Updated: 2023-03-26T00:00:00Z → 2023-06-29T11:24:00.000Z
-- [Control Plane Analysis](https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-control-plane)
-  - Updated: 2023-03-24T00:00:00Z → 2023-06-29T11:24:00.000Z
-- [Data Plane Analysis](https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-data-plane)
-  - Updated: 2023-03-24T00:00:00Z → 2023-06-29T11:24:00.000Z
-- [Microsoft global network](https://learn.microsoft.com/en-us/azure/networking/microsoft-global-network)
-  - Updated: 2023-04-06T00:00:00Z → 2023-04-07T00:00:00.000Z
-- [Azure network latency](https://learn.microsoft.com/en-us/azure/networking/azure-network-latency)
-  - Updated: 2025-07-07T00:00:00Z → 2025-08-18T17:25:00.000Z
-- [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/networking/security-controls-policy)
-  - Updated: 2024-02-06T00:00:00Z → 2024-02-07T05:35:00.000Z
-- [NVA accelerated connections](https://learn.microsoft.com/en-us/azure/networking/nva-accelerated-connections)
-  - Updated: 2023-02-01T00:00:00Z → 2025-08-04T22:16:00.000Z
-- [Network monitoring overview](https://learn.microsoft.com/en-us/azure/networking/network-monitoring-overview)
-  - Updated: 2023-10-30T00:00:00Z → 2023-10-30T17:02:00.000Z
-- [Check resource usage against Azure limits](https://learn.microsoft.com/en-us/azure/networking/check-usage-against-limits)
-  - Updated: 2018-06-05T00:00:00Z → 2023-04-13T11:17:00.000Z
-- [Create a Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/networking/create-zero-trust-network-web-apps)
-  - Updated: 2022-12-31T00:00:00Z → 2023-01-23T12:15:00.000Z
-- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/networking/policy-reference)
-  - Updated: 2024-02-06T00:00:00Z → 2024-02-06T18:05:00.000Z
-- [Providers](https://learn.microsoft.com/en-us/azure/networking/networking-partners-msp)
-  - Updated: 2025-10-14T00:00:00Z → 2025-10-14T08:00:00.000Z
-- *...and 2 more*
 
 ## Classified Pages
 

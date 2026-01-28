@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 8s
+- **Duration**: 0m 0s
 - **Total Pages**: 8
 - **Fetched**: 8
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 8
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/network-function-manager/network-function-manager.csv`
 
@@ -25,25 +25,6 @@
 | *(Unclassified)* | 6 | 75.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Network Function Manager](https://learn.microsoft.com/en-us/azure/network-function-manager/overview)
-  - Updated: 2021-11-02T00:00:00Z → 2022-06-13T22:03:00.000Z
-- [Create a device resource](https://learn.microsoft.com/en-us/azure/network-function-manager/create-device)
-  - Updated: 2021-11-02T00:00:00Z → 2022-06-13T22:03:00.000Z
-- [Deploy network functions](https://learn.microsoft.com/en-us/azure/network-function-manager/deploy-functions)
-  - Updated: 2021-11-02T00:00:00Z → 2022-06-13T22:03:00.000Z
-- [Delete network functions](https://learn.microsoft.com/en-us/azure/network-function-manager/delete-functions)
-  - Updated: 2022-05-10T00:00:00Z → 2022-10-27T17:05:00.000Z
-- [Partners](https://learn.microsoft.com/en-us/azure/network-function-manager/partners)
-  - Updated: 2021-11-02T00:00:00Z → 2023-04-03T00:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/network-function-manager/faq)
-  - Updated: 2021-11-02T00:00:00Z → 2022-10-05T23:15:00.000Z
-- [Prerequisites and requirements](https://learn.microsoft.com/en-us/azure/network-function-manager/requirements)
-  - Updated: 2021-11-02T00:00:00Z → 2022-07-03T11:04:00.000Z
-- [Configure permissions and register resources](https://learn.microsoft.com/en-us/azure/network-function-manager/resources-permissions)
-  - Updated: 2021-11-02T00:00:00Z → 2022-06-13T22:03:00.000Z
 
 ## Classified Pages
 

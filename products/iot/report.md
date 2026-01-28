@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 16s
+- **Duration**: 0m 1s
 - **Total Pages**: 40
 - **Fetched**: 40
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 40
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/iot/iot.csv`
 
@@ -30,50 +30,6 @@
 | *(Unclassified)* | 23 | 57.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction)
-  - Updated: 2025-10-07T00:00:00Z → 2025-10-07T08:00:00.000Z
-- [Device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development)
-  - Updated: 2025-01-20T00:00:00Z → 2025-01-20T08:00:00.000Z
-- [Device connectivity](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-connectivity)
-  - Updated: 2025-06-16T00:00:00Z → 2025-06-16T08:00:00.000Z
-- [Device management and control](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-management)
-  - Updated: 2025-06-17T00:00:00Z → 2025-06-17T08:00:00.000Z
-- [Process and route messages](https://learn.microsoft.com/en-us/azure/iot/iot-overview-message-processing)
-  - Updated: 2025-03-24T00:00:00Z → 2025-03-25T11:12:00.000Z
-- [Extend your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-extensibility)
-  - Updated: 2025-01-22T00:00:00Z → 2025-04-02T11:16:00.000Z
-- [Analyze and visualize your IoT data](https://learn.microsoft.com/en-us/azure/iot/iot-overview-analyze-visualize)
-  - Updated: 2025-04-02T00:00:00Z → 2025-05-20T22:03:00.000Z
-- [Manage your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-management)
-  - Updated: 2025-01-23T00:00:00Z → 2025-01-30T18:05:00.000Z
-- [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security)
-  - Updated: 2025-06-13T00:00:00Z → 2025-06-18T11:21:00.000Z
-- [Scalability, high availability](https://learn.microsoft.com/en-us/azure/iot/iot-overview-scalability-high-availability)
-  - Updated: 2025-03-13T00:00:00Z → 2025-04-02T11:16:00.000Z
-- [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies)
-  - Updated: 2025-03-28T00:00:00Z → 2025-03-28T22:03:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-development)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub)
-  - Updated: 2025-10-27T00:00:00Z → 2025-10-27T08:00:00.000Z
-- [Connect MXCHIP AZ3166 to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-mxchip-az3166-iot-hub)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [Connect STMicroelectronics B-L475E to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-stm-b-l475e-iot-hub)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [Connect ESPRESSIF ESP32 Kit to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-espressif-esp32-freertos-iot-hub)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [Troubleshoot embedded device](https://learn.microsoft.com/en-us/azure/iot/troubleshoot-embedded-device-tutorials)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [IoT device types](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-types)
-  - Updated: 2025-03-13T00:00:00Z → 2025-03-20T17:02:00.000Z
-- [C SDK and Embedded C SDK usage scenarios](https://learn.microsoft.com/en-us/azure/iot/concepts-using-c-sdk-and-embedded-c-sdk)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot/concepts-manage-device-reconnections)
-  - Updated: 2025-01-10T00:00:00Z → 2025-01-10T08:00:00.000Z
-- *...and 20 more*
 
 ## Classified Pages
 

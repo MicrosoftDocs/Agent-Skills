@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 53s
+- **Duration**: 0m 4s
 - **Total Pages**: 104
 - **Fetched**: 104
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 104
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/lab-services/lab-services.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 41 | 39.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Nested virtualization](https://learn.microsoft.com/en-us/azure/lab-services/concept-nested-virtualization-template-vm)
-  - Updated: 2024-03-07T00:00:00Z → 2024-03-18T22:07:00.000Z
-- [Capacity limits](https://learn.microsoft.com/en-us/azure/lab-services/capacity-limits)
-  - Updated: 2023-08-28T00:00:00Z → 2024-07-15T14:48:00.000Z
-- [Cost management for labs](https://learn.microsoft.com/en-us/azure/lab-services/cost-management-guide)
-  - Updated: 2022-07-04T00:00:00Z → 2025-09-23T22:10:00.000Z
-- [Azure Policies for Lab Services](https://learn.microsoft.com/en-us/azure/lab-services/azure-polices-for-lab-services)
-  - Updated: 2022-11-08T00:00:00Z → 2024-08-30T05:36:00.000Z
-- [Reliability in Azure Lab Services](https://learn.microsoft.com/en-us/azure/lab-services/reliability-in-azure-lab-services)
-  - Updated: 2022-08-18T00:00:00Z → 2024-11-22T05:58:00.000Z
-- [Use Lab Services for conducting classes](https://learn.microsoft.com/en-us/azure/lab-services/classroom-labs-scenarios)
-  - Updated: 2024-03-07T00:00:00Z → 2024-03-18T22:07:00.000Z
-- [Use Lab Services for hackathons](https://learn.microsoft.com/en-us/azure/lab-services/hackathon-labs)
-  - Updated: 2023-05-22T00:00:00Z → 2023-05-24T11:17:00.000Z
-- [Use Lab Services within Canvas](https://learn.microsoft.com/en-us/azure/lab-services/lab-services-within-canvas-overview)
-  - Updated: 2023-06-02T00:00:00Z → 2024-08-30T05:36:00.000Z
-- [Use Lab Services within Teams](https://learn.microsoft.com/en-us/azure/lab-services/lab-services-within-teams-overview)
-  - Updated: 2023-06-02T00:00:00Z → 2024-08-30T05:36:00.000Z
-- [Administrator guide](https://learn.microsoft.com/en-us/azure/lab-services/administrator-guide)
-  - Updated: 2024-11-08T00:00:00Z → 2024-12-19T12:13:00.000Z
-- [Lab plan creation guide](https://learn.microsoft.com/en-us/azure/lab-services/lab-plan-setup-guide)
-  - Updated: 2021-11-23T00:00:00Z → 2023-10-11T11:19:00.000Z
-- [Lab creation guide](https://learn.microsoft.com/en-us/azure/lab-services/setup-guide)
-  - Updated: 2020-06-26T00:00:00Z → 2023-03-14T00:00:00.000Z
-- [Create & manage lab plans (Azure portal)](https://learn.microsoft.com/en-us/azure/lab-services/how-to-manage-lab-plans)
-  - Updated: 2023-03-14T00:00:00Z → 2024-08-30T05:36:00.000Z
-- [Create a lab plan (PowerShell)](https://learn.microsoft.com/en-us/azure/lab-services/how-to-create-lab-plan-powershell)
-  - Updated: 2022-06-15T00:00:00Z → 2024-07-15T14:48:00.000Z
-- [Create a lab plan (Bicep/ARM template)](https://learn.microsoft.com/en-us/azure/lab-services/how-to-create-lab-plan-bicep)
-  - Updated: 2023-08-28T00:00:00Z → 2024-07-15T14:48:00.000Z
-- [Create a lab plan (Python)](https://learn.microsoft.com/en-us/azure/lab-services/how-to-create-lab-plan-python)
-  - Updated: 2022-02-15T00:00:00Z → 2024-07-15T14:48:00.000Z
-- [Add a lab creator](https://learn.microsoft.com/en-us/azure/lab-services/add-lab-creator)
-  - Updated: 2023-07-04T00:00:00Z → 2024-08-30T05:36:00.000Z
-- [Connect a lab plan to a virtual network](https://learn.microsoft.com/en-us/azure/lab-services/how-to-connect-vnet-injection)
-  - Updated: 2023-06-20T00:00:00Z → 2025-10-08T22:11:00.000Z
-- [Request core limit increase](https://learn.microsoft.com/en-us/azure/lab-services/how-to-request-capacity-increase)
-  - Updated: 2025-02-27T00:00:00Z → 2025-02-27T23:02:00.000Z
-- [Determine Usage and Quota](https://learn.microsoft.com/en-us/azure/lab-services/how-to-determine-your-quota-usage)
-  - Updated: 2022-10-11T00:00:00Z → 2025-09-23T22:10:00.000Z
-- *...and 84 more*
 
 ## Classified Pages
 

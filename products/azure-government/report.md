@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 16s
+- **Duration**: 0m 1s
 - **Total Pages**: 39
 - **Fetched**: 39
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 39
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-government/azure-government.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 18 | 46.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure AI services](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-cognitiveservices)
-  - Updated: 2021-08-30T00:00:00Z → 2024-02-09T23:18:00.000Z
-- [Integrate Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-aad-auth-qs)
-  - Updated: 2021-11-02T00:00:00Z → 2023-10-12T17:01:00.000Z
-- [SQL Server Management Studio](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-connect-ssms)
-  - Updated: 2021-10-01T00:00:00Z → 2022-04-25T22:04:00.000Z
-- [Impact Level 5 isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-impact-level-5)
-  - Updated: 2024-01-04T00:00:00Z → 2024-01-04T08:00:00.000Z
-- [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance)
-  - Updated: 2023-07-14T00:00:00Z → 2023-07-14T08:00:00.000Z
-- [Secure Azure computing architecture](https://learn.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture)
-  - Updated: 2022-10-03T00:00:00Z → 2022-10-03T22:08:00.000Z
-- [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/azure-government/connect-with-azure-pipelines)
-  - Updated: 2022-06-27T00:00:00Z → 2023-05-11T11:16:00.000Z
-- [Use DISA CAP](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-ase-disa-cap)
-  - Updated: 2022-06-27T00:00:00Z → 2023-04-09T00:00:00.000Z
-- [Azure Monitor logs](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-manage-oms)
-  - Updated: 2016-12-05T00:00:00Z → 2021-12-31T12:02:00.000Z
-- [Marketplace](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-manage-marketplace)
-  - Updated: 2021-11-02T00:00:00Z → 2021-11-10T23:03:00.000Z
-- [Access EA billing account](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-how-to-access-enterprise-agreement-billing-account)
-  - Updated: 2024-11-18T00:00:00Z → 2024-11-18T08:00:00.000Z
-- [Trusted Internet Connections with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/compliance-tic)
-  - Updated: 2022-06-28T00:00:00Z → 2023-03-16T00:00:00.000Z
-- [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope)
-  - Updated: 2025-10-15T00:00:00Z → 2025-10-29T05:11:00.000Z
-- [Accelerate your path to ATO with Azure](https://learn.microsoft.com/en-us/azure/azure-government/compliance/documentation-accelerate-compliance)
-  - Updated: 2023-05-30T00:00:00Z → 2023-05-31T22:03:00.000Z
-- [Images](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-image-gallery)
-  - Updated: 2021-08-31T00:00:00Z → 2023-03-09T00:00:00.000Z
-- [Extensions](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-extension)
-  - Updated: 2021-08-31T00:00:00Z → 2024-02-08T12:20:00.000Z
-- [Marketplace for partners](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-manage-marketplace-partners)
-  - Updated: 2021-08-31T00:00:00Z → 2021-12-31T12:02:00.000Z
-- [CSP application process](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-application)
-  - Updated: 2023-05-30T00:00:00Z → 2023-05-31T22:03:00.000Z
-- [Authorized reseller list](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list)
-  - Updated: 2023-10-31T00:00:00Z → 2023-10-31T08:00:00.000Z
-- [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
-  - Updated: 2022-03-07T00:00:00Z → 2022-09-20T07:14:00.000Z
-- *...and 19 more*
 
 ## Classified Pages
 

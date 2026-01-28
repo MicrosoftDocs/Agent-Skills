@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 2m 54s
+- **Duration**: 0m 14s
 - **Total Pages**: 364
 - **Fetched**: 364
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 364
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 364
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/guidance/guidance.csv`
 
@@ -29,50 +29,6 @@
 | *(Unclassified)* | 106 | 29.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Browse all Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
-  - Updated: 2025-11-05T00:00:00Z → 2025-11-05T18:33:00Z
-- [Architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
-  - Updated: 2025-11-07T00:00:00Z → 2025-12-18T18:34:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-01-26T00:00:00Z → 2026-01-26T18:34:00.000Z
-- [Deployment options](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy)
-  - Updated: 2025-12-15T00:00:00Z → 2026-01-12T18:32:00.000Z
-- [Subscription vending implementation](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/subscription-vending)
-  - Updated: 2025-12-15T00:00:00Z → 2026-01-12T18:32:00.000Z
-- [Introduction](https://learn.microsoft.com/en-us/azure/architecture/guide/)
-  - Updated: 2025-01-03T00:00:00Z → 2025-03-03T18:30:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/)
-  - Updated: 2025-09-25T00:00:00Z → 2025-10-14T05:02:00.000Z
-- [Big compute](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-compute)
-  - Updated: 2022-07-26T00:00:00Z → 2025-09-05T17:34:00.000Z
-- [Big data](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-data)
-  - Updated: 2024-12-12T00:00:00Z → 2025-08-06T17:33:00.000Z
-- [Event-driven architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
-  - Updated: 2025-08-06T00:00:00Z → 2025-08-14T17:34:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices)
-  - Updated: 2025-06-30T00:00:00Z → 2025-07-11T05:02:00.000Z
-- [Microservices assessment and readiness](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/microservices-assessment)
-  - Updated: 2025-06-16T00:00:00Z → 2025-07-30T05:05:00.000Z
-- [CI/CD for microservices](https://learn.microsoft.com/en-us/azure/architecture/microservices/ci-cd)
-  - Updated: 2022-07-26T00:00:00Z → 2025-10-30T05:03:00Z
-- [Domain analysis](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)
-  - Updated: 2019-02-25T00:00:00Z → 2025-07-11T05:02:00.000Z
-- [Tactical DDD](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-ddd)
-  - Updated: 2022-07-26T00:00:00Z → 2025-10-30T05:03:00Z
-- [Identify microservice boundaries](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/microservice-boundaries)
-  - Updated: 2022-07-26T00:00:00Z → 2025-10-30T05:03:00Z
-- [Introduction](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/)
-  - Updated: 2025-09-23T00:00:00Z → 2025-09-26T05:04:00.000Z
-- [Choose a compute option](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/compute-options)
-  - Updated: 2024-11-05T00:00:00Z → 2024-11-11T18:32:00.000Z
-- [Interservice communication](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication)
-  - Updated: 2022-07-26T00:00:00Z → 2025-10-30T05:03:00Z
-- [API design](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/api-design)
-  - Updated: 2025-10-16T00:00:00Z → 2025-11-20T18:35:00.000Z
-- *...and 344 more*
 
 ## Classified Pages
 

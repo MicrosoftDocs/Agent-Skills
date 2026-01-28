@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 4m 24s
+- **Duration**: 0m 24s
 - **Total Pages**: 538
 - **Fetched**: 538
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 538
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 538
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-factory/data-factory.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 102 | 19.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Introduction to Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
-  - Updated: 2025-02-13T00:00:00Z → 2025-02-13T08:00:00.000Z
-- [What's new (recent months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new)
-  - Updated: 2024-09-25T00:00:00Z → 2024-09-25T08:00:00.000Z
-- [What's new (archived months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new-archive)
-  - Updated: 2024-09-25T00:00:00Z → 2024-09-25T08:00:00.000Z
-- [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration)
-  - Updated: 2025-12-02T00:00:00Z → 2025-12-10T06:11:00.000Z
-- [How to ingest data from Azure Data Factory to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-ingest-data-into-fabric-from-azure-data-factory)
-  - Updated: 2024-09-16T00:00:00Z → 2025-07-28T17:12:00.000Z
-- [Get started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-get-started)
-  - Updated: 2025-02-13T00:00:00Z → 2025-04-10T05:09:00.000Z
-- [Create a data factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
-  - Updated: 2025-04-23T00:00:00Z → 2025-04-24T22:03:00.000Z
-- [Hello World - How to copy data](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool)
-  - Updated: 2025-07-25T00:00:00Z → 2025-07-25T08:00:00.000Z
-- [Create a data flow](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-create)
-  - Updated: 2025-02-13T00:00:00Z → 2025-04-10T05:09:00.000Z
-- [Training modules](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules)
-  - Updated: 2025-02-13T00:00:00Z → 2025-04-10T05:09:00.000Z
-- [List of tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials)
-  - Updated: 2025-04-22T00:00:00Z → 2025-04-22T22:03:00.000Z
-- [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-tool)
-  - Updated: 2024-10-03T00:00:00Z → 2024-10-03T08:00:00.000Z
-- [User interface (UI)](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal)
-  - Updated: 2025-04-25T00:00:00Z → 2025-04-25T22:08:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-dot-net)
-  - Updated: 2024-10-03T00:00:00Z → 2024-10-03T08:00:00.000Z
-- [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-hybrid-copy-data-tool)
-  - Updated: 2024-10-03T00:00:00Z → 2024-10-03T08:00:00.000Z
-- [User interface (UI)](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-hybrid-copy-portal)
-  - Updated: 2024-10-03T00:00:00Z → 2024-10-03T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-hybrid-copy-powershell)
-  - Updated: 2024-10-03T00:00:00Z → 2024-10-03T08:00:00.000Z
-- [Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-storage-gen2)
-  - Updated: 2025-02-13T00:00:00Z → 2025-02-13T08:00:00.000Z
-- [Azure Data Lake Storage Gen1](https://learn.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-store)
-  - Updated: 2024-05-15T00:00:00Z → 2024-05-15T08:00:00.000Z
-- [From Azure Data Lake Storage Gen1 to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-storage-gen2-from-gen1)
-  - Updated: 2025-02-13T00:00:00Z → 2025-02-13T08:00:00.000Z
-- *...and 518 more*
 
 ## Classified Pages
 

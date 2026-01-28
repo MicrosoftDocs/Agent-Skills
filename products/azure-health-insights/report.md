@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 23s
+- **Duration**: 0m 2s
 - **Total Pages**: 39
 - **Fetched**: 39
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 39
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-insights/azure-health-insights.csv`
 
@@ -27,50 +27,6 @@
 | *(Unclassified)* | 24 | 61.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure AI Health Insights](https://learn.microsoft.com/en-us/azure/azure-health-insights/overview)
-  - Updated: 2024-05-05T00:00:00Z → 2024-09-30T17:05:00.000Z
-- [Radiology Insights](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/)
-  - Updated: 2023-12-12T00:00:00Z → 2025-01-28T23:09:00Z
-- [Trial Matcher](https://learn.microsoft.com/en-us/azure/azure-health-insights/trial-matcher/)
-  - Updated: 2023-01-27T00:00:00Z → 2025-01-28T23:09:00Z
-- [Deploy Azure AI Health Insights using the portal](https://learn.microsoft.com/en-us/azure/azure-health-insights/deploy-portal)
-  - Updated: 2024-05-05T00:00:00Z → 2024-09-30T17:05:00.000Z
-- [How to Use Azure AI Health Insights with containers](https://learn.microsoft.com/en-us/azure/azure-health-insights/use-containers)
-  - Updated: 2024-05-05T00:00:00Z → 2024-05-05T08:00:00.000Z
-- [How to configure the containers](https://learn.microsoft.com/en-us/azure/azure-health-insights/configure-containers)
-  - Updated: 2024-05-05T00:00:00Z → 2024-05-05T08:00:00.000Z
-- [Reliability in Azure Health Insights](https://learn.microsoft.com/en-us/azure/azure-health-insights/reliability-health-insights)
-  - Updated: 2024-02-06T00:00:00Z → 2026-01-07T19:08:00.000Z
-- [Data, privacy, and security](https://learn.microsoft.com/en-us/azure/azure-health-insights/responsible-ai/data-privacy-security)
-  - Updated: 2024-05-05T00:00:00Z → 2024-05-05T08:00:00.000Z
-- [About Radiology Insights](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/overview)
-  - Updated: 2023-12-06T00:00:00Z → 2025-03-04T18:02:00.000Z
-- [Use the Radiology Insights model (Platform)](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/get-started)
-  - Updated: 2023-12-06T00:00:00Z → 2025-06-06T11:26:00.000Z
-- [Transparency note for Radiology Insights](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/transparency-note)
-  - Updated: 2025-04-04T00:00:00Z → 2025-05-19T17:08:00.000Z
-- [Model configuration](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/model-configuration)
-  - Updated: 2023-12-06T00:00:00Z → 2025-05-26T11:23:00.000Z
-- [Inference information](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/inferences)
-  - Updated: 2025-04-04T00:00:00Z → 2025-05-23T22:03:00.000Z
-- [Age Mismatch](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/age-mismatch-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-21T11:13:00.000Z
-- [Sex Mismatch](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/sex-mismatch-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-21T11:13:00.000Z
-- [Laterality Discrepancy](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/laterality-mismatch-inference)
-  - Updated: 2025-04-04T00:00:00Z → 2025-05-21T11:13:00.000Z
-- [Complete Order Discrepancy](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/complete-order-discrepancy-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-22T17:03:00.000Z
-- [Limited Order Discrepancy](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/limited-order-discrepancy-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-22T17:03:00.000Z
-- [Finding](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/finding-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-22T17:03:00.000Z
-- [Critical Result](https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/critical-result-inference)
-  - Updated: 2023-12-12T00:00:00Z → 2025-05-22T17:03:00.000Z
-- *...and 19 more*
 
 ## Classified Pages
 

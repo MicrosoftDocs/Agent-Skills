@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 10s
+- **Duration**: 0m 5s
 - **Total Pages**: 134
 - **Fetched**: 134
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 134
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware/azure-vmware.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 36 | 26.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable public IP on the NSX Edge for Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-public-ip-nsx-edge)
-  - Updated: 2025-02-04T00:00:00Z → 2025-02-04T08:00:00.000Z
-- [Disable internet access or enable a default route](https://learn.microsoft.com/en-us/azure/azure-vmware/disable-internet-access)
-  - Updated: 2024-03-22T00:00:00Z → 2024-03-22T08:00:00.000Z
-- [Deploy Traffic Manager to balance workloads](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-traffic-manager-balance-workloads)
-  - Updated: 2024-03-22T00:00:00Z → 2024-03-22T08:00:00.000Z
-- [Connect multiple private clouds in same region](https://learn.microsoft.com/en-us/azure/azure-vmware/connect-multiple-private-clouds-same-region)
-  - Updated: 2024-01-08T00:00:00Z → 2024-07-29T22:06:00.000Z
-- [Configure DHCP server or relay](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-dhcp-azure-vmware-solution)
-  - Updated: 2025-01-22T00:00:00Z → 2025-01-22T08:00:00.000Z
-- [Configure DHCP on L2 stretched networks](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-l2-stretched-vmware-hcx-networks)
-  - Updated: 2024-03-07T00:00:00Z → 2024-03-07T18:04:00.000Z
-- [Configure DNS forwarder](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-dns-azure-vmware-solution)
-  - Updated: 2024-02-27T00:00:00Z → 2025-08-25T22:10:00.000Z
-- [Configure VMware HCX network extension](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-hcx-network-extension)
-  - Updated: 2023-12-06T00:00:00Z → 2023-12-08T23:04:00.000Z
-- [VMware HCX Mobility Optimized Networking (MON) guidance](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-hcx-mon-guidance)
-  - Updated: 2025-02-26T00:00:00Z → 2025-02-26T08:00:00.000Z
-- [NSX Scale and Performance Recommendations for VMware HCX](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-nsx-scale-and-performance-recommendations-for-vmware-hcx)
-  - Updated: 2026-01-09T00:00:00Z → 2026-01-10T06:10:00.000Z
-- [Configure NSX network components](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-nsx-network-components-azure-portal)
-  - Updated: 2024-06-12T00:00:00Z → 2024-06-12T17:07:00.000Z
-- [Configure port mirroring](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-port-mirroring-azure-vmware-solution)
-  - Updated: 2023-12-06T00:00:00Z → 2023-12-08T23:04:00.000Z
-- [Configure a site-to-site VPN in vWAN](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-site-to-site-vpn-gateway)
-  - Updated: 2024-02-27T00:00:00Z → 2024-02-27T08:00:00.000Z
-- [1 - Network planning checklist](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-network-checklist)
-  - Updated: 2025-12-16T00:00:00Z → 2025-12-16T08:00:00.000Z
-- [2 - Create a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-create-private-cloud)
-  - Updated: 2023-12-19T00:00:00Z → 2023-12-20T23:04:00.000Z
-- [3 - Configure networking](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-configure-networking)
-  - Updated: 2024-06-12T00:00:00Z → 2024-06-21T00:28:00.000Z
-- [4 - Access a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-access-private-cloud)
-  - Updated: 2024-04-01T00:00:00Z → 2024-04-01T22:15:00.000Z
-- [5 - Create an NSX Tier-1 Gateway](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-nsx-tier-1-gateway)
-  - Updated: 2024-12-11T00:00:00Z → 2024-12-12T18:02:00.000Z
-- [6 - Create an NSX network segment](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-nsx-t-network-segment)
-  - Updated: 2024-06-12T00:00:00Z → 2024-06-12T17:07:00.000Z
-- [8 - Scale a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-scale-private-cloud)
-  - Updated: 2025-06-04T00:00:00Z → 2025-06-04T22:03:00.000Z
-- *...and 114 more*
 
 ## Classified Pages
 

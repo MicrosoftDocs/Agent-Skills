@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 15s
+- **Duration**: 0m 0s
 - **Total Pages**: 25
 - **Fetched**: 25
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 25
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-fluid-relay/azure-fluid-relay.csv`
 
@@ -30,50 +30,6 @@
 | *(Unclassified)* | 10 | 40.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [How to: Use audience features in the Fluid Framework](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/use-audience-in-fluid)
-  - Updated: 2022-11-04T00:00:00Z → 2022-11-15T23:04:00.000Z
-- [How to: Rotate Azure Fluid Relay access keys](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/rotate-fluid-relay-access-keys)
-  - Updated: 2024-08-13T00:00:00Z → 2024-08-15T05:40:00.000Z
-- [Service limits](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/reference/service-limits)
-  - Updated: 2021-08-19T00:00:00Z → 2023-10-17T22:13:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/resources/faq)
-  - Updated: 2022-06-01T00:00:00Z → 2023-01-29T12:16:00.000Z
-- [Support](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/resources/support)
-  - Updated: 2021-08-19T00:00:00Z → 2022-08-31T17:07:00.000Z
-- [Azure Fluid Relay overview](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/overview/overview)
-  - Updated: 2021-08-19T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Quickstart: Dice Roller](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/quickstarts/quickstart-dice-roll)
-  - Updated: 2023-01-18T00:00:00Z → 2023-03-13T00:00:00.000Z
-- [Architecture](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/architecture)
-  - Updated: 2021-10-05T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Container management](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/container-management)
-  - Updated: 2021-10-05T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Distributed data structures](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/data-structures)
-  - Updated: 2021-10-05T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Data storage in Azure Fluid Relay](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/data-storage)
-  - Updated: 2022-05-18T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Data encryption in Azure Fluid Relay](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/data-encryption)
-  - Updated: 2021-10-08T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Customer-managed keys for Azure Fluid Relay encryption](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/customer-managed-keys)
-  - Updated: 2021-10-08T00:00:00Z → 2025-10-03T22:10:00.000Z
-- [Authentication and authorization in your app](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/authentication-authorization)
-  - Updated: 2021-10-05T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [Version compatibility](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/version-compatibility)
-  - Updated: 2021-09-28T00:00:00Z → 2024-01-03T23:07:00.000Z
-- [How to: Provision an Azure Fluid Relay service](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/provision-fluid-azure-portal)
-  - Updated: 2023-01-18T00:00:00Z → 2023-01-30T18:05:00.000Z
-- [How to: Connect to an Azure Fluid Relay service](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/connect-fluid-azure-service)
-  - Updated: 2023-01-18T00:00:00Z → 2023-02-03T23:03:00.000Z
-- [How to: Use AzureClient for local testing](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/local-mode-with-azure-client)
-  - Updated: 2021-10-05T00:00:00Z → 2022-07-29T22:02:00.000Z
-- [How to: Write a TokenProvider with an Azure Function](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/azure-function-token-provider)
-  - Updated: 2023-02-05T00:00:00Z → 2023-03-12T00:00:00.000Z
-- [How to: Deploy Fluid applications using Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/deploy-fluid-static-web-apps)
-  - Updated: 2022-07-18T00:00:00Z → 2022-09-16T17:04:00.000Z
-- *...and 5 more*
 
 ## Classified Pages
 

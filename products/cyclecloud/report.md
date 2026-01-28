@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 57s
+- **Duration**: 0m 4s
 - **Total Pages**: 110
 - **Fetched**: 110
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 110
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/cyclecloud/cyclecloud.csv`
 
@@ -30,50 +30,6 @@
 | *(Unclassified)* | 25 | 22.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Managed Identities with CycleCloud](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/managed-identities?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-17T05:09:00.000Z
-- [Configure User Authentication](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/user-authentication?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Upgrade and Migrate](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/upgrade-and-migrate?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Plan CycleCloud 7 retirement](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/cyclecloud7-retirement-guide?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Backup and Restore](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/backup-and-restore?view=cyclecloud-8)
-  - Updated: 2025-06-30T00:00:00Z → 2025-07-01T17:29:00.000Z
-- [Configure Proxies](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/running-behind-proxy?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Run in Locked Down Network](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/running-in-locked-down-network?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Configure Event Grid](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/event-grid?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Customize UI Theme](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/theming?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Configure SSL](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ssl-configuration?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Run Multiple CycleCloud Installs](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/multiple-installs?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Move a Cluster to Another Resource Group](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/move-resource-group?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Cloud Bursting Using Azure CycleCloud and Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/bursting/slurm-cloud-bursting-setup?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Plan your CycleCloud Workspace for Slurm Deployment](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/plan-your-deployment?view=cyclecloud-8)
-  - Updated: 2025-01-13T00:00:00Z → 2026-01-23T18:22:00.000Z
-- [Configure Open OnDemand with CycleCloud](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/configure-open-ondemand?view=cyclecloud-8)
-  - Updated: 2025-01-13T00:00:00Z → 2026-01-23T18:22:00.000Z
-- [How to deploy using the CLI](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/deploy-with-cli?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2026-01-23T18:22:00.000Z
-- [How to connect to a Login Node through Bastion](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/connect-to-login-node-with-bastion?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [How to connect to the CycleCloud Portal through Bastion](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/connect-to-portal-with-bastion?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- [Submit job on CycleCloud with Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/submit-job-with-slurm?view=cyclecloud-8)
-  - Updated: 2025-12-01T00:00:00Z → 2025-12-02T06:12:00.000Z
-- [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8)
-  - Updated: 2025-07-01T00:00:00Z → 2025-07-16T22:08:00.000Z
-- *...and 90 more*
 
 ## Classified Pages
 

@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 4m 8s
+- **Duration**: 0m 22s
 - **Total Pages**: 547
 - **Fetched**: 547
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 547
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 547
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 145 | 26.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Monitor overview](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview)
-  - Updated: 2025-08-26T00:00:00Z → 2025-08-26T08:00:00.000Z
-- [Insights and curated visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/insights-overview)
-  - Updated: 2025-01-29T00:00:00Z → 2025-04-17T22:44:00.000Z
-- [AIOps and machine learning](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/aiops-machine-learning)
-  - Updated: 2025-09-02T00:00:00Z → 2025-09-02T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new)
-  - Updated: 2026-01-31T00:00:00Z → 2026-01-31T08:00:00.000Z
-- [Monitor an Azure resource](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource)
-  - Updated: 2025-05-21T00:00:00Z → 2025-07-19T05:03:00.000Z
-- [Analyze metric data](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-metrics)
-  - Updated: 2025-05-21T00:00:00Z → 2025-05-21T08:00:00.000Z
-- [Collect and view resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-resource-logs)
-  - Updated: 2025-05-21T00:00:00Z → 2025-07-19T05:03:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-reliability)
-  - Updated: 2025-05-21T00:00:00Z → 2025-05-21T08:00:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-security)
-  - Updated: 2025-03-19T00:00:00Z → 2025-09-29T22:13:00.000Z
-- [Cost optimization](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-cost)
-  - Updated: 2025-05-21T00:00:00Z → 2025-05-21T08:00:00.000Z
-- [Operational excellence](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-operation)
-  - Updated: 2025-05-21T00:00:00Z → 2025-05-21T08:00:00.000Z
-- [Performance efficiency](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-performance)
-  - Updated: 2025-05-21T00:00:00Z → 2025-05-21T08:00:00.000Z
-- [Application Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-  - Updated: 2025-11-14T00:00:00Z → 2025-11-14T17:03:00.000Z
-- [OpenTelemetry on Azure](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry)
-  - Updated: 2025-06-22T00:00:00Z → 2025-12-11T06:16:00.000Z
-- [Data Collection Basics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
-  - Updated: 2025-03-23T00:00:00Z → 2025-05-23T22:02:00.000Z
-- [Create and configure a resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource)
-  - Updated: 2025-02-25T00:00:00Z → 2025-02-26T05:33:00.000Z
-- [Get started with OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable)
-  - Updated: 2025-09-26T00:00:00Z → 2025-09-26T08:00:00.000Z
-- [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration)
-  - Updated: 2025-12-10T00:00:00Z → 2026-01-02T23:05:00.000Z
-- [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify)
-  - Updated: 2025-10-29T00:00:00Z → 2025-10-29T08:00:00.000Z
-- [Filter OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter)
-  - Updated: 2025-03-23T00:00:00Z → 2025-09-14T22:08:00.000Z
-- *...and 527 more*
 
 ## Classified Pages
 
@@ -186,10 +142,8 @@
 | [Query-based metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-query-based-metric-alerts) | configuration | 0.80 | Explicitly about rule configuration options, managed identity requirements, and deployment methods; this is detailed configuration and integration behavior specific to Azure Monitor. |
 | [Resource log schemas](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-schema) | configuration | 0.80 | Describes schema details and service-specific properties for Azure resource logs, which are product-specific configuration/schema references. |
 | [Response caching](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cache) | limits-quotas | 0.80 | States that responses are cached by default for 2 minutes; this is a specific time-based behavior/limit relevant to API usage. |
-| [Roles permissions and security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security) | security | 0.80 | Details Azure Monitor–specific RBAC roles, scopes, and security considerations for monitoring resources, matching the security sub-skill criteria. |
 | [Sampling overrides](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-sampling-overrides) | configuration | 0.80 | Sampling overrides feature configuration; likely includes specific configuration keys, percentage values, and patterns for overriding default sampling. |
 | [Scale using KEDA](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/integrate-keda) | integrations | 0.80 | Explains integrating KEDA with AKS/Arc using Prometheus metrics and workload identity/pod identity; includes specific configuration for KEDA scalers and identity setup, which are integration-specific details. |
-| [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.80 | Lists Azure Policy built-in definitions, compliance domains, and security controls for Azure Monitor; includes specific policy names, IDs, and mappings to standards that are product-specific. |
 | [Send to Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-to-application-insights) | integrations | 0.80 | Shows how to update Azure Diagnostics public configuration to pipe data to Application Insights. This includes configuration schema, sink names, instrumentation key/connection string usage, and other parameters unique to this integration. |
 | [Send to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs) | integrations | 0.80 | Explains how to configure the WAD/Diagnostics extension to send data to Azure Event Hubs. This requires specific configuration elements (sinks, connection strings, endpoint names, schema versions) that are unique to this integration and not generic knowledge. |
 | [Send to Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-logs) | integrations | 0.80 | Describes how to collect data from Azure Storage (written by Diagnostics extension) into Azure Monitor Logs. Involves specific configuration for data sources, table/blob paths, and mapping to Log Analytics, which are product-specific integration details. |
@@ -233,6 +187,7 @@
 | [Monitor GPU performance](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-gpu-monitoring) | configuration | 0.75 | Describes enabling GPU monitoring for specific vendors and lists metrics collected at 60-second intervals; includes product-specific configuration and metric details for GPU-enabled nodes. |
 | [Prefer headers](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/prefer-options) | configuration | 0.75 | Details use of the Prefer header and supported values for the Logs query API; these are specific request configuration parameters. |
 | [Request format](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/request-format) | configuration | 0.75 | Describes request format, endpoints, supported HTTP methods, and query parameters; these are concrete configuration details for the API. |
+| [Roles permissions and security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security) | security | 0.75 | Focuses on applying RBAC monitoring roles and security considerations for Azure Monitor resources; likely lists specific role names, scopes, and permission mappings that are product-specific. |
 | [Roles permissions and security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security) | security | 0.75 | Focuses on applying RBAC monitoring roles and security considerations for Azure Monitor resources; likely lists specific role names, scopes, and permission mappings that are product-specific. |
 | [SDK Stats (Preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats) | troubleshooting | 0.75 | Focuses on diagnosing missing telemetry via SDK stats, including drop codes and retry codes that map causes to next steps—this is product-specific symptom→cause→solution troubleshooting. |
 | [Security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-security) | security | 0.75 | Security-focused article that explains how to deploy Azure Monitor securely and how Microsoft secures it; likely includes RBAC roles, access scopes, and product-specific security settings. |
@@ -352,6 +307,7 @@
 | [Restore logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/restore) | configuration | 0.70 | Explains restore operations with product-specific behavior (hot cache, Auxiliary plan exclusion, billing behavior) and how to configure and dismiss restores. |
 | [Rule groups](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-rule-groups) | configuration | 0.70 | Describes rule groups for alerting and data computation; likely includes rule configuration fields, evaluation intervals, and product-specific rule behaviors. |
 | [SNMP traps](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-snmp-data) | configuration | 0.70 | Describes concrete ways to route SNMP trap data into Azure Monitor Agent, including product-specific data source choices and configuration steps that go beyond generic SNMP knowledge. |
+| [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.70 | Lists specific built-in Azure Policy definitions and compliance controls for Azure Monitor, including policy names and mappings to standards, which are product-specific security/compliance settings. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.70 | Lists specific built-in Azure Policy definitions and compliance controls for Azure Monitor, including policy names and mappings to standards, which are product-specific security/compliance settings. |
 | [Send Prometheus metrics to Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-logs) | configuration | 0.70 | Provides concrete agent configuration methods and parameters for scraping and forwarding Prometheus metrics to Log Analytics, including product-specific settings and patterns. |
 | [Send data to Fabric and Azure Data Explorer](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-fabric-destination) | configuration | 0.70 | How-to article for creating data collection rules to route VM data to Azure Data Explorer and Fabric; likely includes DCR schema fields, destination settings, and product-specific configuration parameters rather than just conceptual overview. |

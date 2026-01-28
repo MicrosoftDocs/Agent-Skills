@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 1m 36s
+- **Duration**: 0m 7s
 - **Total Pages**: 192
 - **Fetched**: 192
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 192
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 192
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/container-apps/container-apps.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 71 | 37.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Revisions](https://learn.microsoft.com/en-us/azure/container-apps/revisions)
-  - Updated: 2025-10-27T00:00:00Z → 2025-10-27T08:00:00.000Z
-- [Application lifecycle management](https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management)
-  - Updated: 2025-11-07T00:00:00Z → 2025-11-07T23:24:00.000Z
-- [Jobs](https://learn.microsoft.com/en-us/azure/container-apps/jobs)
-  - Updated: 2024-12-19T00:00:00Z → 2024-12-19T08:00:00.000Z
-- [Microservices](https://learn.microsoft.com/en-us/azure/container-apps/microservices)
-  - Updated: 2025-04-01T00:00:00Z → 2025-04-01T17:03:00.000Z
-- [Planned maintenance](https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance)
-  - Updated: 2025-05-02T00:00:00Z → 2025-09-23T22:10:00.000Z
-- [Communicate between multiple apps](https://learn.microsoft.com/en-us/azure/container-apps/connect-apps)
-  - Updated: 2025-04-07T00:00:00Z → 2025-04-07T22:02:00.000Z
-- [Deployment options](https://learn.microsoft.com/en-us/azure/container-apps/code-to-cloud-options)
-  - Updated: 2024-10-14T00:00:00Z → 2024-10-14T08:00:00.000Z
-- [Deploy an app with containerapp up](https://learn.microsoft.com/en-us/azure/container-apps/containerapp-up)
-  - Updated: 2025-11-20T00:00:00Z → 2025-12-05T23:18:00.000Z
-- [Create and deploy a container app using the CLI](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-deploy-first-app-cli)
-  - Updated: 2025-05-05T00:00:00Z → 2025-05-05T08:00:00.000Z
-- [Create and deploy a container app from code](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-deploy-from-code)
-  - Updated: 2025-02-05T00:00:00Z → 2025-02-05T23:02:00.000Z
-- [Update a container app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code)
-  - Updated: 2025-02-05T00:00:00Z → 2025-02-05T23:02:00.000Z
-- [Create a functions app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/functions-container-apps)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [.NET app with Blob Storage](https://learn.microsoft.com/en-us/azure/container-apps/service-connector)
-  - Updated: 2025-02-03T00:00:00Z → 2025-09-14T22:14:00.000Z
-- [Java Quarkus app with Postgres DB](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database)
-  - Updated: 2025-02-03T00:00:00Z → 2025-02-03T08:00:00.000Z
-- [Deploy a backend microservice app](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-code-to-cloud)
-  - Updated: 2025-02-03T00:00:00Z → 2025-02-03T08:00:00.000Z
-- [Deploy a frontend microservice app](https://learn.microsoft.com/en-us/azure/container-apps/communicate-between-microservices)
-  - Updated: 2025-02-18T00:00:00Z → 2025-02-18T08:00:00.000Z
-- [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines)
-  - Updated: 2024-10-20T00:00:00Z → 2024-10-20T08:00:00.000Z
-- [GitHub Actions](https://learn.microsoft.com/en-us/azure/container-apps/github-actions)
-  - Updated: 2025-05-14T00:00:00Z → 2025-05-19T17:08:00.000Z
-- [GitHub Actions with Azure CLI](https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli)
-  - Updated: 2025-02-03T00:00:00Z → 2025-02-03T08:00:00.000Z
-- [Deploy self-hosted CI/CD runners with jobs](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs)
-  - Updated: 2025-11-21T00:00:00Z → 2025-11-24T23:17:00.000Z
-- *...and 172 more*
 
 ## Classified Pages
 

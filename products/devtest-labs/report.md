@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 51s
+- **Duration**: 0m 3s
 - **Total Pages**: 98
 - **Fetched**: 98
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 98
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/devtest-labs/devtest-labs.csv`
 
@@ -32,50 +32,6 @@
 | *(Unclassified)* | 23 | 23.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure lab identity ](https://learn.microsoft.com/en-us/azure/devtest-labs/configure-lab-identity)
-  - Updated: 2020-08-20T00:00:00Z → 2024-11-21T05:37:00.000Z
-- [Configure a lab to use a remote desktop gateway](https://learn.microsoft.com/en-us/azure/devtest-labs/configure-lab-remote-desktop-gateway)
-  - Updated: 2025-07-17T00:00:00Z → 2025-07-17T08:00:00.000Z
-- [Post announcement in a lab](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-announcements)
-  - Updated: 2020-06-26T00:00:00Z → 2023-04-13T11:17:00.000Z
-- [Connect via browser on VMs with Bastion](https://learn.microsoft.com/en-us/azure/devtest-labs/enable-browser-connection-lab-virtual-machines)
-  - Updated: 2025-03-26T00:00:00Z → 2025-04-04T05:11:00.000Z
-- [Configure cost management](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-cost-management)
-  - Updated: 2025-07-18T00:00:00Z → 2025-07-18T17:15:00.000Z
-- [Set lab policies and schedules](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-set-lab-policy)
-  - Updated: 2025-03-31T00:00:00Z → 2025-04-08T22:02:00.000Z
-- [Configure auto-shutdown of lab VMs](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-auto-shutdown)
-  - Updated: 2025-03-18T00:00:00Z → 2025-03-18T22:06:00.000Z
-- [Set auto startup for lab VMs](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-auto-startup-vm)
-  - Updated: 2025-07-11T00:00:00Z → 2025-09-18T11:11:00.000Z
-- [Manage lab storage account](https://learn.microsoft.com/en-us/azure/devtest-labs/encrypt-storage)
-  - Updated: 2024-05-30T00:00:00Z → 2024-06-05T22:04:00.000Z
-- [Scale your lab](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-scale-lab)
-  - Updated: 2020-12-14T00:00:00Z → 2023-12-15T18:08:00.000Z
-- [Configure Azure Marketplace images](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-marketplace-images)
-  - Updated: 2020-06-26T00:00:00Z → 2025-01-28T12:10:00.000Z
-- [Enable a licensed image](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-enable-licensed-images)
-  - Updated: 2020-06-26T00:00:00Z → 2022-03-31T17:03:00.000Z
-- [Configure a shared image gallery](https://learn.microsoft.com/en-us/azure/devtest-labs/configure-shared-image-gallery)
-  - Updated: 2024-06-10T00:00:00Z → 2024-06-11T11:24:00.000Z
-- [Configure tags](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-add-tag)
-  - Updated: 2020-06-26T00:00:00Z → 2022-03-31T17:03:00.000Z
-- [Add lab owners and users](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-add-devtest-user)
-  - Updated: 2025-03-26T00:00:00Z → 2025-04-04T05:11:00.000Z
-- [Customize permissions with custom roles](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-grant-user-permissions-to-specific-lab-policies)
-  - Updated: 2020-06-26T00:00:00Z → 2024-10-28T18:09:00.000Z
-- [Automate adding a lab user](https://learn.microsoft.com/en-us/azure/devtest-labs/automate-add-lab-user)
-  - Updated: 2020-06-26T00:00:00Z → 2023-04-13T11:17:00.000Z
-- [Configure virtual networks](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-configure-vnet)
-  - Updated: 2024-06-02T00:00:00Z → 2024-06-05T22:04:00.000Z
-- [Select IP configuration option](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-shared-ip)
-  - Updated: 2021-11-08T00:00:00Z → 2022-03-31T17:03:00.000Z
-- [Standard Load Balancer and Standard SKU Public IP addresses](https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-standard-load-balancer)
-  - Updated: 2025-03-20T00:00:00Z → 2025-03-25T17:02:00.000Z
-- *...and 78 more*
 
 ## Classified Pages
 

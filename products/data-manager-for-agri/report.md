@@ -2,7 +2,7 @@
 
 ## Summary
 
-- **Duration**: 0m 17s
+- **Duration**: 0m 1s
 - **Total Pages**: 26
 - **Fetched**: 26
 - **Fetch Failed**: 0
@@ -11,8 +11,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 26
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 26
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-manager-for-agri/data-manager-for-agri.csv`
 
@@ -27,50 +27,6 @@
 | *(Unclassified)* | 9 | 34.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up sensors as a partner](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensors-partner)
-  - Updated: 2024-05-23T00:00:00Z → 2024-05-23T08:00:00.000Z
-- [Use tissue sampling APIs](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-nutrient-apis)
-  - Updated: 2023-02-14T00:00:00Z → 2023-08-22T11:14:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/reference-sdk)
-  - Updated: 2023-08-09T00:00:00Z → 2023-08-09T16:51:00.000Z
-- [Create an Azure support request](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-create-azure-support-request)
-  - Updated: 2023-06-27T00:00:00Z → 2023-07-03T17:06:00.000Z
-- [Sample events](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/sample-events)
-  - Updated: 2023-04-18T00:00:00Z → 2023-04-19T11:27:00.000Z
-- [FAQs](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/faq-agriculture-data-services)
-  - Updated: 2023-10-03T00:00:00Z → 2023-10-04T11:17:00.000Z
-- [What is Azure Data Manager for Agriculture Preview?](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/overview-azure-data-manager-for-agriculture)
-  - Updated: 2023-02-14T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/release-notes)
-  - Updated: 2023-11-16T00:00:00Z → 2025-08-25T17:10:00.000Z
-- [Quickstart install Azure Data Manager for Agriculture Preview](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/quickstart-install-data-manager-for-agriculture)
-  - Updated: 2023-04-05T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Hierarchy model](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-hierarchy-model)
-  - Updated: 2023-08-22T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Farm Machinery data ingestion](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-farm-operations-data)
-  - Updated: 2023-08-14T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Satellite data ingestion](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-satellite-imagery)
-  - Updated: 2023-11-17T00:00:00Z → 2024-03-29T22:04:00.000Z
-- [Weather data ingestion](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-weather-data)
-  - Updated: 2023-02-14T00:00:00Z → 2024-08-01T11:20:00.000Z
-- [Sensor data ingestion](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-sensor-data)
-  - Updated: 2023-06-19T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Using ISV solutions](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-isv-solutions)
-  - Updated: 2023-02-14T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Understanding throttling](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-understanding-throttling)
-  - Updated: 2023-11-15T00:00:00Z → 2024-03-29T22:04:00.000Z
-- [Using your license keys](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-byol-and-credentials)
-  - Updated: 2023-06-23T00:00:00Z → 2025-04-11T17:03:00.000Z
-- [Using generative AI](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-llm-apis)
-  - Updated: 2024-03-19T00:00:00Z → 2024-04-02T11:26:00.000Z
-- [Using events](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-events)
-  - Updated: 2023-04-18T00:00:00Z → 2023-04-19T11:27:00.000Z
-- [Set up audit logs](https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-audit-logs)
-  - Updated: 2023-04-10T00:00:00Z → 2023-04-10T08:00:00.000Z
-- *...and 6 more*
 
 ## Classified Pages
 
