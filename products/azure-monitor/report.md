@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 547
+- **Updated Pages**: 6
+- **Unchanged**: 541
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -20,17 +20,32 @@
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 7 | 1.3% |
-| best-practices | 32 | 5.9% |
+| best-practices | 33 | 6.0% |
 | comparing | 4 | 0.7% |
-| configuration | 177 | 32.4% |
+| configuration | 178 | 32.5% |
 | deployment | 26 | 4.8% |
-| integrations | 65 | 11.9% |
+| integrations | 64 | 11.7% |
 | limits-quotas | 20 | 3.7% |
-| security | 32 | 5.9% |
+| security | 31 | 5.7% |
 | troubleshooting | 39 | 7.1% |
 | *(Unclassified)* | 145 | 26.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [OpenTelemetry sampling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling)
+  - Updated: 2025-12-12T23:11:00.000Z → 2026-01-28T18:16:00.000Z
+- [Entra Workload ID authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-azure-workload-identity)
+  - Updated: 2025-09-18T08:00:00.000Z → 2026-01-28T13:04:00.000Z
+- [Firewall requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall)
+  - Updated: 2025-12-03T23:15:00.000Z → 2026-01-28T23:13:00.000Z
+- [Supported region mappings](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping)
+  - Updated: 2025-11-13T23:04:00.000Z → 2026-01-28T23:13:00.000Z
+- [Integrate](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write)
+  - Updated: 2025-10-01T05:08:00.000Z → 2026-01-28T13:04:00.000Z
+- [Use Grafana dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards)
+  - Updated: 2025-11-18T12:03:00.000Z → 2026-01-28T23:13:00.000Z
 
 ## Classified Pages
 
@@ -50,7 +65,6 @@
 | [Customize configuration](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configuration) | configuration | 0.90 | Describes using ConfigMap to customize scraping; such content includes specific config keys, structures, and allowed values, matching configuration criteria. |
 | [DCR structure](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-structure) | configuration | 0.90 | Explicitly describes JSON structure of DCRs; this is core configuration reference with parameter names, allowed values, and schema details that are expert knowledge. |
 | [Errors](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/errors) | troubleshooting | 0.90 | Contains a list of known errors, causes, and solutions for the API; matches symptom → cause → solution troubleshooting pattern with product-specific error behavior. |
-| [Firewall requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall) | configuration | 0.90 | Contains tables of required endpoints, ports, and protocols for the containerized agent to reach Managed Prometheus and Container insights, which are precise network configuration requirements. |
 | [General](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-config) | configuration | 0.90 | Explicitly a configuration options article; likely contains parameter tables, defaults, and allowed values for the Java agent, which are product-specific expert knowledge. |
 | [High scale collection](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-high-scale) | limits-quotas | 0.90 | Defines explicit throughput limits such as up to 50,000 logs/sec per node and related configuration constraints, which are numeric product limits not generally known. |
 | [Linux Syslog issues](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm-rsyslog) | troubleshooting | 0.90 | Contains exact file paths, TCP port location, and how DCR-based filters interact with rsyslog/syslog-ng, plus guidance for resolving forwarding issues. |
@@ -118,10 +132,10 @@
 | [Enable Snapshot Debugger for other environments](https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-vm) | configuration | 0.80 | Covers enabling Snapshot Debugger on Service Fabric, Cloud Services, VMs, and on-prem, with environment-specific configuration steps and settings. |
 | [Enable live data](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup) | security | 0.80 | Describes configuring authentication and permissions (likely RBAC roles, Microsoft Entra integration, and scopes) to access Kubernetes data; this is product-specific security configuration. |
 | [Enable private link](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-private-link) | security | 0.80 | Details using Azure Private Link, AMPLS, and private endpoints for monitoring data ingestion; involves product-specific network/security configuration for secure access to monitoring resources. |
+| [Firewall requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall) | configuration | 0.80 | Page provides detailed proxy and firewall configuration requirements for the containerized agent, including tables of required endpoints and network rules for different Azure clouds. These are product-specific configuration parameters and endpoints that qualify as expert configuration knowledge. |
 | [Get started with OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable) | configuration | 0.80 | Describes how to enable and configure OpenTelemetry-based data collection using Azure Monitor OpenTelemetry Distro; likely includes connection settings, environment variables, and product-specific configuration parameters. |
 | [IIS logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-iis) | configuration | 0.80 | Details the IIS Logs data source type in DCRs, including specific fields and options for collecting IIS logs, which are unique configuration parameters. |
 | [Installation options](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-windows-install) | configuration | 0.80 | Covers installation and configuration of WAD, including how data is stored in Azure Storage; likely includes extension settings and schema details unique to this agent. |
-| [Integrate](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write) | integrations | 0.80 | Remote-write configuration from self-managed Prometheus to Azure Monitor; will contain endpoint URLs, auth configuration, and YAML/Prometheus config snippets specific to this integration. |
 | [JSON logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-json) | configuration | 0.80 | Describes Custom JSON Logs data source configuration in DCRs, including JSON structure handling and field mapping, which are product-specific configuration details. |
 | [Legacy authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication) | security | 0.80 | Details legacy vs managed identity auth, including specific role requirements (Monitoring Metrics Publisher) and migration steps, which are product-specific security and identity configurations. |
 | [Linux VM](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm) | troubleshooting | 0.80 | Linux AMA troubleshooting guide likely organized by symptoms and causes, with product-specific commands, logs, and resolutions. |
@@ -147,7 +161,6 @@
 | [Send to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs) | integrations | 0.80 | Explains how to configure the WAD/Diagnostics extension to send data to Azure Event Hubs. This requires specific configuration elements (sinks, connection strings, endpoint names, schema versions) that are unique to this integration and not generic knowledge. |
 | [Send to Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-logs) | integrations | 0.80 | Describes how to collect data from Azure Storage (written by Diagnostics extension) into Azure Monitor Logs. Involves specific configuration for data sources, table/blob paths, and mapping to Log Analytics, which are product-specific integration details. |
 | [Supported KQL](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-kql) | configuration | 0.80 | Details which KQL operators are supported/unsupported and special operators only available in transformations; this is product-specific behavior and constraints not known generically. |
-| [Supported region mappings](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping) | limits-quotas | 0.80 | Lists supported region mapping combinations between Container insights, Log Analytics workspaces, and custom metrics, effectively defining location constraints and compatibility matrices. |
 | [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | configuration | 0.80 | Provides the mapping of services to resource log categories and schemas, which is detailed reference/configuration information for log collection. |
 | [Syslog events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog) | configuration | 0.80 | Describes DCR configuration for Linux Syslog (facilities, severities, paths), which are product-specific configuration options and constraints. |
 | [Text logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-text) | configuration | 0.80 | Provides DCR schema and options for Custom Text Logs (file paths, patterns, parsing), which are detailed configuration settings specific to Azure Monitor. |
@@ -246,7 +259,7 @@
 | [Edit log search alerts created in previous versions](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-manage-alerts-previous-version) | configuration | 0.70 | Describes how to view and manage alert rules created with earlier UI and API versions, including specific API version references, which are configuration/management details unique to this product. |
 | [Enable with Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-policy) | configuration | 0.70 | Covers predefined VM insights policy initiatives and how they install agents; Azure Policy-based enablement normally lists specific policy definitions, parameters, and assignment settings that are product-specific configuration knowledge. |
 | [Enterprise architecture](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/enterprise-monitoring-architecture) | architecture-patterns | 0.70 | Describes a concrete enterprise monitoring architecture using Azure Monitor, including product-specific design patterns and decisions for multi-cloud and on-prem estates. |
-| [Entra Workload ID authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-azure-workload-identity) | security | 0.70 | Explains how to configure Microsoft Entra Workload ID (preview) for Prometheus remote write, with product-specific identity configuration and auth parameters. |
+| [Entra Workload ID authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-azure-workload-identity) | integrations | 0.70 | Page describes product-specific setup of Prometheus remote write to Azure Monitor using Microsoft Entra Workload ID and an Azure Monitor sidecar container. This involves concrete integration configuration between Prometheus and Azure Monitor managed service for Prometheus, which is expert, product-specific knowledge beyond generic concepts. |
 | [Entra authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-active-directory) | security | 0.70 | Details Microsoft Entra (AAD) authentication setup for Prometheus remote write, including specific auth parameters, token acquisition, and sidecar configuration unique to this integration. |
 | [Examples](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-telemetry-processors-examples) | integrations | 0.70 | Provides concrete examples for telemetry processors, including include/exclude and attribute/span processors; these are product-specific configuration and coding patterns. |
 | [Export with Logic Apps](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-export-logic-app) | integrations | 0.70 | Describes a concrete integration pattern using Logic Apps to query Log Analytics and send data to Azure Storage, including product-specific API usage and configuration details beyond generic knowledge. |
@@ -316,6 +329,7 @@
 | [Simple log search alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-simple-log-search-alerts) | configuration | 0.70 | Similar to index 10, includes ARM templates and parameters for simple log search alerts plus the 64 KB properties size limit. This is detailed configuration knowledge with a specific quota. |
 | [Smart detection](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-diagnostics) | configuration | 0.70 | Describes configuring smart detection and its migration to alerts, likely including module-specific settings and alert rule parameters. |
 | [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-spring-boot) | configuration | 0.70 | Configuration-focused article for Spring Boot with specific enablement options (JVM argument vs programmatic), likely including concrete config parameters and patterns unique to this integration. |
+| [Supported region mappings](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping) | limits-quotas | 0.70 | Page contains tables mapping Container Insights regions to Log Analytics workspace and custom metrics regions. These mappings are effectively region-specific constraints/limits on where resources can be paired, which are precise, product-specific values that an LLM would not reliably know from training. |
 | [Switch to Prometheus visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-experience-v2) | configuration | 0.70 | Provides concrete steps and configuration changes required to move from classic Log Analytics-based visualizations to Managed Prometheus, including product-specific settings. |
 | [Sync ITSM Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-resync-servicenow) | troubleshooting | 0.70 | Provides a concrete procedure to reset the ServiceNow connection and refresh authentication tokens when sync problems occur, which is product-specific troubleshooting. |
 | [Tables that support the Basic table plan](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-azure-tables) | limits-quotas | 0.70 | Enumerates which tables support the Basic table plan and notes exclusions (like Data Collector API tables), which is a product-specific capability/limit list. |
@@ -336,6 +350,8 @@
 | [Workspace transformation in Azure portal](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-workspace-transformations-portal) | configuration | 0.70 | Tutorial configures a sample transformation in a workspace DCR; includes concrete configuration steps and DCR/workspace-specific parameters beyond generic concepts. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/best-practices-logs) | best-practices | 0.68 | Described as architectural best practices for Azure Monitor Logs based on the Well-Architected Framework. These are product-specific recommendations for workspace design and usage, fitting best-practices. |
 | [Convert ITSM ServiceNow actions to secure webhook actions](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-convert-servicenow-to-webhook) | integrations | 0.68 | Gives concrete migration steps and configuration details for converting ITSM actions to Secure Webhook actions for ServiceNow, which are integration-specific patterns. |
+| [Integrate](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write) | configuration | 0.68 | The page describes how to configure remote-write from self-managed Prometheus to Azure Monitor managed service for Prometheus, which typically includes product-specific endpoint URLs, authentication settings, and configuration snippets unique to this integration. These are concrete configuration parameters and values that qualify as expert knowledge beyond generic concepts. |
+| [OpenTelemetry sampling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling) | best-practices | 0.68 | The page describes product-specific guidance on how to configure and use OpenTelemetry sampling with Azure Application Insights to control telemetry volume and costs. It includes concrete, implementation-focused recommendations and behaviors unique to this integration (for example, how the custom sampler works with Application Insights and OpenTelemetry), which go beyond generic sampling concepts. It is not primarily about limits/quotas, security, or deployment, and is focused on actionable configuration and usage guidance rather than just conceptual overview. |
 | [ASP.NET Core app running in container](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-containers) | deployment | 0.65 | Container-specific enablement patterns for Profiler; likely includes environment variables and runtime setup unique to container deployments. |
 | [Activity log alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-activity-log) | configuration | 0.65 | Includes ARM template examples and parameters for activity log alerts, exposing concrete resource types, properties, and configuration patterns specific to Azure Monitor. |
 | [Activity logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log) | configuration | 0.65 | Explains how to send activity logs to Log Analytics, Event Hubs, or Storage, including product-specific configuration options and routing behaviors. |
@@ -436,7 +452,6 @@
 | [Self-monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitor-azure-monitor-reference) | configuration | 0.60 | Acts as a reference hub for Azure Monitor monitoring data with links to detailed schemas and configuration references; while high-level, it aggregates product-specific reference material. |
 | [Supported operating systems](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems) | deployment | 0.60 | Lists exact supported OS versions and environments for the agent, which are product-specific deployment constraints not derivable from general training data. |
 | [Tenant service health alert](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-tenant-level-service-heath-alerts) | troubleshooting | 0.60 | Includes both creation steps and explicit troubleshooting guidance; tenant vs subscription scoping and recommendations for configuring both levels are product-specific diagnostic/solution patterns. |
-| [Use Grafana dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards) | integrations | 0.60 | Explains using Azure Monitor dashboards with Grafana; such integration articles typically include product-specific configuration steps and parameters for connecting services. |
 | [Visualize data with workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-workbooks) | configuration | 0.60 | Covers creating parameterized workbooks combining queries and metrics; typically includes workbook JSON structure, parameters, and query configuration specific to VM insights. |
 
 ## Unclassified Pages
@@ -451,7 +466,6 @@
 | [Enable VM insights](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-monitor-vm-enable-insights) | 0.45 | Tutorial to enable VM insights; summary indicates basic enablement steps, not exhaustive configuration reference or limits. |
 | [Enable recommended alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-monitor-vm-alert-recommended) | 0.45 | Tutorial for enabling recommended alert rules; summary suggests step-by-step creation rather than matrices of limits or detailed configuration option tables. |
 | [Map dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps) | 0.45 | Explains how to view dependency maps from VM or Azure Monitor; mostly feature usage and navigation, not detailed configuration parameters, limits, or troubleshooting mappings. |
-| [OpenTelemetry sampling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling) | 0.45 | Sampling with OpenTelemetry is likely conceptual and tutorial-style; summary does not show concrete parameter tables, limits, or product-specific gotchas. |
 | [AMA migration helper workbook](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-helper-workbook) | 0.40 | Describes a workbook-based helper at a high level; summary does not indicate detailed configuration parameters or limits. |
 | [Analyze data](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-analyze) | 0.40 | Covers how to analyze monitoring data using Azure Monitor features; summary indicates usage guidance rather than detailed configuration tables, limits, or troubleshooting mappings. |
 | [Container monitoring solution](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-solution) | 0.40 | Primarily migration/retirement guidance and high-level transition steps from a legacy solution; lacks detailed configuration tables, limits, or error mappings. |
@@ -588,3 +602,4 @@
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview) | 0.10 | High-level overview of VM insights capabilities and supported OS; primarily conceptual and descriptive without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Overview of Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/data-platform-metrics) | 0.10 | Describes what metrics are and their role in Azure Monitor; appears conceptual without specific limits, configs, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) | 0.10 | Change log for documentation, not technical guidance with limits, configs, or troubleshooting content. |
+| [Use Grafana dashboards](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards) | - | Appears to be a how-to/tutorial on using Azure Monitor dashboards with Grafana, without clear indication of detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert references as defined. Likely general integration steps rather than reference-style expert knowledge. |

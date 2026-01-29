@@ -3,7 +3,7 @@ name: role-based-access-control
 description: Expert knowledge for Role Based Access Control development including best practices, security, troubleshooting, limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Role Based Access Control applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Role Based Access Control Skill

@@ -3,7 +3,7 @@ name: guidance
 description: Expert knowledge for Guidance development including architecture & design patterns, comparing x vs. y, security, best practices, deployment, and troubleshooting. Use when building, debugging, or optimizing Guidance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Guidance Skill

@@ -3,7 +3,7 @@ name: data-explorer
 description: Expert knowledge for Data Explorer development including security, integrations & coding patterns, limits & quotas, deployment, best practices, architecture & design patterns, configuration, troubleshooting, and comparing x vs. y. Use when building, debugging, or optimizing Data Explorer applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Data Explorer Skill

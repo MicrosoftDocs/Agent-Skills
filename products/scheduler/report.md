@@ -2,7 +2,6 @@
 
 ## Summary
 
-- **Duration**: 0m 2s
 - **Total Pages**: 1
 - **Fetched**: 1
 - **Fetch Failed**: 0
@@ -11,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 1
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/scheduler/scheduler.csv`
 
@@ -21,11 +20,6 @@
 *No classified pages*
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate from Scheduler to Logic Apps](https://learn.microsoft.com/en-us/azure/scheduler/migrate-from-scheduler-to-logic-apps)
-  - Updated: 2024-07-11T00:00:00Z → 2024-07-19T11:21:00.000Z
 
 ## Classified Pages
 

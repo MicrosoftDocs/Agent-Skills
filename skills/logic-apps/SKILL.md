@@ -3,7 +3,7 @@ name: logic-apps
 description: Expert knowledge for Logic Apps development including integrations & coding patterns, configuration, limits & quotas, security, deployment, architecture & design patterns, best practices, comparing x vs. y, and troubleshooting. Use when building, debugging, or optimizing Logic Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Logic Apps Skill

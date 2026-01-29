@@ -3,7 +3,7 @@ name: sql-server-stretch-database
 description: Expert knowledge for Sql Server Stretch Database development including architecture & design patterns, troubleshooting, configuration, integrations & coding patterns, security, deployment, best practices, comparing x vs. y, and limits & quotas. Use when building, debugging, or optimizing Sql Server Stretch Database applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Sql Server Stretch Database Skill

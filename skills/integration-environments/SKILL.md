@@ -3,7 +3,7 @@ name: integration-environments
 description: Expert knowledge for Integration Environments development including various topics. Use when building, debugging, or optimizing Integration Environments applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Integration Environments Skill

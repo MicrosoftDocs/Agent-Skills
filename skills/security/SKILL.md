@@ -3,7 +3,7 @@ name: security
 description: Expert knowledge for Security development including security, configuration, architecture & design patterns, integrations & coding patterns, best practices, troubleshooting, limits & quotas, deployment, and comparing x vs. y. Use when building, debugging, or optimizing Security applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Security Skill

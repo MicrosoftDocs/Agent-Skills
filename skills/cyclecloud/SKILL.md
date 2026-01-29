@@ -3,7 +3,7 @@ name: cyclecloud
 description: Expert knowledge for Cyclecloud development including integrations & coding patterns, configuration, architecture & design patterns, security, troubleshooting, deployment, and best practices. Use when building, debugging, or optimizing Cyclecloud applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Cyclecloud Skill

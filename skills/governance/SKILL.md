@@ -3,7 +3,7 @@ name: governance
 description: Expert knowledge for Governance development including security, configuration, architecture & design patterns, deployment, troubleshooting, integrations & coding patterns, best practices, limits & quotas, and comparing x vs. y. Use when building, debugging, or optimizing Governance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Governance Skill

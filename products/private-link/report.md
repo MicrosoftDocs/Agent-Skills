@@ -2,7 +2,6 @@
 
 ## Summary
 
-- **Duration**: 0m 25s
 - **Total Pages**: 49
 - **Fetched**: 49
 - **Fetch Failed**: 0
@@ -11,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 49
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/private-link/private-link.csv`
 
@@ -29,50 +28,6 @@
 | *(Unclassified)* | 27 | 55.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview)
-  - Updated: 2025-03-25T00:00:00Z → 2025-10-12T22:18:00.000Z
-- [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview)
-  - Updated: 2024-10-15T00:00:00Z → 2025-01-08T18:02:00.000Z
-- [What is a network security perimeter?](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-concepts)
-  - Updated: 2025-08-01T00:00:00Z → 2025-08-01T08:00:00.000Z
-- [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/private-link/private-link-faq)
-  - Updated: 2025-03-25T00:00:00Z → 2025-07-17T22:14:00Z
-- [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization)
-  - Updated: 2025-10-08T00:00:00Z → 2025-10-09T05:15:00.000Z
-- [Create a private endpoint - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a private endpoint - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-powershell)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a private endpoint - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-cli)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a private endpoint - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-bicep)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a private endpoint - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-template)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a private endpoint - Terraform](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-terraform)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a Private Link service - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal)
-  - Updated: 2025-04-10T00:00:00Z → 2025-04-10T08:00:00.000Z
-- [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a Private Link service - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-cli)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a Private Link service - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-bicep)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Create a Private Link service - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-template)
-  - Updated: 2025-03-25T00:00:00Z → 2025-03-25T08:00:00.000Z
-- [Configure Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect)
-  - Updated: 2025-07-14T00:00:00Z → 2025-12-12T05:44:00.000Z
-- [Disable SNAT for traffic through NVA](https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat)
-  - Updated: 2025-03-11T00:00:00Z → 2025-03-17T22:05:00.000Z
-- *...and 29 more*
 
 ## Classified Pages
 

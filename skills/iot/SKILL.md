@@ -3,7 +3,7 @@ name: iot
 description: Expert knowledge for Iot development including configuration, integrations & coding patterns, best practices, architecture & design patterns, comparing x vs. y, security, and troubleshooting. Use when building, debugging, or optimizing Iot applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Iot Skill

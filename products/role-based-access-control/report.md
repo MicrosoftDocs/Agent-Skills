@@ -2,7 +2,6 @@
 
 ## Summary
 
-- **Duration**: 0m 55s
 - **Total Pages**: 104
 - **Fetched**: 104
 - **Fetch Failed**: 0
@@ -11,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 104
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/role-based-access-control/role-based-access-control.csv`
 
@@ -29,50 +28,6 @@
 | *(Unclassified)* | 10 | 9.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Azure RBAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
-  - Updated: 2024-03-12T00:00:00Z → 2024-03-12T08:00:00.000Z
-- [What is Azure ABAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview)
-  - Updated: 2025-05-19T00:00:00Z → 2025-05-19T08:00:00.000Z
-- [Understand the different roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
-  - Updated: 2025-12-11T00:00:00Z → 2025-12-11T08:00:00.000Z
-- [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new)
-  - Updated: 2025-12-30T00:00:00Z → 2026-01-03T06:11:00.000Z
-- [Check access for a user](https://learn.microsoft.com/en-us/azure/role-based-access-control/check-access)
-  - Updated: 2024-12-12T00:00:00Z → 2024-12-12T23:04:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-role-assignments-bicep)
-  - Updated: 2023-12-01T00:00:00Z → 2023-12-01T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-role-assignments-template)
-  - Updated: 2023-12-01T00:00:00Z → 2023-12-01T08:00:00.000Z
-- [Grant a user access - Portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal)
-  - Updated: 2025-03-30T00:00:00Z → 2025-03-31T11:22:00.000Z
-- [Grant a user access - PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-role-assignments-user-powershell)
-  - Updated: 2019-02-02T00:00:00Z → 2024-02-14T18:19:00.000Z
-- [Grant a group access - PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-role-assignments-group-powershell)
-  - Updated: 2019-02-02T00:00:00Z → 2024-02-27T23:07:00.000Z
-- [Create a custom role - PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-powershell)
-  - Updated: 2023-12-01T00:00:00Z → 2023-12-01T08:00:00.000Z
-- [Create a custom role - CLI](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-cli)
-  - Updated: 2023-12-01T00:00:00Z → 2023-12-01T08:00:00.000Z
-- [Role definitions](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions)
-  - Updated: 2025-03-30T00:00:00Z → 2025-03-30T08:00:00.000Z
-- [Role assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments)
-  - Updated: 2025-05-28T00:00:00Z → 2025-05-28T08:00:00.000Z
-- [Scope](https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview)
-  - Updated: 2025-03-30T00:00:00Z → 2025-03-30T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
-  - Updated: 2025-03-30T00:00:00Z → 2025-03-30T08:00:00.000Z
-- [Delegate role assignment management overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/delegate-role-assignments-overview)
-  - Updated: 2024-08-29T00:00:00Z → 2024-08-29T08:00:00.000Z
-- [Authorization actions and attributes](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-authorization-actions-attributes)
-  - Updated: 2024-04-15T00:00:00Z → 2024-04-15T08:00:00.000Z
-- [Example conditions](https://learn.microsoft.com/en-us/azure/role-based-access-control/delegate-role-assignments-examples)
-  - Updated: 2024-04-15T00:00:00Z → 2024-04-15T08:00:00.000Z
-- [Condition format](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-format)
-  - Updated: 2024-04-01T00:00:00Z → 2024-04-01T08:00:00.000Z
-- *...and 84 more*
 
 ## Classified Pages
 

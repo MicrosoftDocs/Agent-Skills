@@ -3,7 +3,7 @@ name: backup
 description: Expert knowledge for Backup development including configuration, limits & quotas, architecture & design patterns, comparing x vs. y, troubleshooting, security, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Backup applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Backup Skill
@@ -122,7 +122,6 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Configure Azure Files vaulted backup via ARM template | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-arm |
 | Configure Azure Files vaulted backup via Bicep | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-bicep |
 | Configure Azure Files vaulted backup with Azure CLI | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-cli |
-| Create Azure Files backup policy in Azure portal | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-portal |
 | Configure Azure Files vaulted backup with PowerShell | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-powershell |
 | Configure Azure Files vaulted backup using Terraform | https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-terraform |
 | Configure PostgreSQL Flexible Server backup via ARM | https://learn.microsoft.com/en-us/azure/backup/quick-backup-postgresql-flexible-server-arm |

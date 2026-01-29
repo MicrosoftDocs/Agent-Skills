@@ -3,7 +3,7 @@ name: synapse-analytics
 description: Expert knowledge for Synapse Analytics development including deployment, security, configuration, best practices, comparing x vs. y, integrations & coding patterns, troubleshooting, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Synapse Analytics applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Synapse Analytics Skill

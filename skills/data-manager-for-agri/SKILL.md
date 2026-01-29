@@ -3,7 +3,7 @@ name: data-manager-for-agri
 description: Expert knowledge for Data Manager For Agri development including security, integrations & coding patterns, limits & quotas, and configuration. Use when building, debugging, or optimizing Data Manager For Agri applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Data Manager For Agri Skill

@@ -3,7 +3,7 @@ name: dev-box
 description: Expert knowledge for Dev Box development including best practices, deployment, configuration, security, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Dev Box applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Dev Box Skill

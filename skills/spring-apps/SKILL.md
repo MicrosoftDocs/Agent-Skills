@@ -3,7 +3,7 @@ name: spring-apps
 description: Expert knowledge for Spring Apps development including configuration, best practices, limits & quotas, security, architecture & design patterns, integrations & coding patterns, troubleshooting, deployment, and comparing x vs. y. Use when building, debugging, or optimizing Spring Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Spring Apps Skill

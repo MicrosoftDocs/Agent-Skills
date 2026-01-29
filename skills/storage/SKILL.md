@@ -3,7 +3,7 @@ name: storage
 description: Expert knowledge for Storage development including best practices, security, integrations & coding patterns, limits & quotas, configuration, troubleshooting, architecture & design patterns, deployment, and comparing x vs. y. Use when building, debugging, or optimizing Storage applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Storage Skill

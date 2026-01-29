@@ -3,7 +3,7 @@ name: energy-data-services
 description: Expert knowledge for Energy Data Services development including limits & quotas, security, deployment, configuration, integrations & coding patterns, and troubleshooting. Use when building, debugging, or optimizing Energy Data Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Energy Data Services Skill

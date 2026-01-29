@@ -3,7 +3,7 @@ name: hdinsight
 description: Expert knowledge for Hdinsight development including configuration, integrations & coding patterns, best practices, troubleshooting, security, architecture & design patterns, deployment, comparing x vs. y, and limits & quotas. Use when building, debugging, or optimizing Hdinsight applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Hdinsight Skill

@@ -3,7 +3,7 @@ name: azure-signalr
 description: Expert knowledge for Azure Signalr development including limits & quotas, security, architecture & design patterns, configuration, best practices, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Azure Signalr applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Azure Signalr Skill

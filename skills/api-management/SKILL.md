@@ -3,7 +3,7 @@ name: api-management
 description: Expert knowledge for Api Management development including configuration, integrations & coding patterns, limits & quotas, security, architecture & design patterns, troubleshooting, comparing x vs. y, deployment, and best practices. Use when building, debugging, or optimizing Api Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Api Management Skill

@@ -3,7 +3,7 @@ name: automation
 description: Expert knowledge for Automation development including security, configuration, deployment, best practices, integrations & coding patterns, architecture & design patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Automation applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Automation Skill

@@ -3,7 +3,7 @@ name: api-center
 description: Expert knowledge for Api Center development including security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Api Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Api Center Skill
@@ -46,7 +46,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Export Azure API Center APIs as Copilot Studio connectors | https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio |
+| Export Azure API Center APIs to Copilot Studio | https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio |
 | Import Azure API Management APIs into Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/import-api-management-apis |
 | Manage Azure API Center inventory using Azure CLI | https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli |
 | Automate API registration workflows with Logic Apps and Teams | https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow |

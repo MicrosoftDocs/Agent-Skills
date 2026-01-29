@@ -3,7 +3,7 @@ name: redis
 description: Expert knowledge for Redis development including integrations & coding patterns, architecture & design patterns, best practices, configuration, troubleshooting, security, deployment, and comparing x vs. y. Use when building, debugging, or optimizing Redis applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Redis Skill

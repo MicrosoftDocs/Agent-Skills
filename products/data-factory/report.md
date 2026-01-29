@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 538
+- **Updated Pages**: 1
+- **Unchanged**: 537
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/data-factory/data-factory.csv`
 
@@ -30,6 +30,11 @@
 | *(Unclassified)* | 102 | 19.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration)
+  - Updated: 2025-12-10T06:11:00.000Z → 2026-01-28T23:12:00.000Z
 
 ## Classified Pages
 
@@ -541,7 +546,6 @@
 | [Migrate data from Amazon S3 to Azure Storage](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-migration-s3-azure) | 0.30 | Solution template/tutorial for migrating from S3 to ADLS Gen2; primarily step-by-step guidance without clear evidence of product-specific limits, config tables, or troubleshooting mappings. |
 | [Overview and architecture](https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-introduction-architecture) | 0.30 | Architecture/overview of SAP CDC capabilities; likely conceptual architecture without quantified thresholds, decision matrices, or detailed config parameters. |
 | [Overview of templates](https://learn.microsoft.com/en-us/azure/data-factory/solution-templates-introduction) | 0.30 | Introductory overview of ADF templates; mainly explains what templates are and how to use them conceptually, without deep configuration tables, limits, or troubleshooting content. |
-| [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration) | 0.30 | How-to for running a migration assessment; procedural UI steps, no detailed configuration tables, limits, or error mappings. |
 | [Prepare data with wrangling](https://learn.microsoft.com/en-us/azure/data-factory/wrangling-tutorial) | 0.30 | Introductory wrangling data flow tutorial; focuses on how to get started, not on detailed configuration parameters, quotas, or troubleshooting mappings. |
 | [Run an existing pipeline with Airflow](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-run-existing-pipeline-with-airflow) | 0.30 | Tutorial for running an existing pipeline with Workflow Orchestration Manager; primarily step-by-step usage, not a catalog of configuration options, limits, or troubleshooting mappings. |
 | [Transform data](https://learn.microsoft.com/en-us/azure/data-factory/transform-data) | 0.30 | High-level article about transformation options (Hadoop, ML Studio, Data Lake Analytics); primarily conceptual/overview without detailed configuration tables or limits. |
@@ -567,6 +571,7 @@
 | [Incrementally load data](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview) | 0.20 | Overview of incremental copy approaches; conceptual and navigational to other tutorials, not detailed config or limits. |
 | [Manage data flow canvas](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-manage-graph) | 0.20 | Conceptual/how-to content about managing the mapping data flow graph design surface; no detailed limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-overview) | 0.20 | High-level overview of SAP knowledge center and IP; appears conceptual/marketing without detailed configuration, limits, or troubleshooting specifics. |
+| [Pipeline assessment tool](https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration) | 0.20 | The page describes how to run an upgrade assessment and interpret readiness results for migrating Azure Data Factory/Synapse pipelines to Fabric. It is a procedural migration/assessment guide without product-specific limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. The content is primarily conceptual and step-by-step, not expert reference data that meets any of the defined sub-skill criteria. |
 | [Pipeline parameters and variables](https://learn.microsoft.com/en-us/azure/data-factory/concepts-parameters-variables) | 0.20 | Conceptual description of parameters and variables; primarily usage explanation without detailed configuration tables or limits. |
 | [Pipelines and activities](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities) | 0.20 | Conceptual explanation of pipelines and activities; no detailed limits, configs, or error mappings. |
 | [Why Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-overview) | 0.20 | High-level migration guidance overview; primarily conceptual scenarios and benefits without detailed configuration parameters, limits, or product-specific error/diagnostic content. |

@@ -3,7 +3,7 @@ name: avere-vfxt
 description: Expert knowledge for Avere Vfxt development including configuration, best practices, deployment, security, and limits & quotas. Use when building, debugging, or optimizing Avere Vfxt applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Avere Vfxt Skill

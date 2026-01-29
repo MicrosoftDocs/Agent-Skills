@@ -3,7 +3,7 @@ name: deployment-environments
 description: Expert knowledge for Deployment Environments development including best practices, security, configuration, architecture & design patterns, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Deployment Environments applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Deployment Environments Skill

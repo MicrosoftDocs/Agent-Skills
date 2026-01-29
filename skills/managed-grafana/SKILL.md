@@ -3,7 +3,7 @@ name: managed-grafana
 description: Expert knowledge for Managed Grafana development including configuration, integrations & coding patterns, security, architecture & design patterns, deployment, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Managed Grafana applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Managed Grafana Skill

@@ -3,7 +3,7 @@ name: private-link
 description: Expert knowledge for Private Link development including configuration, integrations & coding patterns, limits & quotas, security, best practices, and troubleshooting. Use when building, debugging, or optimizing Private Link applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Private Link Skill

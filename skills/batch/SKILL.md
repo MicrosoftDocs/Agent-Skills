@@ -3,7 +3,7 @@ name: batch
 description: Expert knowledge for Batch development including security, deployment, configuration, best practices, troubleshooting, integrations & coding patterns, limits & quotas, and architecture & design patterns. Use when building, debugging, or optimizing Batch applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Batch Skill

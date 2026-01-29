@@ -3,7 +3,7 @@ name: azure-monitor
 description: Expert knowledge for Azure Monitor development including troubleshooting, configuration, limits & quotas, deployment, security, integrations & coding patterns, best practices, comparing x vs. y, and architecture & design patterns. Use when building, debugging, or optimizing Azure Monitor applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Azure Monitor Skill
@@ -157,7 +157,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Customize and filter Kubernetes data collection in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-data-collection-configure |
 | Enable recommended metric alert rules for Kubernetes clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-metric-alerts |
 | Disable Prometheus metrics and log collection for Kubernetes monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-disable |
-| Configure firewall and proxy for AKS monitoring agents | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall |
+| Configure firewall and proxy for Kubernetes monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-firewall |
 | Configure Prometheus metrics to multiple Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-multiple-workspaces |
 | Create custom Prometheus scrape jobs with ConfigMap | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configmap |
 | Customize Prometheus metrics scraping via ConfigMap | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configuration |
@@ -211,6 +211,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Create and manage Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-manage |
 | Query Azure Monitor workspace metrics with PromQL in metrics explorer | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-explorer |
 | Technical configuration details for Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-metrics-details |
+| Configure Prometheus remote-write to Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write |
 | Configure rule groups in Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-rule-groups |
 | Configure Azure Workbooks to query Prometheus metrics with PromQL | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-workbooks |
 | Configure and route Azure Monitor activity log data | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log |
@@ -289,6 +290,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Integrate common Prometheus exporters with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-exporters |
 | Collect Istio metrics using Azure Managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-istio-integration |
 | Configure Kafka monitoring with Azure Managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-kafka-integration |
+| Configure Prometheus remote write with Entra Workload ID | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-azure-workload-identity |
 | Configure native OpenTelemetry Protocol ingestion to Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/opentelemetry-protocol-ingestion |
 | Query Azure Monitor resources with Resource Graph | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-graph-samples |
 | Query Azure resource logs via Log Analytics API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/azure-resource-queries |
@@ -307,7 +309,6 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Migrate Azure Monitor metrics calls to getBatch API | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/migrate-to-batch-api |
 | Use Azure Monitor REST API to query Prometheus metrics with PromQL | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-api-promql |
 | Configure Grafana with Azure Monitor managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-grafana |
-| Configure Prometheus remote-write to Azure Monitor managed service | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-remote-write |
 | Use resource-scoped PromQL queries with Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-resource-scoped-queries |
 | Use Code Optimizations with GitHub Copilot | https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-extensions |
 | Assign Code Optimizations work to GitHub Copilot | https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-github-copilot |
@@ -319,7 +320,6 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Instrument custom .NET requests for Profiler | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests |
 | Build Grafana dashboards using Azure Data Explorer data | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-azure-data-explorer |
 | Use Grafana dashboards to monitor AKS with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-kubernetes |
-| Integrate Azure Monitor dashboards with Grafana | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-use-grafana-dashboards |
 | Transform workbook JSON data using JSONPath | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-jsonpath |
 | Use Application Change Analysis with VM insights | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-change-analysis |
 | Query VM insights map and connection data with Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-log-query |
@@ -333,7 +333,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Monitor and interpret log search alert rule health | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/log-alert-rule-health |
 | Configure predictive autoscale for VM scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-predictive |
 | Enable high-scale container log collection in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-high-scale |
-| Use supported region mappings for Container insights and Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping |
+| Use region mappings for Container Insights and metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping |
 | Understand autoscaling limits for ama-metrics pods in Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-autoscaling |
 | Azure Monitor platform limits and quotas | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/service-limits |
 | Understand caching behavior in Log Analytics API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cache |
@@ -360,7 +360,6 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Configure secure access to Live Data in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup |
 | Configure Private Link for Container Insights and Managed Prometheus | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-private-link |
 | Configure Prometheus remote write with Entra ID authentication | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-active-directory |
-| Use Entra Workload ID for Prometheus remote write | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-azure-workload-identity |
 | Configure Prometheus remote write with managed identity | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-remote-write-managed-identity |
 | Configure network and firewall access to Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/azure-monitor-network-access |
 | Securely configure and deploy Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-security |
@@ -420,6 +419,7 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Apply best practices for Copilot observability agent | https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices |
 | Optimize Azure Monitor log alert queries | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-query |
 | Apply Azure Monitor alerting best practices | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/best-practices-alerts |
+| Configure OpenTelemetry sampling for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling |
 | Apply autoscale best practices in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-best-practices |
 | Avoid autoscale flapping with Azure Monitor rules | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-flapping |
 | Implement Well-Architected monitoring for AKS and Arc clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/best-practices-containers |

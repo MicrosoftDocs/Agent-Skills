@@ -3,7 +3,7 @@ name: healthcare-apis
 description: Expert knowledge for Healthcare Apis development including security, configuration, troubleshooting, deployment, integrations & coding patterns, architecture & design patterns, best practices, limits & quotas, and comparing x vs. y. Use when building, debugging, or optimizing Healthcare Apis applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Healthcare Apis Skill

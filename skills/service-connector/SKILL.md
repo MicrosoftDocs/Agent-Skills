@@ -3,7 +3,7 @@ name: service-connector
 description: Expert knowledge for Service Connector development including security, limits & quotas, deployment, configuration, integrations & coding patterns, troubleshooting, and best practices. Use when building, debugging, or optimizing Service Connector applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Service Connector Skill

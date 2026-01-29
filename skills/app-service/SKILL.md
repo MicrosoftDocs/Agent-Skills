@@ -3,7 +3,7 @@ name: app-service
 description: Expert knowledge for App Service development including best practices, configuration, limits & quotas, security, integrations & coding patterns, deployment, architecture & design patterns, comparing x vs. y, and troubleshooting. Use when building, debugging, or optimizing App Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # App Service Skill

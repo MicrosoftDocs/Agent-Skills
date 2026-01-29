@@ -3,7 +3,7 @@ name: network-function-manager
 description: Expert knowledge for Network Function Manager development including configuration, and security. Use when building, debugging, or optimizing Network Function Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Network Function Manager Skill

@@ -3,7 +3,7 @@ name: site-recovery
 description: Expert knowledge for Site Recovery development including best practices, configuration, security, integrations & coding patterns, troubleshooting, limits & quotas, architecture & design patterns, and comparing x vs. y. Use when building, debugging, or optimizing Site Recovery applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Site Recovery Skill

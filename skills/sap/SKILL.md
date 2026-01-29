@@ -3,7 +3,7 @@ name: sap
 description: Expert knowledge for Sap development including configuration, deployment, security, architecture & design patterns, best practices, integrations & coding patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Sap applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Sap Skill

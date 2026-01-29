@@ -3,7 +3,7 @@ name: networking
 description: Expert knowledge for Networking development including limits & quotas, architecture & design patterns, security, integrations & coding patterns, best practices, and troubleshooting. Use when building, debugging, or optimizing Networking applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Networking Skill

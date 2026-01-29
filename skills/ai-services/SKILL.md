@@ -3,7 +3,7 @@ name: ai-services
 description: Expert knowledge for Ai Services development including configuration, architecture & design patterns, integrations & coding patterns, security, limits & quotas, deployment, troubleshooting, comparing x vs. y, and best practices. Use when building, debugging, or optimizing Ai Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Ai Services Skill
@@ -94,10 +94,11 @@ fetch_webpage({ urls: ["https://learn.microsoft.com/..."], query: "your query" }
 | Configure monitoring and logging for Azure OpenAI | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/monitor-openai?view=foundry-classic |
 | Configure predicted outputs to reduce latency | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/predicted-outputs?view=foundry-classic |
 | Configure prompt caching for Azure OpenAI requests | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/prompt-caching?view=foundry-classic |
+| Migrate Azure OpenAI Realtime API from beta to GA | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/realtime-audio-preview-api-migration-guide?view=foundry-classic |
 | Configure reproducible output for Azure OpenAI models | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/reproducible-output?view=foundry-classic |
 | Configure spillover traffic management for provisioned deployments | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/spillover-traffic-management?view=foundry-classic |
 | Manage Azure OpenAI model deployments and lifecycle | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/working-with-models?view=foundry-classic |
-| Reference Azure Monitor metrics and logs for Azure OpenAI | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/monitor-openai-reference?view=foundry-classic |
+| Azure OpenAI monitoring data schema in Foundry | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/monitor-openai-reference?view=foundry-classic |
 | Configure Azure AI Search options for On Your Data | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/references/azure-search?view=foundry-classic |
 | Configure Cosmos DB options for Azure OpenAI On Your Data | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/references/cosmos-db?view=foundry-classic |
 | Configure Elasticsearch options for Azure OpenAI On Your Data | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/references/elasticsearch?view=foundry-classic |

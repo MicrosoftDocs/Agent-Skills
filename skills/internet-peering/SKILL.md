@@ -3,7 +3,7 @@ name: internet-peering
 description: Expert knowledge for Internet Peering development including configuration. Use when building, debugging, or optimizing Internet Peering applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Internet Peering Skill

@@ -3,7 +3,7 @@ name: hpc-cache
 description: Expert knowledge for Hpc Cache development including security, configuration, architecture & design patterns, integrations & coding patterns, troubleshooting, best practices, limits & quotas, and deployment. Use when building, debugging, or optimizing Hpc Cache applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Hpc Cache Skill

@@ -2,7 +2,6 @@
 
 ## Summary
 
-- **Duration**: 1m 33s
 - **Total Pages**: 202
 - **Fetched**: 202
 - **Fetch Failed**: 0
@@ -11,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 202
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/site-recovery/site-recovery.csv`
 
@@ -31,50 +30,6 @@
 | *(Unclassified)* | 75 | 37.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up replication](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-replication-tutorial-modernized)
-  - Updated: 2025-04-26T00:00:00Z → 2025-04-26T08:00:00.000Z
-- [Run a disaster recovery drill](https://learn.microsoft.com/en-us/azure/site-recovery/tutorial-dr-drill-azure)
-  - Updated: 2024-05-23T00:00:00Z → 2024-05-23T08:00:00.000Z
-- [Run VMware VMs failover to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-tutorial-failover-failback-modernized)
-  - Updated: 2023-09-29T00:00:00Z → 2023-09-29T08:00:00.000Z
-- [Prepare Azure](https://learn.microsoft.com/en-us/azure/site-recovery/tutorial-prepare-azure-for-hyperv)
-  - Updated: 2022-12-22T00:00:00Z → 2023-02-27T23:03:00.000Z
-- [Prepare on-premises Hyper-V](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-prepare-on-premises-tutorial)
-  - Updated: 2024-05-23T00:00:00Z → 2024-05-23T08:00:00.000Z
-- [Set up replication for Hyper-V VMs in VMM clouds](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-azure-tutorial)
-  - Updated: 2025-12-08T00:00:00Z → 2025-12-08T08:00:00.000Z
-- [Fail over to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-failover-failback-tutorial)
-  - Updated: 2025-12-08T00:00:00Z → 2025-12-08T08:00:00.000Z
-- [Set up replication for Hyper-V VMs](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-tutorial)
-  - Updated: 2025-09-16T00:00:00Z → 2025-09-17T03:33:00.000Z
-- [Prepare Azure](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-azure)
-  - Updated: 2024-02-19T00:00:00Z → 2024-02-19T08:00:00.000Z
-- [Prepare Azure VMware Solution](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-avs)
-  - Updated: 2024-03-22T00:00:00Z → 2024-03-22T08:00:00.000Z
-- [Set up replication](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-replication)
-  - Updated: 2025-12-08T00:00:00Z → 2025-12-08T08:00:00.000Z
-- [Run a disaster recovery drill](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-dr-drill-azure)
-  - Updated: 2024-02-19T00:00:00Z → 2024-02-19T08:00:00.000Z
-- [Fail over to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-failover)
-  - Updated: 2024-02-19T00:00:00Z → 2024-02-19T08:00:00.000Z
-- [Reprotect VMs](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-reprotect)
-  - Updated: 2020-09-30T00:00:00Z → 2022-11-03T11:27:00.000Z
-- [Fail back from Azure](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-failback)
-  - Updated: 2020-09-30T00:00:00Z → 2022-11-03T11:27:00.000Z
-- [Classic to modernized VMware disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/move-from-classic-to-modernized-vmware-disaster-recovery)
-  - Updated: 2025-03-26T00:00:00Z → 2025-03-31T11:22:00.000Z
-- [Move from classic to modernized VMware disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/how-to-move-from-classic-to-modernized-vmware-disaster-recovery)
-  - Updated: 2024-05-23T00:00:00Z → 2024-05-23T17:05:00.000Z
-- [Deploy Azure Site Recovery replication appliance (modernized)](https://learn.microsoft.com/en-us/azure/site-recovery/deploy-vmware-azure-replication-appliance-modernized)
-  - Updated: 2025-01-24T00:00:00Z → 2025-01-24T08:00:00.000Z
-- [Disaster recovery using the Recovery Services vault](https://learn.microsoft.com/en-us/azure/site-recovery/disaster-recovery-for-edge-zone-vm-tutorial)
-  - Updated: 2025-01-09T00:00:00Z → 2025-01-09T18:03:00.000Z
-- [Disaster recovery when creating a VM](https://learn.microsoft.com/en-us/azure/site-recovery/disaster-recovery-for-edge-zone-via-vm-flow-tutorial)
-  - Updated: 2025-01-09T00:00:00Z → 2025-01-13T18:03:00.000Z
-- *...and 182 more*
 
 ## Classified Pages
 

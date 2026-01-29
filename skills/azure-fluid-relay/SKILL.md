@@ -3,7 +3,7 @@ name: azure-fluid-relay
 description: Expert knowledge for Azure Fluid Relay development including security, configuration, integrations & coding patterns, troubleshooting, deployment, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Fluid Relay applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Azure Fluid Relay Skill

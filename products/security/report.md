@@ -2,7 +2,6 @@
 
 ## Summary
 
-- **Duration**: 0m 54s
 - **Total Pages**: 111
 - **Fetched**: 111
 - **Fetch Failed**: 0
@@ -11,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 111
-- **Unchanged**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 111
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/security/security.csv`
 
@@ -32,50 +31,6 @@
 | *(Unclassified)* | 57 | 51.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-monitoring)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-03T08:00:00.000Z
-- [Integrity](https://learn.microsoft.com/en-us/azure/security/fundamentals/infrastructure-integrity)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-03T08:00:00.000Z
-- [Data protection](https://learn.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Platform integrity and security](https://learn.microsoft.com/en-us/azure/security/fundamentals/platform)
-  - Updated: 2025-11-04T00:00:00Z → 2025-11-04T08:00:00.000Z
-- [Firmware security](https://learn.microsoft.com/en-us/azure/security/fundamentals/firmware)
-  - Updated: 2022-11-10T00:00:00Z → 2022-11-11T17:01:00.000Z
-- [Code integrity](https://learn.microsoft.com/en-us/azure/security/fundamentals/code-integrity)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-03T08:00:00.000Z
-- [Secure Boot](https://learn.microsoft.com/en-us/azure/security/fundamentals/secure-boot)
-  - Updated: 2024-09-29T00:00:00Z → 2024-09-29T08:00:00.000Z
-- [Measured boot & host attestation](https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation)
-  - Updated: 2024-09-10T00:00:00Z → 2024-09-10T08:00:00.000Z
-- [Project Cerberus](https://learn.microsoft.com/en-us/azure/security/fundamentals/project-cerberus)
-  - Updated: 2024-08-29T00:00:00Z → 2024-08-29T08:00:00.000Z
-- [Encryption at rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-16T18:12:00.000Z
-- [Hypervisor security](https://learn.microsoft.com/en-us/azure/security/fundamentals/hypervisor)
-  - Updated: 2022-11-10T00:00:00Z → 2022-11-11T17:01:00.000Z
-- [Isolation in the Azure cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/isolation-choices)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-16T18:12:00.000Z
-- [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-overview)
-  - Updated: 2025-11-04T00:00:00Z → 2025-11-07T18:10:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
-  - Updated: 2025-05-28T00:00:00Z → 2025-05-28T08:00:00.000Z
-- [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity)
-  - Updated: 2024-09-06T00:00:00Z → 2024-09-06T08:00:00.000Z
-- [Security overview](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview)
-  - Updated: 2025-11-10T00:00:00Z → 2025-11-10T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
-  - Updated: 2025-11-10T00:00:00Z → 2025-11-10T08:00:00.000Z
-- [Dangling DNS and subdomain takeover](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Microsoft Antimalware](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware)
-  - Updated: 2026-01-12T00:00:00Z → 2026-01-12T08:00:00.000Z
-- [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples)
-  - Updated: 2025-12-03T00:00:00Z → 2025-12-03T08:00:00.000Z
-- *...and 91 more*
 
 ## Classified Pages
 

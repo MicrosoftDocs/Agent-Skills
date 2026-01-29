@@ -3,7 +3,7 @@ name: communication-services
 description: Expert knowledge for Communication Services development including comparing x vs. y, configuration, security, best practices, limits & quotas, troubleshooting, deployment, integrations & coding patterns, and architecture & design patterns. Use when building, debugging, or optimizing Communication Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Communication Services Skill

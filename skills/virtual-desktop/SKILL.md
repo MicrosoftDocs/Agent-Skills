@@ -3,7 +3,7 @@ name: virtual-desktop
 description: Expert knowledge for Virtual Desktop development including configuration, troubleshooting, deployment, best practices, integrations & coding patterns, security, architecture & design patterns, limits & quotas, and comparing x vs. y. Use when building, debugging, or optimizing Virtual Desktop applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Virtual Desktop Skill

@@ -3,7 +3,7 @@ name: partner-solutions
 description: Expert knowledge for Partner Solutions development including integrations & coding patterns, configuration, security, troubleshooting, and architecture & design patterns. Use when building, debugging, or optimizing Partner Solutions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-28"
+  generated_at: "2026-01-29"
 ---
 
 # Partner Solutions Skill

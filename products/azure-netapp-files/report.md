@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 215
+- **Updated Pages**: 1
+- **Unchanged**: 214
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -31,6 +31,11 @@
 | *(Unclassified)* | 108 | 50.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction)
+  - Updated: 2025-10-28T08:00:00.000Z → 2026-01-28T18:20:00.000Z
 
 ## Classified Pages
 
@@ -254,5 +259,5 @@
 | [Understand NAS protocols](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-attached-storage-protocols) | 0.20 | Conceptual explanation of NAS protocols (SMB/NFS); lacks detailed configuration tables or limits. |
 | [Understand application volume groups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-concept) | 0.20 | Conceptual explanation of application volume groups and their benefits; no indication of specific configuration values, limits, or troubleshooting content. |
 | [Videos](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-videos) | 0.20 | Video references page is a navigation/resource index without embedded technical details, configuration parameters, or error mappings. |
-| [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction) | 0.20 | High-level product introduction without specific limits, configs, or error details. |
+| [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction) | 0.10 | High-level introduction to Azure NetApp Files describing what the service is and its basic capabilities (volumes, protocols, performance levels). No specific limits, configuration parameter tables, error codes, or product-specific diagnostic/security/deployment details are provided. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-netapp-files/whats-new) | 0.10 | What's new summary; feature announcements without detailed technical parameters. |

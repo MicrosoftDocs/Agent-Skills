@@ -2,16 +2,16 @@
 
 ## Summary
 
-- **Total Pages**: 382
-- **Fetched**: 382
+- **Total Pages**: 383
+- **Fetched**: 383
 - **Fetch Failed**: 0
-- **Classified**: 284
+- **Classified**: 285
 - **Unclassified**: 98
 
 ### Incremental Update
-- **New Pages**: 122
-- **Updated Pages**: 0
-- **Unchanged**: 260
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 381
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/ai-services/ai-services.csv`
 
@@ -22,39 +22,24 @@
 | architecture-patterns | 7 | 1.8% |
 | best-practices | 11 | 2.9% |
 | comparing | 1 | 0.3% |
-| configuration | 59 | 15.4% |
+| configuration | 60 | 15.7% |
 | deployment | 25 | 6.5% |
 | integrations | 114 | 29.8% |
 | limits-quotas | 14 | 3.7% |
-| security | 45 | 11.8% |
+| security | 45 | 11.7% |
 | troubleshooting | 8 | 2.1% |
-| *(Unclassified)* | 98 | 25.7% |
+| *(Unclassified)* | 98 | 25.6% |
 
 ## Changes
 
 ### New Pages
 
-- [Vision fine-tuning](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry-classic)
-- [Reinforcement fine-tuning](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/reinforcement-fine-tuning?view=foundry-classic)
-- [Preference fine-tuning](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-direct-preference-optimization?view=foundry-classic)
-- [Safety evaluation](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-safety-evaluation?view=foundry-classic)
-- [Tool calling](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-functions?view=foundry-classic)
-- [Fine-tuning cost management](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-cost-management?view=foundry-classic)
-- [Weights & Biases integration (preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/weights-and-biases-integration?view=foundry-classic)
-- [Troubleshooting guidance](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-troubleshoot?view=foundry-classic)
-- [Prompt flow overview](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/prompt-flow?view=foundry-classic)
-- [Create and manage compute session](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-manage-compute-session?view=foundry-classic)
-- [Index Lookup tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/index-lookup-tool?view=foundry-classic)
-- [Rerank tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/rerank-tool?view=foundry-classic)
-- [Content Safety tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/content-safety-tool?view=foundry-classic)
-- [Embedding tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/embedding-tool?view=foundry-classic)
-- [Serp API tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/serp-api-tool?view=foundry-classic)
-- [Deploy a flow for real-time inference](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/flow-deploy?view=foundry-classic)
-- [Enable tracing and collect feedback for a flow deployment](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/trace-production-sdk?view=foundry-classic)
-- [Monitor prompt flow deployments](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/monitor-quality-safety?view=foundry-classic)
-- [Troubleshoot prompt flow](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-troubleshoot?view=foundry-classic)
-- [Plan rollout](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/planning?view=foundry-classic)
-- *...and 102 more*
+- [Realtime API migration from Preview to GA](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/realtime-audio-preview-api-migration-guide?view=foundry-classic)
+
+### Updated Pages
+
+- [Azure OpenAI monitoring data reference](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/monitor-openai-reference?view=foundry-classic)
+  - Updated: 2025-11-26T08:00:00.000Z → 2026-01-02T18:05:00.000Z
 
 ## Classified Pages
 
@@ -125,6 +110,7 @@
 | [Use blocklists](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/use-blocklists?view=foundry-classic) | security | 0.80 | Explains using custom block lists with Foundry models; likely includes specific configuration fields, scopes, and behavior of block lists, which are product-specific security controls. |
 | [Virtual networks with private endpoints](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/network?view=foundry-classic) | security | 0.80 | VNet/private endpoint how-to content usually includes specific network configuration steps, required subnet and DNS settings, and Azure resource wiring that are product-specific security configurations. |
 | [Weights & Biases integration (preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/weights-and-biases-integration?view=foundry-classic) | integrations | 0.80 | Describes a concrete integration between Azure OpenAI fine-tuning and W&B, including tracking metrics and parameters. Such an article typically contains specific configuration steps, environment variables, and parameter mappings unique to this integration, which qualify as expert integration knowledge. |
+| [Azure OpenAI monitoring data reference](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/monitor-openai-reference?view=foundry-classic) | configuration | 0.78 | The page is a monitoring data reference for Azure OpenAI in Microsoft Foundry using Azure Monitor. These references typically list specific metric and log names, dimensions, and sometimes units and categories—effectively the configuration surface for what can be monitored and how it is exposed. This is product-specific expert knowledge that an LLM would not reliably know from training. It is not about limits/quotas or troubleshooting, but rather the detailed schema and configuration of monitoring data, which best aligns with the configuration sub-skill. |
 | [Built-in policies for model deployment](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/built-in-policy-model-deployment?view=foundry-classic) | security | 0.78 | Describes built-in policy definitions for Managed Foundry Tools and MaaP, including policy names, parameters, and allowed/denied model sets, which are product-specific governance and security controls. |
 | [Custom policies for model deployment](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/how-to/configure-deployment-policies?view=foundry-classic) | security | 0.78 | Shows how to create custom Azure Policy definitions that deny non-approved model deployments, including specific resource types, fields, and conditions unique to Foundry and Azure OpenAI deployment control. |
 | [Data source - Azure AI Search](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/references/azure-search?view=foundry-classic) | configuration | 0.78 | Described as 'configurable options of Azure AI Search when using Azure OpenAI On Your Data'. This implies tables/fields for configuration (parameter names, allowed values) for this specific integration, which fits configuration (detailed settings) more than generic integration how-tos. |
@@ -157,7 +143,6 @@
 | [System message design](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/advanced-prompt-engineering?view=foundry-classic) | best-practices | 0.75 | Explains how system messages affect Azure OpenAI chat behavior and provides concrete design practices for control and safety, which are product-specific prompt/system-message patterns. |
 | [Use the Azure Developer CLI](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/azure-developer-cli?view=foundry-classic) | deployment | 0.75 | Covers automating resource provisioning via Azure Developer CLI templates; includes product-specific deployment resources and configuration requirements for On Your Data. |
 | [Audit and manage hubs](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/azure-policy?view=foundry-classic) | security | 0.74 | Shows how to use Azure Policy for Foundry, including specific policy assignments, scopes, and resource type aliases that are unique to Foundry hubs and projects for compliance and governance. |
-| [Azure OpenAI monitoring data reference](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/monitor-openai-reference?view=foundry-classic) | configuration | 0.74 | Monitoring data reference usually includes metric names, dimensions, log table names, and schema fields. These are product-specific configuration/telemetry details used to configure monitoring and queries, fitting configuration of monitoring/diagnostics. |
 | [Securely access on-premises resources](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/access-on-premises-resources?view=foundry-classic) | configuration | 0.74 | Describes configuring Azure Application Gateway and networking so a Foundry managed virtual network can access on-prem or other VNets, including specific topology and configuration parameters unique to this integration scenario. |
 | [API lifecycle](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/api-version-lifecycle?view=foundry-classic) | deployment | 0.70 | API version lifecycle docs typically list specific API versions with support/retirement dates and upgrade requirements, which are deployment and compatibility constraints. |
 | [Azure AI Inference SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/supported-languages?view=foundry-classic) | configuration | 0.70 | A supported-languages page for Foundry Models will typically enumerate SDKs, package names, and language-specific usage notes. These are specific configuration/integration details (which SDK to use, where) that go beyond generic knowledge. |
@@ -241,6 +226,7 @@
 | [Prompt tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/prompt-tool?view=foundry-classic) | configuration | 0.70 | Prompt tool article is expected to list settings and options for the tool (inputs, outputs, parameters). This matches configuration-focused expert knowledge. |
 | [Provisioned spillover](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/spillover-traffic-management?view=foundry-classic) | configuration | 0.70 | Spillover feature configuration for routing overage traffic between provisioned and standard deployments likely includes specific parameters, flags, and behavior rules unique to this product. |
 | [Python tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/python-tool?view=foundry-classic) | configuration | 0.70 | Python tool documentation typically includes environment constraints, parameter names, and execution settings, which are configuration details unique to this product. |
+| [Realtime API migration from Preview to GA](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/realtime-audio-preview-api-migration-guide?view=foundry-classic) | configuration | 0.70 | A migration guide between beta and GA Realtime API protocols typically contains expert, product-specific details such as changed/renamed parameters, required configuration updates, protocol field mappings, and deprecation timelines that are not inferable from general knowledge. These are concrete configuration-level changes rather than conceptual guidance, so it best fits the configuration sub-skill. |
 | [Reinforcement fine-tuning](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/reinforcement-fine-tuning?view=foundry-classic) | limits-quotas | 0.70 | The page explicitly states that RFT jobs are automatically paused once they hit $5,000 in total training costs, which is a concrete, product-specific limit/threshold not inferable from general knowledge. This matches the limits-quotas pattern with a specific numeric cutoff. |
 | [Rerank tool](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-tools/rerank-tool?view=foundry-classic) | integrations | 0.70 | Rerank tool documentation for prompt flow generally includes tool parameters (such as query, documents list, ranking options, model identifiers) and how they interact with other tools like Index Lookup, which are product-specific integration patterns and configuration details. |
 | [Responses API with Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/how-to/generate-responses?view=foundry-classic) | integrations | 0.70 | How-to for generating responses with the Responses API likely includes request/response schemas, parameter names (like max_tokens, temperature), endpoint paths, and code snippets specific to Foundry’s implementation—API-level integration details. |
