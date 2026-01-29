@@ -8,6 +8,16 @@
 
 trigger: none
 
+parameters:
+  - name: fullSync
+    displayName: 'Full Sync (use --full flag)'
+    type: boolean
+    default: false
+  - name: targetBranch
+    displayName: 'Target GitHub Branch'
+    type: string
+    default: 'main'
+
 schedules:
   - cron: "0 2 * * *"  # Daily at 2:00 AM UTC
     displayName: Run every day
@@ -84,11 +94,20 @@ stages:
                 echo "Skills dir: $(Build.SourcesDirectory)/$GITHUB_REPO/skills"
                 echo "Azure OpenAI: $(azureOpenAIEndpoint)"
                 echo "Deployment: $(azureOpenAIDeployment)"
-                echo "========================================"
+                echo "Full Sync: ${{ parameters.fullSync }}"
+                echo "Target Branch: ${{ parameters.targetBranch }}"
+                echo "======================================="
+
+                FULL_FLAG=""
+                if [ "${{ parameters.fullSync }}" = "True" ]; then
+                  FULL_FLAG="--full"
+                  echo "Running with --full flag"
+                fi
 
                 python -m src.docs2skills \
                   --products-dir $(Build.SourcesDirectory)/$GITHUB_REPO/products \
-                  --skills-dir $(Build.SourcesDirectory)/$GITHUB_REPO/skills
+                  --skills-dir $(Build.SourcesDirectory)/$GITHUB_REPO/skills \
+                  $FULL_FLAG
 
                 echo "========================================"
                 echo "Sync completed"
@@ -119,9 +138,12 @@ stages:
                   git add products/ skills/
                   TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
                   git commit -m "$TIMESTAMP - Sync docs [skip ci]"
-                  git push origin HEAD:main
+                  
+                  TARGET_BRANCH="${{ parameters.targetBranch }}"
+                  # Use refs/heads/ to ensure branch is created if it doesn't exist
+                  git push origin HEAD:refs/heads/$TARGET_BRANCH
 
-                  echo "Pushed changes to GitHub"
+                  echo "Pushed changes to GitHub branch: $TARGET_BRANCH"
                 else
                   echo "No changes detected"
                 fi
