@@ -8,6 +8,13 @@
 - **Classified**: 13
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 20
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-avere-vfxt/azure-avere-vfxt.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -18,6 +25,8 @@
 | limits-quotas | 1 | 5.0% |
 | security | 1 | 5.0% |
 | *(Unclassified)* | 7 | 35.0% |
+
+## Changes
 
 ## Classified Pages
 

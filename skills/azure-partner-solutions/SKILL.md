@@ -3,7 +3,7 @@ name: azure-partner-solutions
 description: Expert knowledge for Azure Partner Solutions development including integrations & coding patterns, security, troubleshooting, configuration, decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Partner Solutions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Partner Solutions Skill
 
@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L38 | Diagnosing and resolving issues with Azure Native integrations for Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic, including setup, connectivity, and runtime problems. |
-| Decision Making | L39-L43 | Guidance on evaluating Azure Dynatrace, understanding its free trial, prerequisites, and step-by-step enrollment/activation in your Azure environment |
-| Architecture & Design Patterns | L44-L48 | Designing network architecture that places Cloud NGFW firewalls behind Azure Application Gateway, including routing, security, and high availability patterns. |
-| Security | L49-L57 | Managing security, identity, and access for Azure partner services (Confluent, Datadog, Dynatrace, Informatica, NGINXaaS), including Entra prerequisites, SSO, roles, and monitoring. |
-| Configuration | L58-L67 | Configuring and managing Azure integrations and runtime settings for Datadog, Dynatrace, Elastic, Informatica serverless, and Cloud NGFW networking/NAT/logging. |
-| Integrations & Coding Patterns | L68-L71 | Guides for integrating Confluent Cloud with Azure compute (e.g., Functions, AKS, VMs), including connectivity setup, authentication, and data streaming patterns. |
+| Troubleshooting | L30-L38 | Diagnosing and fixing common integration, deployment, and configuration issues for Azure Native partner services: Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic. |
+| Decision Making | L39-L43 | Guidance on evaluating Azure Dynatrace, understanding its free trial, prerequisites, and how to enroll or start using the trial in your Azure environment. |
+| Architecture & Design Patterns | L44-L48 | Designing and deploying Cloud NGFW firewalls behind Azure Application Gateway, including network architecture, routing, security, and high availability patterns. |
+| Security | L49-L57 | Managing security, identity, and access for Azure partner services (Confluent, Datadog, Dynatrace, Informatica, NGINXaaS), including Entra setup, SSO, roles, and monitoring configuration. |
+| Configuration | L58-L67 | Configuring and managing partner integrations (Datadog, Dynatrace, Elastic, Informatica) and Cloud NGFW in Azure, including runtime, networking, NAT, and logging settings. |
+| Integrations & Coding Patterns | L68-L71 | Guides for integrating Confluent Cloud with Azure compute services (like Functions, AKS, VMs), including connection setup, configuration, and data streaming patterns. |
 
 ### Troubleshooting
 | Topic | URL |

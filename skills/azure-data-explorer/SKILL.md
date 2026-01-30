@@ -3,7 +3,7 @@ name: azure-data-explorer
 description: Expert knowledge for Azure Data Explorer development including security, integrations & coding patterns, limits & quotas, deployment, best practices, architecture & design patterns, configuration, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Data Explorer applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Data Explorer Skill
 
@@ -21,13 +21,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L41 | Diagnosing and fixing ingestion error codes, private endpoint and connectivity issues, cluster creation failures, and database/table create/delete problems in Azure Data Explorer. |
-| Best Practices | L42-L54 | Guidance on optimizing ADX clusters: performance, schema, concurrency, monitoring, data quality (duplicates/invalid), privacy purging, cold data querying, and Power BI integration. |
-| Decision Making | L55-L69 | Guidance on choosing and sizing ADX cluster SKUs (confidential/isolated), scaling strategies, cost estimation/optimization, reservations, and migrating data (e.g., from Elasticsearch via Logstash). |
-| Architecture & Design Patterns | L70-L77 | Designing ADX architectures for DR/BC, cross-cluster querying with follower DBs, and choosing multi-tenant patterns for scalable, resilient deployments. |
-| Limits & Quotas | L78-L86 | Cluster usage limits and quotas: free cluster restrictions, upgrading to remove limits, auto-stop for inactive clusters, safe delete/recover, and Event Grid ingestion file size limits. |
-| Security | L87-L117 | Configuring ADX security: encryption, managed identities, RBAC/permissions, network isolation (private endpoints, outbound/public access), cross-tenant access, policies, and secure connections/integration. |
-| Configuration | L118-L134 | Configuring ADX databases, ingestion (Event Grid, LightIngest, formats), schema sync/clone, language extensions, monitoring, and web UI settings/profile across environments. |
-| Integrations & Coding Patterns | L135-L197 | Integrating ADX with tools and services (Power BI, ADF, Kafka, Splunk, Spark, Excel, SQL, Power Automate, etc.), plus SDK patterns for auth, policies, ingestion, and querying. |
+| Best Practices | L42-L54 | Guidance on optimizing ADX clusters: performance, concurrency, schema, ingestion quality, duplicate/invalid data handling, PII purging, health monitoring, and Power BI integration. |
+| Decision Making | L55-L69 | Guidance on choosing and scaling ADX cluster SKUs (confidential/isolated/optimal), planning capacity and costs, and estimating, optimizing, and discounting ingestion and cluster pricing. |
+| Architecture & Design Patterns | L70-L77 | Designing ADX for resilience: DR and business continuity architectures, cross-cluster querying with follower DBs, and multi-tenant deployment patterns. |
+| Limits & Quotas | L78-L86 | Managing ADX cluster limits: auto-stop for inactivity, Event Grid ingestion size caps, safe delete/recover, and free-cluster constraints and upgrade paths. |
+| Security | L87-L117 | Securing ADX clusters: auth/RBAC, managed identities, encryption, network/private endpoints, cross-tenant access, policies/locks, and secure connections from tools and data sources. |
+| Configuration | L118-L134 | Configuring ADX clusters and databases: schema sync/clone, ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring, UI settings, and safe database deletion. |
+| Integrations & Coding Patterns | L135-L197 | Integrating Azure Data Explorer with tools and services (Power BI, ADF, Kafka, Splunk, OpenTelemetry, JDBC/ODBC, SDKs), plus patterns for ingestion, querying, auth, and automation. |
 | Deployment | L198-L204 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
 
 ### Troubleshooting

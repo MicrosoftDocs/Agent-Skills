@@ -8,6 +8,13 @@
 - **Classified**: 47
 - **Unclassified**: 19
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 66
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-digital-twins/azure-digital-twins.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -20,6 +27,8 @@
 | security | 5 | 7.6% |
 | troubleshooting | 7 | 10.6% |
 | *(Unclassified)* | 19 | 28.8% |
+
+## Changes
 
 ## Classified Pages
 

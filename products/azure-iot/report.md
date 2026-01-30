@@ -8,6 +8,13 @@
 - **Classified**: 16
 - **Unclassified**: 24
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | integrations | 4 | 10.0% |
 | troubleshooting | 1 | 2.5% |
 | *(Unclassified)* | 24 | 60.0% |
+
+## Changes
 
 ## Classified Pages
 

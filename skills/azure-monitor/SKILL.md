@@ -3,7 +3,7 @@ name: azure-monitor
 description: Expert knowledge for Azure Monitor development including troubleshooting, configuration, deployment, decision making, limits & quotas, security, integrations & coding patterns, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Monitor applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Monitor Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics/Diagnostics), alerts, autoscale, logs/metrics ingestion, Container insights, Application Insights, ITSM, and VM performance. |
-| Best Practices | L76-L108 | Best practices for Azure Monitor configuration, cost/perf optimization, alerts, autoscale, Prometheus/PromQL, AKS/VM monitoring, Copilot observability, and Log Analytics data/health. |
-| Decision Making | L109-L142 | Guidance on choosing Azure Monitor features, costs, and alerting options, plus migration paths from legacy agents, SCOM, Splunk, Diagnostics, Prometheus, and older APIs to current AMA-based solutions |
-| Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link integration. |
-| Limits & Quotas | L154-L173 | Scaling, performance, and quota limits for Azure Monitor: ingestion caps, latency, query timeouts, autoscale, container/Prometheus high-scale setups, and alert/workbook/logs API constraints. |
-| Security | L174-L207 | Securing Azure Monitor and Log Analytics with RBAC, Azure Policy, Private Link, managed identities/Entra auth, CMK/BYOS, and secure integrations (ITSM, AKS, Prometheus, Grafana, workbooks). |
-| Configuration | L208-L381 | Configuring Azure Monitor data collection, alerts, diagnostics, workspaces, Application Insights, Kubernetes/VM monitoring, and related agents, DCRs, policies, and transformations. |
-| Integrations & Coding Patterns | L382-L454 | Integrating Azure Monitor with VMs, AKS/Prometheus, diagnostics, webhooks/ITSM, Grafana/Power BI, REST/Logs APIs, and custom telemetry for collection, alerting, export, and analysis |
-| Deployment | L455-L485 | Deploying and managing Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments, including region moves. |
+| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics/Diagnostics), alerts, autoscale, logs/metrics ingestion, Container insights, App Insights, ITSM, and VM performance. |
+| Best Practices | L76-L108 | Best practices for Azure Monitor alerts, logs, metrics, autoscale, costs, Kubernetes/VM monitoring, Prometheus/PromQL, Copilot observability, and operational/reliability tuning. |
+| Decision Making | L109-L142 | Guidance for planning and executing Azure Monitor migrations, cost and billing optimization, alerting choices, and visualization options across agents, APIs, clusters, and third‑party tools. |
+| Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link-based secure topologies. |
+| Limits & Quotas | L154-L173 | Limits, quotas, performance, and scaling for Azure Monitor: ingestion caps, latency, query timeouts, cross-workspace limits, autoscale, container/Prometheus high-scale setups, and alert retention. |
+| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC, CMK, Private Link/NSP, secure webhooks, AKS/Prometheus/Grafana access, and policy/compliance controls. |
+| Configuration | L208-L380 | Configuring Azure Monitor data collection, alerts, diagnostics, Application Insights, Kubernetes/VM monitoring, workspaces, pricing/retention, and related ARM/Policy/workbook settings. |
+| Integrations & Coding Patterns | L381-L453 | Integrating Azure Monitor with VMs, Prometheus, Grafana, ITSM, webhooks, REST APIs, and SDKs; exporting/ingesting logs/metrics and using KQL, alerts, and custom telemetry patterns. |
+| Deployment | L454-L483 | Deploying and managing Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments, including at-scale and cross-region moves |
 
 ### Troubleshooting
 | Topic | URL |
@@ -177,7 +177,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Enable Azure Monitor Agent network isolation with Private Link | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-private-link |
 | Secure webhook configuration for ITSM integration | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/it-service-management-connector-secure-webhook-connections |
 | Azure configuration for ITSM Secure Webhook | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration |
-| Enable Microsoft Entra authentication for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
+| Configure Microsoft Entra authentication for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
 | Understand IP collection and geolocation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection |
 | Migrate Container Insights to managed identity authentication | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication |
 | Configure secure access to Live Data in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup |
@@ -188,9 +188,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Securely configure and deploy Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-security |
 | Configure Azure Monitor with Network Security Perimeter | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/network-security-perimeter |
 | Use built-in Azure Monitor policy definitions | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/policy-reference |
-| Apply RBAC roles and security for Azure Monitor resources | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
 | Configure RBAC roles and permissions in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
-| Apply Azure Policy compliance controls to Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
+| Configure RBAC roles and permissions in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security |
+| Use Azure Policy compliance controls for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
 | Use Azure Policy compliance controls for Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy |
 | Authenticate to Azure Monitor Log Analytics API | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/access-api |
 | Register app and assign roles for Azure Monitor APIs | https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/register-app-for-token |
@@ -242,7 +242,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure service health alerts using ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-service-health |
 | Deploy simple log search alerts via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-simple-log-search-alerts |
 | Set up Application Insights connection strings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
-| Create and configure workspace-based Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource |
 | Configure JMX metrics for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-jmx-metrics-configuration |
 | Configure Application Insights for Spring Boot apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-spring-boot |
 | Configure Application Insights Java agent options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-config |
@@ -402,7 +401,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Build Grafana dashboards from Application Insights data in Azure | https://learn.microsoft.com/en-us/azure/azure-monitor/app/grafana-dashboards |
 | Use telemetry processor configuration examples for Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-telemetry-processors-examples |
 | Use Click Analytics feature extension with JS SDK | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-feature-extensions |
-| Enable framework extensions for Application Insights JavaScript | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions |
+| Use JavaScript framework extensions with Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions |
 | Customize OpenTelemetry integration with Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify |
 | Integrate Application Insights work items with GitHub and Azure DevOps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration |
 | Integrate KEDA with AKS using Azure Monitor Prometheus metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/integrate-keda |
@@ -466,7 +465,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate smart detection to alerts-based rules | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |
 | Deploy Application Insights Agent for IIS-hosted ASP.NET apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/application-insights-asp-net-agent |
 | Deploy Application Insights monitoring on Azure VMs and VMSS | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-vm-vmss-apps |
-| Enable Application Insights autoinstrumentation on Azure App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-app-service |
 | Enable Application Insights for Java apps in containers | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-get-started-supplemental |
 | Enable Application Insights for AKS workloads without code changes | https://learn.microsoft.com/en-us/azure/azure-monitor/app/kubernetes-codeless |
 | Enable Azure Monitor features on AKS clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-enable |

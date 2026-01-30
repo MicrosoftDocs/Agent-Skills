@@ -8,6 +8,13 @@
 - **Classified**: 250
 - **Unclassified**: 132
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 382
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 49 | 12.8% |
 | troubleshooting | 18 | 4.7% |
 | *(Unclassified)* | 132 | 34.6% |
+
+## Changes
 
 ## Classified Pages
 

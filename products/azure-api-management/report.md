@@ -8,6 +8,13 @@
 - **Classified**: 218
 - **Unclassified**: 56
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 274
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 31 | 11.3% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 56 | 20.4% |
+
+## Changes
 
 ## Classified Pages
 

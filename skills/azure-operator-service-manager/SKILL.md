@@ -3,7 +3,7 @@ name: azure-operator-service-manager
 description: Expert knowledge for Azure Operator Service Manager development including best practices, integrations & coding patterns, configuration, security, and troubleshooting. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Operator Service Manager Skill
 
@@ -20,11 +20,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart installation failures in AOSM CNF deployments. |
-| Best Practices | L35-L45 | Best practices for AOSM onboarding, config groups, Helm charts and tests, artifact cleanup, and safely upgrading/controlling failure behavior for CNF deployments |
-| Security | L46-L53 | Securing AOSM: configuring Private Link to artifact stores, defining/assigning custom RBAC roles for service operators, and using managed identities for long-running SNS operations. |
-| Configuration | L54-L61 | Configuring AOSM deployment behavior: edge cluster registry resiliency, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
-| Integrations & Coding Patterns | L62-L74 | Integrating CNFs/VNFs with AOSM using CLI, managing artifact stores (ACR/Storage), mapping Helm/ARM params, and designing/publishing network services and operators |
+| Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart install failures in AOSM CNF deployments. |
+| Best Practices | L35-L45 | Best practices for AOSM onboarding, config groups, Helm chart usage and cleanup, and safely upgrading/controlling behavior of CNF network functions with Helm tests. |
+| Security | L46-L53 | Securing AOSM with Private Link, configuring custom RBAC/service operator roles, and using managed identities for secure, long-running SNS operations |
+| Configuration | L54-L61 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
+| Integrations & Coding Patterns | L62-L74 | Patterns and CLI workflows for onboarding CNFs/VNFs, mapping Helm/ARM to AOSM configs, and managing AOSM artifacts via ACR or storage-backed stores. |
 
 ### Troubleshooting
 | Topic | URL |

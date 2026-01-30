@@ -3,7 +3,7 @@ name: azure-ai-services
 description: Expert knowledge for Azure Ai Services development including configuration, decision making, security, integrations & coding patterns, limits & quotas, deployment, troubleshooting, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Ai Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Ai Services Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L42 | Diagnosing and fixing Foundry issues: deployments, monitors, private endpoints, Marketplace access, prompt flow/compute sessions, and Azure OpenAI fine-tuning errors. |
-| Best Practices | L43-L54 | Prompt engineering, safety, performance, and reasoning best practices for Azure OpenAI/Foundry (incl. DeepSeek-R1, On Your Data, embeddings, guardrails, and vision prompt design). |
-| Decision Making | L55-L87 | Guidance on choosing models, regions, SDKs, costs, throughput, upgrades/migrations, and HA/DR strategies to design, benchmark, and operate Foundry/Azure OpenAI solutions. |
-| Architecture & Design Patterns | L88-L96 | BCDR, high availability, and resiliency patterns for Foundry Agent Service and Azure OpenAI, including disaster recovery planning and recovery from data, resource, and platform outages. |
-| Limits & Quotas | L97-L110 | Quotas, rate limits, and capacity for Azure OpenAI/Foundry (TPM, RPM, batch jobs, prompt caching, fine-tuning), plus how to configure, monitor, and request limit increases. |
-| Security | L111-L156 | Security, networking, identity, and governance for Foundry/Azure OpenAI: RBAC, Entra auth, VNets/Private Link, data privacy, guardrails, policies, and customer-managed encryption keys. |
-| Configuration | L157-L213 | Configuring and monitoring Foundry and Azure OpenAI: deployments, agents, content filters, storage, networks, evals, tracing, On Your Data sources, and fine-tuning/tool-calling settings. |
-| Integrations & Coding Patterns | L214-L310 | Patterns and code to integrate Foundry/Azure OpenAI models and agents with tools, APIs, search, RAG, embeddings, media, realtime, webhooks, and external services/frameworks. |
-| Deployment | L311-L334 | Deploying and hosting Foundry models/resources (Microsoft and partner), choosing deployment types, regional availability, and automating deployments via Bicep, Terraform, CLI, CI/CD, and playground. |
+| Troubleshooting | L33-L42 | Diagnosing and fixing Foundry issues: marketplace access, deployments/monitors, private endpoints, prompt flow/compute, and Azure OpenAI fine-tuning errors. |
+| Best Practices | L43-L54 | Best practices for prompts, reasoning models, safety templates, embeddings, performance tuning, and using Azure OpenAI (incl. On Your Data and vision chat) for complex tasks. |
+| Decision Making | L55-L87 | Guidance for choosing models, regions, SDKs, costs, throughput, upgrades/migrations, and HA/DR strategies when planning, benchmarking, and operating Foundry and Azure OpenAI solutions |
+| Architecture & Design Patterns | L88-L96 | BCDR, high availability, and disaster recovery patterns for Foundry Agent Service and Azure OpenAI, including planning, failover, and recovery from data, resource, and platform outages |
+| Limits & Quotas | L97-L110 | Quotas, rate limits, and capacity management for Foundry and Azure OpenAI: viewing, configuring, increasing limits, batch jobs, dynamic TPM, prompt caching, and cost-based fine-tuning controls. |
+| Security | L111-L156 | Security, privacy, and governance for Foundry/Azure OpenAI: auth/RBAC, network isolation (VNets, Private Link), encryption/CMK, safety/guardrails, policy-based control, and data handling. |
+| Configuration | L157-L213 | Configuring and monitoring Foundry and Azure OpenAI: agents, models, content filters, storage, networking, tracing, evaluations, fine-tuning, On Your Data sources, and deployment metrics/logs. |
+| Integrations & Coding Patterns | L214-L310 | Patterns and code to integrate Azure AI/Foundry and Azure OpenAI with tools, APIs, and frameworks—search, RAG, functions, webhooks, realtime, embeddings, media, and external services. |
+| Deployment | L311-L334 | Deploying and managing Foundry models, hubs, and projects (Bicep/Terraform/CLI), serverless APIs, fine-tuned models, CI/CD evaluations, regional availability, and sample app deployments |
 
 ### Troubleshooting
 | Topic | URL |

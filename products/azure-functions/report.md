@@ -8,6 +8,13 @@
 - **Classified**: 287
 - **Unclassified**: 64
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 351
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 13 | 3.7% |
 | troubleshooting | 24 | 6.8% |
 | *(Unclassified)* | 64 | 18.2% |
+
+## Changes
 
 ## Classified Pages
 

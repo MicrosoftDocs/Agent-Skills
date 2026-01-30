@@ -3,7 +3,7 @@ name: azure-machine-learning
 description: Expert knowledge for Azure Machine Learning development including decision making, security, limits & quotas, configuration, architecture & design patterns, best practices, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Machine Learning Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L65 | Diagnosing and fixing Azure ML runtime issues: pipelines, AutoML, endpoints, Kubernetes, networking (VNet/private endpoints), environments/images, data access, feature store, and known issues. |
-| Best Practices | L66-L82 | Guidance on secure, cost‑efficient, and scalable ML: feature design, AutoML tuning, GPU/distributed training, inference scripts, profiling, checkpoints, and monitoring (incl. generative AI). |
-| Decision Making | L83-L113 | Guidance on Azure ML design choices: cost and networking, DR/failover, compute usage, ADF patterns, and detailed v1→v2 migration/upgrade and feature comparison topics. |
-| Architecture & Design Patterns | L114-L118 | Designing Azure ML environments and registries for MLOps: multi-workspace/registry patterns, isolation, governance, promotion across dev/test/prod, and enterprise-scale architecture choices. |
-| Limits & Quotas | L119-L129 | Region availability, workspace retention/soft delete, resource and storage limits, VM SKUs, serverless training, and capacity planning for Azure ML deployments and experiments |
-| Security | L130-L189 | Securing Azure ML: encryption, identity/RBAC, auth, secrets, network isolation (VNets, private endpoints), data exfiltration, policy/governance, and secure access to dependent services. |
-| Configuration | L190-L362 | Configuring Azure ML resources, jobs, endpoints, data, environments, AutoML, prompt flow, monitoring, and YAML/CLI/SDK settings for training, deployment, and MLOps. |
-| Integrations & Coding Patterns | L363-L417 | Patterns and code for integrating Azure ML with storage, Spark/Databricks/Synapse, MLflow, prompt flow, and external services, plus deploying, invoking, and debugging models/endpoints. |
-| Deployment | L418-L457 | Deploying and operationalizing models and pipelines to Azure ML endpoints (online/batch), using ARM/Bicep/Terraform, CI/CD (DevOps/GitHub), MLflow, custom containers, and prompt flow/GenAIOps. |
+| Troubleshooting | L33-L65 | Diagnosing and fixing Azure ML issues across pipelines, AutoML, endpoints, Kubernetes, networking, environments, data access/labeling, feature store, and known platform errors. |
+| Best Practices | L66-L82 | Guidance on secure, cost‑efficient, and scalable ML: feature design, training, distributed GPU, AutoML tuning, inference scripts, profiling, checkpoints, and monitoring safety/quality of generative apps. |
+| Decision Making | L83-L113 | Guidance on Azure ML architectural choices, cost and network planning, DR/failover, and detailed migration/upgrade paths from v1 to v2 (workspaces, data, compute, pipelines, endpoints). |
+| Architecture & Design Patterns | L114-L118 | Designing Azure ML environments and registries for MLOps: multi-workspace/registry patterns, isolation strategies, promotion across stages, and governance/architecture best practices. |
+| Limits & Quotas | L119-L129 | Region/VM availability, workspace soft delete/retention, quota and service limits, storage size workarounds, serverless training, and capacity planning for Azure ML resources. |
+| Security | L130-L189 | Securing Azure ML: encryption, identity/RBAC, auth, secret handling, network isolation (VNets, Private Link), policy/governance, and secure access to data, registries, endpoints, and compute. |
+| Configuration | L190-L362 | Configuring Azure ML resources and jobs: compute, environments, data, endpoints, AutoML, prompt flow, monitoring, YAML/CLI schemas, connections, registries, and workspace-level settings. |
+| Integrations & Coding Patterns | L363-L417 | Integrating Azure ML with storage, Spark/Databricks/Synapse, MLflow, REST, Event Grid, and prompt flow; building, deploying, and debugging ML pipelines, endpoints, and batch jobs. |
+| Deployment | L418-L457 | Deploying and operationalizing models, pipelines, and prompt flows to Azure ML endpoints (online/batch), plus CI/CD, MLOps/GenAIOps, infra-as-code, rollout strategies, and scaling. |
 
 ### Troubleshooting
 | Topic | URL |

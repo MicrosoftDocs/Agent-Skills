@@ -8,6 +8,13 @@
 - **Classified**: 19
 - **Unclassified**: 61
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 79
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,13 @@
 | security | 5 | 6.2% |
 | troubleshooting | 5 | 6.2% |
 | *(Unclassified)* | 61 | 76.2% |
+
+## Changes
+
+### Updated Pages
+
+- [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources)
+  - Updated: 2025-09-02T17:11:00.000Z → 2026-01-28T08:00:00.000Z
 
 ## Classified Pages
 
@@ -48,7 +62,6 @@
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources) | 0.35 | Describes creating environments, clusters, and topics in Azure; summary suggests procedural guidance rather than detailed configuration tables or numeric constraints. |
 | [Create a connector to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-cosmos-db-connector) | 0.35 | Tutorial for creating a Confluent connector to Azure Cosmos DB; similar to other connector how-to content without expert-only configuration matrices or limits. |
 | [Create a connector to Blob Storage](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/add-confluent-connectors) | 0.35 | Tutorial for creating a Confluent connector to Azure Blob Storage; focuses on how-to connection steps, not on configuration reference data or limits. |
 | [Create new Datadog org](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/create) | 0.35 | Quickstart for creating a Datadog resource and basic setup; typical getting-started flow without detailed configuration parameter tables, limits, or decision matrices. |
@@ -78,6 +91,7 @@
 | [Astro resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/tools) | 0.20 | Describes available resources and tools conceptually; appears to be a navigation-style or overview page without concrete configuration parameters or limits. |
 | [Confluent](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/) | 0.20 | Confluent Cloud with Azure documentation entry; description is about using Kafka/Flink as a service, not detailed config, limits, or troubleshooting. |
 | [Confluent resources and developer tools](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/confluent-tools) | 0.20 | Resources and developer tools listing; likely links and conceptual descriptions, not detailed configuration parameters or quotas. |
+| [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources) | 0.20 | From the summary, this appears to be a how-to/tutorial for creating Confluent environments, clusters, and topics via the Azure portal. There is no clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Without evidence of detailed limits, configuration options, or other expert-only specifics, it is likely a procedural guide rather than expert reference content. |
 | [Create Dynatrace resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/create) | 0.20 | Quickstart for creating a Dynatrace resource via portal; primarily step-by-step UI guidance without detailed configuration matrices or expert-only parameters. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/neon/create) | 0.20 | Quickstart for creating a Neon resource via portal; step-by-step creation without product-specific limits, config matrices, or advanced patterns. |
 | [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/create) | 0.20 | Quickstart for creating Cloud NGFW resource; focuses on creation steps, not deep configuration options or expert troubleshooting. |

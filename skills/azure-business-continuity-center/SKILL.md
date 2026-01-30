@@ -3,7 +3,7 @@ name: azure-business-continuity-center
 description: Expert knowledge for Azure Business Continuity Center development including configuration, limits & quotas, and security. Use when building, debugging, or optimizing Azure Business Continuity Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Business Continuity Center Skill
 
@@ -20,9 +20,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L27-L31 | Resiliency feature support matrix, supported/unsupported scenarios, and limitations for using Azure Business Continuity Center across services and regions. |
-| Security | L32-L37 | Guidance on security levels and controls in Azure Resiliency, and how to review, configure, and improve the security posture of your resiliency and continuity setup. |
-| Configuration | L38-L44 | Configuring Azure Backup/Recovery Services vaults and policies, including creating, managing, and lifecycle operations for backup and replication protection settings. |
+| Limits & Quotas | L27-L31 | Resiliency feature support matrix and limitations for Azure Business Continuity Center, including which scenarios, regions, and workloads are supported or restricted. |
+| Security | L32-L37 | Security levels and posture for Azure Resiliency: how security tiers work, how they affect continuity, and how to review, configure, and strengthen your resiliency security settings. |
+| Configuration | L38-L44 | Configuring Backup/Recovery Services vaults, creating and managing backup/replication policies, and handling the lifecycle (creation, updates, deletion) of Azure Backup vaults. |
 
 ### Limits & Quotas
 | Topic | URL |

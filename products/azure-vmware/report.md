@@ -8,6 +8,13 @@
 - **Classified**: 106
 - **Unclassified**: 28
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 134
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware/azure-vmware.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -21,6 +28,8 @@
 | security | 10 | 7.5% |
 | troubleshooting | 2 | 1.5% |
 | *(Unclassified)* | 28 | 20.9% |
+
+## Changes
 
 ## Classified Pages
 

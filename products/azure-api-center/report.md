@@ -8,6 +8,13 @@
 - **Classified**: 16
 - **Unclassified**: 19
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 35
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -18,6 +25,8 @@
 | integrations | 8 | 22.9% |
 | security | 1 | 2.9% |
 | *(Unclassified)* | 19 | 54.3% |
+
+## Changes
 
 ## Classified Pages
 

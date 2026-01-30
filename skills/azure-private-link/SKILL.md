@@ -3,7 +3,7 @@ name: azure-private-link
 description: Expert knowledge for Azure Private Link development including configuration, limits & quotas, security, best practices, decision making, troubleshooting, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Private Link applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Private Link Skill
 
@@ -21,12 +21,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L36 | Diagnosing and fixing Azure Private Endpoint and Private Link Service connectivity issues, including DNS/misconfiguration causes, validation steps, and common error resolutions. |
-| Best Practices | L37-L41 | DNS design and configuration guidance for Private Endpoints, including zone setup, name resolution patterns, split-horizon DNS, and integration with on-premises or custom DNS servers |
-| Decision Making | L42-L46 | Guidance on optimizing Azure Private Link costs, evaluating design trade-offs, and choosing architectures that balance security, performance, and expense. |
-| Limits & Quotas | L47-L51 | Guidance on increasing Azure Private Endpoint virtual network scale limits, including supported maximums and how to request higher quotas. |
-| Security | L52-L57 | Configuring Azure RBAC roles and permissions needed to create, manage, and secure Private Link and Network Security Perimeters. |
-| Configuration | L58-L70 | Configuring Azure Private Link/endpoint behavior: routing, subnet policies, DNS, SNAT, NSP setup, and monitoring/diagnostic logs for secure, private connectivity. |
-| Integrations & Coding Patterns | L71-L74 | Configuring on-premises DNS to resolve Azure Private Endpoint and private zone names using Azure DNS Private Resolver, including hybrid network and forwarding patterns. |
+| Best Practices | L37-L41 | DNS design and configuration guidance for Private Endpoints, including name resolution patterns, split-horizon DNS, custom DNS servers, and avoiding common DNS misconfigurations. |
+| Decision Making | L42-L46 | Guidance on optimizing Azure Private Link architecture for cost, including pricing trade-offs, design choices, and when to use Private Link vs alternatives. |
+| Limits & Quotas | L47-L51 | Guidance on VNet scale limits for Azure Private Endpoints and how to request or configure increased limits for larger deployments. |
+| Security | L52-L57 | Configuring Azure RBAC roles and permissions needed to deploy and manage Private Link and Network Security Perimeters securely. |
+| Configuration | L58-L70 | How to configure and manage Private Link/endpoint behavior: subnet policies, routing, DNS, SNAT, security perimeters, metrics, and diagnostic logging. |
+| Integrations & Coding Patterns | L71-L74 | Configuring on-premises DNS to resolve Azure Private Endpoint and Private Link resources using Azure DNS Private Resolver, including hybrid network integration patterns. |
 
 ### Troubleshooting
 | Topic | URL |

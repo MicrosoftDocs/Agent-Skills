@@ -3,7 +3,7 @@ name: azure-healthcare-apis
 description: Expert knowledge for Azure Healthcare Apis development including security, limits & quotas, troubleshooting, deployment, integrations & coding patterns, configuration, architecture & design patterns, decision making, and best practices. Use when building, debugging, or optimizing Azure Healthcare Apis applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Healthcare Apis Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L45 | Diagnosing and fixing FHIR/Health Data Services issues: token and identity errors, $convert-data failures, MedTech deployment/runtime problems, event issues, logs, and known platform bugs. |
-| Best Practices | L46-L52 | Best practices for encrypting DICOM and FHIR with customer-managed keys and tuning Azure FHIR service performance (throughput, latency, scaling, and configuration). |
-| Decision Making | L53-L62 | Guidance on planning and executing migrations from Azure API for FHIR/MedTech to newer Health Data Services, plus FAQs and regional availability of Azure healthcare services. |
-| Architecture & Design Patterns | L63-L69 | Architecting Azure Healthcare APIs for FHIR and DICOM: DR strategies, DICOM with Data Lake, and end-to-end digital pathology workflow design and integration. |
-| Limits & Quotas | L70-L75 | Autoscaling behavior, capacity limits, and configuration for Azure API for FHIR/FHIR service, including throughput, scaling rules, and performance-related constraints. |
-| Security | L76-L111 | Securing Azure Healthcare APIs and FHIR/DICOM services: identity and app registration, RBAC, tokens, network/Private Link, customer-managed keys, compliance, and SMART on FHIR access. |
-| Configuration | L112-L156 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging, policies, search, history, bulk import/export, de-identification, and implementation guides (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L157-L193 | Patterns and how-tos for integrating FHIR/DICOM/MedTech APIs with apps and analytics, using operations like $export, $convert-data, SMART on FHIR, change feeds, and validation. |
-| Deployment | L194-L201 | How to deploy Azure Healthcare APIs (FHIR, DICOM, MedTech) using ARM/Bicep or the portal, including setups integrated with Azure Data Lake and choosing deployment methods. |
+| Troubleshooting | L33-L45 | Diagnosing and fixing FHIR/Health Data Services issues: token and identity errors, $convert-data problems, MedTech deployment/runtime/log issues, events, and known platform bugs. |
+| Best Practices | L46-L52 | Guidance on customer-managed key (CMK) encryption setup and best practices for DICOM and FHIR data, plus tuning Azure FHIR service performance and scalability. |
+| Decision Making | L53-L62 | Guidance for planning and executing migrations from Azure API for FHIR/MedTech to newer Health Data Services, plus FAQs and checking regional availability of Azure health services. |
+| Architecture & Design Patterns | L63-L69 | Designing resilient FHIR and DICOM architectures, including disaster recovery for Azure API for FHIR and implementing DICOM/Data Lake–based imaging and digital pathology workflows. |
+| Limits & Quotas | L70-L75 | Configuring and understanding autoscale for Azure API for FHIR, including throughput tiers, request limits, scaling behavior, and performance constraints. |
+| Security | L76-L111 | Authentication, authorization, RBAC, identity providers, app registration, access tokens, network isolation, encryption/CMK, compliance, and privacy/security features for FHIR, DICOM, and Health Data Services |
+| Configuration | L112-L156 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging/audit, search/reindex, bulk import/export, profiles/validation, policies, and special CARIN/DaVinci setups. |
+| Integrations & Coding Patterns | L157-L193 | Patterns and code for integrating FHIR/DICOM/MedTech with Azure: REST/DICOMweb calls, SMART on FHIR, bulk export/delete, $operations, validation, mappings, and analytics pipelines. |
+| Deployment | L194-L201 | Deploying Azure Healthcare APIs (FHIR, DICOM, MedTech) using ARM/Bicep, portal-based setup, and integrating DICOM with Azure Data Lake for storage and workflows |
 
 ### Troubleshooting
 | Topic | URL |

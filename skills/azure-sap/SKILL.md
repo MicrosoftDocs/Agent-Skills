@@ -3,7 +3,7 @@ name: azure-sap
 description: Expert knowledge for Azure Sap development including configuration, deployment, security, architecture & design patterns, integrations & coding patterns, decision making, best practices, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Sap applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Sap Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing SAP on Azure issues: deployment automation errors, SAP Insights/AMS workload problems, VM scale set failures, and Azure VM Extension for SAP troubleshooting. |
-| Best Practices | L41-L54 | Best practices for SAP on Azure: HA/DR design and testing, automated config/quality checks, and optimal VM storage layouts using Premium SSD, SSD v2, Ultra Disk, and Azure Files/NFS. |
-| Decision Making | L55-L67 | Guidance on choosing Azure setups, VMs, storage, hosting, data extraction/tiering, and checking which SAP products and scenarios are supported on Azure. |
-| Architecture & Design Patterns | L68-L93 | Designing SAP architectures on Azure: DBMS choices, HA/DR patterns, HANA/NetWeaver availability, zoning/latency, and RISE connectivity and workload zone design. |
-| Limits & Quotas | L94-L98 | FAQ, limits, and constraints for Azure Monitor for SAP solutions, including supported scenarios, scale limits, data collection boundaries, and known restrictions. |
-| Security | L99-L113 | Security best practices for SAP on Azure: identity/RBAC design, Key Vault secrets, TLS/encryption, private endpoints/trusted access, and securely exposing SAP workloads. |
-| Configuration | L114-L177 | Configuring SAP on Azure: automation (Terraform/Ansible/BOM), naming and tools, VIS/AMS monitoring and alerts, and detailed HA/DR setups for HANA, NetWeaver, Db2, and OS clusters. |
-| Integrations & Coding Patterns | L178-L196 | Patterns and scripts to integrate SAP with Azure services (monitoring, VIS control, Ansible, Data Factory, RISE), plus connectors for Salesforce, email, printing, and storage. |
-| Deployment | L197-L235 | Deploying and managing SAP on Azure: automation framework/control plane scripts, DevOps pipelines, HA/DR and clustering setups, and step-by-step VM, HANA, NetWeaver, and BusinessObjects deployments. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing SAP on Azure issues: deployment automation errors, AMS SAP Insights troubleshooting, VM scale set problems, and Azure VM Extension for SAP failures. |
+| Best Practices | L41-L54 | Best practices for SAP on Azure: HA/DR design and testing, automated config/quality checks, and optimal VM/storage layouts using Premium SSD, SSD v2, Ultra Disk, and Azure Files/NFS/SMB. |
+| Decision Making | L55-L67 | Guidance on choosing Azure infrastructure, automation, VM/storage configs, hosting, data extraction/tiering, and checking SAP and scenario support for SAP on Azure. |
+| Architecture & Design Patterns | L68-L93 | Designing SAP on Azure architectures: DBMS choices, HA/DR patterns, HANA/NetWeaver availability, zoning/latency, workload zones, and RISE connectivity options. |
+| Limits & Quotas | L94-L98 | FAQ on Azure Monitor for SAP solutions limits, supported scenarios, scale and performance constraints, and other usage restrictions or quotas. |
+| Security | L99-L113 | Securing SAP on Azure: identity/RBAC design, Key Vault secrets, TLS and encryption, private endpoints, RISE security, and safely exposing SAP via Azure services. |
+| Configuration | L114-L177 | Configuring SAP on Azure: automation (Terraform/Ansible/BOM), naming and tools, VIS/AMS monitoring, HA/DR and clustering (HANA/NetWeaver/Db2/SQL), storage, networking, and VM extensions. |
+| Integrations & Coding Patterns | L178-L196 | Patterns and scripts for integrating SAP with Azure (monitoring, VIS control, data/ILM flows, email/printing), plus Ansible, PowerShell, ADF, Salesforce, RISE, and OData/Exchange setups |
+| Deployment | L197-L235 | Deploying and managing SAP on Azure: automation framework setup, scripts and DevOps pipelines, HA/DR topologies, and step-by-step VM-based SAP system deployments. |
 
 ### Troubleshooting
 | Topic | URL |

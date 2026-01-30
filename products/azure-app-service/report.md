@@ -8,6 +8,13 @@
 - **Classified**: 149
 - **Unclassified**: 89
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 238
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 52 | 21.8% |
 | troubleshooting | 1 | 0.4% |
 | *(Unclassified)* | 89 | 37.4% |
+
+## Changes
 
 ## Classified Pages
 

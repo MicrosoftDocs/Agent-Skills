@@ -3,7 +3,7 @@ name: azure-site-recovery
 description: Expert knowledge for Azure Site Recovery development including decision making, deployment, configuration, security, troubleshooting, limits & quotas, architecture & design patterns, best practices, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Site Recovery applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Site Recovery Skill
 
@@ -22,13 +22,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L33-L55 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, and common error codes. |
 | Best Practices | L56-L67 | Best-practice DR designs and configurations for specific workloads (AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL, file servers, VMware) using Azure Site Recovery. |
-| Decision Making | L68-L87 | Planning and cost/sizing guidance for Azure Site Recovery: DR architecture, capacity and scaling, VM sizing, managed disk costs, tooling (Deployment Planner), and choosing ASR vs alternatives. |
-| Architecture & Design Patterns | L88-L95 | Designing Azure Site Recovery DR architectures: ExpressRoute connectivity, Traffic Manager-based failover, Hyper-V/VMM network mapping, and classic vs modern VMware DR patterns. |
-| Limits & Quotas | L96-L107 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, Hyper-V/VMware/physical DR, shared disks, interoperability with Backup, and Deployment Planner. |
-| Security | L108-L119 | Security and access for Site Recovery: disk encryption (ADE/CMK), NSGs, trusted launch VMs, managed identity, private endpoints, RBAC roles, and TLS configuration. |
-| Configuration | L120-L179 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and disk/IP settings for DR and failback. |
-| Integrations & Coding Patterns | L180-L185 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
-| Deployment | L186-L189 | Deploying Azure Site Recovery using ARM templates, including defining resources, parameters, automation patterns, and best practices for template-based disaster recovery setup. |
+| Decision Making | L68-L87 | Guidance on DR planning, sizing, cost estimation, and tooling for Azure Site Recovery, including VMware/Hyper-V, managed disks, encryption changes, and choosing ASR vs Azure Migrate. |
+| Architecture & Design Patterns | L88-L95 | Designing ASR disaster recovery architectures: ExpressRoute connectivity, Traffic Manager for failover routing, Hyper‑V/VMM network mapping, and classic vs modern VMware DR models. |
+| Limits & Quotas | L96-L107 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, shared disks, interoperability with Backup, Deployment Planner limits, and VMware/Hyper-V/physical DR matrices. |
+| Security | L108-L119 | Configuring secure Azure Site Recovery: disk encryption (ADE/CMK), NSGs, trusted launch, private endpoints, TLS, RBAC access, and migrating runbooks to managed identity. |
+| Configuration | L120-L179 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and replication/failover/failback settings. |
+| Integrations & Coding Patterns | L180-L185 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans to orchestrate and customize Hyper-V to Azure disaster recovery workflows. |
+| Deployment | L186-L189 | Deploying Azure Site Recovery using ARM templates, including defining resources, parameters, automation steps, and best practices for template-based disaster recovery setup. |
 
 ### Troubleshooting
 | Topic | URL |

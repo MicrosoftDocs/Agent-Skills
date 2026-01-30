@@ -3,7 +3,7 @@ name: azure-automation
 description: Expert knowledge for Azure Automation development including security, best practices, integrations & coding patterns, configuration, deployment, limits & quotas, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Automation applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Automation Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L42 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors, shared resources, and collecting support diagnostics. |
-| Best Practices | L43-L56 | Guidance on structuring and managing Azure Automation runbooks/DSC: modular design, error handling, streams, watcher tasks, DR planning, compliance remediation, and module management. |
-| Decision Making | L57-L65 | Guidance for migrating to newer Azure Automation components (agents, workers, identities, runbooks) and choosing/configuring how runbooks are started. |
-| Limits & Quotas | L66-L73 | Details on Azure Automation and DSC extension limits/quotas, version history, and support matrices for Change Tracking and Inventory across OS, regions, and configurations. |
-| Security | L74-L92 | Identity, access, encryption, and network security for Automation: managed identities, Entra ID auth, RBAC, STIG/policy compliance, secure assets, and Private Link/private endpoints |
-| Configuration | L93-L119 | Configuring Azure Automation accounts: runbooks, State Configuration/DSC, Hybrid Runbook Workers, networking, logging/monitoring, assets (credentials, certs, variables), packages, schedules, and source control. |
-| Integrations & Coding Patterns | L120-L132 | Patterns for integrating runbooks with AWS, ARM/SQL/Office 365, alerts, webhooks, email (SendGrid), and using SDKs/managed identity to automate external services. |
-| Deployment | L133-L136 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software and configurations to Windows machines |
+| Troubleshooting | L32-L42 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC problems, Hybrid Runbook Worker errors, managed identity/auth failures, shared resource issues, and collecting diagnostics. |
+| Best Practices | L43-L56 | Runbook and DSC best practices: modular design, error/output handling, watcher tasks, DR planning, context switching, remediation, and managing/migrating PowerShell modules. |
+| Decision Making | L57-L65 | Guidance for planning and executing Azure Automation migrations (Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity) and choosing how to start runbooks |
+| Limits & Quotas | L66-L73 | Details on Azure Automation and DSC extension limits/quotas, version history, and supported configurations for Change Tracking and Inventory across OS and environments |
+| Security | L74-L92 | Securing Automation accounts: identities (system/user-assigned), Entra ID auth, RBAC, encryption, private endpoints, STIG/policy compliance, and Terraform-based secure setup. |
+| Configuration | L93-L119 | Configuring Azure Automation runbooks, State Configuration/DSC, Hybrid Runbook Workers, assets (credentials, certs, variables), Python/PowerShell modules, logging, networking, policy, and source control. |
+| Integrations & Coding Patterns | L120-L132 | Patterns for integrating runbooks with AWS, Azure alerts/webhooks, ARM/Office 365/SQL, email (SendGrid), and generating runbooks with the graphical SDK using managed identities |
+| Deployment | L133-L136 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software and configuration across Windows machines |
 
 ### Troubleshooting
 | Topic | URL |

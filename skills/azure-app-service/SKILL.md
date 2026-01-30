@@ -3,7 +3,7 @@ name: azure-app-service
 description: Expert knowledge for Azure App Service development including decision making, best practices, configuration, security, deployment, architecture & design patterns, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure App Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure App Service Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Using App Service diagnostics to investigate performance, availability, configuration, and dependency issues in your web apps, and interpret built‑in health and failure reports |
-| Best Practices | L38-L45 | Best practices for deploying, securing, troubleshooting, and routing traffic to Azure App Service apps, including Traffic Manager integration and operational guidance. |
-| Decision Making | L46-L67 | Guides for planning and choosing App Service tiers, plans, networking, auth, domains, and migration paths (Windows/Linux, .NET, Java, WordPress, Docker, Arc, ASE vs multitenant). |
-| Architecture & Design Patterns | L68-L73 | Patterns for scaling web apps globally with App Service Environment + Traffic Manager, and recommended architecture/service combinations for different Azure App Service app types. |
-| Limits & Quotas | L74-L79 | Scaling App Service plans (tiers, cores, memory, instances) and understanding per‑plan quotas, limits, and monitoring metrics for capacity and usage. |
-| Security | L80-L135 | Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs, access restrictions, managed identities, private endpoints, firewall, and secure access to Graph, SQL, Storage, and Key Vault. |
-| Configuration | L136-L187 | Configuring App Service apps: app settings, networking/VNet/ASE, auth, containers/sidecars, scaling, certificates/domains, language runtimes, storage mounts, logging, and health/monitoring. |
-| Integrations & Coding Patterns | L188-L198 | Patterns for connecting App Service apps to other Azure services (OpenAI, Key Vault, Logic Apps, App Gateway) using managed identity, WebJobs, and Node.js/.NET integration samples. |
-| Deployment | L199-L216 | Deploying App Service apps: CI/CD (GitHub Actions, Pipelines), containers, ZIP/FTP/local Git, deployment slots, ASE/Arc setup, migrations (DNS/VNet), and WebJobs from Visual Studio |
+| Troubleshooting | L33-L37 | Using App Service diagnostics to investigate app failures, performance issues, configuration problems, and platform health, plus guidance on interpreting diagnostic reports and suggested fixes |
+| Best Practices | L38-L45 | Best practices for deploying, securing, routing, and troubleshooting Azure App Service apps, including Traffic Manager usage, auth, SSL, scaling, and common operational issues. |
+| Decision Making | L46-L67 | Guidance on choosing App Service plans, tiers, auth, networking, domains, and secure connectivity, plus planning and executing migrations (Windows/Linux, .NET, Java, WordPress, Docker, Arc). |
+| Architecture & Design Patterns | L68-L73 | Patterns for scaling apps globally with App Service Environments + Traffic Manager, and recommended architecture patterns by app type (web, API, mobile, etc.). |
+| Limits & Quotas | L74-L79 | Scaling App Service plans (tiers, cores, memory, instances) and understanding built-in quotas, limits, and metrics to monitor and avoid resource or throttling issues. |
+| Security | L80-L135 | Securing App Service apps: auth (Entra, social, OIDC, MCP), TLS/certs, access restrictions, managed identities, private endpoints, Graph/SQL/Storage access, Key Vault, and secure network patterns. |
+| Configuration | L136-L187 | Configuring App Service apps: app settings, networking/VNet/ASE, certificates/domains, scaling, language/runtime setup, containers/sidecars, storage mounts, auth, logging, and monitoring. |
+| Integrations & Coding Patterns | L188-L198 | Patterns for connecting App Service apps to other Azure services (OpenAI, AI Search, Key Vault, Logic Apps, WebJobs, App Gateway) using managed identity and integration code samples. |
+| Deployment | L199-L216 | Deploying App Service apps via Git/FTP/ZIP/containers, setting up CI/CD (GitHub Actions, Azure Pipelines), using slots/ASE/Arc, and handling related migrations and DNS. |
 
 ### Troubleshooting
 | Topic | URL |

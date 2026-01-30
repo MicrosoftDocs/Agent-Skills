@@ -3,7 +3,7 @@ name: azure-cost-management-billing
 description: Expert knowledge for Azure Cost Management Billing development including configuration, security, decision making, best practices, troubleshooting, integrations & coding patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Cost Management Billing applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Cost Management Billing Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, and cost issues, including disabled accounts, sign-in/access errors, payment failures, and reservation/savings plan utilization or download problems |
-| Best Practices | L63-L74 | Best practices for analyzing and optimizing Azure costs, using Advisor, reservations, and Azure Hybrid Benefit (SQL), plus MCA onboarding and EA reservation savings calculations. |
-| Decision Making | L75-L140 | Guidance for choosing Azure billing models, reservations, savings plans, subscription/offer transitions, and cost optimization options, including EA→MCA changes and special regional/limited-time discounts. |
-| Limits & Quotas | L141-L153 | Managing Azure free-tier limits, spending limits, subscription lifecycle, data timing/latency, and optimizing costs with reservations and savings plans. |
-| Security | L154-L178 | Configuring secure access to Azure billing, cost, usage, reservations, and savings plans using RBAC and billing roles, including admin transitions, fraud prevention, and invoice/tax document access. |
-| Configuration | L179-L209 | Configuring Azure Cost Management and billing: budgets, alerts, cost views, tags/allocation, exports, reservations/savings plans, SQL/AKS costs, and multi-tenant/MCA/partner billing setup. |
-| Integrations & Coding Patterns | L210-L225 | APIs, REST, and PowerShell patterns to automate subscription creation, role migration, cost/usage export, and reservation management across EA, MCA, and Partner billing scopes |
-| Deployment | L226-L232 | Creating and managing Azure subscriptions: CSP partner customer subs, Enterprise Agreement subs, Microsoft Customer Agreement subs, and cross-tenant MCA subscription requests. |
+| Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, and reservation issues: disabled or missing subscriptions, payment/credit card errors, invoice access, and low or incorrect reservation/savings plan usage. |
+| Best Practices | L63-L74 | Best practices for analyzing and optimizing Azure costs, using Advisor, reservations, and Azure Hybrid Benefit (especially for SQL), plus onboarding and license/savings calculations. |
+| Decision Making | L75-L140 | Guidance on estimating and optimizing Azure costs, choosing reservations and savings plans, handling EA/MCA/MPA billing transitions, and managing special pricing, transfers, and marketplace/external charges. |
+| Limits & Quotas | L141-L153 | Managing Azure free-tier limits, spending limits, subscription lifecycle states, and understanding timing/latency for cost, reservation, and savings plan utilization data |
+| Security | L154-L178 | RBAC and admin roles for secure access to Azure billing, invoices, credits, reservations, savings plans, marketplace purchases, tax docs, and fraud/abuse protection across tenants and subscriptions |
+| Configuration | L179-L209 | Configuring Azure Cost Management and billing: budgets, alerts, tags, cost allocation, exports, reservations/savings plans, AKS/SQL costs, Power BI, and multitenant/MCA billing setup. |
+| Integrations & Coding Patterns | L210-L225 | APIs and scripts for automating cost management, subscription lifecycle (EA/MCA/Partner, cross-tenant), billing role migration, cost details, and reservation management. |
+| Deployment | L226-L232 | Creating and managing Azure subscriptions: partner-led customer subscriptions, Enterprise Agreement provisioning, and Microsoft Customer Agreement subscriptions across Entra tenants. |
 
 ### Troubleshooting
 | Topic | URL |

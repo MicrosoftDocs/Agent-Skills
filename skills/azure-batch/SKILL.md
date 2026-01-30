@@ -3,7 +3,7 @@ name: azure-batch
 description: Expert knowledge for Azure Batch development including security, configuration, deployment, decision making, integrations & coding patterns, best practices, troubleshooting, limits & quotas, and architecture & design patterns. Use when building, debugging, or optimizing Azure Batch applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Batch Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L39 | Diagnosing and resolving Azure Batch errors for jobs, tasks, pools, and compute nodes, including common failure patterns, error codes, and prevention/mitigation strategies. |
-| Best Practices | L40-L52 | Performance, scaling, monitoring, security, and storage best practices for Azure Batch jobs/tasks, including large task counts, MPI, concurrent tasks, and durable output handling |
-| Decision Making | L53-L65 | Guidance on choosing Batch VM sizes/images, using Spot/ephemeral disks, controlling costs, and migrating pools/images and low-priority VMs to Compute Gallery and simplified comms. |
-| Architecture & Design Patterns | L66-L71 | Designing Azure Batch architectures for render farm bursting, and choosing storage, caching, and data movement patterns for high‑throughput rendering workloads |
-| Limits & Quotas | L72-L76 | Batch account limits and quotas: max pools, nodes, jobs, tasks, core counts, default vs regional limits, and how to request quota increases. |
-| Security | L77-L96 | Securing Batch accounts and pools: auth (keys, Entra ID, RBAC, managed identities), encryption, network isolation (VNets, private endpoints, NSPs), Key Vault, and Azure Policy compliance. |
-| Configuration | L97-L129 | Configuring and managing Azure Batch pools, nodes, tasks, networking, autoscale, images, extensions, and event/diagnostic schemas using CLI/PowerShell and runtime settings |
-| Integrations & Coding Patterns | L130-L141 | Patterns and code for integrating Batch with SDKs (JS/.NET), containers, Azure Storage, file shares/virtual file systems, and Application Insights for output handling and monitoring. |
-| Deployment | L142-L146 | Automating Azure Batch deployments and end-to-end job runs using Azure Pipelines and CLI templates, including pipeline setup, configuration, and execution workflows. |
+| Troubleshooting | L33-L39 | Diagnosing, troubleshooting, and preventing Azure Batch errors for jobs, tasks, pools, and compute nodes, including common failure patterns and recommended recovery or mitigation steps. |
+| Best Practices | L40-L52 | Performance, scaling, monitoring, output persistence, MPI/multi-instance, concurrency, and security best practices for designing and running large Azure Batch jobs and tasks |
+| Decision Making | L53-L65 | Guidance on choosing VM sizes/images, using Spot/ephemeral disks, managing Batch costs, and migrating pools/images and low-priority VMs to newer Azure Batch/Compute Gallery models. |
+| Architecture & Design Patterns | L66-L71 | Designing Azure Batch render-farm bursting architectures and choosing storage, caching, and data movement patterns for high-performance rendering workloads |
+| Limits & Quotas | L72-L76 | Batch account limits for cores, pools, nodes, jobs, tasks; default vs regional quotas, how to request quota increases, and constraints affecting Batch workloads. |
+| Security | L77-L96 | Securing Batch accounts and pools: auth (keys, Entra ID, RBAC, managed identities), encryption, private endpoints/VNet, NSP, Key Vault access, and Azure Policy/compliance settings |
+| Configuration | L97-L129 | Configuring Azure Batch pools, nodes, networking, images, autoscale, events, and task runtime (apps, data, users, containers, dependencies) via CLI/PowerShell and diagnostic event schemas. |
+| Integrations & Coding Patterns | L130-L141 | Patterns and code for integrating Batch with containers, .NET/JS SDKs, Azure Storage, Application Insights, and mounting Azure Files/virtual file systems on pools |
+| Deployment | L142-L146 | Automating Azure Batch deployments and end-to-end job runs using Azure Pipelines and CLI templates, including configuration, orchestration, and repeatable HPC workflows. |
 
 ### Troubleshooting
 | Topic | URL |

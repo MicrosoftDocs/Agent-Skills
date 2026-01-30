@@ -3,7 +3,7 @@ name: azure-storage
 description: Expert knowledge for Azure Storage development including best practices, configuration, decision making, security, limits & quotas, integrations & coding patterns, troubleshooting, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Storage applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Storage Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing issues with BlobFuse2 mounts, lifecycle management policy runs, Azure Container Storage v1, and Azure Elastic SAN connectivity and performance. |
-| Best Practices | L41-L85 | Performance, resiliency, and monitoring best practices for Blob, Data Lake, Files, Queues, and Tables, including tuning uploads/downloads, retries, DR, and workload-specific optimization. |
-| Decision Making | L86-L125 | Cost planning, pricing models, and deployment choices for Azure Blob, Data Lake, Files, Elastic SAN, and migrations—focused on estimating costs, redundancy/DR, and selecting tiers or services. |
-| Architecture & Design Patterns | L126-L136 | Patterns and best practices for Table storage schema design, queries, updates, relationships, plus guidance on clustered apps using shared Elastic SAN volumes. |
-| Limits & Quotas | L137-L164 | Limits, quotas, performance targets, and retention/behavior rules for Azure Storage (Blob, Data Lake, Files, Queues, Tables, File Sync, Elastic SAN), including SLAs and known limitations |
-| Security | L165-L241 | Securing Azure Storage data access: RBAC/ABAC and Entra ID auth, SAS tokens, ACLs, client-side encryption, keys, networking/VPN, SFTP, and BlobFuse2/File Sync/Elastic SAN security. |
-| Configuration | L242-L315 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, soft delete, static sites, BlobFuse/ABFS/NFS/SFTP mounts, Azure Files/File Sync, migrations, networking, and monitoring. |
-| Integrations & Coding Patterns | L316-L434 | Patterns and code samples for integrating Azure Storage with tools, SDKs, and platforms—covering blobs, ADLS Gen2, Files, Queues, SAS, encryption, mounts, and data processing workflows. |
-| Deployment | L435-L443 | Guides for deploying and configuring storage: static site hosting on Blob (GitHub Actions, Terraform), enabling Data Lake Gen2, and deploying/migrating Azure File Sync. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing issues with BlobFuse2 mounts, lifecycle management policy runs, Azure Container Storage v1, and Azure Elastic SAN connectivity and performance |
+| Best Practices | L41-L85 | Performance, reliability, monitoring, and resiliency best practices for Blob, Data Lake, Files, Queues, and Tables, including tuning, retries, DR, and workload-specific optimization. |
+| Decision Making | L86-L125 | Cost estimation, pricing models, and design choices for Azure Blob, Data Lake, Files, Elastic SAN, and Container Storage, including tiers, redundancy, migration, DR, and optimization. |
+| Architecture & Design Patterns | L126-L136 | Patterns for scalable, query-efficient Azure Table storage schema design, data modeling and relationships, plus guidance for clustered apps using shared Elastic SAN volumes. |
+| Limits & Quotas | L137-L164 | Limits, quotas, performance targets, and retention/behavior rules for Azure Storage (Blob, Data Lake, Files, Queues, Tables, Elastic SAN), including SLAs, throttling, and known limitations |
+| Security | L165-L241 | Securing Azure Storage data: auth with Entra ID/RBAC/ABAC, SAS tokens, ACLs, encryption (CMEK/CSE/BlobFuse2), SFTP, VPN/endpoints, and security best practices for Blobs, Files, Queues, Tables, Elastic SAN. |
+| Configuration | L242-L315 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, BlobFuse/ABFS/NFS/SFTP, static sites, Azure Files mounts/migration, File Sync, and monitoring/metrics/logs. |
+| Integrations & Coding Patterns | L316-L434 | Patterns and code samples for integrating Azure Storage with apps and analytics: mounting, ETL, encryption, SAS, leases, tiers, and full CRUD for blobs, ADLS Gen2, Files, Queues, and Tables. |
+| Deployment | L435-L443 | Guides for deploying and configuring storage: static websites on Blob (GitHub Actions, Terraform), enabling ADLS Gen2 via ARM, and deploying/migrating Azure File Sync. |
 
 ### Troubleshooting
 | Topic | URL |

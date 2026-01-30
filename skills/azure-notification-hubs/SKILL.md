@@ -3,7 +3,7 @@ name: azure-notification-hubs
 description: Expert knowledge for Azure Notification Hubs development including integrations & coding patterns, decision making, configuration, deployment, security, limits & quotas, architecture & design patterns, troubleshooting, and best practices. Use when building, debugging, or optimizing Azure Notification Hubs applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Notification Hubs Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and resolving common Notification Hubs issues, including message drops, delivery failures, platform notification service errors, and how to debug and monitor hub health. |
-| Best Practices | L39-L43 | Guidance for adapting Notification Hubs to iOS 13 push changes, including payload/APS updates, notification handling, and required app and hub configuration adjustments. |
-| Decision Making | L44-L48 | Guidance on selecting the right Notification Hubs pricing tier, feature and scale differences between tiers, cost considerations, and how to upgrade or downgrade tiers. |
-| Architecture & Design Patterns | L49-L53 | Guidance on designing large-scale, multi-tenant, and geo-distributed push notification architectures with Notification Hubs, including patterns for routing, scaling, security, and integration. |
-| Limits & Quotas | L54-L59 | Managing large-scale Notification Hubs operations like bulk export/import of registrations and configuring, scheduling, and handling limits for scheduled push notifications |
-| Security | L60-L67 | Encryption at rest, EU data residency, TLS version requirements, and the Notification Hubs security model, roles, and access control configuration. |
-| Configuration | L68-L83 | Configuring Notification Hubs with APNS/FCM/WNS/Baidu, tags/routing, device registration patterns, Private Link, and setting up/using monitoring metrics and diagnostic logs |
-| Integrations & Coding Patterns | L84-L112 | Implementing and coding against Notification Hubs: platform SDK usage (Android/FCM, iOS/APNS, UWP), REST/Java/PHP/Python integration, user/geo targeting, templates, localization, and FCM v1 migration. |
+| Troubleshooting | L33-L38 | Diagnosing and fixing common Notification Hubs issues, including message drops, delivery failures, platform push errors, and steps to debug and verify end-to-end notification flow. |
+| Best Practices | L39-L43 | Guidance for adapting Notification Hubs to iOS 13 push changes, including payload, APIs, and configuration updates needed for reliable delivery on newer iOS versions. |
+| Decision Making | L44-L48 | Guidance on selecting the right Notification Hubs pricing tier, feature and scale differences, cost considerations, and how to upgrade or change tiers. |
+| Architecture & Design Patterns | L49-L53 | Guidance on designing scalable, secure, multi-tenant enterprise push notification architectures and patterns using Azure Notification Hubs. |
+| Limits & Quotas | L54-L59 | Managing large-scale device registrations via bulk export/import and configuring scheduled push notifications and their timing in Notification Hubs. |
+| Security | L60-L67 | Encryption at rest, EU data residency/boundary behavior, Notification Hubs security model and roles, and TLS version requirements/configuration. |
+| Configuration | L68-L83 | Configuring Notification Hubs: PNS credentials (APNS/FCM/WNS/Baidu), tags/routing, registration patterns, Private Link, plus monitoring metrics and diagnostic logging. |
+| Integrations & Coding Patterns | L84-L112 | End-to-end push integration patterns: platform setup (FCM v1/Android, APNS/iOS, WNS/UWP), SDK/REST usage, user/geo targeting, templates, localization, and backend (Java/PHP/Python/App Service). |
 | Deployment | L113-L118 | Infrastructure-as-code deployment of Notification Hubs using Bicep, ARM templates, and Terraform, including resource definitions, parameters, and provisioning workflows. |
 
 ### Troubleshooting

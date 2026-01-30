@@ -8,6 +8,13 @@
 - **Classified**: 26
 - **Unclassified**: 23
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 49
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-center/azure-update-center.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -20,6 +27,8 @@
 | security | 3 | 6.1% |
 | troubleshooting | 1 | 2.0% |
 | *(Unclassified)* | 23 | 46.9% |
+
+## Changes
 
 ## Classified Pages
 

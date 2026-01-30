@@ -3,7 +3,7 @@ name: azure-government
 description: Expert knowledge for Azure Government development including security, decision making, deployment, configuration, best practices, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Government applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Government Skill
 
@@ -20,11 +20,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L30-L34 | Guidance on naming Azure resources to avoid leaking secrets or sensitive info, with patterns and rules for secure, compliant resource naming conventions. |
-| Decision Making | L35-L49 | Guidance for choosing Azure Government vs global/secret clouds, planning compliant workloads (FedRAMP, NERC CIP, export controls), identity, partners, and sector-specific (DoD, justice, worldwide public sector) use. |
-| Security | L50-L60 | Guidance on securing Azure Government: isolation and IL5, Entra auth, TIC alignment, SAC architecture, and understanding FedRAMP/DoD compliance scope. |
-| Configuration | L61-L74 | Configuring tools and services for Azure Government: CLI, PowerShell, SSMS, Visual Studio, VM extensions, Monitor logs, Marketplace usage/publishing, ASE DISA CAP, and EA billing. |
-| Integrations & Coding Patterns | L75-L79 | Using Azure Storage REST/SDK APIs in Azure Government, including endpoint differences, authentication, configuration, and code examples for gov cloud environments. |
+| Best Practices | L30-L34 | Guidance on naming Azure resources to avoid leaking secrets or sensitive info, including patterns, examples, and compliance/security-focused naming conventions. |
+| Decision Making | L35-L49 | Guidance on choosing Azure Government vs other clouds, compliance (FedRAMP, NERC CIP, export control), identity and app design, DoD/public safety use, and selecting Gov/CSP environments. |
+| Security | L50-L60 | Security and compliance for Azure Government: isolation models, DoD IL5, FedRAMP scope, TIC guidance, Entra auth, and Secure Azure Computing Architecture for federal workloads |
+| Configuration | L61-L74 | Configuring tools and services for Azure Government: CLI, PowerShell, SSMS, Visual Studio, VM extensions, billing, marketplace images/solutions, ASE with DISA CAP, and Azure Monitor logs. |
+| Integrations & Coding Patterns | L75-L79 | Using Azure Storage REST/SDK APIs in Azure Government, including endpoints, authentication, configuration differences, and code patterns for blobs, queues, tables, and files |
 | Deployment | L80-L85 | Guides for deploying to Azure Government: configuring Azure Pipelines CI/CD, publishing App Service apps, and provisioning VMs in government cloud regions. |
 
 ### Best Practices

@@ -3,7 +3,7 @@ name: azure-sql-server-stretch-database
 description: Expert knowledge for Azure Sql Server Stretch Database development including decision making, configuration, integrations & coding patterns, troubleshooting, security, deployment, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Sql Server Stretch Database applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Sql Server Stretch Database Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L56 | Diagnosing and fixing Azure SQL performance, blocking, deadlocks, CPU/IO, audit/log analysis, connectivity, auth, Data Sync, and SQL MI/VM extension issues using DMVs and monitoring tools |
-| Best Practices | L57-L91 | Best-practice guidance for Azure SQL (DB, MI, SQL on VMs): HA/DR, failover, DR drills, performance tuning, storage/VM sizing, auditing, alerts, T‑SQL compatibility, and migration patterns. |
-| Decision Making | L92-L133 | Guidance for choosing Azure SQL/SQL Server deployment, tiers, pricing, DR/HA, scaling, licensing benefits, and migration paths (on‑prem, Oracle/Db2, SQL VMs, Hyperscale, DTU↔vCore). |
-| Architecture & Design Patterns | L134-L147 | Patterns for high availability, geo-replication, DR, connectivity, and clustering of Azure SQL (DB, MI, and SQL on VMs), including Always On, FCI, and rolling upgrade designs. |
-| Limits & Quotas | L148-L169 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance constraints, and sizing/network requirements for Azure SQL Database and Managed Instance. |
-| Security | L170-L270 | Security, auth, and compliance for Azure SQL: Entra/MFA, managed identities, network controls, auditing/ATP, TDE/CMK, Always Encrypted, Windows/Kerberos, and best‑practice hardening. |
-| Configuration | L271-L389 | Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security, backups, HA/DR, monitoring, maintenance, automation, and deployment via portal, CLI, PowerShell, ARM/Bicep/Terraform. |
-| Integrations & Coding Patterns | L390-L454 | Connecting apps and tools (EF Core, .NET, Node, Python, Excel, Go, etc.) to Azure SQL, plus patterns for sharding, elastic queries/jobs, replication, automation, and PowerShell-based management. |
-| Deployment | L455-L490 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL VMs), plus migrations from other databases and cross-region/zone redundancy setup |
+| Troubleshooting | L33-L56 | Diagnosing and fixing Azure SQL performance, deadlocks, blocking, CPU/I/O, connectivity, auditing, Data Sync, In-Memory OLTP, and SQL MI/VM extension issues using DMVs and monitoring tools. |
+| Best Practices | L57-L91 | Best-practice guidance for performance, HA/DR, auditing, storage, sizing, licensing, and T‑SQL compatibility across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs |
+| Decision Making | L92-L133 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, HA/DR, scaling, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid Benefit, reservations). |
+| Architecture & Design Patterns | L134-L147 | Patterns for high availability, geo-replication, DR, connectivity, and clustering of Azure SQL (DB, MI, and SQL on VMs), including Always On and failover designs. |
+| Limits & Quotas | L148-L169 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/constraints for Azure SQL Database and Managed Instance. |
+| Security | L170-L270 | Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra, MFA, Kerberos), network isolation, encryption/TDE/Key Vault, auditing, threat protection, compliance, and best practices. |
+| Configuration | L271-L389 | Configuring Azure SQL (DB, MI, and SQL VMs): networking, security, backups/immutability, monitoring/alerts, HA/DR (AGs, geo-replication, failover groups), jobs, maintenance, and deployment automation. |
+| Integrations & Coding Patterns | L390-L454 | Connecting apps/tools (EF, .NET, Node, Python, Excel, Go, etc.) to Azure SQL/MI, plus elastic scale, cross-db queries, auditing, automation, replication, and PowerShell/REST management patterns |
+| Deployment | L455-L490 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, region moves, sharding, and migrations from other databases. |
 
 ### Troubleshooting
 | Topic | URL |

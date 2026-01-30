@@ -8,6 +8,13 @@
 - **Classified**: 57
 - **Unclassified**: 22
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 79
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-static-web-apps/azure-static-web-apps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -20,6 +27,8 @@
 | security | 10 | 12.7% |
 | troubleshooting | 1 | 1.3% |
 | *(Unclassified)* | 22 | 27.8% |
+
+## Changes
 
 ## Classified Pages
 

@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-01-29 11:16:07
-**Total Duration**: 117m 7s
+**Generated**: 2026-01-30 02:02:50
+**Total Duration**: 14m 25s
 
 ## Product Crawl Summary
 
@@ -16,7 +16,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 5 | App Service | 238 | 149 | 0 | 0 | 0 | ✓ |
 | 6 | Static Web Apps | 79 | 57 | 0 | 0 | 0 | ✓ |
 | 7 | Application Gateway | 136 | 84 | 0 | 0 | 0 | ✓ |
-| 8 | Synapse Analytics | 382 | 243 | 0 | 0 | 0 | ✓ |
+| 8 | Synapse Analytics | 382 | 250 | 0 | 0 | 0 | ✓ |
 | 9 | Automation | 115 | 74 | 0 | 0 | 0 | ✓ |
 | 10 | Update Manager | 49 | 26 | 0 | 0 | 0 | ✓ |
 | 11 | Internet Peering | 23 | 1 | 0 | 0 | 0 | ✓ |
@@ -26,98 +26,98 @@ Quick overview for reviewers. See individual product reports for details.
 | 15 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | ✓ |
 | 16 | Azure HPC Cache | 34 | 30 | 0 | 0 | 0 | ✓ |
 | 17 | Azure Managed Grafana | 42 | 31 | 0 | 0 | 0 | ✓ |
-| 18 | Azure Monitor | 547 | 418 | 0 | 0 | 0 | ✓ |
+| 18 | Azure Monitor | 547 | 416 | 0 | 6 | 0 | ✓ |
 | 19 | Functions | 351 | 287 | 0 | 0 | 0 | ✓ |
 | 20 | Azure Government | 39 | 32 | 0 | 0 | 0 | ✓ |
-| 21 | Azure NetApp Files | 216 | 162 | 0 | 0 | 0 | ✓ |
+| 21 | Azure NetApp Files | 224 | 160 | 14 | 16 | 6 | ✓ |
 | 22 | Azure VMware Solution | 134 | 106 | 0 | 0 | 0 | ✓ |
 | 23 | Internet of Things | 40 | 16 | 0 | 0 | 0 | ✓ |
 | 24 | Resource Manager | 499 | 368 | 0 | 0 | 0 | ✓ |
-| 25 | Azure Native Integrations | 80 | 19 | 0 | 0 | 0 | ✓ |
+| 25 | Azure Native Integrations | 80 | 19 | 0 | 1 | 0 | ✓ |
 | 26 | SignalR Service | 73 | 56 | 0 | 0 | 0 | ✓ |
 | 27 | BareMetal Infrastructure | 8 | 1 | 0 | 0 | 0 | ✓ |
-| 28 | Backup | 391 | 278 | 0 | 0 | 0 | ✓ |
+| 28 | Backup | 391 | 278 | 0 | 13 | 0 | ✓ |
 | 29 | Batch | 114 | 79 | 0 | 0 | 0 | ✓ |
 | 30 | Biztalk Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 31 | Bot Service | 190 | 127 | 0 | 0 | 0 | ✓ |
+| 31 | Bot Service | 100 | 64 | 0 | 0 | 90 | ✓ |
 | 32 | Cache | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 33 | SAP on Azure | 202 | 168 | 0 | 0 | 0 | ✓ |
-| 34 | AI Services | 383 | 267 | 0 | 0 | 0 | ✓ |
-| 35 | Communication Services | 515 | 380 | 0 | 0 | 0 | ✓ |
-| 36 | Container Apps | 192 | 116 | 0 | 0 | 0 | ✓ |
-| 37 | CycleCloud | 110 | 84 | 0 | 0 | 0 | ✓ |
+| 33 | SAP on Azure | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 34 | AI Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 35 | Communication Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 36 | Container Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 37 | CycleCloud | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 38 | Storage | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 39 | Data Factory | 538 | 439 | 0 | 0 | 0 | ✓ |
-| 40 | Azure Data Manager for Energy | 50 | 23 | 0 | 0 | 0 | ✓ |
-| 41 | Data Manager for Agriculture | 26 | 12 | 0 | 0 | 0 | ✓ |
-| 42 | Azure DevTest Labs | 98 | 69 | 0 | 0 | 0 | ✓ |
-| 43 | Governance | 212 | 155 | 0 | 0 | 0 | ✓ |
-| 44 | Guidance | 364 | 267 | 0 | 0 | 0 | ✓ |
-| 45 | HDInsight | 427 | 319 | 0 | 0 | 0 | ✓ |
-| 46 | Health Data Services | 210 | 134 | 0 | 0 | 0 | ✓ |
-| 47 | Health Insights | 39 | 11 | 0 | 0 | 0 | ✓ |
-| 48 | Jenkins | 13 | 12 | 0 | 0 | 0 | ✓ |
-| 49 | Lab Services | 104 | 66 | 0 | 0 | 0 | ✓ |
-| 50 | Azure Business Process Tracking | 6 | 3 | 0 | 0 | 0 | ✓ |
-| 51 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | ✓ |
-| 52 | Azure Logic Apps | 200 | 141 | 0 | 0 | 0 | ✓ |
-| 53 | Machine Learning | 532 | 390 | 0 | 0 | 0 | ✓ |
+| 39 | Data Factory | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 40 | Azure Data Manager for Energy | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 41 | Data Manager for Agriculture | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 42 | Azure DevTest Labs | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 43 | Governance | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 44 | Guidance | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 45 | HDInsight | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 46 | Health Data Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 47 | Health Insights | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 48 | Jenkins | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 49 | Lab Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 50 | Azure Business Process Tracking | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 51 | Azure Integration Environments | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 52 | Azure Logic Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 53 | Machine Learning | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 54 | Messaging services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 55 | Migrate | 144 | 86 | 0 | 0 | 0 | ✓ |
+| 55 | Migrate | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 56 | Mobile Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 57 | Networking | 22 | 12 | 0 | 0 | 0 | ✓ |
-| 58 | Network Function Manager | 8 | 1 | 0 | 0 | 0 | ✓ |
-| 59 | Notification Hubs | 67 | 51 | 0 | 0 | 0 | ✓ |
+| 57 | Networking | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 58 | Network Function Manager | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 59 | Notification Hubs | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 60 | Operations Management Suite | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 61 | Private Link | 49 | 17 | 0 | 0 | 0 | ✓ |
-| 62 | Role-based access control | 104 | 95 | 0 | 0 | 0 | ✓ |
-| 63 | Scheduler | 1 | 1 | 0 | 0 | 0 | ✓ |
-| 64 | Security | 111 | 43 | 0 | 0 | 0 | ✓ |
-| 65 | Site Recovery | 202 | 122 | 0 | 0 | 0 | ✓ |
+| 61 | Private Link | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 62 | Role-based access control | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 63 | Scheduler | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 64 | Security | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 65 | Site Recovery | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 66 | Site Reliability Engineering | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 67 | Synapse Analytics | 382 | 250 | 0 | 0 | 0 | ✓ |
-| 68 | Azure SQL | 583 | 438 | 0 | 0 | 0 | ✓ |
-| 69 | SQL Server Stretch Database | 583 | 423 | 0 | 0 | 0 | ✓ |
-| 70 | SRE Agent | 25 | 15 | 0 | 0 | 0 | ✓ |
-| 71 | Storage | 513 | 376 | 0 | 0 | 0 | ✓ |
-| 72 | Stream Analytics | 168 | 105 | 0 | 0 | 0 | ✓ |
-| 73 | Virtual Machines | 720 | 566 | 0 | 0 | 0 | ✓ |
-| 74 | Confidential Computing | 69 | 39 | 0 | 0 | 0 | ✓ |
-| 75 | Virtual Desktop | 147 | 114 | 0 | 0 | 0 | ✓ |
-| 76 | CM+B | 261 | 170 | 0 | 0 | 0 | ✓ |
-| 77 | Azure DevTest offer (Visual Studio subscriber benefit) | 12 | 3 | 0 | 0 | 0 | ✓ |
-| 78 | Service Connector | 63 | 36 | 0 | 0 | 0 | ✓ |
+| 67 | Synapse Analytics | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 68 | Azure SQL | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 69 | SQL Server Stretch Database | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 70 | SRE Agent | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 71 | Storage | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 72 | Stream Analytics | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 73 | Virtual Machines | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 74 | Confidential Computing | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 75 | Virtual Desktop | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 76 | CM+B | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 77 | Azure DevTest offer (Visual Studio subscriber benefit) | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 78 | Service Connector | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 79 | Load Testing | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 80 | Playwright Testing | 22 | 17 | 0 | 0 | 0 | ✓ |
-| 81 | Azure Spring Apps | 152 | 117 | 0 | 0 | 0 | ✓ |
-| 82 | Dev Box | 65 | 43 | 0 | 0 | 0 | ✓ |
-| 83 | Azure Deployment Environments | 32 | 21 | 0 | 0 | 0 | ✓ |
-| 84 | Operator Nexus | 207 | 155 | 0 | 0 | 0 | ✓ |
-| 85 | Operator Service Manager | 47 | 27 | 0 | 0 | 0 | ✓ |
-| 86 | Redis | 60 | 44 | 0 | 0 | 0 | ✓ |
+| 80 | Playwright Testing | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 81 | Azure Spring Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 82 | Dev Box | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 83 | Azure Deployment Environments | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 84 | Operator Nexus | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 85 | Operator Service Manager | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 86 | Redis | 0 | 0 | 0 | 0 | 0 | ✓ |
 
 ### Totals
 
 - **Products Processed**: 86 success, 0 failed
-- **Total Pages**: 13619
-- **Total Classified**: 9671
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
-- **Total Deleted Pages**: 0
+- **Total Pages**: 4493
+- **Total Classified**: 3168
+- **Total New Pages**: 14
+- **Total Updated Pages**: 36
+- **Total Deleted Pages**: 96
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 335 |
-| best-practices | 659 |
-| configuration | 2535 |
-| decision-making | 770 |
-| deployment | 547 |
-| integrations | 1870 |
-| limits-quotas | 568 |
-| security | 1514 |
-| troubleshooting | 873 |
+| architecture-patterns | 79 |
+| best-practices | 252 |
+| configuration | 866 |
+| decision-making | 216 |
+| deployment | 196 |
+| integrations | 653 |
+| limits-quotas | 155 |
+| security | 460 |
+| troubleshooting | 291 |
 
 ---
 

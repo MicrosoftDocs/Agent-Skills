@@ -8,6 +8,13 @@
 - **Classified**: 84
 - **Unclassified**: 52
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 136
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -21,6 +28,8 @@
 | security | 19 | 14.0% |
 | troubleshooting | 13 | 9.6% |
 | *(Unclassified)* | 52 | 38.2% |
+
+## Changes
 
 ## Classified Pages
 

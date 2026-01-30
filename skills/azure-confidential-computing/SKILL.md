@@ -3,7 +3,7 @@ name: azure-confidential-computing
 description: Expert knowledge for Azure Confidential Computing development including security, decision making, architecture & design patterns, deployment, configuration, troubleshooting, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Confidential Computing applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Confidential Computing Skill
 
@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Troubleshooting AKS confidential node issues: setup and deployment failures, enclave/TEE errors, limitations, performance, compatibility, and common FAQ-based fixes. |
-| Decision Making | L36-L49 | Guidance on choosing Azure confidential computing options: VMs (CPU/GPU), containers, AI services, clean rooms, and multiparty analytics across AMD/Intel and deployment models. |
-| Architecture & Design Patterns | L50-L54 | Solution blueprints and patterns for designing, integrating, and deploying applications using Azure confidential computing enclaves and TEEs across common architectures |
-| Security | L55-L70 | Security, attestation, and key/secrets management for confidential VMs/containers, including guest attestation, vTPM, CMK rotation, hardening images, and Secure Key Release policies. |
-| Configuration | L71-L77 | Configuring confidential workloads on Azure: AKS confidential containers and Intel SGX plugins, plus setup and use of Metablob disks for confidential VMs. |
-| Integrations & Coding Patterns | L78-L86 | Patterns and code samples for building and integrating confidential apps: SGX enclave development, guest attestation, Fortanix CCM, and Secure Key Release on VMs and containers. |
-| Deployment | L87-L96 | Guides for deploying and managing Azure confidential VMs/VMSS, SGX enclaves, AKS confidential node pools, custom images, region migration, and Fortanix CCM managed apps. |
+| Troubleshooting | L31-L35 | Troubleshooting and FAQs for AKS confidential computing nodes, including setup issues, node/extension failures, limitations, and common errors when running confidential workloads. |
+| Decision Making | L36-L49 | Guidance on choosing Azure confidential VMs, GPUs, containers, clean rooms, and multiparty analytics models, including CPU vendor options and when to use each deployment approach. |
+| Architecture & Design Patterns | L50-L54 | Solution blueprints and reference architectures for building, integrating, and scaling applications using Azure confidential computing and enclave-based security patterns |
+| Security | L55-L70 | Security, attestation, and key/secrets management for Azure confidential VMs/containers: guest attestation, vTPM, CMK rotation, hardening images, and Secure Key Release policies. |
+| Configuration | L71-L77 | Configuring Azure confidential workloads: AKS confidential containers and Intel SGX device plugin setup, plus enabling and managing Metablob disks for confidential VMs. |
+| Integrations & Coding Patterns | L78-L86 | Patterns and samples for building and integrating enclave/VM/container apps with SGX, SEV-SNP, Fortanix, and Secure Key Release in Azure Confidential Computing. |
+| Deployment | L87-L96 | How to deploy and migrate Azure confidential VMs/VMSS, SGX enclaves, AKS confidential node pools, custom images, and Fortanix CCM for secure, hardware-backed workloads |
 
 ### Troubleshooting
 | Topic | URL |

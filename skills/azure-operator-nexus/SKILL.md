@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including configuration, security, troubleshooting, limits & quotas, decision making, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Operator Nexus Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L77 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes clusters/pods, provisioning, connectivity, and health/alert problems, with data collection tools. |
-| Best Practices | L78-L82 | Guidance on managing Azure Operator Nexus bare metal servers: provisioning, firmware/BIOS updates, maintenance, replacement, and lifecycle best practices for reliable operations. |
-| Decision Making | L83-L94 | Guidance on choosing Nexus SKUs and storage appliances, planning Kubernetes versions and VM sizes, and aligning software/runtime versions and upgrades with Operator Nexus releases. |
-| Limits & Quotas | L95-L102 | Storage class limits, NFC/CM capacity planning, and technical quotas for isolation domains and overall Azure Operator Nexus deployments. |
-| Security | L103-L133 | Securing Nexus fabric, clusters, and VMs: RBAC, managed identities, SSH/serial access, ACLs, break-glass, Defender/MDE, Key Vault/secret rotation, and Azure Policy security controls. |
-| Configuration | L134-L197 | Configuring and operating Azure Operator Nexus: ARM templates, fabric and CE/PE device settings, routing/BGP/QoS, Kubernetes cluster/node tuning, observability, lifecycle, and security. |
-| Integrations & Coding Patterns | L198-L207 | CLI-based configuration of Nexus networking: IP prefixes, route policies, L2/L3 isolation domains, Network Fabric management, and packet broker/TAP rule setup. |
-| Deployment | L208-L217 | Upgrading and decommissioning Azure Operator Nexus: runtime and fabric upgrade workflows, parameterized templates, PauseAfterRack strategy, prevalidation steps, and safe instance teardown. |
+| Troubleshooting | L32-L77 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes clusters/pods, connectivity, provisioning, health alerts, and data collection for support. |
+| Best Practices | L78-L82 | Guidance for planning, executing, and troubleshooting Azure Operator Nexus bare metal lifecycle tasks like deployment, upgrades, maintenance, and hardware operations. |
+| Decision Making | L83-L94 | Guidance on choosing Nexus compute/storage SKUs, planning storage appliance deployment and versions, and managing Kubernetes/platform versioning, upgrades, and supported releases. |
+| Limits & Quotas | L95-L102 | Storage class limits, NFC/CM capacity planning, and technical quotas for Nexus isolation domains and overall Azure Operator Nexus resource scaling. |
+| Security | L103-L133 | Securing Nexus fabric, clusters, and VMs: RBAC, identities, SSH/serial access, ACLs, break-glass, Defender/MDE, Key Vault/secret rotation, and Azure Policy-based hardening. |
+| Configuration | L134-L197 | Configuring and operating Azure Operator Nexus: ARM templates, cluster and fabric settings, routing/BGP/QoS, isolation domains, observability, lifecycle, and Kubernetes/VM customization. |
+| Integrations & Coding Patterns | L198-L207 | Managing Nexus network configuration via CLI: IP prefixes, route policies, L2/L3 isolation domains, fabric control, and packet broker/TAP rule setup and automation |
+| Deployment | L208-L217 | Upgrading and decommissioning Azure Operator Nexus: runtime and fabric upgrade flows, parameterized templates, PauseAfterRack strategy, prevalidation steps, and safe instance teardown. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -8,12 +8,21 @@
 - **Classified**: 1
 - **Unclassified**: 22
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-internet-peering/azure-internet-peering.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | troubleshooting | 1 | 4.3% |
 | *(Unclassified)* | 22 | 95.7% |
+
+## Changes
 
 ## Classified Pages
 

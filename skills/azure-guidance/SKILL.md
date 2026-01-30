@@ -3,7 +3,7 @@ name: azure-guidance
 description: Expert knowledge for Azure Guidance development including decision making, best practices, security, architecture & design patterns, troubleshooting, deployment, and configuration. Use when building, debugging, or optimizing Azure Guidance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Guidance Skill
 
@@ -22,11 +22,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
 | Best Practices | L45-L77 | Best practices for designing, operating, and scaling resilient, high‑availability Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including performance, DR, patching, backup, and chaos/load testing. |
-| Decision Making | L78-L139 | Guidance for choosing Azure services, architectures, and equivalents (esp. vs AWS/GCP) for compute, data, AI, containers/AKS, networking, storage, DR, and microservices workloads. |
-| Architecture & Design Patterns | L140-L276 | End-to-end Azure solution architectures and design patterns for mission-critical, hybrid, data, IoT, microservices, mainframe migration, SAP, VDI, and DR/BCDR workloads. |
-| Security | L277-L306 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, AWS integration, Zero Trust, firewalls, WAF, identity/MFA, Defender XDR, Sentinel, and network access controls. |
-| Configuration | L307-L312 | Configuring GitOps for AKS using Flux or Argo CD, and setting up Azure Functions monitoring pipelines via Event Hubs for logs and metrics. |
-| Deployment | L313-L324 | Designing and automating Azure deployments and CI/CD (AKS, APIs, landing zones, Terraform, Bicep), including mission‑critical rollout patterns and governance tooling. |
+| Decision Making | L78-L139 | Guidance for choosing the right Azure services, data/AI platforms, and compute options (often vs AWS/GCP/EKS), including migration, governance, networking, and cost trade-offs. |
+| Architecture & Design Patterns | L140-L276 | End-to-end Azure solution architectures and patterns for data/analytics, mission-critical apps, microservices, hybrid/edge, mainframe migration, SAP/IBM workloads, and enterprise integration/DR. |
+| Security | L277-L306 | Securing Azure workloads and hybrid/cloud environments: AKS, VMs, SAP, Outlook, identity/Zero Trust, network/firewall/WAF, Defender/Sentinel/XDR, and Microsoft security for AWS. |
+| Configuration | L307-L312 | Guides for configuring GitOps workflows on AKS (Flux, Argo CD) and setting up monitoring pipelines for Azure Functions using Event Hubs. |
+| Deployment | L313-L324 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zones, governance tooling, and mission‑critical rollout/testing. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -3,7 +3,7 @@ name: azure-vmware
 description: Expert knowledge for Azure Vmware development including configuration, architecture & design patterns, decision making, security, troubleshooting, best practices, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Vmware applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Vmware Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and resolving common Azure VMware Solution deployment/runtime issues, error codes, and how to collect logs and open support cases for AVS deployment failures. |
-| Best Practices | L38-L44 | Best practices for AVS operations: safely maintaining private clouds, optimizing NSX scale/performance for HCX migrations, and configuring HCX Mobility Optimized Networking. |
-| Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instance, HCX, API Management, and multi-region strategies for VMware workloads in Azure |
-| Architecture & Design Patterns | L58-L78 | Designing AVS private cloud architectures: network topologies, connectivity (on-prem/Azure/internet), storage & vSAN, multi-cloud/Gen2 links, and patterns for Horizon, Citrix, GitHub, and Cloud Director |
-| Limits & Quotas | L79-L88 | AVS capacity limits for hosts, clusters, routing, and external storage, plus how to deploy, scale, and request/manage host quota within those documented limits. |
-| Security | L89-L102 | Securing Azure VMware Solution: identity/role setup, Defender for Cloud, CMK for vSAN, external identity for NSX/vCenter, Trusted Launch/vTPM, service principals, credential rotation, and best‑practice hardening |
-| Configuration | L103-L153 | Configuring AVS environments: storage/datastores, networking (NSX, routing, DNS/DHCP, HCX), backup/DR, Arc/monitoring, security/licensing, and operational policies for AVS VMs and clusters. |
-| Integrations & Coding Patterns | L154-L168 | Networking, HCX setup/migration, VPN/vWAN, and integrating AVS workloads with Azure services like Traffic Manager, App Gateway, Aria Operations, and VMware Cloud Director. |
+| Troubleshooting | L32-L37 | Diagnosing and resolving Azure VMware Solution deployment and platform issues, including known errors, workarounds, and how to collect logs and open support tickets. |
+| Best Practices | L38-L44 | Best practices for AVS operations: tuning NSX/HCX for migration scale and performance, safe private cloud maintenance, and using HCX Mobility Optimized Networking in Azure VMware Solution. |
+| Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instance, HCX, API Management, and multi-region strategies for VMware workloads in Azure. |
+| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-and-spoke, internet/on-prem connectivity, Gen1/Gen2 linking, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub Enterprise. |
+| Limits & Quotas | L79-L88 | AVS capacity, host/cluster and routing limits, external storage planning, quota requests, and how to deploy/scale private clouds within documented resource constraints. |
+| Security | L89-L102 | Securing Azure VMware Solution: identity/role setup, NSX/vCenter auth, Defender for Cloud, vSAN CMK encryption, Trusted Launch/vTPM, service principals, credential rotation, and hardening guidance |
+| Configuration | L103-L153 | Configuring AVS infrastructure: networking, storage/datastores, backup/DR, vSAN, NSX, DNS/DHCP, Arc/guest management, logging, and interconnect/routing for Azure VMware Solution. |
+| Integrations & Coding Patterns | L154-L168 | Networking, VPN, and HCX setup for AVS; integrating AVS with Azure services (Traffic Manager, App Gateway, Aria Ops, vCD), and patterns for migration and inter-cloud connectivity. |
 
 ### Troubleshooting
 | Topic | URL |

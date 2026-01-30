@@ -3,7 +3,7 @@ name: azure-logic-apps
 description: Expert knowledge for Azure Logic Apps development including integrations & coding patterns, limits & quotas, security, deployment, decision making, configuration, architecture & design patterns, best practices, and troubleshooting. Use when building, debugging, or optimizing Azure Logic Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Logic Apps Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L48 | Diagnosing and fixing Logic Apps issues: throttling/HTTP 429, workflow failures, B2B/EDI (AS2, EDIFACT, X12) acknowledgments and errors, plus health metrics, run history, and test error details. |
-| Best Practices | L49-L58 | Designing robust Logic Apps: error/exception patterns, control function optimizations, Rules Engine performance, and generating/mocking unit tests from workflow definitions and runs. |
+| Troubleshooting | L33-L48 | Diagnosing and fixing Logic Apps issues: throttling/429s, workflow failures, B2B/AS2/X12/EDIFACT errors, acknowledgments, test error details, and monitoring via metrics, run history, and alerts. |
+| Best Practices | L49-L58 | Error handling patterns, control/Rules Engine optimization, and techniques for generating and running unit tests and mocks for Logic Apps Standard workflows. |
 | Decision Making | L59-L70 | Guidance on choosing Logic Apps vs other Azure integration tools, Standard vs Consumption, migration from BizTalk/Power Automate, and estimating/controlling Logic Apps costs and billing. |
-| Architecture & Design Patterns | L71-L85 | Patterns for AI agent workflows, DR/HA, multi-region and zone redundancy, Service Bus convoys, REST/web APIs, resource replication, and choosing single vs multi-agent designs. |
-| Limits & Quotas | L86-L94 | Logic Apps limits for message size, chunking, pagination, SQL result size/timeouts, inline JavaScript, and where to review and configure all runtime quotas and thresholds. |
-| Security | L95-L111 | Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy Auth), network isolation (VNets, private endpoints, private storage), B2B certs, and Azure Policy/compliance controls. |
-| Configuration | L112-L148 | Configuring Logic Apps runtime, connections, B2B/integration (EDI, AS2, X12, EDIFACT, SAP), WDL JSON, monitoring/telemetry, gateways, storage, and document transforms. |
-| Integrations & Coding Patterns | L149-L192 | Patterns and samples for integrating Logic Apps with AI agents, scripts, SAP/B2B/healthcare systems, Dataverse/DBs/APIs, and for building/testing custom connectors and rules. |
-| Deployment | L193-L208 | Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, CI/CD, DevOps, deployment slots, hybrid setups, and moving apps across subscriptions/regions. |
+| Architecture & Design Patterns | L71-L85 | Patterns for AI agent workflows, APIs, DR/HA, multi-region/zone designs, Service Bus convoys, and Logic Apps-based resource replication and multiagent orchestration. |
+| Limits & Quotas | L86-L94 | Logic Apps limits on message size, pagination, SQL results/timeouts, inline JavaScript, chunking, and where to review or configure quotas and runtime constraints. |
+| Security | L95-L111 | Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy Auth), private endpoints/storage, B2B certs, cross-tenant/connector blocking, and Azure Policy/Security Center logging. |
+| Configuration | L112-L148 | Configuring Logic Apps runtime, connections, B2B/integration artifacts, monitoring/telemetry, WDL definitions, and on-premises/SAP/MCP/SQL integration settings |
+| Integrations & Coding Patterns | L149-L192 | Patterns and samples for integrating Logic Apps with AI agents, scripts, SAP/B2B/healthcare systems, custom APIs/connectors, and for writing and testing inline code and workflow unit tests |
+| Deployment | L193-L208 | Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, DevOps/Deployment Center, deployment slots, and hybrid setups, plus moving apps across subscriptions and regions. |
 
 ### Troubleshooting
 | Topic | URL |

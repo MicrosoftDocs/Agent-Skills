@@ -8,6 +8,13 @@
 - **Classified**: 32
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 39
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-government/azure-government.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | integrations | 1 | 2.6% |
 | security | 6 | 15.4% |
 | *(Unclassified)* | 7 | 17.9% |
+
+## Changes
 
 ## Classified Pages
 

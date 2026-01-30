@@ -3,7 +3,7 @@ name: azure-avere-vfxt
 description: Expert knowledge for Azure Avere Vfxt development including configuration, best practices, decision making, security, and limits & quotas. Use when building, debugging, or optimizing Azure Avere Vfxt applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-29"
+  generated_at: "2026-01-30"
 ---
 # Azure Avere Vfxt Skill
 
@@ -20,11 +20,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L29-L35 | Guidance on optimizing Avere vFXT performance (ingest and cluster tuning) and designing disaster recovery strategies for Avere vFXT-based workflows. |
-| Decision Making | L36-L41 | Guidance on sizing and planning Avere vFXT clusters, capacity/performance considerations, and evaluating if Avere vFXT is suitable for specific workloads and architectures |
-| Limits & Quotas | L42-L46 | Preparing Azure subscriptions for Avere vFXT, including required quotas, limits, permissions, and how to request or adjust capacity before deployment |
-| Security | L47-L51 | Defining a custom Azure RBAC role with required permissions to securely deploy and manage Avere vFXT clusters in a subscription. |
-| Configuration | L52-L60 | Configuring vFXT clusters: backend storage, control panel access, DNS/load balancing, client mounts, node lifecycle, and automatic support data upload. |
+| Best Practices | L29-L35 | Guidance on optimizing Avere vFXT performance, tuning cluster settings, and designing disaster recovery strategies for high-throughput, resilient workflows. |
+| Decision Making | L36-L41 | Guidance on sizing and planning Avere vFXT clusters, capacity/performance considerations, and evaluating if Avere vFXT is appropriate for your specific workload and architecture. |
+| Limits & Quotas | L42-L46 | Preparing Azure subscriptions for Avere vFXT, including required quotas, limits, permissions, and configuration steps before deploying a vFXT cluster. |
+| Security | L47-L51 | Creating a custom Azure RBAC role with the exact permissions needed to deploy and manage Avere vFXT clusters securely in a subscription. |
+| Configuration | L52-L60 | Configuring Avere vFXT clusters: backend storage, control panel access, DNS/load balancing, client mounts, node lifecycle, and automatic support data upload. |
 
 ### Best Practices
 | Topic | URL |
