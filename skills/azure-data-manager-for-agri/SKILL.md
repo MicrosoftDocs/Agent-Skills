@@ -3,7 +3,7 @@ name: azure-data-manager-for-agri
 description: Expert knowledge for Azure Data Manager For Agri development including limits & quotas, integrations & coding patterns, configuration, and security. Use when building, debugging, or optimizing Azure Data Manager For Agri applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Data Manager For Agri Skill
 
@@ -20,10 +20,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L28-L32 | Details on API rate limits in Azure Data Manager for Agriculture, how throttling works, and strategies to plan, monitor, and manage requests within those limits. |
-| Security | L33-L37 | Configuring Azure Private Link for Azure Data Manager for Agriculture, including creating private endpoints, securing network access, and integrating with virtual networks. |
-| Configuration | L38-L43 | Configuring diagnostics, logging, and Event Grid event schemas for Azure Data Manager for Agriculture, including how to emit, structure, and consume platform events. |
-| Integrations & Coding Patterns | L44-L54 | Patterns and setup for integrating farm activities, sensors, ISV apps, and plant tissue data with Azure Data Manager for Agri, plus using Event Grid events for downstream processing. |
+| Limits & Quotas | L28-L32 | Managing API throttling limits in Azure Data Manager for Agriculture, including default rate limits, how throttling works, and strategies to plan, monitor, and avoid hitting quotas. |
+| Security | L33-L37 | Configuring Private Link endpoints for Azure Data Manager for Agriculture, including network isolation, secure access patterns, and integration with virtual networks. |
+| Configuration | L38-L43 | Configuring diagnostics and logging for Azure Data Manager for Agriculture, and using its Azure Event Grid event schemas to handle and integrate platform events. |
+| Integrations & Coding Patterns | L44-L54 | Patterns and setup for integrating farm activities, sensors, ISV apps, and plant tissue data with Azure Data Manager for Agri, plus using its events via Event Grid. |
 
 ### Limits & Quotas
 | Topic | URL |

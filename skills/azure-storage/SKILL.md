@@ -3,7 +3,7 @@ name: azure-storage
 description: Expert knowledge for Azure Storage development including best practices, configuration, decision making, security, limits & quotas, integrations & coding patterns, troubleshooting, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Storage applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Storage Skill
 
@@ -20,20 +20,20 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing issues with BlobFuse2 mounts, lifecycle management policy runs, Azure Container Storage v1, and Azure Elastic SAN connectivity and performance |
-| Best Practices | L41-L85 | Performance, reliability, monitoring, and resiliency best practices for Blob, Data Lake, Files, Queues, and Tables, including tuning, retries, DR, and workload-specific optimization. |
-| Decision Making | L86-L125 | Cost estimation, pricing models, and design choices for Azure Blob, Data Lake, Files, Elastic SAN, and Container Storage, including tiers, redundancy, migration, DR, and optimization. |
-| Architecture & Design Patterns | L126-L136 | Patterns for scalable, query-efficient Azure Table storage schema design, data modeling and relationships, plus guidance for clustered apps using shared Elastic SAN volumes. |
-| Limits & Quotas | L137-L164 | Limits, quotas, performance targets, and retention/behavior rules for Azure Storage (Blob, Data Lake, Files, Queues, Tables, Elastic SAN), including SLAs, throttling, and known limitations |
-| Security | L165-L241 | Securing Azure Storage data: auth with Entra ID/RBAC/ABAC, SAS tokens, ACLs, encryption (CMEK/CSE/BlobFuse2), SFTP, VPN/endpoints, and security best practices for Blobs, Files, Queues, Tables, Elastic SAN. |
-| Configuration | L242-L315 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, BlobFuse/ABFS/NFS/SFTP, static sites, Azure Files mounts/migration, File Sync, and monitoring/metrics/logs. |
-| Integrations & Coding Patterns | L316-L434 | Patterns and code samples for integrating Azure Storage with apps and analytics: mounting, ETL, encryption, SAS, leases, tiers, and full CRUD for blobs, ADLS Gen2, Files, Queues, and Tables. |
-| Deployment | L435-L443 | Guides for deploying and configuring storage: static websites on Blob (GitHub Actions, Terraform), enabling ADLS Gen2 via ARM, and deploying/migrating Azure File Sync. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing issues with BlobFuse mounts/I/O, lifecycle management policy runs, Azure Container Storage v1 behavior, and common Azure Elastic SAN performance or reliability problems. |
+| Best Practices | L41-L85 | Performance, reliability, and monitoring best practices for Blob, Data Lake, Files, Queues, and Tables, including tuning, retries, lifecycle, DR, and workload-specific optimization. |
+| Decision Making | L86-L127 | Cost, performance, and architecture decisions for Azure Storage: choosing tiers, redundancy, billing models, migration approaches, and data protection options across Blob, Data Lake, Files, and Elastic SAN. |
+| Architecture & Design Patterns | L128-L138 | Patterns for designing Azure Table storage schemas, queries, and relationships, plus guidance for scalable, performant clustered apps using shared Elastic SAN volumes. |
+| Limits & Quotas | L139-L167 | Limits, quotas, and performance targets for Azure Storage services (Blob, Files, Queues, Tables), including soft delete, versioning, archive/rehydrate, NFS/SFTP, and Elastic SAN constraints. |
+| Security | L168-L244 | Securing Azure Storage data: configuring auth (Entra ID, RBAC, ABAC, SAS), ACLs, encryption (CMEK, CPK, client-side), networking/VPN, SFTP, and security best practices for blobs, files, queues, tables. |
+| Configuration | L245-L321 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, BlobFuse, NFS/SFTP, static sites, monitoring/metrics, Azure Files/File Sync, queues, and tables. |
+| Integrations & Coding Patterns | L322-L441 | Patterns and code samples for integrating Azure Storage with apps and services: mounting, ETL/query, encryption, SAS, leases, tiers, and full CRUD for blobs, ADLS Gen2, Files, Queues, and Tables. |
+| Deployment | L442-L450 | Deploying and configuring Azure Storage workloads: static website hosting (GitHub Actions, Terraform), enabling ADLS Gen2, and deploying/migrating Azure File Sync and file shares. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common BlobFuse2 mounting and access issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-troubleshooting |
+| Troubleshoot common BlobFuse mounting and I/O issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-troubleshooting |
 | Monitor and diagnose lifecycle management policy runs | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-monitor |
 | Diagnose and fix Azure Container Storage v1 issues | https://learn.microsoft.com/en-us/azure/storage/container-storage/troubleshoot-container-storage |
 | Troubleshoot common Azure Elastic SAN issues | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-troubleshoot |
@@ -77,7 +77,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Work efficiently with large directories on Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/nfs-large-directories |
 | Tune NFS Azure file share performance at scale | https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance |
 | Improve performance of premium SMB Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/smb-performance |
-| Optimize Azure Files performance for IOPS, throughput, and latency | https://learn.microsoft.com/en-us/azure/storage/files/understand-performance |
+| Optimize Azure Files performance for workloads | https://learn.microsoft.com/en-us/azure/storage/files/understand-performance |
 | Optimize Azure Files for virtual desktop workloads | https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads |
 | Best practices for monitoring Azure Queue Storage | https://learn.microsoft.com/en-us/azure/storage/queues/queues-storage-monitoring-scenarios |
 | Optimize Azure Queue Storage performance and scalability | https://learn.microsoft.com/en-us/azure/storage/queues/storage-performance-checklist |
@@ -90,6 +90,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Estimate Azure Blob archive storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
 | Estimate Azure Blob Storage usage and transaction costs | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs |
+| Compare BlobFuse and native Linux file systems | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-compare-linux-file-system |
+| Choose BlobFuse streaming or caching mode | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-streaming-versus-caching |
 | Estimate costs to retrieve and analyze archived blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-copy-blob |
 | Estimate costs to move data from archive tier | https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-set-tier |
 | Estimate cross-region Azure Blob data access costs | https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-multi-region-access |
@@ -107,8 +109,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose Elastic SAN options for Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-aks-options |
 | Plan capacity and redundancy for Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-planning |
 | Choose Azure File Sync cloud tiering policy settings | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-choose-cloud-tiering-policies |
-| Plan and choose deployment options for Azure File Sync | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning |
 | Plan Azure File Sync resource moves and topology changes | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-resource-move |
+| Choose performance tier and create classic Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share |
+| Decide when to use Microsoft.FileShares file shares | https://learn.microsoft.com/en-us/azure/storage/files/create-file-share |
 | Estimate Azure Files costs across billing models | https://learn.microsoft.com/en-us/azure/storage/files/file-estimate-cost |
 | Plan disaster recovery and failover for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery |
 | Choose Azure Files redundancy options for availability and DR | https://learn.microsoft.com/en-us/azure/storage/files/files-redundancy |
@@ -119,8 +122,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose migration approaches for SMB Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview |
 | Choose between Azure Files and Azure NetApp Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-netapp-comparison |
 | Plan and choose an Azure Files deployment model | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning |
-| Understand and choose Azure Files billing models and tiers | https://learn.microsoft.com/en-us/azure/storage/files/understanding-billing |
-| Replace Windows file servers with Azure Files and Sync | https://learn.microsoft.com/en-us/azure/storage/files/windows-server-to-azure-files |
+| Choose Azure Files billing and redundancy options | https://learn.microsoft.com/en-us/azure/storage/files/understanding-billing |
 | Decide when to use zonal placement for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement |
 
 ### Architecture & Design Patterns
@@ -139,6 +141,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Archive blobs and understand minimum retention rules | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-blob |
 | Rehydrate archived blobs and manage rehydration SLAs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-to-online-tier |
+| Understand BlobFuse limitations and known issues | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-known-issues |
 | Review limitations and known issues for Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues |
 | Understand NFS 3.0 limitations and known issues in Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues |
 | Use priority replication SLAs for Azure Blob object replication | https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication |
@@ -256,9 +259,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use blobfuse2 unmount to remove mount points | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount |
 | Use blobfuse2 unmount all for bulk unmounting | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-unmount-all |
 | Check BlobFuse2 version and updates via CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-version |
-| Configure BlobFuse2 settings for Azure Blob mounts | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configuration |
-| Configure BlobFuse2 Health Monitor for mount insights | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-health-monitor |
-| Install and configure BlobFuse2 to mount blob containers | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-how-to-deploy |
+| Configure BlobFuse settings via YAML and environment variables | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configuration |
+| Create and customize BlobFuse configuration files | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure |
+| Configure BlobFuse caching mode and optimize usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-caching |
+| Configure BlobFuse for streaming mode workloads | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-configure-streaming |
+| Configure logging options for BlobFuse mounts | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-enable-logs |
+| Enable and use BlobFuse health monitoring | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-health-monitor |
 | Use ABFS URI syntax for Data Lake Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction-abfs-uri |
 | Create and configure encryption scopes for Blob storage | https://learn.microsoft.com/en-us/azure/storage/blobs/encryption-scope-manage |
 | Define lifecycle policies to tier Azure blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-access-tiers |
@@ -275,7 +281,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Check blob encryption status using Azure tools | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-encryption-status |
 | Enable and configure static website hosting in Azure Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to |
 | Configure custom domains for Azure Blob and static sites | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name |
-| Configure BlobFuse v1 to mount Azure Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-how-to-mount-container-linux |
 | Configure Azurite for automated Blob Storage testing | https://learn.microsoft.com/en-us/azure/storage/blobs/use-azurite-to-run-automated-tests |
 | Enable and manage Azure blob versioning | https://learn.microsoft.com/en-us/azure/storage/blobs/versioning-enable |
 | Configure storage pool parameters for Azure Container Storage v1 | https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-storage-pool-parameters |
@@ -295,6 +300,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Change Azure Files redundancy configuration on existing accounts | https://learn.microsoft.com/en-us/azure/storage/files/files-change-redundancy-configuration |
 | Migrate between SMB Azure file shares with Robocopy | https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-between-shares |
 | Migrate to Azure Files using Azure Storage Mover | https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-storage-mover |
+| Configure size and performance of Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share |
 | Mount NFS Azure file shares on Linux | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-how-to-mount-nfs-shares |
 | Migrate Linux file services to Azure File Sync hybrid | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-linux-hybrid |
 | Migrate on-premises NAS to Azure Files with Data Box | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-cloud-databox |
@@ -319,7 +325,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Trigger Azure Functions from blob rehydration events | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-handle-event |
 | Manage Azure block blobs using Azure CLI | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-cli |
 | Manage Azure block blobs using PowerShell commands | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-powershell |
-| Use BlobFuse2 commands to manage Azure Blob mounts | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands |
+| Use BlobFuse2 commands to mount Azure Blobs | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands |
 | Mount Azure Blob containers on Linux with blobfuse2 mount | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount |
 | Mount all Azure Blob containers using blobfuse2 | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount-all |
 | List BlobFuse2 mount points with blobfuse2 mount list | https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-mount-list |
@@ -418,6 +424,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | List Azure blobs using JavaScript client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list-javascript |
 | List Azure blobs with Python client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list-python |
 | Encrypt and decrypt blobs using Azure Key Vault keys | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-encrypt-decrypt-blobs-key-vault |
+| Mount Azure Blob Storage on Linux with BlobFuse v1 | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-how-to-mount-container-linux |
 | Create and list Azure blob versions with .NET | https://learn.microsoft.com/en-us/azure/storage/blobs/versions-manage-dotnet |
 | Use Container Storage v1 with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san |
 | Integrate Container Storage v1 with Azure managed disks | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-managed-disks |

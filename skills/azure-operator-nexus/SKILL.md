@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including configuration, security, troubleshooting, limits & quotas, decision making, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Operator Nexus Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L77 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes clusters/pods, connectivity, provisioning, health alerts, and data collection for support. |
-| Best Practices | L78-L82 | Guidance for planning, executing, and troubleshooting Azure Operator Nexus bare metal lifecycle tasks like deployment, upgrades, maintenance, and hardware operations. |
-| Decision Making | L83-L94 | Guidance on choosing Nexus compute/storage SKUs, planning storage appliance deployment and versions, and managing Kubernetes/platform versioning, upgrades, and supported releases. |
-| Limits & Quotas | L95-L102 | Storage class limits, NFC/CM capacity planning, and technical quotas for Nexus isolation domains and overall Azure Operator Nexus resource scaling. |
-| Security | L103-L133 | Securing Nexus fabric, clusters, and VMs: RBAC, identities, SSH/serial access, ACLs, break-glass, Defender/MDE, Key Vault/secret rotation, and Azure Policy-based hardening. |
-| Configuration | L134-L197 | Configuring and operating Azure Operator Nexus: ARM templates, cluster and fabric settings, routing/BGP/QoS, isolation domains, observability, lifecycle, and Kubernetes/VM customization. |
-| Integrations & Coding Patterns | L198-L207 | Managing Nexus network configuration via CLI: IP prefixes, route policies, L2/L3 isolation domains, fabric control, and packet broker/TAP rule setup and automation |
-| Deployment | L208-L217 | Upgrading and decommissioning Azure Operator Nexus: runtime and fabric upgrade flows, parameterized templates, PauseAfterRack strategy, prevalidation steps, and safe instance teardown. |
+| Troubleshooting | L32-L77 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes clusters/pods, connectivity, provisioning, and collecting logs/diagnostics for support. |
+| Best Practices | L78-L82 | Guidance on planning, executing, and maintaining Azure Operator Nexus bare metal lifecycle operations, including provisioning, updates, monitoring, and reliability best practices. |
+| Decision Making | L83-L94 | Guidance on choosing Nexus storage appliances and compute SKUs, planning Kubernetes versions and upgrades, and aligning platform/software versions and lifecycles in Azure Operator Nexus. |
+| Limits & Quotas | L95-L102 | Storage class limits, NFC/CM capacity planning, and configuring technical limits/quotas for Nexus isolation domains and overall Azure Operator Nexus deployments. |
+| Security | L103-L133 | Securing Nexus fabric, clusters, and VMs: RBAC/identity, SSH/serial access, ACLs, break-glass methods, Defender/MDE, Key Vault & secret rotation, policies, and cross-subscription permissions. |
+| Configuration | L134-L197 | Configuring and operating Azure Operator Nexus: cluster/Cluster Manager templates, fabric/BGP/QoS/ACL policies, isolation domains, Kubernetes/VM settings, observability, lifecycle, and commit workflows. |
+| Integrations & Coding Patterns | L198-L207 | CLI-based configuration of Nexus Network Fabric: IP prefixes, route policies, L2/L3 isolation domains, cluster lifecycle, and packet broker/TAP rule setup and management |
+| Deployment | L208-L217 | Deploying, upgrading, and decommissioning Azure Operator Nexus instances and clusters, including parameterized templates, fabric/runtime upgrades, prevalidation, and safe upgrade strategies. |
 
 ### Troubleshooting
 | Topic | URL |

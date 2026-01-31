@@ -3,7 +3,7 @@ name: azure-vmware
 description: Expert knowledge for Azure Vmware development including configuration, architecture & design patterns, decision making, security, troubleshooting, best practices, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Vmware applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Vmware Skill
 
@@ -21,13 +21,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L32-L37 | Diagnosing and resolving Azure VMware Solution deployment and platform issues, including known errors, workarounds, and how to collect logs and open support tickets. |
-| Best Practices | L38-L44 | Best practices for AVS operations: tuning NSX/HCX for migration scale and performance, safe private cloud maintenance, and using HCX Mobility Optimized Networking in Azure VMware Solution. |
-| Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instance, HCX, API Management, and multi-region strategies for VMware workloads in Azure. |
-| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-and-spoke, internet/on-prem connectivity, Gen1/Gen2 linking, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub Enterprise. |
-| Limits & Quotas | L79-L88 | AVS capacity, host/cluster and routing limits, external storage planning, quota requests, and how to deploy/scale private clouds within documented resource constraints. |
-| Security | L89-L102 | Securing Azure VMware Solution: identity/role setup, NSX/vCenter auth, Defender for Cloud, vSAN CMK encryption, Trusted Launch/vTPM, service principals, credential rotation, and hardening guidance |
-| Configuration | L103-L153 | Configuring AVS infrastructure: networking, storage/datastores, backup/DR, vSAN, NSX, DNS/DHCP, Arc/guest management, logging, and interconnect/routing for Azure VMware Solution. |
-| Integrations & Coding Patterns | L154-L168 | Networking, VPN, and HCX setup for AVS; integrating AVS with Azure services (Traffic Manager, App Gateway, Aria Ops, vCD), and patterns for migration and inter-cloud connectivity. |
+| Best Practices | L38-L44 | Best practices for AVS networking: tuning NSX for HCX migration scale/perf, safely operating AVS private clouds, and configuring HCX Mobility Optimized Networking. |
+| Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instance, API Management, HCX options, and planning AVS resource moves across regions and VMware Cloud Foundation. |
+| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-and-spoke, internet and VNet connectivity, multi-cloud/Gen2, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub. |
+| Limits & Quotas | L79-L88 | AVS capacity, host/cluster and routing limits, external storage planning, and how to request, deploy, and scale private clouds within quota and documented scale constraints |
+| Security | L89-L102 | Securing AVS: identity/access roles, external identity sources, Defender for Cloud, vSAN CMK, Trusted Launch/vTPM, service principal/role setup, credential rotation, and security best practices. |
+| Configuration | L103-L153 | Configuring AVS environments: storage/datastores, networking (NSX, DHCP/DNS, routing, HCX), backup/DR, Arc/monitoring, security/licensing, and vCenter/ExpressRoute access and management. |
+| Integrations & Coding Patterns | L154-L168 | Configuring AVS integrations: HCX setup/migration, vWAN VPN, Traffic Manager, App Gateway, VMware Cloud Director/Aria, and connecting AVS workloads to Azure native services. |
 
 ### Troubleshooting
 | Topic | URL |

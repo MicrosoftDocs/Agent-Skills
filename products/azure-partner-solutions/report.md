@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 79
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -28,11 +28,6 @@
 | *(Unclassified)* | 61 | 76.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create Confluent resources](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/create-confluent-resources)
-  - Updated: 2025-09-02T17:11:00.000Z → 2026-01-28T08:00:00.000Z
 
 ## Classified Pages
 

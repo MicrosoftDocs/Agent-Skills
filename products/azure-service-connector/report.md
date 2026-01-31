@@ -8,6 +8,13 @@
 - **Classified**: 36
 - **Unclassified**: 27
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 63
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | security | 3 | 4.8% |
 | troubleshooting | 1 | 1.6% |
 | *(Unclassified)* | 27 | 42.9% |
+
+## Changes
 
 ## Classified Pages
 

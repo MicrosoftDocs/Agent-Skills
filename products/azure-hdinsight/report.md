@@ -8,6 +8,13 @@
 - **Classified**: 319
 - **Unclassified**: 108
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 427
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 39 | 9.1% |
 | troubleshooting | 93 | 21.8% |
 | *(Unclassified)* | 108 | 25.3% |
+
+## Changes
 
 ## Classified Pages
 

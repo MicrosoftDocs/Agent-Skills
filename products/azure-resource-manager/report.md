@@ -5,13 +5,13 @@
 - **Total Pages**: 499
 - **Fetched**: 499
 - **Fetch Failed**: 0
-- **Classified**: 368
-- **Unclassified**: 131
+- **Classified**: 367
+- **Unclassified**: 132
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 499
+- **Updated Pages**: 2
+- **Unchanged**: 497
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -21,16 +21,23 @@
 |------|-------|------------|
 | architecture-patterns | 4 | 0.8% |
 | best-practices | 42 | 8.4% |
-| configuration | 80 | 16.0% |
+| configuration | 79 | 15.8% |
 | decision-making | 23 | 4.6% |
 | deployment | 27 | 5.4% |
 | integrations | 41 | 8.2% |
 | limits-quotas | 26 | 5.2% |
 | security | 30 | 6.0% |
 | troubleshooting | 95 | 19.0% |
-| *(Unclassified)* | 131 | 26.3% |
+| *(Unclassified)* | 132 | 26.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Bicep file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/file)
+  - Updated: 2026-01-27T23:11:00.000Z → 2026-01-30T23:12:00.000Z
+- [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter)
+  - Updated: 2026-01-16T08:00:00.000Z → 2026-01-30T23:12:00.000Z
 
 ## Classified Pages
 
@@ -127,7 +134,6 @@
 | [BCP414](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp414) | troubleshooting | 0.80 | BCP414 describes an error when the ^ indexing operator is used on unsupported types (object, bool, int). This is a precise mapping from error ID/message to invalid usage and supported types, fitting troubleshooting. |
 | [BCP422](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp422) | troubleshooting | 0.80 | BCP422 warns when a function is called on a resource that may not exist, potentially causing deployment failure. The page ties this diagnostic to the underlying existence check semantics and how to avoid failures, which is specific troubleshooting guidance. |
 | [Bicep config file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config) | configuration | 0.80 | Describes the bicepconfig.json file, merge behavior with default config, and directory precedence rules, which are product-specific configuration semantics not obvious from general knowledge. |
-| [Bicep file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/file) | configuration | 0.80 | Defines Bicep file sections and allowed properties; effectively a configuration schema for Bicep files with specific keywords and constructs. |
 | [Bicep with MSBuild](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/msbuild-bicep-file) | integrations | 0.80 | Shows MSBuild task configuration, project file properties, and command-line parameters specific to Bicep-to-JSON conversion. |
 | [Collection functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-ui-definition-collection-functions) | configuration | 0.80 | Documents collection-related functions (for arrays/objects) available in createUiDefinition, including function names and usage, which are product-specific configuration primitives. |
 | [Conversion functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/create-ui-definition-conversion-functions) | configuration | 0.80 | Describes specific conversion functions between JSON data types/encodings for createUiDefinition, including function signatures and behavior, which are detailed configuration APIs. |
@@ -271,7 +277,7 @@
 | [Integrate Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-key-vault) | security | 0.70 | Product-specific pattern for referencing Key Vault secrets in ARM template parameter files, including secure parameter handling and Key Vault reference syntax; this is concrete security configuration guidance beyond generic concepts. |
 | [Lambda functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-lambda) | integrations | 0.70 | Explains Bicep lambda syntax, constraints (single-line, parameter rules), and version-specific support (CLI 0.10.x+), which are precise language and tooling details. |
 | [Lambda functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-lambda) | configuration | 0.70 | Explains ARM template lambda functions, including syntax and usage constraints. This is specialized language configuration for ARM templates. |
-| [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter) | best-practices | 0.70 | Linter documentation provides concrete, product-specific guidance on enforcing coding standards, including rule configuration and recommended patterns. |
+| [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter) | best-practices | 0.70 | The page documents product-specific linter rules and configuration for Bicep, including rule IDs, severities, and how to customize or suppress them. These are concrete, actionable coding standards and gotchas unique to Bicep rather than generic linting concepts, fitting the best-practices category. |
 | [Lock resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources) | security | 0.70 | Details specific lock types (Delete/Read-only vs CanNotDelete/ReadOnly) and how they override RBAC. These are product-specific security configuration mechanisms. |
 | [Logical functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-logical) | configuration | 0.70 | Lists ARM template logical functions and their behavior. These are specific function-level configuration elements of the ARM DSL. |
 | [Logical operators](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/operators-logical) | integrations | 0.70 | Details Bicep logical operators (including coalesce and conditional) and their evaluation behavior in templates, which are specific to the Bicep language. |
@@ -512,6 +518,7 @@
 | [Extension (extension)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-extension) | 0.25 | Explains Bicep extensions and import syntax; summary does not show numeric limits, config parameter tables, or troubleshooting mappings. |
 | [Extension resource types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/extension-resource-types) | 0.25 | Defines extension resource types and gives conceptual examples (like resource locks). It is an explanatory overview without detailed configuration parameters, limits, or troubleshooting content. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resources-portal) | 0.20 | Portal-based how-to for managing resources; mostly UI steps and conceptual guidance without detailed configuration tables, limits, or product-specific patterns. |
+| [Bicep file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/file) | 0.20 | Primarily explains Bicep file structure and syntax conceptually. While it may show language constructs and examples, it doesn't focus on product-specific limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria for any sub-skill type. |
 | [Child resources (parent)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/child-resource-name-type) | 0.20 | Covers child resources naming/type patterns conceptually; no quotas, configuration matrices, or decision tables. |
 | [Contribute to Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | 0.20 | High-level overview of what Bicep is and its benefits; conceptual and marketing-style without detailed configuration, limits, or troubleshooting content. |
 | [Control plane and data plane](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-and-data-plane) | 0.20 | Explains conceptual differences between control plane and data plane operations with examples. It is descriptive and conceptual without numeric limits, configuration tables, or error-resolution mappings. |

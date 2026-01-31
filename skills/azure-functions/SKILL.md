@@ -3,7 +3,7 @@ name: azure-functions
 description: Expert knowledge for Azure Functions development including integrations & coding patterns, configuration, security, decision making, architecture & design patterns, deployment, best practices, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Functions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Functions Skill
 
@@ -21,14 +21,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment and execution failures. |
-| Best Practices | L61-L94 | Patterns and code practices for Durable Functions (orchestrations, entities, timers, events, retries, versioning) plus general Azure Functions performance, reliability, DI, and idempotency. |
-| Decision Making | L95-L121 | Guidance on choosing Functions hosting/runtime models, costs, networking, Durable options, and performing migrations (plans, runtimes, stacks, AWS Lambda, Service Bus). |
-| Architecture & Design Patterns | L122-L129 | Architectural guidance for Functions: container-based designs, Durable Functions performance, disaster recovery and geo-distribution, and scaling patterns for resilient, scalable workloads. |
-| Limits & Quotas | L130-L137 | Scaling limits, throughput benchmarks, and concurrency settings for Functions and Durable Functions, plus language/runtime support levels and deprecation timelines. |
-| Security | L138-L154 | Securing Azure Functions apps: encryption, keys, managed identities, private endpoints/VNets, identity-based connections, and securing bindings, triggers, and MCP servers. |
-| Configuration | L155-L201 | Configuring Azure Functions apps: app/host settings, storage, networking, scaling, monitoring/tracing, Durable Functions options, Flex plan setup, and local/dev/runtime configuration. |
-| Integrations & Coding Patterns | L202-L314 | Patterns and examples for wiring Functions to external services (HTTP, data stores, messaging, OpenAI, Dapr, MCP) using triggers/bindings, plus language‑specific and tooling setup. |
-| Deployment | L315-L354 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI), containers/Kubernetes/Container Apps, Durable zero‑downtime, and Kafka/RabbitMQ bindings. |
+| Best Practices | L61-L94 | Best practices for Durable and regular Azure Functions: orchestrator/entity patterns, error handling, versioning, performance/scale, testing, DI, idempotency, and reliable event processing. |
+| Decision Making | L95-L120 | Guidance on choosing Functions hosting/runtime options, costs, networking, Durable Functions/Task, language/runtime upgrades, and migrating plans or from AWS Lambda. |
+| Architecture & Design Patterns | L121-L128 | Architectural guidance for Functions apps: container-based designs, Durable Functions performance, DR/geo-distribution strategies, and scaling patterns for reliable, scalable workloads. |
+| Limits & Quotas | L129-L136 | Scaling, throughput, and concurrency limits for Functions and Durable Functions, plus language/runtime support levels and timelines for different Azure Functions languages. |
+| Security | L137-L153 | Securing Azure Functions apps: encryption, keys, managed identities, private endpoints/VNets, secure storage and SQL/Service Bus connections, Web PubSub security, and overall security best practices. |
+| Configuration | L154-L199 | Configuring Azure Functions runtime, host/app settings, scaling, storage, networking, monitoring, Durable Functions, Flex plan, and local/dev setups across languages and hosting models. |
+| Integrations & Coding Patterns | L200-L312 | Patterns and how-tos for wiring Functions to external services (Cosmos DB, SQL, Event Hubs, Redis, OpenAI, Dapr, SignalR, etc.) using triggers/bindings and integration-specific code examples. |
+| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, containers, CI/CD (GitHub Actions, Pipelines, ARM/Bicep), deployment slots, zero‑downtime Durable workflows, and Kafka/RabbitMQ bindings. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -103,7 +103,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose between Durable Functions and Durable Task SDKs | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/choose-orchestration-framework |
 | Understand Azure Durable Task Scheduler characteristics | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler |
 | Select and use the Dedicated SKU for Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-dedicated-sku |
-| Evaluate and use Azure Functions Flex Consumption plan | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan |
 | Choose between Functions, Logic Apps, Power Automate, WebJobs | https://learn.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs |
 | Estimate and compare Azure Functions consumption plan costs | https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs |
 | Host Azure Functions on Azure Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/functions-container-apps-hosting |
@@ -191,7 +190,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Functions Premium plan hosting options | https://learn.microsoft.com/en-us/azure/azure-functions/functions-premium-plan |
 | Develop Azure Functions using legacy C# script (.csx) | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp |
 | Understand and manage Azure Functions app IP addresses | https://learn.microsoft.com/en-us/azure/azure-functions/ip-addresses |
-| Configure OpenTelemetry distributed tracing for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing |
 | Reference monitoring data schema for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference |
 | Configure OpenTelemetry export for Azure Functions logs | https://learn.microsoft.com/en-us/azure/azure-functions/opentelemetry-howto |
 | Configure Azure Functions to run from a package file | https://learn.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package |

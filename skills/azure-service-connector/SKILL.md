@@ -3,7 +3,7 @@ name: azure-service-connector
 description: Expert knowledge for Azure Service Connector development including security, deployment, configuration, integrations & coding patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Service Connector applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Service Connector Skill
 
@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and resolving Service Connector errors and failures, including common error codes, connection issues, and steps to debug and fix misconfigurations. |
-| Limits & Quotas | L35-L39 | Known limitations of Azure Service Connector, unsupported scenarios, and suggested workarounds or alternatives for connecting to services |
-| Security | L40-L46 | Entra RBAC and permission requirements for Service Connector, plus how to configure and choose authentication methods (managed identity, secrets, etc.) for secure connections. |
-| Configuration | L47-L52 | How to list and use connection settings created by Service Connector, and which Azure CLI parameters to pass when creating or managing those connections |
-| Integrations & Coding Patterns | L53-L83 | How to connect Azure apps to databases, messaging, storage, AI, and third‑party services using Service Connector, including auth options, config, and language-specific connection patterns. |
-| Deployment | L84-L88 | Info on which regions support Service Connector per compute type, and how to create/manage Service Connector connections using infrastructure-as-code tools. |
+| Troubleshooting | L30-L34 | Diagnosing and resolving Azure Service Connector errors and failures, including common error codes, connection issues, and steps to debug and fix failed connections. |
+| Limits & Quotas | L35-L39 | Known limitations of Azure Service Connector, unsupported scenarios, and recommended workarounds or alternatives for connecting to services. |
+| Security | L40-L46 | Security and auth for Service Connector: required permissions, Entra RBAC roles it assigns, and how to configure connection authentication options. |
+| Configuration | L47-L52 | How to list and use connection settings created by Service Connector, and which Azure CLI parameters to pass when creating or managing those connections. |
+| Integrations & Coding Patterns | L53-L83 | How to connect Azure apps to data, messaging, AI, and storage services (Cosmos DB, SQL, Kafka, Redis, Key Vault, Azure AI/OpenAI, MongoDB Atlas, Blob, queues, etc.) using Service Connector. |
+| Deployment | L84-L88 | Region availability for Service Connector by compute type, and how to provision Service Connector connections using infrastructure-as-code tools (Bicep, ARM, Terraform, etc.). |
 
 ### Troubleshooting
 | Topic | URL |

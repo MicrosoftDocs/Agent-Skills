@@ -8,6 +8,13 @@
 - **Classified**: 3
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 12
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devtest/azure-devtest.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -15,6 +22,8 @@
 | security | 2 | 16.7% |
 | troubleshooting | 1 | 8.3% |
 | *(Unclassified)* | 9 | 75.0% |
+
+## Changes
 
 ## Classified Pages
 

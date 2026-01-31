@@ -3,7 +3,7 @@ name: azure-managed-grafana
 description: Expert knowledge for Azure Managed Grafana development including integrations & coding patterns, security, configuration, decision making, deployment, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Managed Grafana applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Managed Grafana Skill
 
@@ -20,10 +20,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and managed private endpoint connectivity and health problems. |
-| Decision Making | L37-L44 | Guidance on reliability/availability options, choosing and managing Grafana Enterprise plans, migrating tiers or to Azure Monitor, and upgrading workspaces between Grafana versions |
-| Limits & Quotas | L45-L50 | Using reporting/image rendering features in Managed Grafana, plus service limits, quotas, and constraints that affect dashboards, data sources, and usage capacity |
-| Security | L51-L62 | Securing Azure Managed Grafana: encryption, auth and SSO, private endpoints, data source access, RBAC/permissions, Entra group sync, Azure Monitor access, and security best practices. |
+| Troubleshooting | L31-L36 | Diagnosing and resolving common Azure Managed Grafana errors, access and connectivity problems, and managed private endpoint connection and validation issues. |
+| Decision Making | L37-L44 | Guidance on reliability/availability choices, enabling Enterprise plans, migrating between Managed Grafana tiers or to Azure Monitor, and upgrading workspaces from Grafana 10 to 11. |
+| Limits & Quotas | L45-L50 | Using reporting/image rendering features in Azure Managed Grafana and understanding service limits, quotas, and constraints for dashboards, data sources, and usage |
+| Security | L51-L62 | Securing Managed Grafana: encryption, auth and SSO, private endpoints, data source access, RBAC/permissions, Entra group sync, Azure Monitor access, and security best practices. |
 | Configuration | L63-L72 | Configuring Managed Grafana workspaces: instance settings, data sources, plugins, diagnostics, service accounts/tokens, and SMTP email alert setup. |
 | Integrations & Coding Patterns | L73-L81 | Integrating Azure Managed Grafana with Prometheus, Azure Monitor, AKS, Azure Data Explorer, and Azure AI Foundry, including auth setup, private endpoints, and building monitoring dashboards. |
 | Deployment | L82-L88 | Guides for deploying Managed Grafana: setting deterministic outbound IPs, enabling zone redundancy, migrating from other Grafana setups, and wiring Azure Monitor alerts into dashboards. |

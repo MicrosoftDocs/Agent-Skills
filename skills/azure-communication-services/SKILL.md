@@ -3,7 +3,7 @@ name: azure-communication-services
 description: Expert knowledge for Azure Communication Services development including configuration, decision making, security, best practices, integrations & coding patterns, limits & quotas, troubleshooting, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Communication Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Communication Services Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L100 | Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams, and WhatsApp issues, including audio/video/device, network, direct routing, and SDK errors, plus how to collect logs and call diagnostics |
-| Best Practices | L101-L121 | Guidance on ACS calling UX and quality, network and device setup, auth/token best practices, IDs, spam/reputation, policy compliance, and managing email/SMS/voice/Teams appointments. |
-| Decision Making | L122-L140 | Guidance on ACS pricing, phone numbers, Teams/Teams Phone integration, PSTN/emergency calling, and migration from Twilio chat/video to ACS SDKs. |
-| Architecture & Design Patterns | L141-L146 | Patterns for recording ACS calls with Event Grid/Functions and designing ACS networks with private connectivity using Azure ExpressRoute |
-| Limits & Quotas | L147-L212 | Limits, quotas, and regional rules for ACS email, phone numbers, calling/Teams/direct routing, trial numbers, emergency/toll‑free calling, and related monitoring metrics and SDK constraints |
-| Security | L213-L234 | Auth, encryption, and access control for ACS: Entra/managed identity, HMAC/SMTP auth, Teams interop security, telephony identity, webhooks, Rooms, captions/RTT, and meeting role governance. |
-| Configuration | L235-L305 | Monitoring, logging, metrics, and configuration for ACS (calls, chat, SMS, email, Rooms, Job Router, Teams interop, UI Library, direct routing, and push/voice/video quality). |
-| Integrations & Coding Patterns | L306-L439 | Patterns and code samples for integrating ACS calling, chat, email, Rooms, Job Router, Teams/Teams Phone, WhatsApp, Azure AI/OpenAI, and UI Library into custom apps and workflows |
-| Deployment | L440-L447 | Guides for deploying ACS with Teams (incl. gov clouds), checking Teams calling client support, planning direct routing infrastructure, and deploying the ACS Chat Hero sample. |
+| Troubleshooting | L33-L100 | Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams, WhatsApp, audio/video, device, network, and SDK issues, plus collecting logs and interpreting error/diagnostic codes. |
+| Best Practices | L101-L121 | Best practices for ACS calling, video, SMS, email, and Teams interop: auth/token design, UX, spam/reputation, policy compliance, call quality, networking, diagnostics, and virtual appointments. |
+| Decision Making | L122-L140 | Guidance on ACS/Teams architecture and pricing: choosing phone numbers and PSTN options, licenses, emergency calling, and migrating from Twilio, plus WhatsApp, SMS, and chat usage in ACS. |
+| Architecture & Design Patterns | L141-L146 | Patterns for recording ACS calls with Event Grid/Functions and designing ACS networks with Azure ExpressRoute for private, secure connectivity. |
+| Limits & Quotas | L147-L212 | Limits, quotas, and regional rules for ACS email, phone numbers, calling/Direct Routing, Teams interop, trial numbers, emergency/toll‑free calling, and related monitoring metrics. |
+| Security | L213-L234 | Auth, encryption, and security for ACS: Entra ID/managed identities, HMAC/SMTP auth, sender identity, Teams interop permissions/roles, Rooms access control, webhooks, and accessibility features. |
+| Configuration | L235-L305 | Monitoring, logging, diagnostics, and configuration for ACS (calls, chat, SMS, email, Rooms, Job Router, Teams interop, UI Library), plus metrics, alerts, routing, and media quality settings. |
+| Integrations & Coding Patterns | L306-L439 | Patterns and code to integrate ACS calling, chat, email, Rooms, Job Router, and WhatsApp with Teams, Azure AI/OpenAI, bots, push/events, and UI libraries across web and mobile. |
+| Deployment | L440-L447 | Guides for deploying ACS with Teams (incl. gov clouds), platform/browser support, direct routing infra planning, and setting up the ACS Chat Hero sample. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -260,7 +260,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Job Router operational logs with Azure Monitor | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/router-logs |
 | Configure Azure Monitor logging for ACS SMS | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/sms-logs |
 | Configure voice and video call logging for ACS | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/voice-and-video-logs |
-| Configure Log Analytics queries for ACS call logs | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
+| Query ACS call logs with Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Query ACS call logs with Log Analytics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs |
 | Understand Azure Communication Services Rooms metrics definitions | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/rooms-metrics |
 | Set up monitoring and alerts for ACS calls | https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/set-up-call-monitoring |

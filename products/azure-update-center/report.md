@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 49
+- **Updated Pages**: 1
+- **Unchanged**: 48
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-center/azure-update-center.csv`
 
@@ -30,6 +30,11 @@
 
 ## Changes
 
+### Updated Pages
+
+- [Prerequisites](https://learn.microsoft.com/en-us/azure/update-manager/prerequisites)
+  - Updated: 2026-01-27T18:10:00.000Z → 2026-01-30T18:17:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -38,6 +43,7 @@
 | [Roles and Permissions](https://learn.microsoft.com/en-us/azure/update-manager/roles-permissions) | security | 0.85 | Roles and permissions article will contain specific Azure RBAC role names and required actions/scopes for Update Manager, which are product-specific security configurations. |
 | [Configure Windows Update client](https://learn.microsoft.com/en-us/azure/update-manager/configure-wu-agent) | configuration | 0.80 | Explains exact Windows Update settings, what Update Manager modifies, and how to avoid Group Policy conflicts; likely includes specific policy names, registry keys, and setting values unique to this integration. |
 | [Move Azure VMs from Microsoft Configuration Manager to Azure Update Manager](https://learn.microsoft.com/en-us/azure/update-manager/guidance-migration-azure) | decision-making | 0.75 | Provides mapping between Microsoft Configuration Manager capabilities and Azure services, plus migration guidance. This is explicit technology selection and migration decision content with comparison tables and recommended options. |
+| [Prerequisites](https://learn.microsoft.com/en-us/azure/update-manager/prerequisites) | configuration | 0.72 | Prerequisites pages for Azure management services typically enumerate specific requirements such as required VM extensions by name, supported OS versions, necessary Azure resource providers, and detailed network configuration (FQDNs/endpoints to allow, ports, and protocol requirements). These are product-specific configuration details that an LLM is unlikely to know reliably from training and map best to the configuration sub-skill, as they define concrete settings and environment requirements rather than conceptual guidance. |
 | [ARG queries to access Azure Update Manager operations data](https://learn.microsoft.com/en-us/azure/update-manager/sample-query-logs) | integrations | 0.70 | Provides concrete sample queries and result structures for Update Manager data in Azure Resource Graph; includes field names and query patterns that are product-specific integration details. |
 | [Automate assessment at scale using Policy](https://learn.microsoft.com/en-us/azure/update-manager/periodic-assessment-at-scale) | configuration | 0.70 | Describes enabling Periodic Assessment via Azure Policy, including a fixed 24-hour assessment interval and likely specific policy definitions/parameters, which are concrete configuration details. |
 | [Check for Updates, One time update, Periodic assessment and Customer managed Schedules](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix-updates) | limits-quotas | 0.70 | Support matrix for updates and system requirements will include specific supported OS versions and possibly minimum requirements—effectively product-specific support limits. |
@@ -49,7 +55,6 @@
 | [Manage updates for Arc-enabled servers using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-arc-enabled-servers-programmatically) | integrations | 0.70 | Covers using Azure Update Manager REST API with Arc-enabled servers, which typically includes specific endpoint paths, resource types, and parameter requirements unique to this integration scenario. |
 | [Manage updates for Azure VMs using REST API](https://learn.microsoft.com/en-us/azure/update-manager/manage-vms-programmatically) | integrations | 0.70 | Programmatic management via REST for Update Manager is likely to include request/response schemas, required API versions, resource IDs, and parameter names specific to Azure Update Manager and Azure VMs. These are product-specific integration details beyond generic REST usage. |
 | [Overview](https://learn.microsoft.com/en-us/azure/update-manager/guidance-patching-sql-server-azure-vm) | best-practices | 0.70 | Guidance on patching SQL Server on Azure VMs via Update Manager is likely to include product-specific recommendations (e.g., maintenance window settings, sequencing, SQL-aware considerations) and gotchas unique to this integration, which fits best-practices. |
-| [Prerequisites](https://learn.microsoft.com/en-us/azure/update-manager/prerequisites) | configuration | 0.70 | Prerequisites and network planning pages typically list specific ports, endpoints, and extension requirements—product-specific configuration details not known generically. |
 | [Supported updates, Types, Microsoft updates and Third-party updates](https://learn.microsoft.com/en-us/azure/update-manager/support-matrix) | limits-quotas | 0.70 | Support matrix for update sources and types defines which combinations are supported or not, acting as detailed capability limits for the service. |
 | [Ubuntu Pro support](https://learn.microsoft.com/en-us/azure/update-manager/security-awareness-ubuntu-support) | security | 0.70 | Provides guidance tied to specific Ubuntu versions and security support status; includes product-specific security behavior and requirements around Ubuntu Pro. |
 | [Access Azure Update Manager operations data using Azure Resource Graph](https://learn.microsoft.com/en-us/azure/update-manager/query-logs) | integrations | 0.65 | Describes how to access Update Manager operations data using Azure Resource Graph; likely includes specific Kusto queries, resource types, and field names, which are product-specific integration details. |

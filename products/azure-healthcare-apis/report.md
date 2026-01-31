@@ -5,8 +5,15 @@
 - **Total Pages**: 210
 - **Fetched**: 210
 - **Fetch Failed**: 0
-- **Classified**: 134
-- **Unclassified**: 76
+- **Classified**: 133
+- **Unclassified**: 77
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 209
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-healthcare-apis/azure-healthcare-apis.csv`
 
 ## Classification Statistics
 
@@ -14,14 +21,21 @@
 |------|-------|------------|
 | architecture-patterns | 3 | 1.4% |
 | best-practices | 3 | 1.4% |
-| configuration | 41 | 19.5% |
+| configuration | 40 | 19.0% |
 | decision-making | 6 | 2.9% |
 | deployment | 5 | 2.4% |
 | integrations | 33 | 15.7% |
 | limits-quotas | 2 | 1.0% |
 | security | 32 | 15.2% |
 | troubleshooting | 9 | 4.3% |
-| *(Unclassified)* | 76 | 36.2% |
+| *(Unclassified)* | 77 | 36.7% |
+
+## Changes
+
+### Updated Pages
+
+- [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-features-supported)
+  - Updated: 2025-10-01T08:00:00.000Z → 2026-01-30T23:12:00.000Z
 
 ## Classified Pages
 
@@ -157,7 +171,6 @@
 | [Get started with the DICOM service](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-data-lake) | architecture-patterns | 0.60 | Describes integration architecture and data contracts between DICOM service and Azure Data Lake Storage. This is a product-specific architecture pattern for managing imaging data, beyond generic storage concepts. |
 | [Patient/$everything](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/patient-everything) | integrations | 0.60 | Explains using Patient-everything operation; likely includes request parameters, operation behavior, and response structure specific to Azure FHIR service. |
 | [Store profiles](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/store-profiles-in-fhir) | integrations | 0.60 | Storing profiles in this managed FHIR service is product-specific. The article will include concrete REST/API details (endpoints, parameters, or configuration) for profile storage that go beyond generic FHIR knowledge, fitting integrations/coding patterns. |
-| [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-features-supported) | configuration | 0.60 | Lists exactly which FHIR features are implemented. This is effectively a capabilities/configuration matrix for the service (what is supported vs not), which is product-specific expert knowledge closest to configuration/feature support details. |
 | [Use the DICOM service for digital pathology](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-digital-pathology) | architecture-patterns | 0.60 | Discusses converting WSI slides to DICOM and using PACS/radiology tools via the DICOM service. This is a domain- and product-specific architecture/workflow pattern for digital pathology. |
 | [Use the Mapping debugger (Preview)](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-mapping-debugger) | troubleshooting | 0.60 | Mapping debugger article likely documents specific diagnostics behavior, fields, and possibly error indications tied to mapping evaluation, which is product-specific troubleshooting knowledge. |
 | [Use the monitoring and health checks tabs](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-monitoring-and-health-checks-tabs) | troubleshooting | 0.60 | Monitoring and health check tabs article likely maps specific health states, metrics, and UI indicators to service conditions, providing symptom-to-diagnosis guidance. |
@@ -210,6 +223,7 @@
 | [Get started with the MedTech service](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/get-started) | 0.30 | Get-started article outlining basic steps and a diagram; typical introductory/tutorial content without detailed configuration tables or limits. |
 | [Overview of FHIR search](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/overview-of-search) | 0.30 | Described as an overview of search; primarily conceptual FHIR search behavior rather than product-specific limits, configs, or troubleshooting details. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026) | 0.30 | Monthly release notes for 2026. While they contain product-specific changes, they are not stable configuration, limits, or troubleshooting reference material and are more historical/marketing in nature for this skills taxonomy. |
+| [Supported features](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-features-supported) | 0.30 | The page lists which FHIR specification features are implemented in the Azure Health Data Services FHIR service, but it's primarily a capability/feature support matrix without numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It doesn't match the defined expert-knowledge sub-skill types. |
 | [Use metrics](https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-use-metrics) | 0.30 | Explains how to use events metrics via Azure portal; summary suggests a how-to without explicit mention of metric names/tables or limits; likely generic monitoring usage. |
 | [Using Azure portal](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/deploy-azure-portal) | 0.30 | Portal deployment tutorial; focuses on wizard steps and basic security settings, without deployment matrices, tier constraints, or other expert-only deployment details. |
 | [2021](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2021) | 0.25 | Release notes for 2021; same pattern as other release notes, not fitting the defined expert sub-skill categories. |

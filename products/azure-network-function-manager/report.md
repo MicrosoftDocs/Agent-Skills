@@ -8,12 +8,21 @@
 - **Classified**: 1
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 8
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-function-manager/azure-network-function-manager.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | security | 1 | 12.5% |
 | *(Unclassified)* | 7 | 87.5% |
+
+## Changes
 
 ## Classified Pages
 

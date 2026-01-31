@@ -9,10 +9,10 @@
 - **Unclassified**: 64
 
 ### Incremental Update
-- **New Pages**: 14
-- **Updated Pages**: 16
-- **Unchanged**: 194
-- **Deleted Pages**: 6
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 220
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
 ## Classification Statistics
@@ -32,66 +32,16 @@
 
 ## Changes
 
-### New Pages
-
-- [Understand service levels](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels)
-- [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept)
-- [Metrics for Elastic zone-redundant Storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-metrics)
-- [Azure virtual machine SKU best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-virtual-machine-sku)
-- [Back up your database with AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-backup)
-- [Create a NetApp Elastic account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-account)
-- [Create an Active Directory connection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-active-directory)
-- [Create an Elastic capacity pool](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-capacity-pool-task)
-- [Change zones for Elastic capacity pools](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-change-zones)
-- [Create an NFS volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-volume)
-- [Create an SMB volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-volume-server-message-block)
-- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-customer-managed-keys)
-- [Generate user and group quota reports](https://learn.microsoft.com/en-us/azure/azure-netapp-files/generate-user-group-quota-reports)
-- [Configure cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-cache-volumes)
-
 ### Updated Pages
 
-- [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy)
-  - Updated: 2025-11-11T08:00:00.000Z → 2026-01-29T18:11:00.000Z
-- [Resource limits for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits)
-  - Updated: 2025-11-13T18:15:00.000Z → 2026-01-29T18:11:00.000Z
-- [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept)
-  - Updated: 2025-10-13T22:14:00.000Z → 2026-01-29T18:11:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-netapp-files/whats-new)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-01-29T08:00:00.000Z
-- [Understand Azure NetApp Files backup](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-introduction)
-  - Updated: 2025-11-19T12:10:00.000Z → 2026-01-29T18:11:00.000Z
-- [Create a NetApp account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-netapp-account)
-  - Updated: 2025-02-19T18:02:00.000Z → 2026-01-29T18:11:00.000Z
-- [Delegate a subnet to Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-delegate-subnet)
-  - Updated: 2025-06-27T08:00:00.000Z → 2026-01-29T18:11:00.000Z
-- [Create an SMB volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb)
-  - Updated: 2025-09-24T05:10:00.000Z → 2025-11-12T08:00:00.000Z
-- [Create an on-demand snapshot](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-manage-snapshots)
-  - Updated: 2025-08-21T22:11:00.000Z → 2026-01-29T18:11:00.000Z
-- [Manage snapshot policies](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-manage-policy)
-  - Updated: 2025-11-18T23:12:00.000Z → 2026-01-29T18:11:00.000Z
-- [Restore a snapshot to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-new-volume)
-  - Updated: 2025-08-28T08:00:00.000Z → 2026-01-29T18:11:00.000Z
-- [Restore a volume using snapshot revert](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-revert-volume)
-  - Updated: 2025-08-21T22:11:00.000Z → 2026-01-29T18:11:00.000Z
-- [Delete snapshots](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-delete)
-  - Updated: 2025-07-30T08:00:00.000Z → 2026-01-29T18:11:00.000Z
-- [Restore a backup to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-restore-new-volume)
-  - Updated: 2025-08-19T22:13:00.000Z → 2026-01-29T18:11:00.000Z
-- [Manage availability zone volume placement](https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-availability-zone-volume-placement)
-  - Updated: 2025-08-01T08:00:00.000Z → 2026-01-29T18:11:00.000Z
-- [Troubleshoot volume errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-volumes)
-  - Updated: 2025-01-28T08:00:00.000Z → 2026-01-12T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Backup your database with AzAcSnap~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-backup)
-- ~~Service levels for Azure NetApp Files~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels)
-- ~~Configure a cache volume~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-cache-volumes)
-- ~~Configure LDAP server~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-directory-server)
-- ~~Generate user and group quota reports for a volume~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/generate-user-group-quota-reports)
-- ~~Azure virtual machine SKUs best practices~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-virtual-machine-sku)
+- [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept)
+  - Updated: 2026-01-29T18:11:00.000Z → 2026-01-30T08:00:00.000Z
+- [Create a NetApp Elastic account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-account)
+  - Updated: 2026-01-29T18:11:00.000Z → 2026-01-30T18:17:00.000Z
+- [Configure policy-based backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-policy-based)
+  - Updated: 2025-06-05T08:00:00.000Z → 2026-01-30T08:00:00.000Z
+- [Configure manual backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-manual)
+  - Updated: 2026-01-23T08:00:00.000Z → 2026-01-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -277,11 +227,8 @@
 | [Overall workflow](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-get-started) | 0.40 | High-level get-started guide; likely step-by-step install/use, not parameter tables or error mappings. |
 | [Restore a backup to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-restore-new-volume) | 0.40 | Task-focused how-to for restoring a backup to a new Azure NetApp Files volume; summary does not indicate presence of numeric limits, config tables, error codes, or product-specific parameters beyond generic procedural steps. |
 | [Search backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-search) | 0.40 | Backup search behavior and naming conventions (daily/weekly/monthly prefixes) are described, but no numeric limits, config parameters, or troubleshooting mappings are evident. |
-| [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept) | 0.40 | Explains the Elastic zone-redundant storage service level conceptually (synchronous replication across zones, zero data loss) but summary does not indicate concrete numeric limits, configuration parameters, or decision matrices. |
 | [Understand advanced ransomware protection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/advanced-ransomware-protection) | 0.40 | Conceptual explanation of advanced ransomware protection; summary suggests high-level behavior and benefits, not detailed configs or limits. |
 | [Ways to monitor Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/monitor-azure-netapp-files) | 0.40 | High-level overview of monitoring options (Activity log, metrics, capacity); lacks detailed metric definitions, configuration tables, or error mappings. |
-| [Configure manual backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-manual) | 0.35 | Manual backup configuration guide; appears procedural without explicit limits, config matrices, or troubleshooting mappings. |
-| [Configure policy-based backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-policy-based) | 0.35 | Policy-based backup configuration how-to; summary does not show parameter tables, numeric limits, or product-specific best-practice values. |
 | [Convert an NFS volume between NFSv3 and NFSv4.1](https://learn.microsoft.com/en-us/azure/azure-netapp-files/convert-nfsv3-nfsv41) | 0.35 | Describes the ability to convert between NFSv3 and NFSv4.1 without data copy; the summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Create volume replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-create-peering) | 0.35 | Creating replication peering across regions/zones; summary suggests a procedural setup guide without numeric limits, config parameter tables, or decision matrices. |
 | [Manage backup policies](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-manage-policies) | 0.35 | Managing backup policies; summary mentions dependency on backup vaults but not specific schedules, limits, or configuration tables. |
@@ -289,6 +236,8 @@
 | [Restore a file from a snapshot using a client](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-file-client) | 0.35 | Explains restoring a file from a snapshot via mounted client; summary suggests generic usage of .snapshot/~snapshot directories, not detailed limits, configs, or troubleshooting. |
 | [Restore individual files using single-file snapshot restore](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-file-single) | 0.35 | Single-file snapshot restore is product-specific, but summary only shows basic capability and a small numeric count (up to 10 files) without broader limits, config parameters, or error mappings. |
 | [Change zones for Elastic capacity pools](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-change-zones) | 0.30 | Describes changing availability zones for Elastic ZRS capacity pools; appears to be procedural guidance without quantified thresholds, limits, or detailed configuration matrices. |
+| [Configure manual backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-manual) | 0.30 | Describes how to configure manual (on-demand) backups for Azure NetApp Files volumes, including assigning a backup vault. From the summary, it reads as a procedural tutorial without explicit limits, quotas, detailed configuration parameter tables, or troubleshooting mappings. It does not clearly expose expert-only configuration or decision matrices, so it does not meet the bar for any sub-skill type. |
+| [Configure policy-based backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-policy-based) | 0.30 | Appears to be a step-by-step configuration/how-to guide for enabling and configuring policy-based backups on Azure NetApp Files volumes. The summary does not indicate presence of detailed configuration parameter tables, limits, quotas, or product-specific error codes; it focuses on describing that you must enable backup and then configure scheduled backups. This is standard procedural content rather than expert-knowledge configuration references. |
 | [Create a short-term clone](https://learn.microsoft.com/en-us/azure/azure-netapp-files/create-short-term-clone) | 0.30 | Describes creating short-term clone volumes conceptually; summary does not indicate numeric limits, special config parameters, or detailed best-practice guidance. |
 | [Create an Elastic capacity pool](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-capacity-pool-task) | 0.30 | Covers creating a capacity pool for Elastic ZRS; summary mentions quota/throughput conceptually but no explicit numeric limits or configuration tables are indicated. |
 | [Create an on-demand snapshot](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-manage-snapshots) | 0.30 | Task-focused how-to for creating on-demand snapshots; summary shows no numeric limits, configuration tables, error codes, or product-specific parameters beyond basic UI steps. |
@@ -311,7 +260,7 @@
 | [Manage billing by using tags](https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-billing-tags) | 0.25 | Using tags for billing is generic Azure resource tagging guidance applied to NetApp Files; it does not hinge on product-specific configuration parameters or limits. |
 | [Set up a capacity pool](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-set-up-capacity-pool) | 0.25 | Creating a capacity pool is a basic provisioning tutorial; the summary does not show detailed configuration tables, QoS parameters, or limits that would qualify as expert knowledge. |
 | [Azure NetApp Files tools](https://learn.microsoft.com/en-us/azure/azure-netapp-files/tools-reference) | 0.20 | This page is a marketing/overview-style description of tools (estimators, monitoring, etc.) rather than detailed configuration, limits, or error handling. It doesn’t appear to list specific parameters, limits, or technical decision matrices. |
-| [Create a NetApp Elastic account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-account) | 0.20 | Similar to index 0 but for Elastic accounts; focused on how to create an account, without detailed limits, configuration matrices, or expert-only patterns. |
+| [Create a NetApp Elastic account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-account) | 0.20 | Page appears to be a step-by-step creation guide for a NetApp Elastic account and capacity pool, without indication of detailed limits, configuration parameter tables, error codes, or decision matrices. It is primarily procedural/tutorial content rather than expert reference material. |
 | [Create a NetApp account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-netapp-account) | 0.20 | Step-by-step creation of a NetApp account; no limits, quotas, config tables, or product-specific error/security details. Primarily procedural onboarding, not expert reference content. |
 | [Delegate a subnet to Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-delegate-subnet) | 0.20 | Describes delegating a subnet to Azure NetApp Files in a procedural way; no numeric limits, config parameter tables, or troubleshooting/error mappings. |
 | [Generate user and group quota reports](https://learn.microsoft.com/en-us/azure/azure-netapp-files/generate-user-group-quota-reports) | 0.20 | Page focuses on how to generate quota reports, not on specific numeric limits, configuration tables, or error-code-based troubleshooting. The summary does not indicate presence of exact quota values, tier-specific limits, or detailed configuration parameters, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
@@ -321,6 +270,7 @@
 | [Set up Azure NetApp Files and create an NFS volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes) | 0.20 | Quickstart focused on step-by-step setup and a single example volume; does not indicate configuration tables, limits, or decision matrices beyond generic how-to. |
 | [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy) | 0.20 | Describes the conceptual storage hierarchy (accounts, pools, volumes) and a high-level note about no cross-subscription migration, but no detailed limits, configuration tables, or product-specific numeric thresholds. |
 | [Understand Azure NetApp Files backup](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-introduction) | 0.20 | The page is an introduction to Azure NetApp Files backup describing what it is, supported regions, and cost model. Based on the summary, it does not appear to list specific numeric limits, configuration parameters, error codes, or decision matrices. It is primarily conceptual/overview content rather than detailed expert configuration, limits, or troubleshooting guidance. |
+| [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept) | 0.20 | Content is primarily a conceptual/marketing-style overview of Azure NetApp Files Elastic zone-redundant storage; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs are evident from the summary. |
 | [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction) | 0.20 | High-level introduction to Azure NetApp Files; describes what the service is and basic capabilities without detailed limits, configuration parameters, or product-specific troubleshooting. |
 | [Videos](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-videos) | 0.15 | This is a navigation/reference page linking to videos about Azure NetApp Files. It doesn’t itself contain technical configuration details, limits, or troubleshooting content. |
 | [Understand NAS](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-attached-storage-concept) | 0.10 | Conceptual explanation of NAS in the context of Azure NetApp Files; no indication of product-specific limits, configuration parameters, or decision matrices. |

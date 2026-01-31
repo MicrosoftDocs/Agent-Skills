@@ -8,9 +8,18 @@
 - **Classified**: 0
 - **Unclassified**: 4
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 4
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-integration-environments/azure-integration-environments.csv`
+
 ## Classification Statistics
 
 *No classified pages*
+
+## Changes
 
 ## Classified Pages
 

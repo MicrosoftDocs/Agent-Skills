@@ -8,6 +8,13 @@
 - **Classified**: 51
 - **Unclassified**: 16
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 67
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-notification-hubs/azure-notification-hubs.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 4 | 6.0% |
 | troubleshooting | 2 | 3.0% |
 | *(Unclassified)* | 16 | 23.9% |
+
+## Changes
 
 ## Classified Pages
 

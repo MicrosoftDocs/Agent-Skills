@@ -8,6 +8,13 @@
 - **Classified**: 116
 - **Unclassified**: 76
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 190
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,15 @@
 | security | 26 | 13.5% |
 | troubleshooting | 10 | 5.2% |
 | *(Unclassified)* | 76 | 39.6% |
+
+## Changes
+
+### Updated Pages
+
+- [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers)
+  - Updated: 2023-11-30T08:00:00.000Z → 2026-01-29T23:12:00.000Z
+- [Plans](https://learn.microsoft.com/en-us/azure/container-apps/plans)
+  - Updated: 2024-11-19T13:19:00.000Z → 2026-01-29T23:12:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +112,7 @@
 | [Migrate from Functions v1 to v2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions) | decision-making | 0.70 | Migration guide between Functions v1 and v2 hosting models on Container Apps. It explains why to migrate, what changes, and how, which is decision and migration guidance with scenario-based recommendations—fits decision-making. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/authentication) | security | 0.70 | Authentication/authorization feature page for Container Apps almost certainly lists provider-specific settings, callback URLs, and configuration parameters (e.g., allowed token audiences, auth settings flags) that are product-specific security configuration details, not just concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/sessions) | configuration | 0.70 | Feature overview for dynamic sessions and session pools; such pages typically define session pool parameters, lifecycle settings, and possibly timeouts or size constraints, which are product-specific configuration details. |
-| [Plans](https://learn.microsoft.com/en-us/azure/container-apps/plans) | decision-making | 0.70 | Explicitly compares different plan types for Container Apps and when to use each, which is product-specific tier/SKU selection guidance. |
+| [Plans](https://learn.microsoft.com/en-us/azure/container-apps/plans) | decision-making | 0.70 | Plan comparison page for Azure Container Apps; compares available plan types to help users choose. This is explicit service/tier selection guidance, fitting decision-making. While the summary is short, such plan pages typically include comparison tables and criteria beyond generic marketing. |
 | [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns) | security | 0.70 | Details how to set up private endpoints and private DNS zones for Container Apps environments, including plan support and Private Link specifics. |
 | [Securing a custom VNET with an NSG](https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration) | security | 0.70 | Describes specific NSG requirements and firewall integration patterns for Container Apps environments, including workload profile and UDR support details. |
 | [Service discovery resiliency](https://learn.microsoft.com/en-us/azure/container-apps/service-discovery-resiliency) | configuration | 0.70 | Resiliency policies (retries, timeouts, etc.) for service discovery are configured via specific settings and allowed ranges; this is detailed configuration of product-specific parameters rather than generic concepts. |
@@ -217,10 +233,10 @@
 | [Microservices](https://learn.microsoft.com/en-us/azure/container-apps/microservices) | 0.20 | Microservices overview using Container Apps; appears architectural but generic, without quantified thresholds or product-specific decision matrices. |
 | [Samples](https://learn.microsoft.com/en-us/azure/container-apps/samples) | 0.20 | A samples index page just links to example scenarios. The summary suggests navigation/overview content without embedded configuration tables, limits, or decision matrices. |
 | [Update a container app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code) | 0.20 | Tutorial for updating an app deployed from source; incremental how-to without evidence of detailed expert configuration or troubleshooting content. |
+| [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.20 | Intro/get-started page describing serverless containers and Azure Container Apps conceptually; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio) | 0.20 | Tutorial for deploying from Visual Studio; primarily step-by-step deployment instructions without detailed configuration reference or constraints. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio-code) | 0.20 | Tutorial for deploying via Visual Studio Code; focuses on workflow, not on expert configuration options, limits, or troubleshooting mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/container-apps/whats-new) | 0.20 | A 'what's new' changelog lists features and dates but generally lacks structured limits, configuration tables, or decision matrices. It’s update/marketing-style information rather than reusable expert configuration or troubleshooting knowledge. |
 | [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) | 0.10 | High-level product overview and scenarios for Azure Container Apps without numeric limits, configuration tables, or detailed decision matrices. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
-| [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.10 | Conceptual introduction to serverless containers on Azure; lacks concrete limits, configuration parameters, or decision matrices. |
 | [Azure Container Apps extension release notes](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-extension-release-notes) | - | The page is access-restricted and the visible summary contains no technical content to classify (no limits, configs, or troubleshooting details). |

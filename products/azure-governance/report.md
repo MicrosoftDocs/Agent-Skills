@@ -8,6 +8,13 @@
 - **Classified**: 155
 - **Unclassified**: 57
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 212
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-governance/azure-governance.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -21,6 +28,8 @@
 | security | 61 | 28.8% |
 | troubleshooting | 10 | 4.7% |
 | *(Unclassified)* | 57 | 26.9% |
+
+## Changes
 
 ## Classified Pages
 

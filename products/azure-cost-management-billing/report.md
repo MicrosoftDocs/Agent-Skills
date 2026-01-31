@@ -5,8 +5,15 @@
 - **Total Pages**: 261
 - **Fetched**: 261
 - **Fetch Failed**: 0
-- **Classified**: 170
-- **Unclassified**: 91
+- **Classified**: 171
+- **Unclassified**: 90
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 259
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management-billing/azure-cost-management-billing.csv`
 
 ## Classification Statistics
 
@@ -18,9 +25,18 @@
 | deployment | 4 | 1.5% |
 | integrations | 12 | 4.6% |
 | limits-quotas | 9 | 3.4% |
-| security | 21 | 8.0% |
+| security | 22 | 8.4% |
 | troubleshooting | 27 | 10.3% |
-| *(Unclassified)* | 91 | 34.9% |
+| *(Unclassified)* | 90 | 34.5% |
+
+## Changes
+
+### Updated Pages
+
+- [Enable Azure Marketplace purchases](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/enable-marketplace-purchases)
+  - Updated: 2025-01-22T08:00:00.000Z → 2026-01-30T18:17:00.000Z
+- [Initiate a Change of Channel Partner (COCP) request](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-of-channel-partner)
+  - Updated: 2025-11-26T23:19:00.000Z → 2026-01-30T18:17:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +111,7 @@
 | [Decide between savings plans and reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/decide-between-savings-plan-reservation) | decision-making | 0.70 | Explicitly focused on choosing between savings plans and reservations for different workload patterns; provides product-specific decision guidance and trade-offs, fitting decision-making. |
 | [EA billing issues with usage files](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-ea-billing-issues-usage-file-pivot-tables) | troubleshooting | 0.70 | Shows how to use Enterprise Agreement usage CSVs and pivot tables to understand and diagnose billing issues; this is a product-specific troubleshooting workflow. |
 | [EA roles in Azure](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles) | security | 0.70 | Details specific EA administrative roles and their permissions, which are product-specific RBAC-style constructs not generally known from training. |
-| [Enable Azure Marketplace purchases](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/enable-marketplace-purchases) | security | 0.70 | Focuses on marketplace policy settings and required user access permissions for billing accounts and subscriptions, especially for private offers; this is product-specific security and access configuration. |
+| [Enable Azure Marketplace purchases](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/enable-marketplace-purchases) | security | 0.70 | The article describes how to configure Marketplace policy settings and assign specific user access permissions to billing accounts and subscriptions. This is product-specific security/authorization configuration (who can purchase, what policies control it) rather than generic concepts, matching the security sub-skill. It goes beyond a conceptual overview by detailing concrete steps and required permissions. |
 | [Export cost data with a Storage SAS key](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/export-cost-data-storage-account-sas-key) | configuration | 0.70 | Partner-focused article on exporting cost data across tenants with a storage account SAS key; likely includes specific SAS permissions, scope, and configuration parameters unique to Cost Management exports. |
 | [Grant access to billing](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-access) | security | 0.70 | Covers billing access management with billing-role types that vary by billing account; includes product-specific role names and scope behavior, which are security/authorization details beyond generic knowledge. |
 | [Link partner ID](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/link-partner-id) | configuration | 0.70 | Details how to associate a partner network ID with Azure credentials using PAL; includes product-specific identifiers and linkage configuration steps not generally known. |
@@ -154,6 +170,7 @@
 | [Exchange and refund reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations) | decision-making | 0.65 | Explains when and how you can exchange or refund reservations within product families; likely includes policy constraints and scenarios that guide financial/usage decisions. |
 | [Group and filter options in Cost analysis](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/group-filter) | configuration | 0.65 | Explains how to use group and filter options in Cost Analysis and Budgets, which are concrete, product-specific configuration controls for slicing cost data. |
 | [How an Azure reservation discount is applied](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-discount-application) | decision-making | 0.65 | Explains how reservation discounts are matched to resources based on attributes and scope; provides concrete rules for discount application that inform how to structure reservations. |
+| [Initiate a Change of Channel Partner (COCP) request](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-of-channel-partner) | security | 0.65 | The page explains how enterprise customers initiate and manage change of channel partner (COCP) requests in the Azure portal, including who can perform the action and how notifications and acceptance work. This is specialized account/governance workflow and access behavior tied to Azure billing, fitting closest to security (identity/permissions and account control) and contains process details that are unlikely to be known generically. |
 | [Manage billing across tenants](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-across-tenants) | configuration | 0.65 | Explains associated billing tenants and how to configure cross-tenant billing relationships and subscription moves; contains product-specific configuration concepts and options for billing scopes. |
 | [Manage costs with automation](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/manage-automation) | integrations | 0.65 | Covers Cost Management automation scenarios and common API request examples; likely includes product-specific API parameters, request patterns, and usage details beyond generic SDK usage. |
 | [Manage tenants in your agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/manage-tenants) | configuration | 0.65 | Explains how to manage tenants, transfer subscriptions, and administer billing ownership with secure access; likely includes specific roles, scopes, and configuration steps unique to MCA billing accounts. |
@@ -241,7 +258,6 @@
 | [Get started with EA billing in the Azure portal](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-direct-portal-get-started) | 0.30 | Explains how EA customers use the Azure portal for billing; largely procedural onboarding without expert-level limits, configuration tables, or error mappings. |
 | [Individual subscription invoice terms](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-invoice) | 0.30 | Explains invoice structure and notes about availability; lacks detailed numeric limits, configuration parameters, or error code mappings. |
 | [Individual subscription usage terms](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-usage) | 0.30 | Defines terms in the detailed usage and charges file; mostly terminology and structure, not configuration, limits, or troubleshooting mappings. |
-| [Initiate a Change of Channel Partner (COCP) request](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-of-channel-partner) | 0.30 | Initiating COCP is largely an administrative workflow; summary does not show detailed technical limits, security roles, or decision matrices. |
 | [Manage a Microsoft Azure Consumption Commitment](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-consumption-commitment) | 0.30 | Describes MACC resource metadata conceptually (status, amount, dates, system ID) without detailed configuration parameters, limits, or role mappings. |
 | [Manage a Microsoft Azure credit resource](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-azure-credits) | 0.30 | Primarily describes what an Azure credit resource is and how it’s represented; no detailed limits, config tables, or role/permission specifics beyond generic portal usage. |
 | [Manage a Microsoft Azure discount resource](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-azure-discount) | 0.30 | Describes discount resource metadata and applicability conceptually; no numeric limits, configuration parameter tables, or detailed RBAC/security specifics in the summary. |

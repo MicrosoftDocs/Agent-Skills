@@ -8,6 +8,13 @@
 - **Classified**: 12
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 26
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-manager-for-agri/azure-data-manager-for-agri.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -17,6 +24,8 @@
 | limits-quotas | 1 | 3.8% |
 | security | 1 | 3.8% |
 | *(Unclassified)* | 14 | 53.8% |
+
+## Changes
 
 ## Classified Pages
 

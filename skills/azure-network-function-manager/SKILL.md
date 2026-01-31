@@ -3,7 +3,7 @@ name: azure-network-function-manager
 description: Expert knowledge for Azure Network Function Manager development including security. Use when building, debugging, or optimizing Azure Network Function Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Network Function Manager Skill
 
@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Security | L25-L28 | Configuring resource registration, managed identities, and access control needed for secure deployment and operation of Azure Network Function Manager. |
+| Security | L25-L28 | Setting up managed identities and resource registration for Network Function Manager, including required permissions, role assignments, and identity configuration steps. |
 
 ### Security
 | Topic | URL |

@@ -8,6 +8,13 @@
 - **Classified**: 12
 - **Unclassified**: 10
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 22
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | security | 3 | 13.6% |
 | troubleshooting | 1 | 4.5% |
 | *(Unclassified)* | 10 | 45.5% |
+
+## Changes
 
 ## Classified Pages
 

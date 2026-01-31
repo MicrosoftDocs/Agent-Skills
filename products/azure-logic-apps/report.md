@@ -5,8 +5,15 @@
 - **Total Pages**: 200
 - **Fetched**: 200
 - **Fetch Failed**: 0
-- **Classified**: 141
-- **Unclassified**: 59
+- **Classified**: 140
+- **Unclassified**: 60
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 199
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
 ## Classification Statistics
 
@@ -14,14 +21,21 @@
 |------|-------|------------|
 | architecture-patterns | 11 | 5.5% |
 | best-practices | 6 | 3.0% |
-| configuration | 33 | 16.5% |
+| configuration | 32 | 16.0% |
 | decision-making | 8 | 4.0% |
 | deployment | 13 | 6.5% |
 | integrations | 40 | 20.0% |
 | limits-quotas | 5 | 2.5% |
 | security | 13 | 6.5% |
 | troubleshooting | 12 | 6.0% |
-| *(Unclassified)* | 59 | 29.5% |
+| *(Unclassified)* | 60 | 30.0% |
+
+## Changes
+
+### Updated Pages
+
+- [Enable Health Check](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-health-standard-workflows)
+  - Updated: 2025-04-15T08:00:00.000Z → 2026-01-30T06:12:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +112,6 @@
 | [DataMapTestExecutor class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/data-map-test-executor-class-definition) | integrations | 0.70 | DataMapTestExecutor class reference for compiling, generating XSLT, and executing data map tests. These are specific SDK APIs and patterns for testing data transformations. |
 | [Deploy Standard logic apps to private storage accounts](https://learn.microsoft.com/en-us/azure/logic-apps/deploy-single-tenant-logic-apps-private-storage-account) | security | 0.70 | Covers deploying Logic Apps Standard to storage accounts with private endpoints and public access disabled; involves product-specific network and access configuration, fitting security. |
 | [Deploy and call custom APIs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-custom-api-host-deploy-call) | integrations | 0.70 | Covers hosting APIs on App Service and calling them from Logic Apps; typically includes API endpoint configuration and connector/HTTP action parameters unique to this integration. |
-| [Enable Health Check](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-health-standard-workflows) | configuration | 0.70 | Health Check configuration for Standard workflows involves specific app settings, endpoints, and thresholds that are product-specific configuration parameters rather than generic monitoring concepts. |
 | [Enable and view enhanced telemetry](https://learn.microsoft.com/en-us/azure/logic-apps/enable-enhanced-telemetry-standard-workflows) | configuration | 0.70 | Covers enabling enhanced telemetry, including specific flags, sampling, and event filtering options for Logic Apps Standard in Application Insights, which are concrete configuration parameters. |
 | [Estimate storage costs](https://learn.microsoft.com/en-us/azure/logic-apps/estimate-storage-costs) | decision-making | 0.70 | Focuses on estimating storage costs using a Logic Apps Storage Calculator and differentiating billing models; supports cost-related decision-making for storage configuration rather than just generic pricing info. |
 | [Exchange AS2 messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2) | configuration | 0.70 | Covers using the AS2 (v2) connector, its actions, and configuration details (including deprecation nuances vs original AS2 connector) that are specific to Logic Apps. |
@@ -206,6 +219,7 @@
 | [Create a rules engine project](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/create-rules-engine-project) | 0.30 | How-to/tutorial for creating a rules engine project; no config tables, limits, error codes, or product-specific best-practice values. |
 | [Create cross-environment parameters for workflows](https://learn.microsoft.com/en-us/azure/logic-apps/create-parameters-workflows) | 0.30 | Parameters how-to; no indication of numeric limits, config matrices, or specialized troubleshooting. |
 | [Create variables for saving values](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-create-variables-store-values) | 0.30 | General how-to for variables; no numeric limits, config tables, or product-specific edge-case guidance. |
+| [Enable Health Check](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-health-standard-workflows) | 0.30 | Page appears to describe how to enable and use Health Check for Logic Apps Standard, but the provided summary does not indicate presence of specific configuration parameter tables, numeric limits, error-code-based troubleshooting flows, or other product-specific expert details as defined. Likely a feature/how-to overview rather than detailed configuration, limits, or troubleshooting content. |
 | [Export Standard from portal to Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/export-standard-logic-app-to-visual-studio-code) | 0.30 | How-to guide for exporting Logic Apps to VS Code; operational steps but no detailed configuration options, limits, or troubleshooting mappings. |
 | [Get AI-powered help from the workflow assistant](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-assistant-standard) | 0.30 | Describes using an AI-powered workflow assistant; primarily feature overview and usage, without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Loops](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-loops) | 0.30 | Describes loops (For each, Until) in Logic Apps; general usage guidance, not detailed limits, configuration parameters, or troubleshooting mappings. |

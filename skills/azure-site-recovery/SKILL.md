@@ -3,7 +3,7 @@ name: azure-site-recovery
 description: Expert knowledge for Azure Site Recovery development including decision making, deployment, configuration, security, troubleshooting, limits & quotas, architecture & design patterns, best practices, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Site Recovery applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Site Recovery Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L55 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, and common error codes. |
-| Best Practices | L56-L67 | Best-practice DR designs and configurations for specific workloads (AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL, file servers, VMware) using Azure Site Recovery. |
-| Decision Making | L68-L87 | Guidance on DR planning, sizing, cost estimation, and tooling for Azure Site Recovery, including VMware/Hyper-V, managed disks, encryption changes, and choosing ASR vs Azure Migrate. |
-| Architecture & Design Patterns | L88-L95 | Designing ASR disaster recovery architectures: ExpressRoute connectivity, Traffic Manager for failover routing, Hyper‑V/VMM network mapping, and classic vs modern VMware DR models. |
-| Limits & Quotas | L96-L107 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, shared disks, interoperability with Backup, Deployment Planner limits, and VMware/Hyper-V/physical DR matrices. |
-| Security | L108-L119 | Configuring secure Azure Site Recovery: disk encryption (ADE/CMK), NSGs, trusted launch, private endpoints, TLS, RBAC access, and migrating runbooks to managed identity. |
-| Configuration | L120-L179 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and replication/failover/failback settings. |
-| Integrations & Coding Patterns | L180-L185 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans to orchestrate and customize Hyper-V to Azure disaster recovery workflows. |
-| Deployment | L186-L189 | Deploying Azure Site Recovery using ARM templates, including defining resources, parameters, automation steps, and best practices for template-based disaster recovery setup. |
+| Troubleshooting | L33-L55 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, and specific ASR error codes. |
+| Best Practices | L56-L67 | Best-practice DR designs and configs for on-prem apps: file servers, AD/DNS, Dynamics AX, IIS, SAP, SharePoint, SQL Server, plus VMware VM reprotection and failback with Azure Site Recovery. |
+| Decision Making | L68-L87 | Planning and cost/sizing guidance for Azure Site Recovery: choosing tools (vs Azure Migrate), DR viability, capacity and cost estimation, VM sizing, zones, encryption changes, and large-scale deployments |
+| Architecture & Design Patterns | L88-L95 | Designing ASR DR architectures: ExpressRoute connectivity, Traffic Manager for failover routing, Hyper‑V/VMM network mapping, and classic vs modernized VMware protection models. |
+| Limits & Quotas | L96-L107 | Limits, support matrices, and resource usage for Azure Site Recovery: Azure-to-Azure, Hyper-V, VMware/physical, high-churn VMs, shared disks, Backup interoperability, and Deployment Planner. |
+| Security | L108-L119 | Security and access for Site Recovery: encrypting replicated disks (ADE/CMK), NSG and TLS settings, private endpoints, RBAC, trusted launch VMs, and runbook managed identities. |
+| Configuration | L120-L179 | Configuring Azure Site Recovery for Azure, VMware, Hyper‑V, and physical servers, including networking, appliances, policies, monitoring, and replication/failback setup and management. |
+| Integrations & Coding Patterns | L180-L185 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
+| Deployment | L186-L189 | Deploying Azure Site Recovery using ARM templates, including defining resources, parameters, and automation patterns for repeatable DR setup and configuration. |
 
 ### Troubleshooting
 | Topic | URL |

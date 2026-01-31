@@ -3,7 +3,7 @@ name: azure-sql-server-stretch-database
 description: Expert knowledge for Azure Sql Server Stretch Database development including decision making, configuration, integrations & coding patterns, troubleshooting, security, deployment, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Sql Server Stretch Database applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Sql Server Stretch Database Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L56 | Diagnosing and fixing Azure SQL performance, deadlocks, blocking, CPU/I/O, connectivity, auditing, Data Sync, In-Memory OLTP, and SQL MI/VM extension issues using DMVs and monitoring tools. |
-| Best Practices | L57-L91 | Best-practice guidance for performance, HA/DR, auditing, storage, sizing, licensing, and T‑SQL compatibility across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs |
-| Decision Making | L92-L133 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, HA/DR, scaling, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid Benefit, reservations). |
-| Architecture & Design Patterns | L134-L147 | Patterns for high availability, geo-replication, DR, connectivity, and clustering of Azure SQL (DB, MI, and SQL on VMs), including Always On and failover designs. |
-| Limits & Quotas | L148-L169 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/constraints for Azure SQL Database and Managed Instance. |
-| Security | L170-L270 | Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra, MFA, Kerberos), network isolation, encryption/TDE/Key Vault, auditing, threat protection, compliance, and best practices. |
-| Configuration | L271-L389 | Configuring Azure SQL (DB, MI, and SQL VMs): networking, security, backups/immutability, monitoring/alerts, HA/DR (AGs, geo-replication, failover groups), jobs, maintenance, and deployment automation. |
-| Integrations & Coding Patterns | L390-L454 | Connecting apps/tools (EF, .NET, Node, Python, Excel, Go, etc.) to Azure SQL/MI, plus elastic scale, cross-db queries, auditing, automation, replication, and PowerShell/REST management patterns |
-| Deployment | L455-L490 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, region moves, sharding, and migrations from other databases. |
+| Troubleshooting | L33-L56 | Diagnosing and fixing Azure SQL/SQL MI issues: performance (CPU, I/O, deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos, and SQL IaaS Agent problems. |
+| Best Practices | L57-L91 | Best practices for performance, HA/DR, disaster recovery drills, storage, licensing, and T-SQL compatibility for Azure SQL (DB, MI, SQL VMs), including auditing, alerts, and migrations. |
+| Decision Making | L92-L133 | Guidance for choosing Azure SQL/SQL Server deployment, tiers, pricing, DR/HA, scaling, licensing benefits, and migration paths (on‑prem, Oracle/Db2, SQL VMs, DTU↔vCore, Hyperscale, SaaS tenancy). |
+| Architecture & Design Patterns | L134-L147 | Patterns for high availability, geo-replication, DR, rolling upgrades, and clustering/Always On designs for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs. |
+| Limits & Quotas | L148-L169 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/network constraints for Azure SQL Database and Managed Instance. |
+| Security | L170-L270 | Security configuration for Azure SQL (DB, MI, VMs): Entra auth, MFA, managed identities, network/firewall/Private Link, auditing & Defender, TDE & CMK, Always Encrypted, access control, and best practices. |
+| Configuration | L271-L389 | Configuring Azure SQL (DB, MI, and SQL VMs): networking, security, backups/retention, maintenance, monitoring/alerts, HA/DR (AGs, geo-replication, failover), jobs, and deployment automation. |
+| Integrations & Coding Patterns | L390-L454 | Connecting apps/tools (EF Core, .NET, Node, Python, Excel, Go, etc.) to Azure SQL, plus patterns for sharding, elastic queries/jobs, auditing, replication, backup/restore, and automation via PowerShell/APIs. |
+| Deployment | L455-L490 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, zone redundancy, and migrations from other databases. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -60,7 +60,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply production best practices for Azure SQL auditing | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-best-practices?view=azuresql |
 | Run disaster recovery drills for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills?view=azuresql |
 | Optimize resource management in dense Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-resource-management?view=azuresql |
-| Implement Azure SQL failover groups with best practices | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql |
+| Apply failover group best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql |
 | Manage Azure SQL Database file space and shrinking | https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db |
 | Apply HA and DR best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-disaster-recovery-checklist?view=azuresql |
 | Tune Azure SQL application and database performance | https://learn.microsoft.com/en-us/azure/azure-sql/database/performance-guidance?view=azuresql |
@@ -71,7 +71,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure SQL MI failover groups with best practices | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/failover-group-sql-mi?view=azuresql |
 | Implement HA and DR checklist for Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/high-availability-disaster-recovery-checklist?view=azuresql |
 | Migrate SQL Server databases to Azure SQL Managed Instance using Log Replay Service | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql |
-| Apply best practices for Managed Instance link | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql |
+| Apply best practices for Azure SQL Managed Instance link | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql |
 | Migrate SQL Server databases to Azure SQL Managed Instance using Managed Instance link | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-migrate?view=azuresql |
 | Apply performance tuning best practices on SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/performance-guidance?view=azuresql |
 | Apply T-SQL differences between SQL Server and SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server?view=azuresql |
@@ -287,7 +287,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure performance counters for Azure SQL shard management | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-perf-counters?view=azuresql |
 | Create and configure Azure SQL elastic jobs | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql |
 | Create and manage Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-manage?view=azuresql |
-| Configure Azure SQL failover groups for DR | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql |
+| Configure Azure SQL Database failover groups | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql |
 | Configure and manage Azure SQL Hyperscale named replicas | https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-configure?view=azuresql |
 | Configure In-Memory OLTP in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-configure?view=azuresql |
 | Use Intelligent Insights to monitor Azure SQL performance | https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql |

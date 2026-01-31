@@ -8,6 +8,13 @@
 - **Classified**: 114
 - **Unclassified**: 33
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 147
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 13 | 8.8% |
 | troubleshooting | 11 | 7.5% |
 | *(Unclassified)* | 33 | 22.4% |
+
+## Changes
 
 ## Classified Pages
 

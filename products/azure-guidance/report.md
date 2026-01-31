@@ -5,21 +5,41 @@
 - **Total Pages**: 364
 - **Fetched**: 364
 - **Fetch Failed**: 0
-- **Classified**: 267
-- **Unclassified**: 97
+- **Classified**: 266
+- **Unclassified**: 98
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 360
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-guidance/azure-guidance.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 133 | 36.5% |
+| architecture-patterns | 132 | 36.3% |
 | best-practices | 29 | 8.0% |
 | configuration | 2 | 0.5% |
 | decision-making | 58 | 15.9% |
 | deployment | 9 | 2.5% |
 | security | 26 | 7.1% |
 | troubleshooting | 10 | 2.7% |
-| *(Unclassified)* | 97 | 26.6% |
+| *(Unclassified)* | 98 | 26.9% |
+
+## Changes
+
+### Updated Pages
+
+- [Introduction](https://learn.microsoft.com/en-us/azure/architecture/guide/)
+  - Updated: 2025-03-03T18:30:00.000Z → 2026-01-30T08:00:00.000Z
+- [Web-queue-worker](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker)
+  - Updated: 2026-01-06T18:34:00.000Z → 2026-01-30T18:35:00.000Z
+- [Measure Azure app sustainability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/measure-azure-app-sustainability-sci-score)
+  - Updated: 2025-12-17T06:03:00Z → 2026-01-30T18:35:00Z
+- [Get started](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-start-here)
+  - Updated: 2025-12-09T06:03:00.000Z → 2026-01-30T18:35:00.000Z
 
 ## Classified Pages
 
@@ -164,7 +184,6 @@
 | [Use Azure Red Hat OpenShift in the financial services industry](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads) | architecture-patterns | 0.70 | Defines a landing zone architecture for ARO in FSI with regulatory and security requirements; this is a product- and industry-specific architecture pattern rather than generic OpenShift guidance. |
 | [VM baseline in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline-landing-zone) | architecture-patterns | 0.70 | Describes how to adapt the VM baseline architecture when deployed into an Azure landing zone with centrally managed networking, identity, and policies; contains prescriptive, Azure-specific architectural guidance. |
 | [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway) | security | 0.70 | Describes concrete options and best practices for using Azure Firewall, Application Gateway, DDoS Protection, and related services to secure VNets. Contains product-specific security layering patterns and configuration guidance. |
-| [Web-queue-worker](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker) | architecture-patterns | 0.70 | Describes the Web-Queue-Worker architecture style with Azure-specific implementation components and when to use it for long-running or resource-intensive tasks. This is a concrete architecture pattern with usage guidance. |
 | [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) | security | 0.70 | Provides detailed guidance on implementing Zero Trust for web applications using Azure Firewall and Application Gateway, focusing on encryption and inspection patterns for inbound internet traffic. Product-specific security architecture and configuration guidance. |
 | [Identity](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/security-identity) | security | 0.69 | Focuses on identity management mappings between AWS IAM and Microsoft Entra ID, including concrete identity and access patterns for migration and multicloud, which are product-specific security configurations. |
 | [Recommendations](https://learn.microsoft.com/en-us/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-recommendations) | best-practices | 0.69 | Provides concrete recommendations and lessons learned for DR (defining RPO/RTO, testing procedures, operational practices) specific to Azure data platform services, going beyond generic DR advice. |
@@ -299,9 +318,7 @@
 |-----------|------------|--------|
 | [Autoscaling](https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling) | 0.40 | Autoscaling guidance appears conceptual (when and why to autoscale) without specific Azure SKU thresholds, numeric triggers, or configuration tables in the summary. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices) | 0.40 | Microservices architecture style overview; mostly conceptual without Azure-specific numeric thresholds, configs, or decision matrices. |
-| [Get started](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-start-here) | 0.40 | High-level planning overview for AKS guidance offerings and adoption journey; primarily conceptual and navigational without detailed configuration tables, limits, or concrete decision matrices. |
 | [Map threats to your IT environment](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/map-threats-it-environment) | 0.40 | Describes how to diagram environments and map threats; appears to be conceptual security planning guidance without product-specific configuration details, limits, or error mappings. |
-| [Measure Azure app sustainability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/measure-azure-app-sustainability-sci-score) | 0.40 | SCI score sustainability scenario is methodological and conceptual; lacks detailed Azure service configuration tables or limits. |
 | [Message encoding considerations](https://learn.microsoft.com/en-us/azure/architecture/best-practices/message-encode) | 0.40 | Message encoding considerations are largely conceptual (trade-offs between formats); summary does not indicate Azure-product-specific configuration values or limits. |
 | [Monitoring and diagnostics](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring) | 0.40 | Monitoring and diagnostics guidance appears conceptual (what to monitor, why) without specific Azure log locations, metric names, or configuration tables in the summary. |
 | [Transient fault handling](https://learn.microsoft.com/en-us/azure/architecture/best-practices/transient-faults) | 0.40 | Transient fault handling article describes general patterns (retries, timeouts) for remote calls; summary does not show Azure-specific error codes or configuration parameters. |
@@ -375,8 +392,9 @@
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/security/security-start-here) | 0.20 | Security architecture design overview and navigation page. Describes importance of security conceptually without product-specific configuration or error details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/storage/storage-start-here) | 0.20 | High-level overview of Azure Storage technologies and reference materials; no indication of detailed limits, configuration tables, or troubleshooting content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-start-here) | 0.20 | Introductory overview of hybrid cloud and connectivity options; lacks detailed decision matrices, configs, or limits. |
+| [Get started](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-start-here) | 0.20 | High-level planning and adoption overview for AKS without specific numeric limits, configuration tables, error codes, or decision matrices; primarily conceptual guidance rather than detailed expert configuration or troubleshooting content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-start-here) | 0.20 | Analytics architecture design page is an overview/solution idea; it does not provide numeric limits, configuration tables, or detailed decision matrices. |
-| [Introduction](https://learn.microsoft.com/en-us/azure/architecture/guide/) | 0.20 | Fundamentals/overview of application architecture on Azure; largely conceptual best practices without product-specific numbers, configs, or decision matrices. |
+| [Measure Azure app sustainability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/measure-azure-app-sustainability-sci-score) | 0.20 | Architecture scenario describing how to measure an application's sustainability using SCI score; appears conceptual and guidance-focused without concrete limits, configuration tables, error codes, or product-specific parameter details that meet any sub-skill detection criteria. |
 | [Networking](https://learn.microsoft.com/en-us/azure/architecture/networking/) | 0.20 | High-level networking architecture design landing page listing services and sample architectures. Lacks specific patterns, limits, or configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices) | 0.20 | Index/landing page that links to many best-practices topics; no detailed product-specific recommendations or parameters itself. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/) | 0.20 | Describes general architecture styles and recommendations; mostly conceptual and not product-specific with quantified thresholds or configs. |
@@ -388,9 +406,11 @@
 | [Queue-Based Load Leveling](https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling) | 0.20 | Queue-Based Load Leveling pattern is conceptual; no Azure-specific limits, configuration tables, or quantified best practices. |
 | [Scalable cloud applications and site reliability engineering (SRE)](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/scalable-apps-performance-modeling-site-reliability) | 0.20 | High-level SRE and scalability concepts and principles; no product-specific limits, configs, or error mappings. |
 | [Web applications](https://learn.microsoft.com/en-us/azure/architecture/web-apps/) | 0.20 | This is an overview page for web architecture design on Azure that aggregates technologies, guidance, and reference architectures. It is primarily conceptual and navigational, without the detailed, product-specific patterns, limits, or configuration tables required to qualify as expert knowledge under the defined sub-skill types. |
+| [Web-queue-worker](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker) | 0.20 | Architecture style overview of the Web-Queue-Worker pattern describing components, benefits, and challenges. It does not include product-specific limits, configuration tables, decision matrices with thresholds, or concrete best-practice parameters; content is conceptual architecture guidance that an LLM would generally know. |
 | [AI + Machine Learning](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | 0.10 | AI Architecture Design page is a high-level overview of AI on Azure with marketing and conceptual content, not detailed expert configuration or limits. |
 | [Architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | 0.10 | Resource/download page for icons and logos; no technical limits, configs, or troubleshooting content. |
 | [Browse all Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/) | 0.10 | Navigation/browse page listing architectures; no detailed limits, configs, error codes, or decision matrices. |
 | [Databases](https://learn.microsoft.com/en-us/azure/architecture/databases/) | 0.10 | Described as an overview of Azure database solutions; likely a catalog/summary page without detailed limits, configs, or troubleshooting content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/devops/devops-start-here) | 0.10 | DevOps architecture design overview; primarily conceptual explanation of DevOps and Azure services, not detailed product-specific configs or troubleshooting. |
+| [Introduction](https://learn.microsoft.com/en-us/azure/architecture/guide/) | 0.10 | High-level architecture fundamentals and best practices overview without product-specific limits, configuration tables, error codes, or quantified decision matrices. |
 | [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/what’s new list for Architecture Center; no concrete technical guidance, limits, or configs. |

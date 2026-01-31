@@ -8,6 +8,13 @@
 - **Classified**: 66
 - **Unclassified**: 38
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 104
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-lab-services/azure-lab-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 11 | 10.6% |
 | troubleshooting | 4 | 3.8% |
 | *(Unclassified)* | 38 | 36.5% |
+
+## Changes
 
 ## Classified Pages
 

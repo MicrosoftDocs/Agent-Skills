@@ -8,6 +8,13 @@
 - **Classified**: 15
 - **Unclassified**: 10
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 25
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -17,6 +24,8 @@
 | security | 5 | 20.0% |
 | troubleshooting | 1 | 4.0% |
 | *(Unclassified)* | 10 | 40.0% |
+
+## Changes
 
 ## Classified Pages
 

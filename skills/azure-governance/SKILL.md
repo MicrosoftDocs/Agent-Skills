@@ -3,7 +3,7 @@ name: azure-governance
 description: Expert knowledge for Azure Governance development including security, integrations & coding patterns, configuration, deployment, troubleshooting, best practices, decision making, and limits & quotas. Use when building, debugging, or optimizing Azure Governance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Governance Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L45 | Diagnosing and fixing Azure governance issues: Blueprints errors, management group SDK failures, policy non-compliance/remediation, Kubernetes policy add-on issues, Change Analysis, and Resource Graph query/connector errors. |
-| Best Practices | L46-L55 | Best practices for authoring and deploying Azure Policy and Resource Graph: choosing effects (append/manual), attestations, impact evaluation, array rules, and avoiding query throttling. |
-| Decision Making | L56-L64 | Guidance for choosing Azure governance options: policy effects vs enforcementMode, VM policy set selection, system policies, Automanage-to-Policy migration, and ARG API vs Query service. |
-| Limits & Quotas | L65-L72 | Querying Azure Resource Graph at scale: API limits, handling large result sets, pagination (incl. PowerShell), and using the Power BI connector within quotas |
-| Security | L73-L137 | Azure Policy and governance for security: mapping compliance frameworks and CIS benchmarks, configuring baselines, guest config, MFA enforcement, and protecting resource hierarchy/blueprints. |
-| Configuration | L138-L171 | Configuring Azure governance with Policy, Blueprints, and Resource Graph: authoring/effects/parameters, compliance/remediation, tag/identity/type controls, and shared query deployment. |
-| Integrations & Coding Patterns | L172-L206 | Implementing Azure governance programmatically: Blueprints, Policy authoring/assignment, Event Grid integration, and large-scale Resource Graph querying via CLI, PowerShell, ARM/Bicep, Terraform, and REST |
-| Deployment | L207-L217 | Deploying Azure blueprints/landing zones (CAF, ISO 27001, SWIFT), and implementing Azure Policy as code with GitHub/DevOps pipelines and safe deployment practices. |
+| Troubleshooting | L32-L45 | Diagnosing and fixing Azure governance issues: Blueprints errors, management group SDK failures, policy non-compliance/remediation, Change Analysis usage, and Resource Graph query/connector problems. |
+| Best Practices | L46-L55 | Best practices for designing, testing, and safely applying Azure Policy (effects, arrays, manual/attestations) and avoiding throttling in Azure Resource Graph queries |
+| Decision Making | L56-L64 | Guidance on choosing Azure governance options: policy effects vs enforcementMode, VM policy sets, system policies, migrating Automanage best practices, and selecting ARG APIs vs query service. |
+| Limits & Quotas | L65-L72 | Query limits, pagination, and handling large result sets when using Azure Resource Graph via REST, PowerShell, and Power BI connector. |
+| Security | L73-L137 | Azure Policy and guest configuration for security baselines, MFA enforcement, resource protection, and detailed mappings from many compliance standards (CIS, NIST, ISO, PCI, FedRAMP, etc.) to Azure controls |
+| Configuration | L138-L171 | Configuring Azure governance with Blueprints, Policy (effects, rules, parameters, exemptions, remediation, compliance), tags, identities, and Resource Graph queries and deployments. |
+| Integrations & Coding Patterns | L172-L206 | Programmatic governance patterns: author/assign Azure Policy and Blueprints, integrate with Event Grid, and query/automate compliance via Resource Graph, CLI, PowerShell, Bicep, ARM, and Terraform. |
+| Deployment | L207-L217 | Deploying Azure blueprints/landing zones and implementing Azure Policy as Code, including GitHub export, DevOps pipeline enforcement, and safe deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |

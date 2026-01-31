@@ -8,6 +8,13 @@
 - **Classified**: 23
 - **Unclassified**: 27
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 49
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,13 @@
 | security | 10 | 20.0% |
 | troubleshooting | 1 | 2.0% |
 | *(Unclassified)* | 27 | 54.0% |
+
+## Changes
+
+### Updated Pages
+
+- [OSDU® services available on Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/osdu-services-on-adme)
+  - Updated: 2025-07-31T22:14:00.000Z → 2026-01-30T18:17:00.000Z
 
 ## Classified Pages
 
@@ -53,7 +67,6 @@
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Authentication](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-authentication) | 0.40 | Authentication concepts article; explains service principals and tokens conceptually, but summary does not indicate specific RBAC roles, scopes, or parameter tables. |
-| [OSDU® services available on Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/osdu-services-on-adme) | 0.40 | Overview of OSDU services available on Azure Data Manager for Energy; appears to be a capability/availability list, not a decision matrix or configuration reference. |
 | [Set up Customer managed encryption keys (CMEK)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption) | 0.40 | Summary indicates a high-level overview of encryption and keys; without evidence of specific key vault configuration parameters or role mappings, it appears conceptual rather than detailed configuration. |
 | [Use Rock and Fluid Samples DDMS APIs](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-rock-and-fluid-samples-ddms) | 0.40 | RAFS DDMS API tutorial; step-by-step cURL workflow, but no explicit mention of configuration tables, limits, or error-code mappings. |
 | [Use Seismic Store DDMS sdutil](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-ddms-sdutil) | 0.40 | Tutorial for using sdutil with Seismic Store; likely includes commands but summary does not show structured config tables, error mappings, or limits. |
@@ -77,5 +90,6 @@
 | [Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-ddms) | 0.20 | Domain Data Management Services concepts; conceptual platform extension description without concrete configuration, limits, or decision matrices. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | 0.20 | An FAQ page is usually high-level Q&A and product overview; description does not indicate detailed limits tables, configuration matrices, or error-code-based troubleshooting, so it likely lacks the structured expert knowledge required by the defined sub-skill types. |
 | [Indexing and search](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-index-and-search) | 0.20 | Index and search workflow concepts; high-level description of indexing and metadata accessibility, not detailed configuration or limits. |
+| [OSDU® services available on Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/osdu-services-on-adme) | 0.20 | Content is an availability/overview list of OSDU services on Azure Data Manager for Energy tied to a milestone release; it does not describe limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Syncing Reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values) | 0.20 | Overview of reference data values and synchronization; summary does not show specific configuration parameters, limits, or decision matrices. |
 | [Partners](https://learn.microsoft.com/en-us/azure/energy-data-services/resources-partner-solutions) | 0.10 | Partner solutions listing is primarily ecosystem/marketing content; it does not suggest technical configuration, limits, or troubleshooting details, so it does not meet the expert knowledge criteria. |

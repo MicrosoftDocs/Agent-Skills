@@ -8,6 +8,13 @@
 - **Classified**: 168
 - **Unclassified**: 34
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 201
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,13 @@
 | security | 11 | 5.4% |
 | troubleshooting | 4 | 2.0% |
 | *(Unclassified)* | 34 | 16.8% |
+
+## Changes
+
+### Updated Pages
+
+- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker)
+  - Updated: 2026-01-07T08:00:00.000Z → 2026-01-29T08:00:00.000Z
 
 ## Classified Pages
 
@@ -85,6 +99,7 @@
 | [Azure Files NFS/SMB for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage-azure-files) | best-practices | 0.74 | Gives concrete starting configurations and tuning guidance for Premium Files (NFS/SMB) with SAP workloads, including how to adjust based on observed bandwidth/IOPS utilization; these are SAP-on-Azure-specific recommendations. |
 | [Azure Storage types for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage) | decision-making | 0.74 | Planning guide comparing Azure storage types for SAP, including which are certified/usable for SAP HANA; likely includes decision criteria and suitability matrices that help choose between storage options for specific SAP scenarios. |
 | [Configuration options to minimize network latency with SAP applications](https://learn.microsoft.com/en-us/azure/sap/workloads/proximity-placement-scenarios) | architecture-patterns | 0.74 | Describes SAP deployment scenarios to minimize network latency, including updated guidance on proximity placement groups for zonal deployments; provides concrete architecture options and when to use them. |
+| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.74 | The article provides step-by-step, product-specific configuration details for setting up a Pacemaker cluster on RHEL in Azure, including concrete commands, resource/cluster parameter names, and Azure-specific settings for high availability. This is expert, implementation-level knowledge beyond generic HA or Pacemaker concepts and fits best under configuration rather than generic best practices. |
 | [SAP HANA data tiering and archiving guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-tiering-guidance) | decision-making | 0.72 | Focuses on data archiving and tiering options for SAP HANA on Azure to balance cost and performance; provides scenario-based guidance for when to use different tiering options during migration or footprint reduction. |
 | [About HA for Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-start) | architecture-patterns | 0.70 | Describes how to achieve high availability for SAP NetWeaver using Azure VMs, with Azure-specific HA patterns and options; these are product-specific architecture patterns rather than generic HA concepts. |
 | [About SAP HANA availability in Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-availability-overview) | architecture-patterns | 0.70 | Overview of availability options and scenarios for SAP HANA on Azure VMs; describes multiple Azure-based patterns to increase availability, which are specific to SAP HANA on Azure rather than generic DB HA concepts. |
@@ -138,7 +153,6 @@
 | [SAP front-end printing with Universal Print](https://learn.microsoft.com/en-us/azure/sap/workloads/universal-print-sap-frontend) | integrations | 0.70 | Explains how to connect SAP front-end printing workflows to Microsoft Universal Print, including printer mapping, driver/queue configuration, and SAP output device settings that are specific to this integration. |
 | [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability) | configuration | 0.70 | Describes concrete setup of SAP HANA system replication for HA on Azure VMs with SLES, including instance roles and replication configuration details specific to this platform. |
 | [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel) | architecture-patterns | 0.70 | Describes using HANA System Replication as the only supported HA option on Azure VMs, with primary/secondary node patterns and sync/async modes. This is a concrete HA architecture pattern specific to SAP HANA on Azure RHEL. |
-| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.70 | Step-by-step configuration of a Pacemaker cluster on RHEL in Azure, including OS-version-specific commands and settings. These are product- and platform-specific configuration patterns. |
 | [Soft stop SAP instances and HANA database](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/soft-stop-sap-and-hana-database) | integrations | 0.70 | Soft-stop behavior is exposed via PowerShell/CLI/REST; page likely documents specific commands, flags, and API parameters for VIS-based soft stop, which are product-specific integration patterns. |
 | [Start and stop SAP systems](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems) | integrations | 0.70 | Describes starting/stopping SAP systems and HANA via VIS using portal, PowerShell, CLI, and REST; likely includes specific API/command parameters and patterns unique to this VIS integration. |
 | [Start and stop SAP systems and VMs](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/stop-start-sap-and-underlying-vm) | integrations | 0.70 | Focuses on starting/stopping SAP and underlying VMs via VIS REST API and mentions API versioning; likely includes endpoint versions, request schemas, and parameters that are specific integration details. |

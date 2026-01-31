@@ -3,7 +3,7 @@ name: azure-container-apps
 description: Expert knowledge for Azure Container Apps development including security, deployment, configuration, decision making, architecture & design patterns, best practices, troubleshooting, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Container Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Container Apps Skill
 
@@ -21,14 +21,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L46 | Diagnosing and fixing Container Apps issues: image pulls, container create/start/runtime errors, health probes, storage mounts, port config, debug console, logs, and Java log levels. |
-| Best Practices | L47-L52 | Guidance on reducing cold starts and tuning app performance, plus Java-specific memory optimization techniques for Azure Container Apps. |
+| Best Practices | L47-L52 | Guidance on reducing cold starts and tuning app performance, plus Java-specific memory optimization techniques for efficient, reliable Azure Container Apps. |
 | Decision Making | L53-L68 | Guidance on choosing Container Apps plans, compute, GPUs, environments, workflows, and deployment options, plus cost modeling and migration/legacy environment decisions. |
-| Architecture & Design Patterns | L69-L73 | Guidance on designing blue-green deployment for Azure Container Apps, including traffic splitting, versioning, rollout workflows, and safe app upgrades with minimal downtime. |
-| Limits & Quotas | L74-L78 | Details on resource limits and quotas for Container Apps, including CPU/memory caps, scaling constraints, per-environment limits, and regional or subscription-level maximums. |
-| Security | L79-L108 | Auth, network, and data security for Container Apps: identity providers, mTLS, Dapr auth, secrets/managed identity, private endpoints, NSGs/firewalls/WAF, and security best practices. |
-| Configuration | L109-L154 | Configuring Container Apps runtime: ingress, networking, domains, TLS, storage, env vars, logging/monitoring, Dapr, Java features, sessions, routing, scaling, and workload profiles. |
-| Integrations & Coding Patterns | L155-L175 | Patterns and samples for integrating Container Apps with Functions, Spring components, Front Door, and AI code-interpreter/MCP sessions, plus related scaling and CLI management. |
-| Deployment | L176-L183 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), scaling with Dapr+KEDA+Bicep, and creating zone-redundant apps in virtual networks. |
+| Architecture & Design Patterns | L69-L73 | Strategies and steps to implement blue-green deployments in Azure Container Apps, including traffic splitting, version management, and safe rollout/rollback patterns. |
+| Limits & Quotas | L74-L78 | Details on Azure Container Apps resource limits and quotas, including app, environment, scaling, CPU/memory, networking, and concurrency constraints. |
+| Security | L79-L108 | Auth, network, and data protection for Container Apps: identity providers, mTLS, Dapr security, secrets, managed identity, private endpoints, firewalls, WAF, and security best practices. |
+| Configuration | L109-L154 | Configuring Container Apps runtime: networking, ingress, domains/certs, storage, env vars, logging/monitoring, Dapr, Java features/metrics, sessions, routing, scaling, and workload profiles. |
+| Integrations & Coding Patterns | L155-L175 | Patterns and samples for integrating Container Apps with Functions, Spring components, Front Door, and AI code-interpreter/MCP sessions, including scaling, networking, and session APIs. |
+| Deployment | L176-L183 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), scaling with Dapr/KEDA/Bicep, and creating zone-redundant apps in virtual networks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -61,7 +61,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Plan and use serverless GPUs in Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview |
 | Choose between T4 and A100 GPUs in Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/gpu-types |
 | Decide and migrate from Functions v1 to v2 on Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions |
-| Compare and choose Azure Container Apps plan types | https://learn.microsoft.com/en-us/azure/container-apps/plans |
+| Choose the right Azure Container Apps plan type | https://learn.microsoft.com/en-us/azure/container-apps/plans |
 | Choose compute and billing structures for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/structure |
 | Choose workflow options for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview |
 | Choose appropriate workload profiles for Azure Container Apps | https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview |

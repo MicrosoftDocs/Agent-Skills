@@ -8,6 +8,13 @@
 - **Classified**: 43
 - **Unclassified**: 22
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 64
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -21,6 +28,13 @@
 | security | 8 | 12.3% |
 | troubleshooting | 4 | 6.2% |
 | *(Unclassified)* | 22 | 33.8% |
+
+## Changes
+
+### Updated Pages
+
+- [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements)
+  - Updated: 2024-11-06T12:14:00.000Z → 2026-01-29T23:12:00.000Z
 
 ## Classified Pages
 
@@ -45,7 +59,6 @@
 | [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | configuration | 0.80 | Managing dev box definitions involves selecting source images, compute sizes, and storage sizes. These are concrete configuration options unique to Dev Box, including allowed values and behaviors. |
 | [Manage a dev box pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools) | configuration | 0.80 | Managing pools requires setting image, network connection, and hosting model (Microsoft-hosted vs customer network). These are Dev Box–specific configuration patterns and constraints. |
 | [Manage a dev box project](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects) | configuration | 0.80 | Covers configuration of projects and dev box pools, including definitions and network connections. These are concrete Dev Box–specific configuration patterns and settings. |
-| [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements) | configuration | 0.80 | Networking requirements articles typically list specific ports, protocols, FQDNs, and service dependencies. These are product-specific configuration parameters that qualify as expert knowledge. |
 | [Troubleshoot Task view issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-dev-box-task-view) | troubleshooting | 0.80 | Focused on troubleshooting a specific Task view issue with stale Dev Box entries; provides concrete steps to resolve a product-specific problem, fitting troubleshooting criteria. |
 | [Configure an autostop schedule](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-schedule) | configuration | 0.75 | Describes configuring autostop schedules with constraints (one stop time, one timezone per pool, behavior differences with hibernation); these are product-specific configuration rules and settings. |
 | [Configure dev center imaging](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-center-imaging) | configuration | 0.75 | Covers how dev box pools use image definition files, automatic image build behavior, and options to control that behavior—service-specific configuration semantics beyond generic imaging concepts. |
@@ -54,6 +67,7 @@
 | [Configure user customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations) | configuration | 0.75 | Explains schema/usage of user customization files, validation behavior, and how they are applied to Dev Box projects—product-specific configuration details for these files. |
 | [Manage project access](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-access) | security | 0.75 | Describes granting access via Azure RBAC and mentions built-in DevCenter roles; such pages typically list specific role names and scopes, which are product-specific security configuration details. |
 | [Set up Dev Box service (ARM template)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-arm-template) | configuration | 0.75 | Describes an ARM template for Dev Box with infrastructure and configuration definitions. ARM templates expose explicit parameter names, allowed values, and defaults, which are product-specific configuration details. |
+| [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements) | configuration | 0.74 | The page documents product-specific network requirements for Microsoft Dev Box, including required endpoints, ports, and connectivity patterns needed to deploy and use dev boxes. These are concrete configuration details that aren't generally known from training and are needed to correctly set up network access, so it best fits the configuration sub-skill. |
 | [Authenticate to REST APIs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-authenticate) | security | 0.70 | Describes concrete authentication steps, token retrieval from Entra ID, token structure/validity, and bearer token usage for Dev Box REST APIs—product-specific security/auth configuration details. |
 | [Configure Dev Box Hibernation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-hibernation) | configuration | 0.70 | Explains configuring hibernation at image/definition levels and automation; likely includes specific settings and allowed values, making it configuration-focused expert guidance. |
 | [Configure Visual Studio caches](https://learn.microsoft.com/en-us/azure/dev-box/how-to-generate-visual-studio-caches) | best-practices | 0.70 | Describes a product-specific optimization (precaching Visual Studio solutions on Dev Box images) to reduce load times. This is actionable, Dev Box– and VS-specific guidance that qualifies as a best-practice pattern. |

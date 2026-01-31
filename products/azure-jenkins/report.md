@@ -8,6 +8,13 @@
 - **Classified**: 12
 - **Unclassified**: 1
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 13
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-jenkins/azure-jenkins.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -16,6 +23,8 @@
 | deployment | 10 | 76.9% |
 | integrations | 1 | 7.7% |
 | *(Unclassified)* | 1 | 7.7% |
+
+## Changes
 
 ## Classified Pages
 

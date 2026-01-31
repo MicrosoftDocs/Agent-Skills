@@ -8,6 +8,13 @@
 - **Classified**: 380
 - **Unclassified**: 135
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 515
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 18 | 3.5% |
 | troubleshooting | 64 | 12.4% |
 | *(Unclassified)* | 135 | 26.2% |
+
+## Changes
 
 ## Classified Pages
 
@@ -258,7 +267,7 @@
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/resources/troubleshooting/voice-video-calling/general-troubleshooting-strategies/overview) | troubleshooting | 0.70 | Part of the ACS Troubleshooting Guide; while high-level, it focuses on structured debugging strategies for ACS calls (application vs SDK vs environment). Likely includes product-specific diagnostic steps and tools, fitting troubleshooting. |
 | [Prevent phone numbers from being flagged as spam](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/prevent-spam-flag) | best-practices | 0.70 | Describes causes and mitigations for spam-flagged numbers; likely includes concrete behavioral recommendations and carrier-specific considerations that are product-specific best practices. |
 | [Proxy your calling traffic](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/proxy-calling-support-tutorial) | configuration | 0.70 | Describes routing ACS media/signaling via custom servers; likely includes specific configuration fields for proxy/TURN settings in the SDK, which are detailed configuration options. |
-| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Concept article on using Log Analytics for call summary and diagnostic logs; typically includes table names, column names, and KQL query patterns, which are concrete configuration/usage details for analytics. |
+| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics for call summary and diagnostic logs; likely includes specific table names, fields, and query patterns unique to ACS. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics for call summary and diagnostic logs; likely includes specific table names, fields, and query patterns unique to ACS. |
 | [Reaction messages](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-reaction-messages) | integrations | 0.70 | Shows how to send reaction messages via the Advanced Messages SDK, implying specific API methods and parameters for this feature, which are product-specific integration details. |
 | [Rooms logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/rooms-logs) | configuration | 0.70 | Rooms logs article for Azure Monitor typically documents log categories, table names, and field definitions. These schema/config details are product-specific telemetry configuration, not general concepts. |

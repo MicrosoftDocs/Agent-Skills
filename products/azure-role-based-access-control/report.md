@@ -8,6 +8,13 @@
 - **Classified**: 95
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 104
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-role-based-access-control/azure-role-based-access-control.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | security | 80 | 76.9% |
 | troubleshooting | 4 | 3.8% |
 | *(Unclassified)* | 9 | 8.7% |
+
+## Changes
 
 ## Classified Pages
 

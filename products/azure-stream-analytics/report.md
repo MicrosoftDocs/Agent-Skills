@@ -8,6 +8,13 @@
 - **Classified**: 105
 - **Unclassified**: 63
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 168
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 15 | 8.9% |
 | troubleshooting | 16 | 9.5% |
 | *(Unclassified)* | 63 | 37.5% |
+
+## Changes
 
 ## Classified Pages
 

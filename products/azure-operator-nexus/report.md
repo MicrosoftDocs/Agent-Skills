@@ -8,6 +8,13 @@
 - **Classified**: 155
 - **Unclassified**: 52
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 207
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -21,6 +28,8 @@
 | security | 27 | 13.0% |
 | troubleshooting | 42 | 20.3% |
 | *(Unclassified)* | 52 | 25.1% |
+
+## Changes
 
 ## Classified Pages
 

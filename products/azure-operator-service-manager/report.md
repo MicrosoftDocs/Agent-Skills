@@ -8,6 +8,13 @@
 - **Classified**: 27
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 47
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -18,6 +25,8 @@
 | security | 4 | 8.5% |
 | troubleshooting | 2 | 4.3% |
 | *(Unclassified)* | 20 | 42.6% |
+
+## Changes
 
 ## Classified Pages
 

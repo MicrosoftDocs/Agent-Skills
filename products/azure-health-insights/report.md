@@ -8,6 +8,13 @@
 - **Classified**: 11
 - **Unclassified**: 28
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 39
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-insights/azure-health-insights.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -15,6 +22,8 @@
 | configuration | 10 | 25.6% |
 | security | 1 | 2.6% |
 | *(Unclassified)* | 28 | 71.8% |
+
+## Changes
 
 ## Classified Pages
 

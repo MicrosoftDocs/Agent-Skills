@@ -3,7 +3,7 @@ name: azure-scheduler
 description: Expert knowledge for Azure Scheduler development including decision making. Use when building, debugging, or optimizing Azure Scheduler applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Scheduler Skill
 
@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L25-L28 | Guidance for moving from deprecated Azure Scheduler to Logic Apps, including migration steps, feature mapping, and redesigning schedules and actions. |
+| Decision Making | L25-L28 | Guidance for migrating and converting Azure Scheduler jobs into Azure Logic Apps, including mapping schedules, actions, and configurations. |
 
 ### Decision Making
 | Topic | URL |

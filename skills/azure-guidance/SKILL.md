@@ -3,7 +3,7 @@ name: azure-guidance
 description: Expert knowledge for Azure Guidance development including decision making, best practices, security, architecture & design patterns, troubleshooting, deployment, and configuration. Use when building, debugging, or optimizing Azure Guidance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Guidance Skill
 
@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
-| Best Practices | L45-L77 | Best practices for designing, operating, and scaling resilient, high‑availability Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including performance, DR, patching, backup, and chaos/load testing. |
-| Decision Making | L78-L139 | Guidance for choosing the right Azure services, data/AI platforms, and compute options (often vs AWS/GCP/EKS), including migration, governance, networking, and cost trade-offs. |
-| Architecture & Design Patterns | L140-L276 | End-to-end Azure solution architectures and patterns for data/analytics, mission-critical apps, microservices, hybrid/edge, mainframe migration, SAP/IBM workloads, and enterprise integration/DR. |
-| Security | L277-L306 | Securing Azure workloads and hybrid/cloud environments: AKS, VMs, SAP, Outlook, identity/Zero Trust, network/firewall/WAF, Defender/Sentinel/XDR, and Microsoft security for AWS. |
-| Configuration | L307-L312 | Guides for configuring GitOps workflows on AKS (Flux, Argo CD) and setting up monitoring pipelines for Azure Functions using Event Hubs. |
-| Deployment | L313-L324 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zones, governance tooling, and mission‑critical rollout/testing. |
+| Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, network, registry, and admission controller issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
+| Best Practices | L45-L77 | Best practices for designing, operating, and scaling resilient, high‑availability Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including performance, DR, patching, backup, and health monitoring. |
+| Decision Making | L78-L139 | Guidance for choosing the right Azure services, data/AI platforms, and architectures (often vs AWS/GCP/EKS), including compute, storage, networking, migration, and governance decisions. |
+| Architecture & Design Patterns | L140-L275 | End-to-end Azure solution blueprints: mission-critical, hybrid, data/analytics, IoT, mainframe migration, SAP/IBM/Oracle, AKS/Container Apps, networking, DR/BCDR, and microservices patterns. |
+| Security | L276-L305 | Securing Azure workloads and hybrid/cloud environments: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
+| Configuration | L306-L311 | Configuring GitOps for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines via Event Hubs, including deployment, sync, and observability settings. |
+| Deployment | L312-L323 | CI/CD and automation patterns for deploying APIs, AKS microservices, landing zones, sandboxes, and governance tools using Azure DevOps, Pipelines, Bicep, Helm, and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -199,7 +199,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Design big data architectures with Azure services | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-data |
 | Use event-driven architecture patterns on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven |
 | Design and evaluate N-tier architectures on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier |
-| Apply the Web-Queue-Worker pattern on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker |
 | Partition Azure workloads around platform limits | https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/partition |
 | Architect ML inference workloads on Azure IoT Edge | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/machine-learning-inference-iot-edge |
 | Scale Azure IoT Hub solutions to millions of devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/scale-iot-solution-azure |

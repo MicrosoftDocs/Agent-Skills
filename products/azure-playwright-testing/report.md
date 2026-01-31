@@ -8,6 +8,13 @@
 - **Classified**: 17
 - **Unclassified**: 5
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 22
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-playwright-testing/azure-playwright-testing.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | security | 3 | 13.6% |
 | troubleshooting | 2 | 9.1% |
 | *(Unclassified)* | 5 | 22.7% |
+
+## Changes
 
 ## Classified Pages
 

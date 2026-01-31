@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 274
+- **Updated Pages**: 1
+- **Unchanged**: 273
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -31,6 +31,11 @@
 | *(Unclassified)* | 56 | 20.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [AI gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities)
+  - Updated: 2025-11-13T08:00:00.000Z → 2026-01-30T23:12:00.000Z
 
 ## Classified Pages
 
@@ -266,7 +271,6 @@
 | [5 - Monitor published APIs](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-azure-monitor) | 0.40 | Monitoring tutorial using Azure Monitor; describes how to set up metrics, alerts, and logs, but summary does not indicate detailed configuration tables or product-specific limits. |
 | [7 - Add revisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-get-started-revise-api) | 0.40 | Tutorial on using revisions for nonbreaking changes; mainly workflow guidance without numeric thresholds, configuration matrices, or error-code-based troubleshooting. |
 | [8 - Add multiple versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-get-started-publish-versions) | 0.40 | Tutorial on publishing multiple API versions; focuses on versioning workflow rather than detailed configuration, limits, or decision matrices with quantified trade-offs. |
-| [AI gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) | 0.40 | High-level overview of AI gateway capabilities; summary is conceptual and marketing-style without explicit configuration parameters, limits, or decision matrices. |
 | [API version retirements (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/api-version-retirement-sep-2023) | 0.40 | API version retirement notice with dates and version identifiers; does not include configuration parameter tables, limits, or detailed migration decision criteria. |
 | [Breaking changes overview](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/overview) | 0.40 | Lists upcoming breaking changes and retirements. While time-bound and specific, it’s more roadmap/announcement content than reusable expert configuration, limits, or troubleshooting guidance. |
 | [Configure credential manager - GitHub](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | 0.40 | Walkthrough for connecting to GitHub API with OAuth 2.0; appears as a how-to tutorial without explicit mention of detailed configuration matrices or error mappings. |
@@ -297,6 +301,7 @@
 | [GraphQL API options](https://learn.microsoft.com/en-us/azure/api-management/graphql-apis-overview) | 0.30 | Overview of GraphQL support and models; primarily conceptual without detailed config tables or numeric thresholds. |
 | [Monetization overview](https://learn.microsoft.com/en-us/azure/api-management/monetization-overview) | 0.30 | High-level monetization overview and strategy guidance; summary indicates conceptual/business content without concrete product-specific configuration, limits, or decision matrices. |
 | [v2 service tiers](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview) | 0.30 | Introduces v2 tiers and scenarios but summary points to another page for detailed comparison; likely an overview without concrete limits, matrices, or config parameters. |
+| [AI gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) | 0.20 | Page appears to be a capabilities/overview description of the AI gateway in Azure API Management. The summary does not indicate presence of numeric limits, detailed configuration tables, error-code-based troubleshooting, or other product-specific parameter references; it mainly describes what the AI gateway is and what it can manage. |
 | [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview) | 0.20 | Gateway overview and comparison of Azure-managed vs self-hosted gateways appears conceptual; summary does not indicate numeric thresholds, config tables, or detailed decision matrices. |
 | [Add an API manually](https://learn.microsoft.com/en-us/azure/api-management/add-api-manually) | 0.20 | Step-by-step portal tutorial for adding an API; no detailed config tables, limits, or product-specific edge cases. |
 | [Azure PowerShell](https://github.com/Azure/azure-docs-powershell-samples) | 0.20 | GitHub repo landing page for sample code; description is meta-information about sample location, not a documentation page with structured expert guidance or configuration details. |

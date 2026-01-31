@@ -5,13 +5,13 @@
 - **Total Pages**: 547
 - **Fetched**: 547
 - **Fetch Failed**: 0
-- **Classified**: 416
-- **Unclassified**: 131
+- **Classified**: 414
+- **Unclassified**: 133
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 541
+- **Updated Pages**: 5
+- **Unchanged**: 542
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -21,31 +21,29 @@
 |------|-------|------------|
 | architecture-patterns | 7 | 1.3% |
 | best-practices | 29 | 5.3% |
-| configuration | 169 | 30.9% |
+| configuration | 167 | 30.5% |
 | decision-making | 30 | 5.5% |
 | deployment | 27 | 4.9% |
 | integrations | 69 | 12.6% |
 | limits-quotas | 16 | 2.9% |
 | security | 30 | 5.5% |
 | troubleshooting | 39 | 7.1% |
-| *(Unclassified)* | 131 | 23.9% |
+| *(Unclassified)* | 133 | 24.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Data Collection Basics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
-  - Updated: 2025-05-23T22:02:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create and configure a resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource)
-  - Updated: 2025-02-26T05:33:00.000Z → 2026-02-27T08:00:00.000Z
-- [Enable React, React Native, Angular](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions)
-  - Updated: 2025-06-18T05:22:00.000Z → 2026-02-27T08:00:00.000Z
-- [Azure App Service](https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-app-service)
-  - Updated: 2025-10-29T05:10:00.000Z → 2026-02-27T08:00:00.000Z
-- [Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability)
-  - Updated: 2025-05-23T22:02:00.000Z → 2026-02-27T08:00:00.000Z
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication)
-  - Updated: 2025-10-22T05:10:00.000Z → 2026-02-27T08:00:00.000Z
+- [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-functions)
+  - Updated: 2025-10-28T05:09:00.000Z → 2026-01-30T06:03:00.000Z
+- [Live metric stream](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-01-30T06:03:00.000Z
+- [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric)
+  - Updated: 2025-04-03T22:03:00.000Z → 2026-01-30T06:03:00.000Z
+- [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests)
+  - Updated: 2025-04-03T22:03:00.000Z → 2026-01-30T06:03:00.000Z
+- [Statsbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/app/statsbeat)
+  - Updated: 2024-09-20T22:00:00.000Z → 2026-01-30T06:03:00.000Z
 
 ## Classified Pages
 
@@ -214,6 +212,7 @@
 | [Azure Monitor network access requirements](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/azure-monitor-network-access) | configuration | 0.70 | Explains endpoint access and firewall configuration for Azure Monitor, likely including specific service tags, endpoint URLs, and required ports. These are concrete configuration details unique to Azure Monitor connectivity. |
 | [Azure Monitor pipeline (preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/edge-pipeline-configure) | configuration | 0.70 | Configuration-focused article for Azure Monitor pipeline in edge/multicloud scenarios; likely includes specific pipeline settings, parameters, and options unique to this feature rather than just conceptual overview. |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy) | deployment | 0.70 | Describes built-in policies and initiatives for automatically installing the agent and associating DCRs on VM resources, which is specific deployment automation guidance. |
+| [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric) | deployment | 0.70 | The page describes enabling Application Insights Profiler for .NET on Azure Service Fabric via Azure Diagnostics and ARM templates, which is a product-specific deployment pattern. It focuses on how to deploy and configure the profiler extension on a specific platform (Service Fabric cluster), which fits the deployment sub-skill. This is specialized operational knowledge that goes beyond generic deployment commands. |
 | [Azure VM and Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-vm-vmss-apps) | deployment | 0.70 | Covers enabling monitoring via VM extensions and PowerShell automation for IIS-hosted apps. This is a deployment pattern with product-specific steps and constraints for VM/VMSS environments. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices) | best-practices | 0.70 | Explicitly a best practices guide for ensuring rich data for investigations; likely includes product-specific recommendations on telemetry configuration and usage patterns beyond generic advice. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/best-practices-alerts) | best-practices | 0.70 | Described as an architectural best practices article for Azure Monitor alerts based on the Well-Architected Framework; likely includes concrete DO/DON'T guidance and product-specific recommendations for configuring alerts, action groups, and processing rules beyond generic theory. |
@@ -325,7 +324,6 @@
 | [Supported KQL](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-kql) | integrations | 0.70 | Details supported/unsupported KQL operators and special operators only available in transformations; this is product-specific query/SDK behavior and constraints, fitting integrations & coding patterns. |
 | [Supported region mappings](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-region-mapping) | limits-quotas | 0.70 | Provides explicit region mapping tables between Container insights, Log Analytics workspaces, and custom metrics; effectively a constraints matrix on supported regions. |
 | [Switch to Prometheus visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-experience-v2) | configuration | 0.70 | Gives concrete steps and configuration changes to move from classic Log Analytics-based visuals to Managed Prometheus-only visualization; product-specific migration config. |
-| [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests) | integrations | 0.70 | Code-focused article showing how to manually track requests for Application Insights Profiler in non-auto-instrumented .NET apps. Contains product-specific telemetry APIs and patterns (where to start/stop request tracking) that are unique to this integration. |
 | [Transform JSON data with JSONPath](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-jsonpath) | integrations | 0.70 | Describes using JSONPath within Azure Monitor workbooks to transform JSON into tabular data; includes product-specific query syntax and transformation behavior, fitting integrations/coding patterns. |
 | [Troubleshooting metric charts](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-troubleshoot) | troubleshooting | 0.70 | Explicitly a troubleshooting article for metric charts; likely organized by symptoms and resolutions for Azure Monitor metrics explorer, which is product-specific troubleshooting guidance. |
 | [Uninstall](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent-uninstall) | configuration | 0.70 | Provides detailed steps for safely removing the Dependency Agent on Windows and Linux VMs/VMSS. This is product-specific configuration/maintenance guidance with concrete commands or procedures. |
@@ -345,6 +343,7 @@
 | [Enable React, React Native, Angular](https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions) | integrations | 0.68 | Page is about framework-specific plugins (React, React Native, Angular) for the Application Insights JavaScript SDK. These typically include product-specific configuration options and code patterns unique to these integrations (plugin setup, initialization options, framework hooks), which qualify as expert integration knowledge beyond generic SDK usage. |
 | [Monitor AKS applications with OpenTelemetry Protocol (OTLP)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/kubernetes-open-protocol) | configuration | 0.68 | Monitoring AKS apps via OTLP into Application Insights requires namespace/deployment-level settings, instrumentation configuration, and Azure Monitor-specific parameters; these are concrete product configuration details beyond generic OpenTelemetry usage. |
 | [Monitor the health of log search alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/log-alert-rule-health) | troubleshooting | 0.68 | Explains how to interpret health status of log search alert rules and what to do when there are issues, likely including specific statuses and remediation steps. |
+| [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests) | integrations | 0.68 | Page provides product-specific coding patterns and API usage for manually tracking request start/end so Profiler can capture telemetry in non-automatically-instrumented .NET apps (e.g., Service Fabric stateless APIs). This is concrete integration code and behavior specific to Application Insights Profiler, beyond generic tracing concepts. |
 | [AMA migration helper workbook](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration-helper-workbook) | decision-making | 0.65 | Workbook-based tool for discovering what to migrate and tracking progress; includes automatic migration recommendations based on usage, which is explicit decision support for migration scenarios. |
 | [Action groups](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups) | configuration | 0.65 | Action groups involve multiple notification types and automated actions; such pages typically list specific configuration options (channels, parameters, payloads). The article is about creating and managing them, which aligns with configuration details unique to Azure Monitor. |
 | [Activity log or health alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-activity-log-alert-rule) | configuration | 0.65 | Shows how to create/edit these specific alert rule types and define action groups/processing rules; involves concrete rule configuration for Azure Monitor. |
@@ -355,7 +354,6 @@
 | [Autoscale with multiple profiles](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-multiprofile) | best-practices | 0.65 | Provides concrete, Azure-specific recommendations on configuring multiple and recurring autoscale profiles for different days/times and scenarios like weekends or Black Friday. |
 | [Azure App Service in Windows](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler) | deployment | 0.65 | States Profiler is preinstalled and can run on ASP.NET/ASP.NET Core apps using Basic tier or higher, which is a deployment constraint by tier. This is product-specific deployment knowledge about where Profiler is supported. |
 | [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/grafana-azure-data-explorer) | integrations | 0.65 | Describes creating Grafana dashboards using Azure Data Explorer data; such integration articles typically include data source configuration parameters and product-specific settings. |
-| [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-functions) | configuration | 0.65 | Functions integration typically requires specific host.json/app settings, connection strings, and worker-specific configuration. These are product-specific configuration parameters for this service. |
 | [Azure resource queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/azure-resource-queries) | integrations | 0.65 | Covers querying logs in the context of Azure resources instead of workspaces, a product-specific API usage pattern for integrating with resource logs. |
 | [Batch queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/batch-queries) | integrations | 0.65 | Explains how to batch queries via the API, including behavior and deprecation notes; these are specific integration patterns for this service. |
 | [Best practices and samples](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations-samples) | integrations | 0.65 | Provides sample transformation queries for common scenarios; these are concrete code patterns for working with Azure Monitor’s ingestion pipeline. |
@@ -405,7 +403,6 @@
 | [Scenarios](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/network-security-perimeter-scenarios) | architecture-patterns | 0.65 | Provides scenario-based configurations of network security perimeters for Azure Monitor; these are concrete architecture patterns for different network isolation scenarios. |
 | [Self-monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/monitor-azure-monitor-reference) | configuration | 0.65 | Acts as a reference for monitoring data for Azure Monitor, likely enumerating specific signals, tables, and metrics. These are detailed data model/configuration references rather than conceptual overviews. |
 | [Simple log search alert](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-simple-alert) | configuration | 0.65 | Shows how to create/edit simple log alert rules and notes support for Analytics vs Basic logs; implies specific rule parameters and plan-related behavior, which are configuration details. |
-| [Statsbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/app/statsbeat) | configuration | 0.65 | Describes which Statsbeat metrics are collected, their purposes, and constraints (e.g., not supporting Private Link). These are product-specific telemetry/configuration behaviors not captured by generic knowledge. |
 | [Stream monitoring data to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) | integrations | 0.65 | Describes how to configure streaming of Azure Monitor data to Event Hubs for partner SIEM/analytics tools, including product-specific configuration steps and integration details. |
 | [Summary rules](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/summary-rules) | configuration | 0.65 | Covers creating, starting, stopping, and troubleshooting summary rules; these are product-specific configuration objects with parameters and operational behavior, fitting configuration with some troubleshooting aspects. |
 | [Technical details](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-metrics-details) | configuration | 0.65 | Technical details article; likely includes specific service behaviors, configuration parameters, and constraints unique to Azure Monitor managed service for Prometheus. |
@@ -427,7 +424,6 @@
 | [Audit queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-audit) | configuration | 0.60 | Describes log query audit logs schema and telemetry fields; product-specific columns and usage patterns for auditing queries, fitting configuration/usage of audit data. |
 | [Azure App Service in Linux](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-aspnetcore-linux) | deployment | 0.60 | Focuses on enabling Profiler for ASP.NET Core web apps hosted on Linux App Service. This is a deployment scenario with product-specific steps and constraints for that hosting environment. |
 | [Azure Functions app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-azure-functions) | deployment | 0.60 | Explains enabling Profiler for Functions apps on App Service plan, implying specific deployment requirements and supported hosting plans for Profiler. |
-| [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric) | deployment | 0.60 | Describes installing Azure Diagnostics extension via ARM template to enable Profiler on Service Fabric clusters. This is a product-specific deployment method and requirement. |
 | [Azure Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-vm) | deployment | 0.60 | Covers running Profiler on VMs/VMSS via multiple methods and notes current limitations. These are deployment patterns and constraints specific to this product and environment. |
 | [CLI, PowerShell, or ARM templates](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-rule-cli-powershell-arm) | deployment | 0.60 | Shows how to create alert rules using CLI, PowerShell, and ARM templates; this is about programmatic deployment methods for alert rules, fitting deployment/automation patterns for this service. |
 | [Common patterns](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-common-scale-patterns) | architecture-patterns | 0.60 | Describes specific autoscale patterns and when to use them for Azure resources; focuses on pattern selection and trade-offs rather than generic scaling concepts. |
@@ -518,7 +514,7 @@
 | [Examples of metric charts](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metric-chart-samples) | 0.30 | Example chart configurations are tutorial-style usage of Metrics Explorer without product-specific limits, configuration tables, or non-obvious expert-only behaviors. |
 | [Exception volume](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-exception-volume) | 0.30 | Smart detection for abnormal exception volume is described conceptually; summary does not indicate concrete limits, configuration tables, or error-code-based troubleshooting. |
 | [Interactive views](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-analyze) | 0.30 | Describes how to view and interpret portal-based performance views for Kubernetes; largely UI usage and visualization guidance without deep configuration, limits, or troubleshooting mappings. |
-| [Live metric stream](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) | 0.30 | Explains live metrics usage at a high level; summary does not show specific configuration parameters, limits, or troubleshooting patterns. |
+| [Live metric stream](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) | 0.30 | Live Metrics page is primarily a feature/usage overview (how to view and filter real-time metrics and traces). The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [Log Analytics workspace insights](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-insights-overview) | 0.30 | Overview of Workspace Insights and onboarding; primarily conceptual and navigational without strong indication of detailed configuration tables or limits. |
 | [Memory leak](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-potential-memory-leak) | 0.30 | Potential memory leak smart detection is presented as a feature overview; no evidence of numeric thresholds, config parameter tables, or detailed troubleshooting mappings. |
 | [OpenTelemetry on Azure](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry) | 0.30 | High-level overview of OpenTelemetry on Azure and roadmap; lacks specific configuration parameters, limits, or troubleshooting mappings. |
@@ -532,6 +528,7 @@
 | [Send to Excel](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-excel) | 0.30 | Mentions that limits exist and refers to workspace limits documentation, but does not itself list specific numeric limits or detailed configuration parameters. |
 | [Simple mode](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-simple-mode) | 0.30 | How-to use simple mode UI; primarily tutorial/UX guidance without detailed configuration tables, limits, or error-resolution mappings. |
 | [Smart detection](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/proactive-diagnostics) | 0.30 | Describes smart detection conceptually and migration to alerts; appears to be feature overview and high-level behavior without detailed limits, configs, or troubleshooting mappings. |
+| [Statsbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/app/statsbeat) | 0.30 | Statsbeat page describes automatic collection of product usage data and its purposes; based on the summary, it doesn't clearly expose numeric limits, configuration tables, error codes, or detailed settings that match any expert-knowledge sub-skill type. It appears more as a feature/behavior explanation than a limits, configuration, or troubleshooting reference. |
 | [Telemetry data model](https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete) | 0.30 | Telemetry data model description is largely schema/structure and conceptual categorization; not configuration, limits, or troubleshooting guidance as defined by the sub-skill types. |
 | [Text parameters](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-text) | 0.30 | Explains text parameters usage and scenarios; lacks detailed configuration tables, limits, or troubleshooting mappings. |
 | [Time range brushing](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-time-brushing) | 0.30 | Describes time brushing behavior and exporting parameters; appears as conceptual feature usage without detailed config matrices or limits. |
@@ -555,6 +552,7 @@
 | [Application map](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-map) | 0.20 | Explains what an application map is and how it visualizes components; no expert-only limits, config tables, or error-code guidance evident. |
 | [Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability) | 0.20 | From the summary, this page describes what Application Insights availability tests are and how they work conceptually. There is no evidence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It appears to be a feature overview/tutorial rather than expert reference content. |
 | [Azure App Service](https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-app-service) | 0.20 | Content appears to be a general how-to/overview for enabling codeless monitoring (autoinstrumentation) for App Service. The summary emphasizes conceptual guidance and a deprecation note, but doesn't indicate detailed configuration tables, limits, or error-code-based troubleshooting that would meet any sub-skill criteria. |
+| [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-functions) | 0.20 | Page is primarily an overview of integrating Azure Functions with Application Insights and general monitoring capabilities. From the summary, it doesn't clearly expose specific configuration tables, numeric limits, error-code mappings, or product-specific parameter references that meet the expert-knowledge criteria for any sub-skill type. |
 | [Chart](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-chart-visualizations) | 0.20 | Describes chart types and basic customization; lacks detailed config parameters, limits, or decision matrices. |
 | [Collect and analyze OpenTelemetry data with Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/collect-use-observability-data) | 0.20 | High-level guidance on collecting and analyzing OpenTelemetry data with Azure Monitor; appears conceptual/onboarding without detailed config tables, limits, or error mappings. |
 | [Collect and view resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-resource-logs) | 0.20 | Tutorial for creating diagnostic settings and sending logs; procedural guidance without detailed parameter tables or limits. |

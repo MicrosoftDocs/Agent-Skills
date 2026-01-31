@@ -8,6 +8,13 @@
 - **Classified**: 86
 - **Unclassified**: 58
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 144
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 15 | 10.4% |
 | troubleshooting | 15 | 10.4% |
 | *(Unclassified)* | 58 | 40.3% |
+
+## Changes
 
 ## Classified Pages
 

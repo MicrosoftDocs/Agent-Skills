@@ -5,13 +5,13 @@
 - **Total Pages**: 351
 - **Fetched**: 351
 - **Fetch Failed**: 0
-- **Classified**: 287
-- **Unclassified**: 64
+- **Classified**: 285
+- **Unclassified**: 66
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 351
+- **Updated Pages**: 2
+- **Unchanged**: 349
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -21,16 +21,23 @@
 |------|-------|------------|
 | architecture-patterns | 4 | 1.1% |
 | best-practices | 30 | 8.5% |
-| configuration | 43 | 12.3% |
-| decision-making | 23 | 6.6% |
+| configuration | 42 | 12.0% |
+| decision-making | 22 | 6.3% |
 | deployment | 37 | 10.5% |
 | integrations | 109 | 31.1% |
 | limits-quotas | 4 | 1.1% |
 | security | 13 | 3.7% |
 | troubleshooting | 24 | 6.8% |
-| *(Unclassified)* | 64 | 18.2% |
+| *(Unclassified)* | 66 | 18.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing)
+  - Updated: 2025-11-18T23:12:00.000Z → 2026-01-30T23:12:00.000Z
+- [Flex Consumption plan](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan)
+  - Updated: 2026-01-16T06:11:00.000Z → 2026-01-30T18:17:00.000Z
 
 ## Classified Pages
 
@@ -220,7 +227,6 @@
 | [Mobile Apps](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-mobile-apps) | deployment | 0.70 | Contains explicit runtime-version support constraints (only Functions 1.x, not 2.x+ and end-of-support date) which are deployment/runtime compatibility details rather than just conceptual info. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-reference) | configuration | 0.70 | Monitoring data reference typically enumerates specific metrics, dimensions, log categories, and field names used by Azure Functions monitoring, which are product-specific configuration/telemetry details not obvious from general knowledge. |
 | [OpenAI](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-openai-text-completion) | integrations | 0.70 | Tutorial for adding an Azure OpenAI text completion binding; involves binding type names, parameter names, and configuration settings that are specific to the Azure Functions–OpenAI integration. |
-| [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing) | configuration | 0.70 | Demonstrates enabling OpenTelemetry tracing with Application Insights; likely includes environment variables, host.json settings, and instrumentation configuration parameters that are product-specific configuration knowledge. |
 | [Orchestration versioning](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning) | deployment | 0.70 | Focuses on orchestration versioning to enable zero-downtime deployments with breaking changes, including Durable-specific mechanisms for version isolation during deployment. |
 | [Orchestrations](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestrations) | best-practices | 0.70 | Describes orchestrator function behavior, constraints, and usage patterns specific to Durable Functions, including deterministic execution and replay-related gotchas that are product-specific coding patterns rather than generic concepts. |
 | [Output](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-output) | integrations | 0.70 | HTTP output binding reference normally lists binding properties (name, type, direction, statusCode, headers, body, etc.) with specific configuration options and defaults, which matches the integrations & coding patterns criteria. |
@@ -294,7 +300,6 @@
 | [Designing for identical input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-idempotent) | best-practices | 0.65 | Provides concrete design guidance and patterns for handling identical requests in event-driven Azure Functions, which are product-specific best practices for idempotency in this environment. |
 | [Develop and debug locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local) | configuration | 0.65 | Local development article explicitly calls out working with local.settings.json and shared guidance. These docs typically list specific setting names, their meanings, and sometimes allowed values (for example, AzureWebJobsStorage, FUNCTIONS_WORKER_RUNTIME), which are product-specific configuration details. |
 | [Express.js](https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs) | best-practices | 0.65 | Express.js migration guide contains concrete refactoring patterns (middleware replacement, routing, request/response mapping) and Azure Functions–specific gotchas that go beyond generic serverless advice. |
-| [Flex Consumption plan](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan) | decision-making | 0.65 | Explains Flex Consumption plan characteristics (VNet integration, memory size selection, scale behavior) and when to use it versus other plans, providing hosting-plan-specific decision guidance beyond generic concepts. |
 | [High availability](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-disaster-recovery-geo-distribution) | architecture-patterns | 0.65 | Provides Durable-specific disaster recovery and geo-redundancy patterns, including failover strategies for app and storage replicas, which are architecture decisions unique to this service. |
 | [IP addresses](https://learn.microsoft.com/en-us/azure/azure-functions/ip-addresses) | configuration | 0.65 | IP addresses article explains how to retrieve inbound/outbound IPs, when they change, and constraints around usage—product-specific configuration and behavior details not derivable from generic knowledge. |
 | [Input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-input) | integrations | 0.65 | Input binding docs for Tables generally specify binding attributes, key/partition mapping, and configuration options, which are concrete integration settings not covered by generic knowledge. |
@@ -367,6 +372,7 @@
 | [Monitor Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions) | 0.30 | High-level overview of monitoring Azure Functions with Azure Monitor; no specific limits, config tables, or error-code-based troubleshooting. |
 | [Monitor function executions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-monitoring) | 0.30 | Overview of monitoring executions with Application Insights; primarily conceptual capabilities, no detailed configuration parameters or product-specific troubleshooting mappings. |
 | [Networking FAQ](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq) | 0.30 | Networking FAQ is likely Q&A and conceptual guidance; the summary does not indicate detailed error codes, configuration tables, or numeric thresholds, so it doesn’t clearly meet expert-knowledge criteria. |
+| [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing) | 0.30 | Tutorial-style guidance on using OpenTelemetry distributed tracing with Azure Functions and Application Insights; likely focuses on step-by-step setup rather than detailed configuration tables, limits, or product-specific error mappings that meet the expert-knowledge criteria. |
 | [Process file uploads](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-blob-storage-events) | 0.30 | Quickstart for Blob Storage-triggered Functions using azd; focused on a single example deployment rather than exhaustive configuration options or decision matrices. |
 | [Python worker extensions](https://learn.microsoft.com/en-us/azure/azure-functions/develop-python-worker-extensions) | 0.30 | Tutorial-style guidance on creating Python worker extensions; likely focuses on how to build and publish extensions rather than detailed configuration tables, limits, or troubleshooting matrices. No clear indication of numeric limits, config tables, or error-code mappings. |
 | [Run scheduled tasks](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-scheduled-tasks) | 0.30 | Quickstart for Timer trigger scheduled tasks; focuses on creating and deploying one example, without extensive configuration parameter coverage or decision matrices. |
@@ -392,3 +398,4 @@
 | [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) | 0.10 | High-level product overview of Azure Functions; describes concepts and benefits without concrete limits, configuration tables, or error/diagnostic details. |
 | [Getting started](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started) | 0.10 | Navigation-style getting started article that routes to other content; no detailed configuration, limits, or troubleshooting content. |
 | [Scenarios](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scenarios) | 0.10 | Scenario listing for Azure Functions; describes use cases conceptually without product-specific configuration values, limits, or troubleshooting mappings. |
+| [Flex Consumption plan](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan) | - | Provided summary is a high-level overview of the Flex Consumption plan (benefits, characteristics) without exposing concrete limits, configuration tables, error codes, or decision matrices. No evidence of specific numerical limits, configuration parameters, or troubleshooting mappings that would qualify as expert knowledge under the defined categories. |

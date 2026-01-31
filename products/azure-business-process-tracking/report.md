@@ -8,6 +8,13 @@
 - **Classified**: 3
 - **Unclassified**: 3
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 6
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-business-process-tracking/azure-business-process-tracking.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -15,6 +22,8 @@
 | deployment | 2 | 33.3% |
 | integrations | 1 | 16.7% |
 | *(Unclassified)* | 3 | 50.0% |
+
+## Changes
 
 ## Classified Pages
 

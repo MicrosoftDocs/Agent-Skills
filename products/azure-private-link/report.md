@@ -8,6 +8,13 @@
 - **Classified**: 17
 - **Unclassified**: 32
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 49
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -20,6 +27,8 @@
 | security | 2 | 4.1% |
 | troubleshooting | 2 | 4.1% |
 | *(Unclassified)* | 32 | 65.3% |
+
+## Changes
 
 ## Classified Pages
 

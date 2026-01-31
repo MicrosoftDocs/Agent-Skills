@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 238
+- **Updated Pages**: 2
+- **Unchanged**: 236
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -21,9 +21,9 @@
 |------|-------|------------|
 | architecture-patterns | 2 | 0.8% |
 | best-practices | 4 | 1.7% |
-| configuration | 48 | 20.2% |
+| configuration | 49 | 20.6% |
 | decision-making | 18 | 7.6% |
-| deployment | 15 | 6.3% |
+| deployment | 14 | 5.9% |
 | integrations | 7 | 2.9% |
 | limits-quotas | 2 | 0.8% |
 | security | 52 | 21.8% |
@@ -31,6 +31,13 @@
 | *(Unclassified)* | 89 | 37.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure gateway-required integration](https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration)
+  - Updated: 2025-06-19T08:00:00.000Z → 2026-01-30T08:00:00.000Z
+- [Migrate from gateway-based integration](https://learn.microsoft.com/en-us/azure/app-service/migrate-gateway-based-vnet-integration)
+  - Updated: 2025-06-20T22:12:00.000Z → 2026-01-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -115,6 +122,7 @@
 | [Configure](https://learn.microsoft.com/en-us/azure/app-service/configure-language-python) | configuration | 0.70 | Explains how App Service runs Python apps, including virtual environment activation and dependency installation from requirements files; likely includes specific configuration behaviors and settings that constitute expert configuration knowledge. |
 | [Configure a sidecar container](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container-sidecar) | configuration | 0.70 | Tutorial for configuring sidecar containers, including OpenTelemetry collector; likely includes App Service–specific sidecar settings and limits (e.g., how to define sidecars, environment variables). |
 | [Configure an App Service Environment for zone redundancy](https://learn.microsoft.com/en-us/azure/app-service/environment/configure-zone-redundancy-environment) | configuration | 0.70 | Zone redundancy setup for ASE and Isolated v2 plans is a platform-specific configuration topic, likely including required settings and constraints for enabling redundancy. |
+| [Configure gateway-required integration](https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration) | configuration | 0.70 | This page describes detailed, product-specific configuration for gateway-required virtual network integration in Azure App Service, including required settings, supported scenarios (cross-region, classic VNets), and migration-related constraints. It focuses on how to configure this specific integration mode rather than just conceptual networking, matching the configuration sub-skill. |
 | [Configure network routing](https://learn.microsoft.com/en-us/azure/app-service/configure-vnet-integration-routing) | configuration | 0.70 | Describes application vs configuration routing options and how to direct specific traffic through VNet integration. These are App Service–specific routing configuration options and behaviors. |
 | [Control outbound traffic with Azure Firewall](https://learn.microsoft.com/en-us/azure/app-service/network-secure-outbound-traffic-azure-firewall) | security | 0.70 | Shows how to lock down outbound traffic from App Service via VNet integration and Azure Firewall to prevent data exfiltration. Contains product-specific configuration patterns and security-focused routing behavior. |
 | [Create and Manage App Service certificates](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-app-service-certificate) | security | 0.70 | Describes App Service certificate SKU, purchase, renewal, sync, and deletion flows, plus how they integrate with apps. These are App Service–specific security asset management details. |
@@ -151,7 +159,6 @@
 | [Assess .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-assess-net) | decision-making | 0.65 | Provides migration readiness and sizing recommendations based on discovered properties, which is decision guidance for migration and capacity planning rather than just conceptual info. |
 | [Certificates](https://learn.microsoft.com/en-us/azure/app-service/environment/overview-certificates) | configuration | 0.65 | Covers how certificates and bindings work specifically in ASE (external vs ILB), which is product-specific configuration behavior not captured by generic TLS knowledge. |
 | [Configure custom container](https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container) | configuration | 0.65 | Article is explicitly about configuring custom containers on App Service; such pages typically include container-specific settings (e.g., WEBSITES_PORT, startup commands, registry settings) and configuration options unique to this product. |
-| [Configure gateway-required integration](https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration) | decision-making | 0.65 | Explains when to use legacy gateway-required integration vs regional integration, including limitations (Windows-only, cross-region/classic VNet scenarios). This is product-specific decision and configuration guidance. |
 | [Connect to Logic Apps](https://learn.microsoft.com/en-us/azure/app-service/tutorial-send-email) | integrations | 0.65 | Shows a concrete integration pattern between App Service and Logic Apps, including trigger configuration and connector settings for Gmail. This is a product-specific integration workflow beyond generic email sending. |
 | [Create an App Service Environment from template](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-create-from-template) | deployment | 0.65 | ARM-template-based creation of ASE v3 is a deployment pattern; such content typically includes resource schema, required properties, and constraints specific to ASE deployments. |
 | [Deploy an N-tier app (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-ntier-app) | security | 0.65 | Tutorial focuses on securely deploying an N-tier app and likely includes concrete App Service security configurations (network restrictions, identity, access patterns) that are product-specific and actionable. |
@@ -162,6 +169,7 @@
 | [Java Tomcat to Postgres](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-tomcat-connect-managed-identity-postgresql-database) | security | 0.65 | Tutorial on using managed identity from Java Tomcat app to access Azure Database for PostgreSQL and other services; likely includes specific connection string formats, JDBC auth configuration, and identity-related settings unique to App Service. |
 | [Manage App Service plan](https://learn.microsoft.com/en-us/azure/app-service/app-service-plan-manage) | configuration | 0.65 | Covers concrete operations (create, move, scale, delete) on App Service plans with product-specific constraints and behaviors, which are configuration/management details beyond generic cloud knowledge. |
 | [Migrate .NET](https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration) | decision-making | 0.65 | Summarizes different .NET migration tools and their use cases, helping users decide which approach to use for various scenarios, which fits migration decision-making guidance. |
+| [Migrate from gateway-based integration](https://learn.microsoft.com/en-us/azure/app-service/migrate-gateway-based-vnet-integration) | decision-making | 0.65 | The content compares legacy gateway-based and regional VNet integration for App Service, explains retirement timelines, and provides migration guidance. It helps choose between integration types and plan a migration path, which aligns with decision-making (service/approach selection and migration considerations) rather than generic configuration. |
 | [Migrate from multi-container](https://learn.microsoft.com/en-us/azure/app-service/migrate-sidecar-multi-container-apps) | decision-making | 0.65 | Guidance for migrating from Docker Compose/multi-container apps to sidecars; likely includes scenario-based recommendations and trade-offs between models, which is decision-making content. |
 | [Monitor instance health](https://learn.microsoft.com/en-us/azure/app-service/monitor-instances-health-check) | configuration | 0.65 | Describes how Health check pings a specific path every minute and how to configure that path and related settings in App Service. Contains product-specific configuration behavior (no default path, instance replacement behavior) rather than just conceptual monitoring. |
 | [Networking architecture](https://learn.microsoft.com/en-us/azure/app-service/environment/networking) | configuration | 0.65 | Networking details for ASE (subnet usage, inbound/outbound traffic behavior) are product-specific configuration knowledge; such pages typically enumerate required subnet settings and constraints unique to ASE. |
@@ -181,7 +189,6 @@
 | [Java SE](https://learn.microsoft.com/en-us/azure/app-service/app-service-java-migration) | decision-making | 0.60 | Migration-focused article describing discovery, assessment, and migration tools; likely includes guidance on when and how to migrate, supported configurations, and scenario-based recommendations, fitting decision-making around migration paths. |
 | [Migrate WordPress to App Service](https://learn.microsoft.com/en-us/azure/app-service/migrate-wordpress) | decision-making | 0.60 | Migration article describing how to move WordPress from Windows App Service or external hosts to Linux App Service. Likely includes migration paths, considerations, and scenario-based guidance, fitting decision-making around migration approaches. |
 | [Migrate an active domain](https://learn.microsoft.com/en-us/azure/app-service/manage-custom-dns-migrate-domain) | deployment | 0.60 | Focuses on migrating a live domain with no downtime, including sequencing of DNS changes and App Service bindings. This is a deployment/migration pattern with product-specific constraints and ordering, fitting deployment. |
-| [Migrate from gateway-based integration](https://learn.microsoft.com/en-us/azure/app-service/migrate-gateway-based-vnet-integration) | deployment | 0.60 | Guides migration between two App Service VNet integration modes, including steps and constraints. This is a product-specific migration/deployment pattern rather than generic networking advice. |
 | [Overview of custom domains](https://learn.microsoft.com/en-us/azure/app-service/overview-custom-domains) | decision-making | 0.60 | Overview likely includes when to use different domain options (App Service domain vs external registrar, migration, traffic routing) and scenario-based guidance. This helps decide between approaches for production apps, fitting decision-making criteria. |
 | [RAG with Azure OpenAI and your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-nodejs) | integrations | 0.60 | RAG tutorial wiring Express.js, Azure OpenAI, and Azure AI Search with managed identities; includes concrete integration patterns and service configuration details that go beyond generic concepts. |
 | [Use an App Service Environment](https://learn.microsoft.com/en-us/azure/app-service/environment/using) | configuration | 0.60 | Explains how apps behave inside ASE with respect to virtual network features; this is ASE-specific operational/configuration behavior beyond generic App Service usage. |

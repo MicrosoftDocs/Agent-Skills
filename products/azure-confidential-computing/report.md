@@ -8,6 +8,13 @@
 - **Classified**: 39
 - **Unclassified**: 30
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 69
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -20,6 +27,8 @@
 | security | 12 | 17.4% |
 | troubleshooting | 1 | 1.4% |
 | *(Unclassified)* | 30 | 43.5% |
+
+## Changes
 
 ## Classified Pages
 

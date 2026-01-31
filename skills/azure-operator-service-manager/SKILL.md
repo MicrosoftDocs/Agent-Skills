@@ -3,7 +3,7 @@ name: azure-operator-service-manager
 description: Expert knowledge for Azure Operator Service Manager development including best practices, integrations & coding patterns, configuration, security, and troubleshooting. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-30"
+  generated_at: "2026-01-31"
 ---
 # Azure Operator Service Manager Skill
 
@@ -21,10 +21,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart install failures in AOSM CNF deployments. |
-| Best Practices | L35-L45 | Best practices for AOSM onboarding, config groups, Helm chart usage and cleanup, and safely upgrading/controlling behavior of CNF network functions with Helm tests. |
-| Security | L46-L53 | Securing AOSM with Private Link, configuring custom RBAC/service operator roles, and using managed identities for secure, long-running SNS operations |
+| Best Practices | L35-L45 | Best practices for AOSM onboarding, config groups, Helm charts, artifact cleanup, and safely upgrading/controlling behavior of CNF deployments and Helm tests |
+| Security | L46-L53 | Securing AOSM with Private Link, configuring custom RBAC/service operator roles, and using managed identities for secure long-running SNS operations. |
 | Configuration | L54-L61 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
-| Integrations & Coding Patterns | L62-L74 | Patterns and CLI workflows for onboarding CNFs/VNFs, mapping Helm/ARM to AOSM configs, and managing AOSM artifacts via ACR or storage-backed stores. |
+| Integrations & Coding Patterns | L62-L74 | Integrating CNFs/VNFs with AOSM: using CLI/ARM/Helm, managing artifact stores (ACR/Storage), publishing Ubuntu VNFs, and designing network services and operator extensions. |
 
 ### Troubleshooting
 | Topic | URL |

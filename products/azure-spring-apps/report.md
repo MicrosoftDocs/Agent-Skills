@@ -8,6 +8,13 @@
 - **Classified**: 117
 - **Unclassified**: 35
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 152
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -22,6 +29,8 @@
 | security | 17 | 11.2% |
 | troubleshooting | 14 | 9.2% |
 | *(Unclassified)* | 35 | 23.0% |
+
+## Changes
 
 ## Classified Pages
 

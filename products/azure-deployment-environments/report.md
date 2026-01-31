@@ -8,6 +8,13 @@
 - **Classified**: 21
 - **Unclassified**: 11
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 32
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-deployment-environments/azure-deployment-environments.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -19,6 +26,8 @@
 | security | 4 | 12.5% |
 | troubleshooting | 1 | 3.1% |
 | *(Unclassified)* | 11 | 34.4% |
+
+## Changes
 
 ## Classified Pages
 
