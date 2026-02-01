@@ -3,7 +3,7 @@ name: azure-redis
 description: Expert knowledge for Azure Redis development including integrations & coding patterns, architecture & design patterns, best practices, decision making, configuration, troubleshooting, security, and deployment. Use when building, debugging, or optimizing Azure Redis applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Redis Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L43 | Diagnosing and fixing Azure Managed Redis issues: connectivity, latency/timeouts, client/server performance, data loss, monitoring errors, and redis-cli–based debugging. |
-| Best Practices | L44-L56 | Best practices for using Azure Managed Redis: client libraries, resilient connections, Kubernetes hosting, memory/eviction tuning, performance tests, monitoring/load, failover/patching, and FAQs. |
-| Decision Making | L57-L65 | Guidance on when and how to scale or migrate to Azure Managed Redis, choosing migration approaches, planning deployments, and optimizing costs with reservations. |
-| Architecture & Design Patterns | L66-L70 | Internal architecture of Azure Managed Redis, deployment topologies, scaling and high availability patterns, and design best practices for building reliable, performant Redis-based apps. |
-| Security | L71-L79 | Securing Azure Managed Redis: Entra auth, disk encryption/keys, Private Link/VNet isolation, regulatory compliance policies, and configuring TLS for client connections. |
-| Configuration | L80-L92 | Configuring Azure Managed Redis: parameters, geo-replication, persistence, monitoring/alerts, metrics/logs, diagnostic settings, maintenance windows, and PowerShell-based administration. |
-| Integrations & Coding Patterns | L93-L101 | How to connect apps (Functions, ASP.NET Core, Go, Node.js/TypeScript, Python) to Azure Redis/Managed Redis using Entra ID, including auth setup and basic integration patterns. |
-| Deployment | L102-L108 | Import/export Redis data, scale Managed Redis SKUs/tiers, and deploy Azure Managed Redis using ARM or Bicep infrastructure-as-code templates. |
+| Troubleshooting | L32-L43 | Diagnosing and fixing Azure Managed Redis issues: connectivity, latency/timeouts, client/server performance, monitoring errors, data loss, and using redis-cli for debugging. |
+| Best Practices | L44-L56 | Guidance on client/dev best practices, resilient connections, Kubernetes hosting, memory and eviction tuning, performance benchmarking, monitoring/load, failover/patching, and common Redis patterns/FAQ. |
+| Decision Making | L57-L65 | Guidance on when and how to scale or migrate to Azure Managed Redis, choosing migration approaches, planning deployments, and estimating/saving costs with reservations. |
+| Architecture & Design Patterns | L66-L70 | Internal architecture of Azure Managed Redis, deployment patterns, scaling, clustering, high availability, and how these design choices impact performance and reliability |
+| Security | L71-L79 | Security setup for Azure Managed Redis: Entra auth, disk encryption/keys, Private Link/VNet isolation, regulatory compliance policies, and TLS configuration for client connections. |
+| Configuration | L80-L92 | Configuring Azure Managed Redis: parameters, geo-replication, persistence, monitoring/alerts, metrics/logs, diagnostics, PowerShell admin, and scheduled maintenance settings. |
+| Integrations & Coding Patterns | L93-L101 | How to integrate Azure Redis with Functions, ASP.NET Core caching, and connect Go, Node.js (TypeScript), and Python apps using Entra ID authentication |
+| Deployment | L102-L108 | Import/export Redis data with storage, scale Managed Redis SKUs/tiers, and deploy instances using ARM or Bicep templates and infrastructure-as-code. |
 
 ### Troubleshooting
 | Topic | URL |

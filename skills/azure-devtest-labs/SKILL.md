@@ -3,7 +3,7 @@ name: azure-devtest-labs
 description: Expert knowledge for Azure Devtest Labs development including configuration, integrations & coding patterns, deployment, best practices, security, decision making, troubleshooting, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Devtest Labs applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Devtest Labs Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing DevTest Labs VM and environment creation, deployment, artifact, and connectivity failures, including common error causes and step-by-step remediation. |
-| Best Practices | L41-L45 | Guidance on organizing multi-user development of DevTest Labs resources using source control, templates, and processes for collaborative, distributed lab management. |
-| Decision Making | L46-L55 | Guidance on planning and scaling DevTest Labs for enterprises, choosing VM/image options and scenarios, and setting governance policies across org-wide lab resources. |
-| Architecture & Design Patterns | L56-L60 | Enterprise-scale DevTest Labs architectures: network/topology design, governance, security, cost management, and best practices for large, multi-team lab deployments. |
-| Limits & Quotas | L61-L65 | Managing Azure subscription and resource quotas that impact DevTest Labs, including viewing current limits and requesting quota increases for cores, storage, and other resources. |
-| Security | L66-L84 | Securing DevTest Labs: identities, RBAC, secrets/Key Vault, disk/storage encryption, network isolation, Bastion/RDP access, Trusted Launch, and Defender-based threat monitoring. |
-| Configuration | L85-L105 | Configuring DevTest Labs environments: VM policies (start/stop, usage, images, licensing), networks, IPs, cost tracking, tags, activity logs/alerts, and ARM-based lab/VM definitions. |
-| Integrations & Coding Patterns | L106-L128 | Automating DevTest Labs setup and VM lifecycle using ARM/Bicep/Terraform, CLI/PowerShell/REST, custom artifacts/images, and integrations like Functions, Automation, and AzCopy. |
-| Deployment | L129-L136 | Automating DevTest Labs deployment and user setup, integrating with CI/CD and Azure Pipelines, handling load balancer/IP changes, and moving labs and schedules across regions. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing DevTest Labs VM and environment issues, including connectivity, deployment, creation, and artifact application failures. |
+| Best Practices | L41-L45 | Guidance for organizing team workflows, source control, and processes to collaboratively develop, version, and manage shared Azure DevTest Labs resources. |
+| Decision Making | L46-L55 | Guidance on planning and scaling DevTest Labs for enterprises, choosing VM images/Gen2 VMs, selecting scenarios (dev/test/training), and governing labs across an organization. |
+| Architecture & Design Patterns | L56-L60 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security patterns, governance, cost control, and integration with CI/CD and enterprise IT. |
+| Limits & Quotas | L61-L65 | Checking and increasing Azure subscription quotas (cores, IPs, storage, etc.) that can block DevTest Labs deployments, plus how to request quota raises via the portal or support |
+| Security | L66-L84 | Securing DevTest Labs: identities, RBAC, Key Vault secrets, encryption, network isolation, Bastion/RDP access, Trusted Launch, and handling Defender security alerts. |
+| Configuration | L85-L105 | Configuring DevTest Labs behavior: VM policies (start/stop, usage, images, licensing), networks/IPs, cost tracking/tags, activity logs/alerts, ARM templates, and cross-lab usage reporting. |
+| Integrations & Coding Patterns | L106-L128 | End-to-end automation and integration for DevTest Labs: ARM/Bicep/Terraform provisioning, VM lifecycle scripting (CLI/PowerShell), artifacts, custom images/VHD upload, REST/Functions/Automation runbooks. |
+| Deployment | L129-L136 | Guides for deploying and operating DevTest Labs: automating user setup, integrating with CI/CD and Azure Pipelines, handling load balancer/IP changes, and moving labs/schedules across regions. |
 
 ### Troubleshooting
 | Topic | URL |

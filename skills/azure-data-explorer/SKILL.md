@@ -3,7 +3,7 @@ name: azure-data-explorer
 description: Expert knowledge for Azure Data Explorer development including security, integrations & coding patterns, limits & quotas, deployment, best practices, architecture & design patterns, configuration, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Data Explorer applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Data Explorer Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Azure Data Explorer issues: ingestion error codes, private endpoint connectivity, cluster connection/creation failures, and database/table create/delete problems. |
-| Best Practices | L42-L54 | Guidance on optimizing ADX clusters: performance, schema, concurrency, ingestion quality/duplicates, data purging, health monitoring, and integrating with Power BI. |
-| Decision Making | L55-L69 | Guidance on choosing and sizing ADX cluster SKUs (confidential/isolated), scaling strategies, ingestion mode choices, migration from Elasticsearch, and estimating/optimizing ADX costs and reservations. |
-| Architecture & Design Patterns | L70-L77 | Designing ADX architectures for DR/BC, cross-cluster querying with follower DBs, and choosing multi-tenant patterns (isolation, scaling, and resiliency trade-offs). |
-| Limits & Quotas | L78-L86 | Managing ADX cluster limits and quotas: auto-stop for inactive clusters, Event Grid ingestion size caps, safe delete/recover, and free-cluster restrictions and upgrades. |
-| Security | L87-L117 | Security, encryption, identity, and network access for ADX: RBAC/permissions, managed identities, CMK/double encryption, private endpoints, cross-tenant access, locks, and Azure Policy/Conditional Access. |
-| Configuration | L118-L134 | Configuring Azure Data Explorer databases, ingestion pipelines (Event Grid, LightIngest), formats, extensions, monitoring, schema sync, and web UI/profile settings. |
-| Integrations & Coding Patterns | L135-L197 | Integrating Azure Data Explorer with tools and services (Power BI, ADF, Kafka, Spark, OpenTelemetry, SQL/ODBC/JDBC), plus SDK patterns for auth, policies, ingestion, and querying in various languages. |
-| Deployment | L198-L204 | Automating ADX cluster/env provisioning and schema deployment, and migrating clusters to availability zones or from VNet injection to private endpoints. |
+| Troubleshooting | L33-L41 | Diagnosing and fixing ADX issues: ingestion error codes, private endpoint and connectivity problems, cluster creation failures, and database/table create/delete errors. |
+| Best Practices | L42-L54 | Guidance on optimizing ADX clusters: performance, concurrency, monitoring/health, schema design, ingestion (duplicates/invalid data), data purging, and integrating with Power BI. |
+| Decision Making | L55-L69 | Guidance on choosing and sizing ADX compute SKUs, scaling clusters, estimating and optimizing costs, using reservations, and deciding on ingestion patterns or migration from Elasticsearch. |
+| Architecture & Design Patterns | L70-L77 | Designing ADX architectures for DR/BC, cross-cluster querying with follower DBs, and choosing multi-tenant patterns for isolation, scalability, and high availability. |
+| Limits & Quotas | L78-L86 | Managing ADX cluster limits: auto-stop for inactivity, Event Grid ingestion size caps, safe cluster delete/recovery, and free-cluster restrictions and upgrade paths |
+| Security | L87-L117 | Encryption, identity, RBAC, network isolation (private endpoints, outbound/public access), cross-tenant access, and security policies/locks for securing Azure Data Explorer clusters and data |
+| Configuration | L118-L134 | Configuring ADX databases, ingestion (Event Grid, LightIngest, formats), schema sync/clone, language extensions, monitoring, and web UI settings/profile across devices |
+| Integrations & Coding Patterns | L135-L197 | Integrating ADX with tools and services (Power BI, ADF, Kafka, Splunk, Spark, Excel, SQL, Python, Power Automate, etc.), plus SDK patterns for auth, policies, ingestion, and querying. |
+| Deployment | L198-L204 | Provisioning and automating ADX environments, deploying schema via DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -3,7 +3,7 @@ name: azure-baremetal-infrastructure
 description: Expert knowledge for Azure Baremetal Infrastructure development including decision making. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Baremetal Infrastructure Skill
 
@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L25-L28 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and placement considerations for Baremetal Infrastructure deployments. |
+| Decision Making | L25-L28 | Guidance on selecting NC2 on Azure regions and VM SKUs, including capacity, performance, and placement considerations for Nutanix Cloud Clusters on Azure. |
 
 ### Decision Making
 | Topic | URL |

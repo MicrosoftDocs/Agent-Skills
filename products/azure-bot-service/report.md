@@ -3,16 +3,16 @@
 ## Summary
 
 - **Total Pages**: 190
-- **Fetched**: 190
-- **Fetch Failed**: 0
-- **Classified**: 134
-- **Unclassified**: 56
+- **Fetched**: 180
+- **Fetch Failed**: 10
+- **Classified**: 128
+- **Unclassified**: 52
 
 ### Incremental Update
-- **New Pages**: 90
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 100
-- **Deleted Pages**: 0
+- **Unchanged**: 180
+- **Deleted Pages**: 10
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
 ## Classification Statistics
@@ -21,40 +21,29 @@
 |------|-------|------------|
 | architecture-patterns | 5 | 2.6% |
 | best-practices | 6 | 3.2% |
-| configuration | 38 | 20.0% |
+| configuration | 34 | 17.9% |
 | decision-making | 2 | 1.1% |
 | deployment | 9 | 4.7% |
 | integrations | 48 | 25.3% |
 | limits-quotas | 2 | 1.1% |
-| security | 19 | 10.0% |
-| troubleshooting | 5 | 2.6% |
-| *(Unclassified)* | 56 | 29.5% |
+| security | 18 | 9.5% |
+| troubleshooting | 4 | 2.1% |
+| *(Unclassified)* | 52 | 27.4% |
 
 ## Changes
 
-### New Pages
+### Deleted Pages
 
-- [Implement channel-specific functionality](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-channeldata?view=azure-bot-service-4.0)
-- [About Direct Line](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0)
-- [Connect to Direct Line](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0)
-- [Direct Line App Service extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension?view=azure-bot-service-4.0)
-- [About network isolation](https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0)
-- [Configure .NET bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-bot?view=azure-bot-service-4.0)
-- [Configure Node.js bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-node-bot?view=azure-bot-service-4.0)
-- [Create .NET client with extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-client?view=azure-bot-service-4.0)
-- [Use extension with Web Chat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-webchat-client?view=azure-bot-service-4.0)
-- [Configure a virtual network](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0)
-- [Outlook (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-actionable-email?view=azure-bot-service-4.0)
-- [Search (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-search?view=azure-bot-service-4.0)
-- [Skype](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-skype?view=azure-bot-service-4.0)
-- [Slack](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-slack?view=azure-bot-service-4.0)
-- [Telegram](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0)
-- [Twilio (SMS)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-twilio?view=azure-bot-service-4.0)
-- [WeChat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-wechat?view=azure-bot-service-4.0)
-- [Web Chat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
-- [Additional channels](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-additional-channels?view=azure-bot-service-4.0)
-- [Connect to channels with Azure CLI](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-cli?view=azure-bot-service-4.0)
-- *...and 70 more*
+- ~~Index~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0)
+- ~~Availability~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-availability?view=azure-bot-service-4.0)
+- ~~Ecosystem~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-ecosystem?view=azure-bot-service-4.0)
+- ~~General~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0)
+- ~~Security~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0)
+- ~~Guide to identifiers~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-identifiers-guide?view=azure-bot-service-4.0)
+- ~~User-agent requests~~ (https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-user-agent?view=azure-bot-service-4.0)
+- ~~Convert an existing skill from multitenant to single-tenant~~ (https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-convert-skill-single-tenant?view=azure-bot-service-4.0)
+- ~~Update skill to support both single-tenant and multitenant agents~~ (https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-update-skill-single-tenant?view=azure-bot-service-4.0)
+- ~~Implement skills for Copilot Studio~~ (https://learn.microsoft.com/en-us/azure/bot-service/skill-pva?view=azure-bot-service-4.0)
 
 ## Classified Pages
 
@@ -69,7 +58,6 @@
 | [OAuth URL support](https://learn.microsoft.com/en-us/azure/bot-service/ref-oauth-redirect-urls?view=azure-bot-service-4.0) | configuration | 0.82 | Lists specific OAuth and redirect URL values for different clouds and data residency scenarios. These are concrete endpoint values that must be configured exactly and are unlikely to be fully known from training, fitting configuration. |
 | [Configure .NET bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-bot?view=azure-bot-service-4.0) | configuration | 0.80 | Gives concrete steps and settings to update .NET bots to use named pipes and enable the Direct Line App Service extension in App Service, including specific configuration parameters and code patterns unique to this integration. |
 | [Configure Node.js bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-node-bot?view=azure-bot-service-4.0) | configuration | 0.80 | Similar to the .NET article but for Node.js; includes product-specific configuration steps, environment settings, and code adjustments to work with named pipes and the Direct Line App Service extension. |
-| [Convert an existing skill from multitenant to single-tenant](https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-convert-skill-single-tenant?view=azure-bot-service-4.0) | configuration | 0.80 | Explicitly lists required value changes when converting from multitenant to single-tenant (e.g., authority, tenant IDs, app IDs). These are concrete configuration parameters and values unique to this scenario. |
 | [Create .NET client with extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-client?view=azure-bot-service-4.0) | integrations | 0.80 | Shows how to implement a .NET client that connects over WebSockets to the Direct Line App Service extension, including specific API usage, connection parameters, and message handling patterns unique to this integration. |
 | [Memory scopes](https://learn.microsoft.com/en-us/azure/bot-service/adaptive-dialog/adaptive-dialog-prebuilt-memory-states?view=azure-bot-service-4.0) | configuration | 0.80 | Provides technical details on memory scopes, property paths, and behavior (like case-insensitivity and auto-creation), which are product-specific configuration semantics. |
 | [Provision an App Service resource](https://learn.microsoft.com/en-us/azure/bot-service/provision-app-service?view=azure-bot-service-4.0) | deployment | 0.80 | Details CLI commands and ARM template parameters for App Service creation in the bot context, including Python bot deployment constraints and resource group considerations. |
@@ -77,7 +65,6 @@
 | [Write a skill manifest](https://learn.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0) | configuration | 0.80 | Describes the JSON schema for skill manifests, including specific fields, structure, and supported schema versions; this is configuration metadata unique to Bot Framework. |
 | [.lg file format](https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lg-file-format?view=azure-bot-service-4.0) | configuration | 0.78 | .lg file format reference pages typically enumerate template syntax, directives, escape rules, and reserved keywords specific to Bot Framework LG. These are product-specific configuration/format parameters that function like a schema reference, which an LLM is unlikely to know in full detail from training. |
 | [.lu file format](https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lu-file-format?view=azure-bot-service-4.0) | configuration | 0.78 | .lu file format reference describes the exact markdown-like syntax, sections, and keywords for intents, entities, roles, and features. This is a structured format/parameter reference, fitting configuration, and contains detailed rules that go beyond generic NLU knowledge. |
-| [Update skill to support both single-tenant and multitenant agents](https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-update-skill-single-tenant?view=azure-bot-service-4.0) | configuration | 0.78 | Describes how to support both tenancy models, including artifacts and configuration differences. This involves specific settings and wiring between Copilot Studio and Bot Framework skills, fitting configuration. |
 | [Add authentication to a bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0) | security | 0.75 | How-to for adding user authentication using Azure OAuth connections; includes product-specific auth configuration and token handling, fitting security. |
 | [Add single sign-on to a bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-authentication-sso?view=azure-bot-service-4.0) | security | 0.75 | Step-by-step SSO integration between root and skill bots using identity providers; product-specific security/auth configuration. |
 | [Add telemetry to your bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry?view=azure-bot-service-4.0) | configuration | 0.75 | Describes how to wire Bot Framework telemetry to Application Insights with product-specific settings, instrumentation keys/connection strings, and SDK hooks. |
@@ -145,9 +132,7 @@
 | [Use Orchestrator for intent resolution](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-orchestrator?view=azure-bot-service-4.0) | architecture-patterns | 0.70 | Explains the Orchestrator pattern for routing user input to multiple LUIS models and QnA knowledge bases, including when to use it and how it structures intent routing. This is a product-specific orchestration architecture pattern. |
 | [Use a dialog to consume a skill](https://learn.microsoft.com/en-us/azure/bot-service/skill-use-skilldialog?view=azure-bot-service-4.0) | integrations | 0.70 | Focuses on the SkillDialog integration pattern, including how activities are posted between parent and skill bots; uses specific SDK types and configuration details. |
 | [User authentication basics](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) | security | 0.70 | Details how bots use OAuth connections to sign in users and access secured resources; product-specific security and auth configuration. |
-| [User-agent requests](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-user-agent?view=azure-bot-service-4.0) | troubleshooting | 0.70 | Explains the exact User-Agent string format used by Bot Framework and provides steps to stop or handle these webhook calls. This is symptom (unexpected requests) → explanation → mitigation, with product-specific header patterns. |
 | [Write directly to storage](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-storage?view=azure-bot-service-4.0) | configuration | 0.70 | Shows how to configure and use Bot Framework storage abstractions (memory, Cosmos DB, Azure Blob, transcript storage) without the state manager, including concrete API usage. These are product-specific configuration and storage patterns. |
-| [Guide to identifiers](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-identifiers-guide?view=azure-bot-service-4.0) | configuration | 0.68 | A guide to characteristics of ID fields in the protocol likely details specific ID formats, uniqueness rules, and lifecycle behavior. These are protocol-level configuration/format details that are product-specific. |
 | [Outlook (preview)](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-actionable-email?view=azure-bot-service-4.0) | integrations | 0.68 | Channel- and product-specific integration article that includes Outlook Actionable Messages configuration details and Adaptive Card usage patterns beyond generic bot knowledge. |
 | [Telegram](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0) | integrations | 0.68 | Explains Telegram bot creation and Azure portal connection, containing Telegram-specific integration steps and settings beyond generic bot concepts. |
 | [WeChat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-wechat?view=azure-bot-service-4.0) | integrations | 0.66 | Documents using the WeChat custom channel adapter and Official Accounts Platform, which is a product-specific integration pattern not captured by generic knowledge. |
@@ -178,7 +163,6 @@
 | [Use dialogs within a skill](https://learn.microsoft.com/en-us/azure/bot-service/skill-actions-in-dialogs?view=azure-bot-service-4.0) | integrations | 0.65 | Provides concrete dialog wiring patterns and SDK usage for skills that support multiple actions; includes product-specific dialog and skill integration code. |
 | [Skype](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-skype?view=azure-bot-service-4.0) | integrations | 0.64 | Provides Skype-specific channel configuration steps and constraints for Bot Service, which are product- and channel-specific integration details. |
 | [Connect to channels with Azure CLI](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-cli?view=azure-bot-service-4.0) | configuration | 0.63 | Provides concrete Azure CLI commands and parameters for wiring bots to specific channels, which are product-specific configuration details rather than generic deployment guidance. |
-| [Implement skills for Copilot Studio](https://learn.microsoft.com/en-us/azure/bot-service/skill-pva?view=azure-bot-service-4.0) | configuration | 0.62 | Covers implementing a skill consumable by Copilot Studio, likely including specific manifest fields, endpoints, and configuration values required for interoperability. These are product-specific configuration patterns. |
 | [Add buttons to guide user action](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0) | integrations | 0.60 | Explains Bot Framework–specific implementation of suggested actions, including behavior differences from card buttons and SDK usage patterns. These are concrete, product-specific interaction patterns rather than generic UI advice. |
 | [Add input hints to messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-input-hints?view=azure-bot-service-4.0) | integrations | 0.60 | Focuses on the 'input hint' field and its allowed values (accepting, expecting, ignoring) and behavior across channels. These are concrete property names and semantics in the Bot Framework schema. |
 | [Add media attachments to messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-media-attachments?view=azure-bot-service-4.0) | integrations | 0.60 | Covers how to add media attachments via the Connector service. This usually includes attachment object schemas, content types, and channel-specific constraints—API-level integration details unique to Bot Framework. |
@@ -190,7 +174,6 @@
 | [Implement sequential conversation flow](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0) | integrations | 0.60 | Shows how to use Bot Framework dialogs and prompt classes to build linear conversation flows with SDK-specific constructs and patterns. These are concrete code and library usage details unique to this product. |
 | [Prompt users for input](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-primitive-prompts?view=azure-bot-service-4.0) | integrations | 0.60 | Shows how to build primitive prompts and manage conversation flow using Bot Framework SDK constructs. Contains concrete SDK patterns and code for prompts that are specific to this product. |
 | [Reconnect to a conversation](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-reconnect-to-conversation?view=azure-bot-service-4.0) | integrations | 0.60 | Covers generating new WebSocket stream URLs and reconnect logic for Direct Line 3.0. This involves specific API operations and parameters unique to this service. |
-| [Security](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0) | security | 0.60 | Security and privacy FAQ for a specific service often includes concrete details about authentication flows, data handling, and possibly role/permission implications. These are product-specific security behaviors beyond generic security concepts. |
 | [Send an activity to the bot](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-send-activity?view=azure-bot-service-4.0) | integrations | 0.60 | Explains sending Activity objects (message, typing, custom) via Direct Line 3.0. This requires detailed knowledge of request formats, activity types, and optional attachments—API-level integration details. |
 | [Send and receive messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-4.0) | integrations | 0.60 | Explains how to use the Connector service to send messages, replies, and start conversations. This typically includes specific REST endpoints, payload structures, and required fields, which are integration-specific API patterns. |
 | [Start a conversation](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-start-conversation?view=azure-bot-service-4.0) | integrations | 0.60 | Describes how to use Direct Line 3.0 to start conversations and differences between start conversation and generate token operations. This implies specific REST operations, parameters, and response fields. |
@@ -203,9 +186,6 @@
 | [Customization](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0) | 0.40 | Customization article likely shows styling and UI tweaks; summary emphasizes visual customization (font, color, avatar) rather than deep configuration parameters or troubleshooting mappings. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) | 0.40 | Introduces key concepts in Direct Line API 3.0 (authentication, starting conversations, messages). Appears conceptual; detailed parameter or error-code references are not indicated in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-overview?view=azure-bot-service-4.0) | 0.40 | Web Chat overview describing component usage and properties; summary suggests conceptual and descriptive content rather than detailed configuration tables or error-based troubleshooting. |
-| [Availability](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-availability?view=azure-bot-service-4.0) | 0.35 | Availability FAQ likely contains general service behavior and support answers. From the summary, no clear indication of specific limits, error codes, or configuration parameters. |
-| [Ecosystem](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-ecosystem?view=azure-bot-service-4.0) | 0.35 | Ecosystem FAQ is likely descriptive about tools and integrations at a high level, without the structured expert details required by the sub-skill types. |
-| [General](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-general?view=azure-bot-service-4.0) | 0.35 | General FAQ tends to be conceptual and high-level. Summary does not indicate detailed configuration, limits, or troubleshooting mappings. |
 | [Handoff to human](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0) | 0.35 | Describes handoff from bot to human at a design level; does not include specific configuration values, error codes, or tier-based constraints. |
 | [How bots for Microsoft Teams work](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics-teams?view=azure-bot-service-4.0) | 0.35 | Describes how Teams bots differ in activity handling; conceptual behavior of TeamsActivityHandler without detailed config matrices or limits. |
 | [Knowledge base](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0) | 0.35 | Design patterns for knowledge bots; pattern-level guidance but no quantified thresholds, decision matrices, or config parameter tables. |
@@ -223,7 +203,6 @@
 | [Understand the structure of an echo bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-create-a-bot-project?view=azure-bot-service-4.0) | 0.30 | Explains bot project structure and common code aspects; largely tutorial/overview without structured configuration reference or limits. |
 | [About skill consumers](https://learn.microsoft.com/en-us/azure/bot-service/skills-about-skill-consumers?view=azure-bot-service-4.0) | 0.25 | Explains what a skill consumer/root bot is and general traffic management; lacks concrete configuration tables, limits, or troubleshooting content. |
 | [About skills](https://learn.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) | 0.25 | Skills overview describing how bots consume skills; conceptual architecture without numeric thresholds, decision matrices, or config references. |
-| [Index](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0) | 0.25 | FAQ index page with links to other FAQs; not itself a technical reference with parameters, limits, or error mappings. |
 | [Middleware](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0) | 0.25 | Middleware overview and conceptual usage; does not list specific configuration options, limits, or troubleshooting steps. |
 | [Waterfall dialogs](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-waterfall-dialogs?view=azure-bot-service-4.0) | 0.25 | Explains component, waterfall, and prompt dialogs conceptually; no detailed config tables, numeric thresholds, or error-resolution content. |
 | [Alexa](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-alexa?view=azure-bot-service-4.0) | 0.20 | Primarily a step-by-step tutorial for connecting a bot to Alexa via the Developer Console and Azure; does not emphasize detailed configuration tables, limits, or product-specific diagnostic/security parameters. |

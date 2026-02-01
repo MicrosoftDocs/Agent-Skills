@@ -3,7 +3,7 @@ name: azure-integration-environments
 description: Expert knowledge for Azure Integration Environments development including various topics. Use when building, debugging, or optimizing Azure Integration Environments applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Integration Environments Skill
 

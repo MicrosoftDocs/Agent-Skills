@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 236
+- **Updated Pages**: 0
+- **Unchanged**: 238
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -31,13 +31,6 @@
 | *(Unclassified)* | 89 | 37.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure gateway-required integration](https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Migrate from gateway-based integration](https://learn.microsoft.com/en-us/azure/app-service/migrate-gateway-based-vnet-integration)
-  - Updated: 2025-06-20T22:12:00.000Z → 2026-01-30T08:00:00.000Z
 
 ## Classified Pages
 

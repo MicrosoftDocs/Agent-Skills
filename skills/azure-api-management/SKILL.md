@@ -3,7 +3,7 @@ name: azure-api-management
 description: Expert knowledge for Azure Api Management development including integrations & coding patterns, limits & quotas, security, decision making, troubleshooting, best practices, configuration, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Api Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Api Management Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L42 | Diagnosing and fixing API Management issues: policy debugging, error handling, request tracing, SNAT/timeouts, Key Vault cert problems, and using Diagnose and Solve tools. |
-| Best Practices | L43-L52 | Scaling, throttling, security hardening (OWASP API Top 10), SSE configuration, and production guidance for self-hosted gateways and developer portal in Azure API Management |
-| Decision Making | L53-L64 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD planning, VNet choices, monetization features, and migrating from Amazon API Gateway. |
-| Architecture & Design Patterns | L65-L72 | Design patterns for placing APIM behind VNets, App Gateway, Front Door, and AKS microservices, plus guidance on sustainable, resource-efficient gateway configurations. |
-| Limits & Quotas | L73-L90 | Configuring API Management limits and validation: rate and quota policies (per key, concurrency, OpenAI/LLM tokens), service quotas, self-hosted gateway limits, and request/response/schema validation. |
-| Security | L91-L125 | Securing API Management and APIs: authN/authZ (Entra ID, B2C, OAuth2, JWT, mTLS, basic), cert/TLS management, RBAC, DDoS/Defender, CORS, LLM safety, and secure portal/gateway access. |
-| Configuration | L126-L231 | Configuring Azure API Management behavior: policies, caching, networking/VNet, domains, logging/metrics, identity, GraphQL/gRPC/WebSocket imports, and self-hosted gateway settings. |
-| Integrations & Coding Patterns | L232-L264 | Patterns and examples for integrating APIM with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, logging/analytics, portals, and external backends via policies and exports. |
-| Deployment | L265-L285 | Deploying and recovering APIM: multi-region, DR/backup/restore, soft-delete, vNet/external access, availability zones, and self-hosted gateways (K8s, Docker, Arc, AKS, Container Apps, portal). |
+| Troubleshooting | L33-L42 | Debugging and tracing API calls and policies, handling errors, diagnosing platform issues (SNAT/timeouts, Key Vault certs), and using Diagnose and Solve tools for API Management problems. |
+| Best Practices | L43-L52 | Scaling, throttling, security hardening (OWASP Top 10), SSE setup, and production guidance for self-hosted gateways/dev portals, especially on Kubernetes. |
+| Decision Making | L53-L64 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD planning, VNet options, monetization features, and migrating from Amazon API Gateway |
+| Architecture & Design Patterns | L65-L72 | Design patterns for placing APIM behind VNets, App Gateway, Front Door, and AKS, plus guidance on sustainable, efficient gateway architectures and traffic routing. |
+| Limits & Quotas | L73-L91 | Configuring API Management limits: rate/quotas per key, concurrency, LLM/OpenAI token caps, service quotas, schema/response validation, and self-hosted gateway policy constraints. |
+| Security | L92-L125 | Securing API Management and its portals: authN/authZ (Entra ID, B2C, OAuth2, JWT), mTLS and certs, managed identities, CORS, DDoS/Defender, RBAC, compliance, and LLM safety policies. |
+| Configuration | L126-L231 | Configuring Azure API Management behavior: policies (caching, routing, headers, CORS, GraphQL/LLM), imports, domains, networking/VNet, self-hosted gateways, logging/metrics, and workspace updates. |
+| Integrations & Coding Patterns | L232-L264 | Patterns and examples for integrating API Management with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, logging/monitoring, portals, and exporting APIs to other tools. |
+| Deployment | L265-L285 | Deploying and recovering APIM: multi-region/zone setups, VNet and Arc, self-hosted gateways (AKS, Docker, Container Apps, Helm/YAML), backups, soft-delete, and dev portal automation/self-hosting |
 
 ### Troubleshooting
 | Topic | URL |
@@ -75,6 +75,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | API format import restrictions and limits in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-api-import-restrictions |
 | Limit Azure OpenAI token usage with API Management policy | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-token-limit-policy |
+| Understand API Management managed certificate suspension window | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
 | Limit concurrent executions with limit-concurrency policy | https://learn.microsoft.com/en-us/azure/api-management/limit-concurrency-policy |
 | Enforce LLM token rate and quota limits with policy | https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy |
 | Use quota-by-key policy for per-key limits | https://learn.microsoft.com/en-us/azure/api-management/quota-by-key-policy |
@@ -108,7 +109,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure certificate authentication policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-certificate-policy |
 | Use managed identity authentication in API Management policies | https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy |
 | Update API Management identity providers from ADAL to MSAL | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025 |
-| Plan for suspension of API Management managed TLS certificates | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
 | Configure CORS policy for Azure API Management APIs | https://learn.microsoft.com/en-us/azure/api-management/cors-policy |
 | Configure basic authentication for API Management portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication |
 | Enforce LLM content safety with Azure API Management policy | https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy |
@@ -157,7 +157,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure key-based cache storage in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/cache-store-value-policy |
 | Enforce HTTP header requirements with API Management policy | https://learn.microsoft.com/en-us/azure/api-management/check-header-policy |
 | Use conditional choose policy for control flow in API Management | https://learn.microsoft.com/en-us/azure/api-management/choose-policy |
-| Configure custom domains and certificates for API Management | https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain |
+| Configure custom domains and certificates for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain |
 | Configure GraphQL resolvers in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/configure-graphql-resolver |
 | Configure API Management service update and maintenance settings | https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings |
 | Configure identity providers in API Management Credential Manager | https://learn.microsoft.com/en-us/azure/api-management/credentials-configure-common-providers |

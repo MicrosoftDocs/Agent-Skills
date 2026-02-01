@@ -3,7 +3,7 @@ name: azure-update-center
 description: Expert knowledge for Azure Update Center development including configuration, security, decision making, best practices, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Update Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Update Center Skill
 
@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving Azure Update Manager issues, including deployment failures, agent/extension problems, scheduling errors, and common error codes/logs. |
+| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Update Manager issues, including deployment failures, assessment errors, scheduling problems, and troubleshooting logs and agent connectivity. |
 | Best Practices | L36-L40 | Guidance on planning and applying OS/SQL patching for SQL Server on Azure VMs, including maintenance windows, automation, rollback, and minimizing downtime. |
 | Decision Making | L41-L45 | Guidance on planning and executing migration from Configuration Manager to Azure Update Manager, including prerequisites, mapping concepts, and migration steps. |
-| Limits & Quotas | L46-L53 | Supported OSes, update types/sources, image customization limits, and which workloads or configurations are unsupported in Azure Update Manager. |
-| Security | L54-L60 | Configuring secure patching and access control in Update Manager, including RBAC roles, cross-subscription permissions, and handling security vulnerabilities with Ubuntu Pro. |
-| Configuration | L61-L74 | Configuring Azure Update Manager: client setup, prerequisites/networking, scopes, policies, hotpatching, ESU, auto guest patching, and pre/post maintenance events. |
-| Integrations & Coding Patterns | L75-L83 | Using Update Manager via REST and Resource Graph, plus patterns for integrating maintenance events with Azure Functions and Automation runbooks/webhooks |
+| Limits & Quotas | L46-L53 | OS, image, and workload support limits for Update Manager, including supported update sources/types, OS matrices, unsupported workloads, and custom image constraints. |
+| Security | L54-L60 | Configuring secure Update Manager access: RBAC roles/permissions, cross-subscription patching with CLI, and handling security vulnerabilities including Ubuntu Pro integration. |
+| Configuration | L61-L74 | Configuring Azure Update Manager: client/ESU setup, scopes, hotpatching, pre/post events, policies, networking, and automatic/periodic update assessments for Azure and Arc machines. |
+| Integrations & Coding Patterns | L75-L83 | Using REST APIs, Resource Graph, and webhooks to query update data and integrate Azure Update Manager maintenance events with Functions and Automation runbooks |
 
 ### Troubleshooting
 | Topic | URL |

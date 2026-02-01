@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 497
+- **Updated Pages**: 0
+- **Unchanged**: 499
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -31,13 +31,6 @@
 | *(Unclassified)* | 132 | 26.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Bicep file](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/file)
-  - Updated: 2026-01-27T23:11:00.000Z → 2026-01-30T23:12:00.000Z
-- [Linter](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter)
-  - Updated: 2026-01-16T08:00:00.000Z → 2026-01-30T23:12:00.000Z
 
 ## Classified Pages
 

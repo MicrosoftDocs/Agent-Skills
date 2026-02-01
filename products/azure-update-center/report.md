@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 48
+- **Updated Pages**: 0
+- **Unchanged**: 49
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-center/azure-update-center.csv`
 
@@ -29,11 +29,6 @@
 | *(Unclassified)* | 23 | 46.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/update-manager/prerequisites)
-  - Updated: 2026-01-27T18:10:00.000Z → 2026-01-30T18:17:00.000Z
 
 ## Classified Pages
 

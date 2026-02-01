@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 370
+- **Updated Pages**: 0
+- **Unchanged**: 391
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -31,50 +31,6 @@
 | *(Unclassified)* | 118 | 30.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Backup center](https://learn.microsoft.com/en-us/azure/backup/backup-center-overview)
-  - Updated: 2025-08-22T08:00:00.000Z → 2025-08-22T11:14:00.000Z
-- [Azure Database for MySQL - Flexible Server long-term retention](https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server-about)
-  - Updated: 2025-12-18T12:10:00.000Z → 2026-01-30T08:00:00.000Z
-- [SAP ASE database on Azure VM backup](https://learn.microsoft.com/en-us/azure/backup/sap-ase-database-about)
-  - Updated: 2025-11-03T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-backup-overview)
-  - Updated: 2025-05-12T22:03:00.000Z → 2026-01-30T08:00:00.000Z
-- [Monitoring and Reporting](https://learn.microsoft.com/en-us/azure/backup/monitoring-and-alerts-overview)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-01-30T18:17:00.000Z
-- [Guidance and best practices](https://learn.microsoft.com/en-us/azure/backup/guidance-best-practices)
-  - Updated: 2025-11-26T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Create and delete](https://learn.microsoft.com/en-us/azure/backup/create-manage-backup-vault)
-  - Updated: 2025-07-16T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-azure-database-postgresql-flex)
-  - Updated: 2025-10-08T17:11:00.000Z → 2026-01-30T08:00:00.000Z
-- [Backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-01-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-overview)
-  - Updated: 2025-08-18T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/disk-backup-overview)
-  - Updated: 2025-04-16T08:00:00.000Z → 2026-01-30T18:17:00.000Z
-- [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-managed-disks)
-  - Updated: 2025-09-24T11:10:00.000Z → 2026-01-30T08:00:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/manage-azure-managed-disks)
-  - Updated: 2025-08-25T17:10:00.000Z → 2026-01-30T18:17:00.000Z
-- [Configure and manage](https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-manage)
-  - Updated: 2025-11-25T12:12:00.000Z → 2026-01-30T08:00:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/manage-afs-backup)
-  - Updated: 2025-05-22T08:00:00.000Z → 2026-01-30T18:17:00.000Z
-- [Review backup estate](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-built-in-monitor)
-  - Updated: 2025-03-03T18:05:00.000Z → 2026-01-30T18:17:00.000Z
-- [View Report](https://learn.microsoft.com/en-us/azure/backup/view-reports)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/automation-backup)
-  - Updated: 2025-08-14T17:10:00.000Z → 2026-01-30T08:00:00.000Z
-- [Auto-Enable Backup on VM Creation using Azure Policy](https://learn.microsoft.com/en-us/azure/backup/backup-azure-auto-enable-backup)
-  - Updated: 2025-12-18T12:10:00.000Z → 2026-01-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/security-overview)
-  - Updated: 2025-02-24T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- *...and 1 more*
 
 ## Classified Pages
 

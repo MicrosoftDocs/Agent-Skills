@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 542
+- **Updated Pages**: 1
+- **Unchanged**: 546
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -34,16 +34,8 @@
 
 ### Updated Pages
 
-- [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-functions)
-  - Updated: 2025-10-28T05:09:00.000Z → 2026-01-30T06:03:00.000Z
-- [Live metric stream](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-01-30T06:03:00.000Z
-- [Azure Service Fabric app](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-servicefabric)
-  - Updated: 2025-04-03T22:03:00.000Z → 2026-01-30T06:03:00.000Z
-- [Track Requests](https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-trackrequests)
-  - Updated: 2025-04-03T22:03:00.000Z → 2026-01-30T06:03:00.000Z
-- [Statsbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/app/statsbeat)
-  - Updated: 2024-09-20T22:00:00.000Z → 2026-01-30T06:03:00.000Z
+- [Types of alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-types)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-01-31T06:03:00.000Z
 
 ## Classified Pages
 
@@ -326,6 +318,7 @@
 | [Switch to Prometheus visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-experience-v2) | configuration | 0.70 | Gives concrete steps and configuration changes to move from classic Log Analytics-based visuals to Managed Prometheus-only visualization; product-specific migration config. |
 | [Transform JSON data with JSONPath](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-jsonpath) | integrations | 0.70 | Describes using JSONPath within Azure Monitor workbooks to transform JSON into tabular data; includes product-specific query syntax and transformation behavior, fitting integrations/coding patterns. |
 | [Troubleshooting metric charts](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-troubleshoot) | troubleshooting | 0.70 | Explicitly a troubleshooting article for metric charts; likely organized by symptoms and resolutions for Azure Monitor metrics explorer, which is product-specific troubleshooting guidance. |
+| [Types of alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-types) | decision-making | 0.70 | The article explains the different Azure Monitor alert types and explicitly focuses on when to use each type, providing decision guidance between options. This aligns with decision-making criteria about technology/feature selection rather than just conceptual overview. |
 | [Uninstall](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent-uninstall) | configuration | 0.70 | Provides detailed steps for safely removing the Dependency Agent on Windows and Linux VMs/VMSS. This is product-specific configuration/maintenance guidance with concrete commands or procedures. |
 | [Upgrade from the legacy Log Analytics alerts API](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-api-switch) | decision-making | 0.70 | Covers migration from legacy Log Analytics Alert API to ScheduledQueryRules, including retirement dates and API version considerations, which supports decision-making and migration planning between APIs. |
 | [Use built-in policy or initiative](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings-policy-built-in) | configuration | 0.70 | Describes specific built-in Azure Policy definitions for enabling diagnostic settings by category group, including policy names and configuration details that are product-specific and not just conceptual. |
@@ -406,7 +399,6 @@
 | [Stream monitoring data to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) | integrations | 0.65 | Describes how to configure streaming of Azure Monitor data to Event Hubs for partner SIEM/analytics tools, including product-specific configuration steps and integration details. |
 | [Summary rules](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/summary-rules) | configuration | 0.65 | Covers creating, starting, stopping, and troubleshooting summary rules; these are product-specific configuration objects with parameters and operational behavior, fitting configuration with some troubleshooting aspects. |
 | [Technical details](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-metrics-details) | configuration | 0.65 | Technical details article; likely includes specific service behaviors, configuration parameters, and constraints unique to Azure Monitor managed service for Prometheus. |
-| [Types of alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-types) | decision-making | 0.65 | Explicitly focuses on different alert types and when to use each; this is selection guidance between options within the product, fitting decision-making criteria even if numbers are not emphasized. |
 | [View DCRs](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-view) | configuration | 0.65 | Describes options for viewing DCRs and their definitions; likely includes Azure resource model details, API/portal paths, and possibly schema-related fields, which are product-specific configuration knowledge. |
 | [Windows client machines](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-client) | configuration | 0.65 | Focuses on enabling VM insights on non-Arc, intermittently online Windows client machines. This scenario requires specific configuration steps and constraints that go beyond generic tutorials. |
 | [Work item integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) | integrations | 0.65 | Describes work item templates embedding KQL and workbook content, using Microsoft.Insights/workbooks resource type. This implies product-specific integration patterns and configuration of templates and resources beyond generic tutorials. |

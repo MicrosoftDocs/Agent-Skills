@@ -3,7 +3,7 @@ name: azure-cyclecloud
 description: Expert knowledge for Azure Cyclecloud development including integrations & coding patterns, configuration, architecture & design patterns, security, troubleshooting, decision making, deployment, and best practices. Use when building, debugging, or optimizing Azure Cyclecloud applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Cyclecloud Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L38 | Troubleshooting CycleCloud errors, diagnosing node startup failures, and finding/analyzing server and node log files to debug deployment and runtime issues. |
-| Best Practices | L39-L44 | Guidance on optimizing HB/HC VM-based CycleCloud clusters and configuring nodes to avoid unintended auto-termination or premature shutdown |
-| Decision Making | L45-L54 | Guidance on planning and sizing CycleCloud deployments: VM placement, workspaces, custom images, Spot VM usage, and migration/retirement strategies for production clusters. |
-| Architecture & Design Patterns | L55-L59 | Architectures and best practices for designing, deploying, and operating multi‑region Azure CycleCloud HPC clusters, including scaling, resilience, and cross‑region considerations. |
-| Security | L60-L73 | Security hardening for CycleCloud: Bastion access, SSL, auth methods, managed identities, service principals, SELinux, and network security for clusters and nodes. |
-| Configuration | L74-L119 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, networking, storage, autoscaling, CLI/Jetpack, proxies, security, and environment/datastore settings |
-| Integrations & Coding Patterns | L120-L139 | APIs, Python client, and patterns for integrating CycleCloud with schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), monitoring, events, and automation workflows |
-| Deployment | L140-L146 | Deploying and upgrading Azure CycleCloud: CLI and ARM-based setup, Slurm workspace deployment, and running CycleCloud in Azure Container Instances. |
+| Troubleshooting | L32-L38 | Diagnosing and fixing common CycleCloud errors, node startup failures, and locating/analyzing server and node log files for troubleshooting cluster issues. |
+| Best Practices | L39-L44 | Guidance on optimizing HB/HC VM-based CycleCloud clusters and configuring nodes to avoid unwanted auto-termination during scaling or failures. |
+| Decision Making | L45-L54 | Guidance on planning CycleCloud deployments: VM placement, workspaces, custom images, Spot VM usage, production readiness, and migration from CycleCloud 7. |
+| Architecture & Design Patterns | L55-L59 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including topology, failover, and best practices. |
+| Security | L60-L73 | Securing CycleCloud: bastion access, SSL, auth methods, managed identities, service principals, SELinux, and network security best practices for clusters and portal. |
+| Configuration | L74-L119 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, storage, networking, autoscaling, proxies, security, CLI/Jetpack, and environment/datastore settings. |
+| Integrations & Coding Patterns | L120-L139 | Using REST/Python APIs, events, and monitoring with CycleCloud, plus configuring and integrating schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack) and Open OnDemand. |
+| Deployment | L140-L146 | How to deploy and upgrade Azure CycleCloud using CLI, ARM templates, manual install, or Azure Container Instances, including Slurm workspace setup and configuration. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -3,7 +3,7 @@ name: azure-bot-service
 description: Expert knowledge for Azure Bot Service development including configuration, integrations & coding patterns, security, architecture & design patterns, best practices, limits & quotas, decision making, deployment, and troubleshooting. Use when building, debugging, or optimizing Azure Bot Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Bot Service Skill
 
@@ -20,20 +20,19 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Azure Bot Service issues: HTTP 500s, auth failures, misconfiguration, Bot Framework user-agent handling, and other common runtime/connection errors. |
-| Best Practices | L42-L51 | Guidance on secure, reliable bot behavior: conversation lifecycle, handling interruptions/errors, welcome messages, debugging techniques, and unit testing Bot Framework v4 bots. |
-| Decision Making | L52-L57 | Guidance on choosing the best Microsoft chatbot platform and selecting the appropriate Direct Line channel option based on your app’s architecture, features, and integration needs. |
-| Architecture & Design Patterns | L58-L66 | Designing complex bot dialog flows, modularizing conversations, orchestrating multiple LUIS/QnA models, and embedding Azure bots into native apps and websites. |
-| Limits & Quotas | L67-L72 | Managing bot timeouts and long-running operations, plus a matrix of which features and capabilities are supported across different Azure Bot Service channels. |
-| Security | L73-L95 | Securing Azure bots: auth patterns (OAuth2, SSO, Entra ID, Direct Line), identity providers, encryption, network isolation, and security/privacy and policy configuration. |
-| Configuration | L96-L137 | Configuring and debugging Azure bots: state/storage, dialogs, recognizers, channels (incl. Direct Line), skills, telemetry/monitoring, and language assets (.lg/.lu/.qna). |
-| Integrations & Coding Patterns | L138-L189 | Patterns and APIs for integrating bots with channels and services (Direct Line, SMS, Web Chat, Outlook, skills), sending rich messages/media, using QnA/LUIS, and managing dialogs, state, and telemetry. |
-| Deployment | L190-L201 | Deploying and registering bots across Azure clouds, setting up App Service and resources via CLI/ARM, enabling continuous deployment, and debugging bots/skills over channels using Dev Tunnels. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing Azure Bot Service issues like HTTP 500s, auth failures, and misconfiguration, plus general troubleshooting steps and common error patterns. |
+| Best Practices | L41-L50 | Guidance on bot conversation lifecycle, handling interruptions/errors, security, welcome messages, debugging techniques, and unit testing patterns for Bot Framework v4 bots. |
+| Decision Making | L51-L56 | Guidance on selecting the right Microsoft chatbot platform and choosing among Direct Line channel options based on architecture, features, and integration needs. |
+| Architecture & Design Patterns | L57-L65 | Designing complex bot dialog flows, modularizing with component dialogs, orchestrating multiple LUIS/QnA models, and embedding bots into native apps or websites. |
+| Limits & Quotas | L66-L71 | Managing long-running bot operations, timeout behavior, and comparing which features and capabilities are supported across different Azure Bot Service channels. |
+| Security | L72-L93 | Securing bots: user/bot auth, OAuth2/SSO (including Web Chat, skills, custom IdPs), Direct Line auth, network isolation, encryption, and Azure Policy for Bot Service. |
+| Configuration | L94-L131 | Configuring and debugging Azure bots: state and storage, adaptive dialogs/recognizers/LG/LU/QnA, channels and Direct Line, skills, telemetry/monitoring, and Emulator/trace-based diagnostics |
+| Integrations & Coding Patterns | L132-L183 | Patterns and APIs for integrating bots with channels (Web Chat, SMS, email, Skype, Slack, etc.), sending rich/voice messages, using QnA/LUIS, skills, state, telemetry, and Direct Line. |
+| Deployment | L184-L195 | Deploying and registering bots (including external, government, and 21Vianet), setting up App Service and resources via CLI/ARM, and debugging channels/skills using Dev Tunnels. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Interpret and manage Bot Framework User-Agent requests | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-user-agent?view=azure-bot-service-4.0 |
 | Resolve HTTP 500 errors in Azure Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-troubleshoot-500-errors?view=azure-bot-service-4.0 |
 | Troubleshoot authentication failures in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-troubleshoot-authentication-problems?view=azure-bot-service-4.0 |
 | Diagnose and fix Azure bot configuration errors | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-troubleshoot-bot-configuration?view=azure-bot-service-4.0 |
@@ -85,7 +84,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Secure Direct Line with enhanced authentication | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-security-enhanced?view=azure-bot-service-4.0 |
 | Configure Web Chat single sign-on with Entra ID | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-sso?view=azure-bot-service-4.0 |
 | Understand Azure Bot Service data-at-rest encryption | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-encryption?view=azure-bot-service-4.0 |
-| Address Bot Framework security and privacy questions | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-security?view=azure-bot-service-4.0 |
 | Configure network isolation for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0 |
 | Configure network isolation for Azure Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-how-to?view=azure-bot-service-4.0 |
 | Apply Azure Policy definitions to Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/policy-reference?view=azure-bot-service-4.0 |
@@ -122,16 +120,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Bot channels and Direct Line connections | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0 |
 | Configure Azure Bot resource settings in portal | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-settings?view=azure-bot-service-4.0 |
 | Create and configure Application Insights keys for bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0 |
-| Understand and use Bot Framework ID fields | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-identifiers-guide?view=azure-bot-service-4.0 |
 | Author and configure .lg language generation files | https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lg-file-format?view=azure-bot-service-4.0 |
 | Define language understanding models with .lu files | https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-lu-file-format?view=azure-bot-service-4.0 |
 | Specify QnA knowledge bases using .qna files | https://learn.microsoft.com/en-us/azure/bot-service/file-format/bot-builder-qna-file-format?view=azure-bot-service-4.0 |
 | Define structured response templates with LG | https://learn.microsoft.com/en-us/azure/bot-service/language-generation/language-generation-structured-response-template?view=azure-bot-service-4.0 |
 | Use Azure AI Bot Service monitoring data and schemas | https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0 |
 | Select correct OAuth and redirect URLs for bots | https://learn.microsoft.com/en-us/azure/bot-service/ref-oauth-redirect-urls?view=azure-bot-service-4.0 |
-| Convert Bot Framework skills to single-tenant use | https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-convert-skill-single-tenant?view=azure-bot-service-4.0 |
-| Update skills for both single-tenant and multitenant agents | https://learn.microsoft.com/en-us/azure/bot-service/skill-pva-update-skill-single-tenant?view=azure-bot-service-4.0 |
-| Implement Bot Framework skills for Copilot Studio | https://learn.microsoft.com/en-us/azure/bot-service/skill-pva?view=azure-bot-service-4.0 |
 | Configure Bot Framework skill manifest schema | https://learn.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0 |
 | Use trace activities to debug Bot Framework bots | https://learn.microsoft.com/en-us/azure/bot-service/using-trace-activities?view=azure-bot-service-4.0 |
 

@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 220
+- **Updated Pages**: 0
+- **Unchanged**: 224
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -31,17 +31,6 @@
 | *(Unclassified)* | 64 | 28.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept)
-  - Updated: 2026-01-29T18:11:00.000Z → 2026-01-30T08:00:00.000Z
-- [Create a NetApp Elastic account](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-account)
-  - Updated: 2026-01-29T18:11:00.000Z → 2026-01-30T18:17:00.000Z
-- [Configure policy-based backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-policy-based)
-  - Updated: 2025-06-05T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Configure manual backups](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-configure-manual)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-01-30T08:00:00.000Z
 
 ## Classified Pages
 

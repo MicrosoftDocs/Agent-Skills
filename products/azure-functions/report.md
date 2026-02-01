@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 349
+- **Updated Pages**: 0
+- **Unchanged**: 351
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -31,13 +31,6 @@
 | *(Unclassified)* | 66 | 18.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [OpenTelemetry distributed tracing](https://learn.microsoft.com/en-us/azure/azure-functions/monitor-functions-opentelemetry-distributed-tracing)
-  - Updated: 2025-11-18T23:12:00.000Z → 2026-01-30T23:12:00.000Z
-- [Flex Consumption plan](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan)
-  - Updated: 2026-01-16T06:11:00.000Z → 2026-01-30T18:17:00.000Z
 
 ## Classified Pages
 

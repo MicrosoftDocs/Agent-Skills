@@ -3,7 +3,7 @@ name: azure-health-insights
 description: Expert knowledge for Azure Health Insights development including configuration, and security. Use when building, debugging, or optimizing Azure Health Insights applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-01-31"
+  generated_at: "2026-02-01"
 ---
 # Azure Health Insights Skill
 
@@ -21,7 +21,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Security | L26-L30 | Data protection, PHI/PII handling, encryption, access control, compliance, and how Azure AI Health Insights processes, stores, and secures healthcare data. |
-| Configuration | L31-L43 | Configuring Health Insights containers and models (Radiology, Trial Matcher), setting filters/parameters, and interpreting inference outputs, fields, scores, and quality measures. |
+| Configuration | L31-L43 | Configuring Health Insights containers and models, setting filters/parameters, and interpreting inference outputs for Radiology Insights, quality measures/MIPS, and Trial Matcher. |
 
 ### Security
 | Topic | URL |

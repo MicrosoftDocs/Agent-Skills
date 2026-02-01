@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 273
+- **Updated Pages**: 2
+- **Unchanged**: 272
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -25,8 +25,8 @@
 | decision-making | 8 | 2.9% |
 | deployment | 18 | 6.6% |
 | integrations | 29 | 10.6% |
-| limits-quotas | 14 | 5.1% |
-| security | 31 | 11.3% |
+| limits-quotas | 15 | 5.5% |
+| security | 30 | 10.9% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 56 | 20.4% |
 
@@ -34,8 +34,10 @@
 
 ### Updated Pages
 
-- [AI gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities)
-  - Updated: 2025-11-13T08:00:00.000Z → 2026-01-30T23:12:00.000Z
+- [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain)
+  - Updated: 2025-07-25T08:00:00.000Z → 2026-01-31T06:10:00.000Z
+- [Managed certificates suspension (August 2025 - March 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025)
+  - Updated: 2025-07-31T05:11:00.000Z → 2026-01-31T06:10:00.000Z
 
 ## Classified Pages
 
@@ -141,7 +143,6 @@
 | [xml-to-json](https://learn.microsoft.com/en-us/azure/api-management/xml-to-json-policy) | configuration | 0.76 | xml-to-json policy reference describes specific policy elements and options for transforming request/response bodies. These are concrete configuration parameters unique to this product. |
 | [xsl-transform](https://learn.microsoft.com/en-us/azure/api-management/xsl-transform-policy) | configuration | 0.76 | xsl-transform policy reference defines how to configure XSLT transformations via policy elements. These are detailed, product-specific configuration settings. |
 | [ADAL-based identity provider retirement (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025) | security | 0.75 | Describes retirement of ADAL-based authentication in the developer portal, affected identity providers (Microsoft Entra ID, Azure AD B2C), and required configuration changes to MSAL. Contains product-specific security and auth configuration details. |
-| [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | configuration | 0.75 | Describes mapping custom DNS names and certificate choices, and includes specific host header requirements and endpoint configuration details—product-specific configuration guidance. |
 | [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint) | configuration | 0.75 | Private endpoint setup typically includes specific DNS records, subnet requirements, and endpoint configuration values unique to APIM and Private Link. |
 | [Custom caching](https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-cache-by-key) | configuration | 0.75 | Describes using cache-lookup-value and cache-store-value policies and vary-by properties; this is product-specific configuration with concrete policy names and usage patterns that qualify as expert configuration knowledge. |
 | [Deploy to virtual network - external](https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet) | deployment | 0.75 | Explains how to deploy API Management into a VNet in external mode, including connectivity behavior for endpoints and backends; this is a product-specific deployment pattern. |
@@ -169,6 +170,7 @@
 | [Configure API for SSE](https://learn.microsoft.com/en-us/azure/api-management/how-to-server-sent-events) | best-practices | 0.70 | Provides guidelines for SSE configuration in APIM, including product-specific recommendations and constraints distinct from generic SSE theory. |
 | [Configure Front Door](https://learn.microsoft.com/en-us/azure/api-management/front-door-api-management) | architecture-patterns | 0.70 | Describes using Front Door as a global front end for APIM; this is a product-specific architecture pattern with concrete guidance on TLS offload, caching, and routing configuration. |
 | [Configure Service Fabric backend](https://learn.microsoft.com/en-us/azure/api-management/how-to-configure-service-fabric-backend) | integrations | 0.70 | Shows how to wire APIM to Service Fabric with product-specific backend configuration steps and patterns. |
+| [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | configuration | 0.70 | The page describes product-specific configuration details for mapping custom DNS names to Azure API Management endpoints and choosing certificates. It includes concrete constraints such as accepted Host header values and endpoint-specific domain configuration, which are configuration-focused and specific to this service rather than generic DNS guidance. |
 | [Configure custom domain for self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-custom-domain-gateway) | configuration | 0.70 | Covers mapping DNS hostnames to a self-hosted gateway; such articles typically include specific configuration fields (hostname, certificate bindings, SNI, TLS settings) and portal/API parameter names that are product-specific configuration details. |
 | [Configure update settings](https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings) | configuration | 0.70 | Covers update groups and maintenance windows for service updates; these are product-specific settings with allowed values and behaviors, aligning with configuration. |
 | [Defend against DDoS attacks](https://learn.microsoft.com/en-us/azure/api-management/protect-with-ddos-protection) | security | 0.70 | Shows how to enable DDoS Protection for APIM in a VNet; likely includes specific configuration steps, resource associations, and security settings unique to APIM plus DDoS. |
@@ -192,6 +194,7 @@
 | [Integrate Google Tag Manager](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-integrate-google-tag-manager) | integrations | 0.70 | Describes plugging GTM into the portal; likely includes GTM container IDs, script injection points, and portal-specific configuration details. |
 | [Log requests with Azure Application Insights](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights) | integrations | 0.70 | How-to for wiring APIM to Application Insights with product-specific integration steps and settings; contains concrete configuration patterns beyond generic concepts. |
 | [Manage CA certificates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-ca-certificates) | security | 0.70 | Shows how to upload and manage CA certificates; includes certificate types, store locations, and portal/API fields that are product-specific security configuration details. |
+| [Managed certificates suspension (August 2025 - March 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025) | limits-quotas | 0.70 | Page contains precise, date-bounded operational limits on creating Azure-managed certificates (suspension from August 15, 2025 to March 15, 2026) and conditions for autorenewal. These are time-specific constraints that an LLM wouldn't reliably know from training and function as product limits/availability windows rather than general concepts. |
 | [Mitigate OWASP API threats](https://learn.microsoft.com/en-us/azure/api-management/mitigate-owasp-api-threats) | best-practices | 0.70 | Maps OWASP API threats to concrete API Management features and policies; includes product-specific mitigation patterns, policy configurations, and examples that go beyond generic OWASP guidance. |
 | [Mutual certificate authentication](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates) | security | 0.70 | Product-specific security configuration for mutual TLS and client certificates; likely includes certificate store locations, binding options, and API Management-specific settings. |
 | [Networking options](https://learn.microsoft.com/en-us/azure/api-management/virtual-network-concepts) | decision-making | 0.70 | Explains scenarios, requirements, and tier-dependent options for securing traffic with virtual networks; helps decide which networking model to use per tier and scenario. |
@@ -236,7 +239,6 @@
 | [Import a Logic App](https://learn.microsoft.com/en-us/azure/api-management/import-logic-app-as-api) | configuration | 0.65 | Describes automated import behavior and environment-specific constraints (Consumption vs Standard), which are APIM-specific configuration details. |
 | [Integrate Application Gateway in internal virtual network](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-integrate-internal-vnet-appgateway) | architecture-patterns | 0.65 | Describes combining APIM internal mode with Application Gateway/WAF as a front end; this is a product-specific network pattern with concrete configuration guidance and trade-offs. |
 | [Manage microservices deployed in AKS](https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes) | architecture-patterns | 0.65 | Describes concrete options and patterns for exposing AKS microservices via APIM; provides APIM-specific architectural choices and trade-offs for this scenario. |
-| [Managed certificates suspension (August 2025 - March 2026)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025) | security | 0.65 | Provides exact suspension window for managed TLS certificate creation for custom domains and clarifies behavior of existing certificates. This is product-specific security/certificate management behavior tied to dates and feature state. |
 | [Move instances between regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-migrate) | deployment | 0.65 | Describes region-to-region migration using backup and restore operations and mentions multi-region deployment; this is a deployment/migration pattern specific to the service. |
 | [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.65 | Shows how to edit XML policy definitions at different scopes using the policy editor; includes concrete policy structure and configuration details specific to API Management. |
 | [Workspaces preview breaking changes (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/workspaces-breaking-changes-june-2024) | configuration | 0.65 | Breaking-changes article for workspaces that describes specific changes to workspace behavior and required configuration updates. These are product-specific configuration details tied to dates and feature states that an LLM would not know from training. |

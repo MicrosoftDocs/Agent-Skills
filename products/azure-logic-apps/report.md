@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 199
+- **Updated Pages**: 0
+- **Unchanged**: 200
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -31,11 +31,6 @@
 | *(Unclassified)* | 60 | 30.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable Health Check](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-health-standard-workflows)
-  - Updated: 2025-04-15T08:00:00.000Z → 2026-01-30T06:12:00.000Z
 
 ## Classified Pages
 
