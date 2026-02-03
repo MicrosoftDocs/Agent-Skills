@@ -3,7 +3,7 @@ name: azure-data-factory
 description: Expert knowledge for Azure Data Factory development including configuration, integrations & coding patterns, decision making, best practices, security, deployment, architecture & design patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Data Factory applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Data Factory Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L43 | Diagnosing and fixing ADF pipeline, copy, connector, SSIS, and self-hosted IR issues using logs, metrics, performance tuning, and error/failure analysis. |
-| Best Practices | L44-L60 | Performance, scaling, and operational best practices for ADF: DataOps, tuning copy/mapping data flows, IR optimization, metadata‑driven design, debugging, and meeting pipeline SLAs. |
-| Decision Making | L61-L72 | Guidance on choosing runtimes and compute, planning connector upgrades, understanding orchestration pricing, and assessing/migrating ADF/Synapse pipelines (incl. Fabric migration). |
+| Troubleshooting | L33-L43 | Diagnosing and fixing ADF pipeline and copy failures, performance issues, connector upgrade problems, and SHIR/SSIS runtime errors using logs, metrics, and monitoring tools |
+| Best Practices | L44-L60 | Performance and design guidance for ADF: tuning copy and mapping data flows, optimizing sources/sinks/IR, DataOps practices, metadata‑driven pipelines, debugging, and meeting SLAs |
+| Decision Making | L61-L72 | Guidance on choosing runtimes and compute, understanding ADF orchestration pricing, planning connector upgrades, and assessing/migrating pipelines (e.g., to Fabric). |
 | Architecture & Design Patterns | L73-L78 | Guidance on designing performant mapping data flow pipelines and deciding when/how to integrate Azure-SSIS Integration Runtime with a virtual network (VNet). |
-| Limits & Quotas | L79-L84 | Info on Data Factory connector lifecycle (preview/GA, deprecation) and how to configure Until activity loops, conditions, and timeout behavior in pipelines |
-| Security | L85-L109 | Securing Data Factory: auth, roles, firewall, private link/VNet, managed identities, Key Vault, CMK encryption, policies, and secure access to SQL/on-prem via IR and managed VNets. |
-| Configuration | L110-L216 | Configuring ADF pipelines, activities, data flows, runtimes, networking, formats, logging/monitoring, parameters, and DevOps/source control settings for end‑to‑end data integration. |
-| Integrations & Coding Patterns | L217-L378 | Patterns and samples for connecting ADF to many data sources (Azure, AWS, SaaS, databases), using connectors, mapping data flow expressions, activities, and code/SDK to integrate and orchestrate workloads |
-| Deployment | L379-L396 | CI/CD and deployment for Data Factory: ARM/DevOps pipelines, multi-env promotion, hotfix flows, pre/post scripts, cloning, and managing SHIR/Azure-SSIS runtimes and network migration. |
+| Limits & Quotas | L79-L84 | Info on Data Factory connector lifecycle (preview/GA, deprecation) and how to configure Until activity loops, conditions, and timeout behavior in pipelines. |
+| Security | L85-L109 | Securing Data Factory: auth, roles, firewall, private link/VNet, managed identities, Key Vault, encryption, policies, and secure access to SQL/on-prem via IR and managed VNets. |
+| Configuration | L110-L216 | Configuring ADF pipelines, activities, data flows, runtimes, networking, formats, logging/monitoring, parameters, and studio/source-control settings for end-to-end pipeline behavior. |
+| Integrations & Coding Patterns | L217-L378 | Patterns and how-tos for integrating ADF with many data sources (Azure, AWS, SaaS, databases), using connectors, mapping data flow expressions, and orchestrating external compute/ML. |
+| Deployment | L379-L396 | CI/CD and deployment for Data Factory: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, cloning factories, and managing self-hosted/Azure-SSIS runtimes. |
 
 ### Troubleshooting
 | Topic | URL |

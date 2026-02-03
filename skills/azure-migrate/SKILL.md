@@ -3,7 +3,7 @@ name: azure-migrate
 description: Expert knowledge for Azure Migrate development including integrations & coding patterns, configuration, decision making, troubleshooting, limits & quotas, security, best practices, architecture & design patterns, and deployment. Use when building, debugging, or optimizing Azure Migrate applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Migrate Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Migrate issues: appliance setup/discovery, assessments (incl. PostgreSQL rules), private endpoints, project management, and VMware/web app migration failures. |
-| Best Practices | L51-L57 | Guidance on preparing on-premises and legacy Windows Server 2003 machines for Azure Migrate, plus how to run and validate test migrations of replicated VMs before cutover. |
-| Decision Making | L58-L74 | Using Azure Migrate reports and assessments to choose discovery methods, sizing, costs, readiness, migration strategies, and build/review business cases for servers and applications |
-| Architecture & Design Patterns | L75-L79 | Hyper-V to Azure migration architecture: components, data flow, connectivity, replication, and how Azure Migrate orchestrates agent-based/agentless Hyper-V server migrations. |
-| Limits & Quotas | L80-L93 | Support matrices, region/metadata limits, prerequisites, and scale-out options for discovering, assessing, and migrating VMware, Hyper-V, and physical servers with Azure Migrate. |
-| Security | L94-L112 | Securing Azure Migrate: least-privilege roles/accounts, Private Link, SSE/CMK encryption, Azure Arc, Azure Policy, and RBAC/vCenter permission configuration. |
-| Configuration | L113-L134 | Configuring Azure Migrate appliances, credentials, assessments, dependency analysis (agentless/agent-based), Arc/Collector settings, and large-scale/OS upgrade scenarios for server and VM migrations. |
-| Integrations & Coding Patterns | L135-L142 | Integrating external code scan tools (GitHub Copilot, CAST Highlight) with Azure Migrate and automating large-scale/agentless VMware migrations using PowerShell and Azure Site Recovery scripts. |
-| Deployment | L143-L148 | Deploying migrated workloads: ARM template project setup, IaC-based server redeployments, and configuring Azure DevOps CI/CD for containerized applications. |
+| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Migrate issues: appliance setup/discovery, assessments (incl. PostgreSQL, SQL, dependency), project/PE connectivity, and agentless VMware/web app migration errors. |
+| Best Practices | L51-L57 | Best practices for preparing on-premises/legacy Windows servers for Azure Migrate and safely testing migration of replicating VMs before full cutover. |
+| Decision Making | L58-L74 | Using Azure Migrate reports and assessments to choose discovery methods, sizing, costs, readiness, and migration strategies for servers, apps, AVS, and business cases |
+| Architecture & Design Patterns | L75-L79 | Hyper-V migration architecture: components, data flow, connectivity, and design patterns for discovering, replicating, and migrating on-prem Hyper-V VMs to Azure using Azure Migrate. |
+| Limits & Quotas | L80-L93 | Support matrices, region/metadata limits, prerequisites, and scale-out appliance guidance for discovering, assessing, and migrating VMware, Hyper-V, and physical servers with Azure Migrate. |
+| Security | L94-L112 | Securing Azure Migrate: least-privilege roles/accounts, Private Link, SSE+CMK, Arc enablement, Azure Policy/RBAC, and assessing security risks for VMware/Hyper-V/SQL/PostgreSQL. |
+| Configuration | L113-L134 | Configuring Azure Migrate appliances, credentials, assessments, dependency analysis (agentless/agent-based), Arc onboarding, and large-scale/physical/VMware server assessment settings. |
+| Integrations & Coding Patterns | L135-L142 | Integrating external code scan tools (GitHub Copilot, CAST Highlight) with Azure Migrate and automating large-scale/agentless VMware migrations using PowerShell and Azure Site Recovery scripts |
+| Deployment | L143-L148 | Deploying migrated workloads: ARM template project setup, IaC-based server redeployments, and Azure DevOps CI/CD pipelines for containerized applications. |
 
 ### Troubleshooting
 | Topic | URL |

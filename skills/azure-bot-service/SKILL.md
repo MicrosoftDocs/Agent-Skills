@@ -3,7 +3,7 @@ name: azure-bot-service
 description: Expert knowledge for Azure Bot Service development including configuration, security, integrations & coding patterns, architecture & design patterns, best practices, limits & quotas, decision making, and deployment. Use when building, debugging, or optimizing Azure Bot Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Bot Service Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L41 | Guidance on secure, reliable bot behavior: conversation lifecycle, welcome flows, handling interruptions/errors, debugging, and unit testing Bot Framework v4 bots. |
-| Decision Making | L42-L47 | Guidance on selecting the right Microsoft chatbot platform and choosing the appropriate Direct Line channel option based on app architecture, hosting, and integration needs. |
-| Architecture & Design Patterns | L48-L56 | Designing complex bot dialog flows, modularizing conversations, orchestrating multiple LUIS/QnA models, and embedding Azure bots into native apps or websites. |
-| Limits & Quotas | L57-L62 | Timeout limits for bot operations and per-channel feature/behavior differences, helping you design bots that respect execution constraints and channel capabilities. |
-| Security | L63-L81 | Securing bots: auth basics, OAuth2/SSO (root/skill), federated identity, identity providers, Direct Line auth, encryption, and network isolation for Azure Bot Service. |
-| Configuration | L82-L107 | Configuring bots and channels, state and storage, Direct Line/App Service, telemetry/monitoring, and debugging bots with Emulator, transcripts, trace activities, and inspection tools. |
-| Integrations & Coding Patterns | L108-L149 | Patterns and APIs for integrating bots with channels (Web Chat, SMS, Slack, etc.), sending rich/media messages, using QnA/LUIS, proactive notifications, skills, and telemetry. |
-| Deployment | L150-L161 | Deploying and registering bots in Azure (incl. sovereign clouds), setting up App Service and resources via CLI/ARM, configuring CI/CD, and debugging bots/skills with Dev Tunnels. |
+| Best Practices | L32-L41 | Guidance on secure, reliable bot behavior: conversation expiry, handling interruptions/errors, welcome messages, debugging techniques, and unit testing Bot Framework v4 bots. |
+| Decision Making | L42-L47 | Guidance on selecting the right Microsoft chatbot platform and choosing the appropriate Direct Line channel option based on architecture, features, and integration needs. |
+| Architecture & Design Patterns | L48-L56 | Designing complex bot dialog flows, modular/component dialogs, multi-LUIS/QnA orchestration, and embedding Azure bots into native apps or websites. |
+| Limits & Quotas | L57-L62 | Handling long-running bot operations, timeouts, and understanding which features are supported on each Azure Bot Service channel (e.g., Teams, Web Chat, Direct Line). |
+| Security | L63-L78 | Authentication, SSO, OAuth/OIDC, custom identity providers, Direct Line auth, encryption, and network isolation options to securely authenticate users and protect Azure bots. |
+| Configuration | L79-L99 | Configuring Azure Bot resources, channels, state storage, telemetry, and debugging (Emulator, transcripts, trace/inspection) for Bot Framework and Direct Line bots. |
+| Integrations & Coding Patterns | L100-L124 | Patterns for dialogs, skills, prompts, state, proactive messages, media, telemetry, and integrating bots with channels like SMS, Slack, Outlook, Skype, Search, QnA, and LUIS. |
+| Deployment | L125-L136 | Deploying and registering bots across Azure clouds, setting up App Service and resources via CLI/ARM, enabling continuous deployment, and debugging bots/skills over channels with Dev Tunnels. |
 
 ### Best Practices
 | Topic | URL |
@@ -74,10 +74,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Implement single sign-on in Bot Framework SDK | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-sso?view=azure-bot-service-4.0 |
 | Secure Direct Line with enhanced authentication | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-security-enhanced?view=azure-bot-service-4.0 |
 | Understand Azure Bot Service data-at-rest encryption | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-encryption?view=azure-bot-service-4.0 |
-| Configure network isolation for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0 |
 | Configure network isolation for Azure Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-how-to?view=azure-bot-service-4.0 |
-| Configure authentication for Bot Connector and Bot State APIs | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0 |
-| Authenticate Direct Line 1.1 with secrets and tokens | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-authentication?view=azure-bot-service-4.0 |
 
 ### Configuration
 | Topic | URL |
@@ -90,18 +87,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Add Application Insights telemetry to QnA Maker bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-qnamaker?view=azure-bot-service-4.0 |
 | Configure Application Insights telemetry for bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry?view=azure-bot-service-4.0 |
 | Configure additional channels and adapters in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-additional-channels?view=azure-bot-service-4.0 |
-| Connect bots to channels using Azure CLI commands | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-cli?view=azure-bot-service-4.0 |
 | Configure a bot to use Direct Line channel | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0 |
-| Configure .NET bots for Direct Line App Service extension | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-bot?view=azure-bot-service-4.0 |
-| Configure Node.js bots for Direct Line App Service extension | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-node-bot?view=azure-bot-service-4.0 |
-| Use Direct Line App Service extension inside a VNET | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0 |
 | Configure Direct Line App Service extension for bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension?view=azure-bot-service-4.0 |
 | Debug Bot Framework bots with IDE and Emulator | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0 |
 | Test and debug bots using Bot Framework Emulator | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0 |
 | Debug bots using inspection middleware and Emulator | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-debug-inspection-middleware?view=azure-bot-service-4.0 |
 | Configure Azure Bot channels and Direct Line connections | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0 |
 | Configure Azure Bot resource settings in portal | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-settings?view=azure-bot-service-4.0 |
-| Use Azure AI Bot Service monitoring data and schemas | https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0 |
 | Configure Bot Framework skill manifest schema | https://learn.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0 |
 | Use trace activities to debug Bot Framework bots | https://learn.microsoft.com/en-us/azure/bot-service/using-trace-activities?view=azure-bot-service-4.0 |
 
@@ -124,24 +116,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate Bot Framework with Microsoft Search channel | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-search?view=azure-bot-service-4.0 |
 | Connect Bot Framework bots to Skype channel | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-skype?view=azure-bot-service-4.0 |
 | Configure Slack channel integration for Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-slack?view=azure-bot-service-4.0 |
-| Connect Bot Framework bots to Telegram | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0 |
 | Integrate Bot Framework with Twilio SMS | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-twilio?view=azure-bot-service-4.0 |
-| Embed Web Chat channel for Bot Framework bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0 |
-| Use WeChat adapter with Bot Framework bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-wechat?view=azure-bot-service-4.0 |
-| Build .NET client for Direct Line App Service extension | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-client?view=azure-bot-service-4.0 |
-| Use Web Chat with Direct Line App Service extension | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-webchat-client?view=azure-bot-service-4.0 |
-| Attach media files to Bot Framework messages | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-media-attachments?view=azure-bot-service-4.0 |
-| Create and send rich card attachments in bots | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-4.0 |
-| Configure suggested actions in Bot Framework messages | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-suggested-actions?view=azure-bot-service-4.0 |
-| Call Bot Framework Connector REST API operations | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0 |
-| Use Bot Connector REST API to send and receive activities | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-4.0 |
-| Direct Line 1.1 REST API reference details | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-api-reference?view=azure-bot-service-4.0 |
-| Receive bot messages via Direct Line 1.1 polling | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0 |
-| Send messages to bots via Direct Line 1.1 | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-send-message?view=azure-bot-service-4.0 |
-| Start conversations using Direct Line 1.1 | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-start-conversation?view=azure-bot-service-4.0 |
-| Direct Line 3.0 REST API reference details | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-api-reference?view=azure-bot-service-4.0 |
-| Send endOfConversation activities with Direct Line | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-end-conversation?view=azure-bot-service-4.0 |
-| Receive bot activities via Direct Line 3.0 | https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-receive-activities?view=azure-bot-service-4.0 |
 | Use dialogs to implement multi-action skills | https://learn.microsoft.com/en-us/azure/bot-service/skill-actions-in-dialogs?view=azure-bot-service-4.0 |
 | Implement a Bot Framework skill consumer bot | https://learn.microsoft.com/en-us/azure/bot-service/skill-implement-consumer?view=azure-bot-service-4.0 |
 | Implement a Bot Framework skill bot | https://learn.microsoft.com/en-us/azure/bot-service/skill-implement-skill?view=azure-bot-service-4.0 |

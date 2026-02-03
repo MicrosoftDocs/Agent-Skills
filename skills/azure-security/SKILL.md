@@ -3,7 +3,7 @@ name: azure-security
 description: Expert knowledge for Azure Security development including security, configuration, best practices, troubleshooting, deployment, decision making, and limits & quotas. Use when building, debugging, or optimizing Azure Security applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Security Skill
 
@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Troubleshooting Azure security incidents, including resolving Customer Lockbox access issues and diagnosing, containing, and responding to ransomware attacks in Azure. |
-| Best Practices | L37-L55 | Security hardening guidance for Azure apps, data, identity, network, VMs, SQL, and backups, including threat modeling, ransomware defense, and preventing subdomain takeover. |
-| Decision Making | L56-L60 | Guidance on comparing Azure key management options (Key Vault, Managed HSM, Storage keys, app keys), selection criteria, security tradeoffs, and when to use each service. |
-| Limits & Quotas | L61-L65 | Details on upcoming Azure-managed TLS certificate changes, impact on apps/endpoints, required client updates, and how to prepare/migrate to new TLS behavior. |
-| Security | L66-L88 | Designing secure Azure apps: threat-model-based auth, authz, crypto, data/session protection, secure comms, logging/auditing, operational hardening, and service-specific security (SQL, Storage, App Service, Service Fabric, Lockbox). |
-| Configuration | L89-L96 | Configuring secure Azure workloads: threat-based hardening, Microsoft Antimalware setup, required service/API endpoints, and finding services that support customer-managed encryption keys. |
-| Deployment | L97-L100 | Lists which Azure security features and services are available in each Azure cloud (public, Gov, China, etc.) to help you plan deployments and compliance. |
+| Troubleshooting | L31-L36 | Troubleshooting Azure Customer Lockbox access/approval issues and diagnosing, containing, and recovering from ransomware incidents in Azure environments. |
+| Best Practices | L37-L55 | Best-practice guidance for securing Azure apps, data, identities, networks, VMs, SQL, DNS, and backups, including threat modeling and ransomware-specific hardening steps. |
+| Decision Making | L56-L60 | Guidance on choosing between Azure key management options (Key Vault, Managed HSM, Storage keys, etc.), comparing security, control, performance, and use cases. |
+| Limits & Quotas | L61-L65 | Details on upcoming Azure-managed TLS certificate changes, impact on apps/endpoints, required client updates, and how to prepare or validate compatibility. |
+| Security | L66-L88 | Threat modeling–driven security for Azure apps: authz/authn, crypto, data/session protection, secure comms, logging/auditing, operational security, Customer Lockbox, and hardening key PaaS services |
+| Configuration | L89-L96 | Guidance on secure Azure configuration: hardening from threat models, setting Microsoft Antimalware, allowed service/API domains, and finding services that support customer-managed keys. |
+| Deployment | L97-L100 | Lists which Azure security features and services are available in each Azure cloud (global, Gov, China, etc.) to help plan deployments and compliance. |
 
 ### Troubleshooting
 | Topic | URL |

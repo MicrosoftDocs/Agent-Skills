@@ -3,7 +3,7 @@ name: azure-monitor
 description: Expert knowledge for Azure Monitor development including troubleshooting, configuration, deployment, decision making, limits & quotas, security, integrations & coding patterns, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Monitor applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Monitor Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents, data collection, alerts, autoscale, logs/metrics APIs, Container insights, Application Insights tools, ITSM connectors, and VM performance. |
-| Best Practices | L76-L108 | Best practices for configuring, scaling, querying, and cost-optimizing Azure Monitor (logs, metrics, alerts, autoscale, Prometheus, AKS, VMs, Copilot) for reliable, efficient observability. |
-| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations: agents, alerts, logs, costs, visualization tools, AKS/containers, SCOM/Splunk/Prometheus, and related API transitions. |
+| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics), data collection/ingestion, alerts/notifications, ITSM/ServiceNow, Container/Prometheus, Application Insights, and VM performance. |
+| Best Practices | L76-L108 | Best practices for configuring, scaling, querying, and cost-optimizing Azure Monitor (logs, metrics, Prometheus), plus alerts, autoscale, VM/AKS monitoring, and reliability/operations. |
+| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features, alerting and visualization options, and planning/migrating from legacy agents, APIs, tools, and third‑party systems while optimizing cost and billing |
 | Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link integration. |
-| Limits & Quotas | L154-L173 | Limits, performance, and scaling for Azure Monitor: ingestion and query caps, latency, autoscale, container/Prometheus high-scale configs, alert retention, and service quotas. |
-| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, and protected Prometheus/AKS/Insights access. |
-| Configuration | L208-L378 | Configuring Azure Monitor data collection, agents, alerts, diagnostics, workspaces, autoscale, Kubernetes/Prometheus/App Insights monitoring, and related schemas, policies, and transformations. |
-| Integrations & Coding Patterns | L379-L451 | Integrating Azure Monitor with VMs, Prometheus, alerts, webhooks, ITSM, Grafana, APIs, and custom apps, plus patterns for ingestion, querying, exporting, and transforming metrics/logs. |
-| Deployment | L452-L481 | How to deploy and manage Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and regions at scale. |
+| Limits & Quotas | L154-L173 | Limits, performance, and scaling for Azure Monitor: ingestion and query caps, timeouts, latency, autoscale, container/Prometheus high-scale configs, and alert/log retention settings. |
+| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, Prometheus, AKS, and Grafana. |
+| Configuration | L208-L378 | Configuring Azure Monitor and agents (AMA, diagnostics, OpenTelemetry, Prometheus), data collection rules, alerts, autoscale, workspaces, logs/metrics routing, and Application Insights settings. |
+| Integrations & Coding Patterns | L379-L451 | Integrating Azure Monitor with VMs, apps, Prometheus, webhooks, ITSM, Grafana, APIs, and custom telemetry; configuring alerts, exports, queries, and ingestion via REST, KQL, and SDKs. |
+| Deployment | L452-L481 | Deploying and configuring Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments, including region moves. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -241,7 +241,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure resource health alerts with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-resource-health |
 | Configure service health alerts using ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-service-health |
 | Deploy simple log search alerts via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-simple-log-search-alerts |
-| Set up Application Insights connection strings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
+| Configure Application Insights connection string settings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
 | Configure JMX metrics for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-jmx-metrics-configuration |
 | Configure Application Insights for Spring Boot apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-spring-boot |
 | Configure Application Insights Java agent options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-config |
@@ -342,8 +342,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Azure resource logs supported services and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-schema |
 | Apply diagnostic settings with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-manager-diagnostic-settings |
 | Configure Application Insights Profiler for .NET in Azure | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-settings |
-| Supported Azure Monitor resource log categories | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
-| List supported Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
+| Reference Azure Monitor resource log categories and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
+| Reference Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
 | Azure Monitor Log Analytics table and field definitions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-index |
 | Configure Snapshot Debugger for .NET exceptions | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger |
 | Enable Snapshot Debugger for .NET on App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-app-service |

@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-02-02 02:01:30
-**Total Duration**: 16m 41s
+**Generated**: 2026-02-03 02:01:24
+**Total Duration**: 13m 25s
 
 ## Product Crawl Summary
 
@@ -13,7 +13,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 2 | API Management | 274 | 218 | 0 | 0 | 0 | ✓ |
 | 3 | Avere vFXT for Azure | 20 | 13 | 0 | 0 | 0 | ✓ |
 | 4 | Azure App Configuration | 158 | 130 | 0 | 0 | 0 | ✓ |
-| 5 | App Service | 238 | 149 | 0 | 0 | 0 | ✓ |
+| 5 | App Service | 246 | 151 | 9 | 0 | 1 | ✓ |
 | 6 | Static Web Apps | 79 | 57 | 0 | 0 | 0 | ✓ |
 | 7 | Application Gateway | 136 | 84 | 0 | 0 | 0 | ✓ |
 | 8 | Synapse Analytics | 382 | 250 | 0 | 0 | 0 | ✓ |
@@ -21,15 +21,15 @@ Quick overview for reviewers. See individual product reports for details.
 | 10 | Update Manager | 49 | 26 | 0 | 0 | 0 | ✓ |
 | 11 | Internet Peering | 23 | 1 | 0 | 0 | 0 | ✓ |
 | 12 | Business Continuity Center | 20 | 7 | 0 | 0 | 0 | ✓ |
-| 13 | Azure Data Explorer | 197 | 137 | 0 | 0 | 0 | ✓ |
+| 13 | Azure Data Explorer | 197 | 136 | 0 | 12 | 0 | ✓ |
 | 14 | Azure Digital Twins | 66 | 47 | 0 | 0 | 0 | ✓ |
 | 15 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | ✓ |
 | 16 | Azure HPC Cache | 34 | 30 | 0 | 0 | 0 | ✓ |
 | 17 | Azure Managed Grafana | 42 | 31 | 0 | 0 | 0 | ✓ |
-| 18 | Azure Monitor | 547 | 414 | 0 | 0 | 0 | ✓ |
+| 18 | Azure Monitor | 547 | 414 | 0 | 3 | 0 | ✓ |
 | 19 | Functions | 351 | 285 | 0 | 0 | 0 | ✓ |
 | 20 | Azure Government | 39 | 32 | 0 | 0 | 0 | ✓ |
-| 21 | Azure NetApp Files | 224 | 160 | 0 | 0 | 0 | ✓ |
+| 21 | Azure NetApp Files | 224 | 160 | 0 | 1 | 0 | ✓ |
 | 22 | Azure VMware Solution | 134 | 106 | 0 | 0 | 0 | ✓ |
 | 23 | Internet of Things | 40 | 16 | 0 | 0 | 0 | ✓ |
 | 24 | Resource Manager | 499 | 367 | 0 | 0 | 0 | ✓ |
@@ -39,20 +39,20 @@ Quick overview for reviewers. See individual product reports for details.
 | 28 | Backup | 391 | 273 | 0 | 0 | 0 | ✓ |
 | 29 | Batch | 114 | 79 | 0 | 0 | 0 | ✓ |
 | 30 | Biztalk Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 31 | Bot Service | 140 | 99 | 0 | 0 | 40 | ✓ |
+| 31 | Bot Service | 110 | 74 | 0 | 0 | 30 | ✓ |
 | 32 | Cache | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 33 | SAP on Azure | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 34 | AI Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 35 | Communication Services | 435 | 324 | 0 | 0 | 80 | ✓ |
+| 35 | Communication Services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 36 | Container Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 37 | CycleCloud | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 38 | Storage | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 39 | Data Factory | 418 | 329 | 0 | 0 | 120 | ✓ |
-| 40 | Azure Data Manager for Energy | 50 | 23 | 0 | 0 | 0 | ✓ |
-| 41 | Data Manager for Agriculture | 26 | 12 | 0 | 0 | 0 | ✓ |
+| 39 | Data Factory | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 40 | Azure Data Manager for Energy | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 41 | Data Manager for Agriculture | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 42 | Azure DevTest Labs | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 43 | Governance | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 44 | Guidance | 364 | 266 | 0 | 0 | 0 | ✓ |
+| 43 | Governance | 80 | 34 | 0 | 0 | 132 | ✓ |
+| 44 | Guidance | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 45 | HDInsight | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 46 | Health Data Services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 47 | Health Insights | 0 | 0 | 0 | 0 | 0 | ✓ |
@@ -63,20 +63,20 @@ Quick overview for reviewers. See individual product reports for details.
 | 52 | Azure Logic Apps | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 53 | Machine Learning | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 54 | Messaging services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 55 | Migrate | 139 | 81 | 0 | 0 | 5 | ✓ |
+| 55 | Migrate | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 56 | Mobile Services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 57 | Networking | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 58 | Network Function Manager | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 59 | Notification Hubs | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 60 | Operations Management Suite | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 61 | Private Link | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 62 | Role-based access control | 104 | 95 | 0 | 0 | 0 | ✓ |
+| 62 | Role-based access control | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 63 | Scheduler | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 64 | Security | 111 | 43 | 0 | 0 | 0 | ✓ |
-| 65 | Site Recovery | 167 | 100 | 0 | 0 | 35 | ✓ |
+| 64 | Security | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 65 | Site Recovery | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 66 | Site Reliability Engineering | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 67 | Synapse Analytics | 382 | 250 | 0 | 0 | 0 | ✓ |
-| 68 | Azure SQL | 378 | 261 | 0 | 0 | 205 | ✓ |
+| 67 | Synapse Analytics | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 68 | Azure SQL | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 69 | SQL Server Stretch Database | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 70 | SRE Agent | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 71 | Storage | 0 | 0 | 0 | 0 | 0 | ✓ |
@@ -99,25 +99,25 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 86 success, 0 failed
-- **Total Pages**: 7107
-- **Total Classified**: 4977
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
-- **Total Deleted Pages**: 485
+- **Total Pages**: 4591
+- **Total Classified**: 3203
+- **Total New Pages**: 9
+- **Total Updated Pages**: 16
+- **Total Deleted Pages**: 163
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 236 |
-| best-practices | 394 |
-| configuration | 1201 |
-| decision-making | 361 |
-| deployment | 257 |
-| integrations | 1051 |
-| limits-quotas | 258 |
-| security | 779 |
-| troubleshooting | 440 |
+| architecture-patterns | 78 |
+| best-practices | 252 |
+| configuration | 871 |
+| decision-making | 216 |
+| deployment | 200 |
+| integrations | 666 |
+| limits-quotas | 154 |
+| security | 473 |
+| troubleshooting | 293 |
 
 ---
 
@@ -175,8 +175,8 @@ Quick overview for reviewers. See individual product reports for details.
 | 30 | virtual | azure-resource-manager | Resource Manager | - | 6 | 0 |
 | 31 | active | azure-partner-solutions | Azure Native Integrations | https://learn.microsoft.com/en-us/azure/partner-solutions/toc.json | 11 | 1 |
 | 32 | active | azure-signalr | SignalR Service | https://learn.microsoft.com/en-us/azure/azure-signalr/toc.json | 0 | 0 |
-| 33 | archived | azure-stack | Azure Stack | https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2506 | 0 | 1 |
-| 34 | archived | azure-stack | Azure Stack User | https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2506 | 0 | 1 |
+| 33 | archived | azure-stack | Azure Stack | https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2601 | 0 | 1 |
+| 34 | archived | azure-stack | Azure Stack User | https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2601 | 0 | 1 |
 | 35 | active | azure-baremetal-infrastructure | BareMetal Infrastructure | https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/toc.json | 0 | 0 |
 | 36 | active | azure-backup | Backup | https://learn.microsoft.com/en-us/azure/backup/toc.json | 0 | 0 |
 | 37 | active | azure-batch | Batch | https://learn.microsoft.com/en-us/azure/batch/toc.json | 0 | 0 |
@@ -464,26 +464,26 @@ Quick overview for reviewers. See individual product reports for details.
 - **Status**: archived
 - **Original href**: `/azure/azure-stack/`
 - **Resolved path**: `/azure-stack/operator`
-- **TOC URL**: https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2506
+- **TOC URL**: https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2601
 
 **Skipped Nodes:**
 
 | Name | Depth | Original URL | Reason | Details |
 |------|-------|--------------|--------|---------|
-| Azure Stack | 1 | https://learn.microsoft.com/en-us/azure/azure-stack/ | archived_excluded | toc: https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2506 |
+| Azure Stack | 1 | https://learn.microsoft.com/en-us/azure/azure-stack/ | archived_excluded | toc: https://learn.microsoft.com/en-us/azure-stack/operator/toc.json?view=azs-2601 |
 
 ### Azure Stack User (`azure-stack`)
 
 - **Status**: archived
 - **Original href**: `/azure/azure-stack/user/`
 - **Resolved path**: `/azure-stack/user`
-- **TOC URL**: https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2506
+- **TOC URL**: https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2601
 
 **Skipped Nodes:**
 
 | Name | Depth | Original URL | Reason | Details |
 |------|-------|--------------|--------|---------|
-| Azure Stack User | 1 | https://learn.microsoft.com/en-us/azure/azure-stack/user/ | archived_excluded | toc: https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2506 |
+| Azure Stack User | 1 | https://learn.microsoft.com/en-us/azure/azure-stack/user/ | archived_excluded | toc: https://learn.microsoft.com/en-us/azure-stack/user/toc.json?view=azs-2601 |
 
 ### Batch AI (`azure-batch-ai`)
 

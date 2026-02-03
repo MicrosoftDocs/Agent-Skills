@@ -3,7 +3,7 @@ name: azure-functions
 description: Expert knowledge for Azure Functions development including integrations & coding patterns, configuration, security, decision making, architecture & design patterns, deployment, best practices, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Functions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Functions Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZF analyzer errors, storage/config problems, and Node.js/Python deployment and execution failures. |
-| Best Practices | L61-L94 | Best practices for Durable and regular Azure Functions: orchestrations, entities, timers, events, retries, versioning, diagnostics, performance, memory, DI, idempotency, and testing. |
-| Decision Making | L95-L120 | Guidance on choosing Functions hosting/runtime options, costs, networking, Durable Functions/Task, and migration paths (versions, plans, Node model, Service Bus, AWS Lambda). |
-| Architecture & Design Patterns | L121-L128 | Patterns for containerized Functions on Linux, Durable Functions performance/DR/geo-distribution, and scaling strategies like target-based and throughput-aware scaling. |
-| Limits & Quotas | L129-L136 | Scaling, throughput, and concurrency limits for Functions and Durable Functions, plus language/runtime support levels and timelines for different Azure Functions stacks |
-| Security | L137-L153 | Securing Azure Functions apps: encryption at rest, keys, managed identities, private endpoints/VNets, identity-based connections (storage, SQL, Service Bus), Web PubSub, and overall security strategies. |
-| Configuration | L154-L199 | Configuring how Functions apps run: app/host settings, bindings, Durable Functions, scaling, plans (Flex/Premium), storage, networking, monitoring, runtimes, and local/dev dependencies. |
-| Integrations & Coding Patterns | L200-L312 | How to connect Functions to external services using triggers/bindings (HTTP, data stores, messaging, AI/OpenAI, Dapr, MCP, SignalR, Web PubSub) and apply common integration patterns. |
-| Deployment | L313-L352 | Deploying and hosting Azure Functions (incl. Durable, containers, Kubernetes, Flex/Premium), CI/CD pipelines, zero‑downtime strategies, and configuring Kafka/RabbitMQ/Mobile Apps bindings. |
+| Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment and execution failures. |
+| Best Practices | L61-L94 | Best practices for Durable Functions and core Azure Functions: orchestrator/entity patterns, error handling, versioning, testing, performance/scale, DI, idempotency, and reliable event processing. |
+| Decision Making | L95-L120 | Guidance on choosing Azure Functions hosting/runtime options, costs, networking, Durable Functions/Task, and performing migrations (plans, runtimes, language models, AWS Lambda, Service Bus). |
+| Architecture & Design Patterns | L121-L128 | Patterns for container-based Functions, Durable Functions performance/DR/geo-distribution, and scaling strategies (target-based autoscale) for resilient, efficient architectures |
+| Limits & Quotas | L129-L136 | Limits, scaling, and performance of Functions: Durable Task throughput, event‑driven scale limits, concurrency configuration, and language/runtime support levels and timelines. |
+| Security | L137-L153 | Securing Azure Functions apps: encryption at rest, keys, managed identities, private endpoints/VNets, identity-based connections (SQL, Storage, Service Bus, Web PubSub), and overall security best practices. |
+| Configuration | L154-L199 | Configuring how Functions apps run: app/host settings, plans, storage, dependencies, Durable Functions options, monitoring/telemetry, networking/IPs, and local/runtime version setup. |
+| Integrations & Coding Patterns | L200-L312 | How to connect Azure Functions to external services using triggers/bindings (HTTP, storage, data, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) and implement common integration patterns. |
+| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, containers, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), deployment slots, zero‑downtime, Durable, Kafka/RabbitMQ, and plan selection. |
 
 ### Troubleshooting
 | Topic | URL |

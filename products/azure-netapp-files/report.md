@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 224
+- **Updated Pages**: 1
+- **Unchanged**: 223
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -31,6 +31,11 @@
 | *(Unclassified)* | 64 | 28.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure NetApp Files for Azure Government](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-government)
+  - Updated: 2025-12-16T18:11:00.000Z → 2026-02-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -152,6 +157,7 @@
 | [Understand volume languages](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-volume-languages) | limits-quotas | 0.70 | Includes Azure NetApp Files–specific default language (C.UTF-8) and explicit character size support (0–3 bytes) tied to supported languages, which are concrete product limits on encoding/character sets. |
 | [Understand volume quota](https://learn.microsoft.com/en-us/azure/azure-netapp-files/volume-quota-introduction) | limits-quotas | 0.70 | A volume quota article for a storage service typically documents concrete quota semantics and may include specific capacity relationships and limits for volumes and pools, which are product-specific quota details. |
 | [Update Terraform-managed volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/terraform-manage-volume) | best-practices | 0.70 | Focuses on how to safely update Terraform-managed resources, including risks of out-of-band changes and required steps to avoid data loss. This is actionable, product- and tool-specific guidance with gotchas, fitting best-practices. |
+| [Azure NetApp Files for Azure Government](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-government) | deployment | 0.68 | Page is specific to Azure Government and describes how to connect to and access Azure NetApp Files in that sovereign cloud, including feature availability differences and environment-specific access steps. These are product- and cloud-specific deployment/availability details that are not generic and qualify as expert knowledge about how and where the service can be used. |
 | [Back up your database with AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-backup) | integrations | 0.68 | A command reference page for the Azure Application Consistent Snapshot (azacsnap) backup operation typically includes product-specific CLI syntax, parameters, flags, and required configuration values unique to Azure NetApp Files integrations. This is expert, tool-specific knowledge not generally known from training data and aligns best with the integrations & coding patterns category. |
 | [Create an NFS volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-volumes) | best-practices | 0.68 | Beyond basic creation, the article explicitly mentions considerations on which NFS version to use and best practices. These are likely product-specific recommendations (e.g., mount options, export policies, performance-related settings) that qualify as best practices. |
 | [Create an SMB volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb) | configuration | 0.68 | The article goes beyond a basic tutorial by detailing product-specific requirements for SMB3 volumes, including Active Directory and Domain Services prerequisites and configuration steps unique to Azure NetApp Files. These are concrete, service-specific configuration details (for example, AD connection requirements and volume settings) that qualify as expert knowledge rather than generic how-to content, fitting best under configuration. |
@@ -186,7 +192,6 @@
 | [REST API using PowerShell](https://learn.microsoft.com/en-us/azure/azure-netapp-files/develop-rest-api-powershell) | integrations | 0.64 | Shows how to use PowerShell to call the Azure NetApp Files REST API; such content typically includes concrete cmdlet usage, parameter names, and request construction details specific to this service. |
 | [REST API](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-develop-with-rest-api) | integrations | 0.62 | REST API getting-started docs usually enumerate resource-specific operations, endpoints, and parameters unique to the product, which qualifies as integration/coding patterns beyond generic REST usage. |
 | [Azure Managed Disk (PREVIEW)](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-preview) | configuration | 0.60 | Preview feature setup/usage for a niche tool will contain specific flags, commands, and configuration options not generally known from training. |
-| [Azure NetApp Files for Azure Government](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-government) | deployment | 0.60 | Azure Government articles usually include feature availability matrices and region/tier constraints specific to that cloud, which are deployment-specific constraints not generally known from training. |
 | [Delete an application volume group](https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-delete) | configuration | 0.60 | Includes specific behavioral constraints (volume group must be empty; network interfaces are auto-deleted and cannot be removed manually). These are product-specific configuration/operation rules. |
 | [Disaster recovery using AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-disaster-recovery) | deployment | 0.60 | Disaster recovery procedure for Azure Large Instance with AzAcSnap likely includes product-specific steps, ordering, and constraints that are expert operational knowledge. |
 | [Dynamically change the service level of a volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/dynamic-change-volume-service-level) | decision-making | 0.60 | Describes when and how to change service levels to meet workload needs, including trade-offs between higher and lower service levels. This is product-specific decision guidance about selecting tiers for performance and cost, which fits decision-making. |

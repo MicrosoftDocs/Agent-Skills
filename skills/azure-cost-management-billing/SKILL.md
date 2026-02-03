@@ -3,7 +3,7 @@ name: azure-cost-management-billing
 description: Expert knowledge for Azure Cost Management Billing development including configuration, security, decision making, best practices, troubleshooting, integrations & coding patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Cost Management Billing applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Cost Management Billing Skill
 
@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, payment, and reservation issues, including disabled subscriptions, sign-in/access errors, payment failures, and abnormal reservation/savings plan usage |
-| Best Practices | L63-L74 | Cost optimization guidance: cost analysis patterns, Advisor-based savings, EA reservation savings, SQL Azure Hybrid Benefit licensing, and onboarding to Microsoft Customer Agreement. |
-| Decision Making | L75-L140 | Guides for choosing Azure billing models, reservations, savings plans, and subscription offers, estimating and optimizing costs, and handling EA/MCA/MPA agreement and billing transitions. |
-| Limits & Quotas | L141-L153 | Managing Azure free-tier limits, spending limits, subscription lifecycle, and understanding timing/latency for cost, reservation, and savings plan data and utilization. |
-| Security | L154-L179 | RBAC roles, admin permissions, and security policies for accessing Azure billing, invoices, credits, Marketplace, EA/MCA accounts, reservations, and savings plans securely |
-| Configuration | L180-L210 | Configuring Azure Cost Management & Billing: budgets, alerts, exports, tags, views, reservations/savings plans, AKS/SQL costs, Power BI, and multi-tenant/partner billing setup. |
-| Integrations & Coding Patterns | L211-L226 | APIs, REST, and PowerShell patterns to automate cost management, billing role migration, and programmatic creation/management of EA, MCA, and Partner subscriptions and reservations. |
-| Deployment | L227-L233 | Creating and provisioning Azure subscriptions for customers: EA and Microsoft Customer Agreement setups, cross-tenant MCA requests, and partner-led customer subscription creation. |
+| Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, and reservation issues (errors, disabled subscriptions, sign-in/access, payment problems, low utilization, and usage/invoice discrepancies). |
+| Best Practices | L63-L74 | Best practices for analyzing and optimizing Azure costs, using Advisor and reservations, and centrally managing/optimizing SQL Server and Azure Hybrid Benefit licensing and savings. |
+| Decision Making | L75-L140 | Guidance for choosing cost tools, billing models, reservations and savings plans, handling EA/MCA/MPA transitions, and optimizing Azure/Copilot/Fabric/Foundry spend and discounts. |
+| Limits & Quotas | L141-L153 | Managing free-tier limits, spending caps, subscription lifecycle states, and understanding timing/latency for cost, reservations, and savings plan utilization data. |
+| Security | L154-L179 | RBAC and billing security: who can see/manage costs, invoices, credits, reservations, savings plans, Marketplace purchases, and how to securely configure roles, scopes, and admin access. |
+| Configuration | L180-L210 | Configuring Azure Cost Management and billing: budgets, alerts, cost allocation/tags, exports, views, reservations/savings plans, AKS/SQL costs, Power BI, and multi-tenant/MCA billing setup. |
+| Integrations & Coding Patterns | L211-L226 | APIs and scripts for automating cost data access, subscription and billing account creation/migration (EA, MCA, Partner), cross-tenant setups, and reservation management. |
+| Deployment | L227-L233 | Creating and managing Azure subscriptions for customers: EA and MCA subscription provisioning, cross-tenant MCA requests, and partner-led customer subscription setup. |
 
 ### Troubleshooting
 | Topic | URL |

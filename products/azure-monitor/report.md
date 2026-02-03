@@ -10,8 +10,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 547
+- **Updated Pages**: 3
+- **Unchanged**: 544
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -31,6 +31,15 @@
 | *(Unclassified)* | 133 | 24.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-02-02T18:19:00.000Z
+- [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index)
+  - Updated: 2026-01-20T08:00:00.000Z → 2026-02-02T08:00:00.000Z
+- [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index)
+  - Updated: 2026-01-20T08:00:00.000Z → 2026-02-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -65,7 +74,6 @@
 | [Code Optimizations](https://learn.microsoft.com/en-us/azure/azure-monitor/optimization-insights/code-optimizations-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article with a checklist; expected to map specific symptoms and errors to causes and resolutions for Code Optimizations, which is product-specific knowledge. |
 | [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration) | configuration | 0.85 | Explicitly about configuring OpenTelemetry in Application Insights, including connection strings and sampling options; fits configuration sub-skill with product-specific parameters and allowed values. |
 | [Configure granular RBAC](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/granular-rbac-use-case) | security | 0.85 | Step-by-step example of configuring row-level access based on attributes; contains concrete RBAC conditions, field names, and configuration steps unique to Log Analytics security. |
-| [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings) | configuration | 0.85 | Explains connection string schema, key-value pairs, and examples; this is a configuration reference with specific setting names and structure unique to Application Insights. |
 | [Cross-resource queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/cross-workspace-queries) | limits-quotas | 0.85 | Describes cross-workspace query behavior and explicitly states a maximum of 10 resources per cross-resource query, which is a concrete numeric limit. |
 | [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys) | security | 0.85 | Describes configuring CMK with Key Vault/HSM; likely includes required settings, key URIs, workspace linkage behavior, and constraints, which are product-specific security configuration details. |
 | [Customize configuration](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configuration) | configuration | 0.85 | Explains specific ConfigMap schema/fields and allowed values for customizing scraping, which are concrete configuration parameters unique to this integration. |
@@ -82,7 +90,6 @@
 | [Sampling overrides](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-sampling-overrides) | configuration | 0.85 | Sampling overrides configuration will include specific property names, percentage values, and rules syntax. These are product-specific configuration details and edge-case behaviors (best-practices adjacent but primarily configuration). |
 | [Scrape config with CRD](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-crd) | configuration | 0.85 | Describes pod and service monitor CRDs, including their spec fields and usage, which are detailed configuration schemas for managed Prometheus. |
 | [Scrape config with ConfigMap](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-configmap) | configuration | 0.85 | Provides detailed ConfigMap examples and validation tooling for defining custom scrape jobs and targets, including specific parameter names and constraints. |
-| [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | configuration | 0.85 | Provides a detailed index of metrics per resource type, including metric names and dimensions. This is a configuration-style reference needed to correctly configure monitoring and queries, and is not generic knowledge. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for VM insights enablement and usage; typically organized by symptoms and includes specific error messages, causes, and resolutions unique to VM insights and its agents. |
 | [Troubleshoot metric alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-troubleshoot-metric) | troubleshooting | 0.85 | Focused on common questions and troubleshooting for metric alerts; such pages usually map specific alert behaviors or errors to causes and fixes, which is product-specific troubleshooting knowledge. |
 | [Windows AMA Troubleshooter](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/troubleshooter-ama-windows) | troubleshooting | 0.85 | Describes a Windows AMA troubleshooter executable, its checks, and log collection; such tools typically include specific commands, output locations, and symptom-based guidance, matching troubleshooting criteria. |
@@ -128,7 +135,6 @@
 | [Send to Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs) | integrations | 0.80 | Explains configuring WAD public configuration to route diagnostics data to Azure Event Hubs, including product-specific configuration elements and settings for this integration. |
 | [Send to Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-logs) | integrations | 0.80 | Details how to configure Azure Diagnostics extension output from Storage to Azure Monitor Logs, including specific configuration schema and mapping settings unique to this pipeline. |
 | [ServiceNow ITOM](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-secure-webhook-connections-servicenow) | integrations | 0.80 | Details ServiceNow-specific configuration and endpoint parameters for Secure Webhook integration with Azure Monitor, including product-specific settings beyond generic tutorials. |
-| [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | configuration | 0.80 | Defines supported resource log categories and schemas per service. These category names and schema details are specific configuration/reference data for Azure Monitor logging. |
 | [Tables that support the Basic table plan](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-azure-tables) | configuration | 0.80 | Enumerates which tables support the Basic table plan, a product-specific configuration/plan capability matrix that impacts cost and configuration choices. |
 | [Tables that support transformations](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tables-feature-support) | configuration | 0.80 | Lists which Log Analytics tables support ingestion-time transformations. This is a product-specific capability matrix that directly affects how configurations can be applied. |
 | [Throttling](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-throttling) | limits-quotas | 0.80 | Describes default throttling values, conditions, and configurable parameters for Container Network Logs; includes product-specific limits and behaviors. |
@@ -150,7 +156,9 @@
 | [Manage data retention](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure) | configuration | 0.78 | Covers how retention works (hot/cold or similar states) and how to set retention per table; includes specific retention settings and ranges unique to Azure Monitor Logs. |
 | [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication) | security | 0.78 | Page is focused on enabling Microsoft Entra (Azure AD) authentication for Application Insights ingestion, including product-specific security behavior such as opting out of local authentication and using managed identities. This is concrete, service-specific security configuration rather than a conceptual overview. |
 | [PromQL for OpenTelemetry metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-opentelemetry-best-practices) | best-practices | 0.78 | PromQL guidance is specific to Azure Monitor’s OpenTelemetry implementation, including product-specific query patterns and gotchas (UTF-8 handling, temporality, naming) that go beyond generic PromQL knowledge. |
+| [Supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | configuration | 0.78 | The page is a detailed reference of supported metrics per Azure resource type, which is product-specific expert knowledge not inferable from general training. It functions as a configuration/reference index for what metrics are available to configure and query, but does not focus on limits/quotas, troubleshooting, or decision guidance. |
 | [Estimate cost](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/cost-estimate) | decision-making | 0.76 | Provides detailed guidance on using the Azure Monitor pricing calculator, including feature categories and how to input usage to estimate costs; this is concrete, product-specific cost-planning guidance that supports tier/feature selection and capacity decisions. |
+| [Supported resource log categories](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index) | configuration | 0.76 | The page lists supported resource log categories and schemas per service, which is product-specific expert knowledge. It serves as a configuration/reference index for which log categories exist and how they’re structured, rather than conceptual overview, limits, or troubleshooting content. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-best-practices) | best-practices | 0.75 | Explicitly a best practices article for autoscale patterns on specific Azure services; likely includes product-specific recommendations and gotchas for configuring autoscale effectively. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/best-practices-vm) | best-practices | 0.75 | Explicitly a best-practices article for monitoring VMs using Azure Monitor, aligned to WAF pillars; likely includes product-specific recommendations and patterns beyond generic monitoring advice. |
 | [Convert management packs into data collection rules](https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/convert-management-packs-into-data-collection-rules) | integrations | 0.75 | Describes a specific integration pattern between SCOM management packs and Azure Monitor DCRs, including extracting rules/monitors and feeding configuration into an LLM, which is a product-specific integration workflow. |
@@ -179,6 +187,7 @@
 | [Text logs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-text) | configuration | 0.75 | Describes the Custom Text Logs data source type and how to configure DCRs to collect text logs from VMs, including path and format considerations. |
 | [Windows events](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-windows-events) | configuration | 0.75 | Details DCR configuration for Windows events, including data source type and log selection, which are concrete configuration patterns for this product. |
 | [Workspace transformation with ARM templates](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-workspace-transformations-api) | configuration | 0.75 | Shows how to configure transformations in a workspace DCR using ARM templates; includes template schema, parameter names, and resource definitions. |
+| [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings) | configuration | 0.74 | The page defines the exact schema and key-value settings that make up an Application Insights connection string (for example, required keys like instrumentation key and ApplicationId, and how they must be formatted). These are product-specific configuration parameters and patterns that go beyond generic knowledge of connection strings, fitting the configuration sub-skill. |
 | [Sync ITSM Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-resync-servicenow) | troubleshooting | 0.74 | Provides a concrete procedure to resolve ServiceNow sync problems by resetting connections and refreshing tokens, which is a product-specific troubleshooting workflow. |
 | [Configure Azure for a Secure Webhook](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration) | security | 0.72 | Covers required Azure-side configurations (likely app registrations, permissions, endpoints) to securely connect ITSM products via Secure Webhook, including product-specific security settings. |
 | [AKS clusters](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-enable) | deployment | 0.70 | Describes how to enable multiple Azure Monitor features for AKS; enabling monitoring components on AKS is a product-specific deployment/enablement pattern. |

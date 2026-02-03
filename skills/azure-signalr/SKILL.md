@@ -3,7 +3,7 @@ name: azure-signalr
 description: Expert knowledge for Azure Signalr development including decision making, security, configuration, best practices, architecture & design patterns, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Azure Signalr applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Signalr Skill
 
@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L40 | Diagnosing and fixing Azure SignalR issues: reading diagnostic logs, using live trace, troubleshooting connectivity/delivery problems, and FAQs on common errors and usage limits. |
-| Best Practices | L41-L46 | Guidance on safely shutting down SignalR app servers and managing client lifecycle events, including detecting, handling, and recovering from client disconnects and reconnects. |
-| Decision Making | L47-L54 | Guidance on choosing SignalR deployment modes and zones, estimating performance/capacity, and understanding how messages and connections are billed and impact cost. |
-| Architecture & Design Patterns | L55-L61 | Patterns for scaling Azure SignalR, using multiple instances, handling failover/DR, and integrating with reverse proxies for resilient, high-availability architectures. |
-| Security | L62-L85 | Securing Azure SignalR: keys, RBAC/Entra/managed identity auth, OAuth for clients, private endpoints/NSGs/firewall, outbound traffic, Key Vault, and Azure Policy compliance. |
-| Configuration | L86-L98 | Configuring Azure SignalR endpoints, domains, autoscale, monitoring/metrics, negotiation, Functions bindings, App Service/CLI setup, and using the local emulator for serverless development. |
-| Integrations & Coding Patterns | L99-L113 | Patterns and APIs for integrating SignalR with servers and Azure services (Event Grid, API Management, App Gateway) plus full data-plane REST and management SDK usage. |
+| Troubleshooting | L32-L40 | Diagnosing and debugging SignalR issues: reading diagnostic logs, using live trace, troubleshooting connectivity/delivery problems, and FAQs on common service errors and behaviors. |
+| Best Practices | L41-L46 | Guidance on graceful server shutdown, managing client disconnect/reconnect flows, and designing resilient connection handling patterns for Azure SignalR apps |
+| Decision Making | L47-L54 | Guidance on choosing SignalR deployment modes and zones, estimating performance/capacity, and understanding how messages and connections are billed. |
+| Architecture & Design Patterns | L55-L61 | Patterns for scaling Azure SignalR, using multiple instances, integrating with reverse proxies, and designing for resiliency, failover, and disaster recovery. |
+| Security | L62-L85 | Securing Azure SignalR: keys, rotation, network/private endpoints, NSGs, Key Vault, managed identities, Entra ID/RBAC/OAuth auth, cross-tenant access, WAF, and Azure Policy compliance. |
+| Configuration | L86-L98 | Configuring Azure SignalR endpoints, domains, autoscale, monitoring/metrics, negotiation, Functions bindings, CLI setup, and using the local emulator for serverless development. |
+| Integrations & Coding Patterns | L99-L113 | Patterns and APIs for integrating SignalR with servers and gateways, using SDKs and REST data-plane, and wiring events to Event Grid and API Management/Application Gateway |
 | Deployment | L114-L118 | Guides for deploying Azure SignalR: replicating resources across regions with ARM templates and scaling instances using Azure portal or CLI. |
 
 ### Troubleshooting

@@ -3,7 +3,7 @@ name: azure-devtest
 description: Expert knowledge for Azure Devtest development including security, and troubleshooting. Use when building, debugging, or optimizing Azure Devtest applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Devtest Skill
 
@@ -20,8 +20,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L26-L30 | Diagnosing and resolving issues when a Visual Studio Dev/Test subscription expires, including access loss, renewal options, and restoring or migrating Azure resources. |
-| Security | L31-L35 | Configuring security, governance, RBAC, and user access for Azure Dev/Test directories, including roles, permissions, and policy controls for dev/test environments. |
+| Troubleshooting | L26-L30 | Diagnosing and resolving issues with expired Visual Studio Dev/Test subscriptions, including renewal options, access restoration, and impacts on Azure resources. |
+| Security | L31-L35 | Configuring security, governance, RBAC, and access control for Azure Dev/Test environments, including managing user roles and permissions in the Dev/Test directory. |
 
 ### Troubleshooting
 | Topic | URL |

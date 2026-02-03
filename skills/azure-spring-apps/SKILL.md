@@ -3,7 +3,7 @@ name: azure-spring-apps
 description: Expert knowledge for Azure Spring Apps development including configuration, best practices, limits & quotas, security, deployment, integrations & coding patterns, troubleshooting, architecture & design patterns, and decision making. Use when building, debugging, or optimizing Azure Spring Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Spring Apps Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Spring Apps runtime issues: OOMs, exit codes, build failures, VNet/connectivity problems, remote debugging, memory/JFR analysis, and real-time log streaming. |
-| Best Practices | L51-L58 | Best practices for production Azure Spring Apps: observability setup, JVM diagnostics, zone-aware and DR design, and live monitoring with Application Live View. |
-| Decision Making | L59-L65 | Guidance on choosing Azure Spring Apps plans, understanding Enterprise licensing/Marketplace offers, and migrating existing Basic/Standard apps to the Enterprise tier. |
-| Architecture & Design Patterns | L66-L72 | Design patterns for exposing Azure Spring Apps: load balancers, Application Gateway with TLS termination, and secure public internet access options. |
-| Limits & Quotas | L73-L82 | Version support, storage/plan quotas, VNet networking requirements, and guidance for scaling Azure Spring Apps Enterprise to large instance counts and high CPU/memory workloads. |
-| Security | L83-L103 | Security features for Spring Apps: TLS, custom domains, Zero Trust, Entra ID SSO/RBAC, managed identities, Key Vault/SQL/Functions access, and Azure Policy/compliance controls. |
-| Configuration | L104-L141 | Configuring Azure Spring Apps networking, ingress/egress, TLS, scaling, storage, logging/monitoring, gateways, and enterprise features like Tanzu, APM, and rate limiting. |
-| Integrations & Coding Patterns | L142-L167 | Integrating Azure Spring Apps with databases, Redis, OpenAI, gRPC, gateways, and monitoring tools (App Insights, APMs, Micrometer), plus Maven deployment and Tanzu/Entra ID features. |
-| Deployment | L168-L184 | CI/CD and deployment patterns for Azure Spring Apps, including zero-downtime/blue‑green, GitHub Actions/Azure Pipelines, VNet/VNet-injection setups, buildpacks, and Terraform/ARM/Bicep provisioning |
+| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Spring Apps runtime, memory, build, networking, logging, and debugging issues, including OOMs, exit codes, VNets, dumps/JFR, and remote debugging. |
+| Best Practices | L51-L58 | Best practices for production Azure Spring Apps: observability/monitoring, JVM diagnostics, zone-aware and DR design, and using Application Live View for live debugging. |
+| Decision Making | L59-L65 | Guidance on choosing Azure Spring Apps plans, understanding Enterprise licensing/Marketplace offer, and migrating apps from Basic/Standard to Enterprise |
+| Architecture & Design Patterns | L66-L72 | Designs for exposing Azure Spring Apps externally: load balancers, Application Gateway with TLS termination, and secure/public internet access patterns. |
+| Limits & Quotas | L73-L82 | Version/runtime support, storage limits, plan quotas, VNet/networking requirements, and guidance for scaling Azure Spring Apps Enterprise to large instance counts and high CPU/memory workloads. |
+| Security | L83-L103 | Security features for Spring Apps: managed identities, Key Vault, SQL, Functions access, TLS and custom domains, Entra ID SSO/RBAC, and Azure Policy/Zero Trust configuration. |
+| Configuration | L104-L141 | Configuring Azure Spring Apps networking, scaling, storage, TLS, logging/monitoring, gateways, and enterprise features (Tanzu, APM, Dev Tools) for secure, observable app deployments. |
+| Integrations & Coding Patterns | L142-L167 | Monitoring, APM agents, logging, and integrating Azure Spring Apps with databases, Redis, gRPC, gateways, Entra ID, Azure OpenAI, and Tanzu/VMware enterprise tools. |
+| Deployment | L168-L184 | CI/CD and deployment patterns for Azure Spring Apps: zero-downtime and blue‑green releases, GitHub Actions/Azure Pipelines, VNet/VNet‑injected deployments, buildpacks, and Terraform/Bicep/ARM. |
 
 ### Troubleshooting
 | Topic | URL |

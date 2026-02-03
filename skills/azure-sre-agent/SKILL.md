@@ -3,7 +3,7 @@ name: azure-sre-agent
 description: Expert knowledge for Azure Sre Agent development including security, configuration, integrations & coding patterns, and troubleshooting. Use when building, debugging, or optimizing Azure Sre Agent applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-02"
+  generated_at: "2026-02-03"
 ---
 # Azure Sre Agent Skill
 
@@ -20,10 +20,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L28-L32 | Diagnosing and fixing common Azure SRE Agent problems, including installation, configuration, connectivity, authentication, and runtime/monitoring issues. |
-| Security | L33-L41 | Managing SRE Agent identities, RBAC roles, permissions, run modes/consent, and understanding its data residency, privacy, and access control model. |
-| Configuration | L42-L50 | Configuring SRE Agent behavior: code interpreter setup, incident memory, scheduled tasks, and creating/configuring subagents for specific operational workflows. |
-| Integrations & Coding Patterns | L51-L57 | Connecting Azure SRE Agent to code repos, external services, custom Python tools, and MCP servers, plus patterns for extending and integrating the agent’s capabilities. |
+| Troubleshooting | L28-L32 | Diagnosing and fixing common Azure SRE Agent problems, including connectivity, configuration, deployment, runtime, and monitoring/alerting issues. |
+| Security | L33-L41 | Managing SRE Agent identities, RBAC roles, permissions, run modes/consent, and understanding its data residency, privacy, and security access model |
+| Configuration | L42-L50 | Configuring Azure SRE Agent behavior: code interpreter setup, incident memory, scheduled tasks, and creating/operating specialized subagents for different SRE workflows. |
+| Integrations & Coding Patterns | L51-L57 | Connecting Azure SRE Agent to repos, external services, custom Python tools, and MCP servers, plus patterns for extending and integrating it with your existing systems |
 
 ### Troubleshooting
 | Topic | URL |
