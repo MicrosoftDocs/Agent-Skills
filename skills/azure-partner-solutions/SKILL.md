@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L38 | Diagnosing and resolving common setup, configuration, and runtime issues for Azure Native integrations with Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic. |
-| Decision Making | L39-L43 | Guidance on evaluating and choosing the Azure Dynatrace free trial, including enrollment steps, prerequisites, and what’s included in the trial offering. |
-| Architecture & Design Patterns | L44-L48 | Architectural guidance for placing Cloud NGFW firewalls behind Azure Application Gateway, including network design, routing, and security pattern considerations. |
-| Security | L49-L57 | Managing security, identity, roles, SSO, and monitoring for Azure partner services like Confluent, Datadog, Dynatrace, Informatica IDMC, and NGINXaaS. |
+| Troubleshooting | L30-L38 | Diagnosing and resolving common setup, configuration, and runtime issues for Azure Native integrations with Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic |
+| Decision Making | L39-L43 | Guidance on evaluating and signing up for the Azure Dynatrace free trial, including enrollment steps, prerequisites, and considerations before committing. |
+| Architecture & Design Patterns | L44-L48 | Architectural guidance for deploying and integrating Cloud NGFW firewalls behind Azure Application Gateway, including network design, routing, and security best practices. |
+| Security | L49-L57 | Managing security, SSO, roles, and monitoring for Azure-integrated partner services like Confluent, Datadog, Dynatrace, Informatica IDMC, and NGINXaaS. |
 | Configuration | L58-L67 | Configuring and managing Azure integrations and runtime settings for Datadog, Dynatrace, Elastic, Informatica serverless, and Cloud NGFW networking/NAT/logging. |
-| Integrations & Coding Patterns | L68-L71 | Guides for integrating Confluent Cloud with Azure compute services (like Functions, AKS, VMs), including connectivity setup, authentication, and data streaming patterns. |
+| Integrations & Coding Patterns | L68-L71 | Guides for integrating Confluent Cloud with Azure compute (AKS, VMs, Functions, etc.), including connectivity setup, authentication, and data streaming patterns. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,18 +1,47 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS,
+    scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools
+    and APM integrations
+  best-practices: 'Best practices for production monitoring and diagnostics in Azure
+    Spring Apps: observability setup, JVM diagnostic tuning, and using Application
+    Live View for real-time monitoring.'
+  limits-quotas: Version support, quotas, storage limits, scaling to hundreds of instances,
+    and guidance for running large CPU/memory workloads on Azure Spring Apps.
+  security: 'Securing Azure Spring Apps: managed identities, Key Vault secrets, TLS/custom
+    domains, Entra ID SSO/RBAC, GitHub Actions auth, and Azure Policy/Zero Trust security
+    controls.'
+  deployment: Deploying Azure Spring Apps with zero-downtime/blue‑green strategies,
+    CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform),
+    and buildpack-based app/static site deployment
+  integrations: Integrating Azure Spring Apps with monitoring/APM tools, databases,
+    Redis, gRPC, gateways, security (Entra ID), and Azure OpenAI, plus enterprise
+    patterns like Tanzu services and Maven deployment.
+  troubleshooting: 'Diagnosing and fixing Azure Spring Apps issues: build failures,
+    OOM/restarts, exit codes, VNet connectivity, debugging (remote/JVM/JFR), memory
+    analysis, and real-time log streaming.'
+  architecture-patterns: Designing external access to Azure Spring Apps using load
+    balancers, Application Gateway, TLS termination, and secure public internet exposure
+    patterns
+  decision-making: Choosing the right Azure Spring Apps plan, understanding Enterprise
+    licensing/Marketplace offers, and how to migrate from Basic/Standard to Enterprise
+---
 # Azure Spring Apps Crawl Report
 
 ## Summary
 
 - **Total Pages**: 152
-- **Fetched**: 120
-- **Fetch Failed**: 32
-- **Classified**: 88
-- **Unclassified**: 32
+- **Fetched**: 152
+- **Fetch Failed**: 0
+- **Classified**: 118
+- **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 32
 - **Updated Pages**: 0
 - **Unchanged**: 120
-- **Deleted Pages**: 32
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
 
 ## Classification Statistics
@@ -20,40 +49,40 @@
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 2.0% |
-| best-practices | 2 | 1.3% |
-| configuration | 27 | 17.8% |
-| decision-making | 2 | 1.3% |
-| deployment | 11 | 7.2% |
+| best-practices | 3 | 2.0% |
+| configuration | 35 | 23.0% |
+| decision-making | 3 | 2.0% |
+| deployment | 13 | 8.6% |
 | integrations | 22 | 14.5% |
-| limits-quotas | 5 | 3.3% |
-| security | 10 | 6.6% |
-| troubleshooting | 6 | 3.9% |
-| *(Unclassified)* | 32 | 21.1% |
+| limits-quotas | 6 | 3.9% |
+| security | 19 | 12.5% |
+| troubleshooting | 14 | 9.2% |
+| *(Unclassified)* | 34 | 22.4% |
 
 ## Changes
 
-### Deleted Pages
+### New Pages
 
-- ~~API breaking changes~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/breaking-changes)
-- ~~Expose applications to the internet with end-to-end TLS/SSL~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/expose-apps-gateway-end-to-end-tls)
-- ~~Frequently asked questions~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/faq)
-- ~~Auth with Key Vault in GitHub Actions~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/github-actions-key-vault)
-- ~~Access Config Server and Service Registry~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac)
-- ~~Capture heap/thread dump and use JFR~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-capture-dumps)
-- ~~CI/CD with Azure DevOps~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-cicd)
-- ~~Customize the ingress configuration in Azure Spring Apps~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-ingress)
-- ~~Configure Palo Alto~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-palo-alto)
-- ~~Connect to an app instance for troubleshooting~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-connect-to-app-instance-for-troubleshooting)
-- ~~Control egress traffic for an Azure Spring Apps instance~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-create-user-defined-route-instance)
-- ~~Use JVM options for troubleshooting~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-dump-jvm-options)
-- ~~Enable ingress-to-app Transport Layer Security~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-ingress-to-app-tls)
-- ~~Enable system-assigned managed identity~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-system-assigned-managed-identity)
-- ~~CI/CD with GitHub Actions~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-github-actions)
-- ~~Manage user-assigned managed identities~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-manage-user-assigned-managed-identities)
-- ~~Map DNS names to applications in multiple Azure Spring Apps service instances in the same virtual network~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-map-dns-virtual-network)
-- ~~Migrate Standard and Basic to Enterprise~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-migrate-standard-tier-to-enterprise-tier)
-- ~~Create roles and permissions~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-permissions)
-- ~~Debug your apps remotely~~ (https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-remote-debugging-app-instance)
+- [Self-diagnose running in virtual networks](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-self-diagnose-running-in-vnet)
+- [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot)
+- [Troubleshoot common exit code issues](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot-exit-code)
+- [Capture heap/thread dump and use JFR](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-capture-dumps)
+- [Use JVM options for troubleshooting](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-dump-jvm-options)
+- [Connect to an app instance for troubleshooting](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-connect-to-app-instance-for-troubleshooting)
+- [Debug your apps remotely](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-remote-debugging-app-instance)
+- [Migrate Standard and Basic to Enterprise](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-migrate-standard-tier-to-enterprise-tier)
+- [API breaking changes](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/breaking-changes)
+- [Resources](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/resources)
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/faq)
+- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/policy-reference)
+- [Expose applications to the internet with end-to-end TLS/SSL](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/expose-apps-gateway-end-to-end-tls)
+- [Configure Palo Alto](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-palo-alto)
+- [Control egress traffic for an Azure Spring Apps instance](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-create-user-defined-route-instance)
+- [Customize the ingress configuration in Azure Spring Apps](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-ingress)
+- [Customer responsibilities running Azure Spring Apps in a virtual network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/vnet-customer-responsibilities)
+- [Troubleshooting Azure Spring Apps in virtual networks](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshooting-vnet)
+- [Map DNS names to applications in multiple Azure Spring Apps service instances in the same virtual network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-map-dns-virtual-network)
+- [Flush DNS settings changes](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-flush-dns-settings)
 - *...and 12 more*
 
 ## Classified Pages
@@ -61,15 +90,22 @@
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Quotas and limits](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quotas) | limits-quotas | 0.95 | A quotas article for service plans almost certainly contains detailed numeric limits per Basic/Standard/Enterprise tier (instances, memory, storage, connections, etc.), which are product-specific values not inferable from training data. |
+| [Troubleshoot common exit code issues](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot-exit-code) | troubleshooting | 0.95 | Focuses on common exit codes when deployments or running apps fail, mapping specific error codes to causes and actions, which matches the troubleshooting criteria (error codes → diagnosis → solution). |
 | [Deploy applications at scale for Enterprise plan](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-deploy-app-at-scale) | limits-quotas | 0.92 | Describes deploying up to 1000 instances and preview limitations; likely includes exact instance count limits, restrictions, and possibly per-plan constraints. |
 | [Deploy large CPU and memory applications for Enterprise plan](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-large-cpu-memory-applications) | limits-quotas | 0.90 | Explicitly mentions CPU and memory combinations; this article is expected to contain a table of supported vCPU/RAM sizes and related constraints, which are precise limits. |
 | [Fix app restart issues caused by OOM](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-fix-app-restart-issues-caused-by-out-of-memory) | troubleshooting | 0.90 | Explicitly about app restart issues caused by out-of-memory; likely organized around OOM symptoms, causes, and resolutions specific to Azure Spring Apps, which fits the troubleshooting pattern. |
+| [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot) | troubleshooting | 0.90 | Explicitly a troubleshooting guide; likely organized by common issues, with Azure Spring Apps–specific symptoms and resolutions beyond generic debugging knowledge. |
 | [Use built-in persistent storage](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-built-in-persistent-storage) | limits-quotas | 0.90 | Explicitly states temporary storage is limited to 5 GB per instance and distinguishes persistent vs temporary storage; this is a concrete numeric limit that LLMs are unlikely to know from training. |
 | [Configure single sign-on](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-set-up-sso-with-azure-ad) | security | 0.86 | SSO setup with Entra ID as OpenID provider; expected to list specific app registration settings, redirect URIs, scopes, and configuration parameters for Gateway and API Portal. |
+| [Self-diagnose running in virtual networks](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-self-diagnose-running-in-vnet) | troubleshooting | 0.86 | Describes Azure Spring Apps diagnostics specifically for apps running in virtual networks, with symptom-driven guidance and product-specific diagnostic flows. This is troubleshooting-focused (self-diagnose problems in VNets) rather than generic concepts. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-troubleshoot-enterprise-spring-cloud-gateway) | troubleshooting | 0.86 | Explicit troubleshooting guide; expected to map specific gateway errors/logs to causes and resolutions, which is product-specific diagnostic knowledge. |
 | [Troubleshoot common build issues in Azure Spring Apps](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/troubleshoot-build-exit-code) | troubleshooting | 0.86 | Explicitly a troubleshooting article for build issues; likely organized by specific build errors, causes, and resolutions unique to Azure Spring Apps Enterprise build service. |
+| [Troubleshooting Azure Spring Apps in virtual networks](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshooting-vnet) | troubleshooting | 0.86 | Explicit troubleshooting guide for vNet scenarios will map symptoms (connectivity failures, DNS issues) to causes and fixes, and often includes specific error messages, diagnostic commands, and required network checks unique to Spring Apps. |
 | [Azure SQL Database with Managed identity](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/connect-managed-identity-to-azure-sql) | security | 0.85 | Managed identity setup for Azure SQL typically includes specific role assignments, scopes, and connection configuration (e.g., authentication modes, connection string formats) that are security-focused and product-specific. |
 | [Health probes and graceful termination](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-health-probes-graceful-termination) | configuration | 0.85 | Covers health probe and termination period settings; these typically include specific configuration property names, allowed ranges, and defaults unique to Azure Spring Apps. |
+| [Create roles and permissions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-permissions) | security | 0.84 | Defines custom roles (Developer, DevOps Engineer, SRE) with specific permission sets and possibly action strings for Azure Spring Apps resources, which is detailed RBAC configuration. |
+| [Access Config Server and Service Registry](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac) | security | 0.82 | Details how to secure Config Server and Service Registry endpoints using Entra RBAC, including specific roles, scopes, and access patterns; clearly security configuration with product-specific endpoints. |
+| [Use JVM options for troubleshooting](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-dump-jvm-options) | best-practices | 0.82 | Described as containing best practices for JVM configuration (heap dumps, JFR, GC logs) specifically for Azure Spring Apps. Likely includes concrete JVM options and recommended settings, which are product-specific configuration and troubleshooting best practices. |
 | [AppDynamics in-process agent](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-appdynamics-java-agent-monitor) | integrations | 0.80 | AppDynamics integration guide; includes agent configuration and Azure Spring Apps-specific wiring, which are concrete integration patterns. |
 | [Application Insights using Java In-Process Agent](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-application-insights) | integrations | 0.80 | How-to for using Application Insights Java in-process agent with Azure Spring Apps; such docs usually contain agent configuration parameters, environment variables, and service-specific settings. |
 | [Autoscale an app](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-setup-autoscale) | configuration | 0.80 | Autoscale configuration involves specific rule parameters (metrics, thresholds, cooldowns, min/max instances) that are product-specific configuration settings and often include allowed ranges. |
@@ -77,37 +113,57 @@
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-bind-cosmos) | integrations | 0.80 | Shows automatic binding of Cosmos DB to Spring apps; such binding docs typically include connection property names, configuration keys, and binding parameters unique to Azure Spring Apps and Cosmos DB integration. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-bind-mysql) | integrations | 0.80 | Automatic connection of Azure Database for MySQL to Spring apps; typically documents binding configuration, environment variables, and JDBC URL patterns specific to this integration. |
 | [Azure Database for Postgres](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-bind-postgres) | integrations | 0.80 | Similar to MySQL binding; includes product-specific binding parameters, configuration keys, and connection details for PostgreSQL integration with Azure Spring Apps. |
+| [Connect to an app instance for troubleshooting](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-connect-to-app-instance-for-troubleshooting) | troubleshooting | 0.80 | Shows how to access the shell of application instances for advanced troubleshooting, including product-specific commands/flows to inspect running containers. This is directly tied to diagnosing issues rather than generic shell usage. |
 | [Custom DNS name](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-custom-domain) | security | 0.80 | Guides mapping DNS CNAMEs, securing with certificates, and enforcing TLS; typically includes specific certificate and TLS configuration steps and possibly required DNS record formats. |
 | [Deploy Azure Spring Apps in a virtual network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-deploy-in-azure-virtual-network) | deployment | 0.80 | VNet injection tutorial; usually includes subnet requirements, address space constraints, and platform support details that are deployment-specific to Azure Spring Apps. |
 | [Deploy web static files](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-deploy-static-file) | deployment | 0.80 | Static file deployment with a specific buildpack; expected to include buildpack-specific configuration, supported file types, and deployment constraints. |
 | [Elastic APM Java Agent](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-elastic-apm-java-agent-monitor) | integrations | 0.80 | Elastic APM integration; contains agent configuration and Azure Spring Apps-specific setup, which are detailed integration patterns. |
+| [Enable system-assigned managed identity](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-system-assigned-managed-identity) | security | 0.80 | Step-by-step enabling/disabling of system-assigned identities with specific portal/CLI parameters and possibly required role assignments; this is concrete security configuration for this service. |
 | [Logback with custom persistent storage](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-write-log-to-custom-persistent-storage) | configuration | 0.80 | Explains using Logback with Azure Spring Apps, including specific file names that trigger auto-loading and configuration details for custom storage, which are concrete config patterns. |
+| [Manage user-assigned managed identities](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-manage-user-assigned-managed-identities) | security | 0.80 | Shows how to attach/detach user-assigned identities to apps with specific commands and identity resource references, which are detailed security configuration steps. |
 | [Managed identity to connect Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tutorial-managed-identities-key-vault) | security | 0.80 | Tutorial for using managed identities with Key Vault; usually includes specific role assignments, scope settings, and identity configuration parameters, which are product-specific security configuration details. |
 | [Managed identity to invoke Azure Functions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tutorial-managed-identities-functions) | security | 0.80 | Shows how to invoke Azure Functions using managed identity and Entra auth; typically includes specific authentication configuration, roles, and scopes, which are security-focused expert configurations. |
 | [New Relic Java in-process agent](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-new-relic-monitor) | integrations | 0.80 | New Relic agent integration; likely contains product-specific configuration parameters and startup options for Azure Spring Apps. |
 | [Set up a Config Server](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-config-server) | configuration | 0.80 | Shows how to configure the managed Config Server, likely with specific settings, endpoints, and parameter values unique to Azure Spring Apps. |
 | [Use Dynatrace Java OneAgent](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-dynatrace-one-agent-monitor) | integrations | 0.80 | Dynatrace integration guide; typically includes agent configuration options, environment variables, and Azure Spring Apps-specific setup steps that are not generic. |
+| [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/policy-reference) | security | 0.78 | Lists Azure Policy built-in definitions specific to Azure Spring Apps. These include policy names, effects, and scopes, which are security/governance configuration artifacts (RBAC/policy-level controls) unique to this service. |
+| [Capture heap/thread dump and use JFR](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-capture-dumps) | troubleshooting | 0.78 | Provides product-specific steps to capture heap/thread dumps and start Java Flight Recorder within Azure Spring Apps for production issue analysis. While somewhat procedural, it enables targeted diagnosis and is tightly tied to troubleshooting JVM issues on this service. |
 | [Compare available plans](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/plan-comparison) | decision-making | 0.78 | Provides a comparison table of Basic/Standard/Enterprise plans with feature differences to guide plan selection; plan comparison is explicitly decision-making guidance. |
+| [Customize the ingress configuration in Azure Spring Apps](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-ingress) | configuration | 0.78 | Shows all ingress settings (internal/external, TLS, custom domains, session affinity, etc.) with specific parameter names and allowed values via portal and CLI, which is detailed product configuration. |
 | [Deploy polyglot enterprise applications](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-deploy-polyglot-apps) | deployment | 0.78 | Describes deploying polyglot apps using build service; likely includes supported languages, buildpack configuration, and constraints specific to Azure Spring Apps Enterprise. |
+| [Enable ingress-to-app Transport Layer Security](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-ingress-to-app-tls) | security | 0.78 | Explains securing traffic from ingress controller to apps with HTTPS, including certificate configuration, port/protocol settings, and any required annotations/parameters specific to Spring Apps. |
+| [Flush DNS settings changes](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-flush-dns-settings) | configuration | 0.78 | Explains how DNS changes propagate and how to force refresh for Spring Apps; will include specific commands, API calls, or portal operations and timing/behavior details unique to the service. |
 | [Integrate with Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-integrate-azure-database-mysql) | integrations | 0.78 | Describes provisioning MySQL and configuring PetClinic to use it with a single command; likely includes connection string formats, configuration properties, and parameters specific to Azure Spring Apps–MySQL integration. |
 | [Secure communications end-to-end in Zero Trust](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/secure-communications-end-to-end) | security | 0.78 | Focuses on securing communications end-to-end, including where to terminate TLS and how to provision/configure Azure resources; likely includes certificate, TLS, and network security settings. |
+| [Auth with Key Vault in GitHub Actions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/github-actions-key-vault) | security | 0.76 | Shows how to securely store and access credentials in Key Vault from GitHub Actions for Spring Apps deployments, including secrets, identity configuration, and action parameters; this is security-focused integration detail. |
 | [Configure route filters](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-configure-enterprise-spring-cloud-gateway-filters) | configuration | 0.76 | Focuses on route filters; likely lists specific filter names, configuration keys, and parameter options that are concrete and product-specific. |
+| [Use managed identities for applications in Azure Spring Apps](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-managed-identities) | security | 0.76 | Covers enabling and using system- and user-assigned managed identities for Spring Apps, including Entra configuration, scopes, and service-specific wiring details that are security- and product-specific. |
 | [Access your application in a private network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/access-app-virtual-network) | configuration | 0.75 | Explains private FQDNs and endpoint assignment for apps in a VNet; likely includes specific DNS patterns, endpoint configuration options, and network access details. |
 | [Analyze logs with ELK](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-elastic-diagnostic-settings) | integrations | 0.75 | Uses diagnostics settings to send logs to Elastic; likely includes configuration tables for diagnostic categories, destinations, and Elastic-specific parameters. |
 | [Resilience4J Circuit Breaker Metrics](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-circuit-breaker-metrics) | integrations | 0.75 | Shows wiring Resilience4j metrics into Application Insights via Micrometer in Azure Spring Apps; involves product-specific metric names and configuration parameters. |
 | [Structured application log](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/structured-app-log) | configuration | 0.75 | Explains structured application logging and collection; likely includes specific log schema, fields, and configuration options for Azure Spring Apps and Log Analytics. |
 | [Manage Spring Cloud Gateway](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-configure-enterprise-spring-cloud-gateway) | configuration | 0.74 | Configuration-focused article for Spring Cloud Gateway on Azure Spring Apps Enterprise; expected to contain gateway-specific properties, YAML keys, and allowed values that are product-specific. |
+| [Map DNS names to applications in multiple Azure Spring Apps service instances in the same virtual network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-map-dns-virtual-network) | configuration | 0.74 | Shows how to configure DNS records and possibly internal load balancing for multiple Spring Apps instances in the same vNet, including specific DNS patterns, hostnames, and configuration steps. |
+| [Self-diagnose and solve problems](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-self-diagnose-solve) | troubleshooting | 0.74 | Describes Azure Spring Apps diagnostics experience, mapping detected problems to guidance and likely referencing specific checks, logs, and possibly error patterns unique to the service, fitting troubleshooting. |
+| [Use TLS/SSL certificates](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-tls-certificate) | security | 0.72 | Describes how Spring Apps manages public certificates, including certificate store locations, configuration parameters, and usage patterns for outbound TLS, which are product-specific security details. |
+| [API breaking changes](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/breaking-changes) | configuration | 0.70 | Details breaking changes between API versions 2020-07-01 and 2022-04-01, which implies specific property/parameter changes and required updates to configurations or client code. These are product-specific API configuration details not known generically. |
 | [Azure Policy Security controls](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/security-controls-policy) | security | 0.70 | Lists regulatory compliance controls and built-in policy definitions for Spring Apps; this is product-specific security/compliance configuration knowledge tied to Azure Policy. |
+| [CI/CD with Azure DevOps](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-cicd) | deployment | 0.70 | Shows Azure Spring Apps task for Azure Pipelines with task inputs, parameters, and constraints specific to this service, which are deployment-focused and product-specific. |
+| [CI/CD with GitHub Actions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-github-actions) | deployment | 0.70 | Describes GitHub Actions usage with Spring Apps, including action names, inputs, and environment configuration specific to this product, which are deployment patterns. |
 | [Configure APM integration and CA certificates](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-configure-apm-integration-and-ca-certificates) | configuration | 0.70 | APM and CA certificate configuration will include specific environment variables, certificate formats/locations, and integration parameters unique to Azure Spring Apps Enterprise. |
+| [Configure Palo Alto](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-palo-alto) | configuration | 0.70 | Describes using Palo Alto instead of Azure Firewall for Spring Apps; likely includes specific network rules, ports, IP ranges, and routing configuration between Spring Apps subnets and Palo Alto, which are product- and vendor-specific settings. |
 | [Configure Tanzu Dev Tools](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-dev-tool-portal) | configuration | 0.70 | Describes configuring Dev Tools (Application Live View, Accelerator); likely includes specific settings, URLs, and parameters for this environment. |
 | [Configure planned maintenance](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-planned-maintenance) | configuration | 0.70 | Planned maintenance/auto patching configuration typically exposes specific settings (maintenance window, schedule, allowed time ranges) that are product-specific configuration parameters. |
 | [Configure single sign-on](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-configure-single-sign-on-enterprise) | security | 0.70 | SSO configuration typically includes Entra ID app registration, reply URLs, scopes, and possibly RBAC/permission scopes specific to Azure Spring Apps. |
+| [Control egress traffic for an Azure Spring Apps instance](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-create-user-defined-route-instance) | configuration | 0.70 | User-defined route example for Spring Apps egress will include specific route table entries, next hop types, and required address prefixes for platform dependencies, which are detailed configuration values. |
 | [Customize Azure Spring Apps egress with a user-defined route](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-outbound-type) | configuration | 0.70 | Describes customizing egress with user-defined routes for specific network scenarios; such guidance typically includes Azure-specific route table settings, parameter names, and allowed values, which are configuration expert knowledge. |
+| [Debug your apps remotely](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-remote-debugging-app-instance) | troubleshooting | 0.70 | Covers enabling remote debugging for apps on Azure Spring Apps, which is a troubleshooting mechanism. Likely includes service-specific ports/flags and configuration steps that go beyond generic Java remote debugging knowledge. |
 | [Enable Service Registration](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-service-registration) | configuration | 0.70 | Covers discovery and registration using managed Service Registry; typically includes configuration properties and registration patterns specific to this service. |
 | [Integrate Azure Database for PostgreSQL and Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise) | integrations | 0.70 | Quickstart for integrating Azure Database for PostgreSQL and Azure Cache for Redis; likely includes connection string formats, SSL settings, and service-specific configuration parameters. |
 | [Integrate Azure OpenAI](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-fitness-store-azure-openai) | integrations | 0.70 | Shows how to integrate Azure OpenAI with Spring Apps; likely includes endpoint URLs, API version parameters, authentication headers, and service-specific configuration details. |
 | [Load application secrets using Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise) | security | 0.70 | Key Vault integration usually documents specific configuration keys, secret URI formats, and identity/permission settings unique to this product. |
 | [Manually scale an app](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-scale-manual) | configuration | 0.70 | Manual scaling in the portal usually involves specific SKU-related vCPU/memory options and instance count settings; these are concrete configuration parameters and ranges tied to this service. |
+| [Migrate Standard and Basic to Enterprise](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-migrate-standard-tier-to-enterprise-tier) | decision-making | 0.70 | Guides migration from Basic/Standard to Enterprise, including when and how to move, and implications of switching to VMware Tanzu components. This is a migration/upgrade decision and execution guide, fitting decision-making around plan selection and migration path. |
 | [Optimize application observability](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/application-observability) | best-practices | 0.70 | Focuses on observing production apps and diagnosing issues; likely includes concrete recommendations and product-specific observability configurations rather than just theory. |
 | [Prepare a Java Spring app for deployment](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-prepare-app-deployment) | configuration | 0.70 | Explains required dependencies, configuration, and code changes for Steeltoe apps on Spring Apps; this is product-specific configuration and coding pattern knowledge. |
 | [Security controls](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-security-controls) | security | 0.70 | Lists security controls and whether they are supported; while somewhat high-level, it is a product-specific mapping of controls to the service, which is specialized security knowledge. |
@@ -122,12 +178,15 @@
 | [Use custom persistent storage](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-custom-persistent-storage) | configuration | 0.70 | Describes enabling your own persistent storage and interaction with Azure Storage Accounts; such pages typically include storage-related configuration parameters (mount paths, account names, connection settings) that are product-specific. |
 | [Use gRPC](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-grpc) | integrations | 0.70 | How-to article for wiring gRPC into Azure Spring Apps using a specific sample app; likely includes product-specific configuration, ports, and code patterns for this platform, which are integration details beyond generic gRPC knowledge. |
 | [Version support for Java, Spring Boot, and more](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-app-customer-responsibilities) | limits-quotas | 0.70 | Describes support policy for Java, Spring Boot, Spring Cloud, SDKs, and OS images; such pages typically include specific supported version numbers and timelines, which are expert knowledge limits/constraints. |
+| [Expose applications to the internet with end-to-end TLS/SSL](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/expose-apps-gateway-end-to-end-tls) | configuration | 0.68 | How-to for exposing Spring Apps via Application Gateway with end-to-end TLS will include product-specific configuration (listener, backend pool, probe, certificate bindings, host headers) and Azure CLI/portal parameters unique to this integration, which are not generic knowledge. |
 | [Use Application Live View](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-application-live-view) | integrations | 0.68 | Shows how to use Application Live View; expected to contain specific endpoints, configuration properties, and usage patterns tied to Azure Spring Apps Enterprise. |
 | [Use Service Registry](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-service-registry) | integrations | 0.68 | How-to for wiring Tanzu Service Registry into Azure Spring Apps Enterprise; likely includes product-specific config properties, endpoints, and parameters beyond generic service discovery concepts. |
 | [Use VMware Tanzu Application Accelerator](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-accelerator) | integrations | 0.66 | How-to for using Application Accelerator in Azure Spring Apps; likely includes concrete configuration and usage patterns unique to this integration. |
 | [Analyze logs and metrics](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/diagnostic-services) | configuration | 0.65 | Article on analyzing diagnostics data with multiple Azure services; these pages typically include specific diagnostic setting names, categories, and configuration options unique to Azure Spring Apps. |
 | [Automate deployments](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-automate-deployments-github-actions-enterprise) | deployment | 0.65 | Shows CI/CD automation with GitHub Actions and Terraform; likely includes workflow YAML, required environment variables, and deployment constraints specific to Spring Apps Enterprise. |
+| [Customer responsibilities running Azure Spring Apps in a virtual network](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/vnet-customer-responsibilities) | configuration | 0.65 | Customer responsibilities page for vNet-injected Spring Apps typically lists required outbound endpoints, ports, NSG rules, and DNS requirements; these are concrete platform-specific settings and dependencies. |
 | [Deploy Spring apps with Maven](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-maven-deploy-apps) | integrations | 0.65 | Shows how to use the Azure Spring Apps Maven plugin to configure and deploy; such plugin docs typically include plugin-specific configuration parameters, goals, and defaults that qualify as integration-focused expert knowledge. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/faq) | limits-quotas | 0.65 | Service FAQs typically include concrete, product-specific answers such as instance limits, scaling behaviors, and timeouts. Given the service-specific FAQ context, it likely contains numeric limits and behavioral details that qualify as expert knowledge; limits-quotas is the most probable fit among the categories. |
 | [Identify outbound public IP addresses](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-outbound-public-ip) | configuration | 0.65 | Explains how to view static outbound public IP addresses and notes behavior differences when deployed in a virtual network; likely includes portal/CLI parameters and resource properties specific to outbound IP configuration. |
 | [Launch your first RESTful API app](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-deploy-restful-api-app) | integrations | 0.65 | Quickstart for deploying a REST API protected by Microsoft Entra ID; likely includes app registration details, redirect URIs, scopes, and Spring security configuration specific to Azure Spring Apps. |
 | [Monitor app lifecycle events](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/monitor-app-lifecycle-events) | configuration | 0.65 | Shows how to monitor lifecycle events via Activity Log and Service Health; likely includes specific event categories, resource types, and alert configuration parameters. |
@@ -170,6 +229,7 @@
 | [Deploy apps using IntelliJ](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-intellij-deploy-apps) | 0.30 | IntelliJ deployment tutorial; primarily step-by-step IDE usage, not configuration matrices, limits, or deep troubleshooting content. |
 | [Job](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/concept-job) | 0.30 | Concept article defining the Job resource; summary suggests conceptual explanation rather than detailed configuration tables or limits. |
 | [Launch Java app from source code](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-launch-from-source) | 0.30 | Quickstart-style deployment from source using Azure CLI; likely shows basic commands and flow without detailed configuration tables, limits, or product-specific edge cases. |
+| [Redundancy and high availability](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/reliability-spring-apps) | 0.30 | Reliability article is likely conceptual (zones, DR, HA patterns) without specific numeric thresholds, configuration tables, or decision matrices; more architecture/overview than detailed expert configuration. |
 | [Spring Boot Actuator](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-manage-monitor-app-spring-boot-actuator) | 0.30 | Covers using Spring Boot Actuator for management/monitoring; likely general actuator usage rather than Azure Spring Apps–specific configuration tables or quotas. |
 | [Launch your first microservice apps](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-deploy-microservice-apps) | 0.25 | Quickstart for deploying microservices using PetClinic; mostly tutorial and architecture example, not detailed configuration or decision matrices. |
 | [Start or stop a service](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-start-stop-service) | 0.25 | Simple operations guide for starting/stopping a service instance; no indication of configuration parameters, limits, or error-code-based troubleshooting. |
@@ -182,6 +242,7 @@
 | [What's new](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/whats-new) | 0.20 | What's New page is a high-level change log/announcement without detailed limits, configs, or troubleshooting mappings. |
 | [Introduction to PetClinic sample](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-sample-app-introduction) | 0.15 | Intro to sample app used in quickstarts; descriptive and conceptual, no expert-level configuration or troubleshooting content. |
 | [Introduction to Fitness Store sample](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-sample-app-acme-fitness-store-introduction) | 0.10 | Introduction to a sample app is conceptual and descriptive, not focused on limits, configuration matrices, or error diagnosis. |
+| [Resources](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/resources) | 0.10 | Appears to be a resource list/links page for Azure Spring Apps, not containing detailed limits, configs, or troubleshooting mappings itself. |
 | [Retirement announcement](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/retirement-announcement) | 0.10 | Retirement announcement and high-level migration recommendation; no detailed limits, configs, or error diagnostics. |
 | [Understand app status](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-app-status) | 0.10 | Describes app status categories and how to view them in the portal; appears conceptual/UX-focused without numeric limits, config tables, or error-code-based troubleshooting. |
 | [What is Azure Spring Apps?](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/overview) | 0.10 | Introduction/overview of Azure Spring Apps features and benefits; conceptual, not detailed configuration or troubleshooting content. |

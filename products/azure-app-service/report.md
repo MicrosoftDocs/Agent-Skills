@@ -1,4 +1,34 @@
-# App Service Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance on planning and choosing App Service tiers, plans, domains,
+    networking, auth, and migration paths (Windows/Linux, .NET/Java/WordPress, Arc,
+    VNet, sidecars, ASE vs multitenant).
+  best-practices: Best practices for deploying, securing, troubleshooting, and routing
+    traffic to Azure App Service apps, including Traffic Manager integration and operational
+    guidance.
+  configuration: 'Configuring App Service apps: app settings, auth, networking/VNet/ASE,
+    scaling, containers/sidecars, language runtimes, storage mounts, certificates,
+    diagnostics, and health/monitoring.'
+  security: 'Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs,
+    access restrictions, managed identities, private endpoints, Graph/SQL/Storage
+    access, and secure network patterns.'
+  deployment: Deploying App Service apps via Git/GitHub Actions/Azure Pipelines/FTP/ZIP,
+    using containers and deployment slots, managing credentials, DNS migration, WebJobs,
+    and Arc/ARM-based environments
+  architecture-patterns: Patterns for scaling apps globally with ASE + Traffic Manager
+    and recommended App Service architectures by app type (web, API, mobile) for reliability,
+    performance, and security.
+  integrations: Patterns for connecting App Service apps to other Azure services (OpenAI,
+    AI Search, Key Vault, Logic Apps, WebJobs, App Gateway) using managed identity
+    and integration best practices.
+  limits-quotas: Scaling App Service plans (tiers, cores, memory, instances) and understanding
+    built‑in quotas, limits, and monitoring metrics for capacity and usage.
+  troubleshooting: Using App Service diagnostics to investigate performance issues,
+    errors, availability problems, and configuration issues in your web apps, plus
+    guidance on interpreting diagnostic reports.
+---
+# Azure App Service Crawl Report
 
 ## Summary
 
@@ -10,8 +40,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 245
+- **Updated Pages**: 0
+- **Unchanged**: 246
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -31,11 +61,6 @@
 | *(Unclassified)* | 96 | 39.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Networking architecture](https://learn.microsoft.com/en-us/azure/app-service/environment/networking)
-  - Updated: 2025-10-15T08:00:00.000Z → 2026-02-03T18:20:00.000Z
 
 ## Classified Pages
 

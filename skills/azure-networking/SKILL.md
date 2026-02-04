@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and resolving Microsoft.Network resource provisioning failures in Azure, including common error causes, logs to check, and step-by-step remediation guidance. |
-| Best Practices | L35-L39 | Guidance on boosting Azure NVA and VM network throughput/latency using Accelerated Connections, including configuration steps, tuning, and performance best practices. |
-| Decision Making | L40-L47 | Guidance on choosing Azure network architectures: using region latency data, selecting secure topologies and app delivery services, and planning networking for remote/remote-hybrid work. |
-| Architecture & Design Patterns | L48-L53 | Understanding and troubleshooting Azure network routing: analyzing control-plane route selection and data-plane packet paths across VNets, VPN/ExpressRoute, and hybrid topologies. |
-| Security | L54-L60 | Designing secure virtual networks with Zero Trust and enforcing security/compliance using built-in Azure Policy definitions and controls for networking resources |
-| Integrations & Coding Patterns | L61-L64 | Querying and analyzing Azure networking resources (VNets, NSGs, IPs, etc.) using Azure Resource Graph, with example queries and patterns for inventory, compliance, and monitoring. |
+| Troubleshooting | L30-L34 | Diagnosing and resolving Microsoft.Network resource provisioning failures in Azure, including common error patterns, causes, and step-by-step remediation guidance. |
+| Best Practices | L35-L39 | Guidance on boosting Azure NVA/VM network throughput and latency using Accelerated Connections, including configuration, tuning, and performance best practices. |
+| Decision Making | L40-L47 | Guidance on choosing Azure network designs: using region latency data, selecting secure topologies and app delivery services, and planning networking for remote and hybrid work scenarios. |
+| Architecture & Design Patterns | L48-L53 | Analyzing and troubleshooting Azure network routing and packet paths, including control-plane route decisions and data-plane flow through VNets, gateways, firewalls, and peering. |
+| Security | L54-L60 | Designing Zero Trust VNets for web apps and enforcing network security/compliance using built‑in Azure Policy definitions and policy-based controls |
+| Integrations & Coding Patterns | L61-L64 | Querying and analyzing Azure networking resources (VNets, NSGs, IPs, etc.) using Azure Resource Graph, with example Kusto queries and patterns for inventory, compliance, and governance. |
 
 ### Troubleshooting
 | Topic | URL |

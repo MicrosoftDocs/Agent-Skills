@@ -1,4 +1,26 @@
-# Internet of Things Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring IoT Plug and Play models and MQTT messaging (DTDL, payload
+    formats, message conventions) and setting up MQTT connections to IoT Hub and Device
+    Provisioning Service.
+  integrations: Patterns and code for building IoT Plug and Play devices/services,
+    working with digital twins, and integrating Azure IoT data and events with on-prem
+    SAP ERP systems.
+  best-practices: Guidance on designing robust device reconnection logic for Azure
+    IoT, handling transient network failures, backoff strategies, and ensuring reliable,
+    scalable device connectivity.
+  decision-making: Guidance on choosing IoT Plug and Play device models and deciding
+    between Azure IoT C vs Embedded C SDKs based on device, performance, and integration
+    needs
+  architecture-patterns: 'Industrial IoT solution blueprints: reference architectures,
+    dataspace patterns, and guidance for designing scalable, secure industrial data
+    and device integration on Azure.'
+  troubleshooting: Debugging and resolving issues in Azure IoT embedded device tutorials,
+    including setup problems, connection failures, build errors, and common device-to-cloud
+    communication issues.
+---
+# Azure Iot Crawl Report
 
 ## Summary
 

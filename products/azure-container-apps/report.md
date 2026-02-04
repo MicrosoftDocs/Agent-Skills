@@ -1,4 +1,34 @@
-# Container Apps Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Securing Container Apps: auth (Entra, social, OIDC, mTLS, client certs,
+    Dapr tokens), secrets and managed identity, network controls (VNet, NSG, firewall,
+    WAF), and security best practices.'
+  deployment: Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines,
+    CLI-generated workflows), scaling with Dapr+KEDA+Bicep, and creating zone-redundant
+    apps in virtual networks.
+  configuration: 'Configuring Container Apps environments and apps: networking, ingress,
+    domains/certs, storage, env vars, health probes, Dapr, Java/metrics/APM, logging/monitoring,
+    routing, sessions, and workload profiles.'
+  decision-making: Guidance on choosing Container Apps plans, compute/billing models,
+    environments, GPUs, workflows, and migration/hosting options to match cost, performance,
+    and architecture needs.
+  architecture-patterns: Patterns for blue-green deployments in Azure Container Apps,
+    including traffic splitting, versioning revisions, rollout workflows, and safe
+    rollback strategies.
+  best-practices: Guidance on reducing cold starts (scaling, readiness, configuration)
+    and tuning Java memory usage (JVM settings, resource limits) for better performance
+    in Azure Container Apps
+  troubleshooting: 'Diagnosing and fixing Container Apps runtime issues: create/start
+    failures, image pulls, probes, ports, storage mounts, OCI errors, Java log levels,
+    and using logs/debug console.'
+  integrations: Patterns and how-tos for integrating Container Apps with Functions,
+    KEDA, Spring components, Front Door, and AI/code-interpreter or MCP-based dynamic
+    session workflows.
+  limits-quotas: Details on Azure Container Apps resource limits and quotas, including
+    app, environment, scaling, networking, and per-subscription constraints.
+---
+# Azure Container Apps Crawl Report
 
 ## Summary
 
@@ -9,9 +39,9 @@
 - **Unclassified**: 77
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 192
+- **Unchanged**: 193
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -31,10 +61,6 @@
 | *(Unclassified)* | 77 | 39.9% |
 
 ## Changes
-
-### New Pages
-
-- [Deploy OpenAI GPT with OSS Ollama](https://learn.microsoft.com/en-us/azure/container-apps/deploy-openai-gpt-oss-ollama)
 
 ## Classified Pages
 

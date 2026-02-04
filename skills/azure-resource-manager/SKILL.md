@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L131 | Diagnosing and fixing Bicep/ARM deployment issues: detailed guides for specific BCP/ARM errors, syntax/type/decorator problems, resource/quotas/SKU/name/region failures, and debugging tools/logging. |
-| Best Practices | L132-L177 | Best practices for authoring and validating Bicep/ARM templates: linter rules, parameter/variable usage, resource IDs, API versions, locations/URLs, and ARM test toolkit guidance. |
-| Decision Making | L178-L204 | Guidance on choosing deployment models and planning/migrating Azure resources (VMs, AKS, networking, data, backup, automation) across regions, including relocation strategies and tooling. |
-| Architecture & Design Patterns | L205-L212 | Bicep template design patterns for parameters, logical config sets, robust name generation, and shared variable files to build reusable, maintainable ARM deployments. |
-| Limits & Quotas | L213-L242 | ARM/Bicep limits and quotas: resource, tag, naming, history, and subscription caps; template/parameter/output constraints; throttling, quota errors, and large/managed app storage workarounds. |
-| Security | L243-L276 | Securing ARM/Bicep deployments: handling secrets (Key Vault, secure params/outputs), RBAC and managed apps, private endpoints/links, locks, TLS, cross-tenant auth, and policy-based controls. |
-| Configuration | L277-L359 | Configuring and using ARM/Bicep templates and managed app UIs: linter and tooling setup, parameters, scopes, functions, UI elements, networking, monitoring, tags, policy, and preview features. |
-| Integrations & Coding Patterns | L360-L404 | Bicep functions, operators, loops, and patterns, plus CLI/PowerShell/Python/REST integrations for deploying, managing, tagging, and querying Azure resources and ARM templates. |
-| Deployment | L405-L434 | Deploying ARM/Bicep templates via Pipelines, GitHub, portal/CLI/PowerShell, using what-if and rollback, and moving/relocating Azure resources and data across subscriptions or regions |
+| Troubleshooting | L33-L131 | Diagnosing and fixing Bicep/ARM deployment issues: detailed guides for specific BCP/ARM errors, syntax/type/decorator problems, scope/name/quota/SKU failures, and using logging/tools to troubleshoot. |
+| Best Practices | L132-L177 | Best practices for authoring and validating Bicep/ARM templates: linter rules, parameter/variable usage, IDs, locations, API versions, REST custom endpoints, testing with ARM TTK, and migration tagging. |
+| Decision Making | L178-L204 | Guidance on ARM-to-Bicep migration, classic vs Resource Manager, and planning/executing Azure regional relocation for VMs, AKS, networking, databases, backup, and other services |
+| Architecture & Design Patterns | L205-L212 | Bicep template design patterns: structuring parameters, using configuration sets and shared variable files, and generating robust, collision‑free resource names. |
+| Limits & Quotas | L213-L242 | ARM/Bicep limits and quotas: resource, tag, naming, history, and subscription caps; throttling; deployment scopes; and patterns to avoid/resolve “quota/limit exceeded” errors. |
+| Security | L243-L276 | Securing ARM/Bicep deployments: handling secrets (Key Vault, secure params/outputs), RBAC and managed apps, private endpoints/links, locks, TLS, and cross-tenant authentication. |
+| Configuration | L277-L359 | Configuring ARM/Bicep templates and managed apps: environment setup, parameters, tags, functions, UI (createUiDefinition) controls, deployment stacks, policy/monitoring, and networking/registry settings. |
+| Integrations & Coding Patterns | L360-L404 | Bicep functions, operators, loops, and tooling (CLI, PowerShell, Python, REST) for ARM deployments, plus patterns for resource groups, tags, AKS, and custom provider REST endpoints. |
+| Deployment | L405-L434 | Deploying ARM/Bicep templates via pipelines, GitHub, portal/CLI/PowerShell, using what-if/rollback, and moving or relocating Azure resources and data across subscriptions/regions. |
 
 ### Troubleshooting
 | Topic | URL |

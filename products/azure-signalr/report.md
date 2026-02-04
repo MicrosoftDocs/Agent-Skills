@@ -1,4 +1,30 @@
-# SignalR Service Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance on choosing SignalR deployment mode and zone redundancy,
+    estimating performance/capacity, and understanding message/connection-based pricing
+    and billing.
+  security: 'Securing Azure SignalR: keys and rotation, network/private endpoints,
+    NSGs/service tags, Key Vault and managed identities, OAuth/Entra ID auth/RBAC,
+    cross-tenant access, WAF, and Azure Policy compliance.'
+  configuration: Configuring Azure SignalR endpoints, domains, autoscale, monitoring/metrics,
+    CLI setup, Functions bindings, negotiation settings, and using the local emulator
+    for serverless development.
+  best-practices: Guidance on gracefully shutting down SignalR app servers and handling
+    client disconnects/reconnects to maintain reliable, state-aware real-time connections.
+  architecture-patterns: Patterns for scaling SignalR with multiple instances, using
+    reverse proxies, and designing for high availability, resiliency, and disaster
+    recovery across regions.
+  integrations: Patterns and APIs for integrating SignalR with Event Grid, API Management,
+    App Gateway, and using server SDKs and REST data-plane APIs for managing clients
+    and broadcasting
+  troubleshooting: Diagnosing and fixing SignalR connection/delivery issues using
+    logs, Azure Monitor, and live trace, plus FAQs and guided exercises for common
+    service errors and reliability problems.
+  deployment: 'Guides for deploying SignalR: replicating resources across regions
+    with ARM templates and scaling instances using Azure portal or CLI.'
+---
+# Azure Signalr Crawl Report
 
 ## Summary
 

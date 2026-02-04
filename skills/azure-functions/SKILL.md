@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage and config problems, and Node.js/Python deployment and execution failures. |
-| Best Practices | L61-L94 | Best practices for Durable Functions and Azure Functions: orchestrator/entity patterns, error handling, versioning, testing, performance, scaling, DI, idempotency, and reliable event processing. |
-| Decision Making | L95-L120 | Guidance on choosing Functions hosting/runtime options, Durable Functions vs Durable Task, networking, cost estimation, and migrating plans, runtimes, and platforms (incl. AWS Lambda). |
-| Architecture & Design Patterns | L121-L128 | Architectural guidance for Functions: container-based designs, Durable Functions performance, DR/geo-distribution strategies, and target-based scaling patterns. |
-| Limits & Quotas | L129-L136 | Throughput, scaling, and concurrency limits for Functions and Durable Functions, plus language/runtime support levels and timelines for planning capacity and feature use |
-| Security | L137-L153 | Securing Azure Functions apps: encryption at rest, keys, managed identities, private endpoints/VNets, identity-based connections (storage, SQL, Service Bus), Web PubSub, and MCP server security. |
-| Configuration | L154-L199 | Configuring Azure Functions apps: app/host settings, storage, scaling, plans, runtimes, Durable Functions options, monitoring/telemetry, networking, and deployment/runtime behavior. |
-| Integrations & Coding Patterns | L200-L312 | How to connect Azure Functions to external services and tools using triggers/bindings (HTTP, storage, data stores, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) and common integration patterns. |
-| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub, Pipelines, CLI, ARM/Bicep), containers/Kubernetes/Container Apps, Flex/Premium plans, and Durable/Kafka/RabbitMQ setup. |
+| Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment and execution failures. |
+| Best Practices | L61-L94 | Durable Functions and Azure Functions best practices: orchestrator/entity patterns, error handling, versioning, testing, performance/scale, DI, idempotency, and reliable event processing. |
+| Decision Making | L95-L120 | Guidance on choosing Functions hosting/runtime options, costs, networking, Durable Task/Scheduler choices, and migrating apps or plans (versions, Node model, Service Bus, AWS Lambda). |
+| Architecture & Design Patterns | L121-L128 | Patterns for containerized Functions on Linux, Durable Functions performance/DR/geo-distribution, and target-based scaling strategies for resilient, scalable architectures. |
+| Limits & Quotas | L129-L136 | Scaling and performance limits for Functions and Durable Functions, including scheduler throughput, event-driven scaling behavior, concurrency settings, and language/runtime support timelines. |
+| Security | L137-L153 | Securing Azure Functions apps: encryption, keys, managed identity, private endpoints/VNets, identity-based connections (SQL, Storage, Service Bus), Web PubSub, and MCP server security. |
+| Configuration | L154-L199 | Configuring how Functions apps run: app/host settings, storage, scaling, plans, dependencies, Durable Functions options, monitoring/telemetry, networking, runtime versions, and local dev settings. |
+| Integrations & Coding Patterns | L200-L312 | Using triggers and bindings to integrate Azure Functions with services (HTTP, storage, data, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) and language‑specific binding patterns. |
+| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps, zero‑downtime, and Kafka/RabbitMQ bindings. |
 
 ### Troubleshooting
 | Topic | URL |

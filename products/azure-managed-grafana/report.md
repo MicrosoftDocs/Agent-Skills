@@ -1,3 +1,26 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: How to integrate Azure Managed Grafana with Prometheus, Azure Monitor,
+    Azure Data Explorer, AKS, and Azure AI Foundry, including auth setup and connectivity
+    patterns.
+  security: 'Securing Azure Managed Grafana: encryption, auth and SSO, Entra-based
+    team sync, RBAC and permissions, private endpoints, data source private access,
+    and security best practices.'
+  configuration: Configuring Managed Grafana workspaces, data sources, plugins, diagnostics,
+    service accounts/tokens, and SMTP email alerts for monitoring and alerting setups.
+  decision-making: Guidance on reliability/HA options, choosing and managing Grafana
+    Enterprise plans, migrating between SKUs or to Azure Monitor, and upgrading workspaces
+    from Grafana 10 to 11.
+  deployment: 'Guides for deploying Managed Grafana: setting deterministic outbound
+    IPs, enabling zone redundancy, migrating from other Grafana setups, and wiring
+    Azure Monitor alerts into dashboards.'
+  limits-quotas: Using reporting/image rendering features in Managed Grafana, plus
+    hard limits, quotas, and constraints for workspaces, data sources, dashboards,
+    and usage
+  troubleshooting: Diagnosing and fixing common Azure Managed Grafana issues, including
+    access, provisioning, and managed private endpoint connectivity and approval problems.
+---
 # Azure Managed Grafana Crawl Report
 
 ## Summary

@@ -1,4 +1,29 @@
-# Confidential Computing Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Attestation, vTPM, key/secrets management, and hardening guidance (Defender,
+    sudo/agent removal) for securing Azure confidential VMs, AKS Confidential Containers,
+    and TEEs.
+  decision-making: 'Guidance on choosing Azure confidential computing options: container
+    offerings, AI services, clean rooms, multiparty analytics, and CPU/GPU VM types
+    (AMD/Intel) for secure workloads.'
+  architecture-patterns: Solution blueprints and reference architectures for building
+    end-to-end apps on Azure Confidential Computing, including common patterns, components,
+    and design trade-offs.
+  deployment: Guides for deploying and migrating Azure confidential VMs/VMSS, SGX
+    enclaves, AKS confidential node pools, custom images, and Fortanix CCM in secure
+    production environments.
+  configuration: 'Configuring Azure confidential workloads: AKS confidential containers
+    and Intel SGX plugins, plus setting up Metablob disks for confidential virtual
+    machines.'
+  troubleshooting: 'Troubleshooting AKS confidential node issues: setup and deployment
+    problems, enclave/TEE errors, limitations, performance, networking, and common
+    FAQ-based fixes.'
+  integrations: 'Patterns and samples for building and integrating confidential apps:
+    SGX enclave development, guest attestation, Fortanix CCM, and Secure Key Release
+    on VMs and containers'
+---
+# Azure Confidential Computing Crawl Report
 
 ## Summary
 

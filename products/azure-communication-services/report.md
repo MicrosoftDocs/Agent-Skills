@@ -1,4 +1,34 @@
-# Communication Services Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Monitoring, logging, metrics, and diagnostics for ACS (calls, chat,
+    SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams
+    interop, and UI Library behavior.
+  decision-making: Guidance on ACS-Teams interop, calling/phone/SMS/WhatsApp pricing,
+    PSTN and number options, government cloud support, and migration from Twilio Video/Conversations
+    to ACS
+  security: 'Securing ACS apps: auth methods (Entra, HMAC, managed identities, SMTP),
+    Teams interop security, sender/caller identity, roles, webhooks, encryption, captions,
+    RTT, and access controls.'
+  best-practices: 'Best practices for ACS calling, SMS, email, and Teams interop:
+    quality, UX, spam/reputation, policy compliance, tokens/auth, identifiers, diagnostics,
+    and network/device optimization.'
+  integrations: Patterns and samples for integrating ACS calling, chat, email, Rooms,
+    Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST,
+    events, and client capabilities.
+  limits-quotas: Email sending limits, phone number eligibility/restrictions by country,
+    calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and
+    ACS API quotas and behaviors.
+  troubleshooting: Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams interop,
+    audio/video/device/network issues, plus collecting logs/metrics and interpreting
+    error/diagnostic codes.
+  deployment: Guides for planning ACS direct routing infrastructure and deploying
+    the ACS Chat Hero sample, including architecture, setup steps, and configuration
+    details.
+  architecture-patterns: Patterns for auto-recording ACS calls with Event Grid/Functions
+    and designing ACS networks with ExpressRoute for private, secure connectivity.
+---
+# Azure Communication Services Crawl Report
 
 ## Summary
 
@@ -9,9 +39,9 @@
 - **Unclassified**: 135
 
 ### Incremental Update
-- **New Pages**: 80
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 435
+- **Unchanged**: 515
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -31,30 +61,6 @@
 | *(Unclassified)* | 135 | 26.2% |
 
 ## Changes
-
-### New Pages
-
-- [Logs & metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/monitor-logs-metrics)
-- [User privacy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/privacy)
-- [Government clouds](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/government-cloud)
-- [Security](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/security)
-- [Known issues](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/limitations)
-- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/teams-endpoint)
-- [Use cases](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-use-cases)
-- [Authentication overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-authentication-overview)
-- [Calling capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user-calling)
-- [Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/phone-capabilities)
-- [Meeting capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/meeting-capabilities)
-- [Teams client experience](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/teams-client-experience)
-- [Teams shared line appearance](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/teams-shared-line-appearance)
-- [Teams license requirements](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/eligible-teams-licenses)
-- [Microsoft Entra API permissions](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/azure-ad-api-permissions)
-- [Firewall configuration](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-firewall-configuration)
-- [Government clouds](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/government-cloud)
-- [Teams users in Azure Communication Services calls](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/calling-capabilities)
-- [Add Teams meeting calling to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop)
-- [Generate an access token for a Teams user](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/manage-teams-identity)
-- *...and 60 more*
 
 ## Classified Pages
 

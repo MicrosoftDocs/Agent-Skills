@@ -1,4 +1,31 @@
-# Azure VMware Solution Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring AVS environments: networking (NSX, DHCP/DNS, routing,
+    interconnect), storage/backup (vSAN, ANF, Elastic SAN, Pure, Cloud Backup), Arc/guest
+    mgmt, DR (SRM, Zerto, JetStream), and monitoring/logs.'
+  architecture-patterns: Network, storage, and private cloud design patterns for AVS,
+    including hub-spoke, internet/on-prem/Gen2 connectivity, vSAN, and reference architectures
+    for Horizon, Citrix, GitHub, and Cloud Director.
+  decision-making: Guidance on choosing AVS migration, backup, DR, licensing, reserved
+    instances, HCX options, API Management SKUs, and cross-region/VCF deployment strategies.
+  security: 'Securing AVS: identity/role config, external identity sources, Defender
+    for Cloud, vSAN CMK, Trusted Launch/vTPM, service principal setup, credential
+    rotation, and security best practices.'
+  troubleshooting: Diagnosing and resolving Azure VMware Solution deployment and platform
+    issues, including known errors, workarounds, log collection, and how to open/support
+    tickets for failed AVS deployments.
+  best-practices: 'Best practices for AVS operations: safely maintaining private clouds,
+    optimizing NSX scale/performance for HCX migrations, and configuring HCX Mobility
+    Optimized Networking.'
+  integrations: Networking, HCX setup/migration, and integrating AVS workloads with
+    Azure services (vWAN VPN, Traffic Manager, App Gateway, Aria Ops, Cloud Director,
+    cross-cloud migrations).
+  limits-quotas: Host, cluster, routing, storage, and quota limits for Azure VMware
+    Solution, including planning capacity, deploying/scaling clusters, and requesting/managing
+    host quota.
+---
+# Azure Vmware Crawl Report
 
 ## Summary
 

@@ -1,4 +1,26 @@
-# Azure Data Manager for Energy Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance on selecting the right Azure Data Manager for Energy tier,
+    comparing capabilities, scale, and cost trade-offs for different workloads and
+    environments.
+  configuration: Configuring ADME data partitions, enabling and registering external
+    data sources (incl. Reservoir DDMS), and setting up and using audit logging in
+    Azure Energy Data Manager.
+  security: 'Securing Azure Data Manager for Energy: auth tokens, ACLs, legal tags,
+    entitlements, CORS, API Management, private endpoints, managed identities, and
+    Customer Lockbox.'
+  deployment: Guides for deploying Azure Data Manager for Energy components, including
+    the Geospatial Consumption Zone and OSDU Admin UI, with required configs and deployment
+    steps.
+  integrations: Patterns for integrating Energy Data Services with Azure Monitor and
+    File APIs, including exporting OSDU logs, wiring Airflow/Elasticsearch logs, and
+    uploading large files programmatically.
+  troubleshooting: Diagnosing and fixing manifest ingestion failures in Azure Data
+    Manager for Energy using Airflow logs, including log analysis, common error patterns,
+    and remediation steps.
+---
+# Azure Energy Data Services Crawl Report
 
 ## Summary
 

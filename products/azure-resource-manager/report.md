@@ -1,4 +1,34 @@
-# Resource Manager Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: Deploying ARM/Bicep templates via pipelines, GitHub, portal/CLI/PowerShell,
+    using what-if/rollback, and moving or relocating Azure resources and data across
+    subscriptions/regions.
+  best-practices: 'Best practices for authoring and validating Bicep/ARM templates:
+    linter rules, parameter/variable usage, IDs, locations, API versions, REST custom
+    endpoints, testing with ARM TTK, and migration tagging.'
+  integrations: Bicep functions, operators, loops, and tooling (CLI, PowerShell, Python,
+    REST) for ARM deployments, plus patterns for resource groups, tags, AKS, and custom
+    provider REST endpoints.
+  configuration: 'Configuring ARM/Bicep templates and managed apps: environment setup,
+    parameters, tags, functions, UI (createUiDefinition) controls, deployment stacks,
+    policy/monitoring, and networking/registry settings.'
+  troubleshooting: 'Diagnosing and fixing Bicep/ARM deployment issues: detailed guides
+    for specific BCP/ARM errors, syntax/type/decorator problems, scope/name/quota/SKU
+    failures, and using logging/tools to troubleshoot.'
+  limits-quotas: 'ARM/Bicep limits and quotas: resource, tag, naming, history, and
+    subscription caps; throttling; deployment scopes; and patterns to avoid/resolve
+    “quota/limit exceeded” errors.'
+  security: 'Securing ARM/Bicep deployments: handling secrets (Key Vault, secure params/outputs),
+    RBAC and managed apps, private endpoints/links, locks, TLS, and cross-tenant authentication.'
+  decision-making: Guidance on ARM-to-Bicep migration, classic vs Resource Manager,
+    and planning/executing Azure regional relocation for VMs, AKS, networking, databases,
+    backup, and other services
+  architecture-patterns: 'Bicep template design patterns: structuring parameters,
+    using configuration sets and shared variable files, and generating robust, collision‑free
+    resource names.'
+---
+# Azure Resource Manager Crawl Report
 
 ## Summary
 

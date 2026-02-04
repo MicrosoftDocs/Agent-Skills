@@ -1,4 +1,18 @@
-# Data Manager for Agriculture Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  limits-quotas: Guidance on API throttling behavior, rate limits, quotas, and strategies
+    to plan, monitor, and manage request throttling in Azure Data Manager for Agriculture.
+  integrations: Patterns and setup for integrating ADMA with farm activity providers,
+    sensors, ISV apps, Event Grid, and storing ag data like plant tissue nutrients.
+  configuration: Configuring diagnostics and logging for Azure Data Manager for Agriculture
+    and understanding/using its Azure Event Grid event schemas for integrations and
+    monitoring.
+  security: Configuring Azure Data Manager for Agriculture with Private Link endpoints,
+    including network isolation, secure access patterns, and integration with virtual
+    networks.
+---
+# Azure Data Manager For Agri Crawl Report
 
 ## Summary
 

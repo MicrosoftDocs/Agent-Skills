@@ -1,3 +1,34 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Securing ADX clusters and data: encryption, keys, identities/RBAC, cross-tenant
+    access, network/private endpoints, Conditional Access, Azure Policy, and secure
+    connections/ingestion.'
+  integrations: Integrating Azure Data Explorer with tools and services (Power BI,
+    ADF, Kafka, Spark, Logstash, Power Automate, etc.), plus SDK patterns for auth,
+    ingestion, policies, and query access.
+  limits-quotas: 'Managing ADX cluster limits: auto-stop for inactivity, Event Grid
+    ingestion size caps, safe delete/recover, and free-cluster constraints and upgrade
+    paths.'
+  deployment: Provisioning and automating ADX environments, deploying Kusto schema
+    via DevOps, and migrating clusters to availability zones or from VNet injection
+    to private endpoints.
+  best-practices: 'Guidance on ADX performance and health: monitoring, concurrency,
+    schema and ingestion tuning, handling bad/duplicate/personal data, cold data querying,
+    and Power BI optimization.'
+  architecture-patterns: Designing ADX architectures for disaster recovery, business
+    continuity, cross-cluster querying with follower DBs, and multi-tenant deployment
+    patterns and trade-offs
+  configuration: 'Configuring Azure Data Explorer clusters and databases: schema cloning/sync,
+    ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring,
+    and web UI settings/profile.'
+  decision-making: Guidance on choosing and sizing ADX clusters (SKUs, isolated/confidential
+    compute, horizontal/vertical scaling) plus cost planning, reservations, and migrating
+    from Elasticsearch.
+  troubleshooting: 'Diagnosing and fixing Azure Data Explorer issues: ingestion error
+    codes, private endpoint connectivity, cluster connection/creation failures, and
+    database/table create/delete problems.'
+---
 # Azure Data Explorer Crawl Report
 
 ## Summary
@@ -10,8 +41,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 196
+- **Updated Pages**: 0
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -31,11 +62,6 @@
 | *(Unclassified)* | 61 | 31.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Streaming ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-streaming)
-  - Updated: 2025-07-30T08:00:00.000Z → 2026-02-03T23:03:00.000Z
 
 ## Classified Pages
 

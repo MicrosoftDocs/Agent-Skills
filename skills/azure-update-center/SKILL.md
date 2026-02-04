@@ -20,13 +20,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Update Manager issues, including deployment failures, agent/extension problems, schedule errors, and troubleshooting update compliance. |
-| Best Practices | L36-L40 | Guidance on patching SQL Server on Azure VMs: scheduling, sequencing, automation, minimizing downtime, and aligning OS/SQL updates with Azure Update Center. |
+| Troubleshooting | L31-L35 | Diagnosing and fixing Azure Update Manager issues, including deployment failures, assessment errors, agent/extension problems, and common error codes/logs. |
+| Best Practices | L36-L40 | Guidance on planning and configuring OS/SQL patching for SQL Server on Azure VMs, including maintenance windows, automation, sequencing, and minimizing downtime. |
 | Decision Making | L41-L45 | Guidance on planning and executing migration from Configuration Manager (SCCM) to Azure Update Manager, including strategy, prerequisites, and high-level steps. |
-| Limits & Quotas | L46-L53 | Supported OSes, images, update sources/types, and workload limitations in Azure Update Manager, including compatibility matrices and unsupported scenarios. |
-| Security | L54-L60 | Configuring secure patching in Update Manager: RBAC roles/permissions, cross-subscription access, and handling security vulnerabilities including Ubuntu Pro integration. |
-| Configuration | L61-L74 | Configuring Azure Update Manager: client setup, prerequisites/networking, scopes, policies, ESU, hotpatching, auto guest patching, and pre/post maintenance events. |
-| Integrations & Coding Patterns | L75-L83 | Using Update Manager via REST and Resource Graph, plus patterns for integrating maintenance events with Azure Functions and Automation runbooks using webhooks. |
+| Limits & Quotas | L46-L53 | Supported OSes, update types/sources, custom image limits, and which workloads or configurations are unsupported in Azure Update Manager. |
+| Security | L54-L60 | Configuring secure permissions and roles for Update Manager, enabling cross-subscription patching safely, and handling security vulnerabilities including Ubuntu Pro integration. |
+| Configuration | L61-L74 | Configuring Azure Update Manager: client setup, scopes, ESU, hotpatching, auto/guest patching, policy-based assessments, networking, and pre/post maintenance events. |
+| Integrations & Coding Patterns | L75-L83 | Using Update Manager via REST and Resource Graph, plus patterns to trigger Functions or Automation runbooks from maintenance events and sample queries for update/patch data |
 
 ### Troubleshooting
 | Topic | URL |

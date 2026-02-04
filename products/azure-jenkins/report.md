@@ -1,4 +1,16 @@
-# Jenkins Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: 'Jenkins deployment to Azure: installing Jenkins, configuring agents
+    (VM, ACI), and building CI/CD pipelines to deploy apps to AKS, App Service, Functions,
+    Spring Apps, Service Fabric, and Linux VMs.'
+  integrations: Configuring Jenkins to store and manage build artifacts in Azure Blob
+    Storage, including setup, authentication, and usage patterns for artifact repositories.
+  configuration: Configuring Jenkins with Azure-specific plugins for builds, deployments,
+    credentials, and integrating services like Azure DevOps, VMs, storage, and web
+    apps.
+---
+# Azure Jenkins Crawl Report
 
 ## Summary
 

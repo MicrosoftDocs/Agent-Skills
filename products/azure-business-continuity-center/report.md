@@ -1,4 +1,17 @@
-# Business Continuity Center Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Setting up and managing Backup/Recovery Services vaults and protection
+    policies, including creation, configuration, updates, and lifecycle management
+    of Azure Backup vaults.
+  limits-quotas: Resiliency feature support matrix, supported/unsupported scenarios,
+    and limitations for using Azure Business Continuity Center across regions and
+    services.
+  security: Guidance on security levels and controls in Azure Resiliency, and how
+    to assess, configure, and improve your business continuity and disaster recovery
+    security posture.
+---
+# Azure Business Continuity Center Crawl Report
 
 ## Summary
 

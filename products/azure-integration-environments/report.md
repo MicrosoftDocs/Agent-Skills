@@ -1,3 +1,7 @@
+---
+generated_at: '2026-02-04'
+category_descriptions: {}
+---
 # Azure Integration Environments Crawl Report
 
 ## Summary

@@ -1,4 +1,29 @@
-# CycleCloud Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: APIs, SDKs, and patterns for automating CycleCloud plus integrating
+    schedulers (Slurm, PBS, Grid Engine, HTCondor, LSF, HPC Pack), monitoring, events,
+    and Open OnDemand.
+  configuration: 'Designing and configuring CycleCloud clusters: templates, node/nodearray
+    setup, storage, networking, autoscaling, proxies, CLI/Jetpack, VMSS Flex, monitoring,
+    backup, and locked-down environments'
+  architecture-patterns: Architectural guidance for designing, deploying, and operating
+    resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including
+    patterns for failover, networking, and resource management.
+  security: 'Securing CycleCloud: bastion access, SSL, auth methods, service principals/managed
+    identities, SELinux, and network security best practices for clusters and portal'
+  troubleshooting: Diagnosing and fixing CycleCloud errors and node startup failures,
+    plus where to find and interpret server and node log files for troubleshooting
+  decision-making: Guidance on planning and sizing CycleCloud deployments, VM placement,
+    custom images, Slurm workspaces, Spot VM usage, and migration from Azure CycleCloud
+    7.
+  deployment: Deploying and running Azure CycleCloud via CLI, ARM templates, manual
+    install/upgrade steps, and container-based (ACI) deployments, including workspace
+    setup for Slurm clusters.
+  best-practices: Best practices for configuring CycleCloud clusters on HB/HC HPC
+    VMs and controlling node lifecycle to avoid unwanted auto-termination.
+---
+# Azure Cyclecloud Crawl Report
 
 ## Summary
 

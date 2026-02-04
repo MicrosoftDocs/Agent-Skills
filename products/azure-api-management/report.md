@@ -1,4 +1,33 @@
-# API Management Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Patterns and examples for integrating APIM with LLMs, MCP, SAP, Dapr,
+    Service Bus/Event Hubs/Event Grid, logging/monitoring, portals, and external backends
+    via policies and exports
+  limits-quotas: 'Setting and enforcing API limits: rate/quotas per key, concurrency,
+    OpenAI token caps, service-wide limits, self-hosted gateway constraints, and request/response
+    validation policies.'
+  security: 'Securing API Management and its portals: authN/Z with Entra ID/B2C/OAuth/JWT,
+    client certs & mTLS, managed identities, TLS/ciphers, CORS, DDoS/Defender, compliance,
+    and LLM content safety.'
+  decision-making: Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD
+    planning, VNet choices, monetization features, and migrating from Amazon API Gateway
+  troubleshooting: Debugging APIM policies and requests, handling errors, diagnosing
+    SNAT/timeouts, fixing Key Vault/custom domain cert issues, and using Diagnose
+    and Solve for runtime problems.
+  best-practices: Scaling, throttling, security hardening (OWASP Top 10), SSE setup,
+    and production/self-hosted gateway & dev portal practices for Azure API Management.
+  configuration: 'Configuring Azure API Management behavior: policies, caching (response,
+    key, semantic), networking/VNet, domains, logging/metrics, imports (OpenAPI/GraphQL/gRPC/SOAP),
+    self-hosted gateway, and workspaces.'
+  deployment: Deploying APIM across regions and networks, self-hosted gateways (K8s,
+    Docker, Arc, AKS, Container Apps), DR/backup/restore, soft-delete recovery, and
+    developer portal deployment options.
+  architecture-patterns: Architectural patterns for placing APIM behind VNets, App
+    Gateway, Front Door, or AKS, plus guidance on sustainable gateway configuration
+    and design choices.
+---
+# Azure Api Management Crawl Report
 
 ## Summary
 
@@ -10,8 +39,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 274
+- **Updated Pages**: 2
+- **Unchanged**: 272
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -21,16 +50,23 @@
 |------|-------|------------|
 | architecture-patterns | 4 | 1.5% |
 | best-practices | 6 | 2.2% |
-| configuration | 102 | 37.2% |
+| configuration | 101 | 36.9% |
 | decision-making | 8 | 2.9% |
 | deployment | 18 | 6.6% |
-| integrations | 29 | 10.6% |
+| integrations | 30 | 10.9% |
 | limits-quotas | 15 | 5.5% |
 | security | 30 | 10.9% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 56 | 20.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Backends](https://learn.microsoft.com/en-us/azure/api-management/backends)
+  - Updated: 2025-11-20T08:00:00.000Z → 2026-01-15T08:00:00.000Z
+- [Policy expressions](https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions)
+  - Updated: 2023-03-14T00:00:00.000Z → 2026-01-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -112,7 +148,7 @@
 | [Deploy a self-hosted gateway to Kubernetes (YAML)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes) | deployment | 0.78 | Covers Kubernetes deployment via YAML with product-specific container configuration, environment variables, and deployment requirements. |
 | [Diagnose issues in production](https://learn.microsoft.com/en-us/azure/api-management/diagnose-solve-problems) | troubleshooting | 0.78 | Troubleshooting-focused article for 404/502 and other issues using the Diagnose and Solve tool; expected to map symptoms to diagnostics and resolutions specific to API Management. |
 | [Options to secure developer portal access](https://learn.microsoft.com/en-us/azure/api-management/secure-developer-portal-access) | security | 0.78 | Discusses securing portal access with Entra ID, External ID, and basic auth; such docs typically list specific configuration options, default anonymous access behavior, and portal security settings unique to API Management. |
-| [Policy expressions](https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions) | configuration | 0.78 | Reference for policy expression syntax and available context objects; contains product-specific expression members, methods, and usage patterns that act as configuration primitives. |
+| [Policy expressions](https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions) | integrations | 0.78 | The page documents Azure API Management policy expression syntax and context objects in C# (for example, request/response objects, context variables, and built-in helpers). It provides product-specific expression patterns and APIs that are not generic C# knowledge and are unique to APIM policies, fitting the integrations & coding patterns category best. |
 | [Policy reference index](https://learn.microsoft.com/en-us/azure/api-management/api-management-policies) | configuration | 0.78 | This is a reference index for all API Management policies and indicates which gateways support each policy. Policy names, gateway support matrices, and links to detailed settings are product-specific configuration surface, not generic concepts. |
 | [azure-openai-emit-token-metric](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-emit-token-metric-policy) | configuration | 0.78 | The azure-openai-emit-token-metric policy reference defines specific metric names (Total, Prompt, Completion Tokens) and policy elements required to send them to Application Insights. These are concrete configuration parameters and telemetry schema details. |
 | [cache-remove-value](https://learn.microsoft.com/en-us/azure/api-management/cache-remove-value-policy) | configuration | 0.78 | The cache-remove-value policy reference defines how to delete cached items by key and the required policy element ordering. These are concrete configuration details for cache management. |
@@ -286,7 +322,6 @@
 | [API Management policies overview](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies) | 0.30 | Describes what policies are and high-level usage; primarily conceptual overview without detailed config tables, limits, or product-specific troubleshooting. |
 | [API authentication and authorization options](https://learn.microsoft.com/en-us/azure/api-management/authentication-authorization-overview) | 0.30 | Authentication/authorization overview; describes options and concepts (OAuth 2.0, flows) at a high level without detailed product-specific configuration parameters or error mappings. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference) | 0.30 | This is an index of Azure Policy built-in definitions for API Management, primarily navigational. The summary doesn’t indicate detailed parameter tables or numeric limits; it links out to definitions rather than containing them. |
-| [Backends](https://learn.microsoft.com/en-us/azure/api-management/backends) | 0.30 | Explains what backends are and supported backend types; summary suggests conceptual guidance without numeric limits, config tables, or error mappings. |
 | [Caching overview](https://learn.microsoft.com/en-us/azure/api-management/caching-overview) | 0.30 | Caching overview describing benefits and concepts; no evidence of specific cache size limits, TTL ranges, or configuration parameter tables. |
 | [Create an instance - ARM template](https://learn.microsoft.com/en-us/azure/api-management/quickstart-arm-template) | 0.30 | ARM template quickstart; demonstrates a single template to create a Developer tier instance, not a full configuration or limits reference. |
 | [Create an instance - Bicep](https://learn.microsoft.com/en-us/azure/api-management/quickstart-bicep) | 0.30 | Bicep quickstart for creating an instance; likely shows one example template, not a comprehensive configuration parameter matrix. |
@@ -300,6 +335,7 @@
 | [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview) | 0.20 | Gateway overview and comparison of Azure-managed vs self-hosted gateways appears conceptual; summary does not indicate numeric thresholds, config tables, or detailed decision matrices. |
 | [Add an API manually](https://learn.microsoft.com/en-us/azure/api-management/add-api-manually) | 0.20 | Step-by-step portal tutorial for adding an API; no detailed config tables, limits, or product-specific edge cases. |
 | [Azure PowerShell](https://github.com/Azure/azure-docs-powershell-samples) | 0.20 | GitHub repo landing page for sample code; description is meta-information about sample location, not a documentation page with structured expert guidance or configuration details. |
+| [Backends](https://learn.microsoft.com/en-us/azure/api-management/backends) | 0.20 | Appears to be a conceptual/overview page explaining what backends are in Azure API Management and how they relate to imported APIs. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert configuration/decision content. |
 | [Create an instance - CLI](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli) | 0.20 | Quickstart for creating an instance via CLI; primarily step-by-step commands without configuration option tables or product-specific constraints. |
 | [Create an instance - Portal](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance) | 0.20 | Portal-based quickstart to create an instance; focuses on UI steps, not detailed configuration parameters or limits. |
 | [Create an instance - PowerShell](https://learn.microsoft.com/en-us/azure/api-management/powershell-create-service-instance) | 0.20 | PowerShell quickstart for instance creation; shows basic cmdlet usage rather than exhaustive configuration tables or constraints. |

@@ -20,9 +20,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L27-L31 | Resiliency feature support matrix, supported/unsupported scenarios, and limitations for using Azure Business Continuity Center across regions, services, and configurations. |
-| Security | L32-L37 | Guidance on security tiers and controls in Azure Resiliency, and how to assess, configure, and improve your business continuity security posture. |
-| Configuration | L38-L44 | Configuring Backup/Recovery Services vaults and policies: create, update, and manage backup/replication protection settings and control the lifecycle of Azure Backup vaults. |
+| Limits & Quotas | L27-L31 | Resiliency feature support matrix, supported/unsupported scenarios, and limitations for using Azure Business Continuity Center across regions and services. |
+| Security | L32-L37 | Guidance on security levels and controls in Azure Resiliency, and how to assess, configure, and improve your business continuity and disaster recovery security posture. |
+| Configuration | L38-L44 | Setting up and managing Backup/Recovery Services vaults and protection policies, including creation, configuration, updates, and lifecycle management of Azure Backup vaults. |
 
 ### Limits & Quotas
 | Topic | URL |

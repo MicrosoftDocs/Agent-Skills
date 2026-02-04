@@ -1,4 +1,35 @@
-# Functions Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Using triggers and bindings to integrate Azure Functions with services
+    (HTTP, storage, data, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) and language‑specific
+    binding patterns.
+  configuration: 'Configuring how Functions apps run: app/host settings, storage,
+    scaling, plans, dependencies, Durable Functions options, monitoring/telemetry,
+    networking, runtime versions, and local dev settings.'
+  security: 'Securing Azure Functions apps: encryption, keys, managed identity, private
+    endpoints/VNets, identity-based connections (SQL, Storage, Service Bus), Web PubSub,
+    and MCP server security.'
+  decision-making: Guidance on choosing Functions hosting/runtime options, costs,
+    networking, Durable Task/Scheduler choices, and migrating apps or plans (versions,
+    Node model, Service Bus, AWS Lambda).
+  architecture-patterns: Patterns for containerized Functions on Linux, Durable Functions
+    performance/DR/geo-distribution, and target-based scaling strategies for resilient,
+    scalable architectures.
+  deployment: 'Deploying and hosting Azure Functions: provisioning resources, CI/CD
+    (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps,
+    zero‑downtime, and Kafka/RabbitMQ bindings.'
+  best-practices: 'Durable Functions and Azure Functions best practices: orchestrator/entity
+    patterns, error handling, versioning, testing, performance/scale, DI, idempotency,
+    and reliable event processing.'
+  troubleshooting: Diagnosing and fixing Durable Functions and core runtime issues,
+    AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment
+    and execution failures.
+  limits-quotas: Scaling and performance limits for Functions and Durable Functions,
+    including scheduler throughput, event-driven scaling behavior, concurrency settings,
+    and language/runtime support timelines.
+---
+# Azure Functions Crawl Report
 
 ## Summary
 
@@ -10,8 +41,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 349
+- **Updated Pages**: 0
+- **Unchanged**: 351
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -31,13 +62,6 @@
 | *(Unclassified)* | 66 | 18.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Develop and debug locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-01-23T08:00:00.000Z
-- [Set the runtime version](https://learn.microsoft.com/en-us/azure/azure-functions/set-runtime-version)
-  - Updated: 2024-07-05T05:35:00.000Z → 2026-01-23T08:00:00.000Z
 
 ## Classified Pages
 

@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Security | L25-L28 | Configuring resource registration, managed identities, and access control needed for secure deployment and operation of Azure Network Function Manager resources. |
+| Security | L25-L28 | Setting up managed identities, role assignments, and resource registration needed to securely deploy and operate Network Function Manager resources |
 
 ### Security
 | Topic | URL |

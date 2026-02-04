@@ -1,4 +1,10 @@
-# Network Function Manager Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Setting up managed identities, role assignments, and resource registration
+    needed to securely deploy and operate Network Function Manager resources
+---
+# Azure Network Function Manager Crawl Report
 
 ## Summary
 

@@ -1,4 +1,35 @@
-# Azure DevTest Labs Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring DevTest Labs environments: VM policies (start/stop,
+    usage, images, licensing), networks, IPs, resource groups, cost tracking, tags,
+    activity logs, alerts, and cross-lab reporting'
+  integrations: 'End-to-end automation and integration for DevTest Labs: ARM/Bicep/Terraform
+    provisioning, VM lifecycle scripting (CLI/PowerShell), artifacts, custom images/VHD
+    upload, REST/Functions/Automation runbooks.'
+  deployment: Automating DevTest Labs deployment and user setup, integrating labs
+    into CI/CD and Azure Pipelines, handling load balancer/IP changes, and moving
+    labs/schedules across regions.
+  best-practices: Guidance for organizing team-based development of DevTest Labs resources
+    (artifacts, formulas, images) using source control, branching, and collaboration
+    workflows.
+  security: 'Securing DevTest Labs: identities, RBAC, secrets/Key Vault, disk/storage
+    encryption, network isolation, Bastion/RDP access, Trusted Launch, and Defender
+    alerts.'
+  decision-making: Guidance on planning and scaling DevTest Labs for enterprises,
+    choosing VM/image options and scenarios, and setting governance and resource management
+    strategies.
+  troubleshooting: Diagnosing and fixing DevTest Labs VM and environment creation/deployment
+    errors, artifact application failures, and connectivity issues (including redeploying
+    problematic VMs).
+  architecture-patterns: 'Enterprise-scale DevTest Labs architectures: hub-spoke design,
+    network/security patterns, governance, cost management, and integration with CI/CD
+    and enterprise IT.'
+  limits-quotas: Managing Azure subscription and resource quotas that impact DevTest
+    Labs, including how to view current limits and request quota increases for cores,
+    storage, and other resources.
+---
+# Azure Devtest Labs Crawl Report
 
 ## Summary
 

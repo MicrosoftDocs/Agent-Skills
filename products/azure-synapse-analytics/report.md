@@ -1,4 +1,35 @@
-# Synapse Analytics Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
+    CI/CD setup, ARM template deployment, environment design (dev/test/prod), region
+    moves, restore points, and recovery.'
+  security: 'Security, identity, and access control for Synapse: RBAC, Entra auth,
+    MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and
+    secure connectivity to data sources.'
+  best-practices: 'Performance, monitoring, and design best practices for Synapse:
+    Spark and SQL tuning, indexing, caching, workload management, data loading, T‑SQL
+    patterns, and migrating from Netezza/Oracle/Teradata.'
+  decision-making: Guidance on planning Synapse adoption, POCs, migrations (Netezza/Teradata/enterprise
+    DW), cost management, data ingestion, table distribution, and historical query
+    analysis.
+  configuration: 'Configuring Synapse workspaces: Spark runtimes, pools, libraries,
+    lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML,
+    and pipeline activities.'
+  architecture-patterns: Architectural guidance for Synapse workspaces, SQL (dedicated/serverless),
+    Spark, table distribution/partitioning, workload isolation/management, and modern
+    DW design/migration from Netezza/Teradata.
+  integrations: Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI
+    services, Cosmos DB, Delta/CDM, monitoring tools, and to load/query external data
+    formats and SQL pools.
+  troubleshooting: Diagnosing and fixing Synapse workspace, SQL, Spark, Link, and
+    Studio issues, including connectivity, failover, job errors, library installs,
+    encoding, and tenant/impersonation problems.
+  limits-quotas: Limits, quotas, and configuration for Synapse networking, Spark autoscale,
+    SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos
+    DB/SQL) features and restrictions.
+---
+# Azure Synapse Analytics Crawl Report
 
 ## Summary
 
@@ -34,8 +65,8 @@
 
 ### Updated Pages
 
-- [Synapse workspace Managed virtual network](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-managed-vnet)
-  - Updated: 2025-01-23T05:38:00.000Z → 2026-02-03T18:20:00.000Z
+- [Azure SQL and SQL Server](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector)
+  - Updated: 2025-02-14T05:31:00.000Z → 2026-02-04T06:14:00.000Z
 
 ## Classified Pages
 
@@ -72,7 +103,6 @@
 | [3 Security access operations](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/netezza/3-security-access-operations) | security | 0.80 | Covers mapping of authentication, roles, permissions, monitoring, auditing, and workload management from Netezza to Synapse. This implies Synapse-specific RBAC and operational security patterns, fitting the security sub-skill. |
 | [3 Security access operations](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/oracle/3-security-access-operations) | security | 0.80 | Covers authentication, roles, permissions, monitoring, auditing, and workload management mapping from Oracle to Synapse, implying Synapse-specific RBAC and security configuration guidance. |
 | [3 Security access operations](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/teradata/3-security-access-operations) | security | 0.80 | Covers authentication, users, roles, permissions, monitoring, auditing, and workload management mapping from Teradata to Synapse. Likely includes Synapse-specific roles/permissions and operational security patterns, which fits the security sub-skill with product-specific configuration guidance. |
-| [Azure SQL and SQL Server](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector) | integrations | 0.80 | Connector article for Azure SQL/SQL Server vs Spark; summary mentions performance characteristics and bulk insert behavior, and the full doc is expected to list connector-specific options and parameters not known generically. |
 | [Azure Synapse Analytics known issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues) | troubleshooting | 0.80 | Known-issues page generally lists specific symptoms, error behaviors, and workarounds or resolution dates; this is product-specific troubleshooting knowledge not inferable from general training. |
 | [Azure Synapse Apache Spark 3.3 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime) | configuration | 0.80 | Documents exact versions and deprecation details for the 3.3 runtime; contains product-specific version matrices and configuration implications. |
 | [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | configuration | 0.80 | Lists specific runtime component versions and support status; these are product-specific configuration/version details not inferable from general knowledge. |
@@ -215,6 +245,7 @@
 | [Workload importance](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance) | configuration | 0.70 | Details how workload importance affects execution order; likely includes specific importance levels and how to set them in dedicated SQL pool. |
 | [Workload isolation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation) | architecture-patterns | 0.70 | Explains using workload groups to isolate workloads, contain resources, and apply runtime rules—this is a product-specific architecture and resource-governance pattern. |
 | [Workload management monitoring](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management-portal-monitor) | configuration | 0.70 | Describes monitoring workload group resource allocation and query activity with Azure Metrics Explorer; implies specific metrics and monitoring configuration for workload management. |
+| [Azure SQL and SQL Server](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector) | integrations | 0.68 | Page describes a specific Spark connector library for SQL Server/Azure SQL/Fabric SQL, including product-specific integration behavior and usage from Synapse Spark runtime. This is an integration-focused, code-oriented connector page rather than a conceptual overview, so it fits the integrations sub-skill. |
 | [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity) | configuration | 0.68 | Describes the SQL pool stored procedure activity; such activity articles usually include parameter names, types, and behavior (e.g., linked service, stored procedure name, parameter mapping) that form a configuration reference. |
 | [6 Microsoft and third-party tools](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/oracle/6-microsoft-third-party-migration-tools) | best-practices | 0.65 | Part of a migration guide focused specifically on best practices for Microsoft and third‑party tools; likely includes concrete, product-specific recommendations and gotchas for using these tools with Synapse rather than just conceptual guidance. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-deployment-template-workspaces) | deployment | 0.65 | ARM template quickstart for creating a Synapse workspace and linked ADLS Gen2 likely includes resource types, required properties, and deployment-specific constraints unique to Synapse (e.g., required parameters, JSON schema fields). These are product-specific deployment details beyond generic ARM knowledge. |

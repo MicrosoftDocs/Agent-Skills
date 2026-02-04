@@ -21,12 +21,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L36 | Diagnosing and fixing Azure Private Endpoint and Private Link Service connectivity issues, including DNS/misconfiguration causes, validation steps, and common error resolutions. |
-| Best Practices | L37-L41 | DNS design and configuration guidance for Private Endpoints, including name resolution patterns, zone setup, split-horizon DNS, and avoiding common DNS misconfigurations. |
-| Decision Making | L42-L46 | Guidance on cost optimization for Azure Private Link, including pricing components, design trade-offs, and architecture choices to minimize data transfer and endpoint expenses. |
-| Limits & Quotas | L47-L51 | Guidance on increasing virtual network scale limits for Azure Private Endpoints, including supported scenarios, constraints, and how to request higher quotas. |
-| Security | L52-L57 | Configuring Azure RBAC roles and permissions needed to deploy and manage Private Link and Network Security Perimeters securely. |
-| Configuration | L58-L70 | How to configure and manage Private Link/endpoint behavior: routing, subnet policies, DNS, SNAT, security perimeters, and monitoring/diagnostic logs. |
-| Integrations & Coding Patterns | L71-L74 | Configuring on-premises DNS to resolve Azure Private Link endpoints using Azure DNS Private Resolver, including hybrid name resolution patterns and setup steps. |
+| Best Practices | L37-L41 | DNS design and configuration guidance for Azure Private Endpoints, including zone setup, name resolution patterns, split-horizon DNS, and integration with on-premises DNS systems |
+| Decision Making | L42-L46 | Guidance on estimating and optimizing Private Link costs, comparing design options (zonal vs regional, hub-spoke vs mesh), and understanding trade-offs between security, performance, and spend. |
+| Limits & Quotas | L47-L51 | Guidance on increasing virtual network scale limits for Azure Private Endpoints, including supported maximums and how to request higher quotas. |
+| Security | L52-L57 | Configuring Azure RBAC roles and permissions needed to create, manage, and secure Private Link resources and Network Security Perimeters. |
+| Configuration | L58-L70 | Configuring Azure Private Link/endpoint behavior: subnet policies, DNS zones, routing, SNAT, security perimeters, and monitoring/diagnostic logs. |
+| Integrations & Coding Patterns | L71-L74 | Configuring on-premises DNS to resolve Azure Private Endpoint and Private Link resources using Azure DNS Private Resolver, including hybrid and cross-network name resolution patterns. |
 
 ### Troubleshooting
 | Topic | URL |

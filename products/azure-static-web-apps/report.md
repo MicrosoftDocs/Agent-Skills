@@ -1,4 +1,29 @@
-# Static Web Apps Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Auth, roles, and user info; integrating custom providers, Key Vault, and
+    managed identity; securing DB connections, tokens, passwords, and private endpoint
+    access for Static Web Apps.
+  integrations: Patterns and samples for wiring Static Web Apps to backends and databases
+    (API Management, App Service, Container Apps, Cosmos DB, SQL, MySQL, PostgreSQL)
+    and using Mongoose with Cosmos DB.
+  configuration: Configuring domains, routing, builds, and local dev for Static Web
+    Apps, plus CLI usage, monitoring (App Insights, metrics), and framework-specific
+    setups like Nuxt 3.
+  decision-making: Guidance on choosing hosting plans, Functions integration model,
+    Next.js deployment mode, and Azure Front Door CDN options for Azure Static Web
+    Apps.
+  deployment: Deploying Static Web Apps via GitHub/GitLab/Bitbucket/external CI, using
+    ARM/Bicep/SWA CLI, and managing preview environments and traffic splitting for
+    PRs and branches
+  limits-quotas: Runtime/language versions supported for static apps and detailed
+    service limits (storage, bandwidth, API calls, build/concurrency quotas) that
+    affect scaling and resource usage.
+  troubleshooting: Diagnosing and fixing Static Web Apps deployment failures, build
+    errors, configuration issues, and runtime problems, including logs, common error
+    patterns, and troubleshooting steps.
+---
+# Azure Static Web Apps Crawl Report
 
 ## Summary
 

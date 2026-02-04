@@ -1,4 +1,35 @@
-# Azure NetApp Files Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: Guides for deploying and migrating SAP HANA and Oracle on Azure NetApp
+    Files, including AVGs, DR/HSR, cross-region replication, AzAcSnap, gov regions,
+    and ONTAP migration.
+  configuration: Configuring Azure NetApp Files volumes, protocols, networking, quotas,
+    snapshots/backup, monitoring, and app volume groups (SAP HANA, Oracle) including
+    AzAcSnap and AD/LDAP/SMB/NFS setup.
+  best-practices: Performance, configuration, and deployment best practices for Azure
+    NetApp Files, including NFS/SMB tuning, SAP/Oracle/AVD patterns, VM/quotas, migration/DR,
+    and benchmarking guidance.
+  limits-quotas: 'Limits, quotas, and behaviors for Azure NetApp Files: capacity,
+    throughput, large volumes, backups, NFS/SMB, LDAP/groups, maxfiles, file/path/charset
+    limits, and user/group volume quotas'
+  integrations: Using AzAcSnap with Azure NetApp Files (backup, restore, test, details,
+    runbefore/after), and integrating via REST API, PowerShell, S3-compatible object
+    API, Databricks, and OneLake.
+  troubleshooting: 'Diagnosing and fixing Azure NetApp Files issues: resource provider,
+    capacity pools, AVGs, snapshots, CMKs, LDAP access, CRUD ops, file locks, replication,
+    and AzAcSnap communication.'
+  decision-making: Guidance on choosing Azure NetApp Files volume types, service levels,
+    caching/cool tiers, data protection/DR, performance planning, cost optimization,
+    and migration options by workload.
+  architecture-patterns: 'Designing Azure NetApp Files architectures: VNet/topology
+    and connectivity patterns, using ANF as Azure VMware Solution datastores, and
+    planning AD DS integration for ANF workloads.'
+  security: 'Security configuration for Azure NetApp Files: encryption (CMK/HSM, data-at-rest/in-transit),
+    Kerberos/LDAP/AD, ACLs and permissions (NFS/SMB), policy/governance, and ransomware
+    protection.'
+---
+# Azure Netapp Files Crawl Report
 
 ## Summary
 
@@ -10,8 +41,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 222
+- **Updated Pages**: 0
+- **Unchanged**: 224
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -31,13 +62,6 @@
 | *(Unclassified)* | 64 | 28.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Solution architectures using Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-solution-architectures)
-  - Updated: 2026-01-21T08:00:00.000Z → 2026-02-03T08:00:00.000Z
-- [Restore a snapshot to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-new-volume)
-  - Updated: 2026-01-29T18:11:00.000Z → 2026-02-03T12:10:00.000Z
 
 ## Classified Pages
 

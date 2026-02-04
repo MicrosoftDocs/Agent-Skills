@@ -1,4 +1,34 @@
-# Stream Analytics Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring Stream Analytics jobs: inputs/outputs (Cosmos DB, Kafka,
+    Service Bus, PostgreSQL, Tables), autoscale, edge, Protobuf, error handling, credentials,
+    and monitoring/alerts.'
+  security: 'Securing Stream Analytics jobs: managed identities, encryption, private
+    endpoints/VNet integration, and policy-based access to outputs like Event Hubs,
+    Cosmos DB, SQL, ADX, Power BI, and Service Bus.'
+  integrations: Connecting Stream Analytics jobs to outputs (Synapse, SQL, Blob/Data
+    Lake, Delta, Power BI, Kafka, Event Hubs), using SDKs/UDFs/ML/anomaly detection,
+    and enabling advanced patterns like upsert.
+  deployment: 'CI/CD and deployment of Stream Analytics jobs: ARM/Bicep templates,
+    GitHub Actions, Azure DevOps, npm/NuGet tools, REST/IoT Edge, and cross-region
+    cluster moves.'
+  troubleshooting: 'Diagnosing and fixing Stream Analytics job issues: error codes,
+    data/input/output problems, query debugging (locally/diagrams), UDF debugging,
+    and external/internal service/availability errors.'
+  decision-making: Guidance on choosing Stream Analytics dev tools, migrating projects
+    from Visual Studio to VS Code, and selecting the right Azure real-time streaming
+    service for your scenario.
+  architecture-patterns: 'Architectural guidance for Stream Analytics: geo-redundant/high-availability
+    designs and reusable solution patterns for ingest, process, and output across
+    Azure services.'
+  best-practices: Guidance on scaling, performance tuning, reliability, geospatial
+    logic, reference data, ML/Cosmos/SQL outputs, and monitoring/metrics for production
+    Stream Analytics jobs.
+  limits-quotas: 'Details on Stream Analytics streaming units: capacity limits, performance
+    tuning, scaling behavior, and how to optimize jobs within SU quotas.'
+---
+# Azure Stream Analytics Crawl Report
 
 ## Summary
 

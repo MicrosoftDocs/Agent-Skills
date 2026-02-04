@@ -1,4 +1,35 @@
-# Backup Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring, managing, and automating Azure Backup and restore for
+    VMs, databases, AKS, Files/Blobs, SAP HANA, PostgreSQL, and monitoring/alerts
+    via portal, CLI, ARM/Bicep, Terraform, and policies.
+  best-practices: Best practices for configuring, backing up, and restoring Azure
+    VMs and workloads (AD, SQL, SQL Always On, Exchange, SAP ASE) using Azure Backup
+    and DPM
+  troubleshooting: Diagnosing and fixing Azure Backup errors, performance, and restore
+    issues across VMs, disks, AKS, databases (SQL, PostgreSQL, MySQL, SAP), Files/Blobs,
+    MABS/DPM, and agents/extensions.
+  architecture-patterns: Backup architecture and strategy for SAP HANA on Azure VMs,
+    including components, data flow, backup types, scheduling, retention, and design
+    best practices.
+  decision-making: Guidance on estimating Azure Backup costs, choosing policies to
+    auto-enable VM backups, and migrating alerting from classic Azure Backup alerts
+    to Azure Monitor.
+  limits-quotas: Backup feature support, regional availability, capacity/scale limits,
+    and retention constraints for Azure Backup across VMs, disks, databases, files,
+    blobs, AKS, SAP, and reporting.
+  security: 'Securing Azure Backup: soft delete, immutable vaults, RBAC/MUA/Resource
+    Guard, CMK encryption, private endpoints, AKS/VM/disk/file backup policies, ransomware/threat
+    detection, and TLS settings.'
+  integrations: How to script and automate Azure Backup/restore for VMs, AKS, SQL,
+    PostgreSQL, Files, Blobs, Disks, and MARS using CLI, PowerShell, REST, Logic Apps,
+    and security/logging integrations
+  deployment: Deploying and configuring Microsoft Azure Backup Server (MABS) V3/V4,
+    including silent installation steps and supported workloads/protection matrices
+    for different MABS versions.
+---
+# Azure Backup Crawl Report
 
 ## Summary
 
@@ -9,9 +40,9 @@
 - **Unclassified**: 118
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 3
-- **Unchanged**: 388
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 391
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -32,19 +63,12 @@
 
 ## Changes
 
-### New Pages
-
-- [Back up Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup)
-- [Restore Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore)
-
 ### Updated Pages
 
-- [What's new in Azure Backup](https://learn.microsoft.com/en-us/azure/backup/whats-new)
-  - Updated: 2025-11-20T08:00:00.000Z → 2026-01-28T08:00:00.000Z
-- [Azure VM backup support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-iaas)
-  - Updated: 2025-10-27T08:00:00.000Z → 2026-01-28T08:00:00.000Z
-- [FAQ-Back up Azure Blob](https://learn.microsoft.com/en-us/azure/backup/blob-backup-faq)
-  - Updated: 2025-12-11T12:16:00Z → 2026-02-03T06:44:00Z
+- [Back up Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup)
+  - Updated: 2026-02-03T06:44:00.000Z → 2026-02-04T06:14:00.000Z
+- [Restore Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore)
+  - Updated: 2026-02-03T06:44:00.000Z → 2026-02-04T06:14:00.000Z
 
 ## Classified Pages
 
@@ -159,7 +183,7 @@
 | [Azure Data Lake Storage vaulted backup](https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-overview) | configuration | 0.70 | Describes selective backup/restore of containers, use of dedicated vault, and ransomware-resilient vaulted backups, which are product-specific configuration and behavior details. |
 | [Azure Database for PostgreSQL -Flexible server backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-overview) | limits-quotas | 0.70 | States retention up to 10 years and likely details retention options and constraints for Azure Database for PostgreSQL Flexible Server backups, which are concrete service limits/quotas. |
 | [Azure Files backup](https://learn.microsoft.com/en-us/azure/backup/azure-file-share-backup-overview) | configuration | 0.70 | Covers snapshot and vaulted backup modes, integration with Azure File Sync, and long-term protection options, which are concrete configuration patterns for Azure Files backup. |
-| [Back up Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup) | configuration | 0.70 | How-to configuration article for backing up Confidential VMs using Azure Backup with Disk Encryption Sets and PMK/CMK. These preview, product-specific configuration steps and parameter combinations (DES, key types, supported scenarios) are not generic knowledge and qualify as expert configuration details rather than conceptual guidance. |
+| [Back up Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-backup) | configuration | 0.70 | How-to configuration article for backing up Confidential VMs using Azure Backup with PMK/CMK and Disk Encryption Sets. These pages typically include product-specific settings (e.g., required encryption configurations, supported combinations of keys/DES, and backup policy options) that go beyond generic knowledge and are unique to this preview feature, fitting the configuration sub-skill. |
 | [Back up a VM - ARM template](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-template) | configuration | 0.70 | ARM template quickstart necessarily defines JSON schema fields for Recovery Services vault and backup policy resources, including property names and allowed values, which are product-specific configuration parameters. |
 | [Back up a VM - Bicep file](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-bicep-file) | configuration | 0.70 | Bicep quickstart will show resource types and property names for Azure Backup vaults/policies in Bicep syntax, representing detailed configuration options unique to this service. |
 | [Back up an Azure VM using Enhanced policy](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-enhanced-policy) | configuration | 0.70 | Enhanced policy docs generally include specific policy parameters (frequency, snapshot retention, tiering behavior) with allowed ranges and default behaviors, which are product-specific configuration details. |
@@ -229,7 +253,7 @@
 | [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-managed-disks-ps) | integrations | 0.70 | Covers PowerShell restore commands and notes that Original-Location Recovery is not supported, with guidance on where new disks can be created. Contains product-specific cmdlets and behavioral constraints, which are expert integration details. |
 | [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-postgresql-database-cli) | integrations | 0.70 | Describes az CLI restore commands and parameters for PostgreSQL with Azure Backup, including resource IDs and options that are specific to this integration and not generic CLI usage. |
 | [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-postgresql-database-ps) | integrations | 0.70 | Restore workflow via PowerShell will include concrete cmdlets, parameter names, and required values for Azure Backup and PostgreSQL restore operations, which are product-specific API/SDK patterns. |
-| [Restore Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore) | configuration | 0.70 | Describes concrete restore scenarios for Confidential VMs encrypted with PMK or CMK, tied to Disk Encryption Sets and Azure Backup behavior. The mapping of encryption/key setups to supported restore flows is product-specific expert knowledge, fitting configuration/operation patterns rather than generic backup concepts. |
+| [Restore Confidential VMs](https://learn.microsoft.com/en-us/azure/backup/confidential-vm-restore) | configuration | 0.70 | Restore-focused counterpart to the backup configuration article, describing how to restore Confidential VMs encrypted with PMK/CMK and specific Disk Encryption Set setups. It likely contains product-specific restore options, constraints, and parameter choices unique to Azure Backup for Confidential VMs, which aligns best with configuration details rather than generic concepts. |
 | [Restore encrypted VMs](https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines) | security | 0.70 | Focuses on restoring ADE-encrypted VMs and related Key Vault usage; typically includes encryption-specific requirements, key/secret handling, and security-related configuration details. |
 | [Selective disk backup](https://learn.microsoft.com/en-us/azure/backup/selective-disk-backup-restore) | configuration | 0.70 | Selective disk backup requires specifying which disks are included per policy; such docs typically detail configuration options, constraints, and behavior per policy type (Enhanced vs Standard). |
 | [Threat Detection with Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview) | security | 0.70 | Covers product-specific integration between Azure Backup and Defender for Cloud, including how restore points are assessed using Defender signals and compromise indicators. |

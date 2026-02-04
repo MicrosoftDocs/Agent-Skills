@@ -1,4 +1,34 @@
-# Virtual Desktop Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring AVD host pools and session hosts, images, autoscale,
+    licensing, networking, monitoring, and all RDP/client settings (redirection, codecs,
+    QoS, Shortpath, Teams, OneDrive, language packs).
+  troubleshooting: 'Diagnosing and fixing AVD issues: app attach/MSIX, autoscale,
+    FQDN/endpoint access, latency and connection quality, Log Analytics queries, session
+    host health, graphics, and Teams performance.'
+  deployment: 'Guides for deploying and migrating AVD: moving from classic to current,
+    shifting resources across regions, handling regional host pool limits, client
+    deployment, and autoscaling session hosts.'
+  best-practices: Guidance on AVD performance, autoscale, cost, security, profiles
+    (FSLogix), networking/proxies, RDP Multipath, Start VM on Connect, and Windows
+    multi-session best practices.
+  decision-making: Guidance for planning AVD architecture, autoscale, costs, licensing,
+    storage, tools, deployment models, Teams support, and monitoring/optimization
+    choices.
+  security: 'Security setup for AVD: identity/SSO (Entra, AD FS, Kerberos, external
+    users), RBAC/permissions, MFA/Conditional Access, and session protections (screen
+    capture, watermarking, Purview).'
+  integrations: Using CLI/PowerShell to manage AVD, configuring MSIX app attach with
+    MSIXMGR, and integrating WebRTC calling apps with AVD multimedia redirection.
+  architecture-patterns: Designing stateless AVD host pools using ephemeral OS disks,
+    including architecture choices, performance, cost, and reliability considerations
+    for non-persistent workloads.
+  limits-quotas: RDP bandwidth needs and network usage for Azure Virtual Desktop,
+    including factors affecting bandwidth, estimating requirements, and optimizing
+    performance.
+---
+# Azure Virtual Desktop Crawl Report
 
 ## Summary
 
@@ -10,8 +40,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 147
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -31,6 +61,11 @@
 | *(Unclassified)* | 33 | 22.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
+  - Updated: 2025-08-05T08:00:00.000Z → 2026-02-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -179,11 +214,11 @@
 | [WebRTC Redirector Service](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-webrtc) | 0.25 | WebRTC Redirector Service updates; summary indicates latest updates only, not deep configuration or troubleshooting content. |
 | [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | Agent release notes; summary suggests high-level update info, not detailed configuration parameters or error-resolution mappings. |
 | [Autoscale glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-glossary) | 0.20 | Glossary of terms; primarily conceptual definitions without configuration parameters, limits, or troubleshooting mappings. |
-| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | Release notes/what's-new listing; typically feature summaries without detailed limits, configs, or troubleshooting flows. |
 | [Create Azure Service Health alerts](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-service-alerts) | 0.20 | Describes how to set up Azure Service Health alerts; primarily a conceptual/procedural overview of notifications, not detailed configuration matrices or troubleshooting mappings. |
 | [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | SxS Network Stack release notes; summary indicates update history, not concrete limits, configs, or troubleshooting content. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a partner-links/navigation page about thin clients; no detailed configuration tables, limits, or error mappings are indicated in the summary. |
 | [Deploy a sample Windows 11 desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/quickstart) | 0.15 | Quickstart deployment guide for a sample environment; focused on getting started, not detailed limits, configs, or decision matrices. |
+| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.10 | Release notes/what's-new overview without detailed limits, configuration tables, error codes, or decision matrices; primarily high-level feature announcements rather than structured expert knowledge as defined. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-glossary) | 0.10 | Glossary of terms; definitions are conceptual and not configuration, limits, or troubleshooting content. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/virtual-desktop/terminology) | 0.10 | Terminology and conceptual structure only; no concrete configuration parameters, limits, or troubleshooting mappings. |
 | [What is Azure Virtual Desktop?](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview) | 0.10 | High-level product overview of Azure Virtual Desktop; no specific limits, configs, error codes, or decision matrices. |

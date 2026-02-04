@@ -1,4 +1,34 @@
-# Site Recovery Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: 'Guidance for planning and sizing Azure Site Recovery: capacity,
+    costs, VM sizing, DR design (Hyper-V, VMware, Azure VMs, Citrix), encryption changes,
+    and when to use ASR vs Azure Migrate.'
+  deployment: Deploying Azure Site Recovery using Azure Resource Manager (ARM) templates,
+    including parameterization, automation, and sample templates for protection and
+    recovery setup.
+  configuration: 'Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and
+    physical servers: setup, networking, policies, appliances, monitoring, and disk/IP
+    settings for DR and failback.'
+  security: 'Security and access for Site Recovery: disk encryption (ADE/CMK), trusted
+    launch, NSGs, Private Link, TLS, RBAC, and migrating runbooks to managed identities.'
+  troubleshooting: 'Diagnosing and fixing Azure Site Recovery issues: VM replication,
+    network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback,
+    appliances, servers, and specific error codes.'
+  limits-quotas: 'Limits, requirements, and resource usage for Azure Site Recovery:
+    supported scenarios, high-churn VMs, shared disks, Hyper-V/VMware/physical DR
+    matrices, interoperability, and Deployment Planner limits.'
+  architecture-patterns: 'Designing DR architectures with ASR: network/ExpressRoute,
+    Traffic Manager, AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL Server, VMware
+    models, and on-prem file server protection.'
+  integrations: Automating Azure Site Recovery with PowerShell and integrating Azure
+    Automation runbooks into recovery plans for orchestrated, scriptable disaster
+    recovery workflows.
+  best-practices: Guidance on preparing VMware/physical machines for reprotection
+    and failback, and scaling Azure Site Recovery for large on-premises VMware/physical
+    deployments.
+---
+# Azure Site Recovery Crawl Report
 
 ## Summary
 
@@ -9,9 +39,9 @@
 - **Unclassified**: 76
 
 ### Incremental Update
-- **New Pages**: 35
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 167
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -31,30 +61,6 @@
 | *(Unclassified)* | 76 | 37.6% |
 
 ## Changes
-
-### New Pages
-
-- [Analyze the generated cost report](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-analyze-report)
-- [Analyze the cost estimation report](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-cost-estimation)
-- [Walkthrough-Set up disaster recovery for Azure Stack Hub](https://learn.microsoft.com/en-us/azure/site-recovery/azure-stack-site-recovery)
-- [About disaster recovery for on-premises apps](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-workload)
-- [Active Directory and DNS](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-active-directory)
-- [SQL Server](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-sql)
-- [SharePoint](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-sharepoint)
-- [Dynamics AX](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-dynamicsax)
-- [RDS](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-workload)
-- [Exchange](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-workload)
-- [SAP](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-sap)
-- [File Server](https://learn.microsoft.com/en-us/azure/site-recovery/file-server-disaster-recovery)
-- [IIS based web applications](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-iis)
-- [Citrix XenApp and XenDesktop](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-citrix-xenapp-and-xendesktop)
-- [Other workloads](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-workload)
-- [Plan capacity](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-plan-capacity-vmware)
-- [Manage the configuration server for VMware](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-manage-configuration-server)
-- [Set up a failback process server in Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-set-up-process-server-azure)
-- [Prepare for reprotection/failback](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-prepare-failback)
-- [Walkthrough-Set up replication with multi-tenancy and CSP for VMware VMs](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-multi-tenant-csp-disaster-recovery)
-- *...and 15 more*
 
 ## Classified Pages
 

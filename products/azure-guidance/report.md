@@ -1,4 +1,28 @@
-# Guidance Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance to choose the right Azure services, models, and architectures
+    (vs AWS/GCP), including compute, data/AI, containers/AKS, networking, storage,
+    DR, and hybrid/migration options.
+  best-practices: Best practices for designing, operating, and hardening Azure workloads
+    (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup,
+    resilience, and performance.
+  security: 'Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS,
+    Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft
+    Entra vs AWS options.'
+  architecture-patterns: End-to-end Azure solution architectures and patterns for
+    mission-critical, hybrid, data/analytics, IoT, mainframe migration, SAP, VDI,
+    and microservices workloads, including HA/DR and networking.
+  troubleshooting: Diagnosing and fixing AKS cluster, node, pod, networking, registry,
+    and admission issues, plus cross-region data platform failures and hybrid VPN
+    gateway connectivity problems.
+  deployment: 'Designing and automating Azure deployments: CI/CD for AKS and microservices,
+    APIOps, Terraform/Bicep scripts, landing zone options, and mission‑critical workload
+    rollout and testing.'
+  configuration: Configuring GitOps for AKS using Flux/Argo CD and setting up Azure
+    Functions monitoring pipelines using Event Hubs for logs and metrics.
+---
+# Azure Guidance Crawl Report
 
 ## Summary
 
@@ -10,8 +34,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 360
+- **Updated Pages**: 0
+- **Unchanged**: 364
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-guidance/azure-guidance.csv`
 
@@ -29,17 +53,6 @@
 | *(Unclassified)* | 100 | 27.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-01-26T18:34:00.000Z → 2026-02-03T06:02:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/)
-  - Updated: 2023-12-13T08:00:00.000Z → 2026-02-03T06:02:00.000Z
-- [Busy Front End](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/)
-  - Updated: 2025-09-16T05:03:00.000Z → 2026-02-03T06:02:00.000Z
-- [Improper Instantiation](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/)
-  - Updated: 2022-12-16T18:32:00.000Z → 2026-02-03T06:02:00.000Z
 
 ## Classified Pages
 

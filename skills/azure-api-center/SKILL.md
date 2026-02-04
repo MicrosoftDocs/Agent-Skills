@@ -20,11 +20,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L29-L33 | Using Azure API Center’s built-in linting/analysis to validate API definitions, enforce design rules, interpret lint results, and improve API quality and consistency. |
-| Security | L34-L38 | Configuring API authorization in Azure API Center, including setting up auth providers, securing access to APIs, and managing authorization settings for different environments. |
-| Configuration | L39-L46 | Configuring Azure API Center portals and tools: portal settings, managed portal setup, VS Code portal view, and self-managed API linting integration. |
-| Integrations & Coding Patterns | L47-L58 | Patterns and tools to integrate API Center with VS Code, GitHub Copilot, Copilot Studio, Azure CLI, Logic Apps/Teams, and sync APIs from Azure API Management and Amazon API Gateway |
-| Deployment | L59-L63 | Automating API Center registration via GitHub Actions CI/CD and deploying/self-hosting the Azure API Center portal infrastructure and runtime. |
+| Best Practices | L29-L33 | Guidance on enabling and using built-in linting and analysis in Azure API Center to automatically validate API definitions, enforce standards, and improve API quality. |
+| Security | L34-L38 | Configuring API authorization in Azure API Center, including setting auth settings, securing access to APIs, and integrating with identity providers. |
+| Configuration | L39-L46 | Configuring API Center portals and tools: customize portal settings, set up managed portals, enable the VS Code portal view, and configure self-managed API linting. |
+| Integrations & Coding Patterns | L47-L58 | How to integrate API Center with tools like VS Code, GitHub Copilot, Copilot Studio, Azure CLI, Logic Apps, Teams, and sync APIs from API Management and Amazon API Gateway |
+| Deployment | L59-L63 | Automating Azure API Center registration via GitHub Actions CI/CD and deploying/self-hosting the API Center developer portal configuration and runtime. |
 
 ### Best Practices
 | Topic | URL |

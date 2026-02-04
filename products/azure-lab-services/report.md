@@ -1,4 +1,35 @@
-# Lab Services Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Managing access and security for labs: RBAC roles, lab creator/owner
+    assignment, Azure Policy governance, VM password resets, firewall rules, and restricting
+    VM sizes.'
+  configuration: 'Configuring Azure Lab Services labs and lab plans: regions, images,
+    VM shutdown/schedules, networking (VNets, advanced), galleries, GPU/nested virtualization,
+    and policy-based controls.'
+  best-practices: Best practices for building lab images, enabling nested virtualization,
+    tuning Linux RDP performance, and configuring Windows template VMs for Azure Lab
+    Services.
+  limits-quotas: Managing VM capacity limits, core quotas and increase requests, user
+    access and lab usage hours, plus VM inactivity and auto-deletion behavior in Azure
+    Lab Services.
+  architecture-patterns: Azure Lab Services architecture basics and supported networking
+    designs for lab plans, including VNet integration, connectivity options, and design
+    considerations.
+  decision-making: Guidance on choosing lab accounts vs lab plans, planning migrations
+    (physical labs, service retirement), selecting GPU VM sizes, and when to move
+    between Azure Lab Services and DevTest Labs.
+  integrations: Integrating Lab Services with LMS/Teams, connecting labs to networks,
+    and automating lab creation/management via Bicep, PowerShell, Python SDK, and
+    Linux X2Go access.
+  deployment: Creating and migrating labs and lab plans, including importing Windows/Linux
+    images from VMs or physical labs, and quickly setting up and publishing Azure
+    Lab Services environments
+  troubleshooting: Diagnosing and fixing Azure Lab Services VM connectivity and access
+    issues, including lab creation failures, network problems, and reset/recovery
+    options for lab VMs.
+---
+# Azure Lab Services Crawl Report
 
 ## Summary
 

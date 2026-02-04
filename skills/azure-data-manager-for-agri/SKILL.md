@@ -20,10 +20,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L28-L32 | Guidance on API throttling behavior, rate limits, and strategies to plan, monitor, and manage request quotas in Azure Data Manager for Agriculture. |
-| Security | L33-L37 | Configuring Azure Data Manager for Agriculture with Azure Private Link, including setup steps, network isolation, and securing access via private endpoints. |
-| Configuration | L38-L43 | Configuring diagnostics and logging, and understanding/using Azure Event Grid event schemas and events emitted by Azure Data Manager for Agriculture. |
-| Integrations & Coding Patterns | L44-L54 | Patterns and setup for integrating farm activities, sensors, ISV apps, and plant tissue data with Azure Data Manager for Agri, plus using its events via Event Grid. |
+| Limits & Quotas | L28-L32 | Guidance on API throttling behavior, rate limits, quotas, and strategies to plan, monitor, and manage request throttling in Azure Data Manager for Agriculture. |
+| Security | L33-L37 | Configuring Azure Data Manager for Agriculture with Private Link endpoints, including network isolation, secure access patterns, and integration with virtual networks. |
+| Configuration | L38-L43 | Configuring diagnostics and logging for Azure Data Manager for Agriculture and understanding/using its Azure Event Grid event schemas for integrations and monitoring. |
+| Integrations & Coding Patterns | L44-L54 | Patterns and setup for integrating ADMA with farm activity providers, sensors, ISV apps, Event Grid, and storing ag data like plant tissue nutrients. |
 
 ### Limits & Quotas
 | Topic | URL |

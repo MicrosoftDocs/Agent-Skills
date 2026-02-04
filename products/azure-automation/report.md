@@ -1,4 +1,31 @@
-# Automation Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Securing Azure Automation: identities (system/user-assigned, Entra ID),
+    RBAC, encryption, private endpoints, STIG/policy compliance, and secure runbook/auth
+    configuration.'
+  best-practices: 'Best practices for designing, structuring, and managing Azure Automation
+    runbooks/DSC: modular runbooks, error handling, streams, watcher tasks, DR, compliance
+    remediation, and module management.'
+  integrations: Patterns for connecting runbooks to AWS, Azure alerts, ARM, webhooks,
+    email (SendGrid), Office 365, Azure SQL, and using SDKs/managed identity for automated
+    provisioning and management
+  configuration: 'Configuring Azure Automation accounts: runbooks, State Configuration/DSC,
+    Hybrid Runbook Workers, networking, logging/monitoring, assets (credentials, certs,
+    variables), schedules, source control, and Python/PowerShell modules'
+  deployment: Using Azure Automation State Configuration with Chocolatey to set up
+    continuous deployment of software and configuration across Windows machines
+  limits-quotas: Azure Automation and DSC limits, quotas, version history, and support
+    matrices for features like Change Tracking and Inventory, including per-subscription
+    capacity and configuration constraints.
+  decision-making: Guidance for planning and executing Azure Automation migrations
+    (SC Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity)
+    and choosing how to start runbooks
+  troubleshooting: 'Diagnosing and fixing Azure Automation issues: runbook failures,
+    DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors,
+    shared resources, and collecting diagnostics for support.'
+---
+# Azure Automation Crawl Report
 
 ## Summary
 

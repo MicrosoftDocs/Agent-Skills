@@ -20,10 +20,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L28-L32 | Diagnosing and resolving common Azure SRE Agent problems, including setup failures, connectivity issues, configuration errors, and runtime or monitoring-related faults. |
-| Security | L33-L41 | Managing SRE Agent identities, RBAC roles, permissions, run modes/consent, and understanding its data residency, privacy, and access control model. |
-| Configuration | L42-L50 | Configuring Azure SRE Agent behavior: code interpreter, memory/incident context, scheduled tasks, and creating/operating specialized subagents. |
-| Integrations & Coding Patterns | L51-L57 | Integrating Azure SRE Agent with repos and external APIs, adding custom Python tools, and connecting to custom MCP servers for extended automation and workflows |
+| Troubleshooting | L28-L32 | Diagnosing and fixing common Azure SRE Agent problems, including connectivity, configuration, deployment, runtime errors, and typical failure scenarios. |
+| Security | L33-L41 | Managing SRE Agent identities, RBAC roles, permissions, run modes/consent, and understanding its data residency, privacy, and access control model |
+| Configuration | L42-L50 | Configuring SRE Agent runtime: code interpreter, memory/incident context, scheduled tasks, and creating/operating subagents for specialized workflows |
+| Integrations & Coding Patterns | L51-L56 | Patterns for integrating with Git repos, adding custom Python tools, and connecting to external MCP servers to extend Azure SRE Agent’s capabilities. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -52,6 +52,5 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Integrate Azure SRE Agent with source code repositories | https://learn.microsoft.com/en-us/azure/sre-agent/code-repository-connect |
-| Configure connectors to external services in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connectors |
 | Implement custom Python tools in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/custom-logic-python |
 | Connect Azure SRE Agent to custom MCP servers | https://learn.microsoft.com/en-us/azure/sre-agent/custom-mcp-server |

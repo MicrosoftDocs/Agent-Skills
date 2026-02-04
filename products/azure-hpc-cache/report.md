@@ -1,4 +1,30 @@
-# Azure HPC Cache Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Client access control, encryption with customer-managed keys, and overall
+    security configuration options and best practices for Azure HPC Cache
+  configuration: 'Configuring and operating Azure HPC Cache: CLI setup, networking/DNS/NTP,
+    directory services, namespace paths, storage targets, lifecycle/space management,
+    monitoring, and updates.'
+  architecture-patterns: 'Designing Azure HPC Cache architectures: choosing cache/usage
+    models, DNS-based client load balancing, aggregated namespace layouts, and regional
+    redundancy/failover strategies.'
+  integrations: Using HPC Cache with NFS and Azure NetApp Files, mounting clients,
+    and data ingest/write-back tools (flush_file, manual copy, msrsync, parallelcp)
+    for performance-optimized workflows.
+  troubleshooting: Diagnosing and resolving Azure HPC Cache target issues, including
+    Blob firewall access problems and NFS storage target creation and configuration
+    errors.
+  best-practices: Best practices for moving and pre-loading data into Azure HPC Cache
+    (Blob, ADLS-NFS), including performance tuning, usage limits, and strategies to
+    optimize cache warm-up and throughput.
+  deployment: Checking environment and networking prerequisites for Azure HPC Cache,
+    and how to recreate, move, or migrate cache workloads across regions.
+  decision-making: Guidance on when Azure HPC Cache is appropriate, evaluating workloads,
+    performance patterns, data sources, and scenarios where it improves throughput
+    or isn’t a good fit.
+---
+# Azure Hpc Cache Crawl Report
 
 ## Summary
 

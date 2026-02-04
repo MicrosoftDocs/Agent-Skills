@@ -1,4 +1,23 @@
-# Azure Native Integrations Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Guides for integrating Confluent Cloud with Azure compute (AKS, VMs,
+    Functions, etc.), including connectivity setup, authentication, and data streaming
+    patterns.
+  security: Managing security, SSO, roles, and monitoring for Azure-integrated partner
+    services like Confluent, Datadog, Dynatrace, Informatica IDMC, and NGINXaaS.
+  troubleshooting: Diagnosing and resolving common setup, configuration, and runtime
+    issues for Azure Native integrations with Confluent Cloud, Datadog, Dynatrace,
+    Elastic, and New Relic
+  configuration: Configuring and managing Azure integrations and runtime settings
+    for Datadog, Dynatrace, Elastic, Informatica serverless, and Cloud NGFW networking/NAT/logging.
+  decision-making: Guidance on evaluating and signing up for the Azure Dynatrace free
+    trial, including enrollment steps, prerequisites, and considerations before committing.
+  architecture-patterns: Architectural guidance for deploying and integrating Cloud
+    NGFW firewalls behind Azure Application Gateway, including network design, routing,
+    and security best practices.
+---
+# Azure Partner Solutions Crawl Report
 
 ## Summary
 

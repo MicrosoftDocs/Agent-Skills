@@ -1,4 +1,35 @@
-# Batch Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
+    RBAC), keys and certificates, encryption, private endpoints/VNet, NSP, Key Vault
+    access, and Azure Policy controls.'
+  configuration: Configuring and managing Azure Batch pools, nodes, tasks, networking,
+    autoscale, images, security, and event/diagnostic schemas using CLI, PowerShell,
+    containers, and app/data deployment.
+  deployment: Automating Azure Batch deployments and end-to-end job runs using Azure
+    Pipelines and CLI templates, including configuration, orchestration, and CI/CD
+    workflows.
+  decision-making: Guidance on choosing Batch VM sizes/images, using Spot and ephemeral
+    disks, controlling costs, and migrating pools/images and node communication to
+    newer Azure Batch features.
+  integrations: Patterns and code for integrating Batch with containers, .NET/JS SDKs,
+    Azure Storage, Application Insights, and mounting Azure Files/virtual file systems
+    for task I/O.
+  best-practices: Guidance on optimizing Batch jobs for performance, scale, monitoring,
+    security, MPI and concurrent workloads, and persisting task outputs to durable
+    storage.
+  troubleshooting: Diagnosing and fixing Azure Batch job, task, pool, and node errors,
+    including common failure patterns, error codes, and strategies to prevent and
+    handle runtime issues.
+  limits-quotas: Batch account limits for cores, pools, nodes, jobs, tasks, and how
+    quotas work, request increases, and plan deployments within Azure Batch service
+    constraints.
+  architecture-patterns: Designing Azure Batch render farm burst architectures and
+    choosing storage, caching, and data movement patterns for high-performance rendering
+    workloads
+---
+# Azure Batch Crawl Report
 
 ## Summary
 

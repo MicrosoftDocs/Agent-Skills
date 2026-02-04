@@ -1,4 +1,32 @@
-# Health Data Services Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Configuring secure access to FHIR/DICOM/Health Data Services: Entra app
+    registration, RBAC, tokens, network/Private Link, CMK, external/B2C identity,
+    SMART on FHIR, privacy, and compliance policies.'
+  limits-quotas: Autoscaling behavior, throughput limits, and configuration for Azure
+    API for FHIR/FHIR service, including how scaling works, constraints, and how to
+    tune autoscale settings.
+  troubleshooting: 'Diagnosing and fixing FHIR/Health Data Services issues: token
+    and identity errors, $convert-data failures, event problems, MedTech deployment/runtime
+    issues, logs, and known platform bugs.'
+  deployment: Guides for deploying Azure Healthcare APIs (FHIR, DICOM, MedTech) using
+    ARM/Bicep, Azure portal, and integrating DICOM with Azure Data Lake.
+  integrations: 'Patterns and code for integrating FHIR/DICOM/MedTech with Azure:
+    REST and SMART on FHIR, bulk export/delete, $operations, validation, Synapse/Data
+    Lake/ADF, and language-specific API examples.'
+  configuration: 'Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS,
+    security/keys, logging, events, search/reindex, bulk import/export, versioning,
+    profiles, and Blue Button/Da Vinci setups.'
+  architecture-patterns: Architecting Azure Healthcare APIs (FHIR & DICOM) for DR,
+    data lake integration, and end-to-end digital pathology imaging workflows.
+  decision-making: Guidance for planning and executing migrations from Azure API for
+    FHIR/MedTech to newer Health Data Services, plus regional availability and deprecation/retirement
+    FAQs.
+  best-practices: Best practices for encrypting FHIR and DICOM data with customer-managed
+    keys (CMK) and tuning Azure FHIR service performance, scalability, and throughput.
+---
+# Azure Healthcare Apis Crawl Report
 
 ## Summary
 
@@ -10,8 +38,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 209
+- **Updated Pages**: 0
+- **Unchanged**: 210
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-healthcare-apis/azure-healthcare-apis.csv`
 
@@ -31,11 +59,6 @@
 | *(Unclassified)* | 77 | 36.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-01-23T23:11:00.000Z → 2026-02-03T18:20:00.000Z
 
 ## Classified Pages
 

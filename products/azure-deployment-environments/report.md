@@ -1,3 +1,23 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  best-practices: Guidance on organizing Azure Deployment Environments (ADE) catalogs
+    and templates to maximize cache reuse, reduce deployment time, and improve template
+    management efficiency.
+  security: 'RBAC and identity setup for ADE: planning and assigning ADE roles, configuring
+    managed identities, and authenticating to ADE REST APIs via Azure CLI.'
+  configuration: Configuring ADE dev centers, projects, catalogs, and environment
+    types, using environment.yaml, CLI/ARM setup, and referencing environment variables
+    in custom images.
+  integrations: Using custom container images with Azure Deployment Environments,
+    including building, publishing, and managing images via ADE CLI workflows
+  troubleshooting: Diagnosing and fixing Azure Deployment Environments failures when
+    deploying custom images, including common error causes, logs to check, and remediation
+    steps.
+  deployment: Setting up CI/CD to deploy Azure Deployment Environments using Azure
+    Pipelines or GitHub Actions, including workflow configuration and integration
+    steps.
+---
 # Azure Deployment Environments Crawl Report
 
 ## Summary
