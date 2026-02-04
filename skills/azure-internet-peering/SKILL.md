@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L25-L28 | Diagnosing and resolving issues with Azure Internet Peering prefix validation, including prefix ownership, routing, and policy compliance requirements. |
+| Troubleshooting | L25-L28 | Diagnosing and resolving issues with Azure Internet Peering prefix requirements, including validation failures, configuration problems, and how to meet Microsoft’s peering criteria. |
 
 ### Troubleshooting
 | Topic | URL |

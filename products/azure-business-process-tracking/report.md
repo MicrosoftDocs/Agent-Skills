@@ -1,3 +1,13 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: Deploying business processes and tracking profiles to Azure, and setting
+    up CI/CD pipelines (build, release, automation) for Business Process Tracking
+    deployments.
+  integrations: Designing Logic Apps workflows that represent business process stages,
+    linking process milestones to workflow steps, and tracking execution across integrated
+    systems
+---
 # Azure Business Process Tracking Crawl Report
 
 ## Summary

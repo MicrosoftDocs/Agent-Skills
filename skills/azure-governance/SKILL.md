@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L42 | Diagnosing and fixing Azure governance issues: Blueprints deployment errors, management group SDK failures, Policy non-compliance/Kubernetes add-on issues, and Resource Graph query/Power BI connector problems. |
-| Best Practices | L43-L49 | Guidance on safely designing and testing Azure Policy (including arrays) and writing efficient Azure Resource Graph queries that avoid throttling and performance issues |
-| Decision Making | L50-L56 | Guidance on choosing Azure Policy for VMs, migrating from Automanage Best Practices to Policy, and deciding when to use ARG GET/LIST vs Query for resource governance. |
-| Limits & Quotas | L57-L64 | Query limits, throttling, pagination, and handling large result sets when using Azure Resource Graph via REST, PowerShell, or Power BI. |
-| Security | L65-L129 | Azure Policy and Blueprints for security/compliance: mapping standards (CIS, NIST, ISO, FedRAMP, HIPAA, PCI, SWIFT, etc.), OS baselines, MFA enforcement, and protecting resource hierarchy. |
-| Configuration | L130-L169 | Configuring Azure Policy and Blueprints: JSON definitions, effects, initiatives, exemptions, remediation, compliance data, Resource Graph queries, and governance for tags, identities, and resource types. |
-| Integrations & Coding Patterns | L170-L203 | Implementing Azure Policy and Blueprints via code (Bicep/ARM/Terraform/SDK/PowerShell), querying compliance with Resource Graph, and integrating policy events with Event Grid, Gatekeeper, and alerts |
-| Deployment | L204-L214 | Deploying and enforcing Azure Policy and blueprints (CAF, ISO 27001, SWIFT), using policy-as-code workflows, exports, DevOps pipelines, and safe deployment practices. |
+| Troubleshooting | L32-L42 | Diagnosing and fixing errors in Azure Blueprints, Policy (incl. AKS add-on), management group SDK, and Resource Graph (queries, alerts, Power BI connector) |
+| Best Practices | L43-L49 | Best practices for designing and testing Azure Policy (including arrays) and writing efficient Azure Resource Graph queries that avoid throttling and performance issues. |
+| Decision Making | L50-L56 | Guidance on choosing Azure Policy for VMs, migrating from Automanage Best Practices to Policy, and deciding when to use ARG GET/LIST vs the Query service |
+| Limits & Quotas | L57-L64 | Working with Azure Resource Graph at scale: avoiding throttling, handling large result sets, pagination (incl. PowerShell), and querying via the Power BI connector. |
+| Security | L65-L129 | Using Azure Policy, Blueprints, and guest configuration to enforce security baselines, MFA, resource protection, and map Azure to standards like CIS, NIST, ISO, FedRAMP, HIPAA, PCI, and regional regs. |
+| Configuration | L130-L169 | Authoring and configuring Azure Policy/Blueprint JSON, effects, remediation, exemptions, compliance data, and Resource Graph queries for governance and configuration enforcement |
+| Integrations & Coding Patterns | L170-L203 | Patterns and code samples for creating, assigning, and automating Azure Policy/Blueprints and Resource Graph queries using PowerShell, CLI, ARM/Bicep, Terraform, SDKs, VS Code, Event Grid, and Logic Apps |
+| Deployment | L204-L214 | Deploying Azure governance at scale: CAF and compliance blueprints, policy-as-code workflows, safe deployment practices, and enforcing Azure Policy via DevOps pipelines. |
 
 ### Troubleshooting
 | Topic | URL |

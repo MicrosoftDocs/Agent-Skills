@@ -1,4 +1,11 @@
-# Internet Peering Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  troubleshooting: Diagnosing and resolving issues with Azure Internet Peering prefix
+    requirements, including validation failures, configuration problems, and how to
+    meet Microsoft’s peering criteria.
+---
+# Azure Internet Peering Crawl Report
 
 ## Summary
 

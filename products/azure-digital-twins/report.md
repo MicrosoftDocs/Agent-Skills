@@ -1,3 +1,26 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Using APIs/SDKs, CLI, and query language to manage twins/models/graph,
+    integrate with IoT Hub, Data Explorer, Power Platform, and handle events, history,
+    and DTDL parsing/conversion.
+  best-practices: Designing and extending DTDL ontologies and tagging patterns for
+    Azure Digital Twins models, including model structure, reuse, metadata tagging,
+    and organization strategies.
+  limits-quotas: Details on Azure Digital Twins service limits, quotas, and how query
+    units (QUs) are consumed, calculated, and constrained when running queries.
+  security: 'Securing Azure Digital Twins: RBAC and access control, Entra app registration
+    and client auth, private endpoints/Private Link, and handling customer personal
+    data.'
+  configuration: Setting up event endpoints, routes, and filters, plus configuring
+    monitoring, metrics, and diagnostic logging for Azure Digital Twins instances
+    and integrations.
+  decision-making: Guidance for migrating from older Azure Digital Twins preview control
+    plane APIs to current APIs, including breaking changes, mapping, and update steps.
+  troubleshooting: Diagnosing and fixing Azure Digital Twins errors (403/404, CLI
+    parse, Explorer auth), performance issues, known platform problems, and using
+    Azure Resource Health for service-level troubleshooting
+---
 # Azure Digital Twins Crawl Report
 
 ## Summary

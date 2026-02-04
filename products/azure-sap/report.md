@@ -1,4 +1,34 @@
-# SAP on Azure Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring SAP on Azure: automation (Terraform/Ansible/BOM), naming
+    and tools, VIS/AMS monitoring and alerts, and detailed HA/DR setups for HANA/NetWeaver/Db2
+    on Linux/Windows with ANF, NFS, and clusters.'
+  deployment: 'Deploying and managing SAP on Azure: automation framework setup, scripts
+    and pipelines, HA/DR topologies, NetWeaver/BusinessObjects/Business One deployments,
+    and VM/scale set infrastructure.'
+  security: 'Security and identity for SAP on Azure: Key Vault secrets, RBAC, TLS,
+    private endpoints, NFS encryption, RISE identity, and Entra ID/SAP Cloud Identity
+    access design.'
+  architecture-patterns: 'Designing SAP architectures on Azure: VM/DBMS choices, HA/DR
+    patterns, HANA/NetWeaver availability, latency/placement, workload zones, and
+    RISE connectivity options.'
+  integrations: Patterns and scripts for integrating SAP with Azure (Monitor, VIS,
+    Data Factory, PowerShell, Ansible) plus connecting SAP to services like Salesforce,
+    Exchange, Blob, Universal Print, and RISE.
+  decision-making: Guidance on choosing Azure infrastructure, automation, VMs, storage,
+    hosting, data extraction, and HANA tiering options to design supported, optimized
+    SAP deployments on Azure.
+  best-practices: 'Best practices for SAP on Azure: config/quality checks, HA/DR testing,
+    and optimal VM storage design using Premium SSD, SSD v2, Ultra Disk, Azure Files
+    SMB/NFS for HANA and NetWeaver.'
+  troubleshooting: 'Diagnosing and fixing SAP on Azure issues: deployment automation
+    errors, AMS/SAP Insights workload problems, VM scale set failures, and Azure VM
+    Extension for SAP troubleshooting.'
+  limits-quotas: FAQ, supported scenarios, and technical constraints (resource limits,
+    scale, supported regions/providers) for Azure Monitor for SAP solutions.
+---
+# Azure Sap Crawl Report
 
 ## Summary
 

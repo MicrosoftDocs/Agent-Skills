@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L42 | Debugging APIM policies and requests, handling errors, diagnosing SNAT/timeouts, fixing Key Vault/custom domain cert issues, and using Diagnose and Solve for APIM problems |
-| Best Practices | L43-L52 | Best practices for scaling, throttling, security (OWASP API Top 10), SSE configuration, self-hosted gateway on Kubernetes, and testing the self-hosted developer portal. |
-| Decision Making | L53-L64 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI/CD planning, VNet choices, monetization features, and migrating from Amazon API Gateway. |
-| Architecture & Design Patterns | L65-L72 | Architectural patterns for placing APIM behind VNets, App Gateway, Front Door, and AKS, plus guidance on sustainable gateway configuration and design choices. |
-| Limits & Quotas | L73-L91 | Configuring API Management limits: rate/quotas per key, concurrency, OpenAI/LLM token caps, service quotas, self-hosted gateway limits, and request/response schema validation. |
-| Security | L92-L125 | Securing API Management and its portals: authN/Z with Entra ID/B2C/OAuth/JWT, client certs and mTLS, managed identities, TLS/ciphers, CORS, DDoS/Defender, compliance, and LLM safety policies. |
-| Configuration | L126-L231 | Configuring Azure API Management behavior: policies, caching, logging/metrics, networking/VNet, domains, security, GraphQL/gRPC/WebSocket/LLM features, imports, and self-hosted gateway settings. |
-| Integrations & Coding Patterns | L232-L264 | Patterns and how-tos for integrating APIM with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, App Insights, portals, and exporting/importing APIs to other tools and platforms. |
-| Deployment | L265-L285 | Deploying APIM gateways/portals across regions and networks, self-hosted gateway setups (K8s, Docker, Arc, AKS, Container Apps), DR/backup/restore, soft-delete recovery, and availability options. |
+| Troubleshooting | L33-L42 | Debugging APIM policies and requests, handling errors, diagnosing SNAT/timeouts, fixing Key Vault/custom domain cert issues, and using Diagnose and Solve for runtime problems. |
+| Best Practices | L43-L52 | Scaling, throttling, security hardening (OWASP Top 10), SSE setup, and production/self-hosted gateway & dev portal practices for Azure API Management. |
+| Decision Making | L53-L64 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD planning, VNet choices, monetization features, and migrating from Amazon API Gateway |
+| Architecture & Design Patterns | L65-L72 | Architectural patterns for placing APIM behind VNets, App Gateway, Front Door, or AKS, plus guidance on sustainable gateway configuration and design choices. |
+| Limits & Quotas | L73-L91 | Setting and enforcing API limits: rate/quotas per key, concurrency, OpenAI token caps, service-wide limits, self-hosted gateway constraints, and request/response validation policies. |
+| Security | L92-L125 | Securing API Management and its portals: authN/Z with Entra ID/B2C/OAuth/JWT, client certs & mTLS, managed identities, TLS/ciphers, CORS, DDoS/Defender, compliance, and LLM content safety. |
+| Configuration | L126-L230 | Configuring Azure API Management behavior: policies, caching (response, key, semantic), networking/VNet, domains, logging/metrics, imports (OpenAPI/GraphQL/gRPC/SOAP), self-hosted gateway, and workspaces. |
+| Integrations & Coding Patterns | L231-L264 | Patterns and examples for integrating APIM with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, logging/monitoring, portals, and external backends via policies and exports |
+| Deployment | L265-L285 | Deploying APIM across regions and networks, self-hosted gateways (K8s, Docker, Arc, AKS, Container Apps), DR/backup/restore, soft-delete recovery, and developer portal deployment options. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -134,7 +134,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Set up Azure Monitor logging for LLM APIs in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-llm-logs |
 | Configure named values in API Management policies | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-properties |
 | Configure and use Azure API Management policies | https://learn.microsoft.com/en-us/azure/api-management/api-management-policies |
-| Use policy expressions in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions |
 | Implement custom key-based caching in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-cache-by-key |
 | Configure internal VNet mode for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-internal-vnet |
 | Emit Azure OpenAI token metrics from API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-emit-token-metric-policy |
@@ -239,6 +238,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Send messages to Azure Service Bus from API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-send-service-bus |
 | Delegate user registration and subscriptions in API portal | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-setup-delegation |
 | Log API Management traffic to Event Hubs and Moesif | https://learn.microsoft.com/en-us/azure/api-management/api-management-log-to-eventhub-sample |
+| Use policy expressions in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions |
 | Call external services from API Management policies | https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-send-request |
 | Import Microsoft Foundry AI APIs into Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api |
 | Import Azure OpenAI APIs as REST in API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-api-from-specification |

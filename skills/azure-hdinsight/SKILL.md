@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L129 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN errors, performance, disk/CPU problems, and known operational bugs. |
-| Best Practices | L130-L167 | Performance, scaling, security, and configuration best practices for HDInsight clusters and workloads (Hadoop, Hive, HBase, Kafka, Spark), including storage, migration, and autoscale tuning. |
-| Decision Making | L168-L186 | Guidance on planning and migrating HDInsight clusters: ETL design, Hive/MapReduce choices, Kafka/HBase strategies, capacity/VM sizing, storage/networking, backup/replication, and version upgrades. |
-| Architecture & Design Patterns | L187-L196 | HDInsight solution design: security/ESP, VNet layout, Hadoop migration patterns, HA and business continuity architectures, and scaling Kafka clusters with managed disks. |
-| Limits & Quotas | L197-L203 | Node size/count limits, using external Hive/Oozie metastores, and requesting/managing HDInsight CPU core quota increases and capacity limits. |
-| Security | L204-L246 | Securing HDInsight clusters: identity/auth (Entra, MSI, ID Broker), Ranger/ESP, TLS/encryption, SSH/Hive/Kafka security, and network controls (Private Link, NSGs, firewalls, RBAC). |
-| Configuration | L247-L299 | Configuring HDInsight clusters: networking, security, autoscale, Ambari/Hive/HBase/Kafka/Spark settings, Jupyter/VS Code tools, logging/monitoring, SSH access, and performance tuning. |
-| Integrations & Coding Patterns | L300-L376 | Patterns and code samples for integrating HDInsight (Hive, Spark, Kafka, HBase, Sqoop) with tools/services (Excel, Power BI, SQL, Cosmos DB, IoT, REST, SDKs) and managing clusters programmatically |
-| Deployment | L377-L386 | Guides for deploying and upgrading HDInsight/HBase clusters, including migrations between versions/storage accounts, ARM/REST/template-based creation, and automating cluster lifecycle with runbooks. |
+| Troubleshooting | L33-L129 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN errors, performance, disk/CPU, and common operational failures. |
+| Best Practices | L130-L167 | Best practices for securing, configuring, tuning, scaling, and migrating HDInsight clusters and workloads (Hadoop, Hive, HBase, Kafka, Spark), including performance and reliability guidance |
+| Decision Making | L168-L186 | Guidance on HDInsight architecture choices: cluster sizing, storage, networking, ETL tools, HBase/Kafka options, and migration/upgrade paths between HDInsight versions. |
+| Architecture & Design Patterns | L187-L196 | HDInsight solution architectures: security (ESP), Hadoop migration, business continuity/HA, virtual network design, and scaling Kafka clusters with managed disks. |
+| Limits & Quotas | L197-L203 | Node size/count limits, using external Hive/Oozie metastores, and requesting/managing HDInsight CPU core quota increases. |
+| Security | L204-L246 | Securing HDInsight clusters: identity and auth (Entra, MSI, Ranger, LDAP), encryption at rest/in transit, Kafka/Hive/Spark security, and network lockdown (Private Link, NSGs, firewalls, RBAC). |
+| Configuration | L247-L299 | Configuring and tuning HDInsight clusters: networking, security, autoscale, Ambari/Hive/HBase/Kafka/Spark settings, SSH/Jupyter/Zeppelin access, logging/monitoring, and cluster customization. |
+| Integrations & Coding Patterns | L300-L374 | Patterns and code samples for connecting HDInsight (Hive, Spark, Kafka, HBase, Sqoop) to tools and services (Power BI, Excel, SQL, Cosmos DB, IoT, REST, SDKs) and automating cluster/jobs. |
+| Deployment | L375-L384 | Guides for deploying and upgrading HDInsight/HBase clusters, including migrations across versions/storage, ARM/REST/template-based creation, and automating cluster lifecycle with runbooks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -303,7 +303,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Ambari email alerts with SendGrid on HDInsight | https://learn.microsoft.com/en-us/azure/hdinsight/apache-ambari-email |
 | Stream from Kafka to Azure Cosmos DB with Spark | https://learn.microsoft.com/en-us/azure/hdinsight/apache-kafka-spark-structured-streaming-cosmosdb |
 | Use Azure CLI script samples for HDInsight tasks | https://learn.microsoft.com/en-us/azure/hdinsight/azure-cli-samples |
-| Query HDInsight Hive from Excel using ODBC | https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-excel-hive-odbc-driver |
 | Connect Excel to HDInsight data with Power Query | https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-excel-power-query |
 | Query HDInsight Hive using the JDBC driver | https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-hive-jdbc-driver |
 | Connect Power BI to HDInsight Hive via ODBC | https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-hive-power-bi |
@@ -351,7 +350,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Submit MapReduce jobs to Entra-enabled HDInsight via REST API | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-with-entra-authentication/run-map-reduce-rest-jobs |
 | Submit Spark jobs to Entra-enabled HDInsight via Livy REST API | https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-with-entra-authentication/run-spark-jobs-using-rest-api |
 | Visualize HDInsight Interactive Query data with Power BI | https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hadoop-connect-hive-power-bi-directquery |
-| Query HDInsight Hive using Microsoft ODBC driver and PowerShell | https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-query-odbc-driver-powershell |
 | Integrate Spark and Hive using Hive Warehouse Connector | https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-warehouse-connector |
 | Run Spark operations supported by Hive Warehouse Connector | https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-warehouse-connector-operations |
 | Use Hive Warehouse Connector with Zeppelin via Livy | https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-warehouse-connector-zeppelin |

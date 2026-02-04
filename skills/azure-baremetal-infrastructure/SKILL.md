@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L25-L28 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and compatibility considerations for deployment planning. |
+| Decision Making | L25-L28 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and placement considerations for Nutanix Cloud Clusters on Azure. |
 
 ### Decision Making
 | Topic | URL |

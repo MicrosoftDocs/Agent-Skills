@@ -1,4 +1,20 @@
-# Avere vFXT for Azure Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring vFXT clusters: backend storage, control panel settings,
+    DNS/load balancing, client mounts, node lifecycle, and automatic support data
+    upload.'
+  best-practices: Guidance on optimizing Avere vFXT performance (ingest and cluster
+    tuning) and designing disaster recovery strategies for resilient Avere vFXT workflows.
+  decision-making: Guidance on sizing and planning Avere vFXT clusters in Azure, estimating
+    performance/capacity needs, and evaluating if Avere vFXT is suitable for specific
+    workloads.
+  security: Creating a custom Azure RBAC role with the exact permissions needed to
+    deploy and manage Avere vFXT clusters securely.
+  limits-quotas: Preparing Azure subscriptions for Avere vFXT, including required
+    quotas, limits, permissions, and configuration steps to ensure deployments succeed.
+---
+# Azure Avere Vfxt Crawl Report
 
 ## Summary
 

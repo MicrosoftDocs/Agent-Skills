@@ -1,3 +1,22 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Auth, JWT token contracts, key rotation, CMK setup, encryption design,
+    and secure access patterns for protecting Azure Fluid Relay data and containers.
+  best-practices: Guidance on managing Fluid containers (lifecycle, scaling, performance)
+    and setting up automated tests and test environments for Azure Fluid Relay apps.
+  configuration: Version compatibility between Fluid Framework and Fluid Relay, deleting
+    Fluid Relay containers via CLI, and configuring AzureClient local mode for development/testing.
+  integrations: Implementing auth/token providers and using AzureClient to connect
+    applications securely to Azure Fluid Relay and manage Fluid containers/documents
+  troubleshooting: Recovering or restoring corrupted Azure Fluid Relay container data,
+    including causes, detection, and step-by-step remediation options.
+  deployment: Guidance for deploying Fluid Framework apps to Azure Static Web Apps,
+    including setup, configuration, and integration with Azure Fluid Relay in production.
+  limits-quotas: Details on Azure Fluid Relay capacity limits, throttling behavior,
+    request/connection quotas, and how these constraints affect client and service
+    usage.
+---
 # Azure Fluid Relay Crawl Report
 
 ## Summary

@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L48 | Diagnosing and fixing Application Gateway issues: backend health, logs, 502s, cert/Key Vault/ASE problems, disabled listeners, session affinity, HTTP codes, WAF, mTLS, AKS ingress, and redirects. |
-| Best Practices | L49-L53 | Guidance on sizing, scaling, and configuring Application Gateway (instances, autoscaling, WAF, health probes) to reliably handle high and spiky traffic loads. |
-| Decision Making | L54-L65 | Guidance on pricing, autoscaling, and planning/migrating Application Gateway (v1→v2, AGIC Helm→AKS add-on, classic VMs→ARM), including V1 retirement FAQs and cost considerations. |
-| Limits & Quotas | L66-L71 | Autoscaling behavior, zone redundancy setup, and key limits/quotas (throughput, instances, connections, timeouts) for Azure Application Gateway v2. |
-| Security | L72-L94 | TLS/SSL and mTLS setup, certificate management (Key Vault, Let’s Encrypt, self‑signed), security headers, FIPS, Private Link, and listener/TLS policy configuration for Application Gateway |
-| Configuration | L95-L133 | Configuring Application Gateway components (listeners, routing, TLS, probes, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring, cookies, buffering, error pages) via portal/CLI/PowerShell |
-| Integrations & Coding Patterns | L134-L140 | Configuring Application Gateway TLS certificates with Azure Key Vault (portal/PowerShell) and using gateway metrics to autoscale AKS pods. |
-| Deployment | L141-L146 | Guides for deploying IPv6-enabled Azure Application Gateways using ARM templates, Azure portal, or PowerShell, including required settings and configuration steps. |
+| Troubleshooting | L32-L48 | Diagnosing and fixing Application Gateway issues: backend health, logs, HTTP/502 errors, certificates/Key Vault, WAF, mTLS, session affinity, listeners, AKS ingress, and redirect problems |
+| Best Practices | L49-L53 | Guidance on scaling Application Gateway for heavy traffic, including autoscaling, sizing, performance tuning, connection limits, and configuration patterns for high-load scenarios. |
+| Decision Making | L54-L65 | Guidance on pricing, scaling, and migration decisions for Application Gateway: v1→v2, AGIC Helm→AKS add-on, V1 retirement planning, and classic VM to ARM migration FAQs. |
+| Limits & Quotas | L66-L71 | Autoscaling behavior, zone redundancy setup, and v2 SKU limits/quotas (instances, throughput, connections), plus FAQ on performance, scaling, and configuration constraints. |
+| Security | L72-L94 | TLS/SSL and mTLS configuration for Application Gateway: policies, certificates (Key Vault, Let’s Encrypt, self‑signed), private access, HSTS, FIPS, JWT validation, and security cookie settings |
+| Configuration | L95-L133 | How to configure Application Gateway components (listeners, routing, probes, TLS, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring) using portal, PowerShell, or CLI |
+| Integrations & Coding Patterns | L134-L140 | Configuring App Gateway TLS with Key Vault (portal/PowerShell) and using App Gateway metrics to autoscale AKS pods and integrate with Kubernetes workloads |
+| Deployment | L141-L146 | Guides for deploying IPv6-enabled Azure Application Gateway using ARM templates, Azure portal, or PowerShell, including required settings and configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |

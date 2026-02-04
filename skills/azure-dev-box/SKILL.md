@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L39 | Diagnosing and fixing Dev Box connection issues, stale/inaccessible boxes in Windows Task view, known connectivity errors, and using Troubleshoot and Repair tools. |
-| Best Practices | L40-L45 | Guidance on creating and maintaining Dev Box images, troubleshooting image definition issues, and pre-warming Visual Studio caches to improve Dev Box performance. |
-| Decision Making | L46-L50 | Guidance on when and how to use serverless GPU compute with Azure Dev Box, including scenarios, benefits, limitations, and decision factors for GPU-enabled development workloads. |
-| Limits & Quotas | L51-L56 | Managing Dev Box capacity and quotas, including viewing/increasing subscription resource limits and setting per-user Dev Box count limits to control usage and costs |
-| Security | L57-L68 | Securing Dev Box access and sessions: RBAC role planning, assigning access, Entra ID SSO and conditional access, Intune EPM, secure REST auth, and protecting customizations with Key Vault. |
-| Configuration | L69-L96 | Configuring Dev Box infrastructure: images, catalogs, pools, projects, networking, policies (auto-stop/delete, hibernation), customization tasks, monitoring, ARM/templates, and schema references. |
-| Integrations & Coding Patterns | L97-L101 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, configuration, and remote development workflows. |
-| Deployment | L102-L105 | Guidance for planning and rolling out Microsoft Dev Box: architecture choices, network and identity setup, capacity planning, and step-by-step deployment considerations. |
+| Troubleshooting | L32-L39 | Diagnosing and fixing Dev Box connection issues (including known errors), repairing connectivity with built-in tools, and resolving stale or inaccessible Dev Boxes in Windows Task view. |
+| Best Practices | L40-L45 | Guidance on creating and maintaining Dev Box images, troubleshooting image issues, and optimizing Visual Studio by pre-generating caches in base images. |
+| Decision Making | L46-L50 | Guidance on when and how to use serverless GPU compute with Azure Dev Box, including scenarios, benefits, and considerations for GPU-accelerated development workloads. |
+| Limits & Quotas | L51-L56 | Managing Dev Box capacity and quotas, viewing/increasing subscription resource limits, and setting per-user Dev Box count/size limits to control usage and costs |
+| Security | L57-L68 | Securing Dev Boxes: RBAC role planning/assignment, Entra ID SSO, REST API auth, Key Vault/service principals, and Intune/Conditional Access/Endpoint Privilege Management. |
+| Configuration | L69-L96 | Configuring Dev Box environments: images, catalogs, pools, projects, networking, policies (auto-stop/delete, hibernation), customization tasks/files, monitoring, and ARM/template-based setup. |
+| Integrations & Coding Patterns | L97-L101 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
+| Deployment | L102-L105 | Guidance to design, plan, and roll out a Microsoft Dev Box deployment, including prerequisites, network/identity setup, and environment configuration. |
 
 ### Troubleshooting
 | Topic | URL |

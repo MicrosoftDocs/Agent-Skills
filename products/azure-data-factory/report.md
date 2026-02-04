@@ -1,4 +1,34 @@
-# Data Factory Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring ADF pipelines, activities, data flows, formats, runtimes,
+    networking, triggers, monitoring, and SAP/Databricks/SSIS integrations, plus parameters,
+    templates, and studio settings.
+  integrations: Patterns and how-tos for connecting ADF to many data sources, using
+    connectors, mapping data flows, SSIS, ML/Spark/HDInsight, REST/Webhooks, and integrating
+    with Purview/Fabric.
+  decision-making: Cost modeling, pricing examples, FinOps, runtime/compute selection,
+    connector upgrades, and migration planning (SSIS, HDFS, S3, Netezza, Fabric) for
+    Azure Data Factory.
+  best-practices: 'Performance, reliability, and DataOps best practices for ADF: tuning
+    data flows/copy/IR, metadata‑driven design, SAP CDC, data lake writes, BCDR, SLAs,
+    and iterative debugging.'
+  security: Securing Data Factory with identity, encryption, Key Vault, firewall/VNet/Private
+    Link, policies, and secure access to SQL, Purview, SSIS, and self-hosted/managed
+    integration runtimes.
+  troubleshooting: 'Diagnosing and fixing ADF failures: connector/format errors, copy
+    and data flow issues, CI/CD and Studio problems, IR/SSIS runtime and trigger/orchestration
+    troubleshooting.'
+  deployment: 'CI/CD and deployment for Data Factory: ARM/DevOps pipelines, environment
+    promotion, hotfix flows, pre/post scripts, cloning factories, and deploying/managing
+    SHIR and Azure-SSIS runtimes.'
+  architecture-patterns: 'Patterns for building efficient ADF solutions: optimizing
+    mapping data flows, reshaping SQL data for Cosmos DB, and deciding when/how to
+    integrate Azure-SSIS IR with VNets.'
+  limits-quotas: Info on Data Factory connector lifecycle (preview/GA, deprecation
+    timelines) and configuring Until activity loop behavior, limits, and timeout settings
+---
+# Azure Data Factory Crawl Report
 
 ## Summary
 
@@ -9,9 +39,9 @@
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 120
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 418
+- **Unchanged**: 538
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -31,30 +61,6 @@
 | *(Unclassified)* | 102 | 19.0% |
 
 ## Changes
-
-### New Pages
-
-- [Why Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-overview)
-- [Migrate data from AWS S3 to Azure](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-s3-azure-storage)
-- [Migrate data from on-premises Hadoop cluster to Azure](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-hdfs-azure-storage)
-- [Migrate data from on-premises Netezza server to Azure](https://learn.microsoft.com/en-us/azure/data-factory/data-migration-guidance-netezza-azure-sqldw)
-- [Process fixed-width text files](https://learn.microsoft.com/en-us/azure/data-factory/how-to-fixed-width)
-- [Error row handling](https://learn.microsoft.com/en-us/azure/data-factory/how-to-data-flow-error-rows)
-- [Azure SQL DB to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/data-factory/how-to-sqldb-to-cosmosdb)
-- [Dedupe and null check with snippets](https://learn.microsoft.com/en-us/azure/data-factory/how-to-data-flow-dedupe-nulls-snippets)
-- [Process data from aml models using data flow](https://learn.microsoft.com/en-us/azure/data-factory/scenario-dataflow-process-data-aml-models)
-- [SSIS migration overview](https://learn.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-overview)
-- [SSIS migration assessment rules](https://learn.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-rules)
-- [Overview of templates](https://learn.microsoft.com/en-us/azure/data-factory/solution-templates-introduction)
-- [Copy files from multiple containers](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-copy-files-multiple-containers)
-- [Copy new files by LastModifiedDate](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-copy-new-files-last-modified-date)
-- [Bulk copy from database](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-with-control-table)
-- [Bulk copy from files to database](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-from-files-to-database)
-- [Delta copy from database](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-delta-copy-with-control-table)
-- [Replicate data from SAP CDC](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-replicate-multiple-objects-sap-cdc)
-- [Detect and mask PII data](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-pii-detection-and-masking)
-- [Extract data from PDF source](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-extract-data-from-pdf)
-- *...and 100 more*
 
 ## Classified Pages
 

@@ -1,4 +1,28 @@
-# Security Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Designing secure Azure apps: threat-model-based auth, authz, crypto,
+    data/session protection, secure comms, logging/auditing, ops security, and hardening
+    PaaS (App Service, SQL, Storage, Service Fabric).'
+  configuration: 'Configuring secure Azure services: hardening configs from threat
+    models, setting Microsoft Antimalware, knowing required service/API domains, and
+    finding services that support customer-managed keys.'
+  best-practices: Best-practice guidance for securing Azure identities, networks,
+    VMs, PaaS, data, SQL, DNS, and backups, including ransomware defenses, threat
+    modeling mitigations, and Entra ID hardening.
+  troubleshooting: Troubleshooting Azure security incidents, including resolving Customer
+    Lockbox access issues and diagnosing, containing, and responding to ransomware
+    attacks in Azure environments.
+  deployment: Lists which Azure security features and services are available in each
+    Azure cloud (public, Gov, China), helping you check regional and sovereign cloud
+    support before deployment
+  decision-making: Guidance on choosing between Azure Key Vault, managed HSM, and
+    other key management options, comparing security, performance, compliance, and
+    integration scenarios.
+  limits-quotas: Details on upcoming Azure-managed TLS certificate changes, impact
+    on apps/endpoints, required updates, timelines, and compatibility/transition guidance.
+---
+# Azure Security Crawl Report
 
 ## Summary
 

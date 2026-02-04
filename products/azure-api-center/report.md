@@ -1,4 +1,21 @@
-# API Center Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Configuring API authorization in Azure API Center, including setting auth
+    settings, securing access to APIs, and integrating with identity providers.
+  integrations: How to integrate API Center with tools like VS Code, GitHub Copilot,
+    Copilot Studio, Azure CLI, Logic Apps, Teams, and sync APIs from API Management
+    and Amazon API Gateway
+  configuration: 'Configuring API Center portals and tools: customize portal settings,
+    set up managed portals, enable the VS Code portal view, and configure self-managed
+    API linting.'
+  best-practices: Guidance on enabling and using built-in linting and analysis in
+    Azure API Center to automatically validate API definitions, enforce standards,
+    and improve API quality.
+  deployment: Automating Azure API Center registration via GitHub Actions CI/CD and
+    deploying/self-hosting the API Center developer portal configuration and runtime.
+---
+# Azure Api Center Crawl Report
 
 ## Summary
 

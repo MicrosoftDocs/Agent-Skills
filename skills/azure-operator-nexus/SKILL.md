@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L77 | Diagnosing and fixing Nexus issues: bare metal/VM/Kubernetes health, storage and CSI/NFS, network fabric, cabling, DNS/LACP/TWAMP, isolation domains, hydration, and log/alert problems. |
-| Best Practices | L78-L82 | Guidance for planning, executing, and maintaining Azure Operator Nexus bare metal lifecycle operations, including provisioning, updates, monitoring, and reliability best practices. |
-| Decision Making | L83-L94 | Guidance on choosing Nexus compute/storage SKUs, planning storage appliance deployment and versions, and managing Kubernetes/platform versioning and upgrade lifecycles. |
-| Limits & Quotas | L95-L102 | Storage class limits, NFC/CM capacity planning, and configuration of technical limits, quotas, and isolation domain constraints in Azure Operator Nexus environments. |
-| Security | L103-L133 | Securing Nexus fabric, clusters, and VMs: RBAC, identities, SSH/serial access, ACLs, break-glass, key/secret rotation, Defender/MDE, vulnerability scanning, and Azure Policy. |
-| Configuration | L134-L197 | Configuring and operating Azure Operator Nexus: ARM templates, cluster/fabric lifecycle, routing/BGP/QoS, isolation domains, observability, Kubernetes/VM settings, and network device maintenance. |
-| Integrations & Coding Patterns | L198-L207 | Managing Nexus network resources via CLI: IP prefixes, route policies, L2/L3 isolation domains, fabric operations, and configuring packet broker/TAP rules. |
-| Deployment | L208-L217 | Deploying, upgrading, and decommissioning Azure Operator Nexus instances and clusters, including parameterized templates, fabric/runtime upgrades, prevalidation, and safe upgrade strategies. |
+| Troubleshooting | L32-L77 | Diagnosing and fixing Azure Operator Nexus issues across bare metal, Kubernetes, storage, networking, cabling, and control plane health, plus collecting logs and emergency recovery actions. |
+| Best Practices | L78-L82 | Guidance on planning, executing, and maintaining Azure Operator Nexus bare metal lifecycle operations, including provisioning, upgrades, maintenance, and reliability best practices. |
+| Decision Making | L83-L94 | Guidance on choosing Nexus storage appliances, near-edge compute and cluster VM SKUs, and planning supported versions, Kubernetes lifecycles, and platform/runtime upgrade strategy. |
+| Limits & Quotas | L95-L102 | Limits, quotas, and capacity planning for Azure Operator Nexus: storage classes, NFC/CM prep, isolation domain constraints, and platform-wide technical limits. |
+| Security | L103-L134 | Securing Nexus fabric, clusters, and VMs: RBAC, managed identities, SSH/serial access, ACLs, break-glass, key/secret rotation, Defender/MDE, vulnerability scanning, and Azure Policy. |
+| Configuration | L135-L198 | Configuring and operating Azure Operator Nexus clusters and network fabric: ARM templates, routing/BGP/QoS, isolation domains, observability, lifecycle, storage/credentials, and Kubernetes settings. |
+| Integrations & Coding Patterns | L199-L208 | CLI-based configuration of Nexus networking: IP prefixes, route policies, L2/L3 isolation domains, Network Fabric management, and Network Packet Broker TAP rules. |
+| Deployment | L209-L218 | Deploying, upgrading, and decommissioning Azure Operator Nexus instances and network fabric, including using parameterized templates and safe upgrade strategies like PauseAfterRack. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -66,7 +66,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Fix Nexus Kubernetes pods stuck in ContainerCreating | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-nexus-kubernetes-cluster-pods |
 | Resolve NotReady nodes in Nexus KubernetesCluster | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-not-ready-kubernetes-cluster-node |
 | Troubleshoot packet loss between NAKS worker nodes | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-packet-loss |
-| Troubleshoot Nexus bare metal servers with restart, reimage, replace | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-reboot-reimage-replace |
+| Troubleshoot Azure Operator Nexus bare metal servers | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-reboot-reimage-replace |
 | Interpret and act on Nexus resource health alerts | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-resource-health-alerts |
 | Fix storage control plane connectivity issues in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-storage-control-plane-disconnected |
 | Fix TWAMP over UDP failures with NAT in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-twamp-udp-not-working |
@@ -111,6 +111,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Manage emergency SSH access to bare metal machines with baremetalmachinekeyset | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-bmm-ssh |
 | Configure managed identities and user resources for Nexus Clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-managed-identity-user-provided-resources |
 | Create ACLs to control SSH over Nexus management VPN | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-acls-for-ssh-management-on-access-vpn |
+| Configure UAMI-secured Network TAP rules in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-tap-rules-with-user-assigned-managed-identity |
 | Create ACLs for Nexus network interconnect security | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-create-access-control-list-for-network-to-network-interconnects |
 | Manage credential rotation lifecycle in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-credential-rotation |
 | Delete ACLs from Nexus network interconnects | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-access-control-list-network-to-network-interconnect |
@@ -203,7 +204,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Deploy and manage Azure Operator Nexus Clusters via CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-cluster |
 | Create and manage L2/L3 isolation domains in Nexus via CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-isolation-domain |
 | Manage Azure Operator Nexus Network Fabric via CLI | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-fabric |
-| Configure Network Packet Broker and TAP rules in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker |
+| Configure Network Packet Broker TAP rules in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker |
 
 ### Deployment
 | Topic | URL |
@@ -213,5 +214,5 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use PauseAfterRack strategy for Nexus Cluster upgrades | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-runtime-upgrade-with-pauseafterrack-strategy |
 | Follow checklist to safely decommission an Operator Nexus instance | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-decommission-nexus-instance-checklist |
 | Deploy an Azure Operator Nexus instance using template parameters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-nexus-instance-deployment-template |
-| Run prevalidations and upgrade Nexus Network Fabric runtime | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric |
+| Upgrade Azure Operator Nexus Network Fabric safely | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric |
 | Use templates for Azure Operator Nexus Fabric runtime upgrades | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric-template |

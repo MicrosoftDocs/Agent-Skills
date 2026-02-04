@@ -20,8 +20,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Security | L26-L30 | How Azure AI Health Insights handles, secures, and stores PHI/PII, including data flow, encryption, access controls, compliance, and privacy protections for healthcare data. |
-| Configuration | L31-L43 | Configuring Health Insights containers and models, and interpreting output fields/inferences for Radiology Insights, quality measures/MIPS, and Trial Matcher (filters, evidence, patient data formats). |
+| Security | L26-L30 | Data protection, PHI/PII handling, encryption, access controls, and compliance considerations for using Azure AI Health Insights securely. |
+| Configuration | L31-L43 | Configuring Health Insights containers and models, setting parameters/filters, and interpreting inference outputs for Radiology Insights, Trial Matcher, and quality measures. |
 
 ### Security
 | Topic | URL |

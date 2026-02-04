@@ -1,4 +1,32 @@
-# Application Gateway Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: How to configure Application Gateway components (listeners, routing,
+    probes, TLS, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring) using
+    portal, PowerShell, or CLI
+  limits-quotas: Autoscaling behavior, zone redundancy setup, and v2 SKU limits/quotas
+    (instances, throughput, connections), plus FAQ on performance, scaling, and configuration
+    constraints.
+  troubleshooting: 'Diagnosing and fixing Application Gateway issues: backend health,
+    logs, HTTP/502 errors, certificates/Key Vault, WAF, mTLS, session affinity, listeners,
+    AKS ingress, and redirect problems'
+  security: 'TLS/SSL and mTLS configuration for Application Gateway: policies, certificates
+    (Key Vault, Let’s Encrypt, self‑signed), private access, HSTS, FIPS, JWT validation,
+    and security cookie settings'
+  decision-making: 'Guidance on pricing, scaling, and migration decisions for Application
+    Gateway: v1→v2, AGIC Helm→AKS add-on, V1 retirement planning, and classic VM to
+    ARM migration FAQs.'
+  integrations: Configuring App Gateway TLS with Key Vault (portal/PowerShell) and
+    using App Gateway metrics to autoscale AKS pods and integrate with Kubernetes
+    workloads
+  best-practices: Guidance on scaling Application Gateway for heavy traffic, including
+    autoscaling, sizing, performance tuning, connection limits, and configuration
+    patterns for high-load scenarios.
+  deployment: Guides for deploying IPv6-enabled Azure Application Gateway using ARM
+    templates, Azure portal, or PowerShell, including required settings and configuration
+    steps.
+---
+# Azure Application Gateway Crawl Report
 
 ## Summary
 

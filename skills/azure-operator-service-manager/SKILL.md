@@ -20,11 +20,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart installation failures in AOSM CNF deployments. |
-| Best Practices | L35-L45 | Operational best practices for AOSM: onboarding and config groups, Helm chart and test guidance, artifact cleanup, and safe/controlled CNF upgrade and failure-handling strategies. |
-| Security | L46-L53 | Securing AOSM with Private Link, configuring RBAC/custom roles for service operators, and using managed identities for secure long-running SNS operations. |
-| Configuration | L54-L61 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options to keep failed releases, and geo-replicated publisher artifact storage. |
-| Integrations & Coding Patterns | L62-L74 | Using AOSM CLI/ARM/Helm to onboard CNFs/VNFs, manage artifact stores (ACR/Storage), map parameters, and design/publish network services and operators. |
+| Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm install failures in AOSM CNF deployments. |
+| Best Practices | L35-L45 | Best practices for onboarding, configuring, upgrading, and cleaning up AOSM CNFs/Helm artifacts, including safe upgrade flows, tests, and failure-handling controls. |
+| Security | L46-L53 | Securing AOSM: configuring Private Link to artifact stores, defining/assigning custom RBAC roles, and using user-assigned managed identities for long-running SNS operations. |
+| Configuration | L54-L61 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
+| Integrations & Coding Patterns | L62-L74 | Using AOSM CLI/ARM/Helm to onboard CNFs/VNFs, manage artifact stores (ACR/Storage), and design/publish network services and operators for Azure Operator Nexus. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,4 +1,33 @@
-# Bot Service Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring and debugging Azure bots: state/storage, adaptive dialogs,
+    channels (Direct Line), skills, telemetry (App Insights), language assets (.lg/.lu/.qna),
+    and Emulator-based troubleshooting.'
+  integrations: Patterns and APIs for integrating bots with channels and services
+    (Direct Line, Web Chat, SMS, email, QnA, LUIS), sending rich messages/media, dialogs,
+    skills, telemetry, and custom storage.
+  security: Authentication, SSO, OAuth/OIDC, identity providers, Direct Line/Web Chat
+    auth, encryption, privacy, and network isolation/security configuration for Azure
+    Bot Service.
+  architecture-patterns: Designing complex bot dialog flows, modular components, multi-LUIS/QnA
+    routing with Orchestrator, and embedding bots into native apps or websites.
+  best-practices: Guidance on conversation lifecycle, interruptions, security, welcome
+    flows, debugging, and unit testing to build robust, safe, and maintainable Azure
+    Bot Framework v4 bots.
+  limits-quotas: Guidance on bot timeouts/long-running operations and a matrix of
+    which features are supported on each Azure Bot Service channel.
+  decision-making: Guidance on choosing the right Microsoft chatbot platform and selecting
+    the best Direct Line channel option based on architecture, features, and integration
+    needs.
+  deployment: Deploying and registering bots (incl. external/sovereign clouds), setting
+    up App Service and resources via CLI/ARM, and using Dev Tunnels to debug channels
+    and skills.
+  troubleshooting: Diagnosing and fixing bot runtime (HTTP 500), auth, channel/configuration
+    errors, and other common Azure Bot Service issues with step-by-step troubleshooting
+    guidance.
+---
+# Azure Bot Service Crawl Report
 
 ## Summary
 
@@ -9,9 +38,9 @@
 - **Unclassified**: 58
 
 ### Incremental Update
-- **New Pages**: 80
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 110
+- **Unchanged**: 190
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
@@ -31,30 +60,6 @@
 | *(Unclassified)* | 58 | 30.5% |
 
 ## Changes
-
-### New Pages
-
-- [Telegram](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0)
-- [WeChat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-wechat?view=azure-bot-service-4.0)
-- [Web Chat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
-- [Connect to channels with Azure CLI](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-azure-cli?view=azure-bot-service-4.0)
-- [About network isolation](https://learn.microsoft.com/en-us/azure/bot-service/dl-network-isolation-concept?view=azure-bot-service-4.0)
-- [Configure .NET bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-bot?view=azure-bot-service-4.0)
-- [Configure Node.js bot for extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-node-bot?view=azure-bot-service-4.0)
-- [Create .NET client with extension](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-net-client?view=azure-bot-service-4.0)
-- [Use extension with Web Chat](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-webchat-client?view=azure-bot-service-4.0)
-- [Configure a virtual network](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0)
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/bot-service/monitor-bot-service-reference?view=azure-bot-service-4.0)
-- [Overview](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-overview?view=azure-bot-service-4.0)
-- [Key concepts](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-concepts?view=azure-bot-service-4.0)
-- [Create a bot with REST](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-quickstart?view=azure-bot-service-4.0)
-- [API reference](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0)
-- [Authentication](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0)
-- [Create messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-create-messages?view=azure-bot-service-4.0)
-- [Send and receive messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-4.0)
-- [Add media attachments to messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-media-attachments?view=azure-bot-service-4.0)
-- [Add rich cards to messages](https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-4.0)
-- *...and 60 more*
 
 ## Classified Pages
 

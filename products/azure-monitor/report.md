@@ -1,3 +1,34 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agents, data collection,
+    alerts, autoscale, logs/metrics, Container insights, Application Insights, ITSM,
+    and VM performance tools.'
+  configuration: 'Configuring Azure Monitor end to end: agents, DCRs, diagnostics,
+    alerts, autoscale, Kubernetes/Prometheus, Application Insights, workspaces, logs/metrics
+    routing, retention, and workbooks.'
+  deployment: How to deploy and manage Azure Monitor agents, alerts, workbooks, and
+    Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid
+    environments.
+  decision-making: 'Guidance for choosing Azure Monitor features and planning migrations:
+    agents, alerts, logs, costs, visualization tools, SCOM/Splunk/Prometheus moves,
+    and related billing/retention decisions.'
+  limits-quotas: Scaling, throughput, and quota limits for Azure Monitor logs/metrics,
+    including ingestion caps, timeouts, autoscale, container/Prometheus performance,
+    and alert/workbook constraints.
+  security: 'Securing Azure Monitor and Log Analytics: auth (Entra, managed identity),
+    RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks,
+    Prometheus/Grafana, and policy compliance.'
+  integrations: 'Patterns and code for integrating Azure Monitor: collecting custom/VM/Prometheus
+    metrics and logs, using REST/ingestion APIs, alerts/webhooks/ITSM, Grafana/Power
+    BI/notebooks, and App Insights extensions.'
+  best-practices: Best practices for Azure Monitor alerts, logs, metrics, autoscale,
+    AKS/VM monitoring, cost optimization, Prometheus/PromQL, and operational reliability/performance
+    tuning.
+  architecture-patterns: 'Architectural guidance for Azure Monitor: workspace design/replication,
+    managed workspaces, autoscale patterns, network security perimeters, and Private
+    Link-based secure topologies.'
+---
 # Azure Monitor Crawl Report
 
 ## Summary
@@ -9,10 +40,10 @@
 - **Unclassified**: 134
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 4
-- **Unchanged**: 542
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 551
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -31,29 +62,6 @@
 | *(Unclassified)* | 134 | 24.3% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-overview)
-- [Azure portal](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure-portal)
-- [CLI and templates](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure)
-- [Configure clients](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-configure-clients)
-- [Transformations](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-transformations)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview)
-  - Updated: 2025-01-29T08:00:00.000Z → 2026-02-03T23:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-02-03T23:12:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-transformations)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-02-03T23:12:00.000Z
-- [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-02-03T06:03:00.000Z
-
-### Deleted Pages
-
-- ~~Azure Monitor pipeline (preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/edge-pipeline-configure)
 
 ## Classified Pages
 

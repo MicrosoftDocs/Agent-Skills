@@ -20,21 +20,29 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L42 | Diagnosing and fixing Azure Spring Apps issues like OOM restarts, Java memory problems, build failures, and troubleshooting via real-time app, job, and managed component logs, plus Spring Cloud Gateway. |
-| Best Practices | L43-L48 | Guidance on production-grade monitoring for Azure Spring Apps, including observability setup, metrics/logs, and using Application Live View for real-time app insights and diagnostics. |
-| Decision Making | L49-L54 | Choosing the right Azure Spring Apps plan (Basic/Standard/Enterprise), understanding Enterprise tier features, Marketplace offer details, and licensing/subscription implications |
-| Architecture & Design Patterns | L55-L61 | Patterns for exposing Azure Spring Apps with Azure load balancers, Application Gateway (TLS termination), and secure/public internet access configurations. |
-| Limits & Quotas | L62-L70 | Version support, storage limits, quotas, and guidance for scaling Azure Spring Apps Enterprise to high instance counts and large CPU/memory workloads. |
-| Security | L71-L84 | Security features and patterns for Spring Apps: managed identity to SQL/Key Vault/Functions, Entra ID SSO, custom domains, policy compliance, secrets loading, and end‑to‑end Zero Trust protection. |
-| Configuration | L85-L115 | Configuring Azure Spring Apps runtime: networking, scaling, storage, logging/metrics/tracing, health/maintenance, gateways, service registry, and enterprise features (Tanzu, APM, Dev Tools). |
-| Integrations & Coding Patterns | L116-L141 | Integrating Azure Spring Apps with APM/monitoring tools, databases, Redis, gRPC, gateways, Entra ID auth, Azure OpenAI, and using Enterprise features like Tanzu services and Maven deployment. |
-| Deployment | L142-L155 | Deployment patterns (zero-downtime, blue-green), VNet-integrated provisioning (ARM/Bicep/CLI/Terraform), and CI/CD for polyglot and static apps using buildpacks and GitHub Actions |
+| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Spring Apps issues: build failures, OOM/restarts, exit codes, VNet connectivity, debugging (remote/JVM/JFR), memory analysis, and real-time log streaming. |
+| Best Practices | L51-L57 | Best practices for production monitoring and diagnostics in Azure Spring Apps: observability setup, JVM diagnostic tuning, and using Application Live View for real-time monitoring. |
+| Decision Making | L58-L64 | Choosing the right Azure Spring Apps plan, understanding Enterprise licensing/Marketplace offers, and how to migrate from Basic/Standard to Enterprise |
+| Architecture & Design Patterns | L65-L71 | Designing external access to Azure Spring Apps using load balancers, Application Gateway, TLS termination, and secure public internet exposure patterns |
+| Limits & Quotas | L72-L81 | Version support, quotas, storage limits, scaling to hundreds of instances, and guidance for running large CPU/memory workloads on Azure Spring Apps. |
+| Security | L82-L104 | Securing Azure Spring Apps: managed identities, Key Vault secrets, TLS/custom domains, Entra ID SSO/RBAC, GitHub Actions auth, and Azure Policy/Zero Trust security controls. |
+| Configuration | L105-L143 | Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS, scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools and APM integrations |
+| Integrations & Coding Patterns | L144-L169 | Integrating Azure Spring Apps with monitoring/APM tools, databases, Redis, gRPC, gateways, security (Entra ID), and Azure OpenAI, plus enterprise patterns like Tanzu services and Maven deployment. |
+| Deployment | L170-L185 | Deploying Azure Spring Apps with zero-downtime/blue‑green strategies, CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform), and buildpack-based app/static site deployment |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Capture JVM dumps and JFR in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-capture-dumps |
+| Connect to Azure Spring Apps instances for debugging | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-connect-to-app-instance-for-troubleshooting |
 | Diagnose and fix OOM app restarts in Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-fix-app-restart-issues-caused-by-out-of-memory |
+| Enable remote debugging for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-remote-debugging-app-instance |
+| Diagnose Azure Spring Apps issues in VNets | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-self-diagnose-running-in-vnet |
+| Self-diagnose and resolve issues in Azure Spring Apps with diagnostics | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-self-diagnose-solve |
 | Use tools to troubleshoot Java memory in Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tools-to-troubleshoot-memory-issues |
+| Troubleshoot Azure Spring Apps development issues | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot |
+| Resolve Azure Spring Apps exit code failures | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshoot-exit-code |
+| Troubleshoot Azure Spring Apps in virtual networks | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/troubleshooting-vnet |
 | Stream Azure Spring Apps job logs in real time for troubleshooting | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-job-log-streaming |
 | Stream managed component logs in real time on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-managed-component-log-streaming |
 | Troubleshoot VMware Spring Cloud Gateway on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-troubleshoot-enterprise-spring-cloud-gateway |
@@ -44,11 +52,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Optimize observability for production Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/application-observability |
+| Configure JVM diagnostic options in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-dump-jvm-options |
 | Monitor Azure Spring Apps using Application Live View | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/monitor-apps-by-application-live-view |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Migrate Azure Spring Apps Basic/Standard to Enterprise | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-migrate-standard-tier-to-enterprise-tier |
 | Select the right Azure Spring Apps plan | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/plan-comparison |
 | Understand Azure Spring Apps Enterprise Marketplace offer and licensing | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-marketplace-offer |
 
@@ -63,6 +73,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Version support policy for Java and Spring on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-app-customer-responsibilities |
+| Azure Spring Apps FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/faq |
 | Use built-in persistent and temporary storage limits in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-built-in-persistent-storage |
 | Azure Spring Apps plans quotas and limits | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quotas |
 | Scale Azure Spring Apps Enterprise to 500–1000 instances | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-deploy-app-at-scale |
@@ -73,7 +84,16 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Understand built-in security controls in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-security-controls |
 | Configure managed identity for Azure Spring Apps to access Azure SQL | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/connect-managed-identity-to-azure-sql |
+| Authenticate Azure Spring Apps GitHub Actions with Azure Key Vault | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/github-actions-key-vault |
+| Access Config Server and Service Registry with Entra RBAC in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-access-data-plane-azure-ad-rbac |
 | Map and secure custom domains for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-custom-domain |
+| Enable ingress-to-app TLS for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-ingress-to-app-tls |
+| Enable system-assigned managed identity for Azure Spring Apps applications | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-enable-system-assigned-managed-identity |
+| Manage user-assigned managed identities for Azure Spring Apps applications | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-manage-user-assigned-managed-identities |
+| Create custom RBAC roles and permissions for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-permissions |
+| Use managed identities with applications in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-managed-identities |
+| Use TLS/SSL certificates in Azure Spring Apps applications | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-tls-certificate |
+| Use built-in Azure Policy definitions for Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/policy-reference |
 | Azure Policy compliance controls for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/security-controls-policy |
 | Use managed identity to call Azure Functions from Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tutorial-managed-identities-functions |
 | Configure managed identity to access Key Vault from Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tutorial-managed-identities-key-vault |
@@ -86,24 +106,32 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Access Azure Spring Apps over private endpoints in a VNet | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/access-app-virtual-network |
+| Handle Azure Spring Apps API breaking changes | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/breaking-changes |
 | Configure custom egress routes for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-outbound-type |
 | Configure diagnostics logs and metrics for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/diagnostic-services |
+| Configure end-to-end TLS with Application Gateway for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/expose-apps-gateway-end-to-end-tls |
 | Configure managed Spring Cloud Config Server in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-config-server |
 | Configure health probes and graceful termination in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-health-probes-graceful-termination |
+| Customize ingress settings for Azure Spring Apps applications | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-ingress |
+| Configure Palo Alto firewall for Azure Spring Apps egress | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-palo-alto |
 | Configure planned maintenance windows for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-configure-planned-maintenance |
+| Control Azure Spring Apps egress with user-defined routes | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-create-user-defined-route-instance |
 | Configure custom persistent storage for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-custom-persistent-storage |
 | Enable real-time log streaming for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-log-streaming |
+| Map DNS names to multiple Azure Spring Apps instances in one vNet | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-map-dns-virtual-network |
 | View and configure outbound public IPs for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-outbound-public-ip |
 | Prepare Steeltoe applications for Azure Spring Apps deployment | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-prepare-app-deployment |
 | Configure manual scaling for Azure Spring Apps applications | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-scale-manual |
 | Register Spring Boot apps with Azure Spring Apps Service Registry | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-service-registration |
 | Set up autoscale rules for Azure Spring Apps apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-setup-autoscale |
+| Flush and update DNS settings for vNet-injected Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-flush-dns-settings |
 | Write Azure Spring Apps logs to custom persistent storage with Logback | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-write-log-to-custom-persistent-storage |
 | Configure lifecycle event monitoring for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/monitor-app-lifecycle-events |
 | Configure logs, metrics, and tracing for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-logs-metrics-tracing |
 | Configure Spring Cloud Config Server for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-setup-config-server |
 | Configure Log Analytics workspace for Azure Spring Apps monitoring | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-setup-log-analytics |
 | Generate and collect structured logs in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/structured-app-log |
+| Meet virtual network requirements for Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/vnet-customer-responsibilities |
 | Configure VMware Spring Cloud Gateway on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-configure-enterprise-spring-cloud-gateway |
 | Configure Spring Cloud Gateway route filters on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-configure-enterprise-spring-cloud-gateway-filters |
 | Configure Application Configuration Service for Tanzu in Spring Apps Enterprise | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-application-configuration-service |
@@ -144,7 +172,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Achieve zero-downtime deployments on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-zero-downtime-deployment |
 | Implement blue-green deployment strategies in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concepts-blue-green-deployment-strategies |
+| Automate Azure Spring Apps deployments with Azure Pipelines | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-cicd |
 | Deploy Azure Spring Apps into a virtual network | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-deploy-in-azure-virtual-network |
+| Build CI/CD workflows for Azure Spring Apps with GitHub Actions | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-github-actions |
 | Set up blue-green staging deployments in Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-staging-environment |
 | Deploy Azure Spring Apps into VNet using ARM template | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-deploy-infrastructure-vnet |
 | Provision Azure Spring Apps into VNet using Azure CLI | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/quickstart-deploy-infrastructure-vnet-azure-cli |

@@ -1,4 +1,11 @@
-# BareMetal Infrastructure Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance on selecting NC2 on Azure regions and hardware SKUs, including
+    capacity, performance, and placement considerations for Nutanix Cloud Clusters
+    on Azure.
+---
+# Azure Baremetal Infrastructure Crawl Report
 
 ## Summary
 

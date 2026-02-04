@@ -1,4 +1,26 @@
-# Role-based access control Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  best-practices: 'Guidance on securely designing and operating Azure RBAC: least
+    privilege, role assignment patterns, managing custom roles, access reviews, and
+    avoiding common security misconfigurations.'
+  security: Designing, assigning, and delegating Azure RBAC/ABAC roles and permissions
+    (built‑in and custom) securely, including conditions, PIM, deny assignments, and
+    least‑privilege access patterns
+  troubleshooting: 'Diagnosing and fixing Azure RBAC issues: access denials, ABAC
+    condition problems, role/custom role limit errors, and auditing role changes via
+    Activity Log.'
+  decision-making: Guidance on choosing between Azure RBAC, Entra, and classic admin
+    roles, and how to migrate from classic administrator models to modern RBAC role
+    assignments
+  limits-quotas: Designing, creating, and managing Azure RBAC custom roles, including
+    using ABAC with custom attributes to implement fine-grained, attribute-based access
+    control.
+  configuration: 'Defining and configuring Azure RBAC: creating and managing role
+    assignments, authoring role definitions, building custom roles via CLI/PowerShell,
+    and using ABAC conditions syntax.'
+---
+# Azure Role Based Access Control Crawl Report
 
 ## Summary
 

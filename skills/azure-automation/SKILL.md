@@ -20,14 +20,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L42 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors, shared resources, and collecting logs for support. |
-| Best Practices | L43-L56 | Patterns and guidance for designing, managing, and troubleshooting Azure Automation runbooks/DSC: modular design, error handling, streams, watcher tasks, DR, compliance, and module management. |
-| Decision Making | L57-L65 | Guidance for planning and executing Azure Automation migrations (Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity) and choosing how to start runbooks |
-| Limits & Quotas | L66-L73 | Limits, quotas, and version/support details for Azure Automation: DSC extension versions, Automation account/subscription limits, and Change Tracking & Inventory support matrix. |
-| Security | L74-L92 | Identity, access, encryption, and network security for Automation: managed identities, Entra ID auth, RBAC, STIG/policy compliance, secure assets, and Private Link/private endpoints |
-| Configuration | L93-L119 | Configuring Azure Automation runbooks, State Configuration/DSC, networking, logging, policies, packages, credentials, schedules, and integrations (source control, Hybrid Workers, Azure Monitor). |
-| Integrations & Coding Patterns | L120-L132 | Patterns and samples for integrating runbooks with Azure alerts, webhooks, ARM, AWS, Office 365, SQL, email (SendGrid), and using SDKs/managed identity for automation tasks |
-| Deployment | L133-L136 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software/configuration packages across Windows machines |
+| Troubleshooting | L32-L42 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors, shared resources, and collecting diagnostics for support. |
+| Best Practices | L43-L56 | Best practices for designing, structuring, and managing Azure Automation runbooks/DSC: modular runbooks, error handling, streams, watcher tasks, DR, compliance remediation, and module management. |
+| Decision Making | L57-L65 | Guidance for planning and executing Azure Automation migrations (SC Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity) and choosing how to start runbooks |
+| Limits & Quotas | L66-L73 | Azure Automation and DSC limits, quotas, version history, and support matrices for features like Change Tracking and Inventory, including per-subscription capacity and configuration constraints. |
+| Security | L74-L92 | Securing Azure Automation: identities (system/user-assigned, Entra ID), RBAC, encryption, private endpoints, STIG/policy compliance, and secure runbook/auth configuration. |
+| Configuration | L93-L119 | Configuring Azure Automation accounts: runbooks, State Configuration/DSC, Hybrid Runbook Workers, networking, logging/monitoring, assets (credentials, certs, variables), schedules, source control, and Python/PowerShell modules |
+| Integrations & Coding Patterns | L120-L132 | Patterns for connecting runbooks to AWS, Azure alerts, ARM, webhooks, email (SendGrid), Office 365, Azure SQL, and using SDKs/managed identity for automated provisioning and management |
+| Deployment | L133-L136 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software and configuration across Windows machines |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,4 +1,13 @@
-# Health Insights Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: Configuring Health Insights containers and models, setting parameters/filters,
+    and interpreting inference outputs for Radiology Insights, Trial Matcher, and
+    quality measures.
+  security: Data protection, PHI/PII handling, encryption, access controls, and compliance
+    considerations for using Azure AI Health Insights securely.
+---
+# Azure Health Insights Crawl Report
 
 ## Summary
 

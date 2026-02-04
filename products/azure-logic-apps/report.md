@@ -1,3 +1,32 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Patterns and samples for integrating Logic Apps with AI agents, scripts,
+    SAP/B2B/healthcare systems, Dataverse/DBs/APIs, and for unit testing, telemetry,
+    and custom connectors.
+  limits-quotas: Logic Apps limits for message size, chunking, pagination, SQL result
+    size/timeouts, inline JavaScript, and where to review and configure all runtime
+    quotas and thresholds.
+  security: 'Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy
+    Auth), network isolation (VNets, private endpoints, private storage), certificates,
+    and Azure Policy/compliance controls.'
+  deployment: Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, DevOps/Deployment
+    Center, deployment slots, hybrid setups, and moving apps across subscriptions/regions.
+  decision-making: Guidance on choosing Logic Apps vs other Azure integration tools,
+    Standard vs Consumption, migration from BizTalk/Power Automate, and estimating/controlling
+    Logic Apps costs and billing.
+  configuration: Configuring Logic Apps runtime, connections, B2B/integration accounts,
+    WDL workflows, monitoring/telemetry, on-premises access, and specialized features
+    like AS2/X12/EDIFACT and MCP.
+  architecture-patterns: Patterns for AI agent workflows, DR/HA (multi-region, zone-redundant),
+    resource replication, REST API design, and messaging patterns like Service Bus
+    sequential convoys.
+  best-practices: Error handling patterns, rules engine optimization, and techniques
+    for generating and running unit tests and mocks for Logic Apps Standard workflows.
+  troubleshooting: Diagnosing and fixing Logic Apps failures, throttling (429), B2B/EDI
+    acknowledgment and error codes (AS2, EDIFACT, X12), plus using tests, metrics,
+    and run history to debug issues.
+---
 # Azure Logic Apps Crawl Report
 
 ## Summary

@@ -21,12 +21,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
-| Best Practices | L45-L75 | Best-practice patterns for reliability, HA/DR, scaling, operations, and performance of Azure workloads (VMs, AKS, SAP, IoT, Event Hubs, databases) in production environments. |
-| Decision Making | L76-L137 | Guidance for choosing the right Azure services, compute, data, AI, and networking options, especially when comparing/migrating from AWS, GCP, EKS, Kafka, and other platforms. |
-| Architecture & Design Patterns | L138-L273 | End-to-end Azure solution architectures, patterns, and reference designs for mission-critical, hybrid, data, IoT, mainframe, SAP, and microservices workloads, including HA/DR and landing zones. |
-| Security | L274-L303 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, private access, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
-| Configuration | L304-L309 | Configuring GitOps workflows for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines that export telemetry via Event Hubs. |
-| Deployment | L310-L321 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zone deployment choices, and mission‑critical rollout/testing. |
+| Best Practices | L45-L75 | Best practices for designing, operating, and hardening Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup, resilience, and performance. |
+| Decision Making | L76-L137 | Guidance to choose the right Azure services, models, and architectures (vs AWS/GCP), including compute, data/AI, containers/AKS, networking, storage, DR, and hybrid/migration options. |
+| Architecture & Design Patterns | L138-L273 | End-to-end Azure solution architectures and patterns for mission-critical, hybrid, data/analytics, IoT, mainframe migration, SAP, VDI, and microservices workloads, including HA/DR and networking. |
+| Security | L274-L303 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
+| Configuration | L304-L309 | Configuring GitOps for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines using Event Hubs for logs and metrics. |
+| Deployment | L310-L321 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zone options, and mission‑critical workload rollout and testing. |
 
 ### Troubleshooting
 | Topic | URL |

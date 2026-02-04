@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics), data collection/ingestion, alerts/notifications, ITSM, autoscale, metrics/logs, Container insights, and Application Insights tools. |
-| Best Practices | L76-L108 | Best practices for configuring, scaling, querying, and tuning Azure Monitor (logs, metrics, alerts, autoscale, AKS/VMs, Prometheus) for cost, performance, reliability, and data governance. |
-| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations: agents, alerts, logs, costs, visualization tools, and moving from legacy/third‑party monitoring to Azure Monitor. |
-| Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link integration. |
-| Limits & Quotas | L154-L173 | Limits, quotas, performance, and scaling behavior for Azure Monitor: ingestion and query limits, autoscale, latency, throttling, container/Prometheus specifics, and alert/workbook constraints. |
-| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, AKS/Prometheus/Grafana/App Insights. |
-| Configuration | L208-L381 | Configuring Azure Monitor data collection, alerts, diagnostics, workspaces, Application Insights, Kubernetes/VM monitoring, pipelines, pricing/retention, and related ARM/Policy-based setups. |
-| Integrations & Coding Patterns | L382-L454 | Integrating Azure Monitor with VMs, Prometheus, Grafana, ITSM, webhooks, REST APIs, and SDKs; exporting/ingesting logs and metrics, alert schemas, KQL transforms, and custom telemetry. |
-| Deployment | L455-L484 | Deploying and configuring Azure Monitor agents, alerts, Application Insights, Profiler, and workbooks across VMs, AKS, App Service, containers, and regions (including migration and policy-based at-scale setup). |
+| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents, data collection, alerts, autoscale, logs/metrics, Container insights, Application Insights, ITSM, and VM performance tools. |
+| Best Practices | L76-L108 | Best practices for Azure Monitor alerts, logs, metrics, autoscale, AKS/VM monitoring, cost optimization, Prometheus/PromQL, and operational reliability/performance tuning. |
+| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations: agents, alerts, logs, costs, visualization tools, SCOM/Splunk/Prometheus moves, and related billing/retention decisions. |
+| Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link-based secure topologies. |
+| Limits & Quotas | L154-L173 | Scaling, throughput, and quota limits for Azure Monitor logs/metrics, including ingestion caps, timeouts, autoscale, container/Prometheus performance, and alert/workbook constraints. |
+| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, Prometheus/Grafana, and policy compliance. |
+| Configuration | L208-L381 | Configuring Azure Monitor end to end: agents, DCRs, diagnostics, alerts, autoscale, Kubernetes/Prometheus, Application Insights, workspaces, logs/metrics routing, retention, and workbooks. |
+| Integrations & Coding Patterns | L382-L454 | Patterns and code for integrating Azure Monitor: collecting custom/VM/Prometheus metrics and logs, using REST/ingestion APIs, alerts/webhooks/ITSM, Grafana/Power BI/notebooks, and App Insights extensions. |
+| Deployment | L455-L484 | How to deploy and manage Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments. |
 
 ### Troubleshooting
 | Topic | URL |

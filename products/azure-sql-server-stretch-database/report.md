@@ -1,4 +1,35 @@
-# SQL Server Stretch Database Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance for choosing Azure SQL/SQL Server deployment, pricing,
+    HA/DR, and migration options (DTU vs vCore, Hyperscale, MI, VMs), plus cost optimization
+    and licensing strategies.
+  configuration: 'Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security,
+    backups, HA/DR, monitoring, maintenance, automation, and deployment via portal,
+    CLI, PowerShell, ARM/Bicep/Terraform.'
+  integrations: Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers,
+    Excel, Spark, Stream Analytics) plus elastic scale, jobs, replication, failover,
+    backup/restore, and automation via PowerShell/APIs.
+  troubleshooting: 'Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O,
+    deadlocks, blocking), query tuning, auditing, Data Sync, connectivity, Kerberos,
+    and SQL on Azure VM/SQL IaaS problems.'
+  security: 'Security, auth, and compliance for Azure SQL: Entra/MFA, managed identities,
+    network controls, auditing/ATP, TDE/CMK, Always Encrypted, Windows/Kerberos auth,
+    and best-practice hardening.'
+  deployment: Deploying, moving, restoring, and failing over Azure SQL (DB, Managed
+    Instance, SQL on VMs), including geo-replication, backups, region moves, sharding,
+    and migrations from other databases.
+  architecture-patterns: Patterns for high availability, DR, geo-replication, connectivity,
+    and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs,
+    including Always On and WSFC setups.
+  best-practices: Best practices for performance, HA/DR, auditing, storage, licensing,
+    and T‑SQL compatibility across Azure SQL Database, Managed Instance, and SQL Server
+    on Azure VMs.
+  limits-quotas: Backup behavior, free-tier offers/quotas, DTU/vCore resource limits,
+    maintenance windows, and sizing/network constraints for Azure SQL Database and
+    Managed Instance
+---
+# Azure Sql Server Stretch Database Crawl Report
 
 ## Summary
 
@@ -10,8 +41,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 577
+- **Updated Pages**: 0
+- **Unchanged**: 583
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-server-stretch-database/azure-sql-server-stretch-database.csv`
 
@@ -31,21 +62,6 @@
 | *(Unclassified)* | 160 | 27.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2025-11-03T08:00:00.000Z → 2026-01-29T08:00:00.000Z
-- [Failover groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql)
-  - Updated: 2025-01-24T08:00:00.000Z → 2026-01-29T08:00:00.000Z
-- [Create failover group](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql)
-  - Updated: 2025-08-05T08:00:00.000Z → 2026-01-29T08:00:00.000Z
-- [Managed Instance link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-01-28T08:00:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql)
-  - Updated: 2025-09-30T22:38:00.000Z → 2026-01-29T18:37:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql)
-  - Updated: 2025-05-05T17:46:00.000Z → 2026-01-29T18:37:00.000Z
 
 ## Classified Pages
 

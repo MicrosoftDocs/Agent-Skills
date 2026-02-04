@@ -1,6 +1,6 @@
 ---
 name: azure-ai-services
-description: Expert knowledge for Azure Ai Services development including configuration, decision making, security, integrations & coding patterns, limits & quotas, deployment, troubleshooting, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Ai Services applications.
+description: Expert knowledge for Azure Ai Services development including configuration, decision making, security, troubleshooting, integrations & coding patterns, limits & quotas, deployment, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Ai Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
@@ -20,19 +20,20 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L43 | Diagnosing and fixing Foundry/Azure OpenAI issues: deployments, monitors, private endpoints, fine-tuning, webhooks, Marketplace access, and prompt flow/compute session errors. |
-| Best Practices | L44-L56 | Best practices for Azure OpenAI and Foundry: prompt patterns, reasoning models, embeddings, performance/latency tuning, On Your Data, and high availability/disaster recovery for agents. |
-| Decision Making | L57-L89 | Guides for choosing models, regions, SDKs, and resource types; planning costs, throughput, HA/DR, and migrations; and deciding when/how to upgrade, fine-tune, or retire Azure OpenAI/Foundry setups. |
-| Architecture & Design Patterns | L90-L95 | Designing resilient Azure OpenAI/Foundry Agent architectures, including disaster recovery, failover, and business continuity (BCDR) strategies across regions and services |
-| Limits & Quotas | L96-L109 | Quotas, rate limits, and cost controls for Foundry and Azure OpenAI: how to view, manage, increase, batch jobs, prompt caching, dynamic TPM, and reinforcement fine-tuning limits. |
-| Security | L110-L155 | Security, networking, identity, RBAC, encryption, safety/guardrails, and data privacy for Foundry, Azure OpenAI, and Agent Service, including VNets, Private Link, policies, and compliance. |
-| Configuration | L156-L209 | Configuring and managing Azure AI/Foundry agents and models: hosting, networking, storage, monitoring, content filters, evaluations, fine-tuning, and On Your Data search/backends. |
-| Integrations & Coding Patterns | L210-L302 | Patterns and code to integrate Azure AI/Foundry/OpenAI models and agents with tools, data sources, search/RAG, functions, SDKs, realtime audio, and REST APIs. |
-| Deployment | L303-L326 | Deploying and hosting Foundry and Azure OpenAI models (serverless and managed), automating hub/project setup, CI/CD evaluations, regional availability, and sample app deployments |
+| Troubleshooting | L33-L44 | Diagnosing and fixing Foundry/Azure OpenAI issues: deployments, monitors, metrics, private endpoints, Marketplace access, fine-tuning, webhooks, prompt flow, and classic portal errors. |
+| Best Practices | L45-L57 | Best practices for Azure OpenAI/Foundry: prompt and reasoning patterns, embeddings for Guardrails, performance tuning, On Your Data, and high availability/disaster recovery for agents. |
+| Decision Making | L58-L90 | Guidance for choosing models, regions, SDKs, and resource types, planning costs/throughput, migrations, upgrades, HA/DR, and benchmarking/leaderboards for Foundry and Azure OpenAI. |
+| Architecture & Design Patterns | L91-L96 | Designing resilient Azure OpenAI/Foundry Agent architectures, including disaster recovery, business continuity, failover strategies, and BCDR best practices for production deployments |
+| Limits & Quotas | L97-L111 | Quotas, rate limits, and cost controls for Azure OpenAI and Foundry (models, agents, hubs), including increasing limits, batch jobs, dynamic TPM, prompt caching, and fine-tuning budgets |
+| Security | L112-L157 | Security, networking, identity, and governance for Foundry/Azure OpenAI: RBAC, Entra auth, VNets/Private Link, CMK encryption, safety/guardrails, data privacy, and Azure Policy controls. |
+| Configuration | L158-L210 | Configuring and managing Azure AI/Foundry and Azure OpenAI: deployments, networking, storage, content filters, monitoring, evaluations, fine-tuning, tools, and On Your Data integrations. |
+| Integrations & Coding Patterns | L211-L303 | Patterns and code to integrate Azure AI/Foundry/OpenAI models and agents with tools (search, RAG, functions, MCP, prompt flow), external apps, telemetry, and multimodal/realtime APIs. |
+| Deployment | L304-L327 | Deploying and hosting Foundry and Azure OpenAI models (serverless and managed), automating hub/project setup (Bicep, Terraform, CLI/SDK), CI/CD evaluations, and regional/feature availability. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Monitor Foundry Agent Service metrics with Azure Monitor | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/metrics?view=foundry-classic |
 | Configure and troubleshoot Azure Marketplace access for Foundry Models | https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/how-to/configure-marketplace?view=foundry-classic |
 | Troubleshoot common issues in prompt flow and compute sessions | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/prompt-flow-troubleshoot?view=foundry-classic |
 | Troubleshoot deployments and monitors in Microsoft Foundry portal | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/troubleshoot-deploy-and-monitor?view=foundry-classic |
@@ -100,6 +101,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Reference quotas and limits for Foundry Models | https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/quotas-limits?view=foundry-classic |
 | Manage and increase quotas for Foundry hub resources | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/hub-quota?view=foundry-classic |
 | Manage and request increased Foundry resource quotas | https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/quota?view=foundry-classic |
+| Azure OpenAI FAQ with model and usage limits | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/faq?view=foundry-classic |
 | Run large-scale jobs with Azure OpenAI Batch API | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/batch?view=foundry-classic |
 | Configure Azure OpenAI dynamic quota and TPM behavior | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/dynamic-quota?view=foundry-classic |
 | Use prompt caching for long Azure OpenAI prompts | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/prompt-caching?view=foundry-classic |
@@ -157,7 +159,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Configure and manage capability hosts in Foundry Agent Service | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/capability-hosts?view=foundry-classic |
-| Configure Azure Monitor metrics for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/metrics?view=foundry-classic |
 | Configure and use Code Interpreter in Foundry agents | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools-classic/code-interpreter?view=foundry-classic |
 | Configure Foundry Agent Service to use existing resources | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/use-your-own-resources?view=foundry-classic |
 | Reference metrics and logs for Foundry Agent Service monitoring | https://learn.microsoft.com/en-us/azure/ai-foundry/agents/reference/monitor-service?view=foundry-classic |
@@ -192,7 +193,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure and run Azure OpenAI model evaluations | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/evaluations?view=foundry-classic |
 | Test fine-tuned Azure OpenAI models in Foundry | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tune-test?view=foundry-classic |
 | Configure fine-tuning to improve tool calling in Azure OpenAI | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-functions?view=foundry-classic |
-| Configure vision fine-tuning with image inputs | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry-classic |
+| Configure Azure OpenAI vision fine-tuning with images | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry-classic |
 | Configure and run fine-tuning for Foundry models | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/fine-tuning?view=foundry-classic |
 | Configure monitoring and logging for Azure OpenAI with Azure Monitor | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/monitor-openai?view=foundry-classic |
 | Configure predicted outputs to reduce latency | https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/predicted-outputs?view=foundry-classic |

@@ -1,4 +1,25 @@
-# Networking Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: 'Guidance on choosing Azure network designs: using region latency
+    data, selecting secure topologies and app delivery services, and planning networking
+    for remote and hybrid work scenarios.'
+  architecture-patterns: Analyzing and troubleshooting Azure network routing and packet
+    paths, including control-plane route decisions and data-plane flow through VNets,
+    gateways, firewalls, and peering.
+  security: Designing Zero Trust VNets for web apps and enforcing network security/compliance
+    using built‑in Azure Policy definitions and policy-based controls
+  integrations: Querying and analyzing Azure networking resources (VNets, NSGs, IPs,
+    etc.) using Azure Resource Graph, with example Kusto queries and patterns for
+    inventory, compliance, and governance.
+  best-practices: Guidance on boosting Azure NVA/VM network throughput and latency
+    using Accelerated Connections, including configuration, tuning, and performance
+    best practices.
+  troubleshooting: Diagnosing and resolving Microsoft.Network resource provisioning
+    failures in Azure, including common error patterns, causes, and step-by-step remediation
+    guidance.
+---
+# Azure Networking Crawl Report
 
 ## Summary
 

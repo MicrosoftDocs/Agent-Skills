@@ -1,4 +1,10 @@
-# Scheduler Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  decision-making: Guidance for migrating Azure Scheduler jobs to Azure Logic Apps,
+    including feature mapping, workflow redesign, and configuration steps.
+---
+# Azure Scheduler Crawl Report
 
 ## Summary
 

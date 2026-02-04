@@ -1,3 +1,24 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Security and compliance for Azure Government: isolation models, DoD IL5,
+    FedRAMP scope, TIC guidance, Entra auth, and Secure Azure Computing Architecture
+    for US gov workloads.'
+  decision-making: Guidance on choosing Azure Government vs other clouds, compliance
+    (FedRAMP, NERC CIP, export control), identity, DoD/public safety workloads, and
+    partner/environment selection.
+  deployment: 'Guides for deploying to Azure Government: configuring Azure Pipelines
+    CI/CD, publishing App Service apps, and provisioning VMs in government regions.'
+  configuration: 'Configuring tools and services for Azure Government: CLI/PowerShell,
+    SSMS, Visual Studio, VM extensions, billing, Marketplace usage/publishing, ASE
+    baseline, and Azure Monitor logs.'
+  best-practices: Guidance on naming Azure resources to avoid leaking sensitive info
+    (e.g., user data, locations, project details) while keeping names consistent,
+    compliant, and manageable.
+  integrations: Using Azure Storage REST/SDK APIs in Azure Government, including endpoint
+    differences, authentication, configuration, and code patterns for gov cloud storage
+    accounts.
+---
 # Azure Government Crawl Report
 
 ## Summary

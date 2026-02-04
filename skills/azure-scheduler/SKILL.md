@@ -20,7 +20,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L25-L28 | Guidance for migrating from deprecated Azure Scheduler to Logic Apps, including mapping job concepts, configuring schedules, and replacing existing scheduled workflows. |
+| Decision Making | L25-L28 | Guidance for migrating Azure Scheduler jobs to Azure Logic Apps, including feature mapping, workflow redesign, and configuration steps. |
 
 ### Decision Making
 | Topic | URL |

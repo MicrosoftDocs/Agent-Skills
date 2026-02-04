@@ -1,4 +1,24 @@
-# Service Connector Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Security and access control for Service Connector: required permissions,
+    Entra RBAC roles it assigns, and how to configure authentication methods for connected
+    services.'
+  deployment: Info on which regions support Service Connector per compute type, and
+    how to create/manage Service Connector connections using infrastructure-as-code
+    tools like Bicep, ARM, or Terraform.
+  configuration: How to list and use connection settings created by Service Connector,
+    and which Azure CLI parameters to pass when creating or managing those connections
+  integrations: How to connect Azure apps to databases, messaging, storage, AI, and
+    external services using Service Connector, including auth setup, config, and language-specific
+    connection patterns.
+  troubleshooting: Diagnosing and resolving Service Connector connection failures,
+    auth/config errors, error codes, and common runtime issues when linking Azure
+    compute to external services.
+  limits-quotas: Known limitations of Azure Service Connector, unsupported scenarios,
+    and suggested workarounds or alternatives for affected connection types and environments
+---
+# Azure Service Connector Crawl Report
 
 ## Summary
 

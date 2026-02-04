@@ -1,4 +1,27 @@
-# Update Manager Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring Azure Update Manager: client setup, scopes, ESU, hotpatching,
+    auto/guest patching, policy-based assessments, networking, and pre/post maintenance
+    events.'
+  security: Configuring secure permissions and roles for Update Manager, enabling
+    cross-subscription patching safely, and handling security vulnerabilities including
+    Ubuntu Pro integration.
+  decision-making: Guidance on planning and executing migration from Configuration
+    Manager (SCCM) to Azure Update Manager, including strategy, prerequisites, and
+    high-level steps.
+  best-practices: Guidance on planning and configuring OS/SQL patching for SQL Server
+    on Azure VMs, including maintenance windows, automation, sequencing, and minimizing
+    downtime.
+  integrations: Using Update Manager via REST and Resource Graph, plus patterns to
+    trigger Functions or Automation runbooks from maintenance events and sample queries
+    for update/patch data
+  limits-quotas: Supported OSes, update types/sources, custom image limits, and which
+    workloads or configurations are unsupported in Azure Update Manager.
+  troubleshooting: Diagnosing and fixing Azure Update Manager issues, including deployment
+    failures, assessment errors, agent/extension problems, and common error codes/logs.
+---
+# Azure Update Center Crawl Report
 
 ## Summary
 

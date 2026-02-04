@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and resolving Azure Deployment Environments failures when deploying custom images, including common causes, logs to check, and remediation steps. |
-| Best Practices | L35-L39 | Guidance on organizing Azure Deployment Environments catalogs and templates to maximize cache reuse, reduce deployment time, and improve template management efficiency. |
-| Security | L40-L47 | Planning and assigning ADE RBAC roles, configuring managed identities, and authenticating to ADE REST APIs with Azure CLI for secure access and deployments |
-| Configuration | L48-L62 | Configuring Azure Deployment Environments: environment.yaml schema, catalogs (GitHub/Azure Repos), dev center/projects, environment types, CLI/ARM setup, and environment variables in images. |
-| Integrations & Coding Patterns | L63-L68 | Working with custom container images in Azure Deployment Environments, including building, publishing, and using ADE CLI commands to automate custom image workflows. |
-| Deployment | L69-L73 | Using Azure Pipelines or GitHub Actions to automate ADE environment deployments, including CI/CD integration, configuration, and workflow examples. |
+| Troubleshooting | L30-L34 | Diagnosing and fixing Azure Deployment Environments failures when deploying custom images, including common error causes, logs to check, and remediation steps. |
+| Best Practices | L35-L39 | Guidance on organizing Azure Deployment Environments (ADE) catalogs and templates to maximize cache reuse, reduce deployment time, and improve template management efficiency. |
+| Security | L40-L47 | RBAC and identity setup for ADE: planning and assigning ADE roles, configuring managed identities, and authenticating to ADE REST APIs via Azure CLI. |
+| Configuration | L48-L62 | Configuring ADE dev centers, projects, catalogs, and environment types, using environment.yaml, CLI/ARM setup, and referencing environment variables in custom images. |
+| Integrations & Coding Patterns | L63-L68 | Using custom container images with Azure Deployment Environments, including building, publishing, and managing images via ADE CLI workflows |
+| Deployment | L69-L73 | Setting up CI/CD to deploy Azure Deployment Environments using Azure Pipelines or GitHub Actions, including workflow configuration and integration steps. |
 
 ### Troubleshooting
 | Topic | URL |

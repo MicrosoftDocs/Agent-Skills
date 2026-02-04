@@ -1,4 +1,29 @@
-# Dev Box Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  best-practices: Guidance on creating and maintaining Dev Box images, troubleshooting
+    image issues, and optimizing Visual Studio by pre-generating caches in base images.
+  deployment: Guidance to design, plan, and roll out a Microsoft Dev Box deployment,
+    including prerequisites, network/identity setup, and environment configuration.
+  configuration: 'Configuring Dev Box environments: images, catalogs, pools, projects,
+    networking, policies (auto-stop/delete, hibernation), customization tasks/files,
+    monitoring, and ARM/template-based setup.'
+  security: 'Securing Dev Boxes: RBAC role planning/assignment, Entra ID SSO, REST
+    API auth, Key Vault/service principals, and Intune/Conditional Access/Endpoint
+    Privilege Management.'
+  decision-making: Guidance on when and how to use serverless GPU compute with Azure
+    Dev Box, including scenarios, benefits, and considerations for GPU-accelerated
+    development workloads.
+  limits-quotas: Managing Dev Box capacity and quotas, viewing/increasing subscription
+    resource limits, and setting per-user Dev Box count/size limits to control usage
+    and costs
+  troubleshooting: Diagnosing and fixing Dev Box connection issues (including known
+    errors), repairing connectivity with built-in tools, and resolving stale or inaccessible
+    Dev Boxes in Windows Task view.
+  integrations: Using VS Code dev tunnels to securely connect to Azure Dev Box, including
+    setup, authentication, and remote development workflow configuration.
+---
+# Azure Dev Box Crawl Report
 
 ## Summary
 
@@ -10,8 +35,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -30,11 +55,6 @@
 | *(Unclassified)* | 22 | 33.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements)
-  - Updated: 2024-11-06T12:14:00.000Z → 2026-01-29T23:12:00.000Z
 
 ## Classified Pages
 

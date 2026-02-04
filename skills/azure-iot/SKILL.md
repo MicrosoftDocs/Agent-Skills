@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and fixing common issues in Azure IoT embedded device tutorials, including setup errors, connectivity problems, build failures, and debugging steps for sample projects. |
-| Best Practices | L35-L39 | Guidance on designing robust IoT device reconnection logic, handling transient network failures, backoff strategies, and ensuring reliable connectivity to Azure IoT services. |
-| Decision Making | L40-L45 | Guidance on choosing IoT Plug and Play device models and deciding between Azure IoT C vs Embedded C SDKs based on device, performance, and integration needs. |
-| Architecture & Design Patterns | L46-L51 | Reference architectures for industrial IoT on Azure, including dataspace concepts, components, data flows, and best‑practice design patterns for scalable, secure industrial solutions. |
-| Configuration | L52-L61 | Configuring IoT Plug and Play models and MQTT messaging (DTDL, payload formats, conventions) and setting up/using MQTT connections and IoT Explorer with IoT Hub and DPS |
-| Integrations & Coding Patterns | L62-L68 | Patterns and code for integrating IoT Plug and Play devices/services, working with digital twins via Azure SDKs, and connecting Azure IoT with on‑prem SAP ERP systems |
+| Troubleshooting | L30-L34 | Debugging and resolving issues in Azure IoT embedded device tutorials, including setup problems, connection failures, build errors, and common device-to-cloud communication issues. |
+| Best Practices | L35-L39 | Guidance on designing robust device reconnection logic for Azure IoT, handling transient network failures, backoff strategies, and ensuring reliable, scalable device connectivity. |
+| Decision Making | L40-L45 | Guidance on choosing IoT Plug and Play device models and deciding between Azure IoT C vs Embedded C SDKs based on device, performance, and integration needs |
+| Architecture & Design Patterns | L46-L51 | Industrial IoT solution blueprints: reference architectures, dataspace patterns, and guidance for designing scalable, secure industrial data and device integration on Azure. |
+| Configuration | L52-L61 | Configuring IoT Plug and Play models and MQTT messaging (DTDL, payload formats, message conventions) and setting up MQTT connections to IoT Hub and Device Provisioning Service. |
+| Integrations & Coding Patterns | L62-L68 | Patterns and code for building IoT Plug and Play devices/services, working with digital twins, and integrating Azure IoT data and events with on-prem SAP ERP systems. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,4 +1,14 @@
-# Azure DevTest offer (Visual Studio subscriber benefit) Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: 'Securing Dev/Test environments: configuring security/governance policies,
+    managing directory access, roles, permissions, and least-privilege setup for users
+    in Azure Dev/Test.'
+  troubleshooting: Diagnosing and resolving issues with expired Visual Studio Dev/Test
+    subscriptions, including renewal options, access restoration, and handling impacted
+    Azure resources.
+---
+# Azure Devtest Crawl Report
 
 ## Summary
 

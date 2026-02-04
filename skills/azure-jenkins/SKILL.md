@@ -20,9 +20,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Configuration | L27-L31 | Configuring Jenkins with Azure-specific plugins for tasks like VM agents, Azure DevOps integration, storage, credentials, and deploying to Azure services. |
-| Integrations & Coding Patterns | L32-L36 | Using Azure Blob Storage with Jenkins, configuring it as a build artifact repository, and managing upload, retention, and retrieval of build outputs. |
-| Deployment | L37-L49 | Jenkins deployment guides for Azure: setting up agents/VMs, and building CI/CD pipelines to deploy apps and microservices to AKS, App Service, Functions, Spring Apps, and Service Fabric. |
+| Configuration | L27-L31 | Configuring Jenkins with Azure-specific plugins for builds, deployments, credentials, and integrating services like Azure DevOps, VMs, storage, and web apps. |
+| Integrations & Coding Patterns | L32-L36 | Configuring Jenkins to store and manage build artifacts in Azure Blob Storage, including setup, authentication, and usage patterns for artifact repositories. |
+| Deployment | L37-L49 | Jenkins deployment to Azure: installing Jenkins, configuring agents (VM, ACI), and building CI/CD pipelines to deploy apps to AKS, App Service, Functions, Spring Apps, Service Fabric, and Linux VMs. |
 
 ### Configuration
 | Topic | URL |

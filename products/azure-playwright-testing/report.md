@@ -1,4 +1,22 @@
-# Playwright Testing Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  best-practices: Best practices for speeding up Playwright Testing runs, configuring
+    visual regression tests, and reducing latency via optimal regional workspace setup.
+  security: Managing workspace access tokens, setting up authentication/authorization,
+    and configuring RBAC roles and permissions for Microsoft Playwright Testing workspaces.
+  configuration: Setting up and managing Playwright Testing workspaces, configuring
+    playwright.service.config.ts and service features, and enabling/using monitoring,
+    diagnostics, and telemetry data.
+  integrations: Patterns for connecting Azure Playwright Testing to local/private
+    apps and configuring reporting when tests are sharded or split across multiple
+    runs.
+  limits-quotas: Details on Microsoft Playwright Testing usage limits, free trial
+    quotas, concurrency caps, and configurable limits that affect test runs and scaling
+  troubleshooting: Diagnosing and fixing Playwright test run failures in Azure, including
+    portal issues and resolving AADSTS7000112 Azure AD sign-in/auth errors
+---
+# Azure Playwright Testing Crawl Report
 
 ## Summary
 

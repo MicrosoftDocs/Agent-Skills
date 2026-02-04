@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing bot runtime (HTTP 500), auth, channel/configuration errors, and other common Azure Bot Service issues and failure patterns. |
-| Best Practices | L41-L50 | Guidance on conversation lifecycle, interruptions, security, welcome flows, debugging techniques, and unit testing patterns for building robust Azure Bot Service/Bot Framework v4 bots. |
-| Decision Making | L51-L56 | Guidance on selecting the right Microsoft chatbot platform and choosing the appropriate Direct Line channel option based on architecture, features, and integration needs. |
-| Architecture & Design Patterns | L57-L65 | Designing complex bot dialog flows, orchestrating multiple LUIS/QnA models, and embedding Azure bots into native apps or websites using recommended patterns. |
-| Limits & Quotas | L66-L71 | Timeout limits for bot operations, handling long-running tasks, and a matrix of which features are supported on each Azure Bot Service channel. |
-| Security | L72-L92 | Securing bots with authentication/SSO (OAuth, federated identity, Web Chat/Direct Line), network isolation, encryption, and Bot Connector/Direct Line token and security configuration. |
-| Configuration | L93-L130 | Configuring and debugging bots: Azure Bot resource settings, channels/Direct Line, state and storage, adaptive dialogs, skills, telemetry/Insights, and language/QnA/LU file setup. |
-| Integrations & Coding Patterns | L131-L187 | Patterns and APIs for integrating bots with channels and services (Direct Line, SMS, Slack, Web Chat, email), sending rich messages/media, dialogs, skills, QnA/LUIS, and telemetry. |
-| Deployment | L188-L199 | Deploying and registering bots in Azure (incl. 21Vianet/US Gov clouds), setting up App Service and resources via CLI/ARM, and using Dev Tunnels to debug channels and skills. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing bot runtime (HTTP 500), auth, channel/configuration errors, and other common Azure Bot Service issues with step-by-step troubleshooting guidance. |
+| Best Practices | L41-L50 | Guidance on conversation lifecycle, interruptions, security, welcome flows, debugging, and unit testing to build robust, safe, and maintainable Azure Bot Framework v4 bots. |
+| Decision Making | L51-L56 | Guidance on choosing the right Microsoft chatbot platform and selecting the best Direct Line channel option based on architecture, features, and integration needs. |
+| Architecture & Design Patterns | L57-L65 | Designing complex bot dialog flows, modular components, multi-LUIS/QnA routing with Orchestrator, and embedding bots into native apps or websites. |
+| Limits & Quotas | L66-L71 | Guidance on bot timeouts/long-running operations and a matrix of which features are supported on each Azure Bot Service channel. |
+| Security | L72-L92 | Authentication, SSO, OAuth/OIDC, identity providers, Direct Line/Web Chat auth, encryption, privacy, and network isolation/security configuration for Azure Bot Service. |
+| Configuration | L93-L130 | Configuring and debugging Azure bots: state/storage, adaptive dialogs, channels (Direct Line), skills, telemetry (App Insights), language assets (.lg/.lu/.qna), and Emulator-based troubleshooting. |
+| Integrations & Coding Patterns | L131-L187 | Patterns and APIs for integrating bots with channels and services (Direct Line, Web Chat, SMS, email, QnA, LUIS), sending rich messages/media, dialogs, skills, telemetry, and custom storage. |
+| Deployment | L188-L199 | Deploying and registering bots (incl. external/sovereign clouds), setting up App Service and resources via CLI/ARM, and using Dev Tunnels to debug channels and skills. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,4 +1,22 @@
-# Operator Service Manager Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  best-practices: Best practices for onboarding, configuring, upgrading, and cleaning
+    up AOSM CNFs/Helm artifacts, including safe upgrade flows, tests, and failure-handling
+    controls.
+  integrations: Using AOSM CLI/ARM/Helm to onboard CNFs/VNFs, manage artifact stores
+    (ACR/Storage), and design/publish network services and operators for Azure Operator
+    Nexus.
+  configuration: 'Configuring AOSM deployment behavior: edge-resilient cluster registry,
+    tag-based deployment interruption, Helm options for failed releases, and geo-replicated
+    publisher artifact storage.'
+  security: 'Securing AOSM: configuring Private Link to artifact stores, defining/assigning
+    custom RBAC roles, and using user-assigned managed identities for long-running
+    SNS operations.'
+  troubleshooting: Diagnosing and fixing AOSM onboarding issues with the Azure CLI
+    extension and troubleshooting Helm install failures in AOSM CNF deployments.
+---
+# Azure Operator Service Manager Crawl Report
 
 ## Summary
 
@@ -10,8 +28,8 @@
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 1
+- **Unchanged**: 46
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -27,6 +45,11 @@
 | *(Unclassified)* | 20 | 42.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes)
+  - Updated: 2025-10-23T22:10:00.000Z → 2026-02-03T23:16:00.000Z
 
 ## Classified Pages
 
@@ -77,10 +100,10 @@
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-create-site) | 0.25 | Portal-based site creation for VNFs; appears to be a basic how-to without specific numeric limits, config matrices, or error-resolution mappings. |
 | [Create site network service](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-create-site-network-service) | 0.25 | Creating a Site Network Service via the portal is described as a how-to. The summary doesn’t indicate detailed configuration parameter tables, limits, or error mappings; it appears to be a standard guided workflow, not deep expert content. |
 | [Delete operator resources](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-delete-operator-resources) | 0.25 | Describes the order for deleting operator resources (SNS, configuration group values, sites). While order matters, the summary suggests high-level procedural guidance rather than detailed configuration, limits, or error-code-based troubleshooting. |
+| [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes) | 0.20 | Release notes typically list version changes, regions, and high-level updates but not the structured limits, configuration tables, error-code mappings, or decision matrices required by the defined sub-skill types. The summary does not indicate presence of numeric limits, config parameters, or troubleshooting mappings. |
 | [Create a Site Network Service](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-create-site-network-service) | 0.20 | Creating a Site Network Service via portal; appears to be a basic workflow tutorial without specific limits, config tables, or troubleshooting mappings. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-create-site) | 0.20 | Step-by-step creation of a site in AOSM is likely a basic portal/CLI workflow without detailed configuration tables, limits, or product-specific troubleshooting. It reads as a procedural tutorial rather than expert configuration or patterns. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-create-site) | 0.20 | Portal-based site creation quickstart; description suggests procedural UI steps rather than detailed configuration parameters or expert-only constraints. |
 | [Role-Based Persona Model](https://learn.microsoft.com/en-us/azure/operator-service-manager/roles-interfaces) | 0.20 | Describes roles and interfaces conceptually; no concrete configs, limits, or troubleshooting mappings. |
 | [What is Azure Operator Service Manager?](https://learn.microsoft.com/en-us/azure/operator-service-manager/azure-operator-service-manager-overview) | 0.20 | High-level overview of Azure Operator Service Manager; no detailed limits, configs, or error mappings. |
-| [Azure Operator Service Manager Release Notes](https://learn.microsoft.com/en-us/azure/operator-service-manager/release-notes) | 0.10 | Release notes and regions listing; version/region info is not modeled as a reusable skill type here. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/operator-service-manager/glossary) | 0.05 | A glossary of terms is definitional/reference content, not expert operational knowledge. It doesn’t provide limits, configuration parameters, troubleshooting mappings, or decision matrices. |

@@ -1,4 +1,31 @@
-# Governance Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  security: Using Azure Policy, Blueprints, and guest configuration to enforce security
+    baselines, MFA, resource protection, and map Azure to standards like CIS, NIST,
+    ISO, FedRAMP, HIPAA, PCI, and regional regs.
+  integrations: Patterns and code samples for creating, assigning, and automating
+    Azure Policy/Blueprints and Resource Graph queries using PowerShell, CLI, ARM/Bicep,
+    Terraform, SDKs, VS Code, Event Grid, and Logic Apps
+  configuration: Authoring and configuring Azure Policy/Blueprint JSON, effects, remediation,
+    exemptions, compliance data, and Resource Graph queries for governance and configuration
+    enforcement
+  deployment: 'Deploying Azure governance at scale: CAF and compliance blueprints,
+    policy-as-code workflows, safe deployment practices, and enforcing Azure Policy
+    via DevOps pipelines.'
+  troubleshooting: Diagnosing and fixing errors in Azure Blueprints, Policy (incl.
+    AKS add-on), management group SDK, and Resource Graph (queries, alerts, Power
+    BI connector)
+  best-practices: Best practices for designing and testing Azure Policy (including
+    arrays) and writing efficient Azure Resource Graph queries that avoid throttling
+    and performance issues.
+  decision-making: Guidance on choosing Azure Policy for VMs, migrating from Automanage
+    Best Practices to Policy, and deciding when to use ARG GET/LIST vs the Query service
+  limits-quotas: 'Working with Azure Resource Graph at scale: avoiding throttling,
+    handling large result sets, pagination (incl. PowerShell), and querying via the
+    Power BI connector.'
+---
+# Azure Governance Crawl Report
 
 ## Summary
 
@@ -9,9 +36,9 @@
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 132
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 80
+- **Unchanged**: 212
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-governance/azure-governance.csv`
 
@@ -30,30 +57,6 @@
 | *(Unclassified)* | 60 | 28.3% |
 
 ## Changes
-
-### New Pages
-
-- [SWIFT CSP-CSCF 2021](https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2021)
-- [SWIFT CSP-CSCF 2022](https://learn.microsoft.com/en-us/azure/governance/policy/samples/swift-csp-cscf-2022)
-- [UK OFFICIAL and UK NHS](https://learn.microsoft.com/en-us/azure/governance/policy/samples/ukofficial-uknhs)
-- [CIS Microsoft Azure Foundations Benchmark 1.1.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-1-0)
-- [CIS Microsoft Azure Foundations Benchmark 1.3.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0)
-- [CMMC Level 3](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3)
-- [FedRAMP High](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-high)
-- [FedRAMP Moderate](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-fedramp-moderate)
-- [IRS 1075 September 2016](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-irs-1075-sept2016)
-- [ISO 27001:2013](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-iso-27001)
-- [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-azure-security-benchmark)
-- [NIST SP 800-53 Rev. 4](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r4)
-- [NIST SP 800-53 Rev. 5](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-53-r5)
-- [NIST SP 800-171 R2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-nist-sp-800-171-r2)
-- [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2)
-- [Azure Policy resource graph queries](https://learn.microsoft.com/en-us/azure/governance/policy/samples/resource-graph-samples)
-- [Logical operators](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-logical-operators)
-- [Fields](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-fields)
-- [Parameters](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-parameters)
-- [Effect details](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-effect-details)
-- *...and 112 more*
 
 ## Classified Pages
 

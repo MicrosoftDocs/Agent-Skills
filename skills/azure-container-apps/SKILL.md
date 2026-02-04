@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L46 | Diagnosing and fixing Container Apps issues: image pulls, container create/start/runtime errors, health probes, storage mounts, port config, debug console, logs, and Java log levels. |
-| Best Practices | L47-L52 | Guidance on reducing cold starts (scale, networking, configuration) and tuning Java memory/GC settings to optimize performance and reliability in Azure Container Apps. |
-| Decision Making | L53-L68 | Guidance on choosing Container Apps plans, compute/billing models, environments, GPUs, workflows, and migration options to match cost, performance, and hosting needs. |
-| Architecture & Design Patterns | L69-L73 | Designing and implementing blue-green deployment in Azure Container Apps, including traffic splitting, revision management, and safe rollout/rollback strategies. |
-| Limits & Quotas | L74-L78 | Details on Azure Container Apps resource limits and quotas, including app, environment, scaling, CPU/memory, concurrency, and regional or subscription-level constraints. |
-| Security | L79-L108 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, client certs, Dapr tokens), secrets & managed identity, network controls (VNet, NSG, firewall, WAF, private endpoints), and security best practices. |
-| Configuration | L109-L154 | Configuring Container Apps runtime: networking, ingress, domains/certs, storage, env vars, logging/monitoring, Dapr, Java features/metrics, sessions, routing, scaling, and workload profiles. |
-| Integrations & Coding Patterns | L155-L175 | Patterns and CLI steps for integrating Container Apps with Functions, KEDA, Spring (Admin, Config, Eureka, Gateway), Front Door, and AI code-interpreter/MCP dynamic session workflows. |
-| Deployment | L176-L183 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), plus scaling Dapr apps with KEDA/Bicep and creating zone-redundant apps in VNets. |
+| Troubleshooting | L33-L46 | Diagnosing and fixing Container Apps runtime issues: create/start failures, image pulls, probes, ports, storage mounts, OCI errors, Java log levels, and using logs/debug console. |
+| Best Practices | L47-L52 | Guidance on reducing cold starts (scaling, readiness, configuration) and tuning Java memory usage (JVM settings, resource limits) for better performance in Azure Container Apps |
+| Decision Making | L53-L68 | Guidance on choosing Container Apps plans, compute/billing models, environments, GPUs, workflows, and migration/hosting options to match cost, performance, and architecture needs. |
+| Architecture & Design Patterns | L69-L73 | Patterns for blue-green deployments in Azure Container Apps, including traffic splitting, versioning revisions, rollout workflows, and safe rollback strategies. |
+| Limits & Quotas | L74-L78 | Details on Azure Container Apps resource limits and quotas, including app, environment, scaling, networking, and per-subscription constraints. |
+| Security | L79-L108 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, client certs, Dapr tokens), secrets and managed identity, network controls (VNet, NSG, firewall, WAF), and security best practices. |
+| Configuration | L109-L154 | Configuring Container Apps environments and apps: networking, ingress, domains/certs, storage, env vars, health probes, Dapr, Java/metrics/APM, logging/monitoring, routing, sessions, and workload profiles. |
+| Integrations & Coding Patterns | L155-L175 | Patterns and how-tos for integrating Container Apps with Functions, KEDA, Spring components, Front Door, and AI/code-interpreter or MCP-based dynamic session workflows. |
+| Deployment | L176-L183 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), scaling with Dapr+KEDA+Bicep, and creating zone-redundant apps in virtual networks. |
 
 ### Troubleshooting
 | Topic | URL |

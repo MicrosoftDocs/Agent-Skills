@@ -1,4 +1,32 @@
-# Notification Hubs Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  integrations: Implementing and migrating push integrations with FCM/APNS/WNS, targeting
+    users/devices, templates/localization, and sending notifications from various
+    server-side SDKs and languages
+  decision-making: Guidance on selecting the right Notification Hubs pricing tier,
+    feature and scale differences between tiers, and how to upgrade or downgrade plans.
+  configuration: 'Configuring Notification Hubs: PNS credentials (APNS, FCM, WNS,
+    Baidu, MPNS), token-based auth, tags/routing, device registration patterns, Private
+    Link, and monitoring/diagnostic logs.'
+  deployment: How to provision and deploy Notification Hubs using infrastructure-as-code
+    tools like Bicep, ARM templates, and Terraform, including resource definitions
+    and configuration.
+  security: Encryption at rest, EU data residency, access control/roles, and TLS version
+    requirements for securing Azure Notification Hubs.
+  limits-quotas: Managing large-scale registration data via bulk export/import and
+    configuring scheduled or recurring push notifications in Notification Hubs.
+  architecture-patterns: Guidance on designing scalable, multi-tenant, and enterprise-grade
+    push notification architectures using Azure Notification Hubs and related Azure
+    services.
+  troubleshooting: Diagnosing and fixing common Notification Hubs issues, including
+    message drops, delivery failures, platform push errors, and configuration or credential
+    problems.
+  best-practices: 'Guidance for adapting to iOS 13 push changes: handling APNs token/format
+    updates, notification payload/authorization changes, and required client/server
+    code updates in Notification Hubs.'
+---
+# Azure Notification Hubs Crawl Report
 
 ## Summary
 

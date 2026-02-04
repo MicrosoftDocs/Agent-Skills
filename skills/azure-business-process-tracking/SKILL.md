@@ -20,8 +20,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Integrations & Coding Patterns | L26-L30 | Designing Logic Apps workflows that represent business process stages, correlate runs with process instances, and emit tracking data for end-to-end process monitoring |
-| Deployment | L31-L35 | How to deploy business processes and tracking profiles to Azure and set up CI/CD pipelines to automate building, testing, and releasing Business Process Tracking solutions. |
+| Integrations & Coding Patterns | L26-L30 | Designing Logic Apps workflows that represent business process stages, linking process milestones to workflow steps, and tracking execution across integrated systems |
+| Deployment | L31-L35 | Deploying business processes and tracking profiles to Azure, and setting up CI/CD pipelines (build, release, automation) for Business Process Tracking deployments. |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

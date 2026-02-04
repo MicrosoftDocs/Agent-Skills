@@ -1,3 +1,33 @@
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  deployment: 'Using App Configuration in deployments: CI/CD integration, Azure Pipelines
+    tasks, GitHub Actions sync, Helm/Kubernetes usage, geo-replication, and region
+    moves.'
+  configuration: Configuring and using App Configuration values, feature flags, snapshots,
+    dynamic refresh, and telemetry across languages, Kubernetes, AI agents, and REST
+    API/versioning.
+  security: 'Securing App Configuration: encryption, keys, RBAC, managed identities,
+    private endpoints, network lockdown, REST auth (Entra, HMAC), and Azure Policy/compliance
+    settings.'
+  architecture-patterns: Patterns for resilient, geo-redundant App Configuration setups,
+    disaster recovery strategies, and scaling client config delivery using Azure Front
+    Door.
+  limits-quotas: Point-in-time key-value reads, revision history and retention, soft
+    delete behavior, preview API lifecycle/deprecation, and REST API throttling limits
+    for App Configuration.
+  integrations: Patterns and code samples for integrating Azure App Configuration,
+    dynamic config reload, feature flags (targeting, variants, time windows, telemetry),
+    Key Vault refs, and REST API usage across .NET, Go, Java, JS, Python.
+  best-practices: Guidance on efficient Azure App Configuration usage patterns and
+    using synchronization tokens to keep distributed clients’ configuration reads
+    consistent and up to date.
+  decision-making: Guidance for upgrading Spring Boot applications to Azure App Configuration
+    Java library v6, including API changes, migration steps, and compatibility considerations.
+  troubleshooting: Diagnosing and fixing Azure App Configuration network access issues,
+    including firewall/VNet restrictions, private endpoints, DNS, and connectivity
+    error codes.
+---
 # Azure App Configuration Crawl Report
 
 ## Summary

@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L54 | Diagnosing and fixing Synapse workspace, SQL/Spark, Synapse Link, and Studio connectivity issues, including errors, failover, library installs, UTF-8 text, and Entra/tenant problems. |
-| Best Practices | L55-L109 | Performance, monitoring, and design best practices for Synapse: Spark tuning, Delta/Hyperspace, dedicated/serverless SQL optimization, indexing, transactions, and Oracle/Teradata/Netezza migration guidance. |
-| Decision Making | L110-L130 | Guidance for evaluating, planning, and cost-optimizing Synapse: choosing ingestion methods, POCs, migrations (e.g., Netezza/Teradata), table distribution, and historical query analysis. |
-| Architecture & Design Patterns | L131-L146 | Architectural guidance for Synapse workspaces, SQL (dedicated/serverless), Spark, table distribution/partitioning, workload isolation/management, and migrating data warehouses from Netezza/Teradata. |
-| Limits & Quotas | L147-L158 | Synapse limits and quotas: IP ranges, Spark autoscale bounds, SQL pool memory/concurrency and capacity caps, maintenance windows, Delta Lake v1 support, and Synapse Link feature/issue limits. |
-| Security | L159-L211 | Securing Synapse workspaces: auth/Entra ID, RBAC and access control, encryption and keys, network/private link/firewalls, managed identities, data exfiltration protection, and secure external connections. |
-| Configuration | L212-L252 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workload management, monitoring/metrics, Synapse Link, AML integration, and pipeline activities. |
-| Integrations & Coding Patterns | L253-L306 | Patterns and code to integrate Synapse Spark/SQL with ADLS, Cosmos DB, SQL, Delta, ML/AI services, logging/monitoring, and to load/query external data formats and ML models. |
-| Deployment | L307-L317 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM templates, environment design (dev/test/prod), region moves, restore points, and operational readiness. |
+| Troubleshooting | L33-L54 | Diagnosing and fixing Synapse workspace, SQL, Spark, Link, and Studio issues, including connectivity, failover, job errors, library installs, encoding, and tenant/impersonation problems. |
+| Best Practices | L55-L109 | Performance, monitoring, and design best practices for Synapse: Spark and SQL tuning, indexing, caching, workload management, data loading, T‑SQL patterns, and migrating from Netezza/Oracle/Teradata. |
+| Decision Making | L110-L130 | Guidance on planning Synapse adoption, POCs, migrations (Netezza/Teradata/enterprise DW), cost management, data ingestion, table distribution, and historical query analysis. |
+| Architecture & Design Patterns | L131-L146 | Architectural guidance for Synapse workspaces, SQL (dedicated/serverless), Spark, table distribution/partitioning, workload isolation/management, and modern DW design/migration from Netezza/Teradata. |
+| Limits & Quotas | L147-L158 | Limits, quotas, and configuration for Synapse networking, Spark autoscale, SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos DB/SQL) features and restrictions. |
+| Security | L159-L211 | Security, identity, and access control for Synapse: RBAC, Entra auth, MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and secure connectivity to data sources. |
+| Configuration | L212-L252 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML, and pipeline activities. |
+| Integrations & Coding Patterns | L253-L306 | Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI services, Cosmos DB, Delta/CDM, monitoring tools, and to load/query external data formats and SQL pools. |
+| Deployment | L307-L317 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM template deployment, environment design (dev/test/prod), region moves, restore points, and recovery. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -274,7 +274,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate Synapse Spark metrics with Prometheus APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/connect-monitor-azure-synapse-spark-application-level-metrics |
 | Use Spark CDM connector with Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-cdm-connector |
 | Move data between Azure Data Explorer and Synapse Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-kusto-connector |
-| Use Apache Spark connector for Azure SQL and SQL Server | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector |
+| Use Synapse Spark SQL connector for Azure SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-sql-connector |
 | Use MSSparkUtils utilities in Synapse Spark notebooks | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/microsoft-spark-utilities |
 | Mount external storage with Synapse Spark file APIs | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-file-mount-api |
 | Use Synapse Dedicated SQL Pool connector from Spark | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-spark-sql-pool-import-export |

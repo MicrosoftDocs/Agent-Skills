@@ -1,18 +1,48 @@
-# HDInsight Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring and tuning HDInsight clusters: networking, security,
+    autoscale, Ambari/Hive/HBase/Kafka/Spark settings, SSH/Jupyter/Zeppelin access,
+    logging/monitoring, and cluster customization.'
+  integrations: Patterns and code samples for connecting HDInsight (Hive, Spark, Kafka,
+    HBase, Sqoop) to tools and services (Power BI, Excel, SQL, Cosmos DB, IoT, REST,
+    SDKs) and automating cluster/jobs.
+  best-practices: Best practices for securing, configuring, tuning, scaling, and migrating
+    HDInsight clusters and workloads (Hadoop, Hive, HBase, Kafka, Spark), including
+    performance and reliability guidance
+  troubleshooting: 'Diagnosing and fixing HDInsight cluster issues: creation/auth,
+    networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN errors, performance,
+    disk/CPU, and common operational failures.'
+  security: 'Securing HDInsight clusters: identity and auth (Entra, MSI, Ranger, LDAP),
+    encryption at rest/in transit, Kafka/Hive/Spark security, and network lockdown
+    (Private Link, NSGs, firewalls, RBAC).'
+  architecture-patterns: 'HDInsight solution architectures: security (ESP), Hadoop
+    migration, business continuity/HA, virtual network design, and scaling Kafka clusters
+    with managed disks.'
+  decision-making: 'Guidance on HDInsight architecture choices: cluster sizing, storage,
+    networking, ETL tools, HBase/Kafka options, and migration/upgrade paths between
+    HDInsight versions.'
+  deployment: Guides for deploying and upgrading HDInsight/HBase clusters, including
+    migrations across versions/storage, ARM/REST/template-based creation, and automating
+    cluster lifecycle with runbooks.
+  limits-quotas: Node size/count limits, using external Hive/Oozie metastores, and
+    requesting/managing HDInsight CPU core quota increases.
+---
+# Azure Hdinsight Crawl Report
 
 ## Summary
 
-- **Total Pages**: 427
-- **Fetched**: 427
+- **Total Pages**: 425
+- **Fetched**: 425
 - **Fetch Failed**: 0
-- **Classified**: 319
+- **Classified**: 317
 - **Unclassified**: 108
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 427
-- **Deleted Pages**: 0
+- **Unchanged**: 425
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
 ## Classification Statistics
@@ -24,13 +54,18 @@
 | configuration | 49 | 11.5% |
 | decision-making | 15 | 3.5% |
 | deployment | 7 | 1.6% |
-| integrations | 73 | 17.1% |
+| integrations | 71 | 16.7% |
 | limits-quotas | 3 | 0.7% |
-| security | 39 | 9.1% |
-| troubleshooting | 93 | 21.8% |
-| *(Unclassified)* | 108 | 25.3% |
+| security | 39 | 9.2% |
+| troubleshooting | 93 | 21.9% |
+| *(Unclassified)* | 108 | 25.4% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Connect Excel to Apache Hadoop~~ (https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-excel-hive-odbc-driver)
+- ~~Query Hive with PowerShell and ODBC~~ (https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-query-odbc-driver-powershell)
 
 ## Classified Pages
 
@@ -180,7 +215,6 @@
 | [Cluster management best practices](https://learn.microsoft.com/en-us/azure/hdinsight/cluster-management-best-practices) | best-practices | 0.70 | Explicitly a best-practices page for HDInsight cluster management; likely contains product-specific DOs/DON’Ts, configuration recommendations, and operational gotchas beyond generic advice. |
 | [Configure blob storage as primary storage in Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight/configure-azure-blob-storage) | security | 0.70 | Focuses on using managed identities to authenticate Blob storage as primary storage during cluster creation; likely includes specific identity/auth settings and scopes that are product-specific security configuration. |
 | [Configure network virtual appliance](https://learn.microsoft.com/en-us/azure/hdinsight/network-virtual-appliance) | security | 0.70 | Describes extra configuration required when using non-Azure Firewall NVAs with HDInsight, including specific FQDNs/endpoints that must be allowed and product-specific traffic requirements. These are concrete, HDInsight-specific security/network rules rather than generic NVA concepts. |
-| [Connect Excel to Apache Hadoop](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-excel-hive-odbc-driver) | integrations | 0.70 | Explains setting up the Microsoft Hive ODBC driver for Excel; likely includes DSN/driver settings and connection parameters unique to this integration. |
 | [Connect HDInsight Kafka cluster with client VM in different VNet](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/connect-kafka-with-vnet) | integrations | 0.70 | Details Azure-specific VNet peering or gateway configuration to connect a client VM to an HDInsight Kafka cluster in another VNet, which is product-specific integration guidance. |
 | [Connect HDInsight with on-premises network](https://learn.microsoft.com/en-us/azure/hdinsight/connect-on-premises-network) | configuration | 0.70 | Describes HDInsight-specific VNet and VPN gateway configuration plus DNS resolution setup between on-premises and HDInsight, which is detailed configuration guidance. |
 | [Connect Power BI to Apache Hadoop](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-hive-power-bi) | integrations | 0.70 | Shows how to use the Hive ODBC driver from Power BI Desktop; involves driver configuration and connector selection specific to HDInsight Hive. |
@@ -231,7 +265,6 @@
 | [Optimize for advisor recommendations](https://learn.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-advisor) | best-practices | 0.70 | Describes specific advisor recommendations and how to optimize HBase on HDInsight accordingly, including product-specific tuning guidance and gotchas. |
 | [Optimize memory usage](https://learn.microsoft.com/en-us/azure/hdinsight/spark/optimize-memory-usage) | best-practices | 0.70 | Contains concrete Spark memory tuning guidance (executor/driver memory, caching strategies, configuration values) tailored to HDInsight clusters. These are product-specific performance best practices rather than generic theory. |
 | [Performance tuning](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-performance-tuning) | best-practices | 0.70 | Provides tuning suggestions for producer, broker, consumer, and OS settings; these are product-specific performance recommendations and configuration values. |
-| [Query Hive with PowerShell and ODBC](https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-query-odbc-driver-powershell) | integrations | 0.70 | Uses Microsoft Hive ODBC driver with PowerShell; typically includes DSN/connection string parameters, driver options, and HDInsight-specific connection details, which are integration-focused. |
 | [Remote jobs with Apache Livy](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-livy-rest-interface) | integrations | 0.70 | Shows concrete REST API usage (endpoints, payloads, parameters) for Apache Livy on HDInsight using cURL. This is a product-specific integration pattern with API parameters and configuration details. |
 | [Restrict access to data](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-storage-sharedaccesssignature-permissions) | security | 0.70 | Product-specific guidance on using Azure Blob SAS to constrain HDInsight access; likely includes concrete permission combinations and configuration steps unique to HDInsight–Blob integration. |
 | [Restrict public connectivity](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-restrict-public-connectivity) | security | 0.70 | Describes how to configure restricted/private connectivity for HDInsight, likely including specific network/security settings and controls unique to this service. |

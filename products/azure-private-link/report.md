@@ -1,4 +1,26 @@
-# Private Link Crawl Report
+---
+generated_at: '2026-02-04'
+category_descriptions:
+  configuration: 'Configuring Azure Private Link/endpoint behavior: subnet policies,
+    DNS zones, routing, SNAT, security perimeters, and monitoring/diagnostic logs.'
+  limits-quotas: Guidance on increasing virtual network scale limits for Azure Private
+    Endpoints, including supported maximums and how to request higher quotas.
+  security: Configuring Azure RBAC roles and permissions needed to create, manage,
+    and secure Private Link resources and Network Security Perimeters.
+  best-practices: DNS design and configuration guidance for Azure Private Endpoints,
+    including zone setup, name resolution patterns, split-horizon DNS, and integration
+    with on-premises DNS systems
+  decision-making: Guidance on estimating and optimizing Private Link costs, comparing
+    design options (zonal vs regional, hub-spoke vs mesh), and understanding trade-offs
+    between security, performance, and spend.
+  troubleshooting: Diagnosing and fixing Azure Private Endpoint and Private Link Service
+    connectivity issues, including DNS/misconfiguration causes, validation steps,
+    and common error resolutions.
+  integrations: Configuring on-premises DNS to resolve Azure Private Endpoint and
+    Private Link resources using Azure DNS Private Resolver, including hybrid and
+    cross-network name resolution patterns.
+---
+# Azure Private Link Crawl Report
 
 ## Summary
 

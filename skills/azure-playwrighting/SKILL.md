@@ -20,12 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L35 | Diagnosing and fixing Playwright test run failures in Microsoft Playwright Testing, plus resolving AADSTS7000112 Azure AD sign-in issues in the Playwright portal. |
-| Best Practices | L36-L42 | Tuning Playwright Testing on Azure for speed and reliability: suite config optimization, setting up visual regression tests, and reducing latency via regional workspace choices. |
-| Limits & Quotas | L43-L48 | Details on Microsoft Playwright Testing usage limits, free trial quotas, concurrency caps, and configurable settings that affect test runs and scaling |
-| Security | L49-L55 | Managing secure access to Playwright Testing workspaces: auth setup, access tokens, and configuring RBAC roles/permissions for users and apps. |
-| Configuration | L56-L64 | Configuring and managing Playwright Testing workspaces, service config files, feature flags, and setting up/using monitoring, diagnostics, and telemetry data for test runs. |
-| Integrations & Coding Patterns | L65-L69 | Running Azure Playwright cloud tests against local/private environments and configuring reporting for sharded or parallel Playwright test runs |
+| Troubleshooting | L30-L35 | Diagnosing and fixing Playwright test run failures in Azure, including portal issues and resolving AADSTS7000112 Azure AD sign-in/auth errors |
+| Best Practices | L36-L42 | Best practices for speeding up Playwright Testing runs, configuring visual regression tests, and reducing latency via optimal regional workspace setup. |
+| Limits & Quotas | L43-L48 | Details on Microsoft Playwright Testing usage limits, free trial quotas, concurrency caps, and configurable limits that affect test runs and scaling |
+| Security | L49-L55 | Managing workspace access tokens, setting up authentication/authorization, and configuring RBAC roles and permissions for Microsoft Playwright Testing workspaces. |
+| Configuration | L56-L64 | Setting up and managing Playwright Testing workspaces, configuring playwright.service.config.ts and service features, and enabling/using monitoring, diagnostics, and telemetry data. |
+| Integrations & Coding Patterns | L65-L69 | Patterns for connecting Azure Playwright Testing to local/private apps and configuring reporting when tests are sharded or split across multiple runs. |
 
 ### Troubleshooting
 | Topic | URL |
