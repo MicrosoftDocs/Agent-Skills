@@ -200,7 +200,7 @@ Not sure where to start? We've created role-based skill bundles to help you get 
 
 We've moved the complete skill registry to a dedicated catalog to keep this README clean.
 
-👉 **[View the Complete Skill Catalog (CATALOG.md)](CATALOG.md)**
+👉 **[View the Complete Skill Catalog (docs/CATALOG.md)](docs/CATALOG.md)**
 
 | Skill | Description |
 |-------|-------------|
