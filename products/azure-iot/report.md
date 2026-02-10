@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: Configuring IoT Plug and Play models and MQTT messaging (DTDL, payload
     formats, message conventions) and setting up MQTT connections to IoT Hub and Device
@@ -32,8 +32,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -50,6 +50,11 @@ category_descriptions:
 | *(Unclassified)* | 24 | 60.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary)
+  - Updated: 2025-10-07T17:35:00.000Z → 2026-02-04T18:14:00.000Z
 
 ## Classified Pages
 
@@ -93,10 +98,10 @@ category_descriptions:
 | [Device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and tools; no detailed configuration tables, limits, or troubleshooting content. |
 | [Device management and control](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-management) | 0.10 | High-level description of asset and device management options; no product-specific settings, limits, or error-resolution mappings. |
 | [Extend your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-extensibility) | 0.10 | Conceptual overview of extensibility options; primarily navigation to deeper content, without concrete expert-level details. |
-| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | 0.10 | Glossary of terms; definitions but no configuration, limits, or troubleshooting mappings. |
 | [Manage your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-management) | 0.10 | Overview of IoT solution management approaches; lacks detailed settings tables, quotas, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-development) | 0.10 | Introductory article for device development considerations; high-level and not focused on specific configs, limits, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot/overview-iot-plug-and-play) | 0.10 | High-level introduction to IoT Plug and Play and device models; conceptual overview without concrete limits, configs, or error mappings. |
 | [Process and route messages](https://learn.microsoft.com/en-us/azure/iot/iot-overview-message-processing) | 0.10 | Overview of message processing and routing; does not expose detailed quotas, configuration tables, or troubleshooting flows. |
 | [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options page; meta-information about where to get help, not technical expert content. |
 | [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT and solution components; conceptual overview without concrete limits, configs, or error mappings. |
+| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | - | Glossary of general Azure IoT terms; conceptual definitions only, no limits, configuration parameters, error codes, or product-specific decision/deployment/security details. |

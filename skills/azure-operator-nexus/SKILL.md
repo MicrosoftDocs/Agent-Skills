@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including configuration, security, troubleshooting, limits & quotas, decision making, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Operator Nexus Skill
 

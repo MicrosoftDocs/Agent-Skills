@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and network
     fabric: ARM templates, routing/BGP/QoS, isolation domains, observability, lifecycle,
@@ -30,14 +30,14 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 208
-- **Fetched**: 208
+- **Total Pages**: 209
+- **Fetched**: 209
 - **Fetch Failed**: 0
 - **Classified**: 156
-- **Unclassified**: 52
+- **Unclassified**: 53
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 208
 - **Deleted Pages**: 0
@@ -48,16 +48,20 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.5% |
-| configuration | 60 | 28.8% |
+| configuration | 60 | 28.7% |
 | decision-making | 8 | 3.8% |
-| deployment | 7 | 3.4% |
+| deployment | 7 | 3.3% |
 | integrations | 6 | 2.9% |
 | limits-quotas | 4 | 1.9% |
-| security | 28 | 13.5% |
-| troubleshooting | 42 | 20.2% |
-| *(Unclassified)* | 52 | 25.0% |
+| security | 28 | 13.4% |
+| troubleshooting | 42 | 20.1% |
+| *(Unclassified)* | 53 | 25.4% |
 
 ## Changes
+
+### New Pages
+
+- [Network-to-Network Interconnect](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect)
 
 ## Classified Pages
 
@@ -267,6 +271,7 @@ category_descriptions:
 | [IP Prefixes Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-ip-prefix) | 0.20 | High-level description of IP prefix resources and their purpose; no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Isolation Domains overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-isolation-domain) | 0.20 | Defines isolation domain types and capabilities at a conceptual level; no technical requirement tables, limits, or configuration parameters. |
 | [Network Fabric OptionA and OptionB](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-optiona-optionb) | 0.20 | Explains BGP and Option A/B conceptually; no decision matrices, numeric thresholds, or configuration/limit details are evident. |
+| [Network-to-Network Interconnect](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect) | 0.20 | The page appears to be a conceptual description of Network-to-Network Interconnect (NNI) within Azure Operator Nexus, explaining what an NNI is and its role in the fabric. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, decision matrices, or product-specific troubleshooting/best-practice details. It is primarily definitional/architectural context rather than detailed expert configuration or operational guidance. |
 | [Networking](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-networking) | 0.20 | General networking concepts for Operator Nexus; appears descriptive rather than containing specific limits, configs, or troubleshooting mappings. |
 | [Operator Nexus SKUs](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-operator-nexus-skus) | 0.20 | SKU overview text emphasizing procurement, BOM, and topologies. Description sounds marketing/positioning-focused; no explicit mention of numeric limits, matrices, or decision criteria for choosing SKUs. |
 | [Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-cluster) | 0.20 | Introductory description of Nexus Kubernetes Cluster Service; lacks configuration parameter tables, limits, or troubleshooting content. |

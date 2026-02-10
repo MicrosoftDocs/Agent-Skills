@@ -3,7 +3,7 @@ name: azure-vmware
 description: Expert knowledge for Azure Vmware development including configuration, architecture & design patterns, decision making, security, troubleshooting, best practices, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Vmware applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Vmware Skill
 
@@ -23,7 +23,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Troubleshooting | L32-L37 | Diagnosing and resolving Azure VMware Solution deployment and platform issues, including known errors, workarounds, log collection, and how to open/support tickets for failed AVS deployments. |
 | Best Practices | L38-L44 | Best practices for AVS operations: safely maintaining private clouds, optimizing NSX scale/performance for HCX migrations, and configuring HCX Mobility Optimized Networking. |
 | Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instances, HCX options, API Management SKUs, and cross-region/VCF deployment strategies. |
-| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-spoke, internet/on-prem/Gen2 connectivity, vSAN, and reference architectures for Horizon, Citrix, GitHub, and Cloud Director. |
+| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-spoke, internet and VNet connectivity, multi-cloud/on-prem links, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub. |
 | Limits & Quotas | L79-L88 | Host, cluster, routing, storage, and quota limits for Azure VMware Solution, including planning capacity, deploying/scaling clusters, and requesting/managing host quota. |
 | Security | L89-L102 | Securing AVS: identity/role config, external identity sources, Defender for Cloud, vSAN CMK, Trusted Launch/vTPM, service principal setup, credential rotation, and security best practices. |
 | Configuration | L103-L153 | Configuring AVS environments: networking (NSX, DHCP/DNS, routing, interconnect), storage/backup (vSAN, ANF, Elastic SAN, Pure, Cloud Backup), Arc/guest mgmt, DR (SRM, Zerto, JetStream), and monitoring/logs. |
@@ -71,7 +71,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Connect multiple Azure VMware Solution Gen 2 clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-multiple-private-clouds |
 | Connect AVS Gen 2 private clouds to on-premises | https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-on-premises |
 | Link AVS Gen 2 and Gen 1 private clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-connect-private-cloud-previous-edition |
-| Design internet connectivity for AVS Gen 2 clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations |
+| Design internet connectivity for Azure VMware Gen 2 | https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations |
 | Plan AVS Gen 2 connectivity to Azure VNets | https://learn.microsoft.com/en-us/azure/azure-vmware/native-network-connectivity |
 | Design Azure VMware Solution Gen 2 private clouds | https://learn.microsoft.com/en-us/azure/azure-vmware/native-network-design-consideration |
 | Design Azure VMware Solution private clouds and clusters | https://learn.microsoft.com/en-us/azure/azure-vmware/uninstall-vmware-hcx |

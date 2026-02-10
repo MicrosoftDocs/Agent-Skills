@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs/outputs (Cosmos DB, Kafka,
     Service Bus, PostgreSQL, Tables), autoscale, edge, Protobuf, error handling, credentials,
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
+- **Updated Pages**: 1
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -61,6 +61,11 @@ category_descriptions:
 | *(Unclassified)* | 63 | 37.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Welcome to Stream Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction)
+  - Updated: 2026-01-06T06:10:00.000Z → 2026-02-06T23:12:00.000Z
 
 ## Classified Pages
 
@@ -236,6 +241,6 @@ category_descriptions:
 | [Overview of resource model](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-resource-model) | 0.20 | Resource model overview; conceptual explanation of jobs, clusters, inputs, outputs, and queries without detailed numeric limits or configuration matrices. |
 | [Process IoT streaming data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices) | 0.20 | Introductory IoT data processing tutorial. Focus is on basic stream-processing logic; no clear evidence of detailed configuration tables, limits, or error-code troubleshooting. |
 | [Stream Analytics previews](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-previews) | 0.20 | Summarizes preview features for Stream Analytics; primarily a status/marketing-style listing without detailed limits, configuration tables, or decision matrices. Does not clearly expose deep expert configuration or troubleshooting knowledge. |
-| [Welcome to Stream Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction) | 0.20 | High-level introduction to Azure Stream Analytics; describes capabilities and scenarios but no concrete limits, configs, error codes, or decision matrices. |
 | [X sentiment analysis](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends) | 0.20 | Tutorial-style social media sentiment analysis scenario. Primarily step-by-step solution building; no indication of detailed limits, config tables, or error-code-based troubleshooting. |
 | [Toll booth sensor data analysis](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics) | 0.15 | Getting-started IoT solution tutorial. Likely high-level and procedural without detailed config matrices, limits, or troubleshooting mappings. |
+| [Welcome to Stream Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction) | 0.10 | High-level introduction to Azure Stream Analytics with conceptual description of capabilities and scenarios; no specific limits, configuration parameters, error codes, or decision matrices. |

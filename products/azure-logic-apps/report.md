@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   integrations: Patterns and samples for integrating Logic Apps with AI agents, scripts,
     SAP/B2B/healthcare systems, Dataverse/DBs/APIs, and for unit testing, telemetry,
     and custom connectors.
-  limits-quotas: Logic Apps limits for message size, chunking, pagination, SQL result
-    size/timeouts, inline JavaScript, and where to review and configure all runtime
-    quotas and thresholds.
+  limits-quotas: Logic Apps limits on message size, pagination, SQL results/timeouts,
+    inline JavaScript, chunking, and global configuration caps, plus how to work around
+    or configure them.
   security: 'Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy
     Auth), network isolation (VNets, private endpoints, private storage), certificates,
     and Azure Policy/compliance controls.'
@@ -21,8 +21,9 @@ category_descriptions:
   architecture-patterns: Patterns for AI agent workflows, DR/HA (multi-region, zone-redundant),
     resource replication, REST API design, and messaging patterns like Service Bus
     sequential convoys.
-  best-practices: Error handling patterns, rules engine optimization, and techniques
-    for generating and running unit tests and mocks for Logic Apps Standard workflows.
+  best-practices: 'Designing robust Logic Apps: error/exception handling, scopes and
+    control functions, Rules Engine optimization, and generating/testing workflows
+    with unit tests and mock outputs.'
   troubleshooting: Diagnosing and fixing Logic Apps failures, throttling (429), B2B/EDI
     acknowledgment and error codes (AS2, EDIFACT, X12), plus using tests, metrics,
     and run history to debug issues.
@@ -34,13 +35,13 @@ category_descriptions:
 - **Total Pages**: 200
 - **Fetched**: 200
 - **Fetch Failed**: 0
-- **Classified**: 140
-- **Unclassified**: 60
+- **Classified**: 141
+- **Unclassified**: 59
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 200
+- **Updated Pages**: 2
+- **Unchanged**: 198
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -49,7 +50,7 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 11 | 5.5% |
-| best-practices | 6 | 3.0% |
+| best-practices | 7 | 3.5% |
 | configuration | 32 | 16.0% |
 | decision-making | 8 | 4.0% |
 | deployment | 13 | 6.5% |
@@ -57,15 +58,22 @@ category_descriptions:
 | limits-quotas | 5 | 2.5% |
 | security | 13 | 6.5% |
 | troubleshooting | 12 | 6.0% |
-| *(Unclassified)* | 60 | 30.0% |
+| *(Unclassified)* | 59 | 29.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Scopes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-run-steps-group-scopes)
+  - Updated: 2025-07-22T05:10:00.000Z → 2026-02-05T23:11:00.000Z
+- [Service limits and configuration](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config)
+  - Updated: 2025-12-05T08:00:00.000Z → 2026-02-07T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service limits and configuration](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config) | limits-quotas | 0.95 | Explicitly a limits and configuration reference; contains numeric limits, quotas, and configuration ranges for Logic Apps Consumption and Standard, which are classic expert-only values. |
+| [Service limits and configuration](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config) | limits-quotas | 0.95 | This is a reference guide specifically about limits and configuration for Azure Logic Apps (Consumption and Standard). It is expected to list concrete numeric limits (throughput, size, timeout, run history, etc.) and configuration constraints per plan, which are product-specific values not reliably known from training data, matching the limits-quotas criteria. |
 | [Get bulk data with pagination](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-exceed-default-page-size-with-pagination) | limits-quotas | 0.90 | Explicitly discusses default page size (e.g., SQL Get rows default 2048) and how to override; numeric limits and connector-specific pagination settings qualify as limits & quotas. |
 | [Handle throttling problems or 429 errors](https://learn.microsoft.com/en-us/azure/logic-apps/handle-throttling-problems-429-errors) | troubleshooting | 0.90 | Centered on HTTP 429 Too Many Requests; these pages map symptom (429, throttling) to causes and solutions, often with connector-specific retry and backoff guidance. |
 | [Troubleshoot B2B errors](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-b2b-list-errors-solutions) | troubleshooting | 0.90 | Explicitly a troubleshooting article for B2B scenarios; contains specific error messages/codes and recommended corrective actions, mapping symptoms to causes and solutions. |
@@ -175,6 +183,7 @@ category_descriptions:
 | [Why migrate from BizTalk Server?](https://learn.microsoft.com/en-us/azure/logic-apps/biztalk-server-migration-overview) | decision-making | 0.70 | Provides migration overview, product comparisons, and guidance on choosing Azure services for BizTalk migrations; aligns with decision-making for technology selection and migration. |
 | [Create common example workflows](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/sap-create-example-scenario-workflows) | integrations | 0.68 | Shows concrete SAP integration scenarios using the SAP connector; includes operation choices and patterns specific to SAP–Logic Apps integration, which are integration code patterns rather than generic tutorials. |
 | [Move logic app resources](https://learn.microsoft.com/en-us/azure/logic-apps/move-logic-app-resources) | deployment | 0.68 | Migration-focused article describing how to move Logic Apps and integration accounts between subscriptions, resource groups, and regions using portal, PowerShell, CLI, and REST. Includes product-specific constraints on which resource types can be moved and regional considerations, fitting deployment/migration patterns. |
+| [Scopes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-run-steps-group-scopes) | best-practices | 0.68 | The page describes product-specific behavior of scope actions in Logic Apps (how grouped actions get a consolidated status and how subsequent actions should evaluate that status). This is concrete, workflow-specific guidance on using scopes correctly rather than just conceptual control-flow theory, fitting best under best-practices. It does not focus on limits, deployment, or configuration tables. |
 | [TestErrorResponseAdditionalInfo class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-error-response-additional-info-class-definition) | troubleshooting | 0.68 | Describes additional error response info with service-specific schema dependent on a Type string. This is detailed error response structure for diagnosing test failures, fitting troubleshooting. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-azure-resource-manager-template) | deployment | 0.65 | Covers deploying Logic Apps using ARM templates with Logic Apps–specific resource definitions and structure; this is deployment-focused and contains concrete, product-specific configuration for production-style provisioning. |
 | [Add control functions to rules](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/add-rules-control-functions) | best-practices | 0.65 | Focuses on using specific control functions (Assert, Clear, Halt, Retract, RetractByType, Reassert, Update) to optimize rules execution and manage working memory—product-specific DO/DON'T style guidance. |
@@ -222,7 +231,6 @@ category_descriptions:
 | [Create business rules](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/create-rules) | 0.40 | How-to for creating rules with Rules Composer; primarily UI and conceptual authoring steps without detailed configuration tables, limits, or product-specific error mappings. |
 | [DevOps deployment](https://learn.microsoft.com/en-us/azure/logic-apps/devops-deployment-single-tenant-azure-logic-apps) | 0.40 | High-level overview of DevOps deployment experience; appears conceptual without detailed matrices, limits, or product-specific config tables. |
 | [Export Consumption to Standard - Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/export-from-consumption-to-standard-logic-app) | 0.40 | How-to export workflows from Consumption to Standard using VS Code; appears procedural without decision matrices, limits, or config parameter tables. |
-| [Scopes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-run-steps-group-scopes) | 0.40 | How-to on scopes and control flow; no specific limits, error codes, or product-unique configuration tables. |
 | [Azure CLI - Consumption workflow sample script](https://learn.microsoft.com/en-us/azure/logic-apps/sample-logic-apps-cli-script) | 0.35 | CLI script sample to create a Logic App; while it has concrete commands, it is a simple example script and not a comprehensive configuration or deployment reference with matrices or constraints. |
 | [Compose XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-compose) | 0.35 | How-to for composing XML using schemas; appears focused on workflow steps, not on detailed configuration parameters, limits, or error mappings. |
 | [Create maps in Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/create-maps-data-transformation-visual-studio-code) | 0.35 | Covers creating maps for data transformation in VS Code; primarily a how-to, not a parameter reference, limits table, or troubleshooting guide. |

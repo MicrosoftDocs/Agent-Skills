@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: 'Configuring AVS environments: networking (NSX, DHCP/DNS, routing,
     interconnect), storage/backup (vSAN, ANF, Elastic SAN, Pure, Cloud Backup), Arc/guest
     mgmt, DR (SRM, Zerto, JetStream), and monitoring/logs.'
   architecture-patterns: Network, storage, and private cloud design patterns for AVS,
-    including hub-spoke, internet/on-prem/Gen2 connectivity, vSAN, and reference architectures
-    for Horizon, Citrix, GitHub, and Cloud Director.
+    including hub-spoke, internet and VNet connectivity, multi-cloud/on-prem links,
+    vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub.
   decision-making: Guidance on choosing AVS migration, backup, DR, licensing, reserved
     instances, HCX options, API Management SKUs, and cross-region/VCF deployment strategies.
   security: 'Securing AVS: identity/role config, external identity sources, Defender
@@ -37,8 +37,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 134
+- **Updated Pages**: 1
+- **Unchanged**: 133
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware/azure-vmware.csv`
 
@@ -57,6 +57,11 @@ category_descriptions:
 | *(Unclassified)* | 28 | 20.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Internet connectivity options](https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations)
+  - Updated: 2025-04-21T08:00:00.000Z → 2026-02-05T23:11:00.000Z
 
 ## Classified Pages
 
@@ -118,6 +123,7 @@ category_descriptions:
 | [VMware Cloud Foundations (VCF) license portability on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability) | decision-making | 0.70 | Explains how to bring your own VCF subscription under Broadcom’s new model, including timelines and host-type implications; supports migration and licensing decisions between VCF-included and portable models. |
 | [VMware HCX Mobility Optimized Networking (MON) guidance](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-hcx-mon-guidance) | best-practices | 0.70 | Lists explicit limitations and unsupported configurations (for example, no 3rd-party gateway, specific gateway topology requirements) for HCX MON in AVS, which are product-specific gotchas and usage recommendations. |
 | [Configure Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-azure-elastic-san) | configuration | 0.68 | How-to for using Azure Elastic SAN as iSCSI/VMFS backing storage for Azure VMware Solution clusters. Likely includes product-specific configuration steps, parameters, and constraints for attaching volumes as datastores, which are not generic knowledge. |
+| [Internet connectivity options](https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations) | architecture-patterns | 0.68 | The page provides product-specific design considerations and patterns for connecting Azure VMware Solution Generation 2 private clouds to the internet and other networks. It focuses on when to use particular connectivity options (via Azure Virtual Network, on-premises, other AVS clouds, or direct internet), and discusses trade-offs and design choices specific to AVS networking rather than just conceptual networking theory. |
 | [Setup Backup Server](https://learn.microsoft.com/en-us/azure/azure-vmware/set-up-backup-server-for-azure-vmware-solution) | configuration | 0.68 | Covers preparing AVS environment and Azure Backup Server for VM-level backups, including product-specific configuration, supported storage targets, and setup requirements. |
 | [Backup private cloud VMs with Backup Server](https://learn.microsoft.com/en-us/azure/azure-vmware/backup-azure-vmware-solution-virtual-machines) | configuration | 0.67 | Step-by-step configuration of backup jobs for AVS VMs using Azure Backup Server, including schedules, protection groups, and AVS-specific considerations. |
 | [Backup Azure NetApp Files datastores and VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/backup-azure-netapp-files-datastores-vms) | configuration | 0.66 | Explains configuring subscription, backup policies, and resource groups for backing up AVS datastores and VMs. Contains concrete product-specific configuration flows and options. |
@@ -164,7 +170,6 @@ category_descriptions:
 | [Connectivity to an Azure Virtual Network](https://learn.microsoft.com/en-us/azure/azure-vmware/native-network-connectivity) | architecture-patterns | 0.60 | Connectivity design article for Gen 2 to Azure VNets; likely includes AVS-specific networking patterns and constraints, providing concrete guidance on how to connect environments rather than generic networking theory. |
 | [Deploy Citrix on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-citrix) | architecture-patterns | 0.60 | Describes using Citrix Virtual Apps and Desktops service with AVS infrastructure. While partly conceptual, Citrix-on-AVS deployment is a product-specific architecture pattern for VDA workloads. |
 | [Hub and spoke](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-hub-and-spoke) | architecture-patterns | 0.60 | Describes three primary patterns for inbound/outbound internet access with selection driven by security, visibility, and capacity requirements—product-specific connectivity patterns and trade-offs. |
-| [Internet connectivity options](https://learn.microsoft.com/en-us/azure/azure-vmware/native-internet-connectivity-design-considerations) | architecture-patterns | 0.60 | Covers internet connectivity options for AVS Gen 2; likely details specific routing and egress patterns unique to AVS on Azure VNets, which is architecture-level expert guidance. |
 | [Networking and interconnectivity](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-networking) | architecture-patterns | 0.60 | Discusses vSAN-based storage, capacity, policies, fault tolerance, and Azure Storage integration—product-specific storage architecture guidance. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/azure-vmware/security-recommendations) | security | 0.60 | Security recommendations for a specific service generally include AVS-specific guidance (roles, controls, configuration patterns) that go beyond generic security advice, even if described as high-level tips. |
 | [Storage](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-storage) | decision-making | 0.60 | Lists five HCX Enterprise Edition migration options and notes licensing inclusion; helps decide which migration method to use for AVS workloads. |

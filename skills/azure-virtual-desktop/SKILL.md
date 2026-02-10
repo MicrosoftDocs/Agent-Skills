@@ -3,7 +3,7 @@ name: azure-virtual-desktop
 description: Expert knowledge for Azure Virtual Desktop development including configuration, troubleshooting, deployment, best practices, decision making, security, integrations & coding patterns, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Virtual Desktop applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Virtual Desktop Skill
 
@@ -25,7 +25,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L61-L76 | Guidance for planning AVD architecture, autoscale, costs, licensing, storage, tools, deployment models, Teams support, and monitoring/optimization choices. |
 | Architecture & Design Patterns | L77-L81 | Designing stateless AVD host pools using ephemeral OS disks, including architecture choices, performance, cost, and reliability considerations for non-persistent workloads. |
 | Limits & Quotas | L82-L86 | RDP bandwidth needs and network usage for Azure Virtual Desktop, including factors affecting bandwidth, estimating requirements, and optimizing performance. |
-| Security | L87-L103 | Security setup for AVD: identity/SSO (Entra, AD FS, Kerberos, external users), RBAC/permissions, MFA/Conditional Access, and session protections (screen capture, watermarking, Purview). |
+| Security | L87-L103 | Securing Azure Virtual Desktop: identity/SSO (Entra, AD FS, Kerberos, MFA, external users), RBAC/permissions, managed identities, delegated access, and session protections (screen capture, watermarking, forensics). |
 | Configuration | L104-L165 | Configuring AVD host pools and session hosts, images, autoscale, licensing, networking, monitoring, and all RDP/client settings (redirection, codecs, QoS, Shortpath, Teams, OneDrive, language packs). |
 | Integrations & Coding Patterns | L166-L172 | Using CLI/PowerShell to manage AVD, configuring MSIX app attach with MSIXMGR, and integrating WebRTC calling apps with AVD multimedia redirection. |
 | Deployment | L173-L181 | Guides for deploying and migrating AVD: moving from classic to current, shifting resources across regions, handling regional host pool limits, client deployment, and autoscaling session hosts. |
@@ -96,7 +96,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Provide Azure Virtual Desktop access to external identities | https://learn.microsoft.com/en-us/azure/virtual-desktop/provide-access-external-identities |
 | Onboard Azure Virtual Desktop session hosts to Microsoft Purview forensic evidence | https://learn.microsoft.com/en-us/azure/virtual-desktop/purview-forensic-evidence |
 | Use built-in RBAC roles for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rbac |
-| Enable screen capture protection for Azure Virtual Desktop sessions | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
+| Configure screen capture protection in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection |
 | Assign RBAC and Entra roles to AVD service principals | https://learn.microsoft.com/en-us/azure/virtual-desktop/service-principal-assign-roles |
 | Enforce MFA for Azure Virtual Desktop with Conditional Access | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa |
 | Configure watermarking security for Azure Virtual Desktop sessions | https://learn.microsoft.com/en-us/azure/virtual-desktop/watermarking |

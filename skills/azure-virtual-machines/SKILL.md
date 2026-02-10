@@ -3,7 +3,7 @@ name: azure-virtual-machines
 description: Expert knowledge for Azure Virtual Machines development including deployment, configuration, decision making, security, best practices, architecture & design patterns, limits & quotas, integrations & coding patterns, and troubleshooting. Use when building, debugging, or optimizing Azure Virtual Machines applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Virtual Machines Skill
 
@@ -22,13 +22,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L33-L54 | Diagnosing and fixing Azure VM issues: hibernation, extensions, Spot/resize errors, image builder, disk encryption, metadata/MSP keys, restore points, and gallery/Trusted Launch problems. |
 | Best Practices | L55-L74 | Best practices for Azure VM performance, cost, HA, storage, boot time, temp disks, extensions, and scaling/optimizing HPC and InfiniBand-enabled workloads |
-| Decision Making | L75-L127 | Guidance for choosing VM sizes, disks, images, regions, and reservations, optimizing cost and performance, and planning migrations from retiring VM series, hosts, and disk options. |
+| Decision Making | L75-L127 | Guidance for choosing VM sizes, disks, regions, licensing and cost options, and planning migrations from retired SKUs, disk types, and images for Azure Virtual Machines. |
 | Architecture & Design Patterns | L128-L134 | Designing low-latency and clustered VM architectures using proximity placement groups and shared disks, plus understanding VM reboot causes, maintenance events, and their impact on workloads |
-| Limits & Quotas | L135-L336 | VM size specs, disk and NVMe limits, quotas (vCPU, API throttling), performance/throughput caps, and constraints for restore points, ephemeral OS disks, and Dedicated Hosts. |
-| Security | L337-L409 | Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata hardening, and security policies/RBAC. |
-| Configuration | L410-L571 | Configuring Azure VMs after creation: disks, images, encryption, networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore points, and VM Image Builder setups. |
-| Integrations & Coding Patterns | L572-L614 | Scripts and patterns for VM connectivity, monitoring, maintenance, backup/restore, disk cloning, and managing VMs/scale sets via CLI, PowerShell, REST, and Azure integrations. |
-| Deployment | L615-L637 | Deploying and migrating Azure VMs/scale sets: disk and storage migration, proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling deployments, and image build automation |
+| Limits & Quotas | L135-L335 | VM- and disk-level limits: per-size specs (CPU, RAM, storage, GPU), disk performance/bursting, quotas, throttling, ephemeral/temporary/NVMe disks, and Dedicated Host capacities. |
+| Security | L336-L408 | Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata hardening, and security policies/RBAC. |
+| Configuration | L409-L569 | Configuring Azure VMs after creation: disks, images, encryption, networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore points, and VM Image Builder setups. |
+| Integrations & Coding Patterns | L570-L612 | Scripts and patterns for VM connectivity, monitoring, maintenance, backup/restore, disk cloning, and managing VMs/scale sets via CLI, PowerShell, REST, and Azure integrations. |
+| Deployment | L613-L635 | Deploying and migrating Azure VMs/scale sets: disk and storage migration, proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling deployments, and image build automation |
 
 ### Troubleshooting
 | Topic | URL |
@@ -100,7 +100,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Plan migration from retiring Azure Dedicated Host SKUs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide |
 | Plan migration from retiring Azure Dedicated Host SKUs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide |
 | Migrate legacy managed images to Azure Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/migration-managed-image-to-compute-gallery |
-| Choose replacement sizes for retiring general purpose VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide |
+| Choose replacement sizes for retired Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide |
 | Plan migration for NC/ND GPU compute workloads | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/n-series-migration |
 | Decide NV-series migration targets and paths | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/nv-series-migration-guide |
 | Migrate from retired NV GPU VMs to newer series | https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/nv-series-migration-guide |
@@ -146,7 +146,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Understand Azure managed disk performance tier limits | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-change-performance |
 | Increase IOPS and throughput with disk performance plus | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-performance |
 | Use incremental snapshots for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-incremental-snapshots |
-| Access Azure managed disk snapshots instantly and understand limits | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-instant-access-snapshots |
 | Use Azure VM disk performance and bursting metrics | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-metrics |
 | Review scalability and performance targets for Azure VM disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-scalability-targets |
 | Reference specs for Azure Ebdsv5 and Ebsv5 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/ebdsv5-ebsv5-series |
@@ -214,7 +213,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Review Azure Ddsv4 VM size capacities and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv4-series |
 | Reference Ddsv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv5-series |
 | Use Ddsv6-series Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv6-series |
-| Review Ddsv7-series VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series |
+| Check Ddsv7 VM size specs and resource limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series |
 | Reference specs for Azure Ddv4 VM size series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv4-series |
 | Reference Ddv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv5-series |
 | Check Azure Dldsv5 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv5-series |
@@ -222,7 +221,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Review Dldsv7-series VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series |
 | Reference Dlsv5 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv5-series |
 | Use Dlsv6-series Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv6-series |
-| Review Dlsv7-series VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series |
+| Review Dlsv7 VM size capacities and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series |
 | Reference Dpdsv5 VM size capacities and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv5-series |
 | Reference Dpdsv6 Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv6-series |
 | Reference Dpldsv5 VM size capacities and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv5-series |
@@ -236,7 +235,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Review Azure Dsv4 VM size series limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv4-series |
 | Reference Dsv5 VM size capacities and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series |
 | Use Dsv6-series Azure VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv6-series |
-| Review Dsv7-series VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series |
+| Reference Dsv7 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series |
 | Reference Dv2 VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv2-series |
 | Dv3-series Azure VM specifications and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv3-series |
 | Review Azure Dv4 VM size series limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv4-series |
@@ -294,7 +293,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Reference VM specs for Azure Edsv4 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv4-series |
 | Reference VM specs for Azure Edsv5 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv5-series |
 | Reference VM specs for Azure Edsv6 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series |
-| Use Edsv7 VM sizes and capacity specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv7-series |
+| Reference Edsv7 VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv7-series |
 | Reference VM specs for Azure Edv4 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edv4-series |
 | Reference VM specs for Azure Edv5 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edv5-series |
 | Reference VM specs for Azure Endsv6 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/endsv6-series |
@@ -306,7 +305,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Reference specs for Azure Esv4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv4-series |
 | Reference VM specs for Azure Esv5 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv5-series |
 | Reference VM specs for Azure Esv6 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv6-series |
-| Use Esv7 VM sizes and capacity specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv7-series |
+| Reference Esv7 VM size specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv7-series |
 | Reference specs for Azure Ev4 VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ev4-series |
 | Reference VM specs for Azure Ev5 memory-optimized sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ev5-series |
 | Size and capacity reference for Azure M family VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/m-family |
@@ -480,7 +479,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Create and configure CentOS VHDs for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
 | Prepare generic Linux systems for Azure imaging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic |
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
-| Build and upload custom Ubuntu VHDs for Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-ubuntu |
 | Prepare Debian VHD images for Azure deployment | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd |
 | Disable or remove Azure Linux provisioning agents safely | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disable-provisioning |
 | Enable Azure Disk Encryption on Linux VMs with Entra app | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-linux-aad |

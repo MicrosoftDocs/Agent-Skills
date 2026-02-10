@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   deployment: Guides for deploying and migrating SAP HANA and Oracle on Azure NetApp
     Files, including AVGs, DR/HSR, cross-region replication, AzAcSnap, gov regions,
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 224
+- **Updated Pages**: 2
+- **Unchanged**: 222
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -62,6 +62,13 @@ category_descriptions:
 | *(Unclassified)* | 64 | 28.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy)
+  - Updated: 2026-01-29T18:11:00.000Z → 2026-02-04T08:00:00.000Z
+- [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept)
+  - Updated: 2026-01-30T08:00:00.000Z → 2026-02-04T08:00:00.000Z
 
 ## Classified Pages
 
@@ -288,9 +295,9 @@ category_descriptions:
 | [Restore a snapshot to a new volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-new-volume) | 0.20 | Task-focused how-to for restoring a snapshot to a new Azure NetApp Files volume. Based on the description, it likely provides step-by-step UI/CLI instructions but no evidence of numeric limits, configuration parameter tables, error-code mappings, or decision matrices. Without such product-specific expert details, it doesn't meet any sub-skill detection criteria. |
 | [Set up Azure NetApp Files and create an NFS volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes) | 0.20 | Quickstart focused on step-by-step setup and a single example volume; does not indicate configuration tables, limits, or decision matrices beyond generic how-to. |
 | [Solution architectures using Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-solution-architectures) | 0.20 | Appears to be a high-level collection of solution architecture references for Azure NetApp Files without visible concrete limits, configuration tables, or detailed decision matrices; more like an overview/navigation to other best-practice content than a page containing the expert details itself. |
-| [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy) | 0.20 | Describes the conceptual storage hierarchy (accounts, pools, volumes) and a high-level note about no cross-subscription migration, but no detailed limits, configuration tables, or product-specific numeric thresholds. |
+| [Storage hierarchy of Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy) | 0.20 | Describes the conceptual storage hierarchy (accounts, capacity pools, volumes) and a high-level note about no cross-subscription migration. No numeric limits, configuration parameter tables, or product-specific best-practice details are evident from the summary. |
 | [Understand Azure NetApp Files backup](https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-introduction) | 0.20 | The page is an introduction to Azure NetApp Files backup describing what it is, supported regions, and cost model. Based on the summary, it does not appear to list specific numeric limits, configuration parameters, error codes, or decision matrices. It is primarily conceptual/overview content rather than detailed expert configuration, limits, or troubleshooting guidance. |
-| [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept) | 0.20 | Content is primarily a conceptual/marketing-style overview of Azure NetApp Files Elastic zone-redundant storage; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs are evident from the summary. |
+| [Understand Elastic zone-redundant storage](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-zone-redundant-concept) | 0.20 | Explains what Elastic zone-redundant storage is and its high-availability characteristics. The summary shows conceptual description without specific limits, configuration parameters, decision matrices, or troubleshooting details. |
 | [What is Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction) | 0.20 | High-level introduction to Azure NetApp Files; describes what the service is and basic capabilities without detailed limits, configuration parameters, or product-specific troubleshooting. |
 | [Videos](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-videos) | 0.15 | This is a navigation/reference page linking to videos about Azure NetApp Files. It doesn’t itself contain technical configuration details, limits, or troubleshooting content. |
 | [Understand NAS](https://learn.microsoft.com/en-us/azure/azure-netapp-files/network-attached-storage-concept) | 0.10 | Conceptual explanation of NAS in the context of Azure NetApp Files; no indication of product-specific limits, configuration parameters, or decision matrices. |

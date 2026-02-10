@@ -3,7 +3,7 @@ name: azure-batch
 description: Expert knowledge for Azure Batch development including security, configuration, deployment, decision making, integrations & coding patterns, best practices, troubleshooting, limits & quotas, and architecture & design patterns. Use when building, debugging, or optimizing Azure Batch applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Batch Skill
 
@@ -26,8 +26,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L66-L71 | Designing Azure Batch render farm burst architectures and choosing storage, caching, and data movement patterns for high-performance rendering workloads |
 | Limits & Quotas | L72-L76 | Batch account limits for cores, pools, nodes, jobs, tasks, and how quotas work, request increases, and plan deployments within Azure Batch service constraints. |
 | Security | L77-L96 | Securing Batch accounts and pools: identity (Entra ID, managed identities, RBAC), keys and certificates, encryption, private endpoints/VNet, NSP, Key Vault access, and Azure Policy controls. |
-| Configuration | L97-L129 | Configuring and managing Azure Batch pools, nodes, tasks, networking, autoscale, images, security, and event/diagnostic schemas using CLI, PowerShell, containers, and app/data deployment. |
-| Integrations & Coding Patterns | L130-L141 | Patterns and code for integrating Batch with containers, .NET/JS SDKs, Azure Storage, Application Insights, and mounting Azure Files/virtual file systems for task I/O. |
+| Configuration | L97-L127 | Configuring and managing Azure Batch pools, nodes, tasks, networking, autoscale, images, security, and event/diagnostic schemas using CLI, PowerShell, containers, and app/data deployment. |
+| Integrations & Coding Patterns | L128-L141 | Coding patterns and integrations for Batch: SDK usage (.NET/JS), events, task output to Storage, containers, monitoring, and mounting Azure Files/virtual file systems. |
 | Deployment | L142-L146 | Automating Azure Batch deployments and end-to-end job runs using Azure Pipelines and CLI templates, including configuration, orchestration, and CI/CD workflows. |
 
 ### Troubleshooting
@@ -113,9 +113,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Update properties of existing Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties |
 | Manage Azure Batch resources using PowerShell cmdlets | https://learn.microsoft.com/en-us/azure/batch/batch-powershell-cmdlets-get-started |
 | Use Azure Compute Gallery images for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-sig-images |
-| Use Azure Batch task complete event schema | https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event |
 | Configure task dependencies for Azure Batch jobs | https://learn.microsoft.com/en-us/azure/batch/batch-task-dependencies |
-| Use Azure Batch task fail event diagnostic schema | https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event |
 | Interpret Azure Batch task schedule fail event data | https://learn.microsoft.com/en-us/azure/batch/batch-task-schedule-fail-event |
 | Use Azure Batch task start event schema | https://learn.microsoft.com/en-us/azure/batch/batch-task-start-event |
 | Configure Auto OS Upgrade for Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-upgrade-policy |
@@ -133,6 +131,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Run containerized workloads on Azure Batch pools | https://learn.microsoft.com/en-us/azure/batch/batch-docker-container-workloads |
 | Build an Azure Batch client using the JavaScript SDK | https://learn.microsoft.com/en-us/azure/batch/batch-js-get-started |
 | Manage Azure Batch accounts with .NET SDK | https://learn.microsoft.com/en-us/azure/batch/batch-management-dotnet |
+| Consume Azure Batch task complete event schema | https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event |
+| Handle Azure Batch task fail event payloads | https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event |
 | Persist Batch output using .NET File Conventions library | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-file-conventions |
 | Use Batch service API to store task output in Azure Storage | https://learn.microsoft.com/en-us/azure/batch/batch-task-output-files |
 | Instrument Azure Batch .NET apps with Application Insights | https://learn.microsoft.com/en-us/azure/batch/monitor-application-insights |

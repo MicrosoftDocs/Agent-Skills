@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   security: 'Designing secure Azure apps: threat-model-based auth, authz, crypto,
-    data/session protection, secure comms, logging/auditing, ops security, and hardening
-    PaaS (App Service, SQL, Storage, Service Fabric).'
+    sessions, logging, TLS, data protection, operational security, and hardening PaaS
+    services like App Service, SQL, Storage.'
   configuration: 'Configuring secure Azure services: hardening configs from threat
     models, setting Microsoft Antimalware, knowing required service/API domains, and
     finding services that support customer-managed keys.'
@@ -19,8 +19,6 @@ category_descriptions:
   decision-making: Guidance on choosing between Azure Key Vault, managed HSM, and
     other key management options, comparing security, performance, compliance, and
     integration scenarios.
-  limits-quotas: Details on upcoming Azure-managed TLS certificate changes, impact
-    on apps/endpoints, required updates, timelines, and compatibility/transition guidance.
 ---
 # Azure Security Crawl Report
 
@@ -34,8 +32,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 111
+- **Updated Pages**: 1
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -47,12 +45,16 @@ category_descriptions:
 | configuration | 4 | 3.6% |
 | decision-making | 1 | 0.9% |
 | deployment | 1 | 0.9% |
-| limits-quotas | 1 | 0.9% |
-| security | 19 | 17.1% |
+| security | 20 | 18.0% |
 | troubleshooting | 2 | 1.8% |
 | *(Unclassified)* | 68 | 61.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Managed TLS changes](https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes)
+  - Updated: 2026-01-12T08:00:00.000Z → 2026-02-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -90,13 +92,13 @@ category_descriptions:
 | [PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-deployments) | best-practices | 0.70 | Provides concrete best practices for secure PaaS deployments across the SDLC, tied to Azure platform capabilities and security advantages over other models. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity) | best-practices | 0.70 | Provides a five-step checklist of concrete actions to secure Microsoft Entra ID. This is actionable, product-specific guidance (what to enable/configure) rather than conceptual overview, aligning with best-practices. |
 | [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | configuration | 0.70 | Service-by-service listing of CMK support is specific capability/configuration knowledge that changes over time and is not inferable from general training. |
+| [Managed TLS changes](https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes) | security | 0.68 | Page describes concrete, time-bound changes to Azure's managed TLS and domain control validation process driven by compliance and PKI lifecycle updates. These are product- and provider-specific security details (managed certificates for vanity domains, DigiCert usage, and process changes) that are not inferable from general TLS knowledge and will change over 2025–2026, making them expert, time-sensitive security configuration/behavior knowledge. |
 | [Azure logging and auditing](https://learn.microsoft.com/en-us/azure/security/fundamentals/log-audit) | security | 0.65 | Discusses generating, collecting, and analyzing security logs from Azure services; likely includes which logs to enable, where they are stored, and how to configure them, which are product-specific security/monitoring settings. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices) | security | 0.65 | Operational best practices for protecting Azure assets; while broad, it is framed as concrete DO/DON'T guidance tied to Azure platform capabilities, which is product-specific security practice. |
 | [Dangling DNS and subdomain takeover](https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover) | best-practices | 0.65 | Describes a specific threat (subdomain takeover) and concrete mitigation steps using Azure DNS alias records and App Service custom domain verification. This is actionable, product-specific security guidance, best aligned with best-practices. |
 | [Data protection](https://learn.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data) | security | 0.65 | Describes concrete access-control model for Microsoft operations/support (JIT access, corporate AD accounts, specific policy-driven controls). This is product-specific security behavior not derivable from general knowledge, fitting the security category. |
 | [Detect and respond to an attack](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-detect-respond) | troubleshooting | 0.65 | Focuses on detecting and responding to ransomware with distinct warning signs and indicators; likely maps symptoms and behaviors to actions and responses specific to Azure environments. |
 | [Feature availability for US Government clouds](https://learn.microsoft.com/en-us/azure/security/fundamentals/feature-availability) | deployment | 0.65 | Contains tables of feature availability (GA/Public Preview/Not Available) across Azure commercial and Government; this is product/tier-specific deployment and capability information not inferable from training alone. |
-| [Managed TLS changes](https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes) | limits-quotas | 0.65 | Describes dated lifecycle and compliance-driven changes to managed TLS and DCV processes in 2025–2026; likely includes specific timelines and constraints that function as time-based limits/requirements. |
 | [Prepare for an attack](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-prepare) | best-practices | 0.65 | Article is explicitly Azure-specific ransomware preparation guidance and best practices; likely includes concrete Azure features, configurations, and sequencing tailored to ransomware scenarios beyond generic security advice. |
 | [Ransomware protection with Azure Firewall Premium](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall) | best-practices | 0.65 | Focuses on how to use Azure Firewall Premium for ransomware protection; likely includes product-specific rules, inspection options, and configuration patterns. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-faq) | troubleshooting | 0.60 | FAQ for Customer Lockbox likely includes concrete answers to operational and configuration issues (for example, why requests aren’t visible, who can approve), mapping symptoms to causes and resolutions. |

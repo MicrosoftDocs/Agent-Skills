@@ -3,7 +3,7 @@ name: azure-sql-server-stretch-database
 description: Expert knowledge for Azure Sql Server Stretch Database development including decision making, configuration, integrations & coding patterns, troubleshooting, security, deployment, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Sql Server Stretch Database applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Sql Server Stretch Database Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L56 | Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O, deadlocks, blocking), query tuning, auditing, Data Sync, connectivity, Kerberos, and SQL on Azure VM/SQL IaaS problems. |
-| Best Practices | L57-L91 | Best practices for performance, HA/DR, auditing, storage, licensing, and T‑SQL compatibility across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
-| Decision Making | L92-L133 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, HA/DR, and migration options (DTU vs vCore, Hyperscale, MI, VMs), plus cost optimization and licensing strategies. |
-| Architecture & Design Patterns | L134-L147 | Patterns for high availability, DR, geo-replication, connectivity, and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs, including Always On and WSFC setups. |
-| Limits & Quotas | L148-L169 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/network constraints for Azure SQL Database and Managed Instance |
-| Security | L170-L270 | Security, auth, and compliance for Azure SQL: Entra/MFA, managed identities, network controls, auditing/ATP, TDE/CMK, Always Encrypted, Windows/Kerberos auth, and best-practice hardening. |
-| Configuration | L271-L389 | Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security, backups, HA/DR, monitoring, maintenance, automation, and deployment via portal, CLI, PowerShell, ARM/Bicep/Terraform. |
-| Integrations & Coding Patterns | L390-L454 | Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers, Excel, Spark, Stream Analytics) plus elastic scale, jobs, replication, failover, backup/restore, and automation via PowerShell/APIs. |
-| Deployment | L455-L490 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, region moves, sharding, and migrations from other databases. |
+| Troubleshooting | L33-L57 | Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O, deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos, and SQL on Azure VMs. |
+| Best Practices | L58-L93 | Best-practice guidance for performance, HA/DR, auditing, storage, sizing, and migrations across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
+| Decision Making | L94-L134 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, DR/HA, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid Benefit, reservations, SaaS tenancy). |
+| Architecture & Design Patterns | L135-L148 | Patterns for high availability, DR, geo-replication, connectivity, and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs, including Always On and WSFC setups. |
+| Limits & Quotas | L149-L170 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/network constraints for Azure SQL Database and Managed Instance |
+| Security | L171-L271 | Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra, MFA, Kerberos), network isolation, auditing, TDE/CMK, threat protection, best practices, and compliance. |
+| Configuration | L272-L390 | Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security, backups, HA/DR, monitoring, maintenance, automation, and deployment via portal, CLI, PowerShell, ARM/Bicep/Terraform. |
+| Integrations & Coding Patterns | L391-L455 | Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers, Excel, Spark, Stream Analytics), plus elastic scale, jobs, replication, failover, backup/restore, and PowerShell/REST automation. |
+| Deployment | L456-L492 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, region moves, sharding, and migrations from other databases. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,6 +46,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use Azure Resource Health for SQL connectivity issues | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-health-to-troubleshoot-connectivity?view=azuresql |
 | Diagnose and fix Azure SQL Data Sync issues | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-troubleshoot?view=azuresql |
 | Troubleshoot and resolve blocking in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/understand-resolve-blocking?view=azuresql |
+| Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
 | Diagnose query performance bottlenecks on SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/identify-query-performance-issues?view=azuresql |
 | Monitor SQL MI XTP storage and fix error 41823 | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-monitor-space?view=azuresql |
 | Troubleshoot Azure SQL Managed Instance link issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql |
@@ -64,6 +65,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Manage Azure SQL Database file space and shrinking | https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db |
 | Apply HA and DR best practices for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-disaster-recovery-checklist?view=azuresql |
 | Tune Azure SQL application and database performance | https://learn.microsoft.com/en-us/azure/azure-sql/database/performance-guidance?view=azuresql |
+| Use read scale-out replicas in Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
 | Apply best practices for Azure SQL Data Sync | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql |
 | Refactor T-SQL for Azure SQL Database compatibility | https://learn.microsoft.com/en-us/azure/azure-sql/database/transact-sql-tsql-differences-sql-server?view=azuresql |
 | Set up alert rules for Azure SQL Managed Instance in portal | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/alerts-create?view=azuresql |
@@ -99,12 +101,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Plan and manage Azure SQL Database costs | https://learn.microsoft.com/en-us/azure/azure-sql/database/cost-management?view=azuresql |
 | Choose Azure SQL disaster recovery strategies for regional outages | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-guidance?view=azuresql |
 | Scale resources for Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-scale?view=azuresql |
-| Compare engine features of Azure SQL Database and Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql |
+| Choose features between Azure SQL Database and Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql |
 | Choose job automation options for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/job-automation-overview?view=azuresql |
 | Manage and migrate Azure SQL Hyperscale databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/manage-hyperscale-database?view=azuresql |
 | Decide and migrate from DTU to vCore in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/migrate-dtu-to-vcore?view=azuresql |
 | Select between vCore and DTU purchasing models | https://learn.microsoft.com/en-us/azure/azure-sql/database/purchasing-models?view=azuresql |
-| Use read scale-out replicas for Azure SQL read workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
 | Buy and apply Azure SQL Reservations for compute savings | https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql |
 | Choose multitenant SaaS tenancy model for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns?view=azuresql |
 | Evaluate Azure SQL Hyperscale capabilities and scenarios | https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-frequently-asked-questions-faq?view=azuresql |
@@ -200,7 +201,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Connect to Azure SQL using Microsoft Entra authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-microsoft-entra-connect-to-azure-sql?view=azuresql |
 | Configure Microsoft Defender for SQL for Azure SQL and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql |
 | Migrate Node.js apps to passwordless Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-nodejs?view=azuresql |
-| Migrate Python apps to passwordless Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-python?view=azuresql |
+| Migrate Python apps to passwordless Azure SQL auth | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-python?view=azuresql |
 | Migrate .NET apps to passwordless Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration?view=azuresql |
 | Use backup immutability for Azure SQL LTR backups | https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability?view=azuresql |
 | Block T-SQL create/modify operations in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql |
@@ -358,8 +359,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure DNN listener for AG on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-distributed-network-name-dnn-listener-configure?view=azuresql |
 | Configure AG listeners and load balancer via PowerShell | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-listener-powershell-configure?view=azuresql |
 | Configure load balancer and AG listener in portal | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-load-balancer-portal-configure?view=azuresql |
-| Configure cross-region multi-subnet AG on Azure | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multi-subnet-multiple-regions?view=azuresql |
-| Configure cross-region AG on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql |
+| Manually configure multi-subnet SQL AG across Azure regions | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multi-subnet-multiple-regions?view=azuresql |
+| Configure cross-region SQL availability group on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql |
 | Set prerequisites for multi-subnet AG on Azure | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-prerequisites-tutorial-multi-subnet?view=azuresql |
 | Set prerequisites for single-subnet AG on Azure | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-prerequisites-tutorial-single-subnet?view=azuresql |
 | Configure multi-subnet AG on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-multi-subnet?view=azuresql |
@@ -395,7 +396,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use Entity Framework Core with Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-entity-framework-core-quickstart?view=azuresql |
 | Connect .NET apps to Azure SQL with Microsoft.Data.SqlClient | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql |
 | Connect Node.js to Azure SQL using mssql package | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-javascript-mssql-quickstart?view=azuresql |
-| Connect Python apps to Azure SQL with pyodbc | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql |
+| Connect to Azure SQL Database from Python with mssql-python | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql |
 | Connect Microsoft Excel to Azure SQL and Fabric databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-excel?view=azuresql |
 | Connect to Azure SQL using .NET on any OS | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql |
 | Use Visual Studio .NET to query Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql |
@@ -474,6 +475,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate Azure SQL Managed Instance to a different region | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/move-resources-across-regions?view=azuresql |
 | Perform point-in-time restore on Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/point-in-time-restore?view=azuresql |
 | Restore databases from backups on Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/recovery-using-backups?view=azuresql |
+| Check Azure SQL Managed Instance feature availability by region | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql |
 | Restore Azure SQL Managed Instance database to SQL Server | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-database-to-sql-server?view=azuresql |
 | Deploy a Managed Instance using Azure CLI | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/create-configure-managed-instance-cli?view=azuresql |
 | Deploy a Managed Instance using PowerShell | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/create-configure-managed-instance-powershell?view=azuresql |

@@ -3,7 +3,7 @@ name: azure-backup
 description: Expert knowledge for Azure Backup development including configuration, best practices, troubleshooting, architecture & design patterns, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Backup Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Backup errors, performance, and restore issues across VMs, disks, AKS, databases (SQL, PostgreSQL, MySQL, SAP), Files/Blobs, MABS/DPM, and agents/extensions. |
+| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Backup failures, performance, and configuration issues across VMs, disks, files, SQL/SAP/DBs, AKS, MABS/DPM, MARS, and Backup Center monitoring/alerts. |
 | Best Practices | L76-L87 | Best practices for configuring, backing up, and restoring Azure VMs and workloads (AD, SQL, SQL Always On, Exchange, SAP ASE) using Azure Backup and DPM |
 | Decision Making | L88-L94 | Guidance on estimating Azure Backup costs, choosing policies to auto-enable VM backups, and migrating alerting from classic Azure Backup alerts to Azure Monitor. |
 | Architecture & Design Patterns | L95-L100 | Backup architecture and strategy for SAP HANA on Azure VMs, including components, data flow, backup types, scheduling, retention, and design best practices. |
-| Limits & Quotas | L101-L132 | Backup feature support, regional availability, capacity/scale limits, and retention constraints for Azure Backup across VMs, disks, databases, files, blobs, AKS, SAP, and reporting. |
-| Security | L133-L175 | Securing Azure Backup: soft delete, immutable vaults, RBAC/MUA/Resource Guard, CMK encryption, private endpoints, AKS/VM/disk/file backup policies, ransomware/threat detection, and TLS settings. |
-| Configuration | L176-L255 | Configuring, managing, and automating Azure Backup and restore for VMs, databases, AKS, Files/Blobs, SAP HANA, PostgreSQL, and monitoring/alerts via portal, CLI, ARM/Bicep, Terraform, and policies. |
-| Integrations & Coding Patterns | L256-L336 | How to script and automate Azure Backup/restore for VMs, AKS, SQL, PostgreSQL, Files, Blobs, Disks, and MARS using CLI, PowerShell, REST, Logic Apps, and security/logging integrations |
-| Deployment | L337-L342 | Deploying and configuring Microsoft Azure Backup Server (MABS) V3/V4, including silent installation steps and supported workloads/protection matrices for different MABS versions. |
+| Limits & Quotas | L101-L132 | Backup support matrices, regional support, and technical limits (sizes, SKUs, retention, features) for Azure Backup across VMs, disks, DBs, files, blobs, AKS, SAP, and MABS/MARS. |
+| Security | L133-L175 | Securing Azure Backup: soft delete, immutable vaults, encryption/CMK, RBAC/MUA/Resource Guard, private endpoints, ransomware/threat detection, and enforcing backup security via Azure Policy. |
+| Configuration | L176-L253 | Configuring, managing, and automating Azure Backup and restore for VMs, databases, AKS, Files/Blobs, SAP HANA, PostgreSQL, and monitoring/alerts via portal, CLI, ARM/Bicep, Terraform, and policies. |
+| Integrations & Coding Patterns | L254-L334 | How to script and automate Azure Backup/restore for VMs, AKS, SQL, PostgreSQL, Files, Blobs, Disks, and MARS using CLI, PowerShell, REST, Logic Apps, and security/logging integrations |
+| Deployment | L335-L340 | Deploying and configuring Microsoft Azure Backup Server (MABS) V3/V4, including silent installation steps and supported workloads/protection matrices for different MABS versions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,7 +41,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Fix Azure Backup Vault management and operation errors | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-vault-troubleshoot |
 | Troubleshoot Azure PostgreSQL Flexible Server backups with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-troubleshoot |
 | Answer common questions about PostgreSQL server backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq |
-| Fix Azure Database for PostgreSQL backup issues with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-troubleshoot |
+| Diagnose Azure PostgreSQL backup failures with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-troubleshoot |
 | Resolve common issues with Azure Backup Server and DPM | https://learn.microsoft.com/en-us/azure/backup/backup-azure-dpm-azure-server-faq |
 | Troubleshoot encrypted Azure VM backup failures | https://learn.microsoft.com/en-us/azure/backup/backup-azure-encrypted-vm-troubleshoot |
 | Resolve common issues with MARS Agent backups | https://learn.microsoft.com/en-us/azure/backup/backup-azure-file-folder-backup-faq |
@@ -162,7 +162,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Re-register MABS vault access after removing private endpoints | https://learn.microsoft.com/en-us/azure/backup/register-public-access-vault-backup-server |
 | Restore Azure Disk Encryption–protected virtual machines | https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines |
 | Configure permissions to restore Azure Managed Disks | https://learn.microsoft.com/en-us/azure/backup/restore-managed-disks |
-| Store MARS backup passphrases in Azure Key Vault | https://learn.microsoft.com/en-us/azure/backup/save-backup-passphrase-securely-in-azure-key-vault |
+| Securely store MARS backup passphrases in Key Vault | https://learn.microsoft.com/en-us/azure/backup/save-backup-passphrase-securely-in-azure-key-vault |
 | Use soft delete secure-by-default for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/secure-by-default |
 | Use secure-by-default soft delete in Azure Backup | https://learn.microsoft.com/en-us/azure/backup/secure-by-default |
 | Apply Azure Policy compliance controls to Azure Backup | https://learn.microsoft.com/en-us/azure/backup/security-controls-policy |
@@ -221,7 +221,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Backup reporting with Log Analytics | https://learn.microsoft.com/en-us/azure/backup/configure-reports |
 | Manage and monitor Azure Files backups with Azure Backup | https://learn.microsoft.com/en-us/azure/backup/manage-afs-backup |
 | Manage Azure Backup protection for PostgreSQL servers | https://learn.microsoft.com/en-us/azure/backup/manage-azure-database-postgresql |
-| Manage Azure Backup vault settings and operations | https://learn.microsoft.com/en-us/azure/backup/manage-backup-vault |
 | Configure and monitor Azure Backup for SQL Server VMs | https://learn.microsoft.com/en-us/azure/backup/manage-monitor-sql-database-backup |
 | Configure telemetry settings in MABS | https://learn.microsoft.com/en-us/azure/backup/manage-telemetry |
 | Modify Azure VM backup policy JSON via CLI | https://learn.microsoft.com/en-us/azure/backup/modify-vm-policy-cli |
@@ -251,7 +250,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Restore SAP HANA System Replication using Azure CLI | https://learn.microsoft.com/en-us/azure/backup/quick-restore-hana-cli |
 | Restore PostgreSQL databases from Azure Backup in the portal | https://learn.microsoft.com/en-us/azure/backup/restore-azure-database-postgresql |
 | Configure selective disk backup and restore for Azure VMs | https://learn.microsoft.com/en-us/azure/backup/selective-disk-backup-restore |
-| Configure Azure Backup to use Archive tier for LTR | https://learn.microsoft.com/en-us/azure/backup/use-archive-tier-support |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

@@ -3,7 +3,7 @@ name: azure-data-factory
 description: Expert knowledge for Azure Data Factory development including configuration, integrations & coding patterns, decision making, best practices, security, troubleshooting, deployment, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Data Factory applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Data Factory Skill
 
@@ -26,9 +26,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L144-L150 | Patterns for building efficient ADF solutions: optimizing mapping data flows, reshaping SQL data for Cosmos DB, and deciding when/how to integrate Azure-SSIS IR with VNets. |
 | Limits & Quotas | L151-L156 | Info on Data Factory connector lifecycle (preview/GA, deprecation timelines) and configuring Until activity loop behavior, limits, and timeout settings |
 | Security | L157-L184 | Securing Data Factory with identity, encryption, Key Vault, firewall/VNet/Private Link, policies, and secure access to SQL, Purview, SSIS, and self-hosted/managed integration runtimes. |
-| Configuration | L185-L315 | Configuring ADF pipelines, activities, data flows, formats, runtimes, networking, triggers, monitoring, and SAP/Databricks/SSIS integrations, plus parameters, templates, and studio settings. |
-| Integrations & Coding Patterns | L316-L485 | Patterns and how-tos for connecting ADF to many data sources, using connectors, mapping data flows, SSIS, ML/Spark/HDInsight, REST/Webhooks, and integrating with Purview/Fabric. |
-| Deployment | L486-L503 | CI/CD and deployment for Data Factory: ARM/DevOps pipelines, environment promotion, hotfix flows, pre/post scripts, cloning factories, and deploying/managing SHIR and Azure-SSIS runtimes. |
+| Configuration | L185-L316 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, formats, runtimes (managed, self-hosted, Azure-SSIS), networking, logging/monitoring, DevOps, and advanced copy/CDC patterns. |
+| Integrations & Coding Patterns | L317-L484 | Patterns and how-tos for connecting ADF to many data sources, using mapping data flows and functions, integrating with ML/Synapse/Fabric/SSIS, and automating pipelines via SDKs and APIs. |
+| Deployment | L485-L502 | CI/CD and deployment for Data Factory: ARM/DevOps pipelines, environment promotion, hotfix flows, pre/post scripts, cloning factories, and deploying/managing SHIR and Azure-SSIS runtimes. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -195,8 +195,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure VNets for injected Azure-SSIS integration runtimes | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-virtual-network-configuration |
 | Built-in and preinstalled components on Azure-SSIS IR | https://learn.microsoft.com/en-us/azure/data-factory/built-in-preinstalled-components-ssis-integration-runtime |
 | Configure BCDR for Azure-SSIS with SQL failover groups | https://learn.microsoft.com/en-us/azure/data-factory/configure-bcdr-azure-ssis-integration-runtime |
+| Configure PostgreSQL V2 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql |
 | Configure custom ARM template parameters for Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-resource-manager-custom-parameters |
-| Configure Append Variable activity in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-append-variable-activity |
 | Configure Azure Function activity in ADF pipelines | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-azure-function-activity |
 | Configure and run Data Flow activities in ADF | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-execute-data-flow-activity |
 | Configure Execute Pipeline activity for nested pipelines | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-execute-pipeline-activity |
@@ -212,6 +212,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use system variables in Azure Data Factory and Synapse expressions | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-system-variables |
 | Configure Validation activity for dataset checks | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-validation-activity |
 | Configure Wait activity for pipeline delays | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-wait-activity |
+| Configure Web Activity for Azure Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-web-activity |
 | Enable data consistency verification in ADF copy | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-data-consistency |
 | Configure fault tolerance options in ADF copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-fault-tolerance |
 | Configure session logging for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-log |
@@ -338,7 +339,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Copy data to and from Azure Data Lake Storage Gen1 | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store |
 | Copy data from Azure Database for MariaDB | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mariadb |
 | Copy and transform data in Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mysql |
-| Copy and transform data in Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-postgresql |
+| Use Azure Data Factory with Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-postgresql |
 | Copy data to and from Azure Databricks Delta Lake | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-databricks-delta-lake |
 | Copy data between Azure Files and other stores | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-file-storage |
 | Copy data into Azure AI Search indexes | https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-search |
@@ -392,7 +393,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use Oracle Service Cloud connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-service-cloud |
 | Use PayPal connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-paypal |
 | Configure Phoenix connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-phoenix |
-| Configure PostgreSQL V2 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql |
 | Configure PostgreSQL V1 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-postgresql-legacy |
 | Configure Presto connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-presto |
 | Transform Quickbase data using Data Factory mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbase |
@@ -431,7 +431,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Transform Zendesk data using Data Factory Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-zendesk |
 | Copy data from Zoho (end-of-support connector) | https://learn.microsoft.com/en-us/azure/data-factory/connector-zoho |
 | Configure Lookup activity for external data sources | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-lookup-activity |
-| Invoke REST endpoints with Web activity | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-web-activity |
 | Control pipelines using Webhook activity callbacks | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-webhook-activity |
 | Use aggregate functions in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate-functions |
 | Use array functions in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-array-functions |
@@ -448,7 +447,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Automate SSISDB log cleanup using ADF and Elastic Jobs | https://learn.microsoft.com/en-us/azure/data-factory/how-to-clean-up-ssisdb-logs-with-elastic-jobs |
 | Install licensed SSIS components on Azure-SSIS IR | https://learn.microsoft.com/en-us/azure/data-factory/how-to-develop-azure-ssis-ir-licensed-components |
 | Discover and explore Purview data assets in ADF | https://learn.microsoft.com/en-us/azure/data-factory/how-to-discover-explore-purview-data |
-| Use Azure Data Factory expression language and parameters | https://learn.microsoft.com/en-us/azure/data-factory/how-to-expression-language-functions |
+| Use expressions and parameters in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-expression-language-functions |
 | Ingest data into Fabric Lakehouse using ADF Copy activity | https://learn.microsoft.com/en-us/azure/data-factory/how-to-ingest-data-into-fabric-from-azure-data-factory |
 | Run SSIS packages with AzureDTExec utility | https://learn.microsoft.com/en-us/azure/data-factory/how-to-invoke-ssis-package-azure-enabled-dtexec |
 | Invoke Execute SSIS Package activity via PowerShell | https://learn.microsoft.com/en-us/azure/data-factory/how-to-invoke-ssis-package-ssis-activity-powershell |
