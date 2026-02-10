@@ -168,7 +168,7 @@ Not sure where to start? We've created role-based skill bundles to help you get 
 | **🤖 AI/ML Developer** | AI Services, Machine Learning, Bot Service |
 | **🔒 Security & Compliance** | RBAC, Confidential Computing, Security |
 | **🌐 DevOps & Automation** | Dev Box, Monitor, Grafana, Automation |
-| **☁️ Full-Stack Azure** | Complete coverage (all 77 skills) |
+| **☁️ Full-Stack Azure** | Complete coverage (all 80 skills) |
 
 > 💡 **Tip:** Start with the **Essentials** bundle, then add specialized bundles as you need them.
 

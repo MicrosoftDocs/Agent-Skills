@@ -41,6 +41,16 @@ Not sure which skills to install? Choose a bundle based on your role or project 
 | [azure-partner-solutions](../skills/azure-partner-solutions/) | Partner solution integrations |
 | [azure-spring-apps](../skills/azure-spring-apps/) | Fully managed Spring Cloud service |
 
+### 🧭 Architecture & Adoption Foundations (Essentials)
+
+These skills are **cross-cutting**: they apply across many Azure services and help teams make consistent architecture and adoption decisions.
+
+| Skill | Focus | Cross-cutting | Service-agnostic guidance | Framework / patterns driven |
+|-------|-------|---------------|---------------------------|-----------------------------|
+| [azure-well-architected](../skills/azure-well-architected/) | Workload design and review using the Well-Architected pillars | ✓ | ✓ | ✓ |
+| [azure-cloud-adoption-framework](../skills/azure-cloud-adoption-framework/) | Adoption strategy, planning, and governance guidance | ✓ | ✓ | ✓ |
+| [azure-architecture](../skills/azure-architecture/) | Architecture patterns and reference architectures from the Azure Architecture Center | ✓ | ✓ | ✓ |
+
 ---
 
 ## 🏗️ Infrastructure Pro Bundle
@@ -197,7 +207,7 @@ cp -r agent-skills/skills/* ~/.copilot/skills/  # or your preferred location
 - 💰 Management (Cost Management, Governance, Monitor)
 - 🎮 Specialized (IoT, Digital Twins, Communication Services)
 
-👉 **[View the Complete Skill Catalog](../CATALOG.md)** for the full list of all 77 skills.
+👉 **[View the Complete Skill Catalog](../CATALOG.md)** for the full list of all 80 skills.
 
 ---
 

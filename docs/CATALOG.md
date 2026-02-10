@@ -195,6 +195,9 @@ Skills for resource management, governance, and cost optimization.
 | [azure-cost-management-billing](skills/azure-cost-management-billing/) | Optimize cloud spending while maximizing potential |
 | [azure-governance](skills/azure-governance/) | Policy, blueprints, and compliance management |
 | [azure-guidance](skills/azure-guidance/) | General Azure best practices and patterns |
+| [azure-well-architected](skills/azure-well-architected/) | Well-Architected Framework best practices and design principles |
+| [azure-cloud-adoption-framework](skills/azure-cloud-adoption-framework/) | Cloud Adoption Framework guidance for strategy, planning, and governance |
+| [azure-architecture](skills/azure-architecture/) | Azure Architecture Center patterns, reference architectures, and best practices |
 | [azure-managed-grafana](skills/azure-managed-grafana/) | Deploy Grafana dashboards as a managed service |
 | [azure-migrate](skills/azure-migrate/) | Discover, assess, and migrate on-premises VMs |
 | [azure-monitor](skills/azure-monitor/) | Full observability into applications and infrastructure |
@@ -324,7 +327,7 @@ Skills for web applications and APIs.
 | Identity | 1 |
 | Integration | 11 |
 | Internet of Things | 3 |
-| Management and Governance | 14 |
+| Management and Governance | 17 |
 | Media | 1 |
 | Migration | 2 |
 | Mobile | 2 |
@@ -334,7 +337,7 @@ Skills for web applications and APIs.
 | Virtual Desktop Infrastructure | 3 |
 | Web | 9 |
 
-**Total: 77 skills across 20 categories**
+**Total: 80 skills across 20 categories**
 
 > Note: Some skills appear in multiple categories where they serve multiple purposes.
 
