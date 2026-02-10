@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including security, configuration, best practices, troubleshooting, deployment, decision making, and limits & quotas. Use when building, debugging, or optimizing Azure Security applications.
+description: Expert knowledge for Azure Security development including security, configuration, best practices, troubleshooting, deployment, and decision making. Use when building, debugging, or optimizing Azure Security applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Security Skill
 
@@ -20,13 +20,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Troubleshooting Azure security incidents, including resolving Customer Lockbox access issues and diagnosing, containing, and responding to ransomware attacks in Azure environments. |
-| Best Practices | L37-L55 | Best-practice guidance for securing Azure identities, networks, VMs, PaaS, data, SQL, DNS, and backups, including ransomware defenses, threat modeling mitigations, and Entra ID hardening. |
-| Decision Making | L56-L60 | Guidance on choosing between Azure Key Vault, managed HSM, and other key management options, comparing security, performance, compliance, and integration scenarios. |
-| Limits & Quotas | L61-L65 | Details on upcoming Azure-managed TLS certificate changes, impact on apps/endpoints, required updates, timelines, and compatibility/transition guidance. |
-| Security | L66-L88 | Designing secure Azure apps: threat-model-based auth, authz, crypto, data/session protection, secure comms, logging/auditing, ops security, and hardening PaaS (App Service, SQL, Storage, Service Fabric). |
-| Configuration | L89-L96 | Configuring secure Azure services: hardening configs from threat models, setting Microsoft Antimalware, knowing required service/API domains, and finding services that support customer-managed keys. |
-| Deployment | L97-L100 | Lists which Azure security features and services are available in each Azure cloud (public, Gov, China), helping you check regional and sovereign cloud support before deployment |
+| Troubleshooting | L30-L35 | Troubleshooting Azure security incidents, including resolving Customer Lockbox access issues and diagnosing, containing, and responding to ransomware attacks in Azure environments. |
+| Best Practices | L36-L54 | Best-practice guidance for securing Azure identities, networks, VMs, PaaS, data, SQL, DNS, and backups, including ransomware defenses, threat modeling mitigations, and Entra ID hardening. |
+| Decision Making | L55-L59 | Guidance on choosing between Azure Key Vault, managed HSM, and other key management options, comparing security, performance, compliance, and integration scenarios. |
+| Security | L60-L83 | Designing secure Azure apps: threat-model-based auth, authz, crypto, sessions, logging, TLS, data protection, operational security, and hardening PaaS services like App Service, SQL, Storage. |
+| Configuration | L84-L91 | Configuring secure Azure services: hardening configs from threat models, setting Microsoft Antimalware, knowing required service/API domains, and finding services that support customer-managed keys. |
+| Deployment | L92-L95 | Lists which Azure security features and services are available in each Azure cloud (public, Gov, China), helping you check regional and sovereign cloud support before deployment |
 
 ### Troubleshooting
 | Topic | URL |
@@ -58,11 +57,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Choose between Azure key management services | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
 
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Understand upcoming Azure managed TLS changes | https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes |
-
 ### Security
 | Topic | URL |
 |-------|-----|
@@ -78,6 +72,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure alternate email notifications for Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-alternative-email |
 | Control Microsoft data access with Customer Lockbox | https://learn.microsoft.com/en-us/azure/security/fundamentals/customer-lockbox-overview |
 | Configure Azure security logging and auditing | https://learn.microsoft.com/en-us/azure/security/fundamentals/log-audit |
+| Understand upcoming Azure managed TLS changes | https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes |
 | Apply operational security best practices in Azure | https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices |
 | Use Azure operational security checklist | https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist |
 | Apply Azure App Service security best practices | https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   security: Attestation, vTPM, key/secrets management, and hardening guidance (Defender,
     sudo/agent removal) for securing Azure confidential VMs, AKS Confidential Containers,
@@ -30,8 +30,8 @@ category_descriptions:
 - **Total Pages**: 69
 - **Fetched**: 69
 - **Fetch Failed**: 0
-- **Classified**: 39
-- **Unclassified**: 30
+- **Classified**: 38
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
@@ -46,12 +46,12 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 1 | 1.4% |
 | configuration | 3 | 4.3% |
-| decision-making | 10 | 14.5% |
+| decision-making | 9 | 13.0% |
 | deployment | 7 | 10.1% |
 | integrations | 5 | 7.2% |
 | security | 12 | 17.4% |
 | troubleshooting | 1 | 1.4% |
-| *(Unclassified)* | 30 | 43.5% |
+| *(Unclassified)* | 31 | 44.9% |
 
 ## Changes
 
@@ -88,7 +88,6 @@ category_descriptions:
 | [Virtual Machine Metablob Disk](https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-metablob-disk) | configuration | 0.65 | Explains VMMD behavior and version-specific support (REST, CLI, PowerShell) for confidential VMs, including product-version constraints that are expert configuration knowledge. |
 | [Confidential containers overview](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers) | decision-making | 0.62 | Portfolio overview of confidential container service options and when to use them. While partly conceptual, it likely compares multiple offerings and guides choice, fitting decision-making with product-specific trade-offs. |
 | [Confidential containers with Azure Container Instances](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers) | decision-making | 0.62 | Same content as index 5: overview of confidential container capabilities and Azure service options, helping choose between them. This is decision-making guidance with product-specific context. |
-| [About Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview) | decision-making | 0.60 | Explains protection levels, key ownership options, and when to use confidential VMs for migrations, providing Azure-specific choice and configuration guidance. |
 | [Attestation](https://learn.microsoft.com/en-us/azure/confidential-computing/attestation-solutions) | security | 0.60 | Explains Microsoft-specific attestation types and how they verify hardware/software integrity; attestation flows and usage are product-specific security configuration knowledge. |
 | [Azure Confidential Clean Room](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-clean-rooms) | decision-making | 0.60 | Describes when to use Azure Confidential Clean Rooms for multiparty analytics and AI with privacy features like differential privacy and controlled access, guiding service choice for collaboration scenarios. |
 | [Building confidential computing solutions](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-solutions) | architecture-patterns | 0.60 | Discusses spectrum from lift-and-shift to fully controlled confidential solutions and access-level choices; this is product-specific architecture guidance on how to structure confidential workloads. |
@@ -122,6 +121,7 @@ category_descriptions:
 | [Trusted compute base (TCB)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-compute-base) | 0.20 | Conceptual description of Trusted Computing Base; no concrete Azure configuration settings, limits, or decision matrices. |
 | [Trusted execution environment (TEE)](https://learn.microsoft.com/en-us/azure/confidential-computing/trusted-execution-environment) | 0.20 | Conceptual explanation of Trusted Execution Environments; lacks product-specific parameters, limits, or troubleshooting mappings. |
 | [Use cases and scenarios](https://learn.microsoft.com/en-us/azure/confidential-computing/use-cases-scenarios) | 0.20 | Scenario/use-case overview without product-specific configuration values, limits, or troubleshooting details. |
+| [About Azure confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-vm-overview) | 0.10 | High-level conceptual overview of Azure confidential VMs without specific limits, configuration parameters, error codes, or decision matrices. Content is primarily descriptive/marketing and does not include the detailed numeric or configuration-level information required for any sub-skill type. |
 | [About Fortanix](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/fortanix) | 0.10 | Partner overview/marketing page for Fortanix solutions on Azure; does not include expert-level configuration, limits, or diagnostic details. |
 | [Acompany](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/acompany) | 0.10 | Partner solution overview (Acompany) is likely marketing-focused, describing offerings rather than providing detailed technical configuration or limits. |
 | [Anjuna](https://learn.microsoft.com/en-us/azure/confidential-computing/partner-pages/anjuna) | 0.10 | Partner solution overview (Anjuna Security) is likely marketing-focused, without detailed Azure configuration parameters or error mappings. |

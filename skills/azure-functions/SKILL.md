@@ -3,7 +3,7 @@ name: azure-functions
 description: Expert knowledge for Azure Functions development including integrations & coding patterns, configuration, security, decision making, architecture & design patterns, deployment, best practices, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Functions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Functions Skill
 
@@ -26,9 +26,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L121-L128 | Patterns for containerized Functions on Linux, Durable Functions performance/DR/geo-distribution, and target-based scaling strategies for resilient, scalable architectures. |
 | Limits & Quotas | L129-L136 | Scaling and performance limits for Functions and Durable Functions, including scheduler throughput, event-driven scaling behavior, concurrency settings, and language/runtime support timelines. |
 | Security | L137-L153 | Securing Azure Functions apps: encryption, keys, managed identity, private endpoints/VNets, identity-based connections (SQL, Storage, Service Bus), Web PubSub, and MCP server security. |
-| Configuration | L154-L199 | Configuring how Functions apps run: app/host settings, storage, scaling, plans, dependencies, Durable Functions options, monitoring/telemetry, networking, runtime versions, and local dev settings. |
-| Integrations & Coding Patterns | L200-L312 | Using triggers and bindings to integrate Azure Functions with services (HTTP, storage, data, messaging, OpenAI, Dapr, MCP, SignalR, Web PubSub) and language‑specific binding patterns. |
-| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps, zero‑downtime, and Kafka/RabbitMQ bindings. |
+| Configuration | L154-L198 | Configuring how Functions apps run: app/host settings, storage, scaling, plans, dependencies, Durable Functions options, monitoring/telemetry, networking, runtime versions, and local dev settings. |
+| Integrations & Coding Patterns | L199-L311 | How to connect Functions to external services using triggers/bindings (HTTP, data stores, messaging, OpenAI, Dapr, MCP), plus language-specific patterns and integration configuration. |
+| Deployment | L312-L351 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps, zero‑downtime, and Kafka/RabbitMQ bindings. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -170,7 +170,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure autoscaling for Durable Task in Azure Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-auto-scaling |
 | Configure Durable Functions to use Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-durable-task-scheduler |
 | Configure Durable Task SDK apps with Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-portable-durable-task-sdks |
-| Configure Durable Functions with MSSQL storage provider | https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-mssql |
 | Configure Azure Functions extension bundles for non-.NET apps | https://learn.microsoft.com/en-us/azure/azure-functions/extension-bundles |
 | Configure Azure Functions app settings and variables | https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings |
 | Register and configure Azure Functions binding extensions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register |
@@ -217,11 +216,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Overview of Azure Database for MySQL bindings in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql |
 | Configure Azure MySQL input binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql-input |
 | Configure Azure MySQL output binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql-output |
-| Use Azure MySQL trigger binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql-trigger |
+| Use Azure Database for MySQL trigger binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-mysql-trigger |
 | Overview of Azure SQL bindings for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql |
 | Configure Azure SQL input binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-input |
 | Configure Azure SQL output binding for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-output |
-| Use Azure SQL trigger in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger |
+| Configure Azure SQL trigger binding for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger |
 | Integrate Azure Functions with Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache |
 | Configure Redis input bindings for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache-input |
 | Configure Redis output bindings for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cache-output |
@@ -298,6 +297,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Connect PowerShell Azure Functions to on-premises via Hybrid Connections | https://learn.microsoft.com/en-us/azure/azure-functions/functions-hybrid-powershell |
 | Send Azure Storage queue messages from HTTP-triggered Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-integrate-storage-queue-output-binding |
 | Use Azure Functions bindings with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/azure-functions/functions-integrate-store-unstructured-data-cosmosdb |
+| Integrate Azure Functions MCP servers with Foundry Agents | https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-foundry-tools |
 | Expose Azure Functions as APIs via API Management | https://learn.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition |
 | Develop Java-based Azure Functions with triggers and bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-java |
 | Develop Node.js Azure Functions with triggers and bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node |
@@ -308,7 +308,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Create a Functions app integrated with Cosmos DB | https://learn.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-connect-to-cosmos-db |
 | Create a Functions app connected to Azure Storage | https://learn.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-function-app-connect-to-storage-account |
 | Mount Azure Files to a Python Functions app | https://learn.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-mount-files-storage-linux |
-| Host self‑contained MCP servers on Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/self-hosted-mcp-servers |
 
 ### Deployment
 | Topic | URL |

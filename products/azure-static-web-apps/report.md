@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   security: Auth, roles, and user info; integrating custom providers, Key Vault, and
     managed identity; securing DB connections, tokens, passwords, and private endpoint
@@ -30,8 +30,8 @@ category_descriptions:
 - **Total Pages**: 79
 - **Fetched**: 79
 - **Fetch Failed**: 0
-- **Classified**: 57
-- **Unclassified**: 22
+- **Classified**: 55
+- **Unclassified**: 24
 
 ### Incremental Update
 - **New Pages**: 0
@@ -47,11 +47,11 @@ category_descriptions:
 | configuration | 20 | 25.3% |
 | decision-making | 5 | 6.3% |
 | deployment | 11 | 13.9% |
-| integrations | 8 | 10.1% |
+| integrations | 6 | 7.6% |
 | limits-quotas | 2 | 2.5% |
 | security | 10 | 12.7% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 22 | 27.8% |
+| *(Unclassified)* | 24 | 30.4% |
 
 ## Changes
 
@@ -78,8 +78,6 @@ category_descriptions:
 | [Azure App Service](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-app-service) | integrations | 0.70 | Explains linking App Service so /api routes proxy to the app and default access restrictions. These are product-specific integration behaviors and configuration patterns. |
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-container-apps) | integrations | 0.70 | Details linking Container Apps so /api routes proxy through Static Web Apps, default access restrictions, and one-to-one linkage constraints. These are specific integration semantics. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-cosmos-db) | integrations | 0.70 | Tutorial shows product-specific configuration for connecting Azure Static Web Apps to Azure Cosmos DB via the built-in data API, including endpoint usage and connection details that are integration-specific rather than generic. |
-| [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/static-web-apps/database-mysql) | integrations | 0.70 | Provides Static Web Apps–specific configuration and endpoint usage to integrate Azure Database for MySQL Flexible Server with the built-in data API, which is a concrete integration pattern. |
-| [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/static-web-apps/database-postgresql) | integrations | 0.70 | Describes how to configure Azure Database for PostgreSQL (Single/Flexible Server) with Static Web Apps via the data API, including product-specific integration details. |
 | [Azure SQL](https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql) | integrations | 0.70 | Contains concrete, product-specific steps and configuration for wiring Azure SQL to Static Web Apps using the built-in data API (REST/GraphQL), which is an integration pattern beyond generic SQL usage. |
 | [Bitbucket](https://learn.microsoft.com/en-us/azure/static-web-apps/bitbucket) | deployment | 0.70 | Product-specific deployment tutorial including constraint that Static Web Apps pipeline task only works on Linux machines. |
 | [Branch environments](https://learn.microsoft.com/en-us/azure/static-web-apps/branch-environments) | deployment | 0.70 | Provides exact URL pattern for branch environments and portal-based deletion steps, which are product-specific deployment behaviors. |
@@ -124,6 +122,8 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/database-overview) | 0.45 | High-level overview of database connection feature and retirement notice; does not clearly expose detailed configuration parameters, limits, or error mappings. |
 | [Add an API](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api) | 0.40 | Primarily a getting-started tutorial for adding an API; does not clearly indicate detailed configuration tables, limits, or error mappings. |
 | [Inject custom code at runtime](https://learn.microsoft.com/en-us/azure/static-web-apps/snippets) | 0.40 | Describes the snippets feature conceptually and common use cases; no indication of detailed configuration tables, parameters, or product-specific limits. |
+| [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/static-web-apps/database-mysql) | 0.30 | Tutorial-style guidance for connecting Azure Database for MySQL to Azure Static Web Apps; based on the summary, it focuses on how to connect and use the built-in data API, without exposing configuration parameter tables, limits, error-code mappings, or other product-specific expert details. |
+| [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/static-web-apps/database-postgresql) | 0.30 | Tutorial-style guidance for connecting Azure Database for PostgreSQL to Azure Static Web Apps; from the summary it appears to show basic connection and usage of the data API, not detailed limits, configuration matrices, or troubleshooting mappings that would qualify as expert knowledge. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/static-web-apps/faq) | 0.30 | FAQ likely mixes conceptual and basic usage answers; summary does not indicate detailed limits, configs, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/apis-overview) | 0.30 | Overview of API support and features (integrated security, routing) without detailed configuration parameters, error codes, or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration-overview) | 0.30 | High-level overview of configuration concepts (application, build, app settings) without detailed parameter tables, ranges, or product-specific configuration values. |

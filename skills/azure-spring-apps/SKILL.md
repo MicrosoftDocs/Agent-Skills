@@ -3,7 +3,7 @@ name: azure-spring-apps
 description: Expert knowledge for Azure Spring Apps development including configuration, best practices, limits & quotas, security, deployment, integrations & coding patterns, troubleshooting, architecture & design patterns, and decision making. Use when building, debugging, or optimizing Azure Spring Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Spring Apps Skill
 
@@ -25,9 +25,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L58-L64 | Choosing the right Azure Spring Apps plan, understanding Enterprise licensing/Marketplace offers, and how to migrate from Basic/Standard to Enterprise |
 | Architecture & Design Patterns | L65-L71 | Designing external access to Azure Spring Apps using load balancers, Application Gateway, TLS termination, and secure public internet exposure patterns |
 | Limits & Quotas | L72-L81 | Version support, quotas, storage limits, scaling to hundreds of instances, and guidance for running large CPU/memory workloads on Azure Spring Apps. |
-| Security | L82-L104 | Securing Azure Spring Apps: managed identities, Key Vault secrets, TLS/custom domains, Entra ID SSO/RBAC, GitHub Actions auth, and Azure Policy/Zero Trust security controls. |
+| Security | L82-L104 | Security and identity for Azure Spring Apps: TLS, custom domains, managed identities, Entra ID SSO/RBAC, Key Vault, Azure SQL, GitHub Actions auth, and Azure Policy compliance. |
 | Configuration | L105-L143 | Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS, scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools and APM integrations |
-| Integrations & Coding Patterns | L144-L169 | Integrating Azure Spring Apps with monitoring/APM tools, databases, Redis, gRPC, gateways, security (Entra ID), and Azure OpenAI, plus enterprise patterns like Tanzu services and Maven deployment. |
+| Integrations & Coding Patterns | L144-L169 | Monitoring, APM agents, logging, database/Redis bindings, gRPC, API gateway, security (Entra ID), and enterprise integrations (Tanzu, Azure OpenAI) for Azure Spring Apps. |
 | Deployment | L170-L185 | Deploying Azure Spring Apps with zero-downtime/blue‑green strategies, CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform), and buildpack-based app/static site deployment |
 
 ### Troubleshooting
@@ -99,7 +99,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure managed identity to access Key Vault from Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/tutorial-managed-identities-key-vault |
 | Configure Entra ID SSO for Spring Cloud Gateway and API Portal on Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-set-up-sso-with-azure-ad |
 | Configure single sign-on for Azure Spring Apps Enterprise | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-configure-single-sign-on-enterprise |
-| Load application secrets from Key Vault in Spring Apps Enterprise | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise |
+| Load Azure Spring Apps Enterprise secrets from Key Vault | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise |
 | Secure end-to-end communications for Spring Boot apps on Azure in Zero Trust environments | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/secure-communications-end-to-end |
 
 ### Configuration
@@ -165,7 +165,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use VMware Spring Cloud Gateway to route Azure Spring Apps traffic | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-enterprise-spring-cloud-gateway |
 | Deploy Entra ID–protected REST API to Azure Spring Apps | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-deploy-restful-api-app |
 | Integrate Azure OpenAI with Azure Spring Apps Enterprise | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-fitness-store-azure-openai |
-| Connect Spring Apps Enterprise to PostgreSQL and Redis | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise |
+| Integrate Azure Spring Apps Enterprise with PostgreSQL and Redis | https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise |
 
 ### Deployment
 | Topic | URL |

@@ -3,7 +3,7 @@ name: azure-stream-analytics
 description: Expert knowledge for Azure Stream Analytics development including configuration, security, integrations & coding patterns, deployment, troubleshooting, decision making, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Stream Analytics applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Stream Analytics Skill
 

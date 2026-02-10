@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
     CI/CD setup, ARM template deployment, environment design (dev/test/prod), region
@@ -20,11 +20,11 @@ category_descriptions:
     Spark, table distribution/partitioning, workload isolation/management, and modern
     DW design/migration from Netezza/Teradata.
   integrations: Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI
-    services, Cosmos DB, Delta/CDM, monitoring tools, and to load/query external data
-    formats and SQL pools.
-  troubleshooting: Diagnosing and fixing Synapse workspace, SQL, Spark, Link, and
-    Studio issues, including connectivity, failover, job errors, library installs,
-    encoding, and tenant/impersonation problems.
+    services, Cosmos DB, Delta, external storage, monitoring tools, and to load/query
+    data via COPY, PolyBase, OPENROWSET, CETAS.
+  troubleshooting: Diagnosing and fixing Synapse workspace, SQL/serverless, Spark,
+    Synapse Link, and Studio connectivity issues, including errors, failover, tenant
+    moves, libraries, and UTF-8 text problems.
   limits-quotas: Limits, quotas, and configuration for Synapse networking, Spark autoscale,
     SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos
     DB/SQL) features and restrictions.
@@ -33,16 +33,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 382
-- **Fetched**: 382
+- **Total Pages**: 381
+- **Fetched**: 381
 - **Fetch Failed**: 0
-- **Classified**: 250
+- **Classified**: 249
 - **Unclassified**: 132
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 382
+- **Unchanged**: 381
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -52,12 +52,12 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 12 | 3.1% |
 | best-practices | 51 | 13.4% |
-| configuration | 37 | 9.7% |
+| configuration | 36 | 9.4% |
 | decision-making | 17 | 4.5% |
 | deployment | 8 | 2.1% |
-| integrations | 50 | 13.1% |
+| integrations | 51 | 13.4% |
 | limits-quotas | 8 | 2.1% |
-| security | 49 | 12.8% |
+| security | 48 | 12.6% |
 | troubleshooting | 18 | 4.7% |
 | *(Unclassified)* | 132 | 34.6% |
 
@@ -119,13 +119,12 @@ category_descriptions:
 | [Storage Access Control](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-storage-access-control) | security | 0.80 | Explains how serverless SQL pool accesses Azure Storage and how to control it, including credential types and lookup behavior for SQL vs Entra users—product-specific security and access configuration. |
 | [Synapse workspace IP firewall rules](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-ip-firewall) | security | 0.80 | Firewall configuration docs usually list specific rule properties (start/end IP, rule names, scope), portal/API parameters, and behavior constraints for Synapse, which are product-specific security settings. |
 | [Temporary](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-temporary) | best-practices | 0.80 | The article includes Synapse-specific guidance and limitations for temporary tables, especially differences in serverless vs dedicated pools. These are concrete product-specific best practices and gotchas. |
-| [Troubleshoot serverless SQL pools](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand) | troubleshooting | 0.80 | Explicitly a self-help troubleshooting article for serverless SQL pool; such pages typically list specific error messages/codes, causes, and resolutions unique to Synapse. |
+| [Troubleshoot serverless SQL pools](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand) | troubleshooting | 0.80 | Explicitly described as a self-help troubleshooting article for serverless SQL pool. Such pages typically list common problems, specific error messages/codes, causes, and resolutions unique to Synapse serverless SQL, matching the troubleshooting criteria. |
 | [Configure Synapse Link with managed virtual network](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-server-2022-vnet) | security | 0.78 | Focuses on configuring Synapse Link with network security; such pages typically include specific network/security settings (VNet, firewall, private endpoints, role/permission details) that are product-specific. |
 | [6 Microsoft and third-party tools](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/netezza/6-microsoft-third-party-migration-tools) | decision-making | 0.75 | Describes and compares migration tools for Netezza→Synapse and when to use each, providing migration-specific tool selection guidance and trade-offs, which fits decision-making. |
 | [6 Microsoft and third-party tools](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/teradata/6-microsoft-third-party-migration-tools) | decision-making | 0.75 | Compares Microsoft and third-party migration tools for Teradata→Synapse and guides which to use in which scenarios. This is tool-selection guidance with migration-specific trade-offs, fitting decision-making rather than generic tooling overview. |
 | [Azure SQL Dedicated](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/synapse-spark-sql-pool-import-export) | integrations | 0.75 | Describes the dedicated SQL pool connector for Spark, which typically includes connector configuration options, parameters, and usage patterns specific to Synapse (beyond generic JDBC usage). |
 | [Column-level security](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security) | security | 0.75 | Describes implementing column-level security based on execution context or group membership; likely includes specific T-SQL constructs and role/permission patterns for dedicated SQL pool. |
-| [Connection strings](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings) | configuration | 0.75 | Provides concrete connection string examples for ADO.NET, ODBC, PHP, JDBC and mentions portal-generated strings; such pages list parameter names, formats, and sometimes default values, matching configuration sub-skill. |
 | [Connectivity settings](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/connectivity-settings) | security | 0.75 | Explains connectivity settings for dedicated and serverless SQL pools, including differences by deployment model. Likely includes specific connection policy options, allowed settings, and portal/API parameters, which are security-related configuration details. |
 | [Continuous integration and delivery](https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/continuous-integration-delivery) | deployment | 0.75 | CI/CD article for Synapse workspaces typically includes environment promotion behavior, supported deployment artifacts, and Synapse-specific deployment constraints and patterns, which are expert deployment knowledge. |
 | [Create and manage a workspace with data exfiltration protection](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-create-a-workspace-with-data-exfiltration-protection) | security | 0.75 | Explains how to create a workspace with managed VNet and exfiltration protection, including irreversible configuration constraints and tenant approval management. These are concrete, product-specific security configuration details. |
@@ -179,6 +178,7 @@ category_descriptions:
 | [Configure workload importance](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-configure-workload-importance) | configuration | 0.70 | Explains how to set request-level importance via workload classifiers, including specific T-SQL objects, properties, and allowed values—detailed configuration of a product-specific feature. |
 | [Connect to Azure Synapse workspace with private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-with-private-links) | security | 0.70 | Private link connectivity to Synapse workspaces usually involves specific endpoint types, DNS and network configuration, and possibly required roles; these are product-specific security/network details. |
 | [Connect to Synapse workspace from restricted network](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-from-restricted-network) | security | 0.70 | Describes how to connect from a restricted network, which typically includes firewall rules, IP ranges, and possibly specific endpoint URLs or ports; these are concrete, product-specific security/network configurations. |
+| [Connection strings](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings) | integrations | 0.70 | Provides concrete connection string formats for ADO.NET, ODBC, PHP, JDBC and portal-generated strings. These are product-specific integration details (parameters, formats) that go beyond generic knowledge. |
 | [Contoso public data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-blob-storage-with-polybase) | integrations | 0.70 | Uses PolyBase and T-SQL to load data into dedicated SQL pools, with external data source, file format, and table definitions—detailed integration pattern between Blob/ADLS and Synapse. |
 | [Convert resource classes to workload groups](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-convert-resource-classes-workload-groups) | configuration | 0.70 | Details mapping from resource classes to workload groups and configuring query timeout rules, including specific settings and ranges—deep configuration knowledge unique to Synapse workload management. |
 | [Cost management for serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/data-processed) | decision-making | 0.70 | Cost management guidance for serverless SQL pool with data-processed calculations and cost-planning advice; helps decide query patterns and usage to control cost, likely with quantified trade-offs. |
@@ -300,7 +300,6 @@ category_descriptions:
 | [Monitor Apache Spark applications](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-spark-applications) | configuration | 0.60 | Monitoring article is likely to include specific monitoring views, filters, and possibly configuration options unique to Synapse Studio, which are product-specific settings. |
 | [Monitor your workload - portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-monitor-workload-portal) | best-practices | 0.60 | Details how to use Azure Monitor Logs and Log Analytics specifically for Synapse SQL workload monitoring, including product-specific log categories and analysis patterns—actionable monitoring guidance rather than generic concepts. |
 | [New York taxi cab data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/load-data-from-azure-blob-storage-using-copy) | integrations | 0.60 | Tutorial for loading New York Taxicab data from Blob Storage using COPY; includes concrete COPY configuration and connection parameters specific to Synapse, fitting integrations & coding patterns. |
-| [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connect-overview) | security | 0.60 | Connection overview that explicitly recommends Microsoft Entra authentication; these pages typically list supported auth types and sometimes RBAC/permission scopes, which are product-specific security configuration details. |
 | [Performance tuning guidance](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/performance-tuning-result-set-caching) | best-practices | 0.60 | Explains result set caching behavior and its impact on concurrency and resource usage; while partly conceptual, it typically includes product-specific guidance on when and how to use caching effectively. |
 | [Query CSV files](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-single-csv-file) | integrations | 0.60 | How-to for querying CSV with serverless SQL; such articles usually show OPENROWSET/EXTERNAL TABLE syntax with file_format options and parameters specific to Synapse serverless, which are product-specific integration/coding patterns. |
 | [Query JSON files](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-json-files) | integrations | 0.60 | Explains reading JSON via OPENROWSET in serverless SQL; likely includes function/parameter usage specific to Synapse serverless, which is an integration/coding pattern. |
@@ -337,8 +336,6 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/design-elt-data-loading) | 0.40 | Article advocates ELT over ETL and explains architectural rationale; largely conceptual design guidance without quantified thresholds, decision matrices, or product-specific configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview) | 0.40 | Conceptual article on designing tables in Synapse SQL and differences between dedicated and serverless; likely high-level design concepts without detailed configuration tables, limits, or quantified decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-data-storage) | 0.40 | Overview of querying storage with serverless SQL pool; summary suggests supported T-SQL aspects but not detailed limits, configs, or troubleshooting mappings. |
-| [Query with Azure Data Studio](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-azure-data-studio) | 0.40 | Tutorial-style guide for connecting with Azure Data Studio; likely step-by-step UI instructions without detailed config tables, limits, or troubleshooting mappings. |
-| [Query with SSMS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-ssms) | 0.40 | How-to for connecting with SSMS; summary suggests basic connection steps rather than detailed configuration matrices, limits, or troubleshooting content. |
 | [Resource consumption models](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resource-consumption-models) | 0.40 | Describes resource consumption models conceptually; likely discusses billing and usage but not in the form of specific numeric limits, config tables, or decision matrices. |
 | [Restore a SQL pool from a deleted workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/backuprestore/restore-sql-pool-from-deleted-workspace) | 0.40 | How-to restore a dedicated SQL pool from a dropped workspace using PowerShell; primarily a procedural recovery guide without product-specific limits, configuration tables, or error-code-based troubleshooting. |
 | [Synapse Link for Azure SQL Database](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/sql-database-synapse-link) | 0.40 | Functional overview of Synapse Link for Azure SQL Database; description suggests conceptual explanation of replication and monitoring, not detailed limits, configs, or troubleshooting. |
@@ -357,7 +354,7 @@ category_descriptions:
 | [Clone a lake database](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/clone-lake-database) | 0.30 | Tutorial on cloning a lake database via designer; procedural instructions only, no limits, configuration matrices, or troubleshooting content. |
 | [Configure Synapse Link](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/connect-synapse-link-sql-server-2022) | 0.30 | Step-by-step getting-started connection guide; likely procedural without detailed error mappings, config tables, or limits beyond generic tutorial content. |
 | [Connect to Azure Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db) | 0.30 | Connection how-to for Synapse Link with Cosmos DB; likely a procedural guide without configuration tables, limits, or troubleshooting matrices. |
-| [Connect to Power BI Desktop](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-power-bi-professional) | 0.30 | Tutorial-style connection steps from Power BI Desktop to Synapse serverless SQL; no detailed configuration tables, limits, or product-specific error mappings. |
+| [Connect to Power BI Desktop](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-power-bi-professional) | 0.30 | Tutorial for connecting Power BI Desktop to serverless SQL pool; primarily step-by-step instructions, not configuration matrices, limits, or error-code-based troubleshooting. |
 | [Connect to Spark with IntelliJ plug-in](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/intellij-tool-synapse) | 0.30 | Tutorial for using IntelliJ plugin; primarily step-by-step development workflow, not focused on configuration matrices, limits, or troubleshooting mappings. |
 | [Connect to Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-connect-synapse-link-cosmos-db) | 0.30 | Quickstart connection tutorial for Synapse Link with Cosmos DB; likely step-by-step UI instructions without detailed configuration tables or error mappings. |
 | [Database templates](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/concepts-database-templates) | 0.30 | Concepts article about database templates; focuses on what and why, not detailed settings, limits, or error-resolution mappings. |
@@ -375,8 +372,9 @@ category_descriptions:
 | [Pause and resume using PowerShell](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/pause-and-resume-compute-workspace-powershell) | 0.30 | Quickstart for pausing/resuming compute with PowerShell; mainly shows commands and basic usage, not organized troubleshooting, limits, or complex configuration matrices. |
 | [Pause and resume using Synapse Pipelines](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/how-to-pause-resume-pipelines) | 0.30 | Shows how to automate pause/resume with Synapse Pipelines; step-by-step orchestration tutorial without detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-configure-workload-isolation-portal) | 0.30 | Portal quickstart for configuring workload isolation; primarily a guided example (create a group reserving 20% resources) rather than a catalog of settings, limits, or troubleshooting mappings. |
-| [Query with Visual Studio SSDT](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-visual-studio) | 0.30 | How-to guide for connecting/querying Synapse SQL from Visual Studio/SSDT; primarily step-by-step usage, not deep configuration, limits, or troubleshooting matrices. |
-| [Query with sqlcmd](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-connect-sqlcmd) | 0.30 | Basic tutorial for using sqlcmd with Synapse SQL; likely shows connection strings and commands but not organized configuration tables, limits, or error-code mappings. |
+| [Query with SSMS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-ssms) | 0.30 | Tutorial-style guide for connecting with SSMS; likely step-by-step without detailed configuration tables, limits, or troubleshooting mappings. |
+| [Query with Visual Studio SSDT](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-visual-studio) | 0.30 | Primarily a how-to/tutorial for connecting Visual Studio/SSDT to Synapse SQL. It may mention version requirements (e.g., VS2022 17.7 for serverless support) but does not focus on limits, configuration matrices, or product-specific best practices beyond generic connection steps. |
+| [Query with sqlcmd](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/get-started-connect-sqlcmd) | 0.30 | How-to guide for using sqlcmd to connect to Synapse SQL. Likely contains connection strings and basic usage, but not organized configuration tables, limits, or troubleshooting mappings with error codes; mainly generic connection instructions. |
 | [R for Apache Spark](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-r-language) | 0.30 | General guidance on using R with Spark in Synapse notebooks; appears tutorial/overview without product-specific limits, configs, or error mappings. |
 | [SQL pools - Synapse Studio](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-sql-pools) | 0.30 | Describes how to monitor SQL pools in Synapse Studio; largely UI-driven monitoring instructions without expert-only limits, configuration ranges, or decision matrices. |
 | [SQL requests - Synapse Studio](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-sql-requests) | 0.30 | Explains monitoring SQL requests in Synapse Studio; focuses on UI usage and basic monitoring, not on specific limits, config parameter tables, or error-code-based troubleshooting. |
@@ -416,7 +414,7 @@ category_descriptions:
 | [Data Flow](https://learn.microsoft.com/en-us/azure/synapse-analytics/concepts-data-flow-overview) | 0.20 | Data flows article is an overview of visually designed transformations; summary does not show specific numeric limits, configuration tables, or decision matrices. |
 | [Data visualization with Synapse Studio notebooks](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-data-visualization-tutorial) | 0.20 | Tutorial on exploratory data analysis and visualization with Spark notebooks; code examples but no product-specific configuration matrices or limits. |
 | [Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake) | 0.20 | High-level overview of Delta Lake features in Synapse; mostly conceptual with links out, not a detailed configuration, limits, or troubleshooting reference. |
-| [Features overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features) | 0.20 | High-level list/overview of T-SQL feature support; primarily descriptive without detailed config values, limits, or decision criteria. |
+| [Features overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features) | 0.20 | High-level list of T-SQL features supported in Synapse SQL; primarily a conceptual/feature overview without numeric limits, configuration tables, error-code troubleshooting, or decision matrices. |
 | [Get started](https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started) | 0.20 | Getting-started tutorial sequence; step-by-step usage, not configuration reference, limits, or decision guidance. |
 | [Install Visual Studio SSDT](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-install-visual-studio) | 0.20 | Visual Studio/SSDT installation guide; likely step-by-step setup without product-specific limits, configs, or troubleshooting matrices. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/security-white-paper-introduction) | 0.20 | Introduction/overview to a security white paper series; summary-style content without indication of specific RBAC roles, config parameters, or other detailed security settings. |
@@ -424,7 +422,9 @@ category_descriptions:
 | [Link a Power BI workspace](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-power-bi) | 0.20 | Quickstart for linking Power BI and Synapse is primarily a step-by-step connection guide; no indication of detailed configuration tables, limits, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-overview) | 0.20 | Overview of a POC playbook methodology; planning-focused, without product-specific numeric thresholds, configs, or troubleshooting details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/overview-cognitive-services) | 0.20 | High-level overview of Azure AI services in Synapse; appears marketing/conceptual without detailed configuration parameters, limits, or decision matrices. |
+| [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connect-overview) | 0.20 | High-level connection overview; likely explains connection options and Entra auth recommendation but not detailed limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-overview) | 0.20 | Navigation/overview page listing resources for Synapse SQL development; does not itself contain detailed limits, configuration, or troubleshooting content. |
+| [Power BI Desktop](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop) | 0.20 | Tutorial-style integration of Synapse serverless SQL pool with Power BI Desktop; primarily step-by-step guidance without detailed config parameter tables, limits, or product-specific error/diagnostic mappings that meet the expert-knowledge criteria. |
 | [Read ADLS Gen2 into Pandas dataframe](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-read-from-gen2-to-pandas-dataframe) | 0.20 | Quickstart for reading from ADLS Gen2 to Pandas is a basic tutorial; it likely shows example code but not deep, product-specific configuration tables or constraints. |
 | [Serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) | 0.20 | Conceptual overview of serverless SQL pool capabilities; no detailed limits, configuration parameter tables, or troubleshooting mappings. |
 | [Support](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-create-support-ticket) | 0.20 | Describes how to submit a support ticket and request quota increases; process/UI guidance without listing specific numeric quotas or technical constraints. |
@@ -446,7 +446,6 @@ category_descriptions:
 | [Intelligent Cache](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-intelligent-cache-concept) | 0.10 | Conceptual overview of Intelligent Cache; summary does not show concrete limits, configs, or error mappings. |
 | [Machine learning and AI](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/machine-learning-ai) | 0.10 | Partner listing for ML and AI tools; marketing-style overview without deep, product-specific technical content. |
 | [Partner solutions](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/browse-partners) | 0.10 | Partner discovery page is largely navigation/marketing for third-party solutions; no evidence of detailed technical configuration or limits. |
-| [Power BI Desktop](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop) | 0.10 | Tutorial on connecting serverless SQL pool to Power BI Desktop; typical integration walkthrough, not a reference of parameters, limits, or best-practice edge cases. |
 | [System integration](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/system-integration) | 0.10 | Partner listing/marketing-style page describing system integration partners; no technical limits, configuration parameters, error codes, or product-specific patterns. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-terminology) | 0.10 | Terminology reference for basic concepts; no product-specific limits, configs, or troubleshooting mappings. |
 | [Use serverless SQL pool to analyze data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-data-analyst) | 0.10 | Tutorial for exploratory data analysis using open datasets; standard how-to flow without product-specific limits, configuration matrices, or troubleshooting content. |

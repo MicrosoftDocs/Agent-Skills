@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: How to configure Application Gateway components (listeners, routing,
     probes, TLS, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring) using
@@ -33,8 +33,8 @@ category_descriptions:
 - **Total Pages**: 136
 - **Fetched**: 136
 - **Fetch Failed**: 0
-- **Classified**: 84
-- **Unclassified**: 52
+- **Classified**: 83
+- **Unclassified**: 53
 
 ### Incremental Update
 - **New Pages**: 0
@@ -48,14 +48,14 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.7% |
-| configuration | 35 | 25.7% |
+| configuration | 34 | 25.0% |
 | decision-making | 8 | 5.9% |
 | deployment | 3 | 2.2% |
 | integrations | 3 | 2.2% |
 | limits-quotas | 2 | 1.5% |
 | security | 19 | 14.0% |
 | troubleshooting | 13 | 9.6% |
-| *(Unclassified)* | 52 | 38.2% |
+| *(Unclassified)* | 53 | 39.0% |
 
 ## Changes
 
@@ -135,7 +135,6 @@ category_descriptions:
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-powershell) | deployment | 0.62 | Documents deployment-specific requirements such as needing a dual-stack VNet and lack of upgrade path from IPv4-only gateways, which are concrete platform constraints relevant to deployment planning. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal) | deployment | 0.62 | Contains product-specific deployment constraints (must create new gateway for IPv6, cannot upgrade IPv4-only, backend IPv6 not supported) that affect how and when you can deploy dual-stack frontends. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-arm-template) | deployment | 0.60 | Template-focused article for deploying an IPv6 frontend Application Gateway in a dual-stack VNet; includes product-specific deployment pattern and constraints for IPv6 frontends. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/how-to-tcp-tls-proxy) | configuration | 0.60 | Describes product-specific configuration of layer 4 proxying for SQL Server backends, including routing rules and backend settings that are unique to Application Gateway’s TCP/TLS proxy feature. |
 | [Backend health](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health) | troubleshooting | 0.60 | Backend health report article is typically organized around interpreting health states and resolving issues; likely maps probe results and statuses to causes and corrective actions, fitting troubleshooting. |
 | [Classic to Resource Manager](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/migration/migration-classic-resource-manager-faq) | decision-making | 0.60 | Migration FAQ for classic to ARM; typically includes dates, supported scenarios, and guidance on when/how to migrate, aiding technology selection and migration decisions. |
 | [Custom error pages](https://learn.microsoft.com/en-us/azure/application-gateway/custom-error) | configuration | 0.60 | Custom error pages feature usually exposes mappings between HTTP status codes and page URLs plus configuration fields; these are concrete product-specific settings. |
@@ -168,6 +167,7 @@ category_descriptions:
 | [SSL termination - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-powershell) | 0.35 | PowerShell tutorial for TLS termination; mainly shows how to attach a certificate and create a gateway, without detailed security roles, config tables, or edge-case handling. |
 | [SSL termination and end to end SSL](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-overview) | 0.35 | End-to-end TLS overview; aside from a deprecation date for older TLS versions, it appears conceptual without detailed config tables or error mappings. |
 | [Autoscaling and zone redundant](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-autoscale-ps) | 0.30 | Autoscale and zone-redundant tutorial; appears to be a how-to without detailed autoscale thresholds, quotas, or decision matrices. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/how-to-tcp-tls-proxy) | 0.30 | Primarily a step-by-step portal tutorial for configuring Application Gateway as a TCP/TLS proxy to a SQL VM. It does not focus on detailed configuration parameter tables, limits, error codes, or product-specific best-practice guidance; it mainly walks through creating resources and a basic routing rule. |
 | [Create Application Gateway - Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-cli) | 0.30 | Quickstart using Azure CLI; focuses on basic creation and testing, not on exhaustive configuration parameters, limits, or decision criteria. |
 | [Create Application Gateway - Portal](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-portal) | 0.30 | Quickstart tutorial using Azure portal with a simple example; shows how to create resources but lacks comprehensive configuration tables, limits, or product-specific troubleshooting. |
 | [Create Application Gateway - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-powershell) | 0.30 | Quickstart using PowerShell; primarily step-by-step creation instructions without detailed configuration option matrices, limits, or error mappings. |
@@ -192,7 +192,6 @@ category_descriptions:
 | [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.25 | Explains request flow conceptually; no specific configuration parameters, limits, or troubleshooting mappings. |
 | [Ingress for AKS](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-overview) | 0.25 | Intro to AGIC; summary indicates conceptual overview of what it is and how it runs, not detailed config matrices or troubleshooting. |
 | [WebSocket support](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-websocket) | 0.25 | States WebSocket is natively supported with no user-configurable settings; largely conceptual with no detailed configuration or limits. |
-| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.20 | Conceptual overview of Application Gateway for Containers; no detailed limits, configuration parameter tables, or decision matrices. |
 | [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview) | 0.20 | High-level product overview of Azure Application Gateway; no specific limits, configuration tables, error codes, or decision matrices. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-manage-web-traffic-cli) | 0.20 | CLI tutorial to create an Application Gateway with VM scale set; procedural content, not focused on expert configuration or troubleshooting. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-cli) | 0.20 | Multiple-site hosting tutorial with CLI; step-by-step instructions but no detailed config parameter tables, limits, or specialized troubleshooting content. |
@@ -204,3 +203,4 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/application-gateway/tcp-tls-proxy-overview) | 0.20 | Layer 4 proxy overview; no indication of limits, config matrices, or troubleshooting content. |
 | [Redirect web traffic](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-redirect-cli) | 0.20 | CLI tutorial for URL path-based redirection; focuses on example commands, not deep config options, limits, or troubleshooting mappings. |
 | [Route by URL](https://learn.microsoft.com/en-us/azure/application-gateway/create-url-route-portal) | 0.20 | Tutorial for URL path-based routing via portal; primarily procedural without detailed configuration matrices or limits. |
+| [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.10 | Page is an overview of Application Gateway for Containers features and architecture; no indication of numeric limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |

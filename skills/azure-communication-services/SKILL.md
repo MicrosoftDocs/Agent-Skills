@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including configuration, decision making, security, best practices, integrations & coding patterns, limits & quotas, troubleshooting, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Communication Services applications.
+description: Expert knowledge for Azure Communication Services development including configuration, decision making, security, best practices, limits & quotas, troubleshooting, deployment, integrations & coding patterns, and architecture & design patterns. Use when building, debugging, or optimizing Azure Communication Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Communication Services Skill
 
@@ -21,14 +21,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L100 | Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams interop, audio/video/device/network issues, plus collecting logs/metrics and interpreting error/diagnostic codes. |
-| Best Practices | L101-L121 | Best practices for ACS calling, SMS, email, and Teams interop: quality, UX, spam/reputation, policy compliance, tokens/auth, identifiers, diagnostics, and network/device optimization. |
-| Decision Making | L122-L145 | Guidance on ACS-Teams interop, calling/phone/SMS/WhatsApp pricing, PSTN and number options, government cloud support, and migration from Twilio Video/Conversations to ACS |
-| Architecture & Design Patterns | L146-L151 | Patterns for auto-recording ACS calls with Event Grid/Functions and designing ACS networks with ExpressRoute for private, secure connectivity. |
-| Limits & Quotas | L152-L216 | Email sending limits, phone number eligibility/restrictions by country, calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and ACS API quotas and behaviors. |
-| Security | L217-L237 | Securing ACS apps: auth methods (Entra, HMAC, managed identities, SMTP), Teams interop security, sender/caller identity, roles, webhooks, encryption, captions, RTT, and access controls. |
-| Configuration | L238-L306 | Monitoring, logging, metrics, and diagnostics for ACS (calls, chat, SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams interop, and UI Library behavior. |
-| Integrations & Coding Patterns | L307-L442 | Patterns and samples for integrating ACS calling, chat, email, Rooms, Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST, events, and client capabilities. |
-| Deployment | L443-L447 | Guides for planning ACS direct routing infrastructure and deploying the ACS Chat Hero sample, including architecture, setup steps, and configuration details. |
+| Best Practices | L101-L122 | Best practices for ACS calling, SMS, email, and Teams interop: call quality, UX, network/AVD tuning, spam/reputation, policy compliance, tokens/auth, diagnostics, and virtual appointments. |
+| Decision Making | L123-L146 | Guidance on ACS-Teams interop, calling/phone/SMS/WhatsApp pricing, PSTN and number options, government cloud support, and migration from Twilio Video/Conversations to ACS |
+| Architecture & Design Patterns | L147-L152 | Patterns for auto-recording ACS calls with Event Grid/Functions and designing ACS networks with ExpressRoute for private, secure connectivity. |
+| Limits & Quotas | L153-L217 | Email sending limits, phone number eligibility/restrictions by country, calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and ACS API quotas and behaviors. |
+| Security | L218-L238 | Securing ACS apps: auth methods (Entra, HMAC, managed identities, SMTP), Teams interop security, sender/caller identity, roles, webhooks, encryption, captions, RTT, and access controls. |
+| Configuration | L239-L307 | Monitoring, logging, metrics, and diagnostics for ACS (calls, chat, SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams interop, and UI Library behavior. |
+| Integrations & Coding Patterns | L308-L441 | Patterns and samples for integrating ACS calling, chat, email, Rooms, Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST, events, and client capabilities. |
+| Deployment | L442-L446 | Guides for planning ACS direct routing infrastructure and deploying the ACS Chat Hero sample, including architecture, setup steps, and configuration details. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -115,6 +115,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Optimize network configuration for ACS voice and video | https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/network-requirements |
 | Collect ACS user support logs and diagnostics | https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/retrieve-support-files |
 | Apply ACS UX best practices for calling apps | https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/user-experience |
+| Optimize Azure Communication Services calling in Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/calling-from-virtual-desktop-infrastructure |
 | Optimize ACS video layout and resolution on web | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/optimizing-video-placement |
 | Implement a trusted auth backend for ACS tokens | https://learn.microsoft.com/en-us/azure/communication-services/samples/trusted-auth-sample |
 | Prepare devices for Teams Virtual appointment precall | https://learn.microsoft.com/en-us/azure/communication-services/tutorials/virtual-visits/extend-teams/precall |
@@ -307,7 +308,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Integrate Call Automation with Azure AI services | https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/azure-communication-services-azure-cognitive-services-integration |
 | Invoke Call Automation actions via REST and SDKs | https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/actions-for-call-control |
 | Stream call audio using Audio Streaming APIs | https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/audio-streaming-quickstart |
 | Use mid-call media actions with Call Automation | https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/control-mid-call-media-actions |
@@ -370,7 +370,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Send WhatsApp reaction messages with Advanced Messages SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-reaction-messages |
 | Send WhatsApp sticker messages using Advanced Messages SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-sticker-messages |
 | Send WhatsApp template messages with Advanced Messages SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-template-messages |
-| Make outbound PSTN calls with Call Automation SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/call-automation/quickstart-make-an-outbound-call |
 | Integrate ACS chat SDK into your application | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/get-started |
 | Connect ACS chat to Teams meeting chat | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/meeting-interop |
 | Integrate Azure OpenAI bot with ACS chat | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/openai-chat-bot-integration |

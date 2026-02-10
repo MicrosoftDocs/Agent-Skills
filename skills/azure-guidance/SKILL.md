@@ -3,7 +3,7 @@ name: azure-guidance
 description: Expert knowledge for Azure Guidance development including decision making, best practices, security, architecture & design patterns, troubleshooting, deployment, and configuration. Use when building, debugging, or optimizing Azure Guidance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Guidance Skill
 
@@ -22,11 +22,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
 | Best Practices | L45-L75 | Best practices for designing, operating, and hardening Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup, resilience, and performance. |
-| Decision Making | L76-L137 | Guidance to choose the right Azure services, models, and architectures (vs AWS/GCP), including compute, data/AI, containers/AKS, networking, storage, DR, and hybrid/migration options. |
-| Architecture & Design Patterns | L138-L273 | End-to-end Azure solution architectures and patterns for mission-critical, hybrid, data/analytics, IoT, mainframe migration, SAP, VDI, and microservices workloads, including HA/DR and networking. |
-| Security | L274-L303 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
-| Configuration | L304-L309 | Configuring GitOps for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines using Event Hubs for logs and metrics. |
-| Deployment | L310-L321 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zone options, and mission‑critical workload rollout and testing. |
+| Decision Making | L76-L138 | Guidance to choose the right Azure services, data/AI platforms, and equivalents to AWS/GCP offerings, including AKS, storage, networking, DR, and compute options for specific workloads. |
+| Architecture & Design Patterns | L139-L275 | End-to-end Azure solution architectures and patterns for mission-critical, hybrid, data/analytics, IoT, microservices, mainframe migration, SAP, and enterprise workloads, including HA/DR and networking. |
+| Security | L276-L304 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
+| Configuration | L305-L310 | Configuring GitOps for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines using Event Hubs for logs and metrics. |
+| Deployment | L311-L322 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zone options, and mission‑critical workload rollout and testing. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -77,7 +77,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Choose the right AI model for your workload | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model |
-| Compare Microsoft machine learning products and platforms | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/data-science-and-machine-learning |
+| Choose the right Microsoft ML product for your solution | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/data-science-and-machine-learning |
 | Decide Azure services that correspond to AWS offerings | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/ |
 | Map AWS account structures to Azure subscriptions and roles | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/accounts |
 | Choose Azure compute services corresponding to AWS compute | https://learn.microsoft.com/en-us/azure/architecture/aws-professional/compute |
@@ -133,6 +133,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose and run GPU workloads on AKS | https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-gpu/gpu-aks |
 | Choose a hybrid connectivity option to Azure VNets | https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/ |
 | Select Azure virtual network connectivity and peering options | https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/virtual-network-peering |
+| Choose the right Azure container platform | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/container-get-started |
 | Plan cross-tenant Azure workload migration strategy | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/migrate-cloud-workloads-across-security-tenants |
 
 ### Architecture & Design Patterns
@@ -192,6 +193,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Replatform Kubernetes microservices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps |
 | Build microservices on Container Apps with Dapr and KEDA | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr |
 | Migrate IBM AIX workloads to Azure Linux | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/unix-migration/migrate-aix-azure-linux |
+| Secure AKS hub-and-spoke architecture with Azure Firewall | https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall |
 | Apply blue-green deployment pattern to AKS | https://learn.microsoft.com/en-us/azure/architecture/guide/aks/blue-green-deployment-for-aks |
 | Apply big compute architecture style on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-compute |
 | Design big data architectures with Azure services | https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-data |
@@ -284,7 +286,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Secure Outlook desktop hybrid access with MFA | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-client |
 | Secure Outlook mobile hybrid access with MFA | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-mobile |
 | Secure web-based hybrid messaging with MFA | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-web |
-| Secure AKS with Azure Firewall in hub-spoke | https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall |
 | Secure AWS environments with Microsoft security tools | https://learn.microsoft.com/en-us/azure/architecture/guide/aws/aws-azure-security-solutions |
 | Adopt IDaaS for secure identity in Azure apps | https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/identity |
 | Implement DevSecOps practices on AKS | https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks |

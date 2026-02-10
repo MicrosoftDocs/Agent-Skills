@@ -3,7 +3,7 @@ name: azure-data-explorer
 description: Expert knowledge for Azure Data Explorer development including security, integrations & coding patterns, limits & quotas, deployment, best practices, architecture & design patterns, configuration, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Data Explorer applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Data Explorer Skill
 
@@ -24,11 +24,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L42-L54 | Guidance on ADX performance and health: monitoring, concurrency, schema and ingestion tuning, handling bad/duplicate/personal data, cold data querying, and Power BI optimization. |
 | Decision Making | L55-L69 | Guidance on choosing and sizing ADX clusters (SKUs, isolated/confidential compute, horizontal/vertical scaling) plus cost planning, reservations, and migrating from Elasticsearch. |
 | Architecture & Design Patterns | L70-L77 | Designing ADX architectures for disaster recovery, business continuity, cross-cluster querying with follower DBs, and multi-tenant deployment patterns and trade-offs |
-| Limits & Quotas | L78-L86 | Managing ADX cluster limits: auto-stop for inactivity, Event Grid ingestion size caps, safe delete/recover, and free-cluster constraints and upgrade paths. |
+| Limits & Quotas | L78-L86 | Cluster usage limits for free/paid ADX, automatic stop behavior, Event Grid ingestion quotas, and safe deletion/recovery or upgrade paths to remove free-cluster restrictions. |
 | Security | L87-L117 | Securing ADX clusters and data: encryption, keys, identities/RBAC, cross-tenant access, network/private endpoints, Conditional Access, Azure Policy, and secure connections/ingestion. |
 | Configuration | L118-L134 | Configuring Azure Data Explorer clusters and databases: schema cloning/sync, ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring, and web UI settings/profile. |
-| Integrations & Coding Patterns | L135-L196 | Integrating Azure Data Explorer with tools and services (Power BI, ADF, Kafka, Spark, Logstash, Power Automate, etc.), plus SDK patterns for auth, ingestion, policies, and query access. |
-| Deployment | L197-L203 | Provisioning and automating ADX environments, deploying Kusto schema via DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
+| Integrations & Coding Patterns | L135-L191 | Integrating Azure Data Explorer with tools/services (Power BI, ADF, Kafka, Splunk, IoT, logging frameworks), configuring connectors/SDKs, and programmatically managing/ingesting/querying data. |
+| Deployment | L192-L198 | Provisioning and automating ADX environments, deploying Kusto schema via DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -79,9 +79,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Use automatic stop for inactive ADX clusters | https://learn.microsoft.com/en-us/azure/data-explorer/auto-stop-clusters |
-| Apply Event Grid ingestion file size limits | https://learn.microsoft.com/en-us/azure/data-explorer/create-event-grid-connection |
+| Event Grid data connection limits for Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/create-event-grid-connection |
 | Delete and recover Azure Data Explorer clusters safely | https://learn.microsoft.com/en-us/azure/data-explorer/delete-cluster |
-| Understand limits of Azure Data Explorer free cluster | https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free |
+| Understand free Azure Data Explorer cluster limits | https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free |
 | Upgrade free Azure Data Explorer clusters and remove limits | https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free-upgrade |
 
 ### Security
@@ -139,13 +139,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Add Azure Data Explorer database principals via SDKs | https://learn.microsoft.com/en-us/azure/data-explorer/add-database-principal |
 | Use Apache Log4J 2 sink to send logs to Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/apache-log4j2-connector |
 | Manage Azure Data Explorer with Az.Kusto PowerShell cmdlets | https://learn.microsoft.com/en-us/azure/data-explorer/azure-powershell |
-| Connect common SQL tools to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/connect-common-apps |
 | Configure JDBC connectivity to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/connect-jdbc |
 | Configure ODBC connections to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/connect-odbc |
 | Programmatically create Azure Data Explorer clusters and databases | https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-database |
 | Configure Event Grid data connections with Kusto SDKs | https://learn.microsoft.com/en-us/azure/data-explorer/create-event-grid-connection-sdk |
 | Create Event Hubs data connections using Kusto SDKs | https://learn.microsoft.com/en-us/azure/data-explorer/create-event-hubs-connection-sdk |
-| Configure Azure Data Explorer IoT Hub data connection | https://learn.microsoft.com/en-us/azure/data-explorer/create-iot-hub-connection |
+| Ingest IoT Hub data into Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/create-iot-hub-connection |
 | Create IoT Hub data connection using Kusto SDKs | https://learn.microsoft.com/en-us/azure/data-explorer/create-iot-hub-connection-sdk |
 | Run Azure Data Explorer management commands from ADF | https://learn.microsoft.com/en-us/azure/data-explorer/data-factory-command-activity |
 | Integrate Azure Data Explorer with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-explorer/data-factory-integration |
@@ -153,7 +152,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Bulk copy from databases to Data Explorer using ADF template | https://learn.microsoft.com/en-us/azure/data-explorer/data-factory-template |
 | Query Azure Data Lake from Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/data-lake-query-data |
 | Programmatically create Azure Data Explorer policies | https://learn.microsoft.com/en-us/azure/data-explorer/database-table-policies |
-| Export and connect Azure Data Explorer queries to Excel | https://learn.microsoft.com/en-us/azure/data-explorer/excel |
 | Query Azure Storage external tables with KQL | https://learn.microsoft.com/en-us/azure/data-explorer/external-azure-storage-tables-query |
 | Configure Azure Data Explorer connector for Power Automate | https://learn.microsoft.com/en-us/azure/data-explorer/flow |
 | Use Azure Data Explorer with Power Automate flows | https://learn.microsoft.com/en-us/azure/data-explorer/flow-usage |
@@ -171,7 +169,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate Azure Functions with Azure Data Explorer bindings | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-azure-functions |
 | Connect MCP servers to Azure Data Explorer clusters | https://learn.microsoft.com/en-us/azure/data-explorer/integrate-mcp-servers |
 | Connect Kibana to Azure Data Explorer using K2Bridge | https://learn.microsoft.com/en-us/azure/data-explorer/k2bridge |
-| Use Kqlmagic in Jupyter to query Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/kqlmagic |
 | Create SQL Server linked server to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/linked-server |
 | Use Logic Apps connector with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/logic-apps |
 | Use NLog sink to send .NET logs to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/nlog-sink |
@@ -189,10 +186,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Set up Azure Data Explorer as a Sisense data source | https://learn.microsoft.com/en-us/azure/data-explorer/sisense |
 | Use Azure Data Explorer connector for Apache Spark | https://learn.microsoft.com/en-us/azure/data-explorer/spark-connector |
 | Run KQL and stored functions over TDS | https://learn.microsoft.com/en-us/azure/data-explorer/sql-kql-queries-and-stored-functions |
-| Connect to Azure Data Explorer via SQL Server emulation | https://learn.microsoft.com/en-us/azure/data-explorer/sql-server-emulation-overview |
 | Configure Azure Stream Analytics output to Azure Data Explorer | https://learn.microsoft.com/en-us/azure/data-explorer/stream-analytics-connector |
 | Connect Azure Data Explorer to Tableau via ODBC | https://learn.microsoft.com/en-us/azure/data-explorer/tableau |
-| Debug KQL inline Python with VS Code | https://learn.microsoft.com/en-us/kusto/debug-inline-python?view=microsoft-fabric |
 
 ### Deployment
 | Topic | URL |

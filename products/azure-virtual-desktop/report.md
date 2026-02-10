@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   configuration: Configuring AVD host pools and session hosts, images, autoscale,
     licensing, networking, monitoring, and all RDP/client settings (redirection, codecs,
@@ -16,9 +16,9 @@ category_descriptions:
   decision-making: Guidance for planning AVD architecture, autoscale, costs, licensing,
     storage, tools, deployment models, Teams support, and monitoring/optimization
     choices.
-  security: 'Security setup for AVD: identity/SSO (Entra, AD FS, Kerberos, external
-    users), RBAC/permissions, MFA/Conditional Access, and session protections (screen
-    capture, watermarking, Purview).'
+  security: 'Securing Azure Virtual Desktop: identity/SSO (Entra, AD FS, Kerberos,
+    MFA, external users), RBAC/permissions, managed identities, delegated access,
+    and session protections (screen capture, watermarking, forensics).'
   integrations: Using CLI/PowerShell to manage AVD, configuring MSIX app attach with
     MSIXMGR, and integrating WebRTC calling apps with AVD multimedia redirection.
   architecture-patterns: Designing stateless AVD host pools using ephemeral OS disks,
@@ -109,12 +109,12 @@ category_descriptions:
 | [Location](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-location) | configuration | 0.75 | Explains how to enable/disable location redirection using specific RDP/AVD settings; these configuration parameters are product-specific and not generic knowledge. |
 | [Peripheral and resource redirection overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-remote-desktop-protocol) | configuration | 0.75 | Covers RDP redirection for multiple device types; likely includes specific Group Policy/Intune settings, RDP properties, and constraints for AVD/Windows 365/Dev Box. |
 | [Schedule Agent updates](https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates) | configuration | 0.75 | Describes how Scheduled Agent Updates work and how to set them up; this implies concrete configuration parameters (maintenance windows, time ranges, components) that are specific to this product. |
-| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.75 | Security feature configuration; likely includes specific policy/setting names, client requirements, and enforcement behavior unique to AVD screen capture protection. |
 | [Set preferred application group type](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-preferred-application-group-type) | configuration | 0.75 | Step-by-step configuration of preferred application group type for pooled host pools, with specific setting names and behavior unique to AVD. |
 | [Watermarking](https://learn.microsoft.com/en-us/azure/virtual-desktop/watermarking) | security | 0.75 | Describes enabling watermarking via Intune/Group Policy with AVD-specific settings and behavior; security-focused with concrete configuration steps. |
 | [Developer integration for WebRTC call apps](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-developer-integration) | integrations | 0.72 | Developer integration guide for WebRTC apps will contain JavaScript/HTML integration patterns, required headers, query parameters, and configuration flags specific to the multimedia redirection API surface. |
 | [Enable GPU acceleration](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-enable-gpu-acceleration) | configuration | 0.72 | Enabling GPU acceleration and HEVC/AVC support requires specific VM SKUs, driver settings, and RDP/Group Policy parameters; these are detailed configuration instructions unique to AVD graphics. |
 | [Microsoft Entra joined session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts) | security | 0.72 | Entra-joined session hosts involve identity and access configuration; such an article will include specific join modes, policy settings, and possibly RBAC/conditional access requirements that are product-specific security configuration details. |
+| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.72 | Page describes a product-specific security feature (screen capture protection) including its concrete behavioral effects and constraints (for example, blocking screenshots, screen sharing, and Teams window sharing when enabled). This is detailed, service-specific security configuration/behavior that goes beyond generic concepts, fitting the security sub-skill. |
 | [Add and manage App Attach applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) | configuration | 0.70 | Shows how to configure App Attach via portal/PowerShell; likely includes specific parameters and settings for managing attached applications unique to AVD. |
 | [Azure Virtual Desktop FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/faq) | best-practices | 0.70 | FAQ plus best practices for AVD; likely includes concrete recommendations and edge-case guidance specific to the service beyond generic concepts. |
 | [Configure Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-setup) | configuration | 0.70 | A setup article for Private Link will contain specific resource types, endpoint configuration parameters, DNS settings, and possibly required subresource names, which are concrete configuration details unique to this integration. |
@@ -207,7 +207,7 @@ category_descriptions:
 | [MSIXMGR tool](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-msixmgr) | 0.25 | MSIXMGR tool release notes; summary suggests change log, not structured configuration or troubleshooting guidance. |
 | [Multimedia redirection](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-multimedia-redirection) | 0.25 | Multimedia redirection updates; appears as feature update list, not detailed limits, configs, or error mappings. |
 | [WebRTC Redirector Service](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-webrtc) | 0.25 | WebRTC Redirector Service updates; summary indicates latest updates only, not deep configuration or troubleshooting content. |
-| [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | Agent release notes; summary suggests high-level update info, not detailed configuration parameters or error-resolution mappings. |
+| [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | Appears to be a 'what's new' change log for the Azure Virtual Desktop Agent. While it may list version-specific changes, it does not clearly indicate structured limits, configuration matrices, error-code troubleshooting, or other expert-knowledge patterns defined in the sub-skill types. Likely more of a release notes/overview page than a deep technical reference. |
 | [Autoscale glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-glossary) | 0.20 | Glossary of terms; primarily conceptual definitions without configuration parameters, limits, or troubleshooting mappings. |
 | [Create Azure Service Health alerts](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-service-alerts) | 0.20 | Describes how to set up Azure Service Health alerts; primarily a conceptual/procedural overview of notifications, not detailed configuration matrices or troubleshooting mappings. |
 | [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | SxS Network Stack release notes; summary indicates update history, not concrete limits, configs, or troubleshooting content. |

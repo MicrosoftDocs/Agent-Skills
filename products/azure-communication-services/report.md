@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-10'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (calls, chat,
     SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams
@@ -11,11 +11,8 @@ category_descriptions:
     Teams interop security, sender/caller identity, roles, webhooks, encryption, captions,
     RTT, and access controls.'
   best-practices: 'Best practices for ACS calling, SMS, email, and Teams interop:
-    quality, UX, spam/reputation, policy compliance, tokens/auth, identifiers, diagnostics,
-    and network/device optimization.'
-  integrations: Patterns and samples for integrating ACS calling, chat, email, Rooms,
-    Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST,
-    events, and client capabilities.
+    call quality, UX, network/AVD tuning, spam/reputation, policy compliance, tokens/auth,
+    diagnostics, and virtual appointments.'
   limits-quotas: Email sending limits, phone number eligibility/restrictions by country,
     calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and
     ACS API quotas and behaviors.
@@ -25,6 +22,9 @@ category_descriptions:
   deployment: Guides for planning ACS direct routing infrastructure and deploying
     the ACS Chat Hero sample, including architecture, setup steps, and configuration
     details.
+  integrations: Patterns and samples for integrating ACS calling, chat, email, Rooms,
+    Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST,
+    events, and client capabilities.
   architecture-patterns: Patterns for auto-recording ACS calls with Event Grid/Functions
     and designing ACS networks with ExpressRoute for private, secure connectivity.
 ---
@@ -32,16 +32,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 515
-- **Fetched**: 515
+- **Total Pages**: 516
+- **Fetched**: 516
 - **Fetch Failed**: 0
-- **Classified**: 380
-- **Unclassified**: 135
+- **Classified**: 379
+- **Unclassified**: 137
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 515
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 512
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -50,17 +50,30 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 0.4% |
-| best-practices | 17 | 3.3% |
+| best-practices | 18 | 3.5% |
 | configuration | 65 | 12.6% |
 | decision-making | 20 | 3.9% |
 | deployment | 2 | 0.4% |
-| integrations | 132 | 25.6% |
+| integrations | 130 | 25.2% |
 | limits-quotas | 61 | 11.8% |
 | security | 17 | 3.3% |
 | troubleshooting | 64 | 12.4% |
-| *(Unclassified)* | 135 | 26.2% |
+| *(Unclassified)* | 137 | 26.6% |
 
 ## Changes
+
+### New Pages
+
+- [Use VDI to make audio calls from Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/calling-from-virtual-desktop-infrastructure)
+
+### Updated Pages
+
+- [Make an outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/call-automation/quickstart-make-an-outbound-call)
+  - Updated: 2023-07-19T22:24:00.000Z → 2024-11-19T18:02:00.000Z
+- [Connect to Azure AI](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/azure-communication-services-azure-cognitive-services-integration)
+  - Updated: 2025-06-04T22:03:00.000Z → 2026-02-10T06:10:00.000Z
+- [Gather user input](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/recognize-action)
+  - Updated: 2024-02-23T05:40:00.000Z → 2026-02-10T06:10:00.000Z
 
 ## Classified Pages
 
@@ -243,7 +256,6 @@ category_descriptions:
 | [Configure closed captions](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/ui-library-sdk/closed-captions) | configuration | 0.70 | Describes enabling closed captions for ACS calls and interop; will include specific flags, API calls, or configuration options in the UI Library, which are product-specific settings. |
 | [Configure default orientation](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/ui-library-sdk/orientation) | configuration | 0.70 | How-to for setting orientation implies specific configuration properties or API options (e.g., enum values for orientation) in the UI Library SDK, which are concrete configuration details. |
 | [Connect Teams users to Azure calls](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop-group-calls) | integrations | 0.70 | Quickstart explains how to initiate calls from ACS users to Teams users, using Teams interop features of the Calling SDK with concrete API usage unique to this product. |
-| [Connect to Azure AI](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/azure-communication-services-azure-cognitive-services-integration) | integrations | 0.70 | How-to for connecting Communication Services to Azure AI; likely includes configuration parameters (endpoints, keys, regions) and SDK usage patterns specific to this integration. |
 | [Connect to auto attendant](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-auto-attendant) | integrations | 0.70 | Quickstart covers the specific integration pattern and SDK usage for calling a Teams Auto Attendant from an ACS user, including product-specific methods and parameters. |
 | [Connect to call queue](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-call-queue) | integrations | 0.70 | Quickstart demonstrates how an ACS user calls a Teams Call Queue using the Calling SDK, with product-specific APIs and configuration patterns for this interop scenario. |
 | [Control media access](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/calling-sdk/media-access) | integrations | 0.70 | How-to describes controlling media access for individual participants using ACS SDKs, with concrete methods, flags, and parameters that are product-specific. |
@@ -319,6 +331,7 @@ category_descriptions:
 | [Authentication service hero sample](https://learn.microsoft.com/en-us/azure/communication-services/samples/trusted-auth-sample) | best-practices | 0.68 | Describes a server implementation of an authentication service for Azure Communication Services using best practices for a trusted backend; this is product-specific guidance on how to structure auth and token issuance beyond generic concepts. |
 | [Enable skip the setup screen](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/ui-library-sdk/skip-setup-screen) | integrations | 0.68 | How-to for a specific ACS UI Library feature with concrete configuration patterns and props/parameters to control joining calls and default device states; these SDK-specific details are not generally known from training. |
 | [Use UI components for chat](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-chat-ui-library) | integrations | 0.68 | Quickstart for using ACS UI Library chat composites; includes product-specific component props, configuration values, and integration patterns. |
+| [Use VDI to make audio calls from Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/calling-from-virtual-desktop-infrastructure) | best-practices | 0.68 | The article focuses on optimizing audio calling from within an Azure Virtual Desktop VDI environment, which implies product-specific guidance and configuration patterns for ACS media handling in VDI. This is scenario- and product-specific behavior that goes beyond generic knowledge, fitting best under best-practices. It does not appear to be primarily about limits, deployment, or configuration reference tables. |
 | [Govern meeting experience](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/virtual-visits/govern-meeting-experience) | security | 0.66 | Explains how to use tenant configuration, policies, roles, meeting options, templates, and sensitivity labels to control meeting behavior—these are specific governance/security controls and role-based settings. |
 | [Manage queues](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/router-sdk/manage-queue) | integrations | 0.66 | Guide for creating and managing Job Router queues via SDK; includes concrete API/SDK calls and queue configuration properties that are product-specific integration and configuration patterns. |
 | [Subscribe to events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/events/subscribe-to-events) | configuration | 0.66 | Shows how to set up event subscriptions for ACS resources using portal, CLI, PowerShell, and SDK; likely includes specific parameter names and configuration options for Event Grid subscriptions. |
@@ -428,7 +441,6 @@ category_descriptions:
 | [Implement Answer Machine Detection](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/answer-machine-detection) | best-practices | 0.60 | Describes a concrete AMD implementation pattern using DTMF and call events; likely includes product-specific logic flows and edge-case handling beyond generic concepts. |
 | [Inbound telephony calling capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/inbound-calling-capabilities) | configuration | 0.60 | Describes enabling inbound PSTN and direct routing for different endpoints (Dynamics Omnichannel, Call Automation); likely includes configuration flows and endpoint-specific setup details. |
 | [Join a room call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/rooms/join-rooms-call) | integrations | 0.60 | Describes joining a room call with web/native SDKs, involving specific SDK methods and options for joining rooms, which are product-specific integration details. |
-| [Make an outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/call-automation/quickstart-make-an-outbound-call) | integrations | 0.60 | Quickstart for making outbound PSTN calls; likely includes SDK method names, parameters, and request payload structures specific to Call Automation, which qualify as product-specific integration patterns. |
 | [Meeting capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/meeting-capabilities) | decision-making | 0.60 | Lists which Teams meeting capabilities are available when Microsoft 365 users join via ACS. This is specific capability information that guides whether a scenario is supported, fitting decision-making. |
 | [Messaging policy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/messaging-policy) | best-practices | 0.60 | Messaging policy article will contain concrete requirements and constraints for using ACS SMS/email (for example, consent rules, content restrictions) that are specific to the service and industry standards. |
 | [Phone capabilities](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/phone-capabilities) | decision-making | 0.60 | Describes which phone calling features are supported for Teams users via the ACS Calling SDK. This is a feature-support matrix style page that informs whether specific phone capabilities are available, aiding technical decisions. |
@@ -507,9 +519,10 @@ category_descriptions:
 | [Design with UI Library Design Kit](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-ui-kit) | 0.30 | Quickstart for Figma design kit is mostly tooling workflow; unlikely to contain product configuration parameters, limits, or troubleshooting details relevant to runtime behavior. |
 | [Enable virtual appointments](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/virtual-visits) | 0.30 | Tutorial describing concepts and building a sample virtual appointments app; summary indicates conceptual and walkthrough content rather than reference-style expert configuration or troubleshooting data. |
 | [European Union Data Boundary](https://learn.microsoft.com/en-us/azure/communication-services/concepts/european-union-data-boundary) | 0.30 | EU Data Boundary compliance description; focuses on where data is stored/processed, not on specific security configuration values or limits. |
-| [Gather user input](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/recognize-action) | 0.30 | Conceptual Recognize action overview; focuses on what recognition is and scenarios, not on detailed configuration or error mappings. |
+| [Gather user input](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/recognize-action) | 0.30 | Conceptual explanation of the Recognize action for gathering user input (DTMF, speech) in Call Automation; focuses on scenarios and behavior rather than numeric limits, configuration matrices, or detailed troubleshooting mappings. |
 | [Get a free Azure managed domain](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/add-azure-managed-domains) | 0.30 | Quickstart for adding Azure-managed domains; likely step-by-step portal instructions without detailed limits, config tables, or error mappings. |
 | [Get a phone number](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/telephony/get-phone-number) | 0.30 | Quickstart for getting/managing phone numbers is primarily a step-by-step tutorial; summary does not show configuration matrices, limits, or detailed settings tables. |
+| [Make an outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/call-automation/quickstart-make-an-outbound-call) | 0.30 | Quickstart for making an outbound PSTN call with Call Automation; primarily step-by-step tutorial code and flow, without configuration tables, limits, error-code mappings, or product-specific best-practice guidance. |
 | [Messaging Connect](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/messaging-connect) | 0.30 | Messaging Connect overview is a high-level preview feature description without clear indication of detailed configuration tables or numeric thresholds. |
 | [Native calling SDK](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/known-issues-native) | 0.30 | Similar 'known issues' overview for native SDKs; description suggests a list of issues rather than detailed diagnostic mappings with codes and resolutions. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/overview) | 0.30 | The external user overview describes what is possible and benefits, but from the description it appears conceptual without detailed configuration parameters, limits, or error mappings. |
@@ -547,6 +560,7 @@ category_descriptions:
 | [Set exception policies](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/exception-policy) | 0.22 | Exception Policy article defines what exception policies are and how they conceptually work; summary does not show detailed parameter tables, limits, or error-code mappings. |
 | [Answer a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/incoming-call-notification) | 0.20 | Conceptual explanation of IncomingCall notifications; likely describes flow but not detailed configuration tables or error-code troubleshooting. |
 | [Closed captions](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/closed-captions) | 0.20 | Closed captions overview is conceptual, describing what captions are and scenarios; no indication of detailed configuration parameters, limits, or error codes. |
+| [Connect to Azure AI](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/azure-communication-services-azure-cognitive-services-integration) | 0.20 | How-to for connecting Azure Communication Services to Foundry Tools; appears to be an integration walkthrough but described at a high level without explicit configuration parameter tables, defaults, or SDK option references that rise to expert-knowledge level. |
 | [Contact center](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/contact-center) | 0.20 | High-level architectural overview for contact center apps; no concrete limits, configs, error codes, or decision matrices. |
 | [Insights dashboard](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/insights-dashboard) | 0.20 | Describes Insights dashboard visualizations conceptually; no indication of numeric limits, config parameter tables, or error-code-based troubleshooting. Primarily an overview of available charts. |
 | [Manage distribution modes](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/distribution-concepts) | 0.20 | Distribution mode concepts describe strategies conceptually; no sign of numeric thresholds, configuration tables, or API parameter details that would count as expert configuration or decision-making guidance. |

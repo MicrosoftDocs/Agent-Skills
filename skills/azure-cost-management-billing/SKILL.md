@@ -3,7 +3,7 @@ name: azure-cost-management-billing
 description: Expert knowledge for Azure Cost Management Billing development including security, configuration, decision making, troubleshooting, best practices, integrations & coding patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Cost Management Billing applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Cost Management Billing Skill
 
@@ -23,11 +23,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, payment, and reservation/savings plan issues, including access errors, disabled subscriptions, invoice visibility, and usage/download discrepancies. |
 | Best Practices | L63-L72 | Best practices for optimizing Azure costs, onboarding to Microsoft Customer Agreement, and maximizing savings with EA reservations and centrally managed SQL Azure Hybrid Benefit. |
 | Decision Making | L73-L138 | Choosing Azure billing models and discounts (EA/MCA offers, reservations, savings plans, Hybrid Benefit), optimizing regional/Marketplace costs, and planning billing ownership or transfer paths |
-| Limits & Quotas | L139-L151 | Managing Azure free-tier limits, spending limits, subscription lifecycle, and understanding timing/latency for cost, reservations, and savings plan utilization data |
-| Security | L152-L177 | Managing secure access to Azure billing, subscriptions, credits, invoices, reservations, savings plans, and tax data using roles, RBAC, policies, and fraud/abuse protections |
-| Configuration | L178-L205 | Configuring Azure Cost Management and billing: scopes, tags, exports, alerts, budgets, reservations/savings plans, partner/MCA billing setups, and SQL/AHB cost settings. |
-| Integrations & Coding Patterns | L206-L222 | APIs, REST, and PowerShell patterns for automating subscription creation, billing role migration, cost details retrieval, and reservation management across EA/MCA/Partner agreements. |
-| Deployment | L223-L229 | Creating and provisioning Azure subscriptions (EA and Microsoft Customer Agreement), including cross-tenant and partner-led customer subscription setup and management. |
+| Limits & Quotas | L139-L152 | Managing Azure cost and billing limits: free-tier quotas, spending limits, subscription lifecycle/inactivity, data timing/latency, and optimizing reservations and savings plans. |
+| Security | L153-L178 | Billing security, RBAC roles, and access control for invoices, usage, reservations, savings plans, subscription moves, fraud prevention, SCA, and Marketplace purchase policies. |
+| Configuration | L179-L206 | Configuring Azure Cost Management and billing: scopes, tags, exports, alerts, budgets, reservations/savings plans, partner/MCA billing setups, and SQL/AHB cost settings. |
+| Integrations & Coding Patterns | L207-L223 | APIs, REST, and PowerShell patterns for automating subscription creation, billing role migration, cost details retrieval, and reservation management across EA/MCA/Partner agreements. |
+| Deployment | L224-L230 | Creating and provisioning Azure subscriptions (EA and Microsoft Customer Agreement), including cross-tenant and partner-led customer subscription setup and management. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -148,6 +148,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Understand Azure subscription lifecycle states | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-states |
 | Trade in Azure reservations for savings plans | https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/reservation-trade-in |
 | View Azure savings plan utilization and data latency | https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-utilization |
+| Understand and manage Azure billing account inactivity limits | https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/keep-billing-accounts-active |
 
 ### Security
 | Topic | URL |
@@ -172,7 +173,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure permissions to view and manage Azure reservations | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/view-reservations |
 | Determine who can buy Azure savings plans | https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-buy-savings-plan |
 | Assign permissions to view and manage Azure savings plans | https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-view-manage |
-| Control access to Azure usage and charges data | https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-daily-usage |
+| Access roles to view Azure usage and charges | https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-daily-usage |
 | View Azure tax documents based on billing roles | https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mca-download-tax-document |
 
 ### Configuration

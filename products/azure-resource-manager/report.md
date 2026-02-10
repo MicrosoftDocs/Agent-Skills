@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-10'
 category_descriptions:
   deployment: Deploying ARM/Bicep templates via pipelines, GitHub, portal/CLI/PowerShell,
     using what-if/rollback, and moving or relocating Azure resources and data across
@@ -32,17 +32,17 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 499
-- **Fetched**: 499
+- **Total Pages**: 501
+- **Fetched**: 501
 - **Fetch Failed**: 0
 - **Classified**: 367
-- **Unclassified**: 132
+- **Unclassified**: 134
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 499
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 2
+- **Unchanged**: 496
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
 ## Classification Statistics
@@ -58,9 +58,26 @@ category_descriptions:
 | limits-quotas | 26 | 5.2% |
 | security | 30 | 6.0% |
 | troubleshooting | 95 | 19.0% |
-| *(Unclassified)* | 132 | 26.5% |
+| *(Unclassified)* | 134 | 26.7% |
 
 ## Changes
+
+### New Pages
+
+- [Create Bicep files - Bicep MCP Server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code-model-context-protocol)
+- [Bicep MCP server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-mcp-server)
+- [Deploy - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-visual-studio-code)
+
+### Updated Pages
+
+- [Create Bicep files - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code)
+  - Updated: 2025-12-22T08:00:00.000Z → 2026-01-30T08:00:00.000Z
+- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code)
+  - Updated: 2026-01-08T23:15:00.000Z → 2026-02-09T18:26:00.000Z
+
+### Deleted Pages
+
+- ~~Deploy - VS Code~~ (https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-vscode)
 
 ## Classified Pages
 
@@ -487,11 +504,11 @@ category_descriptions:
 | [2 - Deploy a linked template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-tutorial-linked-template) | 0.30 | Tutorial on deploying a linked template and securing it with SAS; scenario-focused, but not structured as a configuration catalog or troubleshooting guide. |
 | [Azure Service Manager retirement](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/asm-retirement) | 0.30 | Retirement notice and high-level migration context for Azure Service Manager; no detailed limits, configuration parameters, or error-code-based troubleshooting. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) | 0.30 | Portal-based CRUD operations for resource groups; mostly generic management steps without detailed configuration tables, limits, or product-specific edge cases. |
+| [Bicep MCP server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-mcp-server) | 0.30 | Describes using the Bicep MCP server to help generate Bicep code; summary suggests a feature overview and usage, not detailed configuration tables, limits, or troubleshooting mappings. |
 | [Child resource name and type](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/child-resource-name-type) | 0.30 | Describes child resources, naming, and type composition in ARM templates. This is structural/template syntax guidance, not limits, configuration matrices, or troubleshooting content. |
 | [Conditional deployment](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/conditional-resource-deployment) | 0.30 | Covers conditional deployment using the condition element in ARM templates. Conceptual and syntax-level explanation; no numeric limits, config parameter tables, or error-code-based troubleshooting. |
 | [Convert portal template gallery](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-spec-convert) | 0.30 | Step-by-step conversion of portal gallery templates to template specs. Tutorial-style content without deep configuration matrices, limits, or troubleshooting mappings. |
 | [Create & deploy template specs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs) | 0.30 | Primarily explains what template specs are and how to create/share them. It’s a how-to/overview without detailed configuration tables, limits, or product-specific decision matrices. |
-| [Create Bicep files - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code) | 0.30 | Quickstart tutorial for using VS Code with Bicep; mostly step-by-step usage, not structured limits, configs, or error mappings. |
 | [Create Bicep files - Visual Studio](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio) | 0.30 | Quickstart tutorial for using Visual Studio with Bicep; focuses on workflow, not detailed configuration matrices or limits. |
 | [Create a custom resource provider](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/create-custom-provider) | 0.30 | Quickstart for creating a custom resource provider; primarily step-by-step tutorial, with no indication of detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [Create a custom resource provider - Azure PowerShell](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/create-custom-provider-quickstart-powershell) | 0.30 | PowerShell quickstart for creating a custom resource provider; focused on basic creation steps, not on expert configuration matrices, limits, or troubleshooting mappings. |
@@ -502,7 +519,6 @@ category_descriptions:
 | [Deploy - PowerShell](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-powershell) | 0.30 | How-to deploy Bicep with Azure PowerShell; primarily procedural without detailed product-specific configuration or limits. |
 | [Deploy - PowerShell](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell) | 0.30 | Tutorial on deploying ARM templates with Azure PowerShell. General usage guidance; no detailed limits, configuration parameter tables, or troubleshooting mappings. |
 | [Deploy - Python](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-python) | 0.30 | Tutorial on deploying ARM templates with Python. Focuses on how to call deployments, not on numeric limits, configuration catalogs, or error-code-based troubleshooting. |
-| [Deploy - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-vscode) | 0.30 | Step-by-step deployment via VS Code; focuses on workflow rather than detailed configuration tables, limits, or diagnostic mappings. |
 | [Deploy - portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-portal) | 0.30 | Tutorial on deploying ARM templates via Azure portal. Step-by-step usage without product-specific limits, configuration parameter catalogs, or troubleshooting mappings. |
 | [Deploy VM extensions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-deploy-vm-extensions) | 0.30 | Tutorial on deploying VM extensions via templates; focuses on example usage rather than exhaustive configuration or limits. |
 | [Deploy service catalog managed app](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/deploy-service-catalog-quickstart) | 0.30 | Deployment quickstart for a sample managed application; describes what resources are created but lacks expert-only limits, configuration matrices, or detailed troubleshooting. |
@@ -524,7 +540,6 @@ category_descriptions:
 | [Use template extensions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/resource-extensions) | 0.30 | High-level explanation of ARM template extensions and VM extensions. Lacks detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [User-defined functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/user-defined-functions) | 0.30 | Describes user-defined functions conceptually; no numeric limits, detailed configuration tables, or troubleshooting mappings. |
 | [Variables](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/variables) | 0.30 | Explains variables usage in templates; general pattern without numeric limits, config matrices, or error-resolution content. |
-| [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code) | 0.30 | How-to use VS Code with Bicep; primarily tooling walkthrough without detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [1 - Create first template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first-template) | 0.25 | Introductory tutorial on creating and deploying a first ARM template; mostly syntax and basic deployment steps, not expert-level reference content. |
 | [2 - Add resource](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-resource) | 0.25 | Tutorial on adding a storage account resource to a template; example-focused, without configuration parameter catalogs or limits/quotas. |
 | [3 - Add parameters](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-add-parameters) | 0.25 | Tutorial on adding parameters to make templates reusable; shows basic patterns but not product-specific best-practice tables or quantified guidance. |
@@ -545,10 +560,13 @@ category_descriptions:
 | [Child resources (parent)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/child-resource-name-type) | 0.20 | Covers child resources naming/type patterns conceptually; no quotas, configuration matrices, or decision tables. |
 | [Contribute to Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | 0.20 | High-level overview of what Bicep is and its benefits; conceptual and marketing-style without detailed configuration, limits, or troubleshooting content. |
 | [Control plane and data plane](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-and-data-plane) | 0.20 | Explains conceptual differences between control plane and data plane operations with examples. It is descriptive and conceptual without numeric limits, configuration tables, or error-resolution mappings. |
+| [Create Bicep files - Bicep MCP Server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code-model-context-protocol) | 0.20 | Quickstart/tutorial for using VS Code with the Bicep MCP server. It describes how to create a Bicep file and deploy resources, without detailed limits, configuration parameter tables, decision matrices, or troubleshooting mappings. |
+| [Create Bicep files - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code) | 0.20 | Quickstart/tutorial for creating and deploying Bicep files with VS Code. It focuses on step-by-step usage, not on limits, configuration matrices, error-code troubleshooting, or product-specific best practices with quantified impact. |
 | [Create JSON templates - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code) | 0.20 | Quickstart tutorial using VS Code to create templates; step-by-step guidance without product-specific limits, config matrices, or troubleshooting mappings. |
 | [Create JSON templates - portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal) | 0.20 | Portal-based quickstart for creating and deploying a simple template; procedural instructions, no expert-only limits, configuration catalogs, or decision criteria. |
 | [Create multiple instances](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances) | 0.20 | How-to tutorial for iterating resources in ARM templates; lacks numeric limits, config matrices, or troubleshooting content. |
 | [Dependencies (dependsOn)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-dependencies) | 0.20 | Explains implicit/explicit dependencies conceptually; no specific quotas, configuration ranges, or troubleshooting content. |
+| [Deploy - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-visual-studio-code) | 0.20 | Primarily a how-to/tutorial for deploying Bicep files from Visual Studio Code. It does not describe product-specific limits, configuration parameter tables, security roles, troubleshooting error codes, or quantified decision criteria. The content is procedural and high-level, without expert-only numeric constraints or detailed configuration references. |
 | [Existing resources (existing)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/existing-resource) | 0.20 | Explains how to reference existing resources using the 'existing' keyword; no numeric limits, config tables, or error-code-based troubleshooting. |
 | [Extension resources (scope)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scope-extension-resources) | 0.20 | Describes scope for extension resources in Bicep; summary shows no numeric limits, config parameter tables, or error mappings. |
 | [Import (import)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-import) | 0.20 | Syntax-focused explanation of imports/exports in Bicep; lacks numeric limits, config matrices, or troubleshooting mappings. |
@@ -564,6 +582,7 @@ category_descriptions:
 | [Use template reference](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-template-reference) | 0.20 | Tutorial-style guidance on using template reference; no detailed config tables, limits, or product-specific error mappings. |
 | [Using (using/using none)](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-using) | 0.20 | Describes using/using none statements conceptually; no limits, quotas, or detailed configuration parameter tables. |
 | [View definition artifact](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/concepts-view-definition) | 0.20 | Conceptual overview of view definitions; describes capabilities but not detailed configuration tables or numeric constraints. |
+| [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code) | 0.20 | Primarily a how-to/tutorial for using Visual Studio Code with Bicep; does not indicate presence of detailed limits, configuration tables, error-code mappings, or product-specific decision matrices. |
 | [What are ARM templates?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | 0.20 | High-level overview of ARM templates benefits and concepts; no detailed limits, configuration tables, error codes, or decision matrices. |
 | [What are Azure Custom Resource Providers?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/custom-providers/overview) | 0.20 | Overview of custom resource providers and preview/deprecation notice; conceptual content without detailed limits, configs, or troubleshooting mappings. |
 | [About managed applications](https://learn.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview) | 0.10 | High-level conceptual overview of Azure Managed Applications and publishing options; no detailed limits, configs, or error mappings. |

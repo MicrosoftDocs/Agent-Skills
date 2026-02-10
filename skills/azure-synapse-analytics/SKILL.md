@@ -3,7 +3,7 @@ name: azure-synapse-analytics
 description: Expert knowledge for Azure Synapse Analytics development including deployment, security, best practices, decision making, configuration, architecture & design patterns, integrations & coding patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Synapse Analytics applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Synapse Analytics Skill
 
@@ -20,15 +20,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L54 | Diagnosing and fixing Synapse workspace, SQL, Spark, Link, and Studio issues, including connectivity, failover, job errors, library installs, encoding, and tenant/impersonation problems. |
+| Troubleshooting | L33-L54 | Diagnosing and fixing Synapse workspace, SQL/serverless, Spark, Synapse Link, and Studio connectivity issues, including errors, failover, tenant moves, libraries, and UTF-8 text problems. |
 | Best Practices | L55-L109 | Performance, monitoring, and design best practices for Synapse: Spark and SQL tuning, indexing, caching, workload management, data loading, T‑SQL patterns, and migrating from Netezza/Oracle/Teradata. |
 | Decision Making | L110-L130 | Guidance on planning Synapse adoption, POCs, migrations (Netezza/Teradata/enterprise DW), cost management, data ingestion, table distribution, and historical query analysis. |
 | Architecture & Design Patterns | L131-L146 | Architectural guidance for Synapse workspaces, SQL (dedicated/serverless), Spark, table distribution/partitioning, workload isolation/management, and modern DW design/migration from Netezza/Teradata. |
 | Limits & Quotas | L147-L158 | Limits, quotas, and configuration for Synapse networking, Spark autoscale, SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos DB/SQL) features and restrictions. |
-| Security | L159-L211 | Security, identity, and access control for Synapse: RBAC, Entra auth, MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and secure connectivity to data sources. |
-| Configuration | L212-L252 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML, and pipeline activities. |
-| Integrations & Coding Patterns | L253-L306 | Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI services, Cosmos DB, Delta/CDM, monitoring tools, and to load/query external data formats and SQL pools. |
-| Deployment | L307-L317 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM template deployment, environment design (dev/test/prod), region moves, restore points, and recovery. |
+| Security | L159-L210 | Security, identity, and access control for Synapse: RBAC, Entra auth, MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and secure connectivity to data sources. |
+| Configuration | L211-L250 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML, and pipeline activities. |
+| Integrations & Coding Patterns | L251-L305 | Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI services, Cosmos DB, Delta, external storage, monitoring tools, and to load/query data via COPY, PolyBase, OPENROWSET, CETAS. |
+| Deployment | L306-L316 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM template deployment, environment design (dev/test/prod), region moves, restore points, and recovery. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -40,7 +40,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Debug Synapse Spark apps with extended history server | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-history-server |
 | Troubleshoot Synapse Spark library installation issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-troubleshoot-library-errors |
 | Troubleshoot misclassified workloads in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-how-to-troubleshoot-missed-classification |
-| Troubleshoot common serverless SQL pool issues in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand |
+| Troubleshoot Azure Synapse serverless SQL pool issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand |
 | FAQ for Azure Synapse Link for SQL behavior and issues | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/faq |
 | Troubleshoot Synapse Link Azure SQL and Entra user impersonation | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/troubleshoot/troubleshoot-sql-azure-active-directory |
 | Troubleshoot Synapse Link for Azure SQL Database after failover | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/troubleshoot/troubleshoot-sql-database-failover |
@@ -198,7 +198,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Implement column-level security in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security |
 | Configure secure authentication for Synapse COPY bulk loads | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql-examples |
 | Configure Microsoft Entra authentication for Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/active-directory-authentication |
-| Choose authentication methods to connect to Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connect-overview |
 | Configure storage access control for serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-storage-access-control |
 | Use multifactor Entra authentication with Synapse SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication |
 | Set access control on shared Synapse SQL databases | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/shared-databases-access-control |
@@ -242,7 +241,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure workload classification in Synapse SQL pool | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-classification |
 | Configure workload importance for Synapse SQL queries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance |
 | Monitor Synapse workload groups in Azure portal | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management-portal-monitor |
-| Use Synapse SQL connection string formats for various clients | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
 | Configure storage file access for serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-overview |
 | Synchronize Spark external tables to serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables |
 | Configure collation support in Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-collation-types |
@@ -288,6 +286,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Load Contoso retail data to Synapse using PolyBase | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-blob-storage-with-polybase |
 | Load data from ADLS to Synapse using COPY | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-data-lake-store |
 | Score ONNX machine learning models with Synapse PREDICT | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-predict |
+| Use Synapse SQL connection strings for client libraries | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
 | Store Synapse serverless SQL query results to storage | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-external-table-as-select |
 | Create and use native external tables in Synapse SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-external-tables |
 | Create and use views in Synapse serverless SQL | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-views |

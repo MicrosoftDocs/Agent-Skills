@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-10'
 category_descriptions:
   configuration: Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS,
     scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools
@@ -9,15 +9,15 @@ category_descriptions:
     Live View for real-time monitoring.'
   limits-quotas: Version support, quotas, storage limits, scaling to hundreds of instances,
     and guidance for running large CPU/memory workloads on Azure Spring Apps.
-  security: 'Securing Azure Spring Apps: managed identities, Key Vault secrets, TLS/custom
-    domains, Entra ID SSO/RBAC, GitHub Actions auth, and Azure Policy/Zero Trust security
-    controls.'
+  security: 'Security and identity for Azure Spring Apps: TLS, custom domains, managed
+    identities, Entra ID SSO/RBAC, Key Vault, Azure SQL, GitHub Actions auth, and
+    Azure Policy compliance.'
   deployment: Deploying Azure Spring Apps with zero-downtime/blue‑green strategies,
     CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform),
     and buildpack-based app/static site deployment
-  integrations: Integrating Azure Spring Apps with monitoring/APM tools, databases,
-    Redis, gRPC, gateways, security (Entra ID), and Azure OpenAI, plus enterprise
-    patterns like Tanzu services and Maven deployment.
+  integrations: Monitoring, APM agents, logging, database/Redis bindings, gRPC, API
+    gateway, security (Entra ID), and enterprise integrations (Tanzu, Azure OpenAI)
+    for Azure Spring Apps.
   troubleshooting: 'Diagnosing and fixing Azure Spring Apps issues: build failures,
     OOM/restarts, exit codes, VNet connectivity, debugging (remote/JVM/JFR), memory
     analysis, and real-time log streaming.'
@@ -39,8 +39,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 152
+- **Updated Pages**: 2
+- **Unchanged**: 150
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
 
@@ -60,6 +60,13 @@ category_descriptions:
 | *(Unclassified)* | 34 | 22.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Integrate Azure Database for PostgreSQL and Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise)
+  - Updated: 2025-08-19T08:00:00.000Z → 2025-11-25T18:11:00.000Z
+- [Load application secrets using Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise)
+  - Updated: 2025-08-19T08:00:00.000Z → 2025-11-25T18:11:00.000Z
 
 ## Classified Pages
 
@@ -135,9 +142,8 @@ category_descriptions:
 | [Customize Azure Spring Apps egress with a user-defined route](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-outbound-type) | configuration | 0.70 | Describes customizing egress with user-defined routes for specific network scenarios; such guidance typically includes Azure-specific route table settings, parameter names, and allowed values, which are configuration expert knowledge. |
 | [Debug your apps remotely](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-remote-debugging-app-instance) | troubleshooting | 0.70 | Covers enabling remote debugging for apps on Azure Spring Apps, which is a troubleshooting mechanism. Likely includes service-specific ports/flags and configuration steps that go beyond generic Java remote debugging knowledge. |
 | [Enable Service Registration](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-service-registration) | configuration | 0.70 | Covers discovery and registration using managed Service Registry; typically includes configuration properties and registration patterns specific to this service. |
-| [Integrate Azure Database for PostgreSQL and Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise) | integrations | 0.70 | Quickstart for integrating Azure Database for PostgreSQL and Azure Cache for Redis; likely includes connection string formats, SSL settings, and service-specific configuration parameters. |
 | [Integrate Azure OpenAI](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-fitness-store-azure-openai) | integrations | 0.70 | Shows how to integrate Azure OpenAI with Spring Apps; likely includes endpoint URLs, API version parameters, authentication headers, and service-specific configuration details. |
-| [Load application secrets using Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise) | security | 0.70 | Key Vault integration usually documents specific configuration keys, secret URI formats, and identity/permission settings unique to this product. |
+| [Load application secrets using Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise) | security | 0.70 | The article explains how to securely load application secrets from Azure Key Vault into Azure Spring Apps Enterprise. Such content usually includes specific Key Vault configuration steps, identity/permission setup, and possibly RBAC role or access policy details, which are product-specific security configuration knowledge rather than generic security concepts. |
 | [Manually scale an app](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-scale-manual) | configuration | 0.70 | Manual scaling in the portal usually involves specific SKU-related vCPU/memory options and instance count settings; these are concrete configuration parameters and ranges tied to this service. |
 | [Migrate Standard and Basic to Enterprise](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-migrate-standard-tier-to-enterprise-tier) | decision-making | 0.70 | Guides migration from Basic/Standard to Enterprise, including when and how to move, and implications of switching to VMware Tanzu components. This is a migration/upgrade decision and execution guide, fitting decision-making around plan selection and migration path. |
 | [Optimize application observability](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/application-observability) | best-practices | 0.70 | Focuses on observing production apps and diagnosing issues; likely includes concrete recommendations and product-specific observability configurations rather than just theory. |
@@ -155,6 +161,7 @@ category_descriptions:
 | [Use gRPC](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/how-to-use-grpc) | integrations | 0.70 | How-to article for wiring gRPC into Azure Spring Apps using a specific sample app; likely includes product-specific configuration, ports, and code patterns for this platform, which are integration details beyond generic gRPC knowledge. |
 | [Version support for Java, Spring Boot, and more](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/concept-app-customer-responsibilities) | limits-quotas | 0.70 | Describes support policy for Java, Spring Boot, Spring Cloud, SDKs, and OS images; such pages typically include specific supported version numbers and timelines, which are expert knowledge limits/constraints. |
 | [Expose applications to the internet with end-to-end TLS/SSL](https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/expose-apps-gateway-end-to-end-tls) | configuration | 0.68 | How-to for exposing Spring Apps via Application Gateway with end-to-end TLS will include product-specific configuration (listener, backend pool, probe, certificate bindings, host headers) and Azure CLI/portal parameters unique to this integration, which are not generic knowledge. |
+| [Integrate Azure Database for PostgreSQL and Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise) | integrations | 0.68 | Quickstart is focused on wiring Azure Spring Apps Enterprise to Azure Database for PostgreSQL and Azure Cache for Redis. These integration guides typically include product-specific connection strings, configuration properties, and service binding details that go beyond generic SDK usage, qualifying as integrations & coding patterns rather than just conceptual content. |
 | [Use Application Live View](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-application-live-view) | integrations | 0.68 | Shows how to use Application Live View; expected to contain specific endpoints, configuration properties, and usage patterns tied to Azure Spring Apps Enterprise. |
 | [Use Service Registry](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-enterprise-service-registry) | integrations | 0.68 | How-to for wiring Tanzu Service Registry into Azure Spring Apps Enterprise; likely includes product-specific config properties, endpoints, and parameters beyond generic service discovery concepts. |
 | [Use VMware Tanzu Application Accelerator](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/how-to-use-accelerator) | integrations | 0.66 | How-to for using Application Accelerator in Azure Spring Apps; likely includes concrete configuration and usage patterns unique to this integration. |

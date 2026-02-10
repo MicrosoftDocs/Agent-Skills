@@ -3,7 +3,7 @@ name: azure-cyclecloud
 description: Expert knowledge for Azure Cyclecloud development including integrations & coding patterns, configuration, architecture & design patterns, security, troubleshooting, decision making, deployment, and best practices. Use when building, debugging, or optimizing Azure Cyclecloud applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Cyclecloud Skill
 
@@ -24,10 +24,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L39-L44 | Best practices for configuring CycleCloud clusters on HB/HC HPC VMs and controlling node lifecycle to avoid unwanted auto-termination. |
 | Decision Making | L45-L54 | Guidance on planning and sizing CycleCloud deployments, VM placement, custom images, Slurm workspaces, Spot VM usage, and migration from Azure CycleCloud 7. |
 | Architecture & Design Patterns | L55-L59 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including patterns for failover, networking, and resource management. |
-| Security | L60-L73 | Securing CycleCloud: bastion access, SSL, auth methods, service principals/managed identities, SELinux, and network security best practices for clusters and portal |
-| Configuration | L74-L119 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, storage, networking, autoscaling, proxies, CLI/Jetpack, VMSS Flex, monitoring, backup, and locked-down environments |
-| Integrations & Coding Patterns | L120-L139 | APIs, SDKs, and patterns for automating CycleCloud plus integrating schedulers (Slurm, PBS, Grid Engine, HTCondor, LSF, HPC Pack), monitoring, events, and Open OnDemand. |
-| Deployment | L140-L146 | Deploying and running Azure CycleCloud via CLI, ARM templates, manual install/upgrade steps, and container-based (ACI) deployments, including workspace setup for Slurm clusters. |
+| Security | L60-L74 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SELinux, Bastion access, and network/security best practices for clusters and portal. |
+| Configuration | L75-L120 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, storage, networking, autoscaling, proxies, CLI/Jetpack, VMSS Flex, monitoring, backup, and locked-down environments |
+| Integrations & Coding Patterns | L121-L140 | APIs, SDKs, and patterns for automating CycleCloud plus integrating schedulers (Slurm, PBS, Grid Engine, HTCondor, LSF, HPC Pack), monitoring, events, and Open OnDemand. |
+| Deployment | L141-L147 | Deploying and running Azure CycleCloud via CLI, ARM templates, manual install/upgrade steps, and container-based (ACI) deployments, including workspace setup for Slurm clusters. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,6 +63,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply security best practices to Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/security-best-practices?view=cyclecloud-8 |
 | Use Azure Bastion to SSH to CycleCloud login nodes | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/connect-to-login-node-with-bastion?view=cyclecloud-8 |
 | Access Azure CycleCloud portal securely through Bastion | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/connect-to-portal-with-bastion?view=cyclecloud-8 |
+| Configure Entra app registration for Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-app-registration?view=cyclecloud-8 |
 | Configure managed identities for Azure CycleCloud clusters | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/managed-identities?view=cyclecloud-8 |
 | Configure network security for Azure CycleCloud nodes | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/network-security?view=cyclecloud-8 |
 | Configure SELinux behavior for Azure CycleCloud clusters | https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/selinux?view=cyclecloud-8 |

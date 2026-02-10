@@ -3,7 +3,7 @@ name: azure-netapp-files
 description: Expert knowledge for Azure Netapp Files development including deployment, configuration, best practices, limits & quotas, integrations & coding patterns, troubleshooting, decision making, architecture & design patterns, and security. Use when building, debugging, or optimizing Azure Netapp Files applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Netapp Files Skill
 
@@ -21,7 +21,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L47 | Diagnosing and fixing Azure NetApp Files issues: resource provider, capacity pools, AVGs, snapshots, CMKs, LDAP access, CRUD ops, file locks, replication, and AzAcSnap communication. |
-| Best Practices | L48-L77 | Performance, configuration, and deployment best practices for Azure NetApp Files, including NFS/SMB tuning, SAP/Oracle/AVD patterns, VM/quotas, migration/DR, and benchmarking guidance. |
+| Best Practices | L48-L77 | Performance, configuration, and deployment best practices for Azure NetApp Files, including NFS/SMB tuning, SAP/Oracle design, VM/AVD choices, migration/DR, and performance testing. |
 | Decision Making | L78-L98 | Guidance on choosing Azure NetApp Files volume types, service levels, caching/cool tiers, data protection/DR, performance planning, cost optimization, and migration options by workload. |
 | Architecture & Design Patterns | L99-L105 | Designing Azure NetApp Files architectures: VNet/topology and connectivity patterns, using ANF as Azure VMware Solution datastores, and planning AD DS integration for ANF workloads. |
 | Limits & Quotas | L106-L127 | Limits, quotas, and behaviors for Azure NetApp Files: capacity, throughput, large volumes, backups, NFS/SMB, LDAP/groups, maxfiles, file/path/charset limits, and user/group volume quotas |
@@ -70,7 +70,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Optimize Oracle performance on a single Azure NetApp Files volume | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-oracle-single-volumes |
 | Choose optimal Azure VM SKUs for Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-virtual-machine-sku |
 | Apply best practices for Azure Virtual Desktop on Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/solutions-windows-virtual-desktop |
-| Safely update Terraform-managed Azure NetApp Files resources | https://learn.microsoft.com/en-us/azure/azure-netapp-files/terraform-manage-volume |
+| Safely update Terraform-managed Azure NetApp Files volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/terraform-manage-volume |
 | Test Azure NetApp Files disaster recovery workflows | https://learn.microsoft.com/en-us/azure/azure-netapp-files/test-disaster-recovery |
 | Apply Azure NetApp Files performance testing methodology | https://learn.microsoft.com/en-us/azure/azure-netapp-files/testing-methodology |
 | Plan for Azure NetApp Files volume hard quota behavior | https://learn.microsoft.com/en-us/azure/azure-netapp-files/volume-hard-quota-guidelines |

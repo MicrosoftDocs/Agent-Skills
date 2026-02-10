@@ -3,7 +3,7 @@ name: azure-static-web-apps
 description: Expert knowledge for Azure Static Web Apps development including security, integrations & coding patterns, configuration, decision making, deployment, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Static Web Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Static Web Apps Skill
 
@@ -25,8 +25,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Limits & Quotas | L45-L50 | Runtime/language versions supported for static apps and detailed service limits (storage, bandwidth, API calls, build/concurrency quotas) that affect scaling and resource usage. |
 | Security | L51-L64 | Auth, roles, and user info; integrating custom providers, Key Vault, and managed identity; securing DB connections, tokens, passwords, and private endpoint access for Static Web Apps. |
 | Configuration | L65-L88 | Configuring domains, routing, builds, and local dev for Static Web Apps, plus CLI usage, monitoring (App Insights, metrics), and framework-specific setups like Nuxt 3. |
-| Integrations & Coding Patterns | L89-L100 | Patterns and samples for wiring Static Web Apps to backends and databases (API Management, App Service, Container Apps, Cosmos DB, SQL, MySQL, PostgreSQL) and using Mongoose with Cosmos DB. |
-| Deployment | L101-L114 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/external CI, using ARM/Bicep/SWA CLI, and managing preview environments and traffic splitting for PRs and branches |
+| Integrations & Coding Patterns | L89-L98 | Patterns and samples for wiring Static Web Apps to backends and databases (API Management, App Service, Container Apps, Cosmos DB, SQL, MySQL, PostgreSQL) and using Mongoose with Cosmos DB. |
+| Deployment | L99-L112 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/external CI, using ARM/Bicep/SWA CLI, and managing preview environments and traffic splitting for PRs and branches |
 
 ### Troubleshooting
 | Topic | URL |
@@ -95,8 +95,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate Azure Container Apps with Azure Static Web Apps | https://learn.microsoft.com/en-us/azure/static-web-apps/apis-container-apps |
 | Connect Azure Static Web Apps to Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-cosmos-db |
 | Connect Azure Static Web Apps to Azure SQL Database | https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql |
-| Connect Azure Static Web Apps to MySQL Flexible Server | https://learn.microsoft.com/en-us/azure/static-web-apps/database-mysql |
-| Connect Azure Static Web Apps to PostgreSQL | https://learn.microsoft.com/en-us/azure/static-web-apps/database-postgresql |
 
 ### Deployment
 | Topic | URL |

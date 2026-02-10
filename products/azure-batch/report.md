@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
     RBAC), keys and certificates, encryption, private endpoints/VNet, NSP, Key Vault
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: Guidance on choosing Batch VM sizes/images, using Spot and ephemeral
     disks, controlling costs, and migrating pools/images and node communication to
     newer Azure Batch features.
-  integrations: Patterns and code for integrating Batch with containers, .NET/JS SDKs,
-    Azure Storage, Application Insights, and mounting Azure Files/virtual file systems
-    for task I/O.
+  integrations: 'Coding patterns and integrations for Batch: SDK usage (.NET/JS),
+    events, task output to Storage, containers, monitoring, and mounting Azure Files/virtual
+    file systems.'
   best-practices: Guidance on optimizing Batch jobs for performance, scale, monitoring,
     security, MPI and concurrent workloads, and persisting task outputs to durable
     storage.
@@ -52,10 +52,10 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 2 | 1.8% |
 | best-practices | 9 | 7.9% |
-| configuration | 29 | 25.4% |
+| configuration | 27 | 23.7% |
 | decision-making | 9 | 7.9% |
 | deployment | 2 | 1.8% |
-| integrations | 8 | 7.0% |
+| integrations | 10 | 8.8% |
 | limits-quotas | 1 | 0.9% |
 | security | 16 | 14.0% |
 | troubleshooting | 3 | 2.6% |
@@ -119,9 +119,9 @@ category_descriptions:
 | [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices) | best-practices | 0.70 | Security-focused best practices for Azure Batch with product-specific recommendations (for example around endpoints, networks, and access), going beyond generic security advice. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/batch/security-controls-policy) | security | 0.70 | Lists specific built-in Azure Policy definitions and compliance controls applicable to Azure Batch, including their exact names and mappings to standards—product-specific security/compliance configuration data. |
 | [Submit a large number of tasks](https://learn.microsoft.com/en-us/azure/batch/large-number-tasks) | best-practices | 0.70 | Focuses on efficiently submitting tens or hundreds of thousands of tasks to a single job, with Batch-specific patterns and recommendations for throughput and queueing beyond generic queuing concepts. |
-| [Task complete event](https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event) | configuration | 0.70 | Reference for the task complete event with example body; documents event fields used to determine duration, node, retries, etc., which are product-specific telemetry configuration details. |
+| [Task complete event](https://learn.microsoft.com/en-us/azure/batch/batch-task-complete-event) | integrations | 0.70 | Event reference pages typically include the exact JSON schema, property names, and meanings for the task complete event, which are product-specific integration details needed to correctly consume Azure Batch events. This fits integrations & coding patterns because it defines event payload structure and fields rather than just conceptual behavior. |
 | [Task dependencies](https://learn.microsoft.com/en-us/azure/batch/batch-task-dependencies) | configuration | 0.70 | Explains how to define and use task dependencies in Batch jobs with product-specific task properties and dependency patterns. |
-| [Task fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event) | configuration | 0.70 | Defines the task fail event emitted alongside task complete, with example payload; includes product-specific event fields and semantics (e.g., nonzero exit codes) that are expert reference details. |
+| [Task fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-fail-event) | integrations | 0.70 | The task fail event reference will include the precise JSON body, fields, and semantics for failure events (for example, how nonzero exit codes are represented), which are product-specific details required to integrate with Azure Batch failure notifications. This aligns with integrations since it documents concrete event payload structure for downstream consumers. |
 | [Task schedule fail event](https://learn.microsoft.com/en-us/azure/batch/batch-task-schedule-fail-event) | configuration | 0.70 | Reference for the task schedule fail event with example body; includes fields related to scheduling failures and resource limits (like requiredSlots), which are specific diagnostic schema details. |
 | [Task start event](https://learn.microsoft.com/en-us/azure/batch/batch-task-start-event) | configuration | 0.70 | Provides reference for the task start event with example payload; includes specific field names (retry count, system task version, etc.) that are expert diagnostic schema details. |
 | [Update pool properties](https://learn.microsoft.com/en-us/azure/batch/batch-pool-update-properties) | configuration | 0.70 | Clarifies which pool properties are mutable vs immutable and how to patch them, which is nuanced, product-specific configuration behavior. |

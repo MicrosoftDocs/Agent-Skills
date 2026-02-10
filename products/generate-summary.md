@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-02-04 10:28:59
-**Total Duration**: 10m 14s
+**Generated**: 2026-02-10 07:55:45
+**Total Duration**: 12m 56s
 
 ## Product Crawl Summary
 
@@ -10,128 +10,127 @@ Quick overview for reviewers. See individual product reports for details.
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
 | 1 | Azure Api Center | 35 | 16 | 0 | 0 | 0 | ✓ |
-| 2 | Azure Api Management | 274 | 218 | 0 | 0 | 0 | ✓ |
+| 2 | Azure Api Management | 274 | 211 | 0 | 1 | 0 | ✓ |
 | 3 | Azure Avere Vfxt | 20 | 13 | 0 | 0 | 0 | ✓ |
-| 4 | Azure App Configuration | 158 | 130 | 0 | 0 | 0 | ✓ |
-| 5 | Azure App Service | 246 | 150 | 0 | 0 | 0 | ✓ |
-| 6 | Azure Static Web Apps | 79 | 57 | 0 | 0 | 0 | ✓ |
-| 7 | Azure Application Gateway | 136 | 84 | 0 | 0 | 0 | ✓ |
-| 8 | Azure Synapse Analytics | 382 | 250 | 0 | 0 | 0 | ✓ |
+| 4 | Azure App Configuration | 157 | 129 | 0 | 0 | 0 | ✓ |
+| 5 | Azure App Service | 246 | 149 | 0 | 0 | 0 | ✓ |
+| 6 | Azure Static Web Apps | 79 | 55 | 0 | 0 | 0 | ✓ |
+| 7 | Azure Application Gateway | 136 | 83 | 0 | 0 | 0 | ✓ |
+| 8 | Azure Synapse Analytics | 381 | 249 | 0 | 0 | 0 | ✓ |
 | 9 | Azure Automation | 115 | 74 | 0 | 0 | 0 | ✓ |
 | 10 | Azure Update Center | 49 | 26 | 0 | 0 | 0 | ✓ |
 | 11 | Azure Internet Peering | 23 | 1 | 0 | 0 | 0 | ✓ |
 | 12 | Azure Business Continuity Center | 20 | 7 | 0 | 0 | 0 | ✓ |
-| 13 | Azure Data Explorer | 197 | 136 | 0 | 0 | 0 | ✓ |
+| 13 | Azure Data Explorer | 197 | 131 | 0 | 1 | 0 | ✓ |
 | 14 | Azure Digital Twins | 66 | 47 | 0 | 0 | 0 | ✓ |
 | 15 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | ✓ |
 | 16 | Azure Hpc Cache | 34 | 30 | 0 | 0 | 0 | ✓ |
 | 17 | Azure Managed Grafana | 42 | 31 | 0 | 0 | 0 | ✓ |
-| 18 | Azure Monitor | 551 | 417 | 0 | 0 | 0 | ✓ |
-| 19 | Azure Functions | 351 | 285 | 0 | 0 | 0 | ✓ |
-| 20 | Azure Government | 39 | 32 | 0 | 0 | 0 | ✓ |
-| 21 | Azure Netapp Files | 224 | 160 | 0 | 0 | 0 | ✓ |
-| 22 | Azure Vmware | 134 | 106 | 0 | 0 | 0 | ✓ |
+| 18 | Azure Monitor | 551 | 417 | 0 | 3 | 0 | ✓ |
+| 19 | Azure Functions | 352 | 284 | 0 | 0 | 0 | ✓ |
+| 20 | Azure Government | 39 | 31 | 0 | 0 | 0 | ✓ |
+| 21 | Azure Netapp Files | 224 | 160 | 0 | 1 | 0 | ✓ |
+| 22 | Azure Vmware | 134 | 106 | 1 | 0 | 1 | ✓ |
 | 23 | Azure Iot | 40 | 16 | 0 | 0 | 0 | ✓ |
-| 24 | Azure Resource Manager | 499 | 367 | 0 | 0 | 0 | ✓ |
+| 24 | Azure Resource Manager | 501 | 367 | 3 | 2 | 1 | ✓ |
 | 25 | Azure Partner Solutions | 80 | 19 | 0 | 0 | 0 | ✓ |
 | 26 | Azure Signalr | 73 | 56 | 0 | 0 | 0 | ✓ |
 | 27 | Azure Baremetal Infrastructure | 8 | 1 | 0 | 0 | 0 | ✓ |
-| 28 | Azure Backup | 393 | 275 | 0 | 0 | 0 | ✓ |
+| 28 | Azure Backup | 393 | 273 | 0 | 1 | 0 | ✓ |
 | 29 | Azure Batch | 114 | 79 | 0 | 0 | 0 | ✓ |
 | 30 | Azure Biztalk Services | 0 | 0 | 0 | 0 | 0 | ✓ |
 | 31 | Azure Bot Service | 190 | 132 | 0 | 0 | 0 | ✓ |
 | 32 | Azure Cache | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 33 | Azure Sap | 202 | 168 | 0 | 0 | 0 | ✓ |
-| 34 | Azure Ai Services | 383 | 260 | 0 | 0 | 0 | ✓ |
-| 35 | Azure Communication Services | 515 | 380 | 0 | 0 | 0 | ✓ |
+| 33 | Azure Sap | 202 | 166 | 0 | 2 | 0 | ✓ |
+| 34 | Azure Ai Services | 378 | 256 | 3 | 15 | 6 | ✓ |
+| 35 | Azure Communication Services | 516 | 379 | 1 | 3 | 0 | ✓ |
 | 36 | Azure Container Apps | 193 | 116 | 0 | 0 | 0 | ✓ |
-| 37 | Azure Cyclecloud | 110 | 84 | 0 | 0 | 0 | ✓ |
-| 38 | Azure Storage | 521 | 385 | 0 | 0 | 0 | ✓ |
-| 39 | Azure Data Factory | 538 | 436 | 0 | 0 | 0 | ✓ |
+| 37 | Azure Cyclecloud | 112 | 85 | 3 | 1 | 1 | ✓ |
+| 38 | Azure Storage | 527 | 388 | 0 | 0 | 0 | ✓ |
+| 39 | Azure Data Factory | 538 | 435 | 0 | 0 | 0 | ✓ |
 | 40 | Azure Energy Data Services | 50 | 23 | 0 | 0 | 0 | ✓ |
 | 41 | Azure Data Manager For Agri | 26 | 12 | 0 | 0 | 0 | ✓ |
 | 42 | Azure Devtest Labs | 98 | 69 | 0 | 0 | 0 | ✓ |
 | 43 | Azure Governance | 212 | 152 | 0 | 0 | 0 | ✓ |
-| 44 | Azure Guidance | 364 | 264 | 0 | 0 | 0 | ✓ |
+| 44 | Azure Guidance | 365 | 265 | 0 | 2 | 0 | ✓ |
 | 45 | Azure Hdinsight | 425 | 317 | 0 | 0 | 0 | ✓ |
 | 46 | Azure Healthcare Apis | 210 | 133 | 0 | 0 | 0 | ✓ |
-| 47 | Azure Health Insights | 39 | 11 | 0 | 0 | 0 | ✓ |
-| 48 | Azure Jenkins | 13 | 12 | 0 | 0 | 0 | ✓ |
-| 49 | Azure Lab Services | 104 | 66 | 0 | 0 | 0 | ✓ |
-| 50 | Azure Business Process Tracking | 6 | 3 | 0 | 0 | 0 | ✓ |
-| 51 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | ✓ |
-| 52 | Azure Logic Apps | 200 | 140 | 0 | 0 | 0 | ✓ |
-| 53 | Azure Machine Learning | 532 | 380 | 0 | 0 | 0 | ✓ |
-| 54 | Azure Messaging Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 55 | Azure Migrate | 144 | 86 | 0 | 0 | 0 | ✓ |
-| 56 | Azure Mobile Services | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 57 | Azure Networking | 22 | 12 | 0 | 0 | 0 | ✓ |
-| 58 | Azure Network Function Manager | 8 | 1 | 0 | 0 | 0 | ✓ |
-| 59 | Azure Notification Hubs | 67 | 51 | 0 | 0 | 0 | ✓ |
-| 60 | Azure Operations Management Suite | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 61 | Azure Private Link | 49 | 17 | 0 | 0 | 0 | ✓ |
-| 62 | Azure Role Based Access Control | 104 | 95 | 0 | 0 | 0 | ✓ |
-| 63 | Azure Scheduler | 1 | 1 | 0 | 0 | 0 | ✓ |
-| 64 | Azure Security | 111 | 43 | 0 | 0 | 0 | ✓ |
-| 65 | Azure Site Recovery | 202 | 126 | 0 | 0 | 0 | ✓ |
-| 66 | Azure Site Reliability Engineering | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 67 | Azure Sql | 583 | 434 | 0 | 0 | 0 | ✓ |
-| 68 | Azure Sql Server Stretch Database | 583 | 423 | 0 | 0 | 0 | ✓ |
-| 69 | Azure Sre Agent | 25 | 14 | 0 | 0 | 0 | ✓ |
-| 70 | Azure Stream Analytics | 168 | 105 | 0 | 0 | 0 | ✓ |
-| 71 | Azure Virtual Machines | 726 | 570 | 0 | 0 | 0 | ✓ |
-| 72 | Azure Confidential Computing | 69 | 39 | 0 | 0 | 0 | ✓ |
-| 73 | Azure Virtual Desktop | 147 | 114 | 0 | 0 | 0 | ✓ |
-| 74 | Azure Cost Management Billing | 262 | 167 | 0 | 0 | 0 | ✓ |
-| 75 | Azure Devtest | 12 | 3 | 0 | 0 | 0 | ✓ |
-| 76 | Azure Service Connector | 63 | 36 | 0 | 0 | 0 | ✓ |
-| 77 | Azure App Testing | 0 | 0 | 0 | 0 | 0 | ✓ |
-| 78 | Azure Playwright Testing | 22 | 17 | 0 | 0 | 0 | ✓ |
-| 79 | Azure Spring Apps | 152 | 118 | 0 | 0 | 0 | ✓ |
-| 80 | Azure Dev Box | 65 | 43 | 0 | 0 | 0 | ✓ |
-| 81 | Azure Deployment Environments | 32 | 21 | 0 | 0 | 0 | ✓ |
-| 82 | Azure Operator Nexus | 208 | 156 | 0 | 0 | 0 | ✓ |
-| 83 | Azure Operator Service Manager | 47 | 27 | 0 | 0 | 0 | ✓ |
-| 84 | Azure Redis | 58 | 45 | 0 | 0 | 0 | ✓ |
+| 47 | Azure Jenkins | 13 | 12 | 0 | 0 | 0 | ✓ |
+| 48 | Azure Lab Services | 104 | 66 | 0 | 0 | 0 | ✓ |
+| 49 | Azure Business Process Tracking | 6 | 3 | 0 | 0 | 0 | ✓ |
+| 50 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | ✓ |
+| 51 | Azure Logic Apps | 200 | 141 | 0 | 0 | 0 | ✓ |
+| 52 | Azure Machine Learning | 532 | 379 | 0 | 0 | 0 | ✓ |
+| 53 | Azure Messaging Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 54 | Azure Migrate | 144 | 86 | 0 | 0 | 0 | ✓ |
+| 55 | Azure Mobile Services | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 56 | Azure Networking | 22 | 12 | 0 | 0 | 0 | ✓ |
+| 57 | Azure Network Function Manager | 8 | 1 | 0 | 0 | 0 | ✓ |
+| 58 | Azure Notification Hubs | 67 | 51 | 0 | 0 | 0 | ✓ |
+| 59 | Azure Operations Management Suite | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 60 | Azure Private Link | 49 | 17 | 0 | 0 | 0 | ✓ |
+| 61 | Azure Role Based Access Control | 104 | 95 | 0 | 0 | 0 | ✓ |
+| 62 | Azure Scheduler | 1 | 1 | 0 | 0 | 0 | ✓ |
+| 63 | Azure Security | 111 | 43 | 0 | 0 | 0 | ✓ |
+| 64 | Azure Site Recovery | 202 | 126 | 0 | 0 | 0 | ✓ |
+| 65 | Azure Site Reliability Engineering | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 66 | Azure Sql | 583 | 435 | 0 | 0 | 0 | ✓ |
+| 67 | Azure Sql Server Stretch Database | 583 | 425 | 0 | 0 | 0 | ✓ |
+| 68 | Azure Sre Agent | 25 | 14 | 0 | 0 | 0 | ✓ |
+| 69 | Azure Stream Analytics | 168 | 105 | 0 | 0 | 0 | ✓ |
+| 70 | Azure Virtual Machines | 726 | 568 | 0 | 1 | 0 | ✓ |
+| 71 | Azure Confidential Computing | 69 | 38 | 0 | 0 | 0 | ✓ |
+| 72 | Azure Virtual Desktop | 147 | 114 | 0 | 0 | 0 | ✓ |
+| 73 | Azure Cost Management Billing | 262 | 168 | 0 | 2 | 0 | ✓ |
+| 74 | Azure Devtest | 12 | 3 | 0 | 0 | 0 | ✓ |
+| 75 | Azure Service Connector | 63 | 36 | 0 | 0 | 0 | ✓ |
+| 76 | Azure App Testing | 0 | 0 | 0 | 0 | 0 | ✓ |
+| 77 | Azure Playwright Testing | 22 | 17 | 0 | 0 | 0 | ✓ |
+| 78 | Azure Spring Apps | 152 | 118 | 0 | 2 | 0 | ✓ |
+| 79 | Azure Dev Box | 65 | 43 | 0 | 0 | 0 | ✓ |
+| 80 | Azure Deployment Environments | 32 | 21 | 0 | 0 | 0 | ✓ |
+| 81 | Azure Operator Nexus | 209 | 156 | 0 | 0 | 0 | ✓ |
+| 82 | Azure Operator Service Manager | 47 | 27 | 0 | 0 | 0 | ✓ |
+| 83 | Azure Redis | 58 | 45 | 0 | 0 | 0 | ✓ |
 
 ### Totals
 
-- **Products Processed**: 84 success, 0 failed
-- **Total Pages**: 13272
-- **Total Classified**: 9406
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
-- **Total Deleted Pages**: 0
+- **Products Processed**: 83 success, 0 failed
+- **Total Pages**: 13240
+- **Total Classified**: 9371
+- **Total New Pages**: 11
+- **Total Updated Pages**: 37
+- **Total Deleted Pages**: 9
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
 | architecture-patterns | 317 |
-| best-practices | 600 |
-| configuration | 2498 |
-| decision-making | 754 |
-| deployment | 543 |
-| integrations | 1809 |
-| limits-quotas | 568 |
-| security | 1467 |
-| troubleshooting | 850 |
+| best-practices | 608 |
+| configuration | 2467 |
+| decision-making | 750 |
+| deployment | 542 |
+| integrations | 1802 |
+| limits-quotas | 566 |
+| security | 1466 |
+| troubleshooting | 853 |
 
 ---
 
 ## Bread TOC Summary
 
 - **Total Products**: 117
-- **Total Crawled Nodes**: 153
-- **Total Skipped Nodes**: 106
-- **Total Sub-TOCs**: 69
+- **Total Crawled Nodes**: 149
+- **Total Skipped Nodes**: 107
+- **Total Sub-TOCs**: 66
 
 ## Products by Status
 
 | Status | Count |
 |--------|-------|
-| active | 76 |
-| archived | 20 |
+| active | 75 |
+| archived | 21 |
 | virtual | 8 |
 | cross_system | 5 |
 | external | 4 |
@@ -205,7 +204,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 62 | active | azure-guidance | Azure Guidance | https://learn.microsoft.com/en-us/azure/architecture/toc.json | 0 | 0 |
 | 63 | active | azure-hdinsight | Azure Hdinsight | https://learn.microsoft.com/en-us/azure/hdinsight/toc.json | 8 | 0 |
 | 64 | active | azure-healthcare-apis | Azure Healthcare Apis | https://learn.microsoft.com/en-us/azure/healthcare-apis/toc.json | 5 | 0 |
-| 65 | active | azure-health-insights | Azure Health Insights | https://learn.microsoft.com/en-us/azure/azure-health-insights/toc.json | 3 | 0 |
+| 65 | archived | azure-health-insights | Azure Health Insights | https://learn.microsoft.com/en-us/previous-versions/azure/azure-health-insights/toc.json | 0 | 1 |
 | 66 | deprecated | azure-industry | Azure Industry | - | 0 | 1 |
 | 67 | active | azure-jenkins | Azure Jenkins | https://learn.microsoft.com/en-us/azure/developer/jenkins/toc.json | 0 | 0 |
 | 68 | archived | azure-kinect-dk | Azure Kinect Dk | https://learn.microsoft.com/en-us/previous-versions/azure/kinect-dk/toc.json | 0 | 1 |
@@ -715,17 +714,16 @@ Quick overview for reviewers. See individual product reports for details.
 
 ### Azure Health Insights (`azure-health-insights`)
 
-- **Status**: active
+- **Status**: archived
 - **Original href**: `/azure/azure-health-insights/`
-- **TOC URL**: https://learn.microsoft.com/en-us/azure/azure-health-insights/toc.json
+- **Resolved path**: `/previous-versions/azure/azure-health-insights`
+- **TOC URL**: https://learn.microsoft.com/en-us/previous-versions/azure/azure-health-insights/toc.json
 
-**Sub-TOCs:**
+**Skipped Nodes:**
 
-| Name | Depth | Status | Original URL | TOC URL |
-|------|-------|--------|--------------|---------|
-| Onco-Phenotype | 2 | active | https://learn.microsoft.com/en-us/azure/azure-health-insights/oncophenotype | https://learn.microsoft.com/en-us/azure/azure-health-insights/overview/toc.json |
-| Radiology Insights | 2 | active | https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights | https://learn.microsoft.com/en-us/azure/azure-health-insights/radiology-insights/toc.json |
-| Trial Matcher | 2 | active | https://learn.microsoft.com/en-us/azure/azure-health-insights/trial-matcher | https://learn.microsoft.com/en-us/azure/azure-health-insights/trial-matcher/toc.json |
+| Name | Depth | Original URL | Reason | Details |
+|------|-------|--------------|--------|---------|
+| Azure Health Insights | 1 | https://learn.microsoft.com/en-us/azure/azure-health-insights/ | archived_excluded | toc: https://learn.microsoft.com/en-us/previous-versions/azure/azure-health-insights/toc.json |
 
 ### Azure Industry (`azure-industry`)
 

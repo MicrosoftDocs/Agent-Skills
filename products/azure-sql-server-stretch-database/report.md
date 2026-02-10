@@ -1,29 +1,29 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL/SQL Server deployment, pricing,
-    HA/DR, and migration options (DTU vs vCore, Hyperscale, MI, VMs), plus cost optimization
-    and licensing strategies.
+    DR/HA, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid
+    Benefit, reservations, SaaS tenancy).
   configuration: 'Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security,
     backups, HA/DR, monitoring, maintenance, automation, and deployment via portal,
     CLI, PowerShell, ARM/Bicep/Terraform.'
   integrations: Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers,
-    Excel, Spark, Stream Analytics) plus elastic scale, jobs, replication, failover,
-    backup/restore, and automation via PowerShell/APIs.
+    Excel, Spark, Stream Analytics), plus elastic scale, jobs, replication, failover,
+    backup/restore, and PowerShell/REST automation.
   troubleshooting: 'Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O,
-    deadlocks, blocking), query tuning, auditing, Data Sync, connectivity, Kerberos,
-    and SQL on Azure VM/SQL IaaS problems.'
-  security: 'Security, auth, and compliance for Azure SQL: Entra/MFA, managed identities,
-    network controls, auditing/ATP, TDE/CMK, Always Encrypted, Windows/Kerberos auth,
-    and best-practice hardening.'
+    deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos,
+    and SQL on Azure VMs.'
+  security: 'Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra,
+    MFA, Kerberos), network isolation, auditing, TDE/CMK, threat protection, best
+    practices, and compliance.'
   deployment: Deploying, moving, restoring, and failing over Azure SQL (DB, Managed
     Instance, SQL on VMs), including geo-replication, backups, region moves, sharding,
     and migrations from other databases.
   architecture-patterns: Patterns for high availability, DR, geo-replication, connectivity,
     and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs,
     including Always On and WSFC setups.
-  best-practices: Best practices for performance, HA/DR, auditing, storage, licensing,
-    and T‑SQL compatibility across Azure SQL Database, Managed Instance, and SQL Server
+  best-practices: Best-practice guidance for performance, HA/DR, auditing, storage,
+    sizing, and migrations across Azure SQL Database, Managed Instance, and SQL Server
     on Azure VMs.
   limits-quotas: Backup behavior, free-tier offers/quotas, DTU/vCore resource limits,
     maintenance windows, and sizing/network constraints for Azure SQL Database and
@@ -36,8 +36,8 @@ category_descriptions:
 - **Total Pages**: 583
 - **Fetched**: 583
 - **Fetch Failed**: 0
-- **Classified**: 423
-- **Unclassified**: 160
+- **Classified**: 425
+- **Unclassified**: 158
 
 ### Incremental Update
 - **New Pages**: 0
@@ -51,15 +51,15 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 10 | 1.7% |
-| best-practices | 31 | 5.3% |
+| best-practices | 32 | 5.5% |
 | configuration | 115 | 19.7% |
-| decision-making | 38 | 6.5% |
-| deployment | 33 | 5.7% |
+| decision-making | 37 | 6.3% |
+| deployment | 34 | 5.8% |
 | integrations | 61 | 10.5% |
 | limits-quotas | 18 | 3.1% |
 | security | 97 | 16.6% |
-| troubleshooting | 20 | 3.4% |
-| *(Unclassified)* | 160 | 27.4% |
+| troubleshooting | 21 | 3.6% |
+| *(Unclassified)* | 158 | 27.1% |
 
 ## Changes
 
@@ -144,7 +144,6 @@ category_descriptions:
 | [Migrate DTU to vCore](https://learn.microsoft.com/en-us/azure/azure-sql/database/migrate-dtu-to-vcore?view=azuresql) | decision-making | 0.80 | Migration from DTU to vCore inherently involves tier/sku selection and trade-offs; article likely includes comparison guidance, cost/performance considerations, and when to choose specific vCore tiers. |
 | [Migrate a .NET application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration?view=azuresql) | security | 0.80 | Passwordless migration for .NET will include specific Microsoft Entra ID setup, connection string formats, and role/permission requirements—product-specific security configuration details. |
 | [Migrate a Node.js application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-nodejs?view=azuresql) | security | 0.80 | Node.js passwordless guidance will contain Azure SQL–specific auth configuration, identity setup, and connection options, matching security configuration criteria. |
-| [Migrate a Python application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-python?view=azuresql) | security | 0.80 | Python passwordless migration article will detail Entra ID auth flows, connection parameters, and required roles/scopes for Azure SQL, which are product-specific security settings. |
 | [Monitor In-Memory OLTP space](https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-monitor-space?view=azuresql) | troubleshooting | 0.80 | Focuses on estimating and monitoring In-Memory OLTP storage and resolving capacity error 41823; includes a specific error code and likely maps causes to resolutions and monitoring queries. |
 | [Native Windows principals](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/native-windows-principals?view=azuresql) | security | 0.80 | Describes Windows authentication metadata mode and its use with Entra ID; involves identity modes and authentication behavior that are product-specific security/identity configuration details. |
 | [Quick checklist](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql) | best-practices | 0.80 | Checklist-style article summarizing product-specific best practices for VM configuration, storage, security, and performance troubleshooting for SQL Server on Azure VMs, including concrete recommendations and gotchas. |
@@ -235,6 +234,7 @@ category_descriptions:
 | [Automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql) | limits-quotas | 0.70 | Automatic backup feature description for SQL MI typically includes concrete retention periods, backup frequency, and PITR windows (numeric limits and time ranges) that are service-specific. |
 | [Azure Quickstart templates](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql) | configuration | 0.70 | Covers Azure Resource Manager template parameters and configuration for cluster, listener, and load balancer, which are concrete configuration options unique to SQL Server AG on Azure VMs. |
 | [Azure SQL Database free offer FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer-faq?view=azuresql) | limits-quotas | 0.70 | FAQ for the free offer likely elaborates on exact usage limits, eligibility, and quota behaviors; this is detailed limit/offer behavior beyond generic knowledge. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | deployment | 0.70 | Region-by-region feature availability is a product-specific deployment constraint that affects where and how you can deploy certain capabilities; this is not reliably inferable from training data and is essential for deployment planning. |
 | [Azure shared disks](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?view=azuresql) | configuration | 0.70 | Provides detailed steps and settings to configure an FCI using Azure shared disks, including Azure resource and SQL Server configuration parameters unique to this deployment pattern. |
 | [Backup and restore](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/backup-restore?view=azuresql) | best-practices | 0.70 | Provides product-specific guidance on backup and restore options and considerations for SQL Server on Azure VMs, including how Azure Storage redundancy affects backup strategy, which is actionable best-practices content. |
 | [Backup and restore using managed identities](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/backup-restore-to-url-using-managed-identities?view=azuresql) | integrations | 0.70 | Describes backup/restore to URL using managed identities; involves integration between SQL Server, Azure Storage, and Entra managed identities with specific configuration parameters and permissions. |
@@ -287,12 +287,13 @@ category_descriptions:
 | [Elastic jobs tutorial](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql) | configuration | 0.70 | Step-by-step configuration of elastic jobs via portal/T-SQL/PowerShell/REST; likely includes job/agent settings, parameters, and product-specific configuration patterns beyond a simple tutorial example. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/azure-sql/database/enable-zone-redundancy?view=azuresql) | deployment | 0.70 | Describes how to update databases/pools for zone redundancy; likely includes supported SKUs/regions and configuration constraints unique to Azure SQL deployment for high availability. |
 | [Event file walkthrough](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-code-event-file?view=azuresql) | integrations | 0.70 | Walkthrough for Extended Events with Azure Storage event_file target will include product-specific T-SQL, storage URL formats, and configuration parameters unique to Azure SQL and its integration with Azure Storage. |
-| [Extend AG to multiple regions](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multi-subnet-multiple-regions?view=azuresql) | configuration | 0.70 | Shows how to configure an AG replica in a remote Azure region, including Azure networking and AG settings for DR and hybrid scenarios, which are product-specific configuration patterns. |
-| [Feature comparison](https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql) | decision-making | 0.70 | Feature comparison between Azure SQL Database and Managed Instance; such tables guide selection between services based on capabilities, fitting decision-making. |
+| [Extend AG to multiple regions](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multi-subnet-multiple-regions?view=azuresql) | configuration | 0.70 | Tutorial for SQL Server on Azure VMs that walks through detailed Always On availability group setup across regions and subnets. While framed as a tutorial, this scenario-specific configuration (multi-subnet, cross-region, Azure VM networking and listener setup) involves product- and platform-specific steps and settings that go beyond generic AG knowledge and are unlikely to be fully captured in model pretraining. |
+| [Feature comparison](https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql) | decision-making | 0.70 | A feature comparison article that helps decide between Azure SQL Database and Azure SQL Managed Instance based on which engine features are supported where. This is product-specific decision guidance with comparison tables, fitting the decision-making category. |
 | [Go](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql) | integrations | 0.70 | Demonstrates Go driver (go-mssqldb) usage with Azure SQL, including driver-specific connection parameters and sample code that are product- and SDK-specific. |
 | [Identify query performance bottlenecks](https://learn.microsoft.com/en-us/azure/azure-sql/database/identify-query-performance-issues?view=azuresql) | troubleshooting | 0.70 | Organized around types of performance bottlenecks (running vs waiting) with associated causes and resolutions; provides product-specific symptom→cause→solution guidance for Azure SQL query performance. |
 | [Identify query performance bottlenecks](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/identify-query-performance-issues?view=azuresql) | troubleshooting | 0.70 | Focuses on types of query performance issues and how to identify/resolve them, using DMVs; this is symptom→diagnosis→resolution guidance for performance problems, aligning with troubleshooting. |
 | [Import from BACPAC](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/import-from-bacpac-powershell?view=azuresql) | integrations | 0.70 | Contains a full PowerShell script with Azure SQL–specific cmdlets and parameters to import a BACPAC file into a new database, representing concrete integration and automation details. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.70 | A 'known issues' page for a specific service typically lists concrete symptoms and product-specific workarounds or resolutions, which map directly to troubleshooting knowledge that changes over time and is not captured in generic training. |
 | [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/long-term-backup-retention-configure?view=azuresql) | configuration | 0.70 | Describes configuring LTR policies with specific retention settings and storage behavior (up to 10 years) via portal/CLI/PowerShell. Contains product-specific policy parameters and ranges, fitting configuration. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql) | configuration | 0.70 | Explains maintenance window feature behavior and configuration options; likely includes specific setting names/allowed values for maintenance scheduling. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window?view=azuresql) | limits-quotas | 0.70 | Maintenance window overview for SQL MI typically includes specific timing constraints, supported regions/tiers, and behavior during maintenance, including time ranges and limits on scheduling. |
@@ -308,7 +309,7 @@ category_descriptions:
 | [Move SQL MI to another subnet](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/vnet-subnet-move-instance?view=azuresql) | deployment | 0.70 | Describes a managed operation similar to scaling, including expected downtime (typically up to 10 seconds) and constraints on moving between VNets/subnets. The timing and operational constraints are product-specific deployment behaviors. |
 | [Move resources to a new region](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/move-resources-across-regions?view=azuresql) | deployment | 0.70 | Provides a workflow for moving Managed Instance to a new region within the same cloud; region-move guidance is a deployment/migration scenario with product-specific steps and constraints. |
 | [Multi-shard queries](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-multishard-querying?view=azuresql) | integrations | 0.70 | Covers elastic database client library for querying sharded databases; typically includes library classes, methods, and configuration patterns specific to Azure SQL sharding, which are product-specific coding patterns. |
-| [Multiple regions](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql) | configuration | 0.70 | Provides detailed steps to configure an AG replica in another Azure region or extend on-premises AG to Azure, including specific Azure networking and AG configuration details. |
+| [Multiple regions](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql) | configuration | 0.70 | Step-by-step configuration of an Always On availability group for SQL Server on Azure VMs with a remote-region replica. The article encodes Azure-specific configuration details (networking, cluster, listener, and VM/SQL settings) for this DR topology, which are concrete, product-specific patterns rather than generic concepts. |
 | [Network Security Perimeter](https://learn.microsoft.com/en-us/azure/azure-sql/database/network-security-perimeter?view=azuresql) | security | 0.70 | Describes configuring Network Security Perimeter for Azure SQL, including perimeter rules and allowed traffic; this is detailed, product-specific network security configuration. |
 | [Network access controls](https://learn.microsoft.com/en-us/azure/azure-sql/database/network-access-controls-overview?view=azuresql) | security | 0.70 | Network access controls overview for Azure SQL typically includes specific options (firewall rules, private endpoints, service endpoints) and how to configure them securely—product-specific security/network configuration. |
 | [Node.js](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-nodejs?view=azuresql) | integrations | 0.70 | Provides Node.js sample code and connection string details for Azure SQL; includes driver/module usage and parameters unique to this integration scenario. |
@@ -326,7 +327,7 @@ category_descriptions:
 | [Prepare SQL Server 2016 environment](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc?view=azuresql) | configuration | 0.70 | Covers enabling Always On availability groups with WSFC for SQL Server 2016 as part of link preparation. This includes specific Windows/SQL configuration steps, minimum versions, and cluster settings, which are detailed product-specific configuration requirements. |
 | [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql) | configuration | 0.70 | Environment preparation for Managed Instance link includes specific prerequisites, network and SQL configuration settings, and possibly scripts with parameter values. These are detailed configuration requirements unique to this feature. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql) | integrations | 0.70 | Includes Python sample code, mssql-python package usage, and connection parameters for Azure SQL/Synapse; these are concrete integration details with SDK-specific configuration. |
-| [Python with pyodbc](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql) | integrations | 0.70 | Python/pyodbc quickstart for Azure SQL with connection string details and driver options; constitutes a product-specific integration pattern. |
+| [Python with mssql-python](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql) | integrations | 0.70 | Quickstart shows product-specific Python driver usage and Microsoft Entra/passwordless connection details for Azure SQL Database. While largely a tutorial, it includes concrete connection string patterns and authentication configuration that are specific to this product/driver integration, which qualifies as integration-focused expert knowledge. |
 | [Query across tables with different schemas](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-vertical-partitioning?view=azuresql) | integrations | 0.70 | Covers setting up cross-database queries where schemas differ; likely includes Azure SQL elastic query configuration and external table patterns specific to this feature. |
 | [Query vertically partitioned data](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started-vertical?view=azuresql) | integrations | 0.70 | How-to for elastic database query over vertically partitioned databases; likely includes specific T-SQL objects, external data source/table definitions, and configuration unique to Azure SQL elastic query. |
 | [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | configuration | 0.70 | Registration with the SQL IaaS Agent extension typically involves specific commands, modes, and configuration parameters unique to this extension. These are product-specific configuration details (extension settings, flags) that qualify as expert configuration knowledge. |
@@ -369,6 +370,7 @@ category_descriptions:
 | [Failover groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql) | best-practices | 0.68 | The article goes beyond a conceptual overview and includes product-specific recommendations and gotchas for configuring and operating Azure SQL Database failover groups (for example, guidance on read-write vs read-only listener usage, failover testing practices, and configuration choices tied to Azure SQL behavior). These are actionable, service-specific best practices rather than generic high-availability concepts. |
 | [Load data with BCP](https://learn.microsoft.com/en-us/azure/azure-sql/load-from-csv-with-bcp?view=azuresql) | integrations | 0.68 | Shows how to use the bcp utility with Azure SQL, including required encodings, command parameters, and constraints (e.g., ASCII/UTF-16 only), which are product-specific integration and tooling details. |
 | [Maintenance window FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window-faq?view=azuresql) | limits-quotas | 0.68 | FAQ for maintenance windows usually clarifies exact constraints (how many windows, allowed durations, lead times, supported SKUs/regions) and edge cases, which are numeric and behavior limits specific to the service. |
+| [Migrate a Python application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-python?view=azuresql) | security | 0.68 | The page is a concrete how-to for configuring passwordless authentication from Python to Azure SQL Database. It likely includes product-specific security details such as connection string formats, authentication configuration steps, and possibly specific Azure AD settings or parameters. This is security-focused configuration for a particular service and language rather than a generic overview. |
 | [Migrate single subnet to multi-subnet](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-migrate-multi-subnet?view=azuresql) | configuration | 0.68 | Provides ordered, product-specific steps and settings to move an existing AG from single to multi-subnet in Azure, including listener and networking reconfiguration details that go beyond generic concepts. |
 | [Prepare VM for FCI](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-prepare-vm?view=azuresql) | configuration | 0.68 | Describes VM, storage, and cluster preparation settings for FCI on Azure VMs, including configuration choices tied to storage solutions, which are specific to this product scenario. |
 | [on Azure confidential VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql) | configuration | 0.68 | Deploying to confidential VMs involves specific VM sizes, security settings, and configuration constraints unique to this feature, which are product-specific configuration details. |
@@ -429,6 +431,7 @@ category_descriptions:
 | [Pooled database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/setup-geodr-failover-pool-cli?view=azuresql) | configuration | 0.65 | Includes specific CLI commands and options to configure active geo-replication for pooled databases and perform failover, which are detailed configuration steps. |
 | [Private Link](https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql) | security | 0.65 | Describes Azure SQL–specific use of Private Link and private endpoints, including scope (SQL Database and Synapse dedicated SQL pools) and how private IPs within VNets are used, which is concrete product security configuration rather than generic networking theory. |
 | [Query horizontally-sharded data](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started?view=azuresql) | integrations | 0.65 | How-to for elastic query over multiple Azure SQL databases; likely includes product-specific T-SQL objects, external data source/table definitions, and configuration steps unique to Azure SQL elastic query rather than generic SQL. |
+| [Read Scale-Out](https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql) | best-practices | 0.65 | Describes how read scale-out works on Premium/Business Critical tiers, when to offload read-only workloads to replicas, and how replicas are provisioned relative to the primary. This is product-specific operational guidance on using read replicas effectively, aligning best with best-practices rather than generic concepts. |
 | [Replicas](https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale-replicas?view=azuresql) | decision-making | 0.65 | Describes three different types of secondary replicas with different architecture, feature sets, purposes, and costs; helps decide which replica type(s) to use based on scenario, fitting decision-making guidance. |
 | [Replicate to SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/replication-to-sql-database?view=azuresql) | configuration | 0.65 | Replication setup to Azure SQL as a push subscriber typically includes specific supported options, required settings, and configuration parameters unique to Azure SQL/Fabric. |
 | [Restore database to a managed instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/restore-geo-backup?view=azuresql) | integrations | 0.65 | Provides a concrete Az PowerShell script using specific cmdlets and parameters to perform geo-restore for Azure SQL Managed Instance, which is a product-specific integration/coding pattern rather than a generic concept. |
@@ -484,7 +487,6 @@ category_descriptions:
 | [Pooled database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/add-elastic-pool-to-failover-group-cli?view=azuresql) | configuration | 0.60 | Provides CLI script to create an elastic pool, add a database, configure a failover group, and test failover, with concrete parameter usage unique to Azure SQL. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-vm-create-powershell-quickstart?view=azuresql) | integrations | 0.60 | Provides a concrete PowerShell-based creation pattern for SQL Server on Azure VMs using Az cmdlets and parameters, which is a product-specific integration/coding pattern. |
 | [Premium SSD v2 (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration-premium-ssd-v2?view=azuresql) | configuration | 0.60 | Covers deploying SQL VMs with Premium SSD v2; such deployment/config docs typically include disk configuration parameters (size, performance tiers, IOPS/throughput settings) specific to this storage offering. |
-| [Read Scale-Out](https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql) | decision-making | 0.60 | Describes read scale-out tied to Premium/Business Critical tiers and replica behavior; helps decide when to offload reads to replicas based on tier architecture. |
 | [Recover using backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql) | deployment | 0.60 | Provides concrete steps and constraints for point-in-time restore (up to 35 days) including Hyperscale specifics; these restore behaviors and limits are product-specific operational details. |
 | [Recover using backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/recovery-using-backups?view=azuresql) | deployment | 0.60 | Contains detailed, product-specific restore workflows and constraints for using backups and PITR on Managed Instance; operational recovery procedures are deployment/operations focused rather than conceptual. |
 | [Restore a database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/restore-database-cli?view=azuresql) | configuration | 0.60 | Shows CLI commands and parameter values to restore a database to a specific point in time, representing detailed configuration/operation knowledge. |
@@ -638,7 +640,6 @@ category_descriptions:
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/monitoring-sql-managed-instance-azure-monitor-reference?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Azure SQL glossary of terms](https://learn.microsoft.com/en-us/azure/azure-sql/glossary-terms?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
@@ -647,7 +648,6 @@ category_descriptions:
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql) | - | Landing/navigation page for Azure SQL Database documentation with links to other content; no detailed technical guidance. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-glossary?view=azuresql) | - | Glossary of terms; definitions only, no configuration, limits, or troubleshooting mappings. |
 | [Import/Export service hangs](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Public data sets](https://learn.microsoft.com/en-us/azure/azure-sql/public-data-sets?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |
 | [Quickstarts](https://learn.microsoft.com/en-us/azure/azure-sql/database/quickstart-content-reference-guide?view=azuresql) | - | Quickstart content reference/TOC page; purely navigational with links to other quickstarts. |
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 283) |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   decision-making: Guidance on planning and choosing App Service tiers, plans, domains,
     networking, auth, and migration paths (Windows/Linux, .NET/Java/WordPress, Arc,
@@ -35,8 +35,8 @@ category_descriptions:
 - **Total Pages**: 246
 - **Fetched**: 246
 - **Fetch Failed**: 0
-- **Classified**: 150
-- **Unclassified**: 96
+- **Classified**: 149
+- **Unclassified**: 97
 
 ### Incremental Update
 - **New Pages**: 0
@@ -56,9 +56,9 @@ category_descriptions:
 | deployment | 14 | 5.7% |
 | integrations | 7 | 2.8% |
 | limits-quotas | 2 | 0.8% |
-| security | 53 | 21.5% |
+| security | 52 | 21.1% |
 | troubleshooting | 1 | 0.4% |
-| *(Unclassified)* | 96 | 39.0% |
+| *(Unclassified)* | 97 | 39.4% |
 
 ## Changes
 
@@ -160,7 +160,6 @@ category_descriptions:
 | [Geo-distributed scale](https://learn.microsoft.com/en-us/azure/app-service/environment/app-service-app-service-environment-geo-distributed-scale) | architecture-patterns | 0.70 | Describes geo-distributed scaling patterns using Traffic Manager and multiple ASE deployments for extreme scale; this is an architecture pattern specific to App Service with guidance on when to use horizontal geo-scale. |
 | [Inbound and outbound IPs](https://learn.microsoft.com/en-us/azure/app-service/overview-inbound-outbound-ips) | configuration | 0.70 | Covers when inbound and outbound IPs are shared, static, or change, and how to retrieve them for an app and App Service Environment. These are product-specific behaviors and procedures (including portal/CLI locations and conditions that trigger IP changes), fitting configuration-focused expert knowledge. |
 | [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/environment/integrate-with-application-gateway) | integrations | 0.70 | End-to-end integration of ILB ASE with Application Gateway/WAF is a product-specific integration scenario that typically includes concrete configuration values, listener/backend settings, and networking nuances. |
-| [Isolate network traffic (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-networking-isolate-vnet) | security | 0.70 | Shows how to configure secure, network-isolated communication via VNet integration with specific App Service and networking settings, which are product-specific security/network configuration details. |
 | [Migrate Python Windows apps to Linux](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-windows-linux) | decision-making | 0.70 | Migration considerations between Windows and Linux on App Service are product-specific and include concrete guidance on dependencies, runtime support, and behavior differences that influence migration decisions; this is scenario-focused decision guidance rather than generic concepts. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/app-service/monitor-app-service-reference) | configuration | 0.70 | Monitoring data reference that likely lists specific metric names, dimensions, and log categories for App Service. These are product-specific configuration/telemetry parameters that qualify as expert reference knowledge. |
 | [Mount Azure Storage](https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage) | configuration | 0.70 | Explains how to mount Azure Storage (Azure Files and Premium Files) as network shares in App Service, including supported share types and App Service–specific mounting configuration. These are concrete configuration details. |
@@ -274,6 +273,7 @@ category_descriptions:
 | [Foundry agent calling web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-integrate-azure-ai-agent-node) | 0.30 | Node.js tutorial for exposing an Express app via OpenAPI to Foundry Agent Service; focuses on step-by-step integration rather than exhaustive configuration options or expert-only limits. |
 | [Foundry agent calling web app](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-integrate-azure-ai-agent-python) | 0.30 | Tutorial on exposing a FastAPI app via OpenAPI to Foundry Agent Service. Integration walkthrough without detailed config parameter tables or product-specific error/limit data. |
 | [Inbound IP address](https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-inbound) | 0.30 | Appears to be a procedural guide for handling inbound IP changes without clear evidence of numeric limits, config matrices, or detailed troubleshooting mappings in the summary. |
+| [Isolate network traffic (tutorial)](https://learn.microsoft.com/en-us/azure/app-service/tutorial-networking-isolate-vnet) | 0.30 | Tutorial-style networking scenario for App Service VNet integration; based on the summary, it focuses on step-by-step isolation of traffic to Key Vault and Azure AI services, without exposing detailed configuration parameter tables, limits, error codes, or product-specific decision matrices. It appears to be procedural guidance rather than expert reference content as defined by the sub-skill types. |
 | [Kudu service](https://learn.microsoft.com/en-us/azure/app-service/resources-kudu) | 0.30 | Overview of Kudu service and its role in deployment; appears conceptual without deployment matrices, limits, or detailed configuration parameter tables. |
 | [Model Context Protocol servers](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-model-context-protocol-server) | 0.30 | MCP server scenario overview; description focuses on what and why, not on specific configuration parameters, limits, or troubleshooting content. |
 | [Networking architecture](https://learn.microsoft.com/en-us/azure/app-service/environment/networking) | 0.30 | Based on the summary, the page is a conceptual networking overview for App Service Environment (describing VNet placement, single-subnet deployment, and traffic staying inside the VNet) without explicit numeric limits, configuration parameter tables, error codes, or decision matrices. It doesn't clearly expose product-specific configuration values, quotas, or troubleshooting mappings that meet the expert-knowledge criteria. |
@@ -281,7 +281,6 @@ category_descriptions:
 | [Outbound IP address](https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-outbound) | 0.30 | Outbound IP change preparation is likely a step-by-step operational guide; summary does not indicate specific limits, config tables, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-sidecar) | 0.30 | Conceptual overview of sidecars and their benefits; summary does not indicate detailed configuration parameters, limits, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-webjobs) | 0.30 | Overview of WebJobs capabilities and scenarios; no indication of detailed configuration parameters, limits, or error-code troubleshooting. |
-| [RAG Azure OpenAI and Azure SQL](https://learn.microsoft.com/en-us/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) | 0.30 | Tutorial for Blazor app with Azure SQL vector search and Azure OpenAI; focuses on building a sample app, not on quotas, configuration matrices, or error-code-based troubleshooting. |
 | [RAG with Azure OpenAI and your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-dotnet) | 0.30 | Tutorial RAG app with Azure OpenAI and Azure AI Search on App Service; primarily step-by-step app code and deployment flow, no detailed config tables, limits, or product-specific troubleshooting. |
 | [RAG with Azure OpenAI and your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-python) | 0.30 | RAG tutorial with FastAPI, Azure OpenAI, and Azure AI Search. Focuses on building an example app, not on detailed limits, configuration references, or troubleshooting matrices. |
 | [RAG with Azure OpenAI with your data](https://learn.microsoft.com/en-us/azure/app-service/tutorial-ai-openai-search-java) | 0.30 | Tutorial for Java RAG app with Azure OpenAI and Azure AI Search; focuses on building and deploying a sample, not on detailed configuration options or quotas. |
@@ -307,6 +306,7 @@ category_descriptions:
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs) | 0.20 | Node.js App Service quickstart that shows how to deploy a Hello World app; standard getting-started flow without expert-only limits, configuration catalogs, or troubleshooting mappings. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-php) | 0.20 | Quickstart for creating a PHP web app and deploying via Git. Basic deployment walkthrough without detailed configuration references, limits, or error mappings. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python) | 0.20 | Python App Service quickstart for deploying Django/Flask/FastAPI; standard getting-started content without detailed configuration tables, limits, or error-resolution mappings. |
+| [RAG Azure OpenAI and Azure SQL](https://learn.microsoft.com/en-us/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) | 0.20 | Tutorial-style get-started guide for deploying a .NET Blazor RAG app with Azure SQL and Azure OpenAI. It focuses on step-by-step setup and does not emphasize configuration tables, limits, error-code troubleshooting, or product-specific decision matrices. Any configuration or code shown is example/tutorial usage rather than comprehensive expert reference content. |
 | [About App Service](https://learn.microsoft.com/en-us/azure/app-service/overview) | 0.10 | High-level overview of Azure App Service capabilities and supported stacks without detailed limits, configuration tables, or error mappings. |
 | [About App Service Environments](https://learn.microsoft.com/en-us/azure/app-service/environment/overview) | 0.10 | Conceptual overview of App Service Environment; no numeric limits, config parameter tables, or troubleshooting content. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/app-service/samples-cli) | 0.10 | Index of CLI sample scripts; primarily navigation to other content without embedded limits, configuration tables, or troubleshooting mappings. |

@@ -3,7 +3,7 @@ name: azure-healthcare-apis
 description: Expert knowledge for Azure Healthcare Apis development including security, limits & quotas, troubleshooting, deployment, integrations & coding patterns, configuration, architecture & design patterns, decision making, and best practices. Use when building, debugging, or optimizing Azure Healthcare Apis applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Healthcare Apis Skill
 
@@ -25,8 +25,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L53-L62 | Guidance for planning and executing migrations from Azure API for FHIR/MedTech to newer Health Data Services, plus regional availability and deprecation/retirement FAQs. |
 | Architecture & Design Patterns | L63-L69 | Architecting Azure Healthcare APIs (FHIR & DICOM) for DR, data lake integration, and end-to-end digital pathology imaging workflows. |
 | Limits & Quotas | L70-L75 | Autoscaling behavior, throughput limits, and configuration for Azure API for FHIR/FHIR service, including how scaling works, constraints, and how to tune autoscale settings. |
-| Security | L76-L111 | Configuring secure access to FHIR/DICOM/Health Data Services: Entra app registration, RBAC, tokens, network/Private Link, CMK, external/B2C identity, SMART on FHIR, privacy, and compliance policies. |
-| Configuration | L112-L155 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging, events, search/reindex, bulk import/export, versioning, profiles, and Blue Button/Da Vinci setups. |
+| Security | L76-L112 | Configuring auth, RBAC, identity providers, tokens, network isolation, encryption, compliance, and app registration to securely access and protect FHIR, DICOM, and Health Data Services. |
+| Configuration | L113-L155 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging, events, search/reindex, bulk import/export, versioning, profiles, and Blue Button/Da Vinci setups. |
 | Integrations & Coding Patterns | L156-L192 | Patterns and code for integrating FHIR/DICOM/MedTech with Azure: REST and SMART on FHIR, bulk export/delete, $operations, validation, Synapse/Data Lake/ADF, and language-specific API examples. |
 | Deployment | L193-L200 | Guides for deploying Azure Healthcare APIs (FHIR, DICOM, MedTech) using ARM/Bicep, Azure portal, and integrating DICOM with Azure Data Lake. |
 
@@ -94,6 +94,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use built-in Azure Policy definitions for Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-health-data-services-policy-reference |
 | Configure Azure RBAC roles for FHIR data access | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac |
 | Assign Azure RBAC roles to Health Data Services via CLI and REST | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-azure-rbac-using-scripts |
+| Secure Azure Health Data Services with Private Link | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link |
 | Configure Azure RBAC roles for DICOM access | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-configure-azure-rbac |
 | Register client applications for Azure DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-register-application |
 | Obtain and use access tokens for Azure DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/get-access-token |
@@ -130,7 +131,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Store and manage FHIR profiles in Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/store-profiles-in-fhir |
 | Add custom HTTP headers to Azure FHIR audit logs | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/use-custom-headers |
 | Validate FHIR resources against profiles in Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/validation-against-profiles |
-| Configure Private Link endpoints for Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/configure-private-link |
 | Configure CORS settings for DICOM service APIs | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-cross-origin-resource-sharing |
 | Configure customer-managed keys for DICOM data | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-customer-managed-keys |
 | Customize DICOM image location URLs in responses | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-proxy-url-support |

@@ -3,7 +3,7 @@ name: azure-app-configuration
 description: Expert knowledge for Azure App Configuration development including deployment, configuration, security, architecture & design patterns, limits & quotas, integrations & coding patterns, best practices, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure App Configuration applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure App Configuration Skill
 
@@ -24,11 +24,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L38-L43 | Guidance on efficient Azure App Configuration usage patterns and using synchronization tokens to keep distributed clients’ configuration reads consistent and up to date. |
 | Decision Making | L44-L48 | Guidance for upgrading Spring Boot applications to Azure App Configuration Java library v6, including API changes, migration steps, and compatibility considerations. |
 | Architecture & Design Patterns | L49-L54 | Patterns for resilient, geo-redundant App Configuration setups, disaster recovery strategies, and scaling client config delivery using Azure Front Door. |
-| Limits & Quotas | L55-L63 | Point-in-time key-value reads, revision history and retention, soft delete behavior, preview API lifecycle/deprecation, and REST API throttling limits for App Configuration. |
+| Limits & Quotas | L55-L63 | Point-in-time key-value reads, preview API lifecycle/deprecation, soft delete and data retention, revision management, and REST API throttling limits for Azure App Configuration |
 | Security | L64-L85 | Securing App Configuration: encryption, keys, RBAC, managed identities, private endpoints, network lockdown, REST auth (Entra, HMAC), and Azure Policy/compliance settings. |
-| Configuration | L86-L112 | Configuring and using App Configuration values, feature flags, snapshots, dynamic refresh, and telemetry across languages, Kubernetes, AI agents, and REST API/versioning. |
-| Integrations & Coding Patterns | L113-L186 | Patterns and code samples for integrating Azure App Configuration, dynamic config reload, feature flags (targeting, variants, time windows, telemetry), Key Vault refs, and REST API usage across .NET, Go, Java, JS, Python. |
-| Deployment | L187-L197 | Using App Configuration in deployments: CI/CD integration, Azure Pipelines tasks, GitHub Actions sync, Helm/Kubernetes usage, geo-replication, and region moves. |
+| Configuration | L86-L112 | Configuring how apps and AI agents read, refresh, and manage settings/feature flags from App Configuration across languages, Kubernetes, snapshots, labels, filters, and REST API versioning. |
+| Integrations & Coding Patterns | L113-L185 | Patterns and code samples for integrating Azure App Configuration, dynamic config reload, feature flags (targeting, variants, time windows, telemetry), Key Vault refs, and REST API usage across .NET, Go, Java, JS, Python. |
+| Deployment | L186-L196 | Using App Configuration in deployments: CI/CD integration, Azure Pipelines tasks, GitHub Actions sync, Helm/Kubernetes usage, geo-replication, and region moves. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -59,7 +59,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Understand Azure App Configuration preview API lifecycle and deprecation timing | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-preview-api-life-cycle |
 | Understand soft delete behavior and retention in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete |
 | Manage key-value revisions and retention in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-revisions |
-| Understand throttling limits for App Configuration REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-throttling |
+| Understand Azure App Configuration REST API throttling limits | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-throttling |
 
 ### Security
 | Topic | URL |
@@ -106,8 +106,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure targeting filters for staged feature rollouts | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-targetingfilter |
 | Configure time window filters for scheduled features | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter |
 | Configure and use variant feature flags in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags |
-| Reference for Azure App Configuration monitoring data | https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration-reference |
 | Configure Azure App Configuration Kubernetes Provider properties | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-kubernetes-provider |
+| Use Python configuration provider for Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider |
 | Use Azure App Configuration REST API versioning correctly | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning |
 
 ### Integrations & Coding Patterns
@@ -172,7 +172,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate .NET apps with Azure App Configuration provider | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-dotnet-provider |
 | Integrate Go apps with Azure App Configuration provider | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider |
 | Integrate JavaScript apps with Azure App Configuration provider | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider |
-| Integrate Python apps with Azure App Configuration provider | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider |
 | Automatically reload Key Vault secrets and certificates via App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reload-key-vault-secrets-dotnet |
 | Reference Azure App Configuration REST endpoints | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api |
 | Use HTTP headers with Azure App Configuration REST API | https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-headers |

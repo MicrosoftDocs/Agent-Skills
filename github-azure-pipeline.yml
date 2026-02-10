@@ -86,21 +86,27 @@ stages:
               scriptLocation: inlineScript
               inlineScript: |
                 set -e
-                cd $(Build.SourcesDirectory)/Learn.Docs2AgentSkills
 
-                GITHUB_REPO=$(basename $(Build.Repository.Uri) .git)
+                # Define paths
+                ADO_REPO="$(Build.SourcesDirectory)/Learn.Docs2AgentSkills"
+                GITHUB_REPO="$(Build.SourcesDirectory)/$(basename $(Build.Repository.Uri) .git)"
+                PRODUCTS_DIR="$GITHUB_REPO/products"
+                SKILLS_DIR="$GITHUB_REPO/skills"
+
+                cd $ADO_REPO
 
                 echo "========================================"
                 echo "Starting docs sync"
                 echo "========================================"
-                echo "GitHub repo: $GITHUB_REPO"
-                echo "Products dir: $(Build.SourcesDirectory)/$GITHUB_REPO/products"
-                echo "Skills dir: $(Build.SourcesDirectory)/$GITHUB_REPO/skills"
+                echo "ADO repo (code): $ADO_REPO"
+                echo "GitHub repo (data): $GITHUB_REPO"
+                echo "Products dir: $PRODUCTS_DIR"
+                echo "Skills dir: $SKILLS_DIR"
                 echo "Azure OpenAI: $(azureOpenAIEndpoint)"
                 echo "Deployment: $(azureOpenAIDeployment)"
                 echo "Full Sync: ${{ parameters.fullSync }}"
                 echo "Target Branch: ${{ parameters.targetBranch }}"
-                echo "======================================="
+                echo "========================================"
 
                 FULL_FLAG=""
                 if [ "${{ parameters.fullSync }}" = "True" ]; then
@@ -109,8 +115,41 @@ stages:
                 fi
 
                 python -m src.docs2skills \
-                  --products-dir $(Build.SourcesDirectory)/$GITHUB_REPO/products \
-                  --skills-dir $(Build.SourcesDirectory)/$GITHUB_REPO/skills \
+                  --products-dir $PRODUCTS_DIR \
+                  --skills-dir $SKILLS_DIR \
+                  $FULL_FLAG
+
+                echo "========================================"
+                echo "Processing Well-Architected Framework"
+                echo "========================================"
+                python -m src.docs2skills \
+                  --toc https://learn.microsoft.com/en-us/azure/well-architected/breadcrumb/toc.json \
+                  --content-types config/content_types_waf.yaml \
+                  --products-dir $PRODUCTS_DIR \
+                  --skills-dir $SKILLS_DIR \
+                  --summary-prefix waf \
+                  $FULL_FLAG
+
+                echo "========================================"
+                echo "Processing Cloud Adoption Framework"
+                echo "========================================"
+                python -m src.docs2skills \
+                  --toc https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/_bread/toc.json \
+                  --content-types config/content_types_caf.yaml \
+                  --products-dir $PRODUCTS_DIR \
+                  --skills-dir $SKILLS_DIR \
+                  --summary-prefix caf \
+                  $FULL_FLAG
+
+                echo "========================================"
+                echo "Processing Azure Architecture Center"
+                echo "========================================"
+                python -m src.docs2skills \
+                  --toc https://learn.microsoft.com/en-us/azure/architecture/bread/toc.json \
+                  --content-types config/content_types_aac.yaml \
+                  --products-dir $PRODUCTS_DIR \
+                  --skills-dir $SKILLS_DIR \
+                  --summary-prefix aac \
                   $FULL_FLAG
 
                 echo "========================================"

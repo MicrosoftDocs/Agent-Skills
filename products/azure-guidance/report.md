@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-10'
 category_descriptions:
-  decision-making: Guidance to choose the right Azure services, models, and architectures
-    (vs AWS/GCP), including compute, data/AI, containers/AKS, networking, storage,
-    DR, and hybrid/migration options.
+  decision-making: Guidance to choose the right Azure services, data/AI platforms,
+    and equivalents to AWS/GCP offerings, including AKS, storage, networking, DR,
+    and compute options for specific workloads.
   best-practices: Best practices for designing, operating, and hardening Azure workloads
     (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup,
     resilience, and performance.
@@ -11,8 +11,8 @@ category_descriptions:
     Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft
     Entra vs AWS options.'
   architecture-patterns: End-to-end Azure solution architectures and patterns for
-    mission-critical, hybrid, data/analytics, IoT, mainframe migration, SAP, VDI,
-    and microservices workloads, including HA/DR and networking.
+    mission-critical, hybrid, data/analytics, IoT, microservices, mainframe migration,
+    SAP, and enterprise workloads, including HA/DR and networking.
   troubleshooting: Diagnosing and fixing AKS cluster, node, pod, networking, registry,
     and admission issues, plus cross-region data platform failures and hybrid VPN
     gateway connectivity problems.
@@ -26,16 +26,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 364
-- **Fetched**: 364
+- **Total Pages**: 365
+- **Fetched**: 365
 - **Fetch Failed**: 0
-- **Classified**: 264
+- **Classified**: 265
 - **Unclassified**: 100
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 364
+- **Updated Pages**: 2
+- **Unchanged**: 363
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-guidance/azure-guidance.csv`
 
@@ -43,16 +43,23 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 132 | 36.3% |
+| architecture-patterns | 133 | 36.4% |
 | best-practices | 27 | 7.4% |
 | configuration | 2 | 0.5% |
-| decision-making | 58 | 15.9% |
+| decision-making | 59 | 16.2% |
 | deployment | 9 | 2.5% |
-| security | 26 | 7.1% |
+| security | 25 | 6.8% |
 | troubleshooting | 10 | 2.7% |
-| *(Unclassified)* | 100 | 27.5% |
+| *(Unclassified)* | 100 | 27.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
+  - Updated: 2026-02-03T06:02:00.000Z → 2026-02-10T06:02:00.000Z
+- [Firewall protection for an AKS cluster](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall)
+  - Updated: 2025-10-30T05:03:00Z → 2026-02-10T06:02:00Z
 
 ## Classified Pages
 
@@ -90,7 +97,6 @@ category_descriptions:
 | [Search data store](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/search-options) | decision-making | 0.78 | Compares search data store options and key criteria for choosing one, which is technology selection guidance with capability comparisons. |
 | [Stream processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/stream-processing) | decision-making | 0.78 | Compares real-time stream processing options with selection criteria and capability matrix, which is expert decision guidance between services. |
 | [AI services](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/ai-services) | decision-making | 0.76 | Helps choose among Azure AI services for AI applications and data flows, providing guidance on which service to use for which use case. |
-| [Machine learning](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/data-science-and-machine-learning) | decision-making | 0.76 | Overview is explicitly about comparing ML products and deciding how to build, deploy, and manage ML solutions, which is cross-product decision-making guidance. |
 | [Security](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/security) | security | 0.76 | Security-focused guidance for Event Hubs + Functions, likely including specific auth models, roles, and configuration parameters for least-privilege access in this integration. |
 | [Understand data store models](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models) | decision-making | 0.76 | Provides comparative tables of data store models and guidance on selecting models based on patterns and scale, which is expert decision-making content. |
 | [AKS baseline for multi-region clusters](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-multi-region/aks-multi-cluster) | architecture-patterns | 0.75 | Describes how to run AKS clusters across multiple regions in active/active configuration, building on baseline patterns; includes specific HA architecture guidance unique to AKS multiregion deployments. |
@@ -146,7 +152,6 @@ category_descriptions:
 | [Enterprise file shares with DR](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/file-storage/enterprise-file-shares-disaster-recovery) | architecture-patterns | 0.70 | Provides a specific architecture for enterprise file shares with automatic cross-region failover using Azure NetApp Files and DFS; this is a concrete, product-specific resiliency pattern. |
 | [Enterprise integration - queues and events](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/queues-events) | architecture-patterns | 0.70 | Architecture scenario extending basic enterprise integration with message brokers and events. Provides product-specific architectural pattern for decoupling back-end systems using Azure messaging services, which is more detailed than generic event-driven concepts. |
 | [Extend on-premises AD FS to Azure](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adfs) | architecture-patterns | 0.70 | Reference architecture for a secure hybrid network using AD FS for federated auth in Azure, with concrete placement of AD FS, proxies, and network components. |
-| [Firewall protection for an AKS cluster](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall) | security | 0.70 | Shows how to protect AKS traffic with Azure Firewall in a hub-and-spoke topology using Terraform/DevOps; such guides typically include specific network/security configuration details unique to AKS and Azure Firewall. |
 | [Health modeling](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling) | best-practices | 0.70 | Describes Azure-specific health modeling and monitoring practices for mission-critical workloads, including how to interpret metrics holistically—actionable, product-focused best practices. |
 | [IBM z/OS migration with Avanade AMT](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration) | architecture-patterns | 0.70 | Describes a specific migration framework (Avanade AMT) and resulting Azure architecture for converted z/OS workloads, including IaaS and PaaS usage patterns. |
 | [Identify microservice boundaries](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/microservice-boundaries) | architecture-patterns | 0.70 | Guides how to derive microservice boundaries from a domain model with concrete examples (Shipping bounded context, etc.), which is architecture pattern guidance. |
@@ -201,6 +206,7 @@ category_descriptions:
 | [Identity](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/security-identity) | security | 0.69 | Focuses on identity management mappings between AWS IAM and Microsoft Entra ID, including concrete identity and access patterns for migration and multicloud, which are product-specific security configurations. |
 | [Recommendations](https://learn.microsoft.com/en-us/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-recommendations) | best-practices | 0.69 | Provides concrete recommendations and lessons learned for DR (defining RPO/RTO, testing procedures, operational practices) specific to Azure data platform services, going beyond generic DR advice. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-architecture) | architecture-patterns | 0.68 | Provides a reference architecture for an Azure data platform with DR capabilities. This is a product-specific architecture pattern for structuring components and DR topology, beyond generic DR concepts. |
+| [Firewall protection for an AKS cluster](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall) | architecture-patterns | 0.68 | Architecture Center scenario that describes a specific AKS network topology (private cluster in hub-and-spoke with Azure Firewall inspection) and when/how to use it. It contains product-specific architectural guidance and trade-offs for protecting inbound and outbound AKS traffic using Azure Firewall and Terraform/Azure DevOps, which goes beyond generic concepts. |
 | [General mainframe refactor to Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/general-mainframe-refactor) | architecture-patterns | 0.68 | Shows a refactoring architecture using AKS or Azure VMs, including guidance on when to choose each and how to modernize code and data stores for Azure. |
 | [Hybrid availability and monitoring](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-perf-monitoring) | architecture-patterns | 0.68 | Reference architecture with concrete Azure Monitor components, topology, and product-specific guidance for monitoring on-premises, third‑party cloud, and Azure VMs. Goes beyond concepts with detailed pattern choices and trade-offs for hybrid monitoring. |
 | [Hybrid file services](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-file-services) | architecture-patterns | 0.68 | Reference architecture for extending file services across cloud and on-premises using Azure File Sync and Azure Files, with concrete topology and service roles that represent product-specific patterns. |
@@ -237,12 +243,14 @@ category_descriptions:
 | [Design for self-healing](https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/self-healing) | best-practices | 0.65 | Provides concrete recommendations for implementing self-healing in Azure workloads (patterns for detection, response, and recovery). This is actionable, product-oriented resiliency guidance rather than generic reliability theory. |
 | [DevSecOps on AKS](https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks) | security | 0.65 | Applies DevSecOps to AKS across lifecycle stages and roles; this usually includes AKS-specific security controls, configurations, and patterns beyond generic DevSecOps concepts. |
 | [First layer of defense: Azure security](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense) | security | 0.65 | Explains how to secure an IT environment using Azure security services and Azure Security Benchmark; likely includes concrete mappings of services to security controls and product-specific configuration guidance. |
+| [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/container-get-started) | decision-making | 0.65 | Architecture Center 'solution ideas' pages for containers typically compare Azure container services (AKS, Container Apps, ACI, Web Apps for Containers, etc.) and provide guidance on when to choose each option for different scenarios. This is product-specific decision guidance rather than a generic overview, matching the decision-making criteria with scenario-based recommendations and trade-offs. |
 | [GitOps for AKS](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks) | configuration | 0.65 | Describes concrete techniques for operating AKS with GitOps tools (Flux v2, Argo CD, OPA Gatekeeper), typically including repo structure, sync configuration, and cluster config patterns that are product-specific. |
 | [Host name preservation](https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation) | best-practices | 0.65 | Provides specific DO/DON'T guidance for preserving original host names with Azure reverse proxies to avoid cookies/redirect/auth issues; these are product-specific behavioral gotchas. |
 | [Integrate Azure and Defender](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-365-defender-security-integrate-azure) | security | 0.65 | Focuses on integrating Azure and Microsoft 365 security solutions; integration of security products typically involves specific roles, connectors, and configuration parameters that constitute expert, product-specific security knowledge. |
 | [Interservice communication](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication) | architecture-patterns | 0.65 | Analyzes trade-offs between async messaging and synchronous APIs and discusses resilience challenges; this is pattern-level guidance for microservice communication. |
 | [IoT Hub analytics with Azure Data Explorer](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/iot-azure-data-explorer) | architecture-patterns | 0.65 | Solution idea for near real-time IoT telemetry analytics using Azure Data Explorer with IoT Hub. Provides a concrete product-specific architecture for high-volume streaming analytics. |
 | [IoT Hub private file upload to Azure Storage](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/iot/iot-private-file-upload) | architecture-patterns | 0.65 | Describes an architecture for using IoT Hub file upload over private networking to Storage accounts behind firewalls and custom domains. Product-specific pattern for secure file transfer from devices. |
+| [Machine learning](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/data-science-and-machine-learning) | decision-making | 0.65 | The page is explicitly about comparing Microsoft machine learning products and deciding which to use. Azure Architecture Center decision guides typically include product-specific comparison tables and scenario-based recommendations (for example, when to use Azure Machine Learning vs. Synapse vs. Power BI for ML). This is specialized decision-making guidance that goes beyond generic ML concepts, but it does not focus on limits, configuration, or troubleshooting. |
 | [Manage Microsoft 365 with DevOps](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops) | architecture-patterns | 0.65 | Describes a concrete architecture using Microsoft365DSC with Azure DevOps to track and approve tenant configuration changes; product-specific workflow and components go beyond generic DevOps concepts. |
 | [Microservices assessment and readiness](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/microservices-assessment) | decision-making | 0.65 | Guides whether and when to move to microservices, assessing current state and trade-offs. This is decision guidance for architecture selection, fitting decision-making. |
 | [Mission-critical architecture design](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-intro) | architecture-patterns | 0.65 | Series introduction for mission-critical workloads with Azure-specific design methodology and cloud-native reliability patterns; while somewhat high-level, it focuses on product-specific architecture guidance for this scenario. |
@@ -404,7 +412,6 @@ category_descriptions:
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/storage/storage-start-here) | 0.20 | High-level overview of Azure Storage technologies and reference materials; no indication of detailed limits, configuration tables, or troubleshooting content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-start-here) | 0.20 | Introductory overview of hybrid cloud and connectivity options; lacks detailed decision matrices, configs, or limits. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-start-here) | 0.20 | High-level planning and adoption overview for AKS without specific numeric limits, configuration tables, error codes, or decision matrices; primarily conceptual guidance rather than detailed expert configuration or troubleshooting content. |
-| [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-start-here) | 0.20 | Analytics architecture design page is an overview/solution idea; it does not provide numeric limits, configuration tables, or detailed decision matrices. |
 | [Improper Instantiation](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/) | 0.20 | Antipattern article is conceptual guidance about improper instantiation without product-specific limits, configuration parameters, error codes, or quantified decision criteria. |
 | [Measure Azure app sustainability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/measure-azure-app-sustainability-sci-score) | 0.20 | Architecture scenario describing how to measure an application's sustainability using SCI score; appears conceptual and guidance-focused without concrete limits, configuration tables, error codes, or product-specific parameter details that meet any sub-skill detection criteria. |
 | [Networking](https://learn.microsoft.com/en-us/azure/architecture/networking/) | 0.20 | High-level networking architecture design landing page listing services and sample architectures. Lacks specific patterns, limits, or configuration details. |
@@ -425,5 +432,6 @@ category_descriptions:
 | [Browse all Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/) | 0.10 | Navigation/browse page listing architectures; no detailed limits, configs, error codes, or decision matrices. |
 | [Databases](https://learn.microsoft.com/en-us/azure/architecture/databases/) | 0.10 | Described as an overview of Azure database solutions; likely a catalog/summary page without detailed limits, configs, or troubleshooting content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/devops/devops-start-here) | 0.10 | DevOps architecture design overview; primarily conceptual explanation of DevOps and Azure services, not detailed product-specific configs or troubleshooting. |
+| [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-get-started) | 0.10 | High-level overview of Azure analytics technologies and solution ideas without specific limits, configuration parameters, error codes, or decision matrices; primarily conceptual architecture guidance rather than detailed expert configuration or troubleshooting content. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/architecture/guide/) | 0.10 | High-level architecture fundamentals and best practices overview without product-specific limits, configuration tables, error codes, or quantified decision matrices. |
-| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/navigation page listing new and updated Azure Architecture Center articles without detailed technical content such as limits, configuration parameters, error codes, or decision matrices. |
+| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/navigation page listing new and updated Azure Architecture Center articles; does not itself contain limits, configuration tables, decision matrices, or other detailed expert guidance. |

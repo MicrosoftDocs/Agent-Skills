@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-09'
 category_descriptions:
   security: 'Security and compliance for Azure Government: isolation models, DoD IL5,
     FedRAMP scope, TIC guidance, Entra auth, and Secure Azure Computing Architecture
@@ -26,8 +26,8 @@ category_descriptions:
 - **Total Pages**: 39
 - **Fetched**: 39
 - **Fetch Failed**: 0
-- **Classified**: 32
-- **Unclassified**: 7
+- **Classified**: 31
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
@@ -42,11 +42,11 @@ category_descriptions:
 |------|-------|------------|
 | best-practices | 1 | 2.6% |
 | configuration | 10 | 25.6% |
-| decision-making | 11 | 28.2% |
+| decision-making | 10 | 25.6% |
 | deployment | 3 | 7.7% |
 | integrations | 1 | 2.6% |
 | security | 6 | 15.4% |
-| *(Unclassified)* | 7 | 17.9% |
+| *(Unclassified)* | 8 | 20.5% |
 
 ## Changes
 
@@ -65,7 +65,6 @@ category_descriptions:
 | [Access EA billing account](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-how-to-access-enterprise-agreement-billing-account) | configuration | 0.65 | Describes how to access EA billing account in Azure Government portal; likely includes portal paths, role/permission requirements, and specific configuration steps unique to EA in Azure Government. |
 | [Authorized reseller list](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list) | decision-making | 0.65 | Provides comprehensive tables of authorized CSPs, resellers, and distributors; supports decision making by listing concrete partner options and classifications specific to Azure Government procurement. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-cli) | configuration | 0.65 | Azure Government CLI connection typically requires specifying environment names/parameters (e.g., cloud name, endpoints) that differ from public Azure; these are product-specific configuration details not generally known. |
-| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | decision-making | 0.65 | Roadmap and GA status by authorization level across Azure Government environments; helps decide which environment to use based on authorization/compliance, which is product-specific decision guidance. |
 | [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance) | security | 0.65 | Customer guidance for secure isolation across compute, networking, and storage; likely includes concrete Azure features, configuration options, and isolation patterns specific to Azure Government security posture. |
 | [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/azure-government/connect-with-azure-pipelines) | deployment | 0.65 | How-to for CI/CD from Azure Pipelines to Azure Government; likely includes cloud-specific endpoints, service connection settings, and any constraints for deploying to Azure Government from DevOps, which are deployment-specific details. |
 | [Extensions](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-extension) | configuration | 0.65 | Guidance on obtaining a complete list of VM extensions in Azure Government; likely includes specific commands, endpoints, or parameters for querying extensions in this cloud environment. |
@@ -96,5 +95,6 @@ category_descriptions:
 | [Azure Government portal](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-portal) | 0.30 | Quickstart for connecting via portal and creating a web app; primarily step-by-step usage without detailed configuration tables, limits, or decision matrices. |
 | [CSP application process](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-application) | 0.30 | Overview of becoming an Azure Government CSP and reselling; primarily program/process oriented without technical configuration, limits, or troubleshooting details. |
 | [Marketplace](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-manage-marketplace) | 0.30 | Guidance on using Azure Government Marketplace appears mostly conceptual/usage oriented; summary does not indicate detailed limits, configuration tables, or security/diagnostic specifics. |
+| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by government cloud and authorization level; no detailed limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
 | [Compliance](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-plan-compliance) | 0.20 | Compliance overview listing authorizations and frameworks; largely descriptive without configuration, limits, or decision matrices. |
 | [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome) | 0.20 | High-level overview of Azure Government capabilities and compliance; no concrete limits, configs, error codes, or decision matrices. |

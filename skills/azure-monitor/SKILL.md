@@ -3,7 +3,7 @@ name: azure-monitor
 description: Expert knowledge for Azure Monitor development including troubleshooting, configuration, deployment, decision making, limits & quotas, security, integrations & coding patterns, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Monitor applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-10"
 ---
 # Azure Monitor Skill
 
@@ -22,12 +22,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents, data collection, alerts, autoscale, logs/metrics, Container insights, Application Insights, ITSM, and VM performance tools. |
 | Best Practices | L76-L108 | Best practices for Azure Monitor alerts, logs, metrics, autoscale, AKS/VM monitoring, cost optimization, Prometheus/PromQL, and operational reliability/performance tuning. |
-| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations: agents, alerts, logs, costs, visualization tools, SCOM/Splunk/Prometheus moves, and related billing/retention decisions. |
+| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations (agents, alerts, logs, costs, visualization, SCOM/Splunk/Prometheus) to optimize monitoring and billing. |
 | Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link-based secure topologies. |
 | Limits & Quotas | L154-L173 | Scaling, throughput, and quota limits for Azure Monitor logs/metrics, including ingestion caps, timeouts, autoscale, container/Prometheus performance, and alert/workbook constraints. |
 | Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, Prometheus/Grafana, and policy compliance. |
-| Configuration | L208-L381 | Configuring Azure Monitor end to end: agents, DCRs, diagnostics, alerts, autoscale, Kubernetes/Prometheus, Application Insights, workspaces, logs/metrics routing, retention, and workbooks. |
-| Integrations & Coding Patterns | L382-L454 | Patterns and code for integrating Azure Monitor: collecting custom/VM/Prometheus metrics and logs, using REST/ingestion APIs, alerts/webhooks/ITSM, Grafana/Power BI/notebooks, and App Insights extensions. |
+| Configuration | L208-L381 | Configuring Azure Monitor data collection, alerts, diagnostics, workspaces, autoscale, Kubernetes/VM monitoring, Application Insights, OpenTelemetry, and related schemas, policies, and pipelines. |
+| Integrations & Coding Patterns | L382-L454 | Integrating Azure Monitor with VMs, Prometheus, alerts, webhooks, ITSM, Grafana, REST APIs, and custom code to ingest, query, export, and correlate metrics and logs. |
 | Deployment | L455-L484 | How to deploy and manage Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments. |
 
 ### Troubleshooting
@@ -115,7 +115,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate log alert rules to ScheduledQueryRules API | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-log-api-switch |
 | Choose appropriate Azure Monitor alert types | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-types |
 | Replace alertsSummary API with Azure Resource Graph queries | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/migrate-from-alerts-summary-api |
-| Migrate from App Insights SDKs to OpenTelemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/app/migrate-to-opentelemetry |
+| Migrate from App Insights SDKs to Azure Monitor OpenTelemetry | https://learn.microsoft.com/en-us/azure/azure-monitor/app/migrate-to-opentelemetry |
 | Optimize Container insights monitoring costs and configuration | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-cost |
 | Transition from Container Monitoring Solution to Container Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-transition-solution |
 | Design cost-effective alerting for AKS in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/cost-effective-alerting |
@@ -177,7 +177,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Enable Azure Monitor Agent network isolation with Private Link | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-private-link |
 | Secure webhook configuration for ITSM integration | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/it-service-management-connector-secure-webhook-connections |
 | Azure configuration for ITSM Secure Webhook | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration |
-| Configure Microsoft Entra authentication for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
+| Enable Microsoft Entra authentication for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication |
 | Understand IP collection and geolocation in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection |
 | Migrate Container Insights to managed identity authentication | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-authentication |
 | Configure secure access to Live Data in Container insights | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup |
@@ -241,15 +241,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure resource health alerts with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-resource-health |
 | Configure service health alerts using ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-service-health |
 | Deploy simple log search alerts via ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-simple-log-search-alerts |
-| Configure Application Insights connection string settings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
-| Configure JMX metrics for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-jmx-metrics-configuration |
+| Configure Application Insights connection strings | https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings |
+| Configure JMX metrics collection for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-jmx-metrics-configuration |
 | Configure Application Insights for Spring Boot apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-spring-boot |
 | Configure Application Insights Java agent options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-config |
-| Configure Java Profiler for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-profiler |
+| Configure Azure Monitor Application Insights Java Profiler | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-profiler |
 | Configure sampling overrides for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-sampling-overrides |
 | Configure telemetry processors for Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-telemetry-processors |
-| Set up Application Insights JavaScript SDK for web apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk |
-| Configure Application Insights JavaScript SDK options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk-configuration |
+| Set up Application Insights JavaScript SDK for web monitoring | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk |
+| Configure Azure Application Insights JavaScript SDK options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk-configuration |
 | Configure AKS monitoring with OpenTelemetry and Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/kubernetes-open-protocol |
 | Configure OpenTelemetry settings for Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration |
 | Enable OpenTelemetry data collection in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
@@ -347,7 +347,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Application Insights Profiler for .NET in Azure | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-settings |
 | Reference Azure Monitor resource log categories and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
 | Reference Azure Monitor metrics by resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
-| Azure Monitor Log Analytics table and field definitions | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-index |
+| Reference field definitions for Azure Monitor log tables | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-index |
 | Configure Snapshot Debugger for .NET exceptions | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger |
 | Enable Snapshot Debugger for .NET on App Service | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-app-service |
 | Enable Snapshot Debugger for .NET on Functions | https://learn.microsoft.com/en-us/azure/azure-monitor/snapshot-debugger/snapshot-debugger-function-app |
@@ -401,8 +401,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure ServiceNow with Azure Monitor Secure Webhook | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-secure-webhook-connections-servicenow |
 | Build Grafana dashboards from Application Insights data in Azure | https://learn.microsoft.com/en-us/azure/azure-monitor/app/grafana-dashboards |
 | Use telemetry processor configuration examples for Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-telemetry-processors-examples |
-| Use Click Analytics feature extension with JS SDK | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-feature-extensions |
-| Use JavaScript framework extensions with Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions |
+| Enable Click Analytics feature extension for App Insights JS | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-feature-extensions |
+| Use framework extensions with Application Insights JavaScript SDK | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions |
 | Customize OpenTelemetry integration with Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify |
 | Integrate Application Insights work items with GitHub and Azure DevOps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration |
 | Integrate KEDA with AKS using Azure Monitor Prometheus metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/integrate-keda |

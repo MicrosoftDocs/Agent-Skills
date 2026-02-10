@@ -3,7 +3,7 @@ name: azure-iot
 description: Expert knowledge for Azure Iot development including configuration, integrations & coding patterns, best practices, decision making, architecture & design patterns, and troubleshooting. Use when building, debugging, or optimizing Azure Iot applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-09"
 ---
 # Azure Iot Skill
 

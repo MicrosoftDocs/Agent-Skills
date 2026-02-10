@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-10'
 category_descriptions:
   deployment: 'Deploying and migrating Azure VMs/scale sets: disk and storage migration,
     proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Azure VMs after creation: disks, images, encryption,
     networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore
     points, and VM Image Builder setups.'
-  decision-making: Guidance for choosing VM sizes, disks, images, regions, and reservations,
-    optimizing cost and performance, and planning migrations from retiring VM series,
-    hosts, and disk options.
+  decision-making: Guidance for choosing VM sizes, disks, regions, licensing and cost
+    options, and planning migrations from retired SKUs, disk types, and images for
+    Azure Virtual Machines.
   security: 'Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host
     encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata
     hardening, and security policies/RBAC.'
@@ -19,9 +19,9 @@ category_descriptions:
   architecture-patterns: Designing low-latency and clustered VM architectures using
     proximity placement groups and shared disks, plus understanding VM reboot causes,
     maintenance events, and their impact on workloads
-  limits-quotas: VM size specs, disk and NVMe limits, quotas (vCPU, API throttling),
-    performance/throughput caps, and constraints for restore points, ephemeral OS
-    disks, and Dedicated Hosts.
+  limits-quotas: VM size specs, disk and GPU performance limits, quotas, bursting,
+    and scalability constraints for Azure VMs, disks, NVMe/ephemeral storage, and
+    Dedicated Hosts.
   integrations: Scripts and patterns for VM connectivity, monitoring, maintenance,
     backup/restore, disk cloning, and managing VMs/scale sets via CLI, PowerShell,
     REST, and Azure integrations.
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 726
 - **Fetched**: 726
 - **Fetch Failed**: 0
-- **Classified**: 570
-- **Unclassified**: 156
+- **Classified**: 568
+- **Unclassified**: 158
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 726
+- **Updated Pages**: 1
+- **Unchanged**: 725
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -52,16 +52,21 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 3 | 0.4% |
 | best-practices | 16 | 2.2% |
-| configuration | 158 | 21.8% |
+| configuration | 157 | 21.6% |
 | decision-making | 49 | 6.7% |
 | deployment | 20 | 2.8% |
 | integrations | 39 | 5.4% |
-| limits-quotas | 198 | 27.3% |
+| limits-quotas | 197 | 27.1% |
 | security | 69 | 9.5% |
 | troubleshooting | 18 | 2.5% |
-| *(Unclassified)* | 156 | 21.5% |
+| *(Unclassified)* | 158 | 21.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Dldsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series)
+  - Updated: 2026-02-03T23:04:00.000Z → 2026-02-09T23:03:00.000Z
 
 ## Classified Pages
 
@@ -70,15 +75,9 @@ category_descriptions:
 | [Error codes](https://learn.microsoft.com/en-us/azure/virtual-machines/error-codes-spot) | troubleshooting | 0.92 | Explicitly documents specific error codes for Spot VMs and scale sets and their meanings, which is classic symptom→cause troubleshooting content unique to this product. |
 | [FAQ on ephemeral OS disks](https://learn.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks-faq) | limits-quotas | 0.92 | FAQ explicitly states max size (2 TiB), non-resizability, and other concrete constraints; this is direct numeric limit and behavior information. |
 | [Compute throttling limits](https://learn.microsoft.com/en-us/azure/virtual-machines/compute-throttling-limits) | limits-quotas | 0.90 | Explicitly documents per-region throttling limits, HTTP 429 behavior, and likely includes numeric request thresholds and policies, which are exact limits/quotas not inferable from general training. |
-| [Ddsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series) | limits-quotas | 0.90 | The Ddsv7-series documentation provides detailed numeric specs (vCPU, RAM, local SSD up to 6x3520 GiB, etc.) for each VM size. These are precise resource limits and quotas for this VM family. |
-| [Dldsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series) | limits-quotas | 0.90 | The Dldsv7-series page specifies exact vCPU, RAM, and local SSD capacities per size. These numeric resource caps are SKU-specific limits, which fits the limits-quotas sub-skill. |
-| [Dlsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series) | limits-quotas | 0.90 | The Dlsv7-series page includes exact maximum vCPU and RAM values and typically a full table of sizes with numeric constraints (disks, bandwidth, etc.). This is expert capacity data that aligns with limits-quotas. |
-| [Dsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series) | limits-quotas | 0.90 | The Dsv7-series page provides exact per-size specifications such as max vCPUs, GiB RAM, and likely tables of size-specific capabilities. These are precise numeric capacity limits unique to this SKU, matching the limits-quotas definition. |
 | [Ebdsv5 and Ebsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/ebdsv5-ebsv5-series) | limits-quotas | 0.90 | States up to 260,000 IOPS, 8,000 MBps, and up to 672 GiB RAM, and the full spec page includes detailed per-size numeric limits, fitting the limits-quotas category. |
 | [Ebdsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ebdsv6-series) | limits-quotas | 0.90 | Like Ebsv6, this series page documents exact maximum IOPS, throughput, vCPU, and RAM values per size, which are concrete service limits and quotas. |
 | [Ebsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ebsv6-series) | limits-quotas | 0.90 | Explicitly states up to 800,000 IOPS, 14,000 MBps, 192 vCPUs, and 1,832 GiB RAM, and the full page will include per-size tables. These are precise numeric capacity limits and quotas. |
-| [Edsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv7-series) | limits-quotas | 0.90 | The Edsv7-series page includes precise per-SKU limits (up to 372 vCPUs, 2,832 GiB RAM, local SSD sizes like 3×7040 GiB, memory caps like 2.8 TiB). These are detailed numeric constraints and quotas for each VM size, fitting the limits-quotas sub-skill. |
-| [Esv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv7-series) | limits-quotas | 0.90 | The Esv7-series page provides exact numeric specs per size (up to 192 vCPUs, 2,832 GiB RAM, disk and network caps). These are concrete resource limits and SKU-specific quotas, matching the limits-quotas criteria with tier-specific numeric values. |
 | [General troubleshooting steps](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/troubleshoot) | troubleshooting | 0.90 | Organized around VM extension failure symptoms with specific error codes/messages, log file locations, and resolution steps unique to Azure Windows VM extensions. |
 | [HBv2 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hbv2-series) | limits-quotas | 0.90 | Provides exact HBv2 VM specs such as 120 cores, 4 GB RAM per core, 350 GB/s memory bandwidth, 4 TFLOPS FP64, and 200 Gb/s InfiniBand—numeric capacity limits per size. |
 | [HBv3 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hbv3-series) | limits-quotas | 0.90 | Lists concrete HBv3 specs such as up to 120 cores, 448 GB RAM, 350–630 GB/s memory bandwidth, and other numeric capabilities that define VM capacity limits. |
@@ -113,6 +112,7 @@ category_descriptions:
 | [Disk encryption troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-troubleshooting) | troubleshooting | 0.86 | Labeled as a troubleshooting guide for ADE. Such pages normally map specific ADE error codes/messages and extension failures to causes and resolutions, which is classic symptom→cause→solution expert knowledge. |
 | [Dldsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv5-series) | limits-quotas | 0.86 | VM size series pages include detailed per-size tables (vCPU, RAM GiB, max temp/local disk GiB, max data disks, NICs, IOPS, bandwidth), which are exact numeric capacity limits unique to this SKU. |
 | [Dldsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv6-series) | limits-quotas | 0.86 | Azure VM size-series pages include detailed tables of per-size vCPU counts, RAM GiB, max data disks, max NICs, and local/temporary storage GiB. These are precise numeric capacity limits unique to this series, fitting limits-quotas. |
+| [Dldsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series) | limits-quotas | 0.86 | The page provides precise hardware specifications for the Dldsv7 VM series, including exact CPU model, clock speeds (all-core turbo and max turbo), and maximum vCPU and RAM values. These are concrete numeric limits/capacities for this specific VM family that function as product limits/quotas and are unlikely to be reliably known from general training data. |
 | [Dndsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dndsv6-series) | limits-quotas | 0.86 | Dndsv6 series page lists precise per-size resource values (vCPU, memory, local/remote storage, network), effectively defining numeric limits for each VM size tier. |
 | [Dnldsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnldsv6-series) | limits-quotas | 0.86 | Dnldsv6 series page defines exact maximums (for example up to 4x1760 GiB local SSD, vCPU/RAM per size), which are SKU-specific numeric limits and quotas. |
 | [Dnlsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnlsv6-series) | limits-quotas | 0.86 | Dnlsv6 documentation contains tables of exact vCPU, RAM, disk, and networking values per size, which are concrete numeric limits specific to this VM family. |
@@ -135,12 +135,14 @@ category_descriptions:
 | [Easv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv7-series) | limits-quotas | 0.86 | Size-series reference page with exact hardware specs (max vCPU, RAM, processor generation, clock speeds, and disk characteristics). These numeric capabilities and per-series constraints function as concrete capacity limits that are not reliably known from training data. |
 | [Eav4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/eav4-series) | limits-quotas | 0.86 | VM size spec pages list exact per-size values (vCPU counts, RAM GiB, max data disks, max IOPS/throughput, NIC limits). These are concrete numeric limits and capacity constraints that function as quotas for this series. |
 | [Edsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series) | limits-quotas | 0.86 | Includes specific maximum vCPU, RAM, and local SSD capacities (for example, up to 6×1760 GiB) tied to this VM series. These are exact quantitative constraints per SKU. |
+| [Edsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv7-series) | limits-quotas | 0.86 | Similar to other Azure VM size-series pages, this contains detailed numeric specifications per VM size (vCPUs, RAM in GiB, processor model and turbo frequencies, and likely storage/network caps). These are precise SKU limits and capacity figures that qualify as expert knowledge and align with the limits-quotas sub-skill. |
 | [Epdsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv5-series) | limits-quotas | 0.86 | Includes precise numeric specs (up to 32 vCPU, 208 GiB RAM, local SSD up to 1,200 GiB) and disk-type support, which are product-specific capacity limits. |
 | [Epdsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv6-series) | limits-quotas | 0.86 | Similar to other Azure VM size pages, this series page contains detailed numeric specs per size (vCPUs, memory, disk, IOPS, throughput, max NICs), which are exact capacity limits and quotas specific to the Epdsv6 series, matching limits-quotas. |
 | [Epsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv5-series) | limits-quotas | 0.86 | Lists exact maximum vCPU and RAM, processor frequency, and supported disk types for Epsv5, representing concrete numeric limits and capabilities. |
 | [Epsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv6-series) | limits-quotas | 0.86 | VM size-series pages list exact, product-specific specifications (vCPU counts, GiB RAM per size, max data disks, NICs, IOPS, throughput, temp disk sizes). These are concrete numerical limits and capacity values unique to this series, fitting limits-quotas. |
 | [Esv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv4-series) | limits-quotas | 0.86 | Esv4 series documentation contains numeric spec tables defining maximum vCPUs, memory, data disks, and storage/network throughput, representing hard limits for each VM size. |
 | [Esv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv6-series) | limits-quotas | 0.86 | Details exact vCPU and RAM maxima, processor model, and performance characteristics for Esv6 VMs. This is expert, numeric sizing data acting as concrete limits per size. |
+| [Esv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv7-series) | limits-quotas | 0.86 | VM size-series reference pages list exact, product-specific numeric specifications (vCPU counts, GiB RAM, processor model and clock speeds, likely disk and network caps) that function as hard capacity limits for each SKU. These concrete numbers and per-size tables are expert knowledge not reliably known from training, fitting the limits-quotas category. |
 | [Ev3 and Esv3 series](https://learn.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series) | limits-quotas | 0.86 | Ev3/Esv3 series page provides per-size numeric specs (vCPUs, RAM, max disks, IOPS/throughput, temp disk sizes), which are concrete service limits. |
 | [Ev4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ev4-series) | limits-quotas | 0.86 | Ev4 series page provides per-size numeric specifications (cores, RAM, max IOPS/MBps, disk counts), which are concrete service limits and quotas for these VMs. |
 | [Fadsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fadsv7-series) | limits-quotas | 0.86 | Provides per-size numeric specs (vCPUs, RAM, local disk, max data disks, throughput). These are precise resource limits for this series, matching limits-quotas. |
@@ -238,7 +240,10 @@ category_descriptions:
 | [DCesv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcesv6-series) | limits-quotas | 0.80 | DCesv6 series page provides exact numeric specifications per VM size (vCPU, memory, storage, network), which are SKU-specific limits for Intel TDX-based confidential VMs. |
 | [DCsv3 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcsv3-series) | limits-quotas | 0.80 | DCsv3 series page includes detailed numeric tables for each size (vCPU, memory, storage, network), defining exact capacity limits for Intel SGX-based confidential VMs. |
 | [DSC and Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows) | configuration | 0.80 | Contains concrete extension schema (settings/protectedSettings), example JSON/PowerShell, and parameter names for passing DSC configuration to Azure VMs. |
+| [Ddsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series) | limits-quotas | 0.80 | States explicit maximums (up to 372 vCPUs and 1,488 GiB RAM) and, as a size-series reference page, will include detailed numeric specifications per VM size. These are concrete resource limits, aligning with limits-quotas. |
 | [Disk performance tiers](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-change-performance) | limits-quotas | 0.80 | Performance tiers are defined by concrete IOPS and throughput values per disk size; this article describes how tiers map to provisioned size, which is numeric limit information. |
+| [Dlsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series) | limits-quotas | 0.80 | Describes Dlsv7-series with explicit maximums (e.g., up to 248 vCPUs and 496 GiB RAM) and, by pattern for size-series pages, likely includes a full table of per-size numeric specs. This is expert numeric capacity data, matching limits-quotas. |
+| [Dsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series) | limits-quotas | 0.80 | VM size series pages typically include detailed tables of vCPUs, RAM, disk throughput, and other numeric specifications per size. These are exact numeric capacity limits unique to this series, fitting limits-quotas. |
 | [ECesv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/ecesv5-ecedsv5-series) | limits-quotas | 0.80 | Even in preview, ECesv6 spec pages enumerate exact vCPU, memory, disk, and throughput limits per size, which are expert numeric quotas and constraints. |
 | [Ev5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ev5-series) | limits-quotas | 0.80 | Summarizes processor models, clock speeds, and maximum vCPU/RAM for this series. These numeric specs act as hard limits for Ev5 sizes. |
 | [How to enable automatic image creation](https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-triggers-how-to) | limits-quotas | 0.80 | Explicitly states a numeric quota: 100 triggers per region per subscription, which is a concrete service limit not derivable from general knowledge. |
@@ -334,7 +339,6 @@ category_descriptions:
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/image-builder-vnet) | configuration | 0.75 | Similar to the Linux vNet article but for Windows; contains Azure-specific networking configuration for VM Image Builder builds without public connectivity. |
 | [Reset Latched Key](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/other-examples/key-reset) | troubleshooting | 0.75 | Explains scenarios where key mismatches prevent access to WireServer/IMDS and how resetting the latched key restores health. This is a symptom → cause → resolution flow specific to MSP behavior. |
 | [Server-side encryption overview](https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption) | security | 0.75 | Details SSE behavior for managed disks and interaction with encryption at host; full article typically includes key management options, scope, and security-specific configuration details. |
-| [Ubuntu](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-ubuntu) | configuration | 0.75 | Ubuntu VHD guidance references known working Azure images and customization; this implies specific configuration steps and parameters unique to Azure. |
 | [Use CLI to find images](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage) | integrations | 0.75 | Shows how to use Azure CLI commands and parameters to discover image URNs and purchase plan details. Contains specific command syntax, parameter names, and usage patterns for integrating programmatic VM creation with Marketplace images. |
 | [Use PowerShell to find images](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage) | integrations | 0.75 | Similar to index 18 but for PowerShell. Provides concrete cmdlets, parameter names, and patterns to integrate VM creation with Marketplace purchase plan information, which is product-specific integration knowledge. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-windows) | configuration | 0.75 | AMD GPU extension overview for NVv4/N-series typically includes extension schema and required settings for deployment, which are detailed configuration options. |
@@ -344,6 +348,7 @@ category_descriptions:
 | [Design for high performance](https://learn.microsoft.com/en-us/azure/virtual-machines/premium-storage-performance) | best-practices | 0.74 | Guidelines for high-performance design on premium storage, with SQL Server examples. Such content typically includes concrete recommendations (e.g., number/size of disks, striping, caching settings) that are product-specific performance best practices. |
 | [Managed Run Commands for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed) | configuration | 0.74 | Describes the updated managed Run Command feature with Azure-specific behavior, API/CLI parameters, and management capabilities distinct from generic scripting. |
 | [Disk encryption scenarios for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-linux) | security | 0.72 | Scenario-based instructions for ADE on Linux VMs, including specific configuration flows and options for different encryption scenarios. |
+| [General-purpose sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide) | decision-making | 0.72 | A retirement-focused migration guide for specific VM size series typically includes SKU-by-SKU or series-by-series mapping, comparison tables, and guidance on which newer VM series to select based on workload, cost, and performance. That constitutes product-specific decision criteria and migration recommendations rather than just conceptual guidance. |
 | [Key vault for Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-key-vault-aad) | security | 0.72 | Key-vault-focused configuration article for ADE with Entra ID. Likely includes specific Key Vault access policy settings, required permissions, and ADE-related configuration flags that are product-specific security settings rather than generic concepts. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/hybrid-use-benefit-licensing) | decision-making | 0.72 | Covers how to use on-premises Windows Server licenses in Azure; usually includes specific eligibility criteria and usage scenarios, guiding decisions on when/how to apply Hybrid Benefit for cost optimization. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template) | configuration | 0.70 | Shows an ARM template JSON defining VM infrastructure and configuration. Contains concrete parameter names and structures specific to Azure, which are configuration-focused expert knowledge. |
@@ -414,7 +419,6 @@ category_descriptions:
 | [FPGA Attestation Service](https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation) | configuration | 0.70 | Explains how to submit netlists and obtain validated bitstreams for NP-series FPGAs, involving product-specific attestation workflow and file requirements. |
 | [Flatcar Container Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd) | configuration | 0.70 | Flatcar images for Azure involve specific image channels and Azure-optimized settings; article likely includes concrete configuration and image-handling steps. |
 | [GPU compute migration guide](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/n-series-migration) | decision-making | 0.70 | Migration guide for NC/NCv2/ND includes concrete guidance on choosing newer GPU SKUs and planning migration based on workload performance and retirement. |
-| [General-purpose sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide) | decision-making | 0.70 | A migration guide for retiring VM size series typically includes SKU comparison tables, recommended target sizes, and cost/performance trade-offs to aid migration planning—this is product-specific decision guidance beyond generic VM concepts. |
 | [Generation 1 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1) | security | 0.70 | Describes the supported path and required configuration to move from Gen1 to Gen2 with Trusted Launch, including Azure-specific security type changes and constraints. This is detailed product security configuration, not generic OS upgrade content. |
 | [Generation 2 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm) | security | 0.70 | Covers how to change an existing VM’s security type to Trusted Launch, including specific Azure settings and constraints for Gen2 VMs. These are concrete, product-specific security configuration steps and edge cases. |
 | [Get usage metrics with REST](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest) | integrations | 0.70 | Shows concrete REST API usage for VM metrics; such pages typically include endpoint paths, query parameters, and required values unique to Azure Monitor’s metrics API. |
@@ -422,7 +426,6 @@ category_descriptions:
 | [How to verify encryption status](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-verify-encryption-status) | security | 0.70 | Shows platform and OS-level commands and checks to verify ADE status, including product-specific diagnostic patterns for encryption. |
 | [IaaS antimalware for Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows) | configuration | 0.70 | Antimalware extension docs typically include JSON schema, configuration options (exclusions, scan types, schedules), and default values unique to this extension. |
 | [Install VM watch](https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch) | configuration | 0.70 | Described as containing code that details steps to install the Application Health VM extension and enable VM Watch via ARM templates, PowerShell, and CLI. This implies product-specific parameters and configuration values beyond generic deployment instructions. |
-| [Instant access snapshots](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-instant-access-snapshots) | limits-quotas | 0.70 | Instant access snapshots behavior depends on disk type and typically includes constraints such as supported disk sizes, performance characteristics, and timing, which are numeric limits. |
 | [Isolated image builds](https://learn.microsoft.com/en-us/azure/virtual-machines/security-isolated-image-builds-image-builder) | security | 0.70 | Describes how to achieve compute and network isolation using dedicated ACI resources; likely includes security-related configuration options and network settings specific to VM Image Builder. |
 | [Issues with Python 3-enabled Linux systems](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/issues-using-vm-extensions-python-3) | best-practices | 0.70 | Describes product-specific issues and workarounds when using Azure VM extensions that depend on Python 2.x on Python 3-enabled systems, including concrete recommendations and gotchas for specific extensions like Azure Disk Encryption and Azure Monitor. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/azure-disk-enc-linux) | security | 0.70 | Disk encryption extension docs usually contain encryption settings, Key Vault integration parameters, and security-specific configuration unique to Azure Disk Encryption. |
@@ -662,7 +665,6 @@ category_descriptions:
 | [Benchmark a disk](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-benchmarks) | 0.40 | Benchmarking article appears conceptual/process-oriented (how to benchmark, not specific numeric limits, configs, or error codes); no clear evidence of detailed config tables or limits. |
 | [Boot diagnostics](https://learn.microsoft.com/en-us/azure/virtual-machines/boot-diagnostics) | 0.40 | Boot diagnostics article is described as an overview of the feature; no indication of detailed configuration tables, limits, or error mappings. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks) | 0.40 | Step-by-step migration tutorial using Azure CLI; no configuration tables, limits, error-code mappings, or product-specific best-practice gotchas beyond generic VM/disk operations. |
-| [Change the size of a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm) | 0.40 | How-to guide for resizing VMs; mostly procedural steps. No detailed limits tables, config parameter matrices, or error-code-based troubleshooting. |
 | [Create a gallery](https://learn.microsoft.com/en-us/azure/virtual-machines/create-gallery) | 0.40 | Create gallery article is a how-to tutorial for creating a gallery; it focuses on steps rather than enumerating configuration parameter tables or numeric constraints. |
 | [Disk encryption FAQ](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-faq) | 0.40 | FAQ pages often mix conceptual and minor specifics; summary does not indicate detailed error codes, config tables, or limits. Likely high-level Q&A about ADE behavior and support rather than deep expert-only data. |
 | [Generalized](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-generalized-image-version) | 0.40 | How-to guide for creating a VM from a generalized image version. Mostly procedural without detailed config tables, limits, or error-code-based troubleshooting. |
@@ -719,6 +721,7 @@ category_descriptions:
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-cli-complete) | 0.30 | End-to-end tutorial creating a Linux VM and related resources via CLI; mostly standard commands and defaults without detailed config parameter tables or product-specific limits. |
 | [Capture a VM in the portal](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal) | 0.30 | Step-by-step portal tutorial for capturing a VM image. Does not typically include configuration parameter tables, limits, or troubleshooting mappings; mostly generic how-to instructions. |
 | [Capture a legacy managed image](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-resource) | 0.30 | Page appears to be a procedural how-to for creating a legacy managed image of a VM/VHD. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It is primarily a step-by-step legacy feature usage guide rather than expert reference content as defined by the sub-skill types. |
+| [Change the size of a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm) | 0.30 | Primarily a how-to guide for resizing VMs; summary does not indicate detailed numeric limits, configuration tables, or tier-specific constraints beyond generic behavior (may need deallocation). Lacks the specific numeric or configuration-focused content required for any sub-skill type. |
 | [Create / manage a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-vm) | 0.30 | Basic tutorial on creating and managing Windows VMs with PowerShell; focuses on deployment steps, not on expert-level limits, configuration matrices, or troubleshooting mappings. |
 | [Create / manage disks](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-data-disk) | 0.30 | Tutorial on creating and managing Azure disks; appears to be a procedural guide without detailed quota tables, configuration parameter ranges, or error-code-based troubleshooting. |
 | [Create VM images](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-custom-images) | 0.30 | Tutorial for creating custom VM images with PowerShell; mainly a how-to sequence, not a configuration reference, decision matrix, or best-practices guide with quantified impact. |
@@ -759,6 +762,7 @@ category_descriptions:
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-portal) | 0.30 | Primarily a portal navigation/how-to article for viewing maintenance notifications; lacks detailed configuration parameters, limits, or error mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-portal) | 0.30 | Portal how-to for Maintenance control; summary does not indicate detailed parameter tables, limits, or error mappings. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/create-powershell-availability-zone) | 0.30 | Step-by-step PowerShell tutorial for creating a zoned VM; does not expose detailed limits, configuration matrices, or error-resolution mappings. |
+| [Ubuntu](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-ubuntu) | 0.30 | Primarily a how-to guide for creating and uploading an Ubuntu VHD using Azure-ready cloud images; it does not emphasize numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. The content is more procedural than reference-style expert knowledge as defined by the sub-skill types. |
 | [Understand Disk Storage billing](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-understand-billing) | 0.30 | The billing article is described at a conceptual level (explaining factors that affect billing and that snapshots appear on the bill) and defers to the separate pricing page for detailed numbers. Without explicit tiered price tables, numeric thresholds, or configuration parameters, it doesn't meet the bar for any expert-knowledge sub-skill type. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer) | 0.30 | Windows Packer tutorial; similar to index 12, focuses on step-by-step usage rather than enumerating product-specific configuration or troubleshooting mappings. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/image-builder-gallery) | 0.30 | Windows variant of gallery how-to; focuses on using a sample template and PowerShell, not on enumerating configuration parameters or limits. |
@@ -798,3 +802,4 @@ category_descriptions:
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal) | 0.10 | Portal quickstart for creating a Windows VM; basic tutorial content, not focused on expert-level configuration or decision criteria. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell) | 0.10 | PowerShell quickstart for creating a Linux VM; standard tutorial content without product-specific limits, decision matrices, or advanced configuration references. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell) | 0.10 | PowerShell quickstart for Windows VM creation; primarily procedural with no detailed configuration tables, limits, or troubleshooting mappings. |
+| [Instant access snapshots](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-instant-access-snapshots) | - | Summary only indicates conceptual explanation of instant access snapshots and default behaviors by disk type; no explicit numeric limits, configuration tables, error codes, or decision matrices are evident from the provided text. |
