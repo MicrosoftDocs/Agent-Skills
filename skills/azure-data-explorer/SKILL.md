@@ -1,17 +1,18 @@
 ---
 name: azure-data-explorer
-description: Expert knowledge for Azure Data Explorer development including security, integrations & coding patterns, limits & quotas, deployment, best practices, architecture & design patterns, configuration, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Data Explorer applications.
+description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Explorer applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Data Explorer Skill
 
-This skill provides expert guidance for Azure Data Explorer development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Data Explorer. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Azure Data Explorer issues: ingestion error codes, private endpoint connectivity, cluster connection/creation failures, and database/table create/delete problems. |
-| Best Practices | L42-L54 | Guidance on ADX performance and health: monitoring, concurrency, schema and ingestion tuning, handling bad/duplicate/personal data, cold data querying, and Power BI optimization. |
-| Decision Making | L55-L69 | Guidance on choosing and sizing ADX clusters (SKUs, isolated/confidential compute, horizontal/vertical scaling) plus cost planning, reservations, and migrating from Elasticsearch. |
-| Architecture & Design Patterns | L70-L77 | Designing ADX architectures for disaster recovery, business continuity, cross-cluster querying with follower DBs, and multi-tenant deployment patterns and trade-offs |
-| Limits & Quotas | L78-L86 | Cluster usage limits for free/paid ADX, automatic stop behavior, Event Grid ingestion quotas, and safe deletion/recovery or upgrade paths to remove free-cluster restrictions. |
-| Security | L87-L117 | Securing ADX clusters and data: encryption, keys, identities/RBAC, cross-tenant access, network/private endpoints, Conditional Access, Azure Policy, and secure connections/ingestion. |
-| Configuration | L118-L134 | Configuring Azure Data Explorer clusters and databases: schema cloning/sync, ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring, and web UI settings/profile. |
-| Integrations & Coding Patterns | L135-L191 | Integrating Azure Data Explorer with tools/services (Power BI, ADF, Kafka, Splunk, IoT, logging frameworks), configuring connectors/SDKs, and programmatically managing/ingesting/querying data. |
-| Deployment | L192-L198 | Provisioning and automating ADX environments, deploying Kusto schema via DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
+| Troubleshooting | L34-L42 | Diagnosing and fixing Azure Data Explorer issues: ingestion error codes, private endpoint connectivity, cluster connection/creation failures, and database/table create/delete problems. |
+| Best Practices | L43-L55 | Guidance on ADX performance and health: monitoring, concurrency, schema and ingestion tuning, handling bad/duplicate/personal data, cold data querying, and Power BI optimization. |
+| Decision Making | L56-L70 | Guidance on choosing and sizing ADX SKUs, scaling clusters, estimating and optimizing costs, using reservations, and planning/migrating ingestion (streaming, queued, Logstash, confidential/isolated compute). |
+| Architecture & Design Patterns | L71-L78 | Designing ADX architectures for disaster recovery, business continuity, cross-cluster querying with follower DBs, and multi-tenant deployment patterns and trade-offs |
+| Limits & Quotas | L79-L87 | Cluster usage limits for free/paid ADX, automatic stop behavior, Event Grid ingestion quotas, and safe deletion/recovery or upgrade paths to remove free-cluster restrictions. |
+| Security | L88-L118 | Securing ADX clusters and data: encryption, keys, identities/RBAC, cross-tenant access, network/private endpoints, Conditional Access, Azure Policy, and secure connections/ingestion. |
+| Configuration | L119-L135 | Configuring Azure Data Explorer clusters and databases: schema cloning/sync, ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring, and web UI settings/profile. |
+| Integrations & Coding Patterns | L136-L192 | Integrating Azure Data Explorer with tools/services (Power BI, ADF, Kafka, Splunk, IoT, logging frameworks), configuring connectors/SDKs, and programmatically managing/ingesting/querying data. |
+| Deployment | L193-L199 | Provisioning and automating ADX environments, deploying Kusto schema via DevOps, and migrating clusters to availability zones or from VNet injection to private endpoints. |
 
 ### Troubleshooting
 | Topic | URL |

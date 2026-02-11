@@ -1,17 +1,18 @@
 ---
 name: azure-guidance
-description: Expert knowledge for Azure Guidance development including decision making, best practices, security, architecture & design patterns, troubleshooting, deployment, and configuration. Use when building, debugging, or optimizing Azure Guidance applications.
+description: Expert knowledge for Azure Guidance development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Guidance applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Guidance Skill
 
-This skill provides expert guidance for Azure Guidance development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Guidance. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,10 +21,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L44 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
-| Best Practices | L45-L75 | Best practices for designing, operating, and hardening Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup, resilience, and performance. |
-| Decision Making | L76-L138 | Guidance to choose the right Azure services, data/AI platforms, and equivalents to AWS/GCP offerings, including AKS, storage, networking, DR, and compute options for specific workloads. |
-| Architecture & Design Patterns | L139-L275 | End-to-end Azure solution architectures and patterns for mission-critical, hybrid, data/analytics, IoT, microservices, mainframe migration, SAP, and enterprise workloads, including HA/DR and networking. |
+| Troubleshooting | L32-L45 | Diagnosing and fixing AKS cluster, node, pod, networking, registry, and admission issues, plus cross-region data platform failures and hybrid VPN gateway connectivity problems. |
+| Best Practices | L46-L76 | Best practices for designing, operating, and hardening Azure workloads (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup, resilience, and performance. |
+| Decision Making | L77-L139 | Guidance to choose the right Azure services, architectures, and equivalents (AWS/GCP/AKS/Fabric) for workloads, including compute, data, AI, networking, storage, DR, and hybrid/migration options. |
+| Architecture & Design Patterns | L140-L275 | End-to-end Azure solution architectures and patterns for mission-critical, hybrid, data/analytics, IoT, microservices, mainframe migration, SAP, and enterprise workloads, including HA/DR and networking. |
 | Security | L276-L304 | Securing Azure and hybrid workloads: AKS, VMs, SAP, Outlook, identity/IDaaS, Zero Trust, firewalls, WAF, private endpoints, Defender XDR, Sentinel, and Microsoft Entra vs AWS options. |
 | Configuration | L305-L310 | Configuring GitOps for AKS using Flux/Argo CD and setting up Azure Functions monitoring pipelines using Event Hubs for logs and metrics. |
 | Deployment | L311-L322 | Designing and automating Azure deployments: CI/CD for AKS and microservices, APIOps, Terraform/Bicep scripts, landing zone options, and mission‑critical workload rollout and testing. |
@@ -123,7 +124,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose the right Azure load balancing service | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview |
 | Select Azure asynchronous messaging services by use case | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging |
 | Assess readiness to adopt microservices on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/microservices-assessment |
-| Choose Java application hosting options on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison |
+| Choose the right Azure hosting option for Java apps | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison |
 | Decide which Azure storage service to use | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/storage-options |
 | Use Azure technology comparison resources effectively | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/technology-choices-overview |
 | Choose an Azure vector search service | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search |
@@ -230,7 +231,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply data management patterns in microservices | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/data-considerations |
 | Select and design API gateways for microservices | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/gateway |
 | Select interservice communication patterns for microservices | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/interservice-communication |
-| Use container orchestration for microservices at scale | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration |
 | Implement microservice design patterns on Azure | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/patterns |
 | Use domain analysis to define microservice boundaries | https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis |
 | Determine appropriate microservice size and boundaries | https://learn.microsoft.com/en-us/azure/architecture/microservices/model/microservice-boundaries |

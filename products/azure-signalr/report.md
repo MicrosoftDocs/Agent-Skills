@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-11'
 category_descriptions:
   decision-making: Guidance on choosing SignalR deployment mode and zone redundancy,
     estimating performance/capacity, and understanding message/connection-based pricing
@@ -21,8 +21,8 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing SignalR connection/delivery issues using
     logs, Azure Monitor, and live trace, plus FAQs and guided exercises for common
     service errors and reliability problems.
-  deployment: 'Guides for deploying SignalR: replicating resources across regions
-    with ARM templates and scaling instances using Azure portal or CLI.'
+  deployment: 'Guides for deploying Azure SignalR: replicating resources across regions
+    with ARM templates and scaling instances safely without disrupting clients.'
 ---
 # Azure Signalr Crawl Report
 
@@ -36,8 +36,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 73
+- **Updated Pages**: 1
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr/azure-signalr.csv`
 
@@ -56,6 +56,11 @@ category_descriptions:
 | *(Unclassified)* | 17 | 23.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Single instance](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-signalr)
+  - Updated: 2023-12-15T05:33:00.000Z → 2026-02-11T12:11:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +115,7 @@ category_descriptions:
 | [Multiple instances](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-multi-instances) | architecture-patterns | 0.65 | Describes using multiple SignalR Service instances and endpoints for sharding and cross-region messaging, a product-specific scaling and architecture pattern. |
 | [REST API](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-quickstart-rest-api) | integrations | 0.65 | REST API quickstart and specification details imply endpoint- and parameter-level information unique to SignalR Service, including how to structure REST calls for broadcasting to all clients, specific clients, or groups. |
 | [Resiliency and disaster recovery](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-concept-disaster-recovery) | architecture-patterns | 0.65 | Provides Azure SignalR-specific DR approaches using multiple instances and regions; this is a product-specific architecture pattern for resiliency rather than generic DR theory. |
-| [Single instance](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-signalr) | deployment | 0.65 | Explains scaling behavior and constraints (scale up/out, timing, tier change caveats) for Azure SignalR instances, which are product-specific deployment and capacity details. |
+| [Single instance](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-howto-scale-signalr) | deployment | 0.65 | Page gives product-specific scaling behavior and constraints (scale up vs scale out, application of scale settings taking a few minutes and in rare cases up to ~30 minutes, and guidance around scaling between different tiers). These are deployment/operations characteristics unique to Azure SignalR that affect how and when to scale in production, which an LLM wouldn't reliably know from training. It is not just a generic how-to; it includes service-specific operational timing and constraints, fitting the deployment category best. |
 | [Availability zones](https://learn.microsoft.com/en-us/azure/azure-signalr/availability-zones) | decision-making | 0.60 | Explains availability zone and zone redundancy support, tied to Premium vs Standard tiers, guiding when to choose zone-redundant (Premium) deployments for high availability. |
 | [Build a serverless real-time app with authentication](https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions) | security | 0.60 | Tutorial specifically about authentication for SignalR clients with Azure Functions bindings; likely includes binding configuration, auth settings, and role/permission details specific to this integration. |
 | [Create SignalR Service and Web App](https://learn.microsoft.com/en-us/azure/azure-signalr/scripts/signalr-cli-create-with-app-service) | configuration | 0.60 | CLI script configures a Web App with a specific app setting (AzureSignalRConnectionString) to connect to SignalR Service, representing product-specific configuration parameters and their usage. |

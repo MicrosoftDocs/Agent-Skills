@@ -1,17 +1,18 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including decision making, deployment, configuration, security, troubleshooting, limits & quotas, architecture & design patterns, integrations & coding patterns, and best practices. Use when building, debugging, or optimizing Azure Site Recovery applications.
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Site Recovery applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-11"
 ---
 # Azure Site Recovery Skill
 
-This skill provides expert guidance for Azure Site Recovery development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Site Recovery. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -21,14 +22,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L55 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, servers, and specific error codes. |
-| Best Practices | L56-L61 | Guidance on preparing VMware/physical machines for reprotection and failback, and scaling Azure Site Recovery for large on-premises VMware/physical deployments. |
-| Decision Making | L62-L80 | Guidance for planning and sizing Azure Site Recovery: capacity, costs, VM sizing, DR design (Hyper-V, VMware, Azure VMs, Citrix), encryption changes, and when to use ASR vs Azure Migrate. |
-| Architecture & Design Patterns | L81-L94 | Designing DR architectures with ASR: network/ExpressRoute, Traffic Manager, AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL Server, VMware models, and on-prem file server protection. |
+| Best Practices | L56-L62 | Best practices for protecting S2D-based Azure VMs, preparing VMware VMs for reprotection/failback, and scaling ASR for large VMware/physical server deployments |
+| Decision Making | L63-L80 | Guidance for planning and sizing Azure Site Recovery: capacity, costs, VM sizing, DR design (Hyper-V, VMware, Azure VMs, Citrix), encryption changes, and when to use ASR vs Azure Migrate. |
+| Architecture & Design Patterns | L81-L94 | Design patterns and reference architectures for using Azure Site Recovery with AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL Server, file servers, ExpressRoute, and Traffic Manager. |
 | Limits & Quotas | L95-L106 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, shared disks, Hyper-V/VMware/physical DR matrices, interoperability, and Deployment Planner limits. |
-| Security | L107-L118 | Security and access for Site Recovery: disk encryption (ADE/CMK), trusted launch, NSGs, Private Link, TLS, RBAC, and migrating runbooks to managed identities. |
-| Configuration | L119-L183 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and disk/IP settings for DR and failback. |
-| Integrations & Coding Patterns | L184-L189 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
-| Deployment | L190-L193 | Deploying Azure Site Recovery using Azure Resource Manager (ARM) templates, including parameterization, automation, and sample templates for protection and recovery setup. |
+| Security | L107-L119 | Security and access for Site Recovery: disk and CMK encryption, trusted launch, NSGs, TLS, Private Link, RBAC, and migrating runbooks to managed identity. |
+| Configuration | L120-L181 | Configuring Azure Site Recovery: setup for VMware/Hyper-V/physical/Azure VMs, networking, policies, appliances/agents, disk rules, monitoring, and failover/failback behavior. |
+| Integrations & Coding Patterns | L182-L186 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,6 +56,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Protect S2D-based Azure VMs with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-s2d-vms |
 | Prepare VMware VMs for reprotection and failback with ASR | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-prepare-failback |
 | Scale Azure Site Recovery for large VMware/physical deployments | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-large-deployment |
 
@@ -65,7 +66,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose alternative VM sizes for Site Recovery failover | https://learn.microsoft.com/en-us/azure/site-recovery/alternative-vm-size-failover-flow |
 | Plan and enable zone-to-zone DR for Azure VMs | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery |
 | Use Azure Site Recovery deployment planner for sizing and cost | https://learn.microsoft.com/en-us/azure/site-recovery/deployment-planner-cost-estimation |
-| Plan for Azure Site Recovery data encryption feature deprecation | https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation |
 | Interpret Hyper-V Deployment Planner capacity reports | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-analyze-report |
 | Use Hyper-V DR cost estimation from Deployment Planner | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-cost-estimation |
 | Use Deployment Planner for Hyper-V to Azure Site Recovery capacity planning | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-deployment-planner-overview |
@@ -81,7 +81,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Design ExpressRoute connectivity for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-expressroute-with-site-recovery |
+| Use ExpressRoute with Azure Site Recovery for DR | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-expressroute-with-site-recovery |
 | Use Traffic Manager with Site Recovery failover | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-traffic-manager-with-site-recovery |
 | Protect on-premises file servers using Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/file-server-disaster-recovery |
 | Understand classic vs modernized VMware DR architecture in ASR | https://learn.microsoft.com/en-us/azure/site-recovery/move-from-classic-to-modernized-vmware-disaster-recovery |
@@ -111,6 +111,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Replicate CMK-encrypted Azure VM disks with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-cmk-disks |
 | Configure NSGs for Azure Site Recovery scenarios | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-network-security-group-with-site-recovery |
 | Use trusted launch VMs with Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-trusted-vm |
+| Remediate deprecated Azure Site Recovery encryption | https://learn.microsoft.com/en-us/azure/site-recovery/encryption-feature-deprecation |
 | Migrate Azure Site Recovery runbooks to managed identity | https://learn.microsoft.com/en-us/azure/site-recovery/how-to-migrate-run-as-accounts-managed-identity |
 | Enable Site Recovery replication using Azure Private Link endpoints | https://learn.microsoft.com/en-us/azure/site-recovery/hybrid-how-to-enable-replication-private-endpoints |
 | Apply Azure RBAC roles for Site Recovery access control | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-role-based-linked-access-control |
@@ -120,8 +121,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Fail back Azure VMware Solution VMs from Azure | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-failback |
-| Prepare Azure VMware Solution environment for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-avs |
-| Prepare Azure resources for Azure VMware Solution DR | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-azure |
 | Enable replication for Azure VMware Solution VMs with ASR | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-replication |
 | Reprotect Azure VMs back to Azure VMware Solution | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-reprotect |
 | Customize failover VM networking for Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-customize-networking |
@@ -129,18 +128,17 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Exclude Azure VM disks from Site Recovery replication using PowerShell | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-exclude-disks |
 | Enable Azure Site Recovery protection using Azure Policy | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-policy |
 | Configure Site Recovery replication over private endpoints | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-private-endpoints |
-| Enable Site Recovery for Storage Spaces Direct guest clusters | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-replication-s2d-vms |
-| Configure Azure Site Recovery virtual network mapping between regions | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-network-mapping |
+| Configure Azure-to-Azure network mapping for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-network-mapping |
 | Prepare migrated Azure VMs for Site Recovery disaster recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-replicate-after-migration |
 | Configure accelerated networking for Site Recovery VMs | https://learn.microsoft.com/en-us/azure/site-recovery/azure-vm-disaster-recovery-with-accelerated-networking |
 | Configure ExpressRoute integration for Azure VM DR | https://learn.microsoft.com/en-us/azure/site-recovery/azure-vm-disaster-recovery-with-expressroute |
-| Configure multiple IP address failover in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-multiple-ip-address-failover |
 | Configure connectivity to Azure VMs after failover | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-on-premises-to-azure-networking |
 | Assign public IPs after Site Recovery failover | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-public-ip-address-with-site-recovery |
 | Set Mobility Service proxy settings for Azure-to-Azure DR | https://learn.microsoft.com/en-us/azure/site-recovery/configure-mobility-service-proxy-settings |
 | Deploy Azure Site Recovery replication appliance for VMware | https://learn.microsoft.com/en-us/azure/site-recovery/deploy-vmware-azure-replication-appliance-modernized |
 | Configure DR for Extended Zone VMs during VM creation | https://learn.microsoft.com/en-us/azure/site-recovery/disaster-recovery-for-edge-zone-via-vm-flow-tutorial |
 | Configure DR for VMs on Azure Extended Zones using vault flow | https://learn.microsoft.com/en-us/azure/site-recovery/disaster-recovery-for-edge-zone-vm-tutorial |
+| Configure disk exclusion rules in Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/exclude-disks-replication |
 | Migrate VMware disaster recovery from classic to modernized ASR | https://learn.microsoft.com/en-us/azure/site-recovery/how-to-move-from-classic-to-modernized-vmware-disaster-recovery |
 | Prepare on-premises disks via hydration for ASR | https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process |
 | Configure Hyper-V disaster recovery without VMM using ASR | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-tutorial |
@@ -186,8 +184,3 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Automate Hyper-V to Azure disaster recovery with PowerShell and Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-powershell-resource-manager |
 | Integrate Azure Automation runbooks with recovery plans | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-runbook-automation |
-
-### Deployment
-| Topic | URL |
-|-------|-----|
-| Use ARM templates to deploy Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/asr-arm-templates |

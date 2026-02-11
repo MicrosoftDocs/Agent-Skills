@@ -1,17 +1,18 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers workload patterns, assessment questions, design principles, service guides, recommendations, design review checklists, and tradeoffs. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Well Architected Skill
 
-This skill provides expert guidance for Azure Well Architected development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,13 +21,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L31-L39 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security, with concrete questions and best practices for each architecture area. |
-| Recommendations | L40-L112 | Prescriptive best practices for cost optimization, reliability, performance, operations, and security in Azure workloads, including architecture patterns, processes, and governance guardrails. |
-| Design Principles | L113-L128 | Guidance on applying Well-Architected design principles (cost, reliability, performance, ops, security, sustainability) to specific Azure workloads like AI, SAP, SaaS, AVD, VMware, and mission-critical systems |
-| Tradeoffs | L129-L138 | Guidance on balancing cost, reliability, performance, security, and operations, including tradeoffs like zones vs regions and cross-pillar design decisions in Azure architectures |
-| Service Guides | L139-L184 | Well-Architected, service-specific guidance for designing, securing, monitoring, and optimizing cost/performance of core Azure services (AVD, networking, data, app, and ML workloads). |
-| Workload Patterns | L185-L247 | End-to-end workload blueprints for AI, AVD, AVS, mission-critical, SaaS, SAP, and sustainable apps: architecture, platforms, data, networking, security, ops, DevOps, and governance. |
-| Assessment Questions | L248-L261 | Guided assessments and maturity models to evaluate Azure workloads’ cost, security, reliability, performance, operations, AI, AVD, AVS, SaaS, and mission‑critical WAF alignment. |
+| Design Review Checklists | L32-L40 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security, with concrete questions and best practices for each architecture area. |
+| Recommendations | L41-L113 | Prescriptive best practices for cost optimization, reliability, performance, operations, and security in Azure workloads, including architecture patterns, processes, and governance guardrails. |
+| Design Principles | L114-L129 | Guidance on applying Well-Architected design principles (cost, reliability, performance, ops, security, sustainability) to specific Azure workloads like AI, SAP, SaaS, AVD, VMware, and mission-critical systems |
+| Tradeoffs | L130-L139 | Guidance on balancing cost, reliability, performance, security, and operations, including tradeoffs like zones vs regions and cross-pillar design decisions in Azure architectures |
+| Service Guides | L140-L185 | Well-Architected, service-specific guidance for designing, securing, monitoring, and optimizing cost/performance of core Azure services (AVD, networking, data, app, and ML workloads). |
+| Workload Patterns | L186-L248 | End-to-end workload blueprints for AI, AVD, AVS, mission-critical, SaaS, SAP, and sustainable apps: architecture, platforms, data, networking, security, ops, DevOps, and governance. |
+| Assessment Questions | L249-L262 | Guided assessments and maturity models to evaluate Azure workloads’ cost, security, reliability, performance, operations, AI, AVD, AVS, SaaS, and mission‑critical WAF alignment. |
 
 ### Design Review Checklists
 | Topic | URL |

@@ -1,17 +1,18 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including integrations & coding patterns, limits & quotas, security, deployment, decision making, configuration, architecture & design patterns, best practices, and troubleshooting. Use when building, debugging, or optimizing Azure Logic Apps applications.
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Logic Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Logic Apps Skill
 
-This skill provides expert guidance for Azure Logic Apps development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Logic Apps. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L48 | Diagnosing and fixing Logic Apps failures, throttling (429), B2B/EDI acknowledgment and error codes (AS2, EDIFACT, X12), plus using tests, metrics, and run history to debug issues. |
-| Best Practices | L49-L59 | Designing robust Logic Apps: error/exception handling, scopes and control functions, Rules Engine optimization, and generating/testing workflows with unit tests and mock outputs. |
-| Decision Making | L60-L71 | Guidance on choosing Logic Apps vs other Azure integration tools, Standard vs Consumption, migration from BizTalk/Power Automate, and estimating/controlling Logic Apps costs and billing. |
-| Architecture & Design Patterns | L72-L86 | Patterns for AI agent workflows, DR/HA (multi-region, zone-redundant), resource replication, REST API design, and messaging patterns like Service Bus sequential convoys. |
-| Limits & Quotas | L87-L95 | Logic Apps limits on message size, pagination, SQL results/timeouts, inline JavaScript, chunking, and global configuration caps, plus how to work around or configure them. |
-| Security | L96-L112 | Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy Auth), network isolation (VNets, private endpoints, private storage), certificates, and Azure Policy/compliance controls. |
-| Configuration | L113-L148 | Configuring Logic Apps runtime, connections, B2B/integration accounts, WDL workflows, monitoring/telemetry, on-premises access, and specialized features like AS2/X12/EDIFACT and MCP. |
-| Integrations & Coding Patterns | L149-L192 | Patterns and samples for integrating Logic Apps with AI agents, scripts, SAP/B2B/healthcare systems, Dataverse/DBs/APIs, and for unit testing, telemetry, and custom connectors. |
-| Deployment | L193-L208 | Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, DevOps/Deployment Center, deployment slots, hybrid setups, and moving apps across subscriptions/regions. |
+| Troubleshooting | L34-L49 | Diagnosing and fixing Logic Apps failures, throttling (429), B2B/EDI acknowledgment and error codes (AS2, EDIFACT, X12), plus using tests, metrics, and run history to debug issues. |
+| Best Practices | L50-L60 | Designing robust Logic Apps: error/exception handling, scopes and control functions, Rules Engine optimization, and generating/testing workflows with unit tests and mock outputs. |
+| Decision Making | L61-L72 | Guidance on choosing Logic Apps vs other Azure integration tools, Standard vs Consumption, migration from BizTalk/Power Automate, and estimating/controlling Logic Apps costs and billing. |
+| Architecture & Design Patterns | L73-L87 | Patterns for AI agent workflows, DR/HA (multi-region, zone-redundant), resource replication, REST API design, and messaging patterns like Service Bus sequential convoys. |
+| Limits & Quotas | L88-L96 | Logic Apps limits on message size, pagination, SQL results/timeouts, inline JavaScript, chunking, and global configuration caps, plus how to work around or configure them. |
+| Security | L97-L113 | Securing Logic Apps: auth (managed identities, Entra, OAuth/OBO, Easy Auth), network isolation (VNets, private endpoints, private storage), certificates, and Azure Policy/compliance controls. |
+| Configuration | L114-L149 | Configuring Logic Apps runtime, connections, B2B/integration accounts, WDL workflows, monitoring/telemetry, on-premises access, and specialized features like AS2/X12/EDIFACT and MCP. |
+| Integrations & Coding Patterns | L150-L194 | Patterns and samples for integrating Logic Apps with AI agents, SAP/B2B/healthcare systems, custom APIs, inline code (C#/PowerShell/.NET/Python), Dataverse, telemetry, and automated testing. |
+| Deployment | L195-L210 | Deploying Logic Apps (Standard & Consumption) using ARM/Bicep, DevOps/Deployment Center, deployment slots, hybrid setups, and moving apps across subscriptions/regions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -149,7 +150,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Run Logic Apps workflows as Azure AI agent actions | https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-action-create-run-workflow |
+| Use Logic Apps workflows as actions in Foundry agents | https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-action-create-run-workflow |
 | Add Logic Apps connector tools to AI agents | https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-tools-connector-actions |
 | Execute inline C# scripts in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts |
 | Execute inline PowerShell scripts in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-powershell-scripts |
@@ -173,6 +174,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Send and receive EDIFACT messages with Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact |
 | Exchange RosettaNet messages in Logic Apps B2B workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-rosettanet |
 | Exchange X12 messages in Logic Apps B2B workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-x12 |
+| Validate XML in Azure Logic Apps B2B workflows | https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-validation |
 | Build fact creators and retrievers for Logic Apps Rules Engine | https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/build-fact-creators-retrievers |
 | Handle non-Unicode text encoding in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/support-non-unicode-character-encoding |
 | Mock Logic Apps actions with ActionMock | https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/action-mock-class-definition |

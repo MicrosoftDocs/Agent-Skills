@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
   security: 'Securing ADX clusters and data: encryption, keys, identities/RBAC, cross-tenant
     access, network/private endpoints, Conditional Access, Azure Policy, and secure
@@ -22,9 +22,9 @@ category_descriptions:
   configuration: 'Configuring Azure Data Explorer clusters and databases: schema cloning/sync,
     ingestion setup (Event Grid, LightIngest, formats), language extensions, monitoring,
     and web UI settings/profile.'
-  decision-making: Guidance on choosing and sizing ADX clusters (SKUs, isolated/confidential
-    compute, horizontal/vertical scaling) plus cost planning, reservations, and migrating
-    from Elasticsearch.
+  decision-making: Guidance on choosing and sizing ADX SKUs, scaling clusters, estimating
+    and optimizing costs, using reservations, and planning/migrating ingestion (streaming,
+    queued, Logstash, confidential/isolated compute).
   troubleshooting: 'Diagnosing and fixing Azure Data Explorer issues: ingestion error
     codes, private endpoint connectivity, cluster connection/creation failures, and
     database/table create/delete problems.'
@@ -65,8 +65,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Debug Kusto Query Language inline Python](https://learn.microsoft.com/en-us/kusto/debug-inline-python?view=microsoft-fabric)
-  - Updated: 2026-02-01T08:00:00.000Z → 2026-02-08T12:02:00.000Z
+- [Streaming ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-streaming)
+  - Updated: 2026-02-03T23:03:00.000Z → 2026-02-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -165,6 +165,7 @@ category_descriptions:
 | [Sisense](https://learn.microsoft.com/en-us/azure/data-explorer/sisense) | integrations | 0.70 | Describes configuring ADX as a Sisense data source; likely includes connector configuration and parameters unique to this integration. |
 | [Splunk](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk) | integrations | 0.70 | Splunk-to-ADX connector article; typically includes connector configuration, endpoint URLs, and parameter names unique to this product integration. |
 | [Splunk Universal Forwarder](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-splunk-uf) | integrations | 0.70 | Covers Splunk Universal Forwarder integration; likely documents specific connector settings, configuration files, and ADX endpoint parameters not generally known. |
+| [Streaming ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-streaming) | decision-making | 0.70 | Contains a concrete, product-specific threshold (over 4 GB per hour per table) for when to switch from streaming to queued ingestion, which is decision guidance with a quantified criterion that an LLM wouldn't reliably know from training. |
 | [Sync Kusto](https://learn.microsoft.com/en-us/azure/data-explorer/sync-kusto) | configuration | 0.70 | Sync Kusto is a specialized tool; article likely documents specific configuration options, mappings between local files and ADX entities, and command parameters that are not generic knowledge. |
 | [Understand reservation charges](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-reservation-discount) | decision-making | 0.70 | Explains how reservation discounts apply to ADX markup meters and which resources are covered; this is specific cost/benefit behavior guiding purchase decisions. |
 | [Upgrade a free cluster](https://learn.microsoft.com/en-us/azure/data-explorer/start-for-free-upgrade) | limits-quotas | 0.70 | Describes that upgrading removes the free cluster storage size limitation and unlocks all features. While the exact size number isn’t in the summary, the article is about tier-specific capacity limits and their removal, which is quota-related expert behavior. |
@@ -185,7 +186,6 @@ category_descriptions:
 | [Manage cluster horizontal scaling](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-horizontal-scaling) | decision-making | 0.65 | Covers specific workflows for scale-out/scale-in of ADX clusters to match demand. While partly procedural, it encodes ADX-specific scaling behavior and when to use each workflow, which is decision guidance tied to the product. |
 | [Managed identities overview](https://learn.microsoft.com/en-us/azure/data-explorer/managed-identities-overview) | security | 0.65 | Service-specific patterns for using managed identities to access other Microsoft Entra–protected resources from Azure Data Explorer; identity configuration guidance. |
 | [Purge data - Azure portal](https://learn.microsoft.com/en-us/azure/data-explorer/data-purge-portal) | best-practices | 0.65 | Data purge with .purge command is product-specific; article likely includes command syntax, constraints (for example, not for frequent deletes), and GDPR-oriented usage guidance that goes beyond generic deletion concepts. |
-| [Streaming ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-streaming) | decision-making | 0.65 | Contains a concrete, product-specific threshold (4 GB per hour per table) for when to prefer queued ingestion over streaming, which is decision guidance with a quantified criterion that an LLM is unlikely to know from training. |
 | [Use Advisor recommendations to optimize your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/azure-advisor) | best-practices | 0.65 | Advisor recommendations for ADX cluster optimization are actionable, product-specific guidance that go beyond generic tuning advice. |
 | [Check cluster health](https://learn.microsoft.com/en-us/azure/data-explorer/check-cluster-health) | best-practices | 0.64 | Uses specific ADX commands, metrics (like Keep Alive), and portal paths to assess health. These are concrete, product-specific monitoring practices beyond generic advice. |
 | [Migrate cluster to support availability zones](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-cluster-to-multiple-availability-zone) | deployment | 0.63 | Provides ADX-specific migration steps and constraints for enabling multi-AZ support, including behavior of regions and latency characteristics. This is a deployment/migration pattern unique to the service. |

@@ -1,17 +1,18 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including decision making, best practices, configuration, security, deployment, architecture & design patterns, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure App Service applications.
+description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure App Service Skill
 
-This skill provides expert guidance for Azure App Service development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure App Service. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Using App Service diagnostics to investigate performance issues, errors, availability problems, and configuration issues in your web apps, plus guidance on interpreting diagnostic reports. |
-| Best Practices | L38-L45 | Best practices for deploying, securing, troubleshooting, and routing traffic to Azure App Service apps, including Traffic Manager integration and operational guidance. |
-| Decision Making | L46-L67 | Guidance on planning and choosing App Service tiers, plans, domains, networking, auth, and migration paths (Windows/Linux, .NET/Java/WordPress, Arc, VNet, sidecars, ASE vs multitenant). |
-| Architecture & Design Patterns | L68-L73 | Patterns for scaling apps globally with ASE + Traffic Manager and recommended App Service architectures by app type (web, API, mobile) for reliability, performance, and security. |
-| Limits & Quotas | L74-L79 | Scaling App Service plans (tiers, cores, memory, instances) and understanding built‑in quotas, limits, and monitoring metrics for capacity and usage. |
-| Security | L80-L135 | Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs, access restrictions, managed identities, private endpoints, Graph/SQL/Storage access, and secure network patterns. |
-| Configuration | L136-L188 | Configuring App Service apps: app settings, auth, networking/VNet/ASE, scaling, containers/sidecars, language runtimes, storage mounts, certificates, diagnostics, and health/monitoring. |
-| Integrations & Coding Patterns | L189-L199 | Patterns for connecting App Service apps to other Azure services (OpenAI, AI Search, Key Vault, Logic Apps, WebJobs, App Gateway) using managed identity and integration best practices. |
-| Deployment | L200-L216 | Deploying App Service apps via Git/GitHub Actions/Azure Pipelines/FTP/ZIP, using containers and deployment slots, managing credentials, DNS migration, WebJobs, and Arc/ARM-based environments |
+| Troubleshooting | L34-L38 | Using App Service diagnostics to investigate performance issues, errors, availability problems, and configuration issues in your web apps, plus guidance on interpreting diagnostic reports. |
+| Best Practices | L39-L46 | Best practices for deploying, securing, troubleshooting, and routing traffic to Azure App Service apps, including Traffic Manager integration and operational guidance. |
+| Decision Making | L47-L68 | Guidance on planning and choosing App Service tiers, plans, domains, networking, auth, and migration paths (Windows/Linux, .NET/Java/WordPress, Arc, VNet, sidecars, ASE vs multitenant). |
+| Architecture & Design Patterns | L69-L74 | Patterns for scaling apps globally with ASE + Traffic Manager and recommended App Service architectures by app type (web, API, mobile) for reliability, performance, and security. |
+| Limits & Quotas | L75-L80 | Scaling App Service plans (tiers, cores, memory, instances) and understanding built‑in quotas, limits, and monitoring metrics for capacity and usage. |
+| Security | L81-L136 | Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs, access restrictions, managed identities, private endpoints, Graph/SQL/Storage access, and secure network patterns. |
+| Configuration | L137-L189 | Configuring App Service apps: app settings, auth, networking/VNet/ASE, storage, containers/sidecars, scaling, certificates/domains, language runtimes, logging, health checks, and WebJobs. |
+| Integrations & Coding Patterns | L190-L200 | Patterns for connecting App Service apps to other Azure services (OpenAI, AI Search, Key Vault, Logic Apps, WebJobs, App Gateway) using managed identity and integration best practices. |
+| Deployment | L201-L217 | Deploying App Service apps via Git/GitHub Actions/Azure Pipelines/FTP/ZIP, using containers and deployment slots, managing credentials, DNS migration, WebJobs, and Arc/ARM-based environments |
 
 ### Troubleshooting
 | Topic | URL |
@@ -144,7 +145,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure App Service authentication API versions | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-api-version |
 | Use file-based configuration for App Service auth | https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-file-based |
 | Configure common settings for Azure App Service apps | https://learn.microsoft.com/en-us/azure/app-service/configure-common |
-| Mount Azure Files shares in Azure App Service apps | https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage |
+| Configure Azure Storage file shares in App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage |
 | Configure custom containers for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container |
 | Configure Traffic Manager with App Service custom domains | https://learn.microsoft.com/en-us/azure/app-service/configure-domain-traffic-manager |
 | Configure gateway-required VNet integration for App Service | https://learn.microsoft.com/en-us/azure/app-service/configure-gateway-required-vnet-integration |

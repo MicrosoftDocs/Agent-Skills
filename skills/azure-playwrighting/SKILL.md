@@ -1,17 +1,18 @@
 ---
 name: azure-playwrighting
-description: Expert knowledge for Azure Playwrighting development including best practices, security, configuration, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Playwrighting applications.
+description: Expert knowledge for Azure Playwrighting development including troubleshooting, best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Playwrighting applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Playwrighting Skill
 
-This skill provides expert guidance for Azure Playwrighting development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Playwrighting. Covers troubleshooting, best practices, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,12 +21,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L35 | Diagnosing and fixing Playwright test run failures in Azure, including portal issues and resolving AADSTS7000112 Azure AD sign-in/auth errors |
-| Best Practices | L36-L42 | Best practices for speeding up Playwright Testing runs, configuring visual regression tests, and reducing latency via optimal regional workspace setup. |
-| Limits & Quotas | L43-L48 | Details on Microsoft Playwright Testing usage limits, free trial quotas, concurrency caps, and configurable limits that affect test runs and scaling |
-| Security | L49-L55 | Managing workspace access tokens, setting up authentication/authorization, and configuring RBAC roles and permissions for Microsoft Playwright Testing workspaces. |
-| Configuration | L56-L64 | Setting up and managing Playwright Testing workspaces, configuring playwright.service.config.ts and service features, and enabling/using monitoring, diagnostics, and telemetry data. |
-| Integrations & Coding Patterns | L65-L69 | Patterns for connecting Azure Playwright Testing to local/private apps and configuring reporting when tests are sharded or split across multiple runs. |
+| Troubleshooting | L31-L36 | Diagnosing and fixing Playwright test run failures in Azure, including portal issues and resolving AADSTS7000112 Azure AD sign-in/auth errors |
+| Best Practices | L37-L43 | Best practices for speeding up Playwright Testing runs, configuring visual regression tests, and reducing latency via optimal regional workspace setup. |
+| Limits & Quotas | L44-L49 | Details on Microsoft Playwright Testing usage limits, free trial quotas, concurrency caps, and configurable limits that affect test runs and scaling |
+| Security | L50-L56 | Managing workspace access tokens, setting up authentication/authorization, and configuring RBAC roles and permissions for Microsoft Playwright Testing workspaces. |
+| Configuration | L57-L65 | Setting up and managing Playwright Testing workspaces, configuring playwright.service.config.ts and service features, and enabling/using monitoring, diagnostics, and telemetry data. |
+| Integrations & Coding Patterns | L66-L70 | Patterns for connecting Azure Playwright Testing to local/private apps and configuring reporting when tests are sharded or split across multiple runs. |
 
 ### Troubleshooting
 | Topic | URL |

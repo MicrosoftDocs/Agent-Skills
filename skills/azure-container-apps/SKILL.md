@@ -1,17 +1,18 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including security, deployment, configuration, decision making, architecture & design patterns, best practices, troubleshooting, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Container Apps applications.
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Container Apps Skill
 
-This skill provides expert guidance for Azure Container Apps development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Container Apps. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L46 | Diagnosing and fixing Container Apps runtime issues: create/start failures, image pulls, probes, ports, storage mounts, OCI errors, Java log levels, and using logs/debug console. |
-| Best Practices | L47-L52 | Guidance on reducing cold starts (scaling, readiness, configuration) and tuning Java memory usage (JVM settings, resource limits) for better performance in Azure Container Apps |
-| Decision Making | L53-L68 | Guidance on choosing Container Apps plans, compute/billing models, environments, GPUs, workflows, and migration/hosting options to match cost, performance, and architecture needs. |
-| Architecture & Design Patterns | L69-L73 | Patterns for blue-green deployments in Azure Container Apps, including traffic splitting, versioning revisions, rollout workflows, and safe rollback strategies. |
-| Limits & Quotas | L74-L78 | Details on Azure Container Apps resource limits and quotas, including app, environment, scaling, networking, and per-subscription constraints. |
-| Security | L79-L108 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, client certs, Dapr tokens), secrets and managed identity, network controls (VNet, NSG, firewall, WAF), and security best practices. |
-| Configuration | L109-L154 | Configuring Container Apps environments and apps: networking, ingress, domains/certs, storage, env vars, health probes, Dapr, Java/metrics/APM, logging/monitoring, routing, sessions, and workload profiles. |
-| Integrations & Coding Patterns | L155-L175 | Patterns and how-tos for integrating Container Apps with Functions, KEDA, Spring components, Front Door, and AI/code-interpreter or MCP-based dynamic session workflows. |
-| Deployment | L176-L183 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), scaling with Dapr+KEDA+Bicep, and creating zone-redundant apps in virtual networks. |
+| Troubleshooting | L34-L47 | Diagnosing and fixing Container Apps runtime issues: create/start failures, image pulls, probes, ports, storage mounts, OCI errors, Java log levels, and using logs/debug console. |
+| Best Practices | L48-L53 | Guidance on reducing cold starts (scaling, readiness, configuration) and tuning Java memory usage (JVM settings, resource limits) for better performance in Azure Container Apps |
+| Decision Making | L54-L69 | Guidance on choosing Container Apps plans, compute/billing models, environments, GPUs, workflows, and migration/hosting options to match cost, performance, and architecture needs. |
+| Architecture & Design Patterns | L70-L74 | Patterns for blue-green deployments in Azure Container Apps, including traffic splitting, versioning revisions, rollout workflows, and safe rollback strategies. |
+| Limits & Quotas | L75-L79 | Details on Azure Container Apps resource limits and quotas, including app, environment, scaling, networking, and per-subscription constraints. |
+| Security | L80-L109 | Securing Container Apps: auth (Entra, social, OIDC, mTLS, client certs, Dapr tokens), secrets and managed identity, network controls (VNet, NSG, firewall, WAF), and security best practices. |
+| Configuration | L110-L155 | Configuring Container Apps environments and apps: networking, ingress, domains/certs, storage, env vars, health probes, Dapr, Java/metrics/APM, logging/monitoring, routing, sessions, and workload profiles. |
+| Integrations & Coding Patterns | L156-L176 | Patterns and how-tos for integrating Container Apps with Functions, KEDA, Spring components, Front Door, and AI/code-interpreter or MCP-based dynamic session workflows. |
+| Deployment | L177-L184 | Deploying Container Apps with CI/CD (GitHub Actions, Azure Pipelines, CLI-generated workflows), scaling with Dapr+KEDA+Bicep, and creating zone-redundant apps in virtual networks. |
 
 ### Troubleshooting
 | Topic | URL |

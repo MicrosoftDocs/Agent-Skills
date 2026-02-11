@@ -35,10 +35,10 @@ category_descriptions:
 - **Unclassified**: 27
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 1
-- **Unchanged**: 108
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 112
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -56,21 +56,6 @@ category_descriptions:
 | *(Unclassified)* | 27 | 24.1% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Microsoft Entra ID for Authentication](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-app-registration?view=cyclecloud-8)
-- [Current Release - 2026.02.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-02-01?view=cyclecloud-8)
-- [Previous Release - 2025.12.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2025-12-01?view=cyclecloud-8)
-
-### Updated Pages
-
-- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
-  - Updated: 2026-01-08T23:15:00.000Z → 2026-02-10T06:10:00.000Z
-
-### Deleted Pages
-
-- ~~Current Release - 2025.12.01~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2025-12-01?view=cyclecloud-8)
 
 ## Classified Pages
 

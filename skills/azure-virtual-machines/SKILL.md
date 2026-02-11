@@ -1,17 +1,18 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including deployment, configuration, decision making, security, best practices, architecture & design patterns, limits & quotas, integrations & coding patterns, and troubleshooting. Use when building, debugging, or optimizing Azure Virtual Machines applications.
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Virtual Machines Skill
 
-This skill provides expert guidance for Azure Virtual Machines development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Virtual Machines. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L54 | Diagnosing and fixing Azure VM issues: hibernation, extensions, Spot/resize errors, image builder, disk encryption, metadata/MSP keys, restore points, and gallery/Trusted Launch problems. |
-| Best Practices | L55-L74 | Best practices for Azure VM performance, cost, HA, storage, boot time, temp disks, extensions, and scaling/optimizing HPC and InfiniBand-enabled workloads |
-| Decision Making | L75-L127 | Guidance for choosing VM sizes, disks, regions, licensing and cost options, and planning migrations from retired SKUs, disk types, and images for Azure Virtual Machines. |
-| Architecture & Design Patterns | L128-L134 | Designing low-latency and clustered VM architectures using proximity placement groups and shared disks, plus understanding VM reboot causes, maintenance events, and their impact on workloads |
-| Limits & Quotas | L135-L335 | VM size specs, disk and GPU performance limits, quotas, bursting, and scalability constraints for Azure VMs, disks, NVMe/ephemeral storage, and Dedicated Hosts. |
-| Security | L336-L408 | Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata hardening, and security policies/RBAC. |
-| Configuration | L409-L569 | Configuring Azure VMs after creation: disks, images, encryption, networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore points, and VM Image Builder setups. |
-| Integrations & Coding Patterns | L570-L612 | Scripts and patterns for VM connectivity, monitoring, maintenance, backup/restore, disk cloning, and managing VMs/scale sets via CLI, PowerShell, REST, and Azure integrations. |
-| Deployment | L613-L635 | Deploying and migrating Azure VMs/scale sets: disk and storage migration, proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling deployments, and image build automation |
+| Troubleshooting | L34-L55 | Diagnosing and fixing Azure VM issues: hibernation, extensions, disk encryption, Spot/resize errors, Image Builder, restore points, metadata security, and gallery/maintenance problems. |
+| Best Practices | L56-L77 | Best practices for Azure VM performance, cost, HA, storage, NUMA/InfiniBand tuning, HPC scaling, temporary disks, and Image Builder optimization for Linux and Windows VMs |
+| Decision Making | L78-L134 | Guidance for choosing VM sizes, disks, images, regions, and pricing options, plus planning cost optimization and migrations from retired/legacy VM series, disks, and hosts. |
+| Architecture & Design Patterns | L135-L145 | Designing low-latency and clustered VM architectures, tuning HB-series HPC VMs (NUMA, cores, cache) for performance, and understanding VM reboots/maintenance impacts |
+| Limits & Quotas | L146-L346 | VM size specs, disk and GPU performance limits, quotas, bursting, and scalability constraints for Azure VMs, disks, NVMe/ephemeral storage, and Dedicated Hosts. |
+| Security | L347-L416 | Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata hardening, and security policies/RBAC. |
+| Configuration | L417-L576 | Configuring Azure VMs after creation: disks, images, encryption, networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore points, and VM Image Builder setups. |
+| Integrations & Coding Patterns | L577-L620 | Scripts and patterns for VM integration and automation: monitoring, maintenance, backup/restore, disk copy/export, connectivity (SSH/RDP/WinRM), and managing VMs/scale sets via CLI/PowerShell/REST. |
+| Deployment | L621-L643 | Deploying and migrating Azure VMs/scale sets: disk and storage migration, proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling deployments, and image build automation |
 
 ### Troubleshooting
 | Topic | URL |
@@ -48,7 +49,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Troubleshoot NVv4 to NVads_V710_v5 resize errors | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-retirement |
 | Troubleshoot Azure VM maintenance configuration issues | https://learn.microsoft.com/en-us/azure/virtual-machines/troubleshoot-maintenance-configurations |
 | Troubleshoot Azure Compute Gallery shared image issues | https://learn.microsoft.com/en-us/azure/virtual-machines/troubleshooting-shared-images |
-| Troubleshoot Azure Trusted Launch VM issues and FAQs | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq |
+| Troubleshoot and resolve Azure Trusted Launch VM issues | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq |
 | Troubleshoot Azure Disk Encryption on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-troubleshooting |
 | Resolve Windows VM hibernation problems in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/hibernate-resume-troubleshooting-windows |
 
@@ -64,6 +65,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply high-availability best practices for VMs and disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-high-availability |
 | Optimize VM and disk performance in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance |
 | Handle VM extensions on Python 3-enabled Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/issues-using-vm-extensions-python-3 |
+| Optimize process and NUMA placement on HC-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-overview |
+| Understand HX-series VM architecture and NUMA topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
 | Apply best practices for Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-best-practices |
 | Format and use temporary disks on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-format-mount-temp-disks-linux |
 | Optimize storage performance on Lsv3 and Lasv3 Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/storage-performance |
@@ -92,6 +95,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose the right Azure managed disk type | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types |
 | Estimate Azure VM costs using portal cost card | https://learn.microsoft.com/en-us/azure/virtual-machines/estimated-vm-create-cost-card |
 | Decide when to use Azure Generation 2 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2 |
+| Use HBv2 performance data to size HPC workloads | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-performance |
+| Plan HBv3 VM sizing using benchmark performance | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-performance |
+| Use HBv4 benchmark results to select VM sizes | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-performance |
+| Evaluate HBv5 VM sizes using HPC benchmark data | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-performance |
 | Choose isolated Azure VM sizes for secure workloads | https://learn.microsoft.com/en-us/azure/virtual-machines/isolation |
 | Choose DNS name resolution options for Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-dns |
 | Use Azure Hybrid Benefit for Linux VM licensing | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-hybrid-benefit-linux |
@@ -130,6 +137,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Use proximity placement groups for low-latency VM architectures | https://learn.microsoft.com/en-us/azure/virtual-machines/co-location |
 | Design clustered applications using Azure shared disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared |
+| Optimize Azure HBv2 VMs for HPC NUMA topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview |
+| Leverage HBv3 VM architecture and cache topology for HPC | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview |
+| Apply HBv4 VM core and cache topology to HPC apps | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-series-overview |
+| Design HPC workloads around HBv5 VM topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-series-overview |
 | Interpret Azure VM reboots and maintenance impacts | https://learn.microsoft.com/en-us/azure/virtual-machines/understand-vm-reboots |
 
 ### Limits & Quotas
@@ -394,10 +405,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
 | Generate and store SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
 | Configure Trusted Launch security for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch |
-| Enable Trusted Launch on existing Gen2 Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm |
-| Upgrade Gen1 Azure VMs to Gen2 with Trusted Launch | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1 |
 | Enable Trusted Launch on existing VM scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vmss |
-| Deploy Trusted Launch virtual machines in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-portal |
 | Customize Secure Boot UEFI keys for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-secure-boot-custom-uefi |
 | Configure Key Vault for Azure Disk Encryption on Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-key-vault |
 | Configure Key Vault for ADE with Entra ID on Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-key-vault-aad |
@@ -502,7 +510,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Define Azure Linux VM infrastructure with Terraform | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-terraform |
 | Prepare and upload RHEL VHDs for Azure environments | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/redhat-create-upload-vhd |
 | Run shell scripts in Azure Linux VMs with Run Command | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command |
-| Use managed Run Command for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed |
 | Configure internal DNS names for Linux VMs via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/static-dns-name-resolution-for-linux-on-azure |
 | Create and upload SUSE Linux VHDs for Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/suse-create-upload-vhd |
 | Configure time synchronization for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/time-sync |
@@ -577,6 +584,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Manage Azure virtual machines using common Azure CLI commands | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
 | Find Azure Marketplace image URNs and purchase plans with CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
 | Retrieve Azure VM CPU usage via Monitor REST API | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest |
+| Use managed Run Command to execute scripts in Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed |
 | Use scheduled events on Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events |
 | Install and configure xrdp for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop |
 | Manage VM maintenance configurations using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-cli |

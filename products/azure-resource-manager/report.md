@@ -39,10 +39,10 @@ category_descriptions:
 - **Unclassified**: 134
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 2
-- **Unchanged**: 496
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 501
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
 ## Classification Statistics
@@ -61,23 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 134 | 26.7% |
 
 ## Changes
-
-### New Pages
-
-- [Create Bicep files - Bicep MCP Server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code-model-context-protocol)
-- [Bicep MCP server](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-mcp-server)
-- [Deploy - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-visual-studio-code)
-
-### Updated Pages
-
-- [Create Bicep files - VS Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-01-30T08:00:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/visual-studio-code)
-  - Updated: 2026-01-08T23:15:00.000Z → 2026-02-09T18:26:00.000Z
-
-### Deleted Pages
-
-- ~~Deploy - VS Code~~ (https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-vscode)
 
 ## Classified Pages
 

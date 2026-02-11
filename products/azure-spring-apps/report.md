@@ -39,8 +39,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 150
+- **Updated Pages**: 0
+- **Unchanged**: 152
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
 
@@ -60,13 +60,6 @@ category_descriptions:
 | *(Unclassified)* | 34 | 22.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Integrate Azure Database for PostgreSQL and Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-integrate-azure-database-and-redis-enterprise)
-  - Updated: 2025-08-19T08:00:00.000Z → 2025-11-25T18:11:00.000Z
-- [Load application secrets using Key Vault](https://learn.microsoft.com/en-us/azure/spring-apps/enterprise/quickstart-key-vault-enterprise)
-  - Updated: 2025-08-19T08:00:00.000Z → 2025-11-25T18:11:00.000Z
 
 ## Classified Pages
 

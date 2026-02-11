@@ -1,17 +1,18 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including decision making, security, limits & quotas, configuration, architecture & design patterns, best practices, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications.
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Machine Learning Skill
 
-This skill provides expert guidance for Azure Machine Learning development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Machine Learning. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L67 | Diagnosing and fixing Azure ML issues: pipelines, AutoML, endpoints (online/batch), Kubernetes, networking/certs, environments/images, data access/labeling, prompt flow, and known platform errors. |
-| Best Practices | L68-L85 | Guidance on secure, cost‑efficient, high‑performance ML: AutoML tuning, feature design, GPU/distributed training, deployment scripts, routing, profiling, monitoring, and responsible data use. |
-| Decision Making | L86-L112 | Guides for choosing Azure ML architectures and algorithms, planning DR and networking, and migrating or upgrading workspaces, assets, and workflows from v1 to v2 |
-| Architecture & Design Patterns | L113-L117 | Architectural guidance for multi-environment Azure ML setups using registries, including cross-workspace sharing, promotion across dev/test/prod, and governance patterns. |
-| Limits & Quotas | L118-L128 | Region/VM availability, workspace soft delete/retention, quota and service limits, storage size workarounds, serverless training, and capacity planning for Azure ML deployments |
-| Security | L129-L187 | Securing Azure ML workspaces, data, and endpoints: encryption, auth/RBAC, managed identities, network isolation (VNets, Private Link), policies, secret handling, and secure integration with other Azure services. |
-| Configuration | L188-L353 | Configuring Azure ML resources and jobs: compute, data, environments, networking, monitoring, AutoML, prompt flow, and YAML/CLI-based setup for training, inference, and MLOps. |
-| Integrations & Coding Patterns | L354-L400 | Patterns and code to connect Azure ML with storage, Spark/Kubernetes, MLflow, Databricks/Synapse/Fabric, prompt flow, and to build, run, and trigger component-based pipelines and endpoints. |
-| Deployment | L401-L446 | Deploying and operationalizing models and pipelines (online/batch, real-time, MLflow, Triton, prompt flow) plus CI/CD, safe rollout, and infra provisioning (ARM, Bicep, Terraform, DevOps, GitHub). |
+| Troubleshooting | L34-L68 | Diagnosing and fixing Azure ML issues: pipelines, AutoML, endpoints (online/batch), Kubernetes, networking/certs, environments/images, data access/labeling, prompt flow, and known platform errors. |
+| Best Practices | L69-L86 | Guidance on secure, cost‑efficient, high‑performance ML: AutoML tuning, feature design, GPU/distributed training, deployment scripts, routing, profiling, monitoring, and responsible data use. |
+| Decision Making | L87-L113 | Guides for choosing Azure ML architectures and algorithms, planning DR and networking, and migrating or upgrading workspaces, assets, and workflows from v1 to v2 |
+| Architecture & Design Patterns | L114-L118 | Architectural guidance for multi-environment Azure ML setups using registries, including cross-workspace sharing, promotion across dev/test/prod, and governance patterns. |
+| Limits & Quotas | L119-L129 | Region/VM availability, workspace soft delete/retention, quota and service limits, storage size workarounds, serverless training, and capacity planning for Azure ML deployments |
+| Security | L130-L188 | Securing Azure ML workspaces, data, and endpoints: encryption, auth/RBAC, managed identities, network isolation (VNets, Private Link), policies, secret handling, and secure integration with other Azure services. |
+| Configuration | L189-L354 | Configuring Azure ML resources and jobs: compute, data, environments, networking, monitoring, AutoML, prompt flow, and YAML/CLI-based setup for training, inference, and MLOps. |
+| Integrations & Coding Patterns | L355-L402 | Integrating Azure ML with storage, Spark/Kubernetes/Databricks/Synapse, MLflow, pipelines, AutoML, frameworks, prompt flow, and external services (Event Grid, Data Factory, AI Search). |
+| Deployment | L403-L447 | Deploying and operationalizing models, pipelines, and prompt flows to Azure ML (online and batch), including rollout strategies, infra-as-code, MLOps/GenAIOps, and integrations with MLflow and Triton. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -371,6 +372,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Import data into AzureML designer using datasets | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-designer-import-data?view=azureml-api-1 |
 | Run custom Python code in Azure ML Designer | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-designer-python?view=azureml-api-1 |
 | Run local ONNX inference for AutoML image models | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-inference-onnx-automl-image-models?view=azureml-api-2 |
+| Log MLflow models into Azure Machine Learning | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-mlflow-models?view=azureml-api-2 |
 | Manage Azure ML model registry using MLflow | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models-mlflow?view=azureml-api-2 |
 | Manage Azure ML resources using REST APIs | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-rest?view=azureml-api-2 |
 | Define and load AzureML mltable data as DataFrames | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mltable?view=azureml-api-2 |
@@ -421,14 +423,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Publish and run Azure ML SDK v1 pipelines | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-pipelines?view=azureml-api-1 |
 | Deploy Azure ML online endpoints via REST API | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-with-rest?view=azureml-api-2 |
 | Deploy Azure ML models using NVIDIA Triton | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-with-triton?view=azureml-api-2 |
-| Build Azure ML CI/CD pipelines with Azure DevOps | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-devops-machine-learning?view=azureml-api-2 |
 | Create GitHub Actions workflows for Azure ML training and deployment | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-github-actions-machine-learning?view=azureml-api-2 |
 | Deploy image processing models with Azure ML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-image-processing-batch?view=azureml-api-2 |
 | Create Azure ML hub workspaces with Bicep templates | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-hub-workspace-template?view=azureml-api-2 |
 | Provision Azure ML workspaces with Terraform | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-workspace-terraform?view=azureml-api-2 |
 | Batch deploy MLflow models with Azure ML endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-mlflow-batch?view=azureml-api-2 |
 | Deploy language models for text processing in Azure ML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-nlp-processing-batch?view=azureml-api-2 |
-| Perform safe rollout for Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2 |
+| Implement blue-green safe rollout for Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2 |
 | Set up an end-to-end MLOps pipeline with Azure DevOps and Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-mlops-azureml?view=azureml-api-2 |
 | Set up Azure ML MLOps with GitHub Actions | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-mlops-github-azure-ml?view=azureml-api-2 |
 | Trigger and automate Azure ML SDK v1 pipelines | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-trigger-published-pipeline?view=azureml-api-1 |

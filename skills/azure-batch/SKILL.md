@@ -1,17 +1,18 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including security, configuration, deployment, decision making, integrations & coding patterns, best practices, troubleshooting, limits & quotas, and architecture & design patterns. Use when building, debugging, or optimizing Azure Batch applications.
+description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Batch applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Batch Skill
 
-This skill provides expert guidance for Azure Batch development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Batch. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L39 | Diagnosing and fixing Azure Batch job, task, pool, and node errors, including common failure patterns, error codes, and strategies to prevent and handle runtime issues. |
-| Best Practices | L40-L52 | Guidance on optimizing Batch jobs for performance, scale, monitoring, security, MPI and concurrent workloads, and persisting task outputs to durable storage. |
-| Decision Making | L53-L65 | Guidance on choosing Batch VM sizes/images, using Spot and ephemeral disks, controlling costs, and migrating pools/images and node communication to newer Azure Batch features. |
-| Architecture & Design Patterns | L66-L71 | Designing Azure Batch render farm burst architectures and choosing storage, caching, and data movement patterns for high-performance rendering workloads |
-| Limits & Quotas | L72-L76 | Batch account limits for cores, pools, nodes, jobs, tasks, and how quotas work, request increases, and plan deployments within Azure Batch service constraints. |
-| Security | L77-L96 | Securing Batch accounts and pools: identity (Entra ID, managed identities, RBAC), keys and certificates, encryption, private endpoints/VNet, NSP, Key Vault access, and Azure Policy controls. |
-| Configuration | L97-L127 | Configuring and managing Azure Batch pools, nodes, tasks, networking, autoscale, images, security, and event/diagnostic schemas using CLI, PowerShell, containers, and app/data deployment. |
-| Integrations & Coding Patterns | L128-L141 | Coding patterns and integrations for Batch: SDK usage (.NET/JS), events, task output to Storage, containers, monitoring, and mounting Azure Files/virtual file systems. |
-| Deployment | L142-L146 | Automating Azure Batch deployments and end-to-end job runs using Azure Pipelines and CLI templates, including configuration, orchestration, and CI/CD workflows. |
+| Troubleshooting | L34-L40 | Diagnosing and fixing Azure Batch job, task, pool, and node errors, including common failure patterns, error codes, and strategies to prevent and handle runtime issues. |
+| Best Practices | L41-L53 | Guidance on optimizing Batch jobs for performance, scale, monitoring, security, MPI and concurrent workloads, and persisting task outputs to durable storage. |
+| Decision Making | L54-L66 | Guidance on choosing Batch VM sizes/images, using Spot and ephemeral disks, controlling costs, and migrating pools/images and node communication to newer Azure Batch features. |
+| Architecture & Design Patterns | L67-L72 | Designing Azure Batch render farm burst architectures and choosing storage, caching, and data movement patterns for high-performance rendering workloads |
+| Limits & Quotas | L73-L77 | Batch account limits for cores, pools, nodes, jobs, tasks, and how quotas work, request increases, and plan deployments within Azure Batch service constraints. |
+| Security | L78-L97 | Securing Batch accounts and pools: identity (Entra ID, managed identities, RBAC), keys and certificates, encryption, private endpoints/VNet, NSP, Key Vault access, and Azure Policy controls. |
+| Configuration | L98-L128 | Configuring and managing Azure Batch pools, nodes, tasks, networking, autoscale, images, security, and event/diagnostic schemas using CLI, PowerShell, containers, and app/data deployment. |
+| Integrations & Coding Patterns | L129-L142 | Coding patterns and integrations for Batch: SDK usage (.NET/JS), events, task output to Storage, containers, monitoring, and mounting Azure Files/virtual file systems. |
+| Deployment | L143-L147 | Automating Azure Batch deployments and end-to-end job runs using Azure Pipelines and CLI templates, including configuration, orchestration, and CI/CD workflows. |
 
 ### Troubleshooting
 | Topic | URL |

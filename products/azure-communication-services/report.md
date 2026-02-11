@@ -39,9 +39,9 @@ category_descriptions:
 - **Unclassified**: 137
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 512
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 516
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -61,19 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 137 | 26.6% |
 
 ## Changes
-
-### New Pages
-
-- [Use VDI to make audio calls from Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/calling-from-virtual-desktop-infrastructure)
-
-### Updated Pages
-
-- [Make an outbound call](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/call-automation/quickstart-make-an-outbound-call)
-  - Updated: 2023-07-19T22:24:00.000Z → 2024-11-19T18:02:00.000Z
-- [Connect to Azure AI](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/azure-communication-services-azure-cognitive-services-integration)
-  - Updated: 2025-06-04T22:03:00.000Z → 2026-02-10T06:10:00.000Z
-- [Gather user input](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/recognize-action)
-  - Updated: 2024-02-23T05:40:00.000Z → 2026-02-10T06:10:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
-  troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agents, data collection,
-    alerts, autoscale, logs/metrics, Container insights, Application Insights, ITSM,
-    and VM performance tools.'
+  troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agent/extension failures,
+    data collection and alerts, logs/metrics/API errors, Application Insights problems,
+    autoscale, containers, and VM performance.'
   configuration: Configuring Azure Monitor data collection, alerts, diagnostics, workspaces,
     autoscale, Kubernetes/VM monitoring, Application Insights, OpenTelemetry, and
     related schemas, policies, and pipelines.
@@ -40,10 +40,10 @@ category_descriptions:
 - **Unclassified**: 134
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 548
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 550
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -63,14 +63,13 @@ category_descriptions:
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new)
-  - Updated: 2026-01-31T08:00:00.000Z → 2026-02-09T08:00:00.000Z
-- [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration)
-  - Updated: 2026-01-02T23:05:00.000Z → 2026-02-09T23:09:00.000Z
-- [Logs tables reference](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-index)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-02-09T08:00:00.000Z
+- [SDK Stats](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats)
+
+### Deleted Pages
+
+- ~~SDK Stats (Preview)~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats)
 
 ## Classified Pages
 
@@ -218,6 +217,7 @@ category_descriptions:
 | [Workspace transformation with ARM templates](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-workspace-transformations-api) | configuration | 0.75 | Shows how to configure transformations in a workspace DCR using ARM templates; includes template schema, parameter names, and resource definitions. |
 | [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings) | configuration | 0.74 | Page is focused on how to configure Application Insights connection strings, describing key-value schema, required keys (instrumentation key, ApplicationId), and how they control telemetry routing. This is product-specific configuration detail (names and meanings of settings) rather than a generic concept, matching the configuration sub-skill. It is not just a tutorial; it defines the structure and semantics of the connection string parameters. |
 | [Customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/customer-managed-keys) | security | 0.74 | Page is focused on configuring customer-managed keys for Log Analytics workspaces using Azure Key Vault/Managed HSM. This typically includes product-specific security configuration steps, required identities/permissions, and exact RBAC roles or access policies needed for the key vault and workspace integration, which are not generic security concepts and qualify as expert, product-specific security knowledge. |
+| [SDK Stats](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats) | troubleshooting | 0.74 | Page focuses on SDK stats metrics (success, drop, retry counts, drop and retry codes) specifically to identify why telemetry doesn't reach the ingestion endpoint and what to do next. This is organized around symptom (missing/unexpected telemetry) → diagnostic signals (SDK stats, drop/retry codes) → next steps, which is product-specific troubleshooting guidance rather than generic monitoring concepts. |
 | [Sync ITSM Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-resync-servicenow) | troubleshooting | 0.74 | Provides a concrete procedure to resolve ServiceNow sync problems by resetting connections and refreshing tokens, which is a product-specific troubleshooting workflow. |
 | [Configure Azure for a Secure Webhook](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsm-connector-secure-webhook-connections-azure-configuration) | security | 0.72 | Covers required Azure-side configurations (likely app registrations, permissions, endpoints) to securely connect ITSM products via Secure Webhook, including product-specific security settings. |
 | [AKS clusters](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/kubernetes-monitoring-enable) | deployment | 0.70 | Describes how to enable multiple Azure Monitor features for AKS; enabling monitoring components on AKS is a product-specific deployment/enablement pattern. |
@@ -339,7 +339,6 @@ category_descriptions:
 | [Restore logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/restore) | configuration | 0.70 | Details how to restore a time range of data and dismiss it; likely includes operation parameters, supported tables, and behavior constraints (for example, Auxiliary plan not supported), which are product-specific settings. |
 | [Roles permissions and security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security) | security | 0.70 | Focuses on roles, permissions, and security in Azure Monitor; such pages typically enumerate specific RBAC roles and scopes unique to Azure Monitor, which is product-specific security configuration. |
 | [Roles permissions and security](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/roles-permissions-security) | security | 0.70 | Focuses on roles, permissions, and security in Azure Monitor; such pages typically enumerate specific RBAC roles and scopes unique to Azure Monitor, which is product-specific security configuration. |
-| [SDK Stats (Preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats) | troubleshooting | 0.70 | Page focuses on SDK stats custom metrics including drop codes and retry codes that explain causes and next steps. These are product-specific symptom→cause→solution diagnostics not generally known from training, fitting troubleshooting. |
 | [SNMP traps](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-snmp-data) | configuration | 0.70 | How-to article for collecting SNMP trap data via AMA; likely includes specific configuration parameters (data sources, ports, formats, DCR settings) that are product-specific and not just conceptual. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-in definitions and compliance controls for Azure Monitor. These include concrete policy names and mappings to standards, which are product-specific security/compliance configuration details. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-in definitions and compliance controls for Azure Monitor. These include concrete policy names and mappings to standards, which are product-specific security/compliance configuration details. |

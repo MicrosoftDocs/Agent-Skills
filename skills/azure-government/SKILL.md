@@ -1,17 +1,18 @@
 ---
 name: azure-government
-description: Expert knowledge for Azure Government development including security, decision making, deployment, configuration, best practices, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Government applications.
+description: Expert knowledge for Azure Government development including best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Government applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Government Skill
 
-This skill provides expert guidance for Azure Government development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Government. Covers best practices, decision making, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,12 +21,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L30-L34 | Guidance on naming Azure resources to avoid leaking sensitive info (e.g., user data, locations, project details) while keeping names consistent, compliant, and manageable. |
-| Decision Making | L35-L48 | Guidance on choosing Azure Government vs other clouds, compliance (FedRAMP, NERC CIP, export control), identity, DoD/public safety workloads, and partner/environment selection. |
-| Security | L49-L59 | Security and compliance for Azure Government: isolation models, DoD IL5, FedRAMP scope, TIC guidance, Entra auth, and Secure Azure Computing Architecture for US gov workloads. |
-| Configuration | L60-L73 | Configuring tools and services for Azure Government: CLI/PowerShell, SSMS, Visual Studio, VM extensions, billing, Marketplace usage/publishing, ASE baseline, and Azure Monitor logs. |
-| Integrations & Coding Patterns | L74-L78 | Using Azure Storage REST/SDK APIs in Azure Government, including endpoint differences, authentication, configuration, and code patterns for gov cloud storage accounts. |
-| Deployment | L79-L84 | Guides for deploying to Azure Government: configuring Azure Pipelines CI/CD, publishing App Service apps, and provisioning VMs in government regions. |
+| Best Practices | L31-L35 | Guidance on naming Azure resources to avoid leaking sensitive info (e.g., user data, locations, project details) while keeping names consistent, compliant, and manageable. |
+| Decision Making | L36-L49 | Guidance on choosing Azure Government vs other clouds, compliance (FedRAMP, NERC CIP, export control), identity, DoD/public safety workloads, and partner/environment selection. |
+| Security | L50-L60 | Security and compliance for Azure Government: isolation models, DoD IL5, FedRAMP scope, TIC guidance, Entra auth, and Secure Azure Computing Architecture for US gov workloads. |
+| Configuration | L61-L74 | Configuring tools and services for Azure Government: CLI/PowerShell, SSMS, Visual Studio, VM extensions, billing, Marketplace usage/publishing, ASE baseline, and Azure Monitor logs. |
+| Integrations & Coding Patterns | L75-L79 | Using Azure Storage REST/SDK APIs in Azure Government, including endpoint differences, authentication, configuration, and code patterns for gov cloud storage accounts. |
+| Deployment | L80-L85 | Guides for deploying to Azure Government: configuring Azure Pipelines CI/CD, publishing App Service apps, and provisioning VMs in government regions. |
 
 ### Best Practices
 | Topic | URL |

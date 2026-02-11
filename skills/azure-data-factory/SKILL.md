@@ -1,17 +1,18 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including configuration, integrations & coding patterns, decision making, best practices, security, troubleshooting, deployment, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Data Factory applications.
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Data Factory Skill
 
-This skill provides expert guidance for Azure Data Factory development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Data Factory. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L89 | Diagnosing and fixing ADF failures: connector/format errors, copy and data flow issues, CI/CD and Studio problems, IR/SSIS runtime and trigger/orchestration troubleshooting. |
-| Best Practices | L90-L110 | Performance, reliability, and DataOps best practices for ADF: tuning data flows/copy/IR, metadata‑driven design, SAP CDC, data lake writes, BCDR, SLAs, and iterative debugging. |
-| Decision Making | L111-L143 | Cost modeling, pricing examples, FinOps, runtime/compute selection, connector upgrades, and migration planning (SSIS, HDFS, S3, Netezza, Fabric) for Azure Data Factory. |
-| Architecture & Design Patterns | L144-L150 | Patterns for building efficient ADF solutions: optimizing mapping data flows, reshaping SQL data for Cosmos DB, and deciding when/how to integrate Azure-SSIS IR with VNets. |
-| Limits & Quotas | L151-L156 | Info on Data Factory connector lifecycle (preview/GA, deprecation timelines) and configuring Until activity loop behavior, limits, and timeout settings |
-| Security | L157-L184 | Securing Data Factory with identity, encryption, Key Vault, firewall/VNet/Private Link, policies, and secure access to SQL, Purview, SSIS, and self-hosted/managed integration runtimes. |
-| Configuration | L185-L316 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, formats, runtimes (managed, self-hosted, Azure-SSIS), networking, logging/monitoring, DevOps, and advanced copy/CDC patterns. |
-| Integrations & Coding Patterns | L317-L484 | Patterns and how-tos for connecting ADF to many data sources, using mapping data flows and functions, integrating with ML/Synapse/Fabric/SSIS, and automating pipelines via SDKs and APIs. |
-| Deployment | L485-L502 | CI/CD and deployment for Data Factory: ARM/DevOps pipelines, environment promotion, hotfix flows, pre/post scripts, cloning factories, and deploying/managing SHIR and Azure-SSIS runtimes. |
+| Troubleshooting | L34-L90 | Diagnosing and fixing ADF failures: connector/format errors, copy and data flow issues, CI/CD and Studio problems, IR/SSIS runtime and trigger/orchestration troubleshooting. |
+| Best Practices | L91-L111 | Performance, reliability, and DataOps best practices for ADF: tuning data flows/copy/IR, metadata‑driven design, SAP CDC, data lake writes, BCDR, SLAs, and iterative debugging. |
+| Decision Making | L112-L144 | Cost modeling, pricing examples, FinOps, runtime/compute selection, connector upgrades, and migration planning (SSIS, HDFS, S3, Netezza, Fabric) for Azure Data Factory. |
+| Architecture & Design Patterns | L145-L151 | Patterns for building efficient ADF solutions: optimizing mapping data flows, reshaping SQL data for Cosmos DB, and deciding when/how to integrate Azure-SSIS IR with VNets. |
+| Limits & Quotas | L152-L157 | Info on Data Factory connector lifecycle (preview/GA, deprecation timelines) and configuring Until activity loop behavior, limits, and timeout settings |
+| Security | L158-L185 | Securing Data Factory with identity, encryption, Key Vault, firewall/VNet/Private Link, policies, and secure access to SQL, Purview, SSIS, and self-hosted/managed integration runtimes. |
+| Configuration | L186-L317 | Configuring Azure Data Factory: pipelines, activities, triggers, data flows, formats, runtimes (managed, self-hosted, Azure-SSIS), networking, logging/monitoring, DevOps, and advanced copy/CDC patterns. |
+| Integrations & Coding Patterns | L318-L485 | Patterns and how-tos for connecting ADF to many data sources, using mapping data flows and functions, integrating with ML/Synapse/Fabric/SSIS, and automating pipelines via SDKs and APIs. |
+| Deployment | L486-L503 | CI/CD and deployment for Data Factory: ARM/DevOps pipelines, environment promotion, hotfix flows, pre/post scripts, cloning factories, and deploying/managing SHIR and Azure-SSIS runtimes. |
 
 ### Troubleshooting
 | Topic | URL |

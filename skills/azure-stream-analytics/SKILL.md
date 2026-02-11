@@ -1,17 +1,18 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including configuration, security, integrations & coding patterns, deployment, troubleshooting, decision making, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Stream Analytics applications.
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stream Analytics applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Stream Analytics Skill
 
-This skill provides expert guidance for Azure Stream Analytics development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Stream Analytics. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L52 | Diagnosing and fixing Stream Analytics job issues: error codes, data/input/output problems, query debugging (locally/diagrams), UDF debugging, and external/internal service/availability errors. |
-| Best Practices | L53-L70 | Guidance on scaling, performance tuning, reliability, geospatial logic, reference data, ML/Cosmos/SQL outputs, and monitoring/metrics for production Stream Analytics jobs. |
-| Decision Making | L71-L77 | Guidance on choosing Stream Analytics dev tools, migrating projects from Visual Studio to VS Code, and selecting the right Azure real-time streaming service for your scenario. |
-| Architecture & Design Patterns | L78-L83 | Architectural guidance for Stream Analytics: geo-redundant/high-availability designs and reusable solution patterns for ingest, process, and output across Azure services. |
-| Limits & Quotas | L84-L88 | Details on Stream Analytics streaming units: capacity limits, performance tuning, scaling behavior, and how to optimize jobs within SU quotas. |
-| Security | L89-L107 | Securing Stream Analytics jobs: managed identities, encryption, private endpoints/VNet integration, and policy-based access to outputs like Event Hubs, Cosmos DB, SQL, ADX, Power BI, and Service Bus. |
-| Configuration | L108-L136 | Configuring Stream Analytics jobs: inputs/outputs (Cosmos DB, Kafka, Service Bus, PostgreSQL, Tables), autoscale, edge, Protobuf, error handling, credentials, and monitoring/alerts. |
-| Integrations & Coding Patterns | L137-L161 | Connecting Stream Analytics jobs to outputs (Synapse, SQL, Blob/Data Lake, Delta, Power BI, Kafka, Event Hubs), using SDKs/UDFs/ML/anomaly detection, and enabling advanced patterns like upsert. |
-| Deployment | L162-L172 | CI/CD and deployment of Stream Analytics jobs: ARM/Bicep templates, GitHub Actions, Azure DevOps, npm/NuGet tools, REST/IoT Edge, and cross-region cluster moves. |
+| Troubleshooting | L34-L53 | Diagnosing and fixing Stream Analytics job issues: error codes, data/input/output problems, query debugging (locally/diagrams), UDF debugging, and external/internal service/availability errors. |
+| Best Practices | L54-L71 | Guidance on scaling, performance tuning, reliability, geospatial logic, reference data, ML/Cosmos/SQL outputs, and monitoring/metrics for production Stream Analytics jobs. |
+| Decision Making | L72-L78 | Guidance on choosing Stream Analytics dev tools, migrating projects from Visual Studio to VS Code, and selecting the right Azure real-time streaming service for your scenario. |
+| Architecture & Design Patterns | L79-L84 | Architectural guidance for Stream Analytics: geo-redundant/high-availability designs and reusable solution patterns for ingest, process, and output across Azure services. |
+| Limits & Quotas | L85-L89 | Details on Stream Analytics streaming units: capacity limits, performance tuning, scaling behavior, and how to optimize jobs within SU quotas. |
+| Security | L90-L108 | Securing Stream Analytics jobs: managed identities, encryption, private endpoints/VNet integration, and policy-based access to outputs like Event Hubs, Cosmos DB, SQL, ADX, Power BI, and Service Bus. |
+| Configuration | L109-L137 | Configuring Stream Analytics jobs: inputs/outputs (Cosmos DB, Kafka, Service Bus, PostgreSQL, Tables), autoscale, edge, Protobuf, error handling, credentials, and monitoring/alerts. |
+| Integrations & Coding Patterns | L138-L162 | Connecting Stream Analytics jobs to outputs (Synapse, SQL, Blob/Data Lake, Delta, Power BI, Kafka, Event Hubs), using SDKs/UDFs/ML/anomaly detection, and enabling advanced patterns like upsert. |
+| Deployment | L163-L173 | CI/CD and deployment of Stream Analytics jobs: ARM/Bicep templates, GitHub Actions, Azure DevOps, npm/NuGet tools, REST/IoT Edge, and cross-region cluster moves. |
 
 ### Troubleshooting
 | Topic | URL |

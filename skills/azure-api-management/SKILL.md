@@ -1,17 +1,18 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure Api Management development including integrations & coding patterns, limits & quotas, security, decision making, troubleshooting, best practices, configuration, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Api Management applications.
+description: Expert knowledge for Azure Api Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Api Management Skill
 
-This skill provides expert guidance for Azure Api Management development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Api Management. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L42 | Debugging APIM policies and requests, handling policy errors, diagnosing platform issues (SNAT/timeouts, Key Vault certs), and using Diagnose and Solve for common APIM problems |
-| Best Practices | L43-L52 | Scaling, throttling, security hardening (OWASP Top 10), SSE setup, and production/self-hosted gateway & dev portal practices for Azure API Management. |
-| Decision Making | L53-L64 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD planning, VNet choices, monetization features, and migrating from Amazon API Gateway |
-| Architecture & Design Patterns | L65-L72 | Architectural patterns for placing APIM behind VNets, App Gateway, Front Door, or AKS, plus guidance on sustainable gateway configuration and design choices. |
-| Limits & Quotas | L73-L90 | Policies and limits for API Management: rate/quotas per key, concurrency, Azure OpenAI/LLM token limits, import restrictions, and validating requests/responses against API schemas. |
-| Security | L91-L124 | Securing API Management and its portals: authN/Z with Entra ID/B2C/OAuth/JWT, client certs & mTLS, managed identities, TLS/ciphers, CORS, DDoS/Defender, compliance, and LLM content safety. |
-| Configuration | L125-L224 | Configuring Azure API Management behavior: policies, caching (response, key, semantic), networking/VNet, domains, logging/metrics, imports (OpenAPI/GraphQL/gRPC/SOAP), self-hosted gateway, and workspaces. |
-| Integrations & Coding Patterns | L225-L258 | Patterns and examples for integrating APIM with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, logging/monitoring, portals, and external backends via policies and exports |
-| Deployment | L259-L278 | Deploying APIM across regions and networks, self-hosted gateways (K8s, Docker, Arc, AKS, Container Apps), DR/backup/restore, soft-delete recovery, and developer portal deployment options. |
+| Troubleshooting | L34-L43 | Debugging APIM policies and requests, handling policy errors, diagnosing platform issues (SNAT/timeouts, Key Vault certs), and using Diagnose and Solve for common APIM problems |
+| Best Practices | L44-L55 | Scaling, throttling, security hardening (OWASP), policy best practices, SSE setup, and production/self-hosted gateway and dev portal guidance for Azure API Management |
+| Decision Making | L56-L67 | Guidance on APIM scaling, pricing tiers, cost management, DevOps/CI-CD planning, VNet choices, monetization features, and migrating from Amazon API Gateway |
+| Architecture & Design Patterns | L68-L78 | Architectural patterns for APIM: VNet + App Gateway, AKS microservices, Front Door, policy fragments, shared metadata caching, and sustainability-focused gateway design. |
+| Limits & Quotas | L79-L96 | Policies and limits for API Management: rate/quotas per key, concurrency, Azure OpenAI/LLM token limits, import restrictions, and validating requests/responses against API schemas. |
+| Security | L97-L130 | Securing API Management and its portals: auth (Entra ID/B2C/OAuth/JWT), certificates/TLS/CORS, managed identities, RBAC, DDoS/Defender, compliance, and LLM content safety policies. |
+| Configuration | L131-L230 | Configuring Azure API Management behavior: policies, caching, networking/VNet, domains, logging/metrics, GraphQL/gRPC/OData imports, self-hosted gateways, and workspace/update migrations. |
+| Integrations & Coding Patterns | L231-L264 | Patterns and examples for integrating APIM with LLMs, MCP, SAP, Dapr, Service Bus/Event Hubs/Event Grid, logging/monitoring, portals, and external backends via policies and exports |
+| Deployment | L265-L284 | Deploying APIM across regions and networks, self-hosted gateways (K8s, Docker, Arc, AKS, Container Apps), DR/backup/restore, soft-delete recovery, and developer portal deployment options. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,10 +46,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Configure autoscale rules for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-autoscale |
 | Implement advanced throttling in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-flexible-throttling |
-| Test self-hosted Azure API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-testing |
+| Implement testing for self-hosted API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-testing |
+| Manage context variables in APIM policy fragments safely | https://learn.microsoft.com/en-us/azure/api-management/fragment-variable-management |
 | Run API Management self-hosted gateway on Kubernetes in production | https://learn.microsoft.com/en-us/azure/api-management/how-to-self-hosted-gateway-on-kubernetes-in-production |
 | Configure server-sent events (SSE) APIs in API Management | https://learn.microsoft.com/en-us/azure/api-management/how-to-server-sent-events |
 | Mitigate OWASP API Security Top 10 using Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/mitigate-owasp-api-threats |
+| Apply transformation and throttling policies in API Management | https://learn.microsoft.com/en-us/azure/api-management/transform-api |
 
 ### Decision Making
 | Topic | URL |
@@ -67,6 +70,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Pattern: APIM in internal VNet with Application Gateway | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-integrate-internal-vnet-appgateway |
 | Use API Management with AKS-based microservices architectures | https://learn.microsoft.com/en-us/azure/api-management/api-management-kubernetes |
+| Implement shared metadata caching across APIM policy fragments | https://learn.microsoft.com/en-us/azure/api-management/fragment-metadata-cache |
+| Design advanced policy fragment execution pipelines in APIM | https://learn.microsoft.com/en-us/azure/api-management/fragment-pipeline-architecture |
+| Coordinate APIM product and API policies with fragments | https://learn.microsoft.com/en-us/azure/api-management/fragment-policy-coordination |
 | Front Azure API Management with Azure Front Door | https://learn.microsoft.com/en-us/azure/api-management/front-door-api-management |
 | Apply sustainability-focused gateway features in API Management | https://learn.microsoft.com/en-us/azure/api-management/sustainability |
 
@@ -98,7 +104,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Authorize external users via Entra External ID | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-entra-external-id |
 | Configure TLS protocols and cipher suites in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers |
 | Configure client certificate authentication for API Management backends | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates |
-| Secure APIs with client certificate and mutual TLS in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates-for-clients |
+| Configure client certificate authentication in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates-for-clients |
 | Configure OAuth 2.0 authorization for API Management test console | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-oauth2 |
 | Protect APIs with OAuth 2.0 and Microsoft Entra in API Management | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad |
 | Use managed identities with Azure API Management securely | https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-use-managed-service-identity |
@@ -190,7 +196,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Mock backend responses using mock-response policy | https://learn.microsoft.com/en-us/azure/api-management/mock-response-policy |
 | Configure monitoring for Azure API Management with Azure Monitor | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management |
 | Use Azure Monitor metrics and logs for API Management | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference |
-| Create and reuse policy fragments in API Management | https://learn.microsoft.com/en-us/azure/api-management/policy-fragments |
+| Create and manage reusable API Management policy fragments | https://learn.microsoft.com/en-us/azure/api-management/policy-fragments |
 | Configure inbound private endpoint for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/private-endpoint |
 | Route API Management traffic through HTTP proxy with proxy policy | https://learn.microsoft.com/en-us/azure/api-management/proxy-policy |
 | Publish GraphQL subscription events with publish-event policy | https://learn.microsoft.com/en-us/azure/api-management/publish-event-policy |

@@ -1,17 +1,18 @@
 ---
 name: azure-hdinsight
-description: Expert knowledge for Azure Hdinsight development including configuration, integrations & coding patterns, best practices, troubleshooting, security, architecture & design patterns, decision making, deployment, and limits & quotas. Use when building, debugging, or optimizing Azure Hdinsight applications.
+description: Expert knowledge for Azure Hdinsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Hdinsight applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Hdinsight Skill
 
-This skill provides expert guidance for Azure Hdinsight development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Hdinsight. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
 This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
@@ -20,15 +21,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L129 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN errors, performance, disk/CPU, and common operational failures. |
-| Best Practices | L130-L167 | Best practices for securing, configuring, tuning, scaling, and migrating HDInsight clusters and workloads (Hadoop, Hive, HBase, Kafka, Spark), including performance and reliability guidance |
-| Decision Making | L168-L186 | Guidance on HDInsight architecture choices: cluster sizing, storage, networking, ETL tools, HBase/Kafka options, and migration/upgrade paths between HDInsight versions. |
-| Architecture & Design Patterns | L187-L196 | HDInsight solution architectures: security (ESP), Hadoop migration, business continuity/HA, virtual network design, and scaling Kafka clusters with managed disks. |
-| Limits & Quotas | L197-L203 | Node size/count limits, using external Hive/Oozie metastores, and requesting/managing HDInsight CPU core quota increases. |
-| Security | L204-L246 | Securing HDInsight clusters: identity and auth (Entra, MSI, Ranger, LDAP), encryption at rest/in transit, Kafka/Hive/Spark security, and network lockdown (Private Link, NSGs, firewalls, RBAC). |
-| Configuration | L247-L299 | Configuring and tuning HDInsight clusters: networking, security, autoscale, Ambari/Hive/HBase/Kafka/Spark settings, SSH/Jupyter/Zeppelin access, logging/monitoring, and cluster customization. |
-| Integrations & Coding Patterns | L300-L374 | Patterns and code samples for connecting HDInsight (Hive, Spark, Kafka, HBase, Sqoop) to tools and services (Power BI, Excel, SQL, Cosmos DB, IoT, REST, SDKs) and automating cluster/jobs. |
-| Deployment | L375-L384 | Guides for deploying and upgrading HDInsight/HBase clusters, including migrations across versions/storage, ARM/REST/template-based creation, and automating cluster lifecycle with runbooks. |
+| Troubleshooting | L34-L130 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN errors, performance, disk/CPU, and common operational failures. |
+| Best Practices | L131-L168 | Best practices for securing, configuring, tuning, scaling, and migrating HDInsight clusters and workloads (Hadoop, Hive, HBase, Kafka, Spark), including performance and reliability guidance |
+| Decision Making | L169-L187 | Guidance on HDInsight architecture choices: cluster sizing, storage, networking, ETL tools, HBase/Kafka options, and migration/upgrade paths between HDInsight versions. |
+| Architecture & Design Patterns | L188-L197 | HDInsight solution architectures: security (ESP), Hadoop migration, business continuity/HA, virtual network design, and scaling Kafka clusters with managed disks. |
+| Limits & Quotas | L198-L204 | Node size/count limits, using external Hive/Oozie metastores, and requesting/managing HDInsight CPU core quota increases. |
+| Security | L205-L247 | Securing HDInsight clusters: identity and auth (Entra, MSI, Ranger, LDAP), encryption at rest/in transit, Kafka/Hive/Spark security, and network lockdown (Private Link, NSGs, firewalls, RBAC). |
+| Configuration | L248-L300 | Configuring and tuning HDInsight clusters: networking, security, autoscale, Ambari/Hive/HBase/Kafka/Spark settings, SSH/Jupyter/Zeppelin access, logging/monitoring, and cluster customization. |
+| Integrations & Coding Patterns | L301-L375 | Patterns and code samples for connecting HDInsight (Hive, Spark, Kafka, HBase, Sqoop) to tools and services (Power BI, Excel, SQL, Cosmos DB, IoT, REST, SDKs) and automating cluster/jobs. |
+| Deployment | L376-L385 | Guides for deploying and upgrading HDInsight/HBase clusters, including migrations across versions/storage, ARM/REST/template-based creation, and automating cluster lifecycle with runbooks. |
 
 ### Troubleshooting
 | Topic | URL |

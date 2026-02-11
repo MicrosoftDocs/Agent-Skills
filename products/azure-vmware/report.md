@@ -36,10 +36,10 @@ category_descriptions:
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 133
-- **Deleted Pages**: 1
+- **Unchanged**: 134
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware/azure-vmware.csv`
 
 ## Classification Statistics
@@ -57,14 +57,6 @@ category_descriptions:
 | *(Unclassified)* | 28 | 20.9% |
 
 ## Changes
-
-### New Pages
-
-- [Enable VMware Cloud Director Service with Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-cds-with-azure)
-
-### Deleted Pages
-
-- ~~Enable VMware Cloud Director Service with Azure VMware solution~~ (https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-cds-with-azure)
 
 ## Classified Pages
 

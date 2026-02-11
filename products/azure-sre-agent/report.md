@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-11'
 category_descriptions:
   security: Managing SRE Agent identities, RBAC roles, permissions, run modes/consent,
     and understanding its data residency, privacy, and access control model
@@ -22,8 +22,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
@@ -38,6 +38,11 @@ category_descriptions:
 | *(Unclassified)* | 11 | 44.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Connect to external services](https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
+  - Updated: 2026-02-04T06:14:00.000Z → 2026-02-10T23:11:00.000Z
 
 ## Classified Pages
 
@@ -70,6 +75,6 @@ category_descriptions:
 | [Billing](https://learn.microsoft.com/en-us/azure/sre-agent/billing) | 0.30 | Billing description is likely conceptual (explaining always-on vs task-based actions) without concrete rate tables, numeric quotas, or decision matrices; it doesn’t clearly match any expert-knowledge sub-skill type. |
 | [Diagnose your first incident](https://learn.microsoft.com/en-us/azure/sre-agent/usage) | 0.30 | How-to usage/creation tutorial; likely step-by-step UI guidance without detailed config tables or expert-only parameters. |
 | [About Azure SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/overview) | 0.20 | High-level product overview of Azure SRE Agent; no concrete limits, configs, roles, or error mappings. |
-| [Connect to external services](https://learn.microsoft.com/en-us/azure/sre-agent/connectors) | 0.20 | Summary indicates a conceptual explanation of connector types and setup for Azure SRE Agent without mention of specific limits, configuration parameter tables, error codes, or other detailed product-specific settings. Likely a general integration/overview article rather than expert-knowledge reference content. |
 | [Ask the agent for help](https://learn.microsoft.com/en-us/azure/sre-agent/ask-agent) | 0.10 | Explains learning via chat and sample prompts; conceptual usage, no product-specific limits, configs, or error codes. |
 | [Starter prompts](https://learn.microsoft.com/en-us/azure/sre-agent/prompts) | 0.10 | Starter prompt examples are usage guidance, not configuration, limits, or troubleshooting mappings. |
+| [Connect to external services](https://learn.microsoft.com/en-us/azure/sre-agent/connectors) | - | Connector article appears to be a conceptual/how-to overview of connecting external services to Azure SRE Agent, without clear evidence of detailed configuration tables, numeric limits, specific error codes, or product-specific parameter matrices that meet any sub-skill detection criteria. |
