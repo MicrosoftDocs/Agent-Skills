@@ -43,13 +43,13 @@ Not sure which skills to install? Choose a bundle based on your role or project 
 
 ### 🧭 Architecture & Adoption Foundations (Essentials)
 
-These skills are **cross-cutting**: they apply across many Azure services and help teams make consistent architecture and adoption decisions.
+These skills are **cross-cutting**: they apply across many Azure services and help teams make consistent architecture and adoption decisions. All of them provide **service-agnostic guidance** and are **framework / patterns driven**.
 
-| Skill | Focus | Cross-cutting | Service-agnostic guidance | Framework / patterns driven |
-|-------|-------|---------------|---------------------------|-----------------------------|
-| [azure-well-architected](../skills/azure-well-architected/) | Workload design and review using the Well-Architected pillars | ✓ | ✓ | ✓ |
-| [azure-cloud-adoption-framework](../skills/azure-cloud-adoption-framework/) | Adoption strategy, planning, and governance guidance | ✓ | ✓ | ✓ |
-| [azure-architecture](../skills/azure-architecture/) | Architecture patterns and reference architectures from the Azure Architecture Center | ✓ | ✓ | ✓ |
+| Skill | Focus |
+|-------|-------|
+| [azure-well-architected](../skills/azure-well-architected/) | Workload design and review using the Well-Architected pillars |
+| [azure-cloud-adoption-framework](../skills/azure-cloud-adoption-framework/) | Adoption strategy, planning, and governance guidance |
+| [azure-architecture](../skills/azure-architecture/) | Architecture patterns and reference architectures from the Azure Architecture Center |
 
 ---
 
