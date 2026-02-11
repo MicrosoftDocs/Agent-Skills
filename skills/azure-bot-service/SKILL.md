@@ -1,34 +1,37 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure Bot Service development including configuration, integrations & coding patterns, security, architecture & design patterns, best practices, limits & quotas, decision making, deployment, and troubleshooting. Use when building, debugging, or optimizing Azure Bot Service applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Bot Service applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Bot Service Skill
 
-This skill provides expert guidance for Azure Bot Service development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing bot runtime (HTTP 500), auth, channel/configuration errors, and other common Azure Bot Service issues with step-by-step troubleshooting guidance. |
-| Best Practices | L41-L50 | Guidance on conversation lifecycle, interruptions, security, welcome flows, debugging, and unit testing to build robust, safe, and maintainable Azure Bot Framework v4 bots. |
-| Decision Making | L51-L56 | Guidance on choosing the right Microsoft chatbot platform and selecting the best Direct Line channel option based on architecture, features, and integration needs. |
-| Architecture & Design Patterns | L57-L65 | Designing complex bot dialog flows, modular components, multi-LUIS/QnA routing with Orchestrator, and embedding bots into native apps or websites. |
-| Limits & Quotas | L66-L71 | Guidance on bot timeouts/long-running operations and a matrix of which features are supported on each Azure Bot Service channel. |
-| Security | L72-L92 | Authentication, SSO, OAuth/OIDC, identity providers, Direct Line/Web Chat auth, encryption, privacy, and network isolation/security configuration for Azure Bot Service. |
-| Configuration | L93-L130 | Configuring and debugging Azure bots: state/storage, adaptive dialogs, channels (Direct Line), skills, telemetry (App Insights), language assets (.lg/.lu/.qna), and Emulator-based troubleshooting. |
-| Integrations & Coding Patterns | L131-L187 | Patterns and APIs for integrating bots with channels and services (Direct Line, Web Chat, SMS, email, QnA, LUIS), sending rich messages/media, dialogs, skills, telemetry, and custom storage. |
-| Deployment | L188-L199 | Deploying and registering bots (incl. external/sovereign clouds), setting up App Service and resources via CLI/ARM, and using Dev Tunnels to debug channels and skills. |
+| Troubleshooting | L36-L43 | Diagnosing and fixing bot runtime (HTTP 500), auth, channel/configuration errors, and other common Azure Bot Service issues with step-by-step troubleshooting guidance. |
+| Best Practices | L44-L53 | Guidance on conversation lifecycle, interruptions, security, welcome flows, debugging, and unit testing to build robust, safe, and maintainable Azure Bot Framework v4 bots. |
+| Decision Making | L54-L59 | Guidance on choosing the right Microsoft chatbot platform and selecting the best Direct Line channel option based on architecture, features, and integration needs. |
+| Architecture & Design Patterns | L60-L68 | Designing complex bot dialog flows, modular components, multi-LUIS/QnA routing with Orchestrator, and embedding bots into native apps or websites. |
+| Limits & Quotas | L69-L74 | Guidance on bot timeouts/long-running operations and a matrix of which features are supported on each Azure Bot Service channel. |
+| Security | L75-L95 | Authentication, SSO, OAuth/OIDC, identity providers, Direct Line/Web Chat auth, encryption, privacy, and network isolation/security configuration for Azure Bot Service. |
+| Configuration | L96-L133 | Configuring and debugging Azure bots: state/storage, adaptive dialogs, channels (Direct Line), skills, telemetry (App Insights), language assets (.lg/.lu/.qna), and Emulator-based troubleshooting. |
+| Integrations & Coding Patterns | L134-L190 | Patterns and APIs for integrating bots with channels and services (Direct Line, Web Chat, SMS, email, QnA, LUIS), sending rich messages/media, dialogs, skills, telemetry, and custom storage. |
+| Deployment | L191-L202 | Deploying and registering bots (incl. external/sovereign clouds), setting up App Service and resources via CLI/ARM, and using Dev Tunnels to debug channels and skills. |
 
 ### Troubleshooting
 | Topic | URL |

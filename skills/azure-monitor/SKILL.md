@@ -1,34 +1,37 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, configuration, deployment, decision making, limits & quotas, security, integrations & coding patterns, best practices, and architecture & design patterns. Use when building, debugging, or optimizing Azure Monitor applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Monitor applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Monitor Skill
 
-This skill provides expert guidance for Azure Monitor development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L75 | Diagnosing and fixing Azure Monitor issues: agents, data collection, alerts, autoscale, logs/metrics, Container insights, Application Insights, ITSM, and VM performance tools. |
-| Best Practices | L76-L108 | Best practices for Azure Monitor alerts, logs, metrics, autoscale, AKS/VM monitoring, cost optimization, Prometheus/PromQL, and operational reliability/performance tuning. |
-| Decision Making | L109-L142 | Guidance for choosing Azure Monitor features and planning migrations (agents, alerts, logs, costs, visualization, SCOM/Splunk/Prometheus) to optimize monitoring and billing. |
-| Architecture & Design Patterns | L143-L153 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link-based secure topologies. |
-| Limits & Quotas | L154-L173 | Scaling, throughput, and quota limits for Azure Monitor logs/metrics, including ingestion caps, timeouts, autoscale, container/Prometheus performance, and alert/workbook constraints. |
-| Security | L174-L207 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, Prometheus/Grafana, and policy compliance. |
-| Configuration | L208-L381 | Configuring Azure Monitor data collection, alerts, diagnostics, workspaces, autoscale, Kubernetes/VM monitoring, Application Insights, OpenTelemetry, and related schemas, policies, and pipelines. |
-| Integrations & Coding Patterns | L382-L454 | Integrating Azure Monitor with VMs, Prometheus, alerts, webhooks, ITSM, Grafana, REST APIs, and custom code to ingest, query, export, and correlate metrics and logs. |
-| Deployment | L455-L484 | How to deploy and manage Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments. |
+| Troubleshooting | L36-L78 | Diagnosing and fixing Azure Monitor issues: agent/extension problems, data collection and ingestion errors, alerts/notifications, autoscale, Container/VM insights, and Application Insights telemetry. |
+| Best Practices | L79-L111 | Best practices for Azure Monitor alerts, logs, metrics, autoscale, AKS/VM monitoring, cost optimization, Prometheus/PromQL, and operational reliability/performance tuning. |
+| Decision Making | L112-L145 | Guidance for choosing Azure Monitor features and planning migrations (agents, alerts, logs, costs, visualization, SCOM/Splunk/Prometheus) to optimize monitoring and billing. |
+| Architecture & Design Patterns | L146-L156 | Architectural guidance for Azure Monitor: workspace design/replication, managed workspaces, autoscale patterns, network security perimeters, and Private Link-based secure topologies. |
+| Limits & Quotas | L157-L176 | Scaling, throughput, and quota limits for Azure Monitor logs/metrics, including ingestion caps, timeouts, autoscale, container/Prometheus performance, and alert/workbook constraints. |
+| Security | L177-L210 | Securing Azure Monitor and Log Analytics: auth (Entra, managed identity), RBAC and row/table access, Private Link/network isolation, CMK/BYOS, secure webhooks, Prometheus/Grafana, and policy compliance. |
+| Configuration | L211-L384 | Configuring Azure Monitor data collection, alerts, diagnostics, workspaces, autoscale, Kubernetes/VM monitoring, Application Insights, OpenTelemetry, and related schemas, policies, and pipelines. |
+| Integrations & Coding Patterns | L385-L457 | Integrating Azure Monitor with VMs, Prometheus, alerts, webhooks, ITSM, Grafana, REST APIs, and custom code to ingest, query, export, and correlate metrics and logs. |
+| Deployment | L458-L487 | How to deploy and manage Azure Monitor agents, alerts, workbooks, and Application Insights/Profiler across VMs, AKS, App Service, containers, and hybrid environments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -54,7 +57,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Diagnose and fix log search alert rule health issues | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/log-alert-rule-health |
 | Troubleshoot test action group notification errors | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/test-action-group-errors |
 | Troubleshoot and get support for OpenTelemetry in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-help-support-feedback |
-| Troubleshoot missing telemetry using SDK stats metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats |
+| Diagnose missing telemetry with Application Insights SDK stats | https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats |
 | Troubleshoot Azure Monitor autoscale issues | https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-troubleshoot |
 | Use Live Data in Container insights for real-time troubleshooting | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-overview |
 | Troubleshoot Container insights log collection issues | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-troubleshoot |

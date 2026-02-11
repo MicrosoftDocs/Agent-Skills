@@ -1,34 +1,37 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including deployment, security, best practices, decision making, configuration, architecture & design patterns, integrations & coding patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Synapse Analytics applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Synapse Analytics applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Synapse Analytics Skill
 
-This skill provides expert guidance for Azure Synapse Analytics development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L54 | Diagnosing and fixing Synapse workspace, SQL/serverless, Spark, Synapse Link, and Studio connectivity issues, including errors, failover, tenant moves, libraries, and UTF-8 text problems. |
-| Best Practices | L55-L109 | Performance, monitoring, and design best practices for Synapse: Spark and SQL tuning, indexing, caching, workload management, data loading, T‑SQL patterns, and migrating from Netezza/Oracle/Teradata. |
-| Decision Making | L110-L130 | Guidance on planning Synapse adoption, POCs, migrations (Netezza/Teradata/enterprise DW), cost management, data ingestion, table distribution, and historical query analysis. |
-| Architecture & Design Patterns | L131-L146 | Architectural guidance for Synapse workspaces, SQL (dedicated/serverless), Spark, table distribution/partitioning, workload isolation/management, and modern DW design/migration from Netezza/Teradata. |
-| Limits & Quotas | L147-L158 | Limits, quotas, and configuration for Synapse networking, Spark autoscale, SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos DB/SQL) features and restrictions. |
-| Security | L159-L210 | Security, identity, and access control for Synapse: RBAC, Entra auth, MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and secure connectivity to data sources. |
-| Configuration | L211-L250 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML, and pipeline activities. |
-| Integrations & Coding Patterns | L251-L305 | Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI services, Cosmos DB, Delta, external storage, monitoring tools, and to load/query data via COPY, PolyBase, OPENROWSET, CETAS. |
-| Deployment | L306-L316 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM template deployment, environment design (dev/test/prod), region moves, restore points, and recovery. |
+| Troubleshooting | L36-L57 | Diagnosing and fixing Synapse workspace, SQL/serverless, Spark, Synapse Link, and Studio connectivity issues, including errors, failover, tenant moves, libraries, and UTF-8 text problems. |
+| Best Practices | L58-L112 | Performance, monitoring, and design best practices for Synapse: Spark and SQL tuning, indexing, caching, workload management, data loading, T‑SQL patterns, and migrating from Netezza/Oracle/Teradata. |
+| Decision Making | L113-L133 | Guidance on planning Synapse adoption, POCs, migrations (Netezza/Teradata/enterprise DW), cost management, data ingestion, table distribution, and historical query analysis. |
+| Architecture & Design Patterns | L134-L149 | Architectural guidance for Synapse workspaces, SQL (dedicated/serverless), Spark, table distribution/partitioning, workload isolation/management, and modern DW design/migration from Netezza/Teradata. |
+| Limits & Quotas | L150-L161 | Limits, quotas, and configuration for Synapse networking, Spark autoscale, SQL pool capacity/concurrency, Delta Lake v1 queries, and Synapse Link (Cosmos DB/SQL) features and restrictions. |
+| Security | L162-L213 | Security, identity, and access control for Synapse: RBAC, Entra auth, MFA, encryption, data exfiltration, private link/VNet, firewalls, policies, and secure connectivity to data sources. |
+| Configuration | L214-L253 | Configuring Synapse workspaces: Spark runtimes, pools, libraries, lake databases, SQL workloads, monitoring/metrics, Synapse Link, AML/SynapseML, and pipeline activities. |
+| Integrations & Coding Patterns | L254-L308 | Patterns and code to integrate Synapse Spark/SQL with ADLS, ML/AI services, Cosmos DB, Delta, external storage, monitoring tools, and to load/query data via COPY, PolyBase, OPENROWSET, CETAS. |
+| Deployment | L309-L319 | Deploying and managing Synapse workspaces and dedicated SQL pools: CI/CD setup, ARM template deployment, environment design (dev/test/prod), region moves, restore points, and recovery. |
 
 ### Troubleshooting
 | Topic | URL |

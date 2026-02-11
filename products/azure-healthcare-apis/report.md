@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   security: Configuring auth, RBAC, identity providers, tokens, network isolation,
     encryption, compliance, and app registration to securely access and protect FHIR,
@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 210
+- **Updated Pages**: 1
+- **Unchanged**: 209
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-healthcare-apis/azure-healthcare-apis.csv`
 
@@ -59,6 +59,11 @@ category_descriptions:
 | *(Unclassified)* | 77 | 36.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
+  - Updated: 2026-02-04T23:15:00.000Z → 2026-02-10T18:36:00.000Z
 
 ## Classified Pages
 
@@ -258,6 +263,7 @@ category_descriptions:
 | [Open-source projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/git-projects) | 0.25 | Overview of GitHub OSS projects for MedTech; likely descriptive and linking to code rather than listing product configuration parameters or troubleshooting mappings. |
 | [Overview of device mapping](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview-of-device-mapping) | 0.25 | Overview of device mapping; primarily conceptual description of how mapping works, not a detailed configuration or troubleshooting reference. |
 | [Overview of the FHIR destination mapping](https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview-of-fhir-destination-mapping) | 0.25 | Overview of FHIR destination mapping; appears conceptual without detailed parameter tables, limits, or troubleshooting mappings. |
+| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | 0.20 | Monthly release notes typically list new features and fixes but not structured limits, configuration matrices, security roles, or troubleshooting mappings as defined by the sub-skill types. Without evidence of specific quotas, config tables, error-code mappings, or decision matrices, this is general product update information rather than reusable expert knowledge for the skills system. |
 | [Access Azure Health Data Services](https://learn.microsoft.com/en-us/azure/healthcare-apis/access-healthcare-apis) | 0.20 | High-level guidance on accessing services using cURL/REST/SDKs; appears tutorial/overview without detailed config tables, limits, or product-specific error mappings. |
 | [CMS interoperability and patient access rule](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/centers-for-medicare-tutorial-introduction) | 0.20 | Series introduction/overview for CMS interoperability tutorials; primarily conceptual and navigational, not detailed configuration or troubleshooting content. |
 | [DICOM service open-source projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/references-for-dicom-service) | 0.20 | Reference page is primarily a link hub to open-source projects and related resources; no concrete limits, configs, error codes, or product-specific settings are described. |
@@ -278,4 +284,3 @@ category_descriptions:
 | [GitHub Projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/fhir-github-projects) | 0.10 | Lists related GitHub projects for Azure API for FHIR. This is a navigation/index page to external repos, not in-product limits, configs, or troubleshooting content. |
 | [GitHub projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/github-projects) | 0.10 | Navigation-style list of GitHub projects; does not itself contain configuration tables, limits, or troubleshooting mappings. |
 | [What is Azure Health Data Services?](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview) | 0.10 | High-level product overview of Azure Health Data Services without concrete limits, configs, or error details. |
-| [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026) | - | Release notes summary; description does not indicate detailed limits, configuration tables, error codes, or other structured expert knowledge per the defined sub-skills. |

@@ -1,34 +1,37 @@
 ---
 name: azure-storage
-description: Expert knowledge for Azure Storage development including best practices, configuration, decision making, security, limits & quotas, integrations & coding patterns, troubleshooting, deployment, and architecture & design patterns. Use when building, debugging, or optimizing Azure Storage applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Storage development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Storage applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Storage Skill
 
-This skill provides expert guidance for Azure Storage development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing issues with BlobFuse mounts/I/O, lifecycle management policy runs, Azure Container Storage v1, and Azure Elastic SAN performance and reliability. |
-| Best Practices | L41-L85 | Performance, resiliency, and monitoring best practices for Blob, Data Lake, Files, Queues, Tables, and Elastic SAN, including tuning, retries, DR, and workload-specific optimizations. |
-| Decision Making | L86-L128 | Cost, performance, and redundancy decision guides for Blob, Data Lake, Container Storage, Elastic SAN, and Azure Files, including tiering, migration choices, DR, and billing/discount options. |
-| Architecture & Design Patterns | L129-L139 | Designing scalable, query-efficient Azure Table schemas, modeling relationships, handling updates, and using/avoiding key design patterns, plus clustered app access to shared Elastic SAN volumes. |
-| Limits & Quotas | L140-L169 | Limits, quotas, performance targets, and known issues for Azure Storage services (Blobs, Files, Queues, Tables, Data Lake, Elastic SAN), including retention, sizing, and throttling behavior. |
-| Security | L170-L248 | Configuring secure access, encryption, RBAC/ABAC, ACLs, SAS tokens, networking, and auth (Entra ID, VPN, Kerberos, SFTP) for Azure Blob, Data Lake, Files, Queues, Tables, and Elastic SAN. |
-| Configuration | L249-L329 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, BlobFuse, NFS/SFTP, static sites, Container Storage, Azure Files/File Sync, and monitoring/alerts for all storage types. |
-| Integrations & Coding Patterns | L330-L446 | Code samples and patterns for integrating Azure Storage with apps and analytics: mounting, SAS, leases, tiers, encryption, ADLS Gen2, Databricks/Synapse, and full CRUD in .NET/Java/JS/Python/Go/CLI/PowerShell. |
-| Deployment | L447-L455 | Guides for deploying and configuring storage: static website hosting (GitHub Actions, Terraform), checking Blob/Data Lake Gen2 support, and deploying/migrating Azure File Sync. |
+| Troubleshooting | L36-L43 | Diagnosing and fixing issues with BlobFuse mounts/I/O, lifecycle management policy runs, Azure Container Storage v1, and Azure Elastic SAN performance and reliability. |
+| Best Practices | L44-L88 | Performance, resiliency, and monitoring best practices for Blob, Data Lake, Files, Queues, Tables, and Elastic SAN, including tuning, retries, DR, and workload-specific optimizations. |
+| Decision Making | L89-L131 | Cost, performance, and redundancy decision guides for Blob, Data Lake, Container Storage, Elastic SAN, and Azure Files, including tiering, migration choices, DR, and billing/discount options. |
+| Architecture & Design Patterns | L132-L142 | Designing scalable, query-efficient Azure Table schemas, modeling relationships, handling updates, and using/avoiding key design patterns, plus clustered app access to shared Elastic SAN volumes. |
+| Limits & Quotas | L143-L172 | Limits, quotas, performance targets, and known issues for Azure Storage services (Blobs, Files, Queues, Tables, Data Lake, Elastic SAN), including retention, sizing, and throttling behavior. |
+| Security | L173-L251 | Configuring secure access, encryption, RBAC/ABAC, ACLs, SAS tokens, networking, and auth (Entra ID, VPN, Kerberos, SFTP) for Azure Blob, Data Lake, Files, Queues, Tables, and Elastic SAN. |
+| Configuration | L252-L330 | Configuring Azure Storage services: blob tiers, lifecycle, encryption, BlobFuse, NFS/SFTP, static sites, Container Storage, Azure Files/File Sync, and monitoring/alerts for all storage types. |
+| Integrations & Coding Patterns | L331-L449 | Code samples and patterns for integrating Azure Storage with apps and services: mounting, SAS, leases, tiers, encryption, ADLS/Blob operations, Databricks/Synapse, and Kubernetes/Elastic SAN/File/Queue/Table usage. |
+| Deployment | L450-L458 | Guides for deploying and configuring storage: static website hosting (GitHub Actions, Terraform), checking Blob/Data Lake Gen2 support, and deploying/migrating Azure File Sync. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -290,8 +293,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure storage pool parameters for Azure Container Storage v1 | https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-storage-pool-parameters |
 | Configure Prometheus-based monitoring for Azure Container Storage | https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-monitoring |
 | Control local CSI driver placement via node affinity | https://learn.microsoft.com/en-us/azure/storage/container-storage/manage-local-container-storage-interface-driver-placement |
-| Configure Container Storage to use Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san |
-| Configure Azure Container Storage with local NVMe | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk |
 | Use Azure Managed Grafana dashboards for Container Storage | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-grafana-dashboard |
 | Use Azure Elastic SAN metrics for performance monitoring | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics |
 | Silently install and configure Azure File Sync agent | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-agent-silent-installation |
@@ -432,6 +433,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | List Azure blobs with Python client library | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list-python |
 | Encrypt and decrypt blobs using Azure Key Vault keys | https://learn.microsoft.com/en-us/azure/storage/blobs/storage-encrypt-decrypt-blobs-key-vault |
 | Create and list Azure blob versions with .NET | https://learn.microsoft.com/en-us/azure/storage/blobs/versions-manage-dotnet |
+| Configure Azure Container Storage with Azure Elastic SAN | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san |
+| Configure Azure Container Storage with local NVMe on AKS | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk |
 | Integrate Container Storage v1 with Azure managed disks | https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-managed-disks |
 | Integrate Azure Elastic SAN with AKS via iSCSI CSI | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-aks |
 | Connect Linux clients to Azure Elastic SAN over iSCSI | https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-linux |

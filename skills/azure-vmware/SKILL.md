@@ -1,33 +1,36 @@
 ---
 name: azure-vmware
-description: Expert knowledge for Azure Vmware development including configuration, architecture & design patterns, decision making, security, troubleshooting, best practices, integrations & coding patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Vmware applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Vmware development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Vmware applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Vmware Skill
 
-This skill provides expert guidance for Azure Vmware development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and resolving Azure VMware Solution deployment and platform issues, including known errors, workarounds, log collection, and how to open/support tickets for failed AVS deployments. |
-| Best Practices | L38-L44 | Best practices for AVS operations: safely maintaining private clouds, optimizing NSX scale/performance for HCX migrations, and configuring HCX Mobility Optimized Networking. |
-| Decision Making | L45-L57 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instances, HCX options, API Management SKUs, and cross-region/VCF deployment strategies. |
-| Architecture & Design Patterns | L58-L78 | Network, storage, and private cloud design patterns for AVS, including hub-spoke, internet and VNet connectivity, multi-cloud/on-prem links, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub. |
-| Limits & Quotas | L79-L88 | Host, cluster, routing, storage, and quota limits for Azure VMware Solution, including planning capacity, deploying/scaling clusters, and requesting/managing host quota. |
-| Security | L89-L102 | Securing AVS: identity/role config, external identity sources, Defender for Cloud, vSAN CMK, Trusted Launch/vTPM, service principal setup, credential rotation, and security best practices. |
-| Configuration | L103-L153 | Configuring AVS environments: networking (NSX, DHCP/DNS, routing, interconnect), storage/backup (vSAN, ANF, Elastic SAN, Pure, Cloud Backup), Arc/guest mgmt, DR (SRM, Zerto, JetStream), and monitoring/logs. |
-| Integrations & Coding Patterns | L154-L168 | Networking, HCX setup/migration, and integrating AVS workloads with Azure services (vWAN VPN, Traffic Manager, App Gateway, Aria Ops, Cloud Director, cross-cloud migrations). |
+| Troubleshooting | L35-L40 | Diagnosing and resolving Azure VMware Solution deployment and platform issues, including known errors, workarounds, log collection, and how to open/support tickets for failed AVS deployments. |
+| Best Practices | L41-L47 | Best practices for AVS operations: safely maintaining private clouds, optimizing NSX scale/performance for HCX migrations, and configuring HCX Mobility Optimized Networking. |
+| Decision Making | L48-L60 | Guidance on choosing AVS migration, backup, DR, licensing, reserved instances, HCX options, API Management SKUs, and cross-region/VCF deployment strategies. |
+| Architecture & Design Patterns | L61-L81 | Network, storage, and private cloud design patterns for AVS, including hub-spoke, internet and VNet connectivity, multi-cloud/on-prem links, vSAN, and reference architectures for Citrix, Horizon, VCD, and GitHub. |
+| Limits & Quotas | L82-L91 | Host, cluster, routing, storage, and quota limits for Azure VMware Solution, including planning capacity, deploying/scaling clusters, and requesting/managing host quota. |
+| Security | L92-L105 | Securing AVS: identity/role config, external identity sources, Defender for Cloud, vSAN CMK, Trusted Launch/vTPM, service principal setup, credential rotation, and security best practices. |
+| Configuration | L106-L156 | Configuring AVS environments: networking (NSX, DHCP/DNS, routing, interconnect), storage/backup (vSAN, ANF, Elastic SAN, Pure, Cloud Backup), Arc/guest mgmt, DR (SRM, Zerto, JetStream), and monitoring/logs. |
+| Integrations & Coding Patterns | L157-L171 | Networking, HCX setup/migration, and integrating AVS workloads with Azure services (vWAN VPN, Traffic Manager, App Gateway, Aria Ops, Cloud Director, cross-cloud migrations). |
 
 ### Troubleshooting
 | Topic | URL |

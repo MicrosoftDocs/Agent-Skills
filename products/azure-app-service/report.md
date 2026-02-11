@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   decision-making: Guidance on planning and choosing App Service tiers, plans, domains,
     networking, auth, and migration paths (Windows/Linux, .NET/Java/WordPress, Arc,
@@ -8,8 +8,8 @@ category_descriptions:
     traffic to Azure App Service apps, including Traffic Manager integration and operational
     guidance.
   configuration: 'Configuring App Service apps: app settings, auth, networking/VNet/ASE,
-    scaling, containers/sidecars, language runtimes, storage mounts, certificates,
-    diagnostics, and health/monitoring.'
+    storage, containers/sidecars, scaling, language stacks, certificates, diagnostics,
+    and WebJobs behavior.'
   security: 'Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs,
     access restrictions, managed identities, private endpoints, Graph/SQL/Storage
     access, and secure network patterns.'
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 246
+- **Updated Pages**: 1
+- **Unchanged**: 245
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -61,6 +61,11 @@ category_descriptions:
 | *(Unclassified)* | 97 | 39.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Mount Azure Storage](https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage)
+  - Updated: 2025-08-15T17:11:00.000Z → 2026-02-09T08:00:00.000Z
 
 ## Classified Pages
 
@@ -99,6 +104,7 @@ category_descriptions:
 | [Connect by using agent identity](https://learn.microsoft.com/en-us/azure/app-service/overview-agent-identity) | security | 0.78 | Describes configuring apps to use the Microsoft Entra agent identity platform, including preview-specific settings and C# code patterns for secure resource access. These are specialized, product-specific security/identity configurations. |
 | [Identity scenarios](https://learn.microsoft.com/en-us/azure/app-service/identity-scenarios) | decision-making | 0.78 | Provides recommendations and trade-offs between multiple auth solutions for different scenarios, including pros/cons and when to use each. This is explicit decision guidance for selecting authentication approaches for App Service apps and APIs. |
 | [Managed identity overview](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-identity) | security | 0.78 | Explains how to create and configure system/user-assigned managed identities for App Service/Functions and how to obtain tokens for backend resources, including specific portal/CLI settings and token acquisition patterns. These are product-specific identity/security configurations. |
+| [Mount Azure Storage](https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage) | configuration | 0.78 | The page describes how to mount Azure Files as a network share in Azure App Service, including product-specific configuration details (e.g., storage account, share, and path settings) that are unique to this integration scenario. It focuses on concrete configuration steps and parameters rather than just conceptual guidance, fitting the configuration sub-skill best. |
 | [Use Apple sign-in (preview)](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-apple) | security | 0.78 | Product-specific security configuration for Apple as an identity provider, including required Apple developer settings, redirect URIs, and App Service auth behavior changes that go beyond generic OAuth knowledge. |
 | [Use OpenID Connect](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect) | security | 0.78 | Provider-specific security configuration with concrete App Service auth settings (friendly name requirements, metadata endpoints, callback URLs, and provider-specific parameters) that are product-specific and not just conceptual. |
 | [Use file-based configuration](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-file-based) | configuration | 0.78 | Contains concrete file-based configuration schema, setting names, and behaviors (slot interactions, preview flags) for App Service authentication, matching configuration criteria with specific parameters and allowed patterns. |
@@ -162,7 +168,6 @@ category_descriptions:
 | [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/environment/integrate-with-application-gateway) | integrations | 0.70 | End-to-end integration of ILB ASE with Application Gateway/WAF is a product-specific integration scenario that typically includes concrete configuration values, listener/backend settings, and networking nuances. |
 | [Migrate Python Windows apps to Linux](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-windows-linux) | decision-making | 0.70 | Migration considerations between Windows and Linux on App Service are product-specific and include concrete guidance on dependencies, runtime support, and behavior differences that influence migration decisions; this is scenario-focused decision guidance rather than generic concepts. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/app-service/monitor-app-service-reference) | configuration | 0.70 | Monitoring data reference that likely lists specific metric names, dimensions, and log categories for App Service. These are product-specific configuration/telemetry parameters that qualify as expert reference knowledge. |
-| [Mount Azure Storage](https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage) | configuration | 0.70 | Explains how to mount Azure Storage (Azure Files and Premium Files) as network shares in App Service, including supported share types and App Service–specific mounting configuration. These are concrete configuration details. |
 | [Networking features overview](https://learn.microsoft.com/en-us/azure/app-service/networking-features) | decision-making | 0.70 | Article’s purpose is to help select among multiple App Service networking options based on scenarios. It contains product-specific guidance on when to use each feature (access restrictions, VNet integration, private endpoints, etc.) rather than just describing them, which is decision-making guidance beyond generic knowledge. |
 | [Open SSH session to a web app in a container](https://learn.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session) | configuration | 0.70 | Page describes product-specific SSH enablement for Linux and Windows containers in App Service, including required Dockerfile/image changes and App Service settings. These are concrete configuration details unique to the product, beyond generic SSH usage. |
 | [Overview of TLS/SSL in App Service](https://learn.microsoft.com/en-us/azure/app-service/overview-tls) | security | 0.70 | Explains TLS versions supported, certificate types, bindings, and mutual auth specifics for App Service. Contains product-specific security behavior and supported configurations beyond generic TLS concepts. |

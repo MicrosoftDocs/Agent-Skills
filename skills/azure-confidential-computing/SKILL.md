@@ -1,32 +1,35 @@
 ---
 name: azure-confidential-computing
-description: Expert knowledge for Azure Confidential Computing development including security, decision making, architecture & design patterns, deployment, configuration, troubleshooting, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Confidential Computing applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Confidential Computing development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Confidential Computing applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Confidential Computing Skill
 
-This skill provides expert guidance for Azure Confidential Computing development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Troubleshooting AKS confidential node issues: setup and deployment problems, enclave/TEE errors, limitations, performance, networking, and common FAQ-based fixes. |
-| Decision Making | L36-L48 | Guidance on choosing Azure confidential computing options: container offerings, AI services, clean rooms, multiparty analytics, and CPU/GPU VM types (AMD/Intel) for secure workloads. |
-| Architecture & Design Patterns | L49-L53 | Solution blueprints and reference architectures for building end-to-end apps on Azure Confidential Computing, including common patterns, components, and design trade-offs. |
-| Security | L54-L69 | Attestation, vTPM, key/secrets management, and hardening guidance (Defender, sudo/agent removal) for securing Azure confidential VMs, AKS Confidential Containers, and TEEs. |
-| Configuration | L70-L76 | Configuring Azure confidential workloads: AKS confidential containers and Intel SGX plugins, plus setting up Metablob disks for confidential virtual machines. |
-| Integrations & Coding Patterns | L77-L85 | Patterns and samples for building and integrating confidential apps: SGX enclave development, guest attestation, Fortanix CCM, and Secure Key Release on VMs and containers |
-| Deployment | L86-L95 | Guides for deploying and migrating Azure confidential VMs/VMSS, SGX enclaves, AKS confidential node pools, custom images, and Fortanix CCM in secure production environments. |
+| Troubleshooting | L34-L38 | Troubleshooting AKS confidential node issues: setup and deployment problems, enclave/TEE errors, limitations, performance, networking, and common FAQ-based fixes. |
+| Decision Making | L39-L51 | Guidance on choosing Azure confidential computing options: container offerings, AI services, clean rooms, multiparty analytics, and CPU/GPU VM types (AMD/Intel) for secure workloads. |
+| Architecture & Design Patterns | L52-L56 | Solution blueprints and reference architectures for building end-to-end apps on Azure Confidential Computing, including common patterns, components, and design trade-offs. |
+| Security | L57-L72 | Attestation, vTPM, key/secrets management, and hardening guidance (Defender, sudo/agent removal) for securing Azure confidential VMs, AKS Confidential Containers, and TEEs. |
+| Configuration | L73-L79 | Configuring Azure confidential workloads: AKS confidential containers and Intel SGX plugins, plus setting up Metablob disks for confidential virtual machines. |
+| Integrations & Coding Patterns | L80-L88 | Patterns and samples for building and integrating confidential apps: SGX enclave development, guest attestation, Fortanix CCM, and Secure Key Release on VMs and containers |
+| Deployment | L89-L98 | Guides for deploying and migrating Azure confidential VMs/VMSS, SGX enclaves, AKS confidential node pools, custom images, and Fortanix CCM in secure production environments. |
 
 ### Troubleshooting
 | Topic | URL |

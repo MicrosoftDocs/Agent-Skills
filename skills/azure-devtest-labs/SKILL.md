@@ -1,34 +1,37 @@
 ---
 name: azure-devtest-labs
-description: Expert knowledge for Azure Devtest Labs development including configuration, integrations & coding patterns, deployment, best practices, security, decision making, troubleshooting, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Devtest Labs applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Devtest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Devtest Labs applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Devtest Labs Skill
 
-This skill provides expert guidance for Azure Devtest Labs development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing DevTest Labs VM and environment creation/deployment errors, artifact application failures, and connectivity issues (including redeploying problematic VMs). |
-| Best Practices | L41-L45 | Guidance for organizing team-based development of DevTest Labs resources (artifacts, formulas, images) using source control, branching, and collaboration workflows. |
-| Decision Making | L46-L55 | Guidance on planning and scaling DevTest Labs for enterprises, choosing VM/image options and scenarios, and setting governance and resource management strategies. |
-| Architecture & Design Patterns | L56-L60 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security patterns, governance, cost management, and integration with CI/CD and enterprise IT. |
-| Limits & Quotas | L61-L65 | Managing Azure subscription and resource quotas that impact DevTest Labs, including how to view current limits and request quota increases for cores, storage, and other resources. |
-| Security | L66-L84 | Securing DevTest Labs: identities, RBAC, secrets/Key Vault, disk/storage encryption, network isolation, Bastion/RDP access, Trusted Launch, and Defender alerts. |
-| Configuration | L85-L105 | Configuring DevTest Labs environments: VM policies (start/stop, usage, images, licensing), networks, IPs, resource groups, cost tracking, tags, activity logs, alerts, and cross-lab reporting |
-| Integrations & Coding Patterns | L106-L128 | End-to-end automation and integration for DevTest Labs: ARM/Bicep/Terraform provisioning, VM lifecycle scripting (CLI/PowerShell), artifacts, custom images/VHD upload, REST/Functions/Automation runbooks. |
-| Deployment | L129-L136 | Automating DevTest Labs deployment and user setup, integrating labs into CI/CD and Azure Pipelines, handling load balancer/IP changes, and moving labs/schedules across regions. |
+| Troubleshooting | L36-L43 | Diagnosing and fixing DevTest Labs VM and environment creation/deployment errors, artifact application failures, and connectivity issues (including redeploying problematic VMs). |
+| Best Practices | L44-L48 | Guidance for organizing team-based development of DevTest Labs resources (artifacts, formulas, images) using source control, branching, and collaboration workflows. |
+| Decision Making | L49-L58 | Guidance on planning and scaling DevTest Labs for enterprises, choosing VM/image options and scenarios, and setting governance and resource management strategies. |
+| Architecture & Design Patterns | L59-L63 | Enterprise-scale DevTest Labs architectures: hub-spoke design, network/security patterns, governance, cost management, and integration with CI/CD and enterprise IT. |
+| Limits & Quotas | L64-L68 | Managing Azure subscription and resource quotas that impact DevTest Labs, including how to view current limits and request quota increases for cores, storage, and other resources. |
+| Security | L69-L87 | Securing DevTest Labs: identities, RBAC, secrets/Key Vault, disk/storage encryption, network isolation, Bastion/RDP access, Trusted Launch, and Defender alerts. |
+| Configuration | L88-L108 | Configuring DevTest Labs environments: VM policies (start/stop, usage, images, licensing), networks, IPs, resource groups, cost tracking, tags, activity logs, alerts, and cross-lab reporting |
+| Integrations & Coding Patterns | L109-L131 | End-to-end automation and integration for DevTest Labs: ARM/Bicep/Terraform provisioning, VM lifecycle scripting (CLI/PowerShell), artifacts, custom images/VHD upload, REST/Functions/Automation runbooks. |
+| Deployment | L132-L139 | Automating DevTest Labs deployment and user setup, integrating labs into CI/CD and Azure Pipelines, handling load balancer/IP changes, and moving labs/schedules across regions. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,32 +1,35 @@
 ---
 name: azure-update-center
-description: Expert knowledge for Azure Update Center development including configuration, security, decision making, best practices, integrations & coding patterns, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Update Center applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Update Center development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Update Center applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Update Center Skill
 
-This skill provides expert guidance for Azure Update Center development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and fixing Azure Update Manager issues, including deployment failures, assessment errors, agent/extension problems, and common error codes/logs. |
-| Best Practices | L36-L40 | Guidance on planning and configuring OS/SQL patching for SQL Server on Azure VMs, including maintenance windows, automation, sequencing, and minimizing downtime. |
-| Decision Making | L41-L45 | Guidance on planning and executing migration from Configuration Manager (SCCM) to Azure Update Manager, including strategy, prerequisites, and high-level steps. |
-| Limits & Quotas | L46-L53 | Supported OSes, update types/sources, custom image limits, and which workloads or configurations are unsupported in Azure Update Manager. |
-| Security | L54-L60 | Configuring secure permissions and roles for Update Manager, enabling cross-subscription patching safely, and handling security vulnerabilities including Ubuntu Pro integration. |
-| Configuration | L61-L74 | Configuring Azure Update Manager: client setup, scopes, ESU, hotpatching, auto/guest patching, policy-based assessments, networking, and pre/post maintenance events. |
-| Integrations & Coding Patterns | L75-L83 | Using Update Manager via REST and Resource Graph, plus patterns to trigger Functions or Automation runbooks from maintenance events and sample queries for update/patch data |
+| Troubleshooting | L34-L38 | Diagnosing and fixing Azure Update Manager issues, including deployment failures, assessment errors, agent/extension problems, and common error codes/logs. |
+| Best Practices | L39-L43 | Guidance on planning and configuring OS/SQL patching for SQL Server on Azure VMs, including maintenance windows, automation, sequencing, and minimizing downtime. |
+| Decision Making | L44-L48 | Guidance on planning and executing migration from Configuration Manager (SCCM) to Azure Update Manager, including strategy, prerequisites, and high-level steps. |
+| Limits & Quotas | L49-L56 | Supported OSes, update types/sources, custom image limits, and which workloads or configurations are unsupported in Azure Update Manager. |
+| Security | L57-L63 | Configuring secure permissions and roles for Update Manager, enabling cross-subscription patching safely, and handling security vulnerabilities including Ubuntu Pro integration. |
+| Configuration | L64-L77 | Configuring Azure Update Manager: client setup, scopes, ESU, hotpatching, auto/guest patching, policy-based assessments, networking, and pre/post maintenance events. |
+| Integrations & Coding Patterns | L78-L86 | Using Update Manager via REST and Resource Graph, plus patterns to trigger Functions or Automation runbooks from maintenance events and sample queries for update/patch data |
 
 ### Troubleshooting
 | Topic | URL |

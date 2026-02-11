@@ -1,11 +1,11 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
   example-workloads: End-to-end reference architectures and deployment guides for
     real-world workloads on Azure, including AKS, data/analytics, mainframe migration,
     SAP, VDI, security, networking, and hybrid/Arc scenarios.
   technology-choices: Guides for choosing the right Azure services (AI, data, storage,
-    compute, networking, microservices, hybrid, identity) by comparing options for
+    compute, networking, identity, microservices, hybrid) by comparing options for
     specific workloads and architectures.
   anti-patterns: Diagnosing and fixing common Azure app performance/scalability anti-patterns
     (chatty I/O, busy DB/front end, no caching, sync I/O, retry storms, noisy neighbors,
@@ -65,10 +65,10 @@ category_descriptions:
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-02-03T06:02:00.000Z → 2026-02-10T06:02:00.000Z
-- [Firewall protection for an AKS cluster](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall)
-  - Updated: 2025-10-30T05:03:00Z → 2026-02-10T06:02:00Z
+- [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration)
+  - Updated: 2025-10-30T05:03:00Z → 2026-02-11T06:05:00Z
+- [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison)
+  - Updated: 2025-10-30T05:03:00Z → 2026-02-11T06:05:00Z
 
 ## Classified Pages
 
@@ -209,7 +209,7 @@ category_descriptions:
 | [Azure Virtual Desktop for Azure Local](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-workload-virtual-desktop) | example-workloads | 0.86 | Hybrid architecture for Azure Virtual Desktop specifically on Azure Local with workload-specific design considerations and deployment guidance, fitting detailed example workload criteria. |
 | [Batch transaction processing](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/process-batch-transactions) | example-workloads | 0.86 | Example-scenario/mainframe article with a concrete architecture using AKS and Service Bus for batch transaction processing, mapping from mainframe-style workloads. |
 | [Choose an analytical data store in Microsoft Fabric](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-analytical-data-stores) | technology-choices | 0.86 | Compares multiple Fabric analytical data stores with selection criteria and trade-offs; URL path includes technology-choices, indicating a decision guide between options. |
-| [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison) | technology-choices | 0.86 | Explicit comparison/decision guide for Java hosting platforms on Azure (URL contains service-for-java-comparison) with selection considerations; fits technology-choices. |
+| [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison) | technology-choices | 0.86 | The page is a decision guide comparing multiple Azure services for hosting Java applications, including selection criteria and trade-offs. The URL path contains 'technology-choices' and 'comparison', and the content focuses on helping users decide between several Azure Java hosting options, which aligns with the technology-choices sub-skill. It goes beyond conceptual overview by giving concrete, scenario-based recommendations for which service to use. |
 | [Compute](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/compute) | migration-guides | 0.86 | Compares core compute services (VMs, containers, serverless) between AWS and Azure for architects moving workloads; aws-professional/ path and explicit cross-cloud mapping align with migration-guides. |
 | [Data and AI](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/data-ai) | migration-guides | 0.86 | Provides detailed comparison of Azure data/AI services to AWS counterparts for migration and multicloud planning; in aws-professional/ and focused on service mapping, matching migration-guides. |
 | [Data warehousing and analytics](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/data-warehouse) | example-workloads | 0.86 | Example-scenario data warehousing solution with specific pipeline implementation for large datasets; industry-flavored but technically detailed, matching example-workloads. |
@@ -418,7 +418,6 @@ category_descriptions:
 | [Troubleshoot a hybrid VPN connection](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/troubleshoot-vpn) | 0.40 | Troubleshooting tips for VPN connections; service-specific troubleshooting rather than an architecture, pattern, or cross-cutting best-practice as defined by the categories. |
 | [Troubleshoot networking](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/troubleshoot-network-aks) | 0.40 | Network troubleshooting for AKS clusters; detailed but focused on diagnostics, not on architecture styles, patterns, solution ideas, or example workloads. |
 | [Windows 365 Azure network connection](https://learn.microsoft.com/en-us/azure/architecture/guide/virtual-desktop/windows-365-azure-network-connection) | 0.40 | Windows 365 Azure Network Connection article appears to be a design/implementation overview for integrating Cloud PCs with existing networks, but there is no indication of comparison tables, patterns structure, or reference-architecture-style deployment assets. Likely general design guidance rather than deeply specific expert configuration details. |
-| [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration) | 0.30 | Explains container orchestration concepts and challenges at a high level; lacks detailed Azure service configuration, sizing, or concrete decision artifacts. |
 | [Data considerations](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/data-considerations) | 0.30 | Primarily conceptual data management guidance for microservices without Azure-specific deployment details, configurations, or decision structures. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-start-here) | 0.30 | Introductory hybrid design overview; primarily conceptual guidance on hybrid approaches without deep, scenario-specific implementation or deployment details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/container-get-started) | 0.30 | High-level overview of Azure container technologies and related guidance; more of a navigation/overview page without deep, configuration-level expert details. |
@@ -429,6 +428,7 @@ category_descriptions:
 | [Understand potential harms](https://learn.microsoft.com/en-us/azure/architecture/guide/responsible-innovation/harms-modeling/) | 0.30 | Conceptual harms modeling guidance; methodology-focused and ethical framing rather than concrete Azure implementation or patterns. |
 | [Virtual network peering, VPN gateways, and spoke-to-spoke communication](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/virtual-network-peering) | 0.30 | Hybrid networking comparison between peering and VPN plus spoke-to-spoke patterns; more of a conceptual comparison and pattern discussion, not a deployable reference architecture with SKUs, GitHub, or detailed sizing. |
 | [AI + Machine Learning](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | 0.20 | High-level AI architecture overview and marketing-style guidance; URL is /ai-ml/ not matching any specific sub-skill path, and content is conceptual rather than detailed implementation or decision guidance. |
+| [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration) | 0.20 | Microservices container orchestration article under /microservices/design/ is a conceptual design/overview piece, not a reference architecture, pattern, best-practices page, or other classified type. It explains challenges and concepts around orchestrating containers rather than providing deployable architecture, concrete configuration tables, or named patterns with trade-offs. |
 | [Databases](https://learn.microsoft.com/en-us/azure/architecture/databases/) | 0.20 | High-level overview of Azure database solutions; conceptual navigation page without deep implementation or architecture specifics. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/devops/devops-start-here) | 0.20 | DevOps architecture design overview; conceptual guidance and definitions, not a specific pattern, reference architecture, or example workload. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/management-governance/management-governance-start-here) | 0.20 | High-level overview of management and governance offerings and links to other content. Lacks detailed architectures, configurations, or implementation specifics; primarily navigational/summary. |

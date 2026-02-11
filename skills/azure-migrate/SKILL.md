@@ -1,34 +1,37 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including integrations & coding patterns, configuration, decision making, troubleshooting, limits & quotas, security, best practices, architecture & design patterns, and deployment. Use when building, debugging, or optimizing Azure Migrate applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Migrate applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-11"
 ---
 # Azure Migrate Skill
 
-This skill provides expert guidance for Azure Migrate development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L51 | Diagnosing and fixing Azure Migrate issues: appliance deployment/discovery, assessments, dependency analysis, project setup, private endpoints, replication, OS upgrades, and web app migrations. |
-| Best Practices | L52-L58 | Best practices for preparing on-premises/legacy Windows servers for Azure Migrate and running test migrations of replicated VMs before full cutover. |
-| Decision Making | L59-L75 | Using Azure Migrate assessments and business cases to choose discovery methods, sizing, costs, readiness, and migration strategies for VMs, apps, and AVS workloads |
-| Architecture & Design Patterns | L76-L80 | Hyper-V to Azure migration architecture: components, data flow, connectivity, assessment/replication pipeline, and how Azure Migrate orchestrates agentless/agent-based migrations. |
-| Limits & Quotas | L81-L94 | Support matrices, region/metadata limits, prerequisites, and scale-out options for discovering, assessing, and migrating VMware, Hyper-V, and physical servers with Azure Migrate. |
-| Security | L95-L113 | Securing Azure Migrate: least‑privilege roles/accounts, RBAC, Private Link, encryption/CMK, Arc enablement, security assessments, and policy-based governance for discovery and migration. |
-| Configuration | L114-L139 | Configuring Azure Migrate appliances, credentials, assessments, dependency analysis (agentless/agent-based), large-scale/physical/VMware setups, Arc onboarding, and related prerequisites/settings |
-| Integrations & Coding Patterns | L140-L147 | Integrating external code scan tools (GitHub Copilot, CAST Highlight) with Azure Migrate and automating large-scale VMware/ASR migrations using PowerShell and scripting patterns. |
-| Deployment | L148-L153 | Deploying migrated workloads: ARM template project setup, IaC-based server redeployments, and Azure DevOps CI/CD pipelines for containerized applications. |
+| Troubleshooting | L36-L54 | Diagnosing and fixing Azure Migrate issues: appliance deployment/discovery, assessments, dependency analysis, project setup, private endpoints, replication, OS upgrades, and web app migrations. |
+| Best Practices | L55-L61 | Best practices for preparing on-premises/legacy Windows servers for Azure Migrate and running test migrations of replicated VMs before full cutover. |
+| Decision Making | L62-L78 | Using Azure Migrate assessments and business cases to choose discovery methods, sizing, costs, readiness, and migration strategies for VMs, apps, and AVS workloads |
+| Architecture & Design Patterns | L79-L83 | Hyper-V to Azure migration architecture: components, data flow, connectivity, assessment/replication pipeline, and how Azure Migrate orchestrates agentless/agent-based migrations. |
+| Limits & Quotas | L84-L97 | Support matrices, region/metadata limits, prerequisites, and scale-out options for discovering, assessing, and migrating VMware, Hyper-V, and physical servers with Azure Migrate. |
+| Security | L98-L115 | Securing Azure Migrate: least‑privilege roles/accounts, RBAC, Private Link, encryption/CMK, Arc enablement, security assessments, and policy-based governance for discovery and migration. |
+| Configuration | L116-L142 | Configuring Azure Migrate appliances, assessments, credentials, dependency analysis, large-scale/physical/VMware setups, Arc/AMA integration, private endpoints, and related prerequisites/settings. |
+| Integrations & Coding Patterns | L143-L151 | Integrating external code scan tools with Azure Migrate and automating large-scale VMware-to-Azure migrations using PowerShell, REST APIs, and Site Recovery scripts. |
+| Deployment | L152-L157 | Deploying migrated workloads: ARM template project setup, IaC-based server redeployments, and Azure DevOps CI/CD pipelines for containerized applications. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -102,7 +105,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Enable Azure Arc for servers discovered by Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-arc-enable-inventory?view=migrate |
 | Migrate VMware VMs with SSE and customer-managed keys in Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-vmware-vms-with-cmk-disks?view=migrate |
 | Register Azure Migrate appliance with preconfigured Entra app | https://learn.microsoft.com/en-us/azure/migrate/how-to-register-appliance-using-entra-app?view=migrate |
-| Use Azure Private Link with Azure Migrate appliance | https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate |
 | Use Azure Migrate Insights for security risk assessment | https://learn.microsoft.com/en-us/azure/migrate/insights-overview?view=migrate |
 | Create least-privilege SQL accounts for Azure Migrate discovery | https://learn.microsoft.com/en-us/azure/migrate/least-privilege-credentials?view=migrate |
 | Migrate Hyper-V servers over Private Link to Azure | https://learn.microsoft.com/en-us/azure/migrate/migrate-hyper-v-servers-to-azure-using-private-link?view=migrate |
@@ -129,6 +131,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Migrate Collector extension for Arc servers | https://learn.microsoft.com/en-us/azure/migrate/how-to-enable-additional-data-collection-for-arc-servers?view=migrate |
 | Configure Azure Migrate appliance for physical servers | https://learn.microsoft.com/en-us/azure/migrate/how-to-set-up-appliance-physical?view=migrate |
 | Configure in-place Windows Server OS upgrades during Azure migration | https://learn.microsoft.com/en-us/azure/migrate/how-to-upgrade-windows?view=migrate |
+| Configure Azure Migrate with Private Endpoints | https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate |
 | Review prerequisites and support for Azure Migrate appliance | https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance?view=migrate |
 | Azure Migrate Collector VM extension settings reference | https://learn.microsoft.com/en-us/azure/migrate/migrate-virtual-machine-extension-reference?view=migrate |
 | Onboard VMware VMs to Azure Arc via Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/onboard-to-azure-arc-with-azure-migrate?view=migrate |
@@ -143,6 +146,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Integrate GitHub Copilot code scans into Azure Migrate web app assessments | https://learn.microsoft.com/en-us/azure/migrate/add-copilot-code-insights?view=migrate |
 | Integrate CAST Highlight code scan insights into Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/cast-highlights-integration?view=migrate |
 | Automate agentless VMware migrations with Azure Migrate PowerShell | https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-migration?view=migrate |
+| Automate VMware to Azure migration via Site Recovery REST | https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-vmware-to-azure-migration-rest-api?view=migrate |
 | Automate large-scale migrations using Azure Site Recovery scripts | https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-at-scale?view=migrate |
 
 ### Deployment

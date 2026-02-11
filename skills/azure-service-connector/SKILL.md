@@ -1,31 +1,34 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including security, deployment, configuration, integrations & coding patterns, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Service Connector applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Connector applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Service Connector Skill
 
-This skill provides expert guidance for Azure Service Connector development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and resolving Service Connector connection failures, auth/config errors, error codes, and common runtime issues when linking Azure compute to external services. |
-| Limits & Quotas | L35-L39 | Known limitations of Azure Service Connector, unsupported scenarios, and suggested workarounds or alternatives for affected connection types and environments |
-| Security | L40-L46 | Security and access control for Service Connector: required permissions, Entra RBAC roles it assigns, and how to configure authentication methods for connected services. |
-| Configuration | L47-L52 | How to list and use connection settings created by Service Connector, and which Azure CLI parameters to pass when creating or managing those connections |
-| Integrations & Coding Patterns | L53-L83 | How to connect Azure apps to databases, messaging, storage, AI, and external services using Service Connector, including auth setup, config, and language-specific connection patterns. |
-| Deployment | L84-L88 | Info on which regions support Service Connector per compute type, and how to create/manage Service Connector connections using infrastructure-as-code tools like Bicep, ARM, or Terraform. |
+| Troubleshooting | L33-L37 | Diagnosing and resolving Service Connector connection failures, auth/config errors, error codes, and common runtime issues when linking Azure compute to external services. |
+| Limits & Quotas | L38-L42 | Known limitations of Azure Service Connector, unsupported scenarios, and suggested workarounds or alternatives for affected connection types and environments |
+| Security | L43-L49 | Security and access control for Service Connector: required permissions, Entra RBAC roles it assigns, and how to configure authentication methods for connected services. |
+| Configuration | L50-L55 | How to list and use connection settings created by Service Connector, and which Azure CLI parameters to pass when creating or managing those connections |
+| Integrations & Coding Patterns | L56-L86 | How to connect Azure apps to databases, messaging, storage, AI, and external services using Service Connector, including auth setup, config, and language-specific connection patterns. |
+| Deployment | L87-L91 | Info on which regions support Service Connector per compute type, and how to create/manage Service Connector connections using infrastructure-as-code tools like Bicep, ARM, or Terraform. |
 
 ### Troubleshooting
 | Topic | URL |

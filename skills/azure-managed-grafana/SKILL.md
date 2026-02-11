@@ -1,32 +1,35 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including integrations & coding patterns, security, configuration, decision making, deployment, limits & quotas, and troubleshooting. Use when building, debugging, or optimizing Azure Managed Grafana applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Grafana applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Managed Grafana Skill
 
-This skill provides expert guidance for Azure Managed Grafana development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Diagnosing and fixing common Azure Managed Grafana issues, including access, provisioning, and managed private endpoint connectivity and approval problems. |
-| Decision Making | L37-L44 | Guidance on reliability/HA options, choosing and managing Grafana Enterprise plans, migrating between SKUs or to Azure Monitor, and upgrading workspaces from Grafana 10 to 11. |
-| Limits & Quotas | L45-L50 | Using reporting/image rendering features in Managed Grafana, plus hard limits, quotas, and constraints for workspaces, data sources, dashboards, and usage |
-| Security | L51-L62 | Securing Azure Managed Grafana: encryption, auth and SSO, Entra-based team sync, RBAC and permissions, private endpoints, data source private access, and security best practices. |
-| Configuration | L63-L72 | Configuring Managed Grafana workspaces, data sources, plugins, diagnostics, service accounts/tokens, and SMTP email alerts for monitoring and alerting setups. |
-| Integrations & Coding Patterns | L73-L81 | How to integrate Azure Managed Grafana with Prometheus, Azure Monitor, Azure Data Explorer, AKS, and Azure AI Foundry, including auth setup and connectivity patterns. |
-| Deployment | L82-L88 | Guides for deploying Managed Grafana: setting deterministic outbound IPs, enabling zone redundancy, migrating from other Grafana setups, and wiring Azure Monitor alerts into dashboards. |
+| Troubleshooting | L34-L39 | Diagnosing and fixing common Azure Managed Grafana issues, including access, provisioning, and managed private endpoint connectivity and approval problems. |
+| Decision Making | L40-L47 | Guidance on reliability/HA options, choosing and managing Grafana Enterprise plans, migrating between SKUs or to Azure Monitor, and upgrading workspaces from Grafana 10 to 11. |
+| Limits & Quotas | L48-L53 | Using reporting/image rendering features in Managed Grafana, plus hard limits, quotas, and constraints for workspaces, data sources, dashboards, and usage |
+| Security | L54-L65 | Securing Azure Managed Grafana: encryption, auth and SSO, Entra-based team sync, RBAC and permissions, private endpoints, data source private access, and security best practices. |
+| Configuration | L66-L75 | Configuring Managed Grafana workspaces, data sources, plugins, diagnostics, service accounts/tokens, and SMTP email alerts for monitoring and alerting setups. |
+| Integrations & Coding Patterns | L76-L84 | How to integrate Azure Managed Grafana with Prometheus, Azure Monitor, Azure Data Explorer, AKS, and Azure AI Foundry, including auth setup and connectivity patterns. |
+| Deployment | L85-L91 | Guides for deploying Managed Grafana: setting deterministic outbound IPs, enabling zone redundancy, migrating from other Grafana setups, and wiring Azure Monitor alerts into dashboards. |
 
 ### Troubleshooting
 | Topic | URL |

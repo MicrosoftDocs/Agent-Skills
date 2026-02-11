@@ -1,34 +1,36 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers example workloads, technology choices, anti-patterns, migration guides, best practices, reference architectures, architecture styles, solution ideas, and design patterns. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Architecture Skill
 
-This skill provides expert guidance for Azure Architecture development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for an AAC skill.
+Organized by content type with cross-references.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Reference Architectures | L33-L77 | End-to-end Azure reference solutions for mission-critical apps, AKS, networking, hybrid identity, DR, SAP, mainframe rehosting, and secure VM/data/streaming architectures. |
-| Solution Ideas | L78-L102 | End-to-end Azure solution patterns for analytics, IoT, ETL, SAP, security (Defender, Sentinel, DevSecOps), cross-tenant migration, and running legacy/mainframe/Solaris workloads on Azure. |
-| Design Patterns | L103-L151 | Design and integration patterns for building scalable, resilient, secure cloud apps on Azure, covering microservices, messaging, data, transactions, routing, caching, and multitenancy. |
-| Technology Choices | L152-L190 | Guides for choosing the right Azure services (AI, data, storage, compute, networking, microservices, hybrid, identity) by comparing options for specific workloads and architectures. |
-| Architecture Styles | L191-L201 | Guidance on choosing and designing Azure solutions using major architecture styles: big compute, big data, event-driven, microservices, N-tier, and Web-Queue-Worker patterns. |
-| Best Practices | L202-L252 | Best practices for designing, scaling, securing, operating, and governing Azure apps and microservices, including APIs, AKS, IoT, Event Hubs, HA/DR, CI/CD, partitioning, and observability. |
-| Anti-patterns | L253-L267 | Diagnosing and fixing common Azure app performance/scalability anti-patterns (chatty I/O, busy DB/front end, no caching, sync I/O, retry storms, noisy neighbors, monolithic persistence). |
-| Example Workloads | L268-L344 | End-to-end reference architectures and deployment guides for real-world workloads on Azure, including AKS, data/analytics, mainframe migration, SAP, VDI, security, networking, and hybrid/Arc scenarios. |
-| Migration Guides | L345-L374 | Guides for migrating from AWS, Google Cloud, IBM mainframe/AIX, EKS, and Kafka to Azure—service mapping, architecture differences, security, governance, cost, and workload migration patterns. |
+| Reference Architectures | L35-L79 | End-to-end Azure reference solutions for mission-critical apps, AKS, networking, hybrid identity, DR, SAP, mainframe rehosting, and secure VM/data/streaming architectures. |
+| Solution Ideas | L80-L104 | End-to-end Azure solution patterns for analytics, IoT, ETL, SAP, security (Defender, Sentinel, DevSecOps), cross-tenant migration, and running legacy/mainframe/Solaris workloads on Azure. |
+| Design Patterns | L105-L153 | Design and integration patterns for building scalable, resilient, secure cloud apps on Azure, covering microservices, messaging, data, transactions, routing, caching, and multitenancy. |
+| Technology Choices | L154-L192 | Guides for choosing the right Azure services (AI, data, storage, compute, networking, identity, microservices, hybrid) by comparing options for specific workloads and architectures. |
+| Architecture Styles | L193-L203 | Guidance on choosing and designing Azure solutions using major architecture styles: big compute, big data, event-driven, microservices, N-tier, and Web-Queue-Worker patterns. |
+| Best Practices | L204-L254 | Best practices for designing, scaling, securing, operating, and governing Azure apps and microservices, including APIs, AKS, IoT, Event Hubs, HA/DR, CI/CD, partitioning, and observability. |
+| Anti-patterns | L255-L269 | Diagnosing and fixing common Azure app performance/scalability anti-patterns (chatty I/O, busy DB/front end, no caching, sync I/O, retry storms, noisy neighbors, monolithic persistence). |
+| Example Workloads | L270-L346 | End-to-end reference architectures and deployment guides for real-world workloads on Azure, including AKS, data/analytics, mainframe migration, SAP, VDI, security, networking, and hybrid/Arc scenarios. |
+| Migration Guides | L347-L376 | Guides for migrating from AWS, Google Cloud, IBM mainframe/AIX, EKS, and Kafka to Azure—service mapping, architecture differences, security, governance, cost, and workload migration patterns. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -179,7 +181,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose the right Azure load balancing service | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview |
 | Select Azure services for asynchronous messaging | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging |
 | Assess readiness for microservices on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/microservices-assessment |
-| Compare Java application hosting options on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison |
+| Choose the right Azure hosting option for Java apps | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison |
 | Decide which Azure storage service to use | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/storage-options |
 | Choose an Azure service for vector search | https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search |
 | Choose Azure compute options for microservices | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/compute-options |

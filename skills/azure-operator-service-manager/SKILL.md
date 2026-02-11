@@ -1,30 +1,33 @@
 ---
 name: azure-operator-service-manager
-description: Expert knowledge for Azure Operator Service Manager development including best practices, integrations & coding patterns, configuration, security, and troubleshooting. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Operator Service Manager Skill
 
-This skill provides expert guidance for Azure Operator Service Manager development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L34 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm install failures in AOSM CNF deployments. |
-| Best Practices | L35-L45 | Best practices for onboarding, configuring, upgrading, and cleaning up AOSM CNFs/Helm artifacts, including safe upgrade flows, tests, and failure-handling controls. |
-| Security | L46-L53 | Securing AOSM: configuring Private Link to artifact stores, defining/assigning custom RBAC roles, and using user-assigned managed identities for long-running SNS operations. |
-| Configuration | L54-L61 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
-| Integrations & Coding Patterns | L62-L74 | Using AOSM CLI/ARM/Helm to onboard CNFs/VNFs, manage artifact stores (ACR/Storage), and design/publish network services and operators for Azure Operator Nexus. |
+| Troubleshooting | L32-L37 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm install failures in AOSM CNF deployments. |
+| Best Practices | L38-L48 | Best practices for onboarding, configuring, upgrading, and cleaning up AOSM CNFs/Helm artifacts, including safe upgrade flows, tests, and failure-handling controls. |
+| Security | L49-L56 | Securing AOSM: configuring Private Link to artifact stores, defining/assigning custom RBAC roles, and using user-assigned managed identities for long-running SNS operations. |
+| Configuration | L57-L64 | Configuring AOSM deployment behavior: edge-resilient cluster registry, tag-based deployment interruption, Helm options for failed releases, and geo-replicated publisher artifact storage. |
+| Integrations & Coding Patterns | L65-L77 | Using AOSM CLI/ARM/Helm to onboard CNFs/VNFs, manage artifact stores (ACR/Storage), and design/publish network services and operators for Azure Operator Nexus. |
 
 ### Troubleshooting
 | Topic | URL |

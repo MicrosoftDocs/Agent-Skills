@@ -1,31 +1,34 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including security, configuration, best practices, troubleshooting, deployment, and decision making. Use when building, debugging, or optimizing Azure Security applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Security applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Security Skill
 
-This skill provides expert guidance for Azure Security development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L35 | Troubleshooting Azure security incidents, including resolving Customer Lockbox access issues and diagnosing, containing, and responding to ransomware attacks in Azure environments. |
-| Best Practices | L36-L54 | Best-practice guidance for securing Azure identities, networks, VMs, PaaS, data, SQL, DNS, and backups, including ransomware defenses, threat modeling mitigations, and Entra ID hardening. |
-| Decision Making | L55-L59 | Guidance on choosing between Azure Key Vault, managed HSM, and other key management options, comparing security, performance, compliance, and integration scenarios. |
-| Security | L60-L83 | Designing secure Azure apps: threat-model-based auth, authz, crypto, sessions, logging, TLS, data protection, operational security, and hardening PaaS services like App Service, SQL, Storage. |
-| Configuration | L84-L91 | Configuring secure Azure services: hardening configs from threat models, setting Microsoft Antimalware, knowing required service/API domains, and finding services that support customer-managed keys. |
-| Deployment | L92-L95 | Lists which Azure security features and services are available in each Azure cloud (public, Gov, China), helping you check regional and sovereign cloud support before deployment |
+| Troubleshooting | L33-L38 | Troubleshooting Azure security incidents, including resolving Customer Lockbox access issues and diagnosing, containing, and responding to ransomware attacks in Azure environments. |
+| Best Practices | L39-L57 | Best-practice guidance for securing Azure identities, networks, VMs, PaaS, data, SQL, DNS, and backups, including ransomware defenses, threat modeling mitigations, and Entra ID hardening. |
+| Decision Making | L58-L62 | Guidance on choosing between Azure Key Vault, managed HSM, and other key management options, comparing security, performance, compliance, and integration scenarios. |
+| Security | L63-L86 | Designing secure Azure apps: threat-model-based auth, authz, crypto, sessions, logging, TLS, data protection, operational security, and hardening PaaS services like App Service, SQL, Storage. |
+| Configuration | L87-L94 | Configuring secure Azure services: hardening configs from threat models, setting Microsoft Antimalware, knowing required service/API domains, and finding services that support customer-managed keys. |
+| Deployment | L95-L98 | Lists which Azure security features and services are available in each Azure cloud (public, Gov, China), helping you check regional and sovereign cloud support before deployment |
 
 ### Troubleshooting
 | Topic | URL |

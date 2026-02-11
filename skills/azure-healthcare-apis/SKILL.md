@@ -1,34 +1,37 @@
 ---
 name: azure-healthcare-apis
-description: Expert knowledge for Azure Healthcare Apis development including security, limits & quotas, troubleshooting, deployment, integrations & coding patterns, configuration, architecture & design patterns, decision making, and best practices. Use when building, debugging, or optimizing Azure Healthcare Apis applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Healthcare Apis development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Healthcare Apis applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Healthcare Apis Skill
 
-This skill provides expert guidance for Azure Healthcare Apis development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L45 | Diagnosing and fixing FHIR/Health Data Services issues: token and identity errors, $convert-data failures, event problems, MedTech deployment/runtime issues, logs, and known platform bugs. |
-| Best Practices | L46-L52 | Best practices for encrypting FHIR and DICOM data with customer-managed keys (CMK) and tuning Azure FHIR service performance, scalability, and throughput. |
-| Decision Making | L53-L62 | Guidance for planning and executing migrations from Azure API for FHIR/MedTech to newer Health Data Services, plus regional availability and deprecation/retirement FAQs. |
-| Architecture & Design Patterns | L63-L69 | Architecting Azure Healthcare APIs (FHIR & DICOM) for DR, data lake integration, and end-to-end digital pathology imaging workflows. |
-| Limits & Quotas | L70-L75 | Autoscaling behavior, throughput limits, and configuration for Azure API for FHIR/FHIR service, including how scaling works, constraints, and how to tune autoscale settings. |
-| Security | L76-L112 | Configuring auth, RBAC, identity providers, tokens, network isolation, encryption, compliance, and app registration to securely access and protect FHIR, DICOM, and Health Data Services. |
-| Configuration | L113-L155 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging, events, search/reindex, bulk import/export, versioning, profiles, and Blue Button/Da Vinci setups. |
-| Integrations & Coding Patterns | L156-L192 | Patterns and code for integrating FHIR/DICOM/MedTech with Azure: REST and SMART on FHIR, bulk export/delete, $operations, validation, Synapse/Data Lake/ADF, and language-specific API examples. |
-| Deployment | L193-L200 | Guides for deploying Azure Healthcare APIs (FHIR, DICOM, MedTech) using ARM/Bicep, Azure portal, and integrating DICOM with Azure Data Lake. |
+| Troubleshooting | L36-L48 | Diagnosing and fixing FHIR/Health Data Services issues: token and identity errors, $convert-data failures, event problems, MedTech deployment/runtime issues, logs, and known platform bugs. |
+| Best Practices | L49-L55 | Best practices for encrypting FHIR and DICOM data with customer-managed keys (CMK) and tuning Azure FHIR service performance, scalability, and throughput. |
+| Decision Making | L56-L65 | Guidance for planning and executing migrations from Azure API for FHIR/MedTech to newer Health Data Services, plus regional availability and deprecation/retirement FAQs. |
+| Architecture & Design Patterns | L66-L72 | Architecting Azure Healthcare APIs (FHIR & DICOM) for DR, data lake integration, and end-to-end digital pathology imaging workflows. |
+| Limits & Quotas | L73-L78 | Autoscaling behavior, throughput limits, and configuration for Azure API for FHIR/FHIR service, including how scaling works, constraints, and how to tune autoscale settings. |
+| Security | L79-L115 | Configuring auth, RBAC, identity providers, tokens, network isolation, encryption, compliance, and app registration to securely access and protect FHIR, DICOM, and Health Data Services. |
+| Configuration | L116-L158 | Configuring Azure Healthcare APIs (FHIR, DICOM, MedTech): CORS, security/keys, logging, events, search/reindex, bulk import/export, versioning, profiles, and Blue Button/Da Vinci setups. |
+| Integrations & Coding Patterns | L159-L195 | Patterns and code for integrating FHIR/DICOM/MedTech with Azure: REST and SMART on FHIR, bulk export/delete, $operations, validation, Synapse/Data Lake/ADF, and language-specific API examples. |
+| Deployment | L196-L203 | Guides for deploying Azure Healthcare APIs (FHIR, DICOM, MedTech) using ARM/Bicep, Azure portal, and integrating DICOM with Azure Data Lake. |
 
 ### Troubleshooting
 | Topic | URL |

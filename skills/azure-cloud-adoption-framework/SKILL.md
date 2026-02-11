@@ -1,35 +1,37 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers adoption scenarios, governance, strategy, planning, operations & management, organization & teams, adoption patterns, readiness & landing zones, security, and getting started. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Cloud Adoption Framework Skill
 
-This skill provides expert guidance for Azure Cloud Adoption Framework development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a CAF methodology or scenario skill.
+Organized by methodology with cross-references.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Getting Started | L34-L38 | Guidance and checklist for planning, implementing, and governing a data mesh architecture on Azure, including domains, ownership, platforms, and adoption steps. |
-| Strategy | L39-L54 | High-level cloud and AI adoption planning: defining business goals, strategy, org structure, cost, resiliency, security, sustainability, and analytics/AVD benefits. |
-| Planning | L55-L74 | Planning Azure adoption: migration waves, workload assessments, modernization roadmaps, cost/architecture planning, data/analytics estate design, org readiness, skills, and AI/Fabric tech plans. |
-| Readiness & Landing Zones | L75-L169 | Designing and operating Azure landing zones: network topology/connectivity, identity, subscriptions/management groups, DevOps automation, multitenant setups, and workload-specific landing zone patterns. |
-| Adoption Patterns | L170-L192 | Guidance on planning, migrating, modernizing, and operating cloud-native, data, VDI, and VMware workloads on Azure using resilient architectures and proven adoption patterns. |
-| Governance | L193-L230 | Governance, security, cost, and compliance for Azure and AI agents: policies, tagging, landing zones, data governance, responsible AI, and managing Azure Policy at scale. |
-| Security | L231-L249 | Designing secure Azure landing zones, Zero Trust, identity/RBAC, data protection, encryption/keys, DevOps repo security, and security-focused governance/operations during cloud adoption |
-| Operations & Management | L250-L281 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AVS, AVD, RHEL, analytics, AI agents), plus BCDR, compliance, and automation at enterprise scale |
-| Organization & Teams | L282-L302 | Organizational design for cloud/AI: team structures, roles/RACI, CCoE, DevOps/FinOps/SecOps, data/analytics ops, operating models, and cost-conscious cloud governance. |
-| Adoption Scenarios | L303-L419 | CAF-based end-to-end adoption patterns, landing zones, and governance for AI agents, AKS, API Management, App Service, RHEL/ARO/ACA, AVD/Citrix, AVS, SAP/Oracle, and cloud-scale analytics. |
+| Getting Started | L36-L40 | Guidance and checklist for planning, implementing, and governing a data mesh architecture on Azure, including domains, ownership, platforms, and adoption steps. |
+| Strategy | L41-L55 | Designing cloud adoption strategies: aligning with business goals, defining teams, motivations, cost, resiliency, security, sustainability, analytics, AVD, and AI agent business planning |
+| Planning | L56-L75 | Planning Azure adoption: migration waves, workload assessments, modernization roadmaps, cost/architecture planning, data/analytics estate design, org readiness, skills, and AI/Fabric tech plans. |
+| Readiness & Landing Zones | L76-L170 | Designing and operating Azure landing zones: network topology, identity, subscriptions, DevOps/automation, multitenancy, governance, billing, and specialized app/data/analytics landing zone patterns. |
+| Adoption Patterns | L171-L193 | Guidance on planning, migrating, modernizing, and operating cloud-native, data, VDI, and VMware workloads on Azure using resilient architectures and proven adoption patterns. |
+| Governance | L194-L231 | Governance, security, cost, and compliance for Azure and AI agents: policies, tagging, landing zones, data governance, responsible AI, and managing Azure Policy at scale. |
+| Security | L232-L250 | Designing secure Azure landing zones, Zero Trust, identity/RBAC, data protection, encryption/keys, DevOps repo security, and security-focused governance/operations during cloud adoption |
+| Operations & Management | L251-L282 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AVS, AVD, RHEL, analytics, AI agents), plus BCDR, compliance, and automation at enterprise scale |
+| Organization & Teams | L283-L303 | Org design, roles, and RACI for cloud/AI: CCoE, ops, DevOps, data/analytics, security, FinOps, and operating models for cost-conscious, scalable Azure adoption. |
+| Adoption Scenarios | L304-L420 | CAF-based end-to-end adoption patterns, landing zones, and governance for AI agents, AKS, API Management, App Service, RHEL/ARO/ACA, AVD/Citrix, AVS, SAP/Oracle, and cloud-scale analytics. |
 
 ### Getting Started
 | Topic | URL |
@@ -49,8 +51,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Plan resiliency as part of cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency |
 | Integrate security considerations into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/security |
 | Embed sustainability goals into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability |
-| Define mission and objectives for cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/mission-objectives |
-| Define business motivations for cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations |
+| Define cloud motivations, mission, and business objectives | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations |
 
 ### Planning
 | Topic | URL |
@@ -76,7 +77,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Use Azure Virtual Network Manager in landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/azure-virtual-network-manager |
-| Design connectivity from on-premises to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure |
+| Design secure connectivity from on-premises networks to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure |
 | Design connectivity patterns to Azure PaaS services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure-paas-services |
 | Integrate Azure landing zones with other clouds | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-other-providers |
 | Establish Azure–Oracle Cloud Infrastructure connectivity | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-other-providers-oci |

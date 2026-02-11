@@ -1,33 +1,36 @@
 ---
 name: azure-cost-management-billing
-description: Expert knowledge for Azure Cost Management Billing development including security, configuration, decision making, troubleshooting, best practices, integrations & coding patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Cost Management Billing applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Cost Management Billing development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management Billing applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Cost Management Billing Skill
 
-This skill provides expert guidance for Azure Cost Management Billing development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L62 | Diagnosing and fixing Azure billing, subscription, payment, and reservation/savings plan issues, including access errors, disabled subscriptions, invoice visibility, and usage/download discrepancies. |
-| Best Practices | L63-L72 | Best practices for optimizing Azure costs, onboarding to Microsoft Customer Agreement, and maximizing savings with EA reservations and centrally managed SQL Azure Hybrid Benefit. |
-| Decision Making | L73-L138 | Choosing Azure billing models and discounts (EA/MCA offers, reservations, savings plans, Hybrid Benefit), optimizing regional/Marketplace costs, and planning billing ownership or transfer paths |
-| Limits & Quotas | L139-L152 | Managing Azure cost and billing limits: free-tier quotas, spending limits, subscription lifecycle/inactivity, data timing/latency, and optimizing reservations and savings plans. |
-| Security | L153-L178 | Billing security, RBAC roles, and access control for invoices, usage, reservations, savings plans, subscription moves, fraud prevention, SCA, and Marketplace purchase policies. |
-| Configuration | L179-L206 | Configuring Azure Cost Management and billing: scopes, tags, exports, alerts, budgets, reservations/savings plans, partner/MCA billing setups, and SQL/AHB cost settings. |
-| Integrations & Coding Patterns | L207-L223 | APIs, REST, and PowerShell patterns for automating subscription creation, billing role migration, cost details retrieval, and reservation management across EA/MCA/Partner agreements. |
-| Deployment | L224-L230 | Creating and provisioning Azure subscriptions (EA and Microsoft Customer Agreement), including cross-tenant and partner-led customer subscription setup and management. |
+| Troubleshooting | L35-L65 | Diagnosing and fixing Azure billing, subscription, payment, and reservation/savings plan issues, including access errors, disabled subscriptions, invoice visibility, and usage/download discrepancies. |
+| Best Practices | L66-L75 | Best practices for optimizing Azure costs, onboarding to Microsoft Customer Agreement, and maximizing savings with EA reservations and centrally managed SQL Azure Hybrid Benefit. |
+| Decision Making | L76-L141 | Choosing Azure billing models and discounts (EA/MCA offers, reservations, savings plans, Hybrid Benefit), optimizing regional/Marketplace costs, and planning billing ownership or transfer paths |
+| Limits & Quotas | L142-L155 | Managing Azure cost and billing limits: free-tier quotas, spending limits, subscription lifecycle/inactivity, data timing/latency, and optimizing reservations and savings plans. |
+| Security | L156-L181 | Billing security, RBAC roles, and access control for invoices, usage, reservations, savings plans, subscription moves, fraud prevention, SCA, and Marketplace purchase policies. |
+| Configuration | L182-L209 | Configuring Azure Cost Management and billing: scopes, tags, exports, alerts, budgets, reservations/savings plans, partner/MCA billing setups, and SQL/AHB cost settings. |
+| Integrations & Coding Patterns | L210-L226 | APIs, REST, and PowerShell patterns for automating subscription creation, billing role migration, cost details retrieval, and reservation management across EA/MCA/Partner agreements. |
+| Deployment | L227-L233 | Creating and provisioning Azure subscriptions (EA and Microsoft Customer Agreement), including cross-tenant and partner-led customer subscription setup and management. |
 
 ### Troubleshooting
 | Topic | URL |

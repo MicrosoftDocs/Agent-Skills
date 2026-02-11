@@ -1,30 +1,33 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including security, integrations & coding patterns, configuration, best practices, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Api Center Skill
 
-This skill provides expert guidance for Azure Api Center development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L29-L33 | Guidance on enabling and using built-in linting and analysis in Azure API Center to automatically validate API definitions, enforce standards, and improve API quality. |
-| Security | L34-L38 | Configuring API authorization in Azure API Center, including setting auth settings, securing access to APIs, and integrating with identity providers. |
-| Configuration | L39-L46 | Configuring API Center portals and tools: customize portal settings, set up managed portals, enable the VS Code portal view, and configure self-managed API linting. |
-| Integrations & Coding Patterns | L47-L58 | How to integrate API Center with tools like VS Code, GitHub Copilot, Copilot Studio, Azure CLI, Logic Apps, Teams, and sync APIs from API Management and Amazon API Gateway |
-| Deployment | L59-L63 | Automating Azure API Center registration via GitHub Actions CI/CD and deploying/self-hosting the API Center developer portal configuration and runtime. |
+| Best Practices | L32-L36 | Guidance on enabling and using built-in linting and analysis in Azure API Center to automatically validate API definitions, enforce standards, and improve API quality. |
+| Security | L37-L41 | Configuring API authorization in Azure API Center, including setting auth settings, securing access to APIs, and integrating with identity providers. |
+| Configuration | L42-L49 | Configuring API Center portals and tools: customize portal settings, set up managed portals, enable the VS Code portal view, and configure self-managed API linting. |
+| Integrations & Coding Patterns | L50-L61 | How to integrate API Center with tools like VS Code, GitHub Copilot, Copilot Studio, Azure CLI, Logic Apps, Teams, and sync APIs from API Management and Amazon API Gateway |
+| Deployment | L62-L66 | Automating Azure API Center registration via GitHub Actions CI/CD and deploying/self-hosting the API Center developer portal configuration and runtime. |
 
 ### Best Practices
 | Topic | URL |

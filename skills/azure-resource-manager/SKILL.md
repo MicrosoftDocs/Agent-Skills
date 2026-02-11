@@ -1,34 +1,37 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including deployment, best practices, integrations & coding patterns, configuration, troubleshooting, limits & quotas, security, decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Resource Manager applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Resource Manager applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Resource Manager Skill
 
-This skill provides expert guidance for Azure Resource Manager development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L131 | Diagnosing and fixing Bicep/ARM deployment issues: detailed guides for specific BCP/ARM errors, syntax/type/decorator problems, scope/name/quota/SKU failures, and using logging/tools to troubleshoot. |
-| Best Practices | L132-L177 | Best practices for authoring and validating Bicep/ARM templates: linter rules, parameter/variable usage, IDs, locations, API versions, REST custom endpoints, testing with ARM TTK, and migration tagging. |
-| Decision Making | L178-L204 | Guidance on ARM-to-Bicep migration, classic vs Resource Manager, and planning/executing Azure regional relocation for VMs, AKS, networking, databases, backup, and other services |
-| Architecture & Design Patterns | L205-L212 | Bicep template design patterns: structuring parameters, using configuration sets and shared variable files, and generating robust, collision‑free resource names. |
-| Limits & Quotas | L213-L242 | ARM/Bicep limits and quotas: resource, tag, naming, history, and subscription caps; throttling; deployment scopes; and patterns to avoid/resolve “quota/limit exceeded” errors. |
-| Security | L243-L276 | Securing ARM/Bicep deployments: handling secrets (Key Vault, secure params/outputs), RBAC and managed apps, private endpoints/links, locks, TLS, and cross-tenant authentication. |
-| Configuration | L277-L359 | Configuring ARM/Bicep templates and managed apps: environment setup, parameters, tags, functions, UI (createUiDefinition) controls, deployment stacks, policy/monitoring, and networking/registry settings. |
-| Integrations & Coding Patterns | L360-L404 | Bicep functions, operators, loops, and tooling (CLI, PowerShell, Python, REST) for ARM deployments, plus patterns for resource groups, tags, AKS, and custom provider REST endpoints. |
-| Deployment | L405-L434 | Deploying ARM/Bicep templates via pipelines, GitHub, portal/CLI/PowerShell, using what-if/rollback, and moving or relocating Azure resources and data across subscriptions/regions. |
+| Troubleshooting | L36-L134 | Diagnosing and fixing Bicep/ARM deployment issues: detailed guides for specific BCP/ARM errors, syntax/type/decorator problems, scope/name/quota/SKU failures, and using logging/tools to troubleshoot. |
+| Best Practices | L135-L180 | Best practices for authoring and validating Bicep/ARM templates: linter rules, parameter/variable usage, IDs, locations, API versions, REST custom endpoints, testing with ARM TTK, and migration tagging. |
+| Decision Making | L181-L207 | Guidance on ARM-to-Bicep migration, classic vs Resource Manager, and planning/executing Azure regional relocation for VMs, AKS, networking, databases, backup, and other services |
+| Architecture & Design Patterns | L208-L215 | Bicep template design patterns: structuring parameters, using configuration sets and shared variable files, and generating robust, collision‑free resource names. |
+| Limits & Quotas | L216-L245 | ARM/Bicep limits and quotas: resource, tag, naming, history, and subscription caps; throttling; deployment scopes; and patterns to avoid/resolve “quota/limit exceeded” errors. |
+| Security | L246-L279 | Securing ARM/Bicep deployments: handling secrets (Key Vault, secure params/outputs), RBAC and managed apps, private endpoints/links, locks, TLS, and cross-tenant authentication. |
+| Configuration | L280-L362 | Configuring ARM/Bicep templates and managed apps: environment setup, parameters, tags, functions, UI (createUiDefinition) controls, deployment stacks, policy/monitoring, and networking/registry settings. |
+| Integrations & Coding Patterns | L363-L407 | Bicep functions, operators, loops, and tooling (CLI, PowerShell, Python, REST) for ARM deployments, plus patterns for resource groups, tags, AKS, and custom provider REST endpoints. |
+| Deployment | L408-L437 | Deploying ARM/Bicep templates via pipelines, GitHub, portal/CLI/PowerShell, using what-if/rollback, and moving or relocating Azure resources and data across subscriptions/regions. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,33 +1,36 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including configuration, limits & quotas, troubleshooting, security, decision making, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Azure Application Gateway applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Application Gateway applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Application Gateway Skill
 
-This skill provides expert guidance for Azure Application Gateway development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L48 | Diagnosing and fixing Application Gateway issues: backend health, logs, HTTP/502 errors, certificates/Key Vault, WAF, mTLS, session affinity, listeners, AKS ingress, and redirect problems |
-| Best Practices | L49-L53 | Guidance on scaling Application Gateway for heavy traffic, including autoscaling, sizing, performance tuning, connection limits, and configuration patterns for high-load scenarios. |
-| Decision Making | L54-L65 | Guidance on pricing, scaling, and migration decisions for Application Gateway: v1→v2, AGIC Helm→AKS add-on, V1 retirement planning, and classic VM to ARM migration FAQs. |
-| Limits & Quotas | L66-L71 | Autoscaling behavior, zone redundancy setup, and v2 SKU limits/quotas (instances, throughput, connections), plus FAQ on performance, scaling, and configuration constraints. |
-| Security | L72-L94 | TLS/SSL and mTLS configuration for Application Gateway: policies, certificates (Key Vault, Let’s Encrypt, self‑signed), private access, HSTS, FIPS, JWT validation, and security cookie settings |
-| Configuration | L95-L132 | How to configure Application Gateway components (listeners, routing, probes, TLS, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring) using portal, PowerShell, or CLI |
-| Integrations & Coding Patterns | L133-L139 | Configuring App Gateway TLS with Key Vault (portal/PowerShell) and using App Gateway metrics to autoscale AKS pods and integrate with Kubernetes workloads |
-| Deployment | L140-L145 | Guides for deploying IPv6-enabled Azure Application Gateway using ARM templates, Azure portal, or PowerShell, including required settings and configuration steps. |
+| Troubleshooting | L35-L51 | Diagnosing and fixing Application Gateway issues: backend health, logs, HTTP/502 errors, certificates/Key Vault, WAF, mTLS, session affinity, listeners, AKS ingress, and redirect problems |
+| Best Practices | L52-L56 | Guidance on scaling Application Gateway for heavy traffic, including autoscaling, sizing, performance tuning, connection limits, and configuration patterns for high-load scenarios. |
+| Decision Making | L57-L68 | Guidance on pricing, scaling, and migration decisions for Application Gateway: v1→v2, AGIC Helm→AKS add-on, V1 retirement planning, and classic VM to ARM migration FAQs. |
+| Limits & Quotas | L69-L74 | Autoscaling behavior, zone redundancy setup, and v2 SKU limits/quotas (instances, throughput, connections), plus FAQ on performance, scaling, and configuration constraints. |
+| Security | L75-L97 | TLS/SSL and mTLS configuration for Application Gateway: policies, certificates (Key Vault, Let’s Encrypt, self‑signed), private access, HSTS, FIPS, JWT validation, and security cookie settings |
+| Configuration | L98-L135 | Configuring Application Gateway components (listeners, routing, probes, TLS, headers, URLs, cookies, Private Link, AKS ingress) and related monitoring, health, and error page settings. |
+| Integrations & Coding Patterns | L136-L142 | Configuring App Gateway TLS with Key Vault (portal/PowerShell) and using App Gateway metrics to autoscale AKS pods and integrate with Kubernetes workloads |
+| Deployment | L143-L148 | Guides for deploying IPv6-enabled Azure Application Gateway using ARM templates, Azure portal, or PowerShell, including required settings and configuration steps. |
 
 ### Troubleshooting
 | Topic | URL |

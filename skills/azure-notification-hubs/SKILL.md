@@ -1,34 +1,37 @@
 ---
 name: azure-notification-hubs
-description: Expert knowledge for Azure Notification Hubs development including integrations & coding patterns, decision making, configuration, deployment, security, limits & quotas, architecture & design patterns, troubleshooting, and best practices. Use when building, debugging, or optimizing Azure Notification Hubs applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Notification Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Notification Hubs applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Notification Hubs Skill
 
-This skill provides expert guidance for Azure Notification Hubs development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing common Notification Hubs issues, including message drops, delivery failures, platform push errors, and configuration or credential problems. |
-| Best Practices | L39-L43 | Guidance for adapting to iOS 13 push changes: handling APNs token/format updates, notification payload/authorization changes, and required client/server code updates in Notification Hubs. |
-| Decision Making | L44-L48 | Guidance on selecting the right Notification Hubs pricing tier, feature and scale differences between tiers, and how to upgrade or downgrade plans. |
-| Architecture & Design Patterns | L49-L53 | Guidance on designing scalable, multi-tenant, and enterprise-grade push notification architectures using Azure Notification Hubs and related Azure services. |
-| Limits & Quotas | L54-L59 | Managing large-scale registration data via bulk export/import and configuring scheduled or recurring push notifications in Notification Hubs. |
-| Security | L60-L67 | Encryption at rest, EU data residency, access control/roles, and TLS version requirements for securing Azure Notification Hubs. |
-| Configuration | L68-L83 | Configuring Notification Hubs: PNS credentials (APNS, FCM, WNS, Baidu, MPNS), token-based auth, tags/routing, device registration patterns, Private Link, and monitoring/diagnostic logs. |
-| Integrations & Coding Patterns | L84-L112 | Implementing and migrating push integrations with FCM/APNS/WNS, targeting users/devices, templates/localization, and sending notifications from various server-side SDKs and languages |
-| Deployment | L113-L118 | How to provision and deploy Notification Hubs using infrastructure-as-code tools like Bicep, ARM templates, and Terraform, including resource definitions and configuration. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing common Notification Hubs issues, including message drops, delivery failures, platform push errors, and configuration or credential problems. |
+| Best Practices | L42-L46 | Guidance for adapting to iOS 13 push changes: handling APNs token/format updates, notification payload/authorization changes, and required client/server code updates in Notification Hubs. |
+| Decision Making | L47-L51 | Guidance on selecting the right Notification Hubs pricing tier, feature and scale differences between tiers, and how to upgrade or downgrade plans. |
+| Architecture & Design Patterns | L52-L56 | Guidance on designing scalable, multi-tenant, and enterprise-grade push notification architectures using Azure Notification Hubs and related Azure services. |
+| Limits & Quotas | L57-L62 | Managing large-scale registration data via bulk export/import and configuring scheduled or recurring push notifications in Notification Hubs. |
+| Security | L63-L70 | Encryption at rest, EU data residency, access control/roles, and TLS version requirements for securing Azure Notification Hubs. |
+| Configuration | L71-L86 | Configuring Notification Hubs: PNS credentials (APNS, FCM, WNS, Baidu, MPNS), token-based auth, tags/routing, device registration patterns, Private Link, and monitoring/diagnostic logs. |
+| Integrations & Coding Patterns | L87-L115 | Implementing and migrating push integrations with FCM/APNS/WNS, targeting users/devices, templates/localization, and sending notifications from various server-side SDKs and languages |
+| Deployment | L116-L121 | How to provision and deploy Notification Hubs using infrastructure-as-code tools like Bicep, ARM templates, and Terraform, including resource definitions and configuration. |
 
 ### Troubleshooting
 | Topic | URL |

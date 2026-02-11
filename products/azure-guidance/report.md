@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
-  decision-making: Guidance to choose the right Azure services, data/AI platforms,
-    and equivalents to AWS/GCP offerings, including AKS, storage, networking, DR,
-    and compute options for specific workloads.
+  decision-making: Guidance for choosing Azure services, architectures, and equivalents
+    (esp. vs AWS/GCP) for compute, data, AI, containers/AKS, networking, storage,
+    and migration decisions.
   best-practices: Best practices for designing, operating, and hardening Azure workloads
     (VMs, AKS, SAP, IoT, Event Hubs), including HA/DR, scaling, patching, backup,
     resilience, and performance.
@@ -29,8 +29,8 @@ category_descriptions:
 - **Total Pages**: 365
 - **Fetched**: 365
 - **Fetch Failed**: 0
-- **Classified**: 265
-- **Unclassified**: 100
+- **Classified**: 264
+- **Unclassified**: 101
 
 ### Incremental Update
 - **New Pages**: 0
@@ -43,23 +43,23 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 133 | 36.4% |
+| architecture-patterns | 132 | 36.2% |
 | best-practices | 27 | 7.4% |
 | configuration | 2 | 0.5% |
 | decision-making | 59 | 16.2% |
 | deployment | 9 | 2.5% |
 | security | 25 | 6.8% |
 | troubleshooting | 10 | 2.7% |
-| *(Unclassified)* | 100 | 27.4% |
+| *(Unclassified)* | 101 | 27.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-02-03T06:02:00.000Z → 2026-02-10T06:02:00.000Z
-- [Firewall protection for an AKS cluster](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-firewall)
-  - Updated: 2025-10-30T05:03:00Z → 2026-02-10T06:02:00Z
+- [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration)
+  - Updated: 2025-10-30T05:03:00Z → 2026-02-11T06:05:00Z
+- [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison)
+  - Updated: 2025-10-30T05:03:00Z → 2026-02-11T06:05:00Z
 
 ## Classified Pages
 
@@ -121,6 +121,7 @@ category_descriptions:
 | [Speech recognition and generation](https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/speech-recognition-generation) | decision-making | 0.74 | Compares Azure speech-related AI capabilities (STT, TTS, translation, speaker recognition) to guide service choice for different speech scenarios. |
 | [Targeted language processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/targeted-language-processing) | decision-making | 0.74 | Covers multiple Azure AI language services and their capabilities to help select the right one for NLP, translation, and document extraction scenarios. |
 | [Choose an analytical data store in Microsoft Fabric](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-analytical-data-stores) | decision-making | 0.72 | Architecture Center 'technology choices' articles typically include comparison tables and concrete criteria (data volume, type, engine, ingestion/query patterns) to decide between Fabric analytical stores. This is product-specific decision guidance rather than generic concepts. |
+| [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison) | decision-making | 0.72 | The page compares multiple Azure services for hosting Java applications and provides planning suggestions and considerations for mainstream scenarios. This is technology selection guidance that helps decide between options (App Service, AKS, Functions, etc.) with scenario-based recommendations, fitting the decision-making category. It goes beyond a simple overview by focusing on which option to use when, rather than just describing each service. |
 | [Multi-region load balancing](https://learn.microsoft.com/en-us/azure/architecture/high-availability/reference-architecture-traffic-manager-application-gateway) | architecture-patterns | 0.72 | Detailed Azure-specific high-availability architecture using Traffic Manager, Application Gateway, regional load balancers, and global VNet peering with pattern-specific trade-offs. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/event-hubs-functions) | best-practices | 0.72 | Provides detailed guidance on using Event Hubs with Functions, including product-specific settings, patterns, and techniques for performance and reliability beyond generic serverless concepts. |
 | [Build workloads with Azure Spot Virtual Machines](https://learn.microsoft.com/en-us/azure/architecture/guide/spot/spot-eviction) | best-practices | 0.71 | Explicitly described as best practices for building reliable workloads on Spot VMs, including how to handle evictions and design resilient applications. This is concrete, product-specific guidance. |
@@ -143,7 +144,6 @@ category_descriptions:
 | [CI/CD for microservices on Kubernetes](https://learn.microsoft.com/en-us/azure/architecture/microservices/ci-cd-kubernetes) | deployment | 0.70 | Describes a concrete CI/CD pipeline architecture for AKS using Azure DevOps and Helm, including deployment flow and environment promotion; this is a product-specific deployment pattern beyond generic CI/CD advice. |
 | [Certificate lifecycle management on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/certificate-lifecycle/) | architecture-patterns | 0.70 | Provides a concrete architecture and workflow to automate certificate renewal for nonintegrated CAs using Azure services; this is a product-specific pattern for a niche scenario, not just conceptual security guidance. |
 | [Choose a compute option](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/compute-options) | decision-making | 0.70 | Explicitly helps select between compute options (e.g., orchestrators vs serverless) for microservices with scenario-based guidance, fitting decision-making for platform choice. |
-| [Compare Java application hosting options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/service-for-java-comparison) | decision-making | 0.70 | Compares multiple Azure hosting options for Java with planning suggestions and considerations; focused on helping choose between platform types and approaches. |
 | [Cost management and optimization](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/cost-management) | decision-making | 0.70 | Explains pricing, cost optimization, and governance for AKS compared to EKS; provides guidance on how to manage and optimize costs across options, which is decision-making around cost and governance choices. |
 | [Cross-tenant secure access to apps](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints) | security | 0.70 | Architecture for restricting inbound traffic to web/function apps using private endpoints across tenants, with product-specific network and access configuration patterns. |
 | [Deploy AD DS in an Azure virtual network](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/identity/adds-extend-domain) | architecture-patterns | 0.70 | Shows how to deploy domain controllers in an Azure VNet to extend an on-premises AD domain, with product-specific hybrid identity architecture patterns. |
@@ -237,7 +237,6 @@ category_descriptions:
 | [Cluster governance](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/governance) | decision-making | 0.65 | Covers governance options for Kubernetes clusters in cloud environments and compares AKS and EKS governance; likely includes concrete mechanisms (policies, controls) and how to choose them, fitting decision-making around governance approaches. |
 | [Cluster monitoring and logging](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/monitoring) | decision-making | 0.65 | Comparative AKS vs EKS monitoring/logging article that guides which Azure monitoring/logging options to use for clusters and workloads; likely includes product-specific option comparisons and trade-offs for different scenarios, fitting decision-making. |
 | [Computer forensics](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/forensics/) | architecture-patterns | 0.65 | Describes a specific Azure-based architecture and workflow for maintaining digital evidence chain of custody across acquisition, preservation, and access; this is a product-specific pattern with concrete stages and responsibilities, beyond generic concepts. |
-| [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration) | architecture-patterns | 0.65 | Discusses production-scale orchestration patterns for containerized microservices, including how orchestrators handle deployment, scaling, and health. This is product-style architecture guidance specific to container-based microservices rather than generic container concepts. |
 | [Data considerations](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/data-considerations) | architecture-patterns | 0.65 | Provides prescriptive guidance on data ownership, integrity, and consistency patterns in microservices (separate data stores, avoiding schema coupling). Goes beyond generic theory into concrete architectural rules for service boundaries and data access. |
 | [Deployment options](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/landing-zone-deploy) | deployment | 0.65 | Describes deployment options for platform and application landing zones. While summary is high-level, this topic typically includes Azure-specific deployment approaches and constraints for governance at scale, fitting deployment guidance. |
 | [Design for self-healing](https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/self-healing) | best-practices | 0.65 | Provides concrete recommendations for implementing self-healing in Azure workloads (patterns for detection, response, and recovery). This is actionable, product-oriented resiliency guidance rather than generic reliability theory. |
@@ -406,6 +405,7 @@ category_descriptions:
 | [Compensating Transaction](https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) | 0.20 | Compensating Transaction is a generic architecture pattern; summary indicates conceptual description without concrete product-specific parameters or thresholds. |
 | [Competing Consumers](https://learn.microsoft.com/en-us/azure/architecture/patterns/competing-consumers) | 0.20 | Competing Consumers pattern description is conceptual scalability guidance, not product-specific limits, configs, or troubleshooting content. |
 | [Compute Resource Consolidation](https://learn.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation) | 0.20 | Compute Resource Consolidation pattern is presented as a general design pattern; no indication of numeric thresholds, config tables, or Azure-specific constraints. |
+| [Container orchestration](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/orchestration) | 0.20 | Architecture Center article is a conceptual discussion of container orchestration for microservices without product-specific limits, configuration tables, decision matrices with quantified thresholds, or concrete error/diagnostic details. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/management-governance/management-governance-start-here) | 0.20 | High-level overview and navigation page for management and governance architectures and services. Lacks detailed patterns, limits, or configuration specifics. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/migration/migration-start-here) | 0.20 | Overview/navigation page for migration technologies and reference architectures. Does not contain detailed decision matrices, limits, or configuration parameters. |
 | [Get started](https://learn.microsoft.com/en-us/azure/architecture/guide/security/security-start-here) | 0.20 | Security architecture design overview and navigation page. Describes importance of security conceptually without product-specific configuration or error details. |

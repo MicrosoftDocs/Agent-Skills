@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 260
+- **Updated Pages**: 0
+- **Unchanged**: 262
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management-billing/azure-cost-management-billing.csv`
 
@@ -58,13 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 94 | 35.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage a Microsoft Azure credit resource](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/credits/manage-azure-credits)
-  - Updated: 2026-02-02T23:12:00.000Z → 2026-02-09T08:00:00.000Z
-- [Manage a Microsoft discount resource](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/discounts/manage-azure-discount)
-  - Updated: 2026-02-02T23:12:00.000Z → 2026-02-09T08:00:00.000Z
 
 ## Classified Pages
 

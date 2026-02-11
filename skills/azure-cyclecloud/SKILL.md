@@ -1,33 +1,36 @@
 ---
 name: azure-cyclecloud
-description: Expert knowledge for Azure Cyclecloud development including integrations & coding patterns, configuration, architecture & design patterns, security, troubleshooting, decision making, deployment, and best practices. Use when building, debugging, or optimizing Azure Cyclecloud applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Cyclecloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cyclecloud applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Cyclecloud Skill
 
-This skill provides expert guidance for Azure Cyclecloud development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L38 | Diagnosing and fixing CycleCloud errors and node startup failures, plus where to find and interpret server and node log files for troubleshooting |
-| Best Practices | L39-L44 | Best practices for configuring CycleCloud clusters on HB/HC HPC VMs and controlling node lifecycle to avoid unwanted auto-termination. |
-| Decision Making | L45-L54 | Guidance on planning and sizing CycleCloud deployments, VM placement, custom images, Slurm workspaces, Spot VM usage, and migration from Azure CycleCloud 7. |
-| Architecture & Design Patterns | L55-L59 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including patterns for failover, networking, and resource management. |
-| Security | L60-L74 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SELinux, Bastion access, and network/security best practices for clusters and portal. |
-| Configuration | L75-L120 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, storage, networking, autoscaling, proxies, CLI/Jetpack, VMSS Flex, monitoring, backup, and locked-down environments |
-| Integrations & Coding Patterns | L121-L140 | APIs, SDKs, and patterns for automating CycleCloud plus integrating schedulers (Slurm, PBS, Grid Engine, HTCondor, LSF, HPC Pack), monitoring, events, and Open OnDemand. |
-| Deployment | L141-L147 | Deploying and running Azure CycleCloud via CLI, ARM templates, manual install/upgrade steps, and container-based (ACI) deployments, including workspace setup for Slurm clusters. |
+| Troubleshooting | L35-L41 | Diagnosing and fixing CycleCloud errors and node startup failures, plus where to find and interpret server and node log files for troubleshooting |
+| Best Practices | L42-L47 | Best practices for configuring CycleCloud clusters on HB/HC HPC VMs and controlling node lifecycle to avoid unwanted auto-termination. |
+| Decision Making | L48-L57 | Guidance on planning and sizing CycleCloud deployments, VM placement, custom images, Slurm workspaces, Spot VM usage, and migration from Azure CycleCloud 7. |
+| Architecture & Design Patterns | L58-L62 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including patterns for failover, networking, and resource management. |
+| Security | L63-L77 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SELinux, Bastion access, and network/security best practices for clusters and portal. |
+| Configuration | L78-L123 | Designing and configuring CycleCloud clusters: templates, node/nodearray setup, storage, networking, autoscaling, proxies, CLI/Jetpack, VMSS Flex, monitoring, backup, and locked-down environments |
+| Integrations & Coding Patterns | L124-L143 | APIs, SDKs, and patterns for automating CycleCloud plus integrating schedulers (Slurm, PBS, Grid Engine, HTCondor, LSF, HPC Pack), monitoring, events, and Open OnDemand. |
+| Deployment | L144-L150 | Deploying and running Azure CycleCloud via CLI, ARM templates, manual install/upgrade steps, and container-based (ACI) deployments, including workspace setup for Slurm clusters. |
 
 ### Troubleshooting
 | Topic | URL |

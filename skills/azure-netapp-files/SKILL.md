@@ -1,34 +1,37 @@
 ---
 name: azure-netapp-files
-description: Expert knowledge for Azure Netapp Files development including deployment, configuration, best practices, limits & quotas, integrations & coding patterns, troubleshooting, decision making, architecture & design patterns, and security. Use when building, debugging, or optimizing Azure Netapp Files applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Netapp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Netapp Files applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-10"
+  generated_at: "2026-02-11"
 ---
 # Azure Netapp Files Skill
 
-This skill provides expert guidance for Azure Netapp Files development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L47 | Diagnosing and fixing Azure NetApp Files issues: resource provider, capacity pools, AVGs, snapshots, CMKs, LDAP access, CRUD ops, file locks, replication, and AzAcSnap communication. |
-| Best Practices | L48-L77 | Performance, configuration, and deployment best practices for Azure NetApp Files, including NFS/SMB tuning, SAP/Oracle design, VM/AVD choices, migration/DR, and performance testing. |
-| Decision Making | L78-L98 | Guidance on choosing Azure NetApp Files volume types, service levels, caching/cool tiers, data protection/DR, performance planning, cost optimization, and migration options by workload. |
-| Architecture & Design Patterns | L99-L105 | Designing Azure NetApp Files architectures: VNet/topology and connectivity patterns, using ANF as Azure VMware Solution datastores, and planning AD DS integration for ANF workloads. |
-| Limits & Quotas | L106-L127 | Limits, quotas, and behaviors for Azure NetApp Files: capacity, throughput, large volumes, backups, NFS/SMB, LDAP/groups, maxfiles, file/path/charset limits, and user/group volume quotas |
-| Security | L128-L159 | Security configuration for Azure NetApp Files: encryption (CMK/HSM, data-at-rest/in-transit), Kerberos/LDAP/AD, ACLs and permissions (NFS/SMB), policy/governance, and ransomware protection. |
-| Configuration | L160-L195 | Configuring Azure NetApp Files volumes, protocols, networking, quotas, snapshots/backup, monitoring, and app volume groups (SAP HANA, Oracle) including AzAcSnap and AD/LDAP/SMB/NFS setup. |
-| Integrations & Coding Patterns | L196-L215 | Using AzAcSnap with Azure NetApp Files (backup, restore, test, details, runbefore/after), and integrating via REST API, PowerShell, S3-compatible object API, Databricks, and OneLake. |
-| Deployment | L216-L227 | Guides for deploying and migrating SAP HANA and Oracle on Azure NetApp Files, including AVGs, DR/HSR, cross-region replication, AzAcSnap, gov regions, and ONTAP migration. |
+| Troubleshooting | L36-L50 | Diagnosing and fixing Azure NetApp Files issues: resource provider, capacity pools, AVGs, snapshots, CMKs, LDAP access, CRUD ops, file locks, replication, and AzAcSnap communication. |
+| Best Practices | L51-L80 | Performance, configuration, and deployment best practices for Azure NetApp Files, including NFS/SMB tuning, SAP/Oracle design, VM/AVD choices, migration/DR, and performance testing. |
+| Decision Making | L81-L101 | Guidance on choosing Azure NetApp Files volume types, service levels, caching/cool tiers, data protection/DR, performance planning, cost optimization, and migration options by workload. |
+| Architecture & Design Patterns | L102-L108 | Designing Azure NetApp Files architectures: VNet/topology and connectivity patterns, using ANF as Azure VMware Solution datastores, and planning AD DS integration for ANF workloads. |
+| Limits & Quotas | L109-L130 | Limits, quotas, and behaviors for Azure NetApp Files capacity, throughput, volumes, protocols (NFS/SMB), backups, maxfiles, directory growth, and user/group quotas. |
+| Security | L131-L162 | Security configuration for Azure NetApp Files: encryption (CMK/HSM, data-at-rest/in-transit), Kerberos/LDAP/AD, ACLs and permissions (NFS/SMB), policy/governance, and ransomware protection. |
+| Configuration | L163-L198 | Configuring Azure NetApp Files volumes, protocols, networking, quotas, snapshots/backup, monitoring, and app volume groups (SAP HANA, Oracle) including AzAcSnap and AD/LDAP/SMB/NFS setup. |
+| Integrations & Coding Patterns | L199-L218 | Using AzAcSnap with Azure NetApp Files (backup, restore, test, details, runbefore/after), and integrating via REST API, PowerShell, S3-compatible object API, Databricks, and OneLake. |
+| Deployment | L219-L230 | Guides for deploying and migrating SAP HANA and Oracle on Azure NetApp Files, including AVGs, DR/HSR, cross-region replication, AzAcSnap, gov regions, and ONTAP migration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -118,7 +121,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Review NFS protocol limits on Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-nfs |
 | Review SMB protocol limits on Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-smb |
 | Use large volume size and throughput limits in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes |
-| Apply requirements and size limits for Azure NetApp Files large volumes | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations |
+| Azure NetApp Files large volume size limits | https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations |
 | Understand and manage Azure NetApp Files maxfiles limits | https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept |
 | Apply Azure NetApp Files regional capacity quotas | https://learn.microsoft.com/en-us/azure/azure-netapp-files/regional-capacity-quota |
 | Understand file and path length limits in Azure NetApp Files | https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-path-lengths |

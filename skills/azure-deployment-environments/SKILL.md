@@ -1,31 +1,34 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including best practices, security, configuration, integrations & coding patterns, troubleshooting, and deployment. Use when building, debugging, or optimizing Azure Deployment Environments applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Deployment Environments applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Deployment Environments Skill
 
-This skill provides expert guidance for Azure Deployment Environments development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Diagnosing and fixing Azure Deployment Environments failures when deploying custom images, including common error causes, logs to check, and remediation steps. |
-| Best Practices | L35-L39 | Guidance on organizing Azure Deployment Environments (ADE) catalogs and templates to maximize cache reuse, reduce deployment time, and improve template management efficiency. |
-| Security | L40-L47 | RBAC and identity setup for ADE: planning and assigning ADE roles, configuring managed identities, and authenticating to ADE REST APIs via Azure CLI. |
-| Configuration | L48-L62 | Configuring ADE dev centers, projects, catalogs, and environment types, using environment.yaml, CLI/ARM setup, and referencing environment variables in custom images. |
-| Integrations & Coding Patterns | L63-L68 | Using custom container images with Azure Deployment Environments, including building, publishing, and managing images via ADE CLI workflows |
-| Deployment | L69-L73 | Setting up CI/CD to deploy Azure Deployment Environments using Azure Pipelines or GitHub Actions, including workflow configuration and integration steps. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing Azure Deployment Environments failures when deploying custom images, including common error causes, logs to check, and remediation steps. |
+| Best Practices | L38-L42 | Guidance on organizing Azure Deployment Environments (ADE) catalogs and templates to maximize cache reuse, reduce deployment time, and improve template management efficiency. |
+| Security | L43-L50 | RBAC and identity setup for ADE: planning and assigning ADE roles, configuring managed identities, and authenticating to ADE REST APIs via Azure CLI. |
+| Configuration | L51-L65 | Configuring ADE dev centers, projects, catalogs, and environment types, using environment.yaml, CLI/ARM setup, and referencing environment variables in custom images. |
+| Integrations & Coding Patterns | L66-L71 | Using custom container images with Azure Deployment Environments, including building, publishing, and managing images via ADE CLI workflows |
+| Deployment | L72-L76 | Setting up CI/CD to deploy Azure Deployment Environments using Azure Pipelines or GitHub Actions, including workflow configuration and integration steps. |
 
 ### Troubleshooting
 | Topic | URL |

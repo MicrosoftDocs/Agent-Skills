@@ -1,31 +1,34 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including integrations & coding patterns, security, troubleshooting, configuration, decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Partner Solutions applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Partner Solutions applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Partner Solutions Skill
 
-This skill provides expert guidance for Azure Partner Solutions development. It combines local quick-reference content with remote documentation fetching capabilities.
+Main entry point for a product skill.
+Should be < 500 lines and serve as navigation hub.
+All sub-skill files should be linked directly from SKILL.md (one level deep).
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L38 | Diagnosing and resolving common setup, configuration, and runtime issues for Azure Native integrations with Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic |
-| Decision Making | L39-L43 | Guidance on evaluating and signing up for the Azure Dynatrace free trial, including enrollment steps, prerequisites, and considerations before committing. |
-| Architecture & Design Patterns | L44-L48 | Architectural guidance for deploying and integrating Cloud NGFW firewalls behind Azure Application Gateway, including network design, routing, and security best practices. |
-| Security | L49-L57 | Managing security, SSO, roles, and monitoring for Azure-integrated partner services like Confluent, Datadog, Dynatrace, Informatica IDMC, and NGINXaaS. |
-| Configuration | L58-L67 | Configuring and managing Azure integrations and runtime settings for Datadog, Dynatrace, Elastic, Informatica serverless, and Cloud NGFW networking/NAT/logging. |
-| Integrations & Coding Patterns | L68-L71 | Guides for integrating Confluent Cloud with Azure compute (AKS, VMs, Functions, etc.), including connectivity setup, authentication, and data streaming patterns. |
+| Troubleshooting | L33-L41 | Diagnosing and resolving common setup, configuration, and runtime issues for Azure Native integrations with Confluent Cloud, Datadog, Dynatrace, Elastic, and New Relic |
+| Decision Making | L42-L46 | Guidance on evaluating and signing up for the Azure Dynatrace free trial, including enrollment steps, prerequisites, and considerations before committing. |
+| Architecture & Design Patterns | L47-L51 | Architectural guidance for deploying and integrating Cloud NGFW firewalls behind Azure Application Gateway, including network design, routing, and security best practices. |
+| Security | L52-L60 | Managing security, SSO, roles, and monitoring for Azure-integrated partner services like Confluent, Datadog, Dynatrace, Informatica IDMC, and NGINXaaS. |
+| Configuration | L61-L70 | Configuring and managing Azure integrations and runtime settings for Datadog, Dynatrace, Elastic, Informatica serverless, and Cloud NGFW networking/NAT/logging. |
+| Integrations & Coding Patterns | L71-L74 | Guides for integrating Confluent Cloud with Azure compute (AKS, VMs, Functions, etc.), including connectivity setup, authentication, and data streaming patterns. |
 
 ### Troubleshooting
 | Topic | URL |
