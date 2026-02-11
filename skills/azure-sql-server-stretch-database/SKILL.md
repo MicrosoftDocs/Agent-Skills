@@ -1,33 +1,34 @@
 ---
 name: azure-sql-server-stretch-database
-description: Expert knowledge for Azure Sql Server Stretch Database development including decision making, configuration, integrations & coding patterns, troubleshooting, security, deployment, architecture & design patterns, best practices, and limits & quotas. Use when building, debugging, or optimizing Azure Sql Server Stretch Database applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Sql Server Stretch Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Sql Server Stretch Database applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Sql Server Stretch Database Skill
 
-This skill provides expert guidance for Azure Sql Server Stretch Database development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Sql Server Stretch Database. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L57 | Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O, deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos, and SQL on Azure VMs. |
-| Best Practices | L58-L93 | Best-practice guidance for performance, HA/DR, auditing, storage, sizing, and migrations across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
-| Decision Making | L94-L134 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, DR/HA, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid Benefit, reservations, SaaS tenancy). |
-| Architecture & Design Patterns | L135-L148 | Patterns for high availability, DR, geo-replication, connectivity, and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs, including Always On and WSFC setups. |
-| Limits & Quotas | L149-L170 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/network constraints for Azure SQL Database and Managed Instance |
-| Security | L171-L271 | Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra, MFA, Kerberos), network isolation, auditing, TDE/CMK, threat protection, best practices, and compliance. |
-| Configuration | L272-L390 | Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security, backups, HA/DR, monitoring, maintenance, automation, and deployment via portal, CLI, PowerShell, ARM/Bicep/Terraform. |
-| Integrations & Coding Patterns | L391-L455 | Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers, Excel, Spark, Stream Analytics), plus elastic scale, jobs, replication, failover, backup/restore, and PowerShell/REST automation. |
+| Troubleshooting | L34-L58 | Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O, deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos, and SQL on Azure VMs. |
+| Best Practices | L59-L94 | Best-practice guidance for performance, HA/DR, auditing, storage, sizing, and migrations across Azure SQL Database, Managed Instance, and SQL Server on Azure VMs. |
+| Decision Making | L95-L135 | Guidance for choosing Azure SQL/SQL Server deployment, pricing, DR/HA, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid Benefit, reservations, SaaS tenancy). |
+| Architecture & Design Patterns | L136-L149 | Patterns for high availability, DR, geo-replication, connectivity, and clustering for Azure SQL (DB, MI, elastic pools) and SQL Server on Azure VMs, including Always On and WSFC setups. |
+| Limits & Quotas | L150-L171 | Backup behavior, free-tier offers/quotas, DTU/vCore resource limits, maintenance windows, and sizing/network constraints for Azure SQL Database and Managed Instance |
+| Security | L172-L272 | Security configuration for Azure SQL (DB, MI, SQL VMs): auth (Entra, MFA, Kerberos), network isolation, auditing, TDE/CMK, threat protection, best practices, and compliance. |
+| Configuration | L273-L391 | Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security, backups, HA/DR, monitoring, maintenance, automation, and deployment via portal, CLI, PowerShell, ARM/Bicep/Terraform. |
+| Integrations & Coding Patterns | L392-L455 | Connecting apps and tools (EF Core, .NET, Node, Python, Excel, Go, etc.) to Azure SQL, plus elastic scale, cross-db queries, jobs, replication, backup/restore, and automation via PowerShell/APIs. |
 | Deployment | L456-L492 | Deploying, moving, restoring, and failing over Azure SQL (DB, Managed Instance, SQL on VMs), including geo-replication, backups, region moves, sharding, and migrations from other databases. |
 
 ### Troubleshooting
@@ -407,7 +408,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use Ruby to connect and query Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql |
 | Design Azure SQL database schema using C# and ADO.NET | https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-csharp-tutorial?view=azuresql |
 | Connect C and C++ applications to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-cplusplus-simple?view=azuresql |
-| Develop a Python Kubernetes app with Azure SQL backend | https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql |
 | Migrate existing sharded databases to Elastic tools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-convert-to-use-elastic-tools?view=azuresql |
 | Use RecoveryManager to repair Azure SQL shard maps | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-recovery-manager?view=azuresql |
 | Manage Azure SQL elastic jobs with PowerShell | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-powershell-create?view=azuresql |

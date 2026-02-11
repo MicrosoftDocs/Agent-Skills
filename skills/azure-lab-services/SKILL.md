@@ -1,34 +1,35 @@
 ---
 name: azure-lab-services
-description: Expert knowledge for Azure Lab Services development including security, configuration, best practices, limits & quotas, architecture & design patterns, decision making, integrations & coding patterns, deployment, and troubleshooting. Use when building, debugging, or optimizing Azure Lab Services applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Lab Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lab Services applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Lab Services Skill
 
-This skill provides expert guidance for Azure Lab Services development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Lab Services. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L40 | Diagnosing and fixing Azure Lab Services VM connectivity and access issues, including lab creation failures, network problems, and reset/recovery options for lab VMs. |
-| Best Practices | L41-L48 | Best practices for building lab images, enabling nested virtualization, tuning Linux RDP performance, and configuring Windows template VMs for Azure Lab Services. |
-| Decision Making | L49-L57 | Guidance on choosing lab accounts vs lab plans, planning migrations (physical labs, service retirement), selecting GPU VM sizes, and when to move between Azure Lab Services and DevTest Labs. |
-| Architecture & Design Patterns | L58-L63 | Azure Lab Services architecture basics and supported networking designs for lab plans, including VNet integration, connectivity options, and design considerations. |
-| Limits & Quotas | L64-L72 | Managing VM capacity limits, core quotas and increase requests, user access and lab usage hours, plus VM inactivity and auto-deletion behavior in Azure Lab Services. |
-| Security | L73-L87 | Managing access and security for labs: RBAC roles, lab creator/owner assignment, Azure Policy governance, VM password resets, firewall rules, and restricting VM sizes. |
-| Configuration | L88-L111 | Configuring Azure Lab Services labs and lab plans: regions, images, VM shutdown/schedules, networking (VNets, advanced), galleries, GPU/nested virtualization, and policy-based controls. |
-| Integrations & Coding Patterns | L112-L123 | Integrating Lab Services with LMS/Teams, connecting labs to networks, and automating lab creation/management via Bicep, PowerShell, Python SDK, and Linux X2Go access. |
-| Deployment | L124-L133 | Creating and migrating labs and lab plans, including importing Windows/Linux images from VMs or physical labs, and quickly setting up and publishing Azure Lab Services environments |
+| Troubleshooting | L34-L41 | Diagnosing and fixing Azure Lab Services VM connectivity and access issues, including lab creation failures, network problems, and reset/recovery options for lab VMs. |
+| Best Practices | L42-L49 | Best practices for building lab images, enabling nested virtualization, tuning Linux RDP performance, and configuring Windows template VMs for Azure Lab Services. |
+| Decision Making | L50-L58 | Guidance on choosing lab accounts vs lab plans, planning migrations (physical labs, service retirement), selecting GPU VM sizes, and when to move between Azure Lab Services and DevTest Labs. |
+| Architecture & Design Patterns | L59-L64 | Azure Lab Services architecture basics and supported networking designs for lab plans, including VNet integration, connectivity options, and design considerations. |
+| Limits & Quotas | L65-L73 | Managing VM capacity limits, core quotas and increase requests, user access and lab usage hours, plus VM inactivity and auto-deletion behavior in Azure Lab Services. |
+| Security | L74-L88 | Managing access and security for labs: RBAC roles, lab creator/owner assignment, Azure Policy governance, VM password resets, firewall rules, and restricting VM sizes. |
+| Configuration | L89-L112 | Configuring Azure Lab Services labs and lab plans: regions, images, VM shutdown/schedules, networking (VNets, advanced), galleries, GPU/nested virtualization, and policy-based controls. |
+| Integrations & Coding Patterns | L113-L124 | Integrating Lab Services with LMS/Teams, connecting labs to networks, and automating lab creation/management via Bicep, PowerShell, Python SDK, and Linux X2Go access. |
+| Deployment | L125-L134 | Creating and migrating labs and lab plans, including importing Windows/Linux images from VMs or physical labs, and quickly setting up and publishing Azure Lab Services environments |
 
 ### Troubleshooting
 | Topic | URL |

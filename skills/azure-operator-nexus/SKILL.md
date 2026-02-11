@@ -1,33 +1,34 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including configuration, security, troubleshooting, limits & quotas, decision making, integrations & coding patterns, best practices, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Operator Nexus Skill
 
-This skill provides expert guidance for Azure Operator Nexus development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Operator Nexus. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L77 | Diagnosing and fixing Azure Operator Nexus issues across bare metal, Kubernetes, storage, networking, cabling, and control plane health, plus collecting logs and emergency recovery actions. |
-| Best Practices | L78-L82 | Guidance on planning, executing, and maintaining Azure Operator Nexus bare metal lifecycle operations, including provisioning, upgrades, maintenance, and reliability best practices. |
-| Decision Making | L83-L94 | Guidance on choosing Nexus storage appliances, near-edge compute and cluster VM SKUs, and planning supported versions, Kubernetes lifecycles, and platform/runtime upgrade strategy. |
-| Limits & Quotas | L95-L102 | Limits, quotas, and capacity planning for Azure Operator Nexus: storage classes, NFC/CM prep, isolation domain constraints, and platform-wide technical limits. |
-| Security | L103-L134 | Securing Nexus fabric, clusters, and VMs: RBAC, managed identities, SSH/serial access, ACLs, break-glass, key/secret rotation, Defender/MDE, vulnerability scanning, and Azure Policy. |
-| Configuration | L135-L198 | Configuring and operating Azure Operator Nexus clusters and network fabric: ARM templates, routing/BGP/QoS, isolation domains, observability, lifecycle, storage/credentials, and Kubernetes settings. |
-| Integrations & Coding Patterns | L199-L208 | CLI-based configuration of Nexus networking: IP prefixes, route policies, L2/L3 isolation domains, Network Fabric management, and Network Packet Broker TAP rules. |
-| Deployment | L209-L218 | Deploying, upgrading, and decommissioning Azure Operator Nexus instances and network fabric, including using parameterized templates and safe upgrade strategies like PauseAfterRack. |
+| Troubleshooting | L33-L78 | Diagnosing and fixing Azure Operator Nexus issues across bare metal, Kubernetes, storage, networking, cabling, and control plane health, plus collecting logs and emergency recovery actions. |
+| Best Practices | L79-L83 | Guidance on planning, executing, and maintaining Azure Operator Nexus bare metal lifecycle operations, including provisioning, upgrades, maintenance, and reliability best practices. |
+| Decision Making | L84-L95 | Guidance on choosing Nexus storage appliances, near-edge compute and cluster VM SKUs, and planning supported versions, Kubernetes lifecycles, and platform/runtime upgrade strategy. |
+| Limits & Quotas | L96-L103 | Limits, quotas, and capacity planning for Azure Operator Nexus: storage classes, NFC/CM prep, isolation domain constraints, and platform-wide technical limits. |
+| Security | L104-L135 | Securing Nexus fabric, clusters, and VMs: RBAC, managed identities, SSH/serial access, ACLs, break-glass, key/secret rotation, Defender/MDE, vulnerability scanning, and Azure Policy. |
+| Configuration | L136-L199 | Configuring and operating Azure Operator Nexus clusters and network fabric: ARM templates, routing/BGP/QoS, isolation domains, observability, lifecycle, storage/credentials, and Kubernetes settings. |
+| Integrations & Coding Patterns | L200-L209 | CLI-based configuration of Nexus networking: IP prefixes, route policies, L2/L3 isolation domains, Network Fabric management, and Network Packet Broker TAP rules. |
+| Deployment | L210-L219 | Deploying, upgrading, and decommissioning Azure Operator Nexus instances and network fabric, including using parameterized templates and safe upgrade strategies like PauseAfterRack. |
 
 ### Troubleshooting
 | Topic | URL |

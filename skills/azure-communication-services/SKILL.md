@@ -1,34 +1,35 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including configuration, decision making, security, best practices, limits & quotas, troubleshooting, deployment, integrations & coding patterns, and architecture & design patterns. Use when building, debugging, or optimizing Azure Communication Services applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Communication Services applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Communication Services Skill
 
-This skill provides expert guidance for Azure Communication Services development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Communication Services. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L100 | Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams interop, audio/video/device/network issues, plus collecting logs/metrics and interpreting error/diagnostic codes. |
-| Best Practices | L101-L122 | Best practices for ACS calling, SMS, email, and Teams interop: call quality, UX, network/AVD tuning, spam/reputation, policy compliance, tokens/auth, diagnostics, and virtual appointments. |
-| Decision Making | L123-L146 | Guidance on ACS-Teams interop, calling/phone/SMS/WhatsApp pricing, PSTN and number options, government cloud support, and migration from Twilio Video/Conversations to ACS |
-| Architecture & Design Patterns | L147-L152 | Patterns for auto-recording ACS calls with Event Grid/Functions and designing ACS networks with ExpressRoute for private, secure connectivity. |
-| Limits & Quotas | L153-L217 | Email sending limits, phone number eligibility/restrictions by country, calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and ACS API quotas and behaviors. |
-| Security | L218-L238 | Securing ACS apps: auth methods (Entra, HMAC, managed identities, SMTP), Teams interop security, sender/caller identity, roles, webhooks, encryption, captions, RTT, and access controls. |
-| Configuration | L239-L307 | Monitoring, logging, metrics, and diagnostics for ACS (calls, chat, SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams interop, and UI Library behavior. |
-| Integrations & Coding Patterns | L308-L441 | Patterns and samples for integrating ACS calling, chat, email, Rooms, Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST, events, and client capabilities. |
-| Deployment | L442-L446 | Guides for planning ACS direct routing infrastructure and deploying the ACS Chat Hero sample, including architecture, setup steps, and configuration details. |
+| Troubleshooting | L34-L101 | Diagnosing and fixing ACS calling, PSTN, SMS, email, Teams interop, audio/video/device/network issues, plus collecting logs/metrics and interpreting error/diagnostic codes. |
+| Best Practices | L102-L123 | Best practices for ACS calling, SMS, email, and Teams interop: call quality, UX, network/AVD tuning, spam/reputation, policy compliance, tokens/auth, diagnostics, and virtual appointments. |
+| Decision Making | L124-L147 | Guidance on ACS-Teams interop, calling/phone/SMS/WhatsApp pricing, PSTN and number options, government cloud support, and migration from Twilio Video/Conversations to ACS |
+| Architecture & Design Patterns | L148-L153 | Patterns for auto-recording ACS calls with Event Grid/Functions and designing ACS networks with ExpressRoute for private, secure connectivity. |
+| Limits & Quotas | L154-L218 | Email sending limits, phone number eligibility/restrictions by country, calling/direct routing/emergency/toll‑free constraints, SDK/platform limits, and ACS API quotas and behaviors. |
+| Security | L219-L239 | Securing ACS apps: auth methods (Entra, HMAC, managed identities, SMTP), Teams interop security, sender/caller identity, roles, webhooks, encryption, captions, RTT, and access controls. |
+| Configuration | L240-L308 | Monitoring, logging, metrics, and diagnostics for ACS (calls, chat, SMS, email, Rooms, Job Router), plus configuration of calling, routing, Teams interop, and UI Library behavior. |
+| Integrations & Coding Patterns | L309-L442 | Patterns and samples for integrating ACS calling, chat, email, Rooms, Job Router, Teams/WhatsApp, Azure AI/OpenAI, and UI libraries using SDKs, REST, events, and client capabilities. |
+| Deployment | L443-L447 | Guides for planning ACS direct routing infrastructure and deploying the ACS Chat Hero sample, including architecture, setup steps, and configuration details. |
 
 ### Troubleshooting
 | Topic | URL |

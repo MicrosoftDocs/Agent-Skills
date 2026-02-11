@@ -1,33 +1,34 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including security, best practices, integrations & coding patterns, configuration, deployment, limits & quotas, decision making, and troubleshooting. Use when building, debugging, or optimizing Azure Automation applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Automation applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Automation Skill
 
-This skill provides expert guidance for Azure Automation development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Automation. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L42 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors, shared resources, and collecting diagnostics for support. |
-| Best Practices | L43-L56 | Best practices for designing, structuring, and managing Azure Automation runbooks/DSC: modular runbooks, error handling, streams, watcher tasks, DR, compliance remediation, and module management. |
-| Decision Making | L57-L65 | Guidance for planning and executing Azure Automation migrations (SC Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity) and choosing how to start runbooks |
-| Limits & Quotas | L66-L73 | Azure Automation and DSC limits, quotas, version history, and support matrices for features like Change Tracking and Inventory, including per-subscription capacity and configuration constraints. |
-| Security | L74-L92 | Securing Azure Automation: identities (system/user-assigned, Entra ID), RBAC, encryption, private endpoints, STIG/policy compliance, and secure runbook/auth configuration. |
-| Configuration | L93-L119 | Configuring Azure Automation accounts: runbooks, State Configuration/DSC, Hybrid Runbook Workers, networking, logging/monitoring, assets (credentials, certs, variables), schedules, source control, and Python/PowerShell modules |
-| Integrations & Coding Patterns | L120-L132 | Patterns for connecting runbooks to AWS, Azure alerts, ARM, webhooks, email (SendGrid), Office 365, Azure SQL, and using SDKs/managed identity for automated provisioning and management |
-| Deployment | L133-L136 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software and configuration across Windows machines |
+| Troubleshooting | L33-L43 | Diagnosing and fixing Azure Automation issues: runbook failures, DSC/State Configuration, Hybrid Runbook Workers, managed identity/auth errors, shared resources, and collecting diagnostics for support. |
+| Best Practices | L44-L57 | Best practices for designing, structuring, and managing Azure Automation runbooks/DSC: modular runbooks, error handling, streams, watcher tasks, DR, compliance remediation, and module management. |
+| Decision Making | L58-L66 | Guidance for planning and executing Azure Automation migrations (SC Orchestrator, Log Analytics agent, Hybrid Workers, Run As to managed identity) and choosing how to start runbooks |
+| Limits & Quotas | L67-L74 | Azure Automation and DSC limits, quotas, version history, and support matrices for features like Change Tracking and Inventory, including per-subscription capacity and configuration constraints. |
+| Security | L75-L93 | Securing Azure Automation: identities (system/user-assigned, Entra ID), RBAC, encryption, private endpoints, STIG/policy compliance, and secure runbook/auth configuration. |
+| Configuration | L94-L120 | Configuring Azure Automation accounts: runbooks, State Configuration/DSC, Hybrid Runbook Workers, networking, logging/monitoring, assets (credentials, certs, variables), schedules, source control, and Python/PowerShell modules |
+| Integrations & Coding Patterns | L121-L133 | Patterns for connecting runbooks to AWS, Azure alerts, ARM, webhooks, email (SendGrid), Office 365, Azure SQL, and using SDKs/managed identity for automated provisioning and management |
+| Deployment | L134-L137 | Using Azure Automation State Configuration with Chocolatey to set up continuous deployment of software and configuration across Windows machines |
 
 ### Troubleshooting
 | Topic | URL |

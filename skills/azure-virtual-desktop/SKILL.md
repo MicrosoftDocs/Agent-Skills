@@ -1,34 +1,35 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including configuration, troubleshooting, deployment, best practices, decision making, security, integrations & coding patterns, architecture & design patterns, and limits & quotas. Use when building, debugging, or optimizing Azure Virtual Desktop applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-09"
 ---
 # Azure Virtual Desktop Skill
 
-This skill provides expert guidance for Azure Virtual Desktop development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Virtual Desktop. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L47 | Diagnosing and fixing AVD issues: app attach/MSIX, autoscale, FQDN/endpoint access, latency and connection quality, Log Analytics queries, session host health, graphics, and Teams performance. |
-| Best Practices | L48-L60 | Guidance on AVD performance, autoscale, cost, security, profiles (FSLogix), networking/proxies, RDP Multipath, Start VM on Connect, and Windows multi-session best practices. |
-| Decision Making | L61-L76 | Guidance for planning AVD architecture, autoscale, costs, licensing, storage, tools, deployment models, Teams support, and monitoring/optimization choices. |
-| Architecture & Design Patterns | L77-L81 | Designing stateless AVD host pools using ephemeral OS disks, including architecture choices, performance, cost, and reliability considerations for non-persistent workloads. |
-| Limits & Quotas | L82-L86 | RDP bandwidth needs and network usage for Azure Virtual Desktop, including factors affecting bandwidth, estimating requirements, and optimizing performance. |
-| Security | L87-L103 | Securing Azure Virtual Desktop: identity/SSO (Entra, AD FS, Kerberos, MFA, external users), RBAC/permissions, managed identities, delegated access, and session protections (screen capture, watermarking, forensics). |
-| Configuration | L104-L165 | Configuring AVD host pools and session hosts, images, autoscale, licensing, networking, monitoring, and all RDP/client settings (redirection, codecs, QoS, Shortpath, Teams, OneDrive, language packs). |
-| Integrations & Coding Patterns | L166-L172 | Using CLI/PowerShell to manage AVD, configuring MSIX app attach with MSIXMGR, and integrating WebRTC calling apps with AVD multimedia redirection. |
-| Deployment | L173-L181 | Guides for deploying and migrating AVD: moving from classic to current, shifting resources across regions, handling regional host pool limits, client deployment, and autoscaling session hosts. |
+| Troubleshooting | L34-L48 | Diagnosing and fixing AVD issues: app attach/MSIX, autoscale, FQDN/endpoint access, latency and connection quality, Log Analytics queries, session host health, graphics, and Teams performance. |
+| Best Practices | L49-L61 | Guidance on AVD performance, autoscale, cost, security, profiles (FSLogix), networking/proxies, RDP Multipath, Start VM on Connect, and Windows multi-session best practices. |
+| Decision Making | L62-L77 | Guidance for planning AVD architecture, autoscale, costs, licensing, storage, tools, deployment models, Teams support, and monitoring/optimization choices. |
+| Architecture & Design Patterns | L78-L82 | Designing stateless AVD host pools using ephemeral OS disks, including architecture choices, performance, cost, and reliability considerations for non-persistent workloads. |
+| Limits & Quotas | L83-L87 | RDP bandwidth needs and network usage for Azure Virtual Desktop, including factors affecting bandwidth, estimating requirements, and optimizing performance. |
+| Security | L88-L104 | Securing Azure Virtual Desktop: identity/SSO (Entra, AD FS, Kerberos, MFA, external users), RBAC/permissions, managed identities, delegated access, and session protections (screen capture, watermarking, forensics). |
+| Configuration | L105-L166 | Configuring AVD host pools and session hosts, images, autoscale, licensing, networking, monitoring, and all RDP/client settings (redirection, codecs, QoS, Shortpath, Teams, OneDrive, language packs). |
+| Integrations & Coding Patterns | L167-L173 | Using CLI/PowerShell to manage AVD, configuring MSIX app attach with MSIXMGR, and integrating WebRTC calling apps with AVD multimedia redirection. |
+| Deployment | L174-L182 | Guides for deploying and migrating AVD: moving from classic to current, shifting resources across regions, handling regional host pool limits, client deployment, and autoscaling session hosts. |
 
 ### Troubleshooting
 | Topic | URL |

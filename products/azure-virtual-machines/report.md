@@ -1,33 +1,33 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
   deployment: 'Deploying and migrating Azure VMs/scale sets: disk and storage migration,
     proximity placement groups, zones, capacity reservations, MSP, blue-green/rolling
     deployments, and image build automation'
-  configuration: 'Configuring Azure VMs after creation: disks, images, encryption,
-    networking, GPU/InfiniBand, agents/extensions, patching, auto-shutdown, restore
-    points, and VM Image Builder setups.'
-  decision-making: Guidance for choosing VM sizes, disks, regions, licensing and cost
-    options, and planning migrations from retired SKUs, disk types, and images for
-    Azure Virtual Machines.
+  configuration: 'Configuring Azure VMs after deployment: disks, images, encryption,
+    networking, GPU/HPC, maintenance, restore points, agents/extensions, auto-shutdown,
+    patching, and Trusted Launch settings.'
+  decision-making: Guidance on choosing VM sizes, disks, images, regions, and pricing
+    options, plus planning migrations from retired SKUs, GPU/HPC series, and older
+    disk/encryption models.
   security: 'Securing Azure VMs and disks: encryption (ADE, CMK, SSE, double/host
     encryption), Trusted Launch/boot integrity, SSH keys, TLS/Key Vault, VM metadata
     hardening, and security policies/RBAC.'
-  best-practices: Best practices for Azure VM performance, cost, HA, storage, boot
-    time, temp disks, extensions, and scaling/optimizing HPC and InfiniBand-enabled
-    workloads
-  architecture-patterns: Designing low-latency and clustered VM architectures using
-    proximity placement groups and shared disks, plus understanding VM reboot causes,
-    maintenance events, and their impact on workloads
+  best-practices: Best practices for Azure VM performance, cost, HA, storage, boot,
+    NUMA/topology, InfiniBand/HPC scaling, capacity reservations, temp disks, and
+    Image Builder usage.
+  architecture-patterns: 'Designing low-latency and HPC VM architectures: proximity
+    placement, shared disks for clustering, HBv2–HBv5 topology optimization, and understanding
+    VM reboots/maintenance impacts'
   limits-quotas: VM size specs, disk and GPU performance limits, quotas, bursting,
     and scalability constraints for Azure VMs, disks, NVMe/ephemeral storage, and
     Dedicated Hosts.
   integrations: Scripts and patterns for VM connectivity, monitoring, maintenance,
-    backup/restore, disk cloning, and managing VMs/scale sets via CLI, PowerShell,
-    REST, and Azure integrations.
+    backup/restore, disk copy/export, image selection, and managing VMs/scale sets
+    via CLI, PowerShell, REST, and Event Hubs.
   troubleshooting: 'Diagnosing and fixing Azure VM issues: hibernation, extensions,
-    Spot/resize errors, image builder, disk encryption, metadata/MSP keys, restore
-    points, and gallery/Trusted Launch problems.'
+    disk encryption, Spot/resize errors, Image Builder, restore points, metadata/MSP
+    keys, and specialized HB/N-series problems.'
 ---
 # Azure Virtual Machines Crawl Report
 
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 726
 - **Fetched**: 726
 - **Fetch Failed**: 0
-- **Classified**: 568
-- **Unclassified**: 158
+- **Classified**: 579
+- **Unclassified**: 147
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 725
+- **Updated Pages**: 16
+- **Unchanged**: 710
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -50,23 +50,53 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 0.4% |
-| best-practices | 16 | 2.2% |
-| configuration | 157 | 21.6% |
-| decision-making | 49 | 6.7% |
+| architecture-patterns | 7 | 1.0% |
+| best-practices | 18 | 2.5% |
+| configuration | 159 | 21.9% |
+| decision-making | 54 | 7.4% |
 | deployment | 20 | 2.8% |
-| integrations | 39 | 5.4% |
+| integrations | 40 | 5.5% |
 | limits-quotas | 197 | 27.1% |
-| security | 69 | 9.5% |
+| security | 66 | 9.1% |
 | troubleshooting | 18 | 2.5% |
-| *(Unclassified)* | 158 | 21.8% |
+| *(Unclassified)* | 147 | 20.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Dldsv7 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series)
-  - Updated: 2026-02-03T23:04:00.000Z → 2026-02-09T23:03:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-10T08:00:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-performance)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-11T06:03:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-11T06:03:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-performance)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-11T06:03:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-series-overview)
+  - Updated: 2025-09-04T08:00:00.000Z → 2026-02-10T08:00:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-performance)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-10T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-series-overview)
+  - Updated: 2025-12-12T08:00:00.000Z → 2026-02-10T08:00:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-performance)
+  - Updated: 2025-11-05T08:00:00.000Z → 2026-02-10T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-overview)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-10T08:00:00.000Z
+- [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-11T06:03:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview)
+  - Updated: 2025-09-05T05:03:00.000Z → 2026-02-10T08:00:00.000Z
+- [Managed Run Commands for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed)
+  - Updated: 2025-08-27T17:03:00.000Z → 2026-02-10T23:03:00.000Z
+- [Deploy Trusted Launch VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-portal)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-10T23:03:00.000Z
+- [Generation 2 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm)
+  - Updated: 2025-07-23T17:02:00.000Z → 2026-02-10T23:03:00.000Z
+- [Generation 1 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1)
+  - Updated: 2025-07-31T17:07:00.000Z → 2026-02-10T23:03:00.000Z
+- [Trusted Launch FAQs](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq)
+  - Updated: 2025-08-05T08:00:00.000Z → 2026-02-10T23:03:00.000Z
 
 ## Classified Pages
 
@@ -261,6 +291,10 @@ category_descriptions:
 | [ND-H200-v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series) | limits-quotas | 0.80 | Gives specific GPU memory (141 GB), memory bandwidth (4.8 TB/s), and likely per-SKU tables for vCPUs, RAM, and network. These are precise numeric capacity limits for the H200-based VM sizes. |
 | [NDv2 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndv2-series) | limits-quotas | 0.80 | Lists exact numeric specs: 8 V100 GPUs with 32 GB each, 40 non-HyperThreaded cores, 672 GiB RAM, plus per-size tables. These are concrete resource limits/quotas for NDv2 SKUs. |
 | [OS Images Supported](https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface) | configuration | 0.80 | Provides up-to-date lists of OS images and generation/security-type requirements; this is a configuration matrix of supported images and VM generations, clearly product-specific configuration knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview) | architecture-patterns | 0.80 | Provides HBv3-specific architecture details: exact CPU model, core counts, SMT status, cache layout (sections, cores per section, L3 size), and BIOS settings. This informs process placement and memory locality decisions unique to HBv3, which qualifies as product-specific architectural guidance. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-series-overview) | architecture-patterns | 0.80 | Details HBv4-specific hardware and topology (EPYC model, 192 cores, SMT disabled, division into 24 sections with 96 MB L3 each, BIOS settings). This is SKU-specific architectural guidance for process and memory placement, beyond generic VM knowledge. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-series-overview) | architecture-patterns | 0.80 | Describes HBv5 hardware and topology in detail (4×96-core EPYC, 384 cores, SMT disabled, 48 CCDs with 32 MB L3 each, BIOS settings). This product-specific topology information directly informs HPC placement and tuning decisions. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview) | best-practices | 0.80 | The HX-series overview describes exact CPU model, core counts, SMT state, NUMA layout, cache topology, and specific AMD BIOS settings used by Azure. These are detailed, product-specific configuration and topology details that inform how to optimally run and place HPC workloads, fitting best-practices for performance tuning on this VM family. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-customer-managed-keys-portal) | security | 0.80 | Portal-based procedure for enabling CMK with SSE; includes specific Key Vault, key, and disk settings, and likely references required roles/permissions, which are product-specific security configurations. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell) | security | 0.80 | PowerShell-based CMK configuration; includes cmdlet parameters, key URIs, and possibly RBAC requirements, which are concrete security configuration details. |
 | [Prepare a VHD to Upload](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/prepare-for-upload-vhd-image) | limits-quotas | 0.80 | Contains explicit maximum OS VHD size (2 TB) and format requirements for Azure, which are concrete platform limits and constraints. |
@@ -346,7 +380,6 @@ category_descriptions:
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup) | configuration | 0.75 | Describes using the NVIDIA GPU Driver Extension with Azure-specific parameters and tooling, which are concrete configuration patterns for this product. |
 | [Backup and disaster recovery for managed disks](https://learn.microsoft.com/en-us/azure/virtual-machines/backup-and-disaster-recovery-for-azure-iaas-disks) | decision-making | 0.74 | Compares multiple backup/DR options for managed disks and typical scenarios; likely includes comparison tables and guidance on when to choose each option, fitting decision-making. |
 | [Design for high performance](https://learn.microsoft.com/en-us/azure/virtual-machines/premium-storage-performance) | best-practices | 0.74 | Guidelines for high-performance design on premium storage, with SQL Server examples. Such content typically includes concrete recommendations (e.g., number/size of disks, striping, caching settings) that are product-specific performance best practices. |
-| [Managed Run Commands for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed) | configuration | 0.74 | Describes the updated managed Run Command feature with Azure-specific behavior, API/CLI parameters, and management capabilities distinct from generic scripting. |
 | [Disk encryption scenarios for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-linux) | security | 0.72 | Scenario-based instructions for ADE on Linux VMs, including specific configuration flows and options for different encryption scenarios. |
 | [General-purpose sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide) | decision-making | 0.72 | A retirement-focused migration guide for specific VM size series typically includes SKU-by-SKU or series-by-series mapping, comparison tables, and guidance on which newer VM series to select based on workload, cost, and performance. That constitutes product-specific decision criteria and migration recommendations rather than just conceptual guidance. |
 | [Key vault for Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-key-vault-aad) | security | 0.72 | Key-vault-focused configuration article for ADE with Entra ID. Likely includes specific Key Vault access policy settings, required permissions, and ADE-related configuration flags that are product-specific security settings rather than generic concepts. |
@@ -400,7 +433,7 @@ category_descriptions:
 | [Dedicated Host SKU Migration](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide) | decision-making | 0.70 | A migration guide for retiring SKUs typically includes concrete mapping from old to new Dedicated Host SKUs and guidance on which new SKUs to choose for different workloads, which is product-specific decision-making and migration planning. |
 | [Dedicated Host migration guide](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide) | decision-making | 0.70 | Described as a migration guide with a section on which Dedicated Host SKUs to migrate to, implying SKU mapping and planning guidance that helps choose target hosts based on capabilities and constraints. |
 | [Deep dive](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cloud-init-deep-dive) | configuration | 0.70 | Deep dive into cloud-init with Azure specifics; describes stages and how Azure integrates, which is expert configuration/behavior knowledge. |
-| [Deploy Trusted Launch VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-portal) | security | 0.70 | Deployment article for Trusted Launch VMs generally includes exact portal options, required security type values, and dependencies (vTPM, Secure Boot) that are product-specific security configuration steps rather than generic VM deployment guidance. |
+| [Deploy Trusted Launch VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-portal) | configuration | 0.70 | How-to page for deploying Trusted Launch VMs. These pages typically include specific Azure VM settings (security type, vTPM, secure boot flags) and portal configuration options unique to Trusted Launch, which are product-specific configuration details rather than generic concepts. |
 | [Deploy a ZRS disk](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs) | configuration | 0.70 | Covers how to deploy ZRS disks; typically includes specific configuration flags/parameters and region/zone constraints unique to ZRS disks. |
 | [Deploy a premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2) | configuration | 0.70 | Deployment article for Premium SSD v2 with regional availability and sector size options; likely includes specific configuration parameters and allowed values (e.g., 4K vs 512e). |
 | [Deploy an ultra disk](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd) | configuration | 0.70 | How-to for deploying Ultra Disks; typically includes region support, performance configuration parameters (IOPS/throughput settings), and constraints specific to Ultra Disks. |
@@ -419,8 +452,8 @@ category_descriptions:
 | [FPGA Attestation Service](https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation) | configuration | 0.70 | Explains how to submit netlists and obtain validated bitstreams for NP-series FPGAs, involving product-specific attestation workflow and file requirements. |
 | [Flatcar Container Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd) | configuration | 0.70 | Flatcar images for Azure involve specific image channels and Azure-optimized settings; article likely includes concrete configuration and image-handling steps. |
 | [GPU compute migration guide](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/sizes/n-series-migration) | decision-making | 0.70 | Migration guide for NC/NCv2/ND includes concrete guidance on choosing newer GPU SKUs and planning migration based on workload performance and retirement. |
-| [Generation 1 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1) | security | 0.70 | Describes the supported path and required configuration to move from Gen1 to Gen2 with Trusted Launch, including Azure-specific security type changes and constraints. This is detailed product security configuration, not generic OS upgrade content. |
-| [Generation 2 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm) | security | 0.70 | Covers how to change an existing VM’s security type to Trusted Launch, including specific Azure settings and constraints for Gen2 VMs. These are concrete, product-specific security configuration steps and edge cases. |
+| [Generation 1 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1) | configuration | 0.70 | Describes upgrading Gen1 VMs to Gen2 and Trusted Launch, which involves concrete Azure configuration steps and constraints unique to this migration path (supported settings, required flags). This is expert configuration knowledge rather than generic VM concepts. |
+| [Generation 2 VM](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm) | configuration | 0.70 | Covers enabling Trusted Launch on existing Gen2 VMs, which requires specific Azure VM properties and configuration steps (changing security type, enabling vTPM/secure boot). These are product-specific configuration details, not just conceptual guidance. |
 | [Get usage metrics with REST](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest) | integrations | 0.70 | Shows concrete REST API usage for VM metrics; such pages typically include endpoint paths, query parameters, and required values unique to Azure Monitor’s metrics API. |
 | [Handle credentials](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-credentials) | security | 0.70 | Focuses on credential handling with DSC extension, including specific configuration fields, encryption/cert usage, and secure parameter patterns, which are product-specific security configurations. |
 | [How to verify encryption status](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-verify-encryption-status) | security | 0.70 | Shows platform and OS-level commands and checks to verify ADE status, including product-specific diagnostic patterns for encryption. |
@@ -459,6 +492,8 @@ category_descriptions:
 | [Options for restricting access](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-restrict-import-export-overview) | security | 0.70 | Overview of options to prevent disk import/export; typically involves specific security controls, policies, or role/permission configurations unique to managed disks. |
 | [Oracle Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/oracle-create-upload-vhd) | configuration | 0.70 | Oracle Linux VHD preparation for Azure typically includes OS and Azure agent configuration steps and possibly partition/bootloader requirements, which are configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview) | decision-making | 0.70 | Overview of on-demand capacity reservation vs reserved instances, including commitment differences and usage scenarios; helps choose between reservation models for capacity planning. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview) | architecture-patterns | 0.70 | Contains detailed, product-specific HBv2 NUMA/topology information (pNUMA vs vNUMA, socket/core layout, EPYC model and core counts) that guides how to place processes and manage memory locality for HPC—knowledge that is hardware- and SKU-specific and not generally known from training. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-overview) | best-practices | 0.70 | The HC-series overview includes detailed, product-specific guidance on process placement, pNUMA/vNUMA behavior, and CPU topology for maximizing HPC performance on Intel Xeon-based HC VMs. This is actionable, Azure-specific performance tuning advice (how to place processes/threads relative to NUMA domains and cores), which fits best-practices rather than generic concepts. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-overview) | security | 0.70 | Procedural guide for enabling ADE on Linux VMs with product-specific security configuration (Key Vault, extensions, parameters) and retirement/migration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/run-command-overview) | configuration | 0.70 | Overview of Run Command with Azure-specific command sets, capabilities, and constraints; describes how the VM agent executes scripts and available operations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/b-family) | decision-making | 0.70 | Describes the unique credit-based behavior of B-series and when they’re appropriate (burstable workloads). This is product-specific decision guidance on when to choose B-series vs fixed-performance VMs. |
@@ -494,7 +529,7 @@ category_descriptions:
 | [Tenable](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/tenable) | configuration | 0.70 | Describes Tenable Nessus extension usage with Azure, including extension name, parameters, and PowerShell/portal configuration, which are detailed configuration settings. |
 | [Time mechanism for Active Directory Windows Virtual Machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration) | configuration | 0.70 | Specialized time mechanism guidance for Active Directory domain-joined Windows VMs in Azure, including authoritative time source configuration and domain-specific settings. |
 | [Torn write prevention with managed disks](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention) | configuration | 0.70 | How-to for atomic writes with NVMe-managed disks. Likely includes specific mount options, filesystem settings, and block size requirements (8 KiB/16 KiB) that are concrete configuration parameters unique to this feature. |
-| [Trusted Launch FAQs](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq) | troubleshooting | 0.70 | FAQ for Trusted Launch explicitly mentions fixes for common errors; such pages typically map specific error messages/conditions to causes and resolutions, which is product-specific troubleshooting knowledge. |
+| [Trusted Launch FAQs](https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-faq) | troubleshooting | 0.70 | FAQ for Trusted Launch typically includes specific error messages, unsupported combinations with other Azure features, and fixes for common issues. That maps to product-specific symptom → cause → solution knowledge, fitting the troubleshooting category. |
 | [Upgrade from previous to current version](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade) | security | 0.70 | Procedural guide for upgrading ADE on a disk, with product-specific steps, prerequisites, and security configuration changes. |
 | [Upload a vhd to a disk - CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-upload-vhd-to-managed-disk-cli) | limits-quotas | 0.70 | Explains direct upload via AzCopy with a specific maximum VHD size (32 TiB) and supported disk SKUs. These are concrete product limits and support details that qualify as expert numeric knowledge. |
 | [Upload a vhd to a disk - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-upload-vhd-to-managed-disk-powershell) | limits-quotas | 0.70 | Describes direct upload with a specific maximum VHD size (32 TiB) and supported disk types. Those concrete size limits and support matrices are expert numeric limits beyond generic knowledge. |
@@ -522,6 +557,7 @@ category_descriptions:
 | [How to configure LVM RAID on crypt](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-configure-lvm-raid-on-crypt) | security | 0.68 | Instructions for using LVM and RAID on ADE-encrypted devices, with Linux and Azure-specific encryption interactions and configuration steps. |
 | [How to resize encrypted LVM volumes](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-resize-encrypted-lvm) | security | 0.68 | How-to for resizing ADE-encrypted disks using LVM, including product-specific constraints and steps for encrypted volumes. |
 | [Manage VM restore points](https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points) | configuration | 0.68 | Management article for copying/restoring from restore points and creating disks/SAS; likely includes specific operations, parameters, and sequences that are product-specific configuration/usage patterns. |
+| [Managed Run Commands for Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed) | integrations | 0.68 | Page describes the managed Run Command feature for Linux VMs, including product-specific API/CLI/PowerShell usage and parameters for executing scripts via the VM agent. This is concrete, service-specific execution/integration behavior rather than a conceptual overview, fitting the integrations & coding patterns category best among the options. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-overview) | configuration | 0.68 | How-to article for enabling ADE on Windows VMs. Usually contains concrete extension settings, parameter names, and configuration flows specific to ADE on Windows, which are product-specific configuration details. |
 | [Unmanaged disks](https://learn.microsoft.com/en-us/azure/virtual-machines/expand-unmanaged-disks) | configuration | 0.68 | How-to guide with Azure PowerShell commands and disk properties (size changes, OS/data disk handling) specific to unmanaged disks; includes product-specific parameters and steps beyond generic VM knowledge. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/find-unattached-disks) | configuration | 0.66 | Uses Azure CLI commands (including LastOwnershipUpdateTime) and filters specific to Azure disk resources; provides product-specific operational configuration patterns. |
@@ -575,6 +611,11 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/imaging) | decision-making | 0.65 | Overview of Linux imaging that explicitly mentions image decision points and requirements; likely includes Azure-specific image type comparisons and guidance on when to choose each option, which fits decision-making even if not strongly numeric. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/overview) | security | 0.65 | MSP is a security feature for IMDS and WireServer; overview likely includes specific endpoint IPs and security behavior. It is product-specific security configuration and behavior, not generic security theory. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/retirement-overview) | decision-making | 0.65 | Retirement overview typically includes timelines, behavior on retirement, and guidance on when/how to migrate, helping decide whether and when to move off previous-gen sizes. |
+| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-performance) | decision-making | 0.65 | Summarizes measured performance testing results for HBv2 sizes in table form, providing concrete, SKU-specific performance expectations that help choose VM sizes and plan capacity—data-driven guidance that is not inferable without the tests. |
+| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-performance) | decision-making | 0.65 | Includes concrete performance expectations from microbenchmarks for HBv3 sizes, enabling informed selection between HBv3 SKUs and capacity planning. These benchmark numbers are expert, test-derived data not generally known to an LLM. |
+| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-performance) | decision-making | 0.65 | Provides HBv4 performance expectations from HPC microbenchmarks, giving quantitative, SKU-specific data to compare sizes and plan workloads. These measured results are expert knowledge used for technical decision-making. |
+| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-performance) | decision-making | 0.65 | Contains HBv5 performance expectations from common HPC microbenchmarks, offering quantitative, SKU-specific data that supports choosing between HBv5 sizes and planning capacity—information derived from testing, not generic knowledge. |
+| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance) | decision-making | 0.65 | The HC-series performance page summarizes measured performance across multiple HC sizes. While the summary is brief, the underlying content is performance-test data that helps choose sizes based on quantified results, which aligns with decision-making (using benchmark data to select VM sizes). It goes beyond conceptual info and provides expert, product-specific performance insights. |
 | [Plan to manage costs](https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-plan-to-manage-costs) | decision-making | 0.65 | Focuses on planning and managing VM costs using Azure pricing calculator and cost analysis; such content typically includes guidance on choosing VM types, reservations, and savings options based on usage scenarios, which is cost-focused decision guidance. |
 | [Policy reference](https://learn.microsoft.com/en-us/azure/virtual-machines/policy-reference) | security | 0.65 | Index of built-in policy definitions for Azure VMs; policy names and their purposes are concrete security/governance configuration elements that are specific to this product and not generic knowledge. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-powershell) | integrations | 0.65 | PowerShell-specific commands and parameters for Maintenance Configurations on dedicated hosts and isolated VMs; product-specific API usage rather than generic concepts. |
@@ -650,11 +691,6 @@ category_descriptions:
 | [Export an image to a managed disk](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version) | 0.45 | Describes exporting an image version to a managed disk. Likely a procedural guide without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/detach-disk) | 0.45 | Tutorial for detaching a data disk via CLI/portal; includes a generic warning about disks not being deleted but lacks detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points) | 0.45 | Conceptual article on using VM restore points and backup/retention policies; description suggests overview rather than detailed support matrices or configs. |
-| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-performance) | 0.45 | HBv2 performance page mentions benchmark results but summary does not show structured limits/quotas, config parameters, or error mappings; likely benchmark graphs rather than skill-oriented expert data. |
-| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-performance) | 0.45 | HBv3 performance page summarizes benchmark expectations; not clearly a configuration, limits, troubleshooting, or decision matrix page from the summary. |
-| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-performance) | 0.45 | HBv4 performance page describes benchmark expectations; summary does not indicate structured limits, configuration parameters, or troubleshooting mappings. |
-| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-performance) | 0.45 | HBv5 performance page reports benchmark expectations; summary does not show configuration parameters, limits tables, or troubleshooting content. |
-| [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance) | 0.45 | HC performance page summarizes benchmark results; not clearly providing limits/quotas, configuration parameters, or troubleshooting mappings in the summary. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-find-unattached-portal) | 0.45 | Portal-based how-to for listing unattached disks; likely step-by-step UI instructions without detailed parameter tables or numeric constraints that qualify as expert configuration. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-portal) | 0.45 | Portal-based tutorial for creating restore points; usually step-by-step UI guidance without detailed parameter tables or expert-only configuration details. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk) | 0.45 | How-to detach a data disk from a Windows VM; warning about ongoing Premium storage charges is useful but not detailed enough to qualify as limits, decision-making, or best-practices per the criteria. |
@@ -675,13 +711,7 @@ category_descriptions:
 | [NVMe Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-overview) | 0.40 | NVMe overview is conceptual and descriptive; summary does not indicate detailed configuration tables, limits, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/azure-vm-watch) | 0.40 | Overview of VM Watch and its purpose; summary suggests conceptual description of health checks and AIOps consumption without exposing concrete configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts) | 0.40 | Overview of Dedicated Hosts; primarily conceptual and descriptive without explicit limits tables, configuration parameter references, or troubleshooting content. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv2-series-overview) | 0.40 | HBv2 overview focuses on architecture, NUMA concepts, and placement guidance; summary does not indicate detailed numeric limits tables or config parameters. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv3-series-overview) | 0.40 | HBv3 overview emphasizes architecture, topology, and BIOS settings; summary does not clearly indicate per-size numeric spec tables or configuration parameter references. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv4-series-overview) | 0.40 | HBv4 overview focuses on CPU architecture, NUMA layout, and BIOS settings; summary does not show per-size numeric spec tables or config parameter matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hbv5-series-overview) | 0.40 | HBv5 overview centers on architecture, topology, and BIOS; summary does not clearly show per-size numeric spec tables or config parameter references. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-overview) | 0.40 | HC-series overview focuses on architecture and NUMA/process placement; summary does not indicate detailed numeric spec tables or config parameter matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hibernate-resume) | 0.40 | High-level overview of VM hibernation scenarios and benefits; conceptual cost-management description without detailed configuration, limits, or troubleshooting. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview) | 0.40 | HX overview emphasizes architecture, topology, and BIOS; summary does not clearly show per-size numeric spec tables or configuration parameter references. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations) | 0.40 | High-level overview of Maintenance Configurations and scenarios; summary does not indicate detailed configuration tables, limits, or error codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-family) | 0.40 | Family overview page summarizing ND VM purpose and scenarios. The summary suggests conceptual description without detailed per-size numeric tables or configuration parameters; expert numeric or config details are on the individual size pages instead. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ng-family) | 0.40 | NG family page is a conceptual family overview describing scenarios (cloud gaming, remote desktop) without indicating detailed per-size numeric tables or configuration parameters in the summary. Expert numeric details live on the individual size pages. |

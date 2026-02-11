@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL/SQL Server deployment, pricing,
     DR/HA, licensing, and migration options (DTU vs vCore, Hyperscale, MI, VMs, Hybrid
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Azure SQL (DB, MI, and SQL on VMs): networking, security,
     backups, HA/DR, monitoring, maintenance, automation, and deployment via portal,
     CLI, PowerShell, ARM/Bicep/Terraform.'
-  integrations: Connecting apps/tools to Azure SQL & SQL MI (various languages, drivers,
-    Excel, Spark, Stream Analytics), plus elastic scale, jobs, replication, failover,
-    backup/restore, and PowerShell/REST automation.
+  integrations: Connecting apps and tools (EF Core, .NET, Node, Python, Excel, Go,
+    etc.) to Azure SQL, plus elastic scale, cross-db queries, jobs, replication, backup/restore,
+    and automation via PowerShell/APIs.
   troubleshooting: 'Diagnosing and fixing Azure SQL/MI issues: performance (CPU, I/O,
     deadlocks, blocking), connectivity, auditing, Data Sync, In-Memory OLTP, Kerberos,
     and SQL on Azure VMs.'
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 583
 - **Fetched**: 583
 - **Fetch Failed**: 0
-- **Classified**: 425
-- **Unclassified**: 158
+- **Classified**: 424
+- **Unclassified**: 159
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 583
+- **Updated Pages**: 2
+- **Unchanged**: 581
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-server-stretch-database/azure-sql-server-stretch-database.csv`
 
@@ -55,13 +55,20 @@ category_descriptions:
 | configuration | 115 | 19.7% |
 | decision-making | 37 | 6.3% |
 | deployment | 34 | 5.8% |
-| integrations | 61 | 10.5% |
+| integrations | 60 | 10.3% |
 | limits-quotas | 18 | 3.1% |
 | security | 97 | 16.6% |
 | troubleshooting | 21 | 3.6% |
-| *(Unclassified)* | 158 | 27.1% |
+| *(Unclassified)* | 159 | 27.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Python with mssql-python](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql)
+  - Updated: 2026-02-04T23:36:00.000Z → 2026-02-10T23:39:00.000Z
+- [Develop a Kubernetes app with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql)
+  - Updated: 2025-06-13T08:00:00.000Z → 2026-02-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -327,7 +334,7 @@ category_descriptions:
 | [Prepare SQL Server 2016 environment](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc?view=azuresql) | configuration | 0.70 | Covers enabling Always On availability groups with WSFC for SQL Server 2016 as part of link preparation. This includes specific Windows/SQL configuration steps, minimum versions, and cluster settings, which are detailed product-specific configuration requirements. |
 | [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql) | configuration | 0.70 | Environment preparation for Managed Instance link includes specific prerequisites, network and SQL configuration settings, and possibly scripts with parameter values. These are detailed configuration requirements unique to this feature. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql) | integrations | 0.70 | Includes Python sample code, mssql-python package usage, and connection parameters for Azure SQL/Synapse; these are concrete integration details with SDK-specific configuration. |
-| [Python with mssql-python](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql) | integrations | 0.70 | Quickstart shows product-specific Python driver usage and Microsoft Entra/passwordless connection details for Azure SQL Database. While largely a tutorial, it includes concrete connection string patterns and authentication configuration that are specific to this product/driver integration, which qualifies as integration-focused expert knowledge. |
+| [Python with mssql-python](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql) | integrations | 0.70 | Quickstart focuses on a specific driver (mssql-python) and how to connect/query Azure SQL using it. This is an integration pattern between Python apps and Azure SQL, likely including driver-specific connection parameters and authentication options (such as Microsoft Entra/passwordless support) that go beyond generic SQL connectivity. |
 | [Query across tables with different schemas](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-vertical-partitioning?view=azuresql) | integrations | 0.70 | Covers setting up cross-database queries where schemas differ; likely includes Azure SQL elastic query configuration and external table patterns specific to this feature. |
 | [Query vertically partitioned data](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started-vertical?view=azuresql) | integrations | 0.70 | How-to for elastic database query over vertically partitioned databases; likely includes specific T-SQL objects, external data source/table definitions, and configuration unique to Azure SQL elastic query. |
 | [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | configuration | 0.70 | Registration with the SQL IaaS Agent extension typically involves specific commands, modes, and configuration parameters unique to this extension. These are product-specific configuration details (extension settings, flags) that qualify as expert configuration knowledge. |
@@ -465,7 +472,6 @@ category_descriptions:
 | [Create SQL Server VM with PowerShell](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/scripts/create-sql-vm-powershell?view=azuresql) | integrations | 0.60 | An end-to-end PowerShell script for creating SQL Server on Azure VMs typically includes concrete parameter names, values, and Azure/SQL-specific flags. These script patterns and exact parameter combinations are product-specific integration details between Azure PowerShell and SQL Server VMs. |
 | [Create zone-redundant database](https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-create-zone-redundant-database?view=azuresql) | security | 0.60 | How-to for creating zone-redundant Hyperscale databases via new DB, geo-replica, or copy. Zone redundancy is a resiliency/security-related configuration with product-specific options and constraints, not just conceptual guidance. |
 | [Design database using .NET](https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-csharp-tutorial?view=azuresql) | integrations | 0.60 | Uses ADO.NET with Azure SQL; includes connection and command patterns specific to Azure SQL and .NET, which are integration-focused. |
-| [Develop a Kubernetes app with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql) | integrations | 0.60 | End-to-end tutorial for building a Kubernetes app using Azure SQL; likely includes connection configuration, container/Kubernetes settings, and patterns specific to Azure SQL integration. |
 | [Distributed transactions with DTC](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/distributed-transaction-coordinator-dtc?view=azuresql) | integrations | 0.60 | Describes using DTC for distributed transactions across SQL Managed Instance, SQL Server, other RDBMS, and custom apps; this is a product-specific integration pattern for cross-system transactions, likely with configuration details. |
 | [Excel](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-excel?view=azuresql) | integrations | 0.60 | Tutorial for connecting Excel to Azure SQL/Managed Instance/Fabric; includes connection options and provider settings that are product-specific integration details. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-faq?view=azuresql) | troubleshooting | 0.60 | FAQ for a specific monitoring feature typically includes concrete answers to operational issues and edge cases (for example, missing data, permissions, configuration problems), mapping symptoms to causes/solutions in a product-specific way. |
@@ -595,6 +601,7 @@ category_descriptions:
 | [Data virtualization](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/data-virtualization-overview?view=azuresql) | 0.20 | Data virtualization overview; summary suggests conceptual capabilities and scenarios without product-specific limits, config parameters, or troubleshooting content. |
 | [Design database using ADS](https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-azure-data-studio?view=azuresql) | 0.20 | Database design tutorial using Azure Data Studio; largely conceptual and procedural without detailed product-specific expert configuration. |
 | [Design database using SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/database/design-first-database-tutorial?view=azuresql) | 0.20 | Introductory database design tutorial using SSMS; focuses on schema design and basic operations, not product-specific limits, security, or configuration tables. |
+| [Develop a Kubernetes app with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/develop-kubernetes-application?view=azuresql) | 0.20 | Tutorial-style walkthrough for building a Kubernetes app with Python, Docker, and Azure SQL. It focuses on step-by-step development rather than product-specific limits, configuration matrices, error-code troubleshooting, or quantified best practices. No tables of parameters, quotas, or RBAC roles are indicated, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Elastic client library](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-client-library?view=azuresql) | 0.20 | Describes using the Elastic Database client library at a conceptual level; likely a how-to/tutorial without configuration tables or product-specific limits. |
 | [Elastic pools](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-overview?view=azuresql) | 0.20 | Conceptual overview of elastic pools and pricing benefits; lacks numeric limits, config parameters, or troubleshooting content. |
 | [Gateway IP address updates](https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-architecture?view=azuresql) | 0.20 | Connectivity architecture article is primarily conceptual, explaining components and connection policies for Azure SQL and Fabric. It does not focus on detailed configuration tables, limits, or error-code-based troubleshooting; it’s mostly architecture overview that an LLM can approximate from general knowledge. |

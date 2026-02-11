@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   workload-patterns: 'End-to-end workload blueprints for AI, AVD, AVS, mission-critical,
     SaaS, SAP, and sustainable apps: architecture, platforms, data, networking, security,
@@ -35,8 +35,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 237
+- **Updated Pages**: 1
+- **Unchanged**: 236
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -54,6 +54,11 @@ category_descriptions:
 | *(Unclassified)* | 33 | 13.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new)
+  - Updated: 2026-01-13T08:00:00.000Z → 2026-02-10T23:02:00.000Z
 
 ## Classified Pages
 
@@ -300,4 +305,4 @@ category_descriptions:
 | [What is the Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework) | 0.20 | High-level overview of the Azure Well-Architected Framework and its pillars; conceptual and introductory without pillar-specific principles lists, checklist IDs, or detailed implementation steps. |
 | [Overview](https://learn.microsoft.com/en-us/azure/well-architected/workloads) | 0.10 | Conceptual definition of 'workload' in WAF; high-level overview without pillar-specific principles, checklist IDs, or detailed implementation guidance. |
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/security/) | 0.10 | A 'quick links' navigation/landing page that aggregates resources. It doesn’t contain detailed implementation guidance, checklists, or pillar-specific principles itself, so it lacks the expert-knowledge depth required. |
-| [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new) | 0.10 | What's New page is navigational/release-note style, pointing to other docs; it doesn't itself contain detailed WAF principles, checklists, or implementation guidance. |
+| [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new) | 0.10 | This is a changelog/updates page summarizing recent documentation changes. It does not contain detailed WAF principles, checklists, recommendations, tradeoff analysis, service-specific guidance, workload patterns, or assessment questions with expert implementation details. |

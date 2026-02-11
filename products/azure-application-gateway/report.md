@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
-  configuration: How to configure Application Gateway components (listeners, routing,
-    probes, TLS, headers/URLs, ILB/Private Link, AKS ingress, health/monitoring) using
-    portal, PowerShell, or CLI
+  configuration: Configuring Application Gateway components (listeners, routing, probes,
+    TLS, headers/URLs, Private Link, AKS ingress, health/monitoring) via portal, PowerShell,
+    or CLI.
   limits-quotas: Autoscaling behavior, zone redundancy setup, and v2 SKU limits/quotas
     (instances, throughput, connections), plus FAQ on performance, scaling, and configuration
     constraints.
@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 136
+- **Updated Pages**: 1
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -58,6 +58,11 @@ category_descriptions:
 | *(Unclassified)* | 53 | 39.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frontend IP address](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip)
+  - Updated: 2024-08-08T05:34:00.000Z → 2026-02-10T23:11:00.000Z
 
 ## Classified Pages
 
@@ -93,7 +98,6 @@ category_descriptions:
 | [Configure alerts](https://learn.microsoft.com/en-us/azure/application-gateway/configure-alerts-with-templates) | configuration | 0.70 | Uses ARM templates for alerts; likely includes parameter names, default values, and schema for alert rules (severity, frequency, condition types) specific to Application Gateway metrics/logs. |
 | [Diagnostic logs](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-diagnostics) | troubleshooting | 0.70 | Describes specific Application Gateway log categories and how to use them with Azure Monitor for troubleshooting and analysis; log category names and usage patterns are product-specific diagnostic knowledge. |
 | [FIPS 140 support on V2](https://learn.microsoft.com/en-us/azure/application-gateway/fips) | security | 0.70 | FIPS mode article; expected to include how to enable FIPS, supported cryptographic modules, and any constraints, which are product-specific security configuration details. |
-| [Frontend IP address](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip) | configuration | 0.70 | Explains how to configure public and private frontend IPs for Application Gateway. This is product-specific configuration, likely with specific setting names and constraints, matching configuration. |
 | [Generate self-signed certificates for backend](https://learn.microsoft.com/en-us/azure/application-gateway/self-signed-certificates) | security | 0.70 | Describes how to generate self-signed certificates with a custom root CA specifically for Application Gateway v2 trusted root certificate requirements, including required formats and usage, which are product-specific security configuration details. |
 | [HTTP settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings) | configuration | 0.70 | Focuses on backend connection settings (timeouts, ports, protocol options) associated with routing rules. These are product-specific configuration parameters and options, matching configuration. |
 | [High traffic support](https://learn.microsoft.com/en-us/azure/application-gateway/high-traffic-support) | best-practices | 0.70 | Guidance article specifically about high traffic volume support; likely includes product-specific scaling recommendations, alert thresholds, and configuration guidance that go beyond generic theory. |
@@ -113,6 +117,7 @@ category_descriptions:
 | [Use private IP for internal routing](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-private-ip) | configuration | 0.70 | Details two specific configuration approaches (per-ingress vs global) for assigning private IPs to ingress endpoints via AGIC, which are product-specific configuration patterns. |
 | [Using Key Vault](https://learn.microsoft.com/en-us/azure/application-gateway/key-vault-certs) | security | 0.70 | Describes integration with Key Vault for TLS certificates; typically includes supported certificate types, Key Vault access configuration, and listener binding details, which are security/configuration specifics. |
 | [Autoscale AKS pods with Application Gateway metrics](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-autoscale-pods) | integrations | 0.68 | Describes using the specific AvgRequestCountPerHealthyHost metric with Azure Kubernetes Metrics Adapter to drive AKS pod autoscaling, including product-specific metric names and integration behavior that go beyond generic autoscaling concepts. |
+| [Frontend IP address](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-frontend-ip) | configuration | 0.68 | Describes concrete, product-specific configuration rules for Application Gateway frontend IPs, including when public vs private IPs are required and the requirement that in availability zone–enabled regions the frontend public IP’s zone selection must be a superset of the gateway’s zones. This is detailed configuration behavior specific to this service rather than a generic concept. |
 | [About v1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement) | decision-making | 0.65 | Retirement article includes specific retirement dates and guidance to migrate to V2; helps decide migration timing and approach based on support status. |
 | [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | decision-making | 0.65 | Contains a concrete deprecation date for v1 and guidance to migrate to v2 by a specific deadline, which is time-sensitive decision information not inferable from general training data. Focus is on when to move SKUs, fitting decision-making. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-ilb-arm) | configuration | 0.65 | Explains how to create, configure, start, and delete an Application Gateway with an internal load balancer endpoint, including internal-only use cases—product-specific configuration patterns. |

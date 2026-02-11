@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-10'
+generated_at: '2026-02-11'
 category_descriptions:
   deployment: Guides for deploying and migrating SAP HANA and Oracle on Azure NetApp
     Files, including AVGs, DR/HSR, cross-region replication, AzAcSnap, gov regions,
@@ -10,9 +10,9 @@ category_descriptions:
   best-practices: Performance, configuration, and deployment best practices for Azure
     NetApp Files, including NFS/SMB tuning, SAP/Oracle design, VM/AVD choices, migration/DR,
     and performance testing.
-  limits-quotas: 'Limits, quotas, and behaviors for Azure NetApp Files: capacity,
-    throughput, large volumes, backups, NFS/SMB, LDAP/groups, maxfiles, file/path/charset
-    limits, and user/group volume quotas'
+  limits-quotas: Limits, quotas, and behaviors for ANF capacity, throughput, volume
+    size, files/paths, NFS/SMB, backups, cache, regional capacity, and user/group
+    quotas and LDAP groups
   integrations: Using AzAcSnap with Azure NetApp Files (backup, restore, test, details,
     runbefore/after), and integrating via REST API, PowerShell, S3-compatible object
     API, Databricks, and OneLake.
@@ -65,8 +65,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Update Terraform-managed volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/terraform-manage-volume)
-  - Updated: 2025-08-10T08:00:00.000Z → 2026-02-10T06:10:00.000Z
+- [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations)
+  - Updated: 2025-11-13T18:15:00.000Z → 2026-02-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -79,12 +79,12 @@ category_descriptions:
 | [Linux concurrency best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-concurrency-session-slots) | best-practices | 0.90 | Concurrency tuning via session slots and slot table entries for this backend is specific to Azure NetApp Files and includes recommended values and patterns, which are concrete best practices. |
 | [Linux direct I/O best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-direct-io) | best-practices | 0.90 | Direct I/O best practices for this specific backend include concrete mount options, kernel or application settings, and patterns tailored to Azure NetApp Files, which are product-specific configuration/code recommendations. |
 | [Linux filesystem cache best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-linux-filesystem-cache) | best-practices | 0.90 | Filesystem cache tuning guidance for this service will include specific sysctl, mount, or cache settings and their impact on Azure NetApp Files performance, which are concrete, product-specific best practices. |
-| [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations) | limits-quotas | 0.90 | Provides exact size ranges (50–1,024 TiB, 2,400 GiB–2,400 TiB, up to 7.2 PiB with cool access) and feature gating requirements, which are precise product limits and constraints. |
 | [Troubleshoot AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting guide for AzAcSnap; will map specific errors and symptoms to causes and resolutions unique to this tool. |
 | [Understand file path lengths](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-path-lengths) | limits-quotas | 0.90 | Explicitly documents supported component and path length limits for NFS, SMB, and dual-protocol volumes in table form, which are precise product limits not inferable from general knowledge. |
 | [Understand large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes) | limits-quotas | 0.90 | Defines regular vs large volume limits and includes specific size and possibly throughput constraints for large volumes, which are explicit product limits. |
 | [Understand maxfiles](https://learn.microsoft.com/en-us/azure/azure-netapp-files/maxfiles-concept) | limits-quotas | 0.90 | Focuses on the maxfiles value (maximum number of files/folders per volume) and states that limits are based on volume size with specific guidelines; this is a numeric quota behavior unique to the service. |
 | [Understand resizing guidelines for cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-volumes-resize-guidelines) | limits-quotas | 0.90 | Explicitly provides a table of constituent volume counts, minimum and maximum cache volume sizes, and resize ranges per service level; this is precise numeric limit/quota information tied to service tiers. |
+| [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations) | limits-quotas | 0.86 | Defines precise size ranges (50 TiB–1,024 TiB, 2,400 GiB–2,400 TiB, up to 7.2 PiB with cool access) and feature gating requirements for large volumes, which are product-specific numerical constraints that qualify as limits & quotas. |
 | [Troubleshoot Resource Provider errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-troubleshoot-resource-provider-errors) | troubleshooting | 0.86 | Lists common Resource Provider errors with causes, solutions, and workarounds; clearly a troubleshooting mapping for this specific service. |
 | [Troubleshoot capacity pool errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-capacity-pools) | troubleshooting | 0.86 | Explicitly about potential issues and solutions for capacity pools; these articles typically list specific error messages/conditions and their resolutions, matching the troubleshooting pattern. |
 | [Troubleshoot cross-region replication errors](https://learn.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-cross-region-replication) | troubleshooting | 0.86 | Describes error messages and resolutions for cross-region replication; this is symptom → cause → solution guidance unique to Azure NetApp Files replication. |

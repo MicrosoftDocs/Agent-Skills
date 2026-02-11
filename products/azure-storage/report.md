@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   best-practices: Performance, resiliency, and monitoring best practices for Blob,
     Data Lake, Files, Queues, Tables, and Elastic SAN, including tuning, retries,
     DR, and workload-specific optimizations.
   configuration: 'Configuring Azure Storage services: blob tiers, lifecycle, encryption,
     BlobFuse, NFS/SFTP, static sites, Container Storage, Azure Files/File Sync, and
-    monitoring/alerts for all storage types.'
+    monitoring/alerts with Azure Monitor.'
   decision-making: Cost, performance, and redundancy decision guides for Blob, Data
     Lake, Container Storage, Elastic SAN, and Azure Files, including tiering, migration
     choices, DR, and billing/discount options.
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 527
+- **Updated Pages**: 3
+- **Unchanged**: 524
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-storage/azure-storage.csv`
 
@@ -62,6 +62,15 @@ category_descriptions:
 | *(Unclassified)* | 139 | 26.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Configure local NVMe](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk)
+  - Updated: 2026-02-06T23:12:00.000Z → 2026-02-10T12:11:00.000Z
+- [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san)
+  - Updated: 2026-02-06T06:10:00.000Z → 2026-02-11T06:12:00.000Z
+- [Create AKS cluster and install Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/install-container-storage-aks-version-1)
+  - Updated: 2026-02-06T23:12:00.000Z → 2026-02-10T23:11:00.000Z
 
 ## Classified Pages
 
@@ -229,12 +238,13 @@ category_descriptions:
 | [CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-directory-file-acl-cli) | integrations | 0.70 | Azure CLI article will contain product-specific CLI commands, parameter names, and options for hierarchical namespace accounts, which are concrete integration patterns. |
 | [Change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-online-manage) | configuration | 0.70 | Details specific ways to set default account access tier, per-blob tier on upload, and via Set Blob Tier operation, including allowed tier values and behavior—product-specific configuration knowledge. |
 | [Change the redundancy configuration](https://learn.microsoft.com/en-us/azure/storage/files/files-change-redundancy-configuration) | configuration | 0.70 | Changing redundancy for existing storage accounts has product-specific constraints (which conversions are allowed, required steps, impacts on availability and billing). These are concrete configuration rules unique to Azure Files. |
-| [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san) | configuration | 0.70 | The article shows how to configure Azure Container Storage to use Azure Elastic SAN as backend storage. This typically involves specific storage class definitions, parameters, and configuration values unique to Elastic SAN integration, fitting the configuration sub-skill type. |
+| [Configure Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-elastic-san) | configuration | 0.70 | Guides configuring Azure Container Storage to use Azure Elastic SAN as backing storage. This normally includes specific StorageClass parameters, driver names, and configuration fields that are product-specific and constitute expert configuration knowledge beyond generic container storage concepts. |
 | [Configure Site-to-Site VPN](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-s2s-vpn) | security | 0.70 | Describes how to set up an S2S VPN using Azure VPN Gateway for Azure Files, including Azure-specific networking and secure access configuration details. |
 | [Configure anonymous access](https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-configure) | security | 0.70 | Covers specific account and container-level settings to allow or disallow anonymous access, including configuration options and their security implications, which are product-specific security configurations. |
 | [Configure client-side encryption](https://learn.microsoft.com/en-us/azure/storage/blobs/client-side-encryption) | integrations | 0.70 | Covers client-side encryption using the Blob Storage .NET client library and Azure Key Vault integration, including SDK patterns and parameters that are specific to this integration. |
 | [Configure customer-managed keys with Key Vault](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-configure-customer-managed-keys) | security | 0.70 | How-to for configuring CMK encryption using Azure Key Vault with Elastic SAN volume groups; likely includes specific Key Vault properties, identity/role requirements, and CLI/PowerShell parameters that are product-specific security configuration details. |
 | [Configure encryption](https://learn.microsoft.com/en-us/azure/storage/container-storage/configure-encryption-for-elastic-san) | security | 0.70 | Configures customer-managed keys for Elastic SAN via Azure CLI and Key Vault. This is product-specific security configuration (encryption model, CMK usage, likely key/identity parameters) that goes beyond generic security concepts. |
+| [Configure local NVMe](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk) | configuration | 0.70 | How-to article for wiring Azure Container Storage to local NVMe on AKS nodes. These pages typically include product-specific StorageClass definitions, parameters, and Kubernetes YAML with concrete configuration values (provisioner names, parameters, annotations) that are unique to Azure Container Storage and not just generic Kubernetes knowledge. |
 | [Connect from an SFTP client](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-connect) | configuration | 0.70 | Connection how-to; typically includes endpoint formats, ports, authentication parameters, and client configuration details unique to Blob SFTP. |
 | [Connect to an Elastic SAN volume - Windows](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows) | integrations | 0.70 | Windows connection article will include iSCSI/VM extension parameters, connection strings, and OS-specific settings—code/config patterns for integrating Windows with Elastic SAN. |
 | [Convert append and page blobs to block blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/convert-append-and-page-blobs-to-block-blobs) | integrations | 0.70 | Describes exact PowerShell, CLI, and AzCopy commands and parameters needed so the destination is a block blob, including behavior around metadata copying. These are product-specific integration patterns and command usages. |
@@ -357,7 +367,6 @@ category_descriptions:
 | [Calculate blob count and total size](https://learn.microsoft.com/en-us/azure/storage/blobs/calculate-blob-count-size) | integrations | 0.65 | Shows how to use blob inventory with Azure Synapse to compute counts and sizes. Involves product-specific query patterns and integration steps between Storage inventory and Synapse. |
 | [Check whether a blob is encrypted](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-encryption-status) | configuration | 0.65 | Provides concrete steps and commands in portal, PowerShell, and CLI to inspect encryption status of blobs; includes specific parameters and options unique to Azure Storage. |
 | [Clustered applications](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-shared-volumes) | architecture-patterns | 0.65 | Describes using Elastic SAN with cluster managers (WSFC, Pacemaker) and shared volumes—a product-specific architecture pattern for clustered apps and shared storage, including when/how to use it. |
-| [Configure local NVMe](https://learn.microsoft.com/en-us/azure/storage/container-storage/use-container-storage-with-local-disk) | configuration | 0.65 | The article describes configuring Azure Container Storage to use local NVMe as backend storage, including creating a storage class and using Kubernetes patterns. Such content typically includes specific storage class parameters, fields, and example YAML with concrete setting names and allowed values, which matches configuration-focused expert knowledge. |
 | [Connect with Prometheus](https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-monitoring) | configuration | 0.65 | Enabling monitoring with Azure Monitor managed Prometheus will require product-specific configuration steps and settings (targets, namespaces, annotations, etc.). This is configuration-focused expert guidance rather than generic monitoring theory. |
 | [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share) | decision-making | 0.65 | Before-creation guidance focuses on selecting SSD vs HDD tiers and performance characteristics for classic file shares, which is specific decision guidance for Azure Files. It helps choose performance tiers and usage patterns rather than just step-by-step creation. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-create-javascript) | integrations | 0.65 | How-to for creating containers via JavaScript client; likely includes specific constructor patterns and method calls for the Azure Storage SDK, which are integration details. |
@@ -547,7 +556,6 @@ category_descriptions:
 | [What is Azure File Sync?](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction) | 0.30 | Introduction/overview of Azure File Sync; primarily conceptual without detailed limits, configuration parameters, or troubleshooting mappings in the summary. |
 | [What is Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) | 0.30 | Introduction/overview to Azure Files; primarily conceptual and marketing-style description of capabilities without detailed limits, configuration tables, or troubleshooting. |
 | [Work with Azure storage queues](https://learn.microsoft.com/en-us/azure/storage/queues/storage-tutorial-queues) | 0.30 | Tutorial with basic .NET usage of Queue Storage (create, insert, get, delete). No config tables, limits, or product-specific edge cases beyond standard SDK usage. |
-| [Create AKS cluster and install Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/install-container-storage-aks-version-1) | 0.25 | Installation tutorial for version 1.x.x on AKS; primarily step-by-step setup. No indication of detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-create-java) | 0.25 | Shows basic Java code to create containers; does not emphasize configuration tables, limits, or advanced patterns—primarily a straightforward usage example of the SDK. |
 | [List containers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-containers-list-java) | 0.25 | Demonstrates listing containers with some options, but appears to be basic SDK usage rather than a comprehensive configuration reference or best-practices guide with quantified impact. |
 | [Overview of copy operations](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-copy-java) | 0.25 | Overview of copy operations with Java; summary suggests high-level explanation and basic examples, not detailed configuration or expert troubleshooting patterns. |
@@ -559,6 +567,7 @@ category_descriptions:
 | [Azure Table storage overview](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview) | 0.20 | Introduction to Table Storage; conceptual overview of service and use cases. No detailed limits, configuration tables, or product-specific troubleshooting/best practices. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) | 0.20 | Quickstart using Azure portal; primarily step-by-step tutorial without configuration tables or expert-only details. |
 | [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview) | 0.20 | Conceptual overview of cloud tiering behavior (hot vs cool files, namespace vs content) without detailed numeric limits, configuration tables, or product-specific error/diagnostic content. |
+| [Create AKS cluster and install Azure Container Storage](https://learn.microsoft.com/en-us/azure/storage/container-storage/install-container-storage-aks-version-1) | 0.20 | Tutorial-style install guide for Azure Container Storage on AKS; primarily step-by-step creation and installation instructions without detailed configuration parameter tables, limits, quotas, or product-specific troubleshooting matrices. Does not meet thresholds for configuration, deployment, or other expert-knowledge categories as defined. |
 | [Create a table in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal) | 0.20 | Quickstart for creating a table via Azure portal. Primarily step-by-step UI instructions without detailed configuration matrices or expert-only reference data. |
 | [Customer case studies](https://learn.microsoft.com/en-us/azure/storage/files/azure-files-case-study) | 0.20 | Customer case studies are narrative/marketing oriented and typically lack structured limits, configuration tables, or decision matrices required for expert-knowledge classification. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-faq) | 0.20 | FAQ page; summary is generic. Without explicit mention of error codes, limits tables, or config specifics, it’s likely high-level Q&A rather than deep expert content. |

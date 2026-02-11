@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-11'
 category_descriptions:
   best-practices: Guidance on creating and maintaining Dev Box images, troubleshooting
     image issues, and optimizing Visual Studio by pre-generating caches in base images.
@@ -27,17 +27,17 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 64
+- **Fetched**: 64
 - **Fetch Failed**: 0
 - **Classified**: 43
-- **Unclassified**: 22
+- **Unclassified**: 21
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 65
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 63
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
 ## Classification Statistics
@@ -45,16 +45,25 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 3.1% |
-| configuration | 24 | 36.9% |
-| decision-making | 1 | 1.5% |
-| deployment | 1 | 1.5% |
-| integrations | 1 | 1.5% |
+| configuration | 24 | 37.5% |
+| decision-making | 1 | 1.6% |
+| deployment | 1 | 1.6% |
+| integrations | 1 | 1.6% |
 | limits-quotas | 2 | 3.1% |
-| security | 8 | 12.3% |
+| security | 8 | 12.5% |
 | troubleshooting | 4 | 6.2% |
-| *(Unclassified)* | 22 | 33.8% |
+| *(Unclassified)* | 21 | 32.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [What are Dev Box customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-what-are-dev-box-customizations)
+  - Updated: 2025-08-19T22:13:00.000Z → 2026-02-10T18:36:00.000Z
+
+### Deleted Pages
+
+- ~~Quickstart:Use Team Customizations~~ (https://learn.microsoft.com/en-us/azure/dev-box/quickstart-team-customizations)
 
 ## Classified Pages
 
@@ -120,13 +129,12 @@ category_descriptions:
 | [Install Azure CLI devcenter extension](https://learn.microsoft.com/en-us/azure/dev-box/how-to-install-dev-box-cli) | 0.30 | Primarily a basic installation/how-to guide for the Azure CLI extension; does not emphasize configuration tables, limits, or product-specific patterns beyond generic install steps. |
 | [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.30 | How-to for using the Dev Box developer portal (create, connect, manage). Likely UI-driven steps without deep configuration tables or limits; mostly operational guidance. |
 | [Move dev box pools between regions](https://learn.microsoft.com/en-us/azure/dev-box/how-to-move-dev-box-pool-region) | 0.30 | Primarily a how-to/migration-style guide for moving Dev Box pools/boxes between regions; likely step-by-step UI/portal instructions without detailed limits, configuration tables, or decision matrices. |
-| [Quickstart:Use Team Customizations](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-team-customizations) | 0.30 | Quickstart focused on creating a dev box with team customizations; likely a step-by-step tutorial without comprehensive configuration reference or limits. |
 | [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style getting started guide; likely step-by-step usage without configuration tables, limits, or troubleshooting matrices. |
 | [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.30 | Duplicate of index 15; same reasoning applies—portal usage tutorial rather than expert configuration or limits content. |
 | [What is Microsoft Dev Box MCP Server?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-dev-box-mcp-server) | 0.30 | High-level overview of the Dev Box MCP Server; no indication of detailed limits, configs, error codes, or product-specific decision matrices. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.20 | FAQ content is typically high-level Q&A without structured limits, configs, or troubleshooting mappings; summary does not indicate detailed expert-only data. |
 | [Get support for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-get-help) | 0.20 | Support-channel selection guidance is procedural/organizational, not technical expert knowledge about the product (no limits, configs, error codes, or patterns). |
-| [What are Dev Box customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-what-are-dev-box-customizations) | 0.20 | Conceptual overview of Dev Box customizations and their benefits; does not appear to include detailed schemas, limits, or configuration tables. |
 | [What is Microsoft Dev Box?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box) | 0.20 | High-level product overview of Microsoft Dev Box and upcoming changes; no detailed limits, configuration tables, error codes, or other expert-only specifics. |
 | [Roadmap for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | 0.10 | Roadmap/marketing-style feature list for future capabilities; lacks concrete technical configuration, limits, or troubleshooting details. |
+| [What are Dev Box customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-what-are-dev-box-customizations) | 0.10 | Conceptual overview of Dev Box customizations and their benefits; no specific limits, configuration parameter tables, error codes, or product-specific numeric thresholds. |
 | [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement) | 0.10 | Announcement about transition of Dev Box capabilities to Windows 365; primarily business/positioning content without deep technical specifics. |

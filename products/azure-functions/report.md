@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-11'
 category_descriptions:
   integrations: How to connect Functions to external services using triggers/bindings
     (HTTP, data stores, messaging, OpenAI, Dapr, MCP), plus language-specific patterns
@@ -19,8 +19,8 @@ category_descriptions:
   deployment: 'Deploying and hosting Azure Functions: provisioning resources, CI/CD
     (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps,
     zero‑downtime, and Kafka/RabbitMQ bindings.'
-  best-practices: 'Durable Functions and Azure Functions best practices: orchestrator/entity
-    patterns, error handling, versioning, testing, performance/scale, DI, idempotency,
+  best-practices: 'Best practices for Durable and regular Azure Functions: orchestrations/entities,
+    error handling, versioning, testing, performance/scale, memory, DI, idempotency,
     and reliable event processing.'
   troubleshooting: Diagnosing and fixing Durable Functions and core runtime issues,
     AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 352
+- **Updated Pages**: 1
+- **Unchanged**: 351
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -51,8 +51,8 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 4 | 1.1% |
-| best-practices | 30 | 8.5% |
-| configuration | 41 | 11.6% |
+| best-practices | 31 | 8.8% |
+| configuration | 40 | 11.4% |
 | decision-making | 22 | 6.2% |
 | deployment | 37 | 10.5% |
 | integrations | 109 | 31.0% |
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 68 | 19.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Warmup](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup)
+  - Updated: 2023-11-07T05:33:00.000Z → 2026-02-10T23:11:00.000Z
 
 ## Classified Pages
 
@@ -311,6 +316,7 @@ category_descriptions:
 | [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container) | deployment | 0.70 | Covers how containerized function apps run in Azure Container Apps, including hosting integration details and environment-specific behavior; this is product-specific deployment guidance. |
 | [Connect to Foundry Agent Service](https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-foundry-tools) | integrations | 0.68 | The page describes how to connect an MCP server hosted on Azure Functions to Azure AI Foundry Agent Service so agents can discover and invoke MCP tools. This is a product-specific integration pattern between Azure Functions and Foundry Agent Service, likely including concrete configuration details (endpoints, IDs, settings) unique to this integration rather than a generic tutorial. That fits the integrations sub-skill definition better than configuration or deployment. |
 | [Develop and debug locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local) | configuration | 0.68 | The page focuses on local development with Azure Functions Core Tools and specifically calls out working with the local.settings.json file and related local runtime behavior. This typically includes product-specific configuration keys, environment variable handling, and settings behavior that are unique to Azure Functions local development, which qualifies as configuration expert knowledge rather than a generic tutorial. |
+| [Warmup](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup) | best-practices | 0.68 | The warmup trigger is a product-specific Azure Functions feature with unique behavior during scale-out. The article typically includes concrete guidance on when and how to implement a warmup function (for example, which bindings are supported, how it behaves with pre-warmed instances, and how to structure initialization logic). These are product-specific usage patterns and gotchas that go beyond generic serverless knowledge, fitting best under best-practices rather than generic configuration or concepts. |
 | [Aspire integration](https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-aspire-integration) | integrations | 0.65 | Aspire integration guide documents how to wire Azure Functions into the Aspire app host, including configuration and orchestration patterns that are specific integration knowledge. |
 | [Azure storage provider for Durable Functions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-azure-storage-provider) | architecture-patterns | 0.65 | Focuses on performance and scalability characteristics of the Azure Storage provider; this typically includes provider-specific patterns, throughput characteristics, and guidance on when this provider is appropriate, which informs architecture choices. |
 | [Bring dependencies to function apps](https://learn.microsoft.com/en-us/azure/azure-functions/bring-dependency-to-functions) | configuration | 0.65 | Explains product-specific ways to include external files and libraries (e.g., folder locations, host.json/function.json considerations, language-specific mechanisms) which are configuration details unique to Azure Functions. |
@@ -343,7 +349,6 @@ category_descriptions:
 | [Terraform](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-terraform) | configuration | 0.65 | Terraform quickstart defining function app, storage account, and blob container; includes resource blocks and arguments specific to Azure Functions Flex Consumption and deployment configuration, which are product-specific configuration details. |
 | [Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-kafka-trigger) | deployment | 0.65 | Includes explicit constraints that Kafka triggers are only supported on certain plans and Functions runtime 4.x, which are deployment-specific support matrices rather than generic tutorial content. |
 | [Upgrade Durable Functions extension version](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-extension-upgrade) | configuration | 0.65 | Gives concrete guidance on updating the Durable Functions extension, including versioning, configuration, and how to track changes/releases—information specific to this extension’s lifecycle and configuration. |
-| [Warmup](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup) | configuration | 0.65 | Warmup trigger reference content generally includes trigger binding configuration, function signatures, and environment-specific behavior, which are concrete configuration details for scaling scenarios. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) | deployment | 0.60 | Portal creation article highlights hosting plan options (Flex Consumption, others). Such pages usually include plan-specific requirements and constraints (for example, supported runtimes, features, or settings per plan), which are deployment-related, plan-specific knowledge useful for correct provisioning. |
 | [Blob storage trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-storage-blob-triggered-function) | integrations | 0.60 | Blob-trigger tutorial includes trigger and binding configuration (for example, function.json or attribute parameters like path, connection). These are concrete integration patterns with Azure Storage, including specific binding properties and limitations (such as in-portal editing constraints) that are product-specific. |
 | [Containerized functions](https://learn.microsoft.com/en-us/azure/azure-functions/container-concepts) | architecture-patterns | 0.60 | Explains specific options and patterns for running Functions in Linux containers (automatic vs. containerized deployments) and when to choose each, which are product-specific architectural patterns. |

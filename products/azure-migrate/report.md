@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-11'
 category_descriptions:
-  integrations: Integrating external code scan tools (GitHub Copilot, CAST Highlight)
-    with Azure Migrate and automating large-scale VMware/ASR migrations using PowerShell
-    and scripting patterns.
+  integrations: Integrating external code scan tools with Azure Migrate and automating
+    large-scale VMware-to-Azure migrations using PowerShell, REST APIs, and Site Recovery
+    scripts
   configuration: Configuring Azure Migrate appliances, credentials, assessments, dependency
-    analysis (agentless/agent-based), large-scale/physical/VMware setups, Arc onboarding,
-    and related prerequisites/settings
+    analysis, large-scale/Arc/physical setups, private endpoints, and related prerequisites
+    and settings.
   decision-making: Using Azure Migrate assessments and business cases to choose discovery
     methods, sizing, costs, readiness, and migration strategies for VMs, apps, and
     AVS workloads
@@ -31,16 +31,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 144
-- **Fetched**: 144
+- **Total Pages**: 145
+- **Fetched**: 145
 - **Fetch Failed**: 0
-- **Classified**: 86
+- **Classified**: 87
 - **Unclassified**: 58
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 144
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 143
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -50,16 +50,25 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 3 | 2.1% |
-| configuration | 22 | 15.3% |
+| configuration | 23 | 15.9% |
 | decision-making | 13 | 9.0% |
 | deployment | 3 | 2.1% |
-| integrations | 4 | 2.8% |
+| integrations | 5 | 3.4% |
 | limits-quotas | 10 | 6.9% |
-| security | 15 | 10.4% |
-| troubleshooting | 15 | 10.4% |
-| *(Unclassified)* | 58 | 40.3% |
+| security | 14 | 9.7% |
+| troubleshooting | 15 | 10.3% |
+| *(Unclassified)* | 58 | 40.0% |
 
 ## Changes
+
+### New Pages
+
+- [Automate agent-based migrations using REST API](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-vmware-to-azure-migration-rest-api?view=migrate)
+
+### Updated Pages
+
+- [Requirements for Private endpoints](https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate)
+  - Updated: 2025-07-30T22:07:00.000Z → 2026-02-10T12:11:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +107,6 @@ category_descriptions:
 | [Customize assessment settings](https://learn.microsoft.com/en-us/azure/migrate/assessment-properties?view=migrate) | configuration | 0.75 | Describes specific assessment properties on the General tab; these are configuration options with defined meanings and allowed values that control assessment behavior. |
 | [Migrate VMware VMs to encrypted Azure VMs](https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-vmware-vms-with-cmk-disks?view=migrate) | security | 0.75 | Covers server-side encryption with customer-managed keys and DES/CMK requirements; this involves specific security configuration parameters and constraints unique to Azure Migrate and Azure Storage encryption. |
 | [Migration and modernization tool](https://learn.microsoft.com/en-us/azure/migrate/common-questions-server-migration?view=migrate) | troubleshooting | 0.75 | A 'common questions' article for the Migration and modernization tool typically covers specific migration behaviors, supported OS versions (including CentOS EOL guidance), known issues, and how to resolve them. These are product-specific, symptom-focused Q&A items that map to troubleshooting (symptom → cause → solution) rather than generic guidance, and are not broadly knowable from pretraining alone. |
-| [Requirements for Private endpoints](https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate) | security | 0.75 | Describes using Private Endpoints/Private Link for Azure Migrate; likely includes network/security configuration details and recommended patterns for private connectivity. |
 | [Analyze machine dependencies (agent-based)](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies?view=migrate) | configuration | 0.70 | Setting up agent-based dependency analysis requires specific agent settings, workspace IDs, and Azure Migrate project bindings, which are detailed configuration elements unique to this feature. |
 | [Analyze machine dependencies (agentless)](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies-agentless?view=migrate) | configuration | 0.70 | Agentless dependency analysis setup involves product-specific prerequisites and configuration options (for example, discovery settings, permissions) that constitute expert configuration knowledge. |
 | [Assessment](https://learn.microsoft.com/en-us/azure/migrate/common-questions-discovery-assessment?view=migrate) | troubleshooting | 0.70 | A 'common questions' page for assessments typically includes concrete, product-specific behaviors (for example, how certain discovery/assessment results are calculated, supported/unsupported scenarios, and specific error or status messages) and their resolutions. This is organized around user questions and issues rather than concepts, fitting the troubleshooting pattern better than generic FAQ. The content is unlikely to be purely conceptual because it targets operational questions about Azure Migrate assessments. |
@@ -123,10 +131,12 @@ category_descriptions:
 | [Prepare Azure accounts using built-in roles](https://learn.microsoft.com/en-us/azure/migrate/prepare-azure-accounts?view=migrate) | security | 0.70 | Quickstart specifically about setting up Azure RBAC for Azure Migrate projects; likely lists built-in role names, scopes, and least-privilege patterns. |
 | [Provide server credentials](https://learn.microsoft.com/en-us/azure/migrate/add-server-credentials?view=migrate) | configuration | 0.70 | Details how to add multiple server and guest credentials for discovery and analysis; includes product-specific configuration fields and behaviors. |
 | [Replicate using ExpressRoute](https://learn.microsoft.com/en-us/azure/migrate/discover-and-assess-using-private-endpoints?view=migrate) | security | 0.70 | Describes using Private Link, ExpressRoute, and VPN for private connectivity; such content typically includes specific network/security configuration parameters and endpoint settings unique to Azure Migrate. |
+| [Requirements for Private endpoints](https://learn.microsoft.com/en-us/azure/migrate/how-to-use-azure-migrate-with-private-endpoints?view=migrate) | configuration | 0.70 | Page describes product-specific setup of Azure Migrate over Private Link/ExpressRoute/VPN, including required networking and endpoint configuration details that go beyond generic concepts. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-application-assessment?view=migrate) | decision-making | 0.70 | Explains how to interpret application/cross-workload assessment outputs and migration strategies; provides product-specific guidance for selecting migration paths. |
 | [Review assessment report](https://learn.microsoft.com/en-us/azure/migrate/review-assessment?view=migrate) | decision-making | 0.70 | Describes components of a VM assessment and how to review them; these outputs (readiness, sizing, cost) are used to make migration decisions. |
 | [Target right-sizing](https://learn.microsoft.com/en-us/azure/migrate/target-right-sizing?view=migrate) | decision-making | 0.70 | Details how sizing recommendations are derived from performance vs on-premises as-is data; provides product-specific guidance on which sizing approach to use for different scenarios. |
 | [Test migration](https://learn.microsoft.com/en-us/azure/migrate/how-to-test-replicating-virtual-machines?view=migrate) | best-practices | 0.70 | Explicitly described as best practices for test migration; likely includes concrete recommendations and gotchas specific to Azure Migrate’s test migration workflow. |
+| [Automate agent-based migrations using REST API](https://learn.microsoft.com/en-us/azure/migrate/how-to-automate-vmware-to-azure-migration-rest-api?view=migrate) | integrations | 0.68 | The article describes using Azure Site Recovery REST API with the InMageRcm replication provider to automate VMware-to-Azure migrations. Such REST-focused migration docs typically include product-specific API operations, request/response schemas, required parameters, and configuration details unique to Azure Migrate/Site Recovery, which qualify as expert integration knowledge beyond generic SDK usage. |
 | [Automate migration of large number of VMs](https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate-at-scale?view=migrate) | integrations | 0.65 | Uses Azure Site Recovery PowerShell scripts to migrate multiple platforms; such articles typically include script parameters, required values, and integration patterns between Azure Migrate and Site Recovery. |
 | [Create a project - ARM template](https://learn.microsoft.com/en-us/azure/migrate/quickstart-create-migrate-project?view=migrate) | deployment | 0.65 | ARM template quickstart for creating an Azure Migrate project; ARM templates typically expose resource-specific deployment parameters and constraints unique to the service. |
 | [Create an Azure VM assessment](https://learn.microsoft.com/en-us/azure/migrate/how-to-create-assessment?view=migrate) | configuration | 0.65 | How-to for creating VM assessments that relies on specific assessment options and behaviors; contains product-specific configuration choices that affect readiness, cost, and migration advice. |

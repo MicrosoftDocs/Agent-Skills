@@ -1,31 +1,32 @@
 ---
 name: azure-role-based-access-control
-description: Expert knowledge for Azure Role Based Access Control development including best practices, security, troubleshooting, decision making, limits & quotas, and configuration. Use when building, debugging, or optimizing Azure Role Based Access Control applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Role Based Access Control development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Role Based Access Control applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Role Based Access Control Skill
 
-This skill provides expert guidance for Azure Role Based Access Control development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Role Based Access Control. Covers troubleshooting, best practices, decision making, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L37 | Diagnosing and fixing Azure RBAC issues: access denials, ABAC condition problems, role/custom role limit errors, and auditing role changes via Activity Log. |
-| Best Practices | L38-L42 | Guidance on securely designing and operating Azure RBAC: least privilege, role assignment patterns, managing custom roles, access reviews, and avoiding common security misconfigurations. |
-| Decision Making | L43-L48 | Guidance on choosing between Azure RBAC, Entra, and classic admin roles, and how to migrate from classic administrator models to modern RBAC role assignments |
-| Limits & Quotas | L49-L55 | Designing, creating, and managing Azure RBAC custom roles, including using ABAC with custom attributes to implement fine-grained, attribute-based access control. |
-| Security | L56-L139 | Designing, assigning, and delegating Azure RBAC/ABAC roles and permissions (built‑in and custom) securely, including conditions, PIM, deny assignments, and least‑privilege access patterns |
-| Configuration | L140-L147 | Defining and configuring Azure RBAC: creating and managing role assignments, authoring role definitions, building custom roles via CLI/PowerShell, and using ABAC conditions syntax. |
+| Troubleshooting | L31-L38 | Diagnosing and fixing Azure RBAC issues: access denials, ABAC condition problems, role/custom role limit errors, and auditing role changes via Activity Log. |
+| Best Practices | L39-L43 | Guidance on securely designing and operating Azure RBAC: least privilege, role assignment patterns, managing custom roles, access reviews, and avoiding common security misconfigurations. |
+| Decision Making | L44-L49 | Guidance on choosing between Azure RBAC, Entra, and classic admin roles, and how to migrate from classic administrator models to modern RBAC role assignments |
+| Limits & Quotas | L50-L56 | Designing, creating, and managing Azure RBAC custom roles, including using ABAC with custom attributes to implement fine-grained, attribute-based access control. |
+| Security | L57-L140 | Designing, assigning, and delegating Azure RBAC/ABAC roles and permissions (built‑in and custom) securely, including conditions, PIM, deny assignments, and least‑privilege access patterns |
+| Configuration | L141-L148 | Defining and configuring Azure RBAC: creating and managing role assignments, authoring role definitions, building custom roles via CLI/PowerShell, and using ABAC conditions syntax. |
 
 ### Troubleshooting
 | Topic | URL |

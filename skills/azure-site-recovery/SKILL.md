@@ -1,34 +1,35 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including decision making, deployment, configuration, security, troubleshooting, limits & quotas, architecture & design patterns, integrations & coding patterns, and best practices. Use when building, debugging, or optimizing Azure Site Recovery applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Site Recovery applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Site Recovery Skill
 
-This skill provides expert guidance for Azure Site Recovery development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Site Recovery. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L55 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, servers, and specific error codes. |
-| Best Practices | L56-L61 | Guidance on preparing VMware/physical machines for reprotection and failback, and scaling Azure Site Recovery for large on-premises VMware/physical deployments. |
-| Decision Making | L62-L80 | Guidance for planning and sizing Azure Site Recovery: capacity, costs, VM sizing, DR design (Hyper-V, VMware, Azure VMs, Citrix), encryption changes, and when to use ASR vs Azure Migrate. |
-| Architecture & Design Patterns | L81-L94 | Designing DR architectures with ASR: network/ExpressRoute, Traffic Manager, AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL Server, VMware models, and on-prem file server protection. |
-| Limits & Quotas | L95-L106 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, shared disks, Hyper-V/VMware/physical DR matrices, interoperability, and Deployment Planner limits. |
-| Security | L107-L118 | Security and access for Site Recovery: disk encryption (ADE/CMK), trusted launch, NSGs, Private Link, TLS, RBAC, and migrating runbooks to managed identities. |
-| Configuration | L119-L183 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and disk/IP settings for DR and failback. |
-| Integrations & Coding Patterns | L184-L189 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
-| Deployment | L190-L193 | Deploying Azure Site Recovery using Azure Resource Manager (ARM) templates, including parameterization, automation, and sample templates for protection and recovery setup. |
+| Troubleshooting | L34-L56 | Diagnosing and fixing Azure Site Recovery issues: VM replication, network/connectivity, agents/extensions, Hyper-V/VMware/physical servers, failover/failback, appliances, servers, and specific error codes. |
+| Best Practices | L57-L62 | Guidance on preparing VMware/physical machines for reprotection and failback, and scaling Azure Site Recovery for large on-premises VMware/physical deployments. |
+| Decision Making | L63-L81 | Guidance for planning and sizing Azure Site Recovery: capacity, costs, VM sizing, DR design (Hyper-V, VMware, Azure VMs, Citrix), encryption changes, and when to use ASR vs Azure Migrate. |
+| Architecture & Design Patterns | L82-L95 | Designing DR architectures with ASR: network/ExpressRoute, Traffic Manager, AD/DNS, IIS, SAP, SharePoint, Dynamics AX, SQL Server, VMware models, and on-prem file server protection. |
+| Limits & Quotas | L96-L107 | Limits, requirements, and resource usage for Azure Site Recovery: supported scenarios, high-churn VMs, shared disks, Hyper-V/VMware/physical DR matrices, interoperability, and Deployment Planner limits. |
+| Security | L108-L119 | Security and access for Site Recovery: disk encryption (ADE/CMK), trusted launch, NSGs, Private Link, TLS, RBAC, and migrating runbooks to managed identities. |
+| Configuration | L120-L184 | Configuring Azure Site Recovery for Azure, VMware, Hyper-V, and physical servers: setup, networking, policies, appliances, monitoring, and disk/IP settings for DR and failback. |
+| Integrations & Coding Patterns | L185-L190 | Automating Azure Site Recovery with PowerShell and integrating Azure Automation runbooks into recovery plans for orchestrated, scriptable disaster recovery workflows. |
+| Deployment | L191-L194 | Deploying Azure Site Recovery using Azure Resource Manager (ARM) templates, including parameterization, automation, and sample templates for protection and recovery setup. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,34 +1,35 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including integrations & coding patterns, configuration, security, decision making, architecture & design patterns, deployment, best practices, troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Functions applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-09"
+  generated_at: "2026-02-11"
 ---
 # Azure Functions Skill
 
-This skill provides expert guidance for Azure Functions development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Functions. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L60 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment and execution failures. |
-| Best Practices | L61-L94 | Durable Functions and Azure Functions best practices: orchestrator/entity patterns, error handling, versioning, testing, performance/scale, DI, idempotency, and reliable event processing. |
-| Decision Making | L95-L120 | Guidance on choosing Functions hosting/runtime options, costs, networking, Durable Task/Scheduler choices, and migrating apps or plans (versions, Node model, Service Bus, AWS Lambda). |
-| Architecture & Design Patterns | L121-L128 | Patterns for containerized Functions on Linux, Durable Functions performance/DR/geo-distribution, and target-based scaling strategies for resilient, scalable architectures. |
-| Limits & Quotas | L129-L136 | Scaling and performance limits for Functions and Durable Functions, including scheduler throughput, event-driven scaling behavior, concurrency settings, and language/runtime support timelines. |
-| Security | L137-L153 | Securing Azure Functions apps: encryption, keys, managed identity, private endpoints/VNets, identity-based connections (SQL, Storage, Service Bus), Web PubSub, and MCP server security. |
-| Configuration | L154-L198 | Configuring how Functions apps run: app/host settings, storage, scaling, plans, dependencies, Durable Functions options, monitoring/telemetry, networking, runtime versions, and local dev settings. |
-| Integrations & Coding Patterns | L199-L311 | How to connect Functions to external services using triggers/bindings (HTTP, data stores, messaging, OpenAI, Dapr, MCP), plus language-specific patterns and integration configuration. |
-| Deployment | L312-L351 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps, zero‑downtime, and Kafka/RabbitMQ bindings. |
+| Troubleshooting | L34-L61 | Diagnosing and fixing Durable Functions and core runtime issues, AZFD/AZFW/AZF error codes, storage/config problems, and Node.js/Python deployment and execution failures. |
+| Best Practices | L62-L96 | Best practices for Durable and regular Azure Functions: orchestrations/entities, error handling, versioning, testing, performance/scale, memory, DI, idempotency, and reliable event processing. |
+| Decision Making | L97-L122 | Guidance on choosing Functions hosting/runtime options, costs, networking, Durable Task/Scheduler choices, and migrating apps or plans (versions, Node model, Service Bus, AWS Lambda). |
+| Architecture & Design Patterns | L123-L130 | Patterns for containerized Functions on Linux, Durable Functions performance/DR/geo-distribution, and target-based scaling strategies for resilient, scalable architectures. |
+| Limits & Quotas | L131-L138 | Scaling and performance limits for Functions and Durable Functions, including scheduler throughput, event-driven scaling behavior, concurrency settings, and language/runtime support timelines. |
+| Security | L139-L155 | Securing Azure Functions apps: encryption, keys, managed identity, private endpoints/VNets, identity-based connections (SQL, Storage, Service Bus), Web PubSub, and MCP server security. |
+| Configuration | L156-L199 | Configuring how Functions apps run: app/host settings, storage, scaling, plans, dependencies, Durable Functions options, monitoring/telemetry, networking, runtime versions, and local dev settings. |
+| Integrations & Coding Patterns | L200-L312 | How to connect Functions to external services using triggers/bindings (HTTP, data stores, messaging, OpenAI, Dapr, MCP), plus language-specific patterns and integration configuration. |
+| Deployment | L313-L352 | Deploying and hosting Azure Functions: provisioning resources, CI/CD (GitHub Actions, Pipelines, CLI, Bicep/ARM), containers/Kubernetes/Container Apps, zero‑downtime, and Kafka/RabbitMQ bindings. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -83,6 +84,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure orchestration versioning in Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-versioning |
 | Apply Azure Functions design and coding best practices | https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices |
 | Implement error handling and retries in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages |
+| Implement and use Azure Functions warmup trigger | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup |
 | Implement dependency injection in .NET Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection |
 | Design idempotent Azure Functions for duplicate events | https://learn.microsoft.com/en-us/azure/azure-functions/functions-idempotent |
 | Implement reliable event processing with Event Hubs and Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-reliable-event-processing |
@@ -174,7 +176,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Functions app settings and variables | https://learn.microsoft.com/en-us/azure/azure-functions/functions-app-settings |
 | Register and configure Azure Functions binding extensions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-register |
 | Configure timer triggers and schedules in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer |
-| Configure Azure Functions warmup trigger behavior | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-warmup |
 | Use Azure Functions Core Tools CLI commands | https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference |
 | Provision Azure Functions Flex plan with Bicep | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-bicep |
 | Deploy Azure Functions Flex plan via ARM template | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-resource-manager |

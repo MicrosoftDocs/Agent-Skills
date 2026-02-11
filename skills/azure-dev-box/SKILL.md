@@ -1,33 +1,34 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including best practices, deployment, configuration, security, decision making, limits & quotas, troubleshooting, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Dev Box applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Dev Box applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-11"
 ---
 # Azure Dev Box Skill
 
-This skill provides expert guidance for Azure Dev Box development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Dev Box. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L39 | Diagnosing and fixing Dev Box connection issues (including known errors), repairing connectivity with built-in tools, and resolving stale or inaccessible Dev Boxes in Windows Task view. |
-| Best Practices | L40-L45 | Guidance on creating and maintaining Dev Box images, troubleshooting image issues, and optimizing Visual Studio by pre-generating caches in base images. |
-| Decision Making | L46-L50 | Guidance on when and how to use serverless GPU compute with Azure Dev Box, including scenarios, benefits, and considerations for GPU-accelerated development workloads. |
-| Limits & Quotas | L51-L56 | Managing Dev Box capacity and quotas, viewing/increasing subscription resource limits, and setting per-user Dev Box count/size limits to control usage and costs |
-| Security | L57-L68 | Securing Dev Boxes: RBAC role planning/assignment, Entra ID SSO, REST API auth, Key Vault/service principals, and Intune/Conditional Access/Endpoint Privilege Management. |
-| Configuration | L69-L96 | Configuring Dev Box environments: images, catalogs, pools, projects, networking, policies (auto-stop/delete, hibernation), customization tasks/files, monitoring, and ARM/template-based setup. |
-| Integrations & Coding Patterns | L97-L101 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
-| Deployment | L102-L105 | Guidance to design, plan, and roll out a Microsoft Dev Box deployment, including prerequisites, network/identity setup, and environment configuration. |
+| Troubleshooting | L33-L40 | Diagnosing and fixing Dev Box connection issues (including known errors), repairing connectivity with built-in tools, and resolving stale or inaccessible Dev Boxes in Windows Task view. |
+| Best Practices | L41-L46 | Guidance on creating and maintaining Dev Box images, troubleshooting image issues, and optimizing Visual Studio by pre-generating caches in base images. |
+| Decision Making | L47-L51 | Guidance on when and how to use serverless GPU compute with Azure Dev Box, including scenarios, benefits, and considerations for GPU-accelerated development workloads. |
+| Limits & Quotas | L52-L57 | Managing Dev Box capacity and quotas, viewing/increasing subscription resource limits, and setting per-user Dev Box count/size limits to control usage and costs |
+| Security | L58-L69 | Securing Dev Boxes: RBAC role planning/assignment, Entra ID SSO, REST API auth, Key Vault/service principals, and Intune/Conditional Access/Endpoint Privilege Management. |
+| Configuration | L70-L97 | Configuring Dev Box environments: images, catalogs, pools, projects, networking, policies (auto-stop/delete, hibernation), customization tasks/files, monitoring, and ARM/template-based setup. |
+| Integrations & Coding Patterns | L98-L102 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
+| Deployment | L103-L106 | Guidance to design, plan, and roll out a Microsoft Dev Box deployment, including prerequisites, network/identity setup, and environment configuration. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,32 +1,33 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including configuration, limits & quotas, security, best practices, decision making, troubleshooting, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Private Link applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Private Link applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-04"
 ---
 # Azure Private Link Skill
 
-This skill provides expert guidance for Azure Private Link development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Private Link. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Diagnosing and fixing Azure Private Endpoint and Private Link Service connectivity issues, including DNS/misconfiguration causes, validation steps, and common error resolutions. |
-| Best Practices | L37-L41 | DNS design and configuration guidance for Azure Private Endpoints, including zone setup, name resolution patterns, split-horizon DNS, and integration with on-premises DNS systems |
-| Decision Making | L42-L46 | Guidance on estimating and optimizing Private Link costs, comparing design options (zonal vs regional, hub-spoke vs mesh), and understanding trade-offs between security, performance, and spend. |
-| Limits & Quotas | L47-L51 | Guidance on increasing virtual network scale limits for Azure Private Endpoints, including supported maximums and how to request higher quotas. |
-| Security | L52-L57 | Configuring Azure RBAC roles and permissions needed to create, manage, and secure Private Link resources and Network Security Perimeters. |
-| Configuration | L58-L70 | Configuring Azure Private Link/endpoint behavior: subnet policies, DNS zones, routing, SNAT, security perimeters, and monitoring/diagnostic logs. |
-| Integrations & Coding Patterns | L71-L74 | Configuring on-premises DNS to resolve Azure Private Endpoint and Private Link resources using Azure DNS Private Resolver, including hybrid and cross-network name resolution patterns. |
+| Troubleshooting | L32-L37 | Diagnosing and fixing Azure Private Endpoint and Private Link Service connectivity issues, including DNS/misconfiguration causes, validation steps, and common error resolutions. |
+| Best Practices | L38-L42 | DNS design and configuration guidance for Azure Private Endpoints, including zone setup, name resolution patterns, split-horizon DNS, and integration with on-premises DNS systems |
+| Decision Making | L43-L47 | Guidance on estimating and optimizing Private Link costs, comparing design options (zonal vs regional, hub-spoke vs mesh), and understanding trade-offs between security, performance, and spend. |
+| Limits & Quotas | L48-L52 | Guidance on increasing virtual network scale limits for Azure Private Endpoints, including supported maximums and how to request higher quotas. |
+| Security | L53-L58 | Configuring Azure RBAC roles and permissions needed to create, manage, and secure Private Link resources and Network Security Perimeters. |
+| Configuration | L59-L71 | Configuring Azure Private Link/endpoint behavior: subnet policies, DNS zones, routing, SNAT, security perimeters, and monitoring/diagnostic logs. |
+| Integrations & Coding Patterns | L72-L75 | Configuring on-premises DNS to resolve Azure Private Endpoint and Private Link resources using Azure DNS Private Resolver, including hybrid and cross-network name resolution patterns. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,34 +1,35 @@
 ---
 name: azure-spring-apps
-description: Expert knowledge for Azure Spring Apps development including configuration, best practices, limits & quotas, security, deployment, integrations & coding patterns, troubleshooting, architecture & design patterns, and decision making. Use when building, debugging, or optimizing Azure Spring Apps applications.
-compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+description: Expert knowledge for Azure Spring Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Spring Apps applications.
+compatibility: Requires network access. Uses mcp_microsoft-lea_microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-10"
 ---
 # Azure Spring Apps Skill
 
-This skill provides expert guidance for Azure Spring Apps development. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Spring Apps. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
 > **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access**. Use `mcp_microsoft-lea_microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L50 | Diagnosing and fixing Azure Spring Apps issues: build failures, OOM/restarts, exit codes, VNet connectivity, debugging (remote/JVM/JFR), memory analysis, and real-time log streaming. |
-| Best Practices | L51-L57 | Best practices for production monitoring and diagnostics in Azure Spring Apps: observability setup, JVM diagnostic tuning, and using Application Live View for real-time monitoring. |
-| Decision Making | L58-L64 | Choosing the right Azure Spring Apps plan, understanding Enterprise licensing/Marketplace offers, and how to migrate from Basic/Standard to Enterprise |
-| Architecture & Design Patterns | L65-L71 | Designing external access to Azure Spring Apps using load balancers, Application Gateway, TLS termination, and secure public internet exposure patterns |
-| Limits & Quotas | L72-L81 | Version support, quotas, storage limits, scaling to hundreds of instances, and guidance for running large CPU/memory workloads on Azure Spring Apps. |
-| Security | L82-L104 | Security and identity for Azure Spring Apps: TLS, custom domains, managed identities, Entra ID SSO/RBAC, Key Vault, Azure SQL, GitHub Actions auth, and Azure Policy compliance. |
-| Configuration | L105-L143 | Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS, scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools and APM integrations |
-| Integrations & Coding Patterns | L144-L169 | Monitoring, APM agents, logging, database/Redis bindings, gRPC, API gateway, security (Entra ID), and enterprise integrations (Tanzu, Azure OpenAI) for Azure Spring Apps. |
-| Deployment | L170-L185 | Deploying Azure Spring Apps with zero-downtime/blue‑green strategies, CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform), and buildpack-based app/static site deployment |
+| Troubleshooting | L34-L51 | Diagnosing and fixing Azure Spring Apps issues: build failures, OOM/restarts, exit codes, VNet connectivity, debugging (remote/JVM/JFR), memory analysis, and real-time log streaming. |
+| Best Practices | L52-L58 | Best practices for production monitoring and diagnostics in Azure Spring Apps: observability setup, JVM diagnostic tuning, and using Application Live View for real-time monitoring. |
+| Decision Making | L59-L65 | Choosing the right Azure Spring Apps plan, understanding Enterprise licensing/Marketplace offers, and how to migrate from Basic/Standard to Enterprise |
+| Architecture & Design Patterns | L66-L72 | Designing external access to Azure Spring Apps using load balancers, Application Gateway, TLS termination, and secure public internet exposure patterns |
+| Limits & Quotas | L73-L82 | Version support, quotas, storage limits, scaling to hundreds of instances, and guidance for running large CPU/memory workloads on Azure Spring Apps. |
+| Security | L83-L105 | Security and identity for Azure Spring Apps: TLS, custom domains, managed identities, Entra ID SSO/RBAC, Key Vault, Azure SQL, GitHub Actions auth, and Azure Policy compliance. |
+| Configuration | L106-L144 | Configuring Azure Spring Apps networking, ingress/egress, TLS, DNS, scaling, gateways, logging/monitoring, config servers, and enterprise Tanzu tools and APM integrations |
+| Integrations & Coding Patterns | L145-L170 | Monitoring, APM agents, logging, database/Redis bindings, gRPC, API gateway, security (Entra ID), and enterprise integrations (Tanzu, Azure OpenAI) for Azure Spring Apps. |
+| Deployment | L171-L186 | Deploying Azure Spring Apps with zero-downtime/blue‑green strategies, CI/CD (GitHub Actions, Azure Pipelines), VNet integration (ARM/Bicep/CLI/Terraform), and buildpack-based app/static site deployment |
 
 ### Troubleshooting
 | Topic | URL |
