@@ -37,7 +37,8 @@ Azure Agent Skills is a curated collection of **high-quality agentic skills** sp
 - [📚 Browse All Skills](#-browse-all-skills)
 - [🛠️ Installation](#️-installation)
 - [🧠 How to Use](#-how-to-use)
-- [📖 Agent Skills Documentation](#-agent-skills-documentation)
+- [� Enhanced Skills with Scripts & References](#-enhanced-skills-with-scripts--references)
+- [�📖 Agent Skills Documentation](#-agent-skills-documentation)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚖️ License](#️-license)
 
@@ -292,7 +293,132 @@ Most skills require **network access** to fetch the latest documentation from Mi
 
 ---
 
-## 📖 Agent Skills Documentation
+## � Enhanced Skills with Scripts & References
+
+Some skills include **bundled scripts and reference documents** for advanced workflows. These follow the Agent Skills progressive disclosure pattern—Level 3 resources that load on-demand.
+
+### Recognizing Enhanced Skills
+
+Enhanced skills have additional directories alongside `SKILL.md`:
+
+```
+azure-security/
+├── SKILL.md              # Core skill instructions
+├── scripts/              # Executable tools
+│   ├── security-audit.sh
+│   └── key-management-advisor.py
+└── references/           # Quick-reference documents
+    └── security-checklists.md
+```
+
+Check the skill's YAML frontmatter for indicators:
+
+```yaml
+---
+name: azure-security
+version: "2.0.0"
+includes_scripts: true
+includes_references: true
+---
+```
+
+### Using Bundled Scripts
+
+Scripts are designed to be invoked by the AI agent or run manually. Ask naturally:
+
+```
+"Run the Azure security audit script on my subscription"
+"Use the key management advisor to help me choose between Key Vault and Managed HSM"
+```
+
+The AI agent will:
+1. Locate the appropriate script in the skill's `scripts/` directory
+2. Execute it (with your permission) or provide instructions
+3. Interpret the results and recommend next steps
+
+**Manual execution:**
+
+```bash
+# Security posture audit
+~/.copilot/skills/azure-security/scripts/security-audit.sh
+
+# Interactive key management advisor (Python 3.8+)
+python3 ~/.copilot/skills/azure-security/scripts/key-management-advisor.py
+```
+
+### Using Reference Documents
+
+Reference documents provide offline-ready checklists and decision trees. Ask:
+
+```
+"Show me the security hardening checklist for Azure"
+"What's the key management decision tree?"
+```
+
+The AI agent reads from `references/` and synthesizes actionable guidance.
+
+### Example: Azure Security Enhanced Skill
+
+The `azure-security` skill demonstrates all enhanced capabilities:
+
+| Component | Purpose |
+|-----------|---------|
+| `scripts/security-audit.sh` | Quick Azure security posture assessment (Key Vault, Storage, VMs, NSGs, SQL) |
+| `scripts/key-management-advisor.py` | Interactive tool to choose the right key management service |
+| `references/security-checklists.md` | Hardening checklists for identity, network, data, compute, monitoring |
+
+**Sample interactions:**
+
+> "Audit my Azure subscription for security issues"
+> → Runs `security-audit.sh`, analyzes results, prioritizes findings
+
+> "I need to store cryptographic keys for PCI-DSS compliance with HSM backing"
+> → Runs `key-management-advisor.py`, recommends Managed HSM or Payment HSM
+
+> "Give me a network security checklist"
+> → Reads from `security-checklists.md`, presents actionable items
+
+### Creating Enhanced Skills
+
+To add scripts and references to your own skills:
+
+1. **Create directories** alongside `SKILL.md`:
+   ```bash
+   mkdir -p skills/your-skill/scripts skills/your-skill/references
+   ```
+
+2. **Add executable scripts** (bash, Python, etc.):
+   ```bash
+   chmod +x skills/your-skill/scripts/your-tool.sh
+   ```
+
+3. **Add reference documents** (Markdown):
+   ```bash
+   touch skills/your-skill/references/checklists.md
+   ```
+
+4. **Update SKILL.md** to document the resources:
+   ```markdown
+   ## Bundled Resources
+
+   ### Scripts
+   - `scripts/your-tool.sh` - Description of what it does
+
+   ### References  
+   - `references/checklists.md` - Quick-reference guide
+   ```
+
+5. **Update frontmatter** with metadata:
+   ```yaml
+   ---
+   includes_scripts: true
+   includes_references: true
+   ---
+   ```
+
+---
+
+## �📖 Agent Skills Documentation
 
 Agent Skills is an **open standard** for giving AI agents new capabilities. Learn more about how each platform implements skills:
 
