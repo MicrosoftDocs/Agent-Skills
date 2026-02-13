@@ -188,5 +188,196 @@ Azure Key Vault Standard
 
 ---
 
-*Last updated: 2026-02-09*
+## 🔒 Secrets Management Checklist
+
+### General Best Practices
+- [ ] Conduct audit to identify all secrets in code, configs, and repos
+- [ ] Remove hardcoded secrets from source code
+- [ ] Use environment variables or Key Vault for runtime secrets
+- [ ] Implement secret scanning tools in CI/CD pipelines
+- [ ] Treat any discovered secret as compromised - rotate immediately
+
+### Azure Key Vault Usage
+- [ ] Use Key Vault for centralized secrets management
+- [ ] Enable soft-delete and purge protection
+- [ ] Use RBAC permissions (not access policies)
+- [ ] Enable diagnostic logging for secret access
+- [ ] Configure network isolation with private endpoints
+
+### Managed Identities
+- [ ] Use managed identities instead of service principals
+- [ ] Use system-assigned identities for single-resource scenarios
+- [ ] Use user-assigned identities for multi-resource scenarios
+- [ ] Eliminate credential storage in code with managed identities
+- [ ] Review and audit managed identity permissions regularly
+
+### Credential Rotation
+- [ ] Automate secret rotation where possible
+- [ ] Set maximum secret lifetime (90 days recommended)
+- [ ] Implement retry logic for rotation windows
+- [ ] Build redundancy for rotation without service disruption
+- [ ] Purge unused and expired secrets
+
+---
+
+## 🎯 Zero Trust Implementation Checklist
+
+### Verify Explicitly
+- [ ] Use Microsoft Entra ID for all authentication
+- [ ] Implement Conditional Access policies
+- [ ] Evaluate user, device, location, workload context for all access
+- [ ] Use risk-based authentication
+- [ ] Enable continuous access evaluation
+
+### Use Least Privilege Access
+- [ ] Apply RBAC with minimal necessary permissions
+- [ ] Implement Just-In-Time (JIT) access for admin operations
+- [ ] Use Privileged Identity Management (PIM) for elevated roles
+- [ ] Scope permissions to resource groups, not subscriptions
+- [ ] Use managed identities instead of storing credentials
+
+### Assume Breach
+- [ ] Implement network microsegmentation
+- [ ] Use Azure Firewall for centralized traffic control
+- [ ] Enable private endpoints for PaaS services
+- [ ] Encrypt all data at rest and in transit
+- [ ] Enable continuous monitoring with Defender for Cloud
+- [ ] Configure immutable backups for ransomware protection
+- [ ] Monitor with Microsoft Sentinel for threat detection
+
+### Azure-Specific Zero Trust
+- [ ] Use Azure Bastion for secure VM access
+- [ ] Configure NSG flow logs for all security groups
+- [ ] Enable DDoS Protection for public endpoints
+- [ ] Implement Azure Policy for security baselines
+- [ ] Use resource locks for critical resources
+- [ ] Enable geo-replication for disaster recovery
+
+---
+
+## 🏢 PaaS Security Checklist
+
+### Identity-Centric Perimeter
+- [ ] Treat identity (not network) as primary security perimeter
+- [ ] Use Microsoft Entra ID for all authentication
+- [ ] Implement managed identities for Azure service access
+- [ ] Use strong MFA (Passkeys, FIDO2, CBA) for admins
+- [ ] Configure Conditional Access for all applications
+
+### App Service Security
+- [ ] Enable HTTPS only (disable HTTP)
+- [ ] Configure minimum TLS version 1.2+
+- [ ] Disable FTP/FTPS if not needed
+- [ ] Enable authentication/authorization
+- [ ] Use managed identities for backend connections
+- [ ] Enable VNet integration for outbound traffic
+- [ ] Use private endpoints for secure inbound access
+- [ ] Keep platform and dependencies updated
+
+### Azure SQL Security
+- [ ] Enable Microsoft Entra authentication
+- [ ] Disable SQL authentication if not needed
+- [ ] Configure firewall rules (deny public by default)
+- [ ] Use private endpoints for connections
+- [ ] Enable Transparent Data Encryption (TDE)
+- [ ] Enable auditing and threat detection
+- [ ] Use Always Encrypted for sensitive columns
+- [ ] Implement row-level security if needed
+
+### Azure Storage Security
+- [ ] Enable "Secure transfer required" (HTTPS only)
+- [ ] Disable public blob access
+- [ ] Use private endpoints for connections
+- [ ] Enable soft delete for blob protection
+- [ ] Use customer-managed keys for encryption
+- [ ] Configure lifecycle management policies
+- [ ] Enable logging and monitoring
+
+---
+
+## 🛡️ Confidential Computing Checklist
+
+### When to Use Confidential Computing
+- [ ] Processing highly sensitive/regulated data
+- [ ] Collaborative analytics between untrusted parties
+- [ ] Requiring protection from cloud operator access
+- [ ] Meeting strict compliance requirements
+
+### Implementation
+- [ ] Use Confidential VMs with AMD SEV-SNP or Intel TDX
+- [ ] Enable hardware-based memory encryption
+- [ ] Use attestation to verify TEE integrity
+- [ ] Deploy confidential containers on AKS
+- [ ] Use Azure Confidential Ledger for tamper-proof records
+
+---
+
+## 📋 Microsoft Cloud Security Benchmark (MCSB) Adoption
+
+### Getting Started
+- [ ] Enable Defender for Cloud regulatory compliance dashboard
+- [ ] Assess current compliance against MCSB controls
+- [ ] Prioritize high-impact recommendations
+- [ ] Implement Azure Policy for baseline enforcement
+- [ ] Review AI security controls if deploying AI workloads
+
+### Key Control Domains
+- [ ] **NS - Network Security**: Segmentation, protection, monitoring
+- [ ] **IM - Identity Management**: Authentication, authorization, lifecycle
+- [ ] **PA - Privileged Access**: Admin workstations, JIT/JEA access
+- [ ] **DP - Data Protection**: Encryption, classification, handling
+- [ ] **AM - Asset Management**: Inventory, lifecycle, disposal
+- [ ] **LT - Logging and Threat Detection**: Monitoring, alerting, response
+- [ ] **IR - Incident Response**: Preparation, detection, containment
+- [ ] **PV - Posture and Vulnerability Management**: Scanning, remediation
+- [ ] **ES - Endpoint Security**: Antimalware, EDR, hardening
+- [ ] **BR - Backup and Recovery**: Protection, testing, availability
+- [ ] **DS - DevOps Security**: Pipeline security, code scanning
+- [ ] **GS - Governance and Strategy**: Policies, organization, risk
+
+### Continuous Improvement
+- [ ] Review Secure Score weekly
+- [ ] Address critical recommendations within 24-48 hours
+- [ ] Schedule monthly security reviews
+- [ ] Conduct quarterly compliance assessments
+- [ ] Update policies based on new MCSB guidance
+
+---
+
+## 🔥 Incident Response Quick Reference
+
+### Preparation
+- [ ] Document escalation procedures and contacts
+- [ ] Maintain incident response playbooks
+- [ ] Configure automated alerting for critical events
+- [ ] Test backup restore procedures quarterly
+- [ ] Conduct tabletop exercises semi-annually
+
+### Detection
+- [ ] Monitor Defender for Cloud alerts
+- [ ] Review Microsoft Sentinel incidents
+- [ ] Check Activity Log for anomalies
+- [ ] Investigate risky sign-ins in Entra ID
+
+### Containment
+- [ ] Isolate affected resources (NSG deny rules)
+- [ ] Disable compromised accounts
+- [ ] Revoke compromised credentials/keys
+- [ ] Preserve evidence (snapshots, logs)
+
+### Eradication & Recovery
+- [ ] Remove malware/unauthorized access
+- [ ] Reset all potentially compromised credentials
+- [ ] Restore from known-good backups
+- [ ] Re-enable services incrementally
+
+### Post-Incident
+- [ ] Conduct root cause analysis
+- [ ] Update detection rules based on findings
+- [ ] Document lessons learned
+- [ ] Improve defenses based on findings
+
+---
+
+*Last updated: 2026-02-13*
 *For the latest guidance, fetch documentation from Microsoft Learn*
