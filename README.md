@@ -359,6 +359,16 @@ We welcome contributions from the community! To add a new skill:
 - Organize links by category (Best Practices, Architecture, Troubleshooting, etc.)
 - Test your skill with at least one AI assistant
 
+### ⚠️ Important
+
+**Do NOT edit `SKILL.md` files that contain metadata with `generated_at` and `generator` fields.** These files are automatically generated and maintained by tools.
+
+```yaml
+metadata:
+  generated_at: "2026-02-24"
+  generator: "docs2skills/1.0.0"
+```
+
 ---
 
 ## ⚖️ License
