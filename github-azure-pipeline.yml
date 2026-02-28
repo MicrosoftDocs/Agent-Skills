@@ -136,7 +136,7 @@ stages:
                 echo "Processing Cloud Adoption Framework"
                 echo "========================================"
                 python -m src.docs2skills \
-                  --content-types caf \
+                  --config-type caf \
                   --products-dir $PRODUCTS_DIR \
                   --skills-dir $SKILLS_DIR
 
@@ -144,7 +144,7 @@ stages:
                 echo "Processing Azure Architecture Center"
                 echo "========================================"
                 python -m src.docs2skills \
-                  --content-types aaf \
+                  --config-type aaf \
                   --products-dir $PRODUCTS_DIR \
                   --skills-dir $SKILLS_DIR
 
