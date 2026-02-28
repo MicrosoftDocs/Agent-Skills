@@ -153,7 +153,7 @@ stages:
                 echo "========================================"
                 python -m src.docs2skills \
                   --products-dir $PRODUCTS_DIR \
-                  --skills-dir $SKILLS_DIR \
+                  --skills-dir $SKILLS_DIR
 
 
                 echo "========================================"
