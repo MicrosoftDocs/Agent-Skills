@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 155
 - **Unclassified**: 69
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 224
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 31 | 13.8% |
 | troubleshooting | 11 | 4.9% |
 | *(Unclassified)* | 69 | 30.8% |
+
+## Changes
 
 ## Classified Pages
 

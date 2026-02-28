@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 355
 - **Unclassified**: 107
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 462
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 23 | 5.0% |
 | troubleshooting | 90 | 19.5% |
 | *(Unclassified)* | 107 | 23.2% |
+
+## Changes
 
 ## Classified Pages
 

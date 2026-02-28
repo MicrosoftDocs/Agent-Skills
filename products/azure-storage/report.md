@@ -1,9 +1,9 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions:
-  decision-making: 'Planning and cost decisions for Azure Storage: pricing, billing,
-    redundancy, capacity, File Sync design/tiering, Container Storage, Elastic SAN,
-    and third‑party backup/migration options.'
+  decision-making: 'Planning and cost-optimizing storage: pricing, billing, redundancy,
+    connectivity, migration tools, and deployment/topology choices for Azure Storage,
+    Container Storage, Elastic SAN, and File Sync.'
   configuration: Configuring and monitoring Azure Storage services and tools (Storage
     Actions, Storage Mover, Container Storage, Elastic SAN, File Sync), including
     networking, security, scaling, and observability.
@@ -30,25 +30,38 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 165
-- **Fetched**: 165
+- **Total Pages**: 166
+- **Fetched**: 166
 - **Fetch Failed**: 0
-- **Classified**: 123
+- **Classified**: 124
 - **Unclassified**: 42
+
+### Incremental Update
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 165
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-storage/azure-storage.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 12 | 7.3% |
-| configuration | 40 | 24.2% |
-| decision-making | 17 | 10.3% |
+| best-practices | 12 | 7.2% |
+| configuration | 40 | 24.1% |
+| decision-making | 18 | 10.8% |
 | deployment | 21 | 12.7% |
-| integrations | 10 | 6.1% |
+| integrations | 10 | 6.0% |
 | limits-quotas | 8 | 4.8% |
-| security | 9 | 5.5% |
+| security | 9 | 5.4% |
 | troubleshooting | 6 | 3.6% |
-| *(Unclassified)* | 42 | 25.5% |
+| *(Unclassified)* | 42 | 25.3% |
+
+## Changes
+
+### New Pages
+
+- [Planning your Private Networking for cloud to cloud migrations](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs)
 
 ## Classified Pages
 
@@ -138,6 +151,7 @@ category_descriptions:
 | [Networking considerations for hybrid access](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-networking-overview) | configuration | 0.70 | Product-specific networking requirements and configuration patterns for Storage Sync Service and storage accounts, beyond generic networking advice. |
 | [Performance](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance) | limits-quotas | 0.70 | Explains how Elastic SAN limits interact with VM limits, including IOPS/throughput allocation and throttling scenarios with numeric thresholds. |
 | [Planning for a deployment](https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning) | deployment | 0.70 | Described as decisions and best practices for a Storage Mover deployment; likely includes product-specific deployment guidance (for example, agent placement, project structuring, migration scheduling) that goes beyond generic concepts. |
+| [Planning your Private Networking for cloud to cloud migrations](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs) | decision-making | 0.70 | The article compares ExpressRoute, VPN, and SD-WAN for connecting Azure to private networks and other clouds, with guidance on when to use each based on latency, bandwidth, security, cost, and operational complexity. This is product-specific decision guidance rather than generic networking theory, matching the decision-making sub-skill. It does not appear to focus on numeric limits, configuration parameter tables, or error troubleshooting. |
 | [Recover from a server failure](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-recovery) | best-practices | 0.70 | Product-specific recovery sequence (new disk sizing, agent install, endpoint recreation) to restore data after server failure. |
 | [Register an agent](https://learn.microsoft.com/en-us/azure/storage-mover/agent-register) | configuration | 0.70 | Agent registration and trust establishment usually involve specific commands, endpoints, and configuration flags (public vs private endpoint) that are product-specific configuration knowledge. |
 | [Resize an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-expand) | configuration | 0.70 | Explains how to increase/decrease SAN and volume sizes with portal/CLI/PowerShell, including Elastic SAN–specific constraints and parameters. |

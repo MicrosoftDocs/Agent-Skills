@@ -34,6 +34,13 @@ category_descriptions:
 - **Classified**: 87
 - **Unclassified**: 26
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 113
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -47,6 +54,8 @@ category_descriptions:
 | security | 11 | 9.7% |
 | troubleshooting | 3 | 2.7% |
 | *(Unclassified)* | 26 | 23.0% |
+
+## Changes
 
 ## Classified Pages
 

@@ -33,6 +33,13 @@ category_descriptions:
 - **Classified**: 91
 - **Unclassified**: 38
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 129
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -46,6 +53,8 @@ category_descriptions:
 | security | 9 | 7.0% |
 | troubleshooting | 2 | 1.6% |
 | *(Unclassified)* | 38 | 29.5% |
+
+## Changes
 
 ## Classified Pages
 

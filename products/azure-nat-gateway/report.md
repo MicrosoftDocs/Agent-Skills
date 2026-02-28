@@ -31,6 +31,13 @@ category_descriptions:
 - **Classified**: 23
 - **Unclassified**: 3
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 26
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -43,6 +50,8 @@ category_descriptions:
 | limits-quotas | 1 | 3.8% |
 | troubleshooting | 4 | 15.4% |
 | *(Unclassified)* | 3 | 11.5% |
+
+## Changes
 
 ## Classified Pages
 

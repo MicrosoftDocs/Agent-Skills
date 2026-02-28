@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 487
 - **Unclassified**: 138
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 625
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 55 | 8.8% |
 | troubleshooting | 32 | 5.1% |
 | *(Unclassified)* | 138 | 22.1% |
+
+## Changes
 
 ## Classified Pages
 

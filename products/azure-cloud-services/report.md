@@ -33,6 +33,13 @@ category_descriptions:
 - **Classified**: 31
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 45
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -46,6 +53,8 @@ category_descriptions:
 | security | 3 | 6.7% |
 | troubleshooting | 1 | 2.2% |
 | *(Unclassified)* | 14 | 31.1% |
+
+## Changes
 
 ## Classified Pages
 

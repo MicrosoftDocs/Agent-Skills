@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 275
 - **Unclassified**: 97
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 372
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 10 | 2.7% |
 | troubleshooting | 7 | 1.9% |
 | *(Unclassified)* | 97 | 26.1% |
+
+## Changes
 
 ## Classified Pages
 

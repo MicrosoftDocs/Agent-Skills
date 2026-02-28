@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 15
 - **Unclassified**: 3
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 18
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-immersive-reader/azure-immersive-reader.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -33,6 +40,8 @@ category_descriptions:
 | limits-quotas | 1 | 5.6% |
 | security | 3 | 16.7% |
 | *(Unclassified)* | 3 | 16.7% |
+
+## Changes
 
 ## Classified Pages
 

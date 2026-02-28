@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 32
 - **Unclassified**: 2
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hpc-cache/azure-hpc-cache.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 4 | 11.8% |
 | troubleshooting | 2 | 5.9% |
 | *(Unclassified)* | 2 | 5.9% |
+
+## Changes
 
 ## Classified Pages
 

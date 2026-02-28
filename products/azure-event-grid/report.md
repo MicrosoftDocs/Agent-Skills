@@ -37,6 +37,13 @@ category_descriptions:
 - **Classified**: 180
 - **Unclassified**: 79
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 259
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -51,6 +58,8 @@ category_descriptions:
 | security | 47 | 18.1% |
 | troubleshooting | 5 | 1.9% |
 | *(Unclassified)* | 79 | 30.5% |
+
+## Changes
 
 ## Classified Pages
 

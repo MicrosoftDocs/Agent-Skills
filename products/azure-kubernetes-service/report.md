@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 450
 - **Unclassified**: 123
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 573
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 78 | 13.6% |
 | troubleshooting | 17 | 3.0% |
 | *(Unclassified)* | 123 | 21.5% |
+
+## Changes
 
 ## Classified Pages
 

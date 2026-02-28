@@ -37,6 +37,13 @@ category_descriptions:
 - **Classified**: 134
 - **Unclassified**: 72
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 206
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -51,6 +58,8 @@ category_descriptions:
 | security | 19 | 9.2% |
 | troubleshooting | 10 | 4.9% |
 | *(Unclassified)* | 72 | 35.0% |
+
+## Changes
 
 ## Classified Pages
 

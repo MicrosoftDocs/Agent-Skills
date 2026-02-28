@@ -28,6 +28,13 @@ category_descriptions:
 - **Classified**: 17
 - **Unclassified**: 6
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-custom-vision/azure-custom-vision.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -39,6 +46,8 @@ category_descriptions:
 | limits-quotas | 1 | 4.3% |
 | security | 3 | 13.0% |
 | *(Unclassified)* | 6 | 26.1% |
+
+## Changes
 
 ## Classified Pages
 

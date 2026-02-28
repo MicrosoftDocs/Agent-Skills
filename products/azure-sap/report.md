@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 181
 - **Unclassified**: 22
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 203
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 10 | 4.9% |
 | troubleshooting | 5 | 2.5% |
 | *(Unclassified)* | 22 | 10.8% |
+
+## Changes
 
 ## Classified Pages
 

@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 6
 - **Unclassified**: 5
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 11
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -32,6 +39,8 @@ category_descriptions:
 | security | 1 | 9.1% |
 | troubleshooting | 2 | 18.2% |
 | *(Unclassified)* | 5 | 45.5% |
+
+## Changes
 
 ## Classified Pages
 

@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 447
 - **Unclassified**: 72
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 519
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 24 | 4.6% |
 | troubleshooting | 50 | 9.6% |
 | *(Unclassified)* | 72 | 13.9% |
+
+## Changes
 
 ## Classified Pages
 

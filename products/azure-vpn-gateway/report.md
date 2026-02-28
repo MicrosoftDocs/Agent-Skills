@@ -16,9 +16,8 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure VPN Gateway issues: S2S/P2S connection
     failures, certificate/auth errors, macOS IKEv2, throughput, health checks, resets,
     and packet-capture/log-based debugging'
-  limits-quotas: VPN Gateway client version history, legacy gateway SKU behavior,
-    and FAQs on gateway limits, throughput, connections, and other capacity/behavior
-    constraints
+  limits-quotas: VPN Gateway client version history, SKU comparisons, and FAQs about
+    gateway limits, scale, performance, and connection behavior
   deployment: 'Deploying and configuring Azure VPN Gateways: creation via PowerShell/CLI,
     SKU and IP migrations/upgrades, active-active changes, S2S VPN setup, and client
     profile deployment via Intune.'
@@ -39,6 +38,13 @@ category_descriptions:
 - **Classified**: 113
 - **Unclassified**: 16
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 128
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +59,13 @@ category_descriptions:
 | security | 20 | 15.5% |
 | troubleshooting | 13 | 10.1% |
 | *(Unclassified)* | 16 | 12.4% |
+
+## Changes
+
+### Updated Pages
+
+- [Manage legacy gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy)
+  - Updated: 2026-02-26T06:24:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 
@@ -122,6 +135,7 @@ category_descriptions:
 | [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-ike-linux) | configuration | 0.70 | Shows strongSwan configuration files and parameters (conn, left/right, proposals) required for Azure P2S IKEv2 certificate auth. |
 | [IPv6 configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration) | configuration | 0.70 | Details IPv6-related configuration parameters and constraints for dual-stack VPN Gateway setups. |
 | [MakeCert](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-makecert) | configuration | 0.70 | Provides MakeCert command lines and parameter values to create root and client certificates for Azure P2S, which are detailed configuration instructions. |
+| [Manage legacy gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy) | limits-quotas | 0.70 | A SKU-focused VPN Gateway article almost certainly includes SKU-specific capacity details (throughput, tunnels, connections) and deprecation timelines that are numeric and product-specific, which qualify as limits/quotas expert knowledge beyond generic conceptual info. |
 | [Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-gateway) | security | 0.70 | Covers Entra ID authentication with specific App IDs, audience values, and tenant-related security configuration unique to this product. |
 | [Migrate classic gateways to Resource Manager](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-classic-resource-manager-migration) | decision-making | 0.70 | Covers migration path, constraints, and considerations between deployment models, guiding upgrade decisions. |
 | [Monitor VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/monitor-vpn-gateway) | configuration | 0.70 | Monitoring article typically lists specific metrics, log categories, and diagnostic settings to enable—product-specific configuration details. |
@@ -168,7 +182,6 @@ category_descriptions:
 | [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-different-deployment-models-portal) | configuration | 0.60 | Shows exact steps and settings to bridge classic and Resource Manager VNets, including specific connection types and constraints. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal) | configuration | 0.60 | Portal how-to for VNet-to-VNet typically includes gateway SKU choices, connection types, and specific configuration fields unique to Azure VPN Gateway. |
 | [Leveraging Azure VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/work-remotely-support) | decision-making | 0.60 | Discusses options and capacity considerations for remote access; helps choose when and how to use P2S versus other solutions. |
-| [Manage legacy gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy) | limits-quotas | 0.60 | Legacy SKU article typically includes specific capabilities, limits, and deprecation timelines for Standard/High Performance SKUs. |
 | [NVA configurations and remote work](https://learn.microsoft.com/en-us/azure/vpn-gateway/nva-work-remotely-support) | best-practices | 0.60 | Provides product-specific guidance and considerations for using NVAs for remote work, including gotchas and recommended patterns. |
 | [Verify a gateway connection](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-verify-connection-resource-manager) | troubleshooting | 0.60 | Verification article likely includes specific commands, portal checks, and interpretation of connection states unique to VPN Gateway. |
 

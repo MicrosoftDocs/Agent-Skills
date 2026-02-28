@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 53
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 62
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-applications/azure-managed-applications.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -32,6 +39,8 @@ category_descriptions:
 | limits-quotas | 2 | 3.2% |
 | security | 8 | 12.9% |
 | *(Unclassified)* | 9 | 14.5% |
+
+## Changes
 
 ## Classified Pages
 

@@ -15,11 +15,20 @@ category_descriptions:
 - **Classified**: 1
 - **Unclassified**: 0
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 1
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-analysis-services/azure-analysis-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | troubleshooting | 1 | 100.0% |
+
+## Changes
 
 ## Classified Pages
 

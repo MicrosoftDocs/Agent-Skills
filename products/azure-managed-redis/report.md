@@ -34,6 +34,13 @@ category_descriptions:
 - **Classified**: 49
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 58
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -47,6 +54,8 @@ category_descriptions:
 | security | 5 | 8.6% |
 | troubleshooting | 7 | 12.1% |
 | *(Unclassified)* | 9 | 15.5% |
+
+## Changes
 
 ## Classified Pages
 

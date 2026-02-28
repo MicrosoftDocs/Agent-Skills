@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 141
 - **Unclassified**: 33
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 174
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-spring-apps/azure-spring-apps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 23 | 13.2% |
 | troubleshooting | 14 | 8.0% |
 | *(Unclassified)* | 33 | 19.0% |
+
+## Changes
 
 ## Classified Pages
 

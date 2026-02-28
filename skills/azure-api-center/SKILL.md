@@ -1,14 +1,14 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
+description: Expert knowledge for Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Api Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Api Center Skill
+# Api Center Skill
 
-This skill provides expert guidance for Azure Api Center. Covers best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Api Center. Covers best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,8 +24,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Best Practices | L31-L35 | Best practices for enforcing API governance early in development using the Azure API Center VS Code extension, including policy checks, linting, and design-time validation. |
 | Security | L36-L41 | Configuring API key and OAuth2 security for APIs in API Center, and managing who can access the API Center portal via the VS Code extension. |
-| Configuration | L42-L56 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, metadata schemas, linting (managed/self-managed), MCP/A2A integration, and inventory management. |
-| Integrations & Coding Patterns | L57-L65 | Patterns and step-by-step guides to sync/import APIs between API Center and API Management, Amazon API Gateway, and to export APIs as Copilot Studio connectors or automate status alerts. |
+| Configuration | L42-L56 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup, and inventory management. |
+| Integrations & Coding Patterns | L57-L65 | Patterns and tools for integrating API Center with Azure API Management, Amazon API Gateway, Copilot Studio, and automating sync/notifications via Logic Apps and Teams. |
 | Deployment | L66-L70 | Automating API registration into API Center via GitHub Actions and instructions for self-hosting/customizing the Azure API Center portal implementation. |
 
 ### Best Practices
@@ -42,7 +42,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure self-managed API linting in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting |
+| Configure API linting and analysis in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting |
 | Use managed API linting and analysis in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting |
 | Manage Azure API Center inventory with Azure CLI | https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli |
 | Configure metadata schema for Azure API Center governance | https://learn.microsoft.com/en-us/azure/api-center/metadata |
@@ -59,7 +59,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Export API Center APIs as Copilot Studio connectors | https://learn.microsoft.com/en-us/azure/api-center/export-to-copilot-studio |
 | Import Azure API Management APIs into API Center | https://learn.microsoft.com/en-us/azure/api-center/import-api-management-apis |
-| Automate API status notifications with Logic Apps and Teams | https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow |
+| Automate API registration notifications with Logic Apps and Teams | https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow |
 | Synchronize Azure API Management APIs with API Center | https://learn.microsoft.com/en-us/azure/api-center/synchronize-api-management-apis |
 | Sync Amazon API Gateway APIs into Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis |
 

@@ -14,12 +14,21 @@ category_descriptions:
 - **Classified**: 1
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 15
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quotas/azure-quotas.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | limits-quotas | 1 | 6.7% |
 | *(Unclassified)* | 14 | 93.3% |
+
+## Changes
 
 ## Classified Pages
 

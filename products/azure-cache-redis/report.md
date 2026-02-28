@@ -35,6 +35,13 @@ category_descriptions:
 - **Classified**: 55
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 62
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -48,6 +55,8 @@ category_descriptions:
 | security | 9 | 14.5% |
 | troubleshooting | 7 | 11.3% |
 | *(Unclassified)* | 7 | 11.3% |
+
+## Changes
 
 ## Classified Pages
 

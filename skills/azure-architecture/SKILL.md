@@ -1,14 +1,14 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
+description: Expert guidance for designing Azure solutions using Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Architecture Skill
+# Architecture Skill
 
-This skill provides expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for designing Azure solutions using Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -29,8 +29,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture Styles | L213-L223 | Comparisons and design guidance for Azure app styles: big compute, big data, event-driven, microservices, N-tier, and web-queue-worker, with when-to-use and implementation patterns. |
 | Best Practices | L224-L287 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, APIs, networking, IoT, SAP, Event Hubs, and generative AI. |
 | Anti-patterns | L288-L302 | Diagnosing and fixing common cloud performance/scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
-| Example Workloads | L303-L370 | End-to-end Azure reference solutions for real workloads: data/AI pipelines, security and networking patterns, hybrid/AKS/Arc setups, VDI, mainframe/Oracle/SAP, DevOps, and governance scenarios. |
-| Migration Guides | L371-L403 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
+| Example Workloads | L303-L371 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
+| Migration Guides | L372-L404 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -349,6 +349,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Upload files privately from IoT Hub to secured Azure Storage | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/iot/iot-private-file-upload |
 | Back up mainframe file and tape data to Azure with Luminex | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/luminex-mainframe-file-tape-transfer |
 | Modernize mainframe workloads using BMC AMI Cloud and Azure Blob | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/mainframe-modernization-bmc-ami-cloud |
+| Implement Siemens Teamcenter PLM baseline on Azure | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline |
 | Build real-time monitoring and observability for media telemetry | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/monitoring/monitoring-observable-systems-media |
 | Replatform Kubernetes microservices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps |
 | Build Dapr-based microservices on Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr |

@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 11
 - **Unclassified**: 13
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 24
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | limits-quotas | 2 | 8.3% |
 | troubleshooting | 2 | 8.3% |
 | *(Unclassified)* | 13 | 54.2% |
+
+## Changes
 
 ## Classified Pages
 

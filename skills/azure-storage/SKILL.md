@@ -1,14 +1,14 @@
 ---
 name: azure-storage
-description: Expert knowledge for Azure Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Storage applications.
+description: Expert knowledge for Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Storage applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Storage Skill
+# Storage Skill
 
-This skill provides expert guidance for Azure Storage. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Storage. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,12 +24,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L34-L43 | Diagnosing and fixing Azure Storage task errors, Storage Mover network/job issues, creating support bundles, and troubleshooting Container Storage v1 and Elastic SAN problems. |
 | Best Practices | L44-L59 | Best-practice guidance for deploying, configuring, migrating, and recovering Azure Storage (Storage Mover, Container Storage, Elastic SAN, File Sync, Veeam/Blob) with performance and DR focus. |
-| Decision Making | L60-L80 | Planning and cost decisions for Azure Storage: pricing, billing, redundancy, capacity, File Sync design/tiering, Container Storage, Elastic SAN, and third‑party backup/migration options. |
-| Limits & Quotas | L81-L92 | Storage capacity, scalability, performance, and throttling limits for Storage Mover, Container Storage, Elastic SAN, and Azure File Sync, plus known issues and discovery FAQs. |
-| Security | L93-L105 | Securing Azure Storage and Elastic SAN with RBAC roles, private/service endpoints, managed identities, and customer-managed encryption keys (CMK/SSE) configuration and management |
-| Configuration | L106-L149 | Configuring and monitoring Azure Storage services and tools (Storage Actions, Storage Mover, Container Storage, Elastic SAN, File Sync), including networking, security, scaling, and observability. |
-| Integrations & Coding Patterns | L150-L163 | How to integrate Azure Elastic SAN and Container Storage with AKS, NVMe, Managed Disks, iSCSI, and configure migrations, snapshots, and Storage Actions via .NET. |
-| Deployment | L164-L187 | Deploying and migrating Azure Storage solutions: ARM/Bicep/Terraform setups, Storage Mover, File Sync, Elastic SAN, Container Storage, and partner tools for data movement and backup. |
+| Decision Making | L60-L81 | Planning and cost-optimizing storage: pricing, billing, redundancy, connectivity, migration tools, and deployment/topology choices for Azure Storage, Container Storage, Elastic SAN, and File Sync. |
+| Limits & Quotas | L82-L93 | Storage capacity, scalability, performance, and throttling limits for Storage Mover, Container Storage, Elastic SAN, and Azure File Sync, plus known issues and discovery FAQs. |
+| Security | L94-L106 | Securing Azure Storage and Elastic SAN with RBAC roles, private/service endpoints, managed identities, and customer-managed encryption keys (CMK/SSE) configuration and management |
+| Configuration | L107-L150 | Configuring and monitoring Azure Storage services and tools (Storage Actions, Storage Mover, Container Storage, Elastic SAN, File Sync), including networking, security, scaling, and observability. |
+| Integrations & Coding Patterns | L151-L164 | How to integrate Azure Elastic SAN and Container Storage with AKS, NVMe, Managed Disks, iSCSI, and configure migrations, snapshots, and Storage Actions via .NET. |
+| Deployment | L165-L188 | Deploying and migrating Azure Storage solutions: ARM/Bicep/Terraform setups, Storage Mover, File Sync, Elastic SAN, Container Storage, and partner tools for data movement and backup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,6 +63,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Plan and manage Azure Storage Actions cost usage | https://learn.microsoft.com/en-us/azure/storage-actions/storage-actions-plan-manage-costs |
 | Choose Azure Storage Discovery pricing plans | https://learn.microsoft.com/en-us/azure/storage-discovery/pricing |
 | Understand and plan Azure Storage Mover billing | https://learn.microsoft.com/en-us/azure/storage-mover/billing |
+| Choose Azure private connectivity for cloud-to-cloud | https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs |
 | Understand Azure Container Storage billing and cost drivers | https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-billing |
 | Understand billing for Azure Container Storage v1 | https://learn.microsoft.com/en-us/azure/storage/container-storage/container-storage-billing-version-1 |
 | Choose LRS vs ZRS for Azure Container Storage volumes | https://learn.microsoft.com/en-us/azure/storage/container-storage/enable-multi-zone-redundancy |

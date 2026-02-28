@@ -34,6 +34,13 @@ category_descriptions:
 - **Classified**: 134
 - **Unclassified**: 25
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 159
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -47,6 +54,8 @@ category_descriptions:
 | security | 17 | 10.7% |
 | troubleshooting | 1 | 0.6% |
 | *(Unclassified)* | 25 | 15.7% |
+
+## Changes
 
 ## Classified Pages
 

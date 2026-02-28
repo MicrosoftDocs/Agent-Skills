@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 34
 - **Unclassified**: 17
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 51
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,8 @@ category_descriptions:
 | security | 10 | 19.6% |
 | troubleshooting | 1 | 2.0% |
 | *(Unclassified)* | 17 | 33.3% |
+
+## Changes
 
 ## Classified Pages
 

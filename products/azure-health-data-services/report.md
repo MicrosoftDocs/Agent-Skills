@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 166
 - **Unclassified**: 62
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 228
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -50,6 +57,8 @@ category_descriptions:
 | security | 35 | 15.4% |
 | troubleshooting | 8 | 3.5% |
 | *(Unclassified)* | 62 | 27.2% |
+
+## Changes
 
 ## Classified Pages
 

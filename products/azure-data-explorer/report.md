@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 110
 - **Unclassified**: 87
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 197
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 26 | 13.2% |
 | troubleshooting | 7 | 3.6% |
 | *(Unclassified)* | 87 | 44.2% |
+
+## Changes
 
 ## Classified Pages
 

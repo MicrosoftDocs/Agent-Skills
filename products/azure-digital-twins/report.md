@@ -37,6 +37,13 @@ category_descriptions:
 - **Classified**: 55
 - **Unclassified**: 11
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 66
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-digital-twins/azure-digital-twins.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -51,6 +58,8 @@ category_descriptions:
 | security | 5 | 7.6% |
 | troubleshooting | 6 | 9.1% |
 | *(Unclassified)* | 11 | 16.7% |
+
+## Changes
 
 ## Classified Pages
 

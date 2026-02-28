@@ -35,6 +35,13 @@ category_descriptions:
 - **Classified**: 145
 - **Unclassified**: 92
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 237
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -48,6 +55,8 @@ category_descriptions:
 | security | 23 | 9.7% |
 | troubleshooting | 46 | 19.4% |
 | *(Unclassified)* | 92 | 38.8% |
+
+## Changes
 
 ## Classified Pages
 

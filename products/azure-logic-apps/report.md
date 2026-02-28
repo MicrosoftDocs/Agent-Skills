@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 196
 - **Unclassified**: 33
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 229
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 13 | 5.7% |
 | troubleshooting | 10 | 4.4% |
 | *(Unclassified)* | 33 | 14.4% |
+
+## Changes
 
 ## Classified Pages
 

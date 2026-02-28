@@ -19,6 +19,13 @@ category_descriptions:
 - **Classified**: 6
 - **Unclassified**: 8
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 14
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-import-export/azure-import-export.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -27,6 +34,8 @@ category_descriptions:
 | security | 1 | 7.1% |
 | troubleshooting | 4 | 28.6% |
 | *(Unclassified)* | 8 | 57.1% |
+
+## Changes
 
 ## Classified Pages
 

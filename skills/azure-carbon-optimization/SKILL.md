@@ -1,14 +1,14 @@
 ---
 name: azure-carbon-optimization
-description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Carbon Optimization applications.
+description: Expert knowledge for Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when building, debugging, or optimizing Carbon Optimization applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Carbon Optimization Skill
+# Carbon Optimization Skill
 
-This skill provides expert guidance for Azure Carbon Optimization. Covers troubleshooting, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Carbon Optimization. Covers troubleshooting, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

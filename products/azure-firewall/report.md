@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 61
 - **Unclassified**: 23
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 84
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -50,6 +57,8 @@ category_descriptions:
 | security | 15 | 17.9% |
 | troubleshooting | 2 | 2.4% |
 | *(Unclassified)* | 23 | 27.4% |
+
+## Changes
 
 ## Classified Pages
 

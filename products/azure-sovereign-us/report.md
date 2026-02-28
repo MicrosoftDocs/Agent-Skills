@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 32
 - **Unclassified**: 8
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | integrations | 3 | 7.5% |
 | security | 8 | 20.0% |
 | *(Unclassified)* | 8 | 20.0% |
+
+## Changes
 
 ## Classified Pages
 

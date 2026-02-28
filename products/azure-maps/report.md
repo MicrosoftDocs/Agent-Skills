@@ -35,6 +35,13 @@ category_descriptions:
 - **Classified**: 113
 - **Unclassified**: 32
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 145
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -48,6 +55,8 @@ category_descriptions:
 | security | 10 | 6.9% |
 | troubleshooting | 1 | 0.7% |
 | *(Unclassified)* | 32 | 22.1% |
+
+## Changes
 
 ## Classified Pages
 

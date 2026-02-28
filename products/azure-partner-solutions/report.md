@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 27
 - **Unclassified**: 74
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 101
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | security | 2 | 2.0% |
 | troubleshooting | 5 | 5.0% |
 | *(Unclassified)* | 74 | 73.3% |
+
+## Changes
 
 ## Classified Pages
 

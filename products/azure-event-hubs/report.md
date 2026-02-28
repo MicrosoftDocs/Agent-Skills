@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 72
 - **Unclassified**: 39
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 111
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-hubs/azure-event-hubs.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 23 | 20.7% |
 | troubleshooting | 9 | 8.1% |
 | *(Unclassified)* | 39 | 35.1% |
+
+## Changes
 
 ## Classified Pages
 

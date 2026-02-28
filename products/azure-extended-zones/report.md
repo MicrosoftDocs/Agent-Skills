@@ -17,6 +17,13 @@ category_descriptions:
 - **Classified**: 3
 - **Unclassified**: 13
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 16
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -24,6 +31,8 @@ category_descriptions:
 | configuration | 2 | 12.5% |
 | decision-making | 1 | 6.2% |
 | *(Unclassified)* | 13 | 81.2% |
+
+## Changes
 
 ## Classified Pages
 

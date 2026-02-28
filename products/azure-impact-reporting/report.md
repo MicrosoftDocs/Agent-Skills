@@ -20,6 +20,13 @@ category_descriptions:
 - **Classified**: 9
 - **Unclassified**: 5
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 14
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-impact-reporting/azure-impact-reporting.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -28,6 +35,8 @@ category_descriptions:
 | integrations | 5 | 35.7% |
 | troubleshooting | 1 | 7.1% |
 | *(Unclassified)* | 5 | 35.7% |
+
+## Changes
 
 ## Classified Pages
 

@@ -21,6 +21,13 @@ category_descriptions:
 - **Classified**: 12
 - **Unclassified**: 18
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 30
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -30,6 +37,8 @@ category_descriptions:
 | security | 4 | 13.3% |
 | troubleshooting | 1 | 3.3% |
 | *(Unclassified)* | 18 | 60.0% |
+
+## Changes
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions:
-  example-workloads: 'End-to-end Azure reference solutions for real workloads: data/AI
-    pipelines, security and networking patterns, hybrid/AKS/Arc setups, VDI, mainframe/Oracle/SAP,
-    DevOps, and governance scenarios.'
+  example-workloads: 'End-to-end reference architectures and patterns for real-world
+    Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe,
+    and app modernization scenarios.'
   reference-architectures: 'End-to-end Azure solution blueprints: mission-critical
     app, data, AKS, networking, hybrid, security, and MLOps architectures with deployment
     patterns and best practices.'
@@ -36,8 +36,15 @@ category_descriptions:
 - **Total Pages**: 443
 - **Fetched**: 443
 - **Fetch Failed**: 0
-- **Classified**: 334
-- **Unclassified**: 109
+- **Classified**: 335
+- **Unclassified**: 108
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 442
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
 ## Classification Statistics
 
@@ -47,12 +54,19 @@ category_descriptions:
 | architecture-styles | 7 | 1.6% |
 | best-practices | 60 | 13.5% |
 | design-patterns | 51 | 11.5% |
-| example-workloads | 64 | 14.4% |
+| example-workloads | 65 | 14.7% |
 | migration-guides | 30 | 6.8% |
 | reference-architectures | 51 | 11.5% |
 | solution-ideas | 29 | 6.5% |
 | technology-choices | 31 | 7.0% |
-| *(Unclassified)* | 109 | 24.6% |
+| *(Unclassified)* | 108 | 24.4% |
+
+## Changes
+
+### Updated Pages
+
+- [Teamcenter baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline)
+  - Updated: 2026-01-24T06:02:00Z → 2026-02-28T06:04:00Z
 
 ## Classified Pages
 
@@ -197,6 +211,7 @@ category_descriptions:
 | [Real-time monitoring and observable systems for media](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/monitoring/monitoring-observable-systems-media) | example-workloads | 0.86 | example-scenario/monitoring URL; media-industry-specific telemetry and monitoring solution using Event Hubs, Fabric eventstreams, and Data Activator with detailed architecture and implementation steps. |
 | [Resilient design](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/resilient-design) | best-practices | 0.86 | Provides actionable guidance on error handling, idempotency, and retries for Event Hubs-triggered Functions—clear DOs/DON'Ts and implementation details. |
 | [Solution idea: DevSecOps for infrastructure as code](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/devsecops-infrastructure-as-code) | solution-ideas | 0.86 | Explicitly labeled solution idea with conceptual architecture diagram and scenario-specific DevSecOps guidance using GitHub and IaC for landing zones. |
+| [Teamcenter baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline) | example-workloads | 0.86 | URL contains example-scenario/ and 'baseline', indicating a detailed implementation for a specific industry workload (manufacturing PLM). These example-scenario pages typically include concrete Azure service choices, topology, and configuration guidance for running Teamcenter in production-like environments, which goes beyond generic concepts and constitutes expert, scenario-specific knowledge. |
 | [Zero Trust network for web applications](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) | example-workloads | 0.86 | example-scenario/gateway URL; detailed Zero Trust inbound traffic architecture using Firewall and App Gateway with encryption/inspection specifics. |
 | [AI services](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/ai-services) | technology-choices | 0.85 | Decision guide for selecting among Azure AI services with capability comparisons and use-case mapping, matching technology-choices. |
 | [Accounts](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/accounts) | migration-guides | 0.85 | Compares AWS and Azure account structures to support migration and multicloud planning; under /aws-professional/. |
@@ -497,7 +512,6 @@ category_descriptions:
 | [SAP deployment using an Oracle database](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/sap-production) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Solaris emulator on Azure VMs](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/solaris-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
-| [Teamcenter baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Teamcenter with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-plm-netapp-files) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Unisys ClearPath Forward OS 2200 enterprise server virtualization on Azure](https://learn.microsoft.com/en-us/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Unisys ClearPath MCP virtualization on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/unisys-clearpath-forward-mainframe-rehost) | - | Parse error: Expecting value: line 1 column 1 (char 0) |

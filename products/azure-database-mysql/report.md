@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 116
 - **Unclassified**: 61
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 177
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 23 | 13.0% |
 | troubleshooting | 13 | 7.3% |
 | *(Unclassified)* | 61 | 34.5% |
+
+## Changes
 
 ## Classified Pages
 

@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 117
 - **Unclassified**: 63
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 180
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 16 | 8.9% |
 | troubleshooting | 8 | 4.4% |
 | *(Unclassified)* | 63 | 35.0% |
+
+## Changes
 
 ## Classified Pages
 

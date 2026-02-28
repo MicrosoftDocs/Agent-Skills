@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 63
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 72
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | limits-quotas | 4 | 5.6% |
 | security | 3 | 4.2% |
 | *(Unclassified)* | 9 | 12.5% |
+
+## Changes
 
 ## Classified Pages
 

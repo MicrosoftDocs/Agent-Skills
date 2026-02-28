@@ -28,6 +28,13 @@ category_descriptions:
 - **Classified**: 29
 - **Unclassified**: 15
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 44
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -39,6 +46,8 @@ category_descriptions:
 | integrations | 2 | 4.5% |
 | troubleshooting | 2 | 4.5% |
 | *(Unclassified)* | 15 | 34.1% |
+
+## Changes
 
 ## Classified Pages
 

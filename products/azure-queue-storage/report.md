@@ -24,6 +24,13 @@ category_descriptions:
 - **Classified**: 23
 - **Unclassified**: 1
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 24
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-queue-storage/azure-queue-storage.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -34,6 +41,8 @@ category_descriptions:
 | limits-quotas | 2 | 8.3% |
 | security | 10 | 41.7% |
 | *(Unclassified)* | 1 | 4.2% |
+
+## Changes
 
 ## Classified Pages
 

@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 153
 - **Unclassified**: 37
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 190
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 16 | 8.4% |
 | troubleshooting | 11 | 5.8% |
 | *(Unclassified)* | 37 | 19.5% |
+
+## Changes
 
 ## Classified Pages
 

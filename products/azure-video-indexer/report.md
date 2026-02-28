@@ -37,6 +37,13 @@ category_descriptions:
 - **Classified**: 58
 - **Unclassified**: 19
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 77
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -51,6 +58,8 @@ category_descriptions:
 | security | 9 | 11.7% |
 | troubleshooting | 1 | 1.3% |
 | *(Unclassified)* | 19 | 24.7% |
+
+## Changes
 
 ## Classified Pages
 

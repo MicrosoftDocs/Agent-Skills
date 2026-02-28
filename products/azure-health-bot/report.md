@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 46
 - **Unclassified**: 31
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 77
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | integrations | 20 | 26.0% |
 | security | 9 | 11.7% |
 | *(Unclassified)* | 31 | 40.3% |
+
+## Changes
 
 ## Classified Pages
 

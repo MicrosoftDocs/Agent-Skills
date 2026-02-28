@@ -19,6 +19,13 @@ category_descriptions:
 - **Classified**: 5
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 19
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -27,6 +34,8 @@ category_descriptions:
 | security | 2 | 10.5% |
 | troubleshooting | 2 | 10.5% |
 | *(Unclassified)* | 14 | 73.7% |
+
+## Changes
 
 ## Classified Pages
 

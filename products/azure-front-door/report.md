@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 83
 - **Unclassified**: 21
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 104
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 17 | 16.3% |
 | troubleshooting | 5 | 4.8% |
 | *(Unclassified)* | 21 | 20.2% |
+
+## Changes
 
 ## Classified Pages
 

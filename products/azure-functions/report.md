@@ -36,8 +36,15 @@ category_descriptions:
 - **Total Pages**: 361
 - **Fetched**: 361
 - **Fetch Failed**: 0
-- **Classified**: 298
-- **Unclassified**: 63
+- **Classified**: 297
+- **Unclassified**: 64
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 360
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
 
@@ -47,12 +54,19 @@ category_descriptions:
 | best-practices | 26 | 7.2% |
 | configuration | 41 | 11.4% |
 | decision-making | 22 | 6.1% |
-| deployment | 45 | 12.5% |
+| deployment | 44 | 12.2% |
 | integrations | 113 | 31.3% |
 | limits-quotas | 8 | 2.2% |
 | security | 14 | 3.9% |
 | troubleshooting | 23 | 6.4% |
-| *(Unclassified)* | 63 | 17.5% |
+| *(Unclassified)* | 64 | 17.7% |
+
+## Changes
+
+### Updated Pages
+
+- [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container)
+  - Updated: 2024-07-30T22:08:00.000Z → 2026-02-25T08:00:00.000Z
 
 ## Classified Pages
 
@@ -309,7 +323,6 @@ category_descriptions:
 | [Work with Event Grid](https://learn.microsoft.com/en-us/azure/azure-functions/event-grid-how-tos) | integrations | 0.70 | Provides procedures for configuring Event Grid triggers and bindings, likely including binding configuration parameters and local evaluation details, which are integration-specific patterns. |
 | [Work with Flex Consumption apps](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to) | configuration | 0.70 | Shows how to create and manage Flex Consumption plan apps, including plan-specific settings and management options, which are configuration details unique to this hosting plan. |
 | [Work with OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-functions/opentelemetry-howto) | configuration | 0.70 | Shows how to configure a function app to export logs and traces using OpenTelemetry semantics instead of default Application Insights SDK, involving specific configuration settings. |
-| [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container) | deployment | 0.70 | Details Functions support for containerized apps in Azure Container Apps, including hosting method nuances and feature support, which are product-specific deployment patterns. |
 | [Data persistence and serialization](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-serialization-and-persistence) | best-practices | 0.68 | Covers how Durable Functions persists state with product-specific guidance on what to serialize, when to use compression, and how to reduce storage/latency; these are concrete, runtime-specific recommendations. |
 | [Create as WebJobs](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-webjobs-sdk) | configuration | 0.66 | Shows how to configure Durable Functions in a WebJobs host, including job host settings and bindings specific to this hosting scenario. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-resource-manager) | deployment | 0.65 | Uses ARM templates to provision a Flex Consumption function app and dependencies; includes resource definitions and deployment-specific configuration. |
@@ -406,6 +419,7 @@ category_descriptions:
 | [Networking FAQ](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq) | 0.30 | Networking FAQ is likely conceptual Q&A and high-level guidance without detailed configuration tables, numeric thresholds, or error-code-based troubleshooting. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) | 0.30 | Visual Studio C# quickstart; focuses on creating and publishing a simple HTTP-triggered function. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code) | 0.30 | VS Code quickstart; primarily step-by-step creation and deployment, not a configuration or troubleshooting reference. |
+| [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container) | 0.30 | Appears to be a how-to/overview for running Azure Functions in containers within Azure Container Apps. From the summary, it does not clearly indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely a conceptual and procedural guide rather than expert-knowledge reference content. |
 | [Fan-out/fan-in](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-cloud-backup) | 0.25 | Fan-out/fan-in scenario article explains a pattern and sample backup app. No clear indication of configuration matrices, limits, or troubleshooting content in the summary. |
 | [Function chaining](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-sequence) | 0.25 | Function chaining article describes a pattern and sample. Summary does not indicate numeric limits, configuration tables, or error mappings; mainly conceptual/pattern explanation. |
 | [Monitors (C#, JavaScript)](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-monitor) | 0.25 | Monitor pattern article explains a recurring workflow pattern. Summary suggests conceptual pattern usage rather than detailed configuration or limits. |

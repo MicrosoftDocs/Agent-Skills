@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 66
 - **Unclassified**: 73
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 139
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,8 @@ category_descriptions:
 | security | 5 | 3.6% |
 | troubleshooting | 9 | 6.5% |
 | *(Unclassified)* | 73 | 52.5% |
+
+## Changes
 
 ## Classified Pages
 

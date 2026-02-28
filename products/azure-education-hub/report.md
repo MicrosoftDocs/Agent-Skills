@@ -16,6 +16,13 @@ category_descriptions:
 - **Classified**: 3
 - **Unclassified**: 8
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 11
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-education-hub/azure-education-hub.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -23,6 +30,8 @@ category_descriptions:
 | limits-quotas | 2 | 18.2% |
 | troubleshooting | 1 | 9.1% |
 | *(Unclassified)* | 8 | 72.7% |
+
+## Changes
 
 ## Classified Pages
 

@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 29
 - **Unclassified**: 33
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 62
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | security | 3 | 4.8% |
 | troubleshooting | 6 | 9.7% |
 | *(Unclassified)* | 33 | 53.2% |
+
+## Changes
 
 ## Classified Pages
 

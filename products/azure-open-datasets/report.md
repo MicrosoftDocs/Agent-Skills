@@ -15,12 +15,21 @@ category_descriptions:
 - **Classified**: 1
 - **Unclassified**: 43
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 44
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-open-datasets/azure-open-datasets.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | limits-quotas | 1 | 2.3% |
 | *(Unclassified)* | 43 | 97.7% |
+
+## Changes
 
 ## Classified Pages
 

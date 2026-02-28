@@ -1,14 +1,14 @@
 ---
 name: azure-anomaly-detector
-description: Expert knowledge for Azure Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure Anomaly Detector applications.
+description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Anomaly Detector applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Anomaly Detector Skill
+# Azure AI Anomaly Detector Skill
 
-This skill provides expert guidance for Azure Anomaly Detector. Covers troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure AI Anomaly Detector. Covers troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

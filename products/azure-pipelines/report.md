@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 510
 - **Unclassified**: 56
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 566
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 41 | 7.2% |
 | troubleshooting | 7 | 1.2% |
 | *(Unclassified)* | 56 | 9.9% |
+
+## Changes
 
 ## Classified Pages
 

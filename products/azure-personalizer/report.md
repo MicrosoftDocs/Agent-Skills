@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 12
 - **Unclassified**: 23
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 35
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-personalizer/azure-personalizer.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | security | 2 | 5.7% |
 | troubleshooting | 1 | 2.9% |
 | *(Unclassified)* | 23 | 65.7% |
+
+## Changes
 
 ## Classified Pages
 

@@ -27,6 +27,13 @@ category_descriptions:
 - **Classified**: 13
 - **Unclassified**: 2
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 15
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-table-storage/azure-table-storage.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -38,6 +45,8 @@ category_descriptions:
 | limits-quotas | 1 | 6.7% |
 | security | 2 | 13.3% |
 | *(Unclassified)* | 2 | 13.3% |
+
+## Changes
 
 ## Classified Pages
 

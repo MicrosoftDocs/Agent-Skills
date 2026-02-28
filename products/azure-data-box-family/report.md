@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 48
 - **Unclassified**: 31
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 79
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | security | 6 | 7.6% |
 | troubleshooting | 13 | 16.5% |
 | *(Unclassified)* | 31 | 39.2% |
+
+## Changes
 
 ## Classified Pages
 

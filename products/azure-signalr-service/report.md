@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 60
 - **Unclassified**: 13
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 73
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-signalr-service/azure-signalr-service.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -50,6 +57,8 @@ category_descriptions:
 | security | 18 | 24.7% |
 | troubleshooting | 5 | 6.8% |
 | *(Unclassified)* | 13 | 17.8% |
+
+## Changes
 
 ## Classified Pages
 

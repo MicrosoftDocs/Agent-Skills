@@ -1,14 +1,14 @@
 ---
 name: azure-external-attack-surface-management
-description: Expert knowledge for Azure External Attack Surface Management development including limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure External Attack Surface Management applications.
+description: Expert knowledge for External Attack Surface Management development including limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing External Attack Surface Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure External Attack Surface Management Skill
+# External Attack Surface Management Skill
 
-This skill provides expert guidance for Azure External Attack Surface Management. Covers limits & quotas, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for External Attack Surface Management. Covers limits & quotas, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

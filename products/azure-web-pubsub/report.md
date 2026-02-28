@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 81
 - **Unclassified**: 30
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 111
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -50,6 +57,8 @@ category_descriptions:
 | security | 25 | 22.5% |
 | troubleshooting | 6 | 5.4% |
 | *(Unclassified)* | 30 | 27.0% |
+
+## Changes
 
 ## Classified Pages
 

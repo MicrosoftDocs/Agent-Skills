@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 34
 - **Unclassified**: 8
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 42
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | security | 10 | 23.8% |
 | troubleshooting | 2 | 4.8% |
 | *(Unclassified)* | 8 | 19.0% |
+
+## Changes
 
 ## Classified Pages
 

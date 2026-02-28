@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 19
 - **Unclassified**: 6
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 25
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-science-vm/azure-data-science-vm.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -42,6 +49,8 @@ category_descriptions:
 | security | 2 | 8.0% |
 | troubleshooting | 1 | 4.0% |
 | *(Unclassified)* | 6 | 24.0% |
+
+## Changes
 
 ## Classified Pages
 

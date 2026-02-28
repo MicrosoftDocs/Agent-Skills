@@ -22,6 +22,13 @@ category_descriptions:
 - **Classified**: 16
 - **Unclassified**: 5
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 21
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-information-protection/azure-information-protection.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -31,6 +38,8 @@ category_descriptions:
 | decision-making | 1 | 4.8% |
 | deployment | 12 | 57.1% |
 | *(Unclassified)* | 5 | 23.8% |
+
+## Changes
 
 ## Classified Pages
 

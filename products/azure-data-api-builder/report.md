@@ -34,6 +34,13 @@ category_descriptions:
 - **Classified**: 83
 - **Unclassified**: 26
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 109
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -47,6 +54,8 @@ category_descriptions:
 | security | 8 | 7.3% |
 | troubleshooting | 1 | 0.9% |
 | *(Unclassified)* | 26 | 23.9% |
+
+## Changes
 
 ## Classified Pages
 

@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 8
 - **Unclassified**: 11
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 19
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -32,6 +39,8 @@ category_descriptions:
 | integrations | 3 | 15.8% |
 | security | 2 | 10.5% |
 | *(Unclassified)* | 11 | 57.9% |
+
+## Changes
 
 ## Classified Pages
 

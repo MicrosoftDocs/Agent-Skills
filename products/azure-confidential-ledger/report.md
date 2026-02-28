@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 19
 - **Unclassified**: 10
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 29
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -32,6 +39,8 @@ category_descriptions:
 | integrations | 8 | 27.6% |
 | security | 8 | 27.6% |
 | *(Unclassified)* | 10 | 34.5% |
+
+## Changes
 
 ## Classified Pages
 

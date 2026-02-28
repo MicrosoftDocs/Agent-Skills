@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 258
 - **Unclassified**: 31
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 289
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 13 | 4.5% |
 | troubleshooting | 3 | 1.0% |
 | *(Unclassified)* | 31 | 10.7% |
+
+## Changes
 
 ## Classified Pages
 

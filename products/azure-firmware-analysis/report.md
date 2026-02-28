@@ -26,6 +26,13 @@ category_descriptions:
 - **Classified**: 11
 - **Unclassified**: 2
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 13
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -36,6 +43,8 @@ category_descriptions:
 | security | 2 | 15.4% |
 | troubleshooting | 1 | 7.7% |
 | *(Unclassified)* | 2 | 15.4% |
+
+## Changes
 
 ## Classified Pages
 

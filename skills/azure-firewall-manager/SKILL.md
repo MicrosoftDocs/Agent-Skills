@@ -1,14 +1,14 @@
 ---
 name: azure-firewall-manager
-description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when building, debugging, or optimizing Azure Firewall Manager applications.
+description: Expert knowledge for Firewall Manager development including best practices, decision making, security, and configuration. Use when building, debugging, or optimizing Firewall Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Firewall Manager Skill
+# Firewall Manager Skill
 
-This skill provides expert guidance for Azure Firewall Manager. Covers best practices, decision making, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Firewall Manager. Covers best practices, decision making, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

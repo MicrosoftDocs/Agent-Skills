@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 240
 - **Unclassified**: 153
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 393
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 39 | 9.9% |
 | troubleshooting | 27 | 6.9% |
 | *(Unclassified)* | 153 | 38.9% |
+
+## Changes
 
 ## Classified Pages
 

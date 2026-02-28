@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 84
 - **Unclassified**: 30
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 114
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 15 | 13.2% |
 | troubleshooting | 3 | 2.6% |
 | *(Unclassified)* | 30 | 26.3% |
+
+## Changes
 
 ## Classified Pages
 

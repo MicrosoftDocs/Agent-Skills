@@ -1,14 +1,14 @@
 ---
 name: azure-analysis-services
-description: Expert knowledge for Azure Analysis Services development including troubleshooting. Use when building, debugging, or optimizing Azure Analysis Services applications.
+description: Expert knowledge for Analysis Services development including troubleshooting. Use when building, debugging, or optimizing Analysis Services applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Analysis Services Skill
+# Analysis Services Skill
 
-This skill provides expert guidance for Azure Analysis Services. Covers troubleshooting. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Analysis Services. Covers troubleshooting. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

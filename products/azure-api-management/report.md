@@ -1,9 +1,9 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions:
-  integrations: Patterns and samples for integrating API Management with LLMs, MCP,
-    GraphQL, OAuth, logging/monitoring, Event Hubs/Service Bus, and importing/exporting
-    APIs from many backends.
+  integrations: Patterns and samples for integrating API Management with AI/LLM backends,
+    OAuth, GraphQL, MCP, logging/monitoring, Event Grid/Hubs, Service Bus, and importing/exporting
+    APIs.
   limits-quotas: 'Limits, quotas, and validation in API Management: rate limiting,
     per-key quotas, OpenAI/LLM token limits, protocol format restrictions, WSDL/REST
     conversion, WebSocket limits, and validate-* policies.'
@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 229
 - **Unclassified**: 47
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 273
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,17 @@ category_descriptions:
 | security | 39 | 14.1% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 47 | 17.0% |
+
+## Changes
+
+### Updated Pages
+
+- [Import language model API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-llm-api)
+  - Updated: 2025-07-08T05:11:00.000Z → 2026-02-28T06:12:00.000Z
+- [Import Google Gemini API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-google-gemini-api)
+  - Updated: 2025-07-08T05:11:00.000Z → 2026-02-28T06:12:00.000Z
+- [Import Amazon Bedrock API](https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api)
+  - Updated: 2025-07-09T17:43:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 
@@ -216,15 +234,15 @@ category_descriptions:
 | [Extend portal with custom functionality](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-extend-custom-functionality) | configuration | 0.70 | Covers adding custom widgets and functionality; likely includes specific extension points, configuration options, and code patterns unique to the APIM portal. |
 | [Git configuration retirement (March 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/git-configuration-retirement-march-2025) | decision-making | 0.70 | Details retirement date for built-in Git configuration and recommends alternative solutions (APIOps, own Git), guiding configuration management strategy decisions. |
 | [Handle errors in policies](https://learn.microsoft.com/en-us/azure/api-management/api-management-error-handling-policies) | troubleshooting | 0.70 | Reference for ProxyError and context.LastError usage; maps error conditions to policy-based responses, a product-specific error-handling mechanism. |
-| [Import Amazon Bedrock API](https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api) | integrations | 0.70 | Shows how to import Amazon Bedrock APIs; includes provider-specific endpoint and configuration details for this integration. |
+| [Import Amazon Bedrock API](https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api) | integrations | 0.70 | The article covers importing Amazon Bedrock LLM APIs as passthrough APIs in Azure API Management, using AI gateway policies. This is a cross-cloud, product-specific integration scenario with concrete API and configuration patterns that go beyond generic knowledge. |
 | [Import Azure OpenAI API](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-api-from-specification) | integrations | 0.70 | Shows two concrete methods to import Azure OpenAI APIs; involves specific configuration values, endpoints, and parameters for this product integration. |
-| [Import Google Gemini API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-google-gemini-api) | integrations | 0.70 | Integration guide for Google Gemini via OpenAI-compatible endpoints; requires specific endpoint formats, parameters, and configuration steps unique to this scenario. |
+| [Import Google Gemini API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-google-gemini-api) | integrations | 0.70 | The page focuses on importing an OpenAI-compatible Google Gemini API and managing a chat completions endpoint in Azure API Management. This implies specific configuration and endpoint details for Gemini models exposed via OpenAI-compatible semantics, which are product- and provider-specific integration patterns. |
 | [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api) | integrations | 0.70 | How-to for importing Foundry APIs; likely includes specific configuration fields, endpoint formats, and parameters unique to this integration. |
 | [Import a SOAP API and convert to REST](https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api) | limits-quotas | 0.70 | Includes the same specific WSDL import restrictions as the SOAP import article, which are product-specific format limits. |
 | [Import a Simple Object Access Protocol (SOAP) API](https://learn.microsoft.com/en-us/azure/api-management/import-soap-api) | limits-quotas | 0.70 | Documents concrete WSDL import restrictions (unsupported directives) which are precise format limits for the product. |
 | [Import a WebSocket API](https://learn.microsoft.com/en-us/azure/api-management/websocket-api) | limits-quotas | 0.70 | WebSocket article explicitly mentions WebSocket limitations per tier; typically includes concrete constraints (message size, connection limits, protocol support) that qualify as limits-quotas. |
 | [Import agent-to-agent (A2A) API](https://learn.microsoft.com/en-us/azure/api-management/agent-to-agent-api) | integrations | 0.70 | Covers A2A protocol–compatible agent APIs; includes protocol-specific configuration, endpoints, and parameters unique to this integration. |
-| [Import language model API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-llm-api) | integrations | 0.70 | Covers importing OpenAI-compatible and non-compatible language model endpoints; includes product-specific configuration patterns and parameters for passthrough APIs. |
+| [Import language model API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-llm-api) | integrations | 0.70 | The article describes how to import OpenAI-compatible and non-compatible LLM endpoints as REST APIs in Azure API Management, which typically includes product-specific endpoint shapes, request/response schemas, and configuration details unique to API Management’s AI gateway policies. This is concrete integration guidance rather than a conceptual overview. |
 | [Integrate Application Gateway in internal virtual network](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-integrate-internal-vnet-appgateway) | architecture-patterns | 0.70 | Describes a concrete architecture pattern combining internal-mode API Management with Application Gateway/WAF, including configuration and traffic flow trade-offs. |
 | [Integrate Application Insights](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-integrate-application-insights) | configuration | 0.70 | Describes concrete steps and settings to integrate Application Insights with the managed/self-hosted developer portal; includes product-specific configuration rather than generic monitoring concepts. |
 | [Integrate Google Tag Manager](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-integrate-google-tag-manager) | configuration | 0.70 | Provides specific configuration steps and fields to plug GTM into the developer portal; product-specific integration configuration beyond generic GTM usage. |

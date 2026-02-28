@@ -25,6 +25,13 @@ category_descriptions:
 - **Classified**: 16
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 25
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-share/azure-data-share.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +42,8 @@ category_descriptions:
 | security | 3 | 12.0% |
 | troubleshooting | 1 | 4.0% |
 | *(Unclassified)* | 9 | 36.0% |
+
+## Changes
 
 ## Classified Pages
 

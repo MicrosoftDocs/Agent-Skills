@@ -21,6 +21,13 @@ category_descriptions:
 - **Classified**: 7
 - **Unclassified**: 13
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 20
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resiliency/azure-resiliency.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -29,6 +36,8 @@ category_descriptions:
 | limits-quotas | 1 | 5.0% |
 | security | 2 | 10.0% |
 | *(Unclassified)* | 13 | 65.0% |
+
+## Changes
 
 ## Classified Pages
 

@@ -20,6 +20,13 @@ category_descriptions:
 - **Classified**: 3
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 10
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-large-instances/azure-large-instances.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -28,6 +35,8 @@ category_descriptions:
 | limits-quotas | 1 | 10.0% |
 | troubleshooting | 1 | 10.0% |
 | *(Unclassified)* | 7 | 70.0% |
+
+## Changes
 
 ## Classified Pages
 

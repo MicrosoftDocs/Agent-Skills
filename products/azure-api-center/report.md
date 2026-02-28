@@ -4,11 +4,11 @@ category_descriptions:
   security: Configuring API key and OAuth2 security for APIs in API Center, and managing
     who can access the API Center portal via the VS Code extension.
   configuration: 'Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI,
-    portal customization, metadata schemas, linting (managed/self-managed), MCP/A2A
-    integration, and inventory management.'
-  integrations: Patterns and step-by-step guides to sync/import APIs between API Center
-    and API Management, Amazon API Gateway, and to export APIs as Copilot Studio connectors
-    or automate status alerts.
+    portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup,
+    and inventory management.'
+  integrations: Patterns and tools for integrating API Center with Azure API Management,
+    Amazon API Gateway, Copilot Studio, and automating sync/notifications via Logic
+    Apps and Teams.
   best-practices: Best practices for enforcing API governance early in development
     using the Azure API Center VS Code extension, including policy checks, linting,
     and design-time validation.
@@ -25,6 +25,13 @@ category_descriptions:
 - **Classified**: 21
 - **Unclassified**: 13
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 32
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -36,12 +43,20 @@ category_descriptions:
 | security | 2 | 5.9% |
 | *(Unclassified)* | 13 | 38.2% |
 
+## Changes
+
+### Updated Pages
+
+- [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting)
+  - Updated: 2024-12-03T08:00:00.000Z → 2026-02-28T06:12:00.000Z
+- [Workflow automation to set API status](https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow)
+  - Updated: 2024-10-20T23:16:00.000Z → 2026-02-28T06:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access) | security | 0.80 | Covers API access settings, likely including OAuth2 configuration, scopes, and how they map to API Center; clearly security-focused. |
-| [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | configuration | 0.75 | Explains how to set up a custom linting engine and triggers, including specific configuration parameters and dependencies. |
 | [API analysis - Microsoft managed](https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting) | configuration | 0.70 | Describes built-in linting engine behavior, configuration toggles, and how to enable/disable managed vs self-managed analysis. |
 | [Create an API center - ARM template](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-arm-template) | configuration | 0.70 | ARM template example exposes the schema for the API Center resource, including property names and allowed configurations. |
 | [Create an API center - Bicep](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-bicep) | configuration | 0.70 | Bicep quickstart will define resource types, properties, and allowed values for API Center, which are product-specific configuration details. |
@@ -54,12 +69,13 @@ category_descriptions:
 | [Synchronize APIs from API Management](https://learn.microsoft.com/en-us/azure/api-center/synchronize-api-management-apis) | integrations | 0.70 | Describes continuous sync integration, likely including configuration fields and options unique to this product pairing. |
 | [Synchronize APIs from Amazon API Gateway](https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis) | integrations | 0.70 | Covers cross-cloud integration with Amazon API Gateway, including specific configuration steps and parameters. |
 | [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata) | configuration | 0.70 | Goes beyond concepts to describe built-in vs custom metadata, schema structure, and how to enforce consistency—product-specific configuration behavior. |
-| [Workflow automation to set API status](https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow) | integrations | 0.70 | Provides a concrete integration pattern between API Center, Logic Apps, and Teams with specific workflow configuration. |
+| [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | configuration | 0.68 | The article describes how to enable and configure an API linting engine and triggers in Azure API Center, including automated deployment via Azure Developer CLI and event subscriptions. This implies product-specific configuration steps and parameters (linting engine setup, trigger configuration, event subscription details) rather than just conceptual guidance, fitting the configuration sub-skill. |
 | [1 - Define custom metadata](https://learn.microsoft.com/en-us/azure/api-center/tutorials/add-metadata-properties) | configuration | 0.65 | Describes concrete metadata properties, types, and how to configure them for governance; product-specific configuration behavior. |
 | [Create an API center - CLI](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-azure-cli) | configuration | 0.65 | CLI-based resource creation typically documents specific az apic parameters, flags, and required values unique to this service. |
 | [Register APIs - GitHub Actions](https://learn.microsoft.com/en-us/azure/api-center/register-apis-github-actions) | deployment | 0.65 | Defines a CI/CD workflow YAML with specific actions, inputs, and constraints for registering APIs, which is product-specific deployment automation. |
 | [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server) | configuration | 0.65 | Describes how to register MCP servers with specific fields and options, plus discovery behavior unique to this feature. |
 | [Register and manage agents](https://learn.microsoft.com/en-us/azure/api-center/register-manage-agents) | configuration | 0.65 | Covers concrete agent metadata, skills, capabilities, and provider configuration fields specific to the agent registry. |
+| [Workflow automation to set API status](https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow) | integrations | 0.65 | The page walks through setting up an automated notification workflow that integrates Azure API Center events with Azure Logic Apps and Microsoft Teams. This is a concrete integration pattern with product-specific wiring between services (event triggers from API Center, Logic Apps workflow, Teams notifications), which aligns best with the integrations sub-skill rather than generic tutorial content. |
 | [Govern APIs - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/govern-apis-vscode-extension) | best-practices | 0.60 | Focuses on governance capabilities and how to use them effectively in development; likely includes product-specific recommendations and patterns. |
 
 ## Unclassified Pages

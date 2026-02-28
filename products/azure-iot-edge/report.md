@@ -1,12 +1,12 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions:
-  configuration: 'Configuring IoT Edge and EFLOW: device settings, networking (NICs,
-    proxies, gateways, nested), storage, GPU, security/provisioning, metrics/monitoring,
-    and module deployment options.'
-  security: 'Security, auth, and certificate setup for IoT Edge: provisioning with
-    keys/X.509/TPM, gateway auth, confidential computing modules, EST, and securing
-    traffic with Private Link.'
+  configuration: 'Configuring IoT Edge and EFLOW devices/modules: networking, gateways,
+    provisioning (DPS, keys, TPM, X.509), storage, GPU, metrics/monitoring, proxies,
+    and deployment options.'
+  security: 'Securing IoT Edge: device provisioning (symmetric keys, X.509, vTPM),
+    certificate creation/management/EST, confidential computing modules, auth for
+    downstream devices, and Private Link traffic protection.'
   decision-making: Guidance on choosing IoT Edge platforms, provisioning methods,
     EFLOW networking, and nested virtualization options, with configuration details
     for each deployment scenario.
@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 66
 - **Unclassified**: 32
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 7
+- **Unchanged**: 91
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,25 @@ category_descriptions:
 | security | 13 | 13.3% |
 | troubleshooting | 7 | 7.1% |
 | *(Unclassified)* | 32 | 32.7% |
+
+## Changes
+
+### Updated Pages
+
+- [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows)
+  - Updated: 2025-07-22T08:00:00.000Z → 2026-02-27T08:00:00.000Z
+- [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module)
+  - Updated: 2026-02-20T08:00:00.000Z → 2026-02-27T08:00:00.000Z
+- [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge)
+  - Updated: 2025-07-12T05:10:00.000Z → 2026-02-27T08:00:00.000Z
+- [Configure a transparent gateway](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway)
+  - Updated: 2025-06-05T22:05:00.000Z → 2026-02-27T08:00:00.000Z
+- [Authenticate a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device)
+  - Updated: 2025-05-28T05:33:00.000Z → 2026-02-27T08:00:00.000Z
+- [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device)
+  - Updated: 2025-06-06T17:04:00.000Z → 2026-02-27T08:00:00.000Z
+- [Configure gateways for IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device)
+  - Updated: 2025-08-18T08:00:00.000Z → 2026-02-27T08:00:00.000Z
 
 ## Classified Pages
 
@@ -90,15 +116,15 @@ category_descriptions:
 | [Virtual switch](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-virtual-switch) | configuration | 0.75 | Covers how to create the required Hyper-V virtual switch for EFLOW, especially on Windows Server, with specific commands and configuration values unique to this scenario. |
 | [X.509 certificate attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-x509) | security | 0.75 | Autoprovisioning with DPS and X.509 certificates; security-focused, with product-specific flows and parameters. |
 | [Access built-in metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-built-in-metrics) | configuration | 0.70 | Details Prometheus-format metrics exposed by $edgeHub and $edgeAgent and how to access them; likely includes metric names and endpoint configuration specifics that are product-specific. |
-| [Authenticate a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device) | security | 0.70 | Explains authentication options (X.509, symmetric keys, etc.) and how to declare gateway connections; includes IoT Hub identity configuration and gateway-related security settings. |
+| [Authenticate a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device) | security | 0.70 | Describes concrete options and parameters for authenticating downstream devices to IoT Hub via an IoT Edge gateway (for example, identity setup in IoT Hub, auth methods, and gateway declaration). This is product-specific security and identity configuration rather than conceptual security guidance. |
 | [Collect and transport metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-collect-and-transport-metrics) | configuration | 0.70 | Explains how to add and configure the metrics-collector module, including module settings and parameters for Azure Monitor integration; these are product-specific configuration options. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/iot-edge/deploy-confidential-applications) | security | 0.70 | Describes using Open Enclave and secure enclaves with IoT Edge, including confidential application deployment patterns. |
 | [Configure EST server](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-configure-est-server) | security | 0.70 | Product-specific security configuration for EST, including certificate handling and enrollment details. |
-| [Configure a transparent gateway](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway) | configuration | 0.70 | Detailed instructions to configure an IoT Edge device as a transparent gateway; includes gateway-specific settings, certificates, and routing configuration unique to IoT Edge. |
-| [Configure gateways for IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device) | configuration | 0.70 | Describes how to set up nested edge (gateway plus downstream IoT Edge devices); includes hierarchy-specific configuration, trust relationships, and settings unique to IoT Edge. |
+| [Configure a transparent gateway](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway) | configuration | 0.70 | Step-by-step configuration of an IoT Edge device as a transparent gateway, including product-specific settings (gateway mode, certificates, connection strings, and IoT Edge runtime configuration). These are concrete configuration details unique to Azure IoT Edge rather than generic concepts. |
+| [Configure gateways for IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device) | configuration | 0.70 | Explains how to set up a trusted connection between an IoT Edge gateway and downstream IoT Edge devices in a nested hierarchy, including product-specific configuration of certificates, identities, and gateway relationships. This is concrete configuration guidance rather than conceptual architecture only. |
 | [Configure nested virtualization for Windows VMs](https://learn.microsoft.com/en-us/azure/iot-edge/nested-virtualization) | decision-making | 0.70 | Compares three nested virtualization deployment options (local Hyper-V, VMware, Azure VM) and provides guidance on which to choose for different scenarios, which is product-specific decision-making content. |
 | [Configure, connect, and verify a GPU](https://learn.microsoft.com/en-us/azure/iot-edge/configure-connect-verify-gpu) | configuration | 0.70 | Covers environment and device configuration to attach GPUs to IoT Edge modules, including product-specific settings. |
-| [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device) | configuration | 0.70 | Covers trusted connection setup between downstream devices and transparent gateways; includes device-side configuration parameters (connection strings, certificates, endpoints) specific to IoT Edge. |
+| [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device) | configuration | 0.70 | Covers detailed configuration steps and parameters to establish a trusted connection between downstream devices and an IoT Edge transparent gateway (cert trust, connection strings, gateway hostname, and client settings). These are specific configuration patterns unique to Azure IoT Edge. |
 | [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module) | configuration | 0.70 | Uses environment variables and create options to mount host storage into modules; contains IoT Edge–specific configuration names and patterns for storage access. |
 | [IoT Edge device as a gateway](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) | architecture-patterns | 0.70 | Describes transparent, opaque, and proxy gateway patterns specific to IoT Edge and when to use each. |
 | [Run IoT Edge on Kubernetes](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-kubernetes) | deployment | 0.70 | Product-specific deployment method using KubeVirt and Kubernetes, including environment and runtime constraints. |
@@ -137,8 +163,6 @@ category_descriptions:
 | [IoT Edge security manager](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-security-manager) | 0.45 | Conceptual description of security manager and module runtime; lacks concrete configuration or role mappings. |
 | [Securing Azure IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/security) | 0.45 | Security framework overview; high-level standards and concepts without detailed role names or config parameters. |
 | [Updates](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-updates) | 0.45 | Explains how to update EFLOW; mostly procedural update steps without detailed configuration matrices or constraints. |
-| [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows) | 0.40 | Tutorial on creating a nested IoT Edge hierarchy; mostly procedural and conceptual without detailed configuration tables, limits, or decision matrices that would qualify as expert knowledge per the defined categories. |
-| [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge) | 0.40 | Nested edge tutorial; describes hierarchy and setup but not as a structured decision matrix or config catalog. |
 | [Deploy IoT Edge VM using a Bicep file](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-ubuntuvm-bicep) | 0.40 | Step-by-step Bicep deployment tutorial for IoT Edge on Ubuntu VMs; likely shows commands and example parameters but not organized configuration tables, limits, or product-specific troubleshooting mappings. |
 | [Deploy IoT Edge VM using an ARM template](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-ubuntuvm) | 0.40 | How-to guide for installing IoT Edge on Ubuntu VMs; mostly procedural setup steps and generic commands rather than structured configuration references or expert-only constraints. |
 | [Deploy to a Windows device](https://learn.microsoft.com/en-us/azure/iot-edge/quickstart) | 0.40 | Quickstart tutorial for creating an IoT Edge device and deploying prebuilt code; step-by-step but not a configuration or troubleshooting reference. |
@@ -151,7 +175,6 @@ category_descriptions:
 | [Monitor module twins](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-module-twins) | 0.40 | Explains how to interpret module twins for health; primarily conceptual and interpretive, not a structured configuration or troubleshooting reference with codes and mappings. |
 | [Classify images with Custom Vision](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision) | 0.35 | Custom Vision image classification tutorial; integration example but not a parameter/limits reference. |
 | [Deploy a Stream Analytics module](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-stream-analytics) | 0.35 | Tutorial for deploying Stream Analytics as a module; step-by-step, no structured expert reference content. |
-| [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module) | 0.35 | Visual Studio development tutorial; mainly step-by-step guidance without structured config or error mappings. |
 | [Filter data with Azure Functions](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-function) | 0.35 | Tutorial for deploying Azure Functions as modules; scenario-focused, not a reference of configs or limits. |
 | [Understand Azure IoT Edge modules](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-modules) | 0.35 | Conceptual explanation of modules and how they run; not a structured config or limits reference. |
 | [About EFLOW](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows) | 0.30 | High-level overview of IoT Edge for Linux on Windows; mostly conceptual and marketing-style explanation of what EFLOW is. |
@@ -160,3 +183,6 @@ category_descriptions:
 | [Develop modules using VS Code](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux) | 0.30 | Tutorial for developing modules with VS Code; focuses on workflow, not on reusable configuration tables or limits. |
 | [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history) | 0.30 | Release history and lifecycle info; mostly dates and version notes, not reusable expert configuration or limits. |
 | [About Azure IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/about-iot-edge) | 0.20 | High-level 'what is' overview of Azure IoT Edge; no detailed limits, configs, or product-specific patterns. |
+| [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows) | 0.20 | Tutorial-style guidance for setting up a nested hierarchy of IoT Edge for Linux on Windows devices; based on the summary, it focuses on step-by-step configuration and conceptual hierarchy (gateway layers, top layer connectivity) without exposing detailed limits/quotas, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It reads as a how-to tutorial rather than a reference of expert-only details. |
+| [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge) | 0.20 | Tutorial on creating a nested hierarchy of IoT Edge devices. From the summary, it focuses on conceptual explanation and guided setup of hierarchical layers, without clear evidence of limits/quotas, decision matrices, security role tables, or other expert-knowledge-style configuration or troubleshooting content. |
+| [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module) | 0.20 | Primarily a step-by-step tutorial for developing and debugging IoT Edge modules in Visual Studio. The summary does not indicate presence of configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact; it appears to be procedural how-to content. |

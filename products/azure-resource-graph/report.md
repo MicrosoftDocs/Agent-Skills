@@ -28,6 +28,13 @@ category_descriptions:
 - **Classified**: 21
 - **Unclassified**: 12
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -39,6 +46,8 @@ category_descriptions:
 | limits-quotas | 4 | 12.1% |
 | troubleshooting | 3 | 9.1% |
 | *(Unclassified)* | 12 | 36.4% |
+
+## Changes
 
 ## Classified Pages
 

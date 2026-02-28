@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 18
 - **Unclassified**: 10
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 28
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | security | 2 | 7.1% |
 | troubleshooting | 1 | 3.6% |
 | *(Unclassified)* | 10 | 35.7% |
+
+## Changes
 
 ## Classified Pages
 

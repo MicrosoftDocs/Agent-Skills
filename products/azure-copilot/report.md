@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 20
 - **Unclassified**: 18
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 38
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -41,6 +48,8 @@ category_descriptions:
 | security | 5 | 13.2% |
 | troubleshooting | 2 | 5.3% |
 | *(Unclassified)* | 18 | 47.4% |
+
+## Changes
 
 ## Classified Pages
 

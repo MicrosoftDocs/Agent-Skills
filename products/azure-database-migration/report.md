@@ -28,6 +28,13 @@ category_descriptions:
 - **Classified**: 15
 - **Unclassified**: 16
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 31
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-migration/azure-database-migration.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -39,6 +46,8 @@ category_descriptions:
 | security | 2 | 6.5% |
 | troubleshooting | 2 | 6.5% |
 | *(Unclassified)* | 16 | 51.6% |
+
+## Changes
 
 ## Classified Pages
 

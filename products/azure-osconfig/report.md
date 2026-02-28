@@ -22,6 +22,13 @@ category_descriptions:
 - **Classified**: 15
 - **Unclassified**: 14
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 29
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -31,6 +38,8 @@ category_descriptions:
 | security | 2 | 6.9% |
 | troubleshooting | 1 | 3.4% |
 | *(Unclassified)* | 14 | 48.3% |
+
+## Changes
 
 ## Classified Pages
 

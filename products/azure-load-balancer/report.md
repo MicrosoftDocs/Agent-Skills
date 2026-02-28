@@ -35,6 +35,13 @@ category_descriptions:
 - **Classified**: 48
 - **Unclassified**: 46
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 94
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -49,6 +56,8 @@ category_descriptions:
 | security | 2 | 2.1% |
 | troubleshooting | 12 | 12.8% |
 | *(Unclassified)* | 46 | 48.9% |
+
+## Changes
 
 ## Classified Pages
 

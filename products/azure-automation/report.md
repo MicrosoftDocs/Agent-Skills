@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 92
 - **Unclassified**: 23
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 115
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -49,6 +56,8 @@ category_descriptions:
 | security | 17 | 14.8% |
 | troubleshooting | 7 | 6.1% |
 | *(Unclassified)* | 23 | 20.0% |
+
+## Changes
 
 ## Classified Pages
 

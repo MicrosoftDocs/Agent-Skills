@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 93
 - **Unclassified**: 29
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 19 | 15.6% |
 | troubleshooting | 6 | 4.9% |
 | *(Unclassified)* | 29 | 23.8% |
+
+## Changes
 
 ## Classified Pages
 

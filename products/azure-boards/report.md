@@ -31,6 +31,13 @@ category_descriptions:
 - **Classified**: 51
 - **Unclassified**: 75
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 126
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -43,6 +50,8 @@ category_descriptions:
 | security | 3 | 2.4% |
 | troubleshooting | 5 | 4.0% |
 | *(Unclassified)* | 75 | 59.5% |
+
+## Changes
 
 ## Classified Pages
 

@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 217
 - **Unclassified**: 26
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 243
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,8 @@ category_descriptions:
 | tradeoffs | 6 | 2.5% |
 | workload-patterns | 61 | 25.1% |
 | *(Unclassified)* | 26 | 10.7% |
+
+## Changes
 
 ## Classified Pages
 

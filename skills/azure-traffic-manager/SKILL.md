@@ -1,14 +1,14 @@
 ---
 name: azure-traffic-manager
-description: Expert knowledge for Azure Traffic Manager development including troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Traffic Manager applications.
+description: Expert knowledge for Traffic Manager development including troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Traffic Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Traffic Manager Skill
+# Traffic Manager Skill
 
-This skill provides expert guidance for Azure Traffic Manager. Covers troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Traffic Manager. Covers troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

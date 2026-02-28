@@ -1,14 +1,14 @@
 ---
 name: azure-cloud-shell
-description: Expert knowledge for Azure Cloud Shell development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Cloud Shell applications.
+description: Expert knowledge for Cloud Shell development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Cloud Shell applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Cloud Shell Skill
+# Cloud Shell Skill
 
-This skill provides expert guidance for Azure Cloud Shell. Covers troubleshooting, limits & quotas, and security. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Cloud Shell. Covers troubleshooting, limits & quotas, and security. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

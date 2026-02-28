@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 96
 - **Unclassified**: 60
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 156
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,8 @@ category_descriptions:
 | security | 57 | 36.5% |
 | troubleshooting | 3 | 1.9% |
 | *(Unclassified)* | 60 | 38.5% |
+
+## Changes
 
 ## Classified Pages
 

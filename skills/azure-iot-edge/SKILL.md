@@ -1,14 +1,14 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure Iot Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Iot Edge applications.
+description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Edge applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Iot Edge Skill
+# Azure IoT Edge Skill
 
-This skill provides expert guidance for Azure Iot Edge. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure IoT Edge. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -27,8 +27,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L51-L57 | Guidance on choosing IoT Edge platforms, provisioning methods, EFLOW networking, and nested virtualization options, with configuration details for each deployment scenario. |
 | Architecture & Design Patterns | L58-L63 | Gateway deployment patterns and offline/ intermittently connected operation designs for Azure IoT Edge, including topology choices, buffering, sync, and resilience strategies. |
 | Limits & Quotas | L64-L68 | Azure IoT Edge service and resource limits: max modules, routes, deployments, message sizes, throttling, and other scalability and quota constraints for edge solutions. |
-| Security | L69-L85 | Security, auth, and certificate setup for IoT Edge: provisioning with keys/X.509/TPM, gateway auth, confidential computing modules, EST, and securing traffic with Private Link. |
-| Configuration | L86-L119 | Configuring IoT Edge and EFLOW: device settings, networking (NICs, proxies, gateways, nested), storage, GPU, security/provisioning, metrics/monitoring, and module deployment options. |
+| Security | L69-L85 | Securing IoT Edge: device provisioning (symmetric keys, X.509, vTPM), certificate creation/management/EST, confidential computing modules, auth for downstream devices, and Private Link traffic protection. |
+| Configuration | L86-L119 | Configuring IoT Edge and EFLOW devices/modules: networking, gateways, provisioning (DPS, keys, TPM, X.509), storage, GPU, metrics/monitoring, proxies, and deployment options. |
 | Integrations & Coding Patterns | L120-L126 | Using IoT Edge direct methods for remote management, retrieving/uploading module and runtime logs, and building/customizing IoT Edge modules and integrations. |
 | Deployment | L127-L135 | Deploying and updating IoT Edge: supported platforms (including EFLOW), installing on Kubernetes/KubeVirt, managing automatic deployments, and setting up CI/CD pipelines for Edge modules. |
 
@@ -70,7 +70,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Deploy confidential computing applications as IoT Edge modules | https://learn.microsoft.com/en-us/azure/iot-edge/deploy-confidential-applications |
-| Configure authentication for downstream devices via IoT Edge gateway | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device |
+| Configure authentication for IoT Edge downstream devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device |
 | Create and install test certificates for Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates |
 | Install and manage certificates on Azure IoT Edge devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates |
 | Provision IoT Edge devices at scale using symmetric keys | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric |
@@ -99,11 +99,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure IoT Edge module.json build and deployment options | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-module-build-options |
 | Attach and configure multiple NICs for EFLOW VM | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-multiple-nics |
 | Configure Azure IoT Edge devices for proxy networks | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-proxy-support |
-| Configure downstream devices to connect through IoT Edge gateway | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device |
+| Configure downstream devices to connect via IoT Edge gateway | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device |
 | Configure nested Azure IoT Edge device hierarchies | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device |
 | Configure USB over IP connectivity to EFLOW VM | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-usb-devices |
 | Configure Azure Monitor log alerts for IoT Edge metrics | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-alerts |
-| Configure an Azure IoT Edge transparent gateway device | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway |
+| Configure Azure IoT Edge as a transparent gateway | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway |
 | Create and configure virtual switches for EFLOW | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-virtual-switch |
 | Configure symmetric key DPS provisioning for EFLOW | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-on-windows-symmetric |
 | Configure TPM-based DPS provisioning for EFLOW devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-on-windows-tpm |

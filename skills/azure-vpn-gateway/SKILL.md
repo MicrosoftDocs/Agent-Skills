@@ -1,14 +1,14 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure Vpn Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Vpn Gateway applications.
+description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure VPN Gateway applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Vpn Gateway Skill
+# Azure VPN Gateway Skill
 
-This skill provides expert guidance for Azure Vpn Gateway. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure VPN Gateway. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -26,7 +26,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L52-L56 | Guidance on using network virtual appliances (NVAs) in Azure as VPN endpoints for remote access, including design, routing, security, and integration with Azure VPN Gateway. |
 | Decision Making | L57-L66 | Guidance on choosing VPN Gateway SKUs, planning/migrating IPs and gateways (Classic→ARM), shifting P2S protocols (SSTP→IKEv2/OpenVPN), and designing remote work P2S VPN setups. |
 | Architecture & Design Patterns | L67-L73 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
-| Limits & Quotas | L74-L80 | VPN Gateway client version history, legacy gateway SKU behavior, and FAQs on gateway limits, throughput, connections, and other capacity/behavior constraints |
+| Limits & Quotas | L74-L80 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
 | Security | L81-L104 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
 | Configuration | L105-L161 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
 | Integrations & Coding Patterns | L162-L169 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
@@ -75,7 +75,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Reference of Azure VPN Client versions | https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-versions |
-| Work with legacy Azure VPN Gateway SKUs | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy |
+| Compare Azure VPN Gateway legacy SKUs and limits | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy |
 | Azure VPN Gateway FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq |
 
 ### Security

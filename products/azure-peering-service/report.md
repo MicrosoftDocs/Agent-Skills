@@ -15,12 +15,21 @@ category_descriptions:
 - **Classified**: 1
 - **Unclassified**: 9
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 10
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-peering-service/azure-peering-service.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 10.0% |
 | *(Unclassified)* | 9 | 90.0% |
+
+## Changes
 
 ## Classified Pages
 

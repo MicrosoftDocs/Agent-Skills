@@ -1,14 +1,14 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Files applications.
+description: Expert knowledge for Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Files applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Files Skill
+# Files Skill
 
-This skill provides expert guidance for Azure Files. Covers best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Files. Covers best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -25,7 +25,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L33-L42 | Best practices for Azure Files: performance tuning (SMB/NFS, large dirs, premium shares), DR/failover planning, and using file shares for virtual desktops and FSLogix profiles. |
 | Decision Making | L43-L59 | Guidance on choosing Azure Files vs alternatives, selecting tiers, redundancy, billing models, cost optimizations, access models, and migration approaches for SMB/NFS workloads. |
 | Limits & Quotas | L60-L66 | Limits, quotas, and performance characteristics of Azure Files, including redundancy/region support for SSD shares, scalability, IOPS/throughput caps, and FAQ behaviors. |
-| Security | L67-L89 | Securing Azure file shares: identity-based SMB/NFS auth (AD DS, Entra ID, Kerberos), share/NTFS permissions, network perimeter, encryption in transit, and disabling insecure protocols. |
+| Security | L67-L89 | Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, NDS, Kerberos), share/NTFS permissions, OAuth/keys, encryption in transit, network perimeter, and related configuration. |
 | Configuration | L90-L112 | Configuring Azure Files networking, security, redundancy, monitoring/alerts, snapshots, and mounting shares (SMB/NFS) from Linux, Windows, macOS, and via VPN or private endpoints |
 | Integrations & Coding Patterns | L113-L120 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
 | Deployment | L121-L130 | Guides for migrating on-prem/NAS/GlusterFS/SMB/NFS file shares and Linux servers to Azure Files or Azure File Sync, including tools like Storage Mover, Data Box, and Robocopy. |
@@ -67,7 +67,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Security
 | Topic | URL |
 |-------|-----|
-| Authorize Azure file share data access in portal | https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal |
+| Authorize Azure Files portal access with Entra or keys | https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal |
 | Enable OAuth-based REST access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/authorize-oauth-rest |
 | Encrypt data in transit for NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/encryption-in-transit-for-nfs-shares |
 | Use managed identities to access SMB Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities |

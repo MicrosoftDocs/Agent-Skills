@@ -28,6 +28,13 @@ category_descriptions:
 - **Classified**: 18
 - **Unclassified**: 15
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -39,6 +46,8 @@ category_descriptions:
 | security | 1 | 3.0% |
 | troubleshooting | 1 | 3.0% |
 | *(Unclassified)* | 15 | 45.5% |
+
+## Changes
 
 ## Classified Pages
 

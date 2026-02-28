@@ -29,6 +29,13 @@ category_descriptions:
 - **Classified**: 26
 - **Unclassified**: 51
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 77
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-industry/azure-industry.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -40,6 +47,8 @@ category_descriptions:
 | security | 10 | 13.0% |
 | troubleshooting | 1 | 1.3% |
 | *(Unclassified)* | 51 | 66.2% |
+
+## Changes
 
 ## Classified Pages
 

@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 285
 - **Unclassified**: 40
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 325
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -49,6 +56,8 @@ category_descriptions:
 | security | 49 | 15.1% |
 | troubleshooting | 1 | 0.3% |
 | *(Unclassified)* | 40 | 12.3% |
+
+## Changes
 
 ## Classified Pages
 

@@ -1,14 +1,14 @@
 ---
 name: azure-information-protection
-description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when building, debugging, or optimizing Azure Information Protection applications.
+description: Expert knowledge for Information Protection development including best practices, decision making, configuration, and deployment. Use when building, debugging, or optimizing Information Protection applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Information Protection Skill
+# Information Protection Skill
 
-This skill provides expert guidance for Azure Information Protection. Covers best practices, decision making, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Information Protection. Covers best practices, decision making, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

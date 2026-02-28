@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 25
 - **Unclassified**: 16
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 41
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,8 @@ category_descriptions:
 | security | 2 | 4.9% |
 | troubleshooting | 1 | 2.4% |
 | *(Unclassified)* | 16 | 39.0% |
+
+## Changes
 
 ## Classified Pages
 

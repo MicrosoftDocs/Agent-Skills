@@ -23,6 +23,13 @@ category_descriptions:
 - **Classified**: 11
 - **Unclassified**: 16
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 27
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-relay/azure-relay.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -32,6 +39,8 @@ category_descriptions:
 | security | 6 | 22.2% |
 | troubleshooting | 1 | 3.7% |
 | *(Unclassified)* | 16 | 59.3% |
+
+## Changes
 
 ## Classified Pages
 

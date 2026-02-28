@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 241
 - **Unclassified**: 72
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 313
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 39 | 12.5% |
 | troubleshooting | 23 | 7.3% |
 | *(Unclassified)* | 72 | 23.0% |
+
+## Changes
 
 ## Classified Pages
 

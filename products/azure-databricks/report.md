@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 2952
 - **Unclassified**: 1390
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 4342
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-databricks/azure-databricks.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 353 | 8.1% |
 | troubleshooting | 84 | 1.9% |
 | *(Unclassified)* | 1390 | 32.0% |
+
+## Changes
 
 ## Classified Pages
 

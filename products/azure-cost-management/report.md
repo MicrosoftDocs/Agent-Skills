@@ -36,6 +36,13 @@ category_descriptions:
 - **Classified**: 194
 - **Unclassified**: 70
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 264
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -49,6 +56,8 @@ category_descriptions:
 | security | 17 | 6.4% |
 | troubleshooting | 26 | 9.8% |
 | *(Unclassified)* | 70 | 26.5% |
+
+## Changes
 
 ## Classified Pages
 

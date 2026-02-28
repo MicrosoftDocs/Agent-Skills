@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 44
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 64
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -42,6 +49,8 @@ category_descriptions:
 | security | 8 | 12.5% |
 | troubleshooting | 5 | 7.8% |
 | *(Unclassified)* | 20 | 31.2% |
+
+## Changes
 
 ## Classified Pages
 

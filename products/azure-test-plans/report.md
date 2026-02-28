@@ -20,6 +20,13 @@ category_descriptions:
 - **Classified**: 3
 - **Unclassified**: 31
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -28,6 +35,8 @@ category_descriptions:
 | limits-quotas | 1 | 2.9% |
 | security | 1 | 2.9% |
 | *(Unclassified)* | 31 | 91.2% |
+
+## Changes
 
 ## Classified Pages
 

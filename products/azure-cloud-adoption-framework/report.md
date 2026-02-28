@@ -42,6 +42,13 @@ category_descriptions:
 - **Classified**: 432
 - **Unclassified**: 12
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 444
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -57,6 +64,8 @@ category_descriptions:
 | security | 32 | 7.2% |
 | strategy | 16 | 3.6% |
 | *(Unclassified)* | 12 | 2.7% |
+
+## Changes
 
 ## Classified Pages
 

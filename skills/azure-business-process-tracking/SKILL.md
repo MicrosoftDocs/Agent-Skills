@@ -1,14 +1,14 @@
 ---
 name: azure-business-process-tracking
-description: Expert knowledge for Azure Business Process Tracking development including deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications.
+description: Expert knowledge for Business Process Tracking development including deployment. Use when building, debugging, or optimizing Business Process Tracking applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Business Process Tracking Skill
+# Business Process Tracking Skill
 
-This skill provides expert guidance for Azure Business Process Tracking. Covers deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Business Process Tracking. Covers deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

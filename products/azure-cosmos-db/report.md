@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 776
 - **Unclassified**: 201
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 977
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 63 | 6.4% |
 | troubleshooting | 50 | 5.1% |
 | *(Unclassified)* | 201 | 20.6% |
+
+## Changes
 
 ## Classified Pages
 

@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 259
 - **Unclassified**: 211
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 470
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 73 | 15.5% |
 | troubleshooting | 22 | 4.7% |
 | *(Unclassified)* | 211 | 44.9% |
+
+## Changes
 
 ## Classified Pages
 
@@ -124,7 +133,7 @@ category_descriptions:
 | [Alerts schemas](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-schemas) | configuration | 0.75 | Alert schema reference typically lists field names, types, and structures for different export paths, which are detailed configuration/integration schemas. |
 | [Azure App Service recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-app-services) | security | 0.75 | Reference list of App Service security recommendations with specific names and meanings; product-specific security configuration guidance. |
 | [Compute recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-compute) | security | 0.75 | Reference table of compute security recommendations; detailed recommendation semantics are expert, product-specific security knowledge. |
-| [Configure the Microsoft Security DevOps Azure DevOps extension](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension) | configuration | 0.75 | Extension configuration typically includes task names, YAML parameters, and tool-specific options that are product-specific configuration details. |
+| [Configure the Microsoft Security DevOps Azure DevOps extension](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension) | configuration | 0.75 | Describes configuring the MSDO Azure DevOps extension and lists specific tools; such articles include YAML/task parameters, configuration options, and tool-specific settings unique to this product. |
 | [Configure the Microsoft Security DevOps Azure DevOps extension](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension) | configuration | 0.75 | Describes configuring the MSDO Azure DevOps extension and lists specific tools; such articles include YAML/task parameters, configuration options, and tool-specific settings unique to this product. |
 | [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) | configuration | 0.75 | GitHub Action configuration will include action names, inputs, and example workflows that are specific configuration parameters for this product. |
 | [Container recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-container) | security | 0.75 | Lists container security recommendations with specific identifiers and meanings; specialized security guidance for containers in Defender for Cloud. |

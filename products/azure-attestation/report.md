@@ -26,6 +26,13 @@ category_descriptions:
 - **Classified**: 22
 - **Unclassified**: 11
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-attestation/azure-attestation.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -36,6 +43,8 @@ category_descriptions:
 | security | 2 | 6.1% |
 | troubleshooting | 1 | 3.0% |
 | *(Unclassified)* | 11 | 33.3% |
+
+## Changes
 
 ## Classified Pages
 

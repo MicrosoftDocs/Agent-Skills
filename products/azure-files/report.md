@@ -4,9 +4,9 @@ category_descriptions:
   configuration: Configuring Azure Files networking, security, redundancy, monitoring/alerts,
     snapshots, and mounting shares (SMB/NFS) from Linux, Windows, macOS, and via VPN
     or private endpoints
-  security: 'Securing Azure file shares: identity-based SMB/NFS auth (AD DS, Entra
-    ID, Kerberos), share/NTFS permissions, network perimeter, encryption in transit,
-    and disabling insecure protocols.'
+  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, NDS,
+    Kerberos), share/NTFS permissions, OAuth/keys, encryption in transit, network
+    perimeter, and related configuration.'
   integrations: 'Using Azure Files from code: AKS CSI integration and .NET, Java,
     Python SDK usage, including auth, file operations, and app integration patterns.'
   decision-making: Guidance on choosing Azure Files vs alternatives, selecting tiers,
@@ -32,6 +32,13 @@ category_descriptions:
 - **Classified**: 71
 - **Unclassified**: 7
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 77
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -44,6 +51,13 @@ category_descriptions:
 | limits-quotas | 3 | 3.8% |
 | security | 19 | 24.4% |
 | *(Unclassified)* | 7 | 9.0% |
+
+## Changes
+
+### Updated Pages
+
+- [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal)
+  - Updated: 2025-06-17T08:00:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 
@@ -70,7 +84,6 @@ category_descriptions:
 | [Understand billing](https://learn.microsoft.com/en-us/azure/storage/files/understanding-billing) | decision-making | 0.80 | Explains provisioned vs pay-as-you-go, media tiers, redundancy, and resource models with cost/performance trade-offs. Helps select billing/tier options with quantified criteria, fitting decision-making. |
 | [Use Azure Files with multiple AD DS forests](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-multiple-forests) | security | 0.80 | Explains forest trust configurations and steps for multi-forest AD DS authentication to SMB Azure file shares; product-specific identity and trust setup details. |
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/storage/files/azure-kubernetes-service-workloads) | integrations | 0.75 | Describes AKS CSI driver parameters, storage class and PV/PVC configuration fields specific to Azure Files. Contains integration-focused configuration values and patterns. |
-| [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal) | security | 0.75 | Details how portal requests are authorized using Entra accounts vs storage account keys, including security implications and required permissions; product-specific auth behavior. |
 | [Cost estimation examples](https://learn.microsoft.com/en-us/azure/storage/files/file-estimate-cost) | decision-making | 0.75 | Walks through cost estimation scenarios with concrete usage patterns and price impacts between billing models. Provides quantified trade-offs and scenario-based recommendations. |
 | [Migrate to NFS Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nfs) | decision-making | 0.75 | Describes migration from Linux file servers to NFS Azure Files and compares fpsync vs rsync performance; includes tool comparison and scenario guidance. |
 | [Mount NFS file share on Linux](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-how-to-mount-nfs-shares) | configuration | 0.75 | Covers NFS mount options, network security, and configuration for Azure Files; includes product-specific mount parameters and networking requirements. |
@@ -83,6 +96,7 @@ category_descriptions:
 | [Analyze metrics](https://learn.microsoft.com/en-us/azure/storage/files/analyze-files-metrics) | configuration | 0.70 | Shows how to query and interpret Azure Files metrics (availability, latency, utilization) with specific metric names and dimensions. These are expert monitoring configuration/usage details. |
 | [Azure Files FAQ](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-faq) | limits-quotas | 0.70 | Azure Files FAQ typically includes many numeric limits (max shares, file size, throughput behaviors) and edge-case behaviors. These are expert details not obvious from overviews. |
 | [Change the redundancy configuration](https://learn.microsoft.com/en-us/azure/storage/files/files-change-redundancy-configuration) | configuration | 0.70 | Describes exact steps and constraints for changing replication settings (e.g., allowed transitions, unsupported combinations). These are concrete configuration rules unique to Azure Files. |
+| [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal) | security | 0.70 | Page is focused on how Azure portal requests to Azure Files are authenticated and authorized, including when and how to use Microsoft Entra identities versus storage account keys and the required permissions. This is product-specific security configuration and access control guidance rather than generic concepts. |
 | [Configure Point-to-Site VPN on Linux](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-linux) | configuration | 0.70 | Linux-specific P2S VPN setup for Azure Files with concrete configuration snippets, package names, and parameter values. These are product- and OS-specific settings not derivable from generic VPN concepts. |
 | [Configure Point-to-Site VPN on Windows](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-windows) | configuration | 0.70 | Step-by-step configuration for Windows P2S VPN to Azure Files with product-specific parameters (VPN client config, certificate requirements, address spaces). Contains concrete settings and values unique to Azure Files networking, beyond generic VPN knowledge. |
 | [Configure Site-to-Site VPN](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-s2s-vpn) | configuration | 0.70 | Detailed S2S VPN configuration for Azure Files using VPN Gateway, including gateway types, address spaces, and Azure-specific parameters. This is concrete configuration reference, not just conceptual guidance. |

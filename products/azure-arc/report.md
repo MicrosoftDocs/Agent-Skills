@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 269
 - **Unclassified**: 146
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 415
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 55 | 13.3% |
 | troubleshooting | 31 | 7.5% |
 | *(Unclassified)* | 146 | 35.2% |
+
+## Changes
 
 ## Classified Pages
 

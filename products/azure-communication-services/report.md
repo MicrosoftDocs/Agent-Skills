@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 414
 - **Unclassified**: 102
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 516
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 22 | 4.3% |
 | troubleshooting | 71 | 13.8% |
 | *(Unclassified)* | 102 | 19.8% |
+
+## Changes
 
 ## Classified Pages
 
@@ -278,6 +287,7 @@ category_descriptions:
 | [Provisioning and authorization](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-provisioning) | configuration | 0.70 | Describes how to provision for Teams Phone extensibility, likely including specific configuration steps and settings unique to this feature. |
 | [Proxy your calling traffic](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/proxy-calling-support-tutorial) | configuration | 0.70 | Describes configuring custom proxy/TURN servers for ACS media and signaling; will include specific configuration properties, URLs, and behavior differences from defaults. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics with ACS call summary and diagnostic logs; product-specific logging configuration and query usage. |
+| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics with ACS call summary and diagnostic logs; product-specific logging configuration and query usage. |
 | [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api) | integrations | 0.70 | REST API structure article will enumerate endpoints, parameters, and constraints unique to TPE, which are integration-specific details. |
 | [Receive an SMS message](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/receive-sms) | integrations | 0.70 | Shows how to wire SMS received events into Azure Functions via Event Grid, including event schema and trigger configuration unique to this product. |
 | [Record a call automatically](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/record-every-call) | integrations | 0.70 | How-to wires Call Automation events via Event Grid to an Azure Function to start recording; includes event types, payload fields, and API calls that are product-specific integration details. |
@@ -397,7 +407,6 @@ category_descriptions:
 | [Connect domain to send email](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/connect-email-communication-resource) | configuration | 0.63 | Quickstart for linking verified domains to ACS email; includes concrete configuration steps and parameters. |
 | [Enable file attachment interop in your chat app](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/chat-interop/meeting-interop-features-file-attachment) | integrations | 0.63 | Describes enabling file attachments between Teams and ACS users in meeting context; contains interop-specific constraints and SDK usage. |
 | [Prepare an email resource](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/prepare-email-communication-resource) | configuration | 0.63 | Covers preconfiguration steps and admin tasks for ACS email resources and domains; includes product-specific setup requirements. |
-| [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.63 | Concept article about querying call logs will include specific table names, fields, and KQL usage patterns unique to ACS logging. |
 | [Send an email](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email) | integrations | 0.63 | Quickstart for sending email via ACS SDKs; includes method names, parameters, and payload structure specific to ACS. |
 | [Send email to multiple recipients](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/send-email-to-multiple-recipients) | integrations | 0.63 | Shows how to structure payloads and SDK calls for multiple recipients; includes ACS-specific object model and constraints. |
 | [Send email with attachments](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/send-email-with-attachments) | integrations | 0.63 | Quickstart for adding attachments to ACS email; includes payload structure and SDK parameters for attachments. |

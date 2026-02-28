@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 139
 - **Unclassified**: 63
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 202
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 5 | 2.5% |
 | troubleshooting | 25 | 12.4% |
 | *(Unclassified)* | 63 | 31.2% |
+
+## Changes
 
 ## Classified Pages
 

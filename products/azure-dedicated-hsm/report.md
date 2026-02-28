@@ -27,6 +27,13 @@ category_descriptions:
 - **Classified**: 12
 - **Unclassified**: 4
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 16
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -38,6 +45,8 @@ category_descriptions:
 | security | 2 | 12.5% |
 | troubleshooting | 2 | 12.5% |
 | *(Unclassified)* | 4 | 25.0% |
+
+## Changes
 
 ## Classified Pages
 

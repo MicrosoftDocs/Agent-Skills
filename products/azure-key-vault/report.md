@@ -33,6 +33,13 @@ category_descriptions:
 - **Classified**: 106
 - **Unclassified**: 58
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 164
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -46,6 +53,8 @@ category_descriptions:
 | security | 24 | 14.6% |
 | troubleshooting | 6 | 3.7% |
 | *(Unclassified)* | 58 | 35.4% |
+
+## Changes
 
 ## Classified Pages
 
