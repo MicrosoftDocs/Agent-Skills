@@ -27,8 +27,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 32
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -44,13 +44,6 @@ category_descriptions:
 | *(Unclassified)* | 13 | 38.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting)
-  - Updated: 2024-12-03T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Workflow automation to set API status](https://learn.microsoft.com/en-us/azure/api-center/set-up-notification-workflow)
-  - Updated: 2024-10-20T23:16:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

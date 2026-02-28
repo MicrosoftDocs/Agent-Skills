@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-02-28 08:53:27
-**Total Duration**: 28m 20s
+**Generated**: 2026-02-28 12:17:37
+**Total Duration**: 18m 12s
 
 ## Product Crawl Summary
 
@@ -18,7 +18,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 7 | Azure AI Foundry Local | 0 | 0 | 0 | 0 | 0 | OK |
 | 8 | Azure Analysis Services | 1 | 1 | 0 | 0 | 0 | OK |
 | 9 | Azure AI Anomaly Detector | 24 | 11 | 0 | 0 | 0 | OK |
-| 10 | Azure API Management | 276 | 229 | 0 | 3 | 0 | OK |
+| 10 | Azure API Management | 276 | 229 | 0 | 0 | 0 | OK |
 | 11 | Azure App Configuration | 159 | 134 | 0 | 0 | 0 | OK |
 | 12 | Azure App Service | 247 | 163 | 0 | 0 | 0 | OK |
 | 13 | Azure App Testing | 72 | 57 | 0 | 0 | 0 | OK |
@@ -37,7 +37,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 26 | Azure Cache for Redis | 62 | 55 | 0 | 0 | 0 | OK |
 | 27 | Azure Cloud Services | 45 | 31 | 0 | 0 | 0 | OK |
 | 28 | Azure Cloud Shell | 19 | 5 | 0 | 0 | 0 | OK |
-| 29 | Azure AI Search | 299 | 234 | 0 | 12 | 0 | OK |
+| 29 | Azure AI Search | 299 | 234 | 0 | 0 | 0 | OK |
 | 30 | Azure Communication Services | 516 | 414 | 0 | 0 | 0 | OK |
 | 31 | Azure Container Apps | 203 | 137 | 0 | 0 | 0 | OK |
 | 32 | Azure Container Instances | 83 | 54 | 0 | 0 | 0 | OK |
@@ -66,11 +66,11 @@ Quick overview for reviewers. See individual product reports for details.
 | 55 | Azure Event Grid | 259 | 180 | 0 | 0 | 0 | OK |
 | 56 | Azure Event Hubs | 111 | 72 | 0 | 0 | 0 | OK |
 | 57 | Azure ExpressRoute | 99 | 87 | 0 | 0 | 0 | OK |
-| 58 | Azure Files | 78 | 71 | 0 | 1 | 0 | OK |
+| 58 | Azure Files | 78 | 71 | 0 | 0 | 0 | OK |
 | 59 | Azure Firewall | 84 | 61 | 0 | 0 | 0 | OK |
 | 60 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
 | 61 | Azure Front Door | 104 | 83 | 0 | 0 | 0 | OK |
-| 62 | Azure Functions | 361 | 297 | 0 | 1 | 0 | OK |
+| 62 | Azure Functions | 361 | 297 | 0 | 0 | 0 | OK |
 | 63 | Azure HDInsight | 425 | 334 | 0 | 0 | 0 | OK |
 | 64 | Azure Health Data Services | 228 | 166 | 0 | 0 | 0 | OK |
 | 65 | Azure HPC Cache | 34 | 32 | 0 | 0 | 0 | OK |
@@ -78,7 +78,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 67 | Azure Information Protection | 21 | 16 | 0 | 0 | 0 | OK |
 | 68 | Azure IoT | 40 | 18 | 0 | 0 | 0 | OK |
 | 69 | Azure IoT Central | 89 | 57 | 0 | 0 | 0 | OK |
-| 70 | Azure IoT Edge | 98 | 66 | 0 | 7 | 0 | OK |
+| 70 | Azure IoT Edge | 98 | 66 | 0 | 0 | 0 | OK |
 | 71 | Azure IoT Hub | 203 | 136 | 0 | 0 | 0 | OK |
 | 72 | Azure IoT Operations | 99 | 77 | 0 | 0 | 0 | OK |
 | 73 | Azure Key Vault | 164 | 106 | 0 | 0 | 0 | OK |
@@ -96,7 +96,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 85 | Azure Maps | 145 | 113 | 0 | 0 | 0 | OK |
 | 86 | Azure AI Metrics Advisor | 19 | 8 | 0 | 0 | 0 | OK |
 | 87 | Azure Migrate | 196 | 119 | 0 | 0 | 0 | OK |
-| 88 | Azure Monitor | 2343 | 1910 | 0 | 2 | 1 | OK |
+| 88 | Azure Monitor | 2343 | 1910 | 0 | 0 | 0 | OK |
 | 89 | Azure NAT Gateway | 26 | 23 | 0 | 0 | 0 | OK |
 | 90 | Azure NetApp Files | 224 | 155 | 0 | 0 | 0 | OK |
 | 91 | Azure Network Watcher | 62 | 29 | 0 | 0 | 0 | OK |
@@ -121,11 +121,11 @@ Quick overview for reviewers. See individual product reports for details.
 | 110 | Azure SignalR Service | 73 | 60 | 0 | 0 | 0 | OK |
 | 111 | Azure Site Recovery | 202 | 139 | 0 | 0 | 0 | OK |
 | 112 | Azure US Government | 40 | 32 | 0 | 0 | 0 | OK |
-| 113 | Azure AI Speech | 178 | 107 | 0 | 77 | 0 | OK |
+| 113 | Azure AI Speech | 178 | 107 | 0 | 0 | 0 | OK |
 | 114 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
 | 115 | Azure SQL Database | 583 | 440 | 0 | 0 | 0 | OK |
 | 116 | Azure Stack Edge | 237 | 145 | 0 | 0 | 0 | OK |
-| 117 | Azure Storage | 166 | 124 | 1 | 0 | 0 | OK |
+| 117 | Azure Storage | 166 | 124 | 0 | 0 | 0 | OK |
 | 118 | Azure Stream Analytics | 168 | 114 | 0 | 0 | 0 | OK |
 | 119 | Azure Synapse Analytics | 446 | 262 | 0 | 0 | 0 | OK |
 | 120 | Azure Table Storage | 15 | 13 | 0 | 0 | 0 | OK |
@@ -134,12 +134,12 @@ Quick overview for reviewers. See individual product reports for details.
 | 123 | Azure Translator | 125 | 77 | 0 | 0 | 0 | OK |
 | 124 | Azure AI Video Indexer | 77 | 58 | 0 | 0 | 0 | OK |
 | 125 | Azure Virtual Desktop | 148 | 120 | 0 | 0 | 0 | OK |
-| 126 | Azure Virtual Machines | 799 | 588 | 0 | 2 | 0 | OK |
+| 126 | Azure Virtual Machines | 799 | 588 | 0 | 0 | 0 | OK |
 | 127 | Azure Virtual Network | 139 | 66 | 0 | 0 | 0 | OK |
 | 128 | Azure Virtual WAN | 129 | 91 | 0 | 0 | 0 | OK |
 | 129 | Azure Virtual Machine Scale Sets | 93 | 83 | 0 | 0 | 0 | OK |
 | 130 | Azure VMware Solution | 134 | 105 | 0 | 0 | 0 | OK |
-| 131 | Azure VPN Gateway | 129 | 113 | 0 | 1 | 0 | OK |
+| 131 | Azure VPN Gateway | 129 | 113 | 0 | 0 | 0 | OK |
 | 132 | Azure Web Application Firewall | 80 | 68 | 0 | 0 | 0 | OK |
 | 133 | Azure Web PubSub | 111 | 81 | 0 | 0 | 0 | OK |
 | 134 | Chaos Studio | 51 | 31 | 0 | 0 | 0 | OK |
@@ -154,7 +154,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 143 | Azure Update Manager | 84 | 55 | 0 | 0 | 0 | OK |
 | 144 | Azure Virtual Network Manager | 52 | 22 | 0 | 0 | 0 | OK |
 | 145 | Azure Active Directory B2C | 289 | 258 | 0 | 0 | 0 | OK |
-| 146 | Azure Api Center | 34 | 21 | 0 | 2 | 0 | OK |
+| 146 | Azure Api Center | 34 | 21 | 0 | 0 | 0 | OK |
 | 147 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | OK |
 | 148 | Azure Impact Reporting | 14 | 9 | 0 | 0 | 0 | OK |
 | 149 | Azure Large Instances | 10 | 3 | 0 | 0 | 0 | OK |
@@ -204,9 +204,9 @@ Quick overview for reviewers. See individual product reports for details.
 - **Products Processed**: 189 success, 0 failed
 - **Total Pages**: 31402
 - **Total Classified**: 22139
-- **Total New Pages**: 1
-- **Total Updated Pages**: 108
-- **Total Deleted Pages**: 1
+- **Total New Pages**: 0
+- **Total Updated Pages**: 0
+- **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 

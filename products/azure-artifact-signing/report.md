@@ -25,6 +25,13 @@ category_descriptions:
 - **Classified**: 8
 - **Unclassified**: 6
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 14
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifact-signing/azure-artifact-signing.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +42,8 @@ category_descriptions:
 | integrations | 1 | 7.1% |
 | security | 3 | 21.4% |
 | *(Unclassified)* | 6 | 42.9% |
+
+## Changes
 
 ## Classified Pages
 

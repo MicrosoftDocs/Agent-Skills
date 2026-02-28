@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 128
+- **Updated Pages**: 0
+- **Unchanged**: 129
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -61,11 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 16 | 12.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage legacy gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-skus-legacy)
-  - Updated: 2026-02-26T06:24:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

@@ -34,8 +34,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 77
+- **Updated Pages**: 0
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -53,11 +53,6 @@ category_descriptions:
 | *(Unclassified)* | 7 | 9.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal)
-  - Updated: 2025-06-17T08:00:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

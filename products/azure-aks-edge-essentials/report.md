@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 266
 - **Unclassified**: 66
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 332
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 30 | 9.0% |
 | troubleshooting | 46 | 13.9% |
 | *(Unclassified)* | 66 | 19.9% |
+
+## Changes
 
 ## Classified Pages
 

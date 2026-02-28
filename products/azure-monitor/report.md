@@ -41,9 +41,9 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 2341
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 2343
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -62,17 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 433 | 18.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Application Insights SDK (Classic API)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/classic-api)
-  - Updated: 2025-11-14T06:04:00.000Z → 2026-02-28T06:09:00.000Z
-- [Activity logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
-  - Updated: 2025-12-19T23:11:00.000Z → 2026-02-28T06:09:00.000Z
-
-### Deleted Pages
-
-- ~~Azure VM and Virtual Machine Scale Sets~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-vm-vmss-apps)
 
 ## Classified Pages
 

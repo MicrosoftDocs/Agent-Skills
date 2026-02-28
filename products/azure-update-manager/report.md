@@ -34,6 +34,13 @@ category_descriptions:
 - **Classified**: 55
 - **Unclassified**: 29
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 84
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-update-manager/azure-update-manager.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -47,6 +54,8 @@ category_descriptions:
 | security | 2 | 2.4% |
 | troubleshooting | 2 | 2.4% |
 | *(Unclassified)* | 29 | 34.5% |
+
+## Changes
 
 ## Classified Pages
 

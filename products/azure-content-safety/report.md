@@ -30,6 +30,13 @@ category_descriptions:
 - **Classified**: 14
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 34
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -43,6 +50,8 @@ category_descriptions:
 | security | 1 | 2.9% |
 | troubleshooting | 1 | 2.9% |
 | *(Unclassified)* | 20 | 58.8% |
+
+## Changes
 
 ## Classified Pages
 

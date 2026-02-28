@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 797
+- **Updated Pages**: 0
+- **Unchanged**: 799
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -62,13 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 211 | 26.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Dsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-02-28T06:12:00.000Z
-- [Dav4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dav4-series)
-  - Updated: 2024-10-24T22:02:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

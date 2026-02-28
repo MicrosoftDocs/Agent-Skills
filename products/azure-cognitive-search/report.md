@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 12
-- **Unchanged**: 287
+- **Updated Pages**: 0
+- **Unchanged**: 299
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -61,33 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 65 | 21.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Add AI-generated content (GenAI Prompt skill)](https://learn.microsoft.com/en-us/azure/search/chat-completion-skill-example-usage)
-  - Updated: 2025-07-28T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Best practices for GenAI Prompt skill](https://learn.microsoft.com/en-us/azure/search/responsible-ai-best-practices-genai-prompt-skill)
-  - Updated: 2025-07-28T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Add a custom skill](https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface)
-  - Updated: 2025-01-15T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Scale out a custom skill](https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-scale)
-  - Updated: 2025-01-18T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Content metadata properties](https://learn.microsoft.com/en-us/azure/search/search-blob-metadata-properties)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Index Azure SQL Database](https://learn.microsoft.com/en-us/azure/search/search-indexer-tutorial)
-  - Updated: 2025-04-09T17:03:00.000Z → 2026-02-27T08:00:00.000Z
-- [Process image files](https://learn.microsoft.com/en-us/azure/search/cognitive-search-concept-image-scenarios)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create a knowledge store (REST)](https://learn.microsoft.com/en-us/azure/search/knowledge-store-create-rest)
-  - Updated: 2025-10-21T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create an indexer](https://learn.microsoft.com/en-us/azure/search/search-how-to-create-indexers)
-  - Updated: 2025-06-17T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Custom Web API](https://learn.microsoft.com/en-us/azure/search/vector-search-vectorizer-custom-web-api)
-  - Updated: 2025-09-12T22:09:00.000Z → 2026-02-28T06:12:00.000Z
-- [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/search/security-controls-policy)
-  - Updated: 2025-08-18T22:13:00.000Z → 2026-02-27T08:00:00.000Z
-- [Push document-level permissions to an index](https://learn.microsoft.com/en-us/azure/search/search-index-access-control-lists-and-rbac-push-api)
-  - Updated: 2025-09-18T08:00:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

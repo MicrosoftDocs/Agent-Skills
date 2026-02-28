@@ -37,9 +37,9 @@ category_descriptions:
 - **Unclassified**: 42
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 165
+- **Unchanged**: 166
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-storage/azure-storage.csv`
 
@@ -58,10 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 42 | 25.3% |
 
 ## Changes
-
-### New Pages
-
-- [Planning your Private Networking for cloud to cloud migrations](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs)
 
 ## Classified Pages
 

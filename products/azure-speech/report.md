@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 77
-- **Unchanged**: 101
+- **Updated Pages**: 0
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -58,50 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 71 | 39.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Structured text phonetic pronunciation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/customize-pronunciation)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Speech to text FAQ](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-stt)
-  - Updated: 2025-11-18T15:37:00Z → 2026-02-28T06:12:00Z
-- [Text to speech documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/index-text-to-speech)
-  - Updated: 2026-01-30T18:18:00Z → 2026-02-28T06:12:00Z
-- [How to synthesize speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Use batch synthesis for text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-synthesis)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Batch synthesis properties](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-synthesis-properties)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [SSML overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [SSML document structure and events](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-structure)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Pronunciation with SSML](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup-pronunciation)
-  - Updated: 2026-02-24T12:03:00.000Z → 2026-02-25T08:00:00.000Z
-- [SSML phonetic sets](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-ssml-phonetic-sets)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Lower speech synthesis latency](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-lower-speech-synthesis-latency)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Get facial position with viseme](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis-viseme)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Custom voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Prepare training data](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-voice-training-data)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Record voice samples](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/record-custom-voice-samples)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Part 1: Create a personal voice project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-project)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Part 2: Add user consent to your project](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-consent)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- [Speech CLI overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-overview)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-28T06:12:00.000Z
-- [Speech CLI quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics)
-  - Updated: 2025-08-07T08:00:00.000Z → 2026-02-25T08:00:00.000Z
-- *...and 57 more*
 
 ## Classified Pages
 

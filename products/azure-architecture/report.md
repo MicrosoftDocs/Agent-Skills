@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 442
+- **Updated Pages**: 0
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 108 | 24.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Teamcenter baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-baseline)
-  - Updated: 2026-01-24T06:02:00Z → 2026-02-28T06:04:00Z
 
 ## Classified Pages
 

@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 91
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -61,23 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 32 | 32.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows)
-  - Updated: 2025-07-22T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge)
-  - Updated: 2025-07-12T05:10:00.000Z → 2026-02-27T08:00:00.000Z
-- [Configure a transparent gateway](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway)
-  - Updated: 2025-06-05T22:05:00.000Z → 2026-02-27T08:00:00.000Z
-- [Authenticate a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device)
-  - Updated: 2025-05-28T05:33:00.000Z → 2026-02-27T08:00:00.000Z
-- [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device)
-  - Updated: 2025-06-06T17:04:00.000Z → 2026-02-27T08:00:00.000Z
-- [Configure gateways for IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-iot-edge-device)
-  - Updated: 2025-08-18T08:00:00.000Z → 2026-02-27T08:00:00.000Z
 
 ## Classified Pages
 

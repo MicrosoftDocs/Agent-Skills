@@ -25,6 +25,13 @@ category_descriptions:
 - **Classified**: 31
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 51
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +42,8 @@ category_descriptions:
 | security | 11 | 21.6% |
 | troubleshooting | 4 | 7.8% |
 | *(Unclassified)* | 20 | 39.2% |
+
+## Changes
 
 ## Classified Pages
 

@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 273
+- **Updated Pages**: 0
+- **Unchanged**: 276
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -62,15 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 47 | 17.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Import language model API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-llm-api)
-  - Updated: 2025-07-08T05:11:00.000Z → 2026-02-28T06:12:00.000Z
-- [Import Google Gemini API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-google-gemini-api)
-  - Updated: 2025-07-08T05:11:00.000Z → 2026-02-28T06:12:00.000Z
-- [Import Amazon Bedrock API](https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api)
-  - Updated: 2025-07-09T17:43:00.000Z → 2026-02-28T06:12:00.000Z
 
 ## Classified Pages
 

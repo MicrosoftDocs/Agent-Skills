@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 360
+- **Updated Pages**: 0
+- **Unchanged**: 361
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 64 | 17.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container)
-  - Updated: 2024-07-30T22:08:00.000Z → 2026-02-25T08:00:00.000Z
 
 ## Classified Pages
 
