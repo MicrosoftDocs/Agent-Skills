@@ -1,14 +1,14 @@
 ---
 name: azure-network-function-manager
-description: Expert knowledge for Azure Network Function Manager development including security. Use when building, debugging, or optimizing Azure Network Function Manager applications.
+description: Expert knowledge for Azure Network Function Manager development including security, and configuration. Use when building, debugging, or optimizing Azure Network Function Manager applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Network Function Manager Skill
 
-This skill provides expert guidance for Azure Network Function Manager. Covers security. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Network Function Manager. Covers security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,9 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Security | L27-L30 | Setting up managed identities, role assignments, and resource registration needed to securely deploy and operate Network Function Manager resources |
+| Security | L28-L32 | Setting up secure access for Network Function Manager by registering required Azure resources, managed identities, and permissions for network functions |
+| Configuration | L33-L36 | Prerequisites, permissions, and Azure resource requirements you must meet before deploying or managing network functions with Azure Network Function Manager. |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure resource registration and identities for Network Function Manager | https://learn.microsoft.com/en-us/azure/network-function-manager/resources-permissions |
+| Register resources and identities for Network Function Manager | https://learn.microsoft.com/en-us/azure/network-function-manager/resources-permissions |
+
+### Configuration
+| Topic | URL |
+|-------|-----|
+| Meet prerequisites and requirements for Network Function Manager | https://learn.microsoft.com/en-us/azure/network-function-manager/requirements |

@@ -3,7 +3,7 @@ name: azure-networking
 description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Networking applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Networking Skill
@@ -23,11 +23,11 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L32-L36 | Diagnosing and resolving Microsoft.Network resource provisioning failures in Azure, including common error patterns, causes, and step-by-step remediation guidance. |
-| Best Practices | L37-L41 | Guidance on boosting Azure NVA/VM network throughput and latency using Accelerated Connections, including configuration, tuning, and performance best practices. |
-| Decision Making | L42-L49 | Guidance on choosing Azure network designs: using region latency data, selecting secure topologies and app delivery services, and planning networking for remote and hybrid work scenarios. |
-| Architecture & Design Patterns | L50-L55 | Analyzing and troubleshooting Azure network routing and packet paths, including control-plane route decisions and data-plane flow through VNets, gateways, firewalls, and peering. |
-| Security | L56-L62 | Designing Zero Trust VNets for web apps and enforcing network security/compliance using built‑in Azure Policy definitions and policy-based controls |
-| Integrations & Coding Patterns | L63-L66 | Querying and analyzing Azure networking resources (VNets, NSGs, IPs, etc.) using Azure Resource Graph, with example Kusto queries and patterns for inventory, compliance, and governance. |
+| Best Practices | L37-L41 | Guidance on boosting Azure NVA and VM network throughput/latency using Accelerated Connections, including configuration, tuning, and performance best practices. |
+| Decision Making | L42-L49 | Guidance on choosing Azure network architectures: using region latency data, selecting secure topologies and app delivery options, and planning networking for remote and hybrid work scenarios. |
+| Architecture & Design Patterns | L50-L55 | Analyzing and troubleshooting Azure network routing: control plane route selection/interoperability and data plane traffic paths across VNets, hubs, firewalls, and gateways. |
+| Security | L56-L62 | Designing Zero Trust VNets for web apps and using Azure Policy to enforce, audit, and remediate security/compliance rules on networking resources |
+| Integrations & Coding Patterns | L63-L66 | Using Azure Resource Graph to query, filter, and analyze Azure networking resources at scale (e.g., VNets, NSGs, public IPs) for inventory, compliance, and reporting. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -43,15 +43,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Use Azure region latency stats for architecture planning | https://learn.microsoft.com/en-us/azure/networking/azure-network-latency |
-| Choose secure Azure application delivery services | https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery |
+| Choose secure Azure application delivery options | https://learn.microsoft.com/en-us/azure/networking/secure-application-delivery |
 | Select a secure Azure network topology | https://learn.microsoft.com/en-us/azure/networking/secure-network-topology |
 | Plan Azure networking for remote work scenarios | https://learn.microsoft.com/en-us/azure/networking/working-remotely-support |
 
 ### Architecture & Design Patterns
 | Topic | URL |
 |-------|-----|
-| Analyze control-plane routing for Azure connectivity | https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-control-plane |
-| Analyze data-plane paths in Azure network topologies | https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-data-plane |
+| Analyze control plane routing interoperability in Azure | https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-control-plane |
+| Analyze data plane paths across Azure networks | https://learn.microsoft.com/en-us/azure/networking/connectivity-interoperability-data-plane |
 
 ### Security
 | Topic | URL |
@@ -63,4 +63,4 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Use Azure Resource Graph queries for networking resources | https://learn.microsoft.com/en-us/azure/networking/fundamentals/resource-graph-samples |
+| Run Azure Resource Graph queries for networking resources | https://learn.microsoft.com/en-us/azure/networking/fundamentals/resource-graph-samples |

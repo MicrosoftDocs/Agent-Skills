@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-02-24 16:34:06
-**Total Duration**: 0m 39s
+**Generated**: 2026-02-28 00:43:31
+**Total Duration**: 1m 55s
 
 ## Product Crawl Summary
 
@@ -9,40 +9,39 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Cloud Adoption Framework | 362 | 346 | 0 | 5 | 0 | ✓ |
+| 1 | Azure Cloud Adoption Framework | 444 | 432 | 0 | 0 | 0 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
-- **Total Pages**: 362
-- **Total Classified**: 346
+- **Total Pages**: 444
+- **Total Classified**: 432
 - **Total New Pages**: 0
-- **Total Updated Pages**: 5
+- **Total Updated Pages**: 0
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| adoption-patterns | 18 |
+| adoption-patterns | 32 |
 | getting-started | 1 |
-| governance | 34 |
-| operations | 28 |
-| organization | 17 |
-| planning | 16 |
-| readiness | 91 |
-| scenarios | 115 |
-| security | 15 |
-| strategy | 11 |
+| governance | 39 |
+| operations | 43 |
+| organization | 19 |
+| planning | 27 |
+| readiness | 124 |
+| scenarios | 99 |
+| security | 32 |
+| strategy | 16 |
 
 ---
 
-## Bread TOC Summary
+## Product Discovery Summary
 
 - **Total Products**: 1
-- **Total Crawled Nodes**: 19
-- **Total Skipped Nodes**: 0
-- **Total Sub-TOCs**: 18
+- **Total Sub-TOCs**: 9
+- **Total Skipped**: 0
 
 ## Products by Status
 
@@ -52,37 +51,25 @@ Quick overview for reviewers. See individual product reports for details.
 
 ## All Products
 
-| # | Status | Slug | Name | TOC URL | Sub-TOCs | Skipped |
-|---|--------|------|------|---------|----------|---------|
-| 1 | active | azure-cloud-adoption-framework | Azure Cloud Adoption Framework | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/toc.json | 18 | 0 |
+| # | Status | Slug | Name | TOC URL | Sub-TOCs |
+|---|--------|------|------|---------|----------|
+| 1 | active | azure-cloud-adoption-framework | Azure Cloud Adoption Framework | ...crosoft.com/en-us/azure/cloud-adoption-framework/toc.json | 9 |
 
 ## Product Details
 
 ### Azure Cloud Adoption Framework (`azure-cloud-adoption-framework`)
 
 - **Status**: active
-- **Original href**: `/azure/cloud-adoption-framework/`
 - **TOC URL**: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/toc.json
 
 **Sub-TOCs:**
 
-| Name | Depth | Status | Original URL | TOC URL |
-|------|-------|--------|--------------|---------|
-| Scenarios | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview/toc.json |
-| Azure VMware Solution | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/toc.json |
-| Cloud-scale analytics | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/toc.json |
-| Hybrid and multicloud | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy/toc.json |
-| Modern app platform | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/toc.json |
-| Oracle IaaS | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/overview/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview/toc.json |
-| SAP | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy/toc.json |
-| AVD | 3 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/toc.json |
-| Get started | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/get-started/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview/toc.json |
-| Strategy | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/toc.json |
-| Plan | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/prepare-organization-for-cloud/toc.json |
-| Ready | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/toc.json |
-| Adopt | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/adopt/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration/toc.json |
-| Govern | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/build-cloud-governance-team/toc.json |
-| Manage | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ready-cloud-operations/toc.json |
-| Secure | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/overview/toc.json |
-| Organize | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/toc.json |
-| AI Agents | 2 | active | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/toc.json |
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/toc.json
+- https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/toc.json

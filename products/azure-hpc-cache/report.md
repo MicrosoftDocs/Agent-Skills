@@ -1,102 +1,98 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-28'
 category_descriptions:
-  security: Client access control, encryption with customer-managed keys, and overall
-    security configuration options and best practices for Azure HPC Cache
+  security: 'Configuring HPC Cache security: client access policies, directory/AD
+    integration and extended groups, customer-managed encryption keys, and overall
+    cache security settings.'
   configuration: 'Configuring and operating Azure HPC Cache: CLI setup, networking/DNS/NTP,
-    directory services, namespace paths, storage targets, lifecycle/space management,
-    monitoring, and updates.'
-  architecture-patterns: 'Designing Azure HPC Cache architectures: choosing cache/usage
-    models, DNS-based client load balancing, aggregated namespace layouts, and regional
-    redundancy/failover strategies.'
-  integrations: Using HPC Cache with NFS and Azure NetApp Files, mounting clients,
-    and data ingest/write-back tools (flush_file, manual copy, msrsync, parallelcp)
-    for performance-optimized workflows.
-  troubleshooting: Diagnosing and resolving Azure HPC Cache target issues, including
-    Blob firewall access problems and NFS storage target creation and configuration
-    errors.
-  best-practices: Best practices for moving and pre-loading data into Azure HPC Cache
-    (Blob, ADLS-NFS), including performance tuning, usage limits, and strategies to
-    optimize cache warm-up and throughput.
-  deployment: Checking environment and networking prerequisites for Azure HPC Cache,
-    and how to recreate, move, or migrate cache workloads across regions.
-  decision-making: Guidance on when Azure HPC Cache is appropriate, evaluating workloads,
-    performance patterns, data sources, and scenarios where it improves throughput
-    or isn’t a good fit.
+    storage targets and namespaces, mounting NFS clients, lifecycle management, metrics,
+    and environment prerequisites.'
+  decision-making: Guidance on when Azure HPC Cache is appropriate, comparing usage
+    models, workload patterns, performance needs, and deciding if/when to adopt it
+    for your architecture.
+  best-practices: 'Guidance on optimizing Azure HPC Cache: client load balancing,
+    efficient data movement and manual copy to Blob targets, NFS-on-Blob considerations,
+    and priming caches for better hit rates.'
+  integrations: Scripts and patterns for ingesting data (msrsync, parallelcp), controlling
+    write-back with flush_file.py, and integrating Azure HPC Cache with Azure NetApp
+    Files.
+  troubleshooting: Diagnosing and resolving Azure HPC Cache issues with Blob storage
+    firewalls and NFS storage targets, including connectivity, access, and configuration
+    problems.
+  deployment: Creating Azure HPC Cache instances via portal/CLI, and recreating or
+    moving existing caches to a different region while preserving configuration and
+    data paths
+  architecture-patterns: Designing Azure HPC Cache namespaces across multiple back-end
+    storage systems, and planning regional redundancy, high availability, and failover
+    strategies for cached workloads.
+  limits-quotas: How to request and manage Azure HPC Cache quota increases, including
+    limits on cache instances, capacities, and the support process for raising quotas.
 ---
-# Azure Hpc Cache Crawl Report
+# Azure HPC Cache Crawl Report
 
 ## Summary
 
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 30
-- **Unclassified**: 4
-
-### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
-- **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hpc-cache/azure-hpc-cache.csv`
+- **Classified**: 32
+- **Unclassified**: 2
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 11.8% |
-| best-practices | 3 | 8.8% |
-| configuration | 9 | 26.5% |
-| decision-making | 1 | 2.9% |
+| architecture-patterns | 2 | 5.9% |
+| best-practices | 5 | 14.7% |
+| configuration | 10 | 29.4% |
+| decision-making | 2 | 5.9% |
 | deployment | 2 | 5.9% |
-| integrations | 6 | 17.6% |
-| security | 3 | 8.8% |
+| integrations | 4 | 11.8% |
+| limits-quotas | 1 | 2.9% |
+| security | 4 | 11.8% |
 | troubleshooting | 2 | 5.9% |
-| *(Unclassified)* | 4 | 11.8% |
-
-## Changes
+| *(Unclassified)* | 2 | 5.9% |
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot NFS storage target creation](https://learn.microsoft.com/en-us/azure/hpc-cache/troubleshoot-nas) | troubleshooting | 0.80 | Provides symptom-based guidance for NFS storage target failures, including checks for specific ports and configuration issues unique to Azure HPC Cache NAS integration. |
-| [Use customer-managed encryption keys](https://learn.microsoft.com/en-us/azure/hpc-cache/customer-keys) | security | 0.80 | Details how to use Azure Key Vault and customer-managed keys with HPC Cache, including product-specific encryption behavior and configuration steps beyond generic security concepts. |
-| [Configure optional settings](https://learn.microsoft.com/en-us/azure/hpc-cache/configuration) | configuration | 0.75 | Describes configurable settings like MTU, custom NTP and DNS, and snapshot access, including default values and when to change them, which are concrete configuration parameters. |
-| [Customize access policies](https://learn.microsoft.com/en-us/azure/hpc-cache/access-policies) | security | 0.75 | Details how to configure client access policies (root squash, read/write controls) at host/network level and apply them to namespace paths, which are product-specific security and access control settings. |
-| [Work around Blob storage account firewall settings](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-blob-firewall-fix) | troubleshooting | 0.75 | Documents a specific product bug and workaround tied to the 'selected networks' firewall setting for Blob storage targets; this is a concrete, product-specific issue-resolution guide. |
-| [Customize file write-back](https://learn.microsoft.com/en-us/azure/hpc-cache/custom-flush-script) | integrations | 0.70 | Describes a specific Python utility and library used from client machines to trigger file write-back to back-end storage, including product-specific behavior and usage patterns. |
-| [Edit storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-edit-storage) | configuration | 0.70 | Explains how to change access policies, usage models, and namespace paths for storage targets, which are concrete configuration options for the service. |
-| [Move data to blob storage](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest) | best-practices | 0.70 | Focuses on efficient strategies and recommended patterns for populating Blob storage for HPC Cache, including product-specific ingest guidance. |
-| [Populate the cache with msrsync](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-msrsync) | integrations | 0.70 | Describes using the msrsync tool with product-specific guidance for copying data into Blob storage targets, including parallel rsync usage tailored to HPC Cache. |
-| [Populate the cache with parallel copy](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-parallelcp) | integrations | 0.70 | Provides detailed instructions for a specific parallel copy script, including command patterns and parameters for integrating with Blob storage as an HPC Cache target. |
-| [Prime the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/prime-cache) | best-practices | 0.70 | Explains the cache priming feature and how to use it to pre-load working sets, a product-specific performance optimization technique with concrete operational guidance. |
-| [Security information](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-security-info) | security | 0.70 | Security information page for the service likely includes product-specific security behaviors, configuration details, and possibly role or access model specifics. |
-| [Set up directory services](https://learn.microsoft.com/en-us/azure/hpc-cache/directory-services) | configuration | 0.70 | Describes product-specific directory service settings, including the extended groups feature and how to choose and configure the external credential source; these are concrete configuration options unique to Azure HPC Cache. |
-| [Understand cache usage models](https://learn.microsoft.com/en-us/azure/hpc-cache/cache-usage-models) | architecture-patterns | 0.70 | Explains different cache usage models (read-only vs read/write and related settings) and how to choose among them, which is a product-specific design/usage pattern. |
-| [Use Azure NetApp Files with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-netapp) | integrations | 0.70 | Explains how to use Azure NetApp Files as a storage target for HPC Cache with setup tips; this is a concrete integration pattern between two Azure services. |
-| [Use NFS-mounted blob storage with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/nfs-blob-considerations) | best-practices | 0.70 | Covers procedures and limitations for using ADLS-NFS as storage targets, including product-specific behavioral constraints and recommended strategies when combining NFS Blob with HPC Cache. |
-| [View and manage storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/manage-storage-targets) | configuration | 0.70 | Details operations like suspend, remove, flush, and cache space allocation per storage target, which are product-specific configuration and management settings. |
-| [Add namespace paths](https://learn.microsoft.com/en-us/azure/hpc-cache/add-namespace-paths) | configuration | 0.65 | Explains how to configure client-facing namespace paths for back-end storage, a product-specific configuration of the aggregated namespace. |
-| [Add storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-add-storage) | configuration | 0.65 | Describes defining storage targets and related settings (NFS vs Blob, DNS requirements), which are product-specific configuration details. |
-| [Connect to the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-mount) | integrations | 0.65 | Describes the mount command structure and recommended options for NFS clients connecting to HPC Cache, a product-specific integration pattern. |
-| [Decide if HPC Cache is the right solution](https://learn.microsoft.com/en-us/azure/hpc-cache/usage-scenarios) | decision-making | 0.65 | Provides product-specific guidance on which HPC workloads are suitable or unsuitable for Azure HPC Cache, effectively helping users decide whether to adopt the service for their scenario. |
-| [Load balance client traffic](https://learn.microsoft.com/en-us/azure/hpc-cache/client-load-balancing) | architecture-patterns | 0.65 | Provides concrete methods for distributing client connections across multiple cache IPs using DNS round-robin and related options; this is a product-specific traffic distribution pattern. |
-| [Metrics and monitoring](https://learn.microsoft.com/en-us/azure/hpc-cache/metrics) | configuration | 0.65 | Explains specific metrics, reports, and monitoring views for HPC Cache, which are product-specific monitoring configuration and interpretation details. |
-| [Move a cache](https://learn.microsoft.com/en-us/azure/hpc-cache/move-resource) | deployment | 0.65 | Explains the product-specific process and constraints for moving an HPC Cache to another region by recreating resources, which is a deployment/migration pattern unique to the service. |
-| [Plan the aggregated namespace](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-namespace) | architecture-patterns | 0.65 | Describes how to plan and structure the aggregated namespace and storage target mappings, which is a product-specific architectural pattern for this service. |
-| [Populate the cache by manual file copy](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-manual) | integrations | 0.65 | Covers multi-threaded cp-based copy patterns specifically for populating Blob storage used by HPC Cache, a product-specific ingest/integration pattern. |
-| [Recover from a regional outage](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-region-recovery) | architecture-patterns | 0.65 | Describes a specific failover strategy using multi-region-accessible storage and DNS for Azure HPC Cache; this is a product-specific DR architecture pattern rather than generic theory. |
-| [Manage the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-manage) | configuration | 0.60 | Covers operational controls (start/stop, delete, flush, software update) and likely includes product-specific management behaviors and options. |
-| [Prerequisites](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-prerequisites) | deployment | 0.60 | Prerequisites typically include specific network, SKU, or platform requirements that must be met before deployment, which are product-specific deployment constraints. |
-| [Set up Azure CLI for Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/az-cli-prerequisites) | configuration | 0.60 | Lists prerequisite setup steps specific to using Azure CLI with HPC Cache, including environment and tool configuration beyond generic CLI usage. |
+| [Troubleshoot NFS storage target creation](https://learn.microsoft.com/en-us/azure/hpc-cache/troubleshoot-nas) | troubleshooting | 0.85 | Provides symptom-based guidance for NFS storage target creation failures, including port checks, access configuration, and less common issues, which are product-specific troubleshooting steps. |
+| [Use customer-managed encryption keys](https://learn.microsoft.com/en-us/azure/hpc-cache/customer-keys) | security | 0.85 | Describes using Azure Key Vault for CMK instead of Microsoft-managed keys, including product-specific encryption behavior and configuration steps. |
+| [Customize access policies](https://learn.microsoft.com/en-us/azure/hpc-cache/access-policies) | security | 0.80 | Covers product-specific access policy configuration (root squash, read/write controls per host/network) applied to namespace paths, which are concrete security settings. |
+| [Load balance client traffic](https://learn.microsoft.com/en-us/azure/hpc-cache/client-load-balancing) | best-practices | 0.80 | Provides concrete methods for DNS-based round-robin and other load-balancing approaches using multiple cache IPs, with guidance tied to throughput and workflow complexity. |
+| [Prime the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/prime-cache) | best-practices | 0.80 | Explains how to pre-load working sets into the cache (cache warming) and when to use it to reduce latency, which is a product-specific performance optimization pattern. |
+| [Set up directory services](https://learn.microsoft.com/en-us/azure/hpc-cache/directory-services) | security | 0.80 | Explains enabling extended groups, integrating with external directory sources, and group membership limits, which are detailed authentication/authorization configurations. |
+| [Use NFS-mounted blob storage with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/nfs-blob-considerations) | best-practices | 0.80 | Details procedures and limitations for ADLS-NFS storage targets, including strategies and gotchas unique to using NFS-enabled Blob with HPC Cache. |
+| [Work around Blob storage account firewall settings](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-blob-firewall-fix) | troubleshooting | 0.80 | Describes a specific failure mode when using selected networks in storage firewalls and gives a concrete workaround until a fix is available, which is targeted troubleshooting. |
+| [Configure optional settings](https://learn.microsoft.com/en-us/azure/hpc-cache/configuration) | configuration | 0.75 | Describes specific networking settings (MTU, custom NTP, DNS) and snapshot behavior for Blob targets, including default values and when to change them. |
+| [Customize file write-back](https://learn.microsoft.com/en-us/azure/hpc-cache/custom-flush-script) | integrations | 0.75 | Describes a specific Python utility and library for on-demand file write-back to back-end storage, including usage patterns unique to this product. |
+| [Move data to blob storage](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest) | best-practices | 0.75 | Provides recommended strategies and patterns for efficiently populating Blob storage for use with HPC Cache, including workflow-specific guidance beyond generic copying. |
+| [Use Azure NetApp Files with Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-netapp) | integrations | 0.75 | Explains how to use Azure NetApp Files as a storage target, including setup tips and combined behavior, which are product-specific integration patterns. |
+| [Add namespace paths](https://learn.microsoft.com/en-us/azure/hpc-cache/add-namespace-paths) | configuration | 0.70 | Explains configuring client-facing namespace paths for storage targets, a product-specific configuration of the aggregated namespace. |
+| [Add storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-add-storage) | configuration | 0.70 | Describes defining NFS and Blob storage targets, DNS requirements, and network accessibility, which are concrete configuration details unique to this service. |
+| [Decide if HPC Cache is the right solution](https://learn.microsoft.com/en-us/azure/hpc-cache/usage-scenarios) | decision-making | 0.70 | Provides product-specific guidance on which HPC workloads are suitable or unsuitable for Azure HPC Cache, including scenario-based recommendations rather than generic concepts. |
+| [Edit storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-edit-storage) | configuration | 0.70 | Explains how to change access policies, usage models, and namespace paths per storage target, which are specific configuration options for the service. |
+| [Increase quota](https://learn.microsoft.com/en-us/azure/hpc-cache/increase-quota) | limits-quotas | 0.70 | Focuses on subscription quotas for number of caches and how to request increases; while numbers aren’t in the summary, the page is quota-specific and tied to product limits. |
+| [Move a cache](https://learn.microsoft.com/en-us/azure/hpc-cache/move-resource) | deployment | 0.70 | Explains constraints (cache tied to region) and the required pattern of duplicating resources in a new region, which is product-specific deployment and migration guidance. |
+| [Populate the cache by manual file copy](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-manual) | best-practices | 0.70 | Shows multi-threaded cp-based strategies to optimize copy speed for this product’s Blob targets, which is concrete, product-specific performance guidance. |
+| [Populate the cache with msrsync](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-msrsync) | integrations | 0.70 | Describes using the msrsync tool with product-specific guidance to move data into Blob storage targets, including parallel rsync usage tailored to HPC Cache. |
+| [Populate the cache with parallel copy](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-ingest-parallelcp) | integrations | 0.70 | Gives detailed instructions for a specific parallel copy script, including script parameters and usage patterns to integrate with Blob storage targets. |
+| [Recover from a regional outage](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-region-recovery) | architecture-patterns | 0.70 | Provides a product-specific disaster recovery pattern using multi-region caches and shared back-end storage, including when and how to use this pattern. |
+| [Security information](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-security-info) | security | 0.70 | Security information page for the service; likely includes product-specific security behaviors, configuration details, and possibly RBAC or network security specifics. |
+| [Understand cache usage models](https://learn.microsoft.com/en-us/azure/hpc-cache/cache-usage-models) | decision-making | 0.70 | Explains different cache usage models (read-only vs read/write and related settings) and how to choose among them for specific workflows, which is product-specific decision guidance. |
+| [View and manage storage targets](https://learn.microsoft.com/en-us/azure/hpc-cache/manage-storage-targets) | configuration | 0.70 | Covers suspending, removing, force deleting, flushing, and allocating cache space per storage target, which are detailed configuration and management operations. |
+| [Connect to the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-mount) | configuration | 0.65 | Describes mount command composition and recommended options generated by the service, which are product-specific client configuration details. |
+| [Manage the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-manage) | configuration | 0.65 | Details management actions (start/stop, delete, flush, software update) via portal and CLI, which are concrete operational configuration steps. |
+| [Metrics and monitoring](https://learn.microsoft.com/en-us/azure/hpc-cache/metrics) | configuration | 0.65 | Explains product-specific metrics pages (Metrics, Cache report, Client status) and what they show, which is detailed monitoring configuration for this service. |
+| [Plan the aggregated namespace](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-namespace) | architecture-patterns | 0.65 | Describes product-specific virtual namespace design patterns and how to map storage targets to client-facing paths, including when to change back-end storage without client changes. |
+| [Prerequisites](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-prerequisites) | configuration | 0.65 | Prerequisites for using the service typically list specific network, version, and subscription requirements that are product-specific configuration constraints. |
+| [Set up Azure CLI for Azure HPC Cache](https://learn.microsoft.com/en-us/azure/hpc-cache/az-cli-prerequisites) | configuration | 0.65 | Lists CLI-specific prerequisites and setup steps required before creating or modifying HPC Cache resources, which are concrete configuration requirements. |
+| [Create the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-create) | deployment | 0.60 | Covers how to create the cache resource using Azure portal and CLI, which is product-specific deployment configuration rather than generic commands. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Create the cache](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-create) | 0.40 | Creation guide via portal/CLI is likely a step-by-step tutorial without detailed configuration matrices, limits, or advanced patterns. |
-| [Increase quota](https://learn.microsoft.com/en-us/azure/hpc-cache/increase-quota) | 0.30 | Describes using the portal to request a quota increase but does not list any specific quota values or tier-based limits. |
-| [Contact support](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-support-ticket) | 0.20 | Explains how to open a support ticket in the Azure portal; procedural and generic with no product-specific limits, configs, or error mappings. |
-| [What is Azure HPC Cache?](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-overview) | 0.20 | High-level product overview and retirement notice without detailed limits, configuration parameters, or error mappings. |
+| [Contact support](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-support-ticket) | 0.30 | Describes how to open a support ticket in the portal; procedural help without technical configuration, limits, or troubleshooting mappings. |
+| [What is Azure HPC Cache?](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-overview) | 0.20 | High-level product overview and retirement notice without detailed limits, configs, or error mappings. |

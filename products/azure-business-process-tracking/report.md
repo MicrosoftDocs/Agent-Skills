@@ -1,12 +1,8 @@
 ---
-generated_at: '2026-02-04'
+generated_at: '2026-02-28'
 category_descriptions:
-  deployment: Deploying business processes and tracking profiles to Azure, and setting
-    up CI/CD pipelines (build, release, automation) for Business Process Tracking
-    deployments.
-  integrations: Designing Logic Apps workflows that represent business process stages,
-    linking process milestones to workflow steps, and tracking execution across integrated
-    systems
+  deployment: Guidance on setting up automated CI/CD pipelines to build, test, and
+    deploy Azure Business Process Tracking solutions using DevOps tools and best practices.
 ---
 # Azure Business Process Tracking Crawl Report
 
@@ -15,38 +11,28 @@ category_descriptions:
 - **Total Pages**: 6
 - **Fetched**: 6
 - **Fetch Failed**: 0
-- **Classified**: 3
-- **Unclassified**: 3
-
-### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 6
-- **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-business-process-tracking/azure-business-process-tracking.csv`
+- **Classified**: 1
+- **Unclassified**: 5
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| deployment | 2 | 33.3% |
-| integrations | 1 | 16.7% |
-| *(Unclassified)* | 3 | 50.0% |
-
-## Changes
+| deployment | 1 | 16.7% |
+| *(Unclassified)* | 5 | 83.3% |
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Set up CI/CD pipelines](https://learn.microsoft.com/en-us/azure/business-process-tracking/set-up-continuous-integration-deployment) | deployment | 0.70 | Focuses on Azure DevOps pipelines for infrastructure, CI, and CD for Business Process Tracking mapped to Standard workflows; this is a deployment/CI-CD pattern with product-specific automation steps and environment handling, beyond generic pipeline usage. |
-| [Deploy business process and tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/deploy-business-process) | deployment | 0.65 | Covers deploying business processes and tracking profiles to Standard Logic App resources; this is a product-specific deployment flow likely including required resources, constraints, and environment-specific details beyond generic deployment knowledge. |
-| [Map business process to workflow](https://learn.microsoft.com/en-us/azure/business-process-tracking/map-business-process-workflow) | integrations | 0.60 | Describes mapping business process stages, transaction IDs, and business properties to specific operations and outputs in Standard Logic Apps workflows; this is a product-specific integration pattern between Business Process Tracking and Logic Apps, likely including concrete field/parameter mappings. |
+| [Set up CI/CD pipelines](https://learn.microsoft.com/en-us/azure/business-process-tracking/set-up-continuous-integration-deployment) | deployment | 0.65 | Page is specifically about creating Azure DevOps pipelines for infrastructure, CI, and CD for Business Process Tracking mapped to Logic Apps Standard workflows. This is product-specific deployment guidance and likely includes environment-specific pipeline configuration and constraints, fitting the deployment sub-skill. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Create a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/create-business-process) | 0.30 | How-to modeling guide for business processes; appears procedural without detailed configuration tables, limits, or product-specific edge cases. |
-| [Manage a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/manage-business-process) | 0.30 | Management operations (edit, copy, discard changes, undeploy) are likely UI-driven procedural steps without detailed configuration tables, limits, or diagnostic mappings. |
-| [About Azure Business Process Tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/overview) | 0.20 | High-level conceptual overview of Azure Business Process Tracking; no concrete limits, configs, error codes, or decision matrices. |
+| [Deploy business process and tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/deploy-business-process) | 0.30 | Deployment-focused how-to for a business process and tracking profile, but summary suggests generic steps rather than tier matrices, constraints, or CI/CD specifics. |
+| [Map business process to workflow](https://learn.microsoft.com/en-us/azure/business-process-tracking/map-business-process-workflow) | 0.30 | Describes mapping business process stages to Logic Apps workflows; likely a step-by-step mapping tutorial without detailed configuration tables or error/limit data. |
+| [Create a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/create-business-process) | 0.20 | How-to modeling guide for creating business processes; appears procedural without product-specific limits, config parameter tables, or troubleshooting mappings. |
+| [Manage a business process](https://learn.microsoft.com/en-us/azure/business-process-tracking/manage-business-process) | 0.20 | Management operations (edit, copy, discard changes, undeploy) are procedural UI/usage steps; summary does not indicate presence of limits, config tables, or troubleshooting mappings. |
+| [About Azure Business Process Tracking](https://learn.microsoft.com/en-us/azure/business-process-tracking/overview) | 0.10 | High-level conceptual overview of Azure Business Process Tracking; no concrete limits, configuration tables, error codes, or decision matrices. |

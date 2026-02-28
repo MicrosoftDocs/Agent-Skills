@@ -1,0 +1,54 @@
+---
+generated_at: '2026-02-28'
+category_descriptions:
+  integrations: Patterns and APIs for integrating Impact Reporting with Azure Monitor
+    alerts, Logic Apps, HPC VM node health, Service Health, and accessing insights
+    via API and portal
+  troubleshooting: Diagnosing and fixing Azure Impact Reporting connector issues,
+    including connection failures, data sync problems, configuration errors, and common
+    troubleshooting steps.
+  configuration: 'Configuring Azure Impact Reporting: creating alert connectors and
+    retrieving valid impact and HPC Guest Health category values for correct classification.'
+---
+# Azure Impact Reporting Crawl Report
+
+## Summary
+
+- **Total Pages**: 14
+- **Fetched**: 14
+- **Fetch Failed**: 0
+- **Classified**: 9
+- **Unclassified**: 5
+
+## Classification Statistics
+
+| Type | Count | Percentage |
+|------|-------|------------|
+| configuration | 3 | 21.4% |
+| integrations | 5 | 35.7% |
+| troubleshooting | 1 | 7.1% |
+| *(Unclassified)* | 5 | 35.7% |
+
+## Classified Pages
+
+| TOC Title | Type | Confidence | Reason |
+|-----------|------|------------|--------|
+| [Troubleshoot impact connectors for Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/connectors-troubleshooting-guide) | troubleshooting | 0.85 | Explicit troubleshooting guide for connectors; likely organized by specific error messages/codes and their resolutions, which are product-specific diagnostic mappings. |
+| [Impact categories](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-categories) | configuration | 0.80 | Specifies that impact categories must start with 'Resource.HPC' and mentions three main types. This is concrete, product-specific configuration data about allowed category values. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/azure-monitor-connector) | integrations | 0.75 | Describes the Azure Monitor impact connector for alerts and how alerts are transformed into impact reports. Likely includes connector configuration fields and mapping behavior unique to this integration. |
+| [Create an impact connector for Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/create-azure-monitor-connector) | configuration | 0.70 | Details creating impact connectors via Azure CLI, PowerShell, or portal. This typically includes resource properties, required parameters, and configuration options specific to the connector resource. |
+| [Report impacts by using a logic app](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/creating-logic-app) | integrations | 0.70 | Explains using a Logic App as a REST client for impact reporting. This typically includes connector/action configuration, request body schema, and product-specific integration patterns. |
+| [Report a resource impact](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/report-impact) | integrations | 0.65 | Describes using Azure Service Health 'Report an issue' pane, REST API, and Azure Monitor connector to submit impact reports. Likely includes request schema, parameters, and integration-specific details beyond generic tutorials. |
+| [Report node health](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-impact-report) | integrations | 0.65 | Shows how to use Guest Health Reporting to share VM health status. Likely includes request schema, required fields, and API usage specific to HPC node health reporting. |
+| [View allowed impact categories](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-categories) | configuration | 0.60 | Focuses on obtaining a valid list of impact categories via REST API. This implies specific category identifiers/values and how they must be used when configuring impact reports. |
+| [View reported impacts](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/view-impact-insights) | integrations | 0.60 | Covers viewing impact reports through REST API, Azure Resource Graph Explorer, and portal. Likely documents specific API/query parameters and resource graph usage patterns unique to this service. |
+
+## Unclassified Pages
+
+| TOC Title | Confidence | Reason |
+|-----------|------------|--------|
+| [FAQ for Azure Impact Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/faq) | 0.40 | Azure Impact Reporting FAQ; likely general questions and answers without structured troubleshooting, configuration parameter tables, or numeric limits. |
+| [FAQ for Guest Health Reporting](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-faq) | 0.40 | Guest Health Reporting FAQ; summary suggests general Q&A without clear indication of detailed error-code mappings, config tables, or numeric limits. |
+| [FAQ for impact connectors](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/connectors-faq) | 0.40 | FAQ for connectors; summary does not indicate detailed error codes, config tables, or numeric limits. Likely conceptual Q&A rather than deep technical reference. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/guest-health-overview) | 0.30 | Guest Health Reporting overview for HPC; appears conceptual (what it is, why) without specific configuration parameters, limits, or troubleshooting mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-impact-reporting/overview) | 0.20 | High-level overview of Azure Impact Reporting; summary indicates conceptual description of service and preview notice without concrete limits, configs, or error mappings. |

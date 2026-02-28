@@ -3,7 +3,7 @@ name: azure-internet-peering
 description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Internet Peering Skill
@@ -22,9 +22,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L27-L30 | Diagnosing and resolving issues with Azure Internet Peering prefix requirements, including validation failures, configuration problems, and how to meet Microsoft’s peering criteria. |
+| Troubleshooting | L27-L30 | Diagnosing and validating Azure Peering Service prefixes, including prefix registration checks, routing verification, and troubleshooting connectivity or reachability issues. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Meet and troubleshoot Azure Peering prefix requirements | https://learn.microsoft.com/en-us/azure/internet-peering/peering-registered-prefix-requirements |
+| Validate and troubleshoot Azure Peering Service prefixes | https://learn.microsoft.com/en-us/azure/internet-peering/peering-registered-prefix-requirements |
