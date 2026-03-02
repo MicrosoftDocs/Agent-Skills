@@ -337,37 +337,7 @@ description: What it does    # When to use it, max 1024 chars
 
 ## 🤝 How to Contribute
 
-We welcome contributions from the community! To add a new skill:
-
-1. **Fork the repository**
-2. **Create a new directory** inside `skills/` for your skill
-3. **Add a `SKILL.md`** with the required frontmatter:
-   ```yaml
-   ---
-   name: your-skill-name
-   description: Brief description of what this skill covers
-   compatibility: Requirements (e.g., network access)
-   ---
-   ```
-4. **Add documentation links** organized by category
-5. **Submit a Pull Request**
-
-### Contribution Guidelines
-
-- Follow the existing skill structure (see `skills/azure-functions/SKILL.md` as an example)
-- Use official Microsoft Learn documentation URLs
-- Organize links by category (Best Practices, Architecture, Troubleshooting, etc.)
-- Test your skill with at least one AI assistant
-
-### ⚠️ Important
-
-**Do NOT edit `SKILL.md` files that contain metadata with `generated_at` and `generator` fields.** These files are automatically generated and maintained by tools.
-
-```yaml
-metadata:
-  generated_at: "2026-02-24"
-  generator: "docs2skills/1.0.0"
-```
+Due to limited maintainer capacity right now, we do **not** accept contributions that manually create or edit any skills. Please update the relevant Microsoft Learn documentation, then create an issue to request a re-crawl, or wait for our automatic weekly crawl. We appreciate your understanding, and things may change in the future.
 
 ---
 
