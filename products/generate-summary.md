@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-02 05:16:13
-**Total Duration**: 21m 49s
+**Generated**: 2026-03-02 16:00:59
+**Total Duration**: 29m 48s
 
 ## Product Crawl Summary
 
@@ -14,422 +14,430 @@ Quick overview for reviewers. See individual product reports for details.
 | 3 | Azure Kubernetes Service Edge Essentials | 332 | 266 | 0 | 0 | 0 | OK |
 | 4 | Azure Artifact Signing | 14 | 8 | 0 | 0 | 0 | OK |
 | 5 | Azure Advisor | 33 | 27 | 0 | 0 | 0 | OK |
-| 6 | Azure AI Foundry | 0 | 0 | 0 | 0 | 0 | OK |
-| 7 | Azure AI Foundry Local | 0 | 0 | 0 | 0 | 0 | OK |
-| 8 | Azure Analysis Services | 1 | 1 | 0 | 0 | 0 | OK |
-| 9 | Azure AI Anomaly Detector | 24 | 11 | 0 | 0 | 0 | OK |
-| 10 | Azure API Management | 276 | 229 | 0 | 0 | 0 | OK |
-| 11 | Azure App Configuration | 159 | 134 | 0 | 0 | 0 | OK |
-| 12 | Azure App Service | 247 | 163 | 0 | 0 | 0 | OK |
-| 13 | Azure App Testing | 72 | 57 | 0 | 0 | 0 | OK |
-| 14 | Azure Application Gateway | 185 | 144 | 0 | 0 | 0 | OK |
-| 15 | Azure Arc | 415 | 269 | 0 | 0 | 0 | OK |
-| 16 | Azure Artifacts | 72 | 63 | 0 | 0 | 0 | OK |
-| 17 | Azure Attestation | 33 | 22 | 0 | 0 | 0 | OK |
-| 18 | Azure Automation | 115 | 92 | 0 | 0 | 0 | OK |
-| 19 | Azure Backup | 393 | 240 | 0 | 0 | 0 | OK |
-| 20 | Azure Bastion | 41 | 25 | 0 | 0 | 0 | OK |
-| 21 | Azure Batch | 114 | 84 | 0 | 0 | 0 | OK |
-| 22 | Azure Blob Storage | 325 | 285 | 0 | 0 | 0 | OK |
-| 23 | Azure Blueprints | 40 | 34 | 0 | 0 | 0 | OK |
-| 24 | Azure Boards | 126 | 51 | 0 | 0 | 0 | OK |
-| 25 | Azure AI Bot Service | 190 | 153 | 0 | 0 | 0 | OK |
-| 26 | Azure Cache for Redis | 62 | 55 | 0 | 0 | 0 | OK |
-| 27 | Azure Cloud Services | 45 | 31 | 0 | 0 | 0 | OK |
-| 28 | Azure Cloud Shell | 19 | 5 | 0 | 0 | 0 | OK |
-| 29 | Azure AI Search | 299 | 234 | 0 | 0 | 0 | OK |
-| 30 | Azure Communication Services | 516 | 414 | 0 | 0 | 0 | OK |
-| 31 | Azure Container Apps | 203 | 137 | 0 | 0 | 0 | OK |
-| 32 | Azure Container Instances | 83 | 54 | 0 | 0 | 0 | OK |
-| 33 | Azure Container Registry | 121 | 89 | 0 | 0 | 0 | OK |
-| 34 | Azure Cosmos DB | 977 | 776 | 0 | 0 | 0 | OK |
-| 35 | Azure Cost Management | 264 | 194 | 0 | 0 | 0 | OK |
-| 36 | Azure AI Custom Vision | 23 | 17 | 0 | 0 | 0 | OK |
-| 37 | Azure CycleCloud | 113 | 87 | 0 | 0 | 0 | OK |
-| 38 | Azure Data Box | 79 | 48 | 0 | 0 | 0 | OK |
-| 39 | Azure Data Explorer | 197 | 110 | 0 | 0 | 0 | OK |
-| 40 | Azure Data Factory | 519 | 447 | 0 | 0 | 0 | OK |
-| 41 | Azure Data Science Virtual Machines | 25 | 19 | 0 | 0 | 0 | OK |
-| 42 | Azure Data Share | 25 | 16 | 0 | 0 | 0 | OK |
-| 43 | Azure Database for MariaDB | 0 | 0 | 0 | 0 | 0 | OK |
-| 44 | Azure Database Migration service | 31 | 15 | 0 | 0 | 0 | OK |
-| 45 | Azure Database for MySQL | 177 | 116 | 0 | 1 | 0 | OK |
-| 46 | Azure Database for PostgreSQL | 309 | 211 | 0 | 1 | 0 | OK |
-| 47 | Azure Databricks | 4342 | 2952 | 0 | 0 | 0 | OK |
-| 48 | Azure DDos Protection | 33 | 18 | 0 | 0 | 0 | OK |
-| 49 | Azure Dedicated HSM | 16 | 12 | 0 | 0 | 0 | OK |
-| 50 | Azure DevOps | 939 | 289 | 0 | 0 | 0 | OK |
-| 51 | Azure Pipelines | 566 | 510 | 0 | 0 | 0 | OK |
-| 52 | Azure DevTest Labs | 98 | 68 | 0 | 0 | 0 | OK |
-| 53 | Azure Digital Twins | 66 | 55 | 0 | 0 | 0 | OK |
-| 54 | Azure DNS | 75 | 28 | 0 | 0 | 0 | OK |
-| 55 | Azure Event Grid | 259 | 180 | 0 | 0 | 0 | OK |
-| 56 | Azure Event Hubs | 111 | 72 | 0 | 0 | 0 | OK |
-| 57 | Azure ExpressRoute | 99 | 87 | 0 | 0 | 0 | OK |
-| 58 | Azure Files | 78 | 71 | 0 | 0 | 0 | OK |
-| 59 | Azure Firewall | 84 | 61 | 0 | 0 | 0 | OK |
-| 60 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
-| 61 | Azure Front Door | 104 | 83 | 0 | 0 | 0 | OK |
-| 62 | Azure Functions | 361 | 297 | 0 | 0 | 0 | OK |
-| 63 | Azure HDInsight | 425 | 334 | 0 | 0 | 0 | OK |
-| 64 | Azure Health Data Services | 228 | 166 | 0 | 0 | 0 | OK |
-| 65 | Azure HPC Cache | 34 | 32 | 0 | 0 | 0 | OK |
-| 66 | Azure AI Immersive Reader | 18 | 15 | 0 | 0 | 0 | OK |
-| 67 | Azure Information Protection | 21 | 16 | 0 | 0 | 0 | OK |
-| 68 | Azure IoT | 40 | 18 | 0 | 0 | 0 | OK |
-| 69 | Azure IoT Central | 89 | 57 | 0 | 0 | 0 | OK |
-| 70 | Azure IoT Edge | 98 | 66 | 0 | 0 | 0 | OK |
-| 71 | Azure IoT Hub | 203 | 136 | 0 | 0 | 0 | OK |
-| 72 | Azure IoT Operations | 99 | 77 | 0 | 0 | 0 | OK |
-| 73 | Azure Key Vault | 164 | 106 | 0 | 0 | 0 | OK |
-| 74 | Azure Kubernetes Service (AKS) | 573 | 450 | 0 | 0 | 0 | OK |
-| 75 | Azure Lab Services | 104 | 79 | 0 | 0 | 0 | OK |
-| 76 | Azure Lighthouse | 28 | 22 | 0 | 0 | 0 | OK |
-| 77 | Azure Load Balancer | 94 | 48 | 0 | 0 | 0 | OK |
-| 78 | Azure Local | 313 | 241 | 0 | 0 | 0 | OK |
-| 79 | Azure Logic Apps | 229 | 196 | 0 | 0 | 0 | OK |
-| 80 | Azure Machine Learning | 625 | 486 | 0 | 5 | 0 | OK |
-| 81 | Azure Managed Applications | 62 | 53 | 0 | 0 | 0 | OK |
-| 82 | Azure Managed Grafana | 42 | 34 | 0 | 0 | 0 | OK |
-| 83 | Azure Managed Lustre | 29 | 27 | 0 | 0 | 0 | OK |
-| 84 | Azure Managed Redis | 58 | 49 | 0 | 0 | 0 | OK |
-| 85 | Azure Maps | 145 | 113 | 0 | 0 | 0 | OK |
-| 86 | Azure AI Metrics Advisor | 19 | 8 | 0 | 0 | 0 | OK |
-| 87 | Azure Migrate | 196 | 119 | 0 | 0 | 0 | OK |
-| 88 | Azure Monitor | 2344 | 1911 | 1 | 2 | 0 | OK |
-| 89 | Azure NAT Gateway | 26 | 23 | 0 | 0 | 0 | OK |
-| 90 | Azure NetApp Files | 224 | 155 | 0 | 0 | 0 | OK |
-| 91 | Azure Network Watcher | 62 | 29 | 0 | 0 | 0 | OK |
-| 92 | Azure Notification Hubs | 67 | 53 | 0 | 0 | 0 | OK |
-| 93 | Azure Open Datasets | 44 | 1 | 0 | 0 | 0 | OK |
-| 94 | Azure AI Personalizer | 35 | 12 | 0 | 0 | 0 | OK |
-| 95 | Azure Policy | 156 | 96 | 0 | 0 | 0 | OK |
-| 96 | Azure Portal | 30 | 12 | 0 | 0 | 0 | OK |
-| 97 | Azure Private Link | 49 | 21 | 0 | 0 | 0 | OK |
-| 98 | Azure Quantum | 135 | 51 | 0 | 0 | 0 | OK |
-| 99 | Azure Queue Storage | 24 | 23 | 0 | 0 | 0 | OK |
-| 100 | Azure Role-based access control | 104 | 97 | 0 | 0 | 0 | OK |
-| 101 | Azure Red Hat OpenShift | 66 | 56 | 0 | 0 | 0 | OK |
-| 102 | Azure Relay | 27 | 11 | 0 | 0 | 0 | OK |
-| 103 | Azure Repos | 206 | 134 | 0 | 0 | 0 | OK |
-| 104 | Azure Resource Graph | 33 | 21 | 0 | 0 | 0 | OK |
-| 105 | Azure Resource Manager | 462 | 355 | 0 | 0 | 0 | OK |
-| 106 | SAP HANA on Azure Large Instances | 203 | 181 | 0 | 0 | 0 | OK |
-| 107 | Azure Service Bus | 122 | 93 | 0 | 0 | 0 | OK |
-| 108 | Azure Service Fabric | 403 | 316 | 0 | 0 | 0 | OK |
-| 109 | Azure Service Health | 46 | 24 | 0 | 0 | 0 | OK |
-| 110 | Azure SignalR Service | 73 | 60 | 0 | 0 | 0 | OK |
-| 111 | Azure Site Recovery | 202 | 139 | 0 | 0 | 0 | OK |
-| 112 | Azure US Government | 40 | 32 | 0 | 0 | 0 | OK |
-| 113 | Azure AI Speech | 178 | 107 | 0 | 0 | 0 | OK |
-| 114 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
-| 115 | Azure SQL Database | 583 | 440 | 0 | 0 | 0 | OK |
-| 116 | Azure Stack Edge | 237 | 145 | 0 | 0 | 0 | OK |
-| 117 | Azure Storage | 166 | 124 | 0 | 0 | 0 | OK |
-| 118 | Azure Stream Analytics | 168 | 114 | 0 | 0 | 0 | OK |
-| 119 | Azure Synapse Analytics | 446 | 262 | 0 | 0 | 0 | OK |
-| 120 | Azure Table Storage | 15 | 13 | 0 | 0 | 0 | OK |
-| 121 | Azure Test Plans | 34 | 3 | 0 | 0 | 0 | OK |
-| 122 | Azure Traffic Manager | 44 | 29 | 0 | 0 | 0 | OK |
-| 123 | Azure Translator | 125 | 77 | 0 | 0 | 0 | OK |
-| 124 | Azure AI Video Indexer | 77 | 58 | 0 | 0 | 0 | OK |
-| 125 | Azure Virtual Desktop | 148 | 120 | 0 | 0 | 0 | OK |
-| 126 | Azure Virtual Machines | 799 | 588 | 0 | 0 | 0 | OK |
-| 127 | Azure Virtual Network | 139 | 66 | 0 | 0 | 0 | OK |
-| 128 | Azure Virtual WAN | 129 | 91 | 0 | 0 | 0 | OK |
-| 129 | Azure Virtual Machine Scale Sets | 93 | 83 | 0 | 0 | 0 | OK |
-| 130 | Azure VMware Solution | 134 | 105 | 0 | 0 | 0 | OK |
-| 131 | Azure VPN Gateway | 129 | 113 | 0 | 0 | 0 | OK |
-| 132 | Azure Web Application Firewall | 80 | 68 | 0 | 0 | 0 | OK |
-| 133 | Azure Web PubSub | 111 | 81 | 0 | 0 | 0 | OK |
-| 134 | Chaos Studio | 51 | 31 | 0 | 0 | 0 | OK |
-| 135 | Azure AI Content Safety | 34 | 14 | 0 | 0 | 0 | OK |
-| 136 | Azure Data Manager for Agriculture | 26 | 18 | 0 | 0 | 0 | OK |
-| 137 | Azure AI Document Intelligence | 76 | 35 | 0 | 0 | 0 | OK |
-| 138 | Azure AI Language | 197 | 104 | 0 | 0 | 0 | OK |
-| 139 | Microsoft Planetary Computer Pro | 45 | 32 | 0 | 0 | 0 | OK |
-| 140 | Playwright Workspaces | 22 | 17 | 0 | 0 | 0 | OK |
-| 141 | Azure Route Server | 21 | 13 | 0 | 0 | 0 | OK |
-| 142 | Azure Static Web Apps | 79 | 57 | 0 | 0 | 0 | OK |
-| 143 | Azure Update Manager | 84 | 55 | 0 | 0 | 0 | OK |
-| 144 | Azure Virtual Network Manager | 52 | 22 | 0 | 0 | 0 | OK |
-| 145 | Azure Active Directory B2C | 289 | 258 | 0 | 0 | 0 | OK |
-| 146 | Azure Api Center | 34 | 21 | 0 | 0 | 0 | OK |
-| 147 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | OK |
-| 148 | Azure Impact Reporting | 14 | 9 | 0 | 0 | 0 | OK |
-| 149 | Azure Large Instances | 10 | 3 | 0 | 0 | 0 | OK |
-| 150 | Azure Baremetal Infrastructure | 8 | 2 | 0 | 0 | 0 | OK |
-| 151 | Azure Business Process Tracking | 6 | 1 | 0 | 0 | 0 | OK |
-| 152 | Azure Carbon Optimization | 11 | 4 | 0 | 0 | 0 | OK |
-| 153 | Azure Cloud Hsm | 18 | 12 | 0 | 0 | 0 | OK |
-| 154 | Azure Confidential Computing | 69 | 50 | 0 | 0 | 0 | OK |
-| 155 | Azure Confidential Ledger | 29 | 19 | 0 | 0 | 0 | OK |
-| 156 | Azure Copilot | 38 | 20 | 0 | 0 | 0 | OK |
-| 157 | Azure Data Api Builder | 109 | 83 | 0 | 0 | 0 | OK |
-| 158 | Azure Defender For Cloud | 470 | 259 | 0 | 0 | 0 | OK |
-| 159 | Azure Defender For Iot | 180 | 117 | 0 | 0 | 0 | OK |
-| 160 | Azure Deployment Environments | 32 | 14 | 0 | 0 | 0 | OK |
-| 161 | Azure Dev Box | 64 | 44 | 0 | 0 | 0 | OK |
-| 162 | Azure Education Hub | 11 | 3 | 0 | 0 | 0 | OK |
-| 163 | Azure Energy Data Services | 51 | 34 | 0 | 0 | 0 | OK |
-| 164 | Azure Extended Zones | 16 | 3 | 0 | 0 | 0 | OK |
-| 165 | Azure External Attack Surface Management | 22 | 12 | 0 | 0 | 0 | OK |
-| 166 | Azure Firmware Analysis | 13 | 11 | 0 | 0 | 0 | OK |
-| 167 | Azure Health Bot | 77 | 46 | 0 | 0 | 0 | OK |
-| 168 | Azure Import Export | 14 | 6 | 0 | 0 | 0 | OK |
-| 169 | Azure Industry | 77 | 26 | 0 | 0 | 0 | OK |
-| 170 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | OK |
-| 171 | Azure Internet Peering | 23 | 1 | 0 | 0 | 0 | OK |
-| 172 | Azure Network Function Manager | 8 | 2 | 0 | 0 | 0 | OK |
-| 173 | Azure Networking | 22 | 12 | 0 | 0 | 0 | OK |
-| 174 | Azure Operator Insights | 0 | 0 | 0 | 0 | 0 | OK |
-| 175 | Azure Operator Nexus | 216 | 159 | 0 | 0 | 0 | OK |
-| 176 | Azure Operator Service Manager | 47 | 23 | 0 | 0 | 0 | OK |
-| 177 | Azure Oracle | 11 | 6 | 0 | 0 | 0 | OK |
-| 178 | Azure Osconfig | 29 | 15 | 0 | 0 | 0 | OK |
-| 179 | Azure Partner Solutions | 101 | 27 | 0 | 0 | 0 | OK |
-| 180 | Azure Payment Hsm | 28 | 18 | 0 | 0 | 0 | OK |
-| 181 | Azure Peering Service | 10 | 1 | 0 | 0 | 0 | OK |
-| 182 | Azure Quotas | 15 | 1 | 0 | 0 | 0 | OK |
-| 183 | Azure Reliability | 98 | 31 | 0 | 0 | 0 | OK |
-| 184 | Azure Resiliency | 20 | 7 | 0 | 0 | 0 | OK |
-| 185 | Azure Scheduler | 0 | 0 | 0 | 0 | 0 | OK |
-| 186 | Azure Security | 126 | 54 | 0 | 0 | 0 | OK |
-| 187 | Azure Sentinel | 372 | 275 | 0 | 0 | 0 | OK |
-| 188 | Azure Service Connector | 63 | 35 | 0 | 0 | 0 | OK |
-| 189 | Azure Sre Agent | 27 | 17 | 0 | 0 | 0 | OK |
+| 6 | Azure AI Foundry Local | 16 | 14 | 0 | 0 | 0 | OK |
+| 7 | Azure Analysis Services | 1 | 1 | 0 | 0 | 0 | OK |
+| 8 | Azure AI Anomaly Detector | 24 | 11 | 0 | 0 | 0 | OK |
+| 9 | Azure API Management | 276 | 229 | 0 | 0 | 0 | OK |
+| 10 | Azure App Configuration | 159 | 134 | 0 | 0 | 0 | OK |
+| 11 | Azure App Service | 247 | 163 | 0 | 0 | 0 | OK |
+| 12 | Azure App Testing | 72 | 57 | 0 | 0 | 0 | OK |
+| 13 | Azure Application Gateway | 185 | 144 | 0 | 0 | 0 | OK |
+| 14 | Azure Arc | 415 | 269 | 0 | 3 | 0 | OK |
+| 15 | Azure Artifacts | 72 | 63 | 0 | 0 | 0 | OK |
+| 16 | Azure Attestation | 33 | 22 | 0 | 0 | 0 | OK |
+| 17 | Azure Automation | 115 | 92 | 0 | 0 | 0 | OK |
+| 18 | Azure Backup | 393 | 238 | 0 | 3 | 0 | OK |
+| 19 | Azure Bastion | 41 | 25 | 0 | 0 | 0 | OK |
+| 20 | Azure Batch | 114 | 84 | 0 | 0 | 0 | OK |
+| 21 | Azure Blob Storage | 325 | 285 | 0 | 0 | 0 | OK |
+| 22 | Azure Blueprints | 40 | 34 | 0 | 0 | 0 | OK |
+| 23 | Azure Boards | 126 | 35 | 0 | 62 | 0 | OK |
+| 24 | Azure AI Bot Service | 190 | 153 | 0 | 0 | 0 | OK |
+| 25 | Azure Cache for Redis | 62 | 55 | 0 | 0 | 0 | OK |
+| 26 | Azure Cloud Services | 45 | 31 | 0 | 0 | 0 | OK |
+| 27 | Azure Cloud Shell | 19 | 5 | 0 | 0 | 0 | OK |
+| 28 | Azure AI Search | 299 | 234 | 0 | 0 | 0 | OK |
+| 29 | Azure Communication Services | 516 | 414 | 0 | 0 | 0 | OK |
+| 30 | Azure Container Apps | 203 | 137 | 0 | 0 | 0 | OK |
+| 31 | Azure Container Instances | 83 | 54 | 0 | 0 | 0 | OK |
+| 32 | Azure Container Registry | 121 | 89 | 0 | 0 | 0 | OK |
+| 33 | Azure Cosmos DB | 977 | 776 | 0 | 0 | 0 | OK |
+| 34 | Azure Cost Management | 264 | 194 | 0 | 0 | 0 | OK |
+| 35 | Azure AI Custom Vision | 23 | 17 | 0 | 0 | 0 | OK |
+| 36 | Azure CycleCloud | 113 | 87 | 0 | 0 | 0 | OK |
+| 37 | Azure Data Box | 79 | 48 | 0 | 0 | 0 | OK |
+| 38 | Azure Data Explorer | 197 | 110 | 0 | 0 | 0 | OK |
+| 39 | Azure Data Factory | 519 | 447 | 0 | 0 | 0 | OK |
+| 40 | Azure Data Science Virtual Machines | 25 | 19 | 0 | 0 | 0 | OK |
+| 41 | Azure Data Share | 25 | 16 | 0 | 0 | 0 | OK |
+| 42 | Azure Database for MariaDB | 0 | 0 | 0 | 0 | 0 | OK |
+| 43 | Azure Database Migration service | 31 | 15 | 0 | 0 | 0 | OK |
+| 44 | Azure Database for MySQL | 177 | 116 | 0 | 0 | 0 | OK |
+| 45 | Azure Database for PostgreSQL | 309 | 211 | 0 | 0 | 0 | OK |
+| 46 | Azure Databricks | 4342 | 2952 | 0 | 0 | 0 | OK |
+| 47 | Azure DDos Protection | 33 | 18 | 0 | 0 | 0 | OK |
+| 48 | Azure Dedicated HSM | 16 | 12 | 0 | 0 | 0 | OK |
+| 49 | Azure DevOps | 939 | 289 | 0 | 0 | 0 | OK |
+| 50 | Azure Pipelines | 566 | 510 | 0 | 0 | 0 | OK |
+| 51 | Azure DevTest Labs | 98 | 68 | 0 | 0 | 0 | OK |
+| 52 | Azure Digital Twins | 66 | 55 | 0 | 0 | 0 | OK |
+| 53 | Azure DNS | 75 | 28 | 0 | 0 | 0 | OK |
+| 54 | Azure Event Grid | 259 | 180 | 0 | 0 | 0 | OK |
+| 55 | Azure Event Hubs | 111 | 72 | 0 | 0 | 0 | OK |
+| 56 | Azure ExpressRoute | 99 | 87 | 0 | 0 | 0 | OK |
+| 57 | Azure Files | 78 | 71 | 0 | 0 | 0 | OK |
+| 58 | Azure Firewall | 84 | 61 | 0 | 0 | 0 | OK |
+| 59 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
+| 60 | Azure Front Door | 104 | 82 | 0 | 1 | 0 | OK |
+| 61 | Azure Functions | 361 | 297 | 0 | 4 | 0 | OK |
+| 62 | Azure HDInsight | 425 | 334 | 0 | 0 | 0 | OK |
+| 63 | Azure Health Data Services | 228 | 166 | 0 | 0 | 0 | OK |
+| 64 | Azure HPC Cache | 34 | 32 | 0 | 0 | 0 | OK |
+| 65 | Azure AI Immersive Reader | 18 | 15 | 0 | 0 | 0 | OK |
+| 66 | Azure Information Protection | 21 | 16 | 0 | 0 | 0 | OK |
+| 67 | Azure IoT | 40 | 18 | 0 | 0 | 0 | OK |
+| 68 | Azure IoT Central | 89 | 57 | 0 | 0 | 0 | OK |
+| 69 | Azure IoT Edge | 98 | 66 | 0 | 0 | 0 | OK |
+| 70 | Azure IoT Hub | 203 | 136 | 0 | 0 | 0 | OK |
+| 71 | Azure IoT Operations | 99 | 77 | 0 | 1 | 0 | OK |
+| 72 | Azure Key Vault | 164 | 106 | 0 | 0 | 0 | OK |
+| 73 | Azure Kubernetes Service (AKS) | 573 | 450 | 0 | 0 | 0 | OK |
+| 74 | Azure Lab Services | 104 | 79 | 0 | 0 | 0 | OK |
+| 75 | Azure Lighthouse | 28 | 22 | 0 | 0 | 0 | OK |
+| 76 | Azure Load Balancer | 94 | 48 | 0 | 1 | 0 | OK |
+| 77 | Azure Local | 313 | 241 | 0 | 0 | 0 | OK |
+| 78 | Azure Logic Apps | 229 | 195 | 0 | 2 | 0 | OK |
+| 79 | Azure Machine Learning | 625 | 486 | 0 | 0 | 0 | OK |
+| 80 | Azure Managed Applications | 62 | 53 | 0 | 0 | 0 | OK |
+| 81 | Azure Managed Grafana | 42 | 34 | 0 | 0 | 0 | OK |
+| 82 | Azure Managed Lustre | 29 | 27 | 0 | 0 | 0 | OK |
+| 83 | Azure Managed Redis | 58 | 49 | 0 | 0 | 0 | OK |
+| 84 | Azure Maps | 145 | 113 | 0 | 0 | 0 | OK |
+| 85 | Azure AI Metrics Advisor | 19 | 8 | 0 | 0 | 0 | OK |
+| 86 | Azure Migrate | 196 | 119 | 0 | 0 | 0 | OK |
+| 87 | Azure Monitor | 2344 | 1911 | 0 | 0 | 0 | OK |
+| 88 | Azure NAT Gateway | 26 | 23 | 0 | 0 | 0 | OK |
+| 89 | Azure NetApp Files | 224 | 155 | 0 | 0 | 0 | OK |
+| 90 | Azure Network Watcher | 62 | 29 | 0 | 0 | 0 | OK |
+| 91 | Azure Notification Hubs | 67 | 53 | 0 | 0 | 0 | OK |
+| 92 | Azure Open Datasets | 44 | 1 | 0 | 0 | 0 | OK |
+| 93 | Azure AI Personalizer | 35 | 12 | 0 | 0 | 0 | OK |
+| 94 | Azure Policy | 156 | 96 | 0 | 0 | 0 | OK |
+| 95 | Azure Portal | 30 | 12 | 0 | 0 | 0 | OK |
+| 96 | Azure Private Link | 49 | 21 | 0 | 0 | 0 | OK |
+| 97 | Azure Quantum | 135 | 51 | 0 | 0 | 0 | OK |
+| 98 | Azure Queue Storage | 24 | 23 | 0 | 0 | 0 | OK |
+| 99 | Azure Role-based access control | 104 | 97 | 0 | 0 | 0 | OK |
+| 100 | Azure Red Hat OpenShift | 66 | 56 | 0 | 0 | 0 | OK |
+| 101 | Azure Relay | 27 | 11 | 0 | 0 | 0 | OK |
+| 102 | Azure Repos | 206 | 134 | 0 | 0 | 0 | OK |
+| 103 | Azure Resource Graph | 33 | 21 | 0 | 0 | 0 | OK |
+| 104 | Azure Resource Manager | 462 | 355 | 0 | 0 | 0 | OK |
+| 105 | SAP HANA on Azure Large Instances | 203 | 181 | 0 | 0 | 0 | OK |
+| 106 | Azure Service Bus | 122 | 93 | 0 | 0 | 0 | OK |
+| 107 | Azure Service Fabric | 403 | 316 | 0 | 0 | 0 | OK |
+| 108 | Azure Service Health | 46 | 24 | 0 | 0 | 0 | OK |
+| 109 | Azure SignalR Service | 73 | 60 | 0 | 0 | 0 | OK |
+| 110 | Azure Site Recovery | 202 | 138 | 0 | 20 | 0 | OK |
+| 111 | Azure US Government | 40 | 32 | 0 | 0 | 0 | OK |
+| 112 | Azure AI Speech | 178 | 107 | 0 | 0 | 0 | OK |
+| 113 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
+| 114 | Azure SQL Database | 583 | 440 | 0 | 0 | 0 | OK |
+| 115 | Azure Stack Edge | 237 | 145 | 0 | 0 | 0 | OK |
+| 116 | Azure Storage | 166 | 124 | 0 | 0 | 0 | OK |
+| 117 | Azure Stream Analytics | 168 | 114 | 0 | 0 | 0 | OK |
+| 118 | Azure Synapse Analytics | 446 | 262 | 0 | 0 | 0 | OK |
+| 119 | Azure Table Storage | 15 | 13 | 0 | 0 | 0 | OK |
+| 120 | Azure Test Plans | 34 | 3 | 0 | 0 | 0 | OK |
+| 121 | Azure Traffic Manager | 44 | 29 | 0 | 0 | 0 | OK |
+| 122 | Azure Translator | 125 | 77 | 0 | 0 | 0 | OK |
+| 123 | Azure AI Video Indexer | 77 | 58 | 0 | 0 | 0 | OK |
+| 124 | Azure Virtual Desktop | 148 | 120 | 0 | 0 | 0 | OK |
+| 125 | Azure Virtual Machines | 799 | 588 | 0 | 0 | 0 | OK |
+| 126 | Azure Virtual Network | 139 | 66 | 0 | 0 | 0 | OK |
+| 127 | Azure Virtual WAN | 129 | 91 | 0 | 0 | 0 | OK |
+| 128 | Azure Virtual Machine Scale Sets | 93 | 83 | 0 | 0 | 0 | OK |
+| 129 | Azure VMware Solution | 134 | 105 | 0 | 0 | 0 | OK |
+| 130 | Azure VPN Gateway | 129 | 113 | 0 | 0 | 0 | OK |
+| 131 | Azure Web Application Firewall | 80 | 68 | 0 | 0 | 0 | OK |
+| 132 | Azure Web PubSub | 111 | 81 | 0 | 0 | 0 | OK |
+| 133 | Chaos Studio | 51 | 31 | 0 | 0 | 0 | OK |
+| 134 | Azure AI Content Safety | 34 | 14 | 0 | 0 | 0 | OK |
+| 135 | Azure Data Manager for Agriculture | 26 | 18 | 0 | 0 | 0 | OK |
+| 136 | Azure AI Document Intelligence | 76 | 35 | 0 | 0 | 0 | OK |
+| 137 | Azure AI Language | 197 | 104 | 0 | 0 | 0 | OK |
+| 138 | Azure AI Foundry | 0 | 0 | 0 | 0 | 0 | OK |
+| 139 | Microsoft Foundry | 257 | 193 | 0 | 0 | 0 | OK |
+| 140 | Microsoft Planetary Computer Pro | 45 | 32 | 0 | 0 | 0 | OK |
+| 141 | Playwright Workspaces | 22 | 17 | 0 | 0 | 0 | OK |
+| 142 | Azure Route Server | 21 | 13 | 0 | 0 | 0 | OK |
+| 143 | Azure Static Web Apps | 79 | 57 | 0 | 0 | 0 | OK |
+| 144 | Azure Update Manager | 84 | 55 | 0 | 0 | 0 | OK |
+| 145 | Azure Virtual Network Manager | 52 | 22 | 0 | 0 | 0 | OK |
+| 146 | Azure Active Directory B2C | 289 | 258 | 0 | 0 | 0 | OK |
+| 147 | Azure Api Center | 34 | 21 | 0 | 0 | 0 | OK |
+| 148 | Azure Fluid Relay | 25 | 16 | 0 | 0 | 0 | OK |
+| 149 | Azure Impact Reporting | 14 | 9 | 0 | 0 | 0 | OK |
+| 150 | Azure Large Instances | 10 | 3 | 0 | 0 | 0 | OK |
+| 151 | Azure Baremetal Infrastructure | 8 | 2 | 0 | 0 | 0 | OK |
+| 152 | Azure Business Process Tracking | 6 | 1 | 0 | 0 | 0 | OK |
+| 153 | Azure Carbon Optimization | 11 | 4 | 0 | 0 | 0 | OK |
+| 154 | Azure Cloud Hsm | 18 | 12 | 0 | 0 | 0 | OK |
+| 155 | Azure Confidential Computing | 69 | 50 | 0 | 0 | 0 | OK |
+| 156 | Azure Confidential Ledger | 29 | 19 | 0 | 0 | 0 | OK |
+| 157 | Azure Copilot | 38 | 20 | 0 | 0 | 0 | OK |
+| 158 | Azure Data Api Builder | 109 | 83 | 0 | 0 | 0 | OK |
+| 159 | Azure Defender For Cloud | 470 | 258 | 0 | 1 | 0 | OK |
+| 160 | Azure Defender For Iot | 180 | 116 | 0 | 1 | 0 | OK |
+| 161 | Azure Deployment Environments | 32 | 14 | 0 | 0 | 0 | OK |
+| 162 | Azure Dev Box | 64 | 44 | 0 | 0 | 0 | OK |
+| 163 | Azure Education Hub | 11 | 3 | 0 | 0 | 0 | OK |
+| 164 | Azure Energy Data Services | 51 | 34 | 0 | 0 | 0 | OK |
+| 165 | Azure Extended Zones | 16 | 3 | 0 | 0 | 0 | OK |
+| 166 | Azure External Attack Surface Management | 22 | 12 | 0 | 0 | 0 | OK |
+| 167 | Azure Firmware Analysis | 13 | 11 | 0 | 0 | 0 | OK |
+| 168 | Azure Foundry Classic | 374 | 280 | 0 | 0 | 0 | OK |
+| 169 | Azure Health Bot | 77 | 46 | 0 | 0 | 0 | OK |
+| 170 | Azure Import Export | 14 | 6 | 0 | 0 | 0 | OK |
+| 171 | Azure Industry | 77 | 26 | 0 | 0 | 0 | OK |
+| 172 | Azure Integration Environments | 4 | 0 | 0 | 0 | 0 | OK |
+| 173 | Azure Internet Peering | 23 | 1 | 0 | 0 | 0 | OK |
+| 174 | Azure Microsoft Discovery | 0 | 0 | 0 | 0 | 0 | OK |
+| 175 | Azure Network Function Manager | 8 | 2 | 0 | 0 | 0 | OK |
+| 176 | Azure Networking | 22 | 12 | 0 | 0 | 0 | OK |
+| 177 | Azure Operator Insights | 0 | 0 | 0 | 0 | 0 | OK |
+| 178 | Azure Operator Nexus | 216 | 159 | 0 | 0 | 0 | OK |
+| 179 | Azure Operator Service Manager | 47 | 23 | 0 | 0 | 0 | OK |
+| 180 | Azure Oracle | 11 | 6 | 0 | 0 | 0 | OK |
+| 181 | Azure Osconfig | 29 | 15 | 0 | 0 | 0 | OK |
+| 182 | Azure Partner Solutions | 101 | 27 | 0 | 0 | 0 | OK |
+| 183 | Azure Payment Hsm | 28 | 18 | 0 | 0 | 0 | OK |
+| 184 | Azure Peering Service | 10 | 1 | 0 | 0 | 0 | OK |
+| 185 | Azure Quotas | 15 | 1 | 0 | 0 | 0 | OK |
+| 186 | Azure Reliability | 98 | 31 | 0 | 0 | 0 | OK |
+| 187 | Azure Resiliency | 20 | 7 | 0 | 0 | 0 | OK |
+| 188 | Azure Scheduler | 0 | 0 | 0 | 0 | 0 | OK |
+| 189 | Azure Security | 126 | 54 | 0 | 0 | 0 | OK |
+| 190 | Azure Sentinel | 372 | 275 | 0 | 1 | 0 | OK |
+| 191 | Azure Service Connector | 63 | 35 | 0 | 0 | 0 | OK |
+| 192 | Azure Sre Agent | 27 | 17 | 0 | 0 | 0 | OK |
+| 193 | Azure Virtual Enclaves | 0 | 0 | 0 | 0 | 0 | OK |
 
 ### Totals
 
-- **Products Processed**: 189 success, 0 failed
-- **Total Pages**: 31403
-- **Total Classified**: 22139
-- **Total New Pages**: 1
-- **Total Updated Pages**: 9
+- **Products Processed**: 193 success, 0 failed
+- **Total Pages**: 32050
+- **Total Classified**: 22603
+- **Total New Pages**: 0
+- **Total Updated Pages**: 100
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 580 |
-| best-practices | 1300 |
-| configuration | 7258 |
-| decision-making | 1205 |
-| deployment | 1406 |
-| integrations | 4851 |
-| limits-quotas | 1057 |
-| security | 3002 |
-| troubleshooting | 1480 |
+| architecture-patterns | 581 |
+| best-practices | 1318 |
+| configuration | 7349 |
+| decision-making | 1252 |
+| deployment | 1434 |
+| integrations | 5024 |
+| limits-quotas | 1082 |
+| security | 3072 |
+| troubleshooting | 1491 |
 
 ---
 
 ## Product Discovery Summary
 
-- **Total Products**: 189
-- **Total Sub-TOCs**: 121
+- **Total Products**: 193
+- **Total Sub-TOCs**: 123
 - **Total Skipped**: 0
 
 ## Products by Status
 
 | Status | Count |
 |--------|-------|
-| active | 184 |
-| virtual | 5 |
+| active | 187 |
+| virtual | 6 |
 
 ## All Products
 
 | # | Status | Slug | Name | TOC URL | Sub-TOCs |
 |---|--------|------|------|---------|----------|
 | 1 | active | azure-ai-services | Azure AI services | https://learn.microsoft.com/en-us/azure/ai-services/toc.json | 2 |
-| 2 | active | azure-ai-vision | Azure AI Vision | ...soft.com/en-us/azure/ai-services/computer-vision/toc.json | 0 |
+| 2 | active | azure-ai-vision | Azure AI Vision | ...soft.com/en-us/azure/ai-services/computer-vision/toc.json | 1 |
 | 3 | active | azure-aks-edge-essentials | Azure Kubernetes Service Edge Essentials | https://learn.microsoft.com/en-us/azure/aks/aksarc/toc.json | 2 |
 | 4 | active | azure-artifact-signing | Azure Artifact Signing | ...learn.microsoft.com/en-us/azure/artifact-signing/toc.json | 0 |
 | 5 | active | azure-advisor | Azure Advisor | https://learn.microsoft.com/en-us/azure/advisor/toc.json | 0 |
-| 6 | virtual | azure-ai-foundry | Azure AI Foundry | - | 0 |
-| 7 | virtual | azure-ai-foundry-local | Azure AI Foundry Local | - | 0 |
-| 8 | active | azure-analysis-services | Azure Analysis Services | ...earn.microsoft.com/en-us/azure/analysis-services/toc.json | 0 |
-| 9 | active | azure-anomaly-detector | Azure AI Anomaly Detector | ...oft.com/en-us/azure/ai-services/anomaly-detector/toc.json | 0 |
-| 10 | active | azure-api-management | Azure API Management | ...//learn.microsoft.com/en-us/azure/api-management/toc.json | 0 |
-| 11 | active | azure-app-configuration | Azure App Configuration | ...icrosoft.com/en-us/azure/azure-app-configuration/toc.json | 0 |
-| 12 | active | azure-app-service | Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/toc.json | 1 |
-| 13 | active | azure-app-testing | Azure App Testing | https://learn.microsoft.com/en-us/azure/app-testing/toc.json | 0 |
-| 14 | active | azure-application-gateway | Azure Application Gateway | ...rn.microsoft.com/en-us/azure/application-gateway/toc.json | 1 |
-| 15 | active | azure-arc | Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/toc.json | 10 |
-| 16 | active | azure-artifacts | Azure Artifacts | ...learn.microsoft.com/en-us/azure/devops/artifacts/toc.json | 0 |
-| 17 | active | azure-attestation | Azure Attestation | https://learn.microsoft.com/en-us/azure/attestation/toc.json | 0 |
-| 18 | active | azure-automation | Azure Automation | https://learn.microsoft.com/en-us/azure/automation/toc.json | 0 |
-| 19 | active | azure-backup | Azure Backup | https://learn.microsoft.com/en-us/azure/backup/toc.json | 0 |
-| 20 | active | azure-bastion | Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/toc.json | 0 |
-| 21 | active | azure-batch | Azure Batch | https://learn.microsoft.com/en-us/azure/batch/toc.json | 0 |
-| 22 | active | azure-blob-storage | Azure Blob Storage | ...://learn.microsoft.com/en-us/azure/storage/blobs/toc.json | 0 |
-| 23 | active | azure-blueprints | Azure Blueprints | ....microsoft.com/en-us/azure/governance/blueprints/toc.json | 0 |
-| 24 | active | azure-boards | Azure Boards | ...://learn.microsoft.com/en-us/azure/devops/boards/toc.json | 0 |
-| 25 | active | azure-bot-service | Azure AI Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/toc.json | 0 |
-| 26 | active | azure-cache-redis | Azure Cache for Redis | ....microsoft.com/en-us/azure/azure-cache-for-redis/toc.json | 0 |
-| 27 | active | azure-cloud-services | Azure Cloud Services | ....com/en-us/azure/cloud-services-extended-support/toc.json | 0 |
-| 28 | active | azure-cloud-shell | Azure Cloud Shell | https://learn.microsoft.com/en-us/azure/cloud-shell/toc.json | 0 |
-| 29 | active | azure-cognitive-search | Azure AI Search | https://learn.microsoft.com/en-us/azure/search/toc.json | 0 |
-| 30 | active | azure-communication-services | Azure Communication Services | ...microsoft.com/en-us/azure/communication-services/toc.json | 0 |
-| 31 | active | azure-container-apps | Azure Container Apps | ...//learn.microsoft.com/en-us/azure/container-apps/toc.json | 0 |
-| 32 | active | azure-container-instances | Azure Container Instances | ...rn.microsoft.com/en-us/azure/container-instances/toc.json | 0 |
-| 33 | active | azure-container-registry | Azure Container Registry | ...arn.microsoft.com/en-us/azure/container-registry/toc.json | 0 |
-| 34 | active | azure-cosmos-db | Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/toc.json | 7 |
-| 35 | active | azure-cost-management | Azure Cost Management | ...icrosoft.com/en-us/azure/cost-management-billing/toc.json | 5 |
-| 36 | active | azure-custom-vision | Azure AI Custom Vision | ...om/en-us/azure/ai-services/custom-vision-service/toc.json | 0 |
-| 37 | active | azure-cyclecloud | Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/toc.json | 0 |
-| 38 | active | azure-data-box-family | Azure Data Box | https://learn.microsoft.com/en-us/azure/databox/toc.json | 0 |
-| 39 | active | azure-data-explorer | Azure Data Explorer | ...://learn.microsoft.com/en-us/azure/data-explorer/toc.json | 1 |
-| 40 | active | azure-data-factory | Azure Data Factory | ...s://learn.microsoft.com/en-us/azure/data-factory/toc.json | 0 |
-| 41 | active | azure-data-science-vm | Azure Data Science Virtual Machines | ...re/machine-learning/data-science-virtual-machine/toc.json | 0 |
-| 42 | active | azure-data-share | Azure Data Share | https://learn.microsoft.com/en-us/azure/data-share/toc.json | 0 |
-| 43 | virtual | azure-database-mariadb | Azure Database for MariaDB | - | 0 |
-| 44 | active | azure-database-migration | Azure Database Migration service | https://learn.microsoft.com/en-us/azure/dms/toc.json | 0 |
-| 45 | active | azure-database-mysql | Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/mysql/toc.json | 1 |
-| 46 | active | azure-database-postgresql | Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/toc.json | 0 |
-| 47 | active | azure-databricks | Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/toc.json | 0 |
-| 48 | active | azure-ddos-protection | Azure DDos Protection | .../learn.microsoft.com/en-us/azure/ddos-protection/toc.json | 0 |
-| 49 | active | azure-dedicated-hsm | Azure Dedicated HSM | ...://learn.microsoft.com/en-us/azure/dedicated-hsm/toc.json | 0 |
-| 50 | active | azure-devops | Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/toc.json | 13 |
-| 51 | active | azure-pipelines | Azure Pipelines | ...learn.microsoft.com/en-us/azure/devops/pipelines/toc.json | 2 |
-| 52 | active | azure-devtest-labs | Azure DevTest Labs | ...s://learn.microsoft.com/en-us/azure/devtest-labs/toc.json | 0 |
-| 53 | active | azure-digital-twins | Azure Digital Twins | ...://learn.microsoft.com/en-us/azure/digital-twins/toc.json | 0 |
-| 54 | active | azure-dns | Azure DNS | https://learn.microsoft.com/en-us/azure/dns/toc.json | 0 |
-| 55 | active | azure-event-grid | Azure Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/toc.json | 1 |
-| 56 | active | azure-event-hubs | Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/toc.json | 0 |
-| 57 | active | azure-expressroute | Azure ExpressRoute | ...s://learn.microsoft.com/en-us/azure/expressroute/toc.json | 0 |
-| 58 | active | azure-files | Azure Files | ...://learn.microsoft.com/en-us/azure/storage/files/toc.json | 0 |
-| 59 | active | azure-firewall | Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/toc.json | 0 |
-| 60 | active | azure-firewall-manager | Azure Firewall Manager | ...learn.microsoft.com/en-us/azure/firewall-manager/toc.json | 0 |
-| 61 | active | azure-front-door | Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/toc.json | 0 |
-| 62 | active | azure-functions | Azure Functions | .../learn.microsoft.com/en-us/azure/azure-functions/toc.json | 2 |
-| 63 | active | azure-hdinsight | Azure HDInsight | https://learn.microsoft.com/en-us/azure/hdinsight/toc.json | 0 |
-| 64 | active | azure-health-data-services | Azure Health Data Services | .../learn.microsoft.com/en-us/azure/healthcare-apis/toc.json | 6 |
-| 65 | virtual | azure-hpc-cache | Azure HPC Cache | - | 1 |
-| 66 | active | azure-immersive-reader | Azure AI Immersive Reader | ...oft.com/en-us/azure/ai-services/immersive-reader/toc.json | 0 |
-| 67 | active | azure-information-protection | Azure Information Protection | ...microsoft.com/en-us/azure/information-protection/toc.json | 0 |
-| 68 | active | azure-iot | Azure IoT | https://learn.microsoft.com/en-us/azure/iot/toc.json | 0 |
-| 69 | active | azure-iot-central | Azure IoT Central | https://learn.microsoft.com/en-us/azure/iot-central/toc.json | 0 |
-| 70 | active | azure-iot-edge | Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/toc.json | 0 |
-| 71 | active | azure-iot-hub | Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-dps/toc.json | 3 |
-| 72 | active | azure-iot-operations | Azure IoT Operations | ...//learn.microsoft.com/en-us/azure/iot-operations/toc.json | 0 |
-| 73 | active | azure-key-vault | Azure Key Vault | ...microsoft.com/en-us/azure/key-vault/certificates/toc.json | 4 |
-| 74 | active | azure-kubernetes-service | Azure Kubernetes Service (AKS) | https://learn.microsoft.com/en-us/azure/aks/toc.json | 1 |
-| 75 | active | azure-lab-services | Azure Lab Services | ...s://learn.microsoft.com/en-us/azure/lab-services/toc.json | 0 |
-| 76 | active | azure-lighthouse | Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/toc.json | 0 |
-| 77 | active | azure-load-balancer | Azure Load Balancer | ...://learn.microsoft.com/en-us/azure/load-balancer/toc.json | 0 |
-| 78 | active | azure-local | Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/toc.json | 1 |
-| 79 | active | azure-logic-apps | Azure Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/toc.json | 1 |
-| 80 | active | azure-machine-learning | Azure Machine Learning | ...learn.microsoft.com/en-us/azure/machine-learning/toc.json | 2 |
-| 81 | active | azure-managed-applications | Azure Managed Applications | ...zure/azure-resource-manager/managed-applications/toc.json | 0 |
-| 82 | active | azure-managed-grafana | Azure Managed Grafana | .../learn.microsoft.com/en-us/azure/managed-grafana/toc.json | 0 |
-| 83 | active | azure-managed-lustre | Azure Managed Lustre | ...n.microsoft.com/en-us/azure/azure-managed-lustre/toc.json | 0 |
-| 84 | active | azure-managed-redis | Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/toc.json | 0 |
-| 85 | active | azure-maps | Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/toc.json | 0 |
-| 86 | active | azure-metrics-advisor | Azure AI Metrics Advisor | ...soft.com/en-us/azure/ai-services/metrics-advisor/toc.json | 0 |
-| 87 | active | azure-migrate | Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/toc.json | 3 |
-| 88 | active | azure-monitor | Azure Monitor | ...://learn.microsoft.com/en-us/azure/azure-monitor/toc.json | 1 |
-| 89 | active | azure-nat-gateway | Azure NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/toc.json | 0 |
-| 90 | active | azure-netapp-files | Azure NetApp Files | ...arn.microsoft.com/en-us/azure/azure-netapp-files/toc.json | 0 |
-| 91 | active | azure-network-watcher | Azure Network Watcher | .../learn.microsoft.com/en-us/azure/network-watcher/toc.json | 0 |
-| 92 | active | azure-notification-hubs | Azure Notification Hubs | ...earn.microsoft.com/en-us/azure/notification-hubs/toc.json | 0 |
-| 93 | active | azure-open-datasets | Azure Open Datasets | ...://learn.microsoft.com/en-us/azure/open-datasets/toc.json | 0 |
-| 94 | active | azure-personalizer | Azure AI Personalizer | ...crosoft.com/en-us/azure/ai-services/personalizer/toc.json | 0 |
-| 95 | active | azure-policy | Azure Policy | ...com/en-us/azure/governance/machine-configuration/toc.json | 1 |
-| 96 | active | azure-portal | Azure Portal | ...s://learn.microsoft.com/en-us/azure/azure-portal/toc.json | 0 |
-| 97 | active | azure-private-link | Azure Private Link | ...s://learn.microsoft.com/en-us/azure/private-link/toc.json | 0 |
-| 98 | active | azure-quantum | Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/toc.json | 0 |
-| 99 | active | azure-queue-storage | Azure Queue Storage | ...//learn.microsoft.com/en-us/azure/storage/queues/toc.json | 0 |
-| 100 | active | azure-rbac | Azure Role-based access control | ...rosoft.com/en-us/azure/role-based-access-control/toc.json | 0 |
-| 101 | active | azure-redhat-openshift | Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/toc.json | 0 |
-| 102 | active | azure-relay | Azure Relay | https://learn.microsoft.com/en-us/azure/azure-relay/toc.json | 0 |
-| 103 | active | azure-repos | Azure Repos | ...s://learn.microsoft.com/en-us/azure/devops/repos/toc.json | 0 |
-| 104 | active | azure-resource-graph | Azure Resource Graph | ...rosoft.com/en-us/azure/governance/resource-graph/toc.json | 0 |
-| 105 | active | azure-resource-manager | Azure Resource Manager | ...oft.com/en-us/azure/azure-resource-manager/bicep/toc.json | 6 |
-| 106 | active | azure-sap | SAP HANA on Azure Large Instances | https://learn.microsoft.com/en-us/azure/sap/toc.json | 0 |
-| 107 | active | azure-service-bus | Azure Service Bus | ....microsoft.com/en-us/azure/service-bus-messaging/toc.json | 0 |
-| 108 | active | azure-service-fabric | Azure Service Fabric | ...//learn.microsoft.com/en-us/azure/service-fabric/toc.json | 0 |
-| 109 | active | azure-service-health | Azure Service Health | ...//learn.microsoft.com/en-us/azure/service-health/toc.json | 0 |
-| 110 | active | azure-signalr-service | Azure SignalR Service | ...://learn.microsoft.com/en-us/azure/azure-signalr/toc.json | 0 |
-| 111 | active | azure-site-recovery | Azure Site Recovery | ...://learn.microsoft.com/en-us/azure/site-recovery/toc.json | 0 |
-| 112 | active | azure-sovereign-us | Azure US Government | ...learn.microsoft.com/en-us/azure/azure-government/toc.json | 0 |
-| 113 | active | azure-speech | Azure AI Speech | ...osoft.com/en-us/azure/ai-services/speech-service/toc.json | 0 |
-| 114 | active | azure-spring-apps | Azure Spring Apps | ...osoft.com/en-us/azure/spring-apps/basic-standard/toc.json | 2 |
-| 115 | active | azure-sql-database | Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/toc.json | 0 |
-| 116 | active | azure-stack-edge | Azure Stack Edge | ...osoft.com/en-us/azure/azure-edge-hardware-center/toc.json | 2 |
-| 117 | active | azure-storage | Azure Storage | .../learn.microsoft.com/en-us/azure/storage-actions/toc.json | 6 |
-| 118 | active | azure-stream-analytics | Azure Stream Analytics | ...learn.microsoft.com/en-us/azure/stream-analytics/toc.json | 0 |
-| 119 | active | azure-synapse-analytics | Azure Synapse Analytics | ...earn.microsoft.com/en-us/azure/synapse-analytics/toc.json | 1 |
-| 120 | active | azure-table-storage | Azure Table Storage | ...//learn.microsoft.com/en-us/azure/storage/tables/toc.json | 0 |
-| 121 | active | azure-test-plans | Azure Test Plans | https://learn.microsoft.com/en-us/azure/devops/test/toc.json | 0 |
-| 122 | active | azure-traffic-manager | Azure Traffic Manager | .../learn.microsoft.com/en-us/azure/traffic-manager/toc.json | 0 |
-| 123 | active | azure-translator | Azure Translator | ...microsoft.com/en-us/azure/ai-services/translator/toc.json | 0 |
-| 124 | active | azure-video-indexer | Azure AI Video Indexer | ...rn.microsoft.com/en-us/azure/azure-video-indexer/toc.json | 0 |
-| 125 | active | azure-virtual-desktop | Azure Virtual Desktop | .../learn.microsoft.com/en-us/azure/virtual-desktop/toc.json | 0 |
-| 126 | active | azure-virtual-machines | Azure Virtual Machines | ...rn.microsoft.com/en-us/azure/azure-compute-fleet/toc.json | 7 |
-| 127 | active | azure-virtual-network | Azure Virtual Network | .../learn.microsoft.com/en-us/azure/virtual-network/toc.json | 1 |
-| 128 | active | azure-virtual-wan | Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/toc.json | 0 |
-| 129 | active | azure-vm-scalesets | Azure Virtual Machine Scale Sets | ...osoft.com/en-us/azure/virtual-machine-scale-sets/toc.json | 0 |
-| 130 | active | azure-vmware-solution | Azure VMware Solution | ...s://learn.microsoft.com/en-us/azure/azure-vmware/toc.json | 1 |
-| 131 | active | azure-vpn-gateway | Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/toc.json | 0 |
-| 132 | active | azure-web-application-firewall | Azure Web Application Firewall | ...crosoft.com/en-us/azure/web-application-firewall/toc.json | 0 |
-| 133 | active | azure-web-pubsub | Azure Web PubSub | ...learn.microsoft.com/en-us/azure/azure-web-pubsub/toc.json | 0 |
-| 134 | active | azure-chaos-studio | Chaos Studio | ...s://learn.microsoft.com/en-us/azure/chaos-studio/toc.json | 0 |
-| 135 | active | azure-content-safety | Azure AI Content Safety | ...osoft.com/en-us/azure/ai-services/content-safety/toc.json | 0 |
-| 136 | active | azure-data-manager-for-agri | Azure Data Manager for Agriculture | ....microsoft.com/en-us/azure/data-manager-for-agri/toc.json | 0 |
-| 137 | active | azure-document-intelligence | Azure AI Document Intelligence | ...om/en-us/azure/ai-services/document-intelligence/toc.json | 0 |
-| 138 | active | azure-language-service | Azure AI Language | ...oft.com/en-us/azure/ai-services/language-service/toc.json | 0 |
-| 139 | active | azure-planetary-computer-pro | Microsoft Planetary Computer Pro | ...arn.microsoft.com/en-us/azure/planetary-computer/toc.json | 0 |
-| 140 | active | azure-playwright-workspaces | Playwright Workspaces | ...arn.microsoft.com/en-us/azure/playwright-testing/toc.json | 0 |
-| 141 | active | azure-route-server | Azure Route Server | ...s://learn.microsoft.com/en-us/azure/route-server/toc.json | 0 |
-| 142 | active | azure-static-web-apps | Azure Static Web Apps | .../learn.microsoft.com/en-us/azure/static-web-apps/toc.json | 0 |
-| 143 | active | azure-update-manager | Azure Update Manager | https://learn.microsoft.com/en-us/azure/automanage/toc.json | 2 |
-| 144 | active | azure-virtual-network-manager | Azure Virtual Network Manager | ...icrosoft.com/en-us/azure/virtual-network-manager/toc.json | 0 |
-| 145 | active | azure-active-directory-b2c | Azure Active Directory B2C | ...n.microsoft.com/en-us/azure/active-directory-b2c/toc.json | 0 |
-| 146 | active | azure-api-center | Azure Api Center | https://learn.microsoft.com/en-us/azure/api-center/toc.json | 0 |
-| 147 | active | azure-fluid-relay | Azure Fluid Relay | ...earn.microsoft.com/en-us/azure/azure-fluid-relay/toc.json | 0 |
-| 148 | active | azure-impact-reporting | Azure Impact Reporting | ...microsoft.com/en-us/azure/azure-impact-reporting/toc.json | 0 |
-| 149 | active | azure-large-instances | Azure Large Instances | ....microsoft.com/en-us/azure/azure-large-instances/toc.json | 1 |
-| 150 | active | azure-baremetal-infrastructure | Azure Baremetal Infrastructure | ...crosoft.com/en-us/azure/baremetal-infrastructure/toc.json | 0 |
-| 151 | active | azure-business-process-tracking | Azure Business Process Tracking | ...rosoft.com/en-us/azure/business-process-tracking/toc.json | 0 |
-| 152 | active | azure-carbon-optimization | Azure Carbon Optimization | ...rn.microsoft.com/en-us/azure/carbon-optimization/toc.json | 0 |
-| 153 | active | azure-cloud-hsm | Azure Cloud Hsm | https://learn.microsoft.com/en-us/azure/cloud-hsm/toc.json | 0 |
-| 154 | active | azure-confidential-computing | Azure Confidential Computing | ...microsoft.com/en-us/azure/confidential-computing/toc.json | 0 |
-| 155 | active | azure-confidential-ledger | Azure Confidential Ledger | ...rn.microsoft.com/en-us/azure/confidential-ledger/toc.json | 0 |
-| 156 | active | azure-copilot | Azure Copilot | https://learn.microsoft.com/en-us/azure/copilot/toc.json | 0 |
-| 157 | active | azure-data-api-builder | Azure Data Api Builder | ...learn.microsoft.com/en-us/azure/data-api-builder/toc.json | 0 |
-| 158 | active | azure-defender-for-cloud | Azure Defender For Cloud | ...arn.microsoft.com/en-us/azure/defender-for-cloud/toc.json | 0 |
-| 159 | active | azure-defender-for-iot | Azure Defender For Iot | ...com/en-us/azure/defender-for-iot/device-builders/toc.json | 1 |
-| 160 | active | azure-deployment-environments | Azure Deployment Environments | ...icrosoft.com/en-us/azure/deployment-environments/toc.json | 0 |
-| 161 | active | azure-dev-box | Azure Dev Box | https://learn.microsoft.com/en-us/azure/dev-box/toc.json | 0 |
-| 162 | active | azure-education-hub | Azure Education Hub | ...://learn.microsoft.com/en-us/azure/education-hub/toc.json | 0 |
-| 163 | active | azure-energy-data-services | Azure Energy Data Services | ...n.microsoft.com/en-us/azure/energy-data-services/toc.json | 0 |
-| 164 | active | azure-extended-zones | Azure Extended Zones | ...//learn.microsoft.com/en-us/azure/extended-zones/toc.json | 0 |
-| 165 | active | azure-external-attack-surface-management | Azure External Attack Surface Management | ...m/en-us/azure/external-attack-surface-management/toc.json | 0 |
-| 166 | active | azure-firmware-analysis | Azure Firmware Analysis | ...earn.microsoft.com/en-us/azure/firmware-analysis/toc.json | 0 |
-| 167 | active | azure-health-bot | Azure Health Bot | https://learn.microsoft.com/en-us/azure/health-bot/toc.json | 0 |
-| 168 | active | azure-import-export | Azure Import Export | ...://learn.microsoft.com/en-us/azure/import-export/toc.json | 0 |
-| 169 | active | azure-industry | Azure Industry | ...y/training-services/microsoft-community-training/toc.json | 0 |
-| 170 | active | azure-integration-environments | Azure Integration Environments | ...crosoft.com/en-us/azure/integration-environments/toc.json | 0 |
-| 171 | active | azure-internet-peering | Azure Internet Peering | ...learn.microsoft.com/en-us/azure/internet-peering/toc.json | 0 |
-| 172 | active | azure-network-function-manager | Azure Network Function Manager | ...crosoft.com/en-us/azure/network-function-manager/toc.json | 0 |
-| 173 | active | azure-networking | Azure Networking | https://learn.microsoft.com/en-us/azure/networking/toc.json | 1 |
-| 174 | active | azure-operator-insights | Azure Operator Insights | ...earn.microsoft.com/en-us/azure/operator-insights/toc.json | 0 |
-| 175 | active | azure-operator-nexus | Azure Operator Nexus | ...//learn.microsoft.com/en-us/azure/operator-nexus/toc.json | 0 |
-| 176 | active | azure-operator-service-manager | Azure Operator Service Manager | ...crosoft.com/en-us/azure/operator-service-manager/toc.json | 0 |
-| 177 | active | azure-oracle | Azure Oracle | https://learn.microsoft.com/en-us/azure/oracle/toc.json | 0 |
-| 178 | active | azure-osconfig | Azure Osconfig | https://learn.microsoft.com/en-us/azure/osconfig/toc.json | 0 |
-| 179 | active | azure-partner-solutions | Azure Partner Solutions | ...earn.microsoft.com/en-us/azure/partner-solutions/toc.json | 16 |
-| 180 | active | azure-payment-hsm | Azure Payment Hsm | https://learn.microsoft.com/en-us/azure/payment-hsm/toc.json | 0 |
-| 181 | active | azure-peering-service | Azure Peering Service | .../learn.microsoft.com/en-us/azure/peering-service/toc.json | 0 |
-| 182 | active | azure-quotas | Azure Quotas | https://learn.microsoft.com/en-us/azure/quotas/toc.json | 0 |
-| 183 | active | azure-reliability | Azure Reliability | https://learn.microsoft.com/en-us/azure/reliability/toc.json | 0 |
-| 184 | active | azure-resiliency | Azure Resiliency | https://learn.microsoft.com/en-us/azure/resiliency/toc.json | 0 |
-| 185 | virtual | azure-scheduler | Azure Scheduler | - | 0 |
-| 186 | active | azure-security | Azure Security | ...-us/azure/security/container-secure-supply-chain/toc.json | 2 |
-| 187 | active | azure-sentinel | Azure Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/toc.json | 0 |
-| 188 | active | azure-service-connector | Azure Service Connector | ...earn.microsoft.com/en-us/azure/service-connector/toc.json | 0 |
-| 189 | active | azure-sre-agent | Azure Sre Agent | https://learn.microsoft.com/en-us/azure/sre-agent/toc.json | 0 |
+| 6 | active | azure-ai-foundry-local | Azure AI Foundry Local | ...://learn.microsoft.com/en-us/azure/foundry-local/toc.json | 1 |
+| 7 | active | azure-analysis-services | Azure Analysis Services | ...earn.microsoft.com/en-us/azure/analysis-services/toc.json | 0 |
+| 8 | active | azure-anomaly-detector | Azure AI Anomaly Detector | ...oft.com/en-us/azure/ai-services/anomaly-detector/toc.json | 0 |
+| 9 | active | azure-api-management | Azure API Management | ...//learn.microsoft.com/en-us/azure/api-management/toc.json | 0 |
+| 10 | active | azure-app-configuration | Azure App Configuration | ...icrosoft.com/en-us/azure/azure-app-configuration/toc.json | 0 |
+| 11 | active | azure-app-service | Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/toc.json | 1 |
+| 12 | active | azure-app-testing | Azure App Testing | https://learn.microsoft.com/en-us/azure/app-testing/toc.json | 0 |
+| 13 | active | azure-application-gateway | Azure Application Gateway | ...rn.microsoft.com/en-us/azure/application-gateway/toc.json | 1 |
+| 14 | active | azure-arc | Azure Arc | https://learn.microsoft.com/en-us/azure/azure-arc/toc.json | 10 |
+| 15 | active | azure-artifacts | Azure Artifacts | ...learn.microsoft.com/en-us/azure/devops/artifacts/toc.json | 0 |
+| 16 | active | azure-attestation | Azure Attestation | https://learn.microsoft.com/en-us/azure/attestation/toc.json | 0 |
+| 17 | active | azure-automation | Azure Automation | https://learn.microsoft.com/en-us/azure/automation/toc.json | 0 |
+| 18 | active | azure-backup | Azure Backup | https://learn.microsoft.com/en-us/azure/backup/toc.json | 0 |
+| 19 | active | azure-bastion | Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/toc.json | 0 |
+| 20 | active | azure-batch | Azure Batch | https://learn.microsoft.com/en-us/azure/batch/toc.json | 0 |
+| 21 | active | azure-blob-storage | Azure Blob Storage | ...://learn.microsoft.com/en-us/azure/storage/blobs/toc.json | 0 |
+| 22 | active | azure-blueprints | Azure Blueprints | ....microsoft.com/en-us/azure/governance/blueprints/toc.json | 0 |
+| 23 | active | azure-boards | Azure Boards | ...://learn.microsoft.com/en-us/azure/devops/boards/toc.json | 0 |
+| 24 | active | azure-bot-service | Azure AI Bot Service | https://learn.microsoft.com/en-us/azure/bot-service/toc.json | 0 |
+| 25 | active | azure-cache-redis | Azure Cache for Redis | ....microsoft.com/en-us/azure/azure-cache-for-redis/toc.json | 0 |
+| 26 | active | azure-cloud-services | Azure Cloud Services | ....com/en-us/azure/cloud-services-extended-support/toc.json | 0 |
+| 27 | active | azure-cloud-shell | Azure Cloud Shell | https://learn.microsoft.com/en-us/azure/cloud-shell/toc.json | 0 |
+| 28 | active | azure-cognitive-search | Azure AI Search | https://learn.microsoft.com/en-us/azure/search/toc.json | 0 |
+| 29 | active | azure-communication-services | Azure Communication Services | ...microsoft.com/en-us/azure/communication-services/toc.json | 0 |
+| 30 | active | azure-container-apps | Azure Container Apps | ...//learn.microsoft.com/en-us/azure/container-apps/toc.json | 0 |
+| 31 | active | azure-container-instances | Azure Container Instances | ...rn.microsoft.com/en-us/azure/container-instances/toc.json | 0 |
+| 32 | active | azure-container-registry | Azure Container Registry | ...arn.microsoft.com/en-us/azure/container-registry/toc.json | 0 |
+| 33 | active | azure-cosmos-db | Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/toc.json | 7 |
+| 34 | active | azure-cost-management | Azure Cost Management | ...icrosoft.com/en-us/azure/cost-management-billing/toc.json | 5 |
+| 35 | active | azure-custom-vision | Azure AI Custom Vision | ...om/en-us/azure/ai-services/custom-vision-service/toc.json | 0 |
+| 36 | active | azure-cyclecloud | Azure CycleCloud | https://learn.microsoft.com/en-us/azure/cyclecloud/toc.json | 0 |
+| 37 | active | azure-data-box-family | Azure Data Box | https://learn.microsoft.com/en-us/azure/databox/toc.json | 0 |
+| 38 | active | azure-data-explorer | Azure Data Explorer | ...://learn.microsoft.com/en-us/azure/data-explorer/toc.json | 1 |
+| 39 | active | azure-data-factory | Azure Data Factory | ...s://learn.microsoft.com/en-us/azure/data-factory/toc.json | 0 |
+| 40 | active | azure-data-science-vm | Azure Data Science Virtual Machines | ...re/machine-learning/data-science-virtual-machine/toc.json | 0 |
+| 41 | active | azure-data-share | Azure Data Share | https://learn.microsoft.com/en-us/azure/data-share/toc.json | 0 |
+| 42 | virtual | azure-database-mariadb | Azure Database for MariaDB | - | 0 |
+| 43 | active | azure-database-migration | Azure Database Migration service | https://learn.microsoft.com/en-us/azure/dms/toc.json | 0 |
+| 44 | active | azure-database-mysql | Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/mysql/toc.json | 1 |
+| 45 | active | azure-database-postgresql | Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/toc.json | 0 |
+| 46 | active | azure-databricks | Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/toc.json | 0 |
+| 47 | active | azure-ddos-protection | Azure DDos Protection | .../learn.microsoft.com/en-us/azure/ddos-protection/toc.json | 0 |
+| 48 | active | azure-dedicated-hsm | Azure Dedicated HSM | ...://learn.microsoft.com/en-us/azure/dedicated-hsm/toc.json | 0 |
+| 49 | active | azure-devops | Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/toc.json | 13 |
+| 50 | active | azure-pipelines | Azure Pipelines | ...learn.microsoft.com/en-us/azure/devops/pipelines/toc.json | 2 |
+| 51 | active | azure-devtest-labs | Azure DevTest Labs | ...s://learn.microsoft.com/en-us/azure/devtest-labs/toc.json | 0 |
+| 52 | active | azure-digital-twins | Azure Digital Twins | ...://learn.microsoft.com/en-us/azure/digital-twins/toc.json | 0 |
+| 53 | active | azure-dns | Azure DNS | https://learn.microsoft.com/en-us/azure/dns/toc.json | 0 |
+| 54 | active | azure-event-grid | Azure Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/toc.json | 1 |
+| 55 | active | azure-event-hubs | Azure Event Hubs | https://learn.microsoft.com/en-us/azure/event-hubs/toc.json | 0 |
+| 56 | active | azure-expressroute | Azure ExpressRoute | ...s://learn.microsoft.com/en-us/azure/expressroute/toc.json | 0 |
+| 57 | active | azure-files | Azure Files | ...://learn.microsoft.com/en-us/azure/storage/files/toc.json | 0 |
+| 58 | active | azure-firewall | Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/toc.json | 0 |
+| 59 | active | azure-firewall-manager | Azure Firewall Manager | ...learn.microsoft.com/en-us/azure/firewall-manager/toc.json | 0 |
+| 60 | active | azure-front-door | Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/toc.json | 0 |
+| 61 | active | azure-functions | Azure Functions | .../learn.microsoft.com/en-us/azure/azure-functions/toc.json | 2 |
+| 62 | active | azure-hdinsight | Azure HDInsight | https://learn.microsoft.com/en-us/azure/hdinsight/toc.json | 0 |
+| 63 | active | azure-health-data-services | Azure Health Data Services | .../learn.microsoft.com/en-us/azure/healthcare-apis/toc.json | 6 |
+| 64 | virtual | azure-hpc-cache | Azure HPC Cache | - | 1 |
+| 65 | active | azure-immersive-reader | Azure AI Immersive Reader | ...oft.com/en-us/azure/ai-services/immersive-reader/toc.json | 0 |
+| 66 | active | azure-information-protection | Azure Information Protection | ...microsoft.com/en-us/azure/information-protection/toc.json | 0 |
+| 67 | active | azure-iot | Azure IoT | https://learn.microsoft.com/en-us/azure/iot/toc.json | 0 |
+| 68 | active | azure-iot-central | Azure IoT Central | https://learn.microsoft.com/en-us/azure/iot-central/toc.json | 0 |
+| 69 | active | azure-iot-edge | Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/toc.json | 0 |
+| 70 | active | azure-iot-hub | Azure IoT Hub | https://learn.microsoft.com/en-us/azure/iot-dps/toc.json | 3 |
+| 71 | active | azure-iot-operations | Azure IoT Operations | ...//learn.microsoft.com/en-us/azure/iot-operations/toc.json | 0 |
+| 72 | active | azure-key-vault | Azure Key Vault | ...microsoft.com/en-us/azure/key-vault/certificates/toc.json | 4 |
+| 73 | active | azure-kubernetes-service | Azure Kubernetes Service (AKS) | https://learn.microsoft.com/en-us/azure/aks/toc.json | 1 |
+| 74 | active | azure-lab-services | Azure Lab Services | ...s://learn.microsoft.com/en-us/azure/lab-services/toc.json | 0 |
+| 75 | active | azure-lighthouse | Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/toc.json | 0 |
+| 76 | active | azure-load-balancer | Azure Load Balancer | ...://learn.microsoft.com/en-us/azure/load-balancer/toc.json | 0 |
+| 77 | active | azure-local | Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/toc.json | 1 |
+| 78 | active | azure-logic-apps | Azure Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/toc.json | 1 |
+| 79 | active | azure-machine-learning | Azure Machine Learning | ...learn.microsoft.com/en-us/azure/machine-learning/toc.json | 2 |
+| 80 | active | azure-managed-applications | Azure Managed Applications | ...zure/azure-resource-manager/managed-applications/toc.json | 0 |
+| 81 | active | azure-managed-grafana | Azure Managed Grafana | .../learn.microsoft.com/en-us/azure/managed-grafana/toc.json | 0 |
+| 82 | active | azure-managed-lustre | Azure Managed Lustre | ...n.microsoft.com/en-us/azure/azure-managed-lustre/toc.json | 0 |
+| 83 | active | azure-managed-redis | Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/toc.json | 0 |
+| 84 | active | azure-maps | Azure Maps | https://learn.microsoft.com/en-us/azure/azure-maps/toc.json | 0 |
+| 85 | active | azure-metrics-advisor | Azure AI Metrics Advisor | ...soft.com/en-us/azure/ai-services/metrics-advisor/toc.json | 0 |
+| 86 | active | azure-migrate | Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/toc.json | 3 |
+| 87 | active | azure-monitor | Azure Monitor | ...://learn.microsoft.com/en-us/azure/azure-monitor/toc.json | 1 |
+| 88 | active | azure-nat-gateway | Azure NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/toc.json | 0 |
+| 89 | active | azure-netapp-files | Azure NetApp Files | ...arn.microsoft.com/en-us/azure/azure-netapp-files/toc.json | 0 |
+| 90 | active | azure-network-watcher | Azure Network Watcher | .../learn.microsoft.com/en-us/azure/network-watcher/toc.json | 0 |
+| 91 | active | azure-notification-hubs | Azure Notification Hubs | ...earn.microsoft.com/en-us/azure/notification-hubs/toc.json | 0 |
+| 92 | active | azure-open-datasets | Azure Open Datasets | ...://learn.microsoft.com/en-us/azure/open-datasets/toc.json | 0 |
+| 93 | active | azure-personalizer | Azure AI Personalizer | ...crosoft.com/en-us/azure/ai-services/personalizer/toc.json | 0 |
+| 94 | active | azure-policy | Azure Policy | ...com/en-us/azure/governance/machine-configuration/toc.json | 1 |
+| 95 | active | azure-portal | Azure Portal | ...s://learn.microsoft.com/en-us/azure/azure-portal/toc.json | 0 |
+| 96 | active | azure-private-link | Azure Private Link | ...s://learn.microsoft.com/en-us/azure/private-link/toc.json | 0 |
+| 97 | active | azure-quantum | Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/toc.json | 0 |
+| 98 | active | azure-queue-storage | Azure Queue Storage | ...//learn.microsoft.com/en-us/azure/storage/queues/toc.json | 0 |
+| 99 | active | azure-rbac | Azure Role-based access control | ...rosoft.com/en-us/azure/role-based-access-control/toc.json | 0 |
+| 100 | active | azure-redhat-openshift | Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/toc.json | 0 |
+| 101 | active | azure-relay | Azure Relay | https://learn.microsoft.com/en-us/azure/azure-relay/toc.json | 0 |
+| 102 | active | azure-repos | Azure Repos | ...s://learn.microsoft.com/en-us/azure/devops/repos/toc.json | 0 |
+| 103 | active | azure-resource-graph | Azure Resource Graph | ...rosoft.com/en-us/azure/governance/resource-graph/toc.json | 0 |
+| 104 | active | azure-resource-manager | Azure Resource Manager | ...oft.com/en-us/azure/azure-resource-manager/bicep/toc.json | 6 |
+| 105 | active | azure-sap | SAP HANA on Azure Large Instances | https://learn.microsoft.com/en-us/azure/sap/toc.json | 0 |
+| 106 | active | azure-service-bus | Azure Service Bus | ....microsoft.com/en-us/azure/service-bus-messaging/toc.json | 0 |
+| 107 | active | azure-service-fabric | Azure Service Fabric | ...//learn.microsoft.com/en-us/azure/service-fabric/toc.json | 0 |
+| 108 | active | azure-service-health | Azure Service Health | ...//learn.microsoft.com/en-us/azure/service-health/toc.json | 0 |
+| 109 | active | azure-signalr-service | Azure SignalR Service | ...://learn.microsoft.com/en-us/azure/azure-signalr/toc.json | 0 |
+| 110 | active | azure-site-recovery | Azure Site Recovery | ...://learn.microsoft.com/en-us/azure/site-recovery/toc.json | 0 |
+| 111 | active | azure-sovereign-us | Azure US Government | ...learn.microsoft.com/en-us/azure/azure-government/toc.json | 0 |
+| 112 | active | azure-speech | Azure AI Speech | ...osoft.com/en-us/azure/ai-services/speech-service/toc.json | 0 |
+| 113 | active | azure-spring-apps | Azure Spring Apps | ...osoft.com/en-us/azure/spring-apps/basic-standard/toc.json | 2 |
+| 114 | active | azure-sql-database | Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/toc.json | 0 |
+| 115 | active | azure-stack-edge | Azure Stack Edge | ...osoft.com/en-us/azure/azure-edge-hardware-center/toc.json | 2 |
+| 116 | active | azure-storage | Azure Storage | .../learn.microsoft.com/en-us/azure/storage-actions/toc.json | 6 |
+| 117 | active | azure-stream-analytics | Azure Stream Analytics | ...learn.microsoft.com/en-us/azure/stream-analytics/toc.json | 0 |
+| 118 | active | azure-synapse-analytics | Azure Synapse Analytics | ...earn.microsoft.com/en-us/azure/synapse-analytics/toc.json | 1 |
+| 119 | active | azure-table-storage | Azure Table Storage | ...//learn.microsoft.com/en-us/azure/storage/tables/toc.json | 0 |
+| 120 | active | azure-test-plans | Azure Test Plans | https://learn.microsoft.com/en-us/azure/devops/test/toc.json | 0 |
+| 121 | active | azure-traffic-manager | Azure Traffic Manager | .../learn.microsoft.com/en-us/azure/traffic-manager/toc.json | 0 |
+| 122 | active | azure-translator | Azure Translator | ...microsoft.com/en-us/azure/ai-services/translator/toc.json | 0 |
+| 123 | active | azure-video-indexer | Azure AI Video Indexer | ...rn.microsoft.com/en-us/azure/azure-video-indexer/toc.json | 0 |
+| 124 | active | azure-virtual-desktop | Azure Virtual Desktop | .../learn.microsoft.com/en-us/azure/virtual-desktop/toc.json | 0 |
+| 125 | active | azure-virtual-machines | Azure Virtual Machines | ...rn.microsoft.com/en-us/azure/azure-compute-fleet/toc.json | 7 |
+| 126 | active | azure-virtual-network | Azure Virtual Network | .../learn.microsoft.com/en-us/azure/virtual-network/toc.json | 1 |
+| 127 | active | azure-virtual-wan | Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/virtual-wan/toc.json | 0 |
+| 128 | active | azure-vm-scalesets | Azure Virtual Machine Scale Sets | ...osoft.com/en-us/azure/virtual-machine-scale-sets/toc.json | 0 |
+| 129 | active | azure-vmware-solution | Azure VMware Solution | ...s://learn.microsoft.com/en-us/azure/azure-vmware/toc.json | 1 |
+| 130 | active | azure-vpn-gateway | Azure VPN Gateway | https://learn.microsoft.com/en-us/azure/vpn-gateway/toc.json | 0 |
+| 131 | active | azure-web-application-firewall | Azure Web Application Firewall | ...crosoft.com/en-us/azure/web-application-firewall/toc.json | 0 |
+| 132 | active | azure-web-pubsub | Azure Web PubSub | ...learn.microsoft.com/en-us/azure/azure-web-pubsub/toc.json | 0 |
+| 133 | active | azure-chaos-studio | Chaos Studio | ...s://learn.microsoft.com/en-us/azure/chaos-studio/toc.json | 0 |
+| 134 | active | azure-content-safety | Azure AI Content Safety | ...osoft.com/en-us/azure/ai-services/content-safety/toc.json | 0 |
+| 135 | active | azure-data-manager-for-agri | Azure Data Manager for Agriculture | ....microsoft.com/en-us/azure/data-manager-for-agri/toc.json | 0 |
+| 136 | active | azure-document-intelligence | Azure AI Document Intelligence | ...om/en-us/azure/ai-services/document-intelligence/toc.json | 0 |
+| 137 | active | azure-language-service | Azure AI Language | ...oft.com/en-us/azure/ai-services/language-service/toc.json | 0 |
+| 138 | virtual | azure-ai-foundry | Azure AI Foundry | - | 0 |
+| 139 | active | azure-microsoft-foundry | Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/toc.json | 0 |
+| 140 | active | azure-planetary-computer-pro | Microsoft Planetary Computer Pro | ...arn.microsoft.com/en-us/azure/planetary-computer/toc.json | 0 |
+| 141 | active | azure-playwright-workspaces | Playwright Workspaces | ...arn.microsoft.com/en-us/azure/playwright-testing/toc.json | 0 |
+| 142 | active | azure-route-server | Azure Route Server | ...s://learn.microsoft.com/en-us/azure/route-server/toc.json | 0 |
+| 143 | active | azure-static-web-apps | Azure Static Web Apps | .../learn.microsoft.com/en-us/azure/static-web-apps/toc.json | 0 |
+| 144 | active | azure-update-manager | Azure Update Manager | https://learn.microsoft.com/en-us/azure/automanage/toc.json | 2 |
+| 145 | active | azure-virtual-network-manager | Azure Virtual Network Manager | ...icrosoft.com/en-us/azure/virtual-network-manager/toc.json | 0 |
+| 146 | active | azure-active-directory-b2c | Azure Active Directory B2C | ...n.microsoft.com/en-us/azure/active-directory-b2c/toc.json | 0 |
+| 147 | active | azure-api-center | Azure Api Center | https://learn.microsoft.com/en-us/azure/api-center/toc.json | 0 |
+| 148 | active | azure-fluid-relay | Azure Fluid Relay | ...earn.microsoft.com/en-us/azure/azure-fluid-relay/toc.json | 0 |
+| 149 | active | azure-impact-reporting | Azure Impact Reporting | ...microsoft.com/en-us/azure/azure-impact-reporting/toc.json | 0 |
+| 150 | active | azure-large-instances | Azure Large Instances | ....microsoft.com/en-us/azure/azure-large-instances/toc.json | 1 |
+| 151 | active | azure-baremetal-infrastructure | Azure Baremetal Infrastructure | ...crosoft.com/en-us/azure/baremetal-infrastructure/toc.json | 0 |
+| 152 | active | azure-business-process-tracking | Azure Business Process Tracking | ...rosoft.com/en-us/azure/business-process-tracking/toc.json | 0 |
+| 153 | active | azure-carbon-optimization | Azure Carbon Optimization | ...rn.microsoft.com/en-us/azure/carbon-optimization/toc.json | 0 |
+| 154 | active | azure-cloud-hsm | Azure Cloud Hsm | https://learn.microsoft.com/en-us/azure/cloud-hsm/toc.json | 0 |
+| 155 | active | azure-confidential-computing | Azure Confidential Computing | ...microsoft.com/en-us/azure/confidential-computing/toc.json | 0 |
+| 156 | active | azure-confidential-ledger | Azure Confidential Ledger | ...rn.microsoft.com/en-us/azure/confidential-ledger/toc.json | 0 |
+| 157 | active | azure-copilot | Azure Copilot | https://learn.microsoft.com/en-us/azure/copilot/toc.json | 0 |
+| 158 | active | azure-data-api-builder | Azure Data Api Builder | ...learn.microsoft.com/en-us/azure/data-api-builder/toc.json | 0 |
+| 159 | active | azure-defender-for-cloud | Azure Defender For Cloud | ...arn.microsoft.com/en-us/azure/defender-for-cloud/toc.json | 0 |
+| 160 | active | azure-defender-for-iot | Azure Defender For Iot | ...com/en-us/azure/defender-for-iot/device-builders/toc.json | 1 |
+| 161 | active | azure-deployment-environments | Azure Deployment Environments | ...icrosoft.com/en-us/azure/deployment-environments/toc.json | 0 |
+| 162 | active | azure-dev-box | Azure Dev Box | https://learn.microsoft.com/en-us/azure/dev-box/toc.json | 0 |
+| 163 | active | azure-education-hub | Azure Education Hub | ...://learn.microsoft.com/en-us/azure/education-hub/toc.json | 0 |
+| 164 | active | azure-energy-data-services | Azure Energy Data Services | ...n.microsoft.com/en-us/azure/energy-data-services/toc.json | 0 |
+| 165 | active | azure-extended-zones | Azure Extended Zones | ...//learn.microsoft.com/en-us/azure/extended-zones/toc.json | 0 |
+| 166 | active | azure-external-attack-surface-management | Azure External Attack Surface Management | ...m/en-us/azure/external-attack-surface-management/toc.json | 0 |
+| 167 | active | azure-firmware-analysis | Azure Firmware Analysis | ...earn.microsoft.com/en-us/azure/firmware-analysis/toc.json | 0 |
+| 168 | active | azure-foundry-classic | Azure Foundry Classic | .../learn.microsoft.com/en-us/azure/foundry-classic/toc.json | 0 |
+| 169 | active | azure-health-bot | Azure Health Bot | https://learn.microsoft.com/en-us/azure/health-bot/toc.json | 0 |
+| 170 | active | azure-import-export | Azure Import Export | ...://learn.microsoft.com/en-us/azure/import-export/toc.json | 0 |
+| 171 | active | azure-industry | Azure Industry | ...y/training-services/microsoft-community-training/toc.json | 0 |
+| 172 | active | azure-integration-environments | Azure Integration Environments | ...crosoft.com/en-us/azure/integration-environments/toc.json | 0 |
+| 173 | active | azure-internet-peering | Azure Internet Peering | ...learn.microsoft.com/en-us/azure/internet-peering/toc.json | 0 |
+| 174 | virtual | azure-microsoft-discovery | Azure Microsoft Discovery | - | 0 |
+| 175 | active | azure-network-function-manager | Azure Network Function Manager | ...crosoft.com/en-us/azure/network-function-manager/toc.json | 0 |
+| 176 | active | azure-networking | Azure Networking | https://learn.microsoft.com/en-us/azure/networking/toc.json | 1 |
+| 177 | active | azure-operator-insights | Azure Operator Insights | ...earn.microsoft.com/en-us/azure/operator-insights/toc.json | 0 |
+| 178 | active | azure-operator-nexus | Azure Operator Nexus | ...//learn.microsoft.com/en-us/azure/operator-nexus/toc.json | 0 |
+| 179 | active | azure-operator-service-manager | Azure Operator Service Manager | ...crosoft.com/en-us/azure/operator-service-manager/toc.json | 0 |
+| 180 | active | azure-oracle | Azure Oracle | https://learn.microsoft.com/en-us/azure/oracle/toc.json | 0 |
+| 181 | active | azure-osconfig | Azure Osconfig | https://learn.microsoft.com/en-us/azure/osconfig/toc.json | 0 |
+| 182 | active | azure-partner-solutions | Azure Partner Solutions | ...earn.microsoft.com/en-us/azure/partner-solutions/toc.json | 16 |
+| 183 | active | azure-payment-hsm | Azure Payment Hsm | https://learn.microsoft.com/en-us/azure/payment-hsm/toc.json | 0 |
+| 184 | active | azure-peering-service | Azure Peering Service | .../learn.microsoft.com/en-us/azure/peering-service/toc.json | 0 |
+| 185 | active | azure-quotas | Azure Quotas | https://learn.microsoft.com/en-us/azure/quotas/toc.json | 0 |
+| 186 | active | azure-reliability | Azure Reliability | https://learn.microsoft.com/en-us/azure/reliability/toc.json | 0 |
+| 187 | active | azure-resiliency | Azure Resiliency | https://learn.microsoft.com/en-us/azure/resiliency/toc.json | 0 |
+| 188 | virtual | azure-scheduler | Azure Scheduler | - | 0 |
+| 189 | active | azure-security | Azure Security | ...-us/azure/security/container-secure-supply-chain/toc.json | 2 |
+| 190 | active | azure-sentinel | Azure Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/toc.json | 0 |
+| 191 | active | azure-service-connector | Azure Service Connector | ...earn.microsoft.com/en-us/azure/service-connector/toc.json | 0 |
+| 192 | active | azure-sre-agent | Azure Sre Agent | https://learn.microsoft.com/en-us/azure/sre-agent/toc.json | 0 |
+| 193 | virtual | azure-virtual-enclaves | Azure Virtual Enclaves | - | 0 |
 
 ## Product Details
 
@@ -443,6 +451,15 @@ Quick overview for reviewers. See individual product reports for details.
 - https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/toc.json
 - https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/toc.json
 
+### Azure AI Vision (`azure-ai-vision`)
+
+- **Status**: active
+- **TOC URL**: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/toc.json
+
+**Sub-TOCs:**
+
+- https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/face/toc.json
+
 ### Azure Kubernetes Service Edge Essentials (`azure-aks-edge-essentials`)
 
 - **Status**: active
@@ -452,6 +469,15 @@ Quick overview for reviewers. See individual product reports for details.
 
 - https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/toc.json
 - https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/toc.json
+
+### Azure AI Foundry Local (`azure-ai-foundry-local`)
+
+- **Status**: active
+- **TOC URL**: https://learn.microsoft.com/en-us/azure/foundry-local/toc.json
+
+**Sub-TOCs:**
+
+- https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/toc.json
 
 ### Azure App Service (`azure-app-service`)
 

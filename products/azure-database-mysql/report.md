@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 176
+- **Updated Pages**: 0
+- **Unchanged**: 177
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 61 | 34.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal)
-  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-01T12:06:00.000Z
 
 ## Classified Pages
 

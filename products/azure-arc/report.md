@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   security: Security, identity, RBAC, network protection, certificates/keys, and policy/compliance
     for Azure Arc servers, Kubernetes, data services, SCVMM/VMware, and Edge RAG workloads.
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 415
+- **Updated Pages**: 3
+- **Unchanged**: 412
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -61,6 +61,15 @@ category_descriptions:
 | *(Unclassified)* | 146 | 35.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Stage a solution before deployment](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/how-to-stage)
+  - Updated: 2025-07-10T08:00:00.000Z → 2026-03-02T12:03:00.000Z
+- [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources)
+  - Updated: 2025-07-01T22:12:00.000Z → 2026-03-02T12:03:00.000Z
+- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes)
+  - Updated: 2025-12-23T18:04:00.000Z → 2026-03-02T12:03:00.000Z
 
 ## Classified Pages
 
@@ -384,7 +393,6 @@ category_descriptions:
 | [Create using Kubernetes tools](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-sql-managed-instance-using-kubernetes-native-tools) | 0.40 | Kubernetes tools deployment how-to; procedural, not a catalog of configuration options or limits. |
 | [Create with CLI](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-sql-managed-instance) | 0.40 | Deployment tutorial for creating an instance; likely step-by-step without tier matrices or config parameter tables. |
 | [Data controller direct - portal](https://learn.microsoft.com/en-us/azure/azure-arc/data/upgrade-data-controller-direct-portal) | 0.40 | Portal-based upgrade walkthrough; UI steps rather than expert configuration or troubleshooting content. |
-| [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources) | 0.40 | How-to delete resources via Azure CLI; likely basic CLI usage without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Deploy Azure Arc-enabled Open Service Mesh](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-arc-enabled-open-service-mesh) | 0.40 | Tutorial for OSM extension deployment; likely basic deployment steps without detailed config tables or troubleshooting matrices. |
 | [Deploy your solutions](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/deploy) | 0.40 | Task-focused portal how-to for deploying/rolling back solutions; likely step-by-step UI usage without configuration tables, limits, or product-specific patterns beyond generic deployment flows. |
 | [Enable SCVMM resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/enable-scvmm-inventory-resources) | 0.40 | Enabling SCVMM inventory from the portal is a how-to; likely lacks detailed configuration matrices or error-code-based troubleshooting. |
@@ -400,7 +408,6 @@ category_descriptions:
 | [Prepare to deliver Extended Security Updates](https://learn.microsoft.com/en-us/azure/azure-arc/servers/prepare-extended-security-updates) | 0.40 | Preparation/benefits overview for ESUs via Arc; likely procedural and conceptual without detailed limits, configs, or error mappings. |
 | [Resource representation in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/resource-representation) | 0.40 | Describes resource representation conceptually; likely mapping examples but not configuration parameters or troubleshooting patterns. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-overview) | 0.40 | High-level security overview and considerations; likely conceptual without detailed RBAC role lists, config parameters, or compliance mappings. |
-| [Stage a solution before deployment](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/how-to-stage) | 0.40 | Explains staging as a predeployment step and scenarios; appears to be procedural guidance without quantified limits, configuration tables, or decision matrices. |
 | [Terraform and Bicep based VM creation](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-create-a-vm) | 0.40 | Quickstart showing Bicep-based VM creation; primarily step-by-step provisioning without detailed config tables, limits, or product-specific patterns beyond generic IaC usage. |
 | [Uninstall extension](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/uninstall-extension) | 0.40 | Uninstall steps are procedural; no clear evidence of configuration tables, limits, or troubleshooting mappings. |
 | [Update configuration and resize a VM](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/update-configuration-and-resize-vm) | 0.40 | Resizing and updating VM configuration is a procedural guide; without explicit mention of configuration tables or limits, it’s likely standard how-to content. |
@@ -447,8 +454,8 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/overview) | 0.30 | Preview overview of Azure Container Storage; mostly conceptual description of capabilities. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/build-chat-solution-overview) | 0.30 | High-level overview of chat solution configuration (ingestion, prompts, endpoint); summary suggests conceptual guidance rather than detailed configs or limits. |
 | [Perform VM powercycle operations](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/perform-powercycle-operations) | 0.30 | Describes start/stop/restart operations for VMs; basic lifecycle operations without deep config, limits, or troubleshooting content. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes) | 0.30 | Release notes summarizing features and fixes; typically change log style without structured limits, configuration references, or troubleshooting mappings required by the defined sub-skill types. |
 | [Remove your vCenter environment from Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/remove-vcenter-from-arc-vmware) | 0.30 | Removal/cleanup guide; procedural deprovisioning steps without detailed configuration parameters or limits. |
+| [Stage a solution before deployment](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/how-to-stage) | 0.30 | From the summary, this is a procedural 'how to stage resources' guide without evidence of detailed configuration tables, limits, or product-specific parameters. It appears to describe the concept and scenarios for staging rather than expert-only numeric limits, configuration matrices, or error mappings. |
 | [View alerts](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-alerts) | 0.30 | Viewing alerts is primarily a UI/status walkthrough; it doesn’t emphasize configuration parameters or troubleshooting mappings. |
 | [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes) | 0.30 | Release notes for Connected Machine agent; version-specific changes, not stable expert patterns for skills. |
 | [Workflows and features](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workflow-features) | 0.30 | Overview of workflows and features; conceptual description of authoring/deploying/managing solutions without explicit config tables or limits. |
@@ -466,6 +473,7 @@ category_descriptions:
 | [Create, use, delete, and modify an Arc site](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-crud-site) | 0.20 | CRUD operations for Arc sites via portal are step-by-step instructions without configuration parameter tables, limits, or error-code-based troubleshooting. |
 | [Data collection and reporting](https://learn.microsoft.com/en-us/azure/azure-arc/data/privacy-data-collection-and-reporting) | 0.20 | Describes telemetry/data collection behavior; policy/behavioral info rather than configuration parameters, limits, or troubleshooting mappings. |
 | [Delete a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/delete-virtual-machine) | 0.20 | Deleting a VM via Arc is a straightforward operation guide; not focused on limits, configuration matrices, or troubleshooting mappings. |
+| [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources) | 0.20 | The page describes how to delete workload orchestration resources, likely a straightforward CLI-based deletion guide. The summary does not indicate presence of specific limits, configuration parameter tables, error-code mappings, or decision matrices; it is standard operational guidance an LLM would already know generically. |
 | [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management) | 0.20 | High-level multi-cluster workload management use cases; appears conceptual without concrete limits, configs, or decision matrices. |
 | [Inner loop developer experience](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-inner-loop-gitops) | 0.20 | Inner loop developer experience is process/practice oriented; unlikely to contain product-specific configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-business-continuity-overview) | 0.20 | Business continuity overview is conceptual; summary doesn’t indicate concrete limits, configs, or error mappings. |
@@ -475,6 +483,7 @@ category_descriptions:
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/release-notes) | 0.20 | Release notes overview; while detailed, it’s primarily change history and not a configuration, troubleshooting, or limits reference as defined by the sub-skill types. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes) | 0.20 | Release notes for Arc-enabled data services; change log rather than a stable expert-knowledge reference in the defined sub-skill categories. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes; version history and changes, but not configuration patterns or limits relevant as reusable skills. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes) | 0.20 | Release notes typically list features and fixes but not the structured limits, configuration matrices, or troubleshooting mappings required by the sub-skill types. The summary indicates high-level change information rather than reusable expert configuration or diagnostic knowledge. |
 | [SQL Managed Instance enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-overview) | 0.20 | Service overview; conceptual description of SQL Managed Instance enabled by Azure Arc. |
 | [View connectivity status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-connectivity-status) | 0.20 | Viewing connectivity status is a UI usage guide; it doesn’t expose numeric limits, config matrices, or detailed error mappings. |
 | [View update status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-update-status) | 0.20 | Viewing update status is a basic monitoring/portal guide without expert-only configuration or troubleshooting content. |

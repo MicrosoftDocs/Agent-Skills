@@ -3,7 +3,7 @@ name: azure-site-recovery
 description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Site Recovery applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Site Recovery Skill
@@ -22,15 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L63 | Diagnosing and fixing Azure Site Recovery replication, agent, network, failover/failback, and appliance issues for Azure VMs, Hyper-V, VMware, and physical servers. |
+| Troubleshooting | L35-L63 | Diagnosing and fixing Azure Site Recovery replication, agent, network, failover, Hyper-V/VMware/physical server, and monitoring issues, including specific error codes and health problems. |
 | Best Practices | L64-L69 | Guidance on tuning Azure Site Recovery performance: analyzing high data churn on VMs, and monitoring/troubleshooting process server health, capacity, and throughput. |
 | Decision Making | L70-L87 | Planning and sizing Azure Site Recovery: capacity and cost estimation, VMware/Hyper-V DR planning, failover/failback choices, migration from classic, and comparing ASR vs Azure Migrate. |
-| Architecture & Design Patterns | L88-L99 | Designing Azure Site Recovery architectures for specific workloads (AD/DNS, SAP, Dynamics AX, SharePoint, IIS, SQL, VMware, file servers) and multi-tier app DR patterns. |
-| Limits & Quotas | L100-L114 | Limits, capacity planning, and support matrices for Azure Site Recovery (Azure-to-Azure, Hyper-V, VMware/physical), including churn limits, shared disks, Mobility service, and safe use with Backup |
-| Security | L115-L123 | Configuring NSGs, TLS, RBAC, encryption changes, and migrating Run As to managed identities to secure Azure Site Recovery traffic, access, and data. |
-| Configuration | L124-L191 | Configuring Azure Site Recovery for Azure, VMware, Hyper‑V, and physical servers: setup, networking, encryption, appliances, policies, monitoring, and reprotection/failback settings. |
-| Integrations & Coding Patterns | L192-L204 | Scripts and templates for automating ASR: PowerShell for Hyper‑V/shared disks, ExpressRoute/Traffic Manager integration, and Bicep/ARM/Terraform to deploy Recovery Services vaults. |
-| Deployment | L205-L208 | Guidance for moving VMware disaster recovery setups from classic Azure Site Recovery to the modernized architecture, including migration steps, prerequisites, and configuration changes. |
+| Architecture & Design Patterns | L88-L98 | Designing Azure Site Recovery architectures for specific workloads (AD/DNS, SAP, Dynamics AX, SharePoint, IIS, SQL, VMware, file servers) and multi-tier app DR patterns. |
+| Limits & Quotas | L99-L113 | Limits, capacity planning, and support matrices for Azure Site Recovery: VM/Hyper-V/VMware DR limits, high churn, shared disks, appliances, Mobility service usage, and safe use with Azure Backup. |
+| Security | L114-L122 | Configuring NSGs, TLS, RBAC, encryption remediation, and migrating Run As to managed identities to secure Azure Site Recovery traffic and access. |
+| Configuration | L123-L190 | Configuring Azure Site Recovery for Azure, VMware, Hyper‑V, and physical servers: setup, networking, encryption, appliances, policies, replication settings, and DR/failback behavior. |
+| Integrations & Coding Patterns | L191-L203 | Scripts and templates for automating ASR: PowerShell for Hyper‑V/shared disks, ExpressRoute/Traffic Manager integration, and Bicep/ARM/Terraform to deploy Recovery Services vaults. |
+| Deployment | L204-L207 | Guidance for moving VMware disaster recovery setups from classic Azure Site Recovery to the modernized architecture, including migration steps, prerequisites, and configuration changes. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,7 +41,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Diagnose network connectivity issues for Azure-to-Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-troubleshoot-network-connectivity |
 | Troubleshoot common Azure VM replication problems in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-troubleshoot-replication |
 | Fix VM-level errors in Azure Site Recovery replication | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-virtual-machine-errors |
-| Troubleshoot Hyper-V to Azure Site Recovery questions | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-common-questions |
+| Resolve common Hyper-V to Azure Site Recovery issues | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-common-questions |
 | Resolve Hyper-V to Azure replication issues in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-troubleshoot |
 | Troubleshoot and configure Azure Site Recovery monitoring | https://learn.microsoft.com/en-us/azure/site-recovery/monitoring-common-questions |
 | Fix Azure Site Recovery VM agent and extension issues | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-extension-troubleshoot |
@@ -51,13 +51,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Run VMM cleanup script to unregister disconnected Site Recovery servers | https://learn.microsoft.com/en-us/azure/site-recovery/unregister-vmm-server-script |
 | Troubleshoot VMware to Azure Site Recovery scenarios | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-common-questions |
 | Troubleshoot Azure Site Recovery configuration server deployment issues | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-configuration-server |
-| Resolve failback and reprotection issues for VMware DR to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-failback-reprotect |
-| Fix Mobility Service push installation failures in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-push-install |
+| Troubleshoot VMware failback and reprotection with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-failback-reprotect |
+| Troubleshoot Mobility Service push installation failures | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-push-install |
 | Resolve replication issues for VMware and physical servers to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-replication |
 | Fix Azure Site Recovery error 78144 for missing app-consistent points | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-replication-vss-installation-failure-behaviors |
 | Troubleshoot Azure Site Recovery Provider upgrade failures | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-upgrade-failures |
 | Diagnose VMware vCenter discovery failures in Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-vcenter-discovery-failures |
-| Diagnose and fix Azure Site Recovery process server problems | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-troubleshoot-process-server |
+| Troubleshoot Azure Site Recovery process server issues | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-troubleshoot-process-server |
 | Troubleshoot VMware replication appliance health in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-troubleshoot-appliance-health-issue |
 | Resolve VMware mobility agent health errors in Azure Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-troubleshoot-mobility-agent-health |
 
@@ -90,7 +90,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Protect on-premises file servers with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/file-server-disaster-recovery |
 | Understand classic vs modernized VMware Site Recovery architecture | https://learn.microsoft.com/en-us/azure/site-recovery/move-from-classic-to-modernized-vmware-disaster-recovery |
-| Design AD and DNS disaster recovery with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-active-directory |
 | Design Dynamics AX disaster recovery using Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-dynamicsax |
 | Configure IIS web app disaster recovery with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-iis |
 | Set up SAP NetWeaver disaster recovery on Azure | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-sap |
@@ -100,17 +99,17 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Check Azure-to-Azure Site Recovery support limits | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix |
+| Check Azure-to-Azure Site Recovery VM support limits | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix |
 | Use high churn support limits for Azure VM DR | https://learn.microsoft.com/en-us/azure/site-recovery/concepts-azure-to-azure-high-churn-support |
-| Check Hyper-V to Azure Site Recovery support matrix | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix |
-| Review replication appliance requirements for VMware DR | https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix |
+| Verify Hyper-V to Azure Site Recovery support matrix | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix |
+| Check replication appliance requirements for VMware DR | https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix |
 | Understand shared disk support for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/shared-disk-support-matrix |
 | Use Azure Site Recovery with Azure Backup safely | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-backup-interoperability |
 | Review version history and limitations of Site Recovery Deployment Planner | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-deployment-planner-history |
 | Plan capacity for VMware disaster recovery with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-plan-capacity-vmware |
-| Review VMware and physical server DR support matrix | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix |
+| Review VMware and physical server DR support to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix |
 | Scale Site Recovery for large VMware deployments | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-large-deployment |
-| Understand Mobility service resource usage and behavior | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-mobility-service-overview |
+| Understand Mobility service resource usage for VMware DR | https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-mobility-service-overview |
 
 ### Security
 | Topic | URL |
@@ -128,7 +127,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure VMware Solution environment for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-avs |
 | Prepare Azure resources for Azure VMware Solution disaster recovery | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-prepare-azure |
 | Enable replication for Azure VMware Solution VMs to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-replication |
-| Reprotect Azure VMs back to Azure VMware Solution | https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-reprotect |
 | Manage automatic Mobility service updates in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-autoupdate |
 | Customize failover VM networking settings in Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-customize-networking |
 | Enable global Azure-to-Azure disaster recovery with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-global-disaster-recovery |
@@ -156,13 +154,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure disaster recovery for VMs on Azure Extended Zones via vault flow | https://learn.microsoft.com/en-us/azure/site-recovery/disaster-recovery-for-edge-zone-vm-tutorial |
 | Replicate proximity placement group VMs with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/how-to-enable-replication-proximity-placement-groups |
 | Configure Site Recovery replication with private endpoints | https://learn.microsoft.com/en-us/azure/site-recovery/hybrid-how-to-enable-replication-private-endpoints |
-| Prepare on-premises disks via hydration for Azure DR | https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process |
+| Configure VM disks for Azure using hydration | https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process |
 | Configure Hyper-V disaster recovery without VMM using Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-tutorial |
 | Configure on-premises Hyper-V infrastructure for Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-prepare-on-premises-tutorial |
 | Set up Hyper-V with VMM disaster recovery to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-azure-tutorial |
 | Configure Hyper-V network mapping with Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-network-mapping |
 | Configure Azure Monitor Logs for Azure Site Recovery monitoring | https://learn.microsoft.com/en-us/azure/site-recovery/monitor-log-analytics |
 | Reference for Azure Site Recovery monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/site-recovery/monitor-site-recovery-reference |
+| Manage configuration server for physical server DR to Azure | https://learn.microsoft.com/en-us/azure/site-recovery/physical-manage-configuration-server |
 | Enable replication for on-premises physical servers with modernized Site Recovery | https://learn.microsoft.com/en-us/azure/site-recovery/physical-server-enable-replication |
 | Set up Azure Site Recovery reporting with Monitor logs and workbooks | https://learn.microsoft.com/en-us/azure/site-recovery/report-site-recovery |
 | Migrate from deprecated IPConfig parameters in Site Recovery cmdlets | https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-ipconfig-cmdlet-parameter-deprecation |

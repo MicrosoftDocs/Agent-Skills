@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   troubleshooting: Diagnosing and fixing Defender for IoT micro agent and OT sensor
     issues, understanding/handling security and health alerts, and validating sensor/agent
@@ -35,13 +35,13 @@ category_descriptions:
 - **Total Pages**: 180
 - **Fetched**: 180
 - **Fetch Failed**: 0
-- **Classified**: 117
-- **Unclassified**: 63
+- **Classified**: 116
+- **Unclassified**: 64
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -56,11 +56,16 @@ category_descriptions:
 | deployment | 21 | 11.7% |
 | integrations | 24 | 13.3% |
 | limits-quotas | 5 | 2.8% |
-| security | 16 | 8.9% |
+| security | 15 | 8.3% |
 | troubleshooting | 8 | 4.4% |
-| *(Unclassified)* | 63 | 35.0% |
+| *(Unclassified)* | 64 | 35.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response)
+  - Updated: 2025-01-09T18:03:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 
@@ -172,7 +177,6 @@ category_descriptions:
 | [Move a resource to a different region](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-region-move) | deployment | 0.65 | Describes moving a hidden iotsecuritysolutions resource between regions; includes product-specific deployment/migration behavior and constraints. |
 | [Security recommendations for IoT Hub](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-recommendations) | best-practices | 0.65 | Provides a list of concrete security recommendations for IoT Hub resources; these are product-specific DO/DO NOT guidance tied to Defender’s assessment model. |
 | [Subscription billing](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/billing) | decision-making | 0.65 | Describes site-based licenses and pricing models for OT monitoring; used for cost optimization and plan selection, which is product-specific decision guidance. |
-| [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response) | security | 0.60 | Improving alert workflows on the sensor is security-operations guidance specific to this product, likely including configuration of workflows or automations. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts) | security | 0.60 | Alert management in Azure portal for this product is a concrete security operations pattern with product-specific alert fields and actions. |
 | [Defender for IoT and your network architecture](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/understand-network-architecture) | architecture-patterns | 0.60 | Relates Defender for IoT deployment to Purdue model layers; product-specific architectural placement guidance. |
 | [Integration catalog](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/integrate-overview) | decision-making | 0.60 | Overview of supported integrations and guidance on when to use data connectors vs legacy methods helps decide integration approaches across the security stack. |
@@ -222,6 +226,7 @@ category_descriptions:
 | [Vulnerability management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/vulnerability-management) | 0.35 | Conceptual vulnerability management description (CVE, CVSS) in portal; summary suggests no detailed config or numeric thresholds. |
 | [What's new archive](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new-archive) | 0.35 | What's new archive is primarily release/feature history; not focused on limits, configuration matrices, or troubleshooting mappings. |
 | [What's new in Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/whats-new) | 0.35 | What's new article summarizing recent features; change log style, not a focused skill type like configuration, limits, or troubleshooting. |
+| [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response) | 0.30 | The page appears to describe how to improve OT alert workflows and incident response using Defender for IoT, but the summary does not indicate presence of specific error codes, configuration parameter tables, limits, or detailed product-specific troubleshooting/decision matrices. It reads more like a procedural/usage guide than expert reference content as defined by the sub-skill types. |
 | [Compliance resources](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/compliance) | 0.30 | Compliance overview referencing Azure infrastructure compliance; mostly marketing/assurance content, not concrete security configuration or limits. |
 | [Control OT traffic monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-control-what-traffic-is-monitored) | 0.30 | Appears to be a usage/how-to guide for traffic monitoring scope without clear indication of product-specific limits, configs tables, or error mappings. |
 | [Create a learned baseline of OT alerts](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/create-learned-baseline) | 0.30 | Creating a learned baseline sounds procedural; no evidence of numeric thresholds, config tables, or error codes in the summary. |

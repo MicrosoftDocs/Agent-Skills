@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-02 05:15:33
-**Total Duration**: 0m 9s
+**Generated**: 2026-03-02 16:00:11
+**Total Duration**: 0m 11s
 
 ## Product Crawl Summary
 
@@ -37,7 +37,7 @@ Quick overview for reviewers. See individual product reports for details.
 ## Product Discovery Summary
 
 - **Total Products**: 1
-- **Total Sub-TOCs**: 8
+- **Total Sub-TOCs**: 9
 - **Total Skipped**: 0
 
 ## Products by Status
@@ -50,7 +50,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Status | Slug | Name | TOC URL | Sub-TOCs |
 |---|--------|------|------|---------|----------|
-| 1 | active | azure-well-architected | Azure Well Architected | ...learn.microsoft.com/en-us/azure/well-architected/toc.json | 8 |
+| 1 | active | azure-well-architected | Azure Well Architected | ...learn.microsoft.com/en-us/azure/well-architected/toc.json | 9 |
 
 ## Product Details
 
@@ -64,6 +64,7 @@ Quick overview for reviewers. See individual product reports for details.
 - https://learn.microsoft.com/en-us/azure/well-architected/ai/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/toc.json
+- https://learn.microsoft.com/en-us/azure/well-architected/hpc/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/oracle-iaas/toc.json
 - https://learn.microsoft.com/en-us/azure/well-architected/saas/toc.json

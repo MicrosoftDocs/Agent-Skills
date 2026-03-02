@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -35,13 +35,13 @@ category_descriptions:
 - **Total Pages**: 104
 - **Fetched**: 104
 - **Fetch Failed**: 0
-- **Classified**: 83
-- **Unclassified**: 21
+- **Classified**: 82
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -49,7 +49,7 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 5.8% |
+| architecture-patterns | 5 | 4.8% |
 | best-practices | 2 | 1.9% |
 | configuration | 28 | 26.9% |
 | decision-making | 9 | 8.7% |
@@ -58,9 +58,14 @@ category_descriptions:
 | limits-quotas | 4 | 3.8% |
 | security | 17 | 16.3% |
 | troubleshooting | 5 | 4.8% |
-| *(Unclassified)* | 21 | 20.2% |
+| *(Unclassified)* | 22 | 21.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios)
+  - Updated: 2023-02-13T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -118,7 +123,6 @@ category_descriptions:
 | [Caching with Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-caching) | configuration | 0.66 | Describes concrete caching behavior, header handling, and TTL semantics specific to Front Door, which are product-specific operational details. |
 | [High availability implementation guide](https://learn.microsoft.com/en-us/azure/frontdoor/high-availability) | architecture-patterns | 0.66 | Describes an architecture pattern using Traffic Manager for manual failover from Front Door to alternate CDN/origin; product-specific HA design guidance. |
 | [Post migration Dev-Ops experience](https://learn.microsoft.com/en-us/azure/frontdoor/post-migration-dev-ops-experience) | deployment | 0.66 | Gives tool-specific guidance (Terraform, ARM, Bicep, PowerShell, CLI) for updating pipelines to new Front Door resources; product-specific deployment patterns. |
-| [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios) | architecture-patterns | 0.65 | Scenario-focused architecture guidance on accelerating and securing web apps; likely includes when to place Front Door in front of workloads and trade-offs for solution design. |
 | [Create a Front Door - CLI](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-cli) | integrations | 0.65 | Quickstart using Azure CLI; contains specific CLI commands and parameters for Front Door and WAF policy creation, which are product-specific API/SDK usage details. |
 | [Create a Front Door - PowerShell](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-powershell) | integrations | 0.65 | Quickstart using PowerShell; includes concrete cmdlets and parameters specific to Front Door profile/origin configuration, which are product-specific integration patterns. |
 | [Web Application Firewall and Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-waf) | security | 0.65 | Tutorial on using WAF with Front Door; typically includes WAF policy configuration, rule set names, and security-related settings specific to this integration. |
@@ -174,4 +178,5 @@ category_descriptions:
 | [Create a new endpoint](https://learn.microsoft.com/en-us/azure/frontdoor/how-to-configure-endpoints) | 0.25 | How-to for adding an endpoint via portal; step-by-step UI instructions without broad config reference or limits. |
 | [Create a Front Door - Portal](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) | 0.20 | Quickstart using portal; step-by-step creation without broad config reference tables or limits. |
 | [What is Azure Front Door (classic)?](https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview) | 0.20 | An overview page; primarily conceptual description of the service and its capabilities without detailed numeric limits, configuration tables, or troubleshooting mappings. |
+| [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios) | 0.10 | High-level scenario/overview of Azure Front Door capabilities and when to consider using it; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) | 0.10 | High-level product overview and benefits; no concrete limits, configs, or error details. |

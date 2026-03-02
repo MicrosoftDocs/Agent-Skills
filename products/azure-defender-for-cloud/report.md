@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   integrations: Integrating Defender for Cloud with SIEMs, DevOps, APIs, and third‑party
     tools (ServiceNow, Power BI, EDR, AWS/GCP), plus ARG queries, exports, and automation
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 470
 - **Fetched**: 470
 - **Fetch Failed**: 0
-- **Classified**: 259
-- **Unclassified**: 211
+- **Classified**: 258
+- **Unclassified**: 212
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 470
+- **Updated Pages**: 1
+- **Unchanged**: 469
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -54,14 +54,19 @@ category_descriptions:
 | best-practices | 16 | 3.4% |
 | configuration | 65 | 13.8% |
 | decision-making | 13 | 2.8% |
-| deployment | 30 | 6.4% |
+| deployment | 29 | 6.2% |
 | integrations | 24 | 5.1% |
 | limits-quotas | 7 | 1.5% |
 | security | 73 | 15.5% |
 | troubleshooting | 22 | 4.7% |
-| *(Unclassified)* | 211 | 44.9% |
+| *(Unclassified)* | 212 | 45.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log)
+  - Updated: 2026-02-24T12:10:00.000Z → 2026-03-02T12:03:00.000Z
 
 ## Classified Pages
 
@@ -184,7 +189,6 @@ category_descriptions:
 | [Customize sensitivity settings](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-sensitivity-settings) | configuration | 0.70 | Article is specifically about configuring data sensitivity settings. Likely includes setting names, options, and their effects, which are product-specific configuration details. |
 | [Defender for Cloud support matrices](https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-cloud) | deployment | 0.70 | Support matrix for Azure services, clouds, and OSes; product-specific interoperability matrix used when planning deployments and coverage. |
 | [Defender for Containers deployment overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-deployment-overview) | decision-making | 0.70 | Deployment overview that helps choose the right deployment path across Kubernetes environments; likely includes comparison of options and guidance for different scenarios. |
-| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | deployment | 0.70 | Changelog for the Defender sensor; includes version-specific changes and may affect deployment planning and compatibility, which is product-specific deployment knowledge. |
 | [Deploy the Azure Monitor agent](https://learn.microsoft.com/en-us/azure/defender-for-cloud/auto-deploy-azure-monitoring-agent) | configuration | 0.70 | Use of AMA in Defender will involve agent configuration options, data collection rules, and settings unique to this integration. |
 | [Deprecated recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-deprecated) | security | 0.70 | Lists deprecated security recommendations with their identifiers; this is product-specific security metadata useful for posture management. |
 | [Deprecated security alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deprecated-alerts) | troubleshooting | 0.70 | Reference table of deprecated security alerts is effectively an error/alert catalog with product-specific identifiers and meanings, useful for troubleshooting alert behavior over time. |
@@ -519,6 +523,7 @@ category_descriptions:
 | [Defender CSPM support for GCP and more updates](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-six) | 0.20 | Video episode description about CSPM support for GCP and multicloud strategy; high-level feature discussion without concrete limits, configs, or troubleshooting details. |
 | [Defender for APIs reaches GA](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-nine) | 0.20 | GA announcement and feature recap for Defender for APIs; marketing/overview style content without quantified limits, configs, or troubleshooting mappings. |
 | [Defender for Cloud glossary of terms](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-glossary) | 0.20 | Glossary of terms is conceptual reference; it defines terminology but not configuration, limits, or troubleshooting details. |
+| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.20 | A changelog/release notes page listing version history, features, and fixes. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. It’s primarily update history rather than structured expert guidance matching any defined sub-skill type. |
 | [Microsoft Defender for Containers in a multiCloud environment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-nine) | 0.20 | Multicloud containers episode focuses on capabilities and onboarding demos; summary does not indicate detailed config tables or numeric thresholds. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-overview) | 0.20 | High-level overview of Defender for Containers on Arc; primarily conceptual capabilities and scenarios without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-resource-manager-introduction) | 0.20 | Benefits and features overview for Defender for Resource Manager; summary indicates conceptual security positioning rather than detailed configuration or troubleshooting content. |
