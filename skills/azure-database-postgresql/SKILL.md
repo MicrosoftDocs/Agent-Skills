@@ -3,7 +3,7 @@ name: azure-database-postgresql
 description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -29,7 +29,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Limits & Quotas | L99-L118 | Backup/restore behavior, geo-restore and recovery, storage types/limits/performance, quotas and capacity limits, replica and connection limits, and known migration/conversion constraints |
 | Security | L119-L149 | Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, TLS/SSL), firewall/VNet/Private Link, managed identities, encryption, auditing, roles, policies, and Defender for Cloud. |
 | Configuration | L150-L239 | Configuring Azure Database for PostgreSQL: server parameters, extensions, HA, maintenance, logging/monitoring, performance tuning, networking, migration settings, and WAL/replication options. |
-| Integrations & Coding Patterns | L240-L269 | AI and app integration patterns for Azure PostgreSQL: calling Azure AI/ML/OpenAI, using vectors/LangChain, app/SDK/VS Code connections, Data Factory pipelines, and migration tools like pg_dump/Ora2Pg. |
+| Integrations & Coding Patterns | L240-L269 | Using Azure PostgreSQL with AI/ML (Azure AI, OpenAI, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools (Ora2Pg, pg_dump). |
 | Deployment | L270-L280 | CI/CD deployment to Azure PostgreSQL, major upgrades, Bicep-based provisioning, app deployments (Django/AKS, Web Apps + VNet), maintenance rollout behavior, and point-in-time restore. |
 
 ### Troubleshooting
@@ -246,7 +246,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Generate and store Azure OpenAI embeddings in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-openai |
 | Use Azure AI extension and OpenAI embeddings in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-overview |
 | Use LangChain with Azure PostgreSQL vector database | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-develop-with-langchain |
-| Configure MCP integration between Foundry and PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration |
+| Integrate Azure PostgreSQL with Microsoft Foundry via MCP | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration |
 | Integrate AI orchestration frameworks with Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-frameworks |
 | Connect to Azure PostgreSQL from C# applications | https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-csharp |
 | Access Azure PostgreSQL using Go database drivers | https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-go |

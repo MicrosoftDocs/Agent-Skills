@@ -1,14 +1,14 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Extended Zones applications.
+description: Expert knowledge for Azure Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Azure Extended Zones applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Extended Zones Skill
+# Azure Extended Zones Skill
 
-This skill provides expert guidance for Extended Zones. Covers decision making, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Extended Zones. Covers decision making, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

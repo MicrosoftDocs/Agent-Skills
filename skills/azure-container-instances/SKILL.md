@@ -1,14 +1,14 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Container Instances applications.
+description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Container Instances Skill
+# Azure Container Instances Skill
 
-This skill provides expert guidance for Container Instances. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Container Instances. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

@@ -1,14 +1,14 @@
 ---
 name: azure-attestation
-description: Expert knowledge for Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when building, debugging, or optimizing Attestation applications.
+description: Expert knowledge for Azure Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Attestation applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Attestation Skill
+# Azure Attestation Skill
 
-This skill provides expert guidance for Attestation. Covers troubleshooting, best practices, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Attestation. Covers troubleshooting, best practices, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

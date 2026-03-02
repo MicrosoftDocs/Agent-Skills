@@ -1,14 +1,14 @@
 ---
 name: azure-relay
-description: Expert knowledge for Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Relay applications.
+description: Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Relay applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Relay Skill
+# Azure Relay Skill
 
-This skill provides expert guidance for Relay. Covers troubleshooting, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Relay. Covers troubleshooting, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

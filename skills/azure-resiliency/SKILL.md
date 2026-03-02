@@ -1,14 +1,14 @@
 ---
 name: azure-resiliency
-description: Expert knowledge for Resiliency development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Resiliency applications.
+description: Expert knowledge for Azure Resiliency development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Resiliency applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Resiliency Skill
+# Azure Resiliency Skill
 
-This skill provides expert guidance for Resiliency. Covers limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Resiliency. Covers limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

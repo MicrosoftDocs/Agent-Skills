@@ -1,14 +1,14 @@
 ---
 name: azure-peering-service
-description: Expert knowledge for Peering Service development including best practices. Use when building, debugging, or optimizing Peering Service applications.
+description: Expert knowledge for Azure Peering Service development including best practices. Use when building, debugging, or optimizing Azure Peering Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Peering Service Skill
+# Azure Peering Service Skill
 
-This skill provides expert guidance for Peering Service. Covers best practices. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Peering Service. Covers best practices. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

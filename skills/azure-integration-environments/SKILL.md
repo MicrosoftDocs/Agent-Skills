@@ -1,14 +1,14 @@
 ---
 name: azure-integration-environments
-description: Expert knowledge for Integration Environments development including various topics. Use when building, debugging, or optimizing Integration Environments applications.
+description: Expert knowledge for Azure Integration Environments development including various topics. Use when building, debugging, or optimizing Azure Integration Environments applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Integration Environments Skill
+# Azure Integration Environments Skill
 
-This skill provides expert guidance for Integration Environments. Covers various topics. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Integration Environments. Covers various topics. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

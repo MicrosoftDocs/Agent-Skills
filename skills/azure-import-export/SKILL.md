@@ -1,14 +1,14 @@
 ---
 name: azure-import-export
-description: Expert knowledge for Import Export development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Import Export applications.
+description: Expert knowledge for Azure Import Export development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Import Export applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Import Export Skill
+# Azure Import Export Skill
 
-This skill provides expert guidance for Import Export. Covers troubleshooting, limits & quotas, and security. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Import Export. Covers troubleshooting, limits & quotas, and security. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

@@ -1,14 +1,14 @@
 ---
 name: azure-education-hub
-description: Expert knowledge for Education Hub development including troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Education Hub applications.
+description: Expert knowledge for Azure Education Hub development including troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Education Hub applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Education Hub Skill
+# Azure Education Hub Skill
 
-This skill provides expert guidance for Education Hub. Covers troubleshooting, and limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Education Hub. Covers troubleshooting, and limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

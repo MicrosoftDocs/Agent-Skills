@@ -1,14 +1,14 @@
 ---
 name: azure-internet-peering
-description: Expert knowledge for Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Internet Peering applications.
+description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Internet Peering Skill
+# Azure Internet Peering Skill
 
-This skill provides expert guidance for Internet Peering. Covers troubleshooting. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Internet Peering. Covers troubleshooting. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

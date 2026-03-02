@@ -1,14 +1,14 @@
 ---
 name: azure-data-share
-description: Expert knowledge for Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Data Share applications.
+description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Data Share applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Data Share Skill
+# Azure Data Share Skill
 
-This skill provides expert guidance for Data Share. Covers troubleshooting, decision making, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Data Share. Covers troubleshooting, decision making, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

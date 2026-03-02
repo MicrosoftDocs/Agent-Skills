@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   best-practices: 'Performance, security, migration, and tooling best practices for
     Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning,
     pgvector, Oracle migration, and backups.'
-  integrations: 'AI and app integration patterns for Azure PostgreSQL: calling Azure
-    AI/ML/OpenAI, using vectors/LangChain, app/SDK/VS Code connections, Data Factory
-    pipelines, and migration tools like pg_dump/Ora2Pg.'
+  integrations: Using Azure PostgreSQL with AI/ML (Azure AI, OpenAI, LangChain, Foundry),
+    app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory,
+    and migration tools (Ora2Pg, pg_dump).
   security: 'Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, TLS/SSL),
     firewall/VNet/Private Link, managed identities, encryption, auditing, roles, policies,
     and Defender for Cloud.'
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 309
+- **Updated Pages**: 1
+- **Unchanged**: 308
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 98 | 31.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration)
+  - Updated: 2026-01-20T08:00:00.000Z → 2026-03-01T23:06:00.000Z
 
 ## Classified Pages
 
@@ -134,12 +139,12 @@ category_descriptions:
 | [Vector search using pgvector](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector) | configuration | 0.75 | Describes enabling pgvector extension and configuring tables/indexes; includes extension-specific SQL and configuration details. |
 | [Write-Ahead Log / Checkpoints](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-checkpoints) | configuration | 0.75 | Write-Ahead Log / Checkpoints server parameters; summary mentions how max_wal_size default is computed from compute product and how to adjust it with disk size changes. This is detailed, product-specific configuration guidance. |
 | [Write-Ahead Log / Settings](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-settings) | configuration | 0.75 | Write-Ahead Log / Settings server parameters; summary explains how wal_buffers default is computed from compute product and how to adjust wal_ parameters when changing product, which is detailed configuration behavior unique to the service. |
+| [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration) | integrations | 0.72 | The page describes a product-specific integration between Azure Database for PostgreSQL and Microsoft Foundry using the Model Context Protocol, including concrete configuration details for the MCP server and how agents interact with the database. This is an integration/coding pattern unique to this product combination rather than a generic tutorial or conceptual overview. |
 | [Access control](https://learn.microsoft.com/en-us/azure/postgresql/security/security-access-control) | security | 0.70 | Access management using roles; likely lists PostgreSQL roles, Azure RBAC interactions, and permission scopes specific to this service. |
 | [Allow extensions](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-allow-extensions) | configuration | 0.70 | Describes how to allow/allowlist extensions; likely includes specific commands, parameters, and Azure-specific configuration steps for enabling extensions. |
 | [Audit logs](https://learn.microsoft.com/en-us/azure/postgresql/security/security-audit) | security | 0.70 | Describes pgaudit usage in this managed service; likely includes extension parameters, configuration values, and which actions are logged, which are product-specific security/audit settings. |
 | [Autovacuum](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-autovacuum) | configuration | 0.70 | Server-parameter reference for autovacuum on Azure PostgreSQL flexible server; such pages typically contain parameter names, allowed values, and defaults, which are configuration expert knowledge even though content is gated. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/postgresql/developer/create-server-bicep) | deployment | 0.70 | Bicep template for PostgreSQL server includes resource types and properties; this is product-specific deployment configuration. |
-| [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration) | integrations | 0.70 | Describes setting up the Azure PostgreSQL MCP server with Foundry agents; this integration is product-specific and likely includes MCP server configuration parameters, connection settings, and supported operations. |
 | [Client Connection Defaults / Locale and Formatting](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-locale-formatting) | configuration | 0.70 | Server-parameter reference for client connection locale/formatting; expected to list specific parameters and defaults, which are configuration details unique to this service. |
 | [Client Connection Defaults / Other Defaults](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-defaults) | configuration | 0.70 | Covers 'Client Connection Defaults / Other Defaults' parameters; parameter reference pages are configuration-focused with specific names and values. |
 | [Client Connection Defaults / Shared Library Preloading](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-client-connection-defaults-shared-library-preloading) | configuration | 0.70 | Server-parameter reference for shared library preloading; contains specific parameter names and allowed values, which are expert configuration details. |

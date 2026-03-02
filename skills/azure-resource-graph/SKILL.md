@@ -1,14 +1,14 @@
 ---
 name: azure-resource-graph
-description: Expert knowledge for Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Resource Graph applications.
+description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Resource Graph applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Resource Graph Skill
+# Azure Resource Graph Skill
 
-This skill provides expert guidance for Resource Graph. Covers troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Resource Graph. Covers troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

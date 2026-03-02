@@ -1,14 +1,14 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Virtual Network applications.
+description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Virtual Network applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Virtual Network Skill
+# Azure Virtual Network Skill
 
-This skill provides expert guidance for Virtual Network. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Virtual Network. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

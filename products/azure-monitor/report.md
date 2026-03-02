@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics),
     data collection/ingestion, alerts, metrics, workbooks, autoscale, ITSM connectors,
     and Application Insights telemetry.'
-  configuration: 'Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts,
-    autoscale, Private Link, workspaces, metrics/log schemas, and per‑service monitoring
-    and workbook setup.'
+  configuration: 'Configuring Azure Monitor end to end: agents, data collection rules,
+    pipelines, logs/metrics schemas, alerts, autoscale, workspaces, Private Link,
+    and Application Insights/OpenTelemetry settings.'
   best-practices: Best practices for Azure Monitor setup, cost and performance optimization,
     alerting, autoscale, Kubernetes/VM monitoring, Prometheus/PromQL, workbooks, and
     multicloud observability.
@@ -33,16 +33,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 2343
-- **Fetched**: 2343
+- **Total Pages**: 2344
+- **Fetched**: 2344
 - **Fetch Failed**: 0
-- **Classified**: 1910
+- **Classified**: 1911
 - **Unclassified**: 433
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 2343
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 2341
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -52,16 +52,27 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 4 | 0.2% |
 | best-practices | 37 | 1.6% |
-| configuration | 1338 | 57.1% |
+| configuration | 1340 | 57.2% |
 | decision-making | 26 | 1.1% |
 | deployment | 35 | 1.5% |
-| integrations | 323 | 13.8% |
+| integrations | 322 | 13.7% |
 | limits-quotas | 59 | 2.5% |
 | security | 45 | 1.9% |
 | troubleshooting | 43 | 1.8% |
 | *(Unclassified)* | 433 | 18.5% |
 
 ## Changes
+
+### New Pages
+
+- [Autocollect OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect)
+
+### Updated Pages
+
+- [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify)
+  - Updated: 2025-10-29T08:00:00.000Z → 2026-03-01T13:06:00.000Z
+- [Dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/app/dependencies)
+  - Updated: 2026-03-06T08:00:00.000Z → 2026-03-01T13:06:00.000Z
 
 ## Classified Pages
 
@@ -1402,12 +1413,13 @@ category_descriptions:
 | [Action groups](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups) | configuration | 0.70 | Details how to configure action groups and supported notification/action types, which involves product-specific settings and options. |
 | [Activity log alert rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/resource-manager-alerts-activity-log) | configuration | 0.70 | ARM template examples for activity log alerts; includes concrete resource definitions and parameters, which are configuration details. |
 | [Activity log or health alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-activity-log-alert-rule) | configuration | 0.70 | Shows how to configure activity log, service health, and resource health alert rules, including rule parameters and payload behavior. |
-| [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify) | integrations | 0.70 | Focuses on integrating and modifying OTel instrumentation, custom attributes, processors; contains SDK-specific patterns and parameters. |
+| [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify) | configuration | 0.70 | Provides product-specific instructions for adding and modifying OpenTelemetry in Azure Monitor Application Insights across multiple languages, including how to configure custom attributes, telemetry processors, and log/trace modifications. These are concrete configuration and code-level patterns beyond generic OpenTelemetry knowledge. |
 | [Add or delete tables and columns](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/create-custom-table) | configuration | 0.70 | Covers schema definition and updates tied to data collection rules; contains product-specific schema and configuration behaviors not obvious from general knowledge. |
 | [Alert processing rules](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-processing-rules) | configuration | 0.70 | Explains how to configure and manage alert processing rules, including rule behavior and options, which are product-specific configuration details. |
 | [Analyze usage and cost](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/cost-usage) | decision-making | 0.70 | Explains how different Azure Monitor features are billed and how to analyze usage, likely with feature-specific cost behaviors that inform cost-related decisions. |
 | [Analyze usage and cost](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/analyze-usage) | best-practices | 0.70 | Provides concrete KQL queries and workspace-specific techniques to identify high-usage tables and solutions; product-specific cost optimization patterns. |
 | [AppServiceAuthenticationLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceauthenticationlogs) | security | 0.70 | Authentication logs table reference includes fields related to authentication events and identities, which are both configuration and security-relevant expert details; classified under security due to its auth focus. |
+| [Autocollect OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect) | configuration | 0.70 | Describes product-specific OpenTelemetry data collection behavior and how to configure resource detectors and metadata enrichment for Azure Monitor/Application Insights, including concrete attribute names and detector settings. This is detailed configuration guidance rather than generic concepts. |
 | [Autoscale Virtual Machine Scale Sets using PowerShell](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-using-powershell) | configuration | 0.70 | PowerShell-based configuration of autoscale for VM scale sets; likely includes specific cmdlets and parameter names/values, fitting configuration/integration patterns. |
 | [AutoscaleEvaluationsLog](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/autoscaleevaluationslog) | integrations | 0.70 | Page provides concrete Kusto query patterns against a specific Azure Monitor log table (AutoscaleEvaluationsLog), which are product-specific integration/query patterns rather than generic concepts. |
 | [AutoscaleScaleActionsLog](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/autoscalescaleactionslog) | integrations | 0.70 | Contains specific Kusto queries for AutoscaleScaleActionsLog, including filters and projections tailored to Azure Autoscale logs, which are product-specific query/integration patterns. |
@@ -2292,7 +2304,6 @@ category_descriptions:
 | [Data Collection Basics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview) | 0.30 | Data collection basics overview; likely introductory and conceptual rather than detailed configuration matrices. |
 | [Data sources](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-data-sources) | 0.30 | Lists data sources conceptually; likely lacks detailed limits, config tables, or error mappings. |
 | [DatabricksTables](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/databrickstables) | 0.30 | Access to the page is restricted in the summary, so the actual expert content cannot be confirmed from the provided text. |
-| [Dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/app/dependencies) | 0.30 | Appears to be a conceptual/usage overview of dependency tracking without clear indication of product-specific limits, configs, or error mappings. |
 | [DeviceAppCrash](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceappcrash) | 0.30 | The summary only shows an authorization notice; without access, the expert content of DeviceAppCrash table cannot be confirmed. |
 | [DeviceAppLaunch](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceapplaunch) | 0.30 | The summary indicates restricted access; the actual DeviceAppLaunch table schema content is not visible to classify confidently. |
 | [DeviceCalendar](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecalendar) | 0.30 | Access to DeviceCalendar table reference is restricted per summary, so expert schema details cannot be verified. |
@@ -2368,6 +2379,7 @@ category_descriptions:
 | [Application Insights SDK (Classic API)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/classic-api) | 0.20 | From the summary, this page is primarily an overview of monitoring .NET and Node.js apps with the classic Application Insights API and mentions migration to the OpenTelemetry Distro. It does not clearly indicate the presence of specific limits, configuration tables, error-code-based troubleshooting, or other detailed product-specific parameters required by any sub-skill type. Likely conceptual/transition guidance rather than expert-knowledge reference content. |
 | [Collect and view resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-resource-logs) | 0.20 | Tutorial for configuring diagnostic settings; step-by-step but not a comprehensive configuration reference. |
 | [Custom metrics in Azure Monitor (preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-custom-overview) | 0.20 | Overview of custom metrics; summary does not show numeric limits, configuration tables, or detailed API parameters. |
+| [Dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/app/dependencies) | 0.20 | From the summary, the page explains what dependency tracking is and how Application Insights measures dependency calls, but it doesn't indicate the presence of specific limits, configuration parameter tables, error codes, or product-specific numeric thresholds. It appears to be conceptual/feature usage guidance rather than expert-knowledge details as defined by the sub-skill types. |
 | [Log Analytics tables by category](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-category) | 0.20 | Authorization-gated index by category; functions as navigation, not a technical reference page. |
 | [Manage Azure Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-manage) | 0.20 | Management of workbooks in the portal is procedural UI guidance without detailed limits, configs, or error-code-based troubleshooting. |
 | [Monitor an Azure resource](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource) | 0.20 | General article on monitoring Azure resources; likely procedural without deep config matrices or limits. |

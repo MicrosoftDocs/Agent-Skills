@@ -1,14 +1,14 @@
 ---
 name: azure-impact-reporting
-description: Expert knowledge for Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Impact Reporting applications.
+description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Impact Reporting applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Impact Reporting Skill
+# Azure Impact Reporting Skill
 
-This skill provides expert guidance for Impact Reporting. Covers troubleshooting, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Impact Reporting. Covers troubleshooting, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

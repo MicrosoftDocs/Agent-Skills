@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-02-28 12:17:37
-**Total Duration**: 18m 12s
+**Generated**: 2026-03-02 05:16:13
+**Total Duration**: 21m 49s
 
 ## Product Crawl Summary
 
@@ -53,8 +53,8 @@ Quick overview for reviewers. See individual product reports for details.
 | 42 | Azure Data Share | 25 | 16 | 0 | 0 | 0 | OK |
 | 43 | Azure Database for MariaDB | 0 | 0 | 0 | 0 | 0 | OK |
 | 44 | Azure Database Migration service | 31 | 15 | 0 | 0 | 0 | OK |
-| 45 | Azure Database for MySQL | 177 | 116 | 0 | 0 | 0 | OK |
-| 46 | Azure Database for PostgreSQL | 309 | 211 | 0 | 0 | 0 | OK |
+| 45 | Azure Database for MySQL | 177 | 116 | 0 | 1 | 0 | OK |
+| 46 | Azure Database for PostgreSQL | 309 | 211 | 0 | 1 | 0 | OK |
 | 47 | Azure Databricks | 4342 | 2952 | 0 | 0 | 0 | OK |
 | 48 | Azure DDos Protection | 33 | 18 | 0 | 0 | 0 | OK |
 | 49 | Azure Dedicated HSM | 16 | 12 | 0 | 0 | 0 | OK |
@@ -88,7 +88,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 77 | Azure Load Balancer | 94 | 48 | 0 | 0 | 0 | OK |
 | 78 | Azure Local | 313 | 241 | 0 | 0 | 0 | OK |
 | 79 | Azure Logic Apps | 229 | 196 | 0 | 0 | 0 | OK |
-| 80 | Azure Machine Learning | 625 | 487 | 0 | 0 | 0 | OK |
+| 80 | Azure Machine Learning | 625 | 486 | 0 | 5 | 0 | OK |
 | 81 | Azure Managed Applications | 62 | 53 | 0 | 0 | 0 | OK |
 | 82 | Azure Managed Grafana | 42 | 34 | 0 | 0 | 0 | OK |
 | 83 | Azure Managed Lustre | 29 | 27 | 0 | 0 | 0 | OK |
@@ -96,7 +96,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 85 | Azure Maps | 145 | 113 | 0 | 0 | 0 | OK |
 | 86 | Azure AI Metrics Advisor | 19 | 8 | 0 | 0 | 0 | OK |
 | 87 | Azure Migrate | 196 | 119 | 0 | 0 | 0 | OK |
-| 88 | Azure Monitor | 2343 | 1910 | 0 | 0 | 0 | OK |
+| 88 | Azure Monitor | 2344 | 1911 | 1 | 2 | 0 | OK |
 | 89 | Azure NAT Gateway | 26 | 23 | 0 | 0 | 0 | OK |
 | 90 | Azure NetApp Files | 224 | 155 | 0 | 0 | 0 | OK |
 | 91 | Azure Network Watcher | 62 | 29 | 0 | 0 | 0 | OK |
@@ -202,10 +202,10 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 189 success, 0 failed
-- **Total Pages**: 31402
+- **Total Pages**: 31403
 - **Total Classified**: 22139
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
+- **Total New Pages**: 1
+- **Total Updated Pages**: 9
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
@@ -213,8 +213,8 @@ Quick overview for reviewers. See individual product reports for details.
 | Type | Count |
 |------|-------|
 | architecture-patterns | 580 |
-| best-practices | 1301 |
-| configuration | 7257 |
+| best-practices | 1300 |
+| configuration | 7258 |
 | decision-making | 1205 |
 | deployment | 1406 |
 | integrations | 4851 |

@@ -1,14 +1,14 @@
 ---
 name: azure-baremetal-infrastructure
-description: Expert knowledge for Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Baremetal Infrastructure applications.
+description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Baremetal Infrastructure Skill
+# Azure Baremetal Infrastructure Skill
 
-This skill provides expert guidance for Baremetal Infrastructure. Covers decision making, and architecture & design patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Baremetal Infrastructure. Covers decision making, and architecture & design patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

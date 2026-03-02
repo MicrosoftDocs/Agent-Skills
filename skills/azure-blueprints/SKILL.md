@@ -1,14 +1,14 @@
 ---
 name: azure-blueprints
-description: Expert knowledge for Blueprints development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Blueprints applications.
+description: Expert knowledge for Azure Blueprints development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Blueprints applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Blueprints Skill
+# Azure Blueprints Skill
 
-This skill provides expert guidance for Blueprints. Covers troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Blueprints. Covers troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

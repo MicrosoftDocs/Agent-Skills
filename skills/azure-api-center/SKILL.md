@@ -1,14 +1,14 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Api Center applications.
+description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Api Center Skill
+# Azure Api Center Skill
 
-This skill provides expert guidance for Api Center. Covers best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Api Center. Covers best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

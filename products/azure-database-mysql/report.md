@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 177
+- **Updated Pages**: 1
+- **Unchanged**: 176
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 61 | 34.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal)
+  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-01T12:06:00.000Z
 
 ## Classified Pages
 
@@ -203,7 +208,6 @@ category_descriptions:
 | [Azure Advisor](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-azure-advisor-recommendations) | 0.40 | Azure Advisor overview and FAQ for MySQL; primarily conceptual recommendations without quantified thresholds, limits, or detailed configuration parameters. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-restart-stop-start-server-cli) | 0.40 | CLI instructions for restart/stop/start; procedural commands without expert-level configuration or troubleshooting mappings. |
 | [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-add-redis-to-mysql) | 0.40 | Tutorial on adding Azure Cache for Redis to MySQL for performance; likely conceptual and procedural without detailed limits, config tables, or error mappings. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.40 | Portal instructions for stop/start; operational how-to without limits, quotas, or detailed configuration options. |
 | [Migrate data with MySQL Workbench](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-import-export) | 0.40 | Explains common import/export approaches with MySQL Workbench; appears more like conceptual/tutorial content without detailed product-specific limits or configs. |
 | [Migrate data with mysqldump or phpmyadmin](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore) | 0.40 | Conceptual explanation of dump/restore approaches; summary does not indicate detailed limits, configs, or troubleshooting mappings beyond generic tooling usage. |
 | [Test Plans](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/06-test-plans) | 0.40 | Test plans article is likely procedural and conceptual (what to test) rather than containing product-specific error codes, configs, or quantified criteria; not clearly in any expert-knowledge category. |
@@ -237,6 +241,7 @@ category_descriptions:
 | [September 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/september-2024) | 0.25 | Mentions TLS 1.0/1.1 upgrade to 1.2 but not specific security configuration parameters or role definitions. |
 | [Application development best practices](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new) | 0.20 | What's New page summarizing recent features; typically high-level release notes without detailed limits, configs, or troubleshooting matrices. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.20 | CLI quickstart; shows basic az commands but not detailed configuration parameter tables or limits. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal) | 0.20 | Portal quickstart for server creation; mostly step-by-step UI instructions without deep config matrices. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |

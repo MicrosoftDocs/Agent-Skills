@@ -1,14 +1,14 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Monitor applications.
+description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Monitor applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
-# Monitor Skill
+# Azure Monitor Skill
 
-This skill provides expert guidance for Monitor. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Monitor. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -28,9 +28,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L153-L160 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
 | Limits & Quotas | L161-L223 | Limits, quotas, performance, and scale behavior for Azure Monitor logs, metrics, agents, autoscale, ingestion, APIs, and per‑resource metric definitions and constraints. |
 | Security | L224-L272 | Securing Azure Monitor and related services: network isolation, TLS/mTLS, Private Link, RBAC and Azure Policy, CMK/BYOS, secure APIs/webhooks, and analyzing security/audit/threat intel logs. |
-| Configuration | L273-L1614 | Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts, autoscale, Private Link, workspaces, metrics/log schemas, and per‑service monitoring and workbook setup. |
-| Integrations & Coding Patterns | L1615-L1941 | Patterns and code for integrating Azure Monitor with VMs, apps, Prometheus/OpenTelemetry, alerts/ITSM, REST/Logs Ingestion APIs, Grafana/Workbooks, and KQL examples for many log tables. |
-| Deployment | L1942-L1979 | Deploying and managing Azure Monitor agents, alerts, diagnostics, Application Insights (Profiler/Snapshot), VM insights, and workbooks at scale using portal, ARM, CLI, PowerShell, and policy. |
+| Configuration | L273-L1616 | Configuring Azure Monitor end to end: agents, data collection rules, pipelines, logs/metrics schemas, alerts, autoscale, workspaces, Private Link, and Application Insights/OpenTelemetry settings. |
+| Integrations & Coding Patterns | L1617-L1942 | Patterns and code for integrating Azure Monitor with VMs, apps, Prometheus/OpenTelemetry, alerts/ITSM, REST/Logs Ingestion APIs, Grafana/Workbooks, and KQL examples for many log tables. |
+| Deployment | L1943-L1980 | Deploying and managing Azure Monitor agents, alerts, diagnostics, Application Insights (Profiler/Snapshot), VM insights, and workbooks at scale using portal, ARM, CLI, PowerShell, and policy. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -320,6 +320,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure telemetry processors in Application Insights Java | https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-standalone-telemetry-processors |
 | Configure Application Insights JavaScript SDK options | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk-configuration |
 | Use Application Insights managed Log Analytics workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/app/managed-workspaces |
+| Customize OpenTelemetry telemetry in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify |
+| Configure Azure Monitor OpenTelemetry data collection | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect |
 | Configure OpenTelemetry settings in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration |
 | Enable OpenTelemetry data collection in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable |
 | Configure OpenTelemetry filtering in Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter |
@@ -1639,7 +1641,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Enable Click Analytics feature extension for JS SDK | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-feature-extensions |
 | Integrate Application Insights JS SDK with React, Angular, and React Native | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-framework-extensions |
 | Set up Application Insights JavaScript SDK for web apps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk |
-| Customize OpenTelemetry integration with Application Insights | https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify |
 | Integrate Application Insights work items with GitHub and Azure DevOps | https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration |
 | Integrate OpenTelemetry data sources with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/collect-use-observability-data |
 | Configure Container Insights to scrape and send Prometheus metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-logs |
