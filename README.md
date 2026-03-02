@@ -337,8 +337,7 @@ description: What it does    # When to use it, max 1024 chars
 
 ## 🤝 How to Contribute
 
-We welcome contributions from the community! 
-Due to limited maintainer capacity right now, we do **not** accept contributions that manually create or edit any skills. Please update the relevant Microsoft Learn documentation, then create an issue to request a re-crawl, or wait for our automatic weekly crawl. We appreciate your understanding, and things may change in the future.
+Thanks for your interest in contributing. Due to limited maintainer capacity right now, we do **not** accept contributions that manually create or edit any skills. Please update the relevant Microsoft Learn documentation, then create an issue to request a re-crawl, or wait for our automatic weekly crawl. We appreciate your understanding, and things may change in the future.
 
 ---
 
