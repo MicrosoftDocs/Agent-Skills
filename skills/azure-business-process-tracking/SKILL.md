@@ -1,14 +1,14 @@
 ---
 name: azure-business-process-tracking
-description: Expert knowledge for Azure Business Process Tracking development including integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications.
+description: Expert knowledge for Azure Business Process Tracking development including deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Business Process Tracking Skill
 
-This skill provides expert guidance for Azure Business Process Tracking. Covers integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Business Process Tracking. Covers deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,16 +22,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Integrations & Coding Patterns | L28-L32 | Designing Logic Apps workflows that represent business process stages, linking process milestones to workflow steps, and tracking execution across integrated systems |
-| Deployment | L33-L37 | Deploying business processes and tracking profiles to Azure, and setting up CI/CD pipelines (build, release, automation) for Business Process Tracking deployments. |
-
-### Integrations & Coding Patterns
-| Topic | URL |
-|-------|-----|
-| Map business process stages to Logic Apps workflows | https://learn.microsoft.com/en-us/azure/business-process-tracking/map-business-process-workflow |
+| Deployment | L27-L30 | Guidance on setting up automated CI/CD pipelines to build, test, and deploy Azure Business Process Tracking solutions using DevOps tools and best practices. |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy business processes and tracking profiles to Azure | https://learn.microsoft.com/en-us/azure/business-process-tracking/deploy-business-process |
-| Create CI/CD pipelines for Business Process Tracking | https://learn.microsoft.com/en-us/azure/business-process-tracking/set-up-continuous-integration-deployment |
+| Automate CI/CD for Azure Business Process Tracking | https://learn.microsoft.com/en-us/azure/business-process-tracking/set-up-continuous-integration-deployment |

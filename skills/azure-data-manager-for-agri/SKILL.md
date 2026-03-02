@@ -1,14 +1,14 @@
 ---
 name: azure-data-manager-for-agri
-description: Expert knowledge for Azure Data Manager For Agri development including limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Manager For Agri applications.
+description: Expert knowledge for Azure Data Manager for Agriculture development including limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
-# Azure Data Manager For Agri Skill
+# Azure Data Manager for Agriculture Skill
 
-This skill provides expert guidance for Azure Data Manager For Agri. Covers limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Data Manager for Agriculture. Covers limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,35 +22,41 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L30-L34 | Guidance on API throttling behavior, rate limits, quotas, and strategies to plan, monitor, and manage request throttling in Azure Data Manager for Agriculture. |
-| Security | L35-L39 | Configuring Azure Data Manager for Agriculture with Private Link endpoints, including network isolation, secure access patterns, and integration with virtual networks. |
-| Configuration | L40-L45 | Configuring diagnostics and logging for Azure Data Manager for Agriculture and understanding/using its Azure Event Grid event schemas for integrations and monitoring. |
-| Integrations & Coding Patterns | L46-L56 | Patterns and setup for integrating ADMA with farm activity providers, sensors, ISV apps, Event Grid, and storing ag data like plant tissue nutrients. |
+| Limits & Quotas | L30-L34 | Guidance on API throttling behavior and limits in Azure Data Manager for Agriculture, plus strategies to plan capacity, avoid rate-limit errors, and manage high-volume workloads. |
+| Security | L35-L40 | Managing secure BYOL credential storage and configuring Azure Private Link private endpoints for Azure Data Manager for Agriculture services. |
+| Configuration | L41-L47 | Configuring diagnostics and Event Grid for Data Manager for Agriculture, including enabling logs, choosing event schemas, and understanding sample event payloads. |
+| Integrations & Coding Patterns | L48-L62 | Integrating external ag data sources (farm activities, sensors, weather, satellite imagery, ISVs), configuring ingestion jobs/IoT, and using AI/copilot and nutrient APIs with Azure Data Manager for Agriculture |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Plan and manage Azure Data Manager for Agriculture API throttling limits | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-understanding-throttling |
+| Plan and manage API throttling limits for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-understanding-throttling |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Secure Azure Data Manager for Agriculture with Private Link endpoints | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-private-links |
+| Store and manage BYOL credentials securely in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-byol-and-credentials |
+| Create private endpoints for Azure Data Manager for Agriculture with Azure Private Link | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-private-links |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure logging and diagnostics for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-audit-logs |
-| Use Azure Event Grid event schemas for Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-events |
+| Enable and configure diagnostic logging for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-audit-logs |
+| Configure Azure Event Grid event schemas for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-events |
+| Review sample Azure Event Grid events for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/sample-events |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
+| Integrate and ingest farm activities data into Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-farm-operations-data |
+| Configure Sentinel Hub satellite imagery ingestion for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-satellite-imagery |
+| Ingest sensor telemetry into Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-sensor-data |
+| Integrate weather data providers with Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-ingest-weather-data |
+| Use generative AI and copilot templates with Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/concepts-llm-apis |
 | Configure farm activities ingestion jobs in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-ingest-and-egress-farm-operations-data |
 | Integrate Azure Data Manager for Agriculture with farm activities data providers | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-integrate-with-farm-ops-data-provider |
 | Install and use ISV solutions with Azure Data Manager for Agriculture APIs | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-isv-solution |
 | Push and consume sensor data as provider and customer in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensor-as-customer-and-partner |
-| Set up sensor integrations as a customer in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensors-customer |
-| Integrate sensor partners with Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensors-partner |
-| Store plant tissue nutrient data using Agriculture APIs | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-nutrient-apis |
-| Use Azure Event Grid events from Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/sample-events |
+| Set up sensors as a customer in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensors-customer |
+| Onboard sensor partners and configure IoT Hub ingestion for Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-set-up-sensors-partner |
+| Use plant tissue nutrient APIs in Azure Data Manager for Agriculture | https://learn.microsoft.com/en-us/azure/data-manager-for-agri/how-to-use-nutrient-apis |

@@ -3,7 +3,7 @@ name: azure-fluid-relay
 description: Expert knowledge for Azure Fluid Relay development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Fluid Relay applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Fluid Relay Skill
@@ -22,13 +22,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Recovering or restoring corrupted Azure Fluid Relay container data, including causes, detection, and step-by-step remediation options. |
-| Best Practices | L38-L43 | Guidance on managing Fluid containers (lifecycle, scaling, performance) and setting up automated tests and test environments for Azure Fluid Relay apps. |
-| Limits & Quotas | L44-L48 | Details on Azure Fluid Relay capacity limits, throttling behavior, request/connection quotas, and how these constraints affect client and service usage. |
-| Security | L49-L58 | Auth, JWT token contracts, key rotation, CMK setup, encryption design, and secure access patterns for protecting Azure Fluid Relay data and containers. |
-| Configuration | L59-L65 | Version compatibility between Fluid Framework and Fluid Relay, deleting Fluid Relay containers via CLI, and configuring AzureClient local mode for development/testing. |
-| Integrations & Coding Patterns | L66-L71 | Implementing auth/token providers and using AzureClient to connect applications securely to Azure Fluid Relay and manage Fluid containers/documents |
-| Deployment | L72-L75 | Guidance for deploying Fluid Framework apps to Azure Static Web Apps, including setup, configuration, and integration with Azure Fluid Relay in production. |
+| Troubleshooting | L33-L37 | Recovering from corrupted Azure Fluid Relay container data, including detection, mitigation steps, and restoring or reconstructing data to resume collaboration. |
+| Best Practices | L38-L42 | Guidance on integrating Azure Fluid Relay with test automation frameworks, setting up automated tests, and validating Fluid collaboration scenarios in CI/CD workflows. |
+| Limits & Quotas | L43-L47 | Details on Azure Fluid Relay capacity limits, throttling behavior, quotas per tenant/container, and guidance to avoid or handle rate limiting and overuse scenarios. |
+| Security | L48-L58 | Securing Fluid Relay apps: auth/JWT design, token providers, key rotation, CMK and data encryption, and validating container creator identity. |
+| Configuration | L59-L64 | Configuring compatible Fluid Framework client/server versions with Azure Fluid Relay and deleting Fluid Relay containers via Azure CLI. |
+| Integrations & Coding Patterns | L65-L71 | Building Fluid apps with AzureClient: connecting to Azure Fluid Relay, configuring local dev/test mode, and using audience APIs with React for presence and user management |
+| Deployment | L72-L75 | Guidance for deploying Fluid Framework apps with Azure Fluid Relay to Azure Static Web Apps, including setup, configuration, and integration steps for hosting collaborative apps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -38,36 +38,36 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Manage Azure Fluid Relay containers effectively | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/container-management |
-| Automate testing for Azure Fluid Relay applications | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/test-automation |
+| Use test automation frameworks with Azure Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/test-automation |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure Fluid Relay service limits and throttles | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/reference/service-limits |
+| Review Azure Fluid Relay service limits and throttling | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/reference/service-limits |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Implement auth and authorization for Fluid apps | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/authentication-authorization |
-| Configure customer-managed keys for Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/customer-managed-keys |
-| Understand Azure Fluid Relay data encryption design | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/data-encryption |
-| Implement Azure Fluid Relay JWT token contract | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/fluid-json-web-token |
-| Securely rotate Azure Fluid Relay access keys | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/rotate-fluid-relay-access-keys |
-| Validate Fluid container creator for secure access | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/validate-document-creator |
+| Implement authentication and authorization for Fluid Relay apps | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/authentication-authorization |
+| Use customer-managed keys with Azure Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/customer-managed-keys |
+| Configure data encryption for Azure Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/data-encryption |
+| Implement a secure TokenProvider with Azure Functions for Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/azure-function-token-provider |
+| Understand and configure Azure Fluid Relay JWT token contract | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/fluid-json-web-token |
+| Rotate Azure Fluid Relay tenant access keys securely | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/rotate-fluid-relay-access-keys |
+| Validate container creator identity in Azure Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/validate-document-creator |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Match Fluid Framework versions with Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/version-compatibility |
-| Delete Azure Fluid Relay containers using CLI | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/container-deletion |
-| Configure AzureClient local mode for Fluid testing | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/local-mode-with-azure-client |
+| Configure Fluid Framework versions compatible with Azure Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/concepts/version-compatibility |
+| Delete Azure Fluid Relay containers using Azure CLI | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/container-deletion |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Implement Azure Function TokenProvider for Fluid Relay | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/azure-function-token-provider |
-| Connect applications to Azure Fluid Relay with AzureClient | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/connect-fluid-azure-service |
+| Connect applications to Azure Fluid Relay using AzureClient | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/connect-fluid-azure-service |
+| Configure AzureClient local mode for Fluid app testing | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/local-mode-with-azure-client |
+| Use Fluid Framework audience features with React and AzureClient | https://learn.microsoft.com/en-us/azure/azure-fluid-relay/how-tos/use-audience-in-fluid |
 
 ### Deployment
 | Topic | URL |

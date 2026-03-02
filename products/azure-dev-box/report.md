@@ -1,26 +1,22 @@
 ---
-generated_at: '2026-02-24'
+generated_at: '2026-02-28'
 category_descriptions:
-  best-practices: Guidance on building optimized Dev Box images, including configuring
-    tools and pre-warming Visual Studio caches to improve performance and developer
-    startup time.
-  deployment: Guidance to design, plan, and roll out a Microsoft Dev Box deployment,
-    including prerequisites, network/identity setup, and environment configuration.
-  configuration: 'Configuring Dev Box environments: networking, images and catalogs,
-    customization tasks, policies (auto-stop/delete, hibernation, usage), projects/pools/dev
-    centers, monitoring, and ARM/template setup.'
-  security: 'Securing Dev Boxes: RBAC role planning/assignment, Entra ID SSO, REST
-    API auth, Key Vault/service principals, and Intune-based conditional access and
-    privilege management.'
-  decision-making: Guidance on when and how to use serverless GPU compute with Azure
-    Dev Box, including scenarios, benefits, and considerations for GPU-accelerated
-    development workloads.
-  limits-quotas: Managing Dev Box capacity and quotas, viewing/increasing subscription
-    resource limits, and setting per-user Dev Box count/size limits to control usage
-    and costs
-  troubleshooting: Diagnosing and fixing Dev Box connection issues (including known
-    errors), repairing connectivity with built-in tools, and resolving stale or inaccessible
-    Dev Boxes in Windows Task view.
+  best-practices: Guidance on building efficient Dev Box images, including structuring
+    image definitions and pre-warming Visual Studio caches to speed up developer environments.
+  deployment: Planning and rolling out Dev Box environments, including architecture
+    and configuration, plus guidance for moving Dev Box pools and individual boxes
+    between Azure regions.
+  configuration: 'Configuring Dev Box environments: networking, images, catalogs,
+    policies, schedules (stop/hibernate/auto-delete), provisioning templates, and
+    monitoring logs/metrics.'
+  security: 'Securing Dev Box access and sessions: RBAC planning, API auth, conditional
+    access/Intune, Key Vault/service principals, endpoint privilege management, and
+    Windows SSO configuration'
+  limits-quotas: 'Managing Dev Box capacity: requesting quota/core limit increases
+    and configuring per-user Dev Box limits to control usage and costs.'
+  troubleshooting: Diagnosing and fixing Dev Box connectivity/RDP issues, stale or
+    inaccessible boxes, using Troubleshoot and Repair, and monitoring Dev Box health
+    with Azure Monitor logs.
   integrations: Using VS Code dev tunnels to securely connect to Azure Dev Box, including
     setup, authentication, and remote development workflow configuration.
 ---
@@ -31,13 +27,13 @@ category_descriptions:
 - **Total Pages**: 64
 - **Fetched**: 64
 - **Fetch Failed**: 0
-- **Classified**: 43
-- **Unclassified**: 21
+- **Classified**: 44
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 58
+- **Updated Pages**: 0
+- **Unchanged**: 64
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -47,101 +43,85 @@ category_descriptions:
 |------|-------|------------|
 | best-practices | 2 | 3.1% |
 | configuration | 24 | 37.5% |
-| decision-making | 1 | 1.6% |
-| deployment | 1 | 1.6% |
+| deployment | 2 | 3.1% |
 | integrations | 1 | 1.6% |
 | limits-quotas | 2 | 3.1% |
 | security | 8 | 12.5% |
-| troubleshooting | 4 | 6.2% |
-| *(Unclassified)* | 21 | 32.8% |
+| troubleshooting | 5 | 7.8% |
+| *(Unclassified)* | 20 | 31.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure team customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-team-customizations)
-  - Updated: 2025-10-10T22:10:00.000Z → 2026-02-12T18:37:00.000Z
-- [Configure dev center imaging](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-center-imaging)
-  - Updated: 2025-11-12T20:25:00.000Z → 2026-02-12T06:12:00.000Z
-- [Configure user customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations)
-  - Updated: 2025-08-17T11:14:00.000Z → 2026-02-12T06:12:00.000Z
-- [Configure tasks for customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-customization-tasks)
-  - Updated: 2025-09-29T22:15:00.000Z → 2026-02-12T06:12:00.000Z
-- [Connect to Azure resources and repositories](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customizations-connect-resource-repository)
-  - Updated: 2025-10-03T22:10:00.000Z → 2026-02-12T06:12:00.000Z
-- [Authoring and troubleshooting team customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-authoring-troubleshooting-guide-team-customizations)
-  - Updated: 2025-12-19T18:11:00.000Z → 2026-02-13T06:11:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations) | configuration | 0.90 | A reference article for YAML schemas, required attributes, built-in tasks, and parameters. This is a canonical configuration reference with detailed parameter names and allowed values. |
-| [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box) | troubleshooting | 0.85 | Explicit troubleshooting article for RDC issues using a specific tool; likely maps connectivity symptoms to causes and automated fixes, which is product-specific troubleshooting knowledge. |
-| [Azure role-based access control](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-role-based-access-control) | security | 0.85 | Describes built-in roles supported by Dev Box and how they map to organizational roles. This implies specific RBAC role names and permission scopes, which are product-specific security configuration details. |
-| [Manage network connections](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-network-connections) | configuration | 0.85 | Details how to bind dev centers to virtual networks and choose Microsoft-hosted vs customer-managed networks. Involves specific configuration parameters and constraints tied to Dev Box networking. |
-| [Request a quota limit increase](https://learn.microsoft.com/en-us/azure/dev-box/how-to-request-quota-increase) | limits-quotas | 0.85 | Explicitly about quota limits and types of quotas; such pages normally list concrete numeric limits per resource type, which are expert-only limits and quotas. |
-| [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues) | troubleshooting | 0.85 | Step-by-step troubleshooting guide for connection, sign-in, disconnections, and latency; this is classic symptom-based diagnosis and resolution content. |
-| [Troubleshoot dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-remote-desktop-connectivity) | troubleshooting | 0.85 | Lists known issues (connection, sign-in, latency, performance) and their resolutions; such catalogs typically include symptom → cause → solution mappings and sometimes error messages. |
-| [Add and Manage Catalogs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-catalog) | configuration | 0.80 | Explains how to attach GitHub/Azure Repos as catalogs, including catalog configuration, encryption behavior, and how image definitions are surfaced—service-specific configuration mechanics. |
-| [Authoring and troubleshooting team customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-authoring-troubleshooting-guide-team-customizations) | best-practices | 0.80 | This guide explicitly focuses on recommendations, effective approaches, common pitfalls, and troubleshooting guidance for imagedefinition.yaml. It likely includes concrete DOs/DON’Ts, specific patterns, and edge cases unique to Dev Box image definitions, which aligns with product-specific best practices and troubleshooting content. |
-| [Configure conditional access policies](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-intune-conditional-access-policies) | security | 0.80 | How-to for Conditional Access with Intune for Dev Box; likely includes specific policy settings, conditions, and scopes, which are product-specific security configuration details. |
-| [Configure elevated privilege for dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-elevate-privilege-dev-box) | security | 0.80 | Configuring Endpoint Privilege Management involves specific Intune policy settings and elevation rules; these are product-specific security configuration parameters. |
-| [Configure project policies](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-project-policy) | configuration | 0.80 | Describes project policies that enforce governance and resource limits. Likely includes specific policy names, settings, and evaluation behavior, which are product-specific configuration details. |
-| [Enable single sign-on for dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-enable-single-sign-on) | security | 0.80 | SSO configuration with Microsoft Entra typically includes specific authentication settings and parameters; this is product-specific identity and access configuration. |
-| [Limit number of dev boxes per project](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-dev-box-limits) | limits-quotas | 0.80 | Tutorial explicitly about limiting the number of dev boxes per user in a project. This implies specific limit settings/fields and behavior when limits are reached, which are product-specific quota mechanics. |
-| [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | configuration | 0.80 | Managing dev box definitions involves selecting source images, compute sizes, and storage sizes. These are concrete configuration options unique to Dev Box, including allowed values and behaviors. |
-| [Manage a dev box pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools) | configuration | 0.80 | Managing pools requires setting image, network connection, and hosting model (Microsoft-hosted vs customer network). These are Dev Box–specific configuration patterns and constraints. |
-| [Manage a dev box project](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects) | configuration | 0.80 | Covers configuration of projects and dev box pools, including definitions and network connections. These are concrete Dev Box–specific configuration patterns and settings. |
-| [Troubleshoot Task view issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-dev-box-task-view) | troubleshooting | 0.80 | Focused on troubleshooting a specific Task view issue with stale Dev Box entries; provides concrete steps to resolve a product-specific problem, fitting troubleshooting criteria. |
-| [Configure an autostop schedule](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-schedule) | configuration | 0.75 | Describes configuring autostop schedules with constraints (one stop time, one timezone per pool, behavior differences with hibernation); these are product-specific configuration rules and settings. |
-| [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect) | configuration | 0.75 | Configures automatic stop after RDP disconnect with a configurable timeout; involves specific setting names and allowed ranges, which are configuration details. |
-| [Connect to Azure resources and repositories](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customizations-connect-resource-repository) | security | 0.75 | The page explains how to reference Azure Key Vault secrets in customization files and use service principals to authenticate to Azure during Dev Box customization. This is product-specific security configuration, likely including exact syntax/fields for referencing secrets and configuring identities in customization files, matching the security sub-skill criteria. |
-| [Manage project access](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-access) | security | 0.75 | Describes granting access via Azure RBAC and mentions built-in DevCenter roles; such pages typically list specific role names and scopes, which are product-specific security configuration details. |
-| [Set up Dev Box service (ARM template)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-arm-template) | configuration | 0.75 | Describes an ARM template for Dev Box with infrastructure and configuration definitions. ARM templates expose explicit parameter names, allowed values, and defaults, which are product-specific configuration details. |
-| [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements) | configuration | 0.74 | The page documents product-specific network requirements for Microsoft Dev Box, including required endpoints, ports, and connectivity patterns needed to deploy and use dev boxes. These are concrete configuration details that aren't generally known from training and are needed to correctly set up network access, so it best fits the configuration sub-skill. |
-| [Authenticate to REST APIs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-authenticate) | security | 0.70 | Describes concrete authentication steps, token retrieval from Entra ID, token structure/validity, and bearer token usage for Dev Box REST APIs—product-specific security/auth configuration details. |
-| [Configure Dev Box Hibernation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-hibernation) | configuration | 0.70 | Explains configuring hibernation at image/definition levels and automation; likely includes specific settings and allowed values, making it configuration-focused expert guidance. |
-| [Configure Visual Studio caches](https://learn.microsoft.com/en-us/azure/dev-box/how-to-generate-visual-studio-caches) | best-practices | 0.70 | Describes a product-specific optimization (precaching Visual Studio solutions on Dev Box images) to reduce load times. This is actionable, Dev Box– and VS-specific guidance that qualifies as a best-practice pattern. |
-| [Configure an Azure compute gallery](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-azure-compute-gallery) | configuration | 0.70 | Explains how to attach a compute gallery to a Dev Box dev center, which typically includes specific resource types, required roles, and configuration parameters for gallery association—product-specific configuration knowledge. |
-| [Configure conditional access policies for dev tunnels](https://learn.microsoft.com/en-us/azure/dev-box/how-to-conditional-access-dev-tunnels-service) | security | 0.70 | Configuring conditional access for the Dev Tunnels service requires product-specific Entra app IDs, cloud app selections, and policy conditions tied to Dev Box usage. These are concrete security configuration details unique to this integration. |
-| [Configure tasks for customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-customization-tasks) | configuration | 0.70 | The article describes creating tasks in a catalog, defining reusable components, and attaching the catalog to a dev center or project. This suggests specific task definitions, fields, and catalog configuration mechanics unique to Dev Box, which are configuration-focused rather than conceptual guidance. |
-| [Configure team customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-team-customizations) | configuration | 0.70 | The page describes the imagedefinition.yaml used for Dev Box team customizations, which is a product-specific configuration artifact. It likely includes concrete schema elements, fields, and allowed patterns for defining tools, repos, and settings that are unique to Microsoft Dev Box and not generally known. This fits configuration because it focuses on how to structure and use the image definition file rather than generic concepts. |
-| [Configure user customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations) | configuration | 0.70 | The page covers creating, testing, uploading, and validating user customization files, likely including the specific schema/fields and validation rules for these files in Dev Box. Those are product-specific configuration details (file structure, parameters, and how Dev Box interprets them) that go beyond generic tutorial content. |
-| [Configure virtual switch](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-dev-box-virtual-switch) | configuration | 0.70 | Covers setting up virtual switches, nested virtualization, and connectivity; likely includes specific switch names, options, and constraints, which are configuration details. |
-| [Connect to a dev box with a dev tunnel](https://learn.microsoft.com/en-us/azure/dev-box/how-to-set-up-dev-tunnels) | integrations | 0.70 | Describes enabling tunnels for a pool, installing the Dev Box VS Code extension, and connecting. This integration likely includes extension settings, tunnel configuration parameters, and service-specific connection patterns. |
-| [Delete unused dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-auto-delete-dev-box) | configuration | 0.70 | Explains enabling and configuring auto-deletion settings; such lifecycle controls usually expose specific configuration options and thresholds, which are product-specific configuration details. |
-| [Manage a dev center](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-center) | configuration | 0.70 | Explains how to create, delete, and manage dev centers and apply settings. Contains Dev Box–specific resource configuration options and behaviors that are not generic Azure knowledge. |
-| [Microsoft Dev Box deployment guide](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-deployment-guide) | deployment | 0.70 | Deployment guide covering process and configuration options for rolling out Dev Box. Likely includes deployment-specific requirements, sequencing, and constraints that go beyond generic deployment commands. |
-| [Provision a Custom Image with Azure Image Builder](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customize-devbox-azure-image-builder) | configuration | 0.70 | Using Image Builder templates with Dev Box and Azure Compute Gallery involves template schema fields, image definition parameters, and pipeline configuration specific to this scenario, which are concrete configuration details. |
-| [Set up Dev Box service (Azure portal)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-service) | configuration | 0.70 | Guides creation and configuration of dev centers, projects, and pools. While a quickstart, it necessarily references Dev Box–specific settings (image selection, pool configuration) that are not generic and represent concrete configuration knowledge. |
-| [Configure dev center imaging](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-center-imaging) | configuration | 0.65 | The article explains how to configure dev box pools to use image definition files and how images are automatically built for catalogs containing image definitions. This implies product-specific settings and behaviors (for example, when automatic builds trigger, how to attach image definitions to catalogs/pools) that are configuration-centric and not generic deployment guidance. |
-| [Get Started with the quick start template](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-get-started-template) | configuration | 0.65 | Quickstart that uses a preconfigured template to stand up dev centers, projects, and pools. Likely includes specific template parameters and required settings unique to Dev Box, which qualify as product-specific configuration details. |
-| [Monitor Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box) | configuration | 0.65 | Monitoring articles for a specific Azure service typically enumerate Dev Box-specific diagnostic log categories, metrics, and Azure Monitor configuration options (tables, categories, resource types). These are product-specific configuration details that go beyond generic Azure Monitor knowledge. |
-| [Configure Serverless GPU](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-serverless-gpu) | decision-making | 0.60 | Explains what serverless GPU compute is, how it works, and key scenarios. While somewhat conceptual, it is tied to a specific Dev Box feature and likely includes guidance on when to use GPU dev boxes vs standard ones, which is decision-making for this product. |
+| [Imagedefinition.yaml and task.yaml reference](https://learn.microsoft.com/en-us/azure/dev-box/reference-dev-box-customizations) | configuration | 0.90 | Reference article with detailed schema, required attributes, built-in tasks, and parameters—core configuration knowledge for Dev Box customizations. |
+| [Automatically repair connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-repair-dev-box) | troubleshooting | 0.83 | Symptom-based guide for Remote Desktop connectivity issues using a specific Dev Box troubleshooting tool; likely includes diagnostic checks and resolution mappings unique to Dev Box. |
+| [Monitoring Microsoft DevCenter data reference](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box-reference) | configuration | 0.82 | Provides schema reference for Dev Box diagnostic logs and metrics, including property names and meanings; product-specific monitoring configuration/data model. |
+| [Request a quota limit increase](https://learn.microsoft.com/en-us/azure/dev-box/how-to-request-quota-increase) | limits-quotas | 0.82 | Explains Dev Box resource quotas (cores, dev centers, etc.) and how to view and request increases; likely includes specific quota types and numeric limits per subscription. |
+| [Resolve dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-resolve-dev-box-connectivity-issues) | troubleshooting | 0.82 | Structured troubleshooting for connection failures, sign-in issues, disconnections, and high latency; symptom-to-solution mappings specific to Dev Box. |
+| [Authenticate to REST APIs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-authenticate) | security | 0.80 | Covers obtaining and using Entra access tokens for Dev Box admin and developer APIs; includes token scopes/usage patterns specific to this product. |
+| [Authoring and troubleshooting team customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-authoring-troubleshooting-guide-team-customizations) | best-practices | 0.80 | Guide with recommendations, common pitfalls, and troubleshooting for imagedefinition.yaml; includes concrete patterns and gotchas unique to Dev Box. |
+| [Azure role-based access control](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-role-based-access-control) | security | 0.80 | Describes built-in roles supported by Dev Box and how they map to organizational roles; includes specific RBAC role names and scopes. |
+| [Configure conditional access policies](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-intune-conditional-access-policies) | security | 0.80 | Describes configuring Conditional Access policies for Dev Box via Intune; includes product-specific security configuration patterns and policy settings. |
+| [Configure conditional access policies for dev tunnels](https://learn.microsoft.com/en-us/azure/dev-box/how-to-conditional-access-dev-tunnels-service) | security | 0.80 | Explains configuring conditional access for Dev Tunnels in Entra ID, including policy conditions like device management and IP ranges—product-specific security configuration. |
+| [Configure team customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-team-customizations) | configuration | 0.80 | Describes imagedefinition.yaml for team customizations with concrete fields, structure, and usage patterns—product-specific configuration. |
+| [Connect to Azure resources and repositories](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customizations-connect-resource-repository) | security | 0.80 | Explains referencing Key Vault secrets and using service principals in customization files; product-specific security configuration patterns. |
+| [Limit number of dev boxes per project](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-dev-box-limits) | limits-quotas | 0.80 | Tutorial explicitly about limiting number of dev boxes per user per project; likely includes specific limit fields/values and enforcement behavior. |
+| [Troubleshoot dev box connectivity issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-remote-desktop-connectivity) | troubleshooting | 0.80 | Lists known issues (connection, sign-in, latency, performance) with specific causes and fixes; product-specific troubleshooting content. |
+| [Configure elevated privilege for dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-elevate-privilege-dev-box) | security | 0.78 | Covers configuring Intune Endpoint Privilege Management for Dev Box users with non-admin accounts; includes product-specific security/privilege configuration steps. |
+| [Manage project access](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-access) | security | 0.78 | Uses Azure RBAC with specific built-in Dev Box/DevCenter roles at project scope; role names and scope usage are product-specific security configuration details. |
+| [Troubleshoot Task view issues](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-dev-box-task-view) | troubleshooting | 0.78 | Shows how to remove stale Dev Box entries from Windows Task view and troubleshoot related issues; product-specific interaction with Windows UI and Dev Box state. |
+| [Configure an autostop schedule](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-schedule) | configuration | 0.76 | Describes autostop schedule behavior with constraints like one stop time and one timezone per pool and hibernation-dependent behavior; these are product-specific configuration rules. |
+| [Enable single sign-on for dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-enable-single-sign-on) | security | 0.76 | Details enabling SSO using Microsoft Entra authentication for Dev Box pools; includes identity configuration specifics for this product. |
+| [Add and Manage Catalogs](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-catalog) | configuration | 0.75 | Shows how to attach GitHub/Azure Repos catalogs, encryption behavior, and catalog settings; Dev Box–specific configuration. |
+| [Configure an Azure compute gallery](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-azure-compute-gallery) | configuration | 0.75 | Details attaching a compute gallery and using images for dev box definitions; includes specific configuration steps and parameters. |
+| [Configure dev center imaging](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-center-imaging) | configuration | 0.75 | Explains configuring pools to use image definitions, automatic image builds, and related settings; contains Dev Box–specific imaging configuration. |
+| [Configure tasks for customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-customization-tasks) | configuration | 0.75 | Describes creating catalogs and tasks, with task definitions and parameters; includes Dev Box–specific configuration constructs. |
+| [Configure user customizations](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-user-customizations) | configuration | 0.75 | Covers schema/structure and validation of user customization files, including VS Code integration; product-specific configuration details. |
+| [Manage network connections](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-network-connections) | configuration | 0.75 | Explains configuring network connections, region selection, and on-premises connectivity; includes specific Dev Box network settings. |
+| [Configure stop on disconnect](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-stop-on-disconnect) | configuration | 0.74 | Covers configuring automatic stop after RDP disconnect with a configurable timeout; includes product-specific setting and behavior tied to hibernation-enabled definitions. |
+| [Configure Dev Box Hibernation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-hibernation) | configuration | 0.70 | Explains configuring hibernation at image/definition levels and automation; likely includes specific settings and allowed values for hibernation behavior. |
+| [Configure Visual Studio caches](https://learn.microsoft.com/en-us/azure/dev-box/how-to-generate-visual-studio-caches) | best-practices | 0.70 | Describes using VS 17.8 precaching with Dev Box images, including concrete steps and product-specific optimization patterns. |
+| [Configure project policies](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-project-policy) | configuration | 0.70 | Describes project policies, enforcement behavior, and health checks; includes specific policy settings and their effects. |
+| [Configure virtual switch](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-dev-box-virtual-switch) | configuration | 0.70 | Explains using nested virtualization and virtual switches, including the default switch and creating additional switches; product-specific networking configuration details. |
+| [Connect to a dev box with a dev tunnel](https://learn.microsoft.com/en-us/azure/dev-box/how-to-set-up-dev-tunnels) | integrations | 0.70 | Integration article between Dev Box and VS Code, including enabling tunnels and extension configuration—contains product-specific integration parameters and steps. |
+| [Delete unused dev boxes](https://learn.microsoft.com/en-us/azure/dev-box/how-to-auto-delete-dev-box) | configuration | 0.70 | Describes enabling and configuring auto-delete with specific settings and behavior for unused Dev Boxes; product-specific lifecycle configuration. |
+| [Manage a dev box definition](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-definitions) | configuration | 0.70 | Covers dev box definitions (image, compute, storage) with product-specific options and constraints. |
+| [Manage a dev box pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-pools) | configuration | 0.70 | Pool management article with settings for images, networks, and hosting; includes Dev Box–specific configuration parameters. |
+| [Manage a dev box project](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-projects) | configuration | 0.70 | Project management article with pool configuration and cost control; includes Dev Box–specific project and pool settings. |
+| [Manage a dev center](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-center) | configuration | 0.70 | How-to for managing dev centers, including settings and user assignments; contains product-specific configuration options. |
+| [Move dev box pools between regions](https://learn.microsoft.com/en-us/azure/dev-box/how-to-move-dev-box-pool-region) | deployment | 0.70 | Covers region move operations, alignment with pool regions, and network connection changes; includes Dev Box–specific deployment/migration behavior. |
+| [Network requirements](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-network-requirements) | configuration | 0.70 | Networking requirements article typically includes specific ports, protocols, DNS/endpoints, and region constraints—product-specific configuration details. |
+| [Provision a Custom Image with Azure Image Builder](https://learn.microsoft.com/en-us/azure/dev-box/how-to-customize-devbox-azure-image-builder) | configuration | 0.70 | Shows how to author an Image Builder template and publish to Compute Gallery for Dev Box; includes template parameters and Dev Box–specific image usage. |
+| [Set up Dev Box service (ARM template)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-arm-template) | configuration | 0.70 | ARM template quickstart for Dev Box; ARM schema and parameter names/values are product-specific configuration knowledge. |
+| [Get Started with the quick start template](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-get-started-template) | configuration | 0.65 | Quickstart that uses a preconfigured template to stand up dev centers, projects, and pools; likely includes specific ARM/portal parameters and required values unique to Dev Box. |
+| [Microsoft Dev Box deployment guide](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-deployment-guide) | deployment | 0.65 | Deployment guide with process, configuration options, and role-based considerations; likely includes Dev Box–specific deployment constraints and sequencing. |
+| [Monitor Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box) | troubleshooting | 0.65 | Monitoring article that likely lists specific log categories, metrics, and diagnostic settings unique to Dev Box; used for troubleshooting and audit history. |
+| [Set up Dev Box service (Azure portal)](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-configure-dev-box-service) | configuration | 0.65 | Shows how to configure dev centers, projects, pools, and images; contains product-specific settings and options beyond generic VM setup. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Display names for a project or pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-add-project-pool-display-name) | 0.55 | Focuses on adding display names for clarity; largely UI-level renaming without deep configuration parameters, limits, or security/role specifics. |
-| [Restore from snapshot](https://learn.microsoft.com/en-us/azure/dev-box/how-to-restore-from-snapshot) | 0.45 | Describes using snapshots to restore a dev box; summary suggests a procedural recovery guide without detailed configuration parameters, limits, or error mappings. |
-| [Skip or delay an automatic shutdown](https://learn.microsoft.com/en-us/azure/dev-box/how-to-skip-delay-stop) | 0.45 | Focuses on delaying or skipping an already-configured autostop; likely a usage guide rather than a detailed configuration reference with parameters or limits. |
-| [Connect physical devices to a dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-devices-to-dev-box) | 0.40 | Step-by-step instructions to connect Android devices; appears as a procedural tutorial without detailed configuration tables or product-specific limits. |
-| [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box) | 0.40 | User-level how-to for hibernating/resuming a dev box via portal/CLI; appears procedural without detailed configuration tables, limits, or error mappings. |
-| [Monitoring Microsoft DevCenter data reference](https://learn.microsoft.com/en-us/azure/dev-box/monitor-dev-box-reference) | 0.40 | Monitoring data reference is likely a schema/fields listing; while detailed, it is not clearly a configuration, limits, or troubleshooting guide per the defined categories. |
-| [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box) | 0.40 | User-focused quickstart for creating and connecting to a dev box; mostly step-by-step UI usage without detailed configuration matrices or limits. |
-| [Architecture and key concepts](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-architecture) | 0.30 | Conceptual architecture and terminology overview; does not indicate presence of numeric thresholds, decision matrices, or detailed configuration tables. |
-| [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.30 | Duplicate of index 15; same reasoning applies—portal usage tutorial rather than expert configuration or limits content. |
-| [Install Azure CLI devcenter extension](https://learn.microsoft.com/en-us/azure/dev-box/how-to-install-dev-box-cli) | 0.30 | Primarily a basic installation/how-to guide for the Azure CLI extension; does not emphasize configuration tables, limits, or product-specific patterns beyond generic install steps. |
-| [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.30 | How-to for using the Dev Box developer portal (create, connect, manage). Likely UI-driven steps without deep configuration tables or limits; mostly operational guidance. |
-| [Move dev box pools between regions](https://learn.microsoft.com/en-us/azure/dev-box/how-to-move-dev-box-pool-region) | 0.30 | Primarily a how-to/migration-style guide for moving Dev Box pools/boxes between regions; likely step-by-step UI/portal instructions without detailed limits, configuration tables, or decision matrices. |
-| [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style getting started guide; likely step-by-step usage without configuration tables, limits, or troubleshooting matrices. |
-| [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.30 | Duplicate of index 15; same reasoning applies—portal usage tutorial rather than expert configuration or limits content. |
-| [What is Microsoft Dev Box MCP Server?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-dev-box-mcp-server) | 0.30 | High-level overview of the Dev Box MCP Server; no indication of detailed limits, configs, error codes, or product-specific decision matrices. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.20 | FAQ content is typically high-level Q&A without structured limits, configs, or troubleshooting mappings; summary does not indicate detailed expert-only data. |
-| [Get support for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-get-help) | 0.20 | Support-channel selection guidance is procedural/organizational, not technical expert knowledge about the product (no limits, configs, error codes, or patterns). |
-| [What is Microsoft Dev Box?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box) | 0.20 | High-level product overview of Microsoft Dev Box and upcoming changes; no detailed limits, configuration tables, error codes, or other expert-only specifics. |
-| [Roadmap for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | 0.10 | Roadmap/marketing-style feature list for future capabilities; lacks concrete technical configuration, limits, or troubleshooting details. |
-| [What are Dev Box customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-what-are-dev-box-customizations) | 0.10 | Conceptual overview of Dev Box customizations and their benefits; no specific limits, configuration parameter tables, error codes, or product-specific numeric thresholds. |
-| [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement) | 0.10 | Announcement about transition of Dev Box capabilities to Windows 365; primarily business/positioning content without deep technical specifics. |
+| [Display names for a project or pool](https://learn.microsoft.com/en-us/azure/dev-box/how-to-add-project-pool-display-name) | 0.50 | Renaming resources with display names is mostly UI-level guidance; unlikely to contain deep configuration tables or limits. |
+| [Install Azure CLI devcenter extension](https://learn.microsoft.com/en-us/azure/dev-box/how-to-install-dev-box-cli) | 0.50 | Explains installing the Dev Box Azure CLI extension; mostly generic CLI installation and enabling commands, not detailed configuration or limits. |
+| [Restore from snapshot](https://learn.microsoft.com/en-us/azure/dev-box/how-to-restore-from-snapshot) | 0.50 | How-to for restoring from snapshots; likely operational steps without detailed configuration parameters, limits, or error-code mappings. |
+| [What are Dev Box customizations](https://learn.microsoft.com/en-us/azure/dev-box/concept-what-are-dev-box-customizations) | 0.50 | Conceptual overview of Dev Box customizations and modes (team vs user); high-level without detailed schema or config tables. |
+| [What is Microsoft Dev Box MCP Server?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-dev-box-mcp-server) | 0.50 | Overview of the Dev Box MCP server; integration concept description without detailed API parameter tables or configuration schemas in the summary. |
+| [Connect to your dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.45 | Duplicate of index 34; same reasoning—UI-centric portal usage without expert-only configuration details. |
+| [Manage a dev box through developer portal](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.45 | Developer portal usage guide (create, connect, start/stop); mostly UI operations without deep config tables or numeric constraints. |
+| [Skip or delay an automatic shutdown](https://learn.microsoft.com/en-us/azure/dev-box/how-to-skip-delay-stop) | 0.45 | Explains how users can delay or skip an already configured autostop; likely UI-driven steps without detailed configuration parameter tables or numeric constraints. |
+| [Use multiple monitors](https://learn.microsoft.com/en-us/azure/dev-box/how-to-create-dev-boxes-developer-portal) | 0.45 | Duplicate of index 34; portal how-to rather than deep configuration or troubleshooting. |
+| [Configure Serverless GPU](https://learn.microsoft.com/en-us/azure/dev-box/how-to-configure-dev-box-serverless-gpu) | 0.40 | Explains what serverless GPU compute is and scenarios; appears conceptual without detailed limits, configuration tables, or thresholds. |
+| [Hibernate your Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-hibernate-your-dev-box) | 0.40 | How-to for hibernating/resuming via portal/CLI; mostly procedural without detailed configuration tables, limits, or error-code troubleshooting. |
+| [Spin up a new dev box](https://learn.microsoft.com/en-us/azure/dev-box/quickstart-create-dev-box) | 0.40 | User quickstart to create/connect to a dev box; mostly step-by-step UI usage without deep config tables or limits. |
+| [Connect physical devices to a dev box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-connect-devices-to-dev-box) | 0.35 | Step-by-step tutorial for connecting Android devices; likely generic device connection steps rather than product-specific configuration tables or limits. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-faq) | 0.35 | FAQ format; likely mixes conceptual and basic usage answers without structured limits tables, configuration schemas, or detailed troubleshooting mappings. |
+| [Architecture and key concepts](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-architecture) | 0.30 | Conceptual architecture overview; describes components and relationships but not detailed decision matrices or numeric thresholds. |
+| [Get support for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/how-to-get-help) | 0.30 | Support-channel guidance and escalation paths; process/contacts rather than technical configuration, limits, or troubleshooting details. |
+| [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style usage of Dev Box MCP Server with natural language operations; likely step-by-step but not focused on configuration tables, limits, or error-code-based troubleshooting. |
+| [What is Microsoft Dev Box?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box) | 0.20 | High-level product overview of Microsoft Dev Box; no detailed limits, configuration tables, or error/diagnostic specifics. |
+| [Roadmap for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | 0.10 | Roadmap/marketing-style future features list; not configuration, limits, or troubleshooting content. |
+| [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement) | 0.10 | Announcement of transition to Windows 365; business/positioning content without technical expert details. |

@@ -1,14 +1,14 @@
 ---
 name: azure-digital-twins
-description: Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Digital Twins applications.
+description: Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Digital Twins applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Digital Twins Skill
 
-This skill provides expert guidance for Azure Digital Twins. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Digital Twins. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,13 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L43 | Diagnosing and fixing Azure Digital Twins errors (403/404, CLI parse, Explorer auth), performance issues, known platform problems, and using Azure Resource Health for service-level troubleshooting |
-| Best Practices | L44-L49 | Designing and extending DTDL ontologies and tagging patterns for Azure Digital Twins models, including model structure, reuse, metadata tagging, and organization strategies. |
-| Decision Making | L50-L54 | Guidance for migrating from older Azure Digital Twins preview control plane APIs to current APIs, including breaking changes, mapping, and update steps. |
-| Limits & Quotas | L55-L60 | Details on Azure Digital Twins service limits, quotas, and how query units (QUs) are consumed, calculated, and constrained when running queries. |
-| Security | L61-L69 | Securing Azure Digital Twins: RBAC and access control, Entra app registration and client auth, private endpoints/Private Link, and handling customer personal data. |
-| Configuration | L70-L76 | Setting up event endpoints, routes, and filters, plus configuring monitoring, metrics, and diagnostic logging for Azure Digital Twins instances and integrations. |
-| Integrations & Coding Patterns | L77-L106 | Using APIs/SDKs, CLI, and query language to manage twins/models/graph, integrate with IoT Hub, Data Explorer, Power Platform, and handle events, history, and DTDL parsing/conversion. |
+| Troubleshooting | L35-L44 | Diagnosing and fixing common Azure Digital Twins issues: 403/404 errors, Explorer auth problems, CLI parse failures, known bugs, and performance troubleshooting. |
+| Best Practices | L45-L51 | Guidance on modeling best practices: converting RDF/OWL ontologies to DTDL, extending DTDL for Azure Digital Twins, and designing effective tagging patterns for twin graphs. |
+| Decision Making | L52-L57 | Guidance on selecting DTDL-based industry ontologies for your twin models and instructions for migrating from Azure Digital Twins preview control plane APIs to current APIs. |
+| Architecture & Design Patterns | L58-L63 | Patterns for routing data into/out of Azure Digital Twins, plus strategies for high availability, redundancy, and disaster recovery planning and configuration. |
+| Limits & Quotas | L64-L69 | Details on Azure Digital Twins query unit usage, plus service limits, throttling behavior, and how to view/request changes to adjustable quotas. |
+| Security | L70-L78 | Security guidance for Azure Digital Twins: auth with Entra app registrations, client authentication, Private Link setup, and handling customer personal data and best practices. |
+| Configuration | L79-L103 | Configuring and operating Azure Digital Twins: instance setup, security, endpoints/routes, data history, monitoring, graph/twin/model management, Explorer/3D tools, and query language usage. |
+| Integrations & Coding Patterns | L104-L120 | APIs, SDKs, CLI, and query usage; integrating IoT Hub, Azure Data Explorer, Functions, Power Platform; coding .NET clients and validating DTDL models for Azure Digital Twins. |
+| Deployment | L121-L124 | Guidance for moving an Azure Digital Twins instance to a different region, including prerequisites, supported scenarios, and step-by-step migration procedures. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -36,71 +38,87 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Fix Azure Digital Twins 403 Forbidden errors | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-error-403-digital-twins |
 | Fix Azure Digital Twins 404 sub-domain not found errors | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-error-404-digital-twins |
 | Resolve Azure Digital Twins Explorer authentication errors | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-error-azure-digital-twins-explorer-authentication |
-| Troubleshoot Azure Digital Twins CLI parse failed errors | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-error-cli-parse |
+| Resolve Azure Digital Twins CLI parse failed errors | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-error-cli-parse |
 | Resolve known issues in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-known-issues |
-| Troubleshoot Azure Digital Twins performance problems | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-performance |
-| Use Azure Resource Health to diagnose Digital Twins issues | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-resource-health |
+| Troubleshoot Azure Digital Twins performance issues | https://learn.microsoft.com/en-us/azure/digital-twins/troubleshoot-performance |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
+| Convert RDF/OWL ontologies to DTDL models | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert |
 | Extend DTDL ontologies for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-extend |
-| Implement tagging patterns for Azure Digital Twins models | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-tags |
+| Implement tagging patterns for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-tags |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Choose DTDL-based industry ontologies for Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-adopt |
 | Migrate from Azure Digital Twins preview control plane APIs | https://learn.microsoft.com/en-us/azure/digital-twins/resources-migrate-from-preview-apis |
+
+### Architecture & Design Patterns
+| Topic | URL |
+|-------|-----|
+| Design data ingress and egress for Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-ingress-egress |
+| Plan high availability and disaster recovery for Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-high-availability-disaster-recovery |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand Query Unit consumption in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-units |
-| Azure Digital Twins service limits and quotas | https://learn.microsoft.com/en-us/azure/digital-twins/reference-service-limits |
+| Understand Query Unit consumption in Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-units |
+| Azure Digital Twins service limits and adjustable quotas | https://learn.microsoft.com/en-us/azure/digital-twins/reference-service-limits |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Apply security roles and access controls in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-security |
+| Apply security best practices to Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-security |
 | Implement client authentication for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-authenticate-client |
-| Create Entra app registration for Azure Digital Twins access | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-app-registration |
-| Enable Azure Digital Twins private endpoints with Private Link | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-enable-private-link |
+| Create Entra app registration for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-app-registration |
+| Enable Private Link for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-enable-private-link |
 | Handle customer personal data in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/resources-customer-data-requests |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Interpret Azure Digital Twins event notifications | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-event-notifications |
+| Configure endpoints and event routes in Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-route-events |
+| Set up Azure Digital Twins data history connection | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-data-history-connection |
 | Configure Azure Digital Twins event endpoints | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-endpoints |
-| Configure event routes and filters for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-routes |
-| Configure monitoring, metrics, and diagnostics for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-monitor |
+| Configure event routes and filters in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-routes |
+| Manage Azure Digital Twins graphs and relationships | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-graph |
+| Manage DTDL models in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-model |
+| Manage individual digital twins via APIs/SDKs | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-twin |
+| Configure monitoring, metrics, and logs for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-monitor |
+| Provision and secure Digital Twins via CLI | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-set-up-instance-cli |
+| Set up an Azure Digital Twins instance in portal | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-set-up-instance-portal |
+| Use 3D Scenes Studio features with Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-3d-scenes-studio |
+| Operate Azure Digital Twins Explorer features | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-azure-digital-twins-explorer |
+| Use FROM clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-from |
+| Use JOIN clause in Azure Digital Twins graph queries | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-join |
+| Use MATCH clause for graph traversal in Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-match |
+| Use SELECT clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-select |
+| Use WHERE clause in Azure Digital Twins queries | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-where |
+| Use functions in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-functions |
+| Use operators in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-operators |
+| Reserved keywords in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-reserved |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Use Azure Digital Twins REST APIs and SDKs | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-apis-sdks |
-| Manage Azure Digital Twins with Azure CLI commands | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-cli |
-| Query Azure Digital Twins via Azure Data Explorer plugin | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin |
+| Work with Azure Digital Twins APIs and SDKs | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-apis-sdks |
+| Use Azure Digital Twins CLI command set | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-cli |
+| Query Digital Twins via Azure Data Explorer plugin | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-explorer-plugin |
 | Configure data history with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-data-history |
-| Interpret Azure Digital Twins event notification payloads | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-event-notifications |
-| Convert RDF/OWL ontologies to DTDL models | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-ontologies-convert |
-| Configure Azure Digital Twins endpoints and event routes | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-route-events |
-| Set up Azure Digital Twins data history with Azure Data Explorer | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-data-history-connection |
+| Use Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/concepts-query-language |
 | Ingest IoT Hub telemetry into Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-ingest-iot-hub-data |
-| Manage Azure Digital Twins graph relationships via APIs | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-graph |
-| Manage Azure Digital Twins DTDL models via APIs/SDKs | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-model |
-| Use APIs/SDKs to manage Azure digital twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-manage-twin |
-| Parse and validate DTDL models with .NET DTDLParser | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-parse-models |
-| Write and execute Azure Digital Twins graph queries | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-query-graph |
-| Implement twin-to-twin event propagation with Azure Functions | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-send-twin-to-twin-events |
-| Call Azure Digital Twins REST APIs using Visual Studio .http files | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-apis |
-| Connect Azure Digital Twins with Power Platform and Logic Apps | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-power-platform-logic-apps-connector |
-| Use FROM clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-from |
-| Use JOIN clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-join |
-| Use MATCH clause for relationship traversal in Digital Twins queries | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-match |
-| Use SELECT clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-select |
-| Use WHERE clause in Azure Digital Twins query language | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-clause-where |
-| Use Azure Digital Twins query language functions | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-functions |
-| Use Azure Digital Twins query language operators | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-operators |
-| Reserved keywords in Azure Digital Twins queries | https://learn.microsoft.com/en-us/azure/digital-twins/reference-query-reserved |
-| Implement a .NET client for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-code |
-| Use Azure CLI commands with Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-cli |
+| Parse and validate DTDL models with .NET | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-parse-models |
+| Query Azure Digital Twins graphs with examples | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-query-graph |
+| Set up twin-to-twin event propagation with Azure Functions | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-send-twin-to-twin-events |
+| Call Azure Digital Twins REST APIs using .http files | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-apis |
+| Use Power Platform connector with Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-use-power-platform-logic-apps-connector |
+| Code a .NET client for Azure Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-code |
+| Use Azure CLI commands with Digital Twins | https://learn.microsoft.com/en-us/azure/digital-twins/tutorial-command-line-cli |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Move an Azure Digital Twins instance across regions | https://learn.microsoft.com/en-us/azure/digital-twins/how-to-move-regions |

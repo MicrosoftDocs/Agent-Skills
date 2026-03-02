@@ -1,34 +1,36 @@
 ---
-generated_at: '2026-02-09'
+generated_at: '2026-02-28'
 category_descriptions:
-  configuration: Configuring IoT Plug and Play models and MQTT messaging (DTDL, payload
-    formats, message conventions) and setting up MQTT connections to IoT Hub and Device
-    Provisioning Service.
-  integrations: Patterns and code for building IoT Plug and Play devices/services,
-    working with digital twins, and integrating Azure IoT data and events with on-prem
-    SAP ERP systems.
-  best-practices: Guidance on designing robust device reconnection logic for Azure
-    IoT, handling transient network failures, backoff strategies, and ensuring reliable,
-    scalable device connectivity.
-  decision-making: Guidance on choosing IoT Plug and Play device models and deciding
-    between Azure IoT C vs Embedded C SDKs based on device, performance, and integration
-    needs
-  architecture-patterns: 'Industrial IoT solution blueprints: reference architectures,
-    dataspace patterns, and guidance for designing scalable, secure industrial data
-    and device integration on Azure.'
-  troubleshooting: Debugging and resolving issues in Azure IoT embedded device tutorials,
-    including setup problems, connection failures, build errors, and common device-to-cloud
-    communication issues.
+  integrations: Patterns and code for integrating devices via MQTT and IoT Plug and
+    Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and
+    connecting SAP ERP to Azure IoT.
+  best-practices: Guidance on resilient device reconnection patterns for Azure IoT
+    and how to model IoT Plug and Play devices using DTDL for interoperability and
+    digital twins.
+  decision-making: Guidance on using IoT Plug and Play device models in solutions
+    and deciding between Azure IoT C vs Embedded C SDKs based on device, performance,
+    and integration needs.
+  architecture-patterns: Reference architectures and patterns for industrial IoT on
+    Azure, including dataspace-based designs, component choices, and end-to-end implementation
+    guidance for industrial scenarios.
+  security: Guidance on securely using Azure IoT Explorer with IoT Hub, including
+    authentication, permissions, connection strings, and best practices to protect
+    devices and hub access.
+  configuration: Guidance on choosing the right Azure IoT device and service SDKs
+    (languages, platforms, and capabilities) for building and integrating IoT solutions.
+  troubleshooting: Debugging Azure IoT embedded device tutorials, including build/deploy
+    failures, connection/auth issues, sample app errors, and how to collect logs and
+    diagnose common device-side problems.
 ---
-# Azure Iot Crawl Report
+# Azure IoT Crawl Report
 
 ## Summary
 
 - **Total Pages**: 40
 - **Fetched**: 40
 - **Fetch Failed**: 0
-- **Classified**: 16
-- **Unclassified**: 24
+- **Classified**: 18
+- **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
@@ -42,12 +44,13 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 5.0% |
-| best-practices | 1 | 2.5% |
-| configuration | 6 | 15.0% |
+| best-practices | 2 | 5.0% |
+| configuration | 1 | 2.5% |
 | decision-making | 2 | 5.0% |
-| integrations | 4 | 10.0% |
+| integrations | 9 | 22.5% |
+| security | 1 | 2.5% |
 | troubleshooting | 1 | 2.5% |
-| *(Unclassified)* | 24 | 60.0% |
+| *(Unclassified)* | 22 | 55.0% |
 
 ## Changes
 
@@ -55,48 +58,48 @@ category_descriptions:
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Azure IoT Device Provisioning Service (DPS)](https://learn.microsoft.com/en-us/azure/iot/iot-mqtt-connect-to-iot-dps) | configuration | 0.75 | Provides specific MQTT connection requirements for DPS (supported behaviors, TLS-only ports, unsupported insecure connections, protocol constraints); detailed, product-specific configuration. |
-| [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot/iot-mqtt-connect-to-iot-hub) | configuration | 0.75 | Describes exact MQTT connection details for IoT Hub (endpoints, topics, TLS requirements, feature availability by tier); includes product-specific protocol configuration beyond generic MQTT usage. |
-| [Connect on-premises SAP system to Azure](https://learn.microsoft.com/en-us/azure/iot/howto-connect-on-premises-sap-to-azure) | integrations | 0.70 | Step-by-step guide for connecting SAP ERP to Azure using OPC UA and IEC 62541; includes product- and protocol-specific integration patterns and configuration details. |
-| [IoT Plug and Play message payloads](https://learn.microsoft.com/en-us/azure/iot/concepts-message-payloads) | configuration | 0.70 | Defines exact JSON payload formats for telemetry, properties, and commands for DTDL-based models, including field structures and encoding expectations—detailed, product-specific message configuration. |
-| [Modeling guide](https://learn.microsoft.com/en-us/azure/iot/concepts-modeling-guide) | configuration | 0.70 | Details DTDL modeling for Plug and Play devices, including primitive/complex types, components, inheritance, and semantic types with JSON-LD snippets—specific schema configuration guidance. |
-| [Troubleshoot embedded device](https://learn.microsoft.com/en-us/azure/iot/troubleshoot-embedded-device-tutorials) | troubleshooting | 0.70 | Explicit troubleshooting article for embedded device tutorials; likely organized by common issues with specific symptoms and resolutions, which are product- and scenario-specific. |
-| [C SDK and Embedded C SDK usage scenarios](https://learn.microsoft.com/en-us/azure/iot/concepts-using-c-sdk-and-embedded-c-sdk) | decision-making | 0.65 | Article explicitly helps decide which C-based SDK to use across four scenarios; product-specific selection guidance that goes beyond generic concepts, fitting decision-making. |
-| [Implement industrial IoT reference solution](https://learn.microsoft.com/en-us/azure/iot/tutorial-iot-industrial-solution-architecture) | architecture-patterns | 0.65 | Reference solution architecture for industrial IoT with specific use cases (condition monitoring, OEE, forecasting, anomaly detection); describes concrete Azure service composition and flows, which are product-specific architectural patterns. |
-| [IoT Plug and Play conventions](https://learn.microsoft.com/en-us/azure/iot/concepts-convention) | configuration | 0.65 | Describes precise conventions for telemetry, properties, commands, and property updates over MQTT/AMQP, including topic structures and payload expectations—product-specific configuration/protocol details that go beyond generic MQTT knowledge. |
-| [Test devices with Azure IoT Explorer](https://learn.microsoft.com/en-us/azure/iot/howto-use-iot-explorer) | configuration | 0.65 | Describes how to configure and use Azure IoT explorer to interact with devices, including authentication options and device operations; contains product-specific settings and usage patterns. |
-| [Use models in a solution](https://learn.microsoft.com/en-us/azure/iot/concepts-model-discovery) | decision-making | 0.65 | Differentiates purpose-built vs model-driven solutions and discusses complexity vs flexibility trade-offs when using Plug and Play models; provides scenario-based guidance for solution design. |
-| [Device developer guide](https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-device) | integrations | 0.60 | Device developer guide with language-specific examples (C, C#, Java, JS, Python, Embedded C) and patterns for implementing Plug and Play conventions; focuses on SDK usage and integration patterns rather than just concepts. |
-| [Digital twins](https://learn.microsoft.com/en-us/azure/iot/concepts-digital-twin) | integrations | 0.60 | Explains how Azure IoT service SDKs interact with device digital twins using DTDL schemas; includes product-specific twin interaction patterns beyond generic digital twin concepts. |
-| [Enable industrial dataspace in Azure](https://learn.microsoft.com/en-us/azure/iot/howto-iot-industrial-dataspaces) | architecture-patterns | 0.60 | Describes how to build an industrial dataspace using Azure and open-source reference implementations; focuses on a specific architectural pattern for secure data exchange between enterprise and customer systems. |
-| [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot/concepts-manage-device-reconnections) | best-practices | 0.60 | Provides concrete reconnection strategies for Azure IoT Hub device SDKs; product-specific guidance on handling disconnects and reconnections, aligning with best-practices. |
-| [Service developer guide](https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-service) | integrations | 0.60 | Service developer guide describing how services interact with Plug and Play devices, access properties and commands, and use IoT Central UI/REST; contains product-specific interaction patterns and API usage details. |
+| [Azure IoT Device Provisioning Service (DPS)](https://learn.microsoft.com/en-us/azure/iot/iot-mqtt-connect-to-iot-dps) | integrations | 0.80 | Explains MQTT connectivity to DPS, including TLS-only requirement, unsupported behaviors, and port constraints; highly product-specific protocol configuration. |
+| [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/iot/iot-mqtt-connect-to-iot-hub) | integrations | 0.80 | Detailed guidance on MQTT connectivity to IoT Hub, including supported endpoints, feature availability by tier, and protocol-specific requirements; product-specific integration patterns. |
+| [C SDK and Embedded C SDK usage scenarios](https://learn.microsoft.com/en-us/azure/iot/concepts-using-c-sdk-and-embedded-c-sdk) | decision-making | 0.70 | Article explicitly helps decide which C-based SDK to use across scenarios; likely includes scenario-based guidance and criteria specific to Azure IoT SDKs. |
+| [Connect on-premises SAP system to Azure](https://learn.microsoft.com/en-us/azure/iot/howto-connect-on-premises-sap-to-azure) | integrations | 0.70 | Step-by-step integration of SAP ERP via OPC UA and Azure; product-specific integration architecture and configuration details. |
+| [IoT Plug and Play conventions](https://learn.microsoft.com/en-us/azure/iot/concepts-convention) | integrations | 0.70 | Describes concrete conventions for telemetry, properties, and commands over MQTT, tied to DTDL; likely includes topic formats and payload rules unique to Azure IoT Plug and Play. |
+| [IoT Plug and Play message payloads](https://learn.microsoft.com/en-us/azure/iot/concepts-message-payloads) | integrations | 0.70 | Explains JSON payload formats for telemetry, properties, and commands for Plug and Play devices; product-specific payload schemas and constraints. |
+| [Troubleshoot embedded device](https://learn.microsoft.com/en-us/azure/iot/troubleshoot-embedded-device-tutorials) | troubleshooting | 0.70 | Explicit troubleshooting article for embedded tutorials; likely maps common issues to causes and resolutions, which are product- and tutorial-specific. |
+| [Tutorial - Connect a device with MQTT](https://learn.microsoft.com/en-us/azure/iot/tutorial-use-mqtt) | integrations | 0.70 | Tutorial using Eclipse Mosquitto to connect directly to IoT Hub; likely includes specific MQTT topics, connection strings, and parameters unique to Azure IoT. |
+| [Device developer guide](https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-device) | integrations | 0.65 | Developer guide with language-specific examples for building devices/modules that follow Plug and Play conventions; includes concrete API usage patterns unique to Azure IoT. |
+| [Manage device reconnections](https://learn.microsoft.com/en-us/azure/iot/concepts-manage-device-reconnections) | best-practices | 0.65 | Provides specific reconnection strategies for Azure IoT Hub device SDKs; product-specific guidance and edge cases around disconnections. |
+| [Modeling guide](https://learn.microsoft.com/en-us/azure/iot/concepts-modeling-guide) | best-practices | 0.65 | Provides guidance on DTDL modeling, reuse patterns, and semantic types; includes product-specific modeling recommendations and patterns. |
+| [Service developer guide](https://learn.microsoft.com/en-us/azure/iot/concepts-developer-guide-service) | integrations | 0.65 | Service developer guide for interacting with Plug and Play devices; likely details service-side APIs, property/command handling, and model ID usage specific to Azure IoT. |
+| [Use models in a solution](https://learn.microsoft.com/en-us/azure/iot/concepts-model-discovery) | decision-making | 0.65 | Contrasts purpose-built vs model-driven solutions and discusses complexity vs benefits; helps choose how to incorporate models in an IoT solution. |
+| [Device and Service SDKs](https://learn.microsoft.com/en-us/azure/iot/iot-sdks) | configuration | 0.60 | Lists SDKs and libraries in tables; product-specific SDK catalog with details that guide configuration and implementation choices. |
+| [Digital twins](https://learn.microsoft.com/en-us/azure/iot/concepts-digital-twin) | integrations | 0.60 | Describes how service SDKs interact with device digital twins using DTDL; product-specific twin interaction patterns and APIs. |
+| [Enable industrial dataspace in Azure](https://learn.microsoft.com/en-us/azure/iot/howto-iot-industrial-dataspaces) | architecture-patterns | 0.60 | Describes how to build an industrial dataspace using Azure and open-source implementations; architecture-specific guidance for secure data exchange. |
+| [Implement industrial IoT reference solution](https://learn.microsoft.com/en-us/azure/iot/tutorial-iot-industrial-solution-architecture) | architecture-patterns | 0.60 | Reference architecture for industrial IoT with specific use cases (OEE, forecasting, anomaly detection); likely includes Azure-service-specific architectural patterns and components. |
+| [Test devices with Azure IoT Explorer](https://learn.microsoft.com/en-us/azure/iot/howto-use-iot-explorer) | security | 0.60 | Includes explicit note about shared access signatures vs Entra ID/managed identities; article focuses on connecting to IoT Hub with specific authentication methods and settings. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Turn your smartphone into an IoT device](https://learn.microsoft.com/en-us/azure/iot/iot-phone-app-how-to) | 0.40 | How-to guide for using a phone app as an IoT device; mostly introductory and procedural without deep configuration tables or expert-only constraints. |
-| [Tutorial - Connect a device with MQTT](https://learn.microsoft.com/en-us/azure/iot/tutorial-use-mqtt) | 0.40 | Step-by-step tutorial using Mosquitto to connect via MQTT; mostly procedural and example-based without comprehensive config tables or expert-only constraints. |
-| [Connect ESPRESSIF ESP32 Kit to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-espressif-esp32-freertos-iot-hub) | 0.30 | Tutorial for ESP32 DevKit using FreeRTOS middleware; standard how-to without detailed config tables or error-resolution mappings. |
-| [Connect MXCHIP AZ3166 to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-mxchip-az3166-iot-hub) | 0.30 | Device-specific tutorial for MXCHIP DevKit; primarily walkthrough instructions, not a reference of configs, limits, or troubleshooting patterns. |
-| [Connect STMicroelectronics B-L475E to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-stm-b-l475e-iot-hub) | 0.30 | Device-specific tutorial for STM DevKit; focused on connecting and sending telemetry, not on expert configuration or diagnostic reference. |
-| [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub) | 0.30 | Step-by-step tutorial for sending telemetry; typical how-to content without configuration matrices, limits, or error-code mappings. |
-| [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services and technologies; appears as a catalog/overview without quantified comparisons or selection criteria. |
-| [Device and Service SDKs](https://learn.microsoft.com/en-us/azure/iot/iot-sdks) | 0.20 | Lists available SDKs and libraries; catalog-style content without deep configuration parameters or expert troubleshooting/limits. |
-| [IoT device types](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-types) | 0.20 | Overview of device types and selection factors; decision guidance appears conceptual without quantified thresholds or matrices. |
-| [Scalability, high availability](https://learn.microsoft.com/en-us/azure/iot/iot-overview-scalability-high-availability) | 0.20 | Conceptual overview of scalability, high availability, and disaster recovery; no explicit numeric thresholds, limits, or decision matrices indicated. |
-| [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.20 | Security overview and general best practices for IoT; description suggests conceptual guidance rather than specific RBAC roles or config values. |
-| [Analyze and visualize your IoT data](https://learn.microsoft.com/en-us/azure/iot/iot-overview-analyze-visualize) | 0.10 | High-level explanation of analysis and visualization options; no specific configuration parameters, limits, or decision matrices. |
-| [Architecture](https://learn.microsoft.com/en-us/azure/iot/concepts-architecture) | 0.10 | Architecture overview of IoT Plug and Play; describes components and flow but no quantified decision matrices, limits, or detailed configs. |
-| [Device connectivity](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-connectivity) | 0.10 | Conceptual overview of connectivity, gateways, and protocols; lacks specific numeric limits, config parameters, or decision matrices. |
-| [Device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and tools; no detailed configuration tables, limits, or troubleshooting content. |
-| [Device management and control](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-management) | 0.10 | High-level description of asset and device management options; no product-specific settings, limits, or error-resolution mappings. |
-| [Extend your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-extensibility) | 0.10 | Conceptual overview of extensibility options; primarily navigation to deeper content, without concrete expert-level details. |
-| [Manage your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-management) | 0.10 | Overview of IoT solution management approaches; lacks detailed settings tables, quotas, or troubleshooting mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-development) | 0.10 | Introductory article for device development considerations; high-level and not focused on specific configs, limits, or troubleshooting. |
-| [Overview](https://learn.microsoft.com/en-us/azure/iot/overview-iot-plug-and-play) | 0.10 | High-level introduction to IoT Plug and Play and device models; conceptual overview without concrete limits, configs, or error mappings. |
-| [Process and route messages](https://learn.microsoft.com/en-us/azure/iot/iot-overview-message-processing) | 0.10 | Overview of message processing and routing; does not expose detailed quotas, configuration tables, or troubleshooting flows. |
-| [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options page; meta-information about where to get help, not technical expert content. |
-| [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT and solution components; conceptual overview without concrete limits, configs, or error mappings. |
-| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | - | Glossary of general Azure IoT terms; conceptual definitions only, no limits, configuration parameters, error codes, or product-specific decision/deployment/security details. |
+| [Turn your smartphone into an IoT device](https://learn.microsoft.com/en-us/azure/iot/iot-phone-app-how-to) | 0.40 | How-to for using a phone app as an IoT device; likely a straightforward tutorial without reusable configuration matrices or limits. |
+| [Architecture](https://learn.microsoft.com/en-us/azure/iot/concepts-architecture) | 0.30 | Architecture overview of IoT Plug and Play; high-level elements without decision matrices or config tables in the summary. |
+| [Connect ESPRESSIF ESP32 Kit to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-espressif-esp32-freertos-iot-hub) | 0.30 | Tutorial using FreeRTOS middleware; summary suggests basic how-to, not detailed configuration references. |
+| [Connect MXCHIP AZ3166 to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-mxchip-az3166-iot-hub) | 0.30 | Device-specific tutorial for MXCHIP DevKit; focuses on steps, not reusable configuration matrices or limits. |
+| [Connect STMicroelectronics B-L475E to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-stm-b-l475e-iot-hub) | 0.30 | Device-specific tutorial for STM DevKit; procedural content without expert-level configuration or limits. |
+| [Overview](https://learn.microsoft.com/en-us/azure/iot/overview-iot-plug-and-play) | 0.30 | Introduction to IoT Plug and Play; mostly conceptual description of models and capabilities. |
+| [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.30 | Security overview and best practices at a high level; summary does not indicate specific RBAC roles, config values, or compliance settings. |
+| [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub) | 0.30 | Step-by-step tutorial for sending telemetry; typical quickstart without detailed config tables or product-specific constraints. |
+| [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
+| [IoT device types](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-types) | 0.20 | Overview of device types and selection factors; appears conceptual without quantified thresholds or matrices. |
+| [Scalability, high availability](https://learn.microsoft.com/en-us/azure/iot/iot-overview-scalability-high-availability) | 0.20 | Scalability and HA overview; no explicit thresholds, limits, or decision matrices in the summary. |
+| [Analyze and visualize your IoT data](https://learn.microsoft.com/en-us/azure/iot/iot-overview-analyze-visualize) | 0.10 | Conceptual description of analysis and visualization options; lacks product-specific configs or limits. |
+| [Device connectivity](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-connectivity) | 0.10 | Conceptual overview of connectivity and infrastructure; no detailed protocol parameters, limits, or config matrices. |
+| [Device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of device development concepts and tools; lacks specific configuration tables, limits, or troubleshooting content. |
+| [Device management and control](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-management) | 0.10 | Conceptual overview of asset and device management; no product-specific settings, limits, or error mappings. |
+| [Extend your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-extensibility) | 0.10 | Overview of extensibility options; no detailed configuration parameters or quantified trade-offs. |
+| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | 0.10 | Glossary of terms; definitions only, no actionable expert configuration or limits. |
+| [Manage your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-management) | 0.10 | Overview of management options like portal and ARM; no detailed setting references or matrices. |
+| [Overview](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-development) | 0.10 | Introductory device development considerations; no specific configuration parameters or limits. |
+| [Process and route messages](https://learn.microsoft.com/en-us/azure/iot/iot-overview-message-processing) | 0.10 | High-level message processing overview; does not include concrete routing rules, limits, or configuration tables. |
+| [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options; meta-information, not technical configuration or troubleshooting content. |
+| [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT and solution components; no concrete limits, configs, patterns, or error details. |

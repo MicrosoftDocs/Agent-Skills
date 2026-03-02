@@ -1,0 +1,71 @@
+---
+name: azure-attestation
+description: Expert knowledge for Azure Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Attestation applications.
+compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+metadata:
+  generated_at: "2026-02-28"
+  generator: "docs2skills/1.0.0"
+---
+# Azure Attestation Skill
+
+This skill provides expert guidance for Azure Attestation. Covers troubleshooting, best practices, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+
+## How to Use This Skill
+
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
+> **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+
+This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+
+## Category Index
+
+| Category | Lines | Description |
+|----------|-------|-------------|
+| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Attestation failures, including policy/quote validation errors, configuration issues, and troubleshooting attestation responses and tokens. |
+| Best Practices | L36-L44 | Guidance on validating attestation tokens, writing secure attestation policies, and configuring/enforcing SGX and TPM attestation baselines using sample policies. |
+| Security | L45-L50 | Using Azure Policy to govern attestation providers, and securing Azure Attestation with private endpoints, firewalls, managed identities, and access control settings |
+| Configuration | L51-L67 | Configuring Azure Attestation policies (grammar, versions, claim rules), policy signer certs, and monitoring/logging via Azure Monitor, CLI, PowerShell, and log schema. |
+| Deployment | L68-L71 | How to create and configure a private endpoint for Azure Attestation using PowerShell, including network setup and secure access to attestation resources. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Troubleshoot common Azure Attestation errors and issues | https://learn.microsoft.com/en-us/azure/attestation/troubleshoot-guide |
+
+### Best Practices
+| Topic | URL |
+|-------|-----|
+| Interpret and validate Azure Attestation tokens with examples | https://learn.microsoft.com/en-us/azure/attestation/attestation-token-examples |
+| Author secure and correct Azure Attestation policies | https://learn.microsoft.com/en-us/azure/attestation/author-sign-policy |
+| Configure custom TCB baseline enforcement for SGX attestation | https://learn.microsoft.com/en-us/azure/attestation/custom-tcb-baseline-enforcement |
+| Use sample SGX attestation policies in Azure | https://learn.microsoft.com/en-us/azure/attestation/policy-examples |
+| Use sample TPM attestation policies in Azure | https://learn.microsoft.com/en-us/azure/attestation/tpm-attestation-sample-policies |
+
+### Security
+| Topic | URL |
+|-------|-----|
+| Apply built-in Azure Policy definitions for Attestation | https://learn.microsoft.com/en-us/azure/attestation/policy-reference |
+| Secure Azure Attestation with network and identity controls | https://learn.microsoft.com/en-us/azure/attestation/secure-attestation |
+
+### Configuration
+| Topic | URL |
+|-------|-----|
+| Use Azure Attestation claim rule functions and operators | https://learn.microsoft.com/en-us/azure/attestation/claim-rule-functions |
+| Use Azure Attestation claim rule grammar in policies | https://learn.microsoft.com/en-us/azure/attestation/claim-rule-grammar |
+| Understand Azure Attestation claim sets and categories | https://learn.microsoft.com/en-us/azure/attestation/claim-sets |
+| Enable diagnostic logging for Azure Attestation | https://learn.microsoft.com/en-us/azure/attestation/enable-logging |
+| Reference for Azure Attestation monitoring and log schema | https://learn.microsoft.com/en-us/azure/attestation/logs-data-reference |
+| Monitor Azure Attestation with Azure Monitor | https://learn.microsoft.com/en-us/azure/attestation/monitor-logs |
+| Configure Azure Attestation policy signer certificates | https://learn.microsoft.com/en-us/azure/attestation/policy-signer-examples |
+| Configure Azure Attestation policy language version 1.0 | https://learn.microsoft.com/en-us/azure/attestation/policy-version-1-0 |
+| Configure Azure Attestation policy language version 1.1 | https://learn.microsoft.com/en-us/azure/attestation/policy-version-1-1 |
+| Configure Azure Attestation policy language version 1.2 | https://learn.microsoft.com/en-us/azure/attestation/policy-version-1-2 |
+| Set up Azure Attestation using Azure CLI | https://learn.microsoft.com/en-us/azure/attestation/quickstart-azure-cli |
+| Configure Azure Attestation provider with PowerShell | https://learn.microsoft.com/en-us/azure/attestation/quickstart-powershell |
+| Understand and use Azure Attestation log data | https://learn.microsoft.com/en-us/azure/attestation/view-logs |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Create Azure Attestation private endpoint with PowerShell | https://learn.microsoft.com/en-us/azure/attestation/private-endpoint-powershell |

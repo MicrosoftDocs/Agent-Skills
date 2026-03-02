@@ -1,14 +1,14 @@
 ---
 name: azure-baremetal-infrastructure
-description: Expert knowledge for Azure Baremetal Infrastructure development including decision making. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications.
+description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-04"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Baremetal Infrastructure Skill
 
-This skill provides expert guidance for Azure Baremetal Infrastructure. Covers decision making. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Baremetal Infrastructure. Covers decision making, and architecture & design patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,9 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L27-L30 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and placement considerations for Nutanix Cloud Clusters on Azure. |
+| Decision Making | L28-L32 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and availability considerations for deployment planning. |
+| Architecture & Design Patterns | L33-L36 | NC2 on Azure BareMetal architecture choices, deployment topologies, integration patterns with Azure services, and design considerations for performance, HA, and networking. |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
 | Choose NC2 on Azure regions and SKUs | https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus |
+
+### Architecture & Design Patterns
+| Topic | URL |
+|-------|-----|
+| Understand NC2 on Azure BareMetal architecture options | https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/architecture |

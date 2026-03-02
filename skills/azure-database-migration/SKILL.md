@@ -1,0 +1,69 @@
+---
+name: azure-database-migration
+description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database Migration service applications.
+compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+metadata:
+  generated_at: "2026-02-28"
+  generator: "docs2skills/1.0.0"
+---
+# Azure Database Migration service Skill
+
+This skill provides expert guidance for Azure Database Migration service. Covers troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+
+## How to Use This Skill
+
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
+> **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+
+This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+
+## Category Index
+
+| Category | Lines | Description |
+|----------|-------|-------------|
+| Troubleshooting | L32-L37 | Diagnosing and resolving Azure DMS classic migration failures and source DB connectivity issues (network, auth, firewall, TLS) during database migrations. |
+| Decision Making | L38-L44 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
+| Limits & Quotas | L45-L53 | Migration-specific limits, unsupported features, and constraints when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB, and hybrid deployments. |
+| Security | L54-L59 | Security guidance for Azure DMS migrations, including SQL best practices (network, auth, encryption) and configuring custom RBAC roles for MySQL migration scenarios. |
+| Integrations & Coding Patterns | L60-L64 | Automating MySQL-to-Azure Database for MySQL migrations using Azure Database Migration Service with PowerShell scripts, parameters, and end-to-end workflow examples. |
+| Deployment | L65-L69 | Using Azure DMS to redeploy or migrate SSIS packages to Azure SQL Database or SQL Managed Instance, including configuration steps and migration considerations. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Troubleshoot common Azure DMS classic migration issues | https://learn.microsoft.com/en-us/azure/dms/known-issues-troubleshooting-dms |
+| Fix Azure DMS source database connectivity problems | https://learn.microsoft.com/en-us/azure/dms/known-issues-troubleshooting-dms-source-connectivity |
+
+### Decision Making
+| Topic | URL |
+|-------|-----|
+| Choose database migration tools with the Azure DMS matrix | https://learn.microsoft.com/en-us/azure/dms/dms-tools-matrix |
+| Answer common Azure Database Migration Service usage questions | https://learn.microsoft.com/en-us/azure/dms/faq |
+| Select supported Azure DMS migration scenarios | https://learn.microsoft.com/en-us/azure/dms/resource-scenario-status |
+
+### Limits & Quotas
+| Topic | URL |
+|-------|-----|
+| Review migration limitations to Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/dms/known-issues-azure-mysql-fs-online |
+| Review online PostgreSQL to Azure Database for PostgreSQL migration limitations | https://learn.microsoft.com/en-us/azure/dms/known-issues-azure-postgresql-online |
+| Review online migration limits to Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/dms/known-issues-azure-sql-db-managed-instance-online |
+| Understand Azure DMS hybrid mode limitations and issues | https://learn.microsoft.com/en-us/azure/dms/known-issues-dms-hybrid-mode |
+| Review MongoDB to Azure Cosmos DB migration limitations with DMS | https://learn.microsoft.com/en-us/azure/dms/known-issues-mongo-cosmos-db |
+
+### Security
+| Topic | URL |
+|-------|-----|
+| Apply security best practices for DMS SQL migrations | https://learn.microsoft.com/en-us/azure/dms/dms-security-best-practices |
+| Configure custom RBAC roles for MySQL migrations in DMS | https://learn.microsoft.com/en-us/azure/dms/resource-custom-roles-mysql-database-migration-service |
+
+### Integrations & Coding Patterns
+| Topic | URL |
+|-------|-----|
+| Automate MySQL to Azure MySQL migration with DMS PowerShell | https://learn.microsoft.com/en-us/azure/dms/migrate-mysql-to-azure-mysql-powershell |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Redeploy SSIS packages to Azure SQL Database with DMS | https://learn.microsoft.com/en-us/azure/dms/how-to-migrate-ssis-packages |
+| Migrate SSIS packages to Azure SQL Managed Instance with DMS | https://learn.microsoft.com/en-us/azure/dms/how-to-migrate-ssis-packages-managed-instance |

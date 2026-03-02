@@ -1,0 +1,110 @@
+---
+name: azure-boards
+description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications.
+compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
+metadata:
+  generated_at: "2026-02-28"
+  generator: "docs2skills/1.0.0"
+---
+# Azure Boards Skill
+
+This skill provides expert guidance for Azure Boards. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+
+## How to Use This Skill
+
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+
+> **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
+
+This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+
+## Category Index
+
+| Category | Lines | Description |
+|----------|-------|-------------|
+| Troubleshooting | L33-L41 | Troubleshooting Excel and Office integration with Azure Boards (sync, add-in, connection errors) and fixing backlog hierarchy, nesting, and reordering issues. |
+| Best Practices | L42-L59 | Best practices for using Azure Boards: managing work items/bugs, Kanban and Scrum sprints, capacity planning, cross-team scaling (incl. SAFe), and building effective queries/charts. |
+| Decision Making | L60-L67 | Guidance on choosing Azure Boards processes, tools, and integrations, plus planning cross-team dependencies and migrations to get the right setup for your organization. |
+| Limits & Quotas | L68-L73 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
+| Security | L74-L80 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies to protect work items and boards. |
+| Configuration | L81-L102 | Configuring Azure Boards: board columns, swimlanes, WIP limits, cards, tags, GitHub links, notifications, queries/WIQL, and detailed work item field/process customization. |
+| Integrations & Coding Patterns | L103-L110 | Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack, and Microsoft Teams, including setup steps and patterns for syncing work items and collaborating in chats. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Resolve common Excel and Azure Boards integration questions | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/faqs?view=azure-devops |
+| Fix Azure DevOps Office integration issues | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops |
+| Fix Azure DevOps Office integration issues | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops |
+| Fix Azure DevOps Office integration issues | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/tfs-office-integration-issues?view=azure-devops |
+| Resolve backlog nesting and reorder issues in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/resolve-backlog-reorder-issues?view=azure-devops |
+
+### Best Practices
+| Topic | URL |
+|-------|-----|
+| Define and manage bugs effectively in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops |
+| Track and resolve issues and impediments in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops |
+| Manage Azure Boards work items effectively across teams | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-work-items?view=azure-devops |
+| Apply Azure Boards agile product management practices | https://learn.microsoft.com/en-us/azure/devops/boards/best-practices-agile-project-management?view=azure-devops |
+| Use Azure Boards Kanban boards effectively | https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-overview?view=azure-devops |
+| Apply scalable Agile practices in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/plans/practices-that-scale?view=azure-devops |
+| Implement SAFe with Azure Boards configuration patterns | https://learn.microsoft.com/en-us/azure/devops/boards/plans/safe-configure-boards?view=azure-devops |
+| Create effective Azure Boards query charts for dashboards | https://learn.microsoft.com/en-us/azure/devops/boards/queries/example-query-charts?view=azure-devops |
+| Define Azure Boards work item queries with best practices | https://learn.microsoft.com/en-us/azure/devops/boards/queries/using-queries?view=azure-devops |
+| Define and manage sprint tasks effectively in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops |
+| Adjust sprint workload to match team capacity in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/adjust-work?view=azure-devops |
+| Apply sprint and Scrum best practices in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/best-practices-scrum?view=azure-devops |
+| Perform end-of-sprint cleanup and metrics tasks in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/end-sprint-activities?view=azure-devops |
+| Configure and use sprint capacity planning in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/sprints/set-capacity?view=azure-devops |
+
+### Decision Making
+| Topic | URL |
+|-------|-----|
+| Plan cross-team dependencies with Dependency Tracker | https://learn.microsoft.com/en-us/azure/devops/boards/extensions/dependency-tracker?view=azure-devops |
+| Select migration and integration options for Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/extensions/migrate-integrate?view=azure-devops |
+| Choose Azure Boards tools for cross-team visibility | https://learn.microsoft.com/en-us/azure/devops/boards/plans/visibility-across-teams?view=azure-devops |
+| Choose the right Azure Boards process template | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops |
+
+### Limits & Quotas
+| Topic | URL |
+|-------|-----|
+| Manage and restore deleted Azure Boards test artifacts | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/delete-test-artifacts?view=azure-devops |
+| Manage Azure Boards work item attachments and limits | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/manage-attachments?view=azure-devops |
+
+### Security
+| Topic | URL |
+|-------|-----|
+| Understand default permissions and access in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/get-started/permissions-access-boards?view=azure-devops |
+| Configure permissions for Azure Boards queries and folders | https://learn.microsoft.com/en-us/azure/devops/boards/queries/set-query-permissions?view=azure-devops |
+| Secure Azure Boards with access controls and policies | https://learn.microsoft.com/en-us/azure/devops/boards/secure-your-azure-boards?view=azure-devops |
+
+### Configuration
+| Topic | URL |
+|-------|-----|
+| Configure advanced filtering on Azure Boards backlogs and plans | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/filter-backlogs-boards-plans?view=azure-devops |
+| Configure board columns to model Azure Boards workflow | https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-columns?view=azure-devops |
+| Customize Azure Boards card fields and styles | https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops |
+| Configure swimlanes to expedite work in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/boards/expedite-work?view=azure-devops |
+| Set and manage WIP limits on Azure Boards columns | https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops |
+| Configure and customize Azure Boards processes and boards | https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops |
+| Add Azure Boards status badges to GitHub repos | https://learn.microsoft.com/en-us/azure/devops/boards/github/configure-status-badges?view=azure-devops |
+| Configure on-premises Azure DevOps with GitHub Enterprise | https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-server |
+| Connect Azure Boards projects to GitHub repositories | https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops |
+| Configure Azure Boards GitHub app connections | https://learn.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops |
+| Configure and use tags on Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops |
+| Use Azure Boards query fields, operators, and macros | https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-operators-variables?view=azure-devops |
+| Author WIQL queries with Azure Boards syntax reference | https://learn.microsoft.com/en-us/azure/devops/boards/queries/wiql-syntax?view=azure-devops |
+| Configure following and notifications for Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/follow-work-items?view=azure-devops |
+| Track bugs, issues, and risks fields in CMMI process | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?view=azure-devops |
+| Use code review and feedback fields in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/guidance-code-review-feedback-field-reference?view=azure-devops |
+| Reference Agile and Scrum work item fields in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/work-item-field?view=azure-devops |
+| List and manage Azure Boards work item fields | https://learn.microsoft.com/en-us/azure/devops/boards/work-items/work-item-fields?view=azure-devops |
+
+### Integrations & Coding Patterns
+| Topic | URL |
+|-------|-----|
+| Connect Azure Boards work tracking with Excel | https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/track-work?view=azure-devops |
+| Integrate Azure Boards work items with GitHub artifacts | https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops |
+| Integrate GitHub Copilot with Azure Boards work items | https://learn.microsoft.com/en-us/azure/devops/boards/github/work-item-integration-github-copilot?view=azure-devops |
+| Integrate Azure Boards with Slack channels | https://learn.microsoft.com/en-us/azure/devops/boards/integrations/boards-slack?view=azure-devops |
+| Use Azure Boards with Microsoft Teams channels | https://learn.microsoft.com/en-us/azure/devops/boards/integrations/boards-teams?view=azure-devops |

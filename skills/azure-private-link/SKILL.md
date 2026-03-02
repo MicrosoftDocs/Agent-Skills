@@ -1,14 +1,14 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Private Link applications.
+description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Private Link applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-24"
+  generated_at: "2026-02-28"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Private Link Skill
 
-This skill provides expert guidance for Azure Private Link. Covers troubleshooting, best practices, decision making, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Private Link. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -22,49 +22,59 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and fixing Azure Private Endpoint and Private Link Service connectivity issues, including DNS/misconfiguration causes, validation steps, and common error resolutions. |
-| Best Practices | L38-L42 | DNS design and configuration guidance for Azure Private Endpoints, including zone setup, name resolution patterns, split-horizon DNS, and integration with on-premises DNS systems |
-| Decision Making | L43-L47 | Guidance on estimating and optimizing Private Link costs, comparing design options (zonal vs regional, hub-spoke vs mesh), and understanding trade-offs between security, performance, and spend. |
-| Limits & Quotas | L48-L52 | Guidance on increasing virtual network scale limits for Azure Private Endpoints, including supported maximums and how to request higher quotas. |
-| Security | L53-L58 | Configuring Azure RBAC roles and permissions needed to create, manage, and secure Private Link resources and Network Security Perimeters. |
-| Configuration | L59-L70 | Configuring Azure Private Link/endpoint behavior: subnet policies, DNS zones, routing, SNAT, security perimeters, and monitoring/diagnostic logs. |
+| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Private Endpoint and Private Link service connectivity issues, including DNS, network routing, and common misconfiguration problems. |
+| Best Practices | L39-L43 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
+| Decision Making | L44-L49 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
+| Architecture & Design Patterns | L50-L54 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
+| Limits & Quotas | L55-L60 | Regional availability of Private Link/Endpoints, supported services, and how to view or request increases to per‑VNet and global Private Endpoint limits |
+| Security | L61-L67 | Configuring RBAC for Private Link/Private Endpoints and Network Security Perimeters, and inspecting/controlling Private Endpoint traffic with Azure Firewall. |
+| Configuration | L68-L80 | Configuring Private Link endpoints/services: subnet and NSG policies, ASGs, DNS zones, SNAT bypass, NSPs, and monitoring/diagnostic logs for private connectivity. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot Azure Private Endpoint connectivity issues | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity |
-| Troubleshoot Azure Private Link Service connectivity | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity |
+| Diagnose Azure Private Endpoint connectivity issues | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity |
+| Troubleshoot Azure Private Link service connectivity | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply DNS integration best practices for Private Endpoints | https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns-integration |
+| Apply DNS integration best practices for Azure Private Endpoints | https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns-integration |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Optimize Azure Private Link costs and trade-offs | https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization |
+| Plan and transition Azure resources to Network Security Perimeter | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-transition |
+| Optimize Azure Private Link design for cost and security | https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization |
+
+### Architecture & Design Patterns
+| Topic | URL |
+|-------|-----|
+| Design DNS infrastructure for Private Endpoints with Azure Private Resolver | https://learn.microsoft.com/en-us/azure/private-link/tutorial-dns-on-premises-private-resolver |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Increase Azure Private Endpoint VNet scale limits | https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits |
+| Check Azure Private Link regional availability and support | https://learn.microsoft.com/en-us/azure/private-link/availability |
+| Increase Azure Private Endpoint per‑VNet and global limits | https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure RBAC permissions for Network Security Perimeter | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements |
-| Assign Azure RBAC roles for Private Link deployment | https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions |
+| Configure RBAC permissions for Azure Network Security Perimeter operations | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements |
+| Assign Azure RBAC roles for Private Endpoint and Private Link deployment | https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions |
+| Inspect and control Private Endpoint traffic using Azure Firewall | https://learn.microsoft.com/en-us/azure/private-link/tutorial-inspect-traffic-azure-firewall |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Private Link service Direct Connect routing | https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect |
-| Create a Network Security Perimeter with Azure CLI | https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli |
+| Configure application security groups with Azure Private Endpoints | https://learn.microsoft.com/en-us/azure/private-link/configure-asg-private-endpoint |
+| Configure Private Link service Direct Connect destinations | https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect |
+| Create a network security perimeter with Azure CLI | https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli |
 | Configure subnet network policies for private endpoints | https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy |
 | Disable subnet network policies for Private Link service | https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy |
 | Manage Azure private endpoint configuration properties | https://learn.microsoft.com/en-us/azure/private-link/manage-private-endpoint |
-| Reference monitoring metrics and logs for Private Link | https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link-reference |
+| Reference for Azure Private Link monitoring data | https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link-reference |
 | Enable and store Network Security Perimeter diagnostic logs | https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-diagnostic-logs |
-| Configure DNS zone names for Azure Private Endpoints | https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns |
-| Enable SNAT bypass for NVA private endpoint traffic | https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat |
+| Configure private DNS zone names for Azure Private Endpoints | https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns |
+| Enable SNAT bypass for private endpoint traffic via NVA | https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat |
