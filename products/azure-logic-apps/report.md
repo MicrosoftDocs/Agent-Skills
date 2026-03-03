@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   integrations: Integrating Logic Apps with services (SAP, DBs, storage, messaging,
     AI), B2B/EDI and XML/JSON transforms, custom/built-in connectors, and automated
@@ -24,9 +24,9 @@ category_descriptions:
   best-practices: 'Best practices for Logic Apps reliability and performance: error/exception
     handling, control functions, rules engine optimization, and processing non‑Unicode
     text encodings.'
-  troubleshooting: Diagnosing Logic Apps failures, HTTP 429/throttling, and detailed
-    B2B/EDI (AS2, EDIFACT, X12) acknowledgment/error codes, plus testing and interpreting
-    advanced test error info.
+  troubleshooting: Diagnosing and fixing Logic Apps workflow failures, throttling/HTTP
+    429, B2B (AS2/EDIFACT/X12) acknowledgment errors, and using test error details
+    and alerts for troubleshooting.
 ---
 # Azure Logic Apps Crawl Report
 
@@ -35,13 +35,13 @@ category_descriptions:
 - **Total Pages**: 229
 - **Fetched**: 229
 - **Fetch Failed**: 0
-- **Classified**: 196
-- **Unclassified**: 33
+- **Classified**: 195
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 229
+- **Updated Pages**: 2
+- **Unchanged**: 227
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -51,16 +51,23 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 13 | 5.7% |
 | best-practices | 4 | 1.7% |
-| configuration | 44 | 19.2% |
+| configuration | 42 | 18.3% |
 | decision-making | 6 | 2.6% |
 | deployment | 23 | 10.0% |
 | integrations | 77 | 33.6% |
 | limits-quotas | 6 | 2.6% |
 | security | 13 | 5.7% |
-| troubleshooting | 10 | 4.4% |
-| *(Unclassified)* | 33 | 14.4% |
+| troubleshooting | 11 | 4.8% |
+| *(Unclassified)* | 34 | 14.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Add a trigger or action to a workflow](https://learn.microsoft.com/en-us/azure/logic-apps/add-trigger-action-workflow)
+  - Updated: 2025-05-19T17:08:00.000Z → 2026-03-02T08:00:00.000Z
+- [View workflow status and run history](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history)
+  - Updated: 2025-02-10T23:04:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -168,7 +175,6 @@ category_descriptions:
 | [Rules engine optimization](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/rules-engine-optimization) | best-practices | 0.75 | Explains how the Rules Engine evaluates conditions, executes actions, prioritizes rules, and provides optimization recommendations—product-specific performance and tuning guidance. |
 | [Support non-UTF-8 character encoding in logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/support-non-unicode-character-encoding) | best-practices | 0.75 | Provides a concrete pattern using base64ToBinary and Azure Functions to handle non-Unicode text; product-specific workaround and encoding gotchas. |
 | [AS2 MDN acknowledgments](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2-mdn-acknowledgment) | troubleshooting | 0.70 | Explains MDN acknowledgments, statuses, and how AS2 Decode returns MDNs; includes message status semantics and error handling specific to AS2 in Logic Apps. |
-| [Add a trigger or action to a workflow](https://learn.microsoft.com/en-us/azure/logic-apps/add-trigger-action-workflow) | configuration | 0.70 | How-to for adding triggers and actions, including Logic Apps–specific trigger types, action behavior, and workflow structure configuration. |
 | [Add agent actions in Foundry backed by workflows](https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-action-create-run-workflow) | integrations | 0.70 | Shows how to wire Logic Apps workflows as actions inside Microsoft Foundry agents, a concrete integration pattern unique to these products. |
 | [Add agent tools in Foundry backed by connectors](https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-tools-connector-actions) | integrations | 0.70 | Explains how to expose Logic Apps connector actions as tools for agents via MCP servers. This is a product-specific integration pattern between Logic Apps and Microsoft Foundry with concrete configuration concepts. |
 | [Add and run C# scripts](https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts) | configuration | 0.70 | Shows how to use the Execute CSharp Script Code action with product-specific parameters and behavior. |
@@ -247,7 +253,7 @@ category_descriptions:
 | [TestWorkflowRunActionRepetitionResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-action-repetition-result-class-definition) | integrations | 0.65 | Describes a specialized result class for actions in loop iterations. Product-specific SDK API for test integrations. |
 | [TestWorkflowRunActionResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-action-result-class-definition) | integrations | 0.65 | SDK class reference for action execution results in tests. Product-specific integration details for test frameworks. |
 | [TestWorkflowRunTriggerResult class](https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-workflow-run-trigger-result-class-definition) | integrations | 0.65 | SDK class for trigger execution results in tests. Product-specific integration details for testing triggers. |
-| [View workflow status and run history](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history) | configuration | 0.65 | Shows how to access run/trigger history and set up alerts, likely including specific diagnostic settings and alert rule parameters tied to Logic Apps. |
+| [View workflow status and run history](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history) | troubleshooting | 0.65 | The page focuses on checking workflow status, viewing run and trigger history, and setting up alerts for Azure Logic Apps. These are product-specific diagnostic workflows that help identify and resolve issues with runs (symptom → inspection/diagnosis via history and metrics → corrective actions/alerts). While it may not list explicit error codes, it contains detailed, service-specific monitoring and debugging guidance that goes beyond generic concepts, fitting best under troubleshooting. |
 | [Add operators to rules](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/add-rules-operators) | configuration | 0.60 | Describes how to configure rule conditions with specific arithmetic and logical operators in Rules Composer, which is product-specific rule configuration detail. |
 | [Advanced ruleset tasks](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/perform-advanced-ruleset-tasks) | configuration | 0.60 | Covers advanced operations on rulesets in Rules Composer, which are product-specific configuration and management tasks. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-logic-apps-azure-cli) | deployment | 0.60 | Uses Logic Apps–specific Azure CLI extension commands and patterns for deployment/management that are product-specific. |
@@ -290,6 +296,7 @@ category_descriptions:
 | [Create Consumption schedule-based workflow](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow) | 0.25 | Scenario tutorial for a scheduled workflow; mostly step-by-step designer usage without deep config or limits. |
 | [Create Consumption workflow with Azure Storage and Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow) | 0.25 | Scenario tutorial integrating Functions and Storage; no detailed config parameter tables or error mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-azure-portal) | 0.25 | Introductory how-to for creating a simple Standard workflow in the portal; lacks detailed config tables or limits. |
+| [Add a trigger or action to a workflow](https://learn.microsoft.com/en-us/azure/logic-apps/add-trigger-action-workflow) | 0.20 | The page is a how-to guide on adding triggers and actions in Azure Logic Apps workflows. From the summary, it focuses on basic workflow construction concepts (trigger first, then actions) without exposing specific limits, configuration parameter tables, error codes, or product-specific best-practice gotchas. It reads as general usage/tutorial content rather than expert reference material. |
 | [B2B integration & EDI processing](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-overview) | 0.20 | High-level B2B integration overview; lacks specific limits, configs, or troubleshooting details. |
 | [Create Standard workflows from templates - Portal](https://learn.microsoft.com/en-us/azure/logic-apps/create-workflows-from-templates) | 0.20 | Duplicate of index 2; template usage overview without deep configuration or limits. |
 | [Examples, scenarios, and walkthroughs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-examples-and-scenarios) | 0.20 | High-level examples and scenarios overview; primarily navigational/marketing without detailed limits, configuration tables, or troubleshooting mappings. |

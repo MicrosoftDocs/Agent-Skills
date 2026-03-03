@@ -3,7 +3,7 @@ name: azure-defender-for-iot
 description: Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Iot applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Iot Skill
@@ -27,10 +27,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L55-L66 | Guidance on planning Defender for IoT deployments: choosing OT traffic mirroring, appliances, licenses, partner integrations, billing, hybrid/air-gapped setups, and on-premises to cloud transitions. |
 | Architecture & Design Patterns | L67-L73 | Architectural guidance for connecting OT/ICS sensors to Azure, using sample OT network topologies, and aligning Defender for IoT deployment with Purdue model layers. |
 | Limits & Quotas | L74-L82 | Info on OT trial setup, supported/retiring features, virtual/physical OT appliance options and requirements, plus Defender for IoT data retention limits and timelines. |
-| Security | L83-L102 | Securing Defender for IoT OT environments: auth, RBAC/roles, SSO, certificates, Zero Trust, alert workflows/response, and auditing user and programming activity. |
-| Configuration | L103-L134 | Configuring Defender for IoT agents/sensors: micro agent twins, dependencies, alerts, OT sensor settings, traffic mirroring, connectivity, monitoring methods, and threat intel updates. |
-| Integrations & Coding Patterns | L135-L162 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate alerts and manage inventory/vulnerabilities. |
-| Deployment | L163-L186 | Planning and deploying Defender for IoT OT sensors: hardware/VM options, appliance-specific guides, traffic mirroring, onboarding, activation, and moving IoT security resources across regions. |
+| Security | L83-L101 | Securing Defender for IoT OT environments: auth, RBAC/roles, SSO, certificates, Zero Trust, alert workflows/response, and auditing user and programming activity. |
+| Configuration | L102-L133 | Configuring Defender for IoT agents/sensors: micro agent twins, dependencies, alerts, OT sensor settings, traffic mirroring, connectivity, monitoring methods, and threat intel updates. |
+| Integrations & Coding Patterns | L134-L161 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate alerts and manage inventory/vulnerabilities. |
+| Deployment | L162-L185 | Planning and deploying Defender for IoT OT sensors: hardware/VM options, appliance-specific guides, traffic mirroring, onboarding, activation, and moving IoT security resources across regions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -85,7 +85,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Manage OT sensor authentication via Defender for IoT APIs | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-auth-apis |
 | Meet SSL/TLS certificate requirements for OT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/best-practices/certificate-requirements |
-| Optimize OT alert workflows on Defender for IoT sensors | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response |
 | Analyze OT programming events for suspicious changes | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-analyze-programming-details-changes |
 | Manage Defender for IoT alerts in Azure portal | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-manage-cloud-alerts |
 | View and manage OT sensor alerts locally | https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-view-alerts |

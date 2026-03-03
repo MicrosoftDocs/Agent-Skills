@@ -3,7 +3,7 @@ name: azure-defender-for-cloud
 description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Cloud applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Cloud Skill
@@ -30,7 +30,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Security | L122-L198 | Security alerts, permissions, and hardening for Defender for Cloud: alert references by resource, RBAC/CIEM setup, container/Kubernetes/SQL/storage protections, and data handling/compliance. |
 | Configuration | L199-L267 | How to configure and customize Defender for Cloud features: enable scans and alerts, set policies, exemptions, exports, DevOps and container integrations, and data/security posture settings. |
 | Integrations & Coding Patterns | L268-L295 | Integrating Defender for Cloud with SIEMs, DevOps, APIs, and third‑party tools (ServiceNow, Power BI, EDR, AWS/GCP), plus ARG queries, exports, and automation patterns. |
-| Deployment | L296-L328 | Deploying and managing Defender for Cloud protections (Containers, SQL, Storage, GitHub) across AKS/EKS/GKE and VMs using portal, CLI, IaC, policies, and checking support/status. |
+| Deployment | L296-L327 | Deploying and managing Defender for Cloud protections (Containers, SQL, Storage, GitHub) across AKS/EKS/GKE and VMs using portal, CLI, IaC, policies, and checking support/status. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -313,7 +313,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Enable Defender for Storage using Azure Policy | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-policy-enablement |
 | Enable Defender for Storage with Azure PowerShell | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-powershell-enablement |
 | Enable Defender for Storage using REST API | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-rest-api-enablement |
-| Track Defender for Containers sensor versions and updates | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log |
 | Deploy Defender for Containers sensor with Helm | https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm |
 | Enable Defender for SQL on Machines at scale | https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-sql-at-scale |
 | Deploy gated deployment agent via Infrastructure as Code | https://learn.microsoft.com/en-us/azure/defender-for-cloud/gated-deployment-infrastructure-as-code |

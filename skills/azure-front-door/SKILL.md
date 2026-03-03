@@ -3,7 +3,7 @@ name: azure-front-door
 description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Front Door applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Front Door Skill
@@ -25,12 +25,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Troubleshooting | L35-L43 | Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and compression issues, config/runtime problems, and performance bottlenecks using logs, reference strings, and best practices. |
 | Best Practices | L44-L49 | Guidance on optimal Azure Front Door configuration (caching, routing, security, performance) and practical rules engine patterns for URL rewrites, redirects, headers, and conditional routing. |
 | Decision Making | L50-L62 | Guidance on Front Door pricing and billing, comparing Front Door vs Azure CDN tiers, and planning/mapping migrations from Front Door classic to Standard/Premium (including upgrades and FAQs). |
-| Architecture & Design Patterns | L63-L72 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
-| Limits & Quotas | L73-L80 | POP codes and locations, regional POP lists, routing composite limits, and subscription-level bandwidth throttling behavior for Azure Front Door. |
-| Security | L81-L101 | TLS, certificates, cipher suites, WAF, DDoS, security headers, origin protection (Private Link, restricted access), managed identity, and secure logging for Azure Front Door. |
-| Configuration | L102-L133 | Configuring Azure Front Door behavior: caching, routing, rules, redirects/rewrites, custom domains, Private Link, protocol support, health probes, monitoring, and cache purge tools. |
-| Integrations & Coding Patterns | L134-L140 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
-| Deployment | L141-L152 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
+| Architecture & Design Patterns | L63-L71 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
+| Limits & Quotas | L72-L79 | POP codes and locations, regional POP lists, routing composite limits, and subscription-level bandwidth throttling behavior for Azure Front Door. |
+| Security | L80-L100 | TLS, certificates, cipher suites, WAF, DDoS, security headers, origin protection (Private Link, restricted access), managed identity, and secure logging for Azure Front Door. |
+| Configuration | L101-L132 | Configuring Azure Front Door behavior: caching, routing, rules, redirects/rewrites, custom domains, Private Link, protocol support, health probes, monitoring, and cache purge tools. |
+| Integrations & Coding Patterns | L133-L139 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
+| Deployment | L140-L151 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -68,7 +68,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Implement manual failover for Front Door with Traffic Manager | https://learn.microsoft.com/en-us/azure/frontdoor/high-availability |
 | Architect Azure Front Door with Storage blobs for static content | https://learn.microsoft.com/en-us/azure/frontdoor/scenario-storage-blobs |
 | Design reliable blob upload via Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/scenario-upload-storage-blobs |
-| Design well-architected solutions with Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/scenarios |
 
 ### Limits & Quotas
 | Topic | URL |

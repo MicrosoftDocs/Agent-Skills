@@ -3,7 +3,7 @@ name: azure-backup
 description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -28,9 +28,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L83-L87 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
 | Limits & Quotas | L88-L119 | Backup support matrices, performance limits, retention/soft delete settings, and regional/SKU constraints for Azure Backup across VMs, databases, files, disks, and Backup center. |
 | Security | L120-L162 | Security features for Azure Backup: encryption, RBAC, MUA/Resource Guard, soft delete/immutable vaults, private endpoints, AKS/VM/confidential VM protection, ransomware and threat detection. |
-| Configuration | L163-L246 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, scripts/APIs, and workload-specific backups (VMs, Files, Blobs, Disks, SQL, AKS, SAP, PostgreSQL). |
-| Integrations & Coding Patterns | L247-L305 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
-| Deployment | L306-L309 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
+| Configuration | L163-L244 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, scripts/APIs, and workload-specific backups (VMs, Files, Blobs, Disks, SQL, AKS, SAP, PostgreSQL). |
+| Integrations & Coding Patterns | L245-L303 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
+| Deployment | L304-L307 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -163,7 +163,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Understand Azure VM restore options and processes in Azure Backup | https://learn.microsoft.com/en-us/azure/backup/about-azure-vm-restore |
 | Configure and choose Azure MARS restore options | https://learn.microsoft.com/en-us/azure/backup/about-restore-microsoft-azure-recovery-services |
 | Automate Azure Backup operations with scripts and APIs | https://learn.microsoft.com/en-us/azure/backup/automation-backup |
 | Manage backup protection for Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-manage |
@@ -172,7 +171,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Meet prerequisites and configure access for AKS backup | https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-concept |
 | Configure vault diagnostics at scale with Azure Policy | https://learn.microsoft.com/en-us/azure/backup/azure-policy-configure-diagnostics |
 | Restore Azure VMs from Recovery Services vaults using portal | https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms |
-| Configure Recovery Services vault backups for multiple Azure VMs | https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare |
 | Auto-enable VM backups using Azure Policy | https://learn.microsoft.com/en-us/azure/backup/backup-azure-auto-enable-backup |
 | Configure MARS offline seeding with Azure Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-import-export |
 | Configure DPM and MABS offline seeding with Import/Export | https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-server-import-export |

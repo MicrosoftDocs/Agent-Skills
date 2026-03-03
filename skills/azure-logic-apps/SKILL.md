@@ -3,7 +3,7 @@ name: azure-logic-apps
 description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Logic Apps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -22,15 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L48 | Diagnosing Logic Apps failures, HTTP 429/throttling, and detailed B2B/EDI (AS2, EDIFACT, X12) acknowledgment/error codes, plus testing and interpreting advanced test error info. |
-| Best Practices | L49-L56 | Best practices for Logic Apps reliability and performance: error/exception handling, control functions, rules engine optimization, and processing non‑Unicode text encodings. |
-| Decision Making | L57-L66 | Guidance on when and how to migrate from BizTalk/Power Automate, choosing Standard vs Consumption, and planning/estimating Logic Apps and storage costs. |
-| Architecture & Design Patterns | L67-L83 | Patterns for building resilient Logic Apps: AI agent loops, REST/B2B workflows, batching, ordered messaging, resource replication, high availability, and multi-region disaster recovery. |
-| Limits & Quotas | L84-L93 | Limits, quotas, and behaviors for Logic Apps: message size/chunking, pagination, SQL timeouts, inline JavaScript limits, configuration caps, and how usage is metered and billed. |
-| Security | L94-L110 | Securing Logic Apps with identities, auth (Entra, OAuth/OBO, Easy Auth), private endpoints/VNet, certificates, and Azure Policy controls for connectors, cross-tenant access, and governance. |
-| Configuration | L111-L158 | Configuring Logic Apps workflows, runtime, and B2B: control flow, JSON/WDL, inline code, monitoring/logging, integration accounts, agreements, schemas, rules, and health/SQL settings. |
-| Integrations & Coding Patterns | L159-L239 | Integrating Logic Apps with services (SAP, DBs, storage, messaging, AI), B2B/EDI and XML/JSON transforms, custom/built-in connectors, and automated workflow testing patterns. |
-| Deployment | L240-L265 | CI/CD, ARM/Bicep, DevOps, VS Code, CLI/PowerShell, hybrid/on-prem connectivity, and deployment slots for creating, migrating, and managing Logic Apps deployments. |
+| Troubleshooting | L35-L49 | Diagnosing and fixing Logic Apps workflow failures, throttling/HTTP 429, B2B (AS2/EDIFACT/X12) acknowledgment errors, and using test error details and alerts for troubleshooting. |
+| Best Practices | L50-L57 | Best practices for Logic Apps reliability and performance: error/exception handling, control functions, rules engine optimization, and processing non‑Unicode text encodings. |
+| Decision Making | L58-L67 | Guidance on when and how to migrate from BizTalk/Power Automate, choosing Standard vs Consumption, and planning/estimating Logic Apps and storage costs. |
+| Architecture & Design Patterns | L68-L84 | Patterns for building resilient Logic Apps: AI agent loops, REST/B2B workflows, batching, ordered messaging, resource replication, high availability, and multi-region disaster recovery. |
+| Limits & Quotas | L85-L94 | Limits, quotas, and behaviors for Logic Apps: message size/chunking, pagination, SQL timeouts, inline JavaScript limits, configuration caps, and how usage is metered and billed. |
+| Security | L95-L111 | Securing Logic Apps with identities, auth (Entra, OAuth/OBO, Easy Auth), private endpoints/VNet, certificates, and Azure Policy controls for connectors, cross-tenant access, and governance. |
+| Configuration | L112-L157 | Configuring Logic Apps workflows, runtime, and B2B: control flow, JSON/WDL, inline code, monitoring/logging, integration accounts, agreements, schemas, rules, and health/SQL settings. |
+| Integrations & Coding Patterns | L158-L238 | Integrating Logic Apps with services (SAP, DBs, storage, messaging, AI), B2B/EDI and XML/JSON transforms, custom/built-in connectors, and automated workflow testing patterns. |
+| Deployment | L239-L264 | CI/CD, ARM/Bicep, DevOps, VS Code, CLI/PowerShell, hybrid/on-prem connectivity, and deployment slots for creating, migrating, and managing Logic Apps deployments. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,6 +45,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Test and validate Logic Apps rulesets with Rules Composer | https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/test-rulesets |
 | Interpret extended error details with TestErrorInfo in Logic Apps tests | https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-error-info-class-definition |
 | Use TestErrorResponseAdditionalInfo for detailed Logic Apps test errors | https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-error-response-additional-info-class-definition |
+| Diagnose Logic Apps workflow runs and alerts | https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history |
 
 ### Best Practices
 | Topic | URL |
@@ -113,7 +114,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Execute inline C# scripts in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts |
 | Execute inline PowerShell in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/add-run-powershell-scripts |
-| Configure triggers and actions in Logic Apps workflows | https://learn.microsoft.com/en-us/azure/logic-apps/add-trigger-action-workflow |
 | Create Azure Monitor log queries for Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/create-monitoring-tracking-queries |
 | Create and publish reusable Logic Apps workflow templates | https://learn.microsoft.com/en-us/azure/logic-apps/create-publish-workflow-templates |
 | Run inline .NET code in Standard Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/create-run-custom-code-functions |
@@ -153,7 +153,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Test Logic Apps workflows with mock outputs | https://learn.microsoft.com/en-us/azure/logic-apps/testing-framework/test-logic-apps-mock-data-static-results |
 | Define B2B tracking schemas for Logic Apps Consumption | https://learn.microsoft.com/en-us/azure/logic-apps/tracking-schemas-consumption |
 | Understand B2B tracking tables for Logic Apps Standard | https://learn.microsoft.com/en-us/azure/logic-apps/tracking-schemas-standard |
-| View Logic Apps run history and configure alerts | https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history |
 | Workflow Definition Language JSON schema for Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-schema |
 
 ### Integrations & Coding Patterns

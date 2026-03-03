@@ -40,9 +40,9 @@ category_descriptions:
 - **Unclassified**: 433
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 2341
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 2344
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -62,17 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 433 | 18.5% |
 
 ## Changes
-
-### New Pages
-
-- [Autocollect OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect)
-
-### Updated Pages
-
-- [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify)
-  - Updated: 2025-10-29T08:00:00.000Z → 2026-03-01T13:06:00.000Z
-- [Dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/app/dependencies)
-  - Updated: 2026-03-06T08:00:00.000Z → 2026-03-01T13:06:00.000Z
 
 ## Classified Pages
 

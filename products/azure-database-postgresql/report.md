@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 308
+- **Updated Pages**: 0
+- **Unchanged**: 309
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 98 | 31.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Build an agent with Microsoft Foundry](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-foundry-integration)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-03-01T23:06:00.000Z
 
 ## Classified Pages
 

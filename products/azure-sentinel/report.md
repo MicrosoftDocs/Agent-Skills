@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
   configuration: Configuring Microsoft Sentinel data ingestion, connectors, analytics/automation
     rules, ASIM schemas, UEBA, SAP, data lake, retention, and health/auditing to control
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 372
+- **Updated Pages**: 1
+- **Unchanged**: 371
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 97 | 26.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Anomalies reference](https://learn.microsoft.com/en-us/azure/sentinel/anomalies-reference)
+  - Updated: 2025-12-30T12:09:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 
@@ -384,7 +389,6 @@ category_descriptions:
 | [ASIM parsers](https://learn.microsoft.com/en-us/azure/sentinel/normalization-parsers-list) | 0.40 | List of ASIM parsers; acts as a catalog rather than a detailed configuration or troubleshooting reference. |
 | [ASIM parsers](https://learn.microsoft.com/en-us/azure/sentinel/normalization-parsers-overview) | 0.40 | Overview of ASIM parsers; primarily conceptual and linking to detailed parser docs, without concrete configuration or troubleshooting content. |
 | [Add entity to threat indicators](https://learn.microsoft.com/en-us/azure/sentinel/add-entity-to-threat-intelligence) | 0.40 | Describes adding entities discovered during investigations as IOCs; likely a procedural UI guide without deep config tables, limits, or error-code troubleshooting. |
-| [Anomalies reference](https://learn.microsoft.com/en-us/azure/sentinel/anomalies-reference) | 0.40 | Lists anomaly types detected by ML models but appears to be descriptive rather than providing configuration parameters, limits, or decision matrices. More of a capability catalog than actionable expert configuration/troubleshooting guidance. |
 | [Automate and run playbooks](https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks) | 0.40 | Describes how to attach and run playbooks automatically or manually; appears to be operational how-to without detailed config matrices, limits, or troubleshooting mappings. |
 | [Conduct end-to-end hunts](https://learn.microsoft.com/en-us/azure/sentinel/hunts) | 0.40 | End-to-end hunting experience description is largely workflow/UX oriented; no specific configs, limits, or error mappings are evident from the summary. |
 | [Configure content](https://learn.microsoft.com/en-us/azure/sentinel/configure-content) | 0.40 | Configuring Sentinel content article is likely procedural (how to set up rules, connectors) without detailed parameter tables or numeric constraints in the summary. |
@@ -415,6 +419,7 @@ category_descriptions:
 | [Enable Microsoft Sentinel and initial features and content](https://learn.microsoft.com/en-us/azure/sentinel/enable-sentinel-features-content) | 0.35 | Enabling Sentinel and initial features is a step-by-step deployment action article; summary does not indicate matrices, limits, or detailed config tables beyond basic onboarding. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sentinel/business-applications/solution-overview) | 0.35 | High-level overview of Sentinel solution for Microsoft Business Apps; summary does not indicate detailed configuration, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks-overview) | 0.35 | Overview of Jupyter notebooks with Sentinel data lake; high-level explanation of capabilities rather than detailed configuration or troubleshooting. |
+| [Anomalies reference](https://learn.microsoft.com/en-us/azure/sentinel/anomalies-reference) | 0.30 | The page lists types of anomalies detected by Microsoft Sentinel's ML engine and explains baseline/anomaly concepts, but there is no indication of numeric limits, configuration tables, error codes, or decision matrices. It appears to be descriptive/reference content about anomaly categories rather than detailed configuration, troubleshooting, or quantified guidance. |
 | [Asset data in the Sentinel data lake](https://learn.microsoft.com/en-us/azure/sentinel/datalake/enable-data-connectors) | 0.30 | Conceptual explanation of asset data and benefits; appears more like an overview than a configuration or troubleshooting guide. |
 | [Create a custom connector](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector) | 0.30 | High-level resource index for creating custom connectors; detailed parameters and patterns are in the linked method-specific docs, not here. |
 | [Deployment planning guide](https://learn.microsoft.com/en-us/azure/sentinel/deploy-overview) | 0.30 | Deployment guide overview describing phases; lacks specific deployment matrices, constraints, or config parameter tables. |

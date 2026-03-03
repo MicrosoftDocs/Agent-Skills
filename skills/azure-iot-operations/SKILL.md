@@ -3,7 +3,7 @@ name: azure-iot-operations
 description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Operations applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -28,7 +28,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L52-L57 | Akri-based device discovery architecture and patterns for deploying Azure IoT Operations in layered/segmented industrial networks (DMZ, OT/IT zones, network topologies). |
 | Limits & Quotas | L58-L62 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
 | Security | L63-L79 | Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images and secure configs. |
-| Configuration | L80-L118 | Configuring Azure IoT Operations data flows, endpoints, WASM processing, schema/registry, MQTT broker settings, observability, diagnostics, and resource/asset management. |
+| Configuration | L80-L118 | Configuring Azure IoT Operations data flows, endpoints, schemas, WASM processing, MQTT broker behavior/observability, and managing/monitoring IoT assets and observability resources. |
 | Integrations & Coding Patterns | L119-L135 | Patterns and how-tos for connecting external systems to Azure IoT Operations: Akri, OPC UA, MQTT, HTTP/REST, SSE, Kafka-compatible sources, media/ONVIF cameras, and the state store protocol. |
 | Deployment | L136-L146 | Deploying and managing Azure IoT Operations on Kubernetes: prerequisites, secure prod/test setups, cloning, upgrades, version support, and deploying WebAssembly modules and graphs. |
 
@@ -93,7 +93,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Fabric OneLake data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-endpoint |
 | Configure Fabric Real-Time Intelligence data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-fabric-real-time-intelligence |
 | Configure Kafka and Event Hubs data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-kafka-endpoint |
-| Configure local storage data flow endpoints | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint |
+| Configure local storage endpoints for Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint |
 | Configure MQTT data flow endpoints in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-mqtt-endpoint |
 | Create and configure data flows in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow |
 | Deploy and configure WebAssembly modules in data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm |

@@ -3,7 +3,7 @@ name: azure-functions
 description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-02"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -29,8 +29,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Limits & Quotas | L128-L139 | Performance, scaling, and billing limits for Azure Functions and Durable Functions, including concurrency, trigger-based scaling, storage performance, throughput benchmarks, and supported language versions. |
 | Security | L140-L157 | Securing Azure Functions apps: encryption at rest, private endpoints/VNet, managed identity and identity-based connections, access keys, Web PubSub and MCP security, and secret handling. |
 | Configuration | L158-L202 | Configuring how Functions apps run: app/host settings, bindings, triggers, plans, storage, networking, monitoring/telemetry, Durable Functions options, and local/dev tooling. |
-| Integrations & Coding Patterns | L203-L319 | Patterns and how-tos for wiring Functions to other systems: triggers/bindings for data stores, messaging, AI/OpenAI, Dapr, Durable Functions, HTTP/MCP, and integration with other Azure services. |
-| Deployment | L320-L366 | Deploying and provisioning Azure Functions (plans, containers, Durable/Task Scheduler), CI/CD pipelines, zero‑downtime strategies, and migration between plans, models, and extensions. |
+| Integrations & Coding Patterns | L203-L319 | Patterns and examples for wiring Functions to external systems—Durable workflows, HTTP, queues, databases, messaging, AI/OpenAI, Dapr, MCP, and configuring all related triggers/bindings. |
+| Deployment | L320-L366 | Deploying and updating Azure Functions apps: provisioning hosting, CI/CD pipelines, containers/Kubernetes, Durable Task orchestration, plan migrations, and zero‑downtime deployment strategies. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -214,8 +214,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Implement durable timers and timeouts in orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-timers |
 | Configure Event Grid triggers and bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/event-grid-how-tos |
 | Integrate Azure Functions with Azure OpenAI completions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-openai-text-completion |
-| Add Azure SQL Database output binding in VS Code | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code |
-| Configure Azure Cosmos DB output binding in VS Code | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code |
+| Use Azure SQL output bindings in Azure Functions (VS Code) | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code |
+| Use Cosmos DB output bindings in Azure Functions (VS Code) | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code |
 | Connect HTTP-triggered function to Storage queue via CLI | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-cli |
 | Add Azure Storage queue output binding in Visual Studio | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs |
 | Configure Storage queue output binding in VS Code | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code |
@@ -324,7 +324,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Use zip push deployment for Azure Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/deployment-zip-push |
 | Upgrade Durable Functions extension to latest version | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-extension-upgrade |
 | Host Durable Functions with MSSQL backend on Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-mssql-container-apps-hosting |
-| Use orchestration versioning for zero-downtime Durable deployments | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning |
+| Use orchestration versioning for zero-downtime Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning |
 | Implement zero-downtime deployments for Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-zero-downtime-deployment |
 | Develop and deploy with Azure Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/develop-with-durable-task-scheduler |
 | Configure autoscaling for Durable Task in Azure Container Apps | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-auto-scaling |

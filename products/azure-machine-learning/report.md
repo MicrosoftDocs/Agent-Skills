@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 620
+- **Updated Pages**: 0
+- **Unchanged**: 625
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
@@ -62,19 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 139 | 22.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Log metrics, parameters, and files](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-02-28T08:00:00.000Z
-- [Prompt flow Ecosystem](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/community-ecosystem?view=azureml-api-2)
-  - Updated: 2025-10-30T22:11:00.000Z → 2026-02-28T08:00:00.000Z
-- [Submit batch run and evaluate a flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow?view=azureml-api-2)
-  - Updated: 2024-11-01T21:59:00.000Z → 2026-02-28T08:00:00.000Z
-- [Manage and optimize cost](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2)
-  - Updated: 2024-09-10T22:02:00.000Z → 2026-03-01T08:00:00.000Z
-- [Manage compute resources](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-compute-studio?view=azureml-api-2)
-  - Updated: 2024-09-17T17:02:00.000Z → 2026-02-28T08:00:00.000Z
 
 ## Classified Pages
 

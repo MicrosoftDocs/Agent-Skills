@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-02'
 category_descriptions:
-  configuration: Configuring Azure IoT Operations data flows, endpoints, WASM processing,
-    schema/registry, MQTT broker settings, observability, diagnostics, and resource/asset
-    management.
+  configuration: Configuring Azure IoT Operations data flows, endpoints, schemas,
+    WASM processing, MQTT broker behavior/observability, and managing/monitoring IoT
+    assets and observability resources.
   decision-making: Guidance and examples for sizing Azure IoT Operations production
     deployments, including resource planning, capacity considerations, and scaling
     recommendations.
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 99
+- **Updated Pages**: 1
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -61,6 +61,11 @@ category_descriptions:
 | *(Unclassified)* | 22 | 22.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Local storage or ACSA](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint)
+  - Updated: 2025-06-20T11:09:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 
@@ -97,7 +102,6 @@ category_descriptions:
 | [Deploy to a production cluster](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations) | deployment | 0.75 | Production deployment guidance with secure settings for Azure IoT Operations on Arc-enabled Kubernetes is product-specific deployment expertise. |
 | [Manage certificates](https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-manage-certificates) | security | 0.75 | Details certificate management, internal/external TLS, and BYO CA for this product, which are product-specific security settings. |
 | [Build WASM modules](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-wasm-modules) | configuration | 0.74 | Shows how to define graph configurations and module interfaces; includes YAML schema and constraints specific to IoT Operations. |
-| [Local storage or ACSA](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint) | configuration | 0.74 | Describes configuring local storage as a data flow endpoint; likely includes CRD fields and storage-specific options. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-dataflow-endpoint) | configuration | 0.74 | Endpoint configuration how-to; likely includes CRD fields, required properties, and allowed values for endpoint resources. |
 | [Use WASM data flow graphs](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm) | configuration | 0.74 | Using WASM with data flow graphs requires specific graph and module configuration fields and constraints that are product-specific. |
 | [Configure registry endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint) | configuration | 0.72 | Registry endpoints for container registries are configured via CRDs; article likely lists endpoint fields and authentication options. |
@@ -129,6 +133,7 @@ category_descriptions:
 | [Understand the connector for OPC UA](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-opc-ua-connector) | integrations | 0.70 | Describes how the OPC UA connector routes messages between OPC UA servers and the MQTT broker, including write capabilities, a product-specific integration pattern. |
 | [Validate images](https://learn.microsoft.com/en-us/azure/iot-operations/secure-iot-ops/howto-validate-images) | security | 0.70 | Provides concrete steps and URLs for verifying signed images, a product-specific supply-chain security configuration. |
 | [Convert data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-conversions) | configuration | 0.68 | Conversions feature likely documented with specific operators, parameters, and configuration syntax unique to this product. |
+| [Local storage or ACSA](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-configure-local-storage-endpoint) | configuration | 0.68 | The page is a how-to for configuring a local storage data flow endpoint in Azure IoT Operations, likely including Kubernetes manifest fields, resource names, and parameter values specific to this product. This is product-specific configuration detail rather than conceptual guidance, fitting the configuration sub-skill. It does not appear focused on limits, troubleshooting, or architecture patterns. |
 | [Create a custom Akri connector with .NET](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-akri-connectors) | integrations | 0.66 | Shows building a REST connector using a specific .NET template; likely includes connector configuration parameters and patterns unique to Akri/IoT Operations integration. |
 | [Enrich data](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/concept-dataflow-enrich) | configuration | 0.66 | Enrichment via contextualization datasets is product-specific; article likely lists configuration fields and usage patterns for this feature. |
 | [Azure IoT Operations versions, support, and licensing](https://learn.microsoft.com/en-us/azure/iot-operations/overview-support) | deployment | 0.65 | Support matrix and environment/region/version details are deployment-specific constraints that affect how and where the product can be deployed. |
