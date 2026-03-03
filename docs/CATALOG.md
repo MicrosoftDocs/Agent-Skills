@@ -8,343 +8,419 @@ This catalog lists all skills available in this repository, organized by Azure s
 
 ## 📍 Quick Navigation
 
-- [🤖 AI + Machine Learning](#-ai--machine-learning)
-- [📊 Analytics](#-analytics)
-- [☁️ Compute](#️-compute)
-- [📦 Containers](#-containers)
-- [🗄️ Databases](#️-databases)
-- [🛠️ Developer Tools](#️-developer-tools)
-- [⚙️ DevOps](#️-devops)
-- [🌐 Hybrid + Multicloud](#-hybrid--multicloud)
-- [🔐 Identity](#-identity)
-- [🔗 Integration](#-integration)
-- [📡 Internet of Things](#-internet-of-things)
-- [📋 Management and Governance](#-management-and-governance)
-- [🎬 Media](#-media)
-- [↗️ Migration](#️-migration)
-- [📱 Mobile](#-mobile)
-- [🌍 Networking](#-networking)
-- [🔒 Security](#-security)
-- [💾 Storage](#-storage)
-- [🖥️ Virtual Desktop Infrastructure](#️-virtual-desktop-infrastructure)
-- [🕸️ Web](#️-web)
+- [🤖 AI + Machine Learning](#\U0001f916-ai--machine-learning)
+- [📊 Analytics](#\U0001f4ca-analytics)
+- [☁️ Compute](#\u2601\ufe0f-compute)
+- [📦 Containers](#\U0001f4e6-containers)
+- [🗄️ Databases](#\U0001f5c4\ufe0f-databases)
+- [⚙️ DevOps](#\u2699\ufe0f-devops)
+- [🛠️ Developer Tools](#\U0001f6e0\ufe0f-developer-tools)
+- [🌐 Hybrid + Multicloud](#\U0001f310-hybrid--multicloud)
+- [🔐 Identity](#\U0001f510-identity)
+- [🔗 Integration](#\U0001f517-integration)
+- [📡 Internet of Things](#\U0001f4e1-internet-of-things)
+- [📋 Management and Governance](#\U0001f4cb-management-and-governance)
+- [↗️ Migration](#\u2197\ufe0f-migration)
+- [📱 Mobile](#\U0001f4f1-mobile)
+- [🌍 Networking](#\U0001f30d-networking)
+- [🔒 Security](#\U0001f512-security)
+- [💾 Storage](#\U0001f4be-storage)
+- [🖥️ Virtual Desktop Infrastructure](#\U0001f5a5\ufe0f-virtual-desktop-infrastructure)
+- [🕸️ Web](#\U0001f578\ufe0f-web)
 
 ---
 
 ## 🤖 AI + Machine Learning
 
-Skills for artificial intelligence, machine learning, and cognitive services.
+Skills for AI + Machine Learning.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-ai-services](skills/azure-ai-services/) | Pre-built AI capabilities including Vision, Speech, Language, and Decision APIs |
-| [azure-bot-service](skills/azure-bot-service/) | Intelligent, serverless bot service that scales on demand |
-| [azure-health-insights](skills/azure-health-insights/) | Healthcare-specific AI models and clinical insights |
-| [azure-machine-learning](skills/azure-machine-learning/) | End-to-end ML platform for experimentation and model management |
-| [azure-sre-agent](skills/azure-sre-agent/) | AI-powered site reliability engineering agent |
+| [azure-ai-services](skills/azure-ai-services/) | Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications. |
+| [azure-ai-vision](skills/azure-ai-vision/) | Expert knowledge for Azure AI Vision development including decision making, limits & quotas, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Vision applications. |
+| [azure-anomaly-detector](skills/azure-anomaly-detector/) | Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Anomaly Detector applications. |
+| [azure-bot-service](skills/azure-bot-service/) | Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Bot Service applications. |
+| [azure-cognitive-search](skills/azure-cognitive-search/) | Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Search applications. |
+| [azure-content-safety](skills/azure-content-safety/) | Expert knowledge for Azure AI Content Safety development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Content Safety applications. |
+| [azure-copilot](skills/azure-copilot/) | Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications. |
+| [azure-custom-vision](skills/azure-custom-vision/) | Expert knowledge for Azure AI Custom Vision development including best practices, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Custom Vision applications. |
+| [azure-data-science-vm](skills/azure-data-science-vm/) | Expert knowledge for Azure Data Science Virtual Machines development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Science Virtual Machines applications. |
+| [azure-document-intelligence](skills/azure-document-intelligence/) | Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Document Intelligence applications. |
+| [azure-health-bot](skills/azure-health-bot/) | Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Health Bot applications. |
+| [azure-immersive-reader](skills/azure-immersive-reader/) | Expert knowledge for Azure AI Immersive Reader development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader applications. |
+| [azure-language-service](skills/azure-language-service/) | Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Language applications. |
+| [azure-machine-learning](skills/azure-machine-learning/) | Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications. |
+| [azure-metrics-advisor](skills/azure-metrics-advisor/) | Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Metrics Advisor applications. |
+| [azure-personalizer](skills/azure-personalizer/) | Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Personalizer applications. |
+| [azure-quantum](skills/azure-quantum/) | Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Quantum applications. |
+| [azure-speech](skills/azure-speech/) | Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Speech applications. |
+| [azure-translator](skills/azure-translator/) | Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Translator applications. |
+| [azure-video-indexer](skills/azure-video-indexer/) | Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Video Indexer applications. |
+| [azure-ai-foundry-local](skills/azure-ai-foundry-local/) | Expert knowledge for Azure AI Foundry Local development including troubleshooting, best practices, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Foundry Local applications. |
+| [azure-foundry-classic](skills/azure-foundry-classic/) | Expert knowledge for Azure Foundry Classic development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Foundry Classic applications. |
+| [azure-microsoft-foundry](skills/azure-microsoft-foundry/) | Expert knowledge for Microsoft Foundry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Microsoft Foundry applications. |
 
 ---
 
 ## 📊 Analytics
 
-Skills for data analytics, visualization, and business intelligence.
+Skills for Analytics.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-data-explorer](skills/azure-data-explorer/) | Fast and highly scalable data exploration service |
-| [azure-data-factory](skills/azure-data-factory/) | Hybrid data integration at enterprise scale |
-| [azure-hdinsight](skills/azure-hdinsight/) | Managed Hadoop, Spark, R Server, HBase, and Storm clusters |
-| [azure-stream-analytics](skills/azure-stream-analytics/) | Real-time analytics on streaming data from applications and devices |
-| [azure-synapse-analytics](skills/azure-synapse-analytics/) | Limitless analytics service with unmatched time to insight |
+| [azure-analysis-services](skills/azure-analysis-services/) | Expert knowledge for Azure Analysis Services development including troubleshooting. Use when building, debugging, or optimizing Azure Analysis Services applications. |
+| [azure-data-explorer](skills/azure-data-explorer/) | Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Explorer applications. |
+| [azure-data-manager-for-agri](skills/azure-data-manager-for-agri/) | Expert knowledge for Azure Data Manager for Agriculture development including limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications. |
+| [azure-data-share](skills/azure-data-share/) | Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Data Share applications. |
+| [azure-databricks](skills/azure-databricks/) | Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Databricks applications. |
+| [azure-energy-data-services](skills/azure-energy-data-services/) | Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications. |
+| [azure-hdinsight](skills/azure-hdinsight/) | Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HDInsight applications. |
+| [azure-impact-reporting](skills/azure-impact-reporting/) | Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Impact Reporting applications. |
+| [azure-open-datasets](skills/azure-open-datasets/) | Expert knowledge for Azure Open Datasets development including limits & quotas. Use when building, debugging, or optimizing Azure Open Datasets applications. |
+| [azure-planetary-computer-pro](skills/azure-planetary-computer-pro/) | Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Microsoft Planetary Computer Pro applications. |
+| [azure-stream-analytics](skills/azure-stream-analytics/) | Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stream Analytics applications. |
+| [azure-synapse-analytics](skills/azure-synapse-analytics/) | Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Synapse Analytics applications. |
 
 ---
 
 ## ☁️ Compute
 
-Skills for virtual machines, serverless computing, and batch processing.
+Skills for Compute.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-app-service](skills/azure-app-service/) | Quickly create powerful cloud apps for web and mobile |
-| [azure-batch](skills/azure-batch/) | Cloud-scale job scheduling and compute management |
-| [azure-cyclecloud](skills/azure-cyclecloud/) | Create, manage, operate, and optimize HPC clusters |
-| [azure-functions](skills/azure-functions/) | Process events with serverless code |
-| [azure-spring-apps](skills/azure-spring-apps/) | Fully managed Spring Cloud service |
-| [azure-static-web-apps](skills/azure-static-web-apps/) | Modern web app service for static sites with serverless APIs |
-| [azure-virtual-desktop](skills/azure-virtual-desktop/) | Desktop and app virtualization service |
-| [azure-virtual-machines](skills/azure-virtual-machines/) | Provision virtual machines for various workloads |
-| [azure-vmware](skills/azure-vmware/) | Run VMware workloads natively on Azure |
+| [azure-baremetal-infrastructure](skills/azure-baremetal-infrastructure/) | Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications. |
+| [azure-batch](skills/azure-batch/) | Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Batch applications. |
+| [azure-cloud-services](skills/azure-cloud-services/) | Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cloud Services applications. |
+| [azure-cyclecloud](skills/azure-cyclecloud/) | Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure CycleCloud applications. |
+| [azure-devtest-labs](skills/azure-devtest-labs/) | Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure DevTest Labs applications. |
+| [azure-functions](skills/azure-functions/) | Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications. |
+| [azure-lab-services](skills/azure-lab-services/) | Expert knowledge for Azure Lab Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lab Services applications. |
+| [azure-large-instances](skills/azure-large-instances/) | Expert knowledge for Azure Large Instances development including troubleshooting, limits & quotas, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Large Instances applications. |
+| [azure-service-fabric](skills/azure-service-fabric/) | Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Fabric applications. |
+| [azure-virtual-machines](skills/azure-virtual-machines/) | Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications. |
+| [azure-vm-scalesets](skills/azure-vm-scalesets/) | Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machine Scale Sets applications. |
 
 ---
 
 ## 📦 Containers
 
-Skills for container orchestration and management.
+Skills for Containers.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-container-apps](skills/azure-container-apps/) | Build and deploy modern apps using serverless containers |
+| [azure-container-apps](skills/azure-container-apps/) | Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Apps applications. |
+| [azure-container-instances](skills/azure-container-instances/) | Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications. |
+| [azure-container-registry](skills/azure-container-registry/) | Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Registry applications. |
+| [azure-kubernetes-service](skills/azure-kubernetes-service/) | Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service (AKS) applications. |
+| [azure-redhat-openshift](skills/azure-redhat-openshift/) | Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Red Hat OpenShift applications. |
 
 ---
 
 ## 🗄️ Databases
 
-Skills for database services and data storage.
+Skills for Databases.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-redis](skills/azure-redis/) | Power applications with high-throughput, low-latency data access |
-| [azure-sql](skills/azure-sql/) | Modern SQL family for migration and app modernization |
-| [azure-sql-server-stretch-database](skills/azure-sql-server-stretch-database/) | Stretch on-premises SQL Server data to Azure |
-
----
-
-## 🛠️ Developer Tools
-
-Skills for development environments and tooling.
-
-| Skill | Description |
-|-------|-------------|
-| [azure-app-configuration](skills/azure-app-configuration/) | Fast, scalable parameter storage for app configuration |
-| [azure-dev-box](skills/azure-dev-box/) | Streamline development with secure, ready-to-code workstations |
-| [azure-devtest](skills/azure-devtest/) | Development and test environment management |
-| [azure-devtest-labs](skills/azure-devtest-labs/) | Quickly create environments using reusable templates |
-| [azure-playwright-testing](skills/azure-playwright-testing/) | End-to-end testing at scale |
+| [azure-cache-redis](skills/azure-cache-redis/) | Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cache for Redis applications. |
+| [azure-cosmos-db](skills/azure-cosmos-db/) | Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cosmos DB applications. |
+| [azure-database-mysql](skills/azure-database-mysql/) | Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for MySQL applications. |
+| [azure-database-postgresql](skills/azure-database-postgresql/) | Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications. |
+| [azure-health-data-services](skills/azure-health-data-services/) | Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications. |
+| [azure-managed-redis](skills/azure-managed-redis/) | Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Redis applications. |
+| [azure-oracle](skills/azure-oracle/) | Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Oracle applications. |
+| [azure-sap](skills/azure-sap/) | Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications. |
+| [azure-sql-database](skills/azure-sql-database/) | Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications. |
 
 ---
 
 ## ⚙️ DevOps
 
-Skills for CI/CD, monitoring, and deployment automation.
+Skills for DevOps.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-automation](skills/azure-automation/) | Simplify cloud management with process automation |
-| [azure-deployment-environments](skills/azure-deployment-environments/) | Quickly spin up app infrastructure environments |
-| [azure-devtest-labs](skills/azure-devtest-labs/) | Quickly create environments using reusable templates |
-| [azure-jenkins](skills/azure-jenkins/) | Jenkins integration with Azure services |
-| [azure-managed-grafana](skills/azure-managed-grafana/) | Deploy Grafana dashboards as a managed Azure service |
-| [azure-monitor](skills/azure-monitor/) | Full observability into applications, infrastructure, and network |
-| [azure-playwright-testing](skills/azure-playwright-testing/) | End-to-end Playwright testing at scale |
+| [azure-boards](skills/azure-boards/) | Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications. |
+| [azure-deployment-environments](skills/azure-deployment-environments/) | Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Deployment Environments applications. |
+| [azure-devops](skills/azure-devops/) | Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure DevOps applications. |
+| [azure-pipelines](skills/azure-pipelines/) | Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Pipelines applications. |
+| [azure-sre-agent](skills/azure-sre-agent/) | Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Sre Agent applications. |
+| [azure-test-plans](skills/azure-test-plans/) | Expert knowledge for Azure Test Plans development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Test Plans applications. |
+
+---
+
+## 🛠️ Developer Tools
+
+Skills for Developer Tools.
+
+| Skill | Description |
+|-------|-------------|
+| [azure-app-configuration](skills/azure-app-configuration/) | Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications. |
+| [azure-app-testing](skills/azure-app-testing/) | Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Testing applications. |
+| [azure-artifacts](skills/azure-artifacts/) | Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Artifacts applications. |
+| [azure-cloud-shell](skills/azure-cloud-shell/) | Expert knowledge for Azure Cloud Shell development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Cloud Shell applications. |
+| [azure-dev-box](skills/azure-dev-box/) | Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Dev Box applications. |
+| [azure-local](skills/azure-local/) | Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Local applications. |
+| [azure-playwright-workspaces](skills/azure-playwright-workspaces/) | Expert knowledge for Playwright Workspaces development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Playwright Workspaces applications. |
+| [azure-repos](skills/azure-repos/) | Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Repos applications. |
 
 ---
 
 ## 🌐 Hybrid + Multicloud
 
-Skills for hybrid cloud and multicloud scenarios.
+Skills for Hybrid + Multicloud.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-baremetal-infrastructure](skills/azure-baremetal-infrastructure/) | Run specialized workloads on dedicated bare metal servers |
-| [azure-operator-nexus](skills/azure-operator-nexus/) | Carrier-grade hybrid cloud platform for mobile networks |
-| [azure-operator-service-manager](skills/azure-operator-service-manager/) | Manage network services across hybrid cloud sites |
+| [azure-aks-edge-essentials](skills/azure-aks-edge-essentials/) | Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service Edge Essentials applications. |
+| [azure-arc](skills/azure-arc/) | Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Arc applications. |
+| [azure-stack-edge](skills/azure-stack-edge/) | Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stack Edge applications. |
+| [azure-vmware-solution](skills/azure-vmware-solution/) | Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure VMware Solution applications. |
 
 ---
 
 ## 🔐 Identity
 
-Skills for identity and access management.
+Skills for Identity.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-role-based-access-control](skills/azure-role-based-access-control/) | Fine-grained access management for Azure resources |
+| [azure-active-directory-b2c](skills/azure-active-directory-b2c/) | Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Active Directory B2C applications. |
+| [azure-rbac](skills/azure-rbac/) | Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Role-based access control applications. |
 
 ---
 
 ## 🔗 Integration
 
-Skills for application integration and messaging.
+Skills for Integration.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-api-center](skills/azure-api-center/) | Centralized API inventory and governance |
-| [azure-api-management](skills/azure-api-management/) | Publish APIs to developers securely and at scale |
-| [azure-business-process-tracking](skills/azure-business-process-tracking/) | Business process tracking and monitoring |
-| [azure-data-manager-for-agri](skills/azure-data-manager-for-agri/) | Agriculture data management and innovation |
-| [azure-energy-data-services](skills/azure-energy-data-services/) | Energy data modernization and digital transformation |
-| [azure-fluid-relay](skills/azure-fluid-relay/) | Real-time collaborative experiences with Fluid Framework |
-| [azure-healthcare-apis](skills/azure-healthcare-apis/) | Unified health data solutions and interoperability |
-| [azure-integration-environments](skills/azure-integration-environments/) | Business process integration environments |
-| [azure-logic-apps](skills/azure-logic-apps/) | Automate data access and use across clouds |
-| [azure-service-connector](skills/azure-service-connector/) | Simplified service-to-service connections |
-| [azure-signalr](skills/azure-signalr/) | Add real-time web functionality easily |
+| [azure-api-center](skills/azure-api-center/) | Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications. |
+| [azure-api-management](skills/azure-api-management/) | Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure API Management applications. |
+| [azure-business-process-tracking](skills/azure-business-process-tracking/) | Expert knowledge for Azure Business Process Tracking development including deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications. |
+| [azure-data-factory](skills/azure-data-factory/) | Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications. |
+| [azure-event-grid](skills/azure-event-grid/) | Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Grid applications. |
+| [azure-event-hubs](skills/azure-event-hubs/) | Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Hubs applications. |
+| [azure-integration-environments](skills/azure-integration-environments/) | Expert knowledge for Azure Integration Environments development including various topics. Use when building, debugging, or optimizing Azure Integration Environments applications. |
+| [azure-logic-apps](skills/azure-logic-apps/) | Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Logic Apps applications. |
+| [azure-partner-solutions](skills/azure-partner-solutions/) | Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Partner Solutions applications. |
+| [azure-relay](skills/azure-relay/) | Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Relay applications. |
+| [azure-service-bus](skills/azure-service-bus/) | Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Bus applications. |
+| [azure-service-connector](skills/azure-service-connector/) | Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Connector applications. |
+| [azure-web-pubsub](skills/azure-web-pubsub/) | Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Web PubSub applications. |
 
 ---
 
 ## 📡 Internet of Things
 
-Skills for IoT solutions and edge computing.
+Skills for Internet of Things.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-digital-twins](skills/azure-digital-twins/) | Build next-generation IoT spatial intelligence solutions |
-| [azure-iot](skills/azure-iot/) | Connect, monitor, and manage billions of IoT assets |
-| [azure-notification-hubs](skills/azure-notification-hubs/) | Send push notifications to any platform from any back end |
+| [azure-digital-twins](skills/azure-digital-twins/) | Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Digital Twins applications. |
+| [azure-iot](skills/azure-iot/) | Expert knowledge for Azure IoT development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure IoT applications. |
+| [azure-iot-central](skills/azure-iot-central/) | Expert knowledge for Azure IoT Central development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Central applications. |
+| [azure-iot-edge](skills/azure-iot-edge/) | Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Edge applications. |
+| [azure-iot-hub](skills/azure-iot-hub/) | Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Hub applications. |
+| [azure-iot-operations](skills/azure-iot-operations/) | Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Operations applications. |
 
 ---
 
 ## 📋 Management and Governance
 
-Skills for resource management, governance, and cost optimization.
+Skills for Management and Governance.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-automation](skills/azure-automation/) | Simplify cloud management with process automation |
-| [azure-backup](skills/azure-backup/) | Simplify data protection and protect against ransomware |
-| [azure-business-continuity-center](skills/azure-business-continuity-center/) | Business continuity and disaster recovery planning |
-| [azure-cost-management-billing](skills/azure-cost-management-billing/) | Optimize cloud spending while maximizing potential |
-| [azure-governance](skills/azure-governance/) | Policy, blueprints, and compliance management |
-| [azure-guidance](skills/azure-guidance/) | General Azure best practices and patterns |
-| [azure-well-architected](skills/azure-well-architected/) | Well-Architected Framework best practices and design principles |
-| [azure-cloud-adoption-framework](skills/azure-cloud-adoption-framework/) | Cloud Adoption Framework guidance for strategy, planning, and governance |
-| [azure-architecture](skills/azure-architecture/) | Azure Architecture Center patterns, reference architectures, and best practices |
-| [azure-managed-grafana](skills/azure-managed-grafana/) | Deploy Grafana dashboards as a managed service |
-| [azure-migrate](skills/azure-migrate/) | Discover, assess, and migrate on-premises VMs |
-| [azure-monitor](skills/azure-monitor/) | Full observability into applications and infrastructure |
-| [azure-partner-solutions](skills/azure-partner-solutions/) | Third-party solutions integrated with Azure |
-| [azure-resource-manager](skills/azure-resource-manager/) | Infrastructure as code for all Azure resources |
-| [azure-scheduler](skills/azure-scheduler/) | Run jobs on simple or complex recurring schedules |
-| [azure-site-recovery](skills/azure-site-recovery/) | Built-in disaster recovery service |
-| [azure-update-center](skills/azure-update-center/) | Centrally manage updates and compliance at scale |
-
----
-
-## 🎬 Media
-
-Skills for media encoding, streaming, and delivery.
-
-| Skill | Description |
-|-------|-------------|
-| [azure-communication-services](skills/azure-communication-services/) | Build rich communication experiences for voice, video, and chat |
+| [azure-advisor](skills/azure-advisor/) | Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications. |
+| [azure-architecture](skills/azure-architecture/) | Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions. |
+| [azure-automation](skills/azure-automation/) | Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Automation applications. |
+| [azure-blueprints](skills/azure-blueprints/) | Expert knowledge for Azure Blueprints development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Blueprints applications. |
+| [azure-carbon-optimization](skills/azure-carbon-optimization/) | Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Carbon Optimization applications. |
+| [azure-chaos-studio](skills/azure-chaos-studio/) | Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Chaos Studio applications. |
+| [azure-cloud-adoption-framework](skills/azure-cloud-adoption-framework/) | Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure. |
+| [azure-cost-management](skills/azure-cost-management/) | Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications. |
+| [azure-education-hub](skills/azure-education-hub/) | Expert knowledge for Azure Education Hub development including troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Education Hub applications. |
+| [azure-lighthouse](skills/azure-lighthouse/) | Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lighthouse applications. |
+| [azure-managed-applications](skills/azure-managed-applications/) | Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Managed Applications applications. |
+| [azure-managed-grafana](skills/azure-managed-grafana/) | Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Grafana applications. |
+| [azure-monitor](skills/azure-monitor/) | Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Monitor applications. |
+| [azure-operator-service-manager](skills/azure-operator-service-manager/) | Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications. |
+| [azure-osconfig](skills/azure-osconfig/) | Expert knowledge for Azure Osconfig development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Osconfig applications. |
+| [azure-policy](skills/azure-policy/) | Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Policy applications. |
+| [azure-portal](skills/azure-portal/) | Expert knowledge for Azure Portal development including troubleshooting, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Portal applications. |
+| [azure-quotas](skills/azure-quotas/) | Expert knowledge for Azure Quotas development including limits & quotas. Use when building, debugging, or optimizing Azure Quotas applications. |
+| [azure-reliability](skills/azure-reliability/) | Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Reliability applications. |
+| [azure-resiliency](skills/azure-resiliency/) | Expert knowledge for Azure Resiliency development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Resiliency applications. |
+| [azure-resource-graph](skills/azure-resource-graph/) | Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Resource Graph applications. |
+| [azure-resource-manager](skills/azure-resource-manager/) | Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Resource Manager applications. |
+| [azure-service-health](skills/azure-service-health/) | Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Health applications. |
+| [azure-sovereign-us](skills/azure-sovereign-us/) | Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure US Government applications. |
+| [azure-update-manager](skills/azure-update-manager/) | Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Update Manager applications. |
+| [azure-well-architected](skills/azure-well-architected/) | Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles. |
 
 ---
 
 ## ↗️ Migration
 
-Skills for cloud migration and modernization.
+Skills for Migration.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-migrate](skills/azure-migrate/) | Discover, assess, right-size, and migrate VMs to Azure |
-| [azure-site-recovery](skills/azure-site-recovery/) | Disaster recovery and migration orchestration |
+| [azure-database-migration](skills/azure-database-migration/) | Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database Migration service applications. |
+| [azure-migrate](skills/azure-migrate/) | Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Migrate applications. |
+| [azure-site-recovery](skills/azure-site-recovery/) | Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Site Recovery applications. |
 
 ---
 
 ## 📱 Mobile
 
-Skills for mobile app development and services.
+Skills for Mobile.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-communication-services](skills/azure-communication-services/) | Communication APIs for voice, video, chat, and SMS |
-| [azure-notification-hubs](skills/azure-notification-hubs/) | Push notifications to any platform from any back end |
+| [azure-notification-hubs](skills/azure-notification-hubs/) | Expert knowledge for Azure Notification Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Notification Hubs applications. |
 
 ---
 
 ## 🌍 Networking
 
-Skills for network infrastructure and connectivity.
+Skills for Networking.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-application-gateway](skills/azure-application-gateway/) | Build secure, scalable web front ends with WAF |
-| [azure-internet-peering](skills/azure-internet-peering/) | Internet peering for optimal connectivity |
-| [azure-network-function-manager](skills/azure-network-function-manager/) | Network function management for edge devices |
-| [azure-networking](skills/azure-networking/) | Virtual networks, load balancers, and connectivity services |
-| [azure-private-link](skills/azure-private-link/) | Private access to Azure services |
+| [azure-application-gateway](skills/azure-application-gateway/) | Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Application Gateway applications. |
+| [azure-bastion](skills/azure-bastion/) | Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Bastion applications. |
+| [azure-ddos-protection](skills/azure-ddos-protection/) | Expert knowledge for Azure DDos Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when building, debugging, or optimizing Azure DDos Protection applications. |
+| [azure-dns](skills/azure-dns/) | Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure DNS applications. |
+| [azure-expressroute](skills/azure-expressroute/) | Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure ExpressRoute applications. |
+| [azure-extended-zones](skills/azure-extended-zones/) | Expert knowledge for Azure Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Azure Extended Zones applications. |
+| [azure-firewall](skills/azure-firewall/) | Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Firewall applications. |
+| [azure-firewall-manager](skills/azure-firewall-manager/) | Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when building, debugging, or optimizing Azure Firewall Manager applications. |
+| [azure-front-door](skills/azure-front-door/) | Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Front Door applications. |
+| [azure-internet-peering](skills/azure-internet-peering/) | Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications. |
+| [azure-load-balancer](skills/azure-load-balancer/) | Expert knowledge for Azure Load Balancer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Load Balancer applications. |
+| [azure-nat-gateway](skills/azure-nat-gateway/) | Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure NAT Gateway applications. |
+| [azure-network-function-manager](skills/azure-network-function-manager/) | Expert knowledge for Azure Network Function Manager development including security, and configuration. Use when building, debugging, or optimizing Azure Network Function Manager applications. |
+| [azure-network-watcher](skills/azure-network-watcher/) | Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Network Watcher applications. |
+| [azure-networking](skills/azure-networking/) | Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Networking applications. |
+| [azure-operator-nexus](skills/azure-operator-nexus/) | Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications. |
+| [azure-peering-service](skills/azure-peering-service/) | Expert knowledge for Azure Peering Service development including best practices. Use when building, debugging, or optimizing Azure Peering Service applications. |
+| [azure-private-link](skills/azure-private-link/) | Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Private Link applications. |
+| [azure-route-server](skills/azure-route-server/) | Expert knowledge for Azure Route Server development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Route Server applications. |
+| [azure-traffic-manager](skills/azure-traffic-manager/) | Expert knowledge for Azure Traffic Manager development including troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Traffic Manager applications. |
+| [azure-virtual-network](skills/azure-virtual-network/) | Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Virtual Network applications. |
+| [azure-virtual-network-manager](skills/azure-virtual-network-manager/) | Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Virtual Network Manager applications. |
+| [azure-virtual-wan](skills/azure-virtual-wan/) | Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual WAN applications. |
+| [azure-vpn-gateway](skills/azure-vpn-gateway/) | Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure VPN Gateway applications. |
+| [azure-web-application-firewall](skills/azure-web-application-firewall/) | Expert knowledge for Azure Web Application Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Web Application Firewall applications. |
 
 ---
 
 ## 🔒 Security
 
-Skills for security, compliance, and data protection.
+Skills for Security.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-confidential-computing](skills/azure-confidential-computing/) | Data protection in use with trusted execution environments |
-| [azure-government](skills/azure-government/) | Azure for US government agencies and partners |
-| [azure-private-link](skills/azure-private-link/) | Private access to services on the Azure platform |
-| [azure-security](skills/azure-security/) | Security Center and Defender for cloud protection |
+| [azure-artifact-signing](skills/azure-artifact-signing/) | Expert knowledge for Azure Artifact Signing development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Artifact Signing applications. |
+| [azure-attestation](skills/azure-attestation/) | Expert knowledge for Azure Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Attestation applications. |
+| [azure-cloud-hsm](skills/azure-cloud-hsm/) | Expert knowledge for Azure Cloud Hsm development including troubleshooting, best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Cloud Hsm applications. |
+| [azure-confidential-computing](skills/azure-confidential-computing/) | Expert knowledge for Azure Confidential Computing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Confidential Computing applications. |
+| [azure-confidential-ledger](skills/azure-confidential-ledger/) | Expert knowledge for Azure Confidential Ledger development including decision making, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Confidential Ledger applications. |
+| [azure-dedicated-hsm](skills/azure-dedicated-hsm/) | Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Dedicated HSM applications. |
+| [azure-defender-for-cloud](skills/azure-defender-for-cloud/) | Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Cloud applications. |
+| [azure-defender-for-iot](skills/azure-defender-for-iot/) | Expert knowledge for Azure Defender For Iot development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Iot applications. |
+| [azure-external-attack-surface-management](skills/azure-external-attack-surface-management/) | Expert knowledge for Azure External Attack Surface Management development including limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure External Attack Surface Management applications. |
+| [azure-firmware-analysis](skills/azure-firmware-analysis/) | Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Firmware Analysis applications. |
+| [azure-information-protection](skills/azure-information-protection/) | Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when building, debugging, or optimizing Azure Information Protection applications. |
+| [azure-key-vault](skills/azure-key-vault/) | Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Key Vault applications. |
+| [azure-payment-hsm](skills/azure-payment-hsm/) | Expert knowledge for Azure Payment Hsm development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when building, debugging, or optimizing Azure Payment Hsm applications. |
+| [azure-security](skills/azure-security/) | Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Security applications. |
+| [azure-sentinel](skills/azure-sentinel/) | Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Sentinel applications. |
 
 ---
 
 ## 💾 Storage
 
-Skills for data storage and file services.
+Skills for Storage.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-avere-vfxt](skills/azure-avere-vfxt/) | HPC file caching clusters for compute-intensive workloads |
-| [azure-backup](skills/azure-backup/) | Data protection and ransomware recovery |
-| [azure-hpc-cache](skills/azure-hpc-cache/) | High-performance caching for HPC workloads |
-| [azure-netapp-files](skills/azure-netapp-files/) | Enterprise-grade Azure file shares powered by NetApp |
-| [azure-storage](skills/azure-storage/) | Durable, highly available, and massively scalable cloud storage |
+| [azure-backup](skills/azure-backup/) | Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications. |
+| [azure-blob-storage](skills/azure-blob-storage/) | Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Blob Storage applications. |
+| [azure-data-box-family](skills/azure-data-box-family/) | Expert knowledge for Azure Data Box development including troubleshooting, best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Box applications. |
+| [azure-files](skills/azure-files/) | Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Files applications. |
+| [azure-hpc-cache](skills/azure-hpc-cache/) | Expert knowledge for Azure HPC Cache development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HPC Cache applications. |
+| [azure-import-export](skills/azure-import-export/) | Expert knowledge for Azure Import Export development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Import Export applications. |
+| [azure-managed-lustre](skills/azure-managed-lustre/) | Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Managed Lustre applications. |
+| [azure-netapp-files](skills/azure-netapp-files/) | Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure NetApp Files applications. |
+| [azure-queue-storage](skills/azure-queue-storage/) | Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Queue Storage applications. |
+| [azure-storage](skills/azure-storage/) | Expert knowledge for Azure Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Storage applications. |
+| [azure-table-storage](skills/azure-table-storage/) | Expert knowledge for Azure Table Storage development including best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Table Storage applications. |
 
 ---
 
 ## 🖥️ Virtual Desktop Infrastructure
 
-Skills for virtual desktops and remote workspaces.
+Skills for Virtual Desktop Infrastructure.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-dev-box](skills/azure-dev-box/) | Cloud-based developer workstations |
-| [azure-lab-services](skills/azure-lab-services/) | Virtual labs for classes, training, and hackathons |
-| [azure-virtual-desktop](skills/azure-virtual-desktop/) | Desktop and app virtualization on Azure |
+| [azure-virtual-desktop](skills/azure-virtual-desktop/) | Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications. |
 
 ---
 
 ## 🕸️ Web
 
-Skills for web applications and APIs.
+Skills for Web.
 
 | Skill | Description |
 |-------|-------------|
-| [azure-api-management](skills/azure-api-management/) | API gateway, management, and developer portal |
-| [azure-app-configuration](skills/azure-app-configuration/) | Centralized configuration for web applications |
-| [azure-app-service](skills/azure-app-service/) | Platform for web apps, REST APIs, and mobile backends |
-| [azure-communication-services](skills/azure-communication-services/) | Voice, video, chat, and SMS for web apps |
-| [azure-fluid-relay](skills/azure-fluid-relay/) | Real-time collaborative web experiences |
-| [azure-functions](skills/azure-functions/) | Serverless compute for web backends |
-| [azure-playwright-testing](skills/azure-playwright-testing/) | End-to-end web testing at scale |
-| [azure-signalr](skills/azure-signalr/) | Real-time web functionality with SignalR |
-| [azure-static-web-apps](skills/azure-static-web-apps/) | Streamlined full-stack development for static sites |
+| [azure-app-service](skills/azure-app-service/) | Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Service applications. |
+| [azure-communication-services](skills/azure-communication-services/) | Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Communication Services applications. |
+| [azure-data-api-builder](skills/azure-data-api-builder/) | Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Api Builder applications. |
+| [azure-fluid-relay](skills/azure-fluid-relay/) | Expert knowledge for Azure Fluid Relay development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Fluid Relay applications. |
+| [azure-industry](skills/azure-industry/) | Expert knowledge for Azure Industry development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Industry applications. |
+| [azure-maps](skills/azure-maps/) | Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Maps applications. |
+| [azure-signalr-service](skills/azure-signalr-service/) | Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SignalR Service applications. |
+| [azure-spring-apps](skills/azure-spring-apps/) | Expert knowledge for Azure Spring Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Spring Apps applications. |
+| [azure-static-web-apps](skills/azure-static-web-apps/) | Expert knowledge for Azure Static Web Apps development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Static Web Apps applications. |
 
 ---
 
-## 📈 Summary
+## 📊 Summary
 
-| Category | Skills |
-|----------|--------|
-| AI + Machine Learning | 5 |
-| Analytics | 5 |
-| Compute | 9 |
-| Containers | 1 |
-| Databases | 3 |
-| Developer Tools | 5 |
-| DevOps | 7 |
-| Hybrid + Multicloud | 3 |
-| Identity | 1 |
-| Integration | 11 |
-| Internet of Things | 3 |
-| Management and Governance | 17 |
-| Media | 1 |
-| Migration | 2 |
-| Mobile | 2 |
-| Networking | 5 |
-| Security | 4 |
-| Storage | 5 |
-| Virtual Desktop Infrastructure | 3 |
-| Web | 9 |
+**Total Skills:** 187 across 19 categories
 
-**Total: 80 skills across 20 categories**
+### Skills by Category
 
-> Note: Some skills appear in multiple categories where they serve multiple purposes.
+- **Management and Governance:** 26 skills
+- **Networking:** 25 skills
+- **AI + Machine Learning:** 20 skills
+- **Security:** 15 skills
+- **Integration:** 13 skills
+- **Analytics:** 12 skills
+- **Storage:** 11 skills
+- **Compute:** 11 skills
+- **Web:** 9 skills
+- **Databases:** 9 skills
+- **Developer Tools:** 8 skills
+- **DevOps:** 6 skills
+- **Internet of Things:** 6 skills
+- **Containers:** 5 skills
+- **Hybrid + Multicloud:** 4 skills
+- **Migration:** 3 skills
+- **Identity:** 2 skills
+- **Mobile:** 1 skills
+- **Virtual Desktop Infrastructure:** 1 skills
 
 ---
 
 ## 📖 Related Resources
 
-- [Main README](README.md) - Project overview and installation guide
-- [Curated Bundles](docs/BUNDLES.md) - Role-based skill collections
-- [Azure Services Directory](https://azure.microsoft.com/en-us/products/) - Official Azure product catalog
+- [Main README](../README.md) - Project overview and installation guide
+- [Skill Bundles](BUNDLES.md) - Role-based skill collections
+- [Agent Skills Specification](https://agentskills.io/) - Open standard documentation

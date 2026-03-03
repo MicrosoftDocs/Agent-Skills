@@ -142,15 +142,15 @@ The repository is organized by Azure service domains:
 
 | Category | Skills | Examples |
 |----------|--------|----------|
-| ☁️ **Compute** | ~10 | Azure Functions, Container Apps, Virtual Machines, App Service, Batch |
-| 🔗 **Integration** | ~8 | Logic Apps, API Management, Service Connector, Azure SignalR |
-| 📊 **Data & Analytics** | ~10 | Azure SQL, Data Factory, Synapse Analytics, Data Explorer, HDInsight |
-| 🤖 **AI & ML** | ~5 | AI Foundry, Machine Learning, Azure Health Insights |
-| 🔒 **Security & Identity** | ~5 | Role-Based Access Control, Confidential Computing, Security |
-| 🌐 **Networking** | ~8 | Networking, Private Link, Application Gateway, Internet Peering |
-| 🏗️ **Infrastructure** | ~15 | Azure Resource Manager, Backup, Site Recovery, Update Manager |
-| 💰 **Management** | ~5 | Cost Management, Governance, Azure Monitor, Automation |
-| 🎮 **Specialized** | ~10+ | IoT, Digital Twins, Communication Services, Bot Service |
+| ☁️ **Compute** | 13 | Azure App Service, Azure Batch, Azure Cloud Services, Azure Cyclecloud, Azure Functions |
+| 🔗 **Integration** | 16 | Azure API Center, Azure API Management, Azure Business Process Tracking, Azure Communication Services, Azure Data API Builder |
+| 📊 **Data & Analytics** | 19 | Azure Analysis Services, Azure Cache Redis, Azure Cosmos Db, Azure Data Explorer, Azure Data Factory |
+| 🤖 **AI & ML** | 23 | Azure AI Services, Azure AI Vision, Azure Anomaly Detector, Azure Bot Service, Azure Cognitive Search, Azure Foundry Classic, Azure Foundry Local, Microsoft Foundry |
+| 🔒 **Security & Identity** | 19 | Azure Active Directory B2C, Azure Attestation, Azure Cloud Hsm, Azure Confidential Computing, Azure Confidential Ledger |
+| 🌐 **Networking** | 23 | Azure Application Gateway, Azure Bastion, Azure DDoS Protection, Azure Dns, Azure Expressroute |
+| 🏗️ **Infrastructure** | 50 | Azure Advisor, Azure AKS Edge Essentials, Azure API Management, Azure Arc, Azure Architecture |
+| 💰 **Management** | 39 | Azure Advisor, Azure API Management, Azure Architecture, Azure Artifacts, Azure Automation |
+| 🎮 **Specialized** | 26 | Azure AKS Edge Essentials, Azure API Management, Azure App Configuration, Azure App Service, Azure Communication Services |
 
 ---
 
@@ -166,9 +166,10 @@ Not sure where to start? We've created role-based skill bundles to help you get 
 | **🏗️ Infrastructure Pro** | ARM, Networking, Backup, Site Recovery |
 | **📊 Data Engineer** | SQL, Data Factory, Synapse, Stream Analytics |
 | **🤖 AI/ML Developer** | AI Services, Machine Learning, Bot Service |
+| **� Integration** | API Management, Event Grid, Logic Apps, Service Bus |
 | **🔒 Security & Compliance** | RBAC, Confidential Computing, Security |
 | **🌐 DevOps & Automation** | Dev Box, Monitor, Grafana, Automation |
-| **☁️ Full-Stack Azure** | Complete coverage (all 80 skills) |
+| **☁️ Full-Stack Azure** | Complete coverage with architecture foundations |
 
 > 💡 **Tip:** Start with the **Essentials** bundle, then add specialized bundles as you need them.
 
