@@ -22,6 +22,13 @@ category_descriptions:
 - **Classified**: 14
 - **Unclassified**: 2
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 16
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-foundry-local/azure-ai-foundry-local.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -31,6 +38,8 @@ category_descriptions:
 | integrations | 9 | 56.2% |
 | troubleshooting | 1 | 6.2% |
 | *(Unclassified)* | 2 | 12.5% |
+
+## Changes
 
 ## Classified Pages
 

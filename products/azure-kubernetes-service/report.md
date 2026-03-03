@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   security: 'Securing AKS clusters: identity/RBAC, network and API access, encryption,
-    node hardening/CIS, image integrity, PCI compliance, Azure Policy, and secure
-    access to nodes and external services.'
+    certificates/keys, node hardening, policies/compliance (PCI, CIS), workload identity,
+    and secure access to external services.'
   architecture-patterns: 'Architectural patterns and reference designs for AKS: HA/DR
     (active-active/passive/cold), upgrades, multi-region/multi-cluster, networking/IP,
     PCI, AWS migration, and scaling with node pools/Fleet.'
-  configuration: Configuring AKS clusters, networking, storage, security, autoscaling,
-    cost controls, service mesh, databases, GPUs, and multi-cluster/Fleet features
-    for production workloads.
+  configuration: Configuring AKS clusters, networking, storage, ingress, GPUs, autoscaling,
+    costs, security, service mesh, and multi-cluster/Fleet features, plus extensions
+    and database/Kafka setups.
   troubleshooting: 'Diagnosing and fixing AKS cluster issues: networking, DNS, kubelet
     and node health, upgrades, Windows containers, OSM, SNAT/UDP, Fleet Manager CRDs/logs,
     and security bulletins.'
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 573
+- **Updated Pages**: 4
+- **Unchanged**: 569
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -62,6 +62,17 @@ category_descriptions:
 | *(Unclassified)* | 123 | 21.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Enable or disable ACNS](https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services)
+  - Updated: 2026-01-06T06:03:00.000Z → 2026-03-02T23:10:00.000Z
+- [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer)
+  - Updated: 2026-01-07T23:08:00.000Z → 2026-03-02T18:10:00.000Z
+- [Set up Layer 7 policies](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies)
+  - Updated: 2025-04-30T22:02:00.000Z → 2026-03-02T23:10:00.000Z
+- [Enable a managed identity on your cluster](https://learn.microsoft.com/en-us/azure/aks/use-managed-identity)
+  - Updated: 2025-11-04T05:34:00.000Z → 2026-03-02T23:10:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +117,6 @@ category_descriptions:
 | [Deploy an AI model using the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator) | deployment | 0.80 | Shows how to enable and use the KAITO add-on with AKS-specific CRDs and configuration fields for model deployment, which is highly product-specific. |
 | [Deploy and configure workload identity for a cluster](https://learn.microsoft.com/en-us/azure/aks/workload-identity-deploy-cluster) | security | 0.80 | Step-by-step configuration of managed identity, service account, and federated identity credential for AKS workloads. |
 | [Enable AKS-managed Microsoft Entra integration](https://learn.microsoft.com/en-us/azure/aks/enable-authentication-microsoft-entra-id) | security | 0.80 | Step-by-step configuration of AKS-managed Entra integration with specific parameters, roles, and kubelogin usage unique to AKS. |
-| [Enable a managed identity on your cluster](https://learn.microsoft.com/en-us/azure/aks/use-managed-identity) | security | 0.80 | Step-by-step instructions to enable and use system/user-assigned and pre-created kubelet identities; likely includes specific role assignments and scope details. |
 | [Enable access to AKS clusters using Trusted Access](https://learn.microsoft.com/en-us/azure/aks/trusted-access-feature) | security | 0.80 | Describes Trusted Access feature; likely includes configuration of bindings between AKS and other Azure services, with specific roles and parameters. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/aks/faq) | limits-quotas | 0.80 | AKS FAQ typically includes concrete service limits (node counts, pod limits, version support windows) and other numeric constraints that qualify as limits and quotas. |
 | [Fine-tune an AI model for inferencing](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator-fine-tune) | deployment | 0.80 | Details KAITO version requirements, CRD fields, and workflow for fine-tuning and deploying models on AKS, which is unique operational knowledge. |
@@ -144,7 +154,7 @@ category_descriptions:
 | [Configure Container Network Logs](https://learn.microsoft.com/en-us/azure/aks/how-to-configure-container-network-logs) | configuration | 0.78 | Setup guide for ContainerNetworkLog CRD and monitoring; likely includes CRD schema fields, CLI parameters, and storage configuration unique to ACNS. |
 | [Configure a Standard Load Balancer](https://learn.microsoft.com/en-us/azure/aks/configure-load-balancer-standard) | configuration | 0.78 | Covers changing inbound pool type, scaling outbound IPs, and configuring allocated outbound ports; includes specific parameters and constraints. |
 | [Configure cross-tenant workload identity](https://learn.microsoft.com/en-us/azure/aks/workload-identity-cross-tenant) | security | 0.78 | Shows how to access resources in another tenant using AKS workload identity with specific cross-tenant configuration steps. |
-| [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer) | security | 0.78 | Contains AKS-specific OIDC issuer configuration steps and parameters for integrating with identity providers, including exact settings and values unique to AKS. |
+| [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer) | security | 0.78 | The article describes concrete, product-specific security configuration for enabling an OIDC issuer on AKS and creating an OIDC provider. It includes AKS- and Entra-specific settings, issuer URL formats, and stepwise configuration details that go beyond generic OIDC knowledge, fitting the security sub-skill focused on authentication and identity configuration. |
 | [Cryptography and key management](https://learn.microsoft.com/en-us/azure/aks/pci-cryptography-key-management) | security | 0.78 | Cryptography and key management guidance tailored to AKS and PCI DSS, including control placement and service usage patterns. |
 | [Custom node configuration](https://learn.microsoft.com/en-us/azure/aks/custom-node-configuration) | configuration | 0.78 | Covers specific AKS-supported OS and kubelet settings, including named parameters and how they can be set at cluster/node-pool scope. These are product-specific configuration options beyond generic Kubernetes knowledge. |
 | [Enhanced MFA implementation](https://learn.microsoft.com/en-us/azure/aks/pci-enhanced-mfa-implementation) | security | 0.78 | PCI-focused MFA implementation details for AKS admin and CDE access, with AKS/Azure-specific security configuration patterns. |
@@ -192,6 +202,7 @@ category_descriptions:
 | [Container image management best practices](https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-container-image-management) | best-practices | 0.75 | Operator best-practices for image management; likely includes AKS-specific scanning, registry, and pipeline recommendations beyond generic advice. |
 | [Deploy Strimzi and Kafka components](https://learn.microsoft.com/en-us/azure/aks/kafka-deploy) | configuration | 0.75 | Deployment of Strimzi operator and Kafka cluster; includes CRD specs, broker configuration, and AKS-specific YAML unique to this integration. |
 | [Deploy an AI model using the Azure portal](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator-azure-portal) | deployment | 0.75 | Portal-based workflow for KAITO on AKS with preview-specific constraints and configuration steps is specialized deployment knowledge. |
+| [Enable a managed identity on your cluster](https://learn.microsoft.com/en-us/azure/aks/use-managed-identity) | security | 0.75 | Step-by-step instructions for using system-assigned, user-assigned, and pre-created kubelet managed identities in AKS will include specific Azure role names, identity types, and IAM configuration steps unique to AKS (e.g., which identity is used where, how to bind it, required permissions). This is product-specific security and identity configuration rather than a generic overview. |
 | [Kubernetes version support](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-fleet-kubernetes-version-support) | limits-quotas | 0.75 | Version support policies typically include specific supported versions, windows, and feature availability constraints, which are numeric and time-bound limits. |
 | [Manage cluster certificates and rotation](https://learn.microsoft.com/en-us/azure/aks/certificate-rotation) | security | 0.75 | Explains certificate rotation behavior and how to configure it; includes AKS-specific commands, flags, and deprecation details for node pool tags. |
 | [Mesh configuration](https://learn.microsoft.com/en-us/azure/aks/istio-meshconfig) | configuration | 0.75 | Details which MeshConfig properties are supported/allowed/blocked for the AKS Istio add-on, a clear product-specific configuration matrix. |
@@ -206,7 +217,6 @@ category_descriptions:
 | [Rearchitect for AKS](https://learn.microsoft.com/en-us/azure/aks/eks-web-rearchitect) | architecture-patterns | 0.75 | Details architectural modifications to move an AWS EKS web app with AWS WAF to AKS with Azure WAF and Application Gateway for Containers; product-specific pattern guidance. |
 | [Roll back node pool versions](https://learn.microsoft.com/en-us/azure/aks/roll-back-node-pool-version) | decision-making | 0.75 | Describes when and how to use rollback, capabilities, limitations, and post-rollback best practices—guidance for choosing rollback vs. other options. |
 | [Set up FQDN filtering](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-fqdn-filtering-policies) | configuration | 0.75 | Step-by-step setup of FQDN filtering using Azure-managed Cilium policies; likely includes specific CRD fields, policy examples, and AKS-specific parameters. |
-| [Set up Layer 7 policies](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies) | configuration | 0.75 | How-to article for configuring L7 policies; likely includes concrete policy specs, fields, and AKS-specific configuration steps. |
 | [Support policies](https://learn.microsoft.com/en-us/azure/aks/support-policies) | limits-quotas | 0.75 | Support policies document concrete limitations (supported versions, node OS support windows, preview feature constraints) that function as service limits and constraints. |
 | [Telemetry API](https://learn.microsoft.com/en-us/azure/aks/istio-telemetry) | configuration | 0.75 | Describes how to use MeshConfig and Telemetry API v1 for the add-on, including supported options and scopes, which are detailed configuration parameters. |
 | [Upgrade options and recommendations](https://learn.microsoft.com/en-us/azure/aks/upgrade-options) | decision-making | 0.75 | Scenario-based recommendations and options for AKS upgrades constitute decision guidance with trade-offs for different upgrade strategies. |
@@ -306,7 +316,6 @@ category_descriptions:
 | [Detecting and managing workload drift](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-placement-drift) | best-practices | 0.70 | Describes applyStrategy property and how it affects drift handling; includes product-specific options and operational guidance. |
 | [Enable FIPS](https://learn.microsoft.com/en-us/azure/aks/enable-fips-nodes) | security | 0.70 | Shows how to enable FIPS 140-2 on AKS node pools with product-specific flags and constraints related to compliance. |
 | [Enable cost optimized autoscaling](https://learn.microsoft.com/en-us/azure/aks/optimized-addon-scaling) | configuration | 0.70 | Overview of cost-optimized add-on scaling; expected to describe specific configuration options and override parameters for add-on CPU/memory and autoscaling. |
-| [Enable or disable ACNS](https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services) | configuration | 0.70 | How-to for enabling/disabling Advanced Container Networking Services; likely includes specific feature flags, CLI parameters, and configuration options unique to AKS. |
 | [Enable or disable NAP](https://learn.microsoft.com/en-us/azure/aks/use-node-auto-provisioning) | configuration | 0.70 | How-to for enabling/disabling NAP via CLI/ARM; includes specific parameters, flags, and template fields unique to NAP configuration. |
 | [Expand pod CIDR space in Azure CNI Overlay clusters](https://learn.microsoft.com/en-us/azure/aks/azure-cni-overlay-pod-expand) | configuration | 0.70 | Uses az aks update with specific options to expand pod CIDR; this is detailed configuration and operational guidance unique to AKS. |
 | [External identity provider authentication overview](https://learn.microsoft.com/en-us/azure/aks/external-identity-provider-authentication-overview) | security | 0.70 | Explains AKS structured authentication with external identity providers, including configuration model and supported mechanisms beyond generic OIDC knowledge. |
@@ -367,6 +376,7 @@ category_descriptions:
 | [Schedule and deploy batch jobs with Kueue](https://learn.microsoft.com/en-us/azure/aks/deploy-batch-jobs-with-kueue) | configuration | 0.70 | Shows how to define ResourceFlavors, ClusterQueues, LocalQueues; includes concrete YAML and Kueue-specific configuration patterns on AKS. |
 | [Secure ingress gateways](https://learn.microsoft.com/en-us/azure/aks/istio-secure-gateway) | security | 0.70 | Shows how to expose secure HTTPS services with simple or mutual TLS, including certificate and gateway configuration specific to the Istio add-on. |
 | [Security Bulletins](https://learn.microsoft.com/en-us/azure/aks/security-bulletins/overview) | troubleshooting | 0.70 | Security bulletin hub with vulnerability details and troubleshooting guidance for AKS components, including issue-specific diagnosis and remediation steps. |
+| [Set up Layer 7 policies](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies) | configuration | 0.70 | How-to for setting up L7 policies with Azure managed Cilium on AKS will necessarily include product-specific policy objects, fields, and configuration parameters (e.g., CRD names, YAML spec fields, required annotations) that are unique to ACNS and AKS networking. This is concrete configuration guidance rather than just conceptual networking content. |
 | [Set up NVIDIA GPU Operator](https://learn.microsoft.com/en-us/azure/aks/nvidia-gpu-operator) | integrations | 0.70 | Covers using NVIDIA GPU Operator on AKS; expected to include Helm values, CRD parameters, and AKS-specific configuration/constraints for the operator. |
 | [Set up WireGuard encryption](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-wireguard) | configuration | 0.70 | How-to deployment/config article for WireGuard in ACNS; likely includes AKS-specific CLI flags, CRDs, and configuration parameters. |
 | [Set up eBPF Host routing](https://learn.microsoft.com/en-us/azure/aks/how-to-enable-ebpf-host-routing) | configuration | 0.70 | How-to enable feature article; likely includes AKS CLI flags, required versions, and configuration parameters specific to this preview feature. |
@@ -417,6 +427,7 @@ category_descriptions:
 | [Connect securely to cluster nodes](https://learn.microsoft.com/en-us/azure/aks/node-access) | security | 0.68 | Details AKS-specific node access methods, including authentication flows that depend on node OS and Kubernetes API access, which are product-specific security/access patterns. |
 | [Create MongoDB infrastructure](https://learn.microsoft.com/en-us/azure/aks/create-mongodb-infrastructure) | configuration | 0.68 | Infrastructure creation guide; likely includes specific Azure resource configurations (VM sizes, storage classes, networking) tailored for MongoDB on AKS. |
 | [Create proximity placement groups](https://learn.microsoft.com/en-us/azure/aks/reduce-latency-ppg) | architecture-patterns | 0.68 | Explains how PPGs affect only agent nodes (not control plane) and when to use them for low-latency workloads—AKS-specific placement and performance pattern. |
+| [Enable or disable ACNS](https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services) | configuration | 0.68 | The page is a how-to for enabling/disabling Advanced Container Networking Services (Container Network Observability and Container Network Security) on AKS clusters. It likely includes AKS- and CNI-specific configuration flags, feature names, and parameter values unique to this product rather than just conceptual networking guidance, fitting the configuration sub-skill. It does not focus on limits, troubleshooting, or architecture trade-offs. |
 | [Enforce best practices with deployment safeguards](https://learn.microsoft.com/en-us/azure/aks/deployment-safeguards) | best-practices | 0.68 | Describes AKS Deployment Safeguards with concrete, product-specific best-practice rules (e.g., required settings, validations enforced on deployments) that go beyond generic Kubernetes knowledge. |
 | [Node auto-drain](https://learn.microsoft.com/en-us/azure/aks/node-auto-drain) | best-practices | 0.68 | Documents AKS behavior on scheduled events (e.g., spot eviction), taints used, and how cordon/drain is triggered, which are specific operational patterns and gotchas for AKS. |
 | [Placing namespace-scoped resources](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/quickstart-namespace-scoped-resource-propagation) | configuration | 0.68 | Quickstart for ResourcePlacement includes concrete CRD field usage, YAML specs, and product-specific configuration patterns for propagating namespace-scoped resources across clusters, which are implementation details not inferable from general Kubernetes knowledge. |

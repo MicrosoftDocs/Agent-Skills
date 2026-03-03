@@ -3,7 +3,7 @@ name: azure-reliability
 description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Reliability applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -22,8 +22,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L31-L58 | Patterns and checklists for designing, configuring, and operating highly available, resilient, and disaster‑ready solutions across core Azure services and workloads |
-| Decision Making | L59-L65 | Guidance on picking Azure regions and services for high availability, including zone support, geographic considerations, and how nonregional (global) services affect reliability. |
+| Best Practices | L31-L59 | Patterns and guidance to design, configure, and harden high-availability, resilient, and disaster‑ready architectures for key Azure PaaS, data, and integration services |
+| Decision Making | L60-L65 | Guidance on picking Azure regions and services for high availability, including zone support, geographic considerations, and how nonregional (global) services affect reliability. |
 | Architecture & Design Patterns | L66-L71 | Designing Azure apps for availability zones, choosing zonal vs zone-redundant resources, and hardening deployments for zone failures and high availability. |
 | Limits & Quotas | L72-L76 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
 | Deployment | L77-L80 | Guidance for migrating Azure Functions hosting plans to zone-redundant configurations to improve availability and resilience. |
@@ -52,6 +52,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Design resilient workflows with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/reliability/reliability-logic-apps |
 | Increase reliability of Azure Managed Redis caches | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis |
 | Improve reliability of Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs |
+| Improve reliability for Azure Site Recovery deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery |
 | Implement resilient architectures in Azure SQL Database | https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database |
 | Increase reliability of Azure Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/reliability/reliability-stream-analytics |
 | Plan high availability in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/reliability/reliability-vmware-solution |
@@ -60,7 +61,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Identify Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
-| Choose Azure regions by geography and capabilities | https://learn.microsoft.com/en-us/azure/reliability/regions-list |
 | Select and understand Azure nonregional services | https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services |
 
 ### Architecture & Design Patterns

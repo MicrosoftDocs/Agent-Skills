@@ -37,8 +37,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 93
+- **Updated Pages**: 0
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
@@ -58,11 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 46 | 48.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Outbound only load balancer configuration](https://learn.microsoft.com/en-us/azure/load-balancer/egress-only)
-  - Updated: 2024-09-06T08:00:00.000Z → 2026-03-02T06:19:00.000Z
 
 ## Classified Pages
 

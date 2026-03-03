@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   security: Securing ACR with auth, RBAC/ABAC, network controls, encryption, image
     signing/verification, policies, Defender scans, and managed identity/Key Vault
     integration.
-  configuration: 'Configuring ACR behavior: caching, cleanup/retention, soft delete,
-    locks, webhooks, metrics/logs, and defining/scheduling multi-step Tasks (YAML,
-    timers, agent pools, patching).'
+  configuration: 'Configuring ACR behavior: caching, purge/retention/soft delete,
+    delete locks, webhooks, metrics/logs, and defining/scheduling multi-step ACR Tasks
+    with YAML and agent pools.'
   architecture-patterns: 'Patterns for ACR performance and governance: caching image
     pulls, geo-replication strategies, connected registries for edge/offline, and
     gated import workflows for public images.'
@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 121
+- **Updated Pages**: 1
+- **Unchanged**: 120
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -59,6 +59,11 @@ category_descriptions:
 | *(Unclassified)* | 32 | 26.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge)
+  - Updated: 2026-02-26T23:11:00.000Z → 2026-03-02T23:17:00.000Z
 
 ## Classified Pages
 
@@ -112,7 +117,7 @@ category_descriptions:
 | [Soft delete policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy) | configuration | 0.75 | Describes enabling soft delete, setting retention periods, and recovery behavior; includes specific policy settings and their effects, matching configuration. |
 | [Verify container images in GitHub workflow with Notation and Artifact Signing](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-github-verify-notation-artifact-signing) | integrations | 0.75 | Shows GitHub workflow to verify images with Notation and Artifact Signing; includes configuration parameters and integration details. |
 | [Audit compliance using Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-azure-policy) | security | 0.70 | Shows how to assign built-in Azure Policy definitions to ACR; includes specific policy names/effects and compliance behavior, which are product-specific security/governance configurations. |
-| [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge) | configuration | 0.70 | Documents acr purge command (preview) with filters based on age and tag patterns; product-specific command and parameters, aligning with configuration/operational tooling. |
+| [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge) | configuration | 0.70 | The page describes the acr purge command with product-specific flags, parameter names, and usage patterns (such as age filters, tag filters, and scheduling via ACR Tasks). These are concrete configuration options and command parameters unique to Azure Container Registry, not generic container knowledge. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/container-registry/policy-reference) | security | 0.70 | Index of ACR-specific Azure Policy built-ins with names and links to definitions; these are concrete security/governance configurations unique to the product. |
 | [Customer managed keys - Overview](https://learn.microsoft.com/en-us/azure/container-registry/tutorial-customer-managed-keys) | security | 0.70 | Tutorial on customer-managed keys for ACR Premium; likely includes Key Vault integration details and ACR-specific encryption settings. |
 | [Enable artifact cache - CLI](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli) | configuration | 0.70 | CLI-focused article for enabling artifact cache with/without auth; likely includes specific parameters and allowed values for configuration. |

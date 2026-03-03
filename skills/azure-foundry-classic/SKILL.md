@@ -3,7 +3,7 @@ name: azure-foundry-classic
 description: Expert knowledge for Azure Foundry Classic development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Foundry Classic applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Foundry Classic Skill
@@ -24,13 +24,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L35-L44 | Diagnosing and fixing Foundry issues: compute sessions, prompt flows, deployments, monitoring, private endpoints, Azure OpenAI fine-tuning, Marketplace access, and known bugs/workarounds. |
 | Best Practices | L45-L64 | Best practices for prompts, safety, tuning, performance, cost, HA/DR, and traffic management when using Azure OpenAI and Foundry (chat, vision, On Your Data, agents). |
-| Decision Making | L65-L93 | Guides for choosing models, regions, deployment types, costs, governance, migrations, and lifecycle/BCDR planning for Azure OpenAI and Microsoft Foundry solutions |
-| Architecture & Design Patterns | L94-L99 | RAG/indexing design patterns in Foundry and how to architect hub projects for high availability, failover, and disaster recovery. |
-| Limits & Quotas | L100-L115 | Quotas, rate limits, regional availability, and capacity management for Foundry and Azure OpenAI models, including deployments, batch jobs, priority processing, and requesting quota increases. |
-| Security | L116-L167 | Security, privacy, and governance for Foundry: auth/RBAC, networks, keys, policies, guardrails, content filters, and safe use of Azure OpenAI and other models. |
-| Configuration | L168-L216 | Configuring and operating Foundry and Azure OpenAI: agent infrastructure, storage, monitoring/logging, tools in prompt flow, evaluations, fine-tuning, and secure network/access setup. |
-| Integrations & Coding Patterns | L217-L331 | Integrating Foundry agents and models with external tools, data sources, SDKs, and Azure OpenAI (search, functions, MCP, Logic Apps, embeddings, routing, Realtime, Assistants, and evaluations). |
-| Deployment | L332-L349 | Deploying Foundry hubs, agents, and models (incl. fine-tuned/Azure OpenAI), using Bicep/Terraform/SDK/CLI, with CI/CD integration and recovery from outages or data loss |
+| Decision Making | L65-L92 | Guides for choosing models, regions, deployment types, costs, governance, migrations, and lifecycle/BCDR planning for Azure OpenAI and Microsoft Foundry solutions |
+| Architecture & Design Patterns | L93-L98 | RAG/indexing design patterns in Foundry and how to architect hub projects for high availability, failover, and disaster recovery. |
+| Limits & Quotas | L99-L114 | Quotas, rate limits, regional availability, and capacity management for Foundry and Azure OpenAI models, including deployments, batch jobs, priority processing, and requesting quota increases. |
+| Security | L115-L166 | Security, privacy, and governance for Foundry: auth/RBAC, networks, keys, policies, guardrails, content filters, and safe use of Azure OpenAI and other models. |
+| Configuration | L167-L215 | Configuring and operating Foundry and Azure OpenAI: agent infrastructure, storage, monitoring/logging, tools in prompt flow, evaluations, fine-tuning, and secure network/access setup. |
+| Integrations & Coding Patterns | L216-L330 | Integrating Foundry agents and models with external tools, data sources, SDKs, and Azure OpenAI (search, functions, MCP, Logic Apps, embeddings, routing, Realtime, Assistants, and evaluations). |
+| Deployment | L331-L348 | Deploying Foundry hubs, agents, and models (incl. fine-tuned/Azure OpenAI), using Bicep/Terraform/SDK/CLI, with CI/CD integration and recovery from outages or data loss |
 
 ### Troubleshooting
 | Topic | URL |
@@ -81,7 +81,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate from Hub-Based to New Foundry Projects | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/migrate-project |
 | Decide when and how to upgrade Azure OpenAI to Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/upgrade-azure-openai |
 | Choose content streaming and filtering modes for Azure OpenAI in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-streaming |
-| Plan around Azure OpenAI model deprecations and retirements | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements |
 | Adopt 2024 Updates for Provisioned Throughput in Foundry | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-migration |
 | Plan using your data with Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/use-your-data |
 | Plan BCDR strategy for Azure OpenAI deployments | https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/business-continuity-disaster-recovery |

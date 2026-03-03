@@ -3,7 +3,7 @@ name: azure-sap
 description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # SAP HANA on Azure Large Instances Skill
@@ -28,9 +28,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L68-L91 | Architecting resilient, high-availability SAP landscapes on Azure: DBMS/HANA designs, zones/regions/DR, latency and proximity, and RISE connectivity and workload zone patterns. |
 | Limits & Quotas | L92-L98 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
 | Security | L99-L112 | Identity, access, encryption, and network security for SAP on Azure: Key Vault secrets, RBAC, TLS, private endpoints, secure infra design, Entra ID access, and RISE security configuration. |
-| Configuration | L113-L182 | Configuring SAP on Azure: automation framework, storage/VM layouts, HA/DR clusters, monitoring providers, networking, backups, and ACSS/LaMa operational integrations. |
-| Integrations & Coding Patterns | L183-L196 | Patterns and setup for integrating SAP with Azure and third-party services (monitoring, automation, data flows, email, printing, security, and RISE workloads) |
-| Deployment | L197-L250 | Deploying and managing SAP on Azure: automation framework scripts, ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects, and NetWeaver/HANA VM setups. |
+| Configuration | L113-L183 | Configuring SAP HANA and SAP workloads on Azure: automation framework, storage/HA/cluster setups, monitoring providers, ACSS/LaMa integration, and VM/extension/network settings. |
+| Integrations & Coding Patterns | L184-L197 | Patterns and setup for integrating SAP with Azure and third-party services (monitoring, automation, data flows, email, printing, security, and RISE workloads) |
+| Deployment | L198-L250 | Deploying and managing SAP on Azure: automation framework scripts, ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects, and NetWeaver/HANA VM setups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -149,12 +149,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Premium SSD v2 for SAP HANA workloads | https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2 |
 | Configure Azure Ultra Disk for SAP HANA VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-ultra-disk |
 | Set up HA SAP NetWeaver on RHEL Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel |
-| Deploy GlusterFS on RHEL Azure VMs for HA SAP storage | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs |
+| Configure GlusterFS on Azure VMs for SAP HA | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs |
 | Set up IBM Db2 HADR on RHEL Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-ibm-db2-luw |
 | Configure multi-SID HA SAP NetWeaver on RHEL Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-multi-sid |
 | Configure HA SAP NetWeaver on RHEL with Azure NetApp Files | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-netapp-files |
 | Configure HA SAP NetWeaver on RHEL using NFS on Azure Files | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files |
 | Configure a Pacemaker cluster on RHEL in Azure | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker |
+| Configure SAP HANA ASCS/ERS high availability on RHEL VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance |
 | Configure outbound connectivity for SAP HA VMs with Standard Load Balancer | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections |
 | Set up HA SAP NetWeaver or ABAP on SLES Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse |
 | Configure multi-SID HA SAP NetWeaver on SLES Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid |
@@ -237,7 +238,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Add disaster recovery secondary sites to HANA Pacemaker cluster | https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-hana |
 | Prepare and deploy SAP HANA on Azure VMs | https://learn.microsoft.com/en-us/azure/sap/workloads/hana-get-started |
 | Deploy SAP dialog instances on RHEL HA ASCS/SCS cluster | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-dialog-instance |
-| Deploy SAP ASCS/SCS, ERS, and HANA HA on RHEL | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance |
 | Deploy HA SAP NetWeaver on Azure NetApp Files SMB | https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-netapp-files-smb |
 | Configure SAP ASCS/SCS multi-SID HA with WSFC Azure shared disk | https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-azure-shared-disk |
 | Configure SAP ASCS/SCS multi-SID HA with WSFC file share | https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-file-share |

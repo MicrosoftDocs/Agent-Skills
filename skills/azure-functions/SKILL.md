@@ -3,7 +3,7 @@ name: azure-functions
 description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -24,13 +24,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L35-L61 | Diagnosing and fixing Durable Functions and Azure Functions runtime issues, AZFD/AZFW error codes, storage/config problems, and Node.js/Python deployment or scheduling failures. |
 | Best Practices | L62-L91 | Best practices for designing, coding, testing, error handling, performance, scaling, reliability, and Durable Functions patterns across .NET, Python, Java, Node.js, and PowerShell. |
-| Decision Making | L92-L117 | Guidance on choosing Functions hosting/scaling plans, runtimes, and Durable options, plus migration paths (Lambda, Express, runtime upgrades, extensions) and cost/networking tradeoffs. |
+| Decision Making | L92-L117 | Guidance on choosing Functions hosting/scaling plans, networking and runtime options, cost estimation, and migration/upgrade paths (Durable, .NET, Service Bus, AWS Lambda, Express). |
 | Architecture & Design Patterns | L118-L127 | Patterns for durable orchestrations/entities, singleton and eternal workflows, and hosting Functions in Linux containers or Azure Container Apps, plus the Durable Task scheduler execution model. |
 | Limits & Quotas | L128-L139 | Performance, scaling, and billing limits for Azure Functions and Durable Functions, including concurrency, trigger-based scaling, storage performance, throughput benchmarks, and supported language versions. |
-| Security | L140-L157 | Securing Azure Functions apps: encryption at rest, private endpoints/VNet, managed identity and identity-based connections, access keys, Web PubSub and MCP security, and secret handling. |
-| Configuration | L158-L202 | Configuring how Functions apps run: app/host settings, bindings, triggers, plans, storage, networking, monitoring/telemetry, Durable Functions options, and local/dev tooling. |
-| Integrations & Coding Patterns | L203-L319 | Patterns and examples for wiring Functions to external systems—Durable workflows, HTTP, queues, databases, messaging, AI/OpenAI, Dapr, MCP, and configuring all related triggers/bindings. |
-| Deployment | L320-L366 | Deploying and updating Azure Functions apps: provisioning hosting, CI/CD pipelines, containers/Kubernetes, Durable Task orchestration, plan migrations, and zero‑downtime deployment strategies. |
+| Security | L140-L156 | Securing Azure Functions apps: encryption at rest, private endpoints/VNet, managed identity and identity-based connections, access keys, Web PubSub and MCP security, and secret handling. |
+| Configuration | L157-L201 | Configuring how Functions apps run: app/host settings, bindings, triggers, plans, storage, networking, monitoring/telemetry, Durable Functions options, and local/dev tooling. |
+| Integrations & Coding Patterns | L202-L318 | Patterns and examples for wiring Functions to external systems—Durable workflows, HTTP, queues, databases, messaging, AI/OpenAI, Dapr, MCP, and configuring all related triggers/bindings. |
+| Deployment | L319-L365 | Deploying and updating Azure Functions apps: provisioning hosting, CI/CD pipelines, containers/Kubernetes, Durable Task orchestration, plan migrations, and zero‑downtime deployment strategies. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -93,7 +93,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Use Azure Functions Consumption plan hosting | https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan |
-| Use dedicated App Service plans for Functions hosting | https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan |
+| Choose and use Azure Functions Dedicated hosting | https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan |
 | Compare in-process vs isolated .NET Azure Functions models | https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-in-process-differences |
 | Upgrade Durable Functions Node apps to programming model v4 | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-node-model-upgrade |
 | Migrate to standalone Durable Functions PowerShell SDK | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-powershell-v2-sdk-migration-guide |
@@ -148,7 +148,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Manage and use access keys for Azure Functions endpoints | https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to |
 | Secure Azure Web PubSub trigger endpoints in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-web-pubsub-trigger |
 | Restrict Azure Functions access using private site access | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-private-site-access |
-| Secure Azure Functions with private endpoints and VNet integration | https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet |
 | Connect Azure Functions to Azure SQL via managed identity | https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-access-azure-sql-with-managed-identity |
 | Configure identity-based connections for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial |
 | Use managed identity with Functions triggers and bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial-2 |

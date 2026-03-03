@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring and operating Foundry and Azure OpenAI: agent infrastructure,
     storage, monitoring/logging, tools in prompt flow, evaluations, fine-tuning, and
@@ -35,8 +35,15 @@ category_descriptions:
 - **Total Pages**: 374
 - **Fetched**: 374
 - **Fetch Failed**: 0
-- **Classified**: 280
-- **Unclassified**: 94
+- **Classified**: 279
+- **Unclassified**: 95
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 373
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-foundry-classic/azure-foundry-classic.csv`
 
 ## Classification Statistics
 
@@ -45,13 +52,20 @@ category_descriptions:
 | architecture-patterns | 2 | 0.5% |
 | best-practices | 16 | 4.3% |
 | configuration | 45 | 12.0% |
-| decision-making | 25 | 6.7% |
+| decision-making | 24 | 6.4% |
 | deployment | 15 | 4.0% |
 | integrations | 111 | 29.7% |
 | limits-quotas | 12 | 3.2% |
 | security | 48 | 12.8% |
 | troubleshooting | 6 | 1.6% |
-| *(Unclassified)* | 94 | 25.1% |
+| *(Unclassified)* | 95 | 25.4% |
+
+## Changes
+
+### Updated Pages
+
+- [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-02T18:11:00.000Z
 
 ## Classified Pages
 
@@ -299,7 +313,6 @@ category_descriptions:
 | [Microsoft Fabric (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/fabric) | integrations | 0.65 | Describes connecting a Fabric data agent to Foundry; likely includes configuration fields, connection parameters, and constraints specific to this integration. |
 | [Migrate from hub-based to Foundry project](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/migrate-project) | decision-making | 0.65 | Migration-focused article for moving from hub-based to new projects; likely includes concrete guidance on what migrates, prerequisites, and recommended paths, fitting decision-making/migration criteria. |
 | [Model lifecycle and retirement](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-lifecycle-retirement) | decision-making | 0.65 | Covers lifecycle stages, deprecation timelines, and migration steps, providing concrete guidance for when and how to move between models. |
-| [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements) | decision-making | 0.65 | Model retirement schedules and status (available/deprecated/retired) are time-specific and affect which models to choose; this is decision-making guidance with expert lifecycle details. |
 | [Monitor Azure OpenAI](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/monitor-openai) | configuration | 0.65 | Monitoring article for Azure OpenAI using Azure Monitor and Log Analytics; expected to list specific metrics, log categories, and configuration settings unique to this service. |
 | [Monitor model deployments](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/monitor-models) | configuration | 0.65 | Monitoring deployments with Log Analytics implies product-specific metric names, log categories, and configuration steps for Foundry Models. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/browser-automation) | security | 0.65 | Browser Automation has significant security implications; article likely includes specific security settings, constraints, and recommended configurations for safe use. |
@@ -410,6 +423,7 @@ category_descriptions:
 | [Hubs overview](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/ai-resources) | 0.30 | Described as an overview of hubs and hub-based projects; likely conceptual without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Limited access](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/limited-access) | 0.30 | Limited access policy is governance/compliance oriented; unlikely to contain technical configuration, quotas, or error-resolution details. |
 | [Manage costs](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/manage-costs) | 0.30 | Cost management overview; likely uses generic Azure Cost Management guidance without Foundry-specific configuration parameters or numeric thresholds. |
+| [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements) | 0.30 | The page is a high-level description of Azure OpenAI model deprecations and retirements. Based on the summary, it does not clearly expose specific numeric limits, configuration parameters, error codes, or decision matrices. It likely lists which models are available/deprecated/retired, but that is catalog/status information rather than a best-practice, configuration, limits, or troubleshooting guide as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/deep-research) | 0.30 | Deep research tool overview; summary suggests conceptual description of capability, not detailed configuration, limits, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/overview) | 0.30 | Responsible AI overview; conceptual practices and principles rather than concrete product configuration or limits. |
 | [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation) | 0.30 | Prompt transformation concepts for DALL-E 3; appears conceptual (how and why) without clear evidence of configuration tables or numeric thresholds. |

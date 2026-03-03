@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring AVNM: IPAM pools, network groups (static/dynamic via
     Policy), cross-tenant connections, event logs, and managing UDRs/topologies and
@@ -27,8 +27,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 52
+- **Updated Pages**: 1
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -44,6 +44,11 @@ category_descriptions:
 | *(Unclassified)* | 30 | 57.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq)
+  - Updated: 2025-07-11T08:00:00.000Z → 2026-03-02T18:31:00.000Z
 
 ## Classified Pages
 
@@ -88,7 +93,6 @@ category_descriptions:
 | [Event Log Options for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-event-logs) | 0.45 | Conceptual overview of event log options; summary does not indicate detailed configuration parameters, role mappings, or error-code-based troubleshooting. |
 | [User-defined routes (UDRs) management overview](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-user-defined-route) | 0.45 | Overview of UDR management and scenarios; conceptual explanation of behavior and benefits, not a detailed configuration or limits reference. |
 | [Cross-tenant connection support](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-cross-tenant) | 0.40 | Conceptual overview of cross-tenant support; describes scenarios and benefits without detailed config tables or numeric thresholds. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq) | 0.40 | FAQ page; summary doesn’t indicate presence of specific error codes, numeric limits, or config tables—likely mixed conceptual Q&A rather than deep expert data. |
 | [Manage IP address pool association recommendations](https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-ip-address-management-association-recommendations) | 0.40 | Covers recommendation feature usage for associating VNets to IPAM pools; summary indicates conceptual and UI-driven guidance, not detailed config tables, limits, or error-code troubleshooting. |
 | [Monitoring security admin rules with Virtual Network Flow Logs](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-virtual-network-flow-logs) | 0.40 | Conceptual article on using flow logs to monitor security admin rules; summary suggests high-level monitoring explanation without detailed config tables or error-code mappings. |
 | [Resource Manager Templates](https://learn.microsoft.com/en-us/azure/virtual-network-manager/resource-manager-template-samples) | 0.40 | Index of ARM template samples; links out to examples but itself is a navigation/collection page, not containing the detailed parameters or limits. |
@@ -105,4 +109,5 @@ category_descriptions:
 | [Deploy cross-tenant IP address pools](https://learn.microsoft.com/en-us/azure/virtual-network-manager/deploy-cross-tenant-ip-address-management) | 0.30 | Cross-tenant IPAM deployment guide; appears to be procedural without explicit limits, RBAC role tables, or diagnostic error mappings required for expert-knowledge classification. |
 | [Prevent overlapping IP address spaces with Azure Policy and IPAM](https://learn.microsoft.com/en-us/azure/virtual-network-manager/prevent-overlapping-ip-address-space-policy-ipam) | 0.30 | How-to/policy usage article for preventing overlapping IP spaces; summary shows no numeric limits, config tables, or error-code mappings. Likely procedural guidance without product-specific limits, configs, or troubleshooting matrices. |
 | [Common use cases for Azure Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-use-cases) | 0.20 | Use-case discussion for AVNM; scenario-focused, not detailed with numeric thresholds, configs, or troubleshooting mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq) | 0.20 | FAQ page appears to be general Q&A about Azure Virtual Network Manager without detailed limits tables, configuration parameter matrices, or structured troubleshooting content with specific error codes. Likely focuses on conceptual clarifications and common questions rather than expert-only numeric limits, configuration references, or decision matrices. |
 | [What is Azure Virtual Network Manager?](https://learn.microsoft.com/en-us/azure/virtual-network-manager/overview) | 0.20 | High-level overview of Azure Virtual Network Manager; conceptual description of capabilities without concrete limits, configs, or error details. |

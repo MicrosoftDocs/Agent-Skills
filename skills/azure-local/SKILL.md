@@ -3,7 +3,7 @@ name: azure-local
 description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Local applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Local Skill
@@ -22,21 +22,21 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L61 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG connectivity, SLB and VM problems, registration/upgrade/update failures, log collection, and known issues/workarounds. |
+| Troubleshooting | L35-L61 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures, and known issues/workarounds. |
 | Best Practices | L62-L69 | Best practices for Azure Local operations: configuring metric alerts, using supported Arc VM operations, designing SDN-aware network patterns, and managing updates safely and efficiently. |
 | Decision Making | L70-L83 | Guidance on choosing Azure Local deployment, VM types, migration paths, networking/SDN, updates, and cost/billing options, including Hybrid Benefit and disconnected capacity pricing. |
 | Architecture & Design Patterns | L84-L109 | Network and resiliency design for Azure Local: SDN topologies, rack/room connectivity, deployment patterns, VM/workload DR, monitoring, and disconnected/cloud network architectures. |
-| Limits & Quotas | L110-L124 | Hardware, network, IP addressing, and scale limits for Azure Local deployments, including host/physical requirements, low-capacity hardware, SLB HA ports, and Hyper-V/VMware migration prerequisites. |
-| Security | L125-L167 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
-| Configuration | L168-L257 | Configuring Azure Local compute, networking, storage, monitoring, images, GPUs, migrations, and multi-rack setups, including Arc/CLI/PowerShell, policies, backups, and diagnostics. |
-| Integrations & Coding Patterns | L258-L269 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
-| Deployment | L270-L310 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
+| Limits & Quotas | L110-L125 | Hardware, network, IP, and scale requirements/limits for Azure Local deployments, including host/physical networking, node patterns, migrations, and Arc-enabled VM prerequisites. |
+| Security | L126-L168 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
+| Configuration | L169-L258 | Configuring Azure Local clusters, VMs, networking, storage, GPUs, monitoring, migrations, and multi-rack setups, including disconnected, Arc-enabled, and health/telemetry scenarios. |
+| Integrations & Coding Patterns | L259-L270 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
+| Deployment | L271-L309 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Validate Azure Local rack aware cluster readiness using LLDP | https://learn.microsoft.com/en-us/azure/azure-local/deploy/rack-aware-cluster-readiness-check?view=azloc-2602 |
-| Resolve known Azure Local issues and workarounds | https://learn.microsoft.com/en-us/azure/azure-local/known-issues?view=azloc-2602 |
+| Diagnose and work around Azure Local known issues | https://learn.microsoft.com/en-us/azure/azure-local/known-issues?view=azloc-2602 |
 | Collect diagnostic logs for Azure Local Arc VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/collect-log-files-arc-enabled-vms?view=azloc-2602 |
 | Use appliance fallback logging for disconnected Azure Local VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-fallback?view=azloc-2602 |
 | Resolve known issues in Azure Local disconnected operations | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-known-issues?view=azloc-2602 |
@@ -114,6 +114,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Meet Azure Local physical network requirements | https://learn.microsoft.com/en-us/azure/azure-local/concepts/physical-network-requirements?view=azloc-2602 |
 | Apply system requirements for Azure Local 23H2 | https://learn.microsoft.com/en-us/azure/azure-local/concepts/system-requirements-23h2?view=azloc-2602 |
 | Use low-capacity hardware for Azure Local preview | https://learn.microsoft.com/en-us/azure/azure-local/concepts/system-requirements-small-23h2?view=azloc-2602 |
+| Check Azure Local Arc-enabled VM prerequisites and limits | https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-prerequisites?view=azloc-2602 |
 | Configure SLB high availability ports and understand limitations | https://learn.microsoft.com/en-us/azure/azure-local/manage/configure-software-load-balancer?view=azloc-2602 |
 | Review Hyper-V to Azure Local migration system requirements | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-requirements?view=azloc-2602 |
 | Review VMware to Azure Local migration system requirements | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-requirements?view=azloc-2602 |
@@ -173,9 +174,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure telemetry and diagnostics extension for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/concepts/telemetry-and-diagnostics-overview?view=azloc-2602 |
 | Configure Azure Arc gateway and proxy for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-with-azure-arc-gateway?view=azloc-2602 |
 | Register Azure Local with Azure Arc without gateway | https://learn.microsoft.com/en-us/azure/azure-local/deploy/deployment-without-azure-arc-gateway?view=azloc-2602 |
-| Enable SDN integration on Azure Local via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-sdn-integration?view=azloc-2602 |
+| Configure SDN integration on Azure Local with PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-sdn-integration?view=azloc-2602 |
 | Attach and configure GPUs for Linux VMs on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/attach-gpu-to-linux-vm?view=azloc-2602 |
-| Prerequisites and requirements for Azure Local Arc VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-prerequisites?view=azloc-2602 |
 | Collect and upload Azure Local diagnostic logs | https://learn.microsoft.com/en-us/azure/azure-local/manage/collect-logs?view=azloc-2602 |
 | Configure proxy settings for Azure Local 23H2 and Arc registration | https://learn.microsoft.com/en-us/azure/azure-local/manage/configure-proxy-settings-23h2?view=azloc-2602 |
 | Connect to Azure Local VMs using SSH and RDP over SSH | https://learn.microsoft.com/en-us/azure/azure-local/manage/connect-arc-vm-using-ssh?view=azloc-2602 |
@@ -253,6 +253,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Review components of Azure Local single-server pattern | https://learn.microsoft.com/en-us/azure/azure-local/plan/single-server-components?view=azloc-2602 |
 | Review components of Azure Local three-node patterns | https://learn.microsoft.com/en-us/azure/azure-local/plan/three-node-components?view=azloc-2602 |
 | Review components of Azure Local two-node patterns | https://learn.microsoft.com/en-us/azure/azure-local/plan/two-node-components?view=azloc-2602 |
+| Import Azure Local update packages in limited connectivity | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2602 |
 | Configure Network ATC on existing Azure Local clusters | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-enable-network-atc?view=azloc-2602 |
 
 ### Integrations & Coding Patterns
@@ -300,9 +301,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Upgrade Azure Local SDN infrastructure managed by on-prem tools | https://learn.microsoft.com/en-us/azure/azure-local/manage/upgrade-sdn?view=azloc-2602 |
 | Deploy and hotpatch Windows Server Azure Edition on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/windows-server-azure-edition-23h2?view=azloc-2602 |
 | Execute Hyper-V VM migration to Azure Local with Azure Migrate | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-azure-migrate?view=azloc-2602 |
-| Plan supported Azure Local update and release paths | https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2602 |
 | Use Azure Update Manager to update Azure Local clusters | https://learn.microsoft.com/en-us/azure/azure-local/update/azure-update-manager-23h2?view=azloc-2602 |
-| Import and discover Azure Local update packages in limited-connectivity environments | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2602 |
 | Deploy Azure Local solution upgrade using ARM templates | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade-azure-resource-manager-template?view=azloc-2602 |
 | Install Azure Local solution upgrade after OS update | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade?view=azloc-2602 |
 | Perform post-upgrade tasks for Azure Local via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/post-upgrade-steps?view=azloc-2602 |

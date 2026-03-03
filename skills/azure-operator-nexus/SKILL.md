@@ -3,7 +3,7 @@ name: azure-operator-nexus
 description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -27,7 +27,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L87-L94 | Guidance on planning Nexus cluster placement, picking compatible storage versions, and choosing the right Kubernetes and Nexus hardware/SKU options for your deployment. |
 | Architecture & Design Patterns | L95-L99 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
 | Limits & Quotas | L100-L112 | Limits, supported versions, storage planning, node restarts/timeouts, isolation domain requirements, upgrade cadence, and log behavior/quotas for Azure Operator Nexus. |
-| Security | L113-L152 | Securing Azure Operator Nexus: identity/RBAC, ACLs, SSH and break-glass access, key/cert/secret rotation, private endpoints, Defender/MDE, policy, and secure VM/cluster connectivity. |
+| Security | L113-L152 | Securing Nexus fabric, clusters, and VMs: RBAC, ACLs, SSH and break-glass access, key/cert/secret rotation, Defender/MDE, private endpoints, policies, and managed identities. |
 | Configuration | L153-L214 | Configuring and operating Azure Operator Nexus clusters and fabric: network/fabric policies, isolation domains, BGP/VRF, QoS, ACLs, commit workflows, Kubernetes/node settings, monitoring, and maintenance. |
 | Deployment | L215-L223 | Guides for deploying and upgrading Nexus instances and Kubernetes clusters, building VM images, and replacing or updating fabric network devices and terminal servers. |
 
@@ -135,7 +135,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Monitor and rotate NAKS cluster certificates | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-rotate-naks-certificates |
 | Set up Method D v2.0 secure break-glass access in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access |
 | Configure in-band break-glass management for Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access-using-in-band-management |
-| Enable Defender for Cloud for Operator Nexus workloads | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security |
+| Configure Defender for Cloud for Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security |
 | Update ACLs for NNIs and external networks in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-access-control-list-for-network-to-network-interconnects |
 | Update ExpressRoute authorization keys in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-expressroute-authorization-key |
 | Apply Azure Policy to secure Nexus resources | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-azure-policy |

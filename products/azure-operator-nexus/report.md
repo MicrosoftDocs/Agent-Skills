@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and fabric:
     network/fabric policies, isolation domains, BGP/VRF, QoS, ACLs, commit workflows,
     Kubernetes/node settings, monitoring, and maintenance.'
-  security: 'Securing Azure Operator Nexus: identity/RBAC, ACLs, SSH and break-glass
-    access, key/cert/secret rotation, private endpoints, Defender/MDE, policy, and
-    secure VM/cluster connectivity.'
+  security: 'Securing Nexus fabric, clusters, and VMs: RBAC, ACLs, SSH and break-glass
+    access, key/cert/secret rotation, Defender/MDE, private endpoints, policies, and
+    managed identities.'
   troubleshooting: 'Diagnosing and fixing Nexus infrastructure issues: bare metal,
     storage, networking, Kubernetes/AKS hybrid, cluster health, connectivity, and
     hardware validation using CLI tools and logs.'
@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 216
+- **Updated Pages**: 1
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -58,6 +58,11 @@ category_descriptions:
 | *(Unclassified)* | 57 | 26.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security)
+  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-02T23:03:00.000Z
 
 ## Classified Pages
 
@@ -128,7 +133,6 @@ category_descriptions:
 | [Password Rotation v1](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-password-rotation-v1) | security | 0.80 | Describes API-driven password rotation with specific release/API versions and Azure CLI-based flow; product-specific security operation details. |
 | [Platform Cluster runtime versioning](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-platform-runtime-upgrades) | limits-quotas | 0.80 | Specifies release cadence (three minor per year, monthly patches) and n-2 support policy, which are concrete version/time support limits. |
 | [Route Policy configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-route-policy-configuration) | configuration | 0.80 | Defines route policy structure (sequence numbers, conditions, actions) and how they map to ARM resources. This is detailed configuration schema and behavior specific to Operator Nexus routing. |
-| [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security) | security | 0.80 | Provides concrete steps and plan settings to secure Nexus bare metal and workloads with Defender for Cloud. |
 | [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-supported-versions) | limits-quotas | 0.80 | Provides exact supported Kubernetes versions, versioning schema, and support lifecycle (including end-of-support), which are time/version limits. |
 | [Supported VM sizes](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-nexus-kubernetes-cluster-sku) | decision-making | 0.80 | Lists supported VM SKUs for Nexus Kubernetes clusters; likely includes comparison by size/capabilities to guide node pool selection decisions. |
 | [Troubleshoot Multiple Storage appliances](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-multiple-storage-appliances) | troubleshooting | 0.80 | Documents recurring multi-appliance issues and their resolutions specific to Azure Operator Nexus storage architecture. |
@@ -155,6 +159,7 @@ category_descriptions:
 | [Use Azure Policy with Operator Nexus resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-azure-policy) | security | 0.75 | Shows specific built-in policies, assignment scopes, and custom policy patterns tailored to Operator Nexus resources. |
 | [How to use Commit Workflow v2 in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-commit-workflow-v2) | configuration | 0.74 | Describes staging, reviewing, committing, and discarding changes across resources using Commit V2; includes product-specific workflow operations and states. |
 | [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker) | configuration | 0.72 | How-to for creating and viewing TAPRule objects with specific API resources and fields; contains product-specific configuration patterns beyond generic networking concepts. |
+| [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security) | security | 0.72 | How-to guide for enabling and configuring Microsoft Defender for Cloud specifically on Azure Operator Nexus subscriptions. Likely includes product-specific security configuration steps, plan/feature enablement details, and required settings unique to Operator Nexus and its bare metal compute servers, which qualify as expert security configuration knowledge rather than generic concepts. |
 | [Access Control List configuration examples](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-acl-examples) | security | 0.70 | Provides concrete ACL examples with specific match criteria and actions, representing product-specific security configuration patterns and edge cases. |
 | [Access Control Lists](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-access-control-lists) | configuration | 0.70 | Describes API-based ACL configuration for NNIs and ISD external networks with rule/action semantics; product-specific configuration model. |
 | [Apply ACLs to Network-to-Network Interconnects (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-apply-access-control-list-to-network-to-network-interconnects) | security | 0.70 | Step-by-step application of ACLs to NNIs with Nexus-specific resources and operations; focused on enforcing network security policies with concrete configuration steps. |

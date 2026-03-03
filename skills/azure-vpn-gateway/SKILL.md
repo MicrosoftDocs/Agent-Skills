@@ -3,7 +3,7 @@ name: azure-vpn-gateway
 description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure VPN Gateway applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VPN Gateway Skill
@@ -30,7 +30,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Security | L81-L104 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
 | Configuration | L105-L161 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
 | Integrations & Coding Patterns | L162-L169 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
-| Deployment | L170-L182 | Deploying and configuring Azure VPN Gateways: creation via PowerShell/CLI, SKU and IP migrations/upgrades, active-active changes, S2S VPN setup, and client profile deployment via Intune. |
+| Deployment | L170-L182 | Deploying and configuring VPN Gateways: creating gateways and S2S tunnels via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs, and deploying VPN client profiles. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -170,7 +170,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Migrate VPN Gateway Basic public IP to Standard | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto |
+| Migrate VPN Gateway public IP from Basic to Standard | https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto |
 | Create a Basic SKU VPN Gateway via PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-basic-sku-powershell |
 | Deploy a VPN Gateway using PowerShell | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-gateway-powershell |
 | Deploy a VPN Gateway using Azure CLI | https://learn.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-cli |

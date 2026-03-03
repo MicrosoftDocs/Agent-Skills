@@ -22,31 +22,21 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L50 | Diagnosing and fixing Application Gateway runtime issues: backend health, 502s, certificates/Key Vault, listeners, session affinity, mTLS, redirects, AKS/ALB/containers, and HTTP response codes. |
-| Best Practices | L51-L55 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
-| Decision Making | L56-L67 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic VMs→ARM) and choosing container networking for App Gateway for Containers |
-| Architecture & Design Patterns | L68-L72 | Guidance on designing autoscaling and zone-redundant architectures for Application Gateway for Containers, including capacity planning and high availability patterns. |
-| Limits & Quotas | L73-L79 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
-| Security | L80-L123 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
-| Configuration | L124-L189 | Configuring and monitoring Azure Application Gateway (classic, v1/v2, and Containers): listeners, routing, probes, health, headers/URL rewrites, redirects, session affinity, networking, and diagnostics/logs. |
-| Integrations & Coding Patterns | L190-L197 | Integrating App Gateway for Containers with Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods and build observability/security pipelines. |
-| Deployment | L198-L213 | Deploying and configuring Application Gateway (v2, Basic, IPv6, mTLS), and setting up, upgrading, or migrating the Application Gateway Ingress Controller and AKS add-on |
+| Troubleshooting | L35-L40 | Diagnosing and fixing Application Gateway runtime issues: backend health, 502s, certificates/Key Vault, listeners, session affinity, mTLS, redirects, AKS/ALB/containers, and HTTP response codes. |
+| Best Practices | L41-L45 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
+| Decision Making | L46-L57 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic VMs→ARM) and choosing container networking for App Gateway for Containers |
+| Architecture & Design Patterns | L58-L62 | Guidance on designing autoscaling and zone-redundant architectures for Application Gateway for Containers, including capacity planning and high availability patterns. |
+| Limits & Quotas | L63-L69 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
+| Security | L70-L113 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
+| Configuration | L114-L178 | Configuring and monitoring Azure Application Gateway (classic, v1/v2, and Containers): listeners, routing, probes, health, headers/URL rewrites, redirects, session affinity, networking, and diagnostics/logs. |
+| Integrations & Coding Patterns | L179-L186 | Integrating App Gateway for Containers with Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods and build observability/security pipelines. |
+| Deployment | L187-L202 | Deploying and configuring Application Gateway (v2, Basic, IPv6, mTLS), and setting up, upgrading, or migrating the Application Gateway Ingress Controller and AKS add-on |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot backend health issues in Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health-troubleshooting |
-| Resolve Azure Key Vault certificate errors in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-key-vault-common-errors |
-| Diagnose and fix 502 Bad Gateway on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-troubleshooting-502 |
-| Fix ILB ASE certificate allowlist issues on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/create-gateway-internal-load-balancer-app-service-environment |
-| Understand and fix disabled listeners in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/disabled-listeners |
 | Use ALB Controller backend health and metrics for troubleshooting | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/alb-controller-backend-health-metrics |
 | Troubleshoot common issues in Application Gateway for Containers | https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/troubleshooting-guide |
-| Troubleshoot session affinity problems in Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/how-to-troubleshoot-application-gateway-session-affinity-issues |
-| Interpret Application Gateway HTTP response codes and fixes | https://learn.microsoft.com/en-us/azure/application-gateway/http-response-codes |
-| Troubleshoot Application Gateway Ingress Controller on AKS | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-troubleshoot |
-| Troubleshoot mutual TLS authentication on Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-troubleshooting |
-| Resolve redirection to App Service URL via Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/troubleshoot-app-service-redirection-app-service-url |
 
 ### Best Practices
 | Topic | URL |
@@ -172,7 +162,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Expose WebSocket servers through Application Gateway with AGIC | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-expose-websocket-server |
 | Enable multi-namespace support in Application Gateway Ingress Controller | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-multiple-namespace-support |
 | Use private IPs for internal ingress routing with AGIC | https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-private-ip |
-| Analyze Application Gateway WAF logs with Log Analytics | https://learn.microsoft.com/en-us/azure/application-gateway/log-analytics |
 | Monitor Azure Application Gateway with Azure Monitor | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway |
 | Reference for monitoring data from Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference |
 | Configure multi-site hosting on Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview |

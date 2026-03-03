@@ -3,7 +3,7 @@ name: azure-ai-vision
 description: Expert knowledge for Azure AI Vision development including decision making, limits & quotas, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Vision applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Vision Skill
@@ -23,10 +23,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Decision Making | L31-L37 | Guides for planning and executing migrations and upgrades between Azure Vision Image Analysis and Read OCR versions/containers, including breaking changes and app update steps. |
-| Limits & Quotas | L38-L49 | Limits, thresholds, and taxonomies for Image Analysis (categories, adult content, objects, people), smart-crop behavior, and supported OCR languages in Azure AI Vision. |
-| Configuration | L50-L55 | Configuring Vision services: setting up Read OCR containers and integrating Azure Blob Storage as a source for Vision image search. |
-| Integrations & Coding Patterns | L56-L68 | How to call and configure Azure Vision/Read APIs and SDKs for OCR, embeddings, thumbnails, background removal, domain models, and live video frame analysis. |
-| Deployment | L69-L72 | Installing, configuring, and running the Azure AI Vision Read OCR container locally or on-premises, including prerequisites, deployment steps, and runtime settings. |
+| Limits & Quotas | L38-L49 | Limits, thresholds, and taxonomies for Image Analysis: category lists, adult content scores, object/people detection constraints, smart-crop behavior, and OCR language support. |
+| Configuration | L50-L55 | Configuring Vision Read OCR containers and setting up Azure Blob Storage access for image retrieval, including environment settings, networking, and storage connection details. |
+| Integrations & Coding Patterns | L56-L66 | How to call and configure Azure Vision/Read APIs and SDKs for OCR, embeddings, thumbnails, background removal, domain models, and live video frame analysis. |
+| Deployment | L67-L70 | Installing, configuring, and running the Azure AI Vision Read OCR container locally or on-premises, including prerequisites, deployment steps, and runtime settings. |
 
 ### Decision Making
 | Topic | URL |
@@ -51,18 +51,16 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Configure Azure Vision Read OCR containers | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/computer-vision-resource-container-config |
-| Configure Azure Blob Storage for Vision image search | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/blob-storage-search |
+| Configure Azure Blob Storage for Vision image retrieval | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/blob-storage-search |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
 | Call domain-specific models with Azure Vision | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-detecting-domain-content |
 | Analyze live video frames with Azure Vision API | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/analyze-video |
-| Remove image backgrounds with Segment API | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/background-removal |
 | Call and configure Image Analysis 3.2 API | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-analyze-image |
 | Call and configure Image Analysis 4.0 API | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-analyze-image-40 |
 | Call and configure Azure Vision Read v3.2 API | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/call-read-api |
-| Generate smart-cropped thumbnails with Image Analysis 3.2 | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/generate-thumbnail |
 | Use multimodal embeddings for image retrieval | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/image-retrieval |
 | Use OCR client libraries for text extraction | https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/quickstarts-sdk/client-library |
 

@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 103
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -61,11 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 22 | 21.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios)
-  - Updated: 2023-02-13T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

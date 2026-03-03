@@ -3,7 +3,7 @@ name: azure-managed-lustre
 description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Managed Lustre applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -22,7 +22,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Managed Lustre deployment failures and performance issues, including cluster setup errors, throughput/IOPS bottlenecks, and tuning configuration for better speed. |
+| Troubleshooting | L33-L38 | Diagnosing and resolving Azure Managed Lustre deployment failures and performance issues, including cluster provisioning errors, throughput/latency problems, and tuning guidance. |
 | Best Practices | L39-L44 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
 | Architecture & Design Patterns | L45-L49 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
 | Limits & Quotas | L50-L54 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
@@ -34,7 +34,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure Managed Lustre cluster deployment issues | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-deployment |
-| Troubleshoot Azure Managed Lustre cluster performance problems | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance |
+| Diagnose and fix Azure Managed Lustre performance issues | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance |
 
 ### Best Practices
 | Topic | URL |

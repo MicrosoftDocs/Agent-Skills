@@ -3,7 +3,7 @@ name: azure-app-service
 description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Service applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Service Skill
@@ -30,7 +30,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Security | L86-L132 | Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs, IP/VNet/firewall, managed identities/Graph/SQL/Storage access, and policy/compliance protections. |
 | Configuration | L133-L189 | Configuring App Service apps: app settings, auth, networking/VNet, storage, containers, languages, domains/certs, monitoring, backups, and environment-specific options. |
 | Integrations & Coding Patterns | L190-L201 | Patterns for calling other services from App Service: using TLS/SSL certs, managed identity, Key Vault, Azure DBs, internal ASE + App Gateway, and WebJobs event-driven bindings. |
-| Deployment | L202-L232 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines), containers, ZIP/FTP/local Git, deployment slots, scaling/ASE/Arc, DNS migration, and IaC with ARM/Bicep/Terraform. |
+| Deployment | L202-L230 | Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure Pipelines), containers, ZIP/FTP/local Git, deployment slots, scaling/ASE/Arc, DNS migration, and IaC with ARM/Bicep/Terraform. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -208,7 +208,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Set up Azure Pipelines CI/CD for App Service | https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines |
 | Set up CI/CD to App Service custom containers | https://learn.microsoft.com/en-us/azure/app-service/deploy-ci-cd-custom-container |
 | Manage deployment credentials for Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/deploy-configure-credentials |
-| Deploy Windows container apps to App Service with Azure Pipelines | https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines |
 | Deploy App Service custom containers using GitHub Actions | https://learn.microsoft.com/en-us/azure/app-service/deploy-container-github-action |
 | Configure continuous deployment to Azure App Service | https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment |
 | Deploy to Azure App Service using FTP/FTPS | https://learn.microsoft.com/en-us/azure/app-service/deploy-ftp |
@@ -225,7 +224,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure per-app scaling for high-density App Service hosting | https://learn.microsoft.com/en-us/azure/app-service/manage-scale-per-app |
 | Scale up Azure App Service plans and capacities | https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up |
 | Deploy a web app to Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc |
-| Deploy Azure App Service with Bicep templates | https://learn.microsoft.com/en-us/azure/app-service/samples-bicep |
 | Automate App Service deployment with Azure CLI scripts | https://learn.microsoft.com/en-us/azure/app-service/samples-cli |
 | Automate App Service deployment using PowerShell | https://learn.microsoft.com/en-us/azure/app-service/samples-powershell |
 | Deploy Azure App Service with ARM template samples | https://learn.microsoft.com/en-us/azure/app-service/samples-resource-manager-templates |

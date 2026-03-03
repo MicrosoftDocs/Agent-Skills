@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   architecture-patterns: 'Design patterns for VM-based architectures: multi-region
     and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement,
@@ -10,9 +10,9 @@ category_descriptions:
   security: 'Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted
     Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and
     secure image/gallery sharing.'
-  limits-quotas: VM size specs, disk and storage performance limits, quotas, lifecycle/support
-    timelines, and scalability constraints for Azure VMs, disks, GPU/HPC, Dedicated
-    Hosts, and images.
+  limits-quotas: VM size specs, disk and storage performance limits, quotas, lifecycle/support,
+    and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU
+    families.
   troubleshooting: 'Diagnosing and fixing Azure VM issues: hibernation, disk encryption,
     extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages,
     Trusted Launch, and gallery images.'
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 799
+- **Updated Pages**: 1
+- **Unchanged**: 798
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -52,16 +52,21 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 15 | 1.9% |
 | best-practices | 23 | 2.9% |
-| configuration | 128 | 16.0% |
+| configuration | 127 | 15.9% |
 | decision-making | 59 | 7.4% |
 | deployment | 24 | 3.0% |
 | integrations | 44 | 5.5% |
-| limits-quotas | 201 | 25.2% |
+| limits-quotas | 202 | 25.3% |
 | security | 73 | 9.1% |
 | troubleshooting | 21 | 2.6% |
 | *(Unclassified)* | 211 | 26.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2)
+  - Updated: 2025-08-20T17:03:00.000Z → 2026-03-02T23:04:00.000Z
 
 ## Classified Pages
 
@@ -432,7 +437,6 @@ category_descriptions:
 | [Cross-region copy](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-copy) | configuration | 0.70 | Explains requirements like precreating target restore point collections and how cross-region copy behaves; product-specific configuration behavior. |
 | [Debian](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd) | configuration | 0.70 | Debian-specific preparation steps and configuration for Azure compatibility; includes commands and settings unique to this scenario. |
 | [Dedicated Host SKU Migration](https://learn.microsoft.com/en-us/azure/virtual-machines/migration/dedicated-host-migration-guide) | decision-making | 0.70 | Migration guide for retiring Dedicated Host SKUs; likely includes tables mapping old SKUs to recommended new SKUs and guidance for planning and executing migration, which is product-specific decision-making content. |
-| [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2) | configuration | 0.70 | Covers deployment and regional availability; Premium SSD v2 has specific configuration options (size, IOPS, throughput, sector size) that are product-specific. |
 | [Deploy a Virtual Machine or Virtual Machine Scale Sets With MSP](https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/greenfield) | security | 0.70 | How-to configuration for enabling Metadata Security Protocol and GuestProxyAgent during VM/VMSS creation, including OS-specific behavior; product-specific security configuration details. |
 | [Deploy an Ultra Disk](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd) | configuration | 0.70 | How-to for deploying Ultra Disks; full article includes disk performance configuration parameters (IOPS, throughput) and constraints unique to Ultra Disks. |
 | [Direct share](https://learn.microsoft.com/en-us/azure/virtual-machines/share-gallery-direct) | security | 0.70 | Covers direct sharing with subscriptions/tenants; relies on RBAC and access configuration specifics, fitting security configuration patterns. |
@@ -553,6 +557,7 @@ category_descriptions:
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk) | configuration | 0.68 | Details CLI-based attachment of persistent disks and explains behavior on reprovisioning, which is a product-specific configuration and behavior pattern. |
 | [Create a disk from a VHD - CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-vhd) | integrations | 0.68 | Shows exact CLI parameters to import specialized/data VHDs into managed disks, a product-specific integration pattern. |
 | [Create a disk from a VHD - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-vhd) | integrations | 0.68 | Includes warnings about creating multiple disks quickly and describes snapshot-based creation behavior—product-specific integration and subtle behavior details. |
+| [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2) | limits-quotas | 0.68 | Deployment doc for Premium SSD v2 disks typically includes concrete, product-specific performance and configuration numbers (IOPS, throughput, latency characteristics, regional availability constraints, sector size defaults like 4K, and possibly min/max size or performance settings). These are exact values and constraints that qualify as limits/quotas-style expert knowledge rather than just conceptual guidance. |
 | [Issues with Python 3-enabled Linux systems](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/issues-using-vm-extensions-python-3) | best-practices | 0.68 | Discusses product-specific issues with extensions requiring Python 2 vs 3 and recommended patterns, which are concrete gotchas and best practices. |
 | [Migrate AWS and on-premises disk to Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/on-prem-to-azure) | deployment | 0.68 | Details how to bring VHDs from other platforms into Azure managed disks, including generalized vs specialized handling—cross-platform migration/deployment guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview) | configuration | 0.68 | Describes detailed NUMA layout, core-to-cache mapping, and specific BIOS settings for HX servers—product-specific configuration/architecture details not generally known. |

@@ -3,7 +3,7 @@ name: azure-cosmos-db
 description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cosmos DB applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -23,12 +23,12 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L35-L88 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: errors (400–503, 401/403/404/409/429), timeouts, performance, connectivity, CMK/backup, and using metrics/logs for root-cause analysis. |
-| Best Practices | L89-L150 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
-| Decision Making | L151-L206 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
-| Architecture & Design Patterns | L207-L249 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
-| Limits & Quotas | L250-L290 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
-| Security | L291-L357 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
-| Configuration | L358-L484 | Configuring Cosmos DB and related services: throughput, indexing, backup/restore, geo-replication, search/vector, monitoring, emulators, SDK tuning, and IaC (Bicep/ARM/Terraform) for all APIs. |
+| Best Practices | L89-L149 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
+| Decision Making | L150-L205 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
+| Architecture & Design Patterns | L206-L248 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
+| Limits & Quotas | L249-L289 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
+| Security | L290-L356 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
+| Configuration | L357-L484 | Configuring and managing Cosmos DB and related services: throughput, indexing, backup/restore, partitioning, search/vector, monitoring, networking, SDK settings, emulators, and IaC (Bicep/ARM/Terraform). |
 | Integrations & Coding Patterns | L485-L820 | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, migrations, and vector/RAG. |
 | Deployment | L821-L845 | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
 
@@ -112,7 +112,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Redistribute Cosmos DB throughput across partitions | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-redistribute-throughput-across-partitions |
 | Use Cosmos DB indexing metrics to tune performance | https://learn.microsoft.com/en-us/azure/cosmos-db/index-metrics |
 | Handle large partition keys and avoid collisions in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/large-partition-keys |
-| Merge Cosmos DB partitions to reduce fragmentation | https://learn.microsoft.com/en-us/azure/cosmos-db/merge |
 | Model and partition Cosmos DB data with a real example | https://learn.microsoft.com/en-us/azure/cosmos-db/model-partition-example |
 | Redistribute throughput across Cosmos MongoDB partitions | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/distribute-throughput-across-partitions |
 | Optimize indexing for Cosmos DB for MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/indexing |
@@ -409,6 +408,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Provision Cosmos DB NoSQL with Bicep templates | https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-bicep |
 | Deploy Cosmos DB NoSQL using ARM templates | https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-templates |
 | Create Cosmos DB NoSQL resources with Terraform | https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-terraform |
+| Configure and manage Azure Cosmos DB partition merges | https://learn.microsoft.com/en-us/azure/cosmos-db/merge |
 | Retrieve RU charges for Cosmos MongoDB operations | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/find-request-unit-charge |
 | Configure capabilities on Cosmos DB MongoDB accounts | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-capabilities |
 | Configure multi-region writes in Cosmos DB MongoDB | https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-configure-multi-region-write |

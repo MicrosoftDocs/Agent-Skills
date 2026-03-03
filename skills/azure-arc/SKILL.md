@@ -3,7 +3,7 @@ name: azure-arc
 description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Arc applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -27,7 +27,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L76-L99 | Guidance on planning and choosing Azure Arc options: services, tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale server/data/Kubernetes deployments. |
 | Architecture & Design Patterns | L100-L108 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
 | Limits & Quotas | L109-L125 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L126-L184 | Security, identity, RBAC, network protection, certificates/keys, and policy/compliance for Azure Arc servers, Kubernetes, data services, SCVMM/VMware, and Edge RAG workloads. |
+| Security | L126-L184 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
 | Configuration | L185-L284 | Configuring Azure Arc infrastructure and workloads: storage, data services, Edge RAG, Kubernetes (GitOps, extensions, networking), servers/agents, monitoring, networking, and orchestration settings. |
 | Integrations & Coding Patterns | L285-L307 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel, Terraform, and Event Grid integration. |
 | Deployment | L308-L338 | Deploying and upgrading Azure Arc components (data controllers, Edge RAG, resource bridge, SCVMM/VMware, agents), including prerequisites, support matrices, and clean removal steps |
@@ -175,7 +175,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure network security for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-networking |
 | Check Azure Arc site security baseline compliance status | https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/view-security-compliance-status |
 | Azure RBAC built-in roles for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/built-in-roles |
-| Create custom RBAC roles for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles |
+| Define custom RBAC roles for Arc-enabled SCVMM | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles |
 | Configure self-service RBAC access to SCVMM via Arc | https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/set-up-and-manage-self-service-access-scvmm |
 | Use built-in RBAC roles for Arc-enabled VMware vSphere | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/built-in-roles |
 | Create custom RBAC roles for Arc-enabled VMware vSphere | https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/create-custom-roles |

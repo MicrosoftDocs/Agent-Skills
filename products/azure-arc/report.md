@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
-  security: Security, identity, RBAC, network protection, certificates/keys, and policy/compliance
-    for Azure Arc servers, Kubernetes, data services, SCVMM/VMware, and Edge RAG workloads.
+  security: 'Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates,
+    network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI,
+    Edge RAG, SCVMM, and vSphere.'
   decision-making: 'Guidance on planning and choosing Azure Arc options: services,
     tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale
     server/data/Kubernetes deployments.'
@@ -40,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 412
+- **Updated Pages**: 2
+- **Unchanged**: 413
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -64,12 +65,10 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Stage a solution before deployment](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/how-to-stage)
-  - Updated: 2025-07-10T08:00:00.000Z → 2026-03-02T12:03:00.000Z
-- [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources)
-  - Updated: 2025-07-01T22:12:00.000Z → 2026-03-02T12:03:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes)
-  - Updated: 2025-12-23T18:04:00.000Z → 2026-03-02T12:03:00.000Z
+- [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc)
+  - Updated: 2026-02-09T12:03:00.000Z → 2026-03-02T08:00:00.000Z
+- [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles)
+  - Updated: 2026-02-09T12:03:00.000Z → 2026-03-02T18:20:00.000Z
 
 ## Classified Pages
 
@@ -120,7 +119,6 @@ category_descriptions:
 | [Configure Cloud Mirror subvolumes](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-cloud-mirror-subvolumes) | configuration | 0.80 | Details Cloud Mirror subvolume configuration, including sync frequency and OneShot behavior; product-specific configuration parameters. |
 | [Configure authentication for your model (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/configure-endpoint-authentication) | security | 0.80 | Shows how to configure API-key based auth for LLM endpoints; includes security-related configuration parameters and patterns specific to Edge RAG. |
 | [Connect machines using Ansible playbooks](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-ansible-playbooks) | integrations | 0.80 | Uses specific Ansible playbooks and variables to onboard nodes to Arc, including module names and configuration parameters that are product-specific integration patterns. |
-| [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles) | security | 0.80 | Describes creating custom roles, including limits (up to 5,000 custom roles per directory) and scope behavior; this is product-specific security and access configuration. |
 | [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/create-custom-roles) | security | 0.80 | Explains creating custom roles with granular permissions, including scope behavior and directory-wide limits (up to 5,000 custom roles); product-specific RBAC configuration guidance. |
 | [Create your model endpoint (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-model-endpoint) | integrations | 0.80 | Describes setting up OpenAI-compatible endpoints via Azure AI Foundry, KAITO, etc.; includes endpoint configuration parameters and requirements unique to Edge RAG integration. |
 | [Customer-managed keytab](https://learn.microsoft.com/en-us/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector) | security | 0.80 | Covers deployment of AD connector with customer-managed keytabs; product-specific security configuration and keytab handling. |
@@ -219,6 +217,7 @@ category_descriptions:
 | [Connect machines using a deployment script](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-portal) | configuration | 0.70 | Shows specific script parameters, required inputs, and environment variables for the generated deployment script, which are concrete configuration details for Arc onboarding. |
 | [Connect machines using a service principal](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-service-principal) | security | 0.70 | Covers using a service principal to connect machines at scale, including required role assignments, scopes, and identity configuration details that are product-specific security patterns. |
 | [Connectivity loss](https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-connectivity) | troubleshooting | 0.70 | Describes behavior and mitigations when Arc servers lose connectivity, including limited functionality modes and alerting; this is operational troubleshooting guidance specific to Arc connectivity behavior. |
+| [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles) | security | 0.70 | Article is about creating custom roles for Azure Arc-enabled SCVMM, which typically includes RBAC role definitions, scopes, and limits (such as maximum number of custom roles per directory). This matches the security category’s focus on specific RBAC roles, permission scopes, and product-specific security configuration details. |
 | [Data exchange between cluster and Azure](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-data-exchange) | security | 0.70 | Describes specific data types exchanged, directions, and endpoints; includes a table of data categories and flows, which are product-specific security/compliance-relevant details. |
 | [Delete data](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/delete-data) | limits-quotas | 0.70 | States Edge RAG supports only one index and that individual ingestions/evaluations can't be deleted; this is a product-specific constraint/limit on data management. |
 | [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/data/delete-azure-resources) | configuration | 0.70 | Describes how to delete Arc data services resources; includes specific resource types and commands unique to Arc-enabled data services. |
@@ -427,7 +426,7 @@ category_descriptions:
 | [Cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-extensions) | 0.30 | Cluster extensions article is conceptual overview of how extensions work; detailed parameters and limits are in other extension-specific docs. |
 | [Configurations and GitOps (Flux v1)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2) | 0.30 | Duplicate conceptual GitOps overview; same reasoning as index 28. |
 | [Connect](https://learn.microsoft.com/en-us/azure/azure-arc/data/connect-managed-instance) | 0.30 | Connection tutorial using SSMS/sqlcmd; standard connection steps without product-specific config matrices. |
-| [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc) | 0.30 | Quickstart using helper script is a procedural onboarding guide; it likely shows commands but not broad config matrices, limits, or detailed troubleshooting. |
+| [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc) | 0.30 | Quickstart focuses on using a helper script to connect SCVMM to Azure Arc; based on the summary it appears to be a procedural tutorial without detailed configuration parameter tables, limits, or product-specific troubleshooting matrices. |
 | [Connectivity modes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-connectivity-modes) | 0.30 | Connectivity modes article is conceptual (online/semi-connected/offline); description doesn’t indicate numeric thresholds or config tables. |
 | [Create a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-virtual-machine) | 0.30 | Creating a VM via portal is a standard how-to; summary doesn’t indicate detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Create and manage labels for an Arc Site](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/managesitelabels) | 0.30 | Creating and managing labels is a tagging/how-to article; it uses generic key/value labels without product-specific limits, config matrices, or security roles. |

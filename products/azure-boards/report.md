@@ -31,8 +31,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 62
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -50,50 +50,6 @@ category_descriptions:
 | *(Unclassified)* | 91 | 72.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Work item fields](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/work-item-fields?view=azure-devops)
-  - Updated: 2025-11-03T23:38:00.000Z → 2026-02-28T08:00:00.000Z
-- [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops)
-  - Updated: 2026-01-13T08:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [Bulk import or update  (CSV)](https://learn.microsoft.com/en-us/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops)
-  - Updated: 2026-01-27T02:08:00.000Z → 2026-03-02T14:06:00.000Z
-- [Change work item type, move work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/move-change-type?view=azure-devops)
-  - Updated: 2025-07-29T19:13:00.000Z → 2026-03-02T14:06:00.000Z
-- [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops)
-  - Updated: 2025-08-28T00:20:00.000Z → 2026-03-02T14:06:00.000Z
-- [Create your backlog](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops)
-  - Updated: 2026-01-30T02:12:00.000Z → 2026-03-02T14:06:00.000Z
-- [Define features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [Organize your backlog (map or reparent)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/organize-backlog?view=azure-devops)
-  - Updated: 2025-07-29T18:26:00.000Z → 2026-03-02T14:06:00.000Z
-- [Forecast](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/forecast?view=azure-devops)
-  - Updated: 2025-10-28T18:02:00.000Z → 2026-03-02T14:06:00.000Z
-- [Change sprint dates](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/define-sprints?view=azure-devops)
-  - Updated: 2025-10-28T14:03:00.000Z → 2026-03-02T14:06:00.000Z
-- [1. Assign backlog items to a sprint](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/assign-work-sprint?view=azure-devops)
-  - Updated: 2025-07-31T19:31:00.000Z → 2026-03-02T14:06:00.000Z
-- [2. Add tasks](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [3. Set sprint capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/set-capacity?view=azure-devops)
-  - Updated: 2026-01-07T08:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [4. Adjust work to fit capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/adjust-work?view=azure-devops)
-  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-02T14:06:00.000Z
-- [5. Share your sprint plan](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/share-plan?view=azure-devops)
-  - Updated: 2025-12-19T16:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [6. Update the Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/task-board?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [End of sprint activities](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/end-sprint-activities?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T14:06:00.000Z
-- [Semantic search](https://learn.microsoft.com/en-us/azure/devops/boards/queries/search-box-queries?view=azure-devops)
-  - Updated: 2025-10-27T17:53:00.000Z → 2026-03-02T14:06:00.000Z
-- [View, open, run a query](https://learn.microsoft.com/en-us/azure/devops/boards/queries/view-run-query?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-02T14:06:00.000Z
-- [Define a query](https://learn.microsoft.com/en-us/azure/devops/boards/queries/using-queries?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T14:06:00.000Z
-- *...and 42 more*
 
 ## Classified Pages
 

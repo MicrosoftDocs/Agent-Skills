@@ -3,7 +3,7 @@ name: azure-virtual-network
 description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Virtual Network applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
@@ -22,9 +22,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L45 | Diagnosing and fixing Azure VM/VNet connectivity issues, including routing, NSG filtering, outbound SMTP blocks, VNet peering, NVAs, encryption problems, and VNet deletion errors. |
-| Best Practices | L46-L59 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
-| Decision Making | L60-L70 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
+| Troubleshooting | L33-L46 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
+| Best Practices | L47-L60 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
+| Decision Making | L61-L70 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
 | Architecture & Design Patterns | L71-L80 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
 | Limits & Quotas | L81-L87 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
 | Security | L88-L96 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
@@ -35,6 +35,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Diagnose Azure VM routing and effective routes | https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem |
 | Diagnose Azure VM NSG traffic filtering issues | https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem |
+| Register and create Azure Virtual Network routing appliances | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance |
 | Diagnose and fix Azure VM outbound SMTP blocking | https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-outbound-smtp-connectivity |
 | Troubleshoot connectivity problems for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-vm-connectivity |
 | Troubleshoot Azure Virtual Network encryption scenarios | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq |
@@ -65,7 +66,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Choose Azure routing preference via Microsoft or ISP network | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-overview |
 | Use routing preference unmetered for Azure-to-CDN traffic | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-unmetered |
 | Optimize Azure Virtual Network costs and trade-offs | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-cost-optimization |
-| Evaluate Azure Virtual Network routing appliance usage | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview |
 | Choose Azure VNet integration options for service isolation | https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services |
 
 ### Architecture & Design Patterns

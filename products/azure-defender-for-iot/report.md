@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -61,11 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 64 | 35.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Accelerate on-premises alert workflows](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/how-to-accelerate-alert-incident-response)
-  - Updated: 2025-01-09T18:03:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 

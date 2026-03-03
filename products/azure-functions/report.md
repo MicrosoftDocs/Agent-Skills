@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring how Functions apps run: app/host settings, bindings,
     triggers, plans, storage, networking, monitoring/telemetry, Durable Functions
@@ -7,9 +7,9 @@ category_descriptions:
   security: 'Securing Azure Functions apps: encryption at rest, private endpoints/VNet,
     managed identity and identity-based connections, access keys, Web PubSub and MCP
     security, and secret handling.'
-  decision-making: Guidance on choosing Functions hosting/scaling plans, runtimes,
-    and Durable options, plus migration paths (Lambda, Express, runtime upgrades,
-    extensions) and cost/networking tradeoffs.
+  decision-making: Guidance on choosing Functions hosting/scaling plans, networking
+    and runtime options, cost estimation, and migration/upgrade paths (Durable, .NET,
+    Service Bus, AWS Lambda, Express).
   architecture-patterns: Patterns for durable orchestrations/entities, singleton and
     eternal workflows, and hosting Functions in Linux containers or Azure Container
     Apps, plus the Durable Task scheduler execution model.
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 361
 - **Fetched**: 361
 - **Fetch Failed**: 0
-- **Classified**: 297
-- **Unclassified**: 64
+- **Classified**: 296
+- **Unclassified**: 65
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 357
+- **Updated Pages**: 3
+- **Unchanged**: 358
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -57,22 +57,20 @@ category_descriptions:
 | deployment | 44 | 12.2% |
 | integrations | 113 | 31.3% |
 | limits-quotas | 8 | 2.2% |
-| security | 14 | 3.9% |
+| security | 13 | 3.6% |
 | troubleshooting | 23 | 6.4% |
-| *(Unclassified)* | 64 | 17.7% |
+| *(Unclassified)* | 65 | 18.0% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code)
-  - Updated: 2024-04-26T22:09:00.000Z → 2026-02-26T08:00:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code)
-  - Updated: 2024-12-29T08:00:00.000Z → 2026-02-26T08:00:00.000Z
-- [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-  - Updated: 2025-12-17T12:14:00.000Z → 2026-02-26T08:00:00.000Z
-- [Orchestration versioning](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning)
-  - Updated: 2025-10-02T22:32:00.000Z → 2026-03-02T06:19:00.000Z
+- [Dedicated plan](https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan)
+  - Updated: 2024-11-11T23:02:00.000Z → 2026-02-23T08:00:00.000Z
+- [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet)
+  - Updated: 2025-05-13T05:03:00.000Z → 2026-02-25T08:00:00.000Z
+- [Create a Durable Functions app - C#](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-isolated-create-first-csharp)
+  - Updated: 2024-08-21T22:04:00.000Z → 2026-02-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -220,7 +218,6 @@ category_descriptions:
 | [Concurrency](https://learn.microsoft.com/en-us/azure/azure-functions/functions-concurrency) | limits-quotas | 0.75 | Explains fixed and dynamic concurrency models with per-instance behavior and likely configuration knobs/limits; focuses on how many events can run concurrently per instance, a form of quota. |
 | [Configure monitoring](https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring) | configuration | 0.75 | Shows how to connect a function app to Application Insights and configure data collection, including instrumentation key settings and related parameters, which are product-specific configuration details. |
 | [Connect to Foundry Agent Service](https://learn.microsoft.com/en-us/azure/azure-functions/functions-mcp-foundry-tools) | integrations | 0.75 | Shows how to configure an MCP server hosted on Functions so Foundry Agent Service can discover and invoke tools, involving specific integration configuration steps and parameters. |
-| [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet) | security | 0.75 | Tutorial for integrating Functions with a VNet using private endpoints; includes product-specific networking and access configuration. |
 | [Consumption plan costs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs) | decision-making | 0.75 | Cost estimation for Consumption vs Flex Consumption plans typically includes formulas, pricing dimensions, and usage-based thresholds that guide plan selection and capacity planning. |
 | [Deployment options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies) | deployment | 0.75 | Compares deployment methods (Zip deploy, Run-From-Package, etc.) with recommendations for scenarios; includes key details about each method, supporting deployment decisions. |
 | [Deployment slots](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-slots) | deployment | 0.75 | Explains Functions deployment slots, including how swaps affect functions and that slot availability depends on hosting option, which is a product-specific deployment constraint matrix. |
@@ -266,7 +263,6 @@ category_descriptions:
 | [Custom handlers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers) | configuration | 0.70 | Custom handlers require specific host.json configuration, process startup commands, and HTTP contract details that are concrete configuration parameters unique to Azure Functions. |
 | [Custom orchestration status](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-custom-orchestration-status) | configuration | 0.70 | Custom orchestration status uses specific APIs and configuration (HTTP GetStatus endpoint, SDK methods) to expose status. These are concrete product-specific configuration and API usage details. |
 | [Dedicated (App Service) plan app](https://learn.microsoft.com/en-us/azure/azure-functions/scripts/functions-cli-create-app-service-plan) | deployment | 0.70 | CLI script for deploying a function app on an App Service plan, including plan type and resource configuration specific to Functions hosting. |
-| [Dedicated plan](https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan) | decision-making | 0.70 | Explains when to host Functions on dedicated App Service plans/ASEs and trade-offs vs other plans; supports hosting decision-making. |
 | [Dependency injection](https://learn.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection) | best-practices | 0.70 | Covers DI usage specific to Azure Functions, including Consumption-plan-specific differences and configuration patterns that are unique to this product, qualifying as product-specific best practices. |
 | [Designing for identical input](https://learn.microsoft.com/en-us/azure/azure-functions/functions-idempotent) | best-practices | 0.70 | Guidance on building idempotent Functions with product-specific patterns for handling duplicate messages/events; actionable best practices beyond generic theory. |
 | [Develop and debug locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local) | configuration | 0.70 | Includes details on local.settings.json schema, connection string handling, and emulator usage that are concrete configuration parameters for local development. |
@@ -329,6 +325,7 @@ category_descriptions:
 | [Work with Flex Consumption apps](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-how-to) | configuration | 0.70 | Shows how to create and manage Flex Consumption plan apps, including plan-specific settings and management options, which are configuration details unique to this hosting plan. |
 | [Work with OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-functions/opentelemetry-howto) | configuration | 0.70 | Shows how to configure a function app to export logs and traces using OpenTelemetry semantics instead of default Application Insights SDK, involving specific configuration settings. |
 | [Data persistence and serialization](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-serialization-and-persistence) | best-practices | 0.68 | Covers how Durable Functions persists state with product-specific guidance on what to serialize, when to use compression, and how to reduce storage/latency; these are concrete, runtime-specific recommendations. |
+| [Dedicated plan](https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan) | decision-making | 0.68 | The page goes beyond a conceptual overview of App Service plans and explains when and why to run Azure Functions on a dedicated App Service hosting plan (including ASE). It provides product-specific guidance on selecting this hosting option versus others and how multiple function apps can share the same dedicated compute resources, which is concrete decision-making guidance about hosting model selection rather than just marketing or high-level concepts. |
 | [Orchestration versioning](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning) | deployment | 0.68 | The page describes the product-specific orchestration versioning feature in Durable Functions to enable zero-downtime deployments when making breaking changes. It explains how to manage in-flight orchestrations while updating orchestrator logic and activity signatures, which is a deployment-time concern unique to Durable Functions’ deterministic replay model. This is expert operational/deployment guidance rather than generic concepts, but it does not focus on configuration tables, limits, or error codes, so 'deployment' is the closest fitting sub-skill. |
 | [Create as WebJobs](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-webjobs-sdk) | configuration | 0.66 | Shows how to configure Durable Functions in a WebJobs host, including job host settings and bindings specific to this hosting scenario. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-resource-manager) | deployment | 0.65 | Uses ARM templates to provision a Flex Consumption function app and dependencies; includes resource definitions and deployment-specific configuration. |
@@ -410,6 +407,7 @@ category_descriptions:
 | [Orchestrations](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestrations) | 0.35 | Overview of orchestrator functions with code samples and behavior. While detailed, it's primarily conceptual/behavioral guidance without clear numeric limits, configuration tables, or decision matrices in the summary. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/azure-functions/functions-integrate-storage-queue-output-binding) | 0.30 | Tutorial-style integration of Storage queue output binding; mostly step-by-step usage without detailed binding parameter tables or product-specific constraints. |
 | [Command line (Core Tools)](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-azure-cli) | 0.30 | CLI-based quickstart for creating and deploying a function; no indication of extensive config references or quotas. |
+| [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet) | 0.30 | Primarily a step-by-step tutorial for connecting an Azure Function to a virtual network using private endpoints. The summary does not indicate presence of detailed configuration tables, RBAC role lists, or product-specific limits/quotas; it appears to be procedural guidance rather than reference-style expert knowledge. |
 | [Debug Event Grid trigger locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-event-grid-blob-trigger) | 0.30 | Event Grid + Blob trigger tutorial; focuses on creating triggers, not on detailed configuration tables, limits, or troubleshooting mappings. |
 | [Develop Python functions with VS Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code?pivots=programming-language-python) | 0.30 | Python-flavored VS Code quickstart; similar to index 17, primarily a basic creation and deployment tutorial. |
 | [Diagnostics](https://learn.microsoft.com/en-us/azure/azure-functions/functions-diagnostics) | 0.30 | High-level overview of Azure Functions diagnostics without detailed error-code mappings or configuration tables; mostly conceptual and navigational. |
@@ -435,7 +433,7 @@ category_descriptions:
 | [Durable Functions versions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versions) | 0.20 | Described as an overview of Durable Functions versions without evidence of concrete version matrices, support windows, or quantified trade-offs in the summary. Likely conceptual; no clear expert-only numeric or configuration details indicated. |
 | [Function types](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-types-features-overview) | 0.20 | Explains function types and roles in Durable Functions. This is conceptual architecture of the programming model, not configuration, limits, or decision matrices. |
 | [About triggers and bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings) | 0.10 | Page is a high-level conceptual overview of Azure Functions triggers and bindings without detailed limits, configuration tables, error codes, or product-specific numeric thresholds. |
-| [Create a Durable Functions app - C#](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-isolated-create-first-csharp) | 0.10 | Quickstart for creating a C# Durable Functions app; primarily step-by-step tutorial. Summary does not indicate detailed configuration matrices, limits, or error mappings beyond basic usage. |
+| [Create a Durable Functions app - C#](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-isolated-create-first-csharp) | 0.10 | Quickstart/tutorial for creating a C# Durable Functions app; focuses on step-by-step setup and basic usage, without detailed limits, configuration matrices, error code mappings, or product-specific best-practice guidance. |
 | [Create a Durable Functions app - Java](https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-java) | 0.10 | Java Durable Functions quickstart; describes ways to create a hello world app. Does not appear to include detailed configuration matrices or limits. |
 | [Create a Durable Functions app - JavaScript](https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-js-vscode) | 0.10 | JavaScript Durable Functions quickstart; focused on creating a hello world app. No indication of expert-only limits, configuration tables, or troubleshooting content. |
 | [Create a Durable Functions app - PowerShell](https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-powershell-vscode) | 0.10 | PowerShell Durable Functions quickstart; focused on basic creation and testing. No evidence of expert-level configuration or limits content in the summary. |

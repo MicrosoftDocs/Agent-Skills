@@ -3,7 +3,7 @@ name: azure-kubernetes-service
 description: Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service (AKS) applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service (AKS) Skill
@@ -27,8 +27,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L104-L153 | Guidance for architectural and migration decisions in AKS: networking, VM/node pools, upgrades, pricing, cost optimization, OS/runtime choices, compliance (PCI), and comparisons with other platforms. |
 | Architecture & Design Patterns | L154-L178 | Architectural patterns and reference designs for AKS: HA/DR (active-active/passive/cold), upgrades, multi-region/multi-cluster, networking/IP, PCI, AWS migration, and scaling with node pools/Fleet. |
 | Limits & Quotas | L179-L197 | AKS limits, quotas, and scaling behavior: node/pod capacity, egress/NAT, load balancers, Istio performance, identities, SKUs/regions, and Kubernetes/Fleet version lifecycles and support. |
-| Security | L198-L279 | Securing AKS clusters: identity/RBAC, network and API access, encryption, node hardening/CIS, image integrity, PCI compliance, Azure Policy, and secure access to nodes and external services. |
-| Configuration | L280-L436 | Configuring AKS clusters, networking, storage, security, autoscaling, cost controls, service mesh, databases, GPUs, and multi-cluster/Fleet features for production workloads. |
+| Security | L198-L279 | Securing AKS clusters: identity/RBAC, network and API access, encryption, certificates/keys, node hardening, policies/compliance (PCI, CIS), workload identity, and secure access to external services. |
+| Configuration | L280-L436 | Configuring AKS clusters, networking, storage, ingress, GPUs, autoscaling, costs, security, service mesh, and multi-cluster/Fleet features, plus extensions and database/Kafka setups. |
 | Integrations & Coding Patterns | L437-L459 | Patterns and how-tos for connecting AKS workloads to other services: KAITO/MCP agents, GPU/KEDA, Key Vault/CSI, Istio/OSM, monitoring, GitHub/Fleet automation, and external data stores. |
 | Deployment | L460-L519 | Deploying and upgrading AKS clusters and workloads, including CI/CD, service meshes, KEDA, AI/ML and Ray, Wasm platforms, storage migration, and production-ready infrastructure setup. |
 
@@ -264,9 +264,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Run AKS workloads on Confidential VMs | https://learn.microsoft.com/en-us/azure/aks/use-cvm |
 | Enable GMSA for Windows pods on AKS | https://learn.microsoft.com/en-us/azure/aks/use-group-managed-service-accounts |
 | Configure legacy KMS etcd encryption in AKS | https://learn.microsoft.com/en-us/azure/aks/use-kms-etcd-encryption |
-| Configure managed identities for AKS clusters and kubelets | https://learn.microsoft.com/en-us/azure/aks/use-managed-identity |
+| Configure managed identities and kubelet identity in AKS | https://learn.microsoft.com/en-us/azure/aks/use-managed-identity |
 | Secure AKS pod traffic with network policies | https://learn.microsoft.com/en-us/azure/aks/use-network-policies |
-| Configure OIDC issuer for AKS clusters | https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer |
+| Configure OIDC issuer and provider for AKS clusters | https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer |
 | Deploy and use pod sandboxing in AKS | https://learn.microsoft.com/en-us/azure/aks/use-pod-sandboxing |
 | Enable Trusted Launch security for AKS nodes | https://learn.microsoft.com/en-us/azure/aks/use-trusted-launch |
 | Configure cross-tenant workload identity for AKS | https://learn.microsoft.com/en-us/azure/aks/workload-identity-cross-tenant |
@@ -346,7 +346,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure GPU health monitoring with NPD on AKS | https://learn.microsoft.com/en-us/azure/aks/gpu-health-monitoring |
 | Create multi-instance GPU node pools in AKS | https://learn.microsoft.com/en-us/azure/aks/gpu-multi-instance |
 | Configure FQDN filtering policies with ACNS on AKS | https://learn.microsoft.com/en-us/azure/aks/how-to-apply-fqdn-filtering-policies |
-| Set up Layer 7 network policies with ACNS | https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies |
+| Configure L7 network policies with ACNS on AKS | https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies |
 | Deploy WireGuard encryption with ACNS on AKS | https://learn.microsoft.com/en-us/azure/aks/how-to-apply-wireguard |
 | Set up container network flow logs with Advanced Container Networking | https://learn.microsoft.com/en-us/azure/aks/how-to-configure-container-network-logs |
 | Configure container network metrics filtering in AKS with Cilium | https://learn.microsoft.com/en-us/azure/aks/how-to-configure-container-network-metrics-filtering |
@@ -392,7 +392,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure AKS upgrades to stop on API breaking changes | https://learn.microsoft.com/en-us/azure/aks/stop-cluster-upgrade-api-breaking-changes |
 | Configure AKS node pool rolling upgrade settings | https://learn.microsoft.com/en-us/azure/aks/upgrade-aks-node-pools-rolling |
 | Upgrade Windows OS versions for AKS workloads | https://learn.microsoft.com/en-us/azure/aks/upgrade-windows-os |
-| Enable and configure Advanced Container Networking Services on AKS | https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services |
+| Configure Advanced Container Networking Services on AKS | https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services |
 | Configure AMD GPU node pools on AKS | https://learn.microsoft.com/en-us/azure/aks/use-amd-gpus |
 | Use custom CNI plugins with AKS clusters | https://learn.microsoft.com/en-us/azure/aks/use-byo-cni |
 | Use eTags for concurrency control in AKS APIs | https://learn.microsoft.com/en-us/azure/aks/use-etags |
