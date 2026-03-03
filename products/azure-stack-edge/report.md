@@ -24,6 +24,12 @@ category_descriptions:
   best-practices: 'Best practices for Azure Stack Edge Pro: planning for and recovering
     from device failure, GPU sharing configuration, and day-to-day operational/maintenance
     guidelines.'
+skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Stack Edge applications. Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes
+  Service Edge Essentials (use azure-aks-edge-essentials), Azure IoT (use azure-iot),
+  Azure IoT Hub (use azure-iot-hub).
 ---
 # Azure Stack Edge Crawl Report
 

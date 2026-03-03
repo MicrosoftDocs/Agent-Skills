@@ -1,6 +1,6 @@
 ---
 name: azure-backup
-description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications.
+description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications. Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Backup. Covers troubleshooting, be
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L65 | Diagnosing and fixing Azure Backup errors across VMs, databases (SQL, PostgreSQL, MySQL, SAP), files, disks, AKS, MARS/MABS/DPM, vault/agent issues, and slow or failed backups/restores. |
-| Best Practices | L66-L76 | Best practices for configuring and recovering Azure Backup/DPM/MABS, including Exchange and SQL (incl. Always On), TRIM handling, and Azure VM/cloud/on-prem backup optimization. |
-| Decision Making | L77-L82 | Guidance on estimating/planning Azure Backup costs for various workloads and migrating backup alerting from classic alerts to Azure Monitor alerts. |
-| Architecture & Design Patterns | L83-L87 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
-| Limits & Quotas | L88-L119 | Backup support matrices, performance limits, retention/soft delete settings, and regional/SKU constraints for Azure Backup across VMs, databases, files, disks, and Backup center. |
-| Security | L120-L162 | Security features for Azure Backup: encryption, RBAC, MUA/Resource Guard, soft delete/immutable vaults, private endpoints, AKS/VM/confidential VM protection, ransomware and threat detection. |
-| Configuration | L163-L245 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, and management for VMs, AKS, SQL, SAP, Files, Blobs, Disks, PostgreSQL, and Data Lake. |
-| Integrations & Coding Patterns | L246-L304 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
-| Deployment | L305-L308 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
+| Troubleshooting | L37-L67 | Diagnosing and fixing Azure Backup errors across VMs, databases (SQL, PostgreSQL, MySQL, SAP), files, disks, AKS, MARS/MABS/DPM, vault/agent issues, and slow or failed backups/restores. |
+| Best Practices | L68-L78 | Best practices for configuring and recovering Azure Backup/DPM/MABS, including Exchange and SQL (incl. Always On), TRIM handling, and Azure VM/cloud/on-prem backup optimization. |
+| Decision Making | L79-L84 | Guidance on estimating/planning Azure Backup costs for various workloads and migrating backup alerting from classic alerts to Azure Monitor alerts. |
+| Architecture & Design Patterns | L85-L89 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
+| Limits & Quotas | L90-L121 | Backup support matrices, performance limits, retention/soft delete settings, and regional/SKU constraints for Azure Backup across VMs, databases, files, disks, and Backup center. |
+| Security | L122-L164 | Security features for Azure Backup: encryption, RBAC, MUA/Resource Guard, soft delete/immutable vaults, private endpoints, AKS/VM/confidential VM protection, ransomware and threat detection. |
+| Configuration | L165-L247 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, and management for VMs, AKS, SQL, SAP, Files, Blobs, Disks, PostgreSQL, and Data Lake. |
+| Integrations & Coding Patterns | L248-L306 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
+| Deployment | L307-L310 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
 
 ### Troubleshooting
 | Topic | URL |

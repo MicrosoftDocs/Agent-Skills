@@ -25,6 +25,12 @@ category_descriptions:
   limits-quotas: 'Managing Azure cost limits and quotas: free tier usage, spending
     limits, data timing/latency, regional fees, subscription constraints, savings
     plans, and billing account policies.'
+skill_description: Expert knowledge for Azure Cost Management development including
+  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor),
+  Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Impact
+  Reporting (use azure-impact-reporting).
 ---
 # Azure Cost Management Crawl Report
 

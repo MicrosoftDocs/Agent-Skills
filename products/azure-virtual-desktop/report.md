@@ -27,6 +27,13 @@ category_descriptions:
   limits-quotas: RDP bandwidth requirements and optimization for Azure Virtual Desktop,
     plus supported Microsoft Teams features, limitations, and configuration requirements
     on AVD.
+skill_description: Expert knowledge for Azure Virtual Desktop development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Virtual Desktop applications.
+  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
+  azure-dev-box), Azure Lab Services (use azure-lab-services), Azure Virtual Machine
+  Scale Sets (use azure-vm-scalesets).
 ---
 # Azure Virtual Desktop Crawl Report
 

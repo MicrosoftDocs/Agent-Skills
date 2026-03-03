@@ -24,6 +24,13 @@ category_descriptions:
     regions and automating upgrades from Basic to Standard using PowerShell.'
   security: 'Security guidance for Azure Load Balancer: hardening, access controls,
     and using Azure DDoS Protection to defend against volumetric and network attacks.'
+skill_description: Expert knowledge for Azure Load Balancer development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Load Balancer applications. Not
+  for Azure Application Gateway (use azure-application-gateway), Azure Traffic Manager
+  (use azure-traffic-manager), Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Load Balancer Crawl Report
 

@@ -22,6 +22,12 @@ category_descriptions:
     in Azure Key Vault.
   deployment: How to deploy and provision Azure Key Vault and Managed HSM (vaults,
     keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell
+skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Key Vault applications. Not for Azure Information Protection (use azure-information-protection),
+  Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use azure-cloud-hsm),
+  Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Key Vault Crawl Report
 

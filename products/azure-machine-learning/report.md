@@ -28,6 +28,13 @@ category_descriptions:
   deployment: 'Deploying and operationalizing models and prompt flows in Azure ML:
     online/batch endpoints, MLflow, Triton, CI/CD, MLOps/GenAIOps, rollouts, cross-workspace
     use, and production pipelines.'
+skill_description: Expert knowledge for Azure Machine Learning development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Machine Learning applications.
+  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight
+  (use azure-hdinsight).
 ---
 # Azure Machine Learning Crawl Report
 

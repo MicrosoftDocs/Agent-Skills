@@ -1,9 +1,9 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Speech applications.
+description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Speech applications. Not for Azure Communication Services (use azure-communication-services), Azure AI Bot Service (use azure-bot-service), Azure AI Video Indexer (use azure-video-indexer), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Speech Skill
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure AI Speech. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L42 | Diagnosing and fixing common Azure Speech issues (TTS, STT, SDK, containers, Foundry), including error codes, deployment problems, and retrieving session/transcription IDs for support. |
-| Best Practices | L43-L59 | Best practices for speech recognition, custom voice data and recording, latency and memory tuning, Voice Live interactions, keyword/language detection, and microphone array design. |
-| Decision Making | L60-L79 | Guidance on choosing speech features, evaluating models and devices, planning large-scale/batch use, and migrating between Speech/Voice API versions and related services |
-| Limits & Quotas | L80-L88 | Quotas, limits, and usage patterns for Azure Speech: batch TTS, custom/pro voice training & deployment, and short audio STT, plus throttling and capacity planning guidance. |
-| Security | L89-L100 | Securing Azure AI Speech: auth with Entra ID, RBAC, network isolation (VNet, Private Link, sovereign clouds), BYOS storage, encryption/keys, and voice talent consent management. |
-| Configuration | L101-L137 | Configuring Azure AI Speech behavior: audio inputs/outputs, batch jobs, storage and logging, SSML/phonemes, custom/fine-tuned voices, Voice Live settings, and regional/data residency options. |
-| Integrations & Coding Patterns | L138-L159 | Patterns and APIs for integrating Azure Speech (STT, TTS, avatars) with apps, telephony, Voice Live, OpenAI, function calling, batch flows, and custom/personal voice models. |
-| Deployment | L160-L171 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
+| Troubleshooting | L36-L45 | Diagnosing and fixing common Azure Speech issues (SDK, text-to-speech, containers, Foundry), including CRL/compatibility problems and retrieving session/transcription IDs for support. |
+| Best Practices | L46-L62 | Best practices for speech recognition, custom voice data and recording, latency and memory tuning, Voice Live interactions, keyword/language detection, and microphone array design. |
+| Decision Making | L63-L82 | Guidance on choosing speech features, evaluating models and devices, planning large-scale/batch use, and migrating between Speech/Voice API versions and related services |
+| Limits & Quotas | L83-L91 | Quotas, limits, and usage patterns for Azure Speech: batch TTS, custom/pro voice training & deployment, and short audio STT, plus throttling and capacity planning guidance. |
+| Security | L92-L103 | Securing Azure AI Speech: auth with Entra ID, RBAC, network isolation (VNet, Private Link, sovereign clouds), BYOS storage, encryption/keys, and voice talent consent management. |
+| Configuration | L104-L140 | Configuring Azure AI Speech behavior: audio inputs/outputs, batch jobs, storage and logging, SSML/phonemes, custom/fine-tuned voices, Voice Live settings, and regional/data residency options. |
+| Integrations & Coding Patterns | L141-L162 | Patterns and APIs for integrating Azure Speech (STT, TTS, avatars) with apps, telephony, Voice Live, OpenAI, function calling, batch flows, and custom/personal voice models. |
+| Deployment | L163-L174 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -37,6 +39,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Troubleshoot common Azure text to speech issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/faq-tts |
 | Retrieve Speech to text session and transcription IDs for support | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-get-speech-session-id |
 | Resolve common Azure Speech in Foundry issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/known-issues |
+| Mitigate Azure AI Speech SDK CRL compatibility issue | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2 |
 | Troubleshoot Speech service container deployments | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-faq |
 | Troubleshoot common Azure Speech SDK issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/troubleshooting |
 

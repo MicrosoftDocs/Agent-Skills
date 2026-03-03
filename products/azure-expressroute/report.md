@@ -27,6 +27,12 @@ category_descriptions:
   integrations: Programmatic management of ExpressRoute circuits using PowerShell,
     Azure CLI, Automation, and Logic Apps, including creation, updates, and automated
     route-count alerting.
+skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure ExpressRoute applications. Not for Azure
+  Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure Virtual WAN (use azure-virtual-wan), Azure Internet Peering (use azure-internet-peering).
 ---
 # Azure ExpressRoute Crawl Report
 

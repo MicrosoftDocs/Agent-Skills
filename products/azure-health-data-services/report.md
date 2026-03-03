@@ -25,6 +25,13 @@ category_descriptions:
   decision-making: Guidance for planning and executing migrations from Azure API for
     FHIR to the FHIR service or broader Azure Health Data Services, including architecture,
     data, and compatibility considerations.
+skill_description: Expert knowledge for Azure Health Data Services development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Health Data Services applications.
+  Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use
+  azure-machine-learning).
 ---
 # Azure Health Data Services Crawl Report
 

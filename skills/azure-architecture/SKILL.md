@@ -16,21 +16,23 @@ This skill provides expert guidance for designing Azure solutions using Azure Ar
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Reference Architectures | L35-L89 | End-to-end Azure solution blueprints: mission-critical app, data, AKS, networking, hybrid, security, and MLOps architectures with deployment patterns and best practices. |
-| Solution Ideas | L90-L122 | End-to-end solution patterns for AI, data, analytics, IoT, security, SAP, and DevSecOps on Azure, showing how to combine services into complete architectures and workflows. |
-| Design Patterns | L123-L177 | Architecture and integration patterns for resilient, scalable, secure apps on Azure: messaging, microservices, gateways, caching, CQRS/event sourcing, multitenancy, and legacy modernization. |
-| Technology Choices | L178-L212 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) for specific workloads and architecture needs |
-| Architecture Styles | L213-L223 | Comparisons and design guidance for Azure app styles: big compute, big data, event-driven, microservices, N-tier, and web-queue-worker, with when-to-use and implementation patterns. |
-| Best Practices | L224-L287 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, APIs, networking, IoT, SAP, Event Hubs, and generative AI. |
-| Anti-patterns | L288-L302 | Diagnosing and fixing common cloud performance/scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
-| Example Workloads | L303-L371 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
-| Migration Guides | L372-L404 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
+| Reference Architectures | L37-L91 | End-to-end Azure solution blueprints: mission-critical app, data, AKS, networking, hybrid, security, and MLOps architectures with deployment patterns and best practices. |
+| Solution Ideas | L92-L124 | End-to-end solution patterns for AI, data, analytics, IoT, security, SAP, and DevSecOps on Azure, showing how to combine services into complete architectures and workflows. |
+| Design Patterns | L125-L179 | Architecture and integration patterns for resilient, scalable, secure apps on Azure: messaging, microservices, gateways, caching, CQRS/event sourcing, multitenancy, and legacy modernization. |
+| Technology Choices | L180-L214 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) for specific workloads and architecture needs |
+| Architecture Styles | L215-L225 | Comparisons and design guidance for Azure app styles: big compute, big data, event-driven, microservices, N-tier, and web-queue-worker, with when-to-use and implementation patterns. |
+| Best Practices | L226-L289 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, APIs, networking, IoT, SAP, Event Hubs, and generative AI. |
+| Anti-patterns | L290-L304 | Diagnosing and fixing common cloud performance/scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
+| Example Workloads | L305-L373 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
+| Migration Guides | L374-L406 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
 
 ### Reference Architectures
 | Topic | URL |

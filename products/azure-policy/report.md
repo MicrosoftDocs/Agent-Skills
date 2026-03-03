@@ -21,6 +21,12 @@ category_descriptions:
   integrations: Using Azure Resource Graph to query Azure Policy compliance data and
     guest configuration state across resources for reporting, auditing, and large-scale
     policy analysis
+skill_description: Expert knowledge for Azure Policy development including troubleshooting,
+  best practices, decision making, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Policy
+  applications. Not for Azure Blueprints (use azure-blueprints), Azure Role-based
+  access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager),
+  Azure Security (use azure-security).
 ---
 # Azure Policy Crawl Report
 

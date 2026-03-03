@@ -1,6 +1,6 @@
 ---
 name: azure-hdinsight
-description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HDInsight applications.
+description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HDInsight applications. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure HDInsight. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L130 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN problems, performance, disk/CPU, and known error codes/workarounds. |
-| Best Practices | L131-L172 | Best practices for designing, securing, monitoring, scaling, and tuning HDInsight clusters and workloads (Hadoop, Spark, Hive, HBase, Kafka), including storage, migration, and performance optimization. |
-| Decision Making | L173-L197 | Guidance on planning, sizing, upgrading, and migrating HDInsight clusters, including Hadoop, HBase, Kafka, storage, VM sizing, and handling version/feature retirements. |
-| Architecture & Design Patterns | L198-L212 | HDInsight cluster architecture, security/VNet design, HA/DR and business continuity patterns, migration from on-prem Hadoop, shared storage, streaming (Spark/YARN), and Oozie-based pipelines. |
-| Limits & Quotas | L213-L220 | Guidance on HDInsight capacity limits: log size/retention, supported cluster node sizes, external metastore constraints, and requesting/managing CPU core quota increases. |
-| Security | L221-L264 | Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger, RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark security, and security best practices. |
-| Configuration | L265-L321 | Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based customizations. |
-| Integrations & Coding Patterns | L322-L389 | Patterns and code samples for integrating HDInsight (Hive, Spark, Kafka, HBase, MapReduce, Sqoop) with tools, SDKs, REST/CLI, and external services like SQL, Cosmos DB, Power BI, IoT, and Synapse |
-| Deployment | L390-L403 | Creating, configuring, migrating, and automating HDInsight clusters (Hadoop, HBase, Kafka) using portal, CLI, PowerShell, ARM/REST, Data Factory, Marketplace, AMA, and runbooks |
+| Troubleshooting | L37-L132 | Diagnosing and fixing HDInsight cluster issues: creation/auth, networking, storage, Ambari/HDFS/Hive/HBase/Kafka/Spark/YARN problems, performance, disk/CPU, and known error codes/workarounds. |
+| Best Practices | L133-L174 | Best practices for designing, securing, monitoring, scaling, and tuning HDInsight clusters and workloads (Hadoop, Spark, Hive, HBase, Kafka), including storage, migration, and performance optimization. |
+| Decision Making | L175-L199 | Guidance on planning, sizing, upgrading, and migrating HDInsight clusters, including Hadoop, HBase, Kafka, storage, VM sizing, and handling version/feature retirements. |
+| Architecture & Design Patterns | L200-L214 | HDInsight cluster architecture, security/VNet design, HA/DR and business continuity patterns, migration from on-prem Hadoop, shared storage, streaming (Spark/YARN), and Oozie-based pipelines. |
+| Limits & Quotas | L215-L222 | Guidance on HDInsight capacity limits: log size/retention, supported cluster node sizes, external metastore constraints, and requesting/managing CPU core quota increases. |
+| Security | L223-L266 | Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger, RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark security, and security best practices. |
+| Configuration | L267-L323 | Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based customizations. |
+| Integrations & Coding Patterns | L324-L391 | Patterns and code samples for integrating HDInsight (Hive, Spark, Kafka, HBase, MapReduce, Sqoop) with tools, SDKs, REST/CLI, and external services like SQL, Cosmos DB, Power BI, IoT, and Synapse |
+| Deployment | L392-L405 | Creating, configuring, migrating, and automating HDInsight clusters (Hadoop, HBase, Kafka) using portal, CLI, PowerShell, ARM/REST, Data Factory, Marketplace, AMA, and runbooks |
 
 ### Troubleshooting
 | Topic | URL |

@@ -28,6 +28,13 @@ category_descriptions:
   best-practices: 'Guidance on ADX performance and reliability: schema design, handling
     duplicates, JSON ingestion, monitoring queued ingestion, hot/cold data querying,
     high concurrency, and Power BI integration.'
+skill_description: Expert knowledge for Azure Data Explorer development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Data Explorer applications. Not
+  for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use
+  azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
+  (use azure-stream-analytics).
 ---
 # Azure Data Explorer Crawl Report
 

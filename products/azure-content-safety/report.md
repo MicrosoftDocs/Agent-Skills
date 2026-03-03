@@ -19,6 +19,12 @@ category_descriptions:
     or unwanted content.
   limits-quotas: Language coverage, building and training custom safety categories,
     and detecting protected/third‑party code in model outputs.
+skill_description: Expert knowledge for Azure AI Content Safety development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, and deployment. Use when building, debugging,
+  or optimizing Azure AI Content Safety applications. Not for Azure Information Protection
+  (use azure-information-protection), Azure Security (use azure-security), Azure Web
+  Application Firewall (use azure-web-application-firewall), Azure Firewall (use azure-firewall).
 ---
 # Azure AI Content Safety Crawl Report
 

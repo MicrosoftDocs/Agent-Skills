@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-network-manager
-description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Virtual Network Manager applications.
+description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Virtual Network Manager applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Network Function Manager (use azure-network-function-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Virtual Network Manager. Covers tr
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Diagnosing and fixing common Azure Virtual Network Manager issues, including deployment/configuration failures and verifying that AVNM-applied network configurations work as intended. |
-| Limits & Quotas | L37-L42 | IPAM features, supported regions, and key Azure Virtual Network Manager limits (scale, resources, configurations) that affect design and deployment decisions. |
-| Security | L43-L53 | Configuring and applying Azure Virtual Network Manager security admin rules to block or protect traffic (incl. high‑risk ports) using network groups, portal, and PowerShell. |
-| Configuration | L54-L67 | Configuring AVNM: IPAM pools, network groups (static/dynamic via Policy), cross-tenant connections, event logs, and managing UDRs/topologies and reachability analysis. |
-| Integrations & Coding Patterns | L68-L71 | Using Azure Resource Graph to query, filter, and report on Azure Virtual Network Manager resources, configurations, and deployments at scale across subscriptions |
+| Troubleshooting | L33-L38 | Diagnosing and fixing common Azure Virtual Network Manager issues, including deployment/configuration failures and verifying that AVNM-applied network configurations work as intended. |
+| Limits & Quotas | L39-L44 | IPAM features, supported regions, and key Azure Virtual Network Manager limits (scale, resources, configurations) that affect design and deployment decisions. |
+| Security | L45-L55 | Configuring and applying Azure Virtual Network Manager security admin rules to block or protect traffic (incl. high‑risk ports) using network groups, portal, and PowerShell. |
+| Configuration | L56-L69 | Configuring AVNM: IPAM pools, network groups (static/dynamic via Policy), cross-tenant connections, event logs, and managing UDRs/topologies and reachability analysis. |
+| Integrations & Coding Patterns | L70-L73 | Using Azure Resource Graph to query, filter, and report on Azure Virtual Network Manager resources, configurations, and deployments at scale across subscriptions |
 
 ### Troubleshooting
 | Topic | URL |

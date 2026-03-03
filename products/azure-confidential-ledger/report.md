@@ -12,6 +12,11 @@ category_descriptions:
     data.
   deployment: How to deploy and provision Azure Confidential Ledger instances using
     ARM templates or Terraform, including required parameters and configuration steps.
+skill_description: Expert knowledge for Azure Confidential Ledger development including
+  decision making, security, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Confidential Ledger applications. Not for
+  Azure Confidential Computing (use azure-confidential-computing), Azure Key Vault
+  (use azure-key-vault), Azure Virtual Enclaves (use azure-virtual-enclaves).
 ---
 # Azure Confidential Ledger Crawl Report
 

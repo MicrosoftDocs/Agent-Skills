@@ -24,6 +24,11 @@ category_descriptions:
   decision-making: Guidance on sizing and capacity, network isolation, reservations,
     and planning or executing migrations to and from Azure Cache for Redis (including
     VNets and Private Link).
+skill_description: Expert knowledge for Azure Cache for Redis development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure
+  Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache).
 ---
 # Azure Cache for Redis Crawl Report
 

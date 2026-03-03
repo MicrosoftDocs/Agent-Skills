@@ -1,6 +1,6 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Automation applications.
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Automation applications. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Automation. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L44 | Diagnosing and fixing Azure Automation issues: DSC/State Configuration, Hybrid Runbook Workers (agent/extension), managed identities, runbook failures, shared resources, and collecting support diagnostics. |
-| Best Practices | L45-L54 | Best practices for structuring, chaining, and managing runbooks, handling errors and output streams, ensuring resilient execution, and avoiding context-switching issues in Azure Automation. |
-| Decision Making | L55-L64 | Guidance on choosing Azure Automation runbook types and planning migrations (Orchestrator, Log Analytics agent, Hybrid workers, Run As accounts, AzureRM→Az, and agent-to-extension changes). |
-| Limits & Quotas | L65-L72 | Limits, quotas, and version/support details for Azure Automation: DSC extension changes, Automation resource limits, subscription quotas, and Change Tracking/Inventory support with AMA. |
-| Security | L73-L93 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, private endpoints, policies, and safe use of credentials/certs in runbooks and Terraform. |
-| Configuration | L94-L134 | Configuring Azure Automation runbooks and DSC: alerts, schedules, parameters, hybrid workers, source control, Python/PowerShell modules, policy, and Change Tracking/Inventory at scale. |
-| Integrations & Coding Patterns | L135-L147 | Integrating Automation runbooks with Azure/AWS/Office 365/SQL, authenticating via identities/webhooks, deploying ARM, sending logs to Monitor, and emailing via SendGrid |
-| Deployment | L148-L156 | Guides for deploying resilient Automation accounts and Hybrid Runbook Workers (Windows/Linux), using availability zones, DR planning, and CI/CD with DSC and Chocolatey. |
+| Troubleshooting | L36-L46 | Diagnosing and fixing Azure Automation issues: DSC/State Configuration, Hybrid Runbook Workers (agent/extension), managed identities, runbook failures, shared resources, and collecting support diagnostics. |
+| Best Practices | L47-L56 | Best practices for structuring, chaining, and managing runbooks, handling errors and output streams, ensuring resilient execution, and avoiding context-switching issues in Azure Automation. |
+| Decision Making | L57-L66 | Guidance on choosing Azure Automation runbook types and planning migrations (Orchestrator, Log Analytics agent, Hybrid workers, Run As accounts, AzureRM→Az, and agent-to-extension changes). |
+| Limits & Quotas | L67-L74 | Limits, quotas, and version/support details for Azure Automation: DSC extension changes, Automation resource limits, subscription quotas, and Change Tracking/Inventory support with AMA. |
+| Security | L75-L95 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, private endpoints, policies, and safe use of credentials/certs in runbooks and Terraform. |
+| Configuration | L96-L136 | Configuring Azure Automation runbooks and DSC: alerts, schedules, parameters, hybrid workers, source control, Python/PowerShell modules, policy, and Change Tracking/Inventory at scale. |
+| Integrations & Coding Patterns | L137-L149 | Integrating Automation runbooks with Azure/AWS/Office 365/SQL, authenticating via identities/webhooks, deploying ARM, sending logs to Monitor, and emailing via SendGrid |
+| Deployment | L150-L158 | Guides for deploying resilient Automation accounts and Hybrid Runbook Workers (Windows/Linux), using availability zones, DR planning, and CI/CD with DSC and Chocolatey. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -17,6 +17,12 @@ category_descriptions:
   decision-making: Guidance on selecting the best Custom Vision domain for your scenario
     and planning migrations from Custom Vision to other Azure or third‑party vision
     services.
+skill_description: Expert knowledge for Azure AI Custom Vision development including
+  best practices, decision making, limits & quotas, security, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure AI Custom
+  Vision applications. Not for Azure AI Vision (use azure-ai-vision), Azure AI Document
+  Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer),
+  Azure AI Anomaly Detector (use azure-anomaly-detector).
 ---
 # Azure AI Custom Vision Crawl Report
 

@@ -22,6 +22,12 @@ category_descriptions:
     and Azure Firewall–protected spoke access.
   decision-making: Guidance on when/how to upgrade Virtual WAN from Basic to Standard,
     and how to choose Virtual WAN partners and hub locations for your network design.
+skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
+  decision making, architecture & design patterns, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Virtual WAN applications. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Virtual WAN Crawl Report
 

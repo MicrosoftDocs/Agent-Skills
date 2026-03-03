@@ -28,6 +28,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Durable Functions and Azure Functions runtime
     issues, AZFD/AZFW error codes, storage/config problems, and Node.js/Python deployment
     or scheduling failures.
+skill_description: Expert knowledge for Azure Functions development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Functions applications. Not for Azure App
+  Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure
+  Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Functions Crawl Report
 

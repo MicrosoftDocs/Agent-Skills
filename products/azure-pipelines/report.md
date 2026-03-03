@@ -28,6 +28,12 @@ category_descriptions:
   best-practices: 'Best practices for faster, reliable pipelines: caching, cross-platform
     scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact
     Analysis, and UI test configuration.'
+skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Pipelines applications. Not for Azure DevOps
+  (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos),
+  Azure Test Plans (use azure-test-plans).
 ---
 # Azure Pipelines Crawl Report
 

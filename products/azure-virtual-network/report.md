@@ -21,6 +21,12 @@ category_descriptions:
   architecture-patterns: 'Designing VNet architectures: subnet extension for migrations,
     VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning,
     and custom routing options.'
+skill_description: Expert knowledge for Azure Virtual Network development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Virtual Network applications. Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure ExpressRoute (use azure-expressroute).
 ---
 # Azure Virtual Network Crawl Report
 
@@ -36,7 +42,7 @@ category_descriptions:
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 132
-- **Deleted Pages**: 7
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
@@ -53,16 +59,6 @@ category_descriptions:
 | *(Unclassified)* | 73 | 55.3% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Troubleshoot outbound SMTP connectivity problems~~ (https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-outbound-smtp-connectivity)
-- ~~Troubleshoot Azure VM connectivity problems~~ (https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-vm-connectivity)
-- ~~Test VM network throughput by using NTTTCP~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-bandwidth-testing)
-- ~~Test network latency between Azure VMs~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency)
-- ~~Troubleshoot virtual network deletion failures~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-cannot-delete-vnet)
-- ~~Troubleshoot connectivity problems between Azure VMs~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-connectivity-problem-between-vms)
-- ~~Troubleshoot virtual network peering issues~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-peering-issues)
 
 ## Classified Pages
 

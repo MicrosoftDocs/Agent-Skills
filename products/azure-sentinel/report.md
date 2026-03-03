@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: Limits, quotas, pricing, and retention tiers for Sentinel data, MCP
     server, search jobs, watchlists, ASIM, and workspace removal impact on stored
     logs and resources
+skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Sentinel applications. Not for Azure Defender
+  For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure
+  Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
 ---
 # Azure Sentinel Crawl Report
 

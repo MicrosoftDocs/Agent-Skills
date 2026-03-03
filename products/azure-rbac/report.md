@@ -20,6 +20,13 @@ category_descriptions:
     role structure, permissions, and step-by-step creation using the Azure portal
   integrations: How to assign, list, and query Azure RBAC role assignments using portal,
     CLI, PowerShell, Bicep/ARM templates, REST API, and managed identities
+skill_description: Expert knowledge for Azure Role-based access control development
+  including troubleshooting, best practices, decision making, limits & quotas, security,
+  configuration, and integrations & coding patterns. Use when building, debugging,
+  or optimizing Azure Role-based access control applications. Not for Azure Active
+  Directory B2C (use azure-active-directory-b2c), Azure Information Protection (use
+  azure-information-protection), Azure Policy (use azure-policy), Azure Security (use
+  azure-security).
 ---
 # Azure Role-based access control Crawl Report
 

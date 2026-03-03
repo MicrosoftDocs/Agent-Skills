@@ -28,6 +28,13 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS,
     HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage,
     capacity, and migration validation errors.'
+skill_description: Expert knowledge for Azure Database for PostgreSQL development
+  including troubleshooting, best practices, decision making, architecture & design
+  patterns, limits & quotas, security, configuration, integrations & coding patterns,
+  and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL
+  applications. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed
+  Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 ---
 # Azure Database for PostgreSQL Crawl Report
 

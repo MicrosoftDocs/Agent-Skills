@@ -19,6 +19,11 @@ category_descriptions:
   troubleshooting: Using Copilot to diagnose and resolve Azure App Service/Functions
     issues and analyze Azure VM disk performance problems, including slow I/O and
     bottlenecks.
+skill_description: Expert knowledge for Azure Copilot development including troubleshooting,
+  decision making, architecture & design patterns, security, configuration, and integrations
+  & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications.
+  Not for Azure AI Foundry (use azure-ai-foundry), Azure Machine Learning (use azure-machine-learning),
+  Azure AI services (use azure-ai-services), Azure Portal (use azure-portal).
 ---
 # Azure Copilot Crawl Report
 

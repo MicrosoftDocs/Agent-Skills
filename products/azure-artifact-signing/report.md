@@ -14,6 +14,9 @@ category_descriptions:
   integrations: How to integrate Azure Artifact Signing with supported tools and CI/CD
     systems, configure signing workflows, and apply recommended coding and automation
     patterns.
+skill_description: Expert knowledge for Azure Artifact Signing development including
+  best practices, decision making, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Artifact Signing applications.
 ---
 # Azure Artifact Signing Crawl Report
 

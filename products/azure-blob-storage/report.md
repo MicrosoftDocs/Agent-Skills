@@ -25,6 +25,12 @@ category_descriptions:
   integrations: SDK and CLI patterns for uploading, copying, listing, leasing, tagging,
     tiering, and securing blobs/containers, plus BlobFuse2 mounts, ADLS/ABFS access,
     events, and analytics integrations.
+skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Blob Storage applications. Not for Azure Files (use azure-files), Azure Table Storage
+  (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure
+  Cosmos DB (use azure-cosmos-db).
 ---
 # Azure Blob Storage Crawl Report
 
@@ -37,9 +43,9 @@ category_descriptions:
 - **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 80
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 325
+- **Unchanged**: 405
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -58,30 +64,6 @@ category_descriptions:
 | *(Unclassified)* | 71 | 17.5% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Storage Actions documentation](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/)
-- [What is Azure Storage Actions?](https://learn.microsoft.com/en-us/azure/storage-actions/overview)
-- [Azure portal](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-portal)
-- [PowerShell](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-powershell)
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-cli)
-- [ARM](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-arm)
-- [Bicep](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-bicep)
-- [Terraform](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-terraform)
-- [.NET](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-dotnet)
-- [Best practices](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-best-practices)
-- [Scenarios](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-scenarios)
-- [Azure roles required to edit a task](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles)
-- [Conditions](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions)
-- [Operations](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-operations)
-- [Storage task assignment](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment)
-- [Azure roles for assignments](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-authorization-roles-assign)
-- [Costs and billing](https://learn.microsoft.com/en-us/azure/storage-actions/storage-actions-plan-manage-costs)
-- [Create a storage task](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-create)
-- [Compose a condition](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-conditions-operations-edit)
-- [Create and manage an assignment](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-assignment-create)
-- *...and 60 more*
 
 ## Classified Pages
 

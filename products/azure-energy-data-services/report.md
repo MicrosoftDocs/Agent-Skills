@@ -21,6 +21,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing manifest ingestion failures in Azure Data
     Manager for Energy using Airflow logs, including log analysis steps and common
     error patterns.
+skill_description: Expert knowledge for Azure Energy Data Services development including
+  troubleshooting, decision making, architecture & design patterns, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Energy Data Services applications. Not for Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
 ---
 # Azure Energy Data Services Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-bastion
-description: Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Bastion applications.
+description: Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Bastion applications. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Bastion. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and resolving common Azure Bastion problems, including connection failures, RDP/SSH issues, network/configuration misconfigurations, and basic troubleshooting steps. |
-| Best Practices | L38-L42 | Guidance on reducing Azure Bastion costs through sizing, scaling, and usage patterns while maintaining secure remote access and compliance best practices. |
-| Decision Making | L43-L48 | Choosing the right Azure Bastion SKU (Basic/Standard/Developer), understanding feature and cost differences, and viewing or upgrading existing Bastion SKU tiers |
-| Architecture & Design Patterns | L49-L55 | Architectural options and patterns for Azure Bastion: hub/spoke and peered VNets, private-only deployments, network/topology design, and deployment guidance for secure remote access. |
-| Security | L56-L61 | Securing Azure Bastion: configuring NSGs for Bastion-connected VMs, hardening Bastion hosts, locking down access, and following security best practices. |
-| Configuration | L62-L76 | Configuring Azure Bastion settings, scaling, IP-based and Kerberos access, monitoring/metrics, session management/recording, native client use, and shareable links. |
-| Integrations & Coding Patterns | L77-L84 | How to use Azure Bastion with AKS private clusters, VM scale sets, and native Windows/Linux clients, including SSH/RDP connectivity patterns and file transfer via Bastion native clients. |
+| Troubleshooting | L35-L39 | Diagnosing and resolving common Azure Bastion problems, including connection failures, RDP/SSH issues, network/configuration misconfigurations, and basic troubleshooting steps. |
+| Best Practices | L40-L44 | Guidance on reducing Azure Bastion costs through sizing, scaling, and usage patterns while maintaining secure remote access and compliance best practices. |
+| Decision Making | L45-L50 | Choosing the right Azure Bastion SKU (Basic/Standard/Developer), understanding feature and cost differences, and viewing or upgrading existing Bastion SKU tiers |
+| Architecture & Design Patterns | L51-L57 | Architectural options and patterns for Azure Bastion: hub/spoke and peered VNets, private-only deployments, network/topology design, and deployment guidance for secure remote access. |
+| Security | L58-L63 | Securing Azure Bastion: configuring NSGs for Bastion-connected VMs, hardening Bastion hosts, locking down access, and following security best practices. |
+| Configuration | L64-L78 | Configuring Azure Bastion settings, scaling, IP-based and Kerberos access, monitoring/metrics, session management/recording, native client use, and shareable links. |
+| Integrations & Coding Patterns | L79-L86 | How to use Azure Bastion with AKS private clusters, VM scale sets, and native Windows/Linux clients, including SSH/RDP connectivity patterns and file transfer via Bastion native clients. |
 
 ### Troubleshooting
 | Topic | URL |

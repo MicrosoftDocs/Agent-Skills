@@ -28,6 +28,12 @@ category_descriptions:
   decision-making: Guidance on choosing Azure Spring Apps plans and migrating Spring
     workloads, configs, gateways, and networking from ASA to Enterprise, AKS, or Container
     Apps, including logging and Tanzu replacements
+skill_description: Expert knowledge for Azure Spring Apps development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Spring Apps applications. Not for Azure
+  App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps), Azure Functions (use azure-functions).
 ---
 # Azure Spring Apps Crawl Report
 

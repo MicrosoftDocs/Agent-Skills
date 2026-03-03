@@ -12,6 +12,11 @@ category_descriptions:
   configuration: 'Setting up Metrics Advisor: configuring alert hooks (email/webhook),
     alerting rules, data feed and detection settings, and tuning anomaly detection
     behavior for your instance.'
+skill_description: Expert knowledge for Azure AI Metrics Advisor development including
+  decision making, security, configuration, and integrations & coding patterns. Use
+  when building, debugging, or optimizing Azure AI Metrics Advisor applications. Not
+  for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor),
+  Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure AI Metrics Advisor Crawl Report
 

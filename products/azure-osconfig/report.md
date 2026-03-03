@@ -11,6 +11,11 @@ category_descriptions:
     or reporting problems.
   security: Configuring Windows security via OSConfig, including App Control for Business
     policies and applying Windows Server 2025 security baselines.
+skill_description: Expert knowledge for Azure Osconfig development including troubleshooting,
+  security, configuration, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Osconfig applications. Not for Azure Update Manager
+  (use azure-update-manager), Azure Automation (use azure-automation), Azure Policy
+  (use azure-policy).
 ---
 # Azure Osconfig Crawl Report
 

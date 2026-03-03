@@ -16,6 +16,12 @@ category_descriptions:
   decision-making: Guides for planning and executing migrations and upgrades between
     Azure Vision Image Analysis and Read OCR versions/containers, including breaking
     changes and app update steps.
+skill_description: Expert knowledge for Azure AI Vision development including decision
+  making, limits & quotas, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure AI Vision applications. Not for
+  Azure AI Custom Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer),
+  Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Immersive
+  Reader (use azure-immersive-reader).
 ---
 # Azure AI Vision Crawl Report
 

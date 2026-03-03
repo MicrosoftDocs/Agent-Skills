@@ -21,6 +21,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Bastion problems, including
     connection failures, RDP/SSH issues, network/configuration misconfigurations,
     and basic troubleshooting steps.
+skill_description: Expert knowledge for Azure Bastion development including troubleshooting,
+  best practices, decision making, architecture & design patterns, security, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Azure Bastion applications. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Bastion Crawl Report
 

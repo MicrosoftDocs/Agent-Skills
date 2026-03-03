@@ -19,6 +19,12 @@ category_descriptions:
     with Azure Monitor logs.
   integrations: Using VS Code dev tunnels to securely connect to Azure Dev Box, including
     setup, authentication, and remote development workflow configuration.
+skill_description: Expert knowledge for Azure Dev Box development including troubleshooting,
+  best practices, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Dev
+  Box applications. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure Lab Services (use azure-lab-services).
 ---
 # Azure Dev Box Crawl Report
 

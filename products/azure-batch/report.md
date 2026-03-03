@@ -27,6 +27,12 @@ category_descriptions:
   architecture-patterns: Architectures and best practices for bursting on-prem render
     farms to Azure Batch, including storage layout, data movement patterns, and performance-optimized
     rendering workflows.
+skill_description: Expert knowledge for Azure Batch development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Batch applications. Not for Azure HDInsight
+  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
+  (use azure-stream-analytics), Azure Functions (use azure-functions).
 ---
 # Azure Batch Crawl Report
 

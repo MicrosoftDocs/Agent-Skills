@@ -25,6 +25,12 @@ category_descriptions:
     diagnostics.'
   deployment: Guides for moving Web PubSub across regions, configuring Premium autoscale,
     and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub.
+skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Web PubSub applications. Not for Azure
+  SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
+  Azure Service Bus (use azure-service-bus).
 ---
 # Azure Web PubSub Crawl Report
 

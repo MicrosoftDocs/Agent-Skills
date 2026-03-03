@@ -27,6 +27,12 @@ category_descriptions:
     considerations.
   troubleshooting: Investigating IoT Central changes with audit logs, and diagnosing/fixing
     device connectivity, telemetry, and data export issues.
+skill_description: Expert knowledge for Azure IoT Central development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure IoT Central applications. Not for Azure
+  IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Edge (use azure-iot-edge),
+  Azure Defender For Iot (use azure-defender-for-iot).
 ---
 # Azure IoT Central Crawl Report
 

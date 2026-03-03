@@ -14,6 +14,11 @@ category_descriptions:
     regional/HA behavior, and throttling, quotas, and usage constraints for experiments'
   integrations: Using CLI/REST to create and manage Chaos Studio experiments and routing
     Chaos Agent telemetry to Application Insights for monitoring
+skill_description: Expert knowledge for Chaos Studio development including troubleshooting,
+  limits & quotas, security, configuration, and integrations & coding patterns. Use
+  when building, debugging, or optimizing Chaos Studio applications. Not for Azure
+  Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability
+  (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
 ---
 # Chaos Studio Crawl Report
 

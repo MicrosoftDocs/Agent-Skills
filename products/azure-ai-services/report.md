@@ -24,6 +24,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Content Understanding issues, including
     model errors, data ingestion problems, configuration mistakes, and troubleshooting
     steps for failed analyses.
+skill_description: Expert knowledge for Azure AI services development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  AI services applications. Not for Azure AI Foundry (use azure-ai-foundry), Azure
+  Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search),
+  Azure Open Datasets (use azure-open-datasets).
 ---
 # Azure AI services Crawl Report
 

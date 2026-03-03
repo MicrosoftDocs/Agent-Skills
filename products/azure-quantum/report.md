@@ -26,6 +26,10 @@ category_descriptions:
   best-practices: Best practices for using QDK in VS Code with Copilot, optimizing
     large Q# programs via resource estimation, and systematically testing and debugging
     quantum code.
+skill_description: Expert knowledge for Azure Quantum development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Quantum applications.
 ---
 # Azure Quantum Crawl Report
 

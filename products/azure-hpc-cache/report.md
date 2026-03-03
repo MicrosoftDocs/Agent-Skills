@@ -27,6 +27,12 @@ category_descriptions:
     strategies for cached workloads.
   limits-quotas: How to request and manage Azure HPC Cache quota increases, including
     limits on cache instances, capacities, and the support process for raising quotas.
+skill_description: Expert knowledge for Azure HPC Cache development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure HPC Cache applications. Not for Azure Managed
+  Lustre (use azure-managed-lustre), Azure NetApp Files (use azure-netapp-files),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure HPC Cache Crawl Report
 

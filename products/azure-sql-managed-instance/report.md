@@ -28,6 +28,13 @@ category_descriptions:
   deployment: 'Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform),
     networking, region/subnet moves, start/stop, DR/migration, replication, and operation
     timing/cancellation.'
+skill_description: Expert knowledge for Azure SQL Managed Instance development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
+  Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual
+  Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db),
+  Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Managed Instance Crawl Report
 

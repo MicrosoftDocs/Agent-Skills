@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing VM access, connectivity, deployment, and
     lab-creation issues in Azure Lab Services, including when to redeploy or reimage
     VMs.
+skill_description: Expert knowledge for Azure Lab Services development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Lab Services applications. Not for Azure
+  DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Virtual Desktop (use azure-virtual-desktop), Azure Dev Box (use azure-dev-box).
 ---
 # Azure Lab Services Crawl Report
 

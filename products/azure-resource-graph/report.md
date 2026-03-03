@@ -17,6 +17,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Resource Graph issues with alerts,
     query syntax/runtime errors, and Power BI connector connectivity, auth, and data
     refresh problems.
+skill_description: Expert knowledge for Azure Resource Graph development including
+  troubleshooting, best practices, decision making, limits & quotas, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Azure Resource Graph applications. Not for Azure Monitor (use azure-monitor), Azure
+  Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
+  Azure Cost Management (use azure-cost-management).
 ---
 # Azure Resource Graph Crawl Report
 

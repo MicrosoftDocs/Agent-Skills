@@ -18,6 +18,12 @@ category_descriptions:
   limits-quotas: Details on current Service Connector feature gaps, unsupported scenarios,
     resource limits, and constraints you must consider when designing or troubleshooting
     connections.
+skill_description: Expert knowledge for Azure Service Connector development including
+  troubleshooting, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Service
+  Connector applications. Not for Azure API Management (use azure-api-management),
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure Service Connector Crawl Report
 

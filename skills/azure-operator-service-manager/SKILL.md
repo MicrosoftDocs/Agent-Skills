@@ -1,6 +1,6 @@
 ---
 name: azure-operator-service-manager
-description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
+description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Operator Service Manager. Covers t
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L36 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart installation failures in AOSM CNF deployments. |
-| Best Practices | L37-L44 | Best practices for onboarding/deploying AOSM, designing configuration group schemas, structuring Helm charts, and cleaning up publisher artifacts efficiently. |
-| Security | L45-L52 | Securing AOSM with Private Link, custom RBAC/roles, and User Assigned Managed Identities for controlled, least-privilege access and secure SNS/service operator deployments. |
-| Configuration | L53-L62 | Configuring AOSM runtime behavior: cluster registry for edge resiliency, pausing/resuming deployments, Helm cleanup/test settings, NFO extension cluster commands, and geo-replicated artifact stores. |
-| Integrations & Coding Patterns | L63-L72 | Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and artifacts (ACR/storage-backed stores), and add ARM resources to network service designs |
+| Troubleshooting | L33-L38 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart installation failures in AOSM CNF deployments. |
+| Best Practices | L39-L46 | Best practices for onboarding/deploying AOSM, designing configuration group schemas, structuring Helm charts, and cleaning up publisher artifacts efficiently. |
+| Security | L47-L54 | Securing AOSM with Private Link, custom RBAC/roles, and User Assigned Managed Identities for controlled, least-privilege access and secure SNS/service operator deployments. |
+| Configuration | L55-L64 | Configuring AOSM runtime behavior: cluster registry for edge resiliency, pausing/resuming deployments, Helm cleanup/test settings, NFO extension cluster commands, and geo-replicated artifact stores. |
+| Integrations & Coding Patterns | L65-L74 | Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and artifacts (ACR/storage-backed stores), and add ARM resources to network service designs |
 
 ### Troubleshooting
 | Topic | URL |

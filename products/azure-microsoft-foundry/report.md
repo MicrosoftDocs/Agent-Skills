@@ -28,6 +28,12 @@ category_descriptions:
   architecture-patterns: Designing resilient Foundry solutions, including high availability
     patterns, redundancy, and disaster recovery strategies for Foundry Agent Service
     and project architectures.
+skill_description: Expert knowledge for Microsoft Foundry development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Microsoft Foundry applications. Not for Azure
+  AI Foundry (use azure-ai-foundry), Azure AI Foundry Local (use azure-ai-foundry-local),
+  Azure Foundry Classic (use azure-foundry-classic), Azure Machine Learning (use azure-machine-learning).
 ---
 # Microsoft Foundry Crawl Report
 

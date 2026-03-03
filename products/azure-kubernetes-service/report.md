@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: 'AKS limits, quotas, and scaling behavior: node/pod capacity, egress/NAT,
     load balancers, Istio performance, identities, SKUs/regions, and Kubernetes/Fleet
     version lifecycles and support.'
+skill_description: Expert knowledge for Azure Kubernetes Service (AKS) development
+  including troubleshooting, best practices, decision making, architecture & design
+  patterns, limits & quotas, security, configuration, integrations & coding patterns,
+  and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service
+  (AKS) applications. Not for Azure Container Apps (use azure-container-apps), Azure
+  Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use
+  azure-redhat-openshift), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
 ---
 # Azure Kubernetes Service (AKS) Crawl Report
 

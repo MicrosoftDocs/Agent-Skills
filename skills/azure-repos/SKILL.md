@@ -1,6 +1,6 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Repos applications.
+description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Repos applications. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Repos. Covers troubleshooting, bes
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L48 | Diagnosing and fixing Git/TFVC issues in Azure Repos: index.lock, push/RPC errors, merge/lock conflicts, undo/recover changes, and troubleshooting CodeQL, dependency, and secret scanning. |
-| Best Practices | L49-L65 | Best practices for Git/TFVC in Azure Repos: branching, PR review/merge, README, .gitignore, author info, large binaries, history cleanup, repo health, cross‑platform use, and workspace cleanup. |
-| Decision Making | L66-L74 | Guidance on choosing and migrating version control in Azure Repos: Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local vs server TFVC workspaces. |
-| Architecture & Design Patterns | L75-L83 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
-| Limits & Quotas | L84-L89 | Repo size/branch/file limits in Azure Repos Git, and which languages/package managers are supported for GitHub Advanced Security dependency scanning. |
-| Security | L90-L112 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH), branch/repo/PR permissions and policies, SSH key safety, secure cloning/import, and GitHub Advanced Security setup |
-| Configuration | L113-L144 | Configuring Azure Repos and Visual Studio for Git/TFVC: branch and PR policies, notifications, templates, work item linking, code/secret/dependency scanning, and TFVC check-in/checkout settings. |
-| Integrations & Coding Patterns | L145-L199 | Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams, scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and permissions. |
-| Deployment | L200-L203 | Guidance for moving/migrating Azure Repos Git repositories between Azure DevOps projects, including prerequisites, limitations, and step-by-step procedures. |
+| Troubleshooting | L37-L50 | Diagnosing and fixing Git/TFVC issues in Azure Repos: index.lock, push/RPC errors, merge/lock conflicts, undo/recover changes, and troubleshooting CodeQL, dependency, and secret scanning. |
+| Best Practices | L51-L67 | Best practices for Git/TFVC in Azure Repos: branching, PR review/merge, README, .gitignore, author info, large binaries, history cleanup, repo health, cross‑platform use, and workspace cleanup. |
+| Decision Making | L68-L76 | Guidance on choosing and migrating version control in Azure Repos: Git vs TFVC, SVN/TFVC-to-Git migration strategies, mixed Git+TFVC use, and local vs server TFVC workspaces. |
+| Architecture & Design Patterns | L77-L85 | Designing and choosing TFVC branching structures/strategies, planning strategic branches, implementing feature isolation, and managing branches for DevOps workflows in Azure Repos. |
+| Limits & Quotas | L86-L91 | Repo size/branch/file limits in Azure Repos Git, and which languages/package managers are supported for GitHub Advanced Security dependency scanning. |
+| Security | L92-L114 | Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH), branch/repo/PR permissions and policies, SSH key safety, secure cloning/import, and GitHub Advanced Security setup |
+| Configuration | L115-L146 | Configuring Azure Repos and Visual Studio for Git/TFVC: branch and PR policies, notifications, templates, work item linking, code/secret/dependency scanning, and TFVC check-in/checkout settings. |
+| Integrations & Coding Patterns | L147-L201 | Integrating Azure Repos with tools (Functions, Node.js, IDEs, Slack/Teams, scanners) and automating workflows via TFVC/tf.exe and Git-specific commands and permissions. |
+| Deployment | L202-L205 | Guidance for moving/migrating Azure Repos Git repositories between Azure DevOps projects, including prerequisites, limitations, and step-by-step procedures. |
 
 ### Troubleshooting
 | Topic | URL |

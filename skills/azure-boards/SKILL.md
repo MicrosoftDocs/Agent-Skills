@@ -1,6 +1,6 @@
 ---
 name: azure-boards
-description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications.
+description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications. Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Boards. Covers troubleshooting, be
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Azure Boards + Excel/Office integration issues (sync, add-in, connection, mapping) and resolving backlog nesting/reordering errors. |
-| Best Practices | L42-L49 | Best practices for using Azure Boards: managing work items/bugs, Kanban and Scrum sprints, capacity planning, cross-team scaling (incl. SAFe), and building effective queries/charts. |
-| Decision Making | L50-L57 | Guidance on choosing Azure Boards processes, tools, and integrations, plus planning cross-team dependencies and migrations to get the right setup for your organization. |
-| Limits & Quotas | L58-L63 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
-| Security | L64-L70 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies to protect work items and boards. |
-| Configuration | L71-L85 | Configuring Azure Boards processes, fields, and Kanban WIP limits, and integrating Boards with GitHub (repos, badges, GitHub Enterprise) plus using queries and work item field references. |
-| Integrations & Coding Patterns | L86-L94 | Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack, Teams, and writing WIQL queries for integrated work item tracking workflows |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Azure Boards + Excel/Office integration issues (sync, add-in, connection, mapping) and resolving backlog nesting/reordering errors. |
+| Best Practices | L44-L51 | Best practices for using Azure Boards: managing work items/bugs, Kanban and Scrum sprints, capacity planning, cross-team scaling (incl. SAFe), and building effective queries/charts. |
+| Decision Making | L52-L59 | Guidance on choosing Azure Boards processes, tools, and integrations, plus planning cross-team dependencies and migrations to get the right setup for your organization. |
+| Limits & Quotas | L60-L65 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
+| Security | L66-L72 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies to protect work items and boards. |
+| Configuration | L73-L87 | Configuring Azure Boards processes, fields, and Kanban WIP limits, and integrating Boards with GitHub (repos, badges, GitHub Enterprise) plus using queries and work item field references. |
+| Integrations & Coding Patterns | L88-L96 | Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack, Teams, and writing WIQL queries for integrated work item tracking workflows |
 
 ### Troubleshooting
 | Topic | URL |

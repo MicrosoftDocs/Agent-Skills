@@ -27,6 +27,12 @@ category_descriptions:
     and responsible GenAI usage.
   decision-making: Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating
     capacity, choosing pricing tiers, and planning costs and hardware for search workloads
+skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure AI Search applications. Not for Azure Cosmos
+  DB (use azure-cosmos-db), Azure SQL Database (use azure-sql-database), Azure Table
+  Storage (use azure-table-storage).
 ---
 # Azure AI Search Crawl Report
 

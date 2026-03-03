@@ -17,6 +17,12 @@ category_descriptions:
   integrations: Automating MySQL-to-Azure Database for MySQL migrations using Azure
     Database Migration Service with PowerShell scripts, parameters, and end-to-end
     workflow examples.
+skill_description: Expert knowledge for Azure Database Migration service development
+  including troubleshooting, decision making, limits & quotas, security, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Database Migration service applications. Not for Azure Migrate (use azure-migrate),
+  Azure Site Recovery (use azure-site-recovery), Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure Database Migration service Crawl Report
 

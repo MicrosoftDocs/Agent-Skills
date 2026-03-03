@@ -15,6 +15,12 @@ category_descriptions:
     rules at scale across subscriptions and resource groups
   limits-quotas: Details on how long Azure Service Health notifications are kept,
     their lifecycle stages, and retention behavior for different event types
+skill_description: Expert knowledge for Azure Service Health development including
+  troubleshooting, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Service
+  Health applications. Not for Azure Monitor (use azure-monitor), Azure Reliability
+  (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use
+  azure-quotas).
 ---
 # Azure Service Health Crawl Report
 

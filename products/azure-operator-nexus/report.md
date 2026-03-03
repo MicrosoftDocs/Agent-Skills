@@ -25,6 +25,12 @@ category_descriptions:
   architecture-patterns: 'Designing near-edge storage for Azure Operator Nexus: architecture
     choices, data locality, performance, capacity planning, redundancy, and integration
     with Nexus network/compute.'
+skill_description: Expert knowledge for Azure Operator Nexus development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, and deployment. Use when building, debugging,
+  or optimizing Azure Operator Nexus applications. Not for Azure Network Function
+  Manager (use azure-network-function-manager), Azure Operator Insights (use azure-operator-insights),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Operator Nexus Crawl Report
 

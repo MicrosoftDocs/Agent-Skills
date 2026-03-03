@@ -1,6 +1,6 @@
 ---
 name: azure-iot
-description: Expert knowledge for Azure IoT development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure IoT applications.
+description: Expert knowledge for Azure IoT development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure IoT applications. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure IoT. Covers troubleshooting, best 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Debugging Azure IoT embedded device tutorials, including build/deploy failures, connection/auth issues, sample app errors, and how to collect logs and diagnose common device-side problems. |
-| Best Practices | L38-L43 | Guidance on resilient device reconnection patterns for Azure IoT and how to model IoT Plug and Play devices using DTDL for interoperability and digital twins. |
-| Decision Making | L44-L49 | Guidance on using IoT Plug and Play device models in solutions and deciding between Azure IoT C vs Embedded C SDKs based on device, performance, and integration needs. |
-| Architecture & Design Patterns | L50-L55 | Reference architectures and patterns for industrial IoT on Azure, including dataspace-based designs, component choices, and end-to-end implementation guidance for industrial scenarios. |
-| Security | L56-L60 | Guidance on securely using Azure IoT Explorer with IoT Hub, including authentication, permissions, connection strings, and best practices to protect devices and hub access. |
-| Configuration | L61-L65 | Guidance on choosing the right Azure IoT device and service SDKs (languages, platforms, and capabilities) for building and integrating IoT solutions. |
-| Integrations & Coding Patterns | L66-L77 | Patterns and code for integrating devices via MQTT and IoT Plug and Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and connecting SAP ERP to Azure IoT. |
+| Troubleshooting | L35-L39 | Debugging Azure IoT embedded device tutorials, including build/deploy failures, connection/auth issues, sample app errors, and how to collect logs and diagnose common device-side problems. |
+| Best Practices | L40-L45 | Guidance on resilient device reconnection patterns for Azure IoT and how to model IoT Plug and Play devices using DTDL for interoperability and digital twins. |
+| Decision Making | L46-L51 | Guidance on using IoT Plug and Play device models in solutions and deciding between Azure IoT C vs Embedded C SDKs based on device, performance, and integration needs. |
+| Architecture & Design Patterns | L52-L57 | Reference architectures and patterns for industrial IoT on Azure, including dataspace-based designs, component choices, and end-to-end implementation guidance for industrial scenarios. |
+| Security | L58-L62 | Guidance on securely using Azure IoT Explorer with IoT Hub, including authentication, permissions, connection strings, and best practices to protect devices and hub access. |
+| Configuration | L63-L67 | Guidance on choosing the right Azure IoT device and service SDKs (languages, platforms, and capabilities) for building and integrating IoT solutions. |
+| Integrations & Coding Patterns | L68-L79 | Patterns and code for integrating devices via MQTT and IoT Plug and Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and connecting SAP ERP to Azure IoT. |
 
 ### Troubleshooting
 | Topic | URL |

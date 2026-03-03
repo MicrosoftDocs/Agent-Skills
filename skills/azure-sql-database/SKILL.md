@@ -1,6 +1,6 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications.
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure SQL Database. Covers troubleshooti
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L56 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), capacity/log, connectivity/transient errors, sync, Hyperscale, Managed Instance, and shard map problems. |
-| Best Practices | L57-L73 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, read scale-out, maintenance, auditing, file space, Data Sync, and post-migration behavior. |
-| Decision Making | L74-L99 | Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale options, automation, licensing/Hybrid Benefit, and migration paths between models and features. |
-| Architecture & Design Patterns | L100-L118 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
-| Limits & Quotas | L119-L132 | Limits, quotas, and resource caps for Azure SQL (DTU/vCore, elastic pools, backups), plus free tier/free account constraints and how to request quota increases. |
-| Security | L133-L198 | Configuring Azure SQL security: authentication (Entra, MFA, MI), network isolation, auditing/Defender, encryption (TDE, Always Encrypted, CMK), data masking/classification, and compliance policies. |
-| Configuration | L199-L266 | Configuring Azure SQL databases: monitoring, maintenance, backups/immutability, scaling and elastic pools, geo-replication/failover, security/TLS, Data Sync, CLI/PowerShell/REST setup and operations. |
-| Integrations & Coding Patterns | L267-L296 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node, Python, Spark, Stream Analytics) plus PowerShell automation for sharding, scaling, replication, backup/restore, and auditing. |
-| Deployment | L297-L312 | Deploying and configuring Azure SQL databases: automation (GitHub Actions, ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves, and feature availability by region. |
+| Troubleshooting | L37-L58 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), capacity/log, connectivity/transient errors, sync, Hyperscale, Managed Instance, and shard map problems. |
+| Best Practices | L59-L75 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, read scale-out, maintenance, auditing, file space, Data Sync, and post-migration behavior. |
+| Decision Making | L76-L101 | Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale options, automation, licensing/Hybrid Benefit, and migration paths between models and features. |
+| Architecture & Design Patterns | L102-L120 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
+| Limits & Quotas | L121-L134 | Limits, quotas, and resource caps for Azure SQL (DTU/vCore, elastic pools, backups), plus free tier/free account constraints and how to request quota increases. |
+| Security | L135-L200 | Configuring Azure SQL security: authentication (Entra, MFA, MI), network isolation, auditing/Defender, encryption (TDE, Always Encrypted, CMK), data masking/classification, and compliance policies. |
+| Configuration | L201-L268 | Configuring Azure SQL databases: monitoring, maintenance, backups/immutability, scaling and elastic pools, geo-replication/failover, security/TLS, Data Sync, CLI/PowerShell/REST setup and operations. |
+| Integrations & Coding Patterns | L269-L298 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node, Python, Spark, Stream Analytics) plus PowerShell automation for sharding, scaling, replication, backup/restore, and auditing. |
+| Deployment | L299-L314 | Deploying and configuring Azure SQL databases: automation (GitHub Actions, ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves, and feature availability by region. |
 
 ### Troubleshooting
 | Topic | URL |

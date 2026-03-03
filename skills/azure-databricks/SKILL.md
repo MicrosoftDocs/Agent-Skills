@@ -1,6 +1,6 @@
 ---
 name: azure-databricks
-description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Databricks applications.
+description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Databricks applications. Not for Azure HDInsight (use azure-hdinsight), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Databricks. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L123 | Diagnosing and fixing Azure Databricks errors: compute startup/termination, SQL/runtime exceptions, Spark performance, connectors/ingestion, pipelines, model serving, and tooling (CLI, VS Code, Terraform). |
-| Best Practices | L124-L327 | Best-practice patterns for Databricks architecture, performance, cost, governance, streaming, ML/GenAI, BI, Delta Lake, Vector Search, and operational reliability across Azure Databricks. |
-| Decision Making | L328-L411 | Guides for architectural and migration decisions: choosing runtimes, compute, storage/catalogs, ML/AI serving, Lakebase, federation, and upgrade/migration paths across Azure Databricks. |
-| Architecture & Design Patterns | L412-L459 | Architectural blueprints and patterns for Databricks lakehouse, governance, DR, networking, pipelines, MLOps/LLMOps, RAG, AI agents, Lakebase, and performance/cost optimization. |
-| Limits & Quotas | L460-L555 | Limits, quotas, and constraints for Azure Databricks compute, AI/BI, Lakeflow, connectors, tokens, SQL types/features, Unity Catalog, and model/serving features, plus related workarounds. |
-| Security | L556-L908 | Identity, access control, encryption, networking, compliance, and secure integrations for Azure Databricks, including Unity Catalog, Delta Sharing, OAuth, SCIM, keys, and serverless security. |
-| Configuration | L909-L1556 | Configuring and managing Azure Databricks: workspaces, compute, networking, security, Unity Catalog, Lakehouse Federation, jobs/pipelines, AI/ML/GenAI, Lakebase, connectors, and CLI/bundle settings. |
-| Integrations & Coding Patterns | L1557-L2955 | Integrating Databricks with external systems and tools, using APIs/CLI/SDKs, building pipelines and agents, and applying common Spark/SQL/ML coding patterns and functions. |
-| Deployment | L2956-L3021 | Deploying and managing Azure Databricks workspaces, apps, models, agents, and Lakehouse resources using ARM/Bicep/Terraform/CLI, CI/CD tools, Asset Bundles, and model serving endpoints. |
+| Troubleshooting | L37-L125 | Diagnosing and fixing Azure Databricks errors: compute startup/termination, SQL/runtime exceptions, Spark performance, connectors/ingestion, pipelines, model serving, and tooling (CLI, VS Code, Terraform). |
+| Best Practices | L126-L329 | Best-practice patterns for Databricks architecture, performance, cost, governance, streaming, ML/GenAI, BI, Delta Lake, Vector Search, and operational reliability across Azure Databricks. |
+| Decision Making | L330-L413 | Guides for architectural and migration decisions: choosing runtimes, compute, storage/catalogs, ML/AI serving, Lakebase, federation, and upgrade/migration paths across Azure Databricks. |
+| Architecture & Design Patterns | L414-L461 | Architectural blueprints and patterns for Databricks lakehouse, governance, DR, networking, pipelines, MLOps/LLMOps, RAG, AI agents, Lakebase, and performance/cost optimization. |
+| Limits & Quotas | L462-L557 | Limits, quotas, and constraints for Azure Databricks compute, AI/BI, Lakeflow, connectors, tokens, SQL types/features, Unity Catalog, and model/serving features, plus related workarounds. |
+| Security | L558-L910 | Identity, access control, encryption, networking, compliance, and secure integrations for Azure Databricks, including Unity Catalog, Delta Sharing, OAuth, SCIM, keys, and serverless security. |
+| Configuration | L911-L1558 | Configuring and managing Azure Databricks: workspaces, compute, networking, security, Unity Catalog, Lakehouse Federation, jobs/pipelines, AI/ML/GenAI, Lakebase, connectors, and CLI/bundle settings. |
+| Integrations & Coding Patterns | L1559-L2957 | Integrating Databricks with external systems and tools, using APIs/CLI/SDKs, building pipelines and agents, and applying common Spark/SQL/ML coding patterns and functions. |
+| Deployment | L2958-L3023 | Deploying and managing Azure Databricks workspaces, apps, models, agents, and Lakehouse resources using ARM/Bicep/Terraform/CLI, CI/CD tools, Asset Bundles, and model serving endpoints. |
 
 ### Troubleshooting
 | Topic | URL |

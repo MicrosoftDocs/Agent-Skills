@@ -25,6 +25,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing SignalR issues using logs and live trace,
     covering connectivity, message delivery, common errors, and FAQ-style troubleshooting
     tips.
+skill_description: Expert knowledge for Azure SignalR Service development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure SignalR Service applications.
+  Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus),
+  Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure SignalR Service Crawl Report
 

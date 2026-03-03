@@ -18,6 +18,9 @@ category_descriptions:
     problems.
   limits-quotas: List of UI languages supported by Azure Community Training, including
     availability details and localization considerations.
+skill_description: Expert knowledge for Azure Industry development including troubleshooting,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Industry applications.
 ---
 # Azure Industry Crawl Report
 

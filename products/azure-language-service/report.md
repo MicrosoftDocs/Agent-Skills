@@ -28,6 +28,13 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common errors, low-accuracy results, and
     configuration issues in custom text classification and custom question answering
     projects in Azure AI Language.
+skill_description: Expert knowledge for Azure AI Language development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure AI Language applications. Not for Azure
+  AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search),
+  Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Speech
+  (use azure-speech).
 ---
 # Azure AI Language Crawl Report
 

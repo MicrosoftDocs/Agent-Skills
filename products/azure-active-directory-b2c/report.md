@@ -27,6 +27,13 @@ category_descriptions:
   limits-quotas: Limits on tenants, users, tokens, and directory size in Azure AD
     B2C, plus how to create tenants, monitor quota usage, and understand token formats
     and constraints.
+skill_description: Expert knowledge for Azure Active Directory B2C development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Active Directory B2C applications.
+  Not for Azure Information Protection (use azure-information-protection), Azure Role-based
+  access control (use azure-rbac), Azure Security (use azure-security), Azure Sentinel
+  (use azure-sentinel).
 ---
 # Azure Active Directory B2C Crawl Report
 

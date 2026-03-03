@@ -17,6 +17,12 @@ category_descriptions:
     for validation.
   security: Managing RBAC and permissions for Azure DDoS Protection plans, including
     who can create, modify, and assign plans to virtual networks.
+skill_description: Expert knowledge for Azure DDos Protection development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  security, and configuration. Use when building, debugging, or optimizing Azure DDos
+  Protection applications. Not for Azure Firewall (use azure-firewall), Azure Web
+  Application Firewall (use azure-web-application-firewall), Azure Networking (use
+  azure-networking), Azure Security (use azure-security).
 ---
 # Azure DDos Protection Crawl Report
 

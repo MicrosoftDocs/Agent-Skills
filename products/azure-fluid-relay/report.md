@@ -19,6 +19,11 @@ category_descriptions:
   limits-quotas: Details on Azure Fluid Relay capacity limits, throttling behavior,
     quotas per tenant/container, and guidance to avoid or handle rate limiting and
     overuse scenarios.
+skill_description: Expert knowledge for Azure Fluid Relay development including troubleshooting,
+  best practices, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Fluid
+  Relay applications. Not for Azure Web PubSub (use azure-web-pubsub), Azure SignalR
+  Service (use azure-signalr-service), Azure Relay (use azure-relay).
 ---
 # Azure Fluid Relay Crawl Report
 

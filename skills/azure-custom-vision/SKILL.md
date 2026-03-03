@@ -1,6 +1,6 @@
 ---
 name: azure-custom-vision
-description: Expert knowledge for Azure AI Custom Vision development including best practices, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Custom Vision applications.
+description: Expert knowledge for Azure AI Custom Vision development including best practices, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Custom Vision applications. Not for Azure AI Vision (use azure-ai-vision), Azure AI Document Intelligence (use azure-document-intelligence), Azure AI Video Indexer (use azure-video-indexer), Azure AI Anomaly Detector (use azure-anomaly-detector).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure AI Custom Vision. Covers best prac
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L37 | Improving Custom Vision model quality with better data collection/labeling strategies and using Smart Labeler to speed and automate image annotation |
-| Decision Making | L38-L43 | Guidance on selecting the best Custom Vision domain for your scenario and planning migrations from Custom Vision to other Azure or third‑party vision services. |
-| Limits & Quotas | L44-L48 | Details on Custom Vision usage limits per pricing tier, including training/prediction quotas, project and image caps, and how limits affect model training and deployment. |
-| Security | L49-L55 | Managing Custom Vision security: encryption with customer-managed keys, secure data handling/export/deletion, and configuring Azure RBAC roles and permissions. |
-| Integrations & Coding Patterns | L56-L66 | Using Custom Vision models and APIs in apps: exporting via SDK, running ONNX/TensorFlow in Windows ML/Python, calling classification/detection APIs, and integrating with Azure Storage. |
-| Deployment | L67-L71 | Deploying Custom Vision models: copying/backing up projects across regions and exporting models for offline, edge, and mobile (TensorFlow, ONNX, iOS/Android) use. |
+| Best Practices | L34-L39 | Improving Custom Vision model quality with better data collection/labeling strategies and using Smart Labeler to speed and automate image annotation |
+| Decision Making | L40-L45 | Guidance on selecting the best Custom Vision domain for your scenario and planning migrations from Custom Vision to other Azure or third‑party vision services. |
+| Limits & Quotas | L46-L50 | Details on Custom Vision usage limits per pricing tier, including training/prediction quotas, project and image caps, and how limits affect model training and deployment. |
+| Security | L51-L57 | Managing Custom Vision security: encryption with customer-managed keys, secure data handling/export/deletion, and configuring Azure RBAC roles and permissions. |
+| Integrations & Coding Patterns | L58-L68 | Using Custom Vision models and APIs in apps: exporting via SDK, running ONNX/TensorFlow in Windows ML/Python, calling classification/detection APIs, and integrating with Azure Storage. |
+| Deployment | L69-L73 | Deploying Custom Vision models: copying/backing up projects across regions and exporting models for offline, edge, and mobile (TensorFlow, ONNX, iOS/Android) use. |
 
 ### Best Practices
 | Topic | URL |

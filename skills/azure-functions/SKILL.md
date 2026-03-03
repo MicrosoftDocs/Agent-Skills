@@ -1,6 +1,6 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications.
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Functions. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L61 | Diagnosing and fixing Durable Functions and Azure Functions runtime issues, AZFD/AZFW error codes, storage/config problems, and Node.js/Python deployment or scheduling failures. |
-| Best Practices | L62-L91 | Best practices for designing, coding, testing, error handling, performance, scaling, reliability, and Durable Functions patterns across .NET, Python, Java, Node.js, and PowerShell. |
-| Decision Making | L92-L117 | Guidance on choosing Functions hosting/scaling plans, networking and runtime options, cost estimation, and migration/upgrade paths (Durable, .NET, Service Bus, AWS Lambda, Express). |
-| Architecture & Design Patterns | L118-L127 | Patterns for durable orchestrations/entities, singleton and eternal workflows, and hosting Functions in Linux containers or Azure Container Apps, plus the Durable Task scheduler execution model. |
-| Limits & Quotas | L128-L139 | Performance, scaling, and billing limits for Azure Functions and Durable Functions, including concurrency, trigger-based scaling, storage performance, throughput benchmarks, and supported language versions. |
-| Security | L140-L156 | Securing Azure Functions apps: encryption at rest, private endpoints/VNet, managed identity and identity-based connections, access keys, Web PubSub and MCP security, and secret handling. |
-| Configuration | L157-L201 | Configuring how Functions apps run: app/host settings, bindings, triggers, plans, storage, networking, monitoring/telemetry, Durable Functions options, and local/dev tooling. |
-| Integrations & Coding Patterns | L202-L318 | Patterns and examples for wiring Functions to external systems—Durable workflows, HTTP, queues, databases, messaging, AI/OpenAI, Dapr, MCP, and configuring all related triggers/bindings. |
-| Deployment | L319-L365 | Deploying and updating Azure Functions apps: provisioning hosting, CI/CD pipelines, containers/Kubernetes, Durable Task orchestration, plan migrations, and zero‑downtime deployment strategies. |
+| Troubleshooting | L37-L63 | Diagnosing and fixing Durable Functions and Azure Functions runtime issues, AZFD/AZFW error codes, storage/config problems, and Node.js/Python deployment or scheduling failures. |
+| Best Practices | L64-L93 | Best practices for designing, coding, testing, error handling, performance, scaling, reliability, and Durable Functions patterns across .NET, Python, Java, Node.js, and PowerShell. |
+| Decision Making | L94-L119 | Guidance on choosing Functions hosting/scaling plans, networking and runtime options, cost estimation, and migration/upgrade paths (Durable, .NET, Service Bus, AWS Lambda, Express). |
+| Architecture & Design Patterns | L120-L129 | Patterns for durable orchestrations/entities, singleton and eternal workflows, and hosting Functions in Linux containers or Azure Container Apps, plus the Durable Task scheduler execution model. |
+| Limits & Quotas | L130-L141 | Performance, scaling, and billing limits for Azure Functions and Durable Functions, including concurrency, trigger-based scaling, storage performance, throughput benchmarks, and supported language versions. |
+| Security | L142-L158 | Securing Azure Functions apps: encryption at rest, private endpoints/VNet, managed identity and identity-based connections, access keys, Web PubSub and MCP security, and secret handling. |
+| Configuration | L159-L203 | Configuring how Functions apps run: app/host settings, bindings, triggers, plans, storage, networking, monitoring/telemetry, Durable Functions options, and local/dev tooling. |
+| Integrations & Coding Patterns | L204-L320 | Patterns and examples for wiring Functions to external systems—Durable workflows, HTTP, queues, databases, messaging, AI/OpenAI, Dapr, MCP, and configuring all related triggers/bindings. |
+| Deployment | L321-L367 | Deploying and updating Azure Functions apps: provisioning hosting, CI/CD pipelines, containers/Kubernetes, Durable Task orchestration, plan migrations, and zero‑downtime deployment strategies. |
 
 ### Troubleshooting
 | Topic | URL |

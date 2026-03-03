@@ -23,6 +23,11 @@ category_descriptions:
   decision-making: Guidance on planning Azure Managed Redis deployments, choosing
     migration approaches from Azure Cache for Redis, and selecting/managing cost-saving
     reservations.
+skill_description: Expert knowledge for Azure Managed Redis development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Managed Redis applications. Not for Azure
+  Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
 

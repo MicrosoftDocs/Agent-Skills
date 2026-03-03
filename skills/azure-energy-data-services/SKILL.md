@@ -1,6 +1,6 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications.
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Energy Data Services. Covers troub
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and fixing manifest ingestion failures in Azure Data Manager for Energy using Airflow logs, including log analysis steps and common error patterns. |
-| Decision Making | L38-L43 | Guidance on choosing ADME deployment tiers (Developer vs Standard) and checking which OSDU data/compute services and capabilities are available in each tier. |
-| Architecture & Design Patterns | L44-L48 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
-| Security | L49-L62 | Security and access control in ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
-| Configuration | L63-L70 | Configuring Azure Data Manager for Energy: data partitioning, CORS rules, enabling Reservoir DDMS, and setting up/using audit logging for governance and access tracking. |
-| Integrations & Coding Patterns | L71-L88 | Patterns and APIs for integrating ADME/OSDU with external data sources, DDMS domain services, large file upload, and exporting logs/metrics to Azure Monitor and other tools |
-| Deployment | L89-L93 | Guides for deploying Azure Data Manager for Energy geospatial consumption zones and setting up the OSDU Admin UI for ADME administration and management |
+| Troubleshooting | L35-L39 | Diagnosing and fixing manifest ingestion failures in Azure Data Manager for Energy using Airflow logs, including log analysis steps and common error patterns. |
+| Decision Making | L40-L45 | Guidance on choosing ADME deployment tiers (Developer vs Standard) and checking which OSDU data/compute services and capabilities are available in each tier. |
+| Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
+| Security | L51-L64 | Security and access control in ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
+| Configuration | L65-L72 | Configuring Azure Data Manager for Energy: data partitioning, CORS rules, enabling Reservoir DDMS, and setting up/using audit logging for governance and access tracking. |
+| Integrations & Coding Patterns | L73-L90 | Patterns and APIs for integrating ADME/OSDU with external data sources, DDMS domain services, large file upload, and exporting logs/metrics to Azure Monitor and other tools |
+| Deployment | L91-L95 | Guides for deploying Azure Data Manager for Energy geospatial consumption zones and setting up the OSDU Admin UI for ADME administration and management |
 
 ### Troubleshooting
 | Topic | URL |

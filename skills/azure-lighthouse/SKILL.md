@@ -1,6 +1,6 @@
 ---
 name: azure-lighthouse
-description: Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lighthouse applications.
+description: Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lighthouse applications. Not for Azure Arc (use azure-arc), Azure Managed Applications (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Lighthouse. Covers decision making
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L31-L38 | Guidance on when and how to use Azure Lighthouse: multi-tenant enterprise setups, ISV SaaS patterns, comparing Lighthouse vs managed apps, and designing Managed Service offers. |
-| Security | L39-L46 | Securing Azure Lighthouse: tenant/user/role mapping, RBAC and AOBO controls, PIM and eligible authorizations, and recommended security hardening practices. |
-| Configuration | L47-L59 | Configuring and managing Azure Lighthouse delegations: onboarding via ARM/policy, updating/removing access, deploying/using policies (incl. built-ins), remediation with managed identities, and monitoring changes. |
-| Integrations & Coding Patterns | L60-L67 | Cross-tenant integration patterns for managing Arc servers, Sentinel workspaces, Migrate projects, and Monitor Logs at scale using Azure Lighthouse. |
-| Deployment | L68-L71 | Guidance for packaging, publishing, and managing Azure Lighthouse managed service offers in Azure Marketplace, including requirements, steps, and configuration details. |
+| Decision Making | L33-L40 | Guidance on when and how to use Azure Lighthouse: multi-tenant enterprise setups, ISV SaaS patterns, comparing Lighthouse vs managed apps, and designing Managed Service offers. |
+| Security | L41-L48 | Securing Azure Lighthouse: tenant/user/role mapping, RBAC and AOBO controls, PIM and eligible authorizations, and recommended security hardening practices. |
+| Configuration | L49-L61 | Configuring and managing Azure Lighthouse delegations: onboarding via ARM/policy, updating/removing access, deploying/using policies (incl. built-ins), remediation with managed identities, and monitoring changes. |
+| Integrations & Coding Patterns | L62-L69 | Cross-tenant integration patterns for managing Arc servers, Sentinel workspaces, Migrate projects, and Monitor Logs at scale using Azure Lighthouse. |
+| Deployment | L70-L73 | Guidance for packaging, publishing, and managing Azure Lighthouse managed service offers in Azure Marketplace, including requirements, steps, and configuration details. |
 
 ### Decision Making
 | Topic | URL |

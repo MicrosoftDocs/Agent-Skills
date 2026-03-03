@@ -18,6 +18,10 @@ category_descriptions:
     safe handling of clinical conversation errors.
   decision-making: Estimating Azure Health Bot costs based on action usage, understanding
     pricing drivers, and forecasting expenses for different bot scenarios.
+skill_description: Expert knowledge for Azure Health Bot development including best
+  practices, decision making, architecture & design patterns, security, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Azure Health Bot applications. Not for Azure AI Bot Service (use azure-bot-service).
 ---
 # Azure Health Bot Crawl Report
 

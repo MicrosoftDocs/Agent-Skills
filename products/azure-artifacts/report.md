@@ -18,6 +18,11 @@ category_descriptions:
     artifacts.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
+skill_description: Expert knowledge for Azure Artifacts development including best
+  practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Artifacts applications. Not for Azure DevOps (use azure-devops), Azure Pipelines
+  (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
 ---
 # Azure Artifacts Crawl Report
 

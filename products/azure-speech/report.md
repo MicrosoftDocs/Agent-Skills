@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring Azure AI Speech behavior: audio inputs/outputs, batch
     jobs, storage and logging, SSML/phonemes, custom/fine-tuned voices, Voice Live
@@ -16,28 +16,34 @@ category_descriptions:
   integrations: Patterns and APIs for integrating Azure Speech (STT, TTS, avatars)
     with apps, telephony, Voice Live, OpenAI, function calling, batch flows, and custom/personal
     voice models.
-  troubleshooting: Diagnosing and fixing common Azure Speech issues (TTS, STT, SDK,
-    containers, Foundry), including error codes, deployment problems, and retrieving
-    session/transcription IDs for support.
+  troubleshooting: Diagnosing and fixing common Azure Speech issues (SDK, text-to-speech,
+    containers, Foundry), including CRL/compatibility problems and retrieving session/transcription
+    IDs for support.
   best-practices: Best practices for speech recognition, custom voice data and recording,
     latency and memory tuning, Voice Live interactions, keyword/language detection,
     and microphone array design.
   limits-quotas: 'Quotas, limits, and usage patterns for Azure Speech: batch TTS,
     custom/pro voice training & deployment, and short audio STT, plus throttling and
     capacity planning guidance.'
+skill_description: Expert knowledge for Azure AI Speech development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  AI Speech applications. Not for Azure Communication Services (use azure-communication-services),
+  Azure AI Bot Service (use azure-bot-service), Azure AI Video Indexer (use azure-video-indexer),
+  Azure AI Immersive Reader (use azure-immersive-reader).
 ---
 # Azure AI Speech Crawl Report
 
 ## Summary
 
-- **Total Pages**: 178
-- **Fetched**: 178
+- **Total Pages**: 179
+- **Fetched**: 179
 - **Fetch Failed**: 0
-- **Classified**: 107
+- **Classified**: 108
 - **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 178
 - **Deleted Pages**: 0
@@ -48,16 +54,20 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 13 | 7.3% |
-| configuration | 33 | 18.5% |
-| decision-making | 16 | 9.0% |
-| deployment | 9 | 5.1% |
+| configuration | 33 | 18.4% |
+| decision-making | 16 | 8.9% |
+| deployment | 9 | 5.0% |
 | integrations | 18 | 10.1% |
 | limits-quotas | 5 | 2.8% |
 | security | 8 | 4.5% |
-| troubleshooting | 5 | 2.8% |
-| *(Unclassified)* | 71 | 39.9% |
+| troubleshooting | 6 | 3.4% |
+| *(Unclassified)* | 71 | 39.7% |
 
 ## Changes
+
+### New Pages
+
+- [SDK 1.48.2 CRL compatibility update](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2)
 
 ## Classified Pages
 
@@ -94,6 +104,7 @@ category_descriptions:
 | [Text to speech REST API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech) | integrations | 0.80 | Describes authorization options, query options, request/response formats, and usage constraints for the TTS REST API—detailed integration patterns and parameters specific to Speech. |
 | [Troubleshoot the Speech SDK](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/troubleshooting) | troubleshooting | 0.80 | Explicit troubleshooting article for Speech SDK; likely organized by symptoms and error codes with causes and resolutions, which is expert diagnostic knowledge. |
 | [Batch synthesis properties](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar-properties) | configuration | 0.78 | Explicitly describes grouped properties for batch synthesis with JSON fields; likely includes property tables and required/optional flags, matching configuration criteria with product-specific parameters. |
+| [SDK 1.48.2 CRL compatibility update](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2) | troubleshooting | 0.76 | The page describes a specific breaking behavior (connection failures) tied to a particular SDK version and platform combination (Speech SDK < 1.48.2 on Linux/Android using OpenSSL), a concrete industry-driven CRL partitioning change, an effective cutoff date (July 1, 2026), and required remediation steps. This is product- and version-specific diagnostic and mitigation guidance that an LLM would not reliably know from training, fitting a troubleshooting-style skill focused on a known issue and how to avoid service disruption. |
 | [Configure OpenSSL for Linux](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-configure-openssl-linux) | configuration | 0.75 | Provides concrete commands, expected outputs, and directory/certificate layout requirements for OpenSSL with Speech SDK on Linux—product- and platform-specific configuration details beyond generic SSL knowledge. |
 | [Custom speech model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-model-and-endpoint-lifecycle) | limits-quotas | 0.75 | Explicitly describes model and endpoint timelines and includes a concrete limit: F0 endpoints deleted after seven days, which is a product-specific lifecycle limit. |
 | [Enable VNet service endpoint](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-service-vnet-service-endpoint) | security | 0.75 | Describes configuring Speech with VNet service endpoints; likely includes specific network configuration steps, scopes, and security-related settings unique to this service. |

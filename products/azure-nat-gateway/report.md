@@ -20,6 +20,12 @@ category_descriptions:
   deployment: How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move
     outbound traffic from VMs/public IPs, and transition existing outbound access
     to Azure NAT Gateway.
+skill_description: Expert knowledge for Azure NAT Gateway development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  configuration, and deployment. Use when building, debugging, or optimizing Azure
+  NAT Gateway applications. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure NAT Gateway Crawl Report
 

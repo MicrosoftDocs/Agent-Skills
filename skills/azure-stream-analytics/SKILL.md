@@ -1,6 +1,6 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stream Analytics applications.
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stream Analytics applications. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Stream Analytics. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L54 | Diagnosing and fixing Stream Analytics job issues: error codes (config/data/external/internal), input/output connection failures, query/UDF bugs, and using diagrams, metrics, and resource logs to debug. |
-| Best Practices | L55-L74 | Designing, tuning, and troubleshooting Stream Analytics jobs: query patterns, scaling and parallelization, performance metrics, reliability, inputs/outputs, time handling, and alerting. |
-| Decision Making | L75-L81 | Guidance on choosing Stream Analytics developer tools, migrating projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing services for your scenario. |
-| Architecture & Design Patterns | L82-L87 | Architectural patterns and best practices for designing resilient, geo-redundant Azure Stream Analytics solutions, including reference topologies and high-availability job designs. |
-| Limits & Quotas | L88-L93 | Configuring and tuning Stream Analytics streaming units and clusters, including how to resize, scale performance, and understand capacity limits and resource quotas. |
-| Security | L94-L113 | Securing Stream Analytics jobs: managed identities for inputs/outputs, private endpoints/VNet integration, data protection, credential rotation, and Azure Policy compliance controls. |
-| Configuration | L114-L148 | Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, compatibility, error handling, and monitoring/alerts. |
-| Integrations & Coding Patterns | L149-L167 | Patterns and code samples for integrating Stream Analytics with Kafka, ML/AML, Functions, UDFs (C#/JS), anomaly detection, and managing jobs via .NET and schema registry. |
-| Deployment | L168-L183 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, including CI/CD with Bicep, ARM, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
+| Troubleshooting | L37-L56 | Diagnosing and fixing Stream Analytics job issues: error codes (config/data/external/internal), input/output connection failures, query/UDF bugs, and using diagrams, metrics, and resource logs to debug. |
+| Best Practices | L57-L76 | Designing, tuning, and troubleshooting Stream Analytics jobs: query patterns, scaling and parallelization, performance metrics, reliability, inputs/outputs, time handling, and alerting. |
+| Decision Making | L77-L83 | Guidance on choosing Stream Analytics developer tools, migrating projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing services for your scenario. |
+| Architecture & Design Patterns | L84-L89 | Architectural patterns and best practices for designing resilient, geo-redundant Azure Stream Analytics solutions, including reference topologies and high-availability job designs. |
+| Limits & Quotas | L90-L95 | Configuring and tuning Stream Analytics streaming units and clusters, including how to resize, scale performance, and understand capacity limits and resource quotas. |
+| Security | L96-L115 | Securing Stream Analytics jobs: managed identities for inputs/outputs, private endpoints/VNet integration, data protection, credential rotation, and Azure Policy compliance controls. |
+| Configuration | L116-L150 | Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, compatibility, error handling, and monitoring/alerts. |
+| Integrations & Coding Patterns | L151-L169 | Patterns and code samples for integrating Stream Analytics with Kafka, ML/AML, Functions, UDFs (C#/JS), anomaly detection, and managing jobs via .NET and schema registry. |
+| Deployment | L170-L185 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, including CI/CD with Bicep, ARM, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
 
 ### Troubleshooting
 | Topic | URL |

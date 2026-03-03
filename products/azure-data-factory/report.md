@@ -27,6 +27,12 @@ category_descriptions:
     DB migration, and SAP CDC design.'
   limits-quotas: Info on ADF connector lifecycle stages and timelines, plus how reservation
     discounts work for Mapping Data Flows and how they affect cost and capacity planning
+skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Data Factory applications. Not for Azure
+  Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
+  Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Data Factory Crawl Report
 

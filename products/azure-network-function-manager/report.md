@@ -6,6 +6,12 @@ category_descriptions:
     Manager.
   security: Setting up secure access for Network Function Manager by registering required
     Azure resources, managed identities, and permissions for network functions
+skill_description: Expert knowledge for Azure Network Function Manager development
+  including security, and configuration. Use when building, debugging, or optimizing
+  Azure Network Function Manager applications. Not for Azure Virtual Network Manager
+  (use azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network),
+  Azure Firewall Manager (use azure-firewall-manager), Azure Network Watcher (use
+  azure-network-watcher).
 ---
 # Azure Network Function Manager Crawl Report
 

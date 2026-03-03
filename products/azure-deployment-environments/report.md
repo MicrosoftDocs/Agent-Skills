@@ -21,6 +21,12 @@ category_descriptions:
   deployment: How to integrate Azure Deployment Environments with CI/CD tools like
     Azure Pipelines and GitHub Actions, including configuring pipelines to create,
     update, and delete ADE environments.
+skill_description: Expert knowledge for Azure Deployment Environments development
+  including troubleshooting, best practices, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Deployment Environments applications. Not for Azure DevTest Labs
+  (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments
+  (use azure-integration-environments), Azure App Service (use azure-app-service).
 ---
 # Azure Deployment Environments Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Edge applications.
+description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Edge applications. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure IoT Edge. Covers troubleshooting, 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L45 | Diagnosing and fixing IoT Edge runtime, provisioning, deployment, monitoring, networking, and EFLOW (Linux on Windows) issues, including portal-based troubleshooting of edge devices. |
-| Best Practices | L46-L50 | Guidance for hardening IoT Edge for production: security, deployment planning, monitoring, scaling, lifecycle management, and operational best practices for edge modules and devices. |
-| Decision Making | L51-L57 | Guidance on choosing IoT Edge platforms, provisioning methods, EFLOW networking, and nested virtualization options, with configuration details for each deployment scenario. |
-| Architecture & Design Patterns | L58-L63 | Gateway deployment patterns and offline/ intermittently connected operation designs for Azure IoT Edge, including topology choices, buffering, sync, and resilience strategies. |
-| Limits & Quotas | L64-L68 | Azure IoT Edge service and resource limits: max modules, routes, deployments, message sizes, throttling, and other scalability and quota constraints for edge solutions. |
-| Security | L69-L81 | Security setup for IoT Edge: device provisioning (TPM, X.509, symmetric keys), cert creation/management, auth for downstream devices, EST/Private Link, and confidential computing modules. |
-| Configuration | L82-L117 | Configuring IoT Edge and EFLOW: device settings, networking (NICs, proxies, gateways, nested), storage, GPUs, metrics/monitoring, and provisioning (DPS, TPM, X.509, symmetric keys). |
-| Integrations & Coding Patterns | L118-L124 | Using IoT Edge direct methods for remote management, retrieving/uploading device logs, and building custom modules and integrations with other services and systems |
-| Deployment | L125-L133 | Deploying and updating IoT Edge: supported platforms (including EFLOW), Kubernetes/KubeVirt installs, CI/CD pipelines, and managing automatic deployments for device groups. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing IoT Edge runtime, provisioning, deployment, monitoring, networking, and EFLOW (Linux on Windows) issues, including portal-based troubleshooting of edge devices. |
+| Best Practices | L48-L52 | Guidance for hardening IoT Edge for production: security, deployment planning, monitoring, scaling, lifecycle management, and operational best practices for edge modules and devices. |
+| Decision Making | L53-L59 | Guidance on choosing IoT Edge platforms, provisioning methods, EFLOW networking, and nested virtualization options, with configuration details for each deployment scenario. |
+| Architecture & Design Patterns | L60-L65 | Gateway deployment patterns and offline/ intermittently connected operation designs for Azure IoT Edge, including topology choices, buffering, sync, and resilience strategies. |
+| Limits & Quotas | L66-L70 | Azure IoT Edge service and resource limits: max modules, routes, deployments, message sizes, throttling, and other scalability and quota constraints for edge solutions. |
+| Security | L71-L83 | Security setup for IoT Edge: device provisioning (TPM, X.509, symmetric keys), cert creation/management, auth for downstream devices, EST/Private Link, and confidential computing modules. |
+| Configuration | L84-L119 | Configuring IoT Edge and EFLOW: device settings, networking (NICs, proxies, gateways, nested), storage, GPUs, metrics/monitoring, and provisioning (DPS, TPM, X.509, symmetric keys). |
+| Integrations & Coding Patterns | L120-L126 | Using IoT Edge direct methods for remote management, retrieving/uploading device logs, and building custom modules and integrations with other services and systems |
+| Deployment | L127-L135 | Deploying and updating IoT Edge: supported platforms (including EFLOW), Kubernetes/KubeVirt installs, CI/CD pipelines, and managing automatic deployments for device groups. |
 
 ### Troubleshooting
 | Topic | URL |

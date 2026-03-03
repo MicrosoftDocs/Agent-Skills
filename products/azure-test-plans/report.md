@@ -9,6 +9,11 @@ category_descriptions:
   configuration: 'Using tcm.exe to manage Azure Test Plans: creating and running test
     suites, importing/exporting tests, managing test configurations, and automating
     test plan operations via CLI.'
+skill_description: Expert knowledge for Azure Test Plans development including limits
+  & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Test Plans applications. Not for Azure DevOps (use azure-devops), Azure Boards
+  (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use
+  azure-app-testing).
 ---
 # Azure Test Plans Crawl Report
 

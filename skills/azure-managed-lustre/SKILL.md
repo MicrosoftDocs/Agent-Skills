@@ -1,6 +1,6 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Managed Lustre applications.
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Managed Lustre applications. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Managed Lustre. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and resolving Azure Managed Lustre deployment failures and performance issues, including cluster provisioning errors, throughput/latency problems, and tuning guidance. |
-| Best Practices | L39-L44 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
-| Architecture & Design Patterns | L45-L49 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
-| Limits & Quotas | L50-L54 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
-| Security | L55-L64 | Securing Azure Managed Lustre: boot key setup, firewall/NSG access control, CMK encryption, root squash permissions, and virtual network encryption configuration and validation. |
-| Configuration | L65-L76 | Configuring Azure Managed Lustre: network/storage prerequisites, client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/metrics/logs with Azure Monitor |
-| Integrations & Coding Patterns | L77-L86 | Configuring Azure Managed Lustre with Blob Storage (auto-import/export, manual jobs), Terraform provisioning, and integrating with AKS via the CSI driver. |
+| Troubleshooting | L35-L40 | Diagnosing and resolving Azure Managed Lustre deployment failures and performance issues, including cluster provisioning errors, throughput/latency problems, and tuning guidance. |
+| Best Practices | L41-L46 | Guidance on tuning Azure Managed Lustre performance via optimal file/directory layout, client striping, and network setup (NICs, throughput, latency, and scaling). |
+| Architecture & Design Patterns | L47-L51 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
+| Limits & Quotas | L52-L56 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
+| Security | L57-L66 | Securing Azure Managed Lustre: boot key setup, firewall/NSG access control, CMK encryption, root squash permissions, and virtual network encryption configuration and validation. |
+| Configuration | L67-L78 | Configuring Azure Managed Lustre: network/storage prerequisites, client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/metrics/logs with Azure Monitor |
+| Integrations & Coding Patterns | L79-L88 | Configuring Azure Managed Lustre with Blob Storage (auto-import/export, manual jobs), Terraform provisioning, and integrating with AKS via the CSI driver. |
 
 ### Troubleshooting
 | Topic | URL |

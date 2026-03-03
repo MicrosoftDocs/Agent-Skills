@@ -21,6 +21,12 @@ category_descriptions:
   architecture-patterns: Designing resilient private DNS architectures in Azure, including
     when to use centralized vs distributed DNS Private Resolvers and how to shard
     Private DNS zones for high availability.
+skill_description: Expert knowledge for Azure DNS development including troubleshooting,
+  decision making, architecture & design patterns, limits & quotas, security, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Azure DNS applications. Not for Azure Traffic Manager (use azure-traffic-manager),
+  Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
+  Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure DNS Crawl Report
 

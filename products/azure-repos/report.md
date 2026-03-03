@@ -26,6 +26,12 @@ category_descriptions:
   architecture-patterns: Designing and choosing TFVC branching structures/strategies,
     planning strategic branches, implementing feature isolation, and managing branches
     for DevOps workflows in Azure Repos.
+skill_description: Expert knowledge for Azure Repos development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Repos applications. Not for Azure DevOps
+  (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards),
+  Azure Test Plans (use azure-test-plans).
 ---
 # Azure Repos Crawl Report
 

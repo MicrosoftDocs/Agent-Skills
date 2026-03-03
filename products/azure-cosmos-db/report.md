@@ -28,6 +28,13 @@ category_descriptions:
   deployment: 'Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform
     templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop
     operations for various APIs.'
+skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Cosmos DB applications. Not for Azure Table
+  Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Database for
+  PostgreSQL (use azure-database-postgresql).
 ---
 # Azure Cosmos DB Crawl Report
 

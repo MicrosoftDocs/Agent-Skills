@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: Configuring and tuning Stream Analytics streaming units and clusters,
     including how to resize, scale performance, and understand capacity limits and
     resource quotas.
+skill_description: Expert knowledge for Azure Stream Analytics development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Stream Analytics applications.
+  Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use
+  azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks
+  (use azure-databricks).
 ---
 # Azure Stream Analytics Crawl Report
 

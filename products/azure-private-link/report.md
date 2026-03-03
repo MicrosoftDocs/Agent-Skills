@@ -20,6 +20,12 @@ category_descriptions:
   architecture-patterns: Designing DNS architectures for Private Endpoints using Azure
     Private Resolver, including name resolution patterns, forwarding rules, and integration
     with on-premises or hybrid networks
+skill_description: Expert knowledge for Azure Private Link development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, and configuration. Use when building, debugging, or optimizing Azure Private
+  Link applications. Not for Azure Virtual Network (use azure-virtual-network), Azure
+  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Private Link Crawl Report
 

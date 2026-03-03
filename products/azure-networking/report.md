@@ -18,6 +18,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Microsoft.Network resource provisioning
     failures in Azure, including common error patterns, causes, and step-by-step remediation
     guidance.
+skill_description: Expert knowledge for Azure Networking development including troubleshooting,
+  best practices, decision making, architecture & design patterns, security, and integrations
+  & coding patterns. Use when building, debugging, or optimizing Azure Networking
+  applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
+  Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
+  Azure Network Watcher (use azure-network-watcher).
 ---
 # Azure Networking Crawl Report
 

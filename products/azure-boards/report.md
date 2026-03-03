@@ -18,6 +18,11 @@ category_descriptions:
     your organization.
   security: 'Managing Azure Boards security: default permissions, configuring query/folder
     access, and setting access controls and policies to protect work items and boards.'
+skill_description: Expert knowledge for Azure Boards development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, and integrations
+  & coding patterns. Use when building, debugging, or optimizing Azure Boards applications.
+  Not for Azure DevOps (use azure-devops), Azure Test Plans (use azure-test-plans),
+  Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos).
 ---
 # Azure Boards Crawl Report
 

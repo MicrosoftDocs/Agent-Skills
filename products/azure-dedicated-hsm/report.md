@@ -16,6 +16,11 @@ category_descriptions:
   troubleshooting: Support boundaries between Microsoft, HSM vendors, and customers,
     plus diagnosing and resolving deployment, networking, and configuration issues
     for Azure Dedicated HSM.
+skill_description: Expert knowledge for Azure Dedicated HSM development including
+  troubleshooting, decision making, architecture & design patterns, security, configuration,
+  and deployment. Use when building, debugging, or optimizing Azure Dedicated HSM
+  applications. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use
+  azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Dedicated HSM Crawl Report
 

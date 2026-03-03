@@ -23,6 +23,11 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure App Configuration network access issues,
     including firewall/VNet restrictions, private endpoints, DNS, and connectivity
     errors from client apps.
+skill_description: Expert knowledge for Azure App Configuration development including
+  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure App Configuration applications. Not for Azure Key Vault (use azure-key-vault),
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
 ---
 # Azure App Configuration Crawl Report
 

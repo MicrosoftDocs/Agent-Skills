@@ -24,6 +24,13 @@ category_descriptions:
     labeling tool.
   architecture-patterns: Guidance on designing disaster recovery, redundancy, and
     failover strategies for Azure AI Document Intelligence models and deployments.
+skill_description: Expert knowledge for Azure AI Document Intelligence development
+  including troubleshooting, best practices, decision making, architecture & design
+  patterns, limits & quotas, security, configuration, integrations & coding patterns,
+  and deployment. Use when building, debugging, or optimizing Azure AI Document Intelligence
+  applications. Not for Azure AI services (use azure-ai-services), Azure AI Search
+  (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision),
+  Azure AI Vision (use azure-ai-vision).
 ---
 # Azure AI Document Intelligence Crawl Report
 

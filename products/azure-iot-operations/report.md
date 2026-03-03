@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure IoT Operations deployment and runtime
     issues, including known errors, health checks, logs, and step-by-step troubleshooting
     guidance.
+skill_description: Expert knowledge for Azure IoT Operations development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure IoT Operations applications. Not
+  for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Central
+  (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
 ---
 # Azure IoT Operations Crawl Report
 

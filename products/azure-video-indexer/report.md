@@ -26,6 +26,12 @@ category_descriptions:
   architecture-patterns: Guidance on architecting disaster recovery and failover for
     Azure Video Indexer, including redundancy, regional failover, backup, and high-availability
     design considerations.
+skill_description: Expert knowledge for Azure AI Video Indexer development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure AI Video Indexer applications.
+  Not for Azure AI Vision (use azure-ai-vision), Azure AI Immersive Reader (use azure-immersive-reader),
+  Azure AI services (use azure-ai-services).
 ---
 # Azure AI Video Indexer Crawl Report
 

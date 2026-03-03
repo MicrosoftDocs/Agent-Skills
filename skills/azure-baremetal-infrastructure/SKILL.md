@@ -1,6 +1,6 @@
 ---
 name: azure-baremetal-infrastructure
-description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications.
+description: Expert knowledge for Azure Baremetal Infrastructure development including decision making, and architecture & design patterns. Use when building, debugging, or optimizing Azure Baremetal Infrastructure applications. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,14 +16,16 @@ This skill provides expert guidance for Azure Baremetal Infrastructure. Covers d
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L28-L32 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and availability considerations for deployment planning. |
-| Architecture & Design Patterns | L33-L36 | NC2 on Azure BareMetal architecture choices, deployment topologies, integration patterns with Azure services, and design considerations for performance, HA, and networking. |
+| Decision Making | L30-L34 | Guidance on selecting NC2 on Azure regions and hardware SKUs, including capacity, performance, and availability considerations for deployment planning. |
+| Architecture & Design Patterns | L35-L38 | NC2 on Azure BareMetal architecture choices, deployment topologies, integration patterns with Azure services, and design considerations for performance, HA, and networking. |
 
 ### Decision Making
 | Topic | URL |

@@ -1,6 +1,6 @@
 ---
 name: azure-sap
-description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications.
+description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for SAP HANA on Azure Large Instances. Cover
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing and fixing SAP on Azure issues: deployment automation errors, Business Process Solutions problems, VM scale set and extension failures, and using Azure Monitor SAP Insights for root-cause analysis. |
-| Best Practices | L44-L51 | Testing and validation guidance for SAP on Azure: config checks, HA test automation, VIS quality enforcement, and DR best practices across all SAP workload layers. |
-| Decision Making | L52-L67 | Guidance on planning SAP on Azure: infrastructure choices, certified configs, storage/VM options, data extraction, HANA tiering, monitoring, analytics models, and supported versions. |
-| Architecture & Design Patterns | L68-L91 | Architecting resilient, high-availability SAP landscapes on Azure: DBMS/HANA designs, zones/regions/DR, latency and proximity, and RISE connectivity and workload zone patterns. |
-| Limits & Quotas | L92-L98 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
-| Security | L99-L112 | Identity, access, encryption, and network security for SAP on Azure: Key Vault secrets, RBAC, TLS, private endpoints, secure infra design, Entra ID access, and RISE security configuration. |
-| Configuration | L113-L183 | Configuring SAP HANA and SAP workloads on Azure: automation framework, storage/HA/cluster setups, monitoring providers, ACSS/LaMa integration, and VM/extension/network settings. |
-| Integrations & Coding Patterns | L184-L197 | Patterns and setup for integrating SAP with Azure and third-party services (monitoring, automation, data flows, email, printing, security, and RISE workloads) |
-| Deployment | L198-L250 | Deploying and managing SAP on Azure: automation framework scripts, ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects, and NetWeaver/HANA VM setups. |
+| Troubleshooting | L37-L45 | Diagnosing and fixing SAP on Azure issues: deployment automation errors, Business Process Solutions problems, VM scale set and extension failures, and using Azure Monitor SAP Insights for root-cause analysis. |
+| Best Practices | L46-L53 | Testing and validation guidance for SAP on Azure: config checks, HA test automation, VIS quality enforcement, and DR best practices across all SAP workload layers. |
+| Decision Making | L54-L69 | Guidance on planning SAP on Azure: infrastructure choices, certified configs, storage/VM options, data extraction, HANA tiering, monitoring, analytics models, and supported versions. |
+| Architecture & Design Patterns | L70-L93 | Architecting resilient, high-availability SAP landscapes on Azure: DBMS/HANA designs, zones/regions/DR, latency and proximity, and RISE connectivity and workload zone patterns. |
+| Limits & Quotas | L94-L100 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
+| Security | L101-L114 | Identity, access, encryption, and network security for SAP on Azure: Key Vault secrets, RBAC, TLS, private endpoints, secure infra design, Entra ID access, and RISE security configuration. |
+| Configuration | L115-L185 | Configuring SAP HANA and SAP workloads on Azure: automation framework, storage/HA/cluster setups, monitoring providers, ACSS/LaMa integration, and VM/extension/network settings. |
+| Integrations & Coding Patterns | L186-L199 | Patterns and setup for integrating SAP with Azure and third-party services (monitoring, automation, data flows, email, printing, security, and RISE workloads) |
+| Deployment | L200-L252 | Deploying and managing SAP on Azure: automation framework scripts, ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects, and NetWeaver/HANA VM setups. |
 
 ### Troubleshooting
 | Topic | URL |

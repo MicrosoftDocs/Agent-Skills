@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual WAN applications.
+description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual WAN applications. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Virtual WAN. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing and fixing Virtual WAN issues, including P2S VPN client prerequisite checks, connectivity problems, and using built-in tools and diagnostics for troubleshooting. |
-| Decision Making | L40-L45 | Guidance on when/how to upgrade Virtual WAN from Basic to Standard, and how to choose Virtual WAN partners and hub locations for your network design. |
-| Architecture & Design Patterns | L46-L71 | Designing and routing Virtual WAN hubs: secure internet/branch access, NVA/Azure Firewall patterns, VNet isolation, BGP/ExpressRoute/SD‑WAN integration, DR, and global transit architectures. |
-| Limits & Quotas | L72-L77 | P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub routing capabilities, throughput caps, and performance constraints |
-| Security | L78-L90 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, app registrations, custom app IDs), Azure VPN Client, role assignments, and Azure Firewall–protected spoke access. |
-| Configuration | L91-L142 | Configuring Azure Virtual WAN hubs, routing, BGP, NVAs, Azure Firewall, VPN NAT, P2S/Always On VPN (certs, clients, Entra ID), IPsec policies, and monitoring metrics/logs. |
-| Integrations & Coding Patterns | L143-L150 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
-| Deployment | L151-L155 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing Virtual WAN issues, including P2S VPN client prerequisite checks, connectivity problems, and using built-in tools and diagnostics for troubleshooting. |
+| Decision Making | L42-L47 | Guidance on when/how to upgrade Virtual WAN from Basic to Standard, and how to choose Virtual WAN partners and hub locations for your network design. |
+| Architecture & Design Patterns | L48-L73 | Designing and routing Virtual WAN hubs: secure internet/branch access, NVA/Azure Firewall patterns, VNet isolation, BGP/ExpressRoute/SD‑WAN integration, DR, and global transit architectures. |
+| Limits & Quotas | L74-L79 | P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub routing capabilities, throughput caps, and performance constraints |
+| Security | L80-L92 | Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra ID (MFA, app registrations, custom app IDs), Azure VPN Client, role assignments, and Azure Firewall–protected spoke access. |
+| Configuration | L93-L144 | Configuring Azure Virtual WAN hubs, routing, BGP, NVAs, Azure Firewall, VPN NAT, P2S/Always On VPN (certs, clients, Entra ID), IPsec policies, and monitoring metrics/logs. |
+| Integrations & Coding Patterns | L145-L152 | PowerShell and automation patterns for integrating Virtual WAN with ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure Private Link |
+| Deployment | L153-L157 | PowerShell-based deployment of cross-tenant VNet connections to Virtual WAN hubs and step-by-step setup of integrated NVAs inside Virtual WAN hubs. |
 
 ### Troubleshooting
 | Topic | URL |

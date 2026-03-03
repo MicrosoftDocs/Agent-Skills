@@ -27,6 +27,12 @@ category_descriptions:
   limits-quotas: 'Synapse SQL pool limits: maintenance windows, memory/concurrency
     by performance level, capacity caps, temp table behavior, serverless Delta Lake
     v1 querying, and Synapse Link feature limits/issues.'
+skill_description: Expert knowledge for Azure Synapse Analytics development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Synapse Analytics applications.
+  Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
+  Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Synapse Analytics Crawl Report
 

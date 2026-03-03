@@ -28,6 +28,12 @@ category_descriptions:
   best-practices: 'Best practices for Azure Local operations: configuring metric alerts,
     using supported Arc VM operations, designing SDN-aware network patterns, and managing
     updates safely and efficiently.'
+skill_description: Expert knowledge for Azure Local development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Local applications. Not for Azure AI Foundry
+  Local (use azure-ai-foundry-local), Azure Stack Edge (use azure-stack-edge), Azure
+  IoT Edge (use azure-iot-edge), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
 ---
 # Azure Local Crawl Report
 

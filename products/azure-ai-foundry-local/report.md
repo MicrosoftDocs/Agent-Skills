@@ -11,6 +11,11 @@ category_descriptions:
     or deployment issues.
   troubleshooting: Troubleshooting setup and runtime issues when installing and running
     Azure AI Foundry Local specifically on Windows Server 2025.
+skill_description: Expert knowledge for Azure AI Foundry Local development including
+  troubleshooting, best practices, configuration, and integrations & coding patterns.
+  Use when building, debugging, or optimizing Azure AI Foundry Local applications.
+  Not for Azure AI Foundry (use azure-ai-foundry), Azure Machine Learning (use azure-machine-learning),
+  Azure AI services (use azure-ai-services), Azure AI Vision (use azure-ai-vision).
 ---
 # Azure AI Foundry Local Crawl Report
 

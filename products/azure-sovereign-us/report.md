@@ -19,6 +19,12 @@ category_descriptions:
   configuration: 'Guidance for configuring and operating Azure Government: app deployment,
     VM extensions, EA billing, marketplace images, and Azure Monitor logs in sovereign
     US regions.'
+skill_description: Expert knowledge for Azure US Government development including
+  decision making, architecture & design patterns, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  US Government applications. Not for Azure Local (use azure-local), Azure Extended
+  Zones (use azure-extended-zones), Azure Networking (use azure-networking), Azure
+  Security (use azure-security).
 ---
 # Azure US Government Crawl Report
 

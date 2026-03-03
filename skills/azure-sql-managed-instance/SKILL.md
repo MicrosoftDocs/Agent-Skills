@@ -1,6 +1,6 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure SQL Managed Instance. Covers troub
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L51 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/capacity, performance, import/export, connectivity/auth, memory, log full, XTP storage, MI link, and health monitoring. |
-| Best Practices | L52-L73 | Best practices for monitoring, performance tuning, HA/DR, maintenance, alerts, read scale-out, and migrations for Azure SQL Managed Instance–including KQL/DMVs, failover, and disaster recovery drills. |
-| Decision Making | L74-L88 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR, ML, and migration paths from SQL Server, Db2, and Oracle. |
-| Architecture & Design Patterns | L89-L93 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L94-L104 | Limits, quotas, and resource behavior for Azure SQL MI: DTUs, memory/OLTP limits, free-tier caps, backup retention, monitoring behavior, and how to request quota increases. |
-| Security | L105-L157 | Configuring authentication, authorization, encryption, auditing, threat protection, TLS, and security best practices for Azure SQL Managed Instance and related Azure SQL resources. |
-| Configuration | L158-L210 | Configuring and managing SQL Managed Instance: networking, backups/restore, maintenance windows/updates, monitoring/alerts (database watcher, metrics, logs), failover, zone redundancy, and tempdb/time zone settings. |
-| Integrations & Coding Patterns | L211-L235 | Connecting apps and tools to Azure SQL Managed Instance (.NET, Java, Python, etc.), plus automation, networking, DTC, XEvents, Spark, bcp, MI Link, backup/restore, and tracing setup. |
-| Deployment | L236-L257 | Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform), networking, region/subnet moves, start/stop, DR/migration, replication, and operation timing/cancellation. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/capacity, performance, import/export, connectivity/auth, memory, log full, XTP storage, MI link, and health monitoring. |
+| Best Practices | L54-L75 | Best practices for monitoring, performance tuning, HA/DR, maintenance, alerts, read scale-out, and migrations for Azure SQL Managed Instance–including KQL/DMVs, failover, and disaster recovery drills. |
+| Decision Making | L76-L90 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR, ML, and migration paths from SQL Server, Db2, and Oracle. |
+| Architecture & Design Patterns | L91-L95 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
+| Limits & Quotas | L96-L106 | Limits, quotas, and resource behavior for Azure SQL MI: DTUs, memory/OLTP limits, free-tier caps, backup retention, monitoring behavior, and how to request quota increases. |
+| Security | L107-L159 | Configuring authentication, authorization, encryption, auditing, threat protection, TLS, and security best practices for Azure SQL Managed Instance and related Azure SQL resources. |
+| Configuration | L160-L212 | Configuring and managing SQL Managed Instance: networking, backups/restore, maintenance windows/updates, monitoring/alerts (database watcher, metrics, logs), failover, zone redundancy, and tempdb/time zone settings. |
+| Integrations & Coding Patterns | L213-L237 | Connecting apps and tools to Azure SQL Managed Instance (.NET, Java, Python, etc.), plus automation, networking, DTC, XEvents, Spark, bcp, MI Link, backup/restore, and tracing setup. |
+| Deployment | L238-L259 | Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform), networking, region/subnet moves, start/stop, DR/migration, replication, and operation timing/cancellation. |
 
 ### Troubleshooting
 | Topic | URL |

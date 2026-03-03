@@ -1,6 +1,6 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications.
+description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications. Not for Azure Key Vault (use azure-key-vault), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure App Configuration. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and fixing Azure App Configuration network access issues, including firewall/VNet restrictions, private endpoints, DNS, and connectivity errors from client apps. |
-| Best Practices | L39-L43 | Guidance on designing and using Azure App Configuration efficiently: key/value organization, labels, feature flags, performance, security, and cost‑effective access patterns. |
-| Decision Making | L44-L49 | Guidance on App Configuration client library support lifecycles and how to upgrade Spring Boot apps to use App Configuration library v6. |
-| Limits & Quotas | L50-L58 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
-| Security | L59-L79 | Securing App Configuration stores: encryption, network isolation, private endpoints, managed identities, keys/HMAC, Entra ID/RBAC auth, and Azure Policy/role-based access controls. |
-| Configuration | L80-L100 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, telemetry/monitoring, Kubernetes/Front Door/AI agent integration, and emulator and provider settings |
-| Integrations & Coding Patterns | L101-L189 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, Spring, AKS, AI apps, plus dynamic config, feature flags, and REST API usage. |
-| Deployment | L190-L198 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
+| Troubleshooting | L36-L40 | Diagnosing and fixing Azure App Configuration network access issues, including firewall/VNet restrictions, private endpoints, DNS, and connectivity errors from client apps. |
+| Best Practices | L41-L45 | Guidance on designing and using Azure App Configuration efficiently: key/value organization, labels, feature flags, performance, security, and cost‑effective access patterns. |
+| Decision Making | L46-L51 | Guidance on App Configuration client library support lifecycles and how to upgrade Spring Boot apps to use App Configuration library v6. |
+| Limits & Quotas | L52-L60 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
+| Security | L61-L81 | Securing App Configuration stores: encryption, network isolation, private endpoints, managed identities, keys/HMAC, Entra ID/RBAC auth, and Azure Policy/role-based access controls. |
+| Configuration | L82-L102 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, telemetry/monitoring, Kubernetes/Front Door/AI agent integration, and emulator and provider settings |
+| Integrations & Coding Patterns | L103-L191 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, Spring, AKS, AI apps, plus dynamic config, feature flags, and REST API usage. |
+| Deployment | L192-L200 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |

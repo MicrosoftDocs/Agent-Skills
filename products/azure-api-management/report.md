@@ -28,6 +28,13 @@ category_descriptions:
   architecture-patterns: Patterns for placing API Management behind App Gateway/WAF,
     Azure Front Door, or AKS, including routing, security, and high‑availability reference
     architectures.
+skill_description: Expert knowledge for Azure API Management development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure API Management applications. Not
+  for Azure Application Gateway (use azure-application-gateway), Azure Front Door
+  (use azure-front-door), Azure Functions (use azure-functions), Azure Logic Apps
+  (use azure-logic-apps).
 ---
 # Azure API Management Crawl Report
 

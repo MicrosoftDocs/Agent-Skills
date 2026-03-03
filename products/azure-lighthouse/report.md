@@ -14,6 +14,12 @@ category_descriptions:
   deployment: Guidance for packaging, publishing, and managing Azure Lighthouse managed
     service offers in Azure Marketplace, including requirements, steps, and configuration
     details.
+skill_description: Expert knowledge for Azure Lighthouse development including decision
+  making, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Lighthouse applications. Not for
+  Azure Arc (use azure-arc), Azure Managed Applications (use azure-managed-applications),
+  Azure Resource Manager (use azure-resource-manager), Azure Role-based access control
+  (use azure-rbac).
 ---
 # Azure Lighthouse Crawl Report
 

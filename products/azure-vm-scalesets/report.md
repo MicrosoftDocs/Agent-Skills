@@ -25,6 +25,13 @@ category_descriptions:
   integrations: Using CLI/PowerShell/DSC/custom script to deploy apps, configure,
     and manage VM Scale Sets, plus integrating standby pools with Log Analytics for
     monitoring and automation.
+skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
+  including troubleshooting, decision making, architecture & design patterns, limits
+  & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Virtual Machine Scale Sets applications.
+  Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure App Service (use azure-app-service).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 

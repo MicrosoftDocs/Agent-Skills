@@ -19,6 +19,12 @@ category_descriptions:
   security: Configuring secure access to Network Watcher with RBAC, using Traffic
     Analytics for Zero Trust segmentation, and protecting VNet flow logs with managed
     identities.
+skill_description: Expert knowledge for Azure Network Watcher development including
+  troubleshooting, decision making, limits & quotas, security, configuration, and
+  integrations & coding patterns. Use when building, debugging, or optimizing Azure
+  Network Watcher applications. Not for Azure Monitor (use azure-monitor), Azure Networking
+  (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Network Watcher Crawl Report
 

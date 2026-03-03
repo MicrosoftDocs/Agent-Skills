@@ -14,6 +14,11 @@ category_descriptions:
   configuration: 'Configuring Azure Data Share: adding datasets, mapping received
     data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics,
     and automating via PowerShell, ARM, and Bicep.'
+skill_description: Expert knowledge for Azure Data Share development including troubleshooting,
+  decision making, security, configuration, and deployment. Use when building, debugging,
+  or optimizing Azure Data Share applications. Not for Azure Data Box (use azure-data-box-family),
+  Azure Import Export (use azure-import-export), Azure Open Datasets (use azure-open-datasets),
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Data Share Crawl Report
 

@@ -23,6 +23,11 @@ category_descriptions:
     CycleCloud clusters.
   best-practices: Guidance for configuring and tuning Azure HB/HC-series HPC VMs in
     CycleCloud, including networking, storage, MPI, BIOS, and performance best practices.
+skill_description: Expert knowledge for Azure CycleCloud development including troubleshooting,
+  best practices, decision making, architecture & design patterns, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure CycleCloud applications. Not for Azure Batch (use azure-batch),
+  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure CycleCloud Crawl Report
 

@@ -25,6 +25,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Automation issues: DSC/State Configuration,
     Hybrid Runbook Workers (agent/extension), managed identities, runbook failures,
     shared resources, and collecting support diagnostics.'
+skill_description: Expert knowledge for Azure Automation development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Automation applications. Not for Azure Functions (use azure-functions), Azure Logic
+  Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update
+  Manager (use azure-update-manager).
 ---
 # Azure Automation Crawl Report
 

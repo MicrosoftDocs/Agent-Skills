@@ -1,6 +1,6 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure ExpressRoute applications.
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure ExpressRoute applications. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual WAN (use azure-virtual-wan), Azure Internet Peering (use azure-internet-peering).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure ExpressRoute. Covers troubleshooti
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L45 | Diagnosing and fixing ExpressRoute issues: ARP/BGP and end-to-end connectivity checks, performance testing, gateway migration errors, correlation IDs, circuit resets, and FAQ on services/costs. |
-| Best Practices | L46-L53 | Best practices for ExpressRoute circuit upgrades, BGP community design, migrating to new gateways, and planning for circuit/port maintenance and operational reliability. |
-| Decision Making | L54-L66 | Guidance on choosing ExpressRoute gateways, connectivity models, locations/providers, Direct, VNet options, prerequisites, migration planning, and estimating/optimizing ExpressRoute costs. |
-| Architecture & Design Patterns | L67-L80 | ExpressRoute network design: HA/DR patterns, dual circuits, multicloud, cross-tenant, VPN coexist/backup, Microsoft peering, and routing/asymmetry optimization. |
-| Limits & Quotas | L81-L88 | ExpressRoute bandwidth/QoS limits, FastPath and gateway scale constraints, and provider port rate limiting, especially for voice (Skype) and high-performance connectivity. |
-| Security | L89-L98 | Encrypting ExpressRoute (IPsec, MACsec, S2S VPN), securing private/Microsoft peering, and managing roles, permissions, and best practices for ExpressRoute security. |
-| Configuration | L99-L137 | Configuring and managing ExpressRoute circuits, gateways, peering, routing, NAT, IPv6, Global Reach, monitoring, resiliency, and VNet connectivity via portal, PowerShell, and CLI. |
-| Integrations & Coding Patterns | L138-L146 | Programmatic management of ExpressRoute circuits using PowerShell, Azure CLI, Automation, and Logic Apps, including creation, updates, and automated route-count alerting. |
-| Deployment | L147-L156 | Guides for deploying and migrating ExpressRoute circuits/gateways, testing multi-site resiliency, and automating setup with ARM templates, Bicep, and Terraform. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing ExpressRoute issues: ARP/BGP and end-to-end connectivity checks, performance testing, gateway migration errors, correlation IDs, circuit resets, and FAQ on services/costs. |
+| Best Practices | L48-L55 | Best practices for ExpressRoute circuit upgrades, BGP community design, migrating to new gateways, and planning for circuit/port maintenance and operational reliability. |
+| Decision Making | L56-L68 | Guidance on choosing ExpressRoute gateways, connectivity models, locations/providers, Direct, VNet options, prerequisites, migration planning, and estimating/optimizing ExpressRoute costs. |
+| Architecture & Design Patterns | L69-L82 | ExpressRoute network design: HA/DR patterns, dual circuits, multicloud, cross-tenant, VPN coexist/backup, Microsoft peering, and routing/asymmetry optimization. |
+| Limits & Quotas | L83-L90 | ExpressRoute bandwidth/QoS limits, FastPath and gateway scale constraints, and provider port rate limiting, especially for voice (Skype) and high-performance connectivity. |
+| Security | L91-L100 | Encrypting ExpressRoute (IPsec, MACsec, S2S VPN), securing private/Microsoft peering, and managing roles, permissions, and best practices for ExpressRoute security. |
+| Configuration | L101-L139 | Configuring and managing ExpressRoute circuits, gateways, peering, routing, NAT, IPv6, Global Reach, monitoring, resiliency, and VNet connectivity via portal, PowerShell, and CLI. |
+| Integrations & Coding Patterns | L140-L148 | Programmatic management of ExpressRoute circuits using PowerShell, Azure CLI, Automation, and Logic Apps, including creation, updates, and automated route-count alerting. |
+| Deployment | L149-L158 | Guides for deploying and migrating ExpressRoute circuits/gateways, testing multi-site resiliency, and automating setup with ARM templates, Bicep, and Terraform. |
 
 ### Troubleshooting
 | Topic | URL |

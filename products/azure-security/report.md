@@ -24,6 +24,12 @@ category_descriptions:
   decision-making: Guidance on choosing between Azure Key Vault, Managed HSM, Cloud
     HSM, and Payment HSM based on security, compliance, key management, and workload
     requirements.
+skill_description: Expert knowledge for Azure Security development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Security applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
+  Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report
 

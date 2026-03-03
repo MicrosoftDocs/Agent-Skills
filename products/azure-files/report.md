@@ -21,6 +21,11 @@ category_descriptions:
     constraints.'
   integrations: 'Using Azure Files from code: AKS CSI integration and .NET, Java,
     Python SDK usage, including auth, file operations, and app integration patterns.'
+skill_description: Expert knowledge for Azure Files development including best practices,
+  decision making, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Files
+  applications. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
+  Files (use azure-netapp-files).
 ---
 # Azure Files Crawl Report
 
@@ -33,9 +38,9 @@ category_descriptions:
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 30
-- **Updated Pages**: 1
-- **Unchanged**: 77
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 108
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -53,35 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 14 | 13.0% |
 
 ## Changes
-
-### New Pages
-
-- [What is Azure File Sync?](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction)
-- [Extend Windows file servers with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers)
-- [Plan for an Azure File Sync deployment](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning)
-- [Deploy Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide)
-- [Register a server with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration)
-- [Add an Azure File Sync Server endpoint](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-create)
-- [Manage tiered files](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-how-to-manage-tiered-files)
-- [Move resources to other resource groups, subscriptions, and Microsoft Entra tenants](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-resource-move)
-- [Delete an Azure File Sync server endpoint](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-delete)
-- [Modify Azure File Sync topology](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology)
-- [Replace an Azure File Sync server](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-replace-server)
-- [Replace drive of an Azure File Sync server](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-replace-drive)
-- [Install Azure File Sync agent extension on Arc-enabled Windows Servers](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extension)
-- [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview)
-- [Cloud tiering policies overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-policy)
-- [Choose your cloud tiering policies](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-choose-cloud-tiering-policies)
-- [Monitor cloud tiering](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitor-cloud-tiering)
-- [Networking considerations for hybrid access](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-networking-overview)
-- [Configure Azure File Sync network endpoints](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-networking-endpoints)
-- [Configure File Sync proxy and firewall settings](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-firewall-and-proxy)
-- *...and 10 more*
-
-### Updated Pages
-
-- [Azure Files and Azure NetApp Files comparison](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-netapp-comparison)
-  - Updated: 2026-02-18T10:58:00.000Z → 2026-03-03T06:13:00.000Z
 
 ## Classified Pages
 

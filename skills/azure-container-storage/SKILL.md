@@ -1,6 +1,6 @@
 ---
 name: azure-container-storage
-description: Expert knowledge for Azure Container Storage development including troubleshooting, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Container Storage applications.
+description: Expert knowledge for Azure Container Storage development including troubleshooting, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Container Storage applications. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Container Storage. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and fixing Azure Container Storage v1 install failures, pool creation/health issues, and related Kubernetes cluster/storage configuration problems. |
-| Decision Making | L36-L43 | Guidance on Azure Container Storage costs (v1 vs v2), billing models, and choosing/configuring redundancy options like LRS vs ZRS and multi-zone setups |
-| Limits & Quotas | L44-L49 | Guidance on resizing Azure Container Storage volumes (v2 and v1), including capacity/pool limits, constraints, and steps to safely expand volumes within those limits. |
-| Security | L50-L54 | Configuring customer-managed key (CMK) encryption for Azure Container Storage using Elastic SAN volumes, including setup steps and security considerations. |
-| Configuration | L55-L62 | Configuring Azure Container Storage pools, node placement, and monitoring: storage pool parameters, node affinity, Prometheus setup (v1 & current), and Azure Managed Grafana dashboards. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing Azure Container Storage v1 install failures, pool creation/health issues, and related Kubernetes cluster/storage configuration problems. |
+| Decision Making | L38-L45 | Guidance on Azure Container Storage costs (v1 vs v2), billing models, and choosing/configuring redundancy options like LRS vs ZRS and multi-zone setups |
+| Limits & Quotas | L46-L51 | Guidance on resizing Azure Container Storage volumes (v2 and v1), including capacity/pool limits, constraints, and steps to safely expand volumes within those limits. |
+| Security | L52-L56 | Configuring customer-managed key (CMK) encryption for Azure Container Storage using Elastic SAN volumes, including setup steps and security considerations. |
+| Configuration | L57-L64 | Configuring Azure Container Storage pools, node placement, and monitoring: storage pool parameters, node affinity, Prometheus setup (v1 & current), and Azure Managed Grafana dashboards. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics),
     data collection/ingestion, alerts, metrics, workbooks, autoscale, ITSM connectors,
     and Application Insights telemetry.'
-  configuration: 'Configuring Azure Monitor end to end: agents, data collection rules,
-    pipelines, logs/metrics schemas, alerts, autoscale, workspaces, Private Link,
-    and Application Insights/OpenTelemetry settings.'
+  configuration: 'Configuring Azure Monitor end to end: agents, DCRs, pipelines, alerts,
+    autoscale, App Insights, Kubernetes/Prometheus, logs/metrics schemas, workspaces,
+    Private Link, and resource‑specific metrics/log tables.'
   best-practices: Best practices for Azure Monitor setup, cost and performance optimization,
     alerting, autoscale, Kubernetes/VM monitoring, Prometheus/PromQL, workbooks, and
     multicloud observability.
@@ -16,8 +16,8 @@ category_descriptions:
   decision-making: Guidance for planning and executing migrations, cost optimization,
     and feature choices in Azure Monitor (agents, alerts, logs, billing, SCOM, Prometheus,
     Splunk, Grafana, and VM insights).
-  security: 'Securing Azure Monitor and related services: network isolation, TLS/mTLS,
-    Private Link, RBAC and Azure Policy, CMK/BYOS, secure APIs/webhooks, and analyzing
+  security: 'Securing Azure Monitor and related services: network isolation, TLS,
+    Private Link, RBAC, policy/compliance, CMK/BYOS, secure APIs/webhooks, and analyzing
     security/audit/threat intel logs.'
   limits-quotas: Limits, quotas, performance, and scale behavior for Azure Monitor
     logs, metrics, agents, autoscale, ingestion, APIs, and per‑resource metric definitions
@@ -28,21 +28,27 @@ category_descriptions:
   architecture-patterns: 'Designing Azure Monitor architectures: enterprise-wide layouts,
     Private Link network patterns, choosing single vs multiple workspaces, and using
     workspace replication for resilience.'
+skill_description: Expert knowledge for Azure Monitor development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Monitor applications. Not for Azure Defender
+  For Cloud (use azure-defender-for-cloud), Azure Network Watcher (use azure-network-watcher),
+  Azure Service Health (use azure-service-health), Azure Reliability (use azure-reliability).
 ---
 # Azure Monitor Crawl Report
 
 ## Summary
 
-- **Total Pages**: 2344
-- **Fetched**: 2344
+- **Total Pages**: 2347
+- **Fetched**: 2347
 - **Fetch Failed**: 0
-- **Classified**: 1911
-- **Unclassified**: 433
+- **Classified**: 1913
+- **Unclassified**: 434
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 2344
+- **New Pages**: 3
+- **Updated Pages**: 2
+- **Unchanged**: 2342
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
@@ -52,16 +58,29 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 4 | 0.2% |
 | best-practices | 37 | 1.6% |
-| configuration | 1340 | 57.2% |
+| configuration | 1340 | 57.1% |
 | decision-making | 26 | 1.1% |
 | deployment | 35 | 1.5% |
 | integrations | 322 | 13.7% |
 | limits-quotas | 59 | 2.5% |
-| security | 45 | 1.9% |
+| security | 47 | 2.0% |
 | troubleshooting | 43 | 1.8% |
-| *(Unclassified)* | 433 | 18.5% |
+| *(Unclassified)* | 434 | 18.5% |
 
 ## Changes
+
+### New Pages
+
+- [Sample gateway setup](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-kubernetes-gateway)
+- [Automated certificate management (Default TLS)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-automated)
+- [Customer-managed certificates (BYOC)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-custom)
+
+### Updated Pages
+
+- [Extension versions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-extension-versions)
+  - Updated: 2026-02-26T06:03:00.000Z → 2026-03-03T13:04:00.000Z
+- [Configure TLS](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls)
+  - Updated: 2026-02-25T23:09:00.000Z → 2026-03-03T13:04:00.000Z
 
 ## Classified Pages
 
@@ -170,7 +189,6 @@ category_descriptions:
 | [AegDataPlaneRequests](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aegdataplanerequests) | configuration | 0.86 | Event Grid data plane requests table reference defines aggregated log schema (request counts, properties) with field-level details, which is expert, product-specific configuration knowledge. |
 | [Agent management](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-manage-agent) | configuration | 0.86 | Details maintenance operations, upgrade steps, and settings (like disabling env var collection) for the containerized Log Analytics agent; highly product-specific configuration. |
 | [Azure Monitor supported metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index) | configuration | 0.86 | Same as 14: detailed index of supported metrics per resource type and API version, which is expert configuration reference data. |
-| [Configure TLS](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls) | security | 0.86 | TLS/mTLS setup for this pipeline will include certificate types, secret names, configuration fields, and supported modes, which are product-specific security configuration details. |
 | [Container insights](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-troubleshoot) | troubleshooting | 0.86 | Provides symptom-based troubleshooting for Container Insights with product-specific checks, commands, and causes/solutions. |
 | [ContainerLogV2](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerlogv2) | configuration | 0.86 | ContainerLogV2 reference includes schema details (e.g., support for stitched logs up to 64 KB, stack trace handling) that are precise, product-specific configuration. |
 | [Create and edit](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-create-edit) | configuration | 0.86 | Provides detailed methods and recommendations for creating/editing DCRs, including JSON definition patterns and configuration fields unique to Azure Monitor. |
@@ -227,10 +245,12 @@ category_descriptions:
 | [ASRJobs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrjobs) | configuration | 0.85 | Defines the ASRJobs table schema, including fields for job status, duration, and replicated item info, which is expert log configuration knowledge. |
 | [ASRReplicatedItems](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrreplicateditems) | configuration | 0.85 | Provides the ASRReplicatedItems table columns and meanings for Site Recovery replicated items, a product-specific schema reference. |
 | [ASRv2JobEvents](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asrv2jobevents) | configuration | 0.85 | Documents the ASRv2JobEvents table fields for Site Recovery v2 jobs, including status and duration, which is expert log schema knowledge. |
+| [Automated certificate management (Default TLS)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-automated) | security | 0.85 | Automated certificate management for TLS/mTLS will include concrete Azure Monitor pipeline parameters, default behaviors, and security configuration steps that are product-specific and map directly to the security sub-skill definition. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices) | best-practices | 0.85 | Explicit best-practices article for configuring Application Insights and OpenTelemetry so investigations are accurate; contains product-specific recommendations and likely concrete configuration patterns. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-best-practices) | best-practices | 0.85 | Explicitly a best-practices article for DCR creation/management with product-specific recommendations and likely concrete configuration patterns. |
 | [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration) | configuration | 0.85 | Explicit configuration guide with details like connection string formats, sampling options, and other OTel parameters across languages. |
 | [Configure agent settings](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agent-settings) | configuration | 0.85 | Explains how to configure AMA using a central DCR, including specific configuration options and parameters—core configuration reference. |
+| [Customer-managed certificates (BYOC)](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls-custom) | security | 0.85 | Customer-managed (BYOC) TLS configuration necessarily documents specific certificate formats, secret names/locations, and Azure Monitor pipeline security settings, which are product-specific security configuration details. |
 | [Default configuration](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-default) | configuration | 0.85 | Lists default targets, dashboards, and recording rules; these are detailed configuration defaults and metric rules unique to the product. |
 | [Heartbeat](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/heartbeat) | integrations | 0.85 | Includes multiple Kusto queries over Heartbeat for counts, last heartbeat, latency spikes, and stopped resources, using detailed schema fields and time filters. |
 | [InsightsMetrics](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/insightsmetrics) | integrations | 0.85 | Provides detailed KQL over InsightsMetrics for IoT Edge D2C rates, Edge Hub queue thresholds, node disk usage, and Prometheus metrics, using specific metric names and dimensions. |
@@ -593,6 +613,7 @@ category_descriptions:
 | [CommunicationComplianceActivity](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/communicationcomplianceactivity) | configuration | 0.80 | Defines the CommunicationComplianceActivity table fields for Office communication compliance audits, which is specific schema/configuration knowledge. |
 | [Compare metrics strategies](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-plane-versus-metrics-export) | decision-making | 0.80 | Scenario-based comparison of two metrics access methods with recommendations on when to use each, fitting decision-making guidance. |
 | [ConfidentialWatchlist](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/confidentialwatchlist) | configuration | 0.80 | ConfidentialWatchlist table reference explains how confidential watchlist CSV data is stored (columns, types) for use in joins and filters, which is expert schema knowledge. |
+| [Configure TLS](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-tls) | security | 0.80 | TLS/mTLS configuration for Azure Monitor pipeline will contain product-specific security settings, certificate requirements, and configuration parameters (such as specific fields in manifests or extension settings) that qualify as expert security configuration knowledge. |
 | [Configure granular RBAC](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/granular-rbac-use-case) | security | 0.80 | Step-by-step configuration of row-level security with concrete examples (roles, departments, locations); detailed, product-specific security configuration. |
 | [Connection strings](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings) | configuration | 0.80 | Explains connection string schema, key-value settings, and examples; includes product-specific configuration parameters (ikey, ApplicationId, endpoints) and their usage. |
 | [Convert management packs into data collection rules](https://learn.microsoft.com/en-us/azure/azure-monitor/scom-manage-instance/convert-management-packs-into-data-collection-rules) | integrations | 0.80 | Describes how to extract rules/monitors from SCOM management packs and convert them into DCRs, including configuration file structures and LLM prompts; a specific integration pattern. |
@@ -1507,7 +1528,6 @@ category_descriptions:
 | [ExchangeOnlineAssessmentRecommendation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/exchangeonlineassessmentrecommendation) | configuration | 0.70 | Defines the ExchangeOnlineAssessmentRecommendation table and its columns. This is expert schema/configuration knowledge for consuming Exchange Online assessment data in Log Analytics. |
 | [Export with Logic Apps](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/logs-export-logic-app) | integrations | 0.70 | Integration pattern with Logic Apps, including connectors, query configuration, and payload handling specific to Log Analytics and Azure Storage. |
 | [Extension](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-extension) | deployment | 0.70 | Details the VM extension that enables PerfInsights and alternate install methods; extension configuration and deployment are product-specific. |
-| [Extension versions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-extension-versions) | configuration | 0.70 | Version details and release notes for the pipeline Arc extension; includes version-specific behavior and configuration implications. |
 | [Filter control plane logs](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/control-plane-transformations) | configuration | 0.70 | Step-by-step configuration of workspace DCR transformations with concrete transformation definitions and fields for AKS control plane logs; includes product-specific parameters and structure. |
 | [Functions](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/functions) | configuration | 0.70 | Explains defining reusable query functions and how they behave in Azure Monitor; product-specific query configuration pattern. |
 | [GKEAPIServer](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gkeapiserver) | configuration | 0.70 | GKEAPIServer table schema describes how GKE API server logs are ingested and represented. These column definitions are product-specific configuration details. |
@@ -1635,6 +1655,7 @@ category_descriptions:
 | [Resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs) | configuration | 0.70 | Describes how to enable and send resource logs to various destinations, with resource-type-specific behaviors and configuration steps. |
 | [SDK Stats](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sdk-stats) | troubleshooting | 0.70 | Focuses on SDK stats custom metrics, including drop codes and retry codes that explain causes and next steps; these are product-specific error/diagnostic codes and mappings. |
 | [SQLAssessmentRecommendation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/sqlassessmentrecommendation) | integrations | 0.70 | Contains queries counting SQL assessment recommendations by focus area, computer, instance, database, and security priority, using this assessment table’s schema. |
+| [Sample gateway setup](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-kubernetes-gateway) | configuration | 0.70 | Gateway deployment for Azure Monitor pipeline on Kubernetes will include product-specific Kubernetes objects, annotations, and configuration values (for Traefik, services, ports, protocols) that are unique to this integration scenario and not just conceptual guidance. |
 | [Scale with custom metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-custom-metric) | configuration | 0.70 | Shows how to set up autoscale on custom metrics with specific namespace constraints (Standard and Azure.ApplicationInsights); includes product-specific configuration details and constraints. |
 | [Scenarios](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/network-security-perimeter-scenarios) | security | 0.70 | Scenario-based configurations for NSP with Azure Monitor resources; product-specific network isolation patterns and settings. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/security-controls-policy) | security | 0.70 | Lists specific Azure Policy built-in definitions and compliance controls for Azure Monitor, including policy names and scopes that are product-specific security/compliance configuration. |
@@ -2369,6 +2390,7 @@ category_descriptions:
 | [Collect and view resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/tutorial-resource-logs) | 0.20 | Tutorial for configuring diagnostic settings; step-by-step but not a comprehensive configuration reference. |
 | [Custom metrics in Azure Monitor (preview)](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-custom-overview) | 0.20 | Overview of custom metrics; summary does not show numeric limits, configuration tables, or detailed API parameters. |
 | [Dependencies](https://learn.microsoft.com/en-us/azure/azure-monitor/app/dependencies) | 0.20 | From the summary, the page explains what dependency tracking is and how Application Insights measures dependency calls, but it doesn't indicate the presence of specific limits, configuration parameter tables, error codes, or product-specific numeric thresholds. It appears to be conceptual/feature usage guidance rather than expert-knowledge details as defined by the sub-skill types. |
+| [Extension versions](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-extension-versions) | 0.20 | Version and release notes pages typically list changes and dates but not reusable expert configuration, limits, or troubleshooting patterns as defined by the sub-skill types. |
 | [Log Analytics tables by category](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables-category) | 0.20 | Authorization-gated index by category; functions as navigation, not a technical reference page. |
 | [Manage Azure Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-manage) | 0.20 | Management of workbooks in the portal is procedural UI guidance without detailed limits, configs, or error-code-based troubleshooting. |
 | [Monitor an Azure resource](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/monitor-azure-resource) | 0.20 | General article on monitoring Azure resources; likely procedural without deep config matrices or limits. |

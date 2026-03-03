@@ -10,6 +10,11 @@ category_descriptions:
     needed to reliably access and use the Azure portal across different platforms.
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
+skill_description: Expert knowledge for Azure Portal development including troubleshooting,
+  limits & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Portal applications. Not for Azure Cloud Shell (use azure-cloud-shell), Azure
+  Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy).
 ---
 # Azure Portal Crawl Report
 

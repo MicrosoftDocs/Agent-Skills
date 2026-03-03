@@ -26,6 +26,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Event Grid issues: MQTT broker problems,
     error codes, common failures, network connectivity, and event subscription validation
     errors.'
+skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Event Grid applications. Not for Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure
+  Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure Event Grid Crawl Report
 

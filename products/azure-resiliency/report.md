@@ -10,6 +10,11 @@ category_descriptions:
   security: Configuring security levels, policies, and posture in Azure Resiliency,
     including how to assess, adjust, and enforce protections for resilient workloads
     and infrastructure.
+skill_description: Expert knowledge for Azure Resiliency development including limits
+  & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Resiliency applications. Not for Azure Reliability (use azure-reliability),
+  Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup),
+  Azure Monitor (use azure-monitor).
 ---
 # Azure Resiliency Crawl Report
 
