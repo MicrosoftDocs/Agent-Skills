@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring Azure Backup and restore: setup, policies, offline seeding,
-    diagnostics/monitoring, scripts/APIs, and workload-specific backups (VMs, Files,
-    Blobs, Disks, SQL, AKS, SAP, PostgreSQL).'
+    diagnostics/monitoring, and management for VMs, AKS, SQL, SAP, Files, Blobs, Disks,
+    PostgreSQL, and Data Lake.'
   architecture-patterns: 'Azure Backup’s architecture for protecting SAP HANA: components,
     data flow, backup/restore process, scalability, security, and integration with
     Azure storage and recovery services.'
@@ -35,13 +35,13 @@ category_descriptions:
 - **Total Pages**: 393
 - **Fetched**: 393
 - **Fetch Failed**: 0
-- **Classified**: 238
-- **Unclassified**: 155
+- **Classified**: 239
+- **Unclassified**: 154
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 390
+- **Updated Pages**: 1
+- **Unchanged**: 392
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -51,25 +51,21 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 1 | 0.3% |
 | best-practices | 7 | 1.8% |
-| configuration | 78 | 19.8% |
+| configuration | 79 | 20.1% |
 | decision-making | 2 | 0.5% |
 | deployment | 1 | 0.3% |
 | integrations | 55 | 14.0% |
 | limits-quotas | 28 | 7.1% |
 | security | 39 | 9.9% |
 | troubleshooting | 27 | 6.9% |
-| *(Unclassified)* | 155 | 39.4% |
+| *(Unclassified)* | 154 | 39.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Back up a VM - Azure portal](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-portal)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [Set up a vault and enable backup for Azure VMs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare)
-  - Updated: 2026-01-22T12:25:00.000Z → 2026-03-02T12:12:00.000Z
-- [About Azure VM restore](https://learn.microsoft.com/en-us/azure/backup/about-azure-vm-restore)
-  - Updated: 2025-10-13T08:00:00.000Z → 2026-03-02T12:12:00.000Z
+- [HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup)
+  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -263,6 +259,7 @@ category_descriptions:
 | [V1 experience](https://learn.microsoft.com/en-us/azure/backup/private-endpoints) | security | 0.70 | Describes scenarios and configuration for private endpoints for Backup; includes security-focused network configuration unique to the service. |
 | [V1 experience](https://learn.microsoft.com/en-us/azure/backup/private-endpoints-overview) | security | 0.70 | Private endpoint configuration for Azure Backup (required subresources, network rules, supported scenarios) is product-specific security/network configuration. |
 | [V2 experience](https://learn.microsoft.com/en-us/azure/backup/backup-azure-private-endpoints-concept) | security | 0.70 | Version 2 private endpoint behavior and configuration options are specific to Azure Backup and include detailed security/network settings. |
+| [HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup) | configuration | 0.68 | The article describes product-specific steps and settings to back up SAP HANA databases with HANA System Replication on Azure VMs using Azure Backup. It includes Azure Backup–specific configuration flows (e.g., how to register/protect primary vs secondary, switching protection from standalone to HSR, vault and workload configuration) that are unique to this integration scenario and not generic tutorial content. While it’s procedural, the value lies in the concrete, product-specific configuration behavior for HSR-enabled HANA on Azure. |
 | [Add storage](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-add-storage) | configuration | 0.65 | Describes adding storage and using Modern Backup Storage with version/OS prerequisites; likely includes specific configuration steps and settings unique to MABS. |
 | [Azure PowerShell Samples](https://learn.microsoft.com/en-us/azure/backup/powershell-backup-samples) | integrations | 0.65 | Central index of script samples; individual samples typically include cmdlet parameters and patterns specific to Azure Backup automation, which are product-specific integration patterns. |
 | [Back up Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-tutorial) | configuration | 0.65 | Tutorial for configuring vaulted backup with long-term retention; likely includes specific backup policy settings and retention configuration unique to this workload. |
@@ -393,7 +390,6 @@ category_descriptions:
 | [Database and HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore) | 0.35 | SAP HANA restore tutorial; primarily describes restore operations and CRR usage, not detailed config tables or error-code troubleshooting. |
 | [FAQ-Backup center](https://learn.microsoft.com/en-us/azure/backup/backup-center-faq) | 0.35 | Backup center FAQ is typically conceptual/usage Q&A for a portal experience, not detailed error-code troubleshooting or configuration matrices. |
 | [From the Azure portal](https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-quick) | 0.35 | Quickstart for configuring vaulted backup for Azure Blobs via portal; focuses on creating a policy and enabling backup, not on exhaustive settings or quotas. |
-| [HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup) | 0.35 | SAP HANA System Replication backup how-to; focuses on portal/CLI steps, with support details in another matrix article. |
 | [Instance snapshot](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup) | 0.35 | SAP HANA instance snapshot backup tutorial; summary explicitly defers scenarios/limits to a support matrix page. |
 | [Instance snapshot](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-restore) | 0.35 | SAP HANA instance restore via snapshots; operational guidance without clear indication of limits, config matrices, or troubleshooting mappings. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-ase-database-manage) | 0.35 | Management/monitoring for SAP ASE backups; operational tasks rather than detailed config, limits, or troubleshooting content. |

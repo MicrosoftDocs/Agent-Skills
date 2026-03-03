@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   architecture-patterns: Design patterns and guidance for choosing VPN Gateway topologies,
     configuring active-active gateways, and building highly available, resilient site-to-site
@@ -18,9 +18,9 @@ category_descriptions:
     and packet-capture/log-based debugging'
   limits-quotas: VPN Gateway client version history, SKU comparisons, and FAQs about
     gateway limits, scale, performance, and connection behavior
-  deployment: 'Deploying and configuring Azure VPN Gateways: creation via PowerShell/CLI,
-    SKU and IP migrations/upgrades, active-active changes, S2S VPN setup, and client
-    profile deployment via Intune.'
+  deployment: 'Deploying and configuring VPN Gateways: creating gateways and S2S tunnels
+    via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs,
+    and deploying VPN client profiles.'
   best-practices: Guidance on using network virtual appliances (NVAs) in Azure as
     VPN endpoints for remote access, including design, routing, security, and integration
     with Azure VPN Gateway.
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
@@ -61,6 +61,11 @@ category_descriptions:
 | *(Unclassified)* | 16 | 12.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [How to migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto)
+  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 
@@ -126,7 +131,6 @@ category_descriptions:
 | [Device tunnel](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel) | configuration | 0.70 | Always On device tunnel setup includes specific XML/profile fields, tunnel types, and gateway settings unique to Azure VPN Gateway. |
 | [Forced tunneling](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-tunneling) | configuration | 0.70 | Shows how to set Default Site and route Internet-bound traffic; includes specific PowerShell parameters and routing behaviors unique to Azure VPN Gateway. |
 | [Gateway transit for VNet peering](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-peering-gateway-transit) | configuration | 0.70 | Gateway transit requires specific peering properties and constraints; article documents exact settings and supported topologies. |
-| [How to migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto) | deployment | 0.70 | Step-by-step migration with product-specific constraints, known issues, and behavior during migration. |
 | [IKEv2 - strongSwan](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-ike-linux) | configuration | 0.70 | Shows strongSwan configuration files and parameters (conn, left/right, proposals) required for Azure P2S IKEv2 certificate auth. |
 | [IPv6 configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/ipv6-configuration) | configuration | 0.70 | Details IPv6-related configuration parameters and constraints for dual-stack VPN Gateway setups. |
 | [MakeCert](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-makecert) | configuration | 0.70 | Provides MakeCert command lines and parameter values to create root and client certificates for Azure P2S, which are detailed configuration instructions. |
@@ -148,6 +152,7 @@ category_descriptions:
 | [VPN Gateway FAQ](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq) | limits-quotas | 0.70 | FAQ for VPN Gateway typically includes precise connection limits, throughput caps, supported combinations, and protocol specifics that are numeric and SKU-dependent. |
 | [VPN over private peering](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-vpn-private-peering) | integrations | 0.70 | Integration pattern combining VPN Gateway with ExpressRoute, including configuration constraints and supported scenarios. |
 | [Validate VPN throughput to a VNet](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet) | troubleshooting | 0.70 | Although framed as validation, it is used to diagnose throughput issues with specific steps, commands, and interpretation guidance for Azure VPN Gateway connections. |
+| [How to migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto) | deployment | 0.68 | The article describes a specific migration path between Basic and Standard public IP SKUs for Azure VPN Gateway, including SKU-specific applicability (VpnGw1-5), GA vs Preview status for Active-Passive vs Active-Active, and known limitations during migration. These are product- and SKU-specific deployment behaviors and constraints that go beyond generic knowledge and are needed for planning and executing production migrations. |
 | [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert) | configuration | 0.68 | Details OS-specific certificate import steps and required certificate stores/locations for Azure P2S client authentication. |
 | [About active-active mode gateways](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-active-active-gateways) | architecture-patterns | 0.65 | Explains when and how to use active-active mode, including design benefits and trade-offs specific to VPN Gateway. |
 | [About gateway SKU consolidation & migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation) | decision-making | 0.65 | Explains migration from old to new SKUs, mapping and pricing implications; supports SKU choice and migration decisions. |

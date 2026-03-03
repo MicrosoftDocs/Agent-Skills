@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   decision-making: Guidance on choosing App Service tiers, plans, auth and networking,
     plus planning cost, TLS, domains, and migrations (.NET, Windows→Linux, VNet, Docker
@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 247
 - **Fetched**: 247
 - **Fetch Failed**: 0
-- **Classified**: 163
-- **Unclassified**: 84
+- **Classified**: 161
+- **Unclassified**: 86
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 247
+- **Updated Pages**: 2
+- **Unchanged**: 245
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -54,14 +54,21 @@ category_descriptions:
 | best-practices | 8 | 3.2% |
 | configuration | 53 | 21.5% |
 | decision-making | 15 | 6.1% |
-| deployment | 28 | 11.3% |
+| deployment | 26 | 10.5% |
 | integrations | 8 | 3.2% |
 | limits-quotas | 1 | 0.4% |
 | security | 43 | 17.4% |
 | troubleshooting | 3 | 1.2% |
-| *(Unclassified)* | 84 | 34.0% |
+| *(Unclassified)* | 86 | 34.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Bicep](https://learn.microsoft.com/en-us/azure/app-service/samples-bicep)
+  - Updated: 2025-03-24T05:39:00.000Z → 2026-03-02T23:28:00.000Z
+- [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines)
+  - Updated: 2024-06-11T22:09:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 
@@ -128,7 +135,6 @@ category_descriptions:
 | [Configure common settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common) | configuration | 0.75 | Explains concrete App Service app settings (like platform, general settings, connection strings) with specific option names and allowed values—product-specific configuration knowledge. |
 | [Connect a domain name](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain) | configuration | 0.75 | Step-by-step mapping of DNS records and bindings for custom domains to App Service—detailed configuration steps and constraints. |
 | [Data sources](https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-data-sources) | configuration | 0.75 | Explains configuring data sources for Java SE, Tomcat, and JBoss on App Service, with specific parameters and connection settings. |
-| [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines) | deployment | 0.75 | Shows how to define Azure Pipelines YAML to deploy containers to App Service; product-specific CI/CD deployment configuration. |
 | [Deployment and runtime](https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-deploy-run) | configuration | 0.75 | Covers deployment and runtime configuration for Tomcat, JBoss, and Java SE, including Java versions and logging—product-specific configuration options. |
 | [Disable basic auth](https://learn.microsoft.com/en-us/azure/app-service/configure-basic-auth-disable) | security | 0.75 | Explains concrete ways to disable basic auth for FTP/Web Deploy, fallback deployment methods, and how to monitor access attempts; this is product-specific security configuration beyond generic concepts. |
 | [Domain and cert quickstart](https://learn.microsoft.com/en-us/azure/app-service/tutorial-secure-domain-certificate) | security | 0.75 | Tutorial on configuring custom domains and App Service managed certificates, including TLS/SSL bindings—product-specific security configuration. |
@@ -156,7 +162,6 @@ category_descriptions:
 | [App to app to another Azure service as user](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-app-graph-javascript) | security | 0.70 | Covers specific configuration to pass user tokens from a front-end App Service to a back-end and then to Azure services, including scopes and auth settings unique to App Service. |
 | [Aspire](https://learn.microsoft.com/en-us/azure/app-service/configure-language-dotnet-aspire) | configuration | 0.70 | Describes configuring Aspire apps including App Service plan settings, Application Insights, dashboards, and health probes—product-specific configuration details. |
 | [Back up and restore app](https://learn.microsoft.com/en-us/azure/app-service/manage-backup) | configuration | 0.70 | Shows how to configure on-demand and scheduled backups, including linked database considerations and deprecation; product-specific backup configuration. |
-| [Bicep](https://learn.microsoft.com/en-us/azure/app-service/samples-bicep) | deployment | 0.70 | Bicep samples define App Service resources and properties; these are product-specific deployment patterns. |
 | [Certificates](https://learn.microsoft.com/en-us/azure/app-service/environment/overview-certificates) | configuration | 0.70 | Covers product-specific certificate usage and binding behavior for single-tenant ASE apps, including concrete configuration details unique to ASE rather than generic TLS concepts. |
 | [Clone app](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-app-cloning) | deployment | 0.70 | Explains cloning scenarios, supported tiers, and Traffic Manager integration; App Service–specific deployment pattern. |
 | [Configure](https://learn.microsoft.com/en-us/azure/app-service/configure-language-nodejs) | configuration | 0.70 | Describes how App Service runs Node.js, npm install behavior, and deployment engine details; likely includes specific setting names and behaviors that are product-specific configuration knowledge. |
@@ -298,6 +303,8 @@ category_descriptions:
 | [ASP.NET Core with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app) | 0.20 | End-to-end tutorial for deploying ASP.NET Core with SQL and Redis; mainly procedural without configuration reference tables or limits. |
 | [ASP.NET with SQL DB](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase) | 0.20 | Tutorial for ASP.NET app with SQL Database; focuses on deployment steps rather than reusable configuration or limits. |
 | [Aspire Quickstart](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnet-aspire) | 0.20 | Quickstart for Aspire app deployment; primarily step-by-step tutorial, not a configuration reference or limits guide. |
+| [Bicep](https://learn.microsoft.com/en-us/azure/app-service/samples-bicep) | 0.20 | Page is a catalog of Bicep sample links for App Service without exposing underlying configuration tables, limits, or detailed parameters; it primarily serves as navigation to samples rather than containing expert-only reference data. |
+| [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines) | 0.20 | Primarily a step-by-step CI/CD tutorial for deploying a Windows container app with Azure Pipelines. It does not emphasize product-specific limits, configuration matrices, or deployment constraints by tier/plan; instead it focuses on defining a YAML pipeline and basic deployment flow, which are patterns an LLM generally knows from training. |
 | [JBoss with MySQL](https://learn.microsoft.com/en-us/azure/app-service/tutorial-java-jboss-mysql-app) | 0.20 | JBoss + MySQL deployment tutorial; procedural guidance without detailed configuration tables or limits. |
 | [Local small language models](https://learn.microsoft.com/en-us/azure/app-service/scenario-ai-local-small-language-model) | 0.20 | Describes using local SLMs and mentions pricing tiers conceptually; no explicit numeric limits or configuration parameter tables in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/app-service/overview-webjobs) | 0.20 | Overview of WebJobs capabilities and concepts without detailed configuration, limits, or troubleshooting content. |

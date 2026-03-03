@@ -3,7 +3,7 @@ name: azure-files
 description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Files applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -25,10 +25,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L33-L42 | Best practices for Azure Files: performance tuning (SMB/NFS, large dirs, premium shares), DR/failover planning, and using file shares for virtual desktops and FSLogix profiles. |
 | Decision Making | L43-L59 | Guidance on choosing Azure Files vs alternatives, selecting tiers, redundancy, billing models, cost optimizations, access models, and migration approaches for SMB/NFS workloads. |
 | Limits & Quotas | L60-L66 | Limits, quotas, and performance characteristics of Azure Files, including redundancy/region support for SSD shares, scalability, IOPS/throughput caps, and FAQ behaviors. |
-| Security | L67-L89 | Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, NDS, Kerberos), share/NTFS permissions, OAuth/keys, encryption in transit, network perimeter, and related configuration. |
-| Configuration | L90-L112 | Configuring Azure Files networking, security, redundancy, monitoring/alerts, snapshots, and mounting shares (SMB/NFS) from Linux, Windows, macOS, and via VPN or private endpoints |
-| Integrations & Coding Patterns | L113-L120 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
-| Deployment | L121-L130 | Guides for migrating on-prem/NAS/GlusterFS/SMB/NFS file shares and Linux servers to Azure Files or Azure File Sync, including tools like Storage Mover, Data Box, and Robocopy. |
+| Security | L67-L89 | Identity, auth, and encryption for Azure Files: Entra/AD DS/Kerberos/NTFS ACLs, managed identities, share permissions, network security, and secure SMB/NFS access. |
+| Configuration | L90-L111 | Configuring Azure Files networking, security, redundancy, monitoring/alerts, snapshots, and mounting shares (SMB/NFS) from Linux, Windows, macOS, and via VPN or private endpoints |
+| Integrations & Coding Patterns | L112-L119 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
+| Deployment | L120-L129 | Guides for migrating on-prem/NAS/GlusterFS/SMB/NFS file shares and Linux servers to Azure Files or Azure File Sync, including tools like Storage Mover, Data Box, and Robocopy. |
 
 ### Best Practices
 | Topic | URL |
@@ -70,7 +70,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Authorize Azure Files portal access with Entra or keys | https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal |
 | Enable OAuth-based REST access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/authorize-oauth-rest |
 | Encrypt data in transit for NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/encryption-in-transit-for-nfs-shares |
-| Use managed identities to access SMB Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities |
+| Configure managed identity access to SMB Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities |
 | Configure network security perimeter for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-network-security-perimeter |
 | Disable insecure SMB1 on Linux for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-remove-smb1-linux |
 | Configure root squash security for NFS Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/nfs-root-squash |
@@ -107,7 +107,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Mount SMB Azure file shares on Linux securely | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-linux |
 | Mount Azure file shares over SMB on macOS | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-mac |
 | Mount SMB Azure file shares on Windows | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows |
-| Create and manage Azure Files share snapshots | https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files |
 | Configure zonal placement for SSD Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement |
 
 ### Integrations & Coding Patterns

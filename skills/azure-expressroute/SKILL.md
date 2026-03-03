@@ -3,7 +3,7 @@ name: azure-expressroute
 description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure ExpressRoute applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -24,9 +24,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L35-L45 | Diagnosing and fixing ExpressRoute issues: ARP/BGP and end-to-end connectivity checks, performance testing, gateway migration errors, correlation IDs, circuit resets, and FAQ on services/costs. |
 | Best Practices | L46-L53 | Best practices for ExpressRoute circuit upgrades, BGP community design, migrating to new gateways, and planning for circuit/port maintenance and operational reliability. |
-| Decision Making | L54-L66 | Guidance on planning ExpressRoute: choosing gateways, connectivity models, locations/providers, Direct SKUs, VNet options, AZ-enabled migration, prerequisites, and cost management. |
+| Decision Making | L54-L66 | Guidance on choosing ExpressRoute gateways, connectivity models, locations/providers, Direct, VNet options, prerequisites, migration planning, and estimating/optimizing ExpressRoute costs. |
 | Architecture & Design Patterns | L67-L80 | ExpressRoute network design: HA/DR patterns, dual circuits, multicloud, cross-tenant, VPN coexist/backup, Microsoft peering, and routing/asymmetry optimization. |
-| Limits & Quotas | L81-L88 | ExpressRoute bandwidth, IP, and gateway limits, FastPath features, QoS for Skype voice, and rate limiting behavior on provider ports for capacity and performance planning. |
+| Limits & Quotas | L81-L88 | ExpressRoute bandwidth/QoS limits, FastPath and gateway scale constraints, and provider port rate limiting, especially for voice (Skype) and high-performance connectivity. |
 | Security | L89-L98 | Encrypting ExpressRoute (IPsec, MACsec, S2S VPN), securing private/Microsoft peering, and managing roles, permissions, and best practices for ExpressRoute security. |
 | Configuration | L99-L137 | Configuring and managing ExpressRoute circuits, gateways, peering, routing, NAT, IPv6, Global Reach, monitoring, resiliency, and VNet connectivity via portal, PowerShell, and CLI. |
 | Integrations & Coding Patterns | L138-L146 | Programmatic management of ExpressRoute circuits using PowerShell, Azure CLI, Automation, and Logic Apps, including creation, updates, and automated route-count alerting. |
@@ -56,7 +56,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Select and plan ExpressRoute virtual network gateways | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways |
 | Choose the right Azure ExpressRoute connectivity model | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models |
-| Evaluate and onboard to ExpressRoute Direct SKUs | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about |
+| Decide when to use Azure ExpressRoute Direct | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about |
 | Map ExpressRoute connectivity providers to peering locations | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations |
 | Select Azure ExpressRoute locations and providers | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers |
 | Assess prerequisites and scenarios for Azure ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-prerequisites |
@@ -81,7 +81,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| ExpressRoute FastPath features and IP limits | https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath |
+| Evaluate ExpressRoute FastPath features and limits | https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath |
 | Meet QoS requirements for Skype voice over ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-qos |
 | Understand rate limiting on provider ExpressRoute ports | https://learn.microsoft.com/en-us/azure/expressroute/provider-rate-limit |
 | ExpressRoute scalable gateway features and limits | https://learn.microsoft.com/en-us/azure/expressroute/scalable-gateway |

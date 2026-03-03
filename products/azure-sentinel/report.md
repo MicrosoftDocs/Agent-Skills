@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 371
+- **Updated Pages**: 0
+- **Unchanged**: 372
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 97 | 26.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Anomalies reference](https://learn.microsoft.com/en-us/azure/sentinel/anomalies-reference)
-  - Updated: 2025-12-30T12:09:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 

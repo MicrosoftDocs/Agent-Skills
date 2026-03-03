@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, indexes, skillsets, enrichment,
     vector/semantic settings, knowledge bases, monitoring, and query behavior for
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 299
+- **Updated Pages**: 2
+- **Unchanged**: 297
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -61,6 +61,13 @@ category_descriptions:
 | *(Unclassified)* | 65 | 21.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-import-vectors)
+  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-02T23:16:00.000Z
+- [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-image-search)
+  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -320,8 +327,6 @@ category_descriptions:
 | [Page, sort, and shape results](https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout) | 0.40 | Explains shaping search results via query parameters; likely standard usage patterns, not expert-only configuration matrices. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/get-started-portal-agentic-retrieval) | 0.40 | Portal quickstart for agentic retrieval; preview feature walkthrough without detailed config matrices or limits. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal) | 0.40 | Portal quickstart for full-text search; step-by-step wizard usage without detailed configuration parameter tables or limits. |
-| [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-image-search) | 0.40 | Portal quickstart for multimodal search; focuses on wizard usage rather than detailed configuration or limits. |
-| [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-import-vectors) | 0.40 | Portal wizard quickstart for integrated vectorization; mostly procedural UI steps without structured config tables or limits. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-skillset) | 0.40 | Portal skillset quickstart; mainly shows wizard flow and basic concepts, not deep config tables or error mappings. |
 | [Return a semantic answer](https://learn.microsoft.com/en-us/azure/search/semantic-answers) | 0.40 | Describes semantic answers and how to obtain them; usage-level guidance without deep config tables or error mappings. |
 | [What is an indexer?](https://learn.microsoft.com/en-us/azure/search/search-indexer-overview) | 0.40 | Indexer overview is conceptual (what indexers are, pull model) without detailed config tables or error/limit specifics. |
@@ -362,6 +367,8 @@ category_descriptions:
 | [Java samples](https://learn.microsoft.com/en-us/azure/search/samples-java) | 0.20 | High-level index of Java sample links; no detailed configuration, limits, or troubleshooting content indicated. |
 | [JavaScript samples](https://learn.microsoft.com/en-us/azure/search/samples-javascript) | 0.20 | High-level index of JavaScript sample links; description suggests navigation, not deep reference or config details. |
 | [Other query types](https://learn.microsoft.com/en-us/azure/search/search-query-overview) | 0.20 | Overview of query types; descriptive rather than detailed configuration or decision-making content. |
+| [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-image-search) | 0.20 | Quickstart for multimodal search using the Import data wizard; focuses on basic indexing and querying steps, not on quotas, configuration matrices, troubleshooting mappings, or other expert-only details. |
+| [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-import-vectors) | 0.20 | Quickstart wizard walkthrough for vector search in Azure AI Search; primarily step-by-step portal usage without detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [Python samples](https://learn.microsoft.com/en-us/azure/search/samples-python) | 0.20 | High-level index of Python sample links; no indication of detailed parameter tables or product-specific patterns. |
 | [Tools and accelerators](https://learn.microsoft.com/en-us/azure/search/resource-tools) | 0.20 | High-level description of productivity tools and samples; does not enumerate configuration parameters, limits, or detailed patterns beyond what an LLM would generally know. |
 | [Try for free](https://learn.microsoft.com/en-us/azure/search/search-try-for-free) | 0.20 | Explains how to use Azure free account and credits; mostly onboarding and evaluation guidance without deep technical specifics. |

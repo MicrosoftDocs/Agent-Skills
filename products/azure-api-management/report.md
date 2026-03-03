@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with AI/LLM backends,
     OAuth, GraphQL, MCP, logging/monitoring, Event Grid/Hubs, Service Bus, and importing/exporting
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: 'Limits, quotas, and validation in API Management: rate limiting,
     per-key quotas, OpenAI/LLM token limits, protocol format restrictions, WSDL/REST
     conversion, WebSocket limits, and validate-* policies.'
-  security: 'Securing API Management and its portals: auth (Entra ID/B2C/OAuth/JWT/certs),
-    TLS and domains, private/DDoS/Defender protections, self-hosted gateway auth,
-    and security policies.'
+  security: 'Securing Azure API Management: authN/authZ (Entra ID, B2C, OAuth2/JWT,
+    certs, managed identity), TLS/certs, portal access, network protection, policies,
+    and self-hosted gateway security.'
   decision-making: 'Guidance for strategic APIM decisions: choosing tiers, scaling
     and costs, networking, DevOps/CI-CD, migrations (portals, workspaces, APIs, AWS),
     analytics/monitoring, and monetization.'
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 276
+- **Updated Pages**: 1
+- **Unchanged**: 275
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -63,6 +63,11 @@ category_descriptions:
 
 ## Changes
 
+### Updated Pages
+
+- [validate-jwt](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy)
+  - Updated: 2025-08-07T05:10:00.000Z → 2026-02-25T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -71,6 +76,7 @@ category_descriptions:
 | [Self-hosted gateway container configuration](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-settings-reference) | configuration | 0.88 | Self-hosted gateway settings reference lists required/optional environment variables and settings with names, allowed values, and minimum versions, which are classic configuration tables with defaults and constraints. |
 | [Self-hosted gateway Azure Arc configuration](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-arc-reference) | configuration | 0.86 | Provides a reference of required and optional settings for the Azure Arc extension, including specific parameter names and values, which is expert configuration knowledge. |
 | [set-backend-service (Dapr)](https://learn.microsoft.com/en-us/azure/api-management/set-backend-service-dapr-policy) | configuration | 0.86 | Provides the exact Dapr invocation URL template (http://localhost:3500/v1.0/invoke/{app-id}[.{ns-name}]/method/{method-name}) and assumptions about sidecar deployment, which are highly specific configuration details. |
+| [validate-jwt](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy) | security | 0.86 | This is a detailed policy reference for the validate-jwt policy, including specific policy elements, attributes, allowed values, ordering requirements, and concrete examples for configuring JWT validation in Azure API Management. These are product-specific security configuration details (policy syntax, parameters, and behavior) that go beyond generic JWT knowledge and qualify as expert knowledge about APIM security configuration. |
 | [API import restrictions](https://learn.microsoft.com/en-us/azure/api-management/api-management-api-import-restrictions) | limits-quotas | 0.85 | Dedicated to known issues and restrictions for import formats; contains detailed, product-specific constraints that function as limits. |
 | [Authenticate with Microsoft Entra External ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-entra-external-id) | security | 0.85 | Describes how to authorize external identities via Entra External ID with API Management; includes provider-specific configuration and portal settings. |
 | [Authenticate with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad) | security | 0.85 | Covers specific Entra ID integration for portal sign-in with tenant/app registration parameters and portal-side settings; clearly product-specific security configuration. |
@@ -100,7 +106,6 @@ category_descriptions:
 | [set-backend-service](https://learn.microsoft.com/en-us/azure/api-management/set-backend-service-policy) | configuration | 0.82 | Explains how to override backend URLs, reference backend entities, and support load balancing, which are detailed APIM configuration behaviors. |
 | [sql-data-source](https://learn.microsoft.com/en-us/azure/api-management/sql-data-source-policy) | configuration | 0.82 | Documents configuration of T-SQL requests to Azure SQL, tier support (not Consumption), and policy elements, which are specific configuration details. |
 | [validate-client-certificate](https://learn.microsoft.com/en-us/azure/api-management/validate-client-certificate-policy) | security | 0.82 | Describes validation rules and claims for client certificates; product-specific security policy configuration. |
-| [validate-jwt](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy) | security | 0.82 | Policy reference with detailed elements and ordering requirements for JWT validation; product-specific security configuration. |
 | [Access resource protected by network security perimeter](https://learn.microsoft.com/en-us/azure/api-management/using-network-security-perimeter) | security | 0.80 | Provides step-by-step configuration for network security perimeters, trusted access, and managed identity between API Management and a protected backend. |
 | [Authenticate and authorize to LLM APIs](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-ai-apis) | security | 0.80 | Describes concrete auth methods (API key, managed identity, OAuth 2.0) with policy usage; includes product-specific security configuration patterns and likely role/scope details. |
 | [Authenticate with Azure AD B2C](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad-b2c) | security | 0.80 | Shows how to configure Azure AD B2C as identity provider for the portal with concrete settings; product-specific security configuration. |

@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 227
+- **Updated Pages**: 0
+- **Unchanged**: 229
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -61,13 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 34 | 14.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Add a trigger or action to a workflow](https://learn.microsoft.com/en-us/azure/logic-apps/add-trigger-action-workflow)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-03-02T08:00:00.000Z
-- [View workflow status and run history](https://learn.microsoft.com/en-us/azure/logic-apps/view-workflow-status-run-history)
-  - Updated: 2025-02-10T23:04:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

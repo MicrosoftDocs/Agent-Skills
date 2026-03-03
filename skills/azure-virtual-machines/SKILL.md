@@ -3,7 +3,7 @@ name: azure-virtual-machines
 description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -26,9 +26,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Best Practices | L60-L86 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
 | Decision Making | L87-L149 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning/migrating VMs (GPU, OS, Oracle, RHEL, DNS) and handling retirements, backup, DR, and reservations. |
 | Architecture & Design Patterns | L150-L168 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L169-L373 | VM size specs, disk and storage performance limits, quotas, lifecycle/support timelines, and scalability constraints for Azure VMs, disks, GPU/HPC, Dedicated Hosts, and images. |
-| Security | L374-L450 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
-| Configuration | L451-L582 | Configuring Azure VMs and scale sets: images, disks, extensions, drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads, and platform update controls. |
+| Limits & Quotas | L169-L374 | VM size specs, disk and storage performance limits, quotas, lifecycle/support, and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU families. |
+| Security | L375-L451 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
+| Configuration | L452-L582 | Configuring Azure VMs and scale sets: images, disks, extensions, drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads, and platform update controls. |
 | Integrations & Coding Patterns | L583-L630 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
 | Deployment | L631-L657 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
@@ -180,6 +180,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Storage optimized Dedicated Host SKU capacities and packing | https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-host-storage-optimized-skus |
 | Understand and use managed disk bursting on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-bursting |
 | Understand performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-change-performance |
+| Configure and deploy Azure Premium SSD v2 disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
 | Enable performance plus for Azure SSD and HDD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-performance |
 | Plan migration from Standard HDD OS disks before 2028 retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-hdd-os-retirement |
 | Scalability and performance targets for Azure VM disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-scalability-targets |
@@ -465,7 +466,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Customize VM watch settings and collectors on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-vm-watch |
 | Configure and create Azure Compute Galleries | https://learn.microsoft.com/en-us/azure/virtual-machines/create-gallery |
 | Use custom data and cloud-init with Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data |
-| Deploy and configure Premium SSD v2 managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2 |
 | Deploy zone-redundant managed disks (ZRS) | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
 | Enable on-demand bursting for Premium SSD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting |
 | Configure and deploy Azure Ultra Disks for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |

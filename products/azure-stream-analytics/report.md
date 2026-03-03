@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos
     DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, compatibility,
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
+- **Updated Pages**: 1
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 54 | 32.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Inputs overview](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs)
+  - Updated: 2024-02-26T08:00:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 
@@ -196,7 +201,6 @@ category_descriptions:
 | [Test locally with sample data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-vs-tools-local-run) | 0.45 | Local testing how-to in Visual Studio; mostly procedural, not a configuration catalog or error-code mapping. |
 | [Test locally with sample data](https://learn.microsoft.com/en-us/azure/stream-analytics/visual-studio-code-local-run) | 0.45 | How-to for local testing with sample data; mostly workflow steps rather than expert configuration or troubleshooting reference. |
 | [Export and manage jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/visual-studio-code-explore-jobs) | 0.40 | VS Code management article is mostly operational how-to; summary doesn’t indicate detailed config tables, limits, or error mappings. |
-| [Inputs overview](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs) | 0.40 | Conceptual overview of inputs and their types; no clear indication of detailed configuration tables or limits in the summary. |
 | [Outputs overview](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-outputs) | 0.40 | Overview listing supported output types and basic usage; summary does not indicate detailed configuration parameters or limits. |
 | [States of a job](https://learn.microsoft.com/en-us/azure/stream-analytics/job-states) | 0.40 | Explains job states conceptually (running, stopped, degraded, failed); likely lacks numeric limits, config tables, or detailed troubleshooting mappings. |
 | [Stream Analytics Cluster](https://learn.microsoft.com/en-us/azure/stream-analytics/cluster-overview) | 0.40 | Cluster overview with a throughput example and billing by SUs; largely conceptual/marketing, not a detailed limits table or decision matrix. |
@@ -231,6 +235,7 @@ category_descriptions:
 | [Filter and ingest Synapse SQL data](https://learn.microsoft.com/en-us/azure/stream-analytics/filter-ingest-synapse-sql) | 0.20 | Filtering and ingesting to Synapse SQL via no-code editor; appears as a basic walkthrough rather than deep configuration or troubleshooting guidance. |
 | [Filter and ingest to Azure Data Explorer](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-filter-ingest-data-explorer) | 0.20 | No-code filter and ingest to Azure Data Explorer; appears to be a basic how-to article. |
 | [Filter and ingest to Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/stream-analytics/filter-ingest-data-lake-storage-gen2) | 0.20 | Filtering and ingesting to Data Lake Gen2 via no-code editor; mostly tutorial content without expert-level specifics. |
+| [Inputs overview](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs) | 0.20 | Conceptual explanation of input types (streaming vs reference) and supported sources for Azure Stream Analytics without detailed limits, configuration parameter tables, error codes, or decision matrices. Primarily overview/tutorial-style content rather than expert, product-specific reference data. |
 | [Materialize data to Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-materialize-cosmos-db) | 0.20 | No-code materialization to Cosmos DB; tutorial-style content without detailed configuration matrices or error mappings. |
 | [Overview of resource model](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-resource-model) | 0.20 | Resource model overview (jobs, inputs, outputs, clusters); conceptual description of components rather than detailed expert configuration. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-powershell) | 0.20 | PowerShell quickstart for creating and running a job; procedural with simple filter example, no deep product-specific guidance. |

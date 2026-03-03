@@ -3,7 +3,7 @@ name: azure-container-registry
 description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Registry applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Registry Skill
@@ -28,7 +28,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L65-L72 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
 | Limits & Quotas | L73-L78 | ACR SKU comparisons, throughput and request limits, and how image/storage capacity, retention, and performance quotas work across registry tiers. |
 | Security | L79-L118 | Securing ACR with auth, RBAC/ABAC, network controls, encryption, image signing/verification, policies, Defender scans, and managed identity/Key Vault integration. |
-| Configuration | L119-L136 | Configuring ACR behavior: caching, cleanup/retention, soft delete, locks, webhooks, metrics/logs, and defining/scheduling multi-step Tasks (YAML, timers, agent pools, patching). |
+| Configuration | L119-L136 | Configuring ACR behavior: caching, purge/retention/soft delete, delete locks, webhooks, metrics/logs, and defining/scheduling multi-step ACR Tasks with YAML and agent pools. |
 | Integrations & Coding Patterns | L137-L152 | How to integrate ACR with ACI, AKS, Helm, ORAS, Buildpacks, ACR Transfer, GitHub Actions, Notation, Key Vault, and webhooks for image access, builds, signing, and automation |
 | Deployment | L153-L158 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
@@ -120,7 +120,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Configure artifact cache in ACR using Azure CLI | https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-cli |
-| Use acr purge to clean up ACR tags and manifests | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge |
+| Configure and schedule ACR purge for tags and manifests | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge |
 | Configure delete locks on ACR images and repositories | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock |
 | Configure retention policy for untagged ACR manifests | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-retention-policy |
 | Enable and configure ACR soft delete retention policy | https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy |

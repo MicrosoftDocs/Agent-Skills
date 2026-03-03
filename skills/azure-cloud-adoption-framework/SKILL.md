@@ -3,7 +3,7 @@ name: azure-cloud-adoption-framework
 description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -23,14 +23,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Getting Started | L36-L40 | Step-by-step checklist and best practices for planning, designing, and implementing a data mesh architecture on Azure, including governance, platform setup, and domain data products. |
-| Strategy | L41-L60 | Strategic guidance for planning cloud and AI adoption on Azure, including business alignment, org structure, cost, resiliency, security, sustainability, and workload-specific strategies (SAP, Oracle, AVD, VMware, analytics). |
-| Planning | L61-L91 | Planning cloud adoption: migration waves, workload assessments, modernization roadmaps, data/AI and analytics architectures, Oracle/SAP/AVD/VMware plans, skills readiness, and cost/capacity planning. |
-| Readiness & Landing Zones | L92-L219 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, automation/DevOps, and workload‑specific patterns (AVS, SAP, data, Oracle, Arc). |
-| Adoption Patterns | L220-L255 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure (AI agents, cloud-native apps, AVD, VMware, SAP, Oracle, and cloud-scale analytics/data lakes). |
-| Governance | L256-L298 | Cloud and data governance in Azure: policies, tagging, cost control, compliance, responsible AI, landing zones, Arc, AKS, SAP, and Purview-based data governance. |
-| Security | L299-L334 | Designing secure Azure landing zones, IAM/RBAC, Zero Trust networking, encryption, DevOps and AKS security, and workload-specific security for analytics, SAP, Oracle, and Arc. |
-| Operations & Management | L335-L381 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, analytics, Arc, Oracle, SAP), plus BCDR, observability, and DevOps for post-deployment management |
-| Organization & Teams | L382-L404 | Designing org structures, roles, RACI, and team topologies (DevOps, CCoE, AI, data, security, ops) to align governance, operations, and costs for Azure cloud and analytics adoption |
+| Strategy | L41-L59 | Cloud and AI adoption strategy: business alignment, motivations, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, AVD, VMware, analytics, Oracle, SAP, hybrid/multicloud). |
+| Planning | L60-L90 | Planning cloud adoption: migration waves, workload assessments, modernization roadmaps, data/AI and analytics architectures, Oracle/SAP/AVD/VMware plans, skills readiness, and cost/capacity planning. |
+| Readiness & Landing Zones | L91-L218 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, automation/DevOps, and workload‑specific patterns (AVS, SAP, data, Oracle, Arc). |
+| Adoption Patterns | L219-L254 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure (AI agents, cloud-native apps, AVD, VMware, SAP, Oracle, and cloud-scale analytics/data lakes). |
+| Governance | L255-L297 | Cloud and data governance in Azure: policies, tagging, cost control, compliance, responsible AI, landing zones, Arc, AKS, SAP, and Purview-based data governance. |
+| Security | L298-L333 | Designing secure Azure landing zones, IAM/RBAC, Zero Trust networking, encryption, DevOps and AKS security, and workload-specific security for analytics, SAP, Oracle, and Arc. |
+| Operations & Management | L334-L380 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, analytics, Arc, Oracle, SAP), plus BCDR, observability, and DevOps for post-deployment management |
+| Organization & Teams | L381-L404 | Designing org structures, roles, RACI, and team topologies (CCoE, AI CoE, DevOps, ops, security, data/analytics) to align people, governance, and costs for Azure and AI adoption |
 | Adoption Scenarios | L405-L506 | End-to-end Azure adoption patterns and landing zone designs for AI, containers, data/analytics, VDI, SAP/Oracle/RHEL/VMware, covering governance, security, networking, identity, and operations. |
 
 ### Getting Started
@@ -49,9 +49,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Define unified hybrid and multicloud operations strategy with Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Align Oracle on Azure migration with cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy |
 | Define cloud strategy for SAP workloads on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |
-| Develop a cloud adoption strategy aligned to business goals | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
+| Create a business-aligned cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/ |
 | Assess and improve your cloud adoption strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/assessment |
-| Define and structure your cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Incorporate cost efficiency into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency |
 | Plan resiliency as part of cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency |
 | Integrate security considerations into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/security |
@@ -400,6 +399,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Define roles and teams for cloud-scale analytics delivery | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/organize-roles-teams |
 | Structure teams and functions for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/organize-team-functions |
 | Define security teams, roles, and functions for Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/teams-roles |
+| Define and structure your cloud strategy team | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team |
 | Prepare organizational alignment for cloud adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment |
 
 ### Adoption Scenarios

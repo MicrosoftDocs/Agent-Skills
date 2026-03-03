@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 469
+- **Updated Pages**: 0
+- **Unchanged**: 470
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 212 | 45.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log)
-  - Updated: 2026-02-24T12:10:00.000Z → 2026-03-02T12:03:00.000Z
 
 ## Classified Pages
 

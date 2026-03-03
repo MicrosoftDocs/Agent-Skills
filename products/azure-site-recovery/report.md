@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 20
-- **Unchanged**: 182
+- **Updated Pages**: 0
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-site-recovery/azure-site-recovery.csv`
 
@@ -61,49 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 64 | 31.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new - Archive](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-whats-new-archive)
-  - Updated: 2025-09-22T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Reprotect VMs](https://learn.microsoft.com/en-us/azure/site-recovery/avs-tutorial-reprotect)
-  - Updated: 2026-02-12T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [Migrate on-premises Windows Server 2008 servers to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/migrate-tutorial-windows-server-2008)
-  - Updated: 2023-01-30T18:05:00.000Z → 2026-02-27T08:00:00.000Z
-- [Azure to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix)
-  - Updated: 2026-02-12T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [VMware/physical to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix)
-  - Updated: 2026-01-06T12:21:00.000Z → 2026-02-27T08:00:00.000Z
-- [On-premises Hyper-V VMs to Azure](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-support-matrix)
-  - Updated: 2025-08-19T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [Support requirements for Azure Site Recovery replication appliance](https://learn.microsoft.com/en-us/azure/site-recovery/replication-appliance-support-matrix)
-  - Updated: 2025-10-31T22:17:00.000Z → 2026-03-02T12:12:00.000Z
-- [Hyper-V to Azure disaster recovery](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-common-questions)
-  - Updated: 2025-04-26T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Configure on-premise disks for Azure through Hydration](https://learn.microsoft.com/en-us/azure/site-recovery/hydration-process)
-  - Updated: 2025-09-19T17:12:00.000Z → 2026-02-27T08:00:00.000Z
-- [Hyper-V to Azure architecture](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-azure-architecture)
-  - Updated: 2024-09-23T17:04:00.000Z → 2026-02-27T08:00:00.000Z
-- [Transport Layer Security](https://learn.microsoft.com/en-us/azure/site-recovery/transport-layer-security)
-  - Updated: 2023-12-15T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [About Mobility service for VMware VMs and physical servers](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-mobility-service-overview)
-  - Updated: 2025-04-03T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Walkthrough-Set up disaster recovery for Azure Stack Hub](https://learn.microsoft.com/en-us/azure/site-recovery/azure-stack-site-recovery)
-  - Updated: 2025-08-29T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Active Directory and DNS](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-active-directory)
-  - Updated: 2025-12-08T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Reprotect from Azure to on-premises](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-reprotect)
-  - Updated: 2026-02-12T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [Run failover and failback](https://learn.microsoft.com/en-us/azure/site-recovery/physical-to-azure-failover-failback)
-  - Updated: 2026-02-12T08:00:00.000Z → 2026-03-02T12:12:00.000Z
-- [Manage the configuration server](https://learn.microsoft.com/en-us/azure/site-recovery/physical-manage-configuration-server)
-  - Updated: 2023-05-11T11:16:00.000Z → 2026-03-02T12:12:00.000Z
-- [Process server errors (Classic)](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-troubleshoot-process-server)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Mobility service - push installation errors](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-push-install)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Reprotection and failback of VMware VMs errors](https://learn.microsoft.com/en-us/azure/site-recovery/vmware-azure-troubleshoot-failback-reprotect)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-03-02T12:12:00.000Z
 
 ## Classified Pages
 

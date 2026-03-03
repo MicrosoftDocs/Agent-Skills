@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: Configuring Azure Files networking, security, redundancy, monitoring/alerts,
     snapshots, and mounting shares (SMB/NFS) from Linux, Windows, macOS, and via VPN
     or private endpoints
-  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, NDS,
-    Kerberos), share/NTFS permissions, OAuth/keys, encryption in transit, network
-    perimeter, and related configuration.'
+  security: 'Identity, auth, and encryption for Azure Files: Entra/AD DS/Kerberos/NTFS
+    ACLs, managed identities, share permissions, network security, and secure SMB/NFS
+    access.'
   integrations: 'Using Azure Files from code: AKS CSI integration and .NET, Java,
     Python SDK usage, including auth, file operations, and app integration patterns.'
   decision-making: Guidance on choosing Azure Files vs alternatives, selecting tiers,
@@ -29,13 +29,13 @@ category_descriptions:
 - **Total Pages**: 78
 - **Fetched**: 78
 - **Fetch Failed**: 0
-- **Classified**: 71
-- **Unclassified**: 7
+- **Classified**: 70
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 78
+- **Updated Pages**: 3
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -44,15 +44,24 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 6 | 7.7% |
-| configuration | 19 | 24.4% |
+| configuration | 18 | 23.1% |
 | decision-making | 13 | 16.7% |
 | deployment | 7 | 9.0% |
 | integrations | 4 | 5.1% |
 | limits-quotas | 3 | 3.8% |
 | security | 19 | 24.4% |
-| *(Unclassified)* | 7 | 9.0% |
+| *(Unclassified)* | 8 | 10.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files)
+  - Updated: 2025-12-18T08:00:00.000Z → 2026-03-02T23:28:00.000Z
+- [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol)
+  - Updated: 2026-01-15T23:11:00.000Z → 2026-03-02T23:28:00.000Z
+- [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities)
+  - Updated: 2026-02-17T08:00:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 
@@ -72,7 +81,6 @@ category_descriptions:
 | [Configure Linux clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable) | security | 0.80 | Covers Kerberos-based identity auth for Linux clients with Azure Files, including AD DS/Entra DS integration and specific security configuration steps. |
 | [Configure directory/file-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions) | security | 0.80 | Explains configuring Windows ACLs/NTFS permissions for Azure Files, including hybrid identity considerations and client requirements; product-specific security configuration. |
 | [Enable authentication for hybrid identities on legacy clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust) | security | 0.80 | Covers establishing cloud trust for Entra Kerberos auth to Azure Files, including hybrid identity security configuration unique to this integration. |
-| [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities) | security | 0.80 | Explains how managed identities authenticate to SMB Azure file shares via Entra ID, with product-specific identity and access configuration steps. |
 | [Migrate to SMB Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) | decision-making | 0.80 | Migration overview with a table of migration guides and tools (Storage Mover, Robocopy, Azure File Sync) organized by scenario; helps decide which migration path to use. |
 | [Monitor Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring) | configuration | 0.80 | Details which metrics/logs are emitted, how to enable them, and where they go. Includes tables of metric names and categories, which are product-specific monitoring configuration details. |
 | [Overview of authorization and access control](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-authorization-overview) | security | 0.80 | Describes share-level vs directory/file-level authorization, Azure RBAC roles for share access, and how identities are used; includes product-specific RBAC and ACL behavior. |
@@ -101,6 +109,7 @@ category_descriptions:
 | [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts) | configuration | 0.70 | Provides concrete alert rules for throttling, capacity, egress, and latency with specific metrics and thresholds. These are product-specific monitoring/alerting configurations. |
 | [Encryption in transit for NFS shares](https://learn.microsoft.com/en-us/azure/storage/files/encryption-in-transit-for-nfs-shares) | security | 0.70 | Explains how to enable TLS for NFS Azure Files with concrete configuration steps and parameters. This is product-specific security configuration, not just conceptual encryption guidance. |
 | [Java](https://learn.microsoft.com/en-us/azure/storage/files/storage-java-how-to-use-file-storage) | integrations | 0.70 | Provides Azure Files Java SDK usage with specific classes, methods, and configuration options unique to this product, qualifying as integration/coding patterns. |
+| [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities) | security | 0.70 | The article is specifically about using managed identities with Azure Files over SMB and Microsoft Entra ID. Such content typically includes product-specific security configuration steps (e.g., assigning roles, setting permissions on file shares, and configuring identity-based authentication for VMs). This aligns with the security sub-skill criteria around RBAC roles, identity configuration, and service-specific security settings. |
 | [Migrate files between Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-between-shares) | configuration | 0.70 | Shows how to use AzCopy/Robocopy to copy between shares, including cross-tier and cross-region scenarios; contains product-specific command usage and options. |
 | [Migrate from Linux to a hybrid file server with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-linux-hybrid) | deployment | 0.70 | Migration guide from Linux to a hybrid Azure File Sync deployment; includes product-specific migration steps and constraints. |
 | [Migrate from an on-premises NAS to Azure file shares with DataBox](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-cloud-databox) | deployment | 0.70 | Covers using Azure Data Box to move NAS data to Azure Files; includes product-specific migration workflow and constraints. |
@@ -127,7 +136,6 @@ category_descriptions:
 | [Migrate GlusterFS to Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/glusterfs-migration-guide) | deployment | 0.65 | Provides guidance for moving from GlusterFS to Azure Files, including protocol choices and migration steps; product- and source-specific migration knowledge. |
 | [NFS file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-nfs-protocol) | decision-making | 0.65 | Covers NFS-specific capabilities, regional availability, and feature support; provides product-specific guidance on when/how to use NFS Azure Files, aiding protocol and deployment decisions. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-developer-overview) | decision-making | 0.65 | Helps decide between SMB, NFS, REST, and SDK approaches for Azure Files based on app needs. Provides scenario-based guidance on when to choose each, fitting decision-making. |
-| [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files) | configuration | 0.65 | Operational guide for snapshots with Azure-specific commands and parameters (snapshot naming, limits per share). These are concrete configuration/usage details beyond generic snapshot concepts. |
 | [Disaster recovery and failover](https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery) | best-practices | 0.60 | Covers DR and failover processes specific to Azure Files, including when and how to trigger account failover and its implications. Contains product-specific recommendations and gotchas. |
 
 ## Unclassified Pages
@@ -137,7 +145,8 @@ category_descriptions:
 | [Modify a file share](https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share) | 0.40 | How-to for modifying file shares (size, cost, performance) but primarily procedural; summary doesn’t show detailed config tables or numeric thresholds. |
 | [Use DFS-N with Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/files-manage-namespaces) | 0.40 | Primarily a how-to/tutorial on using DFS Namespaces with Azure Files. Likely procedural without detailed parameter tables, limits, or product-specific error mappings; more integration pattern than deep config reference. |
 | [Data protection overview](https://learn.microsoft.com/en-us/azure/storage/files/files-data-protection-overview) | 0.30 | High-level data protection overview (soft delete, snapshots, backup) without clear indication of numeric limits, config tables, or detailed procedures; more conceptual than expert reference. |
-| [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol) | 0.30 | Describes SMB protocol support and features conceptually; no detailed configuration tables, limits, or decision matrices. |
+| [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol) | 0.30 | From the summary this appears to be a conceptual/feature overview of SMB Azure file shares (protocol options, general capabilities, and notes like not mixing SMB and NFS on a single share). There is no evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Customer case studies](https://learn.microsoft.com/en-us/azure/storage/files/azure-files-case-study) | 0.20 | Customer case studies are narrative/marketing-style usage stories, not technical reference with limits, configs, or error mappings. They don't provide reusable expert configuration or troubleshooting knowledge. |
+| [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files) | 0.20 | Primarily a how-to/tutorial on taking and using Azure Files share snapshots via portal/PowerShell/CLI. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It appears to be procedural guidance rather than expert reference content with product-specific limits, configs, or trade-off analysis. |
 | [What is Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) | 0.10 | High-level introduction to Azure Files; overview of protocols and scenarios without detailed limits, configs, or error mappings. |
 | [What's new in Azure Files?](https://learn.microsoft.com/en-us/azure/storage/files/files-whats-new) | 0.10 | What's new changelog; mostly release notes and feature announcements without structured limits, configs, or troubleshooting mappings. |

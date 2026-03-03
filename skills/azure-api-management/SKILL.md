@@ -3,7 +3,7 @@ name: azure-api-management
 description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure API Management applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -27,7 +27,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L55-L75 | Guidance for strategic APIM decisions: choosing tiers, scaling and costs, networking, DevOps/CI-CD, migrations (portals, workspaces, APIs, AWS), analytics/monitoring, and monetization. |
 | Architecture & Design Patterns | L76-L82 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
 | Limits & Quotas | L83-L103 | Limits, quotas, and validation in API Management: rate limiting, per-key quotas, OpenAI/LLM token limits, protocol format restrictions, WSDL/REST conversion, WebSocket limits, and validate-* policies. |
-| Security | L104-L146 | Securing API Management and its portals: auth (Entra ID/B2C/OAuth/JWT/certs), TLS and domains, private/DDoS/Defender protections, self-hosted gateway auth, and security policies. |
+| Security | L104-L146 | Securing Azure API Management: authN/authZ (Entra ID, B2C, OAuth2/JWT, certs, managed identity), TLS/certs, portal access, network protection, policies, and self-hosted gateway security. |
 | Configuration | L147-L245 | Configuring Azure API Management behavior: policies, caching, networking/VNet, logging/metrics, credentials, subscriptions/users, self-hosted gateways, and developer portal integration. |
 | Integrations & Coding Patterns | L246-L276 | Patterns and samples for integrating API Management with AI/LLM backends, OAuth, GraphQL, MCP, logging/monitoring, Event Grid/Hubs, Service Bus, and importing/exporting APIs. |
 | Deployment | L277-L298 | Deploying and scaling APIM: multi-region, VNet and zone setups, self-hosted gateways (K8s/Docker/Arc), backup/restore, migration, automation, and developer portal deployment. |
@@ -142,7 +142,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Secure perimeter-protected backends with API Management and managed identity | https://learn.microsoft.com/en-us/azure/api-management/using-network-security-perimeter |
 | Validate Microsoft Entra tokens with validate-azure-ad-token policy | https://learn.microsoft.com/en-us/azure/api-management/validate-azure-ad-token-policy |
 | Validate client certificates with validate-client-certificate policy | https://learn.microsoft.com/en-us/azure/api-management/validate-client-certificate-policy |
-| Validate JWTs with validate-jwt policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy |
+| Configure validate-jwt policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy |
 
 ### Configuration
 | Topic | URL |

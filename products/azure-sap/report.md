@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
-  configuration: 'Configuring SAP on Azure: automation framework, storage/VM layouts,
-    HA/DR clusters, monitoring providers, networking, backups, and ACSS/LaMa operational
-    integrations.'
+  configuration: 'Configuring SAP HANA and SAP workloads on Azure: automation framework,
+    storage/HA/cluster setups, monitoring providers, ACSS/LaMa integration, and VM/extension/network
+    settings.'
   deployment: 'Deploying and managing SAP on Azure: automation framework scripts,
     ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects,
     and NetWeaver/HANA VM setups.'
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 203
+- **Updated Pages**: 2
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -52,9 +52,9 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 20 | 9.9% |
 | best-practices | 4 | 2.0% |
-| configuration | 66 | 32.5% |
+| configuration | 67 | 33.0% |
 | decision-making | 12 | 5.9% |
-| deployment | 51 | 25.1% |
+| deployment | 50 | 24.6% |
 | integrations | 10 | 4.9% |
 | limits-quotas | 3 | 1.5% |
 | security | 10 | 4.9% |
@@ -62,6 +62,13 @@ category_descriptions:
 | *(Unclassified)* | 22 | 10.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Install SAP NetWeaver with HANA HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance)
+  - Updated: 2024-06-19T08:00:00.000Z → 2026-03-02T23:28:00.000Z
+- [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs)
+  - Updated: 2023-07-04T11:13:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 
@@ -101,6 +108,7 @@ category_descriptions:
 | [Set the Keyvault secrets using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/set-secrets) | security | 0.80 | Setting SPN secrets in Key Vault for SAP automation involves product-specific security configuration (service principal usage, Key Vault secret naming, scopes) that qualifies as expert security knowledge. |
 | [Troubleshoot the automation framework](https://learn.microsoft.com/en-us/azure/sap/automation/troubleshooting) | troubleshooting | 0.80 | Explicit troubleshooting article; likely maps common symptoms to causes and fixes, with framework-specific diagnostics and commands. |
 | [Ultra Disk for HANA](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-ultra-disk) | configuration | 0.80 | HANA storage configuration guidance for Ultra Disk; product-specific layout and performance recommendations. |
+| [Install SAP NetWeaver with HANA HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance) | configuration | 0.78 | The article is a detailed implementation guide for deploying SAP ASCS/SCS and ERS with SAP HANA on high-availability RHEL clusters in Azure. It typically includes product- and OS-specific cluster parameters, Pacemaker/Corosync resource definitions, fencing/STONITH settings, SAP profile parameters, mount options, and other configuration values that are unique to this scenario and not generally known to an LLM from training. The focus is on how to configure the HA cluster and SAP instances rather than generic concepts, so it best fits the configuration sub-skill. |
 | [Configure High-availability cluster (Pacemaker) provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ha-pacemaker-cluster) | configuration | 0.75 | HA Pacemaker provider setup includes installing an agent and specific provider settings, which are detailed configuration steps for this product. |
 | [Configure IBM Db2 provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ibm-db2) | configuration | 0.75 | Db2 provider setup includes connection parameters, authentication, and supported metrics, which are detailed configuration items. |
 | [Configure Microsoft SQL Server provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server) | configuration | 0.75 | Explains SQL Server provider setup with portal fields and constraints; these are concrete configuration parameters unique to this integration. |
@@ -117,7 +125,6 @@ category_descriptions:
 | [Enable TLS in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/enable-tls-azure-monitor-sap-solutions) | security | 0.75 | Covers secure communication setup, including TLS version requirements and connection properties for Azure Functions to SAP systems, which are product-specific security configuration details. |
 | [HA architecture and scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios) | architecture-patterns | 0.75 | Details multiple HA architecture scenarios for NetWeaver on Azure VMs; product-specific patterns and trade-offs. |
 | [Identity and security services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security) | security | 0.75 | Covers integration of Azure identity/security and monitoring with SAP RISE; likely includes specific services, roles, and configuration patterns. |
-| [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs) | configuration | 0.75 | Explains how to configure a GlusterFS cluster on RHEL Azure VMs for SAP shared data, including multi-system (NW1, NW2) usage, which is a specialized storage configuration pattern. |
 | [Install HA NFS server](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs) | configuration | 0.75 | Describes deploying a highly available NFS server cluster on SLES Azure VMs for SAP shared data, including that Azure first-party NFS services are now recommended, which is specialized configuration guidance. |
 | [Install HA SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel) | configuration | 0.75 | Describes VM deployment, cluster framework configuration, and NetWeaver HA installation with concrete instance numbers and resource naming tied to Azure templates. |
 | [Outbound E-Mail from SAP to Exchange Online](https://learn.microsoft.com/en-us/azure/sap/workloads/exchange-online-integration-sap-email-outbound) | integrations | 0.75 | Describes detailed configuration of SAP outbound SMTP to Exchange Online, including connector settings, authentication modes, and SAP-specific parameters not generally known. |
@@ -132,6 +139,7 @@ category_descriptions:
 | [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker) | configuration | 0.75 | Step-by-step configuration of Pacemaker on RHEL specifically in Azure, including cluster setup details that are platform-specific configuration knowledge. |
 | [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker) | configuration | 0.75 | Explains how to set up Pacemaker on SLES specifically in Azure, including cluster configuration steps that are platform-specific. |
 | [Update the Terraform state file using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/advanced-state-management) | configuration | 0.75 | Advanced Terraform state management for SAP automation is configuration-focused and likely documents state file locations, backends, and script parameters unique to this framework. |
+| [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs) | configuration | 0.72 | The article provides step-by-step, product-specific configuration details for deploying and configuring a GlusterFS cluster on Azure VMs running RHEL for SAP NetWeaver, including concrete VM, network, storage, and cluster settings. It goes beyond generic concepts and includes exact configuration commands and patterns unique to this SAP-on-Azure scenario, fitting best under configuration rather than generic deployment guidance. |
 | [About HA for Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-start) | architecture-patterns | 0.70 | HA guidance for NetWeaver on Azure VMs; includes Azure-specific patterns and options beyond generic HA concepts. |
 | [About SAP HANA availability in Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-availability-overview) | architecture-patterns | 0.70 | Provides multiple availability scenarios and requirements for SAP HANA on Azure VMs; product-specific HA patterns and options. |
 | [Add additional secondary sites to HANA Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-hana) | deployment | 0.70 | Contains detailed requirements and setup steps for additional HANA replication sites with Pacemaker on SLES/RHEL, including replication modes and cluster configuration specifics. |
@@ -170,7 +178,6 @@ category_descriptions:
 | [Install HA SAP NetWeaver with Azure Files SMB](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-azure-files-smb) | limits-quotas | 0.70 | Includes special sizing requirements and minimum installation requirements for Azure Files Premium SMB shares with specific capacity and performance numbers, plus HA deployment details. |
 | [Install HA SAP NetWeaver with WSFC](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-shared-disk) | deployment | 0.70 | Step-by-step, product-specific HA deployment of SAP ASCS/SCS on Azure VMs with WSFC and shared disk, including concrete cluster, storage, and load balancer settings that go beyond generic knowledge. |
 | [Install HA SAP NetWeaver with WSFC and SOFS file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-file-share) | deployment | 0.70 | Stepwise installation and configuration of SAP NetWeaver HA using WSFC and Scale-Out File Server, including SAP- and Azure-specific cluster resource settings. |
-| [Install SAP NetWeaver with HANA HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance) | deployment | 0.70 | Describes combined deployment of SAP HANA, ASCS/SCS, and ERS on a RHEL HA cluster with Pacemaker, including resource configuration and ordering constraints. |
 | [Install SAP software](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/install-software) | deployment | 0.70 | Explains two concrete installation modes (inside ACSS vs. external detection) with product-specific steps and parameters for VIS-based systems. |
 | [Install SAP software - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-high-availability-namecustom-cli) | deployment | 0.70 | Provides Azure CLI commands and parameters to drive SAP software installation on HA infrastructure created by Azure Center for SAP solutions. |
 | [Multi-SID with WSFC and Azure shared disk](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-azure-shared-disk) | deployment | 0.70 | Describes moving from single to multi-SID clustered ASCS/SCS on WSFC with Azure shared disk, including concrete clustering and disk configuration steps specific to this scenario. |

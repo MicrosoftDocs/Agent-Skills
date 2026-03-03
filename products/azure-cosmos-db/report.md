@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   integrations: Patterns and code samples for integrating apps, tools, and data pipelines
     with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark,
@@ -13,9 +13,9 @@ category_descriptions:
   decision-making: Guides for choosing Cosmos DB options (consistency, throughput,
     backup, analytics, vector search), estimating cost/RUs, and planning/migrating
     workloads across APIs (Core, Mongo, Cassandra, PostgreSQL).
-  configuration: 'Configuring Cosmos DB and related services: throughput, indexing,
-    backup/restore, geo-replication, search/vector, monitoring, emulators, SDK tuning,
-    and IaC (Bicep/ARM/Terraform) for all APIs.'
+  configuration: 'Configuring and managing Cosmos DB and related services: throughput,
+    indexing, backup/restore, partitioning, search/vector, monitoring, networking,
+    SDK settings, emulators, and IaC (Bicep/ARM/Terraform).'
   best-practices: Performance, scaling, partitioning, indexing, cost optimization,
     SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra,
     PostgreSQL) and legacy DocumentDB.
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 977
+- **Updated Pages**: 1
+- **Unchanged**: 976
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -51,8 +51,8 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 39 | 4.0% |
-| best-practices | 58 | 5.9% |
-| configuration | 123 | 12.6% |
+| best-practices | 57 | 5.8% |
+| configuration | 124 | 12.7% |
 | decision-making | 52 | 5.3% |
 | deployment | 22 | 2.3% |
 | integrations | 332 | 34.0% |
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 201 | 20.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Merge (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/merge)
+  - Updated: 2025-12-05T08:00:00.000Z → 2026-03-02T23:12:00.000Z
 
 ## Classified Pages
 
@@ -223,7 +228,6 @@ category_descriptions:
 | [Manage private access](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-private-access) | security | 0.80 | Private Link setup uses specific resource types, endpoint configuration parameters, and DNS requirements unique to this service, which are detailed security configuration settings. |
 | [Manage private access](https://learn.microsoft.com/en-us/azure/documentdb/how-to-private-link) | security | 0.80 | Private Link setup for DocumentDB with VNet/subnet and NSG considerations; contains product-specific security configuration patterns. |
 | [Manage public access](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-manage-firewall-using-portal) | security | 0.80 | Firewall management includes specific rule parameters (start/end IP, 0.0.0.0 semantics, portal fields) and product-specific behavior, which are concrete security configuration details. |
-| [Merge (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/merge) | best-practices | 0.80 | Describes when and how to merge physical partitions, including conditions like low RU/s or storage per partition and implications for scaling—product-specific operational guidance. |
 | [Microsoft Entra ID and Postgres authentication](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-authentication) | security | 0.80 | Covers concrete authentication modes, mappings between Entra ID and PostgreSQL roles, and service-specific auth behaviors and parameters, which are detailed security configurations. |
 | [Migrate to API for Apache Cassandra using Kafka Connect](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/kafka-connect) | integrations | 0.80 | Kafka Connect integration with DataStax connector requires connector configuration properties, mapping settings, and constraints specific to Cosmos DB Cassandra API. |
 | [Modify interval retention](https://learn.microsoft.com/en-us/azure/cosmos-db/periodic-backup-modify-interval-retention) | limits-quotas | 0.80 | Contains concrete default backup interval (every 4 hours) and number of retained backups (two), and discusses how to change these values, which are precise service limits/behaviors. |
@@ -610,6 +614,7 @@ category_descriptions:
 | [insert](https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/insert) | integrations | 0.70 | insert() command reference; documents how to insert single or multiple documents, including API-specific behavior and parameters. |
 | [update](https://learn.microsoft.com/en-us/azure/documentdb/commands/query-and-write/update) | integrations | 0.70 | update() command reference; describes filters, update semantics, and options specific to DocumentDB’s Mongo-compatible API. |
 | [$binarySize](https://learn.microsoft.com/en-us/azure/documentdb/operators/data-size/$binarysize) | integrations | 0.68 | Describes a product-specific operator, its purpose, and argument types (string or binary), which is detailed API usage. |
+| [Merge (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/merge) | configuration | 0.68 | A merge-partitions feature page for Cosmos DB will typically include product-specific operational details such as prerequisites, constraints on when merges can occur, supported container configurations, and possibly configuration options or API parameters to initiate or monitor merges. These are implementation-specific behaviors and settings that go beyond generic partitioning concepts and qualify as expert knowledge. It is not primarily about limits tables, troubleshooting error codes, or architecture patterns, but about how to configure and use the merge capability. |
 | [Migrate - HBase to API for NoSQL](https://learn.microsoft.com/en-us/azure/cosmos-db/migrate-hbase) | integrations | 0.68 | Guides how to move data from HBase to Cosmos DB; likely includes connector configuration, schema mapping, and pipeline settings, which are integration patterns. |
 | [Migrate from bulk executor to .NET SDK](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-from-bulk-executor-library) | decision-making | 0.68 | Migration guide describes how to move from external bulk library to built-in bulk support, including mapping of APIs and behaviors, which is concrete migration and version-selection decision guidance. |
 | [Tune query performance](https://learn.microsoft.com/en-us/azure/cosmos-db/query-metrics) | best-practices | 0.68 | Instrumentation and debugging of query performance typically includes concrete guidance on interpreting metrics, using specific fields, and tuning queries based on them, which are product-specific best practices. |

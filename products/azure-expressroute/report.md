@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
-  limits-quotas: ExpressRoute bandwidth, IP, and gateway limits, FastPath features,
-    QoS for Skype voice, and rate limiting behavior on provider ports for capacity
-    and performance planning.
+  limits-quotas: ExpressRoute bandwidth/QoS limits, FastPath and gateway scale constraints,
+    and provider port rate limiting, especially for voice (Skype) and high-performance
+    connectivity.
   best-practices: Best practices for ExpressRoute circuit upgrades, BGP community
     design, migrating to new gateways, and planning for circuit/port maintenance and
     operational reliability.
@@ -18,9 +18,9 @@ category_descriptions:
   security: Encrypting ExpressRoute (IPsec, MACsec, S2S VPN), securing private/Microsoft
     peering, and managing roles, permissions, and best practices for ExpressRoute
     security.
-  decision-making: 'Guidance on planning ExpressRoute: choosing gateways, connectivity
-    models, locations/providers, Direct SKUs, VNet options, AZ-enabled migration,
-    prerequisites, and cost management.'
+  decision-making: Guidance on choosing ExpressRoute gateways, connectivity models,
+    locations/providers, Direct, VNet options, prerequisites, migration planning,
+    and estimating/optimizing ExpressRoute costs.
   troubleshooting: 'Diagnosing and fixing ExpressRoute issues: ARP/BGP and end-to-end
     connectivity checks, performance testing, gateway migration errors, correlation
     IDs, circuit resets, and FAQ on services/costs.'
@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 99
+- **Updated Pages**: 2
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -62,6 +62,13 @@ category_descriptions:
 
 ## Changes
 
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath)
+  - Updated: 2026-01-28T23:12:00.000Z → 2026-03-02T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about)
+  - Updated: 2025-07-08T08:00:00.000Z → 2026-03-02T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -75,12 +82,12 @@ category_descriptions:
 | [Configure IPsec transport mode for Windows hosts](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) | security | 0.80 | Detailed steps for IPsec transport mode between Azure and on-prem Windows hosts using GPOs/OUs; highly product- and platform-specific security configuration. |
 | [Configure MACsec for ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec) | security | 0.80 | Security-focused configuration of MACsec between customer and Microsoft edge routers using specific PowerShell commands and settings. |
 | [Configure custom alerts to monitor advertised routes](https://learn.microsoft.com/en-us/azure/expressroute/how-to-custom-route-alert) | integrations | 0.80 | Shows how to integrate ExpressRoute with Azure Automation and Logic Apps using a PowerShell runbook, including querying gateway properties and monitoring against the 1000 routes limit. Contains product-specific script patterns and integration configuration, fitting integrations & coding patterns. The explicit 1000-route limit is also expert knowledge but the main focus is the automation pattern. |
-| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath) | limits-quotas | 0.80 | Described as covering FastPath features, requirements, and limitations including IP limits; likely includes concrete numeric constraints and availability details. |
 | [QoS requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-qos) | limits-quotas | 0.80 | Provides DSCP markings and QoS requirements for Skype for Business/voice over ExpressRoute; includes specific values and constraints for traffic treatment. |
 | [Reset a failed circuit](https://learn.microsoft.com/en-us/azure/expressroute/reset-circuit) | troubleshooting | 0.80 | Focused on recovering a circuit in a 'failed' state. Such content typically includes specific portal/PowerShell/CLI operations, state transitions, and conditions under which reset should be used, mapping a symptom (failed state) to a resolution, fitting troubleshooting. |
 | [Routing requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing) | configuration | 0.80 | Details routing requirements and unsupported configurations for ExpressRoute circuits; includes product-specific routing rules and constraints. |
 | [Configure controlled gateway maintenance](https://learn.microsoft.com/en-us/azure/expressroute/customer-controlled-gateway-maintenance) | configuration | 0.78 | Covers how to set and manage maintenance windows for ExpressRoute virtual network gateways via portal and PowerShell. This typically includes specific properties/parameters on the gateway resource and allowed values, which are product-specific configuration details. |
 | [NAT for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-nat) | configuration | 0.78 | NAT requirements pages typically include precise, product-specific rules such as required/forbidden IP ranges, minimum/maximum number of public IPs, per-peering requirements, and direction-specific NAT behavior that are not generic networking knowledge. These are configuration constraints unique to ExpressRoute NAT behavior, fitting the configuration category. |
+| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath) | limits-quotas | 0.78 | The page explicitly calls out FastPath availability and limitations, including IP limits and other concrete constraints that determine when it can be used in an architecture. These are product-specific numeric limits and behavioral constraints that an LLM is unlikely to know from training, fitting the limits-quotas category best. |
 | [Resolving network performance issues](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-troubleshooting-network-performance) | troubleshooting | 0.78 | Described as a standardized method for testing Azure network link performance; these guides usually provide specific test setups, tools, commands, and thresholds for ExpressRoute performance validation, which are product-specific troubleshooting procedures. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities) | configuration | 0.75 | PowerShell-based configuration of BGP community values for VNets; product-specific routing configuration details. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities-portal) | configuration | 0.75 | Portal-based configuration of custom BGP community values for VNets; includes specific ExpressRoute-related parameters and behaviors. |
@@ -121,6 +128,7 @@ category_descriptions:
 | [Optimize routing](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-optimize-routing) | architecture-patterns | 0.70 | ExpressRoute-specific routing optimization patterns when multiple circuits exist; uses standard routing tech but applied to this service’s topology. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/design-architecture-for-resiliency) | architecture-patterns | 0.70 | Design-focused article on resiliency patterns and disaster recovery for ExpressRoute with product-specific architectural guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways) | decision-making | 0.70 | Describes gateway SKUs, estimated performance, and features; used to choose appropriate SKU and understand FastPath applicability. |
+| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about) | decision-making | 0.70 | The article covers ExpressRoute Direct features, available SKUs, and technical requirements, which are used to decide whether and how to onboard to ExpressRoute Direct. It likely includes SKU-specific capabilities and requirements that guide service/tier selection, matching the decision-making category with product-specific criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/scalable-gateway) | limits-quotas | 0.70 | Explains ErGwScale gateway with up to 40 Gbps bandwidth, configuration options, limitations, and performance details—likely with numeric limits per SKU. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/traffic-collector) | configuration | 0.70 | Feature description with supported export destinations and flow-log behavior; includes product-specific configuration implications. |
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/expressroute/plan-manage-cost) | decision-making | 0.70 | Guidance on cost estimation, budgeting, and monitoring specific to ExpressRoute; supports financial decision-making and capacity planning. |
@@ -146,7 +154,6 @@ category_descriptions:
 | [Create an ExpressRoute circuit - PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm) | integrations | 0.65 | Uses Azure PowerShell cmdlets and parameters specific to ExpressRoute circuits; includes product-specific API usage patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-upgrade-circuit-bandwidth) | best-practices | 0.65 | Guidance on upgrading circuit bandwidth, including constraints and recommended steps; product-specific operational best practices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption) | security | 0.65 | ExpressRoute-specific encryption behaviors and supported technologies; includes product-specific security configuration considerations. |
-| [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about) | decision-making | 0.65 | Covers available SKUs, technical requirements, and key features; used to decide when and how to use ExpressRoute Direct versus provider circuits. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-prerequisites) | decision-making | 0.65 | Prerequisites and checklist for ordering ExpressRoute circuits, including when to use ExpressRoute for Microsoft 365; this is concrete decision guidance about suitability and requirements. |
 | [Resiliency Insights](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-insights) | configuration | 0.65 | Describes resiliency index calculation and how to analyze/act on it; includes product-specific metrics and recommendations. |
 | [Resiliency Validation](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-validation) | configuration | 0.65 | Feature-specific guidance for running resiliency validation and site failover tests with ExpressRoute gateways. |

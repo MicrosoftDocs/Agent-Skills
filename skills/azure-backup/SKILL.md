@@ -3,7 +3,7 @@ name: azure-backup
 description: Expert knowledge for Azure Backup development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Backup applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Backup Skill
@@ -28,9 +28,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Architecture & Design Patterns | L83-L87 | Azure Backup’s architecture for protecting SAP HANA: components, data flow, backup/restore process, scalability, security, and integration with Azure storage and recovery services. |
 | Limits & Quotas | L88-L119 | Backup support matrices, performance limits, retention/soft delete settings, and regional/SKU constraints for Azure Backup across VMs, databases, files, disks, and Backup center. |
 | Security | L120-L162 | Security features for Azure Backup: encryption, RBAC, MUA/Resource Guard, soft delete/immutable vaults, private endpoints, AKS/VM/confidential VM protection, ransomware and threat detection. |
-| Configuration | L163-L244 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, scripts/APIs, and workload-specific backups (VMs, Files, Blobs, Disks, SQL, AKS, SAP, PostgreSQL). |
-| Integrations & Coding Patterns | L245-L303 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
-| Deployment | L304-L307 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
+| Configuration | L163-L245 | Configuring Azure Backup and restore: setup, policies, offline seeding, diagnostics/monitoring, and management for VMs, AKS, SQL, SAP, Files, Blobs, Disks, PostgreSQL, and Data Lake. |
+| Integrations & Coding Patterns | L246-L304 | End-to-end scripting patterns for configuring, running, monitoring, and restoring Azure Backup across VMs, SQL, PostgreSQL, SAP HANA, Files, Blobs, Disks, and on-premises using CLI, PowerShell, REST, and Logic Apps. |
+| Deployment | L305-L308 | Automating unattended/silent deployment of Azure Backup Server v4, including required parameters, scripts, and configuration steps for large-scale or repeatable installs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -233,6 +233,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Offline backup workflow for legacy DPM and MABS versions | https://learn.microsoft.com/en-us/azure/backup/offline-backup-server-previous-versions |
 | Configure pre-backup and post-backup scripts in MABS | https://learn.microsoft.com/en-us/azure/backup/pre-backup-post-backup-scripts |
 | Run SAP ASE preregistration script for Azure Backup | https://learn.microsoft.com/en-us/azure/backup/sap-ase-database-backup-run-preregistration-quickstart |
+| Configure Azure Backup for SAP HANA System Replication on VMs | https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup |
 | Use selective disk backup and restore for Azure VMs | https://learn.microsoft.com/en-us/azure/backup/selective-disk-backup-restore |
 | Configure Azure Files backup with snapshot and vaulted tiers | https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-azure-files-vault-tier-portal |
 | Recover Windows Server files from Azure using MARS | https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-restore-files-windows-server |

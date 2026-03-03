@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   security: 'Security, auth, and compliance for Foundry: Entra ID, RBAC, keys, private
     networking, policies, safety filters, data privacy, and securing agents, tools,
@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 193
 - **Unclassified**: 64
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 256
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-foundry/azure-microsoft-foundry.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,13 @@ category_descriptions:
 | security | 23 | 8.9% |
 | troubleshooting | 3 | 1.2% |
 | *(Unclassified)* | 64 | 24.9% |
+
+## Changes
+
+### Updated Pages
+
+- [Intervention points](https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-02T23:16:00.000Z
 
 ## Classified Pages
 
@@ -271,7 +285,6 @@ category_descriptions:
 | [Hosted agents](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents) | 0.40 | Hosted agents conceptual overview; mentions limits/pricing link but defers details elsewhere; not itself a limits, config, or troubleshooting reference. |
 | [Image prompt engineering techniques](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-4-v-prompt-engineering) | 0.40 | Prompt engineering guidance for images; largely conceptual best practices without product-specific numeric configs or limits. |
 | [Image prompt transformation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-transformation) | 0.40 | Conceptual explanation of prompt transformation for DALL-E 3; summary suggests high-level concepts rather than detailed configuration tables, limits, or error mappings. |
-| [Intervention points](https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points) | 0.40 | Intervention points concepts suggests a conceptual article about agentic AI intervention points, not detailed configuration or limits. |
 | [Model versions](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/model-versions) | 0.40 | Conceptual explanation of model versioning and update policies; summary doesn’t indicate numeric limits, config tables, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview) | 0.40 | High-level overview of guardrails and controls; summary suggests conceptual description of risks and intervention points without concrete config tables or parameters. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router) | 0.40 | Concepts overview of model router; summary doesn’t show concrete config tables, limits, or decision matrices. |
@@ -304,6 +317,7 @@ category_descriptions:
 | [Agent development overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) | 0.20 | Conceptual overview of Foundry Agent Service and its value; lacks detailed limits, configs, or decision matrices. |
 | [Agent runtime components](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/runtime-components) | 0.20 | Explains runtime components conceptually (agents, conversations, responses); no indication of numeric limits or config parameter tables. |
 | [Development lifecycle](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle) | 0.20 | Lifecycle overview; conceptual guidance on stages rather than concrete configs, limits, or troubleshooting details. |
+| [Intervention points](https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points) | 0.20 | Conceptual explanation of intervention points and guardrails for agentic AI; no concrete limits, configuration tables, error codes, or product-specific parameters/thresholds are indicated in the summary. |
 | [Manage agents at scale](https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-manage-agents) | 0.20 | How-to for viewing and managing agents; likely step-by-step UI usage without deep config tables or numeric constraints in summary. |
 | [Monitor fleet health and performance](https://learn.microsoft.com/en-us/azure/foundry/control-plane/monitoring-across-fleet) | 0.20 | Monitoring overview for fleet health and performance; summary suggests portal usage guidance, not specific expert-only parameters or limits. |
 | [Observability overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/observability) | 0.20 | Conceptual observability overview; summary does not indicate specific config tables, limits, or evaluators with parameters. |

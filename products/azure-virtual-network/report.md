@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -12,9 +12,9 @@ category_descriptions:
   configuration: 'Configuring Azure Virtual Network components: DNS, IPs (public/private,
     prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring,
     NSG logs, and DHCP-related setups.'
-  troubleshooting: Diagnosing and fixing Azure VM/VNet connectivity issues, including
-    routing, NSG filtering, outbound SMTP blocks, VNet peering, NVAs, encryption problems,
-    and VNet deletion errors.
+  troubleshooting: 'Diagnosing and fixing Azure VM/VNet connectivity issues: routing
+    and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption,
+    and VNet deletion errors.'
   security: Securing virtual networks with policies and encryption, including Kubernetes
     network policies, Azure Policy for VNets, VNet encryption, and restricting storage
     egress via service endpoint policies.
@@ -33,10 +33,10 @@ category_descriptions:
 - **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 139
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 137
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
@@ -46,13 +46,26 @@ category_descriptions:
 | architecture-patterns | 6 | 4.3% |
 | best-practices | 10 | 7.2% |
 | configuration | 26 | 18.7% |
-| decision-making | 7 | 5.0% |
+| decision-making | 6 | 4.3% |
 | limits-quotas | 3 | 2.2% |
 | security | 5 | 3.6% |
-| troubleshooting | 9 | 6.5% |
+| troubleshooting | 10 | 7.2% |
 | *(Unclassified)* | 73 | 52.5% |
 
 ## Changes
+
+### New Pages
+
+- [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
+
+### Updated Pages
+
+- [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview)
+  - Updated: 2026-02-19T12:31:00.000Z → 2026-03-02T23:28:00.000Z
+
+### Deleted Pages
+
+- ~~Create a virtual network routing appliance~~ (https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
 
 ## Classified Pages
 
@@ -96,6 +109,7 @@ category_descriptions:
 | [Azure Kubernetes network policies](https://learn.microsoft.com/en-us/azure/virtual-network/kubernetes-network-policies) | security | 0.65 | Describes Azure Network Policy Manager implementation details and how to apply network policies; product-specific security configuration guidance. |
 | [Configure IP addresses for an Azure network interface](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-network-interface-addresses) | configuration | 0.65 | How-to for adding/removing IPs on NICs; involves Azure-specific properties (primary/secondary IPs, allocation methods) that are configuration details rather than generic networking theory. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-cost-optimization) | decision-making | 0.65 | Cost optimization guidance for VNet design; likely includes concrete recommendations and trade-offs between connectivity, performance, and cost for different scenarios. |
+| [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance) | troubleshooting | 0.65 | How-to article for preview registration and creation that explicitly includes a troubleshooting section. Preview registration and setup issues typically involve specific error messages and resolution steps that are product- and preview-specific, which qualify as expert troubleshooting knowledge beyond generic debugging guidance. |
 | [Create a virtual machine with static public IP](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip) | limits-quotas | 0.65 | Mentions there is a limit to the number of public IP addresses per subscription and references downloadable IP range lists; this is concrete limits/quotas information beyond generic concepts. |
 | [Create a virtual network with encryption](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-encryption) | configuration | 0.65 | How-to for creating an encrypted VNet; likely includes specific settings and parameters required to enable VNet encryption. |
 | [Linux and FreeBSD VMs](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-how-it-works) | best-practices | 0.65 | Deep dive into how Accelerated Networking works (synthetic vs VF interfaces, driver behavior). Contains product-specific implementation details and behavior patterns that guide correct configuration and usage beyond generic networking knowledge. |
@@ -123,7 +137,6 @@ category_descriptions:
 | [Subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) | configuration | 0.60 | Explains how to delegate subnets to specific PaaS services and the resulting configuration rules; Azure-specific configuration behavior. |
 | [Subnet extension](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-extension) | architecture-patterns | 0.60 | Discusses retaining IP ranges and handling subnet extension during migration; Azure-specific network design pattern for IP-dependent workloads. |
 | [Traffic routing](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) | architecture-patterns | 0.60 | Explains system default routes, UDRs, and BGP; used to design routing behavior and override defaults, which is an Azure-specific architecture pattern. |
-| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | decision-making | 0.60 | Describes capabilities, performance characteristics, and deployment model of routing appliance; used to decide when to adopt this managed forwarding layer. |
 
 ## Unclassified Pages
 
@@ -161,7 +174,6 @@ category_descriptions:
 | [Add or remove a subnet delegation](https://learn.microsoft.com/en-us/azure/virtual-network/manage-subnet-delegation) | 0.35 | How-to for adding/removing subnet delegation; procedural with minimal product-specific configuration tables or decision criteria. |
 | [Add or remove network interfaces](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface-vm) | 0.35 | Explains adding/removing NICs on VMs; operational steps, not a configuration reference or troubleshooting guide with error codes. |
 | [Configure subnet peering](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-configure-subnet-peering) | 0.35 | How-to for configuring subnet peering; focuses on steps and basic behavior, not deep configuration references or decision matrices. |
-| [Create a virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance) | 0.35 | How-to for creating routing appliance; preview registration and portal steps, but not clearly a config reference or limits table. |
 | [Custom IP address prefix (BYOIP)](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/custom-ip-address-prefix) | 0.35 | Conceptual overview of custom IP address prefix (BYOIP); describes what it is and how it behaves, but summary shows no detailed limits or configuration tables. |
 | [Deploy container networking](https://learn.microsoft.com/en-us/azure/virtual-network/deploy-container-networking) | 0.35 | Deployment guide for Azure CNI in Kubernetes; largely tutorial-style without comprehensive configuration reference tables or troubleshooting mappings. |
 | [Different subscriptions and tenants](https://learn.microsoft.com/en-us/azure/virtual-network/create-peering-different-subscriptions) | 0.35 | Tutorial for peering VNets across subscriptions/tenants; procedural steps, no detailed limits, config matrices, or troubleshooting mappings. |
@@ -200,5 +212,6 @@ category_descriptions:
 | [Configure mixed Routing Preference for a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-mixed-network-adapter-portal) | 0.28 | Tutorial for configuring both routing preferences using two NICs; scenario walkthrough rather than reference-style expert content. |
 | [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network) | 0.25 | Quickstart for creating a VNet; primarily procedural, not a reference of expert-only details. |
 | [Manage a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/manage-virtual-network) | 0.25 | Basic management article for creating/changing/deleting VNets; generic portal/CLI operations without expert-level configuration or troubleshooting content. |
+| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | High-level overview of Azure Virtual Network routing appliances without visible numeric limits, configuration tables, error codes, or decision matrices. Primarily conceptual/marketing-style description of what the feature is and its benefits. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |

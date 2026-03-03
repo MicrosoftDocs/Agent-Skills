@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre: network/storage prerequisites,
     client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/metrics/logs
@@ -17,9 +17,9 @@ category_descriptions:
   best-practices: Guidance on tuning Azure Managed Lustre performance via optimal
     file/directory layout, client striping, and network setup (NICs, throughput, latency,
     and scaling).
-  troubleshooting: Diagnosing and fixing Azure Managed Lustre deployment failures
-    and performance issues, including cluster setup errors, throughput/IOPS bottlenecks,
-    and tuning configuration for better speed.
+  troubleshooting: Diagnosing and resolving Azure Managed Lustre deployment failures
+    and performance issues, including cluster provisioning errors, throughput/latency
+    problems, and tuning guidance.
 ---
 # Azure Managed Lustre Crawl Report
 
@@ -32,10 +32,10 @@ category_descriptions:
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 29
-- **Deleted Pages**: 0
+- **Unchanged**: 28
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
 ## Classification Statistics
@@ -53,12 +53,20 @@ category_descriptions:
 
 ## Changes
 
+### New Pages
+
+- [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
+
+### Deleted Pages
+
+- ~~Troubleshoot cluster performance failures~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Managed Lustre performance, organized around common performance issues and how to resolve them. It likely includes product-specific diagnostics (for example, how to collect performance metrics, which logs or counters to inspect, and how to interpret them) and concrete remediation steps tailored to this service, which qualifies as expert troubleshooting knowledge beyond generic debugging advice. |
 | [Troubleshoot cluster deployment failures](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-deployment) | troubleshooting | 0.85 | Explicit troubleshooting guide for deployment; likely organized by error codes/messages and causes with specific resolutions unique to this service. |
-| [Troubleshoot cluster performance failures](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance) | troubleshooting | 0.85 | Performance troubleshooting guide with symptom→cause→solution mappings and possibly diagnostic commands/metrics specific to Managed Lustre. |
 | [Configure a network security group](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/configure-network-security-group) | security | 0.80 | Describes specific NSG rules (ports, protocols, directions) required for Managed Lustre, which are detailed security configuration settings. |
 | [Monitoring reference for metrics and logs](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/monitor-file-system-reference) | configuration | 0.80 | Monitoring data reference will list metric names, dimensions, and log schemas unique to this service, which are detailed configuration/telemetry references. |
 | [Optimize Azure Managed Lustre performance](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/optimize-performance) | best-practices | 0.80 | Provides product-specific performance tuning guidance (e.g., VM sizes, accelerated networking, AZ placement, routing) with concrete configuration recommendations. |
