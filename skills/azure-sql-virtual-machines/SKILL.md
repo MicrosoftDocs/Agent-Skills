@@ -1,6 +1,6 @@
 ---
 name: azure-sql-virtual-machines
-description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SQL Server on Azure Virtual Machines applications.
+description: Expert knowledge for SQL Server on Azure Virtual Machines covering troubleshooting (I/O throttling, tempdb, transaction log growth, connectivity, SQL IaaS Agent), Always On AG/FCI and WSFC architecture, HA/DR, storage and backup to Azure Blob, TLS/Key Vault/Entra ID security, migration/licensing/cost decisions, and ARM deployments. Use when working with SQL Server running inside Azure VMs. Not for Azure SQL Database, Azure SQL Managed Instance, or on-prem SQL only.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

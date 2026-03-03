@@ -1,6 +1,6 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Security applications.
+description: Expert knowledge for Azure Security covering SBOM signing in CI/CD, Notation image signing/verification in Azure Pipelines/GitHub Actions, Defender for Cloud, AKS image validation, firewalls, antimalware, CMK support, Key Vault vs Managed/Cloud/Payment HSM, Customer Lockbox errors, ransomware defense, and security hardening checklists. Use when designing, configuring, or troubleshooting security for Azure IaaS/PaaS workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

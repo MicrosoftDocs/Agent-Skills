@@ -26,6 +26,12 @@ category_descriptions:
   architecture-patterns: Guidance on architecting disaster recovery and failover for
     Azure Video Indexer, including redundancy, regional failover, backup, and high-availability
     design considerations.
+skill_description: Expert knowledge for Azure AI Video Indexer covering account type
+  selection, multi-tenant design, Arc deployment (ARM/Bicep), API/widgets, Logic Apps/Power
+  Automate, Azure OpenAI integration, limits/quotas, RBAC, private endpoints, NSGs,
+  custom speech/brand/person models, live camera indexing, DR/failover, and Arc runtime
+  troubleshooting. Use when designing, configuring, securing, integrating, or diagnosing
+  Azure AI Video Indexer solutions.
 ---
 # Azure AI Video Indexer Crawl Report
 

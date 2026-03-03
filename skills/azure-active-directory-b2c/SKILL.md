@@ -1,6 +1,6 @@
 ---
 name: azure-active-directory-b2c
-description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Active Directory B2C applications.
+description: Expert knowledge for Azure Active Directory B2C covering tenant configuration, custom policies, user flows, MFA, SSO, OAuth2/OIDC, SAML, app/API registration, identity providers, Conditional Access, Identity Protection, CAPTCHA, CI/CD deployment, Application Insights troubleshooting, and limits/quotas. Use when designing, securing, integrating, or debugging Azure AD B2C customer identity. Not for Entra ID (workforce), Azure AD DS, or generic OAuth without B2C.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

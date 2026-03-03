@@ -1,6 +1,6 @@
 ---
 name: azure-database-mysql
-description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for MySQL applications.
+description: Expert knowledge for Azure Database for MySQL Flexible Server covering deployment automation (ARM/Bicep, Terraform, Azure Pipelines, GitHub Actions), HA/BCDR, backups/geo-restore, major version upgrades, performance tuning (slow query log, innodb_buffer_pool_size), VNet/firewall/Private Link, Entra auth, read replicas, AKS connectivity, migration from RDS/on-prem, and troubleshooting connectivity/timeouts/replication lag. Use when designing, configuring, securing, or operating Azure Database for MySQL Flexible Server workloads or planning migrations to it. Not for Azure SQL Database, Azure Database for PostgreSQL, MySQL on Azure VMs, or generic MySQL without Azure services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

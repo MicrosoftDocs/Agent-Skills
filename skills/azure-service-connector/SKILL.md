@@ -1,6 +1,6 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Connector applications.
+description: Expert knowledge for Azure Service Connector covering Microsoft Entra roles/permissions, least-privilege access, regional support per compute (App Service, Functions, Container Apps, AKS), IaC setup (Bicep/ARM/Terraform), auth methods (managed identity, service principal, key/connection string), CLI params (az webapp connection), patterns for Cosmos DB/SQL/PostgreSQL/MySQL/Storage/Service Bus/Event Hubs/Key Vault/Redis/Kafka/MongoDB/OpenAI, troubleshooting connection failures and error codes, and limits/unsupported scenarios. Use when configuring, securing, deploying, or debugging Azure Service Connector-based connections between compute and data/services. Not for generic Azure networking, VNet peering, or API Management.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

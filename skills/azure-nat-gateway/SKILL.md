@@ -1,6 +1,6 @@
 ---
 name: azure-nat-gateway
-description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure NAT Gateway applications.
+description: Expert knowledge for Azure NAT Gateway covering SNAT port limits/quotas, outbound connection scaling, Standard vs StandardV2 configuration, public IP/Prefix association, flow logs, metrics/alerts, hub-spoke and Azure Firewall patterns, and troubleshooting connectivity/SNAT exhaustion. Use when designing, deploying, or debugging Azure NAT Gateway outbound internet access. Not for Azure Firewall, Azure Application Gateway, or generic VNet routing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -21,6 +21,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Bastion problems, including
     connection failures, RDP/SSH issues, network/configuration misconfigurations,
     and basic troubleshooting steps.
+skill_description: Expert knowledge for Azure Bastion covering AKS private cluster
+  access, VM scale sets, SSH/RDP via native clients, file transfer, NSG rules for
+  Bastion-connected VMs, SKU selection (Basic/Standard/Developer), Kerberos and IP-based
+  access, hub/spoke and VNet peering patterns, and connection troubleshooting. Use
+  when designing, securing, configuring, or debugging Azure Bastion-based remote access.
 ---
 # Azure Bastion Crawl Report
 

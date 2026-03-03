@@ -16,6 +16,11 @@ category_descriptions:
     and common design patterns/anti-patterns.'
   integrations: 'Using Azure PowerShell to manage Table storage: create/delete tables,
     insert/query/update/delete entities, and script common data operations.'
+skill_description: Expert knowledge for Azure Table Storage covering Microsoft Entra
+  ID/RBAC auth, table/partition/row key design, scalability limits, throughput targets,
+  metrics/logs/diagnostic settings, alerts, and Azure PowerShell CRUD/scripting patterns.
+  Use when designing schemas, optimizing queries/perf, or securing/monitoring Table
+  Storage. Not for Azure Cosmos DB Table API, Azure SQL, Blob, Queue, or File Storage.
 ---
 # Azure Table Storage Crawl Report
 

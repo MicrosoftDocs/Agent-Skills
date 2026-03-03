@@ -1,6 +1,6 @@
 ---
 name: azure-hdinsight
-description: Expert knowledge for Azure HDInsight development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HDInsight applications.
+description: Expert knowledge for Azure HDInsight covering cluster configuration/tuning (Ambari, Hive, Spark, HBase, Kafka, YARN, autoscale, VNet/NSG, SSH/Jupyter), integrations (Sqoop, REST/CLI, Power BI, Synapse, Cosmos DB), architecture/HA/DR, ARM/PowerShell deployment, security (Entra ID, Ranger, TLS), troubleshooting job failures and error codes, limits/quotas. Use when designing, operating, or migrating HDInsight clusters. Not for Azure Databricks, Synapse Spark, or generic Hadoop on VMs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-fluid-relay
-description: Expert knowledge for Azure Fluid Relay development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Fluid Relay applications.
+description: Expert knowledge for Azure Fluid Relay covering JWT auth design, token providers, key rotation, CMK/data encryption, container creator validation, Fluid Framework client/server version config, AzureClient setup, audience APIs, React presence, Azure CLI container deletion, corrupted container recovery, Static Web Apps deployment, CI/CD test automation, and limits/throttling. Use when designing, securing, integrating, or troubleshooting Azure Fluid Relay apps. Not for generic WebSocket services, SignalR, or non-Fluid Azure collaboration tools.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

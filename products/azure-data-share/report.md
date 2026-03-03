@@ -14,6 +14,12 @@ category_descriptions:
   configuration: 'Configuring Azure Data Share: adding datasets, mapping received
     data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics,
     and automating via PowerShell, ARM, and Bicep.'
+skill_description: Expert knowledge for Azure Data Share covering cost estimation
+  (shares, snapshots, storage), RBAC roles/permissions, invitations/recipients, common
+  invitation errors, cross-region deployment/DR, dataset mapping, SQL/Synapse/Blob/Data
+  Lake integration, monitoring, and automation via PowerShell/ARM/Bicep. Use when
+  designing, securing, configuring, or troubleshooting Azure Data Share. Not for Azure
+  Data Factory, Azure Data Lake Storage, or Azure File Shares.
 ---
 # Azure Data Share Crawl Report
 

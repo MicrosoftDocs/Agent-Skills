@@ -1,6 +1,6 @@
 ---
 name: azure-open-datasets
-description: Expert knowledge for Azure Open Datasets development including limits & quotas. Use when building, debugging, or optimizing Azure Open Datasets applications.
+description: Expert knowledge for Azure Open Datasets Limits & Quotas, including non-Spark download limits, throttling behavior (HTTP 429), per-subscription quotas, dataset size constraints, and strategies like pagination, backoff/retry, and batching to avoid rate limits. Use when troubleshooting Azure Open Datasets REST/portal downloads or optimizing high-volume access patterns. Not for Azure Databricks Spark jobs or general Azure Storage throttling.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

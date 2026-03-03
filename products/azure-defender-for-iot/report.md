@@ -27,6 +27,12 @@ category_descriptions:
   decision-making: 'Guidance on planning Defender for IoT deployments: choosing OT
     traffic mirroring, appliances, licenses, partner integrations, billing, hybrid/air-gapped
     setups, and on-premises to cloud transitions.'
+skill_description: Expert knowledge for Azure Defender For Iot covering OT sensor/micro
+  agent troubleshooting, alert tuning, traffic mirroring, OT appliance/VM deployment,
+  RBAC/SSO, Zero Trust, CIS benchmarks, data retention, Sentinel/SIEM/ServiceNow integrations,
+  APIs/playbooks, and Purdue-model architecture. Use when planning, configuring, or
+  securing Defender for IoT OT/ICS environments. Not for generic Azure IoT Hub, Defender
+  for Cloud, or non-OT IoT solutions.
 ---
 # Azure Defender For Iot Crawl Report
 

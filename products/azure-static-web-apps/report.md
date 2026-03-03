@@ -21,6 +21,13 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Static Web Apps deployment and runtime
     issues, including build failures, configuration problems, and troubleshooting
     tools/logs.
+skill_description: Expert knowledge for Azure Static Web Apps covering Functions/API
+  integrations with Cosmos DB/SQL/MySQL/PostgreSQL, Mongoose, swa-cli emulation, routes.json,
+  staticwebapp.config.json, custom domains/DNS, Entra ID auth, roles, Key Vault/managed
+  identity, CI/CD (GitHub/GitLab/Bitbucket/CLI/Bicep), Next.js hosting, quotas/limits,
+  and build/runtime troubleshooting. Use when designing, configuring, securing, or
+  deploying Azure Static Web Apps. Not for generic Azure App Service web apps, Azure
+  Front Door-only setups, or standalone Azure Functions without Static Web Apps.
 ---
 # Azure Static Web Apps Crawl Report
 

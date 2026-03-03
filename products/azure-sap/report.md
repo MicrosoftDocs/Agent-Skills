@@ -28,6 +28,17 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing SAP on Azure issues: deployment automation
     errors, Business Process Solutions problems, VM scale set and extension failures,
     and using Azure Monitor SAP Insights for root-cause analysis.'
+skill_description: Expert knowledge for SAP HANA on Azure Large Instances covering
+  configuration and deployment automation (ACSS, LaMa, ARM/Bicep), HANA scale-out,
+  storage/HA/cluster setups (Pacemaker, STONITH, Azure Files SMB), security (Key Vault,
+  RBAC, TLS, private endpoints, Entra ID), architecture/DR patterns (zones/regions,
+  RISE connectivity), integrations (Azure Monitor for SAP, SAP Insights, Business
+  One/BusinessObjects, NetWeaver), decision making (certified VM types, HANA tiering,
+  data extraction, monitoring/analytics models, supported versions), best practices
+  (HA/DR test automation, VIS checks), limits/quotas, and troubleshooting deployment
+  errors, VM extension/VMSS failures, and SAP workload issues. Use when designing,
+  securing, deploying, or troubleshooting SAP HANA on Azure Large Instances and related
+  SAP on Azure landscapes. Not for generic Azure VMs, Azure SQL, or non-SAP HANA workloads.
 ---
 # SAP HANA on Azure Large Instances Crawl Report
 

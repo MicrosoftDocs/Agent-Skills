@@ -27,6 +27,12 @@ category_descriptions:
   limits-quotas: Limits on tenants, users, tokens, and directory size in Azure AD
     B2C, plus how to create tenants, monitor quota usage, and understand token formats
     and constraints.
+skill_description: Expert knowledge for Azure Active Directory B2C covering tenant
+  configuration, custom policies, user flows, MFA, SSO, OAuth2/OIDC, SAML, app/API
+  registration, identity providers, Conditional Access, Identity Protection, CAPTCHA,
+  CI/CD deployment, Application Insights troubleshooting, and limits/quotas. Use when
+  designing, securing, integrating, or debugging Azure AD B2C customer identity. Not
+  for Entra ID (workforce), Azure AD DS, or generic OAuth without B2C.
 ---
 # Azure Active Directory B2C Crawl Report
 

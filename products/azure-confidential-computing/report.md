@@ -26,6 +26,12 @@ category_descriptions:
     security guarantees, limitations, performance, pricing, and operational best practices.'
   limits-quotas: Guidance on choosing sizes, quotas, and deployment limits for Intel
     SGX-enabled VMs in Azure, including capacity planning and scaling considerations.
+skill_description: Expert knowledge for Azure Confidential Computing covering Intel
+  SGX/AMD SEV-SNP VMs, AKS confidential node pools/SGX device plugin, attestation
+  (Azure Attestation, vTPM), secure key release (SKR), Fortanix CCM, Key Vault, Metablob
+  disks, deployment/ARM/CLI patterns, and SGX VM size quotas. Use when designing,
+  configuring, or troubleshooting Azure confidential VMs, enclaves, and containers.
+  Not for general Azure VM, AKS, or GPU security without confidential computing.
 ---
 # Azure Confidential Computing Crawl Report
 

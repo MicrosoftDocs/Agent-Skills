@@ -1,6 +1,6 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cosmos DB applications.
+description: Expert knowledge for Azure Cosmos DB covering Core (SQL), Mongo, Cassandra, Gremlin, PostgreSQL APIs; SDK patterns, change feed, Kafka/Spark, vector search/RAG, partitioning/indexing, RU/cost, autoscale, backup/PITR, Private Link/VNet, RBAC/CMK, 429/404/503 errors, HTAP, IaC (ARM/Bicep/Terraform), and CI/CD deployment. Use when designing, configuring, securing, or troubleshooting Cosmos DB workloads. Not for Azure SQL, Azure Table Storage, or general PostgreSQL on VMs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

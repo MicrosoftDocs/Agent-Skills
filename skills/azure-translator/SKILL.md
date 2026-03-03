@@ -1,6 +1,6 @@
 ---
 name: azure-translator
-description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Translator applications.
+description: Expert knowledge for Azure Translator covering configuration (resources, containers, profanity filter, content exclusion, dynamic dictionaries, word alignment, metrics), deployment in Docker, REST/SDK/Document Translation APIs, quotas/limits, security (keys, Entra ID, VNets), BLEU evaluation, and HTTP error codes. Use when designing, securing, tuning, or troubleshooting Azure Translator or Custom Translator. Not for Azure Cognitive Search, Speech, or general localization strategy.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

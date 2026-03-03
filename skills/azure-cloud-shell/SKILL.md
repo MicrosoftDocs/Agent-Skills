@@ -1,6 +1,6 @@
 ---
 name: azure-cloud-shell
-description: Expert knowledge for Azure Cloud Shell development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Cloud Shell applications.
+description: Expert knowledge for Azure Cloud Shell covering troubleshooting shell launch failures, storage account mount errors, $home persistence, session timeouts, private VNet connectivity, and deployment/network issues; explaining session duration, quotas, file share limits, and Bash vs PowerShell persistence; and securing Cloud Shell storage with RBAC, network isolation, and private endpoints. Use when configuring, securing, or debugging Azure Cloud Shell environments.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

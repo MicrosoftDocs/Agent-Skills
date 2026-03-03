@@ -1,6 +1,6 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications.
+description: Expert knowledge for Azure Machine Learning covering workspace design, AML v1→v2 migration, SDK/CLI/YAML config, AutoML, environments/registries, pipelines, managed/AKS endpoints, VNets/private endpoints, RBAC/MI, quotas/VM SKUs, prompt flow, MLflow, CI/CD, and MLOps/GenAIOps. Use when designing, deploying, or troubleshooting Azure ML workloads. Not for Azure Databricks-only ML, Synapse-only ML, or generic Python ML without Azure ML.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

@@ -28,6 +28,12 @@ category_descriptions:
   decision-making: Guides for deciding load test resource moves (regions, groups,
     subscriptions) and tuning performance settings like Azure Functions configs and
     Playwright parallelism.
+skill_description: 'Expert knowledge for Azure App Testing using Azure Load Testing
+  and Playwright Workspaces: VNet-injected tests, private endpoints, JMeter/Locust/HTTP/Playwright
+  configs, CI/CD YAML, baselines/auto-stop, RBAC, Key Vault, CMK, quotas, and performance
+  tuning for App Service/Azure Functions. Use when designing, running, or troubleshooting
+  Azure Load Testing for web apps and APIs. Not for generic unit tests, Azure DevTest
+  Labs, or non-Azure load tools.'
 ---
 # Azure App Testing Crawl Report
 

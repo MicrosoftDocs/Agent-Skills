@@ -1,6 +1,6 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications.
+description: Expert knowledge for Azure Container Instances covering limits/quotas, container group YAML, env vars, DNS, VNet, static IP via NAT Gateway/Application Gateway, volumes, probes, GPUs, standby pools, Spot containers, TLS/HTTPS, ACR auth, managed identity, RBAC, CMK, GitHub Actions CI/CD, and error troubleshooting. Use when designing, securing, deploying, or debugging Azure Container Instances. Not for AKS, App Service, or Azure Functions containers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

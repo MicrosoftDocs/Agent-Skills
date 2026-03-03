@@ -24,6 +24,12 @@ category_descriptions:
   decision-making: Guidance on choosing between Azure Key Vault, Managed HSM, Cloud
     HSM, and Payment HSM based on security, compliance, key management, and workload
     requirements.
+skill_description: Expert knowledge for Azure Security covering SBOM signing in CI/CD,
+  Notation image signing/verification in Azure Pipelines/GitHub Actions, Defender
+  for Cloud, AKS image validation, firewalls, antimalware, CMK support, Key Vault
+  vs Managed/Cloud/Payment HSM, Customer Lockbox errors, ransomware defense, and security
+  hardening checklists. Use when designing, configuring, or troubleshooting security
+  for Azure IaaS/PaaS workloads.
 ---
 # Azure Security Crawl Report
 

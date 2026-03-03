@@ -1,6 +1,6 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure.
+description: Expert knowledge for Azure Cloud Adoption Framework covering adoption scenarios/patterns, landing zones, governance, security (Zero Trust, RBAC), networking/identity, data/analytics, AI agents, AKS/AVS, SAP/Oracle/VMware, AVD, BCDR, org/CCoE design, and cost management. Use when defining Azure strategy, planning migrations/modernization, or designing/operating enterprise-scale Azure environments.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

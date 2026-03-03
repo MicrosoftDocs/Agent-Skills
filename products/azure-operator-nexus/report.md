@@ -25,6 +25,13 @@ category_descriptions:
   architecture-patterns: 'Designing near-edge storage for Azure Operator Nexus: architecture
     choices, data locality, performance, capacity planning, redundancy, and integration
     with Nexus network/compute.'
+skill_description: Expert knowledge for Azure Operator Nexus covering cluster/fabric
+  configuration (BGP, VRF, QoS, ACLs, isolation domains, commit workflows, Kubernetes/AKS‑hybrid
+  settings), security (RBAC, SSH, break‑glass, Defender/MDE, key/cert rotation), troubleshooting
+  (bare metal, storage, connectivity, logs), deployment/upgrade, limits/quotas, and
+  near‑edge storage architecture. Use when designing, operating, or debugging Azure
+  Operator Nexus infrastructure. Not for generic Azure networking, AKS, or Azure Stack
+  HCI.
 ---
 # Azure Operator Nexus Crawl Report
 

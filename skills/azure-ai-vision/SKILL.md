@@ -1,6 +1,6 @@
 ---
 name: azure-ai-vision
-description: Expert knowledge for Azure AI Vision development including decision making, limits & quotas, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Vision applications.
+description: Expert knowledge for Azure AI Vision covering Image Analysis limits/quotas (adult/racy scores, category lists, object/person detection, smart-crop, OCR language support), Vision Read OCR containers deployment/configuration (Docker, on-prem, env vars, networking, Blob Storage), SDK/API integrations (thumbnails, background removal, embeddings, video frame analysis), and migration/upgrade decisions between Vision Image Analysis and Read OCR versions. Use when designing, configuring, or troubleshooting Azure AI Vision/Read OCR workloads, container runtime issues, or API integration patterns. Not for Azure Cognitive Search, Azure OpenAI vision, generic computer vision theory, or non-Azure OCR services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

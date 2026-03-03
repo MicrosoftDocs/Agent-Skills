@@ -1,6 +1,6 @@
 ---
 name: azure-language-service
-description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Language applications.
+description: Expert knowledge for Azure AI Language covering CLU, custom NER, custom text classification, sentiment, summarization, Health, CQA/QnA, configuration, deployment (containers/AKS), limits/quotas, security (CMK, RBAC, Private Link), architecture, and troubleshooting low-accuracy or API errors. Use when designing, migrating, securing, or debugging Azure AI Language workloads. Not for Azure OpenAI, LUIS, or QnA Maker runtime usage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

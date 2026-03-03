@@ -1,6 +1,6 @@
 ---
 name: azure-lab-services
-description: Expert knowledge for Azure Lab Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lab Services applications.
+description: Expert knowledge for Azure Lab Services covering lab plans, RBAC roles, Azure Policy, VM size limits, VNet integration, firewalls/public IPs, GPU/nested virtualization, Canvas/Teams integration, Bicep/PowerShell/Python automation, schedules, quotas, template images, and connectivity errors (RDP/SSH/X2Go). Use when designing, deploying, securing, or troubleshooting Azure Lab Services labs. Not for Azure Virtual Desktop, DevTest Labs, or generic Azure VM hosting.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

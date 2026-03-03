@@ -1,6 +1,6 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Communication Services applications.
+description: Expert knowledge for Azure Communication Services covering configuration, logging/metrics, Teams interop, domains, routing, UI library, SMS/email compliance; security, identities, HMAC, encryption, emergency calling; PSTN/phone numbers, pricing, gov cloud, Twilio migration; limits/quotas/regions; troubleshooting calling/SMS/email/Teams/SDK (UFD, diagnostics); best practices; integration with bots, Job Router, WhatsApp, Azure OpenAI; deployment and contact center architecture. Use when designing, configuring, securing, integrating, or troubleshooting Azure Communication Services workloads. Not for generic Azure networking, Azure Bot Service without ACS, or non-Azure CPaaS platforms.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

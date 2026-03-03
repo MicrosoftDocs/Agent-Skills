@@ -1,6 +1,6 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
+description: Expert knowledge for Azure SQL Managed Instance covering decision-making vs Azure SQL Database/SQL VM, service tiers, vCores/DTUs, networking (VNet, private endpoint), HA/DR, MI Link, migration from SQL Server/Oracle/Db2, performance tuning (DMVs, XEvents), tempdb/time zone, backup/restore, security (AAD, TDE, TLS), and troubleshooting (connectivity, log full, XTP). Use when designing, deploying, configuring, or debugging Azure SQL Managed Instance environments. Not for Azure SQL Database, SQL Server on VMs, or other Azure databases.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

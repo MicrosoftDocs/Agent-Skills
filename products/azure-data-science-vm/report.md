@@ -19,6 +19,15 @@ category_descriptions:
   decision-making: Guidance for upgrading Azure Data Science VMs from Ubuntu 18.04
     to 20.04, including migration steps, compatibility considerations, and preserving
     tools/configurations.
+skill_description: Expert knowledge for Azure Data Science Virtual Machines covering
+  DSVM security (managed identity, shared identity, Azure Key Vault secrets), architecture
+  patterns (shared VM pools, team workflows, cost/resource management), configuration
+  of preinstalled ML/deep learning stacks, deployment via Bicep/ARM templates, MLflow
+  + Azure ML integration, troubleshooting GPU/driver/Jupyter/env issues, and Ubuntu
+  18.04→20.04 upgrade planning. Use when designing, deploying, securing, integrating,
+  or fixing Azure DSVM-based data science environments. Not for Azure Machine Learning
+  managed compute clusters, Azure Databricks, generic Azure VM images, or on-premises
+  data science servers.
 ---
 # Azure Data Science Virtual Machines Crawl Report
 

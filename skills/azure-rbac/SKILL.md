@@ -1,6 +1,6 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Role-based access control applications.
+description: Expert knowledge for Azure Role-based access control covering RBAC/ABAC design, least privilege, deny assignments, PIM, built-in vs custom roles, condition syntax, Activity Log audits, role assignment errors, CLI/PowerShell/REST/Bicep automation, and subscription directory moves. Use when designing, securing, configuring, or troubleshooting Azure RBAC. Not for Entra ID app roles, Azure DevOps permissions, or general Windows file ACLs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

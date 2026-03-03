@@ -1,6 +1,6 @@
 ---
 name: azure-document-intelligence
-description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Document Intelligence applications.
+description: Expert knowledge for Azure AI Document Intelligence covering SAS tokens, data-at-rest encryption, managed identities, VNets, quotas/rate limits, batch processing, SDK/REST AnalyzeDocument/Markdown, custom model training/composition, containers/Docker deployment, DR/failover design, and latency/error troubleshooting. Use when designing, securing, integrating, or debugging Document Intelligence solutions. Not for Azure Cognitive Search, Azure OpenAI, or generic OCR libraries.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: Limits, quotas, pricing, and retention tiers for Sentinel data, MCP
     server, search jobs, watchlists, ASIM, and workspace removal impact on stored
     logs and resources
+skill_description: Expert knowledge for Azure Sentinel covering configuration (data
+  connectors, analytics/automation rules, ASIM, UEBA, SAP, data lake, retention),
+  architecture, SOC best practices, KQL, CI/CD deployments, integrations (Logic Apps,
+  Teams, Power BI), troubleshooting ingestion/CEF/Syslog/SAP, and limits/quotas. Use
+  when designing, operating, or debugging Microsoft Sentinel SIEM/SOAR. Not for Microsoft
+  Defender XDR or generic Azure Monitor Log Analytics.
 ---
 # Azure Sentinel Crawl Report
 

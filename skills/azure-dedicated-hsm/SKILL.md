@@ -1,6 +1,6 @@
 ---
 name: azure-dedicated-hsm
-description: Expert knowledge for Azure Dedicated HSM development including troubleshooting, decision making, architecture & design patterns, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Dedicated HSM applications.
+description: Expert knowledge for Azure Dedicated HSM covering architecture/topology design, HA/failover patterns, VNet/subnet/ExpressRoute Gateway (Basic→Standard) networking, migration to Managed/Cloud HSM, monitoring/diagnostics via Azure Monitor/Log Analytics, physical security controls, and support boundaries/troubleshooting. Use when planning, deploying, securing, or diagnosing Azure Dedicated HSM. Not for Azure Key Vault, Managed HSM, or generic VM networking.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -12,6 +12,12 @@ category_descriptions:
     data.
   deployment: How to deploy and provision Azure Confidential Ledger instances using
     ARM templates or Terraform, including required parameters and configuration steps.
+skill_description: Expert knowledge for Azure Confidential Ledger covering Entra ID
+  auth and app registrations, certificate/JWT token roles, RBAC/UDF security, enclave/node
+  attestation, client SDKs, UDF patterns, blob digest anchoring, Power Automate, transaction
+  receipt verification, Managed CCF migration, and ARM/Terraform deployment. Use when
+  designing, securing, integrating, or migrating Azure Confidential Ledger. Not for
+  Azure SQL Ledger, Azure Storage, or general blockchain.
 ---
 # Azure Confidential Ledger Crawl Report
 

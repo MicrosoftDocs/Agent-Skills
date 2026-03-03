@@ -1,6 +1,6 @@
 ---
 name: azure-spring-apps
-description: Expert knowledge for Azure Spring Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Spring Apps applications.
+description: Expert knowledge for Azure Spring Apps covering configuration (VNet injection, ingress/egress, DNS, storage, logging/metrics, health probes, autoscale, Spring Cloud Gateway, Tanzu), security (TLS/SSL, custom domains, Entra ID SSO/RBAC, managed identity, Key Vault), limits/quotas, deployment (GitHub Actions, Azure Pipelines, Maven, CLI, ARM/Bicep/Terraform, blue‑green), observability (App Insights, AppDynamics, Dynatrace, Elastic, New Relic, JFR, heap dumps), integrations (SQL, PostgreSQL, MySQL, Redis, gRPC), troubleshooting (OOM, 5xx, build failures, VNet connectivity), and migration/plan decisions (Basic/Standard vs Enterprise, AKS, Container Apps). Use when designing, securing, integrating, monitoring, scaling, or troubleshooting Azure Spring Apps workloads or choosing ASA vs alternatives. Not for generic Spring Boot on VMs/App Service, plain AKS microservices, or non-Azure Spring Cloud deployments.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

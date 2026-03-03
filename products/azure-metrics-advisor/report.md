@@ -12,6 +12,12 @@ category_descriptions:
   configuration: 'Setting up Metrics Advisor: configuring alert hooks (email/webhook),
     alerting rules, data feed and detection settings, and tuning anomaly detection
     behavior for your instance.'
+skill_description: Expert knowledge for Azure AI Metrics Advisor covering cost estimation/optimization,
+  pricing tiers, data feed cost drivers, REST API/SDK integration, ingestion queries,
+  alert hooks (email/webhook), anomaly detection configuration/tuning, secure credential
+  entities, and customer-managed keys (CMK). Use when designing, securing, or troubleshooting
+  Metrics Advisor anomaly detection. Not for Azure Monitor alerts, Log Analytics,
+  or Application Insights.
 ---
 # Azure AI Metrics Advisor Crawl Report
 

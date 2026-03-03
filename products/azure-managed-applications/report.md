@@ -12,6 +12,13 @@ category_descriptions:
     definition packages.'
   deployment: Creating and publishing Azure Managed Application definitions using
     Bicep and deploying them into an internal service catalog for reuse.
+skill_description: Expert knowledge for Azure Managed Applications covering security/JIT
+  access, Azure Policy associations, managed identities (incl. cross-tenant), Key
+  Vault/CMK, createUiDefinition.json UI design, parameters, networking, webhooks,
+  StorageAccountSelector limits, external storage for large packages, and Bicep-based
+  definition publishing to service catalogs. Use when designing, securing, or deploying
+  Azure Managed Applications. Not for Azure App Service, Azure Functions, or generic
+  ARM templates without managed app packaging.
 ---
 # Azure Managed Applications Crawl Report
 

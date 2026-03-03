@@ -28,6 +28,12 @@ category_descriptions:
   deployment: 'Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform
     templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop
     operations for various APIs.'
+skill_description: Expert knowledge for Azure Cosmos DB covering Core (SQL), Mongo,
+  Cassandra, Gremlin, PostgreSQL APIs; SDK patterns, change feed, Kafka/Spark, vector
+  search/RAG, partitioning/indexing, RU/cost, autoscale, backup/PITR, Private Link/VNet,
+  RBAC/CMK, 429/404/503 errors, HTAP, IaC (ARM/Bicep/Terraform), and CI/CD deployment.
+  Use when designing, configuring, securing, or troubleshooting Cosmos DB workloads.
+  Not for Azure SQL, Azure Table Storage, or general PostgreSQL on VMs.
 ---
 # Azure Cosmos DB Crawl Report
 

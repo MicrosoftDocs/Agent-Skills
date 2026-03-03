@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: 'Limits, quotas, and prerequisites for Defender for Cloud features:
     free trials, data ingestion, APIs, DevOps, portal preview, alert export limits,
     and data collection extension changes.'
+skill_description: Expert knowledge for Azure Defender For Cloud covering integrations
+  (Sentinel/SIEM, ServiceNow, Power BI, AWS/GCP connectors, ARG queries, REST APIs),
+  configuration (plans, policies, exemptions, DevOps/containers), architecture (agentless
+  scanning, Log Analytics workspaces), troubleshooting alerts/connectors, security/RBAC,
+  best practices, deployment, and limits/quotas. Use when designing, configuring,
+  or troubleshooting Microsoft Defender for Cloud. Not for Microsoft Defender for
+  Endpoint, Defender for Identity, or generic Azure security centerless topics.
 ---
 # Azure Defender For Cloud Crawl Report
 

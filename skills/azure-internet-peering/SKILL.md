@@ -1,6 +1,6 @@
 ---
 name: azure-internet-peering
-description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications.
+description: Expert knowledge for Azure Internet Peering covering Azure Peering Service prefix registration validation, BGP routing path verification, route propagation checks, latency and packet loss analysis, and troubleshooting reachability/connectivity for ISP-provided prefixes. Use when diagnosing Azure Peering Service prefix issues, misrouted traffic, or unavailable prefixes advertised via Internet exchange partners. Not for Azure Virtual Network peering, ExpressRoute, or generic public Internet routing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

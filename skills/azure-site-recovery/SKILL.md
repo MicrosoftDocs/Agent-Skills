@@ -1,6 +1,6 @@
 ---
 name: azure-site-recovery
-description: Expert knowledge for Azure Site Recovery development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Site Recovery applications.
+description: Expert knowledge for Azure Site Recovery covering DR planning/sizing, Recovery Services vaults, VMware/Hyper‑V/physical server replication, Mobility service, process server tuning, failover/failback, networking/NSGs/TLS, RBAC, Bicep/ARM/Terraform/PowerShell automation, error codes (e.g., 151025, 78188), and migration from classic ASR. Use when designing, configuring, or troubleshooting Azure Site Recovery DR. Not for Azure Backup-only, Azure Migrate assessments, or general Azure VM operations.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

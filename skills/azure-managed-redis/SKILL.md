@@ -1,6 +1,6 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Redis applications.
+description: Expert knowledge for Azure Managed Redis covering .NET/Go/Node.js/Python clients, Entra ID auth, ASP.NET Core caching, cluster topology, geo-replication, persistence, Redis modules, TLS/Private Link, Azure Policy, ARM/Bicep deployment, scaling, maintenance windows, and troubleshooting timeouts/latency with redis-cli, metrics, and logs. Use when designing, configuring, securing, or debugging Azure Managed Redis workloads or migrating from Azure Cache for Redis.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

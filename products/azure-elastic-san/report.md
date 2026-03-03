@@ -24,6 +24,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Elastic SAN issues, including
     provisioning failures, connectivity/IO errors, performance problems, and typical
     error codes/logs.
+skill_description: Expert knowledge for Azure Elastic SAN covering sizing/architecture,
+  volume groups, iSCSI/CSI integration with AKS, Linux/Windows, performance tuning
+  (IOPS, throughput, latency), snapshots for backup/DR, CMK encryption, private endpoints,
+  limits/quotas, clustered SQL/Failover Cluster patterns, and error troubleshooting.
+  Use when designing, configuring, or debugging Azure Elastic SAN. Not for Azure NetApp
+  Files, Azure Disks, or Azure Files.
 ---
 # Azure Elastic SAN Crawl Report
 
@@ -34,6 +40,13 @@ category_descriptions:
 - **Fetch Failed**: 0
 - **Classified**: 21
 - **Unclassified**: 2
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 23
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
 ## Classification Statistics
 
@@ -48,6 +61,8 @@ category_descriptions:
 | security | 6 | 26.1% |
 | troubleshooting | 1 | 4.3% |
 | *(Unclassified)* | 2 | 8.7% |
+
+## Changes
 
 ## Classified Pages
 

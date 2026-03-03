@@ -17,6 +17,12 @@ category_descriptions:
   integrations: Automating MySQL-to-Azure Database for MySQL migrations using Azure
     Database Migration Service with PowerShell scripts, parameters, and end-to-end
     workflow examples.
+skill_description: Expert knowledge for Azure Database Migration service covering
+  security (VNet, private endpoints, TLS, RBAC for MySQL), decision making on DMS
+  scenarios, SSIS to Azure SQL/SQL MI deployment, limits/quotas for MySQL/PostgreSQL/MongoDB/SQL
+  MI, troubleshooting classic DMS connectivity errors, and PowerShell automation.
+  Use when planning or running Azure DMS migrations. Not for Azure Data Factory copy,
+  Azure Migrate, or general Azure SQL design.
 ---
 # Azure Database Migration service Crawl Report
 

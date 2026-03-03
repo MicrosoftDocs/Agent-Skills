@@ -1,6 +1,6 @@
 ---
 name: azure-iot
-description: Expert knowledge for Azure IoT development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure IoT applications.
+description: Expert knowledge for Azure IoT covering IoT Hub, DPS, MQTT, IoT Plug and Play, DTDL modeling, device/service SDK selection (C vs Embedded C, .NET, Node.js), industrial IoT reference architectures, secure Azure IoT Explorer use, and debugging embedded samples (connection/auth, build/deploy, logs). Use when designing, integrating, securing, or troubleshooting Azure IoT device-to-cloud solutions. Not for Azure Sphere, generic MQTT brokers, or non-IoT Azure services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: 'AKS limits, quotas, and scaling behavior: node/pod capacity, egress/NAT,
     load balancers, Istio performance, identities, SKUs/regions, and Kubernetes/Fleet
     version lifecycles and support.'
+skill_description: Expert knowledge for Azure Kubernetes Service (AKS) covering cluster
+  security/RBAC, Azure AD workload identity, CNI/overlay networking, ingress (AGIC/Nginx),
+  node pools/GPUs, autoscaling (HPA/KEDA), Istio/OSM, Fleet Manager, storage/CSI,
+  CI/CD, upgrades, and troubleshooting (kubelet, SNAT, DNS, Windows pods). Use when
+  designing, configuring, securing, scaling, or debugging AKS clusters and workloads.
+  Not for generic Kubernetes, Azure Container Apps, or Azure Red Hat OpenShift.
 ---
 # Azure Kubernetes Service (AKS) Crawl Report
 

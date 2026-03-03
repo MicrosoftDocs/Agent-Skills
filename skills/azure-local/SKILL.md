@@ -1,6 +1,6 @@
 ---
 name: azure-local
-description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Local applications.
+description: Expert knowledge for Azure Local covering security/compliance (RBAC, certificates, BitLocker, NSG/SDN, Defender, FedRAMP/HIPAA/ISO 27001/PCI DSS), deployment/updates, limits/quotas, DR patterns, Arc-enabled VMs, disconnected mode, SLB/NSG issues, PowerShell/ARM, and cost (Hybrid Benefit). Use when designing, deploying, or troubleshooting Azure Local clusters. Not for generic Azure Stack HCI or public Azure-only workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

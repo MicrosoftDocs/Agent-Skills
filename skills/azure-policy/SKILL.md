@@ -1,6 +1,6 @@
 ---
 name: azure-policy
-description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Policy applications.
+description: Expert knowledge for Azure Policy covering Machine/Guest Configuration authoring, assignment, ARM/Bicep/Terraform/REST deployment, storage accounts, managed identity, remediation tasks, compliance result analysis, security baselines (CIS/NIST/ISO/PCI/FedRAMP/HIPAA), initiatives, effects (DeployIfNotExists, AuditIfNotExists, Deny), policy rule logic, ARG queries, and migration from Azure Automation DSC/Automanage. Use when designing, securing, troubleshooting, or migrating Azure Policy/Machine Configuration. Not for Azure RBAC role design, Azure Blueprints, Defender for Cloud policy recommendations, or general governance without Azure Policy.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

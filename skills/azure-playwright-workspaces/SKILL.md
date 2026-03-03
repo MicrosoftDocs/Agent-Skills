@@ -1,6 +1,6 @@
 ---
 name: azure-playwright-workspaces
-description: Expert knowledge for Playwright Workspaces development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Playwright Workspaces applications.
+description: Expert knowledge for Playwright Workspaces in Microsoft Playwright Testing covering workspace best practices (latency, sharding, visual regression, private app access), security (access tokens, AAD/RBAC roles), decision making (team/project workspace design), limits & quotas (concurrency, free trial), configuration (service config file, metrics/logs), and troubleshooting run failures/AADSTS7000112. Use when designing, configuring, or debugging Microsoft Playwright Testing workspaces.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

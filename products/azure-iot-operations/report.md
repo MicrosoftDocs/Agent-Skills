@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure IoT Operations deployment and runtime
     issues, including known errors, health checks, logs, and step-by-step troubleshooting
     guidance.
+skill_description: Expert knowledge for Azure IoT Operations covering configuration
+  of dataflows/endpoints, MQTT broker settings, WebAssembly modules, OPC UA/MQTT/HTTP/SSE
+  integrations, Akri device discovery, security (TLS, certs, RBAC, Key Vault), Kubernetes
+  deployment/upgrade, sizing/HA patterns, limits/quotas, and troubleshooting logs/health
+  errors. Use when designing, securing, or debugging Azure IoT Operations edge solutions.
+  Not for Azure IoT Hub or legacy Azure IoT Edge.
 ---
 # Azure IoT Operations Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-vpn-gateway
-description: Expert knowledge for Azure VPN Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure VPN Gateway applications.
+description: Expert knowledge for Azure VPN Gateway covering S2S/P2S design, active-active HA topologies, VPN Gateway SKUs, IPsec/IKE policies, BGP, NAT, IPv6, forced tunneling, Entra ID/MFA, RADIUS/NPS, certificates, VNet-to-VNet, ExpressRoute S2S, client configs (Windows/macOS/Linux/iOS), and troubleshooting connection/throughput/auth errors. Use when designing, deploying, securing, or debugging Azure VPN Gateway. Not for Azure Virtual WAN, Azure Application Gateway, or generic on-prem VPN appliance setup without Azure.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

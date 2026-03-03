@@ -19,6 +19,12 @@ category_descriptions:
   troubleshooting: Using Copilot to diagnose and resolve Azure App Service/Functions
     issues and analyze Azure VM disk performance problems, including slow I/O and
     bottlenecks.
+skill_description: Expert knowledge for Azure Copilot covering cost‑efficient Azure
+  decisions (VM sizing, Marketplace offers, Load Balancer SKU, storage estate), infra-as-code
+  generation (Terraform, Bicep, AKS YAML, APIM policies, Azure CLI/PowerShell), Cosmos
+  DB conversation storage configuration, network architecture/routing/security design,
+  security/access policies, and troubleshooting App Service/Functions and VM disk
+  I/O. Use when designing, configuring, securing, or troubleshooting Azure with Copilot.
 ---
 # Azure Copilot Crawl Report
 

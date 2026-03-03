@@ -1,6 +1,6 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Resource Manager applications.
+description: Expert knowledge for Azure Resource Manager covering ARM/Bicep deployment (template specs, deployment stacks, scripts, cross-subscription/region moves), best-practice authoring/linting, CLI/PowerShell/REST patterns, configuration, BCPxxx error troubleshooting, limits/quotas, RBAC/security, and architecture decisions. Use when designing, deploying, or debugging ARM/Bicep templates and CI/CD. Not for Azure Policy authoring-only, Terraform, or general Azure portal how-to.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-portal
-description: Expert knowledge for Azure Portal development including troubleshooting, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Portal applications.
+description: Expert knowledge for Azure Portal security (tenant-wide portal policies, RBAC dashboard sharing, Intune MAM, Azure mobile app access), configuration (dashboard JSON/templates, keyboard shortcuts, URL allowlists, mobile alerts, Azure Policy), limits/quotas (browser/OS/device requirements), and troubleshooting (HAR, F12 network traces, console logs). Use when configuring, securing, or diagnosing Azure Portal UI/performance issues.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

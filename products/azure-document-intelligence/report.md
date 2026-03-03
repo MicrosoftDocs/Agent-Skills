@@ -24,6 +24,12 @@ category_descriptions:
     labeling tool.
   architecture-patterns: Guidance on designing disaster recovery, redundancy, and
     failover strategies for Azure AI Document Intelligence models and deployments.
+skill_description: Expert knowledge for Azure AI Document Intelligence covering SAS
+  tokens, data-at-rest encryption, managed identities, VNets, quotas/rate limits,
+  batch processing, SDK/REST AnalyzeDocument/Markdown, custom model training/composition,
+  containers/Docker deployment, DR/failover design, and latency/error troubleshooting.
+  Use when designing, securing, integrating, or debugging Document Intelligence solutions.
+  Not for Azure Cognitive Search, Azure OpenAI, or generic OCR libraries.
 ---
 # Azure AI Document Intelligence Crawl Report
 

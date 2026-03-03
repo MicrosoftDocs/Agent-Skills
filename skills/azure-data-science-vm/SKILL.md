@@ -1,6 +1,6 @@
 ---
 name: azure-data-science-vm
-description: Expert knowledge for Azure Data Science Virtual Machines development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Science Virtual Machines applications.
+description: Expert knowledge for Azure Data Science Virtual Machines covering DSVM security (managed identity, shared identity, Azure Key Vault secrets), architecture patterns (shared VM pools, team workflows, cost/resource management), configuration of preinstalled ML/deep learning stacks, deployment via Bicep/ARM templates, MLflow + Azure ML integration, troubleshooting GPU/driver/Jupyter/env issues, and Ubuntu 18.04→20.04 upgrade planning. Use when designing, deploying, securing, integrating, or fixing Azure DSVM-based data science environments. Not for Azure Machine Learning managed compute clusters, Azure Databricks, generic Azure VM images, or on-premises data science servers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

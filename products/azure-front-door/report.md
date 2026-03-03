@@ -27,6 +27,15 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and
     compression issues, config/runtime problems, and performance bottlenecks using
     logs, reference strings, and best practices.
+skill_description: Expert knowledge for Azure Front Door covering architecture (apex
+  domain, blue/green, Traffic Manager failover, static blob hosting), configuration
+  (caching, routing, rules engine, redirects/rewrites, custom domains, Private Link,
+  health probes), security (TLS/certs, WAF, DDoS, security headers), deployment (Bicep/ARM/Terraform,
+  CLI/PowerShell), limits/POP locations, pricing/migration (Classic to Standard/Premium),
+  and troubleshooting 4xx/5xx, CORS, compression, and performance issues. Use when
+  designing, configuring, securing, automating, or debugging Azure Front Door as a
+  global HTTP/HTTPS entry point. Not for Azure Application Gateway, Azure CDN (Verizon/Akamai),
+  Azure Traffic Manager alone, or generic on-prem load balancers.
 ---
 # Azure Front Door Crawl Report
 

@@ -14,6 +14,12 @@ category_descriptions:
     and design-time validation.
   deployment: Automating API registration into API Center via GitHub Actions and instructions
     for self-hosting/customizing the Azure API Center portal implementation.
+skill_description: Expert knowledge for Azure Api Center covering security (API key/OAuth2,
+  portal access via VS Code extension), configuration (ARM/Bicep/CLI deployment, portal
+  customization, API linting, metadata schemas, MCP/A2A agents, inventory), integrations
+  (API Management, Amazon API Gateway, Copilot Studio, Logic Apps, Teams), governance
+  best practices, and CI/CD deployment via GitHub Actions. Use when designing, securing,
+  integrating, or automating Azure Api Center.
 ---
 # Azure Api Center Crawl Report
 

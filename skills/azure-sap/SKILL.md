@@ -1,6 +1,6 @@
 ---
 name: azure-sap
-description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications.
+description: Expert knowledge for SAP HANA on Azure Large Instances covering configuration and deployment automation (ACSS, LaMa, ARM/Bicep), HANA scale-out, storage/HA/cluster setups (Pacemaker, STONITH, Azure Files SMB), security (Key Vault, RBAC, TLS, private endpoints, Entra ID), architecture/DR patterns (zones/regions, RISE connectivity), integrations (Azure Monitor for SAP, SAP Insights, Business One/BusinessObjects, NetWeaver), decision making (certified VM types, HANA tiering, data extraction, monitoring/analytics models, supported versions), best practices (HA/DR test automation, VIS checks), limits/quotas, and troubleshooting deployment errors, VM extension/VMSS failures, and SAP workload issues. Use when designing, securing, deploying, or troubleshooting SAP HANA on Azure Large Instances and related SAP on Azure landscapes. Not for generic Azure VMs, Azure SQL, or non-SAP HANA workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

@@ -1,6 +1,6 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications.
+description: Expert knowledge for Azure Health Data Services covering FHIR service, Azure API for FHIR migrations, DICOM, MedTech, de-identification APIs, Synapse/ADF/Logic Apps/Power BI integration, RBAC, AAD auth, Private Link, CMK encryption, $convert-data, bulk export/import, CARIN/Da Vinci profiles, performance limits, reindex jobs, and MedTech deployment errors. Use when designing, securing, deploying, or troubleshooting Azure Health Data Services workloads. Not for generic Azure healthcare on VMs, non-Azure FHIR servers, or Microsoft Cloud for Healthcare app configuration.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

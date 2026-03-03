@@ -22,6 +22,12 @@ category_descriptions:
   integrations: 'Automating Azure Cloud Services (extended support) with PowerShell:
     creating deployments, retrieving service details, and resetting or redeploying
     cloud service instances.'
+skill_description: Expert knowledge for Azure Cloud Services (classic and extended
+  support) covering Guest OS families/retirements, VM size limits/quotas, Key Vault
+  certificates, .csdef/.cscfg schemas, load balancer/RDP/diagnostics, autoscale rules,
+  migration from classic to Cloud Services (extended support), and PowerShell automation.
+  Use when designing, securing, migrating, or troubleshooting Azure Cloud Services
+  roles. Not for Azure App Service, Azure Functions, or VM Scale Sets workloads.
 ---
 # Azure Cloud Services Crawl Report
 

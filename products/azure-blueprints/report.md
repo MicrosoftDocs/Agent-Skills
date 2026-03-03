@@ -15,6 +15,13 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Blueprint creation/assignment
     errors, including policy, role, and resource lock issues, and interpreting error
     messages during deployment.
+skill_description: Expert knowledge for Azure Blueprints covering security/compliance
+  blueprints (PBMM, ISM PROTECTED, ISO 27001, SWIFT, UK OFFICIAL/NHS), locks, RBAC/Policy
+  mapping, blueprint parameters, artifacts, deployment order, and automation via Azure
+  CLI/PowerShell/REST, plus landing zone reference architectures and error troubleshooting
+  (assignment/lock/role/policy). Use when designing, automating, or debugging Azure
+  Blueprints. Not for Azure Policy-only, ARM/Bicep templates, or Azure DevOps pipelines
+  without Blueprints.
 ---
 # Azure Blueprints Crawl Report
 

@@ -6,6 +6,12 @@ category_descriptions:
     usage.'
   decision-making: Guidance on when and how to buy Reserved Instances or Savings Plans
     for Extended Zones, including cost considerations, eligibility, and purchase workflows.
+skill_description: Expert knowledge for Azure Extended Zones covering subscription
+  registration, Extended Zones access requests, custom Azure Policy definitions (allowed
+  locations, notAllowedLocations) to govern usage, and cost optimization via Reserved
+  Instances and Savings Plans (eligibility, commitment terms, purchase workflows).
+  Use when configuring Extended Zones access or deciding RI/Savings Plans for Extended
+  Zones capacity.
 ---
 # Azure Extended Zones Crawl Report
 

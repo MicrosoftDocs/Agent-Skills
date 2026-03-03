@@ -1,6 +1,6 @@
 ---
 name: azure-attestation
-description: Expert knowledge for Azure Attestation development including troubleshooting, best practices, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Attestation applications.
+description: Expert knowledge for Azure Attestation covering JWT attestation token validation, SGX/TPM quote verification, attestation policy grammar/versions, claim rules, policy signer certificates, Azure Policy governance, private endpoints, firewalls, managed identities, RBAC, Azure Monitor/Log Analytics schemas, and PowerShell/CLI deployment and troubleshooting of policy/quote validation errors. Use when configuring, securing, or debugging Azure Attestation providers and policies. Not for Azure Key Vault, Azure Confidential Ledger, or general Azure networking.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

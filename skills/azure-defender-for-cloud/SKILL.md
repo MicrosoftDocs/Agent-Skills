@@ -1,6 +1,6 @@
 ---
 name: azure-defender-for-cloud
-description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Cloud applications.
+description: Expert knowledge for Azure Defender For Cloud covering integrations (Sentinel/SIEM, ServiceNow, Power BI, AWS/GCP connectors, ARG queries, REST APIs), configuration (plans, policies, exemptions, DevOps/containers), architecture (agentless scanning, Log Analytics workspaces), troubleshooting alerts/connectors, security/RBAC, best practices, deployment, and limits/quotas. Use when designing, configuring, or troubleshooting Microsoft Defender for Cloud. Not for Microsoft Defender for Endpoint, Defender for Identity, or generic Azure security centerless topics.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

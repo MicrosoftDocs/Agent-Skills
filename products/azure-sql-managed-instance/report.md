@@ -28,6 +28,13 @@ category_descriptions:
   deployment: 'Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform),
     networking, region/subnet moves, start/stop, DR/migration, replication, and operation
     timing/cancellation.'
+skill_description: Expert knowledge for Azure SQL Managed Instance covering decision-making
+  vs Azure SQL Database/SQL VM, service tiers, vCores/DTUs, networking (VNet, private
+  endpoint), HA/DR, MI Link, migration from SQL Server/Oracle/Db2, performance tuning
+  (DMVs, XEvents), tempdb/time zone, backup/restore, security (AAD, TDE, TLS), and
+  troubleshooting (connectivity, log full, XTP). Use when designing, deploying, configuring,
+  or debugging Azure SQL Managed Instance environments. Not for Azure SQL Database,
+  SQL Server on VMs, or other Azure databases.
 ---
 # Azure SQL Managed Instance Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Grid applications.
+description: Expert knowledge for Azure Event Grid covering topics/namespaces, event subscriptions, filters, dead-lettering, retries, MQTT broker/security, RBAC, managed identities, private endpoints, TLS, Azure Policy, schema mapping, HTTP/webhooks, Graph/M365, Auth0, Arc-enabled Kubernetes extension, limits/quotas, and troubleshooting (e.g., validation errors, 4xx/5xx). Use when designing, securing, integrating, deploying, or debugging Azure Event Grid and MQTT-based workflows. Not for Azure Service Bus, Event Hubs, or Logic Apps orchestration.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

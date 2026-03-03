@@ -18,6 +18,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Microsoft.Network resource provisioning
     failures in Azure, including common error patterns, causes, and step-by-step remediation
     guidance.
+skill_description: Expert knowledge for Azure Networking covering VNet design, hub-and-spoke,
+  region latency, Azure Firewall/NSG/UDR routing, VPN/ExpressRoute gateways, Zero
+  Trust VNets, Azure Policy for network compliance, Accelerated Networking for NVAs/VMs,
+  Resource Graph queries, and Microsoft.Network provisioning errors. Use when planning,
+  securing, optimizing, or troubleshooting Azure network infrastructure.
 ---
 # Azure Networking Crawl Report
 

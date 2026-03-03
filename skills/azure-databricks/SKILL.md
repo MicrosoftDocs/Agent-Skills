@@ -1,6 +1,6 @@
 ---
 name: azure-databricks
-description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Databricks applications.
+description: Expert knowledge for Azure Databricks security, Unity Catalog, Delta Lake, Lakehouse, Lakebase, Lakehouse Federation, cluster & SQL warehouse config, jobs/pipelines, ML/GenAI, Vector Search, model serving, Terraform/ARM/Bicep deployment, and error troubleshooting (e.g., CLUSTER_STARTUP_FAILED, SQLSTATE). Use when designing, configuring, integrating, or debugging Azure Databricks workloads. Not for Azure Synapse, Azure HDInsight, or generic Spark without Databricks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

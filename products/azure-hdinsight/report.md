@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: 'Guidance on HDInsight capacity limits: log size/retention, supported
     cluster node sizes, external metastore constraints, and requesting/managing CPU
     core quota increases.'
+skill_description: Expert knowledge for Azure HDInsight covering cluster configuration/tuning
+  (Ambari, Hive, Spark, HBase, Kafka, YARN, autoscale, VNet/NSG, SSH/Jupyter), integrations
+  (Sqoop, REST/CLI, Power BI, Synapse, Cosmos DB), architecture/HA/DR, ARM/PowerShell
+  deployment, security (Entra ID, Ranger, TLS), troubleshooting job failures and error
+  codes, limits/quotas. Use when designing, operating, or migrating HDInsight clusters.
+  Not for Azure Databricks, Synapse Spark, or generic Hadoop on VMs.
 ---
 # Azure HDInsight Crawl Report
 

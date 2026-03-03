@@ -1,6 +1,6 @@
 ---
 name: azure-advisor
-description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications.
+description: Expert knowledge for Azure Advisor covering configuration (alerts via portal/ARM/Bicep, email digests, tag filters, workbooks), best practices (cost, performance, reliability, operational excellence, bulk fixes, savings export), Resource Graph/Kusto integrations, decision-making, RBAC security, and limits/sovereign clouds. Use when optimizing Azure workloads with Advisor recommendations. Not for Azure Monitor, Cost Management, or Security Center without Advisor context.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

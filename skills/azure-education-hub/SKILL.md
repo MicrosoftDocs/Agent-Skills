@@ -1,6 +1,6 @@
 ---
 name: azure-education-hub
-description: Expert knowledge for Azure Education Hub development including troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Education Hub applications.
+description: Expert knowledge for Azure Education Hub covering Azure for Students free credit limits, yearly quota renewals, spending caps, usage monitoring in Azure portal/Cost Management, and troubleshooting Azure Dev Tools for Teaching sign-in issues (account mismatch, AAD login loops, access denied). Use when managing student quotas or resolving Azure Dev Tools for Teaching login/access problems. Not for general Azure subscription billing or non-education offers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -14,6 +14,13 @@ category_descriptions:
     regional/HA behavior, and throttling, quotas, and usage constraints for experiments'
   integrations: Using CLI/REST to create and manage Chaos Studio experiments and routing
     Chaos Agent telemetry to Application Insights for monitoring
+skill_description: Expert knowledge for Chaos Studio covering security (RBAC roles,
+  managed identities, CMK encryption, Private Link, VNet injection, AKS auth), configuration
+  (ARM/Bicep experiment JSON, Azure Policy onboarding, Azure Monitor/Workbook), troubleshooting
+  Chaos Agent install/health and VM agent errors, limits/quotas, and CLI/REST integrations
+  with Application Insights. Use when designing, securing, or debugging Azure Chaos
+  Studio experiments. Not for Azure Load Testing, Azure Monitor load tests, or generic
+  performance testing.
 ---
 # Chaos Studio Crawl Report
 

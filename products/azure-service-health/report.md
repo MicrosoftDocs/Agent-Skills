@@ -15,6 +15,13 @@ category_descriptions:
     rules at scale across subscriptions and resource groups
   limits-quotas: Details on how long Azure Service Health notifications are kept,
     their lifecycle stages, and retention behavior for different event types
+skill_description: Expert knowledge for Azure Service Health covering Service/Resource
+  Health APIs, Resource Graph queries, webhooks, RBAC for security advisories, alert
+  rules via portal/ARM/Bicep/PowerShell, VM Resource Health degraded/unavailable states,
+  Azure Policy-based alert deployment, and event retention/notification lifecycle.
+  Use when integrating, configuring, or troubleshooting Azure Service Health alerts
+  and incidents. Not for Azure Monitor metrics/logs, Application Insights, or general
+  Azure status page.
 ---
 # Azure Service Health Crawl Report
 

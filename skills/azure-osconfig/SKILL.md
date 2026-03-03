@@ -1,6 +1,6 @@
 ---
 name: azure-osconfig
-description: Expert knowledge for Azure Osconfig development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Osconfig applications.
+description: Expert knowledge for Azure Osconfig covering Azure IoT OSConfig integrations, custom command execution, Linux networking/firewall/package management, hostname/reboot control, hardware/OS inventory, SSH Posture Control for sshd_config, OSConfig breaking changes, agent health/status, IoT Hub connectivity/logs, and Windows App Control for Business and Windows Server 2025 security baselines. Use when configuring or troubleshooting Azure IoT OSConfig on Linux/Windows devices. Not for generic Azure VM management, Azure Policy, or Microsoft Intune security baselines.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

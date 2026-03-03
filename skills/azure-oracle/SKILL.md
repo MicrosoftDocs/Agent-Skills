@@ -1,6 +1,6 @@
 ---
 name: azure-oracle
-description: Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Oracle applications.
+description: Expert knowledge for Azure Oracle covering Oracle Database@Azure troubleshooting (connectivity, ORA- errors, performance, deployment, configuration, platform limits), TDE with Azure Key Vault (CMK, key rotation), onboarding and VNet/subnet/routing design, and Exadata log pipelines to Azure Monitor/Sentinel. Use when designing, securing, or debugging Oracle Database@Azure. Not for Azure SQL, Oracle on IaaS VMs, or on‑prem Oracle.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

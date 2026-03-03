@@ -1,6 +1,6 @@
 ---
 name: azure-ai-foundry-local
-description: Expert knowledge for Azure AI Foundry Local development including troubleshooting, best practices, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Foundry Local applications.
+description: Expert knowledge for Azure AI Foundry Local covering installation/configuration, Olive model compilation, Foundry Local CLI flags, REST/SDK and OpenAI-compatible clients, LangChain/Open WebUI integration, tool calling, transcription, Model Catalog API, security, performance tuning, and Windows Server 2025 runtime errors. Use when deploying, integrating, or troubleshooting Azure AI Foundry Local. Not for Azure OpenAI service or Azure AI Studio cloud workspaces.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

@@ -28,6 +28,15 @@ category_descriptions:
   limits-quotas: Service Bus entity size and count limits, connection and throughput
     quotas, and how throttling works, including thresholds, causes, and mitigation
     strategies.
+skill_description: Expert knowledge for Azure Service Bus security (Entra ID, SAS,
+  managed identity, TLS, Private Link, firewall), deployment (ARM/Bicep, Premium messaging
+  units), configuration (queues, topics, subscriptions, sessions, filters, partitioning),
+  integrations (JMS 1.1/2.0, AMQP, RabbitMQ, Functions, Logic Apps), best practices
+  (TTL, duplicate detection, dead-letter, locks, prefetch), troubleshooting (AMQP
+  errors, throttling, SDK/ARM failures), limits/quotas, and architecture (geo-disaster
+  recovery, autoforwarding, multi-namespace, NServiceBus). Use when designing, configuring,
+  securing, integrating, scaling, or debugging Azure Service Bus messaging workloads.
+  Not for Azure Event Hubs, Azure Storage Queues, or Azure Queue Storage.
 ---
 # Azure Service Bus Crawl Report
 

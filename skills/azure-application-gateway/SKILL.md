@@ -1,6 +1,6 @@
 ---
 name: azure-application-gateway
-description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Application Gateway applications.
+description: Expert knowledge for Azure Application Gateway (classic, v1/v2, App Gateway for Containers) covering listeners, HTTP/HTTPS routing, probes, health, URL/headers rewrite, redirects, session affinity, autoscaling, zone redundancy, WAF, TLS/SSL/mTLS, Key Vault certs, AGIC/AKS add-on, 502/backend health errors, and migration v1→v2/AGIC→Containers. Use when designing, deploying, securing, or troubleshooting Azure Application Gateway. Not for Azure Front Door, Azure Traffic Manager, or generic VNet/NVA load balancers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

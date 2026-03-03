@@ -1,6 +1,6 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Firewall applications.
+description: Expert knowledge for Azure Firewall SKUs (Basic/Standard/Premium), policy design, TLS inspection, DNAT/SNAT, IP Groups, DNS proxy, threat intel, Sentinel integration, hub-and-spoke/forced tunneling, NAT Gateway SNAT scaling, TCP idle timeout, ARM/Bicep/Terraform deployment, and SFTP to Azure Storage. Use when designing, securing, tuning, or troubleshooting Azure Firewall. Not for Azure Application Gateway, NSG, or WAF.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

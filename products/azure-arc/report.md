@@ -28,6 +28,12 @@ category_descriptions:
   integrations: 'Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK
     usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel,
     Terraform, and Event Grid integration.'
+skill_description: Expert knowledge for Azure Arc security, architecture, deployment,
+  configuration, limits, and troubleshooting for Arc-enabled Kubernetes, servers,
+  SQL Managed Instance, Edge RAG, resource bridge, SCVMM, and vSphere; RBAC/Entra
+  ID, Private Link, GitOps, extensions, ESU, ARG, Terraform, Sentinel. Use when planning,
+  securing, automating, or debugging Azure Arc–enabled infrastructure. Not for native
+  Azure-only (non-Arc) resources.
 ---
 # Azure Arc Crawl Report
 
@@ -41,8 +47,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 414
+- **Updated Pages**: 0
+- **Unchanged**: 415
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -62,11 +68,6 @@ category_descriptions:
 | *(Unclassified)* | 146 | 35.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview)
-  - Updated: 2026-01-17T06:02:00.000Z → 2026-03-03T06:02:00.000Z
 
 ## Classified Pages
 

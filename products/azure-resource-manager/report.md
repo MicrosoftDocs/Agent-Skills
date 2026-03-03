@@ -28,6 +28,12 @@ category_descriptions:
   architecture-patterns: Bicep architecture patterns for reusable configs, flexible
     parameters, deterministic name generation, and sharing variables across templates
     for scalable ARM deployments.
+skill_description: Expert knowledge for Azure Resource Manager covering ARM/Bicep
+  deployment (template specs, deployment stacks, scripts, cross-subscription/region
+  moves), best-practice authoring/linting, CLI/PowerShell/REST patterns, configuration,
+  BCPxxx error troubleshooting, limits/quotas, RBAC/security, and architecture decisions.
+  Use when designing, deploying, or debugging ARM/Bicep templates and CI/CD. Not for
+  Azure Policy authoring-only, Terraform, or general Azure portal how-to.
 ---
 # Azure Resource Manager Crawl Report
 

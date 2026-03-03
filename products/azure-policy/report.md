@@ -21,6 +21,14 @@ category_descriptions:
   integrations: Using Azure Resource Graph to query Azure Policy compliance data and
     guest configuration state across resources for reporting, auditing, and large-scale
     policy analysis
+skill_description: Expert knowledge for Azure Policy covering Machine/Guest Configuration
+  authoring, assignment, ARM/Bicep/Terraform/REST deployment, storage accounts, managed
+  identity, remediation tasks, compliance result analysis, security baselines (CIS/NIST/ISO/PCI/FedRAMP/HIPAA),
+  initiatives, effects (DeployIfNotExists, AuditIfNotExists, Deny), policy rule logic,
+  ARG queries, and migration from Azure Automation DSC/Automanage. Use when designing,
+  securing, troubleshooting, or migrating Azure Policy/Machine Configuration. Not
+  for Azure RBAC role design, Azure Blueprints, Defender for Cloud policy recommendations,
+  or general governance without Azure Policy.
 ---
 # Azure Policy Crawl Report
 

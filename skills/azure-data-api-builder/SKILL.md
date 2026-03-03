@@ -1,6 +1,6 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Api Builder applications.
+description: Expert knowledge for Azure Data Api Builder covering dab-config.json, CLI config, entities/relationships, Cosmos DB/Azure SQL sources, REST/GraphQL ($filter, $select, $first), upserts with If-Match/ETag, EasyAuth/JWT/Entra ID roles, RLS, deployment to Container Apps/Instances, SQL MCP Server, limits/quotas, and common error troubleshooting. Use when designing, securing, deploying, or debugging Data API builder and SQL MCP-based data APIs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -19,6 +19,12 @@ category_descriptions:
   limits-quotas: Supported file formats, data types, and size/usage limits for datasets
     and computations in Planetary Computer Pro, including quotas that affect how you
     process and store data.
+skill_description: Expert knowledge for Microsoft Planetary Computer Pro covering
+  STAC collections/items APIs, bulk GeoCatalog ingestion, SAS token generation, Entra
+  ID auth, RBAC, managed identities, cross-tenant access, collection config (mosaics,
+  tiles, colormaps, Explorer filters, US Gov endpoints), error codes, and limits/quotas.
+  Use when integrating with web apps/QGIS/ArcGIS, choosing access patterns, or troubleshooting
+  ingestion. Not for classic Microsoft Planetary Computer or generic Azure Storage/Maps.
 ---
 # Microsoft Planetary Computer Pro Crawl Report
 

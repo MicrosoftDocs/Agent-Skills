@@ -1,6 +1,6 @@
 ---
 name: azure-relay
-description: Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Relay applications.
+description: Expert knowledge for Azure Relay covering Hybrid Connections, WCF relays, Entra ID and SAS authentication, managed identities, IP firewall, virtual network rules, Private Link Service, WebSockets in .NET/Node.js, port/protocol requirements, and errors like RelayNotFound/QuotaExceeded/AuthorizationFailed. Use when designing secure connectivity, coding clients, or troubleshooting Azure Relay endpoints. Not for Azure Service Bus, API Management, or Application Gateway.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -27,6 +27,13 @@ category_descriptions:
   deployment: Automating unattended/silent deployment of Azure Backup Server v4, including
     required parameters, scripts, and configuration steps for large-scale or repeatable
     installs.
+skill_description: Expert knowledge for Azure Backup covering Recovery Services vaults,
+  Backup center, VM/AKS/SQL/SAP HANA/PostgreSQL/File/Blob/Disk/Data Lake backups,
+  policies, offline seeding, cost estimation, support matrices, soft delete/immutable
+  vaults, MUA/Resource Guard, RBAC, MARS/MABS/DPM, deployment automation, and CLI/PowerShell/REST/Logic
+  Apps patterns. Use when designing, configuring, securing, or troubleshooting Azure
+  Backup. Not for Azure Site Recovery, Azure Storage-only scenarios, or generic Azure
+  monitoring.
 ---
 # Azure Backup Crawl Report
 

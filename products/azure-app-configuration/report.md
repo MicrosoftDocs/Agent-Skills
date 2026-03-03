@@ -23,6 +23,13 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure App Configuration network access issues,
     including firewall/VNet restrictions, private endpoints, DNS, and connectivity
     errors from client apps.
+skill_description: Expert knowledge for Azure App Configuration covering CI/CD deployment
+  (export/import, snapshots, Azure Pipelines, GitHub Actions, Helm/Kubernetes), client
+  libraries and Spring Boot v6 upgrade, .NET/Go/JS/Python/Spring/AKS/AI integrations,
+  feature flags, geo-replication, private endpoints, managed identity/RBAC, REST API
+  limits/throttling, and network/DNS/private endpoint troubleshooting. Use when designing,
+  securing, integrating, or debugging Azure App Configuration stores. Not for Azure
+  Key Vault secrets, Azure App Service app settings, or Azure Front Door configuration.
 ---
 # Azure App Configuration Crawl Report
 

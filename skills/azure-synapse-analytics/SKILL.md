@@ -1,6 +1,6 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Synapse Analytics applications.
+description: Expert knowledge for Azure Synapse Analytics covering workspace deployment (ARM/Bicep, CI/CD), dedicated/serverless SQL pools, Spark pools, RBAC, private endpoints, data exfiltration protection, workload management, ELT/PolyBase, Delta Lake, Synapse Link, query performance (DWU, distribution, stats), and common errors/timeouts. Use when designing, securing, tuning, or troubleshooting Synapse workspaces, SQL/Spark, or migrations to Synapse. Not for Azure SQL Database, Azure Databricks, or Azure Data Factory-only pipelines.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

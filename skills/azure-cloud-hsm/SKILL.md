@@ -1,6 +1,6 @@
 ---
 name: azure-cloud-hsm
-description: Expert knowledge for Azure Cloud Hsm development including troubleshooting, best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Cloud Hsm applications.
+description: Expert knowledge for Azure Cloud Hsm covering security hardening, RBAC, private endpoints, cluster configuration, backup/restore, audit/operation logs, PKCS#11 integration, key lifecycle management, supported algorithms/key sizes, capacity limits, and troubleshooting connectivity, performance, and key operation errors. Use when designing, securing, or debugging Azure Cloud HSM clusters and integrations. Not for Azure Key Vault (standard or Managed HSM).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

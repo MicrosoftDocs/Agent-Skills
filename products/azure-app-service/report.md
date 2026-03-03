@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: App Service resource limits (CPU, memory, connections), quota types,
     how they’re measured/monitored, and how to use metrics to detect and avoid hitting
     plan or app quotas.
+skill_description: Expert knowledge for Azure App Service covering plan/tier selection,
+  Windows→Linux migration, VNet integration, custom domains/TLS, managed identity,
+  Entra ID auth, OIDC/social login, deployment slots, ASE, Docker containers, GitHub
+  Actions/Azure Pipelines CI/CD, ARM/Bicep/Terraform, scaling, diagnostics, quotas,
+  and WordPress on App Service. Use when designing, configuring, securing, deploying,
+  or troubleshooting Azure App Service web apps/APIs. Not for Azure Functions-only
+  apps, Azure Static Web Apps, AKS, or general VM/IaaS hosting.
 ---
 # Azure App Service Crawl Report
 
@@ -41,8 +48,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 246
+- **Updated Pages**: 0
+- **Unchanged**: 247
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -62,11 +69,6 @@ category_descriptions:
 | *(Unclassified)* | 86 | 34.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration)
-  - Updated: 2025-03-25T05:36:00.000Z → 2026-03-03T06:13:00.000Z
 
 ## Classified Pages
 

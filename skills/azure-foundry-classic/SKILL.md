@@ -1,6 +1,6 @@
 ---
 name: azure-foundry-classic
-description: Expert knowledge for Azure Foundry Classic development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Foundry Classic applications.
+description: Expert knowledge for Azure Foundry Classic covering hub/agent configuration, Prompt Flow tools, Azure OpenAI deployments (GPT-4, o-series), RAG/indexing, embeddings, Realtime/Assistants, RBAC, private endpoints, quotas/rate limits, Bicep/Terraform/CI-CD, and troubleshooting compute sessions, fine-tuning, and 429/5xx errors. Use when designing, securing, integrating, or debugging Foundry Classic solutions with Azure OpenAI.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

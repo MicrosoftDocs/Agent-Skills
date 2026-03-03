@@ -15,6 +15,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Azure SRE Agent deployment, configuration,
     connectivity, and runtime issues, including common failure patterns and recommended
     fixes.
+skill_description: Expert knowledge for Azure Sre Agent covering security/roles/RBAC,
+  run modes and consent, data residency/privacy, billing model and metering, cost
+  optimization, configuring code interpreter, memory, scheduled tasks, subagents and
+  multi-agent workflows, Git/MCP/Python tool integrations, and troubleshooting deployment,
+  connectivity, and runtime errors. Use when designing, configuring, integrating,
+  or debugging Azure Sre Agent in production.
 ---
 # Azure Sre Agent Crawl Report
 

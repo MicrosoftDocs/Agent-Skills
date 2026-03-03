@@ -27,6 +27,14 @@ category_descriptions:
   integrations: Programmatic management of ExpressRoute circuits using PowerShell,
     Azure CLI, Automation, and Logic Apps, including creation, updates, and automated
     route-count alerting.
+skill_description: Expert knowledge for Azure ExpressRoute covering circuit limits/quotas,
+  bandwidth/QoS, FastPath, gateway SKUs/scale, BGP communities, private/Microsoft
+  peering, IPv4/IPv6, Global Reach, HA/DR and dual-circuit design, IPsec/MACsec encryption,
+  S2S VPN coexistence, ARM/Bicep/Terraform deployment, PowerShell/CLI config, ARP/BGP
+  troubleshooting, and cost optimization. Use when designing, deploying, securing,
+  automating, or troubleshooting Azure ExpressRoute connectivity. Not for Azure VPN
+  Gateway-only setups, Azure Virtual WAN, general internet VPN, or Azure Front Door/Traffic
+  Manager routing.
 ---
 # Azure ExpressRoute Crawl Report
 

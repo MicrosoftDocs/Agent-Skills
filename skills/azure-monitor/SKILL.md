@@ -1,6 +1,6 @@
 ---
 name: azure-monitor
-description: Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Monitor applications.
+description: Expert knowledge for Azure Monitor troubleshooting, configuration, and design: AMA/Log Analytics agents, DCRs, ingestion errors, KQL, metrics/alerts/autoscale, workspaces/Private Link, Application Insights/OpenTelemetry, Prometheus/PromQL, VM/Kubernetes monitoring, limits/quotas, and Grafana/ITSM integrations. Use when planning, deploying, optimizing, or debugging Azure Monitor. Not for Azure Sentinel/Microsoft Defender for Cloud.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

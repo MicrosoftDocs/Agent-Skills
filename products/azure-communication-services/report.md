@@ -28,6 +28,15 @@ category_descriptions:
   architecture-patterns: Designing scalable contact center solutions with ACS and
     patterns for integrating ACS with ExpressRoute for secure, private connectivity
     and network architecture.
+skill_description: Expert knowledge for Azure Communication Services covering configuration,
+  logging/metrics, Teams interop, domains, routing, UI library, SMS/email compliance;
+  security, identities, HMAC, encryption, emergency calling; PSTN/phone numbers, pricing,
+  gov cloud, Twilio migration; limits/quotas/regions; troubleshooting calling/SMS/email/Teams/SDK
+  (UFD, diagnostics); best practices; integration with bots, Job Router, WhatsApp,
+  Azure OpenAI; deployment and contact center architecture. Use when designing, configuring,
+  securing, integrating, or troubleshooting Azure Communication Services workloads.
+  Not for generic Azure networking, Azure Bot Service without ACS, or non-Azure CPaaS
+  platforms.
 ---
 # Azure Communication Services Crawl Report
 

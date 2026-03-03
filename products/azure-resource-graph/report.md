@@ -17,6 +17,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Resource Graph issues with alerts,
     query syntax/runtime errors, and Power BI connector connectivity, auth, and data
     refresh problems.
+skill_description: Expert knowledge for Azure Resource Graph covering Kusto-based
+  queries, CLI/PowerShell/REST/Power BI/Logic Apps integrations, shared queries, alerts/automation,
+  request limits, throttling, pagination, GET/LIST vs query API decisions, Bicep/ARM
+  deployment of queries, and troubleshooting syntax/runtime errors and Power BI connector
+  auth/refresh. Use when querying Azure resources at scale or diagnosing ARG query/limit
+  issues. Not for Azure Monitor Logs, Azure Policy, or general ARM template design.
 ---
 # Azure Resource Graph Crawl Report
 

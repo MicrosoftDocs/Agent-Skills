@@ -24,6 +24,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Content Understanding issues, including
     model errors, data ingestion problems, configuration mistakes, and troubleshooting
     steps for failed analyses.
+skill_description: Expert knowledge for Azure AI services covering Azure AI Foundry
+  security (Entra ID auth, API keys, Key Vault, CMK encryption, VNet, DLP, policy),
+  limits/quotas, container/ACI deployments, endpoint/config/analyzer setup, pricing-tier
+  decisions, REST/.NET integrations, best practices, and troubleshooting Content Understanding/Moderator.
+  Use when designing, configuring, or debugging Azure AI Foundry/Content Understanding
+  solutions. Not for generic Azure OpenAI or non-Azure AI platforms.
 ---
 # Azure AI services Crawl Report
 

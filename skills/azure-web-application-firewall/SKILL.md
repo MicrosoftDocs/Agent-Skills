@@ -1,6 +1,6 @@
 ---
 name: azure-web-application-firewall
-description: Expert knowledge for Azure Web Application Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Web Application Firewall applications.
+description: Expert knowledge for Azure Web Application Firewall on Azure Front Door and Application Gateway, including WAF policies, OWASP/managed rulesets, custom rules, rate limiting, geo/IP filters, bot protection/CAPTCHA, exclusions, request body/file size limits, logging to Sentinel/Log Analytics, Bicep/ARM/Terraform deployment, and migration from legacy configs. Use when designing, configuring, tuning, or troubleshooting Azure WAF. Not for generic Azure networking or non-WAF security services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

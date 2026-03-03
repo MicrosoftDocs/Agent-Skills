@@ -1,6 +1,6 @@
 ---
 name: azure-key-vault
-description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Key Vault applications.
+description: Expert knowledge for Azure Key Vault and Azure Managed HSM: troubleshooting access policy/RBAC failures, 403/429 REST errors, Private Link/firewall, certificate/DigiCert issues; configuring keys/secrets, key rotation, secure key release, soft delete, backup/restore, BYOK, key attestation; coding with client libraries, MSI, Event Grid/Logic Apps; deployment via ARM/Bicep/Terraform/CLI/PowerShell; limits/throttling. Use when designing, securing, integrating, or debugging Azure Key Vault/Managed HSM workloads. Not for Azure Storage encryption, SQL TDE, or generic TLS/PKI without Key Vault.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

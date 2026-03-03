@@ -1,6 +1,6 @@
 ---
 name: azure-data-share
-description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Data Share applications.
+description: Expert knowledge for Azure Data Share covering cost estimation (shares, snapshots, storage), RBAC roles/permissions, invitations/recipients, common invitation errors, cross-region deployment/DR, dataset mapping, SQL/Synapse/Blob/Data Lake integration, monitoring, and automation via PowerShell/ARM/Bicep. Use when designing, securing, configuring, or troubleshooting Azure Data Share. Not for Azure Data Factory, Azure Data Lake Storage, or Azure File Shares.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

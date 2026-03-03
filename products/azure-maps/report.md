@@ -24,6 +24,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Maps Weather API issues, including
     authentication, request/response errors, throttling, and configuration or usage
     problems.
+skill_description: Expert knowledge for Azure Maps covering Web SDK/REST integration,
+  JavaScript/TypeScript patterns, layers/tiles, Spatial IO, routing/search/traffic/weather
+  APIs, Entra ID/SAS auth, Power BI visual integration, limits/quotas/coverage, pricing
+  tiers, migration from Bing/Google Maps, and Weather API errors/throttling. Use when
+  designing, securing, configuring, or troubleshooting Azure Maps solutions. Not for
+  Azure Location Based Services or generic GIS tools.
 ---
 # Azure Maps Crawl Report
 

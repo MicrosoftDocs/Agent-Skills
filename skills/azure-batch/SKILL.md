@@ -1,6 +1,6 @@
 ---
 name: azure-batch
-description: Expert knowledge for Azure Batch development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Batch applications.
+description: Expert knowledge for Azure Batch security (Entra ID, managed identity, RBAC, Key Vault, private endpoints), pool/task config (autoscale, images, containers, networking), CI/CD deployment, SDK/CLI patterns, quotas, performance tuning, and error codes. Use when designing, optimizing, or troubleshooting Azure Batch jobs/pools. Not for Azure Data Factory pipelines, Azure Functions, or AKS batch-style workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

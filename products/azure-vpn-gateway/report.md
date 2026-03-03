@@ -27,6 +27,13 @@ category_descriptions:
   integrations: 'Configuring Azure VPN Gateway with on-prem devices and services:
     NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN
     connectivity with AWS.'
+skill_description: Expert knowledge for Azure VPN Gateway covering S2S/P2S design,
+  active-active HA topologies, VPN Gateway SKUs, IPsec/IKE policies, BGP, NAT, IPv6,
+  forced tunneling, Entra ID/MFA, RADIUS/NPS, certificates, VNet-to-VNet, ExpressRoute
+  S2S, client configs (Windows/macOS/Linux/iOS), and troubleshooting connection/throughput/auth
+  errors. Use when designing, deploying, securing, or debugging Azure VPN Gateway.
+  Not for Azure Virtual WAN, Azure Application Gateway, or generic on-prem VPN appliance
+  setup without Azure.
 ---
 # Azure VPN Gateway Crawl Report
 
@@ -42,7 +49,7 @@ category_descriptions:
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 118
-- **Deleted Pages**: 11
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -61,20 +68,6 @@ category_descriptions:
 | *(Unclassified)* | 14 | 11.9% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Report Azure VPN Client problems - Feedback Hub~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/feedback-hub-azure-vpn-client)
-- ~~Troubleshoot the Azure VPN Client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-azure-vpn-client)
-- ~~Troubleshoot digital certificate authentication~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-digital-certificate-authentication)
-- ~~Troubleshoot using diagnostic logs~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
-- ~~Troubleshoot VPN Gateway~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot)
-- ~~macOS - native VPN client connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
-- ~~Site-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
-- ~~Site-to-site connection disconnects intermittently~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently)
-- ~~Site-to-site error codes and solutions~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-error-codes)
-- ~~Point-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
-- ~~Validate VPN throughput to a VNet~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet)
 
 ## Classified Pages
 

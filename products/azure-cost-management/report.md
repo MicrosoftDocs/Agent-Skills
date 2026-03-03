@@ -25,6 +25,12 @@ category_descriptions:
   limits-quotas: 'Managing Azure cost limits and quotas: free tier usage, spending
     limits, data timing/latency, regional fees, subscription constraints, savings
     plans, and billing account policies.'
+skill_description: Expert knowledge for Azure Cost Management covering billing account
+  configuration (EA/MCA/MPA), budgets, tags, exports, reservations, savings plans,
+  RBAC billing roles, cost allocation, Power BI/REST API automation, subscription
+  limits/quotas, and troubleshooting disabled subscriptions, invoice issues, and low
+  reservation utilization. Use when optimizing Azure spend, securing billing data,
+  or diagnosing Azure billing/subscription problems.
 ---
 # Azure Cost Management Crawl Report
 

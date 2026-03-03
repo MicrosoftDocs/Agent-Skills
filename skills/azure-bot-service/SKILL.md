@@ -1,6 +1,6 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Bot Service applications.
+description: Expert knowledge for Azure AI Bot Service covering bot configuration (dialogs, memory, LG/LU/QnA, Application Insights, Web Chat, Direct Line, skills, channels), security (OAuth/SSO, Direct Line secrets, VNET), integrations (Teams, SMS, REST, TTS), architecture, troubleshooting (Emulator, Dev Tunnels, HTTP 500, auth), limits, deployment (ARM/CLI, CI/CD). Use when designing, securing, integrating, or debugging Azure Bot Service bots. Not for Azure OpenAI or generic Azure App Service web APIs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

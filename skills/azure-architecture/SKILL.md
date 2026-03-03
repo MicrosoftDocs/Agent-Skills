@@ -1,6 +1,6 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
+description: Expert knowledge for Azure Architecture across example workloads, reference architectures, design patterns, technology choices, best practices, solution ideas, anti-patterns, migration guides, and architecture styles for Azure/Fabric (AKS, Event Hubs, VNet, APIM, Cosmos DB, Service Bus, IoT, SAP, MLOps, generative AI). Use when designing or modernizing end-to-end Azure solutions, choosing services, or fixing scalability/performance issues.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

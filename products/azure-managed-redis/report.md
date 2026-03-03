@@ -23,6 +23,12 @@ category_descriptions:
   decision-making: Guidance on planning Azure Managed Redis deployments, choosing
     migration approaches from Azure Cache for Redis, and selecting/managing cost-saving
     reservations.
+skill_description: Expert knowledge for Azure Managed Redis covering .NET/Go/Node.js/Python
+  clients, Entra ID auth, ASP.NET Core caching, cluster topology, geo-replication,
+  persistence, Redis modules, TLS/Private Link, Azure Policy, ARM/Bicep deployment,
+  scaling, maintenance windows, and troubleshooting timeouts/latency with redis-cli,
+  metrics, and logs. Use when designing, configuring, securing, or debugging Azure
+  Managed Redis workloads or migrating from Azure Cache for Redis.
 ---
 # Azure Managed Redis Crawl Report
 

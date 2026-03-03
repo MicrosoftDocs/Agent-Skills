@@ -1,6 +1,6 @@
 ---
 name: azure-front-door
-description: Expert knowledge for Azure Front Door development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Front Door applications.
+description: Expert knowledge for Azure Front Door covering architecture (apex domain, blue/green, Traffic Manager failover, static blob hosting), configuration (caching, routing, rules engine, redirects/rewrites, custom domains, Private Link, health probes), security (TLS/certs, WAF, DDoS, security headers), deployment (Bicep/ARM/Terraform, CLI/PowerShell), limits/POP locations, pricing/migration (Classic to Standard/Premium), and troubleshooting 4xx/5xx, CORS, compression, and performance issues. Use when designing, configuring, securing, automating, or debugging Azure Front Door as a global HTTP/HTTPS entry point. Not for Azure Application Gateway, Azure CDN (Verizon/Akamai), Azure Traffic Manager alone, or generic on-prem load balancers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

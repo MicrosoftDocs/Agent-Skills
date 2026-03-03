@@ -27,6 +27,12 @@ category_descriptions:
   decision-making: Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing,
     routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable
     disaster recovery.
+skill_description: Expert knowledge for Azure IoT Hub covering DPS enrollment/allocations,
+  RBAC/SAS/X.509 auth, TLS, VNet/private endpoints, device twins, jobs, message routing/enrichments,
+  file upload, Device Update for IoT Hub, SDK patterns (D2C/C2D, methods, modules),
+  ARM/Bicep deployment, throttling/quotas, and error codes (e.g., 401003, 404104).
+  Use when designing, securing, configuring, or troubleshooting Azure IoT Hub or DPS
+  solutions. Not for Azure IoT Central, Event Hubs, or generic MQTT brokers.
 ---
 # Azure IoT Hub Crawl Report
 

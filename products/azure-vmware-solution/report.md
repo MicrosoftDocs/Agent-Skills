@@ -24,6 +24,12 @@ category_descriptions:
     Files integration.'
   limits-quotas: Host, cluster, routing, and vSAN limits for AVS; network/port planning;
     and how to request, deploy, scale, and manage AVS host quota and capacity.
+skill_description: Expert knowledge for Azure VMware Solution covering AVS private
+  cloud architecture, hub-spoke/ExpressRoute/Virtual WAN connectivity, NSX-T, vSAN/stretched
+  clusters, HCX migrations, backup/DR, Defender for Cloud, Arc, identity/LDAP/AD,
+  quotas/host capacity, and troubleshooting deployment/DR issues. Use when designing,
+  securing, integrating, or operating AVS. Not for generic Azure VMs, Azure Stack
+  HCI, or on-prem vSphere only.
 ---
 # Azure VMware Solution Crawl Report
 

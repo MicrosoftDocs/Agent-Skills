@@ -1,6 +1,6 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when building, debugging, or optimizing Azure Reliability applications.
+description: Expert knowledge for Azure Reliability across Azure availability zones, zonal vs zone-redundant resources, region selection, non-regional (global) services, and high-availability patterns for Azure Functions, PaaS, data, and integration services, plus Azure Queue Storage message size limits and large payload handling. Use when designing or hardening resilient Azure architectures, choosing regions/zones, or migrating Functions hosting plans for higher availability.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

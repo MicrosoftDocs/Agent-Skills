@@ -14,6 +14,13 @@ category_descriptions:
     operator deployments.
   troubleshooting: Diagnosing and fixing AOSM onboarding issues with the Azure CLI
     extension and troubleshooting Helm chart installation failures in AOSM CNF deployments.
+skill_description: Expert knowledge for Azure Operator Service Manager covering AOSM
+  onboarding/deployment best practices, configuration group schemas, Helm chart structure/cleanup,
+  CLI/ARM/Helm onboarding of CNFs/VNFs, ACR/storage-backed artifact stores, cluster
+  registry/edge resiliency, NFO extension commands, Private Link, custom RBAC/UAMI,
+  and troubleshooting AOSM CLI/Helm install failures. Use when designing, securing,
+  or debugging AOSM network services. Not for generic Azure networking, AKS, or Azure
+  Operator Insights.
 ---
 # Azure Operator Service Manager Crawl Report
 

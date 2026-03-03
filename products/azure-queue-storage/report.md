@@ -13,6 +13,12 @@ category_descriptions:
   integrations: Client library how-tos for using Azure Queue Storage with .NET, Java,
     JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and
     common coding patterns.
+skill_description: Expert knowledge for Azure Queue Storage covering Entra ID/RBAC/ABAC
+  auth, client-side encryption, passwordless migration, queue metrics/logs/diagnostic
+  settings, performance/scalability limits (message/queue size, throughput), and .NET/Java/JavaScript/Python/PowerShell
+  SDK patterns for send/receive/peek/update/delete. Use when securing, monitoring,
+  tuning, or coding against Azure Queue Storage. Not for Azure Service Bus queues,
+  Azure Storage blobs/files, or Event Hubs.
 ---
 # Azure Queue Storage Crawl Report
 

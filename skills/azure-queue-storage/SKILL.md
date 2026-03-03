@@ -1,6 +1,6 @@
 ---
 name: azure-queue-storage
-description: Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Queue Storage applications.
+description: Expert knowledge for Azure Queue Storage covering Entra ID/RBAC/ABAC auth, client-side encryption, passwordless migration, queue metrics/logs/diagnostic settings, performance/scalability limits (message/queue size, throughput), and .NET/Java/JavaScript/Python/PowerShell SDK patterns for send/receive/peek/update/delete. Use when securing, monitoring, tuning, or coding against Azure Queue Storage. Not for Azure Service Bus queues, Azure Storage blobs/files, or Event Hubs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

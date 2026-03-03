@@ -25,6 +25,19 @@ category_descriptions:
     diagnostics.'
   deployment: Guides for moving Web PubSub across regions, configuring Premium autoscale,
     and deploying/migrating Socket.IO apps and serverless chat to Azure Web PubSub.
+skill_description: Expert knowledge for Azure Web PubSub covering decision making
+  (tiers, zones, pricing meters), security (Entra ID, managed identity, access keys,
+  mTLS, private endpoints, firewalls), integrations (WebSocket, MQTT, REST, CloudEvents,
+  JSON/protobuf subprotocols, .NET/Java/JS/Python SDKs, Azure Functions, Socket.IO),
+  architecture (DR, geo-replication, MQTT bridging, Socket.IO support model), configuration
+  (custom domains, event handler routing, monitoring/metrics, alerts, OData filters,
+  client URLs, local tunneling, MQTT/Socket.IO options), limits & quotas (connections,
+  messages, scaling, unsupported Socket.IO server APIs), best practices (resilient
+  WebSocket clients, reconnection, disconnect handling, error handling, connection
+  lifecycle), troubleshooting (logs, diagnostics, common errors, handler debugging,
+  Socket.IO issues), and deployment (Premium autoscale, cross-region moves, migrating
+  Socket.IO apps and serverless chat). Use when designing, configuring, securing,
+  integrating, scaling, or troubleshootin...
 ---
 # Azure Web PubSub Crawl Report
 

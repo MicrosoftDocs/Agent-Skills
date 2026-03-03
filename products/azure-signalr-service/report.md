@@ -25,6 +25,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing SignalR issues using logs and live trace,
     covering connectivity, message delivery, common errors, and FAQ-style troubleshooting
     tips.
+skill_description: Expert knowledge for Azure SignalR Service covering mode selection
+  (Default/Serverless/Classic), connection strings, negotiation endpoints, upstream,
+  Functions bindings, auth with Entra ID/managed identity, private endpoints, autoscale,
+  sharding, ASP.NET Core integration, quotas, and live trace troubleshooting. Use
+  when designing, securing, deploying, or debugging real-time SignalR apps on Azure.
+  Not for generic ASP.NET SignalR hosting outside Azure.
 ---
 # Azure SignalR Service Crawl Report
 

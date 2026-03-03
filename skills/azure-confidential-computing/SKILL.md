@@ -1,6 +1,6 @@
 ---
 name: azure-confidential-computing
-description: Expert knowledge for Azure Confidential Computing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Confidential Computing applications.
+description: Expert knowledge for Azure Confidential Computing covering Intel SGX/AMD SEV-SNP VMs, AKS confidential node pools/SGX device plugin, attestation (Azure Attestation, vTPM), secure key release (SKR), Fortanix CCM, Key Vault, Metablob disks, deployment/ARM/CLI patterns, and SGX VM size quotas. Use when designing, configuring, or troubleshooting Azure confidential VMs, enclaves, and containers. Not for general Azure VM, AKS, or GPU security without confidential computing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

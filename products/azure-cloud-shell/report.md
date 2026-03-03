@@ -8,6 +8,12 @@ category_descriptions:
     quotas, and how persistent storage works and is constrained across Bash and PowerShell.
   security: Securing Cloud Shell storage accounts, including multi-user access patterns,
     network isolation, and configuring private endpoints for locked-down access.
+skill_description: Expert knowledge for Azure Cloud Shell covering troubleshooting
+  shell launch failures, storage account mount errors, $home persistence, session
+  timeouts, private VNet connectivity, and deployment/network issues; explaining session
+  duration, quotas, file share limits, and Bash vs PowerShell persistence; and securing
+  Cloud Shell storage with RBAC, network isolation, and private endpoints. Use when
+  configuring, securing, or debugging Azure Cloud Shell environments.
 ---
 # Azure Cloud Shell Crawl Report
 

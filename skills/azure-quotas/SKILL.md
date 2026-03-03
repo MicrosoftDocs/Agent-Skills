@@ -1,6 +1,6 @@
 ---
 name: azure-quotas
-description: Expert knowledge for Azure Quotas development including limits & quotas. Use when building, debugging, or optimizing Azure Quotas applications.
+description: Expert knowledge for Azure Quotas covering Azure Storage per-region limits, subscription and account quotas, quota increase prerequisites, support request steps in Azure Portal, and troubleshooting “RequestDisallowedByPolicy” or quota-exceeded errors. Use when planning capacity, requesting storage quota increases, or managing regional limits. Not for Azure SQL, VM core quotas, or general Azure resource limits.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

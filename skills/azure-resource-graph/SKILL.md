@@ -1,6 +1,6 @@
 ---
 name: azure-resource-graph
-description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Resource Graph applications.
+description: Expert knowledge for Azure Resource Graph covering Kusto-based queries, CLI/PowerShell/REST/Power BI/Logic Apps integrations, shared queries, alerts/automation, request limits, throttling, pagination, GET/LIST vs query API decisions, Bicep/ARM deployment of queries, and troubleshooting syntax/runtime errors and Power BI connector auth/refresh. Use when querying Azure resources at scale or diagnosing ARG query/limit issues. Not for Azure Monitor Logs, Azure Policy, or general ARM template design.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

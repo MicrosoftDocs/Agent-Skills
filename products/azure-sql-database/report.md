@@ -28,6 +28,15 @@ category_descriptions:
   deployment: 'Deploying and configuring Azure SQL databases: automation (GitHub Actions,
     ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves,
     and feature availability by region.'
+skill_description: Expert knowledge for Azure SQL Database covering tier/DTU-vCore
+  selection, Hyperscale, Managed Instance, elastic pools, HA/DR and geo-replication,
+  performance tuning (CPU, memory, deadlocks, blocking, tempdb, log), connectivity/transient
+  errors, security (TDE, Always Encrypted, Entra ID, firewall, private endpoint),
+  backups/Point-in-Time Restore, ARM/Bicep/Terraform/CLI deployment, and EF Core/.NET
+  connection patterns. Use when designing, configuring, securing, or troubleshooting
+  Azure SQL Database PaaS workloads, migrations from SQL Server, or app connectivity
+  issues. Not for on-prem SQL Server only, Azure SQL Edge, Azure Database for PostgreSQL/MySQL,
+  or general data warehousing (use Azure Synapse/SQL Managed Instance where appropriate).
 ---
 # Azure SQL Database Crawl Report
 
@@ -38,6 +47,13 @@ category_descriptions:
 - **Fetch Failed**: 0
 - **Classified**: 243
 - **Unclassified**: 115
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 358
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
 
@@ -53,6 +69,8 @@ category_descriptions:
 | security | 62 | 17.3% |
 | troubleshooting | 18 | 5.0% |
 | *(Unclassified)* | 115 | 32.1% |
+
+## Changes
 
 ## Classified Pages
 

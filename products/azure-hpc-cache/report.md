@@ -27,6 +27,12 @@ category_descriptions:
     strategies for cached workloads.
   limits-quotas: How to request and manage Azure HPC Cache quota increases, including
     limits on cache instances, capacities, and the support process for raising quotas.
+skill_description: Expert knowledge for Azure HPC Cache covering security (client
+  access policies, AD integration, CMK encryption), configuration (CLI, networking/DNS/NTP,
+  storage targets, namespaces, NFS mounts), deployment, architecture, best practices,
+  integrations (msrsync, parallelcp, flush_file.py, ANF), troubleshooting (Blob firewall,
+  NFS issues), and limits/quotas. Use when designing, operating, or debugging Azure
+  HPC Cache for high-performance file workloads.
 ---
 # Azure HPC Cache Crawl Report
 

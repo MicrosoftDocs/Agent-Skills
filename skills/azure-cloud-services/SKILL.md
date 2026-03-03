@@ -1,6 +1,6 @@
 ---
 name: azure-cloud-services
-description: Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cloud Services applications.
+description: Expert knowledge for Azure Cloud Services (classic and extended support) covering Guest OS families/retirements, VM size limits/quotas, Key Vault certificates, .csdef/.cscfg schemas, load balancer/RDP/diagnostics, autoscale rules, migration from classic to Cloud Services (extended support), and PowerShell automation. Use when designing, securing, migrating, or troubleshooting Azure Cloud Services roles. Not for Azure App Service, Azure Functions, or VM Scale Sets workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

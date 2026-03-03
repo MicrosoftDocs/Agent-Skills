@@ -28,6 +28,15 @@ category_descriptions:
   integrations: Connecting to Azure Database for MySQL Flexible Server via CLI, Java/JDBC,
     Power BI, managing connection strings with Key Vault, and migrating data from
     RDS, on-prem, VMs, or Workbench
+skill_description: Expert knowledge for Azure Database for MySQL Flexible Server covering
+  deployment automation (ARM/Bicep, Terraform, Azure Pipelines, GitHub Actions), HA/BCDR,
+  backups/geo-restore, major version upgrades, performance tuning (slow query log,
+  innodb_buffer_pool_size), VNet/firewall/Private Link, Entra auth, read replicas,
+  AKS connectivity, migration from RDS/on-prem, and troubleshooting connectivity/timeouts/replication
+  lag. Use when designing, configuring, securing, or operating Azure Database for
+  MySQL Flexible Server workloads or planning migrations to it. Not for Azure SQL
+  Database, Azure Database for PostgreSQL, MySQL on Azure VMs, or generic MySQL without
+  Azure services.
 ---
 # Azure Database for MySQL Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-cache-redis
-description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cache for Redis applications.
+description: Expert knowledge for Azure Cache for Redis covering configuration (geo-replication, replicas, persistence, zone redundancy, Azure Monitor), security (Entra auth, TLS, VNets, Private Link, Azure Policy), best practices (scaling, memory/CPU tuning, Kubernetes, Enterprise tier), integrations (CLI/PowerShell, Blob import/export, webhooks), architecture (clustering, HA, failover), troubleshooting (timeouts, latency, redis-cli, connectivity), deployment (ARM/Bicep, safe scale, version upgrades), and decision making (sizing, capacity, reservations, migrations, network isolation). Use when designing, configuring, securing, integrating, scaling, or troubleshooting Azure Cache for Redis workloads. Not for generic Redis on VMs/containers, Azure SQL caching, or other Azure data stores like Cosmos DB or Azure Storage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -24,6 +24,12 @@ category_descriptions:
     data in document translation.'
   troubleshooting: Diagnosing and fixing common Azure Translator issues in Foundry
     Tools, plus understanding HTTP status/error codes and their causes and resolutions.
+skill_description: Expert knowledge for Azure Translator covering configuration (resources,
+  containers, profanity filter, content exclusion, dynamic dictionaries, word alignment,
+  metrics), deployment in Docker, REST/SDK/Document Translation APIs, quotas/limits,
+  security (keys, Entra ID, VNets), BLEU evaluation, and HTTP error codes. Use when
+  designing, securing, tuning, or troubleshooting Azure Translator or Custom Translator.
+  Not for Azure Cognitive Search, Speech, or general localization strategy.
 ---
 # Azure Translator Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Operations applications.
+description: Expert knowledge for Azure IoT Operations covering configuration of dataflows/endpoints, MQTT broker settings, WebAssembly modules, OPC UA/MQTT/HTTP/SSE integrations, Akri device discovery, security (TLS, certs, RBAC, Key Vault), Kubernetes deployment/upgrade, sizing/HA patterns, limits/quotas, and troubleshooting logs/health errors. Use when designing, securing, or debugging Azure IoT Operations edge solutions. Not for Azure IoT Hub or legacy Azure IoT Edge.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

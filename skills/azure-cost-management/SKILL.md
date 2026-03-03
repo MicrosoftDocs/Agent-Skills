@@ -1,6 +1,6 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications.
+description: Expert knowledge for Azure Cost Management covering billing account configuration (EA/MCA/MPA), budgets, tags, exports, reservations, savings plans, RBAC billing roles, cost allocation, Power BI/REST API automation, subscription limits/quotas, and troubleshooting disabled subscriptions, invoice issues, and low reservation utilization. Use when optimizing Azure spend, securing billing data, or diagnosing Azure billing/subscription problems.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

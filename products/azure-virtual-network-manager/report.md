@@ -14,6 +14,12 @@ category_descriptions:
     limits (scale, resources, configurations) that affect design and deployment decisions.
   integrations: Using Azure Resource Graph to query, filter, and report on Azure Virtual
     Network Manager resources, configurations, and deployments at scale across subscriptions
+skill_description: Expert knowledge for Azure Virtual Network Manager covering IPAM
+  pools, network groups (static/dynamic via Azure Policy), cross-tenant connectivity,
+  UDR management, topology/reachability analysis, security admin rules (block high‑risk
+  ports), deployment/configuration failures, and Azure Resource Graph queries. Use
+  when designing, configuring, or troubleshooting AVNM. Not for classic VNet peering-only
+  setups or Azure Firewall policy management.
 ---
 # Azure Virtual Network Manager Crawl Report
 

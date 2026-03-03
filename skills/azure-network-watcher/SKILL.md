@@ -1,6 +1,6 @@
 ---
 name: azure-network-watcher
-description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Network Watcher applications.
+description: Expert knowledge for Azure Network Watcher covering Connection Monitor AMA configuration, NSG/VNet flow logs, Traffic Analytics KQL schemas, ARM/Bicep/Policy deployment, packet capture limits/quotas, VPN gateway/on-premises VPN diagnostics, RBAC and managed identities. Use when configuring or troubleshooting Azure Network Watcher monitoring, logging, or analytics. Not for Azure Monitor, Azure Firewall, or general VNet design.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

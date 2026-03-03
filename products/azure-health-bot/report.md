@@ -18,6 +18,13 @@ category_descriptions:
     safe handling of clinical conversation errors.
   decision-making: Estimating Azure Health Bot costs based on action usage, understanding
     pricing drivers, and forecasting expenses for different bot scenarios.
+skill_description: Expert knowledge for Azure Health Bot covering Teams/SMS/WhatsApp/Facebook
+  integration, Web Chat/Direct Line Speech, external API/OpenAPI calls, telemetry,
+  OAuth, management APIs, proactive messages, scenario/variable/card/version configuration,
+  consent/PHI, encryption keys, abuse filters, orchestrator design, error-handling
+  flows, and cost estimation by action usage. Use when designing, configuring, securing,
+  or pricing Azure Health Bot. Not for Azure Bot Service in general or Azure OpenAI
+  health chatbots.
 ---
 # Azure Health Bot Crawl Report
 

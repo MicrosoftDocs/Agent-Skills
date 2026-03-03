@@ -1,6 +1,6 @@
 ---
 name: azure-firewall-manager
-description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when building, debugging, or optimizing Azure Firewall Manager applications.
+description: Expert knowledge for Azure Firewall Manager covering DDoS Protection plans, centralized WAF policy management, threat intelligence-based filtering, Azure Firewall policy configuration (DNS proxy, FQDN filtering, IP Groups, rule hierarchy/inheritance, Virtual WAN secured private endpoints), rule collection groups/priority, and choosing secured virtual hub vs hub VNet. Use when designing, configuring, or optimizing Azure Firewall Manager deployments. Not for Azure Application Gateway, Azure Front Door, NSGs, or generic Azure Firewall (without Manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

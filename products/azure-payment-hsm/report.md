@@ -18,6 +18,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Payment HSM deployment issues,
     including provisioning failures, configuration problems, and known platform limitations
     or workarounds.
+skill_description: Expert knowledge for Azure Payment Hsm covering VNet integration/peering,
+  FastPath, ARM templates, IP/subnet design, payShield Manager access, RBAC, key management,
+  HA/DR architectures, SKUs (payShield 10K), NSG/firewall routing, monitoring, and
+  provisioning/configuration error troubleshooting. Use when designing, securing,
+  or operating Azure Payment HSM instances. Not for Azure Key Vault, Managed HSM,
+  or generic Azure networking.
 ---
 # Azure Payment Hsm Crawl Report
 

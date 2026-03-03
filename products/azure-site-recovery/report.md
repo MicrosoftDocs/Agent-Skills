@@ -27,6 +27,12 @@ category_descriptions:
   best-practices: 'Guidance on tuning Azure Site Recovery performance: analyzing high
     data churn on VMs, and monitoring/troubleshooting process server health, capacity,
     and throughput.'
+skill_description: Expert knowledge for Azure Site Recovery covering DR planning/sizing,
+  Recovery Services vaults, VMware/Hyper‑V/physical server replication, Mobility service,
+  process server tuning, failover/failback, networking/NSGs/TLS, RBAC, Bicep/ARM/Terraform/PowerShell
+  automation, error codes (e.g., 151025, 78188), and migration from classic ASR. Use
+  when designing, configuring, or troubleshooting Azure Site Recovery DR. Not for
+  Azure Backup-only, Azure Migrate assessments, or general Azure VM operations.
 ---
 # Azure Site Recovery Crawl Report
 

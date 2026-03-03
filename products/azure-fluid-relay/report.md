@@ -19,6 +19,13 @@ category_descriptions:
   limits-quotas: Details on Azure Fluid Relay capacity limits, throttling behavior,
     quotas per tenant/container, and guidance to avoid or handle rate limiting and
     overuse scenarios.
+skill_description: Expert knowledge for Azure Fluid Relay covering JWT auth design,
+  token providers, key rotation, CMK/data encryption, container creator validation,
+  Fluid Framework client/server version config, AzureClient setup, audience APIs,
+  React presence, Azure CLI container deletion, corrupted container recovery, Static
+  Web Apps deployment, CI/CD test automation, and limits/throttling. Use when designing,
+  securing, integrating, or troubleshooting Azure Fluid Relay apps. Not for generic
+  WebSocket services, SignalR, or non-Fluid Azure collaboration tools.
 ---
 # Azure Fluid Relay Crawl Report
 

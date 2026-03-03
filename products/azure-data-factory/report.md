@@ -27,6 +27,12 @@ category_descriptions:
     DB migration, and SAP CDC design.'
   limits-quotas: Info on ADF connector lifecycle stages and timelines, plus how reservation
     discounts work for Mapping Data Flows and how they affect cost and capacity planning
+skill_description: Expert knowledge for Azure Data Factory covering pipeline configuration,
+  integration runtimes (Azure IR, SHIR, SSIS IR), mapping data flows, triggers, ARM/linked
+  templates, Azure DevOps CI/CD, cost planning/reserved capacity, Key Vault, Private
+  Link, SAP CDC, Cosmos DB migration, and troubleshooting copy/data flow errors. Use
+  when designing, securing, deploying, or debugging ADF ETL/ELT. Not for Azure Synapse
+  pipelines, Azure Data Factory Studio UI basics, or Microsoft Fabric Data Factory.
 ---
 # Azure Data Factory Crawl Report
 

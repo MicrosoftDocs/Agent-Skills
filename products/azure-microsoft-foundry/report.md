@@ -28,6 +28,15 @@ category_descriptions:
   architecture-patterns: Designing resilient Foundry solutions, including high availability
     patterns, redundancy, and disaster recovery strategies for Foundry Agent Service
     and project architectures.
+skill_description: Expert knowledge for Microsoft Foundry covering Security (Entra
+  ID, RBAC, keys, private networking, safety filters, data privacy), Configuration
+  (agents, tools, workflows, tracing, monitoring, Azure/OpenAI/Anthropic), Limits
+  & Quotas (PTU, Sora, batch, fine-tuning), Decision Making, Best Practices, Deployment,
+  Integrations & Coding Patterns, Troubleshooting, and Architecture & Design Patterns.
+  Use when designing, configuring, securing, integrating, or operating Microsoft Foundry
+  agents, models, and vector stores in Azure. Not for generic Azure OpenAI without
+  Foundry, GitHub Models-only setups, or non-Microsoft “Foundry” products (e.g., Palantir
+  Foundry).
 ---
 # Microsoft Foundry Crawl Report
 

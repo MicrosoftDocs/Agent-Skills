@@ -18,6 +18,15 @@ category_descriptions:
     understanding its service limits, quotas, and operational constraints
   troubleshooting: Diagnosing and resolving common Azure Managed Grafana issues, including
     access, configuration, and private endpoint connectivity and DNS problems.
+skill_description: Expert knowledge for Azure Managed Grafana covering integrations
+  with Azure Monitor, Prometheus (AKS/AMW), Azure Data Explorer, Agent Framework/AI
+  Foundry monitoring, Entra ID auth, team sync, roles, service accounts/tokens, private
+  endpoints, outbound IPs, workspace configuration, plugins, SMTP alerts, HA/zone-redundant
+  deployments, Enterprise plan selection, Grafana 11 upgrades, image/report rendering
+  limits, and troubleshooting access/DNS/private endpoint issues. Use when designing,
+  securing, configuring, scaling, or debugging Azure Managed Grafana workspaces. Not
+  for generic Grafana OSS/Enterprise outside Azure, Azure Monitor workbooks, or Power
+  BI dashboards.
 ---
 # Azure Managed Grafana Crawl Report
 

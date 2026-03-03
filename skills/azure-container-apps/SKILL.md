@@ -1,6 +1,6 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Apps applications.
+description: Expert knowledge for Azure Container Apps covering environment configuration, ingress, revisions, Dapr, KEDA scaling, Java memory tuning, TLS/mTLS, managed identities, private endpoints, WAF, CI/CD (GitHub Actions/Azure Pipelines), Docker Compose, Arc, GPU plans, cost estimates, limits/quotas, and troubleshooting image pull/container start/health probe errors. Use when designing, deploying, securing, or debugging Azure Container Apps microservices and AI workloads. Not for Azure Kubernetes Service (AKS), Azure App Service, or Azure Functions-only hosting.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

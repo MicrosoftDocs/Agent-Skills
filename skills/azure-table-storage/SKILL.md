@@ -1,6 +1,6 @@
 ---
 name: azure-table-storage
-description: Expert knowledge for Azure Table Storage development including best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Table Storage applications.
+description: Expert knowledge for Azure Table Storage covering Microsoft Entra ID/RBAC auth, table/partition/row key design, scalability limits, throughput targets, metrics/logs/diagnostic settings, alerts, and Azure PowerShell CRUD/scripting patterns. Use when designing schemas, optimizing queries/perf, or securing/monitoring Table Storage. Not for Azure Cosmos DB Table API, Azure SQL, Blob, Queue, or File Storage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

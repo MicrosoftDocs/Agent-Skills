@@ -1,6 +1,6 @@
 ---
 name: azure-anomaly-detector
-description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Anomaly Detector applications.
+description: Expert knowledge for Azure AI Anomaly Detector covering Docker container configuration (env vars, resource limits, logging, networking), deployment to Azure Container Instances and IoT Edge, best practices for univariate/multivariate APIs, predictive maintenance architectures, troubleshooting multivariate error codes/model failures, and limits/quotas. Use when designing, deploying, or debugging Azure AI Anomaly Detector solutions. Not for Azure Monitor alerts, Metrics Advisor, or generic ML anomaly models.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

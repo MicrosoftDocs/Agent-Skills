@@ -1,6 +1,6 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Artifacts applications.
+description: Expert knowledge for Azure Artifacts covering feed configuration, limits/quotas, views/promotion, retention, upstream sources, .npmrc scopes, .artifactignore, and secure package management for npm, NuGet, Maven, Gradle, Cargo, Python, PowerShell, Universal Packages, plus GitHub Actions CI/CD publishing. Use when managing Azure DevOps Artifacts feeds, migrations, or security. Not for Azure Storage, GitHub Packages, or general Azure DevOps pipelines.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -28,6 +28,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common errors, low-accuracy results, and
     configuration issues in custom text classification and custom question answering
     projects in Azure AI Language.
+skill_description: Expert knowledge for Azure AI Language covering CLU, custom NER,
+  custom text classification, sentiment, summarization, Health, CQA/QnA, configuration,
+  deployment (containers/AKS), limits/quotas, security (CMK, RBAC, Private Link),
+  architecture, and troubleshooting low-accuracy or API errors. Use when designing,
+  migrating, securing, or debugging Azure AI Language workloads. Not for Azure OpenAI,
+  LUIS, or QnA Maker runtime usage.
 ---
 # Azure AI Language Crawl Report
 

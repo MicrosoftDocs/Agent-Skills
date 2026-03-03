@@ -1,6 +1,6 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications.
+description: Expert knowledge for Azure SQL Database covering tier/DTU-vCore selection, Hyperscale, Managed Instance, elastic pools, HA/DR and geo-replication, performance tuning (CPU, memory, deadlocks, blocking, tempdb, log), connectivity/transient errors, security (TDE, Always Encrypted, Entra ID, firewall, private endpoint), backups/Point-in-Time Restore, ARM/Bicep/Terraform/CLI deployment, and EF Core/.NET connection patterns. Use when designing, configuring, securing, or troubleshooting Azure SQL Database PaaS workloads, migrations from SQL Server, or app connectivity issues. Not for on-prem SQL Server only, Azure SQL Edge, Azure Database for PostgreSQL/MySQL, or general data warehousing (use Azure Synapse/SQL Managed Instance where appropriate).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

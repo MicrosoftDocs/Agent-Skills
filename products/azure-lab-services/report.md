@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing VM access, connectivity, deployment, and
     lab-creation issues in Azure Lab Services, including when to redeploy or reimage
     VMs.
+skill_description: Expert knowledge for Azure Lab Services covering lab plans, RBAC
+  roles, Azure Policy, VM size limits, VNet integration, firewalls/public IPs, GPU/nested
+  virtualization, Canvas/Teams integration, Bicep/PowerShell/Python automation, schedules,
+  quotas, template images, and connectivity errors (RDP/SSH/X2Go). Use when designing,
+  deploying, securing, or troubleshooting Azure Lab Services labs. Not for Azure Virtual
+  Desktop, DevTest Labs, or generic Azure VM hosting.
 ---
 # Azure Lab Services Crawl Report
 

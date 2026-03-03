@@ -1,6 +1,6 @@
 ---
 name: azure-hpc-cache
-description: Expert knowledge for Azure HPC Cache development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure HPC Cache applications.
+description: Expert knowledge for Azure HPC Cache covering security (client access policies, AD integration, CMK encryption), configuration (CLI, networking/DNS/NTP, storage targets, namespaces, NFS mounts), deployment, architecture, best practices, integrations (msrsync, parallelcp, flush_file.py, ANF), troubleshooting (Blob firewall, NFS issues), and limits/quotas. Use when designing, operating, or debugging Azure HPC Cache for high-performance file workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

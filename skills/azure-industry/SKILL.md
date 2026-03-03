@@ -1,6 +1,6 @@
 ---
 name: azure-industry
-description: Expert knowledge for Azure Industry development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Industry applications.
+description: Expert knowledge for Azure Industry covering Microsoft Community Training on Azure: security/auth (Azure AD/B2C, SSO, roles, access restrictions, backups), Teams integration and app/tab customization, deployment/uninstall, Android app build/publish, portal branding/languages/certificates, performance troubleshooting, and UI language limits. Use when configuring or operating Microsoft Community Training, not for generic Azure training or LMS products like Viva Learning.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

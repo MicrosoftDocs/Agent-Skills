@@ -19,6 +19,14 @@ category_descriptions:
   configuration: 'Guidance for configuring and operating Azure Government: app deployment,
     VM extensions, EA billing, marketplace images, and Azure Monitor logs in sovereign
     US regions.'
+skill_description: Expert knowledge for Azure US Government covering FedRAMP High/DoD
+  IL5 scope, SACA patterns, TIC, Entra ID auth, secure naming, IL5 isolation, DISA
+  CAP/ASE baselines, CI/CD to gov regions, Gov Marketplace publishing, sovereign endpoints
+  (portal.azure.us, storage.azure.us), SSMS to Gov SQL, Azure Monitor in US Gov, EA
+  billing, VM extensions, and NERC CIP/public safety workloads. Use when designing,
+  securing, deploying, or integrating workloads in Azure US Government or DoD regions.
+  Not for commercial/global Azure, Azure China, or Azure Government licensing/billing
+  policy disputes.
 ---
 # Azure US Government Crawl Report
 

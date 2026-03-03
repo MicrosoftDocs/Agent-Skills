@@ -1,6 +1,6 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications.
+description: Expert knowledge for Azure Data Factory covering pipeline configuration, integration runtimes (Azure IR, SHIR, SSIS IR), mapping data flows, triggers, ARM/linked templates, Azure DevOps CI/CD, cost planning/reserved capacity, Key Vault, Private Link, SAP CDC, Cosmos DB migration, and troubleshooting copy/data flow errors. Use when designing, securing, deploying, or debugging ADF ETL/ELT. Not for Azure Synapse pipelines, Azure Data Factory Studio UI basics, or Microsoft Fabric Data Factory.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

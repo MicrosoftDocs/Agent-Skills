@@ -1,6 +1,6 @@
 ---
 name: azure-database-migration
-description: Expert knowledge for Azure Database Migration service development including troubleshooting, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database Migration service applications.
+description: Expert knowledge for Azure Database Migration service covering security (VNet, private endpoints, TLS, RBAC for MySQL), decision making on DMS scenarios, SSIS to Azure SQL/SQL MI deployment, limits/quotas for MySQL/PostgreSQL/MongoDB/SQL MI, troubleshooting classic DMS connectivity errors, and PowerShell automation. Use when planning or running Azure DMS migrations. Not for Azure Data Factory copy, Azure Migrate, or general Azure SQL design.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

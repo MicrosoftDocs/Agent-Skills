@@ -1,6 +1,6 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Sentinel applications.
+description: Expert knowledge for Azure Sentinel covering configuration (data connectors, analytics/automation rules, ASIM, UEBA, SAP, data lake, retention), architecture, SOC best practices, KQL, CI/CD deployments, integrations (Logic Apps, Teams, Power BI), troubleshooting ingestion/CEF/Syslog/SAP, and limits/quotas. Use when designing, operating, or debugging Microsoft Sentinel SIEM/SOAR. Not for Microsoft Defender XDR or generic Azure Monitor Log Analytics.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

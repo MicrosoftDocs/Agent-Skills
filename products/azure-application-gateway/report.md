@@ -27,6 +27,13 @@ category_descriptions:
   best-practices: 'Guidance on designing Application Gateway for very high traffic:
     sizing, autoscaling, performance tuning, capacity planning, and configuration
     patterns to handle large loads reliably.'
+skill_description: Expert knowledge for Azure Application Gateway (classic, v1/v2,
+  App Gateway for Containers) covering listeners, HTTP/HTTPS routing, probes, health,
+  URL/headers rewrite, redirects, session affinity, autoscaling, zone redundancy,
+  WAF, TLS/SSL/mTLS, Key Vault certs, AGIC/AKS add-on, 502/backend health errors,
+  and migration v1→v2/AGIC→Containers. Use when designing, deploying, securing, or
+  troubleshooting Azure Application Gateway. Not for Azure Front Door, Azure Traffic
+  Manager, or generic VNet/NVA load balancers.
 ---
 # Azure Application Gateway Crawl Report
 

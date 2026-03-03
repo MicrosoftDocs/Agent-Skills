@@ -1,6 +1,6 @@
 ---
 name: azure-metrics-advisor
-description: Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Metrics Advisor applications.
+description: Expert knowledge for Azure AI Metrics Advisor covering cost estimation/optimization, pricing tiers, data feed cost drivers, REST API/SDK integration, ingestion queries, alert hooks (email/webhook), anomaly detection configuration/tuning, secure credential entities, and customer-managed keys (CMK). Use when designing, securing, or troubleshooting Metrics Advisor anomaly detection. Not for Azure Monitor alerts, Log Analytics, or Application Insights.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-pipelines
-description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Pipelines applications.
+description: Expert knowledge for Azure Pipelines security, YAML configuration, self-hosted/hosted agents, service connections, Key Vault secrets, approvals/checks, CI/CD deployment to Azure Web Apps/AKS/VMs/SQL, limits/quotas, migration from classic/Jenkins, troubleshooting failed runs (e.g., VS402852), and performance best practices. Use when designing, securing, or debugging Azure DevOps Pipelines. Not for GitHub Actions or generic Azure DevOps Boards/Repos questions.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

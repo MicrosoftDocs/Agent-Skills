@@ -24,6 +24,12 @@ category_descriptions:
   decision-making: Guidance on cost-optimizing ACI with Spot containers and using
     prediction-based sizing to configure and right-size Azure Container Instances
     standby pools.
+skill_description: Expert knowledge for Azure Container Instances covering limits/quotas,
+  container group YAML, env vars, DNS, VNet, static IP via NAT Gateway/Application
+  Gateway, volumes, probes, GPUs, standby pools, Spot containers, TLS/HTTPS, ACR auth,
+  managed identity, RBAC, CMK, GitHub Actions CI/CD, and error troubleshooting. Use
+  when designing, securing, deploying, or debugging Azure Container Instances. Not
+  for AKS, App Service, or Azure Functions containers.
 ---
 # Azure Container Instances Crawl Report
 

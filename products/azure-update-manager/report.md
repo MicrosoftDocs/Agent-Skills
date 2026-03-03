@@ -23,6 +23,14 @@ category_descriptions:
     scenarios.
   decision-making: Planning patch strategies across subscriptions and guidance for
     migrating patch management from Configuration Manager to Azure Update Manager
+skill_description: Expert knowledge for Azure Update Manager covering Automanage deployment
+  at scale, VM/Arc onboarding, policy-based configuration, guest patching (Windows/Linux,
+  SQL Server, Ubuntu/Ubuntu Pro, ESU, hotpatching), SMB over QUIC, troubleshooting
+  errors/connectivity, RBAC, disk encryption, SDK/REST integrations, change tracking,
+  DCR/workspaces, reports, and migration from ConfigMgr. Use when planning, configuring,
+  or troubleshooting Azure Update Manager. Not for Windows Server Update Services
+  (WSUS), Microsoft Intune updates, or generic Azure Monitor log queries unrelated
+  to Update Manager.
 ---
 # Azure Update Manager Crawl Report
 

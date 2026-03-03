@@ -15,6 +15,12 @@ category_descriptions:
   integrations: How to programmatically upload firmware for analysis in Azure using
     CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation
     patterns.
+skill_description: Expert knowledge for Azure Firmware Analysis covering RBAC/service
+  principal security, job failure and analysis error troubleshooting, SBOM extractor
+  path interpretation, workspace deployment via ARM/Bicep/Terraform, and CLI/PowerShell/Python
+  upload automation. Use when configuring, running, or debugging Azure Firmware Analysis
+  scans and integrations. Not for Azure Defender for IoT, Azure Sphere, or generic
+  firmware reverse engineering.
 ---
 # Azure Firmware Analysis Crawl Report
 

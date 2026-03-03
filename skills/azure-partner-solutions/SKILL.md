@@ -1,6 +1,6 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Partner Solutions applications.
+description: Expert knowledge for Azure Partner Solutions covering Service Connector integrations with Confluent Cloud and Neon Serverless Postgres, Confluent RBAC/SSO, Informatica IDMC SSO/lifecycle, Azure-native Datadog/Dynatrace/Elastic/MongoDB Atlas/New Relic/NGINX configuration, troubleshooting partner observability (Kafka/Flink agents, ingestion, metrics), Dynatrace APM trial decisions, and Palo Alto Cloud NGFW + Application Gateway architectures. Use when designing, configuring, securing, or troubleshooting Azure Marketplace/partner services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -6,6 +6,12 @@ category_descriptions:
     Manager.
   security: Setting up secure access for Network Function Manager by registering required
     Azure resources, managed identities, and permissions for network functions
+skill_description: Expert knowledge for Azure Network Function Manager covering configuration
+  prerequisites, required Azure resources, role assignments (Owner, Contributor, Network
+  Contributor), managed identities, resource provider registration, and secure access
+  for 5G core/vRAN network functions. Use when setting up permissions, onboarding
+  network functions, or securing NF Manager access. Not for Azure Virtual Network
+  Manager or generic Azure networking.
 ---
 # Azure Network Function Manager Crawl Report
 

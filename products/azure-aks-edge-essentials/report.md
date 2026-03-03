@@ -28,6 +28,15 @@ category_descriptions:
   best-practices: 'Best practices for AKS Edge/Arc: applying Azure Policy, recovering
     clusters after management VM loss, and safely upgrading Kubernetes/workload clusters
     via PowerShell or Admin Center'
+skill_description: 'Expert knowledge for Azure Kubernetes Service Edge Essentials
+  covering AKS Edge/AKS Arc on Windows Server/Azure Local: Entra ID/AD/gMSA auth,
+  RBAC, SSH hardening, cert/secret management, SDN VNet, load balancers, autoscaling,
+  Arc connectivity, TPM, CSI, IoT/OPC/ONVIF, GPU/Windows node pools, PowerShell/az
+  CLI, upgrades, quotas, and troubleshooting cluster creation/network/storage issues.
+  Use when designing, deploying, securing, integrating, or troubleshooting AKS Edge
+  Essentials, AKS on Azure Local, or AKS Arc–enabled hybrid/edge clusters. Not for
+  standard AKS in Azure cloud-only, Azure Stack HCI without AKS Edge, or generic Kubernetes
+  not tied to AKS Edge/Arc.'
 ---
 # Azure Kubernetes Service Edge Essentials Crawl Report
 

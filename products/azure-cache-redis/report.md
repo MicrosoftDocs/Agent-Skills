@@ -24,6 +24,16 @@ category_descriptions:
   decision-making: Guidance on sizing and capacity, network isolation, reservations,
     and planning or executing migrations to and from Azure Cache for Redis (including
     VNets and Private Link).
+skill_description: Expert knowledge for Azure Cache for Redis covering configuration
+  (geo-replication, replicas, persistence, zone redundancy, Azure Monitor), security
+  (Entra auth, TLS, VNets, Private Link, Azure Policy), best practices (scaling, memory/CPU
+  tuning, Kubernetes, Enterprise tier), integrations (CLI/PowerShell, Blob import/export,
+  webhooks), architecture (clustering, HA, failover), troubleshooting (timeouts, latency,
+  redis-cli, connectivity), deployment (ARM/Bicep, safe scale, version upgrades),
+  and decision making (sizing, capacity, reservations, migrations, network isolation).
+  Use when designing, configuring, securing, integrating, scaling, or troubleshooting
+  Azure Cache for Redis workloads. Not for generic Redis on VMs/containers, Azure
+  SQL caching, or other Azure data stores like Cosmos DB or Azure Storage.
 ---
 # Azure Cache for Redis Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Migrate applications.
+description: Expert knowledge for Azure Migrate covering appliance configuration, VMware/Hyper-V/physical discovery, Arc-based discovery, assessments, sizing/cost, migration waves, Site Recovery/REST APIs, AppCAT CLI, CAST Highlight, PostgreSQL/SQL/VM/web app migration, Private Link, RBAC, CMK, limits/quotas, and troubleshooting replication/discovery errors. Use when planning or executing workload moves to Azure from on-prem, AWS, or GCP. Not for Azure Site Recovery-only DR, Data Box, or general Azure architecture design.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

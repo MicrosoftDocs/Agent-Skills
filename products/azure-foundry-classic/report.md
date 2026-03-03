@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Foundry issues: compute sessions, prompt
     flows, deployments, monitoring, private endpoints, Azure OpenAI fine-tuning, Marketplace
     access, and known bugs/workarounds.'
+skill_description: Expert knowledge for Azure Foundry Classic covering hub/agent configuration,
+  Prompt Flow tools, Azure OpenAI deployments (GPT-4, o-series), RAG/indexing, embeddings,
+  Realtime/Assistants, RBAC, private endpoints, quotas/rate limits, Bicep/Terraform/CI-CD,
+  and troubleshooting compute sessions, fine-tuning, and 429/5xx errors. Use when
+  designing, securing, integrating, or debugging Foundry Classic solutions with Azure
+  OpenAI.
 ---
 # Azure Foundry Classic Crawl Report
 

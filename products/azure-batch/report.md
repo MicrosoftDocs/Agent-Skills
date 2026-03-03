@@ -27,6 +27,11 @@ category_descriptions:
   architecture-patterns: Architectures and best practices for bursting on-prem render
     farms to Azure Batch, including storage layout, data movement patterns, and performance-optimized
     rendering workflows.
+skill_description: Expert knowledge for Azure Batch security (Entra ID, managed identity,
+  RBAC, Key Vault, private endpoints), pool/task config (autoscale, images, containers,
+  networking), CI/CD deployment, SDK/CLI patterns, quotas, performance tuning, and
+  error codes. Use when designing, optimizing, or troubleshooting Azure Batch jobs/pools.
+  Not for Azure Data Factory pipelines, Azure Functions, or AKS batch-style workloads.
 ---
 # Azure Batch Crawl Report
 

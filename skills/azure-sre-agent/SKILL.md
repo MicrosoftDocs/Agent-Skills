@@ -1,6 +1,6 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Sre Agent applications.
+description: Expert knowledge for Azure Sre Agent covering security/roles/RBAC, run modes and consent, data residency/privacy, billing model and metering, cost optimization, configuring code interpreter, memory, scheduled tasks, subagents and multi-agent workflows, Git/MCP/Python tool integrations, and troubleshooting deployment, connectivity, and runtime errors. Use when designing, configuring, integrating, or debugging Azure Sre Agent in production.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

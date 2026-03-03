@@ -1,6 +1,6 @@
 ---
 name: azure-netapp-files
-description: Expert knowledge for Azure NetApp Files development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure NetApp Files applications.
+description: Expert knowledge for Azure NetApp Files covering limits/quotas, volume sizing/throughput, SAP HANA/Oracle deployments (AVGs, HSR, AzAcSnap), NFS/SMB config, ZRS/Elastic ZRS, snapshots/backup/replication, REST/PowerShell, LDAP/Kerberos/AD, CMK/HSM encryption, and troubleshooting (provisioning, CRR, file locks, AzAcSnap errors). Use when designing, configuring, or operating Azure NetApp Files. Not for Azure Files, Azure Blob, or on-prem NetApp ONTAP only.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

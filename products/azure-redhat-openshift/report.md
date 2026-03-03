@@ -24,6 +24,14 @@ category_descriptions:
     and upgrade constraints.
   decision-making: Defines the shared responsibility model for Azure Red Hat OpenShift,
     detailing which operational tasks are handled by Microsoft, Red Hat, and the customer.
+skill_description: Expert knowledge for Azure Red Hat OpenShift covering ARO 4 cluster
+  sizing, infra nodes, OpenShift Virtualization VMs, private/ARM/Bicep deployments,
+  networking (proxy, DNS, egress, MTU, NSGs), storage (Azure Files, Azure NetApp Files,
+  Prometheus→Azure Monitor), ACR auth, Key Vault, Entra ID/managed identity, FIPS,
+  GPUs, upgrades, cert rotation, backups/restores, limits/quotas, and shared responsibility.
+  Use when designing, securing, integrating, or troubleshooting Azure Red Hat OpenShift
+  clusters and apps. Not for generic Kubernetes, AKS, plain OpenShift on VMs, or non-Azure
+  Red Hat OpenShift services.
 ---
 # Azure Red Hat OpenShift Crawl Report
 

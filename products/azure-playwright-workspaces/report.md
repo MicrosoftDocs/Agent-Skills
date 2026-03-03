@@ -14,6 +14,12 @@ category_descriptions:
     enabling monitoring, and understanding available metrics and logs for observability.'
   troubleshooting: Diagnosing and fixing Playwright Testing run failures and resolving
     AADSTS7000112/Azure AD sign-in issues for accessing the Playwright portal.
+skill_description: Expert knowledge for Playwright Workspaces in Microsoft Playwright
+  Testing covering workspace best practices (latency, sharding, visual regression,
+  private app access), security (access tokens, AAD/RBAC roles), decision making (team/project
+  workspace design), limits & quotas (concurrency, free trial), configuration (service
+  config file, metrics/logs), and troubleshooting run failures/AADSTS7000112. Use
+  when designing, configuring, or debugging Microsoft Playwright Testing workspaces.
 ---
 # Playwright Workspaces Crawl Report
 

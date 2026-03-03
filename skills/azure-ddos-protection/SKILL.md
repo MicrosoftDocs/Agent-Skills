@@ -1,6 +1,6 @@
 ---
 name: azure-ddos-protection
-description: Expert knowledge for Azure DDos Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when building, debugging, or optimizing Azure DDos Protection applications.
+description: Expert knowledge for Azure DDos Protection covering Standard vs IP Protection tiers, plan configuration, VNet association, Azure Monitor/Log Analytics diagnostics, metric/diagnostic alerts, Azure Policy compliance, Gateway Load Balancer L7 patterns, pricing/coverage decisions, DDoS Rapid Response engagement, RBAC for plan assignment, and safe test attacks. Use when designing, configuring, or troubleshooting Azure DDoS Protection. Not for Azure Firewall, WAF, Front Door, or generic network security.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

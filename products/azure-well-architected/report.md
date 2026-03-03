@@ -21,6 +21,12 @@ category_descriptions:
   tradeoffs: Guidance on balancing cost, reliability, performance, security, and operations
     in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis
     for architecture decisions
+skill_description: Expert knowledge for Azure Well Architected covering workload patterns
+  (AI, SAP, Oracle, SaaS, AVD, AVS, mission-critical), assessment questions, design
+  principles, service guides, recommendations, design review checklists, and tradeoff
+  analysis across cost, security, reliability, performance, operations, and sustainability.
+  Use when designing, reviewing, or optimizing Azure architectures against the Well-Architected
+  Framework.
 ---
 # Azure Well Architected Crawl Report
 

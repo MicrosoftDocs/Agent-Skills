@@ -1,6 +1,6 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Search applications.
+description: Expert knowledge for Azure AI Search covering index/schema design, data sources, skillsets/enrichment, vector/semantic/Hybrid+RAG queries, knowledge store, ARM/Bicep/Terraform deployment, RBAC/keys/CMK, private endpoints, indexer errors (e.g., IndexerTemporaryException), OData filters, limits/quotas, and cost/tier planning. Use when designing, securing, integrating, or troubleshooting Azure AI Search for agentic retrieval. Not for Azure Cognitive Search classic, Azure OpenAI, or general database search.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

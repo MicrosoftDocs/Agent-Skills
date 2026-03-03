@@ -10,6 +10,11 @@ category_descriptions:
   security: Configuring security levels, policies, and posture in Azure Resiliency,
     including how to assess, adjust, and enforce protections for resilient workloads
     and infrastructure.
+skill_description: Expert knowledge for Azure Resiliency covering Azure Backup vaults,
+  Site Recovery vaults, protection policies, replication settings, backup/restore/DR
+  lifecycle, service limits/quotas, resiliency SLAs, support boundaries, and security
+  posture (RBAC, encryption, soft delete, MFA). Use when designing or troubleshooting
+  resilient Azure workloads, backup/DR configs, or resiliency-related security settings.
 ---
 # Azure Resiliency Crawl Report
 

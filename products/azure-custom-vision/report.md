@@ -17,6 +17,12 @@ category_descriptions:
   decision-making: Guidance on selecting the best Custom Vision domain for your scenario
     and planning migrations from Custom Vision to other Azure or third‑party vision
     services.
+skill_description: Expert knowledge for Azure AI Custom Vision covering deployment/export
+  (ONNX, TensorFlow, iOS/Android, edge), project copy/backup across regions, SDK/API
+  integration, Windows ML/Python inference, Azure Storage integration, CMK encryption,
+  RBAC roles, Smart Labeler, training/prediction limits and quotas, domain selection,
+  and migration planning. Use when designing, securing, or scaling Custom Vision solutions.
+  Not for Azure AI Vision (Computer Vision/Face) or generic image ML frameworks.
 ---
 # Azure AI Custom Vision Crawl Report
 

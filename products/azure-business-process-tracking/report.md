@@ -3,6 +3,12 @@ generated_at: '2026-02-28'
 category_descriptions:
   deployment: Guidance on setting up automated CI/CD pipelines to build, test, and
     deploy Azure Business Process Tracking solutions using DevOps tools and best practices.
+skill_description: Expert knowledge for Azure Business Process Tracking deployment
+  covering Azure DevOps YAML pipelines, classic release pipelines, CI/CD for tracking
+  components, build/test stages, ARM/Bicep templates, Key Vault integration, approvals,
+  rollback, and environment promotion. Use when designing or troubleshooting automated
+  deployment of Azure Business Process Tracking solutions. Not for general Azure Logic
+  Apps, Service Bus, or API Management deployments.
 ---
 # Azure Business Process Tracking Crawl Report
 

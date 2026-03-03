@@ -1,6 +1,6 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Speech applications.
+description: Expert knowledge for Azure AI Speech covering STT/TTS config (audio formats, SSML, phonemes, custom/pro voices, Voice Live), containers/Kubernetes, on-prem endpoints, language ID, Entra ID/RBAC, VNet/Private Link, BYOS, batch/long-form synthesis, SDK/REST integration, error codes, quotas/throttling, and migration between Speech/Voice APIs. Use when designing, deploying, securing, or troubleshooting Azure AI Speech solutions. Not for Azure OpenAI text-only, Teams calling, or generic audio DSP.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

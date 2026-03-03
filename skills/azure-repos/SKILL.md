@@ -1,6 +1,6 @@
 ---
 name: azure-repos
-description: Expert knowledge for Azure Repos development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Repos applications.
+description: Expert knowledge for Azure Repos covering Git/TFVC setup, Entra ID/PAT/SSH auth, branch/repo/PR permissions and policies, secure cloning/import, CodeQL/secret/dependency scanning, tf.exe/TFVC workspaces, repo migration between projects, index.lock/push/merge errors, and branching strategies. Use when configuring, securing, troubleshooting, or migrating Azure Repos. Not for GitHub.com repos or Azure DevOps Pipelines.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

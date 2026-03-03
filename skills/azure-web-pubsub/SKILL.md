@@ -1,6 +1,6 @@
 ---
 name: azure-web-pubsub
-description: Expert knowledge for Azure Web PubSub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Web PubSub applications.
+description: Expert knowledge for Azure Web PubSub covering decision making (tiers, zones, pricing meters), security (Entra ID, managed identity, access keys, mTLS, private endpoints, firewalls), integrations (WebSocket, MQTT, REST, CloudEvents, JSON/protobuf subprotocols, .NET/Java/JS/Python SDKs, Azure Functions, Socket.IO), architecture (DR, geo-replication, MQTT bridging, Socket.IO support model), configuration (custom domains, event handler routing, monitoring/metrics, alerts, OData filters, client URLs, local tunneling, MQTT/Socket.IO options), limits & quotas (connections, messages, scaling, unsupported Socket.IO server APIs), best practices (resilient WebSocket clients, reconnection, disconnect handling, error handling, connection lifecycle), troubleshooting (logs, diagnostics, common errors, handler debugging, Socket.IO issues), and deployment (Premium autoscale, cross-region moves, migrating Socket.IO apps and serverless chat). Use when designing, configuring, securing, integrating, scaling, or troubleshootin...
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

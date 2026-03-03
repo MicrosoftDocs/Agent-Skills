@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: 'Configuring Service Fabric app upgrade settings: health policies,
     domains, timeouts, monitoring, and tuning parameters to make upgrades safe and
     reliable.'
+skill_description: Expert knowledge for Azure Service Fabric covering cluster configuration
+  (cluster/node types, manifests, reverse proxy, Reliable Services/Actors), CRP/Cluster
+  Resource Manager, health/upgrade policies, CI/CD deployments, security (certs, TLS,
+  Entra ID, Key Vault), diagnostics, and troubleshooting (upgrade failures, SNAT,
+  remoting, connectivity). Use when designing, securing, deploying, or debugging Service
+  Fabric clusters and apps. Not for AKS, Azure App Service, or Azure Functions.
 ---
 # Azure Service Fabric Crawl Report
 

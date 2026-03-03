@@ -1,6 +1,6 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
+description: Expert knowledge for Azure Api Center covering security (API key/OAuth2, portal access via VS Code extension), configuration (ARM/Bicep/CLI deployment, portal customization, API linting, metadata schemas, MCP/A2A agents, inventory), integrations (API Management, Amazon API Gateway, Copilot Studio, Logic Apps, Teams), governance best practices, and CI/CD deployment via GitHub Actions. Use when designing, securing, integrating, or automating Azure Api Center.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

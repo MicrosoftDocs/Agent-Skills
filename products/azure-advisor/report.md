@@ -18,6 +18,12 @@ category_descriptions:
   limits-quotas: Advisor feature availability, limits, and differences when running
     in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations
     are supported.
+skill_description: Expert knowledge for Azure Advisor covering configuration (alerts
+  via portal/ARM/Bicep, email digests, tag filters, workbooks), best practices (cost,
+  performance, reliability, operational excellence, bulk fixes, savings export), Resource
+  Graph/Kusto integrations, decision-making, RBAC security, and limits/sovereign clouds.
+  Use when optimizing Azure workloads with Advisor recommendations. Not for Azure
+  Monitor, Cost Management, or Security Center without Advisor context.
 ---
 # Azure Advisor Crawl Report
 

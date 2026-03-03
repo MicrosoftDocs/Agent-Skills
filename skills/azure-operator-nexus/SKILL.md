@@ -1,6 +1,6 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Operator Nexus applications.
+description: Expert knowledge for Azure Operator Nexus covering cluster/fabric configuration (BGP, VRF, QoS, ACLs, isolation domains, commit workflows, Kubernetes/AKS‑hybrid settings), security (RBAC, SSH, break‑glass, Defender/MDE, key/cert rotation), troubleshooting (bare metal, storage, connectivity, logs), deployment/upgrade, limits/quotas, and near‑edge storage architecture. Use when designing, operating, or debugging Azure Operator Nexus infrastructure. Not for generic Azure networking, AKS, or Azure Stack HCI.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

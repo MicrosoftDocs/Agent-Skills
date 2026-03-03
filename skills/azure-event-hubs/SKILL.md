@@ -1,6 +1,6 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Hubs applications.
+description: Expert knowledge for Azure Event Hubs covering .NET/Kafka/Flink/Spark/Akka integration, Kafka protocol (MirrorMaker 1/2, Streams, Connect, Debezium), partitions/retention/compaction, Premium processing units, application groups, geo-disaster recovery, Entra ID/SAS/RBAC, VNet/Private Link, TLS, troubleshooting AMQP/Kafka auth/ARM/checkpoint errors, and emulator use. Use when designing, configuring, securing, or troubleshooting Azure Event Hubs and Kafka-compatible ingestion. Not for Azure Service Bus, Azure IoT Hub, or general Kafka cluster administration.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

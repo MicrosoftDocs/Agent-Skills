@@ -1,6 +1,6 @@
 ---
 name: azure-operator-service-manager
-description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications.
+description: Expert knowledge for Azure Operator Service Manager covering AOSM onboarding/deployment best practices, configuration group schemas, Helm chart structure/cleanup, CLI/ARM/Helm onboarding of CNFs/VNFs, ACR/storage-backed artifact stores, cluster registry/edge resiliency, NFO extension commands, Private Link, custom RBAC/UAMI, and troubleshooting AOSM CLI/Helm install failures. Use when designing, securing, or debugging AOSM network services. Not for generic Azure networking, AKS, or Azure Operator Insights.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

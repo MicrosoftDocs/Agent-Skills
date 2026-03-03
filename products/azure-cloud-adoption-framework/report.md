@@ -31,6 +31,11 @@ category_descriptions:
   getting-started: Step-by-step checklist and best practices for planning, designing,
     and implementing a data mesh architecture on Azure, including governance, platform
     setup, and domain data products.
+skill_description: Expert knowledge for Azure Cloud Adoption Framework covering adoption
+  scenarios/patterns, landing zones, governance, security (Zero Trust, RBAC), networking/identity,
+  data/analytics, AI agents, AKS/AVS, SAP/Oracle/VMware, AVD, BCDR, org/CCoE design,
+  and cost management. Use when defining Azure strategy, planning migrations/modernization,
+  or designing/operating enterprise-scale Azure environments.
 ---
 # Azure Cloud Adoption Framework Crawl Report
 

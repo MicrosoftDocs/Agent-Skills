@@ -1,6 +1,6 @@
 ---
 name: azure-artifact-signing
-description: Expert knowledge for Azure Artifact Signing development including best practices, decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Artifact Signing applications.
+description: Expert knowledge for Azure Artifact Signing covering certificate lifecycle best practices (rotation, renewal, expiration), key protection, RBAC roles/permissions, identity validation, pricing/SKU selection, DGSSv2 migration, diagnostic settings, Log Analytics/Event Hubs/Storage logging, and CI/CD integrations (Azure DevOps, GitHub Actions). Use when designing, securing, configuring, or automating Azure Artifact Signing. Not for Azure Key Vault general usage or Azure Artifacts feeds.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

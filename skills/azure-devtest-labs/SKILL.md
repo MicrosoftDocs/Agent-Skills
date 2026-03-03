@@ -1,6 +1,6 @@
 ---
 name: azure-devtest-labs
-description: Expert knowledge for Azure DevTest Labs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure DevTest Labs applications.
+description: Expert knowledge for Azure DevTest Labs covering lab/VM configuration (images, VNETs, policies, costs, tags, ARM templates, artifacts, activity logs, alerts, IPs, resource groups), automation via ARM/PowerShell/CLI/REST/Functions, RBAC, Key Vault, Trusted Launch, Bastion/RDP, CI/CD deployment, quotas, and troubleshooting creation/artifact errors. Use when designing, securing, automating, or troubleshooting Azure DevTest Labs environments. Not for Azure Lab Services or general Azure VM usage outside DevTest Labs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

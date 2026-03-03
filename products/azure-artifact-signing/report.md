@@ -14,6 +14,12 @@ category_descriptions:
   integrations: How to integrate Azure Artifact Signing with supported tools and CI/CD
     systems, configure signing workflows, and apply recommended coding and automation
     patterns.
+skill_description: Expert knowledge for Azure Artifact Signing covering certificate
+  lifecycle best practices (rotation, renewal, expiration), key protection, RBAC roles/permissions,
+  identity validation, pricing/SKU selection, DGSSv2 migration, diagnostic settings,
+  Log Analytics/Event Hubs/Storage logging, and CI/CD integrations (Azure DevOps,
+  GitHub Actions). Use when designing, securing, configuring, or automating Azure
+  Artifact Signing. Not for Azure Key Vault general usage or Azure Artifacts feeds.
 ---
 # Azure Artifact Signing Crawl Report
 

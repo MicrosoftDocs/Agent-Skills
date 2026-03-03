@@ -4,6 +4,12 @@ category_descriptions:
   best-practices: Technical requirements and best practices for configuring Azure
     Peering Service prefixes, including routing, prefix validation, and connectivity
     constraints.
+skill_description: Expert knowledge for Azure Peering Service covering prefix configuration,
+  route validation, BGP routing policies, connectivity constraints, Microsoft edge
+  POP selection, partner ISP requirements, and best practices for registering and
+  advertising customer prefixes. Use when designing or troubleshooting Azure Peering
+  Service connectivity, latency, or routing behavior. Not for ExpressRoute, Azure
+  Virtual Network peering, or VPN Gateway scenarios.
 ---
 # Azure Peering Service Crawl Report
 

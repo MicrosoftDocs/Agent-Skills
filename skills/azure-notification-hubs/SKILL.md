@@ -1,6 +1,6 @@
 ---
 name: azure-notification-hubs
-description: Expert knowledge for Azure Notification Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Notification Hubs applications.
+description: Expert knowledge for Azure Notification Hubs covering FCM v1/APNS/WNS integration, device registration, tags/templates/localization, REST/SDK usage (Java, PHP, Python, UWP, Android, iOS), pricing tier selection, PNS credentials, Bicep/ARM/Terraform, Private Link, SAS/RBAC, TLS, troubleshooting dropped notifications, and scheduling. Use when designing, configuring, securing, or debugging Azure Notification Hubs push workloads. Not for Azure Event Grid, Azure Event Hubs, or Azure Communication Services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

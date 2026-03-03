@@ -1,6 +1,6 @@
 ---
 name: azure-video-indexer
-description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Video Indexer applications.
+description: Expert knowledge for Azure AI Video Indexer covering account type selection, multi-tenant design, Arc deployment (ARM/Bicep), API/widgets, Logic Apps/Power Automate, Azure OpenAI integration, limits/quotas, RBAC, private endpoints, NSGs, custom speech/brand/person models, live camera indexing, DR/failover, and Arc runtime troubleshooting. Use when designing, configuring, securing, integrating, or diagnosing Azure AI Video Indexer solutions.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -18,6 +18,12 @@ category_descriptions:
     your organization.
   security: 'Managing Azure Boards security: default permissions, configuring query/folder
     access, and setting access controls and policies to protect work items and boards.'
+skill_description: Expert knowledge for Azure Boards covering limits/quotas for test
+  plans, suites, and work item attachments; Excel/Office add-in sync and mapping errors;
+  WIQL queries; GitHub/Slack/Teams integration; process/field/Kanban WIP configuration;
+  SAFe/cross-team planning; and permissions/query security. Use when designing, configuring,
+  or troubleshooting Azure Boards work tracking. Not for Azure DevOps Repos, Pipelines,
+  or GitHub Projects.
 ---
 # Azure Boards Crawl Report
 

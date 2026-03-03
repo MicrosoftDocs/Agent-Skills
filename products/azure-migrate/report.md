@@ -28,6 +28,13 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment
     errors, replication and migration failures, connectivity, performance, OS upgrade,
     and web app migration problems.'
+skill_description: Expert knowledge for Azure Migrate covering appliance configuration,
+  VMware/Hyper-V/physical discovery, Arc-based discovery, assessments, sizing/cost,
+  migration waves, Site Recovery/REST APIs, AppCAT CLI, CAST Highlight, PostgreSQL/SQL/VM/web
+  app migration, Private Link, RBAC, CMK, limits/quotas, and troubleshooting replication/discovery
+  errors. Use when planning or executing workload moves to Azure from on-prem, AWS,
+  or GCP. Not for Azure Site Recovery-only DR, Data Box, or general Azure architecture
+  design.
 ---
 # Azure Migrate Crawl Report
 

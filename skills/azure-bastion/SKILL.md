@@ -1,6 +1,6 @@
 ---
 name: azure-bastion
-description: Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Bastion applications.
+description: Expert knowledge for Azure Bastion covering AKS private cluster access, VM scale sets, SSH/RDP via native clients, file transfer, NSG rules for Bastion-connected VMs, SKU selection (Basic/Standard/Developer), Kerberos and IP-based access, hub/spoke and VNet peering patterns, and connection troubleshooting. Use when designing, securing, configuring, or debugging Azure Bastion-based remote access.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

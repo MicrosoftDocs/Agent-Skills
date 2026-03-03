@@ -1,6 +1,6 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Files applications.
+description: Expert knowledge for Azure Files covering SMB/NFS share configuration, private endpoints/VPN, AD/Entra Kerberos auth, NTFS/share permissions, redundancy/tiers, Azure File Sync cloud tiering, DR/failover, FSLogix/VDI, AKS CSI, and SDK usage (.NET/Java/Python). Use when planning, deploying, securing, tuning, or migrating Azure Files/File Sync. Not for Azure Blob, Azure NetApp Files, or managed disks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

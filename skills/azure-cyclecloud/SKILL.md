@@ -1,6 +1,6 @@
 ---
 name: azure-cyclecloud
-description: Expert knowledge for Azure CycleCloud development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure CycleCloud applications.
+description: Expert knowledge for Azure CycleCloud covering API/CLI/Python automation, Slurm/Grid Engine/HTCondor/LSF/OpenPBS/HPC Pack integration, cluster templates, autoscaling, HB/HC VM tuning, networking/storage, SSL/SSH/Entra auth, deployment/upgrade, Spot VM strategy, and log-based troubleshooting. Use when designing, securing, or operating Azure CycleCloud HPC clusters. Not for generic Azure Batch or standalone Slurm on VMs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

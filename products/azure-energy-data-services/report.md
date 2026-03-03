@@ -21,6 +21,14 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing manifest ingestion failures in Azure Data
     Manager for Energy using Airflow logs, including log analysis steps and common
     error patterns.
+skill_description: Expert knowledge for Azure Energy Data Services (Azure Data Manager
+  for Energy / ADME) covering deployment tier selection (Developer vs Standard), OSDU
+  data/compute services, data partitions, CORS, Reservoir DDMS, audit logging, auth
+  tokens, ACLs, legal tags, private endpoints, managed identities, geospatial consumption
+  zones, OSDU Admin UI, large file upload, Airflow manifest ingestion errors, and
+  DR/HA patterns. Use when designing, securing, integrating, or troubleshooting ADME/OSDU
+  workloads on Azure. Not for generic Azure Storage, Azure Synapse, or non-OSDU data
+  platforms.
 ---
 # Azure Energy Data Services Crawl Report
 

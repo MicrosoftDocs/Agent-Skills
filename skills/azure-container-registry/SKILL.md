@@ -1,6 +1,6 @@
 ---
 name: azure-container-registry
-description: Expert knowledge for Azure Container Registry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Registry applications.
+description: Expert knowledge for Azure Container Registry covering RBAC/ABAC, private endpoints, CMK encryption, image signing/verification with Notation/Notary, purge/retention/soft delete, webhooks, ACR Tasks YAML, geo-replication, connected registry, AKS/ACI auth (managed identity, workload identity), ACR Transfer, and error troubleshooting (e.g., DENIED: requested access). Use when designing, securing, integrating, or troubleshooting ACR. Not for Azure Container Apps, Azure Container Instances runtime, or generic Docker Hub usage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

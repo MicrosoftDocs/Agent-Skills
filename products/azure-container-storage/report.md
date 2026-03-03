@@ -14,6 +14,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Container Storage v1 install failures,
     pool creation/health issues, and related Kubernetes cluster/storage configuration
     problems.
+skill_description: Expert knowledge for Azure Container Storage covering CMK encryption
+  with Elastic SAN volumes, v1 vs v2 cost/billing, LRS/ZRS and multi-zone redundancy,
+  storage pool/node affinity config, Prometheus & Azure Managed Grafana monitoring,
+  volume resize limits/quotas, and v1 install/pool health/Kubernetes errors. Use when
+  designing, configuring, or troubleshooting Azure Container Storage for AKS. Not
+  for generic Azure Storage accounts, Azure Disks, or Azure Files.
 ---
 # Azure Container Storage Crawl Report
 
@@ -25,6 +31,13 @@ category_descriptions:
 - **Classified**: 13
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +48,8 @@ category_descriptions:
 | security | 1 | 3.0% |
 | troubleshooting | 1 | 3.0% |
 | *(Unclassified)* | 20 | 60.6% |
+
+## Changes
 
 ## Classified Pages
 

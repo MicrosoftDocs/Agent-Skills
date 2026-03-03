@@ -1,6 +1,6 @@
 ---
 name: azure-import-export
-description: Expert knowledge for Azure Import Export development including troubleshooting, limits & quotas, and security. Use when building, debugging, or optimizing Azure Import Export applications.
+description: Expert knowledge for Azure Import Export covering CMK configuration, Azure Key Vault integration, RBAC permissions, data-at-rest encryption, hardware specs, supported OS/file systems, drive types, WAImportExport tool prerequisites, and troubleshooting job failures, copy errors, and v1 repair using logs. Use when planning or fixing Azure Storage Import/Export jobs. Not for AzCopy, Data Box, or general Azure Storage over network.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

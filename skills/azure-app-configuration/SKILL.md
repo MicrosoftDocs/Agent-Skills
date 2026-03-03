@@ -1,6 +1,6 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications.
+description: Expert knowledge for Azure App Configuration covering CI/CD deployment (export/import, snapshots, Azure Pipelines, GitHub Actions, Helm/Kubernetes), client libraries and Spring Boot v6 upgrade, .NET/Go/JS/Python/Spring/AKS/AI integrations, feature flags, geo-replication, private endpoints, managed identity/RBAC, REST API limits/throttling, and network/DNS/private endpoint troubleshooting. Use when designing, securing, integrating, or debugging Azure App Configuration stores. Not for Azure Key Vault secrets, Azure App Service app settings, or Azure Front Door configuration.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

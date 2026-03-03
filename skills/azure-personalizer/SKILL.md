@@ -1,6 +1,6 @@
 ---
 name: azure-personalizer
-description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Personalizer applications.
+description: Expert knowledge for Azure AI Personalizer covering configuration (policies, hyperparameters, exploration, apprentice mode, explainability, model export, learning loop), decision APIs (single-slot vs multi-slot), limits/quotas and scaling, security/encryption & CMK, troubleshooting low-quality rankings and API errors, and local inference SDK integrations. Use when designing, tuning, or debugging Azure AI Personalizer-based personalization. Not for Azure OpenAI, Azure Cognitive Search, or generic recommendation engines.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

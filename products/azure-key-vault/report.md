@@ -22,6 +22,14 @@ category_descriptions:
     in Azure Key Vault.
   deployment: How to deploy and provision Azure Key Vault and Managed HSM (vaults,
     keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell
+skill_description: 'Expert knowledge for Azure Key Vault and Azure Managed HSM: troubleshooting
+  access policy/RBAC failures, 403/429 REST errors, Private Link/firewall, certificate/DigiCert
+  issues; configuring keys/secrets, key rotation, secure key release, soft delete,
+  backup/restore, BYOK, key attestation; coding with client libraries, MSI, Event
+  Grid/Logic Apps; deployment via ARM/Bicep/Terraform/CLI/PowerShell; limits/throttling.
+  Use when designing, securing, integrating, or debugging Azure Key Vault/Managed
+  HSM workloads. Not for Azure Storage encryption, SQL TDE, or generic TLS/PKI without
+  Key Vault.'
 ---
 # Azure Key Vault Crawl Report
 

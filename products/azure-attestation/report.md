@@ -15,6 +15,13 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Attestation failures, including
     policy/quote validation errors, configuration issues, and troubleshooting attestation
     responses and tokens.
+skill_description: Expert knowledge for Azure Attestation covering JWT attestation
+  token validation, SGX/TPM quote verification, attestation policy grammar/versions,
+  claim rules, policy signer certificates, Azure Policy governance, private endpoints,
+  firewalls, managed identities, RBAC, Azure Monitor/Log Analytics schemas, and PowerShell/CLI
+  deployment and troubleshooting of policy/quote validation errors. Use when configuring,
+  securing, or debugging Azure Attestation providers and policies. Not for Azure Key
+  Vault, Azure Confidential Ledger, or general Azure networking.
 ---
 # Azure Attestation Crawl Report
 

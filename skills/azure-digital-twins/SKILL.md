@@ -1,6 +1,6 @@
 ---
 name: azure-digital-twins
-description: Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Digital Twins applications.
+description: Expert knowledge for Azure Digital Twins covering DTDL modeling, RDF/OWL conversion, APIs/SDKs/CLI, IoT Hub and Azure Data Explorer integration, routes/endpoints, query units and ADX queries, Entra app registrations, Private Link, HA/DR architecture, region migration, and troubleshooting 403/404, Explorer auth, and CLI parse errors. Use when designing, securing, deploying, or debugging Azure Digital Twins solutions. Not for generic IoT Hub, Time Series Insights, or Azure Digital Twins documentation authoring.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -20,6 +20,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Azure Managed Lustre deployment failures
     and performance issues, including cluster provisioning errors, throughput/latency
     problems, and tuning guidance.
+skill_description: Expert knowledge for Azure Managed Lustre covering VNet/NSG prerequisites,
+  client install/upgrade, mount options/fstab, ARM/Bicep and Terraform deployment,
+  Blob auto-import/export, AKS CSI driver, CMK encryption, root squash, quotas (user/group/project),
+  performance tuning (striping, NIC/throughput), and troubleshooting provisioning/latency
+  issues. Use when designing, securing, or debugging Azure Managed Lustre HPC filesystems.
+  Not for generic Azure Storage, Azure Files, or on-prem Lustre.
 ---
 # Azure Managed Lustre Crawl Report
 

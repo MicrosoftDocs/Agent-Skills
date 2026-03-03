@@ -18,6 +18,12 @@ category_descriptions:
     problems.
   limits-quotas: List of UI languages supported by Azure Community Training, including
     availability details and localization considerations.
+skill_description: 'Expert knowledge for Azure Industry covering Microsoft Community
+  Training on Azure: security/auth (Azure AD/B2C, SSO, roles, access restrictions,
+  backups), Teams integration and app/tab customization, deployment/uninstall, Android
+  app build/publish, portal branding/languages/certificates, performance troubleshooting,
+  and UI language limits. Use when configuring or operating Microsoft Community Training,
+  not for generic Azure training or LMS products like Viva Learning.'
 ---
 # Azure Industry Crawl Report
 

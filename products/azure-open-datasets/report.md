@@ -4,6 +4,12 @@ category_descriptions:
   limits-quotas: Managing and troubleshooting non-Spark download limits for Azure
     Open Datasets, including throttling behavior, quotas, and strategies to avoid
     or handle rate limits
+skill_description: Expert knowledge for Azure Open Datasets Limits & Quotas, including
+  non-Spark download limits, throttling behavior (HTTP 429), per-subscription quotas,
+  dataset size constraints, and strategies like pagination, backoff/retry, and batching
+  to avoid rate limits. Use when troubleshooting Azure Open Datasets REST/portal downloads
+  or optimizing high-volume access patterns. Not for Azure Databricks Spark jobs or
+  general Azure Storage throttling.
 ---
 # Azure Open Datasets Crawl Report
 

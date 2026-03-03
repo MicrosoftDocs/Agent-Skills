@@ -1,6 +1,6 @@
 ---
 name: azure-planetary-computer-pro
-description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Microsoft Planetary Computer Pro applications.
+description: Expert knowledge for Microsoft Planetary Computer Pro covering STAC collections/items APIs, bulk GeoCatalog ingestion, SAS token generation, Entra ID auth, RBAC, managed identities, cross-tenant access, collection config (mosaics, tiles, colormaps, Explorer filters, US Gov endpoints), error codes, and limits/quotas. Use when integrating with web apps/QGIS/ArcGIS, choosing access patterns, or troubleshooting ingestion. Not for classic Microsoft Planetary Computer or generic Azure Storage/Maps.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

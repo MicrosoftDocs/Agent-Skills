@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-wan
-description: Expert knowledge for Azure Virtual WAN development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual WAN applications.
+description: Expert knowledge for Azure Virtual WAN covering hub architecture, limits/quotas, P2S/Always On VPN (Entra ID, certs, Azure VPN Client), IPsec/BGP, ExpressRoute/SD‑WAN CPE integration, Azure Firewall/NVA patterns, VPN NAT, routing, diagnostics, and PowerShell deployment/automation. Use when designing, securing, integrating, or troubleshooting Azure Virtual WAN hubs and global transit. Not for classic VPN Gateway, VNet peering-only designs, or Azure Front Door.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

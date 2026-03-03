@@ -28,6 +28,12 @@ category_descriptions:
   best-practices: Performance, scaling, HA, and cost-optimization best practices for
     Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks,
     and Image Builder/boot-time optimization.
+skill_description: Expert knowledge for Azure Virtual Machines covering VM/VMSS architecture,
+  multi-region DR, NUMA/HPC/GPU tuning, Trusted Launch, ADE/CMK/double encryption,
+  Key Vault, RBAC/policy, images/galleries, NSG/WinRM/SSH, Spot/scale set errors,
+  quotas/limits, Image Builder, Oracle/RHEL workloads, and DevOps deployments. Use
+  when designing, securing, sizing, automating, or troubleshooting Azure VMs/VMSS/Disks.
+  Not for Azure App Service, Azure Functions, or AKS-only container workloads.
 ---
 # Azure Virtual Machines Crawl Report
 

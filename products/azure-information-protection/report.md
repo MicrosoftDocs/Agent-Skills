@@ -11,6 +11,12 @@ category_descriptions:
     service reliability.
   configuration: Configuring and deploying the Windows RMS (MSIPC) client and setting
     required registry values for RMS connectors on servers for Azure Information Protection.
+skill_description: Expert knowledge for Azure Information Protection covering Azure
+  Rights Management vs on-prem AD RMS decision making, RMS connector deployment, AD
+  RMS to AIP key/policy migration (HSM/software keys), MSIPC (Windows RMS) client
+  configuration, registry keys for RMS connectors, and monitoring/troubleshooting
+  (logs, metrics, connector health). Use when designing, deploying, or diagnosing
+  AIP/RMS. Not for Microsoft Purview Information Protection or generic Azure security.
 ---
 # Azure Information Protection Crawl Report
 

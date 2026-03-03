@@ -12,6 +12,12 @@ category_descriptions:
   integrations: Configuring Oracle Exadata log collection and pipelines into Azure
     Monitor and Microsoft Sentinel for monitoring, analytics, and security SIEM/SOAR
     use cases.
+skill_description: Expert knowledge for Azure Oracle covering Oracle Database@Azure
+  troubleshooting (connectivity, ORA- errors, performance, deployment, configuration,
+  platform limits), TDE with Azure Key Vault (CMK, key rotation), onboarding and VNet/subnet/routing
+  design, and Exadata log pipelines to Azure Monitor/Sentinel. Use when designing,
+  securing, or debugging Oracle Database@Azure. Not for Azure SQL, Oracle on IaaS
+  VMs, or on‑prem Oracle.
 ---
 # Azure Oracle Crawl Report
 

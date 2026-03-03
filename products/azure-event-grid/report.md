@@ -26,6 +26,13 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Event Grid issues: MQTT broker problems,
     error codes, common failures, network connectivity, and event subscription validation
     errors.'
+skill_description: Expert knowledge for Azure Event Grid covering topics/namespaces,
+  event subscriptions, filters, dead-lettering, retries, MQTT broker/security, RBAC,
+  managed identities, private endpoints, TLS, Azure Policy, schema mapping, HTTP/webhooks,
+  Graph/M365, Auth0, Arc-enabled Kubernetes extension, limits/quotas, and troubleshooting
+  (e.g., validation errors, 4xx/5xx). Use when designing, securing, integrating, deploying,
+  or debugging Azure Event Grid and MQTT-based workflows. Not for Azure Service Bus,
+  Event Hubs, or Logic Apps orchestration.
 ---
 # Azure Event Grid Crawl Report
 

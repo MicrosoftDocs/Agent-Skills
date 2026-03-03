@@ -19,6 +19,13 @@ category_descriptions:
     with Azure Monitor logs.
   integrations: Using VS Code dev tunnels to securely connect to Azure Dev Box, including
     setup, authentication, and remote development workflow configuration.
+skill_description: Expert knowledge for Azure Dev Box covering image definitions,
+  pre-warmed Visual Studio caches, Dev Box pools deployment/region moves, VNet/NSG
+  configuration, catalogs, policies, stop/hibernate/auto-delete schedules, RBAC/Conditional
+  Access/Intune, Key Vault, quotas/core limits, Troubleshoot and Repair, RDP/connectivity
+  errors, Azure Monitor logs, and VS Code dev tunnels. Use when designing, configuring,
+  securing, or troubleshooting Azure Dev Box environments. Not for standard Azure
+  Virtual Machines, Azure Virtual Desktop, or GitHub Codespaces.
 ---
 # Azure Dev Box Crawl Report
 

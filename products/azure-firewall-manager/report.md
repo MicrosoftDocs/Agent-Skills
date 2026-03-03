@@ -12,6 +12,13 @@ category_descriptions:
   decision-making: Guidance on choosing between a secured virtual hub and a hub virtual
     network in Azure Firewall Manager, including architecture, security, routing,
     and management trade-offs.
+skill_description: Expert knowledge for Azure Firewall Manager covering DDoS Protection
+  plans, centralized WAF policy management, threat intelligence-based filtering, Azure
+  Firewall policy configuration (DNS proxy, FQDN filtering, IP Groups, rule hierarchy/inheritance,
+  Virtual WAN secured private endpoints), rule collection groups/priority, and choosing
+  secured virtual hub vs hub VNet. Use when designing, configuring, or optimizing
+  Azure Firewall Manager deployments. Not for Azure Application Gateway, Azure Front
+  Door, NSGs, or generic Azure Firewall (without Manager).
 ---
 # Azure Firewall Manager Crawl Report
 

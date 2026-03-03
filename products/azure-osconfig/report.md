@@ -11,6 +11,13 @@ category_descriptions:
     or reporting problems.
   security: Configuring Windows security via OSConfig, including App Control for Business
     policies and applying Windows Server 2025 security baselines.
+skill_description: Expert knowledge for Azure Osconfig covering Azure IoT OSConfig
+  integrations, custom command execution, Linux networking/firewall/package management,
+  hostname/reboot control, hardware/OS inventory, SSH Posture Control for sshd_config,
+  OSConfig breaking changes, agent health/status, IoT Hub connectivity/logs, and Windows
+  App Control for Business and Windows Server 2025 security baselines. Use when configuring
+  or troubleshooting Azure IoT OSConfig on Linux/Windows devices. Not for generic
+  Azure VM management, Azure Policy, or Microsoft Intune security baselines.
 ---
 # Azure Osconfig Crawl Report
 

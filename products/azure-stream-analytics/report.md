@@ -28,6 +28,14 @@ category_descriptions:
   limits-quotas: Configuring and tuning Stream Analytics streaming units and clusters,
     including how to resize, scale performance, and understand capacity limits and
     resource quotas.
+skill_description: 'Expert knowledge for Azure Stream Analytics covering job configuration
+  (inputs/outputs: Event Hubs, IoT Hub, Kafka, SQL, Cosmos DB, Power BI, Delta Lake),
+  security (managed identity, private endpoints, VNet), CI/CD deployment (Bicep, ARM,
+  GitHub Actions, Azure DevOps, IoT Edge), troubleshooting (query/UDF errors, connection
+  failures, SU/cluster scaling, metrics/logs), design patterns, and limits/quotas.
+  Use when designing, securing, deploying, tuning, or debugging Azure Stream Analytics
+  jobs and clusters. Not for Azure Databricks, Azure Data Explorer, Synapse/SQL streaming,
+  or general batch ETL.'
 ---
 # Azure Stream Analytics Crawl Report
 

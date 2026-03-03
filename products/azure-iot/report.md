@@ -21,6 +21,12 @@ category_descriptions:
   troubleshooting: Debugging Azure IoT embedded device tutorials, including build/deploy
     failures, connection/auth issues, sample app errors, and how to collect logs and
     diagnose common device-side problems.
+skill_description: Expert knowledge for Azure IoT covering IoT Hub, DPS, MQTT, IoT
+  Plug and Play, DTDL modeling, device/service SDK selection (C vs Embedded C, .NET,
+  Node.js), industrial IoT reference architectures, secure Azure IoT Explorer use,
+  and debugging embedded samples (connection/auth, build/deploy, logs). Use when designing,
+  integrating, securing, or troubleshooting Azure IoT device-to-cloud solutions. Not
+  for Azure Sphere, generic MQTT brokers, or non-IoT Azure services.
 ---
 # Azure IoT Crawl Report
 

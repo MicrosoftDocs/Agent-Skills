@@ -20,6 +20,12 @@ category_descriptions:
     role structure, permissions, and step-by-step creation using the Azure portal
   integrations: How to assign, list, and query Azure RBAC role assignments using portal,
     CLI, PowerShell, Bicep/ARM templates, REST API, and managed identities
+skill_description: Expert knowledge for Azure Role-based access control covering RBAC/ABAC
+  design, least privilege, deny assignments, PIM, built-in vs custom roles, condition
+  syntax, Activity Log audits, role assignment errors, CLI/PowerShell/REST/Bicep automation,
+  and subscription directory moves. Use when designing, securing, configuring, or
+  troubleshooting Azure RBAC. Not for Entra ID app roles, Azure DevOps permissions,
+  or general Windows file ACLs.
 ---
 # Azure Role-based access control Crawl Report
 

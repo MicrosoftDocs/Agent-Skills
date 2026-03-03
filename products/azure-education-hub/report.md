@@ -5,6 +5,12 @@ category_descriptions:
     renewals, and how to monitor, manage, or avoid hitting those usage caps.
   troubleshooting: Diagnosing and resolving Azure Dev Tools for Teaching sign-in issues,
     including common login errors, account problems, and access troubleshooting steps.
+skill_description: Expert knowledge for Azure Education Hub covering Azure for Students
+  free credit limits, yearly quota renewals, spending caps, usage monitoring in Azure
+  portal/Cost Management, and troubleshooting Azure Dev Tools for Teaching sign-in
+  issues (account mismatch, AAD login loops, access denied). Use when managing student
+  quotas or resolving Azure Dev Tools for Teaching login/access problems. Not for
+  general Azure subscription billing or non-education offers.
 ---
 # Azure Education Hub Crawl Report
 

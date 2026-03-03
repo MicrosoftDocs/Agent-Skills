@@ -28,6 +28,12 @@ category_descriptions:
   best-practices: 'Best practices for faster, reliable pipelines: caching, cross-platform
     scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact
     Analysis, and UI test configuration.'
+skill_description: Expert knowledge for Azure Pipelines security, YAML configuration,
+  self-hosted/hosted agents, service connections, Key Vault secrets, approvals/checks,
+  CI/CD deployment to Azure Web Apps/AKS/VMs/SQL, limits/quotas, migration from classic/Jenkins,
+  troubleshooting failed runs (e.g., VS402852), and performance best practices. Use
+  when designing, securing, or debugging Azure DevOps Pipelines. Not for GitHub Actions
+  or generic Azure DevOps Boards/Repos questions.
 ---
 # Azure Pipelines Crawl Report
 

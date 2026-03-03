@@ -23,6 +23,12 @@ category_descriptions:
     tips to diagnose and resolve them.'
   limits-quotas: Configuring and enforcing page size limits for GraphQL and REST queries
     in Data API builder using the first/$first parameters.
+skill_description: Expert knowledge for Azure Data Api Builder covering dab-config.json,
+  CLI config, entities/relationships, Cosmos DB/Azure SQL sources, REST/GraphQL ($filter,
+  $select, $first), upserts with If-Match/ETag, EasyAuth/JWT/Entra ID roles, RLS,
+  deployment to Container Apps/Instances, SQL MCP Server, limits/quotas, and common
+  error troubleshooting. Use when designing, securing, deploying, or debugging Data
+  API builder and SQL MCP-based data APIs.
 ---
 # Azure Data Api Builder Crawl Report
 

@@ -3,6 +3,11 @@ generated_at: '2026-02-28'
 category_descriptions:
   limits-quotas: How to request and manage per-region Azure Storage account quota
     increases, including limits, prerequisites, and support request steps.
+skill_description: Expert knowledge for Azure Quotas covering Azure Storage per-region
+  limits, subscription and account quotas, quota increase prerequisites, support request
+  steps in Azure Portal, and troubleshooting “RequestDisallowedByPolicy” or quota-exceeded
+  errors. Use when planning capacity, requesting storage quota increases, or managing
+  regional limits. Not for Azure SQL, VM core quotas, or general Azure resource limits.
 ---
 # Azure Quotas Crawl Report
 

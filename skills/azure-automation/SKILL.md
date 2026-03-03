@@ -1,6 +1,6 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Automation applications.
+description: Expert knowledge for Azure Automation covering Automation Accounts security (managed identities, Entra ID auth, RBAC, private endpoints, Key Vault creds), runbooks/DSC config, Hybrid Runbook Workers, Change Tracking/Inventory, CI/CD, ARM/Bicep/Terraform, DSC/Chocolatey, quotas, and migration from Orchestrator/Log Analytics agent. Use when designing, securing, integrating, or troubleshooting Azure Automation. Not for Azure Functions, Logic Apps, or general VM scripting.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

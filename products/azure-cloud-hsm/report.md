@@ -15,6 +15,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Cloud HSM issues, including
     connectivity, configuration, performance, key operations, and integration failures
     with detailed troubleshooting steps.
+skill_description: Expert knowledge for Azure Cloud Hsm covering security hardening,
+  RBAC, private endpoints, cluster configuration, backup/restore, audit/operation
+  logs, PKCS#11 integration, key lifecycle management, supported algorithms/key sizes,
+  capacity limits, and troubleshooting connectivity, performance, and key operation
+  errors. Use when designing, securing, or debugging Azure Cloud HSM clusters and
+  integrations. Not for Azure Key Vault (standard or Managed HSM).
 ---
 # Azure Cloud Hsm Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure API Management applications.
+description: Expert knowledge for Azure API Management covering policies (rate-limit, quota, validate-jwt, validate-content), OpenAI/LLM backends, GraphQL, OAuth2/JWT/Entra ID/B2C, VNet/internals, self-hosted gateway (Kubernetes/Docker), caching, WSDL/REST conversion, WebSocket/SSE, SNAT limits, backup/restore, CI/CD, and developer portal. Use when designing, securing, scaling, or troubleshooting Azure API Management. Not for Azure Front Door, Application Gateway, or Logic Apps.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

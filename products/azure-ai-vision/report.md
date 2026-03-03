@@ -16,6 +16,15 @@ category_descriptions:
   decision-making: Guides for planning and executing migrations and upgrades between
     Azure Vision Image Analysis and Read OCR versions/containers, including breaking
     changes and app update steps.
+skill_description: Expert knowledge for Azure AI Vision covering Image Analysis limits/quotas
+  (adult/racy scores, category lists, object/person detection, smart-crop, OCR language
+  support), Vision Read OCR containers deployment/configuration (Docker, on-prem,
+  env vars, networking, Blob Storage), SDK/API integrations (thumbnails, background
+  removal, embeddings, video frame analysis), and migration/upgrade decisions between
+  Vision Image Analysis and Read OCR versions. Use when designing, configuring, or
+  troubleshooting Azure AI Vision/Read OCR workloads, container runtime issues, or
+  API integration patterns. Not for Azure Cognitive Search, Azure OpenAI vision, generic
+  computer vision theory, or non-Azure OCR services.
 ---
 # Azure AI Vision Crawl Report
 

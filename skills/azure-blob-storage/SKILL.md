@@ -1,6 +1,6 @@
 ---
 name: azure-blob-storage
-description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Blob Storage applications.
+description: Expert knowledge for Azure Blob Storage covering deployment (static website hosting, CDN, GitHub Actions, Terraform, Data Lake enablement, Data Box, WANdisco, Nasuni, Tiger Bridge), pricing/tier decisions, lifecycle/immutability/soft delete/PITR, NFS/SFTP/BlobFuse2 mounts, RBAC/ABAC, Entra ID, SAS, CPK/encryption scopes, performance limits, Storage Mover and BlobFuse errors, and SDK/CLI coding patterns. Use when designing, securing, configuring, or troubleshooting Azure Blob Storage accounts, containers, and blobs. Not for Azure SQL, Azure Files, Azure NetApp Files, Azure Disks, or non-Azure object storage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

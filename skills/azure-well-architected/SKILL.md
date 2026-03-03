@@ -1,6 +1,6 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles.
+description: Expert knowledge for Azure Well Architected covering workload patterns (AI, SAP, Oracle, SaaS, AVD, AVS, mission-critical), assessment questions, design principles, service guides, recommendations, design review checklists, and tradeoff analysis across cost, security, reliability, performance, operations, and sustainability. Use when designing, reviewing, or optimizing Azure architectures against the Well-Architected Framework.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

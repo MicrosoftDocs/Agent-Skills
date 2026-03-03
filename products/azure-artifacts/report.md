@@ -18,6 +18,12 @@ category_descriptions:
     artifacts.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
+skill_description: Expert knowledge for Azure Artifacts covering feed configuration,
+  limits/quotas, views/promotion, retention, upstream sources, .npmrc scopes, .artifactignore,
+  and secure package management for npm, NuGet, Maven, Gradle, Cargo, Python, PowerShell,
+  Universal Packages, plus GitHub Actions CI/CD publishing. Use when managing Azure
+  DevOps Artifacts feeds, migrations, or security. Not for Azure Storage, GitHub Packages,
+  or general Azure DevOps pipelines.
 ---
 # Azure Artifacts Crawl Report
 

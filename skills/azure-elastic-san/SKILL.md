@@ -1,6 +1,6 @@
 ---
 name: azure-elastic-san
-description: Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Elastic SAN applications.
+description: Expert knowledge for Azure Elastic SAN covering sizing/architecture, volume groups, iSCSI/CSI integration with AKS, Linux/Windows, performance tuning (IOPS, throughput, latency), snapshots for backup/DR, CMK encryption, private endpoints, limits/quotas, clustered SQL/Failover Cluster patterns, and error troubleshooting. Use when designing, configuring, or debugging Azure Elastic SAN. Not for Azure NetApp Files, Azure Disks, or Azure Files.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

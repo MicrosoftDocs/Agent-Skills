@@ -1,6 +1,6 @@
 ---
 name: azure-peering-service
-description: Expert knowledge for Azure Peering Service development including best practices. Use when building, debugging, or optimizing Azure Peering Service applications.
+description: Expert knowledge for Azure Peering Service covering prefix configuration, route validation, BGP routing policies, connectivity constraints, Microsoft edge POP selection, partner ISP requirements, and best practices for registering and advertising customer prefixes. Use when designing or troubleshooting Azure Peering Service connectivity, latency, or routing behavior. Not for ExpressRoute, Azure Virtual Network peering, or VPN Gateway scenarios.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

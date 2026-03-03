@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications.
+description: Expert knowledge for Azure Virtual Machines covering VM/VMSS architecture, multi-region DR, NUMA/HPC/GPU tuning, Trusted Launch, ADE/CMK/double encryption, Key Vault, RBAC/policy, images/galleries, NSG/WinRM/SSH, Spot/scale set errors, quotas/limits, Image Builder, Oracle/RHEL workloads, and DevOps deployments. Use when designing, securing, sizing, automating, or troubleshooting Azure VMs/VMSS/Disks. Not for Azure App Service, Azure Functions, or AKS-only container workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

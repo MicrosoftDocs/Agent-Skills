@@ -9,6 +9,12 @@ category_descriptions:
     troubleshooting steps.
   configuration: 'Configuring Azure Impact Reporting: creating alert connectors and
     retrieving valid impact and HPC Guest Health category values for correct classification.'
+skill_description: Expert knowledge for Azure Impact Reporting covering integrations
+  with Azure Monitor alerts, Logic Apps, Service Health, HPC VM node/guest health,
+  Impact Reporting APIs/portal, connector configuration (alert connectors, impact
+  categories, HPC Guest Health categories), and troubleshooting connection failures,
+  data sync, and config errors. Use when designing integrations, classifying impact,
+  or diagnosing Impact Reporting connector issues.
 ---
 # Azure Impact Reporting Crawl Report
 

@@ -27,6 +27,13 @@ category_descriptions:
   limits-quotas: 'Synapse SQL pool limits: maintenance windows, memory/concurrency
     by performance level, capacity caps, temp table behavior, serverless Delta Lake
     v1 querying, and Synapse Link feature limits/issues.'
+skill_description: Expert knowledge for Azure Synapse Analytics covering workspace
+  deployment (ARM/Bicep, CI/CD), dedicated/serverless SQL pools, Spark pools, RBAC,
+  private endpoints, data exfiltration protection, workload management, ELT/PolyBase,
+  Delta Lake, Synapse Link, query performance (DWU, distribution, stats), and common
+  errors/timeouts. Use when designing, securing, tuning, or troubleshooting Synapse
+  workspaces, SQL/Spark, or migrations to Synapse. Not for Azure SQL Database, Azure
+  Databricks, or Azure Data Factory-only pipelines.
 ---
 # Azure Synapse Analytics Crawl Report
 

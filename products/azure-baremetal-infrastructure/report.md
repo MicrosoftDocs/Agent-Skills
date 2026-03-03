@@ -6,6 +6,12 @@ category_descriptions:
     HA, and networking.
   decision-making: Guidance on selecting NC2 on Azure regions and hardware SKUs, including
     capacity, performance, and availability considerations for deployment planning.
+skill_description: Expert knowledge for Azure Baremetal Infrastructure focusing on
+  NC2 on Azure BareMetal architecture, deployment topologies, VLAN/VXLAN networking,
+  ExpressRoute/peering, HA/DR patterns, and integration with Azure services (VNet,
+  NSG, Load Balancer). Includes region and hardware SKU selection, capacity/performance
+  planning, and availability constraints. Use when designing or planning NC2 on Azure
+  BareMetal deployments. Not for generic Azure VMs, AKS, or Azure Stack HCI.
 ---
 # Azure Baremetal Infrastructure Crawl Report
 

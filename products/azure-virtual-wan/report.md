@@ -22,6 +22,12 @@ category_descriptions:
     and Azure Firewall–protected spoke access.
   decision-making: Guidance on when/how to upgrade Virtual WAN from Basic to Standard,
     and how to choose Virtual WAN partners and hub locations for your network design.
+skill_description: Expert knowledge for Azure Virtual WAN covering hub architecture,
+  limits/quotas, P2S/Always On VPN (Entra ID, certs, Azure VPN Client), IPsec/BGP,
+  ExpressRoute/SD‑WAN CPE integration, Azure Firewall/NVA patterns, VPN NAT, routing,
+  diagnostics, and PowerShell deployment/automation. Use when designing, securing,
+  integrating, or troubleshooting Azure Virtual WAN hubs and global transit. Not for
+  classic VPN Gateway, VNet peering-only designs, or Azure Front Door.
 ---
 # Azure Virtual WAN Crawl Report
 

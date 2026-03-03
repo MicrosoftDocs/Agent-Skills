@@ -26,6 +26,12 @@ category_descriptions:
   best-practices: Best practices for using QDK in VS Code with Copilot, optimizing
     large Q# programs via resource estimation, and systematically testing and debugging
     quantum code.
+skill_description: Expert knowledge for Azure Quantum troubleshooting provider jobs
+  (IonQ, PASQAL, Quantinuum, Rigetti), quotas/timeouts, QDK/qdk.azure setup, QIR/OpenQASM/Pulser,
+  Qiskit/Cirq submission, RBAC/ARM locks/managed identities, workspace ARM/Bicep/CLI
+  deployment, hybrid jobs, and resource estimator. Use when designing, configuring,
+  or debugging Azure Quantum workloads. Not for generic quantum theory or non-Azure
+  quantum services.
 ---
 # Azure Quantum Crawl Report
 

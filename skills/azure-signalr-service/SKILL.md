@@ -1,6 +1,6 @@
 ---
 name: azure-signalr-service
-description: Expert knowledge for Azure SignalR Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SignalR Service applications.
+description: Expert knowledge for Azure SignalR Service covering mode selection (Default/Serverless/Classic), connection strings, negotiation endpoints, upstream, Functions bindings, auth with Entra ID/managed identity, private endpoints, autoscale, sharding, ASP.NET Core integration, quotas, and live trace troubleshooting. Use when designing, securing, deploying, or debugging real-time SignalR apps on Azure. Not for generic ASP.NET SignalR hosting outside Azure.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

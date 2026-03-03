@@ -24,6 +24,13 @@ category_descriptions:
     regions and automating upgrades from Basic to Standard using PowerShell.'
   security: 'Security guidance for Azure Load Balancer: hardening, access controls,
     and using Azure DDoS Protection to defend against volumetric and network attacks.'
+skill_description: Expert knowledge for Azure Load Balancer covering Standard/Basic
+  SKUs, frontend/backend pools (incl. cross-subscription, outbound-only), load balancing/NAT
+  rules v1/v2, SNAT and TCP idle timeout/reset, health probes (incl. custom HTTP/HTTPS
+  Python probes), VM scale set integration, IMDS/Monitor/CLI/REST metrics, deployment
+  errors, probe failures, IMDS errors, and Basic→Standard or AWS NLB migrations. Use
+  when designing, configuring, or troubleshooting Azure Load Balancer. Not for Azure
+  Application Gateway, Azure Front Door, or Traffic Manager.
 ---
 # Azure Load Balancer Crawl Report
 

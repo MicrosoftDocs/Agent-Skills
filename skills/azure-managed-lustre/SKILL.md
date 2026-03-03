@@ -1,6 +1,6 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Managed Lustre applications.
+description: Expert knowledge for Azure Managed Lustre covering VNet/NSG prerequisites, client install/upgrade, mount options/fstab, ARM/Bicep and Terraform deployment, Blob auto-import/export, AKS CSI driver, CMK encryption, root squash, quotas (user/group/project), performance tuning (striping, NIC/throughput), and troubleshooting provisioning/latency issues. Use when designing, securing, or debugging Azure Managed Lustre HPC filesystems. Not for generic Azure Storage, Azure Files, or on-prem Lustre.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

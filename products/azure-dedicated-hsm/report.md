@@ -16,6 +16,12 @@ category_descriptions:
   troubleshooting: Support boundaries between Microsoft, HSM vendors, and customers,
     plus diagnosing and resolving deployment, networking, and configuration issues
     for Azure Dedicated HSM.
+skill_description: Expert knowledge for Azure Dedicated HSM covering architecture/topology
+  design, HA/failover patterns, VNet/subnet/ExpressRoute Gateway (Basic→Standard)
+  networking, migration to Managed/Cloud HSM, monitoring/diagnostics via Azure Monitor/Log
+  Analytics, physical security controls, and support boundaries/troubleshooting. Use
+  when planning, deploying, securing, or diagnosing Azure Dedicated HSM. Not for Azure
+  Key Vault, Managed HSM, or generic VM networking.
 ---
 # Azure Dedicated HSM Crawl Report
 

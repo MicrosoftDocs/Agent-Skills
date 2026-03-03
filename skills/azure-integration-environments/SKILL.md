@@ -1,6 +1,6 @@
 ---
 name: azure-integration-environments
-description: Expert knowledge for Azure Integration Environments development including various topics. Use when building, debugging, or optimizing Azure Integration Environments applications.
+description: Expert knowledge for Azure Integration Environments covering Azure Integration Services runtime isolation, Logic Apps Standard integration service environments, VNET-injected integration runtimes, private endpoints, networking, scaling, and secure connectivity for hybrid integrations. Use when designing or troubleshooting dedicated, network-isolated Azure integration runtimes. Not for generic Azure networking, App Service plans, or non-integration workloads.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

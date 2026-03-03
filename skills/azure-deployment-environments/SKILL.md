@@ -1,6 +1,6 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Deployment Environments applications.
+description: Expert knowledge for Azure Deployment Environments covering ADE catalogs best practices (repos, folders, environment.yaml), RBAC and managed identity, ADE built-in roles, CLI auth, custom container images, quotas/limits, ADE CLI build/publish, CI/CD integration (GitHub Actions, Azure Pipelines), and troubleshooting image deployment errors. Use when designing, securing, automating, or debugging Azure Deployment Environments.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

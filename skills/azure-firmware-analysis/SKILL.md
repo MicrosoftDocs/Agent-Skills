@@ -1,6 +1,6 @@
 ---
 name: azure-firmware-analysis
-description: Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Firmware Analysis applications.
+description: Expert knowledge for Azure Firmware Analysis covering RBAC/service principal security, job failure and analysis error troubleshooting, SBOM extractor path interpretation, workspace deployment via ARM/Bicep/Terraform, and CLI/PowerShell/Python upload automation. Use when configuring, running, or debugging Azure Firmware Analysis scans and integrations. Not for Azure Defender for IoT, Azure Sphere, or generic firmware reverse engineering.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -28,6 +28,12 @@ category_descriptions:
   best-practices: 'Guidance for hardening IoT Edge for production: security, deployment
     planning, monitoring, scaling, lifecycle management, and operational best practices
     for edge modules and devices.'
+skill_description: Expert knowledge for Azure IoT Edge covering IoT Edge runtime/agent
+  config, EFLOW on Windows, DPS/TPM/X.509/symmetric key provisioning, nested edge,
+  proxies/NICs, module deployment (Kubernetes/KubeVirt), direct methods, logs, EST/Private
+  Link, confidential computing modules, quotas/limits, and production hardening. Use
+  when designing, deploying, securing, or troubleshooting Azure IoT Edge devices and
+  gateways.
 ---
 # Azure IoT Edge Crawl Report
 
@@ -41,8 +47,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 96
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -62,13 +68,6 @@ category_descriptions:
 | *(Unclassified)* | 34 | 34.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm)
-  - Updated: 2025-08-21T05:12:00.000Z → 2026-03-02T08:00:00.000Z
-- [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

@@ -1,6 +1,6 @@
 ---
 name: azure-impact-reporting
-description: Expert knowledge for Azure Impact Reporting development including troubleshooting, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Impact Reporting applications.
+description: Expert knowledge for Azure Impact Reporting covering integrations with Azure Monitor alerts, Logic Apps, Service Health, HPC VM node/guest health, Impact Reporting APIs/portal, connector configuration (alert connectors, impact categories, HPC Guest Health categories), and troubleshooting connection failures, data sync, and config errors. Use when designing integrations, classifying impact, or diagnosing Impact Reporting connector issues.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

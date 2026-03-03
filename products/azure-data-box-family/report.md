@@ -18,6 +18,15 @@ category_descriptions:
   limits-quotas: Device capacity, disk size, share/volume and connection limits for
     Data Box, Disk, and Heavy, plus how usage is calculated and constrained during
     data import/export.
+skill_description: Expert knowledge for Azure Data Box covering Data Box/Disk/Heavy
+  troubleshooting (validation, unlock tool, SMB/NFS/REST copy, upload errors, time
+  sync, audit logs), security (TLS certs, Customer Lockbox, CMK in Key Vault, Azure
+  Policy), configuration (cabling, network, local UI/portal, blob access tiers), integrations
+  (VHD to managed disks, file share to SharePoint, Commvault, OpenText, Veeam), best
+  practices for NTFS ACLs/permissions/metadata, and limits/quotas (capacity, share/volume,
+  connection limits). Use when planning, configuring, securing, or troubleshooting
+  Azure Data Box import/export workflows. Not for generic Azure Storage design, Azure
+  Data Factory copy, or online-only migrations without Data Box.
 ---
 # Azure Data Box Crawl Report
 

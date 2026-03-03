@@ -28,6 +28,12 @@ category_descriptions:
   security: 'Security configuration for Azure NetApp Files: encryption (CMK/HSM, at
     rest/in transit), Kerberos/LDAP/AD, NFS/SMB permissions and ACLs, ransomware protection,
     and policy/control-plane settings.'
+skill_description: Expert knowledge for Azure NetApp Files covering limits/quotas,
+  volume sizing/throughput, SAP HANA/Oracle deployments (AVGs, HSR, AzAcSnap), NFS/SMB
+  config, ZRS/Elastic ZRS, snapshots/backup/replication, REST/PowerShell, LDAP/Kerberos/AD,
+  CMK/HSM encryption, and troubleshooting (provisioning, CRR, file locks, AzAcSnap
+  errors). Use when designing, configuring, or operating Azure NetApp Files. Not for
+  Azure Files, Azure Blob, or on-prem NetApp ONTAP only.
 ---
 # Azure NetApp Files Crawl Report
 
@@ -41,8 +47,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 223
+- **Updated Pages**: 0
+- **Unchanged**: 224
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -62,11 +68,6 @@ category_descriptions:
 | *(Unclassified)* | 69 | 30.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies)
-  - Updated: 2025-04-25T17:04:00.000Z → 2026-03-03T08:00:00.000Z
 
 ## Classified Pages
 

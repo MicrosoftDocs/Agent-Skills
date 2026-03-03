@@ -25,6 +25,13 @@ category_descriptions:
   decision-making: Guidance for planning and executing migrations from Azure API for
     FHIR to the FHIR service or broader Azure Health Data Services, including architecture,
     data, and compatibility considerations.
+skill_description: Expert knowledge for Azure Health Data Services covering FHIR service,
+  Azure API for FHIR migrations, DICOM, MedTech, de-identification APIs, Synapse/ADF/Logic
+  Apps/Power BI integration, RBAC, AAD auth, Private Link, CMK encryption, $convert-data,
+  bulk export/import, CARIN/Da Vinci profiles, performance limits, reindex jobs, and
+  MedTech deployment errors. Use when designing, securing, deploying, or troubleshooting
+  Azure Health Data Services workloads. Not for generic Azure healthcare on VMs, non-Azure
+  FHIR servers, or Microsoft Cloud for Healthcare app configuration.
 ---
 # Azure Health Data Services Crawl Report
 

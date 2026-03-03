@@ -18,6 +18,13 @@ category_descriptions:
   integrations: Using the Personalizer local inference SDK for low-latency, offline/edge
     scenarios, including setup, integration patterns, and best practices for calling
     the model locally.
+skill_description: Expert knowledge for Azure AI Personalizer covering configuration
+  (policies, hyperparameters, exploration, apprentice mode, explainability, model
+  export, learning loop), decision APIs (single-slot vs multi-slot), limits/quotas
+  and scaling, security/encryption & CMK, troubleshooting low-quality rankings and
+  API errors, and local inference SDK integrations. Use when designing, tuning, or
+  debugging Azure AI Personalizer-based personalization. Not for Azure OpenAI, Azure
+  Cognitive Search, or generic recommendation engines.
 ---
 # Azure AI Personalizer Crawl Report
 

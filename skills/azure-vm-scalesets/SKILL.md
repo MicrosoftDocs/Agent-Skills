@@ -1,6 +1,6 @@
 ---
 name: azure-vm-scalesets
-description: Expert knowledge for Azure Virtual Machine Scale Sets development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machine Scale Sets applications.
+description: Expert knowledge for Azure Virtual Machine Scale Sets covering configuration (autoscale rules, upgradePolicy, health/automatic repairs, networking, disks, instance mix, standby pools, protectionPolicy), architecture (zones, fault domains, zone-balancing, PPGs), decision making (Spot vs dedicated, placement score, Flexible vs Uniform), security (Azure Disk Encryption, Key Vault, RBAC), deployment (ARM/Bicep, Azure Compute Gallery, custom images, multi-zone), troubleshooting (autoscale not triggering, quota/placement errors, instance allocation failures), limits & quotas (instance/placement group limits, standby pool constraints, maintenance notifications), and integrations (Azure CLI, PowerShell, DSC, Custom Script Extension, Log Analytics). Use when designing, deploying, securing, scaling, or debugging Azure VM Scale Sets workloads. Not for standalone Azure VMs, Azure Kubernetes Service (AKS), Azure App Service, or Azure Virtual Machine Availability Sets.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

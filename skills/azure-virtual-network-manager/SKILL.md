@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-network-manager
-description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Virtual Network Manager applications.
+description: Expert knowledge for Azure Virtual Network Manager covering IPAM pools, network groups (static/dynamic via Azure Policy), cross-tenant connectivity, UDR management, topology/reachability analysis, security admin rules (block high‑risk ports), deployment/configuration failures, and Azure Resource Graph queries. Use when designing, configuring, or troubleshooting AVNM. Not for classic VNet peering-only setups or Azure Firewall policy management.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

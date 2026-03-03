@@ -25,6 +25,12 @@ category_descriptions:
   deployment: How to deploy Azure Firewall (including Premium) and IP Groups using
     ARM templates, Bicep, or Terraform, with example templates and infrastructure-as-code
     guidance.
+skill_description: Expert knowledge for Azure Firewall SKUs (Basic/Standard/Premium),
+  policy design, TLS inspection, DNAT/SNAT, IP Groups, DNS proxy, threat intel, Sentinel
+  integration, hub-and-spoke/forced tunneling, NAT Gateway SNAT scaling, TCP idle
+  timeout, ARM/Bicep/Terraform deployment, and SFTP to Azure Storage. Use when designing,
+  securing, tuning, or troubleshooting Azure Firewall. Not for Azure Application Gateway,
+  NSG, or WAF.
 ---
 # Azure Firewall Crawl Report
 

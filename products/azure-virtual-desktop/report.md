@@ -27,6 +27,13 @@ category_descriptions:
   limits-quotas: RDP bandwidth requirements and optimization for Azure Virtual Desktop,
     plus supported Microsoft Teams features, limitations, and configuration requirements
     on AVD.
+skill_description: Expert knowledge for Azure Virtual Desktop covering deployment/migration
+  (host pools, session hosts, region moves, Intune/ConfigMgr), configuration (FSLogix,
+  MSIX App Attach, RemoteApp, autoscale, Teams AV redirection), troubleshooting (AVD
+  agent, FQDN, connection quality, Log Analytics), security (Entra ID SSO, Conditional
+  Access, RBAC, watermarking), and cost/design decisions. Use when planning, configuring,
+  or troubleshooting Azure Virtual Desktop environments. Not for Windows 365 Cloud
+  PC, on-prem RDS, or generic Azure VM/RDP issues.
 ---
 # Azure Virtual Desktop Crawl Report
 

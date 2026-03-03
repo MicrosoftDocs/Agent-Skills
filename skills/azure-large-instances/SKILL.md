@@ -1,6 +1,6 @@
 ---
 name: azure-large-instances
-description: Expert knowledge for Azure Large Instances development including troubleshooting, limits & quotas, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Large Instances applications.
+description: Expert knowledge for Azure Large Instances with Epic, covering connectivity/performance troubleshooting (ExpressRoute, MTU, latency, storage IOPS), Epic SKU limits/quotas (M/F-series LI sizes, vCPU/RAM, scale-up constraints), and Epic EHR volume group design (layout, sizing, I/O tuning, best practices). Use when designing, sizing, or debugging Epic on Azure Large Instances. Not for standard Azure VMs, Azure NetApp Files, or generic Azure compute.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

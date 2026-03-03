@@ -1,6 +1,6 @@
 ---
 name: azure-app-testing
-description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Testing applications.
+description: Expert knowledge for Azure App Testing using Azure Load Testing and Playwright Workspaces: VNet-injected tests, private endpoints, JMeter/Locust/HTTP/Playwright configs, CI/CD YAML, baselines/auto-stop, RBAC, Key Vault, CMK, quotas, and performance tuning for App Service/Azure Functions. Use when designing, running, or troubleshooting Azure Load Testing for web apps and APIs. Not for generic unit tests, Azure DevTest Labs, or non-Azure load tools.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

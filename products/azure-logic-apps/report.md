@@ -27,6 +27,13 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Logic Apps workflow failures, throttling/HTTP
     429, B2B (AS2/EDIFACT/X12) acknowledgment errors, and using test error details
     and alerts for troubleshooting.
+skill_description: Expert knowledge for Azure Logic Apps covering Standard vs Consumption,
+  connectors (SAP, SQL, Service Bus, storage, AI), B2B/EDI (AS2/EDIFACT/X12), XML/JSON
+  transforms, WDL/JSON config, integration accounts, VNet/private endpoints, Entra
+  ID/OAuth/OBO, CI/CD (ARM/Bicep, DevOps), throttling/HTTP 429, message size limits,
+  and workflow failures. Use when designing, securing, deploying, optimizing, or troubleshooting
+  Logic Apps workflows or migrating from BizTalk/Power Automate. Not for Azure Functions,
+  Power Automate cloud flows, or general App Service web apps.
 ---
 # Azure Logic Apps Crawl Report
 

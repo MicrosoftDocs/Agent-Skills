@@ -12,6 +12,12 @@ category_descriptions:
   configuration: Configuring diagnostics and Event Grid for Data Manager for Agriculture,
     including enabling logs, choosing event schemas, and understanding sample event
     payloads.
+skill_description: Expert knowledge for Azure Data Manager for Agriculture covering
+  BYOL credential vaulting, Azure Private Link private endpoints, Event Grid diagnostics,
+  ingestion jobs/IoT, farm activity/sensor/weather/satellite/ISV integrations, AI/copilot
+  and nutrient APIs, and API throttling limits/429 errors. Use when designing secure
+  ag-data pipelines, configuring events/logs, or planning high-volume capacity. Not
+  for generic Azure Data Manager, Azure Data Factory, or Azure IoT Hub solutions.
 ---
 # Azure Data Manager for Agriculture Crawl Report
 

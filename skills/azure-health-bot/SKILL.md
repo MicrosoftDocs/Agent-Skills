@@ -1,6 +1,6 @@
 ---
 name: azure-health-bot
-description: Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Health Bot applications.
+description: Expert knowledge for Azure Health Bot covering Teams/SMS/WhatsApp/Facebook integration, Web Chat/Direct Line Speech, external API/OpenAPI calls, telemetry, OAuth, management APIs, proactive messages, scenario/variable/card/version configuration, consent/PHI, encryption keys, abuse filters, orchestrator design, error-handling flows, and cost estimation by action usage. Use when designing, configuring, securing, or pricing Azure Health Bot. Not for Azure Bot Service in general or Azure OpenAI health chatbots.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

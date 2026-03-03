@@ -28,6 +28,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Databricks errors: compute startup/termination,
     SQL/runtime exceptions, Spark performance, connectors/ingestion, pipelines, model
     serving, and tooling (CLI, VS Code, Terraform).'
+skill_description: Expert knowledge for Azure Databricks security, Unity Catalog,
+  Delta Lake, Lakehouse, Lakebase, Lakehouse Federation, cluster & SQL warehouse config,
+  jobs/pipelines, ML/GenAI, Vector Search, model serving, Terraform/ARM/Bicep deployment,
+  and error troubleshooting (e.g., CLUSTER_STARTUP_FAILED, SQLSTATE). Use when designing,
+  configuring, integrating, or debugging Azure Databricks workloads. Not for Azure
+  Synapse, Azure HDInsight, or generic Spark without Databricks.
 ---
 # Azure Databricks Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications.
+description: Expert knowledge for Azure Virtual Desktop covering deployment/migration (host pools, session hosts, region moves, Intune/ConfigMgr), configuration (FSLogix, MSIX App Attach, RemoteApp, autoscale, Teams AV redirection), troubleshooting (AVD agent, FQDN, connection quality, Log Analytics), security (Entra ID SSO, Conditional Access, RBAC, watermarking), and cost/design decisions. Use when planning, configuring, or troubleshooting Azure Virtual Desktop environments. Not for Windows 365 Cloud PC, on-prem RDS, or generic Azure VM/RDP issues.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

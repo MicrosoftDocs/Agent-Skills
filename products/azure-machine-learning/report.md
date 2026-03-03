@@ -28,6 +28,12 @@ category_descriptions:
   deployment: 'Deploying and operationalizing models and prompt flows in Azure ML:
     online/batch endpoints, MLflow, Triton, CI/CD, MLOps/GenAIOps, rollouts, cross-workspace
     use, and production pipelines.'
+skill_description: Expert knowledge for Azure Machine Learning covering workspace
+  design, AML v1→v2 migration, SDK/CLI/YAML config, AutoML, environments/registries,
+  pipelines, managed/AKS endpoints, VNets/private endpoints, RBAC/MI, quotas/VM SKUs,
+  prompt flow, MLflow, CI/CD, and MLOps/GenAIOps. Use when designing, deploying, or
+  troubleshooting Azure ML workloads. Not for Azure Databricks-only ML, Synapse-only
+  ML, or generic Python ML without Azure ML.
 ---
 # Azure Machine Learning Crawl Report
 

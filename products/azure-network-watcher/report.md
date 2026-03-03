@@ -19,6 +19,12 @@ category_descriptions:
   security: Configuring secure access to Network Watcher with RBAC, using Traffic
     Analytics for Zero Trust segmentation, and protecting VNet flow logs with managed
     identities.
+skill_description: Expert knowledge for Azure Network Watcher covering Connection
+  Monitor AMA configuration, NSG/VNet flow logs, Traffic Analytics KQL schemas, ARM/Bicep/Policy
+  deployment, packet capture limits/quotas, VPN gateway/on-premises VPN diagnostics,
+  RBAC and managed identities. Use when configuring or troubleshooting Azure Network
+  Watcher monitoring, logging, or analytics. Not for Azure Monitor, Azure Firewall,
+  or general VNet design.
 ---
 # Azure Network Watcher Crawl Report
 

@@ -27,6 +27,14 @@ category_descriptions:
     considerations.
   troubleshooting: Investigating IoT Central changes with audit logs, and diagnosing/fixing
     device connectivity, telemetry, and data export issues.
+skill_description: Expert knowledge for Azure IoT Central covering architecture &
+  IoT Edge gateway patterns, device templates, SAS/X.509 auth, private endpoints/VNet
+  export, orgs/roles, telemetry modeling, rules (Power Automate/Logic Apps), REST
+  API/CLI, data export (Blob, ADX, Event Hubs, Service Bus, webhooks), limits/quotas,
+  CI/CD, migration to IoT Hub, and troubleshooting connectivity/telemetry/export issues.
+  Use when designing, configuring, integrating, securing, or diagnosing Azure IoT
+  Central solutions. Not for Azure IoT Hub direct use, DPS-only scenarios, or generic
+  Azure networking.
 ---
 # Azure IoT Central Crawl Report
 

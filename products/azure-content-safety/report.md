@@ -19,6 +19,12 @@ category_descriptions:
     or unwanted content.
   limits-quotas: Language coverage, building and training custom safety categories,
     and detecting protected/third‑party code in model outputs.
+skill_description: Expert knowledge for Azure AI Content Safety covering REST API
+  troubleshooting (HTTP 400/401/429/500), Docker deployment for text/image/prompt
+  shield, hybrid/on-device architecture patterns, encryption & key management, threshold
+  tuning, GA migration, text blocklists, language limits, and custom safety categories.
+  Use when designing, configuring, or debugging Azure AI Content Safety. Not for Azure
+  OpenAI moderation or generic Azure security.
 ---
 # Azure AI Content Safety Crawl Report
 

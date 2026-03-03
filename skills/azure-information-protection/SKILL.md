@@ -1,6 +1,6 @@
 ---
 name: azure-information-protection
-description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when building, debugging, or optimizing Azure Information Protection applications.
+description: Expert knowledge for Azure Information Protection covering Azure Rights Management vs on-prem AD RMS decision making, RMS connector deployment, AD RMS to AIP key/policy migration (HSM/software keys), MSIPC (Windows RMS) client configuration, registry keys for RMS connectors, and monitoring/troubleshooting (logs, metrics, connector health). Use when designing, deploying, or diagnosing AIP/RMS. Not for Microsoft Purview Information Protection or generic Azure security.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

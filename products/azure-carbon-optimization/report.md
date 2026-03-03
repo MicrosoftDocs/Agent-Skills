@@ -9,6 +9,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Carbon Optimization issues,
     including data collection gaps, configuration problems, inaccurate emissions estimates,
     and troubleshooting dashboards or reports.
+skill_description: Expert knowledge for Azure Carbon Optimization covering Carbon
+  Service REST API, Python scripting for emissions export, AAD auth, RBAC roles/permissions,
+  secure access to carbon data, and troubleshooting data gaps, misconfigurations,
+  inaccurate emissions estimates, and dashboard/report errors. Use when integrating
+  or securing Azure Carbon Optimization workloads or diagnosing carbon data issues.
+  Not for general Azure sustainability guidance or non-Azure carbon tools.
 ---
 # Azure Carbon Optimization Crawl Report
 

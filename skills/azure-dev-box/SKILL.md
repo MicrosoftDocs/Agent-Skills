@@ -1,6 +1,6 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Dev Box applications.
+description: Expert knowledge for Azure Dev Box covering image definitions, pre-warmed Visual Studio caches, Dev Box pools deployment/region moves, VNet/NSG configuration, catalogs, policies, stop/hibernate/auto-delete schedules, RBAC/Conditional Access/Intune, Key Vault, quotas/core limits, Troubleshoot and Repair, RDP/connectivity errors, Azure Monitor logs, and VS Code dev tunnels. Use when designing, configuring, securing, or troubleshooting Azure Dev Box environments. Not for standard Azure Virtual Machines, Azure Virtual Desktop, or GitHub Codespaces.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stream Analytics applications.
+description: Expert knowledge for Azure Stream Analytics covering job configuration (inputs/outputs: Event Hubs, IoT Hub, Kafka, SQL, Cosmos DB, Power BI, Delta Lake), security (managed identity, private endpoints, VNet), CI/CD deployment (Bicep, ARM, GitHub Actions, Azure DevOps, IoT Edge), troubleshooting (query/UDF errors, connection failures, SU/cluster scaling, metrics/logs), design patterns, and limits/quotas. Use when designing, securing, deploying, tuning, or debugging Azure Stream Analytics jobs and clusters. Not for Azure Databricks, Azure Data Explorer, Synapse/SQL streaming, or general batch ETL.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

@@ -1,6 +1,6 @@
 ---
 name: azure-dns
-description: Expert knowledge for Azure DNS development including troubleshooting, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure DNS applications.
+description: Expert knowledge for Azure DNS covering Azure CLI/PowerShell/portal zone and record management, private DNS zones and Azure DNS Private Resolver, reverse DNS, DNSSEC, RBAC, delete protection, logging/metrics, ResolutionPolicy, zone file import/export, migration from legacy Private DNS, scale limits/quotas, and troubleshooting resolution/propagation errors. Use when designing, securing, or troubleshooting Azure DNS name resolution. Not for Azure Traffic Manager, Azure Front Door, or on-prem DNS servers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

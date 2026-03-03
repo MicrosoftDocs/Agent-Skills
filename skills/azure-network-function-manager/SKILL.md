@@ -1,6 +1,6 @@
 ---
 name: azure-network-function-manager
-description: Expert knowledge for Azure Network Function Manager development including security, and configuration. Use when building, debugging, or optimizing Azure Network Function Manager applications.
+description: Expert knowledge for Azure Network Function Manager covering configuration prerequisites, required Azure resources, role assignments (Owner, Contributor, Network Contributor), managed identities, resource provider registration, and secure access for 5G core/vRAN network functions. Use when setting up permissions, onboarding network functions, or securing NF Manager access. Not for Azure Virtual Network Manager or generic Azure networking.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

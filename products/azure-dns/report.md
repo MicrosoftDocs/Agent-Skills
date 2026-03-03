@@ -21,6 +21,13 @@ category_descriptions:
   architecture-patterns: Designing resilient private DNS architectures in Azure, including
     when to use centralized vs distributed DNS Private Resolvers and how to shard
     Private DNS zones for high availability.
+skill_description: Expert knowledge for Azure DNS covering Azure CLI/PowerShell/portal
+  zone and record management, private DNS zones and Azure DNS Private Resolver, reverse
+  DNS, DNSSEC, RBAC, delete protection, logging/metrics, ResolutionPolicy, zone file
+  import/export, migration from legacy Private DNS, scale limits/quotas, and troubleshooting
+  resolution/propagation errors. Use when designing, securing, or troubleshooting
+  Azure DNS name resolution. Not for Azure Traffic Manager, Azure Front Door, or on-prem
+  DNS servers.
 ---
 # Azure DNS Crawl Report
 

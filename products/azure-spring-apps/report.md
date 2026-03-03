@@ -28,6 +28,17 @@ category_descriptions:
   decision-making: Guidance on choosing Azure Spring Apps plans and migrating Spring
     workloads, configs, gateways, and networking from ASA to Enterprise, AKS, or Container
     Apps, including logging and Tanzu replacements
+skill_description: Expert knowledge for Azure Spring Apps covering configuration (VNet
+  injection, ingress/egress, DNS, storage, logging/metrics, health probes, autoscale,
+  Spring Cloud Gateway, Tanzu), security (TLS/SSL, custom domains, Entra ID SSO/RBAC,
+  managed identity, Key Vault), limits/quotas, deployment (GitHub Actions, Azure Pipelines,
+  Maven, CLI, ARM/Bicep/Terraform, blue‑green), observability (App Insights, AppDynamics,
+  Dynatrace, Elastic, New Relic, JFR, heap dumps), integrations (SQL, PostgreSQL,
+  MySQL, Redis, gRPC), troubleshooting (OOM, 5xx, build failures, VNet connectivity),
+  and migration/plan decisions (Basic/Standard vs Enterprise, AKS, Container Apps).
+  Use when designing, securing, integrating, monitoring, scaling, or troubleshooting
+  Azure Spring Apps workloads or choosing ASA vs alternatives. Not for generic Spring
+  Boot on VMs/App Service, plain AKS microservices, or non-Azure Spring Cloud deployments.
 ---
 # Azure Spring Apps Crawl Report
 

@@ -18,6 +18,16 @@ category_descriptions:
   limits-quotas: Details on current Service Connector feature gaps, unsupported scenarios,
     resource limits, and constraints you must consider when designing or troubleshooting
     connections.
+skill_description: Expert knowledge for Azure Service Connector covering Microsoft
+  Entra roles/permissions, least-privilege access, regional support per compute (App
+  Service, Functions, Container Apps, AKS), IaC setup (Bicep/ARM/Terraform), auth
+  methods (managed identity, service principal, key/connection string), CLI params
+  (az webapp connection), patterns for Cosmos DB/SQL/PostgreSQL/MySQL/Storage/Service
+  Bus/Event Hubs/Key Vault/Redis/Kafka/MongoDB/OpenAI, troubleshooting connection
+  failures and error codes, and limits/unsupported scenarios. Use when configuring,
+  securing, deploying, or debugging Azure Service Connector-based connections between
+  compute and data/services. Not for generic Azure networking, VNet peering, or API
+  Management.
 ---
 # Azure Service Connector Crawl Report
 

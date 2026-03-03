@@ -4,6 +4,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Azure Analysis Services network connectivity
     issues, including testing connections, common failure causes, and configuration
     checks.
+skill_description: 'Expert knowledge for Azure Analysis Services troubleshooting network
+  connectivity: diagnosing failed connections from Power BI/SSMS, resolving firewall/VNet/subnet/NSG
+  issues, validating server name/ports, fixing Azure AD auth errors, and checking
+  gateway/config settings. Use when connection tests fail, time out, or return errors.
+  Not for Azure Synapse, SQL Database, or Power BI dataset connectivity.'
 ---
 # Azure Analysis Services Crawl Report
 

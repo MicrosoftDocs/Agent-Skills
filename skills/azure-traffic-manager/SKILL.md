@@ -1,6 +1,6 @@
 ---
 name: azure-traffic-manager
-description: Expert knowledge for Azure Traffic Manager development including troubleshooting, best practices, decision making, architecture & design patterns, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Traffic Manager applications.
+description: Expert knowledge for Azure Traffic Manager covering profile/endpoint configuration, weighted/geographic/subnet/multivalue routing, DNS/IPv6, health probes, Traffic View, RUM JavaScript, App Center integration, ARM/Bicep/Terraform/CLI/PowerShell deployment, nested profiles, and TM + Application Gateway designs, plus routing tests and probe failures. Use when designing, optimizing, or troubleshooting Azure Traffic Manager. Not for Azure Front Door, Azure Application Gateway alone, or Azure Load Balancer.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

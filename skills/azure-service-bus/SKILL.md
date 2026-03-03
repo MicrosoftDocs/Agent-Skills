@@ -1,6 +1,6 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Bus applications.
+description: Expert knowledge for Azure Service Bus security (Entra ID, SAS, managed identity, TLS, Private Link, firewall), deployment (ARM/Bicep, Premium messaging units), configuration (queues, topics, subscriptions, sessions, filters, partitioning), integrations (JMS 1.1/2.0, AMQP, RabbitMQ, Functions, Logic Apps), best practices (TTL, duplicate detection, dead-letter, locks, prefetch), troubleshooting (AMQP errors, throttling, SDK/ARM failures), limits/quotas, and architecture (geo-disaster recovery, autoforwarding, multi-namespace, NServiceBus). Use when designing, configuring, securing, integrating, scaling, or debugging Azure Service Bus messaging workloads. Not for Azure Event Hubs, Azure Storage Queues, or Azure Queue Storage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

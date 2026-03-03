@@ -1,6 +1,6 @@
 ---
 name: azure-data-explorer
-description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Explorer applications.
+description: Expert knowledge for Azure Data Explorer covering cluster security (AAD auth, RBAC, managed identity, CMK/double encryption, private endpoints), limits/quotas, deployment/DevOps, KQL/T-SQL/Sync Kusto configuration, ingestion formats, follower DBs, DR/BC, troubleshooting connection/ingestion errors, and integrations (Power BI, ODBC/JDBC, Functions, Grafana, OpenTelemetry). Use when designing, configuring, or troubleshooting Azure Data Explorer clusters and queries. Not for Azure SQL Database, Azure Synapse, or general Log Analytics workspaces.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

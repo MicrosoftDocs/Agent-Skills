@@ -23,6 +23,12 @@ category_descriptions:
     CycleCloud clusters.
   best-practices: Guidance for configuring and tuning Azure HB/HC-series HPC VMs in
     CycleCloud, including networking, storage, MPI, BIOS, and performance best practices.
+skill_description: Expert knowledge for Azure CycleCloud covering API/CLI/Python automation,
+  Slurm/Grid Engine/HTCondor/LSF/OpenPBS/HPC Pack integration, cluster templates,
+  autoscaling, HB/HC VM tuning, networking/storage, SSL/SSH/Entra auth, deployment/upgrade,
+  Spot VM strategy, and log-based troubleshooting. Use when designing, securing, or
+  operating Azure CycleCloud HPC clusters. Not for generic Azure Batch or standalone
+  Slurm on VMs.
 ---
 # Azure CycleCloud Crawl Report
 

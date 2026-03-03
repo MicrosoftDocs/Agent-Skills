@@ -1,6 +1,6 @@
 ---
 name: azure-managed-applications
-description: Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Managed Applications applications.
+description: Expert knowledge for Azure Managed Applications covering security/JIT access, Azure Policy associations, managed identities (incl. cross-tenant), Key Vault/CMK, createUiDefinition.json UI design, parameters, networking, webhooks, StorageAccountSelector limits, external storage for large packages, and Bicep-based definition publishing to service catalogs. Use when designing, securing, or deploying Azure Managed Applications. Not for Azure App Service, Azure Functions, or generic ARM templates without managed app packaging.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

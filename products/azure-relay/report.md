@@ -12,6 +12,12 @@ category_descriptions:
   configuration: Network and firewall requirements for Azure Relay, including which
     ports/protocols to open for Hybrid Connections and WCF relays and how to configure
     them.
+skill_description: Expert knowledge for Azure Relay covering Hybrid Connections, WCF
+  relays, Entra ID and SAS authentication, managed identities, IP firewall, virtual
+  network rules, Private Link Service, WebSockets in .NET/Node.js, port/protocol requirements,
+  and errors like RelayNotFound/QuotaExceeded/AuthorizationFailed. Use when designing
+  secure connectivity, coding clients, or troubleshooting Azure Relay endpoints. Not
+  for Azure Service Bus, API Management, or Application Gateway.
 ---
 # Azure Relay Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-blueprints
-description: Expert knowledge for Azure Blueprints development including troubleshooting, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Blueprints applications.
+description: Expert knowledge for Azure Blueprints covering security/compliance blueprints (PBMM, ISM PROTECTED, ISO 27001, SWIFT, UK OFFICIAL/NHS), locks, RBAC/Policy mapping, blueprint parameters, artifacts, deployment order, and automation via Azure CLI/PowerShell/REST, plus landing zone reference architectures and error troubleshooting (assignment/lock/role/policy). Use when designing, automating, or debugging Azure Blueprints. Not for Azure Policy-only, ARM/Bicep templates, or Azure DevOps pipelines without Blueprints.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

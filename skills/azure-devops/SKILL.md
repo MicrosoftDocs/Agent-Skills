@@ -1,6 +1,6 @@
 ---
 name: azure-devops
-description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure DevOps applications.
+description: Expert knowledge for Azure DevOps covering org/project architecture, pool topology, Boards/process customization, notifications, permissions/security, audit logs, Analytics/OData, Power BI, dashboards, limits/quotas, integrations, and Azure DevOps Server/TFS deployment, backup, restore, and upgrades. Use when designing, configuring, securing, or troubleshooting Azure DevOps/Server. Not for GitHub, GitHub Actions, or generic Azure resource management.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

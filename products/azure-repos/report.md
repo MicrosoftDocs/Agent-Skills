@@ -26,6 +26,12 @@ category_descriptions:
   architecture-patterns: Designing and choosing TFVC branching structures/strategies,
     planning strategic branches, implementing feature isolation, and managing branches
     for DevOps workflows in Azure Repos.
+skill_description: Expert knowledge for Azure Repos covering Git/TFVC setup, Entra
+  ID/PAT/SSH auth, branch/repo/PR permissions and policies, secure cloning/import,
+  CodeQL/secret/dependency scanning, tf.exe/TFVC workspaces, repo migration between
+  projects, index.lock/push/merge errors, and branching strategies. Use when configuring,
+  securing, troubleshooting, or migrating Azure Repos. Not for GitHub.com repos or
+  Azure DevOps Pipelines.
 ---
 # Azure Repos Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-data-manager-for-agri
-description: Expert knowledge for Azure Data Manager for Agriculture development including limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications.
+description: Expert knowledge for Azure Data Manager for Agriculture covering BYOL credential vaulting, Azure Private Link private endpoints, Event Grid diagnostics, ingestion jobs/IoT, farm activity/sensor/weather/satellite/ISV integrations, AI/copilot and nutrient APIs, and API throttling limits/429 errors. Use when designing secure ag-data pipelines, configuring events/logs, or planning high-volume capacity. Not for generic Azure Data Manager, Azure Data Factory, or Azure IoT Hub solutions.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

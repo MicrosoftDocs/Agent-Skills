@@ -1,6 +1,6 @@
 ---
 name: azure-business-process-tracking
-description: Expert knowledge for Azure Business Process Tracking development including deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications.
+description: Expert knowledge for Azure Business Process Tracking deployment covering Azure DevOps YAML pipelines, classic release pipelines, CI/CD for tracking components, build/test stages, ARM/Bicep templates, Key Vault integration, approvals, rollback, and environment promotion. Use when designing or troubleshooting automated deployment of Azure Business Process Tracking solutions. Not for general Azure Logic Apps, Service Bus, or API Management deployments.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

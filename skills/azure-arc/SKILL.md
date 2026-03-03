@@ -1,6 +1,6 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Arc applications.
+description: Expert knowledge for Azure Arc security, architecture, deployment, configuration, limits, and troubleshooting for Arc-enabled Kubernetes, servers, SQL Managed Instance, Edge RAG, resource bridge, SCVMM, and vSphere; RBAC/Entra ID, Private Link, GitOps, extensions, ESU, ARG, Terraform, Sentinel. Use when planning, securing, automating, or debugging Azure Arc–enabled infrastructure. Not for native Azure-only (non-Arc) resources.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

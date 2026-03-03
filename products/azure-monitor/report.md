@@ -28,6 +28,12 @@ category_descriptions:
   architecture-patterns: 'Designing Azure Monitor architectures: enterprise-wide layouts,
     Private Link network patterns, choosing single vs multiple workspaces, and using
     workspace replication for resilience.'
+skill_description: 'Expert knowledge for Azure Monitor troubleshooting, configuration,
+  and design: AMA/Log Analytics agents, DCRs, ingestion errors, KQL, metrics/alerts/autoscale,
+  workspaces/Private Link, Application Insights/OpenTelemetry, Prometheus/PromQL,
+  VM/Kubernetes monitoring, limits/quotas, and Grafana/ITSM integrations. Use when
+  planning, deploying, optimizing, or debugging Azure Monitor. Not for Azure Sentinel/Microsoft
+  Defender for Cloud.'
 ---
 # Azure Monitor Crawl Report
 

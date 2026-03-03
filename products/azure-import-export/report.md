@@ -8,6 +8,12 @@ category_descriptions:
     prerequisites needed before using Azure Import/Export for data transfer.
   troubleshooting: Diagnosing and fixing Azure Import/Export job failures, reading
     Import/Export logs, and repairing failed v1 import/export jobs and copy issues.
+skill_description: Expert knowledge for Azure Import Export covering CMK configuration,
+  Azure Key Vault integration, RBAC permissions, data-at-rest encryption, hardware
+  specs, supported OS/file systems, drive types, WAImportExport tool prerequisites,
+  and troubleshooting job failures, copy errors, and v1 repair using logs. Use when
+  planning or fixing Azure Storage Import/Export jobs. Not for AzCopy, Data Box, or
+  general Azure Storage over network.
 ---
 # Azure Import Export Crawl Report
 

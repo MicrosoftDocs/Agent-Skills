@@ -1,6 +1,6 @@
 ---
 name: azure-container-storage
-description: Expert knowledge for Azure Container Storage development including troubleshooting, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Container Storage applications.
+description: Expert knowledge for Azure Container Storage covering CMK encryption with Elastic SAN volumes, v1 vs v2 cost/billing, LRS/ZRS and multi-zone redundancy, storage pool/node affinity config, Prometheus & Azure Managed Grafana monitoring, volume resize limits/quotas, and v1 install/pool health/Kubernetes errors. Use when designing, configuring, or troubleshooting Azure Container Storage for AKS. Not for generic Azure Storage accounts, Azure Disks, or Azure Files.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

@@ -25,6 +25,13 @@ category_descriptions:
     capacity, retention, and performance quotas work across registry tiers.
   deployment: Using ARM templates to automate ACR quick tasks and data transfer, and
     deploying/managing ACR connected registries via Azure Arc extension
+skill_description: 'Expert knowledge for Azure Container Registry covering RBAC/ABAC,
+  private endpoints, CMK encryption, image signing/verification with Notation/Notary,
+  purge/retention/soft delete, webhooks, ACR Tasks YAML, geo-replication, connected
+  registry, AKS/ACI auth (managed identity, workload identity), ACR Transfer, and
+  error troubleshooting (e.g., DENIED: requested access). Use when designing, securing,
+  integrating, or troubleshooting ACR. Not for Azure Container Apps, Azure Container
+  Instances runtime, or generic Docker Hub usage.'
 ---
 # Azure Container Registry Crawl Report
 
@@ -37,9 +44,9 @@ category_descriptions:
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 121
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -59,10 +66,6 @@ category_descriptions:
 | *(Unclassified)* | 33 | 27.0% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Service Health alerts for Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/set-container-registry-service-health-alerts)
 
 ## Classified Pages
 

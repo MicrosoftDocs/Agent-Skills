@@ -1,6 +1,6 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Edge applications.
+description: Expert knowledge for Azure IoT Edge covering IoT Edge runtime/agent config, EFLOW on Windows, DPS/TPM/X.509/symmetric key provisioning, nested edge, proxies/NICs, module deployment (Kubernetes/KubeVirt), direct methods, logs, EST/Private Link, confidential computing modules, quotas/limits, and production hardening. Use when designing, deploying, securing, or troubleshooting Azure IoT Edge devices and gateways.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

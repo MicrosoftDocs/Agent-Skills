@@ -1,6 +1,6 @@
 ---
 name: azure-maps
-description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Maps applications.
+description: Expert knowledge for Azure Maps covering Web SDK/REST integration, JavaScript/TypeScript patterns, layers/tiles, Spatial IO, routing/search/traffic/weather APIs, Entra ID/SAS auth, Power BI visual integration, limits/quotas/coverage, pricing tiers, migration from Bing/Google Maps, and Weather API errors/throttling. Use when designing, securing, configuring, or troubleshooting Azure Maps solutions. Not for Azure Location Based Services or generic GIS tools.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

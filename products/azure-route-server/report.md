@@ -17,6 +17,13 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Route Server connectivity
     and BGP peering issues, including misconfigurations, route propagation problems,
     and troubleshooting steps.
+skill_description: Expert knowledge for Azure Route Server covering hub-spoke and
+  dual-homed architectures, anycast and multi-region designs, ExpressRoute/VPN and
+  NVA next-hop integration, BGP peer configuration, route propagation, Azure Monitor
+  metrics, routing preferences, BGP path selection, RBAC security, capacity limits,
+  and BGP troubleshooting. Use when designing, configuring, or debugging Azure Route
+  Server deployments. Not for Azure Firewall, Azure Load Balancer, or Azure Application
+  Gateway.
 ---
 # Azure Route Server Crawl Report
 

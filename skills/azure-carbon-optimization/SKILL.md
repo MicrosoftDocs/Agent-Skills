@@ -1,6 +1,6 @@
 ---
 name: azure-carbon-optimization
-description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Carbon Optimization applications.
+description: Expert knowledge for Azure Carbon Optimization covering Carbon Service REST API, Python scripting for emissions export, AAD auth, RBAC roles/permissions, secure access to carbon data, and troubleshooting data gaps, misconfigurations, inaccurate emissions estimates, and dashboard/report errors. Use when integrating or securing Azure Carbon Optimization workloads or diagnosing carbon data issues. Not for general Azure sustainability guidance or non-Azure carbon tools.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Functions applications.
+description: Expert knowledge for Azure Functions covering app/host.json config, triggers/bindings (HTTP, Queue, Service Bus, Event Grid), Durable Functions orchestrations/entities, plans (Consumption/Premium/Flex), VNet/private endpoints, managed identity, CI/CD, scaling limits, and AZFD/AZFW errors. Use when designing, securing, deploying, or troubleshooting Azure Functions apps. Not for Azure Logic Apps, standard App Service sites, or AKS/container orchestration.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

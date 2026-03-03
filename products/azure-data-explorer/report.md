@@ -28,6 +28,13 @@ category_descriptions:
   best-practices: 'Guidance on ADX performance and reliability: schema design, handling
     duplicates, JSON ingestion, monitoring queued ingestion, hot/cold data querying,
     high concurrency, and Power BI integration.'
+skill_description: Expert knowledge for Azure Data Explorer covering cluster security
+  (AAD auth, RBAC, managed identity, CMK/double encryption, private endpoints), limits/quotas,
+  deployment/DevOps, KQL/T-SQL/Sync Kusto configuration, ingestion formats, follower
+  DBs, DR/BC, troubleshooting connection/ingestion errors, and integrations (Power
+  BI, ODBC/JDBC, Functions, Grafana, OpenTelemetry). Use when designing, configuring,
+  or troubleshooting Azure Data Explorer clusters and queries. Not for Azure SQL Database,
+  Azure Synapse, or general Log Analytics workspaces.
 ---
 # Azure Data Explorer Crawl Report
 

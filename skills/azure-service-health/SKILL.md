@@ -1,6 +1,6 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Health applications.
+description: Expert knowledge for Azure Service Health covering Service/Resource Health APIs, Resource Graph queries, webhooks, RBAC for security advisories, alert rules via portal/ARM/Bicep/PowerShell, VM Resource Health degraded/unavailable states, Azure Policy-based alert deployment, and event retention/notification lifecycle. Use when integrating, configuring, or troubleshooting Azure Service Health alerts and incidents. Not for Azure Monitor metrics/logs, Application Insights, or general Azure status page.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

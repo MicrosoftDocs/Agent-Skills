@@ -1,6 +1,6 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Grafana applications.
+description: Expert knowledge for Azure Managed Grafana covering integrations with Azure Monitor, Prometheus (AKS/AMW), Azure Data Explorer, Agent Framework/AI Foundry monitoring, Entra ID auth, team sync, roles, service accounts/tokens, private endpoints, outbound IPs, workspace configuration, plugins, SMTP alerts, HA/zone-redundant deployments, Enterprise plan selection, Grafana 11 upgrades, image/report rendering limits, and troubleshooting access/DNS/private endpoint issues. Use when designing, securing, configuring, scaling, or debugging Azure Managed Grafana workspaces. Not for generic Grafana OSS/Enterprise outside Azure, Azure Monitor workbooks, or Power BI dashboards.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

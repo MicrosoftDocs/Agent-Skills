@@ -15,6 +15,12 @@ category_descriptions:
   limits-quotas: Details on Azure Queue Storage message size limits, including max
     message size, behavior when limits are exceeded, and best practices for handling
     large payloads.
+skill_description: Expert knowledge for Azure Reliability across Azure availability
+  zones, zonal vs zone-redundant resources, region selection, non-regional (global)
+  services, and high-availability patterns for Azure Functions, PaaS, data, and integration
+  services, plus Azure Queue Storage message size limits and large payload handling.
+  Use when designing or hardening resilient Azure architectures, choosing regions/zones,
+  or migrating Functions hosting plans for higher availability.
 ---
 # Azure Reliability Crawl Report
 

@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: Quota and limit rules for Container Apps (CPU/memory, environments,
     revisions, scale) and how to request increases when you hit platform or subscription
     limits.
+skill_description: Expert knowledge for Azure Container Apps covering environment
+  configuration, ingress, revisions, Dapr, KEDA scaling, Java memory tuning, TLS/mTLS,
+  managed identities, private endpoints, WAF, CI/CD (GitHub Actions/Azure Pipelines),
+  Docker Compose, Arc, GPU plans, cost estimates, limits/quotas, and troubleshooting
+  image pull/container start/health probe errors. Use when designing, deploying, securing,
+  or debugging Azure Container Apps microservices and AI workloads. Not for Azure
+  Kubernetes Service (AKS), Azure App Service, or Azure Functions-only hosting.
 ---
 # Azure Container Apps Crawl Report
 

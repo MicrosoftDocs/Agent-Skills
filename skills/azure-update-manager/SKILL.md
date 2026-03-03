@@ -1,6 +1,6 @@
 ---
 name: azure-update-manager
-description: Expert knowledge for Azure Update Manager development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Update Manager applications.
+description: Expert knowledge for Azure Update Manager covering Automanage deployment at scale, VM/Arc onboarding, policy-based configuration, guest patching (Windows/Linux, SQL Server, Ubuntu/Ubuntu Pro, ESU, hotpatching), SMB over QUIC, troubleshooting errors/connectivity, RBAC, disk encryption, SDK/REST integrations, change tracking, DCR/workspaces, reports, and migration from ConfigMgr. Use when planning, configuring, or troubleshooting Azure Update Manager. Not for Windows Server Update Services (WSUS), Microsoft Intune updates, or generic Azure Monitor log queries unrelated to Update Manager.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

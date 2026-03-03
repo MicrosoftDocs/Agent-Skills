@@ -23,6 +23,13 @@ category_descriptions:
     and fixes.
   limits-quotas: Scheduling push notifications in Azure Notification Hubs, including
     creating, managing, and sending time-based or recurring notifications across platforms
+skill_description: Expert knowledge for Azure Notification Hubs covering FCM v1/APNS/WNS
+  integration, device registration, tags/templates/localization, REST/SDK usage (Java,
+  PHP, Python, UWP, Android, iOS), pricing tier selection, PNS credentials, Bicep/ARM/Terraform,
+  Private Link, SAS/RBAC, TLS, troubleshooting dropped notifications, and scheduling.
+  Use when designing, configuring, securing, or debugging Azure Notification Hubs
+  push workloads. Not for Azure Event Grid, Azure Event Hubs, or Azure Communication
+  Services.
 ---
 # Azure Notification Hubs Crawl Report
 

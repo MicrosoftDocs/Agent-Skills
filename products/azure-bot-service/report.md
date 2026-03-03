@@ -28,6 +28,13 @@ category_descriptions:
   deployment: Deploying bots to Azure using ARM/CLI, setting up App Service resources,
     and configuring continuous integration/continuous deployment pipelines for Bot
     Framework bots.
+skill_description: Expert knowledge for Azure AI Bot Service covering bot configuration
+  (dialogs, memory, LG/LU/QnA, Application Insights, Web Chat, Direct Line, skills,
+  channels), security (OAuth/SSO, Direct Line secrets, VNET), integrations (Teams,
+  SMS, REST, TTS), architecture, troubleshooting (Emulator, Dev Tunnels, HTTP 500,
+  auth), limits, deployment (ARM/CLI, CI/CD). Use when designing, securing, integrating,
+  or debugging Azure Bot Service bots. Not for Azure OpenAI or generic Azure App Service
+  web APIs.
 ---
 # Azure AI Bot Service Crawl Report
 

@@ -1,6 +1,12 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions: {}
+skill_description: Expert knowledge for Azure Integration Environments covering Azure
+  Integration Services runtime isolation, Logic Apps Standard integration service
+  environments, VNET-injected integration runtimes, private endpoints, networking,
+  scaling, and secure connectivity for hybrid integrations. Use when designing or
+  troubleshooting dedicated, network-isolated Azure integration runtimes. Not for
+  generic Azure networking, App Service plans, or non-integration workloads.
 ---
 # Azure Integration Environments Crawl Report
 

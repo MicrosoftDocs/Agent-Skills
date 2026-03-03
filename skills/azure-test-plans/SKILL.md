@@ -1,6 +1,6 @@
 ---
 name: azure-test-plans
-description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Test Plans applications.
+description: Expert knowledge for Azure Test Plans covering limits & quotas for custom fields on test results, field types, and reporting; security roles, permissions, and licensing for users/groups; and tcm.exe CLI usage for creating/running test suites, importing/exporting tests, and managing test configurations. Use when configuring Azure Test Plans, access control, or tcm.exe automation. Not for Azure DevOps Repos, Pipelines, or general test frameworks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

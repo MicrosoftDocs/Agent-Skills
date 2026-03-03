@@ -1,6 +1,6 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure VMware Solution applications.
+description: Expert knowledge for Azure VMware Solution covering AVS private cloud architecture, hub-spoke/ExpressRoute/Virtual WAN connectivity, NSX-T, vSAN/stretched clusters, HCX migrations, backup/DR, Defender for Cloud, Arc, identity/LDAP/AD, quotas/host capacity, and troubleshooting deployment/DR issues. Use when designing, securing, integrating, or operating AVS. Not for generic Azure VMs, Azure Stack HCI, or on-prem vSphere only.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

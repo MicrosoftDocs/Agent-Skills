@@ -1,6 +1,6 @@
 ---
 name: azure-ai-services
-description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications.
+description: Expert knowledge for Azure AI services covering Azure AI Foundry security (Entra ID auth, API keys, Key Vault, CMK encryption, VNet, DLP, policy), limits/quotas, container/ACI deployments, endpoint/config/analyzer setup, pricing-tier decisions, REST/.NET integrations, best practices, and troubleshooting Content Understanding/Moderator. Use when designing, configuring, or debugging Azure AI Foundry/Content Understanding solutions. Not for generic Azure OpenAI or non-Azure AI platforms.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

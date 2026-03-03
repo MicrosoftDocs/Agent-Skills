@@ -21,6 +21,12 @@ category_descriptions:
   deployment: How to integrate Azure Deployment Environments with CI/CD tools like
     Azure Pipelines and GitHub Actions, including configuring pipelines to create,
     update, and delete ADE environments.
+skill_description: Expert knowledge for Azure Deployment Environments covering ADE
+  catalogs best practices (repos, folders, environment.yaml), RBAC and managed identity,
+  ADE built-in roles, CLI auth, custom container images, quotas/limits, ADE CLI build/publish,
+  CI/CD integration (GitHub Actions, Azure Pipelines), and troubleshooting image deployment
+  errors. Use when designing, securing, automating, or debugging Azure Deployment
+  Environments.
 ---
 # Azure Deployment Environments Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Virtual Network applications.
+description: Expert knowledge for Azure Virtual Network covering VNet design, subnets, NSGs, UDRs, service endpoints, VNet peering, VNet encryption, Azure Firewall/NVA routing, NAT Gateway, load balancer, VPN Gateway, DNS, IPv4/IPv6, MTU/TCP tuning, accelerated networking, MANA limits, public IP quotas, NSG flow logs, and VNet deletion/SMTP blocking issues. Use when designing, configuring, securing, or troubleshooting Azure VM/VNet connectivity and hybrid network architectures. Not for Azure Front Door, Azure Application Gateway, Azure Virtual WAN, or on-premises-only networking.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

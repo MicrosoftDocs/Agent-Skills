@@ -1,6 +1,6 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications.
+description: Expert knowledge for Azure Database for PostgreSQL covering Flexible Server/Single Server, performance tuning (pg_stat_statements, autovacuum, partitioning, pgvector, connection pooling), security (Entra ID, SCRAM, TLS/SSL, Private Link, firewall, Defender for Cloud), HA/replicas, backup/restore, PITR, CI/CD, Bicep, WAL/replication, Ora2Pg migrations, and troubleshooting connectivity/CPU/IOPS/slow queries. Use when designing, configuring, securing, integrating (Azure AI/OpenAI, LangChain, Data Factory), sizing/scaling, or debugging Azure Database for PostgreSQL workloads. Not for Azure SQL Database, Azure Cosmos DB for PostgreSQL, generic PostgreSQL on VMs, or non-Azure PostgreSQL hosting.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

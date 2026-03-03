@@ -1,6 +1,6 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure ExpressRoute applications.
+description: Expert knowledge for Azure ExpressRoute covering circuit limits/quotas, bandwidth/QoS, FastPath, gateway SKUs/scale, BGP communities, private/Microsoft peering, IPv4/IPv6, Global Reach, HA/DR and dual-circuit design, IPsec/MACsec encryption, S2S VPN coexistence, ARM/Bicep/Terraform deployment, PowerShell/CLI config, ARP/BGP troubleshooting, and cost optimization. Use when designing, deploying, securing, automating, or troubleshooting Azure ExpressRoute connectivity. Not for Azure VPN Gateway-only setups, Azure Virtual WAN, general internet VPN, or Azure Front Door/Traffic Manager routing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

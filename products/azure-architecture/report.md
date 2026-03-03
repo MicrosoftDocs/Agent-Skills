@@ -28,6 +28,12 @@ category_descriptions:
   architecture-styles: 'Comparisons and design guidance for Azure app styles: big
     compute, big data, event-driven, microservices, N-tier, and web-queue-worker,
     with when-to-use and implementation patterns.'
+skill_description: Expert knowledge for Azure Architecture across example workloads,
+  reference architectures, design patterns, technology choices, best practices, solution
+  ideas, anti-patterns, migration guides, and architecture styles for Azure/Fabric
+  (AKS, Event Hubs, VNet, APIM, Cosmos DB, Service Bus, IoT, SAP, MLOps, generative
+  AI). Use when designing or modernizing end-to-end Azure solutions, choosing services,
+  or fixing scalability/performance issues.
 ---
 # Azure Architecture Crawl Report
 
@@ -41,8 +47,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 442
+- **Updated Pages**: 0
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -62,11 +68,6 @@ category_descriptions:
 | *(Unclassified)* | 108 | 24.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-02-24T06:06:00.000Z → 2026-03-03T06:03:00.000Z
 
 ## Classified Pages
 

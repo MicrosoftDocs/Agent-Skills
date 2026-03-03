@@ -27,6 +27,12 @@ category_descriptions:
   architecture-patterns: Architectural guidance for designing DDoS-resistant web apps
     using Azure WAF with Front Door, including traffic flow, protection layers, and
     best-practice deployment patterns.
+skill_description: Expert knowledge for Azure Web Application Firewall on Azure Front
+  Door and Application Gateway, including WAF policies, OWASP/managed rulesets, custom
+  rules, rate limiting, geo/IP filters, bot protection/CAPTCHA, exclusions, request
+  body/file size limits, logging to Sentinel/Log Analytics, Bicep/ARM/Terraform deployment,
+  and migration from legacy configs. Use when designing, configuring, tuning, or troubleshooting
+  Azure WAF. Not for generic Azure networking or non-WAF security services.
 ---
 # Azure Web Application Firewall Crawl Report
 

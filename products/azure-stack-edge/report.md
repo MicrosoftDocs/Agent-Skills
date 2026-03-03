@@ -24,6 +24,12 @@ category_descriptions:
   best-practices: 'Best practices for Azure Stack Edge Pro: planning for and recovering
     from device failure, GPU sharing configuration, and day-to-day operational/maintenance
     guidelines.'
+skill_description: Expert knowledge for Azure Stack Edge covering limits/quotas, supported
+  VM sizes, Data Box Gateway, networking/VPN, TLS/certificates, RBAC, Key Vault secrets,
+  Kubernetes/IoT Edge/Arc, GPUs/DeepStream, ARM/Blob/IoT/VM/GPU errors, diagnostics/logs,
+  firmware/K8s updates, and failure recovery. Use when planning, deploying, or troubleshooting
+  Azure Stack Edge devices. Not for Azure Stack HCI, Azure Stack Hub, or generic Azure
+  Storage.
 ---
 # Azure Stack Edge Crawl Report
 

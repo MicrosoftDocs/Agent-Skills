@@ -19,6 +19,13 @@ category_descriptions:
   architecture-patterns: Architectural guidance for integrating Palo Alto Cloud NGFW
     with Azure Application Gateway, including network design, routing, security, and
     deployment patterns.
+skill_description: Expert knowledge for Azure Partner Solutions covering Service Connector
+  integrations with Confluent Cloud and Neon Serverless Postgres, Confluent RBAC/SSO,
+  Informatica IDMC SSO/lifecycle, Azure-native Datadog/Dynatrace/Elastic/MongoDB Atlas/New
+  Relic/NGINX configuration, troubleshooting partner observability (Kafka/Flink agents,
+  ingestion, metrics), Dynatrace APM trial decisions, and Palo Alto Cloud NGFW + Application
+  Gateway architectures. Use when designing, configuring, securing, or troubleshooting
+  Azure Marketplace/partner services.
 ---
 # Azure Partner Solutions Crawl Report
 

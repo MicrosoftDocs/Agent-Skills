@@ -27,6 +27,13 @@ category_descriptions:
     and responsible GenAI usage.
   decision-making: Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating
     capacity, choosing pricing tiers, and planning costs and hardware for search workloads
+skill_description: Expert knowledge for Azure AI Search covering index/schema design,
+  data sources, skillsets/enrichment, vector/semantic/Hybrid+RAG queries, knowledge
+  store, ARM/Bicep/Terraform deployment, RBAC/keys/CMK, private endpoints, indexer
+  errors (e.g., IndexerTemporaryException), OData filters, limits/quotas, and cost/tier
+  planning. Use when designing, securing, integrating, or troubleshooting Azure AI
+  Search for agentic retrieval. Not for Azure Cognitive Search classic, Azure OpenAI,
+  or general database search.
 ---
 # Azure AI Search Crawl Report
 

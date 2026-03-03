@@ -14,6 +14,11 @@ category_descriptions:
   deployment: Guidance for packaging, publishing, and managing Azure Lighthouse managed
     service offers in Azure Marketplace, including requirements, steps, and configuration
     details.
+skill_description: Expert knowledge for Azure Lighthouse covering tenant/user/role
+  mapping, RBAC/AOBO, PIM eligible roles, security hardening, ARM/policy-based delegations,
+  updating/removing access, built-in policies, managed identity remediation, cross-tenant
+  Arc/Sentinel/Migrate/Monitor Logs patterns, and Marketplace managed service offers.
+  Use when designing, securing, or operating multi-tenant Azure Lighthouse scenarios.
 ---
 # Azure Lighthouse Crawl Report
 

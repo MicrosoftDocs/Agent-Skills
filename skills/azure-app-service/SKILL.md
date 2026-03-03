@@ -1,6 +1,6 @@
 ---
 name: azure-app-service
-description: Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Service applications.
+description: Expert knowledge for Azure App Service covering plan/tier selection, Windows→Linux migration, VNet integration, custom domains/TLS, managed identity, Entra ID auth, OIDC/social login, deployment slots, ASE, Docker containers, GitHub Actions/Azure Pipelines CI/CD, ARM/Bicep/Terraform, scaling, diagnostics, quotas, and WordPress on App Service. Use when designing, configuring, securing, deploying, or troubleshooting Azure App Service web apps/APIs. Not for Azure Functions-only apps, Azure Static Web Apps, AKS, or general VM/IaaS hosting.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

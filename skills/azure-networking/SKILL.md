@@ -1,6 +1,6 @@
 ---
 name: azure-networking
-description: Expert knowledge for Azure Networking development including troubleshooting, best practices, decision making, architecture & design patterns, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Networking applications.
+description: Expert knowledge for Azure Networking covering VNet design, hub-and-spoke, region latency, Azure Firewall/NSG/UDR routing, VPN/ExpressRoute gateways, Zero Trust VNets, Azure Policy for network compliance, Accelerated Networking for NVAs/VMs, Resource Graph queries, and Microsoft.Network provisioning errors. Use when planning, securing, optimizing, or troubleshooting Azure network infrastructure.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

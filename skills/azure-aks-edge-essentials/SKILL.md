@@ -1,6 +1,6 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service Edge Essentials applications.
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials covering AKS Edge/AKS Arc on Windows Server/Azure Local: Entra ID/AD/gMSA auth, RBAC, SSH hardening, cert/secret management, SDN VNet, load balancers, autoscaling, Arc connectivity, TPM, CSI, IoT/OPC/ONVIF, GPU/Windows node pools, PowerShell/az CLI, upgrades, quotas, and troubleshooting cluster creation/network/storage issues. Use when designing, deploying, securing, integrating, or troubleshooting AKS Edge Essentials, AKS on Azure Local, or AKS Arc–enabled hybrid/edge clusters. Not for standard AKS in Azure cloud-only, Azure Stack HCI without AKS Edge, or generic Kubernetes not tied to AKS Edge/Arc.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

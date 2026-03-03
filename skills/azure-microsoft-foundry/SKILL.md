@@ -1,6 +1,6 @@
 ---
 name: azure-microsoft-foundry
-description: Expert knowledge for Microsoft Foundry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Microsoft Foundry applications.
+description: Expert knowledge for Microsoft Foundry covering Security (Entra ID, RBAC, keys, private networking, safety filters, data privacy), Configuration (agents, tools, workflows, tracing, monitoring, Azure/OpenAI/Anthropic), Limits & Quotas (PTU, Sora, batch, fine-tuning), Decision Making, Best Practices, Deployment, Integrations & Coding Patterns, Troubleshooting, and Architecture & Design Patterns. Use when designing, configuring, securing, integrating, or operating Microsoft Foundry agents, models, and vector stores in Azure. Not for generic Azure OpenAI without Foundry, GitHub Models-only setups, or non-Microsoft “Foundry” products (e.g., Palantir Foundry).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

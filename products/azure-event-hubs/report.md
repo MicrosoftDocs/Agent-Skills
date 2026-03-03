@@ -27,6 +27,13 @@ category_descriptions:
   deployment: Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2),
     setting up geo-replication, and running/local-testing Event Hubs apps using the
     emulator.
+skill_description: Expert knowledge for Azure Event Hubs covering .NET/Kafka/Flink/Spark/Akka
+  integration, Kafka protocol (MirrorMaker 1/2, Streams, Connect, Debezium), partitions/retention/compaction,
+  Premium processing units, application groups, geo-disaster recovery, Entra ID/SAS/RBAC,
+  VNet/Private Link, TLS, troubleshooting AMQP/Kafka auth/ARM/checkpoint errors, and
+  emulator use. Use when designing, configuring, securing, or troubleshooting Azure
+  Event Hubs and Kafka-compatible ingestion. Not for Azure Service Bus, Azure IoT
+  Hub, or general Kafka cluster administration.
 ---
 # Azure Event Hubs Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-boards
-description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications.
+description: Expert knowledge for Azure Boards covering limits/quotas for test plans, suites, and work item attachments; Excel/Office add-in sync and mapping errors; WIQL queries; GitHub/Slack/Teams integration; process/field/Kanban WIP configuration; SAFe/cross-team planning; and permissions/query security. Use when designing, configuring, or troubleshooting Azure Boards work tracking. Not for Azure DevOps Repos, Pipelines, or GitHub Projects.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"

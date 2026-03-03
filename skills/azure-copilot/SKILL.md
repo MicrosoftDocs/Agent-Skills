@@ -1,6 +1,6 @@
 ---
 name: azure-copilot
-description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications.
+description: Expert knowledge for Azure Copilot covering cost‑efficient Azure decisions (VM sizing, Marketplace offers, Load Balancer SKU, storage estate), infra-as-code generation (Terraform, Bicep, AKS YAML, APIM policies, Azure CLI/PowerShell), Cosmos DB conversation storage configuration, network architecture/routing/security design, security/access policies, and troubleshooting App Service/Functions and VM disk I/O. Use when designing, configuring, securing, or troubleshooting Azure with Copilot.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-analysis-services
-description: Expert knowledge for Azure Analysis Services development including troubleshooting. Use when building, debugging, or optimizing Azure Analysis Services applications.
+description: Expert knowledge for Azure Analysis Services troubleshooting network connectivity: diagnosing failed connections from Power BI/SSMS, resolving firewall/VNet/subnet/NSG issues, validating server name/ports, fixing Azure AD auth errors, and checking gateway/config settings. Use when connection tests fail, time out, or return errors. Not for Azure Synapse, SQL Database, or Power BI dataset connectivity.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -25,6 +25,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Automation issues: DSC/State Configuration,
     Hybrid Runbook Workers (agent/extension), managed identities, runbook failures,
     shared resources, and collecting support diagnostics.'
+skill_description: Expert knowledge for Azure Automation covering Automation Accounts
+  security (managed identities, Entra ID auth, RBAC, private endpoints, Key Vault
+  creds), runbooks/DSC config, Hybrid Runbook Workers, Change Tracking/Inventory,
+  CI/CD, ARM/Bicep/Terraform, DSC/Chocolatey, quotas, and migration from Orchestrator/Log
+  Analytics agent. Use when designing, securing, integrating, or troubleshooting Azure
+  Automation. Not for Azure Functions, Logic Apps, or general VM scripting.
 ---
 # Azure Automation Crawl Report
 

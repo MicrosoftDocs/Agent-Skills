@@ -1,6 +1,6 @@
 ---
 name: azure-service-fabric
-description: Expert knowledge for Azure Service Fabric development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Fabric applications.
+description: Expert knowledge for Azure Service Fabric covering cluster configuration (cluster/node types, manifests, reverse proxy, Reliable Services/Actors), CRP/Cluster Resource Manager, health/upgrade policies, CI/CD deployments, security (certs, TLS, Entra ID, Key Vault), diagnostics, and troubleshooting (upgrade failures, SNAT, remoting, connectivity). Use when designing, securing, deploying, or debugging Service Fabric clusters and apps. Not for AKS, Azure App Service, or Azure Functions.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

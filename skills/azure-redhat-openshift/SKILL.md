@@ -1,6 +1,6 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Red Hat OpenShift applications.
+description: Expert knowledge for Azure Red Hat OpenShift covering ARO 4 cluster sizing, infra nodes, OpenShift Virtualization VMs, private/ARM/Bicep deployments, networking (proxy, DNS, egress, MTU, NSGs), storage (Azure Files, Azure NetApp Files, Prometheus→Azure Monitor), ACR auth, Key Vault, Entra ID/managed identity, FIPS, GPUs, upgrades, cert rotation, backups/restores, limits/quotas, and shared responsibility. Use when designing, securing, integrating, or troubleshooting Azure Red Hat OpenShift clusters and apps. Not for generic Kubernetes, AKS, plain OpenShift on VMs, or non-Azure Red Hat OpenShift services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

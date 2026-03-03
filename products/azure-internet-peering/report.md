@@ -4,6 +4,13 @@ category_descriptions:
   troubleshooting: Diagnosing and validating Azure Peering Service prefixes, including
     prefix registration checks, routing verification, and troubleshooting connectivity
     or reachability issues.
+skill_description: Expert knowledge for Azure Internet Peering covering Azure Peering
+  Service prefix registration validation, BGP routing path verification, route propagation
+  checks, latency and packet loss analysis, and troubleshooting reachability/connectivity
+  for ISP-provided prefixes. Use when diagnosing Azure Peering Service prefix issues,
+  misrouted traffic, or unavailable prefixes advertised via Internet exchange partners.
+  Not for Azure Virtual Network peering, ExpressRoute, or generic public Internet
+  routing.
 ---
 # Azure Internet Peering Crawl Report
 

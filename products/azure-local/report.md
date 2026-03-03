@@ -28,6 +28,11 @@ category_descriptions:
   best-practices: 'Best practices for Azure Local operations: configuring metric alerts,
     using supported Arc VM operations, designing SDN-aware network patterns, and managing
     updates safely and efficiently.'
+skill_description: Expert knowledge for Azure Local covering security/compliance (RBAC,
+  certificates, BitLocker, NSG/SDN, Defender, FedRAMP/HIPAA/ISO 27001/PCI DSS), deployment/updates,
+  limits/quotas, DR patterns, Arc-enabled VMs, disconnected mode, SLB/NSG issues,
+  PowerShell/ARM, and cost (Hybrid Benefit). Use when designing, deploying, or troubleshooting
+  Azure Local clusters. Not for generic Azure Stack HCI or public Azure-only workloads.
 ---
 # Azure Local Crawl Report
 

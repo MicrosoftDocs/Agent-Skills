@@ -27,6 +27,12 @@ category_descriptions:
   deployment: Installing, configuring, scaling, moving, backing up, restoring, and
     upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains,
     and project collections
+skill_description: Expert knowledge for Azure DevOps covering org/project architecture,
+  pool topology, Boards/process customization, notifications, permissions/security,
+  audit logs, Analytics/OData, Power BI, dashboards, limits/quotas, integrations,
+  and Azure DevOps Server/TFS deployment, backup, restore, and upgrades. Use when
+  designing, configuring, securing, or troubleshooting Azure DevOps/Server. Not for
+  GitHub, GitHub Actions, or generic Azure resource management.
 ---
 # Azure DevOps Crawl Report
 

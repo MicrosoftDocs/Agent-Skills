@@ -28,6 +28,15 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS,
     HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage,
     capacity, and migration validation errors.'
+skill_description: Expert knowledge for Azure Database for PostgreSQL covering Flexible
+  Server/Single Server, performance tuning (pg_stat_statements, autovacuum, partitioning,
+  pgvector, connection pooling), security (Entra ID, SCRAM, TLS/SSL, Private Link,
+  firewall, Defender for Cloud), HA/replicas, backup/restore, PITR, CI/CD, Bicep,
+  WAL/replication, Ora2Pg migrations, and troubleshooting connectivity/CPU/IOPS/slow
+  queries. Use when designing, configuring, securing, integrating (Azure AI/OpenAI,
+  LangChain, Data Factory), sizing/scaling, or debugging Azure Database for PostgreSQL
+  workloads. Not for Azure SQL Database, Azure Cosmos DB for PostgreSQL, generic PostgreSQL
+  on VMs, or non-Azure PostgreSQL hosting.
 ---
 # Azure Database for PostgreSQL Crawl Report
 

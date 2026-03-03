@@ -10,6 +10,12 @@ category_descriptions:
     needed to reliably access and use the Azure portal across different platforms.
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
+skill_description: Expert knowledge for Azure Portal security (tenant-wide portal
+  policies, RBAC dashboard sharing, Intune MAM, Azure mobile app access), configuration
+  (dashboard JSON/templates, keyboard shortcuts, URL allowlists, mobile alerts, Azure
+  Policy), limits/quotas (browser/OS/device requirements), and troubleshooting (HAR,
+  F12 network traces, console logs). Use when configuring, securing, or diagnosing
+  Azure Portal UI/performance issues.
 ---
 # Azure Portal Crawl Report
 

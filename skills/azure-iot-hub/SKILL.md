@@ -1,6 +1,6 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Hub applications.
+description: Expert knowledge for Azure IoT Hub covering DPS enrollment/allocations, RBAC/SAS/X.509 auth, TLS, VNet/private endpoints, device twins, jobs, message routing/enrichments, file upload, Device Update for IoT Hub, SDK patterns (D2C/C2D, methods, modules), ARM/Bicep deployment, throttling/quotas, and error codes (e.g., 401003, 404104). Use when designing, securing, configuring, or troubleshooting Azure IoT Hub or DPS solutions. Not for Azure IoT Central, Event Hubs, or generic MQTT brokers.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

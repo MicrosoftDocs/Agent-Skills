@@ -1,6 +1,6 @@
 ---
 name: azure-sovereign-us
-description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure US Government applications.
+description: Expert knowledge for Azure US Government covering FedRAMP High/DoD IL5 scope, SACA patterns, TIC, Entra ID auth, secure naming, IL5 isolation, DISA CAP/ASE baselines, CI/CD to gov regions, Gov Marketplace publishing, sovereign endpoints (portal.azure.us, storage.azure.us), SSMS to Gov SQL, Azure Monitor in US Gov, EA billing, VM extensions, and NERC CIP/public safety workloads. Use when designing, securing, deploying, or integrating workloads in Azure US Government or DoD regions. Not for commercial/global Azure, Azure China, or Azure Government licensing/billing policy disputes.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"

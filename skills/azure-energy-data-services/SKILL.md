@@ -1,6 +1,6 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications.
+description: Expert knowledge for Azure Energy Data Services (Azure Data Manager for Energy / ADME) covering deployment tier selection (Developer vs Standard), OSDU data/compute services, data partitions, CORS, Reservoir DDMS, audit logging, auth tokens, ACLs, legal tags, private endpoints, managed identities, geospatial consumption zones, OSDU Admin UI, large file upload, Airflow manifest ingestion errors, and DR/HA patterns. Use when designing, securing, integrating, or troubleshooting ADME/OSDU workloads on Azure. Not for generic Azure Storage, Azure Synapse, or non-OSDU data platforms.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

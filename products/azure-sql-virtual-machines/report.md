@@ -27,6 +27,12 @@ category_descriptions:
   integrations: Backing up and restoring SQL Server on Azure VMs directly to Azure
     Blob Storage, including configurations that use managed identities instead of
     stored credentials.
+skill_description: Expert knowledge for SQL Server on Azure Virtual Machines covering
+  troubleshooting (I/O throttling, tempdb, transaction log growth, connectivity, SQL
+  IaaS Agent), Always On AG/FCI and WSFC architecture, HA/DR, storage and backup to
+  Azure Blob, TLS/Key Vault/Entra ID security, migration/licensing/cost decisions,
+  and ARM deployments. Use when working with SQL Server running inside Azure VMs.
+  Not for Azure SQL Database, Azure SQL Managed Instance, or on-prem SQL only.
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 

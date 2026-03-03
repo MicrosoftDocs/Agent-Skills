@@ -25,6 +25,13 @@ category_descriptions:
   limits-quotas: 'Quotas, limits, and usage patterns for Azure Speech: batch TTS,
     custom/pro voice training & deployment, and short audio STT, plus throttling and
     capacity planning guidance.'
+skill_description: Expert knowledge for Azure AI Speech covering STT/TTS config (audio
+  formats, SSML, phonemes, custom/pro voices, Voice Live), containers/Kubernetes,
+  on-prem endpoints, language ID, Entra ID/RBAC, VNet/Private Link, BYOS, batch/long-form
+  synthesis, SDK/REST integration, error codes, quotas/throttling, and migration between
+  Speech/Voice APIs. Use when designing, deploying, securing, or troubleshooting Azure
+  AI Speech solutions. Not for Azure OpenAI text-only, Teams calling, or generic audio
+  DSP.
 ---
 # Azure AI Speech Crawl Report
 

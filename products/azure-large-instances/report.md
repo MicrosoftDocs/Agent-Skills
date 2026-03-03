@@ -9,6 +9,12 @@ category_descriptions:
   integrations: Guidance for configuring, creating, and performance-tuning Epic EHR
     storage volume groups on Azure Large Instances, including layout, sizing, and
     best practices.
+skill_description: Expert knowledge for Azure Large Instances with Epic, covering
+  connectivity/performance troubleshooting (ExpressRoute, MTU, latency, storage IOPS),
+  Epic SKU limits/quotas (M/F-series LI sizes, vCPU/RAM, scale-up constraints), and
+  Epic EHR volume group design (layout, sizing, I/O tuning, best practices). Use when
+  designing, sizing, or debugging Epic on Azure Large Instances. Not for standard
+  Azure VMs, Azure NetApp Files, or generic Azure compute.
 ---
 # Azure Large Instances Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-stack-edge
-description: Expert knowledge for Azure Stack Edge development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Stack Edge applications.
+description: Expert knowledge for Azure Stack Edge covering limits/quotas, supported VM sizes, Data Box Gateway, networking/VPN, TLS/certificates, RBAC, Key Vault secrets, Kubernetes/IoT Edge/Arc, GPUs/DeepStream, ARM/Blob/IoT/VM/GPU errors, diagnostics/logs, firmware/K8s updates, and failure recovery. Use when planning, deploying, or troubleshooting Azure Stack Edge devices. Not for Azure Stack HCI, Azure Stack Hub, or generic Azure Storage.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -1,6 +1,6 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Azure Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Azure Extended Zones applications.
+description: Expert knowledge for Azure Extended Zones covering subscription registration, Extended Zones access requests, custom Azure Policy definitions (allowed locations, notAllowedLocations) to govern usage, and cost optimization via Reserved Instances and Savings Plans (eligibility, commitment terms, purchase workflows). Use when configuring Extended Zones access or deciding RI/Savings Plans for Extended Zones capacity.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

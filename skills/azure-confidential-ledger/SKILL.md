@@ -1,6 +1,6 @@
 ---
 name: azure-confidential-ledger
-description: Expert knowledge for Azure Confidential Ledger development including decision making, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Confidential Ledger applications.
+description: Expert knowledge for Azure Confidential Ledger covering Entra ID auth and app registrations, certificate/JWT token roles, RBAC/UDF security, enclave/node attestation, client SDKs, UDF patterns, blob digest anchoring, Power Automate, transaction receipt verification, Managed CCF migration, and ARM/Terraform deployment. Use when designing, securing, integrating, or migrating Azure Confidential Ledger. Not for Azure SQL Ledger, Azure Storage, or general blockchain.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

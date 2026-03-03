@@ -1,6 +1,6 @@
 ---
 name: azure-lighthouse
-description: Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Lighthouse applications.
+description: Expert knowledge for Azure Lighthouse covering tenant/user/role mapping, RBAC/AOBO, PIM eligible roles, security hardening, ARM/policy-based delegations, updating/removing access, built-in policies, managed identity remediation, cross-tenant Arc/Sentinel/Migrate/Monitor Logs patterns, and Marketplace managed service offers. Use when designing, securing, or operating multi-tenant Azure Lighthouse scenarios.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

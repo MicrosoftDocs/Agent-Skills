@@ -1,6 +1,6 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Chaos Studio applications.
+description: Expert knowledge for Chaos Studio covering security (RBAC roles, managed identities, CMK encryption, Private Link, VNet injection, AKS auth), configuration (ARM/Bicep experiment JSON, Azure Policy onboarding, Azure Monitor/Workbook), troubleshooting Chaos Agent install/health and VM agent errors, limits/quotas, and CLI/REST integrations with Application Insights. Use when designing, securing, or debugging Azure Chaos Studio experiments. Not for Azure Load Testing, Azure Monitor load tests, or generic performance testing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

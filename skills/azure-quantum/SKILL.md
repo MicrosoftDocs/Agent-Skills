@@ -1,6 +1,6 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Quantum applications.
+description: Expert knowledge for Azure Quantum troubleshooting provider jobs (IonQ, PASQAL, Quantinuum, Rigetti), quotas/timeouts, QDK/qdk.azure setup, QIR/OpenQASM/Pulser, Qiskit/Cirq submission, RBAC/ARM locks/managed identities, workspace ARM/Bicep/CLI deployment, hybrid jobs, and resource estimator. Use when designing, configuring, or debugging Azure Quantum workloads. Not for generic quantum theory or non-Azure quantum services.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

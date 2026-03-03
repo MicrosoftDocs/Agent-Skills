@@ -20,6 +20,12 @@ category_descriptions:
   deployment: How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move
     outbound traffic from VMs/public IPs, and transition existing outbound access
     to Azure NAT Gateway.
+skill_description: Expert knowledge for Azure NAT Gateway covering SNAT port limits/quotas,
+  outbound connection scaling, Standard vs StandardV2 configuration, public IP/Prefix
+  association, flow logs, metrics/alerts, hub-spoke and Azure Firewall patterns, and
+  troubleshooting connectivity/SNAT exhaustion. Use when designing, deploying, or
+  debugging Azure NAT Gateway outbound internet access. Not for Azure Firewall, Azure
+  Application Gateway, or generic VNet routing.
 ---
 # Azure NAT Gateway Crawl Report
 

@@ -17,6 +17,13 @@ category_descriptions:
     using Traffic View analytics to optimize routing decisions and traffic distribution
   troubleshooting: Testing Traffic Manager routing behavior, verifying endpoint health,
     and diagnosing/fixing degraded profiles, misconfigurations, and routing issues.
+skill_description: Expert knowledge for Azure Traffic Manager covering profile/endpoint
+  configuration, weighted/geographic/subnet/multivalue routing, DNS/IPv6, health probes,
+  Traffic View, RUM JavaScript, App Center integration, ARM/Bicep/Terraform/CLI/PowerShell
+  deployment, nested profiles, and TM + Application Gateway designs, plus routing
+  tests and probe failures. Use when designing, optimizing, or troubleshooting Azure
+  Traffic Manager. Not for Azure Front Door, Azure Application Gateway alone, or Azure
+  Load Balancer.
 ---
 # Azure Traffic Manager Crawl Report
 

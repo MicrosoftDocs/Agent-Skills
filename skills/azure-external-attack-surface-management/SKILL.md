@@ -1,6 +1,6 @@
 ---
 name: azure-external-attack-surface-management
-description: Expert knowledge for Azure External Attack Surface Management development including limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure External Attack Surface Management applications.
+description: Expert knowledge for Azure External Attack Surface Management covering Defender EASM configuration (inventory filters for domains, hosts, IPs/blocks, ASNs, pages, contacts, SSL certificates, policy engine automation rules), Log Analytics/Azure Data Explorer export integrations, and billing limits/quotas for billable assets. Use when managing EASM inventory, data pipelines, or cost/asset counts. Not for Microsoft Defender for Cloud posture or generic Azure networking.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
