@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 413
+- **Updated Pages**: 1
+- **Unchanged**: 414
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -65,10 +65,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-03-02T08:00:00.000Z
-- [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/create-custom-roles)
-  - Updated: 2026-02-09T12:03:00.000Z → 2026-03-02T18:20:00.000Z
+- [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview)
+  - Updated: 2026-01-17T06:02:00.000Z → 2026-03-03T06:02:00.000Z
 
 ## Classified Pages
 
@@ -458,7 +456,6 @@ category_descriptions:
 | [View alerts](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-alerts) | 0.30 | Viewing alerts is primarily a UI/status walkthrough; it doesn’t emphasize configuration parameters or troubleshooting mappings. |
 | [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes) | 0.30 | Release notes for Connected Machine agent; version-specific changes, not stable expert patterns for skills. |
 | [Workflows and features](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workflow-features) | 0.30 | Overview of workflows and features; conceptual description of authoring/deploying/managing solutions without explicit config tables or limits. |
-| [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview) | 0.25 | Conceptual overview of Arc-enabled Kubernetes; no detailed configs or limits indicated. |
 | [Azure Arc-enabled System Center Virtual Machine Manager >](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/overview) | 0.25 | Overview of Arc-enabled SCVMM; no explicit expert-level configuration or limits mentioned. |
 | [Azure Arc-enabled VMware vSphere >](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/overview) | 0.25 | Overview of Arc-enabled VMware vSphere; primarily descriptive/marketing-style content. |
 | [Azure Arc-enabled data services >](https://learn.microsoft.com/en-us/azure/azure-arc/data/overview) | 0.25 | Introductory overview of Arc-enabled data services; lacks specific configuration or troubleshooting content. |
@@ -489,6 +486,7 @@ category_descriptions:
 | [What is Edge RAG?](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/overview) | 0.20 | High-level overview of Edge RAG; summary doesn’t show detailed configs, limits, or troubleshooting content. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/whats-new) | 0.20 | What's new page referencing blogs and case studies; not a technical reference for limits/configs/troubleshooting. |
 | [Azure Arc Jumpstart scenarios](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/jumpstart) | 0.10 | Scenario/marketing-style description of an Arc Jumpstart use case; not focused on detailed configuration, limits, or troubleshooting guidance. |
+| [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview) | 0.10 | High-level overview of Azure Arc-enabled Kubernetes without specific limits, configuration tables, error codes, or decision matrices. Primarily conceptual description of what the service does and its benefits, not detailed expert guidance. |
 | [Azure Arc-enabled PostgreSQL](https://learn.microsoft.com/en-us/azure/azure-arc/data/what-is-azure-arc-enabled-postgresql) | 0.10 | Retirement notice/overview; no indication of detailed configs, limits, or troubleshooting. |
 | [Support and feedback](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/support-feedback) | 0.10 | Support and feedback instructions; process-oriented, not technical configuration, limits, or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/whats-new) | 0.10 | What's new/release notes are high-level change logs; they usually lack structured limits, config matrices, or detailed troubleshooting mappings. |

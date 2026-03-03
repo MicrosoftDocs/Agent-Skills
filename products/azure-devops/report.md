@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 935
+- **Updated Pages**: 0
+- **Unchanged**: 939
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -61,17 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 650 | 69.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Add and manage banners](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/manage-banners?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T22:01:00.000Z
-- [Create a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops)
-  - Updated: 2025-11-11T02:02:00.000Z → 2026-03-02T22:01:00.000Z
-- [Change service visibility](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/set-services?view=azure-devops)
-  - Updated: 2025-12-19T16:56:00.000Z → 2026-03-02T22:01:00.000Z
-- [Configure team tools](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/manage-teams?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-02T22:01:00.000Z
 
 ## Classified Pages
 

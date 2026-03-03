@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 798
+- **Updated Pages**: 0
+- **Unchanged**: 799
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 211 | 26.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy a Premium SSD v2](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2)
-  - Updated: 2025-08-20T17:03:00.000Z → 2026-03-02T23:04:00.000Z
 
 ## Classified Pages
 

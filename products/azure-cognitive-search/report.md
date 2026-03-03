@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 297
+- **Updated Pages**: 0
+- **Unchanged**: 299
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -61,13 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 65 | 21.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-import-vectors)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-02T23:16:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-image-search)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

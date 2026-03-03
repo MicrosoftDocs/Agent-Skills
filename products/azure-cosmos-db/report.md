@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 976
+- **Updated Pages**: 0
+- **Unchanged**: 977
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 201 | 20.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Merge (preview)](https://learn.microsoft.com/en-us/azure/cosmos-db/merge)
-  - Updated: 2025-12-05T08:00:00.000Z → 2026-03-02T23:12:00.000Z
 
 ## Classified Pages
 

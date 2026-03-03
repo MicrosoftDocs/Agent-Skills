@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 358
+- **Updated Pages**: 0
+- **Unchanged**: 361
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -62,15 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 65 | 18.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Dedicated plan](https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan)
-  - Updated: 2024-11-11T23:02:00.000Z → 2026-02-23T08:00:00.000Z
-- [Connect to a Virtual Network](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-vnet)
-  - Updated: 2025-05-13T05:03:00.000Z → 2026-02-25T08:00:00.000Z
-- [Create a Durable Functions app - C#](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-isolated-create-first-csharp)
-  - Updated: 2024-08-21T22:04:00.000Z → 2026-02-24T08:00:00.000Z
 
 ## Classified Pages
 

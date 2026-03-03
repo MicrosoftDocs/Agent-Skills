@@ -39,6 +39,13 @@ category_descriptions:
 - **Classified**: 188
 - **Unclassified**: 48
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 236
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -53,6 +60,8 @@ category_descriptions:
 | security | 49 | 20.8% |
 | troubleshooting | 13 | 5.5% |
 | *(Unclassified)* | 48 | 20.3% |
+
+## Changes
 
 ## Classified Pages
 

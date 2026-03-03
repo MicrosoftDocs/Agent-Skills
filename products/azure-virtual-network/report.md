@@ -26,60 +26,54 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 139
-- **Fetched**: 139
+- **Total Pages**: 132
+- **Fetched**: 132
 - **Fetch Failed**: 0
-- **Classified**: 66
+- **Classified**: 59
 - **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 137
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 132
+- **Deleted Pages**: 7
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 4.3% |
-| best-practices | 10 | 7.2% |
-| configuration | 26 | 18.7% |
-| decision-making | 6 | 4.3% |
-| limits-quotas | 3 | 2.2% |
-| security | 5 | 3.6% |
-| troubleshooting | 10 | 7.2% |
-| *(Unclassified)* | 73 | 52.5% |
+| architecture-patterns | 6 | 4.5% |
+| best-practices | 8 | 6.1% |
+| configuration | 26 | 19.7% |
+| decision-making | 6 | 4.5% |
+| limits-quotas | 3 | 2.3% |
+| security | 5 | 3.8% |
+| troubleshooting | 5 | 3.8% |
+| *(Unclassified)* | 73 | 55.3% |
 
 ## Changes
 
-### New Pages
-
-- [Create a routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
-
-### Updated Pages
-
-- [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview)
-  - Updated: 2026-02-19T12:31:00.000Z → 2026-03-02T23:28:00.000Z
-
 ### Deleted Pages
 
-- ~~Create a virtual network routing appliance~~ (https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance)
+- ~~Troubleshoot outbound SMTP connectivity problems~~ (https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-outbound-smtp-connectivity)
+- ~~Troubleshoot Azure VM connectivity problems~~ (https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-vm-connectivity)
+- ~~Test VM network throughput by using NTTTCP~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-bandwidth-testing)
+- ~~Test network latency between Azure VMs~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency)
+- ~~Troubleshoot virtual network deletion failures~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-cannot-delete-vnet)
+- ~~Troubleshoot connectivity problems between Azure VMs~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-connectivity-problem-between-vms)
+- ~~Troubleshoot virtual network peering issues~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-peering-issues)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot outbound SMTP connectivity problems](https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-outbound-smtp-connectivity) | troubleshooting | 0.86 | Troubleshooting guide for outbound SMTP from Azure VMs, tied to subscription types and port 25 blocking behavior; includes Azure-specific causes and resolution patterns that are not generic email troubleshooting. |
-| [Troubleshoot Azure VM connectivity problems](https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-vm-connectivity) | troubleshooting | 0.85 | Connectivity troubleshooting guide for Azure VMs with symptom→diagnosis→resolution flows, likely including Azure-specific checks (NSGs, routes, health probes) and possibly error messages. |
 | [Diagnose a virtual machine network traffic filter problem](https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem) | troubleshooting | 0.80 | Focused on diagnosing VM traffic filter problems via effective security rules. Provides symptom→diagnosis→solution flow using Azure-specific tooling and NSG rule evaluation behavior. |
 | [Diagnose a virtual machine routing problem](https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem) | troubleshooting | 0.80 | Guides users through diagnosing routing issues by inspecting effective routes, combining system, custom, and BGP routes. This is a symptom→cause→solution troubleshooting pattern specific to Azure VNets. |
 | [Network bandwidth](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput) | limits-quotas | 0.80 | Explains VM network throughput, flow limits, and bandwidth per size. Contains concrete Mbps values, flow limits, and possibly tables by VM SKU, which are specific limits/quotas not generally known. |
 | [Network virtual appliance issues in Azure](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-nva) | troubleshooting | 0.80 | Provides steps to validate Azure platform requirements for NVAs and resolve VM/VPN connectivity issues, including Azure-specific checks and configurations, organized as troubleshooting guidance. |
 | [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | limits-quotas | 0.75 | Update article about which existing VM sizes support MANA and Accelerated Networking. This typically includes SKU-specific support matrices and constraints, which are expert knowledge about limits/availability per VM size. |
 | [Resource logging for a network security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log) | configuration | 0.75 | Explains enabling NSG event and rule counter logs and how they work. Contains Azure-specific logging categories, settings, and behavior, fitting configuration/diagnostics patterns. |
-| [Troubleshoot virtual network deletion failures](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-cannot-delete-vnet) | troubleshooting | 0.72 | Troubleshooting article for VNet deletion failures; typically includes specific error messages and dependent resource checks unique to Azure resource model. |
 | [Azure Policy Regulatory Compliance controls](https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for VNets, which are product-specific security/compliance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/virtual-network/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; each policy has a specific name, effect, and conditions that are product-specific configuration artifacts. |
 | [Azure services network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services) | decision-making | 0.70 | Compares private endpoints, service endpoints, and dedicated deployments for isolation; helps decide which integration method to use for different services and scenarios. |
@@ -93,10 +87,6 @@ category_descriptions:
 | [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) | best-practices | 0.70 | Provides product-specific tuning steps and configuration values for Windows and Linux VMs to improve throughput. |
 | [Secure Virtual Network](https://learn.microsoft.com/en-us/azure/virtual-network/secure-virtual-network) | security | 0.70 | Security-focused guidance for VNets; likely includes concrete recommendations on NSGs, firewalls, and access controls specific to Azure VNet. |
 | [TCP/IP performance tuning](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning) | best-practices | 0.70 | Provides Azure-specific TCP/IP tuning recommendations and considerations (e.g., window sizes, offloads) tailored to Azure VM networking behavior, which are product-specific best-practices rather than generic TCP advice. |
-| [Test VM network throughput by using NTTTCP](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-bandwidth-testing) | best-practices | 0.70 | Describes how to use NTTTCP for bandwidth testing on Azure VMs, including Azure-specific recommendations and patterns for accurate measurement, which are actionable best-practices. |
-| [Test network latency between Azure VMs](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency) | best-practices | 0.70 | Provides Azure-specific guidance on accurately testing VM-to-VM latency using particular tools and recommended practices, which are concrete, product-specific testing patterns. |
-| [Troubleshoot connectivity problems between Azure VMs](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-connectivity-problem-between-vms) | troubleshooting | 0.70 | Focused on diagnosing VM-to-VM connectivity with stepwise troubleshooting; expected to map symptoms to Azure-specific causes (NSGs, routes, etc.) and resolutions. |
-| [Troubleshoot virtual network peering issues](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-peering-issues) | troubleshooting | 0.70 | Explicit troubleshooting guide for VNet peering with symptom-based steps and Azure-specific checks; likely includes error conditions and configuration diagnostics unique to Azure VNets. |
 | [Upgrade guidance for Basic SKU public IP addresses](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance) | decision-making | 0.70 | Retirement guidance plus SKU comparison and migration steps; helps decide when/how to upgrade Basic to Standard with scenario-focused recommendations. |
 | [Use dynamic DNS to register hostnames](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-ddns) | configuration | 0.70 | Explains how to configure dynamic DNS with custom DNS servers hosted in Azure; includes specific configuration steps and parameters. |
 | [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) | architecture-patterns | 0.70 | Explains how peering works, types of peering, and when to use them; Azure-specific connectivity pattern with trade-offs. |

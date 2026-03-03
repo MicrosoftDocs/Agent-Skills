@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 266
-- **Unchanged**: 300
+- **Updated Pages**: 0
+- **Unchanged**: 566
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -62,50 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 56 | 9.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Task index](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [DotNetCoreCLI@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [DotNetCoreCLI@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [DotNetCoreCLI@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v0?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [DotNetCoreInstaller@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-installer-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [DotNetCoreInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/dotnet-core-installer-v0?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AdvancedSecurity-Dependency-Scanning@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-dependency-scanning-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T18:08:00.000Z → 2026-03-02T08:00:00.000Z
-- [AdvancedSecurity-Codeql-Init@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-init-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AdvancedSecurity-Codeql-Analyze@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-codeql-analyze-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T18:08:00.000Z → 2026-03-02T08:00:00.000Z
-- [AdvancedSecurity-Publish@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/advanced-security-publish-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AndroidBuild@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-build-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AndroidSigning@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-signing-v3?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AndroidSigning@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-signing-v2?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AndroidSigning@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-signing-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Ant@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/ant-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T18:08:00.000Z → 2026-03-02T08:00:00.000Z
-- [AppCenterDistribute@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/app-center-distribute-v3?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AppCenterDistribute@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/app-center-distribute-v2?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AppCenterDistribute@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/app-center-distribute-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AppCenterDistribute@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/app-center-distribute-v0?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [AppCenterTest@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/app-center-test-v1?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- *...and 246 more*
 
 ## Classified Pages
 

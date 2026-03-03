@@ -38,6 +38,13 @@ category_descriptions:
 - **Classified**: 100
 - **Unclassified**: 22
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 122
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -52,6 +59,8 @@ category_descriptions:
 | security | 7 | 5.7% |
 | troubleshooting | 10 | 8.2% |
 | *(Unclassified)* | 22 | 18.0% |
+
+## Changes
 
 ## Classified Pages
 

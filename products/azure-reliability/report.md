@@ -27,9 +27,9 @@ category_descriptions:
 - **Unclassified**: 69
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 96
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 100
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -45,18 +45,6 @@ category_descriptions:
 | *(Unclassified)* | 69 | 69.0% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery)
-- [Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana)
-
-### Updated Pages
-
-- [Azure regions list](https://learn.microsoft.com/en-us/azure/reliability/regions-list)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-02T23:14:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/reliability/overview-reliability-guidance)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-02T23:14:00.000Z
 
 ## Classified Pages
 

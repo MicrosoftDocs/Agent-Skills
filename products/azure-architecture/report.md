@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   example-workloads: 'End-to-end reference architectures and patterns for real-world
     Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe,
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 443
+- **Updated Pages**: 1
+- **Unchanged**: 442
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 108 | 24.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
+  - Updated: 2026-02-24T06:06:00.000Z → 2026-03-03T06:03:00.000Z
 
 ## Classified Pages
 
@@ -475,7 +480,7 @@ category_descriptions:
 | [Networking](https://learn.microsoft.com/en-us/azure/architecture/networking/) | 0.20 | Networking start-here page is a catalog/overview of sample architectures and services, not a deep implementation or decision guide. |
 | [Web applications](https://learn.microsoft.com/en-us/azure/architecture/web-apps/) | 0.20 | High-level overview and navigation hub for web architectures; lacks detailed deployable architecture, patterns, or configuration specifics. |
 | [Architecture icons](https://learn.microsoft.com/en-us/azure/architecture/icons/) | 0.10 | Icon download and diagramming assets; no architectural guidance, patterns, or deployment details. |
-| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/what’s new listing; does not itself contain deep technical guidance or architectures. |
+| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | 0.10 | Changelog/navigation page listing new and updated Azure Architecture Center articles; does not itself contain detailed architectures, patterns, comparisons, or implementation guidance. |
 | [AIX UNIX to Azure Linux migration](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/unix-migration/migrate-aix-azure-linux) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Batch transaction processing](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/process-batch-transactions) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Deploy IBM Maximo Application Suite](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/deploy-ibm-maximo-application-suite) | - | Parse error: Expecting value: line 1 column 1 (char 0) |

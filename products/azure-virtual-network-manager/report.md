@@ -27,8 +27,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 51
+- **Updated Pages**: 0
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -44,11 +44,6 @@ category_descriptions:
 | *(Unclassified)* | 30 | 57.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/virtual-network-manager/faq)
-  - Updated: 2025-07-11T08:00:00.000Z → 2026-03-02T18:31:00.000Z
 
 ## Classified Pages
 

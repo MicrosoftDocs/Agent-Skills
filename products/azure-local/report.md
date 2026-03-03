@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 307
+- **Updated Pages**: 0
+- **Unchanged**: 313
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
@@ -62,21 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 73 | 23.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new in Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2602)
-  - Updated: 2026-02-18T23:03:00.000Z → 2026-03-02T08:00:00.000Z
-- [Release information](https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2602)
-  - Updated: 2026-02-27T18:05:00.000Z → 2026-03-02T08:00:00.000Z
-- [Known issues](https://learn.microsoft.com/en-us/azure/azure-local/known-issues?view=azloc-2602)
-  - Updated: 2026-02-18T23:03:00.000Z → 2026-03-02T08:00:00.000Z
-- [Review prerequisites](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-prerequisites?view=azloc-2602)
-  - Updated: 2025-12-23T23:03:00.000Z → 2026-03-02T18:16:00.000Z
-- [Update via PowerShell with limited connectivity](https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2602)
-  - Updated: 2026-02-20T18:04:00.000Z → 2026-03-02T08:00:00.000Z
-- [Enable SDN integration](https://learn.microsoft.com/en-us/azure/azure-local/deploy/enable-sdn-integration?view=azloc-2602)
-  - Updated: 2025-12-22T23:06:00.000Z → 2026-02-23T08:00:00.000Z
 
 ## Classified Pages
 

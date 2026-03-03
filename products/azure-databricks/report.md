@@ -40,10 +40,10 @@ category_descriptions:
 - **Unclassified**: 1401
 
 ### Incremental Update
-- **New Pages**: 14
-- **Updated Pages**: 122
-- **Unchanged**: 4217
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 4353
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-databricks/azure-databricks.csv`
 
 ## Classification Statistics
@@ -62,73 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 1401 | 32.2% |
 
 ## Changes
-
-### New Pages
-
-- [Rate limits](https://learn.microsoft.com/en-us/azure/databricks/ai-gateway/rate-limits-beta)
-- [Cluster termination error codes](https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/cluster-error-codes)
-- [Apply tags to notebooks](https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebook-tags)
-- [RStudio Desktop](https://learn.microsoft.com/en-us/azure/databricks/sparkr/rstudio)
-- [Install the Excel Add-in](https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-setup)
-- [Import and query data in Excel](https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-query)
-- [Google Sheets](https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/)
-- [Connect to a workspace](https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/connect)
-- [Query data](https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/query-data)
-- [Schedule data refreshes](https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/schedule-refresh)
-- [Customer-managed keys for Unity Catalog](https://learn.microsoft.com/en-us/azure/databricks/security/keys/cmek-unity-catalog)
-- [March 2026](https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/march)
-- [Migrate from legacy dashboards](https://learn.microsoft.com/en-us/azure/databricks/archive/legacy/clone-legacy-to-aibi)
-- [Excel connector (ODBC driver)](https://learn.microsoft.com/en-us/azure/databricks/archive/integrations/excel)
-
-### Updated Pages
-
-- [Databricks components](https://learn.microsoft.com/en-us/azure/databricks/getting-started/concepts)
-  - Updated: 2026-02-12T22:57:00.000Z → 2026-03-02T19:05:00.000Z
-- [Search for workspace objects](https://learn.microsoft.com/en-us/azure/databricks/search/)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-02-19T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/databricks/volumes/)
-  - Updated: 2026-02-27T19:16:00.000Z → 2026-03-02T23:45:00.000Z
-- [Work with files in volumes](https://learn.microsoft.com/en-us/azure/databricks/volumes/volume-files)
-  - Updated: 2026-02-18T22:10:00.000Z → 2026-03-02T23:45:00.000Z
-- [Tag database objects](https://learn.microsoft.com/en-us/azure/databricks/database-objects/tags)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [JDBC connection](https://learn.microsoft.com/en-us/azure/databricks/connect/jdbc-connection)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-02T23:45:00.000Z
-- [Discover page](https://learn.microsoft.com/en-us/azure/databricks/discover/discover-page)
-  - Updated: 2026-02-19T19:35:00.000Z → 2026-02-23T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/hubspot-pipeline)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/jira-pipeline)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-pipeline)
-  - Updated: 2026-02-14T02:30:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-pipeline)
-  - Updated: 2026-01-30T19:03:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-pipeline)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-02T19:05:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-pipeline)
-  - Updated: 2026-01-15T23:26:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-pipeline)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-pipeline)
-  - Updated: 2026-01-30T19:03:00.000Z → 2026-02-27T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-ads-pipeline)
-  - Updated: 2026-02-06T20:21:00.000Z → 2026-02-27T08:00:00.000Z
-- [Joins](https://learn.microsoft.com/en-us/azure/databricks/transform/join)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Google Drive](https://learn.microsoft.com/en-us/azure/databricks/ingestion/google-drive)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Write a client](https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-ingest)
-  - Updated: 2026-02-23T22:28:00.000Z → 2026-03-02T19:05:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-pipeline)
-  - Updated: 2026-02-19T23:31:00.000Z → 2026-02-27T08:00:00.000Z
-- *...and 102 more*
-
-### Deleted Pages
-
-- ~~Migrate from legacy dashboards~~ (https://learn.microsoft.com/en-us/azure/databricks/dashboards/clone-legacy-to-aibi)
-- ~~Connect to Databricks from Google Sheets~~ (https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets)
-- ~~RStudio on Azure Databricks~~ (https://learn.microsoft.com/en-us/azure/databricks/sparkr/rstudio)
 
 ## Classified Pages
 

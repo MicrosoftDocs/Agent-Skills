@@ -44,8 +44,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 438
+- **Updated Pages**: 0
+- **Unchanged**: 444
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
@@ -66,21 +66,6 @@ category_descriptions:
 | *(Unclassified)* | 12 | 2.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/)
-  - Updated: 2025-02-03T18:03:00.000Z → 2026-03-02T23:08:00.000Z
-- [1. Assess your cloud adoption strategy](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/assessment)
-  - Updated: 2025-02-03T18:03:00.000Z → 2026-03-02T23:08:00.000Z
-- [3. Define your strategy team](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-your-team)
-  - Updated: 2025-02-03T18:03:00.000Z → 2026-03-02T23:08:00.000Z
-- [Cost efficiency](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency)
-  - Updated: 2025-03-05T18:00:00.000Z → 2026-03-02T23:08:00.000Z
-- [Resiliency](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency)
-  - Updated: 2025-02-12T18:00:00.000Z → 2026-03-02T23:08:00.000Z
-- [Security](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/security)
-  - Updated: 2025-02-03T18:03:00.000Z → 2026-03-02T23:08:00.000Z
 
 ## Classified Pages
 

@@ -22,15 +22,15 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L51 | Diagnosing and fixing Azure VPN Gateway issues: S2S/P2S connection failures, certificate/auth errors, macOS IKEv2, throughput, health checks, resets, and packet-capture/log-based debugging |
-| Best Practices | L52-L56 | Guidance on using network virtual appliances (NVAs) in Azure as VPN endpoints for remote access, including design, routing, security, and integration with Azure VPN Gateway. |
-| Decision Making | L57-L66 | Guidance on choosing VPN Gateway SKUs, planning/migrating IPs and gateways (Classic→ARM), shifting P2S protocols (SSTP→IKEv2/OpenVPN), and designing remote work P2S VPN setups. |
-| Architecture & Design Patterns | L67-L73 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
-| Limits & Quotas | L74-L80 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
-| Security | L81-L104 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
-| Configuration | L105-L161 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
-| Integrations & Coding Patterns | L162-L169 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
-| Deployment | L170-L182 | Deploying and configuring VPN Gateways: creating gateways and S2S tunnels via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs, and deploying VPN client profiles. |
+| Troubleshooting | L35-L42 | Diagnosing and fixing Azure VPN Gateway issues: S2S/P2S connection failures, certificate/auth errors, macOS IKEv2, throughput, health checks, resets, and packet-capture/log-based debugging |
+| Best Practices | L43-L47 | Guidance on using network virtual appliances (NVAs) in Azure as VPN endpoints for remote access, including design, routing, security, and integration with Azure VPN Gateway. |
+| Decision Making | L48-L57 | Guidance on choosing VPN Gateway SKUs, planning/migrating IPs and gateways (Classic→ARM), shifting P2S protocols (SSTP→IKEv2/OpenVPN), and designing remote work P2S VPN setups. |
+| Architecture & Design Patterns | L58-L64 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
+| Limits & Quotas | L65-L71 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
+| Security | L72-L95 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
+| Configuration | L96-L152 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
+| Integrations & Coding Patterns | L153-L160 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
+| Deployment | L161-L173 | Deploying and configuring VPN Gateways: creating gateways and S2S tunnels via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs, and deploying VPN client profiles. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -38,15 +38,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Run Azure VPN Client prerequisites check and fix issues | https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-prerequisites-check |
 | Use packet capture on VPN Gateway for diagnostics | https://learn.microsoft.com/en-us/azure/vpn-gateway/packet-capture |
 | Reset VPN Gateway or connection to restore IPsec tunnels | https://learn.microsoft.com/en-us/azure/vpn-gateway/reset-gateway |
-| Resolve Azure VPN Client connection problems | https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-azure-vpn-client |
-| Diagnose VPN Gateway certificate auth errors | https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-digital-certificate-authentication |
-| Troubleshoot VPN Gateway using diagnostic logs | https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics |
-| Troubleshoot macOS IKEv2 point-to-site VPN | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2 |
-| Repair non-connecting Azure site-to-site VPNs | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect |
-| Stabilize intermittently disconnecting S2S VPNs | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently |
-| Interpret and fix Azure S2S VPN error codes | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-error-codes |
-| Fix Azure VPN point-to-site connection issues | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems |
-| Validate and troubleshoot VPN throughput to Azure | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet |
 | Verify Azure VPN Gateway connection health | https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-verify-connection-resource-manager |
 
 ### Best Practices

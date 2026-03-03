@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 373
+- **Updated Pages**: 0
+- **Unchanged**: 374
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-foundry-classic/azure-foundry-classic.csv`
 
@@ -61,11 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 95 | 25.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-02T18:11:00.000Z
 
 ## Classified Pages
 

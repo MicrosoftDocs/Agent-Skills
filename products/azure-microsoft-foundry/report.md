@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 256
+- **Updated Pages**: 0
+- **Unchanged**: 257
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-foundry/azure-microsoft-foundry.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 64 | 24.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Intervention points](https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-02T23:16:00.000Z
 
 ## Classified Pages
 

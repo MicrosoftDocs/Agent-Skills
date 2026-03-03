@@ -29,8 +29,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-vision/azure-ai-vision.csv`
 
@@ -46,21 +46,6 @@ category_descriptions:
 | *(Unclassified)* | 24 | 53.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Generate alt text for images](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/use-case-alt-text)
-  - Updated: 2025-02-21T23:30:00.000Z → 2026-03-02T08:00:00.000Z
-- [Call the Background removal API (preview)](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/background-removal)
-  - Updated: 2025-02-21T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Configure a storage account](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/blob-storage-search)
-  - Updated: 2025-02-21T23:30:00.000Z → 2026-03-02T08:00:00.000Z
-- [Generate a smart-cropped thumbnail](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/generate-thumbnail)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-02T08:00:00.000Z
-- [Smart-cropped thumbnails](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-generate-thumbnails-40)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-02T08:00:00.000Z
-- [Background removal (preview)](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-background-removal)
-  - Updated: 2025-08-21T22:07:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

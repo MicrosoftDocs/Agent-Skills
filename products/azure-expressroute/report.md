@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 97
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -61,13 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 12 | 12.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath)
-  - Updated: 2026-01-28T23:12:00.000Z → 2026-03-02T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about)
-  - Updated: 2025-07-08T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

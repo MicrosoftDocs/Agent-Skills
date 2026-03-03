@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 201
+- **Updated Pages**: 0
+- **Unchanged**: 203
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -62,13 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 22 | 10.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Install SAP NetWeaver with HANA HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-hana-ascs-ers-dialog-instance)
-  - Updated: 2024-06-19T08:00:00.000Z → 2026-03-02T23:28:00.000Z
-- [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs)
-  - Updated: 2023-07-04T11:13:00.000Z → 2026-03-02T23:28:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   limits-quotas: Limits, quotas, and performance characteristics of Azure NetApp Files
     volumes, including size/throughput caps, inodes, user/group quotas, SAP/Oracle/Linux
@@ -7,9 +7,9 @@ category_descriptions:
   deployment: Deploying and configuring Azure NetApp Files for SAP HANA and Oracle
     (AVGs, HSR, DR, backups), migrating ONTAP data, managing AzAcSnap, zones, and
     requesting regional access
-  architecture-patterns: 'Architectural guidance and reference designs for Azure NetApp
-    Files: app volume groups, SAP/Oracle/AVS deployments, hybrid cache, network/AD
-    design, and high availability patterns.'
+  architecture-patterns: Architectural guidance and patterns for designing, deploying,
+    and optimizing Azure NetApp Files workloads (SAP, Oracle, AVS, hybrid/cache, ZRS,
+    AD integration, and network/topology).
   configuration: Configuring Azure NetApp Files accounts, pools, networking, NFS/SMB,
     quotas, logging, snapshots/backup/replication, and app-specific setups (SAP HANA,
     Oracle, AzAcSnap, Elastic ZRS).
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 224
+- **Updated Pages**: 1
+- **Unchanged**: 223
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
@@ -62,6 +62,11 @@ category_descriptions:
 | *(Unclassified)* | 69 | 30.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies)
+  - Updated: 2025-04-25T17:04:00.000Z → 2026-03-03T08:00:00.000Z
 
 ## Classified Pages
 
@@ -140,7 +145,6 @@ category_descriptions:
 | [Create an SMB volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-volume-server-message-block) | configuration | 0.70 | Similar to NFS but for SMB; includes SMB-specific configuration parameters and prerequisites. |
 | [Delegate a subnet to Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-delegate-subnet) | configuration | 0.70 | Subnet delegation requires specific configuration values and resource types; this is a product-specific networking configuration. |
 | [Disable showmount](https://learn.microsoft.com/en-us/azure/azure-netapp-files/disable-showmount) | security | 0.70 | Explains ANF’s default showmount behavior and how to disable it due to security scanner concerns; product-specific security configuration and behavior. |
-| [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies) | architecture-patterns | 0.70 | Provides network planning guidelines (delegated subnets, VNet peering, on-premises access) specific to Azure NetApp Files; architecture/design guidance. |
 | [Install AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-installation) | deployment | 0.70 | Detailed installation guidance including distributed installation requirement for Azure Large Instances and version-specific behavior, which are product-specific deployment constraints. |
 | [Manage SMB share ACLs in Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-smb-share-access-control-lists) | security | 0.70 | Describes SMB share ACL evaluation and management via Advanced permissions and MMC for ANF; product-specific access control configuration. |
 | [Manage a manual QoS capacity pool](https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-manual-qos-capacity-pool) | configuration | 0.70 | Explains managing manual QoS pools, including settings that control per-volume throughput and behavior, which are product-specific configuration details. |
@@ -180,6 +184,7 @@ category_descriptions:
 | [Understand volume languages](https://learn.microsoft.com/en-us/azure/azure-netapp-files/understand-volume-languages) | limits-quotas | 0.70 | Describes default volume language (C.UTF-8) and supported character sizes (0–3 bytes) and planes; includes specific encoding constraints, fitting limits-quotas for path/character support. |
 | [Understand workload types](https://learn.microsoft.com/en-us/azure/azure-netapp-files/workload-types) | decision-making | 0.70 | Workload-type guidance for a specific service typically maps workloads to volume types/service levels with concrete criteria, helping users decide which configuration to choose. |
 | [Update Terraform-managed volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/terraform-manage-volume) | best-practices | 0.70 | Focuses on safe update patterns for Terraform-managed resources, including state handling and avoiding data loss; product-specific DO/DON’T guidance. |
+| [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies) | architecture-patterns | 0.68 | The page provides product-specific network architecture guidance for Azure NetApp Files, including how and when to use delegated subnets, VNet peering, and on-premises connectivity. It focuses on designing effective network topologies for this service rather than generic networking concepts, which aligns best with architecture-patterns. |
 | [AVS datastore performance considerations for Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-azure-vmware-solution-datastore) | architecture-patterns | 0.65 | Datastore design and sizing guidance for AVS with Azure NetApp Files is architecture-specific, likely including sizing formulas, thresholds, and trade-offs for different layouts. |
 | [Add volumes for an SAP HANA system as a DR system](https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-disaster-recovery) | deployment | 0.65 | Uses ANF cross-region replication with application volume groups for SAP HANA DR; includes product-specific DR deployment pattern. |
 | [Azure NetApp Files storage with cool access](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cool-access-introduction) | decision-making | 0.65 | Cool access intro for a specific service typically includes thresholds/behavioral details (hot vs cool tier, movement conditions, billing implications) that inform when to choose this feature for cost/perf trade-offs. |

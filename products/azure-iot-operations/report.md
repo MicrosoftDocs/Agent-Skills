@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 94
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -61,19 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 22 | 22.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use WASM data flow graphs](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-dataflow-graph-wasm)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [Build WASM modules](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-wasm-modules)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-02T23:28:00.000Z
-- [Configure graph definitions](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-wasm-graph-definitions)
-  - Updated: 2026-01-07T12:18:00.000Z → 2026-03-02T23:28:00.000Z
-- [Deploy graph definitions](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-02T23:28:00.000Z
-- [AI inference with ONNX](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-wasm-onnx-inference)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-02-26T08:00:00.000Z
 
 ## Classified Pages
 

@@ -32,8 +32,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -50,11 +50,6 @@ category_descriptions:
 | *(Unclassified)* | 8 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope)
-  - Updated: 2026-02-11T23:10:00.000Z → 2026-02-25T08:00:00.000Z
 
 ## Classified Pages
 
