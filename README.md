@@ -145,7 +145,7 @@ The repository is organized by Azure service domains:
 | ☁️ **Compute** | 13 | Azure App Service, Azure Batch, Azure Cloud Services, Azure Cyclecloud, Azure Functions |
 | 🔗 **Integration** | 16 | Azure API Center, Azure API Management, Azure Business Process Tracking, Azure Communication Services, Azure Data API Builder |
 | 📊 **Data & Analytics** | 19 | Azure Analysis Services, Azure Cache Redis, Azure Cosmos Db, Azure Data Explorer, Azure Data Factory |
-| 🤖 **AI & ML** | 20 | Azure AI Services, Azure AI Vision, Azure Anomaly Detector, Azure Bot Service, Azure Cognitive Search |
+| 🤖 **AI & ML** | 23 | Azure AI Services, Azure AI Vision, Azure Anomaly Detector, Azure Bot Service, Azure Cognitive Search, Azure Foundry Classic, Azure Foundry Local, Microsoft Foundry |
 | 🔒 **Security & Identity** | 19 | Azure Active Directory B2C, Azure Attestation, Azure Cloud Hsm, Azure Confidential Computing, Azure Confidential Ledger |
 | 🌐 **Networking** | 23 | Azure Application Gateway, Azure Bastion, Azure DDoS Protection, Azure Dns, Azure Expressroute |
 | 🏗️ **Infrastructure** | 50 | Azure Advisor, Azure AKS Edge Essentials, Azure API Management, Azure Arc, Azure Architecture |
