@@ -32,10 +32,10 @@ category_descriptions:
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 28
-- **Deleted Pages**: 1
+- **Unchanged**: 29
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
 ## Classification Statistics
@@ -52,14 +52,6 @@ category_descriptions:
 | *(Unclassified)* | 2 | 6.9% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot cluster performance issues](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
-
-### Deleted Pages
-
-- ~~Troubleshoot cluster performance failures~~ (https://learn.microsoft.com/en-us/azure/azure-managed-lustre/troubleshoot-performance)
 
 ## Classified Pages
 

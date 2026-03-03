@@ -30,16 +30,16 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 121
-- **Fetched**: 121
+- **Total Pages**: 122
+- **Fetched**: 122
 - **Fetch Failed**: 0
 - **Classified**: 89
-- **Unclassified**: 32
+- **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 120
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -49,21 +49,20 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 4 | 3.3% |
 | best-practices | 4 | 3.3% |
-| configuration | 14 | 11.6% |
-| decision-making | 2 | 1.7% |
+| configuration | 14 | 11.5% |
+| decision-making | 2 | 1.6% |
 | deployment | 3 | 2.5% |
-| integrations | 12 | 9.9% |
-| limits-quotas | 2 | 1.7% |
-| security | 36 | 29.8% |
-| troubleshooting | 12 | 9.9% |
-| *(Unclassified)* | 32 | 26.4% |
+| integrations | 12 | 9.8% |
+| limits-quotas | 2 | 1.6% |
+| security | 36 | 29.5% |
+| troubleshooting | 12 | 9.8% |
+| *(Unclassified)* | 33 | 27.0% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Automatically purge tags and manifests (preview)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-auto-purge)
-  - Updated: 2026-02-26T23:11:00.000Z → 2026-03-02T23:17:00.000Z
+- [Configure Service Health alerts for Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/set-container-registry-service-health-alerts)
 
 ## Classified Pages
 
@@ -191,6 +190,7 @@ category_descriptions:
 | [Send events to Event Grid - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-event-grid-quickstart) | 0.30 | Event Grid quickstart wiring registry events to a sample app; tutorial-style, no deep config tables or error codes. |
 | [View repositories](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-repositories) | 0.25 | Portal how-to for viewing repositories and tags; UI navigation, not expert configuration or limits. |
 | [About Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro) | 0.20 | High-level introduction to Azure Container Registry without detailed limits, configs, or error mappings. |
+| [Configure Service Health alerts for Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/set-container-registry-service-health-alerts) | 0.20 | Page is a how-to for configuring Azure Service Health alerts for Azure Container Registry. It focuses on navigation and setup steps, without product-specific limits, configuration parameter tables, error-code-based troubleshooting, or security role/permission details. No expert-only numeric thresholds, quotas, or decision matrices are present. |
 | [Create container registry - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli) | 0.20 | Quickstart showing basic creation and push/pull via CLI; no detailed limits, configs tables, or troubleshooting content. |
 | [Create container registry - Portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal) | 0.20 | Portal quickstart for creating a registry and pushing/pulling an image; procedural, not expert reference material. |
 | [Create container registry - PowerShell](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-powershell) | 0.20 | PowerShell quickstart for basic registry usage; no product-specific limits, configs, or error mappings. |

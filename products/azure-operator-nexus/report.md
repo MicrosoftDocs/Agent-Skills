@@ -38,8 +38,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 215
+- **Updated Pages**: 0
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -58,11 +58,6 @@ category_descriptions:
 | *(Unclassified)* | 57 | 26.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Set up Defender for Cloud security](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-02T23:03:00.000Z
 
 ## Classified Pages
 

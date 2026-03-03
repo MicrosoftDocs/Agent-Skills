@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 569
+- **Updated Pages**: 0
+- **Unchanged**: 573
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -62,17 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 123 | 21.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable or disable ACNS](https://learn.microsoft.com/en-us/azure/aks/use-advanced-container-networking-services)
-  - Updated: 2026-01-06T06:03:00.000Z → 2026-03-02T23:10:00.000Z
-- [Create an OIDC Issuer for your cluster](https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer)
-  - Updated: 2026-01-07T23:08:00.000Z → 2026-03-02T18:10:00.000Z
-- [Set up Layer 7 policies](https://learn.microsoft.com/en-us/azure/aks/how-to-apply-l7-policies)
-  - Updated: 2025-04-30T22:02:00.000Z → 2026-03-02T23:10:00.000Z
-- [Enable a managed identity on your cluster](https://learn.microsoft.com/en-us/azure/aks/use-managed-identity)
-  - Updated: 2025-11-04T05:34:00.000Z → 2026-03-02T23:10:00.000Z
 
 ## Classified Pages
 

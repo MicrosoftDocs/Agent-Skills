@@ -1,9 +1,9 @@
 ---
 generated_at: '2026-03-03'
 category_descriptions:
-  decision-making: Guidance on choosing App Service tiers, plans, auth and networking,
-    plus planning cost, TLS, domains, and migrations (.NET, Windows→Linux, VNet, Docker
-    Compose, App Service on Arc).
+  decision-making: Guides for choosing App Service tiers, plans, auth and networking,
+    plus planning migrations (Windows→Linux, .NET, VNet, Docker Compose, Arc) and
+    managing domains, TLS, scale, and cost
   best-practices: Best practices for deploying, securing, routing, and maintaining
     App Service apps, including handling IP/TLS changes, Traffic Manager, and minimizing
     downtime during maintenance/restarts
@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 245
+- **Updated Pages**: 1
+- **Unchanged**: 246
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -50,10 +50,10 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 1.6% |
+| architecture-patterns | 3 | 1.2% |
 | best-practices | 8 | 3.2% |
 | configuration | 53 | 21.5% |
-| decision-making | 15 | 6.1% |
+| decision-making | 16 | 6.5% |
 | deployment | 26 | 10.5% |
 | integrations | 8 | 3.2% |
 | limits-quotas | 1 | 0.4% |
@@ -65,10 +65,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Bicep](https://learn.microsoft.com/en-us/azure/app-service/samples-bicep)
-  - Updated: 2025-03-24T05:39:00.000Z → 2026-03-02T23:28:00.000Z
-- [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-container-azure-pipelines)
-  - Updated: 2024-06-11T22:09:00.000Z → 2026-03-02T23:28:00.000Z
+- [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration)
+  - Updated: 2025-03-25T05:36:00.000Z → 2026-03-03T06:13:00.000Z
 
 ## Classified Pages
 
@@ -206,13 +204,13 @@ category_descriptions:
 | [to Microsoft Graph with managed identity](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-microsoft-graph-as-app-javascript) | security | 0.70 | Tutorial configures system-assigned managed identity and RBAC for Graph; likely includes specific permission scopes and role assignments, which are product-specific security configuration details. |
 | [to SQL database as user](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-sql-database-as-user-dotnet) | security | 0.70 | Implements on-behalf-of flow with built-in authentication; includes detailed Entra configuration, scopes, and connection patterns unique to App Service. |
 | [to other Azure services with managed identity](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-app-access-storage-javascript) | security | 0.70 | Shows using managed identities to access Storage and other services; likely includes role names and scope configuration, which are product-specific security settings. |
+| [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration) | decision-making | 0.68 | The page goes beyond a conceptual overview and provides product-specific guidance on when and how to integrate Azure Application Gateway with Azure App Service using private endpoints, service endpoints, and App Service Environments. It discusses scenario-based considerations (internal vs external ASE, SCM site access restrictions) that help users decide between integration approaches. While it may not contain many numeric limits, it does include concrete, product-specific configuration and trade-off guidance that fits the decision-making category better than the others. |
 | [Scale out automatically](https://learn.microsoft.com/en-us/azure/app-service/manage-automatic-scaling) | deployment | 0.68 | Describes automatic scale-out behavior, supported app types, and constraints (for example, no slot traffic support), which are product-specific deployment characteristics. |
 | [About cost management](https://learn.microsoft.com/en-us/azure/app-service/overview-manage-costs) | decision-making | 0.65 | Guides cost estimation, budgeting, and monitoring specifically for App Service; supports financial decision-making across SKUs and usage. |
 | [Configure App Service for zone redundancy](https://learn.microsoft.com/en-us/azure/app-service/configure-zone-redundancy) | configuration | 0.65 | Covers enabling/disabling zone redundancy and checking support; typically includes specific plan types, regions, and configuration options unique to App Service. |
 | [Connect .NET app to SQL database](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database) | security | 0.65 | Tutorial on using managed identity to access Azure SQL; typically includes specific role assignments, connection string formats, and Entra/SQL configuration steps unique to App Service. |
 | [Enable App Service on Azure Arc](https://learn.microsoft.com/en-us/azure/app-service/manage-create-arc-environment) | deployment | 0.65 | Describes enabling App Service on Arc-enabled Kubernetes and creating custom locations; involves specific deployment and environment configuration steps. |
 | [Inbound IP address](https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-inbound) | best-practices | 0.65 | Provides concrete steps to handle inbound IP changes; operational guidance specific to App Service networking behavior. |
-| [Integrate with Application Gateway](https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration) | architecture-patterns | 0.65 | Describes integration patterns using private endpoints, service endpoints, and ASEs, plus SCM access restrictions; product-specific architectural pattern guidance. |
 | [Integrate with NAT gateway](https://learn.microsoft.com/en-us/azure/app-service/overview-nat-gateway-integration) | architecture-patterns | 0.65 | Explains scenarios for using NAT Gateway with App Service, including static IP and SNAT port scaling; product-specific architecture and trade-offs. |
 | [Manage App Service plan](https://learn.microsoft.com/en-us/azure/app-service/app-service-plan-manage) | configuration | 0.65 | Operational management of plans with App Service–specific behaviors and constraints; configuration/management focused. |
 | [Migrate an active domain](https://learn.microsoft.com/en-us/azure/app-service/manage-custom-dns-migrate-domain) | deployment | 0.65 | Describes how to migrate a live domain with no downtime, including sequencing and DNS changes—deployment/migration-specific expert guidance. |

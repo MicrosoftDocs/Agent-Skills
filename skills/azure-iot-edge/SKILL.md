@@ -27,10 +27,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Decision Making | L51-L57 | Guidance on choosing IoT Edge platforms, provisioning methods, EFLOW networking, and nested virtualization options, with configuration details for each deployment scenario. |
 | Architecture & Design Patterns | L58-L63 | Gateway deployment patterns and offline/ intermittently connected operation designs for Azure IoT Edge, including topology choices, buffering, sync, and resilience strategies. |
 | Limits & Quotas | L64-L68 | Azure IoT Edge service and resource limits: max modules, routes, deployments, message sizes, throttling, and other scalability and quota constraints for edge solutions. |
-| Security | L69-L83 | Security setup for IoT Edge: device provisioning (TPM, X.509, symmetric keys), cert creation/management, auth for downstream devices, EST/Private Link, and confidential computing modules. |
-| Configuration | L84-L119 | Configuring IoT Edge and EFLOW: device settings, networking (NICs, proxies, gateways, nested), storage, GPUs, metrics/monitoring, and provisioning (DPS, TPM, X.509, symmetric keys). |
-| Integrations & Coding Patterns | L120-L126 | Using IoT Edge direct methods for remote management, retrieving/uploading device logs, and building custom modules and integrations with other services and systems |
-| Deployment | L127-L135 | Deploying and updating IoT Edge: supported platforms (including EFLOW), Kubernetes/KubeVirt installs, CI/CD pipelines, and managing automatic deployments for device groups. |
+| Security | L69-L81 | Security setup for IoT Edge: device provisioning (TPM, X.509, symmetric keys), cert creation/management, auth for downstream devices, EST/Private Link, and confidential computing modules. |
+| Configuration | L82-L117 | Configuring IoT Edge and EFLOW: device settings, networking (NICs, proxies, gateways, nested), storage, GPUs, metrics/monitoring, and provisioning (DPS, TPM, X.509, symmetric keys). |
+| Integrations & Coding Patterns | L118-L124 | Using IoT Edge direct methods for remote management, retrieving/uploading device logs, and building custom modules and integrations with other services and systems |
+| Deployment | L125-L133 | Deploying and updating IoT Edge: supported platforms (including EFLOW), Kubernetes/KubeVirt installs, CI/CD pipelines, and managing automatic deployments for device groups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,8 +73,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure authentication for IoT Edge downstream devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device |
 | Create and install test certificates for Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates |
 | Install and manage certificates on Azure IoT Edge devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates |
-| Provision IoT Edge devices at scale using symmetric keys | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric |
-| Provision IoT Edge devices with virtual TPM on Linux | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm |
 | Provision Linux IoT Edge device using X.509 certificates | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-x509 |
 | Understand and configure IoT Edge certificate usage | https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-certs |
 | Understand and configure security principles for IoT Edge for Linux on Windows | https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-security |

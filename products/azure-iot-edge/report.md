@@ -36,13 +36,13 @@ category_descriptions:
 - **Total Pages**: 98
 - **Fetched**: 98
 - **Fetch Failed**: 0
-- **Classified**: 66
-- **Unclassified**: 32
+- **Classified**: 64
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 15
-- **Unchanged**: 83
+- **Updated Pages**: 2
+- **Unchanged**: 96
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -57,44 +57,18 @@ category_descriptions:
 | deployment | 6 | 6.1% |
 | integrations | 3 | 3.1% |
 | limits-quotas | 1 | 1.0% |
-| security | 11 | 11.2% |
+| security | 9 | 9.2% |
 | troubleshooting | 7 | 7.1% |
-| *(Unclassified)* | 32 | 32.7% |
+| *(Unclassified)* | 34 | 34.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Supported platforms](https://learn.microsoft.com/en-us/azure/iot-edge/support)
-  - Updated: 2025-08-28T08:00:00.000Z → 2026-03-02T23:28:00.000Z
-- [Develop modules using VS Code](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-02-26T08:00:00.000Z
-- [Configure EST server](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-configure-est-server)
-  - Updated: 2025-03-10T08:00:00.000Z → 2026-02-27T08:00:00.000Z
-- [IoT Edge runtime](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-02T08:00:00.000Z
-- [IoT Edge security manager](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-security-manager)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-02-26T08:00:00.000Z
-- [X.509 certificate attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-x509)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Update IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-update-iot-edge)
-  - Updated: 2026-02-24T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Configure module build options](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-module-build-options)
-  - Updated: 2025-06-06T05:14:00.000Z → 2025-08-21T05:12:00.000Z
-- [Use edgeAgent direct methods](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-edgeagent-direct-method)
-  - Updated: 2025-05-08T22:03:00.000Z → 2025-08-21T05:12:00.000Z
-- [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot)
-  - Updated: 2025-05-05T08:00:00.000Z → 2026-03-02T23:28:00.000Z
-- [About EFLOW](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows)
-  - Updated: 2025-01-22T05:32:00.000Z → 2026-03-02T23:28:00.000Z
-- [Benefits](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-benefits)
-  - Updated: 2025-06-09T17:04:00.000Z → 2025-08-21T05:12:00.000Z
-- [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric)
-  - Updated: 2025-05-16T08:00:00.000Z → 2026-03-02T23:28:00.000Z
+- [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm)
+  - Updated: 2025-08-21T05:12:00.000Z → 2026-03-02T08:00:00.000Z
+- [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric)
+  - Updated: 2026-02-20T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -127,8 +101,6 @@ category_descriptions:
 | [Configure proxy support](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-proxy-support) | configuration | 0.75 | Product-specific proxy configuration for runtime and modules, including environment variables and settings. |
 | [Create an IoT Edge device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-iot-edge-device) | decision-making | 0.75 | Helps select platform, provisioning, and authentication options with scenario-based guidance for IoT Edge devices. |
 | [Production checklist](https://learn.microsoft.com/en-us/azure/iot-edge/production-checklist) | best-practices | 0.75 | Production checklist with prioritized DOs and configuration recommendations specific to IoT Edge deployments. |
-| [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric) | security | 0.75 | DPS-based autoprovisioning with symmetric keys; product-specific security and provisioning configuration. |
-| [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm) | security | 0.75 | Uses TPM-based attestation with DPS; security and identity configuration specific to IoT Edge. |
 | [Understand and use createOptions](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-use-create-options) | configuration | 0.75 | Explains how to use the createOptions parameter in deployment manifests for port mapping, memory limits, GPU settings, etc.; includes product-specific container configuration patterns and parameters. |
 | [Virtual switch](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-virtual-switch) | configuration | 0.75 | Covers how to create the required Hyper-V virtual switch for EFLOW, especially on Windows Server, with specific commands and configuration values unique to this scenario. |
 | [Access built-in metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-built-in-metrics) | configuration | 0.70 | Details Prometheus-format metrics exposed by $edgeHub and $edgeAgent and how to access them; likely includes metric names and endpoint configuration specifics that are product-specific. |
@@ -193,6 +165,8 @@ category_descriptions:
 | [Filter data with Azure Functions](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-function) | 0.35 | Tutorial for deploying Azure Functions as modules; scenario-focused, not a reference of configs or limits. |
 | [Understand Azure IoT Edge modules](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-modules) | 0.35 | Conceptual explanation of modules and how they run; not a structured config or limits reference. |
 | [Deploy code to a Linux device](https://learn.microsoft.com/en-us/azure/iot-edge/quickstart-linux) | 0.30 | Quickstart tutorial for creating a device; step-by-step but not a catalog of settings, limits, or patterns. |
+| [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-symmetric) | 0.30 | Step-by-step guide for provisioning IoT Edge devices using symmetric keys on Linux. Focuses on how-to instructions rather than expert reference material such as limits, configuration option matrices, security role definitions, or troubleshooting error-code mappings. Does not meet the thresholds for the specialized sub-skill types. |
+| [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm) | 0.30 | Step-by-step tutorial for provisioning IoT Edge devices with virtual TPM on Linux. It primarily walks through setup and usage, without exposing detailed configuration parameter tables, limits, error-code mappings, or product-specific decision matrices. Content is procedural rather than reference-style expert knowledge as defined. |
 | [IoT Edge security manager](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-security-manager) | 0.25 | Explains security manager and module runtime conceptually; summary emphasizes understanding and integration points, not specific RBAC roles, configuration parameters, or security setting tables. |
 | [About Azure IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/about-iot-edge) | 0.20 | High-level 'what is' overview of Azure IoT Edge; no detailed limits, configs, or product-specific patterns. |
 | [About EFLOW](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows) | 0.20 | Described as an overview of Azure IoT Edge for Linux on Windows (EFLOW), explaining what it is and its high-level capabilities. This is conceptual/marketing-style content without clear indication of detailed configuration parameters, limits, or troubleshooting data. |

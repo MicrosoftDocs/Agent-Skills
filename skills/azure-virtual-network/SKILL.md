@@ -22,13 +22,13 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L46 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
-| Best Practices | L47-L60 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
-| Decision Making | L61-L70 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L71-L80 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L81-L87 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
-| Security | L88-L96 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
-| Configuration | L97-L125 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
+| Troubleshooting | L33-L41 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
+| Best Practices | L42-L53 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
+| Decision Making | L54-L63 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
+| Architecture & Design Patterns | L64-L73 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L74-L80 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
+| Security | L81-L89 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
+| Configuration | L90-L118 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -36,13 +36,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Diagnose Azure VM routing and effective routes | https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem |
 | Diagnose Azure VM NSG traffic filtering issues | https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem |
 | Register and create Azure Virtual Network routing appliances | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-create-virtual-network-routing-appliance |
-| Diagnose and fix Azure VM outbound SMTP blocking | https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-outbound-smtp-connectivity |
-| Troubleshoot connectivity problems for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-network/troubleshoot-vm-connectivity |
 | Troubleshoot Azure Virtual Network encryption scenarios | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-faq |
-| Fix errors when deleting Azure virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-cannot-delete-vnet |
-| Troubleshoot connectivity problems between Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-connectivity-problem-between-vms |
 | Troubleshoot Azure network virtual appliance connectivity | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-nva |
-| Resolve Azure virtual network peering connectivity issues | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-peering-issues |
 
 ### Best Practices
 | Topic | URL |
@@ -52,11 +47,9 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Tune MTU settings for Azure virtual machines | https://learn.microsoft.com/en-us/azure/virtual-network/how-to-virtual-machine-mtu |
 | Understand and control default outbound access for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access |
 | Configure Azure NSG rules and traffic processing | https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works |
-| Test Azure VM network throughput using NTTTCP | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-bandwidth-testing |
 | Optimize Azure VM network throughput settings | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth |
 | Configure and use Azure VNet service endpoints | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview |
 | Apply TCP/IP performance tuning on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning |
-| Measure Azure VM network latency with Latte/SockPerf | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency |
 
 ### Decision Making
 | Topic | URL |

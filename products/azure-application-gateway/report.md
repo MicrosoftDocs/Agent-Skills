@@ -42,7 +42,7 @@ category_descriptions:
 - **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 173
-- **Deleted Pages**: 12
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
 ## Classification Statistics
@@ -61,21 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 40 | 23.1% |
 
 ## Changes
-
-### Deleted Pages
-
-- ~~Backend health issues~~ (https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-backend-health-troubleshooting)
-- ~~Key Vault errors~~ (https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-key-vault-common-errors)
-- ~~Bad Gateway (502) errors~~ (https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-troubleshooting-502)
-- ~~ILB with an App Service Environment~~ (https://learn.microsoft.com/en-us/azure/application-gateway/create-gateway-internal-load-balancer-app-service-environment)
-- ~~Disabled listeners~~ (https://learn.microsoft.com/en-us/azure/application-gateway/disabled-listeners)
-- ~~Session affinity issues~~ (https://learn.microsoft.com/en-us/azure/application-gateway/how-to-troubleshoot-application-gateway-session-affinity-issues)
-- ~~HTTP response codes~~ (https://learn.microsoft.com/en-us/azure/application-gateway/http-response-codes)
-- ~~Ingress for AKS~~ (https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-troubleshoot)
-- ~~Use Log Analytics~~ (https://learn.microsoft.com/en-us/azure/application-gateway/log-analytics)
-- ~~Mutual authentication~~ (https://learn.microsoft.com/en-us/azure/application-gateway/mutual-authentication-troubleshooting)
-- ~~Resource Health~~ (https://learn.microsoft.com/en-us/azure/application-gateway/resource-health-overview)
-- ~~App service issues~~ (https://learn.microsoft.com/en-us/azure/application-gateway/troubleshoot-app-service-redirection-app-service-url)
 
 ## Classified Pages
 

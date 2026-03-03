@@ -40,8 +40,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 392
+- **Updated Pages**: 0
+- **Unchanged**: 393
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -61,11 +61,6 @@ category_descriptions:
 | *(Unclassified)* | 154 | 39.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 

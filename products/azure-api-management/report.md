@@ -41,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 275
+- **Updated Pages**: 0
+- **Unchanged**: 276
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -62,11 +62,6 @@ category_descriptions:
 | *(Unclassified)* | 47 | 17.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [validate-jwt](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy)
-  - Updated: 2025-08-07T05:10:00.000Z → 2026-02-25T08:00:00.000Z
 
 ## Classified Pages
 

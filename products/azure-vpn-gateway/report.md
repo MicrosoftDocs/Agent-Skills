@@ -32,53 +32,55 @@ category_descriptions:
 
 ## Summary
 
-- **Total Pages**: 129
-- **Fetched**: 129
+- **Total Pages**: 118
+- **Fetched**: 118
 - **Fetch Failed**: 0
-- **Classified**: 113
-- **Unclassified**: 16
+- **Classified**: 104
+- **Unclassified**: 14
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 128
-- **Deleted Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 118
+- **Deleted Pages**: 11
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.3% |
+| architecture-patterns | 3 | 2.5% |
 | best-practices | 1 | 0.8% |
-| configuration | 53 | 41.1% |
-| decision-making | 6 | 4.7% |
-| deployment | 10 | 7.8% |
-| integrations | 4 | 3.1% |
-| limits-quotas | 3 | 2.3% |
-| security | 20 | 15.5% |
-| troubleshooting | 13 | 10.1% |
-| *(Unclassified)* | 16 | 12.4% |
+| configuration | 53 | 44.9% |
+| decision-making | 6 | 5.1% |
+| deployment | 10 | 8.5% |
+| integrations | 4 | 3.4% |
+| limits-quotas | 3 | 2.5% |
+| security | 20 | 16.9% |
+| troubleshooting | 4 | 3.4% |
+| *(Unclassified)* | 14 | 11.9% |
 
 ## Changes
 
-### Updated Pages
+### Deleted Pages
 
-- [How to migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-02T23:28:00.000Z
+- ~~Report Azure VPN Client problems - Feedback Hub~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/feedback-hub-azure-vpn-client)
+- ~~Troubleshoot the Azure VPN Client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-azure-vpn-client)
+- ~~Troubleshoot digital certificate authentication~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-digital-certificate-authentication)
+- ~~Troubleshoot using diagnostic logs~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
+- ~~Troubleshoot VPN Gateway~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot)
+- ~~macOS - native VPN client connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
+- ~~Site-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
+- ~~Site-to-site connection disconnects intermittently~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently)
+- ~~Site-to-site error codes and solutions~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-error-codes)
+- ~~Point-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
+- ~~Validate VPN throughput to a VNet~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Site-to-site error codes and solutions](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-error-codes) | troubleshooting | 0.95 | Explicit catalog of S2S VPN error codes with meanings, causes, and solutions—classic symptom→code→cause→fix mapping unique to Azure VPN Gateway. |
-| [Point-to-site connection problems](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems) | troubleshooting | 0.90 | Lists concrete point-to-site VPN connection problems with their causes and resolutions, likely including specific error messages and diagnostic steps unique to Azure VPN Gateway. |
-| [Site-to-site connection disconnects intermittently](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently) | troubleshooting | 0.90 | Targets intermittent disconnection issues for Azure S2S VPN, providing concrete diagnostic steps and likely device/config-specific causes and remedies. |
-| [Site-to-site connection problems](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect) | troubleshooting | 0.90 | Scenario-based troubleshooting for S2S VPNs that suddenly stop working and cannot reconnect, providing stepwise diagnosis and product-specific resolution paths. |
-| [Troubleshoot digital certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-digital-certificate-authentication) | troubleshooting | 0.90 | Troubleshooting guide for S2S VPN with digital certificate authentication that lists specific error codes/messages, their causes, and recommended fixes—product-specific symptom→cause→solution mappings. |
-| [Troubleshoot the Azure VPN Client](https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-azure-vpn-client) | troubleshooting | 0.85 | Focused on diagnosing Azure VPN Client connection/configuration issues with concrete error conditions and corresponding fixes, beyond generic VPN debugging. |
 | [VPN Gateway configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings) | configuration | 0.85 | Central configuration reference describing VPN Gateway resources and settings, with product-specific parameter names and allowed values. |
-| [macOS - native VPN client connection problems](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2) | troubleshooting | 0.85 | Product- and OS-specific troubleshooting for macOS native IKEv2 client, detailing which four settings to check and how misconfiguration causes specific connectivity symptoms. |
 | [About gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-gateway-skus) | decision-making | 0.80 | SKU selection article with criteria like throughput, connections, and feature support; used to decide between tiers/SKUs. |
 | [Azure VPN Client - optional settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/azure-vpn-client-optional-configurations) | configuration | 0.80 | Documents client-side options (DNS suffixes, custom DNS, routes, forced tunneling) and their exact configuration fields for the Azure VPN Client. |
 | [Change from manually registered to Microsoft-registered VPN client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-entra-gateway-update) | security | 0.80 | Explains how to update Audience values on both gateway and clients for Entra ID auth; includes specific app IDs and configuration fields. |
@@ -105,7 +107,6 @@ category_descriptions:
 | [Linux - OpenSSL](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificates-linux-openssl) | configuration | 0.75 | Shows OpenSSL commands and options to create root and client .pem certificates for Azure P2S, including key sizes and certificate fields. |
 | [Linux - strongSwan](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux) | configuration | 0.75 | Uses strongSwan CLI to generate root and client certificates for Azure P2S; includes specific commands and configuration parameters. |
 | [RADIUS - Configure NPS and user groups](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-user-groups-radius) | integrations | 0.75 | Details vendor-specific attributes (VSAs) and NPS policy configuration to integrate with Azure VPN Gateway user groups—product-specific integration parameters. |
-| [Troubleshoot using diagnostic logs](https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics) | troubleshooting | 0.75 | Explains specific diagnostic log types, categories, and how to interpret them to resolve issues—symptom-to-diagnosis mappings and log locations. |
 | [Azure VPN client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-azure-vpn-client) | configuration | 0.72 | Shows Azure VPN Client profile fields and values for OpenVPN + certificate auth to Azure VPN Gateway, which are specific configuration parameters. |
 | [Version 2.x](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client) | configuration | 0.72 | Provides OpenVPN client configuration options and sample config for Azure P2S, including remote, proto, auth, and cert directives tailored to Azure. |
 | [Version 3.x](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client-version-3) | configuration | 0.72 | Focuses on OpenVPN Connect 3.x-specific settings and differences vs 2.x for Azure P2S certificate auth, with concrete client configuration parameters. |
@@ -151,7 +152,6 @@ category_descriptions:
 | [User tunnel](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-user-tunnel) | configuration | 0.70 | User tunnel configuration requires concrete VPN profile parameters and Azure-side settings that are product-specific. |
 | [VPN Gateway FAQ](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq) | limits-quotas | 0.70 | FAQ for VPN Gateway typically includes precise connection limits, throughput caps, supported combinations, and protocol specifics that are numeric and SKU-dependent. |
 | [VPN over private peering](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-vpn-private-peering) | integrations | 0.70 | Integration pattern combining VPN Gateway with ExpressRoute, including configuration constraints and supported scenarios. |
-| [Validate VPN throughput to a VNet](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet) | troubleshooting | 0.70 | Although framed as validation, it is used to diagnose throughput issues with specific steps, commands, and interpretation guidance for Azure VPN Gateway connections. |
 | [How to migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto) | deployment | 0.68 | The article describes a specific migration path between Basic and Standard public IP SKUs for Azure VPN Gateway, including SKU-specific applicability (VpnGw1-5), GA vs Preview status for Active-Passive vs Active-Active, and known limitations during migration. These are product- and SKU-specific deployment behaviors and constraints that go beyond generic knowledge and are needed for planning and executing production migrations. |
 | [Install VPN client certificates](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-vpn-client-install-azure-cert) | configuration | 0.68 | Details OS-specific certificate import steps and required certificate stores/locations for Azure P2S client authentication. |
 | [About active-active mode gateways](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-active-active-gateways) | architecture-patterns | 0.65 | Explains when and how to use active-active mode, including design benefits and trade-offs specific to VPN Gateway. |
@@ -200,8 +200,6 @@ category_descriptions:
 | [Certificate authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/site-to-site-certificate-authentication-gateway-portal) | 0.30 | How-to article for certificate-based S2S; mostly procedural without full config matrices. |
 | [Create and manage a VPN gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal) | 0.30 | Step-by-step portal tutorial; mainly procedural without comprehensive config tables or limits. |
 | [Preshared key](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal) | 0.30 | Tutorial for S2S setup; focuses on steps, not exhaustive configuration parameters or limits. |
-| [Report Azure VPN Client problems - Feedback Hub](https://learn.microsoft.com/en-us/azure/vpn-gateway/feedback-hub-azure-vpn-client) | 0.30 | Primarily a how-to for using Feedback Hub to report issues and collect logs; does not center on specific Azure VPN error codes, causes, and resolutions. |
 | [About point-to-site VPN](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about) | 0.20 | Conceptual overview of Point-to-Site VPN; describes what it is and scenarios, not detailed configuration or limits. |
-| [Troubleshoot VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot) | 0.20 | Acts as a link hub to other troubleshooting articles; summary indicates no direct error-code or diagnostic detail on this page. |
 | [What is VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways) | 0.20 | High-level overview of Azure VPN Gateway; no detailed limits, configs, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | 0.10 | What's new/release notes summary; no structured limits, configs, or troubleshooting content. |

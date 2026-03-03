@@ -24,8 +24,8 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |----------|-------|-------------|
 | Troubleshooting | L35-L41 | Diagnosing and troubleshooting App Service apps using built-in diagnostics and Azure Monitor, plus fixing common WordPress-on-App-Service configuration and runtime issues. |
 | Best Practices | L42-L53 | Best practices for deploying, securing, routing, and maintaining App Service apps, including handling IP/TLS changes, Traffic Manager, and minimizing downtime during maintenance/restarts |
-| Decision Making | L54-L72 | Guidance on choosing App Service tiers, plans, auth and networking, plus planning cost, TLS, domains, and migrations (.NET, Windows→Linux, VNet, Docker Compose, App Service on Arc). |
-| Architecture & Design Patterns | L73-L80 | Patterns for secure, scalable App Service architectures: ASE geo-scaling, Application Gateway integration, NAT Gateway outbound control, and recommended supporting Azure services. |
+| Decision Making | L54-L73 | Guides for choosing App Service tiers, plans, auth and networking, plus planning migrations (Windows→Linux, .NET, VNet, Docker Compose, Arc) and managing domains, TLS, scale, and cost |
+| Architecture & Design Patterns | L74-L80 | Patterns for secure, scalable App Service architectures: ASE geo-scaling, Application Gateway integration, NAT Gateway outbound control, and recommended supporting Azure services. |
 | Limits & Quotas | L81-L85 | App Service resource limits (CPU, memory, connections), quota types, how they’re measured/monitored, and how to use metrics to detect and avoid hitting plan or app quotas. |
 | Security | L86-L132 | Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs, IP/VNet/firewall, managed identities/Graph/SQL/Storage access, and policy/compliance protections. |
 | Configuration | L133-L189 | Configuring App Service apps: app settings, auth, networking/VNet, storage, containers, languages, domains/certs, monitoring, backups, and environment-specific options. |
@@ -66,6 +66,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate App Service VNet integration from gateway to regional | https://learn.microsoft.com/en-us/azure/app-service/migrate-gateway-based-vnet-integration |
 | Decide and plan migration from Docker Compose to sidecars | https://learn.microsoft.com/en-us/azure/app-service/migrate-sidecar-multi-container-apps |
 | Choose App Service networking features for security and access | https://learn.microsoft.com/en-us/azure/app-service/networking-features |
+| Choose and configure App Gateway with App Service | https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration |
 | Plan and manage custom domains for App Service | https://learn.microsoft.com/en-us/azure/app-service/overview-custom-domains |
 | Select and scale Azure App Service plans effectively | https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans |
 | Plan and manage Azure App Service costs | https://learn.microsoft.com/en-us/azure/app-service/overview-manage-costs |
@@ -74,7 +75,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Topic | URL |
 |-------|-----|
 | Design geo-distributed scaling with App Service Environments | https://learn.microsoft.com/en-us/azure/app-service/environment/app-service-app-service-environment-geo-distributed-scale |
-| Integrate Azure Application Gateway with App Service securely | https://learn.microsoft.com/en-us/azure/app-service/overview-app-gateway-integration |
 | Use Azure NAT Gateway with App Service for outbound traffic | https://learn.microsoft.com/en-us/azure/app-service/overview-nat-gateway-integration |
 | Use App Service recommended services and patterns for apps | https://learn.microsoft.com/en-us/azure/app-service/recommended-services |
 
