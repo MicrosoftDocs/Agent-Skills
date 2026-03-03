@@ -148,9 +148,11 @@ The repository is organized by Azure service domains:
 | 🤖 **AI & ML** | 23 | Azure AI Services, Azure AI Vision, Azure Anomaly Detector, Azure Bot Service, Azure Cognitive Search, Azure Foundry Classic, Azure Foundry Local, Microsoft Foundry |
 | 🔒 **Security & Identity** | 19 | Azure Active Directory B2C, Azure Attestation, Azure Cloud Hsm, Azure Confidential Computing, Azure Confidential Ledger |
 | 🌐 **Networking** | 23 | Azure Application Gateway, Azure Bastion, Azure DDoS Protection, Azure Dns, Azure Expressroute |
-| 🏗️ **Infrastructure** | 50 | Azure Advisor, Azure AKS Edge Essentials, Azure API Management, Azure Arc, Azure Architecture |
+| 🏗️ **Infrastructure** | 52 | Azure Advisor, Azure AKS Edge Essentials, Azure API Management, Azure Arc, Azure Architecture, Azure Container Storage, Azure Elastic SAN |
 | 💰 **Management** | 39 | Azure Advisor, Azure API Management, Azure Architecture, Azure Artifacts, Azure Automation |
 | 🎮 **Specialized** | 26 | Azure AKS Edge Essentials, Azure API Management, Azure App Configuration, Azure App Service, Azure Communication Services |
+
+**Total: 193 skills across 19 categories** ✓
 
 ---
 

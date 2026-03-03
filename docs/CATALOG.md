@@ -132,6 +132,8 @@ Skills for Databases.
 | [azure-oracle](skills/azure-oracle/) | Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Oracle applications. |
 | [azure-sap](skills/azure-sap/) | Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large Instances applications. |
 | [azure-sql-database](skills/azure-sql-database/) | Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications. |
+| [azure-sql-managed-instance](skills/azure-sql-managed-instance/) | Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications. |
+| [azure-sql-virtual-machines](skills/azure-sql-virtual-machines/) | Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SQL Server on Azure Virtual Machines applications. |
 
 ---
 
@@ -360,6 +362,8 @@ Skills for Storage.
 | [azure-queue-storage](skills/azure-queue-storage/) | Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Queue Storage applications. |
 | [azure-storage](skills/azure-storage/) | Expert knowledge for Azure Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Storage applications. |
 | [azure-table-storage](skills/azure-table-storage/) | Expert knowledge for Azure Table Storage development including best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Table Storage applications. |
+| [azure-container-storage](skills/azure-container-storage/) | Expert knowledge for Azure Container Storage development including troubleshooting, decision making, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Container Storage applications. |
+| [azure-elastic-san](skills/azure-elastic-san/) | Expert knowledge for Azure Elastic SAN development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Elastic SAN applications. |
 
 ---
 
