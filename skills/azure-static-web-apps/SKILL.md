@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Static Web Apps. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and fixing common Static Web Apps deployment and runtime issues, including build failures, configuration problems, and troubleshooting tools/logs. |
-| Decision Making | L38-L45 | Guidance on key architecture choices: Functions hosting model, using Front Door/CDN edge, Next.js deployment options, and comparing Free vs Standard Static Web Apps plans. |
-| Limits & Quotas | L46-L51 | Runtime versions and language support for Static Web Apps, plus plan-specific quotas and limits (storage, bandwidth, functions, concurrency, and resource caps). |
-| Security | L52-L63 | Configuring auth, roles, secrets, and access: Entra ID/Graph roles, auth providers, user info, deployment tokens, Key Vault/managed identity, password protection, and private endpoints. |
-| Configuration | L64-L90 | Configuring domains, DNS, backends (Functions, App Service, Container Apps, APIM), build/runtime settings, local emulation (SWA CLI), monitoring, and database/network for Static Web Apps. |
-| Integrations & Coding Patterns | L91-L99 | How to connect Static Web Apps APIs to Azure databases (Cosmos DB, SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical integration patterns. |
-| Deployment | L100-L116 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep, configuring CI/CD, preview environments, traffic splitting, and optional Azure Front Door CDN setup |
+| Troubleshooting | L35-L39 | Diagnosing and fixing common Static Web Apps deployment and runtime issues, including build failures, configuration problems, and troubleshooting tools/logs. |
+| Decision Making | L40-L47 | Guidance on key architecture choices: Functions hosting model, using Front Door/CDN edge, Next.js deployment options, and comparing Free vs Standard Static Web Apps plans. |
+| Limits & Quotas | L48-L53 | Runtime versions and language support for Static Web Apps, plus plan-specific quotas and limits (storage, bandwidth, functions, concurrency, and resource caps). |
+| Security | L54-L65 | Configuring auth, roles, secrets, and access: Entra ID/Graph roles, auth providers, user info, deployment tokens, Key Vault/managed identity, password protection, and private endpoints. |
+| Configuration | L66-L92 | Configuring domains, DNS, backends (Functions, App Service, Container Apps, APIM), build/runtime settings, local emulation (SWA CLI), monitoring, and database/network for Static Web Apps. |
+| Integrations & Coding Patterns | L93-L101 | How to connect Static Web Apps APIs to Azure databases (Cosmos DB, SQL, MySQL, PostgreSQL), including Mongoose usage, connection strings, and typical integration patterns. |
+| Deployment | L102-L118 | Deploying Static Web Apps via GitHub/GitLab/Bitbucket/CLI/ARM/Bicep, configuring CI/CD, preview environments, traffic splitting, and optional Azure Front Door CDN setup |
 
 ### Troubleshooting
 | Topic | URL |

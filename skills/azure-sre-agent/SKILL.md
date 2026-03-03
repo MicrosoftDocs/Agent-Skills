@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving Azure SRE Agent deployment, configuration, connectivity, and runtime issues, including common failure patterns and recommended fixes. |
-| Decision Making | L36-L40 | Billing model, pricing structure, cost drivers, and how Azure SRE Agent usage is metered, estimated, and optimized for cost. |
-| Security | L41-L50 | Security, roles, and access control for Azure SRE Agent: permissions, run modes and consent, data residency/privacy, compliance posture, and assigning user access roles. |
-| Configuration | L51-L59 | Configuring SRE Agent runtime features: code interpreter, memory, scheduled tasks, and creating/configuring subagents and workflows for multi-agent setups. |
-| Integrations & Coding Patterns | L60-L66 | Connecting SRE Agent to code repos, external services, custom Python tools, and MCP servers, plus patterns for extending and integrating the agent with your systems. |
+| Troubleshooting | L33-L37 | Diagnosing and resolving Azure SRE Agent deployment, configuration, connectivity, and runtime issues, including common failure patterns and recommended fixes. |
+| Decision Making | L38-L42 | Billing model, pricing structure, cost drivers, and how Azure SRE Agent usage is metered, estimated, and optimized for cost. |
+| Security | L43-L52 | Security, roles, and access control for Azure SRE Agent: permissions, run modes and consent, data residency/privacy, compliance posture, and assigning user access roles. |
+| Configuration | L53-L61 | Configuring SRE Agent runtime features: code interpreter, memory, scheduled tasks, and creating/configuring subagents and workflows for multi-agent setups. |
+| Integrations & Coding Patterns | L62-L68 | Connecting SRE Agent to code repos, external services, custom Python tools, and MCP servers, plus patterns for extending and integrating the agent with your systems. |
 
 ### Troubleshooting
 | Topic | URL |

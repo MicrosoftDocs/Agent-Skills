@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Managed Grafana. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
-| Decision Making | L39-L46 | Guidance on choosing and managing Grafana Enterprise plans, migrating existing Grafana or dashboards into Azure Managed Grafana, and upgrading workspaces to Grafana 11. |
-| Limits & Quotas | L47-L52 | Using image/report rendering features in Azure Managed Grafana and understanding its service limits, quotas, and operational constraints |
-| Security | L53-L66 | Securing Managed Grafana: auth/permissions, Entra/Team Sync, roles, service accounts/tokens, private access/endpoints, outbound IPs, data encryption, and security best practices. |
-| Configuration | L67-L75 | Configuring Azure Managed Grafana workspaces: instance settings, plugins, metrics/monitoring, diagnostic logs, and SMTP email alert setup. |
-| Integrations & Coding Patterns | L76-L88 | Patterns and setup for wiring Grafana to Azure services: Agent Framework and AI Foundry monitoring, Prometheus (AKS/AMW), Azure Monitor alerts, and Azure Data Explorer data sources. |
-| Deployment | L89-L93 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
+| Troubleshooting | L35-L40 | Diagnosing and resolving common Azure Managed Grafana issues, including access, configuration, and private endpoint connectivity and DNS problems. |
+| Decision Making | L41-L48 | Guidance on choosing and managing Grafana Enterprise plans, migrating existing Grafana or dashboards into Azure Managed Grafana, and upgrading workspaces to Grafana 11. |
+| Limits & Quotas | L49-L54 | Using image/report rendering features in Azure Managed Grafana and understanding its service limits, quotas, and operational constraints |
+| Security | L55-L68 | Securing Managed Grafana: auth/permissions, Entra/Team Sync, roles, service accounts/tokens, private access/endpoints, outbound IPs, data encryption, and security best practices. |
+| Configuration | L69-L77 | Configuring Azure Managed Grafana workspaces: instance settings, plugins, metrics/monitoring, diagnostic logs, and SMTP email alert setup. |
+| Integrations & Coding Patterns | L78-L90 | Patterns and setup for wiring Grafana to Azure services: Agent Framework and AI Foundry monitoring, Prometheus (AKS/AMW), Azure Monitor alerts, and Azure Data Explorer data sources. |
+| Deployment | L91-L95 | Designing highly available Azure Managed Grafana workspaces, including reliability features, SLAs, and enabling zone-redundant deployments for resiliency. |
 
 ### Troubleshooting
 | Topic | URL |

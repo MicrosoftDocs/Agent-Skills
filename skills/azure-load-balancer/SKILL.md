@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Load Balancer. Covers troubleshoot
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L50 | Diagnosing and fixing Azure Load Balancer issues: deployment errors, health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS errors, and resource health/availability. |
-| Best Practices | L51-L58 | Guidance on deploying Azure Load Balancer with VM scale sets, configuring inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended best practices. |
-| Decision Making | L59-L66 | Guidance on choosing the right Load Balancer SKU and planning/migrating configurations, including Basic→Standard, NAT rules v1→v2, and AWS NLB→Azure Load Balancer. |
-| Architecture & Design Patterns | L67-L71 | Design patterns for outbound internet connectivity using Azure Load Balancer, including egress-only architectures and SNAT configuration, scaling, and best practices. |
-| Limits & Quotas | L72-L77 | Configuring Azure Load Balancer TCP idle timeouts and reset options, and understanding how and when TCP resets are triggered and affect client connections. |
-| Security | L78-L83 | Security guidance for Azure Load Balancer: hardening, access controls, and using Azure DDoS Protection to defend against volumetric and network attacks. |
-| Configuration | L84-L104 | Configuring Azure Load Balancer behavior: backends/frontends (incl. cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution, monitoring, and SNAT outbound rules. |
-| Integrations & Coding Patterns | L105-L112 | Using Azure IMDS and Monitor to programmatically query load balancer/VM IP metadata and retrieve load balancer metrics via CLI and REST APIs. |
-| Deployment | L113-L117 | Guides for deploying Load Balancers: replicating configurations across regions and automating upgrades from Basic to Standard using PowerShell. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing Azure Load Balancer issues: deployment errors, health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS errors, and resource health/availability. |
+| Best Practices | L53-L60 | Guidance on deploying Azure Load Balancer with VM scale sets, configuring inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended best practices. |
+| Decision Making | L61-L68 | Guidance on choosing the right Load Balancer SKU and planning/migrating configurations, including Basic→Standard, NAT rules v1→v2, and AWS NLB→Azure Load Balancer. |
+| Architecture & Design Patterns | L69-L73 | Design patterns for outbound internet connectivity using Azure Load Balancer, including egress-only architectures and SNAT configuration, scaling, and best practices. |
+| Limits & Quotas | L74-L79 | Configuring Azure Load Balancer TCP idle timeouts and reset options, and understanding how and when TCP resets are triggered and affect client connections. |
+| Security | L80-L85 | Security guidance for Azure Load Balancer: hardening, access controls, and using Azure DDoS Protection to defend against volumetric and network attacks. |
+| Configuration | L86-L106 | Configuring Azure Load Balancer behavior: backends/frontends (incl. cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution, monitoring, and SNAT outbound rules. |
+| Integrations & Coding Patterns | L107-L114 | Using Azure IMDS and Monitor to programmatically query load balancer/VM IP metadata and retrieve load balancer metrics via CLI and REST APIs. |
+| Deployment | L115-L119 | Guides for deploying Load Balancers: replicating configurations across regions and automating upgrades from Basic to Standard using PowerShell. |
 
 ### Troubleshooting
 | Topic | URL |

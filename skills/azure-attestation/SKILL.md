@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Attestation. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Attestation failures, including policy/quote validation errors, configuration issues, and troubleshooting attestation responses and tokens. |
-| Best Practices | L36-L44 | Guidance on validating attestation tokens, writing secure attestation policies, and configuring/enforcing SGX and TPM attestation baselines using sample policies. |
-| Security | L45-L50 | Using Azure Policy to govern attestation providers, and securing Azure Attestation with private endpoints, firewalls, managed identities, and access control settings |
-| Configuration | L51-L67 | Configuring Azure Attestation policies (grammar, versions, claim rules), policy signer certs, and monitoring/logging via Azure Monitor, CLI, PowerShell, and log schema. |
-| Deployment | L68-L71 | How to create and configure a private endpoint for Azure Attestation using PowerShell, including network setup and secure access to attestation resources. |
+| Troubleshooting | L33-L37 | Diagnosing and resolving common Azure Attestation failures, including policy/quote validation errors, configuration issues, and troubleshooting attestation responses and tokens. |
+| Best Practices | L38-L46 | Guidance on validating attestation tokens, writing secure attestation policies, and configuring/enforcing SGX and TPM attestation baselines using sample policies. |
+| Security | L47-L52 | Using Azure Policy to govern attestation providers, and securing Azure Attestation with private endpoints, firewalls, managed identities, and access control settings |
+| Configuration | L53-L69 | Configuring Azure Attestation policies (grammar, versions, claim rules), policy signer certs, and monitoring/logging via Azure Monitor, CLI, PowerShell, and log schema. |
+| Deployment | L70-L73 | How to create and configure a private endpoint for Azure Attestation using PowerShell, including network setup and secure access to attestation resources. |
 
 ### Troubleshooting
 | Topic | URL |

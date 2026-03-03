@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure AI Content Safety. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and resolving Azure AI Content Safety API errors, including HTTP status codes, common failure causes, and recommended fixes or retries. |
-| Best Practices | L39-L43 | Tuning Content Safety thresholds, categories, and prompts to reduce misclassifications, plus strategies to balance safety, recall, and user experience. |
-| Decision Making | L44-L49 | Guidance on migrating apps from Content Safety preview to GA and deciding when and how to use limited-access Content Safety features and models. |
-| Architecture & Design Patterns | L50-L54 | Architectural guidance for combining cloud, hybrid, and on-device Azure AI Content Safety, including design patterns, deployment options, and integration strategies. |
-| Limits & Quotas | L55-L61 | Language coverage, building and training custom safety categories, and detecting protected/third‑party code in model outputs. |
-| Security | L62-L66 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
-| Configuration | L67-L71 | Configuring and using text blocklists in Azure AI Content Safety, including creating, managing, and applying custom blocked terms to filter harmful or unwanted content. |
-| Deployment | L72-L78 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
+| Troubleshooting | L36-L40 | Diagnosing and resolving Azure AI Content Safety API errors, including HTTP status codes, common failure causes, and recommended fixes or retries. |
+| Best Practices | L41-L45 | Tuning Content Safety thresholds, categories, and prompts to reduce misclassifications, plus strategies to balance safety, recall, and user experience. |
+| Decision Making | L46-L51 | Guidance on migrating apps from Content Safety preview to GA and deciding when and how to use limited-access Content Safety features and models. |
+| Architecture & Design Patterns | L52-L56 | Architectural guidance for combining cloud, hybrid, and on-device Azure AI Content Safety, including design patterns, deployment options, and integration strategies. |
+| Limits & Quotas | L57-L63 | Language coverage, building and training custom safety categories, and detecting protected/third‑party code in model outputs. |
+| Security | L64-L68 | Details on how Azure AI Content Safety encrypts data at rest, including encryption models, key management options, and compliance/security considerations. |
+| Configuration | L69-L73 | Configuring and using text blocklists in Azure AI Content Safety, including creating, managing, and applying custom blocked terms to filter harmful or unwanted content. |
+| Deployment | L74-L80 | How to install, configure, and run Azure AI Content Safety Docker containers for text, image, and prompt shield analysis in your own environment. |
 
 ### Troubleshooting
 | Topic | URL |

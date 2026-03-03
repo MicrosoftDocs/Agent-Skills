@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Files. Covers best practices, deci
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L48 | Best practices for Azure Files and Azure File Sync: DR/failover planning, server/drive replacement and recovery, safe deprovisioning, and performance tuning (SMB, NFS, Linux, VDI/FSLogix). |
-| Decision Making | L49-L68 | Guidance for planning Azure Files deployments: choosing tiers, redundancy, billing, costs, migration paths (SMB/NFS), File Sync topologies, and when to use Azure Files vs alternatives. |
-| Limits & Quotas | L69-L77 | Azure Files/File Sync limits: capacity, IOPS/throughput, scalability targets, API throttling behavior, redundancy/region support, and FAQ on performance-related constraints. |
-| Security | L78-L102 | Securing Azure Files with identity-based SMB/NFS auth, Kerberos/AD/Entra integration, NTFS/share permissions, encryption in transit, firewall/network controls, and managed identity access. |
-| Configuration | L103-L133 | Configuring Azure Files and File Sync: networking, VPN, endpoints, security, redundancy, monitoring/alerts, cloud tiering, and mounting shares on Windows, Linux, and macOS. |
-| Integrations & Coding Patterns | L134-L141 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
-| Deployment | L142-L153 | Guides for deploying and migrating to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, using tools like Data Box, Storage Mover, and Robocopy, plus moving File Sync resources. |
+| Best Practices | L35-L50 | Best practices for Azure Files and Azure File Sync: DR/failover planning, server/drive replacement and recovery, safe deprovisioning, and performance tuning (SMB, NFS, Linux, VDI/FSLogix). |
+| Decision Making | L51-L70 | Guidance for planning Azure Files deployments: choosing tiers, redundancy, billing, costs, migration paths (SMB/NFS), File Sync topologies, and when to use Azure Files vs alternatives. |
+| Limits & Quotas | L71-L79 | Azure Files/File Sync limits: capacity, IOPS/throughput, scalability targets, API throttling behavior, redundancy/region support, and FAQ on performance-related constraints. |
+| Security | L80-L104 | Securing Azure Files with identity-based SMB/NFS auth, Kerberos/AD/Entra integration, NTFS/share permissions, encryption in transit, firewall/network controls, and managed identity access. |
+| Configuration | L105-L135 | Configuring Azure Files and File Sync: networking, VPN, endpoints, security, redundancy, monitoring/alerts, cloud tiering, and mounting shares on Windows, Linux, and macOS. |
+| Integrations & Coding Patterns | L136-L143 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
+| Deployment | L144-L155 | Guides for deploying and migrating to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, using tools like Data Box, Storage Mover, and Robocopy, plus moving File Sync resources. |
 
 ### Best Practices
 | Topic | URL |

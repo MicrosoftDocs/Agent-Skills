@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Key Vault. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L43 | Diagnosing and fixing Key Vault issues: certificate problems, access policy and Azure Policy failures, Private Link misconfig, and interpreting REST/API error codes. |
-| Best Practices | L44-L54 | Best practices for securing keys/secrets, using soft-delete, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Azure Key Vault. |
-| Decision Making | L55-L62 | Guidance on planning RBAC defaults, migrating from access policies, moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity. |
-| Limits & Quotas | L63-L73 | Key Vault and Managed HSM limits: throttling, quotas, size/storage constraints, logging behavior, soft-delete rules, and firewall/network configuration. |
-| Security | L74-L101 | Securing Azure Key Vault and Managed HSM: auth and RBAC vs access policies, network/firewall/Private Link, BYOK/HSM keys, key attestation, backup/restore, and security best practices. |
-| Configuration | L102-L125 | Configuring Key Vault and Managed HSM: auth, logging, monitoring/alerts, metrics, policies, key types/rotation, secure key release, soft delete, and managing storage keys/secrets. |
-| Integrations & Coding Patterns | L126-L158 | Code samples and patterns for integrating Key Vault/Managed HSM with apps and services: client libraries, JS key/secret ops, Event Grid/Logic Apps, DigiCert, TLS offload, and SAS retrieval. |
-| Deployment | L159-L170 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
+| Troubleshooting | L36-L45 | Diagnosing and fixing Key Vault issues: certificate problems, access policy and Azure Policy failures, Private Link misconfig, and interpreting REST/API error codes. |
+| Best Practices | L46-L56 | Best practices for securing keys/secrets, using soft-delete, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Azure Key Vault. |
+| Decision Making | L57-L64 | Guidance on planning RBAC defaults, migrating from access policies, moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity. |
+| Limits & Quotas | L65-L75 | Key Vault and Managed HSM limits: throttling, quotas, size/storage constraints, logging behavior, soft-delete rules, and firewall/network configuration. |
+| Security | L76-L103 | Securing Azure Key Vault and Managed HSM: auth and RBAC vs access policies, network/firewall/Private Link, BYOK/HSM keys, key attestation, backup/restore, and security best practices. |
+| Configuration | L104-L127 | Configuring Key Vault and Managed HSM: auth, logging, monitoring/alerts, metrics, policies, key types/rotation, secure key release, soft delete, and managing storage keys/secrets. |
+| Integrations & Coding Patterns | L128-L160 | Code samples and patterns for integrating Key Vault/Managed HSM with apps and services: client libraries, JS key/secret ops, Event Grid/Logic Apps, DigiCert, TLS offload, and SAS retrieval. |
+| Deployment | L161-L172 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Web Application Firewall. Covers t
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L41 | Diagnosing and fixing common Azure WAF issues on Front Door and Application Gateway, including rule/blocking problems, false positives, and configuration-related access failures. |
-| Best Practices | L42-L50 | Best practices for configuring, tuning, and hardening Azure WAF on Front Door and Application Gateway, including rule tuning, exclusions, geomatch rules, and deployment security. |
-| Decision Making | L51-L57 | Guidance on planning and migrating from legacy WAF configurations to full WAF policies, and managing/upgrading managed rulesets over their lifecycle in Azure WAF. |
-| Architecture & Design Patterns | L58-L62 | Architectural guidance for designing DDoS-resistant web apps using Azure WAF with Front Door, including traffic flow, protection layers, and best-practice deployment patterns. |
-| Limits & Quotas | L63-L67 | Configuring WAF request body and file upload size limits on Application Gateway, including max size settings, constraints, and how to safely adjust them. |
-| Security | L68-L73 | Bot protection features and configuration for Application Gateway WAF, plus using Azure Policy to enforce WAF settings, governance, and compliance across resources. |
-| Configuration | L74-L120 | Configuring Azure WAF (Front Door & App Gateway): policies, custom/managed rules, rate limiting, geo/IP filters, bot/CAPTCHA, exclusions, logging/scrubbing, and custom block responses. |
-| Integrations & Coding Patterns | L121-L131 | Using WAF with other Azure services: integrating logs with Sentinel/Log Analytics, automating incident response, investigating events, and protecting APIM/Azure OpenAI via Front Door WAF. |
-| Deployment | L132-L137 | How to deploy and provision Azure Application Gateway WAF v2 using Bicep, ARM templates, or Terraform, including required resources, parameters, and configuration structure. |
+| Troubleshooting | L37-L43 | Diagnosing and fixing common Azure WAF issues on Front Door and Application Gateway, including rule/blocking problems, false positives, and configuration-related access failures. |
+| Best Practices | L44-L52 | Best practices for configuring, tuning, and hardening Azure WAF on Front Door and Application Gateway, including rule tuning, exclusions, geomatch rules, and deployment security. |
+| Decision Making | L53-L59 | Guidance on planning and migrating from legacy WAF configurations to full WAF policies, and managing/upgrading managed rulesets over their lifecycle in Azure WAF. |
+| Architecture & Design Patterns | L60-L64 | Architectural guidance for designing DDoS-resistant web apps using Azure WAF with Front Door, including traffic flow, protection layers, and best-practice deployment patterns. |
+| Limits & Quotas | L65-L69 | Configuring WAF request body and file upload size limits on Application Gateway, including max size settings, constraints, and how to safely adjust them. |
+| Security | L70-L75 | Bot protection features and configuration for Application Gateway WAF, plus using Azure Policy to enforce WAF settings, governance, and compliance across resources. |
+| Configuration | L76-L122 | Configuring Azure WAF (Front Door & App Gateway): policies, custom/managed rules, rate limiting, geo/IP filters, bot/CAPTCHA, exclusions, logging/scrubbing, and custom block responses. |
+| Integrations & Coding Patterns | L123-L133 | Using WAF with other Azure services: integrating logs with Sentinel/Log Analytics, automating incident response, investigating events, and protecting APIM/Azure OpenAI via Front Door WAF. |
+| Deployment | L134-L139 | How to deploy and provision Azure Application Gateway WAF v2 using Bicep, ARM templates, or Terraform, including required resources, parameters, and configuration structure. |
 
 ### Troubleshooting
 | Topic | URL |

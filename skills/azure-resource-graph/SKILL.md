@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Resource Graph. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L38 | Diagnosing and fixing Azure Resource Graph issues with alerts, query syntax/runtime errors, and Power BI connector connectivity, auth, and data refresh problems. |
-| Best Practices | L39-L43 | Guidance on designing Azure Resource Graph queries to avoid throttling, including efficient patterns, batching, pagination, and performance-friendly query structures. |
-| Decision Making | L44-L48 | Guidance on when to use Azure Resource Graph GET/LIST REST APIs vs the Query service, comparing capabilities, scenarios, and integration patterns. |
-| Limits & Quotas | L49-L56 | Understanding ARG request limits, pagination behavior, handling large result sets, and implementing efficient paging (including with PowerShell) to avoid quota issues. |
-| Configuration | L57-L64 | Configuring Resource Graph usage: keyboard shortcuts, supported resource types, and defining/deploying shared queries via Bicep and ARM templates. |
-| Integrations & Coding Patterns | L65-L75 | How to run Resource Graph queries via CLI, PowerShell, REST, Power BI, Logic Apps, and create shared queries and alerting/automation patterns using those integrations |
+| Troubleshooting | L34-L40 | Diagnosing and fixing Azure Resource Graph issues with alerts, query syntax/runtime errors, and Power BI connector connectivity, auth, and data refresh problems. |
+| Best Practices | L41-L45 | Guidance on designing Azure Resource Graph queries to avoid throttling, including efficient patterns, batching, pagination, and performance-friendly query structures. |
+| Decision Making | L46-L50 | Guidance on when to use Azure Resource Graph GET/LIST REST APIs vs the Query service, comparing capabilities, scenarios, and integration patterns. |
+| Limits & Quotas | L51-L58 | Understanding ARG request limits, pagination behavior, handling large result sets, and implementing efficient paging (including with PowerShell) to avoid quota issues. |
+| Configuration | L59-L66 | Configuring Resource Graph usage: keyboard shortcuts, supported resource types, and defining/deploying shared queries via Bicep and ARM templates. |
+| Integrations & Coding Patterns | L67-L77 | How to run Resource Graph queries via CLI, PowerShell, REST, Power BI, Logic Apps, and create shared queries and alerting/automation patterns using those integrations |
 
 ### Troubleshooting
 | Topic | URL |

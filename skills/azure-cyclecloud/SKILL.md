@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure CycleCloud. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L40 | Troubleshooting CycleCloud errors, node startup failures, and locating/analyzing server/node log files to diagnose and resolve deployment or runtime issues. |
-| Best Practices | L41-L45 | Guidance for configuring and tuning Azure HB/HC-series HPC VMs in CycleCloud, including networking, storage, MPI, BIOS, and performance best practices. |
-| Decision Making | L46-L53 | Guidance on VM placement/availability sets, choosing custom images, planning migration from CycleCloud 7, and using Spot VMs for cost-effective, resilient CycleCloud clusters. |
-| Architecture & Design Patterns | L54-L58 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including networking, failover, and regional topology patterns. |
-| Security | L59-L73 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SSH/Bastion access, SELinux, and network security for clusters, nodes, and the web portal |
-| Configuration | L74-L118 | Designing and tuning CycleCloud clusters: template structure, nodes, networking, storage, autoscaling, security, proxies, events, CLI, and node initialization (cluster-init/cloud-init/Jetpack). |
-| Integrations & Coding Patterns | L119-L139 | APIs, CLI, and Python client for automating CycleCloud, plus patterns to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), NFS, OOD, Prometheus/Grafana, and Event Grid |
-| Deployment | L140-L151 | Installing, upgrading, and deploying Azure CycleCloud and Slurm workspaces (CLI/ARM/containers), plus planning production setups and moving cluster resources between resource groups. |
+| Troubleshooting | L36-L42 | Troubleshooting CycleCloud errors, node startup failures, and locating/analyzing server/node log files to diagnose and resolve deployment or runtime issues. |
+| Best Practices | L43-L47 | Guidance for configuring and tuning Azure HB/HC-series HPC VMs in CycleCloud, including networking, storage, MPI, BIOS, and performance best practices. |
+| Decision Making | L48-L55 | Guidance on VM placement/availability sets, choosing custom images, planning migration from CycleCloud 7, and using Spot VMs for cost-effective, resilient CycleCloud clusters. |
+| Architecture & Design Patterns | L56-L60 | Architectural guidance for designing, deploying, and operating resilient, scalable multi‑region Azure HPC clusters with CycleCloud, including networking, failover, and regional topology patterns. |
+| Security | L61-L75 | Securing CycleCloud: auth methods (Entra, service principals, managed identities), SSL, SSH/Bastion access, SELinux, and network security for clusters, nodes, and the web portal |
+| Configuration | L76-L120 | Designing and tuning CycleCloud clusters: template structure, nodes, networking, storage, autoscaling, security, proxies, events, CLI, and node initialization (cluster-init/cloud-init/Jetpack). |
+| Integrations & Coding Patterns | L121-L141 | APIs, CLI, and Python client for automating CycleCloud, plus patterns to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack), NFS, OOD, Prometheus/Grafana, and Event Grid |
+| Deployment | L142-L153 | Installing, upgrading, and deploying Azure CycleCloud and Slurm workspaces (CLI/ARM/containers), plus planning production setups and moving cluster resources between resource groups. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Migrate. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L52 | Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment errors, replication and migration failures, connectivity, performance, OS upgrade, and web app migration problems. |
-| Best Practices | L53-L63 | Best practices for preparing on-prem/VMware/legacy Windows workloads and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and running/validating test VM migrations. |
-| Decision Making | L64-L105 | Guidance on interpreting Azure Migrate assessments, sizing and cost decisions, migration wave planning, and choosing approaches/tools for moving workloads from on-prem, AWS, and GCP to Azure. |
-| Architecture & Design Patterns | L106-L111 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
-| Limits & Quotas | L112-L125 | Azure Migrate region support, appliance prerequisites/capacity, and detailed support matrices/limitations for VMware, Hyper-V, and physical server discovery and migration |
-| Security | L126-L141 | Securing Azure Migrate: least-privilege roles/accounts, Private Link-based discovery/migration, encryption & CMK for VMs, RBAC setup, and security risk detection with Insights. |
-| Configuration | L142-L172 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, credentials, networking, and destination settings for VM, SQL, .NET/Java, and PostgreSQL migration scenarios. |
-| Integrations & Coding Patterns | L173-L180 | Code-level integration patterns: using AppCAT CLI, CAST Highlight, GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure app migrations. |
-| Deployment | L181-L188 | Guides for executing migration waves, setting up DevOps pipelines for containers, and checking support matrices for moving VMs and SQL resources between Azure regions. |
+| Troubleshooting | L37-L54 | Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment errors, replication and migration failures, connectivity, performance, OS upgrade, and web app migration problems. |
+| Best Practices | L55-L65 | Best practices for preparing on-prem/VMware/legacy Windows workloads and PostgreSQL for Azure migration, securing the Azure Migrate appliance, and running/validating test VM migrations. |
+| Decision Making | L66-L107 | Guidance on interpreting Azure Migrate assessments, sizing and cost decisions, migration wave planning, and choosing approaches/tools for moving workloads from on-prem, AWS, and GCP to Azure. |
+| Architecture & Design Patterns | L108-L113 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
+| Limits & Quotas | L114-L127 | Azure Migrate region support, appliance prerequisites/capacity, and detailed support matrices/limitations for VMware, Hyper-V, and physical server discovery and migration |
+| Security | L128-L143 | Securing Azure Migrate: least-privilege roles/accounts, Private Link-based discovery/migration, encryption & CMK for VMs, RBAC setup, and security risk detection with Insights. |
+| Configuration | L144-L174 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, credentials, networking, and destination settings for VM, SQL, .NET/Java, and PostgreSQL migration scenarios. |
+| Integrations & Coding Patterns | L175-L182 | Code-level integration patterns: using AppCAT CLI, CAST Highlight, GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure app migrations. |
+| Deployment | L183-L190 | Guides for executing migration waves, setting up DevOps pipelines for containers, and checking support matrices for moving VMs and SQL resources between Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |

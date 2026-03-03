@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Cost Management. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L63 | Diagnosing and fixing Azure billing, subscription, payment, and reservation issues (errors, disabled subs, missing invoices, sign-up/access problems, and low/incorrect reservation/savings plan usage). |
-| Best Practices | L64-L73 | Best practices for analyzing Azure costs, optimizing and reducing spend (including Advisor and Hybrid Benefit), and planning/implementing organization-wide cost management processes. |
-| Decision Making | L74-L125 | Planning and decision guides for Azure cost management: cost allocation, EA→MCA migration, subscriptions/billing changes, reservations and savings plans, and evaluating/prepaying discounts. |
-| Limits & Quotas | L126-L141 | Managing Azure cost limits and quotas: free tier usage, spending limits, data timing/latency, regional fees, subscription constraints, savings plans, and billing account policies. |
-| Security | L142-L162 | Securing Azure billing and cost data: RBAC and billing roles, admin elevation, tenant/subscription protection, fraud prevention, and permissions for EA, MCA, reservations, and savings plans. |
-| Configuration | L163-L237 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, exports, and partner/tenant billing relationships to control, allocate, and optimize cloud costs. |
-| Integrations & Coding Patterns | L238-L254 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
-| Deployment | L255-L258 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
+| Troubleshooting | L36-L65 | Diagnosing and fixing Azure billing, subscription, payment, and reservation issues (errors, disabled subs, missing invoices, sign-up/access problems, and low/incorrect reservation/savings plan usage). |
+| Best Practices | L66-L75 | Best practices for analyzing Azure costs, optimizing and reducing spend (including Advisor and Hybrid Benefit), and planning/implementing organization-wide cost management processes. |
+| Decision Making | L76-L127 | Planning and decision guides for Azure cost management: cost allocation, EA→MCA migration, subscriptions/billing changes, reservations and savings plans, and evaluating/prepaying discounts. |
+| Limits & Quotas | L128-L143 | Managing Azure cost limits and quotas: free tier usage, spending limits, data timing/latency, regional fees, subscription constraints, savings plans, and billing account policies. |
+| Security | L144-L164 | Securing Azure billing and cost data: RBAC and billing roles, admin elevation, tenant/subscription protection, fraud prevention, and permissions for EA, MCA, reservations, and savings plans. |
+| Configuration | L165-L239 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, exports, and partner/tenant billing relationships to control, allocate, and optimize cloud costs. |
+| Integrations & Coding Patterns | L240-L256 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
+| Deployment | L257-L260 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
 
 ### Troubleshooting
 | Topic | URL |

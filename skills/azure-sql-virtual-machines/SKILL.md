@@ -16,21 +16,23 @@ This skill provides expert guidance for SQL Server on Azure Virtual Machines. Co
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L48 | Diagnosing and fixing Azure SQL and SQL Server VM issues: capacity, performance, connectivity, memory, transaction logs, Managed Instance problems, I/O throttling, and IaaS Agent errors. |
-| Best Practices | L49-L62 | Performance, HA/DR, and maintenance best practices for SQL Server on Azure VMs: VM sizing, storage/tempdb tuning, baselines, backups, FCI/DNN, and cluster configuration. |
-| Decision Making | L63-L74 | Guidance on migration/modernization to SQL on Azure VMs (from Db2/Oracle/on-prem), HADR and licensing choices, cost optimization, and end-of-support upgrade planning. |
-| Architecture & Design Patterns | L75-L83 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
-| Limits & Quotas | L84-L91 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
-| Security | L92-L102 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault and EKM, Entra auth, managed identities, hardening guidance, and confidential VM deployment. |
-| Configuration | L103-L146 | Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage/perf, backups, editions/versions, and SQL IaaS Agent/monitoring setup. |
-| Integrations & Coding Patterns | L147-L152 | Backing up and restoring SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
-| Deployment | L153-L169 | Deploying and configuring SQL Server Always On (single/multi-subnet, cross-region, workgroup), prerequisites, migrations (AG single→multi-subnet, SQL VMs/FCI to new regions), and ARM/Quickstart templates. |
+| Troubleshooting | L37-L50 | Diagnosing and fixing Azure SQL and SQL Server VM issues: capacity, performance, connectivity, memory, transaction logs, Managed Instance problems, I/O throttling, and IaaS Agent errors. |
+| Best Practices | L51-L64 | Performance, HA/DR, and maintenance best practices for SQL Server on Azure VMs: VM sizing, storage/tempdb tuning, baselines, backups, FCI/DNN, and cluster configuration. |
+| Decision Making | L65-L76 | Guidance on migration/modernization to SQL on Azure VMs (from Db2/Oracle/on-prem), HADR and licensing choices, cost optimization, and end-of-support upgrade planning. |
+| Architecture & Design Patterns | L77-L85 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
+| Limits & Quotas | L86-L93 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
+| Security | L94-L104 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault and EKM, Entra auth, managed identities, hardening guidance, and confidential VM deployment. |
+| Configuration | L105-L148 | Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage/perf, backups, editions/versions, and SQL IaaS Agent/monitoring setup. |
+| Integrations & Coding Patterns | L149-L154 | Backing up and restoring SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
+| Deployment | L155-L171 | Deploying and configuring SQL Server Always On (single/multi-subnet, cross-region, workgroup), prerequisites, migrations (AG single→multi-subnet, SQL VMs/FCI to new regions), and ARM/Quickstart templates. |
 
 ### Troubleshooting
 | Topic | URL |

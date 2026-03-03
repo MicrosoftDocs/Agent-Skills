@@ -16,16 +16,18 @@ This skill provides expert guidance for Azure Data Manager for Agriculture. Cove
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L30-L34 | Guidance on API throttling behavior and limits in Azure Data Manager for Agriculture, plus strategies to plan capacity, avoid rate-limit errors, and manage high-volume workloads. |
-| Security | L35-L40 | Managing secure BYOL credential storage and configuring Azure Private Link private endpoints for Azure Data Manager for Agriculture services. |
-| Configuration | L41-L47 | Configuring diagnostics and Event Grid for Data Manager for Agriculture, including enabling logs, choosing event schemas, and understanding sample event payloads. |
-| Integrations & Coding Patterns | L48-L62 | Integrating external ag data sources (farm activities, sensors, weather, satellite imagery, ISVs), configuring ingestion jobs/IoT, and using AI/copilot and nutrient APIs with Azure Data Manager for Agriculture |
+| Limits & Quotas | L32-L36 | Guidance on API throttling behavior and limits in Azure Data Manager for Agriculture, plus strategies to plan capacity, avoid rate-limit errors, and manage high-volume workloads. |
+| Security | L37-L42 | Managing secure BYOL credential storage and configuring Azure Private Link private endpoints for Azure Data Manager for Agriculture services. |
+| Configuration | L43-L49 | Configuring diagnostics and Event Grid for Data Manager for Agriculture, including enabling logs, choosing event schemas, and understanding sample event payloads. |
+| Integrations & Coding Patterns | L50-L64 | Integrating external ag data sources (farm activities, sensors, weather, satellite imagery, ISVs), configuring ingestion jobs/IoT, and using AI/copilot and nutrient APIs with Azure Data Manager for Agriculture |
 
 ### Limits & Quotas
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Pipelines. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L45 | Diagnosing and fixing Azure Pipelines issues: service connection/auth problems, web app deploy failures, triggers, stuck jobs, and using logs to debug run failures. |
-| Best Practices | L46-L56 | Best practices for faster, reliable pipelines: caching, cross-platform scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact Analysis, and UI test configuration. |
-| Decision Making | L57-L63 | Guides for migrating CI/CD pipelines to Azure Pipelines, including from Jenkins/Travis and from classic UI pipelines to YAML, with patterns, pitfalls, and safe migration steps. |
-| Architecture & Design Patterns | L64-L71 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
-| Limits & Quotas | L72-L81 | Managing Azure Pipelines limits: hosted agent image lifecycle, agent pool concurrency, parallel jobs, large package handling, secure files, and build/release/test retention policies. |
-| Security | L82-L126 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions, approvals/checks, artifact/repo protection, and secure patterns for YAML, variables, and deployments |
-| Configuration | L127-L482 | Configuring Azure Pipelines: agents, triggers, YAML structure, environments, variables, jobs/steps, artifacts, test/coverage, and detailed setup of built-in and security-related pipeline tasks. |
-| Integrations & Coding Patterns | L483-L508 | Patterns and scripts for integrating Azure Pipelines with languages, tools, secrets, notifications, external APIs/services, and automating builds, tests, and deployments. |
-| Deployment | L509-L579 | Agent setup and scaling, CI/CD pipelines, and task refs for building, publishing, and deploying apps, containers, and databases to Azure, VMs, Kubernetes, and external feeds. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure Pipelines issues: service connection/auth problems, web app deploy failures, triggers, stuck jobs, and using logs to debug run failures. |
+| Best Practices | L48-L58 | Best practices for faster, reliable pipelines: caching, cross-platform scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact Analysis, and UI test configuration. |
+| Decision Making | L59-L65 | Guides for migrating CI/CD pipelines to Azure Pipelines, including from Jenkins/Travis and from classic UI pipelines to YAML, with patterns, pitfalls, and safe migration steps. |
+| Architecture & Design Patterns | L66-L73 | Guidance on end-to-end CI/CD and DevOps architectures for Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused DevTest and production pipelines. |
+| Limits & Quotas | L74-L83 | Managing Azure Pipelines limits: hosted agent image lifecycle, agent pool concurrency, parallel jobs, large package handling, secure files, and build/release/test retention policies. |
+| Security | L84-L128 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions, approvals/checks, artifact/repo protection, and secure patterns for YAML, variables, and deployments |
+| Configuration | L129-L484 | Configuring Azure Pipelines: agents, triggers, YAML structure, environments, variables, jobs/steps, artifacts, test/coverage, and detailed setup of built-in and security-related pipeline tasks. |
+| Integrations & Coding Patterns | L485-L510 | Patterns and scripts for integrating Azure Pipelines with languages, tools, secrets, notifications, external APIs/services, and automating builds, tests, and deployments. |
+| Deployment | L511-L581 | Agent setup and scaling, CI/CD pipelines, and task refs for building, publishing, and deploying apps, containers, and databases to Azure, VMs, Kubernetes, and external feeds. |
 
 ### Troubleshooting
 | Topic | URL |

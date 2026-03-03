@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure AI Immersive Reader. Covers best p
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L31-L35 | Guidance on improving Immersive Reader performance by caching authentication tokens, including token reuse patterns and reducing auth overhead. |
-| Limits & Quotas | L36-L40 | Supported languages and feature availability for Immersive Reader (e.g., which languages work with read-aloud, translation, and other capabilities). |
-| Security | L41-L47 | Configuring Immersive Reader security: creating the resource with Entra auth, managing Entra role assignments, and setting cookie policy and user consent. |
-| Configuration | L48-L54 | Configuring Immersive Reader behavior: read-aloud voice/speed, translation languages and behavior, and storing/managing per-user reading and language preferences. |
-| Integrations & Coding Patterns | L55-L64 | Integrating Immersive Reader into web/iOS apps: launch flows, custom buttons, HTML/MathML prep, multi-resource use, and JavaScript/iOS SDK usage and patterns. |
+| Best Practices | L33-L37 | Guidance on improving Immersive Reader performance by caching authentication tokens, including token reuse patterns and reducing auth overhead. |
+| Limits & Quotas | L38-L42 | Supported languages and feature availability for Immersive Reader (e.g., which languages work with read-aloud, translation, and other capabilities). |
+| Security | L43-L49 | Configuring Immersive Reader security: creating the resource with Entra auth, managing Entra role assignments, and setting cookie policy and user consent. |
+| Configuration | L50-L56 | Configuring Immersive Reader behavior: read-aloud voice/speed, translation languages and behavior, and storing/managing per-user reading and language preferences. |
+| Integrations & Coding Patterns | L57-L66 | Integrating Immersive Reader into web/iOS apps: launch flows, custom buttons, HTML/MathML prep, multi-resource use, and JavaScript/iOS SDK usage and patterns. |
 
 ### Best Practices
 | Topic | URL |

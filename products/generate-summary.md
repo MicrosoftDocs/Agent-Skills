@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-03 08:58:31
-**Total Duration**: 29m 34s
+**Generated**: 2026-03-03 12:33:47
+**Total Duration**: 19m 48s
 
 ## Product Crawl Summary
 
@@ -22,7 +22,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 11 | Azure App Service | 247 | 161 | 0 | 0 | 0 | OK |
 | 12 | Azure App Testing | 72 | 57 | 0 | 0 | 0 | OK |
 | 13 | Azure Application Gateway | 173 | 133 | 0 | 0 | 0 | OK |
-| 14 | Azure Arc | 415 | 269 | 0 | 0 | 0 | OK |
+| 14 | Azure Arc | 415 | 269 | 0 | 1 | 0 | OK |
 | 15 | Azure Artifacts | 72 | 63 | 0 | 0 | 0 | OK |
 | 16 | Azure Attestation | 33 | 22 | 0 | 0 | 0 | OK |
 | 17 | Azure Automation | 115 | 92 | 0 | 0 | 0 | OK |
@@ -70,7 +70,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 59 | Azure Files | 108 | 94 | 0 | 0 | 0 | OK |
 | 60 | Azure Firewall | 84 | 61 | 0 | 0 | 0 | OK |
 | 61 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
-| 62 | Azure Front Door | 104 | 82 | 0 | 0 | 0 | OK |
+| 62 | Azure Front Door | 100 | 78 | 0 | 0 | 4 | OK |
 | 63 | Azure Functions | 361 | 296 | 0 | 0 | 0 | OK |
 | 64 | Azure HDInsight | 425 | 334 | 0 | 0 | 0 | OK |
 | 65 | Azure Health Data Services | 228 | 166 | 0 | 0 | 0 | OK |
@@ -122,7 +122,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 111 | Azure SignalR Service | 73 | 60 | 0 | 0 | 0 | OK |
 | 112 | Azure Site Recovery | 202 | 138 | 0 | 0 | 0 | OK |
 | 113 | Azure US Government | 40 | 32 | 0 | 0 | 0 | OK |
-| 114 | Azure AI Speech | 178 | 107 | 0 | 0 | 0 | OK |
+| 114 | Azure AI Speech | 179 | 108 | 1 | 0 | 0 | OK |
 | 115 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
 | 116 | Azure SQL Database | 358 | 243 | 0 | 0 | 0 | OK |
 | 117 | Azure SQL Managed Instance | 236 | 188 | 0 | 0 | 0 | OK |
@@ -170,7 +170,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 159 | Azure Confidential Ledger | 29 | 19 | 0 | 0 | 0 | OK |
 | 160 | Azure Copilot | 38 | 20 | 0 | 0 | 0 | OK |
 | 161 | Azure Data Api Builder | 109 | 83 | 0 | 0 | 0 | OK |
-| 162 | Azure Defender For Cloud | 470 | 258 | 0 | 0 | 0 | OK |
+| 162 | Azure Defender For Cloud | 470 | 258 | 0 | 1 | 0 | OK |
 | 163 | Azure Defender For Iot | 180 | 116 | 0 | 0 | 0 | OK |
 | 164 | Azure Deployment Environments | 32 | 14 | 0 | 0 | 0 | OK |
 | 165 | Azure Dev Box | 64 | 44 | 0 | 0 | 0 | OK |
@@ -209,11 +209,11 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 196 success, 0 failed
-- **Total Pages**: 32167
-- **Total Classified**: 22641
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
-- **Total Deleted Pages**: 0
+- **Total Pages**: 32164
+- **Total Classified**: 22638
+- **Total New Pages**: 1
+- **Total Updated Pages**: 2
+- **Total Deleted Pages**: 4
 
 ### Classification by Type (All Products)
 
@@ -227,7 +227,7 @@ Quick overview for reviewers. See individual product reports for details.
 | integrations | 5014 |
 | limits-quotas | 1097 |
 | security | 3082 |
-| troubleshooting | 1494 |
+| troubleshooting | 1491 |
 
 ---
 

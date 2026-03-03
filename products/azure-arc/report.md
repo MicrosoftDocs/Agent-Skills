@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Arc security, architecture, deploy
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 415
+- **Updated Pages**: 1
+- **Unchanged**: 414
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -68,6 +68,11 @@ skill_description: Expert knowledge for Azure Arc security, architecture, deploy
 | *(Unclassified)* | 146 | 35.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes)
+  - Updated: 2026-02-11T18:19:00.000Z → 2026-03-03T12:03:00.000Z
 
 ## Classified Pages
 
@@ -479,7 +484,7 @@ skill_description: Expert knowledge for Azure Arc security, architecture, deploy
 | [Quickstart](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/quickstart) | 0.20 | Quickstart for creating an Arc site is a procedural portal walkthrough without detailed configuration tables, limits, or product-specific troubleshooting mappings. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/release-notes) | 0.20 | Release notes overview; while detailed, it’s primarily change history and not a configuration, troubleshooting, or limits reference as defined by the sub-skill types. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes) | 0.20 | Release notes for Arc-enabled data services; change log rather than a stable expert-knowledge reference in the defined sub-skill categories. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes; version history and changes, but not configuration patterns or limits relevant as reusable skills. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes list version changes and fixes but typically do not provide structured limits, configuration tables, error-code mappings, or decision matrices as defined by the sub-skill types. Content is mostly update history rather than reusable expert guidance. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes) | 0.20 | Release notes typically list features and fixes but not the structured limits, configuration matrices, or troubleshooting mappings required by the sub-skill types. The summary indicates high-level change information rather than reusable expert configuration or diagnostic knowledge. |
 | [SQL Managed Instance enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-overview) | 0.20 | Service overview; conceptual description of SQL Managed Instance enabled by Azure Arc. |
 | [View connectivity status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-connectivity-status) | 0.20 | Viewing connectivity status is a UI usage guide; it doesn’t expose numeric limits, config matrices, or detailed error mappings. |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Local. Covers troubleshooting, bes
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L61 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures, and known issues/workarounds. |
-| Best Practices | L62-L69 | Best practices for Azure Local operations: configuring metric alerts, using supported Arc VM operations, designing SDN-aware network patterns, and managing updates safely and efficiently. |
-| Decision Making | L70-L83 | Guidance on choosing Azure Local deployment, VM types, migration paths, networking/SDN, updates, and cost/billing options, including Hybrid Benefit and disconnected capacity pricing. |
-| Architecture & Design Patterns | L84-L109 | Network and resiliency design for Azure Local: SDN topologies, rack/room connectivity, deployment patterns, VM/workload DR, monitoring, and disconnected/cloud network architectures. |
-| Limits & Quotas | L110-L125 | Hardware, network, IP, and scale requirements/limits for Azure Local deployments, including host/physical networking, node patterns, migrations, and Arc-enabled VM prerequisites. |
-| Security | L126-L168 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
-| Configuration | L169-L258 | Configuring Azure Local clusters, VMs, networking, storage, GPUs, monitoring, migrations, and multi-rack setups, including disconnected, Arc-enabled, and health/telemetry scenarios. |
-| Integrations & Coding Patterns | L259-L270 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
-| Deployment | L271-L309 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
+| Troubleshooting | L37-L63 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures, and known issues/workarounds. |
+| Best Practices | L64-L71 | Best practices for Azure Local operations: configuring metric alerts, using supported Arc VM operations, designing SDN-aware network patterns, and managing updates safely and efficiently. |
+| Decision Making | L72-L85 | Guidance on choosing Azure Local deployment, VM types, migration paths, networking/SDN, updates, and cost/billing options, including Hybrid Benefit and disconnected capacity pricing. |
+| Architecture & Design Patterns | L86-L111 | Network and resiliency design for Azure Local: SDN topologies, rack/room connectivity, deployment patterns, VM/workload DR, monitoring, and disconnected/cloud network architectures. |
+| Limits & Quotas | L112-L127 | Hardware, network, IP, and scale requirements/limits for Azure Local deployments, including host/physical networking, node patterns, migrations, and Arc-enabled VM prerequisites. |
+| Security | L128-L170 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
+| Configuration | L171-L260 | Configuring Azure Local clusters, VMs, networking, storage, GPUs, monitoring, migrations, and multi-rack setups, including disconnected, Arc-enabled, and health/telemetry scenarios. |
+| Integrations & Coding Patterns | L261-L272 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
+| Deployment | L273-L311 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
 
 ### Troubleshooting
 | Topic | URL |

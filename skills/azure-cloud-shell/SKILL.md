@@ -16,15 +16,17 @@ This skill provides expert guidance for Azure Cloud Shell. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L34 | Diagnosing and fixing common Cloud Shell errors, storage and connectivity issues, plus deployment and network problems when running Cloud Shell in private VNets. |
-| Limits & Quotas | L35-L39 | Details on Cloud Shell session duration, resource and storage limits, quotas, and how persistent storage works and is constrained across Bash and PowerShell. |
-| Security | L40-L44 | Securing Cloud Shell storage accounts, including multi-user access patterns, network isolation, and configuring private endpoints for locked-down access. |
+| Troubleshooting | L31-L36 | Diagnosing and fixing common Cloud Shell errors, storage and connectivity issues, plus deployment and network problems when running Cloud Shell in private VNets. |
+| Limits & Quotas | L37-L41 | Details on Cloud Shell session duration, resource and storage limits, quotas, and how persistent storage works and is constrained across Bash and PowerShell. |
+| Security | L42-L46 | Securing Cloud Shell storage accounts, including multi-user access patterns, network isolation, and configuring private endpoints for locked-down access. |
 
 ### Troubleshooting
 | Topic | URL |

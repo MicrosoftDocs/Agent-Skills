@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Reliability. Covers best practices
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L31-L59 | Patterns and guidance to design, configure, and harden high-availability, resilient, and disaster‑ready architectures for key Azure PaaS, data, and integration services |
-| Decision Making | L60-L65 | Guidance on picking Azure regions and services for high availability, including zone support, geographic considerations, and how nonregional (global) services affect reliability. |
-| Architecture & Design Patterns | L66-L71 | Designing Azure apps for availability zones, choosing zonal vs zone-redundant resources, and hardening deployments for zone failures and high availability. |
-| Limits & Quotas | L72-L76 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
-| Deployment | L77-L80 | Guidance for migrating Azure Functions hosting plans to zone-redundant configurations to improve availability and resilience. |
+| Best Practices | L33-L61 | Patterns and guidance to design, configure, and harden high-availability, resilient, and disaster‑ready architectures for key Azure PaaS, data, and integration services |
+| Decision Making | L62-L67 | Guidance on picking Azure regions and services for high availability, including zone support, geographic considerations, and how nonregional (global) services affect reliability. |
+| Architecture & Design Patterns | L68-L73 | Designing Azure apps for availability zones, choosing zonal vs zone-redundant resources, and hardening deployments for zone failures and high availability. |
+| Limits & Quotas | L74-L78 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Deployment | L79-L82 | Guidance for migrating Azure Functions hosting plans to zone-redundant configurations to improve availability and resilience. |
 
 ### Best Practices
 | Topic | URL |

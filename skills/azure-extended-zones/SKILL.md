@@ -16,14 +16,16 @@ This skill provides expert guidance for Azure Extended Zones. Covers decision ma
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L28-L32 | Guidance on when and how to buy Reserved Instances or Savings Plans for Extended Zones, including cost considerations, eligibility, and purchase workflows. |
-| Configuration | L33-L37 | Configuring Extended Zones access: registering subscriptions, requesting zone access, and creating custom Azure Policy definitions to govern Extended Zones usage. |
+| Decision Making | L30-L34 | Guidance on when and how to buy Reserved Instances or Savings Plans for Extended Zones, including cost considerations, eligibility, and purchase workflows. |
+| Configuration | L35-L39 | Configuring Extended Zones access: registering subscriptions, requesting zone access, and creating custom Azure Policy definitions to govern Extended Zones usage. |
 
 ### Decision Making
 | Topic | URL |

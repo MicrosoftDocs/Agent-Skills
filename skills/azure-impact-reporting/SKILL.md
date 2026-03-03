@@ -16,15 +16,17 @@ This skill provides expert guidance for Azure Impact Reporting. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L29-L33 | Diagnosing and fixing Azure Impact Reporting connector issues, including connection failures, data sync problems, configuration errors, and common troubleshooting steps. |
-| Configuration | L34-L40 | Configuring Azure Impact Reporting: creating alert connectors and retrieving valid impact and HPC Guest Health category values for correct classification. |
-| Integrations & Coding Patterns | L41-L48 | Patterns and APIs for integrating Impact Reporting with Azure Monitor alerts, Logic Apps, HPC VM node health, Service Health, and accessing insights via API and portal |
+| Troubleshooting | L31-L35 | Diagnosing and fixing Azure Impact Reporting connector issues, including connection failures, data sync problems, configuration errors, and common troubleshooting steps. |
+| Configuration | L36-L42 | Configuring Azure Impact Reporting: creating alert connectors and retrieving valid impact and HPC Guest Health category values for correct classification. |
+| Integrations & Coding Patterns | L43-L50 | Patterns and APIs for integrating Impact Reporting with Azure Monitor alerts, Logic Apps, HPC VM node health, Service Health, and accessing insights via API and portal |
 
 ### Troubleshooting
 | Topic | URL |

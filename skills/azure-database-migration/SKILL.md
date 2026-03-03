@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Database Migration service. Covers
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and resolving Azure DMS classic migration failures and source DB connectivity issues (network, auth, firewall, TLS) during database migrations. |
-| Decision Making | L38-L44 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
-| Limits & Quotas | L45-L53 | Migration-specific limits, unsupported features, and constraints when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB, and hybrid deployments. |
-| Security | L54-L59 | Security guidance for Azure DMS migrations, including SQL best practices (network, auth, encryption) and configuring custom RBAC roles for MySQL migration scenarios. |
-| Integrations & Coding Patterns | L60-L64 | Automating MySQL-to-Azure Database for MySQL migrations using Azure Database Migration Service with PowerShell scripts, parameters, and end-to-end workflow examples. |
-| Deployment | L65-L69 | Using Azure DMS to redeploy or migrate SSIS packages to Azure SQL Database or SQL Managed Instance, including configuration steps and migration considerations. |
+| Troubleshooting | L34-L39 | Diagnosing and resolving Azure DMS classic migration failures and source DB connectivity issues (network, auth, firewall, TLS) during database migrations. |
+| Decision Making | L40-L46 | Choosing the right Azure DMS tool and scenario for your source/target databases, plus FAQs on supported migrations, limitations, and how to use Azure Database Migration Service. |
+| Limits & Quotas | L47-L55 | Migration-specific limits, unsupported features, and constraints when using Azure DMS to move MySQL, PostgreSQL, SQL Managed Instance, MongoDB, and hybrid deployments. |
+| Security | L56-L61 | Security guidance for Azure DMS migrations, including SQL best practices (network, auth, encryption) and configuring custom RBAC roles for MySQL migration scenarios. |
+| Integrations & Coding Patterns | L62-L66 | Automating MySQL-to-Azure Database for MySQL migrations using Azure Database Migration Service with PowerShell scripts, parameters, and end-to-end workflow examples. |
+| Deployment | L67-L71 | Using Azure DMS to redeploy or migrate SSIS packages to Azure SQL Database or SQL Managed Instance, including configuration steps and migration considerations. |
 
 ### Troubleshooting
 | Topic | URL |

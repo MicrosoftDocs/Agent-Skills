@@ -16,16 +16,18 @@ This skill provides expert guidance for Azure Information Protection. Covers bes
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L30-L34 | Monitoring and troubleshooting Azure RMS connector health, tracking Azure Rights Management usage, and interpreting logs/metrics for ongoing protection service reliability. |
-| Decision Making | L35-L39 | Guidance on choosing between Azure Rights Management and on-premises AD RMS, including feature, deployment, security, and migration considerations. |
-| Configuration | L40-L45 | Configuring and deploying the Windows RMS (MSIPC) client and setting required registry values for RMS connectors on servers for Azure Information Protection. |
-| Deployment | L46-L60 | Deploying the RMS connector and step-by-step guidance for migrating on-prem AD RMS (keys and policies) to Azure Information Protection, including HSM and software key migration. |
+| Best Practices | L32-L36 | Monitoring and troubleshooting Azure RMS connector health, tracking Azure Rights Management usage, and interpreting logs/metrics for ongoing protection service reliability. |
+| Decision Making | L37-L41 | Guidance on choosing between Azure Rights Management and on-premises AD RMS, including feature, deployment, security, and migration considerations. |
+| Configuration | L42-L47 | Configuring and deploying the Windows RMS (MSIPC) client and setting required registry values for RMS connectors on servers for Azure Information Protection. |
+| Deployment | L48-L62 | Deploying the RMS connector and step-by-step guidance for migrating on-prem AD RMS (keys and policies) to Azure Information Protection, including HSM and software key migration. |
 
 ### Best Practices
 | Topic | URL |

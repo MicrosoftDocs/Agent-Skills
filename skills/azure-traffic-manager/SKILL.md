@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Traffic Manager. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Testing Traffic Manager routing behavior, verifying endpoint health, and diagnosing/fixing degraded profiles, misconfigurations, and routing issues. |
-| Best Practices | L38-L42 | Guidance on optimizing Traffic Manager profiles, endpoint configuration, monitoring, and routing settings for high performance, reliability, and low-latency global traffic distribution |
-| Decision Making | L43-L48 | Guidance on choosing the right Traffic Manager routing method and using Traffic View analytics to optimize routing decisions and traffic distribution |
-| Architecture & Design Patterns | L49-L56 | Architectural patterns for combining Traffic Manager with other Azure load balancers, nested profiles, App Service integration, and Traffic Manager + Application Gateway designs. |
-| Configuration | L57-L78 | Configuring Traffic Manager profiles, endpoints, routing methods (weighted, geographic, subnet, multivalue), DNS/IPv6, monitoring/logs, and using ARM, Bicep, Terraform, CLI, and PowerShell. |
-| Integrations & Coding Patterns | L79-L83 | Using Traffic Manager Real User Measurements (RUM) in apps and web pages, including integrating with Visual Studio App Center and adding the RUM JavaScript to collect user latency data. |
+| Troubleshooting | L34-L39 | Testing Traffic Manager routing behavior, verifying endpoint health, and diagnosing/fixing degraded profiles, misconfigurations, and routing issues. |
+| Best Practices | L40-L44 | Guidance on optimizing Traffic Manager profiles, endpoint configuration, monitoring, and routing settings for high performance, reliability, and low-latency global traffic distribution |
+| Decision Making | L45-L50 | Guidance on choosing the right Traffic Manager routing method and using Traffic View analytics to optimize routing decisions and traffic distribution |
+| Architecture & Design Patterns | L51-L58 | Architectural patterns for combining Traffic Manager with other Azure load balancers, nested profiles, App Service integration, and Traffic Manager + Application Gateway designs. |
+| Configuration | L59-L80 | Configuring Traffic Manager profiles, endpoints, routing methods (weighted, geographic, subnet, multivalue), DNS/IPv6, monitoring/logs, and using ARM, Bicep, Terraform, CLI, and PowerShell. |
+| Integrations & Coding Patterns | L81-L85 | Using Traffic Manager Real User Measurements (RUM) in apps and web pages, including integrating with Visual Studio App Center and adding the RUM JavaScript to collect user latency data. |
 
 ### Troubleshooting
 | Topic | URL |

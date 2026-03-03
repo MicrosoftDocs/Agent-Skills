@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure DNS. Covers troubleshooting, decis
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and fixing common Azure DNS issues like record resolution failures, misconfigurations, propagation delays, and permission or zone-related errors. |
-| Decision Making | L38-L42 | Guidance for planning and executing migration of legacy Azure Private DNS zones to the new DNS zone model, including compatibility, steps, and considerations. |
-| Architecture & Design Patterns | L43-L48 | Designing resilient private DNS architectures in Azure, including when to use centralized vs distributed DNS Private Resolvers and how to shard Private DNS zones for high availability. |
-| Limits & Quotas | L49-L53 | Private DNS zone scale limits, record count and name constraints, performance and subscription quotas, and design considerations when planning large private DNS deployments |
-| Security | L54-L64 | Protecting DNS zones/records from deletion, configuring DNS security policies and logging, using DNSSEC for public zones, and securing Azure DNS with RBAC, alerts, and built-in protections. |
-| Configuration | L65-L77 | Configuring Azure DNS behavior: reverse DNS, private DNS zones and resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy settings for name resolution. |
-| Integrations & Coding Patterns | L78-L87 | Using Azure CLI, PowerShell, or portal to create/manage DNS zones and records, and to delegate subdomains or import/export DNS zone files for automation and integration. |
+| Troubleshooting | L35-L39 | Diagnosing and fixing common Azure DNS issues like record resolution failures, misconfigurations, propagation delays, and permission or zone-related errors. |
+| Decision Making | L40-L44 | Guidance for planning and executing migration of legacy Azure Private DNS zones to the new DNS zone model, including compatibility, steps, and considerations. |
+| Architecture & Design Patterns | L45-L50 | Designing resilient private DNS architectures in Azure, including when to use centralized vs distributed DNS Private Resolvers and how to shard Private DNS zones for high availability. |
+| Limits & Quotas | L51-L55 | Private DNS zone scale limits, record count and name constraints, performance and subscription quotas, and design considerations when planning large private DNS deployments |
+| Security | L56-L66 | Protecting DNS zones/records from deletion, configuring DNS security policies and logging, using DNSSEC for public zones, and securing Azure DNS with RBAC, alerts, and built-in protections. |
+| Configuration | L67-L79 | Configuring Azure DNS behavior: reverse DNS, private DNS zones and resolvers, zone file import/export, monitoring/metrics/logs, and query/ResolutionPolicy settings for name resolution. |
+| Integrations & Coding Patterns | L80-L89 | Using Azure CLI, PowerShell, or portal to create/manage DNS zones and records, and to delegate subdomains or import/export DNS zone files for automation and integration. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Blueprints. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and fixing common Azure Blueprint creation/assignment errors, including policy, role, and resource lock issues, and interpreting error messages during deployment. |
-| Architecture & Design Patterns | L36-L44 | Blueprint reference architectures for Azure landing zones and workloads, showing how security, governance, and ISO 27001 controls are implemented and structured in Azure. |
-| Security | L45-L61 | Security-focused Azure Blueprint deployment, locks, operator setup, and using/mapping built‑in compliance blueprints (PBMM, ISM PROTECTED, ISO 27001, SWIFT, UK OFFICIAL/NHS) to Policy and RBAC |
-| Configuration | L62-L75 | Designing and configuring Azure Blueprint definitions: parameters, deployment order, built-in functions, and setup of security/compliance blueprint samples (CAF, ASB, ISO 27001, SWIFT, ISM). |
-| Integrations & Coding Patterns | L76-L83 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing common Azure Blueprint creation/assignment errors, including policy, role, and resource lock issues, and interpreting error messages during deployment. |
+| Architecture & Design Patterns | L38-L46 | Blueprint reference architectures for Azure landing zones and workloads, showing how security, governance, and ISO 27001 controls are implemented and structured in Azure. |
+| Security | L47-L63 | Security-focused Azure Blueprint deployment, locks, operator setup, and using/mapping built‑in compliance blueprints (PBMM, ISM PROTECTED, ISO 27001, SWIFT, UK OFFICIAL/NHS) to Policy and RBAC |
+| Configuration | L64-L77 | Designing and configuring Azure Blueprint definitions: parameters, deployment order, built-in functions, and setup of security/compliance blueprint samples (CAF, ASB, ISO 27001, SWIFT, ISM). |
+| Integrations & Coding Patterns | L78-L85 | Automating Azure Blueprints as code using CLI, PowerShell, and REST: create, import/export, and manage blueprint definitions and assignments programmatically. |
 
 ### Troubleshooting
 | Topic | URL |

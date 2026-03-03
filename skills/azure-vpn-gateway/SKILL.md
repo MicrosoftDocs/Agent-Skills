@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure VPN Gateway. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L42 | Diagnosing and fixing Azure VPN Gateway issues: S2S/P2S connection failures, certificate/auth errors, macOS IKEv2, throughput, health checks, resets, and packet-capture/log-based debugging |
-| Best Practices | L43-L47 | Guidance on using network virtual appliances (NVAs) in Azure as VPN endpoints for remote access, including design, routing, security, and integration with Azure VPN Gateway. |
-| Decision Making | L48-L57 | Guidance on choosing VPN Gateway SKUs, planning/migrating IPs and gateways (Classic→ARM), shifting P2S protocols (SSTP→IKEv2/OpenVPN), and designing remote work P2S VPN setups. |
-| Architecture & Design Patterns | L58-L64 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
-| Limits & Quotas | L65-L71 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
-| Security | L72-L95 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
-| Configuration | L96-L152 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
-| Integrations & Coding Patterns | L153-L160 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
-| Deployment | L161-L173 | Deploying and configuring VPN Gateways: creating gateways and S2S tunnels via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs, and deploying VPN client profiles. |
+| Troubleshooting | L37-L44 | Diagnosing and fixing Azure VPN Gateway issues: S2S/P2S connection failures, certificate/auth errors, macOS IKEv2, throughput, health checks, resets, and packet-capture/log-based debugging |
+| Best Practices | L45-L49 | Guidance on using network virtual appliances (NVAs) in Azure as VPN endpoints for remote access, including design, routing, security, and integration with Azure VPN Gateway. |
+| Decision Making | L50-L59 | Guidance on choosing VPN Gateway SKUs, planning/migrating IPs and gateways (Classic→ARM), shifting P2S protocols (SSTP→IKEv2/OpenVPN), and designing remote work P2S VPN setups. |
+| Architecture & Design Patterns | L60-L66 | Design patterns and guidance for choosing VPN Gateway topologies, configuring active-active gateways, and building highly available, resilient site-to-site connectivity. |
+| Limits & Quotas | L67-L73 | VPN Gateway client version history, SKU comparisons, and FAQs about gateway limits, scale, performance, and connection behavior |
+| Security | L74-L97 | Securing Azure VPN Gateway: IPsec/IKE policies, forced tunneling, cert/RADIUS auth, Entra ID & MFA for P2S, client config (Win/macOS/Linux), access control, roles, and crypto best practices. |
+| Configuration | L98-L154 | Configuring Azure VPN Gateway and clients: S2S/P2S setup, certificates/RADIUS/Entra auth, BGP, IPsec/NAT/IPv6, routing, monitoring, VNet-to-VNet, and client configs for Windows/macOS/Linux/iOS. |
+| Integrations & Coding Patterns | L155-L162 | Configuring Azure VPN Gateway with on-prem devices and services: NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN connectivity with AWS. |
+| Deployment | L163-L175 | Deploying and configuring VPN Gateways: creating gateways and S2S tunnels via PowerShell/CLI, changing SKUs/modes, enabling zone redundancy, migrating IPs, and deploying VPN client profiles. |
 
 ### Troubleshooting
 | Topic | URL |

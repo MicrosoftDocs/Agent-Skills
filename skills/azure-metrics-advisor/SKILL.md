@@ -16,16 +16,18 @@ This skill provides expert guidance for Azure AI Metrics Advisor. Covers decisio
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L30-L34 | Guidance on estimating, optimizing, and controlling Azure Metrics Advisor costs, including pricing concepts, cost drivers, and budgeting/management best practices. |
-| Security | L35-L40 | Configuring Metrics Advisor security: encrypting data at rest with customer-managed keys and creating/using secure credential entities for data source access. |
-| Configuration | L41-L46 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
-| Integrations & Coding Patterns | L47-L52 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
+| Decision Making | L32-L36 | Guidance on estimating, optimizing, and controlling Azure Metrics Advisor costs, including pricing concepts, cost drivers, and budgeting/management best practices. |
+| Security | L37-L42 | Configuring Metrics Advisor security: encrypting data at rest with customer-managed keys and creating/using secure credential entities for data source access. |
+| Configuration | L43-L48 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
+| Integrations & Coding Patterns | L49-L54 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
 
 ### Decision Making
 | Topic | URL |

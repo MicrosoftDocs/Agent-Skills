@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Application Gateway. Covers troubl
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and fixing Application Gateway runtime issues: backend health, 502s, certificates/Key Vault, listeners, session affinity, mTLS, redirects, AKS/ALB/containers, and HTTP response codes. |
-| Best Practices | L41-L45 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
-| Decision Making | L46-L57 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic VMs→ARM) and choosing container networking for App Gateway for Containers |
-| Architecture & Design Patterns | L58-L62 | Guidance on designing autoscaling and zone-redundant architectures for Application Gateway for Containers, including capacity planning and high availability patterns. |
-| Limits & Quotas | L63-L69 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
-| Security | L70-L113 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
-| Configuration | L114-L178 | Configuring and monitoring Azure Application Gateway (classic, v1/v2, and Containers): listeners, routing, probes, health, headers/URL rewrites, redirects, session affinity, networking, and diagnostics/logs. |
-| Integrations & Coding Patterns | L179-L186 | Integrating App Gateway for Containers with Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods and build observability/security pipelines. |
-| Deployment | L187-L202 | Deploying and configuring Application Gateway (v2, Basic, IPv6, mTLS), and setting up, upgrading, or migrating the Application Gateway Ingress Controller and AKS add-on |
+| Troubleshooting | L37-L42 | Diagnosing and fixing Application Gateway runtime issues: backend health, 502s, certificates/Key Vault, listeners, session affinity, mTLS, redirects, AKS/ALB/containers, and HTTP response codes. |
+| Best Practices | L43-L47 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
+| Decision Making | L48-L59 | Guidance on pricing, billing, and migration decisions for Application Gateway (V1→V2, AGIC→Containers, classic VMs→ARM) and choosing container networking for App Gateway for Containers |
+| Architecture & Design Patterns | L60-L64 | Guidance on designing autoscaling and zone-redundant architectures for Application Gateway for Containers, including capacity planning and high availability patterns. |
+| Limits & Quotas | L65-L71 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
+| Security | L72-L115 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
+| Configuration | L116-L180 | Configuring and monitoring Azure Application Gateway (classic, v1/v2, and Containers): listeners, routing, probes, health, headers/URL rewrites, redirects, session affinity, networking, and diagnostics/logs. |
+| Integrations & Coding Patterns | L181-L188 | Integrating App Gateway for Containers with Prometheus/Grafana, Istio, Sentinel/Defender, and using its metrics to autoscale AKS pods and build observability/security pipelines. |
+| Deployment | L189-L204 | Deploying and configuring Application Gateway (v2, Basic, IPv6, mTLS), and setting up, upgrading, or migrating the Application Gateway Ingress Controller and AKS add-on |
 
 ### Troubleshooting
 | Topic | URL |

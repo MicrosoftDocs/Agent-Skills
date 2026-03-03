@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Cosmos DB. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L88 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: errors (400–503, 401/403/404/409/429), timeouts, performance, connectivity, CMK/backup, and using metrics/logs for root-cause analysis. |
-| Best Practices | L89-L149 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
-| Decision Making | L150-L205 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
-| Architecture & Design Patterns | L206-L248 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
-| Limits & Quotas | L249-L289 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
-| Security | L290-L356 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
-| Configuration | L357-L484 | Configuring and managing Cosmos DB and related services: throughput, indexing, backup/restore, partitioning, search/vector, monitoring, networking, SDK settings, emulators, and IaC (Bicep/ARM/Terraform). |
-| Integrations & Coding Patterns | L485-L820 | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, migrations, and vector/RAG. |
-| Deployment | L821-L845 | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
+| Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: errors (400–503, 401/403/404/409/429), timeouts, performance, connectivity, CMK/backup, and using metrics/logs for root-cause analysis. |
+| Best Practices | L91-L151 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
+| Decision Making | L152-L207 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
+| Architecture & Design Patterns | L208-L250 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
+| Limits & Quotas | L251-L291 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
+| Security | L292-L358 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
+| Configuration | L359-L486 | Configuring and managing Cosmos DB and related services: throughput, indexing, backup/restore, partitioning, search/vector, monitoring, networking, SDK settings, emulators, and IaC (Bicep/ARM/Terraform). |
+| Integrations & Coding Patterns | L487-L822 | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, migrations, and vector/RAG. |
+| Deployment | L823-L847 | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
 
 ### Troubleshooting
 | Topic | URL |

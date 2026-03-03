@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Operator Nexus. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L79 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes/AKS hybrid, cluster health, connectivity, and hardware validation using CLI tools and logs. |
-| Best Practices | L80-L86 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
-| Decision Making | L87-L94 | Guidance on planning Nexus cluster placement, picking compatible storage versions, and choosing the right Kubernetes and Nexus hardware/SKU options for your deployment. |
-| Architecture & Design Patterns | L95-L99 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
-| Limits & Quotas | L100-L112 | Limits, supported versions, storage planning, node restarts/timeouts, isolation domain requirements, upgrade cadence, and log behavior/quotas for Azure Operator Nexus. |
-| Security | L113-L152 | Securing Nexus fabric, clusters, and VMs: RBAC, ACLs, SSH and break-glass access, key/cert/secret rotation, Defender/MDE, private endpoints, policies, and managed identities. |
-| Configuration | L153-L214 | Configuring and operating Azure Operator Nexus clusters and fabric: network/fabric policies, isolation domains, BGP/VRF, QoS, ACLs, commit workflows, Kubernetes/node settings, monitoring, and maintenance. |
-| Deployment | L215-L223 | Guides for deploying and upgrading Nexus instances and Kubernetes clusters, building VM images, and replacing or updating fabric network devices and terminal servers. |
+| Troubleshooting | L36-L81 | Diagnosing and fixing Nexus infrastructure issues: bare metal, storage, networking, Kubernetes/AKS hybrid, cluster health, connectivity, and hardware validation using CLI tools and logs. |
+| Best Practices | L82-L88 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
+| Decision Making | L89-L96 | Guidance on planning Nexus cluster placement, picking compatible storage versions, and choosing the right Kubernetes and Nexus hardware/SKU options for your deployment. |
+| Architecture & Design Patterns | L97-L101 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
+| Limits & Quotas | L102-L114 | Limits, supported versions, storage planning, node restarts/timeouts, isolation domain requirements, upgrade cadence, and log behavior/quotas for Azure Operator Nexus. |
+| Security | L115-L154 | Securing Nexus fabric, clusters, and VMs: RBAC, ACLs, SSH and break-glass access, key/cert/secret rotation, Defender/MDE, private endpoints, policies, and managed identities. |
+| Configuration | L155-L216 | Configuring and operating Azure Operator Nexus clusters and fabric: network/fabric policies, isolation domains, BGP/VRF, QoS, ACLs, commit workflows, Kubernetes/node settings, monitoring, and maintenance. |
+| Deployment | L217-L225 | Guides for deploying and upgrading Nexus instances and Kubernetes clusters, building VM images, and replacing or updating fabric network devices and terminal servers. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Defender For Iot. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L46 | Diagnosing and fixing Defender for IoT micro agent and OT sensor issues, understanding/handling security and health alerts, and validating sensor/agent installation and configuration. |
-| Best Practices | L47-L54 | Best practices for securing IoT/OT with Defender for IoT: using hub security recommendations, CIS benchmark guidance, and planning OT monitoring topology and sensor placement. |
-| Decision Making | L55-L66 | Guidance on planning Defender for IoT deployments: choosing OT traffic mirroring, appliances, licenses, partner integrations, billing, hybrid/air-gapped setups, and on-premises to cloud transitions. |
-| Architecture & Design Patterns | L67-L73 | Architectural guidance for connecting OT/ICS sensors to Azure, using sample OT network topologies, and aligning Defender for IoT deployment with Purdue model layers. |
-| Limits & Quotas | L74-L82 | Info on OT trial setup, supported/retiring features, virtual/physical OT appliance options and requirements, plus Defender for IoT data retention limits and timelines. |
-| Security | L83-L101 | Securing Defender for IoT OT environments: auth, RBAC/roles, SSO, certificates, Zero Trust, alert workflows/response, and auditing user and programming activity. |
-| Configuration | L102-L133 | Configuring Defender for IoT agents/sensors: micro agent twins, dependencies, alerts, OT sensor settings, traffic mirroring, connectivity, monitoring methods, and threat intel updates. |
-| Integrations & Coding Patterns | L134-L161 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate alerts and manage inventory/vulnerabilities. |
-| Deployment | L162-L185 | Planning and deploying Defender for IoT OT sensors: hardware/VM options, appliance-specific guides, traffic mirroring, onboarding, activation, and moving IoT security resources across regions. |
+| Troubleshooting | L37-L48 | Diagnosing and fixing Defender for IoT micro agent and OT sensor issues, understanding/handling security and health alerts, and validating sensor/agent installation and configuration. |
+| Best Practices | L49-L56 | Best practices for securing IoT/OT with Defender for IoT: using hub security recommendations, CIS benchmark guidance, and planning OT monitoring topology and sensor placement. |
+| Decision Making | L57-L68 | Guidance on planning Defender for IoT deployments: choosing OT traffic mirroring, appliances, licenses, partner integrations, billing, hybrid/air-gapped setups, and on-premises to cloud transitions. |
+| Architecture & Design Patterns | L69-L75 | Architectural guidance for connecting OT/ICS sensors to Azure, using sample OT network topologies, and aligning Defender for IoT deployment with Purdue model layers. |
+| Limits & Quotas | L76-L84 | Info on OT trial setup, supported/retiring features, virtual/physical OT appliance options and requirements, plus Defender for IoT data retention limits and timelines. |
+| Security | L85-L103 | Securing Defender for IoT OT environments: auth, RBAC/roles, SSO, certificates, Zero Trust, alert workflows/response, and auditing user and programming activity. |
+| Configuration | L104-L135 | Configuring Defender for IoT agents/sensors: micro agent twins, dependencies, alerts, OT sensor settings, traffic mirroring, connectivity, monitoring methods, and threat intel updates. |
+| Integrations & Coding Patterns | L136-L163 | Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel, OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate alerts and manage inventory/vulnerabilities. |
+| Deployment | L164-L187 | Planning and deploying Defender for IoT OT sensors: hardware/VM options, appliance-specific guides, traffic mirroring, onboarding, activation, and moving IoT security resources across regions. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Monitor. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L81 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics), data collection/ingestion, alerts, metrics, workbooks, autoscale, ITSM connectors, and Application Insights telemetry. |
-| Best Practices | L82-L122 | Best practices for Azure Monitor setup, cost and performance optimization, alerting, autoscale, Kubernetes/VM monitoring, Prometheus/PromQL, workbooks, and multicloud observability. |
-| Decision Making | L123-L152 | Guidance for planning and executing migrations, cost optimization, and feature choices in Azure Monitor (agents, alerts, logs, billing, SCOM, Prometheus, Splunk, Grafana, and VM insights). |
-| Architecture & Design Patterns | L153-L160 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
-| Limits & Quotas | L161-L223 | Limits, quotas, performance, and scale behavior for Azure Monitor logs, metrics, agents, autoscale, ingestion, APIs, and per‑resource metric definitions and constraints. |
-| Security | L224-L272 | Securing Azure Monitor and related services: network isolation, TLS/mTLS, Private Link, RBAC and Azure Policy, CMK/BYOS, secure APIs/webhooks, and analyzing security/audit/threat intel logs. |
-| Configuration | L273-L1616 | Configuring Azure Monitor end to end: agents, data collection rules, pipelines, logs/metrics schemas, alerts, autoscale, workspaces, Private Link, and Application Insights/OpenTelemetry settings. |
-| Integrations & Coding Patterns | L1617-L1942 | Patterns and code for integrating Azure Monitor with VMs, apps, Prometheus/OpenTelemetry, alerts/ITSM, REST/Logs Ingestion APIs, Grafana/Workbooks, and KQL examples for many log tables. |
-| Deployment | L1943-L1980 | Deploying and managing Azure Monitor agents, alerts, diagnostics, Application Insights (Profiler/Snapshot), VM insights, and workbooks at scale using portal, ARM, CLI, PowerShell, and policy. |
+| Troubleshooting | L37-L83 | Diagnosing and fixing Azure Monitor issues: agents (AMA/Log Analytics), data collection/ingestion, alerts, metrics, workbooks, autoscale, ITSM connectors, and Application Insights telemetry. |
+| Best Practices | L84-L124 | Best practices for Azure Monitor setup, cost and performance optimization, alerting, autoscale, Kubernetes/VM monitoring, Prometheus/PromQL, workbooks, and multicloud observability. |
+| Decision Making | L125-L154 | Guidance for planning and executing migrations, cost optimization, and feature choices in Azure Monitor (agents, alerts, logs, billing, SCOM, Prometheus, Splunk, Grafana, and VM insights). |
+| Architecture & Design Patterns | L155-L162 | Designing Azure Monitor architectures: enterprise-wide layouts, Private Link network patterns, choosing single vs multiple workspaces, and using workspace replication for resilience. |
+| Limits & Quotas | L163-L225 | Limits, quotas, performance, and scale behavior for Azure Monitor logs, metrics, agents, autoscale, ingestion, APIs, and per‑resource metric definitions and constraints. |
+| Security | L226-L274 | Securing Azure Monitor and related services: network isolation, TLS/mTLS, Private Link, RBAC and Azure Policy, CMK/BYOS, secure APIs/webhooks, and analyzing security/audit/threat intel logs. |
+| Configuration | L275-L1618 | Configuring Azure Monitor end to end: agents, data collection rules, pipelines, logs/metrics schemas, alerts, autoscale, workspaces, Private Link, and Application Insights/OpenTelemetry settings. |
+| Integrations & Coding Patterns | L1619-L1944 | Patterns and code for integrating Azure Monitor with VMs, apps, Prometheus/OpenTelemetry, alerts/ITSM, REST/Logs Ingestion APIs, Grafana/Workbooks, and KQL examples for many log tables. |
+| Deployment | L1945-L1982 | Deploying and managing Azure Monitor agents, alerts, diagnostics, Application Insights (Profiler/Snapshot), VM insights, and workbooks at scale using portal, ARM, CLI, PowerShell, and policy. |
 
 ### Troubleshooting
 | Topic | URL |

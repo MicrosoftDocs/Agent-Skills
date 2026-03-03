@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Service Bus. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L44 | Diagnosing and fixing Service Bus issues: AMQP errors, tracing requests end-to-end, handling deprecated/current SDK exceptions, ARM/Resource Manager errors, and common runtime problems. |
-| Best Practices | L45-L59 | Guidance on reliable Service Bus messaging: ordering, sessions, TTL/expiration, duplicate detection, dead-lettering, locks/settlement, serialization, and performance tuning (prefetch, throughput). |
-| Decision Making | L60-L70 | Guidance on choosing Service Bus vs other messaging services/tiers, configuring autoforwarding, geo-disaster recovery/replication, and migrating from Standard to Premium. |
-| Architecture & Design Patterns | L71-L79 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
-| Limits & Quotas | L80-L85 | Service Bus entity size and count limits, connection and throughput quotas, and how throttling works, including thresholds, causes, and mitigation strategies. |
-| Security | L86-L108 | Securing Service Bus with auth (Entra ID, SAS, managed identities), encryption, TLS, network isolation (VNet, Private Link, firewalls), and compliance/policy configuration. |
-| Configuration | L109-L135 | Configuring Service Bus entities, filters, sessions, partitioning, monitoring, and management via portal, PowerShell, ARM, and local emulator, plus message browsing, counts, and replication. |
-| Integrations & Coding Patterns | L136-L151 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), AMQP, RabbitMQ, Event Grid, Logic Apps, Functions, and batch operations like bulk message deletion or replication. |
-| Deployment | L152-L162 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
+| Troubleshooting | L37-L46 | Diagnosing and fixing Service Bus issues: AMQP errors, tracing requests end-to-end, handling deprecated/current SDK exceptions, ARM/Resource Manager errors, and common runtime problems. |
+| Best Practices | L47-L61 | Guidance on reliable Service Bus messaging: ordering, sessions, TTL/expiration, duplicate detection, dead-lettering, locks/settlement, serialization, and performance tuning (prefetch, throughput). |
+| Decision Making | L62-L72 | Guidance on choosing Service Bus vs other messaging services/tiers, configuring autoforwarding, geo-disaster recovery/replication, and migrating from Standard to Premium. |
+| Architecture & Design Patterns | L73-L81 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
+| Limits & Quotas | L82-L87 | Service Bus entity size and count limits, connection and throughput quotas, and how throttling works, including thresholds, causes, and mitigation strategies. |
+| Security | L88-L110 | Securing Service Bus with auth (Entra ID, SAS, managed identities), encryption, TLS, network isolation (VNet, Private Link, firewalls), and compliance/policy configuration. |
+| Configuration | L111-L137 | Configuring Service Bus entities, filters, sessions, partitioning, monitoring, and management via portal, PowerShell, ARM, and local emulator, plus message browsing, counts, and replication. |
+| Integrations & Coding Patterns | L138-L153 | Patterns and code for integrating Service Bus with JMS (1.1/2.0), AMQP, RabbitMQ, Event Grid, Logic Apps, Functions, and batch operations like bulk message deletion or replication. |
+| Deployment | L154-L164 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
 
 ### Troubleshooting
 | Topic | URL |

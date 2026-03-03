@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Stack Edge. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L83 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific known problems, alerts, ordering/activation, certificates, ARM/Blob/IoT/VM/GPU errors, and using diagnostics/logs. |
-| Best Practices | L84-L91 | Best practices for Azure Stack Edge Pro: planning for and recovering from device failure, GPU sharing configuration, and day-to-day operational/maintenance guidelines. |
-| Decision Making | L92-L100 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
-| Limits & Quotas | L101-L112 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes and moving Edge resources across subscriptions. |
-| Security | L113-L139 | Security, identity, and compliance for Azure Stack Edge: user/RBAC access, TLS/certificates, Key Vault secrets, VPN, encryption, data erasure, Azure Policy, and device‑specific security features. |
-| Configuration | L140-L193 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes, VMs, GPUs, monitoring, automation, and device lifecycle (reset, wipe, specs). |
-| Integrations & Coding Patterns | L194-L205 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
-| Deployment | L206-L209 | Installing and managing software, firmware, and Kubernetes updates on Azure Stack Edge Pro GPU devices, including update workflows and prerequisites |
+| Troubleshooting | L36-L85 | Diagnosing and fixing Azure Stack Edge/Data Box Gateway issues: release-specific known problems, alerts, ordering/activation, certificates, ARM/Blob/IoT/VM/GPU errors, and using diagnostics/logs. |
+| Best Practices | L86-L93 | Best practices for Azure Stack Edge Pro: planning for and recovering from device failure, GPU sharing configuration, and day-to-day operational/maintenance guidelines. |
+| Decision Making | L94-L102 | Guidance on region and data-location choices, resiliency behavior, disconnected deployment planning, and processes for replacing Azure Stack Edge devices. |
+| Limits & Quotas | L103-L114 | Limits, capacities, performance, and system requirements for Azure Stack Edge and Data Box Gateway devices, including supported VM sizes and moving Edge resources across subscriptions. |
+| Security | L115-L141 | Security, identity, and compliance for Azure Stack Edge: user/RBAC access, TLS/certificates, Key Vault secrets, VPN, encryption, data erasure, Azure Policy, and device‑specific security features. |
+| Configuration | L142-L195 | Configuring and managing Azure Stack Edge/Data Box Gateway devices: networking, power, storage, Kubernetes, VMs, GPUs, monitoring, automation, and device lifecycle (reset, wipe, specs). |
+| Integrations & Coding Patterns | L196-L207 | How to deploy and integrate workloads on Azure Stack Edge: IoT Edge modules, GPU-sharing/Kubernetes apps, DeepStream, Arc/Kubernetes GitOps, and connecting to local ARM. |
+| Deployment | L208-L211 | Installing and managing software, firmware, and Kubernetes updates on Azure Stack Edge Pro GPU devices, including update workflows and prerequisites |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Container Registry. Covers trouble
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L50 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, network and performance problems, transfer/streaming/cache failures, logs, Arc/connected registry, and CMK encryption. |
-| Best Practices | L51-L58 | Best practices for ACR operations: managing public image dependencies, safe image deletion and storage cleanup, and robust image tagging/versioning strategies. |
-| Decision Making | L59-L64 | Guidance on choosing Kubernetes auth methods (managed identity, service principals, workload identity) for ACR and migrating image signing from Docker Content Trust to Notary Project. |
-| Architecture & Design Patterns | L65-L72 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
-| Limits & Quotas | L73-L78 | ACR SKU comparisons, throughput and request limits, and how image/storage capacity, retention, and performance quotas work across registry tiers. |
-| Security | L79-L118 | Securing ACR with auth, RBAC/ABAC, network controls, encryption, image signing/verification, policies, Defender scans, and managed identity/Key Vault integration. |
-| Configuration | L119-L136 | Configuring ACR behavior: caching, purge/retention/soft delete, delete locks, webhooks, metrics/logs, and defining/scheduling multi-step ACR Tasks with YAML and agent pools. |
-| Integrations & Coding Patterns | L137-L152 | How to integrate ACR with ACI, AKS, Helm, ORAS, Buildpacks, ACR Transfer, GitHub Actions, Notation, Key Vault, and webhooks for image access, builds, signing, and automation |
-| Deployment | L153-L158 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
+| Troubleshooting | L37-L52 | Diagnosing and fixing ACR issues: health checks, error codes, login/auth, network and performance problems, transfer/streaming/cache failures, logs, Arc/connected registry, and CMK encryption. |
+| Best Practices | L53-L60 | Best practices for ACR operations: managing public image dependencies, safe image deletion and storage cleanup, and robust image tagging/versioning strategies. |
+| Decision Making | L61-L66 | Guidance on choosing Kubernetes auth methods (managed identity, service principals, workload identity) for ACR and migrating image signing from Docker Content Trust to Notary Project. |
+| Architecture & Design Patterns | L67-L74 | Patterns for ACR performance and governance: caching image pulls, geo-replication strategies, connected registries for edge/offline, and gated import workflows for public images. |
+| Limits & Quotas | L75-L80 | ACR SKU comparisons, throughput and request limits, and how image/storage capacity, retention, and performance quotas work across registry tiers. |
+| Security | L81-L120 | Securing ACR with auth, RBAC/ABAC, network controls, encryption, image signing/verification, policies, Defender scans, and managed identity/Key Vault integration. |
+| Configuration | L121-L138 | Configuring ACR behavior: caching, purge/retention/soft delete, delete locks, webhooks, metrics/logs, and defining/scheduling multi-step ACR Tasks with YAML and agent pools. |
+| Integrations & Coding Patterns | L139-L154 | How to integrate ACR with ACI, AKS, Helm, ORAS, Buildpacks, ACR Transfer, GitHub Actions, Notation, Key Vault, and webhooks for image access, builds, signing, and automation |
+| Deployment | L155-L160 | Using ARM templates to automate ACR quick tasks and data transfer, and deploying/managing ACR connected registries via Azure Arc extension |
 
 ### Troubleshooting
 | Topic | URL |

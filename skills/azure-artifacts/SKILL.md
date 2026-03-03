@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Artifacts. Covers best practices, 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L39 | Guidance on Azure Artifacts package management best practices, configuring and using upstream sources, and safely restoring packages from external feeds. |
-| Decision Making | L40-L46 | Guidance on choosing feed scope and planning migrations of package storage, including moving from file shares or MyGet to Azure Artifacts feeds. |
-| Limits & Quotas | L47-L54 | Storage quotas, free allocation, and size/count limits for Azure Artifacts packages, plus how to monitor usage and publish Universal Packages within those limits. |
-| Security | L55-L61 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
-| Configuration | L62-L73 | Configuring Azure Artifacts feeds: views/promotion, retention/deletion, upstream sources, npm/.npmrc and scopes, and .artifactignore for optimizing pipeline artifacts. |
-| Integrations & Coding Patterns | L74-L118 | How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages, and use upstream sources. |
-| Deployment | L119-L122 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+| Best Practices | L35-L41 | Guidance on Azure Artifacts package management best practices, configuring and using upstream sources, and safely restoring packages from external feeds. |
+| Decision Making | L42-L48 | Guidance on choosing feed scope and planning migrations of package storage, including moving from file shares or MyGet to Azure Artifacts feeds. |
+| Limits & Quotas | L49-L56 | Storage quotas, free allocation, and size/count limits for Azure Artifacts packages, plus how to monitor usage and publish Universal Packages within those limits. |
+| Security | L57-L63 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
+| Configuration | L64-L75 | Configuring Azure Artifacts feeds: views/promotion, retention/deletion, upstream sources, npm/.npmrc and scopes, and .artifactignore for optimizing pipeline artifacts. |
+| Integrations & Coding Patterns | L76-L120 | How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages, and use upstream sources. |
+| Deployment | L121-L124 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
 
 ### Best Practices
 | Topic | URL |

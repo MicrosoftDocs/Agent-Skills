@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Partner Solutions. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L40 | Diagnosing and fixing integration, deployment, and runtime issues for Azure-native monitoring/observability services: Confluent Kafka/Flink, Datadog, Dynatrace, Elastic, and New Relic. |
-| Decision Making | L41-L45 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
-| Architecture & Design Patterns | L46-L50 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
-| Security | L51-L56 | Managing security for partner solutions, including Confluent Cloud RBAC in Azure portal and configuring SSO and lifecycle controls for Informatica IDMC deployments |
-| Configuration | L57-L76 | Configuring and managing Azure-native partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINX, etc.), including prerequisites, settings, and integrations. |
-| Integrations & Coding Patterns | L77-L81 | Using Service Connector to integrate Azure compute with external services like Confluent Cloud and Neon Serverless Postgres, including setup, auth, and configuration patterns |
+| Troubleshooting | L34-L42 | Diagnosing and fixing integration, deployment, and runtime issues for Azure-native monitoring/observability services: Confluent Kafka/Flink, Datadog, Dynatrace, Elastic, and New Relic. |
+| Decision Making | L43-L47 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
+| Architecture & Design Patterns | L48-L52 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
+| Security | L53-L58 | Managing security for partner solutions, including Confluent Cloud RBAC in Azure portal and configuring SSO and lifecycle controls for Informatica IDMC deployments |
+| Configuration | L59-L78 | Configuring and managing Azure-native partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINX, etc.), including prerequisites, settings, and integrations. |
+| Integrations & Coding Patterns | L79-L83 | Using Service Connector to integrate Azure compute with external services like Confluent Cloud and Neon Serverless Postgres, including setup, auth, and configuration patterns |
 
 ### Troubleshooting
 | Topic | URL |

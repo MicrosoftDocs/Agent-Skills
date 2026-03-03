@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Virtual Network. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
-| Best Practices | L42-L53 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
-| Decision Making | L54-L63 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L64-L73 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L74-L80 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
-| Security | L81-L89 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
-| Configuration | L90-L118 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
+| Best Practices | L44-L55 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
+| Decision Making | L56-L65 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
+| Architecture & Design Patterns | L66-L75 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L76-L82 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
+| Security | L83-L91 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
+| Configuration | L92-L120 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
 
 ### Troubleshooting
 | Topic | URL |

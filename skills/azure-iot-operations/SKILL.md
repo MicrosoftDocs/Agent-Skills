@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure IoT Operations. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and fixing Azure IoT Operations deployment and runtime issues, including known errors, health checks, logs, and step-by-step troubleshooting guidance. |
-| Best Practices | L41-L46 | Guidance for production-ready Azure IoT Operations deployments and designing highly available, resilient edge applications using the Azure MQTT broker. |
-| Decision Making | L47-L51 | Guidance and examples for sizing Azure IoT Operations production deployments, including resource planning, capacity considerations, and scaling recommendations. |
-| Architecture & Design Patterns | L52-L57 | Akri-based device discovery architecture and patterns for deploying Azure IoT Operations in layered/segmented industrial networks (DMZ, OT/IT zones, network topologies). |
-| Limits & Quotas | L58-L62 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
-| Security | L63-L79 | Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images and secure configs. |
-| Configuration | L80-L116 | Configuring Azure IoT Operations data flows, endpoints, schemas, WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring, scaling, and managing IoT resources |
-| Integrations & Coding Patterns | L117-L135 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
-| Deployment | L136-L146 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
+| Troubleshooting | L37-L42 | Diagnosing and fixing Azure IoT Operations deployment and runtime issues, including known errors, health checks, logs, and step-by-step troubleshooting guidance. |
+| Best Practices | L43-L48 | Guidance for production-ready Azure IoT Operations deployments and designing highly available, resilient edge applications using the Azure MQTT broker. |
+| Decision Making | L49-L53 | Guidance and examples for sizing Azure IoT Operations production deployments, including resource planning, capacity considerations, and scaling recommendations. |
+| Architecture & Design Patterns | L54-L59 | Akri-based device discovery architecture and patterns for deploying Azure IoT Operations in layered/segmented industrial networks (DMZ, OT/IT zones, network topologies). |
+| Limits & Quotas | L60-L64 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
+| Security | L65-L81 | Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images and secure configs. |
+| Configuration | L82-L118 | Configuring Azure IoT Operations data flows, endpoints, schemas, WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring, scaling, and managing IoT resources |
+| Integrations & Coding Patterns | L119-L137 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
+| Deployment | L138-L148 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
 
 ### Troubleshooting
 | Topic | URL |

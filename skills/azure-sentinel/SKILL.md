@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Sentinel. Covers troubleshooting, 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L45 | Diagnosing and fixing Microsoft Sentinel data ingestion, connector, KQL/data lake, analytics rule (auto-disable), MCP tools, AWS S3, CEF/Syslog, SAP, and solution-specific issues. |
-| Best Practices | L46-L72 | Best practices for SOC operations in Microsoft Sentinel: rule tuning, automation/playbooks, incident tasks/metrics, watchlists, data collection, solution lifecycle, and monitoring/health. |
-| Decision Making | L73-L110 | Guidance on Sentinel design and migration decisions: SIEM/agent/automation migrations, pricing and cost control, data tiers/residency, connector choices, and feature availability across clouds. |
-| Architecture & Design Patterns | L111-L126 | Architecting Sentinel deployments: multi-workspace/tenant patterns, MSSP setups, SOAR automation, BCDR/resiliency, cross-workspace data/incident ops, SAP, ML models, and Jupyter-based hunting. |
-| Limits & Quotas | L127-L138 | Limits, quotas, pricing, and retention tiers for Sentinel data, MCP server, search jobs, watchlists, ASIM, and workspace removal impact on stored logs and resources |
-| Security | L139-L152 | Security, RBAC, and auditing for Microsoft Sentinel: user/query activity logs, playbook auth/access policies, CMK encryption, AWS identity disruption, and SAP roles/security parameters. |
-| Configuration | L153-L275 | Configuring Microsoft Sentinel data ingestion, connectors, analytics/automation rules, ASIM schemas, UEBA, SAP, data lake, retention, and health/auditing to control how Sentinel operates. |
-| Integrations & Coding Patterns | L276-L321 | Patterns and code for integrating Sentinel with data sources, threat intel, MCP tools, Logic Apps, Teams, Power BI, and building/customizing connectors, rules, hunts, and automations. |
-| Deployment | L322-L344 | Deploying and managing Microsoft Sentinel solutions and content (rules, automation, SAP, Power Platform, Dynamics, SAP BTP), CI/CD, ARM-based as-code deployments, and publishing/monitoring solutions. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Microsoft Sentinel data ingestion, connector, KQL/data lake, analytics rule (auto-disable), MCP tools, AWS S3, CEF/Syslog, SAP, and solution-specific issues. |
+| Best Practices | L48-L74 | Best practices for SOC operations in Microsoft Sentinel: rule tuning, automation/playbooks, incident tasks/metrics, watchlists, data collection, solution lifecycle, and monitoring/health. |
+| Decision Making | L75-L112 | Guidance on Sentinel design and migration decisions: SIEM/agent/automation migrations, pricing and cost control, data tiers/residency, connector choices, and feature availability across clouds. |
+| Architecture & Design Patterns | L113-L128 | Architecting Sentinel deployments: multi-workspace/tenant patterns, MSSP setups, SOAR automation, BCDR/resiliency, cross-workspace data/incident ops, SAP, ML models, and Jupyter-based hunting. |
+| Limits & Quotas | L129-L140 | Limits, quotas, pricing, and retention tiers for Sentinel data, MCP server, search jobs, watchlists, ASIM, and workspace removal impact on stored logs and resources |
+| Security | L141-L154 | Security, RBAC, and auditing for Microsoft Sentinel: user/query activity logs, playbook auth/access policies, CMK encryption, AWS identity disruption, and SAP roles/security parameters. |
+| Configuration | L155-L277 | Configuring Microsoft Sentinel data ingestion, connectors, analytics/automation rules, ASIM schemas, UEBA, SAP, data lake, retention, and health/auditing to control how Sentinel operates. |
+| Integrations & Coding Patterns | L278-L323 | Patterns and code for integrating Sentinel with data sources, threat intel, MCP tools, Logic Apps, Teams, Power BI, and building/customizing connectors, rules, hunts, and automations. |
+| Deployment | L324-L346 | Deploying and managing Microsoft Sentinel solutions and content (rules, automation, SAP, Power Platform, Dynamics, SAP BTP), CI/CD, ARM-based as-code deployments, and publishing/monitoring solutions. |
 
 ### Troubleshooting
 | Topic | URL |

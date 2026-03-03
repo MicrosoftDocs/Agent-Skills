@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Virtual Machine Scale Sets. Covers
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing and fixing VM Scale Sets issues with instance mix (spot/dedicated), autoscale not triggering or scaling incorrectly, and common configuration or quota-related errors. |
-| Decision Making | L40-L53 | Guidance on VM scale set design choices: cost vs availability, Spot/standby pools, instance mix, placement score, upgrade modes, hybrid benefit, and migrating to Flexible scale sets. |
-| Architecture & Design Patterns | L54-L62 | Designing resilient VM scale sets: zones, fault domains, zone balancing modes, proximity placement groups, and standby pools to optimize availability, latency, and scale-out behavior. |
-| Limits & Quotas | L63-L71 | Limits, capacities, and behaviors of VM scale sets: instance/placement group limits, standby pool constraints, maintenance notifications, and FAQs on scaling and support scope. |
-| Security | L72-L83 | Encrypting VM scale set disks (CLI, PowerShell, ARM), configuring Key Vault and extension sequencing for Azure Disk Encryption, and setting security policies/RBAC for VMSS. |
-| Configuration | L84-L128 | Configuring VM Scale Sets: autoscale, upgrades, health/repairs, networking, disks, instance mix, standby pools, protection, and CLI/PowerShell/portal settings and policies. |
-| Integrations & Coding Patterns | L129-L138 | Using CLI/PowerShell/DSC/custom script to deploy apps, configure, and manage VM Scale Sets, plus integrating standby pools with Log Analytics for monitoring and automation. |
-| Deployment | L139-L147 | Creating and deploying VM scale sets with gallery/custom images, ARM templates, app deployment steps, and configuring instances across availability zones. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing VM Scale Sets issues with instance mix (spot/dedicated), autoscale not triggering or scaling incorrectly, and common configuration or quota-related errors. |
+| Decision Making | L42-L55 | Guidance on VM scale set design choices: cost vs availability, Spot/standby pools, instance mix, placement score, upgrade modes, hybrid benefit, and migrating to Flexible scale sets. |
+| Architecture & Design Patterns | L56-L64 | Designing resilient VM scale sets: zones, fault domains, zone balancing modes, proximity placement groups, and standby pools to optimize availability, latency, and scale-out behavior. |
+| Limits & Quotas | L65-L73 | Limits, capacities, and behaviors of VM scale sets: instance/placement group limits, standby pool constraints, maintenance notifications, and FAQs on scaling and support scope. |
+| Security | L74-L85 | Encrypting VM scale set disks (CLI, PowerShell, ARM), configuring Key Vault and extension sequencing for Azure Disk Encryption, and setting security policies/RBAC for VMSS. |
+| Configuration | L86-L130 | Configuring VM Scale Sets: autoscale, upgrades, health/repairs, networking, disks, instance mix, standby pools, protection, and CLI/PowerShell/portal settings and policies. |
+| Integrations & Coding Patterns | L131-L140 | Using CLI/PowerShell/DSC/custom script to deploy apps, configure, and manage VM Scale Sets, plus integrating standby pools with Log Analytics for monitoring and automation. |
+| Deployment | L141-L149 | Creating and deploying VM scale sets with gallery/custom images, ARM templates, app deployment steps, and configuring instances across availability zones. |
 
 ### Troubleshooting
 | Topic | URL |

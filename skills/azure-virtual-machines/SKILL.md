@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Virtual Machines. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L59 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
-| Best Practices | L60-L86 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
-| Decision Making | L87-L149 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning/migrating VMs (GPU, OS, Oracle, RHEL, DNS) and handling retirements, backup, DR, and reservations. |
-| Architecture & Design Patterns | L150-L168 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L169-L374 | VM size specs, disk and storage performance limits, quotas, lifecycle/support, and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU families. |
-| Security | L375-L451 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
-| Configuration | L452-L582 | Configuring Azure VMs and scale sets: images, disks, extensions, drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads, and platform update controls. |
-| Integrations & Coding Patterns | L583-L630 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
-| Deployment | L631-L657 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
+| Troubleshooting | L37-L61 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
+| Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
+| Decision Making | L89-L151 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning/migrating VMs (GPU, OS, Oracle, RHEL, DNS) and handling retirements, backup, DR, and reservations. |
+| Architecture & Design Patterns | L152-L170 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
+| Limits & Quotas | L171-L376 | VM size specs, disk and storage performance limits, quotas, lifecycle/support, and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU families. |
+| Security | L377-L453 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
+| Configuration | L454-L584 | Configuring Azure VMs and scale sets: images, disks, extensions, drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads, and platform update controls. |
+| Integrations & Coding Patterns | L585-L632 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
+| Deployment | L633-L659 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Cloud Hsm. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Diagnosing and fixing common Azure Cloud HSM issues, including connectivity, configuration, performance, key operations, and integration failures with detailed troubleshooting steps. |
-| Best Practices | L37-L41 | Guidance on designing and optimizing key management in Azure Cloud HSM, including key lifecycle, security, performance, and organizational best practices. |
-| Limits & Quotas | L42-L47 | Details on Cloud HSM capacity limits, object/transaction quotas, and which cryptographic algorithms and key sizes are supported for keys and operations |
-| Security | L48-L55 | Configuring secure auth, hardening network access, applying security best practices, and managing users/roles safely for Azure Cloud HSM deployments. |
-| Configuration | L56-L61 | Configuring Azure Cloud HSM cluster backups/restores and enabling, querying, and interpreting HSM operation logs for auditing and troubleshooting |
-| Integrations & Coding Patterns | L62-L66 | Using PKCS#11 with Azure Cloud HSM for certificate storage and lifecycle management, including setup, configuration, and integration patterns for apps and services. |
+| Troubleshooting | L34-L38 | Diagnosing and fixing common Azure Cloud HSM issues, including connectivity, configuration, performance, key operations, and integration failures with detailed troubleshooting steps. |
+| Best Practices | L39-L43 | Guidance on designing and optimizing key management in Azure Cloud HSM, including key lifecycle, security, performance, and organizational best practices. |
+| Limits & Quotas | L44-L49 | Details on Cloud HSM capacity limits, object/transaction quotas, and which cryptographic algorithms and key sizes are supported for keys and operations |
+| Security | L50-L57 | Configuring secure auth, hardening network access, applying security best practices, and managing users/roles safely for Azure Cloud HSM deployments. |
+| Configuration | L58-L63 | Configuring Azure Cloud HSM cluster backups/restores and enabling, querying, and interpreting HSM operation logs for auditing and troubleshooting |
+| Integrations & Coding Patterns | L64-L68 | Using PKCS#11 with Azure Cloud HSM for certificate storage and lifecycle management, including setup, configuration, and integration patterns for apps and services. |
 
 ### Troubleshooting
 | Topic | URL |

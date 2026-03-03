@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Policy. Covers troubleshooting, be
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L39 | Diagnosing and fixing Azure Policy non-compliance, common policy evaluation/deployment errors, and Machine Configuration deployment and remediation issues. |
-| Best Practices | L40-L55 | Designing effective Azure Policy definitions: effects, logical/value operators, arrays, tags, initiatives, parameters, and testing/behavior of Machine/Guest Configuration. |
-| Decision Making | L56-L62 | Guidance for planning migrations from Azure Automation DSC, DSC extension, and Automanage Best Practices to Azure Policy/Machine Configuration, including mapping features and migration steps. |
-| Security | L63-L123 | Using Azure Policy and Machine Configuration for security baselines and mapping to compliance frameworks (CIS, NIST, ISO, PCI, FedRAMP, HIPAA, regional regs) across Azure and Azure Government. |
-| Configuration | L124-L139 | Authoring, assigning, storing, and securing Machine Configuration (guest configuration) packages and policies, plus prerequisites, networking, remediation, and compliance result analysis. |
-| Integrations & Coding Patterns | L140-L145 | Using Azure Resource Graph to query Azure Policy compliance data and guest configuration state across resources for reporting, auditing, and large-scale policy analysis |
-| Deployment | L146-L155 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish packages to storage, and use safe deployment practices with Azure Policy. |
+| Troubleshooting | L35-L41 | Diagnosing and fixing Azure Policy non-compliance, common policy evaluation/deployment errors, and Machine Configuration deployment and remediation issues. |
+| Best Practices | L42-L57 | Designing effective Azure Policy definitions: effects, logical/value operators, arrays, tags, initiatives, parameters, and testing/behavior of Machine/Guest Configuration. |
+| Decision Making | L58-L64 | Guidance for planning migrations from Azure Automation DSC, DSC extension, and Automanage Best Practices to Azure Policy/Machine Configuration, including mapping features and migration steps. |
+| Security | L65-L125 | Using Azure Policy and Machine Configuration for security baselines and mapping to compliance frameworks (CIS, NIST, ISO, PCI, FedRAMP, HIPAA, regional regs) across Azure and Azure Government. |
+| Configuration | L126-L141 | Authoring, assigning, storing, and securing Machine Configuration (guest configuration) packages and policies, plus prerequisites, networking, remediation, and compliance result analysis. |
+| Integrations & Coding Patterns | L142-L147 | Using Azure Resource Graph to query Azure Policy compliance data and guest configuration state across resources for reporting, auditing, and large-scale policy analysis |
+| Deployment | L148-L157 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish packages to storage, and use safe deployment practices with Azure Policy. |
 
 ### Troubleshooting
 | Topic | URL |

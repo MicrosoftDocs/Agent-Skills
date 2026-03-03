@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Blob Storage. Covers troubleshooti
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L42 | Diagnosing and fixing Azure Storage/Blob issues, including common task failures, Storage Mover networking and job error codes, support bundle analysis, and BlobFuse mount/I/O problems. |
-| Best Practices | L43-L76 | Performance, cost, reliability, and monitoring best practices for Blob Storage: access tiers, lifecycle, naming, concurrency, retries, client tuning (.NET/Java/Go/JS/Python), NFS/SFTP, events, and backups |
-| Decision Making | L77-L105 | Cost and architecture decisions for Blob Storage: pricing, cost estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection, connectivity, and migration/upgrade tool choices. |
-| Limits & Quotas | L106-L125 | Limits, quotas, performance and scale characteristics, feature restrictions, and known issues for Azure Blob Storage (including archive, NFS, SFTP, static sites, premium tiers, and tools like BlobFuse). |
-| Security | L126-L181 | Managing secure access to Blob Storage: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, encryption (server/client, CPK, scopes), anonymous access controls, and security best practices. |
-| Configuration | L182-L249 | Configuring and monitoring Blob Storage: lifecycle, immutability, soft delete, snapshots, PITR, NFS/SFTP/BlobFuse mounts, inventory, static sites, and third‑party backup/migration tools. |
-| Integrations & Coding Patterns | L250-L384 | SDK and CLI patterns for uploading, copying, listing, leasing, tagging, tiering, and securing blobs/containers, plus BlobFuse2 mounts, ADLS/ABFS access, events, and analytics integrations. |
-| Deployment | L385-L398 | Guides for deploying and integrating Blob Storage: static website hosting (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration tools (Data Box, WANdisco, Nasuni, Tiger Bridge). |
+| Troubleshooting | L36-L44 | Diagnosing and fixing Azure Storage/Blob issues, including common task failures, Storage Mover networking and job error codes, support bundle analysis, and BlobFuse mount/I/O problems. |
+| Best Practices | L45-L78 | Performance, cost, reliability, and monitoring best practices for Blob Storage: access tiers, lifecycle, naming, concurrency, retries, client tuning (.NET/Java/Go/JS/Python), NFS/SFTP, events, and backups |
+| Decision Making | L79-L107 | Cost and architecture decisions for Blob Storage: pricing, cost estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection, connectivity, and migration/upgrade tool choices. |
+| Limits & Quotas | L108-L127 | Limits, quotas, performance and scale characteristics, feature restrictions, and known issues for Azure Blob Storage (including archive, NFS, SFTP, static sites, premium tiers, and tools like BlobFuse). |
+| Security | L128-L183 | Managing secure access to Blob Storage: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, encryption (server/client, CPK, scopes), anonymous access controls, and security best practices. |
+| Configuration | L184-L251 | Configuring and monitoring Blob Storage: lifecycle, immutability, soft delete, snapshots, PITR, NFS/SFTP/BlobFuse mounts, inventory, static sites, and third‑party backup/migration tools. |
+| Integrations & Coding Patterns | L252-L386 | SDK and CLI patterns for uploading, copying, listing, leasing, tagging, tiering, and securing blobs/containers, plus BlobFuse2 mounts, ADLS/ABFS access, events, and analytics integrations. |
+| Deployment | L387-L400 | Guides for deploying and integrating Blob Storage: static website hosting (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration tools (Data Box, WANdisco, Nasuni, Tiger Bridge). |
 
 ### Troubleshooting
 | Topic | URL |

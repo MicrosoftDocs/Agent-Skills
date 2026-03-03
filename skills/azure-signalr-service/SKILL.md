@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure SignalR Service. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing and fixing SignalR issues using logs and live trace, covering connectivity, message delivery, common errors, and FAQ-style troubleshooting tips. |
-| Best Practices | L44-L49 | Guidance on safely shutting down SignalR app servers and managing client lifecycle events, including detecting, handling, and recovering from client disconnects and reconnects. |
-| Decision Making | L50-L55 | Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic) and configuring availability zones/zone redundancy for high availability and resilience. |
-| Architecture & Design Patterns | L56-L62 | Patterns for scaling and sharding Azure SignalR, designing multi-instance topologies, and building resilient, disaster-ready SignalR deployments for ASP.NET Core apps |
-| Limits & Quotas | L63-L69 | Message/connection billing rules, capacity planning, throughput limits, and how to scale Azure SignalR instances within quota and performance constraints. |
-| Security | L70-L91 | Securing Azure SignalR: auth with Entra ID/managed identities, keys and rotation, network/private endpoints/NSGs, WAF, Key Vault, RBAC, cross-tenant access, and Azure Policy compliance. |
-| Configuration | L92-L103 | Configuring SignalR apps: connection strings, upstream endpoints, custom domains, monitoring/metrics, negotiation endpoints, Functions bindings, and using the local emulator. |
-| Integrations & Coding Patterns | L104-L118 | Using SignalR from servers and REST, managing clients, integrating with Event Grid, API Management, Application Gateway, and detailed data-plane REST API references |
-| Deployment | L119-L129 | Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale setup, regional moves, and end-to-end web app deployment (incl. GitHub auth) |
+| Troubleshooting | L37-L45 | Diagnosing and fixing SignalR issues using logs and live trace, covering connectivity, message delivery, common errors, and FAQ-style troubleshooting tips. |
+| Best Practices | L46-L51 | Guidance on safely shutting down SignalR app servers and managing client lifecycle events, including detecting, handling, and recovering from client disconnects and reconnects. |
+| Decision Making | L52-L57 | Guidance on choosing the right SignalR Service mode (Default/Serverless/Classic) and configuring availability zones/zone redundancy for high availability and resilience. |
+| Architecture & Design Patterns | L58-L64 | Patterns for scaling and sharding Azure SignalR, designing multi-instance topologies, and building resilient, disaster-ready SignalR deployments for ASP.NET Core apps |
+| Limits & Quotas | L65-L71 | Message/connection billing rules, capacity planning, throughput limits, and how to scale Azure SignalR instances within quota and performance constraints. |
+| Security | L72-L93 | Securing Azure SignalR: auth with Entra ID/managed identities, keys and rotation, network/private endpoints/NSGs, WAF, Key Vault, RBAC, cross-tenant access, and Azure Policy compliance. |
+| Configuration | L94-L105 | Configuring SignalR apps: connection strings, upstream endpoints, custom domains, monitoring/metrics, negotiation endpoints, Functions bindings, and using the local emulator. |
+| Integrations & Coding Patterns | L106-L120 | Using SignalR from servers and REST, managing clients, integrating with Event Grid, API Management, Application Gateway, and detailed data-plane REST API references |
+| Deployment | L121-L131 | Deploying and managing Azure SignalR via CLI, ARM/Bicep templates, autoscale setup, regional moves, and end-to-end web app deployment (incl. GitHub auth) |
 
 ### Troubleshooting
 | Topic | URL |

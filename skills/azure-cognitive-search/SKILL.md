@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure AI Search. Covers troubleshooting,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L45 | Diagnosing and fixing Azure AI Search indexer and skillset issues, including common errors, OData filter problems, portal debug sessions, and shared private link resource failures. |
-| Best Practices | L46-L66 | Best practices for indexing, enrichment, chunking, vectors, performance, concurrency, and safe updates in Azure AI Search, including RAG, custom skills, and responsible GenAI usage. |
-| Decision Making | L67-L78 | Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating capacity, choosing pricing tiers, and planning costs and hardware for search workloads |
-| Architecture & Design Patterns | L79-L87 | Architectural guidance for Azure AI Search: RAG and agentic retrieval patterns, knowledge store design, multitenancy/isolation, and multi-region deployment strategies. |
-| Limits & Quotas | L88-L97 | Limits, quotas, and sizing for Azure AI Search (indexers, schedules, enrichment, vector index size) plus a .NET tutorial on creating/loading indexes within those constraints. |
-| Security | L98-L136 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
-| Configuration | L137-L233 | Configuring Azure AI Search: data sources, indexes, skillsets, enrichment, vector/semantic settings, knowledge bases, monitoring, and query behavior for agentic retrieval workloads. |
-| Integrations & Coding Patterns | L234-L294 | Integrating Azure AI Search into apps: query syntax, OData, semantic/agentic retrieval, SDK/REST usage, vectorization, enrichment skills, and indexing data from many Azure and external sources. |
-| Deployment | L295-L303 | Deploying and moving Azure AI Search services (ARM/Bicep/Terraform), choosing regions/features, and building an end-to-end agentic retrieval solution with Foundry. |
+| Troubleshooting | L37-L47 | Diagnosing and fixing Azure AI Search indexer and skillset issues, including common errors, OData filter problems, portal debug sessions, and shared private link resource failures. |
+| Best Practices | L48-L68 | Best practices for indexing, enrichment, chunking, vectors, performance, concurrency, and safe updates in Azure AI Search, including RAG, custom skills, and responsible GenAI usage. |
+| Decision Making | L69-L80 | Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating capacity, choosing pricing tiers, and planning costs and hardware for search workloads |
+| Architecture & Design Patterns | L81-L89 | Architectural guidance for Azure AI Search: RAG and agentic retrieval patterns, knowledge store design, multitenancy/isolation, and multi-region deployment strategies. |
+| Limits & Quotas | L90-L99 | Limits, quotas, and sizing for Azure AI Search (indexers, schedules, enrichment, vector index size) plus a .NET tutorial on creating/loading indexes within those constraints. |
+| Security | L100-L138 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
+| Configuration | L139-L235 | Configuring Azure AI Search: data sources, indexes, skillsets, enrichment, vector/semantic settings, knowledge bases, monitoring, and query behavior for agentic retrieval workloads. |
+| Integrations & Coding Patterns | L236-L296 | Integrating Azure AI Search into apps: query syntax, OData, semantic/agentic retrieval, SDK/REST usage, vectorization, enrichment skills, and indexing data from many Azure and external sources. |
+| Deployment | L297-L305 | Deploying and moving Azure AI Search services (ARM/Bicep/Terraform), choosing regions/features, and building an end-to-end agentic retrieval solution with Foundry. |
 
 ### Troubleshooting
 | Topic | URL |

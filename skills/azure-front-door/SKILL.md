@@ -16,30 +16,28 @@ This skill provides expert guidance for Azure Front Door. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and compression issues, config/runtime problems, and performance bottlenecks using logs, reference strings, and best practices. |
-| Best Practices | L44-L49 | Guidance on optimal Azure Front Door configuration (caching, routing, security, performance) and practical rules engine patterns for URL rewrites, redirects, headers, and conditional routing. |
-| Decision Making | L50-L62 | Guidance on Front Door pricing and billing, comparing Front Door vs Azure CDN tiers, and planning/mapping migrations from Front Door classic to Standard/Premium (including upgrades and FAQs). |
-| Architecture & Design Patterns | L63-L71 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
-| Limits & Quotas | L72-L79 | POP codes and locations, regional POP lists, routing composite limits, and subscription-level bandwidth throttling behavior for Azure Front Door. |
-| Security | L80-L100 | TLS, certificates, cipher suites, WAF, DDoS, security headers, origin protection (Private Link, restricted access), managed identity, and secure logging for Azure Front Door. |
-| Configuration | L101-L132 | Configuring Azure Front Door behavior: caching, routing, rules, redirects/rewrites, custom domains, Private Link, protocol support, health probes, monitoring, and cache purge tools. |
-| Integrations & Coding Patterns | L133-L139 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
-| Deployment | L140-L151 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
+| Troubleshooting | L37-L41 | Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and compression issues, config/runtime problems, and performance bottlenecks using logs, reference strings, and best practices. |
+| Best Practices | L42-L47 | Guidance on optimal Azure Front Door configuration (caching, routing, security, performance) and practical rules engine patterns for URL rewrites, redirects, headers, and conditional routing. |
+| Decision Making | L48-L60 | Guidance on Front Door pricing and billing, comparing Front Door vs Azure CDN tiers, and planning/mapping migrations from Front Door classic to Standard/Premium (including upgrades and FAQs). |
+| Architecture & Design Patterns | L61-L69 | Architectural patterns for Azure Front Door: apex domain setup, blue/green deployments, manual failover with Traffic Manager, static blob hosting, reliable uploads, and well-architected design guidance. |
+| Limits & Quotas | L70-L77 | POP codes and locations, regional POP lists, routing composite limits, and subscription-level bandwidth throttling behavior for Azure Front Door. |
+| Security | L78-L98 | TLS, certificates, cipher suites, WAF, DDoS, security headers, origin protection (Private Link, restricted access), managed identity, and secure logging for Azure Front Door. |
+| Configuration | L99-L130 | Configuring Azure Front Door behavior: caching, routing, rules, redirects/rewrites, custom domains, Private Link, protocol support, health probes, monitoring, and cache purge tools. |
+| Integrations & Coding Patterns | L131-L137 | Automating Azure Front Door setup with Azure CLI/PowerShell, including creating profiles, endpoints, and delivery rules via scripts and command-line workflows. |
+| Deployment | L138-L149 | Automating Front Door deployment and migration using Bicep/ARM/Terraform, updating DevOps pipelines, and upgrading or migrating between Classic, Standard, and Premium tiers. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Use Azure Front Door reference strings to debug 4xx/5xx errors | https://learn.microsoft.com/en-us/azure/frontdoor/refstring |
-| Troubleshoot file compression behavior in Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-compression |
 | Resolve CORS issues when using Azure Front Door | https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-cross-origin-resources |
-| Resolve common Azure Front Door configuration and runtime issues | https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-issues |
-| Diagnose and fix Azure Front Door performance problems | https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-performance-issues |
 
 ### Best Practices
 | Topic | URL |

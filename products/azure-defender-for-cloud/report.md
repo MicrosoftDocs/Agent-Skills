@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   integrations: Integrating Defender for Cloud with SIEMs, DevOps, APIs, and third‑party
     tools (ServiceNow, Power BI, EDR, AWS/GCP), plus ARG queries, exports, and automation
@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Defender For Cloud covering integr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 470
+- **Updated Pages**: 1
+- **Unchanged**: 469
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -69,6 +69,11 @@ skill_description: Expert knowledge for Azure Defender For Cloud covering integr
 | *(Unclassified)* | 212 | 45.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Serverless protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/serverless-protection)
+  - Updated: 2025-12-01T12:02:00.000Z → 2026-03-03T12:07:00.000Z
 
 ## Classified Pages
 
@@ -512,7 +517,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud covering integr
 | [Overview Cloud Security Posture Management (CSPM)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management) | 0.25 | Conceptual overview of CSPM; describes capabilities and benefits without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Remediate security recommendations with governance](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-fifteen) | 0.25 | Defender for Servers integration with MDE episode covers architecture and deployment options but summary does not show concrete config parameter lists or error mappings. |
 | [Risk prioritization](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-forty-five) | 0.25 | Risk prioritization dashboard explanation and demo; focuses on how to use dashboards conceptually, not on quantified thresholds or config options. |
-| [Serverless protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/serverless-protection) | 0.25 | Describes what serverless protection is and which resources it covers; appears to be an overview without specific configuration values, roles, or troubleshooting content. |
 | [Vulnerability management in Defender CSPM](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-forty-seven) | 0.25 | Vulnerability management updates and usage of attack path and Cloud Security Explorer; high-level feature usage without specific numeric thresholds or configs. |
 | [About Data Security Posture Management](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-data-security-posture) | 0.24 | Data security posture management overview; describes challenges and high-level capabilities without indicating specific configuration settings or limits. |
 | [Microsoft Cloud Security Benchmark (MCSB)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-regulatory-compliance) | 0.22 | Explains Microsoft cloud security benchmark and how it is applied; summary suggests conceptual mapping of standards, not concrete configuration or troubleshooting content. |
@@ -532,6 +536,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud covering integr
 | [Overview of Defender for Cloud in Defender portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/defender-for-cloud-defender-portal) | 0.20 | Overview of Defender for Cloud in Defender portal; navigation and conceptual description, no detailed configs or limits. |
 | [Protect VMs](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-protect-resources) | 0.20 | Tutorial for enabling JIT access and application control; step-by-step usage, not deep configuration, limits, or troubleshooting content. |
 | [Protecting containers in GCP with Defender for Containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-ten) | 0.20 | Protecting containers in GCP episode mentions architecture and onboarding but summary does not show concrete configuration parameters or limits. |
+| [Serverless protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/serverless-protection) | 0.20 | Page appears to be a conceptual/marketing-style overview of Defender for Cloud serverless protection (what it is, what resources it covers). The summary does not indicate presence of specific RBAC roles, configuration parameters, limits, error codes, or decision matrices. Likely no product-specific expert details as defined by the sub-skill types. |
 | [Threat landscape for containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-eleven) | 0.20 | Threat landscape and detections episode is about attack evolution and detections; summary does not show structured troubleshooting or configuration details. |
 | [What is Microsoft Defender for Cloud?](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) | 0.20 | High-level product overview of Defender for Cloud; primarily conceptual CNAPP/CSPM/CWPP description without concrete limits, configs, or error mappings. |
 | [Lessons learned from the field](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-six) | 0.15 | Lessons from the field episode is experience- and scenario-focused; summary does not indicate structured best-practices with product-specific configs or numeric guidance. |

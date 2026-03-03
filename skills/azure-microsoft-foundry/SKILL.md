@@ -16,21 +16,23 @@ This skill provides expert guidance for Microsoft Foundry. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L41 | Troubleshooting Foundry issues: Azure Marketplace purchase/deployment problems, recovering Agent Service after data/resource loss, and known platform bugs with workarounds. |
-| Best Practices | L42-L56 | Best practices for prompts, safety, tools, fine-tuning (incl. vision), synthetic data, and optimizing Azure OpenAI latency, throughput, traffic, and cost in Foundry. |
-| Decision Making | L57-L82 | Guidance on choosing and upgrading models, SDKs, and deployments, handling deprecations, data isolation, regions, and migrating between Azure OpenAI, GitHub Models, and Foundry services. |
-| Architecture & Design Patterns | L83-L88 | Designing resilient Foundry solutions, including high availability patterns, redundancy, and disaster recovery strategies for Foundry Agent Service and project architectures. |
-| Limits & Quotas | L89-L105 | Quotas, limits, and capacity for Foundry models, agents, vector stores, evals, batch jobs, Sora, fine-tuning, PTU costs, and how to manage or increase Azure OpenAI-related quotas. |
-| Security | L106-L132 | Security, auth, and compliance for Foundry: Entra ID, RBAC, keys, private networking, policies, safety filters, data privacy, and securing agents, tools, and model access. |
-| Configuration | L133-L189 | Configuring and operating Foundry agents and models: tools, workflows, storage, security, tracing, evaluation, monitoring, rate limits, and Azure/Anthropic/OpenAI integration. |
-| Integrations & Coding Patterns | L190-L245 | Patterns and APIs for integrating Foundry agents with tools, data sources, Azure OpenAI, MCP, web search, speech, UI automation, tracing, and external apps/services. |
-| Deployment | L246-L262 | Deploying and managing Foundry agents/models in production: hosting options, infra provisioning (CLI/Bicep/Terraform), CI/CD and evaluations, M365/Teams integration, and outage recovery. |
+| Troubleshooting | L37-L43 | Troubleshooting Foundry issues: Azure Marketplace purchase/deployment problems, recovering Agent Service after data/resource loss, and known platform bugs with workarounds. |
+| Best Practices | L44-L58 | Best practices for prompts, safety, tools, fine-tuning (incl. vision), synthetic data, and optimizing Azure OpenAI latency, throughput, traffic, and cost in Foundry. |
+| Decision Making | L59-L84 | Guidance on choosing and upgrading models, SDKs, and deployments, handling deprecations, data isolation, regions, and migrating between Azure OpenAI, GitHub Models, and Foundry services. |
+| Architecture & Design Patterns | L85-L90 | Designing resilient Foundry solutions, including high availability patterns, redundancy, and disaster recovery strategies for Foundry Agent Service and project architectures. |
+| Limits & Quotas | L91-L107 | Quotas, limits, and capacity for Foundry models, agents, vector stores, evals, batch jobs, Sora, fine-tuning, PTU costs, and how to manage or increase Azure OpenAI-related quotas. |
+| Security | L108-L134 | Security, auth, and compliance for Foundry: Entra ID, RBAC, keys, private networking, policies, safety filters, data privacy, and securing agents, tools, and model access. |
+| Configuration | L135-L191 | Configuring and operating Foundry agents and models: tools, workflows, storage, security, tracing, evaluation, monitoring, rate limits, and Azure/Anthropic/OpenAI integration. |
+| Integrations & Coding Patterns | L192-L247 | Patterns and APIs for integrating Foundry agents with tools, data sources, Azure OpenAI, MCP, web search, speech, UI automation, tracing, and external apps/services. |
+| Deployment | L248-L264 | Deploying and managing Foundry agents/models in production: hosting options, infra provisioning (CLI/Bicep/Terraform), CI/CD and evaluations, M365/Teams integration, and outage recovery. |
 
 ### Troubleshooting
 | Topic | URL |

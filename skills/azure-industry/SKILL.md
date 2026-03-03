@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Industry. Covers troubleshooting, 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Diagnosing and resolving performance issues in the Community Training web and mobile apps, including slow load times, timeouts, and general responsiveness problems. |
-| Limits & Quotas | L37-L41 | List of UI languages supported by Azure Community Training, including availability details and localization considerations. |
-| Security | L42-L55 | Configuring Community Training security: auth methods, Azure AD/B2C login types, roles/admin permissions, access restrictions, backups, hosting constraints, and content access control. |
-| Configuration | L56-L66 | Configuring Microsoft Community Training portals: branding, homepage, languages, learner profile fields, role capabilities, and course completion certificate setup and templates. |
-| Integrations & Coding Patterns | L67-L73 | Guides for extending Community Training with integrations, especially embedding it in Microsoft Teams, customizing the Teams app/tab name/icon, and related extensibility FAQs. |
-| Deployment | L74-L80 | Guides for deploying, configuring, and uninstalling Microsoft Community Training on Azure, including prerequisites and building/publishing the Android mobile app. |
+| Troubleshooting | L34-L38 | Diagnosing and resolving performance issues in the Community Training web and mobile apps, including slow load times, timeouts, and general responsiveness problems. |
+| Limits & Quotas | L39-L43 | List of UI languages supported by Azure Community Training, including availability details and localization considerations. |
+| Security | L44-L57 | Configuring Community Training security: auth methods, Azure AD/B2C login types, roles/admin permissions, access restrictions, backups, hosting constraints, and content access control. |
+| Configuration | L58-L68 | Configuring Microsoft Community Training portals: branding, homepage, languages, learner profile fields, role capabilities, and course completion certificate setup and templates. |
+| Integrations & Coding Patterns | L69-L75 | Guides for extending Community Training with integrations, especially embedding it in Microsoft Teams, customizing the Teams app/tab name/icon, and related extensibility FAQs. |
+| Deployment | L76-L82 | Guides for deploying, configuring, and uninstalling Microsoft Community Training on Azure, including prerequisites and building/publishing the Android mobile app. |
 
 ### Troubleshooting
 | Topic | URL |

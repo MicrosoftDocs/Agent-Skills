@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Security. Covers troubleshooting, 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
-| Best Practices | L39-L57 | Security hardening checklists and patterns for Azure IaaS/PaaS: identity, network, data encryption, secrets, DNS, and app/database/service configurations to reduce attack surface. |
-| Decision Making | L58-L62 | Guidance on choosing between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on security, compliance, key management, and workload requirements. |
-| Limits & Quotas | L63-L67 | Which Azure services support customer-managed encryption keys, and how to determine CMK capabilities and options across different Azure resources |
-| Security | L68-L97 | Security best practices for Azure workloads: threat modeling mitigations, AKS image validation, ransomware defense, incident response, data protection, certificates, and operational/SQL security features |
-| Configuration | L98-L106 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
-| Integrations & Coding Patterns | L107-L111 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
-| Deployment | L112-L118 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
+| Troubleshooting | L36-L40 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
+| Best Practices | L41-L59 | Security hardening checklists and patterns for Azure IaaS/PaaS: identity, network, data encryption, secrets, DNS, and app/database/service configurations to reduce attack surface. |
+| Decision Making | L60-L64 | Guidance on choosing between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on security, compliance, key management, and workload requirements. |
+| Limits & Quotas | L65-L69 | Which Azure services support customer-managed encryption keys, and how to determine CMK capabilities and options across different Azure resources |
+| Security | L70-L99 | Security best practices for Azure workloads: threat modeling mitigations, AKS image validation, ransomware defense, incident response, data protection, certificates, and operational/SQL security features |
+| Configuration | L100-L108 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
+| Integrations & Coding Patterns | L109-L113 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
+| Deployment | L114-L120 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
 
 ### Troubleshooting
 | Topic | URL |

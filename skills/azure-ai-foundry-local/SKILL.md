@@ -16,16 +16,18 @@ This skill provides expert guidance for Azure AI Foundry Local. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L30-L34 | Troubleshooting setup and runtime issues when installing and running Azure AI Foundry Local specifically on Windows Server 2025. |
-| Best Practices | L35-L39 | Best practices for configuring, securing, and operating Foundry Local, plus troubleshooting setup, connectivity, performance, and common runtime or deployment issues. |
-| Configuration | L40-L46 | Installing and configuring Foundry Local, compiling Hugging Face models with Olive, and using the Foundry Local CLI commands and options |
-| Integrations & Coding Patterns | L47-L58 | Patterns and code samples for calling Foundry Local via REST/SDKs, OpenAI-compatible clients, LangChain, Open WebUI, tool calling, transcription, and the Model Catalog API. |
+| Troubleshooting | L32-L36 | Troubleshooting setup and runtime issues when installing and running Azure AI Foundry Local specifically on Windows Server 2025. |
+| Best Practices | L37-L41 | Best practices for configuring, securing, and operating Foundry Local, plus troubleshooting setup, connectivity, performance, and common runtime or deployment issues. |
+| Configuration | L42-L48 | Installing and configuring Foundry Local, compiling Hugging Face models with Olive, and using the Foundry Local CLI commands and options |
+| Integrations & Coding Patterns | L49-L60 | Patterns and code samples for calling Foundry Local via REST/SDKs, OpenAI-compatible clients, LangChain, Open WebUI, tool calling, transcription, and the Model Catalog API. |
 
 ### Troubleshooting
 | Topic | URL |
