@@ -70,7 +70,7 @@ stages:
               targetType: inline
               script: |
                 set -e
-                cd $(Build.SourcesDirectory)/$(docs2SkillsRepoName)
+                cd $(Build.SourcesDirectory)/Learn.Docs2AgentSkills
                 pip install --upgrade pip
                 pip install -r requirements.txt
 
@@ -85,7 +85,7 @@ stages:
                 set -e
 
                 # Define paths
-                ADO_REPO="$(Build.SourcesDirectory)/$(docs2SkillsRepoName)"
+                ADO_REPO="$(Build.SourcesDirectory)/Learn.Docs2AgentSkills"
                 GITHUB_REPO="$(Build.SourcesDirectory)/$(basename $(Build.Repository.Uri) .git)"
                 PRODUCTS_DIR="$GITHUB_REPO/products"
                 SKILLS_DIR="$GITHUB_REPO/skills"
