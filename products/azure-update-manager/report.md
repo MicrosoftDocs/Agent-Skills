@@ -23,6 +23,12 @@ category_descriptions:
     scenarios.
   decision-making: Planning patch strategies across subscriptions and guidance for
     migrating patch management from Configuration Manager to Azure Update Manager
+skill_description: Expert knowledge for Azure Update Manager development including
+  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Update Manager applications. Not for Azure Automation (use azure-automation),
+  Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource
+  Manager (use azure-resource-manager).
 ---
 # Azure Update Manager Crawl Report
 

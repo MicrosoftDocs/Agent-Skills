@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-04'
 category_descriptions:
   security: Tenant-wide portal security policies, RBAC-based dashboard sharing, and
     managing/protecting access to Azure via Intune MAM and the Azure mobile app.
@@ -10,6 +10,11 @@ category_descriptions:
     needed to reliably access and use the Azure portal across different platforms.
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
+skill_description: Expert knowledge for Azure Portal development including troubleshooting,
+  limits & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Portal applications. Not for Azure Cloud Shell (use azure-cloud-shell), Azure
+  Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy),
+  Azure Monitor (use azure-monitor).
 ---
 # Azure Portal Crawl Report
 
@@ -23,8 +28,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 30
+- **Updated Pages**: 1
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -39,6 +44,11 @@ category_descriptions:
 | *(Unclassified)* | 18 | 60.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [View and filter resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views)
+  - Updated: 2025-05-19T17:03:00.000Z → 2026-03-03T18:26:00.000Z
 
 ## Classified Pages
 
@@ -75,7 +85,7 @@ category_descriptions:
 | [Find subscription and tenant IDs](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) | 0.20 | Explains where to find subscription and tenant IDs; procedural UI guidance without product-specific parameters or limits. |
 | [Learn about Azure](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/learn-training) | 0.20 | Shows how to access Microsoft Learn content from the mobile app; educational navigation, not technical configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/overview) | 0.20 | Overview of Azure mobile app capabilities; no detailed configuration parameters, limits, or troubleshooting mappings indicated. |
-| [View and filter resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views) | 0.20 | Shows how to filter and view resources; no specific limits, configs, or troubleshooting mappings. |
 | [Add, remove, and sort favorites](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-add-remove-sort-favorites) | 0.10 | Explains adding/removing favorites in the portal; purely UI usage without expert-level technical details. |
 | [Get started with Azure Quickstart Center](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-quickstart-center) | 0.10 | Guided getting-started experience description; no detailed configuration parameters, limits, or decision matrices. |
+| [View and filter resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views) | 0.10 | Page describes how to view and filter resources in the Azure portal (UI usage). It does not contain numeric limits, configuration parameter tables, error codes, security roles, or decision matrices. This is general portal usage guidance, not product-specific expert knowledge as defined. |
 | [What is the Azure portal?](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview) | 0.10 | High-level overview of the Azure portal UI and capabilities; no product-specific limits, configs, or detailed patterns. |

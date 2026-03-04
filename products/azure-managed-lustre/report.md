@@ -20,6 +20,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Azure Managed Lustre deployment failures
     and performance issues, including cluster provisioning errors, throughput/latency
     problems, and tuning guidance.
+skill_description: Expert knowledge for Azure Managed Lustre development including
+  troubleshooting, best practices, architecture & design patterns, limits & quotas,
+  security, configuration, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Managed Lustre applications. Not for Azure HPC Cache
+  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual
+  Machines (use azure-virtual-machines).
 ---
 # Azure Managed Lustre Crawl Report
 

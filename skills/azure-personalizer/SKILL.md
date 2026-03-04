@@ -1,6 +1,6 @@
 ---
 name: azure-personalizer
-description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Personalizer applications.
+description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Personalizer applications. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure AI Metrics Advisor (use azure-metrics-advisor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure AI Personalizer. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Diagnosing and resolving common Azure Personalizer issues, including configuration, learning behavior, low-quality recommendations, API errors, and integration or data/feature problems. |
-| Decision Making | L37-L41 | Guidance on when to use single-slot vs multi-slot Personalizer, comparing scenarios, behavior, and design tradeoffs for different personalization needs. |
-| Limits & Quotas | L42-L46 | Guidance on scaling Personalizer for high-traffic workloads, capacity planning, throughput/latency expectations, and performance considerations under Azure limits and quotas. |
-| Security | L47-L52 | Configuring encryption at rest (including customer-managed keys) and controlling data collection, storage, and privacy settings for Azure Personalizer. |
-| Configuration | L53-L62 | Configuring Personalizer’s learning behavior: policies, hyperparameters, exploration, apprentice mode, explainability, model export, and learning loop settings. |
-| Integrations & Coding Patterns | L63-L66 | Using the Personalizer local inference SDK for low-latency, offline/edge scenarios, including setup, integration patterns, and best practices for calling the model locally. |
+| Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Personalizer issues, including configuration, learning behavior, low-quality recommendations, API errors, and integration or data/feature problems. |
+| Decision Making | L39-L43 | Guidance on when to use single-slot vs multi-slot Personalizer, comparing scenarios, behavior, and design tradeoffs for different personalization needs. |
+| Limits & Quotas | L44-L48 | Guidance on scaling Personalizer for high-traffic workloads, capacity planning, throughput/latency expectations, and performance considerations under Azure limits and quotas. |
+| Security | L49-L54 | Configuring encryption at rest (including customer-managed keys) and controlling data collection, storage, and privacy settings for Azure Personalizer. |
+| Configuration | L55-L64 | Configuring Personalizer’s learning behavior: policies, hyperparameters, exploration, apprentice mode, explainability, model export, and learning loop settings. |
+| Integrations & Coding Patterns | L65-L68 | Using the Personalizer local inference SDK for low-latency, offline/edge scenarios, including setup, integration patterns, and best practices for calling the model locally. |
 
 ### Troubleshooting
 | Topic | URL |

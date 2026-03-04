@@ -15,7 +15,7 @@ category_descriptions:
     workloads and architecture needs
   best-practices: Best-practice patterns for designing, securing, scaling, operating,
     and monitoring Azure apps and infrastructure, including AKS, APIs, networking,
-    IoT, SAP, Event Hubs, and generative AI.
+    IoT, SAP, Event Hubs, and generative AI workloads
   solution-ideas: End-to-end solution patterns for AI, data, analytics, IoT, security,
     SAP, and DevSecOps on Azure, showing how to combine services into complete architectures
     and workflows.
@@ -28,6 +28,11 @@ category_descriptions:
   architecture-styles: 'Comparisons and design guidance for Azure app styles: big
     compute, big data, event-driven, microservices, N-tier, and web-queue-worker,
     with when-to-use and implementation patterns.'
+skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
+  Covers reference architectures, solution ideas, design patterns, technology choices,
+  architecture styles, best practices, anti-patterns, example workloads, and migration
+  guides. Use when selecting architecture patterns, choosing Azure services, or implementing
+  production-ready solutions.
 ---
 # Azure Architecture Crawl Report
 
@@ -36,13 +41,13 @@ category_descriptions:
 - **Total Pages**: 443
 - **Fetched**: 443
 - **Fetch Failed**: 0
-- **Classified**: 335
-- **Unclassified**: 108
+- **Classified**: 336
+- **Unclassified**: 107
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 442
+- **Updated Pages**: 4
+- **Unchanged**: 439
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -52,21 +57,27 @@ category_descriptions:
 |------|-------|------------|
 | anti-patterns | 11 | 2.5% |
 | architecture-styles | 7 | 1.6% |
-| best-practices | 60 | 13.5% |
+| best-practices | 62 | 14.0% |
 | design-patterns | 51 | 11.5% |
-| example-workloads | 65 | 14.7% |
+| example-workloads | 64 | 14.4% |
 | migration-guides | 30 | 6.8% |
 | reference-architectures | 51 | 11.5% |
 | solution-ideas | 29 | 6.5% |
 | technology-choices | 31 | 7.0% |
-| *(Unclassified)* | 108 | 24.4% |
+| *(Unclassified)* | 107 | 24.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-02-24T06:06:00.000Z → 2026-03-03T06:03:00.000Z
+- [Host name preservation](https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation)
+  - Updated: 2025-10-30T05:03:00Z → 2026-03-03T20:38:00.000Z
+- [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape)
+  - Updated: 2025-10-30T05:03:00Z → 2026-03-03T20:38:00Z
+- [Inbound and outbound internet connections for SAP on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound)
+  - Updated: 2025-10-30T05:03:00Z → 2026-03-03T20:38:00Z
+- [Use the Azure Governance Visualizer](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-governance-visualizer-accelerator)
+  - Updated: 2025-10-30T05:03:00Z → 2026-03-03T20:38:00Z
 
 ## Classified Pages
 
@@ -206,6 +217,7 @@ category_descriptions:
 | [Baseline web application with zone redundancy](https://learn.microsoft.com/en-us/azure/architecture/web-apps/app-service/architectures/baseline-zone-redundant) | reference-architectures | 0.86 | Baseline reference architecture with Application Gateway, WAF, Private Link, and PaaS integration; production-ready with detailed network/security design. |
 | [Certificate lifecycle management on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/certificate-lifecycle/) | example-workloads | 0.86 | example-scenario/certificate-lifecycle URL; detailed workflow and infrastructure for automating renewals with nonintegrated CAs using Key Vault and other Azure components. |
 | [Extend on-premises AD FS to Azure](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adfs) | reference-architectures | 0.86 | Reference-architectures URL with secure hybrid network and AD FS federation design, including Azure components and trust configuration. |
+| [Host name preservation](https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation) | best-practices | 0.86 | The page is under best-practices/, gives concrete DO/DON'T guidance for preserving the original HTTP host name when using reverse proxies with Azure services, and discusses specific implementation behaviors (cookies, redirects, authentication issues). This is actionable, service-specific guidance that goes beyond generic concepts and fits the best-practices category. |
 | [On-premises AD domains with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad) | reference-architectures | 0.86 | Identity reference architecture for hybrid integration of AD and Entra ID with best-practice topology and synchronization guidance. |
 | [Performance and scale](https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/performance-scale) | best-practices | 0.86 | Focused on performance and scalability tuning for Event Hubs with Functions, including concrete configuration and deployment recommendations. |
 | [Real-time monitoring and observable systems for media](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/monitoring/monitoring-observable-systems-media) | example-workloads | 0.86 | example-scenario/monitoring URL; media-industry-specific telemetry and monitoring solution using Event Hubs, Fabric eventstreams, and Data Activator with detailed architecture and implementation steps. |
@@ -233,7 +245,6 @@ category_descriptions:
 | [Deployment and testing](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-deploy-test) | reference-architectures | 0.85 | Details CI/CD, stamp deployment, and zero-downtime strategies as part of mission-critical reference architecture. |
 | [Extract and map information from unstructured content](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multi-modal-content-processing) | solution-ideas | 0.85 | Explicitly a solution idea for multimodal content processing with architecture diagram and scenario-specific guidance. |
 | [Generate documents from your data](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/generate-documents-from-your-data) | solution-ideas | 0.85 | Solution idea for document generation using retrieval, summarization, and generation; conceptual multi-service architecture. |
-| [Host name preservation](https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation) | best-practices | 0.85 | Prescriptive guidance on preserving host headers across reverse proxies with concrete configuration implications, under best-practices/. |
 | [Identity and access management](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/workload-identity) | migration-guides | 0.85 | Deep comparison of workload identity and access between EKS and AKS, guiding migration and design decisions. |
 | [Image classification](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/intelligent-apps-image-processing) | solution-ideas | 0.85 | Marked as a solution idea; shows how multiple Azure services (Computer Vision, Functions, etc.) work together for image processing. |
 | [Load balancing options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview) | technology-choices | 0.85 | Load-balancing-overview under technology-choices/ that compares Azure load balancing services and when to use each, including trade-offs. |
@@ -265,7 +276,6 @@ category_descriptions:
 | [Hub-spoke topology with Virtual WAN](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke-virtual-wan-architecture) | reference-architectures | 0.82 | Detailed architecture using Virtual WAN, ExpressRoute/VPN, and peering; alternative to other reference topologies with deployment guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/architecture/gcp-professional/) | migration-guides | 0.82 | gcp-professional root article explaining Azure accounts, platform, and services to GCP experts. It’s explicitly cross-cloud onboarding/migration guidance with platform mapping and differences. |
 | [Secure research for regulated data](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/secure-compute-for-research) | example-workloads | 0.82 | AI/ML architecture article with detailed secure compute environment for researchers, including network isolation, identity, and data protection specifics. |
-| [Use the Azure Governance Visualizer](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-governance-visualizer-accelerator) | example-workloads | 0.82 | Landing-zones deployment guidance with concrete automation steps (GitHub workflows, output handling) for a specific governance tool—detailed implementation rather than conceptual overview. |
 | [Apache Kafka migration to Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/hadoop/apache-kafka-migration) | migration-guides | 0.80 | Explicit migration guide for Kafka to Azure using HDInsight and Event Hubs, including service mapping and migration considerations. |
 | [Azure Virtual Desktop for Azure Local](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-workload-virtual-desktop) | example-workloads | 0.80 | Workload-specific Azure Virtual Desktop architecture on Azure Local with design considerations and deployment guidance beyond generic AVD docs. |
 | [Azure files secured by AD DS](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/azure-files-on-premises-authentication) | example-workloads | 0.80 | Example-scenario for securing Azure Files via on-premises AD DS over private endpoints with detailed hybrid identity and networking configuration. |
@@ -317,12 +327,14 @@ category_descriptions:
 | [Deploy an Azure Arc-enabled SQL managed instance for DR](https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-sql-managed-instance-disaster-recovery) | example-workloads | 0.78 | Scenario-specific Arc-enabled SQL MI disaster recovery architecture across two non-Azure sites with implementation guidance based on ArcBox for DataOps. |
 | [Enhanced-security hybrid: mobile access](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-mobile) | example-workloads | 0.78 | Scenario-specific architectures for Outlook mobile clients accessing Exchange with Entra MFA; detailed hybrid identity and messaging flows. |
 | [Enhanced-security hybrid: web access](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-web) | example-workloads | 0.78 | Example-scenario for protecting Outlook on the web and ECP in hybrid Exchange deployments using Entra MFA and related components. |
+| [Inbound and outbound internet connections for SAP on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound) | best-practices | 0.78 | The article offers proven practices for securing inbound and outbound internet connectivity for SAP on Azure infrastructure. It focuses on actionable security and networking guidance (do/don’t style recommendations) for a specific workload scenario, which aligns with the best-practices sub-skill type rather than patterns, solution ideas, or reference architectures. |
 | [Manage Microsoft 365 with DevOps](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops) | example-workloads | 0.78 | Example-scenario for Microsoft365DSC and Azure DevOps with concrete workflow and tooling details for tracking and approving tenant configuration changes. |
 | [Massive-scale Virtual WAN architecture design](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/massive-scale-azure-architecture) | example-workloads | 0.78 | Example workload for exceptionally large deployments with multiple hubs per region and redundant ExpressRoute; deep, scenario-specific network design. |
 | [Migrate an Oracle database to OD@A Exadata Database Service](https://learn.microsoft.com/en-us/azure/architecture/databases/idea/migrate-oracle-odaa-exadata) | migration-guides | 0.78 | Prescriptive migration using Oracle ZDM from on-premises Exadata to Oracle Database@Azure; contains tool-specific and Azure-networking guidance. |
 | [Migrate an Oracle database to an Azure virtual machine](https://learn.microsoft.com/en-us/azure/architecture/databases/idea/migrate-oracle-azure-iaas) | migration-guides | 0.78 | Step-by-step migration scenario using Oracle Data Guard and Azure networking; includes concrete topology and operational guidance beyond generic concepts. |
 | [Network topologies and security](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/private-clusters) | migration-guides | 0.78 | In the aws-professional/eks-to-aks path, compares private cluster and networking options between EKS and AKS with concrete security configuration guidance. This is expert, migration-oriented content for AWS users moving to Azure. |
 | [Protect APIs by using Application Gateway and API Management](https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis) | best-practices | 0.78 | Applies Gateway Routing pattern with concrete configuration of App Gateway and APIM for API security; includes prescriptive security and routing guidance. |
+| [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | best-practices | 0.78 | The page provides concrete recommendations and proven practices for architecting a secure, high-performing, and resilient SAP landscape on Azure with a focus on network design. This is implementation-focused guidance (what to do and how) for a specific complex workload rather than a generic overview, fitting the best-practices category more than the others listed. |
 | [Storage options](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/storage) | migration-guides | 0.78 | Compares storage capabilities and workload data options between EKS and AKS, with Azure-specific storage choices. This is expert, cross-cloud migration guidance under aws-professional/eks-to-aks. |
 | [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway) | example-workloads | 0.78 | example-scenario/gateway URL; describes concrete use of Azure Firewall, App Gateway, DDoS, and related services with best practices for securing VNets. |
 | [Cross-tenant secure access to apps](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints) | example-workloads | 0.76 | Guide for securing cross-tenant access to web and function apps using private endpoints with detailed configuration and design considerations. |
@@ -489,7 +501,6 @@ category_descriptions:
 | [General mainframe refactor to Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/general-mainframe-refactor) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [IBM z/OS migration with Avanade AMT](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [IBM z/OS online transaction processing](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/ibm-zos-online-transaction-processing-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
-| [Inbound and outbound internet connections for SAP on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Integrate IBM MQs with Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/integrate-ibm-message-queues-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Manage virtual machine compliance](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/security/virtual-machine-compliance) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Micro Focus Enterprise Server on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/micro-focus-server) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
@@ -510,7 +521,6 @@ category_descriptions:
 | [SAP BW/4HANA in Linux on Azure](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [SAP HANA scale-up on Linux](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-hana-for-linux-virtual-machines) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [SAP deployment using an Oracle database](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/sap-production) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
-| [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Solaris emulator on Azure VMs](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/solaris-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Teamcenter with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/manufacturing/teamcenter-plm-netapp-files) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Unisys ClearPath Forward OS 2200 enterprise server virtualization on Azure](https://learn.microsoft.com/en-us/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
@@ -518,5 +528,6 @@ category_descriptions:
 | [Unisys Dorado migration](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/migrate-unisys-dorado-mainframe-apps-with-astadia-micro-focus) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Unisys mainframe migration with Avanade AMT](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/migration/unisys-mainframe-migration) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [Use Azure NetApp Files to deploy IBM Power in Skytap on Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/mainframe/deploy-ibm-power-workloads) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
+| [Use the Azure Governance Visualizer](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-governance-visualizer-accelerator) | - | Deployment guidance for Azure Governance Visualizer is a tool-specific implementation article under landing-zones/, not one of the defined architecture sub-skill types (no patterns/, solution-ideas/, reference-architectures/, best-practices/, etc. in path). It focuses on automating runs and outputs rather than reusable cloud architecture, patterns, or technology choices. |
 | [VM baseline](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [VM baseline in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline-landing-zone) | - | Parse error: Expecting value: line 1 column 1 (char 0) |

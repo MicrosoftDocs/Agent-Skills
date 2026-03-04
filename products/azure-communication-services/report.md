@@ -28,6 +28,13 @@ category_descriptions:
   architecture-patterns: Designing scalable contact center solutions with ACS and
     patterns for integrating ACS with ExpressRoute for secure, private connectivity
     and network architecture.
+skill_description: Expert knowledge for Azure Communication Services development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Communication Services applications.
+  Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use
+  azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure
+  Web PubSub (use azure-web-pubsub).
 ---
 # Azure Communication Services Crawl Report
 

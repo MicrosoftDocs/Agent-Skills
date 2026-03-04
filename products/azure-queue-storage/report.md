@@ -13,6 +13,10 @@ category_descriptions:
   integrations: Client library how-tos for using Azure Queue Storage with .NET, Java,
     JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and
     common coding patterns.
+skill_description: Expert knowledge for Azure Queue Storage development including
+  best practices, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Queue Storage applications.
+  Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure Queue Storage Crawl Report
 

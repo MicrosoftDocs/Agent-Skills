@@ -12,6 +12,12 @@ category_descriptions:
     patterns.'
   limits-quotas: Supported languages and feature availability for Immersive Reader
     (e.g., which languages work with read-aloud, translation, and other capabilities).
+skill_description: Expert knowledge for Azure AI Immersive Reader development including
+  best practices, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader
+  applications. Not for Azure AI services (use azure-ai-services), Azure AI Language
+  (use azure-language-service), Azure Translator (use azure-translator), Azure AI
+  Speech (use azure-speech).
 ---
 # Azure AI Immersive Reader Crawl Report
 

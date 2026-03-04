@@ -19,6 +19,12 @@ category_descriptions:
   architecture-patterns: Architectural guidance for integrating Palo Alto Cloud NGFW
     with Azure Application Gateway, including network design, routing, security, and
     deployment patterns.
+skill_description: Expert knowledge for Azure Partner Solutions development including
+  troubleshooting, decision making, architecture & design patterns, security, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Azure Partner Solutions applications. Not for Azure Industry (use azure-industry),
+  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
+  azure-lighthouse), Azure Security (use azure-security).
 ---
 # Azure Partner Solutions Crawl Report
 

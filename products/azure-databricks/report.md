@@ -28,6 +28,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Databricks errors: compute startup/termination,
     SQL/runtime exceptions, Spark performance, connectors/ingestion, pipelines, model
     serving, and tooling (CLI, VS Code, Terraform).'
+skill_description: Expert knowledge for Azure Databricks development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Databricks applications. Not for Azure
+  Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight),
+  Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
 ---
 # Azure Databricks Crawl Report
 

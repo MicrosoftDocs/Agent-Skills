@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: Service Bus entity size and count limits, connection and throughput
     quotas, and how throttling works, including thresholds, causes, and mitigation
     strategies.
+skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Service Bus applications. Not for Azure
+  Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage
+  (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
 ---
 # Azure Service Bus Crawl Report
 

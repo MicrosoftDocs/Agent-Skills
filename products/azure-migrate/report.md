@@ -28,6 +28,13 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure Migrate issues: appliance setup, discovery/assessment
     errors, replication and migration failures, connectivity, performance, OS upgrade,
     and web app migration problems.'
+skill_description: Expert knowledge for Azure Migrate development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Migrate applications. Not for Azure Database
+  Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery),
+  Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual
+  Machines (use azure-sql-virtual-machines).
 ---
 # Azure Migrate Crawl Report
 

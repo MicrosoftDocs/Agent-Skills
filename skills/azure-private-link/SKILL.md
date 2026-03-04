@@ -1,6 +1,6 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Private Link applications.
+description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Private Link applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Private Link. Covers troubleshooti
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Diagnosing and fixing Azure Private Endpoint and Private Link service connectivity issues, including DNS, network routing, and common misconfiguration problems. |
-| Best Practices | L39-L43 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
-| Decision Making | L44-L49 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
-| Architecture & Design Patterns | L50-L54 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
-| Limits & Quotas | L55-L60 | Regional availability of Private Link/Endpoints, supported services, and how to view or request increases to per‑VNet and global Private Endpoint limits |
-| Security | L61-L67 | Configuring RBAC for Private Link/Private Endpoints and Network Security Perimeters, and inspecting/controlling Private Endpoint traffic with Azure Firewall. |
-| Configuration | L68-L80 | Configuring Private Link endpoints/services: subnet and NSG policies, ASGs, DNS zones, SNAT bypass, NSPs, and monitoring/diagnostic logs for private connectivity. |
+| Troubleshooting | L35-L40 | Diagnosing and fixing Azure Private Endpoint and Private Link service connectivity issues, including DNS, network routing, and common misconfiguration problems. |
+| Best Practices | L41-L45 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
+| Decision Making | L46-L51 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
+| Architecture & Design Patterns | L52-L56 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
+| Limits & Quotas | L57-L62 | Regional availability of Private Link/Endpoints, supported services, and how to view or request increases to per‑VNet and global Private Endpoint limits |
+| Security | L63-L69 | Configuring RBAC for Private Link/Private Endpoints and Network Security Perimeters, and inspecting/controlling Private Endpoint traffic with Azure Firewall. |
+| Configuration | L70-L82 | Configuring Private Link endpoints/services: subnet and NSG policies, ASGs, DNS zones, SNAT bypass, NSPs, and monitoring/diagnostic logs for private connectivity. |
 
 ### Troubleshooting
 | Topic | URL |

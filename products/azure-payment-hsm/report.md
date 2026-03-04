@@ -18,6 +18,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Payment HSM deployment issues,
     including provisioning failures, configuration problems, and known platform limitations
     or workarounds.
+skill_description: Expert knowledge for Azure Payment Hsm development including troubleshooting,
+  best practices, decision making, architecture & design patterns, security, and configuration.
+  Use when building, debugging, or optimizing Azure Payment Hsm applications. Not
+  for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
+  Azure Cloud Hsm (use azure-cloud-hsm).
 ---
 # Azure Payment Hsm Crawl Report
 

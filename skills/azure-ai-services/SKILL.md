@@ -1,6 +1,6 @@
 ---
 name: azure-ai-services
-description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications.
+description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications. Not for Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure AI Custom Vision (use azure-custom-vision).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure AI services. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and fixing common Content Understanding issues, including model errors, data ingestion problems, configuration mistakes, and troubleshooting steps for failed analyses. |
-| Best Practices | L39-L44 | Best practices for Azure AI Content Understanding: designing extraction workflows, tuning models, improving document parsing accuracy, and handling complex or low‑quality documents. |
-| Decision Making | L45-L54 | Guidance on choosing pricing tiers, comparing Content Understanding vs Document Intelligence vs LLMs, selecting standard vs pro modes, Foundry vs Studio, migration steps, and cost estimation. |
-| Limits & Quotas | L55-L62 | Rate limits, quotas, and list-size limits for Foundry autoscale and Content Moderator (image/term lists), plus service quotas for Content Understanding. |
-| Security | L63-L78 | Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance, and secure analyzer access. |
-| Configuration | L79-L97 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
-| Integrations & Coding Patterns | L98-L108 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
-| Deployment | L109-L116 | How to package and run Foundry tools/containers on Azure (ACI, Docker Compose, disconnected), and deploy Foundry resources using Azure AI containers and ARM templates |
+| Troubleshooting | L36-L40 | Diagnosing and fixing common Content Understanding issues, including model errors, data ingestion problems, configuration mistakes, and troubleshooting steps for failed analyses. |
+| Best Practices | L41-L46 | Best practices for Azure AI Content Understanding: designing extraction workflows, tuning models, improving document parsing accuracy, and handling complex or low‑quality documents. |
+| Decision Making | L47-L56 | Guidance on choosing pricing tiers, comparing Content Understanding vs Document Intelligence vs LLMs, selecting standard vs pro modes, Foundry vs Studio, migration steps, and cost estimation. |
+| Limits & Quotas | L57-L64 | Rate limits, quotas, and list-size limits for Foundry autoscale and Content Moderator (image/term lists), plus service quotas for Content Understanding. |
+| Security | L65-L80 | Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance, and secure analyzer access. |
+| Configuration | L81-L99 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
+| Integrations & Coding Patterns | L100-L110 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
+| Deployment | L111-L118 | How to package and run Foundry tools/containers on Azure (ACI, Docker Compose, disconnected), and deploy Foundry resources using Azure AI containers and ARM templates |
 
 ### Troubleshooting
 | Topic | URL |

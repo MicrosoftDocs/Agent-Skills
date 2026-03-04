@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Foundry issues: compute sessions, prompt
     flows, deployments, monitoring, private endpoints, Azure OpenAI fine-tuning, Marketplace
     access, and known bugs/workarounds.'
+skill_description: Expert knowledge for Azure Foundry Classic development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Foundry Classic applications.
+  Not for Azure AI Foundry Local (use azure-ai-foundry-local), Microsoft Foundry (use
+  azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure Foundry Classic Crawl Report
 

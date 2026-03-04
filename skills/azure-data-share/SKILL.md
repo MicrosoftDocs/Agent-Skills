@@ -1,6 +1,6 @@
 ---
 name: azure-data-share
-description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Data Share applications.
+description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Data Share applications. Not for Azure Data Box (use azure-data-box-family), Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory), Azure Open Datasets (use azure-open-datasets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Data Share. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and fixing Azure Data Share invitation issues, common error codes/messages, permission and configuration problems when sending or accepting shares |
-| Decision Making | L36-L40 | Guidance on estimating Azure Data Share costs, understanding pricing factors (shares, snapshots, storage), and planning budgets for data sharing scenarios. |
-| Security | L41-L47 | Managing access and security for Data Share: RBAC roles, permissions, invitations/recipients, and configuring security controls for shared datasets. |
-| Configuration | L48-L60 | Configuring Azure Data Share: adding datasets, mapping received data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics, and automating via PowerShell, ARM, and Bicep. |
-| Deployment | L61-L65 | Guides for deploying Azure Data Share across regions, including disaster recovery setup, regional failover, and moving Data Share accounts between Azure regions. |
+| Troubleshooting | L33-L37 | Diagnosing and fixing Azure Data Share invitation issues, common error codes/messages, permission and configuration problems when sending or accepting shares |
+| Decision Making | L38-L42 | Guidance on estimating Azure Data Share costs, understanding pricing factors (shares, snapshots, storage), and planning budgets for data sharing scenarios. |
+| Security | L43-L49 | Managing access and security for Data Share: RBAC roles, permissions, invitations/recipients, and configuring security controls for shared datasets. |
+| Configuration | L50-L62 | Configuring Azure Data Share: adding datasets, mapping received data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics, and automating via PowerShell, ARM, and Bicep. |
+| Deployment | L63-L67 | Guides for deploying Azure Data Share across regions, including disaster recovery setup, regional failover, and moving Data Share accounts between Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |

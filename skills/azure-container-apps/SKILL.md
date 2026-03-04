@@ -1,6 +1,6 @@
 ---
 name: azure-container-apps
-description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Apps applications.
+description: Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Container Apps applications. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances (use azure-container-instances), Azure App Service (use azure-app-service), Azure Spring Apps (use azure-spring-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Container Apps. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L49 | Diagnosing and fixing Container Apps issues: image pulls, container create/start, health probes, ports, storage mounts, OCI runtime, Java log levels, MCP servers, and using logs/debug console. |
-| Best Practices | L50-L56 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
-| Decision Making | L57-L72 | Guidance on choosing Container Apps plans, compute, GPUs, and hosting options, estimating costs, and planning/migrating environments from legacy setups or other platforms like Heroku/Functions |
-| Architecture & Design Patterns | L73-L80 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
-| Limits & Quotas | L81-L86 | Quota and limit rules for Container Apps (CPU/memory, environments, revisions, scale) and how to request increases when you hit platform or subscription limits. |
-| Security | L87-L121 | Authentication, authorization, TLS, identities, network lockdown, and best practices for securing Container Apps (identity providers, certs, mTLS, NSGs, firewalls, private endpoints, WAF). |
-| Configuration | L122-L169 | Configuring Container Apps environments, networking, ingress, scaling, revisions, storage, monitoring/logging, Dapr, Java features, and dynamic session settings via ARM, YAML, CLI, and portal. |
-| Integrations & Coding Patterns | L170-L196 | Patterns for connecting Container Apps to each other, Azure services, Spring apps, Dapr, KEDA, Front Door, and AI/agent frameworks (LangChain, LlamaIndex, Semantic Kernel, MCP). |
-| Deployment | L197-L206 | Guides for deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose and Functions deployment, Arc-enabled clusters, and self-hosted runners/jobs. |
+| Troubleshooting | L37-L51 | Diagnosing and fixing Container Apps issues: image pulls, container create/start, health probes, ports, storage mounts, OCI runtime, Java log levels, MCP servers, and using logs/debug console. |
+| Best Practices | L52-L58 | Deployment, cold-start, and runtime tuning guidance: blue-green rollouts, reducing scale-out latency, and optimizing Java memory usage in Azure Container Apps. |
+| Decision Making | L59-L74 | Guidance on choosing Container Apps plans, compute, GPUs, and hosting options, estimating costs, and planning/migrating environments from legacy setups or other platforms like Heroku/Functions |
+| Architecture & Design Patterns | L75-L82 | Architectures and patterns for Java microservices on Azure Container Apps, including Eureka HA clusters, AI-enabled PetClinic, and end-to-end microservice design best practices. |
+| Limits & Quotas | L83-L88 | Quota and limit rules for Container Apps (CPU/memory, environments, revisions, scale) and how to request increases when you hit platform or subscription limits. |
+| Security | L89-L123 | Authentication, authorization, TLS, identities, network lockdown, and best practices for securing Container Apps (identity providers, certs, mTLS, NSGs, firewalls, private endpoints, WAF). |
+| Configuration | L124-L171 | Configuring Container Apps environments, networking, ingress, scaling, revisions, storage, monitoring/logging, Dapr, Java features, and dynamic session settings via ARM, YAML, CLI, and portal. |
+| Integrations & Coding Patterns | L172-L198 | Patterns for connecting Container Apps to each other, Azure services, Spring apps, Dapr, KEDA, Front Door, and AI/agent frameworks (LangChain, LlamaIndex, Semantic Kernel, MCP). |
+| Deployment | L199-L208 | Guides for deploying and automating Container Apps: CI/CD with GitHub Actions/Azure Pipelines, Docker Compose and Functions deployment, Arc-enabled clusters, and self-hosted runners/jobs. |
 
 ### Troubleshooting
 | Topic | URL |

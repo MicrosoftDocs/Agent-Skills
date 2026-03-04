@@ -27,6 +27,12 @@ category_descriptions:
   deployment: Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2),
     setting up geo-replication, and running/local-testing Event Hubs apps using the
     emulator.
+skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Event Hubs applications. Not for Azure
+  Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure
+  Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Event Hubs Crawl Report
 

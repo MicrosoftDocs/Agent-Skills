@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: Quota and limit rules for Container Apps (CPU/memory, environments,
     revisions, scale) and how to request increases when you hit platform or subscription
     limits.
+skill_description: Expert knowledge for Azure Container Apps development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Container Apps applications. Not
+  for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
+  Instances (use azure-container-instances), Azure App Service (use azure-app-service),
+  Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report
 

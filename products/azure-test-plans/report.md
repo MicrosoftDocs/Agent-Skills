@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-04'
 category_descriptions:
   limits-quotas: Configuring and managing custom fields on test results in Azure Test
     Plans, including setup steps, field types, and how they appear in test runs and
@@ -9,6 +9,11 @@ category_descriptions:
   configuration: 'Using tcm.exe to manage Azure Test Plans: creating and running test
     suites, importing/exporting tests, managing test configurations, and automating
     test plan operations via CLI.'
+skill_description: Expert knowledge for Azure Test Plans development including limits
+  & quotas, security, and configuration. Use when building, debugging, or optimizing
+  Azure Test Plans applications. Not for Azure DevOps (use azure-devops), Azure Boards
+  (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use
+  azure-app-testing).
 ---
 # Azure Test Plans Crawl Report
 
@@ -22,8 +27,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 2
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -37,6 +42,13 @@ category_descriptions:
 | *(Unclassified)* | 31 | 91.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
+  - Updated: 2025-11-10T22:10:00.000Z → 2026-03-03T18:05:00.000Z
+- [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
+  - Updated: 2025-11-13T22:04:00.000Z → 2026-03-03T18:05:00.000Z
 
 ## Classified Pages
 
@@ -61,7 +73,6 @@ category_descriptions:
 | [Test in Connected mode](https://learn.microsoft.com/en-us/azure/devops/test/connected-mode-exploratory-testing?view=azure-devops) | 0.30 | Connected mode usage of extension; summary suggests basic connection steps, not detailed config matrices or limits. |
 | [Test in Standalone mode](https://learn.microsoft.com/en-us/azure/devops/test/standalone-mode-exploratory-testing?view=azure-devops) | 0.30 | Standalone mode description; mostly explains mode behavior and requirements, not detailed configuration or quotas. |
 | [Add to existing bugs](https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops) | 0.25 | Describes deduplication behavior when filing bugs; no explicit error codes, limits, or configuration references. |
-| [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops) | 0.25 | Bulk import/export via CSV/Excel is described, but summary shows no parameter tables or numeric constraints. |
 | [Collect diagnostic data](https://learn.microsoft.com/en-us/azure/devops/test/collect-diagnostic-data?view=azure-devops) | 0.25 | Describes collecting diagnostic data during tests; summary does not show specific log locations, error codes, or config parameters. |
 | [Get insights from tests](https://learn.microsoft.com/en-us/azure/devops/test/insights-exploratory-testing?view=azure-devops) | 0.25 | Insights across exploratory sessions; appears to be reporting/usage guidance without numeric limits or config tables. |
 | [Perform user acceptance testing](https://learn.microsoft.com/en-us/azure/devops/test/user-acceptance-testing?view=azure-devops) | 0.25 | User acceptance testing workflow; mostly process guidance without numeric thresholds or config tables. |
@@ -73,8 +84,9 @@ category_descriptions:
 | [Run manual tests](https://learn.microsoft.com/en-us/azure/devops/test/run-manual-tests?view=azure-devops) | 0.25 | Manual test execution workflow; no specific limits, configuration matrices, or error-code mappings. |
 | [Track stakeholder feedback requests](https://learn.microsoft.com/en-us/azure/devops/test/track-stakeholder-feedback?view=azure-devops) | 0.25 | Tracking feedback via work items/queries; reporting usage, not deep configuration or limits. |
 | [Track test status](https://learn.microsoft.com/en-us/azure/devops/test/track-test-status?view=azure-devops) | 0.25 | Viewing test status and charts; reporting how-to without numeric system limits or config matrices. |
+| [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops) | 0.20 | Describes how to bulk import/export test cases via CSV/Excel; appears to be a usage/tutorial page without detailed configuration tables, limits, or error-code-based troubleshooting. |
 | [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | 0.20 | Describes copy/clone/import operations conceptually; lacks detailed constraints or error-resolution content. |
-| [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops) | 0.20 | How-to for creating manual test cases; mostly workflow steps, not deep configuration or limits. |
+| [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops) | 0.20 | Procedural guidance for creating and organizing manual test cases; no product-specific limits, configuration parameter tables, error-code-based troubleshooting, or quantified best-practice guidance. |
 | [Create test plans and test suites](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops) | 0.20 | Task-focused guide to creating test plans/suites; no expert-only limits, configs, or error codes. |
 | [Share steps between test cases](https://learn.microsoft.com/en-us/azure/devops/test/share-steps-between-test-cases?view=azure-devops) | 0.20 | Explains shared steps/parameters usage; no numeric limits, config tables, or troubleshooting mappings. |
 | [Test different configurations](https://learn.microsoft.com/en-us/azure/devops/test/test-different-configurations?view=azure-devops) | 0.20 | Explains testing across configurations conceptually; no numeric thresholds, config tables, or error mappings indicated. |

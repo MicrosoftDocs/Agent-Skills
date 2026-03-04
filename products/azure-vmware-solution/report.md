@@ -24,6 +24,13 @@ category_descriptions:
     Files integration.'
   limits-quotas: Host, cluster, routing, and vSAN limits for AVS; network/port planning;
     and how to request, deploy, scale, and manage AVS host quota and capacity.
+skill_description: Expert knowledge for Azure VMware Solution development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, and integrations & coding patterns. Use
+  when building, debugging, or optimizing Azure VMware Solution applications. Not
+  for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances (use
+  azure-large-instances), SAP HANA on Azure Large Instances (use azure-sap), Azure
+  Baremetal Infrastructure (use azure-baremetal-infrastructure).
 ---
 # Azure VMware Solution Crawl Report
 

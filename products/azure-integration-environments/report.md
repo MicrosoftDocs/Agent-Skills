@@ -1,6 +1,11 @@
 ---
 generated_at: '2026-02-28'
 category_descriptions: {}
+skill_description: Expert knowledge for Azure Integration Environments development
+  including various topics. Use when building, debugging, or optimizing Azure Integration
+  Environments applications. Not for Azure Logic Apps (use azure-logic-apps), Azure
+  API Management (use azure-api-management), Azure Service Bus (use azure-service-bus),
+  Azure Event Grid (use azure-event-grid).
 ---
 # Azure Integration Environments Crawl Report
 

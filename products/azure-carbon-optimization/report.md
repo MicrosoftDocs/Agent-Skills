@@ -9,6 +9,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Carbon Optimization issues,
     including data collection gaps, configuration problems, inaccurate emissions estimates,
     and troubleshooting dashboards or reports.
+skill_description: Expert knowledge for Azure Carbon Optimization development including
+  troubleshooting, security, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Carbon Optimization applications. Not for Azure Cost
+  Management (use azure-cost-management), Azure Impact Reporting (use azure-impact-reporting),
+  Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 ---
 # Azure Carbon Optimization Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-anomaly-detector
-description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Anomaly Detector applications.
+description: Expert knowledge for Azure AI Anomaly Detector development including troubleshooting, best practices, architecture & design patterns, limits & quotas, configuration, and deployment. Use when building, debugging, or optimizing Azure AI Anomaly Detector applications. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure AI Anomaly Detector. Covers troubl
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and fixing Anomaly Detector issues, including multivariate API error codes, model training/detection failures, data format problems, and common service or configuration errors. |
-| Best Practices | L38-L43 | Guidance on preparing data, tuning parameters, interpreting results, and designing workflows for effective use of univariate and multivariate Azure Anomaly Detector APIs. |
-| Architecture & Design Patterns | L44-L48 | Designing predictive maintenance solutions using Multivariate Anomaly Detector, including data preparation, model setup, and architecture patterns for monitoring complex equipment. |
-| Limits & Quotas | L49-L54 | Details on Anomaly Detector regional endpoints, usage constraints, request/throughput limits, quotas, and how these caps affect model training and inference. |
-| Configuration | L55-L59 | How to configure and tune Anomaly Detector Docker containers, including environment variables, resource limits, logging, networking, and runtime behavior settings. |
-| Deployment | L60-L65 | How to package and run Anomaly Detector in containers: Docker setup, Azure Container Instances deployment, and IoT Edge module deployment and configuration. |
+| Troubleshooting | L34-L39 | Diagnosing and fixing Anomaly Detector issues, including multivariate API error codes, model training/detection failures, data format problems, and common service or configuration errors. |
+| Best Practices | L40-L45 | Guidance on preparing data, tuning parameters, interpreting results, and designing workflows for effective use of univariate and multivariate Azure Anomaly Detector APIs. |
+| Architecture & Design Patterns | L46-L50 | Designing predictive maintenance solutions using Multivariate Anomaly Detector, including data preparation, model setup, and architecture patterns for monitoring complex equipment. |
+| Limits & Quotas | L51-L56 | Details on Anomaly Detector regional endpoints, usage constraints, request/throughput limits, quotas, and how these caps affect model training and inference. |
+| Configuration | L57-L61 | How to configure and tune Anomaly Detector Docker containers, including environment variables, resource limits, logging, networking, and runtime behavior settings. |
+| Deployment | L62-L67 | How to package and run Anomaly Detector in containers: Docker setup, Azure Container Instances deployment, and IoT Edge module deployment and configuration. |
 
 ### Troubleshooting
 | Topic | URL |

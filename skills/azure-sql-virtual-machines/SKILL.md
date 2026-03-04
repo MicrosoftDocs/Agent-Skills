@@ -1,9 +1,9 @@
 ---
 name: azure-sql-virtual-machines
-description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SQL Server on Azure Virtual Machines applications.
+description: Expert knowledge for SQL Server on Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing SQL Server on Azure Virtual Machines applications. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines), Azure Database Migration service (use azure-database-migration).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # SQL Server on Azure Virtual Machines Skill
@@ -16,33 +16,37 @@ This skill provides expert guidance for SQL Server on Azure Virtual Machines. Co
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L48 | Diagnosing and fixing Azure SQL and SQL Server VM issues: capacity, performance, connectivity, memory, transaction logs, Managed Instance problems, I/O throttling, and IaaS Agent errors. |
-| Best Practices | L49-L62 | Performance, HA/DR, and maintenance best practices for SQL Server on Azure VMs: VM sizing, storage/tempdb tuning, baselines, backups, FCI/DNN, and cluster configuration. |
-| Decision Making | L63-L74 | Guidance on migration/modernization to SQL on Azure VMs (from Db2/Oracle/on-prem), HADR and licensing choices, cost optimization, and end-of-support upgrade planning. |
-| Architecture & Design Patterns | L75-L83 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
-| Limits & Quotas | L84-L91 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
-| Security | L92-L102 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault and EKM, Entra auth, managed identities, hardening guidance, and confidential VM deployment. |
-| Configuration | L103-L146 | Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage/perf, backups, editions/versions, and SQL IaaS Agent/monitoring setup. |
-| Integrations & Coding Patterns | L147-L152 | Backing up and restoring SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
-| Deployment | L153-L169 | Deploying and configuring SQL Server Always On (single/multi-subnet, cross-region, workgroup), prerequisites, migrations (AG single→multi-subnet, SQL VMs/FCI to new regions), and ARM/Quickstart templates. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues: connectivity, capacity, performance (I/O, memory, redo lag), transaction logs, geo-replication, and IaaS Agent extension errors. |
+| Best Practices | L53-L66 | Performance, HA/DR, and maintenance best practices for SQL Server on Azure VMs: VM sizing, storage/tempdb tuning, baselines, backups, FCI/DNN, and cluster configuration. |
+| Decision Making | L67-L78 | Guidance on migration/modernization to SQL on Azure VMs (from Db2/Oracle/on-prem), HADR and licensing choices, cost optimization, and end-of-support upgrade planning. |
+| Architecture & Design Patterns | L79-L87 | High-level designs and patterns for SQL Server on Azure VMs: connectivity, Always On availability groups, failover cluster instances, and Windows Server Failover Clustering setup. |
+| Limits & Quotas | L88-L95 | Info on Azure SQL capacity limits, DTU benchmark behavior, regional feature availability, and how to request quota increases for databases and managed instances |
+| Security | L96-L106 | Securing SQL Server on Azure VMs: policies, TLS cert rotation, Key Vault and EKM, Entra auth, managed identities, hardening guidance, and confidential VM deployment. |
+| Configuration | L107-L149 | Configuring SQL Server on Azure VMs: HA/DR (AGs, FCIs, listeners, load balancers), storage/perf, backups, editions/versions, and SQL IaaS Agent/monitoring setup. |
+| Integrations & Coding Patterns | L150-L155 | Backing up and restoring SQL Server on Azure VMs directly to Azure Blob Storage, including configurations that use managed identities instead of stored credentials. |
+| Deployment | L156-L173 | Deploying and configuring SQL Server Always On availability groups and FCIs on Azure VMs, including single/multi-subnet, cross-region, prerequisites, and migration of VMs and storage. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Resolve capacity errors when deploying Azure SQL resources | https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql |
-| Resolve slow import and export operations in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql |
+| Fix slow database import and export in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql |
 | Handle transient connectivity errors in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql |
 | Troubleshoot common connection issues for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
+| Troubleshoot geo-replication and redo lag in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql |
 | Investigate and fix memory issues in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql |
 | Troubleshoot transaction log full errors in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db |
-| Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
+| Diagnose and work around Azure SQL MI known issues | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |
 | Troubleshoot transaction log issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi |
+| Resolve common SQL Server on Azure VM issues | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql |
 | Troubleshoot SQL Server IaaS Agent extension issues on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-troubleshoot-known-issues?view=azuresql |
 | Diagnose I/O throttling for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-performance-analysis?view=azuresql |
 
@@ -140,7 +144,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure Azure Elastic SAN for SQL Server VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration-azure-elastic-san?view=azuresql |
 | Deploy SQL Server VMs using Premium SSD v2 disks | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration-premium-ssd-v2?view=azuresql |
 | Configure storage layout for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration?view=azuresql |
-| Migrate SQL Server VM log disks to Ultra Disk | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-migrate-to-ultradisk?view=azuresql |
 | Configure vCore customization for SQL Server VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/vm-vcore-customization-for-sql?view=azuresql |
 | Configure connectivity options for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql?view=azuresql |
 
@@ -166,4 +169,5 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Migrate availability group from single to multi-subnet | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-migrate-multi-subnet?view=azuresql |
 | Deploy availability group using Azure quickstart templates | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-quickstart-template-configure?view=azuresql |
 | Migrate SQL Server VMs to another Azure region | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/move-sql-vm-different-region?view=azuresql |
+| Migrate SQL Server VM log disk to Azure Ultra Disk | https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-migrate-to-ultradisk?view=azuresql |
 | Migrate SQL FCI to Azure VMs with Azure Migrate | https://learn.microsoft.com/en-us/data-migration/sql-server/virtual-machines/failover-cluster-instance-migrate |

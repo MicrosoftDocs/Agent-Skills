@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-03'
 category_descriptions:
   best-practices: 'Performance, security, migration, and tooling best practices for
     Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning,
@@ -28,6 +28,13 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS,
     HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage,
     capacity, and migration validation errors.'
+skill_description: Expert knowledge for Azure Database for PostgreSQL development
+  including troubleshooting, best practices, decision making, architecture & design
+  patterns, limits & quotas, security, configuration, integrations & coding patterns,
+  and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL
+  applications. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed
+  Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 ---
 # Azure Database for PostgreSQL Crawl Report
 
@@ -41,8 +48,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 309
+- **Updated Pages**: 1
+- **Unchanged**: 308
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -62,6 +69,11 @@ category_descriptions:
 | *(Unclassified)* | 98 | 31.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitor and tune overview](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-monitoring)
+  - Updated: 2026-02-04T18:16:00.000Z → 2026-03-03T23:21:00.000Z
 
 ## Classified Pages
 
@@ -346,7 +358,6 @@ category_descriptions:
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/postgresql/security/security-confidential-computing) | 0.30 | High-level description of confidential computing options; likely conceptual without concrete RBAC roles, config parameters, or numeric constraints. |
 | [Create a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-read-replica) | 0.30 | Step-by-step creation tutorial; summary mentions considerations but no concrete limits, configs, or troubleshooting mappings. |
 | [List all backups](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-list-all-backups) | 0.30 | Lists backups via portal/CLI; step-by-step usage, not configuration reference or limits documentation. |
-| [Monitor and tune overview](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-monitoring) | 0.30 | Conceptual monitoring overview; describes available monitoring options without specific metrics tables, thresholds, or configuration details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/postgresql/extensions/concepts-extensions) | 0.30 | Conceptual overview of extensions and modules; no indication of detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/overview-migration-service-postgresql) | 0.30 | Overview of migration service and options; appears conceptual/marketing without detailed limits, configs, or decision matrices. |
 | [Overview Apache AGE for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-age-overview) | 0.30 | Overview of Apache AGE capabilities; conceptual description of graph features without clear indication of detailed configuration, limits, or troubleshooting content. |
@@ -370,6 +381,7 @@ category_descriptions:
 | [Create virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-create-virtual-endpoints) | 0.20 | How-to create virtual endpoints; appears to be UI/CLI steps without detailed config tables or limits. |
 | [Delete a read replica](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-delete-read-replica) | 0.20 | Delete read replica tutorial; operational, not configuration or troubleshooting reference. |
 | [Delete virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-delete-virtual-endpoints) | 0.20 | Delete virtual endpoints tutorial; operational steps, not configuration reference or limits. |
+| [Monitor and tune overview](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-monitoring) | 0.20 | Conceptual overview of monitoring options and metrics for Azure Database for PostgreSQL flexible server; does not appear to include specific numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or other product-specific expert details as defined by the sub-skill types. |
 | [Overview](https://learn.microsoft.com/en-us/azure/postgresql/developer/vs-code-extension/vs-code-overview) | 0.20 | Overview of VS Code extension; largely conceptual and feature description without detailed config tables or error mappings. |
 | [Partners](https://learn.microsoft.com/en-us/azure/postgresql/migrate/partners-migration-postgresql) | 0.20 | Lists third-party migration partners and tools; primarily marketing/partner directory content without detailed technical parameters, limits, or configuration specifics. |
 | [Portal, CLI, ARM template](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/quickstart-create-server) | 0.20 | Quickstart for creating a server is a step-by-step tutorial; no parameter tables, limits, or decision matrices. |

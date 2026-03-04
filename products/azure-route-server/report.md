@@ -17,6 +17,12 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Route Server connectivity
     and BGP peering issues, including misconfigurations, route propagation problems,
     and troubleshooting steps.
+skill_description: Expert knowledge for Azure Route Server development including troubleshooting,
+  best practices, architecture & design patterns, limits & quotas, security, and configuration.
+  Use when building, debugging, or optimizing Azure Route Server applications. Not
+  for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
+  (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Route Server Crawl Report
 

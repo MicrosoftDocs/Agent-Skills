@@ -1,9 +1,9 @@
 ---
 name: azure-sql-managed-instance
-description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
+description: Expert knowledge for Azure SQL Managed Instance development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Managed Instance applications. Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Managed Instance Skill
@@ -16,30 +16,33 @@ This skill provides expert guidance for Azure SQL Managed Instance. Covers troub
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L51 | Diagnosing and fixing Azure SQL Managed Instance issues: deployment/capacity, performance, import/export, connectivity/auth, memory, log full, XTP storage, MI link, and health monitoring. |
-| Best Practices | L52-L73 | Best practices for monitoring, performance tuning, HA/DR, maintenance, alerts, read scale-out, and migrations for Azure SQL Managed Instance–including KQL/DMVs, failover, and disaster recovery drills. |
-| Decision Making | L74-L88 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR, ML, and migration paths from SQL Server, Db2, and Oracle. |
-| Architecture & Design Patterns | L89-L93 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
-| Limits & Quotas | L94-L104 | Limits, quotas, and resource behavior for Azure SQL MI: DTUs, memory/OLTP limits, free-tier caps, backup retention, monitoring behavior, and how to request quota increases. |
-| Security | L105-L157 | Configuring authentication, authorization, encryption, auditing, threat protection, TLS, and security best practices for Azure SQL Managed Instance and related Azure SQL resources. |
-| Configuration | L158-L210 | Configuring and managing SQL Managed Instance: networking, backups/restore, maintenance windows/updates, monitoring/alerts (database watcher, metrics, logs), failover, zone redundancy, and tempdb/time zone settings. |
-| Integrations & Coding Patterns | L211-L235 | Connecting apps and tools to Azure SQL Managed Instance (.NET, Java, Python, etc.), plus automation, networking, DTC, XEvents, Spark, bcp, MI Link, backup/restore, and tracing setup. |
-| Deployment | L236-L257 | Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform), networking, region/subnet moves, start/stop, DR/migration, replication, and operation timing/cancellation. |
+| Troubleshooting | L37-L54 | Diagnosing and fixing Azure SQL Managed Instance issues: performance, connectivity, replication/redo lag, memory, log full, capacity/scaling, MI link, Resource Health, and Entra Kerberos auth. |
+| Best Practices | L55-L76 | Best practices for monitoring, performance tuning, HA/DR, maintenance, alerts, read scale-out, and migrations for Azure SQL Managed Instance–including KQL/DMVs, failover, and disaster recovery drills. |
+| Decision Making | L77-L91 | Guidance for choosing Azure SQL Managed Instance vs other Azure SQL options, tiers, pools, networking, HA/DR, ML, and migration paths from SQL Server, Db2, and Oracle. |
+| Architecture & Design Patterns | L92-L96 | Connectivity architecture, networking models, and connection options for Azure SQL Database, including gateways, endpoints, firewalls, and integration with VNets and private access. |
+| Limits & Quotas | L97-L107 | Limits, quotas, and resource behavior for Azure SQL MI: DTUs, memory/OLTP limits, free-tier caps, backup retention, monitoring behavior, and how to request quota increases. |
+| Security | L108-L160 | Configuring authentication, authorization, encryption, auditing, threat protection, TLS, and security best practices for Azure SQL Managed Instance and related Azure SQL resources. |
+| Configuration | L161-L213 | Configuring and managing SQL Managed Instance: networking, backups/restore, maintenance windows/updates, monitoring/alerts (database watcher, metrics, logs), failover, zone redundancy, and tempdb/time zone settings. |
+| Integrations & Coding Patterns | L214-L238 | Connecting apps and tools to Azure SQL Managed Instance (.NET, Java, Python, etc.), plus automation, networking, DTC, XEvents, Spark, bcp, MI Link, backup/restore, and tracing setup. |
+| Deployment | L239-L260 | Deploying and managing Azure SQL Managed Instance: provisioning (Bicep/ARM/Terraform), networking, region/subnet moves, start/stop, DR/migration, replication, and operation timing/cancellation. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Resolve Azure SQL capacity deployment and scaling errors | https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql |
-| Resolve slow import and export operations in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql |
+| Fix slow database import and export in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql |
 | Troubleshoot Azure SQL performance using Intelligent Insights | https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-troubleshoot-performance?view=azuresql |
 | Handle transient connectivity errors in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql |
 | Troubleshoot common connection issues for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql |
+| Troubleshoot geo-replication and redo lag in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql |
 | Investigate and fix memory issues in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql |
 | Troubleshoot transaction log full errors in Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db |
 | Resolve known issues in Azure SQL Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql |

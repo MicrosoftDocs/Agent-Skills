@@ -1,6 +1,6 @@
 ---
 name: azure-planetary-computer-pro
-description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Microsoft Planetary Computer Pro applications.
+description: Expert knowledge for Microsoft Planetary Computer Pro development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Microsoft Planetary Computer Pro applications. Not for Azure Open Datasets (use azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Microsoft Planetary Computer Pro. Covers
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L37 | Diagnosing and resolving Planetary Computer Pro GeoCatalog ingestion failures, including error code meanings, common causes, and step-by-step remediation guidance. |
-| Decision Making | L38-L42 | Guidance on selecting how to access Planetary Computer Pro data, including connection options, integrations with tools/services, and choosing the best method for your workflow. |
-| Limits & Quotas | L43-L47 | Supported file formats, data types, and size/usage limits for datasets and computations in Planetary Computer Pro, including quotas that affect how you process and store data. |
-| Security | L48-L58 | Authenticating apps and services to Planetary Computer Pro, configuring Entra ID, RBAC, managed identities, cross-tenant access, and SAS-based authorization for GeoCatalog access and data ingestion |
-| Configuration | L59-L72 | Configuring Planetary Computer Pro collections: ingestion sources, mosaics, tiles, render/colormap settings, Explorer visualization, queryable filters, and US Gov cloud endpoints. |
-| Integrations & Coding Patterns | L73-L86 | Patterns and APIs for creating/managing STAC collections/items, bulk ingesting data, generating SAS tokens, and integrating Planetary Computer Pro with web apps, QGIS, ArcGIS, and other tools |
+| Troubleshooting | L34-L39 | Diagnosing and resolving Planetary Computer Pro GeoCatalog ingestion failures, including error code meanings, common causes, and step-by-step remediation guidance. |
+| Decision Making | L40-L44 | Guidance on selecting how to access Planetary Computer Pro data, including connection options, integrations with tools/services, and choosing the best method for your workflow. |
+| Limits & Quotas | L45-L49 | Supported file formats, data types, and size/usage limits for datasets and computations in Planetary Computer Pro, including quotas that affect how you process and store data. |
+| Security | L50-L60 | Authenticating apps and services to Planetary Computer Pro, configuring Entra ID, RBAC, managed identities, cross-tenant access, and SAS-based authorization for GeoCatalog access and data ingestion |
+| Configuration | L61-L74 | Configuring Planetary Computer Pro collections: ingestion sources, mosaics, tiles, render/colormap settings, Explorer visualization, queryable filters, and US Gov cloud endpoints. |
+| Integrations & Coding Patterns | L75-L88 | Patterns and APIs for creating/managing STAC collections/items, bulk ingesting data, generating SAS tokens, and integrating Planetary Computer Pro with web apps, QGIS, ArcGIS, and other tools |
 
 ### Troubleshooting
 | Topic | URL |

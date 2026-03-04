@@ -1,6 +1,6 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Dev Box applications.
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Dev Box applications. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop), Azure Lab Services (use azure-lab-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,19 +16,21 @@ This skill provides expert guidance for Azure Dev Box. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L41 | Diagnosing and fixing Dev Box connectivity/RDP issues, stale or inaccessible boxes, using Troubleshoot and Repair, and monitoring Dev Box health with Azure Monitor logs. |
-| Best Practices | L42-L47 | Guidance on building efficient Dev Box images, including structuring image definitions and pre-warming Visual Studio caches to speed up developer environments. |
-| Limits & Quotas | L48-L53 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
-| Security | L54-L65 | Securing Dev Box access and sessions: RBAC planning, API auth, conditional access/Intune, Key Vault/service principals, endpoint privilege management, and Windows SSO configuration |
-| Configuration | L66-L93 | Configuring Dev Box environments: networking, images, catalogs, policies, schedules (stop/hibernate/auto-delete), provisioning templates, and monitoring logs/metrics. |
-| Integrations & Coding Patterns | L94-L98 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
-| Deployment | L99-L103 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
+| Troubleshooting | L35-L43 | Diagnosing and fixing Dev Box connectivity/RDP issues, stale or inaccessible boxes, using Troubleshoot and Repair, and monitoring Dev Box health with Azure Monitor logs. |
+| Best Practices | L44-L49 | Guidance on building efficient Dev Box images, including structuring image definitions and pre-warming Visual Studio caches to speed up developer environments. |
+| Limits & Quotas | L50-L55 | Managing Dev Box capacity: requesting quota/core limit increases and configuring per-user Dev Box limits to control usage and costs. |
+| Security | L56-L67 | Securing Dev Box access and sessions: RBAC planning, API auth, conditional access/Intune, Key Vault/service principals, endpoint privilege management, and Windows SSO configuration |
+| Configuration | L68-L95 | Configuring Dev Box environments: networking, images, catalogs, policies, schedules (stop/hibernate/auto-delete), provisioning templates, and monitoring logs/metrics. |
+| Integrations & Coding Patterns | L96-L100 | Using VS Code dev tunnels to securely connect to Azure Dev Box, including setup, authentication, and remote development workflow configuration. |
+| Deployment | L101-L105 | Planning and rolling out Dev Box environments, including architecture and configuration, plus guidance for moving Dev Box pools and individual boxes between Azure regions. |
 
 ### Troubleshooting
 | Topic | URL |

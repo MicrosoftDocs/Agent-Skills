@@ -18,6 +18,12 @@ category_descriptions:
     understanding its service limits, quotas, and operational constraints
   troubleshooting: Diagnosing and resolving common Azure Managed Grafana issues, including
     access, configuration, and private endpoint connectivity and DNS problems.
+skill_description: Expert knowledge for Azure Managed Grafana development including
+  troubleshooting, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Managed Grafana applications. Not for Azure Monitor (use azure-monitor), Azure App
+  Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Managed Grafana Crawl Report
 

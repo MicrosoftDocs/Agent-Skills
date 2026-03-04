@@ -27,6 +27,13 @@ category_descriptions:
   best-practices: 'Guidance on designing Application Gateway for very high traffic:
     sizing, autoscaling, performance tuning, capacity planning, and configuration
     patterns to handle large loads reliably.'
+skill_description: Expert knowledge for Azure Application Gateway development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Application Gateway applications.
+  Not for Azure Load Balancer (use azure-load-balancer), Azure Front Door (use azure-front-door),
+  Azure Traffic Manager (use azure-traffic-manager), Azure Web Application Firewall
+  (use azure-web-application-firewall).
 ---
 # Azure Application Gateway Crawl Report
 

@@ -1,9 +1,9 @@
 ---
 name: azure-local
-description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Local applications.
+description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Local applications. Not for Azure AI Foundry Local (use azure-ai-foundry-local), Azure Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Local Skill
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Local. Covers troubleshooting, bes
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L61 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures, and known issues/workarounds. |
-| Best Practices | L62-L69 | Best practices for Azure Local operations: configuring metric alerts, using supported Arc VM operations, designing SDN-aware network patterns, and managing updates safely and efficiently. |
-| Decision Making | L70-L83 | Guidance on choosing Azure Local deployment, VM types, migration paths, networking/SDN, updates, and cost/billing options, including Hybrid Benefit and disconnected capacity pricing. |
-| Architecture & Design Patterns | L84-L109 | Network and resiliency design for Azure Local: SDN topologies, rack/room connectivity, deployment patterns, VM/workload DR, monitoring, and disconnected/cloud network architectures. |
-| Limits & Quotas | L110-L125 | Hardware, network, IP, and scale requirements/limits for Azure Local deployments, including host/physical networking, node patterns, migrations, and Arc-enabled VM prerequisites. |
-| Security | L126-L168 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
-| Configuration | L169-L258 | Configuring Azure Local clusters, VMs, networking, storage, GPUs, monitoring, migrations, and multi-rack setups, including disconnected, Arc-enabled, and health/telemetry scenarios. |
-| Integrations & Coding Patterns | L259-L270 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
-| Deployment | L271-L309 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
+| Troubleshooting | L37-L63 | Diagnosing and fixing Azure Local issues: health faults, SDN/NSG and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures, and known issues/workarounds. |
+| Best Practices | L64-L71 | Best practices for Azure Local operations: configuring metric alerts, using supported Arc VM operations, designing SDN-aware network patterns, and managing updates safely and efficiently. |
+| Decision Making | L72-L85 | Guidance on choosing Azure Local deployment, VM types, migration paths, networking/SDN, updates, and cost/billing options, including Hybrid Benefit and disconnected capacity pricing. |
+| Architecture & Design Patterns | L86-L111 | Network and resiliency design for Azure Local: SDN topologies, rack/room connectivity, deployment patterns, VM/workload DR, monitoring, and disconnected/cloud network architectures. |
+| Limits & Quotas | L112-L127 | Hardware, network, IP, and scale requirements/limits for Azure Local deployments, including host/physical networking, node patterns, migrations, and Arc-enabled VM prerequisites. |
+| Security | L128-L170 | Security, compliance, and identity for Azure Local: hardening, RBAC, certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP, HIPAA, ISO 27001, PCI DSS. |
+| Configuration | L171-L261 | Configuring Azure Local compute, networking, storage, monitoring, images, GPUs, migrations, and multi-rack setups, including Arc integration, disconnected ops, health/Insights, and load balancing. |
+| Integrations & Coding Patterns | L262-L273 | Using Azure Arc, PowerShell, and images/disks to integrate Azure Local with Azure cloud: create/manage Arc VMs, import images, download managed disks, and configure SDN NSGs. |
+| Deployment | L274-L311 | Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware, SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades, and workload migrations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -212,6 +214,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure metric alerts for Azure Local resources | https://learn.microsoft.com/en-us/azure/azure-local/manage/setup-metric-alerts?view=azloc-2602 |
 | Set up log alerts for Azure Local using Insights queries | https://learn.microsoft.com/en-us/azure/azure-local/manage/setup-system-alerts?view=azloc-2602 |
 | Manage tenant logical networks with Windows Admin Center on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/tenant-logical-networks?view=azloc-2602 |
+| Unregister and re-register Azure Local machines via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2602 |
 | Prepare RHEL Marketplace images for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-azure-marketplace-red-hat?view=azloc-2602 |
 | Prepare Ubuntu Marketplace images for Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-azure-marketplace-ubuntu?view=azloc-2602 |
 | Prepare CentOS images for Azure Local Arc VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/virtual-machine-image-centos?view=azloc-2602 |
@@ -296,7 +299,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Update Azure Local disconnected operations appliances | https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-update?view=azloc-2602 |
 | Repair Azure Local nodes on version 23H2 clusters | https://learn.microsoft.com/en-us/azure/azure-local/manage/repair-server?view=azloc-2602 |
 | Suspend and resume Azure Local machines for planned maintenance | https://learn.microsoft.com/en-us/azure/azure-local/manage/suspend-resume-cluster-maintenance?view=azloc-2602 |
-| Unregister and re-register Azure Local machines without OS reinstall | https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2602 |
 | Update Azure Local SDN infrastructure components safely | https://learn.microsoft.com/en-us/azure/azure-local/manage/update-sdn?view=azloc-2602 |
 | Upgrade Azure Local SDN infrastructure managed by on-prem tools | https://learn.microsoft.com/en-us/azure/azure-local/manage/upgrade-sdn?view=azloc-2602 |
 | Deploy and hotpatch Windows Server Azure Edition on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/windows-server-azure-edition-23h2?view=azloc-2602 |

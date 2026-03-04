@@ -18,6 +18,11 @@ category_descriptions:
   limits-quotas: Device capacity, disk size, share/volume and connection limits for
     Data Box, Disk, and Heavy, plus how usage is calculated and constrained during
     data import/export.
+skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
+  best practices, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Data Box applications.
+  Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use azure-stack-edge),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Data Box Crawl Report
 

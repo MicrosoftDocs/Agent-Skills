@@ -15,6 +15,11 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Cloud HSM issues, including
     connectivity, configuration, performance, key operations, and integration failures
     with detailed troubleshooting steps.
+skill_description: Expert knowledge for Azure Cloud Hsm development including troubleshooting,
+  best practices, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Cloud Hsm applications.
+  Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
+  Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Cloud Hsm Crawl Report
 

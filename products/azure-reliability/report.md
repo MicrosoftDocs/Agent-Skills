@@ -15,6 +15,11 @@ category_descriptions:
   limits-quotas: Details on Azure Queue Storage message size limits, including max
     message size, behavior when limits are exceeded, and best practices for handling
     large payloads.
+skill_description: Expert knowledge for Azure Reliability development including best
+  practices, decision making, architecture & design patterns, limits & quotas, and
+  deployment. Use when building, debugging, or optimizing Azure Reliability applications.
+  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
+  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
 ---
 # Azure Reliability Crawl Report
 

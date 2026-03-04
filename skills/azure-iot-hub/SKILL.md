@@ -1,6 +1,6 @@
 ---
 name: azure-iot-hub
-description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Hub applications.
+description: Expert knowledge for Azure IoT Hub development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Hub applications. Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure IoT Hub. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L51 | Diagnosing and fixing IoT Hub, DPS, and Device Update issues: connectivity, routing, proxy/storage errors, error codes, and collecting/using diagnostic and device logs. |
-| Best Practices | L52-L60 | Best practices for secure, large-scale IoT Hub and DPS deployments, including OEM device security, automatic device configuration, and using device twins to sync config and status. |
-| Decision Making | L61-L73 | Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing, routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable disaster recovery. |
-| Architecture & Design Patterns | L74-L82 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
-| Limits & Quotas | L83-L88 | Details on IoT Hub and Device Update service limits, quotas, throttling behavior, and how many devices/operations you can scale to before hitting constraints. |
-| Security | L89-L125 | Securing IoT Hub and DPS: auth (Entra ID, RBAC, SAS, X.509), cert/key rotation, TLS/ciphers, network isolation (IP filters, private endpoints, VNet), Device Update security, and policy/compliance. |
-| Configuration | L126-L169 | Configuring IoT Hub and DPS behavior: enroll devices, set allocation and routing, twins, jobs, endpoints, tracing, message enrichments, file upload, Device Update manifests, and monitoring/logging. |
-| Integrations & Coding Patterns | L170-L191 | Device-to-cloud integration patterns: DPS provisioning via HTTPS, IoT Hub SDK usage (twins, methods, C2D, modules, jobs), message formats, routing, bulk identity ops, and file uploads. |
-| Deployment | L192-L205 | Deploying and updating IoT Hubs and devices: region/SKU migration, failover, ARM/Bicep deployments, Device Update (image/package, proxy, OS support), and scheduling jobs via CLI. |
+| Troubleshooting | L37-L53 | Diagnosing and fixing IoT Hub, DPS, and Device Update issues: connectivity, routing, proxy/storage errors, error codes, and collecting/using diagnostic and device logs. |
+| Best Practices | L54-L62 | Best practices for secure, large-scale IoT Hub and DPS deployments, including OEM device security, automatic device configuration, and using device twins to sync config and status. |
+| Decision Making | L63-L75 | Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing, routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable disaster recovery. |
+| Architecture & Design Patterns | L76-L84 | Design patterns for DPS lifecycle/HA/DR, VNet connectivity, secure device streams, and reliably persisting ordered IoT Hub events with Cosmos DB. |
+| Limits & Quotas | L85-L90 | Details on IoT Hub and Device Update service limits, quotas, throttling behavior, and how many devices/operations you can scale to before hitting constraints. |
+| Security | L91-L127 | Securing IoT Hub and DPS: auth (Entra ID, RBAC, SAS, X.509), cert/key rotation, TLS/ciphers, network isolation (IP filters, private endpoints, VNet), Device Update security, and policy/compliance. |
+| Configuration | L128-L171 | Configuring IoT Hub and DPS behavior: enroll devices, set allocation and routing, twins, jobs, endpoints, tracing, message enrichments, file upload, Device Update manifests, and monitoring/logging. |
+| Integrations & Coding Patterns | L172-L193 | Device-to-cloud integration patterns: DPS provisioning via HTTPS, IoT Hub SDK usage (twins, methods, C2D, modules, jobs), message formats, routing, bulk identity ops, and file uploads. |
+| Deployment | L194-L207 | Deploying and updating IoT Hubs and devices: region/SKU migration, failover, ARM/Bicep deployments, Device Update (image/package, proxy, OS support), and scheduling jobs via CLI. |
 
 ### Troubleshooting
 | Topic | URL |

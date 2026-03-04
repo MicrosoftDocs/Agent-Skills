@@ -8,6 +8,10 @@ category_descriptions:
     quotas, and how persistent storage works and is constrained across Bash and PowerShell.
   security: Securing Cloud Shell storage accounts, including multi-user access patterns,
     network isolation, and configuring private endpoints for locked-down access.
+skill_description: Expert knowledge for Azure Cloud Shell development including troubleshooting,
+  limits & quotas, and security. Use when building, debugging, or optimizing Azure
+  Cloud Shell applications. Not for Azure Portal (use azure-portal), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager).
 ---
 # Azure Cloud Shell Crawl Report
 

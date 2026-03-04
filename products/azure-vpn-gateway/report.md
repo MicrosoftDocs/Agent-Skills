@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   architecture-patterns: Design patterns and guidance for choosing VPN Gateway topologies,
     configuring active-active gateways, and building highly available, resilient site-to-site
@@ -27,22 +27,28 @@ category_descriptions:
   integrations: 'Configuring Azure VPN Gateway with on-prem devices and services:
     NPS/RADIUS VSAs for P2S, S2S over ExpressRoute, Cisco ASA samples, and BGP VPN
     connectivity with AWS.'
+skill_description: Expert knowledge for Azure VPN Gateway development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure VPN Gateway applications. Not for Azure
+  Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
+  Azure ExpressRoute (use azure-expressroute), Azure Application Gateway (use azure-application-gateway).
 ---
 # Azure VPN Gateway Crawl Report
 
 ## Summary
 
-- **Total Pages**: 118
-- **Fetched**: 118
+- **Total Pages**: 119
+- **Fetched**: 119
 - **Fetch Failed**: 0
 - **Classified**: 104
-- **Unclassified**: 14
+- **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 118
-- **Deleted Pages**: 11
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -51,30 +57,20 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 3 | 2.5% |
 | best-practices | 1 | 0.8% |
-| configuration | 53 | 44.9% |
-| decision-making | 6 | 5.1% |
-| deployment | 10 | 8.5% |
+| configuration | 53 | 44.5% |
+| decision-making | 6 | 5.0% |
+| deployment | 10 | 8.4% |
 | integrations | 4 | 3.4% |
 | limits-quotas | 3 | 2.5% |
-| security | 20 | 16.9% |
+| security | 20 | 16.8% |
 | troubleshooting | 4 | 3.4% |
-| *(Unclassified)* | 14 | 11.9% |
+| *(Unclassified)* | 15 | 12.6% |
 
 ## Changes
 
-### Deleted Pages
+### New Pages
 
-- ~~Report Azure VPN Client problems - Feedback Hub~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/feedback-hub-azure-vpn-client)
-- ~~Troubleshoot the Azure VPN Client~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-azure-vpn-client)
-- ~~Troubleshoot digital certificate authentication~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-digital-certificate-authentication)
-- ~~Troubleshoot using diagnostic logs~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
-- ~~Troubleshoot VPN Gateway~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot)
-- ~~macOS - native VPN client connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
-- ~~Site-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
-- ~~Site-to-site connection disconnects intermittently~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-disconnected-intermittently)
-- ~~Site-to-site error codes and solutions~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-error-codes)
-- ~~Point-to-site connection problems~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
-- ~~Validate VPN throughput to a VNet~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet)
+- [Support and troubleshooting for VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-support-help)
 
 ## Classified Pages
 
@@ -202,4 +198,5 @@ category_descriptions:
 | [Preshared key](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal) | 0.30 | Tutorial for S2S setup; focuses on steps, not exhaustive configuration parameters or limits. |
 | [About point-to-site VPN](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about) | 0.20 | Conceptual overview of Point-to-Site VPN; describes what it is and scenarios, not detailed configuration or limits. |
 | [What is VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways) | 0.20 | High-level overview of Azure VPN Gateway; no detailed limits, configs, or error mappings. |
+| [Support and troubleshooting for VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-support-help) | 0.10 | Support/help options page; does not contain product-specific limits, configuration parameters, error-code troubleshooting mappings, or other expert technical details. Primarily guidance on where to get help. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/vpn-gateway/whats-new) | 0.10 | What's new/release notes summary; no structured limits, configs, or troubleshooting content. |

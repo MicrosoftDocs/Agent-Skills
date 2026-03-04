@@ -1,6 +1,6 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications.
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Data Factory. Covers troubleshooti
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L88 | Diagnosing and fixing ADF issues: connector and format errors, pipeline/orchestration and data flow failures, CI/CD and Studio problems, SHIR/SSIS IR troubleshooting, and performance/debug guidance. |
-| Best Practices | L89-L114 | Performance, reliability, and migration best practices for ADF: tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors, DataOps/BCDR, SAP CDC, and common migration patterns. |
-| Decision Making | L115-L134 | Guidance on ADF cost planning, pricing and reserved capacity, choosing runtimes/compute/connectors, and assessing/migrating pipelines, SSIS, and data lakes/warehouses to ADF or Fabric |
-| Architecture & Design Patterns | L135-L145 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L146-L151 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
-| Security | L152-L179 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
-| Configuration | L180-L315 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
-| Integrations & Coding Patterns | L316-L499 | Patterns and examples for integrating ADF with many data sources, connectors, and compute engines, plus mapping data flow functions, templates, and running external/SSIS/ML/Spark jobs. |
-| Deployment | L500-L516 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
+| Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector and format errors, pipeline/orchestration and data flow failures, CI/CD and Studio problems, SHIR/SSIS IR troubleshooting, and performance/debug guidance. |
+| Best Practices | L91-L116 | Performance, reliability, and migration best practices for ADF: tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors, DataOps/BCDR, SAP CDC, and common migration patterns. |
+| Decision Making | L117-L136 | Guidance on ADF cost planning, pricing and reserved capacity, choosing runtimes/compute/connectors, and assessing/migrating pipelines, SSIS, and data lakes/warehouses to ADF or Fabric |
+| Architecture & Design Patterns | L137-L147 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L148-L153 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
+| Security | L154-L181 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
+| Configuration | L182-L317 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
+| Integrations & Coding Patterns | L318-L501 | Patterns and examples for integrating ADF with many data sources, connectors, and compute engines, plus mapping data flow functions, templates, and running external/SSIS/ML/Spark jobs. |
+| Deployment | L502-L518 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
 
 ### Troubleshooting
 | Topic | URL |

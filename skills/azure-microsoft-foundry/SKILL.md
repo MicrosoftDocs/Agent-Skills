@@ -1,9 +1,9 @@
 ---
 name: azure-microsoft-foundry
-description: Expert knowledge for Microsoft Foundry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Microsoft Foundry applications.
+description: Expert knowledge for Microsoft Foundry development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Microsoft Foundry applications. Not for Azure AI Foundry Local (use azure-ai-foundry-local), Azure Foundry Classic (use azure-foundry-classic), Azure Machine Learning (use azure-machine-learning), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Skill
@@ -16,21 +16,23 @@ This skill provides expert guidance for Microsoft Foundry. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L41 | Troubleshooting Foundry issues: Azure Marketplace purchase/deployment problems, recovering Agent Service after data/resource loss, and known platform bugs with workarounds. |
-| Best Practices | L42-L56 | Best practices for prompts, safety, tools, fine-tuning (incl. vision), synthetic data, and optimizing Azure OpenAI latency, throughput, traffic, and cost in Foundry. |
-| Decision Making | L57-L82 | Guidance on choosing and upgrading models, SDKs, and deployments, handling deprecations, data isolation, regions, and migrating between Azure OpenAI, GitHub Models, and Foundry services. |
-| Architecture & Design Patterns | L83-L88 | Designing resilient Foundry solutions, including high availability patterns, redundancy, and disaster recovery strategies for Foundry Agent Service and project architectures. |
-| Limits & Quotas | L89-L105 | Quotas, limits, and capacity for Foundry models, agents, vector stores, evals, batch jobs, Sora, fine-tuning, PTU costs, and how to manage or increase Azure OpenAI-related quotas. |
-| Security | L106-L132 | Security, auth, and compliance for Foundry: Entra ID, RBAC, keys, private networking, policies, safety filters, data privacy, and securing agents, tools, and model access. |
-| Configuration | L133-L189 | Configuring and operating Foundry agents and models: tools, workflows, storage, security, tracing, evaluation, monitoring, rate limits, and Azure/Anthropic/OpenAI integration. |
-| Integrations & Coding Patterns | L190-L245 | Patterns and APIs for integrating Foundry agents with tools, data sources, Azure OpenAI, MCP, web search, speech, UI automation, tracing, and external apps/services. |
-| Deployment | L246-L262 | Deploying and managing Foundry agents/models in production: hosting options, infra provisioning (CLI/Bicep/Terraform), CI/CD and evaluations, M365/Teams integration, and outage recovery. |
+| Troubleshooting | L37-L43 | Troubleshooting Foundry issues: Azure Marketplace purchase/deployment problems, recovering Agent Service after data/resource loss, and known platform bugs with workarounds. |
+| Best Practices | L44-L58 | Best practices for prompts, tools, safety, fine-tuning (incl. vision), synthetic data, and optimizing Azure OpenAI latency, throughput, traffic, and cost in Foundry. |
+| Decision Making | L59-L84 | Guidance on choosing and upgrading models, SDKs, and deployments, handling deprecations, data isolation, regions, and migrating between Azure OpenAI, GitHub Models, and Foundry services. |
+| Architecture & Design Patterns | L85-L90 | Designing resilient Foundry solutions, including high availability patterns, redundancy, and disaster recovery strategies for Foundry Agent Service and project architectures. |
+| Limits & Quotas | L91-L107 | Quotas, limits, and capacity for Foundry models, agents, vector stores, evals, batch jobs, Sora, fine-tuning, PTU costs, and how to manage or increase Azure OpenAI-related quotas. |
+| Security | L108-L135 | Security, identity, and compliance for Foundry: auth (Entra ID, keyless, RBAC), private networking, encryption, policies, safety filters, and data privacy for models and Agent Service. |
+| Configuration | L136-L191 | Configuring and operating Foundry agents and models: tools, workflows, storage, security, tracing, evaluation, monitoring, rate limits, and Azure/Anthropic/OpenAI integration. |
+| Integrations & Coding Patterns | L192-L247 | Patterns and APIs for integrating Foundry agents with tools, data sources, Azure OpenAI, MCP, web search, speech, UI automation, tracing, and external apps/services. |
+| Deployment | L248-L264 | Deploying and managing Foundry agents/models in production: hosting options, infra provisioning (CLI/Bicep/Terraform), CI/CD and evaluations, M365/Teams integration, and outage recovery. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -42,7 +44,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply tool configuration and usage best practices in Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/tool-best-practice |
+| Apply tool usage best practices in Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/tool-best-practice |
 | Generate synthetic training data in Foundry (Preview) | https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/data-generation |
 | Design effective system messages for Azure OpenAI | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/advanced-prompt-engineering |
 | Plan fine-tuning strategies in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/fine-tuning-considerations |
@@ -109,13 +111,14 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Manage Foundry agent identities with Entra ID | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity |
 | Choose authentication methods for Agent2Agent tools | https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-to-agent-authentication |
 | Configure authentication for MCP tools in Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication |
+| Publish Microsoft Foundry agents with secure access | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/publish-agent |
 | Govern MCP tools via AI gateway and API Management | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/governance |
 | Configure private networking for Foundry Agent Service | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/virtual-networks |
 | Configure authentication and authorization for Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/concepts/authentication-authorization-foundry |
 | Disable Foundry preview features with custom RBAC roles | https://learn.microsoft.com/en-us/azure/foundry/concepts/disable-preview-features-with-rbac |
 | Use customer-managed keys for encryption in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/concepts/encryption-keys-portal |
 | Apply role-based access control in Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry |
-| Configure compliance and security integrations in Foundry | https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-manage-compliance-security |
+| Configure compliance and security for Microsoft Foundry | https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-manage-compliance-security |
 | Set up keyless Entra ID authentication for Foundry Models | https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-entra-id |
 | Add Microsoft Foundry resources to a network security perimeter | https://learn.microsoft.com/en-us/azure/foundry/how-to/add-foundry-to-network-security-perimeter |
 | Configure private link for secure Microsoft Foundry project access | https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link |
@@ -139,7 +142,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Create and manage long-term Memory in Foundry agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/memory-usage |
 | Configure Azure Monitor for Foundry Agent Service metrics | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/metrics |
 | Create and configure a private tool catalog in Foundry | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/private-tool-catalog |
-| Publish Foundry agents and configure access control | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/publish-agent |
 | Configure custom MCP-based code interpreter for agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/custom-code-interpreter |
 | Configure file search tool and vector stores for agents | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/file-search |
 | Configure Foundry Agent Service to use existing Azure resources | https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-your-own-resources |

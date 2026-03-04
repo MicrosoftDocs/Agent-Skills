@@ -1,6 +1,6 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Red Hat OpenShift applications.
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Red Hat OpenShift applications. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Red Hat OpenShift. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L40 | Recovering ARO cluster access, manually rotating/updating cluster certificates, and diagnosing/fixing common Azure Red Hat OpenShift cluster issues and failures. |
-| Best Practices | L41-L48 | Guidance on sizing and deploying ARO clusters/infra nodes, optimizing OpenShift Virtualization VMs, and following supportability and scaling best practices for large ARO 4 environments |
-| Decision Making | L49-L53 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
-| Limits & Quotas | L54-L59 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
-| Security | L60-L77 | Securing ARO clusters: identity/auth (Entra, managed identities, service principals, workload identity), disk encryption, NSGs/egress, FIPS, Front Door protection, and support access control. |
-| Configuration | L78-L96 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU), storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout, Spot VMs, tagging, and health alerts. |
-| Integrations & Coding Patterns | L97-L106 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
-| Deployment | L107-L120 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
+| Troubleshooting | L36-L42 | Recovering ARO cluster access, manually rotating/updating cluster certificates, and diagnosing/fixing common Azure Red Hat OpenShift cluster issues and failures. |
+| Best Practices | L43-L50 | Guidance on sizing and deploying ARO clusters/infra nodes, optimizing OpenShift Virtualization VMs, and following supportability and scaling best practices for large ARO 4 environments |
+| Decision Making | L51-L55 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
+| Limits & Quotas | L56-L61 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
+| Security | L62-L79 | Securing ARO clusters: identity/auth (Entra, managed identities, service principals, workload identity), disk encryption, NSGs/egress, FIPS, Front Door protection, and support access control. |
+| Configuration | L80-L98 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU), storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout, Spot VMs, tagging, and health alerts. |
+| Integrations & Coding Patterns | L99-L108 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
+| Deployment | L109-L122 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
 
 ### Troubleshooting
 | Topic | URL |

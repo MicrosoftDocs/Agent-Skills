@@ -1,6 +1,6 @@
 ---
 name: azure-health-data-services
-description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications.
+description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Health Data Services. Covers troub
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L46 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, events, $convert-data, identity providers, MedTech deployment/log errors, and known platform problems. |
-| Best Practices | L47-L54 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
-| Decision Making | L55-L60 | Guidance for planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and compatibility considerations. |
-| Architecture & Design Patterns | L61-L68 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L69-L75 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
-| Security | L76-L114 | Configuring auth, RBAC, identity apps, tokens, encryption (CMK), network/Private Link, and compliance policies for securing FHIR, DICOM, and de-identification services in Azure Health Data Services. |
-| Configuration | L115-L182 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L183-L219 | Patterns and code samples for calling FHIR, DICOM, MedTech, and de-identification APIs, integrating with tools like Synapse, ADF, Logic Apps, AML, Power BI, and managing bulk data flows. |
-| Deployment | L220-L235 | How to deploy and move FHIR, DICOM, MedTech, and de-identification services using portal, ARM, Bicep, CLI, PowerShell, and configure storage/backing resources |
+| Troubleshooting | L37-L48 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, events, $convert-data, identity providers, MedTech deployment/log errors, and known platform problems. |
+| Best Practices | L49-L56 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
+| Decision Making | L57-L62 | Guidance for planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and compatibility considerations. |
+| Architecture & Design Patterns | L63-L70 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
+| Limits & Quotas | L71-L77 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
+| Security | L78-L116 | Configuring auth, RBAC, identity apps, tokens, encryption (CMK), network/Private Link, and compliance policies for securing FHIR, DICOM, and de-identification services in Azure Health Data Services. |
+| Configuration | L117-L184 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
+| Integrations & Coding Patterns | L185-L221 | Patterns and code samples for calling FHIR, DICOM, MedTech, and de-identification APIs, integrating with tools like Synapse, ADF, Logic Apps, AML, Power BI, and managing bulk data flows. |
+| Deployment | L222-L237 | How to deploy and move FHIR, DICOM, MedTech, and de-identification services using portal, ARM, Bicep, CLI, PowerShell, and configure storage/backing resources |
 
 ### Troubleshooting
 | Topic | URL |

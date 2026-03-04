@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   architecture-patterns: 'Design patterns for VM-based architectures: multi-region
     and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement,
     and Oracle/OpenShift deployment and DR designs.'
-  configuration: 'Configuring Azure VMs and scale sets: images, disks, extensions,
-    drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads,
-    and platform update controls.'
+  configuration: 'Configuring Azure VMs/scale sets: images, disks, networking, maintenance,
+    monitoring, extensions, GPU/HPC, OS agents, SSH/WinRM, Oracle workloads, and backup/restore
+    behavior.'
   security: 'Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted
     Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and
     secure image/gallery sharing.'
@@ -28,6 +28,13 @@ category_descriptions:
   best-practices: Performance, scaling, HA, and cost-optimization best practices for
     Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks,
     and Image Builder/boot-time optimization.
+skill_description: Expert knowledge for Azure Virtual Machines development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Virtual Machines applications.
+  Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual
+  Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines
+  (use azure-sql-virtual-machines), Azure Cloud Services (use azure-cloud-services).
 ---
 # Azure Virtual Machines Crawl Report
 
@@ -41,8 +48,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 799
+- **Updated Pages**: 1
+- **Unchanged**: 798
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -52,16 +59,21 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 15 | 1.9% |
 | best-practices | 23 | 2.9% |
-| configuration | 127 | 15.9% |
+| configuration | 128 | 16.0% |
 | decision-making | 59 | 7.4% |
 | deployment | 24 | 3.0% |
-| integrations | 44 | 5.5% |
+| integrations | 43 | 5.4% |
 | limits-quotas | 202 | 25.3% |
 | security | 73 | 9.1% |
 | troubleshooting | 21 | 2.6% |
 | *(Unclassified)* | 211 | 26.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux)
+  - Updated: 2025-05-20T05:03:00.000Z → 2026-02-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -258,7 +270,6 @@ category_descriptions:
 | [HX series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hx-series) | limits-quotas | 0.80 | HX size-series spec pages include exact core counts, RAM amounts, network bandwidth, and storage throughput per size, which are numeric resource limits. |
 | [Key vault for Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-key-vault) | security | 0.80 | Details key vault creation and access policies for ADE; includes product-specific security and key management configuration. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/azure-disk-enc-linux) | security | 0.80 | Disk encryption extension requires specific Key Vault, volume, and encryption settings; these are security-focused, product-specific configurations. |
-| [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux) | integrations | 0.80 | Details supported platforms, configuration schema, and deployment options for Key Vault extension; includes parameter names and behaviors integrating VMs with Key Vault. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events) | integrations | 0.80 | Describes Scheduled Events endpoint, event types, and payload for Linux VMs; product-specific API contract and fields. |
 | [Linux Dependency agent](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux) | configuration | 0.80 | Explicitly states it details supported platforms, configurations, and deployment options for the Dependency agent extension, including extension parameters. |
 | [Lsv2 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv2-series) | limits-quotas | 0.80 | Describes exact vCPU ranges, memory per vCPU, and NVMe device counts and capacities per size—clear numeric resource limits. |
@@ -312,6 +323,7 @@ category_descriptions:
 | [FPGA Attestation Service](https://learn.microsoft.com/en-us/azure/virtual-machines/field-programmable-gate-arrays-attestation) | security | 0.78 | Describes a product-specific attestation service, including how netlists are validated into bitstreams for NP-series FPGAs, which is a security/attestation configuration pattern unique to this service. |
 | [HC series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hc-series) | limits-quotas | 0.78 | Size-series spec pages include detailed per-size tables (vCPUs, RAM per core, max NICs, disk throughput) that are numeric limits specific to this hardware generation. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux) | configuration | 0.78 | Describes extension configuration for installing CUDA/GRID drivers, including extension properties and supported VM families, which are specific configuration details. |
+| [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux) | configuration | 0.78 | The page documents the Key Vault VM extension for Linux with product-specific configuration details: supported platforms, extension handler versions, JSON schema for public/protected settings, parameter names (such as key vault URLs, certificate store locations, polling intervals), and deployment options via Azure CLI/ARM. These are concrete configuration options and behaviors unique to this extension, not generic concepts, fitting the configuration sub-skill. |
 | [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/storage-performance) | best-practices | 0.78 | Performance tuning guide with product-specific recommendations (I/O scheduler choices, filesystem options, queue depths, NVMe tuning, OS settings) tailored to Lsv3/Lasv3/Lsv2; includes concrete configuration values and patterns. |
 | [Linux - version 2](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux) | configuration | 0.78 | Custom Script Extension docs typically include extension schema, public/protectedSettings properties, allowed values, and ARM/CLI parameter names that are product-specific configuration details. |
 | [NVv3 series retirement](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series-retirement) | decision-making | 0.78 | Retirement details with exact dates and affected SKUs, plus guidance to move to newer NV series; supports concrete migration and sizing decisions. |

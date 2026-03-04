@@ -1,6 +1,6 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Quantum applications.
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Quantum applications. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Quantum. Covers troubleshooting, b
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L43 | Diagnosing Azure Quantum connection/job failures and understanding support, escalation, and issue-handling policies for IonQ, PASQAL, Quantinuum, and Rigetti providers. |
-| Best Practices | L44-L50 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
-| Decision Making | L51-L60 | Guidance on Azure Quantum costs, provider pricing/regions, workspace migration, Q# dev environment choices, and planning quantum-safe cryptography with the resource estimator |
-| Architecture & Design Patterns | L61-L65 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
-| Limits & Quotas | L66-L72 | Provider-specific job limits, quotas, and timeouts, plus how to run long Q# experiments and manage sessions to avoid interruptions or failures. |
-| Security | L73-L83 | Managing secure access to Azure Quantum workspaces: RBAC and bulk assignment, access control configuration, ARM locks, managed identities, service principals, and safe handling of access keys |
-| Configuration | L84-L103 | Setting up QDK tools and environments, configuring simulators and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), and tuning/optimizing Quantum Resource Estimator runs and parameters |
-| Integrations & Coding Patterns | L104-L114 | Integrating QDK with Azure Quantum: connecting via qdk.azure, running hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through QDK to Azure Quantum. |
-| Deployment | L115-L120 | Deploying and managing Azure Quantum workspaces via ARM/Bicep and Azure CLI, and configuring VS Code to submit, run, and manage Q# programs on Azure Quantum. |
+| Troubleshooting | L37-L45 | Diagnosing Azure Quantum connection/job failures and understanding support, escalation, and issue-handling policies for IonQ, PASQAL, Quantinuum, and Rigetti providers. |
+| Best Practices | L46-L52 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
+| Decision Making | L53-L62 | Guidance on Azure Quantum costs, provider pricing/regions, workspace migration, Q# dev environment choices, and planning quantum-safe cryptography with the resource estimator |
+| Architecture & Design Patterns | L63-L67 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
+| Limits & Quotas | L68-L74 | Provider-specific job limits, quotas, and timeouts, plus how to run long Q# experiments and manage sessions to avoid interruptions or failures. |
+| Security | L75-L85 | Managing secure access to Azure Quantum workspaces: RBAC and bulk assignment, access control configuration, ARM locks, managed identities, service principals, and safe handling of access keys |
+| Configuration | L86-L105 | Setting up QDK tools and environments, configuring simulators and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), and tuning/optimizing Quantum Resource Estimator runs and parameters |
+| Integrations & Coding Patterns | L106-L116 | Integrating QDK with Azure Quantum: connecting via qdk.azure, running hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through QDK to Azure Quantum. |
+| Deployment | L117-L122 | Deploying and managing Azure Quantum workspaces via ARM/Bicep and Azure CLI, and configuring VS Code to submit, run, and manage Q# programs on Azure Quantum. |
 
 ### Troubleshooting
 | Topic | URL |

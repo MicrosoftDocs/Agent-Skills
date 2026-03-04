@@ -23,6 +23,12 @@ category_descriptions:
     tips to diagnose and resolve them.'
   limits-quotas: Configuring and enforcing page size limits for GraphQL and REST queries
     in Data API builder using the first/$first parameters.
+skill_description: Expert knowledge for Azure Data Api Builder development including
+  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use when building, debugging, or
+  optimizing Azure Data Api Builder applications. Not for Azure API Management (use
+  azure-api-management), Azure Functions (use azure-functions), Azure App Service
+  (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure Data Api Builder Crawl Report
 

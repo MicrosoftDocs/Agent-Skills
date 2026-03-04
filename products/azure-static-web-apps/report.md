@@ -21,6 +21,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Static Web Apps deployment and runtime
     issues, including build failures, configuration problems, and troubleshooting
     tools/logs.
+skill_description: Expert knowledge for Azure Static Web Apps development including
+  troubleshooting, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Static Web Apps applications. Not for Azure App Service (use azure-app-service),
+  Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Static Web Apps Crawl Report
 

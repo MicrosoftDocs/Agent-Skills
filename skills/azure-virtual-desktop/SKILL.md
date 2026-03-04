@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications.
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Virtual Desktop. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L50 | Diagnosing and fixing AVD issues: agent updates, MSIX App Attach, autoscale, FQDN/connectivity, connection quality, graphics, session host health, Teams, and Log Analytics-based troubleshooting |
-| Best Practices | L51-L62 | Operational best practices for AVD: autoscale, Start VM on Connect, Windows multi-session tuning, validation host pools, proxy/RDP Multipath guidance, and resolving Azure Advisor recommendations. |
-| Decision Making | L63-L78 | Planning and cost/licensing decisions for AVD: deployment models, autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended Zones, and Insights cost estimation |
-| Architecture & Design Patterns | L79-L87 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L88-L93 | RDP bandwidth requirements and optimization for Azure Virtual Desktop, plus supported Microsoft Teams features, limitations, and configuration requirements on AVD. |
-| Security | L94-L112 | Security configuration for AVD: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC/roles, external identities, clipboard/screen protection, watermarking, WebAuthn, Kerberos, and Purview forensic onboarding |
-| Configuration | L113-L172 | Configuring AVD environments: images, autoscale, networking, RDP/redirection, Teams/media, licensing, updates, monitoring, and app delivery (MSIX/App Attach, RemoteApp, app groups). |
-| Integrations & Coding Patterns | L173-L180 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L181-L189 | Guides for deploying and migrating AVD: adding session hosts, moving from classic to current AVD, changing regions, using regional host pools, and deploying Windows clients via Intune/ConfigMgr. |
+| Troubleshooting | L37-L52 | Diagnosing and fixing AVD issues: agent updates, MSIX App Attach, autoscale, FQDN/connectivity, connection quality, graphics, session host health, Teams, and Log Analytics-based troubleshooting |
+| Best Practices | L53-L64 | Operational best practices for AVD: autoscale, Start VM on Connect, Windows multi-session tuning, validation host pools, proxy/RDP Multipath guidance, and resolving Azure Advisor recommendations. |
+| Decision Making | L65-L80 | Planning and cost/licensing decisions for AVD: deployment models, autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended Zones, and Insights cost estimation |
+| Architecture & Design Patterns | L81-L89 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
+| Limits & Quotas | L90-L95 | RDP bandwidth requirements and optimization for Azure Virtual Desktop, plus supported Microsoft Teams features, limitations, and configuration requirements on AVD. |
+| Security | L96-L114 | Security configuration for AVD: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC/roles, external identities, clipboard/screen protection, watermarking, WebAuthn, Kerberos, and Purview forensic onboarding |
+| Configuration | L115-L174 | Configuring AVD environments: images, autoscale, networking, RDP/redirection, Teams/media, licensing, updates, monitoring, and app delivery (MSIX/App Attach, RemoteApp, app groups). |
+| Integrations & Coding Patterns | L175-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
+| Deployment | L183-L191 | Guides for deploying and migrating AVD: adding session hosts, moving from classic to current AVD, changing regions, using regional host pools, and deploying Windows clients via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |

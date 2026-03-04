@@ -1,6 +1,6 @@
 ---
 name: azure-health-bot
-description: Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Health Bot applications.
+description: Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Health Bot applications. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Health Bot. Covers best practices,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L36 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
-| Decision Making | L37-L41 | Estimating Azure Health Bot costs based on action usage, understanding pricing drivers, and forecasting expenses for different bot scenarios. |
-| Architecture & Design Patterns | L42-L46 | Designing bot architectures using the healthcare orchestrator to route between plugins and flows, manage conversation logic, and structure complex healthcare scenarios |
-| Security | L47-L59 | Configuring security, privacy, and compliance: consent, data export/deletion, auth, encryption keys, abuse safeguards, secrets/keys, and portal access control for healthcare bots. |
-| Configuration | L60-L77 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
-| Integrations & Coding Patterns | L78-L100 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
+| Best Practices | L34-L38 | Guidance on designing robust error-handling flows in Azure Health Bot scenarios, including detecting failures, user-friendly recovery paths, and safe handling of clinical conversation errors. |
+| Decision Making | L39-L43 | Estimating Azure Health Bot costs based on action usage, understanding pricing drivers, and forecasting expenses for different bot scenarios. |
+| Architecture & Design Patterns | L44-L48 | Designing bot architectures using the healthcare orchestrator to route between plugins and flows, manage conversation logic, and structure complex healthcare scenarios |
+| Security | L49-L61 | Configuring security, privacy, and compliance: consent, data export/deletion, auth, encryption keys, abuse safeguards, secrets/keys, and portal access control for healthcare bots. |
+| Configuration | L62-L79 | Configuring bot behavior and conversations: welcome/help messages, feedback, interruptions, human/Teams handoff, terms links, and managing scenarios, variables, cards, and versions. |
+| Integrations & Coding Patterns | L80-L102 | Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook), embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management APIs, and proactive scenario invocation |
 
 ### Best Practices
 | Topic | URL |

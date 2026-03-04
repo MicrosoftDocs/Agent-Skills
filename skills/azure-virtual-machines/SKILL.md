@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications.
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Machines applications. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cloud Services (use azure-cloud-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Virtual Machines. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L59 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
-| Best Practices | L60-L86 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
-| Decision Making | L87-L149 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning/migrating VMs (GPU, OS, Oracle, RHEL, DNS) and handling retirements, backup, DR, and reservations. |
-| Architecture & Design Patterns | L150-L168 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L169-L374 | VM size specs, disk and storage performance limits, quotas, lifecycle/support, and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU families. |
-| Security | L375-L451 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
-| Configuration | L452-L582 | Configuring Azure VMs and scale sets: images, disks, extensions, drivers, monitoring, maintenance, backup/restore, HPC/GPU, SSH/WinRM, Oracle workloads, and platform update controls. |
-| Integrations & Coding Patterns | L583-L630 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
-| Deployment | L631-L657 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
+| Troubleshooting | L37-L61 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
+| Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
+| Decision Making | L89-L151 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning/migrating VMs (GPU, OS, Oracle, RHEL, DNS) and handling retirements, backup, DR, and reservations. |
+| Architecture & Design Patterns | L152-L170 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
+| Limits & Quotas | L171-L376 | VM size specs, disk and storage performance limits, quotas, lifecycle/support, and capacity/packing details for Azure VMs, Dedicated Hosts, disks, and HPC/GPU families. |
+| Security | L377-L453 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault/identity, MSP metadata controls, policy/RBAC, and secure image/gallery sharing. |
+| Configuration | L454-L585 | Configuring Azure VMs/scale sets: images, disks, networking, maintenance, monitoring, extensions, GPU/HPC, OS agents, SSH/WinRM, Oracle workloads, and backup/restore behavior. |
+| Integrations & Coding Patterns | L586-L632 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
+| Deployment | L633-L659 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -496,6 +498,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Configure NVIDIA GPU Driver Extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux |
 | Configure NVIDIA GPU Driver Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows |
 | Configure Microsoft Antimalware Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows |
+| Configure Azure Key Vault VM extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
 | Configure Qualys Cloud Agent VM Extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
 | Configure Salt Minion VM Extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
 | Configure Stackify Retrace Linux agent extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/stackify-retrace-linux |
@@ -586,7 +589,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
 | Create Azure VM restore points using REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
 | Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |
-| Configure Azure Key Vault VM extension for Linux certificate refresh | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
 | Configure Azure Key Vault VM extension for Windows certificate refresh | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
 | Monitor Azure VM availability with Project Flash via Azure Monitor metric | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
 | Monitor Azure VM availability with Project Flash via Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph |

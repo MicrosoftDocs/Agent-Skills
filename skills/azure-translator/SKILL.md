@@ -1,6 +1,6 @@
 ---
 name: azure-translator
-description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Translator applications.
+description: Expert knowledge for Azure Translator development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Translator applications. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Translator. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing and fixing common Azure Translator issues in Foundry Tools, plus understanding HTTP status/error codes and their causes and resolutions. |
-| Best Practices | L40-L49 | Best practices for custom translation: managing containers, glossaries, dataset splits, Foundry/custom models, and document translation usage, FAQs, and operational guidance. |
-| Decision Making | L50-L58 | Guidance on choosing standard vs Custom Translator, evaluating custom models with BLEU, and planning/migrating between Translator API versions and platforms. |
-| Limits & Quotas | L59-L71 | Limits, formats, and data size requirements for Custom Translator training/documents, character and request quotas, and language/locale support for Translator and Document Translation. |
-| Security | L72-L84 | Configuring Azure Translator security: encryption, auth (keys, Entra ID, managed identities, SAS), VNets/firewalls, secure workspaces, and protecting data in document translation. |
-| Configuration | L85-L95 | Configuring Azure Translator behavior: resource setup, Docker/container settings, profanity filters, content exclusion, dynamic dictionaries, word alignment, and monitoring usage metrics. |
-| Integrations & Coding Patterns | L96-L135 | Using Translator REST/SDK/container APIs for text/document translation: parameters, async jobs, status, formats, preview features, custom models, Power Automate, and dictionary/language utilities |
-| Deployment | L136-L141 | Running Translator in Docker containers and deploying or copying custom translation models across regions and Foundry projects for scalable, portable translation setups. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing common Azure Translator issues in Foundry Tools, plus understanding HTTP status/error codes and their causes and resolutions. |
+| Best Practices | L42-L51 | Best practices for custom translation: managing containers, glossaries, dataset splits, Foundry/custom models, and document translation usage, FAQs, and operational guidance. |
+| Decision Making | L52-L60 | Guidance on choosing standard vs Custom Translator, evaluating custom models with BLEU, and planning/migrating between Translator API versions and platforms. |
+| Limits & Quotas | L61-L73 | Limits, formats, and data size requirements for Custom Translator training/documents, character and request quotas, and language/locale support for Translator and Document Translation. |
+| Security | L74-L86 | Configuring Azure Translator security: encryption, auth (keys, Entra ID, managed identities, SAS), VNets/firewalls, secure workspaces, and protecting data in document translation. |
+| Configuration | L87-L97 | Configuring Azure Translator behavior: resource setup, Docker/container settings, profanity filters, content exclusion, dynamic dictionaries, word alignment, and monitoring usage metrics. |
+| Integrations & Coding Patterns | L98-L137 | Using Translator REST/SDK/container APIs for text/document translation: parameters, async jobs, status, formats, preview features, custom models, Power Automate, and dictionary/language utilities |
+| Deployment | L138-L143 | Running Translator in Docker containers and deploying or copying custom translation models across regions and Foundry projects for scalable, portable translation setups. |
 
 ### Troubleshooting
 | Topic | URL |

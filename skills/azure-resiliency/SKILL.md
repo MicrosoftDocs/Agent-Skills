@@ -1,6 +1,6 @@
 ---
 name: azure-resiliency
-description: Expert knowledge for Azure Resiliency development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Resiliency applications.
+description: Expert knowledge for Azure Resiliency development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Resiliency applications. Not for Azure Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,15 +16,17 @@ This skill provides expert guidance for Azure Resiliency. Covers limits & quotas
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L29-L33 | Resiliency support boundaries in Azure: what scenarios are covered or excluded, limitations by service/feature, and how these affect reliability, SLAs, and support expectations. |
-| Security | L34-L39 | Configuring security levels, policies, and posture in Azure Resiliency, including how to assess, adjust, and enforce protections for resilient workloads and infrastructure. |
-| Configuration | L40-L46 | Configuring and managing Azure Backup/Site Recovery vaults and protection policies, including creation, updates, lifecycle operations, and settings for backup and replication. |
+| Limits & Quotas | L31-L35 | Resiliency support boundaries in Azure: what scenarios are covered or excluded, limitations by service/feature, and how these affect reliability, SLAs, and support expectations. |
+| Security | L36-L41 | Configuring security levels, policies, and posture in Azure Resiliency, including how to assess, adjust, and enforce protections for resilient workloads and infrastructure. |
+| Configuration | L42-L48 | Configuring and managing Azure Backup/Site Recovery vaults and protection policies, including creation, updates, lifecycle operations, and settings for backup and replication. |
 
 ### Limits & Quotas
 | Topic | URL |

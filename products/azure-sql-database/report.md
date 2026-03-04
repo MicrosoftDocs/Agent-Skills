@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale
     options, automation, licensing/Hybrid Benefit, and migration paths between models
     and features.
   troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance (CPU, memory,
-    deadlocks, blocking), capacity/log, connectivity/transient errors, sync, Hyperscale,
-    Managed Instance, and shard map problems.'
+    deadlocks, blocking), capacity/log, import/export, connectivity, geo-replication,
+    Data Sync, and Managed Instance errors.'
   configuration: 'Configuring Azure SQL databases: monitoring, maintenance, backups/immutability,
     scaling and elastic pools, geo-replication/failover, security/TLS, Data Sync,
     CLI/PowerShell/REST setup and operations.'
@@ -28,16 +28,30 @@ category_descriptions:
   deployment: 'Deploying and configuring Azure SQL databases: automation (GitHub Actions,
     ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves,
     and feature availability by region.'
+skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure SQL Database applications. Not for Azure
+  Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use
+  azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql),
+  Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure SQL Database Crawl Report
 
 ## Summary
 
-- **Total Pages**: 358
-- **Fetched**: 358
+- **Total Pages**: 359
+- **Fetched**: 359
 - **Fetch Failed**: 0
-- **Classified**: 243
+- **Classified**: 244
 - **Unclassified**: 115
+
+### Incremental Update
+- **New Pages**: 2
+- **Updated Pages**: 5
+- **Unchanged**: 352
+- **Deleted Pages**: 1
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
 
@@ -45,14 +59,38 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 15 | 4.2% |
 | best-practices | 13 | 3.6% |
-| configuration | 64 | 17.9% |
+| configuration | 64 | 17.8% |
 | decision-making | 22 | 6.1% |
 | deployment | 13 | 3.6% |
-| integrations | 26 | 7.3% |
+| integrations | 26 | 7.2% |
 | limits-quotas | 10 | 2.8% |
 | security | 62 | 17.3% |
-| troubleshooting | 18 | 5.0% |
-| *(Unclassified)* | 115 | 32.1% |
+| troubleshooting | 19 | 5.3% |
+| *(Unclassified)* | 115 | 32.0% |
+
+## Changes
+
+### New Pages
+
+- [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
+- [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
+
+### Updated Pages
+
+- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
+  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-03T18:40:00.000Z
+- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
+- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
+- [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-02T08:00:00.000Z
+- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
+  - Updated: 2026-02-13T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Import/Export service hangs~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
 
 ## Classified Pages
 
@@ -78,6 +116,7 @@ category_descriptions:
 | [Migrate DTU to vCore](https://learn.microsoft.com/en-us/azure/azure-sql/database/migrate-dtu-to-vcore?view=azuresql) | decision-making | 0.85 | Migration from DTU to vCore involves choosing SKUs, mapping performance levels, and understanding trade-offs; decision and migration guidance with specific criteria. |
 | [Monitor In-Memory OLTP space](https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-monitor-space?view=azuresql) | troubleshooting | 0.85 | Explains how to estimate and monitor In-Memory OLTP storage and resolve specific capacity error 41823, mapping symptom to cause and resolution. |
 | [Troubleshoot Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-troubleshoot?view=azuresql) | troubleshooting | 0.85 | Dedicated troubleshooting guide for SQL Data Sync with known issues and their resolutions, likely including specific error messages and symptom→cause→solution mappings. |
+| [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.85 | Explicitly a troubleshooting guide for geo-replication and redo lag; likely includes metrics, DMVs, and symptom→cause→solution patterns specific to Azure SQL Database replication behavior. |
 | [.NET with Microsoft Entra MFA](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db?view=azuresql) | security | 0.80 | Provides concrete C# code using SqlAuthenticationMethod.ActiveDirectoryInteractive and Entra MFA-specific connection parameters, which are product-specific security configuration details. |
 | [Analyze and prevent deadlocks](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql) | troubleshooting | 0.80 | Deadlock analysis article; uses deadlock graphs, Query Store, and specific patterns to diagnose and prevent deadlocks—classic troubleshooting content. |
 | [Audit log format](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-log-format?view=azuresql) | configuration | 0.80 | Describes the structure and fields of audit logs for Azure SQL, Managed Instance, and Synapse; includes schema-level details unique to this product. |
@@ -98,7 +137,6 @@ category_descriptions:
 | [Identify query performance bottlenecks](https://learn.microsoft.com/en-us/azure/azure-sql/database/identify-query-performance-issues?view=azuresql) | troubleshooting | 0.80 | Maps specific performance symptoms (running vs waiting states) to causes and resolutions in Azure SQL/Fabric, providing structured troubleshooting guidance. |
 | [Import/export (allow Azure services disabled)](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-azure-services-off?view=azuresql) | security | 0.80 | Shows how to perform import/export when 'Allow Azure services' is off, using VM and SqlPackage; involves network and security configuration details. |
 | [Import/export using Private endpoints](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-private-link?view=azuresql) | security | 0.80 | Uses Private Link with 'Allow Access to Azure Services' off; requires detailed network and security configuration for private endpoints. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.80 | Lists specific known issues with Managed Instance along with workarounds or resolutions, effectively mapping symptoms to causes and fixes, which is troubleshooting content. |
 | [Logins, user accounts, roles, and permissions](https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage?view=azuresql) | security | 0.80 | Explains authentication and authorization using logins, users, roles, and permissions; includes product-specific security model details. |
 | [Managed identities with CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql) | security | 0.80 | Explains using user-assigned managed identities with customer-managed TDE; product-specific identity and key management configuration. |
 | [Migrate a .NET application](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration?view=azuresql) | security | 0.80 | Passwordless migration for .NET includes specific authentication flows, connection string settings, and identity configuration—product- and stack-specific security patterns. |
@@ -112,6 +150,7 @@ category_descriptions:
 | [Security configuration](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-split-merge-security-configuration?view=azuresql) | security | 0.80 | Focuses on configuring security for the split/merge service, including x509 certificate setup; this is product-specific security configuration. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-controls-policy?view=azuresql) | security | 0.80 | Lists specific Azure Policy built-in definitions and compliance controls for Azure SQL; product-specific security/compliance configuration knowledge. |
 | [Store vulnerability scans in storage](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-vulnerability-assessment-storage?view=azuresql) | security | 0.80 | Explains how to allow VA to access storage accounts restricted by firewalls/VNets; involves security/network configuration and permissions. |
+| [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql) | troubleshooting | 0.80 | Describes causes and workarounds when Import/Export takes longer than expected; this is a symptom-focused diagnosis and resolution guide specific to Azure SQL Database and Managed Instance. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Provides steps to investigate out-of-memory errors, referencing specific error messages and service objective limits, and suggesting concrete remediation actions. |
 | [Understand and resolve blocking](https://learn.microsoft.com/en-us/azure/azure-sql/database/understand-resolve-blocking?view=azuresql) | troubleshooting | 0.80 | Focused on troubleshooting blocking; typically includes symptom → cause → resolution patterns and product-specific diagnostic queries. |
 | [Use DMVs to monitor performance](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql) | troubleshooting | 0.80 | Shows specific DMVs, queries, and interpretations to detect blocked/long-running queries and resource bottlenecks, which are product-specific diagnostic patterns. |
@@ -130,7 +169,6 @@ category_descriptions:
 | [Create users using service principals](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql) | security | 0.75 | Explains how to grant a service principal permissions to create Entra users in Azure SQL, including specific roles, permissions, and T-SQL statements. |
 | [Cross-tenant CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-cross-tenant?view=azuresql) | security | 0.75 | Details cross-tenant CMK support for TDE, including key storage in separate tenants; advanced product-specific security configuration. |
 | [HA/DR checklist](https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-disaster-recovery-checklist?view=azuresql) | best-practices | 0.75 | Explicit checklist of recommended user configurations to maximize availability and ensure recovery for Azure SQL; prescriptive, product-specific best practices. |
-| [Import/Export service hangs](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql) | troubleshooting | 0.75 | Explains causes for slow Import/Export service operations and offers alternative workarounds, mapping a specific symptom to causes and solutions. |
 | [Microsoft Entra authentication overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql) | security | 0.75 | In-depth overview of Entra authentication for Azure SQL and related services; includes product-specific authentication flows and configuration considerations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql) | configuration | 0.75 | Overview of database watcher as a managed monitoring solution; includes product-specific configuration and data collection behavior. |
 | [Replicate to SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/replication-to-sql-database?view=azuresql) | integrations | 0.75 | Describes Azure SQL as a push subscriber from SQL Server/Managed Instance; includes replication settings, supported options, and integration-specific constraints. |
@@ -186,6 +224,7 @@ category_descriptions:
 | [Import from BACPAC](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/import-from-bacpac-powershell?view=azuresql) | integrations | 0.70 | Includes specific PowerShell cmdlets and configuration parameters for importing BACPAC files into Azure SQL, which are product-specific integration patterns. |
 | [Import or export database with managed identity authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-managed-identity?view=azuresql) | security | 0.70 | Shows how to configure managed identity authentication for BACPAC import/export, including identity assignments and access control settings. |
 | [Job automation overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/job-automation-overview?view=azuresql) | decision-making | 0.70 | Summarizes job automation technologies (elastic jobs, SQL Agent, etc.) across platforms, helping decide which to use in which scenario with product-specific criteria. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.70 | A 'Known Issues' page typically lists specific symptoms, causes, and workarounds or resolutions for Azure SQL Managed Instance; this is product-specific troubleshooting knowledge not easily inferred from training data. |
 | [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | limits-quotas | 0.70 | Describes LTR backups with explicit retention duration (up to 10 years); includes concrete retention limits and policy behavior. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql) | configuration | 0.70 | Explains Azure SQL maintenance window feature behavior and configuration options, including what events are covered and how scheduling affects operations—product-specific configuration semantics. |
 | [Maintenance window in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql) | configuration | 0.70 | Describes configurable maintenance windows with options via portal, PowerShell, CLI, and API; likely includes specific setting names and allowed values. |
@@ -354,8 +393,6 @@ category_descriptions:
 | [Working with JSON data](https://learn.microsoft.com/en-us/azure/azure-sql/database/json-features?view=azuresql) | 0.30 | Feature overview of JSON support and scenarios; likely syntax examples but not focused on limits, configuration matrices, or product-specific troubleshooting. |
 | [Azure PowerShell samples guide](https://learn.microsoft.com/en-us/azure/azure-sql/database/powershell-script-content-guide?view=azuresql) | 0.25 | Navigation/overview page for PowerShell script examples; does not itself contain detailed configuration or troubleshooting content. |
 | [Always Encrypted with secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-with-secure-enclaves-landing?view=azuresql) | 0.20 | Landing page that links to Always Encrypted with secure enclaves docs; no detailed technical content itself. |
-| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.20 | Archive of documentation changes is historical/overview content without structured limits, configuration parameters, or troubleshooting mappings. |
-| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.20 | Similar to other 'what's new' archives; primarily historical notes rather than structured expert configuration or troubleshooting guidance. |
 | [Azure SQL glossary of terms](https://learn.microsoft.com/en-us/azure/azure-sql/glossary-terms?view=azuresql) | 0.20 | Glossary of terms is conceptual/terminology reference without configuration values, limits, or troubleshooting mappings. |
 | [Azure portal query editor](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor?view=azuresql) | 0.20 | Quickstart for using query editor in portal; mostly basic usage steps without deep configuration tables or product-specific limits. |
 | [Copilot in Azure with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-azure-sql-overview?view=azuresql) | 0.20 | Overview of Copilot capabilities; largely conceptual and descriptive without detailed configuration or limits. |
@@ -364,13 +401,14 @@ category_descriptions:
 | [Intelligent applications and AI](https://learn.microsoft.com/en-us/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications?view=azuresql) | 0.20 | Conceptual overview of AI and vectors with Azure SQL; does not emphasize numeric thresholds, config matrices, or error-resolution mappings. |
 | [Ledger](https://learn.microsoft.com/en-us/azure/azure-sql/database/ledger-landing?view=azuresql) | 0.20 | Landing page for ledger documentation; contains only navigation, no detailed technical content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?view=azuresql) | 0.20 | High-level overview of SQL Data Sync capabilities and retirement notice; lacks detailed configuration tables, limits, or troubleshooting mappings. |
-| [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.20 | Archive of changes for SQL Server on Azure VMs; mostly release notes/overview without detailed limits, config tables, or error-resolution mappings. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | Navigation/collection page for Azure CLI samples; no detailed technical content itself. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-vscode?view=azuresql) | 0.20 | VS Code connection/query quickstart; generic tutorial without detailed Azure SQL–specific configuration matrices or limits. |
 | [What is Azure SQL?](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql) | 0.20 | High-level overview of Azure SQL options; no detailed limits, configs, or decision matrices. |
 | [What is SQL Database?](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql) | 0.20 | High-level PaaS overview and marketing-style description; lacks specific limits, configs, or decision matrices. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and doc changes summary; not organized as limits, configuration references, or troubleshooting guidance. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and 'what's new' summary page; primarily announcements and links to other docs. Does not itself contain concrete limits, configuration tables, error codes, or detailed decision/troubleshooting content that match any sub-skill type. |
 | [Always Encrypted](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql) | 0.10 | Landing page for Always Encrypted docs; navigation only without detailed content. |
+| [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' release-note links and documentation changes; no detailed limits, configs, troubleshooting mappings, or other structured expert data indicated. |
+| [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive page summarizing older feature and documentation updates; functions as navigation/history, not detailed technical guidance with specific parameters or limits. |
 | [Copilot sample prompts](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-prompts-list?view=azuresql) | 0.10 | List of example prompts; no product-specific configuration, limits, or troubleshooting content. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql) | 0.10 | Landing/navigation page listing concepts and quickstarts; no deep technical details. |
 | [Elastic pools](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-overview?view=azuresql) | 0.10 | Conceptual overview of elastic pools and pricing benefits; lacks concrete limits, configuration tables, or troubleshooting content. |
@@ -380,6 +418,7 @@ category_descriptions:
 | [Microsoft Entra authentication documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-landing?view=azuresql) | 0.10 | Landing page for Microsoft Entra authentication docs; navigation without detailed settings. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Landing page for migration guides; navigation content without concrete technical details. |
 | [Quickstarts](https://learn.microsoft.com/en-us/azure/azure-sql/database/quickstart-content-reference-guide?view=azuresql) | 0.10 | Reference list of quickstarts; navigation content without detailed technical parameters. |
+| [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' for SQL Server on Azure VMs; description suggests high-level release summaries, not concrete limits, configs, or troubleshooting content. |
 | [Single databases](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-overview?view=azuresql) | 0.10 | High-level overview of single database deployment model and purchasing models; no detailed limits, configs, or security roles. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [.NET with Windows, Linux, and macOS](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |

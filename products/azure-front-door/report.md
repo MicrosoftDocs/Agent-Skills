@@ -27,40 +27,54 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Front Door 4xx/5xx errors, CORS and
     compression issues, config/runtime problems, and performance bottlenecks using
     logs, reference strings, and best practices.
+skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Front Door applications. Not for Azure
+  Application Gateway (use azure-application-gateway), Azure Traffic Manager (use
+  azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web
+  Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Front Door Crawl Report
 
 ## Summary
 
-- **Total Pages**: 104
-- **Fetched**: 104
+- **Total Pages**: 100
+- **Fetched**: 100
 - **Fetch Failed**: 0
-- **Classified**: 82
+- **Classified**: 78
 - **Unclassified**: 22
 
 ### Incremental Update
 - **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 104
-- **Deleted Pages**: 0
+- **Unchanged**: 100
+- **Deleted Pages**: 4
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 4.8% |
-| best-practices | 2 | 1.9% |
-| configuration | 28 | 26.9% |
-| decision-making | 9 | 8.7% |
-| deployment | 9 | 8.7% |
-| integrations | 3 | 2.9% |
-| limits-quotas | 4 | 3.8% |
-| security | 17 | 16.3% |
-| troubleshooting | 5 | 4.8% |
-| *(Unclassified)* | 22 | 21.2% |
+| architecture-patterns | 5 | 5.0% |
+| best-practices | 2 | 2.0% |
+| configuration | 28 | 28.0% |
+| decision-making | 9 | 9.0% |
+| deployment | 9 | 9.0% |
+| integrations | 3 | 3.0% |
+| limits-quotas | 4 | 4.0% |
+| security | 17 | 17.0% |
+| troubleshooting | 1 | 1.0% |
+| *(Unclassified)* | 22 | 22.0% |
 
 ## Changes
+
+### Deleted Pages
+
+- ~~Troubleshoot with RefString~~ (https://learn.microsoft.com/en-us/azure/frontdoor/refstring)
+- ~~Troubleshoot file compression~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-compression)
+- ~~Troubleshoot Front Door issues~~ (https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-issues)
+- ~~Troubleshoot Front Door performance issues~~ (https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-performance-issues)
 
 ## Classified Pages
 
@@ -68,13 +82,9 @@ category_descriptions:
 |-----------|------|------------|--------|
 | [Routing limits](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-routing-limits) | limits-quotas | 0.95 | Dedicated routing limits article; describes composite route metric and per-profile limits, likely with exact numeric limits per tier. |
 | [Subscription offers and bandwidth throttling](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/subscription-offers) | limits-quotas | 0.90 | Described as explaining bandwidth throttling based on subscription type; this typically includes explicit bandwidth caps or thresholds per offer, which are numeric limits/quotas. |
-| [Troubleshoot Front Door issues](https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-issues) | troubleshooting | 0.90 | A dedicated troubleshooting article for common issues will list specific symptoms, error messages, and corresponding resolutions unique to Azure Front Door. |
 | [Front Door best practices](https://learn.microsoft.com/en-us/azure/frontdoor/best-practices) | best-practices | 0.85 | Explicit best-practices article for TLS, domains, WAF, health probes, and routing; contains product-specific DOs/DON’Ts and configuration guidance. |
 | [HTTP headers protocol support](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-http-headers-protocol) | configuration | 0.85 | Reference for which HTTP headers are supported on which segments of the call path; this is a product-specific compatibility matrix of header behavior that LLMs cannot infer generically. |
 | [Price comparison between tiers](https://learn.microsoft.com/en-us/azure/frontdoor/understanding-pricing) | decision-making | 0.85 | Explicitly compares pricing across tiers; such pages typically include comparison tables, per-unit prices, and guidance for migration between tiers, directly supporting SKU/tier selection decisions with quantified trade-offs. |
-| [Troubleshoot Front Door performance issues](https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-performance-issues) | troubleshooting | 0.85 | Performance troubleshooting guide organized around latency/bandwidth symptoms and likely causes across hops; includes product-specific diagnostic steps and interpretations. |
-| [Troubleshoot file compression](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-compression) | troubleshooting | 0.85 | Specifically about resolving compression issues; such content usually enumerates causes (content types, size thresholds, config flags) and corresponding fixes unique to Front Door. |
-| [Troubleshoot with RefString](https://learn.microsoft.com/en-us/azure/frontdoor/refstring) | troubleshooting | 0.85 | Focused on diagnosing 4xx/5xx errors using a product-specific 'Reference String' and portal diagnostic tool; such content typically maps symptoms to causes and steps, with specific fields and interpretations unique to Front Door. |
 | [CDN and Front Door price comparison](https://learn.microsoft.com/en-us/azure/frontdoor/compare-cdn-front-door-price) | decision-making | 0.80 | A pricing comparison article between two services inherently provides structured cost criteria and example calculations, enabling migration and selection decisions based on quantified trade-offs. |
 | [POP locations by region](https://learn.microsoft.com/en-us/azure/frontdoor/edge-locations-by-region) | limits-quotas | 0.80 | Lists exact numbers of POPs and metro cities, plus detailed location list; these are concrete, changing numeric and enumerated limits of the edge network footprint. |
 | [Server variables](https://learn.microsoft.com/en-us/azure/frontdoor/rule-set-server-variables) | configuration | 0.80 | Reference list of server variables and how they can be used in match conditions and actions; product-specific configuration surface. |

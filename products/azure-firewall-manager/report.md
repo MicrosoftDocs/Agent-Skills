@@ -12,6 +12,11 @@ category_descriptions:
   decision-making: Guidance on choosing between a secured virtual hub and a hub virtual
     network in Azure Firewall Manager, including architecture, security, routing,
     and management trade-offs.
+skill_description: Expert knowledge for Azure Firewall Manager development including
+  best practices, decision making, security, and configuration. Use when building,
+  debugging, or optimizing Azure Firewall Manager applications. Not for Azure Firewall
+  (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
 ---
 # Azure Firewall Manager Crawl Report
 

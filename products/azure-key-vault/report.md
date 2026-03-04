@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-04'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Key Vault issues: certificate problems,
     access policy and Azure Policy failures, Private Link misconfig, and interpreting
@@ -7,21 +7,27 @@ category_descriptions:
   integrations: 'Code samples and patterns for integrating Key Vault/Managed HSM with
     apps and services: client libraries, JS key/secret ops, Event Grid/Logic Apps,
     DigiCert, TLS offload, and SAS retrieval.'
-  security: 'Securing Azure Key Vault and Managed HSM: auth and RBAC vs access policies,
-    network/firewall/Private Link, BYOK/HSM keys, key attestation, backup/restore,
-    and security best practices.'
-  decision-making: Guidance on planning RBAC defaults, migrating from access policies,
-    moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity.
+  security: 'Securing Azure Key Vault and Managed HSM: auth/RBAC vs access policies,
+    network/firewall/Private Link, BYOK/HSM keys, certificates, role management, backup/restore,
+    and key attestation.'
   configuration: 'Configuring Key Vault and Managed HSM: auth, logging, monitoring/alerts,
     metrics, policies, key types/rotation, secure key release, soft delete, and managing
     storage keys/secrets.'
   limits-quotas: 'Key Vault and Managed HSM limits: throttling, quotas, size/storage
     constraints, logging behavior, soft-delete rules, and firewall/network configuration.'
+  decision-making: Guidance on planning RBAC defaults, migrating from access policies,
+    moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity.
   best-practices: Best practices for securing keys/secrets, using soft-delete, disaster
     recovery for Managed HSM, and automating single/dual-credential secret rotation
     in Azure Key Vault.
   deployment: How to deploy and provision Azure Key Vault and Managed HSM (vaults,
     keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell
+skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  Key Vault applications. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated
+  HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure
+  Attestation (use azure-attestation).
 ---
 # Azure Key Vault Crawl Report
 
@@ -35,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 164
+- **Updated Pages**: 1
+- **Unchanged**: 163
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -46,15 +52,20 @@ category_descriptions:
 |------|-------|------------|
 | best-practices | 7 | 4.3% |
 | configuration | 20 | 12.2% |
-| decision-making | 4 | 2.4% |
+| decision-making | 3 | 1.8% |
 | deployment | 9 | 5.5% |
 | integrations | 29 | 17.7% |
 | limits-quotas | 7 | 4.3% |
-| security | 24 | 14.6% |
+| security | 25 | 15.2% |
 | troubleshooting | 6 | 3.7% |
 | *(Unclassified)* | 58 | 35.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Prepare for Azure RBAC as default](https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default)
+  - Updated: 2026-02-26T18:13:00.000Z → 2026-03-03T23:21:00.000Z
 
 ## Classified Pages
 
@@ -86,6 +97,7 @@ category_descriptions:
 | [Use an Azure RBAC for managing access](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) | security | 0.80 | Describes how to grant permissions to keys, secrets, and certificates using Azure RBAC with Key Vault, including specific role names and scope details, which are product-specific security configuration patterns. |
 | [Use private endpoints](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/private-link) | security | 0.80 | Provides specific steps and parameters to integrate Managed HSM with Private Link, which are product-specific network security configurations. |
 | [Backup and restore and selective key restore](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/backup-restore) | security | 0.78 | Describes backup/restore operations, required permissions (dataAction names) and supported roles, which are product-specific security and recovery configurations. |
+| [Prepare for Azure RBAC as default](https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default) | security | 0.78 | Contains product-specific security behavior changes for Key Vault: exact API version (2026-02-01), retirement date for earlier control plane API versions (February 27, 2027), and details about defaulting to Azure RBAC vs access policies. These are concrete, time-bound, service-specific security and access control details that an LLM is unlikely to know from training. |
 | [Secure your Key Vault keys](https://learn.microsoft.com/en-us/azure/key-vault/keys/secure-keys) | best-practices | 0.78 | Provides concrete, product-specific key management recommendations (rotation guidance, usage patterns) tailored to Key Vault keys. |
 | [Configure automated key rotation](https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation) | configuration | 0.75 | Describes key rotation policy syntax, fields, and allowed values/frequencies, which are specific configuration parameters for this service. |
 | [Fetch SAS tokens in code (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/secrets/storage-keys-sas-tokens-code) | integrations | 0.75 | Provides concrete .NET code samples and patterns for managing SAS definitions and tokens via Key Vault, which are product-specific integration and coding patterns. |
@@ -116,7 +128,6 @@ category_descriptions:
 | [Managed HSM logging](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging) | configuration | 0.70 | Describes specific log destinations, container names, and configuration steps for logging, which are product-specific settings. |
 | [Managed HSM soft-delete](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/soft-delete-overview) | limits-quotas | 0.70 | Soft-delete behavior includes non-disable-ability and billing implications; the full article typically includes retention periods and other numeric constraints, which are service-specific limits. |
 | [Monitor with Azure Event Grid](https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-overview) | integrations | 0.70 | Describes Key Vault–Event Grid integration with specific event types (about to expire, expired, new version); such pages typically include event schema, resource types, and configuration parameters unique to this integration. |
-| [Prepare for Azure RBAC as default](https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default) | decision-making | 0.70 | Describes API version change, retirement dates, and guidance on adopting new API; helps decide migration timing and model (RBAC vs access policies) with concrete dates and impact. |
 | [RBAC vs. access policy (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-access-policy) | security | 0.70 | Compares concrete permission models and specifies which Azure built-in roles (Owner, User Access Administrator, Contributor, Key Vault Contributor, etc.) can manage Key Vault permissions, which is product-specific RBAC detail. |
 | [Receive notifications via Azure Automation](https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-tutorial) | integrations | 0.70 | Integration tutorial between Key Vault and Event Grid/Automation; likely documents event types, subscription configuration, and product-specific parameters. |
 | [Receive notifications via Logic Apps](https://learn.microsoft.com/en-us/azure/key-vault/general/event-grid-logicapps) | integrations | 0.70 | Describes integrating Key Vault events via Event Grid into Logic Apps; likely includes trigger names, event schema, and configuration parameters unique to this integration. |

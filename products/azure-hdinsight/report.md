@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: 'Guidance on HDInsight capacity limits: log size/retention, supported
     cluster node sizes, external metastore constraints, and requesting/managing CPU
     core quota increases.'
+skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure HDInsight applications. Not for Azure Databricks
+  (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure
+  Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure HDInsight Crawl Report
 

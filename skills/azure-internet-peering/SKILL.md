@@ -1,6 +1,6 @@
 ---
 name: azure-internet-peering
-description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications.
+description: Expert knowledge for Azure Internet Peering development including troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering applications. Not for Azure ExpressRoute (use azure-expressroute), Azure Peering Service (use azure-peering-service), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,13 +16,15 @@ This skill provides expert guidance for Azure Internet Peering. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L27-L30 | Diagnosing and validating Azure Peering Service prefixes, including prefix registration checks, routing verification, and troubleshooting connectivity or reachability issues. |
+| Troubleshooting | L29-L32 | Diagnosing and validating Azure Peering Service prefixes, including prefix registration checks, routing verification, and troubleshooting connectivity or reachability issues. |
 
 ### Troubleshooting
 | Topic | URL |

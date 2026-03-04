@@ -12,6 +12,11 @@ category_descriptions:
   configuration: Network and firewall requirements for Azure Relay, including which
     ports/protocols to open for Hybrid Connections and WCF relays and how to configure
     them.
+skill_description: Expert knowledge for Azure Relay development including troubleshooting,
+  security, configuration, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Relay applications. Not for Azure Service Bus (use
+  azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web PubSub (use
+  azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
 ---
 # Azure Relay Crawl Report
 

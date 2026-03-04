@@ -27,6 +27,12 @@ category_descriptions:
     org lab deployments.'
   limits-quotas: Managing DevTest Labs limits and quotas, viewing current usage, and
     requesting or configuring quota increases for labs, VMs, and related resources.
+skill_description: Expert knowledge for Azure DevTest Labs development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure DevTest Labs applications. Not for Azure
+  Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
 ---
 # Azure DevTest Labs Crawl Report
 

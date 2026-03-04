@@ -12,6 +12,11 @@ category_descriptions:
   configuration: Configuring diagnostics and Event Grid for Data Manager for Agriculture,
     including enabling logs, choosing event schemas, and understanding sample event
     payloads.
+skill_description: Expert knowledge for Azure Data Manager for Agriculture development
+  including limits & quotas, security, configuration, and integrations & coding patterns.
+  Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications.
+  Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
 ---
 # Azure Data Manager for Agriculture Crawl Report
 

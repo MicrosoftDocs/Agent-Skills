@@ -23,6 +23,12 @@ category_descriptions:
     and fixes.
   limits-quotas: Scheduling push notifications in Azure Notification Hubs, including
     creating, managing, and sending time-based or recurring notifications across platforms
+skill_description: Expert knowledge for Azure Notification Hubs development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, and integrations & coding patterns. Use
+  when building, debugging, or optimizing Azure Notification Hubs applications. Not
+  for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
+  Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
 ---
 # Azure Notification Hubs Crawl Report
 
