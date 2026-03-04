@@ -31,12 +31,9 @@ parameters:
 #     always: true
 
 variables:
+  - group: Docs2Skills-Defaults
   - name: pythonVersion
     value: '3.12'
-  - name: azureOpenAIEndpoint
-    value: 'https://knowledgebase-aoai-int.openai.azure.com/'
-  - name: azureOpenAIDeployment
-    value: 'gpt-5.1'
 
 stages:
   - stage: __default
@@ -58,7 +55,7 @@ stages:
           - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
             displayName: 'Checkout ADO repo (code)'
             inputs:
-              repository: git://Engineering/Learn.Docs2AgentSkills@refs/heads/${{ parameters.docs2SkillsADOBranch }}
+              repository: $(adoRepository)@refs/heads/${{ parameters.docs2SkillsADOBranch }}
 
           # 3. Setup Python
           - task: UsePythonVersion@0
@@ -73,7 +70,7 @@ stages:
               targetType: inline
               script: |
                 set -e
-                cd $(Build.SourcesDirectory)/Learn.Docs2AgentSkills
+                cd $(Build.SourcesDirectory)/$(docs2SkillsRepoName)
                 pip install --upgrade pip
                 pip install -r requirements.txt
 
@@ -81,14 +78,14 @@ stages:
           - task: AzureCLI@2
             displayName: 'Run docs2skills'
             inputs:
-              azureSubscription: 'Docs2AgentSkillsAOAI'
+              azureSubscription: $(azureSubscription)
               scriptType: bash
               scriptLocation: inlineScript
               inlineScript: |
                 set -e
 
                 # Define paths
-                ADO_REPO="$(Build.SourcesDirectory)/Learn.Docs2AgentSkills"
+                ADO_REPO="$(Build.SourcesDirectory)/$(docs2SkillsRepoName)"
                 GITHUB_REPO="$(Build.SourcesDirectory)/$(basename $(Build.Repository.Uri) .git)"
                 PRODUCTS_DIR="$GITHUB_REPO/products"
                 SKILLS_DIR="$GITHUB_REPO/skills"
