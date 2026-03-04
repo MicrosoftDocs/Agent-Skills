@@ -20,7 +20,7 @@ parameters:
   - name: docs2SkillsADOBranch
     displayName: 'Docs2Skills ADO Branch'
     type: string
-    default: 'create_skills'
+    default: 'main'
 
 # schedules:
 #   - cron: "0 2 * * *"  # Daily at 2:00 AM UTC
@@ -31,12 +31,9 @@ parameters:
 #     always: true
 
 variables:
+  - group: Docs2Skills-Defaults
   - name: pythonVersion
     value: '3.12'
-  - name: azureOpenAIEndpoint
-    value: 'https://knowledgebase-aoai-int.openai.azure.com/'
-  - name: azureOpenAIDeployment
-    value: 'gpt-5.1'
 
 stages:
   - stage: __default
@@ -48,14 +45,14 @@ stages:
 
         steps:
           # 1. Checkout GitHub repo (self - contains products/, skills/)
-          - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
+          - task: Checkout@1
             displayName: 'Checkout GitHub repo'
             inputs:
               repository: self
               persistCredentials: true
 
           # 2. Checkout ADO repo (source code)
-          - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
+          - task: Checkout@1
             displayName: 'Checkout ADO repo (code)'
             inputs:
               repository: git://Engineering/Learn.Docs2AgentSkills@refs/heads/${{ parameters.docs2SkillsADOBranch }}
@@ -81,7 +78,7 @@ stages:
           - task: AzureCLI@2
             displayName: 'Run docs2skills'
             inputs:
-              azureSubscription: 'Docs2AgentSkillsAOAI'
+              azureSubscription: $(azureSubscription)
               scriptType: bash
               scriptLocation: inlineScript
               inlineScript: |

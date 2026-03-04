@@ -164,16 +164,21 @@ Not sure where to start? We've created role-based skill bundles to help you get 
 
 | Bundle | Description |
 |--------|-------------|
-| **🚀 Essentials** | Core Azure skills every developer needs |
-| **🏗️ Infrastructure Pro** | ARM, Networking, Backup, Site Recovery |
-| **📊 Data Engineer** | SQL, Data Factory, Synapse, Stream Analytics |
-| **🤖 AI/ML Developer** | AI Services, Machine Learning, Bot Service |
-| **� Integration** | API Management, Event Grid, Logic Apps, Service Bus |
-| **🔒 Security & Compliance** | RBAC, Confidential Computing, Security |
-| **🌐 DevOps & Automation** | Dev Box, Monitor, Grafana, Automation |
+| **🚀 Quick Start** | Absolute essentials for any Azure developer — master these 7 core services first |
+| **⭐ Popular** | Popular Azure services. The services that power most workloads |
+| **🎯 Core** | Core Azure essentials. The foundation every developer needs before specializing |
+| **🤖 AI/ML Developer** | For AI engineers and ML practitioners. Covers AI services, machine learning, and intelligent applications |
+| **📊 Data Engineer** | For data engineers and analytics professionals. Covers data integration, warehousing, and streaming analytics |
+| **🏗️ Infrastructure Pro** | For infrastructure engineers and cloud architects. Covers networking, backup, recovery, and resource management |
+| **🔒 Security & Compliance** | Secure Azure workloads with RBAC, policy, key management, and compliance |
+| **🌐 DevOps & Automation** | Automate deployments, monitoring, and infrastructure management |
+| **🔗 Integration** | Connect Azure services with API Management, Event Grid, Logic Apps, and Service Bus |
 | **☁️ Full-Stack Azure** | Complete coverage with architecture foundations |
 
-> 💡 **Tip:** Start with the **Essentials** bundle, then add specialized bundles as you need them.
+> 💡 **Recommended Path:**
+> 1. Start with **Quick Start Bundle**
+> 2. Add **Popular Bundle** for broader coverage
+> 3. Choose specialized bundles based on your role
 
 ---
 
@@ -367,22 +372,7 @@ This project uses a dual license:
 `azure` `azure-functions` `azure-container-apps` `agent-skills` `ai-coding` `github-copilot` `claude-code` `cursor` `openai-codex` `agentic-skills` `llm-tools` `microsoft-learn` `SKILL.md`
 
 ---
-
-# Contributing
-
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
----
+ 
 
 # Legal Notices
 
