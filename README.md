@@ -165,18 +165,18 @@ Not sure where to start? We've created role-based skill bundles to help you get 
 | Bundle | Description |
 |--------|-------------|
 | **🚀 Quick Start** | Absolute essentials for any Azure developer — master these 7 core services first |
-| **⭐ Popular** | Popular Azure services across organizations |
-| **🎯 Essentials** | General-purpose development skills beyond Quick Start |
-| **🏗️ Infrastructure Pro** | ARM, Networking, Backup, Site Recovery, and infrastructure patterns |
-| **📊 Data Engineer** | SQL, Data Factory, Synapse, Stream Analytics, Data Explorer |
-| **🤖 AI/ML Developer** | AI Services, Machine Learning, Bot Service, Anomaly Detection |
-| **🔗 Integration** | API Management, Event Grid, Logic Apps, Service Bus |
-| **🔒 Security & Compliance** | RBAC, Confidential Computing, Security, Key Vault |
-| **🌐 DevOps & Automation** | Dev Box, Monitor, Grafana, Automation, Update Manager |
+| **⭐ Popular** | Popular Azure services. The services that power most workloads |
+| **🎯 Core** | Core Azure essentials. The foundation every developer needs before specializing |
+| **🤖 AI/ML Developer** | For AI engineers and ML practitioners. Covers AI services, machine learning, and intelligent applications |
+| **📊 Data Engineer** | For data engineers and analytics professionals. Covers data integration, warehousing, and streaming analytics |
+| **🏗️ Infrastructure Pro** | For infrastructure engineers and cloud architects. Covers networking, backup, recovery, and resource management |
+| **🔒 Security & Compliance** | Secure Azure workloads with RBAC, policy, key management, and compliance |
+| **🌐 DevOps & Automation** | Automate deployments, monitoring, and infrastructure management |
+| **🔗 Integration** | Connect Azure services with API Management, Event Grid, Logic Apps, and Service Bus |
 | **☁️ Full-Stack Azure** | Complete coverage with architecture foundations |
 
 > 💡 **Recommended Path:**
-> 1. Start with **Quick Start Bundle** (7 core services)
+> 1. Start with **Quick Start Bundle**
 > 2. Add **Popular Bundle** for broader coverage
 > 3. Choose specialized bundles based on your role
 
