@@ -14,6 +14,11 @@ category_descriptions:
     and design-time validation.
   deployment: Automating API registration into API Center via GitHub Actions and instructions
     for self-hosting/customizing the Azure API Center portal implementation.
+skill_description: Expert knowledge for Azure Api Center development including best
+  practices, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Api Center applications. Not for
+  Azure API Management (use azure-api-management), Azure App Service (use azure-app-service),
+  Azure Functions (use azure-functions).
 ---
 # Azure Api Center Crawl Report
 

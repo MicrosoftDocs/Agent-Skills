@@ -25,6 +25,13 @@ category_descriptions:
     capacity, retention, and performance quotas work across registry tiers.
   deployment: Using ARM templates to automate ACR quick tasks and data transfer, and
     deploying/managing ACR connected registries via Azure Arc extension
+skill_description: Expert knowledge for Azure Container Registry development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Container Registry applications.
+  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
+  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure Container Registry Crawl Report
 
@@ -37,9 +44,9 @@ category_descriptions:
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 121
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -59,10 +66,6 @@ category_descriptions:
 | *(Unclassified)* | 33 | 27.0% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Service Health alerts for Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/set-container-registry-service-health-alerts)
 
 ## Classified Pages
 

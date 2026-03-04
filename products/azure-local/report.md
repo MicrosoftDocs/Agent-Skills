@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   security: 'Security, compliance, and identity for Azure Local: hardening, RBAC,
     certificates, SDN/NSGs, BitLocker, Defender, logging/SIEM, and mappings to FedRAMP,
@@ -16,9 +16,9 @@ category_descriptions:
   deployment: Deploying, scaling, updating, and repairing Azure Local clusters (rack-aware,
     SDN, disconnected), including prerequisites, ARM/portal deployment, upgrades,
     and workload migrations.
-  configuration: Configuring Azure Local clusters, VMs, networking, storage, GPUs,
-    monitoring, migrations, and multi-rack setups, including disconnected, Arc-enabled,
-    and health/telemetry scenarios.
+  configuration: Configuring Azure Local compute, networking, storage, monitoring,
+    images, GPUs, migrations, and multi-rack setups, including Arc integration, disconnected
+    ops, health/Insights, and load balancing.
   troubleshooting: 'Diagnosing and fixing Azure Local issues: health faults, SDN/NSG
     and SLB problems, Arc VM/log collection, registration/deployment/upgrade failures,
     and known issues/workarounds.'
@@ -28,6 +28,13 @@ category_descriptions:
   best-practices: 'Best practices for Azure Local operations: configuring metric alerts,
     using supported Arc VM operations, designing SDN-aware network patterns, and managing
     updates safely and efficiently.'
+skill_description: Expert knowledge for Azure Local development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Local applications. Not for Azure AI Foundry
+  Local (use azure-ai-foundry-local), Azure Stack Edge (use azure-stack-edge), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use
+  azure-kubernetes-service).
 ---
 # Azure Local Crawl Report
 
@@ -41,8 +48,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 313
+- **Updated Pages**: 2
+- **Unchanged**: 311
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
@@ -52,9 +59,9 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 22 | 7.0% |
 | best-practices | 4 | 1.3% |
-| configuration | 86 | 27.5% |
+| configuration | 87 | 27.8% |
 | decision-making | 10 | 3.2% |
-| deployment | 36 | 11.5% |
+| deployment | 35 | 11.2% |
 | integrations | 8 | 2.6% |
 | limits-quotas | 12 | 3.8% |
 | security | 39 | 12.5% |
@@ -62,6 +69,13 @@ category_descriptions:
 | *(Unclassified)* | 73 | 23.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [What is Azure Local VM management?](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-overview?view=azloc-2602)
+  - Updated: 2026-01-22T23:03:00.000Z → 2026-03-03T18:05:00.000Z
+- [Unregister and reregister machines](https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2602)
+  - Updated: 2026-01-27T23:09:00.000Z → 2026-03-03T23:11:00.000Z
 
 ## Classified Pages
 
@@ -223,7 +237,7 @@ category_descriptions:
 | [SDN infrastructure](https://learn.microsoft.com/en-us/azure/azure-local/concepts/plan-software-defined-networking-infrastructure-23h2?view=azloc-2602) | architecture-patterns | 0.70 | Covers hardware/software prerequisites, physical/logical network planning, routing, gateways, and extension considerations, which are product-specific architecture and design guidance. |
 | [Spread AKS nodes](https://learn.microsoft.com/en-us/azure/azure-local/concepts/rack-aware-cluster-aks-nodes?view=azloc-2602) | configuration | 0.70 | Explains how to deploy AKS clusters with rack aware support and node spreading; this involves specific configuration parameters for node placement and zoning. |
 | [Storage thin provisioning](https://learn.microsoft.com/en-us/azure/azure-local/manage/manage-thin-provisioning-23h2?view=azloc-2602) | configuration | 0.70 | How-to article for thin provisioning using PowerShell; likely includes specific cmdlets, parameters, and setting values unique to Azure Local storage. |
-| [Unregister and reregister machines](https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2602) | deployment | 0.70 | Uses specific PowerShell cmdlets and flows for registration with/without Arc gateway; these are expert deployment/registration procedures unique to Azure Local. |
+| [Unregister and reregister machines](https://learn.microsoft.com/en-us/azure/azure-local/manage/unregister-register-machine?view=azloc-2602) | configuration | 0.70 | The article describes product-specific PowerShell cmdlets and parameters for unregistering and re-registering Azure Local machines, including distinct flows for environments with and without Azure Arc gateway. These are concrete, service-specific operational and configuration steps that an LLM is unlikely to infer from general knowledge, but it does not focus on limits, troubleshooting error codes, or deployment matrices. |
 | [Update SDN infrastructure](https://learn.microsoft.com/en-us/azure/azure-local/manage/update-sdn?view=azloc-2602) | deployment | 0.70 | Guides updating SDN components with recommended order and PowerShell usage, which are product-specific operational/deployment details. |
 | [Upgrade via ARM template](https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade-azure-resource-manager-template?view=azloc-2602) | deployment | 0.70 | Covers using ARM templates for solution upgrade; product-specific deployment method with template parameters and constraints. |
 | [Upgrade via Azure portal](https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-solution-upgrade?view=azloc-2602) | deployment | 0.70 | Product-specific solution upgrade procedure with OS version constraints and possibly cluster-type considerations. |
@@ -366,7 +380,6 @@ category_descriptions:
 | [Silicon-assisted security](https://learn.microsoft.com/en-us/azure/azure-local/security-book/silicon-assisted-security?view=azloc-2602) | 0.30 | Silicon-assisted security overview (secured core hardware, approved solutions); high-level security posture description without specific configuration parameters. |
 | [Trustworthy addition](https://learn.microsoft.com/en-us/azure/azure-local/security-book/trustworthy-addition?view=azloc-2602) | 0.30 | Security book chapter describing trustworthy addition concepts; likely high-level security themes without specific roles, parameters, or numeric constraints. |
 | [Understand update phases](https://learn.microsoft.com/en-us/azure/azure-local/update/update-phases-23h2?view=azloc-2602) | 0.30 | Explains phases of solution updates conceptually; no indication of numeric thresholds, limits, or decision matrices. |
-| [What is Azure Local VM management?](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-overview?view=azloc-2602) | 0.30 | Overview of VM management feature, benefits, and workflow; appears conceptual without detailed config tables, limits, or troubleshooting mappings. |
 | [What's new in VM migration?](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-whats-new?view=azloc-2602) | 0.30 | What’s new list of features; typically changelog-style without deep configuration tables or troubleshooting mappings. |
 | [Workload security](https://learn.microsoft.com/en-us/azure/azure-local/security-book/workload-security?view=azloc-2602) | 0.30 | Workload security overview (Trusted launch, Defender for Cloud); summary suggests conceptual guidance rather than concrete configuration or error mappings. |
 | [Azure Local VMs for multi-rack deployments](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-azure-arc-vm-management-overview?view=azloc-2602) | 0.20 | Brief overview of VM management feature and workflow; no indication of detailed configuration parameters, quotas, or error codes. |
@@ -381,6 +394,7 @@ category_descriptions:
 | [SDN technical reference](https://learn.microsoft.com/en-us/azure/azure-local/manage/sdn-technical-reference?view=azloc-2602) | 0.20 | Technical reference index/landing page aggregating SDN resources; no direct configuration, limits, or troubleshooting content. |
 | [Security concepts](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-security?view=azloc-2602) | 0.20 | Security overview describing posture and principles; lacks specific RBAC role names, config values, or compliance setting details. |
 | [Security foundation](https://learn.microsoft.com/en-us/azure/azure-local/security-book/security-foundation?view=azloc-2602) | 0.20 | Security foundation overview (SDL, certifications, supply chain); conceptual background, not actionable configuration or troubleshooting content. |
+| [What is Azure Local VM management?](https://learn.microsoft.com/en-us/azure/azure-local/manage/azure-arc-vm-management-overview?view=azloc-2602) | 0.20 | High-level overview of Azure Local VM management benefits, components, and workflow without specific limits, configuration tables, error codes, or decision matrices. Content is conceptual rather than detailed expert guidance. |
 | [What is Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/overview?view=azloc-2602) | 0.20 | High-level product overview and benefits; no detailed limits, configs, or decision matrices. |
 | [What's new in Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2602) | 0.20 | A 'what's new' feature summary; likely high-level descriptions of new capabilities without detailed limits, configuration tables, error codes, or decision matrices. |
 | [Conclusion](https://learn.microsoft.com/en-us/azure/azure-local/security-book/conclusion?view=azloc-2602) | 0.10 | Conclusion chapter summarizing security book; no detailed technical guidance or expert configuration knowledge. |

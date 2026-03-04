@@ -15,6 +15,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving Azure SRE Agent deployment, configuration,
     connectivity, and runtime issues, including common failure patterns and recommended
     fixes.
+skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
+  decision making, security, configuration, and integrations & coding patterns. Use
+  when building, debugging, or optimizing Azure Sre Agent applications. Not for Azure
+  Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency
+  (use azure-resiliency), Azure Security (use azure-security).
 ---
 # Azure Sre Agent Crawl Report
 

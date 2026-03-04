@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   configuration: 'Configuring how Functions apps run: app/host settings, bindings,
     triggers, plans, storage, networking, monitoring/telemetry, Durable Functions
@@ -28,6 +28,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Durable Functions and Azure Functions runtime
     issues, AZFD/AZFW error codes, storage/config problems, and Node.js/Python deployment
     or scheduling failures.
+skill_description: Expert knowledge for Azure Functions development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Functions applications. Not for Azure App
+  Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure
+  Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Functions Crawl Report
 
@@ -36,13 +42,13 @@ category_descriptions:
 - **Total Pages**: 361
 - **Fetched**: 361
 - **Fetch Failed**: 0
-- **Classified**: 296
-- **Unclassified**: 65
+- **Classified**: 295
+- **Unclassified**: 66
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 361
+- **Updated Pages**: 1
+- **Unchanged**: 360
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
@@ -50,7 +56,7 @@ category_descriptions:
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 1.7% |
+| architecture-patterns | 5 | 1.4% |
 | best-practices | 26 | 7.2% |
 | configuration | 41 | 11.4% |
 | decision-making | 22 | 6.1% |
@@ -59,9 +65,14 @@ category_descriptions:
 | limits-quotas | 8 | 2.2% |
 | security | 13 | 3.6% |
 | troubleshooting | 23 | 6.4% |
-| *(Unclassified)* | 65 | 18.0% |
+| *(Unclassified)* | 66 | 18.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-03-03T23:37:00.000Z
 
 ## Classified Pages
 
@@ -351,7 +362,6 @@ category_descriptions:
 | [Upgrade Durable Functions extension version](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-extension-upgrade) | deployment | 0.63 | Provides concrete steps and configuration changes to move to newer extension versions, including compatibility considerations; this is deployment/upgrade guidance. |
 | [Deploy Start/Stop VMs](https://learn.microsoft.com/en-us/azure/azure-functions/start-stop-v2/deploy) | deployment | 0.62 | Stepwise deployment of the Start/Stop VMs v2 solution, likely including required resources, roles, and region/plan constraints specific to this feature. |
 | [Guide to the standalone DF PowerShell SDK](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-powershell-v2-sdk-migration-guide) | decision-making | 0.62 | Explains benefits and changes when adopting the standalone SDK and guides upgrade decisions and steps, which is migration-focused decision guidance. |
-| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler) | architecture-patterns | 0.61 | Describes characteristics and behavior of the Durable Task Scheduler as an orchestration backend, including how durable execution is implemented; this is a product-specific execution/architecture pattern. |
 | [Developer guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference) | best-practices | 0.60 | Developer guidance article typically includes cross-language patterns, binding usage, and configuration details that are specific to Azure Functions rather than generic serverless concepts. |
 | [Express.js](https://learn.microsoft.com/en-us/azure/azure-functions/shift-expressjs) | decision-making | 0.60 | Provides concrete migration guidance from Express.js to Functions, including how to map middleware, routing, and request/response patterns, which is scenario-specific decision and design guidance. |
 | [Functions with Logic Apps](https://learn.microsoft.com/en-us/azure/azure-functions/functions-twitter-email) | integrations | 0.60 | Shows how Functions integrate into a Logic Apps workflow with Azure AI; includes product-specific configuration steps for cross-service integration. |
@@ -411,6 +421,7 @@ category_descriptions:
 | [IntelliJ IDEA](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-maven-intellij) | 0.30 | IntelliJ Java function creation tutorial; no evidence of detailed configuration tables or troubleshooting content. |
 | [Machine learning with TensorFlow](https://learn.microsoft.com/en-us/azure/azure-functions/functions-machine-learning-tensorflow) | 0.30 | Local-only ML tutorial combining TensorFlow and Functions; mostly generic coding and no product-specific configuration tables, limits, or security/diagnostic details. |
 | [Networking FAQ](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-faq) | 0.30 | Networking FAQ is likely conceptual Q&A and high-level guidance without detailed configuration tables, numeric thresholds, or error-code-based troubleshooting. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler) | 0.30 | From the summary, the page appears to be a conceptual description of the Durable Task Scheduler and where it can be used (Functions SKUs) without exposing concrete limits, configuration tables, error codes, or decision matrices. It does not clearly meet any sub-skill detection criteria such as numeric limits, specific configuration parameters, or troubleshooting mappings. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) | 0.30 | Visual Studio C# quickstart; focuses on creating and publishing a simple HTTP-triggered function. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/how-to-create-function-vs-code) | 0.30 | VS Code quickstart; primarily step-by-step creation and deployment, not a configuration or troubleshooting reference. |
 | [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container) | 0.30 | Appears to be a how-to/overview for running Azure Functions in containers within Azure Container Apps. From the summary, it does not clearly indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely a conceptual and procedural guide rather than expert-knowledge reference content. |

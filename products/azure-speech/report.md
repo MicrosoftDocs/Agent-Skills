@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-04'
 category_descriptions:
   configuration: 'Configuring Azure AI Speech behavior: audio inputs/outputs, batch
     jobs, storage and logging, SSML/phonemes, custom/fine-tuned voices, Voice Live
@@ -16,8 +16,8 @@ category_descriptions:
   integrations: Patterns and APIs for integrating Azure Speech (STT, TTS, avatars)
     with apps, telephony, Voice Live, OpenAI, function calling, batch flows, and custom/personal
     voice models.
-  troubleshooting: Diagnosing and fixing common Azure Speech issues (TTS, STT, SDK,
-    containers, Foundry), including error codes, deployment problems, and retrieving
+  troubleshooting: Diagnosing and fixing common Azure Speech issues (SDK, text-to-speech,
+    containers, Foundry), including CRL/compatibility problems and how to collect
     session/transcription IDs for support.
   best-practices: Best practices for speech recognition, custom voice data and recording,
     latency and memory tuning, Voice Live interactions, keyword/language detection,
@@ -25,19 +25,25 @@ category_descriptions:
   limits-quotas: 'Quotas, limits, and usage patterns for Azure Speech: batch TTS,
     custom/pro voice training & deployment, and short audio STT, plus throttling and
     capacity planning guidance.'
+skill_description: Expert knowledge for Azure AI Speech development including troubleshooting,
+  best practices, decision making, limits & quotas, security, configuration, integrations
+  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
+  AI Speech applications. Not for Azure Communication Services (use azure-communication-services),
+  Azure AI Bot Service (use azure-bot-service), Azure AI Immersive Reader (use azure-immersive-reader),
+  Azure Translator (use azure-translator).
 ---
 # Azure AI Speech Crawl Report
 
 ## Summary
 
-- **Total Pages**: 178
-- **Fetched**: 178
+- **Total Pages**: 179
+- **Fetched**: 179
 - **Fetch Failed**: 0
-- **Classified**: 107
+- **Classified**: 108
 - **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 178
 - **Deleted Pages**: 0
@@ -48,16 +54,20 @@ category_descriptions:
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 13 | 7.3% |
-| configuration | 33 | 18.5% |
-| decision-making | 16 | 9.0% |
-| deployment | 9 | 5.1% |
+| configuration | 33 | 18.4% |
+| decision-making | 16 | 8.9% |
+| deployment | 9 | 5.0% |
 | integrations | 18 | 10.1% |
 | limits-quotas | 5 | 2.8% |
 | security | 8 | 4.5% |
-| troubleshooting | 5 | 2.8% |
-| *(Unclassified)* | 71 | 39.9% |
+| troubleshooting | 6 | 3.4% |
+| *(Unclassified)* | 71 | 39.7% |
 
 ## Changes
+
+### New Pages
+
+- [SDK 1.48.2 CRL compatibility update](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2)
 
 ## Classified Pages
 
@@ -103,6 +113,7 @@ category_descriptions:
 | [Select a specific microphone input device](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-select-audio-input-devices) | configuration | 0.75 | Describes obtaining device IDs and using AudioConfig with constraints (friendly name vs ID); includes specific API usage patterns and gotchas unique to this SDK. |
 | [Use the Microsoft Audio Stack (MAS)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/audio-processing-speech-sdk) | configuration | 0.75 | Explains how to enable MAS in the SDK, including package requirements (Microsoft.CognitiveServices.Speech.Extension.MAS) and platform-specific setup—product-specific configuration details. |
 | [Voice Live telephony integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-telephony) | integrations | 0.75 | Solution template combining Voice Live API and Azure Communication Services; likely includes architecture and configuration details for telephony integration. |
+| [SDK 1.48.2 CRL compatibility update](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2) | troubleshooting | 0.74 | The page describes a specific breaking behavior (connection failures) tied to Azure AI Speech SDK versions prior to 1.48.2 on Linux and Android, caused by CRL caching and industry-wide CRL partitioning changes. It provides product- and version-specific guidance on what actions to take before a concrete date to avoid service disruption, which is effectively symptom → cause → resolution for a narrow, product-specific issue. This is expert operational knowledge that an LLM would not reliably infer from training data. |
 | [Batch processing with speech containers](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-batch-processing) | deployment | 0.70 | Describes using a batch processing container to scale transcription workloads across multiple endpoints; deployment and scaling pattern. |
 | [Configure the datastore](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-data-store-configuration) | configuration | 0.70 | Describes Speech CLI datastore behavior and lookup order (current directory, ./spx/data, built-in datastore) and how settings are stored; this is product-specific configuration knowledge not generally known. |
 | [Control and monitor connection status](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-control-connections) | configuration | 0.70 | Describes product-specific connection control behavior and APIs (Connection class, events, patterns) for Speech SDK, which are not generic knowledge and map to concrete configuration/usage patterns rather than concepts. |

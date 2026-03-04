@@ -16,22 +16,24 @@ This skill provides expert guidance for planning and executing cloud adoption us
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Getting Started | L36-L40 | Step-by-step checklist and best practices for planning, designing, and implementing a data mesh architecture on Azure, including governance, platform setup, and domain data products. |
-| Strategy | L41-L59 | Cloud and AI adoption strategy: business alignment, motivations, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, AVD, VMware, analytics, Oracle, SAP, hybrid/multicloud). |
-| Planning | L60-L90 | Planning cloud adoption: migration waves, workload assessments, modernization roadmaps, data/AI and analytics architectures, Oracle/SAP/AVD/VMware plans, skills readiness, and cost/capacity planning. |
-| Readiness & Landing Zones | L91-L218 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, automation/DevOps, and workload‑specific patterns (AVS, SAP, data, Oracle, Arc). |
-| Adoption Patterns | L219-L254 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure (AI agents, cloud-native apps, AVD, VMware, SAP, Oracle, and cloud-scale analytics/data lakes). |
-| Governance | L255-L297 | Cloud and data governance in Azure: policies, tagging, cost control, compliance, responsible AI, landing zones, Arc, AKS, SAP, and Purview-based data governance. |
-| Security | L298-L333 | Designing secure Azure landing zones, IAM/RBAC, Zero Trust networking, encryption, DevOps and AKS security, and workload-specific security for analytics, SAP, Oracle, and Arc. |
-| Operations & Management | L334-L380 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, analytics, Arc, Oracle, SAP), plus BCDR, observability, and DevOps for post-deployment management |
-| Organization & Teams | L381-L404 | Designing org structures, roles, RACI, and team topologies (CCoE, AI CoE, DevOps, ops, security, data/analytics) to align people, governance, and costs for Azure and AI adoption |
-| Adoption Scenarios | L405-L506 | End-to-end Azure adoption patterns and landing zone designs for AI, containers, data/analytics, VDI, SAP/Oracle/RHEL/VMware, covering governance, security, networking, identity, and operations. |
+| Getting Started | L38-L42 | Step-by-step checklist and best practices for planning, designing, and implementing a data mesh architecture on Azure, including governance, platform setup, and domain data products. |
+| Strategy | L43-L61 | Cloud and AI adoption strategy: business alignment, motivations, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, AVD, VMware, analytics, Oracle, SAP, hybrid/multicloud). |
+| Planning | L62-L92 | Planning cloud adoption: migration waves, workload assessments, modernization roadmaps, data/AI and analytics architectures, Oracle/SAP/AVD/VMware plans, skills readiness, and cost/capacity planning. |
+| Readiness & Landing Zones | L93-L220 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, automation/DevOps, and workload‑specific patterns (AVS, SAP, data, Oracle, Arc). |
+| Adoption Patterns | L221-L256 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure (AI agents, cloud-native apps, AVD, VMware, SAP, Oracle, and cloud-scale analytics/data lakes). |
+| Governance | L257-L299 | Cloud and data governance in Azure: policies, tagging, cost control, compliance, responsible AI, landing zones, Arc, AKS, SAP, and Purview-based data governance. |
+| Security | L300-L335 | Designing secure Azure landing zones, IAM/RBAC, Zero Trust networking, encryption, DevOps and AKS security, and workload-specific security for analytics, SAP, Oracle, and Arc. |
+| Operations & Management | L336-L382 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, analytics, Arc, Oracle, SAP), plus BCDR, observability, and DevOps for post-deployment management |
+| Organization & Teams | L383-L406 | Designing org structures, roles, RACI, and team topologies (CCoE, AI CoE, DevOps, ops, security, data/analytics) to align people, governance, and costs for Azure and AI adoption |
+| Adoption Scenarios | L407-L508 | End-to-end Azure adoption patterns and landing zone designs for AI, containers, data/analytics, VDI, SAP/Oracle/RHEL/VMware, covering governance, security, networking, identity, and operations. |
 
 ### Getting Started
 | Topic | URL |

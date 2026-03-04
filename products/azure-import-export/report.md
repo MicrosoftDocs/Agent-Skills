@@ -8,6 +8,10 @@ category_descriptions:
     prerequisites needed before using Azure Import/Export for data transfer.
   troubleshooting: Diagnosing and fixing Azure Import/Export job failures, reading
     Import/Export logs, and repairing failed v1 import/export jobs and copy issues.
+skill_description: Expert knowledge for Azure Import Export development including
+  troubleshooting, limits & quotas, and security. Use when building, debugging, or
+  optimizing Azure Import Export applications. Not for Azure Data Box (use azure-data-box-family),
+  Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
 ---
 # Azure Import Export Crawl Report
 

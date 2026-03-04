@@ -15,6 +15,9 @@ category_descriptions:
   integrations: How to programmatically upload firmware for analysis in Azure using
     CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation
     patterns.
+skill_description: Expert knowledge for Azure Firmware Analysis development including
+  troubleshooting, best practices, security, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Firmware Analysis applications.
 ---
 # Azure Firmware Analysis Crawl Report
 

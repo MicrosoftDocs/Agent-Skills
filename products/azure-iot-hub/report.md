@@ -27,6 +27,12 @@ category_descriptions:
   decision-making: Guidance for choosing IoT Hub vs alternatives, tiers/scale, pricing,
     routing, comms patterns (C2D/D2C), monitoring methods, and when to use or disable
     disaster recovery.
+skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure IoT Hub applications. Not for Azure IoT
+  (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
+  azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 ---
 # Azure IoT Hub Crawl Report
 

@@ -14,6 +14,11 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Container Storage v1 install failures,
     pool creation/health issues, and related Kubernetes cluster/storage configuration
     problems.
+skill_description: Expert knowledge for Azure Container Storage development including
+  troubleshooting, decision making, limits & quotas, security, and configuration.
+  Use when building, debugging, or optimizing Azure Container Storage applications.
+  Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
+  Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files (use azure-netapp-files).
 ---
 # Azure Container Storage Crawl Report
 
@@ -25,6 +30,13 @@ category_descriptions:
 - **Classified**: 13
 - **Unclassified**: 20
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 33
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-storage/azure-container-storage.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -35,6 +47,8 @@ category_descriptions:
 | security | 1 | 3.0% |
 | troubleshooting | 1 | 3.0% |
 | *(Unclassified)* | 20 | 60.6% |
+
+## Changes
 
 ## Classified Pages
 

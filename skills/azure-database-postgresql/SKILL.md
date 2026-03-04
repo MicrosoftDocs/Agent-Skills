@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications.
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL applications. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Database for PostgreSQL. Covers tr
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L56 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS, HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage, capacity, and migration validation errors. |
-| Best Practices | L57-L74 | Performance, security, migration, and tooling best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and backups. |
-| Decision Making | L75-L87 | Guidance on sizing, scaling, and hosting Azure PostgreSQL, planning geo-replication/DR, and making cost/support decisions like reserved capacity and version extended support. |
-| Architecture & Design Patterns | L88-L98 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
-| Limits & Quotas | L99-L118 | Backup/restore behavior, geo-restore and recovery, storage types/limits/performance, quotas and capacity limits, replica and connection limits, and known migration/conversion constraints |
-| Security | L119-L149 | Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, TLS/SSL), firewall/VNet/Private Link, managed identities, encryption, auditing, roles, policies, and Defender for Cloud. |
-| Configuration | L150-L239 | Configuring Azure Database for PostgreSQL: server parameters, extensions, HA, maintenance, logging/monitoring, performance tuning, networking, migration settings, and WAL/replication options. |
-| Integrations & Coding Patterns | L240-L269 | Using Azure PostgreSQL with AI/ML (Azure AI, OpenAI, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools (Ora2Pg, pg_dump). |
-| Deployment | L270-L280 | CI/CD deployment to Azure PostgreSQL, major upgrades, Bicep-based provisioning, app deployments (Django/AKS, Web Apps + VNet), maintenance rollout behavior, and point-in-time restore. |
+| Troubleshooting | L37-L58 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS, HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage, capacity, and migration validation errors. |
+| Best Practices | L59-L76 | Performance, security, migration, and tooling best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and backups. |
+| Decision Making | L77-L89 | Guidance on sizing, scaling, and hosting Azure PostgreSQL, planning geo-replication/DR, and making cost/support decisions like reserved capacity and version extended support. |
+| Architecture & Design Patterns | L90-L100 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
+| Limits & Quotas | L101-L120 | Backup/restore behavior, geo-restore and recovery, storage types/limits/performance, quotas and capacity limits, replica and connection limits, and known migration/conversion constraints |
+| Security | L121-L151 | Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, TLS/SSL), firewall/VNet/Private Link, managed identities, encryption, auditing, roles, policies, and Defender for Cloud. |
+| Configuration | L152-L241 | Configuring Azure Database for PostgreSQL: server parameters, extensions, HA, maintenance, logging/monitoring, performance tuning, networking, migration settings, and WAL/replication options. |
+| Integrations & Coding Patterns | L242-L271 | Using Azure PostgreSQL with AI/ML (Azure AI, OpenAI, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools (Ora2Pg, pg_dump). |
+| Deployment | L272-L282 | CI/CD deployment to Azure PostgreSQL, major upgrades, Bicep-based provisioning, app deployments (Django/AKS, Web Apps + VNet), maintenance rollout behavior, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |

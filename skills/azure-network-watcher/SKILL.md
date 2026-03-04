@@ -1,6 +1,6 @@
 ---
 name: azure-network-watcher
-description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Network Watcher applications.
+description: Expert knowledge for Azure Network Watcher development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Network Watcher applications. Not for Azure Monitor (use azure-monitor), Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Network Watcher. Covers troublesho
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L41 | Diagnosing and automating troubleshooting for outbound connectivity, NSG/admin rules, and VPN gateway/on-premises VPN issues using Network Watcher, Azure CLI, PowerShell, and Automation. |
-| Decision Making | L42-L48 | Guidance for migrating network monitoring: moving from classic Connection Monitor and Network Performance Monitor tests, and switching NSG flow logs to VNet flow logs. |
-| Limits & Quotas | L49-L53 | How to configure and run Network Watcher packet capture, storage and filtering options, and the key limits/quotas (size, duration, concurrency) that apply to captures |
-| Security | L54-L60 | Configuring secure access to Network Watcher with RBAC, using Traffic Analytics for Zero Trust segmentation, and protecting VNet flow logs with managed identities. |
-| Configuration | L61-L76 | Configuring and governing Network Watcher logging: Connection Monitor AMA setup, NSG and VNet flow logs, Traffic Analytics schemas, filters, ARM/Bicep/Policy deployment and management. |
-| Integrations & Coding Patterns | L77-L83 | Using PowerShell, KQL, Power BI, and Azure Functions to parse NSG flow logs, visualize traffic, run analytics, and trigger packet captures from alerts. |
+| Troubleshooting | L34-L43 | Diagnosing and automating troubleshooting for outbound connectivity, NSG/admin rules, and VPN gateway/on-premises VPN issues using Network Watcher, Azure CLI, PowerShell, and Automation. |
+| Decision Making | L44-L50 | Guidance for migrating network monitoring: moving from classic Connection Monitor and Network Performance Monitor tests, and switching NSG flow logs to VNet flow logs. |
+| Limits & Quotas | L51-L55 | How to configure and run Network Watcher packet capture, storage and filtering options, and the key limits/quotas (size, duration, concurrency) that apply to captures |
+| Security | L56-L62 | Configuring secure access to Network Watcher with RBAC, using Traffic Analytics for Zero Trust segmentation, and protecting VNet flow logs with managed identities. |
+| Configuration | L63-L78 | Configuring and governing Network Watcher logging: Connection Monitor AMA setup, NSG and VNet flow logs, Traffic Analytics schemas, filters, ARM/Bicep/Policy deployment and management. |
+| Integrations & Coding Patterns | L79-L85 | Using PowerShell, KQL, Power BI, and Azure Functions to parse NSG flow logs, visualize traffic, run analytics, and trigger packet captures from alerts. |
 
 ### Troubleshooting
 | Topic | URL |

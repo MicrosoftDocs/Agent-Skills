@@ -26,6 +26,13 @@ category_descriptions:
     security guarantees, limitations, performance, pricing, and operational best practices.'
   limits-quotas: Guidance on choosing sizes, quotas, and deployment limits for Intel
     SGX-enabled VMs in Azure, including capacity planning and scaling considerations.
+skill_description: Expert knowledge for Azure Confidential Computing development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Confidential Computing applications.
+  Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
+  Azure Dedicated HSM (use azure-dedicated-hsm).
 ---
 # Azure Confidential Computing Crawl Report
 

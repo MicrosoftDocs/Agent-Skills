@@ -1,6 +1,6 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications.
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Machine Learning applications. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-02"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Machine Learning. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L70 | Diagnosing and fixing Azure ML runtime issues: pipelines, AutoML, endpoints (online/batch), Kubernetes, networking (VNet/private), environments/images, prompt flow, and known platform issues. |
-| Best Practices | L71-L93 | Best practices for Azure ML training, inference, AutoML, prompt flow, monitoring, cost/compute optimization, security/ethics, and performance tuning for classic ML and generative AI. |
-| Decision Making | L94-L118 | Guidance on Azure ML design choices: algorithms, training, networking, cost, DR, data labeling, and detailed migration/upgrade paths from AML v1 to v2 across jobs, data, compute, and workspaces |
-| Architecture & Design Patterns | L119-L126 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
-| Limits & Quotas | L127-L135 | Azure ML deployment limits: regional/sovereign availability, quota management, supported VM SKUs for managed endpoints, and capacity planning against service limits. |
-| Security | L136-L194 | Securing Azure ML: encryption, auth/RBAC, managed identities, secrets, network isolation/VNets, private endpoints, policy/compliance, and secure access to data, endpoints, and on-prem resources. |
-| Configuration | L195-L466 | Configuring Azure ML components, jobs, compute, data, monitoring, and prompt flow via studio, SDK, CLI, and YAML, including AutoML, environments, registries, and production deployments. |
-| Integrations & Coding Patterns | L467-L508 | Integrating Azure ML with data/storage, Spark, Databricks, Synapse, MLflow, REST, prompt flow, and external services to move data, run jobs, deploy models, and trigger batch/online endpoints. |
-| Deployment | L509-L555 | Deploying and operationalizing models and prompt flows in Azure ML: online/batch endpoints, MLflow, Triton, CI/CD, MLOps/GenAIOps, rollouts, cross-workspace use, and production pipelines. |
+| Troubleshooting | L37-L72 | Diagnosing and fixing Azure ML runtime issues: pipelines, AutoML, endpoints (online/batch), Kubernetes, networking (VNet/private), environments/images, prompt flow, and known platform issues. |
+| Best Practices | L73-L95 | Best practices for Azure ML training, inference, AutoML, prompt flow, monitoring, cost/compute optimization, security/ethics, and performance tuning for classic ML and generative AI. |
+| Decision Making | L96-L120 | Guidance on Azure ML design choices: algorithms, training, networking, cost, DR, data labeling, and detailed migration/upgrade paths from AML v1 to v2 across jobs, data, compute, and workspaces |
+| Architecture & Design Patterns | L121-L128 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
+| Limits & Quotas | L129-L137 | Azure ML deployment limits: regional/sovereign availability, quota management, supported VM SKUs for managed endpoints, and capacity planning against service limits. |
+| Security | L138-L196 | Securing Azure ML: encryption, auth/RBAC, managed identities, secrets, network isolation/VNets, private endpoints, policy/compliance, and secure access to data, endpoints, and on-prem resources. |
+| Configuration | L197-L468 | Configuring Azure ML components, jobs, compute, data, monitoring, and prompt flow via studio, SDK, CLI, and YAML, including AutoML, environments, registries, and production deployments. |
+| Integrations & Coding Patterns | L469-L510 | Integrating Azure ML with data/storage, Spark, Databricks, Synapse, MLflow, REST, prompt flow, and external services to move data, run jobs, deploy models, and trigger batch/online endpoints. |
+| Deployment | L511-L557 | Deploying and operationalizing models and prompt flows in Azure ML: online/batch endpoints, MLflow, Triton, CI/CD, MLOps/GenAIOps, rollouts, cross-workspace use, and production pipelines. |
 
 ### Troubleshooting
 | Topic | URL |

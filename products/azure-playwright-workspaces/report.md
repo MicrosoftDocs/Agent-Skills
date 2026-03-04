@@ -14,6 +14,10 @@ category_descriptions:
     enabling monitoring, and understanding available metrics and logs for observability.'
   troubleshooting: Diagnosing and fixing Playwright Testing run failures and resolving
     AADSTS7000112/Azure AD sign-in issues for accessing the Playwright portal.
+skill_description: Expert knowledge for Playwright Workspaces development including
+  troubleshooting, best practices, decision making, limits & quotas, security, and
+  configuration. Use when building, debugging, or optimizing Playwright Workspaces
+  applications.
 ---
 # Playwright Workspaces Crawl Report
 

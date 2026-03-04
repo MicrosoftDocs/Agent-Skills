@@ -1,6 +1,6 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications.
+description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Api Center applications. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Api Center. Covers best practices,
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L31-L35 | Best practices for enforcing API governance early in development using the Azure API Center VS Code extension, including policy checks, linting, and design-time validation. |
-| Security | L36-L41 | Configuring API key and OAuth2 security for APIs in API Center, and managing who can access the API Center portal via the VS Code extension. |
-| Configuration | L42-L56 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup, and inventory management. |
-| Integrations & Coding Patterns | L57-L65 | Patterns and tools for integrating API Center with Azure API Management, Amazon API Gateway, Copilot Studio, and automating sync/notifications via Logic Apps and Teams. |
-| Deployment | L66-L70 | Automating API registration into API Center via GitHub Actions and instructions for self-hosting/customizing the Azure API Center portal implementation. |
+| Best Practices | L33-L37 | Best practices for enforcing API governance early in development using the Azure API Center VS Code extension, including policy checks, linting, and design-time validation. |
+| Security | L38-L43 | Configuring API key and OAuth2 security for APIs in API Center, and managing who can access the API Center portal via the VS Code extension. |
+| Configuration | L44-L58 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup, and inventory management. |
+| Integrations & Coding Patterns | L59-L67 | Patterns and tools for integrating API Center with Azure API Management, Amazon API Gateway, Copilot Studio, and automating sync/notifications via Logic Apps and Teams. |
+| Deployment | L68-L72 | Automating API registration into API Center via GitHub Actions and instructions for self-hosting/customizing the Azure API Center portal implementation. |
 
 ### Best Practices
 | Topic | URL |

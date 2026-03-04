@@ -5,6 +5,10 @@ category_descriptions:
     renewals, and how to monitor, manage, or avoid hitting those usage caps.
   troubleshooting: Diagnosing and resolving Azure Dev Tools for Teaching sign-in issues,
     including common login errors, account problems, and access troubleshooting steps.
+skill_description: Expert knowledge for Azure Education Hub development including
+  troubleshooting, and limits & quotas. Use when building, debugging, or optimizing
+  Azure Education Hub applications. Not for Azure Lab Services (use azure-lab-services),
+  Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Desktop (use azure-virtual-desktop).
 ---
 # Azure Education Hub Crawl Report
 

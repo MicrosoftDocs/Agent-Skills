@@ -16,19 +16,21 @@ This skill provides expert guidance for designing, assessing, and optimizing Azu
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L33-L41 | Checklists to review Azure architectures for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
-| Recommendations | L42-L116 | Guidance on cost optimization, performance, reliability, security, DevOps, and sustainability practices for designing, operating, and improving Azure workloads end to end. |
-| Design Principles | L117-L135 | Design principles and patterns for cost, reliability, performance, security, operations, sustainability, and specific workloads (AI, SAP, SaaS, Oracle, AVD, AVS) using Azure WAF guidance |
-| Tradeoffs | L136-L145 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L146-L197 | End-to-end architecture, security, operations, networking, monitoring, and cost-optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
-| Workload Patterns | L198-L262 | End-to-end workload design guidance for AI, mission-critical, Oracle, SaaS, SAP, and sustainable solutions on Azure, covering platforms, data, networking, security, operations, and DevOps. |
-| Assessment Questions | L263-L276 | Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions against Well-Architected pillars (cost, security, reliability, performance, operations, mission-critical readiness). |
+| Design Review Checklists | L35-L43 | Checklists to review Azure architectures for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
+| Recommendations | L44-L118 | Guidance on cost optimization, performance, reliability, security, DevOps, and sustainability practices for designing, operating, and improving Azure workloads end to end. |
+| Design Principles | L119-L137 | Design principles and patterns for cost, reliability, performance, security, operations, sustainability, and specific workloads (AI, SAP, SaaS, Oracle, AVD, AVS) using Azure WAF guidance |
+| Tradeoffs | L138-L147 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
+| Service Guides | L148-L199 | End-to-end architecture, security, operations, networking, monitoring, and cost-optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
+| Workload Patterns | L200-L264 | End-to-end workload design guidance for AI, mission-critical, Oracle, SaaS, SAP, and sustainable solutions on Azure, covering platforms, data, networking, security, operations, and DevOps. |
+| Assessment Questions | L265-L278 | Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions against Well-Architected pillars (cost, security, reliability, performance, operations, mission-critical readiness). |
 
 ### Design Review Checklists
 | Topic | URL |

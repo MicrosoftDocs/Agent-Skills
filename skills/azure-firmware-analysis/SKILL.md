@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Firmware Analysis. Covers troubles
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L31-L35 | Diagnosing and resolving common Azure Firmware Analysis issues, including job failures, analysis errors, portal problems, and typical configuration or usage questions. |
-| Best Practices | L36-L41 | Guidance on running Azure firmware analysis, interpreting SBOM extractor file paths, and using results to understand and assess firmware components and vulnerabilities. |
-| Security | L42-L47 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
-| Integrations & Coding Patterns | L48-L54 | How to programmatically upload firmware for analysis in Azure using CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation patterns. |
-| Deployment | L55-L60 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
+| Troubleshooting | L33-L37 | Diagnosing and resolving common Azure Firmware Analysis issues, including job failures, analysis errors, portal problems, and typical configuration or usage questions. |
+| Best Practices | L38-L43 | Guidance on running Azure firmware analysis, interpreting SBOM extractor file paths, and using results to understand and assess firmware components and vulnerabilities. |
+| Security | L44-L49 | Managing secure access to Azure Firmware Analysis using service principals and configuring role-based access control (RBAC) permissions for users and apps |
+| Integrations & Coding Patterns | L50-L56 | How to programmatically upload firmware for analysis in Azure using CLI, PowerShell, or Python, including auth, commands/scripts, and basic automation patterns. |
+| Deployment | L57-L62 | How to provision and deploy an Azure Firmware Analysis workspace using infrastructure-as-code tools: ARM templates, Bicep, and Terraform configuration and setup. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -25,6 +25,13 @@ category_descriptions:
   deployment: How to deploy Azure Firewall (including Premium) and IP Groups using
     ARM templates, Bicep, or Terraform, with example templates and infrastructure-as-code
     guidance.
+skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Firewall applications. Not for Azure Web
+  Application Firewall (use azure-web-application-firewall), Azure Firewall Manager
+  (use azure-firewall-manager), Azure Virtual Network (use azure-virtual-network),
+  Azure Networking (use azure-networking).
 ---
 # Azure Firewall Crawl Report
 

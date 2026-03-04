@@ -1,6 +1,6 @@
 ---
 name: azure-event-hubs
-description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Hubs applications.
+description: Expert knowledge for Azure Event Hubs development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Event Hubs applications. Not for Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Event Hubs. Covers troubleshooting
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L47 | Diagnosing and fixing Event Hubs runtime issues: Kafka/AMQP errors, .NET/legacy exceptions, ARM failures, auth problems, checkpoint store, and connectivity (transient/permanent). |
-| Best Practices | L48-L53 | Guidance on routing events between AMQP, Kafka, and HTTPS, and on designing/scaling Event Hubs with partitions and throughput units for performance and capacity. |
-| Decision Making | L54-L59 | Guidance on choosing the right Event Hubs tier and planning migrations from Apache Kafka, including feature, cost, and compatibility considerations. |
-| Architecture & Design Patterns | L60-L67 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
-| Limits & Quotas | L68-L76 | Event Hubs capacity, quotas, and throughput limits, plus auto-inflate, geo-disaster recovery, and governance via application groups and FAQs on behavior and scaling. |
-| Security | L77-L103 | Security, auth, and compliance for Event Hubs: Entra ID, SAS, RBAC, managed identities, encryption, TLS, network isolation (VNet, Private Link, NSP, firewalls), and Azure Policy governance. |
-| Configuration | L104-L116 | Configuring Event Hubs behavior: partitions, retention, compaction, scaling, replication, metrics/logs, governance (application groups), and Premium processing units. |
-| Integrations & Coding Patterns | L117-L134 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
-| Deployment | L135-L141 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
+| Troubleshooting | L37-L49 | Diagnosing and fixing Event Hubs runtime issues: Kafka/AMQP errors, .NET/legacy exceptions, ARM failures, auth problems, checkpoint store, and connectivity (transient/permanent). |
+| Best Practices | L50-L55 | Guidance on routing events between AMQP, Kafka, and HTTPS, and on designing/scaling Event Hubs with partitions and throughput units for performance and capacity. |
+| Decision Making | L56-L61 | Guidance on choosing the right Event Hubs tier and planning migrations from Apache Kafka, including feature, cost, and compatibility considerations. |
+| Architecture & Design Patterns | L62-L69 | Patterns and guidance for Event Hubs reliability: availability/consistency design, geo-disaster recovery, and building/operating replication tasks (often with Azure Functions). |
+| Limits & Quotas | L70-L78 | Event Hubs capacity, quotas, and throughput limits, plus auto-inflate, geo-disaster recovery, and governance via application groups and FAQs on behavior and scaling. |
+| Security | L79-L105 | Security, auth, and compliance for Event Hubs: Entra ID, SAS, RBAC, managed identities, encryption, TLS, network isolation (VNet, Private Link, NSP, firewalls), and Azure Policy governance. |
+| Configuration | L106-L118 | Configuring Event Hubs behavior: partitions, retention, compaction, scaling, replication, metrics/logs, governance (application groups), and Premium processing units. |
+| Integrations & Coding Patterns | L119-L136 | Patterns and code for integrating Event Hubs with .NET, Kafka (clients, Streams, Connect, Debezium), Flink, Spark, Akka, schema/JSON registry, and adding metadata or managing hubs programmatically |
+| Deployment | L137-L143 | Guides for deploying Event Hubs with Kafka mirroring (MirrorMaker 1/2), setting up geo-replication, and running/local-testing Event Hubs apps using the emulator. |
 
 ### Troubleshooting
 | Topic | URL |

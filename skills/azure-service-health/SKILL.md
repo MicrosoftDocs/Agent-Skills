@@ -1,9 +1,9 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Health applications.
+description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Health applications. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Service Health. Covers troubleshoo
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L32-L36 | Understanding VM Resource Health annotations, causes of degraded/unavailable states, and step-by-step troubleshooting for underlying Azure infrastructure issues |
-| Limits & Quotas | L37-L41 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types |
-| Security | L42-L51 | Managing access and routing for Azure Service Health security advisories, including tenant vs subscription roles, RBAC, elevated permissions, and configuring correct recipients for security notifications. |
-| Configuration | L52-L63 | Configuring Service/Resource Health alerts and queries using portal, ARM, Bicep, PowerShell, and Resource Graph, plus reference for supported health check resource types. |
-| Integrations & Coding Patterns | L64-L74 | Using APIs, Resource Graph, and webhooks to query Service/Resource Health data and integrate alerts with tools like OpsGenie, PagerDuty, and ServiceNow |
-| Deployment | L75-L78 | Using Azure Policy to create, configure, and manage Service Health alert rules at scale across subscriptions and resource groups |
+| Troubleshooting | L34-L38 | Understanding VM Resource Health annotations, causes of degraded/unavailable states, and step-by-step troubleshooting for underlying Azure infrastructure issues |
+| Limits & Quotas | L39-L43 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types |
+| Security | L44-L53 | Managing Service Health security advisories, RBAC/tenant vs subscription admin access, and routing security notifications to the right users/recipients |
+| Configuration | L54-L65 | Configuring Service/Resource Health alerts and queries using portal, ARM, Bicep, PowerShell, and Resource Graph, plus reference for supported health check resource types. |
+| Integrations & Coding Patterns | L66-L76 | Using APIs, Resource Graph, and webhooks to query Service/Resource Health data and integrate alerts with tools like OpsGenie, PagerDuty, and ServiceNow |
+| Deployment | L77-L80 | Using Azure Policy to create, configure, and manage Service Health alert rules at scale across subscriptions and resource groups |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,7 +47,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Understand tenant admin roles for Service Health access | https://learn.microsoft.com/en-us/azure/service-health/admin-access-reference |
 | Use Health history pane with RBAC for past events | https://learn.microsoft.com/en-us/azure/service-health/health-history-overview |
 | Configure subscription access for Azure Security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-add-subscription |
-| Use Security advisories pane and required elevated roles | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-elevated-access |
+| Access and interpret Azure Service Health security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-elevated-access |
 | Route Azure security notifications to correct recipients | https://learn.microsoft.com/en-us/azure/service-health/stay-informed-security |
 | Configure subscription vs tenant admin access in Service Health | https://learn.microsoft.com/en-us/azure/service-health/subscription-vs-tenant |
 

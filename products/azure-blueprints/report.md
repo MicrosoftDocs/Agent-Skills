@@ -15,6 +15,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Blueprint creation/assignment
     errors, including policy, role, and resource lock issues, and interpreting error
     messages during deployment.
+skill_description: Expert knowledge for Azure Blueprints development including troubleshooting,
+  architecture & design patterns, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Blueprints applications.
+  Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
+  Azure Resource Graph (use azure-resource-graph), Azure Deployment Environments (use
+  azure-deployment-environments).
 ---
 # Azure Blueprints Crawl Report
 

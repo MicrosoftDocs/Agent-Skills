@@ -1,9 +1,9 @@
 ---
 name: azure-advisor
-description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications.
+description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-03"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Advisor Skill
@@ -16,18 +16,20 @@ This skill provides expert guidance for Azure Advisor. Covers best practices, de
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L45 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk fixes, savings export, and resiliency reviews. |
-| Decision Making | L46-L55 | Using Advisor insights to prioritize critical risks, estimate cost impact, plan for service retirements/migrations, and use workbooks to analyze cost and reliability decisions |
-| Limits & Quotas | L56-L60 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
-| Security | L61-L66 | Managing who can view or dismiss Azure Advisor recommendations using Azure RBAC, including configuring roles, permissions, and access control for Advisor. |
-| Configuration | L67-L76 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
-| Integrations & Coding Patterns | L77-L81 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto queries and sample patterns to filter, analyze, and report on Advisor data at scale |
+| Best Practices | L34-L47 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk fixes, savings export, and resiliency reviews. |
+| Decision Making | L48-L56 | Using Advisor insights to prioritize critical risks, estimate cost impact, plan for service retirements/migrations, and use workbooks to analyze cost and reliability decisions |
+| Limits & Quotas | L57-L61 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
+| Security | L62-L67 | Managing who can view or dismiss Azure Advisor recommendations using Azure RBAC, including configuring roles, permissions, and access control for Advisor. |
+| Configuration | L68-L77 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
+| Integrations & Coding Patterns | L78-L82 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto queries and sample patterns to filter, analyze, and report on Advisor data at scale |
 
 ### Best Practices
 | Topic | URL |
@@ -48,7 +50,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 |-------|-----|
 | Use Azure Advisor Critical Risks for key resources | https://learn.microsoft.com/en-us/azure/advisor/advisor-critical-risks |
 | Assess cost impact of Azure Advisor recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-evaluate-cost-implications-of-recommendations |
-| Use Advisor service upgrade and retirement recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations |
 | Analyze and optimize Azure costs with the Advisor workbook | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization |
 | Evaluate application reliability using the Advisor workbook | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-reliability |
 | Plan migrations for Azure service retirements with Advisor | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement |

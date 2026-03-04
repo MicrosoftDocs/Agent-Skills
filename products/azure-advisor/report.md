@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-03'
 category_descriptions:
   configuration: 'Setting up and customizing Azure Advisor: creating alerts (portal,
     ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring
@@ -18,6 +18,11 @@ category_descriptions:
   limits-quotas: Advisor feature availability, limits, and differences when running
     in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations
     are supported.
+skill_description: Expert knowledge for Azure Advisor development including best practices,
+  decision making, limits & quotas, security, configuration, and integrations & coding
+  patterns. Use when building, debugging, or optimizing Azure Advisor applications.
+  Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
 ---
 # Azure Advisor Crawl Report
 
@@ -26,13 +31,13 @@ category_descriptions:
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 27
-- **Unclassified**: 6
+- **Classified**: 26
+- **Unclassified**: 7
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 1
+- **Unchanged**: 32
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -42,13 +47,18 @@ category_descriptions:
 |------|-------|------------|
 | best-practices | 10 | 30.3% |
 | configuration | 6 | 18.2% |
-| decision-making | 6 | 18.2% |
+| decision-making | 5 | 15.2% |
 | integrations | 2 | 6.1% |
 | limits-quotas | 1 | 3.0% |
 | security | 2 | 6.1% |
-| *(Unclassified)* | 6 | 18.2% |
+| *(Unclassified)* | 7 | 21.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations)
+  - Updated: 2026-02-20T13:05:00.000Z → 2026-03-03T13:04:00.000Z
 
 ## Classified Pages
 
@@ -64,7 +74,6 @@ category_descriptions:
 | [Optimize virtual machine spend by resizing or shutting down underutilized instances](https://learn.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations) | best-practices | 0.70 | Details how Advisor uses ML to detect underutilized VMs/VMSS and recommends resize/shutdown actions; includes product-specific cost optimization behavior and patterns. |
 | [Service Retirement workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement) | decision-making | 0.70 | Service Retirement workbook is used to understand impact of retirements and plan migration paths; directly supports migration and upgrade decisions. |
 | [Sovereign clouds](https://learn.microsoft.com/en-us/azure/advisor/advisor-sovereign-clouds) | limits-quotas | 0.70 | Explicitly described as listing feature variations and usage limitations for sovereign clouds; likely includes per-cloud constraints and disabled features, which are limit/usage details. |
-| [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations) | decision-making | 0.70 | Guides how to interpret and act on upgrade/retirement recommendations, helping decide migration or upgrade paths for impacted services. |
 | [Use tags to filter recommendations and score](https://learn.microsoft.com/en-us/azure/advisor/advisor-tag-filtering) | configuration | 0.70 | Explains using resource tag filters to scope recommendations and scores by workload/environment/team; includes product-specific tag-based configuration behavior. |
 | [Calculate total cost savings](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-calculate-total-cost-savings) | best-practices | 0.65 | Provides concrete guidance on exporting cost savings data and aggregating yearly savings using Advisor’s cost fields; product-specific cost evaluation pattern. |
 | [Cost Optimization workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization) | decision-making | 0.65 | Cost Optimization workbook provides cost insights and recommendations aligned to Well-Architected cost pillar, helping choose optimization actions based on quantified data. |
@@ -90,5 +99,6 @@ category_descriptions:
 | [Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started) | 0.30 | Portal getting-started guide; mostly navigation and basic usage. The 24-hour note is a single timing detail but not a structured limits/config reference. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/advisor/view-recommendations) | 0.25 | Describes viewing and filtering recommendations to reduce noise; appears to be UI guidance without detailed config parameters or limits. |
 | [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view) | 0.20 | Covers UI filtering and grouping of recommendations; mostly portal usage without detailed configuration tables or expert-only patterns. |
+| [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations) | 0.20 | Page explains how to view and act on Azure Advisor service upgrade/retirement recommendations but does not include numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices with quantified trade-offs. It is primarily conceptual and procedural guidance rather than expert configuration, limits, or troubleshooting content. |
 | [What is Azure Advisor?](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview) | 0.20 | High-level introduction and FAQ for Azure Advisor; primarily conceptual overview without detailed limits, configs, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/advisor/advisor-release-notes) | 0.10 | Release notes and change log content; not a stable expert-knowledge skill pattern for the agent. |

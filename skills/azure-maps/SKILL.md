@@ -3,7 +3,7 @@ name: azure-maps
 description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Maps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-04"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Maps. Covers troubleshooting, best
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and fixing common Azure Maps Weather API issues, including authentication, request/response errors, throttling, and configuration or usage problems. |
-| Best Practices | L39-L49 | Guidance on securing Azure Maps apps, rendering custom/static data, correct copyright attribution, routing/search best practices, accessibility, and Web SDK performance optimization. |
-| Decision Making | L50-L59 | Guidance on pricing tiers, billing/usage, and how to migrate or replace Bing/Google Maps and Power BI map solutions with Azure Maps and related Azure services |
-| Architecture & Design Patterns | L60-L65 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |
-| Limits & Quotas | L66-L75 | Azure Maps service limits, QPS quotas, and global coverage details for geocoding, rendering/tiles, routing, traffic, and weather data by region and pricing tier |
-| Security | L76-L89 | Securing Azure Maps access: auth methods (Entra ID, SAS), SPA/web/daemon/device scenarios, and Power BI integration security and data residency settings. |
-| Configuration | L90-L114 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
-| Integrations & Coding Patterns | L115-L177 | Patterns and code for integrating Azure Maps into web/mobile/Power BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO, and migrating from Bing/Google Maps. |
+| Troubleshooting | L36-L40 | Diagnosing and fixing common Azure Maps Weather API issues, including authentication, request/response errors, throttling, and configuration or usage problems. |
+| Best Practices | L41-L51 | Guidance on securing Azure Maps apps, rendering custom/static data, correct copyright attribution, routing/search best practices, accessibility, and Web SDK performance optimization. |
+| Decision Making | L52-L61 | Guidance on pricing tiers, billing/usage, and how to migrate or replace Bing/Google Maps and Power BI map solutions with Azure Maps and related Azure services |
+| Architecture & Design Patterns | L62-L67 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |
+| Limits & Quotas | L68-L77 | Coverage, limits, and capabilities of Azure Maps services: QPS rate limits, and regional support for geocoding, rendering/tiles, routing, traffic, and weather data. |
+| Security | L78-L91 | Securing Azure Maps access: auth methods (Entra ID, SAS), SPA/web/daemon/device scenarios, and Power BI integration security and data residency settings. |
+| Configuration | L92-L116 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
+| Integrations & Coding Patterns | L117-L179 | Patterns and code for integrating Azure Maps into web/mobile/Power BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO, and migrating from Bing/Google Maps. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -1,6 +1,6 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications.
+description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Container Instances. Covers troubl
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Diagnosing ACI deployment/runtime failures by viewing container logs/events, interpreting errors, and fixing common issues with images, networking, resources, and configuration. |
-| Best Practices | L40-L44 | Guidance on designing and running ACI workloads reliably: resource sizing, networking, storage, security, scaling, image management, and operational best practices. |
-| Decision Making | L45-L50 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
-| Architecture & Design Patterns | L51-L57 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
-| Limits & Quotas | L58-L65 | ACI CPU/memory limits, regional quota checks, standby pool caps, and VNet-related deployment constraints and planning for container instances |
-| Security | L66-L80 | Securing Azure Container Instances: TLS/HTTPS setup, image and secret protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and Azure Policy enforcement. |
-| Configuration | L81-L114 | Configuring ACI container groups: YAML, env vars, DNS, volumes, probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging, and monitoring. |
-| Deployment | L115-L118 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |
+| Troubleshooting | L36-L41 | Diagnosing ACI deployment/runtime failures by viewing container logs/events, interpreting errors, and fixing common issues with images, networking, resources, and configuration. |
+| Best Practices | L42-L46 | Guidance on designing and running ACI workloads reliably: resource sizing, networking, storage, security, scaling, image management, and operational best practices. |
+| Decision Making | L47-L52 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
+| Architecture & Design Patterns | L53-L59 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
+| Limits & Quotas | L60-L67 | ACI CPU/memory limits, regional quota checks, standby pool caps, and VNet-related deployment constraints and planning for container instances |
+| Security | L68-L82 | Securing Azure Container Instances: TLS/HTTPS setup, image and secret protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and Azure Policy enforcement. |
+| Configuration | L83-L116 | Configuring ACI container groups: YAML, env vars, DNS, volumes, probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging, and monitoring. |
+| Deployment | L117-L120 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |
 
 ### Troubleshooting
 | Topic | URL |

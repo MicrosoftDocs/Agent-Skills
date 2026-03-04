@@ -1,6 +1,6 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Api Builder applications.
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Api Builder applications. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,20 +16,22 @@ This skill provides expert guidance for Azure Data Api Builder. Covers troublesh
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | FAQ-style fixes for common Data API builder problems: config and connection errors, auth/authorization issues, deployment/runtime failures, and tips to diagnose and resolve them. |
-| Best Practices | L39-L45 | Configuring DAB for reliability and performance, securing and connecting it to data sources, and adding semantic metadata to SQL MCP entities for AI consumption. |
-| Decision Making | L46-L50 | Guidance on selecting Azure hosting options for Data API builder, comparing services (e.g., App Service, Functions, Container Apps) and trade-offs like cost, scalability, and management. |
-| Limits & Quotas | L51-L56 | Configuring and enforcing page size limits for GraphQL and REST queries in Data API builder using the first/$first parameters. |
-| Security | L57-L68 | Configuring auth and authorization in DAB: roles/permissions, EasyAuth, custom JWT and Entra ID, simulator auth, row-level security policies, and SQL MCP Server/database authentication. |
-| Configuration | L69-L121 | Configuring DAB: CLI-based config management, entities and relationships, data sources (incl. Cosmos DB), caching, secrets, env-specific configs, monitoring, logging, and full schema reference. |
-| Integrations & Coding Patterns | L122-L132 | Patterns for using DAB REST/GraphQL: upserts with If-Match, Location headers, $filter and select/projection, GraphQL filters, and SQL MCP DML tools for CRUD integration. |
-| Deployment | L133-L147 | Deploying and running Data API builder and SQL MCP Server on Azure (Container Apps/Instances, Cosmos DB, Azure SQL, AZD/CLI), plus platform support, local dev, and Azure AI Foundry integration. |
+| Troubleshooting | L36-L40 | FAQ-style fixes for common Data API builder problems: config and connection errors, auth/authorization issues, deployment/runtime failures, and tips to diagnose and resolve them. |
+| Best Practices | L41-L47 | Configuring DAB for reliability and performance, securing and connecting it to data sources, and adding semantic metadata to SQL MCP entities for AI consumption. |
+| Decision Making | L48-L52 | Guidance on selecting Azure hosting options for Data API builder, comparing services (e.g., App Service, Functions, Container Apps) and trade-offs like cost, scalability, and management. |
+| Limits & Quotas | L53-L58 | Configuring and enforcing page size limits for GraphQL and REST queries in Data API builder using the first/$first parameters. |
+| Security | L59-L70 | Configuring auth and authorization in DAB: roles/permissions, EasyAuth, custom JWT and Entra ID, simulator auth, row-level security policies, and SQL MCP Server/database authentication. |
+| Configuration | L71-L123 | Configuring DAB: CLI-based config management, entities and relationships, data sources (incl. Cosmos DB), caching, secrets, env-specific configs, monitoring, logging, and full schema reference. |
+| Integrations & Coding Patterns | L124-L134 | Patterns for using DAB REST/GraphQL: upserts with If-Match, Location headers, $filter and select/projection, GraphQL filters, and SQL MCP DML tools for CRUD integration. |
+| Deployment | L135-L149 | Deploying and running Data API builder and SQL MCP Server on Azure (Container Apps/Instances, Cosmos DB, Azure SQL, AZD/CLI), plus platform support, local dev, and Azure AI Foundry integration. |
 
 ### Troubleshooting
 | Topic | URL |

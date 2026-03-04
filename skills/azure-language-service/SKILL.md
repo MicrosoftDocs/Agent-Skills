@@ -1,6 +1,6 @@
 ---
 name: azure-language-service
-description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Language applications.
+description: Expert knowledge for Azure AI Language development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Language applications. Not for Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure AI Language. Covers troubleshootin
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and fixing common errors, low-accuracy results, and configuration issues in custom text classification and custom question answering projects in Azure AI Language. |
-| Best Practices | L41-L58 | Best practices for designing, labeling, and evaluating CLU, custom NER, text classification, and CQA projects, including multilingual handling, emojis, schemas, and autolabeling. |
-| Decision Making | L59-L67 | Guidance on when and how to migrate or transition Azure Language workloads (LUIS, QnA Maker, Text Analytics, Language Studio) and how to choose/manage resources for conversational QA. |
-| Architecture & Design Patterns | L68-L74 | Architectural guidance for CLU and custom text classification: choosing CLU vs orchestration workflows, and designing regional backup, redundancy, and failover strategies. |
-| Limits & Quotas | L75-L92 | Limits, quotas, and language/region support for Azure AI Language: rate/data caps, CLU and CQA model/job/container limits, per-call constraints, and supported languages for each feature. |
-| Security | L93-L102 | Security for Azure AI Language: encryption at rest, customer-managed keys, RBAC, managed identities, SAS tokens, and network isolation/Private Link for CQA resources. |
-| Configuration | L103-L129 | Configuring Azure AI Language projects and containers: CLU, NER, text classification, CQA, sentiment, summarization, and health—data formats, training, metrics, resources, and runtime options. |
-| Integrations & Coding Patterns | L130-L162 | How to call Azure Language/CLU/Health/Summarization/CQA APIs and SDKs, wire them into bots, Power Automate, and Foundry, and correctly handle async, parameters, and outputs |
-| Deployment | L163-L173 | How to deploy Azure AI Language models and projects (custom text/Q&A, NER, language detection, key phrases) across regions, containers, and AKS, including moving Q&A projects between resources. |
+| Troubleshooting | L37-L42 | Diagnosing and fixing common errors, low-accuracy results, and configuration issues in custom text classification and custom question answering projects in Azure AI Language. |
+| Best Practices | L43-L60 | Best practices for designing, labeling, and evaluating CLU, custom NER, text classification, and CQA projects, including multilingual handling, emojis, schemas, and autolabeling. |
+| Decision Making | L61-L69 | Guidance on when and how to migrate or transition Azure Language workloads (LUIS, QnA Maker, Text Analytics, Language Studio) and how to choose/manage resources for conversational QA. |
+| Architecture & Design Patterns | L70-L76 | Architectural guidance for CLU and custom text classification: choosing CLU vs orchestration workflows, and designing regional backup, redundancy, and failover strategies. |
+| Limits & Quotas | L77-L94 | Limits, quotas, and language/region support for Azure AI Language: rate/data caps, CLU and CQA model/job/container limits, per-call constraints, and supported languages for each feature. |
+| Security | L95-L104 | Security for Azure AI Language: encryption at rest, customer-managed keys, RBAC, managed identities, SAS tokens, and network isolation/Private Link for CQA resources. |
+| Configuration | L105-L131 | Configuring Azure AI Language projects and containers: CLU, NER, text classification, CQA, sentiment, summarization, and health—data formats, training, metrics, resources, and runtime options. |
+| Integrations & Coding Patterns | L132-L164 | How to call Azure Language/CLU/Health/Summarization/CQA APIs and SDKs, wire them into bots, Power Automate, and Foundry, and correctly handle async, parameters, and outputs |
+| Deployment | L165-L175 | How to deploy Azure AI Language models and projects (custom text/Q&A, NER, language detection, key phrases) across regions, containers, and AKS, including moving Q&A projects between resources. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -28,6 +28,13 @@ category_descriptions:
   limits-quotas: 'Configuring Service Fabric app upgrade settings: health policies,
     domains, timeouts, monitoring, and tuning parameters to make upgrades safe and
     reliable.'
+skill_description: Expert knowledge for Azure Service Fabric development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure Service Fabric applications. Not
+  for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
+  Apps (use azure-container-apps), Azure App Service (use azure-app-service), Azure
+  Cloud Services (use azure-cloud-services).
 ---
 # Azure Service Fabric Crawl Report
 

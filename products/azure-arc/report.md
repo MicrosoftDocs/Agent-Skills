@@ -28,6 +28,12 @@ category_descriptions:
   integrations: 'Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK
     usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel,
     Terraform, and Event Grid integration.'
+skill_description: Expert knowledge for Azure Arc development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Arc applications. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Stack Edge (use azure-stack-edge), Azure Virtual Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Arc Crawl Report
 
@@ -65,8 +71,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview)
-  - Updated: 2026-01-17T06:02:00.000Z → 2026-03-03T06:02:00.000Z
+- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes)
+  - Updated: 2026-02-11T18:19:00.000Z → 2026-03-03T12:03:00.000Z
 
 ## Classified Pages
 
@@ -478,7 +484,7 @@ category_descriptions:
 | [Quickstart](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/quickstart) | 0.20 | Quickstart for creating an Arc site is a procedural portal walkthrough without detailed configuration tables, limits, or product-specific troubleshooting mappings. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/release-notes) | 0.20 | Release notes overview; while detailed, it’s primarily change history and not a configuration, troubleshooting, or limits reference as defined by the sub-skill types. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes) | 0.20 | Release notes for Arc-enabled data services; change log rather than a stable expert-knowledge reference in the defined sub-skill categories. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes; version history and changes, but not configuration patterns or limits relevant as reusable skills. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes typically list version changes, fixes, and new features but not the structured limits, configuration matrices, error-code mappings, or decision tables required by the defined sub-skill types. The description indicates a changelog-style page without detailed quotas, config parameter tables, or troubleshooting mappings. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes) | 0.20 | Release notes typically list features and fixes but not the structured limits, configuration matrices, or troubleshooting mappings required by the sub-skill types. The summary indicates high-level change information rather than reusable expert configuration or diagnostic knowledge. |
 | [SQL Managed Instance enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-overview) | 0.20 | Service overview; conceptual description of SQL Managed Instance enabled by Azure Arc. |
 | [View connectivity status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-connectivity-status) | 0.20 | Viewing connectivity status is a UI usage guide; it doesn’t expose numeric limits, config matrices, or detailed error mappings. |

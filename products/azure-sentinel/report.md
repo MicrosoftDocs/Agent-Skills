@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-04'
 category_descriptions:
-  configuration: Configuring Microsoft Sentinel data ingestion, connectors, analytics/automation
-    rules, ASIM schemas, UEBA, SAP, data lake, retention, and health/auditing to control
-    how Sentinel operates.
+  configuration: 'Configuring Microsoft Sentinel: data connectors, retention, analytics
+    and automation rules, ASIM schemas, UEBA, SAP/AWS/GCP integrations, data lake,
+    notebooks, and health/auditing settings.'
   decision-making: 'Guidance on Sentinel design and migration decisions: SIEM/agent/automation
     migrations, pricing and cost control, data tiers/residency, connector choices,
     and feature availability across clouds.'
@@ -28,6 +28,12 @@ category_descriptions:
   limits-quotas: Limits, quotas, pricing, and retention tiers for Sentinel data, MCP
     server, search jobs, watchlists, ASIM, and workspace removal impact on stored
     logs and resources
+skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure Sentinel applications. Not for Azure Defender
+  For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure
+  Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
 ---
 # Azure Sentinel Crawl Report
 
@@ -41,8 +47,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 372
+- **Updated Pages**: 1
+- **Unchanged**: 371
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -52,16 +58,21 @@ category_descriptions:
 |------|-------|------------|
 | architecture-patterns | 12 | 3.2% |
 | best-practices | 23 | 6.2% |
-| configuration | 119 | 32.0% |
+| configuration | 120 | 32.3% |
 | decision-making | 34 | 9.1% |
 | deployment | 20 | 5.4% |
-| integrations | 42 | 11.3% |
+| integrations | 41 | 11.0% |
 | limits-quotas | 8 | 2.2% |
 | security | 10 | 2.7% |
 | troubleshooting | 7 | 1.9% |
 | *(Unclassified)* | 97 | 26.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [RestApiPoller data connectors API reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connector-connection-rules-reference)
+  - Updated: 2025-12-11T18:27:00.000Z → 2026-03-03T18:22:00.000Z
 
 ## Classified Pages
 
@@ -90,7 +101,6 @@ category_descriptions:
 | [Microsoft Sentinel SIEM service limits](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits) | limits-quotas | 0.90 | Explicitly a service limits article; these pages list concrete numeric limits and quotas per area, which are expert knowledge not reliably known from training. |
 | [Microsoft Sentinel provider class reference](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-provider-class-reference) | integrations | 0.90 | Class reference for MicrosoftSentinelProvider with methods and parameters; clearly an SDK integration reference with product-specific API surface and constraints. |
 | [Required ABAP permissions](https://learn.microsoft.com/en-us/azure/sentinel/sap/required-abap-authorizations) | security | 0.90 | Lists required ABAP authorizations/roles for the SAP user account; these are specific permission objects and scopes unique to this integration. |
-| [RestApiPoller data connectors API reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connector-connection-rules-reference) | integrations | 0.90 | Provides JSON fields and properties for RestApiPoller connector type and connection rules; detailed API/JSON configuration is an integration pattern specific to Sentinel. |
 | [SentinelAudit table reference](https://learn.microsoft.com/en-us/azure/sentinel/audit-table-reference) | configuration | 0.90 | Reference for SentinelAudit tables with field definitions for auditing; table schema and field semantics are detailed configuration/reference information unique to Sentinel. |
 | [SentinelHealth table reference](https://learn.microsoft.com/en-us/azure/sentinel/health-table-reference) | configuration | 0.90 | Reference for SentinelHealth tables with field-level details used for health monitoring; schema/field references are product-specific configuration data not derivable from general training. |
 | [Troubleshoot CEF and Syslog via AMA](https://learn.microsoft.com/en-us/azure/sentinel/cef-syslog-ama-troubleshooting) | troubleshooting | 0.90 | Explicit troubleshooting guide for CEF/Syslog via AMA with product-specific commands, configuration checks, and symptom-to-solution mappings. |
@@ -140,6 +150,7 @@ category_descriptions:
 | [Deploy the agent from the command line](https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-command-line) | deployment | 0.78 | Provides command-line deployment options for the SAP connector container; will list product-specific commands and parameters beyond generic deployment knowledge. |
 | [Deploy the agent with expert options](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-solution-deploy-alternate) | deployment | 0.78 | Describes expert/custom deployment of the SAP connector container, including on-prem and manual configurations; contains detailed deployment patterns and constraints. |
 | [Prepare your SAP environment](https://learn.microsoft.com/en-us/azure/sentinel/sap/preparing-sap) | configuration | 0.78 | Preparation steps for SAP to work with the Sentinel SAP connector will include SAP-specific configuration objects, parameter names, and required settings that are unique to this integration, beyond generic concepts. |
+| [RestApiPoller data connectors API reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connector-connection-rules-reference) | configuration | 0.78 | The page is a reference for RestApiPoller data connector JSON fields and properties in the Codeless Connector Framework. It describes specific configuration parameters, their names, structure, and allowed usage for building data connection rules. This is product-specific configuration detail that an LLM is unlikely to know from training, and it aligns with the configuration sub-skill definition (parameter references and configuration structure), not limits, troubleshooting, or general concepts. |
 | [Sentinel tables and connectors](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-tables-connectors-reference) | configuration | 0.78 | Provides a mapping between Sentinel tables and the connectors that ingest them; this is product-specific configuration/integration reference. |
 | [Connect threat intelligence platforms](https://learn.microsoft.com/en-us/azure/sentinel/connect-threat-intelligence-tip) | integrations | 0.76 | Connector article for TIP/custom feeds; includes configuration details and deprecation guidance for a specific Sentinel data connector. |
 | [Enable MDTI data connector](https://learn.microsoft.com/en-us/azure/sentinel/connect-mdti-data-connector) | integrations | 0.76 | Connector article for MDTI; includes connector parameters, setup steps, and behavior specific to this integration. |

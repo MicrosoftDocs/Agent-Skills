@@ -19,6 +19,11 @@ category_descriptions:
   limits-quotas: Supported file formats, data types, and size/usage limits for datasets
     and computations in Planetary Computer Pro, including quotas that affect how you
     process and store data.
+skill_description: Expert knowledge for Microsoft Planetary Computer Pro development
+  including troubleshooting, decision making, limits & quotas, security, configuration,
+  and integrations & coding patterns. Use when building, debugging, or optimizing
+  Microsoft Planetary Computer Pro applications. Not for Azure Open Datasets (use
+  azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use azure-data-explorer).
 ---
 # Microsoft Planetary Computer Pro Crawl Report
 

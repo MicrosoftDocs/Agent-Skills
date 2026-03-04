@@ -1,6 +1,6 @@
 ---
 name: azure-kubernetes-service
-description: Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service (AKS) applications.
+description: Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service (AKS) applications. Not for Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Kubernetes Service (AKS). Covers t
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L55 | Diagnosing and fixing AKS cluster issues: networking, DNS, kubelet and node health, upgrades, Windows containers, OSM, SNAT/UDP, Fleet Manager CRDs/logs, and security bulletins. |
-| Best Practices | L56-L103 | AKS best practices for reliability, security, cost, performance, networking, storage, upgrades, PCI, MLOps, GPUs, and large-scale operations, including Fleet and workload resiliency. |
-| Decision Making | L104-L153 | Guidance for architectural and migration decisions in AKS: networking, VM/node pools, upgrades, pricing, cost optimization, OS/runtime choices, compliance (PCI), and comparisons with other platforms. |
-| Architecture & Design Patterns | L154-L178 | Architectural patterns and reference designs for AKS: HA/DR (active-active/passive/cold), upgrades, multi-region/multi-cluster, networking/IP, PCI, AWS migration, and scaling with node pools/Fleet. |
-| Limits & Quotas | L179-L197 | AKS limits, quotas, and scaling behavior: node/pod capacity, egress/NAT, load balancers, Istio performance, identities, SKUs/regions, and Kubernetes/Fleet version lifecycles and support. |
-| Security | L198-L279 | Securing AKS clusters: identity/RBAC, network and API access, encryption, certificates/keys, node hardening, policies/compliance (PCI, CIS), workload identity, and secure access to external services. |
-| Configuration | L280-L436 | Configuring AKS clusters, networking, storage, ingress, GPUs, autoscaling, costs, security, service mesh, and multi-cluster/Fleet features, plus extensions and database/Kafka setups. |
-| Integrations & Coding Patterns | L437-L459 | Patterns and how-tos for connecting AKS workloads to other services: KAITO/MCP agents, GPU/KEDA, Key Vault/CSI, Istio/OSM, monitoring, GitHub/Fleet automation, and external data stores. |
-| Deployment | L460-L519 | Deploying and upgrading AKS clusters and workloads, including CI/CD, service meshes, KEDA, AI/ML and Ray, Wasm platforms, storage migration, and production-ready infrastructure setup. |
+| Troubleshooting | L37-L57 | Diagnosing and fixing AKS cluster issues: networking, DNS, kubelet and node health, upgrades, Windows containers, OSM, SNAT/UDP, Fleet Manager CRDs/logs, and security bulletins. |
+| Best Practices | L58-L105 | AKS best practices for reliability, security, cost, performance, networking, storage, upgrades, PCI, MLOps, GPUs, and large-scale operations, including Fleet and workload resiliency. |
+| Decision Making | L106-L155 | Guidance for architectural and migration decisions in AKS: networking, VM/node pools, upgrades, pricing, cost optimization, OS/runtime choices, compliance (PCI), and comparisons with other platforms. |
+| Architecture & Design Patterns | L156-L180 | Architectural patterns and reference designs for AKS: HA/DR (active-active/passive/cold), upgrades, multi-region/multi-cluster, networking/IP, PCI, AWS migration, and scaling with node pools/Fleet. |
+| Limits & Quotas | L181-L199 | AKS limits, quotas, and scaling behavior: node/pod capacity, egress/NAT, load balancers, Istio performance, identities, SKUs/regions, and Kubernetes/Fleet version lifecycles and support. |
+| Security | L200-L281 | Securing AKS clusters: identity/RBAC, network and API access, encryption, certificates/keys, node hardening, policies/compliance (PCI, CIS), workload identity, and secure access to external services. |
+| Configuration | L282-L438 | Configuring AKS clusters, networking, storage, ingress, GPUs, autoscaling, costs, security, service mesh, and multi-cluster/Fleet features, plus extensions and database/Kafka setups. |
+| Integrations & Coding Patterns | L439-L461 | Patterns and how-tos for connecting AKS workloads to other services: KAITO/MCP agents, GPU/KEDA, Key Vault/CSI, Istio/OSM, monitoring, GitHub/Fleet automation, and external data stores. |
+| Deployment | L462-L521 | Deploying and upgrading AKS clusters and workloads, including CI/CD, service meshes, KEDA, AI/ML and Ray, Wasm platforms, storage migration, and production-ready infrastructure setup. |
 
 ### Troubleshooting
 | Topic | URL |

@@ -28,6 +28,12 @@ category_descriptions:
   decision-making: Guides for deciding load test resource moves (regions, groups,
     subscriptions) and tuning performance settings like Azure Functions configs and
     Playwright parallelism.
+skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure App Testing applications. Not for Azure
+  Test Plans (use azure-test-plans), Playwright Workspaces (use azure-playwright-workspaces),
+  Azure DevOps (use azure-devops), Azure App Service (use azure-app-service).
 ---
 # Azure App Testing Crawl Report
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   limits-quotas: Limits, quotas, and performance characteristics of Azure NetApp Files
     volumes, including size/throughput caps, inodes, user/group quotas, SAP/Oracle/Linux
@@ -25,9 +25,15 @@ category_descriptions:
   decision-making: Guidance on choosing Azure NetApp Files tiers, volume types, DR/backup/replication,
     performance vs cool access, migration options, and cost/TCO optimization (including
     reservations).
-  security: 'Security configuration for Azure NetApp Files: encryption (CMK/HSM, at
-    rest/in transit), Kerberos/LDAP/AD, NFS/SMB permissions and ACLs, ransomware protection,
-    and policy/control-plane settings.'
+  security: 'Security, encryption, identity, and access control for Azure NetApp Files:
+    CMK/HSM keys, Kerberos, LDAP/AD, ACLs/permissions (NFS/SMB), ransomware protection,
+    and control/data plane security.'
+skill_description: Expert knowledge for Azure NetApp Files development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use when
+  building, debugging, or optimizing Azure NetApp Files applications. Not for Azure
+  Files (use azure-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic
+  SAN (use azure-elastic-san), Azure Managed Lustre (use azure-managed-lustre).
 ---
 # Azure NetApp Files Crawl Report
 
@@ -65,8 +71,8 @@ category_descriptions:
 
 ### Updated Pages
 
-- [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies)
-  - Updated: 2025-04-25T17:04:00.000Z → 2026-03-03T08:00:00.000Z
+- [Configure cross-tenant customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/customer-managed-keys-cross-tenant)
+  - Updated: 2025-09-03T17:13:00.000Z → 2026-03-03T18:22:00.000Z
 
 ## Classified Pages
 
@@ -94,7 +100,6 @@ category_descriptions:
 | [Configure AD DS LDAP with extended groups for NFS](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-ldap-extended-groups) | limits-quotas | 0.80 | Includes explicit numeric limits (up to 1,024 groups, MaxPageSize default 1,000) and behavior when limits are exceeded; these are concrete quotas. |
 | [Configure AzAcSnap](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-configure) | configuration | 0.80 | Command reference for `azacsnap -c configure` will list command-line parameters, allowed values, and behavior specific to this tool. |
 | [Configure application volume group for Oracle using REST API](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-application-volume-oracle-api) | integrations | 0.80 | REST API creation of Oracle AVGs with selected parameters, properties, constraints, and typical values; matches integration pattern with product-specific parameter details. |
-| [Configure cross-tenant customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/customer-managed-keys-cross-tenant) | security | 0.80 | Covers cross-tenant CMK setup where ANF account and Key Vault are in different tenants; includes tenant, identity, and region-specific security configuration. |
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-customer-managed-keys) | security | 0.80 | Details CMK setup with managed identity and Key Vault for ANF volume encryption; includes product-specific security configuration and key lifecycle relationships. |
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/elastic-customer-managed-keys) | security | 0.80 | Customer-managed keys setup involves Key Vault integration, key URIs, and permission scopes specific to Azure NetApp Files Elastic ZRS. |
 | [Configure customer-managed keys with managed HSM](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-customer-managed-keys-hardware) | security | 0.80 | Describes using managed HSM (FIPS 140-2 Level 3) instead of standard Key Vault for ANF CMK; product-specific encryption configuration. |
@@ -118,6 +123,7 @@ category_descriptions:
 | [Large volume performance benchmarks for Linux](https://learn.microsoft.com/en-us/azure/azure-netapp-files/performance-large-volumes-linux) | limits-quotas | 0.75 | Large volume benchmark documentation provides specific maximum throughput/IOPS and scaling behavior, which are numeric performance limits unique to the service. |
 | [SMB performance best practices](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-smb-performance) | best-practices | 0.75 | SMB performance tuning for this service will include specific client/server settings, registry or mount options, and patterns unique to Azure NetApp Files SMB workloads. |
 | [Understand the allow local NFS users with LDAP option](https://learn.microsoft.com/en-us/azure/azure-netapp-files/lightweight-directory-access-protocol-local-users) | security | 0.75 | Details how Azure NetApp Files resolves NFS user IDs via LDAP and the impact of extended group memberships; product-specific authentication behavior and options. |
+| [Configure cross-tenant customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-netapp-files/customer-managed-keys-cross-tenant) | security | 0.72 | The page describes detailed, product-specific steps and requirements for configuring cross-tenant customer-managed keys for Azure NetApp Files volume encryption, including tenant relationships, Key Vault usage, and encryption configuration. This is security-focused configuration (key management and access across tenants) rather than generic concepts, and contains implementation details that are unlikely to be fully known from pretraining. |
 | [-c delete](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-delete) | integrations | 0.70 | Provides a guide for the delete command of azacsnap, which should list command options and parameters specific to Azure NetApp Files snapshot integration. |
 | [-c details](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-cmd-ref-details) | integrations | 0.70 | Command reference for the Azure Application Consistent Snapshot tool’s details command; likely includes specific CLI parameters, options, and behaviors unique to this integration. |
 | [Add hosts to a multiple-host SAP HANA system](https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-add-hosts) | limits-quotas | 0.70 | Includes explicit sizing guidance (HANA shared volume sized to 1× RAM per four hosts) and adjustments; these are numeric thresholds for capacity planning. |

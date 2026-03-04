@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-04'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -9,9 +9,9 @@ category_descriptions:
     Web SDK performance optimization.
   security: 'Securing Azure Maps access: auth methods (Entra ID, SAS), SPA/web/daemon/device
     scenarios, and Power BI integration security and data residency settings.'
-  limits-quotas: Azure Maps service limits, QPS quotas, and global coverage details
-    for geocoding, rendering/tiles, routing, traffic, and weather data by region and
-    pricing tier
+  limits-quotas: 'Coverage, limits, and capabilities of Azure Maps services: QPS rate
+    limits, and regional support for geocoding, rendering/tiles, routing, traffic,
+    and weather data.'
   configuration: Configuring Azure Maps web maps, styles, layers, data sources, routing
     models, localization, browser support, and migrating or updating to newer Azure
     Maps APIs and services.
@@ -24,6 +24,10 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Azure Maps Weather API issues, including
     authentication, request/response errors, throttling, and configuration or usage
     problems.
+skill_description: Expert knowledge for Azure Maps development including troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Maps applications.
 ---
 # Azure Maps Crawl Report
 
@@ -37,8 +41,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 145
+- **Updated Pages**: 2
+- **Unchanged**: 143
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -58,11 +62,18 @@ category_descriptions:
 
 ## Changes
 
+### Updated Pages
+
+- [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps)
+  - Updated: 2025-10-01T22:16:00.000Z → 2026-03-03T23:37:00.000Z
+- [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits)
+  - Updated: 2025-10-01T22:16:00.000Z → 2026-03-03T18:22:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits) | limits-quotas | 0.90 | Explicitly about Azure Maps QPS limits; contains tier-specific numeric limits and notes about Gen1 vs Gen2 pricing tiers, matching limits-quotas criteria. |
+| [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits) | limits-quotas | 0.95 | Explicitly documents Azure Maps queries-per-second limits, including tier-specific constraints and retirement details for Gen1 vs Gen2 pricing. This is product-specific numerical limit information that an LLM would not reliably know from training. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-maps/web-sdk-best-practices) | best-practices | 0.85 | Provides concrete, product-specific recommendations (e.g., which layer types to use for large datasets, configuration choices) that impact performance and behavior. |
 | [Best Practices using Route Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing) | best-practices | 0.82 | Provides concrete guidance on using Route Directions and Route Matrix APIs, including specialized routing options and likely configuration recommendations; clearly a product-specific best-practices guide. |
 | [Best Practices using Search Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search) | best-practices | 0.82 | Explicit best-practices article with product-specific recommendations (for example, how to structure queries, handle fuzzy search, optimize performance and costs) that are unique to Azure Maps Search. |
@@ -200,13 +211,13 @@ category_descriptions:
 | [Analyze trip data using Snap to Roads](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-snap-to-road) | 0.30 | Snap to Roads tutorial; example of using the API with Fabric notebooks, not a reference of parameters, limits, or troubleshooting. |
 | [Analyze weather data using Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/azure-maps/weather-service-tutorial) | 0.30 | Tutorial joining sensor and weather data; focused on ML scenario and example API usage, not expert configuration or limits. |
 | [EV routing using Jupyter Notebooks](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-ev-routing) | 0.30 | EV routing tutorial in Jupyter; primarily example code and workflow, not structured configuration references or limits. |
-| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.30 | High-level link hub for Azure Maps REST APIs; summary indicates overview tables, not deep parameter/limits details on this page itself. |
 | [Weather service concepts](https://learn.microsoft.com/en-us/azure/azure-maps/weather-services-concepts) | 0.30 | Conceptual introduction to weather service; likely high-level concepts rather than detailed configuration or limits. |
 | [Azure Maps glossary](https://learn.microsoft.com/en-us/azure/azure-maps/glossary) | 0.25 | Glossary of terms; definitional, not expert configuration, limits, or troubleshooting content. |
 | [Provide data feedback](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-feedback-tool) | 0.25 | Feedback tool article is about reporting map data issues; process-oriented, not about configuration, limits, or troubleshooting of the platform itself. |
 | [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Reference layer usage description is high-level and focused on formats; no detailed configuration tables, limits, or troubleshooting mappings indicated. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
+| [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |

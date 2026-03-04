@@ -1,6 +1,6 @@
 ---
 name: azure-queue-storage
-description: Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Queue Storage applications.
+description: Expert knowledge for Azure Queue Storage development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Queue Storage applications. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"
@@ -16,17 +16,19 @@ This skill provides expert guidance for Azure Queue Storage. Covers best practic
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L31-L37 | Monitoring, securing, and tuning Azure Queue Storage: metrics/logging, alerts, encryption, access control, and performance/scalability patterns and checklists. |
-| Limits & Quotas | L38-L43 | Queue throughput, scalability targets, and limits on queue size, message size, and capacity planning for Azure Queue Storage |
-| Security | L44-L57 | Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell, client-side encryption, and migrating Queue apps to passwordless authentication |
-| Configuration | L58-L63 | Configuring and interpreting monitoring for Azure Queue Storage, including metrics, logs, diagnostic settings, and detailed reference for all queue monitoring data fields. |
-| Integrations & Coding Patterns | L64-L72 | Client library how-tos for using Azure Queue Storage with .NET, Java, JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and common coding patterns. |
+| Best Practices | L33-L39 | Monitoring, securing, and tuning Azure Queue Storage: metrics/logging, alerts, encryption, access control, and performance/scalability patterns and checklists. |
+| Limits & Quotas | L40-L45 | Queue throughput, scalability targets, and limits on queue size, message size, and capacity planning for Azure Queue Storage |
+| Security | L46-L59 | Using Entra ID/RBAC/ABAC for queue data access, configuring auth in CLI/Portal/PowerShell, client-side encryption, and migrating Queue apps to passwordless authentication |
+| Configuration | L60-L65 | Configuring and interpreting monitoring for Azure Queue Storage, including metrics, logs, diagnostic settings, and detailed reference for all queue monitoring data fields. |
+| Integrations & Coding Patterns | L66-L74 | Client library how-tos for using Azure Queue Storage with .NET, Java, JavaScript, Python, and PowerShell, including setup, auth, CRUD operations, and common coding patterns. |
 
 ### Best Practices
 | Topic | URL |

@@ -18,6 +18,11 @@ category_descriptions:
   limits-quotas: Details on Anomaly Detector regional endpoints, usage constraints,
     request/throughput limits, quotas, and how these caps affect model training and
     inference.
+skill_description: Expert knowledge for Azure AI Anomaly Detector development including
+  troubleshooting, best practices, architecture & design patterns, limits & quotas,
+  configuration, and deployment. Use when building, debugging, or optimizing Azure
+  AI Anomaly Detector applications. Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
+  Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure AI Anomaly Detector Crawl Report
 

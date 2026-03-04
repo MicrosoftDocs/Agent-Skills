@@ -19,6 +19,13 @@ category_descriptions:
   decision-making: Guidance for upgrading Azure Data Science VMs from Ubuntu 18.04
     to 20.04, including migration steps, compatibility considerations, and preserving
     tools/configurations.
+skill_description: Expert knowledge for Azure Data Science Virtual Machines development
+  including troubleshooting, decision making, architecture & design patterns, security,
+  configuration, integrations & coding patterns, and deployment. Use when building,
+  debugging, or optimizing Azure Data Science Virtual Machines applications. Not for
+  Azure Virtual Machines (use azure-virtual-machines), Azure Machine Learning (use
+  azure-machine-learning), Azure Databricks (use azure-databricks), Azure HDInsight
+  (use azure-hdinsight).
 ---
 # Azure Data Science Virtual Machines Crawl Report
 

@@ -28,6 +28,12 @@ category_descriptions:
   deployment: Deploying bots to Azure using ARM/CLI, setting up App Service resources,
     and configuring continuous integration/continuous deployment pipelines for Bot
     Framework bots.
+skill_description: Expert knowledge for Azure AI Bot Service development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure AI Bot Service applications. Not
+  for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub),
+  Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
 ---
 # Azure AI Bot Service Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Arc applications.
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Arc applications. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-03"
@@ -16,21 +16,23 @@ This skill provides expert guidance for Azure Arc. Covers troubleshooting, best 
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L69 | Diagnosing and fixing Azure Arc issues: Kubernetes onboarding/extensions, Arc servers (agent, SSH, networking, ESU, VM extensions), Arc SQL, resource bridge, site manager, and workload orchestration. |
-| Best Practices | L70-L75 | Guidance on using static retain workflows for Azure Arc Edge Volumes and answers to common usage questions for Azure Arc-enabled data services (deployment, operations, limitations). |
-| Decision Making | L76-L99 | Guidance on planning and choosing Azure Arc options: services, tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale server/data/Kubernetes deployments. |
-| Architecture & Design Patterns | L100-L108 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L109-L125 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L126-L184 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
-| Configuration | L185-L284 | Configuring Azure Arc infrastructure and workloads: storage, data services, Edge RAG, Kubernetes (GitOps, extensions, networking), servers/agents, monitoring, networking, and orchestration settings. |
-| Integrations & Coding Patterns | L285-L307 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel, Terraform, and Event Grid integration. |
-| Deployment | L308-L338 | Deploying and upgrading Azure Arc components (data controllers, Edge RAG, resource bridge, SCVMM/VMware, agents), including prerequisites, support matrices, and clean removal steps |
+| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Arc issues: Kubernetes onboarding/extensions, Arc servers (agent, SSH, networking, ESU, VM extensions), Arc SQL, resource bridge, site manager, and workload orchestration. |
+| Best Practices | L72-L77 | Guidance on using static retain workflows for Azure Arc Edge Volumes and answers to common usage questions for Azure Arc-enabled data services (deployment, operations, limitations). |
+| Decision Making | L78-L101 | Guidance on planning and choosing Azure Arc options: services, tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale server/data/Kubernetes deployments. |
+| Architecture & Design Patterns | L102-L110 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
+| Limits & Quotas | L111-L127 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
+| Security | L128-L186 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
+| Configuration | L187-L286 | Configuring Azure Arc infrastructure and workloads: storage, data services, Edge RAG, Kubernetes (GitOps, extensions, networking), servers/agents, monitoring, networking, and orchestration settings. |
+| Integrations & Coding Patterns | L287-L309 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel, Terraform, and Event Grid integration. |
+| Deployment | L310-L340 | Deploying and upgrading Azure Arc components (data controllers, Edge RAG, resource bridge, SCVMM/VMware, agents), including prerequisites, support matrices, and clean removal steps |
 
 ### Troubleshooting
 | Topic | URL |

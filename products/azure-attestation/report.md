@@ -15,6 +15,11 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Attestation failures, including
     policy/quote validation errors, configuration issues, and troubleshooting attestation
     responses and tokens.
+skill_description: Expert knowledge for Azure Attestation development including troubleshooting,
+  best practices, security, configuration, and deployment. Use when building, debugging,
+  or optimizing Azure Attestation applications. Not for Azure Confidential Computing
+  (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves),
+  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
 ---
 # Azure Attestation Crawl Report
 

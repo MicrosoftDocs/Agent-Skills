@@ -4,6 +4,11 @@ category_descriptions:
   troubleshooting: Diagnosing and validating Azure Peering Service prefixes, including
     prefix registration checks, routing verification, and troubleshooting connectivity
     or reachability issues.
+skill_description: Expert knowledge for Azure Internet Peering development including
+  troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering
+  applications. Not for Azure ExpressRoute (use azure-expressroute), Azure Peering
+  Service (use azure-peering-service), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Internet Peering Crawl Report
 

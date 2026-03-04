@@ -28,6 +28,13 @@ category_descriptions:
   best-practices: 'Best practices for AKS Edge/Arc: applying Azure Policy, recovering
     clusters after management VM loss, and safely upgrading Kubernetes/workload clusters
     via PowerShell or Admin Center'
+skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
+  including troubleshooting, best practices, decision making, architecture & design
+  patterns, limits & quotas, security, configuration, integrations & coding patterns,
+  and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service
+  Edge Essentials applications. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
+  Container Apps (use azure-container-apps).
 ---
 # Azure Kubernetes Service Edge Essentials Crawl Report
 

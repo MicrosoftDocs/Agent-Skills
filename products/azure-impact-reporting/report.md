@@ -9,6 +9,11 @@ category_descriptions:
     troubleshooting steps.
   configuration: 'Configuring Azure Impact Reporting: creating alert connectors and
     retrieving valid impact and HPC Guest Health category values for correct classification.'
+skill_description: Expert knowledge for Azure Impact Reporting development including
+  troubleshooting, configuration, and integrations & coding patterns. Use when building,
+  debugging, or optimizing Azure Impact Reporting applications. Not for Azure Carbon
+  Optimization (use azure-carbon-optimization), Azure Cost Management (use azure-cost-management),
+  Azure Monitor (use azure-monitor).
 ---
 # Azure Impact Reporting Crawl Report
 

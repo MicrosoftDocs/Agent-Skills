@@ -16,21 +16,23 @@ This skill provides expert guidance for designing Azure solutions using Azure Ar
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
-This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage` if MCP is unavailable to fetch documentation.
+This skill requires **network access** to fetch documentation content:
+- **Preferred**: Use `mcp_microsoftdocs:microsoft_docs_fetch` with query string `from=learn-agent-skill`. Returns Markdown.
+- **Fallback**: Use `fetch_webpage` with query string `from=learn-agent-skill&accept=text/markdown`. Returns Markdown.
 
 ## Category Index
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Reference Architectures | L35-L89 | End-to-end Azure solution blueprints: mission-critical app, data, AKS, networking, hybrid, security, and MLOps architectures with deployment patterns and best practices. |
-| Solution Ideas | L90-L122 | End-to-end solution patterns for AI, data, analytics, IoT, security, SAP, and DevSecOps on Azure, showing how to combine services into complete architectures and workflows. |
-| Design Patterns | L123-L177 | Architecture and integration patterns for resilient, scalable, secure apps on Azure: messaging, microservices, gateways, caching, CQRS/event sourcing, multitenancy, and legacy modernization. |
-| Technology Choices | L178-L212 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) for specific workloads and architecture needs |
-| Architecture Styles | L213-L223 | Comparisons and design guidance for Azure app styles: big compute, big data, event-driven, microservices, N-tier, and web-queue-worker, with when-to-use and implementation patterns. |
-| Best Practices | L224-L287 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, APIs, networking, IoT, SAP, Event Hubs, and generative AI. |
-| Anti-patterns | L288-L302 | Diagnosing and fixing common cloud performance/scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
-| Example Workloads | L303-L371 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
-| Migration Guides | L372-L404 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
+| Reference Architectures | L37-L91 | End-to-end Azure solution blueprints: mission-critical app, data, AKS, networking, hybrid, security, and MLOps architectures with deployment patterns and best practices. |
+| Solution Ideas | L92-L124 | End-to-end solution patterns for AI, data, analytics, IoT, security, SAP, and DevSecOps on Azure, showing how to combine services into complete architectures and workflows. |
+| Design Patterns | L125-L179 | Architecture and integration patterns for resilient, scalable, secure apps on Azure: messaging, microservices, gateways, caching, CQRS/event sourcing, multitenancy, and legacy modernization. |
+| Technology Choices | L180-L214 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) for specific workloads and architecture needs |
+| Architecture Styles | L215-L225 | Comparisons and design guidance for Azure app styles: big compute, big data, event-driven, microservices, N-tier, and web-queue-worker, with when-to-use and implementation patterns. |
+| Best Practices | L226-L291 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, APIs, networking, IoT, SAP, Event Hubs, and generative AI workloads |
+| Anti-patterns | L292-L306 | Diagnosing and fixing common cloud performance/scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
+| Example Workloads | L307-L374 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
+| Migration Guides | L375-L407 | Guides for migrating from AWS, GCP, on-prem Oracle, Kafka, and EKS to Azure, mapping services, comparing architectures, and planning secure, cost-optimized Azure adoption. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -235,7 +237,7 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply CDN strategies for low-latency content delivery | https://learn.microsoft.com/en-us/azure/architecture/best-practices/cdn |
 | Plan data partitioning for scalable cloud solutions | https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning |
 | Apply data partitioning strategies in Azure services | https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning-strategies |
-| Preserve HTTP host names behind Azure reverse proxies | https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation |
+| Preserve HTTP host headers behind Azure reverse proxies | https://learn.microsoft.com/en-us/azure/architecture/best-practices/host-name-preservation |
 | Apply cross-cutting cloud application best practices | https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices |
 | Choose message encoding formats for cloud messaging | https://learn.microsoft.com/en-us/azure/architecture/best-practices/message-encode |
 | Implement monitoring and diagnostics for cloud apps | https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring |
@@ -250,8 +252,10 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Apply DevSecOps security practices to AKS workloads | https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks |
 | Scale Azure IoT Hub solutions to millions of devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/scale-iot-solution-azure |
 | Design multitenant architectures for Azure IoT Hub solutions | https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/iot |
+| Secure inbound and outbound internet access for SAP on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound |
 | Apply proven practices for SAP NetWeaver on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-netweaver |
 | Implement SAP S/4HANA on Azure Linux with HA/DR | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana |
+| Apply network best practices for SAP landscapes on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape |
 | Plan secure access to AKS API servers | https://learn.microsoft.com/en-us/azure/architecture/guide/security/access-azure-kubernetes-service-cluster-api-server |
 | Apply best practices for workloads on Azure Spot VMs | https://learn.microsoft.com/en-us/azure/architecture/guide/spot/spot-eviction |
 | Run continuous validation with Load Testing and Chaos Studio | https://learn.microsoft.com/en-us/azure/architecture/guide/testing/mission-critical-deployment-testing |
@@ -363,7 +367,6 @@ This skill requires **network access**. Use `mcp_microsoftdocs:microsoft_docs_fe
 | Design Azure Virtual Desktop workloads on Azure Local | https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-workload-virtual-desktop |
 | Monitor hybrid VM performance with Azure Monitor | https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-perf-monitoring |
 | Implement automotive test fleet telemetry analytics on Azure | https://learn.microsoft.com/en-us/azure/architecture/industries/automotive/automotive-telemetry-analytics |
-| Deploy and automate Azure Governance Visualizer at scale | https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-governance-visualizer-accelerator |
 | Design massive-scale Azure Virtual WAN with multi-hub | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/massive-scale-azure-architecture |
 | Virtual WAN design for mixed security and performance needs | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/performance-security-optimized-vwan |
 | Enable cross-tenant private endpoint access to web apps | https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints |

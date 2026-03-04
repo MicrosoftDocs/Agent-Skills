@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-04'
 category_descriptions:
   configuration: Configuring Azure IoT Operations data flows, endpoints, schemas,
     WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring,
@@ -27,6 +27,12 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure IoT Operations deployment and runtime
     issues, including known errors, health checks, logs, and step-by-step troubleshooting
     guidance.
+skill_description: Expert knowledge for Azure IoT Operations development including
+  troubleshooting, best practices, decision making, architecture & design patterns,
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when building, debugging, or optimizing Azure IoT Operations applications. Not
+  for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Central
+  (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
 ---
 # Azure IoT Operations Crawl Report
 
@@ -40,8 +46,8 @@ category_descriptions:
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 99
+- **Updated Pages**: 1
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -61,6 +67,11 @@ category_descriptions:
 | *(Unclassified)* | 22 | 22.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [What are data flows?](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow)
+  - Updated: 2025-05-21T08:00:00.000Z → 2026-03-03T23:37:00.000Z
 
 ## Classified Pages
 
@@ -162,11 +173,11 @@ category_descriptions:
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/overview-layered-network) | 0.30 | High-level networking overview; no indication of detailed config tables, limits, or specific security roles. |
 | [Run Azure IoT Operations in Codespaces](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-deploy) | 0.30 | Quickstart tutorial for deploying to Codespaces; likely step-by-step without detailed config matrices or limits. |
 | [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets) | 0.30 | Conceptual overview of asset and device management options; lacks detailed config tables or limits. |
-| [What are data flows?](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow) | 0.30 | Overview of data flows and concepts; high-level description without clear indication of detailed configuration tables or limits. |
 | [Add OPC UA assets to your cluster](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-add-assets) | 0.20 | Tutorial for adding assets; likely UI/step instructions rather than deep configuration matrices or limits. |
 | [Build an event-driven app with Dapr](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/tutorial-event-driven-with-dapr) | 0.20 | End-to-end Dapr event-driven app walkthrough; primarily a scenario tutorial without reference-style expert details. |
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/overview-deploy) | 0.20 | Deployment overview describing components and options conceptually; lacks detailed matrices or constraints. |
 | [Get insights from your data](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-get-insights) | 0.20 | Tutorial for building a real-time dashboard; mostly product usage steps, not expert configuration or error reference. |
 | [Get insights from your data](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-get-insights) | 0.20 | Quickstart for building a dashboard; focused on example flow rather than product-specific limits or configuration catalogs. |
 | [Upload sensor data to the cloud](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-upload-messages-to-cloud) | 0.20 | Tutorial for sending messages to cloud via data flow; appears procedural, not a reference of configs, limits, or troubleshooting mappings. |
+| [What are data flows?](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow) | 0.20 | Page is an overview of Azure IoT Operations data flows and high-level configuration concepts using Kubernetes CRDs, without detailed parameter tables, numeric limits, error codes, or product-specific decision matrices. It reads as conceptual guidance rather than expert configuration, troubleshooting, or limits documentation. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/overview-iot-operations) | 0.10 | High-level product overview of Azure IoT Operations features and use cases without concrete limits, configs, or error details. |
