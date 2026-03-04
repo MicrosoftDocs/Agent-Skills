@@ -45,17 +45,17 @@ stages:
 
         steps:
           # 1. Checkout GitHub repo (self - contains products/, skills/)
-          - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
+          - task: Checkout@1
             displayName: 'Checkout GitHub repo'
             inputs:
               repository: self
               persistCredentials: true
 
           # 2. Checkout ADO repo (source code)
-          - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
+          - task: Checkout@1
             displayName: 'Checkout ADO repo (code)'
             inputs:
-              repository: $(adoRepository)@refs/heads/${{ parameters.docs2SkillsADOBranch }}
+              repository: git://Engineering/Learn.Docs2AgentSkills@refs/heads/${{ parameters.docs2SkillsADOBranch }}
 
           # 3. Setup Python
           - task: UsePythonVersion@0
