@@ -236,6 +236,8 @@ console.log(response.choices[0].message.content);
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup, see **microsoft-foundry-local-setup**
 - For basic chat patterns, see **microsoft-foundry-local-chat**
 - For agents with persistent instructions, see **microsoft-foundry-local-agents**

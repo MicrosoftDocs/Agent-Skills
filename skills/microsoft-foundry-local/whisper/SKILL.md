@@ -217,6 +217,8 @@ audio, _ = librosa.load("input.wav", sr=16000)
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup and model download, see **microsoft-foundry-local-setup**
 - For chat completions (text), see **microsoft-foundry-local-chat**
 - For custom model compilation, see **microsoft-foundry-local-custom-models**

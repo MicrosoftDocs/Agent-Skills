@@ -224,6 +224,8 @@ curl http://localhost:<PORT>/v1/chat/completions \
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup and model management, see **microsoft-foundry-local-setup**
 - For grounding chat with local data, see **microsoft-foundry-local-rag**
 - For agents with system instructions, see **microsoft-foundry-local-agents**

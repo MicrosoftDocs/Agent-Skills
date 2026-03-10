@@ -277,6 +277,8 @@ from foundry_config import MODEL_ID, ENDPOINT, API_KEY
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup, see **microsoft-foundry-local-setup**
 - For basic chat patterns, see **microsoft-foundry-local-chat**
 - For grounding agents with local data, see **microsoft-foundry-local-rag**

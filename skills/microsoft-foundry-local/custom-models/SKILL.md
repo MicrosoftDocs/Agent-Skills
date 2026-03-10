@@ -265,6 +265,8 @@ models/qwen3/
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup, see **microsoft-foundry-local-setup**
 - For chat completions with compiled models, see **microsoft-foundry-local-chat**
 - For testing model quality, see **microsoft-foundry-local-evaluation**

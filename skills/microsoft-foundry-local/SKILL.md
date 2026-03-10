@@ -32,26 +32,9 @@ Foundry Local is an on-device AI runtime that serves language models via an Open
 
 ## Common Starting Points
 
-### Install Foundry Local
-```bash
-# Windows
-winget install Microsoft.FoundryLocal
+> **Prefer the SDK over the CLI.** The SDK handles service lifecycle, port discovery, model download, and loading automatically. Use the CLI only for manual exploration or troubleshooting.
 
-# macOS
-brew install foundrylocal
-```
-
-### List available models
-```bash
-foundry model list
-```
-
-### Start a model
-```bash
-foundry model run phi-4-mini
-```
-
-### Connect with Python
+### Connect with Python (recommended)
 ```python
 from foundry_local import FoundryLocalManager
 
@@ -77,13 +60,26 @@ var client = new OpenAIClient(new("not-required"),
     new() { Endpoint = manager.Endpoint });
 ```
 
+### CLI (for exploration and troubleshooting)
+```bash
+# Install
+winget install Microsoft.FoundryLocal   # Windows
+brew install foundrylocal                # macOS
+
+# Explore models
+foundry model list
+foundry model run phi-4-mini
+```
+
 ## Rules
 
-1. Always use the SDK for endpoint discovery — never hard-code ports.
-2. Set `api_key` to `"not-required"` — Foundry Local doesn't use API keys.
-3. Route to the specific sub-skill for detailed patterns and troubleshooting.
-4. All code runs entirely on-device — no network calls to cloud APIs.
+1. **Prefer SDKs over CLI.** The SDK manages the full lifecycle (service start, model download, port discovery). Use CLI only for manual exploration or troubleshooting.
+2. Always use the SDK for endpoint discovery — never hard-code ports.
+3. Set `api_key` to `"not-required"` — Foundry Local doesn't use API keys.
+4. Route to the specific sub-skill for detailed patterns and troubleshooting.
+5. All code runs entirely on-device — no network calls to cloud APIs.
 
 ## References
 
-- [Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/)
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)

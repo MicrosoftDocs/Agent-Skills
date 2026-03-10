@@ -11,7 +11,9 @@ metadata:
 
 This skill provides guidance for installing, configuring, and managing the Foundry Local on-device AI runtime.
 
-> **What is Foundry Local?** A lightweight runtime that downloads, manages, and serves language models entirely on your hardware. It exposes an **OpenAI-compatible API** — no cloud account or API keys required. See [foundrylocal.ai](https://foundrylocal.ai).
+> **What is Foundry Local?** A lightweight runtime that downloads, manages, and serves language models entirely on your hardware. It exposes an **OpenAI-compatible API** — no cloud account or API keys required. See the [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/) and [foundrylocal.ai](https://foundrylocal.ai).
+>
+> **Prefer the SDK over the CLI.** The SDK handles service lifecycle, port discovery, model download, and loading in a single programmatic flow. Use the CLI for manual exploration or troubleshooting.
 
 ## Triggers
 
@@ -209,6 +211,8 @@ Developers do not need to pick variants — hardware detection is transparent.
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For chat completion patterns, see **microsoft-foundry-local-chat**
 - For RAG pipelines, see **microsoft-foundry-local-rag**
 - For agent creation, see **microsoft-foundry-local-agents**

@@ -339,6 +339,8 @@ foundry service start
 
 ## Cross-References
 
+- [Foundry Local documentation](https://learn.microsoft.com/azure/foundry-local/)
+- [foundrylocal.ai](https://foundrylocal.ai)
 - For service setup, see **microsoft-foundry-local-setup**
 - For agents to evaluate, see **microsoft-foundry-local-agents**
 - For RAG pipelines to evaluate, see **microsoft-foundry-local-rag**
