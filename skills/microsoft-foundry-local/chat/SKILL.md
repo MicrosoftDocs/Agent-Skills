@@ -1,5 +1,5 @@
 ---
-name: foundry-local-chat
+name: microsoft-foundry-local-chat
 description: "Chat completion patterns with Foundry Local's OpenAI-compatible API. Covers streaming, multi-turn conversations, temperature tuning, and conversation history management. WHEN: foundry local chat, local LLM chat, streaming response, chat completion, conversation history, multi-turn, OpenAI SDK with foundry, api_key not-required, stream tokens, on-device chat, local inference, chat parameters."
 license: MIT
 metadata:
@@ -26,7 +26,7 @@ Activate this skill when the user wants to:
 2. **API key is `"not-required"`** — Foundry Local does not authenticate.
 3. **Use `model_info.id`** (the full hardware-specific ID) in API calls, not the alias.
 4. **Streaming syntax differs across languages** — use the correct pattern for each.
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -224,6 +224,6 @@ curl http://localhost:<PORT>/v1/chat/completions \
 
 ## Cross-References
 
-- For service setup and model management, see **foundry-local-setup**
-- For grounding chat with local data, see **foundry-local-rag**
-- For agents with system instructions, see **foundry-local-agents**
+- For service setup and model management, see **microsoft-foundry-local-setup**
+- For grounding chat with local data, see **microsoft-foundry-local-rag**
+- For agents with system instructions, see **microsoft-foundry-local-agents**

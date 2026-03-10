@@ -1,5 +1,5 @@
 ---
-name: foundry-local-agents
+name: microsoft-foundry-local-agents
 description: "Build AI agents and multi-agent workflows with Foundry Local. Covers single agents with personas, multi-agent sequential pipelines, feedback loops, the Microsoft Agent Framework, and conversation history management. WHEN: foundry agent, AI agent local, multi-agent, agent orchestration, feedback loop, agent persona, system instructions, sequential pipeline, researcher writer editor, on-device agent, agent framework, FoundryLocalClient, AsAIAgent."
 license: MIT
 metadata:
@@ -26,7 +26,7 @@ Activate this skill when the user wants to:
 2. **Use the Agent Framework when available** — it simplifies agent creation. Python uses `agent_framework_foundry_local`, C# uses `Microsoft.Agents.AI.OpenAI`.
 3. **JavaScript has no high-level agent framework** — implement agents manually with OpenAI SDK + history management.
 4. **Feedback loops need a retry limit** — prevent infinite loops with a max iteration count (typically 2-3).
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -67,7 +67,7 @@ asyncio.run(main())
 ```csharp
 using Microsoft.Agents.AI;
 
-// After setting up manager, model, and OpenAI client (see foundry-local-setup)...
+// After setting up manager, model, and OpenAI client (see microsoft-foundry-local-setup)...
 AIAgent joker = client
     .GetChatClient(model.Id)
     .AsAIAgent(
@@ -277,7 +277,7 @@ from foundry_config import MODEL_ID, ENDPOINT, API_KEY
 
 ## Cross-References
 
-- For service setup, see **foundry-local-setup**
-- For basic chat patterns, see **foundry-local-chat**
-- For grounding agents with local data, see **foundry-local-rag**
-- For testing agent quality, see **foundry-local-evaluation**
+- For service setup, see **microsoft-foundry-local-setup**
+- For basic chat patterns, see **microsoft-foundry-local-chat**
+- For grounding agents with local data, see **microsoft-foundry-local-rag**
+- For testing agent quality, see **microsoft-foundry-local-evaluation**

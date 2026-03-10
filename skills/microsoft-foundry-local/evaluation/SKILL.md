@@ -1,5 +1,5 @@
 ---
-name: foundry-local-evaluation
+name: microsoft-foundry-local-evaluation
 description: "Test and evaluate LLM output quality with Foundry Local. Covers golden datasets, rule-based scoring, LLM-as-judge patterns, side-by-side prompt comparison, and handling service crashes under sustained load. WHEN: evaluate LLM, golden dataset, LLM as judge, prompt comparison, test AI output, eval framework, benchmark local model, quality scoring, evaluate agent, prompt engineering, A/B test prompts, regression testing."
 license: MIT
 metadata:
@@ -27,7 +27,7 @@ Activate this skill when the user wants to:
 2. **Combine rule-based and LLM-based scoring** — rules catch obvious issues, LLM judges catch nuance.
 3. **Handle HTTP 500 under sustained load** — the service may crash after ~13-15 completions; add try/catch with fallback.
 4. **Lower temperature for evaluation** — use 0.1 for LLM-as-judge to get consistent scoring.
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -339,7 +339,7 @@ foundry service start
 
 ## Cross-References
 
-- For service setup, see **foundry-local-setup**
-- For agents to evaluate, see **foundry-local-agents**
-- For RAG pipelines to evaluate, see **foundry-local-rag**
-- For chat patterns, see **foundry-local-chat**
+- For service setup, see **microsoft-foundry-local-setup**
+- For agents to evaluate, see **microsoft-foundry-local-agents**
+- For RAG pipelines to evaluate, see **microsoft-foundry-local-rag**
+- For chat patterns, see **microsoft-foundry-local-chat**

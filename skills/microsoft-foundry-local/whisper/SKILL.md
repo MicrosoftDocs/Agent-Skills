@@ -1,5 +1,5 @@
 ---
-name: foundry-local-whisper
+name: microsoft-foundry-local-whisper
 description: "Transcribe audio with Whisper running on-device via Foundry Local. Covers model download (SDK only), ONNX encoder/decoder pipeline, feature extraction, audio format requirements, and language-specific APIs. WHEN: whisper transcription, speech to text local, audio transcription, foundry whisper, on-device transcription, WAV transcription, voice to text, transcribe audio, whisper model, speech recognition local."
 license: MIT
 metadata:
@@ -26,7 +26,7 @@ Activate this skill when the user wants to:
 2. **Audio must be 16kHz mono WAV** — resample before processing.
 3. **Python/JS use a manual ONNX pipeline** (encoder → decoder with KV cache).
 4. **C# has a high-level API** — `GetAudioClient().TranscribeAudioAsync()`.
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -217,6 +217,6 @@ audio, _ = librosa.load("input.wav", sr=16000)
 
 ## Cross-References
 
-- For service setup and model download, see **foundry-local-setup**
-- For chat completions (text), see **foundry-local-chat**
-- For custom model compilation, see **foundry-local-custom-models**
+- For service setup and model download, see **microsoft-foundry-local-setup**
+- For chat completions (text), see **microsoft-foundry-local-chat**
+- For custom model compilation, see **microsoft-foundry-local-custom-models**

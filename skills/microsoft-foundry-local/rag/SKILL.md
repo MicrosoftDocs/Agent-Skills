@@ -1,5 +1,5 @@
 ---
-name: foundry-local-rag
+name: microsoft-foundry-local-rag
 description: "Build Retrieval-Augmented Generation (RAG) pipelines with Foundry Local. Covers knowledge base design, retrieval strategies, context injection, and prompt templates — all running on-device with no cloud dependencies. WHEN: RAG pipeline, retrieval augmented generation, ground answers in data, knowledge base, local search, context injection, foundry local RAG, on-device RAG, document grounding, chunk retrieval."
 license: MIT
 metadata:
@@ -26,7 +26,7 @@ Activate this skill when the user wants to:
 2. Start with keyword-overlap retrieval (zero dependencies) before suggesting vector search.
 3. Always instruct the model to use only the provided context — prevents hallucination.
 4. Keep retrieved chunks concise — local models have limited context windows (typically 4K–16K tokens).
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -236,7 +236,7 @@ console.log(response.choices[0].message.content);
 
 ## Cross-References
 
-- For service setup, see **foundry-local-setup**
-- For basic chat patterns, see **foundry-local-chat**
-- For agents with persistent instructions, see **foundry-local-agents**
-- For testing RAG quality systematically, see **foundry-local-evaluation**
+- For service setup, see **microsoft-foundry-local-setup**
+- For basic chat patterns, see **microsoft-foundry-local-chat**
+- For agents with persistent instructions, see **microsoft-foundry-local-agents**
+- For testing RAG quality systematically, see **microsoft-foundry-local-evaluation**

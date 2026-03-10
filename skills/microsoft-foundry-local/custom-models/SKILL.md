@@ -1,5 +1,5 @@
 ---
-name: foundry-local-custom-models
+name: microsoft-foundry-local-custom-models
 description: "Compile and register custom Hugging Face models for Foundry Local. Covers ONNX Runtime GenAI Model Builder, quantisation, chat template generation, cache registration, and inference_model.json configuration. WHEN: custom model foundry, hugging face model, ONNX compile, model builder, quantize model, int4 quantisation, register custom model, onnxruntime-genai, bring your own model, compile model, ONNX conversion, custom ONNX model, foundry cache register."
 license: MIT
 metadata:
@@ -27,7 +27,7 @@ Activate this skill when the user wants to:
 2. **Requires Python 3.10+** and a dedicated virtual environment (PyTorch, Transformers are large).
 3. **The `inference_model.json` file is required** — it tells Foundry Local how to format prompts.
 4. **The `Name` field in `inference_model.json` becomes the model alias** used in all API calls.
-5. For service setup, refer to **foundry-local-setup** skill.
+5. For service setup, refer to **microsoft-foundry-local-setup** skill.
 
 ---
 
@@ -265,6 +265,6 @@ models/qwen3/
 
 ## Cross-References
 
-- For service setup, see **foundry-local-setup**
-- For chat completions with compiled models, see **foundry-local-chat**
-- For testing model quality, see **foundry-local-evaluation**
+- For service setup, see **microsoft-foundry-local-setup**
+- For chat completions with compiled models, see **microsoft-foundry-local-chat**
+- For testing model quality, see **microsoft-foundry-local-evaluation**

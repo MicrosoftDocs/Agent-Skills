@@ -1,5 +1,5 @@
 ---
-name: foundry-local
+name: microsoft-foundry-local
 description: "Build AI applications with Foundry Local — a lightweight runtime that downloads, manages, and serves language models entirely on-device via an OpenAI-compatible API. No cloud, no API keys. Routes to specific skills for setup, chat, RAG, agents, whisper, custom models, and evaluation. WHEN: foundry local, on-device AI, local LLM, foundry local overview, what can foundry do, foundry local help, local inference, offline AI, private AI, no cloud AI, foundry capabilities."
 license: MIT
 metadata:
@@ -15,13 +15,13 @@ Foundry Local is an on-device AI runtime that serves language models via an Open
 
 | Need | Skill | Triggers |
 |------|-------|----------|
-| Install CLI, start service, manage models | **foundry-local-setup** | install, CLI, service start/stop, model download, port discovery |
-| Chat completions (streaming, multi-turn) | **foundry-local-chat** | chat, streaming, conversation history, OpenAI SDK |
-| Retrieval-Augmented Generation | **foundry-local-rag** | RAG, knowledge base, context injection, document grounding |
-| Single & multi-agent workflows | **foundry-local-agents** | agent, multi-agent, orchestration, Agent Framework |
-| Audio transcription with Whisper | **foundry-local-whisper** | whisper, transcribe, speech-to-text, audio |
-| Compile custom Hugging Face models | **foundry-local-custom-models** | custom model, ONNX, Model Builder, Hugging Face, quantize |
-| Test & evaluate LLM output quality | **foundry-local-evaluation** | evaluate, golden dataset, LLM judge, prompt comparison |
+| Install CLI, start service, manage models | **microsoft-foundry-local-setup** | install, CLI, service start/stop, model download, port discovery |
+| Chat completions (streaming, multi-turn) | **microsoft-foundry-local-chat** | chat, streaming, conversation history, OpenAI SDK |
+| Retrieval-Augmented Generation | **microsoft-foundry-local-rag** | RAG, knowledge base, context injection, document grounding |
+| Single & multi-agent workflows | **microsoft-foundry-local-agents** | agent, multi-agent, orchestration, Agent Framework |
+| Audio transcription with Whisper | **microsoft-foundry-local-whisper** | whisper, transcribe, speech-to-text, audio |
+| Compile custom Hugging Face models | **microsoft-foundry-local-custom-models** | custom model, ONNX, Model Builder, Hugging Face, quantize |
+| Test & evaluate LLM output quality | **microsoft-foundry-local-evaluation** | evaluate, golden dataset, LLM judge, prompt comparison |
 
 ## Quick Reference
 
@@ -83,3 +83,7 @@ var client = new OpenAIClient(new("not-required"),
 2. Set `api_key` to `"not-required"` — Foundry Local doesn't use API keys.
 3. Route to the specific sub-skill for detailed patterns and troubleshooting.
 4. All code runs entirely on-device — no network calls to cloud APIs.
+
+## References
+
+- [Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/)

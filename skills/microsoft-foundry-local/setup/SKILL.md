@@ -1,5 +1,5 @@
 ---
-name: foundry-local-setup
+name: microsoft-foundry-local-setup
 description: "Install, configure, and manage Foundry Local — the on-device AI runtime. Covers CLI installation, service lifecycle, model management, port discovery, and troubleshooting. WHEN: install foundry local, start foundry service, download model, list models, foundry CLI, model not loading, service not starting, port discovery, foundry status, foundry local setup, model alias, cache location, hardware detection, service restart, dynamic port."
 license: MIT
 metadata:
@@ -209,7 +209,7 @@ Developers do not need to pick variants — hardware detection is transparent.
 
 ## Cross-References
 
-- For chat completion patterns, see **foundry-local-chat**
-- For RAG pipelines, see **foundry-local-rag**
-- For agent creation, see **foundry-local-agents**
-- For custom model compilation, see **foundry-local-custom-models**
+- For chat completion patterns, see **microsoft-foundry-local-chat**
+- For RAG pipelines, see **microsoft-foundry-local-rag**
+- For agent creation, see **microsoft-foundry-local-agents**
+- For custom model compilation, see **microsoft-foundry-local-custom-models**
