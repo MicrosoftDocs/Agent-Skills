@@ -3,7 +3,7 @@ name: azure-copilot
 description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure Portal (use azure-portal), Azure AI Foundry Local (use azure-ai-foundry-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Copilot Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L49 | Using Copilot to compare options and make cost‑efficient Azure decisions: VM sizing, workload templates, Marketplace offers, storage estate insights, and Load Balancer SKU selection. |
 | Architecture & Design Patterns | L50-L54 | Using Copilot to design, validate, and troubleshoot Azure network architectures, including connectivity, routing, security, and performance issues across VNets and hybrid setups. |
 | Security | L55-L63 | Security and access control for Azure Copilot: storage hardening, user/tenant access, agent access policies, attack surface insights, and responsible AI/data use. |
-| Configuration | L64-L68 | How to set up and configure Azure Cosmos DB as the storage backend for Azure Copilot conversations, including connection settings and data persistence options. |
+| Configuration | L64-L68 | How to set up and configure Azure Cosmos DB as the storage backend for Azure Copilot conversation data, including required settings and integration steps. |
 | Integrations & Coding Patterns | L69-L76 | Using Azure Copilot to generate and refine infra-as-code and automation: APIM policies, Azure CLI/PowerShell scripts, Kubernetes YAML for AKS, and Terraform/Bicep templates. |
 
 ### Troubleshooting

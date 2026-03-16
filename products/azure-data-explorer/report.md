@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  security: 'Securing ADX clusters and data: auth/RBAC, managed identities, encryption
-    (disk, CMK, double), network/private endpoints, policies, conditional access,
-    and data privacy/purge.'
+  security: 'Configuring ADX security: auth/RBAC, managed identities, encryption/CMK,
+    network isolation (private endpoints, outbound/public access), policies, locks,
+    and privacy/data purge.'
   limits-quotas: 'Cluster limits and behaviors: free cluster quotas, auto-stop, safe
     delete/recover, ingestion file size and invalid data handling, and supported data/compression
     formats.'
-  deployment: Provisioning and automating ADX environments, deploying schema via Azure
-    DevOps, and migrating clusters to availability zones or from VNet injection to
-    private endpoints.
+  deployment: Provisioning ADX clusters, automating schema deployment with Azure DevOps,
+    and migrating clusters to availability zones or from VNet injection to private
+    endpoints
   integrations: 'Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell,
     Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau,
     Python, MATLAB, Sisense, and more.'
@@ -32,9 +32,9 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building, debugging, or optimizing Azure Data Explorer applications. Not
-  for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use
-  azure-hdinsight), Azure Databricks (use azure-databricks), Azure Stream Analytics
-  (use azure-stream-analytics).
+  for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics
+  (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks
+  (use azure-databricks).
 ---
 # Azure Data Explorer Crawl Report
 
@@ -43,13 +43,13 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
-- **Classified**: 110
-- **Unclassified**: 87
+- **Classified**: 108
+- **Unclassified**: 89
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 197
+- **Updated Pages**: 6
+- **Unchanged**: 191
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -64,11 +64,26 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | deployment | 4 | 2.0% |
 | integrations | 31 | 15.7% |
 | limits-quotas | 7 | 3.6% |
-| security | 26 | 13.2% |
+| security | 24 | 12.2% |
 | troubleshooting | 7 | 3.6% |
-| *(Unclassified)* | 87 | 44.2% |
+| *(Unclassified)* | 89 | 45.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks)
+  - Updated: 2023-02-27T00:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security)
+  - Updated: 2025-06-02T11:05:00.000Z → 2026-03-15T22:03:00.000Z
+- [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create)
+  - Updated: 2023-11-23T17:54:00.000Z → 2026-03-15T22:03:00.000Z
+- [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint)
+  - Updated: 2025-03-17T17:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double)
+  - Updated: 2025-02-04T08:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys)
+  - Updated: 2026-01-21T18:03:00.000Z → 2026-03-15T22:03:00.000Z
 
 ## Classified Pages
 
@@ -77,18 +92,15 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes) | troubleshooting | 0.90 | Explicitly a list of ingestion error codes with meanings; this is classic troubleshooting content mapping error codes to causes and likely resolutions. |
 | [Automatic stop of inactive clusters](https://learn.microsoft.com/en-us/azure/data-explorer/auto-stop-clusters) | limits-quotas | 0.85 | Defines inactivity as no ingestion or queries for 5 days and states the interval is fixed and non-configurable, plus exceptions. This is a concrete time-based limit/behavior unique to the service. |
 | [Manage cluster permissions](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-permissions) | security | 0.85 | Describes RBAC roles like AllDatabasesAdmin/Viewer/Monitor and their scopes. This is product-specific security configuration with named roles and access semantics. |
-| [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys) | security | 0.80 | Details how to use Azure Key Vault CMKs, including region constraints and key setup; product-specific encryption configuration. |
 | [Configure managed identities on your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/configure-managed-identities-cluster) | security | 0.80 | Concrete steps and settings to add/remove managed identities on clusters; product-specific security configuration. |
 | [Connecting to a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/troubleshoot-connect-cluster) | troubleshooting | 0.80 | Maps specific connection symptoms (URL format, unauthorized responses) to causes and resolutions unique to this service. |
 | [Create Microsoft Entra app](https://learn.microsoft.com/en-us/azure/data-explorer/provision-entra-id-app) | security | 0.80 | Guides creation of service principals and granting them access to Data Explorer; includes auth configuration steps and scopes. |
 | [Create a managed private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-managed-private-endpoint-create) | security | 0.80 | Shows how to create and connect managed private endpoints to protected services; product-specific security/network configuration. |
-| [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create) | security | 0.80 | Step-by-step creation of private endpoints with specific settings in Azure portal; concrete security configuration. |
 | [Create an Event Grid data connection](https://learn.microsoft.com/en-us/azure/data-explorer/create-event-grid-connection) | limits-quotas | 0.80 | Explicitly states maximum file size (6 GB) and recommended range (100 MB–1 GB) for ingestion, which are concrete product limits. |
 | [Creating a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/troubleshoot-create-cluster) | troubleshooting | 0.80 | Symptom-to-solution guidance for cluster creation failures, including permission requirements and Azure service health checks. |
 | [Cross-tenant queries and commands](https://learn.microsoft.com/en-us/azure/data-explorer/cross-tenant-query-and-commands) | security | 0.80 | Shows how to set trustedExternalTenants via ARM/CLI/API; includes concrete property names and security configuration steps. |
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/delete-cluster) | limits-quotas | 0.80 | Defines a 14-day soft delete period, recoverability, and name reuse restriction, plus an opt-out mechanism. These are concrete time and behavior limits. |
 | [Enable disk encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-disk) | security | 0.80 | Details how to turn on disk encryption, including which mechanism is used per SKU; product-specific security configuration. |
-| [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double) | security | 0.80 | Shows how to enable/disable infrastructure (double) encryption via specific portal settings; concrete security configuration. |
 | [Manage database permissions](https://learn.microsoft.com/en-us/azure/data-explorer/manage-database-permissions) | security | 0.80 | Describes database/table-level RBAC roles and how to assign them. This is product-specific security configuration with named roles and scopes. |
 | [Pricing calculator](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-calculator) | decision-making | 0.80 | Pricing calculator article explains each configuration component and its cost impact, directly guiding SKU and capacity decisions with quantified trade-offs. |
 | [Private endpoints overview](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint) | security | 0.80 | Details use of private endpoints, including behavior and access model; product-specific network security configuration. |
@@ -116,6 +128,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview) | architecture-patterns | 0.70 | Business continuity overview discusses native capabilities and multiple DR configurations based on recoverability requirements; this is architecture guidance with ADX-specific patterns and trade-offs. |
 | [Cluster encryption overview](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-overview) | security | 0.70 | Describes specific encryption models for data at rest and cached data; product-specific security configuration. |
 | [Conditional Access](https://learn.microsoft.com/en-us/azure/data-explorer/security-conditional-access) | security | 0.70 | Explains how to apply Conditional Access to Data Explorer clusters; product-specific security and access control configuration. |
+| [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys) | security | 0.70 | Contains product-specific security configuration details for using customer-managed keys with Azure Key Vault, including co-location requirements (same region) and service-specific encryption behavior that go beyond generic security concepts. |
 | [Connect from common apps](https://learn.microsoft.com/en-us/azure/data-explorer/connect-common-apps) | integrations | 0.70 | Provides concrete connection examples for LINQPad, DBeaver, and SSMS with Azure Data Explorer, including tool-specific connection settings. |
 | [Connect to a Power BI service](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-private-endpoint) | security | 0.70 | Describes connecting a cluster behind a private endpoint to Power BI. Such content is network/security configuration–focused (private endpoints, Private Link) with product-specific settings and constraints, fitting the security sub-skill. |
 | [Create policies programmatically](https://learn.microsoft.com/en-us/azure/data-explorer/database-table-policies) | configuration | 0.70 | Describes creating policies via C#/Python. Policy definitions and their parameters are configuration constructs specific to Azure Data Explorer. |
@@ -129,10 +142,8 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Keyboard shortcuts](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-keyboard-shortcuts) | configuration | 0.70 | Lists specific keyboard shortcut mappings (commands to key combinations) which are product-specific configuration/usage details not inferable from general knowledge. |
 | [Kibana (K2Bridge connector)](https://learn.microsoft.com/en-us/azure/data-explorer/k2bridge) | integrations | 0.70 | K2Bridge is a specialized proxy translating Kibana queries to KQL. Article likely documents container configuration, endpoint parameters, and supported Kibana features—clear product-specific integration details. |
 | [Linked server](https://learn.microsoft.com/en-us/azure/data-explorer/linked-server) | integrations | 0.70 | Linked server setup requires provider strings, connection options, and authentication specifics (Microsoft Entra) that are detailed integration configuration for ADX. |
-| [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks) | security | 0.70 | Explains Delete and Read-only locks and their effect on operations, overriding RBAC. These are specific security/guardrail configurations for the service. |
 | [Manage public access to your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-restrict-public-access) | security | 0.70 | Describes concrete settings to allow, limit, or block public access; product-specific security configuration. |
 | [Managed identities overview](https://learn.microsoft.com/en-us/azure/data-explorer/managed-identities-overview) | security | 0.70 | Explains managed identity usage patterns for accessing other Azure resources; includes product-specific security/auth configuration. |
-| [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint) | deployment | 0.70 | Describes migration process, timing, and constraints for moving from VNet injection to private endpoints; deployment-focused guidance. |
 | [Migrate from Elasticsearch](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-elasticsearch-to-azure-data-explorer) | decision-making | 0.70 | Migration guide with concrete steps and mappings from Elasticsearch schema and tooling (Logstash) to Azure Data Explorer. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference) | configuration | 0.70 | A monitoring data reference page typically lists specific metric names, dimensions, and log categories unique to ADX, which are configuration/telemetry details not inferable from general knowledge. |
 | [Multi-tenant solutions](https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant) | architecture-patterns | 0.70 | Compares concrete multi-tenant patterns specific to Azure Data Explorer and when to use each; architecture decision guidance. |
@@ -153,6 +164,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Sync Kusto](https://learn.microsoft.com/en-us/azure/data-explorer/sync-kusto) | configuration | 0.70 | Sync Kusto tool coordinates schema entities between local files, databases, and DevOps repos; usage involves specific configuration options and mappings unique to ADX schema management. |
 | [Working with databases and tables](https://learn.microsoft.com/en-us/azure/data-explorer/troubleshoot-database-table) | troubleshooting | 0.70 | Focused on diagnosing and fixing failures when creating or deleting databases and tables; product-specific troubleshooting. |
 | [Cross-tenant data connection](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-cross-tenant) | configuration | 0.68 | Uses Create Data Connections API and auxiliary tokens with specific parameter names and authentication settings for cross-tenant scenarios, which are product-specific configuration details. |
+| [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks) | security | 0.68 | Page gives product-specific security behavior for Azure Data Explorer cluster locks, including how Delete and Read-only locks interact with Azure Data Explorer RBAC and what operations are blocked. This is concrete, service-specific security configuration guidance rather than a generic overview. |
 | [Query data in Azure Storage external tables](https://learn.microsoft.com/en-us/azure/data-explorer/external-azure-storage-tables-query) | integrations | 0.68 | Covers KQL access to Azure Storage external tables with product-specific external table definitions and parameters, fitting integration/configuration patterns. |
 | [Query data using Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-query-data) | integrations | 0.68 | Shows Python client library usage with specific classes, methods, and connection parameters unique to Azure Data Explorer. |
 | [Formats for data ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-supported-formats) | limits-quotas | 0.66 | Lists supported ingestion and compression formats in table form; while not numeric limits, it’s effectively a capability matrix of allowed formats that an LLM wouldn’t reliably know and is closest to limits/quotas category. |
@@ -165,6 +177,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Manage cluster language extensions](https://learn.microsoft.com/en-us/azure/data-explorer/language-extensions) | configuration | 0.65 | Describes managing language extensions and sandboxed runtimes. Such an article typically lists extension types, enable/disable settings, and portal configuration options—service-specific configuration. |
 | [Manage cluster vertical scaling](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-vertical-scaling) | decision-making | 0.65 | Focuses on when and how to change SKUs to match workload demand. Vertical scaling guidance typically includes trade-offs and scenario-based recommendations, aligning with decision-making. |
 | [Microsoft Purview](https://learn.microsoft.com/en-us/azure/data-explorer/purview) | integrations | 0.65 | Purview integration involves registering ADX as a source, scan configuration, and lineage/catalog specifics; these are concrete integration and configuration details. |
+| [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint) | deployment | 0.65 | Describes a product-specific migration path from deprecated Virtual Network Injection to private endpoints, including retirement date, creation of new engine and data management clusters, and timing/behavior of the switchover—information that is time-bound and deployment-specific. |
 | [Monitor queued ingestion with metrics](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-queued-ingestion) | best-practices | 0.65 | Monitoring queued ingestion with batching policy implies ADX-specific metrics, thresholds, and interpretations for ingestion health, which are concrete operational best practices. |
 | [Power Automate connector usage examples](https://learn.microsoft.com/en-us/azure/data-explorer/flow-usage) | integrations | 0.65 | Usage examples for the connector provide concrete flow patterns, parameter usage, and ADX-specific query/command integration scenarios, which are coding/integration patterns. |
 | [Query data using T-SQL](https://learn.microsoft.com/en-us/azure/data-explorer/t-sql) | configuration | 0.65 | Documents T-SQL support limitations (DQL only) and mapping to Azure Data Explorer; includes specific coverage details that are product-specific configuration/behavior. |
@@ -223,6 +236,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Create ingestion batching table policy](https://learn.microsoft.com/en-us/azure/data-explorer/table-batching-policy-wizard) | 0.40 | Wizard-driven how-to for changing ingestion batching policy; summary doesn’t show concrete parameter tables, numeric defaults, or product-specific gotchas beyond generic configuration steps. |
 | [Dynamic M query parameters](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-dynamic-m) | 0.40 | How-to for Dynamic M parameters with KQL; summary suggests a guided example rather than a catalog of config options or limits. |
 | [E2E programmatic Blob ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/end-to-end-blob-ingestion) | 0.40 | End-to-end blob ingestion example is primarily a tutorial; likely shows one configuration path rather than a catalog of config options or limits. |
+| [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double) | 0.40 | Explains how to enable double encryption during cluster creation but appears to be a simple UI toggle description without detailed encryption configuration parameters, limits, or security role mappings. |
 | [Get latest Azure Cosmos DB documents](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-cosmos-db-queries) | 0.40 | Describes how to get latest versions of documents; summary too high-level to confirm expert configuration or patterns. |
 | [Go SDK](https://learn.microsoft.com/en-us/azure/data-explorer/go-ingest-data) | 0.40 | Go SDK ingestion how-to; summary shows generic steps without expert-only configuration or limits. |
 | [Ingest historical data](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-data-historical) | 0.40 | Describes historical data ingestion concept and LightIngest usage; summary shows no numeric limits or detailed configs. |
@@ -233,7 +247,6 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Node SDK](https://learn.microsoft.com/en-us/azure/data-explorer/node-ingest-data) | 0.40 | Node.js ingestion tutorial; no mention of parameter tables, limits, or specialized patterns. |
 | [Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-ingest-data) | 0.40 | Python ingestion tutorial; summary indicates generic usage without detailed configuration references. |
 | [Query with SQL in Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query) | 0.40 | Shows one option (SQL query) to connect to Power BI; appears as a tutorial, not a decision matrix or config reference. |
-| [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security) | 0.40 | Introductory security overview; lacks specific RBAC role names, config parameters, or detailed settings. |
 | [Use Azure Data Explorer Clusters Insights](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-insights) | 0.40 | Clusters Insights article is described as onboarding and usage overview; summary doesn’t show detailed metric definitions, limits, or configuration tables. |
 | [Use dashboard parameters](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-parameters) | 0.40 | Describes creating and using dashboard parameters conceptually; no detailed config tables, limits, or troubleshooting content. |
 | [Use data in Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-data-connector) | 0.40 | Overview of ways to connect Azure Data Explorer to Power BI; likely tutorial-style without detailed config parameter tables. |
@@ -249,6 +262,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Apply conditional formatting](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-conditional-formatting) | 0.30 | Explains conditional formatting rules conceptually; no product-specific limits, config parameter tables, or error codes. |
 | [Create a cluster and database](https://learn.microsoft.com/en-us/azure/data-explorer/create-cluster-and-database) | 0.30 | Quickstart for creating cluster and database; mostly step-by-step UI usage without detailed config matrices or limits. |
 | [Create a dashboard base query](https://learn.microsoft.com/en-us/azure/data-explorer/base-query) | 0.30 | Base queries as reusable snippets is a usage pattern, but article is procedural without numeric thresholds or config matrices. |
+| [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create) | 0.30 | Step-by-step tutorial for creating a private endpoint; appears to focus on portal workflow rather than detailed security configuration parameters, limits, or specialized settings tables. |
 | [Create external table](https://learn.microsoft.com/en-us/azure/data-explorer/external-table) | 0.30 | Wizard how-to for external tables; tutorial-style without deep configuration matrices or limits. |
 | [Create retention table policy](https://learn.microsoft.com/en-us/azure/data-explorer/table-retention-policy-wizard) | 0.30 | Retention policy wizard article appears to be procedural UI guidance without exposing detailed numeric limits, configuration tables, or non-obvious behaviors. |
 | [Create table](https://learn.microsoft.com/en-us/azure/data-explorer/create-table-wizard) | 0.30 | Wizard-based how-to for creating a table; mostly procedural without detailed config tables or limits. |
@@ -262,6 +276,7 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Get data from local file](https://learn.microsoft.com/en-us/azure/data-explorer/get-data-file) | 0.30 | Wizard-style how-to for local file ingestion; no config tables, limits, or product-specific edge cases. |
 | [POC playbook: Big data analytics with Azure Data Explorer](https://learn.microsoft.com/en-us/azure/data-explorer/proof-of-concept-playbook) | 0.30 | High-level POC methodology; lacks product-specific numeric thresholds, configs, or error mappings. |
 | [Query sample data](https://learn.microsoft.com/en-us/azure/data-explorer/web-query-data) | 0.30 | Quickstart for querying sample data; tutorial-style, not a catalog of expert configuration or limits. |
+| [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security) | 0.30 | High-level security overview for Azure Data Explorer clusters without specific RBAC role names, permission scopes, or concrete configuration parameters; mostly conceptual guidance. |
 | [Access the data profile of a table](https://learn.microsoft.com/en-us/azure/data-explorer/data-profile) | 0.25 | Explains data profile feature usage; mostly UI guidance without detailed config matrices or error mappings. |
 | [Add a query visualization](https://learn.microsoft.com/en-us/azure/data-explorer/add-query-visualization) | 0.25 | Creating visualizations in web UI; focuses on UI actions, not product-specific configuration parameters or limits. |
 | [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid) | 0.25 | Results grid usage guide; UI operations rather than deep configuration or troubleshooting content. |

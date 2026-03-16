@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
     best practices.'
-  security: 'Managing and securing Azure RBAC: built‑in security roles, deny assignments,
-    conditional/ABAC access, PIM, privileged access alerts, and policy-based RBAC
-    governance.'
+  security: 'Azure RBAC roles, permissions, and conditions: built-in role references
+    by service, custom roles, ABAC/conditions, delegation, deny assignments, PIM,
+    policy, and security/privileged access controls.'
   troubleshooting: 'Diagnosing and fixing Azure RBAC issues: access denials, role/condition
     misconfigurations, role limit errors, and auditing role/condition changes via
     Activity Log'
@@ -24,8 +24,8 @@ skill_description: Expert knowledge for Azure Role-based access control developm
   including troubleshooting, best practices, decision making, limits & quotas, security,
   configuration, and integrations & coding patterns. Use when building, debugging,
   or optimizing Azure Role-based access control applications. Not for Azure Policy
-  (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Security
-  (use azure-security), Azure Lighthouse (use azure-lighthouse).
+  (use azure-policy), Azure Security (use azure-security), Azure Resource Manager
+  (use azure-resource-manager), Azure Lighthouse (use azure-lighthouse).
 ---
 # Azure Role-based access control Crawl Report
 
@@ -39,8 +39,8 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 3
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -59,6 +59,15 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 
 ## Changes
 
+### Updated Pages
+
+- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute)
+  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-08T08:00:00.000Z
+- [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new)
+  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-08T08:00:00.000Z
+- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute)
+  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-08T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -67,7 +76,6 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | [Security](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/security) | security | 0.96 | Lists security-related provider permissions with exact operation identifiers, enabling fine-grained security configuration; this is clearly within RBAC security settings. |
 | [AI + machine learning](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning) | security | 0.95 | Lists AI + machine learning provider permissions with precise action names, providing fine-grained RBAC configuration data unique to Azure services. |
 | [Analytics](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics) | security | 0.95 | Contains analytics provider permission strings used in custom roles, which are detailed Azure-specific RBAC operations not derivable from general knowledge. |
-| [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute) | security | 0.95 | Provides detailed permission strings for Compute resource providers (e.g., VM operations) that are used to build custom roles, which are precise RBAC security settings. |
 | [Containers](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers) | security | 0.95 | Provides container-related provider permission strings (e.g., AKS operations) for RBAC, which are detailed, evolving security configuration primitives. |
 | [Databases](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases) | security | 0.95 | Lists database provider permissions with exact operation identifiers, enabling granular RBAC for database services; these are specific security configuration details. |
 | [General](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/general) | security | 0.95 | Lists specific permission strings for General-category resource providers, giving exact operation names and scopes used in custom roles, which are product-specific security configuration primitives. |
@@ -78,6 +86,7 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | [Storage](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage) | security | 0.95 | Contains storage provider permission strings (DataActions and management actions) that define fine-grained access; these are detailed RBAC security configuration elements. |
 | [Web and Mobile](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/web-and-mobile) | security | 0.95 | Lists Web and Mobile provider permissions with exact action names, used for custom roles; this is product-specific RBAC permission data. |
 | [Built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles) | security | 0.90 | Comprehensive list of built-in roles with Actions/NotActions/DataActions; contains detailed RBAC permission scopes and role names that are core product-specific security knowledge. |
+| [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute) | security | 0.90 | The page enumerates Azure built-in RBAC roles for Compute with their exact Actions, NotActions, DataActions, and NotDataActions. These are product-specific security configurations and role definitions that change over time and are not reliably known from training data, matching the 'security' sub-skill criteria. |
 | [DevOps](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops) | security | 0.90 | Provides DevOps provider permission strings for RBAC, which are detailed, product-specific security configuration primitives used in custom roles. |
 | [Hybrid + multicloud](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/hybrid-multicloud) | security | 0.90 | Lists Hybrid + multicloud (Azure Stack HCI) built-in roles and their Actions/NotActions/DataActions, providing product-specific RBAC security configuration data. |
 | [Hybrid + multicloud](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/hybrid-multicloud) | security | 0.90 | Provides Hybrid + multicloud provider permission strings for RBAC, which are detailed, evolving security configuration primitives unique to Azure Stack HCI and related services. |
@@ -88,7 +97,6 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/monitor) | security | 0.90 | Provides detailed Azure Monitor-related built-in RBAC roles including precise Actions/NotActions/DataActions, which are specific security configuration details unique to Azure RBAC. |
 | [Monitor](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/monitor) | security | 0.90 | Contains monitoring provider permission strings (e.g., metrics, logs operations) that define granular RBAC access; these are detailed security configuration elements. |
 | [Security](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/security) | security | 0.90 | Lists security-category roles with detailed Actions/DataActions; highly specific RBAC security configuration knowledge. |
-| [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute) | security | 0.88 | Lists compute-category roles with detailed permissions; expert RBAC security configuration data. |
 | [General](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/general) | security | 0.88 | Lists general-category built-in roles and their Actions/NotActions; product-specific RBAC security reference. |
 | [Networking](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/networking) | security | 0.88 | Lists networking-category roles and their permission sets; product-specific security role definitions. |
 | [Privileged](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged) | security | 0.88 | Lists privileged-category roles with their exact permissions; this is detailed RBAC security configuration data. |
@@ -96,6 +104,7 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | [Troubleshoot Azure RBAC limits](https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshoot-limits) | troubleshooting | 0.88 | Focused on exceeding RBAC limits and using Azure Resource Graph to reduce assignments/custom roles; combines limit-specific behavior with concrete remediation steps, matching troubleshooting for limits. |
 | [AI + machine learning](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning) | security | 0.86 | Lists AI + machine learning roles with detailed Actions/DataActions; expert RBAC security data. |
 | [Analytics](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/analytics) | security | 0.86 | Lists analytics-category roles and their permission scopes; product-specific security configuration. |
+| [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute) | security | 0.86 | The page enumerates detailed Azure RBAC permission strings for Compute resource providers, which are product-specific security/authorization settings. It provides exact action names and scopes used to build custom roles, fitting the security category's focus on RBAC role permissions and access control configuration. |
 | [Containers](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers) | security | 0.86 | Lists container-related roles and their permissions; detailed RBAC security configuration data. |
 | [Databases](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases) | security | 0.86 | Lists database-category roles with Actions/NotActions; expert RBAC security role definitions. |
 | [DevOps](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/devops) | security | 0.86 | Lists DevOps-category roles and their permissions; product-specific RBAC security role definitions. |
@@ -171,4 +180,4 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | [Check access for a user](https://learn.microsoft.com/en-us/azure/role-based-access-control/check-access) | 0.30 | Quickstart showing how to use Check access in portal; primarily step-by-step UI usage without deep config tables or error mappings. |
 | [What is Azure ABAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview) | 0.20 | Conceptual overview of Azure ABAC; no detailed condition syntax, attributes tables, or config parameters in the summary. |
 | [What is Azure RBAC?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) | 0.20 | High-level conceptual overview of Azure RBAC without detailed role lists, permissions, or configuration parameters. |
-| [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new) | 0.10 | What's new/change log style page; not focused on limits, configuration matrices, or troubleshooting mappings. |
+| [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new) | 0.10 | Release notes / what's-new summary for Azure RBAC docs; does not focus on concrete limits, configuration tables, security role definitions in a systematic way, or other structured expert details as defined by the sub-skill types. |

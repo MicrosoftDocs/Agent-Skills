@@ -28,8 +28,8 @@ skill_description: Expert knowledge for Azure Portal development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -44,11 +44,6 @@ skill_description: Expert knowledge for Azure Portal development including troub
 | *(Unclassified)* | 18 | 60.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [View and filter resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views)
-  - Updated: 2025-05-19T17:03:00.000Z → 2026-03-03T18:26:00.000Z
 
 ## Classified Pages
 

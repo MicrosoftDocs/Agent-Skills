@@ -3,7 +3,7 @@ name: azure-sql-database
 description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure SQL Database applications. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), capacity/log, import/export, connectivity, geo-replication, Data Sync, and Managed Instance errors. |
-| Best Practices | L60-L76 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, read scale-out, maintenance, auditing, file space, Data Sync, and post-migration behavior. |
+| Best Practices | L60-L76 | Best practices for Azure SQL operations: monitoring, auditing, security, HA/DR, failover, read replicas, maintenance, file space, Data Sync, and post-migration behavior. |
 | Decision Making | L77-L102 | Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale options, automation, licensing/Hybrid Benefit, and migration paths between models and features. |
 | Architecture & Design Patterns | L103-L121 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
-| Limits & Quotas | L122-L135 | Limits, quotas, and resource caps for Azure SQL (DTU/vCore, elastic pools, backups), plus free tier/free account constraints and how to request quota increases. |
-| Security | L136-L201 | Configuring Azure SQL security: authentication (Entra, MFA, MI), network isolation, auditing/Defender, encryption (TDE, Always Encrypted, CMK), data masking/classification, and compliance policies. |
-| Configuration | L202-L269 | Configuring Azure SQL databases: monitoring, maintenance, backups/immutability, scaling and elastic pools, geo-replication/failover, security/TLS, Data Sync, CLI/PowerShell/REST setup and operations. |
-| Integrations & Coding Patterns | L270-L299 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node, Python, Spark, Stream Analytics) plus PowerShell automation for sharding, scaling, replication, backup/restore, and auditing. |
-| Deployment | L300-L315 | Deploying and configuring Azure SQL databases: automation (GitHub Actions, ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves, and feature availability by region. |
+| Limits & Quotas | L122-L134 | Limits, quotas, and resource caps for Azure SQL (DTU/vCore, elastic pools, backups), plus free tier/free account constraints and how to request quota increases. |
+| Security | L135-L202 | Configuring Azure SQL security: auth (Entra, MFA, managed identity), network/firewall, auditing & Defender, encryption (TDE, Always Encrypted), data masking/classification, and compliance policies. |
+| Configuration | L203-L270 | Configuring Azure SQL databases: monitoring, maintenance, backups/immutability, scaling and elastic pools, geo-replication/failover, security/TLS, Data Sync, CLI/PowerShell/REST setup and operations. |
+| Integrations & Coding Patterns | L271-L300 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node, Python, Spark, Stream Analytics) plus PowerShell automation for sharding, scaling, replication, backup/restore, and auditing. |
+| Deployment | L301-L316 | Deploying and configuring Azure SQL databases: automation (GitHub Actions, ARM/Bicep/Terraform), Hyperscale setup, sharding, dev environments, region moves, and feature availability by region. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan for Azure SQL planned maintenance events | https://learn.microsoft.com/en-us/azure/azure-sql/database/planned-maintenance?view=azuresql |
 | Configure and use read scale-out replicas in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out?view=azuresql |
 | Apply security best practices to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql |
-| Apply best practices for Azure SQL Data Sync configuration and operation | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql |
+| Apply best practices for Azure SQL Data Sync | https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql |
 | Address T-SQL differences when migrating to Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/transact-sql-tsql-differences-sql-server?view=azuresql |
 
 ### Decision Making
@@ -126,7 +126,6 @@ This skill requires **network access** to fetch documentation content:
 | FAQ on Azure SQL Database free offer limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer-faq?view=azuresql |
 | Understand Azure SQL Database free tier limits | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql |
 | Use Azure free account to deploy free Azure SQL database | https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql |
-| Configure long-term backup retention for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql |
 | Request quota increases for Azure SQL Database and Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql |
 | Elastic pool DTU resource limits for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-dtu-elastic-pools?view=azuresql |
 | Single database DTU resource limits for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/resource-limits-dtu-single-databases?view=azuresql |
@@ -145,16 +144,18 @@ This skill requires **network access** to fetch documentation content:
 | Get started with Always Encrypted secure enclaves in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-getting-started?view=azuresql |
 | Register Entra applications for Azure SQL access | https://learn.microsoft.com/en-us/azure/azure-sql/database/application-authentication-get-client-id-keys?view=azuresql |
 | Configure SQL auditing to storage behind VNets and firewalls | https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-write-storage-account-behind-vnet-firewall?view=azuresql |
-| Analyze Azure SQL audit logs and reports | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql |
 | Configure managed identity for Azure SQL auditing to storage | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-managed-identity?view=azuresql |
 | Audit Microsoft support operations on Azure SQL servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-microsoft-support-operations?view=azuresql |
 | Use auditing for Azure SQL Database and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql |
 | Understand server vs database-level auditing policies | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-server-level-database-level?view=azuresql |
 | Configure auditing for Azure SQL and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-setup?view=azuresql |
+| Configure Microsoft Entra authentication for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql |
 | Understand Directory Readers role requirements for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql |
 | Use Microsoft Entra authentication with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql |
 | Configure service principals to create Entra users in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql |
+| Use Entra service principals with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql |
 | Create Azure SQL logical server with user-assigned managed identity | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity-create-server?view=azuresql |
+| Configure managed identities for Azure SQL access | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql |
 | Configure and use Microsoft Defender for SQL with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-defender-for-sql?view=azuresql |
 | Migrate Node.js apps to passwordless Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-nodejs?view=azuresql |
 | Migrate Python apps to passwordless Azure SQL authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-passwordless-migration-python?view=azuresql |
@@ -169,7 +170,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql |
 | Manage credentials for Elastic Database client library in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-manage-credentials?view=azuresql |
 | Configure split-merge service security with certificates | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-split-merge-security-configuration?view=azuresql |
-| Configure IP firewall rules for Azure SQL and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql |
+| Configure IP firewall rules for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql |
 | Configure isolated security for Hyperscale named replicas | https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql |
 | Manage logins, users, and permissions in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage?view=azuresql |
 | Configure network access controls for Azure SQL and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/network-access-controls-overview?view=azuresql |

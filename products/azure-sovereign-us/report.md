@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Security and compliance for Azure Government: FedRAMP/DoD scope, IL5
     isolation, TIC, secure configuration, identity/Entra auth, naming to avoid data
@@ -33,13 +33,13 @@ skill_description: Expert knowledge for Azure US Government development includin
 - **Total Pages**: 40
 - **Fetched**: 40
 - **Fetch Failed**: 0
-- **Classified**: 32
-- **Unclassified**: 8
+- **Classified**: 31
+- **Unclassified**: 9
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -49,13 +49,18 @@ skill_description: Expert knowledge for Azure US Government development includin
 |------|-------|------------|
 | architecture-patterns | 1 | 2.5% |
 | configuration | 5 | 12.5% |
-| decision-making | 10 | 25.0% |
+| decision-making | 9 | 22.5% |
 | deployment | 4 | 10.0% |
 | integrations | 3 | 7.5% |
 | security | 9 | 22.5% |
-| *(Unclassified)* | 8 | 20.0% |
+| *(Unclassified)* | 9 | 22.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
+  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-05T23:11:00.000Z
 
 ## Classified Pages
 
@@ -65,7 +70,6 @@ skill_description: Expert knowledge for Azure US Government development includin
 | [Compare Azure Government and global Azure](https://learn.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure) | decision-making | 0.75 | Provides feature and compliance differences between Azure Government and global Azure, including environment-specific capabilities and constraints to guide cloud selection decisions. |
 | [Deploy with Azure Pipelines](https://learn.microsoft.com/en-us/azure/azure-government/connect-with-azure-pipelines) | deployment | 0.75 | How-to for configuring Azure Pipelines to deploy to Azure Government App Service, including environment-specific endpoints and constraints for CI/CD. |
 | [Authorized reseller list](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list) | decision-making | 0.70 | Provides authoritative list of authorized CSPs and resellers for Azure Government, used to select appropriate partners—data not inferable from training alone. |
-| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | decision-making | 0.70 | Roadmap of product GA by authorization level across Azure Government environments; used to decide which services/regions meet specific compliance needs, which is specialized decision guidance. |
 | [Azure secure isolation guidance](https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance) | security | 0.70 | Customer guidance for secure isolation across compute, networking, and storage in Azure, with product-specific patterns and configurations. |
 | [Cloud services by audit scope](https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope) | security | 0.70 | Page details which Azure, Azure Government, and Azure Government Secret services and regions fall within specific FedRAMP and DoD authorization scopes. This is product- and environment-specific compliance and security information (which environments are authorized for which impact levels), which an LLM is unlikely to know reliably from training. It maps cloud environments to concrete compliance authorizations, fitting the security category best. |
 | [Considerations for naming Azure resources](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-concept-naming-resources) | security | 0.70 | Provides concrete guidance on avoiding sensitive data in resource names, with examples tied to specific Azure services and compliance boundaries—product-specific security practice. |
@@ -105,4 +109,5 @@ skill_description: Expert knowledge for Azure US Government development includin
 | [Azure Government portal](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-portal) | 0.30 | Quickstart for connecting via portal; mostly step-by-step UI usage without detailed configuration matrices or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-ps) | 0.30 | Quickstart for connecting with PowerShell; procedural steps rather than deep configuration options or expert-only details. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-connect-vs) | 0.30 | Quickstart for connecting with Visual Studio; focuses on basic connection steps, not advanced configuration or constraints. |
+| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by government cloud and authorization level; no detailed limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
 | [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome) | 0.20 | High-level marketing/overview of Azure Government capabilities and compliance; no concrete limits, configs, or error mappings. |

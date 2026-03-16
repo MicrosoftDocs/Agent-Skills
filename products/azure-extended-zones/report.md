@@ -1,29 +1,31 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Extended Zones access: registering subscriptions, requesting
     zone access, and creating custom Azure Policy definitions to govern Extended Zones
     usage.'
+  security: Encrypting Extended Zone disks with customer-managed keys using Azure
+    Key Vault, including setup, configuration steps, and security considerations
   decision-making: Guidance on when and how to buy Reserved Instances or Savings Plans
     for Extended Zones, including cost considerations, eligibility, and purchase workflows.
 skill_description: Expert knowledge for Azure Extended Zones development including
-  decision making, and configuration. Use when building, debugging, or optimizing
+  decision making, security, and configuration. Use when building, debugging, or optimizing
   Azure Extended Zones applications. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic
-  Manager (use azure-traffic-manager).
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan), Azure Reliability (use azure-reliability).
 ---
 # Azure Extended Zones Crawl Report
 
 ## Summary
 
-- **Total Pages**: 16
-- **Fetched**: 16
+- **Total Pages**: 17
+- **Fetched**: 17
 - **Fetch Failed**: 0
-- **Classified**: 3
+- **Classified**: 4
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 16
 - **Deleted Pages**: 0
@@ -33,17 +35,23 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 2 | 12.5% |
-| decision-making | 1 | 6.2% |
-| *(Unclassified)* | 13 | 81.2% |
+| configuration | 2 | 11.8% |
+| decision-making | 1 | 5.9% |
+| security | 1 | 5.9% |
+| *(Unclassified)* | 13 | 76.5% |
 
 ## Changes
+
+### New Pages
+
+- [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Create a custom Azure Policy in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/create-azure-policy) | configuration | 0.80 | Explicitly calls out that only custom policies are supported and that they must target extendedLocation, extendedLocation.name, and extendedLocation.type; this is product-specific configuration with concrete property names and constraints. |
+| [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk) | security | 0.70 | Page describes product-specific security configuration for encrypting managed disks in Azure Extended Zones using customer-managed keys, Azure Key Vault, and Disk Encryption Sets, including the constraint that assigning a Disk Encryption Set to Extended Zone disks is currently only supported via Azure CLI. This is concrete, product-specific behavior and configuration detail that qualifies as expert knowledge. |
 | [Request access to an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/request-access) | configuration | 0.65 | Describes how to register a subscription with an Extended Zone using PowerShell/CLI; likely includes specific resource provider names, registration commands, and parameter values (for extendedLocation) that are product-specific configuration details. |
 | [Purchase reservations and savings plans](https://learn.microsoft.com/en-us/azure/extended-zones/purchase-reservations-savings-plans) | decision-making | 0.60 | Covers purchasing Reserved Instances and Savings Plans for Extended Zone resources, including applicability constraints (meters minted, supported SKUs, timelines). This is product-specific cost/plan selection guidance with concrete applicability rules, fitting decision-making. |
 

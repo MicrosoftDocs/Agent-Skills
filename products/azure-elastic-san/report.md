@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on sizing and configuring Elastic SAN (performance, capacity,
     architecture) and deciding how to integrate it with AKS workloads and storage
@@ -7,9 +7,9 @@ category_descriptions:
   integrations: How to script volume creation and connect Elastic SAN volumes to Linux,
     Windows, and AKS via iSCSI CSI, including client configuration and integration
     patterns.
-  best-practices: Guidance on tuning Elastic SAN performance (throughput, latency,
-    volume layout) and using snapshots for backup, restore, and disaster recovery
-    workflows.
+  best-practices: 'Performance tuning and backup guidance for Elastic SAN: IOPS/throughput
+    best practices, AVS datastore optimization, and using snapshots for backup and
+    recovery.'
   security: Encrypting Elastic SAN with customer-managed keys and securing access
     via private endpoints, service endpoints, and other network security configurations
     for volumes.
@@ -35,14 +35,14 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 
 ## Summary
 
-- **Total Pages**: 23
-- **Fetched**: 23
+- **Total Pages**: 24
+- **Fetched**: 24
 - **Fetch Failed**: 0
-- **Classified**: 21
+- **Classified**: 22
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 23
 - **Deleted Pages**: 0
@@ -52,17 +52,21 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 4.3% |
-| best-practices | 2 | 8.7% |
-| configuration | 3 | 13.0% |
-| decision-making | 2 | 8.7% |
-| integrations | 4 | 17.4% |
-| limits-quotas | 2 | 8.7% |
-| security | 6 | 26.1% |
-| troubleshooting | 1 | 4.3% |
-| *(Unclassified)* | 2 | 8.7% |
+| architecture-patterns | 1 | 4.2% |
+| best-practices | 3 | 12.5% |
+| configuration | 3 | 12.5% |
+| decision-making | 2 | 8.3% |
+| integrations | 4 | 16.7% |
+| limits-quotas | 2 | 8.3% |
+| security | 6 | 25.0% |
+| troubleshooting | 1 | 4.2% |
+| *(Unclassified)* | 2 | 8.3% |
 
 ## Changes
+
+### New Pages
+
+- [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions)
 
 ## Classified Pages
 
@@ -82,6 +86,7 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 | [Create elastic SAN volumes in a batch](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-batch-create-sample) | integrations | 0.70 | Provides a PowerShell script and CSV schema (specific column names and usage) to create multiple volumes. This is a concrete automation/integration pattern with product-specific parameters, fitting integrations. |
 | [Encryption](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-overview) | security | 0.70 | Details SSE behavior, AES-256, FIPS compliance, and options for platform-managed vs customer-managed keys. Contains product-specific encryption configuration and compliance details, fitting security. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-metrics) | configuration | 0.70 | Defines specific Elastic SAN metrics exposed in Azure Monitor. Metric names and semantics are product-specific configuration/observability details, fitting configuration of monitoring/metrics. |
+| [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions) | best-practices | 0.70 | The page provides benchmark-based, product-specific performance guidance for Azure Elastic SAN used as datastores with Azure VMware Solution, including concrete workload patterns, configuration details, and how to interpret/compare results. This is actionable, service-specific tuning and usage guidance rather than generic performance theory, fitting best under best-practices. |
 | [Planning](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-planning) | decision-making | 0.70 | Planning article that discusses storage capacity, performance, redundancy, and encryption choices for SAN, volume groups, and volumes. Likely includes concrete thresholds and configuration guidance to choose sizes and redundancy options, which supports deployment decision-making. |
 | [Resize an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-expand) | configuration | 0.70 | Describes how to increase/decrease SAN and volume sizes. Such docs typically include constraints (e.g., expansion vs shrink rules, allowed ranges), which are product-specific configuration details. |
 | [Use volume snapshots](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots) | best-practices | 0.70 | Explains snapshot behavior (incremental, space usage differences vs managed disks) and best uses. Contains product-specific behavior and recommended usage patterns, fitting best-practices. |

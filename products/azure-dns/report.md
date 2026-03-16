@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Using Azure CLI, PowerShell, or portal to create/manage DNS zones
     and records, and to delegate subdomains or import/export DNS zone files for automation
@@ -40,8 +40,8 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 75
+- **Updated Pages**: 2
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -59,6 +59,13 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | *(Unclassified)* | 47 | 62.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
+  - Updated: 2023-11-30T08:00:00.000Z → 2026-03-04T06:13:00.000Z
+- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
+  - Updated: 2024-09-19T08:00:00.000Z → 2026-03-04T06:13:00.000Z
 
 ## Classified Pages
 
@@ -112,8 +119,6 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | [Resolve Azure and on-premises domains](https://learn.microsoft.com/en-us/azure/dns/private-resolver-hybrid-dns) | 0.40 | Hybrid DNS resolution tutorial; focuses on setup steps rather than detailed configuration matrices or error mappings. |
 | [Virtual network links](https://learn.microsoft.com/en-us/azure/dns/private-dns-virtual-network-links) | 0.40 | Conceptual explanation of virtual network link subresources; summary does not indicate numeric limits or detailed configuration tables. |
 | [What is DNS security policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy) | 0.40 | Overview of DNS security policy; references features but defers detailed configuration to other how-to guides. |
-| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.35 | Tutorial for alias record with Traffic Manager; focused on one scenario, not broad configuration or decision matrices. |
-| [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | 0.35 | Tutorial for alias records to public IP; procedural steps, no detailed parameter tables or limits. |
 | [Create alias records for zone records](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-rr) | 0.35 | Tutorial for alias records referencing other records; scenario-focused, not a comprehensive configuration reference. |
 | [Create custom DNS records for a web app](https://learn.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain) | 0.35 | Tutorial for custom DNS records for web apps; mostly step-by-step, without detailed product-specific config matrices. |
 | [Create a private resolver - ARM Template](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-template) | 0.30 | ARM template quickstart for DNS Private Resolver; deployment example without detailed settings tables. |
@@ -139,6 +144,8 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | [Create child DNS zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child) | 0.25 | Tutorial for creating child DNS zones; basic procedural content, no expert-level configuration tables. |
 | [Zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-zones-records) | 0.25 | Conceptual overview of DNS zones and records; no numeric limits or detailed configuration parameters. |
 | [Azure DNS overview](https://learn.microsoft.com/en-us/azure/dns/dns-overview) | 0.20 | High-level Azure DNS overview without numeric limits, configuration tables, or detailed patterns. |
+| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.20 | Tutorial for creating an Azure DNS alias record for an apex domain with Traffic Manager; focuses on basic setup steps rather than limits, decision matrices, or detailed configuration parameters. |
+| [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | 0.20 | Tutorial-style walkthrough for creating an Azure DNS alias record to a public IP; primarily step-by-step UI guidance without detailed configuration tables, limits, or product-specific best-practice nuances. |
 | [Delegation with Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-domain-delegation) | 0.20 | High-level explanation of domain delegation to Azure DNS; no numeric limits, config tables, or detailed troubleshooting content. |
 | [Reverse DNS](https://learn.microsoft.com/en-us/azure/dns/dns-reverse-dns-overview) | 0.20 | Conceptual overview of reverse DNS in Azure; lacks specific limits, configuration parameters, or error mappings. |
 | [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) | 0.20 | Overview of DNS Private Resolver; high-level description without numeric thresholds or detailed configuration tables. |

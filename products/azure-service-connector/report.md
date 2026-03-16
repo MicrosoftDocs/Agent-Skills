@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: Details on what Microsoft Entra roles and permissions Service Connector
     assigns or requires, least-privilege guidance, and how access is granted to target
@@ -9,9 +9,9 @@ category_descriptions:
   configuration: How to view and retrieve Service Connector-generated configs, choose
     and set up auth methods, and supply correct Azure CLI parameters when creating
     or managing connections
-  integrations: How to connect apps to Azure and external data/services (Cosmos DB
-    variants, SQL, PostgreSQL/MySQL, storage, messaging, AI, Redis, Kafka, MongoDB,
-    Key Vault) using Service Connector patterns
+  integrations: How to use Azure Service Connector to securely connect apps to databases,
+    messaging, storage, AI, and caching services (Cosmos DB, Kafka, SQL, Redis, Key
+    Vault, OpenAI, etc.)
   troubleshooting: Diagnosing and resolving Service Connector errors and failures,
     including common error codes, connection issues, and steps to debug and fix failed
     connections.
@@ -23,7 +23,7 @@ skill_description: Expert knowledge for Azure Service Connector development incl
   patterns, and deployment. Use when building, debugging, or optimizing Azure Service
   Connector applications. Not for Azure App Service (use azure-app-service), Azure
   Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service).
+  API Management (use azure-api-management).
 ---
 # Azure Service Connector Crawl Report
 
@@ -36,10 +36,10 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 63
-- **Deleted Pages**: 0
+- **Unchanged**: 62
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
 ## Classification Statistics
@@ -56,12 +56,19 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 
 ## Changes
 
+### New Pages
+
+- [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
+
+### Deleted Pages
+
+- ~~Azure AI services~~ (https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error) | troubleshooting | 0.95 | Explicitly described as listing error messages and suggested actions; this implies mappings from specific errors to causes and resolutions, which is product-specific troubleshooting knowledge. |
-| [Azure AI services](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | integrations | 0.90 | Provides supported authentication methods, clients, sample code, and default environment variable names/values for Azure AI services; this is a product-specific integration and coding pattern reference. |
 | [Azure App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-app-configuration) | integrations | 0.90 | Shows supported auth methods, clients, sample code, and default environment variable names/values for App Configuration; matches integration & coding patterns criteria. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob) | integrations | 0.90 | Details supported auth methods, clients, sample code, and default environment variable names/values for Blob Storage; clearly an integration pattern reference. |
 | [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache) | integrations | 0.90 | Covers supported auth methods, clients, sample code, and default environment variable names/values for Azure Cache for Redis; fits integrations & coding patterns. |
@@ -90,6 +97,7 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 | [Azure Cosmos DB for Table](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-table) | integrations | 0.84 | Shows concrete integration details and default environment variable names/values for Cosmos DB Table when wired through Service Connector. |
 | [Get connection configurations](https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations) | configuration | 0.80 | Explains how to obtain connection configurations (e.g., connection strings) and configuration names for specific target service types; likely includes environment variable names and patterns, which are configuration details. |
 | [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission) | security | 0.80 | Describes specific permission requirements for various Azure resources and how Service Connector uses on-behalf-of tokens; likely lists required roles/permissions per resource, which is product-specific security configuration. |
+| [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | integrations | 0.78 | The article describes supported authentication methods and clients for connecting to Foundry Tools using Service Connector, and explicitly mentions default environment variable names and values created with the connection. These product-specific configuration details and code samples for integrating services match the integrations sub-skill definition. |
 | [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations) | limits-quotas | 0.78 | Limitations article is expected to enumerate concrete constraints and unsupported scenarios for Service Connector, which are product-specific expert details not derivable from general knowledge. |
 | [Provide correct parameters](https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters) | configuration | 0.75 | Focuses on fundamental properties and proper value formats when passing parameters via CLI; this implies specific parameter names, formats, and constraints, which are configuration details. |
 | [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools) | deployment | 0.70 | Guides translating connected services into IaC templates for CI/CD; likely includes resource definitions, properties, and constraints specific to Service Connector, which are deployment-focused patterns. |

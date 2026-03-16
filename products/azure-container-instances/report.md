@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  limits-quotas: ACI CPU/memory limits, regional quota checks, standby pool caps,
-    and VNet-related deployment constraints and planning for container instances
+  limits-quotas: ACI limits on CPU/memory (big containers), regional quota checks,
+    standby pool constraints, and networking limits when using virtual networks
   architecture-patterns: Design patterns for giving ACI containers static inbound/outbound
     IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable
     network egress/ingress.
@@ -29,7 +29,7 @@ skill_description: Expert knowledge for Azure Container Instances development in
   limits & quotas, security, configuration, and deployment. Use when building, debugging,
   or optimizing Azure Container Instances applications. Not for Azure Container Apps
   (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
 ---
 # Azure Container Instances Crawl Report
 
@@ -43,8 +43,8 @@ skill_description: Expert knowledge for Azure Container Instances development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -63,6 +63,11 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-11T22:06:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +103,7 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [Security considerations](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-image-security) | security | 0.70 | Security considerations article; likely includes ACI-specific recommendations, possibly RBAC roles, secret handling patterns, and image security guidance beyond generic security theory. |
 | [Set environment variables (env)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-environment-variables) | configuration | 0.70 | Shows concrete CLI/PowerShell/portal parameters and YAML schema fields for setting environment variables in ACI, including property names and usage patterns that are product-specific. |
 | [Use config maps](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-config-map) | configuration | 0.70 | Describes ACI-specific config map properties and update behavior, with concrete configuration fields and patterns distinct from generic environment variable usage. |
-| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.70 | Virtual network scenarios and limitations; explicitly notes required NAT gateway for outbound connectivity and likely includes other vNet-specific constraints and limits. |
+| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.68 | Page describes specific, product-enforced limitations for Azure Container Instances in virtual networks, including the requirement that NAT gateway is the only supported configuration for outbound connectivity from container groups in a VNet. This is concrete, product-specific behavior and a hard constraint that affects architecture and configuration, fitting best under limits-quotas. |
 | [About Azure Container Instances Spot containers](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-spot-containers-overview) | decision-making | 0.65 | Spot containers overview with quantified discount (up to 70%) and trade-offs for interruptible workloads; helps decide when to choose Spot vs regular ACI. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-create) | configuration | 0.65 | Provides concrete configuration steps and parameters to define container group profiles and standby pools in ACI. |
 | [Deploy in a virtual network](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-vnet) | configuration | 0.65 | How-to article for deploying into vNets; likely includes specific CLI parameters, subnet requirements, and NAT gateway configuration details unique to ACI. |

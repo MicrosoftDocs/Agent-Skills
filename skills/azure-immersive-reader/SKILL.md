@@ -1,9 +1,9 @@
 ---
 name: azure-immersive-reader
-description: Expert knowledge for Azure AI Immersive Reader development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader applications. Not for Azure AI services (use azure-ai-services), Azure AI Language (use azure-language-service), Azure Translator (use azure-translator), Azure AI Speech (use azure-speech).
+description: Expert knowledge for Azure AI Immersive Reader development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader applications. Not for Azure AI services (use azure-ai-services), Azure AI Language (use azure-language-service), Azure AI Search (use azure-cognitive-search), Azure Translator (use azure-translator).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Immersive Reader Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L38-L42 | Supported languages and feature availability for Immersive Reader (e.g., which languages work with read-aloud, translation, and other capabilities). |
 | Security | L43-L49 | Configuring Immersive Reader security: creating the resource with Entra auth, managing Entra role assignments, and setting cookie policy and user consent. |
 | Configuration | L50-L56 | Configuring Immersive Reader behavior: read-aloud voice/speed, translation languages and behavior, and storing/managing per-user reading and language preferences. |
-| Integrations & Coding Patterns | L57-L66 | Integrating Immersive Reader into web/iOS apps: launch flows, custom buttons, HTML/MathML prep, multi-resource use, and JavaScript/iOS SDK usage and patterns. |
+| Integrations & Coding Patterns | L57-L66 | Implementing Immersive Reader in web/iOS apps: launch flows, JS SDK usage, HTML/MathML prep, custom buttons, multi-resource setups, and Vision Read integration. |
 
 ### Best Practices
 | Topic | URL |
@@ -58,7 +58,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Customize the Immersive Reader launch button | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-customize-launch-button |
-| Launch Immersive Reader from app platforms | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader |
+| Launch Azure Immersive Reader from application code | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader |
 | Use multiple Immersive Reader resources in one app | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-multiple-resources |
 | Prepare HTML content for Immersive Reader integration | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-prepare-html |
 | Render MathML expressions in Immersive Reader | https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to/display-math |

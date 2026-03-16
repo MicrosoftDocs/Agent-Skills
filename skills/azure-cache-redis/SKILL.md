@@ -1,9 +1,9 @@
 ---
 name: azure-cache-redis
-description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cache for Redis Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L71 | Guidance on sizing and capacity, network isolation, reservations, and planning or executing migrations to and from Azure Cache for Redis (including VNets and Private Link). |
 | Architecture & Design Patterns | L72-L76 | Guidance on designing highly available Azure Cache for Redis deployments, covering redundancy, failover, clustering, and resilience best practices. |
 | Security | L77-L89 | Securing Azure Cache for Redis: auth (Entra, policies, managed identities), TLS config, disk encryption, VNets/Private Link, and enforcing security via Azure Policy. |
-| Configuration | L90-L102 | Configuring Azure Cache for Redis: server settings, reboots/flushes, geo-replication, replicas, persistence, zone redundancy, and monitoring/diagnostics with Azure Monitor. |
-| Integrations & Coding Patterns | L103-L114 | Managing Azure Cache for Redis via CLI/PowerShell, routing Redis events to webhooks/endpoints, and importing/exporting data through Blob storage, including clustered premium provisioning. |
-| Deployment | L115-L121 | Scaling and upgrading Azure Cache for Redis instances, and deploying them using ARM or Bicep templates, including safe scale operations and Redis version upgrades. |
+| Configuration | L90-L103 | Configuring Azure Cache for Redis behavior: server settings, reboot/flush, geo-replication, replicas, persistence, zone redundancy, and monitoring/metrics via Azure Monitor and diagnostics. |
+| Integrations & Coding Patterns | L104-L115 | Managing Azure Cache for Redis via CLI/PowerShell, routing Redis events to webhooks/endpoints, and importing/exporting data through Blob storage, including clustered premium provisioning. |
+| Deployment | L116-L122 | Scaling and upgrading Azure Cache for Redis instances, and deploying them using ARM or Bicep templates, including safe scale operations and Redis version upgrades. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -99,6 +99,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable zone redundancy for Azure Redis caches | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-zone-redundancy |
 | Configure Azure Monitor insights for Azure Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-insights-overview |
 | Configure diagnostic settings for Azure Redis monitoring | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-monitor-diagnostic-settings |
+| Reference metrics for monitoring Azure Cache for Redis | https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

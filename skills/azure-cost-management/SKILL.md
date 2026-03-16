@@ -1,9 +1,9 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Impact Reporting (use azure-impact-reporting).
+description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cost Management Skill
@@ -24,21 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L65 | Diagnosing and fixing Azure billing, subscription, payment, and reservation issues (errors, disabled subs, missing invoices, sign-up/access problems, and low/incorrect reservation/savings plan usage). |
-| Best Practices | L66-L75 | Best practices for analyzing Azure costs, optimizing and reducing spend (including Advisor and Hybrid Benefit), and planning/implementing organization-wide cost management processes. |
-| Decision Making | L76-L127 | Planning and decision guides for Azure cost management: cost allocation, EA→MCA migration, subscriptions/billing changes, reservations and savings plans, and evaluating/prepaying discounts. |
+| Troubleshooting | L36-L64 | Diagnosing and fixing Azure billing, subscription, and reservation issues (sign-up, disabled subs, payments, invoices, reservations, savings plans) and using logs/pivot tables to investigate anomalies. |
+| Best Practices | L65-L74 | Best practices for analyzing Azure costs, optimizing and reducing spend (including Advisor and Hybrid Benefit), and planning/implementing organization-wide cost management processes. |
+| Decision Making | L75-L127 | Deciding how to allocate, reserve, and prepay Azure costs (reservations, savings plans, Hybrid Benefit), choosing billing APIs/offers, and planning migrations or discounts to optimize spend. |
 | Limits & Quotas | L128-L143 | Limits, quotas, and timing rules for Azure costs: free tier limits, spending caps, data transfer fees, subscription limits, savings plans, SQL licensing, and billing/dormancy behavior. |
-| Security | L144-L164 | Securing Azure billing and cost data: RBAC and billing roles, admin elevation, tenant/subscription protection, fraud prevention, and permissions for EA, MCA, reservations, and savings plans. |
-| Configuration | L165-L237 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, alerts, and subscription/payment relationships to control, allocate, and optimize cloud costs. |
-| Integrations & Coding Patterns | L238-L254 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
-| Deployment | L255-L258 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
+| Security | L144-L164 | Securing Azure billing and cost data: RBAC and billing roles, admin elevation, EA/MCA/CSP access, fraud prevention, and permissions for subscriptions, reservations, and savings plans. |
+| Configuration | L165-L236 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, alerts, and subscription/payment relationships to control, allocate, and optimize cloud costs. |
+| Integrations & Coding Patterns | L237-L253 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
+| Deployment | L254-L257 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot common Azure Cost Management error codes | https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-management-error-codes |
 | Fix and reactivate disabled Azure for Students subscriptions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/azurestudents-subscription-disabled |
-| Resolve past-due balances on pay-as-you-go Azure | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/resolve-past-due-balance |
 | Troubleshoot and reactivate a disabled Azure subscription | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-disabled |
 | Troubleshoot subscription access issues after MCA signup | https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/troubleshoot-subscription-access |
 | Find who purchased an Azure reservation using logs | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/find-reservation-purchaser-from-logs |
@@ -48,13 +47,13 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure reservation recommendation issues | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/troubleshoot-reservation-recommendation |
 | Troubleshoot Azure reservations with low or zero utilization | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/troubleshoot-reservation-utilization |
 | Troubleshoot unexpected Azure savings plan utilization spikes | https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization |
-| Troubleshoot Azure payment method update errors | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/billing-troubleshoot-azure-payment-issues |
+| Troubleshoot Azure billing payment update errors | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/billing-troubleshoot-azure-payment-issues |
 | Fix VM creation errors for Azure EA users | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/cannot-create-vm |
 | Fix issues viewing Azure billing accounts | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-account-not-found |
 | Troubleshoot missing Azure invoices in the portal | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-cant-find-invoice |
 | Use pivot tables to troubleshoot CSP billing issues | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-csp-billing-issues-usage-file-pivot-tables |
 | Use pivot tables to troubleshoot MCA billing issues | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-customer-agreement-billing-issues-usage-file-pivot-tables |
-| Resolve declined credit card issues in Azure | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-declined-card |
+| Resolve declined credit cards for Azure billing | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-declined-card |
 | Use pivot tables to troubleshoot EA billing issues | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-ea-billing-issues-usage-file-pivot-tables |
 | Troubleshoot Azure threshold billing authorization issues | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-threshold-billing |
 | Resolve 'account belongs to a directory' subscription sign-up error | https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-subscription/cannot-sign-up-subscription |
@@ -94,6 +93,7 @@ This skill requires **network access** to fetch documentation content:
 | Determine which Azure reservation to purchase | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/determine-reservation-purchase |
 | Exchange or refund Azure reservations self-service | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations |
 | Reserve Microsoft Fabric capacity to reduce costs | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/fabric-capacity |
+| Decide and calculate Azure reservation instance size flexibility | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/instance-size-flexibility |
 | Evaluate limited-time VM discounts in Poland Central | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-central-poland |
 | Evaluate limited-time Linux VM discounts in Sweden Central | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-central-sweden |
 | Evaluate limited-time Linux VM reservation discounts | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-linux |
@@ -151,7 +151,7 @@ This skill requires **network access** to fetch documentation content:
 | Grant RBAC permissions to create Azure EA subscriptions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/grant-access-to-create-subscription |
 | Configure Azure subscription directory transfer policies | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-azure-subscription-policy |
 | Assign Azure billing access roles securely | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-billing-access |
-| Complete PSD2 strong customer authentication for Azure purchases | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/open-banking-strong-customer-authentication |
+| Understand PSD2 SCA requirements for Azure purchases | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/open-banking-strong-customer-authentication |
 | Protect Azure tenants and subscriptions from fraud and abuse | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/protect-tenants-subscriptions |
 | Understand and assign Azure Enterprise Agreement admin roles | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-ea-roles |
 | Use MCA billing roles for access control | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles |
@@ -184,7 +184,6 @@ This skill requires **network access** to fetch documentation content:
 | Transfer Azure plan subscriptions between Microsoft partners | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/azure-plan-subscription-transfer-partners |
 | Transfer billing ownership of MOSP Azure subscriptions | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/billing-subscription-transfer |
 | Cancel and permanently delete Azure subscriptions safely | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/cancel-azure-subscription |
-| Manage Azure subscription payment methods and cards | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card |
 | Initiate and manage change of channel partner for EA | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-of-channel-partner |
 | Perform common EA billing administration tasks in Azure portal | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-administration |
 | Manage indirect EA billing as a partner in Azure portal | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-billing-administration-partners |

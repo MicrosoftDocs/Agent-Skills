@@ -1,12 +1,11 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   architecture-patterns: Design patterns for using Route Server in hub-spoke, dual-homed,
     anycast, multi-region, ExpressRoute/VPN integrations, NVA next-hop designs, and
     spoke route injection.
-  configuration: Configuring Route Server settings (BGP peers, route propagation,
-    maintenance) and monitoring its health, performance, and routes using Azure Monitor
-    metrics
+  configuration: Configuring Azure Route Server BGP peers, policies, and settings,
+    and monitoring its performance, health, and traffic with Azure Monitor metrics
   best-practices: Configuring Azure Route Server routing preferences, BGP path selection,
     and custom routing policies to control traffic flow and route advertisement to
     your NVA or on-premises routers.
@@ -14,9 +13,8 @@ category_descriptions:
     Azure Route Server resources and operations.
   limits-quotas: Guidance on Route Server capacity planning, scale units, connection
     limits, and how many peers/routes each deployment can support.
-  troubleshooting: Diagnosing and resolving common Azure Route Server connectivity
-    and BGP peering issues, including misconfigurations, route propagation problems,
-    and troubleshooting steps.
+  troubleshooting: Diagnosing and fixing common Azure Route Server connectivity problems,
+    including BGP peering issues, route propagation, and troubleshooting steps/logs.
 skill_description: Expert knowledge for Azure Route Server development including troubleshooting,
   best practices, architecture & design patterns, limits & quotas, security, and configuration.
   Use when building, debugging, or optimizing Azure Route Server applications. Not
@@ -36,8 +34,8 @@ skill_description: Expert knowledge for Azure Route Server development including
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 21
+- **Updated Pages**: 3
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -55,15 +53,24 @@ skill_description: Expert knowledge for Azure Route Server development including
 
 ## Changes
 
+### Updated Pages
+
+- [Peer Route Server with NVA](https://learn.microsoft.com/en-us/azure/route-server/peer-route-server-with-virtual-appliance)
+  - Updated: 2025-09-18T22:19:00.000Z → 2026-03-04T06:13:00.000Z
+- [Configure and manage Route Server](https://learn.microsoft.com/en-us/azure/route-server/configure-route-server)
+  - Updated: 2025-09-17T22:11:00.000Z → 2026-03-04T12:31:00.000Z
+- [Troubleshoot Route Server issues](https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server)
+  - Updated: 2025-09-19T05:15:00.000Z → 2026-03-04T12:31:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Azure Route Server Capacity](https://learn.microsoft.com/en-us/azure/route-server/route-server-capacity) | limits-quotas | 0.90 | Provides explicit numeric capacity values (e.g., default 2 units, 4,000 VMs, 1,000-VM increments) that are product-specific limits. |
-| [Troubleshoot Route Server issues](https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server) | troubleshooting | 0.85 | Explicit troubleshooting guide for Route Server with symptom-to-cause-to-solution mappings and product-specific diagnostics. |
+| [Troubleshoot Route Server issues](https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server) | troubleshooting | 0.80 | Explicitly a troubleshooting article for Azure Route Server. Such pages normally include specific symptoms, causes, and resolutions, often with Azure-specific diagnostics, commands, and possibly error messages. This matches the troubleshooting sub-skill definition and constitutes expert operational knowledge. |
 | [IP anycast](https://learn.microsoft.com/en-us/azure/route-server/anycast) | architecture-patterns | 0.75 | Covers a specific anycast routing pattern over private networks using Route Server, including when to use it for availability/performance. |
 | [Multi-region design](https://learn.microsoft.com/en-us/azure/route-server/multiregion) | architecture-patterns | 0.75 | Provides multi-region topology patterns and design guidance specific to Route Server, including HA and DR scenarios. |
-| [Configure and manage Route Server](https://learn.microsoft.com/en-us/azure/route-server/configure-route-server) | configuration | 0.70 | Explains how to configure BGP peers, route exchange, and routing preferences; likely includes specific setting names and options. |
+| [Configure and manage Route Server](https://learn.microsoft.com/en-us/azure/route-server/configure-route-server) | configuration | 0.70 | Article is about configuring and managing Azure Route Server via portal, PowerShell, and CLI, including adding/removing BGP peers and configuring route exchange and routing preferences. This typically involves specific parameter names, flags, and configuration options unique to Route Server, which qualifies as expert configuration knowledge beyond generic concepts. |
 | [Dual-homed network](https://learn.microsoft.com/en-us/azure/route-server/about-dual-homed-network) | architecture-patterns | 0.70 | Describes a specific dual-homed network architecture pattern using Azure Route Server, including when and why to use it. |
 | [Next hop IP support](https://learn.microsoft.com/en-us/azure/route-server/next-hop-ip) | architecture-patterns | 0.70 | Describes product-specific architectural patterns (active-passive, active-active behind internal load balancers) enabled by next hop IP support. |
 | [Path selection](https://learn.microsoft.com/en-us/azure/route-server/path-selection) | best-practices | 0.70 | Explains how to configure routing preferences for performance/cost/resilience with product-specific guidance on path selection. |
@@ -83,5 +90,5 @@ skill_description: Expert knowledge for Azure Route Server development including
 | [Create a Route Server - Portal](https://learn.microsoft.com/en-us/azure/route-server/quickstart-create-route-server-portal) | 0.30 | Quickstart portal tutorial; shows basic creation steps but not structured configuration tables, limits, or troubleshooting content. |
 | [Create a Route Server - PowerShell](https://learn.microsoft.com/en-us/azure/route-server/quickstart-create-route-server-powershell) | 0.30 | Quickstart using PowerShell; primarily step-by-step commands, not a catalog of configuration options or limits. |
 | [Deploy Route Server with DDoS protection](https://learn.microsoft.com/en-us/azure/route-server/tutorial-protect-route-server-ddos) | 0.30 | Tutorial for enabling DDoS protection; step-by-step guidance without detailed security configuration matrices or RBAC specifics. |
-| [Peer Route Server with NVA](https://learn.microsoft.com/en-us/azure/route-server/peer-route-server-with-virtual-appliance) | 0.30 | End-to-end tutorial for BGP peering; scenario-focused, not organized as best-practices, limits, or troubleshooting reference. |
+| [Peer Route Server with NVA](https://learn.microsoft.com/en-us/azure/route-server/peer-route-server-with-virtual-appliance) | 0.30 | Tutorial-style walkthrough for deploying Route Server and configuring BGP peering with an NVA. Based on the description, it focuses on step-by-step setup and verification rather than product-specific limits, configuration matrices, or detailed troubleshooting with error codes. Lacks clear evidence of expert-only details per the defined categories. |
 | [What is Azure Route Server?](https://learn.microsoft.com/en-us/azure/route-server/overview) | 0.20 | High-level service overview of Azure Route Server without detailed limits, configs, or error mappings. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -7,8 +7,8 @@ category_descriptions:
   best-practices: Guidance on securing Azure Maps apps, rendering custom/static data,
     correct copyright attribution, routing/search best practices, accessibility, and
     Web SDK performance optimization.
-  security: 'Securing Azure Maps access: auth methods (Entra ID, SAS), SPA/web/daemon/device
-    scenarios, and Power BI integration security and data residency settings.'
+  security: 'Securing Azure Maps access: auth methods (keys, Entra ID, SAS), SPA/daemon/device
+    scenarios, Power BI visual access/residency, and private endpoint network protection.'
   limits-quotas: 'Coverage, limits, and capabilities of Azure Maps services: QPS rate
     limits, and regional support for geocoding, rendering/tiles, routing, traffic,
     and weather data.'
@@ -33,17 +33,17 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 
 ## Summary
 
-- **Total Pages**: 145
-- **Fetched**: 145
+- **Total Pages**: 146
+- **Fetched**: 146
 - **Fetch Failed**: 0
-- **Classified**: 113
+- **Classified**: 114
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 2
-- **Unchanged**: 143
-- **Deleted Pages**: 0
+- **Unchanged**: 142
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
 ## Classification Statistics
@@ -52,22 +52,31 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 |------|-------|------------|
 | architecture-patterns | 2 | 1.4% |
 | best-practices | 7 | 4.8% |
-| configuration | 21 | 14.5% |
+| configuration | 21 | 14.4% |
 | decision-making | 6 | 4.1% |
-| integrations | 60 | 41.4% |
+| integrations | 60 | 41.1% |
 | limits-quotas | 6 | 4.1% |
-| security | 10 | 6.9% |
+| security | 11 | 7.5% |
 | troubleshooting | 1 | 0.7% |
-| *(Unclassified)* | 32 | 22.1% |
+| *(Unclassified)* | 32 | 21.9% |
 
 ## Changes
 
+### New Pages
+
+- [Use private endpoints with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints)
+- [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage)
+
 ### Updated Pages
 
-- [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps)
-  - Updated: 2025-10-01T22:16:00.000Z → 2026-03-03T23:37:00.000Z
-- [Azure Maps QPS Rate Limits](https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits)
-  - Updated: 2025-10-01T22:16:00.000Z → 2026-03-03T18:22:00.000Z
+- [Power BI Azure Maps Visual Data Residency](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency)
+  - Updated: 2024-03-22T08:00:00.000Z → 2026-03-06T17:59:00.000Z
+- [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module)
+  - Updated: 2025-12-17T06:10:00.000Z → 2025-12-17T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Coverage~~ (https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage)
 
 ## Classified Pages
 
@@ -135,7 +144,6 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication) | security | 0.70 | Describes concrete Azure Maps authentication options (Microsoft Entra ID vs shared key), including account-specific identifiers and how they’re used; likely includes scopes and configuration parameters unique to Azure Maps. |
 | [Manage consent](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-consent) | configuration | 0.70 | Explains configuring global data processing settings via portal, REST APIs, and ARM templates to comply with residency laws; involves product-specific configuration options and parameters. |
 | [Manage pricing tier](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier) | decision-making | 0.70 | Discusses Gen1 vs Gen2 pricing tiers, retirement dates, and when/how to switch; includes concrete SKU guidance and migration implications, which is decision-making content with product-specific details. |
-| [Power BI Azure Maps Visual Data Residency](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency) | security | 0.70 | Describes how tenant location maps to specific Azure Maps geographic endpoints (eu.atlas.microsoft.com, us.atlas.microsoft.com) to keep data in-region; this is product-specific security/compliance behavior with concrete endpoint values. |
 | [Python REST SDK Developers Guide](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-dev-guide-py-sdk) | integrations | 0.70 | Similar to C# guide but for Python; includes concrete SDK methods and configuration for Search, Route, Render, Geolocation; product-specific integration details. |
 | [React to drawing events](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-events) | integrations | 0.70 | Provides a table of DrawingManager events and how they fire during user interactions, which are product-specific event contracts. |
 | [Reacting to events](https://learn.microsoft.com/en-us/azure/azure-maps/map-events) | integrations | 0.70 | Provides a list of supported map events and how to subscribe to them using Azure Maps APIs, which are concrete, product-specific event integration details. |
@@ -147,6 +155,7 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 | [The Azure Maps Power BI visual](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-get-started) | integrations | 0.70 | Explains how to configure and use the Azure Maps Power BI visual with service-specific options and requirements (e.g., license, environment). |
 | [Understanding Azure Maps Transactions](https://learn.microsoft.com/en-us/azure/azure-maps/understanding-azure-maps-transactions) | decision-making | 0.70 | Explains which API usages are billable vs non-billable and how transactions are calculated; supports cost planning and service usage decisions, fitting decision-making around consumption. |
 | [Understanding layers](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-understanding-layers) | integrations | 0.70 | Details available layer types and their behaviors within the Azure Maps visual, which are specific configuration and usage patterns. |
+| [Use private endpoints with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints) | security | 0.70 | Page is about configuring Azure Private Link/private endpoints for Azure Maps. This is product-specific security configuration (network isolation, private IP usage, how to attach endpoints to Maps accounts). While the summary doesn’t show tables, such pages typically include specific settings, required configurations, and possibly DNS/endpoint details, which qualify as expert security configuration knowledge. |
 | [Web SDK supported browsers](https://learn.microsoft.com/en-us/azure/azure-maps/supported-browsers) | configuration | 0.70 | Lists supported browsers and explains atlas.isSupported behavior, which is a product-specific capability matrix and detection configuration. |
 | [Zoom levels and tile grid](https://learn.microsoft.com/en-us/azure/azure-maps/zoom-levels-and-tile-grid) | configuration | 0.70 | Explains zoom levels, tile grid, and coordinate conversions with code samples; includes product-specific behavior and parameters for tile addressing. |
 | [Add HTML markers](https://learn.microsoft.com/en-us/azure/azure-maps/map-add-custom-html) | configuration | 0.68 | Explains HTML markers, their performance implications, and how they differ from WebGL layers; includes specific APIs and a key gotcha about DOM overhead, which is product-specific configuration and behavior knowledge. |
@@ -167,6 +176,7 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 | [Interaction types and keyboard shortcuts](https://learn.microsoft.com/en-us/azure/azure-maps/drawing-tools-interactions-keyboard-shortcuts) | integrations | 0.65 | Lists supported interaction types and keyboard shortcuts for the drawing manager, which are concrete, product-specific behaviors. |
 | [Make your app accessible](https://learn.microsoft.com/en-us/azure/azure-maps/map-accessibility) | best-practices | 0.65 | Contains Azure Maps–specific accessibility features and actionable tips (keyboard navigation, screen reader behavior) that go beyond generic accessibility theory. |
 | [Manage access](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-manage-access) | security | 0.65 | Covers how designers and tenant admins manage use of the Azure Maps visual; likely includes product-specific access controls and admin settings, fitting security/management configuration. |
+| [Power BI Azure Maps Visual Data Residency](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency) | security | 0.65 | Contains product-specific behavior about how the Azure Maps Power BI visual automatically routes requests based on the Power BI tenant location to meet data residency requirements, which is detailed implementation knowledge not obvious from general training data. It focuses on security/compliance (data residency) configuration/behavior, though without numeric limits. |
 | [Show right attribution](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution) | best-practices | 0.65 | Specifies where and how attribution must be displayed when using the Render API (e.g., lower right corner, per-tile updates); these are product-specific compliance requirements and DO/DON'T guidance. |
 | [Supported map styles](https://learn.microsoft.com/en-us/azure/azure-maps/supported-map-styles) | configuration | 0.65 | Describes supported map style identifiers (road, satellite_road_labels, etc.); these are specific configuration values for the service. |
 | [Weather coverage](https://learn.microsoft.com/en-us/azure/azure-maps/weather-coverage) | limits-quotas | 0.65 | Weather coverage page defines where weather data is available; region-by-region capability is a form of service limit not inferable generically. |
@@ -191,12 +201,10 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.50 | Links to coverage information per service; acts as navigation/aggregation rather than containing detailed technical tables itself. |
 | [Use Copilot to help migrate](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-help-using-copilot) | 0.45 | How-to on using GitHub Copilot to assist migration; more about using Copilot than Azure Maps-specific configuration or limits. |
 | [View usage metrics](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-view-api-usage) | 0.45 | Describes how to view metrics in the portal; likely mostly UI steps and conceptual metrics descriptions without detailed limits, configuration tables, or error mappings. |
 | [Azure Maps geographic scope](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-scope) | 0.40 | Explains geographic scope and data residency conceptually; likely lacks numeric limits or detailed configuration parameter tables. |
 | [Consent management](https://learn.microsoft.com/en-us/azure/azure-maps/consent-management) | 0.40 | Consent management and data residency overview; mostly policy/behavior description rather than concrete configuration matrices or limits. |
-| [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | 0.40 | Release notes for Drawing Tools Module; similar to other release notes, not organized as configuration, limits, or troubleshooting guidance. |
 | [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys) | 0.40 | Portal-based account and key management is mostly step-by-step UI guidance without detailed configuration tables, limits, or specialized patterns. |
 | [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.40 | Release notes for Map Control; while detailed, they are change logs rather than structured skills content (limits, config matrices, troubleshooting, etc.). |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.40 | Release notes for Spatial IO Module; change log style, not structured expert guidance per the defined sub-skill types. |
@@ -217,9 +225,11 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 | [Add a reference layer](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-reference-layer) | 0.20 | Reference layer usage description is high-level and focused on formats; no detailed configuration tables, limits, or troubleshooting mappings indicated. |
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
+| [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
 | [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |
 | [Route to a destination](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location) | 0.20 | Routing tutorial showing how to call Route service; no indication of limits, configuration tables, or troubleshooting mappings. |
 | [Search for point of interest](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-search-location) | 0.20 | Tutorial on searching locations; focuses on example usage rather than product-specific limits, configuration options, or error codes. |
 | [What is Azure Maps?](https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps) | 0.20 | High-level product overview of Azure Maps services and capabilities without detailed limits, configuration tables, or error mappings. |
+| [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module) | - | Release notes summary without exposed technical details, configuration parameters, limits, or troubleshooting information; no concrete expert knowledge per the defined categories. |

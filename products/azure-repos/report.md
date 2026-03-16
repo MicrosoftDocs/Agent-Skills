@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Azure Repos and TFVC: auth methods (Entra, PAT, SSH), branch/repo/PR
     permissions and policies, SSH key safety, secure cloning/import, and GitHub Advanced
@@ -45,8 +45,8 @@ skill_description: Expert knowledge for Azure Repos development including troubl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 206
+- **Updated Pages**: 1
+- **Unchanged**: 205
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -66,6 +66,11 @@ skill_description: Expert knowledge for Azure Repos development including troubl
 | *(Unclassified)* | 72 | 35.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Delete a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-existing-repo?view=azure-devops)
+  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-04T22:04:00.000Z
 
 ## Classified Pages
 
@@ -233,7 +238,6 @@ skill_description: Expert knowledge for Azure Repos development including troubl
 | [Create a new repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/creatingrepo?view=azure-devops) | 0.35 | Basic how-to for creating a local Git repo and connecting to Azure Repos; no detailed configuration matrices or constraints. |
 | [Create pull requests](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops) | 0.35 | Creating PRs and adding reviewers; standard workflow instructions, not configuration reference or troubleshooting. |
 | [Delete a Git branch](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-git-branch?view=azure-devops) | 0.35 | Simple instructions for deleting branches locally and remotely; generic Git behavior without Azure-specific constraints or configs. |
-| [Delete a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-existing-repo?view=azure-devops) | 0.35 | Procedural steps to delete a repo; contains one constraint about not deleting the only repo, but overall lacks detailed configuration or limits tables. |
 | [Find and view changesets](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/find-view-changesets?view=azure-devops) | 0.35 | Finding and viewing changesets; standard usage guidance, no expert-only configuration or troubleshooting. |
 | [Gated check-ins](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process?view=azure-devops) | 0.35 | Gated check-in workflow steps; procedural guidance without numeric thresholds, config parameter tables, or error-code mappings. |
 | [Get the history of an item](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/get-history-item?view=azure-devops) | 0.35 | Using the History window; standard feature usage without deep config or troubleshooting mappings. |
@@ -272,6 +276,7 @@ skill_description: Expert knowledge for Azure Repos development including troubl
 | [Commit details](https://learn.microsoft.com/en-us/azure/devops/repos/git/commit-details?view=azure-devops) | 0.20 | Viewing commit details and performing basic actions; no advanced configuration or troubleshooting content. |
 | [Commit history](https://learn.microsoft.com/en-us/azure/devops/repos/git/commit-history?view=azure-devops) | 0.20 | Viewing commit history in Visual Studio; straightforward UI usage without expert-only details. |
 | [Delete a branch](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-branch?view=azure-devops) | 0.20 | Simple UI procedure for deleting a branch; no advanced config, limits, or troubleshooting content. |
+| [Delete a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-existing-repo?view=azure-devops) | 0.20 | Task-focused how-to for deleting a Git repo in Azure DevOps; no limits, quotas, configuration tables, error-code mappings, or product-specific parameters. It describes UI steps rather than expert-only reference details. |
 | [Develop an app](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/develop-your-app-team-foundation-version-control?view=azure-devops) | 0.20 | Aggregates resources on developing with TFVC; largely conceptual and navigational rather than detailed expert guidance. |
 | [History in Git](https://learn.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops) | 0.20 | Conceptual overview of Git history; generic content not specific to Azure DevOps configuration or troubleshooting. |
 | [Restore a deleted branch](https://learn.microsoft.com/en-us/azure/devops/repos/git/restore-deleted-branch?view=azure-devops) | 0.20 | How-to restore a deleted branch; lacks expert-only configuration or diagnostic details. |

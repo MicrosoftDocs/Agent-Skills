@@ -1,9 +1,9 @@
 ---
 name: azure-active-directory-b2c
-description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Active Directory B2C applications. Not for Azure Information Protection (use azure-information-protection), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security).
+description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Active Directory B2C applications. Not for Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Information Protection (use azure-information-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Active Directory B2C Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L43 | Diagnosing and fixing Azure AD B2C errors, debugging custom policies and user flows, and using Application Insights to trace and troubleshoot policy execution. |
 | Best Practices | L44-L52 | Best practices for configuring Azure AD B2C, designing user flows/custom policies, securing MFA and architecture, and detecting/mitigating credential and account attacks. |
-| Decision Making | L53-L61 | Guidance on choosing app types, billing tiers, regions/data residency, supported Entra ID features, and user migration strategies for Azure AD B2C tenants |
+| Decision Making | L53-L61 | Guidance on choosing B2C app types, understanding MAU billing/tiers, planning regions and data residency, and deciding on usage, migration strategy, and user migration approaches. |
 | Architecture & Design Patterns | L62-L70 | Global Azure AD B2C customer identity architectures, comparing funnel- vs region-based designs, and step-by-step proof-of-concept implementations for each pattern |
-| Limits & Quotas | L71-L78 | Limits on tenants, users, tokens, and directory size in Azure AD B2C, plus how to create tenants, monitor quota usage, and understand token formats and constraints. |
+| Limits & Quotas | L71-L78 | Service limits, quotas, and restrictions for Azure AD B2C tenants, including directory size, token formats/constraints, and tenant creation and scaling limits. |
 | Security | L79-L95 | Security hardening for Azure AD B2C: MFA, Conditional Access, Identity Protection, CAPTCHA, keys/certs, TLS/ciphers, admin roles, tenant control, API connector security, and Sentinel logging. |
-| Configuration | L96-L211 | Configuring Azure AD B2C: custom policies, user flows, tokens, MFA, identity providers, app/API registration, UI/localization, claims, journeys, SSO, and advanced auth options for many app types. |
-| Integrations & Coding Patterns | L212-L324 | End-to-end patterns for integrating Azure AD B2C into apps and APIs, configuring identity providers, custom policies, fraud/risk tools, and securing traffic with proxies, WAFs, and monitoring. |
-| Deployment | L325-L329 | Automating deployment of Azure AD B2C custom policies using CI/CD pipelines, including setup steps, YAML examples, and best practices for Azure Pipelines and GitHub Actions. |
+| Configuration | L96-L210 | Configuring Azure AD B2C: custom policies, user flows, tokens, MFA, identity providers, app/API registration, UI/localization, claims, journeys, SSO, and advanced auth options for many app types. |
+| Integrations & Coding Patterns | L211-L323 | End-to-end patterns for integrating Azure AD B2C into apps and APIs, configuring identity providers, custom policies, fraud/risk tools, and securing traffic with proxies, WAFs, and monitoring. |
+| Deployment | L324-L328 | Automating deployment of Azure AD B2C custom policies using CI/CD pipelines, including setup steps, YAML examples, and best practices for Azure Pipelines and GitHub Actions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,7 +56,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose appropriate application types for Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/application-types |
 | Understand Azure AD B2C MAU billing and tier selection | https://learn.microsoft.com/en-us/azure/active-directory-b2c/billing |
 | Plan Azure AD B2C region availability and data residency | https://learn.microsoft.com/en-us/azure/active-directory-b2c/data-residency |
-| Use supported Microsoft Entra ID features in Azure AD B2C tenants | https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features |
+| Plan Azure AD B2C usage and migration decisions | https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq |
 | Choose a user migration approach to Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-migration |
 
 ### Architecture & Design Patterns
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure AD B2C service limits, quotas, and restrictions | https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits |
+| Review Azure AD B2C service limits and restrictions | https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits |
 | Monitor and manage Azure AD B2C directory size quota | https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-directory-quota |
 | Understand Azure AD B2C token types, contents, and constraints | https://learn.microsoft.com/en-us/azure/active-directory-b2c/tokens-overview |
 | Create Azure AD B2C tenant and understand tenant limits | https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant |
@@ -133,7 +133,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure AD B2C custom policies with Identity Experience Framework | https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview |
 | Configure single sign-on session providers in Azure AD B2C custom policies | https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-reference-sso |
 | Customize Azure AD B2C user interface branding | https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui |
-| Use HTML templates to customize Azure AD B2C pages | https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html |
 | Use date claims transformations in Azure AD B2C policies | https://learn.microsoft.com/en-us/azure/active-directory-b2c/date-transformations |
 | Set up direct sign-in and prefilled usernames in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/direct-signin |
 | Disable email verification during Azure AD B2C sign-up | https://learn.microsoft.com/en-us/azure/active-directory-b2c/disable-email-verification |

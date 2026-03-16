@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  configuration: 'Configuring Azure Cache for Redis: server settings, reboots/flushes,
-    geo-replication, replicas, persistence, zone redundancy, and monitoring/diagnostics
-    with Azure Monitor.'
+  configuration: 'Configuring Azure Cache for Redis behavior: server settings, reboot/flush,
+    geo-replication, replicas, persistence, zone redundancy, and monitoring/metrics
+    via Azure Monitor and diagnostics.'
   security: 'Securing Azure Cache for Redis: auth (Entra, policies, managed identities),
     TLS config, disk encryption, VNets/Private Link, and enforcing security via Azure
     Policy.'
@@ -28,21 +28,21 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
   building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure
-  Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db),
-  Azure Table Storage (use azure-table-storage).
+  Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache),
+  Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
 ---
 # Azure Cache for Redis Crawl Report
 
 ## Summary
 
-- **Total Pages**: 62
-- **Fetched**: 62
+- **Total Pages**: 63
+- **Fetched**: 63
 - **Fetch Failed**: 0
-- **Classified**: 55
+- **Classified**: 56
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
@@ -53,16 +53,20 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.6% |
-| best-practices | 11 | 17.7% |
-| configuration | 9 | 14.5% |
-| decision-making | 6 | 9.7% |
-| deployment | 4 | 6.5% |
-| integrations | 8 | 12.9% |
-| security | 9 | 14.5% |
-| troubleshooting | 7 | 11.3% |
-| *(Unclassified)* | 7 | 11.3% |
+| best-practices | 11 | 17.5% |
+| configuration | 10 | 15.9% |
+| decision-making | 6 | 9.5% |
+| deployment | 4 | 6.3% |
+| integrations | 8 | 12.7% |
+| security | 9 | 14.3% |
+| troubleshooting | 7 | 11.1% |
+| *(Unclassified)* | 7 | 11.1% |
 
 ## Changes
+
+### New Pages
+
+- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference)
 
 ## Classified Pages
 
@@ -98,6 +102,7 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | [Failover and patching](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-failover) | best-practices | 0.70 | Explains failover and patching behavior and how clients should handle it; likely includes product-specific recommendations and edge cases for resilient client design. |
 | [Import/Export data](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-import-export-data) | integrations | 0.70 | Describes how to use RDB snapshots with Azure Storage, including storage account/container configuration and Redis import/export parameters. |
 | [Kubernetes-hosted client applications best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-kubernetes) | best-practices | 0.70 | Kubernetes-hosted client best-practices are product-specific, covering connection patterns, configuration, and pitfalls when using Redis from Kubernetes. |
+| [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference) | configuration | 0.70 | The page is a monitoring data reference that enumerates product-specific metrics, dimensions, and diagnostic data for Azure Cache for Redis. It provides detailed, structured reference information (metric names, meanings, and how they are surfaced) that goes beyond generic monitoring concepts. This aligns best with configuration of monitoring/observability for the service, rather than limits, architecture, or troubleshooting. |
 | [Managed identity for storage accounts](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-managed-identity) | security | 0.70 | Managed identity article explains how Redis uses Entra-based identities to access storage accounts, including specific configuration steps and roles. |
 | [Migrate from VNet injection to Private Link](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-vnet-migration) | decision-making | 0.70 | Migration from VNet injection to Private Link includes patterns, trade-offs, and steps to choose and execute the right migration approach. |
 | [Migrate to Azure Redis from other caches](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-migration-guide) | decision-making | 0.70 | Migration guide covers scenarios (on-prem, other clouds, between instances) and likely includes decision guidance and patterns for choosing migration approaches. |

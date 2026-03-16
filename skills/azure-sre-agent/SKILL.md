@@ -1,14 +1,14 @@
 ---
 name: azure-sre-agent
-description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Sre Agent applications. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Security (use azure-security).
+description: Expert knowledge for Azure Sre Agent development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Sre Agent applications. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sre Agent Skill
 
-This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, decision making, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Sre Agent. Covers troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,45 +24,71 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L37 | Diagnosing and resolving Azure SRE Agent deployment, configuration, connectivity, and runtime issues, including common failure patterns and recommended fixes. |
-| Decision Making | L38-L42 | Billing model, pricing structure, cost drivers, and how Azure SRE Agent usage is metered, estimated, and optimized for cost. |
-| Security | L43-L52 | Security, roles, and access control for Azure SRE Agent: permissions, run modes and consent, data residency/privacy, compliance posture, and assigning user access roles. |
-| Configuration | L53-L61 | Configuring SRE Agent runtime features: code interpreter, memory, scheduled tasks, and creating/configuring subagents and workflows for multi-agent setups. |
-| Integrations & Coding Patterns | L62-L68 | Connecting SRE Agent to code repos, external services, custom Python tools, and MCP servers, plus patterns for extending and integrating the agent with your systems. |
+| Troubleshooting | L35-L40 | Diagnosing Azure SRE Agent deployment/operation issues and querying its action logs with KQL to investigate failures, performance, and behavior. |
+| Decision Making | L41-L47 | Guidance on SRE Agent pricing and cost drivers, when to trigger deep investigations, and how to assess incident impact, value, and performance metrics. |
+| Limits & Quotas | L48-L53 | Monitoring SRE Agent usage and Azure AI Unit quotas, viewing consumption, and checking which Azure regions currently support deploying the SRE Agent |
+| Security | L54-L60 | Data residency, privacy, and security model for Azure SRE Agent, including managed identity permissions setup and configuring user roles/RBAC access. |
+| Configuration | L61-L70 | Configuring Azure SRE Agent behavior, code interpreter (Python/shell), network/firewall access, and uploading/managing knowledge documents for grounding |
+| Integrations & Coding Patterns | L71-L90 | Integrating SRE Agent with DevOps, observability, incident tools (Azure DevOps, ADX, ServiceNow, PagerDuty, MCP), plus building/configuring Kusto & Python tools and notifications (Teams/Outlook). |
+| Deployment | L91-L94 | How to deploy and configure the Azure SRE Agent as a Microsoft Teams bot, including setup steps, required permissions, and integration details. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
+| Query Azure SRE Agent action logs with KQL | https://learn.microsoft.com/en-us/azure/sre-agent/audit-agent-actions |
 | Troubleshoot Azure SRE Agent deployment and operations | https://learn.microsoft.com/en-us/azure/sre-agent/faq-troubleshooting |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
 | Understand billing and cost model for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/billing |
+| Decide when to use deep investigation in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/deep-investigation |
+| Evaluate Azure SRE Agent incident value and performance | https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value |
+
+### Limits & Quotas
+| Topic | URL |
+|-------|-----|
+| Monitor Azure SRE Agent usage and Azure AI Unit limits | https://learn.microsoft.com/en-us/azure/sre-agent/monitor-agent-usage |
+| Check supported Azure regions for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure agent and user permissions in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/agent-managed-identity |
-| Control Azure SRE Agent run modes and consent | https://learn.microsoft.com/en-us/azure/sre-agent/agent-run-modes |
-| Review data residency and privacy for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy |
-| Evaluate Azure SRE Agent security and compliance | https://learn.microsoft.com/en-us/azure/sre-agent/faq-security-compliance |
-| Understand roles, permissions, and security model in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/roles-permissions-overview |
-| Assign user access roles for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/user-access-roles |
+| Understand data residency and privacy for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy |
+| Configure Azure SRE Agent permissions with managed identity | https://learn.microsoft.com/en-us/azure/sre-agent/permissions |
+| Configure user roles and RBAC for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/user-roles |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Configure agent hooks to control Azure SRE Agent behavior | https://learn.microsoft.com/en-us/azure/sre-agent/agent-hooks |
 | Use SRE Agent code interpreter for Python and shell | https://learn.microsoft.com/en-us/azure/sre-agent/code-interpreter |
-| Configure and use the Azure SRE Agent memory system | https://learn.microsoft.com/en-us/azure/sre-agent/memory-system |
-| Configure scheduled tasks in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/scheduled-tasks |
-| Create and manage subagents with Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/subagent-builder-overview |
-| Configure Azure SRE Agent subagents and workflows | https://learn.microsoft.com/en-us/azure/sre-agent/subagent-builder-scenarios |
+| Configure network and firewall requirements for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/network-requirements |
+| Upload and manage knowledge documents in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-upload-knowledge-document |
+| Upload and manage knowledge documents in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/upload-knowledge-document |
+| Enable and use Code Interpreter in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/use-code-interpreter |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Integrate Azure SRE Agent with source code repositories | https://learn.microsoft.com/en-us/azure/sre-agent/code-repository-connect |
-| Configure connectors to external services in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connectors |
-| Implement custom Python tools in Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/custom-logic-python |
-| Connect Azure SRE Agent to custom MCP servers | https://learn.microsoft.com/en-us/azure/sre-agent/custom-mcp-server |
+| Configure Azure DevOps connector for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-connector |
+| Connect Azure DevOps wikis as knowledge sources for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-wiki-knowledge |
+| Use Azure SRE Agent from Microsoft Teams | https://learn.microsoft.com/en-us/azure/sre-agent/chat-from-your-tools |
+| Connect Azure DevOps wiki as SRE Agent knowledge source | https://learn.microsoft.com/en-us/azure/sre-agent/connect-devops-wiki |
+| Configure PagerDuty integration for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/connect-pagerduty |
+| Connect ServiceNow to Azure SRE Agent securely | https://learn.microsoft.com/en-us/azure/sre-agent/connect-servicenow |
+| Create parameterized Kusto tools for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/create-kusto-tool |
+| Create and deploy a Python tool for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/create-python-tool |
+| Use Azure observability sources with Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/diagnose-azure-observability |
+| Integrate external observability tools with Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/diagnose-observability |
+| Set up Azure Data Explorer connector for SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/kusto-connector |
+| Create Kusto tools for deterministic KQL queries in SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/kusto-tools |
+| Use MCP connector to add external tools to SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connector |
+| Create and configure Python tools for Azure SRE Agent | https://learn.microsoft.com/en-us/azure/sre-agent/python-code-execution |
+| Configure SRE Agent notifications to Teams and Outlook | https://learn.microsoft.com/en-us/azure/sre-agent/send-notifications |
+| Configure Azure SRE Agent hooks via REST API | https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Deploy Azure SRE Agent as a Microsoft Teams bot | https://learn.microsoft.com/en-us/azure/sre-agent/teams-bot |

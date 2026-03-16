@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   limits-quotas: Managing Azure Boards limits for test artifacts and work item attachments,
     including size/quantity constraints and how to restore deleted test-related items.
@@ -7,9 +7,8 @@ category_descriptions:
     (sync, add-in, connection, mapping) and resolving backlog nesting/reordering errors.
   integrations: Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack,
     Teams, and writing WIQL queries for integrated work item tracking workflows
-  best-practices: 'Best practices for using Azure Boards: managing work items/bugs,
-    Kanban and Scrum sprints, capacity planning, cross-team scaling (incl. SAFe),
-    and building effective queries/charts.'
+  best-practices: 'Guidance on agile planning with Azure Boards: Kanban usage, WIP
+    limits, scalable Agile patterns, and sprint/Scrum setup and execution best practices.'
   configuration: Configuring Azure Boards processes, fields, and Kanban WIP limits,
     and integrating Boards with GitHub (repos, badges, GitHub Enterprise) plus using
     queries and work item field references.
@@ -36,8 +35,8 @@ skill_description: Expert knowledge for Azure Boards development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 34
+- **Unchanged**: 92
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -45,8 +44,8 @@ skill_description: Expert knowledge for Azure Boards development including troub
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 4 | 3.2% |
-| configuration | 11 | 8.7% |
+| best-practices | 5 | 4.0% |
+| configuration | 10 | 7.9% |
 | decision-making | 4 | 3.2% |
 | integrations | 6 | 4.8% |
 | limits-quotas | 2 | 1.6% |
@@ -55,6 +54,50 @@ skill_description: Expert knowledge for Azure Boards development including troub
 | *(Unclassified)* | 91 | 72.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Plan and track work](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/plan-track-work?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Add tasks or child items as checklists](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-task-checklists?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Add features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-epics-features-stories?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Manage columns](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-columns?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Customize cards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Expedite work (swimlanes)](https://learn.microsoft.com/en-us/azure/devops/boards/boards/expedite-work?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Copy or clone work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/copy-clone-work-items?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Add tags for work items](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query by area or iteration](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-area-iteration-path?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query by date or current sprint](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-date-or-current-iteration?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query based on tags](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query history and discussion](https://learn.microsoft.com/en-us/azure/devops/boards/queries/history-and-auditing?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query by field comparison](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-field-value?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query by a numeric field](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-numeric?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Query by links or attachments](https://learn.microsoft.com/en-us/azure/devops/boards/queries/linking-attachments?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Track dependencies](https://learn.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Set up your backlogs & boards](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops)
+  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
+- *...and 14 more*
 
 ## Classified Pages
 
@@ -84,7 +127,7 @@ skill_description: Expert knowledge for Azure Boards development including troub
 | [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops) | configuration | 0.65 | Describes configuring one or more GitHub repos with Azure Boards; integration setup typically involves product-specific settings and parameters. |
 | [Connect Azure Boards (on-premises)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-server) | configuration | 0.65 | On-premises integration with GitHub Enterprise Server usually requires specific configuration parameters and constraints unique to this product combination. |
 | [Install the Azure Boards app](https://learn.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops) | configuration | 0.65 | Quickstart for installing/configuring Azure Boards app for GitHub; likely includes specific configuration options (scopes, repo access) and settings unique to this integration. |
-| [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops) | configuration | 0.65 | Explains how to configure Work-in-Progress limits per column, including specific setting names and how limits behave when exceeded; this is product-specific configuration rather than generic Kanban theory. |
+| [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops) | best-practices | 0.65 | Covers Kanban WIP limits as soft constraints with board behavior when exceeded; likely includes product-specific recommendations and configuration details for setting limits per column, which qualify as actionable best practices rather than generic theory. |
 | [Set query permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/boards/queries/set-query-permissions?view=azure-devops) | security | 0.65 | Describes setting query permissions, likely listing specific permission types and scopes for My Queries vs Shared Queries; product-specific RBAC-style configuration. |
 | [Visibility across teams](https://learn.microsoft.com/en-us/azure/devops/boards/plans/visibility-across-teams?view=azure-devops) | decision-making | 0.65 | Explicitly about determining which methods best support monitoring across teams; likely compares multiple tools/approaches with criteria to help users decide how to track cross-team progress. |
 | [Work Item Query Language (WIQL) syntax](https://learn.microsoft.com/en-us/azure/devops/boards/queries/wiql-syntax?view=azure-devops) | integrations | 0.65 | Reference syntax for WIQL including ASOF clause and functions; this is effectively an API/query language reference with product-specific operators and clauses that function as integration/query parameters, which LLMs may not fully know from training. |
@@ -105,87 +148,87 @@ skill_description: Expert knowledge for Azure Boards development including troub
 | [Display rollup progress bars or totals](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/display-rollup?view=azure-devops) | 0.45 | Rollup columns usage; describes behavior and examples but no explicit numeric limits, config tables, or error mappings. |
 | [Bulk add or modify  (Excel)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops) | 0.40 | Describes using Excel add-in for bulk work item edits; procedural guidance without detailed config tables, limits, or error mappings. |
 | [Define a query](https://learn.microsoft.com/en-us/azure/devops/boards/queries/using-queries?view=azure-devops) | 0.40 | Covers defining queries, including some best practices, but description suggests general usage patterns rather than product-specific numeric limits, config tables, or error-code mappings. |
-| [Add tags for work items](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops) | 0.35 | Shows how to add and use tags for categorization; while product-specific, it lacks numeric limits, config tables, or troubleshooting mappings. |
+| [Query by title, ID, or description](https://learn.microsoft.com/en-us/azure/devops/boards/queries/titles-ids-descriptions?view=azure-devops) | 0.40 | Describes querying by title/ID/text fields; mentions best practices only conceptually, no numeric limits or detailed config parameters. |
+| [Semantic search](https://learn.microsoft.com/en-us/azure/devops/boards/queries/search-box-queries?view=azure-devops) | 0.40 | Explains semantic search usage and operators; lacks parameter tables, limits, or error-code-based troubleshooting mappings. |
 | [Agile process guidance](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/agile-process?view=azure-devops) | 0.35 | Describes Agile process artifacts and how to use them; largely conceptual/usage guidance without detailed configuration tables or limits. |
 | [Agile workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/agile-process-workflow?view=azure-devops) | 0.35 | Explains Agile workflow and work item types; workflow usage but no strong indication of numeric limits, configs, or decision matrices. |
 | [CMMI process guidance](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi-process?view=azure-devops) | 0.35 | Covers CMMI process artifacts and queries; similar to other process-overview pages without deep numeric or config details. |
 | [CMMI workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/cmmi-process-workflow?view=azure-devops) | 0.35 | Describes CMMI work item types and workflow; workflow usage rather than configuration, limits, or troubleshooting. |
 | [Configure your backlog view](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/configure-your-backlog-view?view=azure-devops) | 0.35 | Shows how to configure backlog view options; UI configuration steps without detailed parameter tables or expert-only constraints. |
-| [Copy or clone work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/copy-clone-work-items?view=azure-devops) | 0.35 | How-to for copying and cloning work items; procedural instructions without expert-level limits, configuration schemas, or troubleshooting mappings. |
 | [Customize a Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/customize-taskboard?view=azure-devops) | 0.35 | Customization of sprint taskboard cards and columns; UI configuration without detailed parameter tables or numeric constraints. |
 | [Link work items to objects](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/add-link?view=azure-devops) | 0.35 | Describes linking work items to other objects; focuses on relationships and traceability, not on configuration tables, quotas, or error handling. |
 | [Manage bugs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops) | 0.35 | Covers defining and managing bugs and defects; guidance is process-oriented rather than product-specific best practices with quantified impact or config values. |
 | [Manage work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-work-items?view=azure-devops) | 0.35 | General guide to managing work items effectively; mostly conceptual and procedural, any best practices are high-level without product-specific numeric or config details. |
 | [Move work items from one team to another](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/move-work-items?view=azure-devops) | 0.35 | Explains moving work items between teams by changing Area Paths; procedural guidance without detailed configuration matrices, limits, or troubleshooting. |
 | [Query FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-faqs?view=azure-devops) | 0.35 | FAQ about queries; mostly clarifications of behavior, but not structured as symptom→solution troubleshooting with error codes. |
-| [Query by a numeric field](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-numeric?view=azure-devops) | 0.35 | How-to for querying numeric fields (effort, story points); appears as usage guidance without limits, config matrices, or error-code-based troubleshooting. |
 | [Query by build & test integration fields](https://learn.microsoft.com/en-us/azure/devops/boards/queries/build-test-integration?view=azure-devops) | 0.35 | Build/test integration queries article; summary mentions sample queries and tips but not SDK parameter tables, limits, or error-code mappings. |
-| [Query by field comparison](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-field-value?view=azure-devops) | 0.35 | Covers comparison field operators in queries; likely syntax examples but no configuration tables, numeric thresholds, or troubleshooting mappings. |
-| [Query by links or attachments](https://learn.microsoft.com/en-us/azure/devops/boards/queries/linking-attachments?view=azure-devops) | 0.35 | Shows how to query by link/attachment count; summary references fields but not specific quotas, config tables, or troubleshooting mappings. |
 | [Query by picklist value](https://learn.microsoft.com/en-us/azure/devops/boards/queries/planning-ranking-priorities?view=azure-devops) | 0.35 | Explains queries based on rank/priority; no indication of numeric limits, configuration parameter tables, or decision matrices with thresholds. |
-| [Query by title, ID, or description](https://learn.microsoft.com/en-us/azure/devops/boards/queries/titles-ids-descriptions?view=azure-devops) | 0.35 | Explains querying by title/ID/rich-text; may mention field types but not in a detailed configuration/limits context that meets the expert-knowledge criteria. |
 | [Scrum process guidance](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/scrum-process?view=azure-devops) | 0.35 | Describes Scrum process artifacts and queries; usage-focused without clear evidence of expert-only configuration or limits. |
 | [Scrum workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/scrum-process-workflow?view=azure-devops) | 0.35 | Explains Scrum work item types and workflow; product usage guidance but not configuration/limits/troubleshooting oriented. |
-| [Semantic search](https://learn.microsoft.com/en-us/azure/devops/boards/queries/search-box-queries?view=azure-devops) | 0.35 | Explains semantic search filters and operators; likely lists fields and operators but not in the form of deep configuration tables or limits. |
 | [Use work item templates](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops) | 0.35 | Work item templates usage and management; mostly feature explanation and steps, no numeric limits, config tables, or error mappings. |
-| [3. Set sprint capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/set-capacity?view=azure-devops) | 0.30 | Covers setting team capacity; while it mentions hours/days and capacity concepts, there is no indication of specific system limits or configuration tables. |
+| [3. Set sprint capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/set-capacity?view=azure-devops) | 0.30 | Describes capacity concepts and how to set sprint capacity; no explicit numeric quotas, config tables, or error-code troubleshooting. |
 | [About work items](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/about-work-items?view=azure-devops) | 0.30 | Conceptual explanation of work items and types; no clear indication of numeric limits, configuration tables, or troubleshooting mappings. |
 | [Bulk import or update  (CSV)](https://learn.microsoft.com/en-us/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops) | 0.30 | Describes CSV import/export workflow; likely step-by-step instructions without detailed config tables, limits, or error-code troubleshooting. |
+| [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops) | 0.30 | Task-focused how-to for bulk editing work items; no product-specific limits, configuration tables, or error-code-based troubleshooting. |
 | [Change column options](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/set-column-options?view=azure-devops) | 0.30 | Explains adding/removing columns in lists; straightforward UI usage without deep configuration or troubleshooting details. |
-| [Customize cards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops) | 0.30 | Covers customizing board cards and visual styling; usage-level instructions without detailed configuration schemas or limits. |
+| [Change work item type, move work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/move-change-type?view=azure-devops) | 0.30 | How-to guide for moving/changing work items; lacks numeric limits, config parameter tables, or detailed troubleshooting mappings. |
 | [Delivery Plans FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/plans/faqs?view=azure-devops) | 0.30 | FAQ for Delivery Plans; likely general usage Q&A without detailed error-code mappings or numeric constraints. |
-| [End of sprint activities](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/end-sprint-activities?view=azure-devops) | 0.30 | End-of-sprint activities and backlog hygiene; prescriptive process guidance but no product-specific numeric limits, configs, or error mappings. |
+| [End of sprint activities](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/end-sprint-activities?view=azure-devops) | 0.30 | End-of-sprint hygiene and process steps; does not include numeric thresholds, configuration tables, or detailed troubleshooting content. |
 | [Example query charts](https://learn.microsoft.com/en-us/azure/devops/boards/queries/example-query-charts?view=azure-devops) | 0.30 | Shows example query charts and how to visualize data; largely conceptual and UI-driven without deep configuration or limits. |
-| [Expedite work (swimlanes)](https://learn.microsoft.com/en-us/azure/devops/boards/boards/expedite-work?view=azure-devops) | 0.30 | Shows how to use swimlanes to expedite work; primarily UI usage with no detailed configuration tables, limits, or troubleshooting mappings. |
 | [FAQs](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops) | 0.30 | General Azure Boards FAQ; mostly high-level Q&A and links, not focused on detailed error codes or configuration matrices. |
 | [Filter your board](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/filter-backlogs-boards-plans?view=azure-devops) | 0.30 | Explains filtering backlogs, boards, and plans; describes UI-driven filtering, not product-specific configuration parameters or quotas. |
 | [Follow work items and PRs](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/follow-work-items?view=azure-devops) | 0.30 | Explains following work items and PRs for notifications; usage-level feature description, no detailed config parameters or quotas. |
 | [GitHub integration](https://learn.microsoft.com/en-us/azure/devops/boards/github/?view=azure-devops) | 0.30 | Overview of Azure Boards–GitHub integration; mostly conceptual and high-level without detailed config parameter tables in the summary. |
 | [Implement SAFe® with Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/plans/safe-configure-boards?view=azure-devops) | 0.30 | Comprehensive SAFe implementation guide; largely methodology and configuration walkthroughs, but summary does not indicate numeric thresholds, limits, or decision matrices with quantified trade-offs. |
-| [Manage columns](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-columns?view=azure-devops) | 0.30 | Describes managing board columns conceptually and via UI; no numeric limits, config tables, or error-code-based troubleshooting. |
-| [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops) | 0.30 | Explains using impediment/issue work item types; procedural usage without detailed configuration parameters, limits, or troubleshooting content. |
 | [Manage queries & query folders](https://learn.microsoft.com/en-us/azure/devops/boards/queries/organize-queries?view=azure-devops) | 0.30 | Managing and organizing queries via folders/favorites; UI-level organization, no deep configuration or limits. |
-| [Query by area or iteration](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-area-iteration-path?view=azure-devops) | 0.30 | Explains querying by area/iteration path; appears procedural without limits, config parameter tables, or troubleshooting mappings. |
 | [Query by assignment or workflow changes](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops) | 0.30 | Task-focused how-to for building queries by workflow/board changes; no numeric limits, config tables, error-code mappings, or product-specific thresholds. |
-| [Query by date or current sprint](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-date-or-current-iteration?view=azure-devops) | 0.30 | Shows how to query by dates and iteration macros; likely syntax examples but no numeric limits, config matrices, or error-code-based troubleshooting. |
-| [Query history and discussion](https://learn.microsoft.com/en-us/azure/devops/boards/queries/history-and-auditing?view=azure-devops) | 0.30 | Describes querying work item history for auditing; summary suggests conceptual and procedural guidance, not limits, config, or error-code mappings. |
 | [Query quick reference](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-index-quick-ref?view=azure-devops) | 0.30 | Index/quick reference to query examples; navigation aid, not a concentrated expert-knowledge page. |
+| [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops) | 0.30 | Describes removing, deleting, and restoring work items conceptually; no specific quotas, configuration matrices, or error-code diagnostics. |
 | [Sample work item templates](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/work-item-template-examples?view=azure-devops) | 0.30 | Provides example templates; guidance is descriptive without product-specific numeric thresholds or configuration matrices. |
 | [Send email of items or print](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/email-work-items?view=azure-devops) | 0.30 | Describes sending emails with work items and printing lists; straightforward feature usage without expert-only configuration or limits. |
 | [Use your board](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-quickstart?view=azure-devops) | 0.30 | Quickstart for using a board; step-by-step usage without detailed configuration tables, limits, or decision matrices. |
-| [2. Add tasks](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops) | 0.25 | Describes adding and estimating tasks for sprint planning; appears to be general process guidance without product-specific limits or configs. |
-| [4. Adjust work to fit capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/adjust-work?view=azure-devops) | 0.25 | Guidance on adjusting work to fit capacity; process-level advice, not detailed configuration, limits, or troubleshooting. |
+| [View, open, run a query](https://learn.microsoft.com/en-us/azure/devops/boards/queries/view-run-query?view=azure-devops) | 0.30 | Covers viewing, running, and emailing queries; procedural guidance without expert-level configuration or limits. |
 | [6. Update the Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/task-board?view=azure-devops) | 0.25 | Describes using the Taskboard to track progress; UI usage and Scrum workflow, not configuration, limits, or troubleshooting. |
 | [Add or edit a Delivery Plan](https://learn.microsoft.com/en-us/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops) | 0.25 | How to add/edit a delivery plan; procedural content without evidence of expert-only limits, configuration tables, or troubleshooting mappings. |
-| [Change sprint dates](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/define-sprints?view=azure-devops) | 0.25 | How-to for setting sprint dates and iteration paths; procedural content without detailed configuration parameters or limits. |
+| [Add tags for work items](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops) | 0.25 | Explains tagging work items for filtering and queries; standard feature usage without numeric limits, configuration matrices, or troubleshooting details. |
 | [Configure a hierarchy of teams](https://learn.microsoft.com/en-us/azure/devops/boards/plans/configure-hierarchical-teams?view=azure-devops) | 0.25 | Configuring hierarchical teams; appears as step-by-step UI configuration without detailed parameter tables or limits. |
+| [Copy or clone work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/copy-clone-work-items?view=azure-devops) | 0.25 | How-to for copying or cloning work items and adding them to emails; appears procedural without expert-only configuration or limits data. |
+| [Expedite work (swimlanes)](https://learn.microsoft.com/en-us/azure/devops/boards/boards/expedite-work?view=azure-devops) | 0.25 | Shows how to use swimlanes to expedite work; usage guidance without numeric thresholds, configuration parameter tables, or troubleshooting mappings. |
 | [Forecast](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/forecast?view=azure-devops) | 0.25 | Explains forecast tool and velocity; may include some usage tips but no clear evidence of numeric limits, config tables, or decision matrices. |
 | [Manage inline tests](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-run-update-tests?view=azure-devops) | 0.25 | Explains how to add and run inline tests from work items; procedural usage without strong evidence of configuration tables or limits. |
+| [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops) | 0.25 | Describes tracking impediments/issues as work items; mainly process/usage guidance without specific limits, configs, or error-resolution content. |
 | [Portfolio management](https://learn.microsoft.com/en-us/azure/devops/boards/plans/portfolio-management?view=azure-devops) | 0.25 | Portfolio backlog management overview/how-to; no indication of numeric limits, config parameter tables, or decision matrices. |
 | [Review team Delivery Plans](https://learn.microsoft.com/en-us/azure/devops/boards/plans/review-team-plans?view=azure-devops) | 0.25 | Using delivery plans to review work; summary suggests conceptual and procedural guidance, not limits, config matrices, or troubleshooting mappings. |
-| [Set up your backlogs & boards](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops) | 0.25 | Backlog creation and management how-to; summary indicates general usage guidance without numeric limits, config parameter tables, or detailed troubleshooting mappings. |
-| [Track dependencies](https://learn.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops) | 0.25 | Dependency tracking in delivery plans; focused on UI usage and visualization, not on numeric limits, config parameters, or error-code mappings. |
 | [View & add work items](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/view-add-work-items?view=azure-devops) | 0.25 | Basic how-to for viewing and adding work items via portal, VS, and CLI; lacks expert-only limits, configuration matrices, or error diagnostics. |
-| [1. Assign backlog items to a sprint](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/assign-work-sprint?view=azure-devops) | 0.20 | Tutorial for assigning backlog items to a sprint; standard usage guidance, no expert-only numeric or config details. |
+| [1. Assign backlog items to a sprint](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/assign-work-sprint?view=azure-devops) | 0.20 | Sprint assignment tutorial; procedural steps only, no expert-level constraints, quotas, or configuration matrices. |
+| [2. Add tasks](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops) | 0.20 | Guidance on adding tasks and estimating effort; general agile usage, not detailed product-specific limits or configuration options. |
+| [4. Adjust work to fit capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/adjust-work?view=azure-devops) | 0.20 | How to adjust work to fit capacity; high-level planning guidance without specific product limits or configuration parameters. |
 | [About Sprints and Scrum](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/scrum-overview?view=azure-devops) | 0.20 | Scrum work processes overview; high-level conceptual content, not expert configuration or troubleshooting. |
 | [About backlogs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops) | 0.20 | Backlogs overview and navigation; conceptual and UI-level content without expert-only configuration or limits. |
-| [Add features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-epics-features-stories?view=azure-devops) | 0.20 | How to add and track features and epics on boards; procedural usage, no expert-only limits, configs, or decision matrices. |
-| [Add tasks or child items as checklists](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-task-checklists?view=azure-devops) | 0.20 | Step-by-step tutorial for adding task checklists; no configuration tables, limits, or troubleshooting content. |
-| [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops) | 0.20 | Task-oriented UI how-to for bulk editing work items; no product-specific limits, configs, or error mappings beyond what a trained model would already know. |
-| [Change work item type, move work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/move-change-type?view=azure-devops) | 0.20 | How-to for moving/changing work item types; no indication of numeric limits, config parameters, or decision matrices. |
-| [Create your backlog](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops) | 0.20 | Backlog creation and management tutorial; conceptual and procedural, no specific limits, configs, or error mappings. |
+| [Add features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-epics-features-stories?view=azure-devops) | 0.20 | How-to content for tracking epics and features on boards; focuses on usage, not on numeric limits, configuration parameters, or decision matrices. |
+| [Add tasks or child items as checklists](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-task-checklists?view=azure-devops) | 0.20 | Step-by-step tutorial for adding task checklists on boards; no configuration matrices, limits, or troubleshooting details. |
+| [Change sprint dates](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/define-sprints?view=azure-devops) | 0.20 | Explains setting sprint dates and iteration paths; standard usage guidance without numeric limits or specialized configuration references. |
+| [Create your backlog](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops) | 0.20 | Backlog creation and management overview/tutorial; mainly conceptual Scrum/Azure Boards usage without expert-only numeric or config details. |
+| [Customize cards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops) | 0.20 | Explains customizing board cards and visual styling; standard how-to content without detailed configuration tables or product-specific constraints. |
 | [Define features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops) | 0.20 | Describes using features and epics to organize backlogs; largely conceptual and UI-driven without product-specific numeric thresholds or configs. |
-| [Organize your backlog (map or reparent)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/organize-backlog?view=azure-devops) | 0.20 | Tutorial on organizing backlog hierarchy; step-by-step usage of Azure Boards UI, not configuration or limits-focused. |
-| [Plan and track work](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/plan-track-work?view=azure-devops) | 0.20 | Getting-started guidance for planning and tracking work in Azure Boards; mostly conceptual and procedural without product-specific limits, configs, or error mappings. |
+| [Manage columns](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-columns?view=azure-devops) | 0.20 | Describes managing columns on a board (add/edit/map); appears as UI/usage guidance without expert-only limits, configs, or error codes. |
+| [Organize your backlog (map or reparent)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/organize-backlog?view=azure-devops) | 0.20 | Tutorial on organizing backlog hierarchy; no product-specific limits, configuration parameter tables, or decision matrices. |
+| [Plan and track work](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/plan-track-work?view=azure-devops) | 0.20 | General guidance on planning and tracking work in Azure Boards using different processes; appears conceptual/how-to without product-specific limits, configuration tables, or error mappings. |
 | [Plans, Agile at scale](https://learn.microsoft.com/en-us/azure/devops/boards/plans/?view=azure-devops) | 0.20 | High-level overview of scaling Agile with Azure Boards; mostly conceptual and marketing-style guidance. |
-| [Query based on tags](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops) | 0.20 | Basic guidance on tagging work items; no evidence of quotas, config parameter tables, or detailed troubleshooting content. |
+| [Query based on tags](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops) | 0.20 | Explains tagging work items and using tags to filter; no specific limits, configuration parameter tables, or troubleshooting mappings. General feature usage. |
+| [Query by a numeric field](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-numeric?view=azure-devops) | 0.20 | Shows how to query by numeric fields like effort and story points; does not include quotas, timeouts, or product-specific configuration parameters with ranges. General usage instructions. |
+| [Query by area or iteration](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-area-iteration-path?view=azure-devops) | 0.20 | How-to guidance for querying by area/iteration paths; no numeric limits, config tables, error codes, or product-specific thresholds. Primarily conceptual and UI/query usage instructions. |
+| [Query by date or current sprint](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-date-or-current-iteration?view=azure-devops) | 0.20 | Shows how to query by dates and iteration macros like @Today and current iteration; does not expose numeric limits, quotas, or detailed configuration tables. Mostly general usage patterns. |
+| [Query by field comparison](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-field-value?view=azure-devops) | 0.20 | Covers using comparison operators between fields in queries; no numeric limits, config tables, or decision matrices with quantified trade-offs. Standard query usage guidance. |
+| [Query by links or attachments](https://learn.microsoft.com/en-us/azure/devops/boards/queries/linking-attachments?view=azure-devops) | 0.20 | Explains querying by link/attachment counts and types; while it references fields, the summary does not indicate detailed config tables, limits, or troubleshooting mappings. Likely standard feature usage. |
+| [Query history and discussion](https://learn.microsoft.com/en-us/azure/devops/boards/queries/history-and-auditing?view=azure-devops) | 0.20 | Describes querying work item history for auditing; lacks error codes, numeric thresholds, or detailed configuration options. Primarily conceptual and procedural. |
 | [Quick reference - concepts and tasks](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/quick-ref?view=azure-devops) | 0.20 | Quick reference/navigation to concepts and tasks; summary doesn’t indicate detailed limits, configs, or troubleshooting mappings. |
-| [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops) | 0.20 | Explains remove/delete/restore operations for work items; appears to be procedural UI guidance without expert-only details. |
 | [Roadmap and features timeline](https://learn.microsoft.com/en-us/azure/devops/boards/github/features-timeline?view=azure-devops) | 0.20 | Features timeline/roadmap is release/marketing information, not technical expert knowledge for skills. |
-| [View, open, run a query](https://learn.microsoft.com/en-us/azure/devops/boards/queries/view-run-query?view=azure-devops) | 0.20 | How-to for viewing, running, and emailing queries; standard feature usage without expert-level configuration or troubleshooting content. |
+| [Set up your backlogs & boards](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops) | 0.20 | Covers creating and managing a product backlog; general process and UI usage without specific limits, configuration ranges, or troubleshooting details. |
+| [Track dependencies](https://learn.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops) | 0.20 | Describes visual dependency tracking in Delivery Plans; no evidence of numeric thresholds, decision matrices, or configuration parameter tables. Primarily UI and workflow guidance. |
 | [Work item form caching](https://learn.microsoft.com/en-us/azure/devops/boards/faqs?view=azure-devops) | 0.20 | General FAQ page; summary does not indicate specific limits, error codes, configuration tables, or other detailed expert-only data. Likely high-level Q&A and navigation to other docs. |
-| [5. Share your sprint plan](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/share-plan?view=azure-devops) | 0.15 | Explains sharing sprint plans via URL/email/print; straightforward usage with no expert-only technical details. |
 | [Scrum concepts](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/scrum-key-concepts?view=azure-devops) | 0.15 | Glossary of Scrum and sprint terms; conceptual definitions, not expert configuration or troubleshooting. |
+| [5. Share your sprint plan](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/share-plan?view=azure-devops) | 0.10 | Simple instructions for sharing sprint plans; no expert-only technical details, limits, or configuration matrices. |
 | [Agile culture](https://learn.microsoft.com/en-us/azure/devops/boards/plans/agile-culture?view=azure-devops) | 0.10 | Discusses agile culture and scaling; conceptual guidance without product-specific numeric thresholds or configs. |
 | [Agile glossary](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/agile-glossary?view=azure-devops) | 0.10 | Agile glossary of terms is conceptual terminology, not configuration, limits, error codes, or other expert-only technical details. |
 | [Sign up for Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/sign-up-invite-teammates?view=azure-devops) | 0.10 | Sign-up quickstart; mostly procedural onboarding without deep configuration tables or limits. |

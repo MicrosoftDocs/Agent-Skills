@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
@@ -43,13 +43,13 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 - **Total Pages**: 177
 - **Fetched**: 177
 - **Fetch Failed**: 0
-- **Classified**: 116
-- **Unclassified**: 61
+- **Classified**: 115
+- **Unclassified**: 62
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 177
+- **Updated Pages**: 1
+- **Unchanged**: 176
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -57,7 +57,7 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 3.4% |
+| architecture-patterns | 5 | 2.8% |
 | best-practices | 14 | 7.9% |
 | configuration | 27 | 15.3% |
 | decision-making | 13 | 7.3% |
@@ -66,9 +66,14 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | limits-quotas | 5 | 2.8% |
 | security | 23 | 13.0% |
 | troubleshooting | 13 | 7.3% |
-| *(Unclassified)* | 61 | 34.5% |
+| *(Unclassified)* | 62 | 35.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
+  - Updated: 2025-12-23T06:04:00.000Z → 2026-03-05T18:37:00.000Z
 
 ## Classified Pages
 
@@ -120,7 +125,6 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | [Configure slow-query logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-slow-query-logs) | configuration | 0.70 | Script configures slow query logs using service-specific parameters and defaults, representing concrete configuration knowledge. |
 | [Configure zone-redundant HA](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-zone-redundant-ha) | configuration | 0.70 | Shows CLI configuration for zone-redundant HA and states it can only be enabled at creation and is limited to specific pricing tiers, which are product-specific settings and constraints. |
 | [Error logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-error-logs) | troubleshooting | 0.70 | Error logs article describes how to access and interpret logs for this service; includes product-specific log locations and behaviors. |
-| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | architecture-patterns | 0.70 | Describes specific HA architectures and modes for this service, with trade-offs and when to use each pattern. |
 | [Major version upgrade FAQ](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade-faq) | decision-making | 0.70 | FAQ includes explicit rules (no skipping major versions, downtime expectations) that guide when and how to upgrade; this supports upgrade decision-making with concrete constraints. |
 | [Migrate RDS MySQL data using Data-in replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-rds-mysql-data-in-replication) | integrations | 0.70 | Describes cross-service replication from RDS to Azure MySQL with data-in replication, involving product-specific replication configuration and constraints. |
 | [Migration Methods](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/05-migration-methods) | decision-making | 0.70 | Compares offline, online, and hybrid migration methods with pros/cons and constraints; this is explicit method selection guidance with scenario-based recommendations, fitting decision-making. |
@@ -245,6 +249,7 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.20 | CLI quickstart; shows basic az commands but not detailed configuration parameter tables or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal) | 0.20 | Portal quickstart for server creation; mostly step-by-step UI instructions without deep config matrices. |
+| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | The page is described as a conceptual overview of zone-redundant high availability for Azure Database for MySQL Flexible Server. The summary focuses on what HA is, automatic failover, and general behavior, without evidence of specific numeric limits, configuration parameter tables, error codes, or decision matrices. It does not match the strict criteria for limits-quotas, architecture-patterns, best-practices, troubleshooting, decision-making, security, integrations, configuration, or deployment. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/sample-scripts-azure-cli) | 0.20 | Index of CLI sample scripts; navigation content without detailed parameters or limits in this page itself. |

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
-    RBAC), keys/certs, encryption, private endpoints/network perimeters, Key Vault
-    access, and Azure Policy governance.'
+  security: 'Securing Batch accounts and pools: auth with Entra ID/managed identities,
+    keys and CMK encryption, RBAC and policy, private endpoints/network perimeters,
+    Key Vault access, and certificate/key rotation.'
   configuration: Configuring Batch pools, tasks, networking, containers, autoscale,
     OS/images, filesystems, monitoring, diagnostics events, and alerts for reliable
     job execution.
@@ -30,9 +30,10 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Batch applications. Not for Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  building, debugging, or optimizing Azure Batch applications. Not for Azure Container
+  Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Virtual Machines
+  (use azure-virtual-machines).
 ---
 # Azure Batch Crawl Report
 
@@ -41,13 +42,13 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 84
-- **Unclassified**: 30
+- **Classified**: 83
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 2
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -58,15 +59,22 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | architecture-patterns | 2 | 1.8% |
 | best-practices | 10 | 8.8% |
 | configuration | 35 | 30.7% |
-| decision-making | 9 | 7.9% |
+| decision-making | 8 | 7.0% |
 | deployment | 2 | 1.8% |
 | integrations | 7 | 6.1% |
 | limits-quotas | 1 | 0.9% |
 | security | 15 | 13.2% |
 | troubleshooting | 3 | 2.6% |
-| *(Unclassified)* | 30 | 26.3% |
+| *(Unclassified)* | 31 | 27.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
+  - Updated: 2025-07-01T08:00:00.000Z → 2026-03-12T05:52:00.000Z
+- [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk)
+  - Updated: 2025-03-27T17:09:00.000Z → 2026-03-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -98,6 +106,7 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Error handling and detection](https://learn.microsoft.com/en-us/azure/batch/error-handling) | troubleshooting | 0.75 | Error handling article that explains different Batch error types and how to resolve common problems; likely includes symptom-to-solution mappings and possibly error codes. |
 | [Securely access Key Vault with Batch](https://learn.microsoft.com/en-us/azure/batch/credential-access-key-vault) | security | 0.75 | Gives Batch-specific guidance for using pool managed identities and Key Vault VM extension to access secrets and certificates securely. |
 | [Use RDMA or GPU instances](https://learn.microsoft.com/en-us/azure/batch/batch-pool-compute-intensive-sizes) | decision-making | 0.75 | Gives Batch-specific guidance on choosing HB/HC/NC/ND and other VM series for MPI, RDMA, and CUDA workloads, including scenario-based recommendations. |
+| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.74 | Disk encryption for Batch pools is a product-specific security configuration topic. The article describes how to enable encryption with platform-managed keys via disk encryption configuration when creating pools with Virtual Machine Configuration, which involves concrete Azure Batch and VM configuration parameters and options that go beyond generic security concepts. |
 | [Associate Batch accounts with network security perimeter](https://learn.microsoft.com/en-us/azure/batch/network-security-perimeter) | security | 0.70 | Explains how to bind Batch accounts to Azure NSP with product-specific behavior (for example, NSP rules not governing private endpoints). |
 | [Autoscale compute nodes](https://learn.microsoft.com/en-us/azure/batch/batch-automatic-scaling) | configuration | 0.70 | Contains Batch-specific autoscale formula syntax and parameters used to dynamically adjust node counts. |
 | [Check for job and task errors](https://learn.microsoft.com/en-us/azure/batch/batch-job-task-error-checking) | troubleshooting | 0.70 | Article is explicitly about checking and handling errors after submission, likely mapping Batch-specific error states/codes and patterns for detecting them, which is troubleshooting-focused. |
@@ -106,8 +115,6 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Create a CI/CD pipeline for Batch](https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd) | deployment | 0.70 | Provides product-specific CI/CD patterns using Azure Pipelines and ARM templates to deploy Batch-based HPC environments. |
 | [Create a pool with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/batch/batch-sig-images) | configuration | 0.70 | Explains how to configure Batch pools to use Compute Gallery images with product-specific image reference settings. |
 | [Create a pool with a managed image resource](https://learn.microsoft.com/en-us/azure/batch/batch-custom-images) | decision-making | 0.70 | Covers managed image vs Compute Gallery usage, API version constraints, and retirement timelines, guiding migration and image selection decisions. |
-| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Provides Batch-specific disk encryption configuration using platform-managed keys and diskEncryptionConfiguration settings. |
-| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | decision-making | 0.70 | Explains when to choose ephemeral OS disks vs managed disks for Batch, including benefits, VM series support, and trade-offs. |
 | [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files) | configuration | 0.70 | Explains Batch-specific resource file configuration from various sources and how they are placed on VMs for different task types. |
 | [Job preparation and completion tasks](https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release) | configuration | 0.70 | Describes Batch-specific job-level prep and release task configuration to manage data movement and cleanup on nodes. |
 | [MPI](https://learn.microsoft.com/en-us/azure/batch/batch-mpi) | best-practices | 0.70 | Describes how to configure multi-instance tasks for MPI applications using Batch .NET, including Batch-specific task settings and coordination patterns. |
@@ -172,6 +179,7 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Create a Batch account - ARM template](https://learn.microsoft.com/en-us/azure/batch/quick-create-template) | 0.30 | ARM template quickstart; shows one way to create an account but lacks broad config tables or limits. |
 | [Create a Batch account - Bicep](https://learn.microsoft.com/en-us/azure/batch/quick-create-bicep) | 0.30 | Bicep quickstart for creating a Batch account; primarily a template example, not a comprehensive configuration reference. |
 | [Create a Batch account - Terraform](https://learn.microsoft.com/en-us/azure/batch/quick-create-terraform) | 0.30 | Terraform quickstart for creating a Batch account; example-focused, not a full configuration or limits reference. |
+| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | 0.30 | The page is primarily an explanation of what ephemeral OS disks are and why to use them for Batch pools (benefits like reduced cost and faster start time). Based on the summary, it reads as conceptual/behavioral guidance without clear evidence of detailed configuration tables, limits, or product-specific parameters, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Create and manage a Linux pool](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-manage-linux-pool) | 0.30 | CLI script for Linux pool management; command usage example, not a full configuration or troubleshooting reference. |
 | [Create and manage a Windows pool](https://learn.microsoft.com/en-us/azure/batch/scripts/batch-cli-sample-manage-windows-pool) | 0.30 | CLI script for Windows pool management; similar to Linux script, focused on example commands. |
 | [Deploy a Batch account and two pools - Terraform](https://learn.microsoft.com/en-us/azure/batch/quick-deploy-batch-account-two-pools-terraform) | 0.30 | Terraform quickstart deploying account and two pools; example deployment, not a constraints matrix or config reference. |

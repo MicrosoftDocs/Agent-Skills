@@ -3,7 +3,7 @@ name: azure-maps
 description: Expert knowledge for Azure Maps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Maps applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Maps Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L52-L61 | Guidance on pricing tiers, billing/usage, and how to migrate or replace Bing/Google Maps and Power BI map solutions with Azure Maps and related Azure services |
 | Architecture & Design Patterns | L62-L67 | Designing Azure architectures for elevation data services and multi-itinerary route optimization using Azure Maps, open DEM data, and NVIDIA cuOpt for scalable geospatial solutions |
 | Limits & Quotas | L68-L77 | Coverage, limits, and capabilities of Azure Maps services: QPS rate limits, and regional support for geocoding, rendering/tiles, routing, traffic, and weather data. |
-| Security | L78-L91 | Securing Azure Maps access: auth methods (Entra ID, SAS), SPA/web/daemon/device scenarios, and Power BI integration security and data residency settings. |
-| Configuration | L92-L116 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
-| Integrations & Coding Patterns | L117-L179 | Patterns and code for integrating Azure Maps into web/mobile/Power BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO, and migrating from Bing/Google Maps. |
+| Security | L78-L92 | Securing Azure Maps access: auth methods (keys, Entra ID, SAS), SPA/daemon/device scenarios, Power BI visual access/residency, and private endpoint network protection. |
+| Configuration | L93-L117 | Configuring Azure Maps web maps, styles, layers, data sources, routing models, localization, browser support, and migrating or updating to newer Azure Maps APIs and services. |
+| Integrations & Coding Patterns | L118-L180 | Patterns and code for integrating Azure Maps into web/mobile/Power BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO, and migrating from Bing/Google Maps. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -86,8 +86,9 @@ This skill requires **network access** to fetch documentation content:
 | Secure non-interactive SPAs for Azure Maps with Entra ID | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-spa-app |
 | Secure Azure Maps SPA with interactive user sign-in | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-spa-users |
 | Secure Azure Maps web apps with interactive sign-in | https://learn.microsoft.com/en-us/azure/azure-maps/how-to-secure-webapp-users |
-| Configure Azure Maps Power BI data residency behavior | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency |
+| Understand Azure Maps Power BI visual data residency behavior | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency |
 | Manage organizational access to Azure Maps Power BI visual | https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-manage-access |
+| Secure Azure Maps access using Private Endpoints | https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints |
 
 ### Configuration
 | Topic | URL |

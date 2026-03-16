@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   troubleshooting: Diagnosing and fixing Defender for IoT micro agent and OT sensor
     issues, understanding/handling security and health alerts, and validating sensor/agent
@@ -10,9 +10,8 @@ category_descriptions:
   best-practices: 'Best practices for securing IoT/OT with Defender for IoT: using
     hub security recommendations, CIS benchmark guidance, and planning OT monitoring
     topology and sensor placement.'
-  limits-quotas: Info on OT trial setup, supported/retiring features, virtual/physical
-    OT appliance options and requirements, plus Defender for IoT data retention limits
-    and timelines.
+  limits-quotas: Info on OT trial setup, supported/retiring features, appliance catalog
+    and requirements, and Defender for IoT data retention and storage limits.
   integrations: Integrating Defender for IoT with SIEMs, firewalls, ServiceNow, Sentinel,
     OT sensors, and micro agents, plus using APIs, playbooks, and workbooks to automate
     alerts and manage inventory/vulnerabilities.
@@ -31,8 +30,9 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building, debugging, or optimizing Azure Defender For Iot applications.
-  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure IoT (use
-  azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge).
+  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
+  (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management),
+  Azure Sentinel (use azure-sentinel).
 ---
 # Azure Defender For Iot Crawl Report
 
@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -67,6 +67,11 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | *(Unclassified)* | 64 | 35.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances)
+  - Updated: 2025-09-18T17:09:00.000Z → 2026-03-08T12:11:00.000Z
 
 ## Classified Pages
 
@@ -93,7 +98,6 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | [Install sensor software](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/install-software-ot-sensor) | deployment | 0.80 | Product-specific installation and initial setup settings for OT sensors; deployment-focused with concrete configuration steps. |
 | [Inventory management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-inventory-apis) | integrations | 0.80 | Device inventory management API reference lists endpoints and parameters for managing inventory, which are concrete integration patterns for this product. |
 | [Micro agent configurations](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-micro-agent-configuration) | configuration | 0.80 | Explicitly about micro agent configuration via module twin properties; likely includes property names, allowed values, and behavioral impact, which are product-specific configuration details. |
-| [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances) | limits-quotas | 0.80 | Lists required specifications for virtual appliances (CPU, RAM, storage, etc.), which are numeric constraints and sizing limits. |
 | [OT sensor (Hyper-V) Gen 2](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-hyper-v) | deployment | 0.80 | Hyper-V deployment guidance includes generation requirements, virtual NIC mapping, and resource constraints, which are product-specific deployment details. |
 | [OT sensor (VMware ESXi)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-vmware) | deployment | 0.80 | Virtual sensor deployment on ESXi includes VM sizing, network adapter configuration, and supported versions, which are detailed deployment constraints. |
 | [OT sensor CLI reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/cli-ot-sensor) | configuration | 0.80 | Command reference for OT sensors will list specific CLI commands and supported configuration parameters, which are product-specific configuration details. |
@@ -104,6 +108,7 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | [Vulnerability management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-vulnerability-apis) | integrations | 0.80 | Vulnerability management API reference exposes product-specific endpoints and response schemas aligned with integration patterns. |
 | [Which appliances do I need?](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-appliance-sizing) | decision-making | 0.80 | Helps choose physical vs virtual appliances and hardware profiles based on monitoring needs; product-specific sizing and selection guidance. |
 | [Work with Defender-IoT-micro-agent for Eclipse ThreadX (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/how-to-threadx-security-module) | configuration | 0.80 | Explicitly about configuring/customizing the ThreadX micro agent for network, bandwidth, and memory; likely includes product-specific parameters and ranges. |
+| [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances) | limits-quotas | 0.78 | The page focuses on required specifications for installing Defender for IoT OT sensors on virtual appliances, which typically includes exact CPU, RAM, storage, and network requirements per appliance type. These are concrete numeric constraints that function as product-specific limits/quotas rather than general guidance. |
 | [Built-in alerts for IoT Hub](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-security-alerts) | troubleshooting | 0.75 | Lists built-in IoT Hub alerts and likely their meanings and remediation; this is a mapping from alert/symptom to recommended action, fitting troubleshooting. |
 | [Configure Windows Endpoint Monitoring](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/configure-windows-endpoint-monitoring) | configuration | 0.75 | WEM configuration involves product-specific parameters, probe settings, and allowed values that constitute detailed configuration knowledge. |
 | [Configure initial settings and activate your sensor](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/activate-deploy-sensor) | deployment | 0.75 | Describes initial setup and activation via CLI/browser; product-specific deployment and activation procedure. |

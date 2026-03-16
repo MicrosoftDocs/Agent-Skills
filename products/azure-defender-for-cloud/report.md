@@ -1,30 +1,30 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Integrating Defender for Cloud with SIEMs, DevOps, APIs, and third‑party
     tools (ServiceNow, Power BI, EDR, AWS/GCP), plus ARG queries, exports, and automation
     patterns.
-  configuration: 'How to configure and customize Defender for Cloud features: enable
-    scans and alerts, set policies, exemptions, exports, DevOps and container integrations,
-    and data/security posture settings.'
+  configuration: How to configure and customize Defender for Cloud features, policies,
+    scanning, alerts, exports, exemptions, and integrations across VMs, containers,
+    storage, SQL, DevOps, and multi-tenant environments
   architecture-patterns: 'Architectural guidance for Defender for Servers/Containers:
     agentless scanning, malware/vuln detection on VMs/Kubernetes, data collection,
     residency, workspaces, and large-scale deployment.'
+  best-practices: Best practices for investigating and remediating vulnerabilities,
+    misconfigurations, secrets, and API/endpoint/Kubernetes risks across Defender
+    for Cloud, AKS, registries, and CI/CD.
   troubleshooting: 'Diagnosing and fixing Defender for Cloud issues: alert validation,
     container/Kubernetes deployment checks, multi-cloud connector errors, SQL/Storage
     problems, and incident/alert ID references.'
   security: 'Security alerts, permissions, and hardening for Defender for Cloud: alert
-    references by resource, RBAC/CIEM setup, container/Kubernetes/SQL/storage protections,
-    and data handling/compliance.'
-  best-practices: Best-practice workflows for investigating and remediating misconfigurations,
-    vulnerabilities, secrets, and API/endpoint/container risks in Defender for Cloud,
-    plus governance and networking guidance.
-  decision-making: Guidance on choosing and configuring Defender for Cloud plans,
-    cost models, portals, and deployment options (servers, containers, storage, GCP),
-    including migration and agent retirement decisions
-  deployment: Deploying and managing Defender for Cloud protections (Containers, SQL,
-    Storage, GitHub) across AKS/EKS/GKE and VMs using portal, CLI, IaC, policies,
-    and checking support/status.
+    references by resource, RBAC/CIEM setup, data handling, policies, and remediation
+    for SQL, storage, containers, VMs, APIs, and more.'
+  decision-making: Guidance on choosing Defender for Cloud plans, portals, deployment
+    and migration options, cost estimation/chargeback, DCU optimization, and planning
+    agent/recommendation transitions.
+  deployment: Deploying and managing Defender for Cloud plans and agents (Containers,
+    SQL, Storage, Servers) across AKS/EKS/GKE and hybrid, including CI/CD, IaC, migration,
+    and support matrices
   limits-quotas: 'Limits, quotas, and prerequisites for Defender for Cloud features:
     free trials, data ingestion, APIs, DevOps, portal preview, alert export limits,
     and data collection extension changes.'
@@ -33,53 +33,89 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building, debugging, or optimizing Azure Defender For Cloud applications.
   Not for Azure Defender For Iot (use azure-defender-for-iot), Azure DDos Protection
-  (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Security
-  (use azure-security).
+  (use azure-ddos-protection), Azure External Attack Surface Management (use azure-external-attack-surface-management),
+  Azure Security (use azure-security).
 ---
 # Azure Defender For Cloud Crawl Report
 
 ## Summary
 
-- **Total Pages**: 470
-- **Fetched**: 470
+- **Total Pages**: 472
+- **Fetched**: 472
 - **Fetch Failed**: 0
-- **Classified**: 255
+- **Classified**: 257
 - **Unclassified**: 215
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 466
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 17
+- **Unchanged**: 452
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 9 | 1.9% |
-| best-practices | 16 | 3.4% |
+| architecture-patterns | 7 | 1.5% |
+| best-practices | 17 | 3.6% |
 | configuration | 64 | 13.6% |
-| decision-making | 13 | 2.8% |
-| deployment | 28 | 6.0% |
+| decision-making | 14 | 3.0% |
+| deployment | 28 | 5.9% |
 | integrations | 24 | 5.1% |
 | limits-quotas | 7 | 1.5% |
-| security | 72 | 15.3% |
+| security | 74 | 15.7% |
 | troubleshooting | 22 | 4.7% |
-| *(Unclassified)* | 215 | 45.7% |
+| *(Unclassified)* | 215 | 45.6% |
 
 ## Changes
 
+### New Pages
+
+- [Map container images from code to runtime](https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping)
+- [Transition from grouped to individual recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/transition-grouped-individual-recommendations)
+- [Code to runtime enrichment for recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/code-to-runtime-mapping)
+
 ### Updated Pages
 
-- [Serverless protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/serverless-protection)
-  - Updated: 2025-12-01T12:02:00.000Z → 2026-03-03T12:07:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-overview)
-  - Updated: 2025-12-30T23:03:00.000Z → 2026-03-03T23:21:00.000Z
-- [Deploy GitHub Advanced Security integration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-deploy)
-  - Updated: 2025-12-30T23:03:00.000Z → 2026-03-03T23:21:00.000Z
-- [On-demand malware scanning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/on-demand-malware-scanning)
-  - Updated: 2025-09-16T08:00:00.000Z → 2026-03-03T18:21:00.000Z
+- [Risk prioritization](https://learn.microsoft.com/en-us/azure/defender-for-cloud/risk-prioritization)
+  - Updated: 2025-12-03T18:13:00.000Z → 2026-03-04T18:19:00.000Z
+- [What's new in Defender for Cloud features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes)
+  - Updated: 2026-02-15T08:00:00.000Z → 2026-03-11T08:00:00.000Z
+- [What's new in recommendations, alerts, and incidents](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes-recommendations-alerts)
+  - Updated: 2026-02-24T08:00:00.000Z → 2026-03-04T18:19:00.000Z
+- [Configure sensor deployed with Helm](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm)
+  - Updated: 2026-02-18T12:04:00.000Z → 2026-03-12T22:19:00.000Z
+- [Enable threat protection for AI services](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-onboarding)
+  - Updated: 2026-01-26T12:03:00.000Z → 2026-03-15T17:06:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-overview)
+  - Updated: 2024-12-09T23:00:00.000Z → 2026-03-09T12:18:00.000Z
+- [Kubernetes node vulnerability assessment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-va)
+  - Updated: 2024-12-09T23:00:00.000Z → 2026-03-09T12:18:00.000Z
+- [Vulnerability assessments for supported environments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/agentless-vulnerability-assessment-azure)
+  - Updated: 2025-03-31T05:32:00.000Z → 2026-03-04T08:00:00.000Z
+- [Enable vulnerability assessments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-vulnerability-assessment)
+  - Updated: 2025-03-31T05:32:00.000Z → 2026-03-09T22:17:00.000Z
+- [Remediate vulnerabilities for registry images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-registry-images)
+  - Updated: 2025-07-15T08:00:00.000Z → 2026-03-09T22:17:00.000Z
+- [Remediate vulnerabilities for running containers (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-containers)
+  - Updated: 2025-07-15T08:00:00.000Z → 2026-03-09T22:17:00.000Z
+- [Disable vulnerabilities on images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/disable-vulnerability-findings-containers)
+  - Updated: 2025-07-29T08:00:00.000Z → 2026-03-09T22:17:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction)
+  - Updated: 2025-05-13T08:00:00.000Z → 2026-03-04T12:25:00.000Z
+- [Review security recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations)
+  - Updated: 2026-01-04T12:05:00.000Z → 2026-03-04T18:19:00.000Z
+- [Drive remediation with governance rules](https://learn.microsoft.com/en-us/azure/defender-for-cloud/governance-rules)
+  - Updated: 2025-12-09T18:45:00.000Z → 2026-03-04T08:00:00.000Z
+- [Azure App Service recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-app-services)
+  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-16T05:04:00.000Z
+- [Container recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-container)
+  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-04T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Map container images from code to cloud~~ (https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping)
 
 ## Classified Pages
 
@@ -115,7 +151,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Enable Defender integration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-for-endpoint) | integrations | 0.80 | How-to enable integration; typically includes specific configuration steps, settings, and plan prerequisites unique to this integration. |
 | [Enable file integrity monitoring](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-defender-endpoint) | configuration | 0.80 | How-to enable FIM using Defender for Endpoint and agentless machines; likely includes specific settings, scopes, and configuration options. |
 | [Enable just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-just-in-time-access) | configuration | 0.80 | How-to set up and use JIT access; typically includes specific port, time, and policy settings unique to this feature. |
-| [Enable vulnerability assessments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-vulnerability-assessment) | configuration | 0.80 | How-to enable VA powered by Defender Vulnerability Management; includes plan behavior (auto-enabled in some clouds) and specific toggles/settings. |
 | [Example - express configuration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/express-configuration-powershell-commands) | configuration | 0.80 | Lists specific PowerShell commands, parameters, and examples for SQL VA express configuration, which are detailed configuration options. |
 | [How does Defender for Containers work?](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-architecture) | architecture-patterns | 0.80 | Describes different designs for AKS, EKS, GKE, and on-prem; this is product-specific architecture patterns per environment. |
 | [Identity and access recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-identity-access) | security | 0.80 | Identity and access security recommendation reference; directly tied to IAM posture with specific recommendation names and meanings. |
@@ -149,12 +184,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [AI recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-ai) | security | 0.75 | Reference table of AI security recommendations with specific recommendation IDs and semantics; product-specific security guidance not derivable from general training. |
 | [API recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-api) | security | 0.75 | Reference table of API/API Management security recommendations; contains concrete recommendation definitions unique to Defender for Cloud. |
 | [Alerts schemas](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-schemas) | configuration | 0.75 | Alert schema reference typically lists field names, types, and structures for different export paths, which are detailed configuration/integration schemas. |
-| [Azure App Service recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-app-services) | security | 0.75 | Reference list of App Service security recommendations with specific names and meanings; product-specific security configuration guidance. |
 | [Compute recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-compute) | security | 0.75 | Reference table of compute security recommendations; detailed recommendation semantics are expert, product-specific security knowledge. |
 | [Configure the Microsoft Security DevOps Azure DevOps extension](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension) | configuration | 0.75 | Describes configuring the MSDO Azure DevOps extension and lists specific tools; such articles include YAML/task parameters, configuration options, and tool-specific settings unique to this product. |
 | [Configure the Microsoft Security DevOps Azure DevOps extension](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension) | configuration | 0.75 | Describes configuring the MSDO Azure DevOps extension and lists specific tools; such articles include YAML/task parameters, configuration options, and tool-specific settings unique to this product. |
 | [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) | configuration | 0.75 | GitHub Action configuration will include action names, inputs, and example workflows that are specific configuration parameters for this product. |
-| [Container recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-container) | security | 0.75 | Lists container security recommendations with specific identifiers and meanings; specialized security guidance for containers in Defender for Cloud. |
 | [Data recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-data) | security | 0.75 | Reference table of data security recommendations; contains product-specific recommendation definitions and expected actions. |
 | [Defender for Servers support matrices](https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-servers) | deployment | 0.75 | Support matrix for Defender for Servers including requirements and feature support; used for deployment planning and environment compatibility. |
 | [Deploy vulnerability assessment on your Azure SQL databases (Classic)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-enable-classic) | configuration | 0.75 | Describes classic VA configuration and dependency on storage account; product-specific configuration steps and options. |
@@ -183,6 +216,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Authentication architecture for AWS connectors](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-authentication-architecture-aws) | security | 0.70 | Explains federated auth, STS, and trust setup for AWS connectors; product-specific authentication architecture and permissions, fitting security configuration patterns. |
 | [Authentication architecture for GCP connectors](https://learn.microsoft.com/en-us/azure/defender-for-cloud/authentication-architecture-google-cloud) | security | 0.70 | Details federated identity, STS, and service account impersonation; product-specific auth configuration and security model. |
 | [Automate onboarding using PowerShell](https://learn.microsoft.com/en-us/azure/defender-for-cloud/powershell-onboarding) | configuration | 0.70 | PowerShell onboarding uses specific cmdlets, parameters, and scripts that are detailed configuration knowledge for this product. |
+| [Azure App Service recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-app-services) | security | 0.70 | A reference table of Defender for Cloud security recommendations for Azure App Service typically includes specific recommendation IDs, policy names, and required configurations (for example, which security settings must be enabled or which controls must be applied). These are product-specific, actionable security details that go beyond generic concepts, fitting the security sub-skill. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/defender-for-cloud/policy-reference) | configuration | 0.70 | Lists specific built-in policy definitions tied to Defender for Cloud; these are concrete configuration artifacts (names, effects, scopes) that are product-specific and not generic knowledge. |
 | [Azure portal vs Defender portal feature comparison](https://learn.microsoft.com/en-us/azure/defender-for-cloud/azure-portal-vs-defender-portal-comparison) | decision-making | 0.70 | Feature comparison between Azure portal and Defender portal; likely includes comparison tables and criteria to decide which experience to use, fitting decision-making guidance. |
 | [Binary drift detection and blocking](https://learn.microsoft.com/en-us/azure/defender-for-cloud/binary-drift-detection) | security | 0.70 | Covers Defender for Cloud’s specific binary drift detection feature, including how it evaluates processes vs. original images and how to configure blocking, which is product-specific security behavior. |
@@ -191,10 +225,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Classify APIs with sensitive data exposure](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-classification) | security | 0.70 | Describes built-in/custom sensitive info types, labels, and classification rules tied to Purview/MIP and Defender for APIs. |
 | [Common questions about permissions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-permissions) | security | 0.70 | Permissions FAQ is expected to list specific RBAC roles, scopes, and permission combinations unique to Defender for Cloud. |
 | [Configure private endpoints with Microsoft Security Private Link (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints) | configuration | 0.70 | How to configure private endpoints and any required settings; product-specific configuration of Private Link endpoints. |
-| [Configure sensor deployed with Helm](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm) | deployment | 0.70 | Helm-based sensor installation across AKS/EKS/GKE is deployment-focused and typically includes chart values, environment-specific constraints, and versioning patterns specific to this product. |
 | [Connect Endor Labs to Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-endor-labs) | integrations | 0.70 | Connection procedure for a specific partner integration; such pages include API keys, scopes, and configuration fields unique to this integration. |
 | [Connect Mend.io to Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-mend-io) | integrations | 0.70 | Connection guide for Mend.io integration; likely includes specific configuration steps, parameters, and scopes unique to this integration. |
 | [Connect ServiceNow to Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-servicenow) | integrations | 0.70 | Connection guide will include specific connection settings, endpoints, and configuration parameters for the ServiceNow–Defender integration. |
+| [Container recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-container) | security | 0.70 | This is a reference table of container security recommendations in Defender for Cloud, which generally lists concrete recommendation identifiers, required configurations, and sometimes related policies. These are product-specific security controls and mappings, not generic advice, so it qualifies as security expert knowledge. |
 | [Continuous export to an event hub behind a firewall](https://learn.microsoft.com/en-us/azure/defender-for-cloud/continuous-export-event-hub-firewall) | configuration | 0.70 | Covers trusted service configuration for event hubs behind firewalls; likely includes specific network and service settings unique to this scenario. |
 | [Create a ticket in Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-ticket-servicenow) | integrations | 0.70 | Ticket creation and synchronization requires specific field mappings and configuration options unique to this integration. |
 | [Create automatic tickets with governance rules](https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-governance-rule-servicenow) | integrations | 0.70 | Automatic ticket creation based on recommendations/severity implies detailed rule configuration and integration parameters. |
@@ -205,13 +239,15 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Deploy the Azure Monitor agent](https://learn.microsoft.com/en-us/azure/defender-for-cloud/auto-deploy-azure-monitoring-agent) | configuration | 0.70 | Use of AMA in Defender will involve agent configuration options, data collection rules, and settings unique to this integration. |
 | [Deprecated recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-deprecated) | security | 0.70 | Lists deprecated security recommendations with their identifiers; this is product-specific security metadata useful for posture management. |
 | [Deprecated security alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deprecated-alerts) | troubleshooting | 0.70 | Reference table of deprecated security alerts is effectively an error/alert catalog with product-specific identifiers and meanings, useful for troubleshooting alert behavior over time. |
-| [Disable vulnerabilities on images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/disable-vulnerability-findings-containers) | configuration | 0.70 | How-to create exemptions and disable findings; likely includes specific rule criteria, scopes, and behavior in secure score, which are product-specific configuration details. |
+| [Disable vulnerabilities on images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/disable-vulnerability-findings-containers) | configuration | 0.70 | Explains how to create exemptions and disable vulnerability findings so they don’t affect secure score or appear in results; involves product-specific rule criteria and behavior for managing findings noise. |
+| [Drive remediation with governance rules](https://learn.microsoft.com/en-us/azure/defender-for-cloud/governance-rules) | security | 0.70 | Describes how to use Defender for Cloud governance rules to drive remediation of security recommendations, including SLAs and accountability. This is product-specific security posture management and enforcement guidance, not generic governance theory, and aligns best with security-focused configuration and process. |
 | [Enable Cloud infrastructure entitlement management (CIEM)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-permissions-management) | security | 0.70 | Enablement article for CIEM is likely to include specific configuration steps, scopes, and permission requirements unique to Defender for Cloud’s entitlement model, which qualify as product-specific security configuration knowledge. |
 | [Enable agentless machine scanning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-agentless-scanning-vms) | configuration | 0.70 | Describes enabling agentless scanning, including when it is enabled by default and how to turn it on; likely includes specific setting names and plan-based behavior. |
 | [Enable and configure Defender for Storage (classic)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-classic-enable) | configuration | 0.70 | Covers enabling/configuring Defender for Storage (classic) using PowerShell, REST API, and templates, which necessarily includes specific configuration parameters and request schemas. |
 | [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-enable-portal) | deployment | 0.70 | Portal-based enablement for EKS; includes AWS-specific deployment steps and component selection details. |
 | [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-portal) | deployment | 0.70 | Portal-based enablement for AKS; likely includes AKS-specific deployment steps, component selection, and constraints unique to this integration. |
 | [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-enable-portal) | deployment | 0.70 | Portal-based enablement for GKE; includes GCP-specific deployment steps and component selection details. |
+| [Enable vulnerability assessments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-vulnerability-assessment) | configuration | 0.70 | Explains how to enable vulnerability assessment, including which scopes and plans must be onboarded and notes about environments where it is auto-enabled and cannot be toggled; this is product-specific configuration behavior. |
 | [Enable vulnerability assessments on Azure SQL databases with the express configuration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/powershell-sample-vulnerability-assessment-azure-sql) | configuration | 0.70 | Provides a concrete PowerShell script with parameters and behavior for enabling/migrating SQL VA express configuration, which is specific configuration automation. |
 | [Enable vulnerability scanning with a BYOL solution](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-byol-vm) | decision-making | 0.70 | Describes enabling BYOL vulnerability solutions and includes deprecation dates and migration guidance, which are product-specific decision and migration considerations. |
 | [Enable with the Azure policy (recommended)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-policy-enablement) | deployment | 0.70 | Describes enabling Defender for Storage at scale via built-in policy; includes deployment pattern and scope configuration details specific to this product. |
@@ -236,6 +272,8 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Query software bill of materials (SBOM)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/query-software-bill-of-materials) | configuration | 0.70 | Describes how to query SBOM results via cloud security explorer; includes specific query patterns, fields, and relationships unique to Defender for Cloud's SBOM graph. |
 | [Remediate OS misconfigurations (Cloud Security Benchmark)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/apply-security-baseline) | best-practices | 0.70 | Describes how Defender for Cloud assesses OS settings against Microsoft Cloud Security Benchmark and how to act on recommendations; includes product-specific baseline mapping and remediation patterns. |
 | [Remediate system updates](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-periodic-system-updates) | best-practices | 0.70 | Guides enabling and managing system updates based on Defender for Cloud recommendations; includes product-specific assessment behavior and recommended remediation steps. |
+| [Remediate vulnerabilities for registry images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-registry-images) | best-practices | 0.70 | Covers how to view and remediate registry image findings using the new risk-based approach; likely includes concrete remediation workflows and prioritization logic specific to Defender for Cloud rather than generic security advice. |
+| [Remediate vulnerabilities for running containers (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-containers) | best-practices | 0.70 | Describes how Defender prioritizes remediation for vulnerabilities in running containers on Kubernetes clusters using a risk-based model; this is product-specific operational guidance and prioritization behavior. |
 | [Retrieve attack path data with API](https://learn.microsoft.com/en-us/azure/defender-for-cloud/attack-path-api) | integrations | 0.70 | API-based retrieval via Azure Resource Graph; likely includes specific query schema, fields, and parameters unique to Defender for Cloud. |
 | [Review and remediate vulnerabilities](https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-find) | security | 0.70 | Operational guidance on using VA findings to fix vulnerabilities and mark baselines, including scan cycles and on-demand scans, which is product-specific security workflow. |
 | [Scan your SQL servers for vulnerabilities](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-on-machines-vulnerability-assessment) | security | 0.70 | Describes integrated VA scanner behavior, findings, and remediation for SQL on machines, which is product-specific security assessment functionality. |
@@ -254,8 +292,9 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Update Defender for SQL Servers on Machines plan configuration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/update-sql-machine-configuration) | configuration | 0.70 | Explains updating plan configuration and registration behavior; product-specific configuration and agent behavior details. |
 | [Validate APIs alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-validation) | troubleshooting | 0.70 | Walkthrough to trigger alerts for OWASP API Top 10 likely includes specific alert IDs, conditions, and validation steps (symptom→verification). |
 | [Vulnerability assessment rules changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/sql-azure-vulnerability-assessment-rules-changelog) | security | 0.70 | Documents specific changes to VA rules over time, which is detailed product behavior history relevant to security assessments. |
-| [Vulnerability assessments for supported environments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/agentless-vulnerability-assessment-azure) | architecture-patterns | 0.70 | Details how agentless VA works across registries and runtimes, and when assessments run; product-specific behavior and plan-based triggers. |
+| [Vulnerability assessments for supported environments](https://learn.microsoft.com/en-us/azure/defender-for-cloud/agentless-vulnerability-assessment-azure) | best-practices | 0.70 | Details supported runtime environments and registries, and how agentless assessment is triggered when specific Defender plans and registry access are enabled; this is product-specific operational guidance on using the feature effectively. |
 | [Cloud infrastructure entitlement management (CIEM)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/permissions-management) | security | 0.68 | CIEM feature page for Defender for Cloud typically documents product-specific entitlement and access controls, including how permissions are evaluated and applied across multicloud environments. These are concrete, product-specific security behaviors and role interactions that go beyond generic IAM concepts. |
+| [Configure sensor deployed with Helm](https://learn.microsoft.com/en-us/azure/defender-for-cloud/deploy-helm) | deployment | 0.68 | Page focuses on installing Defender for Containers sensor on AKS/EKS/GKE using Helm with product-specific deployment models and environment-specific steps. While the summary emphasizes step-by-step instructions rather than matrices, Helm-based deployment of a security sensor across multiple managed Kubernetes platforms is a product-specific deployment pattern that an LLM is unlikely to know in detail from training. It describes how to enable Defender for Containers and use Helm-based installation as an alternative to automatic provisioning, which fits deployment more than configuration or integrations. |
 | [Disable vulnerabilities on images (secure score)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/disable-vulnerability-findings-containers-secure-score) | security | 0.68 | Operational, product-specific guidance on creating and managing disable rules that affect secure score and findings; includes concrete UI/field-level behavior and side effects that go beyond generic concepts. |
 | [Simulate alerts for SQL servers on machines](https://learn.microsoft.com/en-us/azure/defender-for-cloud/simulate-alerts-sql-machines) | security | 0.68 | Details the SQL simulated alert feature, including the Sql-SimulateAlert extension and how telemetry is injected, which is product-specific security testing behavior. |
 | [Classic configuration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-vulnerability-findings-classic) | security | 0.66 | Similar to express mode but for classic configuration; includes product-specific behavior for scanning, findings, and disabling. |
@@ -282,6 +321,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Investigate Defender for Endpoint misconfigurations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/endpoint-detection-misconfiguration) | best-practices | 0.65 | Covers specific misconfiguration checks and how to remediate them via Defender for Endpoint; these are product-specific edge cases and recommended actions. |
 | [Investigate findings, recommendations, alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-posture) | best-practices | 0.65 | Explains how to analyze findings, alerts, and posture recommendations; will include product-specific navigation, filtering, and recommended investigation steps for API security. |
 | [Known limitations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/known-limitations) | limits-quotas | 0.65 | Known limitations page for preview; typically lists concrete unsupported scenarios and constraints specific to this portal experience, which function as product limits/quotas. |
+| [Kubernetes node vulnerability assessment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-va) | best-practices | 0.65 | Describes how Defender scans VMs hosting Kubernetes nodes and generates remediation recommendations; likely includes product-specific guidance and gotchas for managing node vulnerabilities beyond generic security concepts. |
 | [Manage user data](https://learn.microsoft.com/en-us/azure/defender-for-cloud/privacy) | security | 0.65 | GDPR-focused data management for Defender for Cloud is product-specific and likely includes concrete steps, roles, and locations for accessing, exporting, and deleting user data that aren't generic security concepts. |
 | [Microsoft Security Private Link for Microsoft Defender for Cloud (Preview)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links) | security | 0.65 | Explains secure private connectivity model and what traffic flows over Private Link; product-specific security connectivity pattern. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/agentless-malware-scanning) | architecture-patterns | 0.65 | Explains agentless malware scanning behavior, supported environments, and plan requirements; this is product-specific feature architecture and usage guidance. |
@@ -290,11 +330,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Overview (classic)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-classic) | decision-making | 0.65 | Migration-focused article comparing classic and new plans, including pricing model differences and feature availability; this is plan-selection guidance with concrete trade-offs and migration advice. |
 | [Protect resources that report to a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/defender-for-cloud/prepare-deprecation-log-analytics-mma-agent) | decision-making | 0.65 | Deprecation planning article summarizes feature changes and migration paths, guiding decisions on which replacement options to choose and when. |
 | [Remediate EDR solutions (agentless)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/endpoint-detection-response-solution-recommendations) | best-practices | 0.65 | Describes how to remediate EDR-related recommendations; includes product-specific recommendation types and remediation workflows, which are actionable best practices. |
-| [Remediate vulnerabilities for registry images (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-registry-images) | best-practices | 0.65 | How-to view and remediate registry image findings using risk-based approach; likely includes product-specific workflows, filters, and prioritization patterns. |
 | [Remediate vulnerabilities for registry images (secure score)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerability-assessment-findings-secure-score) | best-practices | 0.65 | Classic secure score-based remediation workflow; includes product-specific recommendation names and how they affect secure score. |
-| [Remediate vulnerabilities for running containers (risk-based)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-containers) | best-practices | 0.65 | Describes risk-based remediation for containers on Kubernetes; includes product-specific views, filters, and recommended remediation flows. |
 | [Remediate vulnerabilities for running images (secure score)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/view-and-remediate-vulnerabilities-for-images-secure-score) | best-practices | 0.65 | Classic secure score approach for images running on clusters; includes product-specific recommendations and prioritization behavior. |
 | [Respond to Microsoft Defender for DNS alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-dns-alerts) | troubleshooting | 0.65 | Described as best practices for responding to DNS alerts; likely includes specific alert types and recommended investigation/remediation steps, fitting troubleshooting symptom→solution patterns. |
+| [Review security recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations) | security | 0.65 | Page focuses on how to review and work with Microsoft Defender for Cloud security recommendations, including product-specific recommendation details, risk factors, and prioritization. This is concrete, product-specific security guidance rather than generic concepts, but it does not center on limits, deployment, or configuration tables. |
 | [Scale a deployment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-scale) | architecture-patterns | 0.65 | Scaling deployment across Azure, AWS, GCP, and on-premises usually involves product-specific architectural patterns and constraints for large environments. |
 | [Security policies and standards](https://learn.microsoft.com/en-us/azure/defender-for-cloud/security-policy-concept) | security | 0.65 | Security policy article describes how standards, controls, and conditions are applied to resources. These are product-specific security configuration behaviors and assessment logic that go beyond generic policy concepts. |
 | [Security solutions (legacy)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/partner-integration) | integrations | 0.65 | Legacy integration reference usually lists supported partner solutions and configuration details for each, which are product-specific integration patterns. |
@@ -320,11 +359,9 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Common questions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-endor-labs) | troubleshooting | 0.60 | FAQ for a specific integration typically covers concrete issues, behaviors, and resolutions, which are product-specific troubleshooting knowledge. |
 | [Common questions about regulatory compliance](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-regulatory-compliance) | security | 0.60 | Regulatory compliance FAQ likely details specific standards, scopes, and how Defender for Cloud maps to them, which is product-specific security/compliance knowledge. |
 | [Configure GCP plans](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-google-plans) | decision-making | 0.60 | Guides which GCP plans to enable, with defaults and plan behaviors; helps choose plans per scenario, aligning with decision-making on SKU/plan selection. |
-| [Drive remediation with governance rules](https://learn.microsoft.com/en-us/azure/defender-for-cloud/governance-rules) | best-practices | 0.60 | Governance rules for remediation likely include product-specific rule settings, SLA fields, and edge-case guidance unique to Defender for Cloud. |
 | [Enable sensitive data threat detection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-for-storage-data-sensitivity) | configuration | 0.60 | Explains enabling/disabling sensitive data threat detection via portal and at-scale methods, which typically includes specific switches, policy settings, or API parameters unique to this feature. |
 | [How Microsoft secures customer data](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-security) | security | 0.60 | Explains how Defender for Cloud manages and safeguards collected data; such pages usually include product-specific data flows, storage locations, and compliance/security behaviors. |
 | [Kubernetes node malware detection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-malware) | architecture-patterns | 0.60 | Describes use of Microsoft Defender Antivirus engine and alert routing to Defender for Cloud/XDR; product-specific detection and alerting behavior. |
-| [Kubernetes node vulnerability assessment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-va) | architecture-patterns | 0.60 | Explains how Defender scans VMs hosting Kubernetes nodes and generates recommendations; product-specific behavior and shared responsibility details are architectural usage patterns. |
 | [Manage Defender for APIs](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-manage) | configuration | 0.60 | Managing the plan deployment and offboarding APIs implies product-specific configuration steps and options. |
 | [Manage MCSB recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/manage-mcsb) | configuration | 0.60 | Managing MCSB recommendations likely includes specific controls, policy settings, and configuration options tied to this benchmark. |
 | [Partner applications](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-partner-applications) | integrations | 0.60 | Integration of partner scan results into Defender implies specific data formats, mappings, and configuration steps. |
@@ -337,6 +374,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Reviewing results](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-reviewing-results) | best-practices | 0.60 | Guides how to interpret and use scan results mapped to container images; includes product-specific navigation, query patterns, and recommended workflows for handling findings. |
 | [Support and prerequisites](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-prepare) | limits-quotas | 0.60 | Support and prerequisites pages typically list specific supported regions, SKUs, and numeric or categorical requirements (for example, API Management tiers), which are expert deployment constraints. |
 | [Support and prerequisites](https://learn.microsoft.com/en-us/azure/defender-for-cloud/devops-support) | limits-quotas | 0.60 | Support/prerequisites articles typically include detailed matrices of supported platforms, versions, and feature availability, which function as capability/limit tables specific to this service. |
+| [Transition from grouped to individual recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/transition-grouped-individual-recommendations) | decision-making | 0.60 | Content describes the operational impact of moving from grouped to individual recommendations in Defender for Cloud and provides guidance and best practices for handling this change. This is product-specific decision and migration guidance (how to adapt processes and tooling), fitting decision-making more than generic best practices. |
 | [Use Purview to protect sensitive data](https://learn.microsoft.com/en-us/azure/defender-for-cloud/information-protection) | security | 0.60 | Integration with Purview classifications and MIP labels; likely includes specific label types, mappings, and security usage patterns. |
 | [Verify SQL machine protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/verify-machine-protection) | deployment | 0.60 | Describes how to verify that SQL machines are protected; product-specific verification steps tied to deployment state. |
 | [View exported data in Azure Monitor](https://learn.microsoft.com/en-us/azure/defender-for-cloud/continuous-export-view-data) | configuration | 0.60 | Describes how exported data appears in Log Analytics/Event Hubs and how to create alert rules; typically includes KQL query patterns and alert rule configuration fields. |
@@ -355,7 +393,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Edit DevOps connectors](https://learn.microsoft.com/en-us/azure/defender-for-cloud/edit-devops-connector) | 0.45 | Editing DevOps connectors is likely a procedural UI tutorial; summary doesn’t show detailed config parameter tables or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-overview) | 0.45 | Overview of file integrity monitoring; summary indicates conceptual description of what it does, not detailed configuration or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview) | 0.45 | Conceptual overview of just-in-time VM access; summary doesn’t show detailed configuration parameters or decision matrices. |
-| [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-overview) | 0.45 | Overview of Kubernetes nodes protection; summary suggests conceptual explanation of coverage rather than detailed configuration or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/operating-system-misconfiguration) | 0.45 | Overview of improving OS baseline configurations; summary suggests conceptual posture guidance without detailed product-specific parameters. |
 | [Protect applications with Defender for App Service](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-enable-app-service-plan) | 0.45 | Tutorial for enabling App Service plan protection; largely procedural and conceptual without detailed config tables or limits. |
 | [Protect databases with Defender for Databases](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-enable-databases-plan) | 0.45 | Tutorial for enabling Defender for Databases; primarily onboarding steps and conceptual description. |
@@ -377,13 +414,11 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Detect internet exposed IP addresses](https://learn.microsoft.com/en-us/azure/defender-for-cloud/detect-exposed-ip-addresses) | 0.40 | Explains external attack surface scans conceptually; no indication of specific parameters, limits, or troubleshooting content. |
 | [Detecting EDR solutions](https://learn.microsoft.com/en-us/azure/defender-for-cloud/detect-endpoint-detection-response-solutions) | 0.40 | Appears to be a conceptual description of EDR detection capabilities; summary doesn’t indicate specific error codes, configuration parameters, or decision matrices. |
 | [Enable preview features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/enable-preview-features) | 0.40 | How to enable preview features; likely a procedural guide without deep configuration tables or product-specific patterns. |
-| [Enable threat protection for AI services](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-onboarding) | 0.40 | Onboarding threat protection for AI services; summary is high-level and doesn’t clearly indicate detailed configuration or limits. |
 | [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-enable-portal) | 0.40 | Portal enablement how-to; likely step-by-step UI instructions without detailed config tables, limits, or product-specific troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/integration-faq) | 0.40 | FAQ about integration and migration; likely conceptual Q&A without structured error codes, configs, or numeric thresholds. |
 | [Identify and remediate attack paths](https://learn.microsoft.com/en-us/azure/defender-for-cloud/how-to-manage-attack-path) | 0.40 | Describes attack path identification conceptually; summary doesn’t show concrete config parameters, limits, or error mappings. |
 | [Install](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-install) | 0.40 | Install article likely focuses on download and basic install commands; these are generic and not configuration tables or limits, so not treated as expert configuration knowledge per the criteria. |
 | [Map IaC templates from code to cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/iac-template-mapping) | 0.40 | IaC mapping article is more conceptual/feature-usage; summary doesn’t indicate detailed parameter tables or numeric limits. |
-| [Map container images from code to cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping) | 0.40 | Container image mapping overview; focuses on concept of mapping images to pipelines, not on specific configuration or troubleshooting details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction) | 0.40 | High-level overview of Defender for Containers; primarily conceptual description of capabilities without detailed configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-overview) | 0.40 | Overview of Defender for Servers plan; mostly conceptual feature description. |
 | [Power BI integration overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/integration-power-bi) | 0.40 | Power BI integration overview; mostly conceptual benefits and high-level description. |
@@ -391,7 +426,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Remediate code with Microsoft Security Copilot](https://learn.microsoft.com/en-us/azure/defender-for-cloud/remediate-code-with-copilot) | 0.40 | Explains using Copilot to remediate IaC misconfigurations; summary doesn’t indicate detailed configuration schemas or numeric limits. |
 | [Remediate recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations) | 0.40 | Describes remediation workflow for recommendations; likely step-by-step UI actions without expert-only configuration details. |
 | [Review resources exempted from recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-exemptions) | 0.40 | Reviewing exempted resources is mostly workflow/UI; summary doesn’t show detailed config or limits. |
-| [Review security recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations) | 0.40 | How to review recommendations in UI; summary doesn’t indicate detailed configuration parameters or error mappings. |
 | [ServiceNow integration overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/integration-servicenow) | 0.40 | ServiceNow integration overview; high-level description without explicit config parameter tables in summary. |
 | [Test the data security features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-test) | 0.40 | Proof-of-concept testing guide for generating alerts; primarily procedural testing steps, not structured troubleshooting, limits, or configuration reference. |
 | [Protect code repository secrets](https://learn.microsoft.com/en-us/azure/defender-for-cloud/secrets-scanning-code) | 0.36 | Code repository secrets article describes detection and remediation conceptually; summary does not indicate specific configuration options, rule IDs, or error codes. |
@@ -470,7 +504,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-overview) | 0.30 | AKS overview for Defender for Containers; mainly describes capabilities and benefits without detailed configuration, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-overview) | 0.30 | GKE overview for Defender for Containers; conceptual description of capabilities without detailed configuration or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-data-sensitivity) | 0.30 | High-level description of sensitive data threat detection benefits and behavior; summary suggests conceptual overview without specific configuration parameters, limits, or error mappings. |
-| [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction) | 0.30 | Overview of Defender for Storage; primarily conceptual description of capabilities. |
 | [Overview Microsoft Security Copilot integration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/copilot-security-in-defender-for-cloud) | 0.30 | High-level description of Copilot integration; summary is conceptual without detailed configuration parameters or limits. |
 | [Overview of partner integrations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/partner-integrations) | 0.30 | Overview of partner integrations; summary is conceptual and marketing-style without detailed configuration or decision matrices. |
 | [Protect key vaults with Defender for Key Vault](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-enable-key-vault-plan) | 0.30 | Tutorial to enable a plan; mostly portal steps and conceptual description of Defender for Key Vault without detailed config parameters or limits. |
@@ -482,13 +515,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Secure AI applications from code to runtime](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-fifty) | 0.30 | Securing AI applications from code to runtime with Defender for Cloud; primarily conceptual attacks and posture management, not product-specific config tables or error mappings. |
 | [Security recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/security-recommendations) | 0.30 | High-level description of security recommendations and posture; likely conceptual without product-specific config tables. |
 | [Transition to Defender Vulnerability Management](https://learn.microsoft.com/en-us/azure/defender-for-cloud/transition-to-defender-vulnerability-management) | 0.30 | Transition article is primarily conceptual and procedural without detailed limits, configs, or decision matrices. |
-| [What's new in Defender for Cloud features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) | 0.30 | Release notes summary page; mostly change log and feature announcements without structured limits, configs, or troubleshooting mappings. |
-| [What's new in recommendations, alerts, and incidents](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes-recommendations-alerts) | 0.30 | Release notes for recommendations/alerts; change log style, not structured troubleshooting or configuration reference. |
 | [Zero Trust and Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-twenty-eight) | 0.30 | Security policy enhancements episode focuses on dashboard usage and filtering; summary does not indicate detailed configuration parameter tables or limits. |
 | [Zero Trust and Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/zero-trust) | 0.30 | Zero Trust integration article appears strategic and conceptual, describing principles and high-level integrations without detailed config parameters, roles, or numeric thresholds. |
 | [Internet exposure analysis](https://learn.microsoft.com/en-us/azure/defender-for-cloud/internet-exposure-analysis) | 0.28 | Internet exposure analysis description focuses on how Defender assesses exposure and risk; summary does not indicate detailed configuration parameters, limits, or error-to-solution mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture) | 0.28 | AI security posture management overview; summary is conceptual and does not indicate detailed configuration parameters, limits, or troubleshooting content. |
-| [Risk prioritization](https://learn.microsoft.com/en-us/azure/defender-for-cloud/risk-prioritization) | 0.28 | Risk prioritization article explains the dynamic engine and factors; appears conceptual without concrete numeric thresholds, configuration tables, or troubleshooting flows. |
 | [Data and AI security dashboard](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-aware-security-dashboard-overview) | 0.26 | Dashboard overview article; focuses on what is displayed and benefits, not on detailed configuration parameters or numeric limits. |
 | [AKS security dashboard](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-fifty-eight) | 0.25 | AKS security dashboard overview and capabilities; focuses on insights and use cases, not on numeric thresholds or configuration schemas. |
 | [Agentless malware detection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-forty-four) | 0.25 | Agentless malware detection overview and user experience demo; no mention of specific configuration parameters, limits, or error-code-based troubleshooting. |
@@ -508,6 +538,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Defender for Storage](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirteen) | 0.25 | Servers deployment in AWS/GCP episode discusses options and plans but summary does not show explicit tier matrices with numeric constraints or config tables. |
 | [DevOps Security Capabilities in Defender CSPM](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-forty-six) | 0.25 | DevOps security capabilities overview (free vs advanced) and posture improvement demo; no detailed configuration tables, limits, or decision matrices are described. |
 | [DevOps security in Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-nineteen) | 0.25 | Cloud security explorer and attack path analysis episode is about rationale and usage; summary does not indicate numeric thresholds or config matrices. |
+| [Enable threat protection for AI services](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-onboarding) | 0.25 | Page describes enabling threat protection for AI services in Defender for Cloud at a high level. The summary indicates a feature overview (protects Foundry workloads, provides insights to threats) rather than detailed RBAC roles, configuration parameter tables, or deployment constraints. Without explicit evidence of such specifics, it appears to be conceptual enablement guidance rather than expert configuration, security, or deployment knowledge. |
 | [Enhanced workload protection features in Defender for Servers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-twelve) | 0.25 | Enhanced workload protection episode covers capabilities and onboarding via Arc; summary does not clearly indicate detailed config matrices or limits. |
 | [External attack surface management in Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-easm) | 0.25 | External attack surface management article is an integration overview; summary suggests conceptual explanation of integration benefits, not detailed config parameters or error mappings. |
 | [Improvements in Container's Posture Management](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-fifty-six) | 0.25 | Improvements in container posture management and use of Security Explorer; high-level use cases and queries, not detailed config or limits. |
@@ -528,6 +559,7 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Regulatory compliance standards](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-regulatory-compliance-standards) | 0.22 | Regulatory compliance overview; likely maps standards conceptually without detailed product-specific configuration or numeric thresholds. |
 | [Capabilities to counter identity-based supply chain attacks](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-seven) | 0.20 | Episode on identity-based supply chain attacks with conceptual explanations and mitigation recommendations; no specific error codes, RBAC roles, or configuration parameters are described. |
 | [Cloud overview dashboard](https://learn.microsoft.com/en-us/azure/defender-for-cloud/cloud-infrastructure-dashboard) | 0.20 | Cloud overview dashboard article is primarily UI/experience description and posture visualization; summary does not indicate detailed settings tables, limits, or error-resolution mappings. |
+| [Code to runtime enrichment for recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/code-to-runtime-mapping) | 0.20 | The page describes the concept of code-to-runtime visibility and how it helps trace security issues across the SDLC. From the summary, it appears conceptual and workflow-oriented without detailed configuration tables, specific error codes, or concrete parameter values, so it does not clearly meet any expert-knowledge sub-skill criteria. |
 | [Common questions about Defender for Storage](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-defender-for-storage) | 0.20 | FAQ summary only; likely mixed conceptual and pricing questions without clear indication of detailed limits, configs, or error codes from the provided text. |
 | [Common questions about Defender for Storage (classic)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-defender-for-storage-classic) | 0.20 | Classic plan FAQ summary only; no evidence of detailed limits, configuration tables, or error-code troubleshooting in the provided text. |
 | [Data security dashboard](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-eight) | 0.20 | Data security dashboard overview and demo; focuses on purpose, prerequisites, and supported data types, not on detailed configuration tables or limits. |
@@ -535,13 +567,16 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [Defender for APIs reaches GA](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-nine) | 0.20 | GA announcement and feature recap for Defender for APIs; marketing/overview style content without quantified limits, configs, or troubleshooting mappings. |
 | [Defender for Cloud glossary of terms](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-glossary) | 0.20 | Glossary of terms is conceptual reference; it defines terminology but not configuration, limits, or troubleshooting details. |
 | [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.20 | A changelog/release notes page listing version history, features, and fixes. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. It’s primarily update history rather than structured expert guidance matching any defined sub-skill type. |
+| [Map container images from code to runtime](https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping) | 0.20 | Content is about mapping container images from code to runtime using Defender CSPM DevOps capabilities. The summary suggests a conceptual/feature overview of traceability from CI/CD to runtime, without clear indication of specific error codes, configuration tables, limits, or decision matrices. Lacking evidence of concrete parameters, thresholds, or product-specific troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Microsoft Defender for Containers in a multiCloud environment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-nine) | 0.20 | Multicloud containers episode focuses on capabilities and onboarding demos; summary does not indicate detailed config tables or numeric thresholds. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-overview) | 0.20 | High-level overview of Defender for Containers on Arc; primarily conceptual capabilities and scenarios without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-resource-manager-introduction) | 0.20 | Benefits and features overview for Defender for Resource Manager; summary indicates conceptual security positioning rather than detailed configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-overview) | 0.20 | Page is an overview of the GitHub Advanced Security integration with Defender for Cloud; it describes capabilities and benefits but does not expose concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
+| [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/kubernetes-nodes-overview) | 0.20 | High-level overview of Kubernetes nodes protection; no specific RBAC roles, configuration parameters, limits, or error codes are indicated in the summary. |
 | [Overview of Defender for Cloud in Defender portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-portal/defender-for-cloud-defender-portal) | 0.20 | Overview of Defender for Cloud in Defender portal; navigation and conceptual description, no detailed configs or limits. |
 | [Protect VMs](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-protect-resources) | 0.20 | Tutorial for enabling JIT access and application control; step-by-step usage, not deep configuration, limits, or troubleshooting content. |
 | [Protecting containers in GCP with Defender for Containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-ten) | 0.20 | Protecting containers in GCP episode mentions architecture and onboarding but summary does not show concrete configuration parameters or limits. |
+| [Risk prioritization](https://learn.microsoft.com/en-us/azure/defender-for-cloud/risk-prioritization) | 0.20 | Content describes how Defender for Cloud prioritizes risks and recommendations conceptually; no specific RBAC roles, configuration parameters, limits, error codes, or decision matrices with quantified thresholds are evident. |
 | [Serverless protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/serverless-protection) | 0.20 | Page is a conceptual/marketing-style overview of Defender for Cloud serverless protection (what it is, what it covers). The summary indicates no specific limits, configuration parameter tables, RBAC role lists, error codes, or decision matrices. It describes capabilities at a high level rather than providing product-specific numeric limits, settings, or troubleshooting mappings. |
 | [Threat landscape for containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-eleven) | 0.20 | Threat landscape and detections episode is about attack evolution and detections; summary does not show structured troubleshooting or configuration details. |
 | [What is Microsoft Defender for Cloud?](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) | 0.20 | High-level product overview of Defender for Cloud; primarily conceptual CNAPP/CSPM/CWPP description without concrete limits, configs, or error mappings. |
@@ -558,5 +593,8 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | [New AWS connector](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-one) | 0.10 | Video episode description about AWS connector is high-level and scenario-focused; summary does not indicate concrete config tables, limits, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction) | 0.10 | Overview of Defender for open-source relational databases; marketing/benefits style content without detailed limits, configs, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-key-vault-introduction) | 0.10 | Introduction to Defender for Key Vault benefits and features; appears to be a conceptual/marketing overview without detailed configs or limits. |
+| [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction) | 0.10 | High-level introduction to Microsoft Defender for Storage describing benefits and capabilities without specific limits, configuration parameters, error codes, or decision matrices. Primarily conceptual/marketing overview, not expert configuration, troubleshooting, or decision-making content. |
 | [Updates from Microsoft Ignite 2024](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-fifty-four) | 0.10 | Ignite 2024 updates and vision discussion; announcement-style content without detailed technical matrices or configs. |
+| [What's new in Defender for Cloud features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) | 0.10 | Release notes for Defender for Cloud features list new and updated capabilities but do not focus on numeric limits, configuration matrices, error codes, or other structured expert details as defined by the sub-skill types. |
+| [What's new in recommendations, alerts, and incidents](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes-recommendations-alerts) | 0.10 | Release notes for recommendations, alerts, and incidents describe changes and new items but are not organized as troubleshooting guides, configuration references, or decision matrices with quantified criteria. |
 | [Security alert correlation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-five) | - | Not in LLM response |

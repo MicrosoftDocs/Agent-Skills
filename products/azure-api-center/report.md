@@ -1,8 +1,10 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  security: Configuring API key and OAuth2 security for APIs in API Center, and managing
-    who can access the API Center portal via the VS Code extension.
+  security: Configuring API authorization schemes for APIs in API Center and managing
+    who can access the API Center portal via the VS Code extension
+  deployment: Automating API linting and registration to Azure API Center (e.g., via
+    GitHub Actions) and instructions for self-hosting the Azure API Center portal.
   configuration: 'Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI,
     portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup,
     and inventory management.'
@@ -12,13 +14,10 @@ category_descriptions:
   best-practices: Best practices for enforcing API governance early in development
     using the Azure API Center VS Code extension, including policy checks, linting,
     and design-time validation.
-  deployment: Automating API registration into API Center via GitHub Actions and instructions
-    for self-hosting/customizing the Azure API Center portal implementation.
 skill_description: Expert knowledge for Azure Api Center development including best
   practices, security, configuration, integrations & coding patterns, and deployment.
   Use when building, debugging, or optimizing Azure Api Center applications. Not for
-  Azure API Management (use azure-api-management), Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions).
+  Azure API Management (use azure-api-management).
 ---
 # Azure Api Center Crawl Report
 
@@ -32,8 +31,8 @@ skill_description: Expert knowledge for Azure Api Center development including b
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 3
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -42,20 +41,29 @@ skill_description: Expert knowledge for Azure Api Center development including b
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 2.9% |
-| configuration | 11 | 32.4% |
-| deployment | 2 | 5.9% |
+| configuration | 10 | 29.4% |
+| deployment | 3 | 8.8% |
 | integrations | 5 | 14.7% |
 | security | 2 | 5.9% |
 | *(Unclassified)* | 13 | 38.2% |
 
 ## Changes
 
+### Updated Pages
+
+- [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview)
+  - Updated: 2026-01-28T23:12:00.000Z → 2026-03-10T04:29:00.000Z
+- [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting)
+  - Updated: 2026-02-28T06:12:00.000Z → 2026-02-28T08:00:00.000Z
+- [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access)
+  - Updated: 2026-02-24T08:00:00.000Z → 2026-03-11T05:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access) | security | 0.80 | Covers API access settings, likely including OAuth2 configuration, scopes, and how they map to API Center; clearly security-focused. |
 | [API analysis - Microsoft managed](https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting) | configuration | 0.70 | Describes built-in linting engine behavior, configuration toggles, and how to enable/disable managed vs self-managed analysis. |
+| [Authorize access to APIs](https://learn.microsoft.com/en-us/azure/api-center/authorize-api-access) | security | 0.70 | Covers configuring API access using API keys, OAuth 2.0, and other HTTP security schemes for testing APIs in the API Center portal. This is product-specific security configuration for authorization, likely including scheme-specific settings and parameters. |
 | [Create an API center - ARM template](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-arm-template) | configuration | 0.70 | ARM template example exposes the schema for the API Center resource, including property names and allowed configurations. |
 | [Create an API center - Bicep](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-bicep) | configuration | 0.70 | Bicep quickstart will define resource types, properties, and allowed values for API Center, which are product-specific configuration details. |
 | [Enable API Center portal view - VS Code extension](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-portal-vs-code-extension) | security | 0.70 | Uses Entra ID and RBAC to manage portal view access; includes role and permission configuration specific to this extension. |
@@ -67,8 +75,8 @@ skill_description: Expert knowledge for Azure Api Center development including b
 | [Synchronize APIs from API Management](https://learn.microsoft.com/en-us/azure/api-center/synchronize-api-management-apis) | integrations | 0.70 | Describes continuous sync integration, likely including configuration fields and options unique to this product pairing. |
 | [Synchronize APIs from Amazon API Gateway](https://learn.microsoft.com/en-us/azure/api-center/synchronize-aws-gateway-apis) | integrations | 0.70 | Covers cross-cloud integration with Amazon API Gateway, including specific configuration steps and parameters. |
 | [Use metadata for governance](https://learn.microsoft.com/en-us/azure/api-center/metadata) | configuration | 0.70 | Goes beyond concepts to describe built-in vs custom metadata, schema structure, and how to enforce consistency—product-specific configuration behavior. |
-| [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | configuration | 0.68 | The article describes how to enable and configure an API linting engine and triggers in Azure API Center, including automated deployment via Azure Developer CLI and event subscriptions. This implies product-specific configuration steps and parameters (linting engine setup, trigger configuration, event subscription details) rather than just conceptual guidance, fitting the configuration sub-skill. |
 | [1 - Define custom metadata](https://learn.microsoft.com/en-us/azure/api-center/tutorials/add-metadata-properties) | configuration | 0.65 | Describes concrete metadata properties, types, and how to configure them for governance; product-specific configuration behavior. |
+| [API analysis - self-managed](https://learn.microsoft.com/en-us/azure/api-center/enable-api-analysis-linting) | deployment | 0.65 | Describes automated deployment of a linting engine and event subscription using Azure Developer CLI, which is product-specific deployment guidance beyond generic tutorials. While the summary is brief, it indicates concrete deployment procedures and configuration for the linting engine and triggers. |
 | [Create an API center - CLI](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-azure-cli) | configuration | 0.65 | CLI-based resource creation typically documents specific az apic parameters, flags, and required values unique to this service. |
 | [Register APIs - GitHub Actions](https://learn.microsoft.com/en-us/azure/api-center/register-apis-github-actions) | deployment | 0.65 | Defines a CI/CD workflow YAML with specific actions, inputs, and constraints for registering APIs, which is product-specific deployment automation. |
 | [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server) | configuration | 0.65 | Describes how to register MCP servers with specific fields and options, plus discovery behavior unique to this feature. |
@@ -92,4 +100,4 @@ skill_description: Expert knowledge for Azure Api Center development including b
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | 0.20 | FAQ-style content; summary suggests general Q&A without detailed error codes, limits, or configuration tables. |
 | [Samples and labs](https://learn.microsoft.com/en-us/azure/api-center/resources) | 0.20 | Resource index linking to external samples and labs; not itself a technical reference or configuration document. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/api-center/key-concepts) | 0.10 | Key concepts/terminology description without product-specific numeric limits, configs, or troubleshooting content. |
-| [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | High-level product overview and scenarios; no detailed limits, configs, or error mappings. |
+| [What is Azure API Center?](https://learn.microsoft.com/en-us/azure/api-center/overview) | 0.10 | High-level overview of Azure API Center capabilities and scenarios without concrete limits, configuration parameters, error codes, or decision matrices. |

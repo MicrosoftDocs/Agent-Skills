@@ -1,24 +1,23 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL Managed Instance vs other Azure
     SQL options, tiers, pools, networking, HA/DR, ML, and migration paths from SQL
     Server, Db2, and Oracle.
   troubleshooting: 'Diagnosing and fixing Azure SQL Managed Instance issues: performance,
-    connectivity, replication/redo lag, memory, log full, capacity/scaling, MI link,
-    Resource Health, and Entra Kerberos auth.'
-  configuration: 'Configuring and managing SQL Managed Instance: networking, backups/restore,
-    maintenance windows/updates, monitoring/alerts (database watcher, metrics, logs),
-    failover, zone redundancy, and tempdb/time zone settings.'
-  best-practices: Best practices for monitoring, performance tuning, HA/DR, maintenance,
-    alerts, read scale-out, and migrations for Azure SQL Managed Instance–including
-    KQL/DMVs, failover, and disaster recovery drills.
-  limits-quotas: 'Limits, quotas, and resource behavior for Azure SQL MI: DTUs, memory/OLTP
-    limits, free-tier caps, backup retention, monitoring behavior, and how to request
+    connectivity, capacity, memory, transaction logs, geo‑replication, MI Link, and
+    Entra Kerberos auth.'
+  configuration: 'Configuring and monitoring SQL Managed Instance: networking, backups/restore,
+    maintenance windows, alerts, metrics/logs, Intelligent Insights, XEvents, and
+    deployment options (ARM, CLI, PowerShell).'
+  best-practices: Guidance on performance tuning, monitoring, HA/DR, failover/geo-replication,
+    maintenance, alerts, and app design best practices for Azure SQL Managed Instance.
+  limits-quotas: 'Limits, quotas, and resource behavior for Azure SQL Managed Instance:
+    DTUs, memory/OLTP caps, free-tier limits, monitoring constraints, and how to request
     quota increases.'
-  security: Configuring authentication, authorization, encryption, auditing, threat
-    protection, TLS, and security best practices for Azure SQL Managed Instance and
-    related Azure SQL resources.
+  security: 'Authentication, encryption, and protection for Azure SQL Managed Instance:
+    Entra/Windows auth, identities, TDE & keys, auditing, threat protection, TLS,
+    policies, and security best practices.'
   integrations: Connecting apps and tools to Azure SQL Managed Instance (.NET, Java,
     Python, etc.), plus automation, networking, DTC, XEvents, Spark, bcp, MI Link,
     backup/restore, and tracing setup.
@@ -33,7 +32,8 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
   Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual
-  Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
+  Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql),
+  Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Managed Instance Crawl Report
 
@@ -42,13 +42,13 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 - **Total Pages**: 237
 - **Fetched**: 237
 - **Fetch Failed**: 0
-- **Classified**: 189
-- **Unclassified**: 48
+- **Classified**: 188
+- **Unclassified**: 49
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 230
+- **New Pages**: 1
+- **Updated Pages**: 10
+- **Unchanged**: 226
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
@@ -62,53 +62,60 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | decision-making | 11 | 4.6% |
 | deployment | 19 | 8.0% |
 | integrations | 21 | 8.9% |
-| limits-quotas | 7 | 3.0% |
+| limits-quotas | 6 | 2.5% |
 | security | 49 | 20.7% |
 | troubleshooting | 14 | 5.9% |
-| *(Unclassified)* | 48 | 20.3% |
+| *(Unclassified)* | 49 | 20.7% |
 
 ## Changes
 
 ### New Pages
 
-- [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-- [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
+- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-02T08:00:00.000Z
+- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+- [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql)
+  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
+  - Updated: 2025-12-02T23:34:00.000Z → 2026-03-05T08:00:00.000Z
+- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
+  - Updated: 2025-09-25T08:00:00.000Z → 2026-03-06T08:00:00.000Z
+- [Managed Instance link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-06T08:00:00.000Z
+- [Resource limits](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits?view=azuresql)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-10T17:44:00.000Z
 - [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
+- [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql)
+  - Updated: 2025-09-17T08:00:00.000Z → 2026-03-10T22:39:00.000Z
+- [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-10T22:39:00.000Z
+- [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql)
+  - Updated: 2026-01-29T18:37:00.000Z → 2026-03-10T22:39:00.000Z
 
 ### Deleted Pages
 
-- ~~Import/Export service hangs~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
+- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Resource limits](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits?view=azuresql) | limits-quotas | 0.90 | Explicitly described as resource limits article; contains technical characteristics and numeric limits, often in tables by tier/size. |
+| [Resource limits](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits?view=azuresql) | limits-quotas | 0.95 | The page explicitly describes technical characteristics and resource limits for Azure SQL Managed Instance. Such pages typically contain detailed numeric limits (cores, storage sizes, max databases, IOPS, connections) and sometimes tier-specific tables and guidance on requesting increases. This matches the limits-quotas criteria with product- and tier-specific numeric constraints that are unlikely to be fully known from training. |
 | [Transaction log errors in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db) | troubleshooting | 0.90 | Explicitly covers errors 9002 and 40552 with explanations and resolution steps, which is detailed symptom→cause→solution troubleshooting. |
 | [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi) | troubleshooting | 0.90 | Same pattern as database article but for Managed Instance; includes specific error codes and product-specific resolution steps. |
-| [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql) | troubleshooting | 0.90 | Provides error codes, link state checks via T-SQL/PowerShell/CLI, and symptom→cause→solution mappings specific to Managed Instance link. |
+| [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql) | troubleshooting | 0.90 | The article explicitly focuses on monitoring and troubleshooting link issues, mentions checking link state via T-SQL, PowerShell, and Azure CLI, and refers to error codes used to diagnose problems. This matches the troubleshooting pattern of symptom → diagnosis → solution with product-specific commands and error codes. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-troubleshoot?view=azuresql) | troubleshooting | 0.90 | Explicit troubleshooting article; expected to map specific Kerberos/Entra errors and symptoms to causes and resolutions for Windows Authentication on Managed Instance. |
+| [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.86 | The page focuses on understanding and troubleshooting geo-replication and redo lag, which implies product-specific metrics, behaviors, and diagnostic steps for Azure SQL Database. It likely includes concrete symptom → cause → resolution guidance (for example, interpreting redo queue/lag, tuning, and mitigation steps) that go beyond generic replication concepts and constitute expert troubleshooting knowledge. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-best-practices?view=azuresql) | best-practices | 0.85 | Explicitly a best-practices article for the link feature, covering recommended configurations and patterns unique to this product capability. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.85 | Describes preventing, diagnosing, and mitigating transient errors with concrete connection string and retry configuration guidance and likely error codes, which is troubleshooting plus product-specific patterns. |
 | [Configure TDE with BYOK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql) | security | 0.85 | Shows how to use customer-managed keys from Key Vault for TDE, including key identifiers, permissions, and Azure SQL-specific encryption settings. |
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.85 | Explicitly about connection errors; includes specific error messages, causes, and steps to resolve, which is classic symptom→cause→solution troubleshooting content. |
 | [Log diagnostic telemetry](https://learn.microsoft.com/en-us/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure?view=azuresql) | configuration | 0.85 | Details telemetry types, destinations, and configuration via portal/CLI/ARM; includes specific metric/log names and settings, which are configuration parameters. |
-| [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | security | 0.85 | Covers specific steps and settings to enable Entra ID authentication, including admin roles, scopes, and Azure SQL-specific security options. |
 | [Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication?view=azuresql) | security | 0.85 | Explains Entra-only mode, its effects (disabling SQL auth), and configuration options; includes product-specific security behavior and settings. |
-| [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql) | security | 0.85 | Explains how to configure service principals and managed identities for programmatic access, including role assignments and connection configuration specific to Azure SQL. |
-| [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.85 | Explicitly a troubleshooting guide for geo-replication and redo lag; likely includes metrics, DMVs, and symptom→cause→solution patterns specific to Azure SQL Database replication behavior. |
 | [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-troubleshoot-performance?view=azuresql) | troubleshooting | 0.85 | Maps Intelligent Insights detections to performance issues and resolutions; likely includes specific issue types, messages, and recommended actions, fitting symptom→cause→solution. |
 | [tempdb](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/tempdb-configure?view=azuresql) | configuration | 0.85 | Explicitly about configuring number of tempdb files, growth increments, and max size; these are product-specific configuration parameters and ranges. |
 | [Set up the incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql) | security | 0.84 | Covers incoming trust-based flow, Kerberos key rotation, and trusted domain object removal; these are detailed, product-specific security and identity configurations. |
@@ -133,7 +140,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Create server with Microsoft Entra-only authentication enabled](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?view=azuresql) | security | 0.80 | Covers provisioning-time configuration to enable Entra-only auth and disable SQL auth; includes portal/CLI/ARM parameters specific to security. |
 | [Cross-tenant CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-cross-tenant?view=azuresql) | security | 0.80 | Cross-tenant CMK with TDE is a specialized security scenario; article covers tenant/key vault relationships and configuration steps. |
 | [Data collection and datasets](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-data?view=azuresql) | configuration | 0.80 | Describes datasets and tables created from SQL system views; includes schema-level details of monitoring data collection. |
-| [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql) | best-practices | 0.80 | Step-by-step migration guide with prerequisites, best practices, and troubleshooting for LRS, including product-specific migration patterns and gotchas. |
 | [Directory Readers role](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql) | security | 0.80 | Explains Directory Readers role and alternative lower-level permissions for managed identities; contains specific role names and security configuration guidance. |
 | [Directory Readers role for groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role-tutorial?view=azuresql) | security | 0.80 | Walkthrough for assigning Directory Readers to Entra groups and using them with managed identities for Azure SQL; includes specific role names and permission behaviors. |
 | [Enable Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-tutorial?view=azuresql) | security | 0.80 | How-to guide with specific steps and parameters to turn on Entra-only authentication for Azure SQL Database and Managed Instance. |
@@ -141,7 +147,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [HA/DR checklist](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/high-availability-disaster-recovery-checklist?view=azuresql) | best-practices | 0.80 | Provides a detailed checklist of recommended configurations and proactive steps to meet SLA and recovery goals, which are product-specific best practices. |
 | [Logins, user accounts, roles, and permissions](https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage?view=azuresql) | security | 0.80 | Details Azure SQL authentication and authorization using logins, users, and roles; includes product-specific security behavior and role/permission mappings. |
 | [Managed identities with CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-identity?view=azuresql) | security | 0.80 | Details using user-assigned managed identities with TDE CMK; includes identity types and security configuration specific to Azure SQL. |
-| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.80 | Describes system-assigned and user-assigned managed identities for Azure SQL, including when each is created/used and how to configure them for authentication. |
 | [Microsoft Entra authentication overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql) | security | 0.80 | In-depth overview of Entra authentication for Azure SQL; includes specific authentication flows, configuration parameters, and role requirements. |
 | [Microsoft Entra guest users and set as a Microsoft Entra admin](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-guest-users?view=azuresql) | security | 0.80 | Describes creating Entra guest users and assigning them as Azure SQL admins; includes role mappings and security behavior specific to Azure SQL. |
 | [Microsoft Entra server logins](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins-tutorial?view=azuresql) | security | 0.80 | Tutorial with concrete T-SQL and configuration steps for Entra-backed logins in virtual master; includes security-specific behavior and requirements. |
@@ -152,6 +157,7 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | limits-quotas | 0.80 | Quota increase article necessarily references specific quota types and possibly default limits and regions; while focused on support requests, it exposes quota-related constraints. |
 | [SSL root certificate expiring](https://learn.microsoft.com/en-us/azure/azure-sql/updates/ssl-root-certificate-expiring?view=azuresql) | security | 0.80 | Certificate rotation guidance includes specific certificate authorities, thumbprints, and configuration steps for secure connectivity, which are product-specific security details. |
 | [Server principals (logins)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins?view=azuresql) | security | 0.80 | Details creation and usage of Entra-backed logins in virtual master; includes specific T-SQL, principal types, and permission scopes unique to Azure SQL. |
+| [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql) | security | 0.80 | Covers using Microsoft Entra service principals and managed identities for programmatic access to Azure SQL. This usually includes exact role names, permission scopes, and T-SQL/portal configuration steps for granting access to service principals and managed identities, which are product-specific security/identity configuration details. |
 | [Set up managed instances](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-kerberos-managed-instance?view=azuresql) | security | 0.80 | How-to article for configuring the managed instance side of Windows Authentication; includes specific settings and steps tied to Entra ID and Kerberos flows. |
 | [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql) | troubleshooting | 0.80 | Describes causes and workarounds when Import/Export takes longer than expected; this is a symptom-focused diagnosis and resolution guide specific to Azure SQL Database and Managed Instance. |
 | [Troubleshoot out of memory errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-memory-errors-issues?view=azuresql) | troubleshooting | 0.80 | Focuses on out-of-memory errors with specific error messages and steps to diagnose and resolve, which is product-specific troubleshooting guidance. |
@@ -160,6 +166,9 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Connect applications](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connect-application-instance?view=azuresql) | integrations | 0.78 | Describes multiple connectivity scenarios (App Service, VMs, VNet integration); includes product-specific networking patterns, connection string considerations, and integration configurations. |
 | [Failover groups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/failover-group-sql-mi?view=azuresql) | best-practices | 0.78 | Overview plus best practices and recommendations for failover groups; contains product-specific guidance on configuration and usage patterns for geo-replication and failover. |
 | [Implementation with Kerberos](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql) | security | 0.78 | Describes how Windows Authentication is implemented using Entra ID as a Kerberos realm and incoming trust; contains product-specific security architecture and trust configuration details. |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.78 | A 'known issues' page for a specific service typically enumerates concrete symptoms, affected features, and product-specific workarounds or resolutions. These are current, version-specific behaviors that LLMs are unlikely to know from training and map directly to troubleshooting knowledge (symptom → workaround/resolution), rather than generic concepts. |
+| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | security | 0.78 | Describes system-assigned and user-assigned managed identities for Azure SQL, including how they are created/assigned and used with Entra authentication. Such pages typically contain specific configuration steps, identity types, and required permissions/roles, which are product-specific security and identity configuration details. |
+| [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | security | 0.78 | Configuration-focused article for Entra (Azure AD) authentication to Azure SQL Database, Managed Instance, and Synapse. It typically includes specific steps, T-SQL commands, and Entra/SQL role mappings and settings (e.g., contained database users, server principals, specific permission scopes), which are product-specific security configuration details rather than generic concepts. |
 | [Start & stop instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/instance-stop-start-how-to?view=azuresql) | deployment | 0.78 | Explains stop/start feature behavior, supported tier (General Purpose), and its effect on billing vs troubleshooting; these are product-specific deployment/runtime control details. |
 | [Configure In-memory OLTP](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/in-memory-oltp-configure?view=azuresql) | limits-quotas | 0.76 | Mentions that Business Critical tier includes a certain amount of Max In-Memory OLTP memory determined by vCores; the full article typically includes specific per-vCore limits and configuration steps, which are quota-like expert details. |
 | [Secure public endpoints](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/public-endpoint-overview?view=azuresql) | security | 0.76 | Focuses on securing public endpoints; likely includes firewall, network, and identity configuration specifics unique to Managed Instance public endpoints. |
@@ -217,8 +226,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Import a database from a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql) | deployment | 0.70 | Describes importing databases from BACPAC, including storage requirements (Azure Blob standard only) and guidance on scaling tiers during import, which are deployment-time constraints and recommendations. |
 | [Job automation with SQL Agent](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/job-automation-managed-instance?view=azuresql) | integrations | 0.70 | Describes using SQL Agent jobs on Managed Instance; includes product-specific behavior, limitations, and T-SQL job patterns distinct from other Azure SQL offerings. |
 | [Key differences](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-differences?view=azuresql) | decision-making | 0.70 | Describes key functional differences between Managed Instance and SQL Server ML Services; supports technology selection and migration decisions with product-specific capability comparisons. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.70 | A 'Known Issues' page typically lists specific symptoms, causes, and workarounds or resolutions for Azure SQL Managed Instance; this is product-specific troubleshooting knowledge not easily inferred from training data. |
-| [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | limits-quotas | 0.70 | LTR backups with retention up to 10 years; article likely includes specific retention period options, storage behavior, and constraints. |
 | [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/long-term-backup-retention-configure?view=azuresql) | configuration | 0.70 | LTR article describes retention policy settings, allowed ranges, and storage configuration for backups, which are product-specific configuration parameters. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window?view=azuresql) | configuration | 0.70 | Explains how maintenance windows work, what events are covered, and exceptions; includes product-specific behavior and constraints for maintenance scheduling. |
 | [Management operations duration](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-duration?view=azuresql) | deployment | 0.70 | Details steps and durations of create/update/delete operations; includes product-specific timing characteristics important for deployment and change planning. |
@@ -233,7 +240,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [PHP](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-php?view=azuresql) | integrations | 0.70 | Demonstrates PHP connection code, driver usage, and Azure SQL connection string specifics, which are concrete integration patterns. |
 | [Periodic maintenance events](https://learn.microsoft.com/en-us/azure/azure-sql/database/planned-maintenance?view=azuresql) | best-practices | 0.70 | Provides concrete recommendations on how to configure applications and databases to handle planned maintenance, including product-specific behaviors and patterns, which are best practices. |
 | [Prepare SQL Server 2016 environment](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc?view=azuresql) | configuration | 0.70 | Details enabling Always On AG with WSFC on SQL Server 2016 as part of link preparation, including minimum requirements and configuration steps. |
-| [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql) | configuration | 0.70 | Describes environment preparation steps and requirements for Managed Instance link, including network and configuration prerequisites unique to this feature. |
 | [Python](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql) | integrations | 0.70 | Shows Python code using mssql-python/ODBC with Azure SQL-specific connection parameters and examples, fitting integration patterns. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-quickstart?view=azuresql) | configuration | 0.70 | Quickstart for creating a watcher; includes specific configuration choices (Entra auth, private connectivity) and Azure SQL–specific setup steps. |
 | [Resolve private domain names](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resolve-private-domain-names?view=azuresql) | configuration | 0.70 | Explains how Managed Instance resolves private DNS names and how to configure it, which is a product-specific networking/DNS configuration. |
@@ -255,6 +261,7 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Use Resource Health for connectivity issues](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-health-to-troubleshoot-connectivity?view=azuresql) | troubleshooting | 0.70 | Shows how to use Resource Health for diagnosing service-impacting issues; includes product-specific health states, timelines, and support workflows, fitting symptom-to-diagnosis guidance. |
 | [Use Spark Connector](https://learn.microsoft.com/en-us/azure/azure-sql/database/spark-connector?view=azuresql) | integrations | 0.70 | Connector article typically includes connector-specific options, connection properties, and parameter details unique to this integration, which qualify as expert integration knowledge. |
 | [Cancel operations](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-cancel?view=azuresql) | deployment | 0.68 | Explains which management operations can be canceled and how; includes product-specific constraints and behavior during cancellation, relevant to deployment/change workflows. |
+| [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql) | best-practices | 0.68 | The article is a detailed migration guide for using Log Replay Service with Azure SQL Managed Instance, including product-specific best practices and troubleshooting tips for a specialized migration mechanism. While the summary doesn’t expose exact numbers, such migration docs typically contain concrete T-SQL/PowerShell commands, sequencing requirements, and gotchas unique to LRS and Managed Instance migrations, which qualify as expert, product-specific operational knowledge rather than generic concepts. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | integrations | 0.65 | Quickstart includes concrete connection string formats, provider/driver names, and code patterns specific to Azure SQL connectivity from .NET in Visual Studio. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/create-template-quickstart?view=azuresql) | deployment | 0.65 | ARM template quickstart includes schema, resource types, and properties specific to Managed Instance and networking, which are deployment-focused configurations. |
 | [Automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql) | configuration | 0.65 | Describes automated backup behavior and settings; likely includes retention periods, backup frequency, and geo-redundancy options specific to Managed Instance backup configuration. |
@@ -271,6 +278,7 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Maintenance window FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/maintenance-window-faq?view=azuresql) | configuration | 0.65 | FAQ likely contains detailed, product-specific answers about configuration behavior, edge cases, and constraints for maintenance windows. |
 | [Manage file space](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/file-space-manage?view=azuresql-mi) | best-practices | 0.65 | Covers product-specific guidance for monitoring and controlling file and log growth, including shrink/enlarge patterns and growth control that are specific to Managed Instance behavior. |
 | [Monitor operations](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-monitor?view=azuresql) | configuration | 0.65 | Describes specific monitoring mechanisms and possibly metrics/events for management operations; these are product-specific configuration/monitoring details. |
+| [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql) | configuration | 0.65 | The page describes preparing an environment to create a Managed Instance link between SQL Server and Azure SQL Managed Instance. Such preparation docs usually enumerate specific configuration steps, required settings, ports, permissions, and possibly scripts unique to this feature. That constitutes product-specific configuration knowledge beyond generic concepts, fitting the configuration sub-skill. |
 | [Recover using backups](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/recovery-using-backups?view=azuresql) | configuration | 0.65 | Covers concrete restore operations including point-in-time restore up to 35 days, which is a product-specific backup/restore capability and configuration. |
 | [Restore database to a managed instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/scripts/restore-geo-backup?view=azuresql) | configuration | 0.65 | Geo-restore script includes specific PowerShell cmdlets and parameters for restore operations, which are product-specific configuration/invocation details. |
 | [Client VM connection](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connect-vm-instance-configure?view=azuresql) | configuration | 0.60 | Connectivity quickstart typically includes specific NSG rules, ports, and DNS/endpoint settings required to connect from an Azure VM, which are configuration details. |
@@ -295,7 +303,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Data virtualization](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/data-virtualization-overview?view=azuresql) | 0.40 | Data virtualization overview; describes capability and scenarios, but summary does not indicate detailed configuration parameters or limits. |
 | [High availability](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/high-availability-sla-local-zone-redundancy?view=azuresql) | 0.40 | Architecture overview of local and zone redundancy; appears conceptual without detailed configuration parameters, limits, or decision matrices. |
 | [Maintenance window in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql) | 0.40 | Maintenance window overview; summary mentions configuration via portal/CLI but not specific window options or numeric constraints. |
-| [Managed Instance link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql) | 0.40 | Overview of Managed Instance link; primarily conceptual description of scenarios and benefits without detailed configuration tables in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-overview?view=azuresql) | 0.40 | Overview of Log Replay Service; focuses on what it is and scenarios, not detailed configuration or limits in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-overview?view=azuresql) | 0.40 | Overview of Machine Learning Services; mostly conceptual description of capabilities (Python/R in-database) without detailed configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) | 0.40 | High-level overview of Windows Authentication for Entra principals; primarily conceptual and marketing-style positioning without clear evidence of detailed configuration parameters or role mappings. |
@@ -321,6 +328,8 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | [Connect and query](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql) | 0.20 | Navigation/links page to various quickstarts; no detailed configuration tables, limits, or troubleshooting content. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql) | 0.20 | Landing/overview page for monitoring and tuning docs; no detailed metrics or configuration tables in summary. |
 | [How-to documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/how-to-content-reference-guide?view=azuresql) | 0.20 | Content reference/navigation guide pointing to other articles; does not itself contain expert configuration, limits, or troubleshooting details. |
+| [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | 0.20 | The page is a conceptual overview of long-term retention backups for Azure SQL Database and Managed Instance. While it mentions retention can be configured for up to 10 years, it does not provide detailed numeric limits tables, configuration parameters, or tier-specific constraints; it primarily explains what LTR is and points to other how-to content. |
+| [Managed Instance link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql) | 0.20 | Page is an overview of Managed Instance link capabilities and scenarios (migration, DR, analytics). The summary indicates conceptual description of what the feature does, without specific limits, configuration parameter tables, error codes, or decision matrices. It does not match any expert-knowledge sub-skill criteria. |
 | [Reservations](https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql) | 0.20 | Overview of reservations discount; billing concept without technical limits or configuration parameters. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | High-level index of CLI samples; does not itself list parameters, limits, or detailed configs. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/powershell-script-content-guide?view=azuresql) | 0.20 | Index page for PowerShell scripts; lacks detailed configuration tables or error mappings itself. |

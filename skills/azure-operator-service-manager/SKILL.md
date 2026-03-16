@@ -1,9 +1,9 @@
 ---
 name: azure-operator-service-manager
-description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Operator Service Manager applications. Not for Azure Operator Nexus (use azure-operator-nexus), Azure Operator Insights (use azure-operator-insights), Azure Network Function Manager (use azure-network-function-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Service Manager Skill
@@ -25,10 +25,10 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L33-L38 | Diagnosing and fixing AOSM onboarding issues with the Azure CLI extension and troubleshooting Helm chart installation failures in AOSM CNF deployments. |
-| Best Practices | L39-L46 | Best practices for onboarding/deploying AOSM, designing configuration group schemas, structuring Helm charts, and cleaning up publisher artifacts efficiently. |
-| Security | L47-L54 | Securing AOSM with Private Link, custom RBAC/roles, and User Assigned Managed Identities for controlled, least-privilege access and secure SNS/service operator deployments. |
-| Configuration | L55-L64 | Configuring AOSM runtime behavior: cluster registry for edge resiliency, pausing/resuming deployments, Helm cleanup/test settings, NFO extension cluster commands, and geo-replicated artifact stores. |
-| Integrations & Coding Patterns | L65-L74 | Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and artifacts (ACR/storage-backed stores), and add ARM resources to network service designs |
+| Best Practices | L39-L47 | Best practices for AOSM onboarding, config group design, Helm chart usage, artifact cleanup, and controlling CNF upgrade behavior and failure handling |
+| Security | L48-L55 | Securing AOSM with Private Link, custom RBAC/roles, and User Assigned Managed Identities for controlled, least-privilege access and secure SNS/service operator deployments. |
+| Configuration | L56-L65 | Configuring AOSM runtime behavior: cluster registry for edge resiliency, pausing/resuming deployments, Helm cleanup/test settings, NFO extension cluster commands, and geo-replicated artifact stores. |
+| Integrations & Coding Patterns | L66-L75 | Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and artifacts (ACR/storage-backed stores), and add ARM resources to network service designs |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,10 +39,11 @@ This skill requires **network access** to fetch documentation content:
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply onboarding and deployment practices for AOSM | https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy |
-| Design AOSM configuration group schemas effectively | https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide |
+| Apply onboarding and deployment best practices for AOSM | https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy |
+| Design configuration groups effectively in Azure Operator Service Manager | https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide |
 | Implement Helm chart best practices for AOSM | https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements |
 | Manage AOSM publisher artifact cleanup efficiently | https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management |
+| Control CNF upgrade failure behavior in AOSM | https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback |
 
 ### Security
 | Topic | URL |

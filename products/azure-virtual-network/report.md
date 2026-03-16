@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -32,50 +32,57 @@ skill_description: Expert knowledge for Azure Virtual Network development includ
 
 ## Summary
 
-- **Total Pages**: 132
-- **Fetched**: 132
+- **Total Pages**: 128
+- **Fetched**: 128
 - **Fetch Failed**: 0
-- **Classified**: 59
-- **Unclassified**: 73
+- **Classified**: 54
+- **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 132
-- **Deleted Pages**: 0
+- **Unchanged**: 127
+- **Deleted Pages**: 5
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 4.5% |
-| best-practices | 8 | 6.1% |
-| configuration | 26 | 19.7% |
-| decision-making | 6 | 4.5% |
+| architecture-patterns | 6 | 4.7% |
+| best-practices | 8 | 6.2% |
+| configuration | 24 | 18.8% |
+| decision-making | 6 | 4.7% |
 | limits-quotas | 3 | 2.3% |
-| security | 5 | 3.8% |
-| troubleshooting | 5 | 3.8% |
-| *(Unclassified)* | 73 | 55.3% |
+| security | 5 | 3.9% |
+| troubleshooting | 2 | 1.6% |
+| *(Unclassified)* | 74 | 57.8% |
 
 ## Changes
+
+### New Pages
+
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-support-help)
+
+### Deleted Pages
+
+- ~~Configure reverse lookup zones for an SMTP banner check~~ (https://learn.microsoft.com/en-us/azure/virtual-network/create-ptr-for-smtp-service)
+- ~~Diagnose a virtual machine routing problem~~ (https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem)
+- ~~Diagnose a virtual machine network traffic filter problem~~ (https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem)
+- ~~Resource logging for a network security group~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log)
+- ~~Network virtual appliance issues in Azure~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-nva)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Diagnose a virtual machine network traffic filter problem](https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem) | troubleshooting | 0.80 | Focused on diagnosing VM traffic filter problems via effective security rules. Provides symptom→diagnosis→solution flow using Azure-specific tooling and NSG rule evaluation behavior. |
-| [Diagnose a virtual machine routing problem](https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem) | troubleshooting | 0.80 | Guides users through diagnosing routing issues by inspecting effective routes, combining system, custom, and BGP routes. This is a symptom→cause→solution troubleshooting pattern specific to Azure VNets. |
 | [Network bandwidth](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput) | limits-quotas | 0.80 | Explains VM network throughput, flow limits, and bandwidth per size. Contains concrete Mbps values, flow limits, and possibly tables by VM SKU, which are specific limits/quotas not generally known. |
-| [Network virtual appliance issues in Azure](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-nva) | troubleshooting | 0.80 | Provides steps to validate Azure platform requirements for NVAs and resolve VM/VPN connectivity issues, including Azure-specific checks and configurations, organized as troubleshooting guidance. |
 | [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | limits-quotas | 0.75 | Update article about which existing VM sizes support MANA and Accelerated Networking. This typically includes SKU-specific support matrices and constraints, which are expert knowledge about limits/availability per VM size. |
-| [Resource logging for a network security group](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log) | configuration | 0.75 | Explains enabling NSG event and rule counter logs and how they work. Contains Azure-specific logging categories, settings, and behavior, fitting configuration/diagnostics patterns. |
 | [Azure Policy Regulatory Compliance controls](https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for VNets, which are product-specific security/compliance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/virtual-network/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; each policy has a specific name, effect, and conditions that are product-specific configuration artifacts. |
 | [Azure services network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services) | decision-making | 0.70 | Compares private endpoints, service endpoints, and dedicated deployments for isolation; helps decide which integration method to use for different services and scenarios. |
 | [Concepts and best practices](https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices) | best-practices | 0.70 | Explicitly includes best practices for address spaces, subnets, regions, and security; product-specific design recommendations. |
 | [Configure MTU for virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-virtual-machine-mtu) | best-practices | 0.70 | Discusses MTU sizing, fragmentation behavior, and Azure-specific considerations for Linux/Windows VMs. Provides concrete configuration guidance and product-specific gotchas that impact performance, fitting best-practices. |
-| [Configure reverse lookup zones for an SMTP banner check](https://learn.microsoft.com/en-us/azure/virtual-network/create-ptr-for-smtp-service) | configuration | 0.70 | Covers creating reverse DNS zones and PTR records in Azure DNS specifically for SMTP banner checks, including Azure-specific DNS configuration steps and record patterns. |
 | [Deploy a DHCP server on an Azure VM](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-dhcp-azure) | configuration | 0.70 | Describes Azure-specific DHCP relay behavior (no broadcasts) and detailed port/protocol requirements plus configuration steps for a highly available DHCP server in Azure, including product-specific networking constraints. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip-reference) | configuration | 0.70 | Explicitly a monitoring data reference; such pages typically list metrics, dimensions, and log categories in tables with names and meanings, which are product-specific configuration/telemetry details not generally known. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
@@ -201,3 +208,4 @@ skill_description: Expert knowledge for Azure Virtual Network development includ
 | [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | High-level overview of Azure Virtual Network routing appliances without visible numeric limits, configuration tables, error codes, or decision matrices. Primarily conceptual/marketing-style description of what the feature is and its benefits. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-support-help) | - | Support/help options page; no product-specific limits, configuration parameters, error codes, or decision matrices. Primarily guidance on where to get assistance, not expert technical content. |

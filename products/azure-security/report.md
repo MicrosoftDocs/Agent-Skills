@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Guidance on generating signed SBOMs for container images, attaching
     them in CI/CD, and integrating software supply chain security into deployment
@@ -10,25 +10,23 @@ category_descriptions:
   deployment: Guides for signing and verifying container images with Notation in Azure
     Pipelines/GitHub Actions, plus comparing security feature availability in Azure
     vs Azure Government.
-  security: 'Security best practices for Azure workloads: threat modeling mitigations,
-    AKS image validation, ransomware defense, incident response, data protection,
-    certificates, and operational/SQL security features'
+  security: 'Securing Azure workloads: threat modeling mitigations, AKS image validation,
+    ransomware defense, incident response, data protection, access control, and Azure
+    security best practices.'
   best-practices: 'Security hardening checklists and patterns for Azure IaaS/PaaS:
     identity, network, data encryption, secrets, DNS, and app/database/service configurations
     to reduce attack surface.'
   troubleshooting: Diagnosing and resolving common Azure Customer Lockbox issues,
     including access request problems, approval/denial errors, and configuration or
     permission-related failures.
-  limits-quotas: Which Azure services support customer-managed encryption keys, and
-    how to determine CMK capabilities and options across different Azure resources
-  decision-making: Guidance on choosing between Azure Key Vault, Managed HSM, Cloud
-    HSM, and Payment HSM based on security, compliance, key management, and workload
-    requirements.
+  decision-making: Guidance on which Azure services support customer-managed encryption
+    keys and how to choose the right key management approach (Key Vault, managed HSM,
+    platform keys) for your workloads.
 skill_description: Expert knowledge for Azure Security development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Security applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall),
+  best practices, decision making, security, configuration, integrations & coding
+  patterns, and deployment. Use when building, debugging, or optimizing Azure Security
+  applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure
+  DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall),
   Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report
@@ -43,8 +41,8 @@ skill_description: Expert knowledge for Azure Security development including tro
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 3
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -53,25 +51,33 @@ skill_description: Expert knowledge for Azure Security development including tro
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 15 | 11.9% |
-| configuration | 5 | 4.0% |
-| decision-making | 1 | 0.8% |
+| configuration | 4 | 3.2% |
+| decision-making | 2 | 1.6% |
 | deployment | 4 | 3.2% |
 | integrations | 1 | 0.8% |
-| limits-quotas | 1 | 0.8% |
-| security | 26 | 20.6% |
+| security | 27 | 21.4% |
 | troubleshooting | 1 | 0.8% |
 | *(Unclassified)* | 72 | 57.1% |
 
 ## Changes
 
+### Updated Pages
+
+- [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples)
+  - Updated: 2025-12-03T08:00:00.000Z → 2026-03-05T23:11:00.000Z
+- [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose)
+  - Updated: 2026-01-10T06:10:00.000Z → 2026-03-04T23:27:00.000Z
+- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
+  - Updated: 2026-02-24T18:11:00.000Z → 2026-03-04T23:27:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.82 | Article focuses on how to choose between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM using a flowchart and scenario-based guidance. It provides structured decision criteria and recommendations for different requirements, which matches the decision-making sub-skill. |
 | [Azure Certificate Authority details](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-certificate-authority-details) | security | 0.80 | Lists specific root and subordinate CAs, minimum key/signature requirements, and certificate download/revocation details; product-specific security configuration data. |
 | [Azure domains](https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains) | configuration | 0.80 | Provides a reference list of Azure domains and wildcard patterns (for example, *.blob.core.windows.net) specifically for firewall configuration. These exact FQDN patterns and guidance on how to use them are product-specific configuration details that an LLM would not reliably know from training. |
-| [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose) | decision-making | 0.80 | Explicitly helps select among multiple key management offerings using a flowchart and scenario-based criteria; decision-making guidance with trade-offs. |
-| [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples) | configuration | 0.80 | Provides PowerShell code samples to enable and configure the Antimalware extension across services; implies specific configuration parameters and values unique to this product. |
+| [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples) | security | 0.78 | Page provides concrete PowerShell code samples and parameters to enable and configure the Microsoft Antimalware extension across Azure services. This is product-specific security configuration (extension names, parameter usage, and patterns) rather than generic scripting, fitting the security sub-skill. |
 | [Azure App Service for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services) | best-practices | 0.75 | App Service–specific security best practices for PaaS apps; includes concrete configuration and usage patterns unique to this service. |
 | [Azure Service Fabric security](https://learn.microsoft.com/en-us/azure/security/fundamentals/service-fabric-best-practices) | best-practices | 0.75 | Prescriptive guidance for securing Service Fabric clusters; includes product-specific configuration and deployment recommendations. |
 | [Azure Storage for PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-storage) | best-practices | 0.75 | Azure Storage–specific security best practices for PaaS apps; contains product-specific recommendations and configurations. |
@@ -109,7 +115,7 @@ skill_description: Expert knowledge for Azure Security development including tro
 | [PaaS](https://learn.microsoft.com/en-us/azure/security/fundamentals/paas-deployments) | best-practices | 0.65 | Guidance for designing, building, and managing secure PaaS apps; includes Azure-specific security controls and lifecycle recommendations. |
 | [Ransomware protection with Azure Firewall Premium](https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection-with-azure-firewall) | security | 0.65 | Describes how to use Azure Firewall Premium specifically for ransomware protection, including product-specific rules and capabilities. |
 | [Security checklist](https://learn.microsoft.com/en-us/azure/security/fundamentals/operational-checklist) | security | 0.65 | An operational security checklist typically contains concrete, product-specific security actions (for example, enabling specific Azure security features, configuring logging locations, or setting particular policies). This goes beyond conceptual guidance and into prescriptive, Azure-specific security configuration steps, which qualifies as expert security knowledge. |
-| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | limits-quotas | 0.65 | Service-level support matrix for CMK usage in Key Vault and Managed HSM; effectively a capability/limits list indicating which services support this feature. |
+| [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support) | decision-making | 0.65 | Page enumerates which Azure services support CMKs via Key Vault or Managed HSM. While largely a list, it is critical for deciding where CMKs can be used and informs service selection and architecture decisions around encryption, aligning best with decision-making. |
 | [Sign an image with Notation using GitHub Actions](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-sign-gha) | deployment | 0.65 | GitHub Actions workflow for signing images; likely includes workflow YAML, action inputs, and registry-related settings that are concrete deployment/integration configuration details. |
 | [Sign and verify a container image with Notation in Azure Pipeline](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/notation-ado-task-sign) | deployment | 0.65 | Shows how to use the Notation Azure DevOps task in pipelines; expected to include task YAML schema, input parameters, and pipeline-specific constraints that are product-specific deployment details. |
 | [Stay up to date with container image dependencies using Dependabot](https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart) | configuration | 0.65 | Quickstart for configuring Dependabot and Copacetic; likely contains repo-level configuration files, parameter names, and option values specific to these tools in a secure supply chain context. |

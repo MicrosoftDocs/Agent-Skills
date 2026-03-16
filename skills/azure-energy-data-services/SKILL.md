@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Data Share (use azure-data-share).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Energy Data Services applications. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L51-L64 | Security and access control in ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
 | Configuration | L65-L72 | Configuring Azure Data Manager for Energy: data partitioning, CORS rules, enabling Reservoir DDMS, and setting up/using audit logging for governance and access tracking. |
 | Integrations & Coding Patterns | L73-L90 | Patterns and APIs for integrating ADME/OSDU with external data sources, DDMS domain services, large file upload, and exporting logs/metrics to Azure Monitor and other tools |
-| Deployment | L91-L95 | Guides for deploying Azure Data Manager for Energy geospatial consumption zones and setting up the OSDU Admin UI for ADME administration and management |
+| Deployment | L91-L95 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
 
 ### Troubleshooting
 | Topic | URL |
@@ -91,5 +91,5 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy Geospatial Consumption Zone on ADME | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz |
+| Deploy Geospatial Consumption Zone on AKS with Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz |
 | Deploy OSDU Admin UI for ADME administration | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui |

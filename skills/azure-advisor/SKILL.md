@@ -1,9 +1,9 @@
 ---
 name: azure-advisor
-description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
+description: Expert knowledge for Azure Advisor development including best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Advisor applications. Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Advisor Skill
@@ -24,8 +24,8 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L34-L47 | Using Advisor to assess architectures and apply cost, performance, operational excellence, and reliability best practices, including bulk fixes, savings export, and resiliency reviews. |
-| Decision Making | L48-L56 | Using Advisor insights to prioritize critical risks, estimate cost impact, plan for service retirements/migrations, and use workbooks to analyze cost and reliability decisions |
+| Best Practices | L34-L47 | Guidance on using Azure Advisor to assess architectures and apply cost, performance, operational excellence, and reliability recommendations, including bulk fixes and cost-savings calculations. |
+| Decision Making | L48-L56 | Using Advisor workbooks and critical risk views to evaluate reliability, assess and optimize costs, and plan migrations based on service retirement and recommendation impact |
 | Limits & Quotas | L57-L61 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
 | Security | L62-L67 | Managing who can view or dismiss Azure Advisor recommendations using Azure RBAC, including configuring roles, permissions, and access control for Advisor. |
 | Configuration | L68-L77 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
@@ -42,7 +42,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply Azure Advisor cost recommendations across services | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-cost-recommendations |
 | Use Azure Advisor operational excellence recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations |
 | Leverage Azure Advisor performance recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations |
-| Apply Azure Advisor reliability recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations |
+| Apply Azure Advisor reliability recommendations for workloads | https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations |
 | Use Azure Advisor resiliency reviews to improve reliability | https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews |
 
 ### Decision Making
@@ -52,7 +52,7 @@ This skill requires **network access** to fetch documentation content:
 | Assess cost impact of Azure Advisor recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-evaluate-cost-implications-of-recommendations |
 | Analyze and optimize Azure costs with the Advisor workbook | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization |
 | Evaluate application reliability using the Advisor workbook | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-reliability |
-| Plan migrations for Azure service retirements with Advisor | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement |
+| Use Advisor Service Retirement workbook for migration planning | https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement |
 
 ### Limits & Quotas
 | Topic | URL |

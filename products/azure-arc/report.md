@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates,
     network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI,
@@ -13,18 +13,18 @@ category_descriptions:
   limits-quotas: Limits, quotas, versions, and requirements for Arc-enabled Kubernetes,
     Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected
     machines and Windows Server.
-  configuration: 'Configuring Azure Arc infrastructure and workloads: storage, data
-    services, Edge RAG, Kubernetes (GitOps, extensions, networking), servers/agents,
-    monitoring, networking, and orchestration settings.'
+  configuration: 'Configuring Azure Arc infrastructure and services: storage, data
+    services, Edge RAG, Kubernetes (GitOps, extensions, Key Vault), servers/agents,
+    networking, monitoring, and workload orchestration.'
   architecture-patterns: 'Patterns for Arc data/compute design: container storage
     data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced
     Edge RAG data parsing.'
-  deployment: Deploying and upgrading Azure Arc components (data controllers, Edge
-    RAG, resource bridge, SCVMM/VMware, agents), including prerequisites, support
-    matrices, and clean removal steps
-  best-practices: Guidance on using static retain workflows for Azure Arc Edge Volumes
-    and answers to common usage questions for Azure Arc-enabled data services (deployment,
-    operations, limitations).
+  deployment: 'Deploying and upgrading Azure Arc components: data controllers, Edge
+    RAG, resource bridge, Arc-enabled Kubernetes, SCVMM, VMware, and related agents,
+    prerequisites, and support matrices.'
+  best-practices: 'Best practices for Azure Arc storage and data services: filesystem
+    behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes,
+    and common usage FAQs.'
   integrations: 'Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK
     usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel,
     Terraform, and Event Grid integration.'
@@ -33,7 +33,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
   security, configuration, integrations & coding patterns, and deployment. Use when
   building, debugging, or optimizing Azure Arc applications. Not for Azure Kubernetes
   Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Stack Edge (use azure-stack-edge), Azure Virtual Network Manager (use azure-virtual-network-manager).
+  Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local).
 ---
 # Azure Arc Crawl Report
 
@@ -42,14 +42,14 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 - **Total Pages**: 415
 - **Fetched**: 415
 - **Fetch Failed**: 0
-- **Classified**: 269
-- **Unclassified**: 146
+- **Classified**: 270
+- **Unclassified**: 145
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 414
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 9
+- **Unchanged**: 404
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
 ## Classification Statistics
@@ -57,22 +57,48 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 1.2% |
-| best-practices | 2 | 0.5% |
-| configuration | 96 | 23.1% |
+| best-practices | 4 | 1.0% |
+| configuration | 97 | 23.4% |
 | decision-making | 20 | 4.8% |
-| deployment | 28 | 6.7% |
-| integrations | 19 | 4.6% |
+| deployment | 27 | 6.5% |
+| integrations | 18 | 4.3% |
 | limits-quotas | 13 | 3.1% |
 | security | 55 | 13.3% |
 | troubleshooting | 31 | 7.5% |
-| *(Unclassified)* | 146 | 35.2% |
+| *(Unclassified)* | 145 | 34.9% |
 
 ## Changes
 
+### New Pages
+
+- [Filesystem behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-behavior)
+- [Filesystem out of space behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-out-of-space)
+
 ### Updated Pages
 
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes)
-  - Updated: 2026-02-11T18:19:00.000Z → 2026-03-03T12:03:00.000Z
+- [Create your model endpoint (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-model-endpoint)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-10T22:21:00.000Z
+- [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-06T08:00:00.000Z
+- [Deploy and manage cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions)
+  - Updated: 2024-10-14T17:03:00.000Z → 2026-03-05T23:14:00.000Z
+- [Connect a cluster to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-connect-cluster)
+  - Updated: 2026-02-18T23:09:00.000Z → 2026-03-02T08:00:00.000Z
+- [Cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-extensions)
+  - Updated: 2025-04-22T08:00:00.000Z → 2026-03-07T06:06:00.000Z
+- [Multi-cluster workload management with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-management)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-09T17:05:00.000Z
+- [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere)
+  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-10T08:00:00.000Z
+- [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script)
+  - Updated: 2026-02-11T12:03:00.000Z → 2026-03-10T08:00:00.000Z
+- [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale)
+  - Updated: 2026-02-11T12:03:00.000Z → 2026-03-05T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/whats-new)
+- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/whats-new)
 
 ## Classified Pages
 
@@ -100,10 +126,8 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Built-in roles](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/built-in-roles) | security | 0.85 | Lists Azure built-in roles specific to Arc-enabled VMware vSphere with Actions/NotActions/DataActions; contains product-specific RBAC role names and permission scopes. |
 | [Configuration schema](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-schema) | configuration | 0.85 | Details YAML schema structure, property types, and validation rules for solution templates; includes product-specific schema fields and constraints. |
 | [Configure authentication](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-authentication) | security | 0.85 | Describes app registration, app roles, and user/group assignments; includes specific Entra ID configuration parameters and role definitions for Edge RAG. |
-| [Deploy and manage cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions) | configuration | 0.85 | Describes required and optional parameters for extensions; such reference-style how-tos include parameter names, allowed values, and update behavior specific to Arc extensions. |
 | [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/network-requirements) | configuration | 0.85 | Describes required URLs, ports, and protocols to allowlist; these are detailed network configuration parameters unique to the product. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent) | configuration | 0.85 | CLI reference for azcmagent with command syntax and options; includes specific parameters, flags, and behaviors unique to the Connected Machine agent. |
-| [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere) | deployment | 0.85 | Support matrix includes vCenter versions, network requirements, and other prerequisites—deployment constraints and matrices that are expert knowledge. |
 | [Private Link networking](https://learn.microsoft.com/en-us/azure/azure-arc/servers/private-link-security) | security | 0.85 | Private Link setup for Arc-enabled servers involves specific resource types, private link scope models, and configuration steps (including required permissions and endpoint settings) that are product-specific security configuration details. |
 | [Resize persistent volume (PVC)](https://learn.microsoft.com/en-us/azure/azure-arc/data/resize-persistent-volume-claim) | configuration | 0.85 | Explains resizing PVCs and references specific parameters like --volume-size-data/logs/datalogs/backups and StorageClass AllowVolumeExpansion; clearly a configuration-parameter focused article. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge) | troubleshooting | 0.85 | Dedicated troubleshooting article for deployment/use/removal; likely organized by symptoms and includes product-specific diagnostics and resolutions. |
@@ -124,7 +148,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Configure authentication for your model (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/configure-endpoint-authentication) | security | 0.80 | Shows how to configure API-key based auth for LLM endpoints; includes security-related configuration parameters and patterns specific to Edge RAG. |
 | [Connect machines using Ansible playbooks](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-ansible-playbooks) | integrations | 0.80 | Uses specific Ansible playbooks and variables to onboard nodes to Arc, including module names and configuration parameters that are product-specific integration patterns. |
 | [Create custom roles](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/create-custom-roles) | security | 0.80 | Explains creating custom roles with granular permissions, including scope behavior and directory-wide limits (up to 5,000 custom roles); product-specific RBAC configuration guidance. |
-| [Create your model endpoint (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-model-endpoint) | integrations | 0.80 | Describes setting up OpenAI-compatible endpoints via Azure AI Foundry, KAITO, etc.; includes endpoint configuration parameters and requirements unique to Edge RAG integration. |
 | [Customer-managed keytab](https://learn.microsoft.com/en-us/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector) | security | 0.80 | Covers deployment of AD connector with customer-managed keytabs; product-specific security configuration and keytab handling. |
 | [Deploy and configure Azure Monitor Agent using Azure Policy](https://learn.microsoft.com/en-us/azure/azure-arc/servers/deploy-ama-policy) | configuration | 0.80 | Includes custom Azure Policy definitions, parameters, and assignment scopes to ensure AMA deployment on Arc servers—detailed configuration artifacts. |
 | [Deploy extensions by using Ansible](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions-ansible) | integrations | 0.80 | Uses specific Ansible collections, roles, and playbooks (Azure Infrastructure Configuration Demo, etc.) to manage extensions on Arc servers—clear integration code patterns. |
@@ -164,6 +187,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [azcmagent extension](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-extension) | configuration | 0.80 | Describes azcmagent extension commands and requirements (stopping extension manager service, impact on installs/upgrades); includes product-specific command usage and behaviors. |
 | [azcmagent show](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-show) | configuration | 0.80 | Describes output fields and behavior of azcmagent show, including connection state and dependent services; product-specific status/configuration reference. |
 | [Configure Workload Identity](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-configure-workload-identity) | security | 0.78 | How-to for configuring Workload Identity for Cloud subvolumes; likely includes specific Kubernetes/Azure identity configuration fields, annotations, and role assignments unique to Azure Container Storage enabled by Azure Arc. |
+| [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere) | deployment | 0.78 | A 'support matrix' page for Arc-enabled VMware vSphere will list precise, product-specific compatibility and deployment requirements (supported vCenter versions, OS versions, network ports, resource bridge requirements, etc.). These are expert, versioned details not reliably known from training and are critical for planning deployments, aligning best with deployment-focused matrices of supported platforms and prerequisites. |
 | [Resource sync](https://learn.microsoft.com/en-us/azure/azure-arc/data/resource-sync) | configuration | 0.78 | Explains resource sync behavior and configuration in direct connected mode; includes product-specific sync mechanics and possibly annotations/labels or API usage. |
 | [Update service principal credentials](https://learn.microsoft.com/en-us/azure/azure-arc/data/update-service-principal-credentials) | configuration | 0.78 | Describes updating secrets in the data controller when credentials change; includes specific secret names, locations, and update commands unique to Arc-enabled data services. |
 | [Backup data controller](https://learn.microsoft.com/en-us/azure/azure-arc/data/backup-controller-database) | configuration | 0.76 | Explains controller database internals and backup steps; includes product-specific database name (controller), location, and backup procedures. |
@@ -226,6 +250,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Delete data](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/delete-data) | limits-quotas | 0.70 | States Edge RAG supports only one index and that individual ingestions/evaluations can't be deleted; this is a product-specific constraint/limit on data management. |
 | [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/data/delete-azure-resources) | configuration | 0.70 | Describes how to delete Arc data services resources; includes specific resource types and commands unique to Arc-enabled data services. |
 | [Deploy SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-arc/data/deploy-active-directory-sql-managed-instance) | security | 0.70 | End-to-end deployment of SQL Managed Instance with AD authentication; includes security-related configuration fields and requirements. |
+| [Deploy and manage cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions) | configuration | 0.70 | Article focuses on creating and managing extension instances with required and optional parameters, including options for updates and configurations. This implies product-specific configuration parameters and values for Azure Arc-enabled Kubernetes extensions, fitting the configuration sub-skill. It is not just a conceptual overview but a parameter-driven how-to. |
 | [Deploy applications consistently](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy-flux-2) | configuration | 0.70 | Shows how to use Azure Policy with Flux configurations; includes specific policy definitions, resource types, and parameterization for deploying GitOps configs at scale. |
 | [Deployment options](https://learn.microsoft.com/en-us/azure/azure-arc/servers/deployment-options) | decision-making | 0.70 | Compares different onboarding methods (script, PowerShell, Configuration Manager, etc.) with criteria like scale, automation, and environment fit, guiding users to select the right deployment approach. |
 | [Deployment options for Azure Monitor Agent](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azure-monitor-agent-deployment) | deployment | 0.70 | Covers multiple AMA deployment methods on Arc-enabled servers; likely includes which methods are supported where and product-specific deployment constraints. |
@@ -236,6 +261,8 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Encrypt a database](https://learn.microsoft.com/en-us/azure/azure-arc/data/configure-transparent-data-encryption-manually) | security | 0.70 | How-to for enabling TDE on Arc-enabled SQL Managed Instance databases; likely includes product-specific SQL commands, configuration steps, and options unique to this deployment model. |
 | [Extensions overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions) | configuration | 0.70 | Explains how Arc manages VM extensions on non-Azure VMs, including which extensions are supported and how they interact with services like Azure Monitor—product-specific configuration behavior. |
 | [Extensions security](https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-extensions) | security | 0.70 | Explains security fundamentals and settings for VM extensions, including how extension settings can be customized; likely includes product-specific configuration fields and security behaviors. |
+| [Filesystem behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-behavior) | best-practices | 0.70 | Describes product-specific filesystem behavior for shared and mirror filesystems in Azure Container Storage enabled by Azure Arc, including how changes propagate and what happens during mirror synchronization. This is actionable, implementation-specific guidance that applications must account for, and is not generic filesystem theory. |
+| [Filesystem out of space behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-out-of-space) | best-practices | 0.70 | Explains product-specific behavior when the underlying filesystem becomes full for EdgeVolume filesystems in Azure Container Storage enabled by Azure Arc, including how the system behaves and what applications must handle. This is concrete, product-unique behavior guidance rather than generic storage concepts. |
 | [Frequently Asked Questions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/faq) | troubleshooting | 0.70 | FAQ for Arc-enabled Kubernetes and GitOps likely includes specific error messages, behaviors, and resolutions, mapping symptoms to causes and fixes. |
 | [Generate blob index and metadata tags](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-blob-index-metadata-tags) | configuration | 0.70 | Shows how to generate blob index and metadata tags via extended attributes; includes product-specific mapping and configuration behavior. |
 | [Identity and access management](https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/identity-access) | security | 0.70 | Describes using Microsoft Entra for server identity and access in hybrid environments; will include product-specific identity patterns and possibly role assignments for Arc-managed servers. |
@@ -294,6 +321,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [View billing data (Azure)](https://learn.microsoft.com/en-us/azure/azure-arc/data/view-billing-data-in-azure) | configuration | 0.70 | How-to for exporting and uploading billing data; includes specific commands, file formats, and parameters for Arc-enabled data services billing integration. |
 | [azcmagent help](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-help) | configuration | 0.70 | Provides usage information and lists available azcmagent commands; while simple, it’s still product-specific CLI reference content. |
 | [azcmagent version](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-version) | configuration | 0.70 | Simple but product-specific command to show the agent version; still a concrete CLI reference. |
+| [Create your model endpoint (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-model-endpoint) | configuration | 0.68 | The page gives product-specific, stepwise guidance for configuring an OpenAI-compatible endpoint for Edge RAG using Microsoft Foundry, KAITO, Foundry Local, or Ollama. It includes concrete model/version recommendations (for example, GPT-4o, GPT-4.1-mini or later) and endpoint compatibility requirements that are specific to this Edge RAG + BYOM scenario, which go beyond generic LLM knowledge. This is primarily configuration-focused rather than general tutorial or conceptual content. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-prerequisites) | deployment | 0.68 | Prerequisites for direct-connect deployment; likely includes specific Kubernetes, Azure, and resource requirements that are product- and mode-specific for deployment. |
 | [Checklist](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/complete-prerequisites) | deployment | 0.65 | Checklist for deployment prerequisites; includes concrete steps and conditions that must be met, specific to Edge RAG. |
 | [Choosing the right Azure Arc service](https://learn.microsoft.com/en-us/azure/azure-arc/choose-service) | decision-making | 0.65 | Guides selection between multiple Azure Arc server connection options based on infrastructure and management needs; contains product-specific decision guidance rather than generic concepts. |
@@ -328,7 +356,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Advanced data parsing](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/advanced-data-parsing) | architecture-patterns | 0.60 | Explains how advanced parsing works, when to use it, and its impact; provides product-specific pattern guidance for structured data extraction in Edge RAG. |
 | [Cluster connect access](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-cluster-connect) | configuration | 0.60 | Cluster connect feature involves specific connection modes and possibly CLI parameters for starting sessions; these are product-specific connectivity configuration details. |
 | [Configure Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-configure-monitor-site) | configuration | 0.60 | Alert configuration for Arc sites likely includes product-specific alert rules, resource types, and configuration fields tied to Arc site manager, which are concrete configuration patterns. |
-| [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script) | deployment | 0.60 | Quickstart for connecting vCenter via resource bridge is a deployment pattern specific to Arc-enabled VMware vSphere, including environment-specific steps and constraints. |
 | [Control ingest data flow](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/howto-ingest-data-flow) | architecture-patterns | 0.60 | Describes several ways to control data flow to the cloud using this product; effectively patterns for ingest/sync behavior specific to Azure Container Storage. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/data/faq) | best-practices | 0.60 | Product FAQ typically includes concrete gotchas, behavioral details, and edge cases specific to Arc-enabled data services beyond generic concepts. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/faq) | troubleshooting | 0.60 | FAQ includes concrete behavioral changes (for example, how site address is stored) that clarify system behavior and help diagnose issues; these are product-specific operational details not derivable from general knowledge. |
@@ -356,7 +383,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Data controller direct - CLI](https://learn.microsoft.com/en-us/azure/azure-arc/data/upgrade-data-controller-direct-cli) | 0.50 | Directly connected controller upgrade via CLI; standard how-to without configuration parameter tables or limits. |
 | [Data controller indirect - CLI](https://learn.microsoft.com/en-us/azure/azure-arc/data/upgrade-data-controller-indirect-cli) | 0.50 | Step-by-step CLI upgrade how-to; no indication of detailed config tables, limits, or troubleshooting mappings. |
 | [Data controller indirect - Kubernetes tools](https://learn.microsoft.com/en-us/azure/azure-arc/data/upgrade-data-controller-indirect-kubernetes-tools) | 0.50 | Kubernetes-tools upgrade tutorial; appears procedural without product-specific limits, config matrices, or error-code mappings. |
-| [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale) | 0.50 | Covers installing Arc agents at scale with multiple methods; likely procedural scripts/steps but not clearly organized as configuration tables or troubleshooting with error codes. |
 | [Multicluster workload orchestration with GitHub](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/workload-orchestration-multicluster-git) | 0.50 | Describes a GitHub-driven multi-cluster operating model; primarily architectural and process overview without clear evidence of quantified decision matrices or product-specific configuration tables. |
 | [Perform recovery operations for Arc resource bridge](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/recover-from-resource-bridge-deletion) | 0.50 | Disaster recovery for resource bridge; likely includes steps and maybe commands, but summary doesn’t confirm structured troubleshooting with specific error codes or logs. |
 | [SQL Managed Instance direct - CLI](https://learn.microsoft.com/en-us/azure/azure-arc/data/upgrade-sql-managed-instance-direct-cli) | 0.50 | CLI-based upgrade tutorial for directly connected instances; likely procedural without detailed config matrices or limits. |
@@ -427,7 +453,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Apply Azure tags on resources](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/apply-azure-tags) | 0.30 | Applying tags is generic Azure tagging usage; summary doesn’t indicate product-specific limits, config matrices, or troubleshooting mappings. |
 | [Azure Arc site manager >](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/overview) | 0.30 | Preview overview of Arc site manager; high-level description without detailed settings or error mappings. |
 | [CI/CD workflow using GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2-ci-cd) | 0.30 | CI/CD workflow article is conceptual lifecycle guidance; description doesn’t show concrete parameter tables or numeric thresholds. |
-| [Cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-extensions) | 0.30 | Cluster extensions article is conceptual overview of how extensions work; detailed parameters and limits are in other extension-specific docs. |
 | [Configurations and GitOps (Flux v1)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2) | 0.30 | Duplicate conceptual GitOps overview; same reasoning as index 28. |
 | [Connect](https://learn.microsoft.com/en-us/azure/azure-arc/data/connect-managed-instance) | 0.30 | Connection tutorial using SSMS/sqlcmd; standard connection steps without product-specific config matrices. |
 | [Connect an SCVMM server to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/quickstart-connect-system-center-virtual-machine-manager-to-arc) | 0.30 | Quickstart focuses on using a helper script to connect SCVMM to Azure Arc; based on the summary it appears to be a procedural tutorial without detailed configuration parameter tables, limits, or product-specific troubleshooting matrices. |
@@ -448,8 +473,8 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Features](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features) | 0.30 | Features and capabilities list; mostly conceptual/marketing without detailed config, limits, or troubleshooting mappings. |
 | [Guide](https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-guide) | 0.30 | Introductory page that just links to troubleshooting resources; no direct error-code or diagnostic detail. |
 | [Implement CI/CD with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd) | 0.30 | CI/CD tutorial is scenario-focused; description doesn’t suggest detailed configuration matrices or limits. |
+| [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale) | 0.30 | Appears to be a how-to/tutorial for installing Azure Arc agents on VMware VMs at scale. The summary does not indicate presence of detailed configuration parameter tables, limits, error-code-based troubleshooting, or other product-specific expert references; it mainly describes the scenario and benefits. |
 | [Monitor your solutions](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/monitor) | 0.30 | Monitoring tab navigation/how-to; appears to describe viewing status and details, not specific diagnostic commands, error codes, or configuration parameters. |
-| [Multi-cluster workload management with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-management) | 0.30 | Workload management overview is conceptual; no clear indication of product-specific configuration tables or limits. |
 | [Multicloud connector enabled by Azure Arc >](https://learn.microsoft.com/en-us/azure/azure-arc/multicloud-connector/overview) | 0.30 | Overview of multicloud connector; describes supported clouds and solutions but not detailed decision matrices or configs. |
 | [Next steps](https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/next-steps) | 0.30 | Next-steps guidance for transitioning to cloud-native management; high-level journey narrative without specific technical configurations or limits. |
 | [Observability in Azure portal](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/azure-portal-monitoring) | 0.30 | Azure portal monitoring usage for IT DevOps; likely UI-driven instructions without detailed error-code mappings or product-specific diagnostic commands. |
@@ -471,12 +496,13 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [About Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/overview) | 0.20 | High-level Azure Arc overview; no concrete limits, configs, or error details. |
 | [Agent overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-agent-overview) | 0.20 | Agent overview is conceptual; no indication of numeric limits, config tables, or error mappings. |
 | [Archive for Connected Machine agent release notes](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes-archive) | 0.20 | Archive of release notes; historical info, not configuration or troubleshooting guidance. |
-| [Connect a cluster to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-connect-cluster) | 0.20 | Quickstart for connecting a cluster is a basic tutorial; unlikely to contain detailed config tables, limits, or troubleshooting mappings. |
+| [Connect a cluster to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-connect-cluster) | 0.20 | Quickstart for connecting a Kubernetes cluster to Azure Arc; primarily step-by-step onboarding using CLI/PowerShell without detailed configuration tables, limits, error-code mappings, or product-specific decision matrices. |
+| [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script) | 0.20 | This is a quickstart showing how to connect vCenter to Azure Arc using a helper script. It is primarily a step-by-step tutorial, not a reference of limits, configuration matrices, or error-code-based troubleshooting. The summary does not indicate detailed parameter tables, limits, or other expert-only reference data, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Create, use, delete, and modify an Arc site](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-crud-site) | 0.20 | CRUD operations for Arc sites via portal are step-by-step instructions without configuration parameter tables, limits, or error-code-based troubleshooting. |
 | [Data collection and reporting](https://learn.microsoft.com/en-us/azure/azure-arc/data/privacy-data-collection-and-reporting) | 0.20 | Describes telemetry/data collection behavior; policy/behavioral info rather than configuration parameters, limits, or troubleshooting mappings. |
 | [Delete a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/delete-virtual-machine) | 0.20 | Deleting a VM via Arc is a straightforward operation guide; not focused on limits, configuration matrices, or troubleshooting mappings. |
 | [Delete resources](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/delete-resources) | 0.20 | The page describes how to delete workload orchestration resources, likely a straightforward CLI-based deletion guide. The summary does not indicate presence of specific limits, configuration parameter tables, error-code mappings, or decision matrices; it is standard operational guidance an LLM would already know generically. |
-| [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management) | 0.20 | High-level multi-cluster workload management use cases; appears conceptual without concrete limits, configs, or decision matrices. |
+| [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management) | 0.20 | Described as exploring typical use cases and challenges for multi-cluster Kubernetes workload management with GitOps; appears to be conceptual/overview guidance without mention of concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
 | [Inner loop developer experience](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-inner-loop-gitops) | 0.20 | Inner loop developer experience is process/practice oriented; unlikely to contain product-specific configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-business-continuity-overview) | 0.20 | Business continuity overview is conceptual; summary doesn’t indicate concrete limits, configs, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/overview) | 0.20 | Conceptual overview of workload orchestration; high-level description without detailed configuration, limits, or troubleshooting content. |
@@ -494,7 +520,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Azure Arc Jumpstart scenarios](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/jumpstart) | 0.10 | Scenario/marketing-style description of an Arc Jumpstart use case; not focused on detailed configuration, limits, or troubleshooting guidance. |
 | [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview) | 0.10 | High-level overview of Azure Arc-enabled Kubernetes without specific limits, configuration tables, error codes, or decision matrices. Primarily conceptual description of what the service does and its benefits, not detailed expert guidance. |
 | [Azure Arc-enabled PostgreSQL](https://learn.microsoft.com/en-us/azure/azure-arc/data/what-is-azure-arc-enabled-postgresql) | 0.10 | Retirement notice/overview; no indication of detailed configs, limits, or troubleshooting. |
+| [Cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-extensions) | 0.10 | Described as a conceptual overview of cluster extensions; focuses on what extensions are and how they relate to Helm, not on concrete limits, configuration parameter tables, or troubleshooting mappings. |
+| [Multi-cluster workload management with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-management) | 0.10 | Conceptual overview of workload management with GitOps in multi-cluster environments; discusses structure and processes at a high level without specific numeric thresholds, configuration values, or error-resolution guidance. |
 | [Support and feedback](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/support-feedback) | 0.10 | Support and feedback instructions; process-oriented, not technical configuration, limits, or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/whats-new) | 0.10 | What's new/release notes are high-level change logs; they usually lack structured limits, config matrices, or detailed troubleshooting mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/whats-new) | 0.10 | What's new for Arc-enabled SCVMM is a release overview without structured limits, configuration matrices, or troubleshooting mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/whats-new) | 0.10 | What's new for Arc-enabled VMware vSphere is a release overview without structured limits, configuration matrices, or troubleshooting mappings. |

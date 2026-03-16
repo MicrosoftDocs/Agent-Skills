@@ -1,18 +1,17 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  security: 'Securing AKS Edge/Arc/hybrid clusters: auth (Entra ID, AD, gMSA, workload
-    identity), RBAC, SSH hardening, cert and key management, secret/encryption, and
-    container image security.'
+  security: Auth, RBAC, SSH, certificates, key/secret encryption, gMSA, and container
+    security for AKS Edge/Arc/Hybrid clusters on Windows Server and Azure Local.
   configuration: 'Configuring AKS Edge/Arc/hybrid clusters: networking, storage, load
     balancers, autoscaling, Arc connectivity, Windows/Linux node settings, monitoring,
     upgrades, and offline/host setup.'
-  decision-making: Guidance on AKS Edge/AKS Arc vs cloud choices, pricing/licensing,
-    support, add-ons, monitoring options, and migration/retirement planning for Windows
-    Server–based AKS setups
-  troubleshooting: 'Diagnosing and fixing AKS Edge/Arc cluster issues: creation/upgrade
-    failures, networking, storage, security, logs/diagnostics collection, known issues,
-    and repair tools for Windows/VMware deployments.'
+  decision-making: Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons,
+    monitoring, pricing/licensing, support, and planning migrations or retirement
+    of older AKS/Windows Server setups
+  troubleshooting: 'Diagnosing and fixing AKS Edge/Arc cluster issues: installs, upgrades,
+    networking, storage, security, logs, certificates, known issues, and using tools/PowerShell
+    for deep troubleshooting.'
   limits-quotas: Hardware, storage, IP capacity, scale limits, supported Kubernetes
     versions, and support policies for AKS Edge Essentials, AKS on Azure Local, and
     AKS Arc clusters.
@@ -48,8 +47,8 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 332
+- **Updated Pages**: 3
+- **Unchanged**: 329
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -60,15 +59,24 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | architecture-patterns | 3 | 0.9% |
 | best-practices | 4 | 1.2% |
 | configuration | 77 | 23.2% |
-| decision-making | 8 | 2.4% |
+| decision-making | 9 | 2.7% |
 | deployment | 34 | 10.2% |
 | integrations | 55 | 16.6% |
-| limits-quotas | 9 | 2.7% |
+| limits-quotas | 8 | 2.4% |
 | security | 30 | 9.0% |
 | troubleshooting | 46 | 13.9% |
 | *(Unclassified)* | 66 | 19.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Known issues overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-known-issues)
+  - Updated: 2025-12-17T00:31:00.000Z → 2026-03-11T17:06:00.000Z
+- [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions)
+  - Updated: 2025-10-24T22:03:00.000Z → 2026-03-11T17:06:00.000Z
+- [Enable secret encryption with the KMS plugin](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption)
+  - Updated: 2025-10-22T22:03:00.000Z → 2026-03-10T22:19:00.000Z
 
 ## Classified Pages
 
@@ -76,9 +84,9 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 |-----------|------|------------|--------|
 | [Deployment JSON configuration parameters](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-deployment-config-json) | configuration | 0.95 | Explicitly documents deployment JSON schema with parameter names, allowed values, and defaults; this is core configuration reference that LLMs won’t know without the doc. |
 | [AKS Edge Essentials PowerShell](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/aks-edge-ps/) | configuration | 0.90 | Reference for PowerShell commands, including parameter lists and behaviors; this is core configuration/management API knowledge unique to AKS Edge Essentials. |
-| [Enable secret encryption with the KMS plugin](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption) | security | 0.90 | Security configuration article enabling KMS provider, with details like KEK generation and 30-day rotation; includes product-specific security behavior and settings. |
 | [Supported scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/scale-requirements) | limits-quotas | 0.90 | Explicitly describes maximum and minimum supported scale counts for clusters and node pools, which are numeric limits and quotas. |
 | [Cluster status stuck during upgrade](https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-upgrade-status) | troubleshooting | 0.86 | Troubleshooting article for a specific AKS Edge/Arc issue (cluster stuck in Upgrading after certain Azure Local versions), with concrete symptom → cause → mitigation steps that are product- and version-specific. |
+| [Known issues overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-known-issues) | troubleshooting | 0.86 | The page documents specific known issues and their workarounds for AKS enabled by Azure Arc. These are product- and version-specific troubleshooting details that change over time and are unlikely to be fully captured in model training. The structure is symptom/issue → workaround/solution, which aligns with troubleshooting guidance. |
 | [Use the Key Manager for Kubernetes extension](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-key-manager) | security | 0.86 | Describes Key Manager extension for rotating signing keys for service account tokens; includes product-specific security configuration and behavior. |
 | [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-arc) | troubleshooting | 0.85 | Lists specific errors and workarounds for Enable-AksHciArcConnection/Disable-AksHciArcConnection; clear symptom→cause→solution mappings. |
 | [Quotas and resource limits](https://learn.microsoft.com/en-us/azure/aks/aksarc/concepts-support) | limits-quotas | 0.85 | Explicitly about tested configurations, resource limits, VM sizes, and regions; contains numeric limits and support matrices. |
@@ -129,7 +137,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | [Set-AksHciCluster](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/set-akshcicluster) | configuration | 0.80 | Cmdlet reference for scaling control plane nodes and autoscaler settings with detailed parameters. |
 | [Set-AksHciRegistration](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/set-akshciregistration) | configuration | 0.80 | Registration cmdlet with product-specific parameters for linking AKS hybrid to Azure. |
 | [Storage](https://learn.microsoft.com/en-us/azure/aks/aksarc/known-issues-storage) | troubleshooting | 0.80 | Storage-focused troubleshooting guide with AKS Arc-specific error patterns and resolutions. |
-| [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions) | limits-quotas | 0.80 | Version support policy and lifecycle typically include specific supported versions and timelines, which are expert, time-sensitive limits. |
 | [Update proxy settings and certificates](https://learn.microsoft.com/en-us/azure/aks/aksarc/proxy-change) | configuration | 0.80 | Explicitly about updating proxy and certificate settings, including noProxy parameter; contains configuration options and constraints (e.g., cannot change HTTP/HTTPS). |
 | [Use Azure RBAC for Kubernetes authorization](https://learn.microsoft.com/en-us/azure/aks/aksarc/azure-rbac-local) | security | 0.80 | Describes using Azure RBAC for kubeconfig authorization; likely includes specific role definitions, actions, and scope configurations. |
 | [Use Kubernetes RBAC with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-rbac-entra-id) | security | 0.80 | Uses Microsoft Entra groups with Kubernetes RBAC; likely lists roles, bindings, and scopes—product-specific security configuration. |
@@ -147,7 +154,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | [Deploy Azure IoT Operations](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-deploy-azure-iot) | integrations | 0.78 | Describes a script and required cluster configuration to run Azure IoT Operations on AKS Edge; includes product-specific integration parameters and constraints. |
 | [System requirements and support matrix](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-system-requirements) | limits-quotas | 0.78 | System requirements pages typically list exact CPU, RAM, disk, OS version, and hardware constraints; these numeric limits and supported versions are expert, product-specific knowledge. |
 | [Use diagnostic checker](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-diagnostic-checker) | troubleshooting | 0.78 | Tool-based troubleshooting for cluster creation failures with specific checks, outputs, and remediation steps unique to AKS Arc. |
-| [Known issues overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-known-issues) | troubleshooting | 0.77 | Known issues page with concrete workarounds and sometimes version-specific conditions; highly product-specific troubleshooting content. |
 | [Access TPM secrets](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-access-tpm) | integrations | 0.76 | Shows how to enable TPM passthrough and includes sample C# code and configuration to use host TPM from the VM; this is a concrete integration pattern. |
 | [Issues after deleting storage volumes](https://learn.microsoft.com/en-us/azure/aks/aksarc/delete-storage-volume) | troubleshooting | 0.76 | Describes cluster issues triggered by deleting storage volumes and provides remediation steps specific to AKS on Azure Local storage behavior. |
 | [Telemetry pod consumes too much memory and CPU](https://learn.microsoft.com/en-us/azure/aks/aksarc/telemetry-pod-resources) | troubleshooting | 0.76 | Targets a specific pod consuming too much CPU/memory with product-specific tuning or fixes. |
@@ -216,6 +222,7 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | [Deploy a container image from Azure Container Registry](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-azure-container-registry) | integrations | 0.70 | Describes integration between ACR and on-prem AKS; likely includes registry configuration, authentication parameters, and deployment patterns specific to this scenario. |
 | [Deploy an AI model with the AI toolchain operator](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-ai-model) | integrations | 0.70 | Integration with Kubernetes AI toolchain operator; article likely includes CRD fields, extension parameters, and model deployment configs unique to this integration. |
 | [Disable-AksHciArcConnection](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/disable-akshciarcconnection) | configuration | 0.70 | Cmdlet reference for disabling Arc connectivity, including product-specific connection configuration behavior. |
+| [Enable secret encryption with the KMS plugin](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption) | security | 0.70 | The page describes product-specific steps and configuration details to enable the KMS provider for encrypting Kubernetes secrets on AKS Edge Essentials clusters. This is concrete security configuration guidance (encryption at rest for etcd secrets) rather than a conceptual overview, fitting the security sub-skill type. |
 | [Enable-AksHciArcConnection](https://learn.microsoft.com/en-us/azure/aks/aksarc/reference/ps/enable-akshciarcconnection) | configuration | 0.70 | Cmdlet reference for enabling Arc connectivity, including configuration parameters unique to AKS hybrid. |
 | [Encrypt etcd secrets](https://learn.microsoft.com/en-us/azure/aks/aksarc/encrypt-secrets) | troubleshooting | 0.70 | Explicitly a monitoring and troubleshooting guide for etcd secret encryption with AKS Arc-specific behaviors and resolution steps. |
 | [Expose Kubernetes services](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-expose-service) | configuration | 0.70 | Explains service exposure methods depending on networking configuration, including specific settings like Init.Service; product-specific configuration guidance. |
@@ -290,6 +297,7 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | [vnet](https://learn.microsoft.com/en-us/azure/aks/aksarc/vnet) | integrations | 0.70 | CLI vnet reference; contains product-specific networking command parameters and constraints. |
 | [Upgrade Kubernetes clusters](https://learn.microsoft.com/en-us/azure/aks/aksarc/cluster-upgrade) | deployment | 0.69 | Details rolling upgrade behavior, supported upgrade paths, and commands for AKS Arc cluster upgrades, which are product-specific operational steps. |
 | [Enable Windows node pools](https://learn.microsoft.com/en-us/azure/aks/aksarc/howto-enable-windows-node-pools) | configuration | 0.68 | How-to for enabling a feature tied to specific Azure Local versions and supported Windows images; likely includes concrete CLI flags and configuration values unique to AKS Arc. |
+| [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions) | decision-making | 0.68 | The page documents the specific Kubernetes versions currently supported for AKS enabled by Azure Arc and explains the support policy and lifecycle. These concrete version lists and lifecycle details are time-sensitive expert knowledge not reliably known from model training and help users decide which Kubernetes version to run and when to upgrade. |
 | [Monitor Kubernetes audit events](https://learn.microsoft.com/en-us/azure/aks/aksarc/kubernetes-monitor-audit-events) | configuration | 0.67 | Covers creating diagnostic settings to route audit logs as Azure Monitor resource logs; includes product-specific settings and destinations. |
 | [Disable Windows node pools](https://learn.microsoft.com/en-us/azure/aks/aksarc/disable-windows-nodepool) | configuration | 0.66 | Version-specific configuration steps to disable a feature on Azure Local 2508 and earlier, including commands and flags unique to this environment. |
 | [Monitor control plane metrics](https://learn.microsoft.com/en-us/azure/aks/aksarc/control-plane-metrics) | configuration | 0.66 | Explains enabling control plane metrics and querying them; likely includes specific metric names, endpoints, and configuration steps unique to AKS on Azure Local. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -8,8 +8,8 @@ category_descriptions:
     APIM policies, Azure CLI/PowerShell scripts, Kubernetes YAML for AKS, and Terraform/Bicep
     templates.'
   configuration: How to set up and configure Azure Cosmos DB as the storage backend
-    for Azure Copilot conversations, including connection settings and data persistence
-    options.
+    for Azure Copilot conversation data, including required settings and integration
+    steps.
   architecture-patterns: Using Copilot to design, validate, and troubleshoot Azure
     network architectures, including connectivity, routing, security, and performance
     issues across VNets and hybrid setups.
@@ -29,16 +29,16 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 
 ## Summary
 
-- **Total Pages**: 38
-- **Fetched**: 38
+- **Total Pages**: 39
+- **Fetched**: 39
 - **Fetch Failed**: 0
 - **Classified**: 20
-- **Unclassified**: 18
+- **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 38
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 36
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -48,20 +48,30 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 |------|-------|------------|
 | architecture-patterns | 1 | 2.6% |
 | configuration | 1 | 2.6% |
-| decision-making | 6 | 15.8% |
-| integrations | 5 | 13.2% |
-| security | 5 | 13.2% |
-| troubleshooting | 2 | 5.3% |
-| *(Unclassified)* | 18 | 47.4% |
+| decision-making | 6 | 15.4% |
+| integrations | 5 | 12.8% |
+| security | 5 | 12.8% |
+| troubleshooting | 2 | 5.1% |
+| *(Unclassified)* | 19 | 48.7% |
 
 ## Changes
+
+### New Pages
+
+- [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent)
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-10T08:00:00.000Z
+- [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-12T22:17:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Manage access](https://learn.microsoft.com/en-us/azure/copilot/manage-access) | security | 0.85 | Describes how Global Administrators manage access, including role names and enablement steps; this is product-specific identity and access management guidance. |
-| [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage) | configuration | 0.85 | Explains bring-your-own-storage for conversation history with Cosmos DB; likely includes specific configuration options and required settings unique to this integration. |
 | [Troubleshoot deployed apps](https://learn.microsoft.com/en-us/azure/copilot/troubleshoot-app-service) | troubleshooting | 0.80 | Focuses on diagnosing issues like high CPU and networking for App Service/Functions, mapping problems to appropriate diagnostic tools and solutions. |
 | [Troubleshoot disk performance](https://learn.microsoft.com/en-us/azure/copilot/troubleshoot-disk-performance) | troubleshooting | 0.80 | Explicitly about troubleshooting disk performance; likely maps symptoms (slow disks) to causes and solutions, referencing VM/disk performance characteristics. |
 | [Generate Terraform and Bicep configurations](https://learn.microsoft.com/en-us/azure/copilot/generate-terraform-bicep) | integrations | 0.75 | Describes generating Terraform/Bicep using AzureRM provider and dependent resources; this is a concrete integration pattern with IaC tools. |
@@ -74,6 +84,7 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 | [Generate Kubernetes YAML files](https://learn.microsoft.com/en-us/azure/copilot/generate-kubernetes-yaml) | integrations | 0.70 | Covers generating and editing Kubernetes YAML for AKS with best practices; represents a concrete coding/config pattern for AKS integration. |
 | [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | integrations | 0.70 | Provides patterns for generating Azure PowerShell scripts; product-specific cmdlet usage and script structure for integrating with Azure. |
 | [Manage and migrate storage accounts](https://learn.microsoft.com/en-us/azure/copilot/improve-storage-accounts) | security | 0.70 | Focuses on hardening security posture, data resiliency, and migration solutions for storage accounts; includes product-specific security and migration guidance. |
+| [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage) | configuration | 0.70 | Explains how to use a tenant-managed Azure Cosmos DB instance for Azure Copilot conversation history. This is product-specific configuration, likely including required settings, resource types, and possibly parameter details for enabling 'bring your own storage'. |
 | [Query attack surface](https://learn.microsoft.com/en-us/azure/copilot/query-attack-surface) | security | 0.70 | Security-focused integration with Defender EASM and SCUs; includes product-specific security compute unit requirements and usage context. |
 | [Responsible AI FAQ](https://learn.microsoft.com/en-us/azure/copilot/responsible-ai-faq) | security | 0.70 | Responsible AI FAQ for a specific product typically includes product-specific data handling, retention, and access details that map to security/compliance configuration. |
 | [Analyze costs](https://learn.microsoft.com/en-us/azure/copilot/analyze-cost-management) | decision-making | 0.65 | Uses Cost Management and mentions simulations for token-based models; likely includes product-specific cost estimation behavior and guidance for cost decisions, fitting decision-making. |
@@ -99,7 +110,8 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 | [Understand service health](https://learn.microsoft.com/en-us/azure/copilot/understand-service-health) | 0.25 | Service health usage scenarios; no indication of specific configuration parameters, limits, or troubleshooting mappings. |
 | [Use Azure Copilot with AI Shell](https://learn.microsoft.com/en-us/azure/copilot/ai-shell-overview) | 0.25 | Overview of using Copilot via AI Shell; summary does not indicate detailed parameter tables or constraints beyond generic CLI usage. |
 | [Capabilities](https://learn.microsoft.com/en-us/azure/copilot/capabilities) | 0.20 | Capabilities overview and how to open Copilot; no detailed configs, limits, or troubleshooting content. |
-| [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview) | 0.20 | Conceptual description of Agents (preview) with no specific configuration parameters, limits, or troubleshooting mappings. |
+| [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Describes what the migration agent can help with (planning, assessing, strategizing) but does not expose specific configuration values, limits, error codes, or detailed decision criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview) | 0.20 | High-level overview of Agents (preview) in Azure Copilot describing capabilities and value; no concrete limits, configuration parameters, error codes, or decision matrices. |
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |
 | [Example prompts](https://learn.microsoft.com/en-us/azure/copilot/example-prompts) | 0.10 | Example prompts are usage samples, not product-specific configuration, limits, or troubleshooting knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview) | 0.10 | High-level marketing/overview of Azure Copilot capabilities without concrete limits, configs, or error details. |

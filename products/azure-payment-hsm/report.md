@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Azure Payment HSM networking and access: VNets/peering,
     FastPath, ARM deployments, IP setup, browser/VM access to payShield Manager, and
@@ -31,13 +31,13 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 - **Total Pages**: 28
 - **Fetched**: 28
 - **Fetch Failed**: 0
-- **Classified**: 18
-- **Unclassified**: 10
+- **Classified**: 17
+- **Unclassified**: 11
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 28
+- **Updated Pages**: 1
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -45,15 +45,20 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 10.7% |
+| architecture-patterns | 2 | 7.1% |
 | best-practices | 1 | 3.6% |
 | configuration | 9 | 32.1% |
 | decision-making | 2 | 7.1% |
 | security | 2 | 7.1% |
 | troubleshooting | 1 | 3.6% |
-| *(Unclassified)* | 10 | 35.7% |
+| *(Unclassified)* | 11 | 39.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management)
+  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-11T22:11:00.000Z
 
 ## Classified Pages
 
@@ -74,7 +79,6 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 | [Host and management ports in different VNets](https://learn.microsoft.com/en-us/azure/payment-hsm/create-different-vnet) | configuration | 0.65 | Describes creating host and management ports in different VNets using CLI/PowerShell; this typically involves specific parameter names, subnet/delegation requirements, and allowed settings unique to Payment HSM networking. |
 | [Host and management ports in different VNets (template)](https://learn.microsoft.com/en-us/azure/payment-hsm/create-different-vnet-template) | configuration | 0.65 | ARM template scenario for host and management ports in different VNets; implies detailed template parameters and constraints specific to Payment HSM networking configuration. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/payment-hsm/known-issues) | troubleshooting | 0.65 | Known-issues article; typically lists specific symptoms and configuration-related problems tied to deployment scenarios and solution design, with guidance to avoid or mitigate them. |
-| [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management) | architecture-patterns | 0.65 | Describes automated allocation/deallocation and operational model for bare-metal payShield devices in Azure; these are product-specific lifecycle and architecture details. |
 | [Using SSH](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager-ssh) | configuration | 0.65 | Describes creating a VM in the same VNet and configuring access to payShield manager; likely includes specific network and access configuration parameters unique to Payment HSM. |
 | [Reuse an existing virtual network](https://learn.microsoft.com/en-us/azure/payment-hsm/reuse-vnet) | configuration | 0.60 | Explains how to attach Payment HSM to an existing VNet by skipping certain steps; implies specific subnet/delegation requirements unique to the service. |
 
@@ -90,5 +94,6 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 | [PowerShell](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-powershell) | 0.40 | PowerShell quickstart; similar to CLI quickstart, focused on basic operations rather than deep configuration or troubleshooting. |
 | [2. View your payment HSMs](https://learn.microsoft.com/en-us/azure/payment-hsm/view-payment-hsms) | 0.30 | Viewing resources via CLI/PowerShell/portal is standard usage; unlikely to contain detailed configuration tables or product-specific troubleshooting. |
 | [Getting started with Azure Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/getting-started) | 0.20 | Getting started/onboarding article; likely step-by-step enablement without deep configuration tables or product-specific edge cases. |
+| [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management) | 0.20 | Lifecycle overview of Azure Payment HSM with high-level description of service characteristics and responsibilities; no specific limits, configuration parameters, error codes, or decision matrices are evident from the summary. |
 | [Payment HSM overview](https://learn.microsoft.com/en-us/azure/payment-hsm/overview) | 0.20 | High-level service overview and positioning; no detailed limits, configs, or patterns beyond generic description. |
 | [What's new](https://learn.microsoft.com/en-us/azure/payment-hsm/whats-new) | 0.10 | What's new/change log style content; typically announcements rather than detailed technical guidance. |
