@@ -44,6 +44,23 @@ stages:
         timeoutInMinutes: 240
 
         steps:
+          # 0. Check required variables
+          - task: Bash@3
+            displayName: 'Check required variables'
+            inputs:
+              targetType: inline
+              script: |
+                set -e
+                missing_vars=""
+                if [ -z "$(azureOpenAIDeployment)" ]; then
+                  echo "ERROR: azureOpenAIDeployment is not set or empty."
+                  missing_vars="1"
+                fi
+                if [ -z "$(azureOpenAIEndpoint)" ]; then
+                  echo "ERROR: azureOpenAIEndpoint is not set or empty."
+                  missing_vars="1"
+                fi
+
           # 1. Checkout GitHub repo (self - contains products/, skills/)
           - task: Checkout@1
             displayName: 'Checkout GitHub repo'
