@@ -3,7 +3,7 @@ name: azure-cosmos-db
 description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cosmos DB applications. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: errors (400–503, 401/403/404/409/429), timeouts, performance, connectivity, CMK/backup, and using metrics/logs for root-cause analysis. |
-| Best Practices | L91-L151 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
-| Decision Making | L152-L207 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
-| Architecture & Design Patterns | L208-L250 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
-| Limits & Quotas | L251-L291 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
-| Security | L292-L358 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
-| Configuration | L359-L486 | Configuring and managing Cosmos DB and related services: throughput, indexing, backup/restore, partitioning, search/vector, monitoring, networking, SDK settings, emulators, and IaC (Bicep/ARM/Terraform). |
-| Integrations & Coding Patterns | L487-L822 | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, migrations, and vector/RAG. |
-| Deployment | L823-L847 | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
+| Best Practices | L91-L150 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
+| Decision Making | L151-L206 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
+| Architecture & Design Patterns | L207-L249 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
+| Limits & Quotas | L250-L288 | Limits, quotas, and behaviors for Cosmos DB (all APIs): throughput, autoscale, burst, backup/PITR, partitions, indexing, free tier, fleets, serverless, and PostgreSQL cluster constraints. |
+| Security | L289-L354 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and threat protection. |
+| Configuration | L355-L481 | Configuring and managing Cosmos DB and related services: throughput, indexing, backup/restore, partitioning, search/vector, monitoring, networking, SDK settings, emulators, and IaC (Bicep/ARM/Terraform). |
+| Integrations & Coding Patterns | L482-L816 | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, migrations, and vector/RAG. |
+| Deployment | L817-L841 | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -110,7 +110,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply Cosmos DB best practices via Agent Kit | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit |
 | Apply Cosmos DB-aware GitHub Copilot practices in VS Code | https://learn.microsoft.com/en-us/azure/cosmos-db/github-copilot-visual-studio-code-best-practices |
 | Use hierarchical partition keys in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys |
-| FAQ for Cosmos DB hierarchical partition keys | https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-faq |
 | Redistribute Cosmos DB throughput across partitions | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-redistribute-throughput-across-partitions |
 | Use Cosmos DB indexing metrics to tune performance | https://learn.microsoft.com/en-us/azure/cosmos-db/index-metrics |
 | Handle large partition keys and avoid collisions in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/large-partition-keys |
@@ -260,11 +259,9 @@ This skill requires **network access** to fetch documentation content:
 | Understand limits and pricing for Cosmos DB continuous backup | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction |
 | FAQ on Cosmos DB throughput redistribution limits | https://learn.microsoft.com/en-us/azure/cosmos-db/distribute-throughput-across-partitions-faq |
 | FAQ on Azure Cosmos DB fleets, fleetspaces, and accounts | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-faq |
-| Manage throughput pools in Azure Cosmos DB fleets | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools |
 | Use Cosmos DB lifetime free tier limits effectively | https://learn.microsoft.com/en-us/azure/cosmos-db/free-tier |
 | Understand and use Cosmos DB global secondary indexes (preview) | https://learn.microsoft.com/en-us/azure/cosmos-db/global-secondary-indexes |
 | Runtime limits for Cosmos DB Gremlin engine | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/limits |
-| Alert on Cosmos DB logical partition 20 GB limit | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size |
 | Manage Cosmos DB accounts and understand control plane limits | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account |
 | Understand limits and behavior of Cosmos DB integrated cache | https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-cache-faq |
 | Request unit charges for key-value operations in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/key-value-store-cost |
@@ -344,7 +341,6 @@ This skill requires **network access** to fetch documentation content:
 | Use data plane RBAC roles in Cosmos DB Table | https://learn.microsoft.com/en-us/azure/cosmos-db/table/reference-data-plane-security |
 | Prepare Cosmos DB accounts for TLS 1.3 | https://learn.microsoft.com/en-us/azure/cosmos-db/tls-support |
 | Configure Azure DocumentDB firewall rules and access | https://learn.microsoft.com/en-us/azure/documentdb/how-to-configure-firewall |
-| Configure Entra ID RBAC for Azure DocumentDB access | https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control |
 | Configure customer-managed keys for Azure DocumentDB encryption | https://learn.microsoft.com/en-us/azure/documentdb/how-to-data-encryption |
 | Use Azure Private Link with Azure DocumentDB securely | https://learn.microsoft.com/en-us/azure/documentdb/how-to-private-link |
 | Enable and manage public access to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-public-access |
@@ -368,7 +364,6 @@ This skill requires **network access** to fetch documentation content:
 | Use tokens and token() function in Cosmos DB Cassandra API | https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/tokens |
 | Change the partition key of a Cosmos DB container | https://learn.microsoft.com/en-us/azure/cosmos-db/change-partition-key |
 | Configure and run Synapse Link on Cosmos DB accounts | https://learn.microsoft.com/en-us/azure/cosmos-db/configure-synapse-link |
-| Configure Cosmos DB container copy jobs for data migration | https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy |
 | Understand Cosmos DB resource model for point-in-time restore | https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-resource-model |
 | Configure Azure Monitor alerts for Cosmos DB resources | https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts |
 | Use keyboard shortcuts in Cosmos DB Data Explorer | https://learn.microsoft.com/en-us/azure/cosmos-db/data-explorer-shortcuts |
@@ -541,7 +536,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Cosmos DB containers using .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-container |
 | Create Cosmos DB databases programmatically with .NET | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-database |
 | Create and upsert Cosmos DB items with .NET | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-create-item |
-| Connect to Cosmos DB for NoSQL using .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started |
 | Query Cosmos DB items using .NET SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-query-items |
 | Read Cosmos DB items using .NET point reads | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-read-item |
 | Index and query vector data in Cosmos DB with .NET | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-vector-index-query |

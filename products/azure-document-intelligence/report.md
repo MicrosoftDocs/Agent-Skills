@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Document Intelligence: creating SAS tokens, configuring data-at-rest
     encryption, and using managed identities and VNets to lock down access to resources.'
@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 76
+- **Updated Pages**: 1
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -65,6 +65,11 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 | *(Unclassified)* | 41 | 53.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0)
+  - Updated: 2026-01-31T06:05:00.000Z → 2026-03-13T22:11:00.000Z
 
 ## Classified Pages
 
@@ -143,7 +148,6 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 | [Model overview](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/model-overview?view=doc-intel-4.0.0) | 0.30 | Model overview describing available models; primarily conceptual and catalog-style without detailed decision matrices or configs. |
 | [Query field extraction](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/query-fields?view=doc-intel-4.0.0) | 0.30 | Conceptual description of query field extraction and availability; summary doesn’t indicate numeric limits, config tables, or error mappings. |
 | [Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/retrieval-augmented-generation?view=doc-intel-4.0.0) | 0.30 | Introduction to RAG and semantic chunking with this model; summary suggests conceptual guidance without numeric thresholds, config tables, or error mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | 0.30 | What's-new/release-notes style; mostly dates and version names, not reusable expert configuration, limits, or troubleshooting content. |
 | [Document Intelligence Studio custom projects](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/studio-custom-project?view=doc-intel-4.0.0) | 0.20 | Quickstart for creating Studio custom projects; primarily step-by-step usage without detailed config matrices, limits, or error mappings. |
 | [Get started with Document Intelligence Studio](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/quickstarts/get-started-studio?view=doc-intel-4.0.0) | 0.20 | Intro quickstart for Studio; high-level getting-started flow rather than detailed configuration, limits, or troubleshooting content. |
 | [SDK targets: REST API 2022-08-31 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v3-0?view=doc-intel-3.0.0) | 0.20 | SDK overview for 2022-08-31 GA; mostly descriptive and linking to SDKs, not detailed expert configuration. |
@@ -151,3 +155,4 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 | [SDK targets: REST API v2.1 (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/sdk-overview-v2-1?view=doc-intel-2.1.0) | 0.20 | SDK overview for v2.1; similar to other SDK overview pages, not focused on limits, configuration matrices, or troubleshooting. |
 | [SDK targets: REST API v4.0 2024-11-30 latest (GA)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/versioning/sdk-overview-v4-0?view=doc-intel-4.0.0) | 0.20 | SDK overview for v4.0; likely high-level description and links, without detailed parameter tables or error mappings. |
 | [What is Azure Document Intelligence in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) | 0.20 | High-level service overview of Azure Document Intelligence in Foundry Tools without detailed limits, configs, or error mappings. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

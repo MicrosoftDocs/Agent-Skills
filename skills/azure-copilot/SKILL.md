@@ -1,14 +1,14 @@
 ---
 name: azure-copilot
-description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure Portal (use azure-portal), Azure AI Foundry Local (use azure-ai-foundry-local).
+description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Copilot Skill
 
-This skill provides expert guidance for Azure Copilot. Covers troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Copilot. Covers troubleshooting, decision making, architecture & design patterns, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,12 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L39 | Using Copilot to diagnose and resolve Azure App Service/Functions issues and analyze Azure VM disk performance problems, including slow I/O and bottlenecks. |
-| Decision Making | L40-L49 | Using Copilot to compare options and make cost‑efficient Azure decisions: VM sizing, workload templates, Marketplace offers, storage estate insights, and Load Balancer SKU selection. |
-| Architecture & Design Patterns | L50-L54 | Using Copilot to design, validate, and troubleshoot Azure network architectures, including connectivity, routing, security, and performance issues across VNets and hybrid setups. |
-| Security | L55-L63 | Security and access control for Azure Copilot: storage hardening, user/tenant access, agent access policies, attack surface insights, and responsible AI/data use. |
-| Configuration | L64-L68 | How to set up and configure Azure Cosmos DB as the storage backend for Azure Copilot conversations, including connection settings and data persistence options. |
-| Integrations & Coding Patterns | L69-L76 | Using Azure Copilot to generate and refine infra-as-code and automation: APIM policies, Azure CLI/PowerShell scripts, Kubernetes YAML for AKS, and Terraform/Bicep templates. |
+| Troubleshooting | L33-L38 | Using Copilot to diagnose and resolve Azure App Service/Functions issues and analyze Azure VM disk performance problems, including slow I/O and bottlenecks. |
+| Decision Making | L39-L48 | Using Copilot to compare options and make cost‑efficient Azure decisions: VM sizing, workload templates, Marketplace offers, storage estate insights, and Load Balancer SKU selection. |
+| Architecture & Design Patterns | L49-L53 | Using Copilot to design, validate, and troubleshoot Azure network architectures, including connectivity, routing, security, and performance issues across VNets and hybrid setups. |
+| Security | L54-L62 | Security and access control for Azure Copilot: storage hardening, user/tenant access, agent access policies, attack surface insights, and responsible AI/data use. |
+| Integrations & Coding Patterns | L63-L70 | Using Azure Copilot to generate and refine infra-as-code and automation: APIM policies, Azure CLI/PowerShell scripts, Kubernetes YAML for AKS, and Terraform/Bicep templates. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -60,11 +59,6 @@ This skill requires **network access** to fetch documentation content:
 | Control tenant access to Azure Copilot agents preview | https://learn.microsoft.com/en-us/azure/copilot/manage-agents-preview |
 | Query Defender EASM attack surface insights with Azure Copilot | https://learn.microsoft.com/en-us/azure/copilot/query-attack-surface |
 | Understand responsible AI and data use in Azure Copilot | https://learn.microsoft.com/en-us/azure/copilot/responsible-ai-faq |
-
-### Configuration
-| Topic | URL |
-|-------|-----|
-| Configure Cosmos DB storage for Azure Copilot conversations | https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

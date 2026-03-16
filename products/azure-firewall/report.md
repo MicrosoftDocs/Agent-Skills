@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on choosing the right Azure Firewall SKU, comparing features
     and performance, planning capacity, and executing SKU changes, including Basic
@@ -15,13 +15,13 @@ category_descriptions:
   best-practices: Guidance on tuning Azure Firewall rules and SKUs for performance,
     plus security best practices for policies, rule design, logging, and threat protection
     configuration.
-  troubleshooting: Known Azure Firewall bugs/limits and how to diagnose traffic issues
-    using packet capture to analyze flows, rule matches, and connectivity problems.
   architecture-patterns: 'Architectural patterns and topologies for Azure Firewall:
     hub-and-spoke routing, forced tunneling, SLB integration, hybrid connectivity,
     DNAT with overlapping IPs, DDoS protection, and traffic separation.'
   integrations: Configuring Azure Firewall to securely access Azure Storage via SFTP,
     including required rules, network paths, and integration patterns for SFTP traffic.
+  troubleshooting: Known Azure Firewall bugs/limits and how to diagnose traffic issues
+    using packet capture to analyze flows, rule matches, and connectivity problems.
   deployment: How to deploy Azure Firewall (including Premium) and IP Groups using
     ARM templates, Bicep, or Terraform, with example templates and infrastructure-as-code
     guidance.
@@ -40,13 +40,13 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 - **Total Pages**: 84
 - **Fetched**: 84
 - **Fetch Failed**: 0
-- **Classified**: 61
-- **Unclassified**: 23
+- **Classified**: 60
+- **Unclassified**: 24
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 2
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -62,10 +62,17 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 | integrations | 1 | 1.2% |
 | limits-quotas | 4 | 4.8% |
 | security | 15 | 17.9% |
-| troubleshooting | 2 | 2.4% |
-| *(Unclassified)* | 23 | 27.4% |
+| troubleshooting | 1 | 1.2% |
+| *(Unclassified)* | 24 | 28.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Known issues and limitations](https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues)
+  - Updated: 2025-11-27T12:09:00.000Z → 2026-03-11T11:05:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
+  - Updated: 2025-07-09T11:11:00Z → 2026-03-06T12:21:00Z
 
 ## Classified Pages
 
@@ -97,7 +104,6 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 | [FTP support](https://learn.microsoft.com/en-us/azure/firewall/ftp-support) | configuration | 0.70 | Describes default FTP mode behavior (passive enabled, active disabled) and how to enable Active FTP via PowerShell/CLI/ARM; includes product-specific configuration behavior. |
 | [Filter inbound traffic with DNAT - classic](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-dnat) | security | 0.70 | DNAT configuration for inbound traffic includes Firewall-specific rule settings and security considerations (e.g., specific source filters) that are product-specific security patterns. |
 | [Implementation guide](https://learn.microsoft.com/en-us/azure/firewall/premium-features) | configuration | 0.70 | Implementation guide for TLS inspection, IDPS, URL filtering, and web categories; likely includes product-specific configuration steps and parameters for these features. |
-| [Known issues and limitations](https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues) | troubleshooting | 0.70 | A 'known issues and limitations' article for a specific service typically lists concrete symptoms, constraints, and workarounds (for example, certain features not working in specific scenarios, scale or rule limits, or behaviors that cause failures). These are used directly for diagnosis and resolution and are updated over time, which qualifies as troubleshooting-focused expert knowledge even if some limits are also referenced elsewhere. |
 | [Logs and metrics](https://learn.microsoft.com/en-us/azure/firewall/monitor-firewall) | configuration | 0.70 | Describes how to use logs and activity logs with Azure Monitor for Firewall, including product-specific log categories and monitoring configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/dns-details) | configuration | 0.70 | Provides implementation details of DNS Proxy for Azure Firewall, which are product-specific configuration and behavior details not covered by generic DNS knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/ip-groups) | configuration | 0.70 | Explains IP Group resource behavior, allowed contents, reuse across rules and firewalls; product-specific configuration construct. |
@@ -149,7 +155,6 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 | [With Azure CLI](https://learn.microsoft.com/en-us/azure/firewall/deploy-cli) | 0.40 | CLI deployment how-to; similar to PowerShell article, focused on basic deployment steps rather than exhaustive configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/premium-portal) | 0.35 | Portal overview of Premium; summary points to high-level features, not detailed configuration parameters or limits. |
 | [Deploy with Availability Zones](https://learn.microsoft.com/en-us/azure/firewall/deploy-availability-zone-powershell) | 0.30 | Availability Zones deployment via PowerShell; likely procedural without detailed limits, config parameter tables, or error mappings. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | 0.30 | FAQ-style content; summary does not indicate presence of specific error codes, limits, or configuration tables. |
 | [Microsoft Copilot for Security](https://learn.microsoft.com/en-us/azure/firewall/firewall-copilot) | 0.30 | High-level overview of Security Copilot integration; summary is conceptual and marketing-like without detailed config parameters or error mappings. |
 | [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview) | 0.30 | Lists preview features and legal preview terms; no detailed limits, configuration parameters, or troubleshooting mappings. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/firewall/deploy-template) | 0.20 | ARM template quickstart; focuses on sample deployment, not on expert configuration or limits. |
@@ -160,3 +165,5 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/deploy-terraform) | 0.20 | Terraform quickstart for AZ zones; tutorial-style deployment without detailed product-specific constraints. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-terraform) | 0.20 | Terraform quickstart; primarily step-by-step deployment with no expert-only limits, quotas, or config tables. |
 | [What is Azure Firewall?](https://learn.microsoft.com/en-us/azure/firewall/overview) | 0.20 | High-level product overview of Azure Firewall SKUs and capabilities without detailed limits, configuration parameters, or error mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Known issues and limitations](https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

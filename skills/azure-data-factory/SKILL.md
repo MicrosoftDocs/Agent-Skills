@@ -3,7 +3,7 @@ name: azure-data-factory
 description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Data Factory applications. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L148-L153 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
 | Security | L154-L181 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
 | Configuration | L182-L317 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
-| Integrations & Coding Patterns | L318-L501 | Patterns and examples for integrating ADF with many data sources, connectors, and compute engines, plus mapping data flow functions, templates, and running external/SSIS/ML/Spark jobs. |
-| Deployment | L502-L518 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
+| Integrations & Coding Patterns | L318-L500 | Patterns and examples for integrating ADF with many data sources, connectors, and compute engines, plus mapping data flow functions, templates, and running external/SSIS/ML/Spark jobs. |
+| Deployment | L501-L517 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
 
 ### Troubleshooting
 | Topic | URL |
@@ -326,7 +326,6 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure Data Factory with AWS Marketplace Web Service | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service |
 | Copy data from Amazon RDS for Oracle using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
 | Copy data from Amazon RDS for SQL Server with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server |
-| Copy data from Amazon Redshift using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
 | Copy data from S3-compatible storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage |
 | Copy and transform data in Amazon S3 with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service |
 | Transform AppFigures data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-appfigures |

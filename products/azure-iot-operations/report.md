@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Configuring Azure IoT Operations data flows, endpoints, schemas,
     WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring,
@@ -12,12 +12,12 @@ category_descriptions:
   deployment: 'Deploying and managing Azure IoT Operations on Kubernetes: cluster
     prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly
     deployment, and supported versions.'
-  security: 'Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate
-    management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images
-    and secure configs.'
   integrations: 'Patterns and how-tos for integrating external systems with Azure
     IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX
     modules, and the state store protocol.'
+  security: 'Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate
+    management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images
+    and secure configs.'
   architecture-patterns: Akri-based device discovery architecture and patterns for
     deploying Azure IoT Operations in layered/segmented industrial networks (DMZ,
     OT/IT zones, network topologies).
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 - **Total Pages**: 99
 - **Fetched**: 99
 - **Fetch Failed**: 0
-- **Classified**: 77
-- **Unclassified**: 22
+- **Classified**: 75
+- **Unclassified**: 24
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 98
+- **Updated Pages**: 5
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -60,18 +60,26 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 | configuration | 33 | 33.3% |
 | decision-making | 1 | 1.0% |
 | deployment | 8 | 8.1% |
-| integrations | 15 | 15.2% |
+| integrations | 14 | 14.1% |
 | limits-quotas | 1 | 1.0% |
-| security | 13 | 13.1% |
+| security | 12 | 12.1% |
 | troubleshooting | 2 | 2.0% |
-| *(Unclassified)* | 22 | 22.2% |
+| *(Unclassified)* | 24 | 24.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [What are data flows?](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow)
-  - Updated: 2025-05-21T08:00:00.000Z → 2026-03-03T23:37:00.000Z
+- [Developer guide](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-iot-operations-development)
+  - Updated: 2026-01-23T18:22:00.000Z → 2026-03-09T17:11:00.000Z
+- [Start developing with the SDKs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/quickstart-get-started-sdks)
+  - Updated: 2025-07-31T17:19:00.000Z → 2026-03-09T17:11:00.000Z
+- [Enable secure settings](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-enable-secure-settings)
+  - Updated: 2025-07-31T17:19:00.000Z → 2026-03-04T12:31:00.000Z
+- [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets)
+  - Updated: 2026-02-24T23:11:00.000Z → 2026-03-10T16:12:00.000Z
+- [Connect to SSE endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector)
+  - Updated: 2025-12-11T18:27:00.000Z → 2026-03-10T16:12:00.000Z
 
 ## Classified Pages
 
@@ -116,7 +124,6 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 | [Configure OPC UA assets and devices](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-configure-opc-ua) | integrations | 0.70 | Shows how to configure OPC UA connections via UI/CLI, mapping OPC UA data points to assets/devices, which is a concrete integration configuration. |
 | [Connect to HTTP/REST endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-http-connector) | integrations | 0.70 | Explains configuring assets/devices for HTTP REST endpoints, including how the connector accesses data, which is product-specific integration configuration. |
 | [Connect to ONVIF-compliant cameras](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-onvif-connector) | integrations | 0.70 | Shows how to discover and configure ONVIF camera assets/devices, a concrete integration scenario. |
-| [Connect to SSE endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector) | integrations | 0.70 | Describes configuring assets/devices for SSE endpoints, a specific integration pattern with configuration details. |
 | [Connect to media sources](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-media-connector) | integrations | 0.70 | Describes configuring assets/devices for media sources via the media connector, a product-specific integration pattern. |
 | [Create a data flow](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/howto-create-dataflow) | configuration | 0.70 | Creating data flows implies defining CRD YAML with specific fields and allowed values; this is product-specific configuration knowledge. |
 | [Data persistence in the state store](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store) | configuration | 0.70 | Explains how to persist data using the state store, including operations (get/set/delete), versioning, and lock primitives; likely includes API/SDK details specific to this service. |
@@ -125,7 +132,6 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 | [Deploy to a test cluster](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-test-operations) | deployment | 0.70 | Describes how to deploy to a test Arc-enabled cluster with product-specific deployment behavior and constraints. |
 | [Detect OPC UA assets](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-detect-opc-ua-assets) | integrations | 0.70 | Describes automatic discovery and mapping of OPC UA assets into Device Registry using Akri and the OPC UA connector, a product-specific integration workflow. |
 | [Diagnostic settings](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-broker-diagnostics) | configuration | 0.70 | Covers logs, metrics, self-check, tracing; expected to include specific diagnostic setting names, categories, and configuration fields for this broker. |
-| [Enable secure settings](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-enable-secure-settings) | security | 0.70 | Covers enabling secrets management and managed identities for secure cloud connections, which are product-specific security configurations. |
 | [Highly available edge apps](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-edge-apps) | best-practices | 0.70 | Discusses HA applications with MQTT broker, including session types, QoS, retention, shared subscriptions; likely includes product-specific recommendations and gotchas for zero message loss. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/known-issues) | troubleshooting | 0.70 | Known issues list for MQTT broker, OPC UA connector, etc., with workarounds; this is product-specific symptom → workaround guidance. |
 | [MQTT support](https://learn.microsoft.com/en-us/azure/iot-operations/reference/mqtt-support) | limits-quotas | 0.70 | Feature support matrix for MQTT broker; while framed as feature support, it effectively documents which MQTT controls are supported/unsupported—specific capability limits unique to this implementation. |
@@ -161,18 +167,15 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 |-----------|------------|--------|
 | [Test connection](https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-test-connection) | 0.45 | Connectivity testing with common MQTT tools is primarily procedural tutorial content; unlikely to contain structured config tables or product-specific limits beyond generic steps. |
 | [Tips and tools](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/tips-tools) | 0.45 | Describes using generic tools (kubectl, k9s, MQTT explorer, mosquitto); likely high-level usage guidance rather than detailed product-specific error mappings or config tables. |
-| [Start developing with the SDKs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/quickstart-get-started-sdks) | 0.40 | Quickstart for setting up dev environment; primarily step-by-step setup, not structured configuration reference or limits. |
 | [Develop custom connectors](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-akri-connectors) | 0.38 | Conceptual overview of Akri connectors; describes what they are and core concepts, not detailed config or limits. |
 | [Bi-directional messaging with Event Grid](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/tutorial-mqtt-bridge) | 0.35 | Bi-directional MQTT bridge tutorial; while it may contain some config, description indicates a scenario walkthrough rather than structured config/limits/error reference. |
 | [Send data to Data Lake Storage](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/tutorial-opc-ua-to-data-lake) | 0.35 | Tutorial for sending OPC UA data to Data Lake; focused on steps and example schema, not broad configuration or decision matrices. |
-| [Developer guide](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-iot-operations-development) | 0.32 | Developer guide overview of tools and SDKs; mostly conceptual and navigational without detailed config or limits. |
 | [Configure your instance](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-configure) | 0.30 | Quickstart for configuring a sample pipeline; mostly procedural, not a catalog of configuration options or expert constraints. |
 | [Deploy Dapr](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-dapr) | 0.30 | Tutorial-style deployment of Dapr pluggable components; description suggests step-by-step usage rather than detailed configuration tables or limits. |
 | [Develop Dapr apps](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-develop-dapr-apps) | 0.30 | How-to for developing Dapr apps with MQTT broker; appears as general tutorial code rather than configuration/limits/error reference. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/iot-operations/troubleshoot/iot-operations-faq) | 0.30 | FAQ page; description does not indicate detailed error codes, config matrices, or limits—likely conceptual Q&A. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/manage-layered-network/overview-layered-network) | 0.30 | High-level networking overview; no indication of detailed config tables, limits, or specific security roles. |
 | [Run Azure IoT Operations in Codespaces](https://learn.microsoft.com/en-us/azure/iot-operations/get-started-end-to-end-sample/quickstart-deploy) | 0.30 | Quickstart tutorial for deploying to Codespaces; likely step-by-step without detailed config matrices or limits. |
-| [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets) | 0.30 | Conceptual overview of asset and device management options; lacks detailed config tables or limits. |
 | [Add OPC UA assets to your cluster](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-add-assets) | 0.20 | Tutorial for adding assets; likely UI/step instructions rather than deep configuration matrices or limits. |
 | [Build an event-driven app with Dapr](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/tutorial-event-driven-with-dapr) | 0.20 | End-to-end Dapr event-driven app walkthrough; primarily a scenario tutorial without reference-style expert details. |
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/overview-deploy) | 0.20 | Deployment overview describing components and options conceptually; lacks detailed matrices or constraints. |
@@ -181,3 +184,8 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 | [Upload sensor data to the cloud](https://learn.microsoft.com/en-us/azure/iot-operations/end-to-end-tutorials/tutorial-upload-messages-to-cloud) | 0.20 | Tutorial for sending messages to cloud via data flow; appears procedural, not a reference of configs, limits, or troubleshooting mappings. |
 | [What are data flows?](https://learn.microsoft.com/en-us/azure/iot-operations/connect-to-cloud/overview-dataflow) | 0.20 | Page is an overview of Azure IoT Operations data flows and high-level configuration concepts using Kubernetes CRDs, without detailed parameter tables, numeric limits, error codes, or product-specific decision matrices. It reads as conceptual guidance rather than expert configuration, troubleshooting, or limits documentation. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot-operations/overview-iot-operations) | 0.10 | High-level product overview of Azure IoT Operations features and use cases without concrete limits, configs, or error details. |
+| [Connect to SSE endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Developer guide](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-iot-operations-development) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Enable secure settings](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-enable-secure-settings) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Start developing with the SDKs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/quickstart-get-started-sdks) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

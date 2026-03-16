@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: Guidance on improving Immersive Reader performance by caching authentication
     tokens, including token reuse patterns and reducing auth overhead.
@@ -26,13 +26,13 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 - **Total Pages**: 18
 - **Fetched**: 18
 - **Fetch Failed**: 0
-- **Classified**: 15
-- **Unclassified**: 3
+- **Classified**: 14
+- **Unclassified**: 4
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 18
+- **Updated Pages**: 1
+- **Unchanged**: 17
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-immersive-reader/azure-immersive-reader.csv`
 
@@ -42,12 +42,17 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 |------|-------|------------|
 | best-practices | 1 | 5.6% |
 | configuration | 3 | 16.7% |
-| integrations | 7 | 38.9% |
+| integrations | 6 | 33.3% |
 | limits-quotas | 1 | 5.6% |
 | security | 3 | 16.7% |
-| *(Unclassified)* | 3 | 16.7% |
+| *(Unclassified)* | 4 | 22.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader)
+  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-04T23:12:00.000Z
 
 ## Classified Pages
 
@@ -67,7 +72,6 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 | [Prepare HTML content](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-prepare-html) | integrations | 0.70 | Explains required HTML structure and content retrieval for Immersive Reader; contains product-specific content formatting and coding patterns beyond generic HTML knowledge. |
 | [Set the cookie policy](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to/set-cookie-policy) | security | 0.70 | Describes cookie policy options via Immersive Reader options and EU compliance considerations; includes specific setting names and security/privacy configuration behavior. |
 | [Customize the launch button](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-customize-launch-button) | integrations | 0.65 | Demonstrates customizing the launch button using SDK options or specific attributes; involves product-specific integration patterns and parameters. |
-| [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader) | integrations | 0.65 | Shows how to launch Immersive Reader via JavaScript, Python, Android, and iOS; likely includes SDK/API calls and parameters specific to this product integration pattern. |
 
 ## Unclassified Pages
 
@@ -76,3 +80,4 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 | [Release notes](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/release-notes) | 0.30 | Release notes mainly describe version changes and new features; not focused on configuration matrices, limits, or troubleshooting mappings as defined by the sub-skill types. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/quickstarts/client-libraries) | 0.20 | Quickstart tutorial for building an app; primarily step-by-step usage, not structured configuration references, limits, or troubleshooting content. |
 | [What is Immersive Reader?](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/overview) | 0.10 | High-level product overview describing Immersive Reader capabilities and article types; no detailed limits, configuration parameters, error codes, or decision matrices. |
+| [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

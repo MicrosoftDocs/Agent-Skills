@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Chaos Studio: identities, roles, permissions, CMK encryption,
     network/IP controls, Private Link, VNet injection, AKS auth, and safely controlling
@@ -27,13 +27,13 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 - **Total Pages**: 51
 - **Fetched**: 51
 - **Fetch Failed**: 0
-- **Classified**: 31
-- **Unclassified**: 20
+- **Classified**: 30
+- **Unclassified**: 21
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 51
+- **Updated Pages**: 1
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -42,13 +42,18 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | Type | Count | Percentage |
 |------|-------|------------|
 | configuration | 9 | 17.6% |
-| integrations | 3 | 5.9% |
+| integrations | 2 | 3.9% |
 | limits-quotas | 4 | 7.8% |
 | security | 11 | 21.6% |
 | troubleshooting | 4 | 7.8% |
-| *(Unclassified)* | 20 | 39.2% |
+| *(Unclassified)* | 21 | 41.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api)
+  - Updated: 2024-10-14T08:00:00.000Z → 2026-03-11T22:15:00.000Z
 
 ## Classified Pages
 
@@ -67,7 +72,6 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | [Targets and capabilities](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets) | configuration | 0.85 | ARM template samples expose specific resource types, properties, and parameter structures for Chaos Studio targets/capabilities—detailed configuration reference. |
 | [Accessing container image details](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details) | security | 0.80 | Provides exact container image details from MCR used as a bastion for private networking; used in security reviews and allowlisting—product-specific security artifact. |
 | [Authorize Chaos Studio IP addresses for an AKS cluster](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges) | security | 0.80 | Explains how to allow Chaos Studio IP addresses to reach AKS, likely including specific IP ranges and network rule configuration—product-specific security/networking. |
-| [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api) | integrations | 0.80 | Provides concrete REST samples for experiments, targets, and capabilities, including request bodies and parameters unique to Chaos Studio’s API surface. |
 | [Azure policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets) | configuration | 0.80 | Contains Azure Policy definitions that create Chaos Studio targets/capabilities, including policy rule structure and resource details specific to Chaos Studio. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep) | configuration | 0.80 | Bicep sample defines Chaos Studio resources and parameters; includes specific property names and structures unique to the service. |
 | [Configure an experiment using customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys) | security | 0.80 | Covers CMK setup with user-assigned managed identities and Azure Blob Storage; this typically includes specific role assignments, key vault/identity configuration details, and access scope requirements. |
@@ -110,3 +114,4 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | [Run and manage experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-run-experiment) | 0.25 | How-to for starting/stopping experiments and viewing history; operational walkthrough without expert-only configuration or error mappings. |
 | [Schedule an experiment](https://learn.microsoft.com/en-us/azure/chaos-studio/tutorial-schedule) | 0.25 | Tutorial using Logic Apps to schedule experiments; primarily procedural without deep product-specific configuration tables. |
 | [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview) | 0.20 | High-level service overview of Azure Chaos Studio and chaos engineering concepts without product-specific limits, configs, or error mappings. |
+| [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

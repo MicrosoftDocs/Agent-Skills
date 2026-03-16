@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Using Azure CLI, PowerShell, or portal to create/manage DNS zones
     and records, and to delegate subdomains or import/export DNS zone files for automation
@@ -40,8 +40,8 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 75
+- **Updated Pages**: 2
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -59,6 +59,13 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | *(Unclassified)* | 47 | 62.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
+  - Updated: 2023-11-30T08:00:00.000Z → 2026-03-04T06:13:00.000Z
+- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
+  - Updated: 2024-09-19T08:00:00.000Z → 2026-03-04T06:13:00.000Z
 
 ## Classified Pages
 
@@ -112,8 +119,6 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | [Resolve Azure and on-premises domains](https://learn.microsoft.com/en-us/azure/dns/private-resolver-hybrid-dns) | 0.40 | Hybrid DNS resolution tutorial; focuses on setup steps rather than detailed configuration matrices or error mappings. |
 | [Virtual network links](https://learn.microsoft.com/en-us/azure/dns/private-dns-virtual-network-links) | 0.40 | Conceptual explanation of virtual network link subresources; summary does not indicate numeric limits or detailed configuration tables. |
 | [What is DNS security policy?](https://learn.microsoft.com/en-us/azure/dns/dns-security-policy) | 0.40 | Overview of DNS security policy; references features but defers detailed configuration to other how-to guides. |
-| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | 0.35 | Tutorial for alias record with Traffic Manager; focused on one scenario, not broad configuration or decision matrices. |
-| [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | 0.35 | Tutorial for alias records to public IP; procedural steps, no detailed parameter tables or limits. |
 | [Create alias records for zone records](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-rr) | 0.35 | Tutorial for alias records referencing other records; scenario-focused, not a comprehensive configuration reference. |
 | [Create custom DNS records for a web app](https://learn.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain) | 0.35 | Tutorial for custom DNS records for web apps; mostly step-by-step, without detailed product-specific config matrices. |
 | [Create a private resolver - ARM Template](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-template) | 0.30 | ARM template quickstart for DNS Private Resolver; deployment example without detailed settings tables. |
@@ -144,3 +149,5 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | [What is Azure DNS Private Resolver?](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) | 0.20 | Overview of DNS Private Resolver; high-level description without numeric thresholds or detailed configuration tables. |
 | [What is Azure Private DNS?](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) | 0.20 | Overview of Azure Private DNS; conceptual description without detailed settings or limits. |
 | [What is Azure Public DNS?](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview) | 0.20 | Conceptual overview of Azure Public DNS; no specific limits, configs, or troubleshooting mappings. |
+| [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

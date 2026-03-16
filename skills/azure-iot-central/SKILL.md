@@ -3,7 +3,7 @@ name: azure-iot-central
 description: Expert knowledge for Azure IoT Central development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Central applications. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT (use azure-iot), Azure Digital Twins (use azure-digital-twins).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Central Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L48-L52 | Guidance for planning and executing migration of devices and workloads from Azure IoT Central to Azure IoT Hub, including architecture, data, and operational considerations. |
 | Architecture & Design Patterns | L53-L59 | Solution-level IoT Central architecture, using IoT Edge as a gateway, and designing data transformation flows from devices to downstream apps and storage. |
 | Limits & Quotas | L60-L65 | IoT Central limits (devices, throughput, API calls), quotas, and supported client environments, including browser support and network/connectivity requirements. |
-| Security | L66-L82 | Securing IoT Central apps, devices, and APIs: device auth (SAS/X.509), private endpoints/VNet export, orgs/roles, multi-tenant access, and admin lifecycle/security policies. |
-| Configuration | L83-L105 | Configuring IoT Central apps: device templates, connectivity, rules, branding, data export (Blob, ADX, Event Hubs, Service Bus, webhooks), and managing via portal, CLI, and REST APIs |
-| Integrations & Coding Patterns | L106-L120 | Using IoT Central programmatically: REST APIs, CLI, device properties/commands, rules integration (Power Automate/Logic Apps), IoT Edge gateway, data export, and Power BI insights. |
-| Deployment | L121-L128 | Guides for deploying and integrating IoT Central solutions: device bridge setup, CI/CD with Azure Pipelines, and managing IoT Edge deployments and jobs via UI and REST APIs. |
+| Security | L66-L81 | Securing IoT Central apps, devices, and APIs: device auth (SAS/X.509), private endpoints/VNet export, orgs/roles, multi-tenant access, and admin lifecycle/security policies. |
+| Configuration | L82-L104 | Configuring IoT Central apps: device templates, connectivity, rules, branding, data export (Blob, ADX, Event Hubs, Service Bus, webhooks), and managing via portal, CLI, and REST APIs |
+| Integrations & Coding Patterns | L105-L119 | Using IoT Central programmatically: REST APIs, CLI, device properties/commands, rules integration (Power Automate/Logic Apps), IoT Edge gateway, data export, and Power BI insights. |
+| Deployment | L120-L127 | Guides for deploying and integrating IoT Central solutions: device bridge setup, CI/CD with Azure Pipelines, and managing IoT Edge deployments and jobs via UI and REST APIs. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -78,7 +78,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage IoT Central users and roles via REST API | https://learn.microsoft.com/en-us/azure/iot-central/core/howto-manage-users-roles-with-rest-api |
 | Administer IoT Central applications and lifecycle policies | https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-admin |
 | Secure IoT Central apps, devices, and API access | https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-security |
-| Configure device authentication for IoT Central clients | https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device |
 
 ### Configuration
 | Topic | URL |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
     RBAC), keys/certs, encryption, private endpoints/network perimeters, Key Vault
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 - **Total Pages**: 114
 - **Fetched**: 114
 - **Fetch Failed**: 0
-- **Classified**: 84
-- **Unclassified**: 30
+- **Classified**: 82
+- **Unclassified**: 32
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 2
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -58,15 +58,22 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | architecture-patterns | 2 | 1.8% |
 | best-practices | 10 | 8.8% |
 | configuration | 35 | 30.7% |
-| decision-making | 9 | 7.9% |
+| decision-making | 8 | 7.0% |
 | deployment | 2 | 1.8% |
 | integrations | 7 | 6.1% |
 | limits-quotas | 1 | 0.9% |
-| security | 15 | 13.2% |
+| security | 14 | 12.3% |
 | troubleshooting | 3 | 2.6% |
-| *(Unclassified)* | 30 | 26.3% |
+| *(Unclassified)* | 32 | 28.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
+  - Updated: 2025-07-01T08:00:00.000Z → 2026-03-12T05:52:00.000Z
+- [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk)
+  - Updated: 2025-03-27T17:09:00.000Z → 2026-03-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,8 +113,6 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Create a CI/CD pipeline for Batch](https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd) | deployment | 0.70 | Provides product-specific CI/CD patterns using Azure Pipelines and ARM templates to deploy Batch-based HPC environments. |
 | [Create a pool with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/batch/batch-sig-images) | configuration | 0.70 | Explains how to configure Batch pools to use Compute Gallery images with product-specific image reference settings. |
 | [Create a pool with a managed image resource](https://learn.microsoft.com/en-us/azure/batch/batch-custom-images) | decision-making | 0.70 | Covers managed image vs Compute Gallery usage, API version constraints, and retirement timelines, guiding migration and image selection decisions. |
-| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Provides Batch-specific disk encryption configuration using platform-managed keys and diskEncryptionConfiguration settings. |
-| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | decision-making | 0.70 | Explains when to choose ephemeral OS disks vs managed disks for Batch, including benefits, VM series support, and trade-offs. |
 | [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files) | configuration | 0.70 | Explains Batch-specific resource file configuration from various sources and how they are placed on VMs for different task types. |
 | [Job preparation and completion tasks](https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release) | configuration | 0.70 | Describes Batch-specific job-level prep and release task configuration to manage data movement and cleanup on nodes. |
 | [MPI](https://learn.microsoft.com/en-us/azure/batch/batch-mpi) | best-practices | 0.70 | Describes how to configure multi-instance tasks for MPI applications using Batch .NET, including Batch-specific task settings and coordination patterns. |
@@ -191,3 +196,5 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Parallel file processing - .NET](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-dotnet) | 0.20 | Tutorial for parallel workload with .NET; scenario walkthrough without formal best-practices, limits, or troubleshooting tables. |
 | [Parallel file processing - Python](https://learn.microsoft.com/en-us/azure/batch/tutorial-parallel-python) | 0.20 | Tutorial for parallel workload with Python; similar to .NET tutorial, focused on example rather than reference-style expert details. |
 | [What is Azure Batch?](https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview) | 0.20 | High-level technical overview of Azure Batch; primarily conceptual workflow and capabilities without detailed limits, configs, or error mappings. |
+| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

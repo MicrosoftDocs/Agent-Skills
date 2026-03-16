@@ -3,7 +3,7 @@ name: azure-synapse-analytics
 description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Synapse Analytics applications. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L142-L162 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table design, ELT/PolyBase loading, and workload management. |
 | Limits & Quotas | L163-L173 | Synapse SQL pool limits: maintenance windows, memory/concurrency by performance level, capacity caps, temp table behavior, serverless Delta Lake v1 querying, and Synapse Link feature limits/issues. |
 | Security | L174-L232 | Securing Synapse workspaces end-to-end: auth and RBAC, network isolation, private endpoints, encryption, data exfiltration, policies, and secure access to storage, SQL, Spark, and migration scenarios. |
-| Configuration | L233-L283 | Configuring Synapse workspaces, Spark pools, and SQL pools: integrations (Purview, AML), libraries, autoscale, monitoring/metrics, backups/restore, workload management, and pipeline activities. |
-| Integrations & Coding Patterns | L284-L320 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |
-| Deployment | L321-L333 | Deploying and managing Synapse workspaces and dedicated SQL pools with ARM/Bicep, CI/CD, source control, restore points, and automated SQL compute operations. |
+| Configuration | L233-L282 | Configuring Synapse workspaces, Spark pools, and SQL pools: integrations (Purview, AML), libraries, autoscale, monitoring/metrics, backups/restore, workload management, and pipeline activities. |
+| Integrations & Coding Patterns | L283-L319 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |
+| Deployment | L320-L332 | Deploying and managing Synapse workspaces and dedicated SQL pools with ARM/Bicep, CI/CD, source control, restore points, and automated SQL compute operations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -242,7 +242,6 @@ This skill requires **network access** to fetch documentation content:
 | Reference monitoring metrics and logs for Synapse Analytics | https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics-reference |
 | Monitor Apache Spark applications in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-spark-applications |
 | Runtime components for Synapse Spark 3.3 | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime |
-| Runtime components for Synapse Spark 3.4 | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime |
 | Runtime components for Synapse Spark 3.5 | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-35-runtime |
 | Configure autoscale for Apache Spark pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-autoscale |
 | Manage Apache Spark configuration in Synapse Studio | https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-azure-create-spark-configuration |

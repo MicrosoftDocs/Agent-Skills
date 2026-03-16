@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Automation accounts: identities (system/user-assigned), Entra
     auth, RBAC, encryption, private endpoints, policies, and safe use of credentials/certs
@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Automation development including t
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -64,6 +64,11 @@ skill_description: Expert knowledge for Azure Automation development including t
 | *(Unclassified)* | 23 | 20.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new)
+  - Updated: 2025-08-12T08:00:00.000Z → 2026-03-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -188,4 +193,4 @@ skill_description: Expert knowledge for Azure Automation development including t
 | [What are the various Automation services in Azure?](https://learn.microsoft.com/en-us/azure/automation/automation-services) | 0.20 | Conceptual comparison of automation services; no detailed decision matrices, limits, or config tables evident from summary. |
 | [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview) | 0.20 | High-level overview of Azure Automation capabilities without concrete limits, configs, or error mappings. |
 | [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.10 | Archive of release notes; historical change log, not stable expert guidance. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | 0.10 | Release notes overview; likely version/news content rather than reusable expert patterns or configs. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

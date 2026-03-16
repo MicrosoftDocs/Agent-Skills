@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on sizing and configuring Elastic SAN (performance, capacity,
     architecture) and deciding how to integrate it with AKS workloads and storage
@@ -35,14 +35,14 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 
 ## Summary
 
-- **Total Pages**: 23
-- **Fetched**: 23
+- **Total Pages**: 24
+- **Fetched**: 24
 - **Fetch Failed**: 0
 - **Classified**: 21
-- **Unclassified**: 2
+- **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 23
 - **Deleted Pages**: 0
@@ -52,17 +52,21 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 4.3% |
-| best-practices | 2 | 8.7% |
-| configuration | 3 | 13.0% |
-| decision-making | 2 | 8.7% |
-| integrations | 4 | 17.4% |
-| limits-quotas | 2 | 8.7% |
-| security | 6 | 26.1% |
-| troubleshooting | 1 | 4.3% |
-| *(Unclassified)* | 2 | 8.7% |
+| architecture-patterns | 1 | 4.2% |
+| best-practices | 2 | 8.3% |
+| configuration | 3 | 12.5% |
+| decision-making | 2 | 8.3% |
+| integrations | 4 | 16.7% |
+| limits-quotas | 2 | 8.3% |
+| security | 6 | 25.0% |
+| troubleshooting | 1 | 4.2% |
+| *(Unclassified)* | 3 | 12.5% |
 
 ## Changes
+
+### New Pages
+
+- [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions)
 
 ## Classified Pages
 
@@ -96,3 +100,4 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 |-----------|------------|--------|
 | [Deploy an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create) | 0.40 | Step-by-step deployment/creation tutorial via portal/PowerShell/CLI without indication of tier matrices or deployment constraints; mostly procedural, not expert limits/config guidance. |
 | [What is Azure Elastic SAN?](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-introduction) | 0.20 | High-level introduction/overview of Azure Elastic SAN without detailed limits, configs, or error mappings. |
+| [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

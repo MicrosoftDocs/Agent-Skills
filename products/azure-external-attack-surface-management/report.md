@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Filtering and querying EASM inventory by asset type (domains, hosts,
     IPs/blocks, ASNs, pages, contacts, SSL certs) and configuring policy engine automation
@@ -28,8 +28,8 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 22
+- **Updated Pages**: 1
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
@@ -43,6 +43,11 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
 | *(Unclassified)* | 10 | 45.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview)
+  - Updated: 2024-12-10T18:02:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 
@@ -74,4 +79,4 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
 | [What is Discovery?](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/what-is-discovery) | 0.30 | Explains what discovery is and how it works conceptually; lacks numeric limits, config parameters, or decision matrices. |
 | [Discovering your attack surface](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/discovering-your-attack-surface) | 0.25 | Describes preconfigured attack surfaces conceptually; no evidence of numeric limits, configuration parameters, or troubleshooting mappings. |
 | [Understanding dashboards](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/understanding-dashboards) | 0.25 | Dashboard overview and purpose; no indication of numeric thresholds, decision matrices, or product-specific troubleshooting. |
-| [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview) | 0.20 | High-level product overview of Defender EASM without concrete limits, configs, or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

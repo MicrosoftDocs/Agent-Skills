@@ -1,14 +1,14 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Security applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including troubleshooting, best practices, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Security applications.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
 
-This skill provides expert guidance for Azure Security. Covers troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Security. Covers troubleshooting, best practices, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,14 +24,12 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
-| Best Practices | L41-L59 | Security hardening checklists and patterns for Azure IaaS/PaaS: identity, network, data encryption, secrets, DNS, and app/database/service configurations to reduce attack surface. |
-| Decision Making | L60-L64 | Guidance on choosing between Azure Key Vault, Managed HSM, Cloud HSM, and Payment HSM based on security, compliance, key management, and workload requirements. |
-| Limits & Quotas | L65-L69 | Which Azure services support customer-managed encryption keys, and how to determine CMK capabilities and options across different Azure resources |
-| Security | L70-L99 | Security best practices for Azure workloads: threat modeling mitigations, AKS image validation, ransomware defense, incident response, data protection, certificates, and operational/SQL security features |
-| Configuration | L100-L108 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
-| Integrations & Coding Patterns | L109-L113 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
-| Deployment | L114-L120 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
+| Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
+| Best Practices | L39-L57 | Security hardening checklists and patterns for Azure IaaS/PaaS: identity, network, data encryption, secrets, DNS, and app/database/service configurations to reduce attack surface. |
+| Security | L58-L87 | Security best practices for Azure workloads: threat modeling mitigations, AKS image validation, ransomware defense, incident response, data protection, certificates, and operational/SQL security features |
+| Configuration | L88-L95 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
+| Integrations & Coding Patterns | L96-L100 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
+| Deployment | L101-L107 | Guides for signing and verifying container images with Notation in Azure Pipelines/GitHub Actions, plus comparing security feature availability in Azure vs Azure Government. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -56,16 +54,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply security best practices to Azure Service Fabric | https://learn.microsoft.com/en-us/azure/security/fundamentals/service-fabric-best-practices |
 | Implement five-step checklist to secure Entra ID | https://learn.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity |
 | Prevent Azure subdomain takeover with DNS and App Service | https://learn.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover |
-
-### Decision Making
-| Topic | URL |
-|-------|-----|
-| Choose between Azure Key Vault, Managed HSM, Cloud HSM, Payment HSM | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
-
-### Limits & Quotas
-| Topic | URL |
-|-------|-----|
-| Identify Azure services supporting customer-managed keys | https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support |
 
 ### Security
 | Topic | URL |
@@ -101,7 +89,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure Dependabot and Copacetic for container security | https://learn.microsoft.com/en-us/azure/security/container-secure-supply-chain/articles/container-secure-supply-chain-implementation/cssc-depenadabot-quickstart |
-| Configure Microsoft Antimalware in Azure with PowerShell | https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples |
 | Configure firewalls using Azure domain patterns | https://learn.microsoft.com/en-us/azure/security/fundamentals/azure-domains |
 | Configure and analyze Azure security logging and auditing | https://learn.microsoft.com/en-us/azure/security/fundamentals/log-audit |
 | Adapt to upcoming Azure managed TLS and DCV changes | https://learn.microsoft.com/en-us/azure/security/fundamentals/managed-tls-changes |

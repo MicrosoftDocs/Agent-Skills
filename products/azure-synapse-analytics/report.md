@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   deployment: Deploying and managing Synapse workspaces and dedicated SQL pools with
     ARM/Bicep, CI/CD, source control, restore points, and automated SQL compute operations.
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 - **Total Pages**: 446
 - **Fetched**: 446
 - **Fetch Failed**: 0
-- **Classified**: 262
-- **Unclassified**: 184
+- **Classified**: 261
+- **Unclassified**: 185
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 446
+- **Updated Pages**: 3
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -57,16 +57,25 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 |------|-------|------------|
 | architecture-patterns | 17 | 3.8% |
 | best-practices | 55 | 12.3% |
-| configuration | 47 | 10.5% |
+| configuration | 46 | 10.3% |
 | decision-making | 16 | 3.6% |
 | deployment | 10 | 2.2% |
 | integrations | 33 | 7.4% |
 | limits-quotas | 7 | 1.6% |
 | security | 55 | 12.3% |
 | troubleshooting | 22 | 4.9% |
-| *(Unclassified)* | 184 | 41.3% |
+| *(Unclassified)* | 185 | 41.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark)
+  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
+- [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark)
+  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
+- [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
+  - Updated: 2025-12-05T18:30:00.000Z → 2026-03-09T23:18:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +112,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Troubleshoot workspaces created by SDK](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/workspaces-created-by-sdk) | troubleshooting | 0.82 | Focused on a specific failure scenario (SDK-created workspaces can't launch Studio) with steps to diagnose and fix. |
 | [Apache Spark for Azure Synapse external tables](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables) | integrations | 0.80 | Describes automatic metadata synchronization, external table creation, and partition handling between Spark and serverless SQL. |
 | [Azure Synapse Apache Spark 3.3 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime) | configuration | 0.80 | Provides detailed component versions and deprecation status for the 3.3 runtime; configuration and lifecycle specifics. |
-| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | configuration | 0.80 | Lists exact component versions and support status for the 3.4 runtime; product-specific configuration and lifecycle info. |
 | [Azure Synapse Apache Spark 3.5 runtime (GA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-35-runtime) | configuration | 0.80 | Details runtime components and versions (Spark 3.5, Python 3.10, Delta 3.2, etc.); this is a configuration/version matrix unique to the product. |
 | [Cheat sheet](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/cheat-sheet) | best-practices | 0.80 | Cheat sheet of tips and best practices for dedicated SQL pool; expected to include concrete configuration and coding recommendations specific to Synapse. |
 | [Collect Apache Spark Application Logs and Metrics to Azure Event Hubs Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principalp-emit-log-event-hubs) | security | 0.80 | Focuses on certificate-based service principal auth for Event Hubs and Key Vault; expected to list specific Azure AD app settings, certificate handling, and RBAC roles. |
@@ -357,7 +365,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Anomaly detection wizard](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-cognitive-services-anomaly) | 0.45 | Anomaly detection tutorial; similar to 26, focused on usage of a Foundry Tool, not deep Synapse configuration. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-azure-cli) | 0.45 | Quickstart for creating a SQL pool via CLI; mostly step-by-step commands without broad configuration tables or expert patterns. |
 | [Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-data-lake-store) | 0.45 | COPY tutorial from ADLS; mostly step-by-step loading without explicit config tables or limits in the summary. |
-| [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark) | 0.45 | Computer vision tutorial; again focused on ML service usage rather than Synapse-specific configuration tables. |
 | [Connect to Azure Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db) | 0.45 | How-to connect Cosmos DB to Synapse Link; largely a connection walkthrough without strong signals of detailed config tables or error mappings. |
 | [Connect to Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-connect-synapse-link-cosmos-db) | 0.45 | Quickstart for connecting Cosmos DB to Synapse Link; primarily step-by-step connection guide without emphasis on configuration matrices or error mappings. |
 | [Contoso public data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-blob-storage-with-polybase) | 0.45 | PolyBase loading tutorial; likely standard T-SQL and portal steps without detailed limits or decision matrices. |
@@ -365,7 +372,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Create an empty lake database](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/create-empty-lake-database) | 0.45 | How-to create an empty lake database; likely basic UI steps without extensive configuration tables or expert-only details. |
 | [Create and use views](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-views) | 0.45 | Creating views over serverless SQL; standard SQL concept applied to Synapse, without clear expert-only configuration or limits. |
 | [Create lake database from database templates](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/create-lake-database-from-lake-database-templates) | 0.45 | How-to create a lake database from templates; primarily procedural, not a deep configuration or troubleshooting reference. |
-| [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark) | 0.45 | Document Intelligence tutorial; similar pattern of using an external AI service, not deep Synapse configuration. |
 | [Load WideWorldImporters](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/load-data-wideworldimportersdw) | 0.45 | Another PolyBase loading tutorial; primarily walkthrough content rather than expert configuration or troubleshooting. |
 | [Monitor your workload - portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-monitor-workload-portal) | 0.45 | Monitoring via Azure portal and Log Analytics; likely UI and query examples, but no clear evidence of error-code mappings or quantified limits. |
 | [New York taxi cab data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/load-data-from-azure-blob-storage-using-copy) | 0.45 | Tutorial loading sample data via COPY; appears procedural, not focused on expert-only configuration matrices or troubleshooting. |
@@ -523,3 +529,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [What is Azure Synapse?](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) | 0.10 | General overview of Azure Synapse Analytics; marketing/positioning content without concrete technical parameters. |
 | [What is machine learning in Azure Synapse?](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/what-is-machine-learning) | 0.10 | High-level overview of machine learning capabilities; conceptual content without product-specific numeric or configuration detail. |
 | [Videos](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-videos) | 0.05 | Video playlist/marketing-style page that links to various videos and high-level content. It doesn’t itself contain detailed limits, configuration parameters, troubleshooting mappings, or other expert reference material. |
+| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

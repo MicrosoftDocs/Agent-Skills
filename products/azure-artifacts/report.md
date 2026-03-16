@@ -1,9 +1,6 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  limits-quotas: Storage quotas, free allocation, and size/count limits for Azure
-    Artifacts packages, plus how to monitor usage and publish Universal Packages within
-    those limits.
   integrations: How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet,
     Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages,
     and use upstream sources.
@@ -18,6 +15,9 @@ category_descriptions:
     artifacts.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
+  limits-quotas: Storage quotas, free allocation, and size/count limits for Azure
+    Artifacts packages, plus how to monitor usage and publish Universal Packages within
+    those limits.
 skill_description: Expert knowledge for Azure Artifacts development including best
   practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
@@ -31,13 +31,13 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 - **Total Pages**: 72
 - **Fetched**: 72
 - **Fetch Failed**: 0
-- **Classified**: 63
-- **Unclassified**: 9
+- **Classified**: 60
+- **Unclassified**: 12
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **Updated Pages**: 3
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -49,19 +49,26 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | configuration | 8 | 11.1% |
 | decision-making | 3 | 4.2% |
 | deployment | 1 | 1.4% |
-| integrations | 41 | 56.9% |
-| limits-quotas | 4 | 5.6% |
+| integrations | 40 | 55.6% |
+| limits-quotas | 2 | 2.8% |
 | security | 3 | 4.2% |
-| *(Unclassified)* | 9 | 12.5% |
+| *(Unclassified)* | 12 | 16.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops)
+  - Updated: 2024-06-07T20:33:00.000Z → 2026-03-13T21:04:00.000Z
+- [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops)
+  - Updated: 2026-02-06T23:56:00.000Z → 2026-03-06T22:05:00.000Z
+- [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops)
+  - Updated: 2025-12-19T16:56:00.000Z → 2026-03-13T21:04:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | limits-quotas | 0.98 | Dedicated limits reference; will list specific size/count limits per package type and possibly client-imposed constraints. |
-| [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | limits-quotas | 0.90 | Describes consumption-based billing, free tier size (2 GiB), and behavior when exceeding that limit, which are concrete quota details. |
 | [Manage permissions](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops) | security | 0.80 | Permissions-focused article; likely lists specific roles (e.g., Feed Administrator, Collaborator), scopes, and how they control access, which are product-specific security details. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops) | configuration | 0.80 | Focuses on npmrc configuration with feed URLs and auth tokens; includes parameter names and values unique to Azure Artifacts. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/project-setup-universal-packages?view=azure-devops) | integrations | 0.80 | Universal Packages setup with Azure CLI; includes max size (4 TiB) and CLI parameters specific to Azure Artifacts. |
@@ -110,7 +117,6 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | [Restore npm packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/restore-npm-packages?view=azure-devops) | integrations | 0.65 | npm restore integration; uses Azure Artifacts registry URLs and auth configuration in .npmrc. |
 | [Safeguard against malicious public packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-behavior?view=azure-devops) | security | 0.65 | Focuses on controlling access to public registries and protecting from malicious packages; likely includes feed-level security options and permission settings specific to Azure Artifacts. |
 | [Share PowerShell modules with Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops) | integrations | 0.65 | Shows how to register an Azure Artifacts feed as a PowerShell repository; includes Register-PSRepository parameters and feed URLs specific to Azure. |
-| [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | integrations | 0.65 | Explains adding Universal Packages upstream sources including other feeds; involves product-specific feed identifiers and CLI parameters. |
 | [Use packages from PowerShell Gallery](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/powershell-upstream-source?view=azure-devops) | integrations | 0.65 | Shows how to configure PowerShell Gallery as upstream; includes repository registration commands and Azure feed URLs. |
 | [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | configuration | 0.65 | Covers enabling and adding upstream sources on public feeds; likely documents specific feed options and constraints unique to public feeds. |
 | [npm](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops) | integrations | 0.65 | Shows npmrc configuration, registry URLs, and scopes for Azure Artifacts; these are concrete integration settings. |
@@ -137,3 +143,6 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | [Package notifications](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/follow-package-notifications?view=azure-devops) | 0.15 | Explains notification behavior; summary shows no numeric limits, config tables, or error mappings. |
 | [What are feeds?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops) | 0.15 | Conceptual explanation of feeds and types; no evidence of limits, config matrices, or troubleshooting. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops) | 0.10 | Key concepts/overview page; no indication of numeric limits, config parameters, or troubleshooting content. |
+| [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

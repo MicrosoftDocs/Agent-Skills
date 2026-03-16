@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: 'Patterns and setup for wiring Grafana to Azure services: Agent Framework
     and AI Foundry monitoring, Prometheus (AKS/AMW), Azure Monitor alerts, and Azure
@@ -29,33 +29,44 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 
 ## Summary
 
-- **Total Pages**: 42
-- **Fetched**: 42
+- **Total Pages**: 43
+- **Fetched**: 43
 - **Fetch Failed**: 0
-- **Classified**: 34
-- **Unclassified**: 8
+- **Classified**: 32
+- **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 3
 - **Updated Pages**: 0
-- **Unchanged**: 42
-- **Deleted Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 5 | 11.9% |
-| decision-making | 4 | 9.5% |
-| deployment | 2 | 4.8% |
-| integrations | 9 | 21.4% |
-| limits-quotas | 2 | 4.8% |
-| security | 10 | 23.8% |
-| troubleshooting | 2 | 4.8% |
-| *(Unclassified)* | 8 | 19.0% |
+| configuration | 5 | 11.6% |
+| decision-making | 3 | 7.0% |
+| deployment | 1 | 2.3% |
+| integrations | 9 | 20.9% |
+| limits-quotas | 2 | 4.7% |
+| security | 10 | 23.3% |
+| troubleshooting | 2 | 4.7% |
+| *(Unclassified)* | 11 | 25.6% |
 
 ## Changes
+
+### New Pages
+
+- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
+- [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry)
+- [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12)
+
+### Deleted Pages
+
+- ~~Service reliability~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/high-availability)
+- ~~Upgrade to Grafana 11~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-11)
 
 ## Classified Pages
 
@@ -73,7 +84,6 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings) | configuration | 0.80 | How-to for Grafana settings like 'Viewers can Edit' and 'External Enabled'; likely includes specific setting names and allowed values. |
 | [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.80 | Explains supported Grafana roles and how to assign them to users, groups, service principals, and managed identities; product-specific access model. |
 | [Migrate from Essential service tier](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier) | decision-making | 0.80 | Describes retirement timeline for Essential tier and two migration paths with guidance; tier-selection and migration decision content. |
-| [Service reliability](https://learn.microsoft.com/en-us/azure/managed-grafana/high-availability) | deployment | 0.80 | Describes VM-based hosting, redundancy, availability zones, and DR options for Standard plan; includes plan-specific reliability behavior. |
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.80 | Describes mapping Microsoft Entra groups to Grafana Teams and interaction with Azure RBAC roles; product-specific permission configuration. |
 | [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity) | integrations | 0.75 | Covers supported data sources per plan and how to add/configure/remove them; includes plan-specific support matrix and data source configuration details. |
@@ -89,7 +99,6 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins) | configuration | 0.70 | Explains how to add/remove plugins via Azure portal rather than Grafana UI/CLI; product-specific configuration path and constraints. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |
-| [Upgrade to Grafana 11](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-11) | decision-making | 0.70 | Contains specific retirement and auto-upgrade dates and guidance on handling breaking changes; product-specific upgrade decision and timing details. |
 | [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts) | integrations | 0.70 | Explains how Azure Monitor and Grafana alerts interact, including plan-specific availability (Essential lacks Grafana alerts) and shared compute/query throttling limits. |
 | [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts) | security | 0.70 | Explains enabling service accounts and creating tokens for API access; product-specific identity and access configuration. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace) | configuration | 0.65 | Details diagnostic settings and event log categories for the service; product-specific logging configuration. |
@@ -108,3 +117,6 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.10 | Quickstart for creating a workspace via CLI; procedural tutorial, not configuration reference or limits. |
 | [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.10 | Quickstart for creating a workspace via portal; step-by-step tutorial without detailed limits, configs, or troubleshooting matrices. |
 | [Support](https://learn.microsoft.com/en-us/azure/managed-grafana/find-help-open-support-ticket) | 0.10 | This page describes how to find help and open a support ticket, which is process/navigation content. It doesn't contain product-specific limits, configuration parameters, error-code mappings, or decision matrices, so it doesn't qualify as expert knowledge for any sub-skill type. |
+| [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

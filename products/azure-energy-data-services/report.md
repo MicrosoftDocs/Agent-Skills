@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
@@ -32,14 +32,14 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 
 ## Summary
 
-- **Total Pages**: 51
-- **Fetched**: 51
+- **Total Pages**: 52
+- **Fetched**: 52
 - **Fetch Failed**: 0
 - **Classified**: 34
-- **Unclassified**: 17
+- **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 51
 - **Deleted Pages**: 0
@@ -49,16 +49,20 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 2.0% |
-| configuration | 4 | 7.8% |
-| decision-making | 2 | 3.9% |
-| deployment | 2 | 3.9% |
-| integrations | 14 | 27.5% |
-| security | 10 | 19.6% |
-| troubleshooting | 1 | 2.0% |
-| *(Unclassified)* | 17 | 33.3% |
+| architecture-patterns | 1 | 1.9% |
+| configuration | 4 | 7.7% |
+| decision-making | 2 | 3.8% |
+| deployment | 2 | 3.8% |
+| integrations | 14 | 26.9% |
+| security | 10 | 19.2% |
+| troubleshooting | 1 | 1.9% |
+| *(Unclassified)* | 18 | 34.6% |
 
 ## Changes
+
+### New Pages
+
+- [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier)
 
 ## Classified Pages
 
@@ -120,3 +124,4 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 | [About Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-ddms) | 0.20 | Conceptual overview of domain data management services; no specific parameters, limits, or troubleshooting mappings. |
 | [About Microsoft Azure Data Manager for Energy](https://learn.microsoft.com/en-us/azure/energy-data-services/overview-microsoft-energy-data-services) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
 | [Partners](https://learn.microsoft.com/en-us/azure/energy-data-services/resources-partner-solutions) | 0.10 | Partner solutions listing is marketing/ecosystem content, not technical configuration, limits, or troubleshooting guidance. |
+| [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Patterns and code samples for integrating apps, tools, and data pipelines
     with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark,
@@ -40,16 +40,16 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 
 ## Summary
 
-- **Total Pages**: 977
-- **Fetched**: 977
+- **Total Pages**: 979
+- **Fetched**: 979
 - **Fetch Failed**: 0
-- **Classified**: 776
-- **Unclassified**: 201
+- **Classified**: 770
+- **Unclassified**: 209
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 977
+- **New Pages**: 2
+- **Updated Pages**: 6
+- **Unchanged**: 971
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -58,17 +58,37 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 39 | 4.0% |
-| best-practices | 57 | 5.8% |
-| configuration | 124 | 12.7% |
+| best-practices | 56 | 5.7% |
+| configuration | 123 | 12.6% |
 | decision-making | 52 | 5.3% |
-| deployment | 22 | 2.3% |
-| integrations | 332 | 34.0% |
-| limits-quotas | 37 | 3.8% |
-| security | 63 | 6.4% |
+| deployment | 22 | 2.2% |
+| integrations | 331 | 33.8% |
+| limits-quotas | 35 | 3.6% |
+| security | 62 | 6.3% |
 | troubleshooting | 50 | 5.1% |
-| *(Unclassified)* | 201 | 20.6% |
+| *(Unclassified)* | 209 | 21.3% |
 
 ## Changes
+
+### New Pages
+
+- [Query a vector store with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet)
+- [Create AI agent with vector search in TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs)
+
+### Updated Pages
+
+- [Move data between containers](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy)
+  - Updated: 2025-06-23T08:00:00.000Z → 2026-03-12T06:17:00.000Z
+- [Hierarchical partition keys FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-faq)
+  - Updated: 2025-12-19T18:19:00Z → 2026-03-12T06:17:00Z
+- [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started)
+  - Updated: 2026-02-09T08:00:00.000Z → 2026-03-05T18:37:00.000Z
+- [Create alert on logical partition key size](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size)
+  - Updated: 2025-12-15T18:19:00.000Z → 2026-03-12T06:17:00.000Z
+- [Fleet pools](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools)
+  - Updated: 2026-02-12T06:05:00.000Z → 2026-03-11T08:00:00.000Z
+- [Use role-based access control](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control)
+  - Updated: 2026-02-04T08:00:00.000Z → 2026-03-11T08:00:00.000Z
 
 ## Classified Pages
 
@@ -85,7 +105,6 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/error-codes-solutions) | troubleshooting | 0.95 | Explicitly a troubleshooting article; likely maps specific MongoDB/Cosmos error codes and messages to causes and resolutions, which is expert troubleshooting knowledge. |
 | [Troubleshoot request rate too large](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-request-rate-too-large) | troubleshooting | 0.95 | Dedicated to error code 429 with RU/s context; provides symptom→cause→solution mappings specific to Cosmos DB throughput and rate limiting. |
 | [Best practices for scaling provisioned throughput](https://learn.microsoft.com/en-us/azure/cosmos-db/scaling-provisioned-throughput-best-practices) | best-practices | 0.90 | Explicit best-practices article with product-specific scaling strategies, likely including recommended RU/s change patterns, limits, and edge cases for manual and autoscale. |
-| [Create alert on logical partition key size](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size) | limits-quotas | 0.90 | Explicitly states the 20 GB maximum logical partition key size and shows how to create alerts when approaching this limit, combining a hard quota with monitoring configuration. |
 | [Data plane actions](https://learn.microsoft.com/en-us/azure/cosmos-db/reference-data-plane-security) | security | 0.90 | Explicit reference of data actions and built-in roles; contains detailed role names, permissions, and constraints, which are core security configuration knowledge. |
 | [Data plane built-in roles](https://learn.microsoft.com/en-us/azure/cosmos-db/reference-data-plane-security) | security | 0.90 | Duplicate of index 26; same detailed RBAC data actions and built-in roles, which are expert security configuration details. |
 | [Free tier](https://learn.microsoft.com/en-us/azure/cosmos-db/free-tier) | limits-quotas | 0.90 | Explicitly states numeric limits (first 1000 RU/s and 25 GB free, serverless exclusion); these are precise quotas and plan-specific constraints. |
@@ -109,7 +128,6 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [Troubleshoot service unavailable](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-java-sdk-service-unavailable) | troubleshooting | 0.90 | Targets service-unavailable connectivity issues in Java v4 SDK with product-specific guidance; symptom→cause→solution. |
 | [Troubleshoot service unavailable](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-service-unavailable) | troubleshooting | 0.90 | Explains inability to connect to Cosmos DB, with guidance on retries and network conditions; symptom→cause→solution troubleshooting. |
 | [Troubleshoot unauthorized](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-unauthorized) | troubleshooting | 0.90 | Maps 401 unauthorized errors to causes like MAC signature mismatch and key issues, with concrete resolution steps; product-specific troubleshooting. |
-| [Use role-based access control](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control) | security | 0.90 | Covers Microsoft Entra ID–based RBAC; expected to list specific roles, scopes, and connection/auth parameters unique to DocumentDB. |
 | [Windows command-line arguments](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-windows-arguments) | configuration | 0.90 | Command-line and PowerShell reference includes specific command names, arguments, and configuration options (e.g., /Port, /Key, /EnableMongoDbEndpoint), which are explicit configuration parameters. |
 | [Cost-effective reads and writes](https://learn.microsoft.com/en-us/azure/cosmos-db/key-value-store-cost) | limits-quotas | 0.88 | This page explicitly describes RU charges for simple reads/writes; such docs contain specific RU numbers per operation and item size, which are numeric limits/quotas that LLMs won’t reliably know. |
 | [Best practices for JavaScript SDK](https://learn.microsoft.com/en-us/azure/cosmos-db/best-practices-javascript) | best-practices | 0.86 | Explicitly a best practices guide for the JavaScript SDK; such pages usually contain concrete recommendations (e.g., enabling bulk mode, tuning connection options, handling throttling) and SDK-specific patterns that qualify as product-specific best practices. |
@@ -479,11 +497,9 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [Enable fleet analytics](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-enable-fleet-analytics) | configuration | 0.70 | Enablement guide will specify workspace settings, connection parameters, and configuration steps to turn on analytics, matching configuration. |
 | [Find request unit charge](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/find-request-unit-charge) | configuration | 0.70 | Shows how to access RU charge metadata via drivers/portal, including specific response fields and driver options unique to Cosmos DB. |
 | [Find request unit charge](https://learn.microsoft.com/en-us/azure/cosmos-db/table/find-request-unit-charge) | configuration | 0.70 | Shows how to access request charge metadata via portal and SDKs; includes property names/headers and possibly configuration flags unique to Cosmos DB RU metering. |
-| [Fleet pools](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools) | limits-quotas | 0.70 | Pools article describes RU/s sharing behavior and likely includes constraints (min/max RU/s, allocation rules) and throughput management details, which are effectively limits/quotas for pooled resources. |
 | [Fleets overview](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet) | architecture-patterns | 0.70 | Fleets overview explains a multitenant architecture pattern (fleet, fleetspace, accounts) with trade-offs between cost, performance, and isolation, which is a product-specific architecture pattern. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/faq) | limits-quotas | 0.70 | FAQ explicitly mentions throughput limits, supported regions, and configuration details; such pages typically list concrete numeric limits and region matrices. |
 | [Full-text search](https://learn.microsoft.com/en-us/azure/documentdb/full-text-search) | configuration | 0.70 | Full-text search article describes specialized text index options, configuration parameters, and query syntax specific to DocumentDB’s integrated search engine. |
-| [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started) | integrations | 0.70 | Get-started SDK article typically includes connection string formats, client options, and SDK-specific configuration parameters unique to Cosmos DB. |
 | [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-get-started) | integrations | 0.70 | Includes npm package usage, client initialization, and configuration options unique to the Cosmos DB JavaScript SDK. |
 | [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started) | integrations | 0.70 | Includes PyPI package usage, client configuration, and connection patterns specific to the Cosmos DB Python SDK. |
 | [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-dotnet-get-started) | integrations | 0.70 | A get-started SDK article for a specific API usually includes endpoint formats, connection string keys, and SDK-specific configuration parameters unique to Cosmos DB Table. |
@@ -531,7 +547,6 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [Monitor request unit usage](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-request-unit-usage) | troubleshooting | 0.70 | Describes the Total Request Units metric, default aggregation interval (one minute), and how to analyze high-RU operations, which are concrete diagnostic details. |
 | [Monitor server-side latency](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-server-side-latency) | troubleshooting | 0.70 | Explains specific metrics (direct vs gateway server-side latency) and when to use each based on connection mode, which is product-specific diagnostic guidance. |
 | [Monitor with diagnostic logs](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-resource-logs) | configuration | 0.70 | Explains how to enable and route data plane resource logs via diagnostic settings, including categories and destinations, which are product-specific configuration parameters. |
-| [Move data between containers](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) | configuration | 0.70 | Describes creating/managing container copy jobs via CLI; likely includes job configuration parameters, options, and constraints specific to Cosmos DB. |
 | [Multi-tenant apps](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-model-multi-tenant) | architecture-patterns | 0.70 | Multi-tenant modeling techniques for this service are architecture patterns (per-tenant vs shared tables, distribution choices) specific to Cosmos DB for PostgreSQL. |
 | [Multiple Azure Cosmos DB Triggers](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-multiple-cosmos-db-triggers) | configuration | 0.70 | Shows how to configure multiple triggers to work in parallel; includes binding configuration patterns and settings unique to Cosmos DB triggers. |
 | [Node DNS names](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-node-domain-name) | configuration | 0.70 | Describes exact DNS patterns and connection string formats for coordinator and worker nodes in this service, which are product-specific configuration details. |
@@ -816,7 +831,6 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [FAQ](https://learn.microsoft.com/en-us/azure/documentdb/faq) | troubleshooting | 0.60 | FAQ pages for a database service typically include concrete answers about behavior, error conditions, and configuration nuances (for example, specific compatibility notes or operational constraints) that function as troubleshooting/diagnostic knowledge beyond generic concepts. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-faq) | limits-quotas | 0.60 | Fleet FAQ is likely to include concrete constraints (supported regions, max accounts per fleet, supported features) and behavioral limits, which are expert limit/behavior knowledge. |
 | [Go](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/quickstart-go) | integrations | 0.60 | Go quickstart similarly provides product-specific connection parameters and driver settings for Cosmos DB’s Cassandra API. |
-| [Hierarchical partition keys FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-faq) | best-practices | 0.60 | FAQ will cover edge cases, limits, and behavior specific to hierarchical partition keys, providing product-specific guidance and gotchas. |
 | [How to - Reverse extract, transform, & load (ETL)](https://learn.microsoft.com/en-us/azure/cosmos-db/reverse-extract-transform-load) | architecture-patterns | 0.60 | Describes reverse ETL from data lakes/warehouses back into operational systems, including Cosmos DB, which is an architecture pattern for data movement and real-time analytics integration. |
 | [JSON syntax templates](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/templates-samples) | deployment | 0.60 | Resource Manager templates article includes schema, parameter names, and allowed values for deploying Cosmos DB Cassandra accounts and resources. |
 | [Java](https://learn.microsoft.com/en-us/azure/cosmos-db/cassandra/quickstart-java) | integrations | 0.60 | Java quickstart will contain driver configuration, endpoint, and SSL/auth details specific to Cosmos DB’s Cassandra API. |
@@ -1056,3 +1070,11 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | [Whitepapers](https://learn.microsoft.com/en-us/azure/cosmos-db/whitepapers) | 0.10 | This is a navigation list of whitepapers, not the whitepapers themselves; it does not contain detailed technical content or parameters. |
 | [Change log](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/) | 0.05 | Documentation landing page; primarily navigation and high-level description. |
 | [Choose your model](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/) | 0.05 | Landing/documentation index page; navigation/overview content, not detailed technical reference. |
+| [Create AI agent with vector search in TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Create alert on logical partition key size](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Fleet pools](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Hierarchical partition keys FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-faq) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Move data between containers](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Query a vector store with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Use role-based access control](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

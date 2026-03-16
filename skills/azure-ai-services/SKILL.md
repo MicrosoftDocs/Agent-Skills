@@ -3,7 +3,7 @@ name: azure-ai-services
 description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications. Not for Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure AI Custom Vision (use azure-custom-vision).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI services Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Diagnosing and fixing common Content Understanding issues, including model errors, data ingestion problems, configuration mistakes, and troubleshooting steps for failed analyses. |
 | Best Practices | L41-L46 | Best practices for Azure AI Content Understanding: designing extraction workflows, tuning models, improving document parsing accuracy, and handling complex or low‑quality documents. |
-| Decision Making | L47-L56 | Guidance on choosing pricing tiers, comparing Content Understanding vs Document Intelligence vs LLMs, selecting standard vs pro modes, Foundry vs Studio, migration steps, and cost estimation. |
-| Limits & Quotas | L57-L64 | Rate limits, quotas, and list-size limits for Foundry autoscale and Content Moderator (image/term lists), plus service quotas for Content Understanding. |
-| Security | L65-L80 | Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance, and secure analyzer access. |
-| Configuration | L81-L99 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
-| Integrations & Coding Patterns | L100-L110 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
-| Deployment | L111-L118 | How to package and run Foundry tools/containers on Azure (ACI, Docker Compose, disconnected), and deploy Foundry resources using Azure AI containers and ARM templates |
+| Decision Making | L47-L55 | Guidance on choosing pricing tiers, comparing Content Understanding vs Document Intelligence vs LLMs, selecting standard vs pro modes, Foundry vs Studio, migration steps, and cost estimation. |
+| Limits & Quotas | L56-L62 | Rate limits, quotas, and list-size limits for Foundry autoscale and Content Moderator (image/term lists), plus service quotas for Content Understanding. |
+| Security | L63-L78 | Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance, and secure analyzer access. |
+| Configuration | L79-L97 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
+| Integrations & Coding Patterns | L98-L107 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
+| Deployment | L108-L115 | How to package and run Foundry tools/containers on Azure (ACI, Docker Compose, disconnected), and deploy Foundry resources using Azure AI containers and ARM templates |
 
 ### Troubleshooting
 | Topic | URL |
@@ -50,7 +50,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose and use Foundry commitment tier pricing | https://learn.microsoft.com/en-us/azure/ai-services/commitment-tier |
 | Choose between Content Understanding, Document Intelligence, and LLMs | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool |
 | Choose between standard and pro modes in Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/standard-pro-modes |
-| Compare Content Understanding in Foundry vs Studio | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio |
 | Migrate Content Understanding analyzers from preview to GA | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga |
 | Estimate and plan costs for Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/pricing-explainer |
 
@@ -60,7 +59,6 @@ This skill requires **network access** to fetch documentation content:
 | Use autoscale to increase Foundry rate limits | https://learn.microsoft.com/en-us/azure/ai-services/autoscale |
 | Use Content Moderator image lists within quota limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/image-lists-quickstart-dotnet |
 | Understand Content Moderator image and term list limits | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet |
-| Service quotas and limits for Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits |
 
 ### Security
 | Topic | URL |
@@ -105,7 +103,6 @@ This skill requires **network access** to fetch documentation content:
 | Use custom term lists with Content Moderator .NET SDK | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/term-lists-quickstart-dotnet |
 | Use Content Moderator text moderation APIs | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/text-moderation-api |
 | Integrate Content Moderator video scanning in .NET | https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/video-moderation-api |
-| Call Content Understanding REST APIs for multimodal data | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api |
 | Create custom Content Understanding analyzers via REST | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer |
 
 ### Deployment

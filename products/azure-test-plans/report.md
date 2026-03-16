@@ -1,19 +1,14 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   limits-quotas: Configuring and managing custom fields on test results in Azure Test
     Plans, including setup steps, field types, and how they appear in test runs and
     reports.
   security: 'Managing Azure Test Plans access: configuring permissions, security roles,
     and licensing requirements for users and groups'
-  configuration: 'Using tcm.exe to manage Azure Test Plans: creating and running test
-    suites, importing/exporting tests, managing test configurations, and automating
-    test plan operations via CLI.'
 skill_description: Expert knowledge for Azure Test Plans development including limits
-  & quotas, security, and configuration. Use when building, debugging, or optimizing
-  Azure Test Plans applications. Not for Azure DevOps (use azure-devops), Azure Boards
-  (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use
-  azure-app-testing).
+  & quotas, and security. Use when building, debugging, or optimizing Azure Test Plans
+  applications.
 ---
 # Azure Test Plans Crawl Report
 
@@ -22,13 +17,13 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 3
-- **Unclassified**: 31
+- **Classified**: 2
+- **Unclassified**: 32
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 32
+- **Updated Pages**: 4
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -36,19 +31,22 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 1 | 2.9% |
 | limits-quotas | 1 | 2.9% |
 | security | 1 | 2.9% |
-| *(Unclassified)* | 31 | 91.2% |
+| *(Unclassified)* | 32 | 94.1% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
-  - Updated: 2025-11-10T22:10:00.000Z → 2026-03-03T18:05:00.000Z
-- [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
-  - Updated: 2025-11-13T22:04:00.000Z → 2026-03-03T18:05:00.000Z
+- [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
+  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
+- [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops)
+  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-05T18:06:00.000Z
+- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
+  - Updated: 2026-02-27T22:02:00Z → 2026-03-10T13:05:00Z
+- [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops)
+  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
 
 ## Classified Pages
 
@@ -56,7 +54,6 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 |-----------|------|------------|--------|
 | [Store custom data in test plan and/or test result](https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops) | limits-quotas | 0.80 | Explicitly states a numeric limit (up to 100 custom fields per project) and describes project-level management; this is a concrete quota not generally known. |
 | [Default permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops) | security | 0.70 | Covers default permissions, access levels, and licensing for manual/exploratory testing; likely lists specific Azure DevOps roles and access configurations, which are product-specific security details. |
-| [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops) | configuration | 0.70 | Reference for tcm.exe commands is a product-specific command/configuration surface; likely lists commands, arguments, and options that constitute detailed configuration/operation knowledge. |
 
 ## Unclassified Pages
 
@@ -67,9 +64,7 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 | [Explore work items](https://learn.microsoft.com/en-us/azure/devops/test/explore-workitems-exploratory-testing?view=azure-devops) | 0.30 | Exploring work items and linking them; workflow guidance without numeric limits or configuration parameter tables. |
 | [Install the extension](https://learn.microsoft.com/en-us/azure/devops/test/perform-exploratory-tests?view=azure-devops) | 0.30 | Install and set up browser extension; likely step-by-step installation and basic configuration, not a full configuration reference with parameter tables. |
 | [Manage test failure type](https://learn.microsoft.com/en-us/azure/devops/test/manage-test-failure-type?view=azure-devops) | 0.30 | Customization of failure types is described conceptually; no numeric limits, config tables, or error-code mappings in summary. |
-| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | 0.30 | FAQ likely mixes many topics but summary does not indicate detailed error-code mappings, limits tables, or config references; treated as general Q&A. |
 | [Run automated tests from test plans](https://learn.microsoft.com/en-us/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops) | 0.30 | Running automated tests from test plans is described at a feature level; no explicit limits, config matrices, or error mappings shown. |
-| [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops) | 0.30 | Discusses retention policies conceptually (e.g., keep results up to a year) but appears as guidance rather than hard system limits or configuration tables. |
 | [Test in Connected mode](https://learn.microsoft.com/en-us/azure/devops/test/connected-mode-exploratory-testing?view=azure-devops) | 0.30 | Connected mode usage of extension; summary suggests basic connection steps, not detailed config matrices or limits. |
 | [Test in Standalone mode](https://learn.microsoft.com/en-us/azure/devops/test/standalone-mode-exploratory-testing?view=azure-devops) | 0.30 | Standalone mode description; mostly explains mode behavior and requirements, not detailed configuration or quotas. |
 | [Add to existing bugs](https://learn.microsoft.com/en-us/azure/devops/test/add-to-bugs-exploratory-testing?view=azure-devops) | 0.25 | Describes deduplication behavior when filing bugs; no explicit error codes, limits, or configuration references. |
@@ -85,7 +80,6 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 | [Track stakeholder feedback requests](https://learn.microsoft.com/en-us/azure/devops/test/track-stakeholder-feedback?view=azure-devops) | 0.25 | Tracking feedback via work items/queries; reporting usage, not deep configuration or limits. |
 | [Track test status](https://learn.microsoft.com/en-us/azure/devops/test/track-test-status?view=azure-devops) | 0.25 | Viewing test status and charts; reporting how-to without numeric system limits or config matrices. |
 | [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops) | 0.20 | Describes how to bulk import/export test cases via CSV/Excel; appears to be a usage/tutorial page without detailed configuration tables, limits, or error-code-based troubleshooting. |
-| [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | 0.20 | Describes copy/clone/import operations conceptually; lacks detailed constraints or error-resolution content. |
 | [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops) | 0.20 | Procedural guidance for creating and organizing manual test cases; no product-specific limits, configuration parameter tables, error-code-based troubleshooting, or quantified best-practice guidance. |
 | [Create test plans and test suites](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops) | 0.20 | Task-focused guide to creating test plans/suites; no expert-only limits, configs, or error codes. |
 | [Share steps between test cases](https://learn.microsoft.com/en-us/azure/devops/test/share-steps-between-test-cases?view=azure-devops) | 0.20 | Explains shared steps/parameters usage; no numeric limits, config tables, or troubleshooting mappings. |
@@ -93,3 +87,7 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 | [What is Azure Test Plans?](https://learn.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops) | 0.20 | High-level overview of Azure Test Plans capabilities; no detailed limits, configs, or error mappings. |
 | [Navigate Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/navigate-test-plans?view=azure-devops) | 0.10 | Navigation/how-to UI article; no configuration tables, limits, or troubleshooting content. |
 | [Test objects and terms](https://learn.microsoft.com/en-us/azure/devops/test/test-objects-overview?view=azure-devops) | 0.10 | Terminology/objects overview; conceptual definitions without product-specific numeric or config details. |
+| [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

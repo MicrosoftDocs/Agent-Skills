@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   troubleshooting: Diagnosing and fixing Defender for IoT micro agent and OT sensor
     issues, understanding/handling security and health alerts, and validating sensor/agent
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 - **Total Pages**: 180
 - **Fetched**: 180
 - **Fetch Failed**: 0
-- **Classified**: 116
-- **Unclassified**: 64
+- **Classified**: 115
+- **Unclassified**: 65
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 180
+- **Updated Pages**: 1
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -61,12 +61,17 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | decision-making | 8 | 4.4% |
 | deployment | 21 | 11.7% |
 | integrations | 24 | 13.3% |
-| limits-quotas | 5 | 2.8% |
+| limits-quotas | 4 | 2.2% |
 | security | 15 | 8.3% |
 | troubleshooting | 8 | 4.4% |
-| *(Unclassified)* | 64 | 35.6% |
+| *(Unclassified)* | 65 | 36.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances)
+  - Updated: 2025-09-18T17:09:00.000Z → 2026-03-08T12:11:00.000Z
 
 ## Classified Pages
 
@@ -93,7 +98,6 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | [Install sensor software](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-deploy/install-software-ot-sensor) | deployment | 0.80 | Product-specific installation and initial setup settings for OT sensors; deployment-focused with concrete configuration steps. |
 | [Inventory management](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/api/sensor-inventory-apis) | integrations | 0.80 | Device inventory management API reference lists endpoints and parameters for managing inventory, which are concrete integration patterns for this product. |
 | [Micro agent configurations](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/concept-micro-agent-configuration) | configuration | 0.80 | Explicitly about micro agent configuration via module twin properties; likely includes property names, allowed values, and behavioral impact, which are product-specific configuration details. |
-| [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances) | limits-quotas | 0.80 | Lists required specifications for virtual appliances (CPU, RAM, storage, etc.), which are numeric constraints and sizing limits. |
 | [OT sensor (Hyper-V) Gen 2](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-hyper-v) | deployment | 0.80 | Hyper-V deployment guidance includes generation requirements, virtual NIC mapping, and resource constraints, which are product-specific deployment details. |
 | [OT sensor (VMware ESXi)](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/appliance-catalog/virtual-sensor-vmware) | deployment | 0.80 | Virtual sensor deployment on ESXi includes VM sizing, network adapter configuration, and supported versions, which are detailed deployment constraints. |
 | [OT sensor CLI reference](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/cli-ot-sensor) | configuration | 0.80 | Command reference for OT sensors will list specific CLI commands and supported configuration parameters, which are product-specific configuration details. |
@@ -257,3 +261,4 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | [Defender for IoT glossary](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/references-defender-for-iot-glossary) | 0.20 | Glossary of terms; definitional content rather than actionable expert configuration or troubleshooting guidance. |
 | [What is Defender for IoT for device builders?](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/overview) | 0.20 | High-level product/feature overview for Defender for IoT micro agent; no detailed configs, limits, or error mappings. |
 | [Zero Trust and your OT/IoT networks](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/concept-zero-trust) | 0.20 | Zero Trust conceptual strategy for OT networks; high-level security principles without product-specific config details. |
+| [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

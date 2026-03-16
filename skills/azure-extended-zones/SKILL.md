@@ -3,7 +3,7 @@ name: azure-extended-zones
 description: Expert knowledge for Azure Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Azure Extended Zones applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic Manager (use azure-traffic-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Extended Zones Skill

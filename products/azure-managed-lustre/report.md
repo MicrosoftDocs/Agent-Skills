@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Azure Managed Lustre: network/storage prerequisites,
     client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/metrics/logs
@@ -39,8 +39,8 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 29
+- **Updated Pages**: 1
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -58,6 +58,11 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
 | *(Unclassified)* | 2 | 6.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal)
+  - Updated: 2026-02-27T18:05:00.000Z → 2026-03-12T08:00:00.000Z
 
 ## Classified Pages
 
@@ -95,5 +100,5 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | 0.30 | Portal creation tutorial; likely step-by-step UI guidance without comprehensive config tables or limits. |
 | [Introduction to Azure Managed Lustre](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview) | 0.20 | High-level service overview and benefits; no detailed limits, configs, or error mappings. |
+| [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
