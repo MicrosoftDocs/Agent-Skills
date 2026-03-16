@@ -1,9 +1,9 @@
 ---
 name: azure-artifacts
-description: Expert knowledge for Azure Artifacts development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Artifacts applications. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+description: Provides expert guidance on Azure Artifacts package management, including best practices, configuration, security, limits/quotas, decision-making, integrations, and deployment workflows. Use this skill when you need to design or optimize Azure Artifacts feeds, choose feed scope, migrate from other package stores, connect build tools/CLIs, configure upstream sources and retention, secure feeds and dependencies, or set up CI/CD (e.g., GitHub Actions) to publish and restore packages (NuGet, npm, Maven, etc.). Not for general Azure DevOps questions or other artifact/package services like GitHub Packages, Artifactory, or Nexus.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Artifacts Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L35-L41 | Guidance on Azure Artifacts package management best practices, configuring and using upstream sources, and safely restoring packages from external feeds. |
 | Decision Making | L42-L48 | Guidance on choosing feed scope and planning migrations of package storage, including moving from file shares or MyGet to Azure Artifacts feeds. |
-| Limits & Quotas | L49-L56 | Storage quotas, free allocation, and size/count limits for Azure Artifacts packages, plus how to monitor usage and publish Universal Packages within those limits. |
+| Limits & Quotas | L49-L56 | Storage quotas, free allocation, and monitoring usage for Azure Artifacts, plus package size/count limits and constraints for publishing Universal Packages. |
 | Security | L57-L63 | Securing Azure Artifacts feeds: configuring permissions, protecting upstream sources from malicious packages, and using npm audit to find and fix vulnerabilities. |
 | Configuration | L64-L75 | Configuring Azure Artifacts feeds: views/promotion, retention/deletion, upstream sources, npm/.npmrc and scopes, and .artifactignore for optimizing pipeline artifacts. |
-| Integrations & Coding Patterns | L76-L120 | How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages, and use upstream sources. |
-| Deployment | L121-L124 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
+| Integrations & Coding Patterns | L76-L119 | How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet, Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages, and use upstream sources. |
+| Deployment | L120-L123 | Using GitHub Actions to build and push packages (NuGet, npm, etc.) to Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration. |
 
 ### Best Practices
 | Topic | URL |
@@ -49,9 +49,9 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Monitor and manage Azure Artifacts storage quotas | https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops |
+| Monitor Azure Artifacts storage usage and limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops |
 | Publish Universal Packages and understand size limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops |
-| Review Azure Artifacts package size and count limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops |
+| Azure Artifacts package size and count limits | https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops |
 | Understand Azure Artifacts free storage allocation | https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops |
 
 ### Security
@@ -116,7 +116,6 @@ This skill requires **network access** to fetch documentation content:
 | Use PowerShell Gallery as an Azure Artifacts upstream source | https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/powershell-upstream-source?view=azure-devops |
 | Use Azure Artifacts feed as a private PowerShell repository | https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops |
 | Connect and configure Universal Packages with Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/project-setup-universal-packages?view=azure-devops |
-| Configure Universal Packages upstream sources in Azure Artifacts | https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops |
 
 ### Deployment
 | Topic | URL |

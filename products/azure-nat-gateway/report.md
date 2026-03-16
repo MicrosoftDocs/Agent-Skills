@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   limits-quotas: NAT Gateway FAQs plus limits on SNAT ports, IPs, throughput, connections,
     and other quotas, with guidance on capacity planning and scaling.
@@ -34,13 +34,13 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 - **Total Pages**: 26
 - **Fetched**: 26
 - **Fetch Failed**: 0
-- **Classified**: 23
-- **Unclassified**: 3
+- **Classified**: 22
+- **Unclassified**: 4
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 26
+- **Updated Pages**: 1
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -50,14 +50,19 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 |------|-------|------------|
 | architecture-patterns | 5 | 19.2% |
 | best-practices | 1 | 3.8% |
-| configuration | 6 | 23.1% |
+| configuration | 5 | 19.2% |
 | decision-making | 2 | 7.7% |
 | deployment | 4 | 15.4% |
 | limits-quotas | 1 | 3.8% |
 | troubleshooting | 4 | 15.4% |
-| *(Unclassified)* | 3 | 11.5% |
+| *(Unclassified)* | 4 | 15.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-03-09T17:11:00.000Z
 
 ## Classified Pages
 
@@ -70,7 +75,6 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 | [Create and configure NAT gateway after region move](https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway) | deployment | 0.70 | Covers constraints (cannot move NAT Gateway across regions) and the required deployment steps after using Azure Resource Mover; product-specific deployment constraint and workaround. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq) | limits-quotas | 0.70 | FAQ pages for Azure networking services typically include concrete limits (SNAT ports, IP counts, supported scenarios); these numeric constraints are expert knowledge not derivable from general training. |
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |
-| [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | configuration | 0.70 | Similar to 15 but for Standard V2, including association with virtual networks and subnets; configuration-focused with product-specific operations. |
 | [Monitor Standard V2 NAT gateway flow logs](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-flow-logs) | troubleshooting | 0.70 | Shows how to use flow logs for monitoring and troubleshooting traffic; includes product-specific log categories and analysis patterns for diagnosing issues. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/nat-gateway/monitor-nat-gateway-reference) | configuration | 0.70 | Monitoring data reference likely lists metric and log names, dimensions, and schemas; detailed configuration/reference information for monitoring NAT Gateway. |
 | [NAT Gateway SKUs](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku) | decision-making | 0.70 | Compares Standard and StandardV2 SKUs and their differences; SKU selection guidance and trade-offs qualify as decision-making content. |
@@ -94,3 +98,4 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 | [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.30 | High-level overview of Azure NAT Gateway features and behavior; no detailed limits, configuration tables, or error mappings. |
 | [Create and validate a Standard Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway) | 0.20 | Quickstart/tutorial for creating a NAT gateway; primarily step-by-step portal/CLI instructions without expert-only configuration matrices or limits. |
 | [Create and validate a Standard V2 Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2) | 0.20 | Quickstart for creating Standard V2 NAT Gateway; procedural content without detailed limits, decision matrices, or troubleshooting mappings. |
+| [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.20 | Task-focused how-to for creating, associating, and deleting a NAT Gateway v2 and managing its public IPs. From the description/summary, it does not surface numeric limits, configuration parameter tables, error codes, or decision matrices. It appears to be a procedural management guide rather than expert reference content. |

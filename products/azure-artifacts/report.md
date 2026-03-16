@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  limits-quotas: Storage quotas, free allocation, and size/count limits for Azure
-    Artifacts packages, plus how to monitor usage and publish Universal Packages within
-    those limits.
+  limits-quotas: Storage quotas, free allocation, and monitoring usage for Azure Artifacts,
+    plus package size/count limits and constraints for publishing Universal Packages.
   integrations: How to connect build tools and CLIs (Cargo, Maven, Gradle, npm, NuGet,
     Python, PowerShell, Universal) to Azure Artifacts feeds, publish/restore packages,
     and use upstream sources.
@@ -18,11 +17,14 @@ category_descriptions:
     artifacts.'
   deployment: Using GitHub Actions to build and push packages (NuGet, npm, etc.) to
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
-skill_description: Expert knowledge for Azure Artifacts development including best
-  practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Artifacts applications. Not for Azure DevOps (use azure-devops), Azure Pipelines
-  (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+skill_description: Provides expert guidance on Azure Artifacts package management,
+  including best practices, configuration, security, limits/quotas, decision-making,
+  integrations, and deployment workflows. Use this skill when you need to design or
+  optimize Azure Artifacts feeds, choose feed scope, migrate from other package stores,
+  connect build tools/CLIs, configure upstream sources and retention, secure feeds
+  and dependencies, or set up CI/CD (e.g., GitHub Actions) to publish and restore
+  packages (NuGet, npm, Maven, etc.). Not for general Azure DevOps questions or other
+  artifact/package services like GitHub Packages, Artifactory, or Nexus.
 ---
 # Azure Artifacts Crawl Report
 
@@ -31,13 +33,13 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 - **Total Pages**: 72
 - **Fetched**: 72
 - **Fetch Failed**: 0
-- **Classified**: 63
-- **Unclassified**: 9
+- **Classified**: 62
+- **Unclassified**: 10
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 72
+- **Updated Pages**: 3
+- **Unchanged**: 69
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -49,24 +51,33 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | configuration | 8 | 11.1% |
 | decision-making | 3 | 4.2% |
 | deployment | 1 | 1.4% |
-| integrations | 41 | 56.9% |
+| integrations | 40 | 55.6% |
 | limits-quotas | 4 | 5.6% |
 | security | 3 | 4.2% |
-| *(Unclassified)* | 9 | 12.5% |
+| *(Unclassified)* | 10 | 13.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops)
+  - Updated: 2024-06-07T20:33:00.000Z → 2026-03-13T21:04:00.000Z
+- [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops)
+  - Updated: 2026-02-06T23:56:00.000Z → 2026-03-06T22:05:00.000Z
+- [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops)
+  - Updated: 2025-12-19T16:56:00.000Z → 2026-03-13T21:04:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | limits-quotas | 0.98 | Dedicated limits reference; will list specific size/count limits per package type and possibly client-imposed constraints. |
-| [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | limits-quotas | 0.90 | Describes consumption-based billing, free tier size (2 GiB), and behavior when exceeding that limit, which are concrete quota details. |
+| [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops) | limits-quotas | 0.95 | Explicitly documents size and count limits per package type (NuGet, npm, Maven, Python, Cargo, Universal Packages). This is a limits reference with concrete numeric constraints, matching the limits-quotas criteria. |
 | [Manage permissions](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops) | security | 0.80 | Permissions-focused article; likely lists specific roles (e.g., Feed Administrator, Collaborator), scopes, and how they control access, which are product-specific security details. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops) | configuration | 0.80 | Focuses on npmrc configuration with feed URLs and auth tokens; includes parameter names and values unique to Azure Artifacts. |
 | [Project setup](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/project-setup-universal-packages?view=azure-devops) | integrations | 0.80 | Universal Packages setup with Azure CLI; includes max size (4 TiB) and CLI parameters specific to Azure Artifacts. |
 | [Universal Packages quickstart](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops) | limits-quotas | 0.80 | States explicit package size limit (4 TiB) and requirements (name and version), which are concrete product limits. |
 | [Use the .artifactignore file](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/artifactignore?view=azure-devops) | configuration | 0.80 | Documents the .artifactignore file syntax and behavior; includes pattern rules, precedence, and product-specific behavior for artifact publishing. |
+| [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops) | limits-quotas | 0.78 | Page describes Azure Artifacts’ consumption-based storage with a specific free-tier limit (2 GiB) and actions when exceeding it. This is product-specific quota information with exact numeric values that an LLM is unlikely to know from training. |
 | [What is Azure Artifacts?](https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops) | limits-quotas | 0.75 | Includes the exact free storage amount (2 GiB) for Azure Artifacts, which is a concrete quota value. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/best-practices?view=azure-devops) | best-practices | 0.70 | Explicitly a best-practices article; likely includes concrete DOs/DON’Ts and product-specific guidance for publishing and consuming packages. |
 | [Feed scopes](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/project-scoped-feeds?view=azure-devops) | decision-making | 0.70 | Explicitly compares project vs organization scope and when to use each; this is product-specific selection guidance. |
@@ -110,7 +121,6 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | [Restore npm packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/npm/restore-npm-packages?view=azure-devops) | integrations | 0.65 | npm restore integration; uses Azure Artifacts registry URLs and auth configuration in .npmrc. |
 | [Safeguard against malicious public packages](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-behavior?view=azure-devops) | security | 0.65 | Focuses on controlling access to public registries and protecting from malicious packages; likely includes feed-level security options and permission settings specific to Azure Artifacts. |
 | [Share PowerShell modules with Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops) | integrations | 0.65 | Shows how to register an Azure Artifacts feed as a PowerShell repository; includes Register-PSRepository parameters and feed URLs specific to Azure. |
-| [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | integrations | 0.65 | Explains adding Universal Packages upstream sources including other feeds; involves product-specific feed identifiers and CLI parameters. |
 | [Use packages from PowerShell Gallery](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/powershell-upstream-source?view=azure-devops) | integrations | 0.65 | Shows how to configure PowerShell Gallery as upstream; includes repository registration commands and Azure feed URLs. |
 | [Use upstream sources with public feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/public-feeds-upstream-sources?view=azure-devops) | configuration | 0.65 | Covers enabling and adding upstream sources on public feeds; likely documents specific feed options and constraints unique to public feeds. |
 | [npm](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops) | integrations | 0.65 | Shows npmrc configuration, registry URLs, and scopes for Azure Artifacts; these are concrete integration settings. |
@@ -134,6 +144,7 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.25 | Tutorial on sharing packages publicly; summary doesn’t indicate detailed limits, config tables, or error codes. |
 | [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops) | 0.25 | Conceptual explanation of feed views; summary doesn’t show numeric thresholds or config tables. |
 | [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops) | 0.20 | Tutorial-style first package publish; summary shows no limits, config tables, or product-specific error codes. |
+| [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | 0.20 | Page describes how to set up internal and external feeds as upstream sources for Universal Packages, but is primarily a procedural/tutorial-style configuration guide without detailed parameter tables, limits, quotas, or product-specific error-code troubleshooting. It lacks the structured configuration matrices, numeric constraints, or decision criteria required for the defined sub-skill types. |
 | [Package notifications](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/follow-package-notifications?view=azure-devops) | 0.15 | Explains notification behavior; summary shows no numeric limits, config tables, or error mappings. |
 | [What are feeds?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/feeds?view=azure-devops) | 0.15 | Conceptual explanation of feeds and types; no evidence of limits, config matrices, or troubleshooting. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops) | 0.10 | Key concepts/overview page; no indication of numeric limits, config parameters, or troubleshooting content. |

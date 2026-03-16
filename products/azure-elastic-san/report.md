@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on sizing and configuring Elastic SAN (performance, capacity,
     architecture) and deciding how to integrate it with AKS workloads and storage
@@ -7,9 +7,8 @@ category_descriptions:
   integrations: How to script volume creation and connect Elastic SAN volumes to Linux,
     Windows, and AKS via iSCSI CSI, including client configuration and integration
     patterns.
-  best-practices: Guidance on tuning Elastic SAN performance (throughput, latency,
-    volume layout) and using snapshots for backup, restore, and disaster recovery
-    workflows.
+  best-practices: Performance tuning and best practices for Azure Elastic SAN volumes,
+    VMware datastores, and using snapshots for backup, restore, and data protection.
   security: Encrypting Elastic SAN with customer-managed keys and securing access
     via private endpoints, service endpoints, and other network security configurations
     for volumes.
@@ -24,25 +23,26 @@ category_descriptions:
   troubleshooting: Diagnosing and resolving common Azure Elastic SAN issues, including
     provisioning failures, connectivity/IO errors, performance problems, and typical
     error codes/logs.
-skill_description: Expert knowledge for Azure Elastic SAN development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Elastic SAN applications. Not for Azure Blob Storage
-  (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use
-  azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+skill_description: Provides expert guidance on Azure Elastic SAN across troubleshooting,
+  best practices, decision making, architecture patterns, limits/quotas, security,
+  configuration, and integrations/coding patterns. Use this skill when designing or
+  operating Elastic SAN for clustered apps, tuning performance, planning capacity
+  and HA, configuring lifecycle and monitoring, securing with CMK and private endpoints,
+  or integrating via iSCSI/CSI with Linux, Windows, VMware, and AKS. Not for Azure
+  NetApp Files, Azure Disks, or on-prem SAN products.
 ---
 # Azure Elastic SAN Crawl Report
 
 ## Summary
 
-- **Total Pages**: 23
-- **Fetched**: 23
+- **Total Pages**: 24
+- **Fetched**: 24
 - **Fetch Failed**: 0
-- **Classified**: 21
+- **Classified**: 22
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 23
 - **Deleted Pages**: 0
@@ -52,17 +52,21 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 4.3% |
-| best-practices | 2 | 8.7% |
-| configuration | 3 | 13.0% |
-| decision-making | 2 | 8.7% |
-| integrations | 4 | 17.4% |
-| limits-quotas | 2 | 8.7% |
-| security | 6 | 26.1% |
-| troubleshooting | 1 | 4.3% |
-| *(Unclassified)* | 2 | 8.7% |
+| architecture-patterns | 1 | 4.2% |
+| best-practices | 3 | 12.5% |
+| configuration | 3 | 12.5% |
+| decision-making | 2 | 8.3% |
+| integrations | 4 | 16.7% |
+| limits-quotas | 2 | 8.3% |
+| security | 6 | 25.0% |
+| troubleshooting | 1 | 4.2% |
+| *(Unclassified)* | 2 | 8.3% |
 
 ## Changes
+
+### New Pages
+
+- [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions)
 
 ## Classified Pages
 
@@ -85,6 +89,7 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 | [Planning](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-planning) | decision-making | 0.70 | Planning article that discusses storage capacity, performance, redundancy, and encryption choices for SAN, volume groups, and volumes. Likely includes concrete thresholds and configuration guidance to choose sizes and redundancy options, which supports deployment decision-making. |
 | [Resize an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-expand) | configuration | 0.70 | Describes how to increase/decrease SAN and volume sizes. Such docs typically include constraints (e.g., expansion vs shrink rules, allowed ranges), which are product-specific configuration details. |
 | [Use volume snapshots](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots) | best-practices | 0.70 | Explains snapshot behavior (incremental, space usage differences vs managed disks) and best uses. Contains product-specific behavior and recommended usage patterns, fitting best-practices. |
+| [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions) | best-practices | 0.68 | The page provides benchmark results and workload-specific performance guidance for Azure Elastic SAN used as datastores with Azure VMware Solution. It includes concrete, product-specific configuration and test details that help compare and tune performance in real environments, which qualifies as expert, implementation-focused best-practices rather than generic concepts. |
 | [Clustered applications](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-shared-volumes) | architecture-patterns | 0.65 | Covers pattern of sharing Elastic SAN volumes across multiple clients using cluster managers (WSFC, Pacemaker) and explains constraints (no managed SMB/NFS). This is a product-specific deployment/architecture pattern for clustered workloads. |
 | [Connect to an Elastic SAN volume - Windows](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows) | integrations | 0.65 | Describes connecting Windows to Elastic SAN via VM extension or scripts. Likely includes iSCSI/connection parameters and extension settings specific to Elastic SAN, which are integration/coding patterns. |
 | [Networking](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-networking) | security | 0.65 | Describes specific networking options (service endpoints, private endpoints, iSCSI) and how to restrict access by subnets and endpoints. This is product-specific access control/network isolation guidance, fitting security configuration. |

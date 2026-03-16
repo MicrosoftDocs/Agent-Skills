@@ -1,14 +1,14 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when defining cloud strategy, designing landing zones, establishing governance, or migrating workloads to Azure.
+description: Provides expert guidance on applying the Azure Cloud Adoption Framework across strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations, organization, and end-to-end adoption scenarios. Use this skill when you need to design or refine Azure adoption journeys, define landing zones, plan migrations/modernization (including SAP, Oracle, AVD, VMware, analytics, AI agents), establish governance and security guardrails, or structure cloud/AI operating models and teams. Not for detailed product configuration steps, writing application code, or non-Azure cloud frameworks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
 
-This skill provides expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers getting started, strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,26 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Getting Started | L38-L42 | Step-by-step checklist and best practices for planning, designing, and implementing a data mesh architecture on Azure, including governance, platform setup, and domain data products. |
-| Strategy | L43-L61 | Cloud and AI adoption strategy: business alignment, motivations, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, AVD, VMware, analytics, Oracle, SAP, hybrid/multicloud). |
-| Planning | L62-L92 | Planning cloud adoption: migration waves, workload assessments, modernization roadmaps, data/AI and analytics architectures, Oracle/SAP/AVD/VMware plans, skills readiness, and cost/capacity planning. |
-| Readiness & Landing Zones | L93-L220 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, automation/DevOps, and workload‑specific patterns (AVS, SAP, data, Oracle, Arc). |
-| Adoption Patterns | L221-L256 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure (AI agents, cloud-native apps, AVD, VMware, SAP, Oracle, and cloud-scale analytics/data lakes). |
-| Governance | L257-L299 | Cloud and data governance in Azure: policies, tagging, cost control, compliance, responsible AI, landing zones, Arc, AKS, SAP, and Purview-based data governance. |
-| Security | L300-L335 | Designing secure Azure landing zones, IAM/RBAC, Zero Trust networking, encryption, DevOps and AKS security, and workload-specific security for analytics, SAP, Oracle, and Arc. |
-| Operations & Management | L336-L382 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, analytics, Arc, Oracle, SAP), plus BCDR, observability, and DevOps for post-deployment management |
-| Organization & Teams | L383-L406 | Designing org structures, roles, RACI, and team topologies (CCoE, AI CoE, DevOps, ops, security, data/analytics) to align people, governance, and costs for Azure and AI adoption |
-| Adoption Scenarios | L407-L508 | End-to-end Azure adoption patterns and landing zone designs for AI, containers, data/analytics, VDI, SAP/Oracle/RHEL/VMware, covering governance, security, networking, identity, and operations. |
-
-### Getting Started
-| Topic | URL |
-|-------|-----|
-| Follow a staged checklist to adopt data mesh on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-checklist |
+| Strategy | L37-L56 | Strategic guidance for aligning cloud and AI adoption with business goals, covering exec vision, workload-specific strategies (SAP, Oracle, AVD, VMware), cost, security, resiliency, and sustainability. |
+| Planning | L57-L86 | Planning cloud adoption, migrations, and modernization on Azure: strategies, wave planning, cost/skills readiness, and detailed plans for apps, data/analytics, AI agents, Oracle, SAP, AVD, and VMware. |
+| Readiness & Landing Zones | L87-L216 | Designing and operating Azure landing zones: network topology and connectivity, identity and access, subscriptions and management groups, DevOps/automation, and workload‑specific patterns (AVS, SAP, analytics, Oracle). |
+| Adoption Patterns | L217-L250 | Patterns and step-by-step guidance for migrating, modernizing, and operating workloads on Azure (AI agents, AVD, VMware, SAP, Oracle, analytics/data lakes) with secure, resilient architectures. |
+| Governance | L251-L293 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, data governance, landing zones, Arc, SAP, AKS, and responsible AI guardrails. |
+| Security | L294-L329 | Designing and operating secure Azure environments: Zero Trust landing zones, IAM/RBAC, encryption, DevOps and AKS security, Oracle/SAP/analytics protection, and ongoing security governance. |
+| Operations & Management | L330-L374 | Operating, monitoring, automating, and optimizing Azure environments and workloads (including AKS, AVS, analytics, Oracle, SAP), plus BCDR, observability, and DevOps across the cloud estate |
+| Organization & Teams | L375-L398 | Designing org structures, roles, and RACI for cloud/AI adoption: CCoE, governance, ops, security, data/analytics, DevOps, cost culture, and breaking silos across teams. |
+| Adoption Scenarios | L399-L504 | End-to-end Azure adoption patterns and landing zone designs for AI, data/analytics, virtual desktops, containers, SAP/Oracle/RHEL/ARO/AVS, covering governance, security, networking, identity, and operations. |
 
 ### Strategy
 | Topic | URL |
 |-------|-----|
 | Create a business strategy and plan for AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/business-strategy-plan |
+| Define executive strategy to unify enterprise data platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform |
 | Create an enterprise AI adoption strategy on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/strategy |
 | Assess strategic benefits of Azure Virtual Desktop adoption | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/strategy |
 | Incorporate Azure VMware Solution into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/strategy |
@@ -62,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 ### Planning
 | Topic | URL |
 |-------|-----|
-| Plan data architecture for organization-wide AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/data-architecture-plan |
+| Plan unified data architecture for organization-wide AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/data-architecture-plan |
 | Define technology plan for AI agents on Microsoft | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy |
 | Plan Azure cloud-native application solutions | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/plan-cloud-native-solutions |
 | Plan Azure migration waves for large estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/migration-wave-planning |
@@ -81,8 +76,7 @@ This skill requires **network access** to fetch documentation content:
 | Select appropriate cloud migration strategies per workload | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/select-cloud-migration-strategy |
 | Plan Azure Virtual Desktop migration using CAF Migrate | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/plan |
 | Plan cloud adoption with Azure VMware Solution workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/plan |
-| Plan cloud-scale analytics adoption and data estate rationalization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/plan |
-| Apply Azure Well-Architected principles to data workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/well-architected-framework |
+| Plan cloud-scale analytics adoption in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/plan |
 | Plan capacity for Oracle workloads on Azure VMs | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning |
 | Plan capacity for Oracle Autonomous Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning-oracle-database-azure-autonomous-database |
 | Plan capacity for Oracle Exadata Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning-oracle-database-azure-exadata |
@@ -95,7 +89,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Prepare Azure environment with landing zones for workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/ |
 | Use Azure Virtual Network Manager in landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/azure-virtual-network-manager |
-| Design connectivity from on-premises to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure |
+| Design secure connectivity from on-premises networks to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure |
 | Design connectivity to Azure PaaS services securely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure-paas-services |
 | Connect Azure landing zones to other cloud providers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-other-providers |
 | Design Azure–Oracle Cloud Infrastructure connectivity | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-other-providers-oci |
@@ -195,18 +189,20 @@ This skill requires **network access** to fetch documentation content:
 | Configure single-region AVS connectivity with Virtual WAN without Global Reach | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/single-region-virtual-wan-without-global-reach |
 | Connect Azure VMware Solution private clouds to Azure virtual networks | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/virtual-network-connectivity |
 | Design private network topology for cloud-scale analytics environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately |
-| Design and provision data landing zones in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone |
+| Design and connect data landing zones for analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone |
 | Design a data management landing zone for analytics governance | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-management-landing-zone |
+| Align enterprise enrollment and Entra tenants for analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-enterprise-enrollment-and-azure-ad-tenants |
 | Implement cross-region connectivity for data landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-network-considerations-cross-region |
 | Implement single-region connectivity for data landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-network-considerations-single-region |
-| Design network topology for cloud-scale analytics landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-network-topology-and-connectivity |
-| Organize subscriptions and resources for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-resource-organization |
+| Design network topology and connectivity for analytics landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-network-topology-and-connectivity |
+| Structure management groups and subscriptions for analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-resource-organization |
+| Provision cloud-scale analytics landing zones and DevOps services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage-provision-platform |
 | Introduce cloud-scale analytics landing zones on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/overview-cloud-scale-analytics |
 | Review Azure landing zones for cloud-scale analytics workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/ready |
-| Design network connectivity for Azure Arc-enabled Kubernetes clusters | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-network-connectivity |
-| Organize resources and access for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-resource-organization |
+| Design network connectivity for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-network-connectivity |
+| Organize resources for Arc-enabled Kubernetes clusters | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-resource-organization |
 | Design network connectivity for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-arc-servers-connectivity |
-| Organize Azure Arc-enabled server resources and tagging | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-resource-organization |
+| Design resource organization for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-resource-organization |
 | Implement hybrid and multicloud landing zones with Arc | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone |
 | Connect application tiers to Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/application-connectivity-design |
 | Configure Azure Arc connectivity for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/azure-arc-connectivity-design |
@@ -234,18 +230,16 @@ This skill requires **network access** to fetch documentation content:
 | Execute post-deployment and release for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-release |
 | Run an Azure Virtual Desktop proof of concept | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/proof-of-concept |
 | Migrate on-premises VMware workloads to Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/migrate |
-| Build source-aligned data applications for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-application-source-aligned |
+| Implement source-aligned data applications in analytics estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-application-source-aligned |
 | Create and serve data products in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone-data-products |
-| Use data application reference patterns on data landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-reference-patterns |
-| Standardize and transform data in Azure data lakes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-standardization |
+| Use data application reference patterns on landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-reference-patterns |
 | Scale cloud-scale analytics using multiple data landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/scale-architectures |
 | Build a metadata-driven, data-agnostic ingestion engine on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/automated-ingestion-pattern |
 | Implement data ingestion patterns for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-ingestion |
 | Choose Azure Data Lake access tiers and lifecycle policies | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-lake-key-considerations |
-| Use Azure Data Lake Storage for cloud-scale analytics workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-lake-overview |
 | Design data lake zones and containers for analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-lake-zones |
 | Apply best practices for data science on cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-science-best-practices |
-| Provision cloud-scale analytics platform and DevOps services | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage-provision-platform |
+| Apply Well-Architected principles to data workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/well-architected-framework |
 | Design migration connectivity for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/migration-connectivity-design |
 | Automate Oracle Exadata Database@Azure platform deployment | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-platform-automation-devops-oracle-database-azure |
 | Automate SAP deployments on Azure with DevOps | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/eslz-platform-automation-and-devops |
@@ -283,18 +277,18 @@ This skill requires **network access** to fetch documentation content:
 | Apply security, governance, and compliance disciplines to Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-security-governance-and-compliance |
 | Extend cloud governance to Azure VMware Solution environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/govern |
 | Use Azure Policy to govern cloud-scale analytics resources | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-policies |
-| Define data governance processes and working groups | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components |
+| Define and run data governance processes in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components |
 | Implement a data catalog with Microsoft Purview | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-data-catalog |
-| Establish data quality management in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-data-quality |
-| Define data lifecycle management policies for analytics data | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lifecycle |
-| Use data lineage for governance and impact analysis | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lineage |
-| Manage master data as part of data governance | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-master-data |
-| Apply metadata standards for governed data estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-metadata-standards |
+| Establish data quality management for analytics estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-data-quality |
+| Apply data lifecycle management policies in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lifecycle |
+| Manage data lineage for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lineage |
+| Govern and manage master data in Azure analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-master-data |
+| Define metadata standards for governed analytics data | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-metadata-standards |
 | Identify requirements for governing distributed enterprise data | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-requirements |
-| Implement cost governance for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cost-governance |
+| Manage extensions for Arc-enabled Kubernetes at scale | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-extensions-management |
 | Set governance, security, and compliance baseline for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-governance-disciplines |
 | Implement cost governance for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-cost-governance |
-| Establish governance, security, and compliance for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-security-governance-and-compliance |
+| Establish governance and security baseline for Arc servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-security-governance-and-compliance |
 | Apply governance, security, and compliance for SAP on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/eslz-security-governance-and-compliance |
 
 ### Security
@@ -314,7 +308,7 @@ This skill requires **network access** to fetch documentation content:
 | Secure Azure API Management frontends, backends, and portal | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/security |
 | Design identity and access management for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-identity-and-access-management |
 | Apply security and compliance design to cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-security-governance-and-compliance |
-| Apply security principles to cloud-scale analytics platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure |
+| Secure cloud-scale analytics with governance-driven controls | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure |
 | Design authentication for cloud-scale analytics in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure-authentication |
 | Implement authorization and RBAC for analytics environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure-authorization |
 | Protect personal data and privacy in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure-data-privacy |
@@ -343,7 +337,7 @@ This skill requires **network access** to fetch documentation content:
 | Protect and ensure reliability of Azure estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/protect |
 | Prepare Azure cloud operations using RAMP model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/ready-cloud-operations |
 | Optimize Azure workloads after migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/optimize-workloads-after-migration |
-| Optimize Azure workloads after modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization |
+| Optimize and operate Azure workloads post-modernization | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization |
 | Implement shared management cloud operations model | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/shared-management-operating-model |
 | Design management foundations for Azure environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management |
 | Design platform-level BCDR for Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery |
@@ -361,17 +355,15 @@ This skill requires **network access** to fetch documentation content:
 | Design management and monitoring for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring |
 | Operate and manage Azure VMware Solution private clouds | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/manage |
 | Plan business continuity and disaster recovery for analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-business-continuity-and-disaster-recovery |
-| Set up management and monitoring for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-management-and-monitoring |
+| Implement management and monitoring for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-management-and-monitoring |
 | Adopt DevOps practices for cloud-scale analytics platforms | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage |
 | Implement data observability for analytics and data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage-observability |
-| Automate platform operations and DevOps for analytics landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage-platform-automation-devops |
-| Automate onboarding and operations for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-automation-disciplines |
+| Automate platform and DevOps for analytics landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/manage-platform-automation-devops |
+| Automate lifecycle management for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-automation-disciplines |
 | Implement CI/CD and GitOps for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cicd-gitops-disciplines |
-| Manage extensions for Azure Arc-enabled Kubernetes deployments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-extensions-management |
 | Manage and monitor Azure Arc-enabled Kubernetes clusters | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-management-disciplines |
-| Design services observability for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-services-observability |
-| Automate onboarding and lifecycle management for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-automation-arc-server |
-| Manage and monitor Azure Arc-enabled servers at scale | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-management-and-monitoring-arc-server |
+| Automate onboarding and lifecycle for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-automation-arc-server |
+| Plan management and monitoring for Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-management-and-monitoring-arc-server |
 | Design BCDR connectivity for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/business-continuity-disaster-recovery-connectivity-design |
 | Design BCDR for Oracle on Azure VM landing zone | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-disaster-recovery-iaas |
 | Implement BCDR for Oracle Exadata Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-disaster-recovery-oracle-database-azure |
@@ -407,8 +399,8 @@ This skill requires **network access** to fetch documentation content:
 ### Adoption Scenarios
 | Topic | URL |
 |-------|-----|
-| Adopt AI agents using CAF-based framework | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ |
-| Apply CAF to AI solution adoption on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/ |
+| Adopt AI agents with structured CAF-based framework | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/ |
+| Apply CAF scenario guidance for AI adoption in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/ |
 | Establish organizational AI governance using NIST AI RMF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/govern |
 | Select Azure IaaS compute for AI workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/infrastructure/compute |
 | Implement AI workloads on Azure IaaS with CycleCloud | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/infrastructure/cycle-cloud |
@@ -463,7 +455,7 @@ This skill requires **network access** to fetch documentation content:
 | Design identity and access for Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/identity-and-access-management |
 | Design networking for Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/network-topology-and-connectivity |
 | Apply security patterns to Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/security |
-| Migrate desktops to Azure Virtual Desktop with CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ |
+| Migrate user desktops to Azure Virtual Desktop using CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ |
 | Implement enterprise-scale Azure Virtual Desktop landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone |
 | Plan business continuity and disaster recovery for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery |
 | Apply enterprise enrollment design to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-enterprise-enrollment |
@@ -482,21 +474,25 @@ This skill requires **network access** to fetch documentation content:
 | Apply security governance and compliance to Citrix on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-security-governance-compliance |
 | Adopt Azure VMware Solution using CAF guidance | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/ |
 | Use landing zone accelerator for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone |
-| Implement cloud-scale analytics with Azure and CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/ |
-| Apply Common Data Model in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models |
+| Implement deprecated cloud-scale analytics scenario in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/ |
+| Use Common Data Model for interoperable data products | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models |
 | Design data domains for Azure data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-domains |
-| Implement a data marketplace for data mesh on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-data-marketplace |
-| Manage master data across data mesh domains | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-master-data-management |
+| Follow a staged checklist to adopt data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-checklist |
+| Design a data marketplace in Azure data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-data-marketplace |
+| Manage master data in Azure data mesh architectures | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-master-data-management |
 | Adopt data mesh for financial institution analytics on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-scenario |
-| Operationalize data mesh for AI and ML feature engineering | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/operationalize-data-mesh-for-ai-ml |
-| Apply Adatum reference architecture for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-adatum |
-| Secure sensitive healthcare data in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-lamna |
-| Implement multiple data landing zones for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-multizone |
-| Use reference architectures for cloud-scale analytics landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-overview |
+| Standardize data formats in cloud-scale analytics lakes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-standardization |
+| Operationalize data mesh for AI/ML feature engineering | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/operationalize-data-mesh-for-ai-ml |
+| Navigate cloud-scale analytics reference architectures | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/overview-architectures |
+| Apply cloud-scale analytics to Adatum scenario | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-adatum |
+| Secure healthcare analytics with cloud-scale architecture | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-lamna |
+| Implement multiple analytics landing zones in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-multizone |
+| Select reference architectures for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/reference-architecture-overview |
 | Architect self-serve data platforms for data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/self-serve-data-platforms |
-| Design and implement data products in data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-product |
 | Treat Azure Machine Learning as a data product in analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/azure-machine-learning |
-| Understand tenant and enrollment choices for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-enterprise-enrollment-and-azure-ad-tenants |
+| Use Azure Data Lake Storage for cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/best-practices/data-lake-overview |
+| Implement cost governance for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cost-governance |
+| Design services observability for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-services-observability |
 | Unify hybrid and multicloud operations with Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Run Oracle workloads in Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/ |
 | Deploy Oracle on Azure IaaS landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-accelerator |

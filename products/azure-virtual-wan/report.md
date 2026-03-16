@@ -1,14 +1,13 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   limits-quotas: P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub
     routing capabilities, throughput caps, and performance constraints
   architecture-patterns: 'Designing and routing Virtual WAN hubs: secure internet/branch
     access, NVA/Azure Firewall patterns, VNet isolation, BGP/ExpressRoute/SD‑WAN integration,
     DR, and global transit architectures.'
-  configuration: Configuring Azure Virtual WAN hubs, routing, BGP, NVAs, Azure Firewall,
-    VPN NAT, P2S/Always On VPN (certs, clients, Entra ID), IPsec policies, and monitoring
-    metrics/logs.
+  configuration: Configuring Azure Virtual WAN hubs, routing, BGP, NVAs, VPN (P2S/Always
+    On), IPsec/NAT, Entra ID auth, certificates, client profiles, and monitoring/metrics.
   troubleshooting: Diagnosing and fixing Virtual WAN issues, including P2S VPN client
     prerequisite checks, connectivity problems, and using built-in tools and diagnostics
     for troubleshooting.
@@ -18,16 +17,18 @@ category_descriptions:
     ExpressRoute, SD-WAN/VPN CPEs, RADIUS user groups, and sharing services via Azure
     Private Link
   security: Configuring secure P2S VPN access in Virtual WAN using Microsoft Entra
-    ID (MFA, app registrations, custom app IDs), Azure VPN Client, role assignments,
-    and Azure Firewall–protected spoke access.
+    ID (MFA, app registrations, custom app IDs), Azure VPN Client setup, segmented
+    access, and hub roles/permissions.
   decision-making: Guidance on when/how to upgrade Virtual WAN from Basic to Standard,
     and how to choose Virtual WAN partners and hub locations for your network design.
-skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
-  decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Virtual WAN applications. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
-  Azure Traffic Manager (use azure-traffic-manager).
+skill_description: Provides expert guidance on Azure Virtual WAN architecture, configuration,
+  deployment, security, integrations, limits, decision-making, and troubleshooting
+  across hubs, VNets, VPN (P2S/S2S), ExpressRoute, and NVAs. Use this skill when designing
+  global transit architectures, choosing hub locations or partners, configuring BGP/routing,
+  securing and scaling P2S VPN with Entra ID, automating deployments (including cross-tenant),
+  or diagnosing connectivity and performance issues using built-in diagnostics. Not
+  for classic Azure VPN Gateway, VNet peering-only designs, or non–Virtual WAN SD-WAN/VPN
+  solutions without Virtual WAN involvement.
 ---
 # Azure Virtual WAN Crawl Report
 
@@ -41,8 +42,8 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
+- **Updated Pages**: 4
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -62,6 +63,17 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 
 ## Changes
 
+### Updated Pages
+
+- [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub)
+  - Updated: 2025-09-15T22:11:00.000Z → 2025-12-01T23:10:00.000Z
+- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing)
+  - Updated: 2024-01-10T23:11:00.000Z → 2025-09-11T17:16:00.000Z
+- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal)
+  - Updated: 2023-10-30T08:00:00.000Z → 2025-09-11T17:16:00.000Z
+- [Manage access to resources - Spoke VNet P2S](https://learn.microsoft.com/en-us/azure/virtual-wan/manage-secure-access-resources-spoke-p2s)
+  - Updated: 2023-11-21T08:00:00.000Z → 2025-09-11T17:16:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -76,15 +88,12 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | [Configure custom IPsec policy](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-custom-ipsec-portal) | configuration | 0.80 | Custom IPsec policy configuration for Virtual WAN requires specific parameter names, allowed values, and constraints for IKE phases that are product-specific. |
 | [Configure optional settings](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-vpn-client-optional-configurations) | configuration | 0.80 | Details optional client-side parameters (DNS suffixes, custom DNS servers, custom routes, forced tunneling) with specific setting names and usage unique to Azure VPN Client. |
 | [Create or modify custom audience app ID](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-register-custom-app) | security | 0.80 | Describes creating/modifying custom audience App IDs for Microsoft Entra authentication; involves specific app registration fields and values used by Virtual WAN. |
-| [Manage access to resources - Spoke VNet P2S](https://learn.microsoft.com/en-us/azure/virtual-wan/manage-secure-access-resources-spoke-p2s) | security | 0.80 | Shows how to combine Virtual WAN and Azure Firewall rules/filters to restrict P2S user access; includes security rule configuration specific to this scenario. |
 | [RADIUS - Configure NPS and user groups](https://learn.microsoft.com/en-us/azure/virtual-wan/user-groups-radius) | integrations | 0.80 | Shows how to configure Windows NPS/RADIUS with specific Vendor Specific Attributes for Virtual WAN user group support; includes attribute names/values unique to this integration. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-powershell) | configuration | 0.75 | PowerShell cmdlets and parameters for BGP peering between hub router and NVA; detailed configuration surface. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-powershell) | configuration | 0.75 | PowerShell cmdlets and parameters for virtual hub routing; product-specific configuration surface. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva) | configuration | 0.75 | PowerShell-based configuration of hub route tables to NVAs with specific cmdlets and parameters. |
 | [Azure VPN Client - Linux](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-linux) | configuration | 0.75 | Linux (Ubuntu) client configuration using the Microsoft-registered Azure VPN Client app with specific App ID and audience values; contains concrete, product-specific configuration steps and parameters. |
 | [Azure VPN Client - Windows](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-windows) | security | 0.75 | Details Azure VPN Client setup for Entra ID authentication, including protocol constraints (OpenVPN only) and possibly specific client configuration fields; this is product-specific security configuration. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal) | configuration | 0.75 | Portal steps and parameters to establish BGP peering between hub router and NVA; product-specific BGP configuration. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing) | configuration | 0.75 | Portal-based configuration of virtual hub routing with specific route table settings and associations unique to Virtual WAN. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-route-table-nva-portal) | configuration | 0.75 | Portal configuration to steer branch-to-spoke traffic via an NVA using virtual hub route tables; includes specific route table settings. |
 | [Configure P2S - manually registered](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-azure-ad) | security | 0.75 | Covers Microsoft Entra ID authentication for P2S, including specific Audience values and app registration details for the Azure VPN Client, which are product-specific security configuration parameters. |
 | [Configure Route-maps](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-how-to) | configuration | 0.75 | Stepwise creation/editing of Route-maps with specific match/set actions and fields unique to Virtual WAN. |
@@ -97,6 +106,8 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/certificates-point-to-site) | configuration | 0.70 | Shows specific PowerShell cmdlets and parameters to generate root and client certificates for Virtual WAN P2S; these are concrete, product-relevant configuration steps. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing-preference-powershell) | configuration | 0.70 | PowerShell-based configuration of routing preference with concrete parameter names and values. |
 | [Azure VPN Client - macOS](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-vpn-client-mac) | configuration | 0.70 | Client configuration article with product-specific parameters (App ID, audience, protocol support, regional availability) and stepwise settings that an LLM wouldn't reliably know from training. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal) | configuration | 0.70 | Describes how to configure BGP peering between a Virtual WAN hub router and an NVA, including product-specific parameters and routing behavior (route learning/advertising between hub and spoke). This is concrete configuration guidance for a specific Azure Virtual WAN scenario, not just conceptual BGP information. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing) | configuration | 0.70 | Step-by-step configuration of virtual hub routing with product-specific routing constructs and settings (hub router behavior, BGP-based transit routing, gateway interactions). While largely procedural, it encodes concrete configuration patterns and options unique to Azure Virtual WAN routing rather than generic networking theory. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-virtual-hub-routing-preference) | configuration | 0.70 | Details routing preference options and how to configure them; uses specific setting names and allowed values. |
 | [Configure DNAT/Internet inbound for NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-network-virtual-appliance-inbound) | configuration | 0.70 | DNAT for Virtual WAN integrated NVAs is a preview, niche feature; article likely includes specific DNAT rule parameters and constraints unique to Virtual WAN NVA integration. |
 | [Configure ExpressRoute encryption](https://learn.microsoft.com/en-us/azure/virtual-wan/vpn-over-expressroute) | configuration | 0.70 | Detailed steps to establish IPsec/IKE VPN over ExpressRoute private peering with product-specific settings and constraints. |
@@ -119,6 +130,7 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | [Linux - OpenSSL](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-openssl) | configuration | 0.70 | Contains specific OpenSSL commands and parameter usage to produce certificate files compatible with Virtual WAN P2S requirements. |
 | [Linux - strongSwan](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-certificates-linux-strongswan) | configuration | 0.70 | Shows strongSwan CLI commands and options to generate certificates for Virtual WAN P2S; these are detailed configuration steps tied to the product. |
 | [Manage IP configurations for NVAs](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-network-virtual-appliance-add-ip-configurations) | configuration | 0.70 | Managing IP configurations for integrated NVAs in a Virtual WAN hub is product-specific; likely includes IP config object names, constraints, and behaviors not generally known. |
+| [Manage access to resources - Spoke VNet P2S](https://learn.microsoft.com/en-us/azure/virtual-wan/manage-secure-access-resources-spoke-p2s) | security | 0.70 | Shows how to use Azure Virtual WAN and Azure Firewall rules/filters to restrict P2S user access to specific resources in spoke VNets. This is product-specific secure access configuration, involving firewall rule patterns and routing for P2S clients, which fits the security sub-skill. |
 | [Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-entra-gateway) | configuration | 0.70 | Describes specific P2S server settings, Microsoft-registered App ID and Audience values for Azure VPN Client; these are product-specific configuration parameters not generally known. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan-reference) | configuration | 0.70 | A monitoring data reference article typically lists specific metric names, dimensions, log table schemas, and possibly default aggregation or retention details—product-specific configuration/telemetry schema that qualifies as expert knowledge under configuration. |
 | [Next hop IP support](https://learn.microsoft.com/en-us/azure/virtual-wan/next-hop-ip) | configuration | 0.70 | Explains next hop IP support, BGP peering behavior, and configuration between NVAs and the virtual hub router; product-specific routing configuration. |
@@ -182,7 +194,6 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-wan/packet-capture-site-to-site-powershell) | 0.40 | PowerShell-based how-to for packet capture on Virtual WAN S2S gateways; likely command walkthrough rather than a reference of configuration options, limits, or troubleshooting mappings. |
 | [Version 2.x](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-windows-openvpn-client-version-2) | 0.40 | OpenVPN Client 2.x configuration steps for Windows; mostly client-side setup instructions, not deep product configuration or limits. |
 | [Version 3.x](https://learn.microsoft.com/en-us/azure/virtual-wan/point-to-site-vpn-client-certificate-windows-openvpn-client-version-3) | 0.40 | OpenVPN Connect 3.x configuration tutorial; similar to other client how-tos, focused on UI and basic settings rather than detailed Virtual WAN configuration. |
-| [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub) | 0.35 | How-to article for connecting a VNet to a hub; summary suggests procedural steps rather than comprehensive configuration tables or limits. |
 | [About Virtual WAN pricing](https://learn.microsoft.com/en-us/azure/virtual-wan/pricing-concepts) | 0.30 | Pricing concepts article; summary is conceptual about functionalities and billing, no explicit numeric limits or config tables shown. |
 | [Advanced Monitoring for P2S VPN](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-point-to-site-connections) | 0.30 | Shows how to create an Azure Workbook for P2S monitoring; appears to be a monitoring visualization tutorial without expert-level limits, config tables, or error mappings. |
 | [Any-to-any routing](https://learn.microsoft.com/en-us/azure/virtual-wan/quickstart-any-to-any-template) | 0.30 | ARM template quickstart; summary indicates a single deployment example, not a catalog of configuration options or limits. |
@@ -197,6 +208,7 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-monitor-insights) | 0.20 | Describes Azure Monitor Insights view for Virtual WAN and its topology map; summary suggests UI overview rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Configure a site-to-site connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-site-to-site-portal) | 0.20 | Step-by-step tutorial for site-to-site VPN; summary does not mention detailed configuration parameter tables or limits. |
 | [Configure an ExpressRoute connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-portal) | 0.20 | ExpressRoute association tutorial; summary is procedural without expert-level limits, quotas, or config matrices. |
+| [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub) | 0.20 | Primarily a step-by-step portal how-to for connecting a VNet to a Virtual WAN hub; no clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Appears to be procedural tutorial content rather than expert reference material. |
 | [Monitor Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/monitor-virtual-wan) | 0.20 | General guidance on monitoring Virtual WAN with Azure Monitor; appears to be conceptual/how-to without detailed error codes, config tables, or numeric limits. |
 | [What is Virtual WAN?](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about) | 0.20 | High-level overview of Azure Virtual WAN features and architecture without concrete limits, configs, or decision matrices. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/virtual-wan/whats-new) | 0.10 | Release notes/what's new index; summary shows no specific limits, configs, or troubleshooting mappings. |

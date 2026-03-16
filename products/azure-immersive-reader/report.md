@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: Guidance on improving Immersive Reader performance by caching authentication
     tokens, including token reuse patterns and reducing auth overhead.
@@ -7,17 +7,18 @@ category_descriptions:
     languages and behavior, and storing/managing per-user reading and language preferences.'
   security: 'Configuring Immersive Reader security: creating the resource with Entra
     auth, managing Entra role assignments, and setting cookie policy and user consent.'
-  integrations: 'Integrating Immersive Reader into web/iOS apps: launch flows, custom
-    buttons, HTML/MathML prep, multi-resource use, and JavaScript/iOS SDK usage and
-    patterns.'
+  integrations: 'Integrating Immersive Reader into web/iOS apps: launch flows, JS
+    SDK usage, HTML/MathML prep, custom buttons, multi-resource setups, and Vision
+    Read integration.'
   limits-quotas: Supported languages and feature availability for Immersive Reader
     (e.g., which languages work with read-aloud, translation, and other capabilities).
-skill_description: Expert knowledge for Azure AI Immersive Reader development including
-  best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader
-  applications. Not for Azure AI services (use azure-ai-services), Azure AI Language
-  (use azure-language-service), Azure Translator (use azure-translator), Azure AI
-  Speech (use azure-speech).
+skill_description: Expertise in Azure AI Immersive Reader best practices, configuration,
+  integrations, limits/quotas, and security, including token caching and reuse, per-user
+  reading/language preferences, SDK launch flows, supported language capabilities,
+  and Entra-based access control. Use this skill when designing, configuring, or troubleshooting
+  Immersive Reader in web or mobile apps, optimizing performance, or validating language/feature
+  support and security posture. Not for general Azure AI services, non-Immersive Reader
+  accessibility features, or unrelated reading/translation products.
 ---
 # Azure AI Immersive Reader Crawl Report
 
@@ -31,8 +32,8 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 18
+- **Updated Pages**: 1
+- **Unchanged**: 17
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-immersive-reader/azure-immersive-reader.csv`
 
@@ -48,6 +49,11 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 | *(Unclassified)* | 3 | 16.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader)
+  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-04T23:12:00.000Z
 
 ## Classified Pages
 
@@ -66,8 +72,8 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 | [Display math](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to/display-math) | integrations | 0.70 | Covers how to supply MathML to Immersive Reader; likely includes specific API fields or content formats required for math rendering, which are product-specific integration details. |
 | [Prepare HTML content](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-prepare-html) | integrations | 0.70 | Explains required HTML structure and content retrieval for Immersive Reader; contains product-specific content formatting and coding patterns beyond generic HTML knowledge. |
 | [Set the cookie policy](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to/set-cookie-policy) | security | 0.70 | Describes cookie policy options via Immersive Reader options and EU compliance considerations; includes specific setting names and security/privacy configuration behavior. |
+| [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader) | integrations | 0.68 | The page shows concrete, product-specific code patterns for launching Immersive Reader from JavaScript, Python, C#, Android, and iOS. It includes SDK usage and integration details unique to this service rather than generic programming concepts, fitting the integrations & coding patterns category. |
 | [Customize the launch button](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-customize-launch-button) | integrations | 0.65 | Demonstrates customizing the launch button using SDK options or specific attributes; involves product-specific integration patterns and parameters. |
-| [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader) | integrations | 0.65 | Shows how to launch Immersive Reader via JavaScript, Python, Android, and iOS; likely includes SDK/API calls and parameters specific to this product integration pattern. |
 
 ## Unclassified Pages
 

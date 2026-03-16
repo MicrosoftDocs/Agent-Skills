@@ -1,16 +1,17 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  integrations: 'Patterns and setup for wiring Grafana to Azure services: Agent Framework
-    and AI Foundry monitoring, Prometheus (AKS/AMW), Azure Monitor alerts, and Azure
-    Data Explorer data sources.'
+  integrations: Connecting Managed Grafana to Azure AI agents, workflows, Prometheus/AKS,
+    Azure Monitor, and Data Explorer, plus configuring plugins, alerts, and private/managed
+    data source integrations.
   security: 'Securing Managed Grafana: auth/permissions, Entra/Team Sync, roles, service
     accounts/tokens, private access/endpoints, outbound IPs, data encryption, and
     security best practices.'
   configuration: 'Configuring Azure Managed Grafana workspaces: instance settings,
-    plugins, metrics/monitoring, diagnostic logs, and SMTP email alert setup.'
-  deployment: Designing highly available Azure Managed Grafana workspaces, including
-    reliability features, SLAs, and enabling zone-redundant deployments for resiliency.
+    built-in MCP, plugins, metrics/diagnostics via Azure Monitor, and SMTP email alert
+    setup.'
+  deployment: Configuring Azure Managed Grafana deployment options, including enabling
+    zone redundancy for workspaces and upgrading existing workspaces to Grafana 12.
   decision-making: Guidance on choosing and managing Grafana Enterprise plans, migrating
     existing Grafana or dashboards into Azure Managed Grafana, and upgrading workspaces
     to Grafana 11.
@@ -18,44 +19,58 @@ category_descriptions:
     understanding its service limits, quotas, and operational constraints
   troubleshooting: Diagnosing and resolving common Azure Managed Grafana issues, including
     access, configuration, and private endpoint connectivity and DNS problems.
-skill_description: Expert knowledge for Azure Managed Grafana development including
-  troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Managed Grafana applications. Not for Azure Monitor (use azure-monitor), Azure App
-  Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines).
+skill_description: 'Expertise in Azure Managed Grafana for configuration, decision-making,
+  deployment, integrations, limits/quotas, security, and troubleshooting. Use this
+  skill to design, secure, and operate Azure Managed Grafana workspaces: set up instance
+  settings, plugins, SMTP, and diagnostics; choose Enterprise plans and upgrade paths
+  (Grafana 11/12); configure zone redundancy; integrate with Azure Monitor, Prometheus/AKS,
+  Azure Data Explorer, Azure AI agents, and private/managed data sources; understand
+  rendering limits and service quotas; and resolve access, configuration, and private
+  endpoint/DNS issues. Not for generic Grafana OSS, self-hosted Grafana, or non-Azure
+  monitoring solutions.'
 ---
 # Azure Managed Grafana Crawl Report
 
 ## Summary
 
-- **Total Pages**: 42
-- **Fetched**: 42
+- **Total Pages**: 43
+- **Fetched**: 43
 - **Fetch Failed**: 0
-- **Classified**: 34
+- **Classified**: 35
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 3
 - **Updated Pages**: 0
-- **Unchanged**: 42
-- **Deleted Pages**: 0
+- **Unchanged**: 40
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 5 | 11.9% |
-| decision-making | 4 | 9.5% |
-| deployment | 2 | 4.8% |
-| integrations | 9 | 21.4% |
-| limits-quotas | 2 | 4.8% |
-| security | 10 | 23.8% |
-| troubleshooting | 2 | 4.8% |
-| *(Unclassified)* | 8 | 19.0% |
+| configuration | 6 | 14.0% |
+| decision-making | 3 | 7.0% |
+| deployment | 2 | 4.7% |
+| integrations | 10 | 23.3% |
+| limits-quotas | 2 | 4.7% |
+| security | 10 | 23.3% |
+| troubleshooting | 2 | 4.7% |
+| *(Unclassified)* | 8 | 18.6% |
 
 ## Changes
+
+### New Pages
+
+- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
+- [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry)
+- [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12)
+
+### Deleted Pages
+
+- ~~Service reliability~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/high-availability)
+- ~~Upgrade to Grafana 11~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-11)
 
 ## Classified Pages
 
@@ -73,7 +88,6 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Grafana settings](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-settings) | configuration | 0.80 | How-to for Grafana settings like 'Viewers can Edit' and 'External Enabled'; likely includes specific setting names and allowed values. |
 | [Manage access and permissions for users and identities](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-access-permissions-users-identities) | security | 0.80 | Explains supported Grafana roles and how to assign them to users, groups, service principals, and managed identities; product-specific access model. |
 | [Migrate from Essential service tier](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate-essential-service-tier) | decision-making | 0.80 | Describes retirement timeline for Essential tier and two migration paths with guidance; tier-selection and migration decision content. |
-| [Service reliability](https://learn.microsoft.com/en-us/azure/managed-grafana/high-availability) | deployment | 0.80 | Describes VM-based hosting, redundancy, availability zones, and DR options for Standard plan; includes plan-specific reliability behavior. |
 | [Set up private access](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-set-up-private-access) | security | 0.80 | Covers disabling public access and configuring private endpoints; product-specific network security configuration. |
 | [Use Grafana Team Sync](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-sync-teams-with-entra-groups) | security | 0.80 | Describes mapping Microsoft Entra groups to Grafana Teams and interaction with Azure RBAC roles; product-specific permission configuration. |
 | [Configure data sources](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-data-source-plugins-managed-identity) | integrations | 0.75 | Covers supported data sources per plan and how to add/configure/remove them; includes plan-specific support matrix and data source configuration details. |
@@ -82,6 +96,7 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace) | integrations | 0.70 | Product-specific integration between Azure Monitor workspace (managed Prometheus) and Managed Grafana with configuration steps and parameters. |
 | [Agent Framework Workflow dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard) | integrations | 0.70 | Prebuilt dashboard for multi-agent workflows with OpenTelemetry and Application Insights; product-specific metrics and visualization patterns. |
 | [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | integrations | 0.70 | Prebuilt dashboard for Agent Framework with Application Insights; includes specific metrics, dimensions, and visualization patterns unique to this integration. |
+| [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.70 | Covers how to configure the Azure Managed Grafana MCP endpoint specifically inside Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a product-specific integration pattern between two Azure services, likely including endpoint and configuration details beyond generic tutorial content. |
 | [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus) | integrations | 0.70 | Product-specific integration pattern between AKS-hosted Prometheus and Azure Managed Grafana via managed private endpoint, likely with concrete endpoint settings and constraints. |
 | [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise) | decision-making | 0.70 | Describes prerequisites (Standard plan), plan options, and how to update plans; supports decision-making about Enterprise add-on usage and access to plugins. |
 | [Enable zone redundancy](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-enable-zone-redundancy) | deployment | 0.70 | Describes zone redundancy option, availability zone usage, and billing implications; product-specific deployment/reliability configuration. |
@@ -89,12 +104,13 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins) | configuration | 0.70 | Explains how to add/remove plugins via Azure portal rather than Grafana UI/CLI; product-specific configuration path and constraints. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |
-| [Upgrade to Grafana 11](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-11) | decision-making | 0.70 | Contains specific retirement and auto-upgrade dates and guidance on handling breaking changes; product-specific upgrade decision and timing details. |
 | [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts) | integrations | 0.70 | Explains how Azure Monitor and Grafana alerts interact, including plan-specific availability (Essential lacks Grafana alerts) and shared compute/query throttling limits. |
 | [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts) | security | 0.70 | Explains enabling service accounts and creating tokens for API access; product-specific identity and access configuration. |
+| [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server) | configuration | 0.68 | Describes the built-in AMG-MCP endpoint, its authentication behavior, and how it is used programmatically with Azure Managed Grafana. This is product-specific configuration knowledge (endpoint, auth modes, MCP usage) that is not generic, but it does not focus on limits, troubleshooting, or architecture patterns. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace) | configuration | 0.65 | Details diagnostic settings and event log categories for the service; product-specific logging configuration. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | configuration | 0.65 | Shows which workspace metrics are exposed and how to configure metric charts; includes specific metric names and usage patterns. |
 | [Use reporting and image rendering](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-reporting-and-image-rendering) | limits-quotas | 0.65 | Covers performance and limitations of image rendering and reporting; likely includes concrete constraints (e.g., size, frequency, timeout) that are product-specific. |
+| [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12) | deployment | 0.64 | Provides concrete version retirement dates and automatic upgrade behavior for Grafana 11 to 12 in Azure Managed Grafana. This is expert lifecycle/deployment knowledge (timelines, enforced upgrades) specific to the managed service, not just conceptual guidance. |
 
 ## Unclassified Pages
 

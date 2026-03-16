@@ -1,9 +1,9 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Role-based access control applications. Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security), Azure Lighthouse (use azure-lighthouse).
+description: Provides expert guidance on Azure Role-Based Access Control (RBAC), including troubleshooting access issues, designing secure role and ABAC models, choosing appropriate scopes and role types, configuring built-in and custom roles, understanding limits and quotas, and integrating RBAC with CLI, PowerShell, templates, REST, and managed identities. Use this skill when you need to design or review RBAC/ABAC, resolve “access denied” problems, plan migrations from classic admins, or automate role assignments and governance. Not for general Azure resource configuration, Entra ID-only role design, or non-Azure RBAC systems.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Role-based access control Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L44-L50 | Security-focused guidance on designing Azure RBAC: choosing scopes, delegating access with ABAC conditions, and applying least privilege and separation-of-duties best practices. |
 | Decision Making | L51-L58 | Guidance on choosing and migrating role models: moving from classic admins to RBAC, scaling with ABAC, selecting Azure vs Entra vs classic roles, and transferring subscriptions between directories. |
 | Limits & Quotas | L59-L64 | Designing and managing Azure RBAC custom roles, including understanding role structure, permissions, and step-by-step creation using the Azure portal |
-| Security | L65-L129 | Managing and securing Azure RBAC: built‑in security roles, deny assignments, conditional/ABAC access, PIM, privileged access alerts, and policy-based RBAC governance. |
+| Security | L65-L129 | Azure RBAC roles, permissions, and conditions: built‑in role references by service category, custom roles, ABAC/conditions, delegation, deny assignments, PIM, policy, and security best practices. |
 | Configuration | L130-L141 | Configuring Azure RBAC/ABAC: prerequisites, condition syntax, role assignments, built‑in vs custom roles, and creating/inspecting custom role definitions via CLI and PowerShell |
 | Integrations & Coding Patterns | L142-L158 | How to assign, list, and query Azure RBAC role assignments using portal, CLI, PowerShell, Bicep/ARM templates, REST API, and managed identities |
 
@@ -68,7 +68,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference for all Azure RBAC built-in roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles |
 | Azure RBAC AI and ML built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/ai-machine-learning |
 | Azure RBAC analytics built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/analytics |
-| Azure RBAC compute built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute |
+| Understand Azure RBAC built-in compute roles and permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute |
 | Azure RBAC containers built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/containers |
 | Azure RBAC databases built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/databases |
 | Azure RBAC DevOps built-in roles reference | https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/devops |
@@ -102,7 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Elevate Global Administrator access to all subscriptions | https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin |
 | Use AI and machine learning RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/ai-machine-learning |
 | Use Analytics category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/analytics |
-| Use Compute category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute |
+| Use Azure RBAC compute permissions for custom roles | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute |
 | Use Containers category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/containers |
 | Use Databases category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/databases |
 | Use DevOps category Azure RBAC permissions | https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/devops |

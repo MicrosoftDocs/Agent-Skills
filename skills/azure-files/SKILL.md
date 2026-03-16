@@ -1,9 +1,9 @@
 ---
 name: azure-files
-description: Expert knowledge for Azure Files development including best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Files applications. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage).
+description: Provides expert guidance on Azure Files and Azure File Sync across best practices, configuration, decision making, deployment, integrations & coding patterns, limits & quotas, and security. Use this skill when planning or optimizing Azure Files deployments, choosing tiers and redundancy, configuring networking and identity, securing access, integrating with AKS or applications, tuning performance, understanding scale limits, or designing migration/DR strategies. Not for Azure NetApp Files, Azure Blob Storage, on-prem-only file servers, or generic Windows file sharing without Azure Files involvement.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Files Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L35-L50 | Best practices for Azure Files and Azure File Sync: DR/failover planning, server/drive replacement and recovery, safe deprovisioning, and performance tuning (SMB, NFS, Linux, VDI/FSLogix). |
-| Decision Making | L51-L70 | Guidance for planning Azure Files deployments: choosing tiers, redundancy, billing, costs, migration paths (SMB/NFS), File Sync topologies, and when to use Azure Files vs alternatives. |
-| Limits & Quotas | L71-L79 | Azure Files/File Sync limits: capacity, IOPS/throughput, scalability targets, API throttling behavior, redundancy/region support, and FAQ on performance-related constraints. |
-| Security | L80-L104 | Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, Kerberos), NTFS/share permissions, encryption in transit, network/firewall config, and managed identity access. |
-| Configuration | L105-L135 | Configuring Azure Files and File Sync: networking, VPN, endpoints, security, redundancy, monitoring/alerts, cloud tiering, and mounting shares on Windows, Linux, and macOS. |
-| Integrations & Coding Patterns | L136-L143 | Using Azure Files from code: AKS CSI integration and .NET, Java, Python SDK usage, including auth, file operations, and app integration patterns. |
-| Deployment | L144-L155 | Guides for deploying and migrating to Azure Files/Azure File Sync from NAS, Linux, GlusterFS, SMB/NFS shares, using tools like Data Box, Storage Mover, and Robocopy, plus moving File Sync resources. |
+| Best Practices | L35-L49 | Best practices for Azure Files and Azure File Sync: disaster recovery, failover, server/drive replacement, safe deprovisioning, and performance tuning for SMB, NFS, VDI, and FSLogix. |
+| Decision Making | L50-L68 | Guidance on planning Azure Files deployments, choosing tiers, redundancy and billing, estimating and reducing costs, and selecting/migrating to Azure Files or Azure File Sync from SMB/NFS/Windows. |
+| Limits & Quotas | L69-L77 | Scalability, performance, and throttling limits for Azure Files and File Sync, including IOPS/throughput caps, tuning guidance, and FAQs on quotas and behavior. |
+| Security | L78-L104 | Securing Azure Files and File Sync: identity-based SMB/NFS auth, Kerberos/AD/Entra setup, ACLs and share permissions, encryption in transit, and network/firewall/proxy hardening. |
+| Configuration | L105-L132 | Configuring Azure Files and Azure File Sync: networking/VPN, private endpoints, DFS, redundancy, monitoring/alerts, cloud tiering, soft delete, and mounting or copying shares across platforms. |
+| Integrations & Coding Patterns | L133-L140 | Guides for integrating Azure Files with AKS via CSI and building .NET, Java, and Python apps using Azure Files SDKs, including auth, mounting, and file I/O patterns. |
+| Deployment | L141-L154 | Guides for deploying and migrating to Azure Files/Azure File Sync: NAS/GlusterFS/SMB/NFS moves, Data Box/Robocopy usage, region/zonal placement, and hybrid sync scenarios. |
 
 ### Best Practices
 | Topic | URL |
@@ -42,10 +42,9 @@ This skill requires **network access** to fetch documentation content:
 | Deprovision Azure File Sync server endpoints safely | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoint-delete |
 | Recover Azure File Sync servers after failures | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-recovery |
 | Plan disaster recovery and failover for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery |
-| Handle large directories on Azure Files with Linux | https://learn.microsoft.com/en-us/azure/storage/files/nfs-large-directories |
-| Tune NFS Azure file share performance at scale | https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance |
+| Handle large directories on NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/nfs-large-directories |
+| Optimize NFS Azure file share performance at scale | https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance |
 | Improve performance of SMB premium Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/smb-performance |
-| Optimize Azure Files performance for workloads | https://learn.microsoft.com/en-us/azure/storage/files/understand-performance |
 | Use Azure Files for virtual desktop and FSLogix profiles | https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads |
 
 ### Decision Making
@@ -57,49 +56,50 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure classic file shares with right tier | https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share |
 | Decide when to use Microsoft.FileShares provider | https://learn.microsoft.com/en-us/azure/storage/files/create-file-share |
 | Estimate Azure Files costs across billing models | https://learn.microsoft.com/en-us/azure/storage/files/file-estimate-cost |
-| Use and plan NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/files-nfs-protocol |
-| Choose Azure Files redundancy options for workloads | https://learn.microsoft.com/en-us/azure/storage/files/files-redundancy |
+| Choose Azure Files redundancy options for durability | https://learn.microsoft.com/en-us/azure/storage/files/files-redundancy |
 | Reduce Azure Files costs using reservations | https://learn.microsoft.com/en-us/azure/storage/files/files-reserve-capacity |
-| Choose application development approaches with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-developer-overview |
+| Select development approaches for Azure Files applications | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-developer-overview |
 | Migrate Linux servers to NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nfs |
 | Choose migration approach for SMB Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview |
 | Choose between Azure Files and Azure NetApp Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-netapp-comparison |
 | Plan Azure Files deployment and access model | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning |
 | Understand and choose Azure Files billing models | https://learn.microsoft.com/en-us/azure/storage/files/understanding-billing |
-| Replace Windows file servers with Azure File Sync | https://learn.microsoft.com/en-us/azure/storage/files/windows-server-to-azure-files |
+| Plan migration from Windows file servers to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/windows-server-to-azure-files |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
 | Understand Azure File Sync scalability and performance targets | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-scale-targets |
 | Review Azure File Sync API throttling limits and behavior | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-throttling |
-| Check redundancy region support for SSD Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/redundancy-premium-file-shares |
 | Azure Files and File Sync FAQ with limits and behaviors | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-faq |
 | Azure Files scalability, IOPS, and throughput limits | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets |
+| Understand and tune Azure Files performance limits | https://learn.microsoft.com/en-us/azure/storage/files/understand-performance |
 
 ### Security
 | Topic | URL |
 |-------|-----|
 | Configure on-premises firewall and proxy for Azure File Sync | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-firewall-and-proxy |
 | Use managed identities to secure Azure File Sync access | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-managed-identities |
-| Authorize Azure Files portal access with Entra or keys | https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal |
-| Enable OAuth-based REST access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/authorize-oauth-rest |
+| Authorize Azure Files data access in the portal | https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal |
+| Enable OAuth-based REST access to Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/authorize-oauth-rest |
+| Change Azure Files SMB identity source securely | https://learn.microsoft.com/en-us/azure/storage/files/change-identity-source |
 | Encrypt data in transit for NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/encryption-in-transit-for-nfs-shares |
-| Configure managed identity access to SMB Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities |
+| Use managed identities to access Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities |
 | Configure network security perimeter for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-network-security-perimeter |
+| Configure security and networking for Azure Files NFS shares | https://learn.microsoft.com/en-us/azure/storage/files/files-nfs-protocol |
 | Disable insecure SMB1 on Linux for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-remove-smb1-linux |
-| Configure root squash security for NFS Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/nfs-root-squash |
+| Configure root squash for NFS Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/nfs-root-squash |
 | Overview of identity-based SMB auth for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview |
 | Configure authorization and access control for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-authorization-overview |
 | Enable AD DS authentication for Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable |
 | Configure on-prem AD DS auth for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-overview |
 | Rotate AD DS storage account identity password | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-update-password |
 | Assign share-level permissions for Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions |
-| Use Entra Domain Services auth with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable |
-| Configure cloud trust between AD DS and Entra ID | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust |
-| Configure Entra Kerberos auth for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable |
-| Enable Kerberos auth for Linux SMB Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable |
-| Configure NTFS ACLs for Azure Files SMB access | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions |
+| Use Entra Domain Services authentication with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable |
+| Configure cloud trust between AD DS and Entra ID for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust |
+| Configure Entra Kerberos authentication for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable |
+| Configure Kerberos authentication for Linux Azure Files clients | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable |
+| Configure directory and file ACLs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions |
 | Configure Azure Files with multiple AD DS forests | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-multiple-forests |
 
 ### Configuration
@@ -116,29 +116,26 @@ This skill requires **network access** to fetch documentation content:
 | Reference metrics and logs for monitoring Azure File Sync | https://learn.microsoft.com/en-us/azure/storage/file-sync/monitor-file-sync-reference |
 | Analyze Azure Files performance metrics in Azure Monitor | https://learn.microsoft.com/en-us/azure/storage/files/analyze-files-metrics |
 | Change redundancy configuration for Azure Files accounts | https://learn.microsoft.com/en-us/azure/storage/files/files-change-redundancy-configuration |
+| Integrate DFS Namespaces with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/files-manage-namespaces |
 | Create Azure Monitor alerts for Azure Files health | https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts |
 | Copy files between Azure file shares with tools | https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-between-shares |
-| Configure Linux P2S VPN access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-linux |
+| Configure Linux point-to-site VPN for Azure Files access | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-linux |
 | Configure Windows P2S VPN access to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-p2s-vpn-windows |
 | Configure site-to-site VPN for Azure Files access | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-configure-s2s-vpn |
-| Mount NFS Azure file shares on Linux | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-how-to-mount-nfs-shares |
-| Configure Azure Monitor for Azure Files metrics and logs | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring |
+| Configure Azure Monitor metrics and logs for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring |
 | Reference for Azure Files monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference |
 | Configure DNS forwarding to Azure Files private endpoints | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-dns |
 | Configure public and private endpoints for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints |
 | Configure networking and security for Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview |
-| Configure and use Azure Files soft delete | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion |
-| Mount SMB Azure file shares on Linux securely | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-linux |
-| Mount Azure file shares over SMB on macOS | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-mac |
+| Configure and use Azure Files soft delete for shares | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion |
 | Mount SMB Azure file shares on Windows | https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows |
-| Configure zonal placement for SSD Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
 | Integrate Azure Files with AKS using CSI driver | https://learn.microsoft.com/en-us/azure/storage/files/azure-kubernetes-service-workloads |
-| Develop .NET applications using Azure Files SDKs | https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files |
-| Develop Java applications using Azure Files SDKs | https://learn.microsoft.com/en-us/azure/storage/files/storage-java-how-to-use-file-storage |
+| Develop .NET applications that integrate with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files |
+| Develop Java applications that integrate with Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/storage-java-how-to-use-file-storage |
 | Develop Python applications using Azure Files SDKs | https://learn.microsoft.com/en-us/azure/storage/files/storage-python-how-to-use-file-storage |
 
 ### Deployment
@@ -148,8 +145,10 @@ This skill requires **network access** to fetch documentation content:
 | Migrate data between Azure file shares with File Sync | https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-share-to-share-migration |
 | Migrate GlusterFS volumes to Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/glusterfs-migration-guide |
 | Migrate SMB/NFS shares to Azure Files via Storage Mover | https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-storage-mover |
+| Determine region redundancy support for SSD Azure Files | https://learn.microsoft.com/en-us/azure/storage/files/redundancy-premium-file-shares |
 | Migrate Linux servers to Azure File Sync hybrid | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-linux-hybrid |
 | Migrate on-prem NAS to Azure Files with Data Box | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-cloud-databox |
 | Migrate NAS SMB shares to Azure File Sync hybrid | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid |
 | Migrate NAS to Azure File Sync via Data Box | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid-databox |
 | Migrate to SMB Azure file shares using Robocopy | https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-robocopy |
+| Use zonal placement for SSD Azure file shares | https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement |

@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Batch accounts and pools: identity (Entra ID, managed identities,
     RBAC), keys/certs, encryption, private endpoints/network perimeters, Key Vault
-    access, and Azure Policy governance.'
+    access, and policy-based governance.'
   configuration: Configuring Batch pools, tasks, networking, containers, autoscale,
     OS/images, filesystems, monitoring, diagnostics events, and alerts for reliable
     job execution.
@@ -12,9 +12,9 @@ category_descriptions:
   integrations: 'Using Azure Batch programmatically and via CLI/PowerShell: SDK patterns
     (JavaScript, .NET, Linux workloads), storing task output in Storage, and adding
     telemetry with Application Insights.'
-  decision-making: Guidance on choosing VM sizes, images, Spot/ephemeral options,
-    cost planning, and migration paths (custom images, low-priority to Spot, node
-    comms) for Azure Batch pools.
+  decision-making: Guidance on choosing VM sizes, images, Spot/ephemeral disks, cost
+    planning, and how to migrate Batch pools (custom images, low-priority VMs, node
+    communication) to newer options.
   best-practices: Performance, scaling, scheduling, security, and data/output best
     practices for designing, monitoring, and optimizing large or specialized Azure
     Batch workloads (MPI, rendering, high task counts).
@@ -27,12 +27,14 @@ category_descriptions:
   architecture-patterns: Architectures and best practices for bursting on-prem render
     farms to Azure Batch, including storage layout, data movement patterns, and performance-optimized
     rendering workflows.
-skill_description: Expert knowledge for Azure Batch development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Batch applications. Not for Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+skill_description: Provides expert guidance on Azure Batch architecture, configuration,
+  deployment, coding patterns, security, limits, and troubleshooting for large-scale
+  or specialized workloads (e.g., rendering, MPI, high task counts). Use this skill
+  when designing or optimizing Batch pools and jobs, choosing VM sizes and images,
+  configuring autoscale and networking, integrating with Storage and Application Insights,
+  planning quotas and costs, securing identities and data, or diagnosing job/pool/node
+  failures. Not for Azure Kubernetes Service, Azure Functions, or other non–Azure
+  Batch compute services.
 ---
 # Azure Batch Crawl Report
 
@@ -46,8 +48,8 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 2
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -67,6 +69,13 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | *(Unclassified)* | 30 | 26.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
+  - Updated: 2025-07-01T08:00:00.000Z → 2026-03-12T05:52:00.000Z
+- [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk)
+  - Updated: 2025-03-27T17:09:00.000Z → 2026-03-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,8 +115,7 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Create a CI/CD pipeline for Batch](https://learn.microsoft.com/en-us/azure/batch/batch-ci-cd) | deployment | 0.70 | Provides product-specific CI/CD patterns using Azure Pipelines and ARM templates to deploy Batch-based HPC environments. |
 | [Create a pool with Azure Compute Gallery](https://learn.microsoft.com/en-us/azure/batch/batch-sig-images) | configuration | 0.70 | Explains how to configure Batch pools to use Compute Gallery images with product-specific image reference settings. |
 | [Create a pool with a managed image resource](https://learn.microsoft.com/en-us/azure/batch/batch-custom-images) | decision-making | 0.70 | Covers managed image vs Compute Gallery usage, API version constraints, and retirement timelines, guiding migration and image selection decisions. |
-| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Provides Batch-specific disk encryption configuration using platform-managed keys and diskEncryptionConfiguration settings. |
-| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | decision-making | 0.70 | Explains when to choose ephemeral OS disks vs managed disks for Batch, including benefits, VM series support, and trade-offs. |
+| [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption) | security | 0.70 | Disk encryption configuration for Batch pools is security-focused and likely includes specific Azure Batch and VM configuration parameters (for example, diskEncryptionConfiguration settings, supported configurations, and required properties). These are product-specific security settings and patterns that go beyond generic encryption concepts. |
 | [Create resource files](https://learn.microsoft.com/en-us/azure/batch/resource-files) | configuration | 0.70 | Explains Batch-specific resource file configuration from various sources and how they are placed on VMs for different task types. |
 | [Job preparation and completion tasks](https://learn.microsoft.com/en-us/azure/batch/batch-job-prep-release) | configuration | 0.70 | Describes Batch-specific job-level prep and release task configuration to manage data movement and cleanup on nodes. |
 | [MPI](https://learn.microsoft.com/en-us/azure/batch/batch-mpi) | best-practices | 0.70 | Describes how to configure multi-instance tasks for MPI applications using Batch .NET, including Batch-specific task settings and coordination patterns. |
@@ -142,6 +150,7 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | [Batch analytics](https://learn.microsoft.com/en-us/azure/batch/batch-analytics) | configuration | 0.65 | Provides reference information for Batch analytics events and alerts, including event schemas and categories, which are service-specific monitoring/diagnostic details. |
 | [Count resources by state](https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts) | best-practices | 0.65 | Describes Batch-specific operations like Get Task Counts and how to use them instead of list queries, which are concrete product features and usage patterns. |
 | [Create a pool across Availability Zones](https://learn.microsoft.com/en-us/azure/batch/create-pool-availability-zones) | configuration | 0.65 | Describes how to configure zonal policy for Batch pools in supported regions with product-specific settings. |
+| [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk) | decision-making | 0.65 | Guidance on when and how to use ephemeral OS disks for Batch pools is a product-specific choice between storage approaches (ephemeral OS vs managed disks) with trade-offs in cost, performance, and startup time. This aligns with decision-making content that helps select the right configuration for different Batch workloads. |
 | [Create an Azure Batch pool with Auto OS Upgrade](https://learn.microsoft.com/en-us/azure/batch/batch-upgrade-policy) | configuration | 0.65 | Provides Batch-specific configuration for enabling Auto OS Upgrade and controlling upgrade strategy on pool nodes. |
 | [Manage Batch accounts with Batch Management .NET](https://learn.microsoft.com/en-us/azure/batch/batch-management-dotnet) | configuration | 0.65 | Shows programmatic management of accounts, keys, and quotas via the Management .NET library; includes specific operations and parameters for configuration and quota discovery. |
 | [Manage private endpoint connections with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/manage-private-endpoint-connections) | security | 0.65 | Covers managing private endpoint connections (list, approve, reject, remove) for Batch accounts with product-specific workflows and operations. |

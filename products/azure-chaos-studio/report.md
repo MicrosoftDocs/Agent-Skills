@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing Chaos Studio: identities, roles, permissions, CMK encryption,
     network/IP controls, Private Link, VNet injection, AKS auth, and safely controlling
@@ -12,13 +12,16 @@ category_descriptions:
     experiment or connectivity failures.
   limits-quotas: 'Chaos Studio limits: agent OS/fault compatibility, known issues,
     regional/HA behavior, and throttling, quotas, and usage constraints for experiments'
-  integrations: Using CLI/REST to create and manage Chaos Studio experiments and routing
-    Chaos Agent telemetry to Application Insights for monitoring
-skill_description: Expert knowledge for Chaos Studio development including troubleshooting,
-  limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when building, debugging, or optimizing Chaos Studio applications. Not for Azure
-  Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability
-  (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
+  integrations: Using CLI and REST to create/run Chaos Studio experiments, and sending
+    Chaos Agent telemetry to Application Insights for monitoring and integration.
+skill_description: Expertise in Microsoft Azure Chaos Studio, including troubleshooting
+  Chaos Agent and experiment issues, understanding limits/quotas, securing identities
+  and network access, configuring experiments (ARM/Bicep, parameters, Azure Monitor/Workbooks,
+  Azure Policy onboarding), and using CLI/REST plus Application Insights integrations
+  and coding patterns. Use this skill when you need to design, secure, operate, or
+  debug Chaos Studio experiments and their agents/targets across supported OSes and
+  regions. Not for general Azure reliability guidance or other chaos engineering tools
+  outside Azure Chaos Studio.
 ---
 # Chaos Studio Crawl Report
 
@@ -32,8 +35,8 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 51
+- **Updated Pages**: 1
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -49,6 +52,11 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | *(Unclassified)* | 20 | 39.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api)
+  - Updated: 2024-10-14T08:00:00.000Z → 2026-03-11T22:15:00.000Z
 
 ## Classified Pages
 
@@ -67,7 +75,6 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | [Targets and capabilities](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-template-targets) | configuration | 0.85 | ARM template samples expose specific resource types, properties, and parameter structures for Chaos Studio targets/capabilities—detailed configuration reference. |
 | [Accessing container image details](https://learn.microsoft.com/en-us/azure/chaos-studio/azure-container-instance-details) | security | 0.80 | Provides exact container image details from MCR used as a bastion for private networking; used in security reviews and allowlisting—product-specific security artifact. |
 | [Authorize Chaos Studio IP addresses for an AKS cluster](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-aks-ip-ranges) | security | 0.80 | Explains how to allow Chaos Studio IP addresses to reach AKS, likely including specific IP ranges and network rule configuration—product-specific security/networking. |
-| [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api) | integrations | 0.80 | Provides concrete REST samples for experiments, targets, and capabilities, including request bodies and parameters unique to Chaos Studio’s API surface. |
 | [Azure policy definitions](https://learn.microsoft.com/en-us/azure/chaos-studio/sample-policy-targets) | configuration | 0.80 | Contains Azure Policy definitions that create Chaos Studio targets/capabilities, including policy rule structure and resource details specific to Chaos Studio. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-bicep) | configuration | 0.80 | Bicep sample defines Chaos Studio resources and parameters; includes specific property names and structures unique to the service. |
 | [Configure an experiment using customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-configure-customer-managed-keys) | security | 0.80 | Covers CMK setup with user-assigned managed identities and Azure Blob Storage; this typically includes specific role assignments, key vault/identity configuration details, and access scope requirements. |
@@ -81,6 +88,7 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | [Chaos Mesh version compatibility](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-versions) | configuration | 0.70 | Version support and compatibility reference typically lists specific OS versions, agent versions, and tool support matrices that are detailed, product-specific configuration/compatibility data. |
 | [Experiment examples](https://learn.microsoft.com/en-us/azure/chaos-studio/experiment-examples) | integrations | 0.70 | Provides concrete CLI and JSON examples for experiment creation; likely includes request schema, parameter names, and values specific to Chaos Studio’s API and portal integration. |
 | [Limitations and known issues](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-limitations) | limits-quotas | 0.70 | Limitations and known issues pages usually enumerate concrete constraints (unsupported scenarios, resource types, or behaviors) that are highly product-specific and not general knowledge. |
+| [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api) | integrations | 0.68 | Page provides concrete REST API usage samples for Azure Chaos Studio, including specific request URLs, HTTP methods, required headers, and body schemas tailored to this service. This is product-specific integration and coding pattern knowledge beyond generic REST usage, fitting the integrations sub-skill. It is not just a tutorial; it shows exact API shapes and parameters unique to Chaos Studio. |
 | [Set up your chaos experiment to emit telemetry to Azure Monitor](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-set-up-azure-monitor) | configuration | 0.65 | Describes how to connect Chaos Studio experiments to Azure Monitor, likely including specific diagnostic settings, resource IDs, and configuration parameters for emitting telemetry events. |
 | [Targets and capabilities](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-targets-capabilities) | security | 0.65 | Explains how targets and capabilities gate which resources and faults can be used, as part of preventing accidental or malicious fault injection—this is product-specific security and access control behavior. |
 | [Measuring Experiment Impact with an Azure Monitor Workbook](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-metrics-and-dashboard) | configuration | 0.60 | Describes a reusable Azure Workbook for correlating faults and metrics; likely includes workbook parameters/queries specific to Chaos Studio telemetry, which are configuration details not generally known. |

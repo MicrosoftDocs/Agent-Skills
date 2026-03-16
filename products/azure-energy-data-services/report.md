@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
@@ -10,8 +10,9 @@ category_descriptions:
   security: 'Security and access control in ADME: auth tokens, ACLs, encryption, legal
     tags, user/group entitlements, API protection, private endpoints, managed identities,
     and support access control.'
-  deployment: Guides for deploying Azure Data Manager for Energy geospatial consumption
-    zones and setting up the OSDU Admin UI for ADME administration and management
+  deployment: Guides for deploying Azure Energy Data Services components, including
+    Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager
+    for Energy administration.
   integrations: Patterns and APIs for integrating ADME/OSDU with external data sources,
     DDMS domain services, large file upload, and exporting logs/metrics to Azure Monitor
     and other tools
@@ -21,27 +22,30 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing manifest ingestion failures in Azure Data
     Manager for Energy using Airflow logs, including log analysis steps and common
     error patterns.
-skill_description: Expert knowledge for Azure Energy Data Services development including
-  troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Energy Data Services applications. Not for Azure Data Explorer
-  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Data Share (use azure-data-share).
+skill_description: Provides expert guidance on architecting, configuring, securing,
+  integrating, deploying, and troubleshooting Azure Energy Data Services (Azure Data
+  Manager for Energy/OSDU) environments, including HA/DR patterns, tier selection,
+  DDMS enablement, auth/ACLs/legal tags, and diagnosing manifest ingestion issues
+  via Airflow logs. Use this skill when designing or reviewing ADME architectures,
+  setting up or tuning configurations, integrating external data sources and monitoring,
+  planning deployments (e.g., Geospatial CZ, Admin UI), or resolving ingestion and
+  platform issues. Not for generic Azure data platforms (e.g., Synapse, Fabric, Databricks)
+  or non-OSDU energy solutions.
 ---
 # Azure Energy Data Services Crawl Report
 
 ## Summary
 
-- **Total Pages**: 51
-- **Fetched**: 51
+- **Total Pages**: 52
+- **Fetched**: 52
 - **Fetch Failed**: 0
 - **Classified**: 34
-- **Unclassified**: 17
+- **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 51
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 50
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -49,16 +53,25 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 2.0% |
-| configuration | 4 | 7.8% |
-| decision-making | 2 | 3.9% |
-| deployment | 2 | 3.9% |
-| integrations | 14 | 27.5% |
-| security | 10 | 19.6% |
-| troubleshooting | 1 | 2.0% |
-| *(Unclassified)* | 17 | 33.3% |
+| architecture-patterns | 1 | 1.9% |
+| configuration | 4 | 7.7% |
+| decision-making | 2 | 3.8% |
+| deployment | 2 | 3.8% |
+| integrations | 14 | 26.9% |
+| security | 10 | 19.2% |
+| troubleshooting | 1 | 1.9% |
+| *(Unclassified)* | 18 | 34.6% |
 
 ## Changes
+
+### New Pages
+
+- [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier)
+
+### Updated Pages
+
+- [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz)
+  - Updated: 2024-11-20T18:03:00.000Z → 2026-03-16T11:10:00.000Z
 
 ## Classified Pages
 
@@ -70,7 +83,7 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 | [Integrate OSDU Service Logs with Azure Monitor](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-integrate-osdu-service-logs-with-azure-monitor) | integrations | 0.75 | Integration of OSDU service logs with Azure Monitor via diagnostic settings; includes product-specific log categories and configuration parameters. |
 | [Publish Microsoft Azure Data Manager for Energy APIs to a secured API gateway](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-secure-apis) | security | 0.75 | Describes publishing APIs through Azure API Management with Private Link and removing public access. Likely includes specific security configuration steps, policies, and network/security settings unique to this integration. |
 | [Set up Private Links](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-set-up-private-links) | security | 0.75 | Private endpoint setup for ADME; includes specific resource types, endpoint configuration, and network security settings. |
-| [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz) | deployment | 0.70 | Deployment guide for GCZ on top of ADME; likely includes product-specific deployment requirements and supported configurations. |
+| [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz) | deployment | 0.70 | Describes how to deploy the OSDU Geospatial Consumption Zone on AKS specifically on top of Azure Data Manager for Energy. This is a product-specific deployment scenario that likely includes concrete deployment requirements (AKS setup, resource dependencies, configuration steps) that go beyond generic deployment knowledge, fitting the deployment sub-skill. |
 | [Deploy OSDU Admin UI](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-osdu-admin-ui) | deployment | 0.70 | Shows how to deploy Admin UI on ADME; includes product-specific deployment steps and possibly constraints. |
 | [Generate auth token](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-generate-auth-token) | security | 0.70 | Token generation for service principals and users is security/auth configuration. Likely includes specific endpoints, scopes, request parameters, and token lifetimes unique to this product, which are expert-level details. |
 | [How to enable External Data Services (EDS)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-external-data-services) | integrations | 0.70 | Describes enabling EDS with managed identity and Key Vault; includes specific configuration parameters and identity settings. |
@@ -113,6 +126,7 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 | [Manifest ingestion](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-manifest-ingestion) | 0.40 | Manifest ingestion concepts; appears conceptual without detailed parameters or quotas. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/energy-data-services/release-notes) | 0.40 | Release notes summary; underlying page may have expert details but summary provided does not indicate specific limits, configs, or error codes. |
 | [Syncing Reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values) | 0.35 | Reference data values overview; synchronization behavior is conceptual in the summary, no explicit config or limits. |
+| [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier) | 0.30 | Tutorial-style guidance on using the Seismic DDMS Change Tier operation; summary does not indicate specific numeric limits, configuration parameter tables, or product-specific error codes. Appears to be procedural how-to content rather than expert reference material. |
 | [Create a Microsoft Azure Data Manager for Energy instance](https://learn.microsoft.com/en-us/azure/energy-data-services/quickstart-create-microsoft-energy-data-services-instance) | 0.30 | Quickstart creation guide; likely step-by-step portal usage without detailed configuration matrices or limits. |
 | [Domain Data Management Services (DDMS)](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-ddms) | 0.30 | DDMS concepts article; conceptual extension model, not concrete config or troubleshooting. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/energy-data-services/faq-energy-data-services) | 0.30 | FAQ pages are often high-level and mixed; the summary does not indicate detailed limits tables, configuration parameters, or error-code-based troubleshooting. Likely general Q&A rather than concentrated expert configuration/troubleshooting content. |

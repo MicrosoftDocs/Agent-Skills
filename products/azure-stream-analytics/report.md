@@ -1,24 +1,23 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs, outputs (SQL, Cosmos
     DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), autoscale, compatibility,
-    error handling, and monitoring/alerts.'
+    monitoring, alerts, and error/late-event policies.'
   security: 'Securing Stream Analytics jobs: managed identities for inputs/outputs,
     private endpoints/VNet integration, data protection, credential rotation, and
     Azure Policy compliance controls.'
-  deployment: Deploying, starting/stopping, scaling, and moving Stream Analytics jobs
-    and clusters, including CI/CD with Bicep, ARM, GitHub Actions, Azure DevOps, npm/NuGet,
-    and IoT Edge/Stack Hub.
+  deployment: 'Deploying and operating Stream Analytics jobs: CI/CD (GitHub, Azure
+    DevOps, npm/NuGet, REST), ARM/Bicep exports, autoscale, start/stop, region moves,
+    and IoT Edge/Azure Stack Hub deployment.'
   troubleshooting: 'Diagnosing and fixing Stream Analytics job issues: error codes
     (config/data/external/internal), input/output connection failures, query/UDF bugs,
     and using diagrams, metrics, and resource logs to debug.'
-  integrations: Patterns and code samples for integrating Stream Analytics with Kafka,
-    ML/AML, Functions, UDFs (C#/JS), anomaly detection, and managing jobs via .NET
-    and schema registry.
-  best-practices: 'Designing, tuning, and troubleshooting Stream Analytics jobs: query
-    patterns, scaling and parallelization, performance metrics, reliability, inputs/outputs,
-    time handling, and alerting.'
+  integrations: Patterns for integrating Stream Analytics with Kafka, Azure ML, Functions,
+    schema/serialization formats, and building custom UDFs/aggregates in C# and JavaScript.
+  best-practices: Performance, scaling, reliability, and query design best practices
+    for Stream Analytics jobs, including debugging, partitioning, metrics, time handling,
+    geospatial, alerts, and Cosmos/SQL outputs.
   decision-making: Guidance on choosing Stream Analytics developer tools, migrating
     projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing
     services for your scenario.
@@ -28,13 +27,15 @@ category_descriptions:
   limits-quotas: Configuring and tuning Stream Analytics streaming units and clusters,
     including how to resize, scale performance, and understand capacity limits and
     resource quotas.
-skill_description: Expert knowledge for Azure Stream Analytics development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Stream Analytics applications.
-  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer
-  (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure Functions
-  (use azure-functions).
+skill_description: Provides expert guidance on Azure Stream Analytics architecture,
+  configuration, performance tuning, integrations, security, deployment, limits, and
+  troubleshooting across cloud and edge scenarios. Use this skill when designing or
+  reviewing Stream Analytics job topologies, optimizing queries and streaming units,
+  configuring inputs/outputs (Event Hubs, Kafka, Cosmos DB, SQL, Power BI, Delta Lake),
+  setting up CI/CD and autoscale, securing with managed identities and private endpoints,
+  or diagnosing job failures and performance issues. Not for general Azure data streaming
+  design outside Azure Stream Analytics or for non-Azure streaming products like Kafka,
+  Flink, or Databricks-only solutions.
 ---
 # Azure Stream Analytics Crawl Report
 
@@ -48,8 +49,8 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
+- **Updated Pages**: 5
+- **Unchanged**: 163
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -58,17 +59,30 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.2% |
-| best-practices | 16 | 9.5% |
+| best-practices | 15 | 8.9% |
 | configuration | 31 | 18.5% |
 | decision-making | 3 | 1.8% |
 | deployment | 13 | 7.7% |
-| integrations | 15 | 8.9% |
+| integrations | 16 | 9.5% |
 | limits-quotas | 2 | 1.2% |
 | security | 16 | 9.5% |
 | troubleshooting | 16 | 9.5% |
 | *(Unclassified)* | 54 | 32.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline)
+  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
+- [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs)
+  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
+- [Common query patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns)
+  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-04T08:00:00.000Z
+- [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json)
+  - Updated: 2025-05-12T22:03:00.000Z → 2026-03-06T23:15:00.000Z
+- [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection)
+  - Updated: 2024-01-09T08:00:00.000Z → 2026-03-06T23:15:00.000Z
 
 ## Classified Pages
 
@@ -124,6 +138,7 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | [Azure Cosmos DB output overview](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-cosmos-db-output) | configuration | 0.70 | Output adapter page typically includes sink-specific property tables (e.g., account, key, collection, partition key, batching options) and constraints unique to Cosmos DB output, which are not generic knowledge. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-output) | configuration | 0.70 | Describes Event Hubs as an output, including mention of maximum message size and batch size optimization; contains product-specific output configuration details. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/stream-analytics/policy-reference) | security | 0.70 | Lists Azure Policy built-in definitions for Stream Analytics; these include specific policy names, effects, and scopes that are product-specific security/compliance configuration details. |
+| [Common query patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns) | best-practices | 0.70 | The page describes concrete, product-specific query patterns and designs for Azure Stream Analytics and Fabric Eventstream, including how to structure queries for typical streaming scenarios. This is actionable, pattern-based guidance specific to the product rather than generic SQL concepts, fitting best-practices. It does not focus on limits, deployment, or configuration tables. |
 | [Configure autoscale settings](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-autoscale) | configuration | 0.70 | Explains autoscale rule definitions and SU configuration using the CI/CD tool; likely includes specific setting names, ranges, and behavior unique to Stream Analytics. |
 | [Debug UDFs](https://learn.microsoft.com/en-us/azure/stream-analytics/debug-user-defined-functions) | troubleshooting | 0.70 | Focused on debugging UDFs with local runs; such articles typically map symptoms to causes and show specific diagnostic steps in VS/VS Code for this product. |
 | [Debug queries using job diagram](https://learn.microsoft.com/en-us/azure/stream-analytics/debug-locally-using-job-diagram) | troubleshooting | 0.70 | Uses job diagrams and intermediate results to isolate causes of missing/unexpected output; symptom-to-cause troubleshooting specific to Visual Studio tools. |
@@ -149,19 +164,19 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | [Scale with ML functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-with-machine-learning-functions) | best-practices | 0.70 | Focuses on how to scale Stream Analytics jobs that call ML Studio (classic) functions using partitioning and stream units; this is product-specific guidance with concrete configuration patterns for performance and reliability. |
 | [Sentiment analysis with ML models](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial) | integrations | 0.70 | Shows how to call ML Studio (classic) via UDFs; includes product-specific integration steps, endpoint usage, and configuration patterns. |
 | [Service Bus topics](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-topics-output) | configuration | 0.70 | Summary notes a table of property names for topic output and mentions partition behavior tied to SKU; this is concrete configuration behavior for this adapter. |
-| [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs) | configuration | 0.70 | Describes setting up data connections from multiple Azure resources, including supported compression types and cross-subscription inputs; likely includes specific configuration parameters and options. |
+| [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline) | deployment | 0.70 | The article describes product-specific CI/CD setup for Azure Stream Analytics using Azure DevOps, including how to structure build and release pipelines and use the Stream Analytics CI/CD tools. This is deployment-focused guidance for a particular Azure service and toolchain, beyond generic deployment commands or concepts. |
+| [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs) | configuration | 0.70 | Page describes product-specific input configuration details for Azure Stream Analytics, including supported Azure resource types, cross-subscription behavior, and exact supported compression types (None, Gzip, Deflate) with the exception that reference data inputs do not support compression. These are concrete, product-specific configuration capabilities rather than generic concepts, fitting the configuration sub-skill. |
 | [Table storage](https://learn.microsoft.com/en-us/azure/stream-analytics/table-storage-output) | configuration | 0.70 | Summary mentions a table of property names and descriptions for creating a table output, which is exactly a configuration-parameter reference. |
 | [Threshold-based rules](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-threshold-based-rules) | best-practices | 0.70 | Describes using reference data to build configurable threshold-based rules; provides a concrete product-specific pattern and gotchas for alerting solutions. |
 | [Update credentials](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-login-credentials-inputs-outputs) | security | 0.70 | Covers updating credentials and resuming jobs; this is identity/credential management with product-specific operational steps and constraints (must stop job, resume from last output). |
 | [Use ML REST APIs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics) | integrations | 0.70 | Covers how to wire Azure Machine Learning Studio (classic) web service endpoints as UDFs in Stream Analytics, including endpoint configuration details that are product-specific integration patterns. |
 | [Watermark delay increase](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-analysis-with-metric-dimensions) | best-practices | 0.70 | Explains how to interpret specific metrics like watermark delay and backlogged events to assess performance; provides product-specific guidance on what to monitor and how. |
+| [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) | integrations | 0.68 | The page documents product-specific ML functions (AnomalyDetection_SpikeAndDip and AnomalyDetection_ChangePoint) used within Azure Stream Analytics, including their behavior and assumptions (such as requiring uniformly sampled time series). These are concrete, service-specific function patterns and parameters that go beyond generic anomaly detection concepts, fitting the integrations & coding patterns category best. |
 | [Set up CI/CD pipeline](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-cicd) | deployment | 0.68 | Describes a NuGet package that adds MSBuild, local run, and deployment tooling; includes product-specific build/deploy configuration for CI/CD. |
 | [Using API for IoT Edge jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-cicd-api) | deployment | 0.68 | Focuses on using specific REST APIs to build CI/CD for Stream Analytics on IoT Edge; includes product-specific deployment API usage rather than generic tutorial content. |
 | [Deploy jobs with Bicep](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-deploy-with-bicep) | deployment | 0.67 | Bicep-based deployment of Stream Analytics jobs; involves product-specific resource types and properties in infrastructure-as-code. |
 | [Build, test, and deploy with PowerShell](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-tools) | deployment | 0.66 | Describes using a product-specific npm package for CI/CD; typically includes command/config parameters and patterns unique to Stream Analytics deployment. |
-| [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline) | deployment | 0.66 | Azure DevOps-specific CI/CD setup for Stream Analytics jobs; likely includes product-specific tasks, parameters, and deployment constraints. |
 | [Add SQL Database as output](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-db-table) | configuration | 0.65 | Explains using SQL Database as an output; such pages typically include connection properties, table schema expectations, and adapter-specific settings. |
-| [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) | integrations | 0.65 | Describes product-specific ML functions (AnomalyDetection_SpikeAndDip, AnomalyDetection_ChangePoint) with concrete usage patterns and assumptions (uniformly sampled time series), which are detailed integration/coding patterns unique to Azure Stream Analytics. |
 | [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-database-explorer-output) | configuration | 0.65 | Output article for a specific sink generally contains property/setting tables (cluster URI, database, table, batching) and constraints that are product-specific configuration knowledge. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/stream-analytics/postgresql-database-output) | configuration | 0.65 | Describes writing to an existing PostgreSQL table; such pages normally include required table schema expectations, connection properties, and adapter-specific settings that qualify as configuration details. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-functions-output) | configuration | 0.65 | Describes an output adapter to Functions; such pages usually define binding parameters, payload formats, and configuration fields unique to this integration. |
@@ -170,7 +185,7 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | [Geospatial scenarios](https://learn.microsoft.com/en-us/azure/stream-analytics/geospatial-scenarios) | best-practices | 0.65 | Uses built-in geospatial functions for specific scenarios; likely includes concrete query patterns and product-specific function usage that serve as best-practice patterns. |
 | [Improve query performance](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization) | best-practices | 0.65 | Describes how to configure partitions and tune queries for scale; typically includes concrete partitioning patterns and SU settings that are product-specific best practices. |
 | [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs) | best-practices | 0.65 | Covers tuning queries, partitioning, and SU settings to increase throughput; these are actionable, product-specific performance recommendations. |
-| [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | best-practices | 0.65 | Describes how to operate on complex data formats in this service; typically includes specific query patterns and edge cases for the Stream Analytics runtime. |
+| [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | integrations | 0.65 | The page explains how to operate on complex data types (arrays, nested JSON/Avro) within Azure Stream Analytics queries. This is product-specific parsing and data handling guidance, likely including concrete syntax and function usage unique to Stream Analytics’ query language, which aligns best with integrations & coding patterns rather than generic concepts. |
 | [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network) | security | 0.65 | Describes how to run Stream Analytics jobs in an Azure virtual network, which typically includes product-specific network/security configuration (subnets, private endpoints, access requirements) beyond generic concepts. |
 | [Service Bus queues](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-queues-output) | configuration | 0.65 | Service Bus output adapter pages typically list configuration properties (queue name, authentication, serialization) and protocol details (AMQP usage) that are product-specific configuration parameters. |
 | [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.65 | Focuses on design choices for start time and late/early events; this is product-specific guidance on time semantics and metrics, beyond generic theory. |
@@ -180,7 +195,6 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | [Export and deploy with Azure Resource Manager](https://learn.microsoft.com/en-us/azure/stream-analytics/resource-manager-export) | deployment | 0.63 | Describes exporting jobs to ARM templates with resource definitions and properties; these are deployment-focused, product-specific configuration structures. |
 | [Run a C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf) | integrations | 0.63 | Covers C# UDF integration including how to reference DLLs and function signatures; product-specific coding patterns and configuration for UDFs. |
 | [Migrate to VS Code](https://learn.microsoft.com/en-us/azure/stream-analytics/migrate-to-vscode) | decision-making | 0.62 | Migration guidance between tooling environments; likely includes concrete steps, mapping of project structures, and recommendations for when/how to migrate. |
-| [Common query patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns) | best-practices | 0.60 | Covers concrete query patterns and designs for this engine; these are product-specific DO/DON’T patterns and examples beyond generic SQL knowledge. |
 | [Compatibility level](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-compatibility-level) | configuration | 0.60 | Describes setting compatibility levels and behavioral changes; such pages usually enumerate level values and their effects, which are product-specific configuration options. |
 | [High-frequency trading](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-high-frequency-trading) | integrations | 0.60 | Shows advanced analytics with SQL plus JavaScript UDFs/UDAs for high-frequency trading; includes product-specific coding patterns and integration of UDFs that go beyond generic knowledge. |
 | [IoT Edge](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge) | deployment | 0.60 | Describes creating edge jobs and deploying to IoT Edge; such pages usually include supported runtimes, module configuration, and deployment constraints specific to this scenario. |

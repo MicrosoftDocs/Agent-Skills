@@ -1,14 +1,14 @@
 ---
 name: azure-test-plans
-description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Test Plans applications. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
+description: Provides expert guidance on Azure Test Plans, including troubleshooting common issues, understanding and working within limits and quotas (such as custom fields on test results), configuring security and access (permissions, roles, licensing), and using integrations and coding patterns (including tcm.exe) to automate and manage test plans, suites, and runs. Use this skill when you need to diagnose test plan problems, set up or adjust access and security, configure custom result fields, or script/automate Azure Test Plans operations. Not for questions about other Azure DevOps services (e.g., Repos, Pipelines, Boards) or non-Azure test management tools.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Test Plans Skill
 
-This skill provides expert guidance for Azure Test Plans. Covers limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Test Plans. Covers troubleshooting, limits & quotas, security, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,9 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L31-L35 | Configuring and managing custom fields on test results in Azure Test Plans, including setup steps, field types, and how they appear in test runs and reports. |
-| Security | L36-L40 | Managing Azure Test Plans access: configuring permissions, security roles, and licensing requirements for users and groups |
-| Configuration | L41-L44 | Using tcm.exe to manage Azure Test Plans: creating and running test suites, importing/exporting tests, managing test configurations, and automating test plan operations via CLI. |
+| Troubleshooting | L32-L36 | Diagnosing and fixing common Azure Test Plans issues, including access/permission problems, test execution and result errors, configuration pitfalls, and FAQs on typical troubleshooting scenarios. |
+| Limits & Quotas | L37-L41 | Configuring and managing custom fields on test results in Azure Test Plans, including setup steps, field types, and how they appear in test runs and reports. |
+| Security | L42-L46 | Managing Azure Test Plans access: configuring permissions, security roles, and licensing requirements for users and groups |
+| Integrations & Coding Patterns | L47-L50 | Using tcm.exe command-line to manage Azure Test Plans: create/run tests, manage test suites/configurations, import/export, and automate test management tasks. |
+
+### Troubleshooting
+| Topic | URL |
+|-------|-----|
+| Resolve common Azure Test Plans issues and questions | https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -38,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure permissions and licensing for Azure Test Plans | https://learn.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops |
 
-### Configuration
+### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Use tcm.exe command-line for Azure Test Plans management | https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops |
+| Use tcm.exe commands for Azure Test Plans management | https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops |

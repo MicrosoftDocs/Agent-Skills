@@ -1,9 +1,9 @@
 ---
 name: azure-route-server
-description: Expert knowledge for Azure Route Server development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Route Server applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+description: Provides expert guidance on Azure Route Server architecture patterns, configuration, troubleshooting, limits, security, and best practices, including hub-spoke and multi-region designs, BGP peering and route policies, capacity planning, and secure RBAC setup. Use this skill when designing or operating Azure Route Server with NVAs, ExpressRoute, VPN, or on-premises routers, or when diagnosing BGP/route propagation issues and optimizing traffic flow. Not for general Azure networking (e.g., Azure Firewall, Application Gateway) or non–Route Server routing features like basic VNet peering or standard VPN gateway routing.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Route Server Skill
@@ -24,17 +24,17 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Route Server connectivity and BGP peering issues, including misconfigurations, route propagation problems, and troubleshooting steps. |
+| Troubleshooting | L34-L38 | Diagnosing and fixing common Azure Route Server issues like BGP session problems, route propagation failures, connectivity drops, and misconfiguration between NVA/routers and Route Server. |
 | Best Practices | L39-L44 | Configuring Azure Route Server routing preferences, BGP path selection, and custom routing policies to control traffic flow and route advertisement to your NVA or on-premises routers. |
 | Architecture & Design Patterns | L45-L54 | Design patterns for using Route Server in hub-spoke, dual-homed, anycast, multi-region, ExpressRoute/VPN integrations, NVA next-hop designs, and spoke route injection. |
 | Limits & Quotas | L55-L59 | Guidance on Route Server capacity planning, scale units, connection limits, and how many peers/routes each deployment can support. |
 | Security | L60-L64 | Configuring Azure RBAC roles and permissions needed to securely manage Azure Route Server resources and operations. |
-| Configuration | L65-L69 | Configuring Route Server settings (BGP peers, route propagation, maintenance) and monitoring its health, performance, and routes using Azure Monitor metrics |
+| Configuration | L65-L69 | Configuring Route Server settings (BGP peers, route policies, maintenance) and monitoring its health, performance, and routes using Azure Monitor metrics |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Route Server connectivity issues | https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server |
+| Troubleshoot common Azure Route Server issues | https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server |
 
 ### Best Practices
 | Topic | URL |

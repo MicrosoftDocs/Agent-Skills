@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
-  security: 'Securing Azure Pipelines: agent auth, service connections, secrets/Key
-    Vault, permissions, approvals/checks, artifact/repo protection, and secure patterns
-    for YAML, variables, and deployments'
-  configuration: 'Configuring Azure Pipelines: agents, triggers, stages/jobs/steps,
-    YAML schema, environments, resources, variables, and detailed setup for built-in
-    tasks and deployment strategies.'
+  security: 'Securing Azure Pipelines: auth for agents and service connections, secrets/Key
+    Vault, permissions/approvals, secure variables, signing artifacts, and protecting
+    repos/resources.'
+  configuration: 'Configuring Azure Pipelines: YAML/classic syntax, triggers, stages/jobs/steps,
+    variables, agents/containers, environments/resources, artifacts, and detailed
+    task/step parameters.'
   deployment: Agent setup and scaling, CI/CD pipelines, and task refs for building,
     publishing, and deploying apps, containers, and databases to Azure, VMs, Kubernetes,
     and external feeds.
-  limits-quotas: 'Managing Azure Pipelines limits: hosted agent image lifecycle, agent
-    pool concurrency, parallel jobs, large package handling, secure files, and build/release/test
-    retention policies.'
+  limits-quotas: 'Info on Azure Pipelines capacity limits: hosted agent quotas, image
+    deprecation, parallel jobs, pool concurrency, large package size handling, and
+    retention policies for builds/releases/tests.'
   integrations: Patterns and scripts for integrating Azure Pipelines with languages,
-    tools, secrets, notifications, external APIs/services, and automating builds,
-    tests, and deployments.
+    tools, secrets, notifications, external services (Slack, ServiceNow, Service Bus),
+    Git, and REST/Function checks.
   architecture-patterns: 'Guidance on end-to-end CI/CD and DevOps architectures for
     Azure: baseline pipeline patterns, Web App deployment design, and IaaS/VM-focused
     DevTest and production pipelines.'
@@ -28,27 +28,28 @@ category_descriptions:
   best-practices: 'Best practices for faster, reliable pipelines: caching, cross-platform
     scripts, handling flaky tests, parallel test execution (incl. VSTest), Test Impact
     Analysis, and UI test configuration.'
-skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Pipelines applications. Not for Azure DevOps
-  (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos),
-  Azure Test Plans (use azure-test-plans).
+skill_description: Provides expert guidance on Azure Pipelines across troubleshooting,
+  best practices, decision making, architecture patterns, limits/quotas, security,
+  configuration, integrations, and deployment. Use this skill when designing or migrating
+  CI/CD pipelines to Azure Pipelines, optimizing YAML/classic pipelines, securing
+  builds and releases, integrating with external tools/services, scaling agents, or
+  diagnosing pipeline, deployment, and quota issues. Not for Azure DevOps Boards,
+  GitHub Actions, GitLab CI, or non-Azure CI/CD platforms.
 ---
 # Azure Pipelines Crawl Report
 
 ## Summary
 
-- **Total Pages**: 566
-- **Fetched**: 566
+- **Total Pages**: 567
+- **Fetched**: 567
 - **Fetch Failed**: 0
-- **Classified**: 510
-- **Unclassified**: 56
+- **Classified**: 512
+- **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 76
-- **Unchanged**: 490
+- **New Pages**: 1
+- **Updated Pages**: 12
+- **Unchanged**: 554
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -58,60 +59,47 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 |------|-------|------------|
 | architecture-patterns | 4 | 0.7% |
 | best-practices | 7 | 1.2% |
-| configuration | 352 | 62.2% |
+| configuration | 353 | 62.3% |
 | decision-making | 3 | 0.5% |
-| deployment | 68 | 12.0% |
+| deployment | 67 | 11.8% |
 | integrations | 22 | 3.9% |
 | limits-quotas | 6 | 1.1% |
-| security | 41 | 7.2% |
+| security | 43 | 7.6% |
 | troubleshooting | 7 | 1.2% |
-| *(Unclassified)* | 56 | 9.9% |
+| *(Unclassified)* | 55 | 9.7% |
 
 ## Changes
 
+### New Pages
+
+- [Antivirus exclusions](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/anti-virus-exclusion?view=azure-devops)
+
 ### Updated Pages
 
-- [Specify demands](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool-demands?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [jobs.template](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-template?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [parameters](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/parameters?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [parameters.parameter](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/parameters-parameter?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [pool](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [pool.demands](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pool-demands?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [pr](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pr?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.builds](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-builds?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.builds.build](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-builds-build?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.containers](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.containers.container](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.containers.container.trigger](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container-trigger?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.packages](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-packages?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.packages.package](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-packages-package?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.pipelines.pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline?view=azure-pipelines)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.pipelines.pipeline.trigger](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline-trigger?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.pipelines.pipeline.trigger.branches](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline-trigger-branches?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [resources.repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories?view=azure-pipelines)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- *...and 56 more*
+- [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
+  - Updated: 2025-07-28T23:01:00.000Z → 2026-03-13T17:02:00.000Z
+- [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
+  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-13T17:02:00.000Z
+- [Customize your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/customize-pipeline?view=azure-devops)
+  - Updated: 2025-08-15T14:24:00.000Z → 2026-03-10T08:00:00.000Z
+- [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+  - Updated: 2025-08-11T19:35:00.000Z → 2026-03-10T08:00:00.000Z
+- [Multiple repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops)
+  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-05T18:06:00.000Z
+- [Logging commands](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/logging-commands?view=azure-devops)
+  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-06T22:05:00.000Z
+- [Process parameters (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/parameters?view=azure-devops)
+  - Updated: 2025-12-23T22:04:00.000Z → 2026-03-12T22:45:00.000Z
+- [Define variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops)
+  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-04T08:00:00.000Z
+- [Use secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops)
+  - Updated: 2026-01-14T22:02:00.000Z → 2026-03-14T01:04:00.000Z
+- [Hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops)
+  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-10T08:00:00.000Z
+- [PHP](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/php?view=azure-devops)
+  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-10T17:04:00.000Z
+- [resources.repositories.repository](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories-repository?view=azure-pipelines)
+  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-04T18:03:00.000Z
 
 ## Classified Pages
 
@@ -178,7 +166,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Troubleshoot Azure Resource Manager service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops) | troubleshooting | 0.90 | Provides symptom → cause → fix guidance with ARM-specific errors and diagnostic steps unique to Azure Pipelines service connections. |
 | [Troubleshoot deployment](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/troubleshoot-azure-web-app-deploy?view=azure-devops) | troubleshooting | 0.90 | Explicit troubleshooting guide for AzureWebApp@1 and AzureRmWebAppDeployment@4 with task-specific errors and resolutions. |
 | [Troubleshoot workload identity service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/troubleshoot-workload-identity?view=azure-devops) | troubleshooting | 0.90 | Explicit troubleshooting article; typically maps specific error messages and causes to resolutions for workload identity connections. |
-| [Use secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) | limits-quotas | 0.90 | Explains secure files behavior and explicitly states a size limit of 10 MB per secure file—a concrete product limit plus configuration/usage details. |
 | [WindowsMachineFileCopy@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/windows-machine-file-copy-v1?view=azure-pipelines) | configuration | 0.90 | Task reference pages list all YAML inputs, parameter names, allowed values, and defaults for the WindowsMachineFileCopy@1 Azure Pipelines task. This is product-specific configuration detail (parameters like machine names, authentication options, copy behavior) organized as a settings reference, which fits the configuration sub-skill. |
 | [Xcode@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/xcode-v2?view=azure-pipelines) | configuration | 0.90 | The Xcode@2 task reference lists configuration parameters and their usage for building Xcode workspaces in Azure Pipelines. It is a structured options/inputs reference, which is expert configuration knowledge rather than conceptual content. |
 | [Xcode@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/xcode-v3?view=azure-pipelines) | configuration | 0.90 | This task reference describes all inputs for Xcode@3 (e.g., actions, SDK, configuration, signing settings) as a parameter reference. These are product-specific configuration options with defined names and defaults, fitting the configuration category. |
@@ -237,7 +224,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [pr](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/pr?view=azure-pipelines) | configuration | 0.88 | Schema for pr trigger including branch filters and syntax like none/true, which are concrete trigger configuration options. |
 | [resources.containers.container.trigger](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-containers-container-trigger?view=azure-pipelines) | configuration | 0.88 | resources.containers.container.trigger schema with special values (none, true) and full syntax for tag-based triggers, which are product-specific settings. |
 | [resources.pipelines.pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline?view=azure-pipelines) | configuration | 0.88 | resources.pipelines.pipeline schema including properties for consuming artifacts and enabling pipeline completion triggers, which are product-specific configuration options. |
-| [resources.repositories.repository](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories-repository?view=azure-pipelines) | configuration | 0.88 | resources.repositories.repository schema with fields for specifying external repositories, which are concrete configuration options. |
 | [steps.downloadBuild](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-download-build?view=azure-pipelines) | configuration | 0.88 | steps.downloadBuild schema defining parameters for downloading build artifacts, which are product-specific configuration options. |
 | [steps.getPackage](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-get-package?view=azure-pipelines) | configuration | 0.88 | steps.getPackage schema with fields for feed, package, version, etc., which are concrete configuration parameters unique to Azure Pipelines. |
 | [steps.reviewApp](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-review-app?view=azure-pipelines) | configuration | 0.88 | steps.reviewApp schema describing fields to deploy PRs to dynamic environment resources, which are specific configuration parameters. |
@@ -265,13 +251,13 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [FuncToolsInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/func-tools-installer-v0?view=azure-pipelines) | configuration | 0.86 | Task reference for installing Azure Functions Core Tools with specific version selection and installation options. |
 | [Gradle@4](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/gradle-v4?view=azure-pipelines) | configuration | 0.86 | Task reference lists inputs like gradleWrapperFile, tasks, options, JDK selection, and notes about code coverage removal, which are configuration details. |
 | [HelmInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-installer-v0?view=azure-pipelines) | configuration | 0.86 | Azure Pipelines task reference pages list all task inputs, allowed values, defaults, and behavior for this specific task version. That parameter matrix is product-specific configuration detail not inferable from general training. |
+| [Hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops) | limits-quotas | 0.86 | The Microsoft-hosted agents page documents concrete, product-specific limits such as maximum concurrent jobs per organization, per parallelism purchase, and per project; timeouts and maximum run durations for jobs; storage and artifact size constraints; and sometimes SKU/tier-based differences. These are exact numerical limits and quotas that change over time and are not reliably inferable from pretraining alone, matching the limits-quotas criteria. |
 | [IISWebAppDeployment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-v1?view=azure-pipelines) | configuration | 0.86 | Reference for a deprecated IIS Web App deployment task with full input schema and task-specific options that are not generic knowledge. |
 | [IISWebAppDeploymentOnMachineGroup@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-deployment-on-machine-group-v0?view=azure-pipelines) | configuration | 0.86 | Task reference for IIS web app deploy on machine group includes detailed input parameters, flags, and behaviors unique to this task implementation. |
 | [IISWebAppManagementOnMachineGroup@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/iisweb-app-management-on-machine-group-v0?view=azure-pipelines) | configuration | 0.86 | Documents all configuration inputs for managing IIS sites, apps, and pools via this specific Azure DevOps task. |
 | [KubectlInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/kubectl-installer-v0?view=azure-pipelines) | configuration | 0.86 | Lists inputs for selecting kubectl version, installation path, and caching behavior on agents. |
 | [KubeloginInstaller@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/kubelogin-installer-v0?view=azure-pipelines) | configuration | 0.86 | Task reference for installing kubelogin with specific version and path options in Azure Pipelines. |
 | [Link a variable group to Azure Key Vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops) | security | 0.86 | Describes product-specific integration and security behavior between variable groups and Azure Key Vault, including how secrets are mapped and fetched at runtime. |
-| [Logging commands](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/logging-commands?view=azure-devops) | integrations | 0.86 | Lists product-specific logging command names, syntaxes, and behaviors (e.g., task.setvariable, upload artifact commands) that scripts use to communicate with the Azure Pipelines agent; these are concrete API-like integration patterns unique to this product. |
 | [Maven@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/maven-v1?view=azure-pipelines) | configuration | 0.86 | Earliest Maven task version with a simpler but specific set of configuration inputs. |
 | [MysqlDeploymentOnMachineGroup@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/mysql-deployment-on-machine-group-v1?view=azure-pipelines) | configuration | 0.86 | Task reference for running MySQL scripts via deployment groups, including connection parameters and script execution options. |
 | [Npm@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/npm-v0?view=azure-pipelines) | configuration | 0.86 | Provides full parameter reference for the deprecated Npm@0 task, including input names and valid options, which is detailed configuration knowledge. |
@@ -401,6 +387,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [VSBuild@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/vsbuild-v1?view=azure-pipelines) | configuration | 0.81 | VSBuild@1 reference includes inputs like solution, msbuildArgs, platform, configuration, and vsVersion, which are specific configuration parameters for builds. |
 | [Add users to contribute to pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/set-permissions?view=azure-devops) | security | 0.80 | Covers permissions for build/release pipelines and resources; typically lists specific security roles, permission names, and scopes, which are product-specific security configuration details. |
 | [AndroidBuild@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/android-build-v1?view=azure-pipelines) | configuration | 0.80 | AndroidBuild@1 task reference describes inputs like project path, targets, JDK/SDK settings, and emulator options as named parameters, which are detailed configuration settings despite deprecation. |
+| [Antivirus exclusions](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/anti-virus-exclusion?view=azure-devops) | security | 0.80 | Article lists specific Azure DevOps Server/TFS/self-hosted agent processes and folders that must be excluded from antivirus scanning, including exact paths and process names. These are product-specific security/AV configuration details that function like a hardening guide and are unlikely to be known from training data. |
 | [Azure Resource Manager special cases](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/azure-resource-manager-alternate-approaches?view=azure-devops) | security | 0.80 | Covers agent-assigned managed identity and publish profile scenarios with specific parameters and security implications. |
 | [AzureVmssDeployment@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-vmss-deployment-v1?view=azure-pipelines) | deployment | 0.80 | Task reference for VMSS deployment including Azure RBAC storage access note and deployment-specific parameters; fits deployment patterns. |
 | [Bash@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/bash-v3?view=azure-pipelines) | configuration | 0.80 | Bash task reference with inputs like script, target OS behavior, and WSL requirements; detailed configuration for this task. |
@@ -486,6 +473,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [HelmDeploy@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/helm-deploy-v1?view=azure-pipelines) | deployment | 0.78 | Task reference for HelmDeploy@1 includes inputs controlling packaging and deployment to AKS; these are deployment-specific configuration constraints. |
 | [Invoke Azure Function / REST API checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/invoke-checks?view=azure-devops) | integrations | 0.78 | Details how to configure checks that call Azure Functions or REST APIs, including synchronous vs asynchronous modes—product-specific integration and configuration pattern. |
 | [Job access tokens](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops) | security | 0.78 | Describes job access tokens, scopes, and how to control resource access at run time—product-specific security and permission configuration details. |
+| [Logging commands](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/logging-commands?view=azure-devops) | integrations | 0.78 | The page documents Azure Pipelines logging command syntax and behavior (e.g., ##vso commands) that scripts can emit to stdout to interact with the agent. It includes product-specific command names, parameters, and effects that are effectively API/SDK surface for the agent, which fits integrations & coding patterns. This is detailed, product-unique behavior beyond generic CI knowledge. |
 | [RunVisualStudioTestsusingTestAgent@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/run-visual-studio-testsusing-test-agent-v1?view=azure-pipelines) | configuration | 0.78 | Reference for RunVisualStudioTestsusingTestAgent@1 includes inputs for machine groups, test settings, and agent configuration, which are detailed task-specific settings. |
 | [Set variables in scripts](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/set-variables-scripts?view=azure-devops) | integrations | 0.78 | Shows how to use task.setvariable logging command from Bash/PowerShell to interact with the pipeline runtime—product-specific integration and command patterns. |
 | [ShellScript@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/shell-script-v2?view=azure-pipelines) | configuration | 0.78 | ShellScript@2 reference defines inputs like scriptPath, arguments, failOnStderr, and workingDirectory, which are concrete configuration options. |
@@ -499,6 +487,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [jobs.deployment.strategy.runOnce](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-deployment-strategy-run-once?view=azure-pipelines) | configuration | 0.78 | The jobs.deployment.strategy.runOnce definition describes the YAML schema for the runOnce deployment strategy, including concrete configuration fields unique to Azure Pipelines. |
 | [jobs.job.uses](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-job-uses?view=azure-pipelines) | configuration | 0.78 | The jobs.job.uses definition explains the uses keyword for pre-declaring resources, including specific configuration syntax and behavior unique to Azure Pipelines, fitting the configuration sub-skill. |
 | [jobs.template](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-template?view=azure-pipelines) | configuration | 0.78 | Schema reference for jobs.template with field names, allowed structures, and YAML-specific configuration details that are product-specific and not generic knowledge. |
+| [resources.repositories.repository](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories-repository?view=azure-pipelines) | configuration | 0.78 | YAML schema reference pages for Azure DevOps pipelines list specific configuration fields (such as repository types, names, refs, mappings, and their allowed values) that are product-specific and not reliably inferable from general training data. This page defines the 'resources.repositories.repository' schema, including parameter names and valid options, which fits the configuration sub-skill type. |
 | [ContainerStructureTest@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/container-structure-test-v0?view=azure-pipelines) | configuration | 0.76 | Task reference for container-structure-test with config file paths and options; product-specific configuration. |
 | [Delay@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/delay-v1?view=azure-pipelines) | configuration | 0.76 | Delay task reference with input for time duration and units; simple but still specific configuration. |
 | [DeployVisualStudioTestAgent@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/deploy-visual-studio-test-agent-v1?view=azure-pipelines) | deployment | 0.76 | DeployVisualStudioTestAgent@1 reference lists parameters for deploying and configuring test agents across machines, which are deployment-focused settings. |
@@ -506,6 +495,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [PackerBuild@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/packer-build-v0?view=azure-pipelines) | deployment | 0.76 | Deprecated Packer task reference with note about lack of workload identity federation and full input list; deployment/build-specific expert details. |
 | [PackerBuild@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/packer-build-v1?view=azure-pipelines) | deployment | 0.76 | Task reference for building images with Packer for later deployment; includes Packer-specific inputs and Azure integration, fitting deployment/build pipeline configuration. |
 | [PublishPipelineMetadata@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-pipeline-metadata-v0?view=azure-pipelines) | configuration | 0.76 | Describes how this injected task publishes metadata and its role in Evaluate artifact check; includes configuration behavior specific to this product feature. |
+| [Use secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) | security | 0.76 | The secure files article covers how to store and authorize access to sensitive files in Azure Pipelines, including pipeline authorization behavior, permissions, and security controls specific to this feature. It focuses on secure storage, access control, and usage patterns for secrets-like artifacts, which fits the security sub-skill. |
 | [jobs.job.strategy](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/jobs-job-strategy?view=azure-pipelines) | configuration | 0.76 | The jobs.job.strategy definition describes configuration options for job execution strategies in YAML, including specific fields and allowed values, which are expert configuration details. |
 | [Secure access to Azure repositories from pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/security/secure-access-to-repos?view=azure-devops) | security | 0.75 | Describes how build and release pipelines securely access repositories; likely includes specific permission models, service connection types, and configuration options unique to Azure DevOps. |
 | [Slack](https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/slack?view=azure-devops) | integrations | 0.75 | Describes using the Azure Pipelines Slack app, managing subscriptions, and supported events; includes product-specific configuration options and constraints (e.g., service-only availability). |
@@ -536,6 +526,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Customize Python](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/customize-python?view=azure-devops) | integrations | 0.70 | Describes customizing build, test, package, and delivery for Python with Azure Pipelines; such pages typically include task inputs, YAML snippets, and agent/tooling specifics (pip, virtualenv, test runners) that are product-specific integration patterns. |
 | [Define and target environments](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops) | configuration | 0.70 | Details how to create, target, and secure environments, including environment-level settings and deployment history—product-specific configuration patterns. |
 | [Define approvals & checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops) | security | 0.70 | Explains approvals and checks as resource-level controls, including how they are managed outside YAML; product-specific security/governance configuration. |
+| [Define variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops) | configuration | 0.70 | The variables page for Azure Pipelines typically includes specific predefined variable names, scopes, precedence rules, and syntax for accessing them (e.g., $(var), $[variables.var], env:VAR). These are product-specific configuration surfaces and behaviors that function like configuration parameters, including reserved names and rules, which aligns with the configuration sub-skill. |
 | [Deploy to Kubernetes](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/deploy?view=azure-devops) | deployment | 0.70 | Details Kubernetes and Helm tasks, Azure Resource Manager service connections, and Kubernetes resource usage specific to Azure Pipelines. |
 | [Deploy to a Windows VM](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups?view=azure-devops) | deployment | 0.70 | Contains IIS-specific deployment group job configuration, tasks, and parameters unique to Azure Pipelines. |
 | [Deploy web apps to Azure VMs with deployment groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/deploying-azure-vms-deployment-groups?view=azure-devops) | deployment | 0.70 | Shows end-to-end deployment to Azure VMs with deployment groups, including agent, job, and task configuration. |
@@ -547,7 +538,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [GitHub Enterprise Server](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/github-enterprise?view=azure-devops) | deployment | 0.70 | Differentiates scenarios based on network reachability and agent type; effectively a deployment support matrix with product-specific constraints. |
 | [Grant version control permissions to the build service](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops) | integrations | 0.70 | Explains how Git commands behave on Microsoft-hosted vs self-hosted agents, including authentication and checkout details; these are integration patterns and environment-specific behaviors. |
 | [Historical graph for agent pools](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pool-consumption-report?view=azure-devops) | limits-quotas | 0.70 | Historical pool consumption report is used to diagnose concurrency and online-agent limits; underlying page typically documents specific concurrency limits and thresholds. |
-| [Hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops) | deployment | 0.70 | Microsoft-hosted agent docs usually include image matrices, supported OS/VM sizes, and plan-specific constraints for running pipelines. |
 | [IaaS architecture](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/devops-pipelines-iaas-vms-architecture?view=azure-devops) | architecture-patterns | 0.70 | Describes CI/CD architecture for deploying to Azure Virtual Machines using Azure Pipelines; product-specific deployment and environment patterns. |
 | [Kubernetes resource](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops) | configuration | 0.70 | Explains how to connect Kubernetes clusters as environment resources and manage their status/traceability—product-specific environment configuration. |
 | [Manage variable groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops) | security | 0.70 | Covers variable groups as protected resources, including approvals, checks, and pipeline permissions—product-specific security and access control configuration. |
@@ -592,6 +582,7 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Java apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?view=azure-devops) | integrations | 0.65 | Covers setting up pipelines for Java with Maven/Gradle/Ant and deployment to Azure services; such ecosystem pages usually contain task input names, YAML examples, and product-specific build/deploy configuration details. |
 | [Linux virtual machines](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops) | deployment | 0.65 | Shows how to target multiple Linux VMs via environments with Azure Pipelines, including environment/resource usage and deployment job configuration specific to the product. |
 | [Migrate from Travis](https://learn.microsoft.com/en-us/azure/devops/pipelines/migrate/from-travis?view=azure-devops) | decision-making | 0.65 | Shows how to translate Travis configuration to Azure Pipelines; contains concrete mapping of Travis settings to Azure Pipelines YAML, which is product-specific guidance. |
+| [Multiple repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops) | configuration | 0.65 | Describes how to configure multiple checkout steps and reference additional repositories in YAML. This typically includes specific YAML keys, allowed values, and patterns unique to Azure Pipelines, fitting the configuration sub-skill type. |
 | [Publish Maven packages to internal and external feeds](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/publish-maven-artifacts?view=azure-devops) | deployment | 0.65 | Includes Maven task configuration, settings.xml handling, and feed/registry integration unique to Azure Pipelines. |
 | [Publish NuGet packages to NuGet.org (Classic/YAML)](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/publish-public-registry?view=azure-devops) | deployment | 0.65 | Covers NuGet.org-specific publishing configuration, including service connections, API keys, and task parameters. |
 | [Publish packages to internal and external feeds](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/nuget?view=azure-devops) | deployment | 0.65 | Includes NuGet task configuration, feed URLs, authentication, and YAML/classic examples specific to Azure Pipelines. |
@@ -621,7 +612,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Gradle](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-publish-artifacts-gradle?view=azure-devops) | deployment | 0.60 | Provides Gradle task configuration and artifact publishing steps specific to Azure Pipelines. |
 | [JavaScript quickstart](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/javascript?view=azure-devops) | deployment | 0.60 | Includes Node.js pipeline YAML, npm tasks, and artifact publishing configuration specific to Azure Pipelines. |
 | [Monitor your pipelines with dashboard widgets](https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipeline-widgets?view=azure-devops) | configuration | 0.60 | Explains which widgets exist for pipelines, what they show, and how to configure them on dashboards; these are concrete configuration options for monitoring. |
-| [Multiple repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops) | configuration | 0.60 | Describes using multiple checkout steps and likely includes YAML configuration patterns and parameter names specific to multi-repo checkout. |
 | [Python](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/pypi?view=azure-devops) | deployment | 0.60 | Includes twine/pip task usage, feed configuration, and authentication details for Python packages in Azure Pipelines. |
 | [Restore packages](https://learn.microsoft.com/en-us/azure/devops/pipelines/packages/maven-restore?view=azure-devops) | deployment | 0.60 | Shows pipeline configuration for Maven restore with Azure Artifacts and external repositories, including authentication settings. |
 | [Run Git commands](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops) | integrations | 0.60 | Shows how to run Git commands within pipeline scripts on different agents, including environment-specific patterns and constraints. |
@@ -641,11 +631,9 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Use classic release and artifacts variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/variables?view=azure-devops) | 0.45 | Explains variables in Classic release pipelines at a conceptual/how-to level; no strong indication of detailed config tables or limits. |
 | [Use runtime parameters](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops) | 0.45 | Explains runtime parameters and types; appears as general usage guidance rather than a configuration reference with exhaustive parameter tables or limits. |
 | [Data pipeline overview](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/cicd-data-overview?view=azure-devops) | 0.40 | Conceptual overview of CI/CD data pipelines; summary doesn’t indicate detailed config, limits, or troubleshooting content. |
-| [Define variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops) | 0.40 | General explanation of variables in pipelines; not a detailed predefined-variable reference or config table page. |
 | [Deployment control using approvals](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/approvals?view=azure-devops) | 0.40 | Explains manual release approvals conceptually; not clearly focused on detailed configuration matrices or quotas. |
 | [Informational runs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/information-run?view=azure-devops) | 0.40 | Defines informational runs and causes like throttling; some diagnostic hints but not structured symptom→code→solution troubleshooting. |
 | [Migrate from Lab Management](https://learn.microsoft.com/en-us/azure/devops/pipelines/targets/create-virtual-network?view=azure-devops) | 0.40 | High-level description of creating a virtual network for build-deploy-test using SCVMM; summary suggests conceptual networking guidance without explicit product-specific limits, settings tables, or error mappings. |
-| [Process parameters (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/parameters?view=azure-devops) | 0.40 | Classic process parameters overview; mostly conceptual differences vs variables and basic usage, without detailed config matrices or limits. |
 | [Specify jobs in your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops) | 0.40 | Explains jobs conceptually and notes lack of job priority; mostly conceptual/behavioral without structured config or limits tables. |
 | [Types of triggers](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops) | 0.40 | General triggers overview; likely lists trigger types and basic YAML snippets but not focused on limits, quotas, or detailed configuration matrices. |
 | [Use build tags](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/build-tag?view=azure-devops) | 0.40 | Covers using build tags conceptually; likely lacks detailed config tables or numeric constraints. |
@@ -658,7 +646,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Java to web App](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java-webapp?view=azure-devops) | 0.35 | Quickstart CI/CD to Java web app on Linux; primarily a guided example rather than a reference of configuration options or limits. |
 | [Library & shared resources](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops) | 0.35 | Overview of the asset library (variable groups and secure files); lacks detailed configuration matrices or limits beyond basic description. |
 | [Manage pipelines with Azure CLI](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/manage-pipelines-with-azure-cli?view=azure-devops) | 0.35 | Shows CLI commands (list, show, run, update) but at a usage level; not a full parameter reference with defaults and constraints. |
-| [PHP](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/php?view=azure-devops) | 0.35 | PHP build/deploy tutorial; largely a CI/CD walkthrough rather than a configuration or troubleshooting reference. |
 | [Pipeline resources](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/about-resources?view=azure-devops) | 0.35 | High-level explanation of resources in Azure Pipelines; mostly conceptual overview of resource types and purposes. |
 | [Pipeline run sequence](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops) | 0.35 | Describes lifecycle of pipeline runs and behavior; may include some guidance but not organized as troubleshooting or detailed config reference. |
 | [Python to web app](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops) | 0.35 | Tutorial for CI/CD of Python web apps to App Service; mostly procedural without detailed configuration matrices or product-specific constraints. |
@@ -672,19 +659,21 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | [Deploy a virtual machine scale set](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/deploy-virtual-scale-set-java?view=azure-devops) | 0.30 | Tutorial-style VM scale set deployment; likely step-by-step CLI and pipeline example without detailed config matrices or product-specific constraints. |
 | [File matching patterns](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/file-matching-patterns?view=azure-devops) | 0.30 | Reference for file matching patterns is largely generic globbing behavior; not focused on Azure-specific limits, configs, or error codes beyond what an LLM likely already knows. |
 | [Node.js tutorial](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/nodejs-tutorial?view=azure-devops) | 0.30 | Step-by-step tutorial to build and deploy a Node.js app; mainly workflow guidance without detailed config tables, limits, or product-specific error mappings. |
+| [PHP](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/php?view=azure-devops) | 0.30 | Pipeline article is primarily a step-by-step tutorial for building and deploying PHP apps with Azure Pipelines and App Service. It does not focus on configuration parameter tables, limits, error codes, or product-specific best-practice gotchas; it mainly shows a basic CI/CD example that an LLM can already generalize. |
 | [Pipeline default branch](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/pipeline-default-branch?view=azure-devops) | 0.30 | Explains how to view and edit default branch; procedural, without parameter tables or numeric constraints. |
+| [Process parameters (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/parameters?view=azure-devops) | 0.30 | The page explains classic process parameters conceptually and how they differ from variables, with UI-driven usage. It does not emphasize detailed configuration parameter tables, numeric limits, or product-specific error codes. It reads more as conceptual/how-to than deep configuration or integration reference. |
 | [Python quickstart](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops) | 0.30 | Quickstart for building and testing Python apps; focuses on basic CI/CD flow rather than detailed configuration parameters or limits. |
 | [YAML pipeline editor](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops) | 0.30 | How-to guide for using the YAML editor; focuses on UI usage, not structured configuration or limits. |
 | [Clone or import a pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/clone-import-pipeline?view=azure-devops) | 0.25 | Describes cloning/importing pipelines; operational guidance without deep config matrices or limits. |
 | [Requirements traceability](https://learn.microsoft.com/en-us/azure/devops/pipelines/test/requirements-traceability?view=azure-devops) | 0.25 | Requirements traceability article is largely conceptual and process-oriented; it links work items, tests, and bugs but usually without detailed configuration tables or numeric thresholds. |
 | [YAML vs Classic Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops) | 0.25 | Comparison of YAML vs Classic pipelines is conceptual; no numeric thresholds, decision matrices, or tier-specific limits. |
 | [About pipeline tests](https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops) | 0.20 | Glossary of test terms with some tips; mostly conceptual definitions, not detailed configuration, limits, or error mappings. |
-| [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops) | 0.20 | Step-by-step tutorial to create a first pipeline; focuses on basic usage, not deep configuration tables or limits. |
-| [Customize your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/customize-pipeline?view=azure-devops) | 0.20 | Customization tutorial with examples; lacks structured configuration reference, limits, or error-code-based troubleshooting. |
+| [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops) | 0.20 | Step-by-step tutorial to create a first pipeline. Primarily walkthrough content without detailed config parameter tables, limits, or troubleshooting mappings. |
+| [Customize your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/customize-pipeline?view=azure-devops) | 0.20 | Tutorial on common ways to customize a pipeline. Likely shows examples but not organized configuration reference, limits, or decision matrices as required by the sub-skill types. |
 | [Ecosystems examples](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/ecosystems?view=azure-devops) | 0.20 | Ecosystems index page; primarily navigational with links to other articles, not detailed configuration content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/devops/pipelines/overview-azure?view=azure-devops) | 0.20 | High-level overview of deploying to Azure services; summary suggests conceptual/marketing orientation. |
 | [Release pipelines overview](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops) | 0.20 | High-level overview of classic release pipelines; primarily conceptual without detailed configuration tables or constraints. |
 | [View pipeline history (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/history?view=azure-devops) | 0.20 | How to view Classic pipeline history; navigation/usage content without expert-level configuration or limits. |
-| [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) | 0.10 | Conceptual explanation of key pipeline concepts; no expert-only numeric limits or config tables. |
+| [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) | 0.10 | Key concepts article explaining terminology and how Azure Pipelines works. Conceptual overview without expert-level numeric limits, config tables, or troubleshooting content. |
 | [Sign up for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops) | 0.10 | Sign-up and onboarding walkthrough; no detailed configuration matrices, limits, or troubleshooting content. |
-| [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) | 0.10 | High-level overview of Azure Pipelines CI/CD capabilities without product-specific limits, configs, or error details. |
+| [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) | 0.10 | High-level conceptual overview of Azure Pipelines (what it is, benefits). No specific limits, configuration tables, error codes, or product-specific decision matrices. |

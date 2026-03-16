@@ -3,7 +3,7 @@ name: azure-payment-hsm
 description: Expert knowledge for Azure Payment Hsm development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when building, debugging, or optimizing Azure Payment Hsm applications. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Payment Hsm Skill
@@ -27,9 +27,9 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L34-L38 | Diagnosing and resolving common Azure Payment HSM deployment issues, including provisioning failures, configuration problems, and known platform limitations or workarounds. |
 | Best Practices | L39-L43 | Guidance on inspecting, monitoring, and routing network traffic to Azure Payment HSM, including using firewalls, NSGs, and network appliances for secure traffic control. |
 | Decision Making | L44-L49 | Guidance on choosing/changing Azure Payment HSM performance SKUs, and understanding support options, roles, and responsibilities for operating the service. |
-| Architecture & Design Patterns | L50-L56 | Designing Azure Payment HSM architectures: HA/DR patterns, device lifecycle management, supported topologies, deployment constraints, and planning resilient HSM solutions. |
-| Security | L57-L62 | Compliance standards, certification scope, and best practices for securing Payment HSM networking, identities, access control, and key management in Azure. |
-| Configuration | L63-L74 | Configuring Azure Payment HSM networking and access: VNets/peering, FastPath, ARM deployments, IP setup, browser/VM access to payShield Manager, and required resource provider/feature registration. |
+| Architecture & Design Patterns | L50-L55 | Designing Azure Payment HSM architectures: HA/DR patterns, device lifecycle management, supported topologies, deployment constraints, and planning resilient HSM solutions. |
+| Security | L56-L61 | Compliance standards, certification scope, and best practices for securing Payment HSM networking, identities, access control, and key management in Azure. |
+| Configuration | L62-L73 | Configuring Azure Payment HSM networking and access: VNets/peering, FastPath, ARM deployments, IP setup, browser/VM access to payShield Manager, and required resource provider/feature registration. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -51,7 +51,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design high availability and DR for Azure Payment HSM | https://learn.microsoft.com/en-us/azure/payment-hsm/deployment-scenarios |
-| Understand lifecycle management for Azure Payment HSM devices | https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management |
 | Plan solution topologies and constraints for Payment HSM | https://learn.microsoft.com/en-us/azure/payment-hsm/solution-design |
 
 ### Security

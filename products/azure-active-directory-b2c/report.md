@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
-    identity providers, app/API registration, UI/localization, claims, journeys, SSO,
-    and advanced auth options for many app types.'
+  configuration: Configuring Azure AD B2C policies, user flows, tokens, MFA, identity
+    providers, apps/APIs, UI/UX, localization, and advanced auth options for web,
+    SPA, mobile, and desktop clients.
   integrations: End-to-end patterns for integrating Azure AD B2C into apps and APIs,
     configuring identity providers, custom policies, fraud/risk tools, and securing
     traffic with proxies, WAFs, and monitoring.
@@ -24,15 +24,17 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure AD B2C errors, debugging custom policies
     and user flows, and using Application Insights to trace and troubleshoot policy
     execution.
-  limits-quotas: Limits on tenants, users, tokens, and directory size in Azure AD
-    B2C, plus how to create tenants, monitor quota usage, and understand token formats
-    and constraints.
-skill_description: Expert knowledge for Azure Active Directory B2C development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Active Directory B2C applications.
-  Not for Azure Information Protection (use azure-information-protection), Azure Role-based
-  access control (use azure-rbac), Azure Security (use azure-security).
+  limits-quotas: Service limits, tenant and directory size quotas, token formats/constraints,
+    and guidance on creating tenants within Azure AD B2C capacity and restriction
+    boundaries.
+skill_description: Provides expert guidance on Azure Active Directory B2C architecture,
+  configuration, security, integrations, deployment, and troubleshooting, including
+  custom policies, user flows, MFA, and identity provider setups. Use this skill when
+  designing or refining Azure AD B2C-based customer identity solutions, choosing patterns
+  and regions, implementing CI/CD for policies, integrating apps/APIs, understanding
+  limits and quotas, or diagnosing sign-in/sign-up issues. Not for Azure AD (Entra
+  ID) workforce identity, Entra External ID for customers/partners, or non-B2C identity
+  platforms.
 ---
 # Azure Active Directory B2C Crawl Report
 
@@ -41,13 +43,13 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 - **Total Pages**: 289
 - **Fetched**: 289
 - **Fetch Failed**: 0
-- **Classified**: 258
-- **Unclassified**: 31
+- **Classified**: 257
+- **Unclassified**: 32
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 5
+- **Unchanged**: 284
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -58,21 +60,34 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | architecture-patterns | 5 | 1.7% |
 | best-practices | 5 | 1.7% |
 | configuration | 112 | 38.8% |
-| decision-making | 5 | 1.7% |
+| decision-making | 4 | 1.4% |
 | deployment | 2 | 0.7% |
 | integrations | 109 | 37.7% |
 | limits-quotas | 4 | 1.4% |
 | security | 13 | 4.5% |
 | troubleshooting | 3 | 1.0% |
-| *(Unclassified)* | 31 | 10.7% |
+| *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html)
+  - Updated: 2025-02-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
+- [Supported Microsoft Entra ID features](https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features)
+  - Updated: 2025-05-20T08:00:00.000Z → 2026-03-16T11:10:00.000Z
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
+  - Updated: 2025-09-08T11:11:00Z → 2026-03-16T11:10:00Z
+- [Identity verification and proofing partners](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-verification-proofing)
+  - Updated: 2025-05-01T11:17:00.000Z → 2026-03-16T11:10:00.000Z
+- [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits)
+  - Updated: 2026-01-22T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits) | limits-quotas | 0.95 | Explicitly documents usage constraints and service limits (numeric quotas, thresholds) for Azure AD B2C—canonical limits-quotas content. |
+| [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits) | limits-quotas | 0.95 | The page is explicitly a reference for Azure AD B2C service limits and restrictions and will list concrete usage constraints with specific numeric values (for example, tenant limits, policy limits, request rates). This matches the limits-quotas criteria of containing exact numerical limits and constraints that are product-specific and not generally known from training. |
 | [Error codes](https://learn.microsoft.com/en-us/azure/active-directory-b2c/error-codes) | troubleshooting | 0.92 | Provides a list of specific Azure AD B2C error codes and their meanings, enabling targeted diagnosis and resolution—classic troubleshooting reference. |
 | [ClaimsSchema](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimsschema) | configuration | 0.90 | Reference for ClaimsSchema element, claim type definitions, and usage; includes specific attribute names and constraints not generally known. |
 | [ClaimsTransformations](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations) | configuration | 0.90 | Defines ClaimsTransformations element and supported transformation types, parameters, and usage patterns unique to B2C. |
@@ -159,7 +174,6 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [ContentDefinitions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/contentdefinitions) | configuration | 0.78 | Reference page for the ContentDefinitions element with schema details, element/attribute names, and allowed values for customizing self-asserted technical profiles—product-specific configuration not generally known. |
 | [Cookie definitions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/cookie-definitions) | configuration | 0.78 | Lists specific cookie names, purposes, and behaviors used by Azure AD B2C—low-level implementation details not generally known. |
 | [Customize language](https://learn.microsoft.com/en-us/azure/active-directory-b2c/language-customization) | configuration | 0.78 | Includes language customization settings, JSON resource keys, and policy configuration for localized strings, which are detailed configuration parameters. |
-| [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html) | configuration | 0.78 | Details how to reference HTML templates, required placeholders, and policy configuration keys to link templates to specific pages, which are product-specific settings. |
 | [Experian](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-experian) | integrations | 0.78 | Tutorial for Experian CrossCore integration will define specific API parameters, claims mappings, and policy configuration unique to this service. |
 | [Manage policies with PowerShell](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-custom-policies-powershell) | configuration | 0.78 | Uses specific PowerShell cmdlets, parameters, and patterns for CRUD operations on custom policies that are unique to Azure AD B2C. |
 | [Microsoft Dynamics 365 Fraud Protection](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-dynamics-365-fraud-protection) | integrations | 0.78 | Tutorial for using DFP risk assessments during B2C sign-up/sign-in, with specific configuration, API calls, and policy integration. Product-specific integration knowledge. |
@@ -301,6 +315,7 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [Sign-in policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-in-policy) | configuration | 0.70 | Similar to other user flow docs, this page defines specific policy configuration fields, identity providers, and settings that are detailed B2C configuration parameters. |
 | [User access](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-user-access) | configuration | 0.70 | Covers concrete configuration of attributes (DOB, country), terms-of-use capture, and policy behavior for managing access, which are product-specific. |
 | [WhoIAM Rampart](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-whoiam-rampart) | integrations | 0.70 | Covers detailed setup of Rampart with Azure AD B2C, including RBAC-related configuration, endpoints, and app settings unique to this integration. |
+| [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html) | configuration | 0.68 | The article describes product-specific UI customization via HTML templates for Azure AD B2C user flows and custom policies. These templates and their usage are configuration details unique to this service (page layout, branding elements, and how they bind to B2C policies), which qualify as expert configuration knowledge rather than generic web or identity concepts. |
 | [Migrate users](https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-migration) | decision-making | 0.68 | Explains when to use pre-migration vs seamless migration, including trade-offs, flows, and requirements (e.g., Graph API usage) to guide migration decisions. |
 | [Add administrator (work account)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-manage-administrator) | security | 0.65 | Covers how to add and invite admin/guest accounts with role-based access; includes product-specific admin role usage and security configuration steps. |
 | [Authentication options](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-android-app-options) | configuration | 0.65 | Describes enabling and customizing authentication experience for Android; option pages usually enumerate specific configuration switches and policy settings. |
@@ -323,7 +338,6 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [Region-based proof of concept](https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2c-global-identity-proof-of-concept-regional) | architecture-patterns | 0.65 | Guides creation of region-based orchestration with custom policies; detailed pattern implementation for global identity. |
 | [Register native client (for mobile and desktop)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-native-application) | configuration | 0.65 | Native client registration requires specific configuration like public client flags, redirect URI schemes, and platform selection, which are concrete Azure AD B2C settings rather than conceptual content. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-developer-notes) | best-practices | 0.65 | Aggregates product-specific notes on feature availability, behavior changes, and how to configure/maintain policies—contains gotchas and implementation guidance beyond generic concepts. |
-| [Supported Microsoft Entra ID features](https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features) | decision-making | 0.65 | Explains which Entra ID features are usable in B2C tenants and which Azure resources cannot be provisioned; supports decisions on tenant design and feature usage. |
 | [Tokens](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tokens-overview) | limits-quotas | 0.65 | Token overview likely includes token size, lifetime defaults, and claim constraints, which are concrete numeric and structural limits. |
 | [API Connectors](https://learn.microsoft.com/en-us/azure/active-directory-b2c/api-connectors-overview) | integrations | 0.60 | Describes using REST APIs/outbound webhooks in user flows/custom policies with B2C-specific connector configuration. |
 | [Application types](https://learn.microsoft.com/en-us/azure/active-directory-b2c/application-types) | decision-making | 0.60 | Explains supported app types and scenarios, helping decide which architecture (web, SPA, native, etc.) to use with B2C. |
@@ -339,7 +353,6 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [Manage users via Azure portal](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-users-portal) | 0.40 | Primarily a portal how-to for creating/deleting users; lacks detailed configuration tables, limits, or specialized patterns beyond generic UI steps. |
 | [App registrations](https://learn.microsoft.com/en-us/azure/active-directory-b2c/app-registrations-training-guide) | 0.30 | Introductory guide to the new app registrations experience; primarily UI/experience overview without detailed configuration tables or numeric constraints. |
 | [Azure AD B2C partner gallery](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-gallery) | 0.30 | High-level partner gallery/marketing overview listing ISV categories; does not provide detailed configuration parameters or error mappings. |
-| [Identity verification and proofing partners](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-verification-proofing) | 0.30 | High-level overview of identity proofing partners; does not appear to contain detailed configuration parameters, limits, or error mappings. |
 | [Page layout versions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/page-layout) | 0.30 | Appears to be a change log and version history for page layout packages. The summary does not indicate concrete configuration tables, limits, or decision matrices—more of a historical/reference list rather than a structured best-practices, configuration, or limits document. |
 | [Set up sign-in for a desktop app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/quickstart-native-app-desktop) | 0.30 | Quickstart for WPF desktop sign-in; primarily walkthrough code and portal steps, not structured expert reference. |
 | [Set up sign-in for a single-page app](https://learn.microsoft.com/en-us/azure/active-directory-b2c/quickstart-single-page-app) | 0.30 | SPA sign-in quickstart; tutorial content without detailed configuration option tables or limits. |
@@ -352,9 +365,11 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [3 - Create user flows and custom policies](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows) | 0.20 | Explains how to create user flows/custom policies via portal; procedural, not a structured best-practices or configuration reference. |
 | [5 - Clean up and delete tenant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-delete-tenant) | 0.20 | Cleanup and delete tenant tutorial; operational steps without detailed limits, security roles, or config matrices. |
 | [Desktop app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-desktop) | 0.20 | High-level desktop app documentation index; no detailed settings or troubleshooting indicated. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | 0.20 | FAQ page likely mixes conceptual, licensing, and general usage questions. The summary does not indicate structured limits, configuration tables, or error-code troubleshooting; it is primarily general Q&A rather than a focused expert-knowledge reference. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq) | 0.20 | FAQ page is primarily high-level Q&A about Azure AD B2C availability and general usage; based on the description it does not clearly focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed expert patterns required by the sub-skill types. |
+| [Identity verification and proofing partners](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-verification-proofing) | 0.20 | Page appears to describe partner-based identity proofing options for Azure AD B2C at a conceptual/overview level. The summary does not indicate presence of concrete configuration parameters, RBAC role lists, error codes, limits, or decision matrices with quantified criteria. It reads more like a partner/feature overview than detailed technical guidance with expert-only specifics. |
 | [Mobile app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-mobile) | 0.20 | Navigation page for mobile app docs; no specific settings, limits, or troubleshooting content indicated. |
 | [Support](https://learn.microsoft.com/en-us/azure/active-directory-b2c/find-help-open-support-ticket) | 0.20 | Describes how to obtain support (technical, billing, subscription) and open tickets. This is process/support information, not product configuration, limits, or troubleshooting content with error codes and resolutions. |
+| [Supported Microsoft Entra ID features](https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features) | 0.20 | Appears to be a capability/feature support listing for Entra ID vs Azure AD B2C, likely high-level without numeric limits, detailed configuration tables, or troubleshooting mappings. Based on the summary, it focuses on what features are supported/retired rather than specific quotas, config parameters, or error codes, so it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Technical overview](https://learn.microsoft.com/en-us/azure/active-directory-b2c/technical-overview) | 0.20 | Technical/feature overview but still conceptual; no detailed configuration tables, limits, or troubleshooting mappings. |
 | [Web API authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-api) | 0.20 | Index page that routes to web API how-to guides; summary shows no concrete settings, limits, or error details. |
 | [Find tenant name and ID](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tenant-management-read-tenant-name) | 0.15 | Simple how-to for finding tenant name and ID; no advanced configuration, limits, or security role details. |

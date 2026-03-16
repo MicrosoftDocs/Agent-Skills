@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   deployment: Deploying and managing Synapse workspaces and dedicated SQL pools with
     ARM/Bicep, CI/CD, source control, restore points, and automated SQL compute operations.
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network isolation,
     private endpoints, encryption, data exfiltration, policies, and secure access
     to storage, SQL, Spark, and migration scenarios.'
-  configuration: 'Configuring Synapse workspaces, Spark pools, and SQL pools: integrations
-    (Purview, AML), libraries, autoscale, monitoring/metrics, backups/restore, workload
-    management, and pipeline activities.'
+  configuration: 'Configuring Synapse workspaces, Spark pools, and SQL pools: runtimes,
+    scaling, libraries, monitoring, backups/restore, workload management, and integrations
+    (Purview, AML, SynapseML).'
   best-practices: 'Best practices for Synapse: Spark tuning, Delta/Hyperspace optimization,
     dedicated/serverless SQL design and performance, T-SQL patterns, indexing/stats,
     and Netezza/Oracle/Teradata migration guidance.'
@@ -27,12 +27,14 @@ category_descriptions:
   limits-quotas: 'Synapse SQL pool limits: maintenance windows, memory/concurrency
     by performance level, capacity caps, temp table behavior, serverless Delta Lake
     v1 querying, and Synapse Link feature limits/issues.'
-skill_description: Expert knowledge for Azure Synapse Analytics development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Synapse Analytics applications.
-  Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
-  Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+skill_description: Provides expert guidance on Azure Synapse Analytics across troubleshooting,
+  best practices, decision making, architecture & design patterns, limits & quotas,
+  security, configuration, integrations & coding patterns, and deployment. Use this
+  skill when designing or optimizing Synapse workspaces, choosing between serverless/dedicated
+  SQL and Spark, planning data warehouse migrations, tuning performance, securing
+  environments, integrating with ADLS/Cosmos/AML, or setting up CI/CD and automation.
+  Not for non-Synapse services such as standalone Azure SQL Database, Azure Databricks,
+  Fabric, or legacy SQL DW outside Synapse.
 ---
 # Azure Synapse Analytics Crawl Report
 
@@ -46,8 +48,8 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 446
+- **Updated Pages**: 3
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -67,6 +69,15 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | *(Unclassified)* | 184 | 41.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
+  - Updated: 2025-12-05T18:30:00.000Z → 2026-03-09T23:18:00.000Z
+- [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark)
+  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
+- [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark)
+  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +114,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Troubleshoot workspaces created by SDK](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/workspaces-created-by-sdk) | troubleshooting | 0.82 | Focused on a specific failure scenario (SDK-created workspaces can't launch Studio) with steps to diagnose and fix. |
 | [Apache Spark for Azure Synapse external tables](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-storage-files-spark-tables) | integrations | 0.80 | Describes automatic metadata synchronization, external table creation, and partition handling between Spark and serverless SQL. |
 | [Azure Synapse Apache Spark 3.3 runtime (unsupported)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime) | configuration | 0.80 | Provides detailed component versions and deprecation status for the 3.3 runtime; configuration and lifecycle specifics. |
-| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | configuration | 0.80 | Lists exact component versions and support status for the 3.4 runtime; product-specific configuration and lifecycle info. |
 | [Azure Synapse Apache Spark 3.5 runtime (GA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-35-runtime) | configuration | 0.80 | Details runtime components and versions (Spark 3.5, Python 3.10, Delta 3.2, etc.); this is a configuration/version matrix unique to the product. |
 | [Cheat sheet](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/cheat-sheet) | best-practices | 0.80 | Cheat sheet of tips and best practices for dedicated SQL pool; expected to include concrete configuration and coding recommendations specific to Synapse. |
 | [Collect Apache Spark Application Logs and Metrics to Azure Event Hubs Using Certificate-Based Service Principal Authentication](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/how-to-use-certificate-with-service-principalp-emit-log-event-hubs) | security | 0.80 | Focuses on certificate-based service principal auth for Event Hubs and Key Vault; expected to list specific Azure AD app settings, certificate handling, and RBAC roles. |
@@ -187,6 +197,7 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/synapse-analytics/policy-reference) | security | 0.70 | Lists Synapse-specific built-in Azure Policy definitions; these include concrete policy names and enforcement scopes relevant to security and governance. |
 | [Azure Spark CDM Connector](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/data-sources/apache-spark-cdm-connector) | integrations | 0.70 | Connector-specific article; expected to list schema handling, folder structure requirements, and connector options for CDM in Synapse. |
 | [Azure Synapse Analytics known issues](https://learn.microsoft.com/en-us/azure/synapse-analytics/known-issues) | troubleshooting | 0.70 | Lists current product-specific issues with resolutions/workarounds; effectively a troubleshooting reference keyed by symptom/issue. |
+| [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime) | configuration | 0.70 | The page documents the exact component and language versions (Spark 3.4.1, Python 3.10, Delta Lake 2.4, and other runtime libraries) for the Azure Synapse Runtime for Apache Spark 3.4. These are product-specific configuration/runtime details that change over time and are not reliably known from pretraining. While it’s not limits/quotas or troubleshooting, it fits configuration best because it enumerates concrete runtime components and versions used when configuring or selecting this Spark runtime. |
 | [Browse an ADLS Gen2 folder with ACLs](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-access-container-with-access-control-lists) | security | 0.70 | Focuses on using ACLs instead of account-level roles; likely includes specific RBAC roles, ACL entries, and security configuration details. |
 | [CETAS](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas) | integrations | 0.70 | CETAS syntax and options for Synapse SQL are product-specific; includes detailed T-SQL patterns and storage-related options that go beyond generic SQL knowledge. |
 | [COPY statement examples](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-bulk-load-copy-tsql-examples) | security | 0.70 | Focuses on authentication mechanisms for COPY with concrete examples; likely includes specific auth options, parameters, and secure configuration patterns unique to Synapse COPY. |
@@ -357,7 +368,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Anomaly detection wizard](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-cognitive-services-anomaly) | 0.45 | Anomaly detection tutorial; similar to 26, focused on usage of a Foundry Tool, not deep Synapse configuration. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-azure-cli) | 0.45 | Quickstart for creating a SQL pool via CLI; mostly step-by-step commands without broad configuration tables or expert patterns. |
 | [Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-data-lake-store) | 0.45 | COPY tutorial from ADLS; mostly step-by-step loading without explicit config tables or limits in the summary. |
-| [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark) | 0.45 | Computer vision tutorial; again focused on ML service usage rather than Synapse-specific configuration tables. |
 | [Connect to Azure Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db) | 0.45 | How-to connect Cosmos DB to Synapse Link; largely a connection walkthrough without strong signals of detailed config tables or error mappings. |
 | [Connect to Synapse Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-connect-synapse-link-cosmos-db) | 0.45 | Quickstart for connecting Cosmos DB to Synapse Link; primarily step-by-step connection guide without emphasis on configuration matrices or error mappings. |
 | [Contoso public data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-load-from-azure-blob-storage-with-polybase) | 0.45 | PolyBase loading tutorial; likely standard T-SQL and portal steps without detailed limits or decision matrices. |
@@ -365,7 +375,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Create an empty lake database](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/create-empty-lake-database) | 0.45 | How-to create an empty lake database; likely basic UI steps without extensive configuration tables or expert-only details. |
 | [Create and use views](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/create-use-views) | 0.45 | Creating views over serverless SQL; standard SQL concept applied to Synapse, without clear expert-only configuration or limits. |
 | [Create lake database from database templates](https://learn.microsoft.com/en-us/azure/synapse-analytics/database-designer/create-lake-database-from-lake-database-templates) | 0.45 | How-to create a lake database from templates; primarily procedural, not a deep configuration or troubleshooting reference. |
-| [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark) | 0.45 | Document Intelligence tutorial; similar pattern of using an external AI service, not deep Synapse configuration. |
 | [Load WideWorldImporters](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/load-data-wideworldimportersdw) | 0.45 | Another PolyBase loading tutorial; primarily walkthrough content rather than expert configuration or troubleshooting. |
 | [Monitor your workload - portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-monitor-workload-portal) | 0.45 | Monitoring via Azure portal and Log Analytics; likely UI and query examples, but no clear evidence of error-code mappings or quantified limits. |
 | [New York taxi cab data](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/load-data-from-azure-blob-storage-using-copy) | 0.45 | Tutorial loading sample data via COPY; appears procedural, not focused on expert-only configuration matrices or troubleshooting. |
@@ -485,6 +494,7 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [All migration guides](https://learn.microsoft.com/en-us/azure/synapse-analytics/migration-guides/) | 0.20 | Landing page for migration guides; purely navigational/overview without detailed technical content. |
 | [Analyze data with Apache Spark and Power BI](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-to-power-bi) | 0.20 | End-to-end tutorial integrating Spark, serverless SQL, and Power BI; integration is scenario-based, not a config reference with parameter tables. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace) | 0.20 | Quickstart for creating workspace via portal; step-by-step, not configuration parameter reference. |
+| [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark) | 0.20 | Tutorial-style walkthrough for using Azure Vision with SynapseML; no indication of limits, configuration tables, error-code mappings, or other product-specific expert reference details. |
 | [Create a Spark pool using Synapse Studio](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-apache-spark-pool-studio) | 0.20 | Synapse Studio quickstart for creating a Spark pool; step-by-step UI guide, no expert-only configuration matrices. |
 | [Create a Spark pool with Azure portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-apache-spark-pool-portal) | 0.20 | Portal-based quickstart for creating a Spark pool; mostly wizard steps, not deep configuration reference. |
 | [Create a dedicated SQL pool using Azure portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-sql-pool-portal) | 0.20 | Quickstart for creating a dedicated SQL pool via Azure portal; step-by-step creation guide without expert-level configuration or limits. |
@@ -494,6 +504,7 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | [Data visualization with Synapse Studio notebooks](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-data-visualization-tutorial) | 0.20 | Tutorial on exploratory analysis and visualization; code examples but no product-specific config tables or limits. |
 | [Database collation types](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-reference-collation-types) | 0.20 | Collation support is largely reference/overview (what collations are, that there are ~3800, and that you can choose them at creation). The summary doesn’t indicate product-specific configuration tables, limits, or gotchas beyond generic SQL collation knowledge. |
 | [Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake) | 0.20 | Conceptual overview of Delta Lake features; no detailed Synapse-specific configuration or limits. |
+| [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark) | 0.20 | Tutorial for using Azure Document Intelligence in Synapse; appears to be a step-by-step enrichment example without detailed limits, configuration matrices, or troubleshooting reference content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started) | 0.20 | Getting started tutorial; step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Install Visual Studio SSDT](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-install-visual-studio) | 0.20 | Install Visual Studio/SSDT; generic tooling installation, not product-specific expert configuration. |
 | [Introduction](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/security-white-paper-introduction) | 0.20 | Introduction/overview to a white paper series; summary-level content without concrete configurations, limits, or error details. |

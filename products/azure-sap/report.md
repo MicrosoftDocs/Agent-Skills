@@ -1,55 +1,57 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
-  configuration: 'Configuring SAP on Azure: automation framework, storage and HA/cluster
-    setups, monitoring providers, backup, networking, and VM/extension settings for
-    HANA, NetWeaver, Db2, and related components.'
-  deployment: 'Deploying and managing SAP on Azure: automation framework scripts,
-    ACSS deployments, HA/DR topologies, DevOps integration, Business One/BusinessObjects,
-    and NetWeaver/HANA VM setups.'
-  security: 'Identity, access, encryption, and network security for SAP on Azure:
-    Key Vault secrets, RBAC, TLS, private endpoints, secure infra design, Entra ID
-    access, and RISE security configuration.'
-  architecture-patterns: 'Architecting resilient, high-availability SAP landscapes
-    on Azure: DBMS/HANA designs, zones/regions/DR, latency and proximity, and RISE
-    connectivity and workload zone patterns.'
-  integrations: Patterns and setup for integrating SAP with Azure and third-party
-    services (monitoring, automation, data flows, email, printing, security, and RISE
-    workloads)
+  configuration: 'Configuring SAP on Azure: automation framework, ACSS, monitoring
+    providers, storage/VM layouts, HA/DR clusters (RHEL/SLES/Windows), networking,
+    backups, and SAP HANA/NetWeaver/Db2 setup.'
+  deployment: 'Deploying and automating SAP on Azure: control planes, workload zones,
+    automation framework, ACSS, HA/DR topologies, DevOps/Ansible, and product-specific
+    deployments (S/4HANA, BOBJ, B1).'
+  security: 'Security, identity, and access design for SAP on Azure: Key Vault, RBAC,
+    TLS, private endpoints, NFS encryption, Entra ID integration, and secure exposure
+    of SAP services.'
+  architecture-patterns: 'Designing SAP HANA/DBMS and NetWeaver architectures on Azure:
+    HA/DR patterns, multi-region/zone availability, latency, RISE connectivity, and
+    DB options (HANA, SQL, Oracle, Db2, ASE, IQ, MaxDB).'
+  integrations: Patterns and steps to integrate SAP (S/4HANA, ECC, ABAP, RISE) with
+    Azure services, ADF, Salesforce, Exchange, Power Query, Universal Print, and automation/monitoring
+    tools
   decision-making: 'Guidance on planning SAP on Azure: infrastructure choices, certified
     configs, storage/VM options, data extraction, HANA tiering, monitoring, analytics
     models, and supported versions.'
-  best-practices: 'Testing and validation guidance for SAP on Azure: config checks,
-    HA test automation, VIS quality enforcement, and DR best practices across all
-    SAP workload layers.'
+  best-practices: 'Testing and tuning SAP HANA on Azure: config validation, HA test
+    automation, VIS quality checks, DR design per layer, and optimizing Azure Premium
+    Files for SAP workloads'
   limits-quotas: 'SAP on Azure limits: supported platforms/features for SAP testing
     automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints
     using Azure Files SMB.'
-  troubleshooting: 'Diagnosing and fixing SAP on Azure issues: deployment automation
-    errors, Business Process Solutions problems, VM scale set and extension failures,
-    and using Azure Monitor SAP Insights for root-cause analysis.'
-skill_description: Expert knowledge for SAP HANA on Azure Large Instances development
-  including troubleshooting, best practices, decision making, architecture & design
-  patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large
-  Instances applications. Not for Azure Large Instances (use azure-large-instances),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+  troubleshooting: 'Diagnosing and fixing SAP on Azure issues: deployment automation,
+    BPS data pipelines (ADF/Fabric), SAP Insights monitoring, VM scale set problems,
+    and SAP VM extension failures.'
+skill_description: 'Provides expert guidance on SAP HANA on Azure Large Instances
+  across troubleshooting, architecture, deployment, configuration, security, limits,
+  integrations, best practices, and decision making. Use this skill when designing
+  or operating SAP HANA on Azure Large Instances: choosing HA/DR and multi-region
+  patterns, validating certified configurations, planning storage/VM layouts, configuring
+  OS clusters (RHEL/SLES/Windows), securing connectivity and data, integrating with
+  Azure services and data pipelines, tuning performance, or resolving deployment/monitoring/extension
+  issues. Not for generic SAP on Azure VMs, non-HANA databases, or non-Azure hyperscaler
+  deployments.'
 ---
 # SAP HANA on Azure Large Instances Crawl Report
 
 ## Summary
 
-- **Total Pages**: 203
-- **Fetched**: 203
+- **Total Pages**: 206
+- **Fetched**: 206
 - **Fetch Failed**: 0
 - **Classified**: 181
-- **Unclassified**: 22
+- **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 200
+- **New Pages**: 3
+- **Updated Pages**: 23
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -57,27 +59,68 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 20 | 9.9% |
-| best-practices | 4 | 2.0% |
-| configuration | 68 | 33.5% |
-| decision-making | 12 | 5.9% |
-| deployment | 49 | 24.1% |
-| integrations | 10 | 4.9% |
+| architecture-patterns | 22 | 10.7% |
+| best-practices | 5 | 2.4% |
+| configuration | 72 | 35.0% |
+| decision-making | 12 | 5.8% |
+| deployment | 41 | 19.9% |
+| integrations | 9 | 4.4% |
 | limits-quotas | 3 | 1.5% |
 | security | 10 | 4.9% |
-| troubleshooting | 5 | 2.5% |
-| *(Unclassified)* | 22 | 10.8% |
+| troubleshooting | 7 | 3.4% |
+| *(Unclassified)* | 25 | 12.1% |
 
 ## Changes
 
+### New Pages
+
+- [Currency conversion](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/currency-conversion)
+- [Monitor in Azure Data Factory](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-data-extraction)
+- [Monitor in Fabric](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-fabric-data-extraction-processing)
+
 ### Updated Pages
 
-- [Design SAP HA with WSFC and SOFS file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-wsfc-file-share)
-  - Updated: 2023-02-10T23:04:00.000Z → 2026-03-03T23:37:00.000Z
-- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker)
-  - Updated: 2026-01-29T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sap/workloads/get-started)
-  - Updated: 2025-11-04T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+- [SAP ILM](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-information-lifecycle-management)
+  - Updated: 2023-02-10T23:04:00.000Z → 2026-03-13T05:18:00.000Z
+- [Identity and security services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security)
+  - Updated: 2025-06-26T11:11:00.000Z → 2026-03-09T22:17:00.000Z
+- [New version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-new)
+  - Updated: 2025-04-04T22:04:00.000Z → 2026-03-10T22:11:00.000Z
+- [Standard version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-standard)
+  - Updated: 2023-04-13T11:17:00.000Z → 2026-03-13T05:18:00.000Z
+- [Azure Files NFS/SMB for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage-azure-files)
+  - Updated: 2024-04-01T08:00:00.000Z → 2026-03-13T05:18:00.000Z
+- [Public endpoint connectivity with Azure Load Balancer](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections)
+  - Updated: 2023-03-10T00:00:00.000Z → 2026-03-09T18:28:00.000Z
+- [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker)
+  - Updated: 2026-02-02T08:00:00.000Z → 2026-03-12T08:00:00.000Z
+- [Install HA SAP NetWeaver with NFS simple mount](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-simple-mount)
+  - Updated: 2024-11-19T08:00:00.000Z → 2026-03-04T08:00:00.000Z
+- [Deploy multi-SID clusters with Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid)
+  - Updated: 2024-11-19T08:00:00.000Z → 2026-03-06T06:17:00.000Z
+- [Install HA SAP NetWeaver with WSFC](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-shared-disk)
+  - Updated: 2024-11-19T08:00:00.000Z → 2026-03-12T05:52:00.000Z
+- [Multi-SID with WSFC and shared disk](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-shared-disk)
+  - Updated: 2024-06-19T08:00:00.000Z → 2026-03-04T23:27:00.000Z
+- [Prepare Azure infrastructure for SAP HA (SOFS)](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-infrastructure-wsfc-file-share)
+  - Updated: 2023-02-10T23:04:00.000Z → 2026-03-07T08:00:00.000Z
+- [Multi-SID with WSFC and file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-file-share)
+  - Updated: 2023-02-10T23:04:00.000Z → 2026-03-07T08:00:00.000Z
+- [Add additional secondary sites to HANA Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-hana)
+  - Updated: 2024-10-30T11:20:00.000Z → 2026-03-09T22:17:00.000Z
+- [SAP front-end printing with Universal Print](https://learn.microsoft.com/en-us/azure/sap/workloads/universal-print-sap-frontend)
+  - Updated: 2024-07-22T11:16:00.000Z → 2026-03-09T18:28:00.000Z
+- [Register an existing SAP system - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-cli)
+  - Updated: 2024-11-29T12:11:00.000Z → 2026-03-10T22:11:00.000Z
+- [Deploy S/4HANA infrastructure](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana)
+  - Updated: 2024-01-29T18:06:00.000Z → 2026-03-11T17:32:00.000Z
+- [Get SAP installation media](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-sap-installation-media)
+  - Updated: 2024-05-22T22:11:00.000Z → 2026-03-13T22:12:00.000Z
+- [Register existing SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system)
+  - Updated: 2025-02-21T18:03:00.000Z → 2026-03-11T22:19:00.000Z
+- [Deploy the control plane](https://learn.microsoft.com/en-us/azure/sap/automation/deploy-control-plane)
+  - Updated: 2023-12-15T18:08:00.000Z → 2026-03-15T08:00:00.000Z
+- *...and 3 more*
 
 ## Classified Pages
 
@@ -87,14 +130,12 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [SAP HANA with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-netapp) | configuration | 0.85 | Specifies supported NFS protocol versions and volume usage for HANA (/hana/shared, /hana/data, /hana/log); includes strict support constraints. |
 | [Troubleshoot the Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-troubleshooting) | troubleshooting | 0.85 | Explicit troubleshooting guide; likely maps specific errors and logs to causes and fixes for the SAP VM extension. |
 | [Azure Availability Zones for SAP workloads](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones) | architecture-patterns | 0.80 | Describes recommended zonal deployment patterns and region support for SAP; includes architecture scenarios and constraints. |
-| [Azure Files NFS/SMB for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage-azure-files) | configuration | 0.80 | Gives starting configuration suggestions and tuning guidance for Premium Files with SAP; includes bandwidth/IOPS utilization considerations. |
 | [Azure Storage types for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage) | decision-making | 0.80 | Compares Azure storage types for SAP, including which are certified/usable for SAP HANA; product-specific guidance and trade-offs. |
 | [Azure VM storage for HANA](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage) | configuration | 0.80 | Provides storage configuration recommendations, certified conditions, and IOPS/throughput references for HANA VMs. |
 | [Configuration options to minimize network latency with SAP applications](https://learn.microsoft.com/en-us/azure/sap/workloads/proximity-placement-scenarios) | architecture-patterns | 0.80 | Covers configuration options (e.g., proximity placement groups) and changes for zonal deployments; SAP-specific latency-sensitive patterns. |
 | [Configure custom disk sizing](https://learn.microsoft.com/en-us/azure/sap/automation/configure-extra-disks) | configuration | 0.80 | Includes default disk configuration tables for HANA and AnyDB and guidance on custom JSON disk configs—detailed configuration and a product-specific best-practice note. |
 | [Data reference for Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/data-reference) | configuration | 0.80 | Data reference pages list specific table names, field names, and schemas for logs and metrics, which are detailed configuration/integration references unique to this service. |
 | [Deploy multi-SID clusters with Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-multi-sid) | configuration | 0.80 | Describes deploying multiple NetWeaver systems in a two-node HA cluster on RHEL with Azure NetApp Files, including SIDs and volume usage, which is advanced configuration knowledge. |
-| [Deploy multi-SID clusters with Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid) | configuration | 0.80 | Explains how to run multiple NetWeaver/S4HANA systems in a two-node HA cluster on SLES, including SIDs and NFS share usage, which is advanced, product-specific configuration knowledge. |
 | [Design SAP HA with WSFC](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-wsfc-shared-disk) | configuration | 0.80 | Provides detailed steps and options for clustering SAP ASCS/SCS on Windows Server Failover Clustering using shared disk in Azure, which is a specific HA configuration pattern. |
 | [Enable SAP Principal Propagation for live OData feeds with Power Query](https://learn.microsoft.com/en-us/azure/sap/workloads/expose-sap-odata-to-power-query) | integrations | 0.80 | Details end-to-end configuration for principal propagation from Power BI/Excel via Power Query to SAP OData, including authentication flows, gateway settings, and SAP-side config. |
 | [Enable Trusted Access in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/enable-trusted-access) | security | 0.80 | Focuses on disabling public access and using system-assigned identity with private endpoints; includes Key Vault and storage account access patterns and trust configuration, which are detailed security settings. |
@@ -103,7 +144,6 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Install HA SAP NetWeaver with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-netapp-files) | configuration | 0.80 | Explains HA configuration for NetWeaver with Azure NetApp Files on SLES, including instance numbers and guidance on simple mount vs classic Pacemaker, which is detailed configuration knowledge. |
 | [Install HA SAP NetWeaver with NFS on Azure Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files) | configuration | 0.80 | Details VM deployment, cluster framework installation, and NetWeaver HA setup using NFS on Azure Files on RHEL, which is a specific configuration pattern. |
 | [Install HA SAP NetWeaver with NFS on Azure Files](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-azure-files) | configuration | 0.80 | Describes VM and cluster configuration plus NetWeaver HA setup on SLES with NFS on Azure Files, including recommendations for simple mount vs classic Pacemaker, which are expert configuration patterns. |
-| [Install HA SAP NetWeaver with NFS simple mount](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-simple-mount) | configuration | 0.80 | Provides detailed steps for NetWeaver HA on SLES using simple mount and Azure NFS services, including that simple mount is the default for SLES 15, which is product-specific configuration guidance. |
 | [Manage resources with Azure RBAC](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/manage-with-azure-rbac) | security | 0.80 | Lists specific Azure built-in roles, custom role scopes, and minimum permission sets required to manage VIS and related resources, matching security criteria. |
 | [Premium SSD v2 for HANA](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2) | configuration | 0.80 | Details on tuning capacity, IOPS, and throughput for HANA using Premium SSD v2; includes recommended values and patterns. |
 | [Premium storage for HANA](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v1) | configuration | 0.80 | HANA-specific storage layouts and parameters for Premium SSD v1; includes product-specific configuration guidance. |
@@ -124,7 +164,6 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Configure Microsoft SQL Server provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server) | configuration | 0.75 | Explains SQL Server provider setup with portal fields and constraints; these are concrete configuration parameters unique to this integration. |
 | [Configure NetWeaver provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-netweaver) | configuration | 0.75 | Provider configuration guides include connection types, required credentials, and metric lists, which are detailed, product-specific configuration parameters. |
 | [Configure OS (Linux) provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-linux) | configuration | 0.75 | Linux provider configuration involves specifying OS-level connection details and metrics, which are product-specific configuration patterns. |
-| [Configure SAP HANA provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana) | configuration | 0.75 | Documents how to set up the HANA provider, including connection properties and supported metrics, which are specific configuration details. |
 | [Configure SAP source system with Azure Data Factory](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-data-factory) | integrations | 0.75 | Details configuring SAP connections, service principals, and Self-Hosted Integration Runtime for ADF, including connector-specific parameters and constraints. |
 | [Configure SAP source system with Open Mirroring](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-source-system-with-open-mirroring) | integrations | 0.75 | Describes configuring third-party extraction tools and source system connections for Open Mirroring, including integration-specific settings. |
 | [Configure Salesforce source system](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-salesforce-source-system) | integrations | 0.75 | Covers Salesforce connection setup, prerequisites, and configuration in the solution item, including connector parameters and authentication details. |
@@ -134,40 +173,42 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Deployment for Windows on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/businessobjects-deployment-guide-windows) | deployment | 0.75 | Concrete deployment strategy using specific Azure services (Premium SSD, Azure SQL DB, Premium Files) and topology for Windows. |
 | [Enable TLS in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/enable-tls-azure-monitor-sap-solutions) | security | 0.75 | Covers secure communication setup, including TLS version requirements and connection properties for Azure Functions to SAP systems, which are product-specific security configuration details. |
 | [HA architecture and scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios) | architecture-patterns | 0.75 | Details multiple HA architecture scenarios for NetWeaver on Azure VMs; product-specific patterns and trade-offs. |
-| [Identity and security services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security) | security | 0.75 | Covers integration of Azure identity/security and monitoring with SAP RISE; likely includes specific services, roles, and configuration patterns. |
 | [Install HA NFS server](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs) | configuration | 0.75 | Describes deploying a highly available NFS server cluster on SLES Azure VMs for SAP shared data, including that Azure first-party NFS services are now recommended, which is specialized configuration guidance. |
 | [Install HA SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel) | configuration | 0.75 | Describes VM deployment, cluster framework configuration, and NetWeaver HA installation with concrete instance numbers and resource naming tied to Azure templates. |
+| [New version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-new) | configuration | 0.75 | A deployment/configuration article for a specific VM extension version will contain extension parameter names, allowed values, and possibly JSON settings unique to the SAP VM extension, which is expert configuration knowledge rather than generic deployment steps. |
 | [Outbound E-Mail from SAP to Exchange Online](https://learn.microsoft.com/en-us/azure/sap/workloads/exchange-online-integration-sap-email-outbound) | integrations | 0.75 | Describes detailed configuration of SAP outbound SMTP to Exchange Online, including connector settings, authentication modes, and SAP-specific parameters not generally known. |
 | [Prepare BOM](https://learn.microsoft.com/en-us/azure/sap/automation/bom-prepare) | configuration | 0.75 | Explains how to construct BOMs, including sample BOMs and steps for permalink-based BOMs; this is detailed configuration for the framework. |
 | [Prerequisites Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap) | configuration | 0.75 | Covers deploying the Azure VM extension for SAP; includes extension names, parameters, and Azure-specific configuration details. |
-| [Public endpoint connectivity with Azure Load Balancer](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections) | configuration | 0.75 | Describes specific configurations to enable outbound connectivity for Pacemaker-based HA with Standard Load Balancer; includes Azure networking settings. |
 | [RHEL - IBM Db2 HA](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-ibm-db2-luw) | configuration | 0.75 | Explains how to deploy IBM Db2 LUW in HADR configuration on RHEL Azure VMs, including primary/secondary roles and replication modes, which are product-specific HA configuration details. |
 | [Recommended setup for SAP Cloud Identity Services and SAP Business Technology Platform with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/sap/workloads/scenario-azure-first-sap-identity-integration) | security | 0.75 | Technical design guide with concrete Entra ID and SAP Cloud Identity Services configuration, including SSO setup, trust relationships, and scope/claim mappings. |
 | [SLES - IBM Db2 HA](https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-ha-ibm) | configuration | 0.75 | Provides deployment and configuration guidance for Db2 LUW HADR on Azure VMs, including synchronous/asynchronous replication options, which are expert configuration patterns. |
 | [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability) | configuration | 0.75 | Details HANA System Replication setup for HA on SLES in Azure, including node roles and replication modes, which are SAP-on-Azure configuration specifics. |
 | [Scale-up with HSR and Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel) | configuration | 0.75 | Details how to deploy and configure HANA System Replication for HA on Azure VMs with RHEL, including supported HA method and node roles, which are product-specific configuration patterns. |
-| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker) | configuration | 0.75 | Explains how to set up Pacemaker on SLES specifically in Azure, including cluster configuration steps that are platform-specific. |
+| [Standard version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-standard) | configuration | 0.75 | Similar to the new version article, this standard-version guide will document extension settings, parameters, and version-specific configuration details that are product-specific configuration knowledge. |
 | [Update the Terraform state file using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/advanced-state-management) | configuration | 0.75 | Advanced Terraform state management for SAP automation is configuration-focused and likely documents state file locations, backends, and script parameters unique to this framework. |
 | [Install GlusterFS on Azure VMs for SAP NetWeaver](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-glusterfs) | configuration | 0.72 | The article provides step-by-step, product-specific configuration details for deploying and configuring a GlusterFS cluster on Azure VMs running RHEL for SAP NetWeaver, including concrete VM, network, storage, and cluster settings. It goes beyond generic concepts and includes exact configuration commands and patterns unique to this SAP-on-Azure scenario, fitting best under configuration rather than generic deployment guidance. |
+| [Install HA SAP NetWeaver with WSFC](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-shared-disk) | configuration | 0.72 | Step-by-step HA installation for SAP ASCS/SCS on Windows Failover Clustering with Azure shared disks/DataKeeper will include product-specific cluster roles, resource names, dependency settings, and configuration parameters that are not generic knowledge. |
+| [Set up Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker) | configuration | 0.72 | A high-availability setup guide for Pacemaker on SLES in Azure typically includes product- and platform-specific cluster configuration parameters (Pacemaker/Corosync settings, STONITH/fencing options, Azure-specific agents and resource definitions, required packages and versions). These are concrete, implementation-level settings unique to running Pacemaker on Azure rather than generic HA concepts, fitting the configuration sub-skill. |
 | [About HA for Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-start) | architecture-patterns | 0.70 | HA guidance for NetWeaver on Azure VMs; includes Azure-specific patterns and options beyond generic HA concepts. |
 | [About SAP HANA availability in Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-availability-overview) | architecture-patterns | 0.70 | Provides multiple availability scenarios and requirements for SAP HANA on Azure VMs; product-specific HA patterns and options. |
-| [Add additional secondary sites to HANA Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-hana) | deployment | 0.70 | Contains detailed requirements and setup steps for additional HANA replication sites with Pacemaker on SLES/RHEL, including replication modes and cluster configuration specifics. |
+| [Add additional secondary sites to HANA Pacemaker cluster](https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-hana) | configuration | 0.70 | Covers requirements and setup for secondary HANA replication site with Pacemaker on SLES/RHEL, which will include specific cluster resource definitions, replication modes, and OS-specific configuration steps that are expert-level and product-specific. |
 | [Availability scenarios in one Azure region](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-availability-one-region) | architecture-patterns | 0.70 | Describes concrete availability scenarios (single VM, flexible scale set with FD=1, availability zones, availability sets) and when to use each within a single region, which is product- and platform-specific architecture guidance. |
 | [Azure Files NFS Encryption In Transit for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-azure-files-nfs-encryption-in-transit-guide) | security | 0.70 | Provides concrete steps and parameters to enable TLS-based encryption in transit for Azure Files NFS v4.1 volumes used by SAP, including storage and client configuration details. |
+| [Azure Files NFS/SMB for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage-azure-files) | best-practices | 0.70 | The document provides concrete storage configuration suggestions (IOPS/bandwidth sizing, share types, layout) specifically for SAP on Azure Premium Files. These are product- and workload-specific recommendations and starting configurations, fitting best-practices with configuration flavor. |
 | [Azure VM restart for higher availability](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-higher-availability-architecture-scenarios) | architecture-patterns | 0.70 | Explains pattern of relying on Azure VM restart instead of clustering; includes constraints and behavior specific to SAP workloads. |
 | [Azure services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services) | integrations | 0.70 | Describes concrete integration scenarios (Data Factory, Synapse, ABAP SDK for Azure) with SAP RISE; includes runtime and interface requirements. |
 | [Bootstrapping the Deployer using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/install-deployer) | deployment | 0.70 | Describes a control-plane bootstrap script for SAP deployment automation. Such pages usually include product-specific parameters, prerequisites, and environment details for deploying the deployer, which are expert deployment patterns. |
 | [Bootstrapping the Library using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/install-library) | deployment | 0.70 | Covers a script that bootstraps the SAP Library in the control plane. These docs generally include specific script flags, Azure resource layout, and sequencing for deployment, which are specialized deployment details. |
 | [Configure SAP HANA on Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations) | configuration | 0.70 | Gives detailed Azure infrastructure configuration and operational guidance for SAP HANA, including scale-out specifics for certain VM SKUs, which are configuration-level expert details. |
+| [Configure SAP HANA provider](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana) | configuration | 0.70 | How-to guide for configuring the SAP HANA provider likely includes provider-specific settings (host, ports, authentication, connection parameters) and possibly parameter names/allowed values unique to Azure Monitor for SAP solutions, fitting the configuration sub-skill type. |
 | [Configure SAP parameters](https://learn.microsoft.com/en-us/azure/sap/automation/configure-sap-parameters) | configuration | 0.70 | Describes default vs Terraform-provided parameters used by Ansible playbooks; product-specific parameter names and usage. |
 | [Configure insights](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-insights) | configuration | 0.70 | The article describes how to configure Insights, including setting up semantic models, deploying Power BI report templates, and establishing connections for refreshing reports and models. This implies product-specific configuration steps and parameters for Business Process Solutions and Power BI that go beyond generic knowledge, fitting the configuration sub-skill. |
 | [Connect to SAP LaMa](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) | configuration | 0.70 | Describes setting up SAP LaMa connector to manage Azure resources; includes connector configuration details and Azure-specific parameters. |
 | [Create automation template files](https://learn.microsoft.com/en-us/azure/sap/automation/bom-templates-db) | configuration | 0.70 | Shows how to create ini-file templates for unattended installs based on BOM; product-specific configuration artifacts. |
 | [Customer enabled disaster recovery](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/compliance-cedr) | deployment | 0.70 | Provides detailed, stepwise DR procedures and requirements for VIS resources across regions, including failover/failback actions and constraints. |
 | [Deploy S/4 HANA infrastructure - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-create-high-availability-namecustom) | deployment | 0.70 | CLI-based quickstart with detailed commands and options to deploy HA three-tier SAP infrastructure and customize resource names, specific to ACSS. |
-| [Deploy S/4HANA infrastructure](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana) | deployment | 0.70 | Portal-based how-to with detailed steps and options for deploying HA, non-HA, and single-server S/4HANA infrastructure via ACSS. |
+| [Deploy multi-SID clusters with Pacemaker](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid) | architecture-patterns | 0.70 | The multi-SID clustering article explains how to run multiple SAP systems with different SIDs on a shared two-node Pacemaker cluster in Azure. This is a specialized HA architecture pattern (multi-SID layout, resource sharing, cluster design) specific to SAP on Azure with SLES, including how to organize instances and clusters for optimal utilization while maintaining availability. That makes it an architecture-patterns page with expert, product-specific guidance. |
 | [Deploy the SAP system](https://learn.microsoft.com/en-us/azure/sap/automation/deploy-system) | deployment | 0.70 | Details how SAP systems and their VMs/components are created by the framework; core deployment behavior. |
-| [Deploy the control plane](https://learn.microsoft.com/en-us/azure/sap/automation/deploy-control-plane) | deployment | 0.70 | Describes control plane deployment components and process; product-specific deployment pattern for the framework. |
 | [Deploy the workload zone](https://learn.microsoft.com/en-us/azure/sap/automation/deploy-workload-zone) | deployment | 0.70 | Explains workload zone deployment across regions and hub-spoke; a framework-specific deployment topology description. |
 | [Deploying the SAP system using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/installer) | deployment | 0.70 | Script reference pages for SAP Deployment Automation Framework typically document script arguments, required environment variables, and Azure resource constraints specific to this tooling, which are not generic knowledge. This is deployment-focused automation for creating SAP systems. |
 | [Deploying the control plane using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/deploy-controlplane) | deployment | 0.70 | Script-specific deployment of control plane (deployer, SAP library); clearly a deployment method unique to this framework. |
@@ -180,38 +221,40 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Expose SAP Process Orchestration on Azure securely](https://learn.microsoft.com/en-us/azure/sap/workloads/expose-sap-process-orchestration-on-azure) | security | 0.70 | Covers concrete Azure PaaS configuration (App Gateway, WAF, networking) and security controls for internet-facing SAP PO/PI, including product-specific patterns and settings. |
 | [Extract SAP data to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/sap/workloads/extract-sap-data) | decision-making | 0.70 | Compares multiple SAP data sources and extraction tools with criteria like performance, reliability, and data layer characteristics to guide method selection. |
 | [Flexible scale sets deployment guide](https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide) | deployment | 0.70 | Deployment guidelines for VM scale sets with flexible orchestration for SAP; includes SAP-specific deployment constraints and patterns. |
-| [Get SAP installation media](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-sap-installation-media) | configuration | 0.70 | Describes specific methods and storage account procedures to acquire SAP media and upload it for use with ACSS, including container and path details. |
 | [Get SAP media for BOM](https://learn.microsoft.com/en-us/azure/sap/automation/bom-get-files) | configuration | 0.70 | Details how to obtain and place SAP media for BOM usage; BOM structure and media handling are framework-specific configuration knowledge. |
 | [How to onboard SAP Edge Integration Cell with Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-edge-integration-cell-with-azure) | deployment | 0.70 | Gives product-specific steps and Kubernetes configuration for running SAP Edge Integration Cell on AKS with Azure Arc, including cluster and connectivity settings. |
+| [Identity and security services with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security) | security | 0.70 | The article focuses on integration of Azure identity, security, and monitoring with SAP RISE. Such content typically includes concrete RBAC roles, identity configuration, and security settings specific to this integration, which matches the security sub-skill. |
 | [Install HA SAP NetWeaver with Azure Files SMB](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-azure-files-smb) | limits-quotas | 0.70 | Includes special sizing requirements and minimum installation requirements for Azure Files Premium SMB shares with specific capacity and performance numbers, plus HA deployment details. |
-| [Install HA SAP NetWeaver with WSFC](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-shared-disk) | deployment | 0.70 | Step-by-step, product-specific HA deployment of SAP ASCS/SCS on Azure VMs with WSFC and shared disk, including concrete cluster, storage, and load balancer settings that go beyond generic knowledge. |
 | [Install HA SAP NetWeaver with WSFC and SOFS file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-installation-wsfc-file-share) | deployment | 0.70 | Stepwise installation and configuration of SAP NetWeaver HA using WSFC and Scale-Out File Server, including SAP- and Azure-specific cluster resource settings. |
 | [Install SAP software](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/install-software) | deployment | 0.70 | Explains two concrete installation modes (inside ACSS vs. external detection) with product-specific steps and parameters for VIS-based systems. |
 | [Install SAP software - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-high-availability-namecustom-cli) | deployment | 0.70 | Provides Azure CLI commands and parameters to drive SAP software installation on HA infrastructure created by Azure Center for SAP solutions. |
+| [Monitor in Azure Data Factory](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-data-extraction) | troubleshooting | 0.70 | Article explicitly covers how the data extraction process works, how to monitor it, and how to troubleshoot issues. For this product area, such monitoring/troubleshooting docs typically include pipeline names, run-status patterns, and symptom→cause→resolution steps specific to the prebuilt templates and Azure services, which qualifies as product-specific troubleshooting knowledge. |
+| [Monitor in Fabric](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/monitor-fabric-data-extraction-processing) | troubleshooting | 0.70 | Describes monitoring data extraction and layered processing pipelines/notebooks deployed for different Business Process Solutions configurations (SAP + ADF, Salesforce, SAP + ECC). Such content normally includes pipeline/notebook identifiers, monitoring views, and issue-resolution steps tied to these templates, fitting the troubleshooting category with product-specific symptom→diagnosis→solution guidance. |
 | [Multi-SID with WSFC and Azure shared disk](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-azure-shared-disk) | deployment | 0.70 | Describes moving from single to multi-SID clustered ASCS/SCS on WSFC with Azure shared disk, including concrete clustering and disk configuration steps specific to this scenario. |
-| [Multi-SID with WSFC and file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-file-share) | deployment | 0.70 | Describes multi-SID clustering of SAP ASCS/SCS on WSFC with file share and Azure internal load balancer, including concrete cluster and IP configuration steps. |
-| [Multi-SID with WSFC and shared disk](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-shared-disk) | deployment | 0.70 | Covers multi-SID HA deployment using WSFC and SIOS-simulated shared disk, with Azure-specific cluster, storage, and load balancer configuration details. |
+| [Multi-SID with WSFC and file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-file-share) | configuration | 0.70 | Describes adding additional clustered ASCS/SCS instances to an existing WSFC with file share, which involves concrete cluster, IP, load balancer, and SAP instance configuration parameters unique to this product scenario. |
+| [Multi-SID with WSFC and shared disk](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-shared-disk) | configuration | 0.70 | Multi-SID HA setup on WSFC with shared disk requires detailed cluster and SAP instance configuration (resource groups, IPs, instance parameters) that are specific to this scenario and not general conceptual content. |
 | [Network connectivity with SAP RISE](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network) | architecture-patterns | 0.70 | Details connectivity patterns between SAP RISE-managed VNets and customer Azure; product-specific network architecture options and trade-offs. |
-| [New version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-new) | configuration | 0.70 | New version of the VM extension with deployment/configuration details; product-specific parameters and behaviors. |
-| [Prepare Azure infrastructure for SAP HA (SOFS)](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-infrastructure-wsfc-file-share) | deployment | 0.70 | Details Azure infrastructure preparation (VMs, storage, networking, load balancer) for WSFC-based SAP ASCS/SCS HA using scale-out file shares, with product-specific configuration steps. |
 | [Prepare network for deployment](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network) | configuration | 0.70 | Gives concrete VNet, subnet, and related network configuration guidance tailored to VIS-based S/4HANA deployments, including required settings. |
-| [Providers in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/providers) | configuration | 0.70 | Defines provider types and connection information for each monitored component; likely includes parameter names, required fields, and constraints unique to this service. |
+| [Public endpoint connectivity with Azure Load Balancer](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections) | configuration | 0.70 | The article describes specific network and load balancer configurations to enable outbound connectivity for Pacemaker-based SAP HA scenarios, including Azure management API access. These are detailed, product-specific configuration patterns rather than generic networking concepts. |
 | [Run extraction and data processing](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/run-extraction-data-processing) | deployment | 0.70 | Describes which pipelines to execute for different source systems and connectors (ADF, Open Mirroring, Fabric pipelines), which is operational deployment/execution guidance specific to this solution. |
 | [SAP BOBI planning and implementation guide on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/businessobjects-deployment-guide) | deployment | 0.70 | Guidelines for planning, deploying, and configuring SAP BOBI on Azure; includes Azure service choices and deployment patterns. |
 | [SAP HANA data tiering and archiving guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-tiering-guidance) | decision-making | 0.70 | Describes data tiering options and strategies on Azure for HANA, balancing cost and performance; used for migration and storage decisions. |
+| [SAP ILM](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-information-lifecycle-management) | configuration | 0.70 | An ILM Store setup guide will necessarily include SAP- and Azure-specific configuration steps (storage account/container setup, connection parameters, retention settings) that are product-specific and not just conceptual. It describes creation and configuration of Azure Blob storage for SAP ILM, which fits the configuration sub-skill. |
 | [SAP IQ on Azure VMs](https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-sapiq) | architecture-patterns | 0.70 | Describes the NLS architecture using SAP IQ on Azure, including how to separate hot vs cold data for cost/performance, which is a specialized SAP-on-Azure pattern. |
 | [SAP Monitoring with Azure Monitor for SAP](https://learn.microsoft.com/en-us/azure/sap/automation/integration-azure-monitor-sap) | integrations | 0.70 | Describes integration of Azure Monitor for SAP with the framework, including configuration steps and parameters for this specific integration. |
-| [SAP front-end printing with Universal Print](https://learn.microsoft.com/en-us/azure/sap/workloads/universal-print-sap-frontend) | integrations | 0.70 | Provides specific configuration steps to connect SAP front-end printing to Universal Print, including printer mappings and SAP/Windows print settings. |
 | [Sample deployment configurations](https://learn.microsoft.com/en-us/azure/sap/automation/new-vs-existing) | decision-making | 0.70 | Guides configuration for greenfield vs brownfield scenarios, helping decide when to let the framework create vs reuse infrastructure. |
 | [Secure Azure Infrastructure for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-security-infrastructure) | security | 0.70 | Provides SAP-on-Azure–specific infrastructure security guidance tied to Zero Trust and Azure services, beyond generic security concepts. |
 | [Set up network for Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network) | configuration | 0.70 | Network setup guides for this service typically specify required subnets, ports, NSG rules, and private endpoint settings, which are product-specific configuration details. |
-| [Standard version of Azure VM Extension for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap-standard) | configuration | 0.70 | Standard variant of the VM extension; includes configuration options and deployment specifics unique to SAP on Azure. |
 | [Supported platforms and features](https://learn.microsoft.com/en-us/azure/sap/automation/supportability) | deployment | 0.70 | A supportability matrix for platforms and topologies is deployment-specific expert knowledge, listing which deployment options are supported where. |
 | [Supported scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations) | decision-making | 0.70 | Describes supported/non-supported SAP VM scenarios and HA configurations; used to decide which architectures are allowed on Azure, with product-specific support constraints. |
 | [Update the SAP Library SAS token](https://learn.microsoft.com/en-us/azure/sap/automation/bash/update-sas-token) | configuration | 0.70 | Updating SAS tokens for the SAP Library involves specific Key Vault secret names and token handling patterns, which are configuration details unique to this solution. |
 | [Using a custom naming convention](https://learn.microsoft.com/en-us/azure/sap/automation/naming-module) | configuration | 0.70 | Describes the sap_namegenerator Terraform module, resource name formats, and parameter-file-driven overrides—product-specific configuration parameters and allowed patterns. |
 | [What SAP workloads run on Azure?](https://learn.microsoft.com/en-us/azure/sap/workloads/certifications) | decision-making | 0.70 | Contains tables of Azure-supported SAP configurations and certifications, used to decide which VM/OS/DB combinations are supported; product-specific decision data not inferable from general training. |
+| [SAP front-end printing with Universal Print](https://learn.microsoft.com/en-us/azure/sap/workloads/universal-print-sap-frontend) | integrations | 0.69 | Describes concrete options to use Universal Print from SAP front-end, which will involve connector configuration, printer mappings, and possibly SAP/UP parameter settings that are specific integration patterns rather than generic printing concepts. |
 | [Design SAP HA with WSFC and SOFS file share](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-wsfc-file-share) | configuration | 0.68 | This guide describes detailed, product-specific configuration steps for clustering SAP ASCS/SCS on Windows Server Failover Clustering using Azure file share. It includes concrete settings and cluster configuration details unique to this scenario (e.g., how to set up the file share witness and cluster resources), which go beyond generic HA concepts and represent expert operational knowledge. It is not primarily about limits, troubleshooting, or architecture trade-off matrices, but about how to configure the environment correctly. |
+| [Prepare Azure infrastructure for SAP HA (SOFS)](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-infrastructure-wsfc-file-share) | configuration | 0.68 | Infrastructure preparation for WSFC and scale-out file share for SAP ASCS/SCS will include specific Azure resource settings (storage types, network, load balancer, file share configuration) that constitute detailed configuration knowledge. |
+| [Register existing SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system) | configuration | 0.67 | Portal-based registration describes exact resource types created, naming patterns, and configuration fields for Azure Center for SAP solutions, which are product-specific configuration details beyond generic portal usage. |
+| [Register an existing SAP system - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-cli) | configuration | 0.66 | CLI-based registration will include specific az command names, parameters, resource IDs, and required configuration values for Azure Center for SAP solutions that are detailed configuration knowledge. |
 | [Availability scenarios in multiple Azure regions](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-availability-across-regions) | architecture-patterns | 0.65 | Covers multi-region SAP HANA availability scenarios and special considerations due to inter-region distance, providing Azure- and SAP-specific architectural trade-offs. |
 | [Bash scripts for automation framework](https://learn.microsoft.com/en-us/azure/sap/automation/reference-bash) | deployment | 0.65 | Reference for shell scripts that deploy framework components; includes script names and usage patterns for deployment. |
 | [Checklist to deploy an SAP workload on Azure](https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-checklist) | deployment | 0.65 | Project checklist for SAP IaaS deployments; contains concrete deployment requirements and sequencing specific to SAP on Azure. |
@@ -226,21 +269,21 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Get quality checks and insights](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights) | best-practices | 0.65 | Describes more than 100 concrete quality checks enforcing Azure and SAP best practices; these checks are product-specific and encode detailed reliability/performance recommendations that go beyond generic guidance. |
 | [Identity Management and Authentication for SAP](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-security-identity) | security | 0.65 | Aggregates SAP-on-Azure identity, SSO, MFA, and secure access guidance; while link-heavy, it reflects product-specific identity patterns rather than generic security theory. |
 | [Install HA SAP NetWeaver with Azure NetApp Files (SMB)](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-netapp-files-smb) | deployment | 0.65 | Provides detailed deployment and configuration steps for SAP NetWeaver HA on Azure VMs using Azure NetApp Files SMB, including cluster framework and storage configuration specifics. |
+| [Install HA SAP NetWeaver with NFS simple mount](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-simple-mount) | architecture-patterns | 0.65 | The article describes a specific high-availability architecture for SAP NetWeaver on SLES using simple mount and Azure NFS services. This is a product- and scenario-specific HA pattern (VM layout, NFS usage, cluster role of each component) that goes beyond generic concepts and is tied to Azure SAP workloads. It primarily guides how to architect the solution rather than just step-by-step deployment, so it best fits architecture-patterns. |
 | [Install PAS and AAS with SAP NetWeaver HA cluster - RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-with-dialog-instance) | deployment | 0.65 | Gives concrete steps and configuration for PAS/AAS dialog instances on an existing RHEL-based ASCS/SCS HA cluster, including cluster and SAP instance parameters. |
 | [Install SAP software - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-install-distributed-non-high-availability) | deployment | 0.65 | Contains specific PowerShell-driven installation flows and parameters for SAP software installation orchestrated by Azure Center for SAP solutions. |
 | [Plan your automated deployment](https://learn.microsoft.com/en-us/azure/sap/automation/plan-deployment) | decision-making | 0.65 | Covers subscription planning, credential management, vNet design, and deployment scenarios; this is framework-specific planning/selection guidance that informs which deployment approach to choose. |
-| [Register an existing SAP system - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-cli) | deployment | 0.65 | CLI quickstart with concrete commands and flags to register an existing SAP system as a VIS resource in Azure Center for SAP solutions. |
 | [Register an existing SAP system - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-powershell) | deployment | 0.65 | Shows specific Az PowerShell commands and required parameters to onboard an existing SAP system into Azure Center for SAP solutions. |
-| [Register existing SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system) | deployment | 0.65 | Portal how-to with detailed fields and resource creation behavior when onboarding an existing SAP system as a VIS, including managed resource group and storage account specifics. |
 | [Removing the SAP system using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/remover) | deployment | 0.65 | Script-based removal of SAP systems in Azure deployment automation typically includes specific resource dependencies and ordering, which are expert deployment teardown details. |
 | [Removing the control plane using shell scripts](https://learn.microsoft.com/en-us/azure/sap/automation/bash/remove-controlplane) | deployment | 0.65 | Removal of the SAP control plane (Deployer, Library) via script is a deployment/teardown pattern with product-specific steps and constraints, not generic shell usage. |
-| [SAP ILM](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-information-lifecycle-management) | integrations | 0.65 | Product-specific integration of SAP ILM Store with Azure Blob; likely includes endpoint/config parameters and storage settings. |
 | [Start and stop SAP system - Azure CLI](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-cli) | configuration | 0.65 | Provides Azure CLI commands and options to manage SAP system start/stop through VIS resources, with product-specific parameters. |
 | [Start and stop SAP system - Azure PowerShell](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-powershell) | configuration | 0.65 | Documents specific PowerShell commands and VIS resource operations to control SAP system lifecycle, including parameter names and behavior. |
 | [Supported SAP software for Azure deployments](https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure) | decision-making | 0.65 | Guides evaluation of which SAP products and OS/DBMS releases are supported on Azure; relies on specific compatibility/support matrices. |
 | [Supported platforms and features](https://learn.microsoft.com/en-us/azure/sap/automation/testing-framework-supportability) | limits-quotas | 0.65 | A 'supported platforms and features' page typically includes explicit OS versions, platform matrices, and feature support tables, which are expert, version-specific limits/compatibility details. |
 | [Use Ansible for system configuration](https://learn.microsoft.com/en-us/azure/sap/automation/run-ansible) | deployment | 0.65 | Shows how to execute framework-provided Ansible playbooks for OS config and SAP install; deployment/configuration workflow specific to this product. |
 | [Windows DFS-N - flexible SAPMNT for SMB based file share](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-dfs) | configuration | 0.65 | Provides specific DFS-N namespace and target configuration to overcome SAPMNT naming limits for Azure NetApp Files SMB and Azure Files Premium SMB, including product-specific paths and settings. |
+| [Deploy S/4HANA infrastructure](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana) | deployment | 0.64 | Describes deploying S/4HANA infrastructure with multiple HA/non-HA/single-server options; likely includes SKU choices, deployment parameters, and Azure resource constraints specific to this deployment workflow. |
+| [Get SAP installation media](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-sap-installation-media) | configuration | 0.63 | Covers concrete steps and required settings to download SAP media and upload to Azure Storage for use with Azure Center for SAP solutions, including storage account/container configuration and naming conventions. |
 | [Business Templates](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/business-templates) | decision-making | 0.60 | Explains which templates (Power BI reports, Copilot agents) support which business processes and metrics, helping users choose templates for their scenarios. |
 | [Configure Azure DevOps](https://learn.microsoft.com/en-us/azure/sap/automation/configure-devops) | deployment | 0.60 | Details how to wire Azure Repos and Pipelines to deploy SAP via the framework; this is product-specific CI/CD deployment configuration. |
 | [Configure and monitor Backup for SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/acss-backup-integration) | configuration | 0.60 | Backup configuration from VIS will involve product-specific backup options and parameters (e.g., which components are protected, policy selection) that are configuration-centric and unique to this integration. |
@@ -272,13 +315,13 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Extensibility](https://learn.microsoft.com/en-us/azure/sap/automation/extensibility) | 0.50 | Describes extensibility options (forking, etc.); mostly conceptual customization approaches rather than concrete config parameters or limits. |
 | [Monitor SAP system in Azure portal](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/monitor-portal) | 0.45 | Monitoring capabilities overview for VIS; likely charts and metrics but no explicit mention of config tables, limits, or troubleshooting mappings. |
 | [Naming conventions](https://learn.microsoft.com/en-us/azure/sap/automation/naming) | 0.45 | Explains naming standards conceptually; likely conventions but not detailed config parameters or limits that materially affect behavior. |
-| [Get started with Azure Monitor for SAP solutions - Azure portal](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal) | 0.40 | Quickstart deployment via portal; primarily step-by-step instructions without broad configuration matrices or tier-specific constraints. |
 | [Get started with Azure Monitor for SAP solutions - PowerShell](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-powershell) | 0.40 | Quickstart deployment via PowerShell; focused on basic creation commands rather than comprehensive configuration or limits. |
 | [Get started with automation framework](https://learn.microsoft.com/en-us/azure/sap/automation/get-started) | 0.40 | Get-started tutorial using sample parameter files; introductory and example-driven rather than a comprehensive config or limits reference. |
 | [View cost analysis for SAP system](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/view-cost-analysis) | 0.40 | Cost analysis view in portal; summary suggests UI usage rather than quantified decision matrices or config parameters. |
 | [Soft stop SAP instances and HANA database](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/soft-stop-sap-and-hana-database) | 0.35 | Soft-stop procedure description; likely step-by-step usage of APIs but no evidence of detailed product-specific troubleshooting or config matrices. |
 | [Start and stop SAP systems and VMs](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/stop-start-sap-and-underlying-vm) | 0.35 | Explains starting/stopping SAP and VMs via VIS and REST API; appears as operational how-to without limits, config tables, or error mappings. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/faq) | 0.30 | FAQ-style content; likely conceptual and procedural answers without structured expert-only configuration or limits. |
+| [Get started with Azure Monitor for SAP solutions - Azure portal](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal) | 0.30 | Quickstart for deploying Azure Monitor for SAP solutions via the portal; primarily step-by-step deployment instructions without tier matrices, limits, or detailed configuration parameter tables that meet the expert-knowledge criteria. |
 | [Manage Virtual Instance for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/manage-virtual-instance) | 0.30 | How-to navigation for viewing and wiring up VIS properties; no indication of detailed config tables, limits, or product-specific edge cases. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/automation/testing-framework) | 0.30 | High-level overview of the SAP Testing Automation Framework; primarily conceptual description of purpose and capabilities without detailed configuration tables, limits, or error mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/about-business-process-solutions) | 0.30 | Introduction to Business Process Solutions; high-level description of purpose and capabilities without detailed configuration or limits. |
@@ -288,6 +331,9 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | [Start and stop SAP systems](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems) | 0.30 | Start/stop operations via portal/PowerShell/CLI/REST look like procedural steps without error codes, limits, or deep config parameters. |
 | [Testing framework architecture](https://learn.microsoft.com/en-us/azure/sap/automation/testing-framework-architecture) | 0.30 | Architecture overview of the testing framework; describes components and distributed architecture conceptually, not product-specific thresholds, decision matrices, or configuration parameters. |
 | [Attestation Document](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/attestation) | 0.20 | An attestation document about compliance with Microsoft Fabric Workload Hub requirements is primarily governance/attestation content. The summary does not indicate concrete configuration parameters, limits, security roles, or troubleshooting details; it is more meta-information about compliance, so it does not match any expert-knowledge sub-skill type. |
+| [Currency conversion](https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/currency-conversion) | 0.20 | Appears to be conceptual guidance on how currency conversion works between SAP and Business Process Solutions; summary shows no numeric limits, config tables, error codes, or product-specific parameters. Likely a usage/behavior explanation rather than expert configuration, troubleshooting, or limits content. |
+| [Deploy the control plane](https://learn.microsoft.com/en-us/azure/sap/automation/deploy-control-plane) | 0.20 | The page is described as an overview of the control plane deployment process for the SAP Deployment Automation Framework. With only this summary, there is no evidence of specific limits, configuration parameter tables, error codes, or decision matrices that meet the expert-knowledge criteria; it appears to be a conceptual/process overview rather than detailed reference content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/automation/deployment-framework) | 0.20 | High-level overview of SAP Deployment Automation Framework; conceptual description of what it is and does. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/sap-on-azure-overview) | 0.20 | High-level overview of SAP on Azure offerings without detailed limits, configs, or decision matrices. |
+| [Providers in Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/providers) | 0.20 | Conceptual explanation of what providers are in Azure Monitor for SAP solutions; appears to be FAQ/overview content without specific limits, configuration tables, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sap/workloads/get-started) | 0.10 | High-level getting-started overview for running SAP on Azure VMs without specific limits, configuration tables, error codes, or decision matrices; primarily conceptual/marketing content rather than detailed expert guidance. |

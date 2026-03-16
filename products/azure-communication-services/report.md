@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
@@ -10,31 +10,33 @@ category_descriptions:
   decision-making: 'Guidance on ACS/Teams design decisions: PSTN options and pricing,
     phone numbers, Teams interop and licensing, gov cloud usage, and migrating from
     Twilio Video/Chat to ACS.'
-  limits-quotas: Limits, quotas, regional availability, and restrictions for ACS calling,
-    phone numbers, Teams interop, email sending, media features, and direct routing
-    (including country‑specific rules).
+  limits-quotas: Limits, quotas, and regional restrictions for ACS calling, phone
+    numbers, Teams interop, email (MIME, send limits), media features, and telephony
+    (direct routing, toll‑free, emergency).
   troubleshooting: Diagnosing and fixing ACS calling, SMS, email, Teams, PSTN, audio/video,
     device, network, and SDK issues, plus collecting logs, UFD events, and diagnostics
     for support.
   best-practices: Best practices for ACS calling, SMS, email, IDs, auth, Teams interop,
     network/quality, spam/opt-out compliance, and production-ready virtual visit and
     meeting experiences.
-  integrations: Patterns and code to integrate ACS calling, chat, SMS, email, Rooms,
-    Job Router, and WhatsApp with apps, bots, Teams, push/events, media, and Azure
-    AI/Foundry/OpenAI services
+  integrations: End-to-end patterns for integrating ACS calling, chat, SMS, email,
+    Rooms, Job Router, Teams, WhatsApp, bots, AI, push notifications, and media features
+    into custom applications.
   deployment: 'Infrastructure and deployment guidance for Azure Communication Services:
     direct routing requirements and automating ACS/Email resource provisioning with
     PowerShell.'
   architecture-patterns: Designing scalable contact center solutions with ACS and
     patterns for integrating ACS with ExpressRoute for secure, private connectivity
     and network architecture.
-skill_description: Expert knowledge for Azure Communication Services development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Communication Services applications.
-  Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use
-  azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure
-  Web PubSub (use azure-web-pubsub).
+skill_description: Provides expert guidance on Azure Communication Services across
+  troubleshooting, best practices, architecture, security, limits, configuration,
+  integrations, decision-making, and deployment for calling, chat, SMS, email, and
+  Teams interop. Use this skill when designing or operating ACS-based communication
+  workloads, choosing PSTN/phone number options, integrating ACS into custom apps
+  or contact centers, optimizing quality and compliance, or diagnosing ACS service/SDK
+  issues in production. Not for questions about non-Azure communication platforms
+  (e.g., Twilio, Zoom, Webex) or generic Azure networking/identity topics unrelated
+  to ACS.
 ---
 # Azure Communication Services Crawl Report
 
@@ -48,8 +50,8 @@ skill_description: Expert knowledge for Azure Communication Services development
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 516
+- **Updated Pages**: 2
+- **Unchanged**: 514
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -69,6 +71,13 @@ skill_description: Expert knowledge for Azure Communication Services development
 | *(Unclassified)* | 102 | 19.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Quota increase for email domains](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-quota-increase)
+  - Updated: 2024-04-18T05:43:00.000Z → 2026-03-10T08:00:00.000Z
+- [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api)
+  - Updated: 2025-09-03T17:13:00.000Z → 2026-03-09T22:17:00.000Z
 
 ## Classified Pages
 
@@ -175,7 +184,6 @@ skill_description: Expert knowledge for Azure Communication Services development
 | [Philippines](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-philippines) | limits-quotas | 0.78 | Philippines-focused tables describe which phone number types and capabilities are available and any restrictions, functioning as detailed service limits. |
 | [Poland](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-poland) | limits-quotas | 0.78 | Poland-specific tables list availability, eligibility, and restrictions for Azure Communication Services phone numbers, representing concrete, product-specific constraints. |
 | [Portugal](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-portugal) | limits-quotas | 0.78 | Portugal-focused number availability and eligibility tables provide detailed constraints on which PSTN/SMS numbers and capabilities can be used in that geography. |
-| [Quota increase for email domains](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-quota-increase) | limits-quotas | 0.78 | Specifically about increasing default email sending limits; likely includes concrete default quotas and process details that are not generic knowledge. |
 | [Saudi Arabia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-saudi-arabia) | limits-quotas | 0.78 | Saudi Arabia-specific tables describe availability, eligibility, and restrictions for Azure Communication Services phone numbers, encoding concrete service limits. |
 | [Singapore](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-singapore) | limits-quotas | 0.78 | Singapore-focused tables list which phone number types and capabilities are available and under what restrictions, representing detailed, region-specific constraints. |
 | [Slovakia](https://learn.microsoft.com/en-us/azure/communication-services/concepts/numbers/phone-number-management-for-slovakia) | limits-quotas | 0.78 | Slovakia-specific number availability and eligibility tables provide concrete constraints on Azure Communication Services phone numbers for that country. |
@@ -295,7 +303,8 @@ skill_description: Expert knowledge for Azure Communication Services development
 | [Proxy your calling traffic](https://learn.microsoft.com/en-us/azure/communication-services/tutorials/proxy-calling-support-tutorial) | configuration | 0.70 | Describes configuring custom proxy/TURN servers for ACS media and signaling; will include specific configuration properties, URLs, and behavior differences from defaults. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics with ACS call summary and diagnostic logs; product-specific logging configuration and query usage. |
 | [Query call logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/query-call-logs) | configuration | 0.70 | Explains how to use Log Analytics with ACS call summary and diagnostic logs; product-specific logging configuration and query usage. |
-| [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api) | integrations | 0.70 | REST API structure article will enumerate endpoints, parameters, and constraints unique to TPE, which are integration-specific details. |
+| [Quota increase for email domains](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-quota-increase) | limits-quotas | 0.70 | The page is specifically about increasing the default email sending limit for Azure Communication Services Email. While the summary here doesn’t show the exact numbers, this type of quota-increase article typically documents concrete default limits and the process/constraints for raising them, which are product-specific and not generally known. That aligns best with the limits-quotas sub-skill. |
+| [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api) | integrations | 0.70 | REST API reference-style quickstart for Teams Phone extensibility under Azure Communication Services likely includes endpoint paths, required headers, request/response schemas, and parameter names specific to this product. These are product-specific integration details and configuration patterns that qualify as expert knowledge beyond generic REST usage. |
 | [Receive an SMS message](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/receive-sms) | integrations | 0.70 | Shows how to wire SMS received events into Azure Functions via Event Grid, including event schema and trigger configuration unique to this product. |
 | [Record a call automatically](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/record-every-call) | integrations | 0.70 | How-to wires Call Automation events via Event Grid to an Azure Function to start recording; includes event types, payload fields, and API calls that are product-specific integration details. |
 | [SMS logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/sms-logs) | configuration | 0.70 | Describes SMS log categories and how to configure them via Azure Monitor diagnostic settings, which is detailed configuration knowledge. |

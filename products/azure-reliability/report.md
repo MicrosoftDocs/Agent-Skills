@@ -1,55 +1,69 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
-  architecture-patterns: Designing Azure apps for availability zones, choosing zonal
-    vs zone-redundant resources, and hardening deployments for zone failures and high
-    availability.
+  architecture-patterns: Guidance on designing zone-resilient Azure architectures,
+    hardening zonal deployments, and building highly available, fault-tolerant Azure
+    Functions solutions.
   decision-making: Guidance on picking Azure regions and services for high availability,
     including zone support, geographic considerations, and how nonregional (global)
     services affect reliability.
-  deployment: Guidance for migrating Azure Functions hosting plans to zone-redundant
-    configurations to improve availability and resilience.
   best-practices: Patterns and guidance to design, configure, and harden high-availability,
-    resilient, and disaster‑ready architectures for key Azure PaaS, data, and integration
+    disaster recovery, and resilient architectures across major Azure PaaS and data
     services
   limits-quotas: Details on Azure Queue Storage message size limits, including max
     message size, behavior when limits are exceeded, and best practices for handling
     large payloads.
-skill_description: Expert knowledge for Azure Reliability development including best
-  practices, decision making, architecture & design patterns, limits & quotas, and
-  deployment. Use when building, debugging, or optimizing Azure Reliability applications.
-  Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+skill_description: Provides expert Azure Reliability guidance across best practices,
+  decision making, architecture & design patterns, and limits & quotas. Use this skill
+  to design and harden zone-resilient and highly available Azure architectures (including
+  Azure Functions), choose appropriate regions and services for reliability, and understand
+  how global/nonregional services impact availability. It also explains Azure Queue
+  Storage message size limits, behaviors when limits are exceeded, and patterns for
+  handling large payloads. Not for general Azure cost optimization, security-only
+  guidance, or non-Azure cloud reliability topics.
 ---
 # Azure Reliability Crawl Report
 
 ## Summary
 
-- **Total Pages**: 100
-- **Fetched**: 100
+- **Total Pages**: 99
+- **Fetched**: 99
 - **Fetch Failed**: 0
 - **Classified**: 31
-- **Unclassified**: 69
+- **Unclassified**: 68
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 100
-- **Deleted Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 96
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.0% |
-| best-practices | 25 | 25.0% |
+| architecture-patterns | 3 | 3.0% |
+| best-practices | 25 | 25.3% |
 | decision-making | 2 | 2.0% |
-| deployment | 1 | 1.0% |
 | limits-quotas | 1 | 1.0% |
-| *(Unclassified)* | 69 | 69.0% |
+| *(Unclassified)* | 68 | 68.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery)
+  - Updated: 2026-03-02T23:14:00.000Z → 2026-03-03T08:00:00.000Z
+- [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions)
+  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-13T17:13:00.000Z
+- [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions)
+  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-13T17:13:00.000Z
+
+### Deleted Pages
+
+- ~~Azure Functions~~ (https://learn.microsoft.com/en-us/azure/reliability/migrate-functions)
+- ~~Azure Recovery Services vault~~ (https://learn.microsoft.com/en-us/azure/reliability/migrate-recovery-services-vault)
 
 ## Classified Pages
 
@@ -57,8 +71,6 @@ skill_description: Expert knowledge for Azure Reliability development including 
 |-----------|------|------------|--------|
 | [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support) | decision-making | 0.80 | Lists services and their zonal/zone-redundant offerings; a service-support matrix used to decide which services and deployment models to choose. |
 | [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db-nosql) | best-practices | 0.70 | Explains how to reach 99.999% uptime using AZs, multi-region writes, and automatic failover; highly product-specific reliability design guidance. |
-| [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/migrate-functions) | deployment | 0.70 | Describes migration to Premium and Dedicated plans with availability zone support; plan/tier-specific deployment behavior and constraints for zone-redundant function apps. |
-| [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.70 | Details intra-regional resiliency with AZs and cross-region DR, tied to specific Functions hosting plans; concrete, plan-dependent reliability patterns. |
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue) | limits-quotas | 0.70 | Explicitly states a queue message can be up to 64 KB and queues can contain millions of messages up to the storage account capacity; these are concrete numeric limits. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-database-postgresql) | best-practices | 0.69 | Details zonal vs zone-redundant replicas, automatic failover, and cross-region recovery; concrete HA model and configuration guidance. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | best-practices | 0.69 | SQL Database–specific handling of transient faults, AZ failures, regional failures, maintenance, backup/restore, and SLAs; detailed reliability guidance. |
@@ -70,7 +82,9 @@ skill_description: Expert knowledge for Azure Reliability development including 
 | [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/reliability/reliability-iot-hub) | best-practices | 0.66 | IoT Hub–specific strategies for transient faults, AZ and regional failures, backups, and SLA usage; concrete reliability guidance. |
 | [Azure Managed Redis](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis) | best-practices | 0.66 | Guidance for handling transient faults, AZ and region outages, maintenance, and backup/restore in Managed Redis; product-specific resiliency practices. |
 | [Azure Data Factory](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory) | best-practices | 0.65 | Covers concrete approaches for transient faults, AZ outages, region outages, backup, and SLA usage in Data Factory; service-specific reliability practices. |
-| [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery) | best-practices | 0.65 | Reliability guidance for Azure Site Recovery typically includes product-specific recommendations (for example, how to configure replication, failover, and zoning for resilience to transient faults, zone, and region outages). This is concrete, service-specific operational guidance rather than generic concepts, so it fits best under best-practices. |
+| [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | architecture-patterns | 0.65 | Page focuses on reliability patterns for Azure Functions using availability zones, SKUs, and cross-region disaster recovery. This is product-specific architecture guidance about how to design for resiliency in this service. While the summary doesn’t show numeric limits or config tables, it implies concrete, Azure-Functions-specific reliability patterns and choices (zones vs regions, SKU selection, DR strategies), which fits architecture-patterns better than generic best practices. |
+| [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.65 | Reliability guidance for Azure Functions across availability zones, SKUs, and cross-region DR is typically concrete and product-specific (for example, which SKUs support zones, how to structure functions for failover, and configuration patterns). That makes it actionable best-practices for this service rather than a generic overview, even though the provided summary is conceptual. |
+| [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery) | best-practices | 0.65 | Reliability guidance for Azure Site Recovery is typically prescriptive and scenario-based (handling transient faults, zone and region outages, failover/failback behavior). These docs usually include product-specific recommendations and gotchas (for example, how to configure replication, failover sequencing, and testing for this service), which qualifies as best-practices rather than generic concepts, even though the summary is high level. |
 | [Nonregional Azure services](https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services) | decision-making | 0.65 | Provides a list of nonregional services with classification as global or geographic; this is selection/decision data about service scope that’s specific and tabular. |
 | [Overview](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency) | architecture-patterns | 0.65 | Provides concrete guidance on enabling zone resiliency, prioritizing workloads, and mapping services to patterns; this is design-pattern/decision guidance specific to Azure zones. |
 | [Azure DocumentDB](https://learn.microsoft.com/en-us/azure/reliability/reliability-documentdb) | best-practices | 0.64 | Service-specific use of AZs, replicas, and DR/BCDR for DocumentDB; concrete reliability patterns beyond generic database concepts. |
@@ -124,7 +138,6 @@ skill_description: Expert knowledge for Azure Reliability development including 
 | [Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/reliability/reliability-nat-gateway) | 0.40 | Reliability in Azure NAT Gateway; summary is high-level and doesn’t indicate specific quotas, configs, or troubleshooting mappings. |
 | [Azure NetApp Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-netapp-files) | 0.40 | Reliability in Azure NetApp Files; mentions backup and SLA but summary doesn’t indicate concrete limits or config parameters. |
 | [Azure Private Link service](https://learn.microsoft.com/en-us/azure/reliability/reliability-private-link-service) | 0.40 | Reliability in Azure Private Link service; shared-responsibility framing suggests conceptual guidance rather than detailed expert configuration data. |
-| [Azure Recovery Services vault](https://learn.microsoft.com/en-us/azure/reliability/migrate-recovery-services-vault) | 0.40 | Migration of Recovery Services vault to AZ support; mentions redundancy options conceptually but no specific numeric limits, config parameter tables, or decision matrices in the summary. |
 | [Azure Table Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-table) | 0.40 | Reliability in Azure Table Storage; summary is conceptual and doesn’t expose specific limits, configs, or troubleshooting mappings. |
 | [Azure Traffic Manager](https://learn.microsoft.com/en-us/azure/reliability/reliability-traffic-manager) | 0.40 | Reliability in Azure Traffic Manager with DR and health checks; summary doesn’t show numeric thresholds or decision matrices. |
 | [Log Analytics Dedicated Cluster workspaces](https://learn.microsoft.com/en-us/azure/reliability/migrate-monitor-log-analytics) | 0.40 | Migration of Log Analytics Dedicated Cluster workspaces to AZ support; summary is a migration description without evidence of detailed config tables or numeric thresholds. |

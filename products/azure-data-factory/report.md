@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Configuring ADF and integration runtimes (Azure, self-hosted, SSIS,
     Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring,
@@ -7,12 +7,12 @@ category_descriptions:
   deployment: 'CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked
     templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration
     runtime install/containerization'
-  decision-making: Guidance on ADF cost planning, pricing and reserved capacity, choosing
-    runtimes/compute/connectors, and assessing/migrating pipelines, SSIS, and data
-    lakes/warehouses to ADF or Fabric
-  integrations: Patterns and examples for integrating ADF with many data sources,
-    connectors, and compute engines, plus mapping data flow functions, templates,
-    and running external/SSIS/ML/Spark jobs.
+  decision-making: Guidance on ADF cost planning, pricing models, runtimes and compute
+    choices, connector upgrades, SAP/SSIS migration, Fabric migration, and when to
+    use Workflow Orchestration Manager.
+  integrations: How to connect ADF to many data sources/targets, use connectors and
+    templates, build mapping data flows and functions, and integrate with external
+    services, ML, Databricks, SSIS, and Fabric.
   best-practices: 'Performance, reliability, and migration best practices for ADF:
     tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors,
     DataOps/BCDR, SAP CDC, and common migration patterns.'
@@ -27,27 +27,30 @@ category_descriptions:
     DB migration, and SAP CDC design.'
   limits-quotas: Info on ADF connector lifecycle stages and timelines, plus how reservation
     discounts work for Mapping Data Flows and how they affect cost and capacity planning
-skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Data Factory applications. Not for Azure
-  Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+skill_description: Expert guidance on Azure Data Factory architecture, best practices,
+  troubleshooting, security, configuration, integrations, deployment, limits/quotas,
+  and cost/decision planning across pipelines, data flows, runtimes (Azure, self-hosted,
+  SSIS), and Workflow Orchestration Manager. Use this skill when designing or optimizing
+  ADF solutions, planning migrations (SSIS/SAP/Fabric), configuring secure and scalable
+  runtimes, integrating with external services/ML/Databricks, or diagnosing performance,
+  reliability, and deployment issues. Not for Synapse Pipelines, Fabric Data Factory,
+  or non-Azure ETL/orchestration products unless specifically using Azure Data Factory
+  integrations.
 ---
 # Azure Data Factory Crawl Report
 
 ## Summary
 
-- **Total Pages**: 519
-- **Fetched**: 519
+- **Total Pages**: 520
+- **Fetched**: 520
 - **Fetch Failed**: 0
-- **Classified**: 447
+- **Classified**: 448
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 519
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 518
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -58,15 +61,24 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | architecture-patterns | 7 | 1.3% |
 | best-practices | 22 | 4.2% |
 | configuration | 132 | 25.4% |
-| decision-making | 16 | 3.1% |
+| decision-making | 17 | 3.3% |
 | deployment | 14 | 2.7% |
-| integrations | 180 | 34.7% |
+| integrations | 180 | 34.6% |
 | limits-quotas | 2 | 0.4% |
 | security | 24 | 4.6% |
 | troubleshooting | 50 | 9.6% |
-| *(Unclassified)* | 72 | 13.9% |
+| *(Unclassified)* | 72 | 13.8% |
 
 ## Changes
+
+### New Pages
+
+- [Upgrade ADF pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
+
+### Updated Pages
+
+- [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift)
+  - Updated: 2026-01-15T08:00:00.000Z → 2026-03-10T04:29:00.000Z
 
 ## Classified Pages
 
@@ -253,7 +265,6 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service) | integrations | 0.80 | Connector article will include linked service/dataset property tables, required auth parameters, and connector-specific options for AWS Marketplace, which are concrete integration settings. |
 | [Amazon RDS for Oracle](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle) | integrations | 0.80 | Contains connector-specific connection properties, supported copy behaviors, and possibly limitations for Amazon RDS for Oracle, which are detailed integration patterns. |
 | [Amazon RDS for SQL Server](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server) | integrations | 0.80 | Provides connector configuration (server, database, auth, query options) and any ADF-specific constraints for Amazon RDS SQL Server, which are product-specific integration details. |
-| [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift) | integrations | 0.80 | Redshift connector docs include property tables, performance notes, and supported copy modes unique to this integration. |
 | [Amazon S3 Compatible Storage](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage) | integrations | 0.80 | Documents connector-specific configuration for S3-compatible endpoints (service URL, auth, SSL options), which are detailed integration settings. |
 | [Avro format](https://learn.microsoft.com/en-us/azure/data-factory/format-avro) | configuration | 0.80 | Format article lists dataset and copy settings for Avro (compression, schema handling, nullability) with parameter names and allowed values, which are detailed configuration options. |
 | [Azure AI Search](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-search) | integrations | 0.80 | Search connector article documents index/field mapping, batching, and connector-specific settings, which are detailed integration parameters. |
@@ -357,6 +368,7 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | [Lookup activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-lookup-activity) | configuration | 0.74 | Provides Lookup activity settings (source dataset, firstRowOnly, query/command) and output schema, which are product-specific configuration details. |
 | [Machine Learning Execute Pipeline activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-machine-learning-service) | integrations | 0.74 | Describes Machine Learning Execute Pipeline activity with activity-specific settings, payload structure, and Azure ML integration parameters unique to this product. |
 | [For Each activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-for-each-activity) | configuration | 0.73 | Covers ForEach activity settings (items, batch count, sequential vs parallel) and JSON schema, which are product-specific configuration options. |
+| [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift) | integrations | 0.72 | Connector pages for specific sources like Amazon Redshift typically include expert, product-specific integration details such as supported authentication methods, required Redshift and ADF/Synapse configuration properties, mapping of data types, and connector-specific limitations or behaviors. These are concrete integration patterns and settings that go beyond generic knowledge and match the integrations sub-skill definition. |
 | [HDInsight Streaming activity](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-hadoop-streaming) | integrations | 0.72 | Activity reference page for HDInsight Hadoop Streaming with product-specific activity JSON schema, property names, and allowed values for Azure Data Factory/Synapse pipelines. |
 | [Until activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-until-activity) | configuration | 0.72 | Details Until activity properties (expression, timeout, delay, max iterations) and loop behavior, including configuration options unique to Data Factory/Synapse. |
 | [Append Variable activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-append-variable-activity) | configuration | 0.71 | Documents activity properties, supported data types, and JSON schema for Append Variable activity, which are product-specific configuration details. |
@@ -440,6 +452,7 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | [Wait activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-wait-activity) | configuration | 0.69 | Provides Wait activity property (wait time) details and JSON schema, defining how to pause pipeline execution with product-specific configuration. |
 | [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool) | configuration | 0.68 | Copy Data tool article describes tool-specific options and generated pipeline settings, including wizard parameters and mapping to activity properties, which are product-specific configuration details. |
 | [Set Pipeline Return Value](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-pipeline-return-value) | configuration | 0.68 | Scenario guide showing concrete configuration of Set Variable and Execute Pipeline activities to pass values, including expression patterns specific to this product. |
+| [Upgrade ADF pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory) | decision-making | 0.68 | The article describes an assessment-first, built-in migration experience from Azure Data Factory to Fabric Data Factory, including guidance on how to evaluate existing pipelines and upgrade them incrementally. This is migration and technology-selection guidance (when and how to move workloads) rather than just a conceptual overview, fitting the decision-making category best. |
 | [Aggregate](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate) | configuration | 0.67 | Explains Aggregate transformation settings (group by, aggregate columns, expressions) and UI/JSON options specific to mapping data flows. |
 | [Alter row](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-alter-row) | configuration | 0.67 | Details Alter row policies (insert, update, delete, upsert) and rule expressions, which are product-specific transformation configuration options. |
 | [Join](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-join) | configuration | 0.67 | Documents Join types, join conditions, stream roles, and optimization settings specific to mapping data flows. |

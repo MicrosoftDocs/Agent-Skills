@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  configuration: 'Configuring Azure Cache for Redis: server settings, reboots/flushes,
-    geo-replication, replicas, persistence, zone redundancy, and monitoring/diagnostics
-    with Azure Monitor.'
+  configuration: Configuring Azure Cache for Redis behavior, replication, persistence,
+    redundancy, maintenance, and monitoring (metrics, logs, diagnostics, Azure Monitor
+    insights).
   security: 'Securing Azure Cache for Redis: auth (Entra, policies, managed identities),
     TLS config, disk encryption, VNets/Private Link, and enforcing security via Azure
     Policy.'
@@ -24,25 +24,27 @@ category_descriptions:
   decision-making: Guidance on sizing and capacity, network isolation, reservations,
     and planning or executing migrations to and from Azure Cache for Redis (including
     VNets and Private Link).
-skill_description: Expert knowledge for Azure Cache for Redis development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure
-  Managed Redis (use azure-managed-redis), Azure Cosmos DB (use azure-cosmos-db),
-  Azure Table Storage (use azure-table-storage).
+skill_description: Provides expert guidance on Azure Cache for Redis across troubleshooting,
+  best practices, decision making, architecture & design patterns, security, configuration,
+  integrations, and deployment. Use this skill when designing or scaling Redis-backed
+  architectures on Azure, tuning performance and resilience, securing access and networking,
+  configuring monitoring and persistence, integrating via CLI/PowerShell or Blob storage,
+  or diagnosing connectivity, latency, and data issues. Not for non-Azure Redis services,
+  other Azure data stores (e.g., Cosmos DB, Azure SQL), or generic caching guidance
+  unrelated to Azure Cache for Redis.
 ---
 # Azure Cache for Redis Crawl Report
 
 ## Summary
 
-- **Total Pages**: 62
-- **Fetched**: 62
+- **Total Pages**: 63
+- **Fetched**: 63
 - **Fetch Failed**: 0
-- **Classified**: 55
+- **Classified**: 56
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
@@ -53,16 +55,20 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.6% |
-| best-practices | 11 | 17.7% |
-| configuration | 9 | 14.5% |
-| decision-making | 6 | 9.7% |
-| deployment | 4 | 6.5% |
-| integrations | 8 | 12.9% |
-| security | 9 | 14.5% |
-| troubleshooting | 7 | 11.3% |
-| *(Unclassified)* | 7 | 11.3% |
+| best-practices | 11 | 17.5% |
+| configuration | 10 | 15.9% |
+| decision-making | 6 | 9.5% |
+| deployment | 4 | 6.3% |
+| integrations | 8 | 12.7% |
+| security | 9 | 14.3% |
+| troubleshooting | 7 | 11.1% |
+| *(Unclassified)* | 7 | 11.1% |
 
 ## Changes
+
+### New Pages
+
+- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference)
 
 ## Classified Pages
 
@@ -74,6 +80,7 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | [Configure in Azure portal](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-configure) | configuration | 0.80 | Details default Redis server configuration for Azure and which parameters can be changed, including names, ranges, and behavior—core configuration knowledge. |
 | [Microsoft Entra ID for authentication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-azure-active-directory-for-authentication) | security | 0.80 | Authentication article includes Entra configuration, scopes, and Redis-specific auth modes, which are concrete security settings and patterns. |
 | [Role-based access control](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-configure-role-based-access-control) | security | 0.80 | Describes Redis ACL-based data access policies and Entra RBAC integration, including role/policy definitions and permission scopes. |
+| [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference) | configuration | 0.78 | A 'monitoring data reference' page for a specific Azure service typically lists all available metrics, dimensions, and log categories with their exact names, units, and sometimes ranges or semantics. Those metric and log identifiers, categories, and field names are product-specific configuration/telemetry details that an LLM is unlikely to know reliably from training. The content is not about limits/quotas or troubleshooting, but rather a catalog of monitoring signals and how they are structured, which aligns best with the configuration sub-skill (reference of parameters and their meanings). |
 | [Client libraries best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-client-libraries) | best-practices | 0.75 | Client library best-practices article includes concrete recommendations and configuration patterns (for example, Redisson settings) specific to Azure Cache for Redis. |
 | [Memory management best practice](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-memory-management) | best-practices | 0.75 | Memory management best-practices are highly product-specific, often including eviction policies, configuration values, and edge cases unique to Azure Redis. |
 | [Network isolation options](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-network-isolation) | decision-making | 0.75 | Compares Private Link, VNet injection, and firewall rules with advantages/limitations to help decide which network isolation pattern to use. |

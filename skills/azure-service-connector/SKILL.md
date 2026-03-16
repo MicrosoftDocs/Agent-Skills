@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Service Connector applications. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Provides expert guidance on Azure Service Connector configuration, deployment, integrations, limits & quotas, security, and troubleshooting. Use this skill when you need to set up or debug connections between Azure compute services (e.g., App Service, Functions, Container Apps, Spring Apps) and data or messaging services, choose and configure auth methods (managed identity, service principal, key-based), understand regional support and IaC options, interpret errors, or apply least-privilege access. Not for general Azure networking, VNet integration, or products like Azure API Management, Private Link, or Logic Apps.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L39-L43 | Details on current Service Connector feature gaps, unsupported scenarios, resource limits, and constraints you must consider when designing or troubleshooting connections. |
 | Security | L44-L49 | Details on what Microsoft Entra roles and permissions Service Connector assigns or requires, least-privilege guidance, and how access is granted to target services. |
 | Configuration | L50-L56 | How to view and retrieve Service Connector-generated configs, choose and set up auth methods, and supply correct Azure CLI parameters when creating or managing connections |
-| Integrations & Coding Patterns | L57-L86 | How to connect apps to Azure and external data/services (Cosmos DB variants, SQL, PostgreSQL/MySQL, storage, messaging, AI, Redis, Kafka, MongoDB, Key Vault) using Service Connector patterns |
+| Integrations & Coding Patterns | L57-L86 | How to connect Azure compute to databases, messaging, storage, AI, and third‑party services via Service Connector, including setup patterns and auth/connection details for each target service. |
 | Deployment | L87-L91 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
 ### Troubleshooting
@@ -57,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Integrate Azure AI services using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services |
+| Integrate Foundry Tools via Azure Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services |
 | Integrate Azure App Configuration via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-app-configuration |
 | Connect Azure AI multi-service via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cognitive-services |
 | Connect Confluent Cloud Kafka via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka |

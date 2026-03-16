@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   architecture-patterns: 'Guidance on designing Dedicated HSM deployments: sizing
     and topology, high availability and failover patterns, and secure networking (VNet,
@@ -8,19 +8,20 @@ category_descriptions:
     stay on Dedicated HSM or migrate to Managed/Cloud HSM and how to plan that migration.
   deployment: Guidance for migrating Azure Dedicated HSM ExpressRoute Gateway IP configuration
     from Basic to Standard, including steps, requirements, and network considerations.
-  configuration: Configuring Azure Dedicated HSM monitoring and logging, including
-    metrics, diagnostics, log collection, and integration with Azure Monitor/Log Analytics.
   security: Physical security controls for Dedicated HSM devices and best-practice
     guidance for securing, configuring, and operating Azure Dedicated HSM in production
     environments.
   troubleshooting: Support boundaries between Microsoft, HSM vendors, and customers,
     plus diagnosing and resolving deployment, networking, and configuration issues
     for Azure Dedicated HSM.
-skill_description: Expert knowledge for Azure Dedicated HSM development including
-  troubleshooting, decision making, architecture & design patterns, security, configuration,
-  and deployment. Use when building, debugging, or optimizing Azure Dedicated HSM
-  applications. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use
-  azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+skill_description: Provides expert guidance on Azure Dedicated HSM architecture, deployment,
+  security, troubleshooting, and migration decisions, including sizing and topology
+  design, high availability patterns, secure networking, ExpressRoute Gateway IP configuration
+  upgrades (Basic to Standard), physical and operational security best practices,
+  and clarifying support boundaries between Microsoft, HSM vendors, and customers.
+  Use this skill when planning or operating Dedicated HSM, resolving deployment/networking/configuration
+  issues, or deciding whether to remain on Dedicated HSM or migrate to Managed/Cloud
+  HSM. Not for general Azure Key Vault, Managed HSM, or non-Azure HSM products.
 ---
 # Azure Dedicated HSM Crawl Report
 
@@ -29,13 +30,13 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 - **Total Pages**: 16
 - **Fetched**: 16
 - **Fetch Failed**: 0
-- **Classified**: 12
-- **Unclassified**: 4
+- **Classified**: 10
+- **Unclassified**: 6
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 16
+- **Updated Pages**: 2
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -44,14 +45,20 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 3 | 18.8% |
-| configuration | 1 | 6.2% |
 | decision-making | 3 | 18.8% |
 | deployment | 1 | 6.2% |
 | security | 2 | 12.5% |
-| troubleshooting | 2 | 12.5% |
-| *(Unclassified)* | 4 | 25.0% |
+| troubleshooting | 1 | 6.2% |
+| *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Monitoring](https://learn.microsoft.com/en-us/azure/dedicated-hsm/monitoring)
+  - Updated: 2025-04-14T08:00:00.000Z → 2026-03-11T22:11:00.000Z
+- [Supportability](https://learn.microsoft.com/en-us/azure/dedicated-hsm/supportability)
+  - Updated: 2024-08-07T16:44:00.000Z → 2026-03-11T22:11:00.000Z
 
 ## Classified Pages
 
@@ -64,11 +71,9 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 | [Dedicated HSM overview](https://learn.microsoft.com/en-us/azure/dedicated-hsm/overview) | decision-making | 0.65 | Contains product-specific retirement timeline (support until July 31, 2028), explicit onboarding restrictions, and concrete guidance to choose Azure Cloud HSM vs Azure Managed HSM. This is decision guidance tied to specific dates and migration direction that an LLM is unlikely to know from training. |
 | [Deciding on deployment architecture](https://learn.microsoft.com/en-us/azure/dedicated-hsm/deployment-architecture) | architecture-patterns | 0.60 | Discusses when customers benefit from Dedicated HSM, how devices are distributed across datacenters, pairing for HA, and cross-region deployment for disaster resilience. These are product-specific architectural deployment patterns. |
 | [High availability](https://learn.microsoft.com/en-us/azure/dedicated-hsm/high-availability) | architecture-patterns | 0.60 | Discusses how Microsoft deploys HSMs across datacenters and how to pair devices within a region for HA and across regions for resilience. These are product-specific HA patterns and placement behaviors that go beyond generic HA concepts. |
-| [Monitoring](https://learn.microsoft.com/en-us/azure/dedicated-hsm/monitoring) | configuration | 0.60 | Details monitoring responsibilities, the specific Thales Luna 7 A790 device context, and Azure-side vs customer-side monitoring roles. While high-level in the summary, the page is a product-specific monitoring options reference, which fits configuration of operational monitoring. |
 | [Physical security](https://learn.microsoft.com/en-us/azure/dedicated-hsm/physical-security) | security | 0.60 | Describes how Dedicated HSM devices are managed through their lifecycle to meet stringent security requirements. This is product-specific physical security posture information not derivable from generic security knowledge. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/dedicated-hsm/faq) | decision-making | 0.55 | FAQ content for a niche service typically includes specific capability, interoperability, HA, and support details (for example, supported scenarios and constraints) that are not generic knowledge and help users decide how/when to use the service. |
 | [Networking](https://learn.microsoft.com/en-us/azure/dedicated-hsm/networking) | architecture-patterns | 0.55 | Covers networking considerations for different deployment scenarios (on-prem connectivity, distributed apps, HA configurations) with product-specific guidance on secure network design for Dedicated HSM, which is architectural rather than generic networking theory. |
-| [Supportability](https://learn.microsoft.com/en-us/azure/dedicated-hsm/supportability) | troubleshooting | 0.55 | Explains the split of responsibilities between Microsoft and the customer, including that Microsoft has no software-level access and only serial-port monitoring. This is expert operational/support behavior specific to this service and directly affects troubleshooting and escalation paths. |
 
 ## Unclassified Pages
 
@@ -78,3 +83,5 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 | [Deploying HSMs into an existing virtual network using PowerShell](https://learn.microsoft.com/en-us/azure/dedicated-hsm/tutorial-deploy-hsm-powershell) | 0.30 | PowerShell deployment tutorial with basic provisioning steps; lacks detailed configuration matrices, limits, or troubleshooting mappings. Mostly generic deployment flow. |
 | [Create an Azure Dedicated HSM with Azure PowerShell](https://learn.microsoft.com/en-us/azure/dedicated-hsm/quickstart-create-hsm-powershell) | 0.25 | Quickstart for creating a Dedicated HSM via PowerShell; focused on basic commands, not on expert-only configuration options, limits, or diagnostic details. |
 | [Create an Azure Dedicated HSM with the Azure CLI](https://learn.microsoft.com/en-us/azure/dedicated-hsm/quickstart-hsm-azure-cli) | 0.25 | Quickstart for creating and managing Dedicated HSM via Azure CLI; provides basic CRUD operations without deep configuration tables or product-specific edge cases. |
+| [Monitoring](https://learn.microsoft.com/en-us/azure/dedicated-hsm/monitoring) | 0.20 | High-level description of monitoring responsibilities for Azure Dedicated HSM; no specific metrics, configuration parameters, limits, or product-specific diagnostic commands are evident in the summary. |
+| [Supportability](https://learn.microsoft.com/en-us/azure/dedicated-hsm/supportability) | 0.20 | Supportability overview and responsibility boundaries for Azure Dedicated HSM; does not appear to include detailed error codes, configuration values, or other expert-level technical specifics. |

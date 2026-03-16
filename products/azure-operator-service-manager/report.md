@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
-  best-practices: Best practices for onboarding/deploying AOSM, designing configuration
-    group schemas, structuring Helm charts, and cleaning up publisher artifacts efficiently.
+  best-practices: Best practices for onboarding/deploying AOSM network functions,
+    designing configuration groups, structuring Helm charts, and cleaning up publisher
+    artifacts efficiently.
   integrations: Using CLI/ARM/Helm with AOSM to onboard CNFs/VNFs, manage images and
     artifacts (ACR/storage-backed stores), and add ARM resources to network service
     designs
@@ -14,12 +15,14 @@ category_descriptions:
     operator deployments.
   troubleshooting: Diagnosing and fixing AOSM onboarding issues with the Azure CLI
     extension and troubleshooting Helm chart installation failures in AOSM CNF deployments.
-skill_description: Expert knowledge for Azure Operator Service Manager development
-  including troubleshooting, best practices, security, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Operator Service
-  Manager applications. Not for Azure Operator Insights (use azure-operator-insights),
-  Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager
-  (use azure-network-function-manager), Azure Networking (use azure-networking).
+skill_description: Provides expert guidance on Azure Operator Service Manager (AOSM)
+  troubleshooting, best practices, security, configuration, and integrations/coding
+  patterns, including onboarding CNFs/VNFs, designing configuration groups and Helm
+  charts, securing with Private Link/RBAC/managed identities, tuning runtime behavior,
+  and using CLI/ARM/Helm and artifact stores. Use this skill when planning or operating
+  AOSM-based network services, diagnosing onboarding or Helm deployment issues, or
+  integrating AOSM into CI/CD and Azure resource designs. Not for generic Azure networking,
+  AKS, or non-AOSM Helm/ARM scenarios.
 ---
 # Azure Operator Service Manager Crawl Report
 
@@ -33,8 +36,8 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 47
+- **Updated Pages**: 4
+- **Unchanged**: 43
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -51,6 +54,17 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 
 ## Changes
 
+### Updated Pages
+
+- [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy)
+  - Updated: 2025-10-31T22:17:00.000Z → 2026-03-09T22:17:00.000Z
+- [Workload Configuration Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide)
+  - Updated: 2025-07-31T22:14:00.000Z → 2026-03-13T05:18:00.000Z
+- [Get Started with Safe Upgrade Practices](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrade-practices)
+  - Updated: 2025-05-21T17:04:00.000Z → 2026-03-10T04:29:00.000Z
+- [Control Upgrade Failure Behavior](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback)
+  - Updated: 2025-02-25T23:02:00.000Z → 2026-03-11T05:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -64,14 +78,14 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 | [Helm Package Requirements](https://learn.microsoft.com/en-us/azure/operator-service-manager/helm-requirements) | best-practices | 0.75 | Helm integration best practices specific to AOSM; likely includes concrete chart patterns and configuration nuances unique to this service. |
 | [Onboard generic Azure resources - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-azure-resource-manager-resources-cli) | integrations | 0.75 | Describes combining NFDVs and ARM templates into NSDVs using CLI; includes product-specific CLI parameters and integration patterns. |
 | [Push and pull artifacts for network functions on Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-manage-artifacts-nexus) | integrations | 0.75 | Details pushing/pulling CNF/VNF images, ARM templates, and Helm packages with AOSM CLI; includes specific commands and behaviors for ACR-backed artifact stores. |
-| [Workload Configuration Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide) | best-practices | 0.75 | Guidelines to optimize configuration group schemas/values; product-specific modeling practices and pitfalls qualify as expert best practices. |
+| [Workload Configuration Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide) | best-practices | 0.75 | The page provides concrete guidelines for designing configuration group schemas, configuration group values, and NF resource templates in AOSM. These are product-specific configuration design recommendations and patterns, fitting the best-practices category rather than generic configuration or conceptual content. |
 | [Container image onboarding using CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-cli-containerized-network-function-image-upload) | integrations | 0.70 | Explains how the CLI discovers images from Helm charts and uploads to artifact store; likely includes specific parameter handling and registry interaction details. |
 | [Exposing parameters via CGS using CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-expose-parameters-configuration-group-schema) | integrations | 0.70 | Details how the CLI translates Helm values and ARM parameters into AOSM configuration models; product-specific parameter mapping logic. |
 | [Get Started with Private Link](https://learn.microsoft.com/en-us/azure/operator-service-manager/get-started-with-private-link) | security | 0.70 | Private Link setup is security-focused and product-specific; likely includes concrete network/security configuration parameters. |
 | [Manage the network function operator extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/manage-network-function-operator) | configuration | 0.70 | Command reference for NFO extension; likely includes specific command parameters and behaviors unique to AOSM. |
 | [Onboard a containerized network function (CNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-containerized-network-function-cli) | integrations | 0.70 | How-to for onboarding CNFs via CLI; likely includes specific CLI commands, parameters, and patterns unique to AOSM. |
 | [Onboard a virtualized network function (VNF) - CLI](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-onboard-virtualized-network-function-cli) | integrations | 0.70 | Similar to CNF onboarding but for VNFs; includes AOSM CLI commands and parameters specific to this integration. |
-| [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy) | best-practices | 0.70 | Explicitly labeled best practices for onboarding and deploying NFs with AOSM; likely includes product-specific recommendations and gotchas beyond generic theory. |
+| [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy) | best-practices | 0.70 | The article explicitly captures best practice recommendations for onboarding and deploying network functions with Azure Operator Service Manager and Azure Operator Nexus. These are product-specific DO/DON'T style guidelines for NF onboarding and deployment, which qualify as best-practices rather than generic concepts. |
 | [Publisher Resource Cleanup Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/resource-cleanup-management) | best-practices | 0.70 | Describes a specific cleanup feature and how to use it to manage artifacts; likely includes concrete operational recommendations and edge cases. |
 | [Interrupt a service deployment operation](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-cancel-service-deployments) | configuration | 0.65 | Describes using tags on managed resource groups to control deployments; product-specific operational configuration behavior. |
 | [Publisher Artifact Store Resiliency](https://learn.microsoft.com/en-us/azure/operator-service-manager/publisher-artifact-store-resiliency) | configuration | 0.65 | Explains enabling geo-replication for ACR-backed artifact stores; likely includes specific configuration steps and parameters unique to AOSM integration. |
@@ -83,7 +97,6 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Control Upgrade Failure Behavior](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback) | 0.45 | Describes upgrade failure behaviors conceptually; summary lacks explicit configuration parameters or error codes. |
 | [Design a Network Service Design](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-network-design) | 0.45 | Design quickstart using Nginx; mostly tutorial flow rather than detailed expert configuration or limits. |
 | [Design a Network Service Design](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-network-design) | 0.45 | Design quickstart for VNF; tutorial-style, not focused on expert limits or configs. |
 | [Onboard Subscription to Azure Operator Service Manager](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-onboard-subscription-azure-operator-service-manager) | 0.45 | Subscription onboarding quickstart; mostly enabling providers and basic setup, not deep expert config. |
@@ -93,11 +106,12 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 | [Prerequisites for using Azure Operator Service Manager](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-prerequisites) | 0.45 | Prerequisites quickstart for VNF; mostly setup steps, not deep expert configuration. |
 | [Publish a Network Function Definition](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-publish-containerized-network-function-definition) | 0.45 | Workflow quickstart for publishing a definition; likely procedural without deep config matrices. |
 | [Publish a Network Function Definition](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-publish-virtualized-network-function-definition) | 0.45 | Quickstart for publishing a VNF definition; primarily workflow, not detailed config matrices. |
+| [Control Upgrade Failure Behavior](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback) | 0.40 | The guide describes upgrade failure behavior concepts like pause on failure and rollback on failure for CNFs, but the summary does not indicate specific error codes, configuration parameter tables, or detailed symptom→solution mappings. It seems more like conceptual feature explanation than expert troubleshooting or configuration guidance. |
 | [Create a Site Network Service](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-create-site-network-service) | 0.40 | Portal-based SNS creation tutorial; summary suggests procedural guidance rather than expert configuration detail. |
 | [Create a Site Network Service](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-create-site-network-service) | 0.40 | Portal-based SNS creation tutorial; primarily procedural, not expert configuration guidance. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-containerized-network-function-create-site) | 0.40 | Portal-based site creation tutorial; likely UI steps without detailed parameter tables. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/quickstart-virtualized-network-function-create-site) | 0.40 | Portal-based site creation tutorial; lacks evidence of detailed expert parameters or limits. |
-| [Get Started with Safe Upgrade Practices](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrade-practices) | 0.40 | Introductory overview of safe upgrade practices; summary does not indicate concrete configs, limits, or error mappings. |
+| [Get Started with Safe Upgrade Practices](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrade-practices) | 0.40 | The article is described as an introduction to safe upgrade practices and basic upgrade concepts, with references to ISSU/ISSD/ISSR and 'documented limits' but without clear indication of specific numeric limits, detailed procedures, or product-specific configuration parameters. It appears more conceptual/introductory than a concrete best-practices, limits, or troubleshooting guide. |
 | [About the Azure Operator Service Manager CLI extension](https://learn.microsoft.com/en-us/azure/operator-service-manager/concepts-about-azure-operator-service-manager-cli) | 0.35 | Conceptual description of the CLI extension and workflows; summary does not show detailed parameter tables or error mappings. |
 | [Tenants, Subscriptions and Regions](https://learn.microsoft.com/en-us/azure/operator-service-manager/publisher-resource-preview-management) | 0.30 | Feature overview for preview management; summary does not show concrete parameters, limits, or error codes. |
 | [Create a site](https://learn.microsoft.com/en-us/azure/operator-service-manager/how-to-create-site) | 0.20 | Basic how-to for creating a site; description suggests step-by-step UI/CLI usage without detailed configuration tables, limits, or product-specific diagnostic content. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Patterns and code for integrating devices via MQTT and IoT Plug and
     Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and
@@ -40,8 +40,8 @@ skill_description: Expert knowledge for Azure IoT development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 2
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -59,6 +59,13 @@ skill_description: Expert knowledge for Azure IoT development including troubles
 | *(Unclassified)* | 22 | 55.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub)
+  - Updated: 2025-10-27T08:00:00.000Z → 2026-03-10T22:11:00.000Z
+- [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary)
+  - Updated: 2026-02-04T18:14:00.000Z → 2026-03-09T08:00:00.000Z
 
 ## Classified Pages
 
@@ -94,18 +101,18 @@ skill_description: Expert knowledge for Azure IoT development including troubles
 | [Connect STMicroelectronics B-L475E to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-devkit-stm-b-l475e-iot-hub) | 0.30 | Device-specific tutorial for STM DevKit; procedural content without expert-level configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot/overview-iot-plug-and-play) | 0.30 | Introduction to IoT Plug and Play; mostly conceptual description of models and capabilities. |
 | [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.30 | Security overview and best practices at a high level; summary does not indicate specific RBAC roles, config values, or compliance settings. |
-| [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub) | 0.30 | Step-by-step tutorial for sending telemetry; typical quickstart without detailed config tables or product-specific constraints. |
 | [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
 | [IoT device types](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-types) | 0.20 | Overview of device types and selection factors; appears conceptual without quantified thresholds or matrices. |
 | [Scalability, high availability](https://learn.microsoft.com/en-us/azure/iot/iot-overview-scalability-high-availability) | 0.20 | Scalability and HA overview; no explicit thresholds, limits, or decision matrices in the summary. |
+| [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub) | 0.20 | Tutorial-style quickstart showing how to connect a device and send telemetry using SDK samples. It does not focus on configuration tables, limits, quotas, error-code-based troubleshooting, or other expert-only reference details; it's primarily step-by-step guidance LLMs generally know. |
 | [Analyze and visualize your IoT data](https://learn.microsoft.com/en-us/azure/iot/iot-overview-analyze-visualize) | 0.10 | Conceptual description of analysis and visualization options; lacks product-specific configs or limits. |
 | [Device connectivity](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-connectivity) | 0.10 | Conceptual overview of connectivity and infrastructure; no detailed protocol parameters, limits, or config matrices. |
 | [Device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of device development concepts and tools; lacks specific configuration tables, limits, or troubleshooting content. |
 | [Device management and control](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-management) | 0.10 | Conceptual overview of asset and device management; no product-specific settings, limits, or error mappings. |
 | [Extend your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-extensibility) | 0.10 | Overview of extensibility options; no detailed configuration parameters or quantified trade-offs. |
-| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | 0.10 | Glossary of terms; definitions only, no actionable expert configuration or limits. |
 | [Manage your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-solution-management) | 0.10 | Overview of management options like portal and ARM; no detailed setting references or matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/iot/concepts-iot-device-development) | 0.10 | Introductory device development considerations; no specific configuration parameters or limits. |
 | [Process and route messages](https://learn.microsoft.com/en-us/azure/iot/iot-overview-message-processing) | 0.10 | High-level message processing overview; does not include concrete routing rules, limits, or configuration tables. |
 | [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options; meta-information, not technical configuration or troubleshooting content. |
 | [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT and solution components; no concrete limits, configs, patterns, or error details. |
+| [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | - | Glossary of IoT terms is conceptual reference/definitions, not product-specific limits, configuration parameters, troubleshooting mappings, or decision matrices. |

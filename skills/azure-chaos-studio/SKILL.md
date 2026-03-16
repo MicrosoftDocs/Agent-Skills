@@ -1,9 +1,9 @@
 ---
 name: azure-chaos-studio
-description: Expert knowledge for Chaos Studio development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Chaos Studio applications. Not for Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
+description: Expertise in Microsoft Azure Chaos Studio, including troubleshooting Chaos Agent and experiment issues, understanding limits/quotas, securing identities and network access, configuring experiments (ARM/Bicep, parameters, Azure Monitor/Workbooks, Azure Policy onboarding), and using CLI/REST plus Application Insights integrations and coding patterns. Use this skill when you need to design, secure, operate, or debug Chaos Studio experiments and their agents/targets across supported OSes and regions. Not for general Azure reliability guidance or other chaos engineering tools outside Azure Chaos Studio.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Chaos Studio Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L41-L48 | Chaos Studio limits: agent OS/fault compatibility, known issues, regional/HA behavior, and throttling, quotas, and usage constraints for experiments |
 | Security | L49-L63 | Securing Chaos Studio: identities, roles, permissions, CMK encryption, network/IP controls, Private Link, VNet injection, AKS auth, and safely controlling experiment targets/capabilities. |
 | Configuration | L64-L76 | Configuring Chaos Studio: ARM/Bicep experiment definitions, deploying agents/targets, parameters, Azure Monitor/Workbook integration, OS/tool compatibility, and onboarding via Azure Policy |
-| Integrations & Coding Patterns | L77-L82 | Using CLI/REST to create and manage Chaos Studio experiments and routing Chaos Agent telemetry to Application Insights for monitoring |
+| Integrations & Coding Patterns | L77-L82 | Using CLI and REST to create/run Chaos Studio experiments, and sending Chaos Agent telemetry to Application Insights for monitoring and integration. |
 
 ### Troubleshooting
 | Topic | URL |

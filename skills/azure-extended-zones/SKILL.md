@@ -1,14 +1,14 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Azure Extended Zones development including decision making, and configuration. Use when building, debugging, or optimizing Azure Extended Zones applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic Manager (use azure-traffic-manager).
+description: Provides expert guidance on configuring, securing, and optimizing costs for Azure Extended Zones, including subscription registration, zone access requests, Azure Policy governance, disk encryption with customer-managed keys via Azure Key Vault, and decisions on Reserved Instances or Savings Plans. Use this skill when planning or managing workloads in Azure Extended Zones, setting up compliant and secure access, or evaluating and purchasing cost-optimization options specific to these zones. Not for general Azure region management, non-Extended Zone services, or unrelated networking, security, or cost tools outside Azure Extended Zones.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Extended Zones Skill
 
-This skill provides expert guidance for Azure Extended Zones. Covers decision making, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Extended Zones. Covers decision making, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,13 +24,19 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L30-L34 | Guidance on when and how to buy Reserved Instances or Savings Plans for Extended Zones, including cost considerations, eligibility, and purchase workflows. |
-| Configuration | L35-L39 | Configuring Extended Zones access: registering subscriptions, requesting zone access, and creating custom Azure Policy definitions to govern Extended Zones usage. |
+| Decision Making | L31-L35 | Guidance on when and how to buy Reserved Instances or Savings Plans for Extended Zones, including cost considerations, eligibility, and purchase workflows. |
+| Security | L36-L40 | Encrypting Azure Extended Zone disks with customer-managed keys using Azure Key Vault, including setup, configuration steps, and security considerations |
+| Configuration | L41-L45 | Configuring Extended Zones access: registering subscriptions, requesting zone access, and creating custom Azure Policy definitions to govern Extended Zones usage. |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
 | Choose and purchase RIs or Savings Plans in Extended Zones | https://learn.microsoft.com/en-us/azure/extended-zones/purchase-reservations-savings-plans |
+
+### Security
+| Topic | URL |
+|-------|-----|
+| Encrypt Azure Extended Zone disks with CMK and Key Vault | https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk |
 
 ### Configuration
 | Topic | URL |

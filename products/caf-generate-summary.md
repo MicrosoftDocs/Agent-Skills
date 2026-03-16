@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-03 23:50:18
-**Total Duration**: 0m 13s
+**Generated**: 2026-03-16 12:58:45
+**Total Duration**: 1m 17s
 
 ## Product Crawl Summary
 
@@ -9,31 +9,30 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Cloud Adoption Framework | 444 | 432 | 0 | 0 | 0 | OK |
+| 1 | Azure Cloud Adoption Framework | 445 | 433 | 4 | 52 | 3 | OK |
 
 ### Totals
 
 - **Products Processed**: 1 success, 0 failed
-- **Total Pages**: 444
-- **Total Classified**: 432
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
-- **Total Deleted Pages**: 0
+- **Total Pages**: 445
+- **Total Classified**: 433
+- **Total New Pages**: 4
+- **Total Updated Pages**: 52
+- **Total Deleted Pages**: 3
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| adoption-patterns | 32 |
-| getting-started | 1 |
+| adoption-patterns | 30 |
 | governance | 39 |
-| operations | 43 |
+| operations | 41 |
 | organization | 20 |
-| planning | 27 |
-| readiness | 124 |
-| scenarios | 99 |
+| planning | 26 |
+| readiness | 126 |
+| scenarios | 103 |
 | security | 32 |
-| strategy | 15 |
+| strategy | 16 |
 
 ---
 

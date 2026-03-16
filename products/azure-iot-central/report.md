@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   architecture-patterns: Solution-level IoT Central architecture, using IoT Edge as
     a gateway, and designing data transformation flows from devices to downstream
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 - **Total Pages**: 89
 - **Fetched**: 89
 - **Fetch Failed**: 0
-- **Classified**: 57
-- **Unclassified**: 32
+- **Classified**: 56
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 89
+- **Updated Pages**: 1
+- **Unchanged**: 88
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -62,11 +62,16 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 | deployment | 5 | 5.6% |
 | integrations | 11 | 12.4% |
 | limits-quotas | 2 | 2.2% |
-| security | 13 | 14.6% |
+| security | 12 | 13.5% |
 | troubleshooting | 2 | 2.2% |
-| *(Unclassified)* | 32 | 36.0% |
+| *(Unclassified)* | 33 | 37.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Create and connect a device](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device)
+  - Updated: 2024-10-16T22:05:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 
@@ -124,7 +129,6 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 | [3 - Export data and visualize insights](https://learn.microsoft.com/en-us/azure/iot-central/retail/tutorial-in-store-analytics-export-data-visualize-insights) | integrations | 0.60 | Covers exporting telemetry and wiring it into Power BI; likely includes product-specific export configuration and Power BI integration parameters. |
 | [Application administration guide](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-admin) | security | 0.60 | Administration guide includes user management, security, and an explicit inactivity deletion policy with concrete activity examples, which is product-specific operational/security behavior. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/iot-central/core/concepts-architecture) | architecture-patterns | 0.60 | Architecture article describing key elements like device management, security, integration, and extensibility; likely includes IoT Central–specific architectural patterns and how components fit together. |
-| [Create and connect a device](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device) | security | 0.60 | Tutorial explicitly contrasts SAS vs X.509 for device connection and references security best practices; likely includes concrete authentication configuration steps and parameters specific to IoT Central. |
 | [Data integration guide](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-solution-builder) | integrations | 0.60 | Integration guide describing how to connect IoT Central with other services in a typical IoT solution; likely includes product-specific integration patterns and configuration considerations. |
 | [Device connectivity guide](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-developer) | configuration | 0.60 | Device connectivity guide describing telemetry, properties, and commands; likely details message shapes and interaction patterns that are product-specific configuration/contract knowledge. |
 | [Explore the IoT Central APIs](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-use-rest-api) | integrations | 0.60 | REST API tutorial for creating and managing applications, devices, and exports; likely includes specific API operations, parameters, and request/response patterns unique to IoT Central. |
@@ -163,6 +167,7 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 | [Create a solar panel monitoring app](https://learn.microsoft.com/en-us/azure/iot-central/energy/tutorial-solar-panel-app) | 0.20 | Solar panel monitoring tutorial; includes architecture overview but not detailed config tables or quotas. |
 | [Create a water consumption monitoring app](https://learn.microsoft.com/en-us/azure/iot-central/government/tutorial-water-consumption-monitoring) | 0.20 | Water consumption monitoring tutorial; scenario-focused, not a configuration or limits reference. |
 | [Create a water quality monitoring app](https://learn.microsoft.com/en-us/azure/iot-central/government/tutorial-water-quality-monitoring) | 0.20 | Water quality monitoring tutorial; uses template and architecture but not detailed configuration parameters. |
+| [Create and connect a device](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device) | 0.20 | Tutorial-style walkthrough for connecting a simulated device app to Azure IoT Central using various languages. It focuses on step-by-step connection and basic authentication (SAS vs X.509) without detailed configuration tables, limits, error-code mappings, or product-specific best-practice matrices. No numeric limits, RBAC role lists, or structured troubleshooting/decision content are present. |
 | [Tour of the API](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-api-tour) | 0.20 | Conceptual tour of REST API surface; likely lists operation groups but not deep config tables or error mappings. |
 | [Tour of the UI](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-tour) | 0.10 | UI tour/overview; no detailed configuration parameters, limits, or troubleshooting content. |
 | [What is Azure IoT Central](https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central) | 0.10 | High-level product overview of Azure IoT Central without numeric limits, configuration tables, or detailed patterns. |
