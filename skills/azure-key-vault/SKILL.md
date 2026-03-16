@@ -3,7 +3,7 @@ name: azure-key-vault
 description: Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Key Vault applications. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Key Vault Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L45 | Diagnosing and fixing Key Vault issues: certificate problems, access policy and Azure Policy failures, Private Link misconfig, and interpreting REST/API error codes. |
 | Best Practices | L46-L56 | Best practices for securing keys/secrets, using soft-delete, disaster recovery for Managed HSM, and automating single/dual-credential secret rotation in Azure Key Vault. |
-| Decision Making | L57-L63 | Guidance on planning RBAC defaults, migrating from access policies, moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity. |
-| Limits & Quotas | L64-L74 | Key Vault and Managed HSM limits: throttling, quotas, size/storage constraints, logging behavior, soft-delete rules, and firewall/network configuration. |
-| Security | L75-L103 | Securing Azure Key Vault and Managed HSM: auth/RBAC vs access policies, network/firewall/Private Link, BYOK/HSM keys, certificates, role management, backup/restore, and key attestation. |
-| Configuration | L104-L127 | Configuring Key Vault and Managed HSM: auth, logging, monitoring/alerts, metrics, policies, key types/rotation, secure key release, soft delete, and managing storage keys/secrets. |
-| Integrations & Coding Patterns | L128-L160 | Code samples and patterns for integrating Key Vault/Managed HSM with apps and services: client libraries, JS key/secret ops, Event Grid/Logic Apps, DigiCert, TLS offload, and SAS retrieval. |
-| Deployment | L161-L172 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
+| Decision Making | L57-L62 | Guidance on planning RBAC defaults, migrating from access policies, moving key workloads to Key Vault, and sizing/scaling Azure Managed HSM capacity. |
+| Limits & Quotas | L63-L73 | Key Vault and Managed HSM limits: throttling, quotas, size/storage constraints, logging behavior, soft-delete rules, and firewall/network configuration. |
+| Security | L74-L100 | Securing Azure Key Vault and Managed HSM: auth/RBAC vs access policies, network/firewall/Private Link, BYOK/HSM keys, certificates, role management, backup/restore, and key attestation. |
+| Configuration | L101-L122 | Configuring Key Vault and Managed HSM: auth, logging, monitoring/alerts, metrics, policies, key types/rotation, secure key release, soft delete, and managing storage keys/secrets. |
+| Integrations & Coding Patterns | L123-L155 | Code samples and patterns for integrating Key Vault/Managed HSM with apps and services: client libraries, JS key/secret ops, Event Grid/Logic Apps, DigiCert, TLS offload, and SAS retrieval. |
+| Deployment | L156-L167 | How to deploy and provision Azure Key Vault and Managed HSM (vaults, keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell |
 
 ### Troubleshooting
 | Topic | URL |
@@ -57,7 +57,6 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan and execute migration of key workloads to Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-key-workloads |
 | Migrate Key Vault from access policies to RBAC | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-migration |
 | Plan capacity and scaling for Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/scaling-guidance |
 
@@ -86,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose Azure RBAC vs access policies for Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-access-policy |
 | Grant Key Vault access to apps using Azure RBAC | https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide |
 | Apply security best practices to Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault |
-| Specification for BYOK HSM key import to Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification |
 | Plan and use HSM-protected keys in Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys |
 | Implement BYOK HSM-protected keys in Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-byok |
 | Legacy nCipher BYOK import for Azure Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-ncipher |
@@ -94,7 +92,6 @@ This skill requires **network access** to fetch documentation content:
 | Authorize Azure Resource Manager for Managed HSM key operations | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/authorize-azure-resource-manager |
 | Back up and restore Azure Managed HSM contents | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/backup-restore |
 | Use Managed HSM built-in local RBAC roles | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/built-in-roles |
-| Secure access to Azure Managed HSM with RBAC | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/how-to-secure-access |
 | Implement BYOK for Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/hsm-protected-keys-byok |
 | Use key attestation to validate Managed HSM keys | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-attestation |
 | Configure network security and firewall for Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/network-security |
@@ -110,14 +107,12 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure Azure Key Vault logging | https://learn.microsoft.com/en-us/azure/key-vault/general/howto-logging |
 | Configure monitoring for Azure Key Vault with Azure Monitor | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault |
 | Reference for Azure Key Vault monitoring metrics and logs | https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference |
-| Supported key types and algorithms in Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details |
 | Configure Azure Key Vault key auto-rotation | https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation |
 | Author secure key release policies in Key Vault | https://learn.microsoft.com/en-us/azure/key-vault/keys/policy-grammar |
 | Configure health and performance alerts for Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/configure-alerts |
 | Set up key auto-rotation in Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-rotation |
 | Enable and use Azure Managed HSM logging | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging |
 | Monitor Azure Managed HSM with Azure Monitor | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/logging-azure-monitor |
-| Configure multi-region replication for Azure Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/multi-region-replication |
 | Author secure key release policies for Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/policy-grammar |
 | Configure soft-delete and purge protection in Managed HSM | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/recovery |
 | Integrate Managed HSM logs with Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/sentinel |

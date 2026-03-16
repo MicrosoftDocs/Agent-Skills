@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: APIs, CLI, and Python client for automating CycleCloud, plus patterns
     to integrate schedulers (Slurm, Grid Engine, HTCondor, LSF, OpenPBS, HPC Pack),
@@ -41,10 +41,10 @@ skill_description: Expert knowledge for Azure CycleCloud development including t
 - **Unclassified**: 26
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 113
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 1
+- **Unchanged**: 110
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cyclecloud/azure-cyclecloud.csv`
 
 ## Classification Statistics
@@ -62,6 +62,21 @@ skill_description: Expert knowledge for Azure CycleCloud development including t
 | *(Unclassified)* | 26 | 23.0% |
 
 ## Changes
+
+### New Pages
+
+- [Current Release - 2026.03.10](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-03-10?view=cyclecloud-8)
+- [Previous Release - 2026.02.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-02-01?view=cyclecloud-8)
+
+### Updated Pages
+
+- [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8)
+  - Updated: 2026-02-10T06:10:00.000Z → 2026-03-13T22:12:00.000Z
+
+### Deleted Pages
+
+- ~~Previous Release - 2025.12.01~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2025-12-01?view=cyclecloud-8)
+- ~~Current Release - 2026.02.01~~ (https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-02-01?view=cyclecloud-8)
 
 ## Classified Pages
 
@@ -162,13 +177,10 @@ skill_description: Expert knowledge for Azure CycleCloud development including t
 | [8.8.0 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-0?view=cyclecloud-8) | 0.40 | Release notes for v8.8.0; change log style information, not structured expert guidance per the defined sub-skill types. |
 | [8.8.1 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-1?view=cyclecloud-8) | 0.40 | Version-specific release notes focused on stability; not a structured reference for limits, configuration, or troubleshooting. |
 | [8.8.2 Release Notes](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/8-8-2?view=cyclecloud-8) | 0.40 | Version-specific release notes; mostly change log content rather than reusable expert configuration or troubleshooting reference. |
-| [Current Release - 2026.02.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-02-01?view=cyclecloud-8) | 0.40 | Workspace for Slurm release notes; primarily feature and issue listings, not stable configuration or troubleshooting reference content. |
 | [Current Release - v8.x](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes?view=cyclecloud-8) | 0.40 | High-level current release notes summary; typically feature and bug-fix descriptions without stable expert configuration or troubleshooting patterns. |
 | [Monitoring](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/monitoring?view=cyclecloud-8) | 0.40 | Service monitoring description; mentions enabling monitoring but not specific metrics schemas, config parameters, or limits. |
-| [Previous Release - 2025.12.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2025-12-01?view=cyclecloud-8) | 0.40 | Workspace for Slurm release notes; similar to other release notes, mostly temporal change information rather than reusable expert patterns. |
 | [Submit job on CycleCloud with Slurm](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/ccws/submit-job-with-slurm?view=cyclecloud-8) | 0.40 | Job submission tutorial for Slurm on CycleCloud; mostly basic usage steps without detailed config matrices or limits. |
 | [User Management](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/user-management?view=cyclecloud-8) | 0.40 | User management overview; likely lists roles but summary doesn’t indicate detailed RBAC names or config parameters. |
-| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | 0.35 | Current release notes index page; mostly navigation and version pointer, not technical reference. |
 | [Terminate a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/terminate-cluster?view=cyclecloud-8) | 0.35 | Explains termination lifecycle states conceptually; lacks detailed configuration options, limits, or troubleshooting mappings. |
 | [Cost & Usage Tracking](https://learn.microsoft.com/en-us/azure/cyclecloud/concepts/usage-tracking?view=cyclecloud-8) | 0.30 | Cost and usage tracking conceptually described; no numeric thresholds, config tables, or alerts matrices in summary. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8) | 0.30 | How-to for creating clusters via UI/CLI; mostly procedural without detailed configuration tables, limits, or product-specific edge cases. |
@@ -185,3 +197,6 @@ skill_description: Expert knowledge for Azure CycleCloud development including t
 | [What is Azure CycleCloud Workspace for Slurm?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview-ccws?view=cyclecloud-8) | 0.20 | Overview of CycleCloud Workspace for Slurm; conceptual and marketing-style content. |
 | [What is Azure CycleCloud?](https://learn.microsoft.com/en-us/azure/cyclecloud/overview?view=cyclecloud-8) | 0.20 | High-level product overview without detailed limits, configs, or error mappings. |
 | [Create a Cluster](https://learn.microsoft.com/en-us/azure/cyclecloud/tutorials/tutorial?view=cyclecloud-8) | 0.10 | Tutorial entry point; mostly navigation to learn modules, not detailed technical content. |
+| [All Releases](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/release-notes?view=cyclecloud-8) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Current Release - 2026.03.10](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-03-10?view=cyclecloud-8) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Previous Release - 2026.02.01](https://learn.microsoft.com/en-us/azure/cyclecloud/release-notes/ccws/2026-02-01?view=cyclecloud-8) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

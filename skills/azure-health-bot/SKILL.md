@@ -3,7 +3,7 @@ name: azure-health-bot
 description: Expert knowledge for Azure Health Bot development including best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Health Bot applications. Not for Azure AI Bot Service (use azure-bot-service), Azure Communication Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Bot Skill

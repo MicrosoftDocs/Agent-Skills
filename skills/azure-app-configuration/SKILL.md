@@ -3,7 +3,7 @@ name: azure-app-configuration
 description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications. Not for Azure App Service (use azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure App Configuration Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L46-L51 | Guidance on App Configuration client library support lifecycles and how to upgrade Spring Boot apps to use App Configuration library v6. |
 | Limits & Quotas | L52-L60 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
 | Security | L61-L81 | Securing App Configuration stores: encryption, network isolation, private endpoints, managed identities, keys/HMAC, Entra ID/RBAC auth, and Azure Policy/role-based access controls. |
-| Configuration | L82-L102 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, telemetry/monitoring, Kubernetes/Front Door/AI agent integration, and emulator and provider settings |
-| Integrations & Coding Patterns | L103-L191 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, Spring, AKS, AI apps, plus dynamic config, feature flags, and REST API usage. |
-| Deployment | L192-L200 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
+| Configuration | L82-L100 | Configuring App Configuration behavior: feature flags, snapshots, geo-replication, telemetry/monitoring, Kubernetes/Front Door/AI agent integration, and emulator and provider settings |
+| Integrations & Coding Patterns | L101-L189 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, Spring, AKS, AI apps, plus dynamic config, feature flags, and REST API usage. |
+| Deployment | L190-L198 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -87,7 +87,6 @@ This skill requires **network access** to fetch documentation content:
 | Use and configure the Azure App Configuration emulator | https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview |
 | Configure and interpret App Configuration feature flag telemetry | https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-flag-telemetry-reference |
 | Configure Azure Front Door integration for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-connect-azure-front-door |
-| Configure AI agents via Agent Framework and App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config |
 | Define chat completion configuration settings in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config |
 | Create and manage App Configuration snapshots | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-create-snapshots |
 | Configure conditional feature flags with feature filters | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters |
@@ -97,7 +96,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure telemetry for feature flags in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-telemetry |
 | Configure time window filters for scheduled feature flags | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter |
 | Configure and manage variant feature flags in App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-variant-feature-flags |
-| Monitor Azure App Configuration with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration |
 | Configure Azure App Configuration Kubernetes Provider properties | https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-kubernetes-provider |
 
 ### Integrations & Coding Patterns

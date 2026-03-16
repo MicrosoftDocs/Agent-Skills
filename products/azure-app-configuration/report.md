@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -34,16 +34,16 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 
 ## Summary
 
-- **Total Pages**: 159
-- **Fetched**: 159
+- **Total Pages**: 160
+- **Fetched**: 160
 - **Fetch Failed**: 0
-- **Classified**: 134
-- **Unclassified**: 25
+- **Classified**: 132
+- **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 159
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 157
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -52,16 +52,27 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 1 | 0.6% |
-| configuration | 17 | 10.7% |
-| decision-making | 2 | 1.3% |
+| configuration | 15 | 9.4% |
+| decision-making | 2 | 1.2% |
 | deployment | 6 | 3.8% |
-| integrations | 85 | 53.5% |
+| integrations | 85 | 53.1% |
 | limits-quotas | 5 | 3.1% |
-| security | 17 | 10.7% |
+| security | 17 | 10.6% |
 | troubleshooting | 1 | 0.6% |
-| *(Unclassified)* | 25 | 15.7% |
+| *(Unclassified)* | 28 | 17.5% |
 
 ## Changes
+
+### New Pages
+
+- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-python)
+
+### Updated Pages
+
+- [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config)
+  - Updated: 2026-01-14T23:13:00.000Z → 2026-03-04T23:27:00.000Z
+- [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration)
+  - Updated: 2026-02-05T12:11:00.000Z → 2026-03-05T12:13:00.000Z
 
 ## Classified Pages
 
@@ -136,7 +147,6 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-go-reference) | integrations | 0.70 | Go feature management reference describing library usage and integration with App Configuration; product-specific APIs and patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-javascript-reference) | integrations | 0.70 | JavaScript feature management reference with concrete library usage and integration patterns; product-specific code-level behavior. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-python-reference) | integrations | 0.70 | Python feature management reference describing how to define and evaluate flags with App Configuration; product-specific APIs and patterns. |
-| [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | configuration | 0.70 | Describes defining agent instructions and toolsets via code or declarative YAML stored in App Configuration; includes schema/structure details for agent configuration. |
 | [Go](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-go) | integrations | 0.70 | Go integration quickstart; shows how to load and apply chat completion configuration from App Configuration with product-specific code patterns. |
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters-go) | integrations | 0.70 | Go Gin web app integration; shows how to use App Configuration feature filters with Go-specific APIs and configuration. |
 | [Go Gin](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-timewindow-filter-go) | integrations | 0.70 | Go Gin integration for scheduled feature flags; includes concrete code and configuration for App Configuration filters. |
@@ -199,7 +209,6 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-aspire) | integrations | 0.60 | Dynamic configuration tutorial for Aspire; likely details provider usage, refresh configuration, and Aspire-specific wiring. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspire) | integrations | 0.60 | Feature flags quickstart for Aspire; uses specific feature management libraries and configuration patterns tied to App Configuration. |
 | [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core) | integrations | 0.60 | Feature flags quickstart for ASP.NET Core; likely includes feature management library APIs and configuration patterns specific to App Configuration integration. |
-| [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | configuration | 0.60 | Monitoring overview for this service; likely lists specific metrics, log categories, and diagnostic settings unique to App Configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/emulator-overview) | configuration | 0.60 | Emulator overview for local development; full article likely includes specific configuration options and behaviors unique to the emulator. |
 
 ## Unclassified Pages
@@ -231,3 +240,6 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |
 | [About Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview) | 0.10 | High-level overview of Azure App Configuration; no detailed limits, configs, or error mappings. |
+| [Get started](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-ai-agent-config) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-python) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

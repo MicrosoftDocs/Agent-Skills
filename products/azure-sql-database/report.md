@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL tiers, pricing models, DR/HA, Hyperscale
     options, automation, licensing/Hybrid Benefit, and migration paths between models
@@ -43,13 +43,13 @@ skill_description: Expert knowledge for Azure SQL Database development including
 - **Total Pages**: 359
 - **Fetched**: 359
 - **Fetch Failed**: 0
-- **Classified**: 244
-- **Unclassified**: 115
+- **Classified**: 238
+- **Unclassified**: 121
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 5
-- **Unchanged**: 352
+- **New Pages**: 1
+- **Updated Pages**: 8
+- **Unchanged**: 350
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
@@ -58,39 +58,44 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 15 | 4.2% |
-| best-practices | 13 | 3.6% |
+| best-practices | 12 | 3.3% |
 | configuration | 64 | 17.8% |
 | decision-making | 22 | 6.1% |
 | deployment | 13 | 3.6% |
 | integrations | 26 | 7.2% |
-| limits-quotas | 10 | 2.8% |
-| security | 62 | 17.3% |
-| troubleshooting | 19 | 5.3% |
-| *(Unclassified)* | 115 | 32.0% |
+| limits-quotas | 9 | 2.5% |
+| security | 60 | 16.7% |
+| troubleshooting | 17 | 4.7% |
+| *(Unclassified)* | 121 | 33.7% |
 
 ## Changes
 
 ### New Pages
 
-- [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-- [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
+- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-02T08:00:00.000Z
+- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+- [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql)
+  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
+  - Updated: 2025-12-02T23:34:00.000Z → 2026-03-05T08:00:00.000Z
+- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
+  - Updated: 2025-09-25T08:00:00.000Z → 2026-03-06T08:00:00.000Z
+- [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql)
+  - Updated: 2025-07-09T08:00:00.000Z → 2026-03-04T23:36:00.000Z
+- [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql)
+  - Updated: 2025-07-30T22:40:00.000Z → 2026-03-03T08:00:00.000Z
+- [Best practices for Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql)
+  - Updated: 2024-09-23T08:00:00.000Z → 2026-03-13T17:37:00.000Z
 - [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-03-03T08:00:00.000Z
+  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
 
 ### Deleted Pages
 
-- ~~Import/Export service hangs~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
+- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 
@@ -111,19 +116,16 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.85 | Organized around connection failure symptoms and error messages with steps to diagnose and resolve them, including product-specific tools like Azure SQL Connectivity Checker. |
 | [Diagnose and troubleshoot high CPU](https://learn.microsoft.com/en-us/azure/azure-sql/database/high-cpu-diagnose-troubleshoot?view=azuresql) | troubleshooting | 0.85 | Explicit troubleshooting guide for high CPU; uses built-in tools, likely maps symptoms to causes and actions, possibly with DMVs and specific queries. |
 | [Enable secure enclaves](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-enable?view=azuresql) | security | 0.85 | Provides concrete steps and requirements (vCore model, DC-series hardware, SGX configuration) to enable secure enclaves; product-specific security configuration. |
-| [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql) | security | 0.85 | Details server-level and database-level firewall rules, including rule parameters and scope; clearly security configuration with product-specific settings. |
 | [Identity and key management with database level CMK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-database-level-basic-actions?view=azuresql) | security | 0.85 | Database-level CMK for TDE with user-assigned identity and cross-tenant Key Vault involves detailed security configuration and key lifecycle operations. |
 | [Migrate DTU to vCore](https://learn.microsoft.com/en-us/azure/azure-sql/database/migrate-dtu-to-vcore?view=azuresql) | decision-making | 0.85 | Migration from DTU to vCore involves choosing SKUs, mapping performance levels, and understanding trade-offs; decision and migration guidance with specific criteria. |
 | [Monitor In-Memory OLTP space](https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-monitor-space?view=azuresql) | troubleshooting | 0.85 | Explains how to estimate and monitor In-Memory OLTP storage and resolve specific capacity error 41823, mapping symptom to cause and resolution. |
 | [Troubleshoot Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-troubleshoot?view=azuresql) | troubleshooting | 0.85 | Dedicated troubleshooting guide for SQL Data Sync with known issues and their resolutions, likely including specific error messages and symptom→cause→solution mappings. |
-| [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.85 | Explicitly a troubleshooting guide for geo-replication and redo lag; likely includes metrics, DMVs, and symptom→cause→solution patterns specific to Azure SQL Database replication behavior. |
 | [.NET with Microsoft Entra MFA](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db?view=azuresql) | security | 0.80 | Provides concrete C# code using SqlAuthenticationMethod.ActiveDirectoryInteractive and Entra MFA-specific connection parameters, which are product-specific security configuration details. |
 | [Analyze and prevent deadlocks](https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks?view=azuresql) | troubleshooting | 0.80 | Deadlock analysis article; uses deadlock graphs, Query Store, and specific patterns to diagnose and prevent deadlocks—classic troubleshooting content. |
 | [Audit log format](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-log-format?view=azuresql) | configuration | 0.80 | Describes the structure and fields of audit logs for Azure SQL, Managed Instance, and Synapse; includes schema-level details unique to this product. |
 | [Auditing managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-managed-identity?view=azuresql) | security | 0.80 | Details use of system- and user-assigned managed identities for auditing to storage accounts, including specific configuration steps and options. |
 | [Azure SQL Database free offer](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-offer?view=azuresql) | limits-quotas | 0.80 | Describes exact free-tier quotas (100,000 vCore seconds, 32 GB data, 32 GB backup, up to 10 databases) which are numeric limits specific to this offer. |
 | [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql) | decision-making | 0.80 | Explicitly a decision tree for choosing among Azure SQL Database, Managed Instance, and SQL Server on VM; provides structured selection guidance. |
-| [Best practices for Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql) | best-practices | 0.80 | Explicit best-practices article with concrete recommendations for configuring and running SQL Data Sync, including product-specific gotchas and patterns. |
 | [Bring Your Own Key (BYOK)](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql) | security | 0.80 | Describes BYOK with Azure Key Vault/CMK for TDE; includes key lifecycle and separation-of-duties considerations specific to Azure SQL. |
 | [Capacity errors during deployment](https://learn.microsoft.com/en-us/azure/azure-sql/capacity-errors-troubleshoot?view=azuresql) | troubleshooting | 0.80 | Focuses on resolving capacity errors when deploying or scaling Azure SQL resources, likely including specific error messages and recommended resolution steps. |
 | [Configure maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window-configure?view=azuresql) | configuration | 0.80 | Step-by-step configuration of maintenance windows, including constraints by service level/region and long-running operation behavior—detailed configuration guidance. |
@@ -224,8 +226,6 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [Import from BACPAC](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/import-from-bacpac-powershell?view=azuresql) | integrations | 0.70 | Includes specific PowerShell cmdlets and configuration parameters for importing BACPAC files into Azure SQL, which are product-specific integration patterns. |
 | [Import or export database with managed identity authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-managed-identity?view=azuresql) | security | 0.70 | Shows how to configure managed identity authentication for BACPAC import/export, including identity assignments and access control settings. |
 | [Job automation overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/job-automation-overview?view=azuresql) | decision-making | 0.70 | Summarizes job automation technologies (elastic jobs, SQL Agent, etc.) across platforms, helping decide which to use in which scenario with product-specific criteria. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.70 | A 'Known Issues' page typically lists specific symptoms, causes, and workarounds or resolutions for Azure SQL Managed Instance; this is product-specific troubleshooting knowledge not easily inferred from training data. |
-| [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | limits-quotas | 0.70 | Describes LTR backups with explicit retention duration (up to 10 years); includes concrete retention limits and policy behavior. |
 | [Maintenance window](https://learn.microsoft.com/en-us/azure/azure-sql/database/maintenance-window?view=azuresql) | configuration | 0.70 | Explains Azure SQL maintenance window feature behavior and configuration options, including what events are covered and how scheduling affects operations—product-specific configuration semantics. |
 | [Maintenance window in Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/maintenance-window-azure-sql?view=azuresql) | configuration | 0.70 | Describes configurable maintenance windows with options via portal, PowerShell, CLI, and API; likely includes specific setting names and allowed values. |
 | [Manage Auditing using APIs](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-manage-using-api?view=azuresql) | integrations | 0.70 | Covers specific APIs for configuring auditing, including parameter names and usage patterns unique to Azure SQL and Synapse. |
@@ -267,7 +267,6 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [.NET with EF Core](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-entity-framework-core-quickstart?view=azuresql) | integrations | 0.65 | Shows EF Core configuration for Azure SQL, including connection options and possibly provider-specific settings and auth configuration. |
 | [.NET with SqlClient](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql) | integrations | 0.65 | Uses Microsoft.Data.SqlClient with Azure SQL and passwordless auth; includes connection string keywords and auth configuration specific to Azure SQL integration. |
 | [Active geo-replication](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-configure-portal?view=azuresql) | configuration | 0.65 | Details configuration of active geo-replication and failover via portal/CLI, including specific settings and options unique to Azure SQL. |
-| [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql) | security | 0.65 | Shows how to analyze audit logs in Log Analytics, Event Hubs, or storage with product-specific queries and usage patterns. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql) | deployment | 0.65 | Provides a region-by-feature matrix indicating where specific Azure SQL Database capabilities are available, a deployment constraint reference unique to the service. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql) | deployment | 0.65 | Contains a region-feature availability matrix for Managed Instance, which is a deployment constraint reference not derivable from generic training data. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-bicep-quickstart?view=azuresql) | deployment | 0.65 | Shows Bicep resource definitions and parameters specific to Azure SQL deployment; includes product-specific deployment configuration fields and constraints. |
@@ -422,10 +421,12 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [Single databases](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-overview?view=azuresql) | 0.10 | High-level overview of single database deployment model and purchasing models; no detailed limits, configs, or security roles. |
 | [.NET with Visual Studio](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-visual-studio?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [.NET with Windows, Linux, and macOS](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Application and database tuning guidance](https://learn.microsoft.com/en-us/azure/azure-sql/database/performance-guidance?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Automatic tuning](https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Azure Policy for Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-policy?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Batching for performance](https://learn.microsoft.com/en-us/azure/azure-sql/performance-improve-use-batching?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [Best practices for Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Conditional access](https://learn.microsoft.com/en-us/azure/azure-sql/database/conditional-access-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Configure TDE with BYOK](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Configure long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
@@ -440,12 +441,15 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [Export a database to a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-export?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Extended events](https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-db-diff-from-svr?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Go](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-go?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Identify query performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/identify-query-performance-issues?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Import a database from a BACPAC file](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Load data with BCP](https://learn.microsoft.com/en-us/azure/azure-sql/load-from-csv-with-bcp?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Log diagnostic telemetry](https://learn.microsoft.com/en-us/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Microsoft Entra guest users and set as a Microsoft Entra admin](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-guest-users?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Microsoft Entra server logins](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins-tutorial?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Microsoft Entra-only authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
@@ -457,6 +461,7 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | [Ruby](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ruby?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Server principals (logins)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-logins?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
-| [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
+| [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Troubleshoot performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-troubleshoot-performance?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |
 | [Use the Intelligent Insights performance diagnostics log](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-use-diagnostics-log?view=azuresql) | - | Parse error: Expecting value: line 12 column 13 (char 351) |

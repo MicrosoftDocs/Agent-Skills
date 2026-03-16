@@ -3,7 +3,7 @@ name: azure-iot-operations
 description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure IoT Operations applications. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-04"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L49-L53 | Guidance and examples for sizing Azure IoT Operations production deployments, including resource planning, capacity considerations, and scaling recommendations. |
 | Architecture & Design Patterns | L54-L59 | Akri-based device discovery architecture and patterns for deploying Azure IoT Operations in layered/segmented industrial networks (DMZ, OT/IT zones, network topologies). |
 | Limits & Quotas | L60-L64 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
-| Security | L65-L81 | Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images and secure configs. |
-| Configuration | L82-L118 | Configuring Azure IoT Operations data flows, endpoints, schemas, WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring, scaling, and managing IoT resources |
-| Integrations & Coding Patterns | L119-L137 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
-| Deployment | L138-L148 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
+| Security | L65-L80 | Securing Azure IoT Operations: MQTT broker authz/authn, TLS and certificate management (OPC UA, MQTT), RBAC roles, secrets/Key Vault, and validating images and secure configs. |
+| Configuration | L81-L117 | Configuring Azure IoT Operations data flows, endpoints, schemas, WebAssembly, MQTT broker settings, and observability/diagnostics for monitoring, scaling, and managing IoT resources |
+| Integrations & Coding Patterns | L118-L135 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
+| Deployment | L136-L146 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -65,7 +65,6 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Enable secure settings on Azure IoT Operations test instances | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-enable-secure-settings |
 | Configure OPC UA certificate trust for Azure IoT Operations connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-configure-opc-ua-certificates-infrastructure |
 | Understand OPC UA certificate security for Azure IoT Operations connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-opc-ua-connector-certificates-management |
 | Configure authentication methods for Azure MQTT broker | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/howto-configure-authentication |
@@ -132,7 +131,6 @@ This skill requires **network access** to fetch documentation content:
 | Use the media connector to integrate camera streams with Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-media-connector |
 | Use the MQTT connector (preview) to model external MQTT assets | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-mqtt-connector |
 | Integrate ONVIF cameras with Azure IoT Operations via connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-onvif-connector |
-| Configure SSE connector for server-sent events in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector |
 | Integrate OPC UA assets with Azure IoT Operations via connector | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-opc-ua-connector |
 
 ### Deployment

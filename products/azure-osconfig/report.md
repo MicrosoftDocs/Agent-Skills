@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Patterns for using OSConfig with Azure IoT to run custom commands,
     manage Linux networking, firewall, packages, hostnames, reboots, and report device/OS
@@ -21,14 +21,14 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
 
 ## Summary
 
-- **Total Pages**: 29
-- **Fetched**: 29
+- **Total Pages**: 31
+- **Fetched**: 31
 - **Fetch Failed**: 0
 - **Classified**: 15
-- **Unclassified**: 14
+- **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 0
 - **Unchanged**: 29
 - **Deleted Pages**: 0
@@ -38,13 +38,18 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 2 | 6.9% |
-| integrations | 10 | 34.5% |
-| security | 2 | 6.9% |
-| troubleshooting | 1 | 3.4% |
-| *(Unclassified)* | 14 | 48.3% |
+| configuration | 2 | 6.5% |
+| integrations | 10 | 32.3% |
+| security | 2 | 6.5% |
+| troubleshooting | 1 | 3.2% |
+| *(Unclassified)* | 16 | 51.6% |
 
 ## Changes
+
+### New Pages
+
+- [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc)
+- [Quickstart: How to configure LAPS for Azure Arc](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-laps-azure-arc)
 
 ## Classified Pages
 
@@ -84,3 +89,5 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
 | [What is SSH Posture Control for Windows?](https://learn.microsoft.com/en-us/azure/osconfig/overviewsshposture-control-windows) | 0.30 | Conceptual overview of SSH Posture Control for Windows; mentions customizing sshd parameters but not detailed parameter lists or config values in the summary. |
 | [Overview for Linux](https://learn.microsoft.com/en-us/azure/osconfig/overview-osconfig-for-iot) | 0.20 | High-level product overview of OSConfig for Linux; no detailed configuration parameters, limits, or error mappings. |
 | [Recommended docs by audience](https://learn.microsoft.com/en-us/azure/osconfig/concept-audience) | 0.10 | Audience/navigation helper that routes readers to other docs; no technical details or expert configuration content. |
+| [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Quickstart: How to configure LAPS for Azure Arc](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-laps-azure-arc) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

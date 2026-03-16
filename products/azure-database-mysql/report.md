@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
@@ -43,13 +43,13 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 - **Total Pages**: 177
 - **Fetched**: 177
 - **Fetch Failed**: 0
-- **Classified**: 116
-- **Unclassified**: 61
+- **Classified**: 115
+- **Unclassified**: 62
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 177
+- **Updated Pages**: 1
+- **Unchanged**: 176
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -57,7 +57,7 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 3.4% |
+| architecture-patterns | 5 | 2.8% |
 | best-practices | 14 | 7.9% |
 | configuration | 27 | 15.3% |
 | decision-making | 13 | 7.3% |
@@ -66,9 +66,14 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | limits-quotas | 5 | 2.8% |
 | security | 23 | 13.0% |
 | troubleshooting | 13 | 7.3% |
-| *(Unclassified)* | 61 | 34.5% |
+| *(Unclassified)* | 62 | 35.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
+  - Updated: 2025-12-23T06:04:00.000Z → 2026-03-05T18:37:00.000Z
 
 ## Classified Pages
 
@@ -120,7 +125,6 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | [Configure slow-query logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-slow-query-logs) | configuration | 0.70 | Script configures slow query logs using service-specific parameters and defaults, representing concrete configuration knowledge. |
 | [Configure zone-redundant HA](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/scripts/sample-cli-zone-redundant-ha) | configuration | 0.70 | Shows CLI configuration for zone-redundant HA and states it can only be enabled at creation and is limited to specific pricing tiers, which are product-specific settings and constraints. |
 | [Error logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-error-logs) | troubleshooting | 0.70 | Error logs article describes how to access and interpret logs for this service; includes product-specific log locations and behaviors. |
-| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | architecture-patterns | 0.70 | Describes specific HA architectures and modes for this service, with trade-offs and when to use each pattern. |
 | [Major version upgrade FAQ](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade-faq) | decision-making | 0.70 | FAQ includes explicit rules (no skipping major versions, downtime expectations) that guide when and how to upgrade; this supports upgrade decision-making with concrete constraints. |
 | [Migrate RDS MySQL data using Data-in replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-rds-mysql-data-in-replication) | integrations | 0.70 | Describes cross-service replication from RDS to Azure MySQL with data-in replication, involving product-specific replication configuration and constraints. |
 | [Migration Methods](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/05-migration-methods) | decision-making | 0.70 | Compares offline, online, and hybrid migration methods with pros/cons and constraints; this is explicit method selection guidance with scenario-based recommendations, fitting decision-making. |
@@ -256,3 +260,4 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | [Previous features](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new-archive) | 0.10 | Archive of past features; navigation/marketing style, not deep technical guidance. |
 | [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index) | 0.10 | Release notes index page; only links to other notes, no technical details itself. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new) | 0.10 | What's new summary; mostly release/feature announcements without structured limits, configs, or troubleshooting content. |
+| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

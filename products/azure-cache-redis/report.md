@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Azure Cache for Redis: server settings, reboots/flushes,
     geo-replication, replicas, persistence, zone redundancy, and monitoring/diagnostics
@@ -35,14 +35,14 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 
 ## Summary
 
-- **Total Pages**: 62
-- **Fetched**: 62
+- **Total Pages**: 63
+- **Fetched**: 63
 - **Fetch Failed**: 0
 - **Classified**: 55
-- **Unclassified**: 7
+- **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
@@ -53,16 +53,20 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.6% |
-| best-practices | 11 | 17.7% |
-| configuration | 9 | 14.5% |
-| decision-making | 6 | 9.7% |
-| deployment | 4 | 6.5% |
-| integrations | 8 | 12.9% |
-| security | 9 | 14.5% |
-| troubleshooting | 7 | 11.3% |
-| *(Unclassified)* | 7 | 11.3% |
+| best-practices | 11 | 17.5% |
+| configuration | 9 | 14.3% |
+| decision-making | 6 | 9.5% |
+| deployment | 4 | 6.3% |
+| integrations | 8 | 12.7% |
+| security | 9 | 14.3% |
+| troubleshooting | 7 | 11.1% |
+| *(Unclassified)* | 8 | 12.7% |
 
 ## Changes
+
+### New Pages
+
+- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference)
 
 ## Classified Pages
 
@@ -135,3 +139,4 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-whats-new) | 0.20 | What's new/change log style page; typically high-level feature announcements without detailed limits, configs, or troubleshooting matrices. |
 | [About Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview) | 0.10 | Service overview describing what Azure Cache for Redis is and common use cases; conceptual and marketing-level content. |
 | [Choose a cache tier](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview) | 0.10 | Duplicate of the overview page; same conceptual content without detailed expert configuration or limits. |
+| [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

@@ -3,7 +3,7 @@ name: azure-virtual-desktop
 description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Desktop Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L53-L64 | Operational best practices for AVD: autoscale, Start VM on Connect, Windows multi-session tuning, validation host pools, proxy/RDP Multipath guidance, and resolving Azure Advisor recommendations. |
 | Decision Making | L65-L80 | Planning and cost/licensing decisions for AVD: deployment models, autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended Zones, and Insights cost estimation |
 | Architecture & Design Patterns | L81-L89 | Design patterns for AVD app delivery, stateless hosts, DR, FSLogix profile containers, and automated scaling with Automation/Logic Apps. |
-| Limits & Quotas | L90-L95 | RDP bandwidth requirements and optimization for Azure Virtual Desktop, plus supported Microsoft Teams features, limitations, and configuration requirements on AVD. |
-| Security | L96-L114 | Security configuration for AVD: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC/roles, external identities, clipboard/screen protection, watermarking, WebAuthn, Kerberos, and Purview forensic onboarding |
-| Configuration | L115-L174 | Configuring AVD environments: images, autoscale, networking, RDP/redirection, Teams/media, licensing, updates, monitoring, and app delivery (MSIX/App Attach, RemoteApp, app groups). |
-| Integrations & Coding Patterns | L175-L182 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
-| Deployment | L183-L191 | Guides for deploying and migrating AVD: adding session hosts, moving from classic to current AVD, changing regions, using regional host pools, and deploying Windows clients via Intune/ConfigMgr. |
+| Limits & Quotas | L90-L94 | RDP bandwidth requirements and optimization for Azure Virtual Desktop, plus supported Microsoft Teams features, limitations, and configuration requirements on AVD. |
+| Security | L95-L113 | Security configuration for AVD: SSO (Entra ID/AD FS), MFA/Conditional Access, RBAC/roles, external identities, clipboard/screen protection, watermarking, WebAuthn, Kerberos, and Purview forensic onboarding |
+| Configuration | L114-L169 | Configuring AVD environments: images, autoscale, networking, RDP/redirection, Teams/media, licensing, updates, monitoring, and app delivery (MSIX/App Attach, RemoteApp, app groups). |
+| Integrations & Coding Patterns | L170-L177 | Managing AVD via CLI/PowerShell, integrating partner App Attach delivery, enabling WebRTC multimedia redirection, and launching resources using custom URI schemes. |
+| Deployment | L178-L186 | Guides for deploying and migrating AVD: adding session hosts, moving from classic to current AVD, changing regions, using regional host pools, and deploying Windows clients via Intune/ConfigMgr. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -91,7 +91,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand RDP bandwidth needs for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth |
-| Supported Microsoft Teams features and requirements on AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-supported-features |
 
 ### Security
 | Topic | URL |
@@ -135,9 +134,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable GPU-accelerated rendering and encoding in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-enable-gpu-acceleration |
 | Enable and configure Azure Virtual Desktop Insights | https://learn.microsoft.com/en-us/azure/virtual-desktop/insights |
 | Install Microsoft 365 Apps on AVD custom images | https://learn.microsoft.com/en-us/azure/virtual-desktop/install-office-on-wvd-master-image |
-| Configure Windows 10 language packs on AVD VMs | https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs |
 | Use MSIXMGR tool parameters for AVD App Attach workflows | https://learn.microsoft.com/en-us/azure/virtual-desktop/msixmgr-tool-syntax-description |
-| Enable multimedia redirection for AVD video and calls | https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls |
 | Launch OneDrive automatically with AVD RemoteApps | https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp |
 | Configure preferred application group type for pooled AVD host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/preferred-application-group-type |
 | Set up Private Link endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-setup |
@@ -159,7 +156,6 @@ This skill requires **network access** to fetch documentation content:
 | Use advanced features of the Windows Remote Desktop client for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/client-features-windows-msrdc |
 | Connect to Azure Virtual Desktop using the Windows Remote Desktop client | https://learn.microsoft.com/en-us/azure/virtual-desktop/remote-desktop-client/connect-windows-cloud-services |
 | Enable preview RemoteApp windowing enhancements in AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/remoteapp-enhancements |
-| Allow required FQDNs and endpoints for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint |
 | Configure scheduled agent updates for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates |
 | Understand session host update configuration for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update |
 | Configure session host update for Azure Virtual Desktop host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-configure |
@@ -170,7 +166,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Service Health alerts for AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-service-alerts |
 | Configure Start VM on Connect for Azure Virtual Desktop host pools | https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect |
 | Configure Microsoft Teams with media optimization on AVD | https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd |
-| Configure Windows 11 language packs on AVD VMs | https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

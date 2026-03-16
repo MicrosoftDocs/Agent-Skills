@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Azure Backup and restore: setup, policies, offline seeding,
     diagnostics/monitoring, and management for VMs, AKS, SQL, SAP, Files, Blobs, Disks,
@@ -40,13 +40,13 @@ skill_description: Expert knowledge for Azure Backup development including troub
 - **Total Pages**: 393
 - **Fetched**: 393
 - **Fetch Failed**: 0
-- **Classified**: 239
-- **Unclassified**: 154
+- **Classified**: 232
+- **Unclassified**: 161
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 393
+- **Updated Pages**: 9
+- **Unchanged**: 384
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -56,16 +56,37 @@ skill_description: Expert knowledge for Azure Backup development including troub
 |------|-------|------------|
 | architecture-patterns | 1 | 0.3% |
 | best-practices | 7 | 1.8% |
-| configuration | 79 | 20.1% |
+| configuration | 77 | 19.6% |
 | decision-making | 2 | 0.5% |
 | deployment | 1 | 0.3% |
 | integrations | 55 | 14.0% |
-| limits-quotas | 28 | 7.1% |
-| security | 39 | 9.9% |
+| limits-quotas | 24 | 6.1% |
+| security | 38 | 9.7% |
 | troubleshooting | 27 | 6.9% |
-| *(Unclassified)* | 154 | 39.2% |
+| *(Unclassified)* | 161 | 41.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Threat Detection with Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview)
+  - Updated: 2025-12-18T18:11:00.000Z → 2026-03-12T11:31:00.000Z
+- [MARS agent support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent)
+  - Updated: 2025-11-24T08:00:00.000Z → 2026-03-09T08:00:00.000Z
+- [Manage recovery points](https://learn.microsoft.com/en-us/azure/backup/manage-recovery-points)
+  - Updated: 2025-06-13T11:18:00.000Z → 2026-03-09T06:15:00.000Z
+- [Back up Windows Server System State](https://learn.microsoft.com/en-us/azure/backup/backup-azure-system-state)
+  - Updated: 2026-02-17T08:00:00.000Z → 2026-03-09T17:11:00.000Z
+- [Database and HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore)
+  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage)
+  - Updated: 2026-02-24T18:11:00.000Z → 2026-03-06T08:00:00.000Z
+- [MABS V4 (and later) protection matrix](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix)
+  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-09T08:00:00.000Z
+- [MABS V3 UR1 (and later)](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1)
+  - Updated: 2025-07-17T08:00:00.000Z → 2026-03-09T08:00:00.000Z
+- [MABS V3 RTM protection matrix](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3)
+  - Updated: 2025-07-14T08:00:00.000Z → 2026-03-09T08:00:00.000Z
 
 ## Classified Pages
 
@@ -105,7 +126,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Backup vault](https://learn.microsoft.com/en-us/azure/backup/encryption-at-rest-with-cmk-for-backup-vault) | security | 0.85 | Similar to 30 but for Backup vaults; details CMK configuration, Key Vault integration, and behavior specific to Backup vault encryption. |
 | [Configure Multi-user authorization using Resource Guard](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization) | security | 0.85 | Explains MUA model, Resource Guard configuration, and PIM-based approval flows; these are product-specific security patterns and settings. |
 | [DPM/Azure Backup Server (MABS) support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mabs-dpm) | limits-quotas | 0.85 | Support matrix for MABS and DPM; summarizes supported scenarios and limitations with detailed tables and constraints. |
-| [MARS agent support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent) | limits-quotas | 0.85 | Support matrix for MARS agent; includes supported OS versions, workloads, and backup limitations with specific values. |
 | [Recovery Services vault](https://learn.microsoft.com/en-us/azure/backup/encryption-at-rest-with-cmk) | security | 0.85 | Explains CMK setup, Key Vault usage, and key hierarchy (DEK/KEK) for Recovery Services vaults; includes specific security configuration parameters. |
 | [SQL Server Backup support matrix](https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix) | limits-quotas | 0.85 | Support matrix for SQL backup in Azure VMs; contains detailed support settings, versions, and limitations including numeric constraints. |
 | [Azure Database for PostgreSQL -Flexible server backup support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-support-matrix) | limits-quotas | 0.82 | As a support matrix, it summarizes supported regions, scenarios, and limitations for Flexible Server backups, which are concrete product constraints not derivable from general training data. |
@@ -131,9 +151,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Log Analytics Data Model for Legacy Diagnostic Events](https://learn.microsoft.com/en-us/azure/backup/backup-azure-diagnostics-mode-data-model) | configuration | 0.80 | Describes the Azure Diagnostics table schema for Backup in legacy mode; includes specific table and column names and how to query them. |
 | [Log Analytics Data Model for Resource Specific Diagnostic Events](https://learn.microsoft.com/en-us/azure/backup/backup-azure-reports-data-model) | configuration | 0.80 | Data model reference for resource-specific diagnostic events; includes table/field names and schemas used in Log Analytics, which are detailed configuration/reference data. |
 | [Logs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-use-azuremonitor) | configuration | 0.80 | Describes supported scenarios and prerequisites (Log Analytics workspace) and how to wire Azure Backup diagnostics into Azure Monitor Logs; includes product-specific configuration settings. |
-| [MABS V3 RTM protection matrix](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3) | limits-quotas | 0.80 | Lists what can be protected with MABS v3 RTM and earlier; a structured capability/limit matrix that is product-specific. |
-| [MABS V3 UR1 (and later)](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1) | limits-quotas | 0.80 | Support matrix with workloads, versions, installation locations, and protection details provides precise capability and constraint information. |
-| [MABS V4 (and later) protection matrix](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix) | limits-quotas | 0.80 | Protection matrix listing workloads, versions, and supported configurations is effectively a detailed capability/limit table specific to MABS v4. |
 | [Manage Immutable vaults](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage) | security | 0.80 | Details immutable vault operations, lock behavior, and WORM immutability; includes irreversible security configuration semantics unique to Azure Backup. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/backup/monitor-backup-reference) | configuration | 0.80 | Explicitly a monitoring data reference; such pages list metric/log names, dimensions, and meanings—service-specific configuration/reference data that LLMs won’t reliably know. |
 | [Restore keys and secret for encrypted VMs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-key-secret) | security | 0.80 | Includes specific PowerShell cmdlets, parameters, and flows to restore KEK/BEK from backup; this is detailed, product-specific security and integration knowledge. |
@@ -222,7 +239,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/manage-backup-vault) | configuration | 0.70 | Managing Backup vaults involves specific settings and operational behaviors unique to Azure Backup’s vault implementation. |
 | [Manage Azure VM backups](https://learn.microsoft.com/en-us/azure/backup/backup-azure-manage-vms) | configuration | 0.70 | Describes vault dashboard fields, meanings, and management actions for VM backups—product-specific monitoring and configuration behavior. |
 | [Manage backed up SAP HANA databases - CLI](https://learn.microsoft.com/en-us/azure/backup/tutorial-sap-hana-manage-cli) | integrations | 0.70 | Focuses on managing backups via CLI; will list product-specific CLI operations and parameters for SAP HANA backup management. |
-| [Manage recovery points](https://learn.microsoft.com/en-us/azure/backup/manage-recovery-points) | configuration | 0.70 | Explains Azure Backup’s VM recovery point handling with product-specific behaviors (full vs incremental, retention behavior, pruning rules) that affect configuration and operations; these are implementation details not derivable from general knowledge. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/backup/metrics-overview) | limits-quotas | 0.70 | Metrics overview for Azure Backup; such pages define specific metric names and threshold-based alerting guidance, including numeric thresholds for health monitoring. |
 | [Monitor Azure Backup](https://learn.microsoft.com/en-us/azure/backup/monitor-backup) | configuration | 0.70 | Explains which metrics/logs are available for Azure Backup and how to collect/analyze them; this is a service-specific monitoring configuration reference. |
 | [Multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept) | security | 0.70 | Multiuser authorization with Resource Guard is a product-specific security feature; documentation typically lists protected operations, required roles, and authorization flows. |
@@ -250,7 +266,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Restore](https://learn.microsoft.com/en-us/azure/backup/restore-postgresql-database-ps) | integrations | 0.70 | Shows PowerShell cmdlets and parameters for restoring PostgreSQL backups; includes PaaS-specific behavior (no OLR, ALR only) which is product-specific. |
 | [Restore Azure VMs in the portal](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms) | configuration | 0.70 | Portal-based restore steps, including Cross Region Restore options and parameters, are product-specific configuration flows. |
 | [Restore SAP HANA databases - CLI](https://learn.microsoft.com/en-us/azure/backup/tutorial-sap-hana-restore-cli) | integrations | 0.70 | CLI-based restore tutorial; includes Azure Backup CLI commands and parameters specific to SAP HANA restore scenarios. |
-| [Threat Detection with Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview) | security | 0.70 | Integration details with Defender for Cloud (signals used, scan behavior, how restore points are evaluated) are product-specific security capabilities. |
 | [Unattended installation](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-unattended-install) | deployment | 0.70 | Unattended installation via PowerShell script is a deployment pattern specific to MABS, with product-specific requirements and parameters. |
 | [Update Recovery Services vault configurations](https://learn.microsoft.com/en-us/azure/backup/use-restapi-update-vault-properties) | integrations | 0.70 | Covers REST operations and configuration fields for vault properties; these API shapes and parameters are product-specific. |
 | [Use DPM to back up Exchange server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-exchange-server) | best-practices | 0.70 | Exchange backup via DPM with the TRIM note about incremental block tracking being reset and causing full backups; this is a concrete product-specific behavior and gotcha. |
@@ -264,7 +279,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Azure PowerShell Samples](https://learn.microsoft.com/en-us/azure/backup/powershell-backup-samples) | integrations | 0.65 | Central index of script samples; individual samples typically include cmdlet parameters and patterns specific to Azure Backup automation, which are product-specific integration patterns. |
 | [Back up Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-tutorial) | configuration | 0.65 | Tutorial for configuring vaulted backup with long-term retention; likely includes specific backup policy settings and retention configuration unique to this workload. |
 | [Back up SQL Server Availability Group](https://learn.microsoft.com/en-us/azure/backup/backup-sql-server-on-availability-groups) | best-practices | 0.65 | Covers AG-specific considerations (same region/subscription requirements, unsupported Basic AG, cross-region/on-premises nuances) which are product-specific gotchas and guidance. |
-| [Back up Windows Server System State](https://learn.microsoft.com/en-us/azure/backup/backup-azure-system-state) | configuration | 0.65 | System state backup setup includes specific options (volumes, VSS settings, schedule/retention) unique to Azure Backup + MARS, which are configuration details. |
 | [Back up an Azure VM in Azure extended zones](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-extended-zones) | configuration | 0.65 | Describes how Extended Zones interact with Recovery Services vaults and backup configuration; these are Azure Backup–specific settings and constraints. |
 | [Backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-file-share-rest-api) | integrations | 0.65 | REST API article that defines specific resource names and likely includes request/response schemas and parameters unique to Azure Backup, fitting integrations & coding patterns. |
 | [Backup](https://learn.microsoft.com/en-us/azure/backup/backup-managed-disks) | configuration | 0.65 | Portal-based disk backup setup includes selecting vaults, policies, and options; these are product-specific configuration steps and parameters. |
@@ -387,13 +401,11 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Create a backup policy for Azure Files](https://learn.microsoft.com/en-us/azure/backup/quick-backup-azure-files-vault-tier-portal) | 0.35 | Quickstart to create an Azure Files backup policy via portal; likely shows basic policy creation, not exhaustive settings or limits. |
 | [Create a vaulted backup policy for Azure Data Lake Storage using Azure portal/ PowerShell/ Azure CLI](https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-create-policy-quickstart) | 0.35 | Quickstart to create a vaulted backup policy for Data Lake Storage; likely a single example policy, not a detailed configuration reference. |
 | [Database](https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database) | 0.35 | SAP HANA backup on Azure VMs tutorial; summary points to separate support matrix for scenarios/limits; this article is mainly procedural. |
-| [Database and HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore) | 0.35 | SAP HANA restore tutorial; primarily describes restore operations and CRR usage, not detailed config tables or error-code troubleshooting. |
 | [FAQ-Backup center](https://learn.microsoft.com/en-us/azure/backup/backup-center-faq) | 0.35 | Backup center FAQ is typically conceptual/usage Q&A for a portal experience, not detailed error-code troubleshooting or configuration matrices. |
 | [From the Azure portal](https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-quick) | 0.35 | Quickstart for configuring vaulted backup for Azure Blobs via portal; focuses on creating a policy and enabling backup, not on exhaustive settings or quotas. |
 | [Instance snapshot](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup) | 0.35 | SAP HANA instance snapshot backup tutorial; summary explicitly defers scenarios/limits to a support matrix page. |
 | [Instance snapshot](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-restore) | 0.35 | SAP HANA instance restore via snapshots; operational guidance without clear indication of limits, config matrices, or troubleshooting mappings. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-ase-database-manage) | 0.35 | Management/monitoring for SAP ASE backups; operational tasks rather than detailed config, limits, or troubleshooting content. |
-| [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage) | 0.35 | Management/monitoring article for SAP HANA backups; describes common tasks, but summary does not indicate detailed configuration or limits content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-backup-overview) | 0.35 | AKS backup overview describing what it is and general capabilities (scheduled backups, namespace/cluster scope). It doesn’t clearly indicate detailed configuration parameters or numeric constraints. |
 | [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-about-mars) | 0.35 | About the MARS Agent is an overview of supported backup scenarios, not a configuration matrix, limits table, or troubleshooting guide with error codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-about) | 0.35 | Overview of SAP HANA backup on Azure VMs, focusing on capabilities and high-level benefits (Backint certified, zero-infrastructure backups). It doesn’t clearly indicate detailed configuration parameters or limits. |
@@ -468,4 +480,13 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | [Backup architecture](https://learn.microsoft.com/en-us/azure/backup/backup-architecture) | 0.10 | Architecture overview is conceptual and descriptive; no indication of numeric thresholds, decision matrices, or detailed configuration tables. |
 | [Overview of Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-overview) | 0.10 | High-level overview of Azure Backup and BCDR; no detailed limits, configs, or error mappings. |
 | [What's new in Azure Backup](https://learn.microsoft.com/en-us/azure/backup/whats-new) | 0.10 | What's new/announcements page; feature summaries without detailed technical tables or configs. |
+| [Back up Windows Server System State](https://learn.microsoft.com/en-us/azure/backup/backup-azure-system-state) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Database and HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
 | [Glossary of terms](https://learn.microsoft.com/en-us/azure/backup/azure-backup-glossary) | - | Glossary defines terms; no configuration, limits, or troubleshooting mappings. |
+| [MABS V3 RTM protection matrix](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [MABS V3 UR1 (and later)](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [MABS V4 (and later) protection matrix](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [MARS agent support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Manage recovery points](https://learn.microsoft.com/en-us/azure/backup/manage-recovery-points) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Threat Detection with Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

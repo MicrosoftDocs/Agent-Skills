@@ -3,7 +3,7 @@ name: azure-health-data-services
 description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Health Data Services applications. Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L48 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, events, $convert-data, identity providers, MedTech deployment/log errors, and known platform problems. |
 | Best Practices | L49-L56 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
 | Decision Making | L57-L62 | Guidance for planning and executing migrations from Azure API for FHIR to the FHIR service or broader Azure Health Data Services, including architecture, data, and compatibility considerations. |
-| Architecture & Design Patterns | L63-L70 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L71-L77 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
-| Security | L78-L116 | Configuring auth, RBAC, identity apps, tokens, encryption (CMK), network/Private Link, and compliance policies for securing FHIR, DICOM, and de-identification services in Azure Health Data Services. |
-| Configuration | L117-L184 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L185-L221 | Patterns and code samples for calling FHIR, DICOM, MedTech, and de-identification APIs, integrating with tools like Synapse, ADF, Logic Apps, AML, Power BI, and managing bulk data flows. |
-| Deployment | L222-L237 | How to deploy and move FHIR, DICOM, MedTech, and de-identification services using portal, ARM, Bicep, CLI, PowerShell, and configure storage/backing resources |
+| Architecture & Design Patterns | L63-L69 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
+| Limits & Quotas | L70-L75 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
+| Security | L76-L114 | Configuring auth, RBAC, identity apps, tokens, encryption (CMK), network/Private Link, and compliance policies for securing FHIR, DICOM, and de-identification services in Azure Health Data Services. |
+| Configuration | L115-L180 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
+| Integrations & Coding Patterns | L181-L217 | Patterns and code samples for calling FHIR, DICOM, MedTech, and de-identification APIs, integrating with tools like Synapse, ADF, Logic Apps, AML, Power BI, and managing bulk data flows. |
+| Deployment | L218-L233 | How to deploy and move FHIR, DICOM, MedTech, and de-identification services using portal, ARM, Bicep, CLI, PowerShell, and configure storage/backing resources |
 
 ### Troubleshooting
 | Topic | URL |
@@ -64,7 +64,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure disaster recovery for Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/disaster-recovery |
-| Design reliable de-identification service deployments | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/reliability-health-data-services-deidentification |
 | Architect DICOM service with Azure Data Lake Storage | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-data-lake |
 | Implement digital pathology workflows with DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-digital-pathology |
 
@@ -72,7 +71,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use autoscale with Azure API for FHIR | https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/autoscale-azure-api-fhir |
-| Supported languages for Azure Health de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/languages-supported |
 | Use autoscale for FHIR service performance and capacity | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/autoscale |
 
 ### Security
@@ -139,7 +137,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure monitoring and alerts for de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service |
 | Reference for de-identification service monitoring data | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/monitor-deidentification-service-reference |
 | Define custom redaction formats for de-identification service | https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/redaction-format |
-| Deploy Health Data Services with Bicep templates | https://learn.microsoft.com/en-us/azure/healthcare-apis/deploy-healthcare-apis-using-bicep |
 | Configure CORS settings for DICOM service | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/configure-cross-origin-resource-sharing |
 | Customize image location URLs in DICOM responses | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-proxy-url-support |
 | Understand DICOM service v1 conformance and APIs | https://learn.microsoft.com/en-us/azure/healthcare-apis/dicom/dicom-services-conformance-statement |
@@ -180,7 +177,6 @@ This skill requires **network access** to fetch documentation content:
 | Use custom functions in MedTech device mappings | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-custom-functions |
 | Configure IotJsonPathContent templates for MedTech mappings | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-iotjsonpathcontent-templates |
 | Use MedTech monitoring and health check tabs | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-monitoring-and-health-checks-tabs |
-| Configure and interpret logging for Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/logging |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

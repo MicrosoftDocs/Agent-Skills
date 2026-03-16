@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   limits-quotas: ACI CPU/memory limits, regional quota checks, standby pool caps,
     and VNet-related deployment constraints and planning for container instances
@@ -38,13 +38,13 @@ skill_description: Expert knowledge for Azure Container Instances development in
 - **Total Pages**: 83
 - **Fetched**: 83
 - **Fetch Failed**: 0
-- **Classified**: 54
-- **Unclassified**: 29
+- **Classified**: 53
+- **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -57,12 +57,17 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | configuration | 30 | 36.1% |
 | decision-making | 2 | 2.4% |
 | deployment | 1 | 1.2% |
-| limits-quotas | 4 | 4.8% |
+| limits-quotas | 3 | 3.6% |
 | security | 11 | 13.3% |
 | troubleshooting | 2 | 2.4% |
-| *(Unclassified)* | 29 | 34.9% |
+| *(Unclassified)* | 30 | 36.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-11T22:06:00.000Z
 
 ## Classified Pages
 
@@ -98,7 +103,6 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [Security considerations](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-image-security) | security | 0.70 | Security considerations article; likely includes ACI-specific recommendations, possibly RBAC roles, secret handling patterns, and image security guidance beyond generic security theory. |
 | [Set environment variables (env)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-environment-variables) | configuration | 0.70 | Shows concrete CLI/PowerShell/portal parameters and YAML schema fields for setting environment variables in ACI, including property names and usage patterns that are product-specific. |
 | [Use config maps](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-config-map) | configuration | 0.70 | Describes ACI-specific config map properties and update behavior, with concrete configuration fields and patterns distinct from generic environment variable usage. |
-| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.70 | Virtual network scenarios and limitations; explicitly notes required NAT gateway for outbound connectivity and likely includes other vNet-specific constraints and limits. |
 | [About Azure Container Instances Spot containers](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-spot-containers-overview) | decision-making | 0.65 | Spot containers overview with quantified discount (up to 70%) and trade-offs for interruptible workloads; helps decide when to choose Spot vs regular ACI. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-create) | configuration | 0.65 | Provides concrete configuration steps and parameters to define container group profiles and standby pools in ACI. |
 | [Deploy in a virtual network](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-vnet) | configuration | 0.65 | How-to article for deploying into vNets; likely includes specific CLI parameters, subnet requirements, and NAT gateway configuration details unique to ACI. |
@@ -156,3 +160,4 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [About Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview) | 0.20 | High-level overview of Azure Container Instances; conceptual description of capabilities without numeric limits, config tables, or detailed patterns. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | 0.20 | General FAQ page; while it may contain some service details, it is not organized as limits tables, configuration references, troubleshooting mappings, or other structured expert content per the defined categories. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-support-help) | 0.10 | Support and help options page focused on where to get assistance, not on technical limits, configuration, troubleshooting, or other expert operational details. |
+| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

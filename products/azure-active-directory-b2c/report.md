@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
     identity providers, app/API registration, UI/localization, claims, journeys, SSO,
@@ -41,13 +41,13 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 - **Total Pages**: 289
 - **Fetched**: 289
 - **Fetch Failed**: 0
-- **Classified**: 258
-- **Unclassified**: 31
+- **Classified**: 256
+- **Unclassified**: 33
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 2
+- **Unchanged**: 287
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -57,22 +57,28 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 |------|-------|------------|
 | architecture-patterns | 5 | 1.7% |
 | best-practices | 5 | 1.7% |
-| configuration | 112 | 38.8% |
+| configuration | 111 | 38.4% |
 | decision-making | 5 | 1.7% |
 | deployment | 2 | 0.7% |
 | integrations | 109 | 37.7% |
-| limits-quotas | 4 | 1.4% |
+| limits-quotas | 3 | 1.0% |
 | security | 13 | 4.5% |
 | troubleshooting | 3 | 1.0% |
-| *(Unclassified)* | 31 | 10.7% |
+| *(Unclassified)* | 33 | 11.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html)
+  - Updated: 2025-02-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
+- [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits)
+  - Updated: 2026-01-22T08:00:00.000Z → 2026-03-02T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits) | limits-quotas | 0.95 | Explicitly documents usage constraints and service limits (numeric quotas, thresholds) for Azure AD B2C—canonical limits-quotas content. |
 | [Error codes](https://learn.microsoft.com/en-us/azure/active-directory-b2c/error-codes) | troubleshooting | 0.92 | Provides a list of specific Azure AD B2C error codes and their meanings, enabling targeted diagnosis and resolution—classic troubleshooting reference. |
 | [ClaimsSchema](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimsschema) | configuration | 0.90 | Reference for ClaimsSchema element, claim type definitions, and usage; includes specific attribute names and constraints not generally known. |
 | [ClaimsTransformations](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations) | configuration | 0.90 | Defines ClaimsTransformations element and supported transformation types, parameters, and usage patterns unique to B2C. |
@@ -159,7 +165,6 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [ContentDefinitions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/contentdefinitions) | configuration | 0.78 | Reference page for the ContentDefinitions element with schema details, element/attribute names, and allowed values for customizing self-asserted technical profiles—product-specific configuration not generally known. |
 | [Cookie definitions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/cookie-definitions) | configuration | 0.78 | Lists specific cookie names, purposes, and behaviors used by Azure AD B2C—low-level implementation details not generally known. |
 | [Customize language](https://learn.microsoft.com/en-us/azure/active-directory-b2c/language-customization) | configuration | 0.78 | Includes language customization settings, JSON resource keys, and policy configuration for localized strings, which are detailed configuration parameters. |
-| [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html) | configuration | 0.78 | Details how to reference HTML templates, required placeholders, and policy configuration keys to link templates to specific pages, which are product-specific settings. |
 | [Experian](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-experian) | integrations | 0.78 | Tutorial for Experian CrossCore integration will define specific API parameters, claims mappings, and policy configuration unique to this service. |
 | [Manage policies with PowerShell](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-custom-policies-powershell) | configuration | 0.78 | Uses specific PowerShell cmdlets, parameters, and patterns for CRUD operations on custom policies that are unique to Azure AD B2C. |
 | [Microsoft Dynamics 365 Fraud Protection](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-dynamics-365-fraud-protection) | integrations | 0.78 | Tutorial for using DFP risk assessments during B2C sign-up/sign-in, with specific configuration, API calls, and policy integration. Product-specific integration knowledge. |
@@ -366,3 +371,5 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | [Videos](https://learn.microsoft.com/en-us/azure/active-directory-b2c/external-identities-videos) | 0.10 | Landing page for a video series about external identities. It is an overview/navigation resource, not a detailed technical reference with configuration parameters or decision matrices. |
 | [Web app authentication documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/index-web-app) | 0.10 | High-level index for web app docs; primarily navigation without detailed configuration or integration specifics. |
 | [What's new in docs?](https://learn.microsoft.com/en-us/azure/active-directory-b2c/whats-new-docs) | 0.10 | Change-log style list of new/updated docs; navigation content, not deep technical guidance. |
+| [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

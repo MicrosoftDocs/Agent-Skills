@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: Details on what Microsoft Entra roles and permissions Service Connector
     assigns or requires, least-privilege guidance, and how access is granted to target
@@ -32,14 +32,14 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 - **Total Pages**: 63
 - **Fetched**: 63
 - **Fetch Failed**: 0
-- **Classified**: 35
-- **Unclassified**: 28
+- **Classified**: 34
+- **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 63
-- **Deleted Pages**: 0
+- **Unchanged**: 62
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
 ## Classification Statistics
@@ -48,20 +48,27 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 |------|-------|------------|
 | configuration | 3 | 4.8% |
 | deployment | 2 | 3.2% |
-| integrations | 26 | 41.3% |
+| integrations | 25 | 39.7% |
 | limits-quotas | 1 | 1.6% |
 | security | 2 | 3.2% |
 | troubleshooting | 1 | 1.6% |
-| *(Unclassified)* | 28 | 44.4% |
+| *(Unclassified)* | 29 | 46.0% |
 
 ## Changes
+
+### New Pages
+
+- [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
+
+### Deleted Pages
+
+- ~~Azure AI services~~ (https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error) | troubleshooting | 0.95 | Explicitly described as listing error messages and suggested actions; this implies mappings from specific errors to causes and resolutions, which is product-specific troubleshooting knowledge. |
-| [Azure AI services](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | integrations | 0.90 | Provides supported authentication methods, clients, sample code, and default environment variable names/values for Azure AI services; this is a product-specific integration and coding pattern reference. |
 | [Azure App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-app-configuration) | integrations | 0.90 | Shows supported auth methods, clients, sample code, and default environment variable names/values for App Configuration; matches integration & coding patterns criteria. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob) | integrations | 0.90 | Details supported auth methods, clients, sample code, and default environment variable names/values for Blob Storage; clearly an integration pattern reference. |
 | [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache) | integrations | 0.90 | Covers supported auth methods, clients, sample code, and default environment variable names/values for Azure Cache for Redis; fits integrations & coding patterns. |
@@ -128,3 +135,4 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 | [Java JBoss EAP to MySQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-java-jboss-connect-managed-identity-mysql-database) | 0.30 | Tutorial for Java JBoss with managed identity; primarily step-by-step scenario, not a configuration or troubleshooting reference. |
 | [Python app to PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-django-webapp-postgres-cli) | 0.30 | Django + Postgres tutorial; focuses on deployment and basic connection steps, not on detailed Service Connector configuration matrices. |
 | [About Service Connector](https://learn.microsoft.com/en-us/azure/service-connector/overview) | 0.20 | High-level overview of Service Connector use cases and benefits without detailed configuration parameters, limits, or product-specific patterns. |
+| [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

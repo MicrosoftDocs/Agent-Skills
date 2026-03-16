@@ -3,7 +3,7 @@ name: azure-well-architected
 description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Recommendations | L44-L118 | Guidance on cost optimization, performance, reliability, security, DevOps, and sustainability practices for designing, operating, and improving Azure workloads end to end. |
 | Design Principles | L119-L137 | Design principles and patterns for cost, reliability, performance, security, operations, sustainability, and specific workloads (AI, SAP, SaaS, Oracle, AVD, AVS) using Azure WAF guidance |
 | Tradeoffs | L138-L147 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L148-L199 | End-to-end architecture, security, operations, networking, monitoring, and cost-optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
-| Workload Patterns | L200-L264 | End-to-end workload design guidance for AI, mission-critical, Oracle, SaaS, SAP, and sustainable solutions on Azure, covering platforms, data, networking, security, operations, and DevOps. |
-| Assessment Questions | L265-L278 | Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions against Well-Architected pillars (cost, security, reliability, performance, operations, mission-critical readiness). |
+| Service Guides | L148-L198 | End-to-end architecture, security, operations, networking, monitoring, and cost-optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
+| Workload Patterns | L199-L263 | End-to-end workload design guidance for AI, mission-critical, Oracle, SaaS, SAP, and sustainable solutions on Azure, covering platforms, data, networking, security, operations, and DevOps. |
+| Assessment Questions | L264-L277 | Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions against Well-Architected pillars (cost, security, reliability, performance, operations, mission-critical readiness). |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -170,7 +170,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure Blob Storage using WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage |
 | Architect Azure Container Apps with WAF-aligned practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps |
 | Use WAF-aligned architecture for Azure Databricks | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-databricks |
-| Optimize Azure Database for MySQL costs with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-db-mysql-cost-optimization |
 | Optimize Azure Disk Storage using WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-disk-storage |
 | Design Event Grid architectures with WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-grid |
 | Implement Azure Event Hubs using WAF-aligned patterns | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-event-hubs |

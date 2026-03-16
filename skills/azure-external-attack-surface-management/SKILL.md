@@ -3,7 +3,7 @@ name: azure-external-attack-surface-management
 description: Expert knowledge for Azure External Attack Surface Management development including limits & quotas, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure External Attack Surface Management applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure External Attack Surface Management Skill

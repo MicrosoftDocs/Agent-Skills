@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring Extended Zones access: registering subscriptions, requesting
     zone access, and creating custom Azure Policy definitions to govern Extended Zones
@@ -16,14 +16,14 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 
 ## Summary
 
-- **Total Pages**: 16
-- **Fetched**: 16
+- **Total Pages**: 17
+- **Fetched**: 17
 - **Fetch Failed**: 0
 - **Classified**: 3
-- **Unclassified**: 13
+- **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 16
 - **Deleted Pages**: 0
@@ -33,11 +33,15 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 2 | 12.5% |
-| decision-making | 1 | 6.2% |
-| *(Unclassified)* | 13 | 81.2% |
+| configuration | 2 | 11.8% |
+| decision-making | 1 | 5.9% |
+| *(Unclassified)* | 14 | 82.4% |
 
 ## Changes
+
+### New Pages
+
+- [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk)
 
 ## Classified Pages
 
@@ -64,3 +68,4 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 | [Deploy a VM in an Extended Zone - Azure CLI](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-vm-cli) | 0.20 | Quickstart for deploying a VM using CLI/ARM; primarily tutorial content, not a catalog of configuration options, limits, or decision criteria. |
 | [Deploy a VM in an Extended Zone - Portal](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-vm-portal) | 0.20 | Quickstart for deploying a VM via portal; likely step-by-step UI instructions without detailed configuration parameter tables, limits, or product-specific troubleshooting mappings. |
 | [What is Azure Extended Zones?](https://learn.microsoft.com/en-us/azure/extended-zones/overview) | 0.20 | High-level overview of Azure Extended Zones; summary indicates conceptual description of what they are and benefits, without concrete limits, configuration tables, or decision matrices. |
+| [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

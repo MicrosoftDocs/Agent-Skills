@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-03-16'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure SQL and SQL Server on Azure VM issues:
     connectivity, capacity, performance (I/O, memory, redo lag), transaction logs,
@@ -39,68 +39,56 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
 
 ## Summary
 
-- **Total Pages**: 123
-- **Fetched**: 123
+- **Total Pages**: 124
+- **Fetched**: 124
 - **Fetch Failed**: 0
-- **Classified**: 102
-- **Unclassified**: 21
+- **Classified**: 99
+- **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 6
-- **Unchanged**: 114
-- **Deleted Pages**: 2
+- **New Pages**: 2
+- **Updated Pages**: 2
+- **Unchanged**: 120
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 4.1% |
+| architecture-patterns | 5 | 4.0% |
 | best-practices | 10 | 8.1% |
-| configuration | 39 | 31.7% |
+| configuration | 38 | 30.6% |
 | decision-making | 8 | 6.5% |
-| deployment | 15 | 12.2% |
+| deployment | 15 | 12.1% |
 | integrations | 2 | 1.6% |
-| limits-quotas | 4 | 3.3% |
-| security | 7 | 5.7% |
-| troubleshooting | 12 | 9.8% |
-| *(Unclassified)* | 21 | 17.1% |
+| limits-quotas | 4 | 3.2% |
+| security | 7 | 5.6% |
+| troubleshooting | 10 | 8.1% |
+| *(Unclassified)* | 25 | 20.2% |
 
 ## Changes
 
 ### New Pages
 
-- [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-- [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
-- [Migrate storage to Ultra Disk](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-migrate-to-ultradisk?view=azuresql)
+- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
+- [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql)
 
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2025-11-18T15:49:00Z → 2026-03-03T23:40:00Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-03T18:40:00.000Z
-- [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-02T08:00:00.000Z
+- [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql)
+  - Updated: 2024-01-25T18:58:00.000Z → 2026-03-09T17:32:00.000Z
 - [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-01-27T18:35:00.000Z → 2026-03-03T18:40:00.000Z
+  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
 
 ### Deleted Pages
 
-- ~~Import/Export service hangs~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql)
-- ~~Migrate storage to Ultradisk~~ (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-migrate-to-ultradisk?view=azuresql)
+- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot geo-replication lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | troubleshooting | 0.95 | Explicitly a troubleshooting article for geo-replication and redo lag. It explains how to interpret lag metrics, likely references specific DMVs/fields, and maps symptoms (lag, backlog, failover delay) to causes and mitigation steps. This is product-specific diagnostic and resolution guidance that fits the troubleshooting sub-skill. |
-| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | troubleshooting | 0.90 | A 'Known Issues' page for Azure SQL Managed Instance lists specific product defects or behaviors, often with error manifestations, affected features, and concrete workarounds or resolution notes. This is classic symptom→cause→solution content that is product-specific and changes over time, so it qualifies as expert troubleshooting knowledge. |
 | [Troubleshoot Import/Export service](https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-hang?view=azuresql) | troubleshooting | 0.90 | Focused on the symptom 'Import/Export takes a long time' and describes potential causes plus alternative workarounds. This is a direct symptom→cause→solution mapping for Azure SQL Database and Managed Instance, which is product-specific troubleshooting knowledge. |
 | [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql) | troubleshooting | 0.85 | Describes specific transient error patterns, connection string settings, and retry configuration to mitigate Azure SQL connection issues. |
 | [Connectivity errors](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-errors-issues?view=azuresql) | troubleshooting | 0.85 | Explicitly about connection errors; includes error codes/messages and stepwise diagnosis and resolution for Azure SQL and Fabric SQL. |
@@ -165,7 +153,6 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
 | [Premium SSD storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration?view=azuresql) | configuration | 0.70 | Storage configuration for SQL VMs typically includes product-specific disk layout recommendations, parameter names, and concrete settings (for tempdb, data, log disks) that go beyond generic knowledge. |
 | [Premium SSD v2 (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/storage-configuration-premium-ssd-v2?view=azuresql) | configuration | 0.70 | Covers deploying SQL VMs with Premium SSD v2; such articles usually include disk type options, performance-related configuration values, and Azure-portal settings specific to this storage tier. |
 | [Premium file share (Win2012+)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-premium-file-share-manually-configure?view=azuresql) | configuration | 0.70 | Premium file share-backed FCIs require Azure Files configuration, share sizing, and cluster settings that are product-specific. |
-| [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | configuration | 0.70 | Registration steps include specific commands, parameter names, and modes for the extension that are product-specific configuration details. |
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | limits-quotas | 0.70 | Describes quota categories and process for increasing them; while focused on process, it is directly tied to numeric quota constraints. |
 | [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-iaas-agent-extension-linux?view=azuresql) | configuration | 0.70 | Describes extension behavior and likely lists extension modes, settings, and parameters specific to SQL IaaS Agent on Linux. |
 | [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management?view=azuresql) | configuration | 0.70 | Describes SQL IaaS Agent extension capabilities and likely includes extension modes, settings, and parameters specific to SQL VMs. |
@@ -227,3 +214,7 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
 | [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes for SQL Server on Azure VMs; primarily historical and navigational, not focused on limits, configuration tables, or troubleshooting mappings. |
 | [What is Azure SQL?](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql) | 0.10 | High-level overview of Azure SQL family; no detailed limits, configs, or decision matrices. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/?view=azuresql) | 0.05 | Landing page listing concepts and tutorials; no specific expert configuration or limits. |
+| [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

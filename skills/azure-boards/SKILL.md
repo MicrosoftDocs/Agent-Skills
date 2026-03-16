@@ -3,7 +3,7 @@ name: azure-boards
 description: Expert knowledge for Azure Boards development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Boards applications. Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Test Plans (use azure-test-plans), Azure Repos (use azure-repos).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-02"
+  generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Boards Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L52-L59 | Guidance on choosing Azure Boards processes, tools, and integrations, plus planning cross-team dependencies and migrations to get the right setup for your organization. |
 | Limits & Quotas | L60-L65 | Managing Azure Boards limits for test artifacts and work item attachments, including size/quantity constraints and how to restore deleted test-related items. |
 | Security | L66-L72 | Managing Azure Boards security: default permissions, configuring query/folder access, and setting access controls and policies to protect work items and boards. |
-| Configuration | L73-L87 | Configuring Azure Boards processes, fields, and Kanban WIP limits, and integrating Boards with GitHub (repos, badges, GitHub Enterprise) plus using queries and work item field references. |
-| Integrations & Coding Patterns | L88-L96 | Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack, Teams, and writing WIQL queries for integrated work item tracking workflows |
+| Configuration | L73-L86 | Configuring Azure Boards processes, fields, and Kanban WIP limits, and integrating Boards with GitHub (repos, badges, GitHub Enterprise) plus using queries and work item field references. |
+| Integrations & Coding Patterns | L87-L95 | Connecting Azure Boards to Excel, GitHub (artifacts & Copilot), Slack, Teams, and writing WIQL queries for integrated work item tracking workflows |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,7 +73,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Kanban WIP limits in Azure Boards | https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops |
 | Configure and customize Azure Boards processes and boards | https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops |
 | Add Azure Boards status badges to GitHub repos | https://learn.microsoft.com/en-us/azure/devops/boards/github/configure-status-badges?view=azure-devops |
 | Configure on-premises Azure DevOps with GitHub Enterprise | https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-server |

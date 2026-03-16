@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   security: 'Securing ADX clusters and data: auth/RBAC, managed identities, encryption
     (disk, CMK, double), network/private endpoints, policies, conditional access,
@@ -43,13 +43,13 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
-- **Classified**: 110
-- **Unclassified**: 87
+- **Classified**: 105
+- **Unclassified**: 92
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 197
+- **Updated Pages**: 6
+- **Unchanged**: 191
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -61,14 +61,29 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | best-practices | 8 | 4.1% |
 | configuration | 13 | 6.6% |
 | decision-making | 10 | 5.1% |
-| deployment | 4 | 2.0% |
+| deployment | 3 | 1.5% |
 | integrations | 31 | 15.7% |
 | limits-quotas | 7 | 3.6% |
-| security | 26 | 13.2% |
+| security | 22 | 11.2% |
 | troubleshooting | 7 | 3.6% |
-| *(Unclassified)* | 87 | 44.2% |
+| *(Unclassified)* | 92 | 46.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks)
+  - Updated: 2023-02-27T00:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security)
+  - Updated: 2025-06-02T11:05:00.000Z → 2026-03-15T22:03:00.000Z
+- [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create)
+  - Updated: 2023-11-23T17:54:00.000Z → 2026-03-15T22:03:00.000Z
+- [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint)
+  - Updated: 2025-03-17T17:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double)
+  - Updated: 2025-02-04T08:00:00.000Z → 2026-03-15T22:03:00.000Z
+- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys)
+  - Updated: 2026-01-21T18:03:00.000Z → 2026-03-15T22:03:00.000Z
 
 ## Classified Pages
 
@@ -77,18 +92,15 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Ingestion error codes](https://learn.microsoft.com/en-us/azure/data-explorer/error-codes) | troubleshooting | 0.90 | Explicitly a list of ingestion error codes with meanings; this is classic troubleshooting content mapping error codes to causes and likely resolutions. |
 | [Automatic stop of inactive clusters](https://learn.microsoft.com/en-us/azure/data-explorer/auto-stop-clusters) | limits-quotas | 0.85 | Defines inactivity as no ingestion or queries for 5 days and states the interval is fixed and non-configurable, plus exceptions. This is a concrete time-based limit/behavior unique to the service. |
 | [Manage cluster permissions](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-permissions) | security | 0.85 | Describes RBAC roles like AllDatabasesAdmin/Viewer/Monitor and their scopes. This is product-specific security configuration with named roles and access semantics. |
-| [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys) | security | 0.80 | Details how to use Azure Key Vault CMKs, including region constraints and key setup; product-specific encryption configuration. |
 | [Configure managed identities on your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/configure-managed-identities-cluster) | security | 0.80 | Concrete steps and settings to add/remove managed identities on clusters; product-specific security configuration. |
 | [Connecting to a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/troubleshoot-connect-cluster) | troubleshooting | 0.80 | Maps specific connection symptoms (URL format, unauthorized responses) to causes and resolutions unique to this service. |
 | [Create Microsoft Entra app](https://learn.microsoft.com/en-us/azure/data-explorer/provision-entra-id-app) | security | 0.80 | Guides creation of service principals and granting them access to Data Explorer; includes auth configuration steps and scopes. |
 | [Create a managed private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-managed-private-endpoint-create) | security | 0.80 | Shows how to create and connect managed private endpoints to protected services; product-specific security/network configuration. |
-| [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create) | security | 0.80 | Step-by-step creation of private endpoints with specific settings in Azure portal; concrete security configuration. |
 | [Create an Event Grid data connection](https://learn.microsoft.com/en-us/azure/data-explorer/create-event-grid-connection) | limits-quotas | 0.80 | Explicitly states maximum file size (6 GB) and recommended range (100 MB–1 GB) for ingestion, which are concrete product limits. |
 | [Creating a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/troubleshoot-create-cluster) | troubleshooting | 0.80 | Symptom-to-solution guidance for cluster creation failures, including permission requirements and Azure service health checks. |
 | [Cross-tenant queries and commands](https://learn.microsoft.com/en-us/azure/data-explorer/cross-tenant-query-and-commands) | security | 0.80 | Shows how to set trustedExternalTenants via ARM/CLI/API; includes concrete property names and security configuration steps. |
 | [Delete a cluster](https://learn.microsoft.com/en-us/azure/data-explorer/delete-cluster) | limits-quotas | 0.80 | Defines a 14-day soft delete period, recoverability, and name reuse restriction, plus an opt-out mechanism. These are concrete time and behavior limits. |
 | [Enable disk encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-disk) | security | 0.80 | Details how to turn on disk encryption, including which mechanism is used per SKU; product-specific security configuration. |
-| [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double) | security | 0.80 | Shows how to enable/disable infrastructure (double) encryption via specific portal settings; concrete security configuration. |
 | [Manage database permissions](https://learn.microsoft.com/en-us/azure/data-explorer/manage-database-permissions) | security | 0.80 | Describes database/table-level RBAC roles and how to assign them. This is product-specific security configuration with named roles and scopes. |
 | [Pricing calculator](https://learn.microsoft.com/en-us/azure/data-explorer/pricing-calculator) | decision-making | 0.80 | Pricing calculator article explains each configuration component and its cost impact, directly guiding SKU and capacity decisions with quantified trade-offs. |
 | [Private endpoints overview](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint) | security | 0.80 | Details use of private endpoints, including behavior and access model; product-specific network security configuration. |
@@ -129,10 +141,8 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Keyboard shortcuts](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-keyboard-shortcuts) | configuration | 0.70 | Lists specific keyboard shortcut mappings (commands to key combinations) which are product-specific configuration/usage details not inferable from general knowledge. |
 | [Kibana (K2Bridge connector)](https://learn.microsoft.com/en-us/azure/data-explorer/k2bridge) | integrations | 0.70 | K2Bridge is a specialized proxy translating Kibana queries to KQL. Article likely documents container configuration, endpoint parameters, and supported Kibana features—clear product-specific integration details. |
 | [Linked server](https://learn.microsoft.com/en-us/azure/data-explorer/linked-server) | integrations | 0.70 | Linked server setup requires provider strings, connection options, and authentication specifics (Microsoft Entra) that are detailed integration configuration for ADX. |
-| [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks) | security | 0.70 | Explains Delete and Read-only locks and their effect on operations, overriding RBAC. These are specific security/guardrail configurations for the service. |
 | [Manage public access to your cluster](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-restrict-public-access) | security | 0.70 | Describes concrete settings to allow, limit, or block public access; product-specific security configuration. |
 | [Managed identities overview](https://learn.microsoft.com/en-us/azure/data-explorer/managed-identities-overview) | security | 0.70 | Explains managed identity usage patterns for accessing other Azure resources; includes product-specific security/auth configuration. |
-| [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint) | deployment | 0.70 | Describes migration process, timing, and constraints for moving from VNet injection to private endpoints; deployment-focused guidance. |
 | [Migrate from Elasticsearch](https://learn.microsoft.com/en-us/azure/data-explorer/migrate-elasticsearch-to-azure-data-explorer) | decision-making | 0.70 | Migration guide with concrete steps and mappings from Elasticsearch schema and tooling (Logstash) to Azure Data Explorer. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/data-explorer/monitor-data-explorer-reference) | configuration | 0.70 | A monitoring data reference page typically lists specific metric names, dimensions, and log categories unique to ADX, which are configuration/telemetry details not inferable from general knowledge. |
 | [Multi-tenant solutions](https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant) | architecture-patterns | 0.70 | Compares concrete multi-tenant patterns specific to Azure Data Explorer and when to use each; architecture decision guidance. |
@@ -233,7 +243,6 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Node SDK](https://learn.microsoft.com/en-us/azure/data-explorer/node-ingest-data) | 0.40 | Node.js ingestion tutorial; no mention of parameter tables, limits, or specialized patterns. |
 | [Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-ingest-data) | 0.40 | Python ingestion tutorial; summary indicates generic usage without detailed configuration references. |
 | [Query with SQL in Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query) | 0.40 | Shows one option (SQL query) to connect to Power BI; appears as a tutorial, not a decision matrix or config reference. |
-| [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security) | 0.40 | Introductory security overview; lacks specific RBAC role names, config parameters, or detailed settings. |
 | [Use Azure Data Explorer Clusters Insights](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-insights) | 0.40 | Clusters Insights article is described as onboarding and usage overview; summary doesn’t show detailed metric definitions, limits, or configuration tables. |
 | [Use dashboard parameters](https://learn.microsoft.com/en-us/azure/data-explorer/dashboard-parameters) | 0.40 | Describes creating and using dashboard parameters conceptually; no detailed config tables, limits, or troubleshooting content. |
 | [Use data in Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-data-connector) | 0.40 | Overview of ways to connect Azure Data Explorer to Power BI; likely tutorial-style without detailed config parameter tables. |
@@ -276,3 +285,9 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | [Visualize sample data dashboards](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-dashboards) | 0.20 | Quickstart for sample dashboards; primarily step-by-step usage, no deep config, limits, or troubleshooting mappings. |
 | [What is Azure Data Explorer?](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview) | 0.10 | High-level product overview without concrete limits, configs, or error details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/data-explorer/whats-new) | 0.10 | Documentation change log; no technical limits, configs, or troubleshooting content. |
+| [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

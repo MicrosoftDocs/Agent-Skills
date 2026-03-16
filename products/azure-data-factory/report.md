@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Configuring ADF and integration runtimes (Azure, self-hosted, SSIS,
     Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring,
@@ -38,16 +38,16 @@ skill_description: Expert knowledge for Azure Data Factory development including
 
 ## Summary
 
-- **Total Pages**: 519
-- **Fetched**: 519
+- **Total Pages**: 520
+- **Fetched**: 520
 - **Fetch Failed**: 0
-- **Classified**: 447
-- **Unclassified**: 72
+- **Classified**: 446
+- **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 519
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 518
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -60,13 +60,22 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | configuration | 132 | 25.4% |
 | decision-making | 16 | 3.1% |
 | deployment | 14 | 2.7% |
-| integrations | 180 | 34.7% |
+| integrations | 179 | 34.4% |
 | limits-quotas | 2 | 0.4% |
 | security | 24 | 4.6% |
 | troubleshooting | 50 | 9.6% |
-| *(Unclassified)* | 72 | 13.9% |
+| *(Unclassified)* | 74 | 14.2% |
 
 ## Changes
+
+### New Pages
+
+- [Upgrade ADF pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
+
+### Updated Pages
+
+- [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift)
+  - Updated: 2026-01-15T08:00:00.000Z → 2026-03-10T04:29:00.000Z
 
 ## Classified Pages
 
@@ -253,7 +262,6 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | [Amazon Marketplace Web Service (Deprecated)](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service) | integrations | 0.80 | Connector article will include linked service/dataset property tables, required auth parameters, and connector-specific options for AWS Marketplace, which are concrete integration settings. |
 | [Amazon RDS for Oracle](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle) | integrations | 0.80 | Contains connector-specific connection properties, supported copy behaviors, and possibly limitations for Amazon RDS for Oracle, which are detailed integration patterns. |
 | [Amazon RDS for SQL Server](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server) | integrations | 0.80 | Provides connector configuration (server, database, auth, query options) and any ADF-specific constraints for Amazon RDS SQL Server, which are product-specific integration details. |
-| [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift) | integrations | 0.80 | Redshift connector docs include property tables, performance notes, and supported copy modes unique to this integration. |
 | [Amazon S3 Compatible Storage](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage) | integrations | 0.80 | Documents connector-specific configuration for S3-compatible endpoints (service URL, auth, SSL options), which are detailed integration settings. |
 | [Avro format](https://learn.microsoft.com/en-us/azure/data-factory/format-avro) | configuration | 0.80 | Format article lists dataset and copy settings for Avro (compression, schema handling, nullability) with parameter names and allowed values, which are detailed configuration options. |
 | [Azure AI Search](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-search) | integrations | 0.80 | Search connector article documents index/field mapping, batching, and connector-specific settings, which are detailed integration parameters. |
@@ -596,3 +604,5 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | [What's new (recent months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new) | 0.10 | What's new summary page; feature announcements without deep technical limits, configs, or troubleshooting matrices. |
 | [List of tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials) | 0.05 | Tutorials index; just links to other tutorials, no substantive technical content itself. |
 | [Training modules](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules) | 0.05 | Navigation page listing training modules; no technical details or expert configuration content. |
+| [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Upgrade ADF pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

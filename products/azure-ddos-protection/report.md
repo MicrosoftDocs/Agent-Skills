@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: 'Configuring and monitoring Azure DDoS Protection: metric/diagnostic
     alerts, logs (Log Analytics), Azure Monitor/Defender for Cloud integration, and
@@ -31,13 +31,13 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 18
-- **Unclassified**: 15
+- **Classified**: 16
+- **Unclassified**: 17
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 11
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -46,20 +46,44 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 6.1% |
-| best-practices | 3 | 9.1% |
+| best-practices | 2 | 6.1% |
 | configuration | 7 | 21.2% |
-| decision-making | 4 | 12.1% |
+| decision-making | 3 | 9.1% |
 | security | 1 | 3.0% |
 | troubleshooting | 1 | 3.0% |
-| *(Unclassified)* | 15 | 45.5% |
+| *(Unclassified)* | 17 | 51.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection)
+  - Updated: 2025-03-26T17:06:00.000Z → 2026-01-26T08:00:00.000Z
+- [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T23:11:00.000Z
+- [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-cli)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
+- [Bicep](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-bicep)
+  - Updated: 2025-03-26T17:06:00.000Z → 2026-03-05T08:00:00.000Z
+- [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-template)
+  - Updated: 2025-03-26T17:06:00.000Z → 2026-03-05T08:00:00.000Z
+- [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-portal)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T23:11:00.000Z
+- [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
+- [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-cli)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
+- [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Switch tiers](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-switch-ddos-protection-tier)
+  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Fundamental best practices](https://learn.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices)
+  - Updated: 2025-10-13T08:00:00.000Z → 2026-03-06T17:59:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Fundamental best practices](https://learn.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices) | best-practices | 0.80 | Explicitly prescriptive guidance to build DDoS-resilient services on Azure; contains product-specific DOs/DON’Ts and configuration recommendations. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection-reference) | configuration | 0.80 | Monitoring data reference; contains detailed metric and log schemas, field names, and meanings specific to DDoS Protection. |
 | [Price comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-pricing-guide) | decision-making | 0.80 | Explicitly about comparing pricing between tiers and performing cost analysis with detailed scenarios, enabling cost-based tier selection. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/ddos-protection/policy-reference) | configuration | 0.75 | Lists built-in Azure Policy definitions for DDoS Protection; includes specific policy names, effects, and parameters used to configure environments. |
@@ -75,7 +99,6 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 | [Components of a DDoS response strategy](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-response-strategy) | best-practices | 0.65 | Focuses on incorporating DDoS mitigation into incident response; likely includes Azure-specific response steps and coordination patterns beyond generic theory. |
 | [Configure metric alerts through portal](https://learn.microsoft.com/en-us/azure/ddos-protection/alerts) | configuration | 0.65 | Tutorial for configuring metric alerts; likely includes specific metric names, thresholds, and alert rule parameters unique to DDoS Protection. |
 | [Engage DDoS Rapid Response (DRR)](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-rapid-response) | troubleshooting | 0.65 | Describes how to work with DRR during active attacks and post-attack analysis; effectively part of incident troubleshooting and escalation flow. |
-| [Switch tiers](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-switch-ddos-protection-tier) | decision-making | 0.65 | Guides switching between Network and IP Protection tiers; while portal steps are included, the core value is tier selection and migration between SKUs. |
 | [View alerts in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-alerts-defender-for-cloud) | configuration | 0.65 | Describes specific DDoS-related alert types and how to surface them in Defender for Cloud, including alert names and properties. |
 
 ## Unclassified Pages
@@ -83,17 +106,19 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Types of attacks](https://learn.microsoft.com/en-us/azure/ddos-protection/types-of-attacks) | 0.50 | Explains attack types and how Azure mitigates them; largely conceptual without configuration values, limits, or decision matrices. |
-| [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template) | 0.40 | ARM template quickstart for IP Protection; shows one template, not a comprehensive configuration or decision reference. |
-| [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-template) | 0.40 | ARM template quickstart; focused on a sample template rather than exhaustive configuration parameters or constraints. |
-| [Bicep](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-bicep) | 0.40 | Bicep quickstart; shows one way to define a plan and VNet, but not a full configuration options catalog or decision guide. |
-| [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-cli) | 0.40 | CLI quickstart for IP Protection; tutorial-style, lacking detailed parameter tables or constraints. |
-| [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-cli) | 0.40 | Quickstart using Azure CLI; mostly tutorial-style commands, not a structured configuration or limits reference. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq) | 0.40 | FAQ format but summary does not indicate specific error codes, limits, or config tables; likely general Q&A and conceptual clarifications. |
-| [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-portal) | 0.40 | Portal quickstart for IP Protection; basic enablement steps without deep configuration or decision matrices. |
-| [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection) | 0.40 | Quickstart for portal usage; primarily step-by-step enablement without comprehensive configuration reference or constraints. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell) | 0.40 | Quickstart using PowerShell; focuses on basic creation commands rather than full configuration parameter reference or limits. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip) | 0.40 | PowerShell quickstart for IP Protection; primarily step-by-step commands, not expert-level configuration or troubleshooting content. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-terraform) | 0.40 | Terraform quickstart; tutorial for creating resources, not a deployment matrix or detailed config reference. |
 | [Azure DDoS Protection features](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-features) | 0.30 | Describes key features at a conceptual level; no detailed configuration tables, limits, or decision matrices. |
 | [Onboard partners](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-partner-onboarding) | 0.20 | Partnering/BD-focused content; primarily value propositions and investment paths, not technical configuration or limits. |
 | [What is Azure DDoS Protection?](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview) | 0.20 | High-level overview of Azure DDoS Protection capabilities and concepts without concrete limits, configs, or error mappings. |
+| [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-template) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Bicep](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-bicep) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-cli) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-cli) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Fundamental best practices](https://learn.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-portal) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Switch tiers](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-switch-ddos-protection-tier) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

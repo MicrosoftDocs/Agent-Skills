@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-03-16'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -39,17 +39,17 @@ skill_description: Expert knowledge for Azure Front Door development including t
 
 ## Summary
 
-- **Total Pages**: 100
-- **Fetched**: 100
+- **Total Pages**: 101
+- **Fetched**: 101
 - **Fetch Failed**: 0
 - **Classified**: 78
-- **Unclassified**: 22
+- **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 100
-- **Deleted Pages**: 4
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
 ## Classification Statistics
@@ -58,23 +58,20 @@ skill_description: Expert knowledge for Azure Front Door development including t
 |------|-------|------------|
 | architecture-patterns | 5 | 5.0% |
 | best-practices | 2 | 2.0% |
-| configuration | 28 | 28.0% |
-| decision-making | 9 | 9.0% |
-| deployment | 9 | 9.0% |
+| configuration | 28 | 27.7% |
+| decision-making | 9 | 8.9% |
+| deployment | 9 | 8.9% |
 | integrations | 3 | 3.0% |
 | limits-quotas | 4 | 4.0% |
-| security | 17 | 17.0% |
+| security | 17 | 16.8% |
 | troubleshooting | 1 | 1.0% |
-| *(Unclassified)* | 22 | 22.0% |
+| *(Unclassified)* | 23 | 22.8% |
 
 ## Changes
 
-### Deleted Pages
+### New Pages
 
-- ~~Troubleshoot with RefString~~ (https://learn.microsoft.com/en-us/azure/frontdoor/refstring)
-- ~~Troubleshoot file compression~~ (https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/troubleshoot-compression)
-- ~~Troubleshoot Front Door issues~~ (https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-issues)
-- ~~Troubleshoot Front Door performance issues~~ (https://learn.microsoft.com/en-us/azure/frontdoor/troubleshoot-performance-issues)
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/frontdoor/support-help)
 
 ## Classified Pages
 
@@ -185,3 +182,4 @@ skill_description: Expert knowledge for Azure Front Door development including t
 | [What is Azure Front Door (classic)?](https://learn.microsoft.com/en-us/azure/frontdoor/classic-overview) | 0.20 | An overview page; primarily conceptual description of the service and its capabilities without detailed numeric limits, configuration tables, or troubleshooting mappings. |
 | [Accelerate and secure your web application](https://learn.microsoft.com/en-us/azure/frontdoor/scenarios) | 0.10 | High-level scenario/overview of Azure Front Door capabilities and when to consider using it; no specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) | 0.10 | High-level product overview and benefits; no concrete limits, configs, or error details. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/frontdoor/support-help) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

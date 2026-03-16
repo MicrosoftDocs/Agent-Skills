@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   workload-patterns: End-to-end workload design guidance for AI, mission-critical,
     Oracle, SaaS, SAP, and sustainable solutions on Azure, covering platforms, data,
@@ -31,33 +31,51 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 
 ## Summary
 
-- **Total Pages**: 243
-- **Fetched**: 243
+- **Total Pages**: 248
+- **Fetched**: 248
 - **Fetch Failed**: 0
-- **Classified**: 217
-- **Unclassified**: 26
+- **Classified**: 216
+- **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 243
-- **Deleted Pages**: 0
+- **New Pages**: 6
+- **Updated Pages**: 1
+- **Unchanged**: 241
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| assessments | 11 | 4.5% |
-| checklists | 5 | 2.1% |
-| design-principles | 15 | 6.2% |
-| recommendations | 71 | 29.2% |
-| service-guides | 48 | 19.8% |
-| tradeoffs | 6 | 2.5% |
-| workload-patterns | 61 | 25.1% |
-| *(Unclassified)* | 26 | 10.7% |
+| assessments | 11 | 4.4% |
+| checklists | 5 | 2.0% |
+| design-principles | 15 | 6.0% |
+| recommendations | 71 | 28.6% |
+| service-guides | 47 | 19.0% |
+| tradeoffs | 6 | 2.4% |
+| workload-patterns | 61 | 24.6% |
+| *(Unclassified)* | 32 | 12.9% |
 
 ## Changes
+
+### New Pages
+
+- [HPC](https://learn.microsoft.com/en-us/azure/well-architected/hpc/)
+- [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql)
+- [Get started](https://learn.microsoft.com/en-us/azure/well-architected/hpc/get-started-overview)
+- [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-methodology)
+- [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles)
+- [Architecture pattern](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-architecture-pattern)
+
+### Updated Pages
+
+- [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/)
+  - Updated: 2026-02-27T18:03:00Z → 2026-03-04T18:02:00Z
+
+### Deleted Pages
+
+- ~~Azure Database for MySQL~~ (https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-db-mysql-cost-optimization)
 
 ## Classified Pages
 
@@ -180,7 +198,6 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-principles) | design-principles | 0.82 | Defines named sustainability design principles (record, report, reduce/optimize) with rationale and alignment to WAF pillars. |
 | [Application delivery](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/application-delivery) | service-guides | 0.80 | Service-specific guidance for Azure Virtual Desktop application platforms (host pools, session hosts) aligned to multiple WAF pillars (reliability, cost, performance, security). |
 | [Applications](https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/application-platform) | service-guides | 0.80 | Provides application platform design guidance (deployment, configuration, monitoring) specific to Azure VMware Solution workloads, aligned with multiple WAF pillars. |
-| [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-db-mysql-cost-optimization) | service-guides | 0.80 | Service-specific guidance for Azure Database for MySQL focused on the Cost Optimization pillar, with configuration recommendations and design considerations, which fits the service-guides category even though it emphasizes a single pillar. |
 | [Background jobs](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/background-jobs) | recommendations | 0.80 | Concrete recommendations and patterns for implementing background jobs to improve availability and responsiveness. |
 | [Continuous integration](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration) | recommendations | 0.80 | Stepwise, practical guidance on CI practices, tooling integration, and workflows; clearly implementation-oriented. |
 | [Data partitioning](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data) | recommendations | 0.80 | Detailed guidance on how to partition data for reliability, scalability, and performance; implementation-focused. |
@@ -298,7 +315,6 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Get started](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-overview) | 0.40 | High-level overview of mission-critical workloads guidance; primarily conceptual and navigational without detailed design or assessment content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/well-architected/saas/get-started) | 0.40 | High-level overview of SaaS workloads and business context; largely conceptual without deep, non-obvious implementation details. |
 | [Maintain an architecture decision record](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record) | 0.40 | Explains architecture decision records conceptually; no WAF pillar-specific principles, checklists, or implementation recommendations. |
-| [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/) | 0.40 | High-level entry page for service guides; primarily navigation to per-service content, not itself a detailed guide or checklist. |
 | [Collaborate with implementors](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/collaboration) | 0.30 | Collaboration guidance between architects and workload/platform teams; process-focused, not WAF pillar guidance. |
 | [Create design diagrams](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/design-diagrams) | 0.30 | General diagramming practices and communication guidance; not tied to WAF pillars, checklists, or recommendations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/well-architected/design) | 0.30 | High-level overview of design guides; primarily navigational and conceptual without deep implementation detail. |
@@ -311,3 +327,10 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/security/) | 0.20 | Security quick links page is navigational, aggregating links to other security guidance; no substantive principles, checklists, or recommendations on-page. |
 | [What's new](https://learn.microsoft.com/en-us/azure/well-architected/whats-new) | 0.20 | What's New page is navigational/release-note style, pointing to other content; it doesn't itself contain detailed principles, checklists, or implementation guidance. |
 | [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/) | 0.10 | A quick-links/navigation page for performance efficiency resources, not detailed guidance or checklists. |
+| [Architecture pattern](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-architecture-pattern) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-methodology) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Get started](https://learn.microsoft.com/en-us/azure/well-architected/hpc/get-started-overview) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [HPC](https://learn.microsoft.com/en-us/azure/well-architected/hpc/) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

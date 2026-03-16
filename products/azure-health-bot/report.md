@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   integrations: Connecting Health Bot/Agent to channels (Teams, SMS, WhatsApp, Facebook),
     embedding web chat/voice, calling external APIs/OpenAPI, telemetry, auth, management
@@ -29,14 +29,14 @@ skill_description: Expert knowledge for Azure Health Bot development including b
 
 ## Summary
 
-- **Total Pages**: 77
-- **Fetched**: 77
+- **Total Pages**: 78
+- **Fetched**: 78
 - **Fetch Failed**: 0
 - **Classified**: 46
-- **Unclassified**: 31
+- **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 77
 - **Deleted Pages**: 0
@@ -48,13 +48,17 @@ skill_description: Expert knowledge for Azure Health Bot development including b
 |------|-------|------------|
 | architecture-patterns | 1 | 1.3% |
 | best-practices | 1 | 1.3% |
-| configuration | 14 | 18.2% |
+| configuration | 14 | 17.9% |
 | decision-making | 1 | 1.3% |
-| integrations | 20 | 26.0% |
-| security | 9 | 11.7% |
-| *(Unclassified)* | 31 | 40.3% |
+| integrations | 20 | 25.6% |
+| security | 9 | 11.5% |
+| *(Unclassified)* | 32 | 41.0% |
 
 ## Changes
+
+### New Pages
+
+- [Healthcare agent service for Microsoft Copilot M365](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-m365-integration)
 
 ## Classified Pages
 
@@ -142,3 +146,4 @@ skill_description: Expert knowledge for Azure Health Bot development including b
 | [Updates and Announcements](https://learn.microsoft.com/en-us/azure/health-bot/updates) | 0.20 | Release notes and announcements; useful but not a stable expert-knowledge skill type like limits, config, or troubleshooting. |
 | [Create your first healthcare agent service](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-createyourhealthcarebot) | 0.10 | Quickstart tutorial for creating a bot; step-by-step but no detailed configuration matrices, limits, or troubleshooting. |
 | [Healthcare agent service Overview](https://learn.microsoft.com/en-us/azure/health-bot/overview) | 0.10 | High-level overview of the healthcare agent service without product-specific limits, configs, or detailed patterns. |
+| [Healthcare agent service for Microsoft Copilot M365](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-m365-integration) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

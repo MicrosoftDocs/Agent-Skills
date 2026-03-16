@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: 'Guidance on managing signing certificates end-to-end: rotation,
     renewal, expiration handling, key protection, and lifecycle policies for Azure
@@ -30,8 +30,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 14
+- **Updated Pages**: 1
+- **Unchanged**: 13
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifact-signing/azure-artifact-signing.csv`
 
@@ -47,6 +47,11 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 | *(Unclassified)* | 6 | 42.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Sign a CI policy by using Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy)
+  - Updated: 2026-01-08T18:12:00.000Z → 2026-03-10T16:12:00.000Z
 
 ## Classified Pages
 
@@ -66,8 +71,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Revoke a certificate profile in Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-cert-revocation) | 0.45 | Covers revoking certificate profiles and implications; mainly procedural and conceptual without detailed config tables or error-code-based troubleshooting. |
-| [Sign a CI policy by using Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy) | 0.40 | How-to for signing CI policies; likely a step-by-step task guide without detailed configuration matrices, limits, or error mappings. |
 | [Artifact Signing trust models](https://learn.microsoft.com/en-us/azure/artifact-signing/concept-trust-models) | 0.30 | Conceptual explanation of trust models and scenarios; appears architectural/conceptual without quantified thresholds, matrices, or config tables. |
 | [Set up Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/quickstart) | 0.30 | Quickstart focuses on creating resources via portal/CLI; appears procedural without detailed config tables, limits, or product-specific patterns. |
 | [Frequently asked questions about Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/faq) | 0.25 | FAQ likely mixes conceptual and basic usage answers; description doesn’t indicate detailed limits, configs, or error-code-based troubleshooting. |
 | [What is the Artifact Signing service?](https://learn.microsoft.com/en-us/azure/artifact-signing/overview) | 0.20 | High-level overview of Artifact Signing; no concrete limits, configs, roles, or error details. |
+| [Sign a CI policy by using Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

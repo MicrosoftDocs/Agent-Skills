@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: 'Performance, security, migration, and tooling best practices for
     Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning,
@@ -40,16 +40,16 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 
 ## Summary
 
-- **Total Pages**: 309
-- **Fetched**: 309
+- **Total Pages**: 312
+- **Fetched**: 312
 - **Fetch Failed**: 0
-- **Classified**: 211
-- **Unclassified**: 98
+- **Classified**: 209
+- **Unclassified**: 103
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 308
+- **New Pages**: 3
+- **Updated Pages**: 8
+- **Unchanged**: 301
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -57,23 +57,43 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 7 | 2.3% |
+| architecture-patterns | 7 | 2.2% |
 | best-practices | 14 | 4.5% |
-| configuration | 86 | 27.8% |
-| decision-making | 9 | 2.9% |
+| configuration | 86 | 27.6% |
+| decision-making | 8 | 2.6% |
 | deployment | 8 | 2.6% |
-| integrations | 26 | 8.4% |
-| limits-quotas | 16 | 5.2% |
+| integrations | 26 | 8.3% |
+| limits-quotas | 15 | 4.8% |
 | security | 27 | 8.7% |
 | troubleshooting | 18 | 5.8% |
-| *(Unclassified)* | 98 | 31.7% |
+| *(Unclassified)* | 103 | 33.0% |
 
 ## Changes
 
+### New Pages
+
+- [March 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-march)
+- [From EDB Extended server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-enterprise-db-extended-server-offline)
+- [From EDB Extended server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-enterprise-db-extended-server-online)
+
 ### Updated Pages
 
-- [Monitor and tune overview](https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-monitoring)
-  - Updated: 2026-02-04T18:16:00.000Z → 2026-03-03T23:21:00.000Z
+- [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy)
+  - Updated: 2026-02-24T18:15:00.000Z → 2026-03-09T08:00:00.000Z
+- [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january)
+  - Updated: 2026-02-06T06:06:00.000Z → 2026-03-09T22:16:00.000Z
+- [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2)
+  - Updated: 2026-02-12T23:09:00.000Z → 2026-03-12T17:17:00.000Z
+- [Extended support](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/extended-support)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-11T17:16:00.000Z
+- [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-offline)
+  - Updated: 2025-11-06T12:04:00.000Z → 2026-03-11T08:00:00.000Z
+- [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-online)
+  - Updated: 2025-11-06T12:04:00.000Z → 2026-03-11T08:00:00.000Z
+- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/postgresql/)
+  - Updated: 2026-02-23T19:03:00Z → 2026-03-11T22:15:00Z
+- [Samples overview](https://learn.microsoft.com/en-us/azure/postgresql/)
+  - Updated: 2026-02-23T19:03:00Z → 2026-03-11T22:15:00Z
 
 ## Classified Pages
 
@@ -121,7 +141,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Optimize performance when using pgvector](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-optimize-performance-pgvector) | best-practices | 0.80 | Explicitly labeled as best practices; discusses limitations, tradeoffs, and concrete tuning (partitioning, indexing, search settings) specific to pgvector on Azure. |
 | [PgBouncer](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-pgbouncer) | configuration | 0.80 | PgBouncer parameter reference with tier-specific visibility (not supported on Burstable, only on GP/MO) and conditions on pgbouncer.enabled; this is detailed configuration and deployment constraint knowledge. |
 | [Possible errors when managing extensions](https://learn.microsoft.com/en-us/azure/postgresql/extensions/errors-extensions) | troubleshooting | 0.80 | Explicitly about possible errors when managing extensions; likely maps specific error messages or codes to causes and resolutions in Azure PostgreSQL. |
-| [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2) | limits-quotas | 0.80 | Premium SSD v2 documentation describes tunable capacity, throughput, and IOPS with specific numeric ranges and constraints, fitting limits-quotas. |
 | [Required user permissions](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-required-user-permissions) | security | 0.80 | Explicitly about required permissions; likely lists Azure roles, scopes, and possibly custom role definitions, which are concrete security/RBAC configuration details. |
 | [Troubleshoot CLI errors](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-troubleshoot-cli-errors) | troubleshooting | 0.80 | Troubleshooting guide for CLI issues; likely lists specific error messages/codes and corresponding fixes, which are unique to this product’s CLI usage. |
 | [Troubleshoot and identify slow running queries](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-identify-slow-queries) | troubleshooting | 0.80 | Troubleshooting article focused on identifying slow-running queries with Azure PostgreSQL-specific diagnostics and steps (symptom → diagnosis → resolution). |
@@ -177,7 +196,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Download PostgreSQL and upgrade logs](https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-configure-server-logs) | configuration | 0.70 | Describes configuring, listing, and downloading logs; such pages typically include specific configuration parameters (e.g., log settings, retention options) and default behaviors that are product-specific. |
 | [Drop extensions](https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-drop-extensions) | configuration | 0.70 | Describes dropping extensions with Azure-specific allowlisting requirements; involves concrete operational and configuration steps. |
 | [Error Handling](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-error-handling) | configuration | 0.70 | Error handling server-parameter reference; includes specific parameters controlling error behavior, which are configuration details. |
-| [Extended support](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/extended-support) | decision-making | 0.70 | Describes extended support offering, what it includes/excludes, and when to use it; helps plan upgrade timelines and support strategy. |
 | [File Locations](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-file-locations) | configuration | 0.70 | File locations parameter reference; contains specific configuration options and defaults, which are expert configuration knowledge. |
 | [Firewall rules](https://learn.microsoft.com/en-us/azure/postgresql/security/security-firewall-rules) | security | 0.70 | Firewall rules article for a specific service typically includes server-level rule names, IP range formats, and product-specific behavior (e.g., allow Azure services toggle), which are concrete security configuration details. |
 | [Full vacuum using pg_repack extension](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/how-to-perform-fullvacuum-pg-repack) | best-practices | 0.70 | How-to optimization guide for pg_repack on Azure Database for PostgreSQL flexible server with product-specific operational guidance and tuning steps, beyond generic PostgreSQL theory. |
@@ -318,11 +336,9 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Fabric mirroring](https://learn.microsoft.com/en-us/azure/postgresql/integration/concepts-fabric-mirroring) | 0.40 | Conceptual overview of Fabric mirroring; summary emphasizes benefits and scenarios, not configuration parameters, limits, or decision matrices. |
 | [From Amazon Aurora](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-aurora-offline) | 0.40 | Offline migration from Amazon Aurora tutorial; likely similar procedural guidance without extensive expert-only tables or error mappings. |
 | [From Amazon RDS](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-rds-offline) | 0.40 | Offline migration from Amazon RDS tutorial; primarily walkthrough content rather than configuration matrices or troubleshooting catalogs. |
-| [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-offline) | 0.40 | Offline migration from Google AlloyDB tutorial; similar to other migration tutorials, mostly procedural content. |
 | [From Google Cloud SQL for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-cloud-sql-offline) | 0.40 | Offline migration from Google Cloud SQL tutorial; appears to be a step-by-step guide rather than deep config or troubleshooting reference. |
 | [From an Azure VM or an on-premises PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-iaas-offline) | 0.40 | Step-by-step offline migration tutorial; likely procedural without dense config tables, limits, or error-code mappings beyond generic usage. |
 | [From an Azure VM or an on-premises PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-iaas-online) | 0.40 | Online migration from VM/on-prem tutorial; likely focused on steps rather than detailed config parameter catalogs or error-code mappings. |
-| [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january) | 0.40 | Monthly maintenance release notes usually list features and fixes but not structured limits, configs, or troubleshooting mappings. |
 | [Logical replication and logical decoding](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-logical) | 0.40 | Conceptual explanation of logical replication and decoding; summary does not indicate detailed configuration tables, limits, or product-specific thresholds. |
 | [Manage Azure resources with automation tasks](https://learn.microsoft.com/en-us/azure/postgresql/integration/create-automation-tasks) | 0.40 | Quickstart-style how-to for creating automation tasks; summary shows only basic scheduling concepts (Interval/Frequency) without detailed configuration tables, limits, or product-specific edge cases. |
 | [Migrate from Premium SSD to Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-migrate-ssd-to-ssd-v2) | 0.40 | Step-by-step migration via point-in-time restore; primarily procedural without detailed config tables, limits, or error-code troubleshooting. |
@@ -342,7 +358,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Delete on-demand backups](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-delete-backups) | 0.35 | Describes deleting on-demand backups; aside from reiterating retention behavior, it’s mostly procedural without detailed numeric tables or config matrices. |
 | [From Amazon Aurora](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-aurora-online) | 0.35 | Online migration from Amazon Aurora tutorial; primarily a procedural walkthrough. |
 | [From Amazon RDS](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-rds-online) | 0.35 | Online migration from Amazon RDS tutorial; appears similar in nature to other how-to migration guides. |
-| [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-online) | 0.35 | Online migration from Google AlloyDB tutorial; similar procedural focus as other migration tutorials. |
 | [From Google Cloud SQL for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-cloud-sql-online) | 0.35 | Online migration from Google Cloud SQL tutorial; likely step-by-step instructions without dense expert reference material. |
 | [Migrating Oracle To Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/concepts-oracle-migration) | 0.35 | Conceptual article on Oracle to PostgreSQL migration benefits and context; not focused on specific numeric thresholds, configs, or error codes. |
 | [Migration stages](https://learn.microsoft.com/en-us/azure/postgresql/migrate/concepts-oracle-migration-stages) | 0.35 | Describes migration stages conceptually; likely process overview rather than detailed decision matrices or configuration references. |
@@ -368,7 +383,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Restore to latest restore point](https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-latest-restore-point) | 0.30 | How-to restore to latest restore point; step-by-step instructions without expert-only configuration or limits detail. |
 | [Switch over read replica to primary](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-switch-over-replica-to-primary) | 0.30 | Switchover how-to; summary suggests procedural guidance only, no numeric thresholds or config tables. |
 | [Troubleshooting guides](https://learn.microsoft.com/en-us/azure/postgresql/troubleshoot/concepts-troubleshooting-guides) | 0.30 | High-level description of troubleshooting guides integrated in the portal; appears to be a conceptual/navigation page without specific error codes or detailed mappings. |
-| [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy) | 0.30 | Version policy description is typically conceptual timelines and support statements without numeric limits, configs, or decision matrices. |
 | [Virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas-virtual-endpoints) | 0.30 | Overview of virtual endpoints behavior; no indication of config parameter tables, limits, or decision matrices. |
 | [Approve private endpoint connections](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-networking-servers-deployed-public-access-approve-private-endpoint) | 0.25 | Approve private endpoint connections; workflow-focused, not configuration matrices or quotas. |
 | [Delete firewall rules](https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-networking-servers-deployed-public-access-delete-firewall-rules) | 0.25 | Delete firewall rules tutorial; procedural content without expert-only configuration details. |
@@ -388,8 +402,17 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes) | 0.20 | Release notes summary page; mostly navigation to detailed notes, not structured as limits, configs, or troubleshooting guidance. |
 | [Show virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-show-virtual-endpoints) | 0.20 | Show virtual endpoints instructions; likely basic listing commands without deep config or limits. |
 | [Update virtual endpoints](https://learn.microsoft.com/en-us/azure/postgresql/read-replica/how-to-update-virtual-endpoints) | 0.20 | Update virtual endpoints tutorial; no evidence of expert-only configuration matrices or constraints. |
-| [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/postgresql/) | 0.10 | Landing/overview page for Azure Database for PostgreSQL; marketing and conceptual content, not detailed expert configuration or troubleshooting guidance. |
 | [Connection libraries](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-connection-libraries) | 0.10 | Lists libraries and drivers; catalog-style content without config parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-overview) | 0.10 | Conceptual generative AI overview; no product-specific limits, configs, or decision matrices. |
-| [Samples overview](https://learn.microsoft.com/en-us/azure/postgresql/) | 0.10 | Documentation landing page; marketing/overview content without detailed technical configuration, limits, or troubleshooting information. |
 | [What is Azure Database for PostgreSQL?](https://learn.microsoft.com/en-us/azure/postgresql/overview) | 0.10 | High-level product overview without concrete limits, configs, or error mappings. |
+| [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/postgresql/) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Extended support](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/extended-support) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [From EDB Extended server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-enterprise-db-extended-server-offline) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [From EDB Extended server](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-enterprise-db-extended-server-online) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-offline) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [From Google AlloyDB for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/tutorial-migration-service-alloy-db-online) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [January 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-january) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [March 2026](https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/2026-march) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Premium SSD v2](https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Samples overview](https://learn.microsoft.com/en-us/azure/postgresql/) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

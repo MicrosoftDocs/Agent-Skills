@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   best-practices: Guidance on building efficient Dev Box images, including structuring
     image definitions and pre-warming Visual Studio caches to speed up developer environments.
@@ -38,8 +38,8 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 64
+- **Updated Pages**: 1
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -57,6 +57,11 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
 | *(Unclassified)* | 20 | 31.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement)
+  - Updated: 2025-11-06T05:33:00.000Z → 2026-03-11T17:32:00.000Z
 
 ## Classified Pages
 
@@ -130,4 +135,4 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
 | [Tutorial: Get started with the Dev Box MCP Server](https://learn.microsoft.com/en-us/azure/dev-box/tutorial-get-started-dev-box-mcp-server) | 0.30 | Tutorial-style usage of Dev Box MCP Server with natural language operations; likely step-by-step but not focused on configuration tables, limits, or error-code-based troubleshooting. |
 | [What is Microsoft Dev Box?](https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box) | 0.20 | High-level product overview of Microsoft Dev Box; no detailed limits, configuration tables, or error/diagnostic specifics. |
 | [Roadmap for Microsoft Dev Box](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-roadmap) | 0.10 | Roadmap/marketing-style future features list; not configuration, limits, or troubleshooting content. |
-| [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement) | 0.10 | Announcement of transition to Windows 365; business/positioning content without technical expert details. |
+| [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |

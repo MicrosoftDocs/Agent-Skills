@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-16'
 category_descriptions:
   configuration: Configuring Container Apps environments, networking, ingress, scaling,
     revisions, storage, monitoring/logging, Dapr, Java features, and dynamic session
@@ -40,16 +40,16 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 
 ## Summary
 
-- **Total Pages**: 203
-- **Fetched**: 203
+- **Total Pages**: 204
+- **Fetched**: 204
 - **Fetch Failed**: 0
-- **Classified**: 137
-- **Unclassified**: 66
+- **Classified**: 127
+- **Unclassified**: 77
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 203
+- **New Pages**: 1
+- **Updated Pages**: 11
+- **Unchanged**: 192
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -59,16 +59,45 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 |------|-------|------------|
 | architecture-patterns | 4 | 2.0% |
 | best-practices | 3 | 1.5% |
-| configuration | 44 | 21.7% |
+| configuration | 40 | 19.6% |
 | decision-making | 12 | 5.9% |
-| deployment | 7 | 3.4% |
-| integrations | 23 | 11.3% |
+| deployment | 6 | 2.9% |
+| integrations | 20 | 9.8% |
 | limits-quotas | 2 | 1.0% |
-| security | 31 | 15.3% |
+| security | 29 | 14.2% |
 | troubleshooting | 11 | 5.4% |
-| *(Unclassified)* | 66 | 32.5% |
+| *(Unclassified)* | 77 | 37.7% |
 
 ## Changes
+
+### New Pages
+
+- [Use Azure Front Door and Private Link](https://learn.microsoft.com/en-us/azure/container-apps/front-door-custom-virtual-network-private-link)
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ai-integration)
+  - Updated: 2025-10-13T22:14:00.000Z → 2026-03-04T23:27:00.000Z
+- [Usage](https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage)
+  - Updated: 2026-02-24T23:11:00.000Z → 2026-03-13T22:12:00.000Z
+- [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool)
+  - Updated: 2025-04-07T22:02:00.000Z → 2026-03-12T22:17:00.000Z
+- [Code interpreter sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter)
+  - Updated: 2026-02-20T18:12:00.000Z → 2026-03-13T22:12:00.000Z
+- [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container)
+  - Updated: 2025-04-07T22:02:00.000Z → 2026-03-13T22:12:00.000Z
+- [Google](https://learn.microsoft.com/en-us/azure/container-apps/authentication-google)
+  - Updated: 2022-05-24T12:53:00.000Z → 2024-11-19T23:02:00.000Z
+- [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns)
+  - Updated: 2026-01-13T18:33:00.000Z → 2026-03-06T17:59:00.000Z
+- [Python code interpreter with MCP](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-python-mcp)
+  - Updated: 2026-02-27T06:11:00.000Z → 2026-03-13T22:12:00.000Z
+- [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines)
+  - Updated: 2024-10-20T08:00:00.000Z → 2026-03-12T22:17:00.000Z
+- [KEDA scaling mappings reference](https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings)
+  - Updated: 2026-01-20T23:26:00.000Z → 2026-03-12T05:52:00.000Z
+- [Integrate with Azure Front Door](https://learn.microsoft.com/en-us/azure/container-apps/how-to-integrate-with-azure-front-door)
+  - Updated: 2025-09-30T22:16:00.000Z → 2026-03-04T12:31:00.000Z
 
 ## Classified Pages
 
@@ -85,7 +114,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Enable token authentication for Dapr requests](https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token) | security | 0.86 | Details the APP_API_TOKEN environment variable, how Dapr injects and uses it, token rotation behavior, and how apps should validate it, which is highly specific security configuration. |
 | [Facebook](https://learn.microsoft.com/en-us/azure/container-apps/authentication-facebook) | security | 0.85 | Shows how to configure Facebook as an auth provider with Container Apps–specific settings and callback configuration. |
 | [GitHub](https://learn.microsoft.com/en-us/azure/container-apps/authentication-github) | security | 0.85 | Covers GitHub OAuth configuration details and Container Apps auth settings, which are product-specific. |
-| [Google](https://learn.microsoft.com/en-us/azure/container-apps/authentication-google) | security | 0.85 | Provides Google auth provider configuration steps and Container Apps–specific auth settings. |
 | [Manage secrets](https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets) | security | 0.85 | Describes secret storage, revision behavior, and use in scale rules; product-specific security configuration and gotchas. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/authentication) | security | 0.85 | Describes Container Apps Easy Auth features and provider-specific configuration, which are product-specific security settings. |
 | [Reduce cold-start times](https://learn.microsoft.com/en-us/azure/container-apps/cold-start) | best-practices | 0.85 | Provides concrete, product-specific recommendations to reduce cold-start time (image size, init patterns, scaling behavior) beyond generic theory. |
@@ -107,11 +135,9 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Environment-level configuration](https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration) | configuration | 0.80 | Provides environment-wide ingress configuration options, routing control, and performance/deployment strategy implications, which are detailed configuration settings. |
 | [Heroku migration overview](https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview) | decision-making | 0.80 | Provides concept mapping, service equivalents, cost comparison, and pitfalls to guide migration decisions between Heroku and Container Apps. |
 | [Java Quarkus app with Postgres DB](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database) | security | 0.80 | Tutorial focuses on managed identity and Service Connector for PostgreSQL; likely includes specific role assignments, connection settings, and identity configuration, which are security-focused. |
-| [KEDA scaling mappings reference](https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings) | integrations | 0.80 | Explains how Functions trigger parameters translate into KEDA scaling configs; this is a detailed integration mapping between two services with parameter-level behavior. |
 | [Logging options](https://learn.microsoft.com/en-us/azure/container-apps/log-options) | configuration | 0.80 | Details log destinations, categories, and environment-level settings; includes product-specific configuration choices and behaviors. |
 | [Migrate from Functions v1 to v2](https://learn.microsoft.com/en-us/azure/container-apps/migrate-functions) | decision-making | 0.80 | Migration guide comparing v1 vs v2 models, why to migrate, and how; includes decision and migration path guidance specific to this platform. |
 | [OpenTelemetry agents](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents) | configuration | 0.80 | Explains configuring OTel data agents, destinations, and wiring in Container Apps; includes product-specific parameters and routing behavior. |
-| [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns) | security | 0.80 | Covers Private Link-based private endpoints, DNS zone setup, plan support (Consumption vs Dedicated), and cost implications, which are detailed security/networking configuration. |
 | [Use storage mounts](https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts) | configuration | 0.80 | Details supported storage types, mount behavior, and constraints (for example, disallowed services, naming gotchas), which are product-specific configuration details. |
 | [Virtual network configuration](https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks) | configuration | 0.80 | Explains using existing VNets, integration with Application Gateway, NSGs, and private endpoints for Container Apps, which is detailed networking configuration. |
 | [Components overview](https://learn.microsoft.com/en-us/azure/container-apps/dapr-components) | configuration | 0.78 | Explains environment-level Dapr components, their lifecycle, and configuration in Container Apps, which is detailed component configuration knowledge. |
@@ -127,7 +153,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Deploy using the Dapr extension for Azure Functions](https://learn.microsoft.com/en-us/azure/container-apps/dapr-functions-extension) | integrations | 0.76 | Shows how to integrate Azure Functions with Dapr APIs via triggers/bindings in Container Apps, involving specific binding/trigger configuration parameters unique to this integration. |
 | [Securing a custom VNET with an NSG](https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration) | security | 0.76 | Explains NSG rules, UDR support, and outbound firewall integration specific to Container Apps workloads, which are concrete security/networking settings. |
 | [.NET app with Blob Storage](https://learn.microsoft.com/en-us/azure/container-apps/service-connector) | integrations | 0.75 | Shows how to connect to Blob Storage via Service Connector; this feature has product-specific connection configuration and parameters, fitting integrations. |
-| [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines) | deployment | 0.75 | Shows how to wire Azure Pipelines to publish revisions; includes CI/CD configuration specific to Container Apps and revision behavior. |
 | [Billing](https://learn.microsoft.com/en-us/azure/container-apps/billing) | decision-making | 0.75 | Billing article will include plan-specific pricing dimensions, what is billed where, and how features like private endpoints incur charges—used for cost-based decision making between plans and features. |
 | [Compare container options in Azure](https://learn.microsoft.com/en-us/azure/container-apps/compare-options) | decision-making | 0.75 | Compares Container Apps with ACI, App Service, Functions, and AKS for different scenarios; provides guidance on when to choose each service, matching decision-making. |
 | [Connect to Config Server for Spring](https://learn.microsoft.com/en-us/azure/container-apps/java-config-server) | integrations | 0.75 | Shows how configuration values flow from GitHub via Config Server to apps using bindings; includes component configuration and binding parameters unique to this service. |
@@ -162,7 +187,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Deployment labels](https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels) | configuration | 0.70 | Covers enabling and using deployment labels like dev/staging/prod; involves specific settings and parameters for label configuration. |
 | [Deployment options](https://learn.microsoft.com/en-us/azure/container-apps/code-to-cloud-options) | decision-making | 0.70 | Helps select between deployment options (editor, portal, CLI, pipelines) based on team needs; this is explicit deployment option decision guidance. |
 | [GPU types](https://learn.microsoft.com/en-us/azure/container-apps/gpu-types) | decision-making | 0.70 | Compares Nvidia T4 vs A100 for Container Apps workloads; intended to help choose GPU type based on technical differences and optimization needs, fitting decision-making. |
-| [Integrate with Azure Front Door](https://learn.microsoft.com/en-us/azure/container-apps/how-to-integrate-with-azure-front-door) | integrations | 0.70 | Front Door integration over Private Link requires product-specific endpoint configuration, origin settings, and private link resource parameters that are concrete integration patterns, not just a tutorial. |
 | [Java metrics](https://learn.microsoft.com/en-us/azure/container-apps/java-metrics) | configuration | 0.70 | Lists JVM metrics exposed by the platform and how to configure them; metric names and configuration are product-specific observability settings. |
 | [JavaScript code interpreter](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-nodejs) | integrations | 0.70 | Tutorial for running JavaScript through an HTTP API backed by dynamic sessions; includes concrete API usage and configuration patterns. |
 | [LangChain](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-langchain) | integrations | 0.70 | Integration tutorial between LangChain agents and dynamic sessions; expected to show concrete configuration and code patterns unique to this integration. |
@@ -182,7 +206,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Scale with Java metrics](https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-scale-with-keda) | configuration | 0.70 | Shows how to define custom KEDA scale rules based on Java metrics; includes rule schema and metric configuration unique to this platform. |
 | [Semantic Kernel](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-semantic-kernel) | integrations | 0.70 | Shows Semantic Kernel integration with dynamic sessions; likely includes SDK configuration and parameters unique to this scenario. |
 | [Service discovery resiliency](https://learn.microsoft.com/en-us/azure/container-apps/service-discovery-resiliency) | configuration | 0.70 | Describes Container Apps–specific resiliency policy configuration (per-request policies, supported directions, and limitations like no Dapr service invocation support), which are detailed configuration behaviors. |
-| [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool) | configuration | 0.70 | Focuses on session pools and their lifecycle management; expected to detail pool configuration options and parameters unique to this feature. |
 | [Set dynamic logger level](https://learn.microsoft.com/en-us/azure/container-apps/java-dynamic-log-level) | troubleshooting | 0.70 | Focuses on a diagnostics tool for Java with dynamic logger level changes; includes platform-specific commands/settings and symptom-to-diagnosis logging patterns. |
 | [Set up custom domain with existing certificate](https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates) | security | 0.70 | Details managing custom domains and certificates with platform-specific constraints (DNS suffix interactions) for secure ingress. |
 | [Shell session](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell) | integrations | 0.70 | Demonstrates deploying a shell session pool and using the Dynamic Sessions API; includes specific API calls and ARM template parameters. |
@@ -197,17 +220,13 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Blue/Green deployment](https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment) | best-practices | 0.66 | Applies blue-green deployment strategy specifically to Container Apps, including how to route traffic between environments/revisions, which is actionable product-specific practice beyond generic theory. |
 | [Alerts](https://learn.microsoft.com/en-us/azure/container-apps/alerts) | configuration | 0.65 | Shows how to configure metric and log-based alerts for Container Apps; includes product-specific alert rule configuration steps. |
 | [Application logging](https://learn.microsoft.com/en-us/azure/container-apps/logging) | configuration | 0.65 | Describes specific logging categories and how to configure them; likely includes product-specific logging settings and options. |
-| [Code interpreter sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter) | configuration | 0.65 | Describes how to run code interpreter sessions with dynamic sessions; likely includes specific configuration for interpreter containers and isolation settings. |
 | [Compose for agents](https://learn.microsoft.com/en-us/azure/container-apps/compose-agent) | deployment | 0.65 | Covers a specific deployment mechanism (Docker’s Compose for Agents) and how the az CLI extension translates compose files into Container Apps resources, including identity and scaling handling—deployment-specific behavior unique to this platform. |
-| [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container) | configuration | 0.65 | Explains how to define custom container sandboxes for sessions; expected to include container image, resource, and session configuration parameters. |
 | [Environment](https://learn.microsoft.com/en-us/azure/container-apps/environment) | decision-making | 0.65 | Includes criteria for when to use single vs multiple environments, which is environment topology decision guidance. |
 | [Launch your first Java microservice apps with managed Java components](https://learn.microsoft.com/en-us/azure/container-apps/java-microservice-get-started) | architecture-patterns | 0.65 | Describes a concrete microservices architecture (PetClinic) using managed Java components for config, discovery, health, and metrics—product-specific pattern for this platform. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/container-apps/metrics) | configuration | 0.65 | Describes specific metrics collected and how to retrieve them via CLI/PowerShell; product-specific metric names and usage patterns. |
 | [Microservices](https://learn.microsoft.com/en-us/azure/container-apps/microservices) | architecture-patterns | 0.65 | Describes how to map microservices to Container Apps constructs (environment, app, containers, Functions, Spring Apps), which is a product-specific architecture pattern. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-petclinic-ai-overview) | architecture-patterns | 0.65 | Explains a specific RAG-based AI architecture on Container Apps with Azure OpenAI and Spring AI; product-specific pattern and component interactions beyond generic RAG concepts. |
-| [Python code interpreter with MCP](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-python-mcp) | integrations | 0.65 | Tutorial for platform-managed MCP server with dynamic sessions likely includes preview API version, specific request/response shapes, and configuration parameters (mcpServerSettings) that are product- and version-specific integration details. |
 | [Query managed component logs](https://learn.microsoft.com/en-us/azure/container-apps/java-component-logs) | configuration | 0.65 | Explains how to query component logs, including log categories, queries, and locations specific to managed Java components on this platform. |
-| [Usage](https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage) | configuration | 0.65 | Shows how to manage and interact with sessions and session pools; likely includes specific API/ARM parameters and settings for session behavior, fitting configuration. |
 | [With a job](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-event-driven-jobs) | integrations | 0.65 | Tutorial for event-driven jobs triggered by Azure Storage queues; includes job configuration and event source parameters, which are integration details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-manage-portal) | configuration | 0.64 | Portal-based management of workload profiles with concrete UI configuration options for Container Apps environments, which is detailed configuration guidance. |
 | [Create a functions app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/functions-container-apps) | deployment | 0.60 | Quickstart for deploying Functions in custom Linux containers to Container Apps; likely includes product-specific deployment requirements (image layout, ports, env vars). |
@@ -259,7 +278,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Dockerfile](https://learn.microsoft.com/en-us/azure/container-apps/java-get-started-dockerfile) | 0.30 | Step-by-step tutorial deploying a sample via Dockerfile; likely uses generic commands without deep config matrices or limits. |
 | [Functions](https://learn.microsoft.com/en-us/azure/container-apps/functions-overview) | 0.30 | Overview of Functions on Container Apps; appears conceptual without specific configuration mappings or limits in the summary. |
 | [Github repository](https://learn.microsoft.com/en-us/azure/container-apps/java-get-started-github-repository) | 0.30 | Tutorial deploying via GitHub repo; mostly workflow steps rather than configuration reference or quotas. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ai-integration) | 0.30 | AI integration overview; describes capabilities and scenarios without detailed configuration parameters or decision matrices. |
 | [Update a container app deployed from code](https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code) | 0.30 | Tutorial for updating an app; appears to be a continuation of basic deployment steps without advanced config or limits. |
 | [Workflow](https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview) | 0.30 | High-level overview of workflow options and concepts in Container Apps; no concrete limits, configs, or error mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal) | 0.25 | Portal quickstart for jobs; describes concepts and basic creation steps, not detailed configuration or quotas. |
@@ -282,3 +300,15 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | [Use serverless containers](https://learn.microsoft.com/en-us/azure/container-apps/start-serverless-containers) | 0.10 | Conceptual overview of serverless containers and scaling; lacks specific configuration parameters or numeric thresholds. |
 | [What's new](https://learn.microsoft.com/en-us/azure/container-apps/whats-new) | 0.10 | What's new page is a changelog/announcements; not a stable expert-knowledge reference for configuration, limits, or troubleshooting. |
 | [Azure Container Apps extension release notes](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-extension-release-notes) | - | Extension release notes behind authorization; even if detailed, they are versioned change logs, not core skill reference content. |
+| [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Code interpreter sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Google](https://learn.microsoft.com/en-us/azure/container-apps/authentication-google) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Integrate with Azure Front Door](https://learn.microsoft.com/en-us/azure/container-apps/how-to-integrate-with-azure-front-door) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [KEDA scaling mappings reference](https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ai-integration) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Python code interpreter with MCP](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-python-mcp) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Usage](https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
+| [Use Azure Front Door and Private Link](https://learn.microsoft.com/en-us/azure/container-apps/front-door-custom-virtual-network-private-link) | - | LLM error: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} |
