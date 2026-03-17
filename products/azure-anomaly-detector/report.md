@@ -20,8 +20,15 @@ category_descriptions:
     inference.
 skill_description: Expert knowledge for Azure AI Anomaly Detector development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
-  configuration, and deployment. Use when building, debugging, or optimizing Azure
-  AI Anomaly Detector applications. Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
+  configuration, and deployment. Use when using univariate/multivariate APIs, Docker/IoT
+  Edge containers, predictive maintenance flows, or regional limits, and other Azure
+  AI Anomaly Detector related development tasks. Not for Azure AI Metrics Advisor
+  (use azure-metrics-advisor), Azure Monitor (use azure-monitor), Azure Machine Learning
+  (use azure-machine-learning).
+use_when: Use when using univariate/multivariate APIs, Docker/IoT Edge containers,
+  predictive maintenance flows, or regional limits, and other Azure AI Anomaly Detector
+  related development tasks.
+confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
   Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure AI Anomaly Detector Crawl Report

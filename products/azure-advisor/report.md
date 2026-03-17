@@ -20,9 +20,15 @@ category_descriptions:
     are supported.
 skill_description: Expert knowledge for Azure Advisor development including best practices,
   decision making, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Advisor applications.
+  patterns. Use when configuring Advisor alerts, workbooks, RBAC access, bulk fixes,
+  or Resource Graph/Kusto queries, and other Azure Advisor related development tasks.
   Not for Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
-  Azure Policy (use azure-policy), Azure Security (use azure-security).
+  Azure Policy (use azure-policy), Azure Service Health (use azure-service-health).
+use_when: Use when configuring Advisor alerts, workbooks, RBAC access, bulk fixes,
+  or Resource Graph/Kusto queries, and other Azure Advisor related development tasks.
+confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
+  Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health
+  (use azure-service-health).
 ---
 # Azure Advisor Crawl Report
 

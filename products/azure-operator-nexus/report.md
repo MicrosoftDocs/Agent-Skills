@@ -26,11 +26,18 @@ category_descriptions:
     with Nexus network/compute.'
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when building, debugging,
-  or optimizing Azure Operator Nexus applications. Not for Azure Operator Insights
-  (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager),
-  Azure Network Function Manager (use azure-network-function-manager), Azure Networking
-  (use azure-networking).
+  limits & quotas, security, configuration, and deployment. Use when configuring Nexus
+  fabric/VRF/BGP, Nexus AKS clusters, near-edge storage, bare metal/VM recovery, or
+  upgrades, and other Azure Operator Nexus related development tasks. Not for Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Network Function
+  Manager (use azure-network-function-manager), Azure Virtual Network (use azure-virtual-network),
+  Azure Networking (use azure-networking).
+use_when: Use when configuring Nexus fabric/VRF/BGP, Nexus AKS clusters, near-edge
+  storage, bare metal/VM recovery, or upgrades, and other Azure Operator Nexus related
+  development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Network Function Manager (use azure-network-function-manager), Azure Virtual
+  Network (use azure-virtual-network), Azure Networking (use azure-networking).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -44,8 +51,8 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 215
+- **Updated Pages**: 0
+- **Unchanged**: 217
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -64,13 +71,6 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | *(Unclassified)* | 58 | 26.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cluster Inspect Action](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action)
-  - Updated: 2026-02-26T23:04:00.000Z → 2026-03-16T22:04:00.000Z
-- [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-16T22:04:00.000Z
 
 ## Classified Pages
 

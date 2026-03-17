@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Language development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure AI Language applications. Not for Azure
-  AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence),
+  building CLU intents, custom NER, text classification, sentiment/summarization,
+  or custom question answering, and other Azure AI Language related development tasks.
+  Not for Azure AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search),
   Azure AI Speech (use azure-speech), Azure Translator (use azure-translator).
+use_when: Use when building CLU intents, custom NER, text classification, sentiment/summarization,
+  or custom question answering, and other Azure AI Language related development tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Search
+  (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator
+  (use azure-translator).
 ---
 # Azure AI Language Crawl Report
 

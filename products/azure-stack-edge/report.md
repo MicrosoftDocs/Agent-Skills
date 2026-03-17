@@ -26,9 +26,16 @@ category_descriptions:
     guidelines.'
 skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Stack Edge applications. Not for Azure Data Box (use azure-data-box-family), Azure
-  IoT Edge (use azure-iot-edge), Azure Local (use azure-local).
+  & coding patterns, and deployment. Use when running IoT Edge or GPU/Kubernetes apps,
+  configuring VMs/storage/networking, or managing device updates, and other Azure
+  Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
+  Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when running IoT Edge or GPU/Kubernetes apps, configuring VMs/storage/networking,
+  or managing device updates, and other Azure Stack Edge related development tasks.
+confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
+  Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Stack Edge Crawl Report
 

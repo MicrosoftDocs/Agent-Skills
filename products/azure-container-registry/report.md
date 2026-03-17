@@ -28,10 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Container Registry applications.
-  Not for Azure Container Apps (use azure-container-apps), Azure Container Instances
-  (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Use when using ACR Tasks, geo-replication/connected registries, Defender scans,
+  Notation signing, or AKS/ACI pulls, and other Azure Container Registry related development
+  tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
+  Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when using ACR Tasks, geo-replication/connected registries, Defender
+  scans, Notation signing, or AKS/ACI pulls, and other Azure Container Registry related
+  development tasks.
+confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
+  Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure Container Registry Crawl Report
 

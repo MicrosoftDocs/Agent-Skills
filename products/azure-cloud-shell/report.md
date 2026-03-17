@@ -9,9 +9,17 @@ category_descriptions:
   security: Securing Cloud Shell storage accounts, including multi-user access patterns,
     network isolation, and configuring private endpoints for locked-down access.
 skill_description: Expert knowledge for Azure Cloud Shell development including troubleshooting,
-  limits & quotas, and security. Use when building, debugging, or optimizing Azure
-  Cloud Shell applications. Not for Azure Portal (use azure-portal), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager).
+  limits & quotas, and security. Use when handling Cloud Shell storage mounts, session
+  limits, private VNet access, or secure private endpoints, and other Azure Cloud
+  Shell related development tasks. Not for Azure Portal (use azure-portal), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use
+  azure-kubernetes-service), Azure Functions (use azure-functions).
+use_when: Use when handling Cloud Shell storage mounts, session limits, private VNet
+  access, or secure private endpoints, and other Azure Cloud Shell related development
+  tasks.
+confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Functions (use azure-functions).
 ---
 # Azure Cloud Shell Crawl Report
 

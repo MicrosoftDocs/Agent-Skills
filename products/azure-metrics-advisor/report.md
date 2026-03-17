@@ -14,8 +14,15 @@ category_descriptions:
     behavior for your instance.'
 skill_description: Expert knowledge for Azure AI Metrics Advisor development including
   decision making, security, configuration, and integrations & coding patterns. Use
-  when building, debugging, or optimizing Azure AI Metrics Advisor applications. Not
-  for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor).
+  when configuring data feeds, tuning anomaly detection, managing alert hooks, or
+  integrating the Metrics Advisor APIs, and other Azure AI Metrics Advisor related
+  development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
+  Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+use_when: Use when configuring data feeds, tuning anomaly detection, managing alert
+  hooks, or integrating the Metrics Advisor APIs, and other Azure AI Metrics Advisor
+  related development tasks.
+confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
+  Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure AI Metrics Advisor Crawl Report
 

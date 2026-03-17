@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Machine Learning development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Machine Learning applications.
-  Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Databricks
-  (use azure-databricks), Azure HDInsight (use azure-hdinsight), Azure Synapse Analytics
-  (use azure-synapse-analytics).
+  Use when using Azure ML jobs/endpoints, AutoML, Prompt Flow, MLflow, or managed
+  online/batch deployments, and other Azure Machine Learning related development tasks.
+  Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use
+  azure-data-science-vm).
+use_when: Use when using Azure ML jobs/endpoints, AutoML, Prompt Flow, MLflow, or
+  managed online/batch deployments, and other Azure Machine Learning related development
+  tasks.
+confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight),
+  Azure Data Science Virtual Machines (use azure-data-science-vm).
 ---
 # Azure Machine Learning Crawl Report
 

@@ -24,9 +24,16 @@ category_descriptions:
     platform keys) for your workloads.
 skill_description: Expert knowledge for Azure Security development including troubleshooting,
   best practices, decision making, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Security
-  applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure
-  DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall),
+  patterns, and deployment. Use when securing AKS images, SBOM/Notation workflows,
+  antimalware/firewalls, Customer Lockbox, or CMK/Key Vault, and other Azure Security
+  related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
+  Azure Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when securing AKS images, SBOM/Notation workflows, antimalware/firewalls,
+  Customer Lockbox, or CMK/Key Vault, and other Azure Security related development
+  tasks.
+confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
   Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Security Crawl Report

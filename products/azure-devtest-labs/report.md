@@ -30,9 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DevTest Labs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure DevTest Labs applications. Not for Azure
-  Lab Services (use azure-lab-services), Azure Dev Box (use azure-dev-box), Azure
-  Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
+  managing DevTest Labs VMs, images/artifacts, ARM/CLI automation, RBAC/Key Vault
+  security, or hub-spoke lab setups, and other Azure DevTest Labs related development
+  tasks. Not for Azure Dev Box (use azure-dev-box), Azure Lab Services (use azure-lab-services),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use
+  azure-virtual-desktop).
+use_when: Use when managing DevTest Labs VMs, images/artifacts, ARM/CLI automation,
+  RBAC/Key Vault security, or hub-spoke lab setups, and other Azure DevTest Labs related
+  development tasks.
+confusable_not_for: Not for Azure Dev Box (use azure-dev-box), Azure Lab Services
+  (use azure-lab-services), Azure Virtual Machines (use azure-virtual-machines), Azure
+  Virtual Desktop (use azure-virtual-desktop).
 ---
 # Azure DevTest Labs Crawl Report
 

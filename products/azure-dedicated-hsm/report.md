@@ -16,9 +16,15 @@ category_descriptions:
     for Azure Dedicated HSM.
 skill_description: Expert knowledge for Azure Dedicated HSM development including
   troubleshooting, decision making, architecture & design patterns, security, and
-  deployment. Use when building, debugging, or optimizing Azure Dedicated HSM applications.
-  Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault),
-  Azure Payment Hsm (use azure-payment-hsm).
+  deployment. Use when sizing HSM clusters, configuring VNets/ExpressRoute, planning
+  Managed HSM migration, or resolving vendor support issues, and other Azure Dedicated
+  HSM related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure
+  Key Vault (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+use_when: Use when sizing HSM clusters, configuring VNets/ExpressRoute, planning Managed
+  HSM migration, or resolving vendor support issues, and other Azure Dedicated HSM
+  related development tasks.
+confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault
+  (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
 ---
 # Azure Dedicated HSM Crawl Report
 

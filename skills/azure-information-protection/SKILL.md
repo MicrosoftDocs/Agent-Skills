@@ -1,6 +1,6 @@
 ---
 name: azure-information-protection
-description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when building, debugging, or optimizing Azure Information Protection applications. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Role-based access control (use azure-rbac).
+description: Expert knowledge for Azure Information Protection development including best practices, decision making, configuration, and deployment. Use when choosing Azure RMS vs AD RMS, migrating keys/policies, configuring RMS connector/MSIPC, or monitoring RMS logs, and other Azure Information Protection related development tasks. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Communication Services applications.
-  Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use
-  azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure
-  Web PubSub (use azure-web-pubsub).
+  Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers, Teams
+  interop, or Job Router/contact centers, and other Azure Communication Services related
+  development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
+  Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
+  Azure Web PubSub (use azure-web-pubsub).
+use_when: Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers,
+  Teams interop, or Job Router/contact centers, and other Azure Communication Services
+  related development tasks.
+confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
+  Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
+  Azure Web PubSub (use azure-web-pubsub).
 ---
 # Azure Communication Services Crawl Report
 

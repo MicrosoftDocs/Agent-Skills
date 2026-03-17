@@ -22,8 +22,15 @@ category_descriptions:
     with on-premises or hybrid networks
 skill_description: Expert knowledge for Azure Private Link development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, and configuration. Use when building, debugging, or optimizing Azure Private
-  Link applications. Not for Azure Virtual Network (use azure-virtual-network), Azure
+  security, and configuration. Use when configuring Private Endpoints, DNS zones/Resolver,
+  NSPs, Azure Firewall inspection, or hybrid name resolution, and other Azure Private
+  Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway
+  (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+use_when: Use when configuring Private Endpoints, DNS zones/Resolver, NSPs, Azure
+  Firewall inspection, or hybrid name resolution, and other Azure Private Link related
+  development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure VPN Gateway (use
   azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
 ---

@@ -30,10 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Managed Instance development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure SQL Managed Instance applications.
-  Not for Azure SQL Database (use azure-sql-database), SQL Server on Azure Virtual
-  Machines (use azure-sql-virtual-machines), Azure Database for MySQL (use azure-database-mysql),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
+  Use when using MI Link, geo-replication, Entra/Kerberos auth, XEvents/Intelligent
+  Insights, or IaC (ARM/Bicep/Terraform), and other Azure SQL Managed Instance related
+  development tasks. Not for Azure SQL Database (use azure-sql-database), SQL Server
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use
+  azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+use_when: Use when using MI Link, geo-replication, Entra/Kerberos auth, XEvents/Intelligent
+  Insights, or IaC (ARM/Bicep/Terraform), and other Azure SQL Managed Instance related
+  development tasks.
+confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Server
+  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use
+  azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 ---
 # Azure SQL Managed Instance Crawl Report
 

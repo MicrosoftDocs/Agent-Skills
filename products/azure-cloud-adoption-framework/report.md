@@ -31,8 +31,12 @@ category_descriptions:
 skill_description: Expert guidance for planning and executing cloud adoption using
   Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones,
   adoption patterns, governance, security, operations & management, organization &
-  teams, and adoption scenarios. Use when defining cloud strategy, designing landing
-  zones, establishing governance, or migrating workloads to Azure.
+  teams, and adoption scenarios. Use when designing Azure landing zones, AVS/AKS,
+  SAP/Oracle migrations, AVD/VDI, or AI/analytics platforms, and other Azure Cloud
+  Adoption Framework related development tasks.
+use_when: Use when designing Azure landing zones, AVS/AKS, SAP/Oracle migrations,
+  AVD/VDI, or AI/analytics platforms, and other Azure Cloud Adoption Framework related
+  development tasks.
 ---
 # Azure Cloud Adoption Framework Crawl Report
 

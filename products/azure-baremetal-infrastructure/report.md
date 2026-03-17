@@ -7,11 +7,18 @@ category_descriptions:
   decision-making: Guidance on selecting NC2 on Azure regions and hardware SKUs, including
     capacity, performance, and availability considerations for deployment planning.
 skill_description: Expert knowledge for Azure Baremetal Infrastructure development
-  including decision making, and architecture & design patterns. Use when building,
-  debugging, or optimizing Azure Baremetal Infrastructure applications. Not for Azure
+  including decision making, and architecture & design patterns. Use when choosing
+  NC2 regions/SKUs, planning BareMetal topologies, or integrating NC2 with Azure networking/services,
+  and other Azure Baremetal Infrastructure related development tasks. Not for Azure
   Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines),
-  Azure VMware Solution (use azure-vmware-solution), SAP HANA on Azure Large Instances
-  (use azure-sap).
+  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SAP HANA on Azure Large
+  Instances (use azure-sap).
+use_when: Use when choosing NC2 regions/SKUs, planning BareMetal topologies, or integrating
+  NC2 with Azure networking/services, and other Azure Baremetal Infrastructure related
+  development tasks.
+confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets
+  (use azure-vm-scalesets), SAP HANA on Azure Large Instances (use azure-sap).
 ---
 # Azure Baremetal Infrastructure Crawl Report
 

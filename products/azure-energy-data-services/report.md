@@ -24,10 +24,17 @@ category_descriptions:
     error patterns.
 skill_description: Expert knowledge for Azure Energy Data Services development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Energy Data Services applications. Not for Azure Data Explorer
+  integrations & coding patterns, and deployment. Use when configuring ADME tiers,
+  partitions & CORS, Reservoir DDMS, ACL/legal tags, or Geospatial CZ on AKS, and
+  other Azure Energy Data Services related development tasks. Not for Azure Data Explorer
   (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
+use_when: Use when configuring ADME tiers, partitions & CORS, Reservoir DDMS, ACL/legal
+  tags, or Geospatial CZ on AKS, and other Azure Energy Data Services related development
+  tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Energy Data Services Crawl Report
 

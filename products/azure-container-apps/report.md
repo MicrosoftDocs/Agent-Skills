@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Container Apps development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Container Apps applications. Not
-  for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
-  Instances (use azure-container-instances), Azure App Service (use azure-app-service),
+  Use when configuring ingress/scale, Entra/OIDC auth, GitHub Actions CI/CD, Dapr
+  integrations, or Java microservices on ACA, and other Azure Container Apps related
+  development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Spring Apps (use azure-spring-apps).
+use_when: Use when configuring ingress/scale, Entra/OIDC auth, GitHub Actions CI/CD,
+  Dapr integrations, or Java microservices on ACA, and other Azure Container Apps
+  related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Spring Apps (use azure-spring-apps).
 ---
 # Azure Container Apps Crawl Report

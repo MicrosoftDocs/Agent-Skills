@@ -11,10 +11,17 @@ category_descriptions:
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
 skill_description: Expert knowledge for Azure Portal development including troubleshooting,
-  limits & quotas, security, and configuration. Use when building, debugging, or optimizing
-  Azure Portal applications. Not for Azure Cloud Shell (use azure-cloud-shell), Azure
-  Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy),
-  Azure Monitor (use azure-monitor).
+  limits & quotas, security, and configuration. Use when setting portal security policies,
+  RBAC dashboards, dashboard JSON, mobile app access/alerts, or browser diagnostics,
+  and other Azure Portal related development tasks. Not for Azure Cloud Shell (use
+  azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor
+  (use azure-monitor), Azure Policy (use azure-policy).
+use_when: Use when setting portal security policies, RBAC dashboards, dashboard JSON,
+  mobile app access/alerts, or browser diagnostics, and other Azure Portal related
+  development tasks.
+confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource
+  Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy
+  (use azure-policy).
 ---
 # Azure Portal Crawl Report
 

@@ -28,9 +28,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SignalR Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure SignalR Service applications.
-  Not for Azure Web PubSub (use azure-web-pubsub), Azure Service Bus (use azure-service-bus),
-  Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay).
+  Use when choosing SignalR mode, configuring upstreams/custom domains, securing with
+  Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
+  related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
+  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+use_when: Use when choosing SignalR mode, configuring upstreams/custom domains, securing
+  with Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
+  related development tasks.
+confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
+  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
 ---
 # Azure SignalR Service Crawl Report
 

@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Cosmos DB applications. Not for Azure Table
-  Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure Database for PostgreSQL (use azure-database-postgresql), Azure Database for
-  MySQL (use azure-database-mysql).
+  using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search,
+  global distribution, or HTAP workloads, and other Azure Cosmos DB related development
+  tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database
+  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Blob Storage (use azure-blob-storage).
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed,
+  vector search, global distribution, or HTAP workloads, and other Azure Cosmos DB
+  related development tasks.
+confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
+  Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  Azure Blob Storage (use azure-blob-storage).
 ---
 # Azure Cosmos DB Crawl Report
 

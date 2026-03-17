@@ -27,10 +27,16 @@ category_descriptions:
     and billing/dormancy behavior.'
 skill_description: Expert knowledge for Azure Cost Management development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor),
-  Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Quotas
-  (use azure-quotas).
+  integrations & coding patterns, and deployment. Use when managing Azure billing
+  accounts, budgets/alerts, reservations & savings plans, exports, or cost APIs, and
+  other Azure Cost Management related development tasks. Not for Azure Advisor (use
+  azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas),
+  Azure Policy (use azure-policy).
+use_when: Use when managing Azure billing accounts, budgets/alerts, reservations &
+  savings plans, exports, or cost APIs, and other Azure Cost Management related development
+  tasks.
+confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (use
+  azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
 ---
 # Azure Cost Management Crawl Report
 
@@ -44,8 +50,8 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 263
+- **Updated Pages**: 0
+- **Unchanged**: 265
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -64,13 +70,6 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 | *(Unclassified)* | 75 | 28.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card)
-  - Updated: 2026-03-08T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Supported payment methods](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/supported-payment-methods)
-  - Updated: 2025-09-17T08:00:00.000Z → 2026-03-12T08:00:00.000Z
 
 ## Classified Pages
 

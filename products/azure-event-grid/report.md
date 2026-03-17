@@ -29,9 +29,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Event Grid applications. Not for Azure
-  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
-  Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+  configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing, retries/dead-lettering,
+  or Arc deployments, and other Azure Event Grid related development tasks. Not for
+  Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+use_when: Use when configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing,
+  retries/dead-lettering, or Arc deployments, and other Azure Event Grid related development
+  tasks.
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure Event Grid Crawl Report
 

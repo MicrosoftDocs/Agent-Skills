@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machines development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Virtual Machines applications.
+  Use when using VM scale sets, Trusted Launch, ADE/CMK disk encryption, GPU/HPC SKUs,
+  or Oracle workloads, and other Azure Virtual Machines related development tasks.
   Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on
   Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes Service
   (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
+use_when: Use when using VM scale sets, Trusted Launch, ADE/CMK disk encryption, GPU/HPC
+  SKUs, or Oracle workloads, and other Azure Virtual Machines related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
 ---
 # Azure Virtual Machines Crawl Report
 

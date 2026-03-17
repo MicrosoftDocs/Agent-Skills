@@ -15,8 +15,17 @@ category_descriptions:
     common coding patterns.
 skill_description: Expert knowledge for Azure Queue Storage development including
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Queue Storage applications.
-  Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+  patterns. Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs,
+  tuning throughput/limits, or coding with SDKs, and other Azure Queue Storage related
+  development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table
+  Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
+  Event Hubs (use azure-event-hubs).
+use_when: Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs, tuning
+  throughput/limits, or coding with SDKs, and other Azure Queue Storage related development
+  tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Table
+  Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
+  Event Hubs (use azure-event-hubs).
 ---
 # Azure Queue Storage Crawl Report
 

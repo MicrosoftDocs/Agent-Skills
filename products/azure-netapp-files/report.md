@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure NetApp Files development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure NetApp Files applications. Not for Azure
-  Files (use azure-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic
+  deploying ANF for SAP HANA/Oracle, AzAcSnap, AVS, S3/OneLake object access, or NFS/SMB
+  workloads, and other Azure NetApp Files related development tasks. Not for Azure
+  Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure Elastic
   SAN (use azure-elastic-san), Azure Managed Lustre (use azure-managed-lustre).
+use_when: Use when deploying ANF for SAP HANA/Oracle, AzAcSnap, AVS, S3/OneLake object
+  access, or NFS/SMB workloads, and other Azure NetApp Files related development tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
+  (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure Managed Lustre
+  (use azure-managed-lustre).
 ---
 # Azure NetApp Files Crawl Report
 

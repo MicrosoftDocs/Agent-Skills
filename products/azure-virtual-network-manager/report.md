@@ -16,10 +16,17 @@ category_descriptions:
     Network Manager resources, configurations, and deployments at scale across subscriptions
 skill_description: Expert knowledge for Azure Virtual Network Manager development
   including troubleshooting, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Virtual Network
-  Manager applications. Not for Azure Virtual Network (use azure-virtual-network),
+  & coding patterns. Use when managing AVNM IPAM pools, network groups, cross-tenant
+  connectivity, security admin rules, or ARG queries, and other Azure Virtual Network
+  Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
   Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
-  Azure Firewall Manager (use azure-firewall-manager).
+  Azure Networking (use azure-networking).
+use_when: Use when managing AVNM IPAM pools, network groups, cross-tenant connectivity,
+  security admin rules, or ARG queries, and other Azure Virtual Network Manager related
+  development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
+  Azure Networking (use azure-networking).
 ---
 # Azure Virtual Network Manager Crawl Report
 

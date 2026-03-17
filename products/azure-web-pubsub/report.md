@@ -28,9 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Web PubSub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Web PubSub applications. Not for Azure
+  using WebSockets/MQTT, Socket.IO, geo-replication, custom domains, or Entra ID/managed
+  identity auth, and other Azure Web PubSub related development tasks. Not for Azure
   SignalR Service (use azure-signalr-service), Azure Event Hubs (use azure-event-hubs),
   Azure Service Bus (use azure-service-bus), Azure Relay (use azure-relay).
+use_when: Use when using WebSockets/MQTT, Socket.IO, geo-replication, custom domains,
+  or Entra ID/managed identity auth, and other Azure Web PubSub related development
+  tasks.
+confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
+  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
+  Relay (use azure-relay).
 ---
 # Azure Web PubSub Crawl Report
 

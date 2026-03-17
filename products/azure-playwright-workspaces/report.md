@@ -16,8 +16,12 @@ category_descriptions:
     AADSTS7000112/Azure AD sign-in issues for accessing the Playwright portal.
 skill_description: Expert knowledge for Playwright Workspaces development including
   troubleshooting, best practices, decision making, limits & quotas, security, and
-  configuration. Use when building, debugging, or optimizing Playwright Workspaces
-  applications.
+  configuration. Use when managing Playwright Testing workspaces, tokens/RBAC, quotas,
+  monitoring/metrics, or run/AADSTS7000112 issues, and other Playwright Workspaces
+  related development tasks.
+use_when: Use when managing Playwright Testing workspaces, tokens/RBAC, quotas, monitoring/metrics,
+  or run/AADSTS7000112 issues, and other Playwright Workspaces related development
+  tasks.
 ---
 # Playwright Workspaces Crawl Report
 

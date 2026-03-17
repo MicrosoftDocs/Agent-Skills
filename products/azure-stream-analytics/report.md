@@ -31,9 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Stream Analytics applications.
-  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer
-  (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs).
+  Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
+  ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
+  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs), Azure Data
+  Explorer (use azure-data-explorer).
+use_when: Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL
+  outputs, ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
+  tasks.
+confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs),
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Stream Analytics Crawl Report
 

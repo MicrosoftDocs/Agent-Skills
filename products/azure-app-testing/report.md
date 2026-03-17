@@ -31,9 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Testing development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure App Testing applications. Not for Azure
-  Test Plans (use azure-test-plans), Playwright Workspaces (use azure-playwright-workspaces),
-  Azure DevOps (use azure-devops), Azure App Service (use azure-app-service).
+  using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
+  CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
+  tasks. Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces (use
+  azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
+  (use azure-app-service).
+use_when: Use when using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
+  CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
+  tasks.
+confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces
+  (use azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
+  (use azure-app-service).
 ---
 # Azure App Testing Crawl Report
 

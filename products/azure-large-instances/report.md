@@ -10,11 +10,18 @@ category_descriptions:
     storage volume groups on Azure Large Instances, including layout, sizing, and
     best practices.
 skill_description: Expert knowledge for Azure Large Instances development including
-  troubleshooting, limits & quotas, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Large Instances applications. Not for Azure Baremetal
-  Infrastructure (use azure-baremetal-infrastructure), Azure Virtual Machines (use
-  azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
-  SAP HANA on Azure Large Instances (use azure-sap).
+  troubleshooting, limits & quotas, and integrations & coding patterns. Use when configuring
+  Epic SKUs, sizing volume groups, tuning EHR storage, or resolving Epic–ALI connectivity/perf
+  issues, and other Azure Large Instances related development tasks. Not for Azure
+  Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  Azure HPC Cache (use azure-hpc-cache).
+use_when: Use when configuring Epic SKUs, sizing volume groups, tuning EHR storage,
+  or resolving Epic–ALI connectivity/perf issues, and other Azure Large Instances
+  related development tasks.
+confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets), Azure HPC Cache (use azure-hpc-cache).
 ---
 # Azure Large Instances Crawl Report
 
