@@ -25,10 +25,16 @@ category_descriptions:
     Data API builder using GraphQL `first` and REST `$first` pagination limits.
 skill_description: Expert knowledge for Azure Data Api Builder development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Data Api Builder applications. Not for Azure API Management (use
-  azure-api-management), Azure Functions (use azure-functions), Azure App Service
-  (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
+  integrations & coding patterns, and deployment. Use when defining DAB entities,
+  securing Entra ID/JWT access, exposing REST/GraphQL, or deploying on Azure, and
+  other Azure Data Api Builder related development tasks. Not for Azure App Service
+  (use azure-app-service), Azure Functions (use azure-functions), Azure API Management
+  (use azure-api-management), Azure SQL Database (use azure-sql-database).
+use_when: Use when defining DAB entities, securing Entra ID/JWT access, exposing REST/GraphQL,
+  or deploying on Azure, and other Azure Data Api Builder related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure API Management (use azure-api-management), Azure SQL
+  Database (use azure-sql-database).
 ---
 # Azure Data Api Builder Crawl Report
 
@@ -41,10 +47,10 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 9
-- **Unchanged**: 112
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 123
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -62,36 +68,6 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 | *(Unclassified)* | 43 | 35.0% |
 
 ## Changes
-
-### New Pages
-
-- [DAB Docker](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/docker)
-- [DAB Model Context Protocol (MCP)](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/mcp)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/)
-  - Updated: 2026-03-11T05:03:00Z → 2026-03-16T17:10:00Z
-- [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-
-### Deleted Pages
-
-- ~~DAB Agent~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/agent)
 
 ## Classified Pages
 

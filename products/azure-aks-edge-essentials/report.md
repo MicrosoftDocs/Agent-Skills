@@ -30,8 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service
-  Edge Essentials applications. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF
+  workloads, TPM/AI deployments, or gMSA, and other Azure Kubernetes Service Edge
+  Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use
+  azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge
+  (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+use_when: Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF
+  workloads, TPM/AI deployments, or gMSA, and other Azure Kubernetes Service Edge
+  Essentials related development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
   Container Apps (use azure-container-apps).
 ---

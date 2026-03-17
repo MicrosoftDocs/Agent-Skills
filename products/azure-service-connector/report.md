@@ -20,10 +20,17 @@ category_descriptions:
     connections.
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Service
-  Connector applications. Not for Azure App Service (use azure-app-service), Azure
-  Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure
-  API Management (use azure-api-management).
+  patterns, and deployment. Use when wiring apps to Azure DBs, messaging, storage,
+  Key Vault, OpenAI, or managing Service Connector auth and configs, and other Azure
+  Service Connector related development tasks. Not for Azure API Management (use azure-api-management),
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
+  Azure Logic Apps (use azure-logic-apps).
+use_when: Use when wiring apps to Azure DBs, messaging, storage, Key Vault, OpenAI,
+  or managing Service Connector auth and configs, and other Azure Service Connector
+  related development tasks.
+confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
+  App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
+  Logic Apps (use azure-logic-apps).
 ---
 # Azure Service Connector Crawl Report
 

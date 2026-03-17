@@ -29,9 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Foundry Classic development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Foundry Classic applications.
-  Not for Azure AI Foundry Local (use azure-ai-foundry-local), Microsoft Foundry (use
-  azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
+  Use when building Foundry hubs/agents, RAG with On Your Data, Azure OpenAI deployments,
+  tracing/metrics, or CI/CD IaC, and other Azure Foundry Classic related development
+  tasks. Not for Azure AI Foundry Local (use azure-ai-foundry-local), Microsoft Foundry
+  (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
+use_when: Use when building Foundry hubs/agents, RAG with On Your Data, Azure OpenAI
+  deployments, tracing/metrics, or CI/CD IaC, and other Azure Foundry Classic related
+  development tasks.
+confusable_not_for: Not for Azure AI Foundry Local (use azure-ai-foundry-local), Microsoft
+  Foundry (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure Foundry Classic Crawl Report
 

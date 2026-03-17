@@ -1,6 +1,6 @@
 ---
 name: azure-rbac
-description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Role-based access control applications. Not for Azure Policy (use azure-policy), Azure Security (use azure-security), Azure Resource Manager (use azure-resource-manager), Azure Lighthouse (use azure-lighthouse).
+description: Expert knowledge for Azure Role-based access control development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing Azure RBAC roles, ABAC conditions, deny assignments, PIM, or role assignments via CLI/PowerShell, and other Azure Role-based access control related development tasks. Not for Azure Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

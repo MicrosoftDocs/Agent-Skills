@@ -14,10 +14,17 @@ category_descriptions:
     (e.g., which languages work with read-aloud, translation, and other capabilities).
 skill_description: Expert knowledge for Azure AI Immersive Reader development including
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader
-  applications. Not for Azure AI services (use azure-ai-services), Azure AI Language
-  (use azure-language-service), Azure AI Search (use azure-cognitive-search), Azure
-  Translator (use azure-translator).
+  patterns. Use when tuning read-aloud/translation, storing user prefs, Entra auth
+  setup, JS SDK integration, or language support, and other Azure AI Immersive Reader
+  related development tasks. Not for Azure AI Language (use azure-language-service),
+  Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure
+  AI services (use azure-ai-services).
+use_when: Use when tuning read-aloud/translation, storing user prefs, Entra auth setup,
+  JS SDK integration, or language support, and other Azure AI Immersive Reader related
+  development tasks.
+confusable_not_for: Not for Azure AI Language (use azure-language-service), Azure
+  AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI
+  services (use azure-ai-services).
 ---
 # Azure AI Immersive Reader Crawl Report
 

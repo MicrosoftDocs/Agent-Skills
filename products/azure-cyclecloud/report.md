@@ -25,10 +25,15 @@ category_descriptions:
     CycleCloud, including networking, storage, MPI, BIOS, and performance best practices.
 skill_description: Expert knowledge for Azure CycleCloud development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure CycleCloud applications. Not for Azure Batch (use azure-batch),
-  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  integrations & coding patterns, and deployment. Use when automating CycleCloud via
+  API/CLI, managing Slurm/HPC clusters, tuning autoscaling, or securing access/SSL,
+  and other Azure CycleCloud related development tasks. Not for Azure Batch (use azure-batch),
+  Azure HPC Cache (use azure-hpc-cache), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when automating CycleCloud via API/CLI, managing Slurm/HPC clusters,
+  tuning autoscaling, or securing access/SSL, and other Azure CycleCloud related development
+  tasks.
+confusable_not_for: Not for Azure Batch (use azure-batch), Azure HPC Cache (use azure-hpc-cache),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure CycleCloud Crawl Report
 

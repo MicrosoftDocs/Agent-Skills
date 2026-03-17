@@ -18,10 +18,17 @@ category_descriptions:
     changes and app update steps.
 skill_description: Expert knowledge for Azure AI Vision development including decision
   making, limits & quotas, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure AI Vision applications. Not for
-  Azure AI services (use azure-ai-services), Azure AI Custom Vision (use azure-custom-vision),
-  Azure AI Video Indexer (use azure-video-indexer), Azure AI Document Intelligence
-  (use azure-document-intelligence).
+  Use when using Image Analysis, Read OCR containers, Blob Storage image access, smart-crop
+  thumbnails, or video frame analysis, and other Azure AI Vision related development
+  tasks. Not for Azure AI services (use azure-ai-services), Azure AI Custom Vision
+  (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer), Azure
+  AI Document Intelligence (use azure-document-intelligence).
+use_when: Use when using Image Analysis, Read OCR containers, Blob Storage image access,
+  smart-crop thumbnails, or video frame analysis, and other Azure AI Vision related
+  development tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Custom
+  Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer),
+  Azure AI Document Intelligence (use azure-document-intelligence).
 ---
 # Azure AI Vision Crawl Report
 

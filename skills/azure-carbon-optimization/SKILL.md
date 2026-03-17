@@ -1,6 +1,6 @@
 ---
 name: azure-carbon-optimization
-description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Carbon Optimization applications. Not for Azure Cost Management (use azure-cost-management), Azure Impact Reporting (use azure-impact-reporting), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
+description: Expert knowledge for Azure Carbon Optimization development including troubleshooting, security, and integrations & coding patterns. Use when using Carbon Service REST API, Python exports, RBAC roles, emissions data quality, or dashboard issues, and other Azure Carbon Optimization related development tasks. Not for Azure Cost Management (use azure-cost-management), Azure Impact Reporting (use azure-impact-reporting), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

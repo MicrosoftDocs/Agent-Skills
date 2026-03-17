@@ -13,10 +13,18 @@ category_descriptions:
     network in Azure Firewall Manager, including architecture, security, routing,
     and management trade-offs.
 skill_description: Expert knowledge for Azure Firewall Manager development including
-  best practices, decision making, security, and configuration. Use when building,
-  debugging, or optimizing Azure Firewall Manager applications. Not for Azure Firewall
-  (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
+  best practices, decision making, security, and configuration. Use when managing
+  DDoS plans, WAF policies, DNS proxy/FQDN rules, IP Groups, or secured virtual hub
+  vs VNet, and other Azure Firewall Manager related development tasks. Not for Azure
+  Firewall (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Network Function Manager (use azure-network-function-manager), Azure Networking
+  (use azure-networking).
+use_when: Use when managing DDoS plans, WAF policies, DNS proxy/FQDN rules, IP Groups,
+  or secured virtual hub vs VNet, and other Azure Firewall Manager related development
+  tasks.
+confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual Network
+  Manager (use azure-virtual-network-manager), Azure Network Function Manager (use
+  azure-network-function-manager), Azure Networking (use azure-networking).
 ---
 # Azure Firewall Manager Crawl Report
 

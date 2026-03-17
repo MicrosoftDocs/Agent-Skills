@@ -13,10 +13,17 @@ category_descriptions:
   deployment: Creating and publishing Azure Managed Application definitions using
     Bicep and deploying them into an internal service catalog for reuse.
 skill_description: Expert knowledge for Azure Managed Applications development including
-  limits & quotas, security, configuration, and deployment. Use when building, debugging,
-  or optimizing Azure Managed Applications applications. Not for Azure Lighthouse
-  (use azure-lighthouse), Azure Resource Manager (use azure-resource-manager), Azure
-  Portal (use azure-portal), Azure Partner Solutions (use azure-partner-solutions).
+  limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition
+  UIs, JIT access, managed identities, Key Vault/CMK, StorageAccountSelector, or Bicep-based
+  catalog deployments, and other Azure Managed Applications related development tasks.
+  Not for Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions),
+  Azure Resource Manager (use azure-resource-manager), Azure Blueprints (use azure-blueprints).
+use_when: Use when designing createUiDefinition UIs, JIT access, managed identities,
+  Key Vault/CMK, StorageAccountSelector, or Bicep-based catalog deployments, and other
+  Azure Managed Applications related development tasks.
+confusable_not_for: Not for Azure Lighthouse (use azure-lighthouse), Azure Partner
+  Solutions (use azure-partner-solutions), Azure Resource Manager (use azure-resource-manager),
+  Azure Blueprints (use azure-blueprints).
 ---
 # Azure Managed Applications Crawl Report
 

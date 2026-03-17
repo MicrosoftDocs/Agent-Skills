@@ -12,10 +12,17 @@ category_descriptions:
   configuration: Configuring and deploying the Windows RMS (MSIPC) client and setting
     required registry values for RMS connectors on servers for Azure Information Protection.
 skill_description: Expert knowledge for Azure Information Protection development including
-  best practices, decision making, configuration, and deployment. Use when building,
-  debugging, or optimizing Azure Information Protection applications. Not for Azure
-  Key Vault (use azure-key-vault), Azure Security (use azure-security), Azure Defender
-  For Cloud (use azure-defender-for-cloud), Azure Role-based access control (use azure-rbac).
+  best practices, decision making, configuration, and deployment. Use when choosing
+  Azure RMS vs AD RMS, migrating keys/policies, configuring RMS connector/MSIPC, or
+  monitoring RMS logs, and other Azure Information Protection related development
+  tasks. Not for Azure Key Vault (use azure-key-vault), Azure Security (use azure-security),
+  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+use_when: Use when choosing Azure RMS vs AD RMS, migrating keys/policies, configuring
+  RMS connector/MSIPC, or monitoring RMS logs, and other Azure Information Protection
+  related development tasks.
+confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Security
+  (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure
+  Sentinel (use azure-sentinel).
 ---
 # Azure Information Protection Crawl Report
 

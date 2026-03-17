@@ -21,10 +21,12 @@ category_descriptions:
     deployment patterns.
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure Partner Solutions applications. Not for Azure Industry (use azure-industry),
-  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
-  azure-lighthouse), Azure Security (use azure-security).
+  and integrations & coding patterns. Use when using Service Connector, Confluent
+  Cloud, Dynatrace APM, Datadog/Elastic/New Relic, or Palo Alto Cloud NGFW, and other
+  Azure Partner Solutions related development tasks.
+use_when: Use when using Service Connector, Confluent Cloud, Dynatrace APM, Datadog/Elastic/New
+  Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development
+  tasks.
 ---
 # Azure Partner Solutions Crawl Report
 

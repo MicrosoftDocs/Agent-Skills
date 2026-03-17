@@ -17,7 +17,12 @@ category_descriptions:
     patterns.
 skill_description: Expert knowledge for Azure Firmware Analysis development including
   troubleshooting, best practices, security, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Firmware Analysis applications.
+  Use when provisioning AFA workspaces, configuring RBAC access, uploading firmware
+  via CLI/PowerShell/Python, or interpreting SBOM results, and other Azure Firmware
+  Analysis related development tasks.
+use_when: Use when provisioning AFA workspaces, configuring RBAC access, uploading
+  firmware via CLI/PowerShell/Python, or interpreting SBOM results, and other Azure
+  Firmware Analysis related development tasks.
 ---
 # Azure Firmware Analysis Crawl Report
 

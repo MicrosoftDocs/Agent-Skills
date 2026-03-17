@@ -17,10 +17,17 @@ category_descriptions:
     messages during deployment.
 skill_description: Expert knowledge for Azure Blueprints development including troubleshooting,
   architecture & design patterns, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Blueprints applications.
-  Not for Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
-  Azure Resource Graph (use azure-resource-graph), Azure Deployment Environments (use
-  azure-deployment-environments).
+  patterns. Use when defining Azure Blueprints, mapping built-in compliance sets,
+  automating via CLI/PowerShell/REST, or fixing assignment errors, and other Azure
+  Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure
+  Resource Manager (use azure-resource-manager), Azure Managed Applications (use azure-managed-applications),
+  Azure Deployment Environments (use azure-deployment-environments).
+use_when: Use when defining Azure Blueprints, mapping built-in compliance sets, automating
+  via CLI/PowerShell/REST, or fixing assignment errors, and other Azure Blueprints
+  related development tasks.
+confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Manager
+  (use azure-resource-manager), Azure Managed Applications (use azure-managed-applications),
+  Azure Deployment Environments (use azure-deployment-environments).
 ---
 # Azure Blueprints Crawl Report
 

@@ -29,10 +29,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Defender For Iot development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Defender For Iot applications.
-  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
+  Use when deploying OT sensors, configuring micro agents, setting up traffic mirroring,
+  or integrating with Sentinel/SIEM, and other Azure Defender For Iot related development
+  tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
   (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management),
   Azure Sentinel (use azure-sentinel).
+use_when: Use when deploying OT sensors, configuring micro agents, setting up traffic
+  mirroring, or integrating with Sentinel/SIEM, and other Azure Defender For Iot related
+  development tasks.
+confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security), Azure External Attack Surface Management (use
+  azure-external-attack-surface-management), Azure Sentinel (use azure-sentinel).
 ---
 # Azure Defender For Iot Crawl Report
 

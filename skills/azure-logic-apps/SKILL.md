@@ -1,6 +1,6 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Logic Apps applications. Not for Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms, AI/OpenAI calls, CI/CD deployments, or DR/HA designs, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure API Management (use azure-api-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

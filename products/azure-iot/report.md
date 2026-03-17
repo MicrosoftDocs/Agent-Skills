@@ -23,10 +23,17 @@ category_descriptions:
     diagnose common device-side problems.
 skill_description: Expert knowledge for Azure IoT development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure IoT applications. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge
-  (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender
-  For Iot (use azure-defender-for-iot).
+  and integrations & coding patterns. Use when using IoT Hub/DPS, MQTT, IoT Plug and
+  Play/DTDL, Azure IoT Explorer security, or industrial IoT architectures, and other
+  Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central),
+  Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when using IoT Hub/DPS, MQTT, IoT Plug and Play/DTDL, Azure IoT Explorer
+  security, or industrial IoT architectures, and other Azure IoT related development
+  tasks.
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
+  azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot
+  (use azure-defender-for-iot).
 ---
 # Azure IoT Crawl Report
 

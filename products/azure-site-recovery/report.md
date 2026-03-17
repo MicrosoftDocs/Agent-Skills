@@ -30,9 +30,19 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Site Recovery applications. Not
-  for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  Use when planning ASR for VMware/Hyper‑V, configuring Recovery Services vaults,
+  scripting with PowerShell/Terraform, integrating ExpressRoute/Traffic Manager, or
+  protecting AD/SQL/SAP workloads, and other Azure Site Recovery related development
+  tasks. Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets).
+use_when: Use when planning ASR for VMware/Hyper‑V, configuring Recovery Services
+  vaults, scripting with PowerShell/Terraform, integrating ExpressRoute/Traffic Manager,
+  or protecting AD/SQL/SAP workloads, and other Azure Site Recovery related development
+  tasks.
+confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets).
 ---
 # Azure Site Recovery Crawl Report
 

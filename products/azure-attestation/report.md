@@ -16,10 +16,17 @@ category_descriptions:
     policy/quote validation errors, configuration issues, and troubleshooting attestation
     responses and tokens.
 skill_description: Expert knowledge for Azure Attestation development including troubleshooting,
-  best practices, security, configuration, and deployment. Use when building, debugging,
-  or optimizing Azure Attestation applications. Not for Azure Confidential Computing
-  (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves),
-  Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
+  best practices, security, configuration, and deployment. Use when validating attestation
+  tokens, authoring SGX/TPM policies, configuring policy signers, or securing endpoints,
+  and other Azure Attestation related development tasks. Not for Azure Confidential
+  Computing (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves),
+  Azure Key Vault (use azure-key-vault), Azure Security (use azure-security).
+use_when: Use when validating attestation tokens, authoring SGX/TPM policies, configuring
+  policy signers, or securing endpoints, and other Azure Attestation related development
+  tasks.
+confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
+  Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
+  Azure Security (use azure-security).
 ---
 # Azure Attestation Crawl Report
 

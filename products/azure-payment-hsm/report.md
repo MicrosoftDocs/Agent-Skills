@@ -20,9 +20,16 @@ category_descriptions:
     or workarounds.
 skill_description: Expert knowledge for Azure Payment Hsm development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, and configuration.
-  Use when building, debugging, or optimizing Azure Payment Hsm applications. Not
-  for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
-  Azure Cloud Hsm (use azure-cloud-hsm).
+  Use when designing Payment HSM VNets/FastPath, payShield Manager access, HA/DR topologies,
+  SKUs, or traffic inspection, and other Azure Payment Hsm related development tasks.
+  Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
+  Azure Cloud Hsm (use azure-cloud-hsm), Azure Security (use azure-security).
+use_when: Use when designing Payment HSM VNets/FastPath, payShield Manager access,
+  HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related
+  development tasks.
+confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key
+  Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm), Azure Security
+  (use azure-security).
 ---
 # Azure Payment Hsm Crawl Report
 

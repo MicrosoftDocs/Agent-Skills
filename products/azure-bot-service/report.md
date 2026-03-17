@@ -31,9 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Bot Service development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure AI Bot Service applications. Not
-  for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub),
-  Azure Functions (use azure-functions), Azure App Service (use azure-app-service).
+  Use when building Azure bots with Web Chat/Direct Line, Teams, OAuth/SSO, QnA/LUIS,
+  or proactive messaging, and other Azure AI Bot Service related development tasks.
+  Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub),
+  Azure Communication Services (use azure-communication-services), Azure App Service
+  (use azure-app-service).
+use_when: Use when building Azure bots with Web Chat/Direct Line, Teams, OAuth/SSO,
+  QnA/LUIS, or proactive messaging, and other Azure AI Bot Service related development
+  tasks.
+confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub
+  (use azure-web-pubsub), Azure Communication Services (use azure-communication-services),
+  Azure App Service (use azure-app-service).
 ---
 # Azure AI Bot Service Crawl Report
 

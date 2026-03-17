@@ -1,6 +1,6 @@
 ---
 name: azure-data-manager-for-agri
-description: Expert knowledge for Azure Data Manager for Agriculture development including limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
+description: Expert knowledge for Azure Data Manager for Agriculture development including limits & quotas, security, configuration, and integrations & coding patterns. Use when setting up BYOL creds/Private Link, ag data ingestion/IoT, AI/nutrient APIs, throttling, or Event Grid logs, and other Azure Data Manager for Agriculture related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

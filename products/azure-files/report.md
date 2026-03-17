@@ -24,9 +24,15 @@ category_descriptions:
     usage.'
 skill_description: Expert knowledge for Azure Files development including best practices,
   decision making, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Files
-  applications. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
+  patterns, and deployment. Use when designing Azure Files shares, File Sync/cloud
+  tiering, private endpoints/VPN, AD/Entra auth, or AKS CSI mounts, and other Azure
+  Files related development tasks. Not for Azure Blob Storage (use azure-blob-storage),
+  Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+use_when: Use when designing Azure Files shares, File Sync/cloud tiering, private
+  endpoints/VPN, AD/Entra auth, or AKS CSI mounts, and other Azure Files related development
+  tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
+  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
 ---
 # Azure Files Crawl Report
 
@@ -40,8 +46,8 @@ skill_description: Expert knowledge for Azure Files development including best p
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 107
+- **Updated Pages**: 0
+- **Unchanged**: 109
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -59,13 +65,6 @@ skill_description: Expert knowledge for Azure Files development including best p
 | *(Unclassified)* | 16 | 14.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance)
-  - Updated: 2026-01-15T08:00:00.000Z → 2026-03-16T08:00:00.000Z
-- [NFS performance](https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance)
-  - Updated: 2026-03-11T22:19:00.000Z → 2026-03-16T17:13:00.000Z
 
 ## Classified Pages
 

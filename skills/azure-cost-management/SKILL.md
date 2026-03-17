@@ -1,6 +1,6 @@
 ---
 name: azure-cost-management
-description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Azure billing accounts, budgets/alerts, reservations & savings plans, exports, or cost APIs, and other Azure Cost Management related development tasks. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"

@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Edge development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure IoT Edge applications. Not for Azure IoT
-  Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations
-  (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
+  configuring IoT Edge runtime/modules, EFLOW, DPS provisioning, gateways/downstream
+  devices, or CI/CD deployments, and other Azure IoT Edge related development tasks.
+  Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT
+  Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
+use_when: Use when configuring IoT Edge runtime/modules, EFLOW, DPS provisioning,
+  gateways/downstream devices, or CI/CD deployments, and other Azure IoT Edge related
+  development tasks.
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
+  Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
 ---
 # Azure IoT Edge Crawl Report
 

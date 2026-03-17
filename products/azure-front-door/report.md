@@ -30,10 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Front Door development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Front Door applications. Not for Azure
-  Application Gateway (use azure-application-gateway), Azure Traffic Manager (use
-  azure-traffic-manager), Azure Load Balancer (use azure-load-balancer), Azure Web
-  Application Firewall (use azure-web-application-firewall).
+  configuring Front Door routing/caching, WAF/TLS, Private Link origins, rules engine,
+  or classic-to-Standard/Premium migration, and other Azure Front Door related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer),
+  Azure Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when configuring Front Door routing/caching, WAF/TLS, Private Link origins,
+  rules engine, or classic-to-Standard/Premium migration, and other Azure Front Door
+  related development tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer),
+  Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Front Door Crawl Report
 

@@ -19,9 +19,16 @@ category_descriptions:
     workflow examples.
 skill_description: Expert knowledge for Azure Database Migration service development
   including troubleshooting, decision making, limits & quotas, security, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Database Migration service applications. Not for Azure Migrate (use azure-migrate),
+  & coding patterns, and deployment. Use when planning Azure DMS migrations for MySQL,
+  PostgreSQL, SQL Server/SSIS, SQL MI, or MongoDB workloads, and other Azure Database
+  Migration service related development tasks. Not for Azure Migrate (use azure-migrate),
   Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+use_when: Use when planning Azure DMS migrations for MySQL, PostgreSQL, SQL Server/SSIS,
+  SQL MI, or MongoDB workloads, and other Azure Database Migration service related
+  development tasks.
+confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Database
+  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Database Migration service Crawl Report

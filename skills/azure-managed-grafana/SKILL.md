@@ -1,6 +1,6 @@
 ---
 name: azure-managed-grafana
-description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Grafana applications. Not for Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Managed Grafana development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating Azure Monitor/Prometheus, configuring data sources/alerts, Entra auth, private endpoints, or HA workspaces, and other Azure Managed Grafana related development tasks. Not for Azure Monitor (use azure-monitor), Azure Application Gateway (use azure-application-gateway), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

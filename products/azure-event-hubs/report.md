@@ -30,9 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Hubs development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Event Hubs applications. Not for Azure
-  Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure
-  Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use azure-stream-analytics).
+  using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disaster recovery, or Premium
+  processing units, and other Azure Event Hubs related development tasks. Not for
+  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid),
+  Azure Notification Hubs (use azure-notification-hubs), Azure Stream Analytics (use
+  azure-stream-analytics).
+use_when: Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disaster
+  recovery, or Premium processing units, and other Azure Event Hubs related development
+  tasks.
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
+  Azure Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Event Hubs Crawl Report
 

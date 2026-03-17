@@ -17,9 +17,15 @@ category_descriptions:
     problems, common error patterns, and step-by-step resolution guidance.
 skill_description: Expert knowledge for Azure Cloud Hsm development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Cloud Hsm applications.
+  patterns. Use when managing Cloud HSM clusters, PKCS#11 apps, key lifecycle, backups/logs,
+  or capacity/algorithm choices, and other Azure Cloud Hsm related development tasks.
   Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
   Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
+use_when: Use when managing Cloud HSM clusters, PKCS#11 apps, key lifecycle, backups/logs,
+  or capacity/algorithm choices, and other Azure Cloud Hsm related development tasks.
+confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment
+  Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential
+  Computing (use azure-confidential-computing).
 ---
 # Azure Cloud Hsm Crawl Report
 

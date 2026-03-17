@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: Connection Monitor
     AMA setup, NSG and VNet flow logs, Traffic Analytics schemas, filters, ARM/Bicep/Policy
@@ -7,9 +7,9 @@ category_descriptions:
   troubleshooting: Diagnosing and automating troubleshooting for outbound connectivity,
     NSG/admin rules, and VPN gateway/on-premises VPN issues using Network Watcher,
     Azure CLI, PowerShell, and Automation.
-  integrations: Using PowerShell, KQL, Power BI, and Azure Functions to parse NSG
-    flow logs, visualize traffic, run analytics, and trigger packet captures from
-    alerts.
+  integrations: 'Using Network Watcher data in tools and code: parsing NSG flow logs
+    with PowerShell, visualizing in Power BI, triggering packet capture from Functions,
+    querying Traffic Analytics with KQL, and integrating with Sentinel.'
   decision-making: 'Guidance for migrating network monitoring: moving from classic
     Connection Monitor and Network Performance Monitor tests, and switching NSG flow
     logs to VNet flow logs.'
@@ -21,23 +21,30 @@ category_descriptions:
     identities.
 skill_description: Expert knowledge for Azure Network Watcher development including
   troubleshooting, decision making, limits & quotas, security, configuration, and
-  integrations & coding patterns. Use when building, debugging, or optimizing Azure
-  Network Watcher applications. Not for Azure Monitor (use azure-monitor), Azure Networking
-  (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure
-  Firewall (use azure-firewall).
+  integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet
+  flow logs, Traffic Analytics/KQL, packet capture, or Sentinel integration, and other
+  Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager).
+use_when: Use when configuring Connection Monitor, NSG/VNet flow logs, Traffic Analytics/KQL,
+  packet capture, or Sentinel integration, and other Azure Network Watcher related
+  development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
+  azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual
+  Network Manager (use azure-virtual-network-manager).
 ---
 # Azure Network Watcher Crawl Report
 
 ## Summary
 
-- **Total Pages**: 62
-- **Fetched**: 62
+- **Total Pages**: 63
+- **Fetched**: 63
 - **Fetch Failed**: 0
-- **Classified**: 29
+- **Classified**: 30
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
@@ -47,15 +54,19 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 12 | 19.4% |
+| configuration | 12 | 19.0% |
 | decision-making | 3 | 4.8% |
-| integrations | 4 | 6.5% |
+| integrations | 5 | 7.9% |
 | limits-quotas | 1 | 1.6% |
 | security | 3 | 4.8% |
-| troubleshooting | 6 | 9.7% |
-| *(Unclassified)* | 33 | 53.2% |
+| troubleshooting | 6 | 9.5% |
+| *(Unclassified)* | 33 | 52.4% |
 
 ## Changes
+
+### New Pages
+
+- [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel)
 
 ## Classified Pages
 
@@ -83,6 +94,7 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
 | [Use Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi) | integrations | 0.70 | Describes using Power BI to visualize NSG flow logs; such integration guides typically include dataset schemas, query parameters, and Power BI configuration steps specific to NSG logs. |
 | [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering) | configuration | 0.70 | Article on filtering capability for VNet flow logs (intra/inter-VNet, IP ranges, ports, protocols); likely documents filter fields and allowed values, which are configuration parameters. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
+| [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel) | integrations | 0.68 | Integration guide between Traffic Analytics and Microsoft Sentinel likely includes product-specific configuration steps, parameter names, and settings unique to this integration (for example, how to connect flow logs, workspaces, and data connectors), which qualifies as expert integration knowledge beyond generic concepts. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-policy-portal) | configuration | 0.65 | Shows how to use Azure Policy built-ins for NSG flow logs; likely lists policy definitions, parameters, and assignment options, which are concrete configuration details. |
 | [Audit and deploy using Azure Policy](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-policy) | configuration | 0.65 | Shows how to use built-in Azure Policy definitions to audit and deploy VNet flow logs; such content typically lists specific policy names, parameters, and effects, which are configuration-level details. |
 | [Enable traffic analytics using Azure policy](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-policy-portal) | configuration | 0.65 | Shows how to use three built-in Azure Policy definitions for Traffic Analytics; such content typically lists policy names, parameters, and configuration options, which are expert configuration details. |

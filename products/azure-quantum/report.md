@@ -29,9 +29,11 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Quantum development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Quantum applications. Not for Azure HDInsight
-  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning).
+  using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti targets, QIR/OpenQASM,
+  or Resource Estimator, and other Azure Quantum related development tasks.
+use_when: Use when using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti
+  targets, QIR/OpenQASM, or Resource Estimator, and other Azure Quantum related development
+  tasks.
 ---
 # Azure Quantum Crawl Report
 

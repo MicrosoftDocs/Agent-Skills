@@ -1,6 +1,6 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Speech applications. Not for Azure AI services (use azure-ai-services), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure Translator (use azure-translator).
+description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using STT/TTS, custom speech or voice, Voice Live/avatars, batch transcription, or speech translation, and other Azure AI Speech related development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L82-L90 | Quotas, limits, and usage patterns for Azure Speech: batch TTS, custom/pro voice training & deployment, and short audio STT, plus throttling and capacity planning guidance. |
 | Security | L91-L102 | Securing Azure AI Speech: auth with Entra ID, RBAC, network isolation (VNet, Private Link, sovereign clouds), BYOS storage, encryption/keys, and voice talent consent management. |
 | Configuration | L103-L138 | Configuring Azure AI Speech behavior: audio I/O, regions, logging, storage, batch jobs, SSML, phonemes, custom speech/voice, and Voice Live/avatars settings and performance. |
-| Integrations & Coding Patterns | L139-L160 | Patterns and APIs for integrating Azure Speech/Voice Live with apps and telephony: real-time agents, STT/TTS, translation, REST/SDK usage, OpenAI chat, function calling, and personal voice. |
-| Deployment | L161-L172 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
+| Integrations & Coding Patterns | L139-L159 | Patterns and APIs for integrating Azure Speech/Voice Live with apps and telephony: real-time agents, STT/TTS, translation, REST/SDK usage, OpenAI chat, function calling, and personal voice. |
+| Deployment | L160-L171 | Deploying and scaling Azure AI Speech: Docker/Kubernetes containers, on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form synthesis workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -146,7 +146,6 @@ This skill requires **network access** to fetch documentation content:
 | Implement speech translation with Azure Speech SDK | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-translate-speech |
 | Build real-time voice agents with Voice Live and Foundry Agent Service | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-agent-integration |
 | Implement function calling with Voice Live API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-function-calling |
-| Call Azure LLM-speech API for transcription and translation | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech |
 | Integrate Azure Speech with Azure OpenAI chat | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/openai-speech |
 | Add and manage user consent for personal voice | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-consent |
 | Create personal voice projects via Custom Voice API | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-create-project |

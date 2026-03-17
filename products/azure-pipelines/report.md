@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Pipelines development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Pipelines applications. Not for Azure DevOps
-  (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos),
-  Azure Test Plans (use azure-test-plans).
+  securing service connections/secrets, authoring YAML CI/CD, scaling agents, deploying
+  to Azure/Kubernetes, or integrating external tools, and other Azure Pipelines related
+  development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
+  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when securing service connections/secrets, authoring YAML CI/CD, scaling
+  agents, deploying to Azure/Kubernetes, or integrating external tools, and other
+  Azure Pipelines related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
+  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
 # Azure Pipelines Crawl Report
 

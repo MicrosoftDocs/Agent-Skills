@@ -17,9 +17,16 @@ category_descriptions:
     their lifecycle stages, and retention behavior for different event types
 skill_description: Expert knowledge for Azure Service Health development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Service
-  Health applications. Not for Azure Monitor (use azure-monitor), Azure Reliability
-  (use azure-reliability), Azure Resiliency (use azure-resiliency).
+  patterns, and deployment. Use when querying Service/Resource Health via APIs, configuring
+  alerts, integrating webhooks, or managing health event retention, and other Azure
+  Service Health related development tasks. Not for Azure Monitor (use azure-monitor),
+  Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency),
+  Azure Quotas (use azure-quotas).
+use_when: Use when querying Service/Resource Health via APIs, configuring alerts,
+  integrating webhooks, or managing health event retention, and other Azure Service
+  Health related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
+  azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
 ---
 # Azure Service Health Crawl Report
 
@@ -33,8 +40,8 @@ skill_description: Expert knowledge for Azure Service Health development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 46
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -51,11 +58,6 @@ skill_description: Expert knowledge for Azure Service Health development includi
 | *(Unclassified)* | 25 | 53.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

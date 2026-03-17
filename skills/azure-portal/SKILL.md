@@ -1,6 +1,6 @@
 ---
 name: azure-portal
-description: Expert knowledge for Azure Portal development including troubleshooting, limits & quotas, security, and configuration. Use when building, debugging, or optimizing Azure Portal applications. Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Portal development including troubleshooting, limits & quotas, security, and configuration. Use when setting portal security policies, RBAC dashboards, dashboard JSON, mobile app access/alerts, or browser diagnostics, and other Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-04"

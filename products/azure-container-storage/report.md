@@ -16,9 +16,16 @@ category_descriptions:
     problems.
 skill_description: Expert knowledge for Azure Container Storage development including
   troubleshooting, decision making, limits & quotas, security, and configuration.
-  Use when building, debugging, or optimizing Azure Container Storage applications.
-  Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
+  Use when configuring CMK-encrypted Elastic SAN volumes, ACS pools, LRS/ZRS redundancy,
+  volume resize, or v1 installs, and other Azure Container Storage related development
+  tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files),
   Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files (use azure-netapp-files).
+use_when: Use when configuring CMK-encrypted Elastic SAN volumes, ACS pools, LRS/ZRS
+  redundancy, volume resize, or v1 installs, and other Azure Container Storage related
+  development tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
+  (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files
+  (use azure-netapp-files).
 ---
 # Azure Container Storage Crawl Report
 

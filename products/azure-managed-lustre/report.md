@@ -22,10 +22,17 @@ category_descriptions:
     problems, and tuning guidance.
 skill_description: Expert knowledge for Azure Managed Lustre development including
   troubleshooting, best practices, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Managed Lustre applications. Not for Azure HPC Cache
+  security, configuration, and integrations & coding patterns. Use when mounting AML,
+  integrating with Blob auto-import/export, AKS CSI, quotas, or performance tuning,
+  and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache
   (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual
-  Machines (use azure-virtual-machines).
+  Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+use_when: Use when mounting AML, integrating with Blob auto-import/export, AKS CSI,
+  quotas, or performance tuning, and other Azure Managed Lustre related development
+  tasks.
+confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
+  (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines), Azure
+  Virtual Network (use azure-virtual-network).
 ---
 # Azure Managed Lustre Crawl Report
 

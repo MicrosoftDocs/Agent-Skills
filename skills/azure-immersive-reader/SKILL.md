@@ -1,6 +1,6 @@
 ---
 name: azure-immersive-reader
-description: Expert knowledge for Azure AI Immersive Reader development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Immersive Reader applications. Not for Azure AI services (use azure-ai-services), Azure AI Language (use azure-language-service), Azure AI Search (use azure-cognitive-search), Azure Translator (use azure-translator).
+description: Expert knowledge for Azure AI Immersive Reader development including best practices, limits & quotas, security, configuration, and integrations & coding patterns. Use when tuning read-aloud/translation, storing user prefs, Entra auth setup, JS SDK integration, or language support, and other Azure AI Immersive Reader related development tasks. Not for Azure AI Language (use azure-language-service), Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI services (use azure-ai-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

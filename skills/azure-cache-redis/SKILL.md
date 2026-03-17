@@ -1,6 +1,6 @@
 ---
 name: azure-cache-redis
-description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
+description: Expert knowledge for Azure Cache for Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring geo-replication, persistence, VNet/Private Link, CLI/PowerShell automation, or Blob import/export, and other Azure Cache for Redis related development tasks. Not for Azure Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

@@ -1,6 +1,6 @@
 ---
 name: azure-firewall-manager
-description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when building, debugging, or optimizing Azure Firewall Manager applications. Not for Azure Firewall (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Firewall Manager development including best practices, decision making, security, and configuration. Use when managing DDoS plans, WAF policies, DNS proxy/FQDN rules, IP Groups, or secured virtual hub vs VNet, and other Azure Firewall Manager related development tasks. Not for Azure Firewall (use azure-firewall), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

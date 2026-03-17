@@ -10,10 +10,16 @@ category_descriptions:
     suites, import/export test cases, manage test configurations, and automate test
     management tasks'
 skill_description: Expert knowledge for Azure Test Plans development including limits
-  & quotas, security, and integrations & coding patterns. Use when building, debugging,
-  or optimizing Azure Test Plans applications. Not for Azure DevOps (use azure-devops),
-  Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App
-  Testing (use azure-app-testing).
+  & quotas, security, and integrations & coding patterns. Use when configuring test
+  result custom fields, managing access and roles, or automating suites via tcm.exe,
+  and other Azure Test Plans related development tasks. Not for Azure DevOps (use
+  azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines),
+  Azure App Testing (use azure-app-testing).
+use_when: Use when configuring test result custom fields, managing access and roles,
+  or automating suites via tcm.exe, and other Azure Test Plans related development
+  tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
+  Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
 ---
 # Azure Test Plans Crawl Report
 

@@ -31,9 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Sentinel applications. Not for Azure Defender
-  For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure
-  Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
+  managing Sentinel connectors, KQL analytics rules, playbooks/Logic Apps, ASIM schemas,
+  or multi-workspace setups, and other Azure Sentinel related development tasks. Not
+  for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use
+  azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management),
+  Azure Firewall (use azure-firewall).
+use_when: Use when managing Sentinel connectors, KQL analytics rules, playbooks/Logic
+  Apps, ASIM schemas, or multi-workspace setups, and other Azure Sentinel related
+  development tasks.
+confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security), Azure External Attack Surface Management (use
+  azure-external-attack-surface-management), Azure Firewall (use azure-firewall).
 ---
 # Azure Sentinel Crawl Report
 

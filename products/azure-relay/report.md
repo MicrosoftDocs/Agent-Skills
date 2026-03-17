@@ -13,10 +13,17 @@ category_descriptions:
     ports/protocols to open for Hybrid Connections and WCF relays and how to configure
     them.
 skill_description: Expert knowledge for Azure Relay development including troubleshooting,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Relay applications. Not for Azure Service Bus (use
-  azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web PubSub (use
-  azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
+  security, configuration, and integrations & coding patterns. Use when configuring
+  Hybrid Connections, WCF relays, Entra ID/SAS auth, Private Link, or .NET/Node.js
+  Relay clients, and other Azure Relay related development tasks. Not for Azure Service
+  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web
+  PubSub (use azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
+use_when: Use when configuring Hybrid Connections, WCF relays, Entra ID/SAS auth,
+  Private Link, or .NET/Node.js Relay clients, and other Azure Relay related development
+  tasks.
+confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Hubs (use azure-event-hubs), Azure Web PubSub (use azure-web-pubsub), Azure Application
+  Gateway (use azure-application-gateway).
 ---
 # Azure Relay Crawl Report
 

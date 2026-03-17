@@ -29,9 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Backup development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Backup applications. Not for Azure Site
-  Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
+  protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs/Disks, or automating backup
+  via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for
+  Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines),
   Azure Blob Storage (use azure-blob-storage).
+use_when: Use when protecting Azure VMs, AKS, SQL/SAP HANA, Files/Blobs/Disks, or
+  automating backup via CLI/PowerShell/REST, and other Azure Backup related development
+  tasks.
+confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage).
 ---
 # Azure Backup Crawl Report
 

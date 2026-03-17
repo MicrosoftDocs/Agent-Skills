@@ -23,8 +23,16 @@ category_descriptions:
     policy analysis
 skill_description: Expert knowledge for Azure Policy development including troubleshooting,
   best practices, decision making, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Policy
-  applications. Not for Azure Blueprints (use azure-blueprints), Azure Role-based
+  patterns, and deployment. Use when authoring Machine Configuration packages, deploying
+  via ARM/Bicep/Terraform, mapping to CIS/NIST/ISO, migrating from DSC/Automanage,
+  or querying compliance with Resource Graph, and other Azure Policy related development
+  tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access
+  control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure
+  Security (use azure-security).
+use_when: Use when authoring Machine Configuration packages, deploying via ARM/Bicep/Terraform,
+  mapping to CIS/NIST/ISO, migrating from DSC/Automanage, or querying compliance with
+  Resource Graph, and other Azure Policy related development tasks.
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-based
   access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager),
   Azure Security (use azure-security).
 ---

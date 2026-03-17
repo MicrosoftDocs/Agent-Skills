@@ -31,8 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing Azure Database for PostgreSQL
-  applications. Not for Azure Database for MySQL (use azure-database-mysql), Azure
+  and deployment. Use when tuning Azure PostgreSQL Flexible Server, pgvector AI apps,
+  VNet/Private Link, geo-replication, or CI/CD deployments, and other Azure Database
+  for PostgreSQL related development tasks. Not for Azure Database for MySQL (use
+  azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb),
+  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when tuning Azure PostgreSQL Flexible Server, pgvector AI apps, VNet/Private
+  Link, geo-replication, or CI/CD deployments, and other Azure Database for PostgreSQL
+  related development tasks.
+confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql), Azure
   Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
@@ -48,8 +55,8 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 309
+- **Updated Pages**: 0
+- **Unchanged**: 312
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -69,15 +76,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | *(Unclassified)* | 101 | 32.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Connection pooling (PgBouncer)](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-pgbouncer)
-  - Updated: 2026-02-04T18:16:00.000Z → 2026-03-04T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-15T08:00:00.000Z
-- [Supported versions](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-03-15T08:00:00.000Z
 
 ## Classified Pages
 

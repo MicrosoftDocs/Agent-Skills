@@ -17,10 +17,17 @@ category_descriptions:
     Azure AI Foundry Local specifically on Windows Server 2025.
 skill_description: Expert knowledge for Azure AI Foundry Local development including
   troubleshooting, best practices, decision making, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure AI Foundry
-  Local applications. Not for Azure AI services (use azure-ai-services), Azure Machine
-  Learning (use azure-machine-learning), Azure AI Vision (use azure-ai-vision), Azure
-  AI Document Intelligence (use azure-document-intelligence).
+  & coding patterns. Use when installing Foundry Local, compiling HF models with Olive,
+  calling via REST/OpenAI clients, using LangChain, or migrating from legacy SDK,
+  and other Azure AI Foundry Local related development tasks. Not for Azure Foundry
+  Classic (use azure-foundry-classic), Microsoft Foundry (use azure-microsoft-foundry),
+  Azure Machine Learning (use azure-machine-learning), Azure AI services (use azure-ai-services).
+use_when: Use when installing Foundry Local, compiling HF models with Olive, calling
+  via REST/OpenAI clients, using LangChain, or migrating from legacy SDK, and other
+  Azure AI Foundry Local related development tasks.
+confusable_not_for: Not for Azure Foundry Classic (use azure-foundry-classic), Microsoft
+  Foundry (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning),
+  Azure AI services (use azure-ai-services).
 ---
 # Azure AI Foundry Local Crawl Report
 

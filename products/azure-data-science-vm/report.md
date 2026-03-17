@@ -21,11 +21,18 @@ category_descriptions:
     tools/configurations.
 skill_description: Expert knowledge for Azure Data Science Virtual Machines development
   including troubleshooting, decision making, architecture & design patterns, security,
-  configuration, integrations & coding patterns, and deployment. Use when building,
-  debugging, or optimizing Azure Data Science Virtual Machines applications. Not for
-  Azure Virtual Machines (use azure-virtual-machines), Azure Machine Learning (use
-  azure-machine-learning), Azure Databricks (use azure-databricks), Azure HDInsight
+  configuration, integrations & coding patterns, and deployment. Use when managing
+  DSVM images/tools, IaC deployment (Bicep/ARM), Key Vault secrets, MLflow, or GPU/Jupyter
+  issues, and other Azure Data Science Virtual Machines related development tasks.
+  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Machine Learning
+  (use azure-machine-learning), Azure Databricks (use azure-databricks), Azure HDInsight
   (use azure-hdinsight).
+use_when: Use when managing DSVM images/tools, IaC deployment (Bicep/ARM), Key Vault
+  secrets, MLflow, or GPU/Jupyter issues, and other Azure Data Science Virtual Machines
+  related development tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  Machine Learning (use azure-machine-learning), Azure Databricks (use azure-databricks),
+  Azure HDInsight (use azure-hdinsight).
 ---
 # Azure Data Science Virtual Machines Crawl Report
 

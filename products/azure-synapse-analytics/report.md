@@ -30,9 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Synapse Analytics applications.
-  Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
-  Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight).
+  Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL, Synapse
+  Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics related
+  development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data
+  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
+  Stream Analytics (use azure-stream-analytics).
+use_when: Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL,
+  Synapse Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics
+  related development tasks.
+confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
+  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
+  Stream Analytics (use azure-stream-analytics).
 ---
 # Azure Synapse Analytics Crawl Report
 

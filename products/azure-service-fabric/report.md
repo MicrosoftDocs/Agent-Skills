@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Fabric development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Service Fabric applications. Not
-  for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container
-  Apps (use azure-container-apps), Azure App Service (use azure-app-service), Azure
-  Cloud Services (use azure-cloud-services).
+  Use when building Service Fabric clusters, Reliable Actors/Collections, reverse
+  proxy, remoting, or Azure-integrated apps, and other Azure Service Fabric related
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when building Service Fabric clusters, Reliable Actors/Collections,
+  reverse proxy, remoting, or Azure-integrated apps, and other Azure Service Fabric
+  related development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure Service Fabric Crawl Report
 

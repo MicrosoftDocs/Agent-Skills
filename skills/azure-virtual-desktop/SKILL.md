@@ -1,6 +1,6 @@
 ---
 name: azure-virtual-desktop
-description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Virtual Desktop applications. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+description: Expert knowledge for Azure Virtual Desktop development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with FSLogix profiles, MSIX/App Attach, autoscale/Start VM on Connect, Teams optimization, or SSO/MFA, and other Azure Virtual Desktop related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"

@@ -21,8 +21,18 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Managed Grafana applications. Not for Azure Monitor (use azure-monitor).
+  & coding patterns, and deployment. Use when integrating Azure Monitor/Prometheus,
+  configuring data sources/alerts, Entra auth, private endpoints, or HA workspaces,
+  and other Azure Managed Grafana related development tasks. Not for Azure Monitor
+  (use azure-monitor), Azure Application Gateway (use azure-application-gateway),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
+  (use azure-kubernetes-service).
+use_when: Use when integrating Azure Monitor/Prometheus, configuring data sources/alerts,
+  Entra auth, private endpoints, or HA workspaces, and other Azure Managed Grafana
+  related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application Gateway
+  (use azure-application-gateway), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Managed Grafana Crawl Report
 

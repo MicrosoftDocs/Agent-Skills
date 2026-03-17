@@ -20,10 +20,17 @@ category_descriptions:
     guidance.
 skill_description: Expert knowledge for Azure Networking development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Networking
-  applications. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual
-  Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
-  Azure Network Watcher (use azure-network-watcher).
+  & coding patterns. Use when designing VNets/hubs, routing via firewalls/gateways,
+  enforcing Policy, or querying networks with Resource Graph, and other Azure Networking
+  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+use_when: Use when designing VNets/hubs, routing via firewalls/gateways, enforcing
+  Policy, or querying networks with Resource Graph, and other Azure Networking related
+  development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
 ---
 # Azure Networking Crawl Report
 
