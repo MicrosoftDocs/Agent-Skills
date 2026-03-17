@@ -1,6 +1,6 @@
 ---
 name: azure-industry
-description: Expert knowledge for Azure Industry development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Community Training portals, Teams embedding, Azure AD/B2C auth, Android app builds, or UI languages, and other related development tasks.
+description: Expert knowledge for Azure Industry development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Community Training portals, Teams embedding, Azure AD/B2C auth, Android app builds, or UI languages, and other related development tasks. Not for Azure Health Data Services (use azure-health-data-services), Azure Energy Data Services (use azure-energy-data-services), Azure Data Manager for Agriculture (use azure-data-manager-for-agri), Azure IoT (use azure-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

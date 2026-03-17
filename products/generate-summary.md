@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-17 05:23:27
-**Total Duration**: 30m 9s
+**Generated**: 2026-03-17 06:45:39
+**Total Duration**: 22m 11s
 
 ## Product Crawl Summary
 
@@ -9,7 +9,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure AI services | 84 | 51 | 0 | 0 | 0 | OK |
+| 1 | Azure AI services | 84 | 51 | 0 | 1 | 0 | OK |
 | 2 | Azure AI Vision | 45 | 21 | 0 | 0 | 0 | OK |
 | 3 | Azure Kubernetes Service Edge Essentials | 332 | 266 | 0 | 0 | 0 | OK |
 | 4 | Azure Artifact Signing | 14 | 9 | 0 | 0 | 0 | OK |
@@ -18,7 +18,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 7 | Azure Analysis Services | 1 | 1 | 0 | 0 | 0 | OK |
 | 8 | Azure AI Anomaly Detector | 24 | 11 | 0 | 0 | 0 | OK |
 | 9 | Azure API Management | 275 | 226 | 0 | 0 | 0 | OK |
-| 10 | Azure App Configuration | 161 | 132 | 0 | 0 | 0 | OK |
+| 10 | Azure App Configuration | 161 | 132 | 0 | 2 | 0 | OK |
 | 11 | Azure App Service | 247 | 162 | 0 | 0 | 0 | OK |
 | 12 | Azure App Testing | 72 | 57 | 0 | 0 | 0 | OK |
 | 13 | Azure Application Gateway | 174 | 130 | 0 | 0 | 0 | OK |
@@ -27,7 +27,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 16 | Azure Attestation | 33 | 22 | 0 | 0 | 0 | OK |
 | 17 | Azure Automation | 115 | 92 | 0 | 0 | 0 | OK |
 | 18 | Azure Backup | 393 | 236 | 0 | 0 | 0 | OK |
-| 19 | Azure Bastion | 42 | 24 | 0 | 0 | 0 | OK |
+| 19 | Azure Bastion | 42 | 24 | 0 | 2 | 0 | OK |
 | 20 | Azure Batch | 114 | 83 | 0 | 0 | 0 | OK |
 | 21 | Azure Blob Storage | 407 | 335 | 0 | 0 | 0 | OK |
 | 22 | Azure Blueprints | 40 | 34 | 0 | 0 | 0 | OK |
@@ -36,7 +36,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 25 | Azure Cache for Redis | 63 | 56 | 0 | 0 | 0 | OK |
 | 26 | Azure Cloud Services | 45 | 31 | 0 | 0 | 0 | OK |
 | 27 | Azure Cloud Shell | 19 | 5 | 0 | 0 | 0 | OK |
-| 28 | Azure AI Search | 299 | 232 | 0 | 0 | 0 | OK |
+| 28 | Azure AI Search | 299 | 232 | 0 | 1 | 0 | OK |
 | 29 | Azure Communication Services | 516 | 414 | 0 | 0 | 0 | OK |
 | 30 | Azure Container Apps | 204 | 133 | 0 | 0 | 0 | OK |
 | 31 | Azure Container Instances | 83 | 54 | 0 | 0 | 0 | OK |
@@ -66,7 +66,7 @@ Quick overview for reviewers. See individual product reports for details.
 | 55 | Azure Elastic SAN | 24 | 22 | 0 | 0 | 0 | OK |
 | 56 | Azure Event Grid | 259 | 180 | 0 | 0 | 0 | OK |
 | 57 | Azure Event Hubs | 111 | 72 | 0 | 0 | 0 | OK |
-| 58 | Azure ExpressRoute | 95 | 75 | 0 | 0 | 0 | OK |
+| 58 | Azure ExpressRoute | 95 | 73 | 0 | 11 | 0 | OK |
 | 59 | Azure Files | 109 | 93 | 0 | 0 | 0 | OK |
 | 60 | Azure Firewall | 84 | 62 | 0 | 0 | 0 | OK |
 | 61 | Azure Firewall Manager | 27 | 11 | 0 | 0 | 0 | OK |
@@ -93,14 +93,14 @@ Quick overview for reviewers. See individual product reports for details.
 | 82 | Azure Managed Applications | 62 | 53 | 0 | 0 | 0 | OK |
 | 83 | Azure Managed Grafana | 43 | 35 | 0 | 0 | 0 | OK |
 | 84 | Azure Managed Lustre | 29 | 27 | 0 | 0 | 0 | OK |
-| 85 | Azure Managed Redis | 58 | 49 | 0 | 0 | 0 | OK |
+| 85 | Azure Managed Redis | 58 | 48 | 0 | 2 | 0 | OK |
 | 86 | Azure Maps | 146 | 114 | 0 | 0 | 0 | OK |
 | 87 | Azure AI Metrics Advisor | 19 | 8 | 0 | 0 | 0 | OK |
 | 88 | Azure Migrate | 202 | 119 | 0 | 0 | 0 | OK |
 | 89 | Azure Monitor | 2347 | 1824 | 0 | 0 | 0 | OK |
 | 90 | Azure NAT Gateway | 26 | 22 | 0 | 0 | 0 | OK |
 | 91 | Azure NetApp Files | 227 | 157 | 0 | 0 | 0 | OK |
-| 92 | Azure Network Watcher | 62 | 29 | 0 | 0 | 0 | OK |
+| 92 | Azure Network Watcher | 63 | 30 | 1 | 0 | 0 | OK |
 | 93 | Azure Notification Hubs | 67 | 53 | 0 | 0 | 0 | OK |
 | 94 | Azure Open Datasets | 44 | 1 | 0 | 0 | 0 | OK |
 | 95 | Azure AI Personalizer | 35 | 12 | 0 | 0 | 0 | OK |
@@ -115,14 +115,14 @@ Quick overview for reviewers. See individual product reports for details.
 | 104 | Azure Repos | 206 | 134 | 0 | 0 | 0 | OK |
 | 105 | Azure Resource Graph | 33 | 21 | 0 | 0 | 0 | OK |
 | 106 | Azure Resource Manager | 462 | 355 | 0 | 0 | 0 | OK |
-| 107 | SAP HANA on Azure Large Instances | 206 | 181 | 0 | 0 | 0 | OK |
+| 107 | SAP HANA on Azure Large Instances | 206 | 181 | 0 | 2 | 0 | OK |
 | 108 | Azure Service Bus | 122 | 91 | 0 | 0 | 0 | OK |
 | 109 | Azure Service Fabric | 403 | 316 | 0 | 0 | 0 | OK |
 | 110 | Azure Service Health | 47 | 22 | 0 | 0 | 0 | OK |
 | 111 | Azure SignalR Service | 73 | 60 | 0 | 0 | 0 | OK |
 | 112 | Azure Site Recovery | 202 | 138 | 0 | 0 | 0 | OK |
 | 113 | Azure US Government | 40 | 31 | 0 | 0 | 0 | OK |
-| 114 | Azure AI Speech | 179 | 106 | 0 | 0 | 0 | OK |
+| 114 | Azure AI Speech | 179 | 105 | 0 | 2 | 0 | OK |
 | 115 | Azure Spring Apps | 174 | 141 | 0 | 0 | 0 | OK |
 | 116 | Azure SQL Database | 359 | 245 | 0 | 0 | 0 | OK |
 | 117 | Azure SQL Managed Instance | 237 | 188 | 0 | 0 | 0 | OK |
@@ -208,25 +208,25 @@ Quick overview for reviewers. See individual product reports for details.
 ### Totals
 
 - **Products Processed**: 195 success, 0 failed
-- **Total Pages**: 32345
-- **Total Classified**: 22277
-- **Total New Pages**: 0
-- **Total Updated Pages**: 0
+- **Total Pages**: 32346
+- **Total Classified**: 22274
+- **Total New Pages**: 1
+- **Total Updated Pages**: 23
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)
 
 | Type | Count |
 |------|-------|
-| architecture-patterns | 564 |
-| best-practices | 1324 |
-| configuration | 7375 |
+| architecture-patterns | 562 |
+| best-practices | 1326 |
+| configuration | 7374 |
 | decision-making | 1241 |
 | deployment | 1312 |
-| integrations | 4801 |
-| limits-quotas | 1086 |
+| integrations | 4799 |
+| limits-quotas | 1085 |
 | security | 3077 |
-| troubleshooting | 1497 |
+| troubleshooting | 1498 |
 
 ---
 

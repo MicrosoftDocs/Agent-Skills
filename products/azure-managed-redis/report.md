@@ -1,12 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   integrations: How to connect .NET, Go, Node.js/TypeScript, and Python apps to Azure
     Managed Redis, including Entra ID auth, ASP.NET Core caching, security, and Azure
     Functions bindings.
-  architecture-patterns: Details of Azure Managed Redis internal components, cluster
-    topology, data flow, scaling behavior, and how the service is built and operates
-    behind the scenes.
   best-practices: Guidance on client usage, connections, scaling, memory, performance
     testing, Kubernetes hosting, monitoring load, and handling failover/patching for
     Azure Managed Redis.
@@ -24,13 +21,13 @@ category_descriptions:
     migration approaches from Azure Cache for Redis, and optimizing costs with reservations
     and FAQs
 skill_description: Expert knowledge for Azure Managed Redis development including
-  troubleshooting, best practices, decision making, architecture & design patterns,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  using Entra auth, geo-replication, persistence, Private Link/TLS, or ARM/Bicep deployments
-  for Managed Redis, and other related development tasks. Not for Azure Cache for
-  Redis (use azure-cache-redis).
+  troubleshooting, best practices, decision making, security, configuration, integrations
+  & coding patterns, and deployment. Use when using Entra auth, geo-replication, persistence,
+  Private Link/TLS, or ARM/Bicep for Azure Managed Redis, and other Azure Managed
+  Redis related development tasks. Not for Azure Cache for Redis (use azure-cache-redis).
 use_when: Use when using Entra auth, geo-replication, persistence, Private Link/TLS,
-  or ARM/Bicep deployments for Managed Redis, and other related development tasks.
+  or ARM/Bicep for Azure Managed Redis, and other Azure Managed Redis related development
+  tasks.
 confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
@@ -40,13 +37,13 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 - **Total Pages**: 58
 - **Fetched**: 58
 - **Fetch Failed**: 0
-- **Classified**: 49
-- **Unclassified**: 9
+- **Classified**: 48
+- **Unclassified**: 10
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 58
+- **Updated Pages**: 2
+- **Unchanged**: 56
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -54,7 +51,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 1.7% |
 | best-practices | 10 | 17.2% |
 | configuration | 10 | 17.2% |
 | decision-making | 4 | 6.9% |
@@ -62,9 +58,16 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | integrations | 7 | 12.1% |
 | security | 5 | 8.6% |
 | troubleshooting | 7 | 12.1% |
-| *(Unclassified)* | 9 | 15.5% |
+| *(Unclassified)* | 10 | 17.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [About Azure Managed Redis](https://learn.microsoft.com/en-us/azure/redis/overview)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-11T08:00:00.000Z
+- [Azure Managed Redis architecture](https://learn.microsoft.com/en-us/azure/redis/architecture)
+  - Updated: 2025-12-15T12:12:00.000Z → 2026-03-11T08:00:00.000Z
 
 ## Classified Pages
 
@@ -115,7 +118,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Monitor Cache for Redis](https://learn.microsoft.com/en-us/azure/redis/monitor-cache) | configuration | 0.65 | Monitoring article details specific metrics, logs, and Azure Monitor configuration for this service. |
 | [Planning FAQs](https://learn.microsoft.com/en-us/azure/redis/planning-faq) | decision-making | 0.65 | Planning FAQ typically covers SKU/tier selection, sizing, and deployment considerations with scenario-based guidance. |
 | [Troubleshooting FAQs](https://learn.microsoft.com/en-us/azure/redis/monitor-troubleshoot-faq) | troubleshooting | 0.65 | FAQ focused on monitoring and troubleshooting; likely lists common error messages or conditions and their resolutions, which is product-specific troubleshooting knowledge. |
-| [Azure Managed Redis architecture](https://learn.microsoft.com/en-us/azure/redis/architecture) | architecture-patterns | 0.60 | Architecture article for a managed service often includes product-specific topology, clustering, and failover patterns not generally known. |
 | [Development FAQs](https://learn.microsoft.com/en-us/azure/redis/development-faq) | best-practices | 0.60 | Development FAQ likely includes product-specific coding recommendations, edge cases, and gotchas beyond generic Redis usage. |
 | [Redis modules](https://learn.microsoft.com/en-us/azure/redis/redis-modules) | configuration | 0.60 | Describes how to enable specific Redis modules at creation time, which is a product-specific configuration capability. |
 | [Upgrade to a new version](https://learn.microsoft.com/en-us/azure/redis/how-to-upgrade) | deployment | 0.60 | Covers version upgrade process and constraints, which are product-specific operational/deployment procedures. |
@@ -131,5 +133,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 | [Create an Azure Managed Redis instance](https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis) | 0.30 | Quickstart for creating a cache; mostly step-by-step portal usage without deep configuration tables or product-specific patterns. |
 | [List of Redis metrics](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference) | 0.30 | The summary only states that it contains monitoring reference information, without indicating specific numeric limits, configuration parameter tables, or error-code-based troubleshooting. It likely lists metric names and descriptions, which are closer to general reference than the expert-knowledge sub-skill types defined here. |
 | [Vector Search](https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity) | 0.30 | High-level introduction to vector embeddings and Redis as a vector database; conceptual without detailed configs or limits. |
-| [About Azure Managed Redis](https://learn.microsoft.com/en-us/azure/redis/overview) | 0.20 | Service overview describing what Azure Managed Redis is; conceptual without detailed limits, configs, or decision matrices. |
+| [Azure Managed Redis architecture](https://learn.microsoft.com/en-us/azure/redis/architecture) | 0.20 | Architecture description appears conceptual; summary does not indicate concrete limits, configuration tables, or decision criteria unique enough to qualify as expert knowledge under the defined categories. |
 | [What's new](https://learn.microsoft.com/en-us/azure/redis/whats-new) | 0.20 | What's new page is a changelog-style overview of recent updates without detailed limits, configs, or troubleshooting mappings. |
+| [About Azure Managed Redis](https://learn.microsoft.com/en-us/azure/redis/overview) | 0.10 | High-level product overview of Azure Managed Redis without specific limits, configuration parameters, error codes, or decision matrices. |

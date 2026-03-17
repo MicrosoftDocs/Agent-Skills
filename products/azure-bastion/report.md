@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   integrations: How to use Azure Bastion with AKS private clusters, VM scale sets,
     and native Windows/Linux clients, including SSH/RDP connectivity patterns and
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 42
+- **Updated Pages**: 2
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -64,6 +64,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 18 | 42.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-windows)
+  - Updated: 2025-02-11T05:34:00.000Z → 2026-03-17T06:14:00.000Z
+- [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp)
+  - Updated: 2026-03-04T23:27:00.000Z → 2026-03-17T06:14:00.000Z
 
 ## Classified Pages
 
@@ -105,14 +112,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Full screen view](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-full-screen) | 0.35 | How-to for full-screen view; UI usage, not expert configuration or troubleshooting. |
 | [Bastion FAQ](https://learn.microsoft.com/en-us/azure/bastion/bastion-faq) | 0.30 | FAQ description is generic; without explicit mention of error codes, limits, or configs, it’s likely high-level Q&A. |
 | [Leverage Bastion for remote working](https://learn.microsoft.com/en-us/azure/bastion/work-remotely-support) | 0.30 | Remote work scenario overview; mostly conceptual usage guidance rather than detailed configuration or limits. |
-| [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp) | 0.30 | Similar to index 2 but for Linux RDP; mainly a connection tutorial. It doesn’t indicate detailed configuration parameters, limits, or specialized patterns beyond standard usage instructions. |
 | [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-rdp-windows) | 0.30 | Primarily a step-by-step tutorial on connecting via RDP through Bastion using portal or native client. It’s generic how-to usage without detailed configuration tables, limits, or product-specific diagnostic/security parameters. |
 | [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-linux) | 0.30 | Connection tutorial for Linux via SSH; procedural, not configuration reference. |
-| [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-windows) | 0.30 | Connection tutorial for Windows via SSH; similar to other connection how-tos. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/bastion/create-host-cli) | 0.25 | CLI deployment how-to; similar to other quickstarts, not a config matrix or limits reference. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/bastion/bastion-create-host-powershell) | 0.25 | PowerShell deployment how-to; step-by-step deployment rather than config reference or troubleshooting. |
 | [Deploy Bastion - ARM template](https://learn.microsoft.com/en-us/azure/bastion/quickstart-host-arm-template) | 0.25 | ARM template quickstart; primarily a deployment tutorial without tier matrices or config tables. |
 | [Deploy Bastion - Terraform](https://learn.microsoft.com/en-us/azure/bastion/quickstart-deploy-terraform) | 0.25 | Terraform quickstart; shows how to deploy, but not focused on exhaustive configuration or limits. |
 | [Deploy Bastion - Azure portal](https://learn.microsoft.com/en-us/azure/bastion/quickstart-host-portal) | 0.20 | Quickstart deployment tutorial; focuses on steps rather than exhaustive configuration matrices or limits. |
+| [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp) | 0.20 | Step-by-step guide for RDP connection to a Linux VM via Azure Bastion; focuses on usage flow, not on detailed configuration matrices, limits, troubleshooting codes, or decision criteria. |
+| [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-windows) | 0.20 | Procedural how-to for connecting to a Windows VM via SSH using Azure Bastion; no limits, quotas, config parameter tables, error-code mappings, or product-specific best-practice guidance with quantified impact. |
 | [What is Azure Bastion?](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
 | [What's new in Bastion?](https://learn.microsoft.com/en-us/azure/bastion/whats-new) | 0.10 | Release notes/what's new summary; no detailed limits, configs, or troubleshooting mappings evident. |

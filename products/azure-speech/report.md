@@ -45,13 +45,13 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 - **Total Pages**: 179
 - **Fetched**: 179
 - **Fetch Failed**: 0
-- **Classified**: 106
-- **Unclassified**: 73
+- **Classified**: 105
+- **Unclassified**: 74
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 179
+- **Updated Pages**: 2
+- **Unchanged**: 177
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -63,13 +63,20 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | configuration | 32 | 17.9% |
 | decision-making | 15 | 8.4% |
 | deployment | 9 | 5.0% |
-| integrations | 18 | 10.1% |
+| integrations | 17 | 9.5% |
 | limits-quotas | 5 | 2.8% |
 | security | 8 | 4.5% |
 | troubleshooting | 7 | 3.9% |
-| *(Unclassified)* | 73 | 40.8% |
+| *(Unclassified)* | 74 | 41.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [High definition (HD) voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/high-definition-voices)
+  - Updated: 2026-01-09T23:09:00.000Z → 2026-03-17T06:03:00.000Z
+- [Use LLM speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech)
+  - Updated: 2026-03-04T06:04:00.000Z → 2026-03-17T06:03:00.000Z
 
 ## Classified Pages
 
@@ -174,7 +181,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Part 4: Test recognition quality](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-inspect-data) | decision-making | 0.65 | Guides how to inspect recognition quality and compare models side by side to choose the best one; product-specific evaluation workflow aiding decisions. |
 | [Part 6: Deploy a model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-deploy-model) | deployment | 0.65 | Covers when deployment is required vs batch transcription not needing an endpoint and mentions endpoint reuse/update; this is product-specific deployment behavior beyond generic how-to. |
 | [Sovereign Clouds](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/sovereign-clouds) | security | 0.65 | Covers sovereign cloud–specific authentication, storage, and compliance behavior for Speech service; these are product- and cloud-variant-specific security/compliance details rather than generic concepts. |
-| [Use LLM speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech) | integrations | 0.65 | Page is a how-to for using the LLM-speech API in Foundry Tools. It likely includes request/response schemas, model identifiers, endpoint formats, and parameter names/values specific to this preview feature—details that qualify as product-specific integration patterns rather than generic tutorial content. |
 | [Use batch synthesis for text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-synthesis) | deployment | 0.65 | Covers asynchronous batch synthesis for long audio, including retirement/migration from Long Audio API and constraints like >10-minute audio, which are product-specific deployment/usage details. |
 | [Whisper model from OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/whisper-overview) | decision-making | 0.65 | Compares Whisper availability across Azure OpenAI vs Azure Speech and discusses when it’s a good choice; this is service-specific model selection guidance. |
 | [Batch transcription overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription) | decision-making | 0.60 | Describes when to use batch transcription, concurrency behavior, and turnaround characteristics; guides selection vs other modes for large workloads. |
@@ -209,7 +215,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Custom keyword quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-keyword-basics) | 0.30 | Quickstart for creating a custom keyword; primarily step-by-step usage without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Custom speech overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-overview) | 0.30 | Custom speech overview describing concept and benefits; summary does not indicate detailed configuration parameters, limits, or decision matrices. |
 | [Custom voice overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice) | 0.30 | Overview of Custom voice with access note; excerpt lacks detailed configuration, limits, or error handling specifics. |
-| [High definition (HD) voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/high-definition-voices) | 0.30 | Conceptual overview of HD neural voices; summary doesn’t show concrete configuration, limits, or decision matrices. |
 | [Install the Speech SDK](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/setup-platform) | 0.30 | Quickstart for installing SDK; typically just package names and basic commands, not deep configuration or limits. |
 | [Interactive language learning with pronunciation assessment](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-learning-with-pronunciation-assessment) | 0.30 | Describes interactive language learning with pronunciation assessment; preview note and conceptual explanation, but no detailed config tables or limits. |
 | [Multi-device conversation quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/multi-device-conversation) | 0.30 | Quickstart for multi-device conversation; sample-focused, not a configuration or limits reference. |
@@ -225,6 +230,7 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Speech translation quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-translation) | 0.30 | Quickstart for speech translation; primarily step-by-step sample usage, not a configuration or limits reference. |
 | [Text to speech quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-text-to-speech) | 0.30 | Quickstart likely shows basic usage; summary doesn’t indicate detailed configuration matrices or constraints beyond generic SDK usage. |
 | [Training and testing datasets](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-custom-speech-test-and-train) | 0.30 | Describes dataset types and considerations at a conceptual level; no concrete limits, configs, or product-specific edge cases indicated. |
+| [Use LLM speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech) | 0.30 | Appears to be a usage/overview page for the LLM-speech API in Azure Speech/Foundry Tools, focused on describing capabilities (LLM-enhanced speech, contextual understanding, multilingual support, prompt-tuning). The summary does not indicate presence of numeric limits, configuration parameter tables, error-code mappings, or other product-specific expert details as defined in the sub-skill types. |
 | [Use batch synthesis for avatar](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech-avatar/batch-synthesis-avatar) | 0.30 | Overview/how-to for batch synthesis avatar; summary does not indicate detailed property tables, limits, or error mappings. |
 | [Voice Live with Foundry models](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-quickstart) | 0.30 | Described as a quickstart to get started with Voice Live and a sample web app. Likely focuses on basic usage and wiring Voice Live to generative models, without detailed parameter tables, limits, or product-specific configuration matrices. |
 | [Audio processing](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/audio-processing-overview) | 0.25 | Conceptual overview of Microsoft Audio Stack components and scenarios; no explicit configuration tables, limits, or error-resolution content in the summary. |
@@ -237,6 +243,7 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Display text formatting](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/display-text-format) | 0.20 | High-level overview of display text formatting features; no concrete configuration tables, limits, or error handling details indicated. |
 | [Fast transcription API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create) | 0.20 | Explains when to use fast transcription and mentions display vs lexical form, but no specific limits, configuration parameters, or quantified trade-offs are evident from the summary. |
 | [Gaming integration](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/gaming-concepts) | 0.20 | Concepts for using Speech in gaming scenarios; scenario-focused overview without concrete configuration values, limits, or decision matrices. |
+| [High definition (HD) voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/high-definition-voices) | 0.20 | From the summary, the page is a conceptual/marketing-style description of neural HD text-to-speech voices (capabilities, expressiveness, emotions). It doesn't indicate the presence of numeric limits, configuration tables, error codes, or other product-specific expert details required by any sub-skill type. |
 | [Ingestion Client](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/ingestion-client) | 0.20 | Overview of the Ingestion Client tool and its purpose; lacks detailed configuration parameters, limits, or troubleshooting content. |
 | [Keyword recognition overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/keyword-recognition-overview) | 0.20 | High-level overview of keyword recognition features and use cases; no concrete limits, configuration parameters, or error mappings. |
 | [Language identification](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-identification) | 0.20 | Describes language identification concept and a qualitative note about higher initial latency, but lacks concrete numeric thresholds, configuration tables, or detailed error/diagnostic information. |

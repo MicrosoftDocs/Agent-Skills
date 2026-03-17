@@ -1,9 +1,9 @@
 ---
 name: azure-ai-services
-description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure AI Foundry, Content Understanding analyzers, Content Moderator APIs, VNet‑secured endpoints, or ARM/containers deployments, and other related development tasks. Not for Azure AI Foundry Local (use azure-ai-foundry-local), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure Open Datasets (use azure-open-datasets).
+description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Foundry containers, Content Understanding analyzers, Content Moderator APIs, VNet/Key Vault security, or ARM deployments, and other Azure AI services related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning), Azure AI Bot Service (use azure-bot-service), Azure AI Speech (use azure-speech).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI services Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L47-L56 | Guidance on choosing pricing tiers and tools (Foundry vs Content Understanding vs Document Intelligence/LLMs), standard vs pro modes, migration steps, and estimating Content Understanding costs. |
 | Limits & Quotas | L57-L64 | Rate limits, quotas, and scaling for Foundry and Content Moderator/Understanding: autoscale strategies, image/term list limits, and how to stay within service quotas. |
 | Security | L65-L80 | Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance, and secure analyzer access. |
-| Configuration | L81-L99 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
-| Integrations & Coding Patterns | L100-L109 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
-| Deployment | L110-L117 | How to package and run Foundry tools/containers on Azure (ACI, Docker Compose, disconnected), and deploy Foundry resources using Azure AI containers and ARM templates |
+| Configuration | L81-L98 | Configuring Foundry endpoints, credentials, containers, logging, and Content Understanding analyzers (classification, layout, audiovisual), routing, outputs, and resource recovery/purge. |
+| Integrations & Coding Patterns | L99-L108 | Using Azure Content Moderator and Content Understanding via REST/.NET: text/image/video moderation, custom term lists, and building custom multimodal analyzers and workflows. |
+| Deployment | L109-L117 | Deploying and running Foundry-based Azure AI containers and resources (ACI, Docker Compose, disconnected), using ARM templates, and integrating Foundry model deployments with Content Understanding. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -86,7 +86,6 @@ This skill requires **network access** to fetch documentation content:
 | Create reusable Azure AI container images with presets | https://learn.microsoft.com/en-us/azure/ai-services/containers/container-reuse-recipe |
 | Configure Content Understanding analyzers and parameters | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference |
 | Configure classification and splitting in Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier |
-| Connect Content Understanding analyzers to Foundry model deployments | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
 | Use and customize Content Understanding prebuilt analyzers | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers |
 | Configure document layout and data extraction with Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/elements |
 | Interpret Content Understanding document Markdown output | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/markdown |
@@ -114,4 +113,5 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Foundry containers to Azure Container Instances | https://learn.microsoft.com/en-us/azure/ai-services/containers/azure-container-instance-recipe |
 | Run Foundry containers in disconnected environments | https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-containers |
 | Deploy multiple Azure AI containers with Docker Compose | https://learn.microsoft.com/en-us/azure/ai-services/containers/docker-compose-recipe |
+| Use Foundry model deployments with Content Understanding | https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments |
 | Deploy Foundry resources using ARM templates | https://learn.microsoft.com/en-us/azure/ai-services/create-account-resource-manager-template |

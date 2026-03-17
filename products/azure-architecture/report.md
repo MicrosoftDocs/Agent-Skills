@@ -48,8 +48,8 @@ use_when: Use when designing AKS or App Service apps, data/AI pipelines, IoT or 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 442
+- **Updated Pages**: 0
+- **Unchanged**: 444
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -69,13 +69,6 @@ use_when: Use when designing AKS or App Service apps, data/AI pipelines, IoT or 
 | *(Unclassified)* | 109 | 24.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-03-10T17:32:00.000Z → 2026-03-16T08:00:00.000Z
-- [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway)
-  - Updated: 2025-03-07T18:30:00Z → 2026-03-17T05:10:00.000Z
 
 ## Classified Pages
 

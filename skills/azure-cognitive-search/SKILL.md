@@ -1,6 +1,6 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, skillsets, semantic/vector search, indexers, or RAG/agentic retrieval with Azure AI Search, and other related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, skillsets, vector/semantic search, indexers, RAG patterns, or multi-region deployments, and other Azure AI Search related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Cosmos DB (use azure-cosmos-db), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L47 | Diagnosing and fixing Azure AI Search indexer and skillset issues, including common errors, OData filter problems, portal debug sessions, and shared private link resource failures. |
 | Best Practices | L48-L68 | Best practices for indexing, enrichment, chunking, vectors, performance, concurrency, and safe updates in Azure AI Search, including RAG, custom skills, and responsible GenAI usage. |
 | Decision Making | L69-L80 | Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating capacity, choosing pricing tiers, and planning costs and hardware for search workloads |
-| Architecture & Design Patterns | L81-L88 | Architectural guidance for Azure AI Search: RAG and agentic retrieval patterns, knowledge store design, multitenancy/isolation, and multi-region deployment strategies. |
+| Architecture & Design Patterns | L81-L88 | Architectural guidance for Azure AI Search: knowledge store design, RAG patterns, multitenant isolation, and multi-region deployment/topology choices. |
 | Limits & Quotas | L89-L99 | Limits, quotas, and behaviors for Azure AI Search services, indexers, enrichment, and vector indexes, plus a .NET tutorial that illustrates index size and loading constraints. |
 | Security | L100-L138 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
 | Configuration | L139-L234 | Configuring Azure AI Search: data sources, indexes, analyzers, vector/semantic settings, skillsets/enrichment, knowledge bases, monitoring, and indexer/connection options. |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand knowledge store architecture in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro |
 | Apply RAG patterns with Azure AI Search and generative AI | https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview |
 | Implement multitenancy and content isolation in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications |
-| Design multi-region architectures with Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-multi-region |
+| Design multi-region architectures for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-multi-region |
 
 ### Limits & Quotas
 | Topic | URL |
