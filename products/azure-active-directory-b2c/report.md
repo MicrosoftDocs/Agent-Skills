@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Active Directory B2C development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Active Directory B2C applications.
-  Not for Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
-  Azure Information Protection (use azure-information-protection).
+  Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API tokens,
+  CI/CD deployments, or Sentinel logs, and other related development tasks. Not for
+  Azure Information Protection (use azure-information-protection), Azure Role-based
+  access control (use azure-rbac), Azure Security (use azure-security), Azure Sentinel
+  (use azure-sentinel).
+use_when: Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API
+  tokens, CI/CD deployments, or Sentinel logs, and other related development tasks.
+confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
+  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
+  Azure Sentinel (use azure-sentinel).
 ---
 # Azure Active Directory B2C Crawl Report
 

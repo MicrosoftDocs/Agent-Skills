@@ -30,9 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Operations development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure IoT Operations applications. Not
-  for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Central
-  (use azure-iot-central), Azure IoT Edge (use azure-iot-edge).
+  Use when configuring MQTT broker, OPC UA/ONVIF integrations, Akri discovery, WASM
+  modules, or Kubernetes edge deployments, and other related development tasks. Not
+  for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge
+  (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
+use_when: Use when configuring MQTT broker, OPC UA/ONVIF integrations, Akri discovery,
+  WASM modules, or Kubernetes edge deployments, and other related development tasks.
+confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central).
 ---
 # Azure IoT Operations Crawl Report
 

@@ -17,10 +17,16 @@ category_descriptions:
     including BGP peering issues, route propagation, and troubleshooting steps/logs.
 skill_description: Expert knowledge for Azure Route Server development including troubleshooting,
   best practices, architecture & design patterns, limits & quotas, security, and configuration.
-  Use when building, debugging, or optimizing Azure Route Server applications. Not
-  for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
+  Use when designing hub-spoke or multi-region topologies, BGP peering, NVA next-hop,
+  ExpressRoute/VPN, or route injection, and other related development tasks. Not for
+  Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager
   (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
   Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when designing hub-spoke or multi-region topologies, BGP peering, NVA
+  next-hop, ExpressRoute/VPN, or route injection, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
+  azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Route Server Crawl Report
 

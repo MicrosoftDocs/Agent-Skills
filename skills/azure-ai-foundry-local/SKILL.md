@@ -1,6 +1,6 @@
 ---
 name: azure-ai-foundry-local
-description: Expert knowledge for Azure AI Foundry Local development including troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure AI Foundry Local applications. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Vision (use azure-ai-vision), Azure AI Document Intelligence (use azure-document-intelligence).
+description: Expert knowledge for Azure AI Foundry Local development including troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. Use when installing Foundry Local, compiling HF models with Olive, using REST/SDK or OpenAI clients, or building chat UIs, and other related development tasks. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

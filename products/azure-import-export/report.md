@@ -9,9 +9,14 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure Import/Export job failures, reading
     Import/Export logs, and repairing failed v1 import/export jobs and copy issues.
 skill_description: Expert knowledge for Azure Import Export development including
-  troubleshooting, limits & quotas, and security. Use when building, debugging, or
-  optimizing Azure Import Export applications. Not for Azure Data Box (use azure-data-box-family),
+  troubleshooting, limits & quotas, and security. Use when setting CMK via Key Vault,
+  validating drive/OS support, or debugging Import/Export job and log issues, and
+  other related development tasks. Not for Azure Data Box (use azure-data-box-family),
   Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
+use_when: Use when setting CMK via Key Vault, validating drive/OS support, or debugging
+  Import/Export job and log issues, and other related development tasks.
+confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Blob
+  Storage (use azure-blob-storage), Azure Files (use azure-files).
 ---
 # Azure Import Export Crawl Report
 

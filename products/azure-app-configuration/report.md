@@ -25,10 +25,16 @@ category_descriptions:
     errors from client apps.
 skill_description: Expert knowledge for Azure App Configuration development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure App Configuration applications. Not for Azure App Service (use
-  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
-  azure-key-vault), Azure Automation (use azure-automation).
+  integrations & coding patterns, and deployment. Use when using feature flags, dynamic
+  refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other
+  related development tasks. Not for Azure App Service (use azure-app-service), Azure
+  Key Vault (use azure-key-vault), Azure Automation (use azure-automation), Azure
+  Functions (use azure-functions).
+use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
+  or App Configuration REST APIs, and other related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
+  (use azure-key-vault), Azure Automation (use azure-automation), Azure Functions
+  (use azure-functions).
 ---
 # Azure App Configuration Crawl Report
 
@@ -41,9 +47,9 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 154
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 161
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -62,25 +68,6 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | *(Unclassified)* | 29 | 18.0% |
 
 ## Changes
-
-### New Pages
-
-- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-python-provider)
-
-### Updated Pages
-
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-java-spring-app)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T08:00:00.000Z
-- [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-spring-boot)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references)
-  - Updated: 2025-11-19T23:11:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

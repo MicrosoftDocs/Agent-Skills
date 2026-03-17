@@ -28,9 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Health Data Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Health Data Services applications.
-  Not for Azure Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory),
-  Azure Data Explorer (use azure-data-explorer), Azure Machine Learning (use azure-machine-learning).
+  Use when working with FHIR/DICOM/MedTech services, de-identification APIs, Synapse/ADF
+  pipelines, or DR architectures, and other related development tasks. Not for Azure
+  Health Bot (use azure-health-bot), Azure Data Factory (use azure-data-factory),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use
+  azure-machine-learning).
+use_when: Use when working with FHIR/DICOM/MedTech services, de-identification APIs,
+  Synapse/ADF pipelines, or DR architectures, and other related development tasks.
+confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
+  (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Machine Learning (use azure-machine-learning).
 ---
 # Azure Health Data Services Crawl Report
 

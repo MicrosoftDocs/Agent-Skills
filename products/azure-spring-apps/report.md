@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Spring Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Spring Apps applications. Not for Azure
-  App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps).
+  configuring ASA networking/VNet, TLS/custom domains, CI/CD deployments, observability/APM,
+  or blue‑green releases, and other related development tasks. Not for Azure App Service
+  (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions).
+use_when: Use when configuring ASA networking/VNet, TLS/custom domains, CI/CD deployments,
+  observability/APM, or blue‑green releases, and other related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Container
+  Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Functions (use azure-functions).
 ---
 # Azure Spring Apps Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-education-hub
-description: Expert knowledge for Azure Education Hub development including troubleshooting, and limits & quotas. Use when building, debugging, or optimizing Azure Education Hub applications. Not for Azure Lab Services (use azure-lab-services), Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Desktop (use azure-virtual-desktop).
+description: Expert knowledge for Azure Education Hub development including troubleshooting, and limits & quotas. Use when managing Azure for Students credits, yearly quota renewals, usage monitoring, or Dev Tools for Teaching sign-in issues, and other related development tasks. Not for Azure Lab Services (use azure-lab-services), Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

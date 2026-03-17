@@ -5,8 +5,14 @@ category_descriptions:
     Open Datasets, including throttling behavior, quotas, and strategies to avoid
     or handle rate limits
 skill_description: Expert knowledge for Azure Open Datasets development including
-  limits & quotas. Use when building, debugging, or optimizing Azure Open Datasets
-  applications. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
+  limits & quotas. Use when handling non-Spark dataset downloads, throttling behavior,
+  request quotas, or rate-limit mitigation strategies, and other related development
+  tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Machine
+  Learning (use azure-machine-learning).
+use_when: Use when handling non-Spark dataset downloads, throttling behavior, request
+  quotas, or rate-limit mitigation strategies, and other related development tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
   Azure Machine Learning (use azure-machine-learning).
 ---

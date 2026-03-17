@@ -26,10 +26,17 @@ category_descriptions:
     error codes/logs.
 skill_description: Expert knowledge for Azure Elastic SAN development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Elastic SAN applications. Not for Azure Blob Storage
-  (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp Files (use
-  azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+  security, configuration, and integrations & coding patterns. Use when sizing Elastic
+  SAN, attaching iSCSI volumes to AKS/VMs, tuning IOPS, using CMK + private endpoints,
+  or snapshots, and other related development tasks. Not for Azure Blob Storage (use
+  azure-blob-storage), Azure NetApp Files (use azure-netapp-files), Azure Managed
+  Lustre (use azure-managed-lustre), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when sizing Elastic SAN, attaching iSCSI volumes to AKS/VMs, tuning
+  IOPS, using CMK + private endpoints, or snapshots, and other related development
+  tasks.
+confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
+  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Elastic SAN Crawl Report
 

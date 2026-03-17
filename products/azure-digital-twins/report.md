@@ -29,9 +29,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Digital Twins development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Digital Twins applications. Not
-  for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+  Use when modeling with DTDL, integrating IoT Hub/ADX, querying twin graphs, or migrating
+  control plane APIs, and other related development tasks. Not for Azure IoT Hub (use
+  azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations
+  (use azure-iot-operations), Azure IoT Edge (use azure-iot-edge).
+use_when: Use when modeling with DTDL, integrating IoT Hub/ADX, querying twin graphs,
+  or migrating control plane APIs, and other related development tasks.
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
+  azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure IoT Edge
+  (use azure-iot-edge).
 ---
 # Azure Digital Twins Crawl Report
 

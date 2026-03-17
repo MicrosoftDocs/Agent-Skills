@@ -27,10 +27,14 @@ category_descriptions:
     events, and analytics integrations.
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Blob Storage applications. Not for Azure Files (use azure-files), Azure Table Storage
-  (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure
-  NetApp Files (use azure-netapp-files).
+  & coding patterns, and deployment. Use when using static websites, Data Lake, NFS/SFTP/BlobFuse,
+  SAS/RBAC auth, or SDK/CLI blob operations, and other related development tasks.
+  Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage),
+  Azure Queue Storage (use azure-queue-storage).
+use_when: Use when using static websites, Data Lake, NFS/SFTP/BlobFuse, SAS/RBAC auth,
+  or SDK/CLI blob operations, and other related development tasks.
+confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
+  azure-table-storage), Azure Queue Storage (use azure-queue-storage).
 ---
 # Azure Blob Storage Crawl Report
 

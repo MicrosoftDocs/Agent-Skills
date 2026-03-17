@@ -30,9 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure HPC Cache development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure HPC Cache applications. Not for Azure Managed
+  setting up HPC Cache namespaces, NFS/Blob targets, AD access, write-back flows,
+  or multi-region failover, and other related development tasks. Not for Azure Managed
   Lustre (use azure-managed-lustre), Azure NetApp Files (use azure-netapp-files),
-  Azure Batch (use azure-batch).
+  Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when setting up HPC Cache namespaces, NFS/Blob targets, AD access, write-back
+  flows, or multi-region failover, and other related development tasks.
+confusable_not_for: Not for Azure Managed Lustre (use azure-managed-lustre), Azure
+  NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure HPC Cache Crawl Report
 

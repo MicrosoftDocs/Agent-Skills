@@ -26,8 +26,12 @@ category_descriptions:
     problems.
 skill_description: Expert knowledge for Azure Maps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Maps applications.
+  security, configuration, and integrations & coding patterns. Use when using Azure
+  Maps web SDK, search/routing/weather APIs, Spatial IO, Power BI visuals, or Bing/Google
+  Maps migration, and other related development tasks.
+use_when: Use when using Azure Maps web SDK, search/routing/weather APIs, Spatial
+  IO, Power BI visuals, or Bing/Google Maps migration, and other related development
+  tasks.
 ---
 # Azure Maps Crawl Report
 

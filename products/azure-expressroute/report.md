@@ -30,9 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure ExpressRoute development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure ExpressRoute applications. Not for Azure
-  Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+  designing ExpressRoute circuits/gateways, BGP routing, Global Reach, IPsec/MACsec,
+  or VPN coexistence, and other related development tasks. Not for Azure Internet
+  Peering (use azure-internet-peering), Azure Virtual WAN (use azure-virtual-wan),
+  Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when designing ExpressRoute circuits/gateways, BGP routing, Global Reach,
+  IPsec/MACsec, or VPN coexistence, and other related development tasks.
+confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
+  Virtual WAN (use azure-virtual-wan), Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure ExpressRoute Crawl Report
 

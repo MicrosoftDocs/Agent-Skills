@@ -21,9 +21,16 @@ category_descriptions:
     bottlenecks.
 skill_description: Expert knowledge for Azure Copilot development including troubleshooting,
   decision making, architecture & design patterns, security, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Copilot applications.
-  Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning),
-  Azure Portal (use azure-portal), Azure AI Foundry Local (use azure-ai-foundry-local).
+  & coding patterns. Use when sizing VMs, generating Terraform/Bicep, configuring
+  Cosmos DB storage, or tuning VNets and App Service, and other related development
+  tasks. Not for Azure AI services (use azure-ai-services), Azure Machine Learning
+  (use azure-machine-learning), Azure Portal (use azure-portal), Azure AI Foundry
+  Local (use azure-ai-foundry-local).
+use_when: Use when sizing VMs, generating Terraform/Bicep, configuring Cosmos DB storage,
+  or tuning VNets and App Service, and other related development tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure Machine
+  Learning (use azure-machine-learning), Azure Portal (use azure-portal), Azure AI
+  Foundry Local (use azure-ai-foundry-local).
 ---
 # Azure Copilot Crawl Report
 

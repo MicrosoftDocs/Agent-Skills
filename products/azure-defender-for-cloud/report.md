@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Defender For Cloud development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Defender For Cloud applications.
-  Not for Azure Security (use azure-security), Azure Sentinel (use azure-sentinel),
-  Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall).
+  Use when securing Defender for Servers/Containers, AKS/EKS/GKE, SQL/Storage, CI/CD/DevOps,
+  or multi‑cloud connectors, and other related development tasks. Not for Azure Defender
+  For Iot (use azure-defender-for-iot), Azure DDos Protection (use azure-ddos-protection),
+  Azure External Attack Surface Management (use azure-external-attack-surface-management),
+  Azure Security (use azure-security).
+use_when: Use when securing Defender for Servers/Containers, AKS/EKS/GKE, SQL/Storage,
+  CI/CD/DevOps, or multi‑cloud connectors, and other related development tasks.
+confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot), Azure
+  DDos Protection (use azure-ddos-protection), Azure External Attack Surface Management
+  (use azure-external-attack-surface-management), Azure Security (use azure-security).
 ---
 # Azure Defender For Cloud Crawl Report
 
@@ -46,10 +53,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 - **Unclassified**: 216
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 468
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 472
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
 ## Classification Statistics
@@ -68,23 +75,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | *(Unclassified)* | 216 | 45.8% |
 
 ## Changes
-
-### New Pages
-
-- [Microsoft Security Private Link for Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links)
-- [Configure private endpoints with Microsoft Security Private Link](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints)
-
-### Updated Pages
-
-- [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-portal)
-  - Updated: 2025-12-04T12:03:00.000Z → 2026-03-16T17:14:00.000Z
-- [Enable programmatically](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-programmatically)
-  - Updated: 2025-12-04T12:03:00.000Z → 2026-03-16T17:14:00.000Z
-
-### Deleted Pages
-
-- ~~Microsoft Security Private Link for Microsoft Defender for Cloud (Preview)~~ (https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links)
-- ~~Configure private endpoints with Microsoft Security Private Link (Preview)~~ (https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints)
 
 ## Classified Pages
 

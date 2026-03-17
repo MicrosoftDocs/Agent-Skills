@@ -20,10 +20,11 @@ category_descriptions:
     availability details and localization considerations.
 skill_description: Expert knowledge for Azure Industry development including troubleshooting,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Industry applications. Not for
-  Azure Health Data Services (use azure-health-data-services), Azure Energy Data Services
-  (use azure-energy-data-services), Azure Data Manager for Agriculture (use azure-data-manager-for-agri),
-  Azure IoT (use azure-iot).
+  Use when configuring Community Training portals, Teams embedding, Azure AD/B2C auth,
+  Android app builds, or UI languages, and other related development tasks.
+use_when: Use when configuring Community Training portals, Teams embedding, Azure
+  AD/B2C auth, Android app builds, or UI languages, and other related development
+  tasks.
 ---
 # Azure Industry Crawl Report
 

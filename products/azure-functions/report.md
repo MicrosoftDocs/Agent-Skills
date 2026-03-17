@@ -30,9 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Functions development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Functions applications. Not for Azure App
+  building HTTP/event-driven or Durable Functions, using triggers/bindings, containers/Container
+  Apps, or CI/CD deployments, and other related development tasks. Not for Azure App
   Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure
   Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+use_when: Use when building HTTP/event-driven or Durable Functions, using triggers/bindings,
+  containers/Container Apps, or CI/CD deployments, and other related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
+  Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service).
 ---
 # Azure Functions Crawl Report
 

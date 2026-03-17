@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure API Management applications. Not
-  for Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Service Bus (use azure-service-bus).
+  Use when configuring APIM policies, self-hosted gateways, VNet/private access, Entra
+  ID/OAuth, or Azure OpenAI/LLM APIs, and other related development tasks. Not for
+  Azure Application Gateway (use azure-application-gateway), Azure Front Door (use
+  azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Web Application
+  Firewall (use azure-web-application-firewall).
+use_when: Use when configuring APIM policies, self-hosted gateways, VNet/private access,
+  Entra ID/OAuth, or Azure OpenAI/LLM APIs, and other related development tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
+  Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure API Management Crawl Report
 

@@ -27,10 +27,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing Azure AI Document Intelligence
-  applications. Not for Azure AI services (use azure-ai-services), Azure AI Search
-  (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure Machine
-  Learning (use azure-machine-learning).
+  and deployment. Use when using AnalyzeDocument API, custom models, containers, SAS/managed
+  identity access, or Logic Apps/Functions workflows, and other related development
+  tasks. Not for Azure AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search),
+  Azure AI Vision (use azure-ai-vision), Azure AI Immersive Reader (use azure-immersive-reader).
+use_when: Use when using AnalyzeDocument API, custom models, containers, SAS/managed
+  identity access, or Logic Apps/Functions workflows, and other related development
+  tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Search
+  (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure AI Immersive
+  Reader (use azure-immersive-reader).
 ---
 # Azure AI Document Intelligence Crawl Report
 

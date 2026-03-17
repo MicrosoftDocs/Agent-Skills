@@ -24,8 +24,10 @@ category_descriptions:
 skill_description: Expert guidance for designing, assessing, and optimizing Azure
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
-  questions. Use when architecting new solutions, reviewing existing workloads, or
-  applying Well-Architected principles.
+  questions. Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critical
+  Azure workloads and their tradeoffs, and other related development tasks.
+use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critical Azure
+  workloads and their tradeoffs, and other related development tasks.
 ---
 # Azure Well Architected Crawl Report
 
@@ -39,8 +41,8 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 244
+- **Updated Pages**: 0
+- **Unchanged**: 248
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -58,17 +60,6 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | *(Unclassified)* | 28 | 11.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Optimize using flows](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows)
-  - Updated: 2024-10-23T22:02:00.000Z → 2026-03-16T22:07:00.000Z
-- [Data partitioning](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data)
-  - Updated: 2025-05-29T22:02:00.000Z → 2026-03-16T22:07:00.000Z
-- [Continuous integration](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration)
-  - Updated: 2025-06-11T22:02:00.000Z → 2026-03-16T22:07:00.000Z
-- [WAF assessments and recommendations](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations)
-  - Updated: 2025-08-13T17:02:00.000Z → 2026-03-16T22:07:00.000Z
 
 ## Classified Pages
 

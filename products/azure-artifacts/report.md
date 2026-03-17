@@ -20,9 +20,14 @@ category_descriptions:
     Azure Artifacts feeds, including workflow setup, authentication, and CI/CD integration.
 skill_description: Expert knowledge for Azure Artifacts development including best
   practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Artifacts applications. Not for Azure DevOps (use azure-devops), Azure Pipelines
-  (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+  & coding patterns, and deployment. Use when managing feeds, upstream sources, views/promotion,
+  GitHub Actions CI/CD, or npm/NuGet/Maven/Gradle integration, and other related development
+  tasks. Not for Azure DevOps (use azure-devops), Azure Repos (use azure-repos), Azure
+  Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
+use_when: Use when managing feeds, upstream sources, views/promotion, GitHub Actions
+  CI/CD, or npm/NuGet/Maven/Gradle integration, and other related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Repos (use azure-repos),
+  Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards).
 ---
 # Azure Artifacts Crawl Report
 

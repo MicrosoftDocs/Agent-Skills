@@ -5,8 +5,14 @@ category_descriptions:
     prefix registration checks, routing verification, and troubleshooting connectivity
     or reachability issues.
 skill_description: Expert knowledge for Azure Internet Peering development including
-  troubleshooting. Use when building, debugging, or optimizing Azure Internet Peering
-  applications. Not for Azure ExpressRoute (use azure-expressroute), Azure Peering
+  troubleshooting. Use when checking Peering Service prefix registration, validating
+  BGP routes, or troubleshooting prefix reachability, and other related development
+  tasks. Not for Azure ExpressRoute (use azure-expressroute), Azure Peering Service
+  (use azure-peering-service), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when checking Peering Service prefix registration, validating BGP routes,
+  or troubleshooting prefix reachability, and other related development tasks.
+confusable_not_for: Not for Azure ExpressRoute (use azure-expressroute), Azure Peering
   Service (use azure-peering-service), Azure Virtual Network (use azure-virtual-network),
   Azure Virtual WAN (use azure-virtual-wan).
 ---

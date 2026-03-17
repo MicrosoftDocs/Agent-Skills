@@ -1,6 +1,6 @@
 ---
 name: azure-relay
-description: Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Relay applications. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web PubSub (use azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
+description: Expert knowledge for Azure Relay development including troubleshooting, security, configuration, and integrations & coding patterns. Use when securing Hybrid Connections, configuring Entra ID/SAS auth, setting firewall/VNet rules, or coding .NET/Node.js clients, and other related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure Application Gateway (use azure-application-gateway), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

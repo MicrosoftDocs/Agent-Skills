@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Arc development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Arc applications. Not for Azure Kubernetes
-  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Stack Edge (use azure-stack-edge), Azure Local (use azure-local).
+  managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or
+  SCVMM/VMware integration, and other related development tasks. Not for Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Stack Edge (use azure-stack-edge),
+  Azure Virtual Machines (use azure-virtual-machines), Azure Resource Manager (use
+  azure-resource-manager).
+use_when: Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource
+  bridge, or SCVMM/VMware integration, and other related development tasks.
+confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Resource Manager (use azure-resource-manager).
 ---
 # Azure Arc Crawl Report
 
@@ -47,8 +54,8 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 414
+- **Updated Pages**: 0
+- **Unchanged**: 415
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -68,11 +75,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | *(Unclassified)* | 145 | 34.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Restore AdventureWorks](https://learn.microsoft.com/en-us/azure/azure-arc/data/restore-adventureworks-sample-db)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-16T22:14:00.000Z
 
 ## Classified Pages
 

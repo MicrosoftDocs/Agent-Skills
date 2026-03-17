@@ -16,8 +16,15 @@ category_descriptions:
     and design-time validation.
 skill_description: Expert knowledge for Azure Api Center development including best
   practices, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Api Center applications. Not for
-  Azure API Management (use azure-api-management).
+  Use when automating API linting/registration, portal setup/customization, metadata
+  schemas, MCP agents, or API sync scripts, and other related development tasks. Not
+  for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service),
+  Azure Functions (use azure-functions).
+use_when: Use when automating API linting/registration, portal setup/customization,
+  metadata schemas, MCP agents, or API sync scripts, and other related development
+  tasks.
+confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
+  App Service (use azure-app-service), Azure Functions (use azure-functions).
 ---
 # Azure Api Center Crawl Report
 
@@ -30,10 +37,10 @@ skill_description: Expert knowledge for Azure Api Center development including b
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 33
-- **Deleted Pages**: 1
+- **Unchanged**: 35
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
 ## Classification Statistics
@@ -48,15 +55,6 @@ skill_description: Expert knowledge for Azure Api Center development including b
 | *(Unclassified)* | 14 | 40.0% |
 
 ## Changes
-
-### New Pages
-
-- [Manage APIs - Azure CLI](https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli)
-- [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills)
-
-### Deleted Pages
-
-- ~~Manage inventory - Azure CLI~~ (https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli)
 
 ## Classified Pages
 

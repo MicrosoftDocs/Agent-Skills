@@ -23,9 +23,15 @@ category_descriptions:
     Private DNS zones for high availability.
 skill_description: Expert knowledge for Azure DNS development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure DNS applications. Not for Azure Traffic Manager (use azure-traffic-manager),
+  and integrations & coding patterns. Use when managing Azure DNS zones/records via
+  CLI/PowerShell, DNSSEC, private DNS/resolvers, logging, or migrations, and other
+  related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager),
   Azure Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
+  Azure Private Link (use azure-private-link).
+use_when: Use when managing Azure DNS zones/records via CLI/PowerShell, DNSSEC, private
+  DNS/resolvers, logging, or migrations, and other related development tasks.
+confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
+  Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
   Azure Private Link (use azure-private-link).
 ---
 # Azure DNS Crawl Report

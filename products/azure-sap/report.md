@@ -31,10 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for SAP HANA on Azure Large Instances development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing SAP HANA on Azure Large
-  Instances applications. Not for Azure Large Instances (use azure-large-instances),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
-  Sets (use azure-vm-scalesets), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+  and deployment. Use when deploying SAP HANA on Azure LIs with LaMa/VM extensions,
+  ACSS, Key Vault/RBAC, Entra ID, or RISE connectivity, and other related development
+  tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
+  Azure NetApp Files (use azure-netapp-files).
+use_when: Use when deploying SAP HANA on Azure LIs with LaMa/VM extensions, ACSS,
+  Key Vault/RBAC, Entra ID, or RISE connectivity, and other related development tasks.
+confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
+  Virtual Machines (use azure-virtual-machines), Azure Baremetal Infrastructure (use
+  azure-baremetal-infrastructure), Azure NetApp Files (use azure-netapp-files).
 ---
 # SAP HANA on Azure Large Instances Crawl Report
 
@@ -48,8 +54,8 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 204
+- **Updated Pages**: 0
+- **Unchanged**: 206
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -69,13 +75,6 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | *(Unclassified)* | 25 | 12.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/faq)
-  - Updated: 2025-09-15T22:11:00Z → 2026-03-16T17:13:00Z
-- [Set up network for Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network)
-  - Updated: 2026-02-27T12:24:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

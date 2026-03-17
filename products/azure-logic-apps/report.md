@@ -30,9 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Logic Apps applications. Not for Azure
-  Functions (use azure-functions), Azure API Management (use azure-api-management),
-  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+  building B2B/EDI flows, AI/OpenAI integrations, custom connectors, hybrid CI/CD
+  deployments, or DR/HA workflows, and other related development tasks. Not for Azure
+  Functions (use azure-functions), Azure Service Bus (use azure-service-bus), Azure
+  Event Grid (use azure-event-grid), Azure API Management (use azure-api-management).
+use_when: Use when building B2B/EDI flows, AI/OpenAI integrations, custom connectors,
+  hybrid CI/CD deployments, or DR/HA workflows, and other related development tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service Bus
+  (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure API Management
+  (use azure-api-management).
 ---
 # Azure Logic Apps Crawl Report
 

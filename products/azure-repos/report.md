@@ -29,9 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Repos development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Repos applications. Not for Azure DevOps
-  (use azure-devops), Azure Artifacts (use azure-artifacts), Azure Boards (use azure-boards),
-  Azure Pipelines (use azure-pipelines).
+  managing Git/TFVC repos, branch/PR policies, CodeQL scanning, auth/permissions,
+  or repo migrations, and other related development tasks. Not for Azure DevOps (use
+  azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use azure-boards),
+  Azure Artifacts (use azure-artifacts).
+use_when: Use when managing Git/TFVC repos, branch/PR policies, CodeQL scanning, auth/permissions,
+  or repo migrations, and other related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
 ---
 # Azure Repos Crawl Report
 

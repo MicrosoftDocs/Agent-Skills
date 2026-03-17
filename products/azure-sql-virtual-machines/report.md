@@ -31,10 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for SQL Server on Azure Virtual Machines development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing SQL Server on Azure
-  Virtual Machines applications. Not for Azure SQL Database (use azure-sql-database),
-  Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm).
+  and deployment. Use when choosing SQL on Azure VM, configuring AG/FCI clusters,
+  tuning storage/VM sizing, or securing with Key Vault/Entra, and other related development
+  tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance
+  (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Site Recovery (use azure-site-recovery).
+use_when: Use when choosing SQL on Azure VM, configuring AG/FCI clusters, tuning storage/VM
+  sizing, or securing with Key Vault/Entra, and other related development tasks.
+confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
+  Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Site Recovery (use azure-site-recovery).
 ---
 # SQL Server on Azure Virtual Machines Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-ai-services
-description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI services applications. Not for Azure AI Vision (use azure-ai-vision), Azure AI Anomaly Detector (use azure-anomaly-detector), Azure AI Search (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure AI services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure AI Foundry, Content Understanding analyzers, Content Moderator APIs, VNet‑secured endpoints, or ARM/containers deployments, and other related development tasks. Not for Azure AI Foundry Local (use azure-ai-foundry-local), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure Open Datasets (use azure-open-datasets).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

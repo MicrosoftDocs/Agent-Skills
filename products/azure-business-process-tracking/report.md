@@ -4,10 +4,15 @@ category_descriptions:
   deployment: Guidance on setting up automated CI/CD pipelines to build, test, and
     deploy Azure Business Process Tracking solutions using DevOps tools and best practices.
 skill_description: Expert knowledge for Azure Business Process Tracking development
-  including deployment. Use when building, debugging, or optimizing Azure Business
-  Process Tracking applications. Not for Azure Monitor (use azure-monitor), Azure
-  Logic Apps (use azure-logic-apps), Azure Data Factory (use azure-data-factory),
-  Azure Machine Learning (use azure-machine-learning).
+  including deployment. Use when designing CI/CD pipelines, automating builds, running
+  tests, or deploying tracking components via DevOps, and other related development
+  tasks. Not for Azure Monitor (use azure-monitor), Azure Logic Apps (use azure-logic-apps),
+  Azure Data Factory (use azure-data-factory), Azure Stream Analytics (use azure-stream-analytics).
+use_when: Use when designing CI/CD pipelines, automating builds, running tests, or
+  deploying tracking components via DevOps, and other related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Logic Apps (use
+  azure-logic-apps), Azure Data Factory (use azure-data-factory), Azure Stream Analytics
+  (use azure-stream-analytics).
 ---
 # Azure Business Process Tracking Crawl Report
 

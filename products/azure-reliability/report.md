@@ -15,9 +15,15 @@ category_descriptions:
     large payloads.
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when building, debugging, or optimizing Azure Reliability applications. Not
-  for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+  Use when designing AZ zones, AKS/Functions HA, DB/messaging/IoT resilience, DR failover,
+  or Queue Storage limits, and other related development tasks. Not for Azure Resiliency
+  (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health
+  (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when designing AZ zones, AKS/Functions HA, DB/messaging/IoT resilience,
+  DR failover, or Queue Storage limits, and other related development tasks.
+confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
+  Recovery (use azure-site-recovery).
 ---
 # Azure Reliability Crawl Report
 
@@ -31,8 +37,8 @@ skill_description: Expert knowledge for Azure Reliability development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 98
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -47,11 +53,6 @@ skill_description: Expert knowledge for Azure Reliability development including 
 | *(Unclassified)* | 68 | 68.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Event Grid](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-16T22:13:00.000Z
 
 ## Classified Pages
 

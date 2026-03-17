@@ -24,9 +24,15 @@ category_descriptions:
     and how to choose Virtual WAN partners and hub locations for your network design.
 skill_description: Expert knowledge for Azure Virtual WAN development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Virtual WAN applications. Not for Azure Virtual Network (use azure-virtual-network),
+  integrations & coding patterns, and deployment. Use when designing Virtual WAN hubs,
+  P2S VPN, Azure Firewall/NVAs, ExpressRoute/SD‑WAN, or Entra ID VPN access, and other
+  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
   Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
+  Azure Traffic Manager (use azure-traffic-manager).
+use_when: Use when designing Virtual WAN hubs, P2S VPN, Azure Firewall/NVAs, ExpressRoute/SD‑WAN,
+  or Entra ID VPN access, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
   Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure Virtual WAN Crawl Report

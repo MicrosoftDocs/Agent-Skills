@@ -30,10 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure VMware Solution applications.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network
-  (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
-  (use azure-expressroute).
+  Use when designing AVS networking/ExpressRoute, vSAN/storage, HCX migrations, Citrix/Horizon
+  VDI, or JetStream DR, and other related development tasks. Not for Azure Virtual
+  Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use
+  azure-sql-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
+  SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when designing AVS networking/ExpressRoute, vSAN/storage, HCX migrations,
+  Citrix/Horizon VDI, or JetStream DR, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), SQL
+  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Baremetal
+  Infrastructure (use azure-baremetal-infrastructure), SAP HANA on Azure Large Instances
+  (use azure-sap).
 ---
 # Azure VMware Solution Crawl Report
 

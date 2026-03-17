@@ -29,9 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure AI Search applications. Not for Azure Cosmos
+  designing indexes, skillsets, semantic/vector search, indexers, or RAG/agentic retrieval
+  with Azure AI Search, and other related development tasks. Not for Azure Cosmos
   DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics).
+use_when: Use when designing indexes, skillsets, semantic/vector search, indexers,
+  or RAG/agentic retrieval with Azure AI Search, and other related development tasks.
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure AI Search Crawl Report
 
@@ -45,8 +50,8 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 298
+- **Updated Pages**: 0
+- **Unchanged**: 299
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -66,11 +71,6 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | *(Unclassified)* | 67 | 22.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

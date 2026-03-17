@@ -19,10 +19,16 @@ category_descriptions:
     refresh problems.
 skill_description: Expert knowledge for Azure Resource Graph development including
   troubleshooting, best practices, decision making, limits & quotas, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure Resource Graph applications. Not for Azure Monitor (use azure-monitor), Azure
-  Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager),
-  Azure Cost Management (use azure-cost-management).
+  and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using
+  GET/LIST vs Query, handling paging/quotas, or Power BI/Logic Apps, and other related
+  development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use
+  azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Cost Management
+  (use azure-cost-management).
+use_when: Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query, handling
+  paging/quotas, or Power BI/Logic Apps, and other related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
+  Azure Resource Manager (use azure-resource-manager), Azure Cost Management (use
+  azure-cost-management).
 ---
 # Azure Resource Graph Crawl Report
 

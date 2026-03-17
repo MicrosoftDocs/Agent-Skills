@@ -12,10 +12,15 @@ category_descriptions:
   security: 'Configuring Windows security via OSConfig: App Control for Business,
     Windows Server 2025 security baselines, and Windows LAPS with Azure Arc and Policy.'
 skill_description: Expert knowledge for Azure Osconfig development including troubleshooting,
-  security, configuration, and integrations & coding patterns. Use when building,
-  debugging, or optimizing Azure Osconfig applications. Not for Azure Update Manager
-  (use azure-update-manager), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Policy (use azure-policy).
+  security, configuration, and integrations & coding patterns. Use when running OSConfig
+  via IoT Hub to manage Linux config, SSH posture, agent health, and Windows security
+  baselines, and other related development tasks. Not for Azure Update Manager (use
+  azure-update-manager), Azure Automation (use azure-automation), Azure Policy (use
+  azure-policy).
+use_when: Use when running OSConfig via IoT Hub to manage Linux config, SSH posture,
+  agent health, and Windows security baselines, and other related development tasks.
+confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azure
+  Automation (use azure-automation), Azure Policy (use azure-policy).
 ---
 # Azure Osconfig Crawl Report
 

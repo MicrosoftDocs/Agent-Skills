@@ -15,9 +15,16 @@ category_descriptions:
     data, integrating with SQL/Synapse/Blob/Data Lake, setting up monitoring/metrics,
     and automating via PowerShell, ARM, and Bicep.'
 skill_description: Expert knowledge for Azure Data Share development including troubleshooting,
-  decision making, security, configuration, and deployment. Use when building, debugging,
-  or optimizing Azure Data Share applications. Not for Azure Data Box (use azure-data-box-family),
+  decision making, security, configuration, and deployment. Use when estimating Data
+  Share costs, managing RBAC/invitations, fixing share errors, or automating via PowerShell/ARM/Bicep,
+  and other related development tasks. Not for Azure Data Box (use azure-data-box-family),
   Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Azure Open Datasets (use azure-open-datasets).
+use_when: Use when estimating Data Share costs, managing RBAC/invitations, fixing
+  share errors, or automating via PowerShell/ARM/Bicep, and other related development
+  tasks.
+confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Data
+  Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
   Azure Open Datasets (use azure-open-datasets).
 ---
 # Azure Data Share Crawl Report

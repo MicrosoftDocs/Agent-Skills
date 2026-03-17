@@ -23,10 +23,16 @@ category_descriptions:
     tools/logs.
 skill_description: Expert knowledge for Azure Static Web Apps development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Static Web Apps applications. Not for Azure App Service (use azure-app-service),
-  Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+  & coding patterns, and deployment. Use when wiring SWA to Azure DBs, configuring
+  Functions backends, auth/roles, CI/CD pipelines, or Front Door/CDN, and other related
+  development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring
+  Apps (use azure-spring-apps).
+use_when: Use when wiring SWA to Azure DBs, configuring Functions backends, auth/roles,
+  CI/CD pipelines, or Front Door/CDN, and other related development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring
+  Apps (use azure-spring-apps).
 ---
 # Azure Static Web Apps Crawl Report
 

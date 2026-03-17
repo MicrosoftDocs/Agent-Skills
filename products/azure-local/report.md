@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Local development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Local applications. Not for Azure AI Foundry
+  deploying Azure Local clusters, SDN/NSGs, Arc-enabled VMs, disconnected setups,
+  or Defender integration, and other related development tasks. Not for Azure AI Foundry
   Local (use azure-ai-foundry-local), Azure Foundry Classic (use azure-foundry-classic),
-  Microsoft Foundry (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
+  Microsoft Foundry (use azure-microsoft-foundry), Azure Stack Edge (use azure-stack-edge).
+use_when: Use when deploying Azure Local clusters, SDN/NSGs, Arc-enabled VMs, disconnected
+  setups, or Defender integration, and other related development tasks.
+confusable_not_for: Not for Azure AI Foundry Local (use azure-ai-foundry-local), Azure
+  Foundry Classic (use azure-foundry-classic), Microsoft Foundry (use azure-microsoft-foundry),
+  Azure Stack Edge (use azure-stack-edge).
 ---
 # Azure Local Crawl Report
 

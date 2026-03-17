@@ -14,9 +14,17 @@ category_descriptions:
     payloads.
 skill_description: Expert knowledge for Azure Data Manager for Agriculture development
   including limits & quotas, security, configuration, and integrations & coding patterns.
-  Use when building, debugging, or optimizing Azure Data Manager for Agriculture applications.
-  Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
+  Use when ingesting farm data, configuring IoT jobs, calling nutrient/AI APIs, or
+  setting diagnostics and Event Grid events, and other related development tasks.
+  Not for Azure Energy Data Services (use azure-energy-data-services), Azure Data
+  Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Azure Synapse Analytics (use azure-synapse-analytics).
+use_when: Use when ingesting farm data, configuring IoT jobs, calling nutrient/AI
+  APIs, or setting diagnostics and Event Grid events, and other related development
+  tasks.
+confusable_not_for: Not for Azure Energy Data Services (use azure-energy-data-services),
+  Azure Data Explorer (use azure-data-explorer), Azure Data Factory (use azure-data-factory),
+  Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure Data Manager for Agriculture Crawl Report
 

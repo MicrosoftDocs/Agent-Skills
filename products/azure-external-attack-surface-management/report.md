@@ -11,10 +11,17 @@ category_descriptions:
     asset, and how asset counts affect costs and quotas.
 skill_description: Expert knowledge for Azure External Attack Surface Management development
   including limits & quotas, configuration, and integrations & coding patterns. Use
-  when building, debugging, or optimizing Azure External Attack Surface Management
-  applications. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure
-  Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Firewall
-  (use azure-firewall).
+  when querying EASM assets, setting policy rules, exporting to Log Analytics or Data
+  Explorer, or managing billable asset counts, and other related development tasks.
+  Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security
+  (use azure-security), Azure Sentinel (use azure-sentinel), Azure Firewall Manager
+  (use azure-firewall-manager).
+use_when: Use when querying EASM assets, setting policy rules, exporting to Log Analytics
+  or Data Explorer, or managing billable asset counts, and other related development
+  tasks.
+confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
+  Firewall Manager (use azure-firewall-manager).
 ---
 # Azure External Attack Surface Management Crawl Report
 

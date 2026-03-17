@@ -18,10 +18,17 @@ category_descriptions:
     insert/query/update/delete entities, and script common data operations.'
 skill_description: Expert knowledge for Azure Table Storage development including
   best practices, architecture & design patterns, limits & quotas, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure Table Storage applications. Not for Azure Cosmos DB (use azure-cosmos-db),
-  Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage),
+  and integrations & coding patterns. Use when managing Entra ID/RBAC access, monitoring
+  metrics/logs, tuning partitions/keys, or scripting tables via PowerShell, and other
+  related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure
+  Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage),
   Azure Files (use azure-files).
+use_when: Use when managing Entra ID/RBAC access, monitoring metrics/logs, tuning
+  partitions/keys, or scripting tables via PowerShell, and other related development
+  tasks.
+confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage
+  (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage), Azure Files
+  (use azure-files).
 ---
 # Azure Table Storage Crawl Report
 

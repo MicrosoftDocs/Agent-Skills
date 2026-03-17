@@ -30,9 +30,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Data Factory applications. Not for Azure
-  Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+  building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key Vault,
+  or SSIS migration, and other related development tasks. Not for Azure Data Explorer
+  (use azure-data-explorer), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
+use_when: Use when building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key
+  Vault, or SSIS migration, and other related development tasks.
+confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Stream
+  Analytics (use azure-stream-analytics), Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Data Factory Crawl Report
 

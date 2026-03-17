@@ -19,9 +19,15 @@ category_descriptions:
     bot, including setup steps, required permissions, and integration details.
 skill_description: Expert knowledge for Azure Sre Agent development including troubleshooting,
   decision making, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Sre
-  Agent applications. Not for Azure Monitor (use azure-monitor), Azure Reliability
+  patterns, and deployment. Use when configuring SRE Agent bots, KQL log queries,
+  DevOps/incident tool hooks, RBAC/MI access, or Teams deployment, and other related
+  development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability
   (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Site Recovery
+  (use azure-site-recovery).
+use_when: Use when configuring SRE Agent bots, KQL log queries, DevOps/incident tool
+  hooks, RBAC/MI access, or Teams deployment, and other related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
+  azure-reliability), Azure Resiliency (use azure-resiliency), Azure Site Recovery
   (use azure-site-recovery).
 ---
 # Azure Sre Agent Crawl Report

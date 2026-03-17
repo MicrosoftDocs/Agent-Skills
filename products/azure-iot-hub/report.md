@@ -30,9 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure IoT Hub development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure IoT Hub applications. Not for Azure IoT
+  provisioning devices with DPS, using twins/jobs, routing D2C data, Device Update,
+  or VNet/private endpoints, and other related development tasks. Not for Azure IoT
   (use azure-iot), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use
   azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+use_when: Use when provisioning devices with DPS, using twins/jobs, routing D2C data,
+  Device Update, or VNet/private endpoints, and other related development tasks.
+confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
+  Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 ---
 # Azure IoT Hub Crawl Report
 

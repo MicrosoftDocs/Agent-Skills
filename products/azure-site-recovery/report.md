@@ -30,9 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Site Recovery development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Site Recovery applications. Not
-  for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  Use when planning ASR for VMware/Hyper‑V, configuring replication/failover, scripting
+  with PowerShell/Bicep, or securing traffic, and other related development tasks.
+  Not for Azure Backup (use azure-backup), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when planning ASR for VMware/Hyper‑V, configuring replication/failover,
+  scripting with PowerShell/Bicep, or securing traffic, and other related development
+  tasks.
+confusable_not_for: Not for Azure Backup (use azure-backup), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Site Recovery Crawl Report
 

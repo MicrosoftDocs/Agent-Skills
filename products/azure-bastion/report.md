@@ -22,9 +22,15 @@ category_descriptions:
     to collect logs for support.
 skill_description: Expert knowledge for Azure Bastion development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure Bastion applications. Not for Azure Virtual Network (use azure-virtual-network),
+  and integrations & coding patterns. Use when configuring Bastion for AKS private
+  clusters, VM scale sets, IP-based access, Kerberos, or native SSH/RDP clients, and
+  other related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
   Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure Firewall (use azure-firewall).
+use_when: Use when configuring Bastion for AKS private clusters, VM scale sets, IP-based
+  access, Kerberos, or native SSH/RDP clients, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
   Azure Firewall (use azure-firewall).
 ---
 # Azure Bastion Crawl Report

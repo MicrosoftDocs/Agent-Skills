@@ -1,6 +1,6 @@
 ---
 name: azure-app-testing
-description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Testing applications. Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces (use azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure App Testing development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright tests, CI/CD, or Playwright Workspaces, and other related development tasks. Not for Azure Test Plans (use azure-test-plans), Azure App Service (use azure-app-service), Playwright Workspaces (use azure-playwright-workspaces).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

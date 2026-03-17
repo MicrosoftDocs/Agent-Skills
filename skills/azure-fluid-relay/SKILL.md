@@ -1,6 +1,6 @@
 ---
 name: azure-fluid-relay
-description: Expert knowledge for Azure Fluid Relay development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Fluid Relay applications. Not for Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service), Azure Relay (use azure-relay), Azure Service Bus (use azure-service-bus).
+description: Expert knowledge for Azure Fluid Relay development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when issuing JWTs, using AzureClient and audience APIs, deleting containers via CLI, or handling quotas and throttling, and other related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service), Azure Relay (use azure-relay), Azure Service Bus (use azure-service-bus).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

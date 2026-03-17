@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Service Bus applications. Not for Azure
-  Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure
-  Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+  working with queues/topics, sessions, filters/rules, Premium scaling, or geo-disaster
+  recovery, and other related development tasks. Not for Azure Event Hubs (use azure-event-hubs),
+  Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage),
+  Azure Relay (use azure-relay).
+use_when: Use when working with queues/topics, sessions, filters/rules, Premium scaling,
+  or geo-disaster recovery, and other related development tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid
+  (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay
+  (use azure-relay).
 ---
 # Azure Service Bus Crawl Report
 

@@ -25,10 +25,16 @@ category_descriptions:
     patterns to handle large loads reliably.'
 skill_description: Expert knowledge for Azure Application Gateway development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Application Gateway applications. Not for Azure Load Balancer (use
-  azure-load-balancer), Azure Front Door (use azure-front-door), Azure Virtual Network
-  (use azure-virtual-network), Azure Web Application Firewall (use azure-web-application-firewall).
+  integrations & coding patterns, and deployment. Use when configuring listeners/routing,
+  WAF/TLS, AGIC with AKS, autoscale/zone redundancy, or App Gateway for Containers,
+  and other related development tasks. Not for Azure Front Door (use azure-front-door),
+  Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager),
+  Azure Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when configuring listeners/routing, WAF/TLS, AGIC with AKS, autoscale/zone
+  redundancy, or App Gateway for Containers, and other related development tasks.
+confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load Balancer
+  (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure
+  Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure Application Gateway Crawl Report
 
@@ -42,8 +48,8 @@ skill_description: Expert knowledge for Azure Application Gateway development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 173
+- **Updated Pages**: 0
+- **Unchanged**: 174
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -62,11 +68,6 @@ skill_description: Expert knowledge for Azure Application Gateway development in
 | *(Unclassified)* | 44 | 25.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [SSL termination and end to end SSL](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-overview)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-13T08:00:00.000Z
 
 ## Classified Pages
 

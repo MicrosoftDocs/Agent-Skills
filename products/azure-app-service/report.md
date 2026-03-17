@@ -30,9 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Service development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure App Service applications. Not for Azure
+  configuring App Service plans/ASE, auth (Entra/OIDC), managed identity + Key Vault/SQL,
+  CI/CD slots, or VNet integration, and other related development tasks. Not for Azure
   Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
   Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
+use_when: Use when configuring App Service plans/ASE, auth (Entra/OIDC), managed identity
+  + Key Vault/SQL, CI/CD slots, or VNet integration, and other related development
+  tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Container
+  Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure
+  Static Web Apps (use azure-static-web-apps).
 ---
 # Azure App Service Crawl Report
 

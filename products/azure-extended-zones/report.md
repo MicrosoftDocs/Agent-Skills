@@ -9,10 +9,17 @@ category_descriptions:
   decision-making: Guidance on when and how to buy Reserved Instances or Savings Plans
     for Extended Zones, including cost considerations, eligibility, and purchase workflows.
 skill_description: Expert knowledge for Azure Extended Zones development including
-  decision making, security, and configuration. Use when building, debugging, or optimizing
-  Azure Extended Zones applications. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan), Azure Reliability (use azure-reliability).
+  decision making, security, and configuration. Use when registering subscriptions,
+  requesting zone access, authoring Azure Policy, CMK disk encryption, or buying RIs/Savings
+  Plans, and other related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic
+  Manager (use azure-traffic-manager).
+use_when: Use when registering subscriptions, requesting zone access, authoring Azure
+  Policy, CMK disk encryption, or buying RIs/Savings Plans, and other related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
+  Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic Manager
+  (use azure-traffic-manager).
 ---
 # Azure Extended Zones Crawl Report
 

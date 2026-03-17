@@ -16,7 +16,14 @@ category_descriptions:
     patterns.
 skill_description: Expert knowledge for Azure Artifact Signing development including
   best practices, decision making, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Artifact Signing applications.
+  patterns. Use when managing signing certificates, RBAC roles, DGSSv2 migration,
+  diagnostic logs, or CI/CD signing workflows, and other related development tasks.
+  Not for Azure Artifacts (use azure-artifacts), Azure Key Vault (use azure-key-vault),
+  Azure Information Protection (use azure-information-protection).
+use_when: Use when managing signing certificates, RBAC roles, DGSSv2 migration, diagnostic
+  logs, or CI/CD signing workflows, and other related development tasks.
+confusable_not_for: Not for Azure Artifacts (use azure-artifacts), Azure Key Vault
+  (use azure-key-vault), Azure Information Protection (use azure-information-protection).
 ---
 # Azure Artifact Signing Crawl Report
 

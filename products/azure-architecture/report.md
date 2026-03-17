@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
-  example-workloads: 'End-to-end reference architectures and patterns for real-world
-    Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe,
-    and app modernization scenarios.'
+  example-workloads: End-to-end reference architectures and patterns for real-world
+    Azure workloads, covering data/AI pipelines, security, hybrid/AKS, networking,
+    storage, and app modernization implementations.
   reference-architectures: End-to-end Azure reference designs for mission-critical,
     hybrid, and AI/data workloads, covering networking, security, DR, AKS, App Service,
     data platforms, and integration patterns.
@@ -31,8 +31,10 @@ category_descriptions:
 skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
   Covers reference architectures, solution ideas, design patterns, technology choices,
   architecture styles, best practices, anti-patterns, example workloads, and migration
-  guides. Use when selecting architecture patterns, choosing Azure services, or implementing
-  production-ready solutions.
+  guides. Use when designing AKS or App Service apps, data/AI pipelines, IoT or SAP
+  solutions, or AWS/on‑prem migrations, and other related development tasks.
+use_when: Use when designing AKS or App Service apps, data/AI pipelines, IoT or SAP
+  solutions, or AWS/on‑prem migrations, and other related development tasks.
 ---
 # Azure Architecture Crawl Report
 
@@ -46,8 +48,8 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 444
+- **Updated Pages**: 2
+- **Unchanged**: 442
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -67,6 +69,13 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 | *(Unclassified)* | 109 | 24.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
+  - Updated: 2026-03-10T17:32:00.000Z → 2026-03-16T08:00:00.000Z
+- [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway)
+  - Updated: 2025-03-07T18:30:00Z → 2026-03-17T05:10:00.000Z
 
 ## Classified Pages
 
@@ -325,7 +334,7 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 | [Protect APIs by using Application Gateway and API Management](https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis) | best-practices | 0.78 | Applies Gateway Routing pattern with concrete configuration of App Gateway and APIM for API security; includes prescriptive security and routing guidance. |
 | [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | best-practices | 0.78 | The page provides concrete recommendations and proven practices for architecting a secure, high-performing, and resilient SAP landscape on Azure with a focus on network design. This is implementation-focused guidance (what to do and how) for a specific complex workload rather than a generic overview, fitting the best-practices category more than the others listed. |
 | [Storage options](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/storage) | migration-guides | 0.78 | Compares storage capabilities and workload data options between EKS and AKS, with Azure-specific storage choices. This is expert, cross-cloud migration guidance under aws-professional/eks-to-aks. |
-| [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway) | example-workloads | 0.78 | example-scenario/gateway URL; describes concrete use of Azure Firewall, App Gateway, DDoS, and related services with best practices for securing VNets. |
+| [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway) | example-workloads | 0.78 | URL path contains example-scenario/, and the page describes a concrete security architecture for application workloads using Azure Firewall, Application Gateway, DDoS Protection, and Virtual Network. It goes beyond a high-level solution idea by giving scenario-specific implementation guidance and best practices for inbound and outbound flows, but it is framed as a scenario rather than a generic, fully productized reference architecture. This constitutes expert, scenario-specific implementation knowledge about combining these services. |
 | [Cross-tenant secure access to apps](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints) | example-workloads | 0.76 | Guide for securing cross-tenant access to web and function apps using private endpoints with detailed configuration and design considerations. |
 | [Deploy highly available NVAs](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/network-virtual-appliance-high-availability) | best-practices | 0.76 | Describes multiple HA deployment models for NVAs with concrete Azure constructs and traffic flows; prescriptive implementation guidance. |
 | [Hybrid availability and monitoring](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-perf-monitoring) | example-workloads | 0.76 | Hybrid monitoring reference architecture with concrete use of Azure Monitor for VMs across Azure, on-premises, and other clouds. |
@@ -520,4 +529,4 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 | [Use the Azure Governance Visualizer](https://learn.microsoft.com/en-us/azure/architecture/landing-zones/azure-governance-visualizer-accelerator) | - | Deployment guidance for Azure Governance Visualizer is a tool-specific implementation article under landing-zones/, not one of the defined architecture sub-skill types (no patterns/, solution-ideas/, reference-architectures/, best-practices/, etc. in path). It focuses on automating runs and outputs rather than reusable cloud architecture, patterns, or technology choices. |
 | [VM baseline](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
 | [VM baseline in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline-landing-zone) | - | Parse error: Expecting value: line 1 column 1 (char 0) |
-| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | - | Changelog/navigation page listing new and updated Azure Architecture Center articles; does not itself contain architectural guidance, patterns, or implementation details. |
+| [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog) | - | Changelog/navigation page listing new and updated Azure Architecture Center articles; does not itself contain detailed architectures, patterns, or implementation guidance. |

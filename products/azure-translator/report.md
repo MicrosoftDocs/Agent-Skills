@@ -26,9 +26,15 @@ category_descriptions:
     Tools, plus understanding HTTP status/error codes and their causes and resolutions.
 skill_description: Expert knowledge for Azure Translator development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Translator applications. Not for Azure AI Language (use azure-language-service),
+  & coding patterns, and deployment. Use when using Translator text/document APIs,
+  custom models, glossaries, Docker containers, or dynamic dictionaries, and other
+  related development tasks. Not for Azure AI Language (use azure-language-service),
   Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader),
+  Azure AI Search (use azure-cognitive-search).
+use_when: Use when using Translator text/document APIs, custom models, glossaries,
+  Docker containers, or dynamic dictionaries, and other related development tasks.
+confusable_not_for: Not for Azure AI Language (use azure-language-service), Azure
+  AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader),
   Azure AI Search (use azure-cognitive-search).
 ---
 # Azure Translator Crawl Report

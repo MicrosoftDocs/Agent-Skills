@@ -16,10 +16,16 @@ category_descriptions:
     extension and troubleshooting Helm chart installation failures in AOSM CNF deployments.
 skill_description: Expert knowledge for Azure Operator Service Manager development
   including troubleshooting, best practices, security, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Operator Service
-  Manager applications. Not for Azure Operator Nexus (use azure-operator-nexus), Azure
-  Operator Insights (use azure-operator-insights), Azure Network Function Manager
-  (use azure-network-function-manager).
+  & coding patterns. Use when onboarding CNFs/VNFs via CLI/ARM/Helm, managing ACR
+  artifacts, configuring cluster registry, or Private Link, and other related development
+  tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator
+  Nexus (use azure-operator-nexus), Azure Network Function Manager (use azure-network-function-manager),
+  Azure Networking (use azure-networking).
+use_when: Use when onboarding CNFs/VNFs via CLI/ARM/Helm, managing ACR artifacts,
+  configuring cluster registry, or Private Link, and other related development tasks.
+confusable_not_for: Not for Azure Operator Insights (use azure-operator-insights),
+  Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager
+  (use azure-network-function-manager), Azure Networking (use azure-networking).
 ---
 # Azure Operator Service Manager Crawl Report
 

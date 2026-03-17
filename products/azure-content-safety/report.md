@@ -21,10 +21,16 @@ category_descriptions:
     and detecting protected/third‑party code in model outputs.
 skill_description: Expert knowledge for Azure AI Content Safety development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when building, debugging,
-  or optimizing Azure AI Content Safety applications. Not for Azure Information Protection
-  (use azure-information-protection), Azure Security (use azure-security), Azure Defender
-  For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
+  limits & quotas, security, configuration, and deployment. Use when using Content
+  Safety APIs, Docker containers, blocklists, custom safety categories, or prompt
+  shield, and other related development tasks. Not for Azure AI services (use azure-ai-services),
+  Azure AI Foundry Local (use azure-ai-foundry-local), Azure AI Search (use azure-cognitive-search),
+  Azure Security (use azure-security).
+use_when: Use when using Content Safety APIs, Docker containers, blocklists, custom
+  safety categories, or prompt shield, and other related development tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Foundry
+  Local (use azure-ai-foundry-local), Azure AI Search (use azure-cognitive-search),
+  Azure Security (use azure-security).
 ---
 # Azure AI Content Safety Crawl Report
 

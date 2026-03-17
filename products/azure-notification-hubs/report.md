@@ -26,9 +26,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Notification Hubs development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when building, debugging, or optimizing Azure Notification Hubs applications. Not
-  for Azure Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus),
-  Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
+  when implementing FCM/APNS/WNS pushes, tags/templates, multi-tenant hubs, Private
+  Link, or scheduled notifications, and other related development tasks. Not for Azure
+  Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
+  Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
+use_when: Use when implementing FCM/APNS/WNS pushes, tags/templates, multi-tenant
+  hubs, Private Link, or scheduled notifications, and other related development tasks.
+confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Service
+  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure SignalR
+  Service (use azure-signalr-service).
 ---
 # Azure Notification Hubs Crawl Report
 

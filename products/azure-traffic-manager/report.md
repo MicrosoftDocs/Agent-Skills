@@ -19,10 +19,16 @@ category_descriptions:
     and diagnosing/fixing degraded profiles, misconfigurations, and routing issues.
 skill_description: Expert knowledge for Azure Traffic Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  configuration, and integrations & coding patterns. Use when building, debugging,
-  or optimizing Azure Traffic Manager applications. Not for Azure Front Door (use
-  azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Application
-  Gateway (use azure-application-gateway), Azure Virtual WAN (use azure-virtual-wan).
+  configuration, and integrations & coding patterns. Use when configuring profiles/endpoints,
+  routing methods, RUM JS, nested profiles, or Traffic View analytics, and other related
+  development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway),
+  Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when configuring profiles/endpoints, routing methods, RUM JS, nested
+  profiles, or Traffic View analytics, and other related development tasks.
+confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load Balancer
+  (use azure-load-balancer), Azure Application Gateway (use azure-application-gateway),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Traffic Manager Crawl Report
 

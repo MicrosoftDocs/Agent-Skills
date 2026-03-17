@@ -27,9 +27,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cache for Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Cache for Redis applications. Not for Azure
-  Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache),
-  Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
+  configuring geo-replication, persistence, VNet/Private Link, CLI/PowerShell automation,
+  or Blob import/export, and other related development tasks. Not for Azure Managed
+  Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache), Azure Blob
+  Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
+use_when: Use when configuring geo-replication, persistence, VNet/Private Link, CLI/PowerShell
+  automation, or Blob import/export, and other related development tasks.
+confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure HPC
+  Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure
+  Table Storage (use azure-table-storage).
 ---
 # Azure Cache for Redis Crawl Report
 

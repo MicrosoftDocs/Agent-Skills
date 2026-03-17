@@ -31,10 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure SQL Database applications. Not for Azure
-  Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use
-  azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql),
-  Azure SQL Managed Instance (use azure-sql-managed-instance).
+  choosing tiers/pricing, configuring geo-replication/HA, using Hyperscale, Data Sync,
+  or EF Core app integration, and other related development tasks. Not for Azure Database
+  for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql),
+  Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed
+  Instance (use azure-sql-managed-instance).
+use_when: Use when choosing tiers/pricing, configuring geo-replication/HA, using Hyperscale,
+  Data Sync, or EF Core app integration, and other related development tasks.
+confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
+  Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL
+  (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure SQL Database Crawl Report
 

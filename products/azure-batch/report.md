@@ -30,10 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Batch applications. Not for Azure Container
+  creating Batch pools, autoscaling jobs, using SDK/CLI, storing outputs in Storage,
+  or bursting render farms, and other related development tasks. Not for Azure Container
   Instances (use azure-container-instances), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Virtual Machines
   (use azure-virtual-machines).
+use_when: Use when creating Batch pools, autoscaling jobs, using SDK/CLI, storing
+  outputs in Storage, or bursting render farms, and other related development tasks.
+confusable_not_for: Not for Azure Container Instances (use azure-container-instances),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machine
+  Scale Sets (use azure-vm-scalesets), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Batch Crawl Report
 

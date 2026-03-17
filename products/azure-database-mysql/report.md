@@ -31,10 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for MySQL development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Database for MySQL applications.
-  Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database
+  Use when deploying MySQL Flexible Server, configuring VNet/Private Link, tuning
+  performance, managing HA/replicas, or migrations, and other related development
+  tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database
   for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+  Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when deploying MySQL Flexible Server, configuring VNet/Private Link,
+  tuning performance, managing HA/replicas, or migrations, and other related development
+  tasks.
+confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
+  Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database
+  (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure Database for MySQL Crawl Report
 

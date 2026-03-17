@@ -31,9 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Monitor development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Monitor applications. Not for Azure Network
-  Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health),
-  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security).
+  working with Log Analytics/AMA, Application Insights, alerts/autoscale, workbooks,
+  or KQL-based log/metric queries, and other related development tasks. Not for Azure
+  Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health),
+  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Managed Grafana (use
+  azure-managed-grafana).
+use_when: Use when working with Log Analytics/AMA, Application Insights, alerts/autoscale,
+  workbooks, or KQL-based log/metric queries, and other related development tasks.
+confusable_not_for: Not for Azure Network Watcher (use azure-network-watcher), Azure
+  Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud),
+  Azure Managed Grafana (use azure-managed-grafana).
 ---
 # Azure Monitor Crawl Report
 

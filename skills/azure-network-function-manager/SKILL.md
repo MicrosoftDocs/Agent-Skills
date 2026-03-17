@@ -1,6 +1,6 @@
 ---
 name: azure-network-function-manager
-description: Expert knowledge for Azure Network Function Manager development including security, and configuration. Use when building, debugging, or optimizing Azure Network Function Manager applications. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Network Function Manager development including security, and configuration. Use when defining NF prerequisites, assigning roles, wiring VNets, configuring managed identities, or securing NF access, and other related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual Network (use azure-virtual-network), Azure Firewall Manager (use azure-firewall-manager), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

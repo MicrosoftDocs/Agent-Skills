@@ -17,9 +17,15 @@ category_descriptions:
     experiments into automated workflows
 skill_description: Expert knowledge for Chaos Studio development including troubleshooting,
   limits & quotas, security, configuration, and integrations & coding patterns. Use
-  when building, debugging, or optimizing Chaos Studio applications. Not for Azure
-  Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure Reliability
-  (use azure-reliability), Azure Defender For Cloud (use azure-defender-for-cloud).
+  when defining ARM/Bicep experiments, deploying Chaos Agents, using CLI/REST APIs,
+  or wiring telemetry to App Insights, and other related development tasks. Not for
+  Azure Monitor (use azure-monitor), Azure Resiliency (use azure-resiliency), Azure
+  Reliability (use azure-reliability), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when defining ARM/Bicep experiments, deploying Chaos Agents, using CLI/REST
+  APIs, or wiring telemetry to App Insights, and other related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency (use
+  azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery
+  (use azure-site-recovery).
 ---
 # Chaos Studio Crawl Report
 

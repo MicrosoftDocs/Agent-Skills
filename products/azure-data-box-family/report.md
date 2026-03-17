@@ -20,9 +20,15 @@ category_descriptions:
     data import/export.
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when building, debugging, or optimizing Azure Data Box applications.
+  patterns. Use when handling Data Box/Disk orders, SMB/NFS copies, TLS certs, Key
+  Vault keys, or VHD-to-managed-disk imports, and other related development tasks.
   Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use azure-stack-edge),
-  Azure Virtual Machines (use azure-virtual-machines).
+  Azure Blob Storage (use azure-blob-storage), Azure Files (use azure-files).
+use_when: Use when handling Data Box/Disk orders, SMB/NFS copies, TLS certs, Key Vault
+  keys, or VHD-to-managed-disk imports, and other related development tasks.
+confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
+  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
+  Files (use azure-files).
 ---
 # Azure Data Box Crawl Report
 

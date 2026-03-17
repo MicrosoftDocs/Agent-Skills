@@ -1,6 +1,6 @@
 ---
 name: azure-custom-vision
-description: Expert knowledge for Azure AI Custom Vision development including best practices, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Custom Vision applications. Not for Azure AI Vision (use azure-ai-vision), Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search).
+description: Expert knowledge for Azure AI Custom Vision development including best practices, decision making, limits & quotas, security, integrations & coding patterns, and deployment. Use when exporting Custom Vision models, calling prediction APIs, using ONNX/TensorFlow, CMK encryption, or Smart Labeler, and other related development tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

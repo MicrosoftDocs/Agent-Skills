@@ -27,9 +27,15 @@ category_descriptions:
     capacity planning guidance.'
 skill_description: Expert knowledge for Azure AI Speech development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  AI Speech applications. Not for Azure AI services (use azure-ai-services), Azure
-  AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+  & coding patterns, and deployment. Use when building STT/TTS, custom speech or neural
+  voices, Voice Live agents, batch synthesis, or speech translation, and other related
+  development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Language
+  (use azure-language-service), Azure AI Immersive Reader (use azure-immersive-reader),
+  Azure Translator (use azure-translator).
+use_when: Use when building STT/TTS, custom speech or neural voices, Voice Live agents,
+  batch synthesis, or speech translation, and other related development tasks.
+confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Language
+  (use azure-language-service), Azure AI Immersive Reader (use azure-immersive-reader),
   Azure Translator (use azure-translator).
 ---
 # Azure AI Speech Crawl Report
@@ -44,8 +50,8 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 178
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -64,11 +70,6 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 | *(Unclassified)* | 73 | 40.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions)
-  - Updated: 2026-01-30T18:18:00.000Z → 2026-03-16T17:27:00.000Z
 
 ## Classified Pages
 

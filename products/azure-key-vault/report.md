@@ -25,10 +25,16 @@ category_descriptions:
     keys, secrets) using ARM templates, Bicep, Terraform, Azure CLI, and PowerShell
 skill_description: Expert knowledge for Azure Key Vault development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Key Vault applications. Not for Azure Information Protection (use azure-information-protection),
-  Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Cloud Hsm (use azure-cloud-hsm).
+  & coding patterns, and deployment. Use when managing keys/secrets, RBAC vs access
+  policies, Private Link, key rotation/backup, or ARM/Bicep/Terraform deploys, and
+  other related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm),
+  Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm),
+  Azure Attestation (use azure-attestation).
+use_when: Use when managing keys/secrets, RBAC vs access policies, Private Link, key
+  rotation/backup, or ARM/Bicep/Terraform deploys, and other related development tasks.
+confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud
+  Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation
+  (use azure-attestation).
 ---
 # Azure Key Vault Crawl Report
 

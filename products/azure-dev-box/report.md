@@ -21,8 +21,14 @@ category_descriptions:
     setup, authentication, and remote development workflow configuration.
 skill_description: Expert knowledge for Azure Dev Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when building, debugging, or optimizing Azure Dev
-  Box applications. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
+  patterns, and deployment. Use when designing Dev Box images, configuring catalogs/policies,
+  managing quotas, securing access, or fixing RDP issues, and other related development
+  tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
+  Azure Lab Services (use azure-lab-services).
+use_when: Use when designing Dev Box images, configuring catalogs/policies, managing
+  quotas, securing access, or fixing RDP issues, and other related development tasks.
+confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
   Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
   Azure Lab Services (use azure-lab-services).
 ---

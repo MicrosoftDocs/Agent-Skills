@@ -1,6 +1,6 @@
 ---
 name: azure-oracle
-description: Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when building, debugging, or optimizing Azure Oracle applications. Not for SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure SQL Database (use azure-sql-database), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when configuring Oracle Database@Azure connectivity, TDE with Key Vault, VNets, Exadata logs, or Sentinel pipelines, and other related development tasks. Not for SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure SQL Database (use azure-sql-database), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

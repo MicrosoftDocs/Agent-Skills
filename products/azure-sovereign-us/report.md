@@ -21,10 +21,16 @@ category_descriptions:
     US regions.'
 skill_description: Expert knowledge for Azure US Government development including
   decision making, architecture & design patterns, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  US Government applications. Not for Azure Local (use azure-local), Azure Stack Edge
-  (use azure-stack-edge), Azure Virtual Network (use azure-virtual-network), Azure
-  Security (use azure-security).
+  & coding patterns, and deployment. Use when handling FedRAMP/DoD IL5 scope, SACA
+  patterns, Gov Marketplace publishing, Entra auth, or Gov Storage/SQL APIs, and other
+  related development tasks. Not for Azure Security (use azure-security), Azure Networking
+  (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure
+  Resource Manager (use azure-resource-manager).
+use_when: Use when handling FedRAMP/DoD IL5 scope, SACA patterns, Gov Marketplace
+  publishing, Entra auth, or Gov Storage/SQL APIs, and other related development tasks.
+confusable_not_for: Not for Azure Security (use azure-security), Azure Networking
+  (use azure-networking), Azure Virtual Network (use azure-virtual-network), Azure
+  Resource Manager (use azure-resource-manager).
 ---
 # Azure US Government Crawl Report
 

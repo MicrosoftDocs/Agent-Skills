@@ -1,6 +1,6 @@
 ---
 name: azure-business-process-tracking
-description: Expert knowledge for Azure Business Process Tracking development including deployment. Use when building, debugging, or optimizing Azure Business Process Tracking applications. Not for Azure Monitor (use azure-monitor), Azure Logic Apps (use azure-logic-apps), Azure Data Factory (use azure-data-factory), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Business Process Tracking development including deployment. Use when designing CI/CD pipelines, automating builds, running tests, or deploying tracking components via DevOps, and other related development tasks. Not for Azure Monitor (use azure-monitor), Azure Logic Apps (use azure-logic-apps), Azure Data Factory (use azure-data-factory), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

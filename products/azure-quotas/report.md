@@ -4,9 +4,15 @@ category_descriptions:
   limits-quotas: How to request and manage per-region Azure Storage account quota
     increases, including limits, prerequisites, and support request steps.
 skill_description: Expert knowledge for Azure Quotas development including limits
-  & quotas. Use when building, debugging, or optimizing Azure Quotas applications.
-  Not for Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management),
-  Azure Resource Manager (use azure-resource-manager), Azure Policy (use azure-policy).
+  & quotas. Use when requesting per-region Storage account quota increases, checking
+  limits, or creating support requests, and other related development tasks. Not for
+  Azure Monitor (use azure-monitor), Azure Cost Management (use azure-cost-management),
+  Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager).
+use_when: Use when requesting per-region Storage account quota increases, checking
+  limits, or creating support requests, and other related development tasks.
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Cost Management
+  (use azure-cost-management), Azure Policy (use azure-policy), Azure Resource Manager
+  (use azure-resource-manager).
 ---
 # Azure Quotas Crawl Report
 

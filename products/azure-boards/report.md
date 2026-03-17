@@ -19,9 +19,14 @@ category_descriptions:
     access, and setting access controls and policies to protect work items and boards.'
 skill_description: Expert knowledge for Azure Boards development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, and integrations
-  & coding patterns. Use when building, debugging, or optimizing Azure Boards applications.
+  & coding patterns. Use when configuring Boards processes, Kanban/WIP, GitHub/Excel
+  integrations, WIQL queries, or permissions, and other related development tasks.
   Not for Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines),
-  Azure Test Plans (use azure-test-plans), Azure Repos (use azure-repos).
+  Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when configuring Boards processes, Kanban/WIP, GitHub/Excel integrations,
+  WIQL queries, or permissions, and other related development tasks.
+confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
 # Azure Boards Crawl Report
 

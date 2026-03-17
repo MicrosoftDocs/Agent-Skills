@@ -18,9 +18,15 @@ category_descriptions:
     plans.
 skill_description: Expert knowledge for Azure DDos Protection development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  security, and configuration. Use when building, debugging, or optimizing Azure DDos
-  Protection applications. Not for Azure Firewall (use azure-firewall), Azure Firewall
-  Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall),
+  security, and configuration. Use when deploying DDoS plans, configuring IP/Network
+  Protection, using GWLB L7 inline, or engaging DDoS Rapid Response, and other related
+  development tasks. Not for Azure Firewall (use azure-firewall), Azure Web Application
+  Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
+  Azure Traffic Manager (use azure-traffic-manager).
+use_when: Use when deploying DDoS plans, configuring IP/Network Protection, using
+  GWLB L7 inline, or engaging DDoS Rapid Response, and other related development tasks.
+confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Web Application
+  Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network),
   Azure Traffic Manager (use azure-traffic-manager).
 ---
 # Azure DDos Protection Crawl Report

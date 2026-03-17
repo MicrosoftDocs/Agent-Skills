@@ -11,10 +11,16 @@ category_descriptions:
     including how to assess, adjust, and enforce protections for resilient workloads
     and infrastructure.
 skill_description: Expert knowledge for Azure Resiliency development including limits
-  & quotas, security, and configuration. Use when building, debugging, or optimizing
-  Azure Resiliency applications. Not for Azure Reliability (use azure-reliability),
+  & quotas, security, and configuration. Use when configuring Backup/Site Recovery
+  vaults, protection policies, failover plans, SLAs, or resiliency security posture,
+  and other related development tasks. Not for Azure Reliability (use azure-reliability),
   Azure Site Recovery (use azure-site-recovery), Azure Backup (use azure-backup),
   Azure Monitor (use azure-monitor).
+use_when: Use when configuring Backup/Site Recovery vaults, protection policies, failover
+  plans, SLAs, or resiliency security posture, and other related development tasks.
+confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Site
+  Recovery (use azure-site-recovery), Azure Backup (use azure-backup), Azure Monitor
+  (use azure-monitor).
 ---
 # Azure Resiliency Crawl Report
 

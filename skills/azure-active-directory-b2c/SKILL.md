@@ -1,6 +1,6 @@
 ---
 name: azure-active-directory-b2c
-description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Active Directory B2C applications. Not for Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Information Protection (use azure-information-protection).
+description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API tokens, CI/CD deployments, or Sentinel logs, and other related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

@@ -26,8 +26,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Managed Redis development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Managed Redis applications. Not for Azure
-  Cache for Redis (use azure-cache-redis).
+  using Entra auth, geo-replication, persistence, Private Link/TLS, or ARM/Bicep deployments
+  for Managed Redis, and other related development tasks. Not for Azure Cache for
+  Redis (use azure-cache-redis).
+use_when: Use when using Entra auth, geo-replication, persistence, Private Link/TLS,
+  or ARM/Bicep deployments for Managed Redis, and other related development tasks.
+confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis).
 ---
 # Azure Managed Redis Crawl Report
 

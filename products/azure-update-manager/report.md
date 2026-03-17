@@ -25,10 +25,16 @@ category_descriptions:
     migrating patch management from Configuration Manager to Azure Update Manager
 skill_description: Expert knowledge for Azure Update Manager development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Update Manager applications. Not for Azure Automation (use azure-automation),
+  integrations & coding patterns, and deployment. Use when configuring VM/Arc patch
+  schedules, Automanage profiles, ESU/hotpatching, change tracking, or SDK/REST automation,
+  and other related development tasks. Not for Azure Automation (use azure-automation),
   Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource
   Manager (use azure-resource-manager).
+use_when: Use when configuring VM/Arc patch schedules, Automanage profiles, ESU/hotpatching,
+  change tracking, or SDK/REST automation, and other related development tasks.
+confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
+  (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use
+  azure-resource-manager).
 ---
 # Azure Update Manager Crawl Report
 

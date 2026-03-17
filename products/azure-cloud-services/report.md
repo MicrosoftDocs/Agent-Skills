@@ -24,10 +24,18 @@ category_descriptions:
     cloud service instances.'
 skill_description: Expert knowledge for Azure Cloud Services development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Cloud Services applications. Not for Azure App Service (use azure-app-service),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps).
+  integrations & coding patterns, and deployment. Use when managing Cloud Services
+  (extended support) Guest OS versions, Key Vault certs, autoscale rules, migrations,
+  or PowerShell automation, and other related development tasks. Not for Azure App
+  Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
+  (use azure-container-apps).
+use_when: Use when managing Cloud Services (extended support) Guest OS versions, Key
+  Vault certs, autoscale rules, migrations, or PowerShell automation, and other related
+  development tasks.
+confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps).
 ---
 # Azure Cloud Services Crawl Report
 

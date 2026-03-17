@@ -31,10 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Kubernetes Service (AKS) development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when building, debugging, or optimizing Azure Kubernetes Service
-  (AKS) applications. Not for Azure Container Apps (use azure-container-apps), Azure
-  Container Instances (use azure-container-instances), Azure Red Hat OpenShift (use
-  azure-redhat-openshift), Azure Virtual Machines (use azure-virtual-machines).
+  and deployment. Use when designing AKS clusters with node pools/Fleet, GPUs, KEDA,
+  service mesh, or secure Entra/Key Vault integration, and other related development
+  tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container
+  Instances (use azure-container-instances), Azure Container Registry (use azure-container-registry),
+  Azure Red Hat OpenShift (use azure-redhat-openshift).
+use_when: Use when designing AKS clusters with node pools/Fleet, GPUs, KEDA, service
+  mesh, or secure Entra/Key Vault integration, and other related development tasks.
+confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
+  Container Instances (use azure-container-instances), Azure Container Registry (use
+  azure-container-registry), Azure Red Hat OpenShift (use azure-redhat-openshift).
 ---
 # Azure Kubernetes Service (AKS) Crawl Report
 
@@ -48,8 +54,8 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 573
+- **Updated Pages**: 0
+- **Unchanged**: 574
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -69,11 +75,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 | *(Unclassified)* | 129 | 22.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [From a code repository](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-from-code)
-  - Updated: 2025-10-10T08:00:00.000Z → 2026-01-29T23:06:00.000Z
 
 ## Classified Pages
 

@@ -30,9 +30,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure DevOps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure DevOps applications. Not for Azure Boards
-  (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos),
-  Azure Test Plans (use azure-test-plans).
+  managing org/projects, Boards, repos, pipelines, agent pools, Analytics/OData, or
+  Azure DevOps Server deployments, and other related development tasks. Not for Azure
+  Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use
+  azure-repos), Azure Test Plans (use azure-test-plans).
+use_when: Use when managing org/projects, Boards, repos, pipelines, agent pools, Analytics/OData,
+  or Azure DevOps Server deployments, and other related development tasks.
+confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (use
+  azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 ---
 # Azure DevOps Crawl Report
 
@@ -46,8 +51,8 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 944
+- **Updated Pages**: 0
+- **Unchanged**: 946
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -67,13 +72,6 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | *(Unclassified)* | 665 | 70.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
-  - Updated: 2026-03-13T21:04:00.000Z → 2026-03-16T17:05:00.000Z
-- [Marketplace & Extensibility](https://learn.microsoft.com/en-us/azure/devops/marketplace-extensibility/?view=azure-devops)
-  - Updated: 2025-05-14T17:07:00Z → 2026-03-16T21:05:00Z
 
 ## Classified Pages
 

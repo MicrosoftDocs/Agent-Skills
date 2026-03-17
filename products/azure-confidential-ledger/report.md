@@ -14,10 +14,14 @@ category_descriptions:
     ARM templates or Terraform, including required parameters and configuration steps.
 skill_description: Expert knowledge for Azure Confidential Ledger development including
   decision making, security, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure Confidential Ledger applications. Not for
-  Azure Confidential Computing (use azure-confidential-computing), Azure Virtual Enclaves
-  (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault), Azure Database
-  for PostgreSQL (use azure-database-postgresql).
+  configuring Entra auth, ACL roles, UDFs, client SDKs, transaction receipts, or ARM/Terraform
+  deployments, and other related development tasks. Not for Azure Confidential Computing
+  (use azure-confidential-computing), Azure Key Vault (use azure-key-vault), Azure
+  Virtual Enclaves (use azure-virtual-enclaves).
+use_when: Use when configuring Entra auth, ACL roles, UDFs, client SDKs, transaction
+  receipts, or ARM/Terraform deployments, and other related development tasks.
+confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
+  Azure Key Vault (use azure-key-vault), Azure Virtual Enclaves (use azure-virtual-enclaves).
 ---
 # Azure Confidential Ledger Crawl Report
 

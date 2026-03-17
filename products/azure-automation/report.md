@@ -27,10 +27,16 @@ category_descriptions:
     shared resources, and collecting support diagnostics.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  Automation applications. Not for Azure Functions (use azure-functions), Azure Logic
-  Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure DevTest
-  Labs (use azure-devtest-labs).
+  & coding patterns, and deployment. Use when building runbooks/DSC, Hybrid Runbook
+  Workers, Change Tracking/Inventory, CI/CD, or cross-cloud integrations, and other
+  related development tasks. Not for Azure Functions (use azure-functions), Azure
+  Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure
+  Update Manager (use azure-update-manager).
+use_when: Use when building runbooks/DSC, Hybrid Runbook Workers, Change Tracking/Inventory,
+  CI/CD, or cross-cloud integrations, and other related development tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
+  (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager
+  (use azure-update-manager).
 ---
 # Azure Automation Crawl Report
 

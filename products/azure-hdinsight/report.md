@@ -31,9 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure HDInsight applications. Not for Azure Databricks
+  working with HDInsight Spark/Hive/Kafka/HBase, Ambari, VNet security, autoscale,
+  or cluster deployment APIs, and other related development tasks. Not for Azure Databricks
   (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure
   Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
+use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari, VNet security,
+  autoscale, or cluster deployment APIs, and other related development tasks.
+confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
+  Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure HDInsight Crawl Report
 

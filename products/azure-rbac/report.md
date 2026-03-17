@@ -22,10 +22,15 @@ category_descriptions:
     CLI, PowerShell, Bicep/ARM templates, REST API, and managed identities
 skill_description: Expert knowledge for Azure Role-based access control development
   including troubleshooting, best practices, decision making, limits & quotas, security,
-  configuration, and integrations & coding patterns. Use when building, debugging,
-  or optimizing Azure Role-based access control applications. Not for Azure Policy
-  (use azure-policy), Azure Security (use azure-security), Azure Resource Manager
-  (use azure-resource-manager), Azure Lighthouse (use azure-lighthouse).
+  configuration, and integrations & coding patterns. Use when defining Azure roles/ABAC
+  conditions, deny assignments, PIM, custom roles, or role assignments via CLI/ARM,
+  and other related development tasks. Not for Azure Policy (use azure-policy), Azure
+  Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Lighthouse
+  (use azure-lighthouse).
+use_when: Use when defining Azure roles/ABAC conditions, deny assignments, PIM, custom
+  roles, or role assignments via CLI/ARM, and other related development tasks.
+confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use azure-security),
+  Azure Sentinel (use azure-sentinel), Azure Lighthouse (use azure-lighthouse).
 ---
 # Azure Role-based access control Crawl Report
 

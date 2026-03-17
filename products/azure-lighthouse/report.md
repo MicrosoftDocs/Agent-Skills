@@ -16,10 +16,17 @@ category_descriptions:
     details.
 skill_description: Expert knowledge for Azure Lighthouse development including decision
   making, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Lighthouse applications. Not for
+  Use when designing Lighthouse delegations, RBAC/AOBO mappings, PIM access, Arc/Sentinel
+  integrations, or Marketplace offers, and other related development tasks. Not for
   Azure Arc (use azure-arc), Azure Managed Applications (use azure-managed-applications),
   Azure Resource Manager (use azure-resource-manager), Azure Role-based access control
   (use azure-rbac).
+use_when: Use when designing Lighthouse delegations, RBAC/AOBO mappings, PIM access,
+  Arc/Sentinel integrations, or Marketplace offers, and other related development
+  tasks.
+confusable_not_for: Not for Azure Arc (use azure-arc), Azure Managed Applications
+  (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager),
+  Azure Role-based access control (use azure-rbac).
 ---
 # Azure Lighthouse Crawl Report
 

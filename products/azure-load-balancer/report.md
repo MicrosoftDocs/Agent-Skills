@@ -27,10 +27,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Load Balancer applications. Not
-  for Azure Application Gateway (use azure-application-gateway), Azure Front Door
-  (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure
-  Virtual Network (use azure-virtual-network).
+  Use when configuring frontends/backends, SNAT/outbound, health probes, IMDS/metrics
+  APIs, or Basic→Standard migrations, and other related development tasks. Not for
+  Azure Application Gateway (use azure-application-gateway), Azure Front Door (use
+  azure-front-door), Azure Traffic Manager (use azure-traffic-manager), Azure Virtual
+  Network (use azure-virtual-network).
+use_when: Use when configuring frontends/backends, SNAT/outbound, health probes, IMDS/metrics
+  APIs, or Basic→Standard migrations, and other related development tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
+  Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure Load Balancer Crawl Report
 

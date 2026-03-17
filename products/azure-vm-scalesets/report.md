@@ -28,10 +28,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, decision making, architecture & design patterns, limits
   & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Virtual Machine Scale Sets applications.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure Service Fabric (use azure-service-fabric),
-  Azure Red Hat OpenShift (use azure-redhat-openshift).
+  Use when configuring VMSS autoscale/upgrade modes, zones/PPGs, Spot+standby pools,
+  disk encryption, or CLI/ARM deployments, and other related development tasks. Not
+  for Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service
+  (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service),
+  Azure Service Fabric (use azure-service-fabric).
+use_when: Use when configuring VMSS autoscale/upgrade modes, zones/PPGs, Spot+standby
+  pools, disk encryption, or CLI/ARM deployments, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
+  azure-app-service), Azure Service Fabric (use azure-service-fabric).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 

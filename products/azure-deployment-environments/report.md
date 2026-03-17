@@ -23,10 +23,16 @@ category_descriptions:
     update, and delete ADE environments.
 skill_description: Expert knowledge for Azure Deployment Environments development
   including troubleshooting, best practices, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure Deployment Environments applications. Not for Azure DevTest Labs
-  (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Managed Applications
-  (use azure-managed-applications), Azure Integration Environments (use azure-integration-environments).
+  integrations & coding patterns, and deployment. Use when defining environment.yaml,
+  ADE catalogs, custom images, RBAC roles, or CI/CD image pipelines, and other related
+  development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev
+  Box (use azure-dev-box), Azure Managed Applications (use azure-managed-applications),
+  Azure Integration Environments (use azure-integration-environments).
+use_when: Use when defining environment.yaml, ADE catalogs, custom images, RBAC roles,
+  or CI/CD image pipelines, and other related development tasks.
+confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev
+  Box (use azure-dev-box), Azure Managed Applications (use azure-managed-applications),
+  Azure Integration Environments (use azure-integration-environments).
 ---
 # Azure Deployment Environments Crawl Report
 

@@ -20,10 +20,15 @@ category_descriptions:
     pricing drivers, and forecasting expenses for different bot scenarios.
 skill_description: Expert knowledge for Azure Health Bot development including best
   practices, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when building, debugging, or optimizing
-  Azure Health Bot applications. Not for Azure AI Bot Service (use azure-bot-service),
-  Azure Communication Services (use azure-communication-services), Azure Health Data
-  Services (use azure-health-data-services).
+  and integrations & coding patterns. Use when wiring Health Bot to channels/APIs,
+  configuring scenarios & handoff, securing PHI, or estimating usage costs, and other
+  related development tasks. Not for Azure AI Bot Service (use azure-bot-service),
+  Azure Communication Services (use azure-communication-services), Azure App Service
+  (use azure-app-service).
+use_when: Use when wiring Health Bot to channels/APIs, configuring scenarios & handoff,
+  securing PHI, or estimating usage costs, and other related development tasks.
+confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Communication
+  Services (use azure-communication-services), Azure App Service (use azure-app-service).
 ---
 # Azure Health Bot Crawl Report
 

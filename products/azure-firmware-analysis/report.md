@@ -17,7 +17,16 @@ category_descriptions:
     patterns.
 skill_description: Expert knowledge for Azure Firmware Analysis development including
   troubleshooting, best practices, security, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Firmware Analysis applications.
+  Use when provisioning AFA workspaces, configuring RBAC, uploading firmware via CLI/PowerShell/Python,
+  or interpreting SBOM results, and other related development tasks. Not for Azure
+  Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge),
+  Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
+use_when: Use when provisioning AFA workspaces, configuring RBAC, uploading firmware
+  via CLI/PowerShell/Python, or interpreting SBOM results, and other related development
+  tasks.
+confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot), Azure
+  IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential
+  Computing (use azure-confidential-computing).
 ---
 # Azure Firmware Analysis Crawl Report
 

@@ -5,9 +5,16 @@ category_descriptions:
     issues, including testing connections, common failure causes, and configuration
     checks.
 skill_description: Expert knowledge for Azure Analysis Services development including
-  troubleshooting. Use when building, debugging, or optimizing Azure Analysis Services
-  applications. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure
-  SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  troubleshooting. Use when testing server connectivity, checking firewalls/VNETs,
+  validating connection strings, or diagnosing gateway issues, and other related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure SQL
+  Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+use_when: Use when testing server connectivity, checking firewalls/VNETs, validating
+  connection strings, or diagnosing gateway issues, and other related development
+  tasks.
+confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Analysis Services Crawl Report

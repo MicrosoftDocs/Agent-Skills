@@ -30,10 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building, debugging, or optimizing Azure Virtual Desktop applications.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use
-  azure-dev-box), Azure Data Science Virtual Machines (use azure-data-science-vm),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets).
+  Use when managing AVD host pools, FSLogix profiles, MSIX App Attach, autoscale/Start
+  VM on Connect, or Teams optimization, and other related development tasks. Not for
+  Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box (use azure-dev-box),
+  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual
+  Machines (use azure-sql-virtual-machines).
+use_when: Use when managing AVD host pools, FSLogix profiles, MSIX App Attach, autoscale/Start
+  VM on Connect, or Teams optimization, and other related development tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
+  Dev Box (use azure-dev-box), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 ---
 # Azure Virtual Desktop Crawl Report
 
@@ -47,8 +53,8 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 147
+- **Updated Pages**: 0
+- **Unchanged**: 148
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -68,11 +74,6 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 | *(Unclassified)* | 28 | 18.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
