@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   workload-patterns: End-to-end design, platform selection, operations, security,
     and optimization patterns for specific Azure workloads (AI, HPC, mission-critical,
     Oracle, SaaS, SAP, sustainability).
-  assessments: Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions
-    against Well-Architected pillars (cost, security, reliability, performance, operations,
-    mission-critical readiness).
+  assessments: Guided assessments and maturity reviews for Azure workloads (AI, SaaS,
+    AVD, AVS) across cost, reliability, performance, security, operations, and mission‑critical
+    readiness.
   design-principles: Design principles and patterns for cost, reliability, security,
     performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle,
     AVS, AVD, SaaS, HPC, and mission‑critical systems.
   service-guides: End-to-end design, security, networking, operations, monitoring,
     and optimization guidance for Azure Virtual Desktop, Azure VMware Solution, and
     core Azure services using Well-Architected best practices.
-  recommendations: Guidance on cost optimization, performance, reliability, security,
-    DevOps, and sustainability practices for designing, operating, and improving Azure
-    workloads end to end.
+  recommendations: 'Prescriptive best practices for Azure workloads: cost optimization,
+    reliability, performance, security, DevOps/automation, DR, observability, and
+    sustainable design across services and environments'
   checklists: Checklists to review Azure architectures for cost, operations, performance,
     reliability, and security best practices and identify design gaps or improvements.
   tradeoffs: Guidance on balancing cost, reliability, performance, security, and operations
@@ -34,14 +34,14 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 - **Total Pages**: 248
 - **Fetched**: 248
 - **Fetch Failed**: 0
-- **Classified**: 221
-- **Unclassified**: 27
+- **Classified**: 220
+- **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 6
-- **Updated Pages**: 1
-- **Unchanged**: 241
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 244
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
 ## Classification Statistics
@@ -51,31 +51,24 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | assessments | 11 | 4.4% |
 | checklists | 5 | 2.0% |
 | design-principles | 16 | 6.5% |
-| recommendations | 71 | 28.6% |
+| recommendations | 70 | 28.2% |
 | service-guides | 48 | 19.4% |
 | tradeoffs | 6 | 2.4% |
 | workload-patterns | 64 | 25.8% |
-| *(Unclassified)* | 27 | 10.9% |
+| *(Unclassified)* | 28 | 11.3% |
 
 ## Changes
 
-### New Pages
-
-- [HPC](https://learn.microsoft.com/en-us/azure/well-architected/hpc/)
-- [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql)
-- [Get started](https://learn.microsoft.com/en-us/azure/well-architected/hpc/get-started-overview)
-- [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-methodology)
-- [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles)
-- [Architecture pattern](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-architecture-pattern)
-
 ### Updated Pages
 
-- [Quick links](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/)
-  - Updated: 2026-02-27T18:03:00Z → 2026-03-04T18:02:00Z
-
-### Deleted Pages
-
-- ~~Azure Database for MySQL~~ (https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-db-mysql-cost-optimization)
+- [Optimize using flows](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows)
+  - Updated: 2024-10-23T22:02:00.000Z → 2026-03-16T22:07:00.000Z
+- [Data partitioning](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data)
+  - Updated: 2025-05-29T22:02:00.000Z → 2026-03-16T22:07:00.000Z
+- [Continuous integration](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration)
+  - Updated: 2025-06-11T22:02:00.000Z → 2026-03-16T22:07:00.000Z
+- [WAF assessments and recommendations](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations)
+  - Updated: 2025-08-13T17:02:00.000Z → 2026-03-16T22:07:00.000Z
 
 ## Classified Pages
 
@@ -195,13 +188,12 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-design-principles) | design-principles | 0.85 | Defines named mission-critical design principles, explains their rationale and trade-offs, and positions them as a compass across design areas, matching the design-principles definition. |
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/reliability/tradeoffs) | tradeoffs | 0.85 | Analyzes how reliability objectives and resiliency targets interact with other pillars (cost, performance, operations), providing guidance on balancing competing concerns. |
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/security/tradeoffs) | tradeoffs | 0.85 | Discusses how security controls and design principles interact with other pillars and design decisions, providing guidance on balancing security with other concerns. |
+| [WAF assessments and recommendations](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations) | assessments | 0.85 | Describes a self-assessment with ~60 questions based on WAF pillar recommendations and explains how to use it with Azure Advisor. This matches the assessment pattern: evaluative questions organized by pillars and guidance on interpreting/using results, rather than prescriptive checklist items or implementation details. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/saas/design-principles) | design-principles | 0.82 | Defines SaaS-specific design principles (reliability, security, etc.) with rationale and pillar alignment, serving as a compass for later design decisions. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-principles) | design-principles | 0.82 | Defines named sustainability design principles (record, report, reduce/optimize) with rationale and alignment to WAF pillars. |
 | [Application delivery](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/application-delivery) | service-guides | 0.80 | Service-specific guidance for Azure Virtual Desktop application platforms (host pools, session hosts) aligned to multiple WAF pillars (reliability, cost, performance, security). |
 | [Applications](https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/application-platform) | service-guides | 0.80 | Provides application platform design guidance (deployment, configuration, monitoring) specific to Azure VMware Solution workloads, aligned with multiple WAF pillars. |
 | [Background jobs](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/background-jobs) | recommendations | 0.80 | Concrete recommendations and patterns for implementing background jobs to improve availability and responsiveness. |
-| [Continuous integration](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration) | recommendations | 0.80 | Stepwise, practical guidance on CI practices, tooling integration, and workflows; clearly implementation-oriented. |
-| [Data partitioning](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data) | recommendations | 0.80 | Detailed guidance on how to partition data for reliability, scalability, and performance; implementation-focused. |
 | [Design principles](https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-design-principles) | design-principles | 0.80 | Explicitly about design principles for HPC grounded in WAF pillars, with rationale and trade-off discussion for HPC design areas (compute, storage, networking, orchestration). This matches the design-principles definition: named principles, pillar-based rationale, and high-level recommendations tailored to HPC workloads. |
 | [Disaster recovery plan](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/disaster-recovery) | recommendations | 0.80 | Prescriptive steps and detailed guidance for designing DR plans based on reliability objectives. |
 | [Infrastructure](https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/infrastructure) | service-guides | 0.80 | Service-specific infrastructure guidance (compute, storage, networking, SDDC stack) for Azure VMware Solution, covering resilience, security, scalability, and DR. |
@@ -216,7 +208,6 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Security and identity and access management (IAM)](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/security) | service-guides | 0.80 | Service-specific security and IAM guidance for Azure Virtual Desktop (RBAC, Zero Trust principles, host protection), aligned with WAF security pillar. |
 | [Software as a service (SaaS)](https://learn.microsoft.com/en-us/azure/well-architected/saas/) | workload-patterns | 0.80 | SaaS workloads are a specific domain; the documentation provides domain-specific, WAF-based guidance for building and operating SaaS at scale, matching workload-patterns. |
 | [Transient faults](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/handle-transient-faults) | recommendations | 0.80 | Specific patterns and implementation recommendations for handling transient faults; detailed how-to content. |
-| [WAF assessments and recommendations](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations) | assessments | 0.80 | Describes a structured self-assessment with questions, scoring via the tool, and guidance on interpreting and acting on results. |
 | [Application design](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-design) | workload-patterns | 0.78 | Gives concrete application and code-level considerations to reduce environmental impact, specific to sustainable workloads. |
 | [Application platform](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform) | workload-patterns | 0.78 | Platform-level decisions and recommendations (services, configurations) specifically to improve sustainability of workloads. |
 | [Compute](https://learn.microsoft.com/en-us/azure/well-architected/saas/compute) | workload-patterns | 0.78 | Describes compute hosting models, isolation, scaling, and SLA implications specifically for SaaS architectures. |
@@ -265,6 +256,8 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/) | workload-patterns | 0.70 | Focuses on Azure Virtual Desktop as a specific workload domain and provides design principles for that workload, aligning with workload-patterns rather than generic service docs. |
 | [Azure landing zone integration](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/landing-zone-integration) | service-guides | 0.70 | Describes how Azure Virtual Desktop workloads fit into Azure landing zones and operating models, with platform vs workload responsibilities; service-specific multi-pillar guidance. |
 | [Azure landing zone integration](https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/landing-zone-integration) | service-guides | 0.70 | Explains how Azure VMware Solution workloads integrate with landing zones and cloud operating models, including platform vs workload responsibilities. |
+| [Continuous integration](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration) | recommendations | 0.70 | Goes beyond conceptual CI overview to give prescriptive guidance on using CI in release engineering, source control, and test integration. This is detailed implementation-oriented content for a practice that supports WAF pillars (reliability, operability), fitting the recommendations category rather than principles or checklists. |
+| [Data partitioning](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data) | recommendations | 0.70 | Provides concrete design recommendations for data partitioning in distributed systems to improve reliability and scalability. Although the summary doesn't show checklist IDs, this design-guide content typically contains detailed, prescriptive guidance (how to partition, patterns, tradeoffs within reliability) rather than just principles, aligning best with WAF recommendations. |
 | [Data platform](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-data-platform) | workload-patterns | 0.70 | Provides mission-critical-specific data platform selection guidance (consistency, operability, cost, multi-region) with cross-area implications, tailored to this workload domain. |
 | [Deployment and testing](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-deployment-testing) | workload-patterns | 0.70 | Provides mission-critical-specific CI/CD, deployment, and testing strategies to minimize downtime and failures, clearly tailored to this workload domain. |
 | [Design methodology](https://learn.microsoft.com/en-us/azure/well-architected/ai/design-methodology) | workload-patterns | 0.70 | AI-domain-specific design methodology and processes, extending WAF with AI-specific principles and decisions. |
@@ -287,7 +280,6 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Maturity model](https://learn.microsoft.com/en-us/azure/well-architected/reliability/maturity-model) | assessments | 0.70 | Reliability maturity model defines levels and a progressive path to improve reliability, used to assess current state and interpret improvement steps—fits assessment questions/maturity guidance. |
 | [Maturity model](https://learn.microsoft.com/en-us/azure/well-architected/security/maturity-model) | assessments | 0.70 | Security maturity model defines progressive levels and a path to strengthen security posture, used to assess current maturity and guide improvements—fits assessment/maturity pattern. |
 | [Networking and connectivity](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-networking-connectivity) | workload-patterns | 0.70 | Gives mission-critical-specific network topology and traffic management guidance (global active-active, redundancy, security), which is domain-specific architecture guidance. |
-| [Optimize using flows](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows) | recommendations | 0.70 | In-depth, step-by-step process for defining and designing flows to optimize workloads; concrete implementation guidance. |
 | [SAP](https://learn.microsoft.com/en-us/azure/well-architected/sap/quick-links) | workload-patterns | 0.70 | SAP on Azure is a distinct workload domain; the page aggregates guidance for building SAP workloads with WAF considerations, fitting workload-patterns. |
 | [Sustainable AI design](https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainable-ai-design) | workload-patterns | 0.70 | The page targets a specific workload domain (AI workloads) and applies Well-Architected sustainability guidance to that domain’s unique phases: model design, data design, and operations. It includes domain-specific design decisions and measures to implement during development, fitting the definition of a workload pattern rather than a generic recommendation or service guide. |
 | [Training data design](https://learn.microsoft.com/en-us/azure/well-architected/ai/training-data-design) | workload-patterns | 0.70 | Provides detailed, domain-specific guidance for AI workloads (training data collection, processing, storage, validation) mapped to WAF-style nonfunctional and functional requirements. This is workload-specific (AI) architectural guidance rather than generic data design. |
@@ -321,6 +313,7 @@ skill_description: Expert guidance for designing, assessing, and optimizing Azur
 | [Get started](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-overview) | 0.40 | High-level overview of mission-critical workloads guidance; primarily conceptual and navigational without detailed design or assessment content. |
 | [Get started](https://learn.microsoft.com/en-us/azure/well-architected/saas/get-started) | 0.40 | High-level overview of SaaS workloads and business context; largely conceptual without deep, non-obvious implementation details. |
 | [Maintain an architecture decision record](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record) | 0.40 | Explains architecture decision records conceptually; no WAF pillar-specific principles, checklists, or implementation recommendations. |
+| [Optimize using flows](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows) | 0.40 | Describes a three-step, flow-based optimization process at a conceptual/design-method level. It doesn't map to WAF checklist IDs, pillar-specific principles, or service/workload domains, and lacks detailed implementation guidance tied to specific WAF artifacts. More of a general design guide than expert, WAF-structured knowledge. |
 | [Collaborate with implementors](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/collaboration) | 0.30 | Collaboration guidance between architects and workload/platform teams; process-focused, not WAF pillar guidance. |
 | [Create design diagrams](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/design-diagrams) | 0.30 | General diagramming practices and communication guidance; not tied to WAF pillars, checklists, or recommendations. |
 | [Overview](https://learn.microsoft.com/en-us/azure/well-architected/design) | 0.30 | High-level overview of design guides; primarily navigational and conceptual without deep implementation detail. |

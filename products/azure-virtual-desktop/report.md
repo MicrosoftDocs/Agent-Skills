@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
     from classic to current AVD, changing regions, using regional host pools, and
@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 142
+- **Updated Pages**: 1
+- **Unchanged**: 147
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -71,18 +71,8 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 
 ### Updated Pages
 
-- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint)
-  - Updated: 2025-11-25T18:39:00.000Z → 2026-03-11T08:00:00.000Z
-- [Windows 10 multi-session images](https://learn.microsoft.com/en-us/azure/virtual-desktop/language-packs)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-03-11T08:00:00.000Z
-- [Windows 11 Enterprise images](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-11-language-packs)
-  - Updated: 2025-10-01T02:58:00.000Z → 2026-03-11T08:00:00.000Z
-- [Redirect video playback and calls](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls)
-  - Updated: 2025-06-20T03:01:00.000Z → 2026-03-11T08:00:00.000Z
-- [Microsoft Teams supported features](https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-supported-features)
-  - Updated: 2025-10-02T17:37:00.000Z → 2026-03-07T06:40:00.000Z
+- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
+  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -235,7 +225,7 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 | [Autoscale glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-glossary) | 0.20 | Glossary of terms; definitions are conceptual and not configuration, limits, or troubleshooting content. |
 | [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | Release notes and high-level feature updates; no detailed limits, configs, error codes, or decision matrices. |
 | [Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) | 0.20 | High-level overview of using Private Link with Azure Virtual Desktop; summary indicates conceptual benefits without detailed configuration tables or limits. |
-| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | SxS Network Stack release notes; likely version history rather than reusable expert patterns or configuration matrices. |
+| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | A 'what's new' change log for the Azure Virtual Desktop SxS Network Stack; summary indicates feature/update descriptions but no evidence of numeric limits, configuration tables, error-code troubleshooting, or other detailed expert parameters. Primarily update/marketing-style content rather than deep technical reference. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a link-out/navigation page to partner thin client vendors and a generic note about using a browser; no detailed configuration tables or product-specific parameters. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-glossary) | 0.10 | A glossary of terms and concepts; definitions are conceptual and not configuration, limits, or troubleshooting content. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/virtual-desktop/terminology) | 0.10 | Terminology and conceptual structure only; no product-specific numeric limits, configs, or troubleshooting content. |

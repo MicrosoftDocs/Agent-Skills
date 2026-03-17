@@ -31,8 +31,8 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 17
+- **Updated Pages**: 0
+- **Unchanged**: 18
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-immersive-reader/azure-immersive-reader.csv`
 
@@ -48,11 +48,6 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
 | *(Unclassified)* | 3 | 16.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Launch the Immersive Reader](https://learn.microsoft.com/en-us/azure/ai-services/immersive-reader/how-to-launch-immersive-reader)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-04T23:12:00.000Z
 
 ## Classified Pages
 

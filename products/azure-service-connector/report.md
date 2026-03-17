@@ -36,10 +36,10 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 - **Unclassified**: 28
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 62
-- **Deleted Pages**: 1
+- **Unchanged**: 63
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
 ## Classification Statistics
@@ -55,14 +55,6 @@ skill_description: Expert knowledge for Azure Service Connector development incl
 | *(Unclassified)* | 28 | 44.4% |
 
 ## Changes
-
-### New Pages
-
-- [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
-
-### Deleted Pages
-
-- ~~Azure AI services~~ (https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services)
 
 ## Classified Pages
 

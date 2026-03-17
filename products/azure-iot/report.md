@@ -40,8 +40,8 @@ skill_description: Expert knowledge for Azure IoT development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 38
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
@@ -59,13 +59,6 @@ skill_description: Expert knowledge for Azure IoT development including troubles
 | *(Unclassified)* | 22 | 55.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Tutorial - Send telemetry to IoT Hub](https://learn.microsoft.com/en-us/azure/iot/tutorial-send-telemetry-iot-hub)
-  - Updated: 2025-10-27T08:00:00.000Z → 2026-03-10T22:11:00.000Z
-- [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary)
-  - Updated: 2026-02-04T18:14:00.000Z → 2026-03-09T08:00:00.000Z
 
 ## Classified Pages
 

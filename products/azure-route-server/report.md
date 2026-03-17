@@ -34,8 +34,8 @@ skill_description: Expert knowledge for Azure Route Server development including
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 18
+- **Updated Pages**: 0
+- **Unchanged**: 21
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-route-server/azure-route-server.csv`
 
@@ -52,15 +52,6 @@ skill_description: Expert knowledge for Azure Route Server development including
 | *(Unclassified)* | 8 | 38.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Peer Route Server with NVA](https://learn.microsoft.com/en-us/azure/route-server/peer-route-server-with-virtual-appliance)
-  - Updated: 2025-09-18T22:19:00.000Z → 2026-03-04T06:13:00.000Z
-- [Configure and manage Route Server](https://learn.microsoft.com/en-us/azure/route-server/configure-route-server)
-  - Updated: 2025-09-17T22:11:00.000Z → 2026-03-04T12:31:00.000Z
-- [Troubleshoot Route Server issues](https://learn.microsoft.com/en-us/azure/route-server/troubleshoot-route-server)
-  - Updated: 2025-09-19T05:15:00.000Z → 2026-03-04T12:31:00.000Z
 
 ## Classified Pages
 

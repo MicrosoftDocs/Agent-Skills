@@ -39,8 +39,8 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 25
+- **Updated Pages**: 0
+- **Unchanged**: 26
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
@@ -58,11 +58,6 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
 | *(Unclassified)* | 4 | 15.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-03-09T17:11:00.000Z
 
 ## Classified Pages
 

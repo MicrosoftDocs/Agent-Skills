@@ -3,7 +3,7 @@ name: azure-well-architected
 description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when architecting new solutions, reviewing existing workloads, or applying Well-Architected principles.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for designing, assessing, and optimizing Azu
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -25,12 +25,12 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Design Review Checklists | L35-L43 | Checklists to review Azure architectures for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
-| Recommendations | L44-L118 | Guidance on cost optimization, performance, reliability, security, DevOps, and sustainability practices for designing, operating, and improving Azure workloads end to end. |
-| Design Principles | L119-L138 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
-| Tradeoffs | L139-L148 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L149-L200 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for Azure Virtual Desktop, Azure VMware Solution, and core Azure services using Well-Architected best practices. |
-| Workload Patterns | L201-L268 | End-to-end design, platform selection, operations, security, and optimization patterns for specific Azure workloads (AI, HPC, mission-critical, Oracle, SaaS, SAP, sustainability). |
-| Assessment Questions | L269-L282 | Tools and guidance to assess Azure workloads and SaaS/AVD/AVS solutions against Well-Architected pillars (cost, security, reliability, performance, operations, mission-critical readiness). |
+| Recommendations | L44-L117 | Prescriptive best practices for Azure workloads: cost optimization, reliability, performance, security, DevOps/automation, DR, observability, and sustainable design across services and environments |
+| Design Principles | L118-L137 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
+| Tradeoffs | L138-L147 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
+| Service Guides | L148-L199 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for Azure Virtual Desktop, Azure VMware Solution, and core Azure services using Well-Architected best practices. |
+| Workload Patterns | L200-L267 | End-to-end design, platform selection, operations, security, and optimization patterns for specific Azure workloads (AI, HPC, mission-critical, Oracle, SaaS, SAP, sustainability). |
+| Assessment Questions | L268-L281 | Guided assessments and maturity reviews for Azure workloads (AI, SaaS, AVD, AVS) across cost, reliability, performance, security, operations, and mission‑critical readiness. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -63,9 +63,8 @@ This skill requires **network access** to fetch documentation content:
 | Implement transient fault handling in cloud applications | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/handle-transient-faults |
 | Build workload health models to improve reliability | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/health-modeling |
 | Design and operate an incident management practice | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/incident-management |
-| Optimize workload design using flow-based segmentation | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/optimize-workload-using-flows |
-| Design data partitioning strategies for reliable systems | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data |
-| Implement continuous integration for release engineering | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration |
+| Design data partitioning for reliable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data |
+| Implement continuous integration for Azure release engineering | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/release-engineering-continuous-integration |
 | Implement automation for Azure operational tasks | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/automate-tasks |
 | Foster a DevOps culture for Azure workload teams | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/devops-culture |
 | Design Azure workloads to enable automation | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/enable-automation |
@@ -273,7 +272,7 @@ This skill requires **network access** to fetch documentation content:
 | Use the Azure Virtual Desktop WAF assessment | https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/assessment |
 | Use the Azure VMware Solution WAF assessment | https://learn.microsoft.com/en-us/azure/well-architected/azure-vmware/assessment |
 | Assess Cost Optimization maturity for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/maturity-model |
-| Use Azure Well-Architected Review to assess workloads | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations |
+| Use Azure Well-Architected Review assessment effectively | https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations |
 | Use mission-critical workload readiness assessment on Azure | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-assessment |
 | Evaluate Operational Excellence maturity for workloads | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/maturity-model |
 | Assess Performance Efficiency maturity for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/maturity-model |

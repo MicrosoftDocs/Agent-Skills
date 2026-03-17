@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure Monitor development including trou
 - **Unclassified**: 523
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 885
-- **Unchanged**: 1455
-- **Deleted Pages**: 5
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 2347
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-monitor/azure-monitor.csv`
 
 ## Classification Statistics
@@ -68,68 +68,6 @@ skill_description: Expert knowledge for Azure Monitor development including trou
 | *(Unclassified)* | 523 | 22.3% |
 
 ## Changes
-
-### New Pages
-
-- [Automatic instrumentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview)
-- [Copy to Managed Grafana](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-copy-to-managed-grafana)
-- [Rapid7InsightVMCloudAssets](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudassets)
-- [Rapid7InsightVMCloudVulnerabilities](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/rapid7insightvmcloudvulnerabilities)
-- [NCCKubernetesAPIAuditLogs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ncckubernetesapiauditlogs)
-- [EdgeActionServiceLog](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/edgeactionservicelog)
-- [StorageMoverCopyLogsTransferred](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/queries/storagemovercopylogstransferred)
-
-### Updated Pages
-
-- [Performance efficiency](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/best-practices-performance)
-  - Updated: 2025-05-21T08:00:00.000Z → 2026-01-19T18:08:00.000Z
-- [Data Collection Basics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
-  - Updated: 2026-03-03T23:22:00.000Z → 2026-03-15T12:03:00.000Z
-- [Get started with OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable)
-  - Updated: 2025-09-26T08:00:00.000Z → 2026-03-13T05:06:00.000Z
-- [Configure OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-configuration)
-  - Updated: 2026-02-09T23:09:00.000Z → 2026-03-13T05:06:00.000Z
-- [Autocollect OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-collect-detect)
-  - Updated: 2026-03-01T13:06:00.000Z → 2026-03-27T08:00:00.000Z
-- [Add and modify OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify)
-  - Updated: 2026-03-01T13:06:00.000Z → 2026-03-27T08:00:00.000Z
-- [Filter OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-filter)
-  - Updated: 2026-02-17T13:02:00.000Z → 2026-04-14T08:00:00.000Z
-- [Agent details](https://learn.microsoft.com/en-us/azure/azure-monitor/app/agents-view)
-  - Updated: 2026-03-03T23:22:00.000Z → 2026-03-05T08:00:00.000Z
-- [Failures, performance, and transactions](https://learn.microsoft.com/en-us/azure/azure-monitor/app/failures-performance-transactions)
-  - Updated: 2025-08-25T22:13:00.000Z → 2026-03-15T08:00:00.000Z
-- [Telemetry data model](https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete)
-  - Updated: 2025-04-30T22:01:00.000Z → 2026-03-15T08:00:00.000Z
-- [Application Insights FAQ](https://learn.microsoft.com/en-us/azure/azure-monitor/app/application-insights-faq)
-  - Updated: 2026-03-03T23:22:00Z → 2026-03-15T17:05:00Z
-- [Usage (user behavior analytics)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/usage)
-  - Updated: 2025-05-31T08:00:00.000Z → 2026-03-15T08:00:00.000Z
-- [Geolocation and IP address handling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-collection)
-  - Updated: 2025-03-06T18:01:00.000Z → 2026-03-15T17:05:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/best-practices-containers)
-  - Updated: 2025-03-19T22:03:00.000Z → 2026-03-11T22:15:00.000Z
-- [Rule groups](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-rule-groups)
-  - Updated: 2025-10-01T05:08:00.000Z → 2026-03-06T06:10:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/pipeline-overview)
-  - Updated: 2026-02-21T06:20:00.000Z → 2026-03-05T06:34:00.000Z
-- [Custom metrics ingestion using REST](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/metrics-store-custom-rest-api)
-  - Updated: 2025-04-17T22:44:00.000Z → 2025-07-30T22:10:00.000Z
-- [Monitor metrics ingestion limits](https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-monitor-ingest-limits)
-  - Updated: 2025-10-13T22:12:00.000Z → 2026-03-05T23:15:00.000Z
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/best-practices-logs)
-  - Updated: 2025-08-29T22:11:00.000Z → 2026-03-05T13:06:00.000Z
-- [Metrics REST API Walkthrough](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/rest-api-walkthrough)
-  - Updated: 2025-04-17T22:44:00.000Z → 2025-06-19T05:21:00.000Z
-- *...and 865 more*
-
-### Deleted Pages
-
-- ~~Statsbeat~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/application-insights-faq)
-- ~~Azure App Service~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-app-service)
-- ~~Autoinstrumentation supported scenarios~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview)
-- ~~OpenTelemetry on Azure~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry)
-- ~~Help, support, and feedback~~ (https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-help-support-feedback)
 
 ## Classified Pages
 

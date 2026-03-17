@@ -35,10 +35,10 @@ skill_description: Expert knowledge for Azure Sre Agent development including tr
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 59
-- **Updated Pages**: 2
-- **Unchanged**: 4
-- **Deleted Pages**: 21
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 65
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
 ## Classification Statistics
@@ -55,61 +55,6 @@ skill_description: Expert knowledge for Azure Sre Agent development including tr
 | *(Unclassified)* | 32 | 49.2% |
 
 ## Changes
-
-### New Pages
-
-- [Audit agent actions](https://learn.microsoft.com/en-us/azure/sre-agent/audit-agent-actions)
-- [Run a deep investigation](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-deep-investigation)
-- [Set up an incident trigger](https://learn.microsoft.com/en-us/azure/sre-agent/response-plan)
-- [Set up incident response](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-incident-response)
-- [Connect to PagerDuty](https://learn.microsoft.com/en-us/azure/sre-agent/connect-pagerduty)
-- [Connect to ServiceNow](https://learn.microsoft.com/en-us/azure/sre-agent/connect-servicenow)
-- [Create scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/create-scheduled-task)
-- [Configure agent hooks](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-agent-hooks)
-- [Test a tool in the playground](https://learn.microsoft.com/en-us/azure/sre-agent/test-tool-playground)
-- [Create a Python tool](https://learn.microsoft.com/en-us/azure/sre-agent/create-python-tool)
-- [Use code interpreter](https://learn.microsoft.com/en-us/azure/sre-agent/use-code-interpreter)
-- [Set up Kusto connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-connector)
-- [Set up Azure DevOps connector](https://learn.microsoft.com/en-us/azure/sre-agent/azure-devops-connector)
-- [Set up MCP connector](https://learn.microsoft.com/en-us/azure/sre-agent/mcp-connector)
-- [Create a Kusto tool](https://learn.microsoft.com/en-us/azure/sre-agent/create-kusto-tool)
-- [Upload knowledge documents](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-upload-knowledge-document)
-- [Connect Azure DevOps Wiki](https://learn.microsoft.com/en-us/azure/sre-agent/connect-devops-wiki)
-- [Set up Teams bot](https://learn.microsoft.com/en-us/azure/sre-agent/teams-bot)
-- [Supported regions](https://learn.microsoft.com/en-us/azure/sre-agent/supported-regions)
-- [Network requirements](https://learn.microsoft.com/en-us/azure/sre-agent/network-requirements)
-- *...and 39 more*
-
-### Updated Pages
-
-- [General](https://learn.microsoft.com/en-us/azure/sre-agent/faq)
-  - Updated: 2026-02-11T23:10:00.000Z → 2026-03-10T16:12:00.000Z
-- [Ask the agent for help](https://learn.microsoft.com/en-us/azure/sre-agent/ask-agent)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-03-10T04:29:00.000Z
-
-### Deleted Pages
-
-- ~~Use Managed Identity~~ (https://learn.microsoft.com/en-us/azure/sre-agent/agent-managed-identity)
-- ~~Agent run modes~~ (https://learn.microsoft.com/en-us/azure/sre-agent/agent-run-modes)
-- ~~Connect source control~~ (https://learn.microsoft.com/en-us/azure/sre-agent/code-repository-connect)
-- ~~Connect to external services~~ (https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
-- ~~Run custom logic~~ (https://learn.microsoft.com/en-us/azure/sre-agent/custom-logic-python)
-- ~~Connect to custom MCP server~~ (https://learn.microsoft.com/en-us/azure/sre-agent/custom-mcp-server)
-- ~~Data residency and privacy~~ (https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
-- ~~Multi-cause investigation~~ (https://learn.microsoft.com/en-us/azure/sre-agent/deep-investigation)
-- ~~Security and compliance~~ (https://learn.microsoft.com/en-us/azure/sre-agent/faq-security-compliance)
-- ~~Incident management~~ (https://learn.microsoft.com/en-us/azure/sre-agent/incident-management)
-- ~~Build incident response plans~~ (https://learn.microsoft.com/en-us/azure/sre-agent/incident-response-plan)
-- ~~Memory system~~ (https://learn.microsoft.com/en-us/azure/sre-agent/memory-system)
-- ~~About Azure SRE Agent~~ (https://learn.microsoft.com/en-us/azure/sre-agent/overview)
-- ~~Starter prompts~~ (https://learn.microsoft.com/en-us/azure/sre-agent/prompts)
-- ~~Roles and permissions~~ (https://learn.microsoft.com/en-us/azure/sre-agent/roles-permissions-overview)
-- ~~Schedule a task~~ (https://learn.microsoft.com/en-us/azure/sre-agent/scheduled-tasks)
-- ~~Subagents~~ (https://learn.microsoft.com/en-us/azure/sre-agent/subagent-builder-overview)
-- ~~Build subagents~~ (https://learn.microsoft.com/en-us/azure/sre-agent/subagent-builder-scenarios)
-- ~~App Service~~ (https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-azure-app-service)
-- ~~Container Apps~~ (https://learn.microsoft.com/en-us/azure/sre-agent/troubleshoot-azure-container-apps)
-- *...and 1 more*
 
 ## Classified Pages
 

@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 458
+- **Updated Pages**: 0
+- **Unchanged**: 462
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -68,17 +68,6 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
 | *(Unclassified)* | 107 | 23.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [No hardcoded environment URLs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-no-hardcoded-environment-urls)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [What-if check](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if)
-  - Updated: 2026-01-07T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Linter settings](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-config-linter)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Bicep CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-cli)
-  - Updated: 2025-12-02T08:00:00.000Z → 2026-03-04T18:23:00.000Z
 
 ## Classified Pages
 

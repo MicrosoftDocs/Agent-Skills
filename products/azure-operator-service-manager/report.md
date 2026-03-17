@@ -33,8 +33,8 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 43
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-service-manager/azure-operator-service-manager.csv`
 
@@ -50,17 +50,6 @@ skill_description: Expert knowledge for Azure Operator Service Manager developme
 | *(Unclassified)* | 23 | 48.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Onboarding and Deploying Basics](https://learn.microsoft.com/en-us/azure/operator-service-manager/best-practices-onboard-deploy)
-  - Updated: 2025-10-31T22:17:00.000Z → 2026-03-09T22:17:00.000Z
-- [Workload Configuration Management](https://learn.microsoft.com/en-us/azure/operator-service-manager/configuration-guide)
-  - Updated: 2025-07-31T22:14:00.000Z → 2026-03-13T05:18:00.000Z
-- [Get Started with Safe Upgrade Practices](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrade-practices)
-  - Updated: 2025-05-21T17:04:00.000Z → 2026-03-10T04:29:00.000Z
-- [Control Upgrade Failure Behavior](https://learn.microsoft.com/en-us/azure/operator-service-manager/safe-upgrades-nf-level-rollback)
-  - Updated: 2025-02-25T23:02:00.000Z → 2026-03-11T05:11:00.000Z
 
 ## Classified Pages
 

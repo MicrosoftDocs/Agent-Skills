@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring Azure AI Search: data sources, indexes, analyzers, vector/semantic
     settings, skillsets/enrichment, knowledge bases, monitoring, and indexer/connection
@@ -24,9 +24,8 @@ category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure AI Search: RAG and agentic
     retrieval patterns, knowledge store design, multitenancy/isolation, and multi-region
     deployment strategies.'
-  deployment: Deploying and moving Azure AI Search services (ARM/Bicep/Terraform),
-    choosing regions/features, and building an end-to-end agentic retrieval solution
-    with Foundry.
+  deployment: 'Deploying and moving Azure AI Search services: ARM/Bicep/Terraform
+    provisioning, cross-region migration steps, and checking regional/feature availability.'
 skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
@@ -45,10 +44,10 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 - **Unclassified**: 67
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 7
-- **Unchanged**: 291
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 298
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
 ## Classification Statistics
@@ -68,30 +67,10 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 
 ## Changes
 
-### New Pages
-
-- [Query a knowledge base (APIs or MCP)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/search/search-faq-frequently-asked-questions)
-  - Updated: 2026-02-26T23:09:00Z → 2026-03-12T17:22:00Z
-- [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal)
-  - Updated: 2026-02-04T23:15:00.000Z → 2026-03-04T23:12:00.000Z
-- [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-semantic)
-  - Updated: 2025-11-20T23:12:00.000Z → 2026-03-04T23:12:00.000Z
-- [What is agentic retrieval?](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview)
-  - Updated: 2026-02-02T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Create a knowledge base](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base)
-  - Updated: 2026-01-16T06:04:00.000Z → 2026-03-04T23:12:00.000Z
-- [Build an end-to-end retrieval solution](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-pipeline)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Create a demo app](https://learn.microsoft.com/en-us/azure/search/search-create-app-portal)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-05T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Retrieve data~~ (https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve)
+- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
+  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -290,6 +269,7 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | [Sentiment (v2)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-sentiment) | configuration | 0.70 | Defines the sentiment score range (0–1) and how it maps to positive/negative sentiment, plus skill configuration; these numeric semantics and parameters are product-specific. |
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
+| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.70 | The page provides a region-by-region matrix of where Azure AI Search is available and which premium features are supported in each region. This is expert, product-specific availability data that changes over time and isn't inferable from general knowledge. It best aligns with deployment because it directly affects where and how the service can be deployed and which capabilities are usable in each region. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Includes Terraform resource blocks and arguments specific to Azure AI Search, a deployment-focused integration pattern. |
 | [Upgrade the REST API](https://learn.microsoft.com/en-us/azure/search/search-api-migration) | decision-making | 0.70 | Details breaking changes between API versions and how to adjust code. Provides concrete guidance for when and how to upgrade, which is decision and migration focused. |
 | [Use a multi-vector field](https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields) | configuration | 0.70 | Feature-specific guidance on indexing multiple child vectors in a single field; likely includes schema configuration and constraints unique to this preview capability. |
@@ -328,7 +308,6 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | [Import data](https://learn.microsoft.com/en-us/azure/search/search-how-to-load-search-index) | configuration | 0.60 | Explains document import via REST, SDKs, and portal with product-specific operations and payload structures. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-agentic-retrieval) | integrations | 0.60 | Shows how to wire Azure AI Search with an Azure OpenAI LLM for multi-turn conversations, including product-specific API usage and parameters. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-text) | integrations | 0.60 | Uses .NET client library with concrete API calls and parameters specific to Azure AI Search, representing a coding pattern for integration. |
-| [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support) | deployment | 0.60 | Region support matrix with which features are available where; used for deployment planning and contains product-specific constraints. |
 
 ## Unclassified Pages
 

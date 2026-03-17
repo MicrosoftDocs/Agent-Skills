@@ -45,9 +45,9 @@ skill_description: Expert knowledge for Azure Data Factory development including
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 518
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 520
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -67,15 +67,6 @@ skill_description: Expert knowledge for Azure Data Factory development including
 | *(Unclassified)* | 72 | 13.8% |
 
 ## Changes
-
-### New Pages
-
-- [Upgrade ADF pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-
-### Updated Pages
-
-- [Amazon Redshift](https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift)
-  - Updated: 2026-01-15T08:00:00.000Z → 2026-03-10T04:29:00.000Z
 
 ## Classified Pages
 

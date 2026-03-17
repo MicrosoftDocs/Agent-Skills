@@ -36,8 +36,8 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 27
+- **Updated Pages**: 0
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -54,11 +54,6 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
 | *(Unclassified)* | 11 | 39.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-11T22:11:00.000Z
 
 ## Classified Pages
 

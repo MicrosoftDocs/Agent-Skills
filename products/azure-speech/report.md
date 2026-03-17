@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
-  configuration: 'Configuring Azure AI Speech behavior: audio inputs/outputs, batch
-    jobs, storage and logging, SSML/phonemes, custom/fine-tuned voices, Voice Live
-    settings, and regional/data residency options.'
+  configuration: 'Configuring Azure AI Speech behavior: audio I/O, regions, logging,
+    storage, batch jobs, SSML, phonemes, custom speech/voice, and Voice Live/avatars
+    settings and performance.'
   deployment: 'Deploying and scaling Azure AI Speech: Docker/Kubernetes containers,
     on-prem STT/TTS, custom speech models/endpoints, language ID, and batch/long-form
     synthesis workflows.'
@@ -29,8 +29,8 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
   AI Speech applications. Not for Azure AI services (use azure-ai-services), Azure
-  AI Immersive Reader (use azure-immersive-reader), Azure Translator (use azure-translator),
-  Azure AI Video Indexer (use azure-video-indexer).
+  AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+  Azure Translator (use azure-translator).
 ---
 # Azure AI Speech Crawl Report
 
@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 171
+- **Updated Pages**: 1
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -67,22 +67,8 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 
 ### Updated Pages
 
-- [Use LLM speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech)
-  - Updated: 2026-02-09T18:16:00.000Z → 2026-03-04T06:04:00.000Z
-- [Voice Live with Foundry models](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-quickstart)
-  - Updated: 2026-01-29T23:08:00.000Z → 2026-03-04T06:04:00.000Z
-- [Improve tool calling and latency wait times (preview)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-voice-live-interim-response)
-  - Updated: 2026-02-25T12:07:00.000Z → 2026-03-08T12:04:00.000Z
-- [Voice Live FAQ](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-faq)
-  - Updated: 2026-02-04T06:04:00Z → 2026-03-13T05:05:00Z
-- [Speech to text overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-04T06:04:00.000Z
-- [Language identification](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-identification)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-04T06:04:00.000Z
-- [Fast transcription API](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create)
-  - Updated: 2026-02-09T18:16:00.000Z → 2026-03-10T08:00:00.000Z
-- [Part 2: Create a batch transcription](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription-create)
-  - Updated: 2025-10-31T08:00:00.000Z → 2026-03-04T06:04:00.000Z
+- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions)
+  - Updated: 2026-01-30T18:18:00.000Z → 2026-03-16T17:27:00.000Z
 
 ## Classified Pages
 
@@ -157,7 +143,7 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 | [Part 4: Train your voice model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/professional-voice-train-voice) | limits-quotas | 0.70 | Mentions training duration depending on data and gives an approximate compute time (about 10 compute…); this is a product-specific performance/throughput characteristic. |
 | [Power automate batch transcription](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/power-automate-batch-transcription) | integrations | 0.70 | Shows how to use the Foundry batch connector with Power Automate/Apps/Logic Apps; includes connector-specific parameters and behavior. |
 | [Recommendations and guidelines](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/keyword-recognition-guidelines) | best-practices | 0.70 | Recommendations and guidelines on choosing and tuning keywords and UX with keyword verification; product-specific DO/DON'T style guidance beyond generic theory. |
-| [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions) | configuration | 0.70 | Lists specific regions and endpoints for SDK and REST APIs plus region-specific data processing behavior; these are concrete service configuration details. |
+| [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions) | configuration | 0.70 | Page lists the exact supported regions and their corresponding Speech SDK/REST API endpoints, which are product-specific configuration details (region codes and endpoint formats) that an LLM is unlikely to know reliably from training. This fits configuration because it defines concrete endpoint values per region rather than conceptual guidance. |
 | [SSML overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup) | configuration | 0.70 | Describes using SSML to control pitch, pronunciation, rate, and volume; SSML elements and attributes for Azure Speech are configuration parameters unique to the product. |
 | [Set up BYOS Speech resource](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/bring-your-own-storage-speech-resource) | security | 0.70 | Explains how to associate a customer-owned storage account with a Speech resource for data artifacts; BYOS wiring and required settings are product-specific security/compliance configuration. |
 | [Speech to text containers](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-stt) | deployment | 0.70 | Covers installing and running STT containers with Docker; builds on container deployment specifics. |

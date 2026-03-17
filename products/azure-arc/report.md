@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   security: 'Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates,
     network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI,
@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 - **Unclassified**: 145
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 9
-- **Unchanged**: 404
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 414
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
 ## Classification Statistics
@@ -69,36 +69,10 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 
 ## Changes
 
-### New Pages
-
-- [Filesystem behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-behavior)
-- [Filesystem out of space behavior](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/reference-filesystem-out-of-space)
-
 ### Updated Pages
 
-- [Create your model endpoint (optional)](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-model-endpoint)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-10T22:21:00.000Z
-- [Explore multi-cluster workload management](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-management)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-06T08:00:00.000Z
-- [Deploy and manage cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions)
-  - Updated: 2024-10-14T17:03:00.000Z → 2026-03-05T23:14:00.000Z
-- [Connect a cluster to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-connect-cluster)
-  - Updated: 2026-02-18T23:09:00.000Z → 2026-03-02T08:00:00.000Z
-- [Cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-extensions)
-  - Updated: 2025-04-22T08:00:00.000Z → 2026-03-07T06:06:00.000Z
-- [Multi-cluster workload management with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-management)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-09T17:05:00.000Z
-- [Plan for deployment](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/support-matrix-for-arc-enabled-vmware-vsphere)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-03-10T08:00:00.000Z
-- [Install Arc agent at scale](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/enable-guest-management-at-scale)
-  - Updated: 2026-02-11T12:03:00.000Z → 2026-03-05T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-arc/system-center-virtual-machine-manager/whats-new)
-- ~~What's new~~ (https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/whats-new)
+- [Restore AdventureWorks](https://learn.microsoft.com/en-us/azure/azure-arc/data/restore-adventureworks-sample-db)
+  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-16T22:14:00.000Z
 
 ## Classified Pages
 
@@ -444,7 +418,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Create a virtual machine](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/create-virtual-machine) | 0.35 | Portal-based VM creation walkthrough; largely procedural without detailed configuration parameter tables, limits, or specialized patterns. |
 | [Directly connected | Azure portal example](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-complete-managed-instance-directly-connected) | 0.35 | Quickstart deployment tutorial; step-by-step portal deployment without clear evidence of detailed config matrices, limits, or best-practice specifics. |
 | [Install Container Storage on a single-node Ubuntu cluster](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/quickstart-install) | 0.35 | Quickstart installation guide; step-by-step tutorial rather than a configuration reference or decision guide. |
-| [Restore AdventureWorks](https://learn.microsoft.com/en-us/azure/azure-arc/data/restore-adventureworks-sample-db) | 0.35 | Sample database restore tutorial; straightforward example rather than product-specific configuration or troubleshooting reference. |
 | [Upgrade Azure Arc resource bridge](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/upgrade-azure-arc-resource-bridge) | 0.35 | Upgrade procedure for resource bridge; step-by-step maintenance, but no clear evidence of configuration matrices, limits, or troubleshooting mappings. |
 | [User guide](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/portal-user-guide) | 0.35 | Portal user guide for navigation and basic operations; UI-focused, not a configuration parameter or troubleshooting reference. |
 | [Volumes and subvolumes overview](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/volumes-subvolumes) | 0.35 | Conceptual explanation of volumes and subvolumes; likely lacks detailed config tables or limits. |
@@ -512,6 +485,7 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes) | 0.20 | Release notes for Arc-enabled data services; change log rather than a stable expert-knowledge reference in the defined sub-skill categories. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-release-notes) | 0.20 | Release notes typically list version changes, fixes, and new features but not the structured limits, configuration matrices, error-code mappings, or decision tables required by the defined sub-skill types. The description indicates a changelog-style page without detailed quotas, config parameter tables, or troubleshooting mappings. |
 | [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/release-notes) | 0.20 | Release notes typically list features and fixes but not the structured limits, configuration matrices, or troubleshooting mappings required by the sub-skill types. The summary indicates high-level change information rather than reusable expert configuration or diagnostic knowledge. |
+| [Restore AdventureWorks](https://learn.microsoft.com/en-us/azure/azure-arc/data/restore-adventureworks-sample-db) | 0.20 | How-to tutorial for restoring the AdventureWorks sample database into Azure Arc-enabled SQL Managed Instance; likely step-by-step restore/import instructions without product-specific limits, configuration matrices, or detailed troubleshooting mappings. |
 | [SQL Managed Instance enabled by Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-overview) | 0.20 | Service overview; conceptual description of SQL Managed Instance enabled by Azure Arc. |
 | [View connectivity status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-connectivity-status) | 0.20 | Viewing connectivity status is a UI usage guide; it doesn’t expose numeric limits, config matrices, or detailed error mappings. |
 | [View update status](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-view-update-status) | 0.20 | Viewing update status is a basic monitoring/portal guide without expert-only configuration or troubleshooting content. |

@@ -36,9 +36,9 @@ skill_description: Expert knowledge for Azure Health Bot development including b
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 77
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-bot/azure-health-bot.csv`
 
@@ -55,10 +55,6 @@ skill_description: Expert knowledge for Azure Health Bot development including b
 | *(Unclassified)* | 32 | 41.0% |
 
 ## Changes
-
-### New Pages
-
-- [Healthcare agent service for Microsoft Copilot M365](https://learn.microsoft.com/en-us/azure/health-bot/quickstart-copilot-m365-integration)
 
 ## Classified Pages
 

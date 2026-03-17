@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure DevOps/Server: pool architecture,
     reliability/DR, SQL/database dependencies, and design patterns for simple to complex
     multi-server topologies and analytics modeling.'
-  configuration: 'Configuring Azure DevOps/Server: managed pools, networking, notifications,
-    Boards/process XML, Analytics/Power BI, dashboards, backups, SQL, services, and
-    admin console settings.'
+  configuration: 'Configuring Azure DevOps/Server: managed pools, networking, scaling,
+    notifications, Boards/process customization, Analytics/Power BI, dashboards, backups,
+    SQL, services, and admin console settings.'
   security: 'Managing Azure DevOps security: identities, auth, org/project/repo permissions,
     access levels, auditing, analytics security, and secure server/service account
     configuration'
@@ -45,10 +45,10 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 - **Unclassified**: 665
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 44
-- **Unchanged**: 892
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 944
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
 ## Classification Statistics
@@ -68,68 +68,12 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 
 ## Changes
 
-### New Pages
-
-- [Azure DevOps MCP Server overview](https://learn.microsoft.com/en-us/azure/devops/mcp-server/mcp-server-overview?view=azure-devops)
-- [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/boards/sprint-270-update)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-270-update)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/repos/sprint-270-update)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/general/sprint-270-update)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/testplans/sprint-270-update)
-- [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/ghazdo/sprint-270-update)
-- [February 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
-- [January 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-2026-01)
-
 ### Updated Pages
 
-- [Time zone settings](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/timezone-settings-usage?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-04T23:47:00.000Z
-- [Manage OAuth apps](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/manage-authorizations?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
-- [Create your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops)
-  - Updated: 2026-02-11T22:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Look up organization owner](https://learn.microsoft.com/en-us/azure/devops/organizations/security/look-up-organization-owner?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
-- [Add and manage banners](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/manage-banners?view=azure-devops)
-  - Updated: 2026-03-02T22:01:00.000Z → 2026-03-04T02:02:00.000Z
-- [Resolve orphaned organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/resolve-orphaned-organization?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-04T02:02:00.000Z
-- [Project summary](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/project-vision-status?view=azure-devops)
-  - Updated: 2025-08-06T20:45:00.000Z → 2026-03-04T02:02:00.000Z
-- [Create a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops)
-  - Updated: 2026-03-02T22:01:00.000Z → 2026-03-04T02:02:00.000Z
-- [Set area paths](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/set-area-paths?view=azure-devops)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-03-04T02:02:00.000Z
-- [Set iteration paths (sprints)](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/set-iteration-paths-sprints?view=azure-devops)
-  - Updated: 2025-12-22T08:00:00.000Z → 2026-03-04T02:02:00.000Z
-- [Rename a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/rename-project?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-04T02:02:00.000Z
-- [Delete a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops)
-  - Updated: 2025-11-03T22:05:00.000Z → 2026-03-04T02:02:00.000Z
-- [Restore a project](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops)
-  - Updated: 2025-11-03T22:05:00.000Z → 2026-03-04T02:02:00.000Z
-- [Save project data](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/delete-project?view=azure-devops)
-  - Updated: 2025-11-03T22:05:00.000Z → 2026-03-04T02:02:00.000Z
-- [About teams & Agile tools](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-teams-and-settings?view=azure-devops)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Create or add a team](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/add-teams?view=azure-devops)
-  - Updated: 2026-03-03T22:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Rename or delete a team](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/rename-remove-team?view=azure-devops)
-  - Updated: 2026-03-03T22:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Access auditing](https://learn.microsoft.com/en-us/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops)
-  - Updated: 2025-02-26T08:00:00.000Z → 2026-03-04T02:02:00.000Z
-- [Manage personal notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/manage-your-personal-notifications?view=azure-devops)
-  - Updated: 2025-05-14T22:02:00.000Z → 2026-03-04T02:02:00.000Z
-- [Manage team, group, Global notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/manage-team-group-global-organization-notifications?view=azure-devops)
-  - Updated: 2025-05-14T21:52:00.000Z → 2026-03-04T02:02:00.000Z
-- *...and 24 more*
-
-### Deleted Pages
-
-- ~~Azure DevOps MCP Server~~ (https://learn.microsoft.com/en-us/azure/devops/mcp-server/mcp-server-overview?view=azure-devops)
-- ~~November 2025~~ (https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-2025-11)
-- ~~January 2026~~ (https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new)
+- [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
+  - Updated: 2026-03-13T21:04:00.000Z → 2026-03-16T17:05:00.000Z
+- [Marketplace & Extensibility](https://learn.microsoft.com/en-us/azure/devops/marketplace-extensibility/?view=azure-devops)
+  - Updated: 2025-05-14T17:07:00Z → 2026-03-16T21:05:00Z
 
 ## Classified Pages
 
@@ -301,7 +245,6 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | [Provide help text, hyperlinks, or web content](https://learn.microsoft.com/en-us/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form?view=azure-devops-server) | configuration | 0.70 | XML-based reference for specific form controls (tooltip, hyperlink, embedded HTML) with element/attribute names and usage is product-specific configuration detail beyond generic knowledge. |
 | [Query trend data](https://learn.microsoft.com/en-us/azure/devops/report/extend-analytics/querying-for-trend-data?view=azure-devops) | integrations | 0.70 | Provides concrete OData query patterns for trend and period-over-period analysis against Azure DevOps Analytics, which are integration-specific. |
 | [Release burndown](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-releaseburndown?view=azure-devops) | integrations | 0.70 | Provides specific OData queries and report configurations for release burndown/burnup using Azure DevOps Analytics data. |
-| [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | configuration | 0.70 | Setup article for remote MCP Server is likely to include concrete endpoint URLs, required parameters, authentication settings, and possibly transport configuration values that are product-specific and not generic tutorial content. |
 | [Request change in permissions](https://learn.microsoft.com/en-us/azure/devops/organizations/security/request-changes-permissions?view=azure-devops) | security | 0.70 | Page is a concrete, product-specific guide for resolving insufficient-permission messages by mapping specific tasks and error conditions to required Azure DevOps roles/permissions and the process to request elevation. This is detailed security/permission configuration behavior rather than generic concepts. |
 | [Requirements](https://learn.microsoft.com/en-us/azure/devops/server/requirements?view=azure-devops-server) | deployment | 0.70 | Details supported OS, SQL versions, and hardware requirements for install/upgrade; these are product-specific deployment constraints and matrices. |
 | [Requirements tracking](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-stories-overview?view=azure-devops) | integrations | 0.70 | Provides specific OData query examples and Analytics fields for requirements, tests, and bugs to construct a stories overview report in Power BI. |
@@ -332,6 +275,7 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | [View/configure velocity](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/team-velocity?view=azure-devops) | configuration | 0.70 | Covers configuration of in-context Analytics report and Velocity widget; includes product-specific settings and usage patterns. |
 | [Why are my emails delayed](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/troubleshoot-delayed-email?view=azure-devops) | troubleshooting | 0.70 | Troubleshooting delayed notifications using notification statistics; symptom → diagnosis → resolution pattern. |
 | [Work tracking (Azure Boards)](https://learn.microsoft.com/en-us/azure/devops/report/analytics/entity-reference-boards?view=azure-devops) | configuration | 0.70 | Lists properties and enumerated types for Boards Analytics entities; this is detailed schema/configuration metadata not inferable from general knowledge. |
+| [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops) | configuration | 0.68 | Page describes how to configure a remote, hosted MCP Server endpoint for Azure DevOps AI-assisted development, including product-specific connection details and settings for streamable HTTP transport. This is concrete configuration guidance rather than a conceptual overview. |
 | [4-Reconnect services and users](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/tut-single-svr-reconn-svcs-users?view=azure-devops-server) | deployment | 0.65 | Explains starting project collections, verifying groups, and clearing server caches after restore; product-specific post-deployment steps. |
 | [About access levels](https://learn.microsoft.com/en-us/azure/devops/organizations/security/access-levels?view=azure-devops) | security | 0.65 | Describes access level types, what features they unlock, and how to assign them; includes specific access level names and constraints. |
 | [About teams & Agile tools](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-teams-and-settings?view=azure-devops) | decision-making | 0.65 | Provides concrete guidance on when to move from one team to multiple teams (e.g., 6–9 members threshold) and how to structure hierarchical teams; this is product-specific decision guidance with quantified thresholds. |
@@ -887,7 +831,6 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/testplans/sprint-270-update) | 0.20 | Sprint release notes for Azure Test Plans describe new features and changes but do not focus on structured limits, configuration matrices, troubleshooting mappings, or other expert-reference data as defined by the sub-skill types. Content is primarily update/what’s new information rather than reusable expert knowledge tables or patterns. |
 | [March 8](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/pipelines/sprint-218-update) | 0.20 | Sprint 218 Azure Pipelines release notes; typical release notes content rather than expert-reference documentation. |
 | [March 8](https://learn.microsoft.com/en-us/azure/devops/release-notes/2023/reporting/sprint-218-update) | 0.20 | Sprint 218 reporting update is a release-note style page; it lacks structured expert-knowledge elements like parameter tables or error mappings. |
-| [Marketplace & Extensibility](https://learn.microsoft.com/en-us/azure/devops/marketplace-extensibility/?view=azure-devops) | 0.20 | Marketplace & extensibility hub; discovery/overview of extensions, not detailed config or troubleshooting. |
 | [May 11](https://learn.microsoft.com/en-us/azure/devops/release-notes/2020/pipelines/sprint-169-update) | 0.20 | Sprint 169 Azure Pipelines release notes list sprint-specific updates; they are not organized as limits, configuration references, troubleshooting guides, or decision matrices. |
 | [May 13](https://learn.microsoft.com/en-us/azure/devops/release-notes/2019/artifacts/build-may) | 0.20 | Microsoft Build announcements for Azure Artifacts; marketing/announcement content rather than structured expert-knowledge documentation. |
 | [May 13](https://learn.microsoft.com/en-us/azure/devops/release-notes/2019/build-may) | 0.20 | Build 2019 announcement page summarizes new capabilities (Kubernetes integration, GitHub identity) without detailed expert configuration or limits. |
@@ -1084,5 +1027,6 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | [February 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new) | - | Monthly 'what's new' summary for Azure DevOps docs; describes updated articles but does not itself contain detailed limits, configs, troubleshooting mappings, or decision criteria. |
 | [January 2026](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/azure-devops-docs-2026-01) | - | Monthly 'what's new' summary for Azure DevOps docs; functions as a change log and navigation aid, not a source of expert configuration, limits, or troubleshooting content. |
 | [March 5](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/general/sprint-270-update) | - | Sprint release notes describe new features and changes but typically do not provide structured limits, configuration matrices, troubleshooting mappings, or other stable expert reference data as defined by the sub-skill types. |
+| [Marketplace & Extensibility](https://learn.microsoft.com/en-us/azure/devops/marketplace-extensibility/?view=azure-devops) | - | High-level landing page for Marketplace and extensibility; it only describes discovering, managing, and developing extensions without exposing specific configuration parameters, limits, or troubleshooting details. |
 | [Roadmap](https://learn.microsoft.com/en-us/azure/devops/release-notes/features-timeline) | - | Roadmap/landing page with navigation; no technical configuration, limits, or troubleshooting details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/devops/release-notes/docswhatsnew/) | - | High-level 'what's new' navigation page listing recent documentation changes; no product-specific limits, configs, error codes, or decision matrices. |

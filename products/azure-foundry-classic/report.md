@@ -44,10 +44,10 @@ skill_description: Expert knowledge for Azure Foundry Classic development includ
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 112
-- **Unchanged**: 258
-- **Deleted Pages**: 5
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 374
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-foundry-classic/azure-foundry-classic.csv`
 
 ## Classification Statistics
@@ -66,65 +66,6 @@ skill_description: Expert knowledge for Azure Foundry Classic development includ
 | *(Unclassified)* | 102 | 27.3% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Models from Partners and Community](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/models-from-partners)
-- [Use the Microsoft Foundry Agent Service in VS Code](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents)
-- [Use MCP tools with the Microsoft Foundry Agent Service in VS Code](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents-mcp)
-- [Develop with agents and LangGraph](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/langchain-agents)
-
-### Updated Pages
-
-- [Managed identity](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/managed-identity)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [OpenAI vs Azure OpenAI (Python)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/switching-endpoints)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/whats-new)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T23:10:00.000Z
-- [Threads, runs, and messages](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/concepts/threads-runs-messages)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T23:10:00.000Z
-- [Tool Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/overview)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/azure-ai-search)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T08:00:00.000Z
-- [How to use Azure AI Search](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/azure-ai-search-samples)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/browser-automation)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T08:00:00.000Z
-- [How to use browser automation](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/browser-automation-samples)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-06T23:10:00.000Z
-- [Consume models from a different project or hub](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless-connect)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-03T06:03:00.000Z
-- [Guardrails & controls for serverless API](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-catalog-content-safety)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-02T18:11:00.000Z
-- [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements)
-  - Updated: 2026-03-02T18:11:00.000Z → 2026-03-11T08:00:00.000Z
-- [API lifecycle](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/api-version-lifecycle)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-09T23:03:00.000Z
-- [Realtime API via WebSockets](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/realtime-audio-websockets)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [Batch with Azure Blob Storage](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/batch-blob-storage)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reasoning)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-11T05:31:00.000Z
-- [Computer Use](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/computer-use)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-11T05:31:00.000Z
-- [Predicted outputs](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/predicted-outputs)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [Prompt caching](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/prompt-caching)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- [What is Microsoft Foundry (classic)?](https://learn.microsoft.com/en-us/azure/foundry-classic/what-is-foundry)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-13T22:11:00.000Z
-- *...and 92 more*
-
-### Deleted Pages
-
-- ~~Disable preview features with RBAC~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/disable-preview-features-with-rbac)
-- ~~Configure Models from Partners and Community~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/configure-marketplace)
-- ~~Use the Microsoft Foundry Agent Service in VS Code (Preview)~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents)
-- ~~Use MCP tools with the Microsoft Foundry Agent Service in VS Code (Preview)~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents-mcp)
-- ~~Model versions~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-versions)
 
 ## Classified Pages
 
@@ -291,6 +232,7 @@ skill_description: Expert knowledge for Azure Foundry Classic development includ
 | [Model lifecycle and retirement](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-lifecycle-retirement) | decision-making | 0.70 | Covers lifecycle stages, deprecation timelines, notifications, and migration steps; this is expert guidance for when and how to move between models and handle retirement, aligning with decision-making and migration considerations. |
 | [Model region availability for serverless API](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless-availability) | limits-quotas | 0.70 | Region availability per model is a product-specific capability matrix; while not numeric quotas, it is a deployment constraint table that functions like a limits matrix and is not generally known. |
 | [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.70 | Model versioning article discusses update policies, deployment options, and how to choose upgrade policies. This is decision guidance about when to select particular versioning/upgrade strategies, likely including scenario-based recommendations and trade-offs between policies. |
+| [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.70 | Model versioning article discusses update policies, deployment options, and how to choose upgrade policies. This is decision guidance about when to select particular versioning/upgrade strategies, likely including scenario-based recommendations and trade-offs between policies. |
 | [Network security perimeter](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/add-foundry-to-network-security-perimeter) | security | 0.70 | Explains associating Foundry with NSPs; includes Foundry-specific resource types, endpoint categories, and any special considerations for access rules. |
 | [Network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/network-security-perimeter) | security | 0.70 | Describes adding Azure OpenAI to a network security perimeter; likely includes specific perimeter configuration, resource types, and security settings. |
 | [OpenAI vs Azure OpenAI (Python)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/switching-endpoints) | integrations | 0.70 | Describes concrete code and configuration changes needed to swap between OpenAI and Azure OpenAI using the shared Python client library. This is an integration pattern with product-specific endpoint, parameter, and configuration differences that go beyond generic SDK usage. |
@@ -362,7 +304,6 @@ skill_description: Expert knowledge for Azure Foundry Classic development includ
 | [MedImageParse models for prompted segmentation](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/deploy-medimageparse) | integrations | 0.65 | Covers how to use MedImageParse models; likely includes request formats, parameter names, and constraints specific to these healthcare models, which are integration-focused details. |
 | [Migrate from hub-based to Foundry project](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/migrate-project) | decision-making | 0.65 | Migration-focused article for moving from hub-based to new projects; likely includes concrete guidance on what migrates, prerequisites, and recommended paths, fitting decision-making/migration criteria. |
 | [Model retirements](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-retirements) | decision-making | 0.65 | A model retirements page lists which models are available, deprecated, or retired and guides when to move between them. This is used for planning and choosing models over time, fitting decision-making around model selection and migration, with details that change over time and are not in pretraining. |
-| [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.65 | Explains how model versioning and update policies work and which upgrade policy to choose; this is product-specific decision guidance about version/update behavior and migration, fitting decision-making. |
 | [Monitor Azure OpenAI](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/monitor-openai) | configuration | 0.65 | Monitoring article for Azure OpenAI using Azure Monitor and Log Analytics; expected to list specific metrics, log categories, and configuration settings unique to this service. |
 | [Monitor model deployments](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/monitor-models) | configuration | 0.65 | Monitoring deployments with Log Analytics implies product-specific metric names, log categories, and configuration steps for Foundry Models. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/browser-automation) | security | 0.65 | Browser Automation has significant security implications; the article warns about risks and likely includes product-specific security settings, permissions, and constraints for using Playwright workspaces safely with agents, fitting security-focused configuration guidance. |

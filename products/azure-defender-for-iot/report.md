@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 179
+- **Updated Pages**: 0
+- **Unchanged**: 180
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-iot/azure-defender-for-iot.csv`
 
@@ -67,11 +67,6 @@ skill_description: Expert knowledge for Azure Defender For Iot development inclu
 | *(Unclassified)* | 64 | 35.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [OT monitoring with virtual appliances](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/ot-virtual-appliances)
-  - Updated: 2025-09-18T17:09:00.000Z → 2026-03-08T12:11:00.000Z
 
 ## Classified Pages
 

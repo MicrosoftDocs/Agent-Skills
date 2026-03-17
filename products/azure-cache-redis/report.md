@@ -42,9 +42,9 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 62
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -63,10 +63,6 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
 | *(Unclassified)* | 7 | 11.1% |
 
 ## Changes
-
-### New Pages
-
-- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/monitor-cache-reference)
 
 ## Classified Pages
 

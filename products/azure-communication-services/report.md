@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Communication Services development
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 514
+- **Updated Pages**: 0
+- **Unchanged**: 516
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -69,13 +69,6 @@ skill_description: Expert knowledge for Azure Communication Services development
 | *(Unclassified)* | 102 | 19.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Quota increase for email domains](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-quota-increase)
-  - Updated: 2024-04-18T05:43:00.000Z → 2026-03-10T08:00:00.000Z
-- [REST API for Teams Phone extensibility](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensiblity-rest-api)
-  - Updated: 2025-09-03T17:13:00.000Z → 2026-03-09T22:17:00.000Z
 
 ## Classified Pages
 

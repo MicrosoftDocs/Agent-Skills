@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring DAB: CLI-based config management, entities and data
     sources, caching, secrets/env configs, OpenAPI/GraphQL, logging/telemetry, health,
@@ -34,16 +34,16 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 
 ## Summary
 
-- **Total Pages**: 122
-- **Fetched**: 122
+- **Total Pages**: 123
+- **Fetched**: 123
 - **Fetch Failed**: 0
 - **Classified**: 80
-- **Unclassified**: 42
+- **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 14
-- **Updated Pages**: 14
-- **Unchanged**: 94
+- **New Pages**: 2
+- **Updated Pages**: 9
+- **Unchanged**: 112
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
@@ -51,69 +51,47 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 3 | 2.5% |
-| configuration | 49 | 40.2% |
+| best-practices | 3 | 2.4% |
+| configuration | 49 | 39.8% |
 | decision-making | 1 | 0.8% |
 | deployment | 6 | 4.9% |
-| integrations | 9 | 7.4% |
-| limits-quotas | 3 | 2.5% |
-| security | 8 | 6.6% |
+| integrations | 9 | 7.3% |
+| limits-quotas | 3 | 2.4% |
+| security | 8 | 6.5% |
 | troubleshooting | 1 | 0.8% |
-| *(Unclassified)* | 42 | 34.4% |
+| *(Unclassified)* | 43 | 35.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Configure query timeout](https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/configure-timeout)
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/)
-- [DAB 1.7 (Feature release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-7)
-- [stdio transport](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/stdio-transport)
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/)
-- [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview)
-- [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init)
-- [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add)
-- [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start)
-- [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate)
-- [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health)
-- [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize)
-- [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen)
-- [DAB Agent](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/agent)
+- [DAB Docker](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/docker)
+- [DAB Model Context Protocol (MCP)](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/mcp)
 
 ### Updated Pages
 
-- [Call REST endpoints](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/rest)
-  - Updated: 2025-10-14T23:03:00.000Z → 2026-03-05T00:03:00.000Z
-- [Configure Entra ID authentication](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-authenticate-entra)
-  - Updated: 2026-01-23T06:02:00.000Z → 2026-03-05T00:03:00.000Z
-- [dab export](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-export)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-03-06T06:02:00.000Z
-- [dab start](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-start)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-03-06T06:02:00.000Z
-- [Set up Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/set-up-cosmosdb)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T06:02:00.000Z
-- [Call GraphQL endpoints](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/graphql)
-  - Updated: 2025-10-14T23:03:00.000Z → 2026-03-05T00:03:00.000Z
-- [Local Cosmos emulator](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/nosql)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T06:02:00.000Z
-- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/azure-cosmos-db-nosql)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T06:02:00.000Z
-- [What is SQL MCP Server?](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview)
-  - Updated: 2026-01-31T00:02:00.000Z → 2026-03-06T18:03:00.000Z
-- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-ai-foundry)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T18:03:00.000Z
-- [.NET Aspire](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T18:03:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-11T05:03:00.000Z
-- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps)
-  - Updated: 2026-01-28T00:24:00.000Z → 2026-03-06T18:03:00.000Z
-- [Data manipulation tools](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools)
-  - Updated: 2026-01-07T18:07:00.000Z → 2026-03-06T06:02:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/)
+  - Updated: 2026-03-11T05:03:00Z → 2026-03-16T17:10:00Z
+- [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
+- [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen)
+  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
 
 ### Deleted Pages
 
-- ~~What's new?~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/)
+- ~~DAB Agent~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/agent)
 
 ## Classified Pages
 
@@ -214,32 +192,33 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 | [Installation](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/install) | 0.40 | Installation guide for the CLI; mostly environment setup and basic install commands, not detailed configuration schemas or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/) | 0.40 | High-level entry page for SQL MCP Server; mostly conceptual overview and navigation to setup/config pages. |
 | [Run in a container](https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/run-container) | 0.40 | How-to guide for running DAB in Docker; likely step-by-step usage without a dense configuration parameter reference or limits matrix. Treated as general tutorial rather than expert configuration or deployment matrix. |
-| [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add) | 0.35 | Explains using DAB Add extension to add SQL objects; appears as a usage guide, not a detailed configuration or integration reference. |
-| [DAB Agent](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/agent) | 0.35 | DAB Agent extension providing a Copilot chat participant; likely describes natural-language workflows rather than detailed configuration or limits. |
-| [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen) | 0.35 | DAB Code Gen extension for generating C# artifacts; summary suggests a usage guide without detailed parameter tables or constraints. |
-| [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health) | 0.35 | DAB Health extension to query runtime/health; appears to be a simple usage guide, not a deep configuration or limits reference. |
-| [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init) | 0.35 | Describes using DAB Init extension to scaffold config with defaults; summary suggests a how-to, not a full configuration parameter reference. |
-| [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate) | 0.35 | DAB Validate extension usage; likely shows how to run validation, but not detailed parameter tables or error-code mappings in the summary. |
-| [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize) | 0.35 | DAB Visualize extension generating Mermaid ER diagrams; primarily a feature/how-to description, not configuration or troubleshooting reference. |
+| [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen) | 0.35 | Describes generating C# artifacts from configuration; summary suggests a code-generation workflow, not detailed SDK parameter or configuration tables. |
+| [DAB Docker](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/docker) | 0.35 | Covers building and running Docker images from VS Code; likely a step-by-step tutorial without product-specific deployment matrices or constraints. |
+| [DAB Model Context Protocol (MCP)](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/mcp) | 0.35 | Explains installing configurations as MCP servers with one-click setup; appears to be a usage guide rather than detailed configuration, limits, or troubleshooting content. |
+| [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate) | 0.35 | Validation workflow description; summary does not indicate specific error codes, configuration parameter tables, or symptom→solution mappings. |
 | [.NET Aspire](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire) | 0.30 | Quickstart using .NET Aspire with SQL MCP Server; focused on building a sample container-based solution, not detailed configuration reference. |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-ai-foundry) | 0.30 | Quickstart connecting SQL MCP Server to Azure AI Foundry; likely step-by-step UI usage without deep config tables or limits. |
 | [Azure Container Apps](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps) | 0.30 | Quickstart deploying SQL MCP Server to Azure Container Apps; step-by-step deployment guide without mention of tier matrices or constraints. |
 | [Call GraphQL endpoints](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/graphql) | 0.30 | The page appears to be a conceptual/how-to guide on calling GraphQL endpoints (querying, filtering, sorting, paging) with DAB. From the summary it does not clearly expose product-specific error codes, limits, or detailed configuration tables; it mainly explains usage concepts that are largely generic. |
 | [Call REST endpoints](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/rest) | 0.30 | Primarily explains how to call REST endpoints (query, filter, sort, paging). Appears to be conceptual/how-to usage without product-specific limits, configuration tables, or error-code-based troubleshooting. No clear expert-only numeric limits, config matrices, or security role details indicated in the summary. |
-| [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start) | 0.30 | DAB Start extension usage to run dab start from VS Code; basic command wiring, no expert-level limits, configs, or troubleshooting. |
+| [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add) | 0.30 | Covers adding entities via the extension; likely a how-to workflow without detailed configuration tables, limits, or error-code-based troubleshooting. |
+| [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init) | 0.30 | Describes scaffolding a new configuration file with defaults, but summary suggests a tutorial-style guide rather than a parameter reference or best-practices list. |
 | [Deployment overview](https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/) | 0.30 | High-level deployment guidance overview without detailed matrices, limits, or product-specific configuration tables; mostly conceptual navigation. |
 | [Local MySQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/mysql) | 0.30 | Quickstart for MySQL; introductory tutorial content rather than expert-level configuration or limits. |
 | [Local PostgreSQL](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/postgresql) | 0.30 | Quickstart for PostgreSQL; likely basic configuration steps without comprehensive parameter tables or error mappings. |
 | [Local SQL database](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/mssql) | 0.30 | Quickstart tutorial for SQL; primarily step-by-step getting started, not a full configuration reference or limits table. |
-| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/) | 0.30 | High-level page about VS Code extensions for DAB; likely a navigation/overview without detailed config tables or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/) | 0.30 | High-level description of VS Code extensions and workflows; likely a navigational/overview page without detailed configuration tables, limits, or error mappings. |
 | [Run from source](https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/run-from-source) | 0.30 | Guide for building and running from source; mostly generic build steps and Git usage, not a structured configuration, limits, or troubleshooting reference. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code) | 0.30 | Quickstart running SQL MCP Server locally and connecting from VS Code; primarily procedural steps, not expert-level config or troubleshooting content. |
 | [What is SQL MCP Server?](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview) | 0.30 | Overview of SQL MCP Server; conceptual description of capabilities and positioning, no detailed config parameters, limits, or decision matrices indicated. |
-| [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview) | 0.30 | Overview of DAB VS Code extensions; conceptual workflow description rather than detailed configuration or troubleshooting reference. |
+| [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health) | 0.25 | Health check usage from VS Code; likely a simple endpoint invocation guide without detailed diagnostics or error-code mappings. |
+| [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize) | 0.25 | Explains generating Mermaid ER diagrams; appears to be a feature walkthrough, not a configuration or best-practices reference. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/azure-cosmos-db-nosql) | 0.20 | Quickstart deploying DAB with Azure Cosmos DB and Container Apps via AZD template; focused on getting started, not expert configuration or limits. |
+| [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start) | 0.20 | Focuses on running `dab start` from VS Code; appears to be a basic usage guide rather than configuration reference or deployment constraints. |
 | [Local Cosmos emulator](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/nosql) | 0.20 | Quickstart tutorial for using DAB with local Cosmos DB emulator; primarily step-by-step setup, not configuration reference or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/) | 0.20 | Release-notes landing page; high-level links to versions and features without detailed limits, configs, or error mappings. |
 | [What is Data API builder?](https://learn.microsoft.com/en-us/azure/data-api-builder/overview) | 0.20 | High-level product overview of Data API builder without detailed configuration tables, limits, or error mappings. |
+| [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview) | 0.20 | Explicitly an overview of the VS Code extensions; describes capabilities but not specific parameters, limits, or troubleshooting content. |
 | [DAB 1.1 (GA)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-1) | 0.10 | Release notes for version 1.1; GA announcement and feature list, not expert configuration or diagnostic content. |
 | [DAB 1.2 (Stability release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-2) | 0.10 | Release notes for version 1.2; no indication of detailed limits, configuration schemas, or troubleshooting mappings. |
 | [DAB 1.3 (Feature release)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-1-3) | 0.10 | Release notes for version 1.3; change log style content rather than structured expert guidance. |

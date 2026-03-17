@@ -45,10 +45,10 @@ skill_description: Expert knowledge for Azure App Service development including 
 - **Unclassified**: 85
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 12
-- **Unchanged**: 234
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 247
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
 ## Classification Statistics
@@ -67,41 +67,6 @@ skill_description: Expert knowledge for Azure App Service development including 
 | *(Unclassified)* | 85 | 34.4% |
 
 ## Changes
-
-### New Pages
-
-- [Host an App in an App Service Environment](https://learn.microsoft.com/en-us/azure/app-service/environment/using)
-
-### Updated Pages
-
-- [Monitor App Service](https://learn.microsoft.com/en-us/azure/app-service/monitor-app-service)
-  - Updated: 2025-04-28T22:06:00.000Z → 2026-03-12T05:52:00.000Z
-- [Use .NET](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault)
-  - Updated: 2023-06-01T22:06:00.000Z → 2025-08-12T22:11:00.000Z
-- [Use JavaScript](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-javascript)
-  - Updated: 2024-08-02T08:00:00.000Z → 2025-11-18T18:43:00.000Z
-- [Use PHP](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-php)
-  - Updated: 2022-02-28T23:05:00.000Z → 2025-08-12T22:11:00.000Z
-- [Use Python](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault-python)
-  - Updated: 2024-08-23T17:14:00.000Z → 2025-11-18T18:43:00.000Z
-- [Built-in authentication overview](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)
-  - Updated: 2025-11-05T05:32:00.000Z → 2026-03-11T22:19:00.000Z
-- [Deploy](https://learn.microsoft.com/en-us/azure/app-service/quickstart-wordpress)
-  - Updated: 2025-04-11T17:03:00.000Z → 2026-03-04T18:23:00.000Z
-- [Create an App Service Environment from template](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-create-from-template)
-  - Updated: 2025-03-07T23:05:00.000Z → 2026-03-13T17:21:00.000Z
-- [App Service Environment v3 network settings](https://learn.microsoft.com/en-us/azure/app-service/environment/configure-network-settings)
-  - Updated: 2025-03-07T23:05:00.000Z → 2026-03-13T17:21:00.000Z
-- [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference)
-  - Updated: 2024-11-05T08:00:00.000Z → 2026-03-12T22:17:00.000Z
-- [Geo-distributed scale](https://learn.microsoft.com/en-us/azure/app-service/environment/app-service-app-service-environment-geo-distributed-scale)
-  - Updated: 2025-08-15T22:10:00.000Z → 2026-03-13T17:21:00.000Z
-- [Enable virtual network integration](https://learn.microsoft.com/en-us/azure/app-service/configure-vnet-integration-enable)
-  - Updated: 2025-02-10T18:06:00.000Z → 2026-03-05T18:25:00.000Z
-
-### Deleted Pages
-
-- ~~Use an App Service Environment~~ (https://learn.microsoft.com/en-us/azure/app-service/environment/using)
 
 ## Classified Pages
 

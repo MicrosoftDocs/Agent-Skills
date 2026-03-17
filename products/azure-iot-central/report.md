@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 88
+- **Updated Pages**: 0
+- **Unchanged**: 89
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-central/azure-iot-central.csv`
 
@@ -67,11 +67,6 @@ skill_description: Expert knowledge for Azure IoT Central development including 
 | *(Unclassified)* | 32 | 36.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create and connect a device](https://learn.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device)
-  - Updated: 2024-10-16T22:05:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 

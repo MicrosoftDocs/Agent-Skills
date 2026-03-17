@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 112
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -68,13 +68,6 @@ skill_description: Expert knowledge for Azure Batch development including troubl
 | *(Unclassified)* | 31 | 27.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create a pool with disk encryption enabled](https://learn.microsoft.com/en-us/azure/batch/disk-encryption)
-  - Updated: 2025-07-01T08:00:00.000Z → 2026-03-12T05:52:00.000Z
-- [Create a pool with ephemeral OS disk nodes](https://learn.microsoft.com/en-us/azure/batch/create-pool-ephemeral-os-disk)
-  - Updated: 2025-03-27T17:09:00.000Z → 2026-03-06T08:00:00.000Z
 
 ## Classified Pages
 

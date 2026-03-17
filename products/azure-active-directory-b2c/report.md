@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 284
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -68,19 +68,6 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported Microsoft Entra ID features](https://learn.microsoft.com/en-us/azure/active-directory-b2c/supported-azure-ad-features)
-  - Updated: 2025-05-20T08:00:00.000Z → 2026-03-16T11:10:00.000Z
-- [Customize the UI with HTML template](https://learn.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html)
-  - Updated: 2025-02-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq)
-  - Updated: 2025-09-08T11:11:00Z → 2026-03-16T11:10:00Z
-- [Service limits and restrictions](https://learn.microsoft.com/en-us/azure/active-directory-b2c/service-limits)
-  - Updated: 2026-01-22T08:00:00.000Z → 2026-03-02T08:00:00.000Z
-- [Identity verification and proofing partners](https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-verification-proofing)
-  - Updated: 2025-05-01T11:17:00.000Z → 2026-03-16T11:10:00.000Z
 
 ## Classified Pages
 

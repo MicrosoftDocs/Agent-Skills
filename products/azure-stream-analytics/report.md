@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 163
+- **Updated Pages**: 0
+- **Unchanged**: 168
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -68,19 +68,6 @@ skill_description: Expert knowledge for Azure Stream Analytics development inclu
 | *(Unclassified)* | 54 | 32.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Streaming data inputs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs)
-  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
-- [Set up a pipeline with Azure DevOps](https://learn.microsoft.com/en-us/azure/stream-analytics/set-up-cicd-pipeline)
-  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-06T23:15:00.000Z
-- [Common query patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns)
-  - Updated: 2024-12-17T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json)
-  - Updated: 2025-05-12T22:03:00.000Z → 2026-03-06T23:15:00.000Z
-- [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection)
-  - Updated: 2024-01-09T08:00:00.000Z → 2026-03-06T23:15:00.000Z
 
 ## Classified Pages
 

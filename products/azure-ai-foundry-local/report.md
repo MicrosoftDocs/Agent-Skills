@@ -33,10 +33,10 @@ skill_description: Expert knowledge for Azure AI Foundry Local development inclu
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 3
-- **Unchanged**: 12
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 18
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-foundry-local/azure-ai-foundry-local.csv`
 
 ## Classification Statistics
@@ -51,25 +51,6 @@ skill_description: Expert knowledge for Azure AI Foundry Local development inclu
 | *(Unclassified)* | 2 | 11.1% |
 
 ## Changes
-
-### New Pages
-
-- [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current)
-- [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy)
-- [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration)
-
-### Updated Pages
-
-- [Use native chat completions API](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-native-chat-completions)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-11T05:31:00.000Z
-- [Transcribe recorded audio files](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-11T05:31:00.000Z
-- [Use tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-tool-calling-with-foundry-local)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-11T05:31:00.000Z
-
-### Deleted Pages
-
-- ~~Foundry Local SDK~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk)
 
 ## Classified Pages
 

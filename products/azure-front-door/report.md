@@ -46,9 +46,9 @@ skill_description: Expert knowledge for Azure Front Door development including t
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 100
+- **Unchanged**: 101
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-front-door/azure-front-door.csv`
 
@@ -68,10 +68,6 @@ skill_description: Expert knowledge for Azure Front Door development including t
 | *(Unclassified)* | 23 | 22.8% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/frontdoor/support-help)
 
 ## Classified Pages
 

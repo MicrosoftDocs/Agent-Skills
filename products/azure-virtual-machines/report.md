@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure Virtual Machines development inclu
 - **Unclassified**: 214
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 164
-- **Unchanged**: 635
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 802
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -69,56 +69,6 @@ skill_description: Expert knowledge for Azure Virtual Machines development inclu
 | *(Unclassified)* | 214 | 26.7% |
 
 ## Changes
-
-### New Pages
-
-- [Create package for VM Application](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications-create-app-package)
-- [Publish VM Application using Managed Identity](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications-publish-with-managed-identity)
-- [Govern and enforce VM Applications using Azure Policy](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications-inject-with-policy)
-
-### Updated Pages
-
-- [Dlsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv5-series)
-  - Updated: 2025-07-03T05:03:00.000Z → 2026-03-11T22:06:00.000Z
-- [Dldsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv5-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [Dnsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnsv6-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-10T22:04:00.000Z
-- [Dndsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dndsv6-series)
-  - Updated: 2025-12-01T23:05:00.000Z → 2026-03-10T22:04:00.000Z
-- [Dnlsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnlsv6-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-10T22:04:00.000Z
-- [Dnldsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnldsv6-series)
-  - Updated: 2025-12-01T23:05:00.000Z → 2026-03-10T22:04:00.000Z
-- [Dv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv4-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [Dsv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv4-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [Dav4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dav4-series)
-  - Updated: 2026-02-28T06:12:00.000Z → 2026-03-11T22:06:00.000Z
-- [Dasv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dasv4-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [Ddv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddv4-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [Ddsv4 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv4-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCasv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasv5-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCadsv5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv5-series)
-  - Updated: 2024-12-03T05:31:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCasv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasv6-series)
-  - Updated: 2025-09-12T05:03:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCadsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv6-series)
-  - Updated: 2025-09-12T05:03:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCesv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcesv6-series)
-  - Updated: 2026-02-13T23:04:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCedsv6 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcedsv6-series)
-  - Updated: 2026-02-24T18:03:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCas_cc_v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasccv5-series)
-  - Updated: 2024-10-24T22:02:00.000Z → 2026-03-11T22:06:00.000Z
-- [DCads_cc_v5 series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsccv5-series)
-  - Updated: 2026-02-26T12:13:00.000Z → 2026-03-11T22:06:00.000Z
-- *...and 144 more*
 
 ## Classified Pages
 
@@ -798,9 +748,6 @@ skill_description: Expert knowledge for Azure Virtual Machines development inclu
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/run-command-overview) | 0.40 | Overview of Run Command; mostly conceptual and feature description without detailed parameter tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/b-family) | 0.40 | B-family landing page is likely descriptive of credit model and workloads, with detailed numeric specs deferred to sub-series pages. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dc-family) | 0.40 | Family overview page describing DC family conceptually and listing series; detailed numeric limits are on the per-series pages, not here. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.40 | Overview of VM size families and purposes; likely descriptive and navigational, with detailed numeric specs living on linked size-specific pages rather than here. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.40 | High-level overview of VM size families; detailed numeric specs and limits are on the per-series pages, not here. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.40 | High-level overview of VM size families; likely links to detailed spec pages but itself is conceptual without concrete numeric limits or configuration tables. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms) | 0.40 | Overview of Azure Spot VMs; summary focuses on conceptual benefits and eviction behavior without explicit numeric limits or detailed configuration tables. |
 | [Packages](https://learn.microsoft.com/en-us/azure/azure-linux/concepts-packages) | 0.40 | Describes package support at a high level; summary doesn't indicate detailed package lists or configuration parameters. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-portal) | 0.40 | Portal-based navigation steps for viewing maintenance notifications; no detailed configuration parameters or expert-only data. |
@@ -909,10 +856,13 @@ skill_description: Expert knowledge for Azure Virtual Machines development inclu
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-overview) | 0.20 | High-level overview of Azure VM Image Builder; mostly conceptual and marketing-style explanation of benefits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview) | 0.20 | Managed disks overview; conceptual explanation of disk types and behavior, not detailed limits or configuration references. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/overview) | 0.20 | General overview of Azure VMs; conceptual and introductory. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Overview page describing VM size families conceptually; it doesn’t focus on per-size numeric limits or detailed configuration tables. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Overview of VM size families and concepts; does not primarily list per-SKU numeric limits in detail and is more navigational/conceptual. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview; high-level and navigational without detailed per-SKU numeric tables as the main focus. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | High-level overview of VM size families; does not focus on per-SKU numeric limits or detailed configuration parameters. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) | 0.20 | Quickstart showing how to create a Linux VM via the Azure portal; step-by-step tutorial without detailed limits, configuration matrices, or product-specific troubleshooting. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal) | 0.20 | Portal quickstart for Windows VM; step-by-step UI guide, not a deep configuration or decision/limits document. |

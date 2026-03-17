@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 82
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -65,13 +65,6 @@ skill_description: Expert knowledge for Azure Firewall development including tro
 | *(Unclassified)* | 22 | 26.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Known issues and limitations](https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues)
-  - Updated: 2025-11-27T12:09:00.000Z → 2026-03-11T11:05:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
-  - Updated: 2025-07-09T11:11:00Z → 2026-03-06T12:21:00Z
 
 ## Classified Pages
 

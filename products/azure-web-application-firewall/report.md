@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Web Application Firewall developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-application-firewall/azure-web-application-firewall.csv`
 
@@ -68,13 +68,6 @@ skill_description: Expert knowledge for Azure Web Application Firewall developme
 | *(Unclassified)* | 12 | 15.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-faq)
-  - Updated: 2026-02-13T23:10:00Z → 2026-03-06T23:15:00Z
-- [Managed ruleset support policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ruleset-support-policy)
-  - Updated: 2026-02-25T23:33:00.000Z → 2026-02-26T08:00:00.000Z
 
 ## Classified Pages
 

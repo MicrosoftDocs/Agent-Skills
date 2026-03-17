@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 94
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-operations/azure-iot-operations.csv`
 
@@ -67,19 +67,6 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
 | *(Unclassified)* | 22 | 22.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Developer guide](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-iot-operations-development)
-  - Updated: 2026-01-23T18:22:00.000Z → 2026-03-09T17:11:00.000Z
-- [Start developing with the SDKs](https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/quickstart-get-started-sdks)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-03-09T17:11:00.000Z
-- [Enable secure settings](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-enable-secure-settings)
-  - Updated: 2025-07-31T17:19:00.000Z → 2026-03-04T12:31:00.000Z
-- [Understand asset and device management](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/overview-manage-assets)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-03-10T16:12:00.000Z
-- [Connect to SSE endpoints](https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-sse-connector)
-  - Updated: 2025-12-11T18:27:00.000Z → 2026-03-10T16:12:00.000Z
 
 ## Classified Pages
 

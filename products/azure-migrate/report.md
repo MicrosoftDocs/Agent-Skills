@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   integrations: 'Code-level integration patterns: using AppCAT CLI, CAST Highlight,
     GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure
@@ -40,16 +40,16 @@ skill_description: Expert knowledge for Azure Migrate development including trou
 
 ## Summary
 
-- **Total Pages**: 201
-- **Fetched**: 201
+- **Total Pages**: 202
+- **Fetched**: 202
 - **Fetch Failed**: 0
 - **Classified**: 119
-- **Unclassified**: 82
+- **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 10
-- **Unchanged**: 186
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 201
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -60,46 +60,19 @@ skill_description: Expert knowledge for Azure Migrate development including trou
 | architecture-patterns | 2 | 1.0% |
 | best-practices | 7 | 3.5% |
 | configuration | 26 | 12.9% |
-| decision-making | 40 | 19.9% |
+| decision-making | 40 | 19.8% |
 | deployment | 5 | 2.5% |
 | integrations | 4 | 2.0% |
 | limits-quotas | 10 | 5.0% |
-| security | 11 | 5.5% |
-| troubleshooting | 14 | 7.0% |
-| *(Unclassified)* | 82 | 40.8% |
+| security | 11 | 5.4% |
+| troubleshooting | 14 | 6.9% |
+| *(Unclassified)* | 83 | 41.1% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure Copilot Migration Agent](https://learn.microsoft.com/en-us/azure/migrate/azure-copilot-migration-agent?view=migrate)
-- [Discovery using collector](https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate)
-- [Generate and deploy a platform landing zone](https://learn.microsoft.com/en-us/azure/migrate/platform-landing-zone?view=migrate)
-- [VMware migrations with migration agent](https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-analyze-migration-with-agent?view=migrate)
-- [Responsible AI FAQ for Azure Copilot Migration Agent](https://learn.microsoft.com/en-us/azure/migrate/common-questions-azure-copilot-migration-agent?view=migrate)
-
-### Updated Pages
-
-- [Create a business case using imported inventory](https://learn.microsoft.com/en-us/azure/migrate/how-to-build-a-business-case?view=migrate)
-  - Updated: 2025-11-10T18:13:00.000Z → 2026-03-12T11:31:00.000Z
-- [Insights](https://learn.microsoft.com/en-us/azure/migrate/insights-overview?view=migrate)
-  - Updated: 2025-10-28T05:11:00.000Z → 2026-03-09T17:11:00.000Z
-- [RVTools XLSX import](https://learn.microsoft.com/en-us/azure/migrate/common-questions-import?view=migrate)
-  - Updated: 2025-01-03T12:39:00.000Z → 2026-03-15T11:12:00.000Z
-- [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-aws)
-  - Updated: 2026-02-18T18:42:00Z → 2026-03-10T16:12:00Z
-- [Compute](https://learn.microsoft.com/en-us/azure/migration/migrate-compute-from-aws)
-  - Updated: 2025-05-26T17:02:00.000Z → 2026-03-10T08:00:00.000Z
-- [Databases](https://learn.microsoft.com/en-us/azure/migration/migrate-databases-from-aws)
-  - Updated: 2025-05-26T17:02:00.000Z → 2026-03-10T08:00:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/migration/migrate-storage-from-aws)
-  - Updated: 2025-08-29T17:12:00.000Z → 2026-03-10T08:00:00.000Z
-- [Getting started](https://learn.microsoft.com/en-us/azure/migration/migrate-from-google-cloud)
-  - Updated: 2026-02-18T18:42:00Z → 2026-03-10T16:12:00Z
-- [Migrate from on-premises](https://learn.microsoft.com/en-us/azure/migration/migrate-from-on-premises)
-  - Updated: 2026-02-18T18:42:00Z → 2026-03-10T16:12:00Z
-- [Support-Move Azure VMs across regions](https://learn.microsoft.com/en-us/azure/resource-mover/support-matrix-move-region-azure-vm)
-  - Updated: 2025-07-31T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [End-to-end portal experience for server migrations with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/end-to-end-portal-experience-server-migrations?view=migrate)
 
 ## Classified Pages
 
@@ -301,6 +274,7 @@ skill_description: Expert knowledge for Azure Migrate development including trou
 | [Review discovered inventory](https://learn.microsoft.com/en-us/azure/migrate/how-to-review-discovered-inventory?view=migrate) | 0.30 | How-to UI walkthrough for reviewing inventory; no deep config tables, limits, or product-specific error mappings. |
 | [Tags](https://learn.microsoft.com/en-us/azure/migrate/resource-tagging?view=migrate) | 0.30 | Explains tagging usage conceptually in Azure Migrate; mostly process/UX guidance without detailed configuration parameters or limits. |
 | [About Azure Resource Mover](https://learn.microsoft.com/en-us/azure/resource-mover/overview) | 0.20 | High-level overview of Azure Resource Mover; summary indicates conceptual description of what the service is and why to use it, without detailed matrices, limits, or configuration tables. |
+| [End-to-end portal experience for server migrations with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/end-to-end-portal-experience-server-migrations?view=migrate) | 0.20 | Article describes the unified Azure Migrate portal experience and workflow steps for end-to-end migrations, but does not expose detailed limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision matrices. Content is primarily navigational and procedural rather than expert reference data. |
 | [Generate and deploy a platform landing zone](https://learn.microsoft.com/en-us/azure/migrate/platform-landing-zone?view=migrate) | 0.20 | Primarily a how-to/tutorial for generating and deploying a Platform Landing Zone with Azure Migrate. From the summary, it focuses on process (generate, iterate, deploy with VS Code, GitHub Copilot Chat, MCP) and conceptual description of PLZ capabilities (governance, identity, networking). It does not indicate presence of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices with quantified trade-offs. |
 | [Insights](https://learn.microsoft.com/en-us/azure/migrate/insights-overview?view=migrate) | 0.20 | Page is an overview of Azure Migrate Insights (preview) describing what it does conceptually (security assessment, vulnerabilities, end-of-support software, missing security tools) without detailed configuration parameters, limits, error codes, or decision matrices. It lacks the concrete numeric limits, settings tables, or symptom→solution mappings required for any of the expert-knowledge sub-skill types. |
 | [Manage projects](https://learn.microsoft.com/en-us/azure/migrate/create-manage-projects?view=migrate) | 0.20 | How-to for creating and managing projects; no indication of numeric limits, config tables, or error-code-based troubleshooting. |

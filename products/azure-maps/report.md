@@ -40,10 +40,10 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 142
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 146
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
 ## Classification Statistics
@@ -61,22 +61,6 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 | *(Unclassified)* | 32 | 21.9% |
 
 ## Changes
-
-### New Pages
-
-- [Use private endpoints with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints)
-- [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage)
-
-### Updated Pages
-
-- [Power BI Azure Maps Visual Data Residency](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-data-residency)
-  - Updated: 2024-03-22T08:00:00.000Z → 2026-03-06T17:59:00.000Z
-- [Drawing Tools module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-drawing-tools-module)
-  - Updated: 2025-12-17T06:10:00.000Z → 2025-12-17T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Coverage~~ (https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage)
 
 ## Classified Pages
 

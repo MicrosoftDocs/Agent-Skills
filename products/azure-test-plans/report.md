@@ -27,8 +27,8 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -42,17 +42,6 @@ skill_description: Expert knowledge for Azure Test Plans development including l
 | *(Unclassified)* | 31 | 91.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
-- [Set test retention policies](https://learn.microsoft.com/en-us/azure/devops/test/how-long-to-keep-test-results?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-05T18:06:00.000Z
-- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
-  - Updated: 2026-02-27T22:02:00Z → 2026-03-10T13:05:00Z
-- [Test case management commands](https://learn.microsoft.com/en-us/azure/devops/test/test-case-managment-reference?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-10T13:05:00.000Z
 
 ## Classified Pages
 

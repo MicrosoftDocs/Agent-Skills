@@ -46,9 +46,9 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 - **Unclassified**: 55
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 12
-- **Unchanged**: 554
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 567
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -68,37 +68,6 @@ skill_description: Expert knowledge for Azure Pipelines development including tr
 | *(Unclassified)* | 55 | 9.7% |
 
 ## Changes
-
-### New Pages
-
-- [Antivirus exclusions](https://learn.microsoft.com/en-us/azure/devops/pipelines/troubleshooting/anti-virus-exclusion?view=azure-devops)
-
-### Updated Pages
-
-- [Hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Logging commands](https://learn.microsoft.com/en-us/azure/devops/pipelines/scripts/logging-commands?view=azure-devops)
-  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-06T22:05:00.000Z
-- [Process parameters (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/parameters?view=azure-devops)
-  - Updated: 2025-12-23T22:04:00.000Z → 2026-03-12T22:45:00.000Z
-- [Define variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-04T08:00:00.000Z
-- [Use secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops)
-  - Updated: 2026-01-14T22:02:00.000Z → 2026-03-14T01:04:00.000Z
-- [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
-  - Updated: 2025-07-28T23:01:00.000Z → 2026-03-13T17:02:00.000Z
-- [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-13T17:02:00.000Z
-- [Customize your pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/customize-pipeline?view=azure-devops)
-  - Updated: 2025-08-15T14:24:00.000Z → 2026-03-10T08:00:00.000Z
-- [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-  - Updated: 2025-08-11T19:35:00.000Z → 2026-03-10T08:00:00.000Z
-- [Multiple repositories](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops)
-  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-05T18:06:00.000Z
-- [PHP](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/php?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-10T17:04:00.000Z
-- [resources.repositories.repository](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-repositories-repository?view=azure-pipelines)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-04T18:03:00.000Z
 
 ## Classified Pages
 

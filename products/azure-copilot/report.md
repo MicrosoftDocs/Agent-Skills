@@ -36,9 +36,9 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 36
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -55,17 +55,6 @@ skill_description: Expert knowledge for Azure Copilot development including trou
 | *(Unclassified)* | 19 | 48.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-10T08:00:00.000Z
-- [Manage conversation storage](https://learn.microsoft.com/en-us/azure/copilot/bring-your-own-storage)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-03-12T22:17:00.000Z
 
 ## Classified Pages
 

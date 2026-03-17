@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 - **Unclassified**: 49
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 10
-- **Unchanged**: 226
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 237
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
 ## Classification Statistics
@@ -68,37 +68,6 @@ skill_description: Expert knowledge for Azure SQL Managed Instance development i
 | *(Unclassified)* | 49 | 20.7% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-
-### Updated Pages
-
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
-  - Updated: 2025-12-02T23:34:00.000Z → 2026-03-05T08:00:00.000Z
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2025-09-25T08:00:00.000Z → 2026-03-06T08:00:00.000Z
-- [Managed Instance link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?view=azuresql)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-06T08:00:00.000Z
-- [Resource limits](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-10T17:44:00.000Z
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
-- [Database using Log Replay Service](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-migrate?view=azuresql)
-  - Updated: 2025-09-17T08:00:00.000Z → 2026-03-10T22:39:00.000Z
-- [Prepare environment for link](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-preparation?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-10T22:39:00.000Z
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-troubleshoot-how-to?view=azuresql)
-  - Updated: 2026-01-29T18:37:00.000Z → 2026-03-10T22:39:00.000Z
-
-### Deleted Pages
-
-- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   integrations: Using APIs, Resource Graph, and webhooks to query Service/Resource
     Health data and integrate alerts with tools like OpsGenie, PagerDuty, and ServiceNow
@@ -32,10 +32,10 @@ skill_description: Expert knowledge for Azure Service Health development includi
 - **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 12
-- **Unchanged**: 33
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 46
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
 ## Classification Statistics
@@ -52,41 +52,10 @@ skill_description: Expert knowledge for Azure Service Health development includi
 
 ## Changes
 
-### New Pages
-
-- [AI-generated summary and timelines](https://learn.microsoft.com/en-us/azure/service-health/service-health-ai-summary-timeline)
-- [Health history overview](https://learn.microsoft.com/en-us/azure/service-health/health-history-overview)
-
 ### Updated Pages
 
-- [Service Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/service-health-faq)
-  - Updated: 2026-02-26T06:03:00Z → 2026-03-05T23:15:00Z
-- [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new)
-  - Updated: 2026-02-10T23:13:00.000Z → 2026-03-11T05:07:00.000Z
-- [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Impacted Resources from Service issues](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-outage)
-  - Updated: 2026-02-09T23:09:00.000Z → 2026-03-11T08:00:00.000Z
-- [Service Health event tags](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-tags)
-  - Updated: 2025-10-16T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Filter Service Health notifications by event level](https://learn.microsoft.com/en-us/azure/service-health/metadata-filter)
-  - Updated: 2025-10-16T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Impacted Resources from planned maintenance events](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-planned-maintenance)
-  - Updated: 2025-10-15T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Impacted Resources from Azure retirements](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-retirements)
-  - Updated: 2025-11-07T23:11:00.000Z → 2026-03-11T08:00:00.000Z
-- [Security notifications overview](https://learn.microsoft.com/en-us/azure/service-health/stay-informed-security)
-  - Updated: 2025-12-10T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Impacted Resources from Azure security advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-security)
-  - Updated: 2026-01-15T23:08:00.000Z → 2026-03-12T05:06:00.000Z
-- [Billing updates overview](https://learn.microsoft.com/en-us/azure/service-health/billing-elevated-access)
-  - Updated: 2026-02-05T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Resource health types and checks](https://learn.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types)
-  - Updated: 2025-08-15T17:14:00.000Z → 2026-03-11T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Service Health history overview~~ (https://learn.microsoft.com/en-us/azure/service-health/health-history-overview)
+- [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance)
+  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -133,7 +102,6 @@ skill_description: Expert knowledge for Azure Service Health development includi
 | [Impacted Resources from Azure security advisories](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-security) | 0.20 | Describes feature for viewing impacted resources from security advisories and phased rollout; no detailed security configuration, limits, or troubleshooting mappings. |
 | [Impacted Resources from Service issues](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-outage) | 0.20 | Explains where to see impacted resources during service issues; appears procedural/UX-focused without numeric limits, config parameters, or error codes. |
 | [Impacted Resources from planned maintenance events](https://learn.microsoft.com/en-us/azure/service-health/impacted-resources-planned-maintenance) | 0.20 | Describes where to view impacted resources for planned maintenance; appears to be UI/experience explanation without expert-only numeric or config details. |
-| [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.20 | Overview of the Planned maintenance pane and what information it shows; no numeric limits, decision matrices, configuration parameters, or troubleshooting mappings. |
 | [Resource Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/resource-health-faq) | 0.20 | FAQ about Azure Resource Health is likely conceptual and explanatory. The description does not indicate specific limits, error codes, configuration tables, or other detailed expert-only data. |
 | [Service Health FAQ](https://learn.microsoft.com/en-us/azure/service-health/service-health-faq) | 0.20 | FAQ page appears to be a conceptual/overview-style explanation of Azure Service Health and Resource Health. It is unlikely to contain detailed limits, configuration tables, error-code mappings, or other product-specific expert data as defined by the sub-skill types; instead it answers common high-level questions. |
 | [Service Health event tags](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-tags) | 0.20 | Describes event tags, levels, and subtypes conceptually; no specific configuration values, limits, or decision matrices with thresholds. |
@@ -142,5 +110,6 @@ skill_description: Expert knowledge for Azure Service Health development includi
 | [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update) | 0.10 | Portal overview describing dashboard capabilities; lacks concrete configuration tables, limits, or troubleshooting mappings. |
 | [Azure Service Health overview](https://learn.microsoft.com/en-us/azure/service-health/overview) | 0.10 | High-level overview of Azure Service Health; no detailed limits, configs, roles, or error mappings. |
 | [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview) | 0.10 | Overview of Azure Status page; descriptive, not configuration or troubleshooting detail. |
+| [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.10 | Page is an overview of the Planned Maintenance pane in Azure Service Health, describing purpose and high-level behavior without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Resource Health overview](https://learn.microsoft.com/en-us/azure/service-health/resource-health-overview) | 0.10 | Conceptual overview of Resource Health; no specific error codes, configs, or limits. |
 | [What's new](https://learn.microsoft.com/en-us/azure/service-health/whats-new) | 0.10 | What's New page with high-level feature announcements; no detailed limits, configs, error codes, or decision matrices. |

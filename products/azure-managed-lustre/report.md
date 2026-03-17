@@ -39,8 +39,8 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 28
+- **Updated Pages**: 0
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -58,11 +58,6 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
 | *(Unclassified)* | 2 | 6.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create file system in Azure portal](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/create-file-system-portal)
-  - Updated: 2026-02-27T18:05:00.000Z → 2026-03-12T08:00:00.000Z
 
 ## Classified Pages
 

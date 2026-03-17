@@ -41,8 +41,8 @@ skill_description: Expert knowledge for Azure Security development including tro
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 123
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-security/azure-security.csv`
 
@@ -60,15 +60,6 @@ skill_description: Expert knowledge for Azure Security development including tro
 | *(Unclassified)* | 72 | 57.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Microsoft Antimalware code samples](https://learn.microsoft.com/en-us/azure/security/fundamentals/antimalware-code-samples)
-  - Updated: 2025-12-03T08:00:00.000Z → 2026-03-05T23:11:00.000Z
-- [Choosing a key management solution](https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose)
-  - Updated: 2026-01-10T06:10:00.000Z → 2026-03-04T23:27:00.000Z
-- [Services supporting CMKs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-customer-managed-keys-support)
-  - Updated: 2026-02-24T18:11:00.000Z → 2026-03-04T23:27:00.000Z
 
 ## Classified Pages
 

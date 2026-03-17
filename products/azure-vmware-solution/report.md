@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure VMware Solution development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 14
-- **Unchanged**: 120
+- **Updated Pages**: 0
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -68,37 +68,6 @@ skill_description: Expert knowledge for Azure VMware Solution development includ
 | *(Unclassified)* | 34 | 25.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy Arc-enabled VMware vSphere for Azure VMware Solution private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-arc-for-azure-vmware-solution)
-  - Updated: 2025-07-04T22:10:00.000Z → 2026-03-09T22:17:00.000Z
-- [Introduction to Gen 2](https://learn.microsoft.com/en-us/azure/azure-vmware/native-introduction)
-  - Updated: 2026-01-06T12:21:00.000Z → 2026-03-07T12:11:00.000Z
-- [Set an external identity source for vCenter Server](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-identity-source-vcenter)
-  - Updated: 2025-10-22T08:00:00.000Z → 2026-03-09T23:18:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-platform-updates)
-  - Updated: 2025-09-12T08:00:00.000Z → 2026-03-09T23:18:00.000Z
-- [2 - Deploy Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-azure-vmware-solution)
-  - Updated: 2024-08-22T19:16:00.000Z → 2026-03-02T08:00:00.000Z
-- [Deploy Traffic Manager to balance workloads](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-traffic-manager-balance-workloads)
-  - Updated: 2024-03-22T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Connect multiple private clouds in same region](https://learn.microsoft.com/en-us/azure/azure-vmware/connect-multiple-private-clouds-same-region)
-  - Updated: 2024-07-29T22:06:00.000Z → 2026-02-20T08:00:00.000Z
-- [Configure VMware HCX network extension](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-hcx-network-extension)
-  - Updated: 2023-12-08T23:04:00.000Z → 2026-03-02T08:00:00.000Z
-- [Use VMware HCX Run Commands](https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands)
-  - Updated: 2025-03-06T18:03:00.000Z → 2026-03-10T16:12:00.000Z
-- [Deploy VMs from the content library](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vm-content-library)
-  - Updated: 2023-12-20T23:04:00.000Z → 2026-03-02T08:00:00.000Z
-- [Bitnami appliance deployment](https://learn.microsoft.com/en-us/azure/azure-vmware/bitnami-appliances-deployment)
-  - Updated: 2024-12-24T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Deploy Citrix on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-citrix)
-  - Updated: 2023-12-08T23:04:00.000Z → 2026-03-09T22:17:00.000Z
-- [Configure vSAN](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-vsan)
-  - Updated: 2025-05-21T22:04:00.000Z → 2026-02-20T08:00:00.000Z
-- [Deploy disaster recovery using JetStream DR software](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-disaster-recovery-using-jetstream)
-  - Updated: 2024-03-22T08:00:00.000Z → 2026-03-04T08:00:00.000Z
 
 ## Classified Pages
 

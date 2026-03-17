@@ -3,7 +3,7 @@ name: azure-cost-management
 description: Expert knowledge for Azure Cost Management development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Cost Management applications. Not for Azure Advisor (use azure-advisor), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cost Management Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure Cost Management. Covers troublesho
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L75-L127 | Deciding how to allocate, reserve, and prepay Azure costs (reservations, savings plans, Hybrid Benefit), choosing billing APIs/offers, and planning migrations or discounts to optimize spend. |
 | Limits & Quotas | L128-L143 | Limits, quotas, and timing rules for Azure costs: free tier limits, spending caps, data transfer fees, subscription limits, savings plans, SQL licensing, and billing/dormancy behavior. |
 | Security | L144-L164 | Securing Azure billing and cost data: RBAC and billing roles, admin elevation, EA/MCA/CSP access, fraud prevention, and permissions for subscriptions, reservations, and savings plans. |
-| Configuration | L165-L236 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, alerts, and subscription/payment relationships to control, allocate, and optimize cloud costs. |
-| Integrations & Coding Patterns | L237-L253 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
-| Deployment | L254-L257 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
+| Configuration | L165-L235 | Configuring Azure billing, credits, reservations, savings plans, budgets, tags, alerts, and subscription/payment relationships to control, allocate, and optimize cloud costs. |
+| Integrations & Coding Patterns | L236-L252 | APIs, scripts, and Power BI patterns to automate cost analysis, billing data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and reservation management. |
+| Deployment | L253-L256 | Configuring automated, large-scale exports of Azure cost and usage data to storage (like Azure Storage), including setup, scheduling, and management for ongoing cost analysis. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -200,7 +200,6 @@ This skill requires **network access** to fetch documentation content:
 | Move MOSP or MCA Azure subscriptions to an Enterprise Agreement | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mosp-ea-transfer |
 | Transfer Azure billing products to a Microsoft Partner Agreement | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership |
 | Set up Azure subscription payment by wire transfer | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/pay-by-invoice |
-| Determine supported Azure payment methods by region | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/supported-payment-methods |
 | Transfer Azure subscriptions between customers and CSP partners | https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/transfer-subscriptions-subscribers-csp |
 | Apply reserved instance discounts to Azure Dedicated Hosts | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/billing-understand-dedicated-hosts-reservation-charges |
 | Calculate Enterprise Agreement reservation savings manually | https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/calculate-ea-reservations-savings |

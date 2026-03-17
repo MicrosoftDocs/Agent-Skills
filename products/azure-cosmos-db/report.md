@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 - **Unclassified**: 205
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 6
-- **Unchanged**: 971
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 979
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -69,26 +69,6 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
 | *(Unclassified)* | 205 | 20.9% |
 
 ## Changes
-
-### New Pages
-
-- [Query a vector store with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-dotnet)
-- [Create AI agent with vector search in TypeScript](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-agent-nodejs)
-
-### Updated Pages
-
-- [Hierarchical partition keys FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys-faq)
-  - Updated: 2025-12-19T18:19:00Z → 2026-03-12T06:17:00Z
-- [Move data between containers](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy)
-  - Updated: 2025-06-23T08:00:00.000Z → 2026-03-12T06:17:00.000Z
-- [Get started](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-dotnet-get-started)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-03-05T18:37:00.000Z
-- [Create alert on logical partition key size](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-alert-on-logical-partition-key-storage-size)
-  - Updated: 2025-12-15T18:19:00.000Z → 2026-03-12T06:17:00.000Z
-- [Fleet pools](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools)
-  - Updated: 2026-02-12T06:05:00.000Z → 2026-03-11T08:00:00.000Z
-- [Use role-based access control](https://learn.microsoft.com/en-us/azure/documentdb/how-to-connect-role-based-access-control)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-03-11T08:00:00.000Z
 
 ## Classified Pages
 

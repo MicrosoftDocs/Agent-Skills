@@ -3,7 +3,7 @@ name: azure-cognitive-search
 description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure AI Search applications. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure AI Search. Covers troubleshooting,
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L100-L138 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
 | Configuration | L139-L234 | Configuring Azure AI Search: data sources, indexes, analyzers, vector/semantic settings, skillsets/enrichment, knowledge bases, monitoring, and indexer/connection options. |
 | Integrations & Coding Patterns | L235-L295 | Patterns and code for integrating data sources, indexers, custom skills/vectorizers, OData/Lucene queries, semantic + vector search, and agentic retrieval with Azure AI Search. |
-| Deployment | L296-L303 | Deploying and moving Azure AI Search services (ARM/Bicep/Terraform), choosing regions/features, and building an end-to-end agentic retrieval solution with Foundry. |
+| Deployment | L296-L303 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, cross-region migration steps, and checking regional/feature availability. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -300,4 +300,4 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure AI Search service using Bicep | https://learn.microsoft.com/en-us/azure/search/search-get-started-bicep |
 | Provision Azure AI Search with Terraform | https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform |
 | Manually move Azure AI Search services across regions | https://learn.microsoft.com/en-us/azure/search/search-howto-move-across-regions |
-| Select Azure regions and feature availability for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-region-support |
+| Check Azure AI Search regional and feature availability | https://learn.microsoft.com/en-us/azure/search/search-region-support |

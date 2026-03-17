@@ -38,9 +38,9 @@ skill_description: Expert knowledge for Azure Bastion development including trou
 - **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 33
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -58,29 +58,6 @@ skill_description: Expert knowledge for Azure Bastion development including trou
 | *(Unclassified)* | 18 | 42.9% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/bastion/bastion-entra-id-authentication)
-
-### Updated Pages
-
-- [Troubleshoot](https://learn.microsoft.com/en-us/azure/bastion/troubleshoot)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-03-11T05:11:00.000Z
-- [Bastion SKU comparison](https://learn.microsoft.com/en-us/azure/bastion/bastion-sku-comparison)
-  - Updated: 2025-12-19T23:19:00.000Z → 2026-03-11T05:11:00.000Z
-- [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-rdp-windows)
-  - Updated: 2026-02-10T23:11:00.000Z → 2026-03-11T05:11:00.000Z
-- [RDP connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-linux-rdp)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-03-04T23:27:00.000Z
-- [Connect to a VM - IP address](https://learn.microsoft.com/en-us/azure/bastion/connect-ip-address)
-  - Updated: 2025-03-03T08:00:00.000Z → 2026-03-12T05:52:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-03-04T23:27:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling-powershell)
-  - Updated: 2024-08-13T22:05:00.000Z → 2026-03-04T23:27:00.000Z
-- [View or upgrade SKU](https://learn.microsoft.com/en-us/azure/bastion/upgrade-sku)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-03-11T05:11:00.000Z
 
 ## Classified Pages
 

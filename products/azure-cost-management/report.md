@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: Configuring Azure billing, credits, reservations, savings plans,
     budgets, tags, alerts, and subscription/payment relationships to control, allocate,
@@ -39,13 +39,13 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 - **Total Pages**: 265
 - **Fetched**: 265
 - **Fetch Failed**: 0
-- **Classified**: 191
-- **Unclassified**: 74
+- **Classified**: 190
+- **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 258
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 263
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
@@ -54,35 +54,23 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 6 | 2.3% |
-| configuration | 68 | 25.7% |
+| configuration | 67 | 25.3% |
 | decision-making | 49 | 18.5% |
 | deployment | 1 | 0.4% |
 | integrations | 13 | 4.9% |
 | limits-quotas | 12 | 4.5% |
 | security | 17 | 6.4% |
 | troubleshooting | 25 | 9.4% |
-| *(Unclassified)* | 74 | 27.9% |
+| *(Unclassified)* | 75 | 28.3% |
 
 ## Changes
 
-### New Pages
-
-- [Instance size flexibility](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/instance-size-flexibility)
-
 ### Updated Pages
 
-- [Pay using strong customer authentication](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/open-banking-strong-customer-authentication)
-  - Updated: 2025-10-15T22:11:00.000Z → 2026-03-08T08:00:00.000Z
-- [Resolve pay-as-you-go past due balance](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/resolve-past-due-balance)
-  - Updated: 2025-10-17T17:34:00.000Z → 2026-03-08T08:00:00.000Z
 - [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card)
-  - Updated: 2025-10-16T08:00:00.000Z → 2026-03-08T08:00:00.000Z
-- [View payment history](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-payment-history)
-  - Updated: 2025-10-15T08:00:00.000Z → 2026-03-08T08:00:00.000Z
-- [Payment issues](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/billing-troubleshoot-azure-payment-issues)
-  - Updated: 2025-10-13T08:00:00.000Z → 2026-03-08T08:00:00.000Z
-- [Declined card](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-declined-card)
-  - Updated: 2025-10-15T08:00:00.000Z → 2026-03-08T08:00:00.000Z
+  - Updated: 2026-03-08T08:00:00.000Z → 2026-03-12T08:00:00.000Z
+- [Supported payment methods](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/supported-payment-methods)
+  - Updated: 2025-09-17T08:00:00.000Z → 2026-03-12T08:00:00.000Z
 
 ## Classified Pages
 
@@ -195,7 +183,6 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 | [Savings plan scopes](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/scope-savings-plan) | configuration | 0.70 | Describes scope options (single subscription, shared, etc.) and how they affect benefit application; these are concrete configuration choices. |
 | [Set up Microsoft Customer Agreement billing account](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-setup-account) | decision-making | 0.70 | Guides renewing expiring EA enrollments with MCA and describes changes to billing; includes migration steps and considerations, which are decision-making and migration guidance. |
 | [Split shared costs](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/allocate-costs) | decision-making | 0.70 | Covers how to reassign or distribute shared service costs via cost allocation rules. It provides concrete guidance on when and how to allocate costs between subscriptions, resource groups, or tags, which is decision-focused and specific to Azure Cost Management. |
-| [Supported payment methods](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/supported-payment-methods) | configuration | 0.70 | Provides region-specific support matrix for card types and account types; this is a configuration/constraints reference unique to Azure billing. |
 | [Sweden Central select Linux VMs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-central-sweden) | decision-making | 0.70 | Similar to other limited-time offers, with up to 50% savings and specific validity dates for select Linux VMs in Sweden Central. Supports purchase decisions with quantified savings. |
 | [Synapse Analytics - Pre-Purchase](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/synapse-analytics-pre-purchase-plan) | decision-making | 0.70 | Describes SCU mechanics, term, and how usage is deducted; these billing rules are specific and used for cost decisions. |
 | [Synapse Analytics - data warehouse](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/prepay-sql-data-warehouse-charges) | decision-making | 0.70 | Covers cDWU reservation terms, region selection, and how discounts apply; these are concrete cost-optimization decision parameters. |
@@ -340,6 +327,7 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 | [Review your Microsoft Customer Agreement bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-customer-agreement-bill) | 0.30 | Guides reviewing Microsoft Customer Agreement bills; primarily procedural and conceptual without detailed limits, configs, or error mappings. |
 | [Review your Microsoft Partner Agreement bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-partner-agreement-bill) | 0.30 | Describes how to review Partner Agreement invoices; focuses on navigation and understanding charges, not on expert-level limits or configuration tables. |
 | [Review your individual account bill](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/review-individual-bill) | 0.30 | Tutorial on reviewing an individual bill; mostly portal navigation and conceptual explanation of invoice vs usage file, not configuration, limits, or error mappings. |
+| [Supported payment methods](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/supported-payment-methods) | 0.30 | Lists supported payment methods by region but primarily as descriptive/eligibility info; lacks detailed numeric limits, configuration parameters, or decision matrices required for any sub-skill type. |
 | [View billing accounts](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-all-accounts) | 0.30 | Shows how to view billing accounts and scopes; mostly navigation and conceptual explanation of account types, not detailed configuration or limits. |
 | [View external Azure service charges](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-azure-marketplace-charges) | 0.30 | Conceptual explanation of external/Marketplace service charges; lacks specific limits, configs, or troubleshooting mappings. |
 | [View savings plan cost and usage](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/utilization-cost-reports) | 0.30 | Describes how to view cost and usage details; summary does not indicate numeric limits, configuration parameters, or decision matrices. |
@@ -347,7 +335,7 @@ skill_description: Expert knowledge for Azure Cost Management development includ
 | [What is centrally managed Azure Hybrid Benefit?](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/overview-azure-hybrid-benefit-scope) | 0.30 | Conceptual overview of centrally managed Azure Hybrid Benefit; summary suggests high-level explanation without detailed limits, configuration tables, or decision matrices. |
 | [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/software-costs-not-included) | 0.30 | Explains that savings plan discounts don't apply to software meters; likely lists affected meters but not configuration parameters, limits, or decision matrices with quantified trade-offs. |
 | [Find tenant ID and primary domain name](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/find-tenant-id-domain) | 0.25 | Simple how-to for finding tenant ID and primary domain; generic portal navigation without detailed configuration tables or limits. |
-| [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card) | 0.20 | Describes how to add/update/delete payment methods and supported payment types; lacks detailed technical configuration tables, limits, or troubleshooting mappings that would qualify as expert knowledge. |
+| [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card) | 0.20 | Procedural portal how-to for managing payment methods; no product-specific limits, configuration tables, error codes, or quantified guidance that meet any sub-skill criteria. |
 | [Cancellation policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/cancel-savings-plan) | 0.20 | High-level policy that savings plan purchases are final and non-cancellable; no detailed limits, configuration, or troubleshooting content. |
 | [Enable preview features](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs) | 0.20 | Explains how to explore preview features; mostly portal navigation and feature list, not deep configuration or troubleshooting content. |
 | [Resolve pay-as-you-go past due balance](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/resolve-past-due-balance) | 0.20 | Primarily a procedural billing/how-to article about resolving past-due balances; no product-specific limits, configuration parameters, error-code mappings, or other expert-only technical details. |

@@ -41,8 +41,8 @@ skill_description: Expert knowledge for Azure Managed Redis development includin
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 55
+- **Updated Pages**: 0
+- **Unchanged**: 58
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
@@ -61,15 +61,6 @@ skill_description: Expert knowledge for Azure Managed Redis development includin
 | *(Unclassified)* | 9 | 15.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-11T05:11:00.000Z
-- [Save with reservations](https://learn.microsoft.com/en-us/azure/redis/reserved-pricing)
-  - Updated: 2025-11-26T23:19:00.000Z → 2026-03-05T06:14:00.000Z
-- [List of Redis metrics](https://learn.microsoft.com/en-us/azure/redis/monitor-cache-reference)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-11T05:11:00.000Z
 
 ## Classified Pages
 

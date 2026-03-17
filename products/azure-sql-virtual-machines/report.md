@@ -47,10 +47,10 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
 - **Unclassified**: 21
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 120
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 124
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
 ## Classification Statistics
@@ -69,22 +69,6 @@ skill_description: Expert knowledge for SQL Server on Azure Virtual Machines dev
 | *(Unclassified)* | 21 | 16.9% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-- [Azure SQL decision tree](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-decision-tree?view=azuresql)
-
-### Updated Pages
-
-- [Register with SQL IaaS extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-iaas-agent-extension-register-vm-linux?view=azuresql)
-  - Updated: 2024-01-25T18:58:00.000Z → 2026-03-09T17:32:00.000Z
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
-
-### Deleted Pages
-
-- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 

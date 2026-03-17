@@ -42,9 +42,9 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 23
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
@@ -63,10 +63,6 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
 | *(Unclassified)* | 2 | 8.3% |
 
 ## Changes
-
-### New Pages
-
-- [Performance on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-performance-on-azure-vmware-solutions)
 
 ## Classified Pages
 

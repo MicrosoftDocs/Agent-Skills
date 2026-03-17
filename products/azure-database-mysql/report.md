@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 176
+- **Updated Pages**: 0
+- **Unchanged**: 177
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -69,11 +69,6 @@ skill_description: Expert knowledge for Azure Database for MySQL development inc
 | *(Unclassified)* | 62 | 35.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
-  - Updated: 2025-12-23T06:04:00.000Z → 2026-03-05T18:37:00.000Z
 
 ## Classified Pages
 

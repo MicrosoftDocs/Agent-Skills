@@ -42,8 +42,8 @@ skill_description: Expert knowledge for Azure Key Vault development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 159
+- **Updated Pages**: 0
+- **Unchanged**: 164
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
@@ -62,19 +62,6 @@ skill_description: Expert knowledge for Azure Key Vault development including tr
 | *(Unclassified)* | 58 | 35.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Enable Multi-Region Replication on Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/multi-region-replication)
-  - Updated: 2025-11-17T23:03:00.000Z → 2026-03-11T22:11:00.000Z
-- [Migrate key workloads](https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-key-workloads)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-03-09T18:11:00.000Z
-- [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-12T06:17:00.000Z
-- [Bring your own key specification](https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-12T06:17:00.000Z
-- [Secure access to your Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/how-to-secure-access)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-12T06:17:00.000Z
 
 ## Classified Pages
 

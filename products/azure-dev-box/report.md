@@ -38,8 +38,8 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 63
+- **Updated Pages**: 0
+- **Unchanged**: 64
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -57,11 +57,6 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
 | *(Unclassified)* | 20 | 31.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Windows 365 adds Microsoft Dev Box capabilities](https://learn.microsoft.com/en-us/azure/dev-box/dev-box-windows-365-announcement)
-  - Updated: 2025-11-06T05:33:00.000Z → 2026-03-11T17:32:00.000Z
 
 ## Classified Pages
 

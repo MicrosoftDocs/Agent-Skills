@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure AI Language development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 194
+- **Updated Pages**: 0
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -68,15 +68,6 @@ skill_description: Expert knowledge for Azure AI Language development including 
 | *(Unclassified)* | 92 | 46.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/regional-support)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-07T06:07:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
-  - Updated: 2025-12-13T06:19:00.000Z → 2026-03-07T06:07:00.000Z
-- [Connect to Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
-  - Updated: 2025-12-13T06:19:00.000Z → 2026-03-07T06:07:00.000Z
 
 ## Classified Pages
 

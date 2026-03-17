@@ -25,9 +25,9 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 - **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 16
+- **Unchanged**: 17
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-extended-zones/azure-extended-zones.csv`
 
@@ -41,10 +41,6 @@ skill_description: Expert knowledge for Azure Extended Zones development includi
 | *(Unclassified)* | 13 | 76.5% |
 
 ## Changes
-
-### New Pages
-
-- [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk)
 
 ## Classified Pages
 

@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Red Hat OpenShift development incl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 62
+- **Updated Pages**: 0
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -64,17 +64,6 @@ skill_description: Expert knowledge for Azure Red Hat OpenShift development incl
 | *(Unclassified)* | 10 | 15.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/openshift/openshift-faq)
-  - Updated: 2025-12-11T06:05:00Z → 2026-03-09T22:14:00Z
-- [Replace cluster identity](https://learn.microsoft.com/en-us/azure/openshift/howto-replace-cluster-identity)
-  - Updated: 2025-09-26T22:40:00.000Z → 2026-03-11T17:18:00.000Z
-- [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster)
-  - Updated: 2026-02-02T06:43:00.000Z → 2026-03-11T17:18:00.000Z
-- [Reconcile federated identity credentials](https://learn.microsoft.com/en-us/azure/openshift/howto-reconcile-federated-identity-credentials)
-  - Updated: 2026-02-02T06:43:00.000Z → 2026-03-11T17:18:00.000Z
 
 ## Classified Pages
 

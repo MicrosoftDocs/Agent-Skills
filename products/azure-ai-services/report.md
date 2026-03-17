@@ -42,10 +42,10 @@ skill_description: Expert knowledge for Azure AI services development including 
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 80
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 84
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-services/azure-ai-services.csv`
 
 ## Classification Statistics
@@ -63,23 +63,6 @@ skill_description: Expert knowledge for Azure AI services development including 
 | *(Unclassified)* | 33 | 39.3% |
 
 ## Changes
-
-### New Pages
-
-- [Try Content Understanding REST API and SDKs](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new)
-  - Updated: 2026-02-12T23:10:00.000Z → 2026-03-13T22:11:00.000Z
-- [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits)
-  - Updated: 2026-02-20T22:43:00.000Z → 2026-03-06T18:06:00.000Z
-- [Foundry and Content Understanding Studio comparison](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-03-06T23:10:00.000Z
-
-### Deleted Pages
-
-- ~~Try Content Understanding REST API~~ (https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
 
 ## Classified Pages
 

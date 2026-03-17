@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and network
     fabric: JSON templates, isolation domains, BGP/VRF/route policies, ACLs, QoS,
@@ -39,13 +39,13 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 - **Total Pages**: 217
 - **Fetched**: 217
 - **Fetch Failed**: 0
-- **Classified**: 160
-- **Unclassified**: 57
+- **Classified**: 159
+- **Unclassified**: 58
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 211
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 215
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -57,30 +57,20 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | best-practices | 3 | 1.4% |
 | configuration | 58 | 26.7% |
 | decision-making | 4 | 1.8% |
-| deployment | 6 | 2.8% |
+| deployment | 5 | 2.3% |
 | limits-quotas | 9 | 4.1% |
 | security | 35 | 16.1% |
 | troubleshooting | 44 | 20.3% |
-| *(Unclassified)* | 57 | 26.3% |
+| *(Unclassified)* | 58 | 26.7% |
 
 ## Changes
 
-### New Pages
-
-- [Troubleshoot Nexus Kubernetes VM scheduling failures due to topology spread constraints](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-kubernetes-cluster-vm-scheduling-topology-spread)
-
 ### Updated Pages
 
-- [How to set administrative lock or unlock for Network fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-administrative-lock-or-unlock-for-network-fabric)
-  - Updated: 2025-10-08T17:03:00.000Z → 2026-03-05T18:05:00.000Z
-- [How to disable internal/external networks in an enabled layer 3 isolation domain](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-disable-internal-external-networks-enabled-layer-3-isolation-domain)
-  - Updated: 2025-11-19T18:04:00.000Z → 2026-03-05T18:05:00.000Z
-- [Bare Metal Machine Platform Commands](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-functions)
-  - Updated: 2026-02-11T08:00:00.000Z → 2026-03-11T17:06:00.000Z
-- [BareMetal Run-Data-Extract Execution](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-data-extract)
-  - Updated: 2025-11-13T23:03:00.000Z → 2026-03-12T08:00:00.000Z
-- [Troubleshoot Bare Metal Server Problems](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-reboot-reimage-replace)
-  - Updated: 2026-02-12T23:03:00.000Z → 2026-03-12T22:05:00.000Z
+- [Cluster Inspect Action](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action)
+  - Updated: 2026-02-26T23:04:00.000Z → 2026-03-16T22:04:00.000Z
+- [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade)
+  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-16T22:04:00.000Z
 
 ## Classified Pages
 
@@ -240,7 +230,6 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | [Resource Placement](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-placement) | decision-making | 0.65 | Explains how Nexus schedules resources across bare metal servers based on VM count and SKU; likely includes product-specific placement behavior and constraints useful for capacity/placement decisions. |
 | [Restart cluster node](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-action-restart) | limits-quotas | 0.65 | Documents specific restart behavior and timing (up to 5 minutes, timeout conditions) tied to a particular CLI command for Nexus clusters. |
 | [Understand agent pools](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-agent-pools) | configuration | 0.65 | Contains Nexus-specific agent pool requirements (system vs user pools, minimum nodes) and configuration fields that are product-specific. |
-| [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade) | deployment | 0.65 | Includes Nexus-specific upgrade commands, supported version paths, and operational constraints that go beyond generic Kubernetes upgrade knowledge. |
 | [Delete ACLs associated with Network-to-Network Interconnects (NNI)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-access-control-list-network-to-network-interconnect) | security | 0.64 | Covers deletion of ACL associations on NNIs using Nexus fabric APIs; security-focused configuration operations specific to this product. |
 | [How to Configure Quality of Service (QoS) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-network-fabric-quality-of-service) | configuration | 0.64 | Uses Azure CLI to enable/disable QoS for Nexus; includes specific commands and parameters for QoS configuration. |
 | [How to monitor interface In and Out packet rate for network fabric devices](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-monitor-interface-packet-rate) | configuration | 0.64 | Shows how to access and interpret specific metrics for Nexus devices in Azure portal; includes product-specific metric names and views. |
@@ -273,7 +262,6 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | [BMP log streaming in Azure Operator Nexus Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-bmp-log-streaming) | 0.40 | Conceptual overview of BMP log streaming and its importance; no clear evidence of detailed configuration parameters or error mappings. |
 | [Before you start deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-azure-operator-nexus-prerequisites) | 0.40 | Prerequisites for NFC and CM; mentions quotas but not specific numeric values or detailed configuration parameters in summary. |
 | [Before you start workload deployment](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-tenant-workload-prerequisites) | 0.40 | Prerequisites quickstart; likely lists basic requirements but summary does not show detailed config tables or limits. |
-| [Cluster Inspect Action](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action) | 0.40 | High-level description of cluster inspect hardware validation; summary doesn’t show concrete parameters, limits, or error mappings. |
 | [Network Fabric OptionA and OptionB](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-fabric-optiona-optionb) | 0.40 | Option A/B article appears to be conceptual BGP peering models; summary lacks concrete decision matrices or numeric thresholds. |
 | [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-network-packet-broker) | 0.40 | Network Packet Broker overview; summary mentions capabilities but not detailed config parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-kubernetes-cluster) | 0.40 | Nexus Kubernetes Cluster Service introduction; conceptual overview of managed AKS on Nexus. |
@@ -294,6 +282,7 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | [Use Bicep file](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-virtual-machine-deployment-bicep) | 0.35 | Bicep VM deployment quickstart; procedural guidance without detailed parameter constraints. |
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-kubernetes-cluster-deployment-cli) | 0.35 | CLI deployment quickstart; primarily step-by-step commands without configuration matrices or product-specific constraints. |
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/operator-nexus/quickstarts-virtual-machine-deployment-cli) | 0.35 | CLI VM deployment quickstart; mainly procedural, not a configuration reference with constraints or limits. |
+| [Cluster Inspect Action](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action) | 0.30 | Appears to be a how-to/runbook for executing a cluster inspect hardware validation action. Summary does not indicate presence of specific numeric limits, configuration parameter tables, error-code-based troubleshooting, or other detailed product-specific settings; likely procedural guidance rather than expert reference content. |
 | [Cluster Manager](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-manager) | 0.30 | Page appears to be a how-to for creating, viewing, listing, updating, and deleting Cluster Manager resources in Operator Nexus. It is likely a procedural/CRUD guide without detailed configuration parameter tables, limits, error-code-based troubleshooting, or decision matrices. No clear evidence from the summary that it contains product-specific limits, quotas, security role definitions, or other expert-only configuration details. |
 | [Compute overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-compute) | 0.30 | Compute overview; lacks specific configuration parameters, limits, or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/operator-nexus/azure-operator-nexus-faq) | 0.30 | FAQ content is typically high-level Q&A without detailed numeric limits, configuration tables, or structured troubleshooting mappings. |
@@ -303,6 +292,7 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | [Resource Types](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-resource-types) | 0.30 | Conceptual overview of resource types; no detailed configuration tables or limits. |
 | [Storage overview](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-storage) | 0.30 | Storage appliance overview; no explicit limits, config tables, or error mappings in summary. |
 | [Telco Input Template](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-telco-input-template) | 0.30 | Concept article about representing a Nexus instance in a template; summary suggests conceptual only. |
+| [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade) | 0.30 | Describes how to upgrade an Operator Nexus Kubernetes cluster and why upgrades are important. From the summary, it seems like a step-by-step lifecycle/operations guide without explicit limits, configuration matrices, or detailed error-code troubleshooting, so it likely does not contain the kind of expert reference data required. |
 | [Availability](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-nexus-availability) | 0.25 | Availability overview and planning topics; no explicit limits, thresholds, or configuration tables indicated. |
 | [Control Plane Resiliency](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-rack-resiliency) | 0.20 | Rack resiliency overview; no quantified thresholds, decision matrices, or configuration parameters. |
 | [Near-edge Compute](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-compute) | 0.20 | Described as an overview of near-edge compute SKUs and resources; sounds conceptual/architectural without explicit limits, configuration tables, or decision matrices. |

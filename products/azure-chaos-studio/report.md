@@ -33,8 +33,8 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 50
+- **Updated Pages**: 0
+- **Unchanged**: 51
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-chaos-studio/azure-chaos-studio.csv`
 
@@ -50,11 +50,6 @@ skill_description: Expert knowledge for Chaos Studio development including troub
 | *(Unclassified)* | 20 | 39.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure REST API](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-samples-rest-api)
-  - Updated: 2024-10-14T08:00:00.000Z → 2026-03-11T22:15:00.000Z
 
 ## Classified Pages
 

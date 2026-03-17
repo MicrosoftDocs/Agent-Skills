@@ -39,8 +39,8 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 101
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -58,15 +58,6 @@ skill_description: Expert knowledge for Azure Role-based access control developm
 | *(Unclassified)* | 7 | 6.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/compute)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-08T08:00:00.000Z
-- [What's new in docs](https://learn.microsoft.com/en-us/azure/role-based-access-control/whats-new)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-08T08:00:00.000Z
-- [Compute](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/compute)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-08T08:00:00.000Z
 
 ## Classified Pages
 

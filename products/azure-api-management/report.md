@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure API Management development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 264
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 275
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
 ## Classification Statistics
@@ -68,35 +68,6 @@ skill_description: Expert knowledge for Azure API Management development includi
 | *(Unclassified)* | 49 | 17.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Log requests with Azure Application Insights](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights)
-  - Updated: 2025-04-09T08:00:00.000Z → 2026-03-09T22:17:00.000Z
-- [Deploy a self-hosted gateway to Kubernetes (Helm)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-helm)
-  - Updated: 2026-02-22T12:19:00.000Z → 2026-03-10T04:29:00.000Z
-- [Deploy self-hosted gateway to Kubernetes with OpenTelemetry Collector integration](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-opentelemetry)
-  - Updated: 2026-02-22T12:19:00.000Z → 2026-03-10T04:29:00.000Z
-- [8 - Add multiple versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-get-started-publish-versions)
-  - Updated: 2025-06-23T22:10:00.000Z → 2026-03-04T08:00:00.000Z
-- [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api)
-  - Updated: 2025-11-25T23:25:00.000Z → 2026-03-04T23:27:00.000Z
-- [Import a WebSocket API](https://learn.microsoft.com/en-us/azure/api-management/websocket-api)
-  - Updated: 2025-09-09T11:11:00.000Z → 2026-03-06T17:59:00.000Z
-- [Regional availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-region-availability)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-11T17:32:00.000Z
-- [Options to secure developer portal access](https://learn.microsoft.com/en-us/azure/api-management/secure-developer-portal-access)
-  - Updated: 2025-12-15T23:10:00.000Z → 2026-03-04T08:00:00.000Z
-- [Authenticate with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad)
-  - Updated: 2025-12-15T23:10:00.000Z → 2026-03-12T22:17:00.000Z
-- [Authenticate with Azure AD B2C](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-aad-b2c)
-  - Updated: 2025-09-18T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Troubleshoot failed to update hostnames error](https://learn.microsoft.com/en-us/azure/api-management/api-management-troubleshoot-cannot-add-custom-domain)
-  - Updated: 2024-04-03T17:09:00.000Z → 2026-03-10T04:29:00.000Z
-
-### Deleted Pages
-
-- ~~Authenticate with Microsoft Entra External ID~~ (https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-entra-external-id)
 
 ## Classified Pages
 

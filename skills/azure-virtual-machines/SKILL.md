@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure Virtual Machines. Covers troublesh
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -22,17 +22,17 @@ This skill requires **network access** to fetch documentation content:
 
 ## Category Index
 
-| Category | Lines | Description |
-|----------|-------|-------------|
+| Category | Location | Description |
+|----------|----------|-------------|
 | Troubleshooting | L37-L61 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
 | Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
 | Decision Making | L89-L149 | Guides for choosing VM/disk options, estimating and controlling costs, handling image/size retirements, and planning migrations (Linux, Oracle, GPU, RHEL, CentOS, Ubuntu, Dedicated Host). |
 | Architecture & Design Patterns | L150-L168 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
 | Limits & Quotas | L169-L375 | VM size specs, disk performance/limits, quotas, lifecycle/support, and performance benchmarks for Azure VMs, including GPU/HPC, confidential, storage-optimized, and OS/disk behaviors. |
 | Security | L376-L453 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image sharing, and TLS cert integration. |
-| Configuration | L454-L585 | Configuring Azure VMs and scale sets: images, disks, GPU/InfiniBand, agents/extensions, monitoring/telemetry, maintenance, SSH/WinRM, Oracle workloads, and restore/backup settings. |
-| Integrations & Coding Patterns | L586-L632 | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
-| Deployment | L633-L659 | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: images, disks, GPU/InfiniBand, agents/extensions, monitoring/telemetry, maintenance, SSH/WinRM, Oracle workloads, and restore/backup settings. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
+| Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -450,210 +450,3 @@ This skill requires **network access** to fetch documentation content:
 | Enable encryption at host for VMs with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-host-based-encryption-powershell |
 | Set up Azure Key Vault for VM deployments with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/key-vault-setup |
 | Secure Windows IIS VMs with TLS certificates from Key Vault | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-secure-web-server |
-
-### Configuration
-| Topic | URL |
-|-------|-----|
-| Configure attribute-based VM selection in Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/attribute-based-vm-selection |
-| Modify capacity and VM sizes in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/modify-fleet |
-| Configure Spot VM behavior in Azure Compute Fleet | https://learn.microsoft.com/en-us/azure/azure-compute-fleet/spot-vm-configuration |
-| Enable Azure Linux 3.0 for AKS clusters and node pools | https://learn.microsoft.com/en-us/azure/azure-linux/how-to-enable-azure-linux-3 |
-| Install and manage certificates on Azure Linux Container Host | https://learn.microsoft.com/en-us/azure/azure-linux/how-to-install-certs |
-| Enable telemetry and monitoring for Azure Linux with OS Guard | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-telemetry-monitor |
-| Configure telemetry and monitoring for Azure Linux Container Host | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-telemetry-monitor |
-| Enable automatic extension upgrades for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/automatic-extension-upgrade |
-| Configure automatic guest patching for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/automatic-vm-guest-patching |
-| Use Azure VM watch to collect in-VM health signals | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-vm-watch |
-| Configure Azure Event Hubs as a sink for VM watch signals | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-eventhub-vm-watch |
-| Customize VM watch settings and collectors on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/configure-vm-watch |
-| Configure and create Azure Compute Galleries | https://learn.microsoft.com/en-us/azure/virtual-machines/create-gallery |
-| Use custom data and cloud-init with Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/custom-data |
-| Convert Azure managed disk types via CLI, PowerShell, portal | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-convert-types |
-| Deploy zone-redundant managed disks (ZRS) | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-zrs |
-| Enable on-demand bursting for Premium SSD disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting |
-| Configure and deploy Azure Ultra Disks for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd |
-| Instantly access Azure managed disk snapshots | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-instant-access-snapshots |
-| Use Azure disk metrics and bursting metrics | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-metrics |
-| Convert managed disks from LRS to ZRS redundancy | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-migrate-lrs-zrs |
-| Change performance tiers for Azure Managed Disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-tiers |
-| Enable and configure Azure shared managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable |
-| Configure torn-write prevention on Linux managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-torn-write-prevention |
-| Select OS images that support Azure remote NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/enable-nvme-interface |
-| Configure Azure Monitor Dependency agent extension for Linux | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-linux |
-| Configure Azure Monitor Dependency agent extension for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-dependency-windows |
-| Install and configure Azure Linux VM Agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux |
-| Install and manage Azure Windows VM Agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows |
-| Configure Chef VM Extension on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/chef |
-| Configure Custom Script Extension v2 on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux |
-| Configure Custom Script Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows |
-| Overview and configuration of DSC extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview |
-| Author ARM templates for Azure DSC VM extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-template |
-| Configure Azure DSC Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows |
-| Configure and enable InfiniBand on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/enable-infiniband |
-| Configure Machine Configuration extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/guest-configuration |
-| Configure Application Health extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/health-extension |
-| Configure InfiniBand driver extension on Linux HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpc-compute-infiniband-linux |
-| Configure InfiniBand driver extension on Windows HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpc-compute-infiniband-windows |
-| Configure AMD GPU Driver Extension on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-linux |
-| Configure AMD GPU Driver Extension on Windows NVv4 VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-amd-gpu-windows |
-| Configure NVIDIA GPU Driver Extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux |
-| Configure NVIDIA GPU Driver Extension on Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows |
-| Configure Microsoft Antimalware Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/iaas-antimalware-windows |
-| Configure Azure Key Vault VM extension on Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux |
-| Configure Qualys Cloud Agent VM Extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/qualys |
-| Configure Salt Minion VM Extension for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/salt-minion |
-| Configure Stackify Retrace Linux agent extension on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/stackify-retrace-linux |
-| Configure Tenable One-Click Nessus VM Extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/tenable |
-| Use VMAccess extension to reset Linux VM access | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmaccess-linux |
-| Use VMAccess extension to reset Windows VM access | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmaccess-windows |
-| Configure VM Snapshot Linux extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-linux |
-| Configure VM Snapshot Windows extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-windows |
-| Enable and configure Azure Write Accelerator | https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator |
-| Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
-| Define and version images in Azure Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/image-version |
-| Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
-| Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
-| Attach new or existing data disks to Linux VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal |
-| Configure AMD GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/azure-n-series-amd-gpu-driver-linux-installation-guide |
-| Find Marketplace image URNs and plans using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage |
-| Create and upload CentOS-based VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-centos |
-| Prepare generic Linux systems for Azure imaging | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic |
-| Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
-| Prepare Debian Linux VHD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd |
-| Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
-| Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
-| Configure networking options for Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-networking |
-| Configure NVIDIA GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup |
-| Create and upload Oracle Linux VHDs to Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/oracle-create-upload-vhd |
-| Understand Linux VM provisioning parameters in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/provisioning |
-| Prepare and upload RHEL VHDs for Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/redhat-create-upload-vhd |
-| Use Run Command to execute scripts on Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command |
-| Configure managed Run Command for Linux Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/run-command-managed |
-| Create and upload SUSE Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/suse-create-upload-vhd |
-| Configure time synchronization for Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/time-sync |
-| Configure xrdp and desktop environment on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop |
-| Control Azure VM platform updates with Maintenance Configurations | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations |
-| Define Maintenance Configurations for Azure VMs using Bicep | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-bicep |
-| Manage Azure VM Maintenance Configurations using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-cli |
-| Configure Azure VM Maintenance Configurations in the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal |
-| Configure Maintenance Configurations for dedicated hosts with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-powershell |
-| Manage and restore Azure VMs from restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/manage-restore-points |
-| Export Compute Gallery image versions to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disk-from-image-version |
-| Configure Marketplace purchase plans for gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/marketplace-images |
-| Configure monitoring and alerts for Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm |
-| Reference for Azure VM monitoring metrics, logs, and dimensions | https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference |
-| Migrate Linux Azure VMs from SCSI to NVMe | https://learn.microsoft.com/en-us/azure/virtual-machines/nvme-linux |
-| Configure InfiniBand networking on Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-infiniband |
-| Configure MPI for RDMA-enabled Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
-| Configure MPI for RDMA-capable Azure HPC VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/setup-mpi |
-| Create and store SSH keys with Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-azure-cli |
-| Configure and manage SSH keys in Azure portal | https://learn.microsoft.com/en-us/azure/virtual-machines/ssh-keys-portal |
-| Upgrade Azure Gen1 VMs to Trusted launch Gen2 | https://learn.microsoft.com/en-us/azure/virtual-machines/trusted-launch-existing-vm-gen-1 |
-| List, update, and delete Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/update-image-resources |
-| Configure user data scripts for Azure VMs at provisioning | https://learn.microsoft.com/en-us/azure/virtual-machines/user-data |
-| Control OS image upgrades on VM scale sets with Maintenance control | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control |
-| Use Azure CLI to manage Maintenance control for VM scale set OS upgrades | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-cli |
-| Configure Maintenance control for VM scale set OS upgrades in the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-portal |
-| Use PowerShell to manage Maintenance control for VM scale set OS upgrades | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-powershell |
-| Define Maintenance control for VM scale sets using ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control-template |
-| Create Azure VM restore points using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-cli |
-| Create Azure VM restore points using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points-powershell |
-| Configure cross-region copy of Azure VM restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-copy |
-| Configure VM Snapshot extensions for application-consistent restore points | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension |
-| Configure VM vCore customization and SMT settings | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-customization |
-| Configure VM watch Collectors Suite for Azure VM health checks | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-watch-collector-suite |
-| Attach data disks to Windows VMs using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps |
-| Attach managed data disks to Windows VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal |
-| Find Marketplace image URNs and plans with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/cli-ps-findimage |
-| Configure WinRM connectivity for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/connect-winrm |
-| Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
-| Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
-| Install AMD GPU drivers on Windows N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup |
-| Install NVIDIA GPU drivers on Windows N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
-| Use Run Command to execute scripts on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command |
-| Configure managed Run Command for Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command-managed |
-| Define Azure VM resources in ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/template-description |
-| Configure time synchronization for Azure Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/time-sync |
-| Configure ExpressRoute and OCI FastConnect for Oracle apps | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking |
-| Install and configure Oracle ASM on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-asm |
-| Configure Oracle Data Guard on Azure Linux VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard |
-| Install and configure Oracle GoldenGate on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate |
-| Back up Oracle Database on Azure VMs using Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-backup-azure-backup |
-| Back up Oracle Database to Azure Files with RMAN | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-backup-azure-storage |
-| Configure streaming Oracle RMAN backups on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-rman-streaming-backup |
-| Use Red Hat Update Infrastructure for RHEL on Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/redhat-rhui |
-
-### Integrations & Coding Patterns
-| Topic | URL |
-|-------|-----|
-| Move Azure Marketplace VM to another subscription via CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/azure-cli-change-subscription-marketplace |
-| Create Azure VM restore points using REST APIs | https://learn.microsoft.com/en-us/azure/virtual-machines/create-restore-points |
-| Configure Azure Backup extension for SQL Server on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/backup-azure-sql-server-running-azure-vm |
-| Configure Azure Key Vault VM extension for Windows certificate refresh | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows |
-| Monitor Azure VM availability with Project Flash via Azure Monitor metric | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-monitor |
-| Monitor Azure VM availability with Project Flash via Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph |
-| Monitor Azure VM availability with Project Flash via Resource Health | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-health |
-| Monitor Azure VM availability with Project Flash via Event Grid | https://learn.microsoft.com/en-us/azure/virtual-machines/flash-event-grid-system-topic |
-| Use Azure Instance Metadata Service for VM configuration and maintenance info | https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service |
-| Use Azure CLI commands to manage Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage |
-| Upgrade Azure Disk Encryption version on disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disk-encryption-upgrade |
-| Download Linux VHDs from Azure using CLI and portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/download-vhd |
-| Resize Azure Disk Encryption LVM-encrypted Linux disks | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/how-to-resize-encrypted-lvm |
-| Retrieve Azure VM CPU metrics via Monitor REST API | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/metrics-vm-usage-rest |
-| Use Scheduled Events on Linux Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events |
-| Retrieve Azure VM maintenance notifications using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-cli |
-| Get Azure VM maintenance notifications with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-powershell |
-| Query Azure VM availability data using Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-availability |
-| Query Azure VM resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/virtual-machines/resource-graph-samples |
-| CLI scripts to copy managed disks across subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-to-same-or-different-subscription |
-| CLI script to export managed disk VHDs to storage accounts | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account |
-| CLI scripts to copy managed disk snapshots across subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-snapshot-to-same-or-different-subscription |
-| CLI script to export snapshots to storage accounts across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/copy-snapshot-to-storage-account |
-| CLI scripts to create managed disks from snapshots (Linux) | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-snapshot |
-| CLI script to create managed disks from VHDs in same subscription | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-managed-disk-from-vhd |
-| CLI script to create a VM from an existing managed OS disk | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-vm-from-managed-os-disks |
-| CLI script to create a VM from an OS disk snapshot | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/create-vm-from-snapshot |
-| PowerShell script to export managed disk VHDs to storage accounts | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-copy-managed-disks-vhd |
-| PowerShell script to copy managed disk snapshots between subscriptions | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-copy-snapshot-to-same-or-different-subscription |
-| PowerShell script to export snapshots as VHDs to storage accounts | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-copy-snapshot-to-storage-account |
-| PowerShell script to create managed disks from snapshots | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-snapshot |
-| PowerShell script to create managed disks from VHDs | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-vhd |
-| PowerShell script to create snapshots from VHDs for multiple managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-snapshot-from-vhd |
-| Create Azure VM disk snapshots for backup and debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk |
-| Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
-| Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
-| Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |
-| Download Windows VHDs from Azure using the portal | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/download-vhd |
-| Configure VM virtual networks using PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-network-ref |
-| Manage Azure VMs with PowerShell commands | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref |
-| Monitor Windows Azure VMs for scheduled maintenance events | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-event-service |
-| Use Scheduled Events on Windows Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-events |
-| Deploy Oracle Database 19c on Azure VMs with CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-quick-create |
-
-### Deployment
-| Topic | URL |
-|-------|-----|
-| Migrate AKS nodes to Azure Linux Container Host | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-migration |
-| Migrate AKS nodes to Azure Linux with OS Guard | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-migration |
-| Upgrade Azure Linux with OS Guard node images | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-os-guard-upgrade |
-| Upgrade Azure Linux Container Host node images in AKS | https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade |
-| Copy incremental managed disk snapshots across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-copy-incremental-snapshot-across-regions |
-| Export ARM templates for resource groups with VM extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/export-templates |
-| Migrate Linux VMs from unmanaged to managed disks using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks |
-| Use Azure DevOps task to inject artifacts into VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-devops-task |
-| Migrate Linux VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/migrate-to-premium-storage-using-azure-site-recovery |
-| Configure rolling deployments to Linux VMs with Azure Pipelines | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-devops-azure-pipelines-classic |
-| Move VM maintenance configurations between Azure regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration |
-| Move resources tied to VM maintenance configurations across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration-resources |
-| FAQ for moving Azure VMs from regional to zonal availability | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-faq |
-| Move regional Azure VMs to zonal availability via portal | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-portal |
-| Move regional Azure VMs to zonal availability using PowerShell/CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-powershell |
-| Use incremental snapshots for unmanaged disk backup | https://learn.microsoft.com/en-us/azure/virtual-machines/unmanaged-disks-incremental-snapshots |
-| Perform in-place Windows Server upgrades on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows-in-place-upgrade |
-| Migrate Windows VMs from unmanaged to managed disks with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks |
-| Migrate Azure VMs from unmanaged to managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/migrate-to-managed-disks |
-| Migrate Windows VMs to Azure Premium Storage with Site Recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/migrate-to-premium-storage-using-azure-site-recovery |
-| Migrate AWS/on-prem VHDs to Azure managed disk VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/on-prem-to-azure |
-| Quickly deploy WebLogic Server via Azure Marketplace VM | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/weblogic-server-azure-virtual-machine |
-| Perform in-place upgrades of RHEL images on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/redhat-in-place-upgrade |
-| Implement blue-green deployments to Azure Linux VMs with Azure Pipelines | https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/linux/tutorial-azure-devops-blue-green-strategy |

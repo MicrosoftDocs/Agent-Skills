@@ -45,10 +45,10 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 - **Unclassified**: 109
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 14
-- **Unchanged**: 425
-- **Deleted Pages**: 4
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 444
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
 ## Classification Statistics
@@ -67,52 +67,6 @@ skill_description: Expert guidance for designing Azure solutions using Azure Arc
 | *(Unclassified)* | 109 | 24.5% |
 
 ## Changes
-
-### New Pages
-
-- [Asynchronous Request-Reply](https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply)
-- [Publisher-Subscriber](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
-- [Get started](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/compute-get-started)
-- [High-performance computing](https://learn.microsoft.com/en-us/azure/architecture/guide/compute/high-performance-computing)
-- [Multiregion load balancing](https://learn.microsoft.com/en-us/azure/architecture/high-availability/traffic-manager-application-gateway)
-
-### Updated Pages
-
-- [Storage options](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/storage-options)
-  - Updated: 2025-03-27T17:30:00.000Z → 2026-03-05T06:02:00.000Z
-- [Prepare to choose a data store in Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-stores-getting-started)
-  - Updated: 2025-09-23T05:02:00.000Z → 2026-03-04T18:33:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices)
-  - Updated: 2025-03-14T17:30:00.000Z → 2026-03-13T05:03:00.000Z
-- [Autoscaling](https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling)
-  - Updated: 2025-12-06T06:04:00.000Z → 2026-03-10T17:32:00.000Z
-- [No Caching](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/no-caching/)
-  - Updated: 2025-10-30T17:34:00.000Z → 2026-03-04T18:33:00.000Z
-- [Compute](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/compute)
-  - Updated: 2025-12-09T18:34:00.000Z → 2026-03-07T06:04:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-03-03T06:03:00.000Z → 2026-03-10T17:32:00.000Z
-- [Event-driven architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
-  - Updated: 2025-08-14T17:34:00.000Z → 2026-03-07T06:04:00.000Z
-- [Real-time analytics with Azure Data Explorer](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-service-bus)
-  - Updated: 2026-02-26T06:03:00Z → 2026-03-06T06:04:00Z
-- [Azure Virtual Desktop for Azure Local](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-local-workload-virtual-desktop)
-  - Updated: 2025-12-18T18:34:00Z → 2026-03-06T06:04:00Z
-- [Azure enterprise cloud file share](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-files-private)
-  - Updated: 2025-09-09T05:04:00Z → 2026-03-11T17:36:00Z
-- [Patch and upgrade worker nodes](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-upgrade-practices)
-  - Updated: 2025-02-06T08:00:00.000Z → 2026-03-06T06:04:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance)
-  - Updated: 2025-10-30T05:03:00Z → 2026-03-12T17:42:00Z
-- [Networking](https://learn.microsoft.com/en-us/azure/architecture/networking/)
-  - Updated: 2024-12-12T18:32:00.000Z → 2026-03-11T17:36:00.000Z
-
-### Deleted Pages
-
-- ~~Multi-region load balancing~~ (https://learn.microsoft.com/en-us/azure/architecture/high-availability/reference-architecture-traffic-manager-application-gateway)
-- ~~Asynchronous Request-Reply~~ (https://learn.microsoft.com/en-us/azure/architecture/patterns/async-request-reply)
-- ~~Publisher/Subscriber~~ (https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
-- ~~Get started~~ (https://learn.microsoft.com/en-us/azure/architecture/topics/high-performance-computing)
 
 ## Classified Pages
 

@@ -45,8 +45,8 @@ skill_description: Expert knowledge for Azure Backup development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 384
+- **Updated Pages**: 0
+- **Unchanged**: 393
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
@@ -66,27 +66,6 @@ skill_description: Expert knowledge for Azure Backup development including troub
 | *(Unclassified)* | 157 | 39.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [MARS agent support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent)
-  - Updated: 2025-11-24T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [Threat Detection with Microsoft Defender for Cloud integration](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview)
-  - Updated: 2025-12-18T18:11:00.000Z → 2026-03-12T11:31:00.000Z
-- [Database and HANA System Replication database](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-05T08:00:00.000Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage)
-  - Updated: 2026-02-24T18:11:00.000Z → 2026-03-06T08:00:00.000Z
-- [MABS V4 (and later) protection matrix](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [MABS V3 UR1 (and later)](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1)
-  - Updated: 2025-07-17T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [MABS V3 RTM protection matrix](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3)
-  - Updated: 2025-07-14T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [Manage recovery points](https://learn.microsoft.com/en-us/azure/backup/manage-recovery-points)
-  - Updated: 2025-06-13T11:18:00.000Z → 2026-03-09T06:15:00.000Z
-- [Back up Windows Server System State](https://learn.microsoft.com/en-us/azure/backup/backup-azure-system-state)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-03-09T17:11:00.000Z
 
 ## Classified Pages
 

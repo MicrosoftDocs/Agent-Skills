@@ -36,8 +36,8 @@ skill_description: Expert knowledge for Azure Advisor development including best
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 31
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -54,13 +54,6 @@ skill_description: Expert knowledge for Azure Advisor development including best
 | *(Unclassified)* | 7 | 21.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Service Retirement workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-service-retirement)
-  - Updated: 2024-10-29T05:32:00.000Z → 2026-03-10T22:36:00.000Z
 
 ## Classified Pages
 

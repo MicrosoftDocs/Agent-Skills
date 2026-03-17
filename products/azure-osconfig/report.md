@@ -28,9 +28,9 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 29
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
 
@@ -45,11 +45,6 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
 | *(Unclassified)* | 15 | 48.4% |
 
 ## Changes
-
-### New Pages
-
-- [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc)
-- [Quickstart: How to configure LAPS for Azure Arc](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-laps-azure-arc)
 
 ## Classified Pages
 

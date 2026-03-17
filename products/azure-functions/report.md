@@ -45,10 +45,10 @@ skill_description: Expert knowledge for Azure Functions development including tr
 - **Unclassified**: 82
 
 ### Incremental Update
-- **New Pages**: 46
-- **Updated Pages**: 31
-- **Unchanged**: 280
-- **Deleted Pages**: 50
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 357
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-functions/azure-functions.csv`
 
 ## Classification Statistics
@@ -67,98 +67,6 @@ skill_description: Expert knowledge for Azure Functions development including tr
 | *(Unclassified)* | 82 | 23.0% |
 
 ## Changes
-
-### New Pages
-
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-functions/functions-cli-samples)
-- [Consumption plan (legacy)](https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan)
-- [Zone redundancy](https://learn.microsoft.com/en-us/azure/azure-functions/functions-zone-redundancy)
-- [Create an app with the Durable Task SDKs](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-portable-durable-task-sdks)
-- [Host a .NET Durable Task SDK app on Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-aks-durable-task-scheduler)
-- [Programming model](https://learn.microsoft.com/en-us/azure/azure-functions/durable/programming-model-overview)
-- [Orchestration](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestrations)
-- [Durable Entities](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-entities)
-- [Durable Timers](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-timers)
-- [Fan-out/fan-in](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-fan-in-fan-out)
-- [Monitors](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-monitor)
-- [Human interaction](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-human-interaction)
-- [Error handling and retries](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-error-handling)
-- [Orchestration versioning](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-orchestration-versioning)
-- [Versions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versions)
-- [Packages](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-packages)
-- [Performance & scale](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-perf-and-scale)
-- [Versioning](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versioning)
-- [Configure Durable Functions with managed identity](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-configure-managed-identity)
-- [Configure Durable Functions with Durable Task Scheduler](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-durable-task-scheduler)
-- *...and 26 more*
-
-### Updated Pages
-
-- [Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview)
-  - Updated: 2025-03-25T22:04:00.000Z → 2026-03-15T11:12:00.000Z
-- [AI-enabled functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps)
-  - Updated: 2025-11-07T23:24:00.000Z → 2026-03-04T23:27:00.000Z
-- [Getting started](https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started)
-  - Updated: 2025-10-28T17:12:00.000Z → 2026-03-06T17:59:00.000Z
-- [Durable Functions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview)
-  - Updated: 2025-04-06T05:14:00.000Z → 2026-03-06T17:59:00.000Z
-- [MCP Apps](https://learn.microsoft.com/en-us/azure/azure-functions/scenario-mcp-apps)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-13T11:12:00.000Z
-- [Create serverless APIs using Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/openapi-apim-integrate-visual-studio)
-  - Updated: 2024-08-07T22:04:00.000Z → 2026-03-04T08:00:00.000Z
-- [Storage considerations](https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations)
-  - Updated: 2026-01-20T08:00:00.000Z → 2026-03-15T11:12:00.000Z
-- [Work with containers](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-custom-container)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-13T08:00:00.000Z
-- [Build and deploy using GitHub Actions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions)
-  - Updated: 2024-10-30T19:28:00.000Z → 2026-03-02T08:00:00.000Z
-- [Azure Functions Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-core-tools-reference)
-  - Updated: 2026-01-21T06:14:00.000Z → 2026-03-06T17:59:00.000Z
-- [Networking options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options)
-  - Updated: 2024-11-12T18:06:00.000Z → 2026-03-03T08:00:00.000Z
-- [Isolated worker model](https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide)
-  - Updated: 2025-12-21T23:11:00.000Z → 2026-02-24T08:00:00.000Z
-- [Infrastructure as code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code)
-  - Updated: 2025-08-05T08:00:00.000Z → 2026-03-15T11:12:00.000Z
-- [Create a Durable Functions app - PowerShell](https://learn.microsoft.com/en-us/azure/azure-functions/durable/quickstart-powershell-vscode)
-  - Updated: 2024-08-21T22:04:00.000Z → 2026-03-06T17:59:00.000Z
-- [Host a Durable Task SDK app on Azure Container Apps](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/quickstart-container-apps-durable-task-sdk)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-03-06T17:59:00.000Z
-- [Sub-orchestrations](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-sub-orchestrations)
-  - Updated: 2025-06-27T22:11:00.000Z → 2026-03-06T17:59:00.000Z
-- [Task hubs](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-task-hubs)
-  - Updated: 2023-05-04T22:04:00.000Z → 2026-03-06T17:59:00.000Z
-- [Orchestrator code constraints](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-code-constraints)
-  - Updated: 2022-06-17T17:04:00.000Z → 2026-03-06T17:59:00.000Z
-- [Storage providers](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-storage-providers)
-  - Updated: 2025-05-08T22:03:00.000Z → 2026-03-06T17:59:00.000Z
-- [Instance management](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-instance-management)
-  - Updated: 2024-02-13T08:00:00.000Z → 2026-03-06T17:59:00.000Z
-- *...and 11 more*
-
-### Deleted Pages
-
-- ~~Consumption plan~~ (https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan)
-- ~~Azure storage provider for Durable Functions~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-azure-storage-provider)
-- ~~Durable Functions best practices and diagnostic tools~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-best-practice-reference)
-- ~~Pricing~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-billing)
-- ~~Fan-out/fan-in~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-cloud-backup)
-- ~~Configure Durable Functions app with managed identity~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-configure-managed-identity)
-- ~~Create in Azure portal~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-create-portal)
-- ~~Durable entities in .NET~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-dotnet-entities)
-- ~~Stateful entities~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-entities)
-- ~~Error handling~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-error-handling)
-- ~~Publish to Event Grid~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-event-publishing)
-- ~~Upgrade Durable Functions extension version~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-extension-upgrade)
-- ~~Monitors (C#, JavaScript)~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-monitor)
-- ~~Monitors (Python)~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-monitor-python)
-- ~~Hosting in Azure Container Apps~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-mssql-container-apps-hosting)
-- ~~Orchestration versioning~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestration-versioning)
-- ~~Orchestrations~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestrations)
-- ~~Durable Functions packages~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-packages)
-- ~~Performance and scale~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-perf-and-scale)
-- ~~Human interaction~~ (https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-phone-verification)
-- *...and 30 more*
 
 ## Classified Pages
 

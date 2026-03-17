@@ -43,9 +43,9 @@ skill_description: Expert knowledge for Azure Blob Storage development including
 - **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 7
-- **Unchanged**: 398
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 407
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -64,28 +64,6 @@ skill_description: Expert knowledge for Azure Blob Storage development including
 | *(Unclassified)* | 72 | 17.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate data using private connections](https://learn.microsoft.com/en-us/azure/storage-mover/migrations-requiring-private-connections)
-- [Authorize access with Microsoft Entra ID (preview)](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-entra-id-based-access)
-
-### Updated Pages
-
-- [Blob Storage feature support](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-feature-support-in-storage-accounts)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-05T12:13:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview)
-  - Updated: 2025-09-15T08:00:00.000Z → 2026-03-13T05:18:00.000Z
-- [Examples: Deleting blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-delete)
-  - Updated: 2025-06-13T22:03:00.000Z → 2026-03-13T05:18:00.000Z
-- [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues)
-  - Updated: 2024-03-05T23:13:00.000Z → 2026-03-05T12:13:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support)
-  - Updated: 2024-11-15T08:00:00.000Z → 2026-02-26T08:00:00.000Z
-- [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
-  - Updated: 2025-08-19T17:10:00.000Z → 2026-03-12T06:27:00.000Z
-- [Configure object replication policies](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-configure)
-  - Updated: 2026-02-05T18:11:00.000Z → 2026-03-10T08:00:00.000Z
 
 ## Classified Pages
 

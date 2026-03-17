@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   limits-quotas: ACI limits on CPU/memory (big containers), regional quota checks,
     standby pool constraints, and networking limits when using virtual networks
@@ -15,9 +15,9 @@ category_descriptions:
   security: 'Securing Azure Container Instances: TLS/HTTPS setup, image and secret
     protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and
     Azure Policy enforcement.'
-  troubleshooting: Diagnosing ACI deployment/runtime failures by viewing container
-    logs/events, interpreting errors, and fixing common issues with images, networking,
-    resources, and configuration.
+  troubleshooting: Diagnosing ACI issues by viewing logs/events, understanding provisioning/runtime
+    states, and troubleshooting common deployment, startup, and container runtime
+    failures.
   deployment: Using GitHub Actions to build, push, and automatically deploy container
     images to Azure Container Instances, including workflow YAML setup and authentication
     configuration.
@@ -29,7 +29,7 @@ skill_description: Expert knowledge for Azure Container Instances development in
   limits & quotas, security, configuration, and deployment. Use when building, debugging,
   or optimizing Azure Container Instances applications. Not for Azure Container Apps
   (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
+  Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Container Instances Crawl Report
 
@@ -43,8 +43,8 @@ skill_description: Expert knowledge for Azure Container Instances development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 82
+- **Updated Pages**: 3
+- **Unchanged**: 80
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -54,20 +54,24 @@ skill_description: Expert knowledge for Azure Container Instances development in
 |------|-------|------------|
 | architecture-patterns | 3 | 3.6% |
 | best-practices | 1 | 1.2% |
-| configuration | 30 | 36.1% |
+| configuration | 29 | 34.9% |
 | decision-making | 2 | 2.4% |
 | deployment | 1 | 1.2% |
 | limits-quotas | 4 | 4.8% |
 | security | 11 | 13.3% |
-| troubleshooting | 2 | 2.4% |
+| troubleshooting | 3 | 3.6% |
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-11T22:06:00.000Z
+- [View an instance's state](https://learn.microsoft.com/en-us/azure/container-instances/container-state)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T17:07:00.000Z
+- [Deploy a container group - YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-yaml)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T08:00:00.000Z
+- [Deploy a container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-group)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
@@ -103,6 +107,7 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [Security considerations](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-image-security) | security | 0.70 | Security considerations article; likely includes ACI-specific recommendations, possibly RBAC roles, secret handling patterns, and image security guidance beyond generic security theory. |
 | [Set environment variables (env)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-environment-variables) | configuration | 0.70 | Shows concrete CLI/PowerShell/portal parameters and YAML schema fields for setting environment variables in ACI, including property names and usage patterns that are product-specific. |
 | [Use config maps](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-config-map) | configuration | 0.70 | Describes ACI-specific config map properties and update behavior, with concrete configuration fields and patterns distinct from generic environment variable usage. |
+| [View an instance's state](https://learn.microsoft.com/en-us/azure/container-instances/container-state) | troubleshooting | 0.70 | The article catalogs all possible provisioning, container, and container group state values for Azure Container Instances, explains what each state indicates, and where they appear in the platform. These state names and their precise meanings are product-specific operational details that LLMs are unlikely to fully know from training. While not organized strictly as symptom→cause→fix, this state mapping is core troubleshooting knowledge for diagnosing why a container is stuck or failing. |
 | [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.68 | Page describes specific, product-enforced limitations for Azure Container Instances in virtual networks, including the requirement that NAT gateway is the only supported configuration for outbound connectivity from container groups in a VNet. This is concrete, product-specific behavior and a hard constraint that affects architecture and configuration, fitting best under limits-quotas. |
 | [About Azure Container Instances Spot containers](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-spot-containers-overview) | decision-making | 0.65 | Spot containers overview with quantified discount (up to 70%) and trade-offs for interruptible workloads; helps decide when to choose Spot vs regular ACI. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-create) | configuration | 0.65 | Provides concrete configuration steps and parameters to define container group profiles and standby pools in ACI. |
@@ -118,7 +123,6 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [Use Azure Firewall for ingress and egress](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-egress-ip-address) | architecture-patterns | 0.65 | Provides a concrete pattern using Azure Firewall and UDRs to control egress IP for ACI, including routing configuration and service-specific constraints. |
 | [Use GPU resources (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-gpu) | configuration | 0.65 | Provides ACI-specific YAML/CLI configuration for GPU resources (SKU names, counts) which are concrete service-specific settings. |
 | [Utilize predictive pooling (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-prediction-results) | decision-making | 0.65 | Shows how to interpret prediction metrics from runtime view APIs to adjust pool size, providing quantitative guidance for capacity decisions. |
-| [View an instance's state](https://learn.microsoft.com/en-us/azure/container-instances/container-state) | configuration | 0.65 | Catalogs ACI-specific state values for operations, containers, and container groups, explaining their meanings and where they appear. |
 | [Viewing logs in Azure portal](https://learn.microsoft.com/en-us/azure/container-instances/viewing-logs-in-portal) | configuration | 0.65 | Shows portal-based configuration and workspace linkage for ACI logs, including which blades and options to use for Log Analytics integration. |
 | [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events) | configuration | 0.60 | Provides concrete configuration steps and query patterns to send and analyze standby pool events in Azure Monitor Logs. |
 | [Get pool and container details](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-get-details) | configuration | 0.60 | Explains how to query standby pool metadata and container group information via ACI APIs/commands, which is product-specific. |
@@ -142,8 +146,6 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [Support Policy for ACI](https://learn.microsoft.com/en-us/azure/container-instances/azure-container-instances-support-policy) | 0.40 | Support policy and responsibilities overview; likely descriptive without detailed config tables, numeric thresholds, or error-code troubleshooting matrices. |
 | [Deploy a Spot container group - Azure CLI](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-cli) | 0.35 | CLI tutorial for Spot containers; example deployment, not a full limits table or decision matrix. |
 | [Deploy a Spot container group - Portal](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-spot-containers-portal) | 0.35 | Portal tutorial for Spot containers; basic deployment steps, not detailed quotas or configuration matrices. |
-| [Deploy a container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-group) | 0.35 | Tutorial for multi-container ARM template; example-based, not a comprehensive configuration or troubleshooting guide. |
-| [Deploy a container group - YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-yaml) | 0.35 | Tutorial for multi-container YAML; focuses on an example YAML, not a full configuration reference or limits/quotas. |
 | [Deploy a container instance - ARM template](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-template) | 0.35 | ARM template quickstart; example-focused, not a full configuration matrix or decision/troubleshooting guide. |
 | [Deploy a container instance - Bicep](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-bicep) | 0.35 | Bicep quickstart; demonstrates a single deployment template, but not a comprehensive configuration reference or limits table. |
 | [Deploy a container instance - Terraform](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-terraform) | 0.35 | Terraform quickstart; shows how to deploy with Terraform but not detailed product-specific config tables or limits. |
@@ -159,5 +161,7 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | [2 - Create container registry](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-acr) | 0.25 | Tutorial on preparing Azure Container Registry; mostly generic ACR usage, not ACI-specific expert details. |
 | [Relationship to orchestrators](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-orchestrator-relationship) | 0.25 | Conceptual relationship between ACI and orchestrators; architectural overview without quantified decision matrices or limits. |
 | [About Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview) | 0.20 | High-level overview of Azure Container Instances; conceptual description of capabilities without numeric limits, config tables, or detailed patterns. |
+| [Deploy a container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-group) | 0.20 | Tutorial for deploying a multi-container group using an ARM template. Focuses on example template and CLI usage, not on exhaustive configuration options, limits, decision matrices, or troubleshooting mappings. Lacks the structured, product-specific expert details required for any sub-skill type. |
+| [Deploy a container group - YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-yaml) | 0.20 | Tutorial-style walkthrough for deploying a multi-container group via YAML. It primarily shows step-by-step commands and an example YAML, without configuration parameter tables, limits, quotas, or product-specific best-practice guidance with quantified impact. Does not meet thresholds for configuration, integrations, or other expert-knowledge categories. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-faq) | 0.20 | General FAQ page; while it may contain some service details, it is not organized as limits tables, configuration references, troubleshooting mappings, or other structured expert content per the defined categories. |
 | [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-support-help) | 0.10 | Support and help options page focused on where to get assistance, not on technical limits, configuration, troubleshooting, or other expert operational details. |

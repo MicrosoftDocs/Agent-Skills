@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring Azure Files and Azure File Sync: networking/VPN, private
     endpoints, DNS, redundancy, cloud tiering, monitoring/alerts, DFS integration,
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: Guides for planning Azure Files deployments, choosing redundancy
     and billing models, estimating/optimizing costs, and selecting migration, sync,
     and app development approaches.
-  best-practices: 'Best practices for Azure Files and File Sync: DR/failover planning,
-    server/drive replacement, safe deprovision/recovery, and performance tuning for
-    SMB/NFS and VDI/FSLogix workloads'
+  best-practices: Disaster recovery, lifecycle, and performance best practices for
+    Azure Files and Azure File Sync, including failover planning, server/drive replacement,
+    large directory handling, and VDI/FSLogix usage.
   security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, Kerberos),
     share/NTFS permissions, encryption in transit, firewalls/proxies, network perimeters,
     and managed identities.'
@@ -26,7 +26,7 @@ skill_description: Expert knowledge for Azure Files development including best p
   decision making, limits & quotas, security, configuration, integrations & coding
   patterns, and deployment. Use when building, debugging, or optimizing Azure Files
   applications. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+  Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Files Crawl Report
 
@@ -39,9 +39,9 @@ skill_description: Expert knowledge for Azure Files development including best p
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 33
-- **Unchanged**: 75
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 107
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -60,53 +60,12 @@ skill_description: Expert knowledge for Azure Files development including best p
 
 ## Changes
 
-### New Pages
-
-- [Change the identity source for authentication](https://learn.microsoft.com/en-us/azure/storage/files/change-identity-source)
-
 ### Updated Pages
 
-- [Data protection overview](https://learn.microsoft.com/en-us/azure/storage/files/files-data-protection-overview)
-  - Updated: 2025-08-01T22:11:00.000Z → 2026-03-11T22:19:00.000Z
-- [File share soft delete](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion)
-  - Updated: 2025-04-11T22:03:00.000Z → 2026-03-11T22:19:00.000Z
-- [Storage redundancy](https://learn.microsoft.com/en-us/azure/storage/files/files-redundancy)
-  - Updated: 2026-02-18T10:58:00.000Z → 2026-03-09T22:17:00.000Z
-- [Disaster recovery and failover](https://learn.microsoft.com/en-us/azure/storage/files/files-disaster-recovery)
-  - Updated: 2025-08-01T22:11:00.000Z → 2026-03-11T22:19:00.000Z
-- [SSD file shares redundancy support](https://learn.microsoft.com/en-us/azure/storage/files/redundancy-premium-file-shares)
-  - Updated: 2025-08-18T22:33:00.000Z → 2026-03-13T08:00:00.000Z
-- [Understand performance](https://learn.microsoft.com/en-us/azure/storage/files/understand-performance)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-12T08:00:00.000Z
+- [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance)
+  - Updated: 2026-01-15T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 - [NFS performance](https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance)
-  - Updated: 2025-03-31T22:05:00.000Z → 2026-03-11T22:19:00.000Z
-- [Large directory best practices](https://learn.microsoft.com/en-us/azure/storage/files/nfs-large-directories)
-  - Updated: 2025-07-25T08:00:00.000Z → 2026-03-11T22:19:00.000Z
-- [Zonal placement](https://learn.microsoft.com/en-us/azure/storage/files/zonal-placement)
-  - Updated: 2026-02-18T10:58:00.000Z → 2026-03-11T22:19:00.000Z
-- [Monitor Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring)
-  - Updated: 2026-02-03T23:16:00.000Z → 2026-03-11T22:19:00.000Z
-- [Analyze metrics](https://learn.microsoft.com/en-us/azure/storage/files/analyze-files-metrics)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-11T22:19:00.000Z
-- [Create alerts](https://learn.microsoft.com/en-us/azure/storage/files/files-monitoring-alerts)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-11T22:19:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-developer-overview)
-  - Updated: 2025-04-01T11:23:00.000Z → 2026-03-11T22:19:00.000Z
-- [.NET](https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files)
-  - Updated: 2025-04-08T08:00:00.000Z → 2026-03-11T22:19:00.000Z
-- [Java](https://learn.microsoft.com/en-us/azure/storage/files/storage-java-how-to-use-file-storage)
-  - Updated: 2025-04-08T22:02:00.000Z → 2026-03-11T22:19:00.000Z
-- [NFS file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-nfs-protocol)
-  - Updated: 2025-10-24T08:00:00.000Z → 2026-03-11T05:11:00.000Z
-- [Enable AD DS authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-06T23:15:00.000Z
-- [Configure Linux clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable)
-  - Updated: 2026-02-24T06:10:00.000Z → 2026-03-04T06:13:00.000Z
-- [Enable Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable)
-  - Updated: 2026-02-25T23:33:00.000Z → 2026-03-09T22:17:00.000Z
-- [Enable authentication for hybrid or cloud-only identities](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable)
-  - Updated: 2026-02-26T06:24:00.000Z → 2026-03-04T08:00:00.000Z
-- *...and 13 more*
+  - Updated: 2026-03-11T22:19:00.000Z → 2026-03-16T17:13:00.000Z
 
 ## Classified Pages
 
@@ -148,11 +107,11 @@ skill_description: Expert knowledge for Azure Files development including best p
 | [Cost estimation examples](https://learn.microsoft.com/en-us/azure/storage/files/file-estimate-cost) | decision-making | 0.75 | Walks through cost estimation scenarios with concrete usage patterns and price impacts between billing models. Provides quantified trade-offs and scenario-based recommendations. |
 | [Migrate to NFS Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nfs) | decision-making | 0.75 | Describes migration from Linux file servers to NFS Azure Files and compares fpsync vs rsync performance; includes tool comparison and scenario guidance. |
 | [Modify Azure File Sync topology](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology) | best-practices | 0.75 | Explicitly described as best practices to avoid errors and data loss when changing topology; product-specific recommendations and edge cases. |
-| [NFS performance](https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance) | best-practices | 0.75 | Provides concrete recommendations (such as nconnect mount option and other Linux mount parameters) that are specific to NFS Azure file shares; these are product-specific tuning patterns and gotchas. |
 | [Networking considerations for direct access](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview) | configuration | 0.75 | Details networking options (public/private endpoints, VPN, ExpressRoute, DNS, firewall) and recommended secure configurations; product-specific networking configuration guidance. |
 | [Overview of identity-based authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview) | security | 0.75 | Product-specific security overview listing supported identity sources (AD DS, Entra DS, Entra Kerberos) and how they apply to Azure Files; contains concrete authentication modes and scope details. |
-| [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance) | best-practices | 0.75 | Provides concrete recommendations like enabling SMB Multichannel, metadata caching, and specific client settings. These are Azure Files–specific performance best practices with configuration details. |
 | [Update password](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-update-password) | security | 0.75 | Describes how the AD principal password functions as a Kerberos key for Azure Files and how to rotate it; product-specific security/identity maintenance guidance. |
+| [NFS performance](https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance) | best-practices | 0.72 | NFS performance tuning for Azure file shares (such as using the nconnect mount option and other mount/throughput settings) is product- and platform-specific, with concrete configuration guidance for Linux clients and Azure Files. This is actionable optimization advice unique to this service, so it fits best-practices. |
+| [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance) | best-practices | 0.72 | Performance tuning guidance for SMB Azure file shares is product-specific and typically includes concrete recommendations (for example, enabling SMB Multichannel, client/OS settings, and Azure Files configuration choices) that go beyond generic knowledge. These are actionable DO/DON'T style optimizations unique to Azure Files SMB, fitting best-practices. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files) | integrations | 0.70 | Covers .NET-specific patterns and APIs for Azure Files, including SDK classes, methods, and configuration parameters unique to this integration; goes beyond generic .NET or storage usage. |
 | [Analyze metrics](https://learn.microsoft.com/en-us/azure/storage/files/analyze-files-metrics) | configuration | 0.70 | Focuses on using Azure Monitor to analyze Azure Files metrics such as availability, latency, and utilization; relies on specific metric names and usage patterns that are configuration/monitoring details unique to this service. |
 | [Azure Files FAQ](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-faq) | limits-quotas | 0.70 | Azure Files FAQ typically includes many numeric limits (max shares, file size, throughput behaviors) and edge-case behaviors. These are expert details not obvious from overviews. |

@@ -41,8 +41,8 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 129
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -61,17 +61,6 @@ skill_description: Expert knowledge for Azure Virtual WAN development including 
 | *(Unclassified)* | 38 | 29.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-virtual-hub-routing)
-  - Updated: 2024-01-10T23:11:00.000Z → 2025-09-11T17:16:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-wan/create-bgp-peering-hub-portal)
-  - Updated: 2023-10-30T08:00:00.000Z → 2025-09-11T17:16:00.000Z
-- [Manage access to resources - Spoke VNet P2S](https://learn.microsoft.com/en-us/azure/virtual-wan/manage-secure-access-resources-spoke-p2s)
-  - Updated: 2023-11-21T08:00:00.000Z → 2025-09-11T17:16:00.000Z
-- [Connect a VNet to a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub)
-  - Updated: 2025-09-15T22:11:00.000Z → 2025-12-01T23:10:00.000Z
 
 ## Classified Pages
 

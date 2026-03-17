@@ -45,10 +45,10 @@ skill_description: Expert knowledge for Azure VPN Gateway development including 
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 4
-- **Unchanged**: 113
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 120
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vpn-gateway/azure-vpn-gateway.csv`
 
 ## Classification Statistics
@@ -67,28 +67,6 @@ skill_description: Expert knowledge for Azure VPN Gateway development including 
 | *(Unclassified)* | 15 | 12.5% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-support-help)
-- [Migrate a Basic SKU public IP address to Standard](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto)
-- [Remove the Basic SKU public IP reference - Basic SKU VPN gateways](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-sku-public-ip-remove)
-
-### Updated Pages
-
-- [About gateway SKUs](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-gateway-skus)
-  - Updated: 2025-06-24T17:17:00.000Z → 2025-09-09T22:10:00.000Z
-- [About gateway SKU consolidation & migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation)
-  - Updated: 2026-02-26T06:24:00.000Z → 2026-03-06T06:17:00.000Z
-- [Upgrade a gateway SKU](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-upgrade)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-04T06:13:00.000Z
-- [About Basic SKU public IP address migration](https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-about)
-  - Updated: 2026-01-21T08:00:00.000Z → 2026-03-06T23:15:00.000Z
-
-### Deleted Pages
-
-- ~~How to migrate a Basic SKU public IP address to Standard~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/basic-public-ip-migrate-howto)
-- ~~Support and troubleshooting for VPN Gateway~~ (https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-support-help)
 
 ## Classified Pages
 

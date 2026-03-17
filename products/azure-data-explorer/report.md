@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 191
+- **Updated Pages**: 0
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -69,21 +69,6 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
 | *(Unclassified)* | 89 | 45.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage cluster locks](https://learn.microsoft.com/en-us/azure/data-explorer/manage-cluster-locks)
-  - Updated: 2023-02-27T00:00:00.000Z → 2026-03-15T22:03:00.000Z
-- [Security overview](https://learn.microsoft.com/en-us/azure/data-explorer/security)
-  - Updated: 2025-06-02T11:05:00.000Z → 2026-03-15T22:03:00.000Z
-- [Create a private endpoint](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-private-endpoint-create)
-  - Updated: 2023-11-23T17:54:00.000Z → 2026-03-15T22:03:00.000Z
-- [Migrate VNet injected cluster to private endpoints](https://learn.microsoft.com/en-us/azure/data-explorer/security-network-migrate-vnet-to-private-endpoint)
-  - Updated: 2025-03-17T17:00:00.000Z → 2026-03-15T22:03:00.000Z
-- [Enable double encryption](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-double)
-  - Updated: 2025-02-04T08:00:00.000Z → 2026-03-15T22:03:00.000Z
-- [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys)
-  - Updated: 2026-01-21T18:03:00.000Z → 2026-03-15T22:03:00.000Z
 
 ## Classified Pages
 

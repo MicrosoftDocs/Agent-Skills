@@ -35,8 +35,8 @@ skill_description: Expert knowledge for Azure Boards development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 34
-- **Unchanged**: 92
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -54,50 +54,6 @@ skill_description: Expert knowledge for Azure Boards development including troub
 | *(Unclassified)* | 91 | 72.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Plan and track work](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/plan-track-work?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Add tasks or child items as checklists](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-task-checklists?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Add features & epics](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-epics-features-stories?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Manage columns](https://learn.microsoft.com/en-us/azure/devops/boards/boards/add-columns?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Customize cards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Expedite work (swimlanes)](https://learn.microsoft.com/en-us/azure/devops/boards/boards/expedite-work?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Copy or clone work items](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/copy-clone-work-items?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Add tags for work items](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query by area or iteration](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-area-iteration-path?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query by date or current sprint](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-date-or-current-iteration?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query based on tags](https://learn.microsoft.com/en-us/azure/devops/boards/queries/add-tags-to-work-items?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query history and discussion](https://learn.microsoft.com/en-us/azure/devops/boards/queries/history-and-auditing?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query by field comparison](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-field-value?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query by a numeric field](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-numeric?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Query by links or attachments](https://learn.microsoft.com/en-us/azure/devops/boards/queries/linking-attachments?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Track dependencies](https://learn.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Set up your backlogs & boards](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Bulk modify (web)](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/bulk-modify-work-items?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- *...and 14 more*
 
 ## Classified Pages
 

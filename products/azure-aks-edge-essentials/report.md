@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 329
+- **Updated Pages**: 0
+- **Unchanged**: 332
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -68,15 +68,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service Edge Essentials
 | *(Unclassified)* | 66 | 19.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Known issues overview](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-arc-known-issues)
-  - Updated: 2025-12-17T00:31:00.000Z → 2026-03-11T17:06:00.000Z
-- [Supported Kubernetes versions](https://learn.microsoft.com/en-us/azure/aks/aksarc/supported-kubernetes-versions)
-  - Updated: 2025-10-24T22:03:00.000Z → 2026-03-11T17:06:00.000Z
-- [Enable secret encryption with the KMS plugin](https://learn.microsoft.com/en-us/azure/aks/aksarc/aks-edge-howto-secret-encryption)
-  - Updated: 2025-10-22T22:03:00.000Z → 2026-03-10T22:19:00.000Z
 
 ## Classified Pages
 

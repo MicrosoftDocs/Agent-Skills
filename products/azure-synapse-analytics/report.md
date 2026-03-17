@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 443
+- **Updated Pages**: 0
+- **Unchanged**: 446
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -67,15 +67,6 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
 | *(Unclassified)* | 184 | 41.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Synapse Apache Spark 3.4 runtime (EOSA)](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-34-runtime)
-  - Updated: 2025-12-05T18:30:00.000Z → 2026-03-09T23:18:00.000Z
-- [Computer Vision with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-computer-vision-use-mmlspark)
-  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
-- [Document Intelligence with Apache Spark (SynapseML)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-form-recognizer-use-mmlspark)
-  - Updated: 2023-07-18T17:28:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 

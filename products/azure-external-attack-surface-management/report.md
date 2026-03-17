@@ -28,8 +28,8 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 21
+- **Updated Pages**: 0
+- **Unchanged**: 22
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-external-attack-surface-management/azure-external-attack-surface-management.csv`
 
@@ -43,11 +43,6 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
 | *(Unclassified)* | 10 | 45.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview)
-  - Updated: 2024-12-10T18:02:00.000Z → 2026-03-10T22:11:00.000Z
 
 ## Classified Pages
 

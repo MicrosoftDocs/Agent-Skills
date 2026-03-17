@@ -38,8 +38,8 @@ skill_description: Expert knowledge for Azure US Government development includin
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 39
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -56,11 +56,6 @@ skill_description: Expert knowledge for Azure US Government development includin
 | *(Unclassified)* | 9 | 22.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-05T23:11:00.000Z
 
 ## Classified Pages
 

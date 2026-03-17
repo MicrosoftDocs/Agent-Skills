@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Health Data Services development i
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 217
+- **Updated Pages**: 0
+- **Unchanged**: 228
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-health-data-services/azure-health-data-services.csv`
 
@@ -65,31 +65,6 @@ skill_description: Expert knowledge for Azure Health Data Services development i
 | *(Unclassified)* | 66 | 28.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Workspace overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/workspace-overview)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [Deployment overview](https://learn.microsoft.com/en-us/azure/healthcare-apis/health-data-services-get-started)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [Azure Health Data Services quickstart](https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-quickstart)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [Deploy services programmatically](https://learn.microsoft.com/en-us/azure/healthcare-apis/deploy-healthcare-apis-using-bicep)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [Enable logging](https://learn.microsoft.com/en-us/azure/healthcare-apis/logging)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [2026](https://learn.microsoft.com/en-us/azure/healthcare-apis/release-notes-2026)
-  - Updated: 2026-02-23T23:22:00.000Z → 2026-03-13T22:12:00.000Z
-- [GitHub projects](https://learn.microsoft.com/en-us/azure/healthcare-apis/github-projects)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-02-25T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/release-notes-2026)
-  - Updated: 2026-02-04T23:15:00.000Z → 2026-03-13T22:12:00.000Z
-- [Languages supported](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/languages-supported)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-12T22:17:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/healthcare-apis/deidentification/reliability-health-data-services-deidentification)
-  - Updated: 2026-02-17T23:12:00.000Z → 2026-03-12T22:17:00.000Z
-- [US Core](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/us-core)
-  - Updated: 2025-10-31T17:21:00.000Z → 2026-03-04T23:27:00.000Z
 
 ## Classified Pages
 

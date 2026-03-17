@@ -36,8 +36,8 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 69
+- **Updated Pages**: 0
+- **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
@@ -55,15 +55,6 @@ skill_description: Expert knowledge for Azure Artifacts development including be
 | *(Unclassified)* | 10 | 13.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops)
-  - Updated: 2024-06-07T20:33:00.000Z → 2026-03-13T21:04:00.000Z
-- [Monitor storage consumption](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifact-storage?view=azure-devops)
-  - Updated: 2026-02-06T23:56:00.000Z → 2026-03-06T22:05:00.000Z
-- [Limits on package sizes and counts](https://learn.microsoft.com/en-us/azure/devops/artifacts/reference/limits?view=azure-devops)
-  - Updated: 2025-12-19T16:56:00.000Z → 2026-03-13T21:04:00.000Z
 
 ## Classified Pages
 

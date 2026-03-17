@@ -30,8 +30,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 13
+- **Updated Pages**: 0
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifact-signing/azure-artifact-signing.csv`
 
@@ -47,11 +47,6 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 | *(Unclassified)* | 5 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Sign a CI policy by using Artifact Signing](https://learn.microsoft.com/en-us/azure/artifact-signing/how-to-sign-ci-policy)
-  - Updated: 2026-01-08T18:12:00.000Z → 2026-03-10T16:12:00.000Z
 
 ## Classified Pages
 

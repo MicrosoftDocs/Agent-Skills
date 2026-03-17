@@ -48,9 +48,9 @@ skill_description: Expert knowledge for Azure Machine Learning development inclu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 603
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 624
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-machine-learning/azure-machine-learning.csv`
 
 ## Classification Statistics
@@ -69,54 +69,6 @@ skill_description: Expert knowledge for Azure Machine Learning development inclu
 | *(Unclassified)* | 142 | 22.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use a terminal](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal?view=azureml-api-2)
-  - Updated: 2026-02-05T23:08:00.000Z → 2026-03-11T08:00:00.000Z
-- [Deploy MLflow models to online endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-mlflow-models-online-endpoints?view=azureml-api-2)
-  - Updated: 2025-03-31T22:05:00.000Z → 2026-03-11T22:16:00.000Z
-- [Training with UI](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-with-ui?view=azureml-api-2)
-  - Updated: 2025-04-14T22:02:00.000Z → 2026-03-06T06:23:00.000Z
-- [Using secrets in training](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-secrets-in-runs?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-12T22:17:00.000Z
-- [Interactive development with Apache Spark](https://learn.microsoft.com/en-us/azure/machine-learning/interactive-data-wrangling-with-apache-spark-azure-ml?view=azureml-api-2)
-  - Updated: 2026-01-30T23:08:00.000Z → 2026-03-11T08:00:00.000Z
-- [Use a custom container to deploy a model to an online endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-container?view=azureml-api-2)
-  - Updated: 2025-03-31T22:05:00.000Z → 2026-03-04T08:00:00.000Z
-- [High performance serving with Triton](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-with-triton?view=azureml-api-2)
-  - Updated: 2026-01-14T23:13:00.000Z → 2026-03-06T06:23:00.000Z
-- [Secure your managed online endpoints with network isolation](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-online-endpoint?view=azureml-api-2)
-  - Updated: 2025-03-31T22:05:00.000Z → 2026-03-11T08:00:00.000Z
-- [Customize outputs in batch jobs](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-model-custom-output?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2025-12-31T23:04:00.000Z
-- [Image processing with batch model deployments](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-image-processing-batch?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2025-12-31T23:04:00.000Z
-- [Deploy pipelines with batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-pipeline-deployments?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-12T08:00:00.000Z
-- [Run batch endpoints from Azure Data Factory](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-azure-data-factory?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-10T22:24:00.000Z
-- [Azure AI Search](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-model-cognitive-search?view=azureml-api-1)
-  - Updated: 2025-06-19T17:04:00.000Z → 2026-03-05T23:08:00.000Z
-- [Azure Container Instances](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-azure-container-instance?view=azureml-api-1)
-  - Updated: 2025-07-11T17:05:00.000Z → 2026-03-06T23:10:00.000Z
-- [Debug scoring scripts with inference HTTP server](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-inference-server-http?view=azureml-api-2)
-  - Updated: 2025-03-03T23:05:00.000Z → 2026-03-12T08:00:00.000Z
-- [Monitor and analyze jobs in studio](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-track-monitor-analyze-runs?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-12T22:17:00.000Z
-- [Customize base image for compute session](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-customize-session-base-image?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-12T22:17:00.000Z
-- [Generate responsible AI insights (SDK, CLI)](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-insights-sdk-cli?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-03-12T08:00:00.000Z
-- [Plan and manage costs](https://learn.microsoft.com/en-us/azure/machine-learning/concept-plan-manage-cost?view=azureml-api-2)
-  - Updated: 2025-03-21T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Monitor Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/monitor-azure-machine-learning?view=azureml-api-2)
-  - Updated: 2025-03-06T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- *...and 1 more*
-
-### Deleted Pages
-
-- ~~Collect & evaluate model data~~ (https://learn.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection?view=azureml-api-1)
 
 ## Classified Pages
 

@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure Logic Apps development including t
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 61
-- **Unchanged**: 168
+- **Updated Pages**: 0
+- **Unchanged**: 229
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -67,50 +67,6 @@ skill_description: Expert knowledge for Azure Logic Apps development including t
 | *(Unclassified)* | 42 | 18.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [About Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Visual Studio](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-logic-apps-with-visual-studio)
-  - Updated: 2024-12-18T12:12:00.000Z → 2026-03-10T08:00:00.000Z
-- [Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-logic-apps-visual-studio-code)
-  - Updated: 2024-01-04T08:00:00.000Z → 2026-03-11T11:05:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-bicep)
-  - Updated: 2025-02-20T08:00:00.000Z → 2026-03-12T05:52:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-azure-resource-manager-template)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-logic-apps-azure-cli)
-  - Updated: 2025-02-20T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-logic-apps-azure-powershell)
-  - Updated: 2025-02-20T08:00:00.000Z → 2026-03-13T05:18:00.000Z
-- [Create Consumption approval-based workflow](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-mailing-list-subscriptions-workflow)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Create Consumption workflow with Azure Storage and Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-process-email-attachments-workflow)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-01-31T08:00:00.000Z
-- [Business rules engine integration](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/rules-engine-overview)
-  - Updated: 2025-07-18T08:00:00.000Z → 2026-03-10T22:11:00.000Z
-- [B2B integration & EDI processing](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-overview)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Estimate storage costs](https://learn.microsoft.com/en-us/azure/logic-apps/estimate-storage-costs)
-  - Updated: 2024-01-10T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Set up SQL database storage](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-sql-database-storage-standard)
-  - Updated: 2025-11-20T23:11:00.000Z → 2025-11-30T08:00:00.000Z
-- [Export Standard from portal to Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/export-standard-logic-app-to-visual-studio-code)
-  - Updated: 2025-02-20T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Add and run C# scripts](https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts)
-  - Updated: 2025-11-18T18:43:00.000Z → 2025-11-19T08:00:00.000Z
-- [Secure traffic between Standard workflows and virtual networks](https://learn.microsoft.com/en-us/azure/logic-apps/secure-single-tenant-workflow-virtual-network-private-endpoint)
-  - Updated: 2025-04-15T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Run Python code in agent workflows](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/code-interpreter-python-container-apps-session)
-  - Updated: 2025-09-28T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text)
-  - Updated: 2025-08-14T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Create chat completions with prompt templates](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/create-chat-completions-prompt-template)
-  - Updated: 2025-10-30T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Create business rules](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/create-rules)
-  - Updated: 2025-01-27T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- *...and 41 more*
 
 ## Classified Pages
 

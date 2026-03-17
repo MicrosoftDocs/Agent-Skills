@@ -46,9 +46,9 @@ skill_description: Expert knowledge for Azure Sentinel development including tro
 - **Unclassified**: 101
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 11
-- **Unchanged**: 361
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 377
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
@@ -68,39 +68,6 @@ skill_description: Expert knowledge for Azure Sentinel development including tro
 | *(Unclassified)* | 101 | 26.8% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Storage blob connectors](https://learn.microsoft.com/en-us/azure/sentinel/setup-azure-storage-connector)
-- [Azure Storage Blob data connector reference](https://learn.microsoft.com/en-us/azure/sentinel/data-connection-rules-reference-azure-storage)
-- [Enable network security for Azure Storage Blob data connector](https://learn.microsoft.com/en-us/azure/sentinel/enable-storage-network-security)
-- [Troubleshoot Azure Storage Blob connector issues](https://learn.microsoft.com/en-us/azure/sentinel/azure-storage-blob-connector-troubleshoot)
-- [ASIM asset entity schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-asset)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-05T18:25:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/ci-cd-custom-content)
-  - Updated: 2026-01-15T18:32:00.000Z → 2026-03-05T18:25:00.000Z
-- [Migrate agent to agentless connector](https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-agent-migrate)
-  - Updated: 2026-01-06T18:11:00.000Z → 2026-03-11T11:05:00.000Z
-- [Billing, limits, and availability](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-billing)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-12T05:52:00.000Z
-- [Run KQL queries](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-queries)
-  - Updated: 2025-12-10T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Run notebooks](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources)
-  - Updated: 2025-10-16T17:12:00.000Z → 2026-03-05T23:11:00.000Z
-- [ASIM schemas](https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-schemas)
-  - Updated: 2025-12-13T23:21:00.000Z → 2026-03-07T06:11:00.000Z
-- [Use ASIM](https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-parsers)
-  - Updated: 2026-01-01T12:10:00.000Z → 2026-03-06T17:59:00.000Z
-- [Data management overview](https://learn.microsoft.com/en-us/azure/sentinel/manage-data-overview)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-12T08:00:00.000Z
-- [ASIM parsers](https://learn.microsoft.com/en-us/azure/sentinel/normalization-parsers-list)
-  - Updated: 2026-01-01T18:12:00.000Z → 2026-03-12T05:52:00.000Z
 
 ## Classified Pages
 

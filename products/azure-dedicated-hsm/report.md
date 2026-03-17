@@ -32,8 +32,8 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 14
+- **Updated Pages**: 0
+- **Unchanged**: 16
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dedicated-hsm/azure-dedicated-hsm.csv`
 
@@ -49,13 +49,6 @@ skill_description: Expert knowledge for Azure Dedicated HSM development includin
 | *(Unclassified)* | 6 | 37.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitoring](https://learn.microsoft.com/en-us/azure/dedicated-hsm/monitoring)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-03-11T22:11:00.000Z
-- [Supportability](https://learn.microsoft.com/en-us/azure/dedicated-hsm/supportability)
-  - Updated: 2024-08-07T16:44:00.000Z → 2026-03-11T22:11:00.000Z
 
 ## Classified Pages
 

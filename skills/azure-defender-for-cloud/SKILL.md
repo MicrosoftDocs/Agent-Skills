@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-cloud
-description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Cloud applications. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure DDos Protection (use azure-ddos-protection), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Security (use azure-security).
+description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Defender For Cloud applications. Not for Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Cloud Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure Defender For Cloud. Covers trouble
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L84-L101 | Guidance on choosing Defender for Cloud plans, portals, deployment and migration options, cost estimation/chargeback, DCU optimization, and planning agent/recommendation transitions. |
 | Architecture & Design Patterns | L102-L112 | Architectural guidance for Defender for Servers/Containers: agentless scanning, malware/vuln detection on VMs/Kubernetes, data collection, residency, workspaces, and large-scale deployment. |
 | Limits & Quotas | L113-L123 | Limits, quotas, and prerequisites for Defender for Cloud features: free trials, data ingestion, APIs, DevOps, portal preview, alert export limits, and data collection extension changes. |
-| Security | L124-L201 | Security alerts, permissions, and hardening for Defender for Cloud: alert references by resource, RBAC/CIEM setup, data handling, policies, and remediation for SQL, storage, containers, VMs, APIs, and more. |
-| Configuration | L202-L269 | How to configure and customize Defender for Cloud features, policies, scanning, alerts, exports, exemptions, and integrations across VMs, containers, storage, SQL, DevOps, and multi-tenant environments |
-| Integrations & Coding Patterns | L270-L297 | Integrating Defender for Cloud with SIEMs, DevOps, APIs, and third‑party tools (ServiceNow, Power BI, EDR, AWS/GCP), plus ARG queries, exports, and automation patterns. |
-| Deployment | L298-L328 | Deploying and managing Defender for Cloud plans and agents (Containers, SQL, Storage, Servers) across AKS/EKS/GKE and hybrid, including CI/CD, IaC, migration, and support matrices |
+| Security | L124-L200 | Security alerts, permissions, and hardening for Defender for Cloud: alert references by resource, RBAC/CIEM setup, data handling, policies, and remediation for SQL, storage, containers, VMs, APIs, and more. |
+| Configuration | L201-L269 | How to configure and customize Defender for Cloud features: enable scans and alerts, set policies, exemptions, exports, DevOps/containers/SQL/storage settings, and cross-tenant/security posture options. |
+| Integrations & Coding Patterns | L270-L298 | Integrating Defender for Cloud with CI/CD, SIEM, EDR, ITSM, and third‑party security tools, exporting data via APIs/ARG, and automating alerts, tickets, and vulnerability workflows. |
+| Deployment | L299-L327 | Deploying and managing Defender for Cloud plans and agents (Containers, SQL, Storage, Servers) across AKS/EKS/GKE and hybrid, including CI/CD, IaC, migration, and support matrices |
 
 ### Troubleshooting
 | Topic | URL |
@@ -148,7 +148,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage cloud scopes and unified RBAC in Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/cloud-scopes-unified-rbac |
 | Use the AKS security dashboard in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/cluster-security-dashboard |
 | Understand AWS connector authentication architecture in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-authentication-architecture-aws |
-| Use Microsoft Security Private Link with Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links |
 | Use classic configuration to manage SQL vulnerability findings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-vulnerability-findings-classic |
 | Use express configuration to manage SQL vulnerability findings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-vulnerability-findings-express |
 | Permissions required for Defender for Containers on EKS and GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/containers-permissions |
@@ -209,10 +208,11 @@ This skill requires **network access** to fetch documentation content:
 | Use Defender for Cloud alert schemas for integrations | https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-schemas |
 | Configure Azure Monitor Agent for Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/auto-deploy-azure-monitoring-agent |
 | Review prerequisites for data security posture | https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-data-security-posture-prepare |
+| Configure Microsoft Security Private Link for Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links |
 | Configure Microsoft Security DevOps extension in Azure DevOps | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension |
 | Configure Microsoft Security DevOps extension in Azure DevOps | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-azure-devops-extension |
 | Configure Defender for Cloud alert email notifications | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-email-notifications |
-| Configure private endpoints for Defender for Cloud via Security Private Link | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints |
+| Set up private endpoints for Defender for Cloud via Security Private Link | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints |
 | Modify Defender for Servers coverage and plan settings | https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-servers-coverage |
 | Configure continuous export of Defender for Cloud data | https://learn.microsoft.com/en-us/azure/defender-for-cloud/continuous-export |
 | Configure continuous export with Azure Policy at scale | https://learn.microsoft.com/en-us/azure/defender-for-cloud/continuous-export-azure-policy |
@@ -280,6 +280,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Defender for Cloud continuous export via REST API | https://learn.microsoft.com/en-us/azure/defender-for-cloud/continuous-export-rest-api |
 | Automate ServiceNow tickets with governance rules | https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-governance-rule-servicenow |
 | Create and sync ServiceNow tickets from Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/create-ticket-servicenow |
+| Programmatically deploy Defender for Containers on AKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-programmatically |
 | Consume and export Defender for SQL scan results via ARG | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-scan-results |
 | Use partner API security testing with Defender | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-partner-applications |
 | Enable Defender for Endpoint integration in Defender for Cloud | https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-defender-for-endpoint |
@@ -302,8 +303,6 @@ This skill requires **network access** to fetch documentation content:
 | Enable Defender for Containers on EKS via portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-enable-portal |
 | Programmatically deploy Defender for Containers on EKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-enable-programmatically |
 | Remove Defender for Containers from EKS clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-aws-remove |
-| Enable Defender for Containers on AKS via portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-portal |
-| Programmatically deploy Defender for Containers on AKS | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-programmatically |
 | Remove Defender for Containers from AKS clusters | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-remove |
 | Enable Defender for Containers on GKE via portal | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-enable-portal |
 | Programmatically deploy Defender for Containers on GKE | https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-gcp-enable-programmatically |

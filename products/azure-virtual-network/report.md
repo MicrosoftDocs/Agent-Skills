@@ -39,10 +39,10 @@ skill_description: Expert knowledge for Azure Virtual Network development includ
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 127
-- **Deleted Pages**: 5
+- **Unchanged**: 128
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
 ## Classification Statistics
@@ -59,18 +59,6 @@ skill_description: Expert knowledge for Azure Virtual Network development includ
 | *(Unclassified)* | 74 | 57.8% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-support-help)
-
-### Deleted Pages
-
-- ~~Configure reverse lookup zones for an SMTP banner check~~ (https://learn.microsoft.com/en-us/azure/virtual-network/create-ptr-for-smtp-service)
-- ~~Diagnose a virtual machine routing problem~~ (https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-routing-problem)
-- ~~Diagnose a virtual machine network traffic filter problem~~ (https://learn.microsoft.com/en-us/azure/virtual-network/diagnose-network-traffic-filter-problem)
-- ~~Resource logging for a network security group~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log)
-- ~~Network virtual appliance issues in Azure~~ (https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-troubleshoot-nva)
 
 ## Classified Pages
 

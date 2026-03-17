@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Automation development including t
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 114
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -64,11 +64,6 @@ skill_description: Expert knowledge for Azure Automation development including t
 | *(Unclassified)* | 23 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new)
-  - Updated: 2025-08-12T08:00:00.000Z → 2026-03-10T08:00:00.000Z
 
 ## Classified Pages
 

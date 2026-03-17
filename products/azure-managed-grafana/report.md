@@ -35,10 +35,10 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 - **Unclassified**: 8
 
 ### Incremental Update
-- **New Pages**: 3
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 40
-- **Deleted Pages**: 2
+- **Unchanged**: 43
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
 ## Classification Statistics
@@ -55,17 +55,6 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
 | *(Unclassified)* | 8 | 18.6% |
 
 ## Changes
-
-### New Pages
-
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-- [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry)
-- [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12)
-
-### Deleted Pages
-
-- ~~Service reliability~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/high-availability)
-- ~~Upgrade to Grafana 11~~ (https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-11)
 
 ## Classified Pages
 

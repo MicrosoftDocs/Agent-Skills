@@ -40,8 +40,8 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 73
+- **Updated Pages**: 0
+- **Unchanged**: 75
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -59,13 +59,6 @@ skill_description: Expert knowledge for Azure DNS development including troubles
 | *(Unclassified)* | 47 | 62.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create alias records for public IP addresses](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
-  - Updated: 2023-11-30T08:00:00.000Z → 2026-03-04T06:13:00.000Z
-- [Create alias records for Traffic Manager](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm)
-  - Updated: 2024-09-19T08:00:00.000Z → 2026-03-04T06:13:00.000Z
 
 ## Classified Pages
 

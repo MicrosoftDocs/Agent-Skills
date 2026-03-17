@@ -1,9 +1,9 @@
 ---
 name: azure-container-instances
-description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Container Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when building, debugging, or optimizing Azure Container Instances applications. Not for Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Container Instances Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure Container Instances. Covers troubl
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
+> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L41 | Diagnosing ACI deployment/runtime failures by viewing container logs/events, interpreting errors, and fixing common issues with images, networking, resources, and configuration. |
-| Best Practices | L42-L46 | Guidance on designing and running ACI workloads reliably: resource sizing, networking, storage, security, scaling, image management, and operational best practices. |
-| Decision Making | L47-L52 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
-| Architecture & Design Patterns | L53-L59 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
-| Limits & Quotas | L60-L67 | ACI limits on CPU/memory (big containers), regional quota checks, standby pool constraints, and networking limits when using virtual networks |
-| Security | L68-L82 | Securing Azure Container Instances: TLS/HTTPS setup, image and secret protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and Azure Policy enforcement. |
-| Configuration | L83-L116 | Configuring ACI container groups: YAML, env vars, DNS, volumes, probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging, and monitoring. |
+| Troubleshooting | L36-L42 | Diagnosing ACI issues by viewing logs/events, understanding provisioning/runtime states, and troubleshooting common deployment, startup, and container runtime failures. |
+| Best Practices | L43-L47 | Guidance on designing and running ACI workloads reliably: resource sizing, networking, storage, security, scaling, image management, and operational best practices. |
+| Decision Making | L48-L53 | Guidance on cost-optimizing ACI with Spot containers and using prediction-based sizing to configure and right-size Azure Container Instances standby pools. |
+| Architecture & Design Patterns | L54-L60 | Design patterns for giving ACI containers static inbound/outbound IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable network egress/ingress. |
+| Limits & Quotas | L61-L68 | ACI limits on CPU/memory (big containers), regional quota checks, standby pool constraints, and networking limits when using virtual networks |
+| Security | L69-L83 | Securing Azure Container Instances: TLS/HTTPS setup, image and secret protection, managed identities, RBAC, DNS safety, ACR auth, CMK encryption, and Azure Policy enforcement. |
+| Configuration | L84-L116 | Configuring ACI container groups: YAML, env vars, DNS, volumes, probes, GPUs, restart/entrypoint, standby pools, networking, lifecycle, logging, and monitoring. |
 | Deployment | L117-L120 | Using GitHub Actions to build, push, and automatically deploy container images to Azure Container Instances, including workflow YAML setup and authentication configuration. |
 
 ### Troubleshooting
@@ -38,6 +38,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Retrieve Azure Container Instances logs and events for troubleshooting | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-get-logs |
 | Troubleshoot common deployment and runtime issues in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-troubleshooting |
+| Interpret Azure Container Instances provisioning and runtime states | https://learn.microsoft.com/en-us/azure/container-instances/container-state |
 
 ### Best Practices
 | Topic | URL |
@@ -108,7 +109,6 @@ This skill requires **network access** to fetch documentation content:
 | Mount Azure Files volumes in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files |
 | Use emptyDir volumes to share data in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-emptydir |
 | Mount gitRepo volumes in Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/container-instances-volume-gitrepo |
-| Understand Azure Container Instances provisioning and runtime states | https://learn.microsoft.com/en-us/azure/container-instances/container-state |
 | Configure monitoring and alerts for Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances |
 | Configure monitoring and alerts for Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances |
 | Monitoring data reference for Azure Container Instances | https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances-reference |

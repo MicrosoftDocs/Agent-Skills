@@ -40,9 +40,9 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 - **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 50
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
@@ -60,15 +60,6 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
 | *(Unclassified)* | 18 | 34.6% |
 
 ## Changes
-
-### New Pages
-
-- [Change tier for seismic workloads](https://learn.microsoft.com/en-us/azure/energy-data-services/tutorial-seismic-change-tier)
-
-### Updated Pages
-
-- [Deploy Geospatial Consumption Zone (GCZ)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-deploy-gcz)
-  - Updated: 2024-11-20T18:03:00.000Z → 2026-03-16T11:10:00.000Z
 
 ## Classified Pages
 

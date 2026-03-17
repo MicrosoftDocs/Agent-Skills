@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure NetApp Files development including
 - **Unclassified**: 70
 
 ### Incremental Update
-- **New Pages**: 12
-- **Updated Pages**: 7
-- **Unchanged**: 208
-- **Deleted Pages**: 9
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 227
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-netapp-files/azure-netapp-files.csv`
 
 ## Classification Statistics
@@ -68,50 +68,6 @@ skill_description: Expert knowledge for Azure NetApp Files development including
 | *(Unclassified)* | 70 | 30.8% |
 
 ## Changes
-
-### New Pages
-
-- [Understand Azure NetApp Files snapshot-based data protection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-introduction)
-- [Understand Azure NetApp Files replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/replication)
-- [Requirements and considerations for Azure NetApp Files replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/replication-requirements)
-- [Requirements and considerations for Azure NetApp Files cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-requirements)
-- [Understand resizing guidelines for Azure NetApp Files cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-volumes-resize-guidelines)
-- [Understand Azure NetApp Files advanced ransomware protection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/advanced-ransomware-protection)
-- [Requirements and considerations for Azure NetApp Files advanced ransomware protection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/ransomware-protection-requirements)
-- [Create cross-region replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-create-peering)
-- [Create cross-zone-region replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-zone-region-replication-configure)
-- [Enable cross-subscription replication](https://learn.microsoft.com/en-us/azure/azure-netapp-files/enable-cross-subscription-replication)
-- [Manage cache volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-cache-volumes)
-- [Manage advanced ransomware protection](https://learn.microsoft.com/en-us/azure/azure-netapp-files/ransomware-configure)
-
-### Updated Pages
-
-- [Create an NFS volume](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-create-volumes)
-  - Updated: 2025-12-12T18:11:00.000Z → 2026-02-05T08:00:00.000Z
-- [Understand data protection and disaster recovery options](https://learn.microsoft.com/en-us/azure/azure-netapp-files/data-protection-disaster-recovery-options)
-  - Updated: 2025-08-28T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Understand Object REST API](https://learn.microsoft.com/en-us/azure/azure-netapp-files/object-rest-api-introduction)
-  - Updated: 2025-10-14T11:20:00.000Z → 2026-03-11T11:05:00.000Z
-- [Migrating data into Azure NetApp Files](https://learn.microsoft.com/en-us/azure/azure-netapp-files/migrate-data)
-  - Updated: 2026-01-20T06:09:00.000Z → 2026-01-20T08:00:00.000Z
-- [Requirements and considerations for large volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/large-volumes-requirements-considerations)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-09T17:11:00.000Z
-- [SMB FAQs](https://learn.microsoft.com/en-us/azure/azure-netapp-files/faq-smb)
-  - Updated: 2025-12-08T08:00:00.000Z → 2026-03-09T17:11:00.000Z
-- [Create a short-term clone](https://learn.microsoft.com/en-us/azure/azure-netapp-files/create-short-term-clone)
-  - Updated: 2026-01-08T06:12:00.000Z → 2026-01-08T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Understand advanced ransomware protection~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/advanced-ransomware-protection)
-- ~~Understand resizing guidelines for cache volumes~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/cache-volumes-resize-guidelines)
-- ~~Configure cache volumes~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/configure-cache-volumes)
-- ~~Create volume replication~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-create-peering)
-- ~~Configure cross-zone-region replication~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-zone-region-replication-configure)
-- ~~Configure ransomware protection~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/ransomware-configure)
-- ~~Replication in Azure NetApp Files~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/replication)
-- ~~Replication requirements and considerations~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/replication-requirements)
-- ~~How Azure NetApp Files snapshots work~~ (https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-introduction)
 
 ## Classified Pages
 

@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure IoT Edge development including tro
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 88
+- **Updated Pages**: 0
+- **Unchanged**: 98
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -68,29 +68,6 @@ skill_description: Expert knowledge for Azure IoT Edge development including tro
 | *(Unclassified)* | 34 | 34.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [VM on a DMZ](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-iot-edge-for-linux-on-windows-iiot-dmz)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [Create test certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates)
-  - Updated: 2025-06-06T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Filter data with Azure Functions](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-function)
-  - Updated: 2025-06-04T22:03:00.000Z → 2026-03-04T08:00:00.000Z
-- [Deploy a Stream Analytics module](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-stream-analytics)
-  - Updated: 2026-02-25T08:00:00.000Z → 2026-03-05T08:00:00.000Z
-- [Classify images with Custom Vision](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision)
-  - Updated: 2025-05-07T05:16:00.000Z → 2026-03-05T08:00:00.000Z
-- [IoT Edge agent and hub properties](https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-03-04T08:00:00.000Z
-- [Create an IoT Edge device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-iot-edge-device)
-  - Updated: 2025-05-09T05:16:00.000Z → 2026-03-05T23:11:00.000Z
-- [Understand and use createOptions](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-use-create-options)
-  - Updated: 2025-05-09T22:02:00.000Z → 2026-03-05T23:11:00.000Z
 
 ## Classified Pages
 

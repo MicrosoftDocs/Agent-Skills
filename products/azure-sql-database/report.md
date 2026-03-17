@@ -47,10 +47,10 @@ skill_description: Expert knowledge for Azure SQL Database development including
 - **Unclassified**: 114
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 350
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 359
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
@@ -69,33 +69,6 @@ skill_description: Expert knowledge for Azure SQL Database development including
 | *(Unclassified)* | 114 | 31.8% |
 
 ## Changes
-
-### New Pages
-
-- [Troubleshoot geo-replication redo lag](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
-
-### Updated Pages
-
-- [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql)
-  - Updated: 2025-09-25T08:00:00.000Z → 2026-03-06T08:00:00.000Z
-- [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Service principals (Applications)](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-03-03T08:00:00.000Z
-- [Managed identity](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?view=azuresql)
-  - Updated: 2025-12-02T23:34:00.000Z → 2026-03-05T08:00:00.000Z
-- [Analyze audit logs and reports](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-analyze-audit-logs?view=azuresql)
-  - Updated: 2025-07-09T08:00:00.000Z → 2026-03-04T23:36:00.000Z
-- [Best practices for Data Sync](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-best-practices?view=azuresql)
-  - Updated: 2024-09-23T08:00:00.000Z → 2026-03-13T17:37:00.000Z
-- [IP-based firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql)
-  - Updated: 2025-07-30T22:40:00.000Z → 2026-03-03T08:00:00.000Z
-- [Known issues with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-known-issues?view=azuresql)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-10T22:39:00.000Z
-
-### Deleted Pages
-
-- ~~Troubleshoot geo-replication lag~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-geo-replication-redo?view=azuresql)
 
 ## Classified Pages
 

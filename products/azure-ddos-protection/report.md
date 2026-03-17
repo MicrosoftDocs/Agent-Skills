@@ -35,8 +35,8 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 22
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -53,31 +53,6 @@ skill_description: Expert knowledge for Azure DDos Protection development includ
 | *(Unclassified)* | 7 | 21.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection)
-  - Updated: 2025-03-26T17:06:00.000Z → 2026-01-26T08:00:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T23:11:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-cli)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-bicep)
-  - Updated: 2025-03-26T17:06:00.000Z → 2026-03-05T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-template)
-  - Updated: 2025-03-26T17:06:00.000Z → 2026-03-05T08:00:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-portal)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T23:11:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-powershell-ip)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-cli)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-01-26T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-ip-protection-template)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
-- [Switch tiers](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-switch-ddos-protection-tier)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
-- [Fundamental best practices](https://learn.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices)
-  - Updated: 2025-10-13T08:00:00.000Z → 2026-03-06T17:59:00.000Z
 
 ## Classified Pages
 

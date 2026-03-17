@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   security: 'Securing AKS clusters: identity and access (Entra, RBAC, workload identity),
     network and API protection, encryption and keys, node hardening, policies, PCI
@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 - **Unclassified**: 129
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 17
-- **Unchanged**: 556
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 573
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -70,46 +70,10 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 
 ## Changes
 
-### New Pages
-
-- [Configure node bin packing scheduler profile](https://learn.microsoft.com/en-us/azure/aks/configure-node-binpack-scheduler)
-
 ### Updated Pages
 
-- [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli)
-  - Updated: 2025-08-19T08:00:00.000Z → 2026-03-13T22:09:00.000Z
-- [Connect securely to cluster nodes](https://learn.microsoft.com/en-us/azure/aks/node-access)
-  - Updated: 2025-11-07T23:08:00.000Z → 2026-03-04T23:10:00.000Z
-- [Node Problem Detector (NPD)](https://learn.microsoft.com/en-us/azure/aks/node-problem-detector)
-  - Updated: 2025-09-25T22:09:00.000Z → 2026-03-10T22:16:00.000Z
-- [Access a private API Server VNet Integration cluster from another virtual network](https://learn.microsoft.com/en-us/azure/aks/private-apiserver-vnet-integration-cluster)
-  - Updated: 2025-05-22T05:16:00.000Z → 2026-03-11T22:11:00.000Z
-- [Use Flatcar Container Linux for AKS](https://learn.microsoft.com/en-us/azure/aks/flatcar-container-linux-for-aks)
-  - Updated: 2025-11-10T18:12:00.000Z → 2026-03-10T22:16:00.000Z
-- [Upgrade node OS images](https://learn.microsoft.com/en-us/azure/aks/upgrade-node-image)
-  - Updated: 2025-12-23T23:05:00.000Z → 2026-03-06T23:12:00.000Z
-- [Automatically upgrade an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster)
-  - Updated: 2025-12-23T06:02:00.000Z → 2026-03-09T08:00:00.000Z
-- [Configure Static Egress Gateway](https://learn.microsoft.com/en-us/azure/aks/configure-static-egress-gateway)
-  - Updated: 2026-01-05T18:07:00.000Z → 2026-03-10T17:04:00.000Z
-- [Update Azure CNI IPAM and dataplane](https://learn.microsoft.com/en-us/azure/aks/update-azure-cni)
-  - Updated: 2025-12-04T06:03:00.000Z → 2026-03-12T22:15:00.000Z
-- [Upgrade AKS IPAM and dataplane](https://learn.microsoft.com/en-us/azure/aks/update-azure-cni)
-  - Updated: 2025-12-04T06:03:00.000Z → 2026-03-12T22:15:00.000Z
-- [Stop and start an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/start-stop-cluster)
-  - Updated: 2024-08-01T20:29:00.000Z → 2026-03-04T08:00:00.000Z
-- [GPU health checking with NPD](https://learn.microsoft.com/en-us/azure/aks/gpu-health-monitoring)
-  - Updated: 2025-12-02T18:10:00.000Z → 2026-03-10T22:16:00.000Z
-- [Security Bulletins](https://learn.microsoft.com/en-us/azure/aks/security-bulletins/overview)
-  - Updated: 2025-11-13T20:04:00.000Z → 2026-03-06T23:12:00.000Z
-- [Control cluster order for resource placement](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-staged-update-run)
-  - Updated: 2026-01-07T06:02:00.000Z → 2026-03-16T08:00:00.000Z
-- [Understanding placement status](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/howto-understand-placement)
-  - Updated: 2025-07-12T05:03:00.000Z → 2026-03-06T06:07:00.000Z
-- [Preview API lifecycle](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-preview-api-lifecycle)
-  - Updated: 2025-09-03T05:07:00.000Z → 2026-03-09T08:00:00.000Z
-- [Defining a placement rollout strategy](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-rollout-strategy)
-  - Updated: 2026-01-06T12:02:00.000Z → 2026-03-06T06:07:00.000Z
+- [From a code repository](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-from-code)
+  - Updated: 2025-10-10T08:00:00.000Z → 2026-01-29T23:06:00.000Z
 
 ## Classified Pages
 
@@ -590,7 +554,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 | [Deploy Open-WebSearch MCP Server on AKS](https://learn.microsoft.com/en-us/azure/aks/openwebsearch-on-aks) | 0.40 | End-to-end deployment walkthrough for Open-WebSearch MCP on AKS; primarily procedural without configuration tables, limits, or product-specific decision matrices. |
 | [Fleet and Arc integration](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-fleet-arc-integration) | 0.40 | Conceptual overview of Arc integration; likely descriptive without detailed config parameter tables or numeric constraints. |
 | [Fleet hub cluster overview](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-lifecycle) | 0.40 | Hub cluster overview; mostly conceptual description of lifecycle and role, not detailed decision matrices or config tables. |
-| [From a code repository](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-from-code) | 0.40 | Quickstart for automated deployments from code to AKS Automatic; describes workflow and GitHub Actions usage, not detailed configuration matrices. |
 | [Inside a managed virtual network](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-managed-network) | 0.40 | Quickstart for AKS Automatic cluster creation; marketing-style description plus basic deployment steps, not deep expert configuration. |
 | [Intelligent resource placement using cluster properties](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/intelligent-resource-placement) | 0.40 | High-level article on intelligent resource placement and scenarios; primarily conceptual and workflow-oriented without detailed config tables, limits, or error mappings. |
 | [Monitor GPU metrics](https://learn.microsoft.com/en-us/azure/aks/monitor-gpu-metrics) | 0.40 | Conceptual overview of GPU metrics and observability; likely describes metric types but not detailed configuration tables or limits. |
@@ -683,6 +646,7 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 | [Compare AKS Standard and AKS Automatic](https://learn.microsoft.com/en-us/azure/aks/intro-aks-automatic) | 0.20 | Introduction to AKS Automatic; focuses on benefits and positioning rather than detailed configuration, limits, or troubleshooting. |
 | [Concepts](https://learn.microsoft.com/en-us/azure/aks/concepts-machine-learning-ops) | 0.20 | Conceptual overview of MLOps; lacks product-specific parameters, limits, or detailed configurations. |
 | [Defining a placement rollout strategy](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-rollout-strategy) | 0.20 | Appears to be conceptual guidance on rollout strategy and service interruption scenarios without clear evidence of numeric limits, configuration tables, or concrete product-specific parameters; more of an architectural/conceptual description than expert configuration or limits. |
+| [From a code repository](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-from-code) | 0.20 | Quickstart/tutorial for deploying from code to AKS Automatic using automated deployments and GitHub Actions. It appears to be a step-by-step guide without detailed configuration tables, limits, error-code mappings, or product-specific decision matrices. No strong evidence of expert-only details such as quotas, RBAC role tables, or advanced configuration parameters. |
 | [Migration and modernization solutions for Windows containers on AKS](https://learn.microsoft.com/en-us/azure/aks/windows-aks-migration-modernization-solutions) | 0.20 | Partner migration walkthrough overview; no concrete limits, configs, or error mappings in summary. |
 | [Monitor kube-audit events](https://learn.microsoft.com/en-us/azure/aks/monitor-aks) | 0.20 | Duplicate of index 1; high-level monitoring overview without clear evidence of detailed configuration or limits in the summary. |
 | [Monitoring concepts and resources](https://learn.microsoft.com/en-us/azure/aks/monitor-aks) | 0.20 | High-level monitoring overview and integrations; summary does not indicate specific config tables, limits, or error mappings. |

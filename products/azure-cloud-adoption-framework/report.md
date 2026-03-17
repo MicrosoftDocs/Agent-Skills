@@ -45,10 +45,10 @@ skill_description: Expert guidance for planning and executing cloud adoption usi
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 52
-- **Unchanged**: 389
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 445
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-adoption-framework/azure-cloud-adoption-framework.csv`
 
 ## Classification Statistics
@@ -67,63 +67,6 @@ skill_description: Expert guidance for planning and executing cloud adoption usi
 | *(Unclassified)* | 12 | 2.7% |
 
 ## Changes
-
-### New Pages
-
-- [Data](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform)
-- [General AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
-- [AI agents](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/)
-- [Cloud-scale analytics (deprecated)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/)
-
-### Updated Pages
-
-- [4. Optimize workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/optimize-after-cloud-modernization)
-  - Updated: 2025-08-15T08:00:00.000Z → 2026-03-09T23:03:00.000Z
-- [Connectivity to Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/connectivity-to-azure)
-  - Updated: 2026-02-10T21:02:00.000Z → 2026-03-13T08:00:00.000Z
-- [Define your plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/plan)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T00:44:00.000Z
-- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/)
-  - Updated: 2024-03-07T17:59:00.000Z → 2026-03-11T18:02:00.000Z
-- [Data architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/data-architecture-plan)
-  - Updated: 2025-12-16T21:02:00.000Z → 2026-03-10T22:09:00.000Z
-- [Enterprise enrollment](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-enterprise-enrollment-and-azure-ad-tenants)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T01:58:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-network-topology-and-connectivity)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T00:44:00.000Z
-- [Resource organization](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-resource-organization)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T01:58:00.000Z
-- [Operations baseline](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-management-and-monitoring)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T01:58:00.000Z
-- [Business continuity and disaster recovery](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/eslz-business-continuity-and-disaster-recovery)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T01:58:00.000Z
-- [Data governance processes](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-components)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T00:44:00.000Z
-- [Data catalog](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-data-catalog)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T00:44:00.000Z
-- [Data lineage](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lineage)
-  - Updated: 2025-07-02T22:04:00.000Z → 2026-03-11T01:58:00.000Z
-- [Master data management](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-master-data)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T00:44:00.000Z
-- [Data quality](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-data-quality)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T00:44:00.000Z
-- [Data lifecycle](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-lifecycle)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T01:58:00.000Z
-- [Metadata](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/govern-metadata-standards)
-  - Updated: 2024-11-27T08:00:00.000Z → 2026-03-11T00:44:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/secure)
-  - Updated: 2024-10-18T17:00:00.000Z → 2026-03-11T01:58:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/organize)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T00:44:00.000Z
-- [Teams](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/organize-roles-teams)
-  - Updated: 2024-12-10T18:01:00.000Z → 2026-03-11T00:44:00.000Z
-- *...and 32 more*
-
-### Deleted Pages
-
-- ~~Agents~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/)
-- ~~AI~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
-- ~~Cloud-scale analytics~~ (https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/)
 
 ## Classified Pages
 

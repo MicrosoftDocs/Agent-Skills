@@ -45,9 +45,9 @@ skill_description: Expert knowledge for Azure ExpressRoute development including
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 26
-- **Unchanged**: 67
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -67,55 +67,6 @@ skill_description: Expert knowledge for Azure ExpressRoute development including
 | *(Unclassified)* | 20 | 21.1% |
 
 ## Changes
-
-### New Pages
-
-- [Change circuit from classic to Resource Manager](https://learn.microsoft.com/en-us/previous-versions/azure/expressroute/expressroute-howto-move-arm)
-- [Support and troubleshooting for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-support-help)
-
-### Updated Pages
-
-- [Network Insights](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-network-insights)
-  - Updated: 2023-06-30T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [View and configure maintenance alerts](https://learn.microsoft.com/en-us/azure/expressroute/maintenance-alerts)
-  - Updated: 2023-06-30T08:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Configure custom alerts to monitor advertised routes](https://learn.microsoft.com/en-us/azure/expressroute/how-to-custom-route-alert)
-  - Updated: 2023-12-28T08:00:00.000Z → 2026-03-12T17:12:00.000Z
-- [Guidance](https://learn.microsoft.com/en-us/azure/expressroute/planned-maintenance)
-  - Updated: 2023-05-14T11:20:00.000Z → 2026-03-11T08:00:00.000Z
-- [Router configuration samples for NAT](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-config-samples-nat)
-  - Updated: 2023-12-29T05:37:00.000Z → 2026-03-11T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-04T06:13:00.000Z
-- [Rate limit for ExpressRoute Direct circuit](https://learn.microsoft.com/en-us/azure/expressroute/rate-limit)
-  - Updated: 2024-03-22T05:44:00.000Z → 2026-03-12T08:00:00.000Z
-- [Configure Traffic Collector](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-traffic-collector)
-  - Updated: 2024-06-19T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Design VPN as private peering backup](https://learn.microsoft.com/en-us/azure/expressroute/use-s2s-vpn-as-backup-for-expressroute-privatepeering)
-  - Updated: 2024-04-15T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Configure a site-to-site VPN over Microsoft peering](https://learn.microsoft.com/en-us/azure/expressroute/site-to-site-vpn-over-microsoft-peering)
-  - Updated: 2024-03-31T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Configure IPsec transport mode for Windows hosts](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-ipsec-transport-private-windows)
-  - Updated: 2023-06-30T08:00:00.000Z → 2026-03-12T05:52:00.000Z
-- [Rate limit for service provider ports](https://learn.microsoft.com/en-us/azure/expressroute/provider-rate-limit)
-  - Updated: 2024-03-01T23:08:00.000Z → 2026-03-12T08:00:00.000Z
-- [BFD over ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-12T08:00:00.000Z
-- [NAT for ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-nat)
-  - Updated: 2024-06-20T17:04:00.000Z → 2026-03-12T08:00:00.000Z
-- [What is ExpressRoute?](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
-  - Updated: 2025-11-10T23:18:00.000Z → 2026-03-03T08:00:00.000Z
-- [Connect Azure to public cloud](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connect-azure-to-public-cloud)
-  - Updated: 2023-06-30T22:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Providers by location](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-locations-providers)
-  - Updated: 2026-02-10T06:10:00.000Z → 2026-03-11T22:19:00.000Z
-- [Create an ExpressRoute circuit - Bicep](https://learn.microsoft.com/en-us/azure/expressroute/quickstart-create-expressroute-vnet-bicep)
-  - Updated: 2023-06-30T22:00:00.000Z → 2026-03-11T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-arm)
-  - Updated: 2024-04-24T22:09:00.000Z → 2026-03-12T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/expressroute/howto-routing-cli)
-  - Updated: 2024-04-24T22:09:00.000Z → 2026-03-12T08:00:00.000Z
-- *...and 6 more*
 
 ## Classified Pages
 

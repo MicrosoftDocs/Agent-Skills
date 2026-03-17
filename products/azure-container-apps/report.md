@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 - **Unclassified**: 71
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 192
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 204
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-apps/azure-container-apps.csv`
 
@@ -69,35 +69,6 @@ skill_description: Expert knowledge for Azure Container Apps development includi
 | *(Unclassified)* | 71 | 34.8% |
 
 ## Changes
-
-### New Pages
-
-- [Use Azure Front Door and Private Link](https://learn.microsoft.com/en-us/azure/container-apps/front-door-custom-virtual-network-private-link)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/container-apps/ai-integration)
-  - Updated: 2025-10-13T22:14:00.000Z → 2026-03-04T23:27:00.000Z
-- [Usage](https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage)
-  - Updated: 2026-02-24T23:11:00.000Z → 2026-03-13T22:12:00.000Z
-- [Session pools](https://learn.microsoft.com/en-us/azure/container-apps/session-pool)
-  - Updated: 2025-04-07T22:02:00.000Z → 2026-03-12T22:17:00.000Z
-- [Code interpreter sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter)
-  - Updated: 2026-02-20T18:12:00.000Z → 2026-03-13T22:12:00.000Z
-- [Custom container sessions](https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container)
-  - Updated: 2025-04-07T22:02:00.000Z → 2026-03-13T22:12:00.000Z
-- [Private endpoints and DNS](https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns)
-  - Updated: 2026-01-13T18:33:00.000Z → 2026-03-06T17:59:00.000Z
-- [Python code interpreter with MCP](https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-python-mcp)
-  - Updated: 2026-02-27T06:11:00.000Z → 2026-03-13T22:12:00.000Z
-- [Azure Pipelines](https://learn.microsoft.com/en-us/azure/container-apps/azure-pipelines)
-  - Updated: 2024-10-20T08:00:00.000Z → 2026-03-12T22:17:00.000Z
-- [KEDA scaling mappings reference](https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings)
-  - Updated: 2026-01-20T23:26:00.000Z → 2026-03-12T05:52:00.000Z
-- [Google](https://learn.microsoft.com/en-us/azure/container-apps/authentication-google)
-  - Updated: 2022-05-24T12:53:00.000Z → 2024-11-19T23:02:00.000Z
-- [Integrate with Azure Front Door](https://learn.microsoft.com/en-us/azure/container-apps/how-to-integrate-with-azure-front-door)
-  - Updated: 2025-09-30T22:16:00.000Z → 2026-03-04T12:31:00.000Z
 
 ## Classified Pages
 

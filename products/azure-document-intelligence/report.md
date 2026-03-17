@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 75
+- **Updated Pages**: 0
+- **Unchanged**: 76
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-document-intelligence/azure-document-intelligence.csv`
 
@@ -65,11 +65,6 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
 | *(Unclassified)* | 41 | 53.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new?view=doc-intel-4.0.0)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-03-13T22:11:00.000Z
 
 ## Classified Pages
 

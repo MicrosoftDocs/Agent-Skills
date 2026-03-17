@@ -46,9 +46,9 @@ skill_description: Expert knowledge for Azure Local development including troubl
 - **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 11
-- **Unchanged**: 302
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 320
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-local/azure-local.csv`
 
@@ -68,41 +68,6 @@ skill_description: Expert knowledge for Azure Local development including troubl
 | *(Unclassified)* | 73 | 22.8% |
 
 ## Changes
-
-### New Pages
-
-- [About private endpoint scenarios](https://learn.microsoft.com/en-us/azure/azure-local/deploy/about-private-endpoints?view=azloc-2602)
-- [Private endpoints - no proxy, no gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-private-endpoints-no-proxy-no-gateway?view=azloc-2602)
-- [Private endpoints - no proxy, with gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-private-endpoints-no-proxy-with-gateway?view=azloc-2602)
-- [Private endpoints - with proxy, no gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-private-endpoints-with-proxy-no-gateway?view=azloc-2602)
-- [Private endpoints - with proxy, with gateway](https://learn.microsoft.com/en-us/azure/azure-local/deploy/deploy-private-endpoints-with-proxy-with-gateway?view=azloc-2602)
-- [Connect to Azure Local VMs via serial console](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-serial-console?view=azloc-2602)
-- [Create and restore data disk snapshots](https://learn.microsoft.com/en-us/azure/azure-local/multi-rack/multi-rack-disk-snapshot?view=azloc-2602)
-
-### Updated Pages
-
-- [Update via PowerShell](https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-2602)
-  - Updated: 2026-01-22T23:03:00.000Z → 2026-03-04T08:00:00.000Z
-- [Update via PowerShell with limited connectivity](https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2602)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-13T22:03:00.000Z
-- [What's new in Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2602)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-11T17:06:00.000Z
-- [Release information](https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2602)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-03-06T08:00:00.000Z
-- [Complete prerequisites](https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-vmware-prerequisites?view=azloc-2602)
-  - Updated: 2025-12-23T23:03:00.000Z → 2026-03-12T22:05:00.000Z
-- [What's new in Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/previous-releases/whats-new-24?view=azloc-2602)
-  - Updated: 2026-02-18T23:03:00.000Z → 2026-03-11T17:06:00.000Z
-- [Known issues](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-known-issues?view=azloc-2602)
-  - Updated: 2026-02-23T23:04:00.000Z → 2026-03-04T18:05:00.000Z
-- [Register disconnected operations](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-registration?view=azloc-2602)
-  - Updated: 2026-02-23T23:04:00.000Z → 2026-03-04T18:05:00.000Z
-- [Azure Local VMs](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-arc-vm?view=azloc-2602)
-  - Updated: 2026-02-23T23:04:00.000Z → 2026-03-09T08:00:00.000Z
-- [On-demand log collection](https://learn.microsoft.com/en-us/azure/azure-local/manage/disconnected-operations-on-demand-logs?view=azloc-2602)
-  - Updated: 2026-02-23T23:04:00.000Z → 2026-03-09T17:02:00.000Z
-- [Manage security post upgrade](https://learn.microsoft.com/en-us/azure/azure-local/manage/manage-security-post-upgrade?view=azloc-2602)
-  - Updated: 2025-12-23T23:03:00.000Z → 2026-03-12T22:05:00.000Z
 
 ## Classified Pages
 
