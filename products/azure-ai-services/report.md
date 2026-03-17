@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-17'
 category_descriptions:
   security: 'Securing Azure AI/Foundry: auth (Entra, keys, Key Vault), encryption
     (CMK, data-at-rest), DLP for outbound calls, VNet rules, policy-based governance,
     and secure analyzer access.'
   limits-quotas: 'Rate limits, quotas, and scaling for Foundry and Content Moderator/Understanding:
     autoscale strategies, image/term list limits, and how to stay within service quotas.'
-  deployment: How to package and run Foundry tools/containers on Azure (ACI, Docker
-    Compose, disconnected), and deploy Foundry resources using Azure AI containers
-    and ARM templates
+  deployment: Deploying Foundry Tools/containers to Azure (ACI, Docker Compose, disconnected),
+    mapping Content Understanding model deployments, and automating setup with ARM
+    templates
   configuration: Configuring Foundry endpoints, credentials, containers, logging,
     and Content Understanding analyzers (classification, layout, audiovisual), routing,
     outputs, and resource recovery/purge.
@@ -24,14 +24,16 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Content Understanding issues, including
     model errors, data ingestion problems, configuration mistakes, and troubleshooting
     steps for failed analyses.
-skill_description: Expert knowledge for Azure AI services development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building, debugging, or optimizing Azure
-  AI services applications. Not for Azure AI Vision (use azure-ai-vision), Azure AI
-  Anomaly Detector (use azure-anomaly-detector), Azure AI Search (use azure-cognitive-search),
-  Azure Machine Learning (use azure-machine-learning).
+skill_description: Provides expert guidance on Microsoft Foundry Tools (aka Azure
+  AI services, Azure Cognitive Services) and Azure AI Content Understanding across
+  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use this skill when designing or
+  tuning Content Understanding workflows, configuring and securing Foundry endpoints
+  and analyzers, integrating via REST/.NET, planning capacity and costs, or deploying
+  Foundry containers and models in Azure. Not for general Azure AI Studio, OpenAI,
+  or non-Foundry document processing services.
 ---
-# Azure AI services Crawl Report
+# Microsoft Foundry Tools Crawl Report
 
 ## Summary
 
@@ -43,8 +45,8 @@ skill_description: Expert knowledge for Azure AI services development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 84
+- **Updated Pages**: 1
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-services/azure-ai-services.csv`
 
@@ -53,9 +55,9 @@ skill_description: Expert knowledge for Azure AI services development including 
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 2 | 2.4% |
-| configuration | 15 | 17.9% |
+| configuration | 14 | 16.7% |
 | decision-making | 6 | 7.1% |
-| deployment | 5 | 6.0% |
+| deployment | 6 | 7.1% |
 | integrations | 6 | 7.1% |
 | limits-quotas | 4 | 4.8% |
 | security | 12 | 14.3% |
@@ -63,6 +65,11 @@ skill_description: Expert knowledge for Azure AI services development including 
 | *(Unclassified)* | 33 | 39.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments)
+  - Updated: 2026-01-31T06:05:00.000Z → 2026-03-17T06:03:00.000Z
 
 ## Classified Pages
 
@@ -81,7 +88,6 @@ skill_description: Expert knowledge for Azure AI services development including 
 | [Configure data loss prevention](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-data-loss-prevention) | security | 0.80 | Explains how to configure allowed outbound URLs for Foundry resources; involves specific settings and enforcement behavior. |
 | [Content Moderator REST API](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/api-reference) | integrations | 0.80 | API reference pages list endpoints, parameters, and constraints unique to the service, which are expert integration details not inferable from general training. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/ai-services/disable-local-auth) | security | 0.80 | Explains how to disable local authentication and enforce Entra ID; involves specific portal/ARM settings and security behavior. |
-| [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments) | configuration | 0.80 | Explains requirements and options for specifying model and deployment info, including product-specific configuration fields and constraints. |
 | [Markdown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/markdown) | configuration | 0.80 | Describes how each document element is represented in Markdown, effectively a structured mapping of output schema—product-specific configuration/format knowledge. |
 | [Markdown](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/markdown) | configuration | 0.80 | Details how each audiovisual element is represented in Markdown, a product-specific output schema mapping. |
 | [Migration from CU Preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/migration-preview-to-ga) | decision-making | 0.80 | Migration guide details API changes and best practices, helping decide how and when to update implementations and handle breaking changes. |
@@ -112,6 +118,7 @@ skill_description: Expert knowledge for Azure AI services development including 
 | [Check text against custom terms](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/term-lists-quickstart-dotnet) | integrations | 0.65 | Quickstart includes concrete C# SDK usage patterns and API parameters specific to Content Moderator term lists, which are product-specific integration details beyond generic LLM knowledge. |
 | [Elements](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/elements) | configuration | 0.65 | Document analysis elements article likely details schema fields and configuration options for layout and extraction, which are configuration specifics. |
 | [Foundry Tools containers overview](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support) | deployment | 0.65 | On-premises container usage typically includes image names, required environment variables, and runtime constraints, which are deployment-specific. |
+| [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments) | deployment | 0.65 | Describes how Content Understanding maps analyzer models to Foundry deployments, including default vs request-level overrides and capacity consolidation behavior. This is product-specific deployment behavior and billing interaction that an LLM is unlikely to know from training, and it directly informs how to structure and select deployments for production use. |
 | [Check video content](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/video-moderation-api) | integrations | 0.60 | Provides concrete SDK usage patterns and parameters for video moderation, which are product-specific integration details. |
 | [Create a Foundry resource using an ARM template](https://learn.microsoft.com/en-us/azure/ai-services/create-account-resource-manager-template) | deployment | 0.60 | ARM-template-based creation of Foundry resources typically includes resource types, API versions, and required properties that are product-specific deployment details. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | troubleshooting | 0.60 | FAQ for a technical service typically includes specific behaviors, constraints, and resolutions for common issues, aligning with troubleshooting-style expert knowledge. |

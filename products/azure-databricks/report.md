@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure Databricks development including t
 - **Unclassified**: 1662
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 153
-- **Unchanged**: 4243
-- **Deleted Pages**: 10
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 4407
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-databricks/azure-databricks.csv`
 
 ## Classification Statistics
@@ -68,77 +68,6 @@ skill_description: Expert knowledge for Azure Databricks development including t
 | *(Unclassified)* | 1662 | 37.7% |
 
 ## Changes
-
-### New Pages
-
-- [Declarative Automation Bundles](https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-with-bundles)
-- [Connect to serverless compute](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-connecting)
-- [Set up your environment](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-environment)
-- [Read in data](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-dataloading)
-- [Distributed training](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/distributed-training)
-- [Experiment tracking and observability](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-tracking-observability)
-- [Guides](https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-guides)
-- [Declarative Automation Bundles extension features](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles)
-- [Declarative Automation Bundles feature releases](https://learn.microsoft.com/en-us/azure/databricks/release-notes/dev-tools/bundles)
-- [Databricks Runtime 17.2](https://learn.microsoft.com/en-us/azure/databricks/archive/runtime-release-notes/17.2)
-- [Databricks Runtime 17.2 ML](https://learn.microsoft.com/en-us/azure/databricks/archive/runtime-release-notes/17.2ml)
-
-### Updated Pages
-
-- [Databricks overview](https://learn.microsoft.com/en-us/azure/databricks/introduction/)
-  - Updated: 2026-02-11T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [Import and visualize CSV data from a notebook](https://learn.microsoft.com/en-us/azure/databricks/getting-started/import-visualize-data)
-  - Updated: 2025-04-04T20:47:00.000Z → 2026-03-16T22:07:00.000Z
-- [Partner-powered AI features](https://learn.microsoft.com/en-us/azure/databricks/databricks-ai/partner-powered)
-  - Updated: 2026-03-10T23:23:00.000Z → 2026-03-13T08:00:00.000Z
-- [Databricks AI assistive features trust and safety](https://learn.microsoft.com/en-us/azure/databricks/databricks-ai/databricks-ai-trust)
-  - Updated: 2026-03-10T23:23:00.000Z → 2026-03-13T08:00:00.000Z
-- [OneLake federation](https://learn.microsoft.com/en-us/azure/databricks/query-federation/onelake)
-  - Updated: 2026-03-13T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Concepts](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/)
-  - Updated: 2026-03-09T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Column selection](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/column-selection)
-  - Updated: 2025-11-26T20:37:00.000Z → 2026-03-16T17:36:00.000Z
-- [History tracking (SCD 2)](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/scd)
-  - Updated: 2026-01-30T00:49:00.000Z → 2026-03-16T17:36:00.000Z
-- [Multi-destination pipelines](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/multi-destination-pipeline)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Name destination tables](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/table-rename)
-  - Updated: 2026-01-30T00:49:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-pipeline)
-  - Updated: 2026-03-12T18:41:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-pipeline)
-  - Updated: 2026-02-27T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-pipeline)
-  - Updated: 2026-03-04T19:15:00.000Z → 2026-03-16T17:36:00.000Z
-- [Maintenance](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-maintenance)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-09T08:00:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-pipeline)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-troubleshoot)
-  - Updated: 2026-02-23T23:41:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/tiktok-ads-pipeline)
-  - Updated: 2026-03-12T18:41:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/workday-hcm-pipeline)
-  - Updated: 2026-03-12T18:41:00.000Z → 2026-03-16T17:36:00.000Z
-- [Create ingestion pipeline](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-pipeline)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-03-16T17:36:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-troubleshoot)
-  - Updated: 2026-01-15T23:26:00.000Z → 2026-03-16T17:36:00.000Z
-- *...and 133 more*
-
-### Deleted Pages
-
-- ~~Databricks AI environment~~ (https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/databricks-ai-environment)
-- ~~Distributed training with Python API~~ (https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/distributed-training)
-- ~~Troubleshoot issues on Serverless GPU compute~~ (https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/serverless-gpu-troubleshooting)
-- ~~Best practices for serverless GPU compute~~ (https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-best-practices)
-- ~~Load data on Serverless GPU compute~~ (https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-dataloading)
-- ~~Databricks Asset Bundles extension features~~ (https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles)
-- ~~Databricks Asset Bundles~~ (https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/manage-with-bundles)
-- ~~Databricks Asset Bundles feature releases~~ (https://learn.microsoft.com/en-us/azure/databricks/release-notes/dev-tools/bundles)
-- ~~Databricks Runtime 17.2~~ (https://learn.microsoft.com/en-us/azure/databricks/release-notes/runtime/17.2)
-- ~~Databricks Runtime 17.2 ML~~ (https://learn.microsoft.com/en-us/azure/databricks/release-notes/runtime/17.2ml)
 
 ## Classified Pages
 

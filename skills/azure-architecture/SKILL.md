@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when selecting architecture patterns, choosing Azure services, or implementing production-ready solutions.
+description: Provides expert Azure architecture guidance across reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use this skill when you need to design, review, or modernize solutions on Azure, compare architecture options, select appropriate Azure services, avoid common performance/scalability pitfalls, or plan migrations from on-premises or other clouds. Not for writing application code, managing subscriptions/quotas, or performing live Azure deployments or configuration changes.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -12,7 +12,7 @@ This skill provides expert guidance for designing Azure solutions using Azure Ar
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture Styles | L217-L227 | Azure app architecture patterns: when and how to use Big Compute, Big Data, event-driven, microservices, N-tier, and Web-Queue-Worker styles, with design guidance and tradeoffs. |
 | Best Practices | L228-L291 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, networking, SAP, IoT, APIs, Event Hubs, and generative AI. |
 | Anti-patterns | L292-L306 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
-| Example Workloads | L307-L373 | End-to-end reference architectures and patterns for real-world Azure workloads: data/analytics, AI, security, networking, hybrid, AKS, VDI, mainframe, and app modernization scenarios. |
+| Example Workloads | L307-L373 | End-to-end reference architectures and patterns for real-world Azure workloads: data/AI analytics, AKS and networking, hybrid/Arc, security/Zero Trust, mainframe/PLM, and app integration scenarios. |
 | Migration Guides | L374-L406 | Guides for migrating from AWS/Google/on-prem (Oracle, Kafka, Kubernetes) to Azure, mapping equivalent services, architectures, governance, security, and cost/ops differences. |
 
 ### Reference Architectures

@@ -30,10 +30,10 @@ skill_description: Expert knowledge for Azure Api Center development including b
 - **Unclassified**: 14
 
 ### Incremental Update
-- **New Pages**: 2
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 33
-- **Deleted Pages**: 1
+- **Unchanged**: 35
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
 ## Classification Statistics
@@ -48,15 +48,6 @@ skill_description: Expert knowledge for Azure Api Center development including b
 | *(Unclassified)* | 14 | 40.0% |
 
 ## Changes
-
-### New Pages
-
-- [Manage APIs - Azure CLI](https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli)
-- [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills)
-
-### Deleted Pages
-
-- ~~Manage inventory - Azure CLI~~ (https://learn.microsoft.com/en-us/azure/api-center/manage-apis-azure-cli)
 
 ## Classified Pages
 

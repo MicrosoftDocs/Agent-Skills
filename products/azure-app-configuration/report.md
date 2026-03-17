@@ -12,9 +12,9 @@ category_descriptions:
   configuration: 'Configuring App Configuration behavior: feature flags, filters,
     snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
     refresh, and AI/chat completion settings.'
-  security: 'Securing App Configuration stores: encryption, network isolation, private
-    endpoints, managed identities, keys/HMAC, Entra ID/RBAC auth, and Azure Policy/role-based
-    access controls.'
+  security: 'Securing App Configuration: encryption, keys, RBAC/Entra ID, managed
+    identities, private endpoints, network lockdown, REST auth (HMAC/Entra), and Azure
+    Policy/compliance.'
   limits-quotas: Limits on key-value retention, point-in-time reads, soft delete behavior,
     preview API lifecycles, and REST API throttling/quotas for Azure App Configuration.
   best-practices: 'Guidance on designing and using App Configuration efficiently:
@@ -23,12 +23,15 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing Azure App Configuration network access issues,
     including firewall/VNet restrictions, private endpoints, DNS, and connectivity
     errors from client apps.
-skill_description: Expert knowledge for Azure App Configuration development including
-  troubleshooting, best practices, decision making, limits & quotas, security, configuration,
-  integrations & coding patterns, and deployment. Use when building, debugging, or
-  optimizing Azure App Configuration applications. Not for Azure App Service (use
-  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
-  azure-key-vault), Azure Automation (use azure-automation).
+skill_description: Provides expert guidance on Azure App Configuration, including
+  troubleshooting connectivity and network issues; designing key/value, labels, and
+  feature flags; configuring snapshots, dynamic refresh, and geo-replication; understanding
+  limits, quotas, and soft delete; securing access with RBAC, managed identities,
+  and private endpoints; choosing libraries and upgrade paths; integrating with .NET,
+  Java, Python, JavaScript, AKS, and AI apps; and using App Configuration in CI/CD
+  and deployment workflows. Use this skill when planning, configuring, securing, integrating,
+  or debugging Azure App Configuration. Not for Azure Key Vault, Azure App Service
+  settings, or Azure Config Manager for VMs.
 ---
 # Azure App Configuration Crawl Report
 
@@ -41,9 +44,9 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 - **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 6
-- **Unchanged**: 154
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 159
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -63,24 +66,12 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 
 ## Changes
 
-### New Pages
-
-- [Python](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-python-provider)
-
 ### Updated Pages
 
-- [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-java-spring-app)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-java-spring-app)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Feature management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-feature-flag-spring-boot)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T08:00:00.000Z
-- [Spring Boot](https://learn.microsoft.com/en-us/azure/azure-app-configuration/use-key-vault-references-spring-boot)
-  - Updated: 2026-02-10T08:00:00.000Z → 2026-03-16T22:10:00.000Z
-- [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references)
-  - Updated: 2025-11-19T23:11:00.000Z → 2026-03-16T08:00:00.000Z
+- [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration)
+  - Updated: 2026-03-05T12:13:00.000Z → 2026-03-17T06:14:00.000Z
+- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac)
+  - Updated: 2026-02-23T23:22:00.000Z → 2026-03-17T06:14:00.000Z
 
 ## Classified Pages
 
@@ -116,7 +107,6 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider) | integrations | 0.75 | Reference for Go provider library with managed loading and added functionality; contains product-specific integration patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider) | integrations | 0.75 | Reference for JavaScript provider library with managed loading and extra features; product-specific integration details. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider) | integrations | 0.75 | Reference for Python provider library with managed loading and added functionality; includes product-specific integration patterns. |
-| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.75 | Covers using Microsoft Entra ID and Azure RBAC; likely lists specific roles, scopes, and permission mappings unique to App Configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.75 | Describes model selection, prompts, temperature, token limits, etc.; likely includes concrete configuration schema and parameter names for chat completion. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh) | integrations | 0.70 | Push refresh model using App Configuration events; involves client library options, refresh triggers, and configuration parameters unique to this integration. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-dotnet) | integrations | 0.70 | Quickstart wiring App Configuration chat settings into a .NET app; includes code and configuration patterns specific to this integration. |
@@ -167,6 +157,7 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [JavaScript SDK](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript) | integrations | 0.70 | Quickstart shows concrete SDK usage patterns and provider behavior (Map-like access, composition, Key Vault resolution) that are product-specific integration details beyond generic SDK knowledge. |
 | [Load Configuration from Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-load-azure-front-door-configuration-provider) | integrations | 0.70 | Describes how client applications load configuration from Azure App Configuration through Azure Front Door, which implies SDK or configuration provider usage, specific connection parameters, and product-specific integration patterns beyond generic tutorials. |
 | [Managed identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-integrate-azure-managed-service-identity) | security | 0.70 | Details managed identity support in App Configuration and client libraries; includes product-specific authentication configuration patterns. |
+| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.70 | Describes using Microsoft Entra ID and Azure RBAC with App Configuration, which typically includes specific built-in role names and permission scopes unique to this service, matching the security sub-skill criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event) | integrations | 0.70 | Describes App Configuration events via Event Grid; typically includes event types, schema, and subscription configuration parameters, which are integration-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete) | limits-quotas | 0.70 | Soft delete feature description for Standard and Premium tiers; typically includes retention duration and behavior constraints, which are numeric and tier-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters) | configuration | 0.70 | How-to for feature filters; includes filter types, parameters, and configuration patterns specific to App Configuration feature management. |
@@ -248,7 +239,7 @@ skill_description: Expert knowledge for Azure App Configuration development incl
 | [Create an App Configuration store](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-app-configuration-create) | 0.20 | Quickstart for creating a store and key-values; primarily step-by-step tutorial without configuration matrices or expert-only details. |
 | [Create and manage feature flags](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags) | 0.20 | Feature flag management quickstart; focused on using portal UI and basic concepts, not deep configuration or limits. |
 | [Import or export configuration data](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-import-export-data) | 0.20 | How-to for import/export via portal/CLI; typical tutorial flow, no indication of detailed config tables or limits. |
-| [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | Monitoring article is described as an overview of emitted metrics and logs and references Azure Monitor concepts; from the summary it appears conceptual/introductory without detailed metric tables, log schema, or configuration parameters that would qualify as expert configuration or troubleshooting content. |
+| [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration) | 0.20 | High-level overview of monitoring data and Azure Monitor integration for App Configuration; no specific limits, configuration parameter tables, or product-specific diagnostic mappings with error codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-key-value) | 0.20 | Conceptual explanation of key-value storage; no specific limits, configuration tables, or product-specific error/role details. |
 | [Snapshot references](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-snapshot-references) | 0.20 | Conceptual explanation of snapshot references and their purpose (immutable configuration plus dynamic updates). The summary indicates high-level behavior without listing configuration parameters, limits, decision matrices, or error mappings, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [About Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview) | 0.10 | High-level overview of Azure App Configuration; no detailed limits, configs, or error mappings. |

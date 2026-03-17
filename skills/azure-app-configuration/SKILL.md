@@ -1,6 +1,6 @@
 ---
 name: azure-app-configuration
-description: Expert knowledge for Azure App Configuration development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure App Configuration applications. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use azure-key-vault), Azure Automation (use azure-automation).
+description: Provides expert guidance on Azure App Configuration, including troubleshooting connectivity and network issues; designing key/value, labels, and feature flags; configuring snapshots, dynamic refresh, and geo-replication; understanding limits, quotas, and soft delete; securing access with RBAC, managed identities, and private endpoints; choosing libraries and upgrade paths; integrating with .NET, Java, Python, JavaScript, AKS, and AI apps; and using App Configuration in CI/CD and deployment workflows. Use this skill when planning, configuring, securing, integrating, or debugging Azure App Configuration. Not for Azure Key Vault, Azure App Service settings, or Azure Config Manager for VMs.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"
@@ -12,7 +12,7 @@ This skill provides expert guidance for Azure App Configuration. Covers troubles
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L41-L45 | Guidance on designing and using App Configuration efficiently: key/value organization, labeling, feature flags, performance, security, and cost-optimized access patterns. |
 | Decision Making | L46-L51 | Guidance on App Configuration client library support lifecycles and how to upgrade Spring Boot apps to use App Configuration library v6. |
 | Limits & Quotas | L52-L60 | Limits on key-value retention, point-in-time reads, soft delete behavior, preview API lifecycles, and REST API throttling/quotas for Azure App Configuration. |
-| Security | L61-L81 | Securing App Configuration stores: encryption, network isolation, private endpoints, managed identities, keys/HMAC, Entra ID/RBAC auth, and Azure Policy/role-based access controls. |
+| Security | L61-L81 | Securing App Configuration: encryption, keys, RBAC/Entra ID, managed identities, private endpoints, network lockdown, REST auth (HMAC/Entra), and Azure Policy/compliance. |
 | Configuration | L82-L100 | Configuring App Configuration behavior: feature flags, filters, snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic refresh, and AI/chat completion settings. |
 | Integrations & Coding Patterns | L101-L189 | Patterns and code samples for integrating Azure App Configuration into .NET, Go, JavaScript, Python, AKS, and AI apps, including dynamic config, feature flags, Key Vault, and REST API usage. |
 | Deployment | L190-L198 | Using App Configuration in CI/CD: exporting/importing settings, creating snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes deployment workflows. |
@@ -62,7 +62,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Encrypt App Configuration data with customer-managed keys | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys |
-| Access Azure App Configuration using Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac |
+| Configure Entra ID RBAC access for App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac |
 | Use private endpoints to secure Azure App Configuration access | https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-private-endpoint |
 | Manage access key authentication for Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-access-key-authentication |
 | Disable public network access for Azure App Configuration | https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-disable-public-access |

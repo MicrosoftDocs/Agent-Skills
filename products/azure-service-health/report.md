@@ -33,8 +33,8 @@ skill_description: Expert knowledge for Azure Service Health development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 46
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -51,11 +51,6 @@ skill_description: Expert knowledge for Azure Service Health development includi
 | *(Unclassified)* | 25 | 53.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

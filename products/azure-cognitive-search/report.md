@@ -21,17 +21,19 @@ category_descriptions:
     and responsible GenAI usage.
   decision-making: Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating
     capacity, choosing pricing tiers, and planning costs and hardware for search workloads
-  architecture-patterns: 'Architectural guidance for Azure AI Search: RAG and agentic
-    retrieval patterns, knowledge store design, multitenancy/isolation, and multi-region
-    deployment strategies.'
+  architecture-patterns: 'Architectural guidance for Azure AI Search: RAG patterns,
+    knowledge store design, multitenancy and data isolation, and multi-region/high-availability
+    deployment designs.'
   deployment: 'Deploying and moving Azure AI Search services: ARM/Bicep/Terraform
     provisioning, cross-region migration steps, and checking regional/feature availability.'
-skill_description: Expert knowledge for Azure AI Search development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, integrations & coding patterns, and deployment. Use when
-  building, debugging, or optimizing Azure AI Search applications. Not for Azure Cosmos
-  DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse
-  Analytics (use azure-synapse-analytics).
+skill_description: Provides expert guidance on Azure AI Search across troubleshooting,
+  best practices, architecture & design, limits & quotas, security, configuration,
+  integrations & coding patterns, and deployment. Use this skill when you need to
+  design or optimize RAG/search architectures, configure or secure indexes and indexers,
+  choose SKUs and capacity, resolve indexing/enrichment errors, integrate with applications
+  or data sources, or plan deployments/migrations across regions and environments.
+  Not for questions about other Azure data/search products (e.g., Cosmos DB, Azure
+  SQL full-text search, Elastic, or non-Azure vector databases).
 ---
 # Azure AI Search Crawl Report
 
@@ -69,8 +71,8 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 
 ### Updated Pages
 
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-16T08:00:00.000Z
+- [Multi-region deployment](https://learn.microsoft.com/en-us/azure/search/search-multi-region)
+  - Updated: 2025-08-11T22:09:00.000Z → 2026-03-17T06:03:00.000Z
 
 ## Classified Pages
 
@@ -252,7 +254,6 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | [Model complex data types](https://learn.microsoft.com/en-us/azure/search/search-howto-complex-data-types) | best-practices | 0.70 | Describes how to map hierarchical data into complex types with Azure AI Search-specific modeling patterns and edge cases. |
 | [Model relational data](https://learn.microsoft.com/en-us/azure/search/index-sql-relational-data) | best-practices | 0.70 | Covers denormalization patterns and parent-child modeling specific to Azure AI Search’s flat rowset requirements. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/search/monitor-azure-cognitive-search-data-reference) | configuration | 0.70 | Monitoring data reference typically enumerates specific metrics, dimensions, and log categories for this product, which are configuration/telemetry details not derivable from general knowledge. |
-| [Multi-region deployment](https://learn.microsoft.com/en-us/azure/search/search-multi-region) | architecture-patterns | 0.70 | Describes multi-region deployment patterns, data synchronization, and failover strategies specific to Azure AI Search. |
 | [Multi-tenancy](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications) | architecture-patterns | 0.70 | Covers tenant isolation strategies and design patterns for multitenant SaaS apps using Azure AI Search. |
 | [Normalize text for filters](https://learn.microsoft.com/en-us/azure/search/search-normalizers) | configuration | 0.70 | Covers defining normalizers on fields; likely includes parameter names, allowed values, and examples of configuration unique to Azure AI Search. |
 | [OneLake](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-onelake-files) | integrations | 0.70 | Product-specific configuration of a OneLake indexer, including REST-based setup and parameters for extracting data and metadata from lakehouses. |
@@ -285,6 +286,7 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | [Create a knowledge store (REST)](https://learn.microsoft.com/en-us/azure/search/knowledge-store-create-rest) | configuration | 0.68 | The page explains how to define a knowledge store via REST, including specific JSON schema elements, property names, and required configuration for connecting to Azure Storage and wiring it into indexers/skillsets. These are concrete, product-specific configuration details that match the configuration sub-skill type. |
 | [Create an indexer](https://learn.microsoft.com/en-us/azure/search/search-how-to-create-indexers) | configuration | 0.68 | Indexer creation docs for Azure AI Search typically include product-specific configuration parameters (indexer object properties, schedule settings, data source connection settings, field mappings, and options) with concrete names and allowed values. This goes beyond a conceptual overview and provides detailed configuration knowledge unique to Azure AI Search indexers, fitting the configuration sub-skill best. |
 | [Explore the code](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-search-query-integration) | integrations | 0.68 | Cheat sheet of essential .NET SDK integration steps and query patterns for Azure AI Search, with concrete code usage beyond generic SDK knowledge. |
+| [Multi-region deployment](https://learn.microsoft.com/en-us/azure/search/search-multi-region) | architecture-patterns | 0.68 | The page describes how to achieve multi-region reliability for a single-region service using multiple search services with identical configurations and custom failover logic. This is product-specific architectural guidance about when and how to use a multi-region pattern for Azure AI Search, going beyond generic concepts. While the summary doesn’t show numeric thresholds, it does contain concrete, service-specific architectural patterns and trade-offs for reliability and failover. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/search/security-controls-policy) | security | 0.68 | Page lists Azure Policy Regulatory Compliance controls specific to Azure AI Search, including at least one built-in policy definition that can be used in policy assignments. These are product-specific security/compliance configurations (policy definitions and how they apply to the service), which fits the security category. |
 | [Add AI-generated content (GenAI Prompt skill)](https://learn.microsoft.com/en-us/azure/search/chat-completion-skill-example-usage) | integrations | 0.65 | Describes concrete usage of the Chat Completion skill within an Azure AI Search ingestion pipeline, including product-specific skill configuration and how outputs are mapped into the search index. This is an integration/coding pattern between Azure AI Search indexers, AI enrichment, and language models, beyond generic LLM knowledge. |
 | [Create a knowledge base](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base) | configuration | 0.65 | Page describes a 'knowledge base' as a top-level object that orchestrates agentic retrieval and defines knowledge sources and default retrieval behavior. This strongly implies product-specific configuration schema (properties, parameters, and options) for knowledge bases rather than just conceptual content, fitting the configuration category. |

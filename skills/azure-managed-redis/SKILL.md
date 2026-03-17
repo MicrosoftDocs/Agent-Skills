@@ -1,18 +1,18 @@
 ---
 name: azure-managed-redis
-description: Expert knowledge for Azure Managed Redis development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when building, debugging, or optimizing Azure Managed Redis applications. Not for Azure Cache for Redis (use azure-cache-redis).
+description: Provides expert guidance on Azure Managed Redis troubleshooting, best practices, decision making, security, configuration, integrations, and deployment, including client usage, scaling, geo-replication, persistence, monitoring, and secure connectivity from .NET, Go, Node.js/TypeScript, and Python. Use this skill when planning or operating Azure Managed Redis, diagnosing connectivity/latency/timeouts, optimizing cost and performance, configuring Entra ID, Private Link, TLS, or automating deployments via ARM/Bicep, CLI, or PowerShell. Not for Azure Cache for Redis (classic PaaS), non-Azure Redis services, or general Redis OSS administration outside Azure Managed Redis.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-17"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Redis Skill
 
-This skill provides expert guidance for Azure Managed Redis. Covers troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Managed Redis. Covers troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
-> **IMPORTANT for Agent**: Use the **Category Index** below to locate relevant sections. For categories with line ranges (e.g., `L35-L120`), use `read_file` with the specified lines. For categories with file links (e.g., `[security.md](security.md)`), use `read_file` on the linked reference file
+> **IMPORTANT for Agent**: This file may be large. Use the **Category Index** below to locate relevant sections, then use `read_file` with specific line ranges (e.g., `L136-L144`) to read the sections needed for the user's question
 
 > **IMPORTANT for Agent**: If `metadata.generated_at` is more than 3 months old, suggest the user pull the latest version from the repository. If `mcp_microsoftdocs` tools are not available, suggest the user install it: [Installation Guide](https://github.com/MicrosoftDocs/mcp/blob/main/README.md)
 
@@ -24,14 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing Azure Managed Redis issues: connectivity, latency/timeouts, data loss, server resources, monitoring errors, and client-side performance using tools like redis-cli. |
-| Best Practices | L47-L60 | Guidance on client usage, connections, scaling, memory, performance testing, Kubernetes hosting, monitoring load, and handling failover/patching for Azure Managed Redis. |
-| Decision Making | L61-L68 | Guidance on planning Azure Managed Redis deployments, choosing migration approaches from Azure Cache for Redis, and optimizing costs with reservations and FAQs |
-| Architecture & Design Patterns | L69-L73 | Details of Azure Managed Redis internal components, cluster topology, data flow, scaling behavior, and how the service is built and operates behind the scenes. |
-| Security | L74-L82 | Securing Azure Managed Redis: Entra auth, disk encryption, Private Link, TLS configuration, and applying Azure Policy for compliance and access control. |
-| Configuration | L83-L96 | How to configure and operate Azure Managed Redis: instance settings, geo-replication, persistence, import/export, monitoring/diagnostics, modules, and PowerShell/CLI management. |
-| Integrations & Coding Patterns | L97-L107 | How to connect .NET, Go, Node.js/TypeScript, and Python apps to Azure Managed Redis, including Entra ID auth, ASP.NET Core caching, security, and Azure Functions bindings. |
-| Deployment | L108-L115 | Scaling and version upgrades, ARM/Bicep deployment patterns, and configuring maintenance windows for Azure Managed Redis instances |
+| Troubleshooting | L35-L45 | Diagnosing and fixing Azure Managed Redis issues: connectivity, latency/timeouts, data loss, server resources, monitoring errors, and client-side performance using tools like redis-cli. |
+| Best Practices | L46-L59 | Guidance on client usage, connections, scaling, memory, performance testing, Kubernetes hosting, monitoring load, and handling failover/patching for Azure Managed Redis. |
+| Decision Making | L60-L67 | Guidance on planning Azure Managed Redis deployments, choosing migration approaches from Azure Cache for Redis, and optimizing costs with reservations and FAQs |
+| Security | L68-L76 | Securing Azure Managed Redis: Entra auth, disk encryption, Private Link, TLS configuration, and applying Azure Policy for compliance and access control. |
+| Configuration | L77-L90 | How to configure and operate Azure Managed Redis: instance settings, geo-replication, persistence, import/export, monitoring/diagnostics, modules, and PowerShell/CLI management. |
+| Integrations & Coding Patterns | L91-L101 | How to connect .NET, Go, Node.js/TypeScript, and Python apps to Azure Managed Redis, including Entra ID auth, ASP.NET Core caching, security, and Azure Functions bindings. |
+| Deployment | L102-L109 | Scaling and version upgrades, ARM/Bicep deployment patterns, and configuring maintenance windows for Azure Managed Redis instances |
 
 ### Troubleshooting
 | Topic | URL |
@@ -65,11 +64,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose an approach to migrate caches to Azure Managed Redis | https://learn.microsoft.com/en-us/azure/redis/migrate/migration-guide |
 | Plan Azure Managed Redis deployments with FAQs | https://learn.microsoft.com/en-us/azure/redis/planning-faq |
 | Choose and use Azure Managed Redis reservations | https://learn.microsoft.com/en-us/azure/redis/reserved-pricing |
-
-### Architecture & Design Patterns
-| Topic | URL |
-|-------|-----|
-| Understand Azure Managed Redis internal architecture | https://learn.microsoft.com/en-us/azure/redis/architecture |
 
 ### Security
 | Topic | URL |

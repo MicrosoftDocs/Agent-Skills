@@ -31,8 +31,8 @@ skill_description: Expert knowledge for Azure Reliability development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 98
+- **Updated Pages**: 0
+- **Unchanged**: 99
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -47,11 +47,6 @@ skill_description: Expert knowledge for Azure Reliability development including 
 | *(Unclassified)* | 68 | 68.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure Event Grid](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid)
-  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-16T22:13:00.000Z
 
 ## Classified Pages
 

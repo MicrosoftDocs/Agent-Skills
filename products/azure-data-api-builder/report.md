@@ -41,10 +41,10 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 - **Unclassified**: 43
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 9
-- **Unchanged**: 112
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 123
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -62,36 +62,6 @@ skill_description: Expert knowledge for Azure Data Api Builder development inclu
 | *(Unclassified)* | 43 | 35.0% |
 
 ## Changes
-
-### New Pages
-
-- [DAB Docker](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/docker)
-- [DAB Model Context Protocol (MCP)](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/mcp)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/)
-  - Updated: 2026-03-11T05:03:00Z → 2026-03-16T17:10:00Z
-- [What is the extension?](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/overview)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Init](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/init)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Add](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/add)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Start](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/start)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Validate](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/validate)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Health](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/health)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Visualize](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/visualize)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-- [DAB Code Gen](https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/code-gen)
-  - Updated: 2026-03-11T05:03:00.000Z → 2026-03-16T17:10:00.000Z
-
-### Deleted Pages
-
-- ~~DAB Agent~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/vscode-extension/agent)
 
 ## Classified Pages
 

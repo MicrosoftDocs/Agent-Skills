@@ -46,8 +46,8 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 944
+- **Updated Pages**: 0
+- **Unchanged**: 946
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -67,13 +67,6 @@ skill_description: Expert knowledge for Azure DevOps development including troub
 | *(Unclassified)* | 665 | 70.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Remote MCP Server (preview)](https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops)
-  - Updated: 2026-03-13T21:04:00.000Z → 2026-03-16T17:05:00.000Z
-- [Marketplace & Extensibility](https://learn.microsoft.com/en-us/azure/devops/marketplace-extensibility/?view=azure-devops)
-  - Updated: 2025-05-14T17:07:00Z → 2026-03-16T21:05:00Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-17'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: Connection Monitor
     AMA setup, NSG and VNet flow logs, Traffic Analytics schemas, filters, ARM/Bicep/Policy
@@ -30,14 +30,14 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
 
 ## Summary
 
-- **Total Pages**: 62
-- **Fetched**: 62
+- **Total Pages**: 63
+- **Fetched**: 63
 - **Fetch Failed**: 0
 - **Classified**: 29
-- **Unclassified**: 33
+- **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 62
 - **Deleted Pages**: 0
@@ -47,15 +47,19 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 12 | 19.4% |
+| configuration | 12 | 19.0% |
 | decision-making | 3 | 4.8% |
-| integrations | 4 | 6.5% |
+| integrations | 4 | 6.3% |
 | limits-quotas | 1 | 1.6% |
 | security | 3 | 4.8% |
-| troubleshooting | 6 | 9.7% |
-| *(Unclassified)* | 33 | 53.2% |
+| troubleshooting | 6 | 9.5% |
+| *(Unclassified)* | 34 | 54.0% |
 
 ## Changes
+
+### New Pages
+
+- [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel)
 
 ## Classified Pages
 
@@ -128,3 +132,4 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
 | [Usage scenarios](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-usage-scenarios) | 0.20 | Usage scenarios article describing how Traffic Analytics can provide insights; scenario-focused but not clearly exposing configuration tables, limits, or error mappings. |
 | [VM Network Troubleshooter](https://learn.microsoft.com/en-us/azure/network-watcher/vm-network-troubleshooter) | 0.20 | Preview feature overview describing what VM Network Troubleshooter is and its purpose; no indication of concrete error codes, commands, or configuration specifics. |
 | [What is Azure Network Watcher?](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview) | 0.20 | High-level overview of Network Watcher capabilities without detailed limits, configs, or error mappings. |
+| [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel) | - | Integration overview between Traffic Analytics and Microsoft Sentinel without detailed configuration parameters, error codes, limits, or product-specific decision matrices. |

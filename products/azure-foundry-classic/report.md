@@ -33,7 +33,7 @@ skill_description: Expert knowledge for Azure Foundry Classic development includ
   Not for Azure AI Foundry Local (use azure-ai-foundry-local), Microsoft Foundry (use
   azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning).
 ---
-# Azure Foundry Classic Crawl Report
+# Microsoft Foundry Classic Crawl Report
 
 ## Summary
 

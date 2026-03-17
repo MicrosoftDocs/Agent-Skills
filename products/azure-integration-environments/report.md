@@ -1,3 +1,15 @@
+---
+generated_at: '2026-03-17'
+category_descriptions: {}
+skill_description: Expertise in explaining and guiding use of Azure Integration Environments,
+  including concepts, capabilities, architecture, lifecycle management, and best practices
+  for organizing and governing integration workloads across environments. Use this
+  skill when you need to understand what Azure Integration Environments are, how to
+  design environment strategies, how they relate to integration services (e.g., Logic
+  Apps, API Management, Service Bus), and how to align them with DevOps, compliance,
+  and cost management. Not for step-by-step coding, authoring individual integration
+  workflows, or configuring unrelated Azure services.
+---
 # Azure Integration Environments Crawl Report
 
 ## Summary

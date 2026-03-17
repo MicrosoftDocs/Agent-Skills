@@ -22,7 +22,7 @@ skill_description: Expert knowledge for Azure AI Foundry Local development inclu
   Learning (use azure-machine-learning), Azure AI Vision (use azure-ai-vision), Azure
   AI Document Intelligence (use azure-document-intelligence).
 ---
-# Azure AI Foundry Local Crawl Report
+# Microsoft Foundry Local Crawl Report
 
 ## Summary
 

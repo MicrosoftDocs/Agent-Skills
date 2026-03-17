@@ -47,9 +47,9 @@ skill_description: Expert knowledge for Azure Migrate development including trou
 - **Unclassified**: 83
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 201
+- **Unchanged**: 202
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-migrate/azure-migrate.csv`
 
@@ -69,10 +69,6 @@ skill_description: Expert knowledge for Azure Migrate development including trou
 | *(Unclassified)* | 83 | 41.1% |
 
 ## Changes
-
-### New Pages
-
-- [End-to-end portal experience for server migrations with Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/end-to-end-portal-experience-server-migrations?view=migrate)
 
 ## Classified Pages
 
