@@ -67,20 +67,45 @@ stages:
             inputs:
               repository: self
               persistCredentials: true
-
+ 
           # 2. Checkout ADO repo (source code)
           - task: Checkout@1
             displayName: 'Checkout ADO repo (code)'
             inputs:
               repository: git://Engineering/Learn.Docs2AgentSkills@refs/heads/${{ parameters.docs2SkillsADOBranch }}
 
-          # 3. Setup Python
+          # 3. Check if current branch is behind target branch
+          - task: Bash@3
+            displayName: 'Check behind target branch'
+            inputs:
+              targetType: inline
+              script: |
+                set -e
+                GITHUB_REPO=$(basename $(Build.Repository.Uri) .git)
+                cd $(Build.SourcesDirectory)/$GITHUB_REPO
+
+                TARGET_BRANCH="${{ parameters.targetBranch }}"
+                echo "Fetching target branch: $TARGET_BRANCH"
+                git fetch origin $TARGET_BRANCH
+
+                BEHIND_COUNT=$(git rev-list --count HEAD..origin/$TARGET_BRANCH)
+                AHEAD_COUNT=$(git rev-list --count origin/$TARGET_BRANCH..HEAD)
+
+                echo "Branch status vs origin/$TARGET_BRANCH: ahead=$AHEAD_COUNT, behind=$BEHIND_COUNT"
+
+                if [ "$BEHIND_COUNT" -gt 0 ]; then
+                  echo "ERROR: Current branch is behind origin/$TARGET_BRANCH by $BEHIND_COUNT commit(s)."
+                  echo "Please rebase/merge latest target branch before running sync."
+                  exit 1
+                fi
+
+          # 4. Setup Python
           - task: UsePythonVersion@0
             displayName: 'Setup Python $(pythonVersion)'
             inputs:
               versionSpec: '$(pythonVersion)'
 
-          # 4. Install dependencies
+          # 5. Install dependencies
           - task: Bash@3
             displayName: 'Install dependencies'
             inputs:
@@ -91,7 +116,7 @@ stages:
                 pip install --upgrade pip
                 pip install -r requirements.txt
 
-          # 5. Run docs2skills with Azure identity
+          # 6. Run docs2skills with Azure identity
           - task: AzureCLI@2
             displayName: 'Run docs2skills'
             inputs:
@@ -177,7 +202,7 @@ stages:
               AZURE_OPENAI_ENDPOINT: $(azureOpenAIEndpoint)
               AZURE_OPENAI_CHAT_DEPLOYMENT: $(azureOpenAIDeployment)
 
-          # 6. Push to GitHub repo
+          # 7. Push to GitHub repo
           - task: Bash@3
             displayName: 'Push to GitHub'
             inputs:
