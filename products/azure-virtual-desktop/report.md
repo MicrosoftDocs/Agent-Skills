@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 147
+- **Updated Pages**: 0
+- **Unchanged**: 148
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -68,11 +68,6 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
 | *(Unclassified)* | 28 | 18.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
-  - Updated: 2026-02-23T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

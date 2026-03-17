@@ -45,8 +45,8 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 298
+- **Updated Pages**: 0
+- **Unchanged**: 299
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -66,11 +66,6 @@ skill_description: Expert knowledge for Azure AI Search development including tr
 | *(Unclassified)* | 67 | 22.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2025-11-19T18:13:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

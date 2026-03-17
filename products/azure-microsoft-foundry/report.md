@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Microsoft Foundry development including 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 264
+- **Updated Pages**: 0
+- **Unchanged**: 268
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-microsoft-foundry/azure-microsoft-foundry.csv`
 
@@ -68,17 +68,6 @@ skill_description: Expert knowledge for Microsoft Foundry development including 
 | *(Unclassified)* | 71 | 26.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitor agents in the dashboard](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard)
-  - Updated: 2026-03-06T23:10:00.000Z → 2026-03-16T22:12:00.000Z
-- [Foundry Models sold directly by Azure](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-14T05:04:00.000Z
-- [Realtime API via WebSockets](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/realtime-audio-websockets)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-16T17:27:00.000Z
-- [Third party Guardrail integrations](https://learn.microsoft.com/en-us/azure/foundry/guardrails/third-party-integrations)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-16T22:12:00.000Z
 
 ## Classified Pages
 

@@ -42,8 +42,8 @@ skill_description: Expert knowledge for Azure Application Gateway development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 173
+- **Updated Pages**: 0
+- **Unchanged**: 174
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -62,11 +62,6 @@ skill_description: Expert knowledge for Azure Application Gateway development in
 | *(Unclassified)* | 44 | 25.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [SSL termination and end to end SSL](https://learn.microsoft.com/en-us/azure/application-gateway/ssl-overview)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-03-13T08:00:00.000Z
 
 ## Classified Pages
 

@@ -46,10 +46,10 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 - **Unclassified**: 216
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 2
-- **Unchanged**: 468
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 472
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
 ## Classification Statistics
@@ -68,23 +68,6 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
 | *(Unclassified)* | 216 | 45.8% |
 
 ## Changes
-
-### New Pages
-
-- [Microsoft Security Private Link for Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links)
-- [Configure private endpoints with Microsoft Security Private Link](https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints)
-
-### Updated Pages
-
-- [Enable via portal](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-portal)
-  - Updated: 2025-12-04T12:03:00.000Z → 2026-03-16T17:14:00.000Z
-- [Enable programmatically](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-azure-enable-programmatically)
-  - Updated: 2025-12-04T12:03:00.000Z → 2026-03-16T17:14:00.000Z
-
-### Deleted Pages
-
-- ~~Microsoft Security Private Link for Microsoft Defender for Cloud (Preview)~~ (https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-private-links)
-- ~~Configure private endpoints with Microsoft Security Private Link (Preview)~~ (https://learn.microsoft.com/en-us/azure/defender-for-cloud/configure-private-endpoints)
 
 ## Classified Pages
 

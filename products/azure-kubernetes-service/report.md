@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 573
+- **Updated Pages**: 0
+- **Unchanged**: 574
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -69,11 +69,6 @@ skill_description: Expert knowledge for Azure Kubernetes Service (AKS) developme
 | *(Unclassified)* | 129 | 22.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [From a code repository](https://learn.microsoft.com/en-us/azure/aks/automatic/quick-automatic-from-code)
-  - Updated: 2025-10-10T08:00:00.000Z → 2026-01-29T23:06:00.000Z
 
 ## Classified Pages
 

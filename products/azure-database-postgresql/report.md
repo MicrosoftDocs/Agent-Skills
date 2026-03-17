@@ -48,8 +48,8 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 309
+- **Updated Pages**: 0
+- **Unchanged**: 312
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -69,15 +69,6 @@ skill_description: Expert knowledge for Azure Database for PostgreSQL developmen
 | *(Unclassified)* | 101 | 32.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Connection pooling (PgBouncer)](https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-pgbouncer)
-  - Updated: 2026-02-04T18:16:00.000Z → 2026-03-04T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes)
-  - Updated: 2026-02-26T08:00:00.000Z → 2026-03-15T08:00:00.000Z
-- [Supported versions](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions)
-  - Updated: 2025-12-22T23:02:00.000Z → 2026-03-15T08:00:00.000Z
 
 ## Classified Pages
 

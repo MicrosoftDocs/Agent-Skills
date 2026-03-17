@@ -43,8 +43,8 @@ skill_description: Expert knowledge for Azure Container Instances development in
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 80
+- **Updated Pages**: 0
+- **Unchanged**: 83
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -63,15 +63,6 @@ skill_description: Expert knowledge for Azure Container Instances development in
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [View an instance's state](https://learn.microsoft.com/en-us/azure/container-instances/container-state)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T17:07:00.000Z
-- [Deploy a container group - YAML](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-yaml)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T08:00:00.000Z
-- [Deploy a container group - Resource Manager](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-multi-container-group)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

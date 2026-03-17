@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 215
+- **Updated Pages**: 0
+- **Unchanged**: 217
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -64,13 +64,6 @@ skill_description: Expert knowledge for Azure Operator Nexus development includi
 | *(Unclassified)* | 58 | 26.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Cluster Inspect Action](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action)
-  - Updated: 2026-02-26T23:04:00.000Z → 2026-03-16T22:04:00.000Z
-- [Upgrade Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-upgrade)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-16T22:04:00.000Z
 
 ## Classified Pages
 

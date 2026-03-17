@@ -44,8 +44,8 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 178
+- **Updated Pages**: 0
+- **Unchanged**: 179
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-speech/azure-speech.csv`
 
@@ -64,11 +64,6 @@ skill_description: Expert knowledge for Azure AI Speech development including tr
 | *(Unclassified)* | 73 | 40.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions)
-  - Updated: 2026-01-30T18:18:00.000Z → 2026-03-16T17:27:00.000Z
 
 ## Classified Pages
 

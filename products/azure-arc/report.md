@@ -47,8 +47,8 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 414
+- **Updated Pages**: 0
+- **Unchanged**: 415
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -68,11 +68,6 @@ skill_description: Expert knowledge for Azure Arc development including troubles
 | *(Unclassified)* | 145 | 34.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Restore AdventureWorks](https://learn.microsoft.com/en-us/azure/azure-arc/data/restore-adventureworks-sample-db)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-16T22:14:00.000Z
 
 ## Classified Pages
 

@@ -48,8 +48,8 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 204
+- **Updated Pages**: 0
+- **Unchanged**: 206
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sap/azure-sap.csv`
 
@@ -69,13 +69,6 @@ skill_description: Expert knowledge for SAP HANA on Azure Large Instances develo
 | *(Unclassified)* | 25 | 12.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/faq)
-  - Updated: 2025-09-15T22:11:00Z → 2026-03-16T17:13:00Z
-- [Set up network for Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network)
-  - Updated: 2026-02-27T12:24:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 
