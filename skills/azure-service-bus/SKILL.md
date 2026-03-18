@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, filters/rules, Premium scaling, geo-DR, or VNet/Private Link isolation, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Notification Hubs (use azure-notification-hubs), Azure Queue Storage (use azure-queue-storage).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing namespaces, scaling Premium units, integrating via AMQP/JMS, using sessions/filters, or tuning throughput, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L72 | Guidance on choosing Service Bus vs other messaging services/tiers, configuring autoforwarding, geo-disaster recovery/replication, and migrating from Standard to Premium. |
 | Architecture & Design Patterns | L73-L81 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
 | Limits & Quotas | L82-L87 | Service Bus message, entity, and namespace quotas (size, connections, throughput) and how throttling works, including limits, behaviors under load, and mitigation strategies. |
-| Security | L88-L110 | Securing Service Bus with auth (Entra ID, SAS, managed identities), encryption, TLS, network isolation (VNet, Private Link, firewalls), and compliance/policy configuration. |
+| Security | L88-L110 | Authentication, encryption, network access, TLS, and compliance for securing Service Bus: Entra ID, managed identities, SAS, CMK, firewalls, VNets/Private Link, and Azure Policy. |
 | Configuration | L111-L134 | Configuring Service Bus entities, filters, sessions, partitioning, monitoring, and management via portal, PowerShell, ARM, and local emulator, plus message browsing, counts, and replication. |
 | Integrations & Coding Patterns | L135-L151 | Patterns and code for integrating Service Bus with JMS, AMQP, RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters, and batch message operations/migration scenarios |
 | Deployment | L152-L162 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
@@ -99,7 +99,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply regulatory compliance policies to Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/security-controls-policy |
 | Configure authentication and authorization for Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-authentication-and-authorization |
 | Configure IP firewall rules for Azure Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-ip-filtering |
-| Use managed identities to access Service Bus | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity |
+| Authenticate to Azure Service Bus with managed identities | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity |
 | Migrate Service Bus apps to passwordless Entra ID auth | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-migrate-azure-credentials |
 | Create Service Bus authorization rules with ARM templates | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-auth-rule |
 | Secure Service Bus with Shared Access Signatures | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas |

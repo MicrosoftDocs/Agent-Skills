@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Sentinel connectors, KQL analytics rules, playbooks/Logic Apps, ASIM schemas, or multi-workspace setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure External Attack Surface Management (use azure-external-attack-surface-management), Azure Firewall (use azure-firewall).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Sentinel data connectors, KQL analytics rules, Logic Apps playbooks, SAP/UEBA integrations, or ASIM schemas, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure External Attack Surface Management (use azure-external-attack-surface-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L129-L140 | Limits, quotas, pricing, and retention tiers for Sentinel data, search jobs, watchlists, ASIM, and workspace removal impacts, including large datasets and archive constraints. |
 | Security | L141-L155 | Security and access control in Microsoft Sentinel: RBAC and playbook auth, audit logs, CMK encryption, SAP roles/params, AWS identity disruption, and connector/network hardening. |
 | Configuration | L156-L278 | Configuring Microsoft Sentinel data ingestion, connectors, analytics/automation rules, ASIM schemas, data lake, SAP/UEBA/Defender integrations, retention, health monitoring, and normalization. |
-| Integrations & Coding Patterns | L279-L324 | Integrating Microsoft Sentinel with external data sources, threat intel, MCP tools, Logic Apps, Teams, Power BI, and building/customizing connectors, rules, playbooks, and hunting queries. |
+| Integrations & Coding Patterns | L279-L324 | Integrating Microsoft Sentinel with external data, threat intel, automation, MCP tools, and solutions—via APIs, CCF connectors, Logic Apps, Functions, Power BI, and hunting/analytics rule patterns. |
 | Deployment | L325-L347 | Deploying and managing Microsoft Sentinel solutions and connectors (SAP, Power Platform, Dynamics, SAP BTP), CI/CD and ARM-based content deployment, and publishing/monitoring solutions. |
 
 ### Troubleshooting
@@ -300,7 +300,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Sentinel MCP triage tools for incident hunting | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool |
 | Use SentinelProvider class to access Sentinel data lake | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-provider-class-reference |
 | Enrich Sentinel entities with geolocation REST API | https://learn.microsoft.com/en-us/azure/sentinel/geolocation-data-api |
-| Manage Sentinel hunting queries via Log Analytics REST | https://learn.microsoft.com/en-us/azure/sentinel/hunting-with-rest-api |
+| Manage Microsoft Sentinel hunting queries via REST API | https://learn.microsoft.com/en-us/azure/sentinel/hunting-with-rest-api |
 | Author custom hunting KQL queries in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/hunts-custom-queries |
 | Ingest Defender for Cloud incidents via Defender XDR | https://learn.microsoft.com/en-us/azure/sentinel/ingest-defender-for-cloud-incidents |
 | Integrate Microsoft Defender XDR with Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/microsoft-365-defender-sentinel-integration |

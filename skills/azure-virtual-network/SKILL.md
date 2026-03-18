@@ -1,14 +1,14 @@
 ---
 name: azure-virtual-network
-description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when designing VNets, NSGs, service endpoints, VNet peering, or Azure Firewall/NAT/load balancers, and other Azure Virtual Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute).
+description: Expert knowledge for Azure Virtual Network development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when configuring VNets, NSGs, VNet peering, load balancers/NAT/VPN, or VNet encryption and policies, and other Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Skill
 
-This skill provides expert guidance for Azure Virtual Network. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Virtual Network. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,13 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
-| Best Practices | L41-L52 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
-| Decision Making | L53-L62 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
-| Architecture & Design Patterns | L63-L72 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
-| Limits & Quotas | L73-L79 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
+| Troubleshooting | L36-L41 | Diagnosing and fixing Azure VM/VNet connectivity issues: routing and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption, and VNet deletion errors. |
+| Best Practices | L42-L53 | Network performance and connectivity guidance: VNet design, NSGs, service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput and latency on Azure VMs. |
+| Decision Making | L54-L63 | Guidance on design choices: when to use accelerated networking, routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options, and cost/performance trade-offs. |
+| Architecture & Design Patterns | L64-L73 | Designing VNet architectures: subnet extension for migrations, VNet peering, hybrid two-tier apps, traffic mirroring with TAP, topology planning, and custom routing options. |
+| Limits & Quotas | L74-L79 | VM networking limits: MANA support per VM size, static public IP assignment and quotas, and VM network throughput caps and how they affect performance. |
 | Security | L80-L88 | Securing virtual networks with policies and encryption, including Kubernetes network policies, Azure Policy for VNets, VNet encryption, and restricting storage egress via service endpoint policies. |
-| Configuration | L89-L115 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
+| Configuration | L89-L116 | Configuring Azure Virtual Network components: DNS, IPs (public/private, prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring, NSG logs, and DHCP-related setups. |
+| Deployment | L117-L121 | Planning and managing VM deployments that use MANA (Microsoft Azure Network Adapter), including configuration and usage for network virtual appliances on existing VM sizes. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -73,7 +74,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Check MANA support for existing Azure VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes |
 | Create Azure VM with static public IP and understand IP limits | https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-static-public-ip |
 | Understand Azure VM network throughput limits | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput |
 
@@ -113,3 +113,9 @@ This skill requires **network access** to fetch documentation content:
 | Set up dynamic DNS registration for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-ddns |
 | Configure DNS name resolution for Azure virtual networks | https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances |
 | Understand and configure Azure IP 168.63.129.16 usage | https://learn.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16 |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Plan VM deployments with MANA support on existing sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes |
+| Manage MANA usage for NVAs on existing VM sizes | https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out |

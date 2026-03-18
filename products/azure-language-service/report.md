@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: 'Configuring Azure AI Language projects and containers: CLU, NER,
     text classification, CQA, sentiment, summarization, and health—data formats, training,
@@ -16,9 +16,9 @@ category_descriptions:
   security: 'Security for Azure AI Language: encryption at rest, customer-managed
     keys, RBAC, managed identities, SAS tokens, and network isolation/Private Link
     for CQA resources.'
-  decision-making: Guidance on when and how to migrate or transition Azure Language
-    workloads (LUIS, QnA Maker, Text Analytics, Language Studio) and how to choose/manage
-    resources for conversational QA.
+  decision-making: Guidance on lifecycle policies, migration from LUIS/QnA Maker/Text
+    Analytics/Language Studio, and choosing/managing Azure resources for conversational
+    question answering.
   best-practices: Best practices for designing, labeling, and evaluating CLU, custom
     NER, text classification, and CQA projects, including multilingual handling, emojis,
     schemas, and autolabeling.
@@ -31,15 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Language development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building CLU intents, custom NER, text classification, sentiment/summarization,
-  or custom question answering, and other Azure AI Language related development tasks.
-  Not for Azure AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search),
-  Azure AI Speech (use azure-speech), Azure Translator (use azure-translator).
-use_when: Use when building CLU intents, custom NER, text classification, sentiment/summarization,
-  or custom question answering, and other Azure AI Language related development tasks.
-confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Search
-  (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure Translator
-  (use azure-translator).
+  building CLU, custom NER, text classification, sentiment, summarization, or custom
+  question answering solutions, and other Azure AI Language related development tasks.
+  Not for Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence
+  (use azure-document-intelligence), Azure AI Immersive Reader (use azure-immersive-reader),
+  Azure Translator (use azure-translator).
+use_when: Use when building CLU, custom NER, text classification, sentiment, summarization,
+  or custom question answering solutions, and other Azure AI Language related development
+  tasks.
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
+  Document Intelligence (use azure-document-intelligence), Azure AI Immersive Reader
+  (use azure-immersive-reader), Azure Translator (use azure-translator).
 ---
 # Azure AI Language Crawl Report
 
@@ -48,14 +50,14 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
-- **Classified**: 105
-- **Unclassified**: 92
+- **Classified**: 103
+- **Unclassified**: 94
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 197
-- **Deleted Pages**: 0
+- **New Pages**: 7
+- **Updated Pages**: 2
+- **Unchanged**: 188
+- **Deleted Pages**: 7
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
 ## Classification Statistics
@@ -66,14 +68,41 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | best-practices | 14 | 7.1% |
 | configuration | 23 | 11.7% |
 | decision-making | 5 | 2.5% |
-| deployment | 8 | 4.1% |
-| integrations | 29 | 14.7% |
+| deployment | 7 | 3.6% |
+| integrations | 28 | 14.2% |
 | limits-quotas | 15 | 7.6% |
 | security | 6 | 3.0% |
 | troubleshooting | 2 | 1.0% |
-| *(Unclassified)* | 92 | 46.7% |
+| *(Unclassified)* | 94 | 47.7% |
 
 ## Changes
+
+### New Pages
+
+- [Recognized entity categories](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories)
+- [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry)
+- [Try multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations)
+- [Build a multi-turn conversation model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model)
+- [Multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations)
+- [Deploy a CQA agent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent)
+- [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
+
+### Updated Pages
+
+- [Redact PII from text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
+  - Updated: 2026-02-06T06:03:00.000Z → 2026-03-17T08:00:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new)
+  - Updated: 2026-02-09T08:00:00.000Z → 2026-03-17T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Azure tools and agents 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
+- ~~Multi-turn conversations 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations)
+- ~~Build a multi-turn conversation model 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model)
+- ~~Try multi-turn conversations 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations)
+- ~~Migrate to Microsoft Foundry 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry)
+- ~~Recognized entity categories 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories)
+- ~~Deploy a CQA agent 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent)
 
 ## Classified Pages
 
@@ -110,7 +139,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Add chit-chat](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/chit-chat) | configuration | 0.70 | Describes a CQA-specific chitchat dataset (~100 scenarios, personas like Professional/Friendly/Witty) and how to apply it; this is product-specific configuration behavior. |
 | [Analytics](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/analytics) | configuration | 0.70 | Uses Azure diagnostic logging with specific categories (Trace, Audit, RequestResponse, AllMetrics) and sample queries; these are product-specific telemetry settings. |
 | [Auto label your data (preview)](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-autolabeling) | best-practices | 0.70 | Explains how to run autolabeling jobs using trained models or GPT models; includes workflow-specific guidance unique to custom NER. |
-| [Azure tools and agents 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents) | integrations | 0.70 | Describes MCP server endpoints and agent integrations; likely includes endpoint names, payload formats, and configuration options unique to Foundry Tools. |
 | [Call Sentiment Analysis and Opinion Mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api) | integrations | 0.70 | How-to for calling the API will include request bodies, parameters, and response fields unique to this service, which are product-specific integration patterns. |
 | [Call key phrase extraction](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/how-to/call-api) | integrations | 0.70 | How-to for calling the API; includes request/response formats and parameters unique to this feature. |
 | [Call the API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/how-to/call-api) | integrations | 0.70 | Describes API usage and the confidence score range (0–1); includes service-specific response schema and parameters. |
@@ -134,7 +162,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/language-support) | limits-quotas | 0.70 | Language support lists are effectively capability limits (which languages are supported) and are product-specific enumerations not derivable from general knowledge. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/language-support) | limits-quotas | 0.70 | Language support article listing which languages NER supports; this is a product-specific capability/limit matrix. |
 | [Markdown format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/reference/markdown-format) | configuration | 0.70 | Reference list of supported markdown formats for answer text; product-specific rendering behavior and allowed syntax are configuration details. |
-| [Migrate to Microsoft Foundry 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry) | decision-making | 0.70 | Migration guide with concrete steps and timing; helps decide and execute migration path with product-specific considerations. |
 | [None intent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/none-intent) | configuration | 0.70 | Describes None intent behavior and threshold; includes product-specific behavior and possibly configurable threshold values. |
 | [Prebuilt API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/prebuilt) | integrations | 0.70 | Describes a prebuilt API that answers questions over a passage; likely includes request/response schema and parameters unique to this service. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/quickstart) | integrations | 0.70 | Quickstart for the client library; includes request construction, parameters, and response handling specific to the Key Phrase Extraction API. |
@@ -161,7 +188,7 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Confidence score](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/confidence-score) | configuration | 0.65 | Defines confidence score range (0–100) and how it affects answer selection; likely includes threshold configuration guidance specific to CQA. |
 | [Create projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/create-project) | configuration | 0.65 | Covers setting up requirements and creating projects/resources; likely includes resource configuration details specific to custom NER. |
 | [Create projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/create-project) | configuration | 0.65 | Describes requirements and setup for projects; likely includes resource configuration and project settings specific to this feature. |
-| [Deploy a CQA agent 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent) | deployment | 0.65 | How-to guide for creating and deploying a CQA agent; likely includes Foundry-specific deployment steps, options, and constraints beyond generic deployment knowledge. |
+| [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry) | decision-making | 0.65 | Migration guide between Azure Language Studio and Microsoft Foundry with a specific deprecation date and step-by-step migration considerations; this is product-specific decision and migration guidance beyond generic knowledge. |
 | [Model performance (preview)](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/how-to/view-model-evaluation) | configuration | 0.65 | Explains evaluation behavior including automatic vs manual test splits and their impact; product-specific evaluation configuration details. |
 | [Native documents for language processing](https://learn.microsoft.com/en-us/azure/ai-services/language-service/native-document-support/overview) | integrations | 0.65 | Describes asynchronous native document processing with Blob Storage; will include request formats, storage URL patterns, and status retrieval parameters unique to this feature. |
 | [Prebuilt component reference](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/prebuilt-component-reference) | configuration | 0.65 | Reference for supported prebuilt entities; likely includes lists and constraints that are product-specific configuration options. |
@@ -202,7 +229,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Accepted data formats](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/concepts/data-formats) | 0.40 | Data formats overview; summary doesn’t expose detailed schema tables or constraints. |
 | [Adapt PII to your domain](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/adapt-to-domain-pii) | 0.40 | Domain adaptation feature description; summary doesn’t show concrete config parameter tables or numeric thresholds. |
 | [App planning](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/plan) | 0.40 | Planning article is likely conceptual (how CQA interacts with other services) without concrete thresholds or decision matrices. |
-| [Build a multi-turn conversation model 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model) | 0.40 | How-to for building multi-turn CLU models; appears conceptual/procedural without explicit limits or config matrices. |
 | [Build schema](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/how-to/build-schema) | 0.40 | Schema design guidance appears conceptual; no quantified thresholds or product-specific decision matrices visible. |
 | [Create a fine-tuning task project](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/create-project) | 0.40 | How-to create CLU fine-tuning tasks; mostly workflow, not detailed config tables or limits. |
 | [Create, test, and deploy a knowledge base](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/create-test-deploy) | 0.40 | How-to create/test/deploy CQA knowledge base; appears as a workflow guide without explicit limits, config tables, or troubleshooting mappings. |
@@ -212,7 +238,6 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/faq) | 0.40 | FAQ may contain some specifics but summary doesn’t indicate structured error codes, limits, or config tables. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/language-support) | 0.40 | Language support list; catalog-like, not configuration or limits per the defined categories. |
 | [Manage projects](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/manage-knowledge-base) | 0.40 | General project management overview; summary does not indicate detailed configuration tables, limits, or error mappings. |
-| [Multi-turn conversations 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations) | 0.40 | Conceptual explanation of entity slot filling; summary doesn’t indicate numeric thresholds, config tables, or error mappings. |
 | [Multiple domains](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/tutorials/multiple-domains) | 0.40 | No-code FAQ bot tutorial; primarily step-by-step instructions without expert-level configuration matrices or limits. |
 | [Precise answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/precise-answering) | 0.40 | Explains precise answering conceptually; summary does not indicate configuration tables, limits, or error mappings. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/quickstart) | 0.40 | Quickstart tutorial; mainly step-by-step creation, not deep configuration matrices or troubleshooting content. |
@@ -222,10 +247,10 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Use Custom NER Docker containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-containers) | 0.40 | Containers overview; summary lacks container image settings, environment variable tables, or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/faq) | 0.35 | FAQ page; summary suggests conceptual Q&A about scenarios and concepts, not detailed error codes or configuration tables. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/language-support) | 0.35 | Language support for CQA; summary doesn’t indicate numeric constraints or configuration parameters. |
-| [Recognized entity categories 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories) | 0.35 | Describes entity categories and types conceptually; likely lists categories but not in the form of limits, configs, or decision matrices. |
 | [Assertion detection](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/assertion-detection) | 0.30 | Conceptual explanation of assertion detection categories; summary doesn’t indicate concrete parameters, limits, or error mappings. |
 | [Azure Language release history](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/release-history) | 0.30 | Release history page; summary is high-level and doesn’t show structured limits, configs, or troubleshooting content, and detailed version notes aren’t visible here. |
 | [Create project](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/how-to/create-project) | 0.30 | Project creation how-to; summary doesn’t show detailed configuration parameter tables or constraints. |
+| [Deploy a CQA agent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent) | 0.30 | From the summary, this is a step-by-step guide for creating and deploying a custom question answering agent in Microsoft Foundry. It appears to be procedural/tutorial content without explicit mention of numeric limits, configuration parameter tables, RBAC role lists, error-code-based troubleshooting, or decision matrices. Without evidence of those expert-knowledge patterns, it does not fit any specified sub-skill type. |
 | [Deploy a model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/deploy-model) | 0.30 | Deployment walkthrough without tier matrices, constraints, or product-specific deployment limits. |
 | [Deploy a model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/how-to/deploy-model) | 0.30 | Deployment overview; no deployment matrices, tier constraints, or timing details in summary. |
 | [Development lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/concepts/project-development-lifecycle) | 0.30 | Conceptual project lifecycle guidance; likely high-level process without product-specific numeric thresholds or configs. |
@@ -244,13 +269,13 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Model performance (preview)](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/view-model-evaluation) | 0.30 | Evaluation how-to; no specific limits, config parameters, or error codes beyond generic advice about test splits. |
 | [Project versioning](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/custom-features/project-versioning) | 0.30 | Conceptual explanation of project versioning snapshots and models; no concrete limits, configs, or decision matrices. |
 | [Redact PII from conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii) | 0.30 | Conversation PII how-to; summary lacks explicit configuration tables or numeric constraints. |
-| [Redact PII from text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii) | 0.30 | How-to for text PII redaction; summary doesn’t show specific config parameters, limits, or error mappings. |
-| [Try multi-turn conversations 🆕](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations) | 0.30 | Quickstart for multi-turn CLU; summary doesn’t show numeric limits, config tables, or error codes. |
 | [View your model's performance](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/how-to/view-model-evaluation) | 0.30 | Evaluation how-to; similar to other evaluation pages, no product-specific numeric thresholds or configs. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/overview) | 0.25 | Overview of custom NER; describes capabilities and lifecycle at a high level without detailed parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview) | 0.25 | Overview of key phrase extraction; no detailed limits, configs, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview) | 0.25 | Overview of language detection capabilities and supported scripts; lacks detailed parameter tables or numeric limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview) | 0.25 | Overview of NER capabilities; no detailed parameters, limits, or troubleshooting mappings indicated. |
+| [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents) | 0.20 | Appears to be a conceptual integration overview of Azure Language in Foundry Tools (agents, MCP endpoints, intent routing, question answering) without clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely describes what tools/agents exist and how they conceptually integrate, rather than detailed expert configuration or constraints. |
+| [Build a multi-turn conversation model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model) | 0.20 | How-to guide for building a CLU multi-turn model; description suggests general workflow rather than expert-only limits, configs, or error diagnostics. |
 | [Connect CLU and custom question answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/tutorials/connect-services) | 0.20 | Tutorial for connecting services; typical integration walkthrough without explicit config tables or limits in summary. |
 | [Evaluation metrics](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/concepts/evaluation-metrics) | 0.20 | Conceptual explanation of evaluation metrics; no product-specific thresholds or config values. |
 | [Evaluation metrics](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/concepts/evaluation-metrics) | 0.20 | Conceptual evaluation metrics; no product-specific thresholds or decision matrices. |
@@ -264,8 +289,11 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Previous service updates](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/previous-updates) | 0.20 | Archive of updates; mostly release notes and dates without structured limits, configs, or troubleshooting mappings in the summary. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/quickstart) | 0.20 | Quickstart; likely step-by-step usage without deep limits, config matrices, or error catalogs. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/quickstart) | 0.20 | Quickstart; step-by-step usage without explicit limits tables or config matrices in summary. |
+| [Recognized entity categories](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories) | 0.20 | Page describes what entity categories and types NER can recognize, but from the summary it appears to be a conceptual taxonomy/overview without numeric limits, configuration tables, error codes, or product-specific settings. It does not match any expert-knowledge sub-skill types defined (limits, configuration, troubleshooting, etc.). |
 | [Recognized entity categories](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/health-entity-categories) | 0.20 | Describes entity categories conceptually; likely a list of categories but not configuration, limits, or troubleshooting mappings. |
+| [Redact PII from text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii) | 0.20 | Appears to be a how-to/tutorial for using PII redaction in Azure Language/Foundry Tools without clear evidence of configuration tables, limits, error-code mappings, or other product-specific expert details as defined. Likely focuses on usage steps and conceptual capability rather than quotas, troubleshooting, or detailed configuration. |
 | [Triage incoming emails with Power Automate](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/tutorials/triage-email) | 0.20 | Step-by-step tutorial wiring email, classification, and Teams via Power Automate; lacks parameter tables, limits, or troubleshooting details. |
+| [Try multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations) | 0.20 | Quickstart/tutorial for building a CLU multi-turn model; likely procedural without detailed configuration tables, limits, or troubleshooting mappings. |
 | [What is Azure Language in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview) | 0.20 | High-level service overview without numeric limits, configuration tables, or product-specific error/security details. |
 | [Connect to Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview) | 0.10 | High-level conceptual overview of custom question answering without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/glossary) | 0.10 | Glossary of definitions and terms; no configuration, limits, or troubleshooting mappings. |
@@ -273,11 +301,12 @@ confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI 
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/glossary) | 0.10 | Glossary of terms; definitions but no limits, configs, or troubleshooting mappings. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/language-support) | 0.10 | Language support article is referenced but summary doesn’t show explicit tables; cannot be sure of detailed expert data from provided text. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/language-support) | 0.10 | Language support article; summary doesn’t expose detailed tables or numeric constraints, so expert configuration data can’t be confirmed. |
+| [Multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations) | 0.10 | Conceptual explanation of CLU entity slot filling in multi-turn conversations; focuses on what and why, not detailed product-specific parameters or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview) | 0.10 | Overview of custom text classification; high-level description without detailed configs or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview) | 0.10 | High-level feature overview for orchestration workflow; marketing/conceptual content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview) | 0.10 | High-level overview of PII detection; marketing/feature description. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview) | 0.10 | Overview of sentiment analysis and opinion mining; high-level feature description without expert numeric or config details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview) | 0.10 | Overview of summarization; summary indicates conceptual description and marketing-style positioning without concrete limits, configs, or error mappings. |
-| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new) | 0.10 | What's new / release notes summary; no detailed limits, configs, or troubleshooting mappings described. |
+| [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new) | 0.10 | Release notes/what's new page with high-level feature updates; no detailed limits, configs, error codes, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview) | - | High-level conceptual overview of custom question answering without detailed limits, configuration tables, error codes, or decision matrices. |
 | [language-detection/how-to/use-containers.mdanguage support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/language-support) | - | Language support listing is implied but not shown; summary doesn’t confirm detailed tables or parameters, so expert numerical/config data can’t be assumed. |

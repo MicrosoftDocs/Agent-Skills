@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-18'
 category_descriptions:
-  configuration: 'Configuring VM Scale Sets: autoscale, upgrades, health/repairs,
-    networking, disks, instance mix, standby pools, protection, and CLI/PowerShell/portal
-    settings and policies.'
+  configuration: 'Configuring VM Scale Sets: scaling rules, upgrades, health/repairs,
+    networking, disks, images, standby pools, instance mix, protection, and automation
+    via CLI/PowerShell/ARM.'
   architecture-patterns: 'Designing resilient VM scale sets: zones, fault domains,
     zone balancing modes, proximity placement groups, and standby pools to optimize
     availability, latency, and scale-out behavior.'
@@ -28,17 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, decision making, architecture & design patterns, limits
   & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby pools,
-  or disk encryption with Key Vault, and other Azure Virtual Machine Scale Sets related
-  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Service Fabric
-  (use azure-service-fabric), Azure App Service (use azure-app-service).
-use_when: Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby
-  pools, or disk encryption with Key Vault, and other Azure Virtual Machine Scale
-  Sets related development tasks.
+  Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby pools,
+  or VMSS disk encryption, and other Azure Virtual Machine Scale Sets related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure App Service
+  (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps).
+use_when: Use when configuring autoscale rules, upgrade modes, zones/PPGs, Spot/standby
+  pools, or VMSS disk encryption, and other Azure Virtual Machine Scale Sets related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Service Fabric (use
-  azure-service-fabric), Azure App Service (use azure-app-service).
+  App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Container Apps (use azure-container-apps).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 93
+- **Updated Pages**: 3
+- **Unchanged**: 90
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -62,16 +62,25 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 5 | 5.4% |
-| configuration | 41 | 44.1% |
+| configuration | 44 | 47.3% |
 | decision-making | 10 | 10.8% |
 | deployment | 6 | 6.5% |
 | integrations | 6 | 6.5% |
 | limits-quotas | 5 | 5.4% |
-| security | 8 | 8.6% |
+| security | 5 | 5.4% |
 | troubleshooting | 2 | 2.2% |
 | *(Unclassified)* | 10 | 10.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager)
+  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
+- [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing)
+  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
+- [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview)
+  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
 
 ## Classified Pages
 
@@ -92,13 +101,12 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Scale-In Policy](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy) | configuration | 0.75 | Explains three scale-in configurations and how they affect VM removal order; includes specific policy names and options unique to VMSS. |
 | [Spot Priority Mix](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/spot-priority-mix) | decision-making | 0.75 | Explains how to mix Spot and standard VMs in one scale set, with guidance on achieving high availability and cost savings—clear product-specific trade-off and selection guidance. |
 | [API comparison](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/orchestration-modes-api-comparison) | configuration | 0.70 | API comparison between orchestration modes documents exact API shapes, property names, and behavioral differences. This is detailed product-specific configuration and API reference knowledge beyond generic concepts. |
-| [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview) | security | 0.70 | Although called an overview, this ADE-for-VMSS article includes stepwise instructions and product-specific parameters/constraints for enabling encryption, including retirement timelines and migration requirements, which are concrete security configuration details. |
 | [Azure Spot Virtual Machines](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/use-spot) | decision-making | 0.70 | Covers when to use Spot VMs, eviction behavior, and workload suitability; provides product-specific trade-offs between cost and reliability for Spot-based scale sets. |
 | [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-monitor-pool-events) | integrations | 0.70 | Shows how to send standby pool events to Log Analytics; includes workspace configuration, table names, and query patterns specific to this integration. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-create) | configuration | 0.70 | Creation article will include standby pool resource properties, states, and configuration options specific to VMSS. |
 | [Custom image templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-custom-image) | deployment | 0.70 | Shows how to reference custom images in templates, including specific ARM properties and image resource references—deployment configuration details. |
 | [Enable a scale set with automatic zone balance (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/auto-zone-balance-enable) | configuration | 0.70 | Step-by-step enabling of a preview feature with specific property names and allowed values for Automatic Zone Balance, which are product-specific configuration details. |
-| [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing) | security | 0.70 | Extension sequencing for ADE on VMSS is a product-specific edge case: ordering of extensions, required settings, and gotchas to avoid failures. This is detailed security configuration and behavior unique to this product. |
+| [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing) | configuration | 0.70 | Covers Azure Disk Encryption extension sequencing on Virtual Machine Scale Sets, which involves specific extension names, ordering rules, and configuration parameters unique to this product. These are concrete configuration details rather than conceptual guidance. |
 | [Extension sequencing on scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-extension-sequencing) | configuration | 0.70 | Explains extension sequencing, dependencies, and ordering to avoid resource conflicts; product-specific extension configuration behavior. |
 | [FAQs and troubleshooting](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-mix-faq-troubleshooting) | troubleshooting | 0.70 | FAQ plus troubleshooting for instance mix will include specific failure scenarios, causes, and resolutions unique to this feature. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-faq) | limits-quotas | 0.70 | FAQ for standby pools explicitly notes support constraints (for example, only Flexible orchestration, specific regions or VM types) and likely includes numeric limits and behaviors unique to this feature. |
@@ -119,7 +127,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Spot Placement Score](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/spot-placement-score) | decision-making | 0.70 | Describes Spot Placement Score, including inputs (up to eight regions, five VM sizes) and score categories (High/Low), enabling quantified decision-making for where to deploy Spot VMs. |
 | [Update or delete a standby pool](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/standby-pools-update-delete) | configuration | 0.70 | Describes how to change instance states and max ready capacity; includes configuration fields and constraints unique to standby pools. |
 | [Use Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-powershell) | integrations | 0.70 | Provides specific PowerShell cmdlets and parameters for managing scale sets, which are product-specific integration details. |
-| [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager) | security | 0.70 | ARM template quickstart for encrypted VMSS will show specific template properties, JSON schema fields, and required values for Azure Disk Encryption and Key Vault integration, which are detailed security configuration patterns. |
+| [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager) | configuration | 0.70 | ARM-template-focused quickstart for enabling Azure Disk Encryption on Virtual Machine Scale Sets. It necessarily includes product-specific template schema, extension names, and parameter fields/values required to configure encryption, which are configuration details not inferable from general knowledge. |
 | [Use PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-powershell) | security | 0.70 | How-to for Azure Disk Encryption on VMSS via PowerShell will include specific cmdlets, parameter names, and required Key Vault/identity settings. These are product-specific security configuration details, not just conceptual encryption guidance. |
 | [Use an existing virtual network](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-existing-vnet) | configuration | 0.70 | Shows how to modify a base VMSS template to reference an existing VNet, including specific ARM template fields (subnet IDs, resource references). These are concrete configuration patterns for networking integration. |
 | [Use data disks with scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attached-disks) | configuration | 0.70 | Attached data disks for VMSS typically include product-specific configuration details (disk types, limits per VM size, ARM template properties, and CLI/PowerShell parameters). These are concrete configuration options and patterns unique to VM scale sets rather than just conceptual storage info. |
@@ -131,6 +139,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Autoscale using guest metrics](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-mvss-guest-based-autoscale-linux) | configuration | 0.65 | Describes using guest metrics with diagnostics extension; includes extension configuration, metric names, and autoscale rule parameters specific to VMSS. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-autoscale-cli) | configuration | 0.65 | Autoscale tutorial will define autoscale rule parameters (thresholds, cooldowns, metric names) and example numeric values, which are product-specific configuration details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-use-disks-cli) | configuration | 0.65 | Disk tutorial for VMSS will include disk types, size options, and attachment patterns specific to scale sets, which are concrete configuration details. |
+| [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview) | configuration | 0.65 | Although labeled as an overview, it provides stepwise instructions for enabling ADE on scale sets, which typically include specific parameter names, extension configuration, and required settings. These product-specific configuration details qualify as expert knowledge. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-use-disks-powershell) | configuration | 0.65 | Similar to CLI version, but with PowerShell; includes product-specific disk configuration parameters and patterns for VMSS. |
 | [Changing the upgrade policy mode](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-change-upgrade-policy) | configuration | 0.65 | Explains how to switch upgrade modes post-deployment and implications; includes UI/API configuration steps specific to this product. |
 | [Create a scale set with instance mix](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-mix-create) | configuration | 0.65 | Shows how to specify multiple VM sizes and allocation strategies; includes configuration properties and allowed values unique to instance mix. |

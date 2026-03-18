@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and network
     fabric: JSON templates, isolation domains, BGP/VRF/route policies, ACLs, QoS,
@@ -12,9 +12,9 @@ category_descriptions:
     Azure prerequisite/health validation.'
   decision-making: Guidance on choosing Nexus SKUs, VM sizes, storage software versions,
     and planning where to place Nexus Kubernetes resources in your deployment.
-  limits-quotas: Limits, supported versions, storage planning, node restarts/timeouts,
-    isolation domain requirements, upgrade cadence, and log behavior/quotas for Azure
-    Operator Nexus.
+  limits-quotas: Limits, capacity planning, supported versions, upgrade cadence, node
+    restarts/timeouts, isolation domain requirements, and log behavior/quotas for
+    Azure Operator Nexus.
   best-practices: Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in
     Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance
     components.
@@ -26,18 +26,18 @@ category_descriptions:
     with Nexus network/compute.'
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when configuring Nexus
-  fabric/VRF/BGP, Nexus AKS clusters, near-edge storage, bare metal/VM recovery, or
-  upgrades, and other Azure Operator Nexus related development tasks. Not for Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Network Function
-  Manager (use azure-network-function-manager), Azure Virtual Network (use azure-virtual-network),
-  Azure Networking (use azure-networking).
-use_when: Use when configuring Nexus fabric/VRF/BGP, Nexus AKS clusters, near-edge
-  storage, bare metal/VM recovery, or upgrades, and other Azure Operator Nexus related
-  development tasks.
-confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Network Function Manager (use azure-network-function-manager), Azure Virtual
-  Network (use azure-virtual-network), Azure Networking (use azure-networking).
+  limits & quotas, security, configuration, and deployment. Use when managing Nexus
+  clusters, fabric BGP/VRF, ACL/QoS, NAKS/Kubernetes, or near‑edge storage architecture,
+  and other Azure Operator Nexus related development tasks. Not for Azure Network
+  Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan).
+use_when: Use when managing Nexus clusters, fabric BGP/VRF, ACL/QoS, NAKS/Kubernetes,
+  or near‑edge storage architecture, and other Azure Operator Nexus related development
+  tasks.
+confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
+  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 217
+- **Updated Pages**: 1
+- **Unchanged**: 216
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
@@ -71,6 +71,11 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 58 | 26.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions)
+  - Updated: 2026-02-25T23:03:00.000Z → 2026-02-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -103,7 +108,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Customize cluster DNS](https://learn.microsoft.com/en-us/azure/operator-nexus/how-to-customize-kubernetes-cluster-dns) | configuration | 0.85 | Shows exact ConfigMap names, kubectl commands, and override patterns for DNS in Nexus clusters, including default vs override behavior. |
 | [Isolation Domain configuration](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-isolation-domain-configuration) | configuration | 0.85 | Explicitly a configuration reference; likely includes parameters, allowed values, and examples for isolation domain resources. |
 | [Managing ETCD Health in Nexus Kubernetes Cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-manage-data-store-health) | best-practices | 0.85 | Product-specific ETCD maintenance guidance (backup cadence, compaction/defrag procedures, monitoring metrics) tailored to Nexus AKS clusters. |
-| [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions) | limits-quotas | 0.85 | Lists exact supported software versions as of a specific release and states Nexus only supports N-2 from latest validated version, a precise version limit. |
 | [Troubleshoot DNS Issues](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-dns-issues) | troubleshooting | 0.85 | Covers Envoy DNS Proxy behavior in NNF and specific steps to diagnose DNS failures impacting Nexus resource deployment and management. |
 | [Troubleshoot Internet host virtual machine](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-internet-host-virtual-machine) | troubleshooting | 0.85 | Covers Nexus-specific networking and DNS paths when accessing CSN-connected internet hostnames from AKS hybrid clusters. |
 | [Troubleshoot LACP Bonding](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-lacp-bonding) | troubleshooting | 0.85 | Explains how to detect and resolve LACP bonding issues between Mellanox cards and Arista switches in Nexus deployments. |
@@ -148,6 +152,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [How to Configure NNF with Bring Your Own (BYO) Storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bring-your-own-storage-network-fabric) | configuration | 0.78 | Shows how to wire a customer-managed storage account and user-assigned managed identity into NNF; includes specific resource properties and identity scopes. |
 | [How to Configure Network TAP Rules with User Assigned Managed Identity (UAMI) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-tap-rules-with-user-assigned-managed-identity) | security | 0.78 | Shows how TAP rules use UAMI to access storage and other services; includes identity-based authentication configuration and Trusted Microsoft Services alignment. |
 | [Instance to on-premises WAN Connectivity](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-customer-edge-provider-edge-connectivity) | configuration | 0.78 | A 'reference ... connectivity' page for PE configuration will list concrete interconnectivity parameters (field names, allowed values, protocol settings) specific to Operator Nexus PE-CE, which are product-specific configuration details not generally known to LLMs. |
+| [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions) | limits-quotas | 0.78 | The page enumerates the exact software versions currently supported for Azure Operator Nexus (up to N-2 from latest validated), which are product-specific, time-sensitive constraints similar to compatibility limits. These version lists are expert knowledge not reliably known from training and function as hard support boundaries, aligning best with the limits-quotas category. |
 | [Troubleshoot Bare Metal Server Problems](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-reboot-reimage-replace) | troubleshooting | 0.78 | The page is a symptom-driven guide for resolving Azure Operator Nexus bare metal machine issues using Restart, Reimage, and Replace. It focuses on when and how to use each action to remediate server problems, which is product-specific troubleshooting knowledge beyond generic reboot guidance. |
 | [BareMetal BMC Access Setup](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-bmc-ssh) | security | 0.76 | Describes az networkcloud cluster bmckeyset for BMC SSH access; product-specific security configuration and constraints. |
 | [BareMetal BMM Access Setup](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-bmm-ssh) | security | 0.76 | Uses az networkcloud cluster baremetalmachinekeyset to control SSH access from specific jump hosts; includes security constraints and emergency-only usage. |

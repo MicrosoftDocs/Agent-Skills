@@ -3,7 +3,7 @@ name: azure-database-mysql
 description: Expert knowledge for Azure Database for MySQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying MySQL Flexible Server, tuning performance, configuring HA/networking, securing access, or integrating apps, and other Azure Database for MySQL related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for MySQL Skill

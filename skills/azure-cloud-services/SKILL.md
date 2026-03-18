@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-services
-description: Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Cloud Services (extended support), Guest OS versions, Key Vault certs, autoscale rules, or PowerShell automation, and other Azure Cloud Services related development tasks. Not for Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps).
+description: Expert knowledge for Azure Cloud Services development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Cloud Services roles, .csdef/.cscfg, Guest OS versions, Key Vault certs, or autoscale rules, and other Azure Cloud Services related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Services Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L40 | Diagnosing and fixing common migration errors when moving classic Cloud Services to Cloud Services (extended support), including deployment, configuration, and compatibility issues. |
 | Best Practices | L41-L45 | Guidance on designing and configuring autoscale rules for Cloud Services, including metrics, thresholds, and patterns to optimize performance, reliability, and cost. |
-| Decision Making | L46-L53 | Guidance on when to use Cloud Services vs VM Scale Sets, and how to plan and execute migrations from classic/non-VNet Cloud Services to extended support and VNets |
-| Limits & Quotas | L54-L60 | VM instance size limits/capacities and timelines, impacts, and constraints related to Guest OS family retirements for Azure Cloud Services. |
-| Security | L61-L67 | Using Key Vault for certificates in Cloud Services and understanding Azure Guest OS security updates, support lifecycle, and retirement policies |
-| Configuration | L68-L86 | Configuring Cloud Services roles and deployments: .csdef/.cscfg schemas, network/load balancer settings, diagnostics, RDP, Key Vault, extensions, alerts, and scaling/SKU overrides. |
-| Integrations & Coding Patterns | L87-L93 | Automating Azure Cloud Services (extended support) with PowerShell: creating deployments, retrieving service details, and resetting or redeploying cloud service instances. |
-| Deployment | L94-L97 | Guidance on planning and managing Guest OS version upgrades for Azure Cloud Services, including upgrade paths, scheduling, and compatibility considerations. |
+| Decision Making | L46-L54 | Planning, migrating, and operating Azure Cloud Services (extended support), including feature comparison with VM Scale Sets and moving classic/non-VNet services into VNets. |
+| Limits & Quotas | L55-L61 | VM instance size limits/capacities and timelines, impacts, and constraints related to Guest OS family retirements for Azure Cloud Services. |
+| Security | L62-L68 | Using Key Vault for certificates in Cloud Services and understanding Azure Guest OS security updates, support lifecycle, and retirement policies |
+| Configuration | L69-L87 | Configuring Cloud Services roles and deployments: .csdef/.cscfg schemas, network/load balancer settings, diagnostics, RDP, Key Vault, extensions, alerts, and scaling/SKU overrides. |
+| Integrations & Coding Patterns | L88-L94 | Automating Azure Cloud Services (extended support) with PowerShell: creating deployments, retrieving service details, and resetting or redeploying cloud service instances. |
+| Deployment | L95-L98 | Guidance on planning and managing Guest OS version upgrades for Azure Cloud Services, including upgrade paths, scheduling, and compatibility considerations. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -46,6 +46,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Plan and operate Azure Cloud Services (extended support) | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq |
 | Compare Cloud Services and Virtual Machine Scale Sets features | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/feature-support-analysis |
 | Plan migration from Cloud Services classic to extended support | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-overview |
 | Understand technical requirements for Cloud Services migration | https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-technical-details |

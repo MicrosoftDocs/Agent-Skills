@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critical workloads on Azure, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, Oracle, SaaS, HPC, or mission‑critical workloads and related Azure service architectures, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Recommendations | L44-L117 | Prescriptive best practices for Azure workloads: cost optimization, reliability, performance, security, DevOps/automation, DR, observability, and sustainable design across services and environments |
 | Design Principles | L118-L137 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
 | Tradeoffs | L138-L147 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L148-L199 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for Azure Virtual Desktop, Azure VMware Solution, and core Azure services using Well-Architected best practices. |
+| Service Guides | L148-L199 | End-to-end architecture, security, networking, operations, monitoring, and optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
 | Workload Patterns | L200-L267 | End-to-end design, platform selection, operations, security, and optimization patterns for specific Azure workloads (AI, HPC, mission-critical, Oracle, SaaS, SAP, sustainability). |
 | Assessment Questions | L268-L281 | Guided assessments and maturity reviews for Azure workloads (AI, SaaS, AVD, AVS) across cost, reliability, performance, security, operations, and mission‑critical readiness. |
 
@@ -168,7 +168,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply WAF best practices to Azure API Management | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-api-management |
 | Configure Azure Application Gateway v2 with WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway |
 | Configure Azure Blob Storage using WAF best practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage |
-| Architect Azure Container Apps with WAF-aligned practices | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps |
+| Apply Well-Architected practices to Azure Container Apps | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps |
 | Apply WAF best practices to Azure Database for MySQL | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql |
 | Use WAF-aligned architecture for Azure Databricks | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-databricks |
 | Optimize Azure Disk Storage using WAF guidance | https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-disk-storage |

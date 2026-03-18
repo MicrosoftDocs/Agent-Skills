@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   decision-making: Guides for choosing App Service tiers, plans, auth and networking,
     plus planning migrations (Windows→Linux, .NET, VNet, Docker Compose, Arc) and
@@ -7,11 +7,12 @@ category_descriptions:
   best-practices: Best practices for deploying, securing, routing, and maintaining
     App Service apps, including handling IP/TLS changes, Traffic Manager, and minimizing
     downtime during maintenance/restarts
-  configuration: 'Configuring App Service apps: app settings, auth, networking/VNet,
-    storage, containers, languages, domains/certs, ASE, health/monitoring, backups,
-    and environment variables.'
-  security: 'Securing App Service apps: auth (Entra, social, OIDC, MCP), TLS/certs,
-    IP/VNet/firewall, managed identities, Graph/SQL/Storage access, and security policies/compliance.'
+  configuration: 'Configuring App Service apps: app settings, auth, networking/VNet/ASE,
+    storage, domains/certs, containers/sidecars, language runtimes, health/monitoring,
+    backup/restore, and environment variables.'
+  security: 'Configuring App Service security: auth (Entra, social, OIDC, MCP), TLS/certs,
+    IP/VNet/firewall, managed identities, Graph/SQL/Storage access, and policy/compliance
+    protections.'
   deployment: 'Deploying and scaling App Service apps: CI/CD (GitHub Actions, Azure
     Pipelines), containers, ZIP/FTP/local Git, deployment slots, scaling/ASE/Arc,
     DNS migration, and IaC with ARM/Bicep/Terraform.'
@@ -30,14 +31,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure App Service development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring App Service plans/ASE, deployment slots/CI-CD, VNet integration, managed
-  identity/Key Vault, or diagnostics, and other Azure App Service related development
-  tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use
-  azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web
-  Apps (use azure-static-web-apps).
-use_when: Use when configuring App Service plans/ASE, deployment slots/CI-CD, VNet
-  integration, managed identity/Key Vault, or diagnostics, and other Azure App Service
-  related development tasks.
+  choosing plans/ASE, configuring auth/networking, using slots/CI-CD, Key Vault/MSI,
+  or App Service diagnostics, and other Azure App Service related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps),
+  Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).
+use_when: Use when choosing plans/ASE, configuring auth/networking, using slots/CI-CD,
+  Key Vault/MSI, or App Service diagnostics, and other Azure App Service related development
+  tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Container
   Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure
   Static Web Apps (use azure-static-web-apps).
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 247
+- **Updated Pages**: 2
+- **Unchanged**: 245
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-service/azure-app-service.csv`
 
@@ -75,6 +75,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | *(Unclassified)* | 85 | 34.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview of TLS/SSL in App Service](https://learn.microsoft.com/en-us/azure/app-service/overview-tls)
+  - Updated: 2025-09-08T22:37:00.000Z → 2026-03-17T22:33:00.000Z
+- [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference)
+  - Updated: 2026-03-12T22:17:00.000Z → 2026-03-17T08:00:00.000Z
 
 ## Classified Pages
 
@@ -109,7 +116,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/app-service/monitor-app-service-reference) | configuration | 0.80 | Reference article listing metrics, logs, and schema for App Service monitoring—detailed product-specific monitoring configuration/data model. |
 | [Mount Azure Storage](https://learn.microsoft.com/en-us/azure/app-service/configure-connect-to-azure-storage) | configuration | 0.80 | Describes how to configure Azure Files and Premium Files as network shares for App Service, including mount settings—product-specific configuration. |
 | [Open SSH session to a web app in a container](https://learn.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session) | configuration | 0.80 | Details how SSH works for Linux and Windows containers in App Service, including required settings and image modifications—service-specific configuration. |
-| [Overview of TLS/SSL in App Service](https://learn.microsoft.com/en-us/azure/app-service/overview-tls) | security | 0.80 | Details TLS versions, certificate management, bindings, and mutual auth specific to App Service—security configuration reference. |
 | [Restrict access from IPs](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions) | security | 0.80 | How-to for defining ordered allow/deny lists with IPs and subnets; concrete security configuration for App Service apps. |
 | [Run from package](https://learn.microsoft.com/en-us/azure/app-service/deploy-run-package) | deployment | 0.80 | Explains the 'run from package' feature, including unsupported scenarios (Python) and required flags—App Service–specific deployment behavior and constraints. |
 | [Secure a custom domain with HTTPS](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-bindings) | security | 0.80 | Shows how to bind certificates to custom domains and enable HTTPS—product-specific security configuration steps and constraints. |
@@ -193,11 +199,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Integrate with Traffic Manager](https://learn.microsoft.com/en-us/azure/app-service/web-sites-traffic-manager) | best-practices | 0.70 | Explicitly framed as best practices for configuring Traffic Manager with App Service; includes product-specific recommendations and gotchas. |
 | [Language support policy](https://learn.microsoft.com/en-us/azure/app-service/operating-system-functionality) | configuration | 0.70 | Describes exact file, network, and registry access plus diagnostics available to apps; these are platform-specific behavioral details. |
 | [Migrate Python Windows apps to Linux](https://learn.microsoft.com/en-us/azure/app-service/app-service-migration-windows-linux) | decision-making | 0.70 | Covers key considerations and dependency checks when moving from Windows to Linux; supports OS/runtime migration decisions. |
+| [Overview of TLS/SSL in App Service](https://learn.microsoft.com/en-us/azure/app-service/overview-tls) | security | 0.70 | The page describes Azure App Service–specific TLS/SSL behavior, including supported TLS versions, certificate management, bindings, and mutual authentication. These are product-specific security configuration details (for example, which TLS versions are supported and how to configure them in App Service), which qualify as expert knowledge under the security sub-skill. It goes beyond generic TLS concepts and focuses on App Service–specific secure configuration. |
 | [Resource Manager templates](https://learn.microsoft.com/en-us/azure/app-service/samples-resource-manager-templates) | deployment | 0.70 | ARM template samples encode resource types, properties, and deployment patterns specific to App Service, useful for production deployments. |
 | [Security](https://learn.microsoft.com/en-us/azure/app-service/configure-language-java-security) | security | 0.70 | Java-specific security configuration including authentication, Key Vault references, and Java keystore settings—product-specific security details. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/app-service/overview-security) | best-practices | 0.70 | Article explicitly focuses on security best practices for App Service, likely including concrete recommendations (networking, identity, configuration) specific to this platform. |
 | [TLS/SSL address](https://learn.microsoft.com/en-us/azure/app-service/ip-address-change-ssl) | best-practices | 0.70 | Explains how to release and reassign TLS/SSL IPs and notes unsupported service endpoints; concrete platform-specific behavior and steps. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/app-service/samples-terraform) | deployment | 0.70 | Terraform samples contain resource blocks and arguments specific to App Service deployment and configuration. |
+| [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference) | configuration | 0.70 | Page describes specific, product-only settings for planned maintenance behavior (upgrade preference options for App Service Environment v3) that control how and when upgrades are applied; these are configuration parameters unique to this service rather than generic concepts. |
 | [Use .NET](https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-key-vault) | integrations | 0.70 | Tutorial shows product-specific pattern for using App Service managed identity with Azure Key Vault for a backend that doesn’t support MSI. It necessarily includes concrete SDK usage, configuration names (e.g., Key Vault URI, secret names, MSI usage), and wiring between App Service and Key Vault, which are integration-focused coding patterns rather than generic concepts. |
 | [Use Azure Pipelines](https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines) | deployment | 0.70 | Describes how to configure Azure Pipelines specifically for App Service deployments with YAML/classic pipelines—product-specific CI/CD deployment patterns. |
 | [Use GitHub Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions) | deployment | 0.70 | Provides App Service–specific GitHub Actions deployment configuration and tasks, which are concrete deployment integration patterns. |
@@ -227,7 +235,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Contain
 | [Overview of custom domains](https://learn.microsoft.com/en-us/azure/app-service/overview-custom-domains) | decision-making | 0.65 | Overview that likely includes guidance on when to map, buy, migrate, secure, and route traffic for custom domains—service-specific domain management decisions. |
 | [Restore deleted app](https://learn.microsoft.com/en-us/azure/app-service/app-service-undelete) | deployment | 0.65 | Describes how to undelete apps via portal or PowerShell; product-specific recovery/deployment behavior. |
 | [Scale up server capacity](https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up) | deployment | 0.65 | Scale-up article typically includes SKU-specific feature and capacity tables (CPU, memory, storage, capabilities) that guide deployment and plan selection decisions. |
-| [Upgrade preference for planned maintenance](https://learn.microsoft.com/en-us/azure/app-service/environment/how-to-upgrade-preference) | configuration | 0.65 | Guides configuring planned maintenance upgrade preferences for App Service Environment v3 via portal/CLI. Involves specific resource properties and configuration options for upgrade behavior, which are product-specific configuration details. |
 | [Use WebJobs SDK](https://learn.microsoft.com/en-us/azure/app-service/webjobs-sdk-how-to) | integrations | 0.65 | Describes how to write code with WebJobs SDK to access Azure and third-party services; likely includes binding attributes, parameter names, and configuration patterns unique to WebJobs SDK. |
 | [WordPress FAQ](https://learn.microsoft.com/en-us/azure/app-service/wordpress-faq) | troubleshooting | 0.65 | FAQ for WordPress on App Service typically includes product-specific issues, error behaviors, and resolutions unique to this hosting model, which qualify as troubleshooting expert knowledge. |
 | [to Microsoft Graph as user](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user) | security | 0.65 | Covers delegated permissions and Entra configuration for user-based Graph access; includes app registration settings and permission scopes. |

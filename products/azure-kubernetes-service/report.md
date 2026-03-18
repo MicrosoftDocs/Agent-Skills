@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   security: 'Securing AKS clusters: identity and access (Entra, RBAC, workload identity),
     network and API protection, encryption and keys, node hardening, policies, PCI
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 574
+- **Updated Pages**: 1
+- **Unchanged**: 573
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-kubernetes-service/azure-kubernetes-service.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 129 | 22.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Scale an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/scale-cluster)
+  - Updated: 2024-08-01T20:29:00.000Z → 2026-03-17T22:13:00.000Z
 
 ## Classified Pages
 
@@ -541,7 +546,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Multi-cluster multi-tenancy with Managed Fleet Namespaces](https://learn.microsoft.com/en-us/azure/kubernetes-fleet/concepts-fleet-managed-namespace) | 0.45 | Conceptual overview of Managed Fleet Namespaces; multi-tenancy concepts without detailed configuration matrices or numeric thresholds. |
 | [Overview of add-ons, extensions, and integrations](https://learn.microsoft.com/en-us/azure/aks/integrations) | 0.45 | High-level overview of add-ons and integrations; summary does not indicate detailed config tables or error/limit specifics. |
 | [Resize an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/resize-cluster) | 0.45 | Describes resizing AKS clusters and autoscaling; mostly conceptual and procedural scaling guidance, not explicit limits tables or config parameter references. |
-| [Scale an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/scale-cluster) | 0.45 | How-to for manually scaling nodes; likely uses basic az CLI commands and concepts without detailed configuration matrices or limits. |
 | [Understand AKS usage and costs](https://learn.microsoft.com/en-us/azure/aks/understand-aks-costs) | 0.45 | High-level guidance and links about understanding AKS usage and costs; appears more like a resource index than detailed configuration or decision matrices. |
 | [Use the AKS Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/aks/aks-extension-vs-code) | 0.45 | Basic usage of VS Code extension to view/manage clusters; summary suggests UI-level guidance rather than deep config or troubleshooting. |
 | [Vertical Pod Autoscaler overview](https://learn.microsoft.com/en-us/azure/aks/vertical-pod-autoscaler) | 0.45 | Overview of Vertical Pod Autoscaler; mostly conceptual description of behavior without detailed API tables or configuration parameters. |
@@ -617,6 +621,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/container-network-security-wireguard-encryption-concepts) | 0.30 | WireGuard encryption concepts overview; appears conceptual security explanation rather than detailed config or role mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/aks/mongodb-overview) | 0.30 | High-level overview of deploying MongoDB on AKS; summary does not indicate detailed config parameters or troubleshooting content. |
 | [Overview of KMS etcd encryption](https://learn.microsoft.com/en-us/azure/aks/kms-data-encryption-concepts) | 0.30 | Conceptual explanation of encryption at rest and KMS models; no detailed configuration tables, limits, or product-specific parameters. |
+| [Scale an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/scale-cluster) | 0.30 | Primarily a how-to guide for manually scaling AKS node counts using CLI/PowerShell. It does not emphasize numeric limits/quotas, decision matrices, or detailed configuration tables; instead it explains the process (cordon/drain, Ready state) at a conceptual/operational level that a well-trained LLM is likely to know. |
 | [Scaling concepts](https://learn.microsoft.com/en-us/azure/aks/concepts-scale) | 0.30 | Conceptual overview of scaling options (HPA, cluster autoscaler, ACI); high-level without clear evidence of numeric thresholds or config tables. |
 | [Service meshes overview](https://learn.microsoft.com/en-us/azure/aks/servicemesh-about) | 0.30 | Conceptual overview of service meshes and capabilities; lacks product-specific numeric thresholds, configs, or error mappings. |
 | [Stop and start an AKS cluster](https://learn.microsoft.com/en-us/azure/aks/start-stop-cluster) | 0.30 | Page appears to be a how-to/tutorial on stopping and starting AKS clusters, likely focused on operational steps rather than detailed limits, configuration matrices, or error-code-based troubleshooting. The summary does not indicate specific numeric limits, configuration parameter tables, RBAC role lists, or decision matrices, so it does not meet the expert-knowledge criteria for any sub-skill type. |

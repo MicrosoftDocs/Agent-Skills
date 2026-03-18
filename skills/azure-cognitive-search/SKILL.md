@@ -1,9 +1,9 @@
 ---
 name: azure-cognitive-search
-description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, skillsets, vector/semantic search, indexers, RAG patterns, or multi-region deployments, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing indexes, skillsets, vector/semantic search, indexers, RAG retrieval, or multi-region setups, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Table Storage (use azure-table-storage), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Search Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L47 | Diagnosing and fixing Azure AI Search indexer and skillset issues, including common errors, OData filter problems, portal debug sessions, and shared private link resource failures. |
-| Best Practices | L48-L68 | Best practices for indexing, enrichment, chunking, vectors, performance, concurrency, and safe updates in Azure AI Search, including RAG, custom skills, and responsible GenAI usage. |
-| Decision Making | L69-L80 | Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating capacity, choosing pricing tiers, and planning costs and hardware for search workloads |
-| Architecture & Design Patterns | L81-L88 | Architectural guidance for Azure AI Search: RAG patterns, knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability deployment designs. |
-| Limits & Quotas | L89-L99 | Limits, quotas, and behaviors for Azure AI Search services, indexers, enrichment, and vector indexes, plus a .NET tutorial that illustrates index size and loading constraints. |
-| Security | L100-L138 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
-| Configuration | L139-L234 | Configuring Azure AI Search: data sources, indexes, analyzers, vector/semantic settings, skillsets/enrichment, knowledge bases, monitoring, and indexer/connection options. |
+| Troubleshooting | L37-L48 | Diagnosing and fixing Azure AI Search indexer and skillset issues, including common errors/warnings, OData filter problems, portal debug sessions, monitoring, and private link failures |
+| Best Practices | L49-L69 | Best practices for indexing, enrichment, chunking, vectors, performance, concurrency, and safe updates in Azure AI Search, including RAG, custom skills, and responsible GenAI usage. |
+| Decision Making | L70-L81 | Guidance on upgrading/migrating Azure AI Search skills/SDKs, estimating capacity, choosing pricing tiers, and planning costs and hardware for search workloads |
+| Architecture & Design Patterns | L82-L89 | Architectural guidance for Azure AI Search: RAG patterns, knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability deployment designs. |
+| Limits & Quotas | L90-L100 | Limits, quotas, and behaviors for Azure AI Search services, indexers, enrichment, and vector indexes, plus a .NET tutorial that illustrates index size and loading constraints. |
+| Security | L101-L139 | Securing Azure AI Search: auth (keys/RBAC), encryption (CMK), network isolation, indexer access to data sources, and enforcing ACL/RBAC/Purview labels at index and query time. |
+| Configuration | L140-L234 | Configuring Azure AI Search: data sources, indexes, analyzers, vector/semantic settings, skillsets/enrichment, knowledge bases, monitoring, and indexer/connection options. |
 | Integrations & Coding Patterns | L235-L295 | Patterns and code for integrating data sources, indexers, custom skills/vectorizers, OData/Lucene queries, semantic + vector search, and agentic retrieval with Azure AI Search. |
 | Deployment | L296-L303 | Deploying and moving Azure AI Search services: ARM/Bicep/Terraform provisioning, cross-region migration steps, and checking regional/feature availability. |
 
@@ -42,6 +42,7 @@ This skill requires **network access** to fetch documentation content:
 | Debug Azure AI Search skillsets using portal sessions | https://learn.microsoft.com/en-us/azure/search/cognitive-search-how-to-debug-skillset |
 | Tutorial: Practice debugging Azure AI Search skillsets | https://learn.microsoft.com/en-us/azure/search/cognitive-search-tutorial-debug-sessions |
 | Troubleshoot Azure AI Search indexer issues without errors | https://learn.microsoft.com/en-us/azure/search/search-indexer-troubleshooting |
+| Diagnose and monitor Azure AI Search indexers | https://learn.microsoft.com/en-us/azure/search/search-monitor-indexers |
 | Troubleshoot OData collection filter errors in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-query-troubleshoot-collection-filters |
 | Troubleshoot shared private link resource issues in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/troubleshoot-shared-private-link-resources |
 
@@ -212,7 +213,6 @@ This skill requires **network access** to fetch documentation content:
 | Manage Azure AI Search with PowerShell scripts | https://learn.microsoft.com/en-us/azure/search/search-manage-powershell |
 | Configure Azure AI Search using Management REST APIs | https://learn.microsoft.com/en-us/azure/search/search-manage-rest |
 | Configure diagnostic logging for Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-monitor-enable-logging |
-| Monitor Azure AI Search indexer runs and results | https://learn.microsoft.com/en-us/azure/search/search-monitor-indexers |
 | Visualize Azure AI Search logs and metrics in Power BI | https://learn.microsoft.com/en-us/azure/search/search-monitor-logs-powerbi |
 | Monitor Azure AI Search query performance and volume | https://learn.microsoft.com/en-us/azure/search/search-monitor-queries |
 | Configure and use moreLikeThis queries in Azure AI Search | https://learn.microsoft.com/en-us/azure/search/search-more-like-this |

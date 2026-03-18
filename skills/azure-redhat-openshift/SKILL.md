@@ -1,9 +1,9 @@
 ---
 name: azure-redhat-openshift
-description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/virtualization, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure Red Hat OpenShift development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when creating ARO clusters, configuring networking/storage, securing with Entra/Key Vault, or integrating GPUs/NetApp, and other Azure Red Hat OpenShift related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Virtual Machines (use azure-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Red Hat OpenShift Skill
@@ -25,13 +25,13 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L36-L43 | Fixing common ARO cluster issues, restoring cluster access, and manually updating or troubleshooting cluster certificates and connectivity via CLI |
-| Best Practices | L44-L51 | Guidance on sizing and deploying ARO clusters/infra nodes, optimizing OpenShift Virtualization VMs, and following supportability and scaling best practices for large ARO 4 environments |
+| Best Practices | L44-L51 | Guidance on sizing and deploying ARO infra/worker nodes, optimizing OpenShift Virtualization VMs, scaling large clusters, and understanding ARO 4 support policies and limits |
 | Decision Making | L52-L56 | Defines the shared responsibility model for Azure Red Hat OpenShift, detailing which operational tasks are handled by Microsoft, Red Hat, and the customer. |
 | Limits & Quotas | L57-L62 | Scaling and capacity limits for ARO clusters, including configuring multiple load balancer IPs and understanding ARO versioning, support lifecycle, and upgrade constraints. |
 | Security | L63-L80 | Identity, auth, and network security for ARO: Entra/managed identities, workload identity, NSGs/egress control, disk encryption, FIPS, Front Door protection, Lockbox, and credential rotation. |
 | Configuration | L81-L99 | Configuring ARO clusters: networking (proxy, DNS, egress, MTU), storage (Azure Files, Prometheus), registry/pull secrets, node/subnet layout, Spot VMs, tagging, and health alerts. |
-| Integrations & Coding Patterns | L100-L109 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
-| Deployment | L110-L122 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
+| Integrations & Coding Patterns | L100-L108 | Running ARO with external services: virtualization, NVIDIA GPUs, Azure NetApp Files, Prometheus→Azure Monitor, ACR auth, and Azure Key Vault secret integration. |
+| Deployment | L109-L121 | Deploying and operating ARO clusters and apps: cluster creation (private/ARM/Bicep), upgrades, networking migration, backups/restores, and app runtimes (JBoss, WebSphere, S2I, serverless). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -47,7 +47,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize VM deployments on OpenShift Virtualization in ARO | https://learn.microsoft.com/en-us/azure/openshift/best-practices-openshift-virtualization |
 | Deploy and size infrastructure nodes in ARO | https://learn.microsoft.com/en-us/azure/openshift/howto-infrastructure-nodes |
 | Apply best practices for large ARO clusters | https://learn.microsoft.com/en-us/azure/openshift/howto-large-clusters |
-| Follow supportability rules for ARO 4 clusters | https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4 |
+| Apply Azure Red Hat OpenShift 4 support policies | https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4 |
 
 ### Decision Making
 | Topic | URL |
@@ -100,7 +100,6 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Enable OpenShift Virtualization on Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization |
 | Run NVIDIA GPU workloads on Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/openshift/howto-gpu-workloads |
 | Configure Azure NetApp Files storage for ARO | https://learn.microsoft.com/en-us/azure/openshift/howto-netapp-files |
 | Send ARO Prometheus metrics to Azure Monitor via remote write | https://learn.microsoft.com/en-us/azure/openshift/howto-remotewrite-prometheus |

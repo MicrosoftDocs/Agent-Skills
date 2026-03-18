@@ -18,7 +18,6 @@
 | Enforce user isolation cluster types in Databricks workspaces | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/enforce-user-isolation |
 | Restrict Azure Databricks workspace admin permissions | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/restrict-workspace-admins |
 | Configure Azure Databricks personnel access to workspaces | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace/workspace-access |
-| Manage consumer access entitlements for Databricks AI/BI | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/consumers/ |
 | Configure Microsoft Entra conditional access for Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/azure-admin/conditional-access |
 | Configure legacy credential passthrough security in Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/credential-passthrough/ |
 | Secure ADLS access with Entra ID passthrough in Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/credential-passthrough/adls-passthrough |

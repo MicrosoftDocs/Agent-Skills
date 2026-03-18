@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: 'Configuring Application Gateway and Application Gateway for Containers:
     listeners, routing, probes, health, headers/URL rewrites, WebSockets/gRPC, monitoring,
@@ -45,13 +45,13 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 - **Total Pages**: 174
 - **Fetched**: 174
 - **Fetch Failed**: 0
-- **Classified**: 130
-- **Unclassified**: 44
+- **Classified**: 129
+- **Unclassified**: 45
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 174
+- **Updated Pages**: 1
+- **Unchanged**: 173
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -62,14 +62,19 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | best-practices | 1 | 0.6% |
 | configuration | 61 | 35.1% |
 | decision-making | 6 | 3.4% |
-| deployment | 14 | 8.0% |
+| deployment | 13 | 7.5% |
 | integrations | 4 | 2.3% |
 | limits-quotas | 3 | 1.7% |
 | security | 39 | 22.4% |
 | troubleshooting | 2 | 1.1% |
-| *(Unclassified)* | 44 | 25.3% |
+| *(Unclassified)* | 45 | 25.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal)
+  - Updated: 2024-04-04T08:00:00.000Z → 2026-03-18T06:15:00.000Z
 
 ## Classified Pages
 
@@ -195,7 +200,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Create and rewrite HTTP headers](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-http-header-rewrite-powershell) | configuration | 0.63 | Combines gateway creation with configuration of header rewrite rules on autoscaling, zone-redundant SKU; includes product-specific configuration parameters. |
 | [Custom error pages](https://learn.microsoft.com/en-us/azure/application-gateway/custom-error) | configuration | 0.63 | Shows how to configure custom error pages for specific HTTP response codes; product-specific configuration of error handling behavior. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-powershell) | deployment | 0.62 | Similar to index 5 but via PowerShell; includes specific deployment requirements like dual-stack VNet and lack of backend IPv6 support. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal) | deployment | 0.62 | Documents product-specific deployment constraints (must create new gateway, cannot upgrade IPv4-only, backend IPv6 not supported, dual-stack VNet requirement) that affect how and when IPv6 can be deployed. |
 | [Monitor Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway) | configuration | 0.62 | Describes specific metrics, logs, and monitoring configuration for Application Gateway; product-specific monitoring settings and data sources. |
 | [SSL termination - Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-cli) | security | 0.62 | Similar to the PowerShell article but using CLI; includes concrete flags/parameters for binding certificates to listeners, which are product-specific security settings. |
 | [SSL termination - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-powershell) | security | 0.62 | Shows how to attach certificates for TLS termination via PowerShell; likely includes certificate parameter names, listener settings, and bindings that are product-specific security configuration details. |
@@ -223,6 +227,7 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | [Application Gateway components](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-components) | 0.30 | Describes components (listeners, backend pools, etc.) at a conceptual level; no detailed parameter tables or numeric constraints. |
 | [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features) | 0.30 | Feature overview and positioning; does not provide numeric limits, configuration parameter tables, or detailed decision matrices. |
 | [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.30 | Conceptual overview of Application Gateway for Containers and architecture; no detailed limits, configuration parameter tables, or error mappings. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal) | 0.30 | Primarily a step-by-step portal tutorial for creating an IPv6-enabled Application Gateway. It mentions some capabilities and current limitations (dual stack support, no upgrade from IPv4-only, no IPv6 backends), but does not provide detailed configuration parameter tables, numeric limits, error codes, or decision matrices. The content is procedural rather than expert reference material. |
 | [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.30 | Explains request flow conceptually; lacks specific configuration values, limits, or troubleshooting mappings. |
 | [Redirect web traffic using Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-redirect-powershell) | 0.22 | PowerShell tutorial for URL path-based redirection; despite mentioning 'production-ready', summary indicates a standard routing tutorial without explicit config matrices or limits. |
 | [About v1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement) | 0.20 | High-level retirement announcement and dates; no technical limits, configuration parameters, or detailed migration decision matrices. |

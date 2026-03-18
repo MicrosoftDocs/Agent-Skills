@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 159
+- **Updated Pages**: 0
+- **Unchanged**: 161
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -68,13 +68,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | *(Unclassified)* | 29 | 18.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration)
-  - Updated: 2026-03-05T12:13:00.000Z → 2026-03-17T06:14:00.000Z
-- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac)
-  - Updated: 2026-02-23T23:22:00.000Z → 2026-03-17T06:14:00.000Z
 
 ## Classified Pages
 

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: 'Configuring AVS private clouds: networking, storage, backup/DR,
     monitoring, DNS, security, Arc, and VMware/third‑party integrations (NSX, vSAN,
@@ -22,37 +22,39 @@ category_descriptions:
   best-practices: Guidance on AVS private cloud maintenance, HCX MON networking, NSX
     performance tuning for migrations, and security hardening best practices for Azure
     VMware Solution.
-  integrations: Networking, VPN/ExpressRoute, HCX migration patterns, traffic management,
-    monitoring/logging, and storage integrations (NetApp Files) for Azure VMware Solution
-    workloads
+  integrations: Networking, VPN/ExpressRoute, HCX migration patterns, Azure-native
+    monitoring/logging, Traffic Manager, NetApp Files, and automation run commands
+    for integrating AVS with Azure services.
   limits-quotas: Host, cluster, routing, and vSAN limits for AVS; network/port planning;
     and how to request, deploy, scale, and manage AVS host quota and capacity.
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with AVS private clouds, HCX migrations, NSX/vSAN, Citrix/Horizon
+  Use when designing AVS networking/ExpressRoute, HCX migrations, vSAN/storage, Citrix/Horizon
   VDI, or JetStream DR, and other Azure VMware Solution related development tasks.
-  Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances
-  (use azure-large-instances), SAP HANA on Azure Large Instances (use azure-sap),
-  Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
-use_when: Use when working with AVS private clouds, HCX migrations, NSX/vSAN, Citrix/Horizon
-  VDI, or JetStream DR, and other Azure VMware Solution related development tasks.
-confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Large Instances (use azure-large-instances), SAP HANA on Azure Large Instances (use
-  azure-sap), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+  Not for Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure
+  Virtual Machines (use azure-sql-virtual-machines), Azure Baremetal Infrastructure
+  (use azure-baremetal-infrastructure), SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when designing AVS networking/ExpressRoute, HCX migrations, vSAN/storage,
+  Citrix/Horizon VDI, or JetStream DR, and other Azure VMware Solution related development
+  tasks.
+confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), SQL
+  Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Baremetal
+  Infrastructure (use azure-baremetal-infrastructure), SAP HANA on Azure Large Instances
+  (use azure-sap).
 ---
 # Azure VMware Solution Crawl Report
 
 ## Summary
 
-- **Total Pages**: 134
-- **Fetched**: 134
+- **Total Pages**: 135
+- **Fetched**: 135
 - **Fetch Failed**: 0
-- **Classified**: 100
+- **Classified**: 101
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 134
 - **Deleted Pages**: 0
@@ -64,16 +66,20 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 7 | 5.2% |
 | best-practices | 3 | 2.2% |
-| configuration | 47 | 35.1% |
-| decision-making | 10 | 7.5% |
+| configuration | 47 | 34.8% |
+| decision-making | 10 | 7.4% |
 | deployment | 2 | 1.5% |
-| integrations | 9 | 6.7% |
-| limits-quotas | 8 | 6.0% |
-| security | 11 | 8.2% |
+| integrations | 10 | 7.4% |
+| limits-quotas | 8 | 5.9% |
+| security | 11 | 8.1% |
 | troubleshooting | 3 | 2.2% |
-| *(Unclassified)* | 34 | 25.4% |
+| *(Unclassified)* | 34 | 25.2% |
 
 ## Changes
+
+### New Pages
+
+- [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command)
 
 ## Classified Pages
 
@@ -141,6 +147,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Setup Backup Server](https://learn.microsoft.com/en-us/azure/azure-vmware/set-up-backup-server-for-azure-vmware-solution) | configuration | 0.70 | Details preparing AVS and Azure Backup Server for VM-level backups, including storage targets and configuration parameters. |
 | [VMware Cloud Foundations (VCF) license portability on Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-cloud-foundations-license-portability) | decision-making | 0.70 | Explains Broadcom VCF licensing changes, dates, and how to bring your own VCF subscription; contains time-bound, product-specific decision guidance. |
 | [VMware HCX Mobility Optimized Networking (MON) guidance](https://learn.microsoft.com/en-us/azure/azure-vmware/vmware-hcx-mon-guidance) | best-practices | 0.70 | Provides recommended configurations to mitigate NSX data path constraints and improve HCX migration performance—product-specific best practices. |
+| [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command) | integrations | 0.68 | The article describes product-specific Run Command usage for Azure VMware Solution, including how to download and host the correct GuestStore VMware Tools ZIP and how to execute and validate the Set-ToolsRepo command. This is an integration/coding pattern between Azure VMware Solution and VMware Tools with concrete, product-specific steps and parameters that go beyond generic knowledge. |
 | [Use VMware HCX Run Commands](https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands) | integrations | 0.68 | Describes a collection of VMware HCX-specific PowerShell cmdlets exposed as Azure VMware Solution Run Commands, including how to invoke privileged operations. This is product- and integration-specific command usage that an LLM is unlikely to know in detail from training, fitting the integrations & coding patterns category better than generic how-to content. |
 | [Deploy disaster recovery using JetStream DR software](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-disaster-recovery-using-jetstream) | deployment | 0.66 | Covers implementing JetStream DR across protected and recovery sites using Azure VMware Solution, including how instances are deployed and how CDP via VAIO is used. This is a product-specific DR deployment pattern for AVS and on-premises VMware, which qualifies as expert deployment knowledge rather than generic DR theory. |
 | [Automatic peering sync for Gen 2 (Preview)](https://learn.microsoft.com/en-us/azure/azure-vmware/native-auto-peering-sync) | configuration | 0.65 | Describes a product-specific feature with automatic synchronization of peering and routing; likely includes specific settings and behaviors not generally known. |

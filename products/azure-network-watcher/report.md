@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 62
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,10 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | *(Unclassified)* | 33 | 52.4% |
 
 ## Changes
-
-### New Pages
-
-- [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel)
 
 ## Classified Pages
 
