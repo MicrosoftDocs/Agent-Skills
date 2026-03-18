@@ -28,14 +28,18 @@ skill_description: Expert knowledge for Azure Update Manager development includi
   integrations & coding patterns, and deployment. Use when managing VM/Arc patching,
   Automanage profiles, hotpatch/ESU schedules, change tracking, or SDK/REST automation,
   and other Azure Update Manager related development tasks. Not for Azure Automation
-  (use azure-automation), Azure Monitor (use azure-monitor), Azure Osconfig (use azure-osconfig),
-  Azure Virtual Machines (use azure-virtual-machines).
+  (use azure-automation), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 use_when: Use when managing VM/Arc patching, Automanage profiles, hotpatch/ESU schedules,
   change tracking, or SDK/REST automation, and other Azure Update Manager related
   development tasks.
 confusable_not_for: Not for Azure Automation (use azure-automation), Azure Monitor
   (use azure-monitor), Azure Osconfig (use azure-osconfig), Azure Virtual Machines
   (use azure-virtual-machines).
+confusable_slugs:
+- azure-automation
+- azure-monitor
+- azure-policy
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Update Manager Crawl Report
 

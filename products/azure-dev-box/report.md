@@ -24,13 +24,19 @@ skill_description: Expert knowledge for Azure Dev Box development including trou
   patterns, and deployment. Use when designing Dev Box images, region moves, networking/policies,
   RBAC/SSO, or VS Code dev tunnel workflows, and other Azure Dev Box related development
   tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
-  Azure Lab Services (use azure-lab-services).
+  (use azure-virtual-machines), Azure Lab Services (use azure-lab-services), Azure
+  Virtual Desktop (use azure-virtual-desktop).
 use_when: Use when designing Dev Box images, region moves, networking/policies, RBAC/SSO,
   or VS Code dev tunnel workflows, and other Azure Dev Box related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
   Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop),
   Azure Lab Services (use azure-lab-services).
+confusable_slugs:
+- azure-devtest-labs
+- azure-virtual-machines
+- azure-lab-services
+- azure-virtual-desktop
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Dev Box Crawl Report
 

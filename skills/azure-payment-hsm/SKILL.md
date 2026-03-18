@@ -1,6 +1,6 @@
 ---
 name: azure-payment-hsm
-description: Expert knowledge for Azure Payment Hsm development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing Payment HSM VNets/FastPath, payShield Manager access, HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm), Azure Security (use azure-security).
+description: Expert knowledge for Azure Payment Hsm development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when designing Payment HSM VNets/FastPath, payShield Manager access, HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

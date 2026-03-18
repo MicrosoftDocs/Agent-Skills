@@ -34,6 +34,12 @@ use_when: Use when wiring SWA APIs to Azure DBs, configuring custom domains/auth
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Kubernetes
   Service (AKS) (use azure-kubernetes-service).
+confusable_slugs:
+- azure-app-service
+- azure-functions
+- azure-container-apps
+- azure-kubernetes-service
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Static Web Apps Crawl Report
 

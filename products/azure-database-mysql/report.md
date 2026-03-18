@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
@@ -42,19 +42,25 @@ use_when: Use when deploying MySQL Flexible Server, tuning performance, configur
 confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
   Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+confusable_slugs:
+- azure-database-mariadb
+- azure-database-postgresql
+- azure-sql-database
+- azure-sql-managed-instance
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Database for MySQL Crawl Report
 
 ## Summary
 
-- **Total Pages**: 177
-- **Fetched**: 177
+- **Total Pages**: 178
+- **Fetched**: 178
 - **Fetch Failed**: 0
 - **Classified**: 115
-- **Unclassified**: 62
+- **Unclassified**: 63
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 177
 - **Deleted Pages**: 0
@@ -66,16 +72,20 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 |------|-------|------------|
 | architecture-patterns | 5 | 2.8% |
 | best-practices | 14 | 7.9% |
-| configuration | 27 | 15.3% |
+| configuration | 27 | 15.2% |
 | decision-making | 13 | 7.3% |
 | deployment | 8 | 4.5% |
-| integrations | 7 | 4.0% |
+| integrations | 7 | 3.9% |
 | limits-quotas | 5 | 2.8% |
-| security | 23 | 13.0% |
+| security | 23 | 12.9% |
 | troubleshooting | 13 | 7.3% |
-| *(Unclassified)* | 62 | 35.0% |
+| *(Unclassified)* | 63 | 35.4% |
 
 ## Changes
+
+### New Pages
+
+- [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql)
 
 ## Classified Pages
 
@@ -251,6 +261,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.20 | CLI quickstart; shows basic az commands but not detailed configuration parameter tables or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal) | 0.20 | Portal quickstart for server creation; mostly step-by-step UI instructions without deep config matrices. |
+| [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, the page is a conceptual/feature overview of Mirroring Azure Database for MySQL into Microsoft Fabric, describing benefits and scenarios. It does not indicate the presence of specific limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. Therefore it likely lacks the kind of detailed, product-specific expert knowledge required for any sub-skill type. |
 | [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | The page is described as a conceptual overview of zone-redundant high availability for Azure Database for MySQL Flexible Server. The summary focuses on what HA is, automatic failover, and general behavior, without evidence of specific numeric limits, configuration parameter tables, error codes, or decision matrices. It does not match the strict criteria for limits-quotas, architecture-patterns, best-practices, troubleshooting, decision-making, security, integrations, configuration, or deployment. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |

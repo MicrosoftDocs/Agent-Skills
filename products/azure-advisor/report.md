@@ -29,6 +29,12 @@ use_when: Use when configuring Advisor alerts, workbooks, RBAC access, bulk fixe
 confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
   Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Service Health
   (use azure-service-health).
+confusable_slugs:
+- azure-cost-management
+- azure-monitor
+- azure-policy
+- azure-service-health
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Advisor Crawl Report
 

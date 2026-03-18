@@ -15,13 +15,19 @@ skill_description: Expert knowledge for Azure External Attack Surface Management
   Explorer, or estimating billing, and other Azure External Attack Surface Management
   related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
-  Firewall (use azure-firewall).
+  Network Watcher (use azure-network-watcher).
 use_when: Use when querying EASM assets, setting policy rules, exporting to Log Analytics
   or Data Explorer, or estimating billing, and other Azure External Attack Surface
   Management related development tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
   Firewall (use azure-firewall).
+confusable_slugs:
+- azure-defender-for-cloud
+- azure-security
+- azure-sentinel
+- azure-network-watcher
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure External Attack Surface Management Crawl Report
 

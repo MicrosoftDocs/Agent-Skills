@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure App Testing development including 
   using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
   CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
   tasks. Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces (use
-  azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
-  (use azure-app-service).
+  azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure Pipelines (use
+  azure-pipelines).
 use_when: Use when using Azure Load Testing with VNets/private endpoints, JMeter/Locust/Playwright,
   CI/CD pipelines, or Playwright Workspaces, and other Azure App Testing related development
   tasks.
 confusable_not_for: Not for Azure Test Plans (use azure-test-plans), Playwright Workspaces
   (use azure-playwright-workspaces), Azure DevOps (use azure-devops), Azure App Service
   (use azure-app-service).
+confusable_slugs:
+- azure-test-plans
+- azure-playwright-workspaces
+- azure-devops
+- azure-pipelines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure App Testing Crawl Report
 

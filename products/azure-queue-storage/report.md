@@ -17,15 +17,21 @@ skill_description: Expert knowledge for Azure Queue Storage development includin
   best practices, limits & quotas, security, configuration, and integrations & coding
   patterns. Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs,
   tuning throughput/limits, or coding with SDKs, and other Azure Queue Storage related
-  development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure Table
-  Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
-  Event Hubs (use azure-event-hubs).
+  development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event
+  Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Table Storage
+  (use azure-table-storage).
 use_when: Use when managing queue auth (Entra ID/RBAC), monitoring metrics/logs, tuning
   throughput/limits, or coding with SDKs, and other Azure Queue Storage related development
   tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Table
   Storage (use azure-table-storage), Azure Service Bus (use azure-service-bus), Azure
   Event Hubs (use azure-event-hubs).
+confusable_slugs:
+- azure-service-bus
+- azure-event-hubs
+- azure-relay
+- azure-table-storage
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Queue Storage Crawl Report
 

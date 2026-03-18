@@ -23,14 +23,18 @@ skill_description: Expert knowledge for Azure Fluid Relay development including 
   best practices, limits & quotas, security, configuration, integrations & coding
   patterns, and deployment. Use when using AzureClient, audience APIs, JWT auth tokens,
   container recovery, or Static Web Apps hosting, and other Azure Fluid Relay related
-  development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure SignalR
-  Service (use azure-signalr-service), Azure Relay (use azure-relay), Azure Service
-  Bus (use azure-service-bus).
+  development tasks. Not for Azure SignalR Service (use azure-signalr-service), Azure
+  Web PubSub (use azure-web-pubsub), Azure Relay (use azure-relay).
 use_when: Use when using AzureClient, audience APIs, JWT auth tokens, container recovery,
   or Static Web Apps hosting, and other Azure Fluid Relay related development tasks.
 confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure SignalR
   Service (use azure-signalr-service), Azure Relay (use azure-relay), Azure Service
   Bus (use azure-service-bus).
+confusable_slugs:
+- azure-signalr-service
+- azure-web-pubsub
+- azure-relay
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Fluid Relay Crawl Report
 

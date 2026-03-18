@@ -24,13 +24,19 @@ skill_description: Expert knowledge for Azure Networking development including t
   enforcing Policy, or querying networks with Resource Graph, and other Azure Networking
   related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
   Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 use_when: Use when designing VNets/hubs, routing via firewalls/gateways, enforcing
   Policy, or querying networks with Resource Graph, and other Azure Networking related
   development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use
   azure-virtual-wan), Azure Network Watcher (use azure-network-watcher).
+confusable_slugs:
+- azure-virtual-network
+- azure-virtual-network-manager
+- azure-virtual-wan
+- azure-vpn-gateway
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Networking Crawl Report
 

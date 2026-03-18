@@ -1,6 +1,6 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AML, integrating with Blob auto-import/export, AKS CSI, quotas, or performance tuning, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AML, integrating with Blob auto-import/export, AKS CSI, quotas, or performance tuning, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Elastic SAN (use azure-elastic-san), Azure Blob Storage (use azure-blob-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

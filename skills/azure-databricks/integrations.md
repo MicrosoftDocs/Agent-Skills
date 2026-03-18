@@ -319,31 +319,26 @@
 | Combine Spark and Ray in one Databricks environment | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/connect-spark-ray |
 | Integrate MLflow tracking with Ray workloads | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/ray-mlflow |
 | Run NLP workloads with Spark NLP on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/reference-solutions/natural-language-processing |
-| Run distributed LLM batch inference on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-batch-inference |
-| Run classic ML workloads on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-classic-ml |
+| Run classic ML workloads on Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-classic-ml |
 | Run computer vision training on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-computer-vision |
-| Use PyTorch DDP for distributed training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-ddp |
+| Use Distributed Data Parallel on Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-ddp |
 | Use DeepSpeed for distributed training on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-deepspeed |
-| Scale multi-GPU and multi-node training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-distributed-training |
+| Scale multi-node multi-GPU training on Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-distributed-training |
 | Run PyTorch FSDP training on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-fsdp |
 | Fine-tune LLMs on Databricks serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-llms |
-| Build deep learning recommenders on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-recommendation |
+| Implement deep learning recommenders on Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/gpu-recommendation |
 | Train CNN image classifier on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-cnn-mnist |
 | Distributed LoRA fine-tuning of Qwen2-0.5B on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-distributed-finetune-qwen2-0.5b |
 | Distributed fine-tune OpenAI gpt-oss-20b on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-distributed-gpt-oss-20b |
 | Configure PyTorch FSDP distributed training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-distributed-pytorch-fsdp |
-| Fine-tune embedding models with MosaicML on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-finetune-embedding-model-llmfoundry |
 | Fine-tune Llama-3.2-3B with Unsloth on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-finetune-llama-unsloth |
-| Distributed Unsloth fine-tuning of Llama-3.2-3B on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-finetune-llama-unsloth-distributed |
+| Distributedly finetune Llama-3.2-3B with Unsloth on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-finetune-llama-unsloth-distributed |
 | LoRA fine-tune Qwen2-0.5B on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-finetune-qwen2-0.5b |
 | Fine-tune OpenAI gpt-oss 120B with DDP/FSDP on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-gpt-oss-120b-ddp-fsdp |
 | Fine-tune Llama 3.1 8B with Mosaic LLM Foundry on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-llama3-8b-llmfoundry |
 | Fine-tune Olmo3 7B with Axolotl on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-olmo3-7b-lora-axolotl |
-| Train ResNet18 with Ray on Databricks serverless GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-ray-resnet18 |
-| Distributed LLM inference with Ray Data and SGLang on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-raydata-sglang |
-| Distributed LLM inference with Ray Data and vLLM on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-raydata-vllm |
 | Train RetinaNet object detection on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-retinanet-image-detection-model-training |
-| LoRA fine-tune Llama 3.2 1B with TRL and DeepSpeed on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-sft-trl-deepspeed-llama-1b |
+| Fine-tune Llama 3.2 1B with LoRA and DeepSpeed on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-sft-trl-deepspeed-llama-1b |
 | Forecast time series with GluonTS on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-time-series-gluonts-101 |
 | Train single-GPU XGBoost models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-xgboost |
 | Use DeepSpeed distributor for large PyTorch models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/distributed-training/deepspeed |
@@ -1147,7 +1142,7 @@
 | List views with SHOW VIEWS in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-views |
 | Add comments and hints in Databricks SQL statements | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-comment |
 | Define external SQL functions in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-function |
-| Insert data into tables with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-dml-insert-into |
+| Use INSERT statement in Azure Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-dml-insert-into |
 | Compose queries with Databricks SQL SELECT | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select |
 | Use VALUES clause to create inline tables | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-values |
 | Define window frames in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-window-functions-frame |
@@ -1158,7 +1153,7 @@
 | Handle schema evolution in transformWithState state store | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/schema-evolution |
 | Use Avro and Schema Registry with Kafka streaming on Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/avro-dataframe |
 | Use Structured Streaming with Cassandra and Synapse | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/examples |
-| Use foreachBatch to write custom streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/foreach |
+| Use foreachBatch to write custom Databricks streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/foreach |
 | Serialize and deserialize protocol buffers in Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/protocol-buffers |
 | Read and inspect Structured Streaming state data | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/read-state |
 | Use real-time mode with Kafka and custom sinks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/real-time-examples |

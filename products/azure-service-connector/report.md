@@ -31,6 +31,12 @@ use_when: Use when wiring apps to Azure DBs, messaging, storage, Key Vault, Open
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
   App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
   Logic Apps (use azure-logic-apps).
+confusable_slugs:
+- azure-api-management
+- azure-app-service
+- azure-functions
+- azure-logic-apps
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Service Connector Crawl Report
 

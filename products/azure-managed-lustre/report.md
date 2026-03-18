@@ -25,14 +25,20 @@ skill_description: Expert knowledge for Azure Managed Lustre development includi
   security, configuration, and integrations & coding patterns. Use when mounting AML,
   integrating with Blob auto-import/export, AKS CSI, quotas, or performance tuning,
   and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache
-  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+  (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Elastic
+  SAN (use azure-elastic-san), Azure Blob Storage (use azure-blob-storage).
 use_when: Use when mounting AML, integrating with Blob auto-import/export, AKS CSI,
   quotas, or performance tuning, and other Azure Managed Lustre related development
   tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files
   (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines), Azure
   Virtual Network (use azure-virtual-network).
+confusable_slugs:
+- azure-hpc-cache
+- azure-netapp-files
+- azure-elastic-san
+- azure-blob-storage
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Managed Lustre Crawl Report
 

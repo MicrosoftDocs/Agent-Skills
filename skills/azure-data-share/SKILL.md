@@ -1,6 +1,6 @@
 ---
 name: azure-data-share
-description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when estimating Data Share costs, managing invitations/RBAC, cross-region deployments, dataset mapping, or automation, and other Azure Data Share related development tasks. Not for Azure Data Box (use azure-data-box-family), Azure Import Export (use azure-import-export), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Data Share development including troubleshooting, decision making, security, configuration, and deployment. Use when estimating Data Share costs, managing invitations/RBAC, cross-region deployments, dataset mapping, or automation, and other Azure Data Share related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Box (use azure-data-box-family).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

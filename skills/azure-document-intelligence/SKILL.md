@@ -1,6 +1,6 @@
 ---
 name: azure-document-intelligence
-description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker, SAS/managed identity, or VNets, and other Azure AI Document Intelligence related development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service), Azure AI Immersive Reader (use azure-immersive-reader).
+description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker, SAS/managed identity, or VNets, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Custom Vision (use azure-custom-vision), Azure AI Immersive Reader (use azure-immersive-reader), Azure AI Metrics Advisor (use azure-metrics-advisor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

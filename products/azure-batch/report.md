@@ -33,12 +33,19 @@ skill_description: Expert knowledge for Azure Batch development including troubl
   configuring Batch pools/tasks, autoscale, containers, VM/Spot choices, or CI/CD
   job deployments, and other Azure Batch related development tasks. Not for Azure
   HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
+  Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets
+  (use azure-vm-scalesets).
 use_when: Use when configuring Batch pools/tasks, autoscale, containers, VM/Spot choices,
   or CI/CD job deployments, and other Azure Batch related development tasks.
 confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databricks
   (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
   Functions (use azure-functions).
+confusable_slugs:
+- azure-hdinsight
+- azure-databricks
+- azure-virtual-machines
+- azure-vm-scalesets
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Batch Crawl Report
 

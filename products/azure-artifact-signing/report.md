@@ -22,6 +22,8 @@ skill_description: Expert knowledge for Azure Artifact Signing development inclu
 use_when: Use when managing signing cert lifecycle, RBAC roles, DGSSv2 migration,
   diagnostic logs, or CI/CD signing workflows, and other Azure Artifact Signing related
   development tasks.
+confusable_slugs: []
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Artifact Signing Crawl Report
 

@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms, AI/OpenAI calls, CI/CD deployments, or DR/HA designs, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure API Management (use azure-api-management).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with B2B/EDI, SAP/FTP connectors, AI/OpenAI calls, hybrid CI/CD deployments, or DR/HA patterns, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L60-L69 | Guidance on when and how to migrate from BizTalk/Power Automate, choosing Standard vs Consumption, and planning/estimating Logic Apps costs and storage. |
 | Architecture & Design Patterns | L70-L86 | Architectural patterns for Logic Apps: AI agent loops, B2B flows, REST/web APIs, resource replication, rules engine, ordered messaging, and multi-region/zone-resilient DR and HA designs. |
 | Limits & Quotas | L87-L96 | Limits, quotas, and performance behavior in Logic Apps: message size/chunking, connector pagination, SQL result limits/timeouts, inline JS limits, config reference, and metering/billing. |
-| Security | L97-L113 | Securing Logic Apps with identities, OAuth/OBO, Easy Auth, certificates, private endpoints, and Azure Policy/Defender controls for access, connectors, governance, and cross-tenant protection |
+| Security | L97-L113 | Securing Logic Apps with identities, auth (Entra, OAuth/OBO, Easy Auth), private endpoints, certificates, and Azure Policy/Defender controls for access, connectors, and governance. |
 | Configuration | L114-L154 | Configuring Logic Apps behavior: workflow JSON, control flow, inline code, B2B/integration accounts, connections/gateways, endpoints, storage, and monitoring/diagnostic logging. |
 | Integrations & Coding Patterns | L155-L236 | Patterns and connectors for integrating Logic Apps with Azure/IBM/SAP/FTP/B2B systems, AI/OpenAI, data transforms (XML/EDI/Liquid), custom connectors, and automated testing of workflows |
 | Deployment | L237-L258 | CI/CD, ARM/Bicep/CLI deployment, DevOps pipelines, slots, hybrid setups, and migrating/cloning Consumption Logic Apps to Standard workflows |
@@ -97,7 +97,7 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure managed identity authentication for Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity |
+| Configure managed identity authentication for Azure Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity |
 | Block cross-tenant shared connections in Logic Apps | https://learn.microsoft.com/en-us/azure/logic-apps/block-connections-across-tenants |
 | Block specific connector usage with Azure Policy | https://learn.microsoft.com/en-us/azure/logic-apps/block-connections-connectors |
 | Deploy Standard Logic Apps to private storage with endpoints | https://learn.microsoft.com/en-us/azure/logic-apps/deploy-single-tenant-logic-apps-private-storage-account |

@@ -26,6 +26,12 @@ use_when: Use when defining ARM/Bicep experiments, deploying Chaos Agents, using
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Resiliency (use
   azure-resiliency), Azure Reliability (use azure-reliability), Azure Site Recovery
   (use azure-site-recovery).
+confusable_slugs:
+- azure-monitor
+- azure-resiliency
+- azure-reliability
+- azure-site-recovery
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Chaos Studio Crawl Report
 

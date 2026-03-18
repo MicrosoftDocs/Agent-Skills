@@ -32,14 +32,20 @@ skill_description: Expert knowledge for Azure Confidential Computing development
   Use when using SGX/SEV-SNP VMs, AKS confidential containers, SKR/attestation flows,
   vTPM, or Fortanix/Key Vault, and other Azure Confidential Computing related development
   tasks. Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Dedicated HSM (use azure-dedicated-hsm),
-  Azure Attestation (use azure-attestation).
+  Machines (use azure-virtual-machines), Azure Key Vault (use azure-key-vault), Azure
+  Dedicated HSM (use azure-dedicated-hsm).
 use_when: Use when using SGX/SEV-SNP VMs, AKS confidential containers, SKR/attestation
   flows, vTPM, or Fortanix/Key Vault, and other Azure Confidential Computing related
   development tasks.
 confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves), Azure
   Virtual Machines (use azure-virtual-machines), Azure Dedicated HSM (use azure-dedicated-hsm),
   Azure Attestation (use azure-attestation).
+confusable_slugs:
+- azure-virtual-enclaves
+- azure-virtual-machines
+- azure-key-vault
+- azure-dedicated-hsm
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Confidential Computing Crawl Report
 

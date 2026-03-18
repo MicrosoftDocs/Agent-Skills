@@ -1,6 +1,6 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Azure Extended Zones development including decision making, security, and configuration. Use when registering subscriptions, requesting zone access, authoring Azure Policy, CMK disk encryption, or buying RIs/Savings Plans, and other Azure Extended Zones related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic Manager (use azure-traffic-manager).
+description: Expert knowledge for Azure Extended Zones development including decision making, security, and configuration. Use when registering subscriptions, requesting zone access, authoring Azure Policy, CMK disk encryption, or buying RIs/Savings Plans, and other Azure Extended Zones related development tasks. Not for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

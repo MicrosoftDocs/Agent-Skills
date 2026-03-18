@@ -31,6 +31,12 @@ use_when: Use when handling Data Box/Disk orders, SMB/NFS copies, TLS certs/CMK 
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
   Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
   Files (use azure-files).
+confusable_slugs:
+- azure-import-export
+- azure-stack-edge
+- azure-blob-storage
+- azure-files
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Box Crawl Report
 

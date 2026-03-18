@@ -23,15 +23,21 @@ skill_description: Expert knowledge for Microsoft Planetary Computer Pro develop
   including troubleshooting, decision making, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when managing STAC collections, GeoCatalog
   ingestion, SAS tokens, Explorer visualization, or QGIS/ArcGIS integration, and other
-  Microsoft Planetary Computer Pro related development tasks. Not for Azure Open Datasets
-  (use azure-open-datasets), Azure Maps (use azure-maps), Azure Data Explorer (use
-  azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
+  Microsoft Planetary Computer Pro related development tasks. Not for Azure Maps (use
+  azure-maps), Azure Open Datasets (use azure-open-datasets), Azure Data Explorer
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 use_when: Use when managing STAC collections, GeoCatalog ingestion, SAS tokens, Explorer
   visualization, or QGIS/ArcGIS integration, and other Microsoft Planetary Computer
   Pro related development tasks.
 confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure Maps
   (use azure-maps), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics
   (use azure-synapse-analytics).
+confusable_slugs:
+- azure-maps
+- azure-open-datasets
+- azure-data-explorer
+- azure-synapse-analytics
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Microsoft Planetary Computer Pro Crawl Report
 

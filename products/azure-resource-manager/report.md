@@ -33,14 +33,20 @@ skill_description: Expert knowledge for Azure Resource Manager development inclu
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when authoring Bicep/ARM templates, using template specs, deployment stacks,
   CI/CD pipelines, or ARM REST/CLI, and other Azure Resource Manager related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph),
-  Azure Portal (use azure-portal), Azure Blueprints (use azure-blueprints).
+  tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy),
+  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 use_when: Use when authoring Bicep/ARM templates, using template specs, deployment
   stacks, CI/CD pipelines, or ARM REST/CLI, and other Azure Resource Manager related
   development tasks.
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Graph
   (use azure-resource-graph), Azure Portal (use azure-portal), Azure Blueprints (use
   azure-blueprints).
+confusable_slugs:
+- azure-blueprints
+- azure-policy
+- azure-resource-graph
+- azure-portal
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Resource Manager Crawl Report
 

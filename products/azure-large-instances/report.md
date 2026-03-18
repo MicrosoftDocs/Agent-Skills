@@ -15,13 +15,19 @@ skill_description: Expert knowledge for Azure Large Instances development includ
   issues, and other Azure Large Instances related development tasks. Not for Azure
   Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Virtual Machines
   (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
-  Azure HPC Cache (use azure-hpc-cache).
+  SAP HANA on Azure Large Instances (use azure-sap).
 use_when: Use when configuring Epic SKUs, sizing volume groups, tuning EHR storage,
   or resolving Epic–ALI connectivity/perf issues, and other Azure Large Instances
   related development tasks.
 confusable_not_for: Not for Azure Baremetal Infrastructure (use azure-baremetal-infrastructure),
   Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
   Sets (use azure-vm-scalesets), Azure HPC Cache (use azure-hpc-cache).
+confusable_slugs:
+- azure-baremetal-infrastructure
+- azure-virtual-machines
+- azure-vm-scalesets
+- azure-sap
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Large Instances Crawl Report
 

@@ -15,12 +15,17 @@ skill_description: Expert knowledge for Azure Osconfig development including tro
   security, configuration, and integrations & coding patterns. Use when running OSConfig
   via IoT Hub for commands, SSH posture, agent health, Windows baselines, or LAPS,
   and other Azure Osconfig related development tasks. Not for Azure Update Manager
-  (use azure-update-manager), Azure Automation (use azure-automation), Azure Policy
-  (use azure-policy).
+  (use azure-update-manager), Azure Automation (use azure-automation), Azure Virtual
+  Machines (use azure-virtual-machines).
 use_when: Use when running OSConfig via IoT Hub for commands, SSH posture, agent health,
   Windows baselines, or LAPS, and other Azure Osconfig related development tasks.
 confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azure
   Automation (use azure-automation), Azure Policy (use azure-policy).
+confusable_slugs:
+- azure-update-manager
+- azure-automation
+- azure-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Osconfig Crawl Report
 

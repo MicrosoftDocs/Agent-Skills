@@ -16,15 +16,20 @@ skill_description: Expert knowledge for Azure Data Manager for Agriculture devel
   including limits & quotas, security, configuration, and integrations & coding patterns.
   Use when setting up BYOL creds/Private Link, ag data ingestion/IoT, AI/nutrient
   APIs, throttling, or Event Grid logs, and other Azure Data Manager for Agriculture
-  related development tasks. Not for Azure Data Explorer (use azure-data-explorer),
-  Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Databricks (use azure-databricks).
+  related development tasks. Not for Azure Industry (use azure-industry), Azure Energy
+  Data Services (use azure-energy-data-services), Azure Health Data Services (use
+  azure-health-data-services).
 use_when: Use when setting up BYOL creds/Private Link, ag data ingestion/IoT, AI/nutrient
   APIs, throttling, or Event Grid logs, and other Azure Data Manager for Agriculture
   related development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Data
   Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks).
+confusable_slugs:
+- azure-industry
+- azure-energy-data-services
+- azure-health-data-services
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Manager for Agriculture Crawl Report
 

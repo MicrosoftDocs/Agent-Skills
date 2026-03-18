@@ -32,13 +32,19 @@ skill_description: Expert knowledge for Azure Digital Twins development includin
   Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions,
   or migrating control plane APIs, and other Azure Digital Twins related development
   tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+  Azure IoT Edge (use azure-iot-edge), Azure Maps (use azure-maps).
 use_when: Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions,
   or migrating control plane APIs, and other Azure Digital Twins related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
   azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use
   azure-iot-operations).
+confusable_slugs:
+- azure-iot-hub
+- azure-iot-central
+- azure-iot-edge
+- azure-maps
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Digital Twins Crawl Report
 

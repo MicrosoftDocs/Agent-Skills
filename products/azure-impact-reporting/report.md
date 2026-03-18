@@ -14,14 +14,18 @@ skill_description: Expert knowledge for Azure Impact Reporting development inclu
   Impact Reporting to Monitor alerts, Logic Apps, HPC node health, Service Health,
   or its insights API, and other Azure Impact Reporting related development tasks.
   Not for Azure Carbon Optimization (use azure-carbon-optimization), Azure Cost Management
-  (use azure-cost-management), Azure Monitor (use azure-monitor), Azure Policy (use
-  azure-policy).
+  (use azure-cost-management), Azure Monitor (use azure-monitor).
 use_when: Use when wiring Impact Reporting to Monitor alerts, Logic Apps, HPC node
   health, Service Health, or its insights API, and other Azure Impact Reporting related
   development tasks.
 confusable_not_for: Not for Azure Carbon Optimization (use azure-carbon-optimization),
   Azure Cost Management (use azure-cost-management), Azure Monitor (use azure-monitor),
   Azure Policy (use azure-policy).
+confusable_slugs:
+- azure-carbon-optimization
+- azure-cost-management
+- azure-monitor
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Impact Reporting Crawl Report
 

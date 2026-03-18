@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure Service Fabric development includi
   Use when building Service Fabric clusters, Reliable Actors/Collections, reverse
   proxy, remoting, or Azure-integrated apps, and other Azure Service Fabric related
   development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
-  Azure Red Hat OpenShift (use azure-redhat-openshift).
+  Azure Container Apps (use azure-container-apps), Azure App Service (use azure-app-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 use_when: Use when building Service Fabric clusters, Reliable Actors/Collections,
   reverse proxy, remoting, or Azure-integrated apps, and other Azure Service Fabric
   related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
   Azure Red Hat OpenShift (use azure-redhat-openshift).
+confusable_slugs:
+- azure-kubernetes-service
+- azure-container-apps
+- azure-app-service
+- azure-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Service Fabric Crawl Report
 

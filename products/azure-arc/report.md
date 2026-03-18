@@ -34,13 +34,19 @@ skill_description: Expert knowledge for Azure Arc development including troubles
   managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or
   SCVMM/VMware integration, and other Azure Arc related development tasks. Not for
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Policy (use azure-policy), Azure Monitor (use
-  azure-monitor).
+  (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Local
+  (use azure-local).
 use_when: Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource
   bridge, or SCVMM/VMware integration, and other Azure Arc related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Virtual Machines (use azure-virtual-machines), Azure Policy (use azure-policy),
   Azure Monitor (use azure-monitor).
+confusable_slugs:
+- azure-kubernetes-service
+- azure-virtual-machines
+- azure-stack-edge
+- azure-local
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Arc Crawl Report
 

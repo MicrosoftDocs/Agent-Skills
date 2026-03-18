@@ -1,6 +1,6 @@
 ---
 name: azure-deployment-environments
-description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADE catalogs, environment.yaml schemas, custom images, RBAC/roles, or CI/CD image pipelines, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments), Azure Managed Applications (use azure-managed-applications).
+description: Expert knowledge for Azure Deployment Environments development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADE catalogs, environment.yaml schemas, custom images, RBAC/roles, or CI/CD image pipelines, and other Azure Deployment Environments related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Managed Applications (use azure-managed-applications), Azure Integration Environments (use azure-integration-environments).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

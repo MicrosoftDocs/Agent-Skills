@@ -1,14 +1,14 @@
 ---
-name: azure-ai-foundry-local
-description: Expert knowledge for Azure AI Foundry Local development including troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. Use when installing Foundry Local, compiling HF models with Olive, calling via REST/OpenAI clients, using LangChain, or migrating from legacy SDK, and other Azure AI Foundry Local related development tasks. Not for Azure Foundry Classic (use azure-foundry-classic), Microsoft Foundry (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning), Azure AI services (use azure-ai-services).
+name: microsoft-foundry-local
+description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. Use when installing Foundry Local, compiling HF models with Olive, calling via REST/OpenAI clients, using LangChain, or migrating from legacy SDK, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"
   generator: "docs2skills/1.0.0"
 ---
-# Azure AI Foundry Local Skill
+# Microsoft Foundry Local Skill
 
-This skill provides expert guidance for Azure AI Foundry Local. Covers troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Microsoft Foundry Local. Covers troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 

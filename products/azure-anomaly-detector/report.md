@@ -30,6 +30,11 @@ use_when: Use when using univariate/multivariate APIs, Docker/IoT Edge container
   related development tasks.
 confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor),
   Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+confusable_slugs:
+- azure-metrics-advisor
+- azure-monitor
+- azure-machine-learning
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Anomaly Detector Crawl Report
 

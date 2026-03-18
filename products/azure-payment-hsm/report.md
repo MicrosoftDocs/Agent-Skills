@@ -23,13 +23,18 @@ skill_description: Expert knowledge for Azure Payment Hsm development including 
   Use when designing Payment HSM VNets/FastPath, payShield Manager access, HA/DR topologies,
   SKUs, or traffic inspection, and other Azure Payment Hsm related development tasks.
   Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
-  Azure Cloud Hsm (use azure-cloud-hsm), Azure Security (use azure-security).
+  Azure Cloud Hsm (use azure-cloud-hsm).
 use_when: Use when designing Payment HSM VNets/FastPath, payShield Manager access,
   HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related
   development tasks.
 confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key
   Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm), Azure Security
   (use azure-security).
+confusable_slugs:
+- azure-dedicated-hsm
+- azure-key-vault
+- azure-cloud-hsm
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Payment Hsm Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-operator-service-manager
-description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when onboarding CNFs/VNFs, designing config groups, using ACR-backed artifacts, Private Link, or AOSM CLI, and other Azure Operator Service Manager related development tasks. Not for Azure Operator Insights (use azure-operator-insights), Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure Operator Service Manager development including troubleshooting, best practices, security, configuration, and integrations & coding patterns. Use when onboarding CNFs/VNFs, designing config groups, using ACR-backed artifacts, Private Link, or AOSM CLI, and other Azure Operator Service Manager related development tasks. Not for Azure Operator Nexus (use azure-operator-nexus), Azure Network Function Manager (use azure-network-function-manager), Azure Arc (use azure-arc).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

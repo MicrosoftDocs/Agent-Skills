@@ -27,15 +27,21 @@ skill_description: Expert knowledge for Azure Key Vault development including tr
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when managing keys/secrets, RBAC vs access
   policies, Private Link, Managed HSM, or ARM/Bicep/Terraform deployments, and other
-  Azure Key Vault related development tasks. Not for Azure Information Protection
-  (use azure-information-protection), Azure Attestation (use azure-attestation), Azure
-  Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm).
+  Azure Key Vault related development tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm),
+  Azure Cloud Hsm (use azure-cloud-hsm), Azure Payment Hsm (use azure-payment-hsm),
+  Azure Information Protection (use azure-information-protection).
 use_when: Use when managing keys/secrets, RBAC vs access policies, Private Link, Managed
   HSM, or ARM/Bicep/Terraform deployments, and other Azure Key Vault related development
   tasks.
 confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
   Azure Attestation (use azure-attestation), Azure Dedicated HSM (use azure-dedicated-hsm),
   Azure Payment Hsm (use azure-payment-hsm).
+confusable_slugs:
+- azure-dedicated-hsm
+- azure-cloud-hsm
+- azure-payment-hsm
+- azure-information-protection
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Key Vault Crawl Report
 

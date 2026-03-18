@@ -17,12 +17,19 @@ skill_description: Expert knowledge for Azure AI Metrics Advisor development inc
   when configuring data feeds, tuning anomaly detection, managing alert hooks, or
   integrating the Metrics Advisor APIs, and other Azure AI Metrics Advisor related
   development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
-  Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+  Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Managed Grafana (use azure-managed-grafana).
 use_when: Use when configuring data feeds, tuning anomaly detection, managing alert
   hooks, or integrating the Metrics Advisor APIs, and other Azure AI Metrics Advisor
   related development tasks.
 confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detector),
   Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+confusable_slugs:
+- azure-anomaly-detector
+- azure-monitor
+- azure-stream-analytics
+- azure-managed-grafana
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Metrics Advisor Crawl Report
 

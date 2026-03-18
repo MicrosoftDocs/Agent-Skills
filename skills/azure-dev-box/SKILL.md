@@ -1,6 +1,6 @@
 ---
 name: azure-dev-box
-description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, region moves, networking/policies, RBAC/SSO, or VS Code dev tunnel workflows, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop), Azure Lab Services (use azure-lab-services).
+description: Expert knowledge for Azure Dev Box development including troubleshooting, best practices, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Dev Box images, region moves, networking/policies, RBAC/SSO, or VS Code dev tunnel workflows, and other Azure Dev Box related development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual Machines (use azure-virtual-machines), Azure Lab Services (use azure-lab-services), Azure Virtual Desktop (use azure-virtual-desktop).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

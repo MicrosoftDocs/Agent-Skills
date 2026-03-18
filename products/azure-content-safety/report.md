@@ -24,14 +24,20 @@ skill_description: Expert knowledge for Azure AI Content Safety development incl
   limits & quotas, security, configuration, and deployment. Use when using Content
   Safety APIs, Docker containers, blocklists, custom safety categories, or prompt
   shield, and other Azure AI Content Safety related development tasks. Not for Azure
-  Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel), Azure Web Application Firewall (use azure-web-application-firewall).
+  Information Protection (use azure-information-protection), Azure Security (use azure-security),
+  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel).
 use_when: Use when using Content Safety APIs, Docker containers, blocklists, custom
   safety categories, or prompt shield, and other Azure AI Content Safety related development
   tasks.
 confusable_not_for: Not for Azure Security (use azure-security), Azure Defender For
   Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure
   Web Application Firewall (use azure-web-application-firewall).
+confusable_slugs:
+- azure-information-protection
+- azure-security
+- azure-defender-for-cloud
+- azure-sentinel
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Content Safety Crawl Report
 

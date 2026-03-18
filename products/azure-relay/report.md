@@ -16,14 +16,20 @@ skill_description: Expert knowledge for Azure Relay development including troubl
   security, configuration, and integrations & coding patterns. Use when configuring
   Hybrid Connections, WCF relays, Entra ID/SAS auth, Private Link, or .NET/Node.js
   Relay clients, and other Azure Relay related development tasks. Not for Azure Service
-  Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Web
-  PubSub (use azure-web-pubsub), Azure Application Gateway (use azure-application-gateway).
+  Bus (use azure-service-bus), Azure Web PubSub (use azure-web-pubsub), Azure SignalR
+  Service (use azure-signalr-service), Azure Application Gateway (use azure-application-gateway).
 use_when: Use when configuring Hybrid Connections, WCF relays, Entra ID/SAS auth,
   Private Link, or .NET/Node.js Relay clients, and other Azure Relay related development
   tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Hubs (use azure-event-hubs), Azure Web PubSub (use azure-web-pubsub), Azure Application
   Gateway (use azure-application-gateway).
+confusable_slugs:
+- azure-service-bus
+- azure-web-pubsub
+- azure-signalr-service
+- azure-application-gateway
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Relay Crawl Report
 

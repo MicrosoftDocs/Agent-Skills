@@ -33,6 +33,12 @@ use_when: Use when managing DSVM images/tools, IaC deployment (Bicep/ARM), Key V
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
   Machine Learning (use azure-machine-learning), Azure Databricks (use azure-databricks),
   Azure HDInsight (use azure-hdinsight).
+confusable_slugs:
+- azure-virtual-machines
+- azure-machine-learning
+- azure-databricks
+- azure-hdinsight
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Science Virtual Machines Crawl Report
 

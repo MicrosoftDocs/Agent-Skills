@@ -23,6 +23,8 @@ skill_description: Expert knowledge for Azure Firmware Analysis development incl
 use_when: Use when provisioning AFA workspaces, configuring RBAC access, uploading
   firmware via CLI/PowerShell/Python, or interpreting SBOM results, and other Azure
   Firmware Analysis related development tasks.
+confusable_slugs: []
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Firmware Analysis Crawl Report
 

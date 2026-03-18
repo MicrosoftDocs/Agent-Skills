@@ -32,13 +32,20 @@ skill_description: Expert knowledge for Azure Lab Services development including
   security, configuration, integrations & coding patterns, and deployment. Use when
   configuring lab plans, VM templates/schedules, VNet-integrated labs, GPU/nested
   virtualization, or Canvas/Teams integration, and other Azure Lab Services related
-  development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
+  development tasks. Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev
+  Box (use azure-dev-box), Azure Virtual Machines (use azure-virtual-machines), Azure
+  Virtual Desktop (use azure-virtual-desktop).
 use_when: Use when configuring lab plans, VM templates/schedules, VNet-integrated
   labs, GPU/nested virtualization, or Canvas/Teams integration, and other Azure Lab
   Services related development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Virtual
   Machines (use azure-virtual-machines), Azure Virtual Desktop (use azure-virtual-desktop).
+confusable_slugs:
+- azure-devtest-labs
+- azure-dev-box
+- azure-virtual-machines
+- azure-virtual-desktop
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Lab Services Crawl Report
 

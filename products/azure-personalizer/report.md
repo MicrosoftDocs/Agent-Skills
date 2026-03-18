@@ -22,15 +22,21 @@ skill_description: Expert knowledge for Azure AI Personalizer development includ
   troubleshooting, decision making, limits & quotas, security, configuration, and
   integrations & coding patterns. Use when tuning exploration/apprentice mode, single
   vs multi-slot calls, model export, quotas, or local inference SDK, and other Azure
-  AI Personalizer related development tasks. Not for Azure AI services (use azure-ai-services),
-  Azure AI Search (use azure-cognitive-search), Azure AI Metrics Advisor (use azure-metrics-advisor),
-  Azure AI Anomaly Detector (use azure-anomaly-detector).
+  AI Personalizer related development tasks. Not for Azure AI Metrics Advisor (use
+  azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector),
+  Azure AI Search (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning).
 use_when: Use when tuning exploration/apprentice mode, single vs multi-slot calls,
   model export, quotas, or local inference SDK, and other Azure AI Personalizer related
   development tasks.
 confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Search
   (use azure-cognitive-search), Azure AI Metrics Advisor (use azure-metrics-advisor),
   Azure AI Anomaly Detector (use azure-anomaly-detector).
+confusable_slugs:
+- azure-metrics-advisor
+- azure-anomaly-detector
+- azure-cognitive-search
+- azure-machine-learning
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Personalizer Crawl Report
 

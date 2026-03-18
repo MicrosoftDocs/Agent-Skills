@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hybrid/Arc setups, or AWS/on‑prem migrations, and other Azure Architecture related development tasks.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS or App Service apps, data/AI platforms, hybrid/Arc setups, or AWS/on‑prem migrations, and other Azure Architecture related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Reference Architectures | L37-L93 | End-to-end Azure reference designs for mission-critical, hybrid, and AI/data workloads, covering networking, security, DR, AKS, App Service, data platforms, and integration patterns. |
 | Solution Ideas | L94-L126 | End-to-end Azure solution patterns for AI/ML, analytics, IoT, SAP, security, DevSecOps, networking, and data platforms, showing how to combine services to implement real workloads. |
-| Design Patterns | L127-L181 | Patterns and reference architectures for building scalable, resilient, secure Azure solutions: messaging, microservices, gateways, caching, transactions, multitenancy, networking, and integration. |
+| Design Patterns | L127-L181 | Architecture and integration patterns (messaging, resiliency, auth, gateways, microservices, multitenancy, caching, CQRS, event sourcing) and how to implement them with Azure services. |
 | Technology Choices | L182-L216 | Guides for choosing the right Azure services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) based on workload, data, and architecture needs. |
 | Architecture Styles | L217-L227 | Azure app architecture patterns: when and how to use Big Compute, Big Data, event-driven, microservices, N-tier, and Web-Queue-Worker styles, with design guidance and tradeoffs. |
 | Best Practices | L228-L291 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, networking, SAP, IoT, APIs, Event Hubs, and generative AI. |
@@ -138,7 +138,7 @@ This skill requires **network access** to fetch documentation content:
 | Use the Anti-corruption Layer pattern with legacy systems | https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer |
 | Implement the Asynchronous Request-Reply pattern on Azure | https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply |
 | Design Backends for Frontends for tailored clients | https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends |
-| Apply the Bulkhead pattern for fault isolation | https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
+| Apply the Bulkhead design pattern in Azure applications | https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
 | Use the Cache-Aside pattern for on-demand caching | https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside |
 | Implement the Choreography pattern for distributed workflows | https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography |
 | Use the Circuit Breaker pattern for resilient calls | https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker |

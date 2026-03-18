@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   integrations: Patterns and connectors for integrating Logic Apps with Azure/IBM/SAP/FTP/B2B
     systems, AI/OpenAI, data transforms (XML/EDI/Liquid), custom connectors, and automated
@@ -10,9 +10,9 @@ category_descriptions:
   configuration: 'Configuring Logic Apps behavior: workflow JSON, control flow, inline
     code, B2B/integration accounts, connections/gateways, endpoints, storage, and
     monitoring/diagnostic logging.'
-  security: Securing Logic Apps with identities, OAuth/OBO, Easy Auth, certificates,
-    private endpoints, and Azure Policy/Defender controls for access, connectors,
-    governance, and cross-tenant protection
+  security: Securing Logic Apps with identities, auth (Entra, OAuth/OBO, Easy Auth),
+    private endpoints, certificates, and Azure Policy/Defender controls for access,
+    connectors, and governance.
   deployment: CI/CD, ARM/Bicep/CLI deployment, DevOps pipelines, slots, hybrid setups,
     and migrating/cloning Consumption Logic Apps to Standard workflows
   decision-making: Guidance on when and how to migrate from BizTalk/Power Automate,
@@ -30,16 +30,22 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms, AI/OpenAI calls,
-  CI/CD deployments, or DR/HA designs, and other Azure Logic Apps related development
-  tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus),
-  Azure Event Grid (use azure-event-grid), Azure API Management (use azure-api-management).
-use_when: Use when building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms,
-  AI/OpenAI calls, CI/CD deployments, or DR/HA designs, and other Azure Logic Apps
-  related development tasks.
+  building Logic Apps with B2B/EDI, SAP/FTP connectors, AI/OpenAI calls, hybrid CI/CD
+  deployments, or DR/HA patterns, and other Azure Logic Apps related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus),
+  Azure Event Grid (use azure-event-grid), Azure Data Factory (use azure-data-factory).
+use_when: Use when building Logic Apps with B2B/EDI, SAP/FTP connectors, AI/OpenAI
+  calls, hybrid CI/CD deployments, or DR/HA patterns, and other Azure Logic Apps related
+  development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service Bus
   (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure API Management
   (use azure-api-management).
+confusable_slugs:
+- azure-functions
+- azure-service-bus
+- azure-event-grid
+- azure-data-factory
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Logic Apps Crawl Report
 
@@ -53,8 +59,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 229
+- **Updated Pages**: 1
+- **Unchanged**: 228
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -74,6 +80,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | *(Unclassified)* | 42 | 18.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity)
+  - Updated: 2026-03-09T08:00:00.000Z → 2026-03-18T11:13:00.000Z
 
 ## Classified Pages
 
@@ -113,7 +124,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [X12 997 acknowledgment](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-x12-997-acknowledgment) | troubleshooting | 0.86 | Describes 997 functional acknowledgments and enumerates X12 error codes and meanings in the context of Logic Apps X12 Decode. This is detailed error semantics for a specific product integration, fitting troubleshooting. |
 | [X12 TA1 acknowledgment](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-x12-ta1-acknowledgment) | troubleshooting | 0.86 | Page documents TA1 technical acknowledgment structure and specific X12 error codes as surfaced by Logic Apps X12 Decode, mapping codes to conditions and behavior. This is product-specific symptom→cause detail that LLMs are unlikely to know from training. |
 | [AS2 message settings](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2-message-settings) | configuration | 0.85 | Reference for AS2 agreement properties; includes setting names, allowed values, and how they affect message handling—classic configuration reference. |
-| [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity) | security | 0.85 | Managed identity setup for Logic Apps connections to Entra-protected resources generally lists supported connectors, identity types, scopes, and configuration steps with specific settings, which are product-specific security and auth configuration details. |
 | [EDIFACT CONTRL acknowledgments and error codes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact-contrl-acknowledgment) | troubleshooting | 0.85 | Explains CONTRL acknowledgments and error codes; maps validation results to specific acknowledgment/error outputs—symptom/cause semantics for EDIFACT processing. |
 | [EDIFACT message settings](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact-message-settings) | configuration | 0.85 | Reference for EDIFACT agreement properties; lists settings and how they control message handling between partners. |
 | [Reference for expression functions](https://learn.microsoft.com/en-us/azure/logic-apps/expression-functions-reference) | configuration | 0.85 | Lists expression functions, signatures, and behaviors for Logic Apps and Power Automate. These function names, parameters, and semantics are product-specific configuration/expression details. |
@@ -154,6 +164,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Tracking schemas for B2B transactions](https://learn.microsoft.com/en-us/azure/logic-apps/tracking-schemas-standard) | configuration | 0.80 | The page explains schemas and tables that store B2B tracking data, which are product-specific structures. It likely includes field/column names and their meanings, effectively serving as configuration/schema reference information that an LLM would not know from training. |
 | [Transform JSON](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-liquid-transform) | integrations | 0.80 | Covers Liquid templates as maps, including template usage with Logic Apps actions and supported transformation types; includes product-specific parameters and patterns. |
 | [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-diagnosing-failures) | troubleshooting | 0.80 | Focused on diagnosing workflow failures; typically includes where to find run history, inputs/outputs, and possibly diagnostic settings—symptom-to-diagnosis guidance. |
+| [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity) | security | 0.78 | The page provides product-specific guidance for using managed identities with Azure Logic Apps to access Microsoft Entra-protected resources. It likely includes concrete configuration steps such as selecting system-assigned vs user-assigned managed identities, assigning specific Azure RBAC roles to the identity, and wiring that identity into Logic Apps connections. These are security-focused, product-specific configuration details (role names, identity types, and connection authentication settings) that go beyond generic concepts and qualify as expert knowledge. |
 | [Compose XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-compose) | integrations | 0.78 | Explains 'Compose XML with schema' action, including schema binding and content mapping; these are product-specific connector parameters and patterns. |
 | [Parse XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-parse) | integrations | 0.78 | Details the 'Parse XML with schema' action, XSD requirements, and how elements surface in the designer—connector-specific parameters and behavior qualify as integration patterns. |
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/logic-apps/plan-manage-costs) | decision-making | 0.78 | Cost-planning article that likely includes pricing drivers, usage metrics, and guidance on cost trade-offs between tiers and usage patterns—supports decision-making. |

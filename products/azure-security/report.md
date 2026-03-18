@@ -35,6 +35,12 @@ use_when: Use when securing AKS images, SBOM/Notation workflows, antimalware/fir
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection),
   Azure Web Application Firewall (use azure-web-application-firewall).
+confusable_slugs:
+- azure-defender-for-cloud
+- azure-firewall
+- azure-ddos-protection
+- azure-web-application-firewall
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Security Crawl Report
 

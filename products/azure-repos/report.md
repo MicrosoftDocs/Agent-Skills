@@ -31,12 +31,18 @@ skill_description: Expert knowledge for Azure Repos development including troubl
   security, configuration, integrations & coding patterns, and deployment. Use when
   managing Git/TFVC repos, branch/PR policies, Entra/PAT/SSH auth, CodeQL scanning,
   or repo migrations, and other Azure Repos related development tasks. Not for Azure
-  DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Boards (use
-  azure-boards), Azure Artifacts (use azure-artifacts).
+  DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Test Plans
+  (use azure-test-plans), Azure Boards (use azure-boards).
 use_when: Use when managing Git/TFVC repos, branch/PR policies, Entra/PAT/SSH auth,
   CodeQL scanning, or repo migrations, and other Azure Repos related development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Boards (use azure-boards), Azure Artifacts (use azure-artifacts).
+confusable_slugs:
+- azure-devops
+- azure-pipelines
+- azure-test-plans
+- azure-boards
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Repos Crawl Report
 

@@ -38,6 +38,12 @@ use_when: Use when using WebSockets/MQTT, Socket.IO, geo-replication, custom dom
 confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), Azure
   Event Hubs (use azure-event-hubs), Azure Service Bus (use azure-service-bus), Azure
   Relay (use azure-relay).
+confusable_slugs:
+- azure-signalr-service
+- azure-event-hubs
+- azure-service-bus
+- azure-relay
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Web PubSub Crawl Report
 

@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure Machine Learning development inclu
   Use when using Azure ML jobs/endpoints, AutoML, Prompt Flow, MLflow, or managed
   online/batch deployments, and other Azure Machine Learning related development tasks.
   Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use
-  azure-data-science-vm).
+  Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight
+  (use azure-hdinsight).
 use_when: Use when using Azure ML jobs/endpoints, AutoML, Prompt Flow, MLflow, or
   managed online/batch deployments, and other Azure Machine Learning related development
   tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight),
   Azure Data Science Virtual Machines (use azure-data-science-vm).
+confusable_slugs:
+- azure-databricks
+- azure-synapse-analytics
+- azure-data-science-vm
+- azure-hdinsight
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Machine Learning Crawl Report
 

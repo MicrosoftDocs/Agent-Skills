@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure Communication Services development
   Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers, Teams
   interop, or Job Router/contact centers, and other Azure Communication Services related
   development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
-  Azure Web PubSub (use azure-web-pubsub).
+  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
+  SignalR Service (use azure-signalr-service).
 use_when: Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers,
   Teams interop, or Job Router/contact centers, and other Azure Communication Services
   related development tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
   Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
   Azure Web PubSub (use azure-web-pubsub).
+confusable_slugs:
+- azure-bot-service
+- azure-notification-hubs
+- azure-web-pubsub
+- azure-signalr-service
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Communication Services Crawl Report
 

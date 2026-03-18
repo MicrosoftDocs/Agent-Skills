@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   deployment: 'Guides for deploying and configuring Blob Storage: static website hosting
     (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration
@@ -7,18 +7,18 @@ category_descriptions:
   decision-making: 'Cost and architecture decisions for Blob Storage: pricing, cost
     estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection,
     connectivity, and migration/upgrade tool choices.'
-  configuration: 'Configuring and operating Blob Storage: monitoring, lifecycle, immutability,
-    soft delete, snapshots/restore, NFS/SFTP/BlobFuse, Data Lake, static sites, and
-    third‑party backup/migration tools.'
+  configuration: 'Configuring Blob Storage behavior and integrations: lifecycle, immutability,
+    soft delete, snapshots, monitoring, NFS/SFTP/BlobFuse, Data Lake, migrations/tools,
+    and backup/restore settings.'
   security: 'Configuring secure access to Blob Storage: RBAC/ABAC, Entra ID auth,
     SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), private networking, and
     preventing anonymous access.'
   best-practices: 'Performance, cost, reliability, and monitoring best practices for
-    Blob Storage: access tiers, lifecycle, naming, concurrency, retries, client tuning
-    (.NET/Java/Go/JS/Python), NFS/SFTP, events, and backups'
-  limits-quotas: Limits, quotas, performance, and known issues for Azure Blob Storage
-    features (tiers, replication, NFS/SFTP, BlobFuse, Data Lake, static sites, and
-    premium SKUs)
+    Blob Storage: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP,
+    events, backups, and low-latency design.'
+  limits-quotas: Limits, quotas, and known issues for Azure Blob Storage features
+    (tiers, NFS/SFTP, Data Lake, BlobFuse, static sites), plus scalability, performance,
+    and replication guarantees.
   troubleshooting: Diagnosing and fixing Azure Storage/Blob issues, including common
     task failures, Storage Mover networking and job error codes, support bundle analysis,
     and BlobFuse mount/I/O problems.
@@ -27,16 +27,22 @@ category_descriptions:
     events, and analytics integrations.
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Data Lake, NFS/SFTP/BlobFuse,
-  static websites/CDN, encryption/SAS/RBAC, or SDK upload/copy APIs, and other Azure
-  Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure
+  & coding patterns, and deployment. Use when using static websites/CDN, Data Lake,
+  NFS/SFTP/BlobFuse, encryption/SAS/RBAC, or blob SDK patterns, and other Azure Blob
+  Storage related development tasks. Not for Azure Files (use azure-files), Azure
   Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage),
   Azure NetApp Files (use azure-netapp-files).
-use_when: Use when using Data Lake, NFS/SFTP/BlobFuse, static websites/CDN, encryption/SAS/RBAC,
-  or SDK upload/copy APIs, and other Azure Blob Storage related development tasks.
+use_when: Use when using static websites/CDN, Data Lake, NFS/SFTP/BlobFuse, encryption/SAS/RBAC,
+  or blob SDK patterns, and other Azure Blob Storage related development tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
   azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp
   Files (use azure-netapp-files).
+confusable_slugs:
+- azure-files
+- azure-table-storage
+- azure-queue-storage
+- azure-netapp-files
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Blob Storage Crawl Report
 
@@ -50,8 +56,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 407
+- **Updated Pages**: 5
+- **Unchanged**: 402
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -61,15 +67,28 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 |------|-------|------------|
 | best-practices | 30 | 7.4% |
 | configuration | 64 | 15.7% |
-| decision-making | 24 | 5.9% |
+| decision-making | 23 | 5.7% |
 | deployment | 11 | 2.7% |
 | integrations | 131 | 32.2% |
-| limits-quotas | 16 | 3.9% |
+| limits-quotas | 17 | 4.2% |
 | security | 54 | 13.3% |
 | troubleshooting | 5 | 1.2% |
 | *(Unclassified)* | 72 | 17.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support)
+  - Updated: 2026-02-26T12:27:00.000Z → 2026-03-17T22:33:00.000Z
+- [Performance considerations](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-performance)
+  - Updated: 2023-06-22T17:03:00.000Z → 2026-03-17T22:33:00.000Z
+- [Performance benchmark](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-performance-benchmark)
+  - Updated: 2024-04-18T11:34:00.000Z → 2026-03-17T22:33:00.000Z
+- [Mount storage by using NFS](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-17T22:33:00.000Z
+- [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues)
+  - Updated: 2026-03-05T12:13:00.000Z → 2026-03-17T22:33:00.000Z
 
 ## Classified Pages
 
@@ -102,6 +121,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Best practices](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-best-practices) | best-practices | 0.85 | Explicit best-practices article; likely includes product-specific recommendations (e.g., folder layout, partitioning, access patterns, configuration choices) and gotchas unique to ADLS, beyond generic advice. |
 | [Host keys (SFTP) support](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-host-keys) | security | 0.85 | Contains a list of valid SSH host key fingerprints/types for Blob Storage SFTP endpoints. These are product-specific security parameters used to verify server identity. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-known-issues) | limits-quotas | 0.85 | Explicitly about limitations and known issues; likely includes feature support tables, constraints, and edge-case behaviors that are expert knowledge on limits and product quirks. |
+| [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues) | limits-quotas | 0.85 | Known-issues/limitations pages for a protocol on a storage service typically enumerate precise unsupported operations, behavioral limits, and edge cases (e.g., specific NFS calls not supported, directory semantics, locking behavior, path length or file count constraints). These are detailed product limits and quirks that qualify as expert knowledge and map best to limits-quotas. |
+| [Performance benchmark](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-performance-benchmark) | best-practices | 0.85 | Benchmark recommendation articles typically include exact test command lines, parameter values (thread counts, block sizes, queue depths), and measured performance numbers for specific SKUs. These are concrete, product-specific performance tuning and validation practices, which align with best-practices and clearly qualify as expert knowledge. |
 | [Performance checklist for developers](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-checklist-developers) | best-practices | 0.85 | Contains detailed, product-specific performance recommendations aligned to Azure Storage targets, including guidance on throttling, parallelism, and retries. |
 | [Security for conditions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-auth-abac-security) | security | 0.84 | Provides product-specific security gotchas (for example, path rename implications) when using ABAC conditions; concrete security guidance unique to this feature. |
 | [Authorize with Microsoft Entra ID and Azure RBAC](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory) | security | 0.82 | Describes blob-specific RBAC usage with Entra ID, including how OAuth tokens are used for Blob service authorization; contains product-specific security configuration guidance. |
@@ -143,9 +164,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Migration tools comparison](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/migration-tools-comparison) | decision-making | 0.80 | Explicitly a comparison matrix of migration tools with criteria; supports tool selection decisions and likely includes capability differences and scenario-based recommendations. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-tasks-monitor-data-reference) | configuration | 0.80 | Monitoring data reference likely includes metric names, dimensions, and log schema fields, which are detailed configuration/telemetry references. |
 | [Optimize data partitions](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-performance-blob-partitions) | best-practices | 0.80 | Gives specific guidance on blob naming schemes for small block uploads (<256 KiB) to improve performance; product-specific best-practice pattern. |
-| [Performance benchmark](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-performance-benchmark) | best-practices | 0.80 | Gives detailed benchmark setup recommendations and likely specific command parameters and configurations, which are product-specific best practices. |
 | [Performance characteristics](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-performance-characteristics) | best-practices | 0.80 | Performance characteristics article with guidance on configuring lifecycle policies (rule counts, filters, account sizes) for best performance; product-specific best practices. |
-| [Performance considerations](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-performance) | best-practices | 0.80 | Provides concrete performance recommendations (for example, mount options, concurrency, client settings) specific to NFS 3.0 on Blob, matching best-practices criteria. |
+| [Performance considerations](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-performance) | best-practices | 0.80 | A performance considerations article for a specific protocol on a specific service almost always contains concrete, product-specific tuning guidance (e.g., recommended mount options, I/O sizes, concurrency levels, VM types, and quantified throughput/latency impacts). This is actionable, service-specific guidance with likely numeric recommendations, matching best-practices. |
 | [Performance targets](https://learn.microsoft.com/en-us/azure/storage-mover/performance-targets) | limits-quotas | 0.80 | Described as 'baseline migration performance test results'; such pages typically list throughput numbers, file counts, and scale targets, which are numeric constraints/targets specific to the service. |
 | [Performance tuning for uploads and downloads](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download) | best-practices | 0.80 | Provides product-specific performance tuning guidance with concrete transfer options, configuration values, and patterns for the .NET client library. |
 | [Performance tuning for uploads and downloads](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download-go) | best-practices | 0.80 | Gives concrete, product-specific tuning recommendations (transfer options, concurrency, memory trade-offs) tied to Go client configuration. |
@@ -163,7 +183,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli) | security | 0.78 | Details Azure CLI extensions and flags for choosing between Entra ID, account keys, and SAS for blob data operations; includes product-specific security configuration patterns. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-cli) | security | 0.78 | Details Azure CLI commands and options to create user delegation SAS for containers/blobs; concrete security token configuration. |
 | [Enable soft delete for containers](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-container-enable) | configuration | 0.78 | Shows how to enable container soft delete and set retention periods; concrete configuration behavior and constraints. |
-| [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues) | limits-quotas | 0.78 | A 'known issues and limitations' page for a specific protocol implementation almost always enumerates concrete behavioral constraints (for example, unsupported operations, path/filename constraints, performance caveats, and protocol-specific edge cases) that are unique to Azure Blob NFS 3.0. These are product-specific, non-obvious details that LLMs are unlikely to know from training. Such limitations typically include exact behaviors and sometimes numeric constraints, fitting best under limits-quotas. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-powershell) | security | 0.78 | PowerShell-specific authorization flow using Microsoft Entra credentials, including cmdlet usage and token-based behavior, is product- and tool-specific security configuration beyond generic concepts. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-user-delegation-sas-create-powershell) | security | 0.78 | Covers PowerShell parameters and patterns for generating user delegation SAS tokens with Entra credentials; product-specific secure access configuration. |
 | [Latency in Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-latency) | best-practices | 0.76 | Explains how to measure and design for Blob latency with product-specific metrics and patterns; actionable performance best practices beyond generic latency concepts. |
@@ -298,13 +317,13 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Migrate from Amazon S3 to Azure](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-migration) | integrations | 0.70 | Covers Cloud-to-Cloud Migration using Azure Arc multicloud connectors for AWS; likely includes product-specific parameters, authentication settings, and integration patterns between S3, Arc, and Storage Mover. |
 | [Monitor copy and job run logs](https://learn.microsoft.com/en-us/azure/storage-mover/log-monitoring) | configuration | 0.70 | Monitoring copy and job run logs requires configuring log destinations and formats; page likely details log types, fields, and configuration options unique to Storage Mover. |
 | [Monitoring Blob Storage data reference](https://learn.microsoft.com/en-us/azure/storage/blobs/monitor-blob-storage-reference) | configuration | 0.70 | Monitoring data reference pages typically list metric names, dimensions, log categories, and schema fields specific to Blob Storage. These are configuration- and integration-relevant details (diagnostic settings, metric IDs) that are not generic knowledge. |
-| [Mount storage by using NFS](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to) | configuration | 0.70 | How-to for mounting via NFS 3.0; includes mount command options and account/container configuration details, which are product-specific settings. |
+| [Mount storage by using NFS](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to) | configuration | 0.70 | A how-to-mount article for NFS 3.0 on Blob Storage will include specific mount command syntax, required configuration flags, endpoint formats, and possibly account/container settings. These are concrete configuration parameters and patterns unique to this integration, fitting configuration best (with some overlap with integrations). |
 | [Move out of the archive tier](https://learn.microsoft.com/en-us/azure/storage/blobs/cost-estimate-archive-retrieval-set-tier) | decision-making | 0.70 | Provides a worked numeric example for early archive deletion and re-tiering costs, guiding decisions on when to rehydrate vs keep archived. |
 | [Multi-protocol access](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-multi-protocol-access) | integrations | 0.70 | Describes how Blob APIs work with HNS accounts and which features are available; likely includes compatibility tables and API-specific behaviors, which are integration details. |
 | [Nasuni getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/primary-secondary-storage/nasuni-deployment-guide) | deployment | 0.70 | Labeled as a deployment guide for Nasuni and Azure Blob Storage. Such validated-partner deployment guides typically contain product-specific deployment steps, supported patterns, and constraints for using Nasuni with Azure, which qualifies as expert deployment/configuration knowledge. |
 | [Object replication priority replication](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-priority-replication) | limits-quotas | 0.70 | Describes priority replication with a quantified SLA-like statement (for same-continent accounts, 99% of objects within 15 minutes), which is a specific numeric performance guarantee. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-overview) | security | 0.70 | Gives concrete remediation steps and configuration paths for disabling anonymous blob access across account types; product-specific security hardening guidance. |
-| [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support) | decision-making | 0.70 | Explains when to use NFS 3.0 with Blob Storage for legacy/HPC workloads and its trade-offs, guiding protocol selection. |
+| [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support) | limits-quotas | 0.70 | Core NFS 3.0 support article for Blob Storage typically documents protocol-specific constraints (unsupported NFS features, operation limits, path/size constraints, region and account-type restrictions). These are product- and SKU-specific behavioral limits that an LLM is unlikely to know from training, fitting limits-quotas best among the categories. |
 | [Performance considerations](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-performance) | best-practices | 0.70 | Performance considerations article; typically includes concrete, product-specific recommendations (for example, concurrency, buffer sizes, request patterns) that go beyond generic knowledge. |
 | [Planning for a deployment](https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning) | decision-making | 0.70 | Described as 'important decisions and best practices' for Storage Mover deployment; likely includes product-specific guidance on when/how to deploy agents, organize projects, and plan migrations, which informs migration/deployment choices beyond generic concepts. |
 | [Planning your Private Networking for cloud to cloud migrations](https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs) | decision-making | 0.70 | Article explicitly compares ExpressRoute, VPN, and SD-WAN with considerations for latency, bandwidth, security, cost, and complexity; this is structured technology selection guidance with trade-offs. |

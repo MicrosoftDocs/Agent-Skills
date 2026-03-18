@@ -18,10 +18,17 @@ skill_description: Expert knowledge for Playwright Workspaces development includ
   troubleshooting, best practices, decision making, limits & quotas, security, and
   configuration. Use when managing Playwright Testing workspaces, tokens/RBAC, quotas,
   monitoring/metrics, or run/AADSTS7000112 issues, and other Playwright Workspaces
-  related development tasks.
+  related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards
+  (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 use_when: Use when managing Playwright Testing workspaces, tokens/RBAC, quotas, monitoring/metrics,
   or run/AADSTS7000112 issues, and other Playwright Workspaces related development
   tasks.
+confusable_slugs:
+- azure-devops
+- azure-boards
+- azure-repos
+- azure-test-plans
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Playwright Workspaces Crawl Report
 

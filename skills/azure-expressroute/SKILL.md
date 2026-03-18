@@ -1,6 +1,6 @@
 ---
 name: azure-expressroute
-description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits/gateways, BGP/peering, Global Reach, FastPath, or ExpressRoute Direct, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits/gateways, BGP/peering, Global Reach, FastPath, or ExpressRoute Direct, and other Azure ExpressRoute related development tasks. Not for Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway), Azure Virtual Network (use azure-virtual-network), Azure Internet Peering (use azure-internet-peering).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"

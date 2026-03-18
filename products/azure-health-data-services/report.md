@@ -39,6 +39,12 @@ use_when: Use when using FHIR, DICOM, MedTech, de-identification APIs, bulk data
 confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Data Factory
   (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Machine Learning (use azure-machine-learning).
+confusable_slugs:
+- azure-health-bot
+- azure-data-factory
+- azure-synapse-analytics
+- azure-machine-learning
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Health Data Services Crawl Report
 

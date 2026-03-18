@@ -22,6 +22,12 @@ use_when: Use when managing Backup/Site Recovery vaults, protection policies, re
 confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Site
   Recovery (use azure-site-recovery), Azure Backup (use azure-backup), Azure Monitor
   (use azure-monitor).
+confusable_slugs:
+- azure-reliability
+- azure-site-recovery
+- azure-backup
+- azure-monitor
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Resiliency Crawl Report
 

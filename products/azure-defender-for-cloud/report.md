@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   integrations: Integrating Defender for Cloud with CI/CD, SIEM, EDR, ITSM, and third‑party
     security tools, exporting data via APIs/ARG, and automating alerts, tickets, and
@@ -33,15 +33,20 @@ skill_description: Expert knowledge for Azure Defender For Cloud development inc
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when securing Azure VMs, AKS/containers, SQL/Storage, CI/CD integrations, or
   Defender for Servers plans, and other Azure Defender For Cloud related development
-  tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure Security
-  (use azure-security), Azure Sentinel (use azure-sentinel), Azure DDos Protection
-  (use azure-ddos-protection).
+  tasks. Not for Azure Security (use azure-security), Azure Sentinel (use azure-sentinel),
+  Azure DDos Protection (use azure-ddos-protection), Azure Firewall (use azure-firewall).
 use_when: Use when securing Azure VMs, AKS/containers, SQL/Storage, CI/CD integrations,
   or Defender for Servers plans, and other Azure Defender For Cloud related development
   tasks.
 confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot), Azure
   Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure DDos Protection
   (use azure-ddos-protection).
+confusable_slugs:
+- azure-security
+- azure-sentinel
+- azure-ddos-protection
+- azure-firewall
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Defender For Cloud Crawl Report
 
@@ -55,8 +60,8 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 472
+- **Updated Pages**: 1
+- **Unchanged**: 471
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -76,6 +81,11 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 216 | 45.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log)
+  - Updated: 2026-03-02T12:03:00.000Z → 2026-03-17T17:15:00.000Z
 
 ## Classified Pages
 
@@ -438,6 +448,7 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | [Connect an integration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/connect-an-integration) | 0.30 | Generic guidance on connecting integrations; appears to be a navigation/how-to page without deep configuration reference. |
 | [Defender Threat Intelligence (Defender TI)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-twenty-three) | 0.30 | SQL VA enhancements episode mentions enabling experience and customizing baselines with scripts, but summary does not clearly indicate structured configuration tables or numeric ranges. |
 | [Defender for container registries (deprecated)](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-container-registries-introduction) | 0.30 | Benefits/features overview of Defender for container registries; largely conceptual without detailed configs or limits in the summary. |
+| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.30 | Changelog/release notes with version history and feature/fix descriptions, but no clear indication of structured limits, configuration parameter tables, error-code troubleshooting, or other categorized expert patterns defined in the sub-skill types. |
 | [Demystifying Defender for Servers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-twenty-seven) | 0.30 | Zero Trust and Defender for Cloud episode is about principles and best practices conceptually; summary does not show product-specific numeric or configuration details. |
 | [Deploy GitHub Advanced Security integration](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-advanced-security-deploy) | 0.30 | Page is a step-by-step setup guide for integrating GitHub Advanced Security with Defender for Cloud; it appears procedural rather than a reference for limits, configuration matrices, troubleshooting codes, or best-practice gotchas with quantified impact. |
 | [DevOps security overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction) | 0.30 | DevOps security benefits overview; focuses on visibility and posture management conceptually across platforms, not on specific configs, limits, or troubleshooting. |
@@ -526,7 +537,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | [Defender CSPM support for GCP and more updates](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-six) | 0.20 | Video episode description about CSPM support for GCP and multicloud strategy; high-level feature discussion without concrete limits, configs, or troubleshooting details. |
 | [Defender for APIs reaches GA](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-nine) | 0.20 | GA announcement and feature recap for Defender for APIs; marketing/overview style content without quantified limits, configs, or troubleshooting mappings. |
 | [Defender for Cloud glossary of terms](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-glossary) | 0.20 | Glossary of terms is conceptual reference; it defines terminology but not configuration, limits, or troubleshooting details. |
-| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.20 | A changelog/release notes page listing version history, features, and fixes. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. It’s primarily update history rather than structured expert guidance matching any defined sub-skill type. |
 | [Map container images from code to runtime](https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping) | 0.20 | Content is about mapping container images from code to runtime using Defender CSPM DevOps capabilities. The summary suggests a conceptual/feature overview of traceability from CI/CD to runtime, without clear indication of specific error codes, configuration tables, limits, or decision matrices. Lacking evidence of concrete parameters, thresholds, or product-specific troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Microsoft Defender for Containers in a multiCloud environment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-nine) | 0.20 | Multicloud containers episode focuses on capabilities and onboarding demos; summary does not indicate detailed config tables or numeric thresholds. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-overview) | 0.20 | High-level overview of Defender for Containers on Arc; primarily conceptual capabilities and scenarios without detailed configuration parameters, limits, or troubleshooting mappings. |

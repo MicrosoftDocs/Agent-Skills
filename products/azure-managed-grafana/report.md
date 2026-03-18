@@ -24,15 +24,17 @@ skill_description: Expert knowledge for Azure Managed Grafana development includ
   & coding patterns, and deployment. Use when integrating Azure Monitor/Prometheus,
   configuring data sources/alerts, Entra auth, private endpoints, or HA workspaces,
   and other Azure Managed Grafana related development tasks. Not for Azure Monitor
-  (use azure-monitor), Azure Application Gateway (use azure-application-gateway),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service).
+  (use azure-monitor), Azure Data Explorer (use azure-data-explorer).
 use_when: Use when integrating Azure Monitor/Prometheus, configuring data sources/alerts,
   Entra auth, private endpoints, or HA workspaces, and other Azure Managed Grafana
   related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application Gateway
   (use azure-application-gateway), Azure Virtual Machines (use azure-virtual-machines),
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+confusable_slugs:
+- azure-monitor
+- azure-data-explorer
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Managed Grafana Crawl Report
 

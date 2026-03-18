@@ -20,7 +20,7 @@ skill_description: Expert knowledge for Azure Blueprints development including t
   patterns. Use when defining Azure Blueprints, mapping built-in compliance sets,
   automating via CLI/PowerShell/REST, or fixing assignment errors, and other Azure
   Blueprints related development tasks. Not for Azure Policy (use azure-policy), Azure
-  Resource Manager (use azure-resource-manager), Azure Managed Applications (use azure-managed-applications),
+  Resource Manager (use azure-resource-manager), Azure Resource Graph (use azure-resource-graph),
   Azure Deployment Environments (use azure-deployment-environments).
 use_when: Use when defining Azure Blueprints, mapping built-in compliance sets, automating
   via CLI/PowerShell/REST, or fixing assignment errors, and other Azure Blueprints
@@ -28,6 +28,12 @@ use_when: Use when defining Azure Blueprints, mapping built-in compliance sets, 
 confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Manager
   (use azure-resource-manager), Azure Managed Applications (use azure-managed-applications),
   Azure Deployment Environments (use azure-deployment-environments).
+confusable_slugs:
+- azure-policy
+- azure-resource-manager
+- azure-resource-graph
+- azure-deployment-environments
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Blueprints Crawl Report
 

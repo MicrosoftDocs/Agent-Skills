@@ -28,13 +28,19 @@ skill_description: Expert knowledge for Azure Energy Data Services development i
   partitions & CORS, Reservoir DDMS, ACL/legal tags, or Geospatial CZ on AKS, and
   other Azure Energy Data Services related development tasks. Not for Azure Data Explorer
   (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
+  Azure Databricks (use azure-databricks), Azure Data Factory (use azure-data-factory).
 use_when: Use when configuring ADME tiers, partitions & CORS, Reservoir DDMS, ACL/legal
   tags, or Geospatial CZ on AKS, and other Azure Energy Data Services related development
   tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
   Azure Databricks (use azure-databricks).
+confusable_slugs:
+- azure-data-explorer
+- azure-synapse-analytics
+- azure-databricks
+- azure-data-factory
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Energy Data Services Crawl Report
 

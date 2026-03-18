@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure Data Explorer development includin
   Use when configuring ADX clusters, KQL/T-SQL access, ingestion formats, follower
   DBs, or integrations (Power BI, ODBC, Python), and other Azure Data Explorer related
   development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics).
+  Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight),
+  Azure Databricks (use azure-databricks).
 use_when: Use when configuring ADX clusters, KQL/T-SQL access, ingestion formats,
   follower DBs, or integrations (Power BI, ODBC, Python), and other Azure Data Explorer
   related development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
   Azure Stream Analytics (use azure-stream-analytics).
+confusable_slugs:
+- azure-synapse-analytics
+- azure-stream-analytics
+- azure-hdinsight
+- azure-databricks
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Explorer Crawl Report
 

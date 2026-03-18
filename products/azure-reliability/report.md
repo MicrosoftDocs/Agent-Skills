@@ -18,13 +18,19 @@ skill_description: Expert knowledge for Azure Reliability development including 
   Use when designing zone-aware AKS, Functions, databases, messaging, IoT, DR setups,
   or Queue Storage message sizing, and other Azure Reliability related development
   tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+  Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
 use_when: Use when designing zone-aware AKS, Functions, databases, messaging, IoT,
   DR setups, or Queue Storage message sizing, and other Azure Reliability related
   development tasks.
 confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
   (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
   Recovery (use azure-site-recovery).
+confusable_slugs:
+- azure-resiliency
+- azure-monitor
+- azure-service-health
+- azure-sre-agent
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Reliability Crawl Report
 

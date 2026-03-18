@@ -1,7 +1,7 @@
 # Generation Summary
 
-**Generated**: 2026-03-17 07:32:41
-**Total Duration**: 0m 24s
+**Generated**: 2026-03-18 15:30:50
+**Total Duration**: 0m 38s
 
 ## Product Crawl Summary
 
@@ -9,7 +9,7 @@ Quick overview for reviewers. See individual product reports for details.
 
 | # | Product | Pages | Classified | New | Updated | Deleted | Status |
 |---|---------|-------|------------|-----|---------|---------|--------|
-| 1 | Azure Architecture | 444 | 335 | 0 | 2 | 0 | OK |
+| 1 | Azure Architecture | 444 | 335 | 0 | 1 | 0 | OK |
 
 ### Totals
 
@@ -17,7 +17,7 @@ Quick overview for reviewers. See individual product reports for details.
 - **Total Pages**: 444
 - **Total Classified**: 335
 - **Total New Pages**: 0
-- **Total Updated Pages**: 2
+- **Total Updated Pages**: 1
 - **Total Deleted Pages**: 0
 
 ### Classification by Type (All Products)

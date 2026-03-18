@@ -1,6 +1,6 @@
 ---
 name: azure-personalizer
-description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when tuning exploration/apprentice mode, single vs multi-slot calls, model export, quotas, or local inference SDK, and other Azure AI Personalizer related development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Search (use azure-cognitive-search), Azure AI Metrics Advisor (use azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector).
+description: Expert knowledge for Azure AI Personalizer development including troubleshooting, decision making, limits & quotas, security, configuration, and integrations & coding patterns. Use when tuning exploration/apprentice mode, single vs multi-slot calls, model export, quotas, or local inference SDK, and other Azure AI Personalizer related development tasks. Not for Azure AI Metrics Advisor (use azure-metrics-advisor), Azure AI Anomaly Detector (use azure-anomaly-detector), Azure AI Search (use azure-cognitive-search), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

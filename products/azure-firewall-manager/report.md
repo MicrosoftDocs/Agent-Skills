@@ -25,6 +25,12 @@ use_when: Use when managing DDoS plans, WAF policies, DNS proxy/FQDN rules, IP G
 confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Virtual Network
   Manager (use azure-virtual-network-manager), Azure Network Function Manager (use
   azure-network-function-manager), Azure Networking (use azure-networking).
+confusable_slugs:
+- azure-firewall
+- azure-virtual-network-manager
+- azure-network-function-manager
+- azure-networking
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Firewall Manager Crawl Report
 

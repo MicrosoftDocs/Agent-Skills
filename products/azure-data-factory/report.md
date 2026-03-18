@@ -32,15 +32,21 @@ skill_description: Expert knowledge for Azure Data Factory development including
   security, configuration, integrations & coding patterns, and deployment. Use when
   building ADF pipelines, mapping data flows, SHIR/SSIS IR, CI/CD deployments, or
   secure networked runtimes, and other Azure Data Factory related development tasks.
-  Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Synapse Analytics (use
-  azure-synapse-analytics).
+  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks
+  (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
+  Logic Apps (use azure-logic-apps).
 use_when: Use when building ADF pipelines, mapping data flows, SHIR/SSIS IR, CI/CD
   deployments, or secure networked runtimes, and other Azure Data Factory related
   development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks
   (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
   Synapse Analytics (use azure-synapse-analytics).
+confusable_slugs:
+- azure-synapse-analytics
+- azure-databricks
+- azure-stream-analytics
+- azure-logic-apps
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Factory Crawl Report
 

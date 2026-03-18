@@ -33,14 +33,19 @@ skill_description: Expert knowledge for Azure VPN Gateway development including 
   configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, Entra ID/MFA auth, or
   S2S over ExpressRoute, and other Azure VPN Gateway related development tasks. Not
   for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
-  Azure ExpressRoute (use azure-expressroute), Azure Virtual Network Manager (use
-  azure-virtual-network-manager).
+  Azure ExpressRoute (use azure-expressroute), Azure NAT Gateway (use azure-nat-gateway).
 use_when: Use when configuring S2S/P2S VPNs, BGP routing, IPsec/IKE policies, Entra
   ID/MFA auth, or S2S over ExpressRoute, and other Azure VPN Gateway related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure ExpressRoute (use azure-expressroute),
   Azure Virtual Network Manager (use azure-virtual-network-manager).
+confusable_slugs:
+- azure-virtual-network
+- azure-virtual-wan
+- azure-expressroute
+- azure-nat-gateway
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure VPN Gateway Crawl Report
 

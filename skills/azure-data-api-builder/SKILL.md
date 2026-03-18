@@ -1,6 +1,6 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining DAB entities, securing Entra ID/JWT access, exposing REST/GraphQL, or deploying on Azure, and other Azure Data Api Builder related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure SQL Database (use azure-sql-database).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining DAB entities, securing Entra ID/JWT access, exposing REST/GraphQL, or deploying on Azure, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"

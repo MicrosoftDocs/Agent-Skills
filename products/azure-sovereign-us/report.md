@@ -23,12 +23,19 @@ skill_description: Expert knowledge for Azure US Government development includin
   decision making, architecture & design patterns, security, configuration, integrations
   & coding patterns, and deployment. Use when handling FedRAMP/DoD IL5 scope, SACA
   patterns, Gov CI/CD, Gov Marketplace, or sovereign APIs, and other Azure US Government
-  related development tasks. Not for Azure Local (use azure-local), Azure Arc (use
-  azure-arc), Azure Networking (use azure-networking), Azure Security (use azure-security).
+  related development tasks. Not for Azure Local (use azure-local), Azure Industry
+  (use azure-industry), Azure Networking (use azure-networking), Azure Security (use
+  azure-security).
 use_when: Use when handling FedRAMP/DoD IL5 scope, SACA patterns, Gov CI/CD, Gov Marketplace,
   or sovereign APIs, and other Azure US Government related development tasks.
 confusable_not_for: Not for Azure Local (use azure-local), Azure Arc (use azure-arc),
   Azure Networking (use azure-networking), Azure Security (use azure-security).
+confusable_slugs:
+- azure-local
+- azure-industry
+- azure-networking
+- azure-security
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure US Government Crawl Report
 

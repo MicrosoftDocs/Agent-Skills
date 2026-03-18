@@ -1,9 +1,9 @@
 ---
 name: azure-partner-solutions
-description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Confluent Cloud, Dynatrace APM, Datadog/Elastic/New Relic, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks.
+description: Expert knowledge for Azure Partner Solutions development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Service Connector, Confluent Cloud, Dynatrace APM, Datadog/Elastic configs, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry), Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Partner Solutions Skill
@@ -24,20 +24,25 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L42 | Diagnosing and fixing integration, deployment, and runtime issues for Azure-native monitoring/observability services: Confluent Kafka/Flink, Datadog, Dynatrace, Elastic, and New Relic. |
-| Decision Making | L43-L47 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
-| Architecture & Design Patterns | L48-L52 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
-| Security | L53-L58 | Managing security for partner solutions, including Confluent Cloud RBAC in Azure portal and configuring SSO and lifecycle controls for Informatica IDMC deployments |
-| Configuration | L59-L78 | Configuring and managing Azure-native partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINX, etc.), including prerequisites, settings, and integrations. |
-| Integrations & Coding Patterns | L79-L83 | Using Service Connector to integrate Azure compute with external services like Confluent Cloud and Neon Serverless Postgres, including setup, auth, and configuration patterns |
+| Troubleshooting | L34-L47 | Diagnosing and fixing common integration, configuration, and runtime issues for Azure-native partner services like Confluent, Airflow, Datadog, Dynatrace, Elastic, Informatica, and New Relic |
+| Decision Making | L48-L52 | Guidance on evaluating Dynatrace APM on Azure, starting a free trial from the portal/Marketplace, setup steps, and considerations before adopting it for monitoring. |
+| Architecture & Design Patterns | L53-L57 | Architectural guidance for integrating Palo Alto Cloud NGFW with Azure Application Gateway, including network design, routing, security, and deployment patterns. |
+| Security | L58-L63 | Managing security for partner solutions, including Confluent Cloud RBAC in Azure portal and configuring SSO and lifecycle controls for Informatica IDMC deployments |
+| Configuration | L64-L82 | Configuring and managing Azure-native partner resources (Datadog, Dynatrace, Elastic, MongoDB Atlas, New Relic, NGINX, etc.), including prerequisites, settings, and integrations. |
+| Integrations & Coding Patterns | L83-L87 | Using Service Connector to integrate Azure compute with external services like Confluent Cloud and Neon Serverless Postgres, including setup, auth, and configuration patterns |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Confluent Cloud Kafka and Flink on Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/troubleshoot |
+| Resolve common issues using Apache Airflow on Astro in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq |
+| Troubleshoot and manage Datadog on Azure integration | https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq |
 | Troubleshoot Datadog Azure Native Integration issues | https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/troubleshoot |
+| Diagnose and fix Azure Native Dynatrace Service issues | https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq |
 | Troubleshoot Azure Native Dynatrace Service problems | https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/troubleshoot |
+| Handle common Elastic on Azure integration problems | https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq |
 | Troubleshoot Elastic Cloud Azure Native integration | https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot |
+| Troubleshoot Informatica Intelligent Data Management Cloud on Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq |
 | Troubleshoot Azure Native New Relic Service issues | https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/troubleshoot |
 
 ### Decision Making
@@ -74,7 +79,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure and manage NGINXaaS resources in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/manage |
 | Configure Cloud NGFW by Palo Alto Networks in Azure | https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage |
 | Manage Azure Native Pure Storage Cloud settings | https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage |
-| Manage configuration for Azure Native Qumulo | https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/manage |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

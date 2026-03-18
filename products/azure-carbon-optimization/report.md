@@ -21,6 +21,12 @@ use_when: Use when using Carbon Service REST API, Python exports, RBAC roles, em
 confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
   Impact Reporting (use azure-impact-reporting), Azure Monitor (use azure-monitor),
   Azure Policy (use azure-policy).
+confusable_slugs:
+- azure-cost-management
+- azure-impact-reporting
+- azure-monitor
+- azure-policy
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Carbon Optimization Crawl Report
 

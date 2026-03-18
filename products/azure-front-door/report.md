@@ -41,6 +41,12 @@ use_when: Use when configuring Front Door routing/caching, WAF/TLS, Private Link
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Traffic Manager (use azure-traffic-manager), Azure Load Balancer (use azure-load-balancer),
   Azure Web Application Firewall (use azure-web-application-firewall).
+confusable_slugs:
+- azure-application-gateway
+- azure-traffic-manager
+- azure-load-balancer
+- azure-web-application-firewall
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Front Door Crawl Report
 

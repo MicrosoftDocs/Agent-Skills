@@ -18,14 +18,20 @@ skill_description: Expert knowledge for Azure Data Share development including t
   decision making, security, configuration, and deployment. Use when estimating Data
   Share costs, managing invitations/RBAC, cross-region deployments, dataset mapping,
   or automation, and other Azure Data Share related development tasks. Not for Azure
-  Data Box (use azure-data-box-family), Azure Import Export (use azure-import-export),
-  Azure Open Datasets (use azure-open-datasets), Azure Data Explorer (use azure-data-explorer).
+  Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer),
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Box (use azure-data-box-family).
 use_when: Use when estimating Data Share costs, managing invitations/RBAC, cross-region
   deployments, dataset mapping, or automation, and other Azure Data Share related
   development tasks.
 confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Import
   Export (use azure-import-export), Azure Open Datasets (use azure-open-datasets),
   Azure Data Explorer (use azure-data-explorer).
+confusable_slugs:
+- azure-data-factory
+- azure-data-explorer
+- azure-synapse-analytics
+- azure-data-box-family
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Data Share Crawl Report
 

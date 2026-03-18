@@ -1,9 +1,9 @@
 ---
 name: azure-vmware-solution
-description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with AVS private clouds, HCX migrations, NSX/vSAN, Citrix/Horizon VDI, or JetStream DR, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large Instances (use azure-large-instances), SAP HANA on Azure Large Instances (use azure-sap), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+description: Expert knowledge for Azure VMware Solution development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing AVS networking/ExpressRoute, HCX migrations, vSAN/DR, Citrix/Horizon, or Defender integration, and other Azure VMware Solution related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network), Azure ExpressRoute (use azure-expressroute), Azure Site Recovery (use azure-site-recovery).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure VMware Solution Skill
@@ -31,8 +31,8 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L76-L87 | Host, cluster, routing, and vSAN limits for AVS; network/port planning; and how to request, deploy, scale, and manage AVS host quota and capacity. |
 | Security | L88-L102 | Identity, access, encryption, and threat protection for AVS: vCenter/NSX identity sources, Defender integration, vSAN CMK, Trusted Launch/vTPM, role assignments, app gateway, and credential rotation. |
 | Configuration | L103-L153 | Configuring AVS private clouds: networking, storage, backup/DR, monitoring, DNS, security, Arc, and VMware/third‑party integrations (NSX, vSAN, Cloud Director, Pure, NetApp, Elastic SAN). |
-| Integrations & Coding Patterns | L154-L166 | Networking, VPN/ExpressRoute, HCX migration patterns, traffic management, monitoring/logging, and storage integrations (NetApp Files) for Azure VMware Solution workloads |
-| Deployment | L167-L171 | Guides for deploying Citrix Virtual Apps/Desktops and setting up JetStream DR with Azure VMware Solution, including architecture, configuration, and integration with on-premises workloads. |
+| Integrations & Coding Patterns | L154-L167 | Networking, migration, and tooling patterns for AVS: VPN/Virtual WAN, Traffic Manager, HCX migrations, monitoring/logging, NetApp Files, ExpressRoute, and AVS run commands. |
+| Deployment | L168-L172 | Guides for deploying Citrix Virtual Apps/Desktops and setting up JetStream DR with Azure VMware Solution, including architecture, configuration, and integration with on-premises workloads. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -163,6 +163,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure NetApp Files shares with AVS virtual machines | https://learn.microsoft.com/en-us/azure/azure-vmware/netapp-files-with-azure-vmware-solution |
 | Configure networking, ExpressRoute, and gateways for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-create-private-cloud |
 | Use VMware HCX Run Commands in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/azure-vmware/use-hcx-run-commands |
+| Use Set-ToolsRepo Run Command in Azure VMware | https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command |
 
 ### Deployment
 | Topic | URL |

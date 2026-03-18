@@ -27,6 +27,12 @@ use_when: Use when managing AVNM IPAM pools, network groups, cross-tenant connec
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher),
   Azure Networking (use azure-networking).
+confusable_slugs:
+- azure-virtual-network
+- azure-virtual-wan
+- azure-network-watcher
+- azure-networking
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Virtual Network Manager Crawl Report
 

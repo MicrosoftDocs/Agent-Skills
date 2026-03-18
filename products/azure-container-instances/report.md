@@ -30,13 +30,20 @@ skill_description: Expert knowledge for Azure Container Instances development in
   networking, standby pools, GitHub Actions deploys, Spot containers, or GPU workloads,
   and other Azure Container Instances related development tasks. Not for Azure Container
   Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Red Hat OpenShift (use azure-redhat-openshift), Azure Virtual Machines (use
+  azure-virtual-machines).
 use_when: Use when configuring ACI networking, standby pools, GitHub Actions deploys,
   Spot containers, or GPU workloads, and other Azure Container Instances related development
   tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
   azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+confusable_slugs:
+- azure-container-apps
+- azure-kubernetes-service
+- azure-redhat-openshift
+- azure-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Container Instances Crawl Report
 

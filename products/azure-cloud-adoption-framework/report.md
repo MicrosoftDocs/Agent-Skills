@@ -37,6 +37,8 @@ skill_description: Expert guidance for planning and executing cloud adoption usi
 use_when: Use when designing Azure landing zones, AVS/AKS, SAP/Oracle migrations,
   AVD/VDI, or AI/analytics platforms, and other Azure Cloud Adoption Framework related
   development tasks.
+confusable_slugs: []
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Cloud Adoption Framework Crawl Report
 

@@ -34,13 +34,18 @@ skill_description: Expert knowledge for Azure HDInsight development including tr
   working with HDInsight Spark/Hive/Kafka/HBase, Ambari configs, VNet security, autoscale,
   or ARM/CLI deployment, and other Azure HDInsight related development tasks. Not
   for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Data Factory (use azure-data-factory).
+  Azure Stream Analytics (use azure-stream-analytics).
 use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari configs,
   VNet security, autoscale, or ARM/CLI deployment, and other Azure HDInsight related
   development tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
   Azure Data Factory (use azure-data-factory).
+confusable_slugs:
+- azure-databricks
+- azure-synapse-analytics
+- azure-stream-analytics
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure HDInsight Crawl Report
 

@@ -38,6 +38,12 @@ use_when: Use when provisioning via DPS, managing twins/jobs, routing D2C data, 
   device streams, or Device Update, and other Azure IoT Hub related development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Central (use azure-iot-central),
   Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+confusable_slugs:
+- azure-iot
+- azure-iot-central
+- azure-iot-edge
+- azure-defender-for-iot
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure IoT Hub Crawl Report
 

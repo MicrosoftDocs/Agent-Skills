@@ -22,13 +22,19 @@ skill_description: Expert knowledge for Azure Table Storage development includin
   metrics/logs, tuning partitions/keys, or scripting tables via PowerShell, and other
   Azure Table Storage related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db),
   Azure Blob Storage (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage),
-  Azure Files (use azure-files).
+  Azure SQL Database (use azure-sql-database).
 use_when: Use when managing Entra ID/RBAC access, monitoring metrics/logs, tuning
   partitions/keys, or scripting tables via PowerShell, and other Azure Table Storage
   related development tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Blob Storage
   (use azure-blob-storage), Azure Queue Storage (use azure-queue-storage), Azure Files
   (use azure-files).
+confusable_slugs:
+- azure-cosmos-db
+- azure-blob-storage
+- azure-queue-storage
+- azure-sql-database
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Table Storage Crawl Report
 
