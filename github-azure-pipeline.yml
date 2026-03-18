@@ -86,7 +86,12 @@ stages:
 
                 TARGET_BRANCH="${{ parameters.targetBranch }}"
                 echo "Fetching target branch: $TARGET_BRANCH"
-                git fetch origin $TARGET_BRANCH
+                git fetch origin $TARGET_BRANCH || true
+
+                if ! git show-ref --verify --quiet refs/remotes/origin/$TARGET_BRANCH; then
+                  echo "Target branch origin/$TARGET_BRANCH does not exist yet. Skipping behind/ahead check."
+                  exit 0
+                fi
 
                 BEHIND_COUNT=$(git rev-list --count HEAD..origin/$TARGET_BRANCH)
                 AHEAD_COUNT=$(git rev-list --count origin/$TARGET_BRANCH..HEAD)
