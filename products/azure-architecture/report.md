@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   example-workloads: 'End-to-end Azure solution patterns: data/AI workloads, analytics
     lakehouses, AKS and networking security, hybrid/Arc, mainframe/Oracle/NetApp migrations,
@@ -7,9 +7,9 @@ category_descriptions:
   reference-architectures: End-to-end Azure reference designs for mission-critical,
     hybrid, and AI/data workloads, covering networking, security, DR, AKS, App Service,
     data platforms, and integration patterns.
-  design-patterns: 'Patterns and reference architectures for building scalable, resilient,
-    secure Azure solutions: messaging, microservices, gateways, caching, transactions,
-    multitenancy, networking, and integration.'
+  design-patterns: 'Cloud-native and integration design patterns on Azure: microservices,
+    messaging, resiliency, multitenancy, gateways, identity, caching, data patterns,
+    and distributed workflows.'
   technology-choices: Guides for choosing the right Azure services (compute, storage,
     data, AI/ML, analytics, messaging, networking, containers) based on workload,
     data, and architecture needs.
@@ -31,12 +31,12 @@ category_descriptions:
 skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
   Covers reference architectures, solution ideas, design patterns, technology choices,
   architecture styles, best practices, anti-patterns, example workloads, and migration
-  guides. Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hybrid/Arc
-  setups, or AWS/on‑prem migrations, and other Azure Architecture related development
-  tasks.
-use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hybrid/Arc
-  setups, or AWS/on‑prem migrations, and other Azure Architecture related development
-  tasks.
+  guides. Use when designing AKS apps, analytics lakehouses, AI/ML or IoT solutions,
+  hybrid/Arc setups, or SAP/Oracle migrations, and other Azure Architecture related
+  development tasks.
+use_when: Use when designing AKS apps, analytics lakehouses, AI/ML or IoT solutions,
+  hybrid/Arc setups, or SAP/Oracle migrations, and other Azure Architecture related
+  development tasks.
 ---
 # Azure Architecture Crawl Report
 
@@ -50,8 +50,8 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 442
+- **Updated Pages**: 1
+- **Unchanged**: 443
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
@@ -74,10 +74,8 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-03-10T17:32:00.000Z → 2026-03-16T08:00:00.000Z
-- [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway)
-  - Updated: 2025-03-07T18:30:00Z → 2026-03-17T05:10:00.000Z
+- [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
+  - Updated: 2025-12-09T06:03:00Z → 2026-03-17T17:35:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +93,7 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Batch processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/batch-processing) | technology-choices | 0.95 | Under /technology-choices/, compares batch processing options with key selection criteria and capability matrix to guide service choice. |
 | [Big compute](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-compute) | architecture-styles | 0.95 | Describes Big Compute as an architecture style, with use cases, benefits, challenges, and best practices; URL under guide/architecture-styles/, matching architecture-styles. |
 | [Big data](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-data) | architecture-styles | 0.95 | Explains Big Data as an architecture style with flows, components, benefits, and best practices; URL under guide/architecture-styles/, fitting architecture-styles. |
-| [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead) | design-patterns | 0.95 | patterns/bulkhead describes the Bulkhead pattern with explanation, benefits, and trade-offs. This is a named cloud design pattern with implementation guidance. |
+| [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead) | design-patterns | 0.95 | URL contains patterns/, describes the named Bulkhead pattern with context/problem and solution structure, includes when-to-use guidance and trade-offs. This is specialized architectural guidance beyond generic knowledge, fitting the design-patterns category. |
 | [Busy Database](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-database/) | anti-patterns | 0.95 | Named antipattern page under antipatterns/ with symptoms, causes, and remediation steps for offloading too much processing to the database. |
 | [Busy Front End](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/) | anti-patterns | 0.95 | Named antipattern under antipatterns/ describing symptoms of excessive background threads and how to remediate, clearly an anti-pattern guide. |
 | [Cache-Aside](https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside) | design-patterns | 0.95 | patterns/cache-aside describes the Cache-Aside pattern with problem/solution and implementation details—classic design pattern content. |

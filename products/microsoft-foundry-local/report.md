@@ -15,21 +15,22 @@ category_descriptions:
     considerations.
   troubleshooting: Troubleshooting setup and runtime issues when installing and running
     Azure AI Foundry Local specifically on Windows Server 2025.
-skill_description: Expert knowledge for Azure AI Foundry Local development including
-  troubleshooting, best practices, decision making, configuration, and integrations
-  & coding patterns. Use when installing Foundry Local, compiling HF models with Olive,
-  calling via REST/OpenAI clients, using LangChain, or migrating from legacy SDK,
-  and other Azure AI Foundry Local related development tasks. Not for Azure Foundry
-  Classic (use azure-foundry-classic), Microsoft Foundry (use azure-microsoft-foundry),
-  Azure Machine Learning (use azure-machine-learning), Azure AI services (use azure-ai-services).
+skill_description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry
+  Local) development including troubleshooting, best practices, decision making, configuration,
+  and integrations & coding patterns. Use when installing Foundry Local, compiling
+  HF models with Olive, calling via REST/OpenAI clients, using LangChain, or migrating
+  from legacy SDK, and other Microsoft Foundry Local related development tasks. Not
+  for Azure Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry (use
+  microsoft-foundry), Azure Machine Learning (use azure-machine-learning), Azure AI
+  services (use microsoft-foundry-tools).
 use_when: Use when installing Foundry Local, compiling HF models with Olive, calling
   via REST/OpenAI clients, using LangChain, or migrating from legacy SDK, and other
   Azure AI Foundry Local related development tasks.
-confusable_not_for: Not for Azure Foundry Classic (use azure-foundry-classic), Microsoft
-  Foundry (use azure-microsoft-foundry), Azure Machine Learning (use azure-machine-learning),
-  Azure AI services (use azure-ai-services).
+confusable_not_for: Not for Azure Foundry Classic (use microsoft-foundry-classic),
+  Microsoft Foundry (use microsoft-foundry), Azure Machine Learning (use azure-machine-learning),
+  Azure AI services (use microsoft-foundry-tools).
 ---
-# Azure AI Foundry Local Crawl Report
+# Microsoft Foundry Local Crawl Report
 
 ## Summary
 
@@ -44,7 +45,7 @@ confusable_not_for: Not for Azure Foundry Classic (use azure-foundry-classic), M
 - **Updated Pages**: 0
 - **Unchanged**: 18
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-foundry-local/azure-ai-foundry-local.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/azure-ai-foundry-local.csv`
 
 ## Classification Statistics
 

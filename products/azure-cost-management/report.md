@@ -1,42 +1,43 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: Configuring Azure billing, credits, reservations, savings plans,
     budgets, tags, alerts, and subscription/payment relationships to control, allocate,
     and optimize cloud costs.
-  decision-making: Deciding how to allocate, reserve, and prepay Azure costs (reservations,
-    savings plans, Hybrid Benefit), choosing billing APIs/offers, and planning migrations
-    or discounts to optimize spend.
+  decision-making: Guidance for choosing cost tools, reservations, savings plans,
+    allocation strategies, and subscription/billing options to optimize and allocate
+    Azure spend and plan billing transitions.
   integrations: APIs, scripts, and Power BI patterns to automate cost analysis, billing
     data retrieval, subscription creation (EA/MCA/MPA), cross-tenant scenarios, and
     reservation management.
   security: 'Securing Azure billing and cost data: RBAC and billing roles, admin elevation,
-    EA/MCA/CSP access, fraud prevention, and permissions for subscriptions, reservations,
-    and savings plans.'
+    EA/MCA/CSP access, fraud prevention, subscription policies, and permissions for
+    reservations and savings plans.'
   best-practices: Best practices for analyzing Azure costs, optimizing and reducing
     spend (including Advisor and Hybrid Benefit), and planning/implementing organization-wide
     cost management processes.
   troubleshooting: Diagnosing and fixing Azure billing, subscription, and reservation
-    issues (sign-up, disabled subs, payments, invoices, reservations, savings plans)
-    and using logs/pivot tables to investigate anomalies.
+    issues (sign-up/access errors, disabled subs, payment failures, low utilization,
+    missing invoices, and CSP/MCA/EA billing anomalies).
   deployment: Configuring automated, large-scale exports of Azure cost and usage data
     to storage (like Azure Storage), including setup, scheduling, and management for
     ongoing cost analysis.
-  limits-quotas: 'Limits, quotas, and timing rules for Azure costs: free tier limits,
-    spending caps, data transfer fees, subscription limits, savings plans, SQL licensing,
-    and billing/dormancy behavior.'
+  limits-quotas: 'Limits, quotas, and timing for Azure costs: free tier usage and
+    credits, spending limits, savings plans, data transfer rules, subscription limits,
+    EA invoices, SQL license timing, and billing dormancy.'
 skill_description: Expert knowledge for Azure Cost Management development including
   troubleshooting, best practices, decision making, limits & quotas, security, configuration,
   integrations & coding patterns, and deployment. Use when managing Azure billing
-  accounts, budgets/alerts, reservations & savings plans, exports, or cost APIs, and
-  other Azure Cost Management related development tasks. Not for Azure Advisor (use
-  azure-advisor), Azure Monitor (use azure-monitor), Azure Quotas (use azure-quotas),
-  Azure Policy (use azure-policy).
+  accounts, budgets/alerts, reservations & savings plans, exports, or Cost Management
+  APIs, and other Azure Cost Management related development tasks. Not for Azure Advisor
+  (use azure-advisor), Azure Monitor (use azure-monitor), Azure Impact Reporting (use
+  azure-impact-reporting), Azure Quotas (use azure-quotas).
 use_when: Use when managing Azure billing accounts, budgets/alerts, reservations &
-  savings plans, exports, or cost APIs, and other Azure Cost Management related development
-  tasks.
+  savings plans, exports, or Cost Management APIs, and other Azure Cost Management
+  related development tasks.
 confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (use
-  azure-monitor), Azure Quotas (use azure-quotas), Azure Policy (use azure-policy).
+  azure-monitor), Azure Impact Reporting (use azure-impact-reporting), Azure Quotas
+  (use azure-quotas).
 ---
 # Azure Cost Management Crawl Report
 
@@ -45,14 +46,14 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 - **Total Pages**: 265
 - **Fetched**: 265
 - **Fetch Failed**: 0
-- **Classified**: 190
-- **Unclassified**: 75
+- **Classified**: 189
+- **Unclassified**: 76
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 265
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 9
+- **Unchanged**: 253
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cost-management/azure-cost-management.csv`
 
 ## Classification Statistics
@@ -61,15 +62,48 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 |------|-------|------------|
 | best-practices | 6 | 2.3% |
 | configuration | 67 | 25.3% |
-| decision-making | 49 | 18.5% |
+| decision-making | 48 | 18.1% |
 | deployment | 1 | 0.4% |
 | integrations | 13 | 4.9% |
 | limits-quotas | 12 | 4.5% |
 | security | 17 | 6.4% |
 | troubleshooting | 25 | 9.4% |
-| *(Unclassified)* | 75 | 28.3% |
+| *(Unclassified)* | 76 | 28.7% |
 
 ## Changes
+
+### New Pages
+
+- [Buy a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan)
+- [Manage savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan)
+- [What are savings plans?](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview)
+
+### Updated Pages
+
+- [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/software-costs-not-included)
+  - Updated: 2026-01-08T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+- [Cancellation policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/cancel-savings-plan)
+  - Updated: 2026-01-08T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+- [Choose a commitment amount](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/choose-commitment-amount)
+  - Updated: 2026-01-09T23:14:00.000Z → 2026-03-17T22:33:00.000Z
+- [Renew a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/renew-savings-plan)
+  - Updated: 2026-01-09T23:14:00.000Z → 2026-03-17T22:33:00.000Z
+- [Download price sheet](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/download-savings-plan-price-sheet)
+  - Updated: 2026-01-08T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+- [Permission to buy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-buy-savings-plan)
+  - Updated: 2026-01-08T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+- [View savings plan utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-utilization)
+  - Updated: 2026-01-09T23:14:00.000Z → 2026-03-17T22:33:00.000Z
+- [View savings plan transactions](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-transactions)
+  - Updated: 2026-01-09T23:14:00.000Z → 2026-03-17T22:33:00.000Z
+- [Troubleshoot utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization)
+  - Updated: 2026-01-08T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+
+### Deleted Pages
+
+- ~~Buy an Azure savings plan~~ (https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan)
+- ~~Manage saving plan~~ (https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan)
+- ~~What are Azure savings plans for compute?~~ (https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview)
 
 ## Classified Pages
 
@@ -98,7 +132,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Review subscription use](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/review-subscription-billing) | integrations | 0.80 | Shows how to call Cost Details API for subscription billing with date ranges; includes product-specific REST parameters and usage patterns, matching integrations. |
 | [Subscription sign-in issues](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-subscription/troubleshoot-sign-in-issue) | troubleshooting | 0.80 | Guide for resolving inability to sign in to Azure portal; typically organized by error/symptom with corresponding fixes, which is product-specific troubleshooting. |
 | [Troubleshoot reservation utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/troubleshoot-reservation-utilization) | troubleshooting | 0.80 | Explains reasons for zero/mismatched utilization and how to fix; includes symptom → cause → resolution mappings specific to reservations. |
-| [Troubleshoot utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization) | troubleshooting | 0.80 | Explicitly a troubleshooting article explaining why utilization can exceed 100%; likely maps symptoms (high utilization) to causes and explanations specific to savings plan reporting. |
 | [Manage subscription policies](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/manage-azure-subscription-policy) | security | 0.79 | Explains subscription movement policies (Allow Everyone, etc.) and how to configure them; these are specific security/tenant governance settings with defined allowed values. |
 | [Assign access to cost management data](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/assign-access-acm-data) | security | 0.78 | Walkthrough for assigning permissions to Cost Management data by scope and agreement type; likely lists specific RBAC roles, scopes, and combinations of permissions unique to Cost Management. |
 | [Create MCA subscriptions programmatically across associated tenants](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/programmatically-create-customer-agreement-associated-billing-tenants) | integrations | 0.78 | Describes cross-tenant subscription creation with specific API calls, tenant IDs, and required permissions; these are advanced integration patterns. |
@@ -137,7 +170,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Change optimize setting](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reserved-vm-instance) | configuration | 0.70 | Duplicate of index 17 with the same configuration-focused expert content on reservation scope and optimization settings. |
 | [Change reservation directory](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/troubleshoot-reservation-transfers-between-tenants) | configuration | 0.70 | Describes the process and side effects (RBAC reset, billing ownership unchanged) of moving reservations between tenants; these are specific configuration behaviors. |
 | [Changes to the reservation exchange policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-exchange-policy-changes) | decision-making | 0.70 | Contains specific policy changes, dates, and scope (e.g., which compute reservations, instance size flexibility); these are expert policy/decision details. |
-| [Choose a commitment amount](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/choose-commitment-amount) | decision-making | 0.70 | Describes how Azure calculates recommendations using specific terms, scopes, and lookback periods; likely includes concrete guidance and criteria for choosing commitment amounts across scenarios, which is product-specific decision guidance. |
+| [Choose a commitment amount](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/choose-commitment-amount) | decision-making | 0.70 | Guides how to choose commitment amount using term, scope, and look-back period, and mentions simulated cost comparisons. This is product-specific decision guidance with scenario-based recommendations and quantified trade-offs (cost over different terms/periods), fitting decision-making. |
 | [Copy MCA billing roles across tenants](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-role-migration) | integrations | 0.70 | Provides a PowerShell script and process to copy billing roles across tenants; includes product-specific API/role parameters and scripting patterns, fitting integrations & coding patterns. |
 | [Create and manage budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets) | configuration | 0.70 | Tutorial for configuring budgets and alerts with thresholds; includes specific settings and allowed values, fitting configuration of budget features. |
 | [Create free services](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-free-services) | limits-quotas | 0.70 | Includes specific, time-bound and monetary limits for Azure free accounts (for example, $200 credit in billing currency, valid for the first 30 days, lost if unused). These are concrete numeric limits/quotas that are subject to change and are not reliably known from pretraining. |
@@ -170,7 +203,6 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/microsoft-foundry) | decision-making | 0.70 | Explains how to reserve PTUs for Foundry models; such pages normally contain region, term, and quantity selection details and how discounts apply, which are product-specific decision data. |
 | [Pay using strong customer authentication](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/open-banking-strong-customer-authentication) | security | 0.70 | Contains product-specific security/compliance behavior for Azure billing under PSD2/SCA (when and why MFA is triggered for purchases). While not listing RBAC roles, it documents concrete, service-specific authentication requirements that affect how customers must authenticate payments, which is expert operational knowledge beyond generic security concepts. |
 | [Payment issues](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/billing-troubleshoot-azure-payment-issues) | troubleshooting | 0.70 | Explicitly a troubleshooting article for Azure payment issues; organized around specific issues/errors when updating payment information and likely includes error messages and resolution steps, which are product-specific symptom→cause→solution mappings. |
-| [Permission to buy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-buy-savings-plan) | security | 0.70 | Defines which billing types and subscription types (EA offer codes, MCA, MPA) can buy savings plans; this is concrete eligibility and access configuration information tied to specific agreement types. |
 | [Permissions to view and manage](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-view-manage) | security | 0.70 | Explains savings plan permissions; likely lists specific Azure roles and scopes required to manage plans, which are product-specific RBAC details. |
 | [Region optimization](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/region-optimization) | limits-quotas | 0.70 | Describes a policy that restricts resource creation in certain regions and suggests alternative regions; involves concrete behavioral constraints and system messages, fitting limits/quotas for region selection. |
 | [Renew a reservation](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-renew) | configuration | 0.70 | Explains default renewal behavior, how to enable/disable, and timing; these are concrete configuration settings for reservations. |
@@ -190,13 +222,12 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Transfer Microsoft Partner Agreement ownership](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mpa-request-ownership) | configuration | 0.70 | Details supported transfer options, eligibility (Azure Expert MSP, CSP Direct Bill), and governance constraints; these are specific configuration/operational rules. |
 | [Transition to centrally managed Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/transition-existing) | decision-making | 0.70 | Describes transition scenarios and how behavior changes when moving to scope-level management; supports choosing migration paths and understanding impacts, which is product-specific decision guidance. |
 | [Troubleshoot threshold billing](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-threshold-billing) | troubleshooting | 0.70 | Explains threshold billing behavior and what happens when authorizations fail, with guidance to resolve; symptom-to-solution mapping for a specific Azure billing mechanism. |
+| [Troubleshoot utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/troubleshoot-savings-plan-utilization) | troubleshooting | 0.70 | Explicitly a troubleshooting article explaining why utilization can exceed 100%. Likely maps the symptom (high utilization) to causes (reporting behavior, timing, or metering) and resolutions/interpretations, matching the troubleshooting criteria. |
 | [US West Dv3 VMs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/limited-time-us-west) | decision-making | 0.70 | Details a regional, time-limited discount (up to 50%) for Dv3s VMs with one-year reservations, including offer dates. Supports cost decision-making with specific numbers. |
 | [Understand Cost Management data](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/understand-cost-mgt-data) | limits-quotas | 0.70 | Explains how frequently data is processed, collected, and shown; typically includes specific time delays, closure times, and processing cadences, which are numeric service limits/behaviors. |
 | [Use cost alerts](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending) | configuration | 0.70 | Describes different alert types and how they’re generated and configured; includes specific alert settings and thresholds, fitting configuration. |
 | [View billing account](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/troubleshoot-account-not-found) | troubleshooting | 0.70 | Helps diagnose why a billing account isn’t visible, mapping scenarios to causes and resolutions; Azure-specific billing account troubleshooting. |
-| [View savings plan utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-utilization) | limits-quotas | 0.70 | Includes specific latency windows (up to 48 hours for initial data, 2–24 hours ongoing) which are concrete timing limits for reporting behavior. |
 | [What are Azure Reservations?](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations) | decision-making | 0.70 | Explains Azure Reservations, term options, and savings (up to 72%) versus pay-as-you-go, helping decide when to commit to 1- or 3-year plans. Contains quantified savings and scenario-based guidance. |
-| [What are Azure savings plans for compute?](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview) | decision-making | 0.70 | Beyond overview, this page includes quantified savings (up to 65%) and contrasts with reservations for different workload patterns, guiding selection decisions. |
 | [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reserved-instance-windows-software-costs) | configuration | 0.70 | Lists which software meters are excluded from VM and SQL reserved instance discounts and how IP costs are charged without Azure Hybrid Benefit. Product-specific billing exclusions. |
 | [Markup - China](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/markup-china) | configuration | 0.68 | The article describes how to configure markup rules specifically for Microsoft Azure operated by 21Vianet, including product applicability constraints (first-party vs third-party, marketplace, seat-based) and how markup is reflected in pricing and cost experiences. This is product- and region-specific configuration behavior that is unlikely to be fully known from generic training data, and it focuses on concrete configuration of a Cost Management feature rather than conceptual billing overviews. |
 | [Transfer subscription to EA](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mosp-ea-transfer) | configuration | 0.68 | Describes detailed steps and constraints to transfer specific offer types (for example, MS-AZR-0003P) to EA without downtime; these are product-specific operational procedures. |
@@ -225,6 +256,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Manage costs with automation](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/manage-automation) | integrations | 0.65 | Describes Cost Management automation scenarios and provides common API request examples. This is an integration/coding pattern for retrieving and managing cost data via product-specific APIs. |
 | [Nutanix on Azure BareMetal](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/nutanix-bare-metal) | decision-making | 0.65 | Describes how reservations apply only to compute for NC2 on BareMetal and how discounts are scoped; these are product-specific cost decision rules. |
 | [Onboard to the Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/onboard-microsoft-customer-agreement) | best-practices | 0.65 | Described as a playbook with recommended best practices for onboarding to MCA, including path-specific considerations. This is concrete, scenario-based onboarding guidance. |
+| [Permission to buy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/permission-buy-savings-plan) | security | 0.65 | Defines which subscription/billing types (EA, MCA, MPA, specific offer codes) are eligible to buy savings plans. This is product-specific access/eligibility control information akin to permission scope definitions, fitting the security/authorization category. |
 | [Red Hat Linux Enterprise](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/understand-rhel-reservation-charges) | configuration | 0.65 | Explains how Red Hat software plan discounts are applied to VM software costs and what is covered. Product-specific software billing rules. |
 | [Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/prepay-red-hat-openshift) | decision-making | 0.65 | Explains that discounts apply only to RHO meters, not VMs, and that VM reservations are separate; this is concrete billing behavior for decision-making. |
 | [Savings plan recommendations](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/purchase-recommendations) | decision-making | 0.65 | Explains how recommendations are generated via Advisor/portal/API and likely includes criteria and thresholds, which are expert decision-support details. |
@@ -237,6 +269,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Upgrade free account](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/upgrade-azure-subscription) | decision-making | 0.65 | Explains upgrade paths between free, Students, and pay-as-you-go, including when you get $200 credit and 12 months of free services; supports concrete billing-plan selection decisions. |
 | [View amortized costs](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/view-amortized-costs) | decision-making | 0.65 | Details how amortization is calculated and viewed for chargeback; includes billing behavior and options (upfront vs monthly) that affect financial decisions. |
 | [View reservation utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-utilization) | configuration | 0.65 | Describes where and how to access utilization metrics and what they mean; these are specific portal/Power BI configuration and interpretation details. |
+| [View savings plan utilization](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-utilization) | limits-quotas | 0.65 | Includes specific timing constraints for data availability (initial utilization can take up to 48 hours; subsequent usage appears within 2–24 hours). These are concrete time-related limits/latencies that qualify as limits-quotas. |
 | [Virtual machine software](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/buy-vm-software-reservation) | decision-making | 0.65 | Explains that discounts apply to software plans only and how they interact with VM reservations; this is specialized billing behavior for planning. |
 | [Cancel and delete subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/cancel-azure-subscription) | configuration | 0.64 | Provides specific pre-cancellation actions and conditions required before deletion; these are product-specific operational configuration steps around subscription lifecycle. |
 | [EA tasks in Microsoft Customer Agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/mca-enterprise-operations) | configuration | 0.64 | Describes how EA tasks translate to MCA billing account structure and operations; includes specific mappings and procedures unique to EA-to-MCA transitions. |
@@ -283,7 +316,7 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [View and download your Azure usage and charges](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-daily-usage) | 0.45 | Describes how to download daily usage and which roles can view it; role mapping is simple and not a detailed configuration or troubleshooting matrix. |
 | [Create a subscription for a partner's customer](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-customer-subscription) | 0.42 | Partner-focused tutorial to create a customer subscription; mostly portal steps and high-level constraints (like B2B/B2C restriction) rather than detailed config tables. |
 | [Azure Reservations and Savings Plan FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations-savings-plan-faq) | 0.40 | Reservations and Savings Plan FAQ is likely conceptual and policy-focused; summary doesn’t show numeric limits or structured troubleshooting content. |
-| [Buy an Azure savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan) | 0.40 | Covers how to buy a savings plan and payment options; primarily procedural/commerce info without detailed limits, configuration tables, or decision matrices. |
+| [Buy a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/buy-savings-plan) | 0.40 | Covers how to buy a savings plan and payment options (monthly vs upfront). Summary suggests procedural/commerce info, not detailed numeric limits, configuration matrices, or troubleshooting mappings. |
 | [Checklist after signing your agreement](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/microsoft-customer-agreement-get-started) | 0.40 | High-level 'getting started' after accepting MCA, likely benefits and basic steps without detailed configuration tables or quantified trade-offs. |
 | [Cost Management + Billing FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-faq) | 0.40 | General Cost Management + Billing FAQ; likely broad Q&A without deep numeric limits, configs, or detailed troubleshooting mappings. |
 | [Cost reporting and analytics overview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/reporting-get-started) | 0.40 | Intro to reporting components; largely conceptual and navigational, not focused on detailed configuration parameters or limits. |
@@ -293,11 +326,11 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [Enterprise Agreement (EA) FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/enterprise-agreement-faq) | 0.40 | Enterprise Agreement FAQ is mostly explanatory and policy-oriented; not clearly focused on numeric limits, configs, or structured troubleshooting. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/faq-azure-hybrid-benefit-scope) | 0.40 | FAQ format; likely mixes conceptual and procedural answers but summary does not indicate structured limits, configuration tables, or troubleshooting mappings with error codes. |
 | [Individual subscription invoice terms](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-invoice) | 0.40 | Explains Azure invoice structure and notes about free trials and timing; mostly conceptual and procedural without structured config tables or numeric limits beyond generic timing notes. |
-| [Manage saving plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan) | 0.40 | Describes management operations (change scope, split plan, etc.) and permission requirements; likely procedural without detailed configuration parameter tables or numeric limits. |
+| [Manage savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/manage-savings-plan) | 0.40 | Describes what changes can be made to a savings plan and mentions permissions. From the summary, it appears to be procedural/management guidance without detailed RBAC role lists, config tables, or numeric constraints. |
 | [Optimize centrally managed Azure Hybrid Benefit](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/tutorial-azure-hybrid-benefits-sql) | 0.40 | Tutorial for assigning SQL Server licenses; likely procedural with screenshots rather than structured configuration parameter tables or numeric limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/overview) | 0.40 | High-level overview of billing benefits (discounts, credits, commitments) modeled as ARM resources; conceptual without detailed limits, configs, or decision matrices. |
 | [Partner FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/partner-faq) | 0.40 | Partner FAQ is general Q&A; description doesn’t indicate detailed limits, configuration tables, or error-code-based troubleshooting. |
-| [Renew a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/renew-savings-plan) | 0.40 | Explains automatic renewal behavior and portal steps; no strong indication of numeric limits, configuration parameter tables, or decision matrices. |
+| [Renew a savings plan](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/renew-savings-plan) | 0.40 | Explains automatic renewal behavior and that renewal is off by default. While it mentions a default, it’s primarily a simple behavioral description and UI steps, not a broader configuration reference or decision matrix. |
 | [Request Withholding Tax credit - India](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/withholding-tax-credit-india) | 0.40 | Explains process for requesting withholding tax credit in India; procedural finance/tax workflow rather than technical limits, configuration, or troubleshooting. |
 | [Tutorial - Export data](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-improved-exports) | 0.40 | Tutorial-style walkthrough for creating exports; likely focuses on step-by-step UI usage without detailed configuration tables, limits, or advanced patterns. |
 | [View and download EA usage details](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/direct-ea-azure-usage-charges-invoices) | 0.40 | Explains how EA admins view usage summaries and reports; largely portal navigation and role requirements without deep product-specific configs or limits. |
@@ -313,10 +346,11 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [View and download tax documents](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mca-download-tax-document) | 0.35 | Explains how to view/download tax documents and required roles; procedural billing portal usage without expert-level technical detail. |
 | [View and download your Azure invoice](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-invoice) | 0.35 | How to view/download invoices and who can access them; procedural with role mentions but no deep troubleshooting, limits, or config tables. |
 | [Azure EA agreements and amendments](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/ea-portal-agreements) | 0.30 | Agreement/amendment effects on EA access and payments are contractual and procedural, not detailed technical limits, configs, or troubleshooting mappings. |
+| [Cancellation policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/cancel-savings-plan) | 0.30 | Describes that savings plan purchases are final and non-cancellable. This is high-level policy information without numeric limits, configuration parameters, or technical troubleshooting content. |
 | [Changes to your updated pay-as-you-go billing account](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/mosp-new-customer-experience) | 0.30 | Describes updated billing experience and capabilities; more of a feature overview and walkthrough than detailed configuration or limits content. |
 | [Create EA support request](https://learn.microsoft.com/en-us/azure/cost-management-billing/troubleshoot-billing/how-to-create-azure-support-request-ea) | 0.30 | How-to for creating EA support requests; mostly portal navigation and process, no product-specific limits, configs, or detailed troubleshooting mappings. |
 | [Discover cloud footprint FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/discover-cloud-footprint) | 0.30 | Cloud footprint FAQ mainly links to other articles and explains concepts; not focused on limits, configs, or troubleshooting mappings. |
-| [Download price sheet](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/download-savings-plan-price-sheet) | 0.30 | Shows how to download a price sheet; prices and eligible products are data, but the page itself is a procedural portal guide without embedded limits/configuration details. |
+| [Download price sheet](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/download-savings-plan-price-sheet) | 0.30 | Explains how to download a price sheet. The expert pricing details are in the downloaded sheet, not in the doc itself; the page is a procedural portal guide without config tables or numeric limits. |
 | [Estimate costs with the Azure pricing calculator](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/pricing-calculator) | 0.30 | How-to for using the pricing calculator; mostly UI usage and planning guidance without numeric service limits, configs, or troubleshooting mappings. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/cost-management-billing/microsoft-customer-agreement/microsoft-customer-agreement-faq) | 0.30 | FAQ format about MCA; typically high-level Q&A without detailed configuration parameters, limits, or error-code-based troubleshooting. |
 | [Filter and view subscriptions](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/filter-view-subscriptions) | 0.30 | Explains how to filter and view subscriptions in the portal; mostly UI navigation and basic filtering, not deep configuration or troubleshooting. |
@@ -330,16 +364,16 @@ confusable_not_for: Not for Azure Advisor (use azure-advisor), Azure Monitor (us
 | [View billing accounts](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-all-accounts) | 0.30 | Shows how to view billing accounts and scopes; mostly navigation and conceptual explanation of account types, not detailed configuration or limits. |
 | [View external Azure service charges](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-azure-marketplace-charges) | 0.30 | Conceptual explanation of external/Marketplace service charges; lacks specific limits, configs, or troubleshooting mappings. |
 | [View savings plan cost and usage](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/utilization-cost-reports) | 0.30 | Describes how to view cost and usage details; summary does not indicate numeric limits, configuration parameters, or decision matrices. |
-| [View savings plan transactions](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-transactions) | 0.30 | Portal instructions to view purchase and refund transactions; no strong evidence of limits, configuration tables, or troubleshooting mappings. |
+| [View savings plan transactions](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/view-transactions) | 0.30 | Describes how to view purchase and refund transactions in the portal. No indication of numeric limits, configuration parameters, or troubleshooting mappings; it’s a basic navigation/usage guide. |
 | [What is centrally managed Azure Hybrid Benefit?](https://learn.microsoft.com/en-us/azure/cost-management-billing/scope-level/overview-azure-hybrid-benefit-scope) | 0.30 | Conceptual overview of centrally managed Azure Hybrid Benefit; summary suggests high-level explanation without detailed limits, configuration tables, or decision matrices. |
-| [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/software-costs-not-included) | 0.30 | Explains that savings plan discounts don't apply to software meters; likely lists affected meters but not configuration parameters, limits, or decision matrices with quantified trade-offs. |
+| [Windows and SQL costs not included](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/software-costs-not-included) | 0.30 | Explains that savings plan discounts apply only to infrastructure, not software costs. Summary does not indicate specific numeric limits, configuration parameters, or detailed error codes; it’s policy/behavioral description rather than expert configuration or troubleshooting data. |
 | [Find tenant ID and primary domain name](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/find-tenant-id-domain) | 0.25 | Simple how-to for finding tenant ID and primary domain; generic portal navigation without detailed configuration tables or limits. |
 | [Add, update, or delete payment method](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card) | 0.20 | Procedural portal how-to for managing payment methods; no product-specific limits, configuration tables, error codes, or quantified guidance that meet any sub-skill criteria. |
-| [Cancellation policy](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/cancel-savings-plan) | 0.20 | High-level policy that savings plan purchases are final and non-cancellable; no detailed limits, configuration, or troubleshooting content. |
 | [Enable preview features](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs) | 0.20 | Explains how to explore preview features; mostly portal navigation and feature list, not deep configuration or troubleshooting content. |
 | [Resolve pay-as-you-go past due balance](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/resolve-past-due-balance) | 0.20 | Primarily a procedural billing/how-to article about resolving past-due balances; no product-specific limits, configuration parameters, error-code mappings, or other expert-only technical details. |
 | [Track your Microsoft Azure Consumption Commitment](https://learn.microsoft.com/en-us/azure/cost-management-billing/benefits/macc/track-consumption-commitment) | 0.20 | Primarily explains what MACC is and how to view tracking information in the portal or via APIs. The summary does not indicate specific numeric limits, configuration parameters, or detailed decision/troubleshooting matrices; it is mostly conceptual/operational guidance. |
 | [Understand the billing and tenant relationship](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/understand-billing-tenant-relationship) | 0.20 | Conceptual explanation of billing–tenant relationships; no detailed configuration parameters, limits, or troubleshooting mappings. |
+| [What are savings plans?](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview) | 0.20 | High-level overview of Azure savings plans and their purpose; no detailed limits, configuration parameters, decision matrices with thresholds, or other product-specific expert data. |
 | [Billing and subscriptions documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/) | 0.10 | High-level navigation/landing page for billing and subscription docs without detailed limits, configs, or error mappings. |
 | [View payment history](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/view-payment-history) | 0.10 | Simple guidance on viewing payment history in the Azure portal; no specific limits, configuration parameters, or technical troubleshooting content. |
 | [What is Billing?](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview) | 0.10 | Overview of billing capabilities; conceptual and descriptive without product-specific numeric limits, configs, or troubleshooting content. |

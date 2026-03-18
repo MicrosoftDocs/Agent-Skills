@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   best-practices: 'Security-focused guidance on designing Azure RBAC: choosing scopes,
     delegating access with ABAC conditions, and applying least privilege and separation-of-duties
     best practices.'
   security: 'Azure RBAC roles, permissions, and conditions: built-in role references
-    by service, custom roles, ABAC/conditions, delegation, deny assignments, PIM,
-    policy, and security/privileged access controls.'
+    by service, custom roles, ABAC, deny assignments, PIM, delegation, policy integration,
+    and security/privileged access controls.'
   troubleshooting: 'Diagnosing and fixing Azure RBAC issues: access denials, role/condition
     misconfigurations, role limit errors, and auditing role/condition changes via
     Activity Log'
@@ -23,15 +23,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Role-based access control development
   including troubleshooting, best practices, decision making, limits & quotas, security,
   configuration, and integrations & coding patterns. Use when managing Azure RBAC
-  roles, ABAC conditions, deny assignments, PIM, or role assignments via CLI/PowerShell,
+  roles/ABAC, deny assignments, PIM, policy integration, or role assignments via CLI/ARM,
   and other Azure Role-based access control related development tasks. Not for Azure
-  Policy (use azure-policy), Azure Security (use azure-security), Azure Portal (use
-  azure-portal), Azure Resource Manager (use azure-resource-manager).
-use_when: Use when managing Azure RBAC roles, ABAC conditions, deny assignments, PIM,
-  or role assignments via CLI/PowerShell, and other Azure Role-based access control
-  related development tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use azure-security),
-  Azure Portal (use azure-portal), Azure Resource Manager (use azure-resource-manager).
+  Active Directory B2C (use azure-active-directory-b2c), Azure Information Protection
+  (use azure-information-protection), Azure Policy (use azure-policy), Azure Security
+  (use azure-security).
+use_when: Use when managing Azure RBAC roles/ABAC, deny assignments, PIM, policy integration,
+  or role assignments via CLI/ARM, and other Azure Role-based access control related
+  development tasks.
+confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directory-b2c),
+  Azure Information Protection (use azure-information-protection), Azure Policy (use
+  azure-policy), Azure Security (use azure-security).
 ---
 # Azure Role-based access control Crawl Report
 
@@ -45,8 +47,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 104
+- **Updated Pages**: 1
+- **Unchanged**: 103
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -57,13 +59,18 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | best-practices | 3 | 2.9% |
 | configuration | 8 | 7.7% |
 | decision-making | 4 | 3.8% |
-| integrations | 14 | 13.5% |
+| integrations | 13 | 12.5% |
 | limits-quotas | 2 | 1.9% |
-| security | 61 | 58.7% |
+| security | 62 | 59.6% |
 | troubleshooting | 5 | 4.8% |
 | *(Unclassified)* | 7 | 6.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Assign roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)
+  - Updated: 2025-10-24T17:26:00.000Z → 2026-03-17T22:33:00.000Z
 
 ## Classified Pages
 
@@ -142,6 +149,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | [ARM template](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-template) | security | 0.70 | Provides ARM template schema and property names for custom roles; these are specific security configuration parameters and structures. |
 | [Activate eligible roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-eligible-activate) | security | 0.70 | Covers PIM-based activation of eligible roles with time limits and approval flows; product-specific secure access pattern. |
 | [Alert on privileged role assignments](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-alert) | security | 0.70 | Shows how to configure Azure Monitor alert rules for specific privileged roles; includes concrete role names and alert configuration parameters, which are product-specific security monitoring settings. |
+| [Assign roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) | security | 0.70 | The article provides concrete, product-specific security configuration steps for Azure RBAC in the portal, including exact UI labels, scope selection behavior, and role assignment mechanics that are not purely conceptual. It focuses on how to configure access control (who gets what role at which scope) using Azure-specific constructs, which fits the security sub-skill. While it may not list role definitions exhaustively, it contains detailed, prescriptive guidance on applying RBAC in Azure rather than just high-level concepts. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-bicep) | security | 0.70 | Shows Bicep resource types and properties for custom roles; includes product-specific security configuration schema and patterns. |
 | [Conditions prerequisites](https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-prerequisites) | configuration | 0.70 | Lists specific prerequisites (roles, features, possibly preview flags) required to configure conditions; product-specific configuration requirements. |
 | [Create a custom role - CLI](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-cli) | configuration | 0.70 | Covers custom role definition schema and CLI parameters for configuring permissions; product-specific configuration details. |
@@ -157,7 +165,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Security (use
 | [View activity logs](https://learn.microsoft.com/en-us/azure/role-based-access-control/change-history-report) | troubleshooting | 0.68 | Describes how to retrieve and interpret RBAC change events from Activity Log for the past 90 days; this is product-specific diagnostic/auditing guidance tied to symptoms and investigation. |
 | [Transfer subscription to different directory](https://learn.microsoft.com/en-us/azure/role-based-access-control/transfer-subscription) | decision-making | 0.66 | Explains which resources are permanently deleted (e.g., all role assignments and custom roles) when transferring a subscription; these concrete effects are critical for migration decisions. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/role-based-access-control/quickstart-role-assignments-template) | integrations | 0.65 | Uses ARM template JSON schema and RBAC-specific resource definitions/parameters; this is a product-specific integration pattern with configuration fields. |
-| [Assign roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) | integrations | 0.65 | Portal-based assignment flow with RBAC-specific options (scope, role selection, principals); product-specific configuration workflow. |
 | [Classic administrators](https://learn.microsoft.com/en-us/azure/role-based-access-control/classic-administrators) | decision-making | 0.65 | Describes retirement timelines and automatic conversion behavior (e.g., assigning Owner at subscription scope starting Dec 2025); provides concrete migration/transition guidance and dates, which are decision-focused expert details. |
 | [Portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal) | integrations | 0.65 | Portal-based method to list role assignments with RBAC-specific filters and views; product-specific interaction pattern, though UI-focused. |
 | [Understand the different roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles) | decision-making | 0.65 | Explains different role systems (Azure roles, Entra roles, classic subscription admins) and when to use each; this is product-specific decision guidance beyond generic RBAC concepts. |

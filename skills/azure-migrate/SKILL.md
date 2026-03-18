@@ -1,9 +1,9 @@
 ---
 name: azure-migrate
-description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AppCAT/CAST, Site Recovery APIs, Azure Migrate appliances, Arc-based discovery, or VMware/SQL/.NET moves, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AppCAT/CAST, Site Recovery APIs, Azure Migrate appliances, Arc-based discovery, or VMware/SQL migrations, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L66-L109 | Planning and decision guidance for Azure migrations: interpreting assessments, sizing and cost, choosing tools/targets, mapping from AWS/GCP/on-prem, and sequencing/wave planning for cutover. |
 | Architecture & Design Patterns | L110-L115 | Architecture and data flow for Azure Migrate using Arc-based discovery and Hyper-V, including components, connectivity, prerequisites, and how discovery/inventory works. |
 | Limits & Quotas | L116-L129 | Azure Migrate region support, appliance prerequisites/capacity, and detailed support matrices/limitations for VMware, Hyper-V, and physical server discovery and migration |
-| Security | L130-L144 | Securing Azure Migrate: least-privilege roles/accounts, Private Link-based discovery/migration, encryption & CMK for VMs, RBAC setup, and security risk detection with Insights. |
-| Configuration | L145-L174 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, credentials, networking, and destination settings for VM, SQL, .NET/Java, and PostgreSQL migration scenarios. |
-| Integrations & Coding Patterns | L175-L182 | Code-level integration patterns: using AppCAT CLI, CAST Highlight, GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure app migrations. |
-| Deployment | L183-L190 | Planning and executing migration waves, setting up Azure DevOps pipelines for containers, and checking support/matrix for cross-region moves of VMs and Azure SQL with Resource Mover |
+| Security | L130-L145 | Securing Azure Migrate: least-privilege roles/accounts, Private Link discovery/migration, CMK/SSE encryption, Trusted Launch, RBAC, and secure region-to-region VM moves |
+| Configuration | L146-L175 | Configuring Azure Migrate appliances, assessments, dependencies, Arc/agents, credentials, networking, and destination settings for VM, SQL, .NET/Java, and PostgreSQL migration scenarios. |
+| Integrations & Coding Patterns | L176-L183 | Code-level integration patterns: using AppCAT CLI, CAST Highlight, GitHub Copilot insights, and Site Recovery REST APIs to assess and automate VMware-to-Azure app migrations. |
+| Deployment | L184-L191 | Planning and executing migration waves, setting up Azure DevOps pipelines for containers, and checking support/matrix for cross-region moves of VMs and Azure SQL with Resource Mover |
 
 ### Troubleshooting
 | Topic | URL |
@@ -137,6 +137,7 @@ This skill requires **network access** to fetch documentation content:
 | Register Azure Migrate appliance using Entra ID app | https://learn.microsoft.com/en-us/azure/migrate/how-to-register-appliance-using-entra-app?view=migrate |
 | Create minimal-permission SQL account for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/least-privilege-credentials?view=migrate |
 | Migrate Hyper-V servers using Private Link endpoints | https://learn.microsoft.com/en-us/azure/migrate/migrate-hyper-v-servers-to-azure-using-private-link?view=migrate |
+| Migrate Gen2 VMs to Azure Trusted Launch securely | https://learn.microsoft.com/en-us/azure/migrate/migrate-to-trusted-launch-virtual-machines-with-azure-migrate?view=migrate |
 | Configure least-privilege PostgreSQL account for Azure Migrate | https://learn.microsoft.com/en-us/azure/migrate/postgresql-least-privilege-configuration?view=migrate |
 | Configure Azure RBAC roles for Azure Migrate projects | https://learn.microsoft.com/en-us/azure/migrate/prepare-azure-accounts?view=migrate |
 | Scope VMware discovery using vCenter permissions | https://learn.microsoft.com/en-us/azure/migrate/set-discovery-scope?view=migrate |

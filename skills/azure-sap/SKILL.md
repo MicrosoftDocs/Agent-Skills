@@ -1,9 +1,9 @@
 ---
 name: azure-sap
-description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing SAP HANA on Azure LIs with HA/DR clusters, Key Vault/RBAC, Entra ID, RISE links, or Azure Monitor, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure), Azure Oracle (use azure-oracle).
+description: Expert knowledge for SAP HANA on Azure Large Instances development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when deploying SAP HANA on Azure LIs, HA/DR clusters, Key Vault/RBAC, Entra ID, or Azure Monitor for SAP, and other SAP HANA on Azure Large Instances related development tasks. Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure VMware Solution (use azure-vmware-solution).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # SAP HANA on Azure Large Instances Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L74-L99 | Designing SAP HANA and NetWeaver HA/DR architectures on Azure VMs, zones, and regions, including DB choices, NFS, multi-SID, RISE connectivity, latency, and resiliency patterns. |
 | Limits & Quotas | L100-L105 | SAP on Azure limits: supported platforms/features for SAP testing automation, Azure Monitor for SAP quotas/behavior, and sizing/HA deployment constraints using Azure Files SMB. |
 | Security | L106-L119 | Security, identity, and access design for SAP on Azure: Key Vault secrets, RBAC, TLS, private endpoints, NFS encryption, Entra ID integration, and secure SAP RISE/infrastructure patterns. |
-| Configuration | L120-L195 | Configuring SAP on Azure: automation framework, storage and VM layouts, HA/DR clusters, monitoring providers, backups, networking, and Azure Center/LaMa/VM extension integration. |
-| Integrations & Coding Patterns | L196-L208 | Patterns and steps to integrate SAP HANA/RISE, S/4HANA, ECC with Azure services (Monitor, ADF, Power Query, Exchange, Universal Print, Salesforce) and automate via Ansible and mirroring. |
-| Deployment | L209-L252 | Deploying and automating SAP landscapes on Azure: scripts and frameworks, DevOps pipelines, HA/DR patterns, ACSS-managed systems, and workload-specific deployments (S/4HANA, BOBJ, B1). |
+| Configuration | L120-L193 | Configuring SAP on Azure: automation framework, storage and networking, high availability/DR clusters, monitoring providers, backups, and Azure Center/LaMa/VM extension integration. |
+| Integrations & Coding Patterns | L194-L206 | Patterns and steps to integrate SAP HANA/RISE, S/4HANA, ECC with Azure services (Monitor, ADF, Power Query, Exchange, Universal Print, Salesforce) and automate via Ansible and mirroring. |
+| Deployment | L207-L250 | Deploying and automating SAP landscapes on Azure: scripts and frameworks, DevOps pipelines, HA/DR patterns, ACSS-managed systems, and workload-specific deployments (S/4HANA, BOBJ, B1). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -135,17 +135,15 @@ This skill requires **network access** to fetch documentation content:
 | Configure Insights and data refresh for SAP Business Process Solutions | https://learn.microsoft.com/en-us/azure/sap/business-process-solutions/configure-insights |
 | Configure Azure Backup from VIS for SAP systems | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/acss-backup-integration |
 | Prepare SAP installation media for Azure Center for SAP | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-sap-installation-media |
-| Prepare virtual network for S/4HANA deployment with ACSS | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network |
+| Configure Azure network for S/4HANA deployment | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/prepare-network |
 | Start and stop SAP systems via ACSS VIS using Azure CLI | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-cli |
 | Start and stop SAP systems via ACSS VIS using PowerShell | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quick-stop-start-sap-powershell |
 | Register existing SAP systems via Azure CLI | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/quickstart-register-system-cli |
 | Register existing SAP systems in Azure Center via portal | https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system |
 | Reference of logs and metrics for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/data-reference |
-| Configure alerts for Azure Monitor for SAP solutions in portal | https://learn.microsoft.com/en-us/azure/sap/monitor/get-alerts-portal |
 | Configure Pacemaker cluster provider for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ha-pacemaker-cluster |
 | Configure SAP HANA provider in Azure Monitor for SAP | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana |
 | Configure IBM Db2 provider for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ibm-db2 |
-| Configure Linux OS provider for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-linux |
 | Configure SAP NetWeaver provider for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-netweaver |
 | Configure SQL Server provider for Azure Monitor for SAP solutions | https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server |
 | Configure virtual network for Azure Monitor for SAP | https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network |

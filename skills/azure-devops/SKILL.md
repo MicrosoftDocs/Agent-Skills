@@ -1,9 +1,9 @@
 ---
 name: azure-devops
-description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing org/project structure, Boards, pipelines, repos, Analytics/OData, or Azure DevOps Server deployments, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing org/projects, Boards/processes, permissions, Analytics/Power BI, or Azure DevOps Server deployments, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DevOps Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L54 | Diagnosing and fixing Azure DevOps issues: logs, performance, notifications, connectivity/IP allowlists, permissions, dashboards/Analytics, wikis restore, and server/upgrade problems. |
 | Best Practices | L55-L72 | Guidance on optimizing Azure DevOps performance, analytics, and reporting: cost-efficient pools, fast OData queries, Power BI reports, dashboards, and data cleanup/maintenance. |
-| Decision Making | L73-L88 | Guidance for high-level Azure DevOps design choices: org/project/team structure, geography, work tracking and wikis, analytics/reporting, agent pools, and Azure DevOps Server topology and upgrades |
-| Architecture & Design Patterns | L89-L100 | Architectural guidance for Azure DevOps/Server: pool architecture, reliability/DR, SQL/database dependencies, and design patterns for simple to complex multi-server topologies and analytics modeling. |
-| Limits & Quotas | L101-L115 | Org/project deletion & recovery windows, user access limits, naming/work item/wiki constraints, pipeline/ARM size limits, dashboard widgets, and Analytics data availability/latency. |
-| Security | L116-L175 | Managing Azure DevOps security: identities, auth, org/project/repo permissions, access levels, auditing, analytics security, and secure server/service account configuration |
-| Configuration | L176-L264 | Configuring Azure DevOps/Server: managed pools, networking, scaling, notifications, Boards/process customization, Analytics/Power BI, dashboards, backups, SQL, services, and admin console settings. |
-| Integrations & Coding Patterns | L265-L320 | Integrating Azure DevOps with tools (VS, SIEM, clients), using Analytics OData, and building detailed Power BI reports for work items, pipelines, and tests. |
-| Deployment | L321-L352 | Installing, configuring, scaling, moving, backing up, restoring, and upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains, and project collections |
+| Decision Making | L73-L89 | Guidance for high-level Azure DevOps choices: org/project structure, geography/data location, team & Agile tools, wikis, work tracking, analytics/reporting, server topology, lifecycle, and agent pools. |
+| Architecture & Design Patterns | L90-L101 | Architectural guidance for Azure DevOps/Server: pool architecture, reliability/DR, SQL/database dependencies, and design patterns for simple to complex multi-server topologies and analytics modeling. |
+| Limits & Quotas | L102-L116 | Org/project deletion & recovery windows, user access limits, naming/work item/wiki constraints, pipeline/ARM size limits, dashboard widgets, and Analytics data availability/latency. |
+| Security | L117-L176 | Managing Azure DevOps security: identities, auth, org/project/repo permissions, access levels, auditing, analytics security, and secure server/service account configuration |
+| Configuration | L177-L265 | Configuring Azure DevOps/Server: managed pools, networking, scaling, notifications, Boards/process customization, Analytics/Power BI, dashboards, backups, SQL, services, and admin console settings. |
+| Integrations & Coding Patterns | L266-L321 | Integrating Azure DevOps with tools (VS, SIEM, clients), using Analytics OData, and building detailed Power BI reports for work items, pipelines, and tests. |
+| Deployment | L322-L353 | Installing, configuring, scaling, moving, backing up, restoring, and upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains, and project collections |
 
 ### Troubleshooting
 | Topic | URL |
@@ -77,6 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Estimate and plan Managed DevOps Pools pricing | https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/pricing?view=azure-devops |
 | Choose and manage Azure DevOps organization geography | https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-organization-location?view=azure-devops |
 | Plan Azure DevOps project structure and scaling | https://learn.microsoft.com/en-us/azure/devops/organizations/projects/about-projects?view=azure-devops |
+| Choose and understand Azure DevOps data locations | https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops |
 | Decide team structure and Agile tools in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-teams-and-settings?view=azure-devops |
 | Choose between provisioned and code-published Azure DevOps wikis | https://learn.microsoft.com/en-us/azure/devops/project/wiki/provisioned-vs-published-wiki?view=azure-devops |
 | Choose customization approaches for Azure DevOps work tracking | https://learn.microsoft.com/en-us/azure/devops/reference/customize-work?view=azure-devops |

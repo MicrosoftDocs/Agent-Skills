@@ -23,13 +23,13 @@ skill_description: Expert knowledge for Azure Copilot development including trou
   decision making, architecture & design patterns, security, configuration, and integrations
   & coding patterns. Use when sizing VMs, generating Bicep/Terraform, configuring
   Cosmos DB storage, or debugging App Service/VM disks, and other Azure Copilot related
-  development tasks. Not for Azure AI services (use azure-ai-services), Azure Machine
-  Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search),
+  development tasks. Not for Azure AI services (use microsoft-foundry-tools), Azure
+  Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search),
   Azure AI Bot Service (use azure-bot-service).
 use_when: Use when sizing VMs, generating Bicep/Terraform, configuring Cosmos DB storage,
   or debugging App Service/VM disks, and other Azure Copilot related development tasks.
-confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure Machine
-  Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search),
+confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azure
+  Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search),
   Azure AI Bot Service (use azure-bot-service).
 ---
 # Azure Copilot Crawl Report

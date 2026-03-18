@@ -1,9 +1,9 @@
 ---
 name: azure-speech
-description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using STT/TTS, custom speech or voice, Voice Live/avatars, batch transcription, or speech translation, and other Azure AI Speech related development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Immersive Reader (use azure-immersive-reader).
+description: Expert knowledge for Azure AI Speech development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using STT/TTS, custom speech or neural voices, Voice Live/avatars, batch jobs, or speech translation, and other Azure AI Speech related development tasks. Not for Azure Communication Services (use azure-communication-services), Azure AI Bot Service (use azure-bot-service), Azure AI Video Indexer (use azure-video-indexer), Azure AI Immersive Reader (use azure-immersive-reader).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Speech Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L46 | Diagnosing and fixing common Azure Speech issues (TTS, STT, SDK, containers, Voice Live, Foundry), including error codes, CRL/compatibility, and retrieving session/transcription IDs. |
+| Troubleshooting | L36-L46 | Diagnosing and fixing common Azure Speech issues for text-to-speech, speech-to-text, SDK/CRL, containers, Foundry, and Voice Live API, plus retrieving session/transcription IDs. |
 | Best Practices | L47-L62 | Best practices for Azure AI Speech: data prep, custom voice recording/training, latency and memory tuning, Voice Live UX (interruptions, greetings), and improving recognition accuracy and hardware. |
 | Decision Making | L63-L81 | Guidance on choosing speech features, evaluating models and devices, planning large-scale/batch use, and migrating between Speech/Voice API versions and related services |
 | Limits & Quotas | L82-L90 | Quotas, limits, and usage patterns for Azure Speech: batch TTS, custom/pro voice training & deployment, and short audio STT, plus throttling and capacity planning guidance. |
@@ -42,7 +42,7 @@ This skill requires **network access** to fetch documentation content:
 | Resolve Azure AI Speech SDK CRL compatibility issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/migrate-to-sdk-1-48-2 |
 | Troubleshoot Speech service container deployments | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-container-faq |
 | Troubleshoot common Azure Speech SDK issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/troubleshooting |
-| Troubleshoot common Voice Live API questions and issues | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-faq |
+| Resolve common Voice Live API issues in Azure Speech | https://learn.microsoft.com/en-us/azure/ai-services/speech-service/voice-live-faq |
 
 ### Best Practices
 | Topic | URL |
