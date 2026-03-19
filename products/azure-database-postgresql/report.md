@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   best-practices: 'Performance, security, migration, and tooling best practices for
     Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning,
@@ -16,9 +16,9 @@ category_descriptions:
   limits-quotas: Backup/restore and geo-restore behavior, storage types/limits/tuning,
     quotas and capacity limits, replication/slots, and known migration/conversion
     limitations for Azure PostgreSQL.
-  decision-making: Guidance on sizing and scaling Flexible Server, choosing compute
-    tiers, versions, and deployment options, planning geo-replication/DR, and using
-    pre-migration checks and reserved capacity.
+  decision-making: 'Guidance for planning and sizing Azure PostgreSQL: choosing hosting
+    and compute tiers, versions, geo-replication/DR, reserved capacity, and validating/sizing
+    targets for migrations and upgrades.'
   deployment: CI/CD deployment to Azure PostgreSQL, major upgrades, Bicep-based provisioning,
     app deployments (Django/AKS, Web Apps + VNet), maintenance rollout behavior, and
     point-in-time restore.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for PostgreSQL development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when tuning Azure PostgreSQL Flexible Server, pgvector AI apps,
-  VNet/Private Link, geo-replication, or CI/CD deployments, and other Azure Database
-  for PostgreSQL related development tasks. Not for Azure Database for MySQL (use
-  azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb),
-  Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when tuning Azure PostgreSQL Flexible Server, pgvector AI apps, VNet/Private
-  Link, geo-replication, or CI/CD deployments, and other Azure Database for PostgreSQL
-  related development tasks.
+  and deployment. Use when using pgvector, Azure AI/OpenAI, Entra auth/Private Link,
+  sharding/replication, or CI/CD/Bicep deployments, and other Azure Database for PostgreSQL
+  related development tasks. Not for Azure Database for MySQL (use azure-database-mysql),
+  Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use
+  azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when using pgvector, Azure AI/OpenAI, Entra auth/Private Link, sharding/replication,
+  or CI/CD/Bicep deployments, and other Azure Database for PostgreSQL related development
+  tasks.
 confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql), Azure
   Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance).
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 312
+- **Updated Pages**: 1
+- **Unchanged**: 311
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-postgresql/azure-database-postgresql.csv`
 
@@ -66,8 +66,8 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 |------|-------|------------|
 | architecture-patterns | 7 | 2.2% |
 | best-practices | 14 | 4.5% |
-| configuration | 85 | 27.2% |
-| decision-making | 10 | 3.2% |
+| configuration | 84 | 26.9% |
+| decision-making | 11 | 3.5% |
 | deployment | 8 | 2.6% |
 | integrations | 26 | 8.3% |
 | limits-quotas | 16 | 5.1% |
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | *(Unclassified)* | 101 | 32.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade)
+  - Updated: 2026-01-12T08:00:00.000Z → 2026-03-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -238,6 +243,7 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | [Use generate(), is_true() and extract() operators](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-azure-ai-semantic-operators) | integrations | 0.70 | Details semantic operators and their usage in SQL, tied to Azure AI models; operator names and behavior are product-specific. |
 | [Version policy](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy) | decision-making | 0.70 | A version policy page for a managed database service typically includes concrete rules about supported major/minor versions, timelines for deprecation, upgrade windows, and how/when automatic upgrades occur. These are product-specific decision criteria (for choosing versions, planning upgrades, and migrations) that change over time and are not inferable from general PostgreSQL knowledge, fitting the decision-making category better than others. |
 | [Write-Ahead Log / Archiving](https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-write-ahead-log-archiving) | configuration | 0.70 | Write-Ahead Log / Archiving server parameters page; will list WAL archiving-related configuration options, defaults, and ranges specific to Azure Database for PostgreSQL flexible server. |
+| [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade) | decision-making | 0.68 | The page is about in-place major version upgrades for Azure Database for PostgreSQL flexible server. These upgrade procedures, supported version ranges, and service-specific behaviors are product- and platform-specific details that an LLM is unlikely to know from training. The content guides when and how to upgrade between specific PostgreSQL major versions on Azure, which aligns most closely with decision-making (upgrade path and version selection guidance), rather than generic conceptual information. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/quickstart-create-elastic-cluster-arm-template) | configuration | 0.65 | ARM template quickstart defines JSON properties and parameters for elastic clusters; these are concrete configuration fields and allowed values for the service. |
 | [Azure Pipelines](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/azure-pipelines-deploy-database-task) | deployment | 0.65 | Describes Azure Pipelines task for PostgreSQL; includes task parameters and supported agents, which are product-specific deployment details. |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/postgresql/security/security-azure-policy) | security | 0.65 | Azure Policy support pages usually list specific built-in policy definitions and aliases targeting this resource type, which are concrete security/compliance configuration details. |
@@ -254,7 +260,6 @@ confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql),
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-deploy-github-action) | deployment | 0.65 | Shows how to connect from GitHub Actions to Azure PostgreSQL; likely includes workflow YAML, secrets, and constraints specific to this deployment method. |
 | [How to set up Azure CLI](https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/how-to-setup-azure-cli-commands-postgresql) | integrations | 0.65 | CLI setup for a specific migration service usually documents required extensions, command groups, and parameters, which are product-specific integration and command configuration details. |
 | [Integrate with AI Frameworks](https://learn.microsoft.com/en-us/azure/postgresql/azure-ai/generative-ai-frameworks) | integrations | 0.65 | Describes integration patterns with Semantic Kernel and LangChain; includes product-specific configuration and usage guidance. |
-| [Major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade) | configuration | 0.65 | Describes supported versions and upgrade behavior; likely includes version-specific support windows and upgrade constraints unique to Azure PostgreSQL. |
 | [Migrate with Ora2Pg](https://learn.microsoft.com/en-us/azure/postgresql/migrate/how-to-migrate-oracle-ora2pg) | integrations | 0.65 | Tool-specific migration guide; likely includes Ora2Pg configuration parameters, options, and patterns for integrating Oracle with Azure PostgreSQL. |
 | [Perform major version upgrade](https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-perform-major-version-upgrade) | deployment | 0.65 | Step-by-step upgrade procedure with irreversible action warning and PITR guidance; represents a product-specific deployment/upgrade pattern. |
 | [Quickstart examples](https://learn.microsoft.com/en-us/azure/postgresql/extensions/quickstart-azure-storage-extension) | integrations | 0.65 | Quickstart examples for Azure Storage extension; likely show concrete function calls and parameter usage for integrating PostgreSQL with Azure Storage. |

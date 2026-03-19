@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   architecture-patterns: 'Architectural guidance for Azure DevOps/Server: pool architecture,
     reliability/DR, SQL/database dependencies, and design patterns for simple to complex
@@ -7,9 +7,9 @@ category_descriptions:
   configuration: 'Configuring Azure DevOps/Server: managed pools, networking, scaling,
     notifications, Boards/process customization, Analytics/Power BI, dashboards, backups,
     SQL, services, and admin console settings.'
-  security: 'Managing Azure DevOps security: identities, auth, org/project/repo permissions,
-    access levels, auditing, analytics security, and secure server/service account
-    configuration'
+  security: 'Managing Azure DevOps security: identities, auth, permissions, access
+    levels, groups, auditing, project/repo/pipeline rights, server service accounts,
+    SSL, and download integrity.'
   troubleshooting: 'Diagnosing and fixing Azure DevOps issues: logs, performance,
     notifications, connectivity/IP allowlists, permissions, dashboards/Analytics,
     wikis restore, and server/upgrade problems.'
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 - **Total Pages**: 946
 - **Fetched**: 946
 - **Fetch Failed**: 0
-- **Classified**: 281
-- **Unclassified**: 665
+- **Classified**: 282
+- **Unclassified**: 664
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 946
+- **Updated Pages**: 1
+- **Unchanged**: 945
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-devops/azure-devops.csv`
 
@@ -67,11 +67,16 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | deployment | 29 | 3.1% |
 | integrations | 52 | 5.5% |
 | limits-quotas | 11 | 1.2% |
-| security | 56 | 5.9% |
+| security | 57 | 6.0% |
 | troubleshooting | 14 | 1.5% |
-| *(Unclassified)* | 665 | 70.3% |
+| *(Unclassified)* | 664 | 70.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Data location (cloud)](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops)
+  - Updated: 2026-03-10T13:05:00.000Z → 2026-03-17T16:05:00.000Z
 
 ## Classified Pages
 
@@ -204,6 +209,7 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Create audit streaming](https://learn.microsoft.com/en-us/azure/devops/organizations/audit/auditing-streaming?view=azure-devops) | integrations | 0.70 | Describes creating audit streams to external tools with product-specific integration behavior and constraints (e.g., 90-day default retention). |
 | [Cumulative Flow Diagram](https://learn.microsoft.com/en-us/azure/devops/report/powerbi/sample-boards-cfd?view=azure-devops) | integrations | 0.70 | Shows specific queries and field usage (states, dates) to generate CFD reports from Azure DevOps Analytics. |
 | [Cumulative flow & lead/cycle time guidance](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance?view=azure-devops) | best-practices | 0.70 | Provides guidance on using CFDs and time metrics to identify issues and improve workflow; includes Azure DevOps-specific usage patterns and actionable recommendations. |
+| [Data location (cloud)](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops) | security | 0.70 | Contains product-specific details on where Azure DevOps customer and profile data is stored by region and under what conditions data may be transferred outside the selected region. This is expert, service-specific compliance and data residency information that an LLM is unlikely to know from training. It aligns best with security because it concerns data residency, privacy, and compliance behavior rather than general concepts. |
 | [Default notifications](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/oob-built-in-notifications?view=azure-devops) | configuration | 0.70 | Reference for built-in/default notifications with role mappings (Reviewer, Assignee); product-specific subscription configuration. |
 | [Diagnostic logs](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/diagnostics?view=azure-devops) | troubleshooting | 0.70 | Diagnostic logging article for a specific service; likely includes concrete log categories, event names, and configuration steps for Azure Monitor diagnostic settings, which are product-specific troubleshooting details. |
 | [Events](https://learn.microsoft.com/en-us/azure/devops/organizations/notifications/oob-supported-event-types?view=azure-devops) | configuration | 0.70 | Lists supported event types by category; product-specific event taxonomy used in notification configuration. |
@@ -418,7 +424,6 @@ confusable_not_for: Not for Azure Boards (use azure-boards), Azure Pipelines (us
 | [Create and configure an organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/faq-configure-customize-organization?view=azure-devops) | 0.30 | Organization FAQ; description doesn’t indicate detailed limits, error codes, or configuration tables, so treated as general Q&A. |
 | [Create or add a team](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/add-teams?view=azure-devops) | 0.30 | How-to for creating/adding teams and basic best practices, but summary does not indicate quantified impacts, config tables, or product-specific edge cases; likely general guidance LLM already knows. |
 | [Customization >>](https://learn.microsoft.com/en-us/azure/devops/reference/?view=azure-devops) | 0.30 | Azure Boards configuration & customization hub; appears to be a navigation/landing page, not the detailed config reference itself. |
-| [Data location (cloud)](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops) | 0.30 | Appears to be a high-level description of where Azure DevOps data is stored and that location is chosen at sign-up. No indication of detailed configuration parameters, limits, or security role specifics. |
 | [Data protection overview (cloud)](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops) | 0.30 | High-level data protection overview describing how Microsoft protects Azure DevOps data; no specific configuration parameters, limits, or error mappings. |
 | [Databases and deployment topologies](https://learn.microsoft.com/en-us/azure/devops/server/admin/backup/backup-db-architecture?view=azure-devops-server) | 0.30 | Describes backup concepts and topologies; summary suggests conceptual guidance without concrete numeric limits, config tables, or product-specific commands. |
 | [December 2](https://learn.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-161-update) | 0.30 | GitHub Actions integration and multi-repo support; integration is mentioned but without detailed parameter/setting tables here. |

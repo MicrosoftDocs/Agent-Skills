@@ -30,10 +30,15 @@ skill_description: Expert knowledge for Azure Quantum development including trou
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
   using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti targets, QIR/OpenQASM,
-  or Resource Estimator, and other Azure Quantum related development tasks.
+  or Resource Estimator, and other Azure Quantum related development tasks. Not for
+  Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks
+  (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 use_when: Use when using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti
   targets, QIR/OpenQASM, or Resource Estimator, and other Azure Quantum related development
   tasks.
+confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use
+  azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use
+  azure-machine-learning).
 ---
 # Azure Quantum Crawl Report
 

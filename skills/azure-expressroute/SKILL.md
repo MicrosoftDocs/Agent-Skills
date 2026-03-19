@@ -3,7 +3,7 @@ name: azure-expressroute
 description: Expert knowledge for Azure ExpressRoute development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ExpressRoute circuits/gateways, BGP/peering, Global Reach, FastPath, or ExpressRoute Direct, and other Azure ExpressRoute related development tasks. Not for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure ExpressRoute Skill
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use encryption options with Azure ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption |
 | Configure IPsec transport mode over ExpressRoute for Windows | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-ipsec-transport-private-windows |
-| Configure MACsec encryption for ExpressRoute links | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec |
+| Configure MACsec security for Azure ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec |
 | Apply NAT requirements for Azure ExpressRoute circuits | https://learn.microsoft.com/en-us/azure/expressroute/expressroute-nat |
 | Roles and permissions for ExpressRoute resources | https://learn.microsoft.com/en-us/azure/expressroute/roles-permissions |
 | Apply security best practices to Azure ExpressRoute | https://learn.microsoft.com/en-us/azure/expressroute/secure-expressroute |

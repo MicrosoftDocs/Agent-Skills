@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   architecture-patterns: Designing Azure apps for availability zones, choosing zonal
     vs zone-redundant resources, and hardening deployments for zone failures and high
@@ -7,6 +7,9 @@ category_descriptions:
   decision-making: Guidance on using availability zones, nonregional services, and
     resilient Azure Functions architectures to design highly available, fault-tolerant
     Azure solutions.
+  deployment: Guidance for migrating Azure Database for MySQL Flexible Server to zone-redundant
+    high availability, including architecture, prerequisites, and step-by-step migration
+    process.
   best-practices: Patterns and configurations to make Azure services (AKS, Functions,
     DBs, messaging, IoT, networking, DR) highly available, resilient to failures,
     and recover quickly from outages.
@@ -14,17 +17,18 @@ category_descriptions:
     message size, behavior when limits are exceeded, and best practices for handling
     large payloads.
 skill_description: Expert knowledge for Azure Reliability development including best
-  practices, decision making, architecture & design patterns, and limits & quotas.
-  Use when designing zone-aware AKS, Functions, databases, messaging, IoT, DR setups,
-  or Queue Storage message sizing, and other Azure Reliability related development
-  tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
-  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
-use_when: Use when designing zone-aware AKS, Functions, databases, messaging, IoT,
-  DR setups, or Queue Storage message sizing, and other Azure Reliability related
+  practices, decision making, architecture & design patterns, limits & quotas, and
+  deployment. Use when designing AZ zone/zone-redundant setups, resilient Functions,
+  AKS, MySQL HA migrations, or Queue Storage limits, and other Azure Reliability related
+  development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre
+  Agent (use azure-sre-agent).
+use_when: Use when designing AZ zone/zone-redundant setups, resilient Functions, AKS,
+  MySQL HA migrations, or Queue Storage limits, and other Azure Reliability related
   development tasks.
 confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
-  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
-  Recovery (use azure-site-recovery).
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre
+  Agent (use azure-sre-agent).
 ---
 # Azure Reliability Crawl Report
 
@@ -33,14 +37,14 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 - **Total Pages**: 99
 - **Fetched**: 99
 - **Fetch Failed**: 0
-- **Classified**: 31
-- **Unclassified**: 68
+- **Classified**: 32
+- **Unclassified**: 67
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 99
-- **Deleted Pages**: 0
+- **Unchanged**: 98
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
 ## Classification Statistics
@@ -50,10 +54,19 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | architecture-patterns | 2 | 2.0% |
 | best-practices | 26 | 26.3% |
 | decision-making | 2 | 2.0% |
+| deployment | 1 | 1.0% |
 | limits-quotas | 1 | 1.0% |
-| *(Unclassified)* | 68 | 68.7% |
+| *(Unclassified)* | 67 | 67.7% |
 
 ## Changes
+
+### New Pages
+
+- [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex)
+
+### Deleted Pages
+
+- ~~Azure Database for MySQL - Flexible Server~~ (https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex)
 
 ## Classified Pages
 
@@ -61,6 +74,7 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 |-----------|------|------------|--------|
 | [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support) | decision-making | 0.80 | Lists services and their zonal/zone-redundant offerings; a service-support matrix used to decide which services and deployment models to choose. |
 | [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db-nosql) | best-practices | 0.70 | Explains how to reach 99.999% uptime using AZs, multi-region writes, and automatic failover; highly product-specific reliability design guidance. |
+| [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex) | deployment | 0.70 | The page gives a concrete, product-specific migration procedure for moving Azure Database for MySQL – Flexible Server from non-AZ to AZ-supported high availability models. It includes detailed, service-specific steps and constraints for performing this migration in production, which go beyond generic knowledge and align best with deployment/migration patterns rather than conceptual guidance. |
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue) | limits-quotas | 0.70 | Explicitly states a queue message can be up to 64 KB and queues can contain millions of messages up to the storage account capacity; these are concrete numeric limits. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-database-postgresql) | best-practices | 0.69 | Details zonal vs zone-redundant replicas, automatic failover, and cross-region recovery; concrete HA model and configuration guidance. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | best-practices | 0.69 | SQL Database–specific handling of transient faults, AZ failures, regional failures, maintenance, backup/restore, and SLAs; detailed reliability guidance. |
@@ -120,7 +134,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Container Instances](https://learn.microsoft.com/en-us/azure/reliability/reliability-container-instances) | 0.40 | Reliability in Azure Container Instances; summary is conceptual about zones, multi-region, and backups without explicit numeric or config expert details. |
 | [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/reliability/migrate-cosmos-nosql) | 0.40 | Migration to availability zones for Cosmos DB NoSQL; likely a step-by-step migration guide without configuration tables, limits, or decision matrices in the summary. |
 | [Azure DNS](https://learn.microsoft.com/en-us/azure/reliability/reliability-dns) | 0.40 | Azure DNS failover and DR patterns; appears architectural but summary doesn’t indicate quantified thresholds or decision matrices. |
-| [Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex) | 0.40 | Describes HA architectures and migration to AZ support for MySQL Flexible Server; summary is architectural and conceptual, not focused on numeric limits, config tables, or troubleshooting mappings. |
 | [Azure ExpressRoute gateway](https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-gateway) | 0.40 | Reliability for Virtual Network Gateways; summary is descriptive and doesn’t show concrete numeric limits or config parameter tables. |
 | [Azure Files](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-files) | 0.40 | Reliability in Azure Files; summary is conceptual resiliency description without explicit numeric or configuration details. |
 | [Azure Firewall](https://learn.microsoft.com/en-us/azure/reliability/reliability-firewall) | 0.40 | Reliability in Azure Firewall including SLA mention; summary suggests shared-responsibility and resiliency concepts, not detailed limits or configs. |

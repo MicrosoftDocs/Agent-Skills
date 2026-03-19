@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-19'
 category_descriptions:
   limits-quotas: VM instance size limits/capacities and timelines, impacts, and constraints
     related to Guest OS family retirements for Azure Cloud Services.
@@ -13,9 +13,9 @@ category_descriptions:
   best-practices: Guidance on designing and configuring autoscale rules for Cloud
     Services, including metrics, thresholds, and patterns to optimize performance,
     reliability, and cost.
-  decision-making: Guidance on when to use Cloud Services vs VM Scale Sets, and how
-    to plan and execute migrations from classic/non-VNet Cloud Services to extended
-    support and VNets
+  decision-making: Guidance on when to use Cloud Services (extended support), comparing
+    with VM Scale Sets, and planning/migrating classic and non-VNet Cloud Services
+    into VNets and extended support.
   troubleshooting: Diagnosing and fixing common migration errors when moving classic
     Cloud Services to Cloud Services (extended support), including deployment, configuration,
     and compatibility issues.
@@ -27,15 +27,14 @@ skill_description: Expert knowledge for Azure Cloud Services development includi
   integrations & coding patterns, and deployment. Use when managing Cloud Services
   (extended support), Guest OS versions, Key Vault certs, autoscale rules, or PowerShell
   automation, and other Azure Cloud Services related development tasks. Not for Azure
-  App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Apps
-  (use azure-container-apps).
+  Networking (use azure-networking), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 use_when: Use when managing Cloud Services (extended support), Guest OS versions,
   Key Vault certs, autoscale rules, or PowerShell automation, and other Azure Cloud
   Services related development tasks.
-confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Container Apps (use azure-container-apps).
+confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
+  Machines (use azure-virtual-machines), Azure Resource Manager (use azure-resource-manager),
+  Azure Portal (use azure-portal).
 ---
 # Azure Cloud Services Crawl Report
 
@@ -44,13 +43,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 - **Total Pages**: 45
 - **Fetched**: 45
 - **Fetch Failed**: 0
-- **Classified**: 31
-- **Unclassified**: 14
+- **Classified**: 32
+- **Unclassified**: 13
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -60,15 +59,20 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 |------|-------|------------|
 | best-practices | 1 | 2.2% |
 | configuration | 15 | 33.3% |
-| decision-making | 4 | 8.9% |
+| decision-making | 5 | 11.1% |
 | deployment | 1 | 2.2% |
 | integrations | 3 | 6.7% |
 | limits-quotas | 3 | 6.7% |
 | security | 3 | 6.7% |
 | troubleshooting | 1 | 2.2% |
-| *(Unclassified)* | 14 | 31.1% |
+| *(Unclassified)* | 13 | 28.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq)
+  - Updated: 2025-10-28T20:30:00Z → 2026-03-17T22:33:00Z
 
 ## Classified Pages
 
@@ -101,6 +105,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | [Migration overview](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-overview) | decision-making | 0.70 | Migration overview that likely includes when/how to move, benefits, and scenario-based guidance; helps decide migration approach between models. |
 | [Migration technical details](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-technical-details) | decision-making | 0.70 | Technical details and requirements for migration tool; includes constraints and conditions that drive migration decisions and planning. |
 | [Reset a cloud service](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/sample-reset-cloud-service) | integrations | 0.70 | Reset samples will show exact PowerShell cmdlets and parameter combinations for resetting Cloud Services (extended support) deployments, which are specific integration patterns with Azure APIs. This is expert, product-specific scripting guidance, best classified as integrations. |
+| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq) | decision-making | 0.68 | FAQ includes product-specific guidance on when to choose Cloud Services (extended support), migration/upgrade considerations from classic Cloud Services, and comparisons with other Azure options. This is concrete decision guidance rather than just conceptual overview, but it doesn't focus on numeric limits, configs, or error codes. |
 | [Extensions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/extensions) | configuration | 0.65 | Explains Cloud Services extensions (RDP, diagnostics, etc.) as post-deployment configuration; typically includes extension names and settings unique to this product. |
 | [Migrate non-vnet installation to a virtual network](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/non-vnet-migration) | decision-making | 0.65 | Discusses considerations before migrating non-VNet services and walks through process; contains scenario-based guidance and constraints influencing migration decisions. |
 | [Retirement policy](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/cloud-services-guestos-retirement-policy) | security | 0.65 | Details supportability and retirement policy implementation for Guest OS families; includes policy thresholds and constraints relevant to secure operations. |
@@ -115,7 +120,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Vir
 | [Deploy the cloud service - ARM template](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-template) | 0.40 | ARM template deployment tutorial; likely shows example template but not a comprehensive configuration reference or deployment constraints matrix. |
 | [Deploy the cloud service - PowerShell](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-powershell) | 0.40 | PowerShell deployment tutorial; uses Az.CloudService but appears as a how-to guide rather than a constraints/matrix-focused deployment reference. |
 | [Deploy the cloud service - SDK](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/deploy-sdk) | 0.40 | SDK deployment how-to; focuses on creating a deployment and RDP extension usage, but framed as a tutorial rather than a config/options reference. |
-| [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq) | 0.40 | FAQ page; summary doesn’t indicate detailed error codes, config tables, or numeric limits—likely conceptual and policy Q&A. |
 | [Generate ARM template using the portal](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/generate-template-portal) | 0.40 | Portal-based template generation how-to; mainly procedural without deep configuration option tables or constraints. |
 | [Migrate using PowerShell](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-powershell) | 0.40 | PowerShell migration tutorial; step-by-step commands without strong indication of decision matrices or config parameter tables. |
 | [Migrate using the Azure portal](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/in-place-migration-portal) | 0.40 | Portal-based migration how-to; primarily procedural steps rather than decision matrices or detailed configuration references. |

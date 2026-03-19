@@ -22,14 +22,14 @@ skill_description: Expert knowledge for Azure AI Custom Vision development inclu
   patterns, and deployment. Use when exporting Custom Vision models, calling prediction
   APIs, using ONNX/TensorFlow, managing CMK/RBAC, or Smart Labeler, and other Azure
   AI Custom Vision related development tasks. Not for Azure AI Vision (use azure-ai-vision),
-  Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning),
-  Azure AI Foundry Local (use azure-ai-foundry-local).
+  Azure AI services (use microsoft-foundry-tools), Azure Machine Learning (use azure-machine-learning),
+  Azure AI Foundry Local (use microsoft-foundry-local).
 use_when: Use when exporting Custom Vision models, calling prediction APIs, using
   ONNX/TensorFlow, managing CMK/RBAC, or Smart Labeler, and other Azure AI Custom
   Vision related development tasks.
 confusable_not_for: Not for Azure AI Vision (use azure-ai-vision), Azure AI services
-  (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure
-  AI Foundry Local (use azure-ai-foundry-local).
+  (use microsoft-foundry-tools), Azure Machine Learning (use azure-machine-learning),
+  Azure AI Foundry Local (use microsoft-foundry-local).
 ---
 # Azure AI Custom Vision Crawl Report
 

@@ -29,15 +29,15 @@ skill_description: Expert knowledge for Azure AI Document Intelligence developme
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
   and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker,
   SAS/managed identity, or VNets, and other Azure AI Document Intelligence related
-  development tasks. Not for Azure AI services (use azure-ai-services), Azure AI Search
-  (use azure-cognitive-search), Azure AI Language (use azure-language-service), Azure
-  AI Immersive Reader (use azure-immersive-reader).
+  development tasks. Not for Azure AI services (use microsoft-foundry-tools), Azure
+  AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service),
+  Azure AI Immersive Reader (use azure-immersive-reader).
 use_when: Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker,
   SAS/managed identity, or VNets, and other Azure AI Document Intelligence related
   development tasks.
-confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Search
-  (use azure-cognitive-search), Azure AI Language (use azure-language-service), Azure
-  AI Immersive Reader (use azure-immersive-reader).
+confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azure
+  AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service),
+  Azure AI Immersive Reader (use azure-immersive-reader).
 ---
 # Azure AI Document Intelligence Crawl Report
 

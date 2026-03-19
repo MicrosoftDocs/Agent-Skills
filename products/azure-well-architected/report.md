@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   workload-patterns: End-to-end design, platform selection, operations, security,
     and optimization patterns for specific Azure workloads (AI, HPC, mission-critical,
@@ -10,9 +10,9 @@ category_descriptions:
   design-principles: Design principles and patterns for cost, reliability, security,
     performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle,
     AVS, AVD, SaaS, HPC, and mission‑critical systems.
-  service-guides: End-to-end design, security, networking, operations, monitoring,
-    and optimization guidance for Azure Virtual Desktop, Azure VMware Solution, and
-    core Azure services using Well-Architected best practices.
+  service-guides: End-to-end, service-specific Azure Well-Architected guidance for
+    designing, securing, operating, monitoring, and optimizing core Azure services
+    (AVD, AVS, networking, data, app, and infra).
   recommendations: 'Prescriptive best practices for Azure workloads: cost optimization,
     reliability, performance, security, DevOps/automation, DR, observability, and
     sustainable design across services and environments'
@@ -24,9 +24,9 @@ category_descriptions:
 skill_description: Expert guidance for designing, assessing, and optimizing Azure
   workloads using Azure Well Architected. Covers design review checklists, recommendations,
   design principles, tradeoffs, service guides, workload patterns, and assessment
-  questions. Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critical
-  workloads on Azure, and other Azure Well Architected related development tasks.
-use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critical workloads
+  questions. Use when designing AI, SAP, Oracle, SaaS, HPC, or mission‑critical workloads
+  on Azure, and other Azure Well Architected related development tasks.
+use_when: Use when designing AI, SAP, Oracle, SaaS, HPC, or mission‑critical workloads
   on Azure, and other Azure Well Architected related development tasks.
 ---
 # Azure Well Architected Crawl Report
@@ -41,8 +41,8 @@ use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critic
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 248
+- **Updated Pages**: 1
+- **Unchanged**: 247
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-well-architected/azure-well-architected.csv`
 
@@ -60,6 +60,11 @@ use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critic
 | *(Unclassified)* | 28 | 11.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps)
+  - Updated: 2025-04-07T17:01:00.000Z → 2026-03-17T17:08:00.000Z
 
 ## Classified Pages
 
@@ -90,7 +95,6 @@ use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critic
 | [Azure App Service](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/app-service-web-apps) | service-guides | 0.90 | Service-specific WAF guidance for App Service Web Apps, covering design and configuration across pillars, matching service-guides. |
 | [Azure Application Gateway](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway) | service-guides | 0.90 | Service-specific architectural best practices for Application Gateway v2 and WAF, mapped to WAF considerations across pillars, clearly a service-guides page. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-blob-storage) | service-guides | 0.90 | A WAF service guide for Blob Storage with design considerations and configuration recommendations mapped to pillars, fitting service-guides. |
-| [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps) | service-guides | 0.90 | Service-specific guidance for Azure Container Apps, including configuration and design mapped to WAF pillars, matching the service-guides definition. |
 | [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/cosmos-db) | service-guides | 0.90 | Service guide for Cosmos DB for NoSQL with architectural recommendations mapped to WAF pillars, clearly a service-guides page. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/postgresql) | service-guides | 0.90 | Service-specific WAF guide with detailed configuration and design recommendations for PostgreSQL across multiple pillars. |
 | [Azure Databricks](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-databricks) | service-guides | 0.90 | Service-specific WAF guidance for Azure Databricks, covering common considerations and best practices across pillars, fitting service-guides. |
@@ -163,6 +167,7 @@ use_when: Use when designing AI, SAP, Oracle, SaaS, AVS/AVD, or mission‑critic
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/tradeoffs) | tradeoffs | 0.88 | Analyzes tradeoffs when maximizing ROI under constraints and discusses prioritization and impacts on other concerns. This is cross-pillar trade-off analysis for the Cost pillar. |
 | [Tradeoffs](https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/tradeoffs) | tradeoffs | 0.88 | Discusses how implementing DevOps and operational standards affects value, reliability, cost, and other concerns. Cross-pillar trade-off analysis for the Operational Excellence pillar. |
 | [Assessment tool](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-assessment) | assessments | 0.86 | Describes a self-assessment review tool for mission-critical workloads, organized around resiliency and reliability best practices; clearly an assessment artifact. |
+| [Azure Container Apps](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-container-apps) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Container Apps, providing service-specific design considerations and configuration recommendations across multiple pillars (for example, reliability, security, cost, performance, operations). This aligns with the definition of a service-guide. It goes beyond generic concepts and includes concrete, Azure-Container-Apps-specific guidance that an LLM is unlikely to fully infer from general training data. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-database-for-mysql) | service-guides | 0.86 | The page is a Well-Architected Framework guide focused on Azure Database for MySQL, providing service-specific design considerations and configuration recommendations (for availability, backups, scaling, etc.). It maps WAF pillar guidance to this particular Azure service, which matches the definition of a service-guide. The content goes beyond generic concepts and includes concrete, service-specific configuration advice that an LLM is unlikely to infer without the documentation. |
 | [Azure Local](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-local) | service-guides | 0.86 | Service-focused guidance for Azure Local/Arc deployments with WAF-related design and configuration considerations. |
 | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-machine-learning) | service-guides | 0.86 | Azure ML–specific architectural recommendations and configuration options aligned to WAF pillars. |

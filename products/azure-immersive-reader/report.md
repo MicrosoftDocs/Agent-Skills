@@ -18,13 +18,13 @@ skill_description: Expert knowledge for Azure AI Immersive Reader development in
   setup, JS SDK integration, or language support, and other Azure AI Immersive Reader
   related development tasks. Not for Azure AI Language (use azure-language-service),
   Azure AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure
-  AI services (use azure-ai-services).
+  AI services (use microsoft-foundry-tools).
 use_when: Use when tuning read-aloud/translation, storing user prefs, Entra auth setup,
   JS SDK integration, or language support, and other Azure AI Immersive Reader related
   development tasks.
 confusable_not_for: Not for Azure AI Language (use azure-language-service), Azure
   AI Speech (use azure-speech), Azure Translator (use azure-translator), Azure AI
-  services (use azure-ai-services).
+  services (use microsoft-foundry-tools).
 ---
 # Azure AI Immersive Reader Crawl Report
 

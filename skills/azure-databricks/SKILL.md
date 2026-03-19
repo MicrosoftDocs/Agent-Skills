@@ -1,9 +1,9 @@
 ---
 name: azure-databricks
-description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Unity Catalog, Lakeflow, Lakebase, Delta Sharing, Databricks Apps, or Model Serving workloads, and other Azure Databricks related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
+description: Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Unity Catalog, Lakeflow, Lakebase, Delta Sharing, Databricks SQL, or Model Serving workloads, and other Azure Databricks related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Machine Learning (use azure-machine-learning), Azure Data Factory (use azure-data-factory).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Databricks Skill
@@ -24,22 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Location | Description |
 |----------|----------|-------------|
-| Troubleshooting | L37-L127 | Diagnosing and fixing Databricks errors and failures across compute, SQL, Delta, connectors, Lakeflow, AI/Genie, VS Code/CLI, and performance using logs, query history, and debugging tools. |
-| Best Practices | L128-L328 | End-to-end Databricks best practices: cost, security, governance, compute, performance tuning, streaming, Lakehouse design, ML/GenAI, Lakeflow, and troubleshooting for production workloads. |
-| Decision Making | L329-L410 | Guides for choosing Databricks runtimes, compute, storage and connectors, and for planning/migrating workloads, ML/LLM, data, and Lakebase/Unity Catalog features across versions and services |
-| Architecture & Design Patterns | L411-L448 | Patterns and reference architectures for Databricks lakehouse, AI agents, RAG, LLMOps/MLOps, Lakebase, governance, performance, and data modeling on Azure. |
-| Limits & Quotas | [limits-quotas.md](limits-quotas.md) | Limits, quotas, constraints, and requirements for Databricks runtimes, compute (serverless/standard/GPU), AI/BI, connectors, Lakeflow, Model Serving, Unity Catalog, and related APIs. |
-| Security | [security.md](security.md) | Identity, access control, encryption, networking, compliance, and secure integrations for Azure Databricks, Unity Catalog, Lakeflow, Lakebase, Delta Sharing, and Databricks Apps. |
-| Configuration | [configuration.md](configuration.md) | Configuring and administering Azure Databricks: accounts, workspaces, security, networking, compute, storage, SQL/UC, Lakeflow, ML/GenAI, Lakebase, Marketplace, and CLI/app-based automation. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code for integrating Databricks with external systems: BI tools, storage, databases, streaming, agents/LLMs, Lakeflow, Lakebase, MLflow, and SDK/CLI/Terraform-based automation. |
-| Deployment | [deployment.md](deployment.md) | Deploying and managing Azure Databricks workspaces, apps, jobs, ML/GenAI models and agents via CI/CD, Terraform, VS Code, Model Serving, and migration/region/platform readiness guidance. |
+| Troubleshooting | L37-L127 | Diagnosing and fixing Databricks issues: compute startup/termination, SQL and connector errors, Lakeflow ingestion/pipelines, model serving, Genie/AI agents, logging, and performance debugging. |
+| Best Practices | L128-L325 | Best-practice guidance for designing, operating, and optimizing Azure Databricks: governance, security, cost, performance, streaming, Delta, ML/GenAI, BI, Lakeflow, and troubleshooting. |
+| Decision Making | L326-L406 | Guides for choosing Databricks/Lakebase runtimes, compute, storage and connectors, plus detailed migration paths (workloads, ML, SQL, ETL, data, APIs) and cost/scale configuration decisions. |
+| Architecture & Design Patterns | L407-L443 | Design patterns and reference architectures for Databricks lakehouse, AI agents (RAG, multi-agent, memory), MLOps/LLMOps, governance, Lakebase, and data modeling/replication. |
+| Limits & Quotas | [limits-quotas.md](limits-quotas.md) | Limits, quotas, and constraints for Databricks runtimes, compute, AI/BI, Lakeflow, connectors, foundation models, Unity Catalog, notebooks, Git, and related performance/scale behaviors. |
+| Security | [security.md](security.md) | Identity, access control, encryption, networking, compliance, and secure integrations for Azure Databricks, Unity Catalog, Lakeflow, Lakebase, and Delta Sharing across users, apps, and data. |
+| Configuration | [configuration.md](configuration.md) | Configuring and administering Azure Databricks: accounts, workspaces, security, networking, compute, storage, Unity Catalog, Lakeflow, ML/AI, system tables, SQL options, and CLI/bundle-based deployment. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Integrating Databricks with external systems (DBs, storage, BI/ETL, agents, Lakebase), using REST/CLI/SDKs, streaming/federated access, and coding patterns for Spark, SQL, ML, and GenAI. |
+| Deployment | [deployment.md](deployment.md) | Deploying and managing Azure Databricks workspaces, apps, models, agents, and pipelines via CI/CD, Terraform, VS Code, Model Serving, and migration/region/support considerations. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Monitor Genie space activity with audit log queries | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/audit |
 | Interpret Databricks enhanced security audit log schemas | https://learn.microsoft.com/en-us/azure/databricks/archive/security/monitor-log-schemas |
-| Migrate and troubleshoot Databricks Serverless GPU workloads | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-guides |
+| Access guides, migration, and troubleshooting for Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-guides |
 | Troubleshoot Azure Databricks compute startup issues | https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/ |
 | Resolve Databricks classic compute termination error codes | https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/cluster-error-codes |
 | Debug Spark applications using Databricks Spark UI | https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/debugging-spark-ui |
@@ -147,8 +147,8 @@ This skill requires **network access** to fetch documentation content:
 | Use flexible node types for reliable Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/compute/flexible-node-types |
 | Apply best practices for Databricks pools | https://learn.microsoft.com/en-us/azure/databricks/compute/pool-best-practices |
 | Apply serverless compute best practices in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/best-practices |
-| Optimize data loading on Databricks Serverless GPU compute | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-dataloading |
-| Track experiments and monitor Serverless GPU workloads with MLflow | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-tracking-observability |
+| Apply data loading best practices on Databricks Serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-dataloading |
+| Track experiments and monitor GPUs on Databricks Serverless | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/sgc-tracking-observability |
 | Tune Databricks SQL warehouses for BI workloads | https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/bi-workload-settings |
 | Control large interactive queries with Query Watchdog | https://learn.microsoft.com/en-us/azure/databricks/compute/troubleshooting/query-watchdog |
 | Optimize Databricks dashboard performance with caching | https://learn.microsoft.com/en-us/azure/databricks/dashboards/caching |
@@ -165,20 +165,18 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Delta Sharing egress costs | https://learn.microsoft.com/en-us/azure/databricks/delta-sharing/manage-egress |
 | Apply Delta Lake best practices on Databricks | https://learn.microsoft.com/en-us/azure/databricks/delta/best-practices |
 | Use liquid clustering for Delta layout | https://learn.microsoft.com/en-us/azure/databricks/delta/clustering |
-| Add custom metadata to Databricks tables | https://learn.microsoft.com/en-us/azure/databricks/delta/custom-metadata |
 | Improve queries with Delta data skipping | https://learn.microsoft.com/en-us/azure/databricks/delta/data-skipping |
 | Use deletion vectors to speed up Delta updates | https://learn.microsoft.com/en-us/azure/databricks/delta/deletion-vectors |
 | Safely drop or replace tables in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/delta/drop-table |
 | Use Delta table history and time travel safely | https://learn.microsoft.com/en-us/azure/databricks/delta/history |
 | Optimize Delta table layout with OPTIMIZE | https://learn.microsoft.com/en-us/azure/databricks/delta/optimize |
 | Handle Delta Lake limitations when using AWS S3 | https://learn.microsoft.com/en-us/azure/databricks/delta/s3-limitations |
-| Use selective overwrite patterns with Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/delta/selective-overwrite |
 | Control Delta data file size on Databricks | https://learn.microsoft.com/en-us/azure/databricks/delta/tune-file-size |
 | Use VACUUM to remove stale Delta files | https://learn.microsoft.com/en-us/azure/databricks/delta/vacuum |
 | Optimize VARIANT queries with shredding | https://learn.microsoft.com/en-us/azure/databricks/delta/variant-shredding |
 | Apply Databricks-recommended CI/CD workflows and patterns | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/best-practices |
 | List Databricks cluster policy families via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/policy-families-commands |
-| Best practices for secure and performant Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/best-practices |
+| Apply security and performance best practices for Databricks apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/best-practices |
 | Test Scala code using Databricks Connect and ScalaTest | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/testing |
 | Run Python tests on Databricks via VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/pytest |
 | Choose patterns for external access to Databricks data | https://learn.microsoft.com/en-us/azure/databricks/external-access/ |
@@ -193,7 +191,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Databricks RAG application quality | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/tutorials/ai-cookbook/quality-overview |
 | Improve Databricks RAG chain quality | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/tutorials/ai-cookbook/quality-rag-chain |
 | Configure Genie Code custom instructions | https://learn.microsoft.com/en-us/azure/databricks/genie-code/instructions |
-| Best practices for effective Genie Code prompts | https://learn.microsoft.com/en-us/azure/databricks/genie-code/tips |
+| Apply best practices to improve Genie Code responses | https://learn.microsoft.com/en-us/azure/databricks/genie-code/tips |
 | Evaluate Genie spaces using benchmarks | https://learn.microsoft.com/en-us/azure/databricks/genie/benchmarks |
 | Curate effective Azure Databricks Genie spaces | https://learn.microsoft.com/en-us/azure/databricks/genie/best-practices |
 | Build Genie knowledge stores for accurate responses | https://learn.microsoft.com/en-us/azure/databricks/genie/knowledge-store |
@@ -209,7 +207,7 @@ This skill requires **network access** to fetch documentation content:
 | Perform full refreshes of Lakeflow target tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/full-refresh |
 | Analyze Lakeflow ingestion costs with billing tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/monitor-costs |
 | Perform ongoing maintenance for Lakeflow pipelines | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/pipeline-maintenance |
-| Operate and maintain PostgreSQL Lakeflow ingestion pipelines | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-maintenance |
+| Maintain and operate PostgreSQL ingestion pipelines in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-maintenance |
 | Optimize incremental ingestion of Salesforce formula fields | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-formula-fields |
 | Use init scripts to customize Databricks clusters | https://learn.microsoft.com/en-us/azure/databricks/init-scripts/ |
 | Reference external files safely in Databricks init scripts | https://learn.microsoft.com/en-us/azure/databricks/init-scripts/referencing-files |
@@ -250,7 +248,7 @@ This skill requires **network access** to fetch documentation content:
 | Follow deep learning best practices on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/dl-best-practices |
 | Fine-tune Hugging Face models on a single GPU in Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model |
 | Prepare datasets for Hugging Face fine-tuning on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/huggingface/load-data |
-| Model Unity Catalog metric view data effectively | https://learn.microsoft.com/en-us/azure/databricks/metric-views/data-modeling/ |
+| Apply data modeling best practices for Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/metric-views/data-modeling/ |
 | Apply composability patterns in metric views | https://learn.microsoft.com/en-us/azure/databricks/metric-views/data-modeling/composability |
 | Define joins in Databricks metric view YAML | https://learn.microsoft.com/en-us/azure/databricks/metric-views/data-modeling/joins |
 | Use semantic metadata in Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/metric-views/data-modeling/semantic-metadata |
@@ -269,7 +267,6 @@ This skill requires **network access** to fetch documentation content:
 | Analyze Lakebase query performance history | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/query-performance |
 | Follow Databricks performance optimization guidance | https://learn.microsoft.com/en-us/azure/databricks/optimizations/ |
 | Use adaptive query execution on Databricks | https://learn.microsoft.com/en-us/azure/databricks/optimizations/aqe |
-| Use archival support for Delta on Azure | https://learn.microsoft.com/en-us/azure/databricks/optimizations/archive-delta |
 | Leverage cost-based optimizer in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/optimizations/cbo |
 | Improve read performance with Databricks disk cache | https://learn.microsoft.com/en-us/azure/databricks/optimizations/disk-cache |
 | Speed up queries with dynamic file pruning | https://learn.microsoft.com/en-us/azure/databricks/optimizations/dynamic-file-pruning |
@@ -310,7 +307,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Structured Streaming checkpoints correctly on Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/checkpoints |
 | Implement Delta Lake streaming reads and writes in Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/delta-lake |
 | Choose Structured Streaming output modes on Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/output-mode |
-| Configure Databricks Structured Streaming for production workloads | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/production |
+| Optimize Databricks Structured Streaming for production | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/production |
 | Optimize stateless Structured Streaming queries on Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/stateless-streaming |
 | Monitor Structured Streaming queries using Databricks tools | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/stream-monitoring |
 | Combine Unity Catalog with Structured Streaming workloads | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/unity-catalog |
@@ -380,7 +377,6 @@ This skill requires **network access** to fetch documentation content:
 | Choose Databricks options for batch model inference | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-inference/ |
 | Migrate from legacy MLflow serving to Mosaic AI Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/migrate-model-serving |
 | Decide when to use Spark vs. Ray on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/spark-ray-overview |
-| Decide when to use distributed XGBoost with Ray on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/sgc-examples/tutorials/sgc-raytune-xgboost |
 | Decide when and how to use distributed training on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/distributed-training/ |
 | Plan migration of data applications to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/migration/ |
 | Assess options for migrating ETL pipelines to Databricks | https://learn.microsoft.com/en-us/azure/databricks/migration/etl |
@@ -388,7 +384,6 @@ This skill requires **network access** to fetch documentation content:
 | Migrate enterprise data warehouses to the Databricks lakehouse | https://learn.microsoft.com/en-us/azure/databricks/migration/warehouse-to-lakehouse |
 | Decide and migrate from Agent Evaluation to MLflow 3 | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/agent-eval-migration |
 | Quick reference for migrating to MLflow 3 | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/agent-eval-migration-reference |
-| Use Lakebase Postgres OLTP within the Databricks Lakehouse | https://learn.microsoft.com/en-us/azure/databricks/oltp/ |
 | Plan and adjust Lakebase instance capacity | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/create/capacity |
 | Evaluate Lakebase Postgres Autoscaling capabilities and use cases | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/about |
 | Choose Lakebase backup and restore methods | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/backup-methods |
@@ -406,7 +401,8 @@ This skill requires **network access** to fetch documentation content:
 | Choose between SparkR and sparklyr on Databricks | https://learn.microsoft.com/en-us/azure/databricks/sparkr/sparkr-vs-sparklyr |
 | Migrate to the latest Databricks SQL REST API | https://learn.microsoft.com/en-us/azure/databricks/sql/dbsql-api-latest |
 | Choose synchronous vs asynchronous state checkpointing in Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/async-checkpointing |
-| Optimize and manage Mosaic AI Vector Search costs | https://learn.microsoft.com/en-us/azure/databricks/vector-search/vector-search-cost-management |
+| Choose interactive vs non-interactive Databricks transactions | https://learn.microsoft.com/en-us/azure/databricks/transactions/transaction-modes |
+| Choose cost-efficient Mosaic AI Vector Search endpoints | https://learn.microsoft.com/en-us/azure/databricks/vector-search/vector-search-cost-management |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -435,7 +431,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose Databricks ML model deployment patterns | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/deployment-patterns |
 | Design LLMOps workflows on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/llmops |
 | Implement MLOps workflows on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/mlops/mlops-workflow |
-| Choose and train deep-learning recommender models on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-recommender-models |
+| Choose and train deep-learning recommenders in Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-recommender-models |
 | Use Lakebase branches for safe database evolution | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/branches |
 | Understand Lakebase autoscaling, branches, and read replicas | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/core-concepts |
 | Design high availability for Lakebase Postgres computes | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/high-availability |
@@ -444,4 +440,3 @@ This skill requires **network access** to fetch documentation content:
 | Plan Hive metastore federation with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/query-federation/hms-federation-concepts |
 | Choose patterns for modeling semi-structured data on Databricks | https://learn.microsoft.com/en-us/azure/databricks/semi-structured/ |
 | Decide when to partition Databricks tables | https://learn.microsoft.com/en-us/azure/databricks/tables/partitions |
-| Choose interactive vs non-interactive transactions | https://learn.microsoft.com/en-us/azure/databricks/transactions/transaction-modes |

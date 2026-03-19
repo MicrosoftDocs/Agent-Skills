@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-19'
 category_descriptions:
   integrations: Patterns and samples for integrating API Management with external
     APIs, LLMs, logging/monitoring, OAuth, MCP, and Azure services (Event Hubs, Service
@@ -22,26 +22,26 @@ category_descriptions:
   best-practices: Best practices for caching, throttling/quotas, self-hosted gateway
     on Kubernetes, server-sent events, and securing APIs against OWASP API Top 10
     in Azure API Management
-  configuration: 'Configuring Azure API Management behavior: policies, caching, networking/VNet,
-    logging/metrics, credentials, subscriptions/users, self-hosted gateways, and developer
-    portal integration.'
+  configuration: 'Configuring Azure API Management behavior: policies, caching, logging/metrics,
+    networking/VNet, domains, credentials, subscriptions/users, self-hosted gateways,
+    and deployment templates.'
   architecture-patterns: Patterns for placing API Management behind App Gateway/WAF,
     Azure Front Door, or AKS, including routing, security, and high‑availability reference
     architectures.
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring APIM policies, self-hosted gateways, VNet/private access, Azure
-  OpenAI/LLM APIs, or Front Door/App Gateway, and other Azure API Management related
-  development tasks. Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
-  Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when configuring APIM policies, self-hosted gateways, VNet/private access,
-  Azure OpenAI/LLM APIs, or Front Door/App Gateway, and other Azure API Management
+  Use when integrating APIM with Azure services/LLMs, configuring policies/quotas,
+  securing gateways, or deploying self-hosted gateways, and other Azure API Management
+  related development tasks. Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+use_when: Use when integrating APIM with Azure services/LLMs, configuring policies/quotas,
+  securing gateways, or deploying self-hosted gateways, and other Azure API Management
   related development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer),
-  Azure Web Application Firewall (use azure-web-application-firewall).
+  Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 ---
 # Azure API Management Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 275
+- **Updated Pages**: 1
+- **Unchanged**: 274
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -66,16 +66,21 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 |------|-------|------------|
 | architecture-patterns | 3 | 1.1% |
 | best-practices | 6 | 2.2% |
-| configuration | 95 | 34.5% |
+| configuration | 96 | 34.9% |
 | decision-making | 17 | 6.2% |
 | deployment | 17 | 6.2% |
 | integrations | 27 | 9.8% |
 | limits-quotas | 17 | 6.2% |
-| security | 38 | 13.8% |
+| security | 37 | 13.5% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 49 | 17.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-17T08:00:00.000Z
 
 ## Classified Pages
 
@@ -122,7 +127,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Authenticate with username and password](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication) | security | 0.80 | Details how to configure username/password accounts for the portal; includes product-specific auth configuration steps and cautions. |
 | [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | security | 0.80 | Includes specific requirements for host headers, certificate bindings, and endpoint domain configuration, which are security-related settings. |
 | [Configure credential manager - Microsoft Graph API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-azure-ad) | integrations | 0.80 | Provides step-by-step configuration of a managed connection to Microsoft Graph using Entra and authorization code flow, including provider-specific parameters. |
-| [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint) | security | 0.80 | Describes configuring private endpoints and Private Link for API Management, including network behavior and access restrictions, which are concrete security configurations. |
 | [Deploy a self-hosted gateway to Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-kubernetes-service) | deployment | 0.80 | AKS deployment guide for self-hosted gateway; contains product-specific deployment YAML/Helm values, ports, and resource requirements. |
 | [Deploy a self-hosted gateway to Kubernetes (YAML)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes) | deployment | 0.80 | Kubernetes YAML deployment article; includes container image, environment variables, and Kubernetes resource settings specific to APIM gateway. |
 | [Deploy to multiple Azure regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region) | deployment | 0.80 | Details Premium multi-region deployment, including configuring regional scale units and availability zones, which are product-specific deployment constraints. |
@@ -272,6 +276,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [validate-headers](https://learn.microsoft.com/en-us/azure/api-management/validate-headers-policy) | limits-quotas | 0.70 | Policy reference includes a specific maximum API schema size limit (4 MB) and behavior when exceeded; this is an explicit numeric limit/constraint. |
 | [validate-odata-request](https://learn.microsoft.com/en-us/azure/api-management/validate-odata-request-policy) | configuration | 0.70 | Policy reference for validating OData request URLs, headers, and parameters; includes product-specific configuration elements. |
 | [validate-parameters](https://learn.microsoft.com/en-us/azure/api-management/validate-parameters-policy) | limits-quotas | 0.70 | Includes explicit maximum API schema size (4 MB) and versioning caveats; numeric limit qualifies as limits-quotas plus configuration details. |
+| [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint) | configuration | 0.68 | Page describes how to configure an inbound private endpoint for Azure API Management using Private Link, including product-specific settings and network configuration steps (VNet, private endpoint association, DNS behavior). This is concrete, product-specific configuration guidance rather than a conceptual overview, fitting the configuration sub-skill best. |
 | [Create subscriptions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-subscriptions) | configuration | 0.68 | Walkthrough for creating subscriptions; includes subscription key handling, scope options, and settings specific to APIM. |
 | [Customize developer portal on WordPress](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-wordpress-plugin) | configuration | 0.68 | Covers concrete plugin settings and wiring between WordPress and API Management developer portal; product-specific configuration details. |
 | [Metrics retirements (August 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/metrics-retirement-aug-2023) | configuration | 0.68 | Details specific metric names being retired and the replacement metric, along with guidance to update monitoring and alert rules—product-specific monitoring configuration knowledge. |

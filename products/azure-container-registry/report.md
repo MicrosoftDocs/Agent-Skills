@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-03'
+generated_at: '2026-03-19'
 category_descriptions:
   security: Securing ACR with auth, RBAC/ABAC, network controls, encryption, image
     signing/verification, policies, Defender scans, and managed identity/Key Vault
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 122
+- **Updated Pages**: 1
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -73,6 +73,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 33 | 27.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Zone-redundant registries](https://learn.microsoft.com/en-us/azure/container-registry/zone-redundancy)
+  - Updated: 2026-02-04T23:14:00.000Z → 2026-03-18T17:34:00.000Z
 
 ## Classified Pages
 
@@ -184,7 +189,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Monitor Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry) | 0.40 | High-level monitoring article; likely describes how to use Azure Monitor with ACR but not focused on detailed metrics tables or config parameters. |
 | [Overview of Ensuring Integrity and Authenticity for Container Images and OCI Artifacts](https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts) | 0.40 | High-level overview of signing and verifying OCI artifacts; mostly conceptual supply-chain security context without detailed config tables or error mappings. |
 | [YAML and Dockerfiles](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-samples) | 0.40 | Index of sample task YAMLs and Dockerfiles; mostly links to examples rather than consolidated expert reference content. |
-| [Zone-redundant registries](https://learn.microsoft.com/en-us/azure/container-registry/zone-redundancy) | 0.40 | Explains zone redundancy behavior and availability; mostly conceptual and feature description without detailed numeric limits or configs. |
 | [1 - Build from source context](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-quick-task) | 0.35 | Tutorial for quick tasks; focuses on basic usage pattern rather than detailed configuration options or limits. |
 | [2a - Build on code commit](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-build-task) | 0.35 | Tutorial for code-commit-triggered builds; mostly procedural steps without extensive configuration reference or error mappings. |
 | [Build, push, and run image - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-quickstart-task-cli) | 0.35 | Quickstart tutorial for building an image; mostly step-by-step commands LLMs generally know, without detailed product-specific configuration matrices. |
@@ -204,4 +208,5 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Create container registry - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli) | 0.20 | Quickstart showing basic creation and push/pull via CLI; no detailed limits, configs tables, or troubleshooting content. |
 | [Create container registry - Portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal) | 0.20 | Portal quickstart for creating a registry and pushing/pulling an image; procedural, not expert reference material. |
 | [Create container registry - PowerShell](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-powershell) | 0.20 | PowerShell quickstart for basic registry usage; no product-specific limits, configs, or error mappings. |
+| [Zone-redundant registries](https://learn.microsoft.com/en-us/azure/container-registry/zone-redundancy) | 0.20 | Content is a conceptual/behavioral overview of zone redundancy (enabled by default across tiers, no extra cost) without specific numeric limits, configuration parameter tables, error codes, or decision matrices. It explains what zone redundancy is and that it applies to Basic/Standard/Premium and geo-replicated registries, but does not include expert-only configuration details or quantified thresholds that meet any sub-skill criteria. |
 | [Registries, repositories, and images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-concepts) | 0.10 | Conceptual explanation of registries, repositories, images, and artifacts; no expert-level numeric or config details. |

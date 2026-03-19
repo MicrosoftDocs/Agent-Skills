@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML jobs/endpoints, AutoML, Prompt Flow, MLflow, or managed online/batch deployments, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML pipelines, AutoML, managed online/batch endpoints, prompt flow, or MLflow deployments, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Science Virtual Machines (use azure-data-science-vm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L96-L119 | Guidance on Azure ML design choices: algorithms, training, networking, cost, DR, data labeling, and detailed migration/upgrade paths from AML v1 to v2 across jobs, data, compute, and workspaces |
 | Architecture & Design Patterns | L120-L127 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
 | Limits & Quotas | L128-L136 | Azure ML deployment limits: regional/sovereign availability, quota management, supported VM SKUs for managed endpoints, and capacity planning against service limits. |
-| Security | L137-L195 | Securing Azure ML workspaces, data, and endpoints: encryption, auth/RBAC, managed identities, network isolation/VNets, private endpoints, policies, key/secret management, and compliance controls. |
-| Configuration | L196-L463 | Configuring Azure ML: designer components, AutoML, compute, data, monitoring, registries, prompt flow, and full CLI/YAML schemas for jobs, endpoints, feature stores, and connections. |
-| Integrations & Coding Patterns | L464-L506 | Integrating Azure ML with data sources, Spark/Databricks/Synapse, REST/MLflow, prompt flow, and external services to move data, run jobs, deploy models, and trigger/monitor endpoints. |
-| Deployment | L507-L553 | Deploying and operating ML and LLM workloads in Azure ML: online/batch endpoints, MLflow, pipelines, prompt flow, CI/CD, blue‑green rollouts, and cross-workspace/model catalog deployments |
+| Security | L137-L195 | Securing Azure ML workspaces, data, and endpoints with encryption, identity/RBAC, network isolation/VNets, private endpoints, Key Vault, and Azure Policy-based governance and compliance. |
+| Configuration | L196-L463 | Configuring Azure ML components, compute, data, monitoring, AutoML, prompt flow, and YAML/CLI settings for training, deployment, and MLOps across classic designer and v2 workflows. |
+| Integrations & Coding Patterns | L464-L507 | Integrating Azure ML with data sources, Spark/Databricks/Synapse, REST/MLflow, prompt flow, and external services to configure IO, logging, events, and deployment patterns. |
+| Deployment | L508-L553 | Deploying and operating ML and LLM workloads in Azure ML: online/batch endpoints, MLflow, pipelines, prompt flow, CI/CD, blue‑green rollouts, and cross-workspace/model catalog deployments |
 
 ### Troubleshooting
 | Topic | URL |
@@ -190,7 +190,7 @@ This skill requires **network access** to fetch documentation content:
 | Manage API and data source credentials with prompt flow connections | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/concept-connections?view=azureml-api-2 |
 | Secure prompt flow with virtual network isolation in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-secure-prompt-flow?view=azureml-api-2 |
 | Apply Azure Policy regulatory controls to Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/security-controls-policy?view=azureml-api-2 |
-| Create secure Azure ML workspace in a VNet | https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace-vnet?view=azureml-api-2 |
+| Secure Azure ML workspace with custom VNet | https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace-vnet?view=azureml-api-2 |
 | Create a secure Azure ML workspace with managed VNet | https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-create-secure-workspace?view=azureml-api-2 |
 
 ### Configuration
@@ -357,7 +357,7 @@ This skill requires **network access** to fetch documentation content:
 | Generate Responsible AI insights in Azure ML studio | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-insights-ui?view=azureml-api-2 |
 | Configure and export Responsible AI scorecards in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-scorecard?view=azureml-api-2 |
 | Schedule recurring data imports in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-schedule-data-import?view=azureml-api-2 |
-| Configure Azure ML training jobs and compute targets (v1) | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-set-up-training-targets?view=azureml-api-1 |
+| Configure Azure ML training compute targets (SDK v1) | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-set-up-training-targets?view=azureml-api-1 |
 | Share data assets across Azure ML workspaces via registries | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-share-data-across-workspaces-with-registries?view=azureml-api-2 |
 | Share models and components across Azure ML workspaces | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-share-models-pipelines-across-workspaces-with-registries?view=azureml-api-2 |
 | Query and compare MLflow experiments and runs in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments-mlflow?view=azureml-api-2 |
@@ -488,6 +488,7 @@ This skill requires **network access** to fetch documentation content:
 | Attach secured Azure Databricks to Azure ML via private endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-securely-attach-databricks?view=azureml-api-2 |
 | Submit standalone and pipeline Spark jobs in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-submit-spark-jobs?view=azureml-api-2 |
 | Log metrics in Azure ML designer pipelines | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-track-designer-experiments?view=azureml-api-1 |
+| Train PyTorch models using Azure ML SDK v2 | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-pytorch?view=azureml-api-2 |
 | Use Azure AutoML ONNX models with ML.NET in .NET apps | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-automl-onnx-model-dotnet?view=azureml-api-2 |
 | Invoke Azure ML batch endpoints from Azure Data Factory | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-azure-data-factory?view=azureml-api-2 |
 | Access Azure ML batch endpoints from Microsoft Fabric | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-fabric?view=azureml-api-2 |
@@ -537,7 +538,6 @@ This skill requires **network access** to fetch documentation content:
 | Deploy and trigger batch prediction pipelines in Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-run-batch-predictions-designer?view=azureml-api-1 |
 | Perform safe blue-green rollouts for Azure ML online endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2 |
 | Set up end-to-end MLOps with Azure DevOps and Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-mlops-azureml?view=azureml-api-2 |
-| Set up end-to-end MLOps with GitHub and Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-mlops-github-azure-ml?view=azureml-api-2 |
 | Trigger published Azure ML pipelines automatically | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-trigger-published-pipeline?view=azureml-api-1 |
 | Deploy models for batch scoring with AML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-model-deployments?view=azureml-api-2 |
 | Run Azure OpenAI embeddings via AML batch endpoints | https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-batch-model-openai-embeddings?view=azureml-api-2 |

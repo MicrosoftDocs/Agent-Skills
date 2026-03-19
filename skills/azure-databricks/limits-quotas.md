@@ -31,17 +31,17 @@
 | Understand feature limitations of Databricks Light | https://learn.microsoft.com/en-us/azure/databricks/archive/runtime/light |
 | Collaborate as an invited Clean Rooms user | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/clean-room-collaborator |
 | Review dedicated compute requirements and limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/dedicated-limitations |
-| Serverless GPU compute limits and constraints in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/gpu |
 | Review Databricks serverless compute limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/limitations |
 | Understand standard compute requirements and limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/standard-limitations |
 | Review Azure Databricks AI/BI dashboard limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/dashboards/limits |
+| Configure IP access lists for Delta Sharing recipients | https://learn.microsoft.com/en-us/azure/databricks/delta-sharing/access-list |
 | View and manage Unity Catalog resource quotas via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/resource-quotas-commands |
 | Understand Databricks Connect for Python limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/limitations |
 | Meet Databricks Connect runtime and environment requirements | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/requirements |
 | Review Databricks Connect for Scala limitations | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/limitations |
 | Review Databricks Free Edition account limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/getting-started/free-edition-limitations |
-| Create tables via Databricks file upload UI | https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-data |
-| Upload files to Unity Catalog volumes safely | https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume |
+| Use Databricks file upload to create small Delta tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-data |
+| Understand file size limits for Unity Catalog volume uploads | https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume |
 | Understand Confluence connector limits and API constraints | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/confluence-limits |
 | Review Dynamics 365 connector ingestion limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/d365-limits |
 | Understand Google Ads connector limitations in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/google-ads-limits |
@@ -51,7 +51,7 @@
 | Review Meta Ads connector ingestion limits | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/meta-ads-limits |
 | Review MySQL Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/mysql-limits |
 | Understand NetSuite Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/netsuite-limits |
-| Review PostgreSQL Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-limits |
+| PostgreSQL Lakeflow Connect connector limits and constraints | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/postgresql-limits |
 | Understand Salesforce Lakeflow connector limitations | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/salesforce-limits |
 | Understand ServiceNow connector limits in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/servicenow-limits |
 | Review SharePoint connector limits in Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/sharepoint-limits |
@@ -67,10 +67,10 @@
 | Understand Lakeflow pipeline limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/ldp/limitations |
 | Understand Databricks Runtime ML library maintenance and support | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/databricks-runtime-ml-maintenance |
 | Overview and limits of Databricks Foundation Model APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/ |
-| Review Databricks Foundation Model API limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
+| Databricks Foundation Model APIs limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/limits |
 | Understand Databricks provisioned throughput model units | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/model-units |
-| Databricks-hosted foundation models and capabilities | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/supported-models |
-| Supported foundation models in Mosaic AI Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/foundation-model-overview |
+| Use Databricks-hosted foundation models and endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/supported-models |
+| Check supported foundation models and regions for Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/foundation-model-overview |
 | Review Databricks Model Serving limits and region support | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/model-serving-limits |
 | Understand Databricks generative AI model maintenance policy | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/retired-models-policy |
 | Use TensorFlow on Databricks Runtime ML | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/train-model/tensorflow |

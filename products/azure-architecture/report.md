@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
-  example-workloads: 'End-to-end Azure solution patterns: data/AI workloads, analytics
-    lakehouses, AKS and networking security, hybrid/Arc, mainframe/Oracle/NetApp migrations,
-    DevOps/APIOps, and regulated/enterprise scenarios.'
+  example-workloads: 'End-to-end reference architectures for real-world Azure workloads:
+    data/AI pipelines, AKS and networking, hybrid/Arc, security/Zero Trust, mainframe/Oracle/SAP,
+    VDI, and industry-specific solutions.'
   reference-architectures: End-to-end Azure reference designs for mission-critical,
     hybrid, and AI/data workloads, covering networking, security, DR, AKS, App Service,
     data platforms, and integration patterns.
-  design-patterns: 'Patterns and reference architectures for building scalable, resilient,
-    secure Azure solutions: messaging, microservices, gateways, caching, transactions,
-    multitenancy, networking, and integration.'
+  design-patterns: 'Patterns and reference architectures for resilient, scalable Azure
+    apps: messaging, integration, microservices, gateways, caching, multitenancy,
+    transactions, and network/security design.'
   technology-choices: Guides for choosing the right Azure services (compute, storage,
     data, AI/ML, analytics, messaging, networking, containers) based on workload,
     data, and architecture needs.
@@ -31,28 +31,28 @@ category_descriptions:
 skill_description: Expert guidance for designing Azure solutions using Azure Architecture.
   Covers reference architectures, solution ideas, design patterns, technology choices,
   architecture styles, best practices, anti-patterns, example workloads, and migration
-  guides. Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hybrid/Arc
-  setups, or AWS/on‑prem migrations, and other Azure Architecture related development
+  guides. Use when designing AKS, data/AI pipelines, Zero Trust networking, SAP/Oracle
+  migrations, or hybrid/Arc solutions, and other Azure Architecture related development
   tasks.
-use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hybrid/Arc
-  setups, or AWS/on‑prem migrations, and other Azure Architecture related development
+use_when: Use when designing AKS, data/AI pipelines, Zero Trust networking, SAP/Oracle
+  migrations, or hybrid/Arc solutions, and other Azure Architecture related development
   tasks.
 ---
 # Azure Architecture Crawl Report
 
 ## Summary
 
-- **Total Pages**: 444
-- **Fetched**: 444
+- **Total Pages**: 443
+- **Fetched**: 443
 - **Fetch Failed**: 0
-- **Classified**: 335
+- **Classified**: 334
 - **Unclassified**: 109
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 2
-- **Unchanged**: 442
-- **Deleted Pages**: 0
+- **Unchanged**: 440
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-architecture/azure-architecture.csv`
 
 ## Classification Statistics
@@ -63,21 +63,30 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | architecture-styles | 7 | 1.6% |
 | best-practices | 60 | 13.5% |
 | design-patterns | 51 | 11.5% |
-| example-workloads | 63 | 14.2% |
+| example-workloads | 62 | 14.0% |
 | migration-guides | 30 | 6.8% |
-| reference-architectures | 53 | 11.9% |
+| reference-architectures | 53 | 12.0% |
 | solution-ideas | 29 | 6.5% |
 | technology-choices | 31 | 7.0% |
-| *(Unclassified)* | 109 | 24.5% |
+| *(Unclassified)* | 109 | 24.6% |
 
 ## Changes
 
+### New Pages
+
+- [Real-time sync of MongoDB Atlas to Fabric](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/sync-mongodb-atlas-fabric-analytics)
+
 ### Updated Pages
 
-- [What's new](https://learn.microsoft.com/en-us/azure/architecture/changelog)
-  - Updated: 2026-03-10T17:32:00.000Z → 2026-03-16T08:00:00.000Z
-- [Virtual Network security options](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway)
-  - Updated: 2025-03-07T18:30:00Z → 2026-03-17T05:10:00.000Z
+- [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
+  - Updated: 2025-12-09T06:03:00Z → 2026-03-17T17:35:00.000Z
+- [Esri ArcGIS on Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/esri-arcgis-azure-virtual-desktop)
+  - Updated: 2026-02-26T06:03:00Z → 2026-03-18T17:35:00Z
+
+### Deleted Pages
+
+- ~~Analyze MongoDB Atlas data~~ (https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/azure-synapse-analytics-integrate-mongodb-atlas)
+- ~~Real-time sync of MongoDB Atlas to Azure Synapse Analytics~~ (https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/sync-mongodb-atlas-azure-synapse-analytics)
 
 ## Classified Pages
 
@@ -95,7 +104,7 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Batch processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/batch-processing) | technology-choices | 0.95 | Under /technology-choices/, compares batch processing options with key selection criteria and capability matrix to guide service choice. |
 | [Big compute](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-compute) | architecture-styles | 0.95 | Describes Big Compute as an architecture style, with use cases, benefits, challenges, and best practices; URL under guide/architecture-styles/, matching architecture-styles. |
 | [Big data](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/big-data) | architecture-styles | 0.95 | Explains Big Data as an architecture style with flows, components, benefits, and best practices; URL under guide/architecture-styles/, fitting architecture-styles. |
-| [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead) | design-patterns | 0.95 | patterns/bulkhead describes the Bulkhead pattern with explanation, benefits, and trade-offs. This is a named cloud design pattern with implementation guidance. |
+| [Bulkhead](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead) | design-patterns | 0.95 | The page is under /architecture/patterns/, describes the named Bulkhead pattern with context/problem and solution structure, includes when-to-use guidance and trade-offs, and provides Azure-oriented implementation considerations. This is specialized design-pattern knowledge beyond generic conceptual content. |
 | [Busy Database](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-database/) | anti-patterns | 0.95 | Named antipattern page under antipatterns/ with symptoms, causes, and remediation steps for offloading too much processing to the database. |
 | [Busy Front End](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/) | anti-patterns | 0.95 | Named antipattern under antipatterns/ describing symptoms of excessive background threads and how to remediate, clearly an anti-pattern guide. |
 | [Cache-Aside](https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside) | design-patterns | 0.95 | patterns/cache-aside describes the Cache-Aside pattern with problem/solution and implementation details—classic design pattern content. |
@@ -181,7 +190,6 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Publisher-Subscriber](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) | design-patterns | 0.90 | URL contains /patterns/ and this is a named design pattern (Publisher-Subscriber). The full article in the Architecture Center follows the standard pattern template with sections like context/problem, solution, when to use, and implementation considerations, which go beyond generic knowledge and provide Azure-oriented implementation guidance. |
 | [Quarantine](https://learn.microsoft.com/en-us/azure/architecture/patterns/quarantine) | design-patterns | 0.90 | Named Quarantine pattern under /patterns/ with operational context, solution description, and implementation considerations for securing third-party artifacts. |
 | [Rate Limiting](https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern) | design-patterns | 0.90 | Named Rate Limiting pattern under /patterns/ with explanation of throttling scenarios, solution approaches, and trade-offs. |
-| [Real-time sync of MongoDB Atlas to Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/sync-mongodb-atlas-azure-synapse-analytics) | example-workloads | 0.90 | Under /example-scenario/analytics/, describes a concrete real-time sync solution between MongoDB Atlas and Synapse with specific components. |
 | [SQL Server on VMs with Azure NetApp Files](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/file-storage/sql-server-azure-netapp-files) | example-workloads | 0.90 | example-scenario/file-storage URL; migration-focused architecture for SQL Server OLTP workloads on Azure VMs with ANF SMB shares and performance considerations. |
 | [Scheduler Agent Supervisor](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor) | design-patterns | 0.90 | Named Scheduler Agent Supervisor pattern under /patterns/ with problem/solution structure and resiliency-focused implementation guidance. |
 | [Second layer of defense: Defender](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/microsoft-365-defender-build-second-layer-defense) | solution-ideas | 0.90 | solution-ideas/articles URL; describes how to extend Azure security with Microsoft 365 Defender XDR in hybrid environments, including integration guidance. |
@@ -326,6 +334,7 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Deploy an Azure Arc-enabled SQL managed instance for DR](https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-sql-managed-instance-disaster-recovery) | example-workloads | 0.78 | Scenario-specific Arc-enabled SQL MI disaster recovery architecture across two non-Azure sites with implementation guidance based on ArcBox for DataOps. |
 | [Enhanced-security hybrid: mobile access](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-mobile) | example-workloads | 0.78 | Scenario-specific architectures for Outlook mobile clients accessing Exchange with Entra MFA; detailed hybrid identity and messaging flows. |
 | [Enhanced-security hybrid: web access](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/hybrid/secure-hybrid-messaging-web) | example-workloads | 0.78 | Example-scenario for protecting Outlook on the web and ECP in hybrid Exchange deployments using Entra MFA and related components. |
+| [Esri ArcGIS on Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/esri-arcgis-azure-virtual-desktop) | example-workloads | 0.78 | URL contains example-scenario/, and the page describes a concrete implementation of Esri ArcGIS Pro and ArcGIS Enterprise on Azure Virtual Desktop with a full system architecture. Example scenarios in the Architecture Center typically include detailed component choices, configuration considerations, and deployment guidance for a specific industry/use case (GIS/VDI), which goes beyond generic knowledge and into expert, scenario-specific implementation details. |
 | [Inbound and outbound internet connections for SAP on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound) | best-practices | 0.78 | The article offers proven practices for securing inbound and outbound internet connectivity for SAP on Azure infrastructure. It focuses on actionable security and networking guidance (do/don’t style recommendations) for a specific workload scenario, which aligns with the best-practices sub-skill type rather than patterns, solution ideas, or reference architectures. |
 | [Manage Microsoft 365 with DevOps](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/devops/manage-microsoft-365-tenant-configuration-microsoft365dsc-devops) | example-workloads | 0.78 | Example-scenario for Microsoft365DSC and Azure DevOps with concrete workflow and tooling details for tracking and approving tenant configuration changes. |
 | [Massive-scale Virtual WAN architecture design](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/massive-scale-azure-architecture) | example-workloads | 0.78 | Example workload for exceptionally large deployments with multiple hubs per region and redundant ExpressRoute; deep, scenario-specific network design. |
@@ -334,6 +343,7 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Multiregion load balancing](https://learn.microsoft.com/en-us/azure/architecture/high-availability/traffic-manager-application-gateway) | reference-architectures | 0.78 | This page describes a production-ready multiregion architecture using Azure Traffic Manager, Application Gateway, and other services for high availability. It includes a detailed architecture for global, internet-facing workloads, discusses DNS-based global load balancing plus regional load balancing, availability zones, multiregion deployment, and security layers (WAF, Azure Firewall). As a high-availability architecture in the Architecture Center, it typically provides concrete deployment and configuration guidance, satisfying the reference-architectures criteria more than solution-ideas or general best practices, even though the URL does not contain 'reference-architectures/'. |
 | [Network topologies and security](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/private-clusters) | migration-guides | 0.78 | In the aws-professional/eks-to-aks path, compares private cluster and networking options between EKS and AKS with concrete security configuration guidance. This is expert, migration-oriented content for AWS users moving to Azure. |
 | [Protect APIs by using Application Gateway and API Management](https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis) | best-practices | 0.78 | Applies Gateway Routing pattern with concrete configuration of App Gateway and APIM for API security; includes prescriptive security and routing guidance. |
+| [Real-time sync of MongoDB Atlas to Fabric](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/sync-mongodb-atlas-fabric-analytics) | example-workloads | 0.78 | The URL path contains example-scenario/analytics, and the article describes a concrete implementation for syncing MongoDB Atlas operational data into Microsoft Fabric using open mirroring. It focuses on a specific analytics use case with detailed technical guidance rather than a generic pattern or high-level solution idea, matching the example-workloads category. |
 | [SAP landscape architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) | best-practices | 0.78 | The page provides concrete recommendations and proven practices for architecting a secure, high-performing, and resilient SAP landscape on Azure with a focus on network design. This is implementation-focused guidance (what to do and how) for a specific complex workload rather than a generic overview, fitting the best-practices category more than the others listed. |
 | [Storage options](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/storage) | migration-guides | 0.78 | Compares storage capabilities and workload data options between EKS and AKS, with Azure-specific storage choices. This is expert, cross-cloud migration guidance under aws-professional/eks-to-aks. |
 | [Cross-tenant secure access to apps](https://learn.microsoft.com/en-us/azure/architecture/networking/guide/cross-tenant-secure-access-private-endpoints) | example-workloads | 0.76 | Guide for securing cross-tenant access to web and function apps using private endpoints with detailed configuration and design considerations. |
@@ -345,7 +355,6 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [Access an AKS API server](https://learn.microsoft.com/en-us/azure/architecture/guide/security/access-azure-kubernetes-service-cluster-api-server) | best-practices | 0.75 | Security-focused guide on AKS API server access options (Bastion, ExpressRoute, Cloud Shell) with deployment considerations; provides concrete, expert configuration guidance. |
 | [Backup and recovery for AKS](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-backup-and-recovery) | best-practices | 0.75 | Operator guide section with specific backup and restore approaches for AKS clusters and workloads; includes concrete implementation practices. |
 | [DevSecOps on AKS](https://learn.microsoft.com/en-us/azure/architecture/guide/devsecops/devsecops-on-aks) | best-practices | 0.75 | DevSecOps-on-AKS guide organized by lifecycle stages and roles; includes concrete security practices, tooling, and configuration guidance specific to AKS. |
-| [Esri ArcGIS on Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/esri-arcgis-azure-virtual-desktop) | example-workloads | 0.75 | example-scenario URL for a specific ISV (Esri ArcGIS) on AVD with concrete deployment architecture; industry/use-case specific implementation details qualify as an example workload. |
 | [GitOps for AKS](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks) | example-workloads | 0.75 | Example scenario under /example-scenario/gitops-aks/ with detailed GitOps techniques and tooling configuration for AKS; scenario-specific implementation rather than generic pattern. |
 | [Measure Azure app sustainability](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/measure-azure-app-sustainability-sci-score) | example-workloads | 0.75 | Example scenario under /example-scenario/ with a concrete sustainability model, data inputs, and SCI-based measurement approach. |
 | [Natural language processing](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing) | technology-choices | 0.75 | Provides comparison and selection guidance for NLP services (sentiment, key phrases, etc.), aligning with technology-choices. |
@@ -363,7 +372,6 @@ use_when: Use when designing AKS apps, analytics lakehouses, AI/ML solutions, hy
 | [3. Workload deployments](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-deployment) | best-practices | 0.70 | Triage guidance for deployments, DaemonSets, and services with specific tools and checks; operational best practices. |
 | [4. Admission controllers](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-controllers) | best-practices | 0.70 | Explains how misconfigured admission controllers affect clusters and provides commands to validate them; specialized operational guidance. |
 | [5. Container registry connectivity](https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-container-registry) | best-practices | 0.70 | Triage article with concrete steps to ensure registry connectivity and permissions; detailed operational checks and remediation. |
-| [Analyze MongoDB Atlas data](https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/azure-synapse-analytics-integrate-mongodb-atlas) | example-workloads | 0.70 | Concrete solution for connecting MongoDB Atlas to Synapse with batch and real-time sync; detailed scenario implementation rather than generic pattern. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/architecture/data-guide/disaster-recovery/dr-for-azure-data-platform-architecture) | reference-architectures | 0.70 | Under disaster-recovery with an explicit reference architecture for DR-enabled data platform; includes concrete Azure components and structural guidance akin to reference architectures, though not in /reference-architectures/ path. |
 | [Automate PDF form processing](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/automate-pdf-forms-processing) | example-workloads | 0.70 | Describes a specific automated PDF processing workload using multiple Azure services with implementation-level architecture; fits example-workloads better than high-level solution idea. |
 | [Automate document classification](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/automate-document-classification-durable-functions) | example-workloads | 0.70 | ai-ml/architecture article with a concrete workload (document classification pipeline) and detailed service interactions; scenario-specific implementation but not a generic pattern or solution idea. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   integrations: Integrating Defender for Cloud with CI/CD, SIEM, EDR, ITSM, and third‑party
     security tools, exporting data via APIs/ARG, and automating alerts, tickets, and
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 472
+- **Updated Pages**: 1
+- **Unchanged**: 471
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 216 | 45.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log)
+  - Updated: 2026-03-02T12:03:00.000Z → 2026-03-17T17:15:00.000Z
 
 ## Classified Pages
 
@@ -526,7 +531,7 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | [Defender CSPM support for GCP and more updates](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-six) | 0.20 | Video episode description about CSPM support for GCP and multicloud strategy; high-level feature discussion without concrete limits, configs, or troubleshooting details. |
 | [Defender for APIs reaches GA](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-thirty-nine) | 0.20 | GA announcement and feature recap for Defender for APIs; marketing/overview style content without quantified limits, configs, or troubleshooting mappings. |
 | [Defender for Cloud glossary of terms](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-glossary) | 0.20 | Glossary of terms is conceptual reference; it defines terminology but not configuration, limits, or troubleshooting details. |
-| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.20 | A changelog/release notes page listing version history, features, and fixes. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting flows, or decision matrices. It’s primarily update history rather than structured expert guidance matching any defined sub-skill type. |
+| [Defender sensor for Containers changelog](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-sensor-change-log) | 0.20 | The page is a changelog/release notes for the Defender sensor, listing version history, features, and fixes. It does not clearly expose structured limits, configuration parameter tables, security roles, troubleshooting mappings, or decision matrices as defined in the sub-skill types. While it may contain some product-specific details, they are not organized in a way that matches any of the targeted expert-knowledge categories. |
 | [Map container images from code to runtime](https://learn.microsoft.com/en-us/azure/defender-for-cloud/container-image-mapping) | 0.20 | Content is about mapping container images from code to runtime using Defender CSPM DevOps capabilities. The summary suggests a conceptual/feature overview of traceability from CI/CD to runtime, without clear indication of specific error codes, configuration tables, limits, or decision matrices. Lacking evidence of concrete parameters, thresholds, or product-specific troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Microsoft Defender for Containers in a multiCloud environment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/episode-nine) | 0.20 | Multicloud containers episode focuses on capabilities and onboarding demos; summary does not indicate detailed config tables or numeric thresholds. |
 | [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-arc-overview) | 0.20 | High-level overview of Defender for Containers on Arc; primarily conceptual capabilities and scenarios without detailed configuration parameters, limits, or troubleshooting mappings. |

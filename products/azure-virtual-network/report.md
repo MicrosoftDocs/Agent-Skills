@@ -1,17 +1,17 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-19'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
     and latency on Azure VMs.'
   limits-quotas: 'VM networking limits: MANA support per VM size, static public IP
-    assignment and quotas, and VM network throughput caps and how they affect performance.'
+    assignment and quotas, and per-VM network throughput caps and constraints.'
+  configuration: 'Configuring Azure Virtual Network behavior: IPs (public/private/custom),
+    NAT/load balancer/firewall/VPN, DNS, DHCP, monitoring, policies, subnet delegation,
+    and encryption.'
   decision-making: 'Guidance on design choices: when to use accelerated networking,
     routing preferences, VNets vs appliances, IP upgrade paths, VNet integration options,
     and cost/performance trade-offs.'
-  configuration: 'Configuring Azure Virtual Network components: DNS, IPs (public/private,
-    prefixes, IPv4/IPv6), NAT/load balancer/firewall/VPN, subnet delegation, monitoring,
-    NSG logs, and DHCP-related setups.'
   troubleshooting: 'Diagnosing and fixing Azure VM/VNet connectivity issues: routing
     and NSG problems, NVAs and routing appliances, SMTP blocking, VNet peering, encryption,
     and VNet deletion errors.'
@@ -24,31 +24,31 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Virtual Network development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, and configuration. Use when designing VNets, NSGs, service
-  endpoints, VNet peering, or Azure Firewall/NAT/load balancers, and other Azure Virtual
-  Network related development tasks. Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure ExpressRoute (use azure-expressroute).
-use_when: Use when designing VNets, NSGs, service endpoints, VNet peering, or Azure
-  Firewall/NAT/load balancers, and other Azure Virtual Network related development
+  endpoints, VNet peering, VPN gateways, or Azure Firewall/NAT gateways, and other
+  Azure Virtual Network related development tasks. Not for Azure Networking (use azure-networking),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
+  WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
+use_when: Use when designing VNets, NSGs, service endpoints, VNet peering, VPN gateways,
+  or Azure Firewall/NAT gateways, and other Azure Virtual Network related development
   tasks.
-confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure ExpressRoute (use azure-expressroute).
+confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtual
+  Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan),
+  Azure VPN Gateway (use azure-vpn-gateway).
 ---
 # Azure Virtual Network Crawl Report
 
 ## Summary
 
-- **Total Pages**: 128
-- **Fetched**: 128
+- **Total Pages**: 129
+- **Fetched**: 129
 - **Fetch Failed**: 0
-- **Classified**: 54
+- **Classified**: 55
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 128
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 127
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -58,27 +58,37 @@ confusable_not_for: Not for Azure Virtual Network Manager (use azure-virtual-net
 |------|-------|------------|
 | architecture-patterns | 6 | 4.7% |
 | best-practices | 8 | 6.2% |
-| configuration | 24 | 18.8% |
+| configuration | 25 | 19.4% |
 | decision-making | 6 | 4.7% |
 | limits-quotas | 3 | 2.3% |
 | security | 5 | 3.9% |
 | troubleshooting | 2 | 1.6% |
-| *(Unclassified)* | 74 | 57.8% |
+| *(Unclassified)* | 74 | 57.4% |
 
 ## Changes
+
+### New Pages
+
+- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
+
+### Updated Pages
+
+- [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes)
+  - Updated: 2026-02-03T18:20:00.000Z → 2026-03-18T06:15:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Network bandwidth](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-machine-network-throughput) | limits-quotas | 0.80 | Explains VM network throughput, flow limits, and bandwidth per size. Contains concrete Mbps values, flow limits, and possibly tables by VM SKU, which are specific limits/quotas not generally known. |
-| [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | limits-quotas | 0.75 | Update article about which existing VM sizes support MANA and Accelerated Networking. This typically includes SKU-specific support matrices and constraints, which are expert knowledge about limits/availability per VM size. |
 | [Azure Policy Regulatory Compliance controls](https://learn.microsoft.com/en-us/azure/virtual-network/security-controls-policy) | security | 0.70 | Lists specific built-in policy definitions and compliance controls for VNets, which are product-specific security/compliance configurations. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/virtual-network/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; each policy has a specific name, effect, and conditions that are product-specific configuration artifacts. |
 | [Azure services network isolation](https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services) | decision-making | 0.70 | Compares private endpoints, service endpoints, and dedicated deployments for isolation; helps decide which integration method to use for different services and scenarios. |
 | [Concepts and best practices](https://learn.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices) | best-practices | 0.70 | Explicitly includes best practices for address spaces, subnets, regions, and security; product-specific design recommendations. |
 | [Configure MTU for virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-virtual-machine-mtu) | best-practices | 0.70 | Discusses MTU sizing, fragmentation behavior, and Azure-specific considerations for Linux/Windows VMs. Provides concrete configuration guidance and product-specific gotchas that impact performance, fitting best-practices. |
 | [Deploy a DHCP server on an Azure VM](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-dhcp-azure) | configuration | 0.70 | Describes Azure-specific DHCP relay behavior (no broadcasts) and detailed port/protocol requirements plus configuration steps for a highly available DHCP server in Azure, including product-specific networking constraints. |
+| [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out) | configuration | 0.70 | The page focuses on MANA support for Network Virtual Appliances using existing VM sizes and mentions using Azure Policy to manage MANA deployments and performance. This implies product-specific configuration details (e.g., policy definitions, parameters, and how to opt in/out or control MANA usage for NVAs). Those are concrete, service-specific configuration patterns rather than generic concepts, so configuration is the best fit. |
+| [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes) | limits-quotas | 0.70 | Page is about which existing VM sizes support the Microsoft Azure Network Adapter (MANA) for accelerated networking. This typically includes SKU-specific support matrices and possibly constraints/limits tied to particular VM families and hardware generations—information that changes over time and is not reliably known from training. Among the available categories, limits-quotas best fits because the core expert knowledge is which sizes (and potentially how many NICs/throughput per size) are supported, which functions as a de facto capability/limit matrix. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip-reference) | configuration | 0.70 | Explicitly a monitoring data reference; such pages typically list metrics, dimensions, and log categories in tables with names and meanings, which are product-specific configuration/telemetry details not generally known. |
 | [Name resolution for resources](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances) | configuration | 0.70 | Covers Azure-provided DNS, private DNS zones, and custom DNS; includes Azure-specific DNS configuration patterns and options. |
 | [Network virtual appliances](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-scenario-udr-gw-nva) | architecture-patterns | 0.70 | Scenario-based architecture using route tables, VPN gateway, and NVAs to build DMZ and protected networks; concrete Azure network pattern. |

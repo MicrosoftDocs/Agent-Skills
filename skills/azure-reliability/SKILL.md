@@ -1,14 +1,14 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, and limits & quotas. Use when designing zone-aware AKS, Functions, databases, messaging, IoT, DR setups, or Queue Storage message sizing, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing AZ zone/zone-redundant setups, resilient Functions, AKS, MySQL HA migrations, or Queue Storage limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre Agent (use azure-sre-agent).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
 
-This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, and limits & quotas. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Reliability. Covers best practices, decision making, architecture & design patterns, limits & quotas, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,10 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L32-L61 | Patterns and configurations to make Azure services (AKS, Functions, DBs, messaging, IoT, networking, DR) highly available, resilient to failures, and recover quickly from outages. |
-| Decision Making | L62-L67 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
-| Architecture & Design Patterns | L68-L73 | Designing Azure apps for availability zones, choosing zonal vs zone-redundant resources, and hardening deployments for zone failures and high availability. |
-| Limits & Quotas | L74-L77 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Best Practices | L33-L62 | Patterns and configurations to make Azure services (AKS, Functions, DBs, messaging, IoT, networking, DR) highly available, resilient to failures, and recover quickly from outages. |
+| Decision Making | L63-L68 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
+| Architecture & Design Patterns | L69-L74 | Designing Azure apps for availability zones, choosing zonal vs zone-redundant resources, and hardening deployments for zone failures and high availability. |
+| Limits & Quotas | L75-L79 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Deployment | L80-L83 | Guidance for migrating Azure Database for MySQL Flexible Server to zone-redundant high availability, including architecture, prerequisites, and step-by-step migration process. |
 
 ### Best Practices
 | Topic | URL |
@@ -75,3 +76,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand Azure Queue Storage message size limits | https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue |
+
+### Deployment
+| Topic | URL |
+|-------|-----|
+| Migrate MySQL Flexible Server to zone-redundant HA | https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex |

@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines, mapping data flows, SHIR/SSIS IR, CI/CD deployments, or secure networked runtimes, and other Azure Data Factory related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Synapse Analytics (use azure-synapse-analytics).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key Vault, or SAP/SSIS migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector and format errors, pipeline/orchestration and data flow failures, CI/CD and Studio problems, SHIR/SSIS IR troubleshooting, and performance/debug guidance. |
 | Best Practices | L91-L116 | Performance, reliability, and migration best practices for ADF: tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors, DataOps/BCDR, SAP CDC, and common migration patterns. |
-| Decision Making | L117-L137 | Guidance on ADF cost planning, pricing models, runtimes and compute choices, connector selection and upgrades, and assessing/migrating pipelines, SSIS, and data warehouses to ADF/Fabric |
-| Architecture & Design Patterns | L138-L148 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L149-L154 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
-| Security | L155-L182 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
-| Configuration | L183-L318 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
-| Integrations & Coding Patterns | L319-L502 | Using ADF with external systems: connector how-tos, copy/transform patterns, SSIS/Databricks/Synapse/ML integration, REST/webhooks, SDK usage, and pipeline templates for common ETL scenarios. |
-| Deployment | L503-L519 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
+| Decision Making | L117-L138 | Guidance on ADF cost planning, runtimes and compute choices, connector upgrades, SAP/SSIS/Synapse/Fabric migrations, and when to use Workflow Orchestration Manager or Enterprise SSIS IR. |
+| Architecture & Design Patterns | L139-L149 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L150-L155 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
+| Security | L156-L183 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
+| Configuration | L184-L319 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
+| Integrations & Coding Patterns | L320-L503 | Using ADF with external systems: connector how-tos, copy/transform patterns, SSIS/Databricks/Synapse/ML integration, REST/webhooks, SDK usage, and pipeline templates for common ETL scenarios. |
+| Deployment | L504-L520 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
 
 ### Troubleshooting
 | Topic | URL |
@@ -130,6 +130,7 @@ This skill requires **network access** to fetch documentation content:
 | Assess Azure Data Factory pipelines for Fabric migration | https://learn.microsoft.com/en-us/azure/data-factory/how-to-assess-your-azure-data-factory-to-fabric-data-factory-migration |
 | Choose and provision Enterprise Edition for Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-enterprise-edition |
 | Assess and upgrade Azure Data Factory pipelines to Fabric | https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory |
+| Modernize Azure Synapse pipelines to Fabric Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory |
 | Choose the right Azure Data Factory SAP connector | https://learn.microsoft.com/en-us/azure/data-factory/industry-sap-connectors |
 | Plan and manage Azure Data Factory costs | https://learn.microsoft.com/en-us/azure/data-factory/plan-manage-costs |
 | Plan migration of on-premises SSIS workloads to ADF | https://learn.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-overview |

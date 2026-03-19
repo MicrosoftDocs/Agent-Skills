@@ -3,7 +3,7 @@ name: azure-devops
 description: Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing org/project structure, Boards, pipelines, repos, Analytics/OData, or Azure DevOps Server deployments, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-03-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DevOps Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L73-L88 | Guidance for high-level Azure DevOps design choices: org/project/team structure, geography, work tracking and wikis, analytics/reporting, agent pools, and Azure DevOps Server topology and upgrades |
 | Architecture & Design Patterns | L89-L100 | Architectural guidance for Azure DevOps/Server: pool architecture, reliability/DR, SQL/database dependencies, and design patterns for simple to complex multi-server topologies and analytics modeling. |
 | Limits & Quotas | L101-L115 | Org/project deletion & recovery windows, user access limits, naming/work item/wiki constraints, pipeline/ARM size limits, dashboard widgets, and Analytics data availability/latency. |
-| Security | L116-L175 | Managing Azure DevOps security: identities, auth, org/project/repo permissions, access levels, auditing, analytics security, and secure server/service account configuration |
-| Configuration | L176-L264 | Configuring Azure DevOps/Server: managed pools, networking, scaling, notifications, Boards/process customization, Analytics/Power BI, dashboards, backups, SQL, services, and admin console settings. |
-| Integrations & Coding Patterns | L265-L320 | Integrating Azure DevOps with tools (VS, SIEM, clients), using Analytics OData, and building detailed Power BI reports for work items, pipelines, and tests. |
-| Deployment | L321-L352 | Installing, configuring, scaling, moving, backing up, restoring, and upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains, and project collections |
+| Security | L116-L176 | Managing Azure DevOps security: identities, auth, permissions, access levels, groups, auditing, project/repo/pipeline rights, server service accounts, SSL, and download integrity. |
+| Configuration | L177-L265 | Configuring Azure DevOps/Server: managed pools, networking, scaling, notifications, Boards/process customization, Analytics/Power BI, dashboards, backups, SQL, services, and admin console settings. |
+| Integrations & Coding Patterns | L266-L321 | Integrating Azure DevOps with tools (VS, SIEM, clients), using Analytics OData, and building detailed Power BI reports for work items, pipelines, and tests. |
+| Deployment | L322-L353 | Installing, configuring, scaling, moving, backing up, restoring, and upgrading Azure DevOps Server/TFS deployments, including SQL, SharePoint, domains, and project collections |
 
 ### Troubleshooting
 | Topic | URL |
@@ -136,6 +136,7 @@ This skill requires **network access** to fetch documentation content:
 | Change Azure DevOps Server user and group access levels | https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-access-levels?view=azure-devops-server |
 | Manage Azure DevOps organization and collection permissions | https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-organization-collection-level-permissions?view=azure-devops |
 | Change project-level permissions and group membership | https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops |
+| Understand Azure DevOps data storage locations and movement | https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-location?view=azure-devops |
 | Default Git repo and branch permissions in Azure DevOps | https://learn.microsoft.com/en-us/azure/devops/organizations/security/default-git-permissions?view=azure-devops |
 | Default TFVC repository permissions and constraints | https://learn.microsoft.com/en-us/azure/devops/organizations/security/default-tfvc-permissions?view=azure-devops |
 | Download and interpret pipeline release permissions report | https://learn.microsoft.com/en-us/azure/devops/organizations/security/download-permissions-report-release?view=azure-devops |

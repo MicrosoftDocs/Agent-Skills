@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-19'
 category_descriptions:
   integrations: Patterns and connectors for integrating Logic Apps with Azure/IBM/SAP/FTP/B2B
     systems, AI/OpenAI, data transforms (XML/EDI/Liquid), custom connectors, and automated
     testing of workflows
-  limits-quotas: 'Limits, quotas, and performance behavior in Logic Apps: message
-    size/chunking, connector pagination, SQL result limits/timeouts, inline JS limits,
-    config reference, and metering/billing.'
-  configuration: 'Configuring Logic Apps behavior: workflow JSON, control flow, inline
-    code, B2B/integration accounts, connections/gateways, endpoints, storage, and
-    monitoring/diagnostic logging.'
-  security: Securing Logic Apps with identities, OAuth/OBO, Easy Auth, certificates,
-    private endpoints, and Azure Policy/Defender controls for access, connectors,
-    governance, and cross-tenant protection
+  limits-quotas: 'Limits, quotas, and performance behaviors in Logic Apps: message
+    size/chunking, pagination, SQL timeouts/results, inline JavaScript limits, configuration
+    caps, and metering/billing rules.'
+  configuration: Configuring Logic Apps workflows, runtime, B2B/integration accounts,
+    on-prem connections, inline code, control flow, schemas/maps, and monitoring/diagnostic
+    logging.
+  security: Securing Logic Apps with identities, OAuth/Easy Auth, private endpoints,
+    certificates, and Azure Policy/Defender controls, including cross-tenant and connector
+    access restrictions.
   deployment: CI/CD, ARM/Bicep/CLI deployment, DevOps pipelines, slots, hybrid setups,
     and migrating/cloning Consumption Logic Apps to Standard workflows
   decision-making: Guidance on when and how to migrate from BizTalk/Power Automate,
@@ -30,16 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms, AI/OpenAI calls,
-  CI/CD deployments, or DR/HA designs, and other Azure Logic Apps related development
-  tasks. Not for Azure Functions (use azure-functions), Azure Service Bus (use azure-service-bus),
-  Azure Event Grid (use azure-event-grid), Azure API Management (use azure-api-management).
-use_when: Use when building Logic Apps with B2B/SAP/FTP connectors, XML/EDI transforms,
-  AI/OpenAI calls, CI/CD deployments, or DR/HA designs, and other Azure Logic Apps
-  related development tasks.
-confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service Bus
-  (use azure-service-bus), Azure Event Grid (use azure-event-grid), Azure API Management
-  (use azure-api-management).
+  building Logic Apps with B2B/EDI, SAP/IBM/FTP connectors, AI/OpenAI calls, inline
+  code, or CI/CD deployments, and other Azure Logic Apps related development tasks.
+  Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory),
+  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+use_when: Use when building Logic Apps with B2B/EDI, SAP/IBM/FTP connectors, AI/OpenAI
+  calls, inline code, or CI/CD deployments, and other Azure Logic Apps related development
+  tasks.
+confusable_not_for: Not for Azure Functions (use azure-functions), Azure Data Factory
+  (use azure-data-factory), Azure Service Bus (use azure-service-bus), Azure Event
+  Grid (use azure-event-grid).
 ---
 # Azure Logic Apps Crawl Report
 
@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 229
+- **Updated Pages**: 3
+- **Unchanged**: 226
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -74,6 +74,15 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | *(Unclassified)* | 42 | 18.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity)
+  - Updated: 2026-03-09T08:00:00.000Z → 2026-03-18T11:13:00.000Z
+- [Handle large messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-handle-large-messages)
+  - Updated: 2025-09-16T08:00:00.000Z → 2026-03-15T08:00:00.000Z
+- [Edit app and host settings](https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings)
+  - Updated: 2025-06-18T08:00:00.000Z → 2026-03-15T08:00:00.000Z
 
 ## Classified Pages
 
@@ -113,7 +122,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [X12 997 acknowledgment](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-x12-997-acknowledgment) | troubleshooting | 0.86 | Describes 997 functional acknowledgments and enumerates X12 error codes and meanings in the context of Logic Apps X12 Decode. This is detailed error semantics for a specific product integration, fitting troubleshooting. |
 | [X12 TA1 acknowledgment](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-x12-ta1-acknowledgment) | troubleshooting | 0.86 | Page documents TA1 technical acknowledgment structure and specific X12 error codes as surfaced by Logic Apps X12 Decode, mapping codes to conditions and behavior. This is product-specific symptom→cause detail that LLMs are unlikely to know from training. |
 | [AS2 message settings](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2-message-settings) | configuration | 0.85 | Reference for AS2 agreement properties; includes setting names, allowed values, and how they affect message handling—classic configuration reference. |
-| [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity) | security | 0.85 | Managed identity setup for Logic Apps connections to Entra-protected resources generally lists supported connectors, identity types, scopes, and configuration steps with specific settings, which are product-specific security and auth configuration details. |
 | [EDIFACT CONTRL acknowledgments and error codes](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact-contrl-acknowledgment) | troubleshooting | 0.85 | Explains CONTRL acknowledgments and error codes; maps validation results to specific acknowledgment/error outputs—symptom/cause semantics for EDIFACT processing. |
 | [EDIFACT message settings](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-edifact-message-settings) | configuration | 0.85 | Reference for EDIFACT agreement properties; lists settings and how they control message handling between partners. |
 | [Reference for expression functions](https://learn.microsoft.com/en-us/azure/logic-apps/expression-functions-reference) | configuration | 0.85 | Lists expression functions, signatures, and behaviors for Logic Apps and Power Automate. These function names, parameters, and semantics are product-specific configuration/expression details. |
@@ -134,10 +142,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Certificates](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-certificates) | security | 0.80 | Details certificate types and how to configure them in integration accounts for encryption/signing; product-specific security configuration. |
 | [Create Standard workflows for hybrid deployment](https://learn.microsoft.com/en-us/azure/logic-apps/create-standard-workflows-hybrid-deployment) | deployment | 0.80 | Shows how to build and deploy a Standard Logic App workflow on your own infrastructure using the hybrid model, including environment-specific deployment steps. |
 | [Deploy and call custom APIs](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-custom-api-host-deploy-call) | integrations | 0.80 | Covers deploying APIs to App Service and calling them from Logic Apps; includes connector/HTTP action configuration, URL/auth parameters, and hosting constraints. |
-| [Edit app and host settings](https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings) | configuration | 0.80 | Explains app and host settings, including environment variables and runtime configuration options, likely with parameter names and allowed values. |
 | [HL7](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/integrate-healthcare-systems) | integrations | 0.80 | Describes HL7 built-in connector operations, message formats, and workflow usage; connector-specific parameters and patterns qualify as integration knowledge. |
 | [Hand off AI agent loop tasks with chat continuity](https://learn.microsoft.com/en-us/azure/logic-apps/set-up-handoff-agent-workflow) | architecture-patterns | 0.80 | Covers a 'handoff' multi-agent pattern where agent loops transfer control while preserving chat context, including when to delegate to specialized agents. This is concrete orchestration guidance. |
-| [Handle large messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-handle-large-messages) | limits-quotas | 0.80 | Explicitly about message size limits and chunking behavior for Logic Apps, referencing different limits by resource type/environment. This is expert knowledge on size constraints and handling large payloads that an LLM would not know from training. |
 | [Handle long-running stored procedures for SQL connector](https://learn.microsoft.com/en-us/azure/logic-apps/handle-long-running-stored-procedures-sql-connector) | limits-quotas | 0.80 | Covers handling large SQL result sets and timeouts for long-running stored procedures; typically includes timeout values, pagination, and connector-specific limits. |
 | [IBM Informix](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/informix) | integrations | 0.80 | Covers IBM Informix connector, supported platforms, and connection configuration; includes product-specific connection parameters and constraints. |
 | [Microsoft Dataverse](https://learn.microsoft.com/en-us/azure/logic-apps/connectors/dataverse) | integrations | 0.80 | Dataverse connector usage with operations like create/update rows; includes connector operation names, parameters, and behavior unique to Logic Apps. |
@@ -155,6 +161,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Transform JSON](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-liquid-transform) | integrations | 0.80 | Covers Liquid templates as maps, including template usage with Logic Apps actions and supported transformation types; includes product-specific parameters and patterns. |
 | [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-diagnosing-failures) | troubleshooting | 0.80 | Focused on diagnosing workflow failures; typically includes where to find run history, inputs/outputs, and possibly diagnostic settings—symptom-to-diagnosis guidance. |
 | [Compose XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-compose) | integrations | 0.78 | Explains 'Compose XML with schema' action, including schema binding and content mapping; these are product-specific connector parameters and patterns. |
+| [Edit app and host settings](https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings) | configuration | 0.78 | The page describes specific runtime and environment settings for Standard (single-tenant) Logic Apps, including named app/host settings that act as configuration parameters and environment variables. This is product-specific configuration knowledge (what settings exist, how they behave locally vs in Azure) that goes beyond generic concepts, fitting the configuration sub-skill. |
+| [Handle large messages](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-handle-large-messages) | limits-quotas | 0.78 | The page explains how Azure Logic Apps handles large messages with chunking and references specific message size limits that vary by resource type and environment. These are concrete, product-specific limits and behaviors around large message handling that qualify as expert knowledge beyond generic concepts. |
 | [Parse XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-xml-parse) | integrations | 0.78 | Details the 'Parse XML with schema' action, XSD requirements, and how elements surface in the designer—connector-specific parameters and behavior qualify as integration patterns. |
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/logic-apps/plan-manage-costs) | decision-making | 0.78 | Cost-planning article that likely includes pricing drivers, usage metrics, and guidance on cost trade-offs between tiers and usage patterns—supports decision-making. |
 | [Transform XML](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-transform) | integrations | 0.78 | Uses 'Transform XML' action and predefined maps; includes Logic Apps–specific action configuration and map usage, which are integration patterns. |
@@ -174,6 +182,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Service
 | [Migration from Power Automate](https://learn.microsoft.com/en-us/azure/logic-apps/power-automate-migration) | decision-making | 0.75 | Analyzes benefits and capabilities gained by moving from Power Automate to Standard Logic Apps for complex, high-volume, secure workloads—explicit migration decision guidance. |
 | [Migration options and best practices](https://learn.microsoft.com/en-us/azure/logic-apps/biztalk-server-migration-approaches) | decision-making | 0.75 | Covers migration strategies, planning considerations, and best practices for BizTalk-to-Logic Apps moves, guiding technology and approach selection. |
 | [Support non-UTF-8 character encoding in logic apps](https://learn.microsoft.com/en-us/azure/logic-apps/support-non-unicode-character-encoding) | best-practices | 0.75 | Provides a concrete pattern using base64ToBinary and Azure Functions to handle non-Unicode text; product-specific workaround and encoding gotchas. |
+| [Authenticate with managed identities](https://learn.microsoft.com/en-us/azure/logic-apps/authenticate-with-managed-identity) | security | 0.74 | The page provides product-specific security configuration details for using managed identities with Azure Logic Apps (Consumption and Standard). It includes concrete guidance on how to set up and use system-assigned/user-assigned managed identities to authenticate to Microsoft Entra-protected resources, including specific property names and configuration steps unique to Logic Apps. This is implementation-focused security guidance rather than a generic conceptual overview. |
 | [AS2 MDN acknowledgments](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-as2-mdn-acknowledgment) | troubleshooting | 0.70 | Explains MDN acknowledgments, statuses, and how AS2 Decode returns MDNs; includes message status semantics and error handling specific to AS2 in Logic Apps. |
 | [Add agent actions in Foundry backed by workflows](https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-action-create-run-workflow) | integrations | 0.70 | Shows how to wire Logic Apps workflows as actions inside Microsoft Foundry agents, a concrete integration pattern unique to these products. |
 | [Add agent tools in Foundry backed by connectors](https://learn.microsoft.com/en-us/azure/logic-apps/add-agent-tools-connector-actions) | integrations | 0.70 | Explains how to expose Logic Apps connector actions as tools for agents via MCP servers. This is a product-specific integration pattern between Logic Apps and Microsoft Foundry with concrete configuration concepts. |

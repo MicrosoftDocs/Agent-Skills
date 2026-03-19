@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-19'
 category_descriptions:
   security: 'Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates,
     network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI,
@@ -49,13 +49,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 415
 - **Fetched**: 415
 - **Fetch Failed**: 0
-- **Classified**: 270
-- **Unclassified**: 145
+- **Classified**: 269
+- **Unclassified**: 146
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 415
+- **Updated Pages**: 2
+- **Unchanged**: 413
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
@@ -65,16 +65,23 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 |------|-------|------------|
 | architecture-patterns | 5 | 1.2% |
 | best-practices | 4 | 1.0% |
-| configuration | 97 | 23.4% |
+| configuration | 96 | 23.1% |
 | decision-making | 20 | 4.8% |
 | deployment | 27 | 6.5% |
 | integrations | 18 | 4.3% |
 | limits-quotas | 13 | 3.1% |
 | security | 55 | 13.3% |
 | troubleshooting | 31 | 7.5% |
-| *(Unclassified)* | 145 | 34.9% |
+| *(Unclassified)* | 146 | 35.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq)
+  - Updated: 2026-02-25T23:08:00Z → 2026-03-18T17:34:00Z
+- [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release)
+  - Updated: 2026-02-18T08:00:00.000Z → 2026-03-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -200,7 +207,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Arc-enabled servers and VMware vSphere](https://learn.microsoft.com/en-us/azure/azure-arc/servers/vmware-faq) | troubleshooting | 0.70 | FAQ content for Arc + VMware typically includes specific behaviors, unsupported scenarios, and edge-case answers (for example, how Arc-enabled servers and Arc-enabled VMware vSphere interact) that are product-specific and not just conceptual. |
 | [Automated validation testing](https://learn.microsoft.com/en-us/azure/azure-arc/data/automated-integration-testing) | configuration | 0.70 | Describes using specific validation test containers and how to run them; includes product-specific container images, parameters, and patterns for CI-style validation. |
 | [Automatic extension upgrade](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-automatic-vm-extension-upgrade) | configuration | 0.70 | Describes how to configure automatic upgrades, including supported extensions and configuration flags, which are product-specific settings and behaviors. |
-| [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release) | configuration | 0.70 | Lists available extensions and likely includes extension names, scopes, and possibly version info; these are product-specific extension configuration options. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-data-controller-direct-cli) | deployment | 0.70 | CLI-based deployment of data controller in direct connectivity mode; includes specific az arcdata commands and parameters unique to this product. |
 | [Azure Firewall Explicit proxy](https://learn.microsoft.com/en-us/azure/azure-arc/azure-firewall-explicit-proxy) | security | 0.70 | Describes configuring Azure Firewall Explicit Proxy as forward proxy for Arc traffic; likely includes specific network/security settings and URL patterns unique to this integration. |
 | [Azure Management Services](https://learn.microsoft.com/en-us/azure/azure-arc/servers/deploy-management-services) | configuration | 0.70 | Explains a workflow in the portal to enable multiple management services (Monitor, Defender, Policy, Update Manager) across Arc fleets, including service-specific configuration options. |
@@ -444,7 +450,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Enable VMware vCenter resources in Azure](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure) | 0.30 | Portal-based browsing/enabling of vCenter resources; navigation and basic enablement steps, no detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Evaluate system](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/evaluate-solution) | 0.30 | Evaluation flow for Edge RAG appears procedural/conceptual; no indication of product-specific limits, configs, or error mappings. |
 | [Evaluation metrics](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/evaluation-metrics) | 0.30 | Metrics definitions (correctness, relevancy, precision, recall) are conceptual evaluation metrics, not product-specific configs or limits. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq) | 0.30 | FAQ page; likely mixes conceptual and support info but not clearly focused on structured troubleshooting, configuration tables, or quantified limits per the categories. |
 | [Features](https://learn.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features) | 0.30 | Features and capabilities list; mostly conceptual/marketing without detailed config, limits, or troubleshooting mappings. |
 | [Guide](https://learn.microsoft.com/en-us/azure/azure-arc/data/troubleshoot-guide) | 0.30 | Introductory page that just links to troubleshooting resources; no direct error-code or diagnostic detail. |
 | [Implement CI/CD with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd) | 0.30 | CI/CD tutorial is scenario-focused; description doesn’t suggest detailed configuration matrices or limits. |
@@ -471,6 +476,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [About Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/overview) | 0.20 | High-level Azure Arc overview; no concrete limits, configs, or error details. |
 | [Agent overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-agent-overview) | 0.20 | Agent overview is conceptual; no indication of numeric limits, config tables, or error mappings. |
 | [Archive for Connected Machine agent release notes](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes-archive) | 0.20 | Archive of release notes; historical info, not configuration or troubleshooting guidance. |
+| [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release) | 0.20 | Page is primarily a catalog/list of available Azure Arc-enabled Kubernetes extensions and release notes. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It appears to be reference/navigation content rather than deep expert configuration, limits, or troubleshooting guidance. |
 | [Connect a cluster to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/quickstart-connect-cluster) | 0.20 | Quickstart for connecting a Kubernetes cluster to Azure Arc; primarily step-by-step onboarding using CLI/PowerShell without detailed configuration tables, limits, error-code mappings, or product-specific decision matrices. |
 | [Connect vCenter to Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/quick-start-connect-vcenter-to-arc-using-script) | 0.20 | This is a quickstart showing how to connect vCenter to Azure Arc using a helper script. It is primarily a step-by-step tutorial, not a reference of limits, configuration matrices, or error-code-based troubleshooting. The summary does not indicate detailed parameter tables, limits, or other expert-only reference data, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Create, use, delete, and modify an Arc site](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/how-to-crud-site) | 0.20 | CRUD operations for Arc sites via portal are step-by-step instructions without configuration parameter tables, limits, or error-code-based troubleshooting. |
@@ -500,3 +506,4 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Multi-cluster workload management with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-management) | 0.10 | Conceptual overview of workload management with GitOps in multi-cluster environments; discusses structure and processes at a high level without specific numeric thresholds, configuration values, or error-resolution guidance. |
 | [Support and feedback](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/support-feedback) | 0.10 | Support and feedback instructions; process-oriented, not technical configuration, limits, or troubleshooting content. |
 | [What's new](https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/whats-new) | 0.10 | What's new/release notes are high-level change logs; they usually lack structured limits, config matrices, or detailed troubleshooting mappings. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/faq) | - | FAQ page summary only; no evidence of detailed limits, configuration tables, error-code mappings, or other product-specific expert data per the defined categories. |
