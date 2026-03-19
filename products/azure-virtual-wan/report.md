@@ -34,6 +34,12 @@ use_when: Use when designing Virtual WAN hubs, P2S VPN, BGP/ExpressRoute, Azure 
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
   Azure Traffic Manager (use azure-traffic-manager).
+confusable_slugs:
+- azure-virtual-network
+- azure-vpn-gateway
+- azure-expressroute
+- azure-traffic-manager
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Virtual WAN Crawl Report
 

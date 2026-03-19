@@ -11,13 +11,19 @@ skill_description: Expert knowledge for Azure Network Function Manager developme
   resource groups, managed identities, role assignments, or secure NF access, and
   other Azure Network Function Manager related development tasks. Not for Azure Firewall
   Manager (use azure-firewall-manager), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+  Azure Virtual Network (use azure-virtual-network), Azure Network Watcher (use azure-network-watcher).
 use_when: Use when setting up NF Manager prerequisites, resource groups, managed identities,
   role assignments, or secure NF access, and other Azure Network Function Manager
   related development tasks.
 confusable_not_for: Not for Azure Firewall Manager (use azure-firewall-manager), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual Network
   (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+confusable_slugs:
+- azure-firewall-manager
+- azure-virtual-network-manager
+- azure-virtual-network
+- azure-network-watcher
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Network Function Manager Crawl Report
 

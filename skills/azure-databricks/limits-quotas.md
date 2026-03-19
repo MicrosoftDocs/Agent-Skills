@@ -31,7 +31,7 @@
 | Understand feature limitations of Databricks Light | https://learn.microsoft.com/en-us/azure/databricks/archive/runtime/light |
 | Collaborate as an invited Clean Rooms user | https://learn.microsoft.com/en-us/azure/databricks/clean-rooms/clean-room-collaborator |
 | Review dedicated compute requirements and limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/dedicated-limitations |
-| Serverless GPU compute limits and constraints in Databricks | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/gpu |
+| Understand limits of Databricks serverless GPU compute | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/gpu |
 | Review Databricks serverless compute limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/serverless/limitations |
 | Understand standard compute requirements and limitations | https://learn.microsoft.com/en-us/azure/databricks/compute/standard-limitations |
 | Review Azure Databricks AI/BI dashboard limits and quotas | https://learn.microsoft.com/en-us/azure/databricks/dashboards/limits |

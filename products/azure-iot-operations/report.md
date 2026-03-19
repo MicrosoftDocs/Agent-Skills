@@ -32,13 +32,19 @@ skill_description: Expert knowledge for Azure IoT Operations development includi
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when configuring MQTT broker, OPC UA/ONVIF integrations, Akri discovery, WASM
   modules, or layered OT/IT topologies, and other Azure IoT Operations related development
-  tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure
-  IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+  tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge),
+  Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 use_when: Use when configuring MQTT broker, OPC UA/ONVIF integrations, Akri discovery,
   WASM modules, or layered OT/IT topologies, and other Azure IoT Operations related
   development tasks.
 confusable_not_for: Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub),
   Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+confusable_slugs:
+- azure-iot-hub
+- azure-iot-edge
+- azure-iot-central
+- azure-defender-for-iot
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure IoT Operations Crawl Report
 

@@ -22,6 +22,12 @@ use_when: Use when setting portal security policies, RBAC dashboards, dashboard 
 confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource
   Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy
   (use azure-policy).
+confusable_slugs:
+- azure-cloud-shell
+- azure-resource-manager
+- azure-monitor
+- azure-policy
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Portal Crawl Report
 

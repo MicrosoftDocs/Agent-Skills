@@ -42,6 +42,12 @@ use_when: Use when tuning Azure PostgreSQL Flexible Server, pgvector AI apps, VN
 confusable_not_for: Not for Azure Database for MySQL (use azure-database-mysql), Azure
   Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database),
   Azure SQL Managed Instance (use azure-sql-managed-instance).
+confusable_slugs:
+- azure-database-mysql
+- azure-database-mariadb
+- azure-sql-database
+- azure-sql-managed-instance
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Database for PostgreSQL Crawl Report
 

@@ -41,6 +41,12 @@ use_when: Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONV
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure
   Container Apps (use azure-container-apps).
+confusable_slugs:
+- azure-kubernetes-service
+- azure-iot-edge
+- azure-stack-edge
+- azure-container-apps
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Kubernetes Service Edge Essentials Crawl Report
 

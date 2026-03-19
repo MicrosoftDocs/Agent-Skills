@@ -1,6 +1,6 @@
 ---
 name: azure-hpc-cache
-description: Expert knowledge for Azure HPC Cache development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring HPC Cache namespaces, NFS/Blob targets, client access, data ingest scripts, or cache failover, and other Azure HPC Cache related development tasks. Not for Azure Managed Lustre (use azure-managed-lustre), Azure NetApp Files (use azure-netapp-files), Azure Batch (use azure-batch), Azure Virtual Machines (use azure-virtual-machines).
+description: Expert knowledge for Azure HPC Cache development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring HPC Cache namespaces, NFS/Blob targets, client access, data ingest scripts, or cache failover, and other Azure HPC Cache related development tasks. Not for Azure Managed Lustre (use azure-managed-lustre), Azure NetApp Files (use azure-netapp-files), Azure Batch (use azure-batch).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

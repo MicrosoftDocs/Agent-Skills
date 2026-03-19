@@ -24,7 +24,7 @@ skill_description: Expert knowledge for Azure Network Watcher development includ
   integrations & coding patterns. Use when configuring Connection Monitor, NSG/VNet
   flow logs, Traffic Analytics/KQL, packet capture, or Sentinel integration, and other
   Azure Network Watcher related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Networking (use azure-networking), Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network (use azure-virtual-network), Azure Networking (use azure-networking),
   Azure Virtual Network Manager (use azure-virtual-network-manager).
 use_when: Use when configuring Connection Monitor, NSG/VNet flow logs, Traffic Analytics/KQL,
   packet capture, or Sentinel integration, and other Azure Network Watcher related
@@ -32,6 +32,12 @@ use_when: Use when configuring Connection Monitor, NSG/VNet flow logs, Traffic A
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking (use
   azure-networking), Azure Virtual Network (use azure-virtual-network), Azure Virtual
   Network Manager (use azure-virtual-network-manager).
+confusable_slugs:
+- azure-monitor
+- azure-virtual-network
+- azure-networking
+- azure-virtual-network-manager
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Network Watcher Crawl Report
 
@@ -44,9 +50,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 62
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
@@ -63,10 +69,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | *(Unclassified)* | 33 | 52.4% |
 
 ## Changes
-
-### New Pages
-
-- [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel)
 
 ## Classified Pages
 

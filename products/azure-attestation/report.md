@@ -20,13 +20,19 @@ skill_description: Expert knowledge for Azure Attestation development including 
   tokens, authoring SGX/TPM policies, configuring policy signers, or securing endpoints,
   and other Azure Attestation related development tasks. Not for Azure Confidential
   Computing (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves),
-  Azure Key Vault (use azure-key-vault), Azure Security (use azure-security).
+  Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault).
 use_when: Use when validating attestation tokens, authoring SGX/TPM policies, configuring
   policy signers, or securing endpoints, and other Azure Attestation related development
   tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
   Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
   Azure Security (use azure-security).
+confusable_slugs:
+- azure-confidential-computing
+- azure-virtual-enclaves
+- azure-dedicated-hsm
+- azure-key-vault
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Attestation Crawl Report
 

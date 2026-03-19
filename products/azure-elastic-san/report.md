@@ -29,14 +29,20 @@ skill_description: Expert knowledge for Azure Elastic SAN development including 
   security, configuration, and integrations & coding patterns. Use when sizing Elastic
   SAN, scripting iSCSI volumes, integrating with AKS/AVS, using CMK encryption, or
   tuning IOPS, and other Azure Elastic SAN related development tasks. Not for Azure
-  Blob Storage (use azure-blob-storage), Azure NetApp Files (use azure-netapp-files),
-  Azure Managed Lustre (use azure-managed-lustre), Azure Container Storage (use azure-container-storage).
+  Blob Storage (use azure-blob-storage), Azure Files (use azure-files), Azure NetApp
+  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
 use_when: Use when sizing Elastic SAN, scripting iSCSI volumes, integrating with AKS/AVS,
   using CMK encryption, or tuning IOPS, and other Azure Elastic SAN related development
   tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
   Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
   Azure Container Storage (use azure-container-storage).
+confusable_slugs:
+- azure-blob-storage
+- azure-files
+- azure-netapp-files
+- azure-managed-lustre
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Elastic SAN Crawl Report
 

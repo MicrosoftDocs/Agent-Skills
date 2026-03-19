@@ -31,12 +31,19 @@ skill_description: Expert knowledge for Azure SignalR Service development includ
   Use when choosing SignalR mode, configuring upstreams/custom domains, securing with
   Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
   related development tasks. Not for Azure Web PubSub (use azure-web-pubsub), Azure
-  Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+  Notification Hubs (use azure-notification-hubs), Azure Service Bus (use azure-service-bus),
+  Azure Event Hubs (use azure-event-hubs).
 use_when: Use when choosing SignalR mode, configuring upstreams/custom domains, securing
   with Entra ID/MI, scaling/sharding, or tracing issues, and other Azure SignalR Service
   related development tasks.
 confusable_not_for: Not for Azure Web PubSub (use azure-web-pubsub), Azure Service
   Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs).
+confusable_slugs:
+- azure-web-pubsub
+- azure-notification-hubs
+- azure-service-bus
+- azure-event-hubs
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure SignalR Service Crawl Report
 

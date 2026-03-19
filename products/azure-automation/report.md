@@ -31,13 +31,19 @@ skill_description: Expert knowledge for Azure Automation development including t
   Hybrid Runbook Workers, Change Tracking, CI/CD, or cross-cloud integrations, and
   other Azure Automation related development tasks. Not for Azure Functions (use azure-functions),
   Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler),
-  Azure Update Manager (use azure-update-manager).
+  Azure DevOps (use azure-devops).
 use_when: Use when building Azure Automation runbooks/DSC, Hybrid Runbook Workers,
   Change Tracking, CI/CD, or cross-cloud integrations, and other Azure Automation
   related development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
   (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager
   (use azure-update-manager).
+confusable_slugs:
+- azure-functions
+- azure-logic-apps
+- azure-scheduler
+- azure-devops
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Automation Crawl Report
 

@@ -1,6 +1,6 @@
 ---
 name: azure-copilot
-description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when sizing VMs, generating Bicep/Terraform, configuring Cosmos DB storage, or debugging App Service/VM disks, and other Azure Copilot related development tasks. Not for Azure AI services (use azure-ai-services), Azure Machine Learning (use azure-machine-learning), Azure AI Search (use azure-cognitive-search), Azure AI Bot Service (use azure-bot-service).
+description: Expert knowledge for Azure Copilot development including troubleshooting, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when sizing VMs, generating Bicep/Terraform, configuring Cosmos DB storage, or debugging App Service/VM disks, and other Azure Copilot related development tasks. Not for Azure Portal (use azure-portal), Azure Machine Learning (use azure-machine-learning), Azure DevOps (use azure-devops), Azure Monitor (use azure-monitor).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

@@ -26,6 +26,12 @@ use_when: Use when configuring CMK-encrypted Elastic SAN volumes, ACS pools, LRS
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure Files
   (use azure-files), Azure Elastic SAN (use azure-elastic-san), Azure NetApp Files
   (use azure-netapp-files).
+confusable_slugs:
+- azure-blob-storage
+- azure-files
+- azure-elastic-san
+- azure-netapp-files
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Container Storage Crawl Report
 

@@ -19,6 +19,11 @@ use_when: Use when setting CMK via Key Vault, validating drive/OS support, or de
   tasks.
 confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Blob
   Storage (use azure-blob-storage), Azure Files (use azure-files).
+confusable_slugs:
+- azure-data-box-family
+- azure-blob-storage
+- azure-files
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Import Export Crawl Report
 

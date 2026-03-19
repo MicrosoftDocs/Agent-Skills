@@ -39,6 +39,12 @@ use_when: Use when using ACR Tasks, geo-replication/connected registries, Defend
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
   Container Instances (use azure-container-instances), Azure Kubernetes Service (AKS)
   (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
+confusable_slugs:
+- azure-container-apps
+- azure-container-instances
+- azure-kubernetes-service
+- azure-redhat-openshift
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Container Registry Crawl Report
 

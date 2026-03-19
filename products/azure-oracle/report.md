@@ -25,6 +25,12 @@ use_when: Use when configuring Oracle Database@Azure connectivity, TDE with Key 
 confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure SQL
   Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines
   (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+confusable_slugs:
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sap
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Oracle Crawl Report
 

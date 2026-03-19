@@ -33,12 +33,19 @@ skill_description: Expert knowledge for Azure Virtual Desktop development includ
   Use when working with FSLogix profiles, MSIX/App Attach, autoscale/Start VM on Connect,
   Teams optimization, or SSO/MFA, and other Azure Virtual Desktop related development
   tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box
-  (use azure-dev-box).
+  (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data
+  Science Virtual Machines (use azure-data-science-vm).
 use_when: Use when working with FSLogix profiles, MSIX/App Attach, autoscale/Start
   VM on Connect, Teams optimization, or SSO/MFA, and other Azure Virtual Desktop related
   development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
   Dev Box (use azure-dev-box).
+confusable_slugs:
+- azure-virtual-machines
+- azure-dev-box
+- azure-vmware-solution
+- azure-data-science-vm
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Virtual Desktop Crawl Report
 

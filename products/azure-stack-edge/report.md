@@ -36,6 +36,12 @@ use_when: Use when running IoT Edge or GPU/Kubernetes apps, configuring VMs/stor
 confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
   Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Virtual Machines (use azure-virtual-machines).
+confusable_slugs:
+- azure-data-box-family
+- azure-iot-edge
+- azure-kubernetes-service
+- azure-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Stack Edge Crawl Report
 

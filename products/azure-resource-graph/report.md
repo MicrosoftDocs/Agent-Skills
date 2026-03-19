@@ -30,6 +30,12 @@ use_when: Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query, ha
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy),
   Azure Resource Manager (use azure-resource-manager), Azure Cost Management (use
   azure-cost-management).
+confusable_slugs:
+- azure-monitor
+- azure-policy
+- azure-resource-manager
+- azure-cost-management
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Resource Graph Crawl Report
 

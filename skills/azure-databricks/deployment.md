@@ -17,7 +17,7 @@
 | Set up Azure DevOps CI/CD pipelines for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/azure-devops |
 | Use GitHub Actions for Azure Databricks CI/CD | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/github |
 | Prepare workspace and local environment for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/configure-env |
-| Deploy Databricks Apps via UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
+| Deploy Databricks apps via UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
 | Manage Azure Databricks with the Terraform provider | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/ |
 | Deploy an Azure Databricks workspace using Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/azure-workspace |
 | Use Declarative Automation Bundles with Databricks VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles |

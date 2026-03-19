@@ -41,6 +41,12 @@ use_when: Use when building HTTP/queue/event-driven Functions, Durable orchestra
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Logic
   Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure
   Kubernetes Service (AKS) (use azure-kubernetes-service).
+confusable_slugs:
+- azure-app-service
+- azure-logic-apps
+- azure-container-apps
+- azure-kubernetes-service
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Functions Crawl Report
 

@@ -23,12 +23,19 @@ skill_description: Expert knowledge for Azure Artifacts development including be
   & coding patterns, and deployment. Use when managing feeds, upstream sources, package
   publishing/restore, GitHub Actions CI/CD, or npm/NuGet config, and other Azure Artifacts
   related development tasks. Not for Azure DevOps (use azure-devops), Azure Pipelines
-  (use azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+  (use azure-pipelines), Azure Repos (use azure-repos), Azure Artifact Signing (use
+  azure-artifact-signing).
 use_when: Use when managing feeds, upstream sources, package publishing/restore, GitHub
   Actions CI/CD, or npm/NuGet config, and other Azure Artifacts related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (use
   azure-pipelines), Azure Repos (use azure-repos), Azure Boards (use azure-boards).
+confusable_slugs:
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-artifact-signing
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Artifacts Crawl Report
 

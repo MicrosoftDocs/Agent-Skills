@@ -13,13 +13,19 @@ skill_description: Expert knowledge for Azure Cloud Shell development including 
   limits, private VNet access, or secure private endpoints, and other Azure Cloud
   Shell related development tasks. Not for Azure Portal (use azure-portal), Azure
   Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use
-  azure-kubernetes-service), Azure Functions (use azure-functions).
+  azure-kubernetes-service), Azure App Service (use azure-app-service).
 use_when: Use when handling Cloud Shell storage mounts, session limits, private VNet
   access, or secure private endpoints, and other Azure Cloud Shell related development
   tasks.
 confusable_not_for: Not for Azure Portal (use azure-portal), Azure Virtual Machines
   (use azure-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Functions (use azure-functions).
+confusable_slugs:
+- azure-portal
+- azure-virtual-machines
+- azure-kubernetes-service
+- azure-app-service
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Cloud Shell Crawl Report
 

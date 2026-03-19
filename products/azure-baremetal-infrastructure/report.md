@@ -11,14 +11,20 @@ skill_description: Expert knowledge for Azure Baremetal Infrastructure developme
   NC2 regions/SKUs, planning BareMetal topologies, or integrating NC2 with Azure networking/services,
   and other Azure Baremetal Infrastructure related development tasks. Not for Azure
   Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SAP HANA on Azure Large
-  Instances (use azure-sap).
+  Azure VMware Solution (use azure-vmware-solution), SAP HANA on Azure Large Instances
+  (use azure-sap).
 use_when: Use when choosing NC2 regions/SKUs, planning BareMetal topologies, or integrating
   NC2 with Azure networking/services, and other Azure Baremetal Infrastructure related
   development tasks.
 confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
   Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets
   (use azure-vm-scalesets), SAP HANA on Azure Large Instances (use azure-sap).
+confusable_slugs:
+- azure-large-instances
+- azure-virtual-machines
+- azure-vmware-solution
+- azure-sap
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Baremetal Infrastructure Crawl Report
 

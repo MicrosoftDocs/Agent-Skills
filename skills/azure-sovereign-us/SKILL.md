@@ -1,6 +1,6 @@
 ---
 name: azure-sovereign-us
-description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when handling FedRAMP/DoD IL5 scope, SACA patterns, Gov CI/CD, Gov Marketplace, or sovereign APIs, and other Azure US Government related development tasks. Not for Azure Local (use azure-local), Azure Arc (use azure-arc), Azure Networking (use azure-networking), Azure Security (use azure-security).
+description: Expert knowledge for Azure US Government development including decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when handling FedRAMP/DoD IL5 scope, SACA patterns, Gov CI/CD, Gov Marketplace, or sovereign APIs, and other Azure US Government related development tasks. Not for Azure Local (use azure-local), Azure Industry (use azure-industry), Azure Networking (use azure-networking), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-16"

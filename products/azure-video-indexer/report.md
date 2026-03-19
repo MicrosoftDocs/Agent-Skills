@@ -31,12 +31,20 @@ skill_description: Expert knowledge for Azure AI Video Indexer development inclu
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when using Video Indexer APIs/widgets, live camera indexing, custom speech/brand
   models, or Azure OpenAI integrations, and other Azure AI Video Indexer related development
-  tasks. Not for Azure AI services (use azure-ai-services), Azure AI Vision (use azure-ai-vision).
+  tasks. Not for Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use
+  azure-custom-vision), Azure AI Immersive Reader (use azure-immersive-reader), Azure
+  AI Speech (use azure-speech).
 use_when: Use when using Video Indexer APIs/widgets, live camera indexing, custom
   speech/brand models, or Azure OpenAI integrations, and other Azure AI Video Indexer
   related development tasks.
 confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Vision
   (use azure-ai-vision).
+confusable_slugs:
+- azure-ai-vision
+- azure-custom-vision
+- azure-immersive-reader
+- azure-speech
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Video Indexer Crawl Report
 

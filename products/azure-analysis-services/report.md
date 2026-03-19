@@ -16,6 +16,12 @@ use_when: Use when testing server connections, debugging gateway or firewall blo
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+confusable_slugs:
+- azure-synapse-analytics
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Analysis Services Crawl Report
 

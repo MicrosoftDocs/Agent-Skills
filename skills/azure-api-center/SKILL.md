@@ -1,6 +1,6 @@
 ---
 name: azure-api-center
-description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when automating API linting/registration, customizing the portal, syncing with API gateways, or enforcing design-time governance, and other Azure Api Center related development tasks. Not for Azure API Management (use azure-api-management), Azure App Configuration (use azure-app-configuration), Azure Service Connector (use azure-service-connector).
+description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when automating API linting/registration, customizing the portal, syncing with API gateways, or enforcing design-time governance, and other Azure Api Center related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-03-17"

@@ -30,14 +30,20 @@ skill_description: Expert knowledge for Azure Load Balancer development includin
   Use when configuring frontends/backends, health probes, SNAT/outbound, IMDS/metrics
   APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
-  Azure NAT Gateway (use azure-nat-gateway).
+  Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
+  Azure Virtual Network (use azure-virtual-network).
 use_when: Use when configuring frontends/backends, health probes, SNAT/outbound, IMDS/metrics
   APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
   tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
   Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
   Azure NAT Gateway (use azure-nat-gateway).
+confusable_slugs:
+- azure-application-gateway
+- azure-traffic-manager
+- azure-front-door
+- azure-virtual-network
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Load Balancer Crawl Report
 

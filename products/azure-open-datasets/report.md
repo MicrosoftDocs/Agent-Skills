@@ -8,14 +8,20 @@ skill_description: Expert knowledge for Azure Open Datasets development includin
   limits & quotas. Use when handling non-Spark dataset downloads, throttling behavior,
   quota limits, retry logic, or rate-limit workarounds, and other Azure Open Datasets
   related development tasks. Not for Azure Data Explorer (use azure-data-explorer),
-  Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
-  Azure Machine Learning (use azure-machine-learning).
+  Azure Synapse Analytics (use azure-synapse-analytics), Azure Machine Learning (use
+  azure-machine-learning), Azure Databricks (use azure-databricks).
 use_when: Use when handling non-Spark dataset downloads, throttling behavior, quota
   limits, retry logic, or rate-limit workarounds, and other Azure Open Datasets related
   development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks),
   Azure Machine Learning (use azure-machine-learning).
+confusable_slugs:
+- azure-data-explorer
+- azure-synapse-analytics
+- azure-machine-learning
+- azure-databricks
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Open Datasets Crawl Report
 

@@ -35,13 +35,19 @@ skill_description: Expert knowledge for Azure Cosmos DB development including tr
   global distribution, or HTAP workloads, and other Azure Cosmos DB related development
   tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
-  Azure Blob Storage (use azure-blob-storage).
+  Azure Data Explorer (use azure-data-explorer).
 use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed,
   vector search, global distribution, or HTAP workloads, and other Azure Cosmos DB
   related development tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
   Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   Azure Blob Storage (use azure-blob-storage).
+confusable_slugs:
+- azure-table-storage
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-data-explorer
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Cosmos DB Crawl Report
 

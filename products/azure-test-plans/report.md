@@ -13,13 +13,17 @@ skill_description: Expert knowledge for Azure Test Plans development including l
   & quotas, security, and integrations & coding patterns. Use when configuring test
   result custom fields, managing access and roles, or automating suites via tcm.exe,
   and other Azure Test Plans related development tasks. Not for Azure DevOps (use
-  azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines),
-  Azure App Testing (use azure-app-testing).
+  azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines).
 use_when: Use when configuring test result custom fields, managing access and roles,
   or automating suites via tcm.exe, and other Azure Test Plans related development
   tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
+confusable_slugs:
+- azure-devops
+- azure-boards
+- azure-pipelines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Test Plans Crawl Report
 

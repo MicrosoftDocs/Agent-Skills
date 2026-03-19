@@ -20,15 +20,21 @@ skill_description: Expert knowledge for Azure AI Vision development including de
   making, limits & quotas, configuration, integrations & coding patterns, and deployment.
   Use when using Image Analysis, Read OCR containers, Blob Storage image access, smart-crop
   thumbnails, or video frame analysis, and other Azure AI Vision related development
-  tasks. Not for Azure AI services (use azure-ai-services), Azure AI Custom Vision
-  (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer), Azure
-  AI Document Intelligence (use azure-document-intelligence).
+  tasks. Not for Azure AI Custom Vision (use azure-custom-vision), Azure AI Video
+  Indexer (use azure-video-indexer), Azure AI Document Intelligence (use azure-document-intelligence),
+  Azure AI Immersive Reader (use azure-immersive-reader).
 use_when: Use when using Image Analysis, Read OCR containers, Blob Storage image access,
   smart-crop thumbnails, or video frame analysis, and other Azure AI Vision related
   development tasks.
 confusable_not_for: Not for Azure AI services (use azure-ai-services), Azure AI Custom
   Vision (use azure-custom-vision), Azure AI Video Indexer (use azure-video-indexer),
   Azure AI Document Intelligence (use azure-document-intelligence).
+confusable_slugs:
+- azure-custom-vision
+- azure-video-indexer
+- azure-document-intelligence
+- azure-immersive-reader
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure AI Vision Crawl Report
 

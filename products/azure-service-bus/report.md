@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
-  security: Securing Service Bus with auth (Entra ID, SAS, managed identities), encryption,
-    TLS, network isolation (VNet, Private Link, firewalls), and compliance/policy
-    configuration.
+  security: 'Securing Service Bus: auth with Entra ID/managed identities/SAS, encryption
+    & CMK, TLS settings, network isolation (VNet, Private Link, firewalls), and policy/compliance
+    configuration.'
   deployment: 'Deploying and scaling Service Bus: autoscaling Premium messaging units
     and creating/moving namespaces, queues, topics, subscriptions, and rules using
     ARM templates or Bicep.'
@@ -31,16 +31,21 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Bus development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using queues/topics, sessions, filters/rules, Premium scaling, geo-DR, or VNet/Private
-  Link isolation, and other Azure Service Bus related development tasks. Not for Azure
-  Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Notification
-  Hubs (use azure-notification-hubs), Azure Queue Storage (use azure-queue-storage).
-use_when: Use when using queues/topics, sessions, filters/rules, Premium scaling,
-  geo-DR, or VNet/Private Link isolation, and other Azure Service Bus related development
-  tasks.
+  using queues/topics, sessions and filters, Premium scaling, geo-recovery, or JMS/AMQP
+  integrations, and other Azure Service Bus related development tasks. Not for Azure
+  Event Hubs (use azure-event-hubs), Azure Relay (use azure-relay), Azure Queue Storage
+  (use azure-queue-storage), Azure Notification Hubs (use azure-notification-hubs).
+use_when: Use when using queues/topics, sessions and filters, Premium scaling, geo-recovery,
+  or JMS/AMQP integrations, and other Azure Service Bus related development tasks.
 confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay (use
   azure-relay), Azure Notification Hubs (use azure-notification-hubs), Azure Queue
   Storage (use azure-queue-storage).
+confusable_slugs:
+- azure-event-hubs
+- azure-relay
+- azure-queue-storage
+- azure-notification-hubs
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Service Bus Crawl Report
 
@@ -54,8 +59,8 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 122
+- **Updated Pages**: 1
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -76,6 +81,11 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 
 ## Changes
 
+### Updated Pages
+
+- [Authenticate with managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity)
+  - Updated: 2025-02-11T23:03:00.000Z → 2026-03-18T06:15:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -92,7 +102,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-ip-filtering) | security | 0.80 | Contains specific firewall rule properties, allowed value formats (IPv4, CIDR), and behavior when rules are applied, which are security settings. |
 | [Allow access from specific virtual networks](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints) | security | 0.80 | Explains how to bind namespaces to VNet subnets with service endpoints, including specific configuration properties and access behavior. |
 | [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/service-bus-messaging/private-link-service) | security | 0.80 | Provides concrete steps and settings for creating private endpoints and configuring Private Link for Service Bus, which are security/network configurations. |
-| [Authenticate with managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity) | security | 0.80 | Provides step-by-step configuration for managed identities with Service Bus, including role assignments and identity usage details. |
 | [Authentication and authorization](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-authentication-and-authorization) | security | 0.80 | Explains concrete mechanisms (SAS vs Entra ID), likely including RBAC roles, scopes, and key management practices specific to Service Bus. |
 | [Authentication with Shared Access Signatures](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-sas) | security | 0.80 | Details SAS rule structure, rights, and token usage specific to Service Bus, including key-based authorization patterns. |
 | [Compare messaging services](https://learn.microsoft.com/en-us/azure/service-bus-messaging/compare-messaging-services) | decision-making | 0.80 | Explicitly compares Azure messaging services and recommends which to use for scenarios; likely includes comparison tables and decision criteria. |
@@ -106,6 +115,7 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Relay
 | [Subscription Rule SQL action syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-rule-action) | configuration | 0.80 | Reference for SQL action expressions with exact syntax and capabilities, which are product-specific configuration rules. |
 | [Subscription Rule SQL filter syntax](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter) | configuration | 0.80 | Provides full grammar and allowed expressions for SQL filters, including property names and operators specific to Service Bus. |
 | [Throttling](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-throttling) | limits-quotas | 0.80 | Throttling documentation typically includes concrete throughput limits, request caps, and tier-specific behaviors that are numeric and service-specific. |
+| [Authenticate with managed identities for Azure resources](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-managed-service-identity) | security | 0.78 | The page gives product-specific security configuration details: how to enable managed identity for a resource, which Azure Service Bus RBAC roles to assign, and how to configure application code to use that identity. It includes concrete role names and identity usage patterns that are specific to Azure Service Bus and not just conceptual guidance. |
 | [AMQP request-response-based operations](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-request-response) | configuration | 0.75 | Defines the list of AMQP management operations supported by Service Bus, including operation names and parameters—effectively a configuration/operations reference. |
 | [Compare Azure Queues and Service Bus queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted) | decision-making | 0.75 | Explicit comparison of two queue technologies to guide selection; likely includes feature and behavior differences relevant to design decisions. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/service-bus-messaging/confidential-computing) | security | 0.75 | Explains how to enable confidential computing on Premium namespaces and its security implications—service-specific security configuration. |

@@ -33,12 +33,18 @@ skill_description: Expert knowledge for Azure IoT Central development including 
   designing device templates, data export, IoT Edge gateways, REST/CLI automation,
   or device bridge pipelines, and other Azure IoT Central related development tasks.
   Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge),
-  Azure IoT (use azure-iot), Azure Digital Twins (use azure-digital-twins).
+  Azure IoT (use azure-iot), Azure Defender For Iot (use azure-defender-for-iot).
 use_when: Use when designing device templates, data export, IoT Edge gateways, REST/CLI
   automation, or device bridge pipelines, and other Azure IoT Central related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
   azure-iot-edge), Azure IoT (use azure-iot), Azure Digital Twins (use azure-digital-twins).
+confusable_slugs:
+- azure-iot-hub
+- azure-iot-edge
+- azure-iot
+- azure-defender-for-iot
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure IoT Central Crawl Report
 

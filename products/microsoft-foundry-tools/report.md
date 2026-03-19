@@ -24,21 +24,28 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing common Content Understanding issues, including
     model errors, data ingestion problems, configuration mistakes, and troubleshooting
     steps for failed analyses.
-skill_description: Expert knowledge for Azure AI services development including troubleshooting,
-  best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Azure AI Foundry, Content Understanding,
-  Content Moderator APIs, containers, or custom analyzers, and other Azure AI services
-  related development tasks. Not for Azure Machine Learning (use azure-machine-learning),
-  Azure AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech),
-  Azure AI Language (use azure-language-service).
+skill_description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services,
+  Azure Cognitive Services) development including troubleshooting, best practices,
+  decision making, limits & quotas, security, configuration, integrations & coding
+  patterns, and deployment. Use when using Azure AI Foundry, Content Understanding,
+  Content Moderator APIs, containers, or custom analyzers, and other Microsoft Foundry
+  Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
+  Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local
+  (use microsoft-foundry-local), Azure Machine Learning (use azure-machine-learning).
 use_when: Use when using Azure AI Foundry, Content Understanding, Content Moderator
   APIs, containers, or custom analyzers, and other Azure AI services related development
   tasks.
 confusable_not_for: Not for Azure Machine Learning (use azure-machine-learning), Azure
   AI Search (use azure-cognitive-search), Azure AI Speech (use azure-speech), Azure
   AI Language (use azure-language-service).
+confusable_slugs:
+- microsoft-foundry
+- microsoft-foundry-classic
+- microsoft-foundry-local
+- azure-machine-learning
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
-# Azure AI services Crawl Report
+# Microsoft Foundry Tools Crawl Report
 
 ## Summary
 
@@ -50,10 +57,10 @@ confusable_not_for: Not for Azure Machine Learning (use azure-machine-learning),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 83
+- **Updated Pages**: 0
+- **Unchanged**: 84
 - **Deleted Pages**: 0
-- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ai-services/azure-ai-services.csv`
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/azure-ai-services.csv`
 
 ## Classification Statistics
 
@@ -70,11 +77,6 @@ confusable_not_for: Not for Azure Machine Learning (use azure-machine-learning),
 | *(Unclassified)* | 33 | 39.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Foundry model deployments](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-03-17T06:03:00.000Z
 
 ## Classified Pages
 

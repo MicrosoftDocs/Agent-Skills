@@ -33,13 +33,18 @@ skill_description: Expert knowledge for Azure HPC Cache development including tr
   configuring HPC Cache namespaces, NFS/Blob targets, client access, data ingest scripts,
   or cache failover, and other Azure HPC Cache related development tasks. Not for
   Azure Managed Lustre (use azure-managed-lustre), Azure NetApp Files (use azure-netapp-files),
-  Azure Batch (use azure-batch), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Batch (use azure-batch).
 use_when: Use when configuring HPC Cache namespaces, NFS/Blob targets, client access,
   data ingest scripts, or cache failover, and other Azure HPC Cache related development
   tasks.
 confusable_not_for: Not for Azure Managed Lustre (use azure-managed-lustre), Azure
   NetApp Files (use azure-netapp-files), Azure Batch (use azure-batch), Azure Virtual
   Machines (use azure-virtual-machines).
+confusable_slugs:
+- azure-managed-lustre
+- azure-netapp-files
+- azure-batch
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure HPC Cache Crawl Report
 

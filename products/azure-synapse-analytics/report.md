@@ -34,13 +34,19 @@ skill_description: Expert knowledge for Azure Synapse Analytics development incl
   Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics related
   development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data
   Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics).
+  HDInsight (use azure-hdinsight).
 use_when: Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL,
   Synapse Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics
   related development tasks.
 confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
   Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
   Stream Analytics (use azure-stream-analytics).
+confusable_slugs:
+- azure-data-factory
+- azure-data-explorer
+- azure-databricks
+- azure-hdinsight
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Synapse Analytics Crawl Report
 

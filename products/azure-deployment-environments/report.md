@@ -26,15 +26,21 @@ skill_description: Expert knowledge for Azure Deployment Environments developmen
   integrations & coding patterns, and deployment. Use when designing ADE catalogs,
   environment.yaml schemas, custom images, RBAC/roles, or CI/CD image pipelines, and
   other Azure Deployment Environments related development tasks. Not for Azure DevTest
-  Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Integration
-  Environments (use azure-integration-environments), Azure Managed Applications (use
-  azure-managed-applications).
+  Labs (use azure-devtest-labs), Azure Dev Box (use azure-dev-box), Azure Managed
+  Applications (use azure-managed-applications), Azure Integration Environments (use
+  azure-integration-environments).
 use_when: Use when designing ADE catalogs, environment.yaml schemas, custom images,
   RBAC/roles, or CI/CD image pipelines, and other Azure Deployment Environments related
   development tasks.
 confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure Dev
   Box (use azure-dev-box), Azure Integration Environments (use azure-integration-environments),
   Azure Managed Applications (use azure-managed-applications).
+confusable_slugs:
+- azure-devtest-labs
+- azure-dev-box
+- azure-managed-applications
+- azure-integration-environments
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Deployment Environments Crawl Report
 

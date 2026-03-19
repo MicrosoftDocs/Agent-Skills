@@ -1,6 +1,6 @@
 ---
 name: azure-spring-apps
-description: Expert knowledge for Azure Spring Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ASA networking/security, Tanzu tools, observability/APM, CI/CD deployments, or blue‑green releases, and other Azure Spring Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use azure-functions).
+description: Expert knowledge for Azure Spring Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ASA networking/security, Tanzu tools, observability/APM, CI/CD deployments, or blue‑green releases, and other Azure Spring Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift (use azure-redhat-openshift).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

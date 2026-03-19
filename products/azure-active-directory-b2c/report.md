@@ -34,7 +34,7 @@ skill_description: Expert knowledge for Azure Active Directory B2C development i
   Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API registration,
   CI/CD deployment, or logging, and other Azure Active Directory B2C related development
   tasks. Not for Azure Information Protection (use azure-information-protection),
-  Azure Security (use azure-security), Azure Role-based access control (use azure-rbac),
+  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
   Azure Sentinel (use azure-sentinel).
 use_when: Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API
   registration, CI/CD deployment, or logging, and other Azure Active Directory B2C
@@ -42,6 +42,12 @@ use_when: Use when designing B2C user flows/custom policies, MFA/IdP sign-in, ap
 confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
   Azure Security (use azure-security), Azure Role-based access control (use azure-rbac),
   Azure Sentinel (use azure-sentinel).
+confusable_slugs:
+- azure-information-protection
+- azure-rbac
+- azure-security
+- azure-sentinel
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Active Directory B2C Crawl Report
 

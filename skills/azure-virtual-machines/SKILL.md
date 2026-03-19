@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using VM scale sets, Trusted Launch, ADE/CMK disk encryption, GPU/HPC SKUs, or Oracle workloads, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM SKUs, configuring disks/GPU/InfiniBand, using Trusted Launch/ADE, or automating VM lifecycle, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Cloud Services (use azure-cloud-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-18"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|----------|-------------|
 | Troubleshooting | L37-L61 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
 | Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
-| Decision Making | L89-L149 | Guides for choosing VM/disk options, estimating and controlling costs, handling image/size retirements, and planning migrations (Linux, Oracle, GPU, RHEL, CentOS, Ubuntu, Dedicated Host). |
-| Architecture & Design Patterns | L150-L168 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L169-L375 | VM size specs, disk performance/limits, quotas, lifecycle/support, and performance benchmarks for Azure VMs, including GPU/HPC, confidential, storage-optimized, and OS/disk behaviors. |
-| Security | L376-L453 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image sharing, and TLS cert integration. |
+| Decision Making | L89-L150 | Guidance for choosing VM sizes, images, disks, costs, and licensing, plus planning migrations, retirements, backups/DR, and Oracle/Linux/WebLogic scenarios on Azure VMs |
+| Architecture & Design Patterns | L151-L169 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
+| Limits & Quotas | L170-L376 | VM size specs, disk performance/limits, quotas, lifecycle/support, and performance benchmarks for Azure VMs, including GPU/HPC, confidential, storage-optimized, and OS/disk behaviors. |
+| Security | L377-L454 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image sharing, and TLS cert integration. |
 | Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: images, disks, GPU/InfiniBand, agents/extensions, monitoring/telemetry, maintenance, SSH/WinRM, Oracle workloads, and restore/backup settings. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
@@ -117,7 +117,7 @@ This skill requires **network access** to fetch documentation content:
 | Migrate from NC24rs_v3 before retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/ncv3-nc24rs-retirement |
 | Plan NCv3-series GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/ncv3-retirement |
 | Plan backup and DR for unmanaged Azure VM disks | https://learn.microsoft.com/en-us/azure/virtual-machines/page-blobs-backup-and-disaster-recovery |
-| Choose and understand Reserved VM size flexibility options | https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility |
+| Choose and configure Azure Reserved VM size flexibility | https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility |
 | Plan migration from retiring NVv3 GPU VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series-retirement |
 | Handle NVv4 GPU VM retirement and migration | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-retirement |
 | Review previous-generation Azure VM size series | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/previous-gen-sizes-list |
@@ -127,6 +127,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan migration for ND-series GPU VM retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/nd-series-retirement |
 | Understand Azure NV series retirement timeline | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/nv-series-retirement |
 | Review retired Azure VM series and replacements | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/retired-sizes-list |
+| Decide when and how to use Azure Spot VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms |
 | Plan migration before Azure unmanaged disk retirement | https://learn.microsoft.com/en-us/azure/virtual-machines/unmanaged-disks-deprecation |
 | Use Azure VM restore points for granular recovery | https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-create-restore-points |
 | Analyze Azure VM usage data for cost and consumption insights | https://learn.microsoft.com/en-us/azure/virtual-machines/vm-usage |

@@ -12,6 +12,8 @@ skill_description: Expert knowledge for Azure Education Hub development includin
 use_when: Use when managing Azure for Students credits, yearly quotas, renewals, or
   Dev Tools for Teaching sign-in issues, and other Azure Education Hub related development
   tasks.
+confusable_slugs: []
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Education Hub Crawl Report
 

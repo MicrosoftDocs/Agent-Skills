@@ -25,6 +25,11 @@ use_when: Use when sizing HSM clusters, configuring VNets/ExpressRoute, planning
   related development tasks.
 confusable_not_for: Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Key Vault
   (use azure-key-vault), Azure Payment Hsm (use azure-payment-hsm).
+confusable_slugs:
+- azure-cloud-hsm
+- azure-key-vault
+- azure-payment-hsm
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Dedicated HSM Crawl Report
 

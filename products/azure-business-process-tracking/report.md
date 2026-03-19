@@ -7,14 +7,20 @@ skill_description: Expert knowledge for Azure Business Process Tracking developm
   including deployment. Use when creating CI/CD pipelines, automating builds, running
   tests, and deploying tracking solutions via DevOps tools, and other Azure Business
   Process Tracking related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Logic Apps (use azure-logic-apps), Azure Data Factory (use azure-data-factory),
-  Azure Machine Learning (use azure-machine-learning).
+  Azure Application Gateway (use azure-application-gateway), Azure Logic Apps (use
+  azure-logic-apps), Azure Functions (use azure-functions).
 use_when: Use when creating CI/CD pipelines, automating builds, running tests, and
   deploying tracking solutions via DevOps tools, and other Azure Business Process
   Tracking related development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Logic Apps (use
   azure-logic-apps), Azure Data Factory (use azure-data-factory), Azure Machine Learning
   (use azure-machine-learning).
+confusable_slugs:
+- azure-monitor
+- azure-application-gateway
+- azure-logic-apps
+- azure-functions
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Business Process Tracking Crawl Report
 

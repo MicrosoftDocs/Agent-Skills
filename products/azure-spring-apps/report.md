@@ -34,14 +34,20 @@ skill_description: Expert knowledge for Azure Spring Apps development including 
   configuring ASA networking/security, Tanzu tools, observability/APM, CI/CD deployments,
   or blue‑green releases, and other Azure Spring Apps related development tasks. Not
   for Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Functions (use
-  azure-functions).
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Red Hat OpenShift
+  (use azure-redhat-openshift).
 use_when: Use when configuring ASA networking/security, Tanzu tools, observability/APM,
   CI/CD deployments, or blue‑green releases, and other Azure Spring Apps related development
   tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Container
   Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Functions (use azure-functions).
+confusable_slugs:
+- azure-app-service
+- azure-container-apps
+- azure-kubernetes-service
+- azure-redhat-openshift
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Spring Apps Crawl Report
 

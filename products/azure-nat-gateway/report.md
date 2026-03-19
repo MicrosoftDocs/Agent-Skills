@@ -24,15 +24,21 @@ skill_description: Expert knowledge for Azure NAT Gateway development including 
   best practices, decision making, architecture & design patterns, limits & quotas,
   configuration, and deployment. Use when planning SNAT capacity, configuring IPs/flow
   logs, fixing outbound failures, or choosing Standard vs StandardV2, and other Azure
-  NAT Gateway related development tasks. Not for Azure Firewall (use azure-firewall),
-  Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual WAN (use azure-virtual-wan).
+  NAT Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
+  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Load Balancer
+  (use azure-load-balancer), Azure Virtual WAN (use azure-virtual-wan).
 use_when: Use when planning SNAT capacity, configuring IPs/flow logs, fixing outbound
   failures, or choosing Standard vs StandardV2, and other Azure NAT Gateway related
   development tasks.
 confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Load Balancer
   (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan).
+confusable_slugs:
+- azure-virtual-network
+- azure-virtual-network-manager
+- azure-load-balancer
+- azure-virtual-wan
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure NAT Gateway Crawl Report
 

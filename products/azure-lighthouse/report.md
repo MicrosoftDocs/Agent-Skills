@@ -19,12 +19,19 @@ skill_description: Expert knowledge for Azure Lighthouse development including d
   Use when designing multi-tenant delegations, RBAC/AOBO/PIM access, policy-based
   onboarding, Arc/Sentinel integrations, or Marketplace offers, and other Azure Lighthouse
   related development tasks. Not for Azure Arc (use azure-arc), Azure Managed Applications
-  (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager).
+  (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager),
+  Azure Role-based access control (use azure-rbac).
 use_when: Use when designing multi-tenant delegations, RBAC/AOBO/PIM access, policy-based
   onboarding, Arc/Sentinel integrations, or Marketplace offers, and other Azure Lighthouse
   related development tasks.
 confusable_not_for: Not for Azure Arc (use azure-arc), Azure Managed Applications
   (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager).
+confusable_slugs:
+- azure-arc
+- azure-managed-applications
+- azure-resource-manager
+- azure-rbac
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Lighthouse Crawl Report
 

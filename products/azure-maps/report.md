@@ -32,6 +32,8 @@ skill_description: Expert knowledge for Azure Maps development including trouble
 use_when: Use when using Azure Maps web SDK, search/routing/weather APIs, Spatial
   IO, Power BI visuals, or Bing/Google Maps migration, and other Azure Maps related
   development tasks.
+confusable_slugs: []
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Maps Crawl Report
 

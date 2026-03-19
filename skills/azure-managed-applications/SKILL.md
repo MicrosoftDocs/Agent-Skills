@@ -1,6 +1,6 @@
 ---
 name: azure-managed-applications
-description: Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition UIs, JIT access, managed identities, Key Vault/CMK, StorageAccountSelector, or Bicep-based catalog deployments, and other Azure Managed Applications related development tasks. Not for Azure Lighthouse (use azure-lighthouse), Azure Partner Solutions (use azure-partner-solutions), Azure Resource Manager (use azure-resource-manager), Azure Blueprints (use azure-blueprints).
+description: Expert knowledge for Azure Managed Applications development including limits & quotas, security, configuration, and deployment. Use when designing createUiDefinition UIs, JIT access, managed identities, Key Vault/CMK, StorageAccountSelector, or Bicep-based catalog deployments, and other Azure Managed Applications related development tasks. Not for Azure Lighthouse (use azure-lighthouse), Azure Resource Manager (use azure-resource-manager), Azure Blueprints (use azure-blueprints), Azure Deployment Environments (use azure-deployment-environments).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

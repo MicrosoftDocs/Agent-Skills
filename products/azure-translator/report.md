@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-18'
 category_descriptions:
   configuration: 'Configuring Azure Translator behavior: resource setup, Docker/container
     settings, profanity filters, content exclusion, dynamic dictionaries, word alignment,
@@ -10,9 +10,9 @@ category_descriptions:
   deployment: Running Translator in Docker containers and deploying or copying custom
     translation models across regions and Foundry projects for scalable, portable
     translation setups.
-  integrations: 'Using Translator REST/SDK/container APIs for text/document translation:
-    parameters, async jobs, status, formats, preview features, custom models, Power
-    Automate, and dictionary/language utilities'
+  integrations: Using Translator REST/SDK APIs, containers, and Power Automate for
+    text/document translation, custom models, preview features, status management,
+    and language/dictionary utilities
   limits-quotas: Limits, formats, and data size requirements for Custom Translator
     training/documents, character and request quotas, and language/locale support
     for Translator and Document Translation.
@@ -26,17 +26,21 @@ category_descriptions:
     Tools, plus understanding HTTP status/error codes and their causes and resolutions.
 skill_description: Expert knowledge for Azure Translator development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Translator text/document APIs,
-  custom models, glossaries, containers, or document translation workloads, and other
-  Azure Translator related development tasks. Not for Azure AI Language (use azure-language-service),
-  Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader),
-  Azure AI Search (use azure-cognitive-search).
-use_when: Use when using Translator text/document APIs, custom models, glossaries,
-  containers, or document translation workloads, and other Azure Translator related
-  development tasks.
+  & coding patterns, and deployment. Use when using Translator REST/SDK APIs, Docker
+  containers, custom models, glossaries, or Document Translation, and other Azure
+  Translator related development tasks. Not for Azure AI Language (use azure-language-service),
+  Azure AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader).
+use_when: Use when using Translator REST/SDK APIs, Docker containers, custom models,
+  glossaries, or Document Translation, and other Azure Translator related development
+  tasks.
 confusable_not_for: Not for Azure AI Language (use azure-language-service), Azure
   AI Speech (use azure-speech), Azure AI Immersive Reader (use azure-immersive-reader),
   Azure AI Search (use azure-cognitive-search).
+confusable_slugs:
+- azure-language-service
+- azure-speech
+- azure-immersive-reader
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Translator Crawl Report
 
@@ -45,14 +49,14 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 - **Total Pages**: 125
 - **Fetched**: 125
 - **Fetch Failed**: 0
-- **Classified**: 77
-- **Unclassified**: 48
+- **Classified**: 75
+- **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 125
-- **Deleted Pages**: 0
+- **New Pages**: 11
+- **Updated Pages**: 1
+- **Unchanged**: 113
+- **Deleted Pages**: 11
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
 ## Classification Statistics
@@ -63,13 +67,46 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | configuration | 7 | 5.6% |
 | decision-making | 5 | 4.0% |
 | deployment | 3 | 2.4% |
-| integrations | 36 | 28.8% |
-| limits-quotas | 9 | 7.2% |
+| integrations | 35 | 28.0% |
+| limits-quotas | 8 | 6.4% |
 | security | 9 | 7.2% |
 | troubleshooting | 2 | 1.6% |
-| *(Unclassified)* | 48 | 38.4% |
+| *(Unclassified)* | 50 | 40.0% |
 
 ## Changes
+
+### New Pages
+
+- [Container: Transliterate text ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
+- [Container: Translate documents ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
+- [Foundry Tools adaptive custom translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
+- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
+- [Migrate to 2025-10-01-preview ](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
+- [REST API guide (2025-10-01-preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
+- [Get languages](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
+- [Translate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
+- [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
+- [Document translation SDK guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
+- [Document translation REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
+
+### Updated Pages
+
+- [Foundry Tools release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/release-notes)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-17T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Container: Translate documents 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
+- ~~Container: Transliterate text 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
+- ~~Foundry Tools adaptive custom translation (preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
+- ~~Document translation SDK guide 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
+- ~~Document translation REST APIs 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
+- ~~Migrate to 2025-10-01-preview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
+- ~~Get languages 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
+- ~~Overview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
+- ~~REST API guide (2025-10-01-preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
+- ~~Translate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
+- ~~Transliterate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
 
 ## Classified Pages
 
@@ -84,35 +121,31 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Dictionary Examples](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/dictionary-examples) | integrations | 0.85 | Dictionary Examples method reference with operation-specific request/response details. |
 | [Dictionary Lookup](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/dictionary-lookup) | integrations | 0.85 | Dictionary Lookup method reference including parameters and response structure (parts of speech, back-translations). |
 | [Enable private virtual networks](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/how-to/enable-vnet-service-endpoint) | security | 0.85 | Describes using VNet service endpoints with Custom Translator, including product-specific network security configuration steps and constraints. |
-| [Foundry Tools adaptive custom translation (preview) 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation) | limits-quotas | 0.85 | Explicitly states numeric constraints (5–10,000 segment pairs, up to 512 characters per pair) and describes API parameters; this is expert knowledge about service limits and configuration. |
 | [Text translation HTTP reference](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/reference) | integrations | 0.85 | API reference will list operation-specific parameters, headers, and constraints unique to Translator v3. |
 | [Text translation authentication](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication) | security | 0.85 | Details multiple auth methods, headers, and token usage specific to Translator and Foundry Tools. |
-| [Translate 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api) | integrations | 0.85 | Preview translate method reference with parameters, headers, and body schema unique to this version. |
 | [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/transliterate) | integrations | 0.85 | Transliteration method reference with operation-specific parameters and behavior not generally known. |
-| [Transliterate 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api) | integrations | 0.85 | Preview transliteration method reference with specific parameters and behavior. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/encrypt-data-at-rest) | security | 0.85 | Covers customer-managed keys, how to enable and manage CMK, and data encryption at rest, which are product-specific security configuration details. |
 | [Asynchronous batch translation](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/start-batch-translation) | integrations | 0.80 | Reference for starting batch translation includes operation path, query/body parameters, and behavior specific to this service and its preview features, fitting integrations. |
 | [Automate document translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/connector/document-translation-flow) | integrations | 0.80 | Describes configuring the Translator v3 connector in Power Automate; such connector articles typically include operation names and parameters, which are product-specific integration details. |
-| [Container: Translate documents 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters) | integrations | 0.80 | Defines request/response schema and headers for document translation in containers; these are concrete integration parameters. |
+| [Container: Translate documents ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters) | integrations | 0.80 | The page describes the translate document operation for the Azure Translator container with detailed request/response structure, parameters, and headers. These are concrete API integration details (operation-specific parameters and behaviors) that qualify as expert knowledge and align with the integrations sub-skill. |
 | [Container: Translate text](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-text-parameters) | integrations | 0.80 | Documents parameters, headers, and body schema for the container translate text operation; these are detailed API integration settings unique to the containerized service. |
-| [Container: Transliterate text 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters) | integrations | 0.80 | Provides parameter and message definitions for transliteration in the container API, which are product-specific integration details. |
 | [Document formats](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/document-formats-naming-convention) | limits-quotas | 0.80 | Explicitly states minimum filename length and references a table of supported file formats, which are concrete product-specific constraints. |
 | [Get languages](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/languages) | integrations | 0.80 | Operation reference for Languages method with request/response schema and parameters unique to this API. |
-| [Get languages 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages) | integrations | 0.80 | Preview languages method reference with request/response details for 2025-10-01-preview. |
 | [Get status of a specific document](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-document-status) | integrations | 0.80 | Uses id and documentId query parameters; the exact API contract is specific to this service and is integration-focused. |
 | [Get status of a specific translation job](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-translation-status) | integrations | 0.80 | API reference for job status retrieval with specific path/query parameters and response schema is product-specific integration knowledge. |
 | [Get status of all documents](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-documents-status) | integrations | 0.80 | Describes GET operation with pagination parameters and behavior when server cannot honor them, which are concrete API integration details. |
 | [Get status of all translation jobs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-translations-status) | integrations | 0.80 | Defines GET operation with $top, $skip, $maxpagesize semantics and error behavior specific to this API, which are detailed integration parameters and constraints. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/language-support) | limits-quotas | 0.80 | Provides a table of supported languages/locales, which is a product-specific capability matrix akin to limits/quotas (what is and isn’t supported). |
-| [Migrate to 2025-10-01-preview 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview) | decision-making | 0.80 | Migration article describing enhancements, capabilities, and guidance for moving to 2025-10-01-preview, including LLM choice trade-offs. |
 | [Status codes](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/status-response-codes) | troubleshooting | 0.80 | Response codes and messages mapping; includes specific status/error codes and their meanings for Translator operations. |
 | [Synchronous document translation](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/translate-document) | integrations | 0.80 | API reference for a specific POST operation will define request/response schema, parameter names, and constraints unique to this API, which are integration-focused expert details. |
 | [Text translation REST API guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/rest-api-guide) | integrations | 0.80 | REST API guide listing methods and links; typically includes operation names and usage patterns specific to Translator. |
+| [Translate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api) | integrations | 0.80 | Translate method reference will document headers, query/body parameters, and their allowed values, which are concrete API integration details specific to this product. |
+| [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api) | integrations | 0.80 | Transliterate method reference will include specific REST parameters and request/response schema, which are product-specific integration patterns. |
+| [Container: Transliterate text ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters) | integrations | 0.78 | The page documents the transliterate text operation for the Azure Translator container, including request parameters, headers, and body schema. This is product-specific API surface and configuration detail (parameter names, meanings, required/optional behavior) that goes beyond generic LLM knowledge and fits best under integrations & coding patterns. |
 | [Cancel translation](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/cancel-translation) | integrations | 0.75 | DELETE operation reference for canceling translation jobs includes endpoint and behavior semantics unique to this API, which are integration details. |
 | [Create and use managed identities](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/how-to-guides/create-use-managed-identities) | security | 0.75 | Explains using managed identities to access storage for document translation; will include specific role assignments, scopes, and portal configuration steps tied to this service, which are product-specific security configuration details. |
 | [Custom Translator portal platform upgrade](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/platform-upgrade) | decision-making | 0.75 | Describes platform retirement, migration requirement, and benefits of the new platform; inherently provides migration and upgrade decision guidance. |
 | [Enable Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/microsoft-entra-id-auth) | security | 0.75 | How-to for Entra ID auth will contain app registration details, scopes, and header/token configuration specific to Translator. |
-| [REST API guide (2025-10-01-preview) 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide) | integrations | 0.75 | Lists preview REST API operations and usage details specific to the preview version. |
 | [Translate behind firewalls](https://learn.microsoft.com/en-us/azure/ai-services/translator/how-to/use-firewalls) | security | 0.75 | Details domain-name/IP filtering, service tag name (CognitiveServicesManagement), and network security configuration. |
 | [Translate text with a Foundry Tools model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/translate-with-model) | integrations | 0.75 | Shows how to use Category ID in API requests to target deployed custom models; this is a specific integration parameter and pattern unique to this service. |
 | [Azure Translator known issues](https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/known-issues) | troubleshooting | 0.74 | A known-issues page typically lists specific symptoms and issues with corresponding resolutions or workarounds, which fits the troubleshooting pattern of symptom → cause → solution for this product. |
@@ -122,15 +155,17 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Deploy a Foundry Tools custom model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/deploy-model) | deployment | 0.70 | Explains deployment behavior (one model per language pair, multiple regions) and ties to pricing; these are product-specific deployment constraints and patterns. |
 | [Deploy user-managed glossary](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/deploy-user-managed-glossary) | best-practices | 0.70 | Covers dynamic updating of sentence/phrase files in container environments, which involves product-specific operational patterns and edge cases, fitting best practices for this service. |
 | [Document formats](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/document-formats-naming-convention) | limits-quotas | 0.70 | States a concrete filename length requirement and references a table of supported file formats, which are product-specific constraints. |
-| [Document translation REST APIs 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide) | integrations | 0.70 | REST API guide listing document translation methods and usage; integration-focused reference for this feature. |
+| [Document translation REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide) | integrations | 0.70 | REST API reference guide for Document translation will enumerate methods and their usage, including parameters and constraints, which are concrete integration details specific to this service. |
+| [Foundry Tools adaptive custom translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation) | integrations | 0.70 | The page covers parameters, headers, and body messages for the adaptive custom translation API v1.0 preview, including dataset index management. This is detailed, product-specific API contract information used to integrate with the service, which fits the integrations category rather than conceptual or marketing content. |
 | [Get supported document formats](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-supported-document-formats) | integrations | 0.70 | API that returns supported formats, including specific extensions and content-types; these are product-specific parameters and responses. |
 | [Get supported glossary formats](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/get-supported-glossary-formats) | integrations | 0.70 | API reference listing supported glossary formats and extensions; these are specific to this service and used in integrations. |
 | [Metrics overview.md](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/metrics) | configuration | 0.70 | Lists Azure Monitor metrics for Translator with metric names and meanings, a configuration/observability reference. |
+| [Migrate to 2025-10-01-preview ](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview) | decision-making | 0.70 | Migration guidance between Translator v3 and the 2025-10-01-preview API, including LLM choice based on quality, cost, and other factors, is inherently decision-focused and likely includes concrete criteria and recommendations for when and how to move to the new version. |
 | [Migrate to v3 text translation API](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-v3) | decision-making | 0.70 | Migration guide with deprecated/new methods and required changes; supports decision and concrete steps for upgrading. |
-| [Overview 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview) | integrations | 0.70 | Preview reference overview for 2025-10-01-preview; links to operations and capabilities specific to this version. |
 | [Prevent translation of content](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/prevent-translation) | configuration | 0.70 | Explains tagging content to skip translation, likely with specific markup or parameters unique to Translator. |
 | [Quickstart: Document translation REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/quickstarts/rest-api) | integrations | 0.70 | REST API quickstart for batch and single document translation will include endpoint paths, required headers, and body schema specific to this service, which are product-specific integration details. |
 | [Quickstart: Document translation SDKs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/quickstarts/client-library-sdks) | integrations | 0.70 | Quickstart for client libraries typically includes SDK-specific request parameters, headers, and configuration patterns unique to the Translator document translation service, which are integration-focused details beyond generic LLM knowledge. |
+| [REST API guide (2025-10-01-preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide) | integrations | 0.70 | REST API reference guide for preview text translation will list operations, parameters, and possibly default values and constraints, which are product-specific integration details beyond generic REST knowledge. |
 | [Receive word alignment information](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/word-alignment) | configuration | 0.70 | Uses includeAlignment parameter; documents specific configuration flag and how to use it. |
 | [Secure deployment guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/secure-deployment) | security | 0.70 | Security-focused article with best practices and likely product-specific security settings, roles, and network controls. |
 | [Test your Foundry Tools model](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/test-model) | decision-making | 0.70 | Guides users on deciding between standard vs custom models based on BLEU and baseline BLEU deltas; this is explicit decision-making guidance with quantified evaluation criteria. |
@@ -163,7 +198,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Create a Foundry Tools project](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/create-project) | 0.40 | How-to for creating fine-tuning projects in portal; summary suggests UI workflow steps without detailed technical parameters or limits. |
 | [Create a language pair](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/how-to/create-language-pair) | 0.40 | Creating a language pair appears to be a portal workflow description; summary does not show specific configuration parameters or numeric constraints. |
 | [Custom Translator portal release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/release-notes) | 0.40 | Release notes index; summary does not expose specific technical details, only that it lists features and fixes. |
-| [Foundry Tools release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/release-notes) | 0.40 | Release notes index; summary does not expose specific technical details, only that it lists features and fixes. |
 | [Custom Translator portal FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/faq) | 0.35 | FAQ collection; summary does not indicate structured troubleshooting (error codes, diagnostics) or detailed configuration tables. |
 | [Custom translations](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/customization) | 0.35 | Conceptual description of custom translation feature and its relationship to Translator and Speech; lacks detailed parameters or limits in summary. |
 | [Data filtering](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/data-filtering) | 0.35 | Describes data filtering steps conceptually; summary does not show explicit thresholds, limits, or configuration options. |
@@ -177,7 +211,8 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Data filtering](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/data-filtering) | 0.30 | High-level description of data filtering steps; summary does not show concrete rules, thresholds, or configuration values. |
 | [Dictionaries](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/dictionaries) | 0.30 | Conceptual explanation of custom translation dictionaries; summary does not indicate numeric limits, config tables, or product-specific parameters. |
 | [Dictionaries](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/dictionaries) | 0.30 | Conceptual description of dictionaries; summary does not indicate numeric limits, config parameters, or error mappings. |
-| [Document translation SDK guide 🆕](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview) | 0.30 | SDK overview for document translation; high-level description of SDKs rather than detailed config or limits. |
+| [Document translation SDK guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview) | 0.30 | SDK overview page describes what the Document translation SDKs are and supported languages/frameworks; it does not indicate detailed configuration tables, limits, or troubleshooting content. |
+| [Get languages](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages) | 0.30 | Languages method page primarily lists supported languages; this is catalog data rather than configuration, limits, troubleshooting, or decision guidance, and does not match any expert-knowledge sub-skill type defined. |
 | [Language Support](https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support) | 0.30 | Language support listing; while detailed, it's essentially a capabilities catalog rather than limits, configs, or patterns. |
 | [Model training](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/model-training) | 0.30 | Explains training datasets conceptually; summary lacks specific numeric requirements, config parameters, or decision matrices. |
 | [Quickstart: Custom Translator portal](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/quickstart) | 0.30 | Quickstart tutorial; step-by-step usage but summary does not indicate configuration tables, limits, or error mappings. |
@@ -194,7 +229,9 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Azure Translator release history](https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/release-history) | 0.20 | Duplicate of the release history page; as with index 2, it mainly contains version updates rather than stable expert configuration, limits, or troubleshooting guidance. |
 | [Custom Translator portal for beginners](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/beginners-guide) | 0.20 | Beginner’s end-to-end guide; summary suggests high-level process, not detailed limits, configs, or troubleshooting mappings. |
 | [Custom Translator portal key terms](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/key-terms) | 0.20 | Glossary of key terms; definitions are conceptual and not configuration- or limit-specific. |
+| [Foundry Tools release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/release-notes) | 0.20 | Release notes typically list features, fixes, and known issues but not structured limits, configuration matrices, error-code mappings, or decision tables as defined by the sub-skill types. The description does not indicate presence of numeric limits, config parameter tables, or troubleshooting mappings. |
 | [Modifications to Azure Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/release-history) | 0.20 | Release history / notes are mostly version and feature announcements; they generally lack stable, reusable expert knowledge like limits, configuration matrices, or troubleshooting mappings required by the taxonomy. |
+| [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview) | 0.20 | High-level preview overview of Azure Translator in Foundry Tools; no detailed limits, configuration tables, error codes, or decision matrices are indicated in the summary. |
 | [Parallel documents](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/parallel-documents) | 0.20 | Defines parallel documents; conceptual explanation without numeric constraints or configuration details. |
 | [Sentence alignment](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/sentence-alignment) | 0.20 | Describes sentence alignment conceptually; no indication of numeric thresholds, config parameters, or error mappings. |
 | [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview) | 0.20 | Overview of prebuilt solutions; marketing/introductory content without detailed limits, configs, or decision matrices. |

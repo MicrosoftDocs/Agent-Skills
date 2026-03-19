@@ -11,15 +11,21 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Extended Zones development including
   decision making, security, and configuration. Use when registering subscriptions,
   requesting zone access, authoring Azure Policy, CMK disk encryption, or buying RIs/Savings
-  Plans, and other Azure Extended Zones related development tasks. Not for Azure Virtual
-  Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Traffic Manager (use azure-traffic-manager).
+  Plans, and other Azure Extended Zones related development tasks. Not for Azure Reliability
+  (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual
+  Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 use_when: Use when registering subscriptions, requesting zone access, authoring Azure
   Policy, CMK disk encryption, or buying RIs/Savings Plans, and other Azure Extended
   Zones related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Network Manager (use azure-virtual-network-manager), Azure Traffic Manager
   (use azure-traffic-manager).
+confusable_slugs:
+- azure-reliability
+- azure-resiliency
+- azure-virtual-network
+- azure-virtual-wan
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Extended Zones Crawl Report
 

@@ -15,6 +15,12 @@ use_when: Use when requesting per-region Storage account quota increases, checki
 confusable_not_for: Not for Azure Cost Management (use azure-cost-management), Azure
   Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager
   (use azure-resource-manager).
+confusable_slugs:
+- azure-cost-management
+- azure-monitor
+- azure-policy
+- azure-resource-manager
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Quotas Crawl Report
 

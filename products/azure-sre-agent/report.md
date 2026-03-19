@@ -23,13 +23,19 @@ skill_description: Expert knowledge for Azure Sre Agent development including tr
   logs, wiring DevOps/incident integrations, or deploying as a Teams bot, and other
   Azure Sre Agent related development tasks. Not for Azure Monitor (use azure-monitor),
   Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency),
-  Azure Site Recovery (use azure-site-recovery).
+  Azure Service Health (use azure-service-health).
 use_when: Use when configuring SRE Agent tools/docs, querying KQL logs, wiring DevOps/incident
   integrations, or deploying as a Teams bot, and other Azure Sre Agent related development
   tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
   azure-reliability), Azure Resiliency (use azure-resiliency), Azure Site Recovery
   (use azure-site-recovery).
+confusable_slugs:
+- azure-monitor
+- azure-reliability
+- azure-resiliency
+- azure-service-health
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Sre Agent Crawl Report
 

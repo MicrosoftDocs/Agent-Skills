@@ -34,6 +34,12 @@ use_when: Use when managing Azure DNS zones/records, DNSSEC, Private DNS + Resol
 confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
   Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
   Azure Virtual Network Manager (use azure-virtual-network-manager).
+confusable_slugs:
+- azure-traffic-manager
+- azure-front-door
+- azure-virtual-network
+- azure-virtual-network-manager
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure DNS Crawl Report
 

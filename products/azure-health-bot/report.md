@@ -23,13 +23,16 @@ skill_description: Expert knowledge for Azure Health Bot development including b
   and integrations & coding patterns. Use when configuring Health Bot channels, web
   chat/voice embeds, management APIs, orchestrator flows, or cost estimation, and
   other Azure Health Bot related development tasks. Not for Azure AI Bot Service (use
-  azure-bot-service), Azure Communication Services (use azure-communication-services),
-  Azure Health Data Services (use azure-health-data-services).
+  azure-bot-service), Azure Health Data Services (use azure-health-data-services).
 use_when: Use when configuring Health Bot channels, web chat/voice embeds, management
   APIs, orchestrator flows, or cost estimation, and other Azure Health Bot related
   development tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Communication
   Services (use azure-communication-services), Azure Health Data Services (use azure-health-data-services).
+confusable_slugs:
+- azure-bot-service
+- azure-health-data-services
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Health Bot Crawl Report
 

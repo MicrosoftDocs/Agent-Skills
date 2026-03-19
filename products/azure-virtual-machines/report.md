@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-18'
 category_descriptions:
   architecture-patterns: 'Design patterns for VM-based architectures: multi-region
     and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement,
@@ -22,26 +22,32 @@ category_descriptions:
   integrations: 'Scripts and patterns for automating VM management: backups, disk/snapshot/VHD
     operations, encryption, maintenance/availability monitoring, metadata service,
     Key Vault, and cross-subscription moves.'
-  decision-making: Guides for choosing VM/disk options, estimating and controlling
-    costs, handling image/size retirements, and planning migrations (Linux, Oracle,
-    GPU, RHEL, CentOS, Ubuntu, Dedicated Host).
+  decision-making: Guidance for choosing VM sizes, images, disks, costs, and licensing,
+    plus planning migrations, retirements, backups/DR, and Oracle/Linux/WebLogic scenarios
+    on Azure VMs
   best-practices: Performance, scaling, HA, and cost-optimization best practices for
     Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks,
     and Image Builder/boot-time optimization.
 skill_description: Expert knowledge for Azure Virtual Machines development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using VM scale sets, Trusted Launch, ADE/CMK disk encryption, GPU/HPC SKUs,
-  or Oracle workloads, and other Azure Virtual Machines related development tasks.
-  Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on
-  Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes Service
-  (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
-use_when: Use when using VM scale sets, Trusted Launch, ADE/CMK disk encryption, GPU/HPC
-  SKUs, or Oracle workloads, and other Azure Virtual Machines related development
-  tasks.
+  Use when choosing VM SKUs, configuring disks/GPU/InfiniBand, using Trusted Launch/ADE,
+  or automating VM lifecycle, and other Azure Virtual Machines related development
+  tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm),
+  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Virtual
+  Machine Scale Sets (use azure-vm-scalesets), Azure Cloud Services (use azure-cloud-services).
+use_when: Use when choosing VM SKUs, configuring disks/GPU/InfiniBand, using Trusted
+  Launch/ADE, or automating VM lifecycle, and other Azure Virtual Machines related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Kubernetes
   Service (AKS) (use azure-kubernetes-service), Azure App Service (use azure-app-service).
+confusable_slugs:
+- azure-data-science-vm
+- azure-sql-virtual-machines
+- azure-vm-scalesets
+- azure-cloud-services
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Virtual Machines Crawl Report
 
@@ -50,13 +56,13 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 - **Total Pages**: 802
 - **Fetched**: 802
 - **Fetch Failed**: 0
-- **Classified**: 588
-- **Unclassified**: 214
+- **Classified**: 589
+- **Unclassified**: 213
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 802
+- **Updated Pages**: 8
+- **Unchanged**: 794
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-machines/azure-virtual-machines.csv`
 
@@ -67,15 +73,34 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | architecture-patterns | 15 | 1.9% |
 | best-practices | 23 | 2.9% |
 | configuration | 128 | 16.0% |
-| decision-making | 57 | 7.1% |
+| decision-making | 58 | 7.2% |
 | deployment | 24 | 3.0% |
 | integrations | 43 | 5.4% |
 | limits-quotas | 203 | 25.3% |
 | security | 74 | 9.2% |
 | troubleshooting | 21 | 2.6% |
-| *(Unclassified)* | 214 | 26.7% |
+| *(Unclassified)* | 213 | 26.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
+  - Updated: 2024-09-19T22:00:00.000Z → 2026-02-06T08:00:00.000Z
+- [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-06T08:00:00.000Z
+- [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-06T08:00:00.000Z
+- [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-02T08:00:00.000Z
+- [Capture a VM in the portal](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-06T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-02-06T08:00:00.000Z
+- [VM instance size flexibility](https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility)
+  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-18T06:03:00.000Z
+- [Delete a VM and its resources](https://learn.microsoft.com/en-us/azure/virtual-machines/delete)
+  - Updated: 2025-11-11T23:04:00.000Z → 2026-02-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -513,6 +538,7 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family) | limits-quotas | 0.70 | Family overview that normally includes a size table with exact vCPU, RAM, GPU, and storage values, which are numeric capacity limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hb-family) | limits-quotas | 0.70 | HB sub-family overview that typically includes or links to tables of sizes with exact vCPU, RAM, and bandwidth values, which are numeric capacity limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hc-family) | limits-quotas | 0.70 | HC sub-family overview that typically includes or links to size tables with exact vCPU, RAM, and bandwidth values, which are numeric limits. |
+| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms) | decision-making | 0.70 | Spot VM docs typically include concrete eviction conditions, pricing/discount behavior, and configuration options (eviction policy, max price) that guide when to choose Spot versus regular VMs. This is product-specific decision guidance with quantified trade-offs around cost vs. reliability, fitting the decision-making category rather than just a conceptual overview. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machine-scale-sets-maintenance-control) | configuration | 0.70 | Explains Maintenance control behavior and workflow for OS image upgrades on uniform scale sets; Azure-specific configuration feature. |
 | [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hc-series-performance) | limits-quotas | 0.70 | Performance testing summary pages typically contain benchmark tables with concrete throughput/latency numbers and scaling characteristics that are not inferable from training data. |
 | [Performance](https://learn.microsoft.com/en-us/azure/virtual-machines/hx-performance) | limits-quotas | 0.70 | Performance expectations using microbenchmarks imply tables/metrics with specific throughput, latency, and scaling numbers that are expert-only details. |
@@ -551,7 +577,7 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Use Azure Resource Graph](https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-graph) | integrations | 0.70 | Project Flash-specific use of ARG for VM availability; likely includes KQL patterns and resource schemas unique to this solution. |
 | [Use Azure Resource Health](https://learn.microsoft.com/en-us/azure/virtual-machines/flash-azure-resource-health) | integrations | 0.70 | Describes how Resource Health is used for VM availability in Flash; includes status codes and event semantics. |
 | [User data](https://learn.microsoft.com/en-us/azure/virtual-machines/user-data) | configuration | 0.70 | Describes how to pass scripts/metadata at provision time; product-specific configuration behavior and constraints for user data. |
-| [VM instance size flexibility](https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility) | decision-making | 0.70 | Explains how a reservation discount applies across size series and trade-offs between instance size flexibility and capacity priority; likely includes tables showing how different VM sizes consume reservation capacity, which is product-specific decision guidance. |
+| [VM instance size flexibility](https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instance-size-flexibility) | decision-making | 0.70 | Reserved VM size flexibility documentation usually explains how reservation discounts map across VM size series, including concrete rules on how instance sizes are normalized and how discounts apply. This is expert, product-specific guidance to decide between capacity priority vs. size flexibility and how reservations are applied, matching the decision-making category. |
 | [VM template description](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/template-description) | configuration | 0.70 | Describes how VM resources are represented in ARM templates, including specific resource properties and schema details, which are configuration parameters unique to Azure Resource Manager. |
 | [VMSnapshot extension](https://learn.microsoft.com/en-us/azure/virtual-machines/virtual-machines-restore-points-vm-snapshot-extension) | configuration | 0.70 | Details Windows and Linux snapshot extensions and their role in application-consistent restore points; product-specific extension configuration patterns. |
 | [Virtual machine and disk performance](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance) | best-practices | 0.70 | Covers diagnosing bottlenecks and tuning VM/disk combinations; likely includes Azure-specific metrics, thresholds, and tuning recommendations—product-specific performance best practices. |
@@ -724,7 +750,6 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-portal-quickstart) | 0.40 | Portal quickstart is mostly UI steps without detailed config tables or limits; low incremental expert knowledge beyond generic portal usage. |
 | [B-series CPU Credit Model](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/b-series-cpu-credit-model) | 0.40 | Describes CPU credit model conceptually; summary does not indicate concrete numeric tables or configuration parameters beyond general behavior. |
 | [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/spot-cli) | 0.40 | CLI how-to for deploying Spot VMs; primarily step-by-step deployment instructions, not a catalog of configuration parameters with ranges or limits. |
-| [Capture a VM in the portal](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal) | 0.40 | Portal-based tutorial for capturing an image; mostly procedural steps, not dense configuration tables or limits. |
 | [Change an availability set](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/change-availability-set) | 0.40 | Step-by-step PowerShell procedure to change availability set; no config option tables, limits, or troubleshooting mappings. |
 | [Cobalt VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/cobalt-overview) | 0.40 | High-level overview of Cobalt-based VMs; likely descriptive without detailed size/limit tables or configuration parameters. |
 | [Configure swapfile](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cloudinit-configure-swapfile) | 0.40 | Shows how to configure swap via cloud-init; likely includes example config but not a full parameter matrix or quantified best practices. |
@@ -755,7 +780,6 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/run-command-overview) | 0.40 | Overview of Run Command; mostly conceptual and feature description without detailed parameter tables or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/b-family) | 0.40 | B-family landing page is likely descriptive of credit model and workloads, with detailed numeric specs deferred to sub-series pages. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dc-family) | 0.40 | Family overview page describing DC family conceptually and listing series; detailed numeric limits are on the per-series pages, not here. |
-| [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms) | 0.40 | Overview of Azure Spot VMs; summary focuses on conceptual benefits and eviction behavior without explicit numeric limits or detailed configuration tables. |
 | [Packages](https://learn.microsoft.com/en-us/azure/azure-linux/concepts-packages) | 0.40 | Describes package support at a high level; summary doesn't indicate detailed package lists or configuration parameters. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications-portal) | 0.40 | Portal-based navigation steps for viewing maintenance notifications; no detailed configuration parameters or expert-only data. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/spot-powershell) | 0.40 | PowerShell how-to for Spot VM deployment; likely contains example commands but not exhaustive parameter tables or numeric constraints. |
@@ -843,21 +867,20 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Use the Azure CLI](https://learn.microsoft.com/en-us/azure/azure-linux/quickstart-azure-cli) | 0.30 | CLI quickstart for deploying an AKS cluster; mostly procedural without detailed config matrices or limits. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk) | 0.30 | Basic instructions to detach a disk from a Windows VM; procedural, not configuration/limits/troubleshooting focused. |
 | [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/image-builder-powershell) | 0.30 | PowerShell-based tutorial for Image Builder; procedural without structured limits, security roles, or troubleshooting mappings. |
-| [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli) | 0.25 | CLI quickstart for creating a Linux VM; basic deployment steps without detailed limits or configuration matrices. |
 | [Connect to a Linux VM](https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect) | 0.25 | Basic SSH connection tutorial; likely generic commands without Azure-specific configuration matrices or limits. |
 | [Core concepts](https://learn.microsoft.com/en-us/azure/azure-linux/concepts-core) | 0.25 | Core concepts overview; mostly conceptual explanation of Azure Linux stack and responsibilities. |
-| [Delete a VM and its resources](https://learn.microsoft.com/en-us/azure/virtual-machines/delete) | 0.25 | Explains deletion behavior and defaults; summary doesn’t indicate detailed config tables or limits, more conceptual/step-based. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-template) | 0.20 | ARM template quickstart for Ubuntu VM; example deployment only, no detailed parameter tables or limits. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-template) | 0.20 | ARM template quickstart for Windows VM; example template only, no expert-level configuration catalog or limits. |
 | [About the Azure Linux Container Host for AKS](https://learn.microsoft.com/en-us/azure/azure-linux/intro-azure-linux) | 0.20 | Introductory overview of Azure Linux Container Host; conceptual and marketing-style content. |
 | [Azure Regions](https://learn.microsoft.com/en-us/azure/virtual-machines/regions) | 0.20 | Overview of Azure regions and availability; largely conceptual without numeric limits, config tables, or decision matrices. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-bicep) | 0.20 | Bicep quickstart for Ubuntu VM; focuses on example template, not exhaustive configuration options or expert constraints. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-bicep) | 0.20 | Bicep quickstart for Windows VM; focuses on example deployment, not detailed configuration options or quotas. |
-| [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) | 0.20 | CLI quickstart for Windows VM; basic creation and RDP steps, no expert-only configuration or limits. |
+| [Capture a VM in the portal](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal) | 0.20 | Task-focused how-to for capturing a VM image via the Azure portal; does not expose detailed limits, configuration matrices, error-code-based troubleshooting, or other expert-only reference data. Primarily step-by-step UI instructions LLMs generally know patterns for. |
 | [Copy files to a VM](https://learn.microsoft.com/en-us/azure/virtual-machines/copy-files-to-vm-using-scp) | 0.20 | Basic SCP usage to move files; generic Linux/SSH knowledge, not Azure-specific expert configuration. |
 | [Create in the Azure portal](https://learn.microsoft.com/en-us/azure/azure-compute-fleet/quickstart-create-portal) | 0.20 | Step-by-step portal quickstart; no configuration tables, limits, or product-specific best-practice guidance. |
 | [Create using Azure CLI](https://learn.microsoft.com/en-us/azure/azure-compute-fleet/quickstart-create-azure-cli) | 0.20 | CLI quickstart for creating a Compute Fleet; procedural, without detailed config matrices or limits. |
 | [Create with ARM template](https://learn.microsoft.com/en-us/azure/azure-compute-fleet/quickstart-create-rest-api) | 0.20 | ARM template quickstart; focuses on basic deployment flow, not on exhaustive configuration options or limits. |
+| [Delete a VM and its resources](https://learn.microsoft.com/en-us/azure/virtual-machines/delete) | 0.20 | Task-focused how-to for deleting a VM and its attached resources; does not emphasize numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Primarily procedural guidance that a generic LLM can already handle. |
 | [OpenShift Container Platform 4.x](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/openshift-container-platform-4x) | 0.20 | Short guidance pointing to external OpenShift installer resources; not a detailed Azure-specific configuration or limits document. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/hibernate-resume) | 0.20 | High-level hibernation overview and scenarios; no indication of limits, config tables, or detailed parameters. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/image-builder-overview) | 0.20 | High-level overview of Azure VM Image Builder; mostly conceptual and marketing-style explanation of benefits. |
@@ -873,8 +896,6 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) | 0.20 | Duplicate of the VM sizes overview page; conceptual description of size families without detailed numeric limits per SKU. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) | 0.20 | Quickstart showing how to create a Linux VM via the Azure portal; step-by-step tutorial without detailed limits, configuration matrices, or product-specific troubleshooting. |
 | [Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal) | 0.20 | Portal quickstart for Windows VM; step-by-step UI guide, not a deep configuration or decision/limits document. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell) | 0.20 | PowerShell quickstart to create a Linux VM; standard commands and flow, no detailed configuration tables, limits, or troubleshooting mappings. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell) | 0.20 | PowerShell quickstart for Windows VM; standard commands and IIS install, no expert configuration matrices or quotas. |
 | [Red Hat](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/redhat/overview) | 0.20 | Overview of Red Hat workloads on Azure; high-level product listing without detailed configuration, limits, or decision matrices. |
 | [Set up Azure HPC or AI VMs](https://learn.microsoft.com/en-us/azure/virtual-machines/set-up-hpc-vms) | 0.20 | How-to create a basic VM via portal; likely step-by-step tutorial without detailed config matrices or numeric limits. |
 | [Support and help](https://learn.microsoft.com/en-us/azure/azure-linux/support-help) | 0.20 | Support/help options page; mostly meta-information about getting assistance, not technical configuration or troubleshooting content. |
@@ -885,6 +906,10 @@ confusable_not_for: Not for Azure Virtual Machine Scale Sets (use azure-vm-scale
 | [Terraform VM cluster](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-cluster-create-terraform) | 0.20 | Terraform quickstart for Windows VM cluster; tutorial-style, no expert decision matrices or configuration tables. |
 | [What is Azure Compute Fleet?](https://learn.microsoft.com/en-us/azure/azure-compute-fleet/overview) | 0.20 | High-level product overview of Azure Compute Fleet; no concrete limits, configs, or decision matrices. |
 | [What's new in Azure Disk Storage](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-whats-new) | 0.20 | What’s new changelog; mostly release notes and feature announcements, not structured limits, configs, or troubleshooting guidance. |
+| [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli) | 0.10 | Quickstart tutorial showing basic Azure CLI commands to create a Linux VM; no limits tables, configuration parameter catalogs, error-code troubleshooting, or decision matrices with quantified trade-offs. Content is procedural, not expert reference material. |
+| [CLI](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) | 0.10 | Quickstart tutorial for creating a Windows VM with Azure CLI and RDP/IIS; focuses on basic commands, not on limits, configuration matrices, or detailed troubleshooting guidance. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery) | 0.10 | High-level overview of Azure Compute Gallery; primarily conceptual description of capabilities and sharing, not detailed limits, configs, or troubleshooting. |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-powershell) | 0.10 | Quickstart tutorial showing basic VM creation and SSH/NGINX setup with Azure PowerShell; no limits, quotas, specialized configuration tables, or product-specific troubleshooting details. |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell) | 0.10 | Quickstart tutorial for creating a Windows VM with Azure PowerShell and enabling RDP/IIS; contains step-by-step commands but no expert-only limits, quotas, configuration tables, or error-resolution mappings. |
 | [Service disruptions](https://learn.microsoft.com/en-us/azure/virtual-machines/overview) | 0.10 | General VM overview; conceptual and introductory content without expert-only details. |
 | [What's new](https://learn.microsoft.com/en-us/azure/virtual-machines/compute-gallery-whats-new) | 0.10 | What's new changelog-style page; typically feature announcements without deep numeric limits, configs, or troubleshooting matrices. |

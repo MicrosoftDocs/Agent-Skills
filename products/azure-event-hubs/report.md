@@ -41,6 +41,12 @@ use_when: Use when using Kafka clients/Streams, .NET SDK, Flink/Spark, geo-disas
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Grid (use azure-event-grid), Azure Notification Hubs (use azure-notification-hubs),
   Azure Stream Analytics (use azure-stream-analytics).
+confusable_slugs:
+- azure-service-bus
+- azure-event-grid
+- azure-notification-hubs
+- azure-stream-analytics
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Event Hubs Crawl Report
 

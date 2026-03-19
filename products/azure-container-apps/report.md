@@ -33,8 +33,8 @@ skill_description: Expert knowledge for Azure Container Apps development includi
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
   Use when configuring ingress/scale, Entra/OIDC auth, GitHub Actions CI/CD, Dapr
   integrations, or Java microservices on ACA, and other Azure Container Apps related
-  development tasks. Not for Azure App Service (use azure-app-service), Azure Functions
-  (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
   Azure Spring Apps (use azure-spring-apps).
 use_when: Use when configuring ingress/scale, Entra/OIDC auth, GitHub Actions CI/CD,
   Dapr integrations, or Java microservices on ACA, and other Azure Container Apps
@@ -42,6 +42,12 @@ use_when: Use when configuring ingress/scale, Entra/OIDC auth, GitHub Actions CI
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Functions
   (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Spring Apps (use azure-spring-apps).
+confusable_slugs:
+- azure-kubernetes-service
+- azure-app-service
+- azure-functions
+- azure-spring-apps
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Container Apps Crawl Report
 

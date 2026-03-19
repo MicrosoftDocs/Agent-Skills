@@ -25,15 +25,21 @@ skill_description: Expert knowledge for Azure IoT development including troubles
   best practices, decision making, architecture & design patterns, security, configuration,
   and integrations & coding patterns. Use when using IoT Hub/DPS, MQTT, IoT Plug and
   Play/DTDL, Azure IoT Explorer security, or industrial IoT architectures, and other
-  Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub),
-  Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central),
-  Azure Defender For Iot (use azure-defender-for-iot).
+  Azure IoT related development tasks. Not for Azure IoT Central (use azure-iot-central),
+  Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Defender
+  For Iot (use azure-defender-for-iot).
 use_when: Use when using IoT Hub/DPS, MQTT, IoT Plug and Play/DTDL, Azure IoT Explorer
   security, or industrial IoT architectures, and other Azure IoT related development
   tasks.
 confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use
   azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot
   (use azure-defender-for-iot).
+confusable_slugs:
+- azure-iot-central
+- azure-iot-edge
+- azure-iot-hub
+- azure-defender-for-iot
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure IoT Crawl Report
 

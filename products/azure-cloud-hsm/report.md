@@ -20,12 +20,18 @@ skill_description: Expert knowledge for Azure Cloud Hsm development including tr
   patterns. Use when managing Cloud HSM clusters, PKCS#11 apps, key lifecycle, backups/logs,
   or capacity/algorithm choices, and other Azure Cloud Hsm related development tasks.
   Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm),
-  Azure Key Vault (use azure-key-vault), Azure Confidential Computing (use azure-confidential-computing).
+  Azure Key Vault (use azure-key-vault), Azure Attestation (use azure-attestation).
 use_when: Use when managing Cloud HSM clusters, PKCS#11 apps, key lifecycle, backups/logs,
   or capacity/algorithm choices, and other Azure Cloud Hsm related development tasks.
 confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment
   Hsm (use azure-payment-hsm), Azure Key Vault (use azure-key-vault), Azure Confidential
   Computing (use azure-confidential-computing).
+confusable_slugs:
+- azure-dedicated-hsm
+- azure-payment-hsm
+- azure-key-vault
+- azure-attestation
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Cloud Hsm Crawl Report
 

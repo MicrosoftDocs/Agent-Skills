@@ -1,6 +1,6 @@
 ---
 name: azure-digital-twins
-description: Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions, or migrating control plane APIs, and other Azure Digital Twins related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure IoT Operations (use azure-iot-operations).
+description: Expert knowledge for Azure Digital Twins development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when modeling with DTDL, querying twin graphs, integrating IoT Hub/Functions, or migrating control plane APIs, and other Azure Digital Twins related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Edge (use azure-iot-edge), Azure Maps (use azure-maps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

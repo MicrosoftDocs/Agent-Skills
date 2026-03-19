@@ -43,6 +43,12 @@ use_when: Use when planning ASR for VMware/Hyper‑V, configuring Recovery Servi
 confusable_not_for: Not for Azure Backup (use azure-backup), Azure Migrate (use azure-migrate),
   Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
   Sets (use azure-vm-scalesets).
+confusable_slugs:
+- azure-backup
+- azure-migrate
+- azure-virtual-machines
+- azure-vm-scalesets
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Site Recovery Crawl Report
 

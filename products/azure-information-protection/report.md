@@ -23,6 +23,12 @@ use_when: Use when choosing Azure RMS vs AD RMS, migrating keys/policies, config
 confusable_not_for: Not for Azure Key Vault (use azure-key-vault), Azure Security
   (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud), Azure
   Sentinel (use azure-sentinel).
+confusable_slugs:
+- azure-key-vault
+- azure-security
+- azure-defender-for-cloud
+- azure-sentinel
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Information Protection Crawl Report
 

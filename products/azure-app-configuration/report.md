@@ -28,13 +28,19 @@ skill_description: Expert knowledge for Azure App Configuration development incl
   integrations & coding patterns, and deployment. Use when using feature flags, dynamic
   refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other
   Azure App Configuration related development tasks. Not for Azure App Service (use
-  azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use
-  azure-automation).
+  azure-app-service), Azure Functions (use azure-functions), Azure Key Vault (use
+  azure-key-vault), Azure Automation (use azure-automation).
 use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
   or App Configuration REST APIs, and other Azure App Configuration related development
   tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
   (use azure-key-vault), Azure Automation (use azure-automation).
+confusable_slugs:
+- azure-app-service
+- azure-functions
+- azure-key-vault
+- azure-automation
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure App Configuration Crawl Report
 
@@ -48,8 +54,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 159
+- **Updated Pages**: 0
+- **Unchanged**: 161
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -68,13 +74,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | *(Unclassified)* | 29 | 18.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitor App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/monitor-app-configuration)
-  - Updated: 2026-03-05T12:13:00.000Z → 2026-03-17T06:14:00.000Z
-- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac)
-  - Updated: 2026-02-23T23:22:00.000Z → 2026-03-17T06:14:00.000Z
 
 ## Classified Pages
 

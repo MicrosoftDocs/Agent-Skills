@@ -35,6 +35,12 @@ use_when: Use when authoring Machine Configuration packages, deploying via ARM/B
 confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-based
   access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager),
   Azure Security (use azure-security).
+confusable_slugs:
+- azure-blueprints
+- azure-rbac
+- azure-resource-manager
+- azure-security
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Policy Crawl Report
 

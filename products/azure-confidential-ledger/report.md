@@ -17,14 +17,18 @@ skill_description: Expert knowledge for Azure Confidential Ledger development in
   configuring Entra auth, ACL roles, UDFs, client SDKs, transaction receipts, or ARM/Terraform
   deployments, and other Azure Confidential Ledger related development tasks. Not
   for Azure Confidential Computing (use azure-confidential-computing), Azure Virtual
-  Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault), Azure
-  Dedicated HSM (use azure-dedicated-hsm).
+  Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault).
 use_when: Use when configuring Entra auth, ACL roles, UDFs, client SDKs, transaction
   receipts, or ARM/Terraform deployments, and other Azure Confidential Ledger related
   development tasks.
 confusable_not_for: Not for Azure Confidential Computing (use azure-confidential-computing),
   Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault),
   Azure Dedicated HSM (use azure-dedicated-hsm).
+confusable_slugs:
+- azure-confidential-computing
+- azure-virtual-enclaves
+- azure-key-vault
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Confidential Ledger Crawl Report
 

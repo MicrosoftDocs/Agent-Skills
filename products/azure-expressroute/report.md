@@ -32,15 +32,20 @@ skill_description: Expert knowledge for Azure ExpressRoute development including
   security, configuration, integrations & coding patterns, and deployment. Use when
   designing ExpressRoute circuits/gateways, BGP/peering, Global Reach, FastPath, or
   ExpressRoute Direct, and other Azure ExpressRoute related development tasks. Not
-  for Azure Internet Peering (use azure-internet-peering), Azure Peering Service (use
-  azure-peering-service), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway
-  (use azure-vpn-gateway).
+  for Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway),
+  Azure Virtual Network (use azure-virtual-network), Azure Internet Peering (use azure-internet-peering).
 use_when: Use when designing ExpressRoute circuits/gateways, BGP/peering, Global Reach,
   FastPath, or ExpressRoute Direct, and other Azure ExpressRoute related development
   tasks.
 confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
   Peering Service (use azure-peering-service), Azure Virtual WAN (use azure-virtual-wan),
   Azure VPN Gateway (use azure-vpn-gateway).
+confusable_slugs:
+- azure-virtual-wan
+- azure-vpn-gateway
+- azure-virtual-network
+- azure-internet-peering
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure ExpressRoute Crawl Report
 
@@ -54,8 +59,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 84
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,31 +80,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 22 | 23.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Monitor ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/monitor-expressroute)
-  - Updated: 2024-07-23T22:09:00.000Z → 2026-03-17T06:14:00.000Z
-- [Monitoring data reference](https://learn.microsoft.com/en-us/azure/expressroute/monitor-expressroute-reference)
-  - Updated: 2024-07-23T22:09:00.000Z → 2026-03-17T06:14:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/design-architecture-for-resiliency)
-  - Updated: 2024-07-16T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Design for high availability](https://learn.microsoft.com/en-us/azure/expressroute/designing-for-high-availability-with-expressroute)
-  - Updated: 2024-12-12T23:04:00.000Z → 2026-03-16T08:00:00.000Z
-- [Evaluate ExpressRoute circuit resiliency](https://learn.microsoft.com/en-us/azure/expressroute/evaluate-circuit-resiliency)
-  - Updated: 2024-06-24T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Asymmetric routing](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-asymmetric-routing)
-  - Updated: 2024-07-11T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Routing requirements](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing)
-  - Updated: 2024-06-20T08:00:00.000Z → 2026-03-17T06:14:00.000Z
-- [Create an ExpressRoute circuit - Portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
-  - Updated: 2024-08-14T18:47:00.000Z → 2026-03-12T08:00:00.000Z
-- [Create an ExpressRoute circuit - PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm)
-  - Updated: 2024-09-25T17:04:00.000Z → 2026-03-16T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
-  - Updated: 2024-08-14T18:47:00.000Z → 2026-03-12T08:00:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm)
-  - Updated: 2024-09-25T17:04:00.000Z → 2026-03-16T08:00:00.000Z
 
 ## Classified Pages
 

@@ -40,6 +40,12 @@ use_when: Use when securing service connections/secrets, authoring YAML CI/CD, s
   Azure Pipelines related development tasks.
 confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards),
   Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
+confusable_slugs:
+- azure-devops
+- azure-boards
+- azure-repos
+- azure-test-plans
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Pipelines Crawl Report
 

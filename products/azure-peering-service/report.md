@@ -16,6 +16,12 @@ use_when: Use when designing Peering Service prefixes, routing policies, prefix 
 confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering), Azure
   Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan),
   Azure ExpressRoute (use azure-expressroute).
+confusable_slugs:
+- azure-internet-peering
+- azure-virtual-network
+- azure-virtual-wan
+- azure-expressroute
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Peering Service Crawl Report
 

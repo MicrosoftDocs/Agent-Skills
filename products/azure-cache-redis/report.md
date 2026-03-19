@@ -29,14 +29,16 @@ skill_description: Expert knowledge for Azure Cache for Redis development includ
   security, configuration, integrations & coding patterns, and deployment. Use when
   configuring geo-replication, persistence, VNet/Private Link, CLI/PowerShell automation,
   or Blob import/export, and other Azure Cache for Redis related development tasks.
-  Not for Azure Managed Redis (use azure-managed-redis), Azure HPC Cache (use azure-hpc-cache),
-  Azure Blob Storage (use azure-blob-storage), Azure Table Storage (use azure-table-storage).
+  Not for Azure Managed Redis (use azure-managed-redis).
 use_when: Use when configuring geo-replication, persistence, VNet/Private Link, CLI/PowerShell
   automation, or Blob import/export, and other Azure Cache for Redis related development
   tasks.
 confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure HPC
   Cache (use azure-hpc-cache), Azure Blob Storage (use azure-blob-storage), Azure
   Table Storage (use azure-table-storage).
+confusable_slugs:
+- azure-managed-redis
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Cache for Redis Crawl Report
 

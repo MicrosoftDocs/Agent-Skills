@@ -30,6 +30,12 @@ use_when: Use when planning Azure DMS migrations for MySQL, PostgreSQL, SQL Serv
 confusable_not_for: Not for Azure Migrate (use azure-migrate), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance),
   SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
+confusable_slugs:
+- azure-migrate
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+mapping_hash: 82ee72cc321fef5221d5e8577695d5e1
 ---
 # Azure Database Migration service Crawl Report
 
