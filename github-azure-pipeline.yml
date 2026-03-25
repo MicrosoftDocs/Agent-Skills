@@ -22,13 +22,13 @@ parameters:
     type: string
     default: 'main'
 
-# schedules:
-#   - cron: "0 2 * * *"  # Daily at 2:00 AM UTC
-#     displayName: Run every day
-#     branches:
-#       include:
-#         - main
-#     always: true
+schedules:
+  - cron: "0 2 * * 0"  # Every Sunday at 2:00 AM UTC
+    displayName: Run every Sunday
+    branches:
+      include:
+        - main
+    always: true
 
 variables:
   - group: Docs2Skills-Defaults
