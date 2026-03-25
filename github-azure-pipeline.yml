@@ -121,91 +121,104 @@ stages:
                 pip install --upgrade pip
                 pip install -r requirements.txt
 
-          # 6. Run docs2skills with Azure identity
-          - task: AzureCLI@2
-            displayName: 'Run docs2skills'
-            inputs:
-              azureSubscription: $(azureSubscription)
-              scriptType: bash
-              scriptLocation: inlineScript
-              inlineScript: |
-                set -e
+          # # 6. Run docs2skills with Azure identity
+          # - task: AzureCLI@2
+          #   displayName: 'Run docs2skills'
+          #   inputs:
+          #     azureSubscription: $(azureSubscription)
+          #     scriptType: bash
+          #     scriptLocation: inlineScript
+          #     inlineScript: |
+          #       set -e
 
-                # Define paths
-                ADO_REPO="$(Build.SourcesDirectory)/Learn.Docs2AgentSkills"
-                GITHUB_REPO="$(Build.SourcesDirectory)/$(basename $(Build.Repository.Uri) .git)"
-                PRODUCTS_DIR="$GITHUB_REPO/products"
-                SKILLS_DIR="$GITHUB_REPO/skills"
+          #       # Define paths
+          #       ADO_REPO="$(Build.SourcesDirectory)/Learn.Docs2AgentSkills"
+          #       GITHUB_REPO="$(Build.SourcesDirectory)/$(basename $(Build.Repository.Uri) .git)"
+          #       PRODUCTS_DIR="$GITHUB_REPO/products"
+          #       SKILLS_DIR="$GITHUB_REPO/skills"
 
-                cd $ADO_REPO
+          #       cd $ADO_REPO
 
-                echo "========================================"
-                echo "Starting docs sync"
-                echo "========================================"
-                echo "ADO repo (code): $ADO_REPO"
-                echo "GitHub repo (data): $GITHUB_REPO"
-                echo "Products dir: $PRODUCTS_DIR"
-                echo "Skills dir: $SKILLS_DIR"
-                echo "Azure OpenAI: $(azureOpenAIEndpoint)"
-                echo "Deployment: $(azureOpenAIDeployment)"
-                echo "Full Sync: ${{ parameters.fullSync }}"
-                echo "Target Branch: ${{ parameters.targetBranch }}"
-                echo "========================================"
+          #       echo "========================================"
+          #       echo "Starting docs sync"
+          #       echo "========================================"
+          #       echo "ADO repo (code): $ADO_REPO"
+          #       echo "GitHub repo (data): $GITHUB_REPO"
+          #       echo "Products dir: $PRODUCTS_DIR"
+          #       echo "Skills dir: $SKILLS_DIR"
+          #       echo "Azure OpenAI: $(azureOpenAIEndpoint)"
+          #       echo "Deployment: $(azureOpenAIDeployment)"
+          #       echo "Full Sync: ${{ parameters.fullSync }}"
+          #       echo "Target Branch: ${{ parameters.targetBranch }}"
+          #       echo "========================================"
 
-                FULL_FLAG=""
-                if [ "${{ parameters.fullSync }}" = "True" ]; then
-                  FULL_FLAG="--full"
-                  echo "Running with --full flag"
-                    # check before delete
-                    if [ -n "$PRODUCTS_DIR" ] && [ -d "$PRODUCTS_DIR" ]; then
-                      rm -rf "$PRODUCTS_DIR"
-                      mkdir -p "$PRODUCTS_DIR"
-                    fi
+          #       FULL_FLAG=""
+          #       if [ "${{ parameters.fullSync }}" = "True" ]; then
+          #         FULL_FLAG="--full"
+          #         echo "Running with --full flag"
+          #           # check before delete
+          #           if [ -n "$PRODUCTS_DIR" ] && [ -d "$PRODUCTS_DIR" ]; then
+          #             rm -rf "$PRODUCTS_DIR"
+          #             mkdir -p "$PRODUCTS_DIR"
+          #           fi
                   
-                    if [ -n "$SKILLS_DIR" ] && [ -d "$SKILLS_DIR" ]; then
-                      rm -rf "$SKILLS_DIR"
-                      mkdir -p "$SKILLS_DIR"
-                    fi
-                fi
+          #           if [ -n "$SKILLS_DIR" ] && [ -d "$SKILLS_DIR" ]; then
+          #             rm -rf "$SKILLS_DIR"
+          #             mkdir -p "$SKILLS_DIR"
+          #           fi
+          #       fi
 
-                echo "========================================"
-                echo "Processing Well-Architected Framework"
-                echo "========================================"
-                python -m src.docs2skills \
-                  --config-type waf \
-                  --products-dir $PRODUCTS_DIR \
-                  --skills-dir $SKILLS_DIR
+          #       echo "========================================"
+          #       echo "Processing Well-Architected Framework"
+          #       echo "========================================"
+          #       python -m src.docs2skills \
+          #         --config-type waf \
+          #         --products-dir $PRODUCTS_DIR \
+          #         --skills-dir $SKILLS_DIR
 
-                echo "========================================"
-                echo "Processing Cloud Adoption Framework"
-                echo "========================================"
-                python -m src.docs2skills \
-                  --config-type caf \
-                  --products-dir $PRODUCTS_DIR \
-                  --skills-dir $SKILLS_DIR
+          #       echo "========================================"
+          #       echo "Processing Cloud Adoption Framework"
+          #       echo "========================================"
+          #       python -m src.docs2skills \
+          #         --config-type caf \
+          #         --products-dir $PRODUCTS_DIR \
+          #         --skills-dir $SKILLS_DIR
 
-                echo "========================================"
-                echo "Processing Azure Architecture Center"
-                echo "========================================"
-                python -m src.docs2skills \
-                  --config-type aac \
-                  --products-dir $PRODUCTS_DIR \
-                  --skills-dir $SKILLS_DIR
+          #       echo "========================================"
+          #       echo "Processing Azure Architecture Center"
+          #       echo "========================================"
+          #       python -m src.docs2skills \
+          #         --config-type aac \
+          #         --products-dir $PRODUCTS_DIR \
+          #         --skills-dir $SKILLS_DIR
 
-                echo "========================================"
-                echo "Processing Azure Other Products"
-                echo "========================================"
-                python -m src.docs2skills \
-                  --products-dir $PRODUCTS_DIR \
-                  --skills-dir $SKILLS_DIR
+          #       echo "========================================"
+          #       echo "Processing Azure Other Products"
+          #       echo "========================================"
+          #       python -m src.docs2skills \
+          #         --products-dir $PRODUCTS_DIR \
+          #         --skills-dir $SKILLS_DIR
 
 
-                echo "========================================"
-                echo "Sync completed"
-                echo "========================================"
-            env:
-              AZURE_OPENAI_ENDPOINT: $(azureOpenAIEndpoint)
-              AZURE_OPENAI_CHAT_DEPLOYMENT: $(azureOpenAIDeployment)
+          #       echo "========================================"
+          #       echo "Sync completed"
+          #       echo "========================================"
+          #   env:
+          #     AZURE_OPENAI_ENDPOINT: $(azureOpenAIEndpoint)
+          #     AZURE_OPENAI_CHAT_DEPLOYMENT: $(azureOpenAIDeployment)
+
+
+
+          # 6.5. [TEST ONLY] Make a dummy change to trigger PR
+          - task: Bash@3
+            displayName: '[TEST] Make dummy change'
+            inputs:
+              targetType: inline
+              script: |
+                set -e
+                GITHUB_REPO=$(basename $(Build.Repository.Uri) .git)
+                cd $(Build.SourcesDirectory)/$GITHUB_REPO
+                echo "test-$(date +%s)" >> products/test-dummy.txt
 
           # 7. Push to GitHub repo and create PR
           - task: Bash@3
@@ -243,6 +256,8 @@ stages:
                   REPO_URL=$(Build.Repository.Uri)
                   # Extract owner/repo from URL
                   REPO_PATH=$(echo $REPO_URL | sed 's|.*github.com/||' | sed 's|.git||')
+                  # Reuse the token already stored by persistCredentials: true
+                  GH_TOKEN=$(git config --get-all http.extraheader | grep -i 'AUTHORIZATION' | sed 's/.*: basic //' | base64 -d | sed 's/.*://')
                   
                   gh pr create \
                     --title "Sync docs to agent skills - $TIMESTAMP" \
