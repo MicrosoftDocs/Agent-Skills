@@ -1,9 +1,9 @@
 ---
 name: azure-firewall
-description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Firewall SKUs, configuring DNAT/SNAT rules, TLS inspection, hub-spoke routing, or Sentinel logging, and other Azure Firewall related development tasks. Not for Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Firewall development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing Firewall SKUs, designing hub-spoke/forced tunneling, configuring DNAT/SNAT, TLS inspection, or IaC deployment, and other Azure Firewall related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall), Azure DDos Protection (use azure-ddos-protection).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firewall Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L49-L57 | Guidance on choosing Azure Firewall Basic/Standard/Premium SKUs, comparing features and performance, and selecting or changing the right SKU for your workload and SMB scenarios. |
 | Architecture & Design Patterns | L58-L69 | Architectural patterns and topologies for Azure Firewall: hub-and-spoke routing, forced tunneling, SLB integration, hybrid connectivity, DNAT with overlapping IPs, DDoS protection, and traffic separation. |
 | Limits & Quotas | L70-L78 | Azure Firewall capacity, IP and SNAT port limits, prescaling ranges, TCP idle timeouts, and behavioral FAQs for scaling and quota-related configuration. |
-| Security | L79-L97 | Securing Azure Firewall: policies, roles, TLS inspection, threat intel, hybrid/AKS/AVD/M365 protection, Sentinel integration, DNAT, and compliance configuration. |
+| Security | L79-L97 | Configuring and securing Azure Firewall: policies, roles, threat intel, TLS inspection, Sentinel integration, hybrid/AKS/AVD/M365 protection, DNAT, compliance, and deployment via portal/PowerShell. |
 | Configuration | L98-L121 | Configuring Azure Firewall rules, DNS/proxy, IP groups, SNAT/DNAT, Premium features, logging/monitoring, and bulk or policy-based rule management and change tracking. |
 | Integrations & Coding Patterns | L122-L126 | Configuring Azure Firewall to securely access Azure Storage via SFTP, including required rules, network paths, and integration patterns for SFTP traffic. |
 | Deployment | L127-L133 | How to deploy Azure Firewall (including Premium) and IP Groups using ARM templates, Bicep, or Terraform, with example templates and infrastructure-as-code guidance. |
@@ -84,7 +84,7 @@ This skill requires **network access** to fetch documentation content:
 | Detect malware using Microsoft Sentinel and Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/detect-malware-with-sentinel |
 | Secure Azure Firewall deployments with Azure Policy | https://learn.microsoft.com/en-us/azure/firewall/firewall-azure-policy |
 | Integrate Azure Firewall with Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/firewall/firewall-sentinel-overview |
-| Configure TLS inspection certificates for Firewall Premium | https://learn.microsoft.com/en-us/azure/firewall/premium-certificates |
+| Configure certificates for Azure Firewall Premium TLS inspection | https://learn.microsoft.com/en-us/azure/firewall/premium-certificates |
 | Deploy Enterprise CA chain for Azure Firewall Premium | https://learn.microsoft.com/en-us/azure/firewall/premium-deploy-certificates-enterprise-ca |
 | Protect AKS clusters using Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/protect-azure-kubernetes-service |
 | Secure Azure Virtual Desktop with Azure Firewall | https://learn.microsoft.com/en-us/azure/firewall/protect-azure-virtual-desktop |

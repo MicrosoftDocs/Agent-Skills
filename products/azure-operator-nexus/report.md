@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: 'Configuring and operating Azure Operator Nexus clusters and network
     fabric: JSON templates, isolation domains, BGP/VRF/route policies, ACLs, QoS,
@@ -7,9 +7,9 @@ category_descriptions:
   security: 'Securing Nexus fabric, clusters, and VMs: RBAC, ACLs, SSH and break-glass
     access, key/cert/secret rotation, Defender/MDE, private endpoints, policies, and
     managed identities.'
-  troubleshooting: 'Diagnosing and fixing Nexus infrastructure issues: bare metal/VM
-    recovery, storage and network faults, Kubernetes/NAKS pod and node problems, and
-    Azure prerequisite/health validation.'
+  troubleshooting: 'Diagnosing and fixing Nexus bare metal, storage, fabric, Kubernetes,
+    and VM issues: provisioning failures, degraded states, connectivity, performance,
+    and log/trace-based troubleshooting.'
   decision-making: Guidance on choosing Nexus SKUs, VM sizes, storage software versions,
     and planning where to place Nexus Kubernetes resources in your deployment.
   limits-quotas: Limits, capacity planning, supported versions, upgrade cadence, isolation
@@ -27,17 +27,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, and deployment. Use when managing Nexus
-  fabric BGP/VRF, ACL/QoS, NAKS clusters, near-edge storage design, or Nexus upgrades,
-  and other Azure Operator Nexus related development tasks. Not for Azure Network
-  Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking),
-  Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual
-  WAN (use azure-virtual-wan).
-use_when: Use when managing Nexus fabric BGP/VRF, ACL/QoS, NAKS clusters, near-edge
-  storage design, or Nexus upgrades, and other Azure Operator Nexus related development
+  clusters, fabric BGP/VRF, ACL/QoS policies, near-edge storage, or Nexus Kubernetes
+  workloads, and other Azure Operator Nexus related development tasks. Not for Azure
+  Network Function Manager (use azure-network-function-manager), Azure Operator Insights
+  (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager),
+  Azure Networking (use azure-networking).
+use_when: Use when managing Nexus clusters, fabric BGP/VRF, ACL/QoS policies, near-edge
+  storage, or Nexus Kubernetes workloads, and other Azure Operator Nexus related development
   tasks.
 confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
-  Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
-  Azure Virtual WAN (use azure-virtual-wan).
+  Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager
+  (use azure-operator-service-manager), Azure Networking (use azure-networking).
 ---
 # Azure Operator Nexus Crawl Report
 
@@ -74,8 +74,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ### Updated Pages
 
-- [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions)
-  - Updated: 2026-02-25T23:03:00.000Z → 2026-02-26T08:00:00.000Z
+- [Collect debug logs for support ticket](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script)
+  - Updated: 2025-09-17T16:51:00.000Z → 2026-03-19T17:11:00.000Z
 
 ## Classified Pages
 
@@ -178,7 +178,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [BareMetal Machine roles](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-near-edge-baremetal-machine-roles) | configuration | 0.70 | A reference for 'machineRoles' on BareMetal Machines will define specific role names, allowed combinations, and their semantics, which are product-specific configuration parameters. |
 | [Check runtime version](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-check-runtime-version) | configuration | 0.70 | Provides specific commands and resource paths to retrieve runtime versions of key Nexus components. |
 | [Cluster Manager Relay Private Endpoint](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-manager-relay-private-endpoint) | security | 0.70 | Describes configuring private endpoints for Azure Relay namespaces; likely includes specific network/security settings, resource types, and parameter values unique to this integration. |
-| [Collect debug logs for support ticket](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script) | troubleshooting | 0.70 | Describes a product-specific log collection script, its parameters, and output used for diagnosing Nexus cluster issues. |
+| [Collect debug logs for support ticket](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script) | troubleshooting | 0.70 | Page describes a product-specific log collector script used when diagnosing issues in an Azure Operator Nexus Kubernetes cluster. It provides concrete, operational troubleshooting guidance (where to run it, in what scenarios, and for Microsoft support) that is unique to this product and not general knowledge, aligning best with the troubleshooting sub-skill. |
 | [Configure service load balancer](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-service-load-balancer) | configuration | 0.70 | Provides Nexus-specific load balancer configuration fields, annotations, and examples that are not generic Kubernetes knowledge. |
 | [Connect to the cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-connect) | security | 0.70 | Details specific connection methods, authentication flows, and constraints (no internet exposure, jump hosts/bastion patterns) unique to Nexus clusters. |
 | [Create dual-stack cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-dual-stack) | configuration | 0.70 | Operator Nexus–specific dual-stack configuration with concrete YAML/spec fields and values for IPv4/IPv6 that go beyond generic Kubernetes knowledge. |

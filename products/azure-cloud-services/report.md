@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-services/azure-cloud-services.csv`
 
@@ -68,11 +68,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 13 | 28.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/cloud-services-extended-support/faq)
-  - Updated: 2025-10-28T20:30:00Z → 2026-03-17T22:33:00Z
 
 ## Classified Pages
 

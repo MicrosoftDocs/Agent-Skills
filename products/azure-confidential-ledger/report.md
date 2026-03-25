@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-25'
 category_descriptions:
   security: Configuring Entra auth and app registration, managing cert- and token-based
     users/roles, enforcing RBAC/UDF security, and verifying enclave/node trust for
@@ -33,13 +33,13 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Total Pages**: 29
 - **Fetched**: 29
 - **Fetch Failed**: 0
-- **Classified**: 19
-- **Unclassified**: 10
+- **Classified**: 18
+- **Unclassified**: 11
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 29
+- **Updated Pages**: 2
+- **Unchanged**: 27
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -49,11 +49,18 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 |------|-------|------------|
 | decision-making | 1 | 3.4% |
 | deployment | 2 | 6.9% |
-| integrations | 8 | 27.6% |
+| integrations | 7 | 24.1% |
 | security | 8 | 27.6% |
-| *(Unclassified)* | 10 | 34.5% |
+| *(Unclassified)* | 11 | 37.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
+  - Updated: 2025-12-05T23:18:00.000Z → 2026-03-25T06:03:00.000Z
+- [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization)
+  - Updated: 2025-07-08T05:13:00.000Z → 2026-03-25T06:03:00.000Z
 
 ## Classified Pages
 
@@ -76,7 +83,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [Python](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-python) | integrations | 0.65 | SDK quickstart typically includes client types, method names, and parameters specific to the confidential ledger Python library, which are product-specific integration details. |
 | [Verify write transaction receipts](https://learn.microsoft.com/en-us/azure/confidential-ledger/verify-write-transaction-receipts) | integrations | 0.65 | Focuses on how to obtain and verify Merkle proof receipts via APIs, which are product-specific verification and integration patterns. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-template) | deployment | 0.60 | ARM template quickstart will define resource types, properties, and constraints specific to confidential ledger deployments, which are product-specific deployment configuration details. |
-| [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization) | integrations | 0.60 | Describes how to use transaction IDs and collection IDs with concrete API usage examples, which are product-specific data access patterns. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-terraform) | deployment | 0.60 | Terraform quickstart includes resource blocks and arguments specific to confidential ledger, representing deployment configuration patterns for this service. |
 
 ## Unclassified Pages
@@ -90,6 +96,7 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | [FAQ](https://learn.microsoft.com/en-us/azure/confidential-ledger/faq) | 0.40 | FAQ likely mixes conceptual and basic usage answers; summary doesn’t show structured troubleshooting or configuration tables. |
 | [Register the confidential ledger resource provider](https://learn.microsoft.com/en-us/azure/confidential-ledger/register-ledger-resource-provider) | 0.40 | Resource provider registration is usually a short how-to without detailed configuration tables or constraints in the summary. |
 | [CLI](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-cli) | 0.30 | CLI quickstart for creating and managing a ledger; no detailed configuration matrices or limits. |
+| [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization) | 0.30 | Explains conceptual data organization (transaction IDs, collection IDs) with examples, but no detailed configuration tables, limits, or product-specific troubleshooting/decision criteria. |
 | [Portal](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-portal) | 0.30 | Portal quickstart focused on basic creation steps; lacks detailed settings tables or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-powershell) | 0.30 | PowerShell quickstart for basic CRUD on ledger; no expert-only configuration or limits. |
-| [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.20 | High-level product overview without concrete limits, configs, or error details. |
+| [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview) | 0.10 | High-level product overview describing what Azure Confidential Ledger is and its benefits; no concrete limits, configuration parameters, error codes, or decision matrices. |

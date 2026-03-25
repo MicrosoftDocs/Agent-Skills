@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   integrations: Using APIs, Resource Graph, webhooks, and integrations (OpsGenie,
     PagerDuty, ServiceNow) to query, route, and automate Azure Service Health and
@@ -10,21 +10,21 @@ category_descriptions:
   configuration: Configuring Azure/Resource Health alerts via ARM, Bicep, and PowerShell,
     plus using Azure Resource Graph tables and queries to retrieve and automate Service
     Health data
-  troubleshooting: Understanding VM Resource Health annotations, causes of degraded/unavailable
-    states, and step-by-step troubleshooting for underlying Azure infrastructure issues
+  troubleshooting: Understanding VM Resource Health annotations, their statuses and
+    causes, and how to troubleshoot and resolve underlying Azure VM health issues
   deployment: Using Azure Policy to create, configure, and manage Service Health alert
     rules at scale across subscriptions and resource groups
   limits-quotas: Details on how long Azure Service Health notifications are kept,
     their lifecycle stages, and retention behavior for different event types
 skill_description: Expert knowledge for Azure Service Health development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when configuring Service Health alerts, ARM/Bicep
-  deployments, Resource Graph queries, webhooks, or ITSM integrations, and other Azure
-  Service Health related development tasks. Not for Azure Monitor (use azure-monitor),
-  Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency),
-  Azure Quotas (use azure-quotas).
-use_when: Use when configuring Service Health alerts, ARM/Bicep deployments, Resource
-  Graph queries, webhooks, or ITSM integrations, and other Azure Service Health related
+  patterns, and deployment. Use when handling Service Health alerts, Resource Graph
+  queries, webhooks, VM health states, or Azure Policy rules, and other Azure Service
+  Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure
+  Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure
+  Quotas (use azure-quotas).
+use_when: Use when handling Service Health alerts, Resource Graph queries, webhooks,
+  VM health states, or Azure Policy rules, and other Azure Service Health related
   development tasks.
 confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability (use
   azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 10
-- **Unchanged**: 37
+- **Updated Pages**: 2
+- **Unchanged**: 45
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -62,33 +62,16 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Updated Pages
 
-- [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview)
-  - Updated: 2025-11-05T08:00:00.000Z → 2026-03-17T08:00:00.000Z
 - [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update)
-  - Updated: 2026-03-03T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Service Health notifications overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-notifications-properties)
-  - Updated: 2026-02-11T06:04:00.000Z → 2026-03-17T08:00:00.000Z
-- [Service Health notifications data properties](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-properties)
-  - Updated: 2026-02-24T18:16:00.000Z → 2026-03-17T08:00:00.000Z
-- [How to create Service health alerts](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-portal)
-  - Updated: 2026-01-22T18:28:00.000Z → 2026-03-17T08:00:00.000Z
-- [Send alerts to outside systems via webhook](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-guide)
-  - Updated: 2025-07-02T17:17:00.000Z → 2026-03-17T08:00:00.000Z
-- [Send alerts with ServiceNow](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-servicenow)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Send alerts using OpsGenie](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-opsgenie)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Create activity log alerts using Bicep](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-bicep)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Create activity log alerts using ARM template](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-arm)
-  - Updated: 2026-02-03T08:00:00.000Z → 2026-03-17T08:00:00.000Z
+  - Updated: 2026-03-17T08:00:00.000Z → 2026-03-19T08:00:00.000Z
+- [Resource Health status for Virtual Machines](https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation)
+  - Updated: 2025-06-06T17:03:00.000Z → 2026-03-19T17:29:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Configure subscriptions for Security advisories](https://learn.microsoft.com/en-us/azure/service-health/security-advisories-add-subscription) | security | 0.85 | Details how to set up and define access to Security advisories, including sensitivity of impacted resources and elevated access requirements; this is concrete RBAC/security configuration. |
-| [Resource Health status for Virtual Machines](https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation) | troubleshooting | 0.85 | Explicitly about messages, meanings, and troubleshooting for VM health statuses; likely maps specific annotations to causes and resolutions, which is classic symptom→cause→solution content. |
 | [Create Resource Health alerts with PowerShell and ARM templates](https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-powershell-template) | configuration | 0.80 | Shows how to create/configure Resource Health alerts via PowerShell and ARM; includes required permissions and specific cmdlets/JSON properties, which are product-specific configuration details. |
 | [Send alerts using OpsGenie](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-opsgenie) | integrations | 0.80 | Covers OpsGenie’s Azure Service Health Integration using webhooks; expected to document specific configuration parameters, payload expectations, and integration settings unique to OpsGenie. |
 | [Send alerts with PagerDuty](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-pagerduty) | integrations | 0.80 | Uses PagerDuty’s custom Microsoft Azure integration type; likely documents specific configuration fields and parameters for this integration. |
@@ -98,6 +81,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Create activity log alerts using ARM template](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-arm) | configuration | 0.70 | ARM template guide for Service Health alerts; ARM JSON schema exposes specific resource types, properties, and allowed values for alert rules, which are detailed configuration parameters unique to this service. |
 | [Create activity log alerts using Bicep](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-bicep) | configuration | 0.70 | Uses Bicep to define Service Health alert rules; Bicep templates typically include parameter names, allowed values, and default settings for alert configuration, which are product-specific configuration details. |
 | [How to access Security advisories through API endpoint](https://learn.microsoft.com/en-us/azure/service-health/access-service-advisories-api) | integrations | 0.70 | Explains how to programmatically access Security Advisory data via a specific API endpoint, including code updates and access requirements. This is a product-specific integration pattern for consuming the Service Health/Security advisories API. |
+| [Resource Health status for Virtual Machines](https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation) | troubleshooting | 0.70 | Described as containing messages, meanings, and troubleshooting for VM resource health statuses, which aligns with symptom → meaning → resolution guidance and product-specific error/status interpretations. |
 | [Sample queries for Impacted resources](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-impacted-samples) | integrations | 0.70 | Provides Azure Resource Graph sample KQL queries specifically for Service Health impacted resources. This is product-specific query and schema usage, matching integrations & coding patterns rather than generic concepts. |
 | [Sample queries for Resource Health](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-health-samples) | integrations | 0.70 | Page is a collection of concrete Azure Resource Graph KQL sample queries targeting Resource Health tables. These are product-specific query patterns and field usages that go beyond generic KQL knowledge, fitting the integrations & coding patterns category. |
 | [Sample queries for Service Health](https://learn.microsoft.com/en-us/azure/service-health/resource-graph-samples) | configuration | 0.70 | Collection of Resource Graph sample queries for Service Health; includes table names, property paths, and query patterns that are product-specific configuration/usage details. |
@@ -120,6 +104,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [How to create Service health alerts](https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-portal) | 0.30 | Step-by-step portal guide for creating Service Health alerts; does not expose detailed config parameter tables, limits, or error mappings beyond generic tutorial content. |
 | [Security notifications overview](https://learn.microsoft.com/en-us/azure/service-health/stay-informed-security) | 0.30 | Security notifications overview and high-level steps to route alerts; likely mentions roles generically but not detailed RBAC scopes or security config parameters. |
 | [AI-generated summary and timelines](https://learn.microsoft.com/en-us/azure/service-health/service-health-ai-summary-timeline) | 0.20 | Overview of AI-generated summaries and timelines for service health alerts; no indication of limits, configuration parameters, or troubleshooting mappings. |
+| [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update) | 0.20 | Portal overview of Azure Service Health dashboard and its capabilities; no specific limits, configuration tables, error codes, or decision matrices are indicated in the summary. |
 | [Billing updates overview](https://learn.microsoft.com/en-us/azure/service-health/billing-elevated-access) | 0.20 | Billing updates overview for in-portal communications; appears informational/UX-focused without expert configuration, limits, or decision matrices. |
 | [Filter Service Health notifications by event level](https://learn.microsoft.com/en-us/azure/service-health/metadata-filter) | 0.20 | Explains using Event level metadata to filter/prioritize notifications; appears conceptual/UX guidance without detailed config tables or numeric thresholds. |
 | [Health advisories overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-advisories) | 0.20 | Explains the purpose and information on the Health advisories pane; high-level portal guidance without product-specific limits, configs, or error-resolution content. |
@@ -133,7 +118,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Service Health notifications data properties](https://learn.microsoft.com/en-us/azure/service-health/service-health-event-properties) | 0.20 | Explains notification data properties and event types at a conceptual level; no concrete configuration parameters, limits, or troubleshooting flows. |
 | [Service Health notifications overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-notifications-properties) | 0.20 | Conceptual overview of Service Health notifications and how they appear in Activity Log; no specific error codes, config tables, or numeric constraints. |
 | [Service issues overview](https://learn.microsoft.com/en-us/azure/service-health/service-issues-blade) | 0.20 | Describes how to view and interpret the Service issues pane in the Azure portal; it's a UI/feature overview without specific limits, configuration tables, error-code mappings, or other expert-only details. |
-| [Azure Service Health Portal](https://learn.microsoft.com/en-us/azure/service-health/service-health-portal-update) | 0.10 | Describes the Azure Service Health portal experience conceptually; lacks detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Azure Service Health overview](https://learn.microsoft.com/en-us/azure/service-health/overview) | 0.10 | High-level overview of Azure Service Health; no detailed limits, configs, roles, or error mappings. |
 | [Azure Status page overview](https://learn.microsoft.com/en-us/azure/service-health/azure-status-overview) | 0.10 | High-level overview of Azure Status page; no numeric limits, configuration tables, error codes, or product-specific settings. |
 | [Planned maintenance overview](https://learn.microsoft.com/en-us/azure/service-health/service-health-planned-maintenance) | 0.10 | Page is an overview of the Planned Maintenance pane in Azure Service Health, describing purpose and high-level behavior without specific limits, configuration parameters, error codes, or decision matrices. |

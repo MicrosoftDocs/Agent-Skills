@@ -43,10 +43,10 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis), Azure
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 57
-- **Deleted Pages**: 1
+- **Unchanged**: 58
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-redis/azure-managed-redis.csv`
 
 ## Classification Statistics
@@ -63,14 +63,6 @@ confusable_not_for: Not for Azure Cache for Redis (use azure-cache-redis), Azure
 | *(Unclassified)* | 10 | 17.2% |
 
 ## Changes
-
-### New Pages
-
-- [Manage data with client tools](https://learn.microsoft.com/en-us/azure/redis/how-to-redis-access-data)
-
-### Deleted Pages
-
-- ~~Configure redis-cli access~~ (https://learn.microsoft.com/en-us/azure/redis/how-to-redis-cli-tool)
 
 ## Classified Pages
 

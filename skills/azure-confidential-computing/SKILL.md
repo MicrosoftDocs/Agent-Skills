@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L60-L69 | Architectural patterns and design guidance for using Azure confidential VMs, SGX enclaves, AKS, and multi-party analytics to build secure AI and containerized workloads. |
 | Limits & Quotas | L70-L74 | Guidance on choosing sizes, quotas, and deployment limits for Intel SGX-enabled VMs in Azure, including capacity planning and scaling considerations. |
 | Security | L75-L90 | Attestation, vTPM, key/secrets handling, and hardening guidance to securely run and monitor Azure confidential VMs, SGX enclaves, AKS confidential containers, and clean rooms. |
-| Configuration | L91-L100 | Configuring Azure confidential VMs and AKS: SGX/device plugins, confidential containers, VMMD/metablob settings, secure key release policies, and rotating customer-managed encryption keys. |
-| Integrations & Coding Patterns | L101-L111 | Coding patterns and samples for building, running, and attesting Intel SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools, and Fortanix/Key Vault integrations. |
-| Deployment | L112-L122 | How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and confidential node pools), create custom images, and set up Fortanix CCM using CLI and ARM templates. |
+| Configuration | L91-L99 | Configuring Azure confidential VMs and AKS: SGX/device plugins, confidential containers, VMMD/metablob settings, secure key release policies, and rotating customer-managed encryption keys. |
+| Integrations & Coding Patterns | L100-L110 | Coding patterns and samples for building, running, and attesting Intel SGX/AMD SEV-SNP confidential apps and containers, including SKR flows, tools, and Fortanix/Key Vault integrations. |
+| Deployment | L111-L121 | How to deploy and migrate Azure confidential VMs/VMSS and AKS (SGX and confidential node pools), create custom images, and set up Fortanix CCM using CLI and ARM templates. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -93,7 +93,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Configure Confidential Containers on AKS (preview) | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-containers-on-aks-preview |
 | Configure AKS Intel SGX device plugin (confcom) | https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-addon |
-| Configure opt-out of VMMD blob for Azure Confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob |
 | Rotate customer-managed keys for Azure confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/key-rotation-offline |
 | Author Secure Key Release policies for Azure confidential TEEs | https://learn.microsoft.com/en-us/azure/confidential-computing/skr-policy-examples |
 | Use Virtual Machine Metablob Disk with confidential VMs | https://learn.microsoft.com/en-us/azure/confidential-computing/virtual-machine-metablob-disk |

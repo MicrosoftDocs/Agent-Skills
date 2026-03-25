@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or SCVMM/VMware integration, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Policy (use azure-policy), Azure Monitor (use azure-monitor).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or SCVMM/VMware integration, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure Virtual Network (use azure-virtual-network).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L72-L79 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
 | Decision Making | L80-L103 | Guidance on planning and choosing Azure Arc options: services, tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale server/data/Kubernetes deployments. |
 | Architecture & Design Patterns | L104-L112 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
-| Limits & Quotas | L113-L129 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
-| Security | L130-L188 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
-| Configuration | L189-L288 | Configuring Azure Arc infrastructure and services: storage, data services, Edge RAG, Kubernetes (GitOps, extensions, Key Vault), servers/agents, networking, monitoring, and workload orchestration. |
+| Limits & Quotas | L113-L128 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
+| Security | L129-L187 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
+| Configuration | L188-L288 | Configuring Azure Arc infrastructure and workloads: storage, data services, Edge RAG, Kubernetes (GitOps, extensions, networking), servers/agents, monitoring, and orchestration settings. |
 | Integrations & Coding Patterns | L289-L310 | Programmatic and automation patterns for Azure Arc: CLI/PowerShell/ARM/SDK usage, Ansible/ConfigMgr/GPO onboarding, VM extensions, ARG queries, Sentinel, Terraform, and Event Grid integration. |
 | Deployment | L311-L340 | Deploying and upgrading Azure Arc components: data controllers, Edge RAG, resource bridge, Arc-enabled Kubernetes, SCVMM, VMware, and related agents, prerequisites, and support matrices. |
 
@@ -120,7 +120,6 @@ This skill requires **network access** to fetch documentation content:
 | Hardware, software, and network requirements for Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/requirements |
 | Feature changes and capabilities in Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/whats-new |
 | Meet network requirements for Azure Arc-enabled Kubernetes connectivity | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/network-requirements |
-| Track Azure Arc-enabled Kubernetes agent versions and changes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/release-notes |
 | Review system requirements and constraints for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/system-requirements |
 | Maintain Azure Arc resource bridge health and uptime | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/maintenance |
 | Understand Azure Arc ESU billing rules and timing | https://learn.microsoft.com/en-us/azure/azure-arc/servers/billing-extended-security-updates |
@@ -251,10 +250,10 @@ This skill requires **network access** to fetch documentation content:
 | Meet system requirements for Azure Arc resource bridge | https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/system-requirements |
 | Configure Azure Arc gateway network endpoints | https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway |
 | Allowed Azure Arc gateway endpoints for servers and Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway-endpoints |
-| Use azcmagent CLI to manage Azure Arc server connections | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent |
+| Use azcmagent CLI to manage Azure Arc servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent |
 | Run azcmagent check to validate Arc network connectivity | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-check |
 | Configure Azure Connected Machine agent settings with azcmagent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-config |
-| Connect servers to Azure Arc using azcmagent connect | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-connect |
+| Configure Azure Arc server connection with azcmagent connect | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-connect |
 | Disconnect Azure Arc servers safely with azcmagent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-disconnect |
 | Manage Azure Arc VM extensions locally with azcmagent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-extension |
 | Generate onboarding keys with azcmagent genkey for Arc VMs | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-genkey |
@@ -262,10 +261,11 @@ This skill requires **network access** to fetch documentation content:
 | View Azure Connected Machine agent license via azcmagent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-license |
 | Collect Azure Arc agent logs with azcmagent logs | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-logs |
 | Inspect Azure Connected Machine agent status with azcmagent show | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-show |
+| Use azcmagent upgrade to update Arc agents | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-upgrade |
 | Check installed Azure Arc agent version with azcmagent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-version |
 | Deploy Azure Monitor Agent to Arc via Policy | https://learn.microsoft.com/en-us/azure/azure-arc/servers/deploy-ama-policy |
 | Deploy Azure management services to Arc at scale | https://learn.microsoft.com/en-us/azure/azure-arc/servers/deploy-management-services |
-| Maintain and reconfigure Azure Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent |
+| Configure and maintain Azure Connected Machine agent | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent |
 | Enable automatic VM extension upgrades on Arc | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-automatic-vm-extension-upgrade |
 | Manage VM extensions on Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions |
 | Manage Arc VM extensions via Azure portal | https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-vm-extensions-portal |

@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector, Azure AI/OpenAI, Entra auth/Private Link, sharding/replication, or CI/CD/Bicep deployments, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector, Azure AI/OpenAI, Entra auth, Private Link/VNet, or sharded/elastic Postgres workloads, and other Azure Database for PostgreSQL related development tasks. Not for Azure Database for MySQL (use azure-database-mysql), Azure Database for MariaDB (use azure-database-mariadb), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -24,21 +24,21 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L58 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS, HA and replicas, CPU/memory/IOPS, slow queries, autovacuum, extensions/CLI/storage, capacity, and migration validation errors. |
+| Troubleshooting | L37-L58 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS, HA health, CPU/memory/IOPS, slow queries, autovacuum, extensions, migrations, replicas, capacity, and CLI/auth errors. |
 | Best Practices | L59-L76 | Performance, security, migration, and tooling best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and backups. |
-| Decision Making | L77-L91 | Guidance for planning and sizing Azure PostgreSQL: choosing hosting and compute tiers, versions, geo-replication/DR, reserved capacity, and validating/sizing targets for migrations and upgrades. |
-| Architecture & Design Patterns | L92-L102 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
-| Limits & Quotas | L103-L122 | Backup/restore and geo-restore behavior, storage types/limits/tuning, quotas and capacity limits, replication/slots, and known migration/conversion limitations for Azure PostgreSQL. |
-| Security | L123-L153 | Securing Azure Database for PostgreSQL: auth (Entra, SCRAM, TLS/SSL), firewall/VNet/Private Link, managed identities, encryption, auditing, roles, policies, and Defender for Cloud. |
+| Decision Making | L77-L90 | Guidance for planning and sizing Azure PostgreSQL: choosing hosting and compute tiers, versions, geo-replication/DR, reserved capacity, and validating/sizing targets for migrations and upgrades. |
+| Architecture & Design Patterns | L91-L101 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
+| Limits & Quotas | L102-L121 | Backup/restore behavior, storage limits/performance, quotas and capacity, replication and connections, and known limitations for Azure Database for PostgreSQL. |
+| Security | L122-L153 | Security features for Azure PostgreSQL: auth (Entra, SCRAM, TLS/SSL), firewall/VNet/Private Link, managed identities, encryption/keys, auditing, Defender, policy, and role/user access control. |
 | Configuration | L154-L241 | Configuring Azure Database for PostgreSQL: server parameters, extensions, HA, maintenance, logging/monitoring, performance tuning, networking, migration settings, and WAL/replication options. |
 | Integrations & Coding Patterns | L242-L271 | Using Azure PostgreSQL with AI/ML (Azure AI, OpenAI, LangChain, Foundry), app SDKs (C#, Java, Python, Go, PHP), VS Code/Copilot, Storage, Data Factory, and migration tools (Ora2Pg, pg_dump). |
-| Deployment | L272-L282 | CI/CD deployment to Azure PostgreSQL, major upgrades, Bicep-based provisioning, app deployments (Django/AKS, Web Apps + VNet), maintenance rollout behavior, and point-in-time restore. |
+| Deployment | L272-L283 | Deploying and upgrading Azure Database for PostgreSQL (pipelines, GitHub Actions, Bicep), app integration (AKS/Django, Web Apps/VNet), maintenance behavior, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot PostgreSQL extension management errors on Azure | https://learn.microsoft.com/en-us/azure/postgresql/extensions/errors-extensions |
-| Monitor and troubleshoot HA health for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-monitor-high-availability |
+| Monitor and interpret HA health status for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/high-availability/how-to-monitor-high-availability |
 | Resolve premigration validation error codes for PostgreSQL migration | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/troubleshoot-error-codes |
 | Interpret and apply autonomous tuning recommendations | https://learn.microsoft.com/en-us/azure/postgresql/monitor/how-to-get-apply-recommendations-from-autonomous-tuning |
 | Troubleshoot TLS connection failures in Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls-troubleshoot |
@@ -79,7 +79,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Plan geo-disaster recovery for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/concepts-geo-disaster-recovery |
 | Choose compute tiers for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-compute |
-| Plan and execute major version upgrades for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade |
 | Decide on reserved capacity purchases for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-reserved-pricing |
 | Choose supported PostgreSQL versions on Azure Flexible Server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-supported-versions |
 | Apply Azure Database for PostgreSQL version policy | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-version-policy |
@@ -108,7 +107,7 @@ This skill requires **network access** to fetch documentation content:
 | Perform geo-restore to paired regions for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/backup-restore/how-to-restore-paired-region |
 | Understand storage limits for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage |
 | Use Premium SSD storage with Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd |
-| Tune Premium SSD v2 storage for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2 |
+| Tune Premium SSD v2 storage performance for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/compute-storage/concepts-storage-premium-ssd-v2 |
 | Review capacity and functional limits for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-limits |
 | Request quota increases for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-request-quota-increase |
 | Review elastic cluster capacity and functional limits | https://learn.microsoft.com/en-us/azure/postgresql/elastic-clusters/concepts-elastic-clusters-limitations |
@@ -116,7 +115,7 @@ This skill requires **network access** to fetch documentation content:
 | Review known issues and limitations of PostgreSQL migration service | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/concepts-known-issues-migration-service |
 | Understand limitations of Oracle-to-PostgreSQL schema conversion tool | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-limitations |
 | Use read replicas in Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/read-replica/concepts-read-replicas |
-| Configure storage autogrow thresholds for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-auto-grow-storage |
+| Configure and understand PostgreSQL storage autogrow thresholds | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-auto-grow-storage |
 | Adjust storage performance for Azure PostgreSQL flexible server | https://learn.microsoft.com/en-us/azure/postgresql/scale/how-to-scale-storage-performance |
 | Configure max_replication_slots and slot usage on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-replication-sending-servers |
 
@@ -145,6 +144,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure firewall rules for Azure PostgreSQL public access | https://learn.microsoft.com/en-us/azure/postgresql/security/security-firewall-rules |
 | Manage PostgreSQL database users on Azure flexible server | https://learn.microsoft.com/en-us/azure/postgresql/security/security-manage-database-users |
 | Use managed identities with Azure PostgreSQL securely | https://learn.microsoft.com/en-us/azure/postgresql/security/security-managed-identity-overview |
+| Configure TLS requirements for Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls |
 | Configure TLS/SSL connections to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-tls-how-to-connect |
 | Update Java client certificates for Azure PostgreSQL TLS | https://learn.microsoft.com/en-us/azure/postgresql/security/security-update-trusted-root-java |
 | Configure authentication parameters on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/server-parameters/param-connections-authentication-authentication |
@@ -273,6 +273,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Deploy database updates via Azure Pipelines to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/azure-pipelines-deploy-database-task |
+| Plan and execute major version upgrades for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/concepts-major-version-upgrade |
 | Use GitHub Actions to deploy changes to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-deploy-github-action |
 | Perform in-place major version upgrades on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/configure-maintain/how-to-perform-major-version-upgrade |
 | Deploy Azure PostgreSQL flexible server using Bicep | https://learn.microsoft.com/en-us/azure/postgresql/developer/create-server-bicep |

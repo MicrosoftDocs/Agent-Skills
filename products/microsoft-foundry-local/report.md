@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   integrations: Patterns and code for calling Foundry Local models/APIs (chat, transcription,
     tools), integrating with SDKs/REST, OpenAI-compatible clients, LangChain, Open
@@ -38,6 +38,13 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Classified**: 15
 - **Unclassified**: 3
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 17
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -48,6 +55,13 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | integrations | 11 | 61.1% |
 | troubleshooting | 1 | 5.6% |
 | *(Unclassified)* | 3 | 16.7% |
+
+## Changes
+
+### Updated Pages
+
+- [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-24T22:15:00.000Z
 
 ## Classified Pages
 
@@ -75,4 +89,4 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |-----------|------------|--------|
 | [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started) | 0.40 | Getting started guide likely shows basic install/run steps but not organized configuration tables, limits, or troubleshooting mappings. |
 | [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture) | 0.20 | Architecture article is conceptual about components and how they work together; no indication of product-specific thresholds or decision matrices. |
-| [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.20 | High-level product overview of Foundry Local; no detailed limits, configs, or error mappings indicated. |
+| [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.10 | High-level conceptual overview of Foundry Local; no numeric limits, configuration tables, error codes, or detailed decision matrices. Primarily describes what the product is and basic usage modes, not expert-only operational details. |

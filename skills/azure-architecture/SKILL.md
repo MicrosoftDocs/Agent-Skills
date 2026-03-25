@@ -1,9 +1,9 @@
 ---
 name: azure-architecture
-description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS, data/AI pipelines, Zero Trust networking, SAP/Oracle migrations, or hybrid/Arc solutions, and other Azure Architecture related development tasks.
+description: Expert guidance for designing Azure solutions using Azure Architecture. Covers reference architectures, solution ideas, design patterns, technology choices, architecture styles, best practices, anti-patterns, example workloads, and migration guides. Use when designing AKS or App Service apps, data/AI pipelines, hybrid/Arc setups, SAP/Oracle migrations, or Zero Trust security, and other Azure Architecture related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Architecture Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Reference Architectures | L37-L93 | End-to-end Azure reference designs for mission-critical, hybrid, and AI/data workloads, covering networking, security, DR, AKS, App Service, data platforms, and integration patterns. |
-| Solution Ideas | L94-L126 | End-to-end Azure solution patterns for AI/ML, analytics, IoT, SAP, security, DevSecOps, networking, and data platforms, showing how to combine services to implement real workloads. |
-| Design Patterns | L127-L181 | Patterns and reference architectures for resilient, scalable Azure apps: messaging, integration, microservices, gateways, caching, multitenancy, transactions, and network/security design. |
-| Technology Choices | L182-L216 | Guides for choosing the right Azure services (compute, storage, data, AI/ML, analytics, messaging, networking, containers) based on workload, data, and architecture needs. |
+| Solution Ideas | L94-L126 | End-to-end solution patterns for AI/ML, analytics, IoT, SAP, security, and networking on Azure, showing how to combine services into complete architectures and workflows. |
+| Design Patterns | L127-L181 | Architecture and implementation of cloud design patterns on Azure: microservices, messaging, resiliency, gateways, multitenancy, identity, caching, and distributed data/workflows. |
+| Technology Choices | L182-L216 | Guides for choosing the right Azure/Fabric services (compute, storage, data, AI/ML, analytics, networking, containers, messaging, search) based on workload, scale, and integration needs. |
 | Architecture Styles | L217-L227 | Azure app architecture patterns: when and how to use Big Compute, Big Data, event-driven, microservices, N-tier, and Web-Queue-Worker styles, with design guidance and tradeoffs. |
-| Best Practices | L228-L291 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, networking, SAP, IoT, APIs, Event Hubs, and generative AI. |
-| Anti-patterns | L292-L306 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
-| Example Workloads | L307-L372 | End-to-end reference architectures for real-world Azure workloads: data/AI pipelines, AKS and networking, hybrid/Arc, security/Zero Trust, mainframe/Oracle/SAP, VDI, and industry-specific solutions. |
-| Migration Guides | L373-L405 | Guides for migrating from AWS/Google/on-prem (Oracle, Kafka, Kubernetes) to Azure, mapping equivalent services, architectures, governance, security, and cost/ops differences. |
+| Best Practices | L228-L288 | Best-practice patterns for designing, securing, scaling, operating, and monitoring Azure apps and infrastructure, including AKS, networking, SAP, IoT, APIs, Event Hubs, and generative AI. |
+| Anti-patterns | L289-L303 | Diagnosing and fixing common Azure performance and scalability anti-patterns (busy DB/front end, chatty I/O, no caching, retry storms, noisy neighbors, sync I/O, monolithic persistence). |
+| Example Workloads | L304-L370 | End-to-end reference architectures and patterns for real-world Azure workloads: data/AI pipelines, AKS and networking, hybrid/Arc, security/Zero Trust, VDI, SAP/Oracle/mainframe, and BI/Fabric solutions. |
+| Migration Guides | L371-L404 | Guides for migrating from AWS/Google/on-prem (including Oracle, Kafka, Kubernetes/EKS) to Azure, mapping equivalent services, architectures, governance, security, and cost/ops practices. |
 
 ### Reference Architectures
 | Topic | URL |
@@ -104,7 +104,7 @@ This skill requires **network access** to fetch documentation content:
 | Design conversation analytics with Foundry Tools | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/unlock-insights-from-conversational-data |
 | Use Cosmos DB change feed for minimal-cost archival | https://learn.microsoft.com/en-us/azure/architecture/databases/idea/minimal-storage-change-feed-replicate-data |
 | Load test Event Hubs and IoT Hub with custom JMeter plugins | https://learn.microsoft.com/en-us/azure/architecture/guide/testing/load-testing/load-testing-with-custom-plugins |
-| Use Azure DNS Private Resolver for hybrid name resolution | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/azure-dns-private-resolver |
+| Implement hybrid DNS with Azure DNS Private Resolver | https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/azure-dns-private-resolver |
 | Design real-time analytics with Service Bus and Data Explorer | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/analytics-service-bus |
 | Create a modern analytics architecture using Azure Databricks | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-databricks-modern-analytics-architecture |
 | Build first security layer with core Azure security services | https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense |
@@ -134,11 +134,11 @@ This skill requires **network access** to fetch documentation content:
 | Implement Transactional Outbox with Cosmos DB and Service Bus | https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-out-box-cosmos |
 | Apply microservices design patterns on Azure | https://learn.microsoft.com/en-us/azure/architecture/microservices/design/patterns |
 | Virtual hub extension pattern for shared services in Virtual WAN | https://learn.microsoft.com/en-us/azure/architecture/networking/guide/private-link-virtual-wan-dns-virtual-hub-extension-pattern |
-| Apply the Ambassador pattern for networked services | https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador |
+| Implement the Ambassador design pattern on Azure | https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador |
 | Use the Anti-corruption Layer pattern with legacy systems | https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer |
 | Implement the Asynchronous Request-Reply pattern on Azure | https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply |
 | Design Backends for Frontends for tailored clients | https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends |
-| Apply the Bulkhead design pattern in Azure apps | https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
+| Apply the Bulkhead pattern for resilient Azure apps | https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
 | Use the Cache-Aside pattern for on-demand caching | https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside |
 | Implement the Choreography pattern for distributed workflows | https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography |
 | Use the Circuit Breaker pattern for resilient calls | https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker |
@@ -183,11 +183,11 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Compare Microsoft machine learning platforms and tools | https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/data-science-and-machine-learning |
-| Select Azure AI services for video and image processing | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/image-video-processing |
-| Choose Azure speech recognition and generation tools | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/speech-recognition-generation |
-| Select Azure targeted language processing services | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/targeted-language-processing |
+| Choose Azure AI services for image and video processing | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/image-video-processing |
+| Select Azure speech recognition and generation services | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/speech-recognition-generation |
+| Choose Azure targeted language processing services | https://learn.microsoft.com/en-us/azure/architecture/data-guide/ai-services/targeted-language-processing |
 | Select Azure data transfer tools and services | https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-transfer |
-| Choose Azure AI services for application workloads | https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/ai-services |
+| Select appropriate Azure AI services for applications | https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/ai-services |
 | Choose Azure technologies for analytics and reporting | https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/analysis-visualizations-reporting |
 | Choose an analytical data store for big data | https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/analytical-data-stores |
 | Select Azure batch processing technologies for big data | https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/batch-processing |
@@ -255,7 +255,6 @@ This skill requires **network access** to fetch documentation content:
 | Scale Azure IoT Hub solutions to millions of devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/scale-iot-solution-azure |
 | Design multitenant architectures for Azure IoT Hub solutions | https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/iot |
 | Secure inbound and outbound internet access for SAP on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound |
-| Apply proven practices for SAP NetWeaver on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-netweaver |
 | Implement SAP S/4HANA on Azure Linux with HA/DR | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana |
 | Apply network best practices for SAP landscapes on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape |
 | Plan secure access to AKS API servers | https://learn.microsoft.com/en-us/azure/architecture/guide/security/access-azure-kubernetes-service-cluster-api-server |
@@ -269,7 +268,6 @@ This skill requires **network access** to fetch documentation content:
 | Use Azure Private Link in hub-spoke networks | https://learn.microsoft.com/en-us/azure/architecture/networking/guide/private-link-hub-spoke-network |
 | Configure DNS for Private Link in Azure Virtual WAN | https://learn.microsoft.com/en-us/azure/architecture/networking/guide/private-link-virtual-wan-dns-guide |
 | Integrate SD-WAN with Azure hub-and-spoke topologies | https://learn.microsoft.com/en-us/azure/architecture/networking/guide/sdwan-integration-in-hub-and-spoke-network-topologies |
-| Implement backup and recovery strategies for AKS | https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-backup-and-recovery |
 | Check and troubleshoot AKS cluster health | https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-cluster-health |
 | Verify AKS connectivity to container registries | https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-container-registry |
 | Validate AKS admission controller health and impact | https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-triage-controllers |
@@ -284,7 +282,6 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient Event Hubs and Azure Functions solutions | https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/resilient-design |
 | Secure Azure Functions integrated with Event Hubs | https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-functions/security |
 | Protect APIs with Application Gateway and API Management | https://learn.microsoft.com/en-us/azure/architecture/web-apps/api-management/architectures/protect-apis |
-| Implement the Modern Web App pattern for Java on Azure | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/java/guidance |
 | Design multi-region Azure App Service for disaster recovery | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/multi-region-app-service/multi-region-app-service |
 | Securely access App Service apps from on-premises networks | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/networking/access-multitenant-web-app-from-on-premises |
 | Protect SPA access tokens using Azure API Management | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/security/secure-single-page-application-authorization |
@@ -358,6 +355,7 @@ This skill requires **network access** to fetch documentation content:
 | Build Dapr-based microservices on Azure Container Apps | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps-dapr |
 | Plan WSUS deployment to update isolated Azure Windows VMs | https://learn.microsoft.com/en-us/azure/architecture/example-scenario/wsus/ |
 | Enable ML inference on Azure IoT Edge devices | https://learn.microsoft.com/en-us/azure/architecture/guide/iot/machine-learning-inference-iot-edge |
+| Implement SAP NetWeaver on Azure with HA and DR | https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-netweaver |
 | Architect and deploy SAS analytics workloads on Azure | https://learn.microsoft.com/en-us/azure/architecture/guide/sas/sas-overview |
 | Manage hybrid Kubernetes clusters with Azure Arc | https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-hybrid-kubernetes |
 | Deploy Azure Arc-enabled SQL Managed Instance for DR | https://learn.microsoft.com/en-us/azure/architecture/hybrid/arc-sql-managed-instance-disaster-recovery |
@@ -401,5 +399,6 @@ This skill requires **network access** to fetch documentation content:
 | Secure AWS environments with Microsoft security solutions | https://learn.microsoft.com/en-us/azure/architecture/guide/aws/aws-azure-security-solutions |
 | Migrate Apache Kafka workloads to Azure services | https://learn.microsoft.com/en-us/azure/architecture/guide/hadoop/apache-kafka-migration |
 | Plan Azure migration architecture and supporting services | https://learn.microsoft.com/en-us/azure/architecture/guide/migration/migration-start-here |
-| Implement Reliable Web App pattern for .NET migrations | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/reliable-web-app/dotnet/guidance |
-| Implement Reliable Web App pattern for Java migrations | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/reliable-web-app/java/guidance |
+| Implement Modern Web App pattern for .NET modernization | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance |
+| Apply Reliable Web App pattern for .NET migration | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/reliable-web-app/dotnet/guidance |
+| Apply Reliable Web App pattern for Java migration | https://learn.microsoft.com/en-us/azure/architecture/web-apps/guides/enterprise-app-patterns/reliable-web-app/java/guidance |

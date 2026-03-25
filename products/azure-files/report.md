@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
-  configuration: 'Configuring Azure Files and Azure File Sync: networking/VPN, private
-    endpoints, DNS, redundancy, cloud tiering, monitoring/alerts, DFS integration,
-    soft delete, and mounting/copying shares.'
+  configuration: 'Configuring Azure Files and File Sync: networking, VPN, endpoints,
+    redundancy, soft delete, DFS, monitoring/alerts, performance metrics, cloud tiering,
+    and mounting/sharing across Windows/Linux.'
   decision-making: Guidance on planning Azure Files deployments, choosing tiers, redundancy,
     billing models, and migration approaches (Windows/Linux, SMB/NFS), plus cost optimization
     and performance sizing.
   best-practices: Disaster recovery, lifecycle, and performance best practices for
     Azure Files and Azure File Sync, including failover planning, server/drive replacement,
     large directory handling, and VDI/FSLogix usage.
-  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra, managed
-    identities), Kerberos, NTFS/share permissions, encryption in transit, firewalls,
-    proxies, and network perimeter configuration.'
+  security: 'Securing Azure Files and Azure File Sync: identity-based SMB/NFS auth
+    (AD DS, Entra, Kerberos), permissions, encryption in transit, network/firewall
+    config, and managed identity access.'
   deployment: Guides for deploying and migrating to Azure Files/Azure File Sync from
     NAS, Linux, GlusterFS, SMB/NFS shares, using tools like Data Box, Storage Mover,
     and Robocopy, plus moving File Sync resources.
@@ -24,17 +24,14 @@ category_descriptions:
     usage.'
 skill_description: Expert knowledge for Azure Files development including best practices,
   decision making, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when configuring Azure File shares/File Sync, private
-  endpoints/VPN, AD/Entra auth, AKS CSI, or SMB/NFS migrations, and other Azure Files
-  related development tasks. Not for Azure Blob Storage (use azure-blob-storage),
-  Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
-  Azure Elastic SAN (use azure-elastic-san).
-use_when: Use when configuring Azure File shares/File Sync, private endpoints/VPN,
-  AD/Entra auth, AKS CSI, or SMB/NFS migrations, and other Azure Files related development
-  tasks.
+  patterns, and deployment. Use when planning Azure Files tiers, File Sync/cloud tiering,
+  SMB/NFS auth, AKS CSI mounts, or app SDK usage, and other Azure Files related development
+  tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp Files (use
+  azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
+use_when: Use when planning Azure Files tiers, File Sync/cloud tiering, SMB/NFS auth,
+  AKS CSI mounts, or app SDK usage, and other Azure Files related development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
-  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
-  Azure Elastic SAN (use azure-elastic-san).
+  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre).
 ---
 # Azure Files Crawl Report
 
@@ -43,13 +40,13 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 - **Total Pages**: 109
 - **Fetched**: 109
 - **Fetch Failed**: 0
-- **Classified**: 93
-- **Unclassified**: 16
+- **Classified**: 92
+- **Unclassified**: 17
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 103
+- **Updated Pages**: 4
+- **Unchanged**: 105
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -60,28 +57,24 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | best-practices | 12 | 11.0% |
 | configuration | 24 | 22.0% |
 | decision-making | 18 | 16.5% |
-| deployment | 9 | 8.3% |
+| deployment | 8 | 7.3% |
 | integrations | 3 | 2.8% |
 | limits-quotas | 4 | 3.7% |
 | security | 23 | 21.1% |
-| *(Unclassified)* | 16 | 14.7% |
+| *(Unclassified)* | 17 | 15.6% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Share snapshots and restores](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files)
-  - Updated: 2026-03-02T23:28:00.000Z → 2026-03-17T08:00:00.000Z
-- [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/storage/files/azure-kubernetes-service-workloads)
-  - Updated: 2026-01-21T06:14:00.000Z → 2026-03-18T08:00:00.000Z
-- [Create a file share (Microsoft.FileShares)](https://learn.microsoft.com/en-us/azure/storage/files/create-file-share)
-  - Updated: 2026-02-18T10:58:00.000Z → 2026-03-17T08:00:00.000Z
-- [Modify a file share](https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share)
-  - Updated: 2026-01-29T18:11:00.000Z → 2026-03-17T08:00:00.000Z
-- [Assign share-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-17T08:00:00.000Z
+- [Monitoring Files data reference](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference)
+  - Updated: 2026-02-03T23:16:00.000Z → 2026-03-11T22:19:00.000Z
+- [Enable authentication for hybrid identities on legacy clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust)
+  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-19T22:26:00.000Z
 - [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-17T22:33:00.000Z
+  - Updated: 2026-03-17T22:33:00.000Z → 2026-03-23T08:00:00.000Z
+- [Migrate from on-premises NAS to a hybrid file server using DataBox](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid-databox)
+  - Updated: 2024-05-06T08:00:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 
@@ -93,9 +86,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Configure managed identities](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-managed-identities) | security | 0.85 | Describes configuring system-assigned managed identities, supported topologies, and required resource relationships; includes product-specific auth configuration. |
 | [Disaster recovery best practices](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-disaster-recovery-best-practices) | best-practices | 0.85 | Explicit DR best practices across HA, backup, and redundancy; product-specific recommendations and patterns for using cloud endpoint and caches. |
 | [Monitoring Azure File Sync data reference](https://learn.microsoft.com/en-us/azure/storage/file-sync/monitor-file-sync-reference) | configuration | 0.85 | Monitoring data reference will list metric names, dimensions, log schemas, and meanings; detailed configuration/monitoring reference not known generically. |
-| [Monitoring Files data reference](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference) | configuration | 0.85 | Explicit monitoring data reference with tables of metric names, dimensions, log categories, and schemas. This is detailed configuration/reference information for monitoring. |
 | [Authorize access using Microsoft Entra ID with OAuth over REST](https://learn.microsoft.com/en-us/azure/storage/files/authorize-oauth-rest) | security | 0.82 | Covers configuring OAuth over REST for Azure Files with Entra ID, including admin-level access semantics and Azure RBAC role assignments, which are detailed security configuration patterns. |
-| [Enable authentication for hybrid identities on legacy clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust) | security | 0.82 | Provides concrete steps and settings to establish cloud trust between on-prem AD DS and Entra ID for Kerberos over SMB to Azure Files, including specific security configuration patterns unique to this integration. |
 | [AD DS overview](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-overview) | security | 0.80 | Details AD DS-based SMB authentication, supported scenarios, and how permissions map between AD DS and Entra ID; includes product-specific security behavior and configuration requirements. |
 | [Change the identity source for authentication](https://learn.microsoft.com/en-us/azure/storage/files/change-identity-source) | security | 0.80 | The page describes how to switch identity sources for Azure Files SMB, including product-specific constraints (only one identity source per storage account), and concrete steps/implications when disabling and enabling identity-based authentication. This is expert, configuration-level IAM/security behavior specific to Azure Files, fitting the security sub-skill. |
 | [Cloud tiering policies overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-policy) | configuration | 0.80 | Explains how volume free space and date policies work together; likely includes specific policy parameters, precedence rules, and example configurations. |
@@ -114,6 +105,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Configure Linux clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable) | security | 0.78 | Details Kerberos-based identity configuration for Linux SMB clients with Azure Files, including specific Entra/AD DS sync requirements and security-related configuration steps unique to this scenario. |
 | [Enable AD DS authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable) | security | 0.78 | Step-by-step configuration of AD DS authentication for Azure Files with product-specific security settings, including required roles, identity configuration, and storage account options beyond generic knowledge. |
 | [Enable Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable) | security | 0.78 | Covers enabling Microsoft Entra Domain Services for SMB Azure file shares with concrete configuration steps, roles, and identity/security settings specific to Azure Files. |
+| [Enable authentication for hybrid identities on legacy clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust) | security | 0.78 | How-to configuration for Microsoft Entra Kerberos authentication and cloud trust between on-prem AD DS and Entra ID for Azure Files. This is product-specific security/identity configuration (RBAC/identity setup, Kerberos over SMB, trust configuration steps), not just conceptual guidance. |
 | [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal) | security | 0.76 | Explains how portal requests to Azure Files are authorized, with specific details on using Entra accounts vs access keys and required permissions, which are product-specific security behaviors. |
 | [Azure File Sync agent silent installation](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-agent-silent-installation) | configuration | 0.75 | Silent installation requires specific command-line parameters, transforms, and options unique to the agent installer. |
 | [Choose your cloud tiering policies](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-choose-cloud-tiering-policies) | decision-making | 0.75 | Explicitly about choosing and adjusting policies; provides scenario-based recommendations for policy values and trade-offs. |
@@ -123,6 +115,8 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Networking considerations for direct access](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview) | configuration | 0.75 | Details networking options (public/private endpoints, VPN, ExpressRoute, DNS, firewall) and recommended secure configurations; product-specific networking configuration guidance. |
 | [Overview of identity-based authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview) | security | 0.75 | Product-specific security overview listing supported identity sources (AD DS, Entra DS, Entra Kerberos) and how they apply to Azure Files; contains concrete authentication modes and scope details. |
 | [Update password](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-update-password) | security | 0.75 | Describes how the AD principal password functions as a Kerberos key for Azure Files and how to rotate it; product-specific security/identity maintenance guidance. |
+| [Monitoring Files data reference](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring-reference) | configuration | 0.74 | A 'monitoring data reference' page for Azure Files will list specific metric names, dimensions, log categories, and possibly schema/field names and values used for monitoring this service. Those are product-specific configuration and reference details that LLMs are unlikely to fully know from training. This fits best under configuration because it defines concrete monitoring data types and parameters rather than general best practices or limits. |
+| [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities) | security | 0.72 | Describes how to configure managed identities in Entra ID for SMB Azure file share access, including identity-based authentication specifics for Windows and Linux VMs. This is product-specific security/identity configuration rather than generic concepts. |
 | [NFS performance](https://learn.microsoft.com/en-us/azure/storage/files/nfs-performance) | best-practices | 0.72 | NFS performance tuning for Azure file shares (such as using the nconnect mount option and other mount/throughput settings) is product- and platform-specific, with concrete configuration guidance for Linux clients and Azure Files. This is actionable optimization advice unique to this service, so it fits best-practices. |
 | [SMB performance](https://learn.microsoft.com/en-us/azure/storage/files/smb-performance) | best-practices | 0.72 | Performance tuning guidance for SMB Azure file shares is product-specific and typically includes concrete recommendations (for example, enabling SMB Multichannel, client/OS settings, and Azure Files configuration choices) that go beyond generic knowledge. These are actionable DO/DON'T style optimizations unique to Azure Files SMB, fitting best-practices. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files) | integrations | 0.70 | Covers .NET-specific patterns and APIs for Azure Files, including SDK classes, methods, and configuration parameters unique to this integration; goes beyond generic .NET or storage usage. |
@@ -141,12 +135,10 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Install Azure File Sync agent extension on Arc-enabled Windows Servers](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extension) | configuration | 0.70 | Describes installing/validating/uninstalling the agent extension; likely includes extension name, parameters, and portal/CLI configuration specifics. |
 | [Java](https://learn.microsoft.com/en-us/azure/storage/files/storage-java-how-to-use-file-storage) | integrations | 0.70 | Provides Java-specific SDK/API usage for Azure Files, including configuration parameters and code patterns for creating/deleting shares, directories, and files; these are product-specific integration details. |
 | [Large directory best practices](https://learn.microsoft.com/en-us/azure/storage/files/nfs-large-directories) | best-practices | 0.70 | Gives specific recommendations for working with very large directories on Azure Files NFS mounts, including mount options, commands, and operational patterns that are unique to this service scenario. |
-| [Managed identities with Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities) | security | 0.70 | Page explains how to use managed identities with Azure Files over SMB and Microsoft Entra ID. It likely contains concrete configuration steps, identity/role assignments, and permission scopes specific to Azure Files and managed identities, which fits product-specific security and authentication configuration. |
 | [Migrate files between Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/migrate-files-between-shares) | configuration | 0.70 | Shows how to use AzCopy/Robocopy to copy between shares, including cross-tier and cross-region scenarios; contains product-specific command usage and options. |
 | [Migrate from Linux to a hybrid file server with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-linux-hybrid) | deployment | 0.70 | Migration guide from Linux to a hybrid Azure File Sync deployment; includes product-specific migration steps and constraints. |
 | [Migrate from an on-premises NAS to Azure file shares with DataBox](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-cloud-databox) | deployment | 0.70 | Covers using Azure Data Box to move NAS data to Azure Files; includes product-specific migration workflow and constraints. |
 | [Migrate from on-premises NAS to a hybrid file server using Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid) | deployment | 0.70 | Describes migrating NAS SMB shares into a hybrid Azure File Sync + Azure Files setup; product-specific migration/deployment workflow. |
-| [Migrate from on-premises NAS to a hybrid file server using DataBox](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid-databox) | deployment | 0.70 | Combines NAS, Azure File Sync, and Data Box for hybrid migration; includes detailed migration path and product-specific constraints. |
 | [Modify a file share](https://learn.microsoft.com/en-us/azure/storage/files/modify-file-share) | decision-making | 0.70 | The page explains how to modify size, cost, and performance characteristics for Azure file shares and distinguishes between classic Microsoft.Storage and Microsoft.FileShares-based shares. This is expert, product-specific guidance for choosing and adjusting performance/size characteristics across different provider models, helping users decide how to configure shares for their needs rather than just a conceptual overview. |
 | [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring) | configuration | 0.70 | Monitoring article likely details which logs/metrics are emitted, how to configure data collection and alert rules; product-specific configuration patterns. |
 | [Monitor Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-monitoring) | configuration | 0.70 | Describes which Azure Monitor metrics/logs are available for Azure Files and how to configure them; includes product-specific metric names, dimensions, and logging options that function as configuration parameters. |
@@ -196,6 +188,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview) | 0.30 | Conceptual overview of cloud tiering behavior; not focused on numeric limits, config tables, or troubleshooting mappings. |
 | [Data protection overview](https://learn.microsoft.com/en-us/azure/storage/files/files-data-protection-overview) | 0.30 | High-level overview of Azure Files data protection options (soft delete, snapshots, backup, sync) without detailed numeric limits, configuration tables, or error-code-based troubleshooting. |
 | [Extend Windows file servers with Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-extend-servers) | 0.30 | Tutorial-style extension of Windows file servers; likely step-by-step but not focused on config matrices, limits, or error mappings. |
+| [Migrate from on-premises NAS to a hybrid file server using DataBox](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-nas-hybrid-databox) | 0.30 | Migration walkthrough for NAS to Azure File Sync via Data Box appears to be a scenario/tutorial flow. The summary does not indicate detailed limits, configuration parameter tables, or error-code-based troubleshooting; it is primarily procedural migration guidance. |
 | [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol) | 0.30 | From the summary this appears to be a conceptual/feature overview of SMB Azure file shares (protocol options, general capabilities, and notes like not mixing SMB and NFS on a single share). There is no evidence of detailed numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Customer case studies](https://learn.microsoft.com/en-us/azure/storage/files/azure-files-case-study) | 0.20 | Customer case studies are narrative/marketing-style usage stories, not technical reference with limits, configs, or error mappings. They don't provide reusable expert configuration or troubleshooting knowledge. |
 | [What is Azure File Sync?](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction) | 0.20 | High-level introduction/overview of Azure File Sync without detailed limits, configs, or troubleshooting mappings. |

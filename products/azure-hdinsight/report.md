@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: 'Configuring and tuning HDInsight clusters: networking/VPN, Ambari/Hive/Spark/HBase
     settings, autoscale, monitoring/logging, SSH/Jupyter/VS Code access, and script-based
@@ -22,25 +22,26 @@ category_descriptions:
   security: 'Securing HDInsight clusters: identity and access (Entra, LDAP, Ranger,
     RBAC), network isolation (NSG, Private Link), TLS/encryption, Kafka/Hive/Spark
     security, and security best practices.'
-  decision-making: Guidance on planning, sizing, upgrading, and migrating HDInsight
-    clusters, including Hadoop, HBase, Kafka, storage, VM sizing, and handling version/feature
-    retirements.
+  decision-making: 'Planning and migration guidance for HDInsight: cluster sizing,
+    storage and VM selection, HBase/Kafka upgrades, version moves, ETL at scale, and
+    retiring or reconfiguring older components.'
   limits-quotas: 'Guidance on HDInsight capacity limits: log size/retention, supported
     cluster node sizes, external metastore constraints, and requesting/managing CPU
     core quota increases.'
 skill_description: Expert knowledge for Azure HDInsight development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  working with HDInsight Spark/Hive/Kafka/HBase, Ambari configs, VNet security, autoscale,
-  or ARM/CLI deployment, and other Azure HDInsight related development tasks. Not
-  for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Stream Analytics (use azure-stream-analytics), Azure Data Factory (use azure-data-factory).
-use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase, Ambari configs,
-  VNet security, autoscale, or ARM/CLI deployment, and other Azure HDInsight related
+  working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari, VNet networking,
+  autoscale, or Azure integrations, and other Azure HDInsight related development
+  tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
+  Azure Data Explorer (use azure-data-explorer).
+use_when: Use when working with HDInsight Spark/Hive/Kafka/HBase clusters, Ambari,
+  VNet networking, autoscale, or Azure integrations, and other Azure HDInsight related
   development tasks.
 confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics),
-  Azure Data Factory (use azure-data-factory).
+  Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure HDInsight Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 425
+- **Updated Pages**: 1
+- **Unchanged**: 424
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -75,6 +76,11 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | *(Unclassified)* | 91 | 21.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-23T17:14:00.000Z
 
 ## Classified Pages
 
@@ -280,6 +286,7 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Enable new Azure Monitor integration](https://learn.microsoft.com/en-us/azure/hdinsight/log-analytics-migration) | best-practices | 0.70 | Migration-focused article with product-specific guidance and recommended usage patterns for new Azure Monitor/Log Analytics tables, likely including concrete query/table details that go beyond generic concepts. |
 | [Enterprise Security Package](https://learn.microsoft.com/en-us/azure/hdinsight/enterprise-security-package) | security | 0.70 | Describes ESP components, AD integration, and security behavior; includes product-specific security configuration patterns and constraints. |
 | [Enterprise security general guidelines](https://learn.microsoft.com/en-us/azure/hdinsight/domain-joined/general-guidelines) | best-practices | 0.70 | Explicitly labeled general guidelines and best practices for ESP deployment and management; includes concrete recommendations specific to HDInsight security. |
+| [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required) | decision-making | 0.70 | The page lists specific HDInsight cluster and component versions with their retirement timelines and required migration actions. These version- and date-specific retirement details are not inferable from general training data and directly support migration and upgrade decisions between versions and components, fitting the decision-making category. |
 | [HDInsight version 4.0](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-40-component-versioning) | configuration | 0.70 | Provides detailed component-version mapping for HDInsight 4.0, which is precise reference configuration information. |
 | [HDInsight version 5.x](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-5x-component-versioning) | configuration | 0.70 | Similar to 4.0 article; contains specific component version tables that are expert reference data. |
 | [HDInsight versions](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning) | configuration | 0.70 | Lists specific OSS components and their versions; version matrices are expert configuration/reference data not generally known. |
@@ -367,7 +374,6 @@ confusable_not_for: Not for Azure Databricks (use azure-databricks), Azure Synap
 | [Customize clusters using Script Action](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) | configuration | 0.65 | Script actions are a product-specific configuration mechanism; article likely details how to target roles/nodes and modify configs beyond generic scripting knowledge. |
 | [Extract, transform, and load at scale](https://learn.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-etl-at-scale) | decision-making | 0.65 | Summarizes how various HDInsight/Hadoop components support ETL at scale and how to use them in the ETL process; likely includes guidance on which components to use for which ETL scenarios, fitting decision-making. |
 | [Failure spark job debugging in IntelliJ (preview)](https://learn.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-intellij-tool-failure-debug) | troubleshooting | 0.65 | Step-by-step guidance for using HDInsight Tools in Azure Toolkit for IntelliJ to debug Spark failure scenarios, including product-specific debug configuration and flows. |
-| [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required) | decision-making | 0.65 | Lists specific HDInsight and component versions with retirement timelines and required migration actions, guiding decisions about when and what to upgrade. |
 | [High availability components](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-high-availability-components) | architecture-patterns | 0.65 | Details HA architecture and failover mechanisms specific to HDInsight, including how components interact for availability. |
 | [High availability of data](https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-high-availability) | best-practices | 0.65 | Covers how to place replicas across Azure fault domains and rebalance partitions; this is product-specific HA configuration guidance and gotchas. |
 | [Install custom apps](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-apps-install-custom-applications) | integrations | 0.65 | Covers installing non-marketplace apps (example: Hue) on HDInsight; likely includes app-specific configuration and HDInsight integration patterns. |

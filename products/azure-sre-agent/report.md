@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: Configuring Azure SRE Agent behavior, code interpreter (Python/shell),
     network/firewall access, and uploading/managing knowledge documents for grounding
@@ -35,14 +35,14 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ## Summary
 
-- **Total Pages**: 65
-- **Fetched**: 65
+- **Total Pages**: 66
+- **Fetched**: 66
 - **Fetch Failed**: 0
 - **Classified**: 33
-- **Unclassified**: 32
+- **Unclassified**: 33
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 65
 - **Deleted Pages**: 0
@@ -52,16 +52,20 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 6 | 9.2% |
-| decision-making | 3 | 4.6% |
+| configuration | 6 | 9.1% |
+| decision-making | 3 | 4.5% |
 | deployment | 1 | 1.5% |
-| integrations | 16 | 24.6% |
-| limits-quotas | 2 | 3.1% |
-| security | 3 | 4.6% |
-| troubleshooting | 2 | 3.1% |
-| *(Unclassified)* | 32 | 49.2% |
+| integrations | 16 | 24.2% |
+| limits-quotas | 2 | 3.0% |
+| security | 3 | 4.5% |
+| troubleshooting | 2 | 3.0% |
+| *(Unclassified)* | 33 | 50.0% |
 
 ## Changes
+
+### New Pages
+
+- [Anthropic subprocessor](https://learn.microsoft.com/en-us/azure/sre-agent/anthropic-sub-processor)
 
 ## Classified Pages
 
@@ -126,6 +130,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | [Workflow automation](https://learn.microsoft.com/en-us/azure/sre-agent/workflow-automation) | 0.30 | High-level workflow automation description; no explicit configuration matrices or numeric constraints indicated. |
 | [Create scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/create-scheduled-task) | 0.25 | Tutorial for creating and editing scheduled tasks; likely focuses on UI workflow rather than detailed configuration matrices or limits. |
 | [General](https://learn.microsoft.com/en-us/azure/sre-agent/faq) | 0.25 | General FAQ about service overview, pricing, and availability; likely high-level and marketing/overview oriented without detailed technical configuration or limits. |
+| [Anthropic subprocessor](https://learn.microsoft.com/en-us/azure/sre-agent/anthropic-sub-processor) | 0.20 | Content is primarily legal/compliance and high-level description of Anthropic as a subprocessor for Azure SRE Agent; it does not expose concrete technical limits, configuration parameters, error codes, or decision matrices that match any sub-skill category. |
 | [Root cause analysis](https://learn.microsoft.com/en-us/azure/sre-agent/root-cause-analysis) | 0.20 | Root cause analysis behavior is described conceptually; no specific error codes, queries, or configuration values are evident. |
 | [Run a deep investigation](https://learn.microsoft.com/en-us/azure/sre-agent/tutorial-deep-investigation) | 0.20 | Tutorial on using deep investigation from chat and response plans; appears to be step-by-step usage guidance without detailed config tables, limits, or error mappings. |
 | [Set up an incident trigger](https://learn.microsoft.com/en-us/azure/sre-agent/response-plan) | 0.20 | Tutorial for creating an incident trigger and routing incidents; likely procedural UI steps without detailed configuration parameter tables or expert-only constraints. |

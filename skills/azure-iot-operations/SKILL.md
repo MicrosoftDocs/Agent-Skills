@@ -1,9 +1,9 @@
 ---
 name: azure-iot-operations
-description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring MQTT broker, OPC UA/ONVIF integrations, Akri discovery, WASM modules, or layered OT/IT topologies, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
+description: Expert knowledge for Azure IoT Operations development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT data flows, MQTT broker, OPC UA/ONVIF integrations, Akri discovery, or WASM edge modules, and other Azure IoT Operations related development tasks. Not for Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Operations Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L54-L59 | Akri-based device discovery architecture and patterns for deploying Azure IoT Operations in layered/segmented industrial networks (DMZ, OT/IT zones, network topologies). |
 | Limits & Quotas | L60-L64 | Details on MQTT broker feature support, protocol limits, and control capabilities in Azure IoT Operations, including which MQTT functions and controls are available or restricted. |
 | Security | L65-L81 | Securing Azure IoT Operations and MQTT broker: TLS/cert management, OPC UA trust, authN/authZ (RBAC, ABAC), secrets/Key Vault, secure endpoints, and image validation. |
-| Configuration | L82-L119 | Configuring Azure IoT Operations data flows, endpoints, schemas, WebAssembly, MQTT broker settings, observability, and device/asset registry to control, monitor, and persist IoT data. |
-| Integrations & Coding Patterns | L120-L137 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
-| Deployment | L138-L148 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
+| Configuration | L82-L120 | Configuring Azure IoT Operations data flows, endpoints, MQTT broker, WASM graphs, observability, and device/asset registry to control routing, transformation, persistence, and monitoring. |
+| Integrations & Coding Patterns | L121-L138 | Patterns and how-tos for integrating external systems with Azure IoT Operations: OPC UA, MQTT, HTTP/SSE, cameras/ONVIF, Akri connectors, WASM/ONNX modules, and the state store protocol. |
+| Deployment | L139-L148 | Deploying and managing Azure IoT Operations on Kubernetes: cluster prep, secure prod/test setups, cloning, upgrades, uninstall, edge WebAssembly deployment, and supported versions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -103,6 +103,7 @@ This skill requires **network access** to fetch documentation content:
 | Build WASM modules for data flows using VS Code | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-build-wasm-modules-vscode |
 | Configure registry endpoints for data flow graphs | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-registry-endpoint |
 | Configure WebAssembly graph definitions for IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-configure-wasm-graph-definitions |
+| Configure and deploy WASM graph definitions in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions |
 | Use MQTT broker state store for data persistence | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/overview-state-store |
 | Define Azure IoT Operations assets and devices in Device Registry | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/concept-assets-devices |
 | Manage Azure IoT Operations resources in the operations experience UI | https://learn.microsoft.com/en-us/azure/iot-operations/discover-manage-assets/howto-use-operations-experience |
@@ -115,7 +116,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Azure MQTT broker for publish/subscribe in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/manage-mqtt-broker/overview-broker |
 | Monitor Layered Network Management with metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-layered-network |
 | Use MQTT broker observability metrics in IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-mqtt-broker |
-| Monitor OPC UA connector with observability metrics | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-opcua-broker |
+| Use OPC UA connector observability metrics in Azure IoT Operations | https://learn.microsoft.com/en-us/azure/iot-operations/reference/observability-metrics-opcua-broker |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -144,5 +145,4 @@ This skill requires **network access** to fetch documentation content:
 | Manage, update, and uninstall Azure IoT Operations instances | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-manage-update-uninstall |
 | Prepare Kubernetes clusters for Azure IoT Operations deployment | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster |
 | Upgrade Azure IoT Operations deployments via portal or CLI | https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-upgrade |
-| Deploy WebAssembly modules and graph definitions to IoT edge | https://learn.microsoft.com/en-us/azure/iot-operations/develop-edge-apps/howto-deploy-wasm-graph-definitions |
 | Check Azure IoT Operations supported versions and environments | https://learn.microsoft.com/en-us/azure/iot-operations/overview-support |

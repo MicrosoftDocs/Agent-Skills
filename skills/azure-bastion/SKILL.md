@@ -1,9 +1,9 @@
 ---
 name: azure-bastion
-description: Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when using Bastion with AKS private clusters, VM scale sets, IP-based access, Kerberos, or hub/spoke VNets, and other Azure Bastion related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
+description: Expert knowledge for Azure Bastion development including troubleshooting, best practices, decision making, architecture & design patterns, security, configuration, and integrations & coding patterns. Use when connecting via SSH/RDP to AKS private clusters or VMSS, using native clients, Kerberos auth, or IP-based Bastion, and other Azure Bastion related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Bastion Skill
@@ -29,8 +29,8 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L45-L51 | Guidance on choosing and upgrading Bastion SKU tiers and using IP-based Bastion connections across VNets, subscriptions, and environments. |
 | Architecture & Design Patterns | L52-L58 | Architectural options and patterns for Azure Bastion: hub/spoke and peered VNets, private-only deployments, network/topology design, and deployment guidance for secure remote access. |
 | Security | L59-L65 | Configuring secure Azure Bastion access: Entra ID authentication, required NSG rules, and hardening best practices to lock down Bastion hosts and connections. |
-| Configuration | L66-L77 | Configuring Azure Bastion settings, scaling, IP-based and Kerberos access, monitoring/metrics, session management/recording, native client use, and shareable links. |
-| Integrations & Coding Patterns | L78-L85 | How to use Azure Bastion with AKS private clusters, VM scale sets, and native Windows/Linux clients, including SSH/RDP connectivity patterns and file transfer via Bastion native clients. |
+| Configuration | L66-L78 | Configuring Azure Bastion behavior: scaling, auth (Kerberos), monitoring/metrics/logs, native client access, session management, recordings, and shareable links. |
+| Integrations & Coding Patterns | L79-L86 | How to use Azure Bastion with AKS private clusters, VM scale sets, and native Windows/Linux clients, including SSH/RDP connectivity patterns and file transfer via Bastion native clients. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -66,7 +66,8 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Reference Azure Bastion configuration settings and options | https://learn.microsoft.com/en-us/azure/bastion/configuration-settings |
+| Understand and set Azure Bastion configuration options | https://learn.microsoft.com/en-us/azure/bastion/configuration-settings |
+| Configure Azure Bastion host scaling settings | https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling |
 | Configure Kerberos authentication for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/kerberos-authentication-portal |
 | Configure monitoring and diagnostics for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion |
 | Reference monitoring metrics and logs for Azure Bastion | https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference |

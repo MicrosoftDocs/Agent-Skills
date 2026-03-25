@@ -48,10 +48,10 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 5
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 17
-- **Deleted Pages**: 7
+- **Unchanged**: 22
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-elastic-san/azure-elastic-san.csv`
 
 ## Classification Statistics
@@ -69,24 +69,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure F
 | *(Unclassified)* | 1 | 4.5% |
 
 ## Changes
-
-### New Pages
-
-- [Create an Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create)
-- [Connect to Windows](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows)
-- [Connect to Linux](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-linux)
-- [Using volume snapshots](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots)
-- [Overview of encryption for Elastic SAN](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-overview)
-
-### Deleted Pages
-
-- ~~Options for using an Elastic SAN with AKS~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-aks-options)
-- ~~Use Kubernetes iSCSI CSI driver~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-aks)
-- ~~Connect to an Elastic SAN volume - Linux~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-linux)
-- ~~Connect to an Elastic SAN volume - Windows~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows)
-- ~~Deploy an Elastic SAN~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-create)
-- ~~Encryption~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-encryption-overview)
-- ~~Use volume snapshots~~ (https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-snapshots)
 
 ## Classified Pages
 

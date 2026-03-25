@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 11 | 16.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-03-17T17:14:00.000Z
-- [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization)
-  - Updated: 2025-11-18T16:22:00.000Z → 2026-03-17T22:17:00.000Z
 
 ## Classified Pages
 

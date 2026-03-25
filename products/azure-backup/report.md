@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
-  configuration: Configuring, automating, monitoring, and managing Azure Backup for
-    VMs, AKS, databases, files, disks, blobs, and vaults, including policies, diagnostics,
-    alerts, and restore operations.
+  configuration: Configuring, automating, monitoring, and governing Azure Backup for
+    VMs, AKS, databases, files, disks, and servers, including policies, diagnostics,
+    alerts, reporting, and restore operations.
   architecture-patterns: 'Azure Backup’s architecture for protecting SAP HANA: components,
     data flow, backup/restore process, scalability, security, and integration with
     Azure storage and recovery services.'
@@ -11,8 +11,8 @@ category_descriptions:
     image SKUs for backup policies, and deciding how to migrate classic backup alerts
     to Azure Monitor alerts.
   limits-quotas: Backup support matrices, regional availability, performance, retention,
-    and quota limits for Azure Backup workloads like VMs, databases, disks, files,
-    blobs, AKS, SAP, and reporting.
+    and quota limits for Azure Backup workloads (VMs, disks, files, DBs, SAP, AKS,
+    Blob) plus metrics and reporting.
   troubleshooting: Diagnosing and fixing Azure Backup errors across VMs, databases
     (SQL, PostgreSQL, MySQL, SAP), files, disks, AKS, MARS/MABS/DPM, vault/agent issues,
     and slow or failed backups/restores.
@@ -30,17 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Backup development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  backing up Azure VMs, AKS, SQL/PostgreSQL/MySQL, SAP HANA, files/disks/blobs, or
-  automating via CLI/PowerShell/REST, and other Azure Backup related development tasks.
-  Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use
-  azure-virtual-machines), Azure Blob Storage (use azure-blob-storage), Azure Files
-  (use azure-files).
-use_when: Use when backing up Azure VMs, AKS, SQL/PostgreSQL/MySQL, SAP HANA, files/disks/blobs,
-  or automating via CLI/PowerShell/REST, and other Azure Backup related development
+  protecting Azure VMs, SQL/PostgreSQL/SAP HANA, AKS, Files/Blobs, or automating backup
+  via CLI/PowerShell/REST, and other Azure Backup related development tasks. Not for
+  Azure Site Recovery (use azure-site-recovery).
+use_when: Use when protecting Azure VMs, SQL/PostgreSQL/SAP HANA, AKS, Files/Blobs,
+  or automating backup via CLI/PowerShell/REST, and other Azure Backup related development
   tasks.
-confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure Virtual
-  Machines (use azure-virtual-machines), Azure Blob Storage (use azure-blob-storage),
-  Azure Files (use azure-files).
+confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery).
 ---
 # Azure Backup Crawl Report
 
@@ -49,14 +45,14 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 - **Total Pages**: 393
 - **Fetched**: 393
 - **Fetch Failed**: 0
-- **Classified**: 229
-- **Unclassified**: 164
+- **Classified**: 230
+- **Unclassified**: 163
 
 ### Incremental Update
-- **New Pages**: 62
-- **Updated Pages**: 10
-- **Unchanged**: 321
-- **Deleted Pages**: 62
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 390
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
 ## Classification Statistics
@@ -69,83 +65,21 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | decision-making | 3 | 0.8% |
 | deployment | 4 | 1.0% |
 | integrations | 52 | 13.2% |
-| limits-quotas | 23 | 5.9% |
+| limits-quotas | 24 | 6.1% |
 | security | 38 | 9.7% |
 | troubleshooting | 27 | 6.9% |
-| *(Unclassified)* | 164 | 41.7% |
+| *(Unclassified)* | 163 | 41.5% |
 
 ## Changes
 
-### New Pages
-
-- [Azure Backup architecture](https://learn.microsoft.com/en-us/azure/backup/backup-architecture)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview)
-- [FAQ- Recovery Services vault](https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-faq)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-vault-overview)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-center-overview)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept)
-- [Quickstart - Enable Multi-user authorization (MUA)](https://learn.microsoft.com/en-us/azure/backup/enable-multi-user-authorization-quickstart)
-- [Tutorial - configure Multi-user authorization (MUA)](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-tutorial)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept)
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage)
-- [Overview of soft delete](https://learn.microsoft.com/en-us/azure/backup/secure-by-default)
-- [Overview of enhanced soft delete](https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-about)
-- [Manage soft deleted items](https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-configure-manage)
-- [Soft delete backups for virtual machines](https://learn.microsoft.com/en-us/azure/backup/soft-delete-virtual-machines)
-- [Soft delete backups for SQL Server and SAP HANA in Azure VMs](https://learn.microsoft.com/en-us/azure/backup/soft-delete-sql-saphana-in-azure-vm)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/private-endpoints-overview)
-- [Create and manage](https://learn.microsoft.com/en-us/azure/backup/private-endpoints)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/backup-azure-private-endpoints-concept)
-- [Create and manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-private-endpoints-configure-manage)
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/threat-detection-overview)
-- *...and 42 more*
-
 ### Updated Pages
 
-- [Transport Layer Security](https://learn.microsoft.com/en-us/azure/backup/transport-layer-security)
-  - Updated: 2025-09-25T11:34:00.000Z → 2026-03-17T17:17:00.000Z
-- [Supported VM SKUs for Azure Policy](https://learn.microsoft.com/en-us/azure/backup/backup-azure-policy-supported-skus)
-  - Updated: 2024-10-16T08:00:00.000Z → 2026-03-17T17:17:00.000Z
-- [Recover files from Azure VM backups](https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm)
-  - Updated: 2025-09-18T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-backup-overview)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-03-17T11:12:00.000Z
-- [FAQ-Azure Backup for AKS](https://learn.microsoft.com/en-us/azure/backup/aks-backup-faq)
-  - Updated: 2025-07-18T17:15:00Z → 2026-03-17T11:12:00Z
-- [Backup](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup)
-  - Updated: 2025-03-24T08:00:00.000Z → 2026-03-17T11:12:00.000Z
-- [Restore](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-restore)
-  - Updated: 2026-01-20T18:13:00.000Z → 2026-03-17T11:12:00.000Z
 - [Manage](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups)
-  - Updated: 2025-06-18T08:00:00.000Z → 2026-03-17T11:12:00.000Z
-- [Offline Backup with Azure Data Box (MARS)](https://learn.microsoft.com/en-us/azure/backup/offline-backup-azure-data-box)
-  - Updated: 2025-04-18T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Configure vault diagnostics settings at scale](https://learn.microsoft.com/en-us/azure/backup/azure-policy-configure-diagnostics)
-  - Updated: 2025-07-14T17:14:00.000Z → 2026-03-18T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Restore~~ (https://learn.microsoft.com/en-us/azure/backup/about-restore-microsoft-azure-recovery-services)
-- ~~Active Directory domain controllers~~ (https://learn.microsoft.com/en-us/azure/backup/active-directory-backup-restore)
-- ~~Glossary of terms~~ (https://learn.microsoft.com/en-us/azure/backup/azure-backup-glossary)
-- ~~Azure Data Lake Storage vaulted backup~~ (https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-overview)
-- ~~Azure Data Lake Storage vaulted backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-support-matrix)
-- ~~Back up Azure Data Lake Storage~~ (https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-backup-tutorial)
-- ~~Azure Elastic SAN backup~~ (https://learn.microsoft.com/en-us/azure/backup/azure-elastic-san-backup-overview)
-- ~~Azure Elastic SAN backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/azure-elastic-san-backup-support-matrix)
-- ~~Azure Files backup~~ (https://learn.microsoft.com/en-us/azure/backup/azure-file-share-backup-overview)
-- ~~Azure files backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/azure-file-share-support-matrix)
-- ~~Azure Kubernetes Service backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-support-matrix)
-- ~~Back up Azure Managed Disks~~ (https://learn.microsoft.com/en-us/azure/backup/back-up-managed-disks-tutorial)
-- ~~Backup architecture~~ (https://learn.microsoft.com/en-us/azure/backup/backup-architecture)
-- ~~FAQ-Recovery Services vaults~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-faq)
-- ~~Azure Database for PostgreSQL -Flexible server backup~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-overview)
-- ~~Azure Database for PostgreSQL -Flexible server backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex-support-matrix)
-- ~~Azure Database for PostgreSQL backup support matrix~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-support-matrix)
-- ~~Enhanced soft delete~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-about)
-- ~~Configure and manage enhanced soft delete~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-configure-manage)
-- ~~Immutable vault~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept)
-- *...and 42 more*
+  - Updated: 2026-03-17T11:12:00.000Z → 2026-03-20T08:00:00.000Z
+- [FAQ-Back up Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq)
+  - Updated: 2025-07-18T17:15:00Z → 2026-03-20T11:20:00Z
+- [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-alerts)
+  - Updated: 2025-12-09T08:00:00.000Z → 2026-03-19T11:16:00.000Z
 
 ## Classified Pages
 
@@ -207,7 +141,6 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Log Analytics Data Model for Legacy Diagnostic Events](https://learn.microsoft.com/en-us/azure/backup/backup-azure-diagnostics-mode-data-model) | configuration | 0.80 | Describes the Azure Diagnostics table schema for Backup in legacy mode; includes specific table and column names and how to query them. |
 | [Log Analytics Data Model for Resource Specific Diagnostic Events](https://learn.microsoft.com/en-us/azure/backup/backup-azure-reports-data-model) | configuration | 0.80 | Data model reference for resource-specific diagnostic events; includes table/field names and schemas used in Log Analytics, which are detailed configuration/reference data. |
 | [Logs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-use-azuremonitor) | configuration | 0.80 | Describes supported scenarios and prerequisites (Log Analytics workspace) and how to wire Azure Backup diagnostics into Azure Monitor Logs; includes product-specific configuration settings. |
-| [Manage](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups) | configuration | 0.80 | Explicitly mentions Azure CLI commands to manage Backup Extension and Trusted Access; this implies detailed, product-specific configuration commands and parameters that qualify as expert configuration knowledge. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/backup/monitor-backup-reference) | configuration | 0.80 | Explicitly a monitoring data reference; such pages list metric/log names, dimensions, and meanings—service-specific configuration/reference data that LLMs won’t reliably know. |
 | [Restore keys and secret for encrypted VMs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-key-secret) | security | 0.80 | Includes specific PowerShell cmdlets, parameters, and flows to restore KEK/BEK from backup; this is detailed, product-specific security and integration knowledge. |
 | [Save and manage MARS agent passphrase in Azure Key Vault](https://learn.microsoft.com/en-us/azure/backup/save-backup-passphrase-securely-in-azure-key-vault) | security | 0.80 | Describes concrete steps and constraints for saving and retrieving MARS passphrases in Key Vault; includes critical security behavior (irrecoverability if lost). |
@@ -256,7 +189,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Use Azure Data Protection REST API](https://learn.microsoft.com/en-us/azure/backup/backup-azure-dataprotection-use-rest-api-create-update-backup-vault) | integrations | 0.75 | Describes REST schema for Backup vault and blob backup policies on the Data Protection platform; includes resource types and parameters specific to this service. |
 | [Use Diagnostic Settings with Log Analytics](https://learn.microsoft.com/en-us/azure/backup/backup-azure-diagnostic-events) | configuration | 0.75 | Explains diagnostics settings for Recovery Services and Backup vaults, including event categories and destinations (storage, event hub, Log Analytics); these are product-specific configuration options. |
 | [Audit and Enforce backup operations for Azure Kubernetes Service clusters using Azure policy](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup-policy) | security | 0.70 | Uses specific built-in Azure Policy definitions for AKS backup enforcement; policy names and scopes are product-specific security/compliance configuration. |
-| [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-alerts) | configuration | 0.70 | Describes how to configure Azure Monitor-based alerts for Azure Backup; involves specific alert rule types, resource scopes, and configuration parameters. |
+| [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-alerts) | configuration | 0.70 | The article provides product-specific configuration steps and settings for enabling and managing Azure Monitor-based alerts for Azure Backup, including which alert rules, scopes, and configurations to use. This is concrete, service-specific configuration knowledge rather than a generic overview, but it does not focus on limits, troubleshooting, or decision matrices. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/backup/policy-reference) | security | 0.70 | Lists Azure Backup–specific built-in policy definitions with names and scopes, which are security/governance configuration artifacts. |
 | [Back up Windows Server files and folders](https://learn.microsoft.com/en-us/azure/backup/backup-windows-with-mars-agent) | configuration | 0.70 | Describes how to configure backup schedules, retention, and included items in the MARS agent UI; these are concrete product-specific configuration parameters and patterns. |
 | [Back up an Azure VM from VM settings](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm) | configuration | 0.70 | Details the VM-level backup configuration flow, including policy and vault selection, which is product-specific. |
@@ -290,6 +223,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [MABS V3 RTM protection matrix](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3) | deployment | 0.70 | Lists what can be protected with Azure Backup Server V3 RTM and earlier in matrix form (workloads vs supported environments), which functions as a deployment/support matrix containing expert, version-specific compatibility details. |
 | [MABS V3 UR1 (and later)](https://learn.microsoft.com/en-us/azure/backup/microsoft-azure-backup-server-protection-v3-ur1) | deployment | 0.70 | Provides a detailed support/protection matrix by workload, version, installation location, and protection/recovery options for MABS v3 UR1; this is a product-specific deployment/support matrix that an LLM would not reliably know. |
 | [MABS V4 (and later) protection matrix](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix) | deployment | 0.70 | Protection matrix is effectively a support/deployment matrix listing which workloads and installations are supported by Azure Backup Server v4; this is product- and version-specific expert knowledge about what can be protected where. |
+| [Manage](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups) | configuration | 0.70 | Contains Azure CLI commands and product-specific configuration steps for registering resource providers, enabling Trusted Access between AKS and Backup vault, and managing the Backup Extension—these are concrete configuration details unique to Azure Backup for AKS rather than generic concepts. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage) | security | 0.70 | How-to for managing immutable vault operations on Recovery Services and Backup vaults, with product-specific security settings and operational constraints. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-manage-mars) | configuration | 0.70 | Managing MARS backups includes editing policies, retention, alerts, and schedules—concrete configuration parameters and monitoring settings. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-manage-cli) | integrations | 0.70 | Shows CLI commands and options to manage SQL backup items, jobs, and policies; these are concrete API/command patterns unique to Azure Backup. |
@@ -347,6 +281,7 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Classic Alerts](https://learn.microsoft.com/en-us/azure/backup/move-to-azure-monitor-alerts) | decision-making | 0.65 | Guides users from classic alerts to Azure Monitor alerts, including when and why to move; this is a decision/migration guidance between alerting solutions. |
 | [Configure SAP HANA database instance snapshot backup](https://learn.microsoft.com/en-us/azure/backup/tutorial-configure-sap-hana-database-instance-snapshot-backup) | configuration | 0.65 | Describes configuring snapshot-based backups combining disk snapshots and HANA commands; involves product-specific backup configuration parameters. |
 | [Configure vaulted backup](https://learn.microsoft.com/en-us/azure/backup/azure-data-lake-storage-configure-backup) | configuration | 0.65 | Portal/CLI/PowerShell configuration of ADLS vaulted backups involves selecting policies and settings—product-specific configuration parameters. |
+| [FAQ-Back up Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq) | limits-quotas | 0.65 | As an FAQ for Azure Backup of Azure Database for PostgreSQL, it is likely to include specific retention behaviors, supported scenarios, and constraints (for example around retirement timelines and vaulted backups) that represent product-specific limits/behavior not inferable from general knowledge. |
 | [FAQ-Protection against Ransomware](https://learn.microsoft.com/en-us/azure/backup/protect-backups-from-ransomware-faq) | security | 0.65 | FAQ on protecting backups from ransomware, including multi-user authorization, soft delete, and encryption. Such a page usually names specific security features, settings, and possibly RBAC roles or permission scopes, which are product-specific security configurations. |
 | [Govern environment](https://learn.microsoft.com/en-us/azure/backup/backup-center-govern-environment) | configuration | 0.65 | Backup governance views, compliance rules, and actions in Backup Center are product-specific configuration/management features. |
 | [Manage](https://learn.microsoft.com/en-us/azure/backup/backup-azure-manage-windows-server) | configuration | 0.65 | Details of dashboard tiles, meanings, and actions for Azure Backup vaults are product-specific configuration/management knowledge. |
@@ -391,7 +326,6 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery), Azure
 | [Configure backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex) | 0.45 | Portal configuration tutorial for PostgreSQL Flexible Server backups; summary doesn’t show detailed config tables or limits. |
 | [FAQ-Azure Disk Backup](https://learn.microsoft.com/en-us/azure/backup/disk-backup-faq) | 0.45 | Azure Disk Backup FAQ. Summary indicates general questions and points to a support matrix for detailed limits, so this page is not the primary expert-knowledge source. |
 | [FAQ-Azure VM backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vm-backup-faq) | 0.45 | FAQ for backing up Azure VMs. The summary doesn’t indicate detailed error-code mappings, config parameter tables, or numeric limits; likely general guidance and common questions. |
-| [FAQ-Back up Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq) | 0.45 | PostgreSQL server backup FAQ. While it mentions retirement dates, that’s an announcement rather than a technical limit/quotas or troubleshooting mapping; overall it’s general FAQ content. |
 | [FAQ-Back up Azure Files](https://learn.microsoft.com/en-us/azure/backup/backup-azure-files-faq) | 0.45 | Azure Files backup FAQ. The summary points to a separate support matrix for detailed scenarios/limits, suggesting this page itself is higher-level Q&A. |
 | [FAQ-Back up SAP HANA databases on Azure VMs](https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm) | 0.45 | SAP HANA backup FAQ. The summary directs to a support matrix for scenarios and limitations, suggesting this FAQ is not the main repository of expert constraints or troubleshooting mappings. |
 | [FAQ-Back up SQL Server databases on Azure VMs](https://learn.microsoft.com/en-us/azure/backup/faq-backup-sql-server) | 0.45 | SQL Server on Azure VM backup FAQ. It points to a support matrix for detailed support scenarios, so this page is likely higher-level Q&A without deep numeric/config details. |

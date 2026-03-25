@@ -74,6 +74,7 @@
 | Create and upload OpenBSD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-openbsd |
 | Prepare Debian Linux VHD images for Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/debian-create-upload-vhd |
 | Use Flatcar Container Linux VHDs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/flatcar-create-upload-vhd |
+| Configure Azure VM Image Builder for Linux gallery images | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder |
 | Author Bicep and ARM templates for Azure Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-json |
 | Configure networking options for Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-networking |
 | Configure NVIDIA GPU drivers on Linux N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup |
@@ -122,7 +123,7 @@
 | Configure Azure Diagnostics Extension for Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/extensions-diagnostics |
 | Set up time sync for AD domain Windows VMs in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/external-ntpsource-configuration |
 | Configure AMD GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-amd-driver-setup |
-| Install NVIDIA GPU drivers on Windows N-series VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
+| Configure NVIDIA GPU drivers on Azure N-series Windows VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup |
 | Use Run Command to execute scripts on Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command |
 | Configure managed Run Command for Windows Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/run-command-managed |
 | Define Azure VM resources in ARM templates | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/template-description |

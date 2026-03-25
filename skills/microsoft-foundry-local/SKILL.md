@@ -3,7 +3,7 @@ name: microsoft-foundry-local
 description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including troubleshooting, best practices, decision making, configuration, and integrations & coding patterns. Use when using Foundry Local CLI, chat/transcription APIs, tools, OpenAI/LangChain clients, or upgrading legacy SDKs, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools), Azure Local (use azure-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Microsoft Foundry Local Skill

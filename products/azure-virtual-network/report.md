@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 127
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 129
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | *(Unclassified)* | 74 | 57.4% |
 
 ## Changes
-
-### New Pages
-
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-
-### Updated Pages
-
-- [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes)
-  - Updated: 2026-02-03T18:20:00.000Z → 2026-03-18T06:15:00.000Z
 
 ## Classified Pages
 

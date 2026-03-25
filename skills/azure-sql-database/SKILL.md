@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore tiers, Hyperscale, geo-replication/HA, Data Sync/sharding, or automated CI/CD deployments, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore/serverless, configuring geo-replication/HA, tuning performance, securing auth/encryption, or automating deployments via ARM/Bicep/Terraform, and other Azure SQL Database related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), capacity/log, import/export, connectivity, geo-replication, Data Sync, and Managed Instance errors. |
-| Best Practices | L60-L76 | Best practices for Azure SQL operations: monitoring, auditing, security, HA/DR, failover, read replicas, maintenance, file space, Data Sync, and post-migration behavior. |
-| Decision Making | L77-L100 | Guidance for choosing Azure SQL service tiers, pricing models, automation/DR options, Hyperscale choices, and migration paths (DTU↔vCore, sharding, Data Sync, Hybrid Benefit, reservations). |
-| Architecture & Design Patterns | L101-L119 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
+| Best Practices | L60-L77 | Best practices for Azure SQL reliability, performance, security, monitoring, DR/HA, maintenance, post-migration operations, and handling T-SQL and Data Sync specifics. |
+| Decision Making | L78-L101 | Guidance for choosing Azure SQL deployment, pricing, and licensing options (DTU vs vCore, serverless, Hyperscale, DR, reservations, automation, migrations, and cost management). |
+| Architecture & Design Patterns | L102-L119 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
 | Limits & Quotas | L120-L133 | Limits, quotas, and resource caps for Azure SQL (free tiers, DTU/vCore, elastic pools, Hyperscale), plus how to request quota increases and watcher/operational constraints. |
-| Security | L134-L204 | Configuring Azure SQL security: auth (Entra, MFA, MI), network isolation, auditing, Defender, data protection (TDE, Always Encrypted, masking, classification), compliance, and best‑practice hardening. |
-| Configuration | L205-L271 | Configuring Azure SQL databases and pools: monitoring, backups, geo-replication/failover, maintenance windows, security/immutability, scaling, elastic jobs/queries, and CLI/PowerShell/REST setup. |
-| Integrations & Coding Patterns | L272-L302 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python), sharding/elastic patterns, and automating management, replication, sync, and streaming via PowerShell/Spark/Stream Analytics |
-| Deployment | L303-L317 | Guides for deploying and moving Azure SQL databases: automation (GitHub, ARM, Bicep, Terraform), Hyperscale setup, regional moves, feature availability, and dev environment setup. |
+| Security | L134-L204 | Securing Azure SQL: auth (Entra, MFA, managed identity), network/firewall, auditing & Defender, encryption (TDE, Always Encrypted), data masking/classification, compliance, and best‑practice hardening. |
+| Configuration | L205-L269 | Configuring Azure SQL databases and pools: monitoring, backups, geo-replication/failover, maintenance windows, security/immutability, scaling, elastic jobs/queries, and CLI/PowerShell/REST setup. |
+| Integrations & Coding Patterns | L270-L303 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node, Python, Spark), sharding/elastic query patterns, auditing, replication/DR, and automation via PowerShell and Stream Analytics. |
+| Deployment | L304-L318 | Guides for deploying and moving Azure SQL databases: automation (GitHub, ARM, Bicep, Terraform), Hyperscale setup, regional moves, feature availability, and dev environment setup. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -63,6 +63,7 @@ This skill requires **network access** to fetch documentation content:
 | Analyze Azure SQL monitoring data with KQL and T-SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-analyze?view=azuresql |
 | Apply auditing best practices in production Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-best-practices?view=azuresql |
 | Run disaster recovery drills for Azure SQL workloads | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills?view=azuresql |
+| Use performance counters for Azure SQL shard map manager | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-perf-counters?view=azuresql |
 | Optimize resource management in dense Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-resource-management?view=azuresql |
 | Configure and operate Azure SQL failover groups with best practices | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql |
 | Manage Azure SQL Database file space and shrinking | https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db |
@@ -82,7 +83,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan deployment of Always Encrypted secure enclaves | https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-enclaves-plan?view=azuresql |
 | Plan and manage Azure SQL Database costs | https://learn.microsoft.com/en-us/azure/azure-sql/database/cost-management?view=azuresql |
 | Choose Azure SQL disaster recovery options for regional outages | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-guidance?view=azuresql |
-| Migrate existing sharded databases to Elastic Tools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-convert-to-use-elastic-tools?view=azuresql |
+| Decide migration path from elastic query shard map manager | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-horizontal-partitioning-migration?view=azuresql |
 | Compare engine features of Azure SQL Database and Managed Instance | https://learn.microsoft.com/en-us/azure/azure-sql/database/features-comparison?view=azuresql |
 | Plan and use Hyperscale elastic pools for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-elastic-pool-overview?view=azuresql |
 | Choose job automation options for Azure SQL and Synapse | https://learn.microsoft.com/en-us/azure/azure-sql/database/job-automation-overview?view=azuresql |
@@ -108,7 +109,6 @@ This skill requires **network access** to fetch documentation content:
 | Understand Azure SQL connectivity architecture and connection policies | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-architecture?view=azuresql |
 | Choose geo-replication patterns for global Azure SQL apps | https://learn.microsoft.com/en-us/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery?view=azuresql |
 | Disaster recovery patterns for Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-strategies-for-applications-with-elastic-pool?view=azuresql |
-| Use elastic query to run cross-database queries in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-overview?view=azuresql |
 | Design elastic scale-out architectures with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction?view=azuresql |
 | Move and rebalance data between sharded Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-overview-split-and-merge?view=azuresql |
 | Configure geo-distributed Azure SQL applications with failover | https://learn.microsoft.com/en-us/azure/azure-sql/database/geo-distributed-application-configure-tutorial?view=azuresql |
@@ -151,7 +151,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Entra authentication for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql |
 | Understand Directory Readers role requirements for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql |
 | Use Microsoft Entra authentication with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql |
-| Configure service principals to create Entra users in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql |
+| Configure Azure SQL Entra service principal user creation | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql |
 | Use Entra service principals with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql |
 | Create Azure SQL server with Entra-only authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?view=azuresql |
 | Create Azure SQL logical server with user-assigned managed identity | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity-create-server?view=azuresql |
@@ -169,7 +169,7 @@ This skill requires **network access** to fetch documentation content:
 | Import/export Azure SQL databases over Private Link | https://learn.microsoft.com/en-us/azure/azure-sql/database/database-import-export-private-link?view=azuresql |
 | Set up dynamic data masking in Azure SQL portal | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-configure-portal?view=azuresql |
 | Configure dynamic data masking in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql |
-| Manage credentials for Elastic Database client library in Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-manage-credentials?view=azuresql |
+| Manage credentials for Elastic Database client apps | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-manage-credentials?view=azuresql |
 | Configure split-merge service security with certificates | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-split-merge-security-configuration?view=azuresql |
 | Configure IP firewall rules for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql |
 | Configure isolated security for Hyperscale named replicas | https://learn.microsoft.com/en-us/azure/azure-sql/database/hyperscale-named-replica-security-configure?view=azuresql |
@@ -224,7 +224,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure and use DNS aliases for Azure SQL servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/dns-alias-overview?view=azuresql |
 | Manage Azure SQL DNS aliases with PowerShell and CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/dns-alias-powershell-create?view=azuresql |
 | Understand DTU benchmark characteristics for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql |
-| Configure performance counters for Elastic shard management | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-perf-counters?view=azuresql |
 | Understand and configure Azure SQL elastic jobs | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql |
 | Configure Azure SQL elastic jobs with PowerShell | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-powershell-create?view=azuresql |
 | Configure Azure SQL elastic jobs with T-SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tsql-create-manage?view=azuresql |
@@ -232,7 +231,6 @@ This skill requires **network access** to fetch documentation content:
 | Create and manage Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-manage?view=azuresql |
 | Configure scaling for Azure SQL elastic pools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-scale?view=azuresql |
 | Configure elastic queries for vertically partitioned databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started-vertical?view=azuresql |
-| Set up elastic queries over sharded Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-horizontal-partitioning?view=azuresql |
 | Configure cross-database queries for different schemas | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-vertical-partitioning?view=azuresql |
 | Enable availability zone redundancy for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/enable-zone-redundancy?view=azuresql |
 | Configure failover groups for Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql |
@@ -278,8 +276,11 @@ This skill requires **network access** to fetch documentation content:
 | Query Azure SQL from Node.js using mssql package | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-javascript-mssql-quickstart?view=azuresql |
 | Connect to Azure SQL using Python mssql-python driver | https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql |
 | Connect and query Azure SQL using Python | https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-python?view=azuresql |
-| Build scalable .NET apps with Azure SQL Elastic Database client library | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-client-library?view=azuresql |
-| Implement data-dependent routing for sharded Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-data-dependent-routing?view=azuresql |
+| Migrate existing sharded databases to Azure SQL elastic tools | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-convert-to-use-elastic-tools?view=azuresql |
+| Use Elastic Database client library for sharding | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-client-library?view=azuresql |
+| Implement cross-database reporting with Azure SQL elastic query | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started?view=azuresql |
+| Configure elastic queries over horizontally partitioned Azure SQL databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-horizontal-partitioning?view=azuresql |
+| Implement data-dependent routing with ShardMapManager | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-data-dependent-routing?view=azuresql |
 | Manage shard maps with Elastic Database client library | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-shard-map-management?view=azuresql |
 | Integrate Elastic Database tools with Entity Framework | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-use-entity-framework-applications-visual-studio?view=azuresql |
 | Integrate Elastic Database tools with Dapper | https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-working-with-dapper?view=azuresql |

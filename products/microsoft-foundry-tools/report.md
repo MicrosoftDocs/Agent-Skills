@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   security: 'Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK
     encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance
@@ -48,6 +48,13 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Classified**: 55
 - **Unclassified**: 29
 
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 83
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
+
 ## Classification Statistics
 
 | Type | Count | Percentage |
@@ -61,6 +68,13 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | limits-quotas | 5 | 6.0% |
 | security | 10 | 11.9% |
 | *(Unclassified)* | 29 | 34.5% |
+
+## Changes
+
+### Updated Pages
+
+- [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources)
+  - Updated: 2025-12-03T23:13:00.000Z → 2026-03-19T17:26:00.000Z
 
 ## Classified Pages
 
@@ -141,7 +155,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.30 | Document overview; conceptual description of capabilities without clear indication of detailed configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/responsible-use-of-ai-overview) | 0.30 | Responsible AI overview with links; conceptual guidance rather than concrete product configuration or limits. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.30 | What's new / release notes; mostly change log and announcements, not stable expert configuration, limits, or troubleshooting guidance. |
-| [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources) | 0.25 | REST API reference index; just a list of links, not the detailed API parameter docs themselves. |
 | [Microsoft Foundry SDKs](https://learn.microsoft.com/en-us/azure/ai-services/reference/sdk-package-resources) | 0.25 | SDK reference index; mostly links to other docs, not detailed configuration or limits itself. |
 | [Build a face-data person directory (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/build-person-directory) | 0.20 | Face person directory tutorial describing capabilities (add/search faces, create profiles); summary suggests high-level usage, not detailed limits, configuration options, or troubleshooting mappings. |
 | [Build a retrieval-augmented generation solution](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/build-rag-solution) | 0.20 | Tutorial-style RAG walkthrough; summary indicates conceptual and procedural guidance without mention of concrete limits, config tables, error codes, or product-specific parameter references. |
@@ -150,6 +163,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-support) | 0.20 | Language support index by service; summary doesn’t show detailed tables or constraints here. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.20 | High-level statement that data is encrypted at rest; no indication of specific configuration parameters, roles, or algorithms. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | Service overview and deprecation notice for Content Moderator; conceptual description without detailed technical parameters in the summary. |
+| [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources) | 0.10 | Page is an overview/index listing REST API references for Foundry Tools without exposing specific limits, configuration parameters, error codes, or decision matrices. It primarily serves as navigation, not detailed expert guidance. |
 | [Support & help options](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-support-options) | 0.10 | Support and help options; meta information about getting assistance, not technical configuration or limits. |
 | [What are Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services) | 0.10 | High-level overview of Foundry Tools capabilities; no concrete limits, configs, or product-specific patterns. |
 | [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | Service overview of Content Understanding; conceptual description without evidence of numeric limits, config tables, or detailed patterns. |

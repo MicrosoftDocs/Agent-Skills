@@ -140,6 +140,7 @@
 | SQL functions reference for Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-functions |
 | System tables and metadata in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-metadata |
 | Use pg_azure_storage extension with Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-pg-azure-storage |
+| Create and query Cosmos DB vector index with TypeScript | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
 | Use .NET SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet |
 | Use Go SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go |
 | Use Java SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java |

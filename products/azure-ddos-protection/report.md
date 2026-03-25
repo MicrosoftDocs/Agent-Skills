@@ -43,8 +43,8 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 21
-- **Unchanged**: 12
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-ddos-protection/azure-ddos-protection.csv`
 
@@ -61,50 +61,6 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Firewall 
 | *(Unclassified)* | 9 | 27.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Azure DDoS Protection features](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-features)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Tier comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-sku-comparison)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Price comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-pricing-guide)
-  - Updated: 2025-07-29T17:38:00.000Z → 2026-03-17T08:00:00.000Z
-- [Cost optimization principles](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-optimization-guide)
-  - Updated: 2025-07-29T17:38:00.000Z → 2026-03-17T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq)
-  - Updated: 2025-03-26T17:06:00Z → 2026-03-17T22:33:00Z
-- [Terraform](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection-terraform)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Inline L7 DDoS protection with Gateway Load Balancer and partner NVAs](https://learn.microsoft.com/en-us/azure/ddos-protection/inline-protection-glb)
-  - Updated: 2025-06-19T22:03:00.000Z → 2026-03-17T08:00:00.000Z
-- [Manage permissions and restrictions](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-permissions)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Onboard partners](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-partner-onboarding)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Components of a DDoS response strategy](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-response-strategy)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Reference architectures](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-reference-architectures)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Types of attacks](https://learn.microsoft.com/en-us/azure/ddos-protection/types-of-attacks)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Configure metric alerts through portal](https://learn.microsoft.com/en-us/azure/ddos-protection/alerts)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Configure diagnostic logging alerts](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-diagnostic-alert-templates)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [View alerts in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-alerts-defender-for-cloud)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [View diagnostic logs in Log Analytics workspace](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-view-diagnostic-logs)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Monitor Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Test with simulation partners](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Engage DDoS Rapid Response (DRR)](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-rapid-response)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/ddos-protection/policy-reference)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- *...and 1 more*
 
 ## Classified Pages
 

@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 103
+- **Updated Pages**: 0
+- **Unchanged**: 104
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-rbac/azure-rbac.csv`
 
@@ -66,11 +66,6 @@ confusable_not_for: Not for Azure Active Directory B2C (use azure-active-directo
 | *(Unclassified)* | 7 | 6.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Assign roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)
-  - Updated: 2025-10-24T17:26:00.000Z → 2026-03-17T22:33:00.000Z
 
 ## Classified Pages
 

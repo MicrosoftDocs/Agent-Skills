@@ -33,8 +33,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 27
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-test-plans/azure-test-plans.csv`
 
@@ -48,23 +48,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | *(Unclassified)* | 30 | 88.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create test plans and test suites](https://learn.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-18T21:04:00.000Z
-- [Create test cases](https://learn.microsoft.com/en-us/azure/devops/test/create-test-cases?view=azure-devops)
-  - Updated: 2026-03-03T18:05:00.000Z → 2026-03-18T21:04:00.000Z
-- [Copy/clone test plans, suites, cases](https://learn.microsoft.com/en-us/azure/devops/test/copy-clone-test-items?view=azure-devops)
-  - Updated: 2026-03-10T13:05:00.000Z → 2026-03-18T21:04:00.000Z
-- [Bulk Import and Export Test cases (CSV/XLSX)](https://learn.microsoft.com/en-us/azure/devops/test/bulk-import-export-test-cases?view=azure-devops)
-  - Updated: 2026-03-03T18:05:00.000Z → 2026-03-18T21:04:00.000Z
-- [Run automated tests from test plans](https://learn.microsoft.com/en-us/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-18T21:04:00.000Z
-- [Manage test runs](https://learn.microsoft.com/en-us/azure/devops/test/test-runs?view=azure-devops)
-  - Updated: 2026-01-14T18:04:00.000Z → 2026-03-18T21:04:00.000Z
-- [Manual testing FAQs](https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops)
-  - Updated: 2026-03-10T13:05:00Z → 2026-03-18T21:04:00Z
 
 ## Classified Pages
 

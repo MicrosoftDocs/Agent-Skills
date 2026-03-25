@@ -1,9 +1,9 @@
 ---
 name: azure-iot-edge
-description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Edge runtime/modules, EFLOW, DPS provisioning, gateways/downstream devices, or CI/CD deployments, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
+description: Expert knowledge for Azure IoT Edge development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring IoT Edge runtime/modules, EFLOW on Windows, DPS/X.509 provisioning, gateways, or CI/CD deployments, and other Azure IoT Edge related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Edge Skill
@@ -29,9 +29,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L53-L59 | Guidance on choosing IoT Edge/EFLOW platforms, provisioning methods, networking setups, and nested virtualization options for different deployment scenarios. |
 | Architecture & Design Patterns | L60-L65 | Gateway design patterns for connecting downstream devices and patterns for handling offline/intermittent connectivity, local processing, and sync behavior in Azure IoT Edge setups. |
 | Limits & Quotas | L66-L70 | Azure IoT Edge service and resource limits: max modules, routes, deployments, message sizes, throttling, and other scalability and quota constraints for edge solutions. |
-| Security | L71-L83 | Securing IoT Edge: certificates (test/production, X.509), auth for downstream devices, confidential computing modules, EST server, Private Link/endpoints, and Linux-on-Windows security. |
-| Configuration | L84-L119 | Configuring IoT Edge runtime, modules, networking, storage, security, metrics, and provisioning (including EFLOW, GPUs, gateways, proxies, DPS, and X.509/symmetric key setups). |
-| Integrations & Coding Patterns | L120-L126 | Remote management patterns for IoT Edge: using direct methods to control the edge agent, collect/upload logs, and build/package custom modules for deployment. |
+| Security | L71-L83 | Certificate-based security for IoT Edge: configuring X.509/EST, test and production certs, downstream device auth, confidential computing modules, and securing traffic with Private Link. |
+| Configuration | L84-L118 | Configuring IoT Edge runtime, modules, networking, storage, security, metrics, and provisioning (including EFLOW, GPUs, gateways, proxies, DPS, and X.509/symmetric key setups). |
+| Integrations & Coding Patterns | L119-L126 | Remote IoT Edge management via direct methods, collecting/uploading logs, building and packaging custom modules, and managing IoT Edge on Windows with EFLOW PowerShell. |
 | Deployment | L127-L135 | Deploying and updating IoT Edge: supported platforms (incl. EFLOW/Kubernetes), runtime/security updates, CI/CD for modules, and managing automatic deployments to device groups. |
 
 ### Troubleshooting
@@ -74,7 +74,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy confidential computing applications as IoT Edge modules | https://learn.microsoft.com/en-us/azure/iot-edge/deploy-confidential-applications |
 | Configure authentication for IoT Edge downstream devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device |
 | Create and install test certificates for Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates |
-| Install and manage production certificates on IoT Edge devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates |
+| Configure and manage certificates for Azure IoT Edge devices | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates |
 | Provision Linux IoT Edge device using X.509 certificates | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-x509 |
 | Configure certificate-based security for Azure IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-certs |
 | Understand and configure security principles for IoT Edge for Linux on Windows | https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-security |
@@ -115,7 +115,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure networking between Windows host and EFLOW virtual machine | https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-networking |
 | Author deployment manifests and routes for IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/module-composition |
 | Configure edgeAgent and edgeHub module twin properties | https://learn.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub |
-| Use EFLOW PowerShell functions to deploy and manage VMs | https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -123,6 +122,7 @@ This skill requires **network access** to fetch documentation content:
 | Use IoT Edge agent direct methods for remote management | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-edgeagent-direct-method |
 | Retrieve and upload Azure IoT Edge logs via direct methods | https://learn.microsoft.com/en-us/azure/iot-edge/how-to-retrieve-iot-edge-logs |
 | Develop and package custom Azure IoT Edge modules | https://learn.microsoft.com/en-us/azure/iot-edge/module-development |
+| Use EFLOW PowerShell functions to manage IoT Edge | https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions |
 
 ### Deployment
 | Topic | URL |

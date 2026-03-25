@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-25'
 category_descriptions:
   limits-quotas: P2S VPN client IP pool sizing, scale limits, and Virtual WAN hub
     routing capabilities, throughput caps, and performance constraints
@@ -42,13 +42,13 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Total Pages**: 129
 - **Fetched**: 129
 - **Fetch Failed**: 0
-- **Classified**: 91
-- **Unclassified**: 38
+- **Classified**: 90
+- **Unclassified**: 39
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 129
+- **Updated Pages**: 1
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -56,7 +56,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 22 | 17.1% |
+| architecture-patterns | 21 | 16.3% |
 | configuration | 48 | 37.2% |
 | decision-making | 2 | 1.6% |
 | deployment | 2 | 1.6% |
@@ -64,9 +64,14 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | limits-quotas | 2 | 1.6% |
 | security | 9 | 7.0% |
 | troubleshooting | 2 | 1.6% |
-| *(Unclassified)* | 38 | 29.5% |
+| *(Unclassified)* | 39 | 30.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference)
+  - Updated: 2024-12-10T08:00:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 
@@ -155,7 +160,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Software-as-a-service(SaaS)](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-palo-alto-cloud-ngfw) | configuration | 0.65 | How-to for integrating Palo Alto Cloud NGFW as a bump-in-the-wire in Virtual WAN; includes product-specific configuration steps and parameters. |
 | [View virtual hub effective routes](https://learn.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub) | configuration | 0.65 | Portal steps to inspect effective routes; includes specific UI elements and interpretation of route data for Virtual WAN. |
 | [Virtual WAN routing deep dive](https://learn.microsoft.com/en-us/azure/virtual-wan/routing-deep-dive) | architecture-patterns | 0.65 | Explains internal routing behavior, interactions between P2S, S2S, ExpressRoute, SD-WAN, and security; includes product-specific routing patterns and edge cases. |
-| [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference) | architecture-patterns | 0.65 | Describes the hub router’s route selection algorithm and routing preference behavior, which is a product-specific routing pattern. |
 | [Any-to-any](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-any-to-any) | architecture-patterns | 0.60 | Scenario article describing how any spoke can reach any other spoke and hub-to-hub routing; product-specific routing pattern. |
 | [Connect cross-tenant virtual networks to a Virtual WAN hub](https://learn.microsoft.com/en-us/azure/virtual-wan/cross-tenant-vnet) | deployment | 0.60 | Describes a specific cross-tenant connectivity deployment pattern using PowerShell and multiple subscriptions/tenants; product-specific deployment requirements. |
 | [Create an NVA in a virtual hub](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-nva-hub) | deployment | 0.60 | Covers deploying Integrated Network Virtual Appliances specifically in a Virtual WAN hub, which involves product-specific deployment steps and constraints distinct from generic VM/NVA deployment. |
@@ -199,6 +203,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Route to shared services VNets](https://learn.microsoft.com/en-us/azure/virtual-wan/quickstart-route-shared-services-vnet-template) | 0.30 | ARM template quickstart for shared services routing; focused on one scenario, not exhaustive configuration or decision guidance. |
 | [Route-maps dashboard](https://learn.microsoft.com/en-us/azure/virtual-wan/route-maps-dashboard) | 0.30 | Explains using the Route Map dashboard to monitor routes and BGP attributes; appears to be a monitoring UI guide without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Virtual WAN FAQ](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-faq) | 0.30 | FAQ-style content; summary indicates general Q&A about GA/preview and regions, not detailed limits, configs, or error mappings. |
+| [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference) | 0.30 | Page appears to describe how the Virtual WAN virtual hub routing preference and route selection algorithm work conceptually. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It is primarily an architectural/behavioral explanation rather than detailed configuration, troubleshooting, or limits content. |
 | [Certificate authentication](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-point-to-site-portal) | 0.25 | User VPN tutorial; summary shows basic how-to steps, not detailed configuration option tables or product-specific gotchas. |
 | [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/virtual-wan/azure-monitor-insights) | 0.20 | Describes Azure Monitor Insights view for Virtual WAN and its topology map; summary suggests UI overview rather than detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Configure a site-to-site connection](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-site-to-site-portal) | 0.20 | Step-by-step tutorial for site-to-site VPN; summary does not mention detailed configuration parameter tables or limits. |

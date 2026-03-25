@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 172
+- **Updated Pages**: 0
+- **Unchanged**: 174
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure Load Balancer (use azure-load-balancer), Azure
 | *(Unclassified)* | 46 | 26.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Ingress Controller add-on for AKS (Greenfield)](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ingress-controller-add-on-new)
-  - Updated: 2025-08-14T17:10:00.000Z → 2026-03-19T06:16:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal)
-  - Updated: 2024-04-04T08:00:00.000Z → 2026-03-18T06:15:00.000Z
 
 ## Classified Pages
 

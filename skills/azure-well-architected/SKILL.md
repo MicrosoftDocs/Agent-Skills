@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, Oracle, SaaS, HPC, or mission‑critical workloads on Azure, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, Oracle, SaaS, or mission‑critical workloads and their cost, reliability, and security tradeoffs, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -24,13 +24,13 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Design Review Checklists | L35-L43 | Checklists to review Azure architectures for cost, operations, performance, reliability, and security best practices and identify design gaps or improvements. |
-| Recommendations | L44-L117 | Prescriptive best practices for Azure workloads: cost optimization, reliability, performance, security, DevOps/automation, DR, observability, and sustainable design across services and environments |
-| Design Principles | L118-L137 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
-| Tradeoffs | L138-L147 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
-| Service Guides | L148-L199 | End-to-end, service-specific Azure Well-Architected guidance for designing, securing, operating, monitoring, and optimizing core Azure services (AVD, AVS, networking, data, app, and infra). |
-| Workload Patterns | L200-L267 | End-to-end design, platform selection, operations, security, and optimization patterns for specific Azure workloads (AI, HPC, mission-critical, Oracle, SaaS, SAP, sustainability). |
-| Assessment Questions | L268-L281 | Guided assessments and maturity reviews for Azure workloads (AI, SaaS, AVD, AVS) across cost, reliability, performance, security, operations, and mission‑critical readiness. |
+| Design Review Checklists | L35-L43 | Checklists to review Azure workloads for cost, operations, performance, reliability, and security, with questions and best practices to identify design gaps and improvements. |
+| Recommendations | L44-L116 | Prescriptive best practices for Azure workloads: cost optimization, reliability, performance, security, sustainability, DevOps/CI-CD, automation, monitoring, DR, and incident management. |
+| Design Principles | L117-L136 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
+| Tradeoffs | L137-L146 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
+| Service Guides | L147-L198 | End-to-end, service-specific Azure Well-Architected guidance for designing, securing, operating, monitoring, and optimizing core Azure services (AVD, AVS, networking, data, app, and infra). |
+| Workload Patterns | L199-L266 | End-to-end design, platform selection, operations, security, and optimization patterns for specific Azure workloads (AI, HPC, mission-critical, Oracle, SaaS, SAP, sustainability). |
+| Assessment Questions | L267-L280 | Guided assessments and maturity reviews for Azure workloads (AI, SaaS, AVD, AVS) across cost, reliability, performance, security, operations, and mission‑critical readiness. |
 
 ### Design Review Checklists
 | Topic | URL |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Operational Excellence design review checklist | https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/checklist |
 | Use the Performance Efficiency design review checklist | https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/checklist |
 | Use reliability design review checklist for Azure | https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist |
-| Use security design review checklist for Azure | https://learn.microsoft.com/en-us/azure/well-architected/security/checklist |
+| Use the Security design review checklist for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/checklist |
 
 ### Recommendations
 | Topic | URL |
@@ -108,10 +108,9 @@ This skill requires **network access** to fetch documentation content:
 | Implement security incident response for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/incident-response |
 | Design monitoring and threat detection for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/monitor-threats |
 | Implement secure networking and connectivity controls | https://learn.microsoft.com/en-us/azure/well-architected/security/networking |
-| Secure the development lifecycle with DevSecOps | https://learn.microsoft.com/en-us/azure/well-architected/security/secure-development-lifecycle |
+| Apply WAF security recommendations to secure the SDLC | https://learn.microsoft.com/en-us/azure/well-architected/security/secure-development-lifecycle |
 | Design segmentation strategies with perimeters and isolation | https://learn.microsoft.com/en-us/azure/well-architected/security/segmentation |
 | Plan and execute security testing for Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/security/test |
-| Perform application threat modeling for security | https://learn.microsoft.com/en-us/azure/well-architected/security/threat-model |
 | Apply security practices for sustainable Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-security |
 | Implement sustainable data and storage design on Azure | https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-storage |
 

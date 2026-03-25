@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   deployment: 'Guides for deploying and configuring Blob Storage: static website hosting
     (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 402
+- **Updated Pages**: 1
+- **Unchanged**: 406
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -74,16 +74,8 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support)
-  - Updated: 2026-02-26T12:27:00.000Z → 2026-03-17T22:33:00.000Z
-- [Performance considerations](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-performance)
-  - Updated: 2023-06-22T17:03:00.000Z → 2026-03-17T22:33:00.000Z
-- [Performance benchmark](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-performance-benchmark)
-  - Updated: 2024-04-18T11:34:00.000Z → 2026-03-17T22:33:00.000Z
-- [Mount storage by using NFS](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-17T22:33:00.000Z
-- [Limitations and known issues](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-known-issues)
-  - Updated: 2026-03-05T12:13:00.000Z → 2026-03-17T22:33:00.000Z
+- [Change feed](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed)
+  - Updated: 2023-11-09T08:00:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 
@@ -442,7 +434,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Analyze storage task runs](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-runs) | 0.40 | Explains how to view and interpret run reports; more usage guidance than deep config, limits, or troubleshooting mappings. |
 | [Blob rehydration overview](https://learn.microsoft.com/en-us/azure/storage/blobs/archive-rehydrate-overview) | 0.40 | Conceptual explanation of archive rehydration options; summary doesn’t show specific SLAs, limits, or detailed config parameters. |
 | [Change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-online-manage) | 0.40 | How-to for setting a blob’s access tier; likely procedural without comprehensive configuration tables or numeric ranges beyond what’s in general docs. |
-| [Change feed](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed) | 0.40 | Primarily conceptual overview of change feed; expert thresholds, limits, or detailed config tables are not evident from the summary. |
 | [Connect from an SFTP client](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support-connect) | 0.40 | Connection how-to for SFTP clients; primarily step-by-step usage, not focused on config matrices, limits, or security roles. |
 | [Create a container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-create) | 0.40 | Basic how-to for creating containers with .NET; likely straightforward SDK usage without deep config tables or product-specific edge cases. |
 | [Define a migration project](https://learn.microsoft.com/en-us/azure/storage-mover/project-manage) | 0.40 | Project management article appears organizational (grouping jobs into projects) without clear indication of detailed configuration parameters or numeric thresholds. |
@@ -466,6 +457,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Bicep](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-bicep) | 0.30 | Bicep quickstart; demonstrates a template, but not a comprehensive config or limits reference. |
 | [BlobFuse2 help](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-help) | 0.30 | Command reference for 'blobfuse2 help'; generic CLI usage, no limits, configs, or troubleshooting mappings. |
 | [BlobFuse2 version](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-commands-version) | 0.30 | Command reference for 'blobfuse2 version'; likely just syntax/usage without limits, configs, or product-specific patterns beyond basic CLI help. |
+| [Change feed](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed) | 0.30 | Appears to be a conceptual/feature overview of Azure Blob Storage change feed (purpose, characteristics like ordered/durable/immutable, and general usage). No clear indication of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices from the provided summary. |
 | [Configure object replication policies](https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-configure) | 0.30 | Configuration walkthrough for object replication but summary does not indicate detailed parameter tables, limits, or product-specific error mappings. Appears to be a how-to/tutorial rather than a reference of expert-only values or constraints. |
 | [Create a storage mover resource](https://learn.microsoft.com/en-us/azure/storage-mover/storage-mover-create) | 0.30 | How-to for creating a Storage Mover resource; likely a step-by-step UI/CLI guide without detailed configuration matrices or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-faq) | 0.30 | FAQ format; likely high-level answers without structured error codes, configuration tables, or numeric limits emphasized. |

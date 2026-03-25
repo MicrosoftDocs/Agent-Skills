@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 274
+- **Updated Pages**: 0
+- **Unchanged**: 275
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | *(Unclassified)* | 49 | 17.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-17T08:00:00.000Z
 
 ## Classified Pages
 

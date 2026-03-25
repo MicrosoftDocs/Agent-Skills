@@ -1,49 +1,48 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
-  architecture-patterns: Designing Azure apps for availability zones, choosing zonal
-    vs zone-redundant resources, and hardening deployments for zone failures and high
-    availability.
-  decision-making: Guidance on using availability zones, nonregional services, and
-    resilient Azure Functions architectures to design highly available, fault-tolerant
-    Azure solutions.
+  architecture-patterns: Designing highly available Azure apps using zones and multi-region
+    patterns, including planning zone-resilient workloads, hardening zonal deployments,
+    and architecting across nonpaired regions
+  decision-making: Guidance on choosing Azure services based on availability zone
+    support and understanding nonregional (global) services and their reliability/availability
+    characteristics.
   deployment: Guidance for migrating Azure Database for MySQL Flexible Server to zone-redundant
     high availability, including architecture, prerequisites, and step-by-step migration
     process.
-  best-practices: Patterns and configurations to make Azure services (AKS, Functions,
-    DBs, messaging, IoT, networking, DR) highly available, resilient to failures,
-    and recover quickly from outages.
+  best-practices: Patterns and guidance for designing, configuring, and hardening
+    high‑availability, disaster recovery, and resilient architectures across specific
+    Azure services and workloads
   limits-quotas: Details on Azure Queue Storage message size limits, including max
     message size, behavior when limits are exceeded, and best practices for handling
     large payloads.
 skill_description: Expert knowledge for Azure Reliability development including best
   practices, decision making, architecture & design patterns, limits & quotas, and
-  deployment. Use when designing AZ zone/zone-redundant setups, resilient Functions,
-  AKS, MySQL HA migrations, or Queue Storage limits, and other Azure Reliability related
-  development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor
-  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre
-  Agent (use azure-sre-agent).
-use_when: Use when designing AZ zone/zone-redundant setups, resilient Functions, AKS,
-  MySQL HA migrations, or Queue Storage limits, and other Azure Reliability related
-  development tasks.
+  deployment. Use when designing zone/multi-region apps, MySQL Flexible Server HA,
+  global services, or Queue Storage limits, and other Azure Reliability related development
+  tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor),
+  Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+use_when: Use when designing zone/multi-region apps, MySQL Flexible Server HA, global
+  services, or Queue Storage limits, and other Azure Reliability related development
+  tasks.
 confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monitor
-  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Sre
-  Agent (use azure-sre-agent).
+  (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site
+  Recovery (use azure-site-recovery).
 ---
 # Azure Reliability Crawl Report
 
 ## Summary
 
-- **Total Pages**: 99
-- **Fetched**: 99
+- **Total Pages**: 100
+- **Fetched**: 100
 - **Fetch Failed**: 0
-- **Classified**: 32
-- **Unclassified**: 67
+- **Classified**: 36
+- **Unclassified**: 64
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 98
+- **New Pages**: 2
+- **Updated Pages**: 5
+- **Unchanged**: 93
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-reliability/azure-reliability.csv`
 
@@ -51,43 +50,61 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 2.0% |
-| best-practices | 26 | 26.3% |
+| architecture-patterns | 3 | 3.0% |
+| best-practices | 29 | 29.0% |
 | decision-making | 2 | 2.0% |
 | deployment | 1 | 1.0% |
 | limits-quotas | 1 | 1.0% |
-| *(Unclassified)* | 67 | 67.7% |
+| *(Unclassified)* | 64 | 64.0% |
 
 ## Changes
 
 ### New Pages
 
-- [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex)
+- [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer)
+- [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql)
+
+### Updated Pages
+
+- [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer)
+  - Updated: 2026-01-30T23:09:00.000Z → 2026-03-20T08:00:00.000Z
+- [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer)
+  - Updated: 2026-01-30T23:09:00.000Z → 2026-03-20T08:00:00.000Z
+- [Multi-region solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired)
+  - Updated: 2026-01-22T23:17:00.000Z → 2026-03-24T11:03:00.000Z
+- [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support)
+  - Updated: 2026-02-20T12:01:00.000Z → 2026-03-24T11:03:00.000Z
+- [Azure Event Grid](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid)
+  - Updated: 2026-03-16T22:13:00.000Z → 2026-03-17T08:00:00.000Z
 
 ### Deleted Pages
 
-- ~~Azure Database for MySQL - Flexible Server~~ (https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex)
+- ~~Azure Database for PostgreSQL~~ (https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-database-postgresql)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support) | decision-making | 0.80 | Lists services and their zonal/zone-redundant offerings; a service-support matrix used to decide which services and deployment models to choose. |
+| [Services with availability zone support](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support) | decision-making | 0.80 | The article enumerates which Azure services support availability zones and in what mode (zonal vs zone-redundant vs nonregional). This is expert, catalog-style information used to decide which services and deployment options to choose for zone-level resiliency, matching decision-making around service and deployment option selection. |
 | [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db-nosql) | best-practices | 0.70 | Explains how to reach 99.999% uptime using AZs, multi-region writes, and automatic failover; highly product-specific reliability design guidance. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex) | deployment | 0.70 | The page gives a concrete, product-specific migration procedure for moving Azure Database for MySQL – Flexible Server from non-AZ to AZ-supported high availability models. It includes detailed, service-specific steps and constraints for performing this migration in production, which go beyond generic knowledge and align best with deployment/migration patterns rather than conceptual guidance. |
+| [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql) | best-practices | 0.70 | Reliability guidance for a specific managed database usually includes concrete recommendations (HA configuration, backup/restore specifics, failover behavior, maintenance windows) that are unique to the service. This is product-specific DO/DON'T style resiliency guidance, aligning with best-practices. |
+| [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer) | best-practices | 0.70 | The page focuses on how to make Azure Load Balancer resilient to specific outage scenarios (transient faults, zone and region outages) and describes concrete, product-specific resiliency patterns and recommendations. This is actionable reliability guidance tied to Azure Load Balancer behavior rather than generic theory, fitting best under best-practices. It does not primarily present limits tables, error-code troubleshooting flows, or SKU comparison matrices. |
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/reliability/reliability-storage-queue) | limits-quotas | 0.70 | Explicitly states a queue message can be up to 64 KB and queues can contain millions of messages up to the storage account capacity; these are concrete numeric limits. |
-| [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/reliability/reliability-azure-database-postgresql) | best-practices | 0.69 | Details zonal vs zone-redundant replicas, automatic failover, and cross-region recovery; concrete HA model and configuration guidance. |
+| [Multi-region solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | architecture-patterns | 0.70 | The page lists Azure services and concrete configuration options for building multi-region solutions when regions aren’t paired. This is service- and platform-specific architecture guidance about how to structure multi-region deployments with particular Azure services, which aligns with architecture-patterns rather than generic concepts. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) | best-practices | 0.69 | SQL Database–specific handling of transient faults, AZ failures, regional failures, maintenance, backup/restore, and SLAs; detailed reliability guidance. |
-| [Azure Event Grid](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid) | best-practices | 0.68 | The page focuses on making Azure Event Grid resilient to specific failure modes (transient faults, AZ failures, regional failures) and describes concrete, product-specific resiliency patterns and recommendations. This is actionable guidance tied to this service rather than generic reliability theory, fitting best under best-practices. It does not emphasize numeric limits, decision matrices, or configuration tables, so other categories are less appropriate. |
 | [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/reliability/reliability-aks) | best-practices | 0.68 | AKS-specific guidance for transient faults, AZs, multi-region support, backups, and maintenance; actionable reliability configuration and patterns. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-hubs) | best-practices | 0.67 | Event Hubs–specific handling of transient faults, AZs, geo-DR, geo-replication, and backups; detailed resiliency guidance. |
 | [App Service Environment](https://learn.microsoft.com/en-us/azure/reliability/reliability-app-service-environment) | best-practices | 0.66 | Provides guidance for making App Service Environment resilient to various outage types and maintenance; product-specific reliability configuration. |
 | [Azure Application Gateway v2](https://learn.microsoft.com/en-us/azure/reliability/reliability-application-gateway-v2) | best-practices | 0.66 | Explains how to use AZs and multi-region deployment patterns for Application Gateway v2 to handle transient faults and outages; product-specific reliability design. |
 | [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/reliability/reliability-iot-hub) | best-practices | 0.66 | IoT Hub–specific strategies for transient faults, AZ and regional failures, backups, and SLA usage; concrete reliability guidance. |
 | [Azure Managed Redis](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis) | best-practices | 0.66 | Guidance for handling transient faults, AZ and region outages, maintenance, and backup/restore in Managed Redis; product-specific resiliency practices. |
+| [Azure Data Explorer](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer) | best-practices | 0.65 | Reliability pages typically include product-specific resiliency guidance (for example, how to configure clusters, ingestion, and query patterns for zone/region failures, and backup/restore behaviors) that go beyond generic concepts. This is actionable, service-specific reliability guidance, fitting best-practices rather than generic architecture patterns. |
 | [Azure Data Factory](https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory) | best-practices | 0.65 | Covers concrete approaches for transient faults, AZ outages, region outages, backup, and SLA usage in Data Factory; service-specific reliability practices. |
+| [Azure Event Grid](https://learn.microsoft.com/en-us/azure/reliability/reliability-event-grid) | best-practices | 0.65 | Reliability content for Event Grid generally covers service-specific behaviors (event delivery guarantees, retry patterns, handling transient faults, zone/region failure strategies) that are not purely conceptual. These are concrete, product-focused recommendations, so best-practices is the closest matching sub-skill. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.65 | The reliability article for Azure Functions focuses on using availability zones, SKUs, and cross-region DR strategies. These are concrete, product-specific recommendations on how to configure Functions for reliability (for example, which SKUs support zones, how to structure cross-region deployments), which aligns with best-practices rather than generic concepts. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/reliability/reliability-functions) | best-practices | 0.65 | The reliability article for Azure Functions focuses on using availability zones, SKUs, and cross-region DR strategies. These are concrete, product-specific recommendations on how to configure Functions for reliability (for example, which SKUs support zones, how to structure cross-region deployments), which aligns with best-practices rather than generic concepts. |
+| [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer) | best-practices | 0.65 | Reliability guidance for Azure Load Balancer is typically product-specific, covering how to handle transient faults, zone and region outages, and shared-responsibility nuances. These are concrete, service-specific resiliency recommendations (for example, patterns for distributing instances across zones/regions and handling health probes) that go beyond generic load balancing concepts, fitting best under best-practices. |
 | [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery) | best-practices | 0.65 | Reliability guidance for Azure Site Recovery is typically organized as concrete recommendations (for example, how to structure replication, failover, and regional placement for resilience to zone/region outages). This is product-specific resiliency guidance rather than generic DR theory, so it fits best-practices. The description suggests actionable patterns for handling transient faults and outages, not just conceptual overview. |
 | [Nonregional Azure services](https://learn.microsoft.com/en-us/azure/reliability/regions-nonregional-services) | decision-making | 0.65 | Provides a list of nonregional services with classification as global or geographic; this is selection/decision data about service scope that’s specific and tabular. |
 | [Overview](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency) | architecture-patterns | 0.65 | Provides concrete guidance on enabling zone resiliency, prioritizing workloads, and mapping services to patterns; this is design-pattern/decision guidance specific to Azure zones. |
@@ -109,7 +126,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Multi-region solutions in nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired) | 0.50 | Multi-region solutions in nonpaired regions; lists services and configurations but summary suggests high-level patterns, not quantified decision matrices. |
 | [Paired and nonpaired regions](https://learn.microsoft.com/en-us/azure/reliability/regions-paired) | 0.50 | Explains region pairs and nonpaired regions; conceptual DR behavior, not detailed limits or configuration matrices. |
 | [What are Azure availability zones?](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview) | 0.50 | Conceptual overview of availability zones and resiliency; no clear numeric thresholds, config parameters, or decision matrices indicated. |
 | [What are Azure regions?](https://learn.microsoft.com/en-us/azure/reliability/regions-overview) | 0.50 | Overview of Azure regions and resiliency options; largely conceptual design guidance without detailed numeric thresholds or config parameters. |
@@ -153,8 +169,6 @@ confusable_not_for: Not for Azure Resiliency (use azure-resiliency), Azure Monit
 | [Azure Elastic SAN](https://learn.microsoft.com/en-us/azure/reliability/reliability-elastic-san) | 0.30 | Reliability support in Azure Elastic SAN; appears to be a conceptual resiliency overview without detailed configuration parameters or numeric thresholds. |
 | [Azure HDInsight](https://learn.microsoft.com/en-us/azure/reliability/reliability-hdinsight) | 0.30 | Reliability in HDInsight with AZs and cross-region recovery; summary indicates high-level guidance rather than specific limits, configs, or error-code troubleshooting. |
 | [Azure HDInsight](https://learn.microsoft.com/en-us/azure/reliability/reliability-hdinsight) | 0.30 | Reliability in HDInsight with AZs and cross-region recovery; summary indicates high-level guidance rather than specific limits, configs, or error-code troubleshooting. |
-| [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer) | 0.30 | Reliability overview for Azure Load Balancer; focuses on shared responsibility and resiliency concepts, not on numeric limits, configuration matrices, or detailed troubleshooting. |
-| [Azure Load Balancer](https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer) | 0.30 | Reliability overview for Azure Load Balancer; focuses on shared responsibility and resiliency concepts, not on numeric limits, configuration matrices, or detailed troubleshooting. |
 | [Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-grafana) | 0.30 | Reliability overview for Azure Managed Grafana; summary mentions shared responsibility, transient faults, AZs, multi-region, backups, and maintenance but does not show concrete limits, configuration tables, or error-code-based troubleshooting. Likely conceptual guidance rather than detailed expert configuration or limits. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-managed-instance) | 0.30 | Reliability overview for Azure SQL Managed Instance; focuses on high availability, backups, and shared responsibility conceptually, not on numeric limits or configuration parameter tables. |

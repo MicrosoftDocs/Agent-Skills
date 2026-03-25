@@ -1,9 +1,9 @@
 ---
 name: azure-synapse-analytics
-description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL, Synapse Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
+description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, Synapse Link, or ADLS/Cosmos DB pipelines, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L63-L121 | Best practices for Synapse: Spark tuning, Delta/Hyperspace optimization, dedicated/serverless SQL design and performance, T-SQL patterns, indexing/stats, and Netezza/Oracle/Teradata migration guidance. |
 | Decision Making | L122-L141 | Guidance on choosing Synapse components, planning migrations (Netezza/Oracle/Teradata/SQL pools), sizing and cost management, Spark lifecycle, table distribution, and using tools like Advisor and query history. |
 | Architecture & Design Patterns | L142-L162 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table design, ELT/PolyBase loading, and workload management. |
-| Limits & Quotas | L163-L173 | Synapse SQL pool limits: maintenance windows, memory/concurrency by performance level, capacity caps, temp table behavior, serverless Delta Lake v1 querying, and Synapse Link feature limits/issues. |
+| Limits & Quotas | L163-L173 | Limits, capacities, and constraints for Synapse SQL pools and Synapse Link (maintenance windows, memory/concurrency, temp tables, Delta Lake v1, Cosmos DB/SQL Link features and known issues). |
 | Security | L174-L232 | Securing Synapse workspaces end-to-end: auth and RBAC, network isolation, private endpoints, encryption, data exfiltration, policies, and secure access to storage, SQL, Spark, and migration scenarios. |
 | Configuration | L233-L283 | Configuring Synapse workspaces, Spark pools, and SQL pools: environments, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML, SynapseML). |
 | Integrations & Coding Patterns | L284-L320 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |

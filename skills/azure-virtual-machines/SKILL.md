@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM SKUs, configuring scale sets, Trusted Launch, disk encryption, or GPU/HPC workloads, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Compute Gallery, Trusted Launch, ADE/CMK disk encryption, HPC/GPU SKUs, or Oracle VM workloads, and other Azure Virtual Machines related development tasks. Not for Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
 | Decision Making | L89-L153 | Guidance for choosing VM sizes, images, disks, costs, and redundancy, plus planning and executing migrations, retirements, DR/backup, and Oracle/Linux workload strategies on Azure VMs |
 | Architecture & Design Patterns | L154-L172 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L173-L379 | VM size specs, disk performance/limits, quotas, lifecycle/support, and performance benchmarks for Azure VMs, including GPU/HPC, confidential, storage-optimized, and OS/disk behaviors. |
+| Limits & Quotas | L173-L379 | VM size specs, disk performance limits, quotas, lifecycle/support, and capacity/packing guidance for Azure VMs, disks, GPU/HPC families, Dedicated Hosts, and OS-specific behaviors. |
 | Security | L380-L457 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image sharing, and TLS cert integration. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: images, disks, networking, maintenance, monitoring, extensions, GPU/HPC, OS agents, SSH/WinRM, Oracle workloads, and platform/patching behaviors. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs, disks, images, extensions, monitoring, maintenance, HPC/GPU, SSH/WinRM, Oracle workloads, and platform features like Compute Gallery, VM watch, and restore points. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
@@ -303,7 +303,7 @@ This skill requires **network access** to fetch documentation content:
 | NV GPU VM family sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family |
 | NV series GPU VM specs and retirement limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
 | NVads A10 v5 GPU VM specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsa10v5-series |
-| NVads V710 v5 GPU VM specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
+| Reference NVads V710 v5 VM size specifications | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
 | NVv3 GPU VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
 | NVv4 GPU VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-series |
 | HB HPC VM sub-family sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hb-family |

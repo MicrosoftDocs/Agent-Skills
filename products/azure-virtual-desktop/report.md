@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-03-25'
 category_descriptions:
   deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
     from classic to current AVD, changing regions, using regional host pools, and
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 148
+- **Updated Pages**: 2
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -73,6 +73,13 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 28 | 18.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
+  - Updated: 2026-03-11T08:00:00.000Z → 2026-03-23T08:00:00.000Z
+- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
+  - Updated: 2026-03-16T08:00:00.000Z → 2026-03-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -223,11 +230,11 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [WebRTC Redirector Service](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-webrtc) | 0.25 | WebRTC Redirector Service release notes; summary suggests version info, not reusable expert configuration or limits. |
 | [Agent](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-agent) | 0.20 | Agent release notes; summary suggests version updates but not structured limits, configs, or error-resolution guidance. |
 | [Autoscale glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-glossary) | 0.20 | Glossary of terms; definitions are conceptual and not configuration, limits, or troubleshooting content. |
-| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.20 | Release notes and high-level feature updates; no detailed limits, configs, error codes, or decision matrices. |
 | [Private Link with Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) | 0.20 | High-level overview of using Private Link with Azure Virtual Desktop; summary indicates conceptual benefits without detailed configuration tables or limits. |
-| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.20 | A 'what's new' change log for the Azure Virtual Desktop SxS Network Stack; summary indicates feature/update descriptions but no evidence of numeric limits, configuration tables, error-code troubleshooting, or other detailed expert parameters. Primarily update/marketing-style content rather than deep technical reference. |
 | [Thin client partners](https://learn.microsoft.com/en-us/azure/virtual-desktop/thin-clients) | 0.20 | Primarily a link-out/navigation page to partner thin client vendors and a generic note about using a browser; no detailed configuration tables or product-specific parameters. |
+| [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) | 0.10 | Release notes / what's new overview without visible detailed limits, configs, or troubleshooting matrices; primarily update announcements rather than deep technical reference. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights-glossary) | 0.10 | A glossary of terms and concepts; definitions are conceptual and not configuration, limits, or troubleshooting content. |
+| [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs) | 0.10 | What's new page for a specific component (SxS Network Stack) focused on feature updates; no clear indication of numeric limits, configuration tables, or error-code-based troubleshooting content. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/virtual-desktop/terminology) | 0.10 | Terminology and conceptual structure only; no product-specific numeric limits, configs, or troubleshooting content. |
 | [What is Azure Virtual Desktop?](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview) | 0.10 | High-level product overview of Azure Virtual Desktop without detailed limits, configs, or error mappings. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-documentation) | 0.05 | Meta page about documentation updates; no technical guidance. |

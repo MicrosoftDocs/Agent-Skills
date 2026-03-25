@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, global distribution, or HTAP workloads, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Blob Storage (use azure-blob-storage).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB Core/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, global distribution, or HTAP, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L90 | Diagnosing and fixing Cosmos DB issues across APIs and SDKs: errors (400–503, 401/403/404/409/429), timeouts, performance, connectivity, CMK/backup, and using metrics/logs for root-cause analysis. |
 | Best Practices | L91-L150 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
 | Decision Making | L151-L206 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating cost/RUs, and planning/migrating workloads across APIs (Core, Mongo, Cassandra, PostgreSQL). |
-| Architecture & Design Patterns | L207-L249 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
-| Limits & Quotas | L250-L289 | Limits, quotas, and behaviors for Cosmos DB (all APIs, backup modes, autoscale, serverless, free tier), plus PostgreSQL/Cassandra/Table/MongoDB constraints, RUs, partitions, and capacity usage. |
-| Security | L290-L356 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, firewalls, Private Link), TLS, auditing, policies, and Defender-based threat protection. |
-| Configuration | L357-L484 | Configuring and deploying Cosmos DB (all APIs) and DocumentDB: throughput, indexing, TTL, backup/restore, global distribution, search/vector, emulators, monitoring, and infrastructure-as-code. |
-| Integrations & Coding Patterns | [integrations.md](integrations.md) | SDK patterns, change feed, vector search, and integration guides for Cosmos DB across APIs (NoSQL, Mongo, Cassandra, PostgreSQL, Gremlin, DocumentDB) plus Kafka, Spark, BI, and migration tools. |
+| Architecture & Design Patterns | L207-L250 | Patterns and architectures for AI agents, vector search, multitenancy, HTAP/analytics, change feed, resiliency, and distributed modeling on Cosmos DB and Cosmos DB for PostgreSQL |
+| Limits & Quotas | L251-L290 | Limits, quotas, and behaviors for Cosmos DB (all APIs, backup modes, autoscale, serverless, free tier), plus PostgreSQL/Cassandra/Table/MongoDB constraints, RUs, partitions, and capacity usage. |
+| Security | L291-L357 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, firewalls, Private Link), TLS, auditing, policies, and Defender-based threat protection. |
+| Configuration | L358-L483 | Configuring and deploying Cosmos DB (all APIs) and DocumentDB: throughput, indexing, TTL, backup/restore, global distribution, search/vector, emulators, monitoring, and infrastructure-as-code. |
+| Integrations & Coding Patterns | [integrations.md](integrations.md) | Patterns and code samples for integrating apps, tools, and data pipelines with Azure Cosmos DB (all APIs), including SDK usage, change feed, Kafka/Spark, vector search, and migrations. |
 | Deployment | [deployment.md](deployment.md) | Deploying and managing Cosmos DB and Azure DocumentDB: ARM/Bicep/Terraform templates, CI/CD, scaling, backup/restore, upgrades, maintenance, and start/stop operations for various APIs. |
 
 ### Troubleshooting
@@ -215,6 +215,7 @@ This skill requires **network access** to fetch documentation content:
 | Design agent memory patterns using Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories |
 | Model AI knowledge graphs on Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/cosmos-ai-graph |
 | Design semantic cache for LLMs using Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-cache |
+| Use Sharded DiskANN for focused Cosmos DB vector search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann |
 | Architect multitenant generative AI apps on Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/multi-tenancy-vector-search |
 | Design for AZ outage resiliency in Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-availability-zones |
 | Design colocated tables in Azure Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-colocation |
@@ -377,7 +378,6 @@ This skill requires **network access** to fetch documentation content:
 | Reference schema for Azure Cosmos DB Fleet Analytics tables | https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-analytics-schema-reference |
 | Configure and use full-text search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search |
 | Configure hybrid vector and full-text search in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hybrid-search |
-| Configure Sharded DiskANN vector indexes in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann |
 | Reference stopwords for Cosmos DB full-text search | https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/stopwords |
 | Interpret Cosmos DB Gremlin response headers | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/headers |
 | Use execution profile in Cosmos DB Gremlin | https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/reference-execution-profile |
@@ -457,7 +457,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Cosmos DB Table containers via portal and SDKs | https://learn.microsoft.com/en-us/azure/cosmos-db/table/how-to-create-container |
 | Provision Azure Cosmos DB Table accounts with Bicep | https://learn.microsoft.com/en-us/azure/cosmos-db/table/manage-with-bicep |
 | Configure global distribution for Cosmos DB for Table | https://learn.microsoft.com/en-us/azure/cosmos-db/table/tutorial-global-distribution |
-| Configure throughput buckets for shared Cosmos DB workloads | https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-buckets |
 | Configure time-to-live (TTL) expiration in Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live |
 | Tune connection configuration for Cosmos DB Java SDK v4 | https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-java-sdk-v4 |
 | Tune connection configuration for Cosmos DB .NET SDK v3 | https://learn.microsoft.com/en-us/azure/cosmos-db/tune-connection-configurations-net-sdk-v3 |

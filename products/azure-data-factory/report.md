@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: Configuring ADF and integration runtimes (Azure, self-hosted, SSIS,
     Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring,
@@ -49,14 +49,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 521
 - **Fetched**: 521
 - **Fetch Failed**: 0
-- **Classified**: 449
-- **Unclassified**: 72
+- **Classified**: 448
+- **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 0
-- **Unchanged**: 519
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 520
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 7 | 1.3% |
-| best-practices | 22 | 4.2% |
+| best-practices | 21 | 4.0% |
 | configuration | 132 | 25.3% |
 | decision-making | 18 | 3.5% |
 | deployment | 14 | 2.7% |
@@ -72,18 +72,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 2 | 0.4% |
 | security | 24 | 4.6% |
 | troubleshooting | 50 | 9.6% |
-| *(Unclassified)* | 72 | 13.8% |
+| *(Unclassified)* | 73 | 14.0% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-- [Upgrade Azure Synapse Analytics pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory)
-
-### Deleted Pages
-
-- ~~Upgrade ADF pipelines to Fabric~~ (https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
+- [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade)
+  - Updated: 2026-01-29T06:14:00.000Z → 2026-03-25T06:11:00.000Z
 
 ## Classified Pages
 
@@ -515,7 +511,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [New branch](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch) | configuration | 0.63 | Shows how to replicate streams and configure branching behavior, including product-specific UI/JSON options for multiple branches. |
 | [Parse](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse) | configuration | 0.63 | Describes Parse transformation settings (document format, schema mapping, error handling) specific to mapping data flows. |
 | [Amazon Web Services S3 to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-storage-gen2) | integrations | 0.60 | Describes using ADF to load into ADLS Gen2, likely including connector-specific settings and patterns for file vs hierarchical namespace, which are integration-focused details. |
-| [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade) | best-practices | 0.60 | Describes how automatic upgrades are applied and likely includes recommendations and caveats for using them safely, which are product-specific operational best practices. |
 | [Build a copy pipeline using managed VNet and private endpoints](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal-private) | security | 0.60 | Tutorial focuses on using private endpoints for secure data copy; likely includes network/security-specific configuration steps and settings unique to ADF private endpoint usage. |
 | [Bulk copy from files to database](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-from-files-to-database) | integrations | 0.60 | Shows a concrete template for ADLS Gen2→Synapse/SQL bulk loads, including staging, mappings, and ADF activity configuration. |
 | [Column patterns](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-column-pattern) | best-practices | 0.60 | Explains column pattern matching and how to generalize transformations; contains product-specific transformation patterns and usage recommendations. |
@@ -601,6 +596,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-tool) | 0.25 | Tutorial for copying from Blob to SQL via Copy Data tool; standard how-to without detailed config matrices or error-resolution mappings. |
 | [Hello World - How to copy data](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool) | 0.25 | Copy Data tool quickstart; procedural tutorial without structured config parameter tables or product-specific best-practice guidance. |
 | [User interface (UI)](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal) | 0.25 | Portal-based tutorial for copy pipeline; procedural steps rather than expert configuration or decision guidance. |
+| [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade) | 0.20 | From the summary, the page provides high-level guidance on the automatic connector upgrade process in Azure Data Factory, but does not clearly indicate the presence of specific limits, configuration parameter tables, error codes, or other detailed product-specific settings. It reads as conceptual guidance/best practices without quantified values or concrete configuration references, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Connector overview](https://learn.microsoft.com/en-us/azure/data-factory/connector-overview) | 0.20 | Connector overview is primarily a catalog/navigation page listing supported connectors; it doesn’t focus on limits, configuration tables, or detailed patterns. |
 | [Create a data factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory) | 0.20 | Quickstart for creating a data factory via portal/Studio; mostly UI steps, not deep configuration or expert patterns. |
 | [FinOps in Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/apply-finops) | 0.20 | FinOps guidance is likely high-level cost management concepts and recommendations without product-specific numeric limits, configs, or error mappings. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   integrations: How to use Azure Bastion with AKS private clusters, VM scale sets,
     and native Windows/Linux clients, including SSH/RDP connectivity patterns and
@@ -8,9 +8,8 @@ category_descriptions:
     NSG rules, and hardening best practices to lock down Bastion hosts and connections.'
   decision-making: Guidance on choosing and upgrading Bastion SKU tiers and using
     IP-based Bastion connections across VNets, subscriptions, and environments.
-  configuration: Configuring Azure Bastion settings, scaling, IP-based and Kerberos
-    access, monitoring/metrics, session management/recording, native client use, and
-    shareable links.
+  configuration: 'Configuring Azure Bastion behavior: scaling, auth (Kerberos), monitoring/metrics/logs,
+    native client access, session management, recordings, and shareable links.'
   best-practices: Guidance on reducing Azure Bastion costs through sizing, scaling,
     and usage patterns while maintaining secure remote access and compliance best
     practices.
@@ -22,13 +21,13 @@ category_descriptions:
     to collect logs for support.
 skill_description: Expert knowledge for Azure Bastion development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, configuration,
-  and integrations & coding patterns. Use when using Bastion with AKS private clusters,
-  VM scale sets, IP-based access, Kerberos, or hub/spoke VNets, and other Azure Bastion
-  related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
-  Azure Firewall (use azure-firewall).
-use_when: Use when using Bastion with AKS private clusters, VM scale sets, IP-based
-  access, Kerberos, or hub/spoke VNets, and other Azure Bastion related development
+  and integrations & coding patterns. Use when connecting via SSH/RDP to AKS private
+  clusters or VMSS, using native clients, Kerberos auth, or IP-based Bastion, and
+  other Azure Bastion related development tasks. Not for Azure Virtual Network (use
+  azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines), Azure
+  VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
+use_when: Use when connecting via SSH/RDP to AKS private clusters or VMSS, using native
+  clients, Kerberos auth, or IP-based Bastion, and other Azure Bastion related development
   tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
@@ -38,54 +37,47 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 42
-- **Fetched**: 42
+- **Total Pages**: 41
+- **Fetched**: 41
 - **Fetch Failed**: 0
-- **Classified**: 24
-- **Unclassified**: 18
+- **Classified**: 25
+- **Unclassified**: 16
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 36
-- **Deleted Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 39
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 7.1% |
+| architecture-patterns | 3 | 7.3% |
 | best-practices | 1 | 2.4% |
-| configuration | 8 | 19.0% |
-| decision-making | 3 | 7.1% |
-| integrations | 5 | 11.9% |
-| security | 3 | 7.1% |
+| configuration | 9 | 22.0% |
+| decision-making | 3 | 7.3% |
+| integrations | 5 | 12.2% |
+| security | 3 | 7.3% |
 | troubleshooting | 1 | 2.4% |
-| *(Unclassified)* | 18 | 42.9% |
+| *(Unclassified)* | 16 | 39.0% |
 
 ## Changes
 
 ### New Pages
 
-- [About IP-based connection](https://learn.microsoft.com/en-us/azure/bastion/connect-ip-address)
+- [Configure host scaling](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling)
 
 ### Updated Pages
 
-- [What's new in Bastion?](https://learn.microsoft.com/en-us/azure/bastion/whats-new)
-  - Updated: 2025-12-03T23:21:00.000Z → 2026-03-17T17:17:00.000Z
-- [Bastion SKU comparison](https://learn.microsoft.com/en-us/azure/bastion/bastion-sku-comparison)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-03-17T17:17:00.000Z
-- [Deploy Bastion - Azure portal](https://learn.microsoft.com/en-us/azure/bastion/quickstart-host-portal)
-  - Updated: 2026-01-28T06:18:00.000Z → 2026-03-17T17:17:00.000Z
-- [SSH connection](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh-linux)
-  - Updated: 2025-03-31T08:00:00.000Z → 2026-03-17T11:12:00.000Z
-- [Work with NSGs](https://learn.microsoft.com/en-us/azure/bastion/bastion-nsg)
-  - Updated: 2025-08-19T22:13:00.000Z → 2026-03-18T22:20:00.000Z
+- [Bastion configuration settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings)
+  - Updated: 2025-12-19T23:19:00.000Z → 2026-03-19T22:26:00.000Z
 
 ### Deleted Pages
 
-- ~~Connect to a VM - IP address~~ (https://learn.microsoft.com/en-us/azure/bastion/connect-ip-address)
+- ~~Azure portal~~ (https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling)
+- ~~Azure PowerShell~~ (https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling-powershell)
 
 ## Classified Pages
 
@@ -93,14 +85,15 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 |-----------|------|------------|--------|
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/bastion/troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure Bastion, organized around common problems and solutions for connectivity, authentication, and configuration. Such content typically includes product-specific error symptoms, causes, and resolutions that go beyond generic debugging knowledge, fitting the troubleshooting sub-skill definition. |
 | [Bastion SKU comparison](https://learn.microsoft.com/en-us/azure/bastion/bastion-sku-comparison) | decision-making | 0.80 | SKU comparison pages for Azure services usually include feature/limit comparison tables and guidance on when to choose each tier; this directly supports tier/SKU selection with criteria and trade-offs, matching the decision-making category. |
-| [Bastion configuration settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) | configuration | 0.80 | Explicit configuration settings reference for Bastion; likely includes parameter names, allowed values, and defaults. |
 | [Secure Bastion](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion) | security | 0.80 | Security guidance aligned to Microsoft Cloud Security Benchmark will include Bastion-specific security settings, RBAC, and configuration recommendations. |
 | [Work with NSGs](https://learn.microsoft.com/en-us/azure/bastion/bastion-nsg) | security | 0.80 | NSG configuration for Bastion necessarily involves specific inbound/outbound rules, ports, and possibly service tags that are product-specific security settings; this matches the security category with concrete configuration guidance. |
 | [Configure Microsoft Entra ID authentication](https://learn.microsoft.com/en-us/azure/bastion/bastion-entra-id-authentication) | security | 0.76 | Entra ID authentication setup for Bastion will include specific RBAC role names, required permissions, and configuration steps for RDP/SSH, which are product-specific security settings and identity configuration details not derivable from general knowledge. |
+| [Bastion configuration settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) | configuration | 0.75 | The article describes Azure Bastion resources and configuration settings. Given its focus on 'available configuration settings,' it likely enumerates specific setting names, options, and behaviors that are product-specific and not just conceptual. That aligns with the configuration sub-skill, as it helps an agent know concrete Bastion settings and how they are used. |
 | [Configure native client support](https://learn.microsoft.com/en-us/azure/bastion/native-client) | configuration | 0.75 | Explains how to modify Bastion deployment to accept native client connections, including specific settings and possibly parameter values. |
 | [Bastion and VNet peering](https://learn.microsoft.com/en-us/azure/bastion/vnet-peering) | architecture-patterns | 0.70 | Describes how a single Bastion host can serve peered VNets, a product-specific architecture pattern with deployment implications. |
 | [Bastion monitoring data reference](https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion-reference) | configuration | 0.70 | Monitoring data reference pages typically list all Bastion-specific Azure Monitor metrics, log categories, dimensions, and their exact names/fields. These are product-specific configuration/telemetry details (e.g., metric names, dimensions, log table schemas) that an LLM is unlikely to know from training and are used when configuring monitoring and alerts, fitting the configuration sub-skill best. |
 | [Configure a shareable link](https://learn.microsoft.com/en-us/azure/bastion/shareable-link) | configuration | 0.70 | Describes enabling and configuring the Shareable Link feature, including authentication options and Bastion-specific settings. |
+| [Configure host scaling](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling) | configuration | 0.70 | Host scaling for Bastion Standard SKU is a product-specific configuration feature. The article is about adjusting the number of Bastion instances (scale units) and includes SKU requirements and behavioral constraints (e.g., changes disrupt active connections, plan during maintenance windows). This is detailed, product-specific configuration guidance rather than generic scaling theory, fitting the configuration sub-skill. |
 | [Configure session recording](https://learn.microsoft.com/en-us/azure/bastion/session-recording) | configuration | 0.70 | Describes enabling session recording, storage account/SAS URL usage, and related settings, which are product-specific configuration details. |
 | [Connect to an AKS cluster](https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-to-aks-private-cluster) | integrations | 0.70 | Integration pattern between Bastion and AKS private clusters, likely with specific commands and configuration parameters for tunneling. |
 | [Design architecture](https://learn.microsoft.com/en-us/azure/bastion/design-architecture) | architecture-patterns | 0.70 | Discusses multiple Bastion deployment architectures by SKU and options; this is explicit architecture guidance for the service. |
@@ -120,8 +113,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling-powershell) | 0.40 | PowerShell variant of index 5; mainly step-by-step instructions. The expert details about host scaling parameters and limits are indicated to be in the separate configuration settings page. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/bastion/configure-host-scaling) | 0.40 | Focuses on adding scale units via the portal; from the summary it appears to be a procedural tutorial. Any detailed scaling limits or configuration settings are referenced in another page (Configuration settings), not here. |
 | [VM connections and features](https://learn.microsoft.com/en-us/azure/bastion/vm-about) | 0.40 | Describes VM connection features; summary suggests feature overview rather than deep config tables or limits. |
 | [Copy and paste](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-copy-paste) | 0.35 | How-to for copy/paste in sessions; mostly UX-level instructions, not deep configuration or limits. |
 | [Full screen view](https://learn.microsoft.com/en-us/azure/bastion/bastion-vm-full-screen) | 0.35 | How-to for full-screen view; UI usage, not expert configuration or troubleshooting. |

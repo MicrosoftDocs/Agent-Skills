@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB,
     Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility,
@@ -16,9 +16,9 @@ category_descriptions:
   integrations: Patterns for integrating Stream Analytics with Kafka, Azure ML, Functions,
     Schema Registry, and for writing UDFs/aggregates, parsing formats, and doing ML/anomaly
     detection.
-  best-practices: Guidance on designing, scaling, optimizing, and troubleshooting
-    Stream Analytics jobs, including queries, partitions, time handling, inputs/outputs,
-    metrics, alerts, and geospatial/ML patterns
+  best-practices: Best practices for designing, scaling, optimizing, and troubleshooting
+    Stream Analytics jobs, including queries, time handling, geospatial, ML, Cosmos
+    DB/SQL outputs, reliability, and alerting
   decision-making: Guidance on choosing Stream Analytics developer tools, migrating
     projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing
     services for your scenario.
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
-  ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
-  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs), Azure Data
-  Explorer (use azure-data-explorer).
-use_when: Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL
-  outputs, ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
-  tasks.
-confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs),
-  Azure Data Explorer (use azure-data-explorer).
+  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/anomaly
+  detection, or IoT Edge deployments, and other Azure Stream Analytics related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data
+  Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure
+  Functions (use azure-functions).
+use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
+  ML/anomaly detection, or IoT Edge deployments, and other Azure Stream Analytics
+  related development tasks.
+confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs),
+  Azure Functions (use azure-functions).
 ---
 # Azure Stream Analytics Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
+- **Updated Pages**: 1
+- **Unchanged**: 167
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | *(Unclassified)* | 54 | 32.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling)
+  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -166,6 +171,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Watermark delay increase](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-analysis-with-metric-dimensions) | best-practices | 0.70 | Explains how to interpret specific metrics like watermark delay and backlogged events to assess performance; provides product-specific guidance on what to monitor and how. |
 | [Anomaly detection](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) | integrations | 0.68 | The page describes product-specific built-in ML functions (AnomalyDetection_SpikeAndDip and AnomalyDetection_ChangePoint) for Azure Stream Analytics, including how to apply them directly in Stream Analytics jobs. These are concrete, service-specific function patterns and parameters for integrating Azure Stream Analytics with ML-based anomaly detection, which go beyond generic ML or anomaly detection concepts. |
 | [Set up CI/CD pipeline](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-cicd) | deployment | 0.68 | Describes a NuGet package that adds MSBuild, local run, and deployment tooling; includes product-specific build/deploy configuration for CI/CD. |
+| [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.68 | The article provides product-specific guidance on choosing event vs. arrival time, configuring start times, and handling late/early events in Azure Stream Analytics jobs. It includes concrete, service-specific recommendations and design choices (for example, how to set policies and windows to deal with out-of-order events and time handling metrics), which go beyond generic streaming concepts and qualify as best-practices. It does not primarily focus on limits tables, deployment, or security. |
 | [Using API for IoT Edge jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-cicd-api) | deployment | 0.68 | Focuses on using specific REST APIs to build CI/CD for Stream Analytics on IoT Edge; includes product-specific deployment API usage rather than generic tutorial content. |
 | [Deploy jobs with Bicep](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-deploy-with-bicep) | deployment | 0.67 | Bicep-based deployment of Stream Analytics jobs; involves product-specific resource types and properties in infrastructure-as-code. |
 | [Build, test, and deploy with PowerShell](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-tools) | deployment | 0.66 | Describes using a product-specific npm package for CI/CD; typically includes command/config parameters and patterns unique to Stream Analytics deployment. |
@@ -181,7 +187,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | integrations | 0.65 | The page explains how Azure Stream Analytics specifically parses JSON/Avro/CSV and complex types (nested objects, arrays), which involves product-specific query syntax and handling rules. This is expert, integration-oriented knowledge about how to work with these formats in this service, aligning best with integrations & coding patterns. |
 | [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network) | security | 0.65 | Describes how to run Stream Analytics jobs in an Azure virtual network, which typically includes product-specific network/security configuration (subnets, private endpoints, access requirements) beyond generic concepts. |
 | [Service Bus queues](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-queues-output) | configuration | 0.65 | Service Bus output adapter pages typically list configuration properties (queue name, authentication, serialization) and protocol details (AMQP usage) that are product-specific configuration parameters. |
-| [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.65 | Focuses on design choices for start time and late/early events; this is product-specific guidance on time semantics and metrics, beyond generic theory. |
 | [Use SQL reference data](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-reference-data) | configuration | 0.65 | Describes configuring SQL Database as reference input in portal and VS; includes product-specific input configuration parameters. |
 | [Using .NET SDK for management](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-dotnet-management-sdk) | integrations | 0.65 | Covers using the Stream Analytics Management .NET SDK with API-specific patterns and parameters for creating inputs, outputs, and transformations, which are product-specific integration details. |
 | [Set up a pipeline using GitHub Actions](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-github-actions) | deployment | 0.64 | Shows how to configure GitHub Actions for Stream Analytics deployment; includes workflow YAML and service-specific deployment steps. |

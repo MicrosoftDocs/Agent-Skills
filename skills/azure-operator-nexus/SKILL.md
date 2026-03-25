@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus fabric BGP/VRF, ACL/QoS, NAKS clusters, near-edge storage design, or Nexus upgrades, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and deployment. Use when managing Nexus clusters, fabric BGP/VRF, ACL/QoS policies, near-edge storage, or Nexus Kubernetes workloads, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Operator Insights (use azure-operator-insights), Azure Operator Service Manager (use azure-operator-service-manager), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L83 | Diagnosing and fixing Nexus infrastructure issues: bare metal/VM recovery, storage and network faults, Kubernetes/NAKS pod and node problems, and Azure prerequisite/health validation. |
+| Troubleshooting | L36-L83 | Diagnosing and fixing Nexus bare metal, storage, fabric, Kubernetes, and VM issues: provisioning failures, degraded states, connectivity, performance, and log/trace-based troubleshooting. |
 | Best Practices | L84-L90 | Guidance on Nexus bare metal lifecycle ops, ETCD maintenance in Nexus AKS, and procedures for repairing and maintaining Nexus storage appliance components. |
 | Decision Making | L91-L98 | Guidance on choosing Nexus SKUs, VM sizes, storage software versions, and planning where to place Nexus Kubernetes resources in your deployment. |
 | Architecture & Design Patterns | L99-L103 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
@@ -44,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot bare metal machines with az baremetalmachine run-read-command | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-read |
 | Gather trace IDs for Nexus PersistentVolumeClaim failures | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-gather-pvc-trace-id |
 | Collect diagnostic data for Nexus VM console issues | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-gather-vm-console-data |
-| Run Nexus Kubernetes log collector script for support | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script |
+| Run Azure Operator Nexus Kubernetes log collector | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-log-collector-script |
 | Run read-only diagnostics on Nexus storage appliances | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-storage-run-read |
 | Use Operator Nexus diagnostic logs for monitoring | https://learn.microsoft.com/en-us/azure/operator-nexus/list-logs-available |
 | Fix Accepted cluster hydration issues in Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-accepted-cluster-hydration |

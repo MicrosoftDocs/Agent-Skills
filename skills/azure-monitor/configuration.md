@@ -89,7 +89,8 @@
 | Define custom Prometheus scrape jobs using CRDs | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-crd |
 | Review default Prometheus scrape targets and dashboards in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/containers/prometheus-metrics-scrape-default |
 | Configure Azure Monitor data collection endpoints | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-endpoint-overview |
-| Create and edit data collection rules in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-create-edit |
+| Author and edit Azure Monitor DCR JSON definitions | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-create-edit |
+| Configure Azure Monitor data collection rules in portal | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-create-portal |
 | Understand and configure data collection rules in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview |
 | Use sample DCR definitions for Azure Monitor scenarios | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-samples |
 | Understand Azure Monitor data collection rule JSON schema | https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-structure |
@@ -144,11 +145,10 @@
 | Create and delete Azure Monitor workspaces | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/azure-monitor-workspace-manage |
 | Configure Prometheus rule groups in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/metrics/prometheus-rule-groups |
 | Understand Azure Activity Log event schema fields | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-schema |
-| Configure Azure Monitor diagnostic settings for metrics and logs | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings |
+| Configure Azure Monitor diagnostic settings for logs and metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings |
 | Configure Azure resource logs and destinations in Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs |
 | Azure resource logs services and event schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-logs-schema |
 | Apply Azure Monitor diagnostic settings using ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/platform/resource-manager-diagnostic-settings |
-| Configure Application Insights Profiler for .NET in Azure portal | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-settings |
 | Reference Azure Monitor resource log categories and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
 | Identify Azure Monitor resource log categories and schemas | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/logs-index |
 | Find supported Azure Monitor metrics per resource type | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/metrics-index |
@@ -286,6 +286,7 @@
 | Connected Vehicle platform account metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-connectedvehicle-platformaccounts-metrics |
 | Container group metrics for Azure Container Instances | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-containerinstance-containergroups-metrics |
 | Azure Monitor metrics reference for MongoDB clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-documentdb-mongoclusters-metrics |
+| Use Azure Monitor metrics for Elastic SAN resources | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-elasticsan-elasticsans-metrics |
 | Azure Monitor metrics reference for Event Hubs namespaces | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-eventhub-namespaces-metrics |
 | Azure Monitor metrics reference for Azure FileShares | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-fileshares-fileshares-metrics |
 | Azure Monitor metrics reference for HDInsight clusters | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-hdinsight-clusters-metrics |
@@ -359,7 +360,6 @@
 | Azure Monitor metrics for private endpoints | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-privateendpoints-metrics |
 | Azure Monitor metrics for private link services | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-privatelinkservices-metrics |
 | Azure Monitor metrics for public IP addresses | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-publicipaddresses-metrics |
-| Azure Monitor metrics for public IP prefixes | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-publicipprefixes-metrics |
 | Azure Monitor metrics for Traffic Manager profiles | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-trafficmanagerprofiles-metrics |
 | Azure Monitor metrics for virtual hubs | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-virtualhubs-metrics |
 | Use Azure Monitor metrics for virtual network gateways | https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-metrics/microsoft-network-virtualnetworkgateways-metrics |
@@ -1230,19 +1230,24 @@
 | Configure resource parameters to scope workbook data | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-resources |
 | Configure text box parameters in Azure Workbooks | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-text |
 | Configure time parameters in Azure Workbooks | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/workbooks-time |
-| Create Azure Monitor data collection rules for VM clients | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection |
+| Configure VM log collection with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection |
 | Collect Windows Firewall logs with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-firewall-logs |
-| Collect IIS logs from VMs using Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-iis |
-| Collect JSON log files from VMs using Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-json |
-| Collect custom text log files with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-text |
-| Configure performance counter collection with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-performance |
+| Collect IIS logs from VMs using Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-iis |
+| Collect JSON log files from VMs with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-json |
+| Collect custom text log files with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-log-text |
+| Configure performance counter collection with AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-performance |
 | Ingest SNMP trap data into Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-snmp-data |
-| Configure Syslog collection with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog |
-| Configure DCRs to collect Windows event logs with AMA | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-windows-events |
+| Collect Linux Syslog events with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-syslog |
+| Collect Windows event logs with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/data-collection-windows-events |
+| Customize OpenTelemetry metrics collection for VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/metrics-opentelemetry-guest-modify |
 | Create alert rules for Azure VMs and guest workloads | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-alerts |
 | Analyze Azure VM monitoring data using Azure Monitor features | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-analyze |
 | Configure VM data collection with Azure Monitor Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-data-collection |
-| Configure data collection rules for VM guest logs and metrics | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-monitor-vm-guest |
+| Configure recommended alert rules for Azure VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-alerts |
+| Configure guest log collection for Azure VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-collect-logs |
+| Configure recommended alerts for VM scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/tutorial-scale-set-alerts |
+| Disable or adjust Azure VM monitoring settings | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-disable-monitoring |
+| Enable VM Insights on intermittently connected clients | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-client |
+| Enable VM insights at scale using Azure Policy | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-policy |
 | Query VM insights map and connection data with Log Analytics | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-log-query |
-| Disable VM insights monitoring for Azure virtual machines | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-optout |
 | Create and customize VM insights workbooks for reporting | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-workbooks |

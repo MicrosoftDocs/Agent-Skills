@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: 'Configuring Container Apps environments: networking, ingress, scaling
     (KEDA/Dapr), revisions/traffic, storage, workload profiles, logging/monitoring,
@@ -47,14 +47,14 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 
 ## Summary
 
-- **Total Pages**: 204
-- **Fetched**: 204
+- **Total Pages**: 205
+- **Fetched**: 205
 - **Fetch Failed**: 0
 - **Classified**: 133
-- **Unclassified**: 71
+- **Unclassified**: 72
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 204
 - **Deleted Pages**: 0
@@ -66,16 +66,20 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 |------|-------|------------|
 | architecture-patterns | 4 | 2.0% |
 | best-practices | 3 | 1.5% |
-| configuration | 41 | 20.1% |
+| configuration | 41 | 20.0% |
 | decision-making | 12 | 5.9% |
 | deployment | 7 | 3.4% |
-| integrations | 22 | 10.8% |
+| integrations | 22 | 10.7% |
 | limits-quotas | 2 | 1.0% |
-| security | 31 | 15.2% |
+| security | 31 | 15.1% |
 | troubleshooting | 11 | 5.4% |
-| *(Unclassified)* | 71 | 34.8% |
+| *(Unclassified)* | 72 | 35.1% |
 
 ## Changes
+
+### New Pages
+
+- [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates)
 
 ## Classified Pages
 
@@ -284,6 +288,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Fun
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview) | 0.20 | Java overview content describing benefits and options; lacks detailed configuration parameters or quotas. |
 | [Overview](https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview) | 0.20 | High-level JavaScript overview; mostly conceptual and marketing-style description of capabilities. |
 | [About Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview) | 0.10 | High-level overview of Azure Container Apps scenarios and benefits without concrete limits, configs, or error details. |
+| [Azure Developer CLI (azd) templates](https://learn.microsoft.com/en-us/azure/container-apps/container-apps-cli-templates) | 0.10 | Template listing/overview for Azure Developer CLI and Container Apps; no specific limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro) | 0.10 | Intro to containers for Java is conceptual and generic; not specific to Container Apps configuration or limits. |
 | [Introduction to containers](https://learn.microsoft.com/en-us/azure/container-apps/start-containers) | 0.10 | Introductory explanation of containers and motivations; no product-specific limits, configs, or troubleshooting content. |
 | [Samples](https://learn.microsoft.com/en-us/azure/container-apps/samples) | 0.10 | Index page listing sample scenarios; primarily navigation to other content. No indication of limits, configuration tables, troubleshooting mappings, or decision matrices. |

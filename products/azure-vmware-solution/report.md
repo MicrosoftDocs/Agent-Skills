@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 14
-- **Unchanged**: 120
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 135
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -75,41 +75,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 35 | 25.9% |
 
 ## Changes
-
-### New Pages
-
-- [Use Set-ToolsRepo Run Command](https://learn.microsoft.com/en-us/azure/azure-vmware/use-set-toolsrepo-run-command)
-
-### Updated Pages
-
-- [Enable guest management and install extensions on Arc-enabled VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/arc-enable-guest-management)
-  - Updated: 2025-07-04T22:10:00.000Z → 2026-03-10T08:00:00.000Z
-- [Manage Arc-enabled Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/manage-arc-enabled-azure-vmware-solution)
-  - Updated: 2024-02-06T08:00:00.000Z → 2026-03-13T08:00:00.000Z
-- [Enable VMware Cloud Director Service with Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-vmware-cds-with-azure)
-  - Updated: 2024-04-16T08:00:00.000Z → 2026-03-10T08:00:00.000Z
-- [ESUs for SQL Server and Windows Server in Azure VMware Solution VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/extended-security-updates-windows-sql-server)
-  - Updated: 2024-12-04T23:05:00.000Z → 2026-03-11T08:00:00.000Z
-- [License SQL Server, Windows Server and Linux in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/license-sql-windows-in-avs)
-  - Updated: 2024-05-29T11:30:00.000Z → 2026-03-12T08:00:00.000Z
-- [Enable unlimited virtualization with Azure Hybrid Benefit for SQL Server in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-sql-azure-hybrid-benefit)
-  - Updated: 2026-02-19T23:10:00.000Z → 2026-03-10T08:00:00.000Z
-- [Deploy vSAN stretched clusters](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-vsan-stretched-clusters)
-  - Updated: 2024-12-04T08:00:00.000Z → 2026-03-05T08:00:00.000Z
-- [Protect, monitor, and manage VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/integrate-azure-native-services)
-  - Updated: 2024-03-21T08:00:00.000Z → 2026-03-13T08:00:00.000Z
-- [Move Azure VMware Solution subscriptions](https://learn.microsoft.com/en-us/azure/azure-vmware/move-ea-csp-subscriptions)
-  - Updated: 2023-12-19T08:00:00.000Z → 2026-03-18T17:38:00.000Z
-- [Integrate Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-security-integration)
-  - Updated: 2024-02-28T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [External storage solutions](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-external-storage-solutions)
-  - Updated: 2025-10-29T22:11:00.000Z → 2026-03-11T08:00:00.000Z
-- [Install Cloud Backup for Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-vmware/install-cloud-backup-virtual-machines)
-  - Updated: 2024-12-03T08:00:00.000Z → 2026-03-12T08:00:00.000Z
-- [Disaster recovery solutions for VMs](https://learn.microsoft.com/en-us/azure/azure-vmware/ecosystem-disaster-recovery-vms)
-  - Updated: 2026-02-16T06:10:00.000Z → 2026-03-18T17:38:00.000Z
-- [Deploy Zerto disaster recovery](https://learn.microsoft.com/en-us/azure/azure-vmware/deploy-zerto-disaster-recovery)
-  - Updated: 2026-01-14T23:13:00.000Z → 2026-03-05T08:00:00.000Z
 
 ## Classified Pages
 

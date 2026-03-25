@@ -1,9 +1,9 @@
 ---
 name: azure-logic-apps
-description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Logic Apps with B2B/EDI, SAP/IBM/FTP connectors, AI/OpenAI calls, inline code, or CI/CD deployments, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+description: Expert knowledge for Azure Logic Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building B2B (X12/EDIFACT/AS2) flows, AI/OpenAI integrations, hybrid/on‑prem connections, or DR/HA Logic Apps deployments, and other Azure Logic Apps related development tasks. Not for Azure Functions (use azure-functions), Azure Data Factory (use azure-data-factory), Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Logic Apps Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L87-L96 | Limits, quotas, and performance behaviors in Logic Apps: message size/chunking, pagination, SQL timeouts/results, inline JavaScript limits, configuration caps, and metering/billing rules. |
 | Security | L97-L113 | Securing Logic Apps with identities, OAuth/Easy Auth, private endpoints, certificates, and Azure Policy/Defender controls, including cross-tenant and connector access restrictions. |
 | Configuration | L114-L154 | Configuring Logic Apps workflows, runtime, B2B/integration accounts, on-prem connections, inline code, control flow, schemas/maps, and monitoring/diagnostic logging. |
-| Integrations & Coding Patterns | L155-L236 | Patterns and connectors for integrating Logic Apps with Azure/IBM/SAP/FTP/B2B systems, AI/OpenAI, data transforms (XML/EDI/Liquid), custom connectors, and automated testing of workflows |
+| Integrations & Coding Patterns | L155-L236 | Patterns and connectors for integrating Logic Apps with Azure/IBM/SAP/HL7 systems, B2B formats (X12/EDIFACT/AS2), AI/OpenAI, custom code, APIs, and automated workflow testing. |
 | Deployment | L237-L258 | CI/CD, ARM/Bicep/CLI deployment, DevOps pipelines, slots, hybrid setups, and migrating/cloning Consumption Logic Apps to Standard workflows |
 
 ### Troubleshooting

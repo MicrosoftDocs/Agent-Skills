@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing Azure landing zones, AVS/AKS, SAP/Oracle migrations, AVD/VDI, or AI/analytics platforms, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing Azure landing zones, AVS/VMware, SAP/Oracle migrations, AKS/Container Apps, or AVD/VDI, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Strategy | L37-L56 | High-level cloud and AI adoption strategy: defining business goals, exec alignment, cost, security, resiliency, sustainability, and workload-specific plans (AI, data, SAP, Oracle, AVD, VMware, hybrid). |
-| Planning | L57-L86 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
-| Readiness & Landing Zones | L87-L215 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload‑specific patterns (AVS, SAP, analytics, Oracle, AKS). |
-| Adoption Patterns | L216-L251 | Patterns and step-by-step guides for migrating, modernizing, and operating workloads on Azure, including AI agents, AVD, VMware, SAP, Oracle, and cloud-scale analytics data platforms. |
-| Governance | L252-L293 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, responsible AI, data governance, and landing zone guardrails across services and hybrid/Arc environments |
-| Security | L294-L329 | Designing and governing secure Azure landing zones: Zero Trust, IAM/RBAC, encryption, DevOps/AKS/Arc/Oracle/SAP/analytics security, network protection, and ongoing security operations. |
-| Operations & Management | L330-L374 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, AVD, Oracle, SAP, analytics), plus BCDR, compliance, and AI agent operations. |
-| Organization & Teams | L375-L398 | Designing org structures, roles, RACI, and team topologies (CCoE, AI/analytics, DevOps, ops, security, governance) to align people and processes for Azure and AI cloud adoption. |
-| Adoption Scenarios | L399-L504 | End-to-end Azure adoption patterns: CAF-based landing zones, governance, security, networking, identity, BCDR, and operations for AI, AKS, PaaS, VDI, RHEL, ARO, Oracle, SAP, and analytics. |
+| Planning | L57-L85 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
+| Readiness & Landing Zones | L86-L207 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenant setups, and workload‑specific patterns (AVS, SAP, analytics, Oracle). |
+| Adoption Patterns | L208-L244 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating Azure workloads (AI agents, cloud-native apps, VDI, data/analytics, SAP, Oracle, VMware) at scale. |
+| Governance | L245-L286 | Designing and enforcing Azure governance: policies, tagging, cost control, compliance, responsible AI, data governance, and landing zone guardrails across services and hybrid/Arc environments |
+| Security | L287-L322 | Designing and governing secure Azure landing zones: Zero Trust, IAM/RBAC, encryption, DevOps/AKS/Arc/Oracle/SAP/analytics security, network protection, and ongoing security operations. |
+| Operations & Management | L323-L367 | Operating, monitoring, automating, and optimizing Azure environments and workloads (incl. AKS, AVS, AVD, Oracle, SAP, analytics), plus BCDR, compliance, and AI agent operations. |
+| Organization & Teams | L368-L391 | Designing org structures, roles, RACI, and team topologies (CCoE, AI/analytics, DevOps, ops, security, governance) to align people and processes for Azure and AI cloud adoption. |
+| Adoption Scenarios | L392-L504 | End-to-end Azure adoption patterns and landing zone designs for AI, AKS, App Service, AVD, Citrix, RHEL, ARO, Container Apps, Integration Services, VMware, SAP, Oracle, and analytics/data mesh. |
 
 ### Strategy
 | Topic | URL |
@@ -59,7 +59,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Plan enterprise data architecture to support AI agents | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/data-architecture-plan |
 | Define technology plan for AI agents on Microsoft | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy |
-| Plan Azure cloud-native application solutions | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/plan-cloud-native-solutions |
 | Plan Azure migration waves for large estates | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/migration-wave-planning |
 | Create detailed workload migration plans to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/plan-migration |
 | Prepare workloads for reliable migration to Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/prepare-workloads-cloud |
@@ -160,13 +159,6 @@ This skill requires **network access** to fetch documentation content:
 | Adapt Azure landing zones for multinational compliance | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/landing-zone-multinational |
 | Prepare Azure landing zones specifically for migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/ready-azure-landing-zone |
 | Tailor Azure landing zone reference implementations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/tailoring-alz |
-| Deploy AKS clusters with landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator |
-| Deploy Azure API Management landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/landing-zone-accelerator |
-| Use App Service landing zone accelerator at scale | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/landing-zone-accelerator |
-| Use RHEL landing zone accelerator on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/landing-zone-accelerator |
-| Deploy Azure Red Hat OpenShift landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/landing-zone-accelerator |
-| Deploy Azure Container Apps landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/landing-zone-accelerator |
-| Deploy Azure Integration Services landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/landing-zone-accelerator |
 | Prepare Azure landing zones for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ready |
 | Understand Azure VMware Solution networking fundamentals for design | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/azure-vmware-solution-network-basics |
 | Establish cross-tenant network connectivity for Azure VMware SDDCs | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/cross-tenant-network-connectivity |
@@ -202,7 +194,7 @@ This skill requires **network access** to fetch documentation content:
 | Organize resources for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-resource-organization |
 | Design network connectivity for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-arc-servers-connectivity |
 | Organize Azure Arc-enabled server resources and tags | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-resource-organization |
-| Implement hybrid and multicloud landing zones with Arc | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone |
+| Integrate Azure Arc resources into Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone |
 | Connect application tiers to Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/application-connectivity-design |
 | Configure Azure Arc connectivity for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/azure-arc-connectivity-design |
 | Implement core networking for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/core-network-design |
@@ -220,6 +212,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose single-agent vs multi-agent AI architectures | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents |
 | Build resilient cloud-native solutions on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/build-cloud-native-solutions |
 | Deploy cloud-native Azure solutions with safe rollout | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/deploy-cloud-native-solutions |
+| Plan cloud-native Azure solutions for new workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/cloud-native/plan-cloud-native-solutions |
 | Decommission on-premises workloads after Azure migration | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/decommission-source-workload |
 | Execute structured Azure workload migrations | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/execute-migration |
 | Execute Azure cloud modernization projects safely | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/execute-cloud-modernization |
@@ -422,14 +415,17 @@ This skill requires **network access** to fetch documentation content:
 | Define and implement a security process for AI on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/secure |
 | Use Azure application landing zone accelerators | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/ |
 | Design identity and access management for AKS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/identity-and-access-management |
+| Implement AKS landing zone accelerator in Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator |
 | Design network topology and connectivity for AKS | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/network-topology-and-connectivity |
 | Organize Azure resources for AKS landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/resource-organization |
 | Plan and configure scalability for AKS environments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/scalability |
 | Choose and configure storage options for AKS workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/storage |
 | Design identity and access for API Management landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/identity-and-access-management |
+| Deploy Azure API Management landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/landing-zone-accelerator |
 | Design networking for Azure API Management landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/api-management/network-topology-and-connectivity |
 | Apply governance to App Service landing zone accelerators | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/governance |
 | Design identity and access for App Service landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/identity-and-access-management |
+| Use App Service landing zone accelerator for scale | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/landing-zone-accelerator |
 | Design operations management for App Service landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/management |
 | Design networking for App Service landing zone accelerators | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/network-topology-and-connectivity |
 | Plan platform automation and DevOps for App Service landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/app-services/platform-automation-and-devops |
@@ -437,26 +433,30 @@ This skill requires **network access** to fetch documentation content:
 | Plan BCDR for Red Hat Enterprise Linux on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/business-continuity-disaster-recovery |
 | Apply governance and compliance to RHEL on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/governance-compliance |
 | Design identity and access for RHEL on Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/identity-access-management |
+| Apply RHEL landing zone accelerator for Azure workloads | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/landing-zone-accelerator |
 | Manage and monitor Red Hat Enterprise Linux on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/management-monitoring |
 | Design networking for Red Hat Enterprise Linux landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/network-topology-connectivity |
 | Automate Red Hat Enterprise Linux lifecycle on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/platform-automation-devops |
 | Organize Azure resources for Red Hat Enterprise Linux deployments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/resource-organization |
 | Implement security for Red Hat Enterprise Linux on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/security |
 | Design identity and access for Azure Red Hat OpenShift landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/identity-access-management |
+| Deploy Azure Red Hat OpenShift landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/landing-zone-accelerator |
 | Design networking for Azure Red Hat OpenShift landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/network-topology-connectivity |
 | Establish operations baseline for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/operations |
 | Plan platform automation and DevOps for Azure Red Hat OpenShift | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/platform-automation-devops |
 | Organize resources for Azure Red Hat OpenShift landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/resource-organization |
 | Implement security for Azure Red Hat OpenShift deployments | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/security |
 | Configure identity management for Azure Container Apps landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/identity |
+| Implement Azure Container Apps landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/landing-zone-accelerator |
 | Design management and operations for Azure Container Apps landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/management |
 | Design networking for Azure Container Apps landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/networking |
 | Apply security best practices to Azure Container Apps landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/container-apps/security |
 | Design identity and access for Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/identity-and-access-management |
+| Deploy Azure Integration Services landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/landing-zone-accelerator |
 | Design networking for Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/network-topology-and-connectivity |
 | Apply security patterns to Azure Integration Services landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/security |
 | Migrate user desktops to Azure Virtual Desktop with CAF | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ |
-| Implement enterprise-scale Azure Virtual Desktop landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone |
+| Use enterprise-scale landing zone for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone |
 | Plan business continuity and disaster recovery for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery |
 | Apply enterprise enrollment design to Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-enterprise-enrollment |
 | Configure identity and access management for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-identity-and-access-management |
@@ -466,14 +466,14 @@ This skill requires **network access** to fetch documentation content:
 | Design resource organization for Azure Virtual Desktop landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-resource-organization |
 | Implement security, governance, and compliance for Azure Virtual Desktop | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-security-governance-and-compliance |
 | Design BCDR for Citrix on Azure virtual desktops | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-business-continuity-disaster-recovery |
-| Deploy enterprise-scale Citrix on Azure landing zone | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-enterprise-scale-landing-zone |
+| Deploy Citrix on Azure with enterprise-scale landing zone | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-enterprise-scale-landing-zone |
 | Configure identity and access management for Citrix on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-identity-access-management |
 | Establish a management baseline for Citrix on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-management-monitoring |
 | Design hybrid networking for Citrix on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-network-topology-connectivity |
 | Design resource organization for Citrix on Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-resource-organization |
 | Apply security governance and compliance to Citrix on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-security-governance-compliance |
 | Adopt Azure VMware Solution using CAF guidance | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/ |
-| Use landing zone accelerator for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone |
+| Deploy an enterprise-scale landing zone for Azure VMware Solution | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone |
 | Implement deprecated CAF cloud-scale analytics scenario | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/ |
 | Apply Common Data Model in cloud-scale analytics | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models |
 | Design data domains for Azure data mesh | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-domains |
@@ -495,8 +495,8 @@ This skill requires **network access** to fetch documentation content:
 | Design services observability for Azure Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-services-observability |
 | Unify hybrid and multicloud operations with Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/strategy |
 | Run Oracle workloads in Azure landing zones | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/ |
-| Deploy Oracle on Azure IaaS landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-accelerator |
-| Implement SAP on Azure landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/enterprise-scale-landing-zone |
+| Deploy Oracle on Azure using IaaS landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-accelerator |
+| Implement SAP on Azure with enterprise-scale landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/enterprise-scale-landing-zone |
 | Design SAP-to-Azure data integration reference architecture | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-example-architecture |
 | Implement SAP and Power Platform integration workflow | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow |
 | Extend SAP landing zone to support Power Platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone |

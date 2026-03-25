@@ -3,7 +3,7 @@ name: azure-migrate
 description: Expert knowledge for Azure Migrate development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AppCAT/CAST, Site Recovery REST APIs, Azure Migrate appliance, Arc-based discovery, or Resource Mover, and other Azure Migrate related development tasks. Not for Azure Database Migration service (use azure-database-migration), Azure Site Recovery (use azure-site-recovery), Azure Virtual Machines (use azure-virtual-machines), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Migrate Skill

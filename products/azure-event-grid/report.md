@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-25'
 category_descriptions:
-  security: 'Securing Event Grid: auth for publishers/consumers (keys, SAS, Entra
-    ID, JWT, certs), RBAC, managed identities, TLS, IP/firewalls, private endpoints,
-    MQTT security, and Azure Policy controls.'
+  security: 'Securing Event Grid: auth for publishers/handlers/MQTT (keys, SAS, Entra
+    ID, JWT, certs), RBAC, managed identities, webhooks, TLS, IP/firewalls, private
+    endpoints, and Azure Policy controls.'
   configuration: 'Configuring Event Grid and MQTT: topics, subscriptions, filters,
     routing, retries, dead-lettering, monitoring, and detailed event schemas for many
     Azure and Microsoft services.'
@@ -29,12 +29,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing, retries/dead-lettering,
-  or Arc deployments, and other Azure Event Grid related development tasks. Not for
+  securing Event Grid/MQTT, designing topics/subscriptions, integrating webhooks/Auth0/Graph,
+  or deploying on Arc, and other Azure Event Grid related development tasks. Not for
   Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs),
   Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing,
-  retries/dead-lettering, or Arc deployments, and other Azure Event Grid related development
+use_when: Use when securing Event Grid/MQTT, designing topics/subscriptions, integrating
+  webhooks/Auth0/Graph, or deploying on Arc, and other Azure Event Grid related development
   tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs),
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ## Summary
 
-- **Total Pages**: 259
-- **Fetched**: 259
+- **Total Pages**: 260
+- **Fetched**: 260
 - **Fetch Failed**: 0
-- **Classified**: 180
+- **Classified**: 181
 - **Unclassified**: 79
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 259
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 258
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -63,16 +63,25 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 |------|-------|------------|
 | architecture-patterns | 2 | 0.8% |
 | best-practices | 1 | 0.4% |
-| configuration | 77 | 29.7% |
+| configuration | 77 | 29.6% |
 | decision-making | 4 | 1.5% |
 | deployment | 1 | 0.4% |
-| integrations | 36 | 13.9% |
+| integrations | 36 | 13.8% |
 | limits-quotas | 7 | 2.7% |
-| security | 47 | 18.1% |
+| security | 48 | 18.5% |
 | troubleshooting | 5 | 1.9% |
-| *(Unclassified)* | 79 | 30.5% |
+| *(Unclassified)* | 79 | 30.4% |
 
 ## Changes
+
+### New Pages
+
+- [Custom webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-webhook-authentication)
+
+### Updated Pages
+
+- [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication)
+  - Updated: 2025-09-09T05:11:00.000Z → 2026-03-24T06:16:00.000Z
 
 ## Classified Pages
 
@@ -110,7 +119,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Azure SignalR](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-azure-signalr) | configuration | 0.86 | Lists SignalR Service event types and schema, which are detailed, product-specific event contracts. |
 | [Troubleshoot network connectivity issues](https://learn.microsoft.com/en-us/azure/event-grid/troubleshoot-network-connectivity) | troubleshooting | 0.86 | Troubleshooting guide for Event Grid connectivity with product-specific checks (firewall, IP firewall, service tags, private endpoints) and use of diagnostic commands and network traces; organized around symptoms and resolutions. |
 | [Authenticate with MQTT broker using OAuth 2.0 authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-json-web-tokens) | security | 0.85 | Details OAuth2/JWT parameters, token requirements, and namespace configuration for JWT auth, which are product-specific security settings. |
-| [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication) | security | 0.85 | Describes webhook/Function-based dynamic auth for MQTT connections, including Entra ID JWT validation and required payload/headers. |
 | [Deliver events to Microsoft Entra protected endpoints](https://learn.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) | security | 0.85 | Contains detailed Entra auth configuration for webhook endpoints, including required roles/permissions and an extra access check introduced on a specific date. |
 | [Microsoft Entra JWT authentication and RBAC authorization for clients](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-microsoft-entra-token-and-rbac) | security | 0.85 | Describes Microsoft Entra JWT authentication and Azure RBAC roles for publish/subscribe; includes specific role names and authorization patterns. |
 | [Troubleshoot MQTT runtime issues](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-troubleshoot-errors) | troubleshooting | 0.85 | Explicit troubleshooting guide likely organized by MQTT-specific errors, causes, and resolutions unique to Event Grid MQTT broker. |
@@ -169,6 +177,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Publish using HTTP](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-how-to-http-publish) | integrations | 0.75 | Details HTTP Publish API usage, authentication, and parameters to send MQTT messages over HTTP, which are product-specific integration patterns. |
 | [Routing event schema](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-event-schema) | configuration | 0.75 | Defines how MQTT messages are mapped to CloudEvents, including fields like data vs data_base64 and conditions; this is detailed schema configuration. |
 | [Transport Layer Security connection with MQTT broker](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-transport-layer-security-flow) | security | 0.75 | Describes mTLS connection establishment, ports (8883, 443), and secure-only behavior; detailed security transport configuration. |
+| [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication) | security | 0.74 | The page describes product-specific authentication behavior for Azure Event Grid namespaces using webhooks/Azure Functions, including how the broker invokes a user-defined HTTP endpoint to validate credentials (such as SAS tokens) and how Microsoft Entra ID JWT validation is used. These are concrete, service-specific security configuration patterns rather than generic concepts, fitting the security sub-skill. |
+| [Custom webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-webhook-authentication) | security | 0.74 | The page describes product-specific authentication behavior for Azure Event Grid MQTT clients using webhooks/Azure Functions, including how the broker calls user-defined HTTP endpoints to validate credentials (SAS tokens, usernames, passwords, certificates) and how Entra ID JWT validation is applied. This is concrete, service-specific security configuration and flow detail that goes beyond generic OAuth/JWT knowledge, fitting the security sub-skill. |
 | [Batch event delivery](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/batch-event-delivery) | configuration | 0.72 | Explains batch delivery behavior (off by default) and how to enable it via event subscription configuration; includes product-specific settings that affect throughput and delivery semantics. |
 | [Access control for MQTT clients](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-access-control) | security | 0.70 | Describes role-based access control model for MQTT clients, including concepts like client groups and topic spaces; this is product-specific authorization configuration. |
 | [Assign custom domain name to a namespace](https://learn.microsoft.com/en-us/azure/event-grid/assign-custom-domain-name) | configuration | 0.70 | Shows concrete steps and settings to bind custom domains to Event Grid namespace hostnames; includes product-specific configuration parameters. |

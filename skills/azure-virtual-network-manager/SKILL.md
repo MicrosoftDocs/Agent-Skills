@@ -3,7 +3,7 @@ name: azure-virtual-network-manager
 description: Expert knowledge for Azure Virtual Network Manager development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when managing AVNM IPAM pools, network groups, cross-tenant connectivity, security admin rules, or ARG queries, and other Azure Virtual Network Manager related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan), Azure Network Watcher (use azure-network-watcher), Azure Networking (use azure-networking).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-03"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Network Manager Skill

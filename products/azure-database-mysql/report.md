@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 - **Unclassified**: 63
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 177
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
@@ -77,9 +77,10 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
 - [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql)
+  - Updated: 2026-03-18T06:16:00.000Z → 2026-03-18T08:00:00.000Z
 
 ## Classified Pages
 
@@ -255,7 +256,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.20 | CLI quickstart; shows basic az commands but not detailed configuration parameter tables or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal) | 0.20 | Portal quickstart for server creation; mostly step-by-step UI instructions without deep config matrices. |
-| [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, the page is a conceptual/marketing-style overview of Fabric mirroring for Azure Database for MySQL, describing benefits and high-level capabilities without exposing specific limits, configuration parameters, error codes, or decision matrices. No clear evidence of expert-knowledge details such as quotas, config tables, or troubleshooting mappings. |
+| [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | Summary indicates a conceptual/marketing-style overview of Fabric mirroring for Azure Database for MySQL without evidence of numeric limits, configuration tables, error codes, or detailed integration parameters. |
 | [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | The page is described as a conceptual overview of zone-redundant high availability for Azure Database for MySQL Flexible Server. The summary focuses on what HA is, automatic failover, and general behavior, without evidence of specific numeric limits, configuration parameter tables, error codes, or decision matrices. It does not match the strict criteria for limits-quotas, architecture-patterns, best-practices, troubleshooting, decision-making, security, integrations, configuration, or deployment. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |

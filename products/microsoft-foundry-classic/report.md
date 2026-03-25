@@ -1,24 +1,24 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-25'
 category_descriptions:
   configuration: 'Configuring, monitoring, and evaluating Foundry agents and models:
     hosts, compute, storage, RAG, tools, evaluators, tracing, safety, OpenAI setup,
     and continuous quality monitoring.'
-  decision-making: 'Guides for strategic choices: model and region selection, cost
-    and PTU planning, versioning and deprecations, rollout/migration paths, SDK/endpoints,
-    and evaluating partner/community models.'
+  decision-making: Guides for choosing models, regions, SDKs, costs, PTU, and deployment
+    types, plus when to fine-tune, upgrade/migrate, handle deprecations, and evaluate
+    partner/community models.
   architecture-patterns: 'Architectural guidance for Foundry: multi-agent design,
     model router, HA/resiliency, and full BCDR planning and recovery for Agent Service
     and Azure OpenAI workloads'
-  integrations: 'Patterns and code for integrating Foundry and Azure OpenAI with tools,
-    data, and apps: search/RAG, files, SharePoint, Bing, MCP, Logic Apps, LangChain,
-    evaluations, and real‑time/vision/audio APIs.'
-  security: 'Security, privacy, and access control for Foundry: networking/VNet, Private
-    Link, RBAC, guardrails, policies, CMK, auth (Entra), data handling, and secure
-    tool/model configuration.'
-  limits-quotas: Quotas, rate limits, regions, timeouts, and capacity management for
-    Foundry Agents, Foundry Models, and Azure OpenAI (including batch, dynamic quota,
-    deployments, and retired models).
+  integrations: Patterns and code to integrate Foundry and Azure OpenAI models/agents
+    with tools, data sources, search/grounding, evaluations, real‑time/audio, and
+    external apps/services.
+  security: Security, networking, auth, RBAC, keys, policies, and data privacy for
+    Foundry hubs/projects, tools (browser/computer use, Content Safety), and Azure
+    OpenAI/model deployments
+  limits-quotas: Quotas, rate limits, timeouts, and capacity management for Foundry
+    Agents, Foundry Models, Azure OpenAI (incl. batch, dynamic quota, fine-tuning),
+    and how to request or increase limits.
   deployment: Deploying Foundry hubs, projects, and models (managed/serverless) using
     Bicep, Terraform, CLI/SDK/portal, plus CI/CD pipelines and region/feature availability.
   best-practices: Best practices for prompts, safety system messages, latency/cost
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry
   classic) development including troubleshooting, best practices, decision making,
   architecture & design patterns, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building Foundry agents with RAG, tools,
-  evaluators, Azure OpenAI, VNet/Private Link, or CI/CD deployments, and other Microsoft
-  Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
-  Microsoft Foundry Local (use microsoft-foundry-local), Microsoft Foundry Tools (use
-  microsoft-foundry-tools).
-use_when: Use when building Foundry agents with RAG, tools, evaluators, Azure OpenAI,
-  VNet/Private Link, or CI/CD deployments, and other Microsoft Foundry Classic related
+  & coding patterns, and deployment. Use when building Foundry agents/models with
+  RAG, tools, evaluators, tracing, Azure OpenAI, or multi-agent routing, and other
+  Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use
+  microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Microsoft
+  Foundry Tools (use microsoft-foundry-tools).
+use_when: Use when building Foundry agents/models with RAG, tools, evaluators, tracing,
+  Azure OpenAI, or multi-agent routing, and other Microsoft Foundry Classic related
   development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Local (use microsoft-foundry-local), Microsoft Foundry Tools (use microsoft-foundry-tools).
@@ -45,26 +45,78 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ## Summary
 
-- **Total Pages**: 374
-- **Fetched**: 374
+- **Total Pages**: 373
+- **Fetched**: 373
 - **Fetch Failed**: 0
-- **Classified**: 300
-- **Unclassified**: 74
+- **Classified**: 297
+- **Unclassified**: 76
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 18
+- **Unchanged**: 355
+- **Deleted Pages**: 1
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-classic/microsoft-foundry-classic.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 8 | 2.1% |
+| architecture-patterns | 7 | 1.9% |
 | best-practices | 9 | 2.4% |
-| configuration | 57 | 15.2% |
-| decision-making | 29 | 7.8% |
+| configuration | 56 | 15.0% |
+| decision-making | 30 | 8.0% |
 | deployment | 19 | 5.1% |
-| integrations | 120 | 32.1% |
-| limits-quotas | 11 | 2.9% |
-| security | 41 | 11.0% |
+| integrations | 118 | 31.6% |
+| limits-quotas | 12 | 3.2% |
+| security | 40 | 10.7% |
 | troubleshooting | 6 | 1.6% |
-| *(Unclassified)* | 74 | 19.8% |
+| *(Unclassified)* | 76 | 20.4% |
+
+## Changes
+
+### Updated Pages
+
+- [Default safety policies](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/default-safety-policies)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-19T22:16:00.000Z
+- [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-19T22:16:00.000Z
+- [Function calling with Azure Logic Apps](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistants-logic-apps)
+  - Updated: 2026-03-02T23:16:00.000Z → 2026-03-20T22:11:00.000Z
+- [Use blocklists](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/use-blocklists)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-21T06:03:00.000Z
+- [Azure OpenAI FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/faq)
+  - Updated: 2026-02-27T23:08:00Z → 2026-03-24T22:15:00Z
+- [Deep research](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/deep-research)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-20T17:16:00.000Z
+- [Web search](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/web-search)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-20T22:11:00.000Z
+- [Model lifecycle and retirement](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-lifecycle-retirement)
+  - Updated: 2026-03-05T08:00:00.000Z → 2026-03-20T06:04:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-router)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-24T22:15:00.000Z
+- [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/whats-new-model-router)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-21T06:03:00.000Z
+- [Get started with model router](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/model-router)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-24T22:15:00.000Z
+- [Claude in Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-foundry-models-claude)
+  - Updated: 2026-03-11T08:00:00.000Z → 2026-03-20T22:11:00.000Z
+- [Microsoft Fabric (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/fabric)
+  - Updated: 2026-03-06T23:10:00.000Z → 2026-03-23T17:19:00.000Z
+- [Safety evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-safety-evaluation)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-20T17:16:00.000Z
+- [Manage costs](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/manage-costs)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-24T06:06:00.000Z
+- [Priority processing](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/priority-processing)
+  - Updated: 2026-03-17T22:20:00.000Z → 2026-03-24T17:13:00.000Z
+- [Use Microsoft Foundry with a screen reader](https://learn.microsoft.com/en-us/azure/foundry-classic/tutorials/screen-reader)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-24T22:15:00.000Z
+- [Personally identifiable information (PII) detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-personal-information)
+  - Updated: 2026-03-13T22:11:00.000Z → 2026-03-20T17:16:00.000Z
+
+### Deleted Pages
+
+- ~~What's new in Microsoft Foundry?~~ (https://learn.microsoft.com/en-us/azure/foundry-classic/whats-new-foundry)
 
 ## Classified Pages
 
@@ -162,11 +214,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Azure OpenAI GPT-4 Turbo with Vision tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/azure-open-ai-gpt-4v-tool) | configuration | 0.75 | Tool article for GPT-4 Turbo with Vision will document parameters like image input formats, size constraints, and model/deployment configuration unique to this integration. |
 | [Azure OpenAI evaluators](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-evaluators/azure-openai-graders) | configuration | 0.75 | Reference for label grading, string checking, similarity, and custom grading; likely includes grader names, parameters, and constraints unique to Foundry’s implementation. |
 | [Chat completions API](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/chatgpt) | integrations | 0.75 | Details chat completions API usage, message formats, and options; includes parameters and patterns specific to Azure OpenAI chat models. |
-| [Claude in Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-foundry-models-claude) | integrations | 0.75 | Covers deployment and usage of Claude models via Foundry, including model-specific configuration and API usage. |
 | [Computer Use](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/computer-use) | integrations | 0.75 | Describes using a specialized model to interact with UIs; likely includes tool configuration, event schemas, and parameters unique to Computer Use. |
 | [Create a hub using Terraform](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/create-hub-terraform) | deployment | 0.75 | Terraform article for hub-based projects includes resource blocks, arguments, and constraints specific to Foundry hubs and connections. |
 | [Create using Terraform template](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/create-resource-terraform) | deployment | 0.75 | Terraform article includes provider choices and a table of supported actions; this is product-specific deployment/IaC configuration detail. |
-| [Deep research](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/deep-research) | integrations | 0.75 | Covers o3-deep-research model with web search and MCP servers; expected to include configuration of tools, parameters, and usage patterns specific to deep research. |
 | [Deploy models via serverless API](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/deploy-models-serverless) | deployment | 0.75 | How-to for serverless API deployments; such docs typically include supported deployment types, constraints, and configuration parameters specific to Foundry serverless APIs. |
 | [Fine-tune Azure OpenAI models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning) | integrations | 0.75 | How-to for fine-tuning via Python and REST; includes API endpoints, request schemas, and parameters (e.g., LoRA settings) that are product-specific integration details. |
 | [Function calling](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/function-calling) | integrations | 0.75 | Explains how agents emit function call messages and how to define/handle functions; likely includes schema details and handler patterns unique to this product. |
@@ -188,11 +238,11 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Service monitoring](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/metrics) | configuration | 0.75 | Describes platform metrics, Log Analytics export, and KQL queries; likely includes metric names, dimensions, and example queries unique to this service. |
 | [Trace and observe agents](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/trace-agents-sdk) | configuration | 0.75 | Explains how to emit and view traces for agents; likely includes exporter configuration, attribute names, and trace structure specific to Foundry. |
 | [Trace your application](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/trace-application) | integrations | 0.75 | Shows how to integrate OpenAI SDK with OpenTelemetry and Foundry tracing; includes concrete SDK and telemetry configuration parameters. |
-| [Web search](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/web-search) | integrations | 0.75 | Documents web_search_preview tool usage, including tool type names and configuration; these are concrete API integration details unique to this feature. |
 | [Webhooks](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/webhooks) | integrations | 0.75 | Webhook guide explicitly mentions setup, securing endpoints, deployment, and troubleshooting; this typically includes endpoint schemas, headers, and event payload formats unique to this product. |
 | [Agent evaluators](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-evaluators/agent-evaluators) | configuration | 0.70 | Describes intent resolution, tool call accuracy, and task adherence evaluators; these are concrete, product-specific evaluator configurations and usage patterns. |
 | [Audio generation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/audio-completions-quickstart) | integrations | 0.70 | Quickstart for audio-enabled models with a modalities table; expected to include model names, supported modalities, and API parameters specific to audio generation. |
 | [Audit and manage hubs](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/azure-policy) | security | 0.70 | Explains how to use Azure Policy with Foundry hubs/projects, including relevant policy definitions, scopes, and evaluation behavior, which are product-specific governance/security configurations. |
+| [Azure OpenAI FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/faq) | limits-quotas | 0.70 | Azure OpenAI FAQs typically include product-specific expert details such as exact rate limits, token quotas, regional availability constraints, and model-specific usage caps that change over time and aren't reliably known from pretraining. These are concrete numeric limits and service behaviors, fitting the limits-quotas category best among the options. |
 | [Azure OpenAI PTU updates](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-migration) | decision-making | 0.70 | Update article compares old vs new provisioned models (model-independent quota, payment options, deployment scenarios) and guides existing users on migration/choice, which is decision-making content. |
 | [Batch with Azure Blob Storage](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/batch-blob-storage) | configuration | 0.70 | Explains configuring Blob Storage for batch input/output; likely includes container names, SAS/identity configuration, and parameter settings unique to this integration. |
 | [Build and consume vector indexes (portal)](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/index-add) | configuration | 0.70 | How-to for building and consuming vector indexes; likely includes index configuration options, parameters, and constraints specific to Foundry’s indexing system. |
@@ -200,6 +250,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Built-in policies for model deployment](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/built-in-policy-model-deployment) | security | 0.70 | How-to for assigning specific built-in Azure Policy definitions that control which Foundry/MaaP models and deployment types are allowed. Contains product-specific policy names/fields and configuration steps, which are security/ governance settings rather than generic concepts. |
 | [Built-in policy for model deployment](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/model-deployment-policy) | security | 0.70 | Built-in policy article will list specific policy definition names, parameters, and effects that control model deployment in Foundry, which are security/governance configuration details. |
 | [Choose a resource type](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/resource-types) | decision-making | 0.70 | Article explicitly helps choose between supported resource types; likely includes comparison tables and scenario-based recommendations for different development/operational needs. |
+| [Claude in Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-foundry-models-claude) | integrations | 0.70 | A 'deploy and use Claude models in Microsoft Foundry' article is likely to include product-specific deployment parameters, endpoint formats, model identifiers (for example, specific Opus/Sonnet/Haiku names or versions), and request configuration examples. These are concrete integration patterns and configuration details for using Claude via Foundry, which fits the integrations sub-skill. |
 | [Code interpreter](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/code-interpreter) | integrations | 0.70 | How-to for a specific Foundry tool that lets agents execute Python in a sandbox; likely includes tool configuration parameters and constraints that are product-specific and not just conceptual. |
 | [Codex](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/codex) | integrations | 0.70 | Shows how to run Codex agent on Azure, including CLI configuration, environment variables, and VS Code extension settings unique to this integration. |
 | [Configure AI projects to work with Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/quickstart-ai-project) | configuration | 0.70 | Explains upgrading an AI project to use Foundry Models deployments vs stand-alone endpoints; likely includes project-level configuration options and connection settings unique to this product. |
@@ -219,6 +270,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Custom policies for model deployment](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/configure-deployment-policies) | security | 0.70 | Shows how to author custom Azure Policy definitions that deny non-approved model deployments and deployment types for Foundry and Azure OpenAI. Involves product-specific policy JSON structure and fields, which are concrete security configuration details. |
 | [Data monitoring reference](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/reference/monitor-service) | configuration | 0.70 | Monitoring data reference typically lists metric names, dimensions, log categories, and schemas. These are product-specific configuration/telemetry fields needed to integrate monitoring, not generic concepts. |
 | [Data, privacy, and security for Model Catalog](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/concept-data-privacy) | security | 0.70 | Describes how customer data is processed, used, and stored for catalog models, including product-specific data handling and privacy behavior. |
+| [Default safety policies](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/default-safety-policies) | security | 0.70 | Page describes concrete default safety/guardrail configurations (content filters, blocklists, prompt transformation, content credentials) that are applied automatically to Azure OpenAI models. These are product-specific security/safety controls and policies that an LLM wouldn't reliably know from training, and they define how content is filtered and flagged by default. |
 | [Deploy Foundry Models using the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/deploy-foundry-models) | deployment | 0.70 | Portal-based deployment steps for catalog models, including resource and deployment configuration specific to Foundry. |
 | [Deploy a flow for real-time inference](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-deploy) | deployment | 0.70 | Deployment article for managed online endpoints typically includes endpoint configuration options, supported SKUs, and deployment constraints specific to Foundry. |
 | [Deploy for testing](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tune-test) | integrations | 0.70 | Testing via Chat Completions API and Evaluations; includes concrete API usage and possibly configuration of Developer Tier deployments and evaluation calls. |
@@ -238,9 +290,8 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Fine-tune models deployed via serverless API](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/fine-tune-serverless) | deployment | 0.70 | Serverless deployment of fine-tuned models; likely includes deployment options, constraints, and possibly tier-specific behavior for serverless hosting. |
 | [For Speech/Language](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/bring-your-own-azure-storage-speech-language-services) | configuration | 0.70 | Speech/Language BYOS configuration at resource creation time will include specific parameters, allowed values, and constraints unique to these capabilities, fitting configuration expert knowledge. |
 | [Foundry known issues](https://learn.microsoft.com/en-us/azure/foundry-classic/reference/foundry-known-issues) | troubleshooting | 0.70 | Known issues page typically lists specific symptoms and product behaviors with associated workarounds/solutions, which are symptom→cause→solution mappings unique to the service. |
-| [Function calling with Azure Logic Apps](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistants-logic-apps) | integrations | 0.70 | Shows how to connect Assistants with Azure Logic Apps; likely includes connector configuration, trigger/action parameters, and integration-specific settings. |
+| [Function calling with Azure Logic Apps](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/assistants-logic-apps) | integrations | 0.70 | How-to for running Logic Apps workflows from Foundry Assistants is an integration pattern between two Azure services. Such pages typically include specific connector configuration, parameter names, and request/response patterns unique to this integration, which qualifies as product-specific integration knowledge. |
 | [General purpose evaluators](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/evaluation-evaluators/general-purpose-evaluators) | configuration | 0.70 | Describes specific general-purpose evaluators (coherence, fluency, QA composite) with likely parameter names and usage patterns; this is product-specific evaluator configuration rather than generic theory. |
-| [Get started with model router](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/model-router) | integrations | 0.70 | How-to for using model router as a deployable chat model, likely including endpoint/parameter usage specific to this product. |
 | [Guardrails & controls for serverless API](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-catalog-content-safety) | security | 0.70 | Content safety and guardrails for models sold directly by Azure; likely includes specific safety settings, policy controls, and configuration parameters unique to Foundry serverless deployments. |
 | [Hide preview features with Azure tags](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/disable-preview-features) | configuration | 0.70 | Describes specific tag names/values, scopes (subscription/resource group/resource), and behavior across classic/new portals, which are concrete configuration parameters. |
 | [High availability and resiliency](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/high-availability-resiliency) | architecture-patterns | 0.70 | HA/resiliency article will include region/deployment patterns, recommended topologies, and possibly RPO/RTO guidance specific to Foundry projects and Agent Service, which are architecture patterns. |
@@ -255,13 +306,12 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [LLM tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/llm-tool) | configuration | 0.70 | Tool-specific article for the LLM tool will typically document parameters (model name, temperature, max tokens, deployment names) and allowed values unique to this product. |
 | [Logic apps](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/logic-apps) | integrations | 0.70 | Shows how to wire Logic Apps to agents; likely includes connector names, trigger/action configuration, and payload schemas specific to this integration. |
 | [Managed network for hubs](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/configure-managed-network) | security | 0.70 | How-to for configuring a managed network for hub-based projects, including specific networking settings and Azure resources. These are concrete security/network configuration steps beyond generic concepts. |
-| [Microsoft Fabric (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/fabric) | integrations | 0.70 | Integration article for Fabric data agent; likely details configuration, connection parameters, and usage patterns unique to this cross-service scenario. |
 | [Migrate from hub-based to Foundry project](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/migrate-project) | decision-making | 0.70 | Migration guide will include concrete mapping between old and new project types, supported/unsupported features, and stepwise migration decisions, which are product-specific decision and migration details. |
 | [Migrate to Azure OpenAI .NET v2.0](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/dotnet-migration) | integrations | 0.70 | Covers migration between specific Azure OpenAI .NET SDK versions; such docs contain detailed API/parameter changes and code patterns unique to this product. |
 | [Migrate to OpenAI Python v1.x](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/migration) | integrations | 0.70 | Migration guide between library versions with Azure-specific changes; these typically include concrete parameter names, code patterns, and configuration differences unique to Azure OpenAI usage. |
 | [Model and region support](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/concepts/model-region-support) | decision-making | 0.70 | Helps choose model/region combinations; likely includes comparison tables of supported models per region and guidance on selection, which is decision-making content. |
-| [Model lifecycle and retirement](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-lifecycle-retirement) | decision-making | 0.70 | Details lifecycle stages, deprecation timelines, and migration steps, providing specific guidance for when and how to move between models. |
-| [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.70 | Explains concrete upgrade policies and how different versioning options affect deployments, guiding decisions on when and how to upgrade models. |
+| [Model lifecycle and retirement](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/model-lifecycle-retirement) | decision-making | 0.70 | A model lifecycle/deprecation page for a specific service typically includes concrete timelines, stage definitions, and migration requirements (for example, how long a model remains in preview/GA, notice periods before retirement, and what happens at each stage). These are product-specific decision inputs for when and how to migrate off a model and are not generic knowledge. This aligns best with decision-making because it guides when to move between models and what actions to take at each lifecycle stage. |
+| [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.70 | Explains model versioning, update policies, and how to choose upgrade policies; likely includes decision guidance and possibly matrices for when to select certain policies or versions. |
 | [Model versions](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/model-versions) | decision-making | 0.70 | Explains model versioning, update policies, and how to choose upgrade policies; likely includes decision guidance and possibly matrices for when to select certain policies or versions. |
 | [Monitor model deployments](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/monitor-models) | configuration | 0.70 | Explains using Azure Monitor and Log Analytics for Foundry Models; includes specific metrics, log categories, and configuration steps that are product-specific. |
 | [Network security perimeter (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/network-security-perimeter) | security | 0.70 | Network security perimeter configuration is security-focused and product-specific, typically including resource types, policy settings, and scopes. |
@@ -270,7 +320,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/file-search) | integrations | 0.70 | How-to for a concrete tool that augments agents with external knowledge; likely includes tool options, modes, and constraints specific to Foundry file search. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/bring-your-own-azure-storage-foundry) | configuration | 0.70 | BYOS article will include storage account types, required configuration parameters, identity/connection settings, and supported scenarios for agents/evaluations/datasets, which are detailed configuration options. |
 | [Performance & latency](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/latency) | best-practices | 0.70 | Performance/latency optimization for a specific service typically includes concrete recommendations, configuration values, and throughput behaviors unique to Azure OpenAI. |
-| [Priority processing](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/priority-processing) | configuration | 0.70 | Priority processing configuration will include deployment settings, tier flags, and how to verify which tier processed requests, which are specific configuration parameters and behaviors. |
+| [Priority processing](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/priority-processing) | decision-making | 0.70 | Priority processing for Foundry models is a product-specific feature that typically documents when to enable it, how it affects latency, availability, and cost, and how to verify which tier processed requests. This is specialized guidance to choose between standard vs priority tiers and manage associated costs, which aligns with decision-making (tier/plan selection and trade-offs). The content is unlikely to be purely conceptual and instead provides concrete, service-specific decision criteria. |
 | [Prompt caching](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/prompt-caching) | best-practices | 0.70 | Describes prompt caching behavior, including how cached tokens are reused; expected to include configuration flags, cache semantics, and usage patterns unique to Azure OpenAI. |
 | [Prompt tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/prompt-tool) | configuration | 0.70 | Prompt tool article is expected to list tool settings, input/output bindings, and parameter options specific to Foundry prompt flow. |
 | [Python tool](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/python-tool) | configuration | 0.70 | Python tool documentation usually includes configuration fields (environment, inputs/outputs, package requirements) and constraints specific to this environment. |
@@ -295,9 +345,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Trigger an agent using Logic Apps](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/triggers) | integrations | 0.70 | Shows how to invoke agents on events like emails or tickets; likely includes Logic Apps trigger configuration, connector parameters, and payload schemas specific to this integration. |
 | [Upgrade from Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/upgrade-azure-openai) | decision-making | 0.70 | Explains upgrade path, preserved endpoints, and capability differences; helps choose and plan migration between resource types with concrete implications for existing workloads. |
 | [Use MCP tools with the Microsoft Foundry Agent Service in VS Code](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents-mcp) | integrations | 0.70 | Shows how to add and test MCP tools via the VS Code extension; likely includes configuration fields and parameters unique to this integration path. |
-| [Use blocklists](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/use-blocklists) | security | 0.70 | Describes how to configure custom block lists for content moderation; likely includes configuration options and behavior specific to Azure OpenAI content filters. |
+| [Use blocklists](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/use-blocklists) | security | 0.70 | Block lists are a safety/security control layered on top of configurable content filters. The article explains how to define and apply custom block lists for sensitive terms, which is product-specific safety configuration. This fits the security category as it covers concrete mechanisms for restricting content beyond generic concepts. |
 | [Use structured outputs](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-structured-outputs) | integrations | 0.70 | Explains structured output configuration for chat models, including schema/parameter usage specific to Foundry implementations. |
 | [Vision fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-vision) | configuration | 0.70 | Details dataset requirements, image formats, and input formats (URLs, base64 data URIs); these are concrete configuration constraints for vision fine-tuning. |
+| [Web search](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/web-search) | integrations | 0.70 | The web search how-to describes enabling and configuring the web_search tool in the Responses API, which will include specific tool names, request fields, parameter values, and possibly defaults/constraints for web search behavior. These are detailed integration and API usage patterns unique to this product, fitting the integrations category. |
 | [Weights & Biases integration (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/weights-and-biases-integration) | integrations | 0.70 | Describes a concrete integration between Azure OpenAI fine-tuning and W&B, likely including API keys, environment variables, and run configuration parameters specific to this integration. |
 | [What is the Provisioned Throughput offering (PTU)?](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/provisioned-throughput) | decision-making | 0.70 | Provisioned throughput concept article for Foundry models will include PTU sizing, capacity allocation behavior, and when to choose provisioned vs standard, which are product-specific decision criteria. |
 | [Work with image embeddings](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/how-to/use-image-embeddings) | integrations | 0.70 | Explains how to generate image embeddings via Foundry APIs, including model support and request configuration. |
@@ -315,17 +366,18 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Continuously evaluate your AI agents](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/continuous-evaluation-agents) | configuration | 0.65 | Continuous evaluation setup; likely documents schedules, evaluator configurations, and portal/SDK settings unique to this feature. |
 | [Continuously monitor your applications](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/monitor-applications) | configuration | 0.65 | Monitoring how-to; typically includes configuration of metrics, logging, and evaluator settings specific to Foundry’s monitoring features. |
 | [Data, privacy, and security for Claude models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/claude-models/data-privacy) | security | 0.65 | Details how data is processed, used, and stored for Anthropic Claude models in Foundry, including who is the data processor and applicable terms. These are product- and vendor-specific security/privacy behaviors not derivable from generic knowledge. |
-| [Default safety policies](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/default-safety-policies) | security | 0.65 | Describes default safety configurations including content filtering models, blocklists, and prompt transformation; likely enumerates specific policy settings and categories that are product-specific security controls. |
+| [Deep research](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/deep-research) | integrations | 0.65 | The deep research how-to for the Responses API is likely to include product-specific request schemas, tool configuration parameters (for MCP, browsing, code execution), and example payloads unique to Azure OpenAI’s o3-deep-research integration. These are concrete API/SDK patterns and parameters, which best match the integrations sub-skill. |
 | [Disaster recovery for agent services](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/agent-service-disaster-recovery) | architecture-patterns | 0.65 | DR overview for Agent Service includes what can/can't be recovered, readiness checklist, and recommended recovery paths, which are product-specific DR architecture decisions. |
 | [Feature availability](https://learn.microsoft.com/en-us/azure/foundry-classic/reference/region-support) | deployment | 0.65 | Region support matrix lists which Foundry features are available in which regions; this is a product-specific capability matrix that affects deployment and planning decisions. |
 | [Fine-tuning in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/fine-tuning-overview) | decision-making | 0.65 | Explains when to fine-tune and which type to choose; likely includes scenario-based guidance and trade-offs for different fine-tuning approaches, which is decision-making content. |
 | [Foundry Models sold directly by Azure](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/models-sold-directly-by-azure) | decision-making | 0.65 | Lists specific Azure-sold models with capabilities, deployment types, and regional availability, enabling concrete model selection decisions. |
 | [Generate synthetic and simulated data for evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/simulator-interaction-data) | configuration | 0.65 | How-to for generating synthetic data for evaluation; likely includes SDK calls, parameters, and dataset schema requirements that are specific to Foundry’s evaluation system. |
 | [Get started with DeepSeek-R1 reasoning model](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/tutorials/get-started-deepseek-r1) | best-practices | 0.65 | Tutorial for a specific reasoning model; likely includes model deployment options, parameter settings, and parsing patterns unique to DeepSeek-R1 in Foundry. |
+| [Get started with model router](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/model-router) | integrations | 0.65 | A 'how to use model router' article for a specific Azure service typically includes request/response schemas, deployment parameters, and API/SDK usage patterns unique to this product (for example, deployment names, required fields, routing-specific parameters). That fits the integrations & coding patterns category, as it likely contains concrete API usage and configuration details beyond generic LLM usage. |
 | [Groundedness detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-groundedness) | integrations | 0.65 | Describes groundedness detection requirements such as document embedding and prompt formatting for RAG scenarios. Involves product-specific API usage patterns and parameters for integrating Content Safety with LLM responses. |
 | [How to use Computer Use](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/computer-use-samples) | integrations | 0.65 | Code-sample article for a specific tool; likely documents SDK parameters, request/response schemas, and configuration details unique to this integration. |
 | [Legacy models](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/legacy-models) | limits-quotas | 0.65 | Retired models list is effectively a product-specific availability constraint; page likely enumerates specific model names and retirement dates, which are concrete limits on what can be deployed. |
-| [Manage costs](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/manage-costs) | decision-making | 0.65 | Cost management article will include concrete guidance on estimating usage, mapping Foundry resources to billing meters, and using Cost Management filters, which are product-specific decision and planning details. |
+| [Manage costs](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/manage-costs) | decision-making | 0.65 | A cost-management article for a specific Azure service typically includes product-specific guidance on estimating and tracking spend, often with concrete thresholds, cost drivers, and configuration of alerts in Cost Management. This is decision-support content (how to plan and control spend for this service) rather than generic marketing. While not limits/quotas, it likely contains concrete, service-specific cost-planning guidance that an LLM wouldn't know from training, fitting the decision-making category best. |
 | [MedImageInsight model for embedding](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/deploy-medimageinsight) | integrations | 0.65 | Step-by-step deployment plus API examples for a specific healthcare model; likely includes endpoint paths, request/response schemas, and model-specific parameters that qualify as product-specific integration patterns. |
 | [MedImageParse models for prompted segmentation](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/deploy-medimageparse) | integrations | 0.65 | Model-specific how-to for MedImageParse and MedImageParse 3D; likely documents input formats, parameters, and API usage patterns that are not generic LLM knowledge. |
 | [Microsoft Foundry SDKs](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/sdk-overview) | decision-making | 0.65 | Explains which SDK and endpoint to use for specific scenarios and resource types, providing concrete selection guidance beyond generic concepts. |
@@ -334,8 +386,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Monitor Azure OpenAI](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/monitor-openai) | configuration | 0.65 | Monitoring article for a specific service usually lists metric names, log categories, and diagnostic settings unique to Azure OpenAI and Azure Monitor integration. |
 | [Monitor prompt flow deployments](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/monitor-quality-safety) | configuration | 0.65 | Monitoring article is expected to describe specific metrics, dashboards, and configuration options for tracking token usage and quality in Foundry. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/deep-research) | integrations | 0.65 | Tool-specific article for web-based research; likely includes configuration options, parameters, and usage patterns unique to this deprecated capability. |
-| [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-router) | architecture-patterns | 0.65 | Explains a product-specific routing pattern (model router) with when to use it for cost, latency, and quality trade-offs—an architecture decision unique to this service. |
-| [Personally identifiable information (PII) detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-personal-information) | integrations | 0.65 | Describes PII filter behavior and usage to detect personal information in outputs. This is product-specific filter configuration and usage, beyond generic PII concepts. |
 | [Plan and manage costs for hubs](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/costs-plan-manage) | decision-making | 0.65 | Cost planning article uses Azure pricing calculator and cost analysis; likely includes guidance on which resources drive cost and how to structure deployments for cost control. |
 | [Plan rollout](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/planning) | decision-making | 0.65 | Rollout planning guide covers environment setup, data isolation, governance, and capacity management; likely includes scenario-based recommendations and decision criteria between options. |
 | [Predicted outputs](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/predicted-outputs) | best-practices | 0.65 | Feature-specific guidance on predicted outputs to reduce latency; likely includes concrete usage patterns, configuration fields, and scenarios where it is effective. |
@@ -345,7 +395,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Quickstart: Get started with Microsoft Foundry using a hub](https://learn.microsoft.com/en-us/azure/foundry-classic/quickstarts/hub-get-started-code) | integrations | 0.65 | Quickstart for SDK, deployment, and chat app will include concrete API endpoints, SDK methods, and parameter usage specific to Foundry hub projects, which are integration/coding patterns. |
 | [Reproducible output](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/reproducible-output) | configuration | 0.65 | Preview feature for determinism likely documents specific configuration parameters (e.g., seed or related flags) and their allowed values, which are product-specific settings. |
 | [Risks & Safety Monitoring](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/risks-safety-monitor) | troubleshooting | 0.65 | Risks & Safety monitoring dashboard article likely includes guidance on interpreting metrics, diagnosing filter behavior, and adjusting configuration based on observed issues, fitting a troubleshooting pattern. |
-| [Safety evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-safety-evaluation) | security | 0.65 | Describes additional safety evaluations for fine-tuned models; likely includes specific evaluation steps, thresholds, or compliance requirements tied to model deployment. |
 | [Service architecture](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/architecture) | architecture-patterns | 0.65 | Architecture article for IT/security teams will detail how Foundry resources map to underlying Azure services, network flows, and isolation boundaries, which are product-specific architecture patterns. |
 | [Use the Microsoft Foundry Agent Service in VS Code](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/vs-code-agents) | configuration | 0.65 | Covers configuring agents, adding tools, and deploying from VS Code; likely includes agent configuration options and tool settings specific to Foundry. |
 | [Vision-enabled chats](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/gpt-with-vision) | integrations | 0.65 | How-to for vision-enabled chat models typically documents request formats, image input parameters, and model-specific options for Azure OpenAI, which are concrete integration details not captured by generic LLM training. |
@@ -417,24 +466,25 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Abuse monitoring](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/abuse-monitoring) | 0.30 | Abuse monitoring concepts page; likely high-level description of monitoring behavior and data handling without concrete configuration parameters or limits. |
 | [Assistants](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/assistants) | 0.30 | Concepts article for Assistants API; primarily conceptual description of assistants and tools, not focused on detailed configuration tables or error mappings. |
 | [Azure AI Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.30 | Content Safety overview describes what the service does and mentions a try-it experience, but the summary does not indicate detailed configuration tables, limits, or error mappings. |
-| [Azure OpenAI FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/faq) | 0.30 | FAQ content tends to be mixed and high-level; summary doesn’t indicate structured error codes, limits, or configuration tables. |
 | [Create a flow](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-develop) | 0.30 | General how-to for building with prompt flow; summary does not indicate detailed configuration tables, limits, or troubleshooting content. |
 | [Fine-tuning](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/fine-tuning-considerations) | 0.30 | Fine-tuning considerations are likely conceptual guidance (data quality, overfitting, etc.) without product-specific numeric thresholds or configuration tables. |
 | [Foundational AI models for healthcare](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/healthcare-ai/healthcare-ai-models) | 0.30 | Appears to be a conceptual overview of healthcare AI foundation models and usage caveats, not detailed configuration, limits, or troubleshooting content. |
 | [Hubs overview](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/ai-resources) | 0.30 | Conceptual overview of hubs and hub-based projects; summary does not indicate detailed configuration parameters, limits, or troubleshooting content. |
 | [Observability overview](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/observability) | 0.30 | Conceptual overview of observability and evaluation; description suggests lifecycle concepts rather than concrete error codes, limits, or config tables. |
+| [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/model-router) | 0.30 | The summary describes a conceptual explanation of the model router and its benefits (routing prompts to suitable LLMs, saving cost/latency). It reads as a concepts/overview page without clear evidence of configuration tables, limits, error codes, or decision matrices. Likely high-level behavior rather than detailed expert configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/overview) | 0.30 | Responsible AI overview; primarily conceptual practices and challenges without concrete configuration or limits indicated in the summary. |
 | [Process images in a flow](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-process-image) | 0.30 | Processing images in prompt flow is a feature how-to; summary does not indicate detailed configuration parameters or numeric constraints. |
-| [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation) | 0.30 | Prompt transformation concepts for DALL-E 3; summary indicates conceptual explanation of why and how, not detailed configuration parameters. |
+| [Prompt transformations](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/prompt-transformation) | 0.30 | Appears to be a conceptual explanation of prompt transformation for image generation (why it exists, how it works at a high level) and a retirement notice for DALL-E 3. No indication of detailed configuration parameters, limits, or decision matrices; primarily conceptual/announcement content. |
 | [Quickstart](https://learn.microsoft.com/en-us/azure/foundry-classic/quickstarts/get-started-code) | 0.30 | Quickstart tutorial for SDK usage; no detailed configuration tables, limits, or troubleshooting content. |
 | [Retrieval Augmented Generation (RAG) overview](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/retrieval-augmented-generation) | 0.30 | Conceptual explanation of RAG and indexes; summary suggests high-level pattern description without concrete configuration tables, limits, or product-specific parameters. |
+| [Safety evaluation](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-safety-evaluation) | 0.30 | Page appears to describe how safety evaluation works conceptually for fine-tuning (preview) with responsible AI context; summary does not indicate concrete limits, error codes, configuration parameter tables, or decision matrices with quantified trade-offs. Without evidence of specific numeric thresholds, config values, or error mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Set up your development environment](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/develop/install-cli-sdk) | 0.30 | General environment setup (runtimes, CLI, VS Code, Git); mostly generic tooling installation without product-specific configuration tables or limits. |
 | [Transparency note](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-ai/openai/transparency-note) | 0.30 | Transparency note is typically high-level usage and risk information; summary doesn’t indicate specific config parameters, limits, or error mappings. |
 | [Trustworthy AI overview](https://learn.microsoft.com/en-us/azure/foundry-classic/responsible-use-of-ai-overview) | 0.30 | Responsible AI overview is primarily conceptual and navigational, summarizing resources and standards without specific configuration parameters, limits, or error mappings. |
 | [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/flow-tune-prompts-using-variants) | 0.30 | Tuning prompts using variants appears to be workflow guidance; summary does not suggest product-specific limits, config tables, or error mappings. |
 | [Video generation (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/video-generation) | 0.30 | Conceptual overview of Sora capabilities, safety, and limitations; no clear indication of parameter tables, limits, or configuration matrices. |
 | [What is Foundry Agent Service?](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/overview) | 0.30 | Conceptual overview of Foundry Agent Service; primarily explains what it is and why, not detailed configs or limits. |
-| [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/whats-new-model-router) | 0.30 | What's new/update log; typically change notes rather than stable expert patterns, limits, or configs. |
+| [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/whats-new-model-router) | 0.30 | A 'what's new' page usually lists release notes and feature additions. The summary mentions new supported models, routing features, and deployment options but not specific limits, configuration tables, or decision matrices. Release notes are useful but generally not structured as the expert-knowledge skill types defined here. |
 | [Customizing Large Language Models (LLMs)](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/customizing-llms) | 0.25 | Getting-started concepts for customizing LLMs (prompting, RAG, fine-tuning); largely general techniques rather than product-specific configuration or limits. |
 | [Embeddings](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/understand-embeddings) | 0.25 | Conceptual explanation of embeddings and cosine similarity; generic ML knowledge without Azure-specific configuration or limits. |
 | [Explore Foundry Models](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/foundry-models-overview) | 0.25 | Models overview and catalog description; marketing/conceptual without detailed limits, configs, or decision matrices. |
@@ -443,9 +493,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Ask AI](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/ask-ai) | 0.20 | Describes how to use Ask AI in the portal; appears conceptual/UX-focused without product-specific configs or limits. |
 | [Fine-tuning cost management](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/fine-tuning-cost-management) | 0.20 | Fine-tuning cost article uses example numbers only and explicitly defers to the pricing page; no authoritative limits, quotas, or product-specific configuration values are defined. |
 | [Foundry (classic) FAQ](https://learn.microsoft.com/en-us/azure/foundry-classic/faq) | 0.20 | FAQ content is high-level Q&A about Foundry; summary suggests general information rather than detailed error codes, configuration tables, or numeric limits. |
+| [Microsoft Fabric (preview)](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/fabric) | 0.20 | Summary indicates a how-to/tutorial style integration of Foundry classic agents with Microsoft Fabric data agent, but does not expose concrete configuration tables, limits, error codes, or other product-specific expert details. Likely general usage guidance rather than detailed configuration, limits, or troubleshooting content. |
+| [Personally identifiable information (PII) detection](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/concepts/content-filter-personal-information) | 0.20 | Page appears to be a conceptual explanation of the PII/content filter behavior and what constitutes personal data, without clear evidence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. |
 | [Prompt flow tools overview](https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/prompt-flow-tools/prompt-flow-tools-overview) | 0.20 | Overview of tools is descriptive; overviews typically list capabilities but not detailed configuration parameters or limits. |
 | [What is Microsoft Foundry (classic)?](https://learn.microsoft.com/en-us/azure/foundry-classic/what-is-foundry) | 0.20 | High-level overview of Microsoft Foundry (classic) without concrete limits, configs, or error mappings. |
 | [What's new](https://learn.microsoft.com/en-us/azure/foundry-classic/agents/whats-new) | 0.20 | What's new/change log; mostly release notes and marketing-style updates, not structured expert knowledge per the categories. |
 | [Prompt flow overview](https://learn.microsoft.com/en-us/azure/foundry-classic/concepts/prompt-flow) | 0.10 | Conceptual introduction to prompt flow; no indication of numeric limits, configuration tables, or error mappings. |
-| [Use Microsoft Foundry with a screen reader](https://learn.microsoft.com/en-us/azure/foundry-classic/tutorials/screen-reader) | 0.10 | Screen reader navigation quickstart focuses on UI navigation and accessibility, not on product-specific APIs, limits, or configuration parameters. |
-| [What's new in Microsoft Foundry?](https://learn.microsoft.com/en-us/azure/foundry-classic/whats-new-foundry) | 0.10 | What's new article summarizes documentation changes and portal updates; it does not provide stable technical limits, configuration schemas, or diagnostic mappings. |
+| [Use Microsoft Foundry with a screen reader](https://learn.microsoft.com/en-us/azure/foundry-classic/tutorials/screen-reader) | 0.10 | Accessibility and navigation guidance for using a screen reader with the Foundry portal; no product-specific limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |

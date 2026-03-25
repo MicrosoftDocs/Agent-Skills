@@ -45,39 +45,39 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 
 ## Summary
 
-- **Total Pages**: 70
-- **Fetched**: 70
+- **Total Pages**: 69
+- **Fetched**: 69
 - **Fetch Failed**: 0
-- **Classified**: 51
+- **Classified**: 50
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
 - **Unchanged**: 69
-- **Deleted Pages**: 0
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-computing/azure-confidential-computing.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 6 | 8.6% |
+| architecture-patterns | 6 | 8.7% |
 | best-practices | 1 | 1.4% |
-| configuration | 6 | 8.6% |
-| decision-making | 9 | 12.9% |
-| deployment | 8 | 11.4% |
-| integrations | 7 | 10.0% |
+| configuration | 5 | 7.2% |
+| decision-making | 9 | 13.0% |
+| deployment | 8 | 11.6% |
+| integrations | 7 | 10.1% |
 | limits-quotas | 1 | 1.4% |
-| security | 12 | 17.1% |
+| security | 12 | 17.4% |
 | troubleshooting | 1 | 1.4% |
-| *(Unclassified)* | 19 | 27.1% |
+| *(Unclassified)* | 19 | 27.5% |
 
 ## Changes
 
-### New Pages
+### Deleted Pages
 
-- [How to disable Virtual Machine Metablob Disk](https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob)
+- ~~How to disable Virtual Machine Metablob Disk~~ (https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob)
 
 ## Classified Pages
 
@@ -113,7 +113,6 @@ confusable_not_for: Not for Azure Virtual Enclaves (use azure-virtual-enclaves),
 | [Deploying solutions on confidential computing](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-computing-deployment-models) | decision-making | 0.70 | Explicitly focused on selecting between deployment models based on security requirements; provides decision guidance rather than just how-to steps. |
 | [Fortanix Confidential Computing Manager](https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-fortanix-confidential-computing-manager) | deployment | 0.70 | Step-by-step deployment of Fortanix Confidential Computing Manager as a managed application in Azure, including Azure- and product-specific deployment requirements and wiring. |
 | [Guest attestation Design for confidential VMs](https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-virtual-machines-design) | architecture-patterns | 0.70 | Provides design-level details of guest attestation architecture for confidential VMs, including flows and components unique to this service. |
-| [How to disable Virtual Machine Metablob Disk](https://learn.microsoft.com/en-us/azure/confidential-computing/disable-confidential-vm-metadata-blob) | configuration | 0.70 | The article provides product-specific steps and settings to disable VMMD blob creation for Confidential VMs, including precise configuration actions unique to Azure Confidential Computing. This is concrete configuration guidance rather than conceptual overview, but it does not focus on limits, security roles, or deployment matrices. |
 | [How to migrate nested confidential VMs from one region to another](https://learn.microsoft.com/en-us/azure/confidential-computing/migrate-nested-confidential-vms) | deployment | 0.70 | Stepwise migration process for nested confidential VMs, including quota checks and image capture; product-specific deployment/migration pattern. |
 | [Open-source projects for development](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-development-oss) | integrations | 0.70 | A development-focused article on Intel SGX enclaves that describes specific open-source toolchains and patterns for building enclave applications on Azure confidential computing. This is product- and platform-specific integration knowledge beyond generic concepts. |
 | [Secret & key management](https://learn.microsoft.com/en-us/azure/confidential-computing/secret-key-management) | security | 0.70 | Describes how confidential computing-enabled services use hardware root-of-trust keys, attestation, and in-TEE encryption; contains product-specific security patterns beyond generic key management. |

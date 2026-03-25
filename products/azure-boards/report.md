@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 125
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -59,11 +59,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 91 | 72.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Sign up for Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/get-started/sign-up-invite-teammates?view=azure-devops)
-  - Updated: 2026-01-13T14:05:00.000Z → 2026-03-04T02:02:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-local
-description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when planning Azure Local racks/SDN, Arc/Insights, Defender, BitLocker, VM migration, or multi-rack DR, and other Azure Local related development tasks. Not for Microsoft Foundry Local (use microsoft-foundry-local), Azure Stack Edge (use azure-stack-edge), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Azure IoT Edge (use azure-iot-edge).
+description: Expert knowledge for Azure Local development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Azure Local racks/SDN, Arc/Arc gateway, disconnected ops, VM migration, or Defender/BitLocker, and other Azure Local related development tasks. Not for Azure Stack Edge (use azure-stack-edge), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials), Microsoft Foundry Local (use microsoft-foundry-local).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Local Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L95-L121 | Designing Azure Local network/storage topologies, SDN and rack-aware architectures, resilience and DR patterns, and detailed 2–4 node network designs (switchless/switched, converged/non-converged). |
 | Limits & Quotas | L122-L128 | Cluster rack layout limits, SLB high availability port constraints, and Hyper-V VM migration requirements/capacities for Azure Local deployments. |
 | Security | L129-L167 | Security hardening for Azure Local: identity/RBAC, certificates/PKI, firewalls/NSGs, BitLocker, Defender, logging/SIEM, attestation/trusted launch, and security updates. |
-| Configuration | L168-L256 | Configuring Azure Local infrastructure: networking, storage, GPUs, monitoring, Arc/Insights, disconnected ops, migrations, multi-rack, and VM/cluster settings and prerequisites. |
-| Integrations & Coding Patterns | L257-L267 | Guides for networking, load balancing, VM image workflows, migration, and disaster recovery for Azure Local (especially multi-rack) using CLI, PowerShell, SSH, and Azure services. |
-| Deployment | L268-L294 | Deploying, scaling, upgrading, and maintaining Azure Local clusters (rack-aware, virtualized, disconnected), including Arc gateway, updates, SQL/ACR workloads, and node repair/maintenance. |
+| Configuration | L168-L257 | Configuring Azure Local infrastructure: networking, storage, GPUs, monitoring, Arc/Insights, multi-rack, disconnected ops, migrations, and VM/host settings for deployment and operations. |
+| Integrations & Coding Patterns | L258-L268 | Guides for networking, load balancing, VM image workflows, migration, and disaster recovery for Azure Local (especially multi-rack) using CLI, PowerShell, SSH, and Azure services. |
+| Deployment | L269-L294 | Deploying, scaling, upgrading, and maintaining Azure Local clusters (rack-aware, virtualized, disconnected), including Arc gateway, updates, SQL/ACR workloads, and node repair/maintenance. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -200,7 +200,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable and manage remote support for Azure Local OS | https://learn.microsoft.com/en-us/azure/azure-local/manage/get-remote-support?view=azloc-2603 |
 | Configure GPU Discrete Device Assignment on Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/gpu-manage-via-device?view=azloc-2603 |
 | Configure GPU partitioning (GPU-P) for Azure Local VMs | https://learn.microsoft.com/en-us/azure/azure-local/manage/gpu-manage-via-partitioning?view=azloc-2603 |
-| Prepare GPUs for Azure Local VMs and AKS workloads | https://learn.microsoft.com/en-us/azure/azure-local/manage/gpu-preparation?view=azloc-2603 |
+| Configure GPUs for Azure Local instances | https://learn.microsoft.com/en-us/azure/azure-local/manage/gpu-preparation?view=azloc-2603 |
 | Integrate Azure Local health service with Azure Monitor alerts | https://learn.microsoft.com/en-us/azure/azure-local/manage/health-alerts-via-azure-monitor-alerts?view=azloc-2603 |
 | Track automated Health Service actions in Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/manage/health-service-actions?view=azloc-2603 |
 | Retrieve Azure Local cluster performance history via Health Service | https://learn.microsoft.com/en-us/azure/azure-local/manage/health-service-cluster-performance-history?view=azloc-2603 |
@@ -251,6 +251,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure IP addressing for three-node Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/plan/three-node-ip-requirements?view=azloc-2603 |
 | Review two-node Azure Local network components | https://learn.microsoft.com/en-us/azure/azure-local/plan/two-node-components?view=azloc-2603 |
 | Configure IP addressing for two-node Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/plan/two-node-ip-requirements?view=azloc-2603 |
+| Import Azure Local update packages in limited connectivity | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2603 |
 | Apply Azure Local solution updates via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-2603 |
 | Configure Network ATC on existing Azure Local clusters | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/install-enable-network-atc?view=azloc-2603 |
 
@@ -289,6 +290,5 @@ This skill requires **network access** to fetch documentation content:
 | Discover and replicate Hyper-V VMs to Azure Local with Azure Migrate | https://learn.microsoft.com/en-us/azure/azure-local/migrate/migrate-hyperv-replicate?view=azloc-2603 |
 | Plan supported Azure Local release upgrade paths | https://learn.microsoft.com/en-us/azure/azure-local/release-information-23h2?view=azloc-2603 |
 | Use Azure Update Manager to update Azure Local | https://learn.microsoft.com/en-us/azure/azure-local/update/azure-update-manager-23h2?view=azloc-2603 |
-| Import and discover Azure Local updates in limited-connectivity sites | https://learn.microsoft.com/en-us/azure/azure-local/update/import-discover-updates-offline-23h2?view=azloc-2603 |
 | Run post-upgrade tasks for Azure Local via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/post-upgrade-steps?view=azloc-2603 |
 | Upgrade Azure Stack HCI OS 22H2 to 23H2 or 24H2 via PowerShell | https://learn.microsoft.com/en-us/azure/azure-local/upgrade/upgrade-22h2-to-23h2-powershell?view=azloc-2603 |

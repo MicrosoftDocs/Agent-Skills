@@ -3,7 +3,7 @@ name: azure-confidential-ledger
 description: Expert knowledge for Azure Confidential Ledger development including decision making, security, integrations & coding patterns, and deployment. Use when configuring Entra auth, ACL roles, UDFs, client SDKs, transaction receipts, or ARM/Terraform deployments, and other Azure Confidential Ledger related development tasks. Not for Azure Confidential Computing (use azure-confidential-computing), Azure Virtual Enclaves (use azure-virtual-enclaves), Azure Key Vault (use azure-key-vault), Azure Dedicated HSM (use azure-dedicated-hsm).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-25"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Confidential Ledger Skill
@@ -26,8 +26,8 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Decision Making | L32-L36 | Guidance on migrating from Managed CCF to Azure Confidential Ledger, including compatibility, feature mapping, and steps to move existing apps and data. |
 | Security | L37-L48 | Configuring Entra auth and app registration, managing cert- and token-based users/roles, enforcing RBAC/UDF security, and verifying enclave/node trust for Azure Confidential Ledger. |
-| Integrations & Coding Patterns | L49-L60 | Client libraries, UDFs, and patterns for integrating Confidential Ledger with apps and services (Blob digests, Power Automate, querying/organizing data, and verifying transaction receipts). |
-| Deployment | L61-L65 | How to deploy and provision Azure Confidential Ledger instances using ARM templates or Terraform, including required parameters and configuration steps. |
+| Integrations & Coding Patterns | L49-L59 | Client libraries, UDFs, and patterns for integrating Confidential Ledger with apps and services (Blob digests, Power Automate, querying/organizing data, and verifying transaction receipts). |
+| Deployment | L60-L64 | How to deploy and provision Azure Confidential Ledger instances using ARM templates or Terraform, including required parameters and configuration steps. |
 
 ### Decision Making
 | Topic | URL |
@@ -51,7 +51,6 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Integrate Blob Storage digests with Azure Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/create-blob-managed-app |
 | Use Power Automate connector with Azure Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/create-power-automate-workflow |
-| Organize and query data in Azure Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization |
 | Use Azure Confidential Ledger .NET client library | https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-net |
 | Use Azure Confidential Ledger Python client library | https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-python |
 | Run user-defined functions in Azure Confidential Ledger | https://learn.microsoft.com/en-us/azure/confidential-ledger/server-side-programming |
