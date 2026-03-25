@@ -231,10 +231,27 @@ stages:
                   git commit -m "$TIMESTAMP - Generate skills from docs (code: ADO/${{ parameters.docs2SkillsADOBranch }}, target: GitHub/${{ parameters.targetBranch }})"
                   
                   TARGET_BRANCH="${{ parameters.targetBranch }}"
-                  # Use refs/heads/ to ensure branch is created if it doesn't exist
-                  git push origin HEAD:refs/heads/$TARGET_BRANCH
+                  TIMESTAMP_BRANCH=$(date +"%Y%m%d-%H%M%S")
+                  PR_BRANCH="docs-sync-$TIMESTAMP_BRANCH"
+                  
+                  # Push to PR branch
+                  echo "Pushing changes to PR branch: $PR_BRANCH"
+                  git push origin HEAD:refs/heads/$PR_BRANCH
+                  
+                  # Create PR targeting the target branch
+                  echo "Creating PR from $PR_BRANCH to $TARGET_BRANCH"
+                  REPO_URL=$(Build.Repository.Uri)
+                  # Extract owner/repo from URL
+                  REPO_PATH=$(echo $REPO_URL | sed 's|.*github.com/||' | sed 's|.git||')
+                  
+                  gh pr create \
+                    --title "Sync docs to agent skills - $TIMESTAMP" \
+                    --body "Automated docs sync" \
+                    --base "$TARGET_BRANCH" \
+                    --head "$PR_BRANCH" \
+                    --repo "$REPO_PATH"
 
-                  echo "Pushed changes to GitHub branch: $TARGET_BRANCH"
+                  echo "PR created successfully"
                 else
-                  echo "No changes detected"
+                  echo "No changes detected in products/ or skills/ directories"
                 fi
