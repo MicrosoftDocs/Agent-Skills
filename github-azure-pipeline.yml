@@ -207,9 +207,9 @@ stages:
               AZURE_OPENAI_ENDPOINT: $(azureOpenAIEndpoint)
               AZURE_OPENAI_CHAT_DEPLOYMENT: $(azureOpenAIDeployment)
 
-          # 7. Push to GitHub repo
+          # 7. Push to GitHub repo and create PR
           - task: Bash@3
-            displayName: 'Push to GitHub'
+            displayName: 'Push to GitHub and create PR'
             inputs:
               targetType: inline
               script: |
