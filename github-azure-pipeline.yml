@@ -257,7 +257,8 @@ stages:
                   # Extract owner/repo from URL
                   REPO_PATH=$(echo $REPO_URL | sed 's|.*github.com/||' | sed 's|.git||')
                   # Reuse the token already stored by persistCredentials: true
-                  GH_TOKEN=$(git config --get-all http.extraheader | grep -i 'AUTHORIZATION' | sed 's/.*: basic //' | base64 -d | sed 's/.*://')
+                  export GH_TOKEN=$(git config --get-all http.extraheader | grep -i 'AUTHORIZATION' | sed 's/.*: basic //' | base64 -d | sed 's/.*://')
+                  [ -n "$GH_TOKEN" ] || { echo "ERROR: GH_TOKEN is empty"; exit 1; }
                   
                   gh pr create \
                     --title "Sync docs to agent skills - $TIMESTAMP" \
