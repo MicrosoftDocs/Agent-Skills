@@ -257,6 +257,8 @@ stages:
                   # Extract owner/repo from URL
                   REPO_PATH=$(echo $REPO_URL | sed 's|.*github.com/||' | sed 's|.git||')
                   # Reuse the token already stored by persistCredentials: true
+                  echo "DEBUG: git config keys with extraheader:"
+                  git config --list | grep -i extra | sed 's/=.*/=<redacted>/'
                   export GH_TOKEN=$(git config --get-all http.https://github.com/.extraheader | grep -i 'AUTHORIZATION' | sed 's/.*: basic //' | base64 -d | sed 's/.*://')
                   [ -n "$GH_TOKEN" ] || { echo "ERROR: GH_TOKEN is empty"; exit 1; }
                   
