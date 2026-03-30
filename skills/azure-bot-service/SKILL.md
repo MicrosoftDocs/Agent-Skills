@@ -1,9 +1,9 @@
 ---
 name: azure-bot-service
-description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure bots with Web Chat/Direct Line, Teams, OAuth/SSO, QnA/LUIS, or proactive messaging, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Web PubSub (use azure-web-pubsub), Azure Communication Services (use azure-communication-services), Azure App Service (use azure-app-service).
+description: Expert knowledge for Azure AI Bot Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure bots with Web Chat/Direct Line, Teams, OAuth/SSO, human handoff, or proactive messaging, and other Azure AI Bot Service related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Bot Service Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L74-L86 | Designing bot architectures: dialog modularization, branching/looping flows, multi-LUIS/QnA routing, embedding bots in apps/web, human handoff, knowledge bots, and reusable skills. |
 | Limits & Quotas | L87-L92 | Handling long-running bot operations (deferred replies, proactive messages) and checking which channels support specific features, attachments, and card types. |
 | Security | L93-L112 | Securing bots: auth & SSO (OAuth, Web Chat, skills), Direct Line security, network isolation/VNET, encryption, and privacy/security best practices for Azure Bot Service. |
-| Configuration | L113-L157 | Configuring Azure bots: dialogs, memory, LG/LU/QnA files, storage, telemetry/Insights, Web Chat, channels/Direct Line, skills, environments, and monitoring/debug settings. |
-| Integrations & Coding Patterns | L158-L217 | Connecting bots to channels (Teams, SMS, web, social), using Direct Line/Web Chat, REST/Connector APIs, dialogs, prompts, skills, OAuth, QnA/LUIS, media, TTS, and channel-specific features |
-| Deployment | L218-L224 | Deploying bots to Azure using ARM/CLI, setting up App Service resources, and configuring continuous integration/continuous deployment pipelines for Bot Framework bots. |
+| Configuration | L113-L156 | Configuring Azure bots: dialogs, memory, LG/LU/QnA files, storage, telemetry/Insights, Web Chat, channels/Direct Line, skills, environments, and monitoring/debug settings. |
+| Integrations & Coding Patterns | L157-L217 | Connecting bots to channels (Teams, Web Chat, SMS, email, social), using Direct Line, REST, dialogs, skills, QnA/LUIS, media, cards, OAuth, and channel-specific features. |
+| Deployment | L218-L222 | Deploying bots to Azure using ARM/CLI, setting up App Service resources, and configuring continuous integration/continuous deployment pipelines for Bot Framework bots. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -122,7 +122,6 @@ This skill requires **network access** to fetch documentation content:
 | Use prebuilt adaptive expression functions in bots | https://learn.microsoft.com/en-us/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0 |
 | Use adaptive expressions in Bot Framework dialogs | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0 |
 | Configure Language Generation templates for bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-language-generation?view=azure-bot-service-4.0 |
-| Implement custom storage for Bot Framework state | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-custom-storage?view=azure-bot-service-4.0 |
 | Configure and use state storage in Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-state?view=azure-bot-service-4.0 |
 | Write bot data directly to storage providers | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-storage?view=azure-bot-service-4.0 |
 | Analyze bot telemetry with Kusto queries | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0 |
@@ -161,12 +160,13 @@ This skill requires **network access** to fetch documentation content:
 | Handle Microsoft Teams activities in bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics-teams?view=azure-bot-service-4.0 |
 | Use channelData for channel-specific bot features | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-channeldata?view=azure-bot-service-4.0 |
 | Proxy custom OAuth2 identity providers for bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-identity-providers-proxy?view=azure-bot-service-4.0 |
+| Implement custom storage providers for Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-custom-storage?view=azure-bot-service-4.0 |
 | Implement sequential dialogs in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0 |
 | Send media attachments with Azure Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0 |
 | Use suggested action buttons in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0 |
 | Use Azure question answering in bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-answer-questions?view=azure-bot-service-4.0 |
 | Send proactive notifications from Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0 |
-| Integrate QnA Maker with Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0 |
+| Integrate Azure Bot Service with QnA Maker | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0 |
 | Send and receive text messages in Bot Framework | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-send-messages?view=azure-bot-service-4.0 |
 | Integrate LUIS language understanding with bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0 |
 | Implement primitive prompts for bot user input | https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-primitive-prompts?view=azure-bot-service-4.0 |
@@ -220,5 +220,3 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Set up continuous deployment for Azure bots | https://learn.microsoft.com/en-us/azure/bot-service/bot-service-build-continuous-deployment?view=azure-bot-service-4.0 |
 | Provision and deploy Bot Framework bots to Azure | https://learn.microsoft.com/en-us/azure/bot-service/provision-and-publish-a-bot?view=azure-bot-service-4.0 |
-| Create App Service for bots with Azure CLI and ARM | https://learn.microsoft.com/en-us/azure/bot-service/provision-app-service?view=azure-bot-service-4.0 |
-| Create or update Azure Bot with Azure CLI | https://learn.microsoft.com/en-us/azure/bot-service/provision-azure-bot?view=azure-bot-service-4.0 |

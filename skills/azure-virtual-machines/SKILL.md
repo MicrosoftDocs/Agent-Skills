@@ -1,9 +1,9 @@
 ---
 name: azure-virtual-machines
-description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing VM SKUs, configuring scale sets, Trusted Launch, disk encryption, or GPU/HPC workloads, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
+description: Expert knowledge for Azure Virtual Machines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when working with VM scale sets, Trusted Launch, disk encryption, Compute Gallery images, or HPC/GPU workloads, and other Azure Virtual Machines related development tasks. Not for Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure Cloud Services (use azure-cloud-services).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Virtual Machines Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|----------|-------------|
 | Troubleshooting | L37-L61 | Diagnosing and fixing Azure VM issues: hibernation, disk encryption, extensions, NSG blocking, Spot/scale set errors, Image Builder, kernel/packages, Trusted Launch, and gallery images. |
 | Best Practices | L62-L88 | Performance, scaling, HA, and cost-optimization best practices for Azure VMs, including HPC/InfiniBand tuning, disks/snapshots, OS-specific tweaks, and Image Builder/boot-time optimization. |
-| Decision Making | L89-L153 | Guidance for choosing VM sizes, images, disks, costs, and redundancy, plus planning and executing migrations, retirements, DR/backup, and Oracle/Linux workload strategies on Azure VMs |
-| Architecture & Design Patterns | L154-L172 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
-| Limits & Quotas | L173-L379 | VM size specs, disk performance/limits, quotas, lifecycle/support, and performance benchmarks for Azure VMs, including GPU/HPC, confidential, storage-optimized, and OS/disk behaviors. |
-| Security | L380-L457 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image sharing, and TLS cert integration. |
-| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs and scale sets: images, disks, networking, maintenance, monitoring, extensions, GPU/HPC, OS agents, SSH/WinRM, Oracle workloads, and platform/patching behaviors. |
+| Decision Making | L89-L152 | Guidance for choosing VM sizes, images, disks, costs, and redundancy, plus planning and executing migrations, retirements, DR/backup, and Oracle/Linux workload strategies on Azure VMs |
+| Architecture & Design Patterns | L153-L171 | Design patterns for VM-based architectures: multi-region and fleet strategies, NUMA/topology tuning for HPC SKUs, low-latency placement, and Oracle/OpenShift deployment and DR designs. |
+| Limits & Quotas | L172-L378 | VM size specs, disk performance/limits, quotas, lifecycle and billing behavior, plus guidance on choosing, sizing, and scaling Azure VMs, disks, and specialized workloads. |
+| Security | L379-L457 | Securing Azure VMs and disks: encryption (ADE, CMK, double/host), Trusted Launch/attestation, Key Vault, MSP/metadata hardening, policy/RBAC, secure image galleries, and TLS cert integration. |
+| Configuration | [configuration.md](configuration.md) | Configuring Azure VMs/scale sets: images, disks, networking, extensions, monitoring, maintenance, HPC/GPU, Oracle workloads, SSH/WinRM, patching, restore points, and Compute Gallery. |
 | Integrations & Coding Patterns | [integrations.md](integrations.md) | Scripts and patterns for automating VM management: backups, disk/snapshot/VHD operations, encryption, maintenance/availability monitoring, metadata service, Key Vault, and cross-subscription moves. |
 | Deployment | [deployment.md](deployment.md) | Deploying and migrating Azure VMs/AKS nodes: disk type moves, regional/zonal moves, in-place OS upgrades, blue-green/rolling deployments, and DevOps-based image and snapshot workflows. |
 
@@ -95,7 +95,6 @@ This skill requires **network access** to fetch documentation content:
 | Select constrained vCPU VM sizes for licensing | https://learn.microsoft.com/en-us/azure/virtual-machines/constrained-vcpu |
 | Monitor and control Azure VM spending with Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-monitor-costs |
 | Plan and estimate Azure VM costs using Cost Management | https://learn.microsoft.com/en-us/azure/virtual-machines/cost-optimization-plan-to-manage-costs |
-| Handle deprecated Azure Marketplace VM images | https://learn.microsoft.com/en-us/azure/virtual-machines/deprecated-images |
 | Plan migration from Azure Disk Encryption to encryption at host | https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate |
 | Choose options to improve Azure disk performance | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-performance-options |
 | Select redundancy options for Azure managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy |
@@ -303,7 +302,7 @@ This skill requires **network access** to fetch documentation content:
 | NV GPU VM family sizes and capabilities | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family |
 | NV series GPU VM specs and retirement limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series |
 | NVads A10 v5 GPU VM specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsa10v5-series |
-| NVads V710 v5 GPU VM specs and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
+| NVads V710 v5 GPU VM sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsv710-v5-series |
 | NVv3 GPU VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv3-series |
 | NVv4 GPU VM size specifications and limits | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvv4-series |
 | HB HPC VM sub-family sizes and specs | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hb-family |
@@ -391,7 +390,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable Private Link for managed disk import/export in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-private-links-for-import-export-portal |
 | Configure restrictions on Azure managed disk import/export | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-restrict-import-export-overview |
 | Secure managed disk uploads/downloads with Entra ID and RBAC | https://learn.microsoft.com/en-us/azure/virtual-machines/disks-secure-upload-download |
-| Enable FIPS 140-3 for Azure Linux VM extensions and agent | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux-fips |
+| Enable FIPS 140-3 for Azure Linux VM agent and extensions | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux-fips |
 | Configure Azure Disk Encryption for Linux VMs via extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/azure-disk-enc-linux |
 | Configure Azure Disk Encryption for Windows VMs via extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/azure-disk-enc-windows |
 | Securely pass credentials with Azure DSC extension | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-credentials |
@@ -432,6 +431,7 @@ This skill requires **network access** to fetch documentation content:
 | Reference built-in Azure Policy definitions for Virtual Machines | https://learn.microsoft.com/en-us/azure/virtual-machines/policy-reference |
 | Use Azure Policy regulatory compliance controls for VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/security-controls-policy |
 | Apply Azure Policy compliance controls to VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/security-controls-policy-image-builder |
+| Secure isolated image builds with Azure VM Image Builder | https://learn.microsoft.com/en-us/azure/virtual-machines/security-isolated-image-builds-image-builder |
 | Apply Azure security features and policies to protect VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/security-policy |
 | Assign RBAC roles to share Compute Gallery resources | https://learn.microsoft.com/en-us/azure/virtual-machines/share-gallery |
 | Publish and manage community galleries in Azure | https://learn.microsoft.com/en-us/azure/virtual-machines/share-gallery-community |

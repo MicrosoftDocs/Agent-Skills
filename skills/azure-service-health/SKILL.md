@@ -1,9 +1,9 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Service Health alerts, ARM/Bicep deployments, Resource Graph queries, webhooks, or ITSM integrations, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Service Health alerts, Resource Graph queries, webhooks, RBAC access, or VM Resource Health, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
@@ -24,9 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Understanding VM Resource Health annotations, causes of degraded/unavailable states, and step-by-step troubleshooting for underlying Azure infrastructure issues |
+| Troubleshooting | L34-L38 | Understanding VM Resource Health annotations, diagnosing health states and platform issues, and troubleshooting availability or performance problems for Azure virtual machines |
 | Limits & Quotas | L39-L43 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types |
-| Security | L44-L52 | Managing access and roles for Azure Service Health security data: tenant vs subscription admin permissions, RBAC, and how to view and interpret security advisories and health history. |
+| Security | L44-L52 | Managing Azure Service Health access: tenant/subscription RBAC, admin roles, and configuring who can view security advisories and health history. |
 | Configuration | L53-L62 | Configuring Azure/Resource Health alerts via ARM, Bicep, and PowerShell, plus using Azure Resource Graph tables and queries to retrieve and automate Service Health data |
 | Integrations & Coding Patterns | L63-L73 | Using APIs, Resource Graph, webhooks, and integrations (OpsGenie, PagerDuty, ServiceNow) to query, route, and automate Azure Service Health and Security advisory alerts. |
 | Deployment | L74-L77 | Using Azure Policy to create, configure, and manage Service Health alert rules at scale across subscriptions and resource groups |
@@ -34,7 +34,7 @@ This skill requires **network access** to fetch documentation content:
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Interpret VM Resource Health annotations and troubleshoot issues | https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation |
+| Interpret and troubleshoot VM Resource Health annotations | https://learn.microsoft.com/en-us/azure/service-health/resource-health-vm-annotation |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -47,8 +47,8 @@ This skill requires **network access** to fetch documentation content:
 | Understand tenant admin roles for Service Health access | https://learn.microsoft.com/en-us/azure/service-health/admin-access-reference |
 | Use Health history and RBAC for Azure Service Health | https://learn.microsoft.com/en-us/azure/service-health/health-history-overview |
 | Configure subscription access for Azure Security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-add-subscription |
-| Access and interpret Azure Service Health security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-elevated-access |
-| Configure subscription vs tenant admin access in Service Health | https://learn.microsoft.com/en-us/azure/service-health/subscription-vs-tenant |
+| Manage access to Azure Service Health security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-elevated-access |
+| Configure tenant and subscription access for Service Health | https://learn.microsoft.com/en-us/azure/service-health/subscription-vs-tenant |
 
 ### Configuration
 | Topic | URL |

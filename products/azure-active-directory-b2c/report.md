@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-30'
 category_descriptions:
-  configuration: 'Configuring Azure AD B2C: custom policies, user flows, tokens, MFA,
-    identity providers, app/API registration, UI/localization, claims, journeys, SSO,
-    and advanced auth options for many app types.'
+  configuration: Configuring Azure AD B2C policies, user flows, tokens, identity providers,
+    MFA, custom UI, app/API registration, and advanced auth options for web, SPA,
+    mobile, and desktop apps.
   integrations: End-to-end patterns for integrating Azure AD B2C into apps and APIs,
     configuring identity providers, custom policies, fraud/risk tools, and securing
     traffic with proxies, WAFs, and monitoring.
@@ -31,16 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Active Directory B2C development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API registration,
-  CI/CD deployment, or logging, and other Azure Active Directory B2C related development
-  tasks. Not for Azure Information Protection (use azure-information-protection),
-  Azure Security (use azure-security), Azure Role-based access control (use azure-rbac),
+  Use when designing B2C user flows/custom policies, MFA/IdP setup, app/API registration,
+  CI/CD deployment, or Sentinel logging, and other Azure Active Directory B2C related
+  development tasks. Not for Azure Information Protection (use azure-information-protection),
+  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
   Azure Sentinel (use azure-sentinel).
-use_when: Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API
-  registration, CI/CD deployment, or logging, and other Azure Active Directory B2C
-  related development tasks.
+use_when: Use when designing B2C user flows/custom policies, MFA/IdP setup, app/API
+  registration, CI/CD deployment, or Sentinel logging, and other Azure Active Directory
+  B2C related development tasks.
 confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
-  Azure Security (use azure-security), Azure Role-based access control (use azure-rbac),
+  Azure Role-based access control (use azure-rbac), Azure Security (use azure-security),
   Azure Sentinel (use azure-sentinel).
 ---
 # Azure Active Directory B2C Crawl Report
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 289
+- **Updated Pages**: 1
+- **Unchanged**: 288
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
+
+### Updated Pages
+
+- [Self-service password change](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy)
+  - Updated: 2025-05-01T11:17:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 
@@ -242,7 +247,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Profile editing policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-profile-editing-policy) | configuration | 0.75 | Profile editing flows require selecting attributes, defining policy names, and configuring token output, which are concrete configuration parameters. |
 | [Register a SAML application](https://learn.microsoft.com/en-us/azure/active-directory-b2c/saml-service-provider) | configuration | 0.75 | SAML IdP configuration requires exact claim mappings, metadata URLs, certificate settings, and policy references that are detailed, product-specific configuration values. |
 | [Resource owner password credentials policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-ropc-policy) | configuration | 0.75 | ROPC setup in B2C uses specific endpoints, policy names, and app registration settings that are detailed configuration values. |
-| [Self-service password change](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy) | configuration | 0.75 | Custom policy setup for password change uses XML policy elements, technical profile names, and claim types that are detailed configuration constructs unique to B2C. |
 | [Self-service password reset](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy) | configuration | 0.75 | Password reset flows require specific policy configuration, endpoint names, and token behavior settings that are concrete and product-specific. |
 | [Sign-up or sign-in policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-up-and-sign-in-policy) | configuration | 0.75 | User flow setup includes concrete policy names, attribute selections, token settings, and UI configuration options that are specific to B2C configuration. |
 | [User profile attributes](https://learn.microsoft.com/en-us/azure/active-directory-b2c/user-profile-attributes) | configuration | 0.75 | Details built-in and extension attributes, and their mapping to Microsoft Graph; product-specific attribute configuration reference. |
@@ -305,6 +309,7 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | [Saviynt](https://learn.microsoft.com/en-us/azure/active-directory-b2c/partner-saviynt) | integrations | 0.70 | Provides product-specific configuration for Saviynt and Azure AD B2C, including connection parameters and application settings for cross-application integration. |
 | [Secure access to Web API (ASP.NET Core and Node.js)](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api) | integrations | 0.70 | Shows how to enforce access tokens on API endpoints; likely includes middleware or library configuration, token validation parameters, and API registration details specific to Azure AD B2C. |
 | [Security overview](https://learn.microsoft.com/en-us/azure/active-directory-b2c/security-architecture) | best-practices | 0.70 | Article explicitly focuses on best practices for securing all components of an Azure AD B2C solution, likely including product-specific recommendations and patterns across services. |
+| [Self-service password change](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy) | configuration | 0.70 | The article describes detailed, product-specific configuration steps for enabling password change via Azure AD B2C custom policies, including specific policy elements, technical profile names, and configuration structure that go beyond generic knowledge. It is not just a tutorial; it encodes concrete configuration patterns unique to Azure AD B2C custom policies. |
 | [Set up direct sign-in](https://learn.microsoft.com/en-us/azure/active-directory-b2c/direct-signin) | configuration | 0.70 | Uses specific query parameters and policy configuration options to prepopulate sign-in names or redirect to social IdPs, which are product-specific settings. |
 | [Sign-in policy](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-in-policy) | configuration | 0.70 | Similar to other user flow docs, this page defines specific policy configuration fields, identity providers, and settings that are detailed B2C configuration parameters. |
 | [User access](https://learn.microsoft.com/en-us/azure/active-directory-b2c/manage-user-access) | configuration | 0.70 | Covers concrete configuration of attributes (DOB, country), terms-of-use capture, and policy behavior for managing access, which are product-specific. |

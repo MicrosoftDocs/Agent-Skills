@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
-  integrations: Patterns and code for calling Foundry Local models/APIs (chat, transcription,
-    tools), integrating with SDKs/REST, OpenAI-compatible clients, LangChain, Open
-    WebUI, and compiling HF models.
+  integrations: 'Patterns and APIs for integrating Foundry Local into apps: REST/SDK
+    usage, OpenAI-compatible clients, LangChain/Open WebUI, tool calling, model catalog,
+    and HF model compilation.'
   best-practices: Guidance on reliable Foundry Local deployments, performance and
     configuration best practices, and troubleshooting common setup, runtime, and environment
     issues.
@@ -16,14 +16,14 @@ category_descriptions:
     runtime or networking problems.
 skill_description: Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry
   Local) development including troubleshooting, best practices, decision making, configuration,
-  and integrations & coding patterns. Use when using Foundry Local CLI, chat/transcription
-  APIs, tools, OpenAI/LangChain clients, or upgrading legacy SDKs, and other Microsoft
+  and integrations & coding patterns. Use when using Foundry Local CLI, REST/SDK APIs,
+  OpenAI clients, LangChain, tool calling, or HF model compilation, and other Microsoft
   Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry),
   Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Tools
   (use microsoft-foundry-tools), Azure Local (use azure-local).
-use_when: Use when using Foundry Local CLI, chat/transcription APIs, tools, OpenAI/LangChain
-  clients, or upgrading legacy SDKs, and other Microsoft Foundry Local related development
-  tasks.
+use_when: Use when using Foundry Local CLI, REST/SDK APIs, OpenAI clients, LangChain,
+  tool calling, or HF model compilation, and other Microsoft Foundry Local related
+  development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Tools (use microsoft-foundry-tools),
   Azure Local (use azure-local).
@@ -35,8 +35,15 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Total Pages**: 18
 - **Fetched**: 18
 - **Fetch Failed**: 0
-- **Classified**: 15
-- **Unclassified**: 3
+- **Classified**: 14
+- **Unclassified**: 4
+
+### Incremental Update
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 15
+- **Deleted Pages**: 1
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
 ## Classification Statistics
 
@@ -45,9 +52,26 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | best-practices | 1 | 5.6% |
 | configuration | 1 | 5.6% |
 | decision-making | 1 | 5.6% |
-| integrations | 11 | 61.1% |
+| integrations | 10 | 55.6% |
 | troubleshooting | 1 | 5.6% |
-| *(Unclassified)* | 3 | 16.7% |
+| *(Unclassified)* | 4 | 22.2% |
+
+## Changes
+
+### New Pages
+
+- [Transcribe audio (speech-to-text)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio)
+
+### Updated Pages
+
+- [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-24T22:15:00.000Z
+- [REST API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest)
+  - Updated: 2026-02-27T23:08:00.000Z → 2026-03-25T22:12:00.000Z
+
+### Deleted Pages
+
+- ~~Transcribe recorded audio files~~ (https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio)
 
 ## Classified Pages
 
@@ -55,7 +79,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |-----------|------|------------|--------|
 | [Best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice) | best-practices | 0.85 | Explicitly a best practices and troubleshooting guide; will include product-specific DOs/DON’Ts, configuration recommendations, and symptom-to-solution mappings. |
 | [Foundry Local CLI](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli) | configuration | 0.85 | CLI reference will list commands, flags, and options with allowed values and defaults, which are product-specific configuration parameters. |
-| [REST API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest) | integrations | 0.85 | REST API reference will include endpoints, request/response schemas, parameters, and constraints unique to Foundry Local’s REST surface. |
 | [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current) | integrations | 0.85 | SDK reference for JavaScript and C# documents classes, methods, and parameters; this is detailed API/SDK integration knowledge specific to Foundry Local. |
 | [Catalog API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-catalog-api) | integrations | 0.80 | Catalog API reference is an integration surface with specific endpoints, parameters, and behaviors for custom catalog services. |
 | [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy) | integrations | 0.80 | Legacy SDK reference similarly documents product-specific APIs and parameters, important for maintaining or integrating older applications. |
@@ -64,7 +87,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration) | decision-making | 0.70 | Migration guide provides concrete guidance on when and how to move from legacy to current SDK, including API changes and trade-offs, which supports technology selection and upgrade decisions. |
 | [Integrate with LangChain](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-langchain-with-foundry-local) | integrations | 0.70 | Demonstrates LangChain integration with Foundry Local; likely includes configuration of LangChain LLM wrappers, endpoints, and parameters specific to Foundry Local. |
 | [Integrate with Open WebUI](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-chat-application-with-open-web-ui) | integrations | 0.70 | Shows integration between Open WebUI and Foundry Local; will include concrete configuration values (URLs, ports, model identifiers) unique to this product. |
-| [Transcribe recorded audio files](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio) | integrations | 0.70 | Uses native audio transcription API with a console app; will expose product-specific API calls, parameters, and streaming options that count as integration patterns. |
+| [REST API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest) | integrations | 0.70 | REST API reference pages typically include endpoint definitions, parameter names, types, and constraints that are product-specific and not generally known; best fits the integrations & coding patterns category. |
 | [Use tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-tool-calling-with-foundry-local) | integrations | 0.70 | Tool-calling how-to will include concrete request/response schemas, function/tool definition formats, and SDK usage patterns unique to Foundry Local. |
 | [Foundry Local on Windows Server 2025](https://learn.microsoft.com/en-us/azure/foundry-local/reference/windows-server-frequently-asked-questions) | troubleshooting | 0.65 | FAQ about supported Windows Server versions, GPU compatibility, and GPU-P inference behavior will contain environment-specific constraints and likely error/behavior explanations useful for troubleshooting. |
 | [Use native chat completions API](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-native-chat-completions) | integrations | 0.65 | How-to for native chat completions API in the SDK will include concrete API/SDK method signatures and parameters unique to Foundry Local, which qualify as integration & coding patterns. |
@@ -74,5 +97,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started) | 0.40 | Getting started guide likely shows basic install/run steps but not organized configuration tables, limits, or troubleshooting mappings. |
+| [Transcribe audio (speech-to-text)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio) | 0.30 | How-to tutorial for audio transcription; likely shows example code but not structured configuration references, limits, or troubleshooting mappings. |
 | [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture) | 0.20 | Architecture article is conceptual about components and how they work together; no indication of product-specific thresholds or decision matrices. |
-| [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.20 | High-level product overview of Foundry Local; no detailed limits, configs, or error mappings indicated. |
+| [What is Foundry Local (preview)?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local) | 0.20 | High-level product overview of Foundry Local; no detailed limits, configuration tables, error codes, or decision matrices. |

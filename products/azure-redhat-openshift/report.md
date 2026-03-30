@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
   best-practices: Guidance on sizing and deploying ARO clusters and infra nodes, optimizing
     OpenShift Virtualization VMs, and understanding ARO 4 support limits and policies
@@ -45,13 +45,13 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Total Pages**: 66
 - **Fetched**: 66
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 11
+- **Classified**: 54
+- **Unclassified**: 12
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **Updated Pages**: 1
+- **Unchanged**: 65
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -62,21 +62,19 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | best-practices | 4 | 6.1% |
 | configuration | 15 | 22.7% |
 | decision-making | 1 | 1.5% |
-| deployment | 10 | 15.2% |
+| deployment | 9 | 13.6% |
 | integrations | 5 | 7.6% |
 | limits-quotas | 2 | 3.0% |
 | security | 14 | 21.2% |
 | troubleshooting | 4 | 6.1% |
-| *(Unclassified)* | 11 | 16.7% |
+| *(Unclassified)* | 12 | 18.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-03-17T17:14:00.000Z
-- [Set up OpenShift Virtualization](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-virtualization)
-  - Updated: 2025-11-18T16:22:00.000Z → 2026-03-17T22:17:00.000Z
+- [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app)
+  - Updated: 2025-06-11T22:02:00.000Z → 2026-03-26T08:00:00.000Z
 
 ## Classified Pages
 
@@ -122,7 +120,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Support policies for Azure Red Hat OpenShift 4](https://learn.microsoft.com/en-us/azure/openshift/support-policies-v4) | best-practices | 0.70 | The page defines which specific configuration changes to internal Azure Red Hat OpenShift 4 components are supported vs unsupported, including explicit DO/DON'T guidance that directly affects cluster supportability. These are product-specific support and configuration rules that function as best-practice constraints and are not generic knowledge. |
 | [Tag resources using Azure Policy](https://learn.microsoft.com/en-us/azure/openshift/howto-tag-resources) | configuration | 0.70 | Involves creating JSON policy definitions/assignments and remediation for ARO-managed resource groups, with specific parameters and behavior. |
 | [Use Admin Kubeconfig](https://learn.microsoft.com/en-us/azure/openshift/howto-kubeconfig) | troubleshooting | 0.70 | Explicitly for regaining access when console/ingress/auth components fail; maps specific failure scenarios to using Admin Kubeconfig. |
-| [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | deployment | 0.68 | Marketplace-based setup of JBoss EAP on ARO with specific operator and registry configuration; deployment guidance unique to this stack. |
 | [Deploy an Open Liberty/WebSphere Liberty Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-liberty-app) | deployment | 0.68 | Uses Azure Marketplace offer to provision ARO plus Liberty operators and images; includes product-specific deployment wiring and options. |
 | [Secure OpenShift with Azure Front Door](https://learn.microsoft.com/en-us/azure/openshift/howto-secure-openshift-with-front-door) | security | 0.68 | Describes securing ARO access via Azure Front Door Premium with product-specific configuration; likely includes concrete security settings and integration parameters. |
 | [Create a private Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/howto-create-private-cluster-4x) | deployment | 0.65 | Private cluster creation has specific networking and access requirements; article includes environment preparation and versioned CLI requirements. |
@@ -151,5 +148,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Upgrade a cluster with managed identities enabled](https://learn.microsoft.com/en-us/azure/openshift/howto-upgrade-aro-openshift-cluster) | 0.30 | This is an upgrade how-to for clusters with managed identities. It is likely a procedural tutorial (using web console or MUO) without configuration matrices, limits, or detailed diagnostic mappings. It describes lifecycle operations rather than expert-only configuration parameters or troubleshooting details. |
 | [Connect to an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/connect-cluster) | 0.20 | Basic connection instructions using kubeadmin; no indication of detailed configuration parameters or troubleshooting mappings. |
 | [Delete an Azure Red Hat OpenShift cluster](https://learn.microsoft.com/en-us/azure/openshift/delete-cluster) | 0.20 | Quickstart for deleting a cluster; operational but not configuration/limits-focused and lacks expert-only details in summary. |
+| [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app) | 0.20 | Quickstart/tutorial for deploying JBoss EAP on Azure Red Hat OpenShift via the portal. It focuses on step-by-step setup using a Marketplace offer, not on limits, configuration matrices, error codes, or product-specific best practices with quantified impact. No detailed configuration parameter tables, quotas, or troubleshooting mappings are indicated. |
 | [What's new with Azure Red Hat OpenShift?](https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes) | 0.20 | Release notes are mostly change logs; summary does not indicate detailed limits, configs, or troubleshooting mappings. |
 | [About Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift) | 0.10 | High-level introduction and benefits overview without product-specific limits, configs, or detailed patterns. |

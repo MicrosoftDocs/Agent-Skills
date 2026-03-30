@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-30'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes and moving
@@ -21,21 +21,22 @@ category_descriptions:
     devices.
   deployment: Installing and managing software, firmware, and Kubernetes updates on
     Azure Stack Edge Pro GPU devices, including update workflows and prerequisites
-  best-practices: 'Best practices for Azure Stack Edge Pro: planning for and recovering
-    from device failure, GPU sharing configuration, and day-to-day operational/maintenance
-    guidelines.'
+  best-practices: Backup and disaster recovery for Azure Stack Edge Pro/Pro GPU, GPU
+    sharing configuration, and operational best practices for running and maintaining
+    the device.
 skill_description: Expert knowledge for Azure Stack Edge development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
   & coding patterns, and deployment. Use when running IoT Edge or GPU/Kubernetes apps,
-  configuring VMs/storage/networking, or managing device updates, and other Azure
-  Stack Edge related development tasks. Not for Azure Data Box (use azure-data-box-family),
-  Azure IoT Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when running IoT Edge or GPU/Kubernetes apps, configuring VMs/storage/networking,
-  or managing device updates, and other Azure Stack Edge related development tasks.
-confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure IoT
-  Edge (use azure-iot-edge), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines).
+  DeepStream pipelines, Arc GitOps, or local ARM workloads, and other Azure Stack
+  Edge related development tasks. Not for Azure IoT Edge (use azure-iot-edge), Azure
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
+use_when: Use when running IoT Edge or GPU/Kubernetes apps, DeepStream pipelines,
+  Arc GitOps, or local ARM workloads, and other Azure Stack Edge related development
+  tasks.
+confusable_not_for: Not for Azure IoT Edge (use azure-iot-edge), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Kubernetes Service Edge Essentials (use azure-aks-edge-essentials).
 ---
 # Azure Stack Edge Crawl Report
 
@@ -49,8 +50,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 237
+- **Updated Pages**: 1
+- **Unchanged**: 236
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -69,6 +70,11 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | *(Unclassified)* | 92 | 38.8% |
 
 ## Changes
+
+### Updated Pages
+
+- [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure)
+  - Updated: 2021-03-07T12:01:00.000Z → 2026-03-20T06:13:00.000Z
 
 ## Classified Pages
 
@@ -146,7 +152,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Power cord specifications](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-technical-specifications-power-cords-regional) | configuration | 0.70 | Power cord specifications by Azure region imply detailed part numbers, voltage/current ratings, and regional variants, which are specific configuration details. |
 | [Power, access, connectivity](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-access-power-connectivity-mode) | configuration | 0.70 | Covers device access, power states, and connectivity modes with specific options and behaviors unique to Azure Stack Edge. |
 | [Prepare certificates to upload on device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-certificates-device-upload) | security | 0.70 | Covers conversion and formatting of certificates for this device; includes specific file formats and constraints for secure operation. |
-| [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure) | best-practices | 0.70 | Guidance on backing up configuration and data to handle failures; includes concrete product-specific recommendations and steps. |
 | [Review alerts](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-alerts) | troubleshooting | 0.70 | Described as a quick-reference for Azure Stack Edge alerts and severities; such pages typically list specific alert IDs/messages and meanings, which are product-specific symptom→meaning mappings. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-system-requirements) | configuration | 0.70 | System requirements typically list specific OS versions, ports, bandwidth, and other numeric constraints that are product-specific configuration prerequisites. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-system-requirements) | configuration | 0.70 | System requirements pages for a specific device typically list supported OS versions, network ports, and hardware/software prerequisites in tables, which are concrete configuration constraints not generally known. |
@@ -164,6 +169,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-connect-powershell-interface) | configuration | 0.70 | PowerShell management article will include specific cmdlets and parameters unique to this product, which are configuration/management interfaces. |
 | [Via PowerShell](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-connect-powershell-interface) | configuration | 0.70 | Shows how to connect to the device’s PowerShell interface and perform management tasks; includes device-specific cmdlets and parameters. |
 | [What are certificates?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-certificates-overview) | security | 0.70 | Certificate overview for this product family will enumerate certificate types and their roles/endpoints, which are product-specific security details. |
+| [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure) | best-practices | 0.68 | Provides product-specific, actionable guidance on how to save and back up Azure Stack Edge Pro GPU device configuration and data in anticipation of hardware failure. The steps and considerations are unique to this device and go beyond generic backup concepts, fitting the best-practices category more than configuration or deployment. |
 | [2101](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2101-release-notes) | troubleshooting | 0.65 | Version 2101 release notes; maps known issues to resolutions, which is troubleshooting knowledge. |
 | [2103](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2103-release-notes) | troubleshooting | 0.65 | Release notes for 2103 with critical open issues and resolutions; expert troubleshooting content. |
 | [2105](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-2105-release-notes) | troubleshooting | 0.65 | Same pattern: version-specific critical issues and workarounds for 2105. |

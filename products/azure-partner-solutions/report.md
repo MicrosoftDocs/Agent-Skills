@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
-  integrations: Using Service Connector to integrate Azure compute with external services
-    like Confluent Cloud and Neon Serverless Postgres, including setup, auth, and
-    configuration patterns
+  integrations: Patterns and setup guides for connecting Azure services to external
+    data platforms like Confluent Cloud, MongoDB Atlas, and Neon Postgres using Service
+    Connector and Foundry Agents.
   security: Managing security for partner solutions, including Confluent Cloud RBAC
     in Azure portal and configuring SSO and lifecycle controls for Informatica IDMC
     deployments
@@ -22,31 +22,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Partner Solutions development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
   and integrations & coding patterns. Use when using Service Connector, Confluent
-  Cloud, Dynatrace APM, Datadog/Elastic integrations, or Palo Alto Cloud NGFW, and
-  other Azure Partner Solutions related development tasks. Not for Azure Industry
-  (use azure-industry), Azure Managed Applications (use azure-managed-applications),
-  Azure Lighthouse (use azure-lighthouse), Azure Networking (use azure-networking).
-use_when: Use when using Service Connector, Confluent Cloud, Dynatrace APM, Datadog/Elastic
-  integrations, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related
+  Cloud RBAC, Informatica IDMC SSO, Dynatrace APM, or Palo Alto Cloud NGFW, and other
+  Azure Partner Solutions related development tasks. Not for Azure Industry (use azure-industry),
+  Azure Managed Applications (use azure-managed-applications), Azure Lighthouse (use
+  azure-lighthouse).
+use_when: Use when using Service Connector, Confluent Cloud RBAC, Informatica IDMC
+  SSO, Dynatrace APM, or Palo Alto Cloud NGFW, and other Azure Partner Solutions related
   development tasks.
 confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed Applications
-  (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse), Azure
-  Networking (use azure-networking).
+  (use azure-managed-applications), Azure Lighthouse (use azure-lighthouse).
 ---
 # Azure Partner Solutions Crawl Report
 
 ## Summary
 
-- **Total Pages**: 111
-- **Fetched**: 111
+- **Total Pages**: 112
+- **Fetched**: 112
 - **Fetch Failed**: 0
-- **Classified**: 36
+- **Classified**: 37
 - **Unclassified**: 75
 
 ### Incremental Update
-- **New Pages**: 10
-- **Updated Pages**: 12
-- **Unchanged**: 89
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 110
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -55,54 +54,23 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 0.9% |
-| configuration | 16 | 14.4% |
+| configuration | 16 | 14.3% |
 | decision-making | 1 | 0.9% |
-| integrations | 2 | 1.8% |
+| integrations | 3 | 2.7% |
 | security | 2 | 1.8% |
-| troubleshooting | 14 | 12.6% |
-| *(Unclassified)* | 75 | 67.6% |
+| troubleshooting | 14 | 12.5% |
+| *(Unclassified)* | 75 | 67.0% |
 
 ## Changes
 
 ### New Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/neon/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/faq)
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/faq)
+- [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents)
 
 ### Updated Pages
 
-- [Create a Qumulo resource](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/create)
-  - Updated: 2025-08-03T22:17:00.000Z → 2026-03-17T11:12:00.000Z
-- [Manage resources](https://learn.microsoft.com/en-us/azure/partner-solutions/qumulo/manage)
-  - Updated: 2025-10-17T22:12:00.000Z → 2026-03-17T11:12:00.000Z
-- [Datadog](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
-- [Dynatrace](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
-- [Elastic](https://learn.microsoft.com/en-us/azure/partner-solutions/elastic/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
-- [Astro](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
-- [Confluent](https://learn.microsoft.com/en-us/azure/partner-solutions/apache-kafka-confluent-cloud/)
-  - Updated: 2025-09-02T17:11:00Z → 2026-03-17T22:33:00Z
-- [Informatica](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/)
-  - Updated: 2026-02-18T18:42:00Z → 2026-03-17T22:33:00Z
 - [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/)
-  - Updated: 2025-07-31T11:10:00Z → 2026-03-17T22:33:00Z
-- [Neon Serverless Postgres](https://learn.microsoft.com/en-us/azure/partner-solutions/neon/)
-  - Updated: 2026-02-19T06:12:00Z → 2026-03-17T22:33:00Z
-- [F5](https://learn.microsoft.com/en-us/azure/partner-solutions/nginx/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
-- [Palo Alto Network](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/)
-  - Updated: 2025-12-09T05:48:00Z → 2026-03-17T22:33:00Z
+  - Updated: 2026-03-17T22:33:00Z → 2026-03-25T22:12:00Z
 
 ## Classified Pages
 
@@ -117,6 +85,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/manage) | configuration | 0.80 | Managing networking, NAT, rulestack, logging, DNS proxy, and billing plans implies detailed product-specific configuration options and parameter values unique to this Azure Native integration. |
 | [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/manage) | configuration | 0.75 | Managing settings, metrics/logs, and AVS connectivity implies product-specific configuration parameters (for example, logging endpoints, metrics namespaces, connection properties) that constitute expert configuration knowledge. |
 | [Configure prerequisites](https://learn.microsoft.com/en-us/azure/partner-solutions/dynatrace/configure-prerequisites) | configuration | 0.70 | Pre-deployment prerequisites for Dynatrace in Azure/Entra ID will include specific roles, permissions, and configuration steps unique to this integration, fitting configuration expert knowledge. |
+| [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents) | integrations | 0.70 | The page describes a product-specific integration between Microsoft Foundry Agents and MongoDB Atlas via the MongoDB MCP Server. It likely includes concrete connection details, configuration parameters, and usage patterns unique to this integration rather than just a conceptual overview, fitting the integrations & coding patterns category. |
 | [Connect to compute services](https://learn.microsoft.com/en-us/azure/partner-solutions/neon/create-service-connection) | integrations | 0.70 | Connection guide for Neon via Service Connector is likely to include Azure-specific connection settings, parameter names, and configuration details (networking, auth, connection strings) that are product- and integration-specific rather than generic tutorial content. |
 | [Deploy Cloud NGFW by Palo Alto Networks with the Application Gateway](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/application-gateway) | architecture-patterns | 0.70 | Describes a recommended deployment architecture for Cloud NGFW behind Application Gateway; likely includes product-specific topology guidance, traffic flow patterns, and when to use this pattern for securing web apps. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/faq) | troubleshooting | 0.70 | The FAQ explicitly mentions troubleshooting and is for a specific Azure–Datadog native integration. Such pages usually document concrete error messages, misconfiguration patterns, and Azure-specific diagnostic steps (for example, connection issues, metrics/logs not appearing), which are expert, product-specific troubleshooting mappings. |
@@ -200,7 +169,7 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | [Informatica](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/) | 0.20 | Overview for Informatica as an Azure Native ISV Service; focuses on creating/managing an organization and getting support, without product-specific limits, security roles, or troubleshooting codes. |
 | [Manage your Apache Airflow on Astro resource](https://learn.microsoft.com/en-us/azure/partner-solutions/astronomer/manage) | 0.20 | Management article for Astro resources appears to be general portal operations; no indication of detailed configuration parameters, limits, or error mappings. |
 | [Metrics and logs](https://learn.microsoft.com/en-us/azure/partner-solutions/metrics-logs) | 0.20 | Monitoring overview; summary is conceptual without specific metrics schemas, limits, or config tables. |
-| [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/) | 0.20 | Overview for MongoDB Atlas Azure Native integration; summary is high-level (fully managed database with vector search) and does not indicate detailed configuration or quotas. |
+| [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/) | 0.20 | Page is a high-level overview of MongoDB Atlas Azure Native integrations and AI/vector search capabilities without detailed limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Neon Serverless Postgres](https://learn.microsoft.com/en-us/azure/partner-solutions/neon/) | 0.20 | Short deprecation/overview notice for Neon Serverless Postgres integration; likely just states deprecation status and not detailed expert configuration or limits. |
 | [Palo Alto Network](https://learn.microsoft.com/en-us/azure/partner-solutions/palo-alto/) | 0.20 | Overview for Cloud NGFW by Palo Alto Networks on Azure; appears to be marketing/intro content without specific RBAC roles, limits, or troubleshooting mappings. |
 | [Pure Storage Cloud](https://learn.microsoft.com/en-us/azure/partner-solutions/pure-storage/) | 0.20 | Pure Storage Cloud landing; summary is conceptual STaaS description. |

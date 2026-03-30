@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti targets, QIR/OpenQASM, or Resource Estimator, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when running Q# on IonQ/PASQAL/Quantinuum/Rigetti, using qdk.azure, hybrid jobs, QIR/OpenQASM, or Resource Estimator, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L75-L85 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
 | Configuration | L86-L104 | Setting up QDK tools and environments, configuring simulators and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), and tuning/optimizing Quantum Resource Estimator runs and parameters |
 | Integrations & Coding Patterns | L105-L114 | Integrating QDK with Azure Quantum: connecting via qdk.azure, running hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through QDK to Azure Quantum. |
-| Deployment | L115-L120 | Deploying and managing Azure Quantum workspaces via ARM/Bicep and Azure CLI, and configuring VS Code to submit, run, and manage Q# programs on Azure Quantum. |
+| Deployment | L115-L120 | Deploying and managing Azure Quantum workspaces via Bicep and CLI, and configuring VS Code to submit, run, and manage Q# jobs on Azure Quantum |
 
 ### Troubleshooting
 | Topic | URL |
@@ -115,6 +115,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Deploy Azure Quantum workspaces using ARM/Bicep | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-azure-resource-manager |
-| Manage Azure Quantum workspaces with Azure CLI | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli |
+| Deploy Azure Quantum workspaces using Bicep templates | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-using-bicep |
+| Create and manage Azure Quantum workspaces with CLI | https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli |
 | Submit and run Q# programs on Azure Quantum from VS Code | https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs |

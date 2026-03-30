@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-30'
 category_descriptions:
   configuration: 'Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB,
     Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility,
@@ -22,42 +22,42 @@ category_descriptions:
   decision-making: Guidance on choosing Stream Analytics developer tools, migrating
     projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing
     services for your scenario.
-  architecture-patterns: Architectural patterns and best practices for designing resilient,
-    geo-redundant Azure Stream Analytics solutions, including reference topologies
-    and high-availability job designs.
+  architecture-patterns: Designing resilient Stream Analytics jobs, including geo-redundant
+    architectures, and configuring event-time handling, lateness, and ordering guarantees
+    for streaming data.
   limits-quotas: Configuring and tuning Stream Analytics streaming units and clusters,
     including how to resize, scale performance, and understand capacity limits and
     resource quotas.
 skill_description: Expert knowledge for Azure Stream Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
-  ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
-  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Synapse Analytics
-  (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs), Azure Data
-  Explorer (use azure-data-explorer).
-use_when: Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL
-  outputs, ML/Functions, or IoT Edge, and other Azure Stream Analytics related development
+  Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/Functions,
+  IoT Edge, or Power BI, and other Azure Stream Analytics related development tasks.
+  Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Explorer
+  (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs), Azure Functions
+  (use azure-functions).
+use_when: Use when building ASA jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs,
+  ML/Functions, IoT Edge, or Power BI, and other Azure Stream Analytics related development
   tasks.
-confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Synapse
-  Analytics (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs),
-  Azure Data Explorer (use azure-data-explorer).
+confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
+  Azure Data Explorer (use azure-data-explorer), Azure Event Hubs (use azure-event-hubs),
+  Azure Functions (use azure-functions).
 ---
 # Azure Stream Analytics Crawl Report
 
 ## Summary
 
-- **Total Pages**: 168
-- **Fetched**: 168
+- **Total Pages**: 167
+- **Fetched**: 167
 - **Fetch Failed**: 0
-- **Classified**: 114
+- **Classified**: 113
 - **Unclassified**: 54
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 168
-- **Deleted Pages**: 0
+- **Updated Pages**: 6
+- **Unchanged**: 161
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
 ## Classification Statistics
@@ -65,17 +65,36 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 1.2% |
-| best-practices | 15 | 8.9% |
-| configuration | 31 | 18.5% |
+| best-practices | 14 | 8.4% |
+| configuration | 31 | 18.6% |
 | decision-making | 3 | 1.8% |
-| deployment | 13 | 7.7% |
-| integrations | 16 | 9.5% |
+| deployment | 13 | 7.8% |
+| integrations | 16 | 9.6% |
 | limits-quotas | 2 | 1.2% |
-| security | 16 | 9.5% |
-| troubleshooting | 16 | 9.5% |
-| *(Unclassified)* | 54 | 32.1% |
+| security | 16 | 9.6% |
+| troubleshooting | 16 | 9.6% |
+| *(Unclassified)* | 54 | 32.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-parquet-capture-tutorial)
+  - Updated: 2024-12-18T12:12:00.000Z → 2026-03-26T06:13:00.000Z
+- [Build real-time dashboards with no code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-power-bi-tutorial)
+  - Updated: 2024-03-29T22:04:00.000Z → 2026-03-26T06:13:00.000Z
+- [End-to-end solution patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-solution-patterns)
+  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-26T06:13:00.000Z
+- [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-parquet)
+  - Updated: 2025-01-24T05:34:00.000Z → 2026-03-26T08:00:00.000Z
+- [Process IoT streaming data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices)
+  - Updated: 2025-01-23T08:00:00.000Z → 2026-03-26T22:23:00.000Z
+- [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling)
+  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-24T08:00:00.000Z
+
+### Deleted Pages
+
+- ~~Build real-time dashboard with Power BI dataset~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-build-power-bi-dashboard)
 
 ## Classified Pages
 
@@ -174,14 +193,13 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/stream-analytics/postgresql-database-output) | configuration | 0.65 | Describes writing to an existing PostgreSQL table; such pages normally include required table schema expectations, connection properties, and adapter-specific settings that qualify as configuration details. |
 | [Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/azure-functions-output) | configuration | 0.65 | Describes an output adapter to Functions; such pages usually define binding parameters, payload formats, and configuration fields unique to this integration. |
 | [C# UDF](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf-methods) | integrations | 0.65 | Covers writing C# UDFs with Stream Analytics’ .NET Standard interface; such content includes method signatures, attribute usage, and deployment specifics unique to this product. |
-| [End-to-end solution patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-solution-patterns) | architecture-patterns | 0.65 | Describes concrete Stream Analytics solution patterns (dashboarding, event messaging, data stores, enrichment, monitoring) and how to compose services; this is product-specific architecture guidance beyond generic concepts. |
 | [Geospatial scenarios](https://learn.microsoft.com/en-us/azure/stream-analytics/geospatial-scenarios) | best-practices | 0.65 | Uses built-in geospatial functions for specific scenarios; likely includes concrete query patterns and product-specific function usage that serve as best-practice patterns. |
 | [Improve query performance](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization) | best-practices | 0.65 | Describes how to configure partitions and tune queries for scale; typically includes concrete partitioning patterns and SU settings that are product-specific best practices. |
 | [Increase throughput of your job](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-jobs) | best-practices | 0.65 | Covers tuning queries, partitioning, and SU settings to increase throughput; these are actionable, product-specific performance recommendations. |
 | [Parse JSON and AVRO data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parsing-json) | integrations | 0.65 | The page explains how Azure Stream Analytics specifically parses JSON/Avro/CSV and complex types (nested objects, arrays), which involves product-specific query syntax and handling rules. This is expert, integration-oriented knowledge about how to work with these formats in this service, aligning best with integrations & coding patterns. |
 | [Run job in your virtual network](https://learn.microsoft.com/en-us/azure/stream-analytics/run-job-in-virtual-network) | security | 0.65 | Describes how to run Stream Analytics jobs in an Azure virtual network, which typically includes product-specific network/security configuration (subnets, private endpoints, access requirements) beyond generic concepts. |
 | [Service Bus queues](https://learn.microsoft.com/en-us/azure/stream-analytics/service-bus-queues-output) | configuration | 0.65 | Service Bus output adapter pages typically list configuration properties (queue name, authentication, serialization) and protocol details (AMQP usage) that are product-specific configuration parameters. |
-| [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | best-practices | 0.65 | Focuses on design choices for start time and late/early events; this is product-specific guidance on time semantics and metrics, beyond generic theory. |
+| [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling) | architecture-patterns | 0.65 | The article provides product-specific guidance on choosing time handling strategies (start time selection, late/early event handling, watermarking, and related metrics) for Azure Stream Analytics jobs. It focuses on design decisions and trade-offs unique to this service’s time semantics and event ordering behavior, going beyond generic stream processing concepts. While it may not center on numeric limits, it does contain expert, implementation-focused guidance on when to use particular time-handling patterns in this product. |
 | [Use SQL reference data](https://learn.microsoft.com/en-us/azure/stream-analytics/sql-reference-data) | configuration | 0.65 | Describes configuring SQL Database as reference input in portal and VS; includes product-specific input configuration parameters. |
 | [Using .NET SDK for management](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-dotnet-management-sdk) | integrations | 0.65 | Covers using the Stream Analytics Management .NET SDK with API-specific patterns and parameters for creating inputs, outputs, and transformations, which are product-specific integration details. |
 | [Set up a pipeline using GitHub Actions](https://learn.microsoft.com/en-us/azure/stream-analytics/cicd-github-actions) | deployment | 0.64 | Shows how to configure GitHub Actions for Stream Analytics deployment; includes workflow YAML and service-specific deployment steps. |
@@ -221,9 +239,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Add and remove jobs](https://learn.microsoft.com/en-us/azure/stream-analytics/manage-jobs-cluster) | 0.30 | Operational guide to add/remove jobs on a cluster; no indication of detailed configuration matrices, limits, or troubleshooting mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/stream-analytics/create-cluster) | 0.30 | Quickstart for creating a Stream Analytics cluster; likely step-by-step portal instructions without detailed limits or configuration matrices. |
 | [Build an End-to-End streaming application](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-start-build-application) | 0.30 | Scenario quickstart (clickstream analyzer) using scripts and sample data; focuses on deployment steps, not deep configuration or troubleshooting. |
-| [Build real-time dashboards with no code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-power-bi-tutorial) | 0.30 | Tutorial for building real-time dashboards with Synapse and Power BI; appears scenario-focused without detailed product-specific limits or configs. |
-| [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-parquet-capture-tutorial) | 0.30 | Tutorial for capturing Event Hubs data to ADLS in parquet via no-code editor; mostly procedural, no detailed config tables or limits indicated. |
 | [Copy or back up a job](https://learn.microsoft.com/en-us/azure/stream-analytics/copy-job) | 0.30 | How-to for exporting and redeploying jobs; mostly procedural steps without detailed configuration tables, limits, or product-specific patterns beyond generic deployment behavior. |
+| [End-to-end solution patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-solution-patterns) | 0.30 | Describes common Stream Analytics solution patterns at a conceptual/architectural level; no indication of quantified thresholds, decision matrices, or product-specific configuration/limits that would qualify as expert knowledge under the defined categories. |
 | [Functions overview](https://learn.microsoft.com/en-us/azure/stream-analytics/functions-overview) | 0.30 | High-level overview of user-defined functions with a simple example; does not indicate detailed config tables, limits, or product-specific troubleshooting. |
 | [Integrate third party services using Azure Functions](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-with-azure-functions) | 0.30 | Tutorial for using Azure Functions as output; likely shows basic wiring and query, not exhaustive configuration or troubleshooting content. |
 | [No code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-stream-processing) | 0.30 | Describes a no-code editor experience at a high level; summary does not indicate detailed configuration tables, limits, or troubleshooting content. |
@@ -232,14 +249,14 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Visualize fraudulent calls in Power BI](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-real-time-fraud-detection) | 0.30 | Fraud detection tutorial; scenario and query steps, but no indication of detailed configuration matrices or error-resolution mappings. |
 | [Write output data to delta table in ADLS Gen2](https://learn.microsoft.com/en-us/azure/stream-analytics/write-to-delta-table-adls-gen2) | 0.30 | Tutorial for writing to a Delta table; description suggests step-by-step creation, not a full configuration reference or best-practices guide. |
 | [X sentiment analysis](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends) | 0.30 | End-to-end social media sentiment tutorial; mostly scenario and query example, not configuration reference, limits, or troubleshooting mapping. |
-| [Process IoT streaming data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices) | 0.25 | Tutorial for processing IoT data streams; primarily step-by-step with example query, not a configuration or troubleshooting reference. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-azure-resource-manager) | 0.20 | ARM template quickstart; shows one deployment template, but not a catalog of settings, limits, or troubleshooting mappings. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-azure-cli) | 0.20 | CLI quickstart for creating a job; mostly procedural commands without detailed option matrices or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-portal) | 0.20 | Quickstart walkthrough for creating a job in the portal; mainly step-by-step instructions without detailed configuration tables or product-specific edge cases. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-bicep) | 0.20 | Bicep quickstart for deploying a job; focuses on basic deployment example, not exhaustive configuration or constraints. |
-| [Build real-time dashboard with Power BI dataset](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-build-power-bi-dashboard) | 0.20 | No-code tutorial for building a Power BI dashboard; primarily step-by-step usage without deep configuration references or limits. |
+| [Build real-time dashboards with no code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-power-bi-tutorial) | 0.20 | Tutorial for building real-time Power BI dashboards with Stream Analytics no-code editor; appears to be a how-to guide without explicit limits, configuration matrices, or troubleshooting/error-code mappings. |
 | [Capture Event Hubs data in Delta Lake format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-delta-lake) | 0.20 | No-code tutorial for capturing Event Hubs data to Data Lake in Delta format; appears procedural without detailed config tables or limits. |
-| [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-parquet) | 0.20 | Similar to index 7 but for Parquet; largely a how-to article without expert-only configuration or troubleshooting content. |
+| [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-parquet) | 0.20 | Tutorial-style no-code setup for capturing Event Hubs data to Data Lake in Parquet; likely step-by-step instructions without detailed limits, configuration tables, or product-specific error mappings. Does not clearly match any expert-knowledge sub-skill category from the description. |
+| [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-parquet-capture-tutorial) | 0.20 | Tutorial-style no-code walkthrough for capturing Event Hubs data to Parquet via Stream Analytics; description/summary indicate step-by-step usage, not detailed limits, configuration tables, error codes, or product-specific best-practice guidance. |
 | [Enrich data and ingest to event hub](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-enrich-event-hub-data) | 0.20 | No-code enrichment and ingestion to Event Hubs; step-by-step usage, not configuration reference or troubleshooting. |
 | [Filter and ingest Synapse SQL data](https://learn.microsoft.com/en-us/azure/stream-analytics/filter-ingest-synapse-sql) | 0.20 | Filtering and ingesting to Synapse SQL via no-code editor; appears as a basic walkthrough rather than deep configuration or troubleshooting guidance. |
 | [Filter and ingest to Azure Data Explorer](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-filter-ingest-data-explorer) | 0.20 | No-code filter and ingest to Azure Data Explorer; appears to be a basic how-to article. |
@@ -253,4 +270,5 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure S
 | [Toll booth sensor data analysis](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics) | 0.20 | Getting-started IoT solution tutorial; high-level and procedural without deep configuration or troubleshooting content. |
 | [Transform and ingest to SQL database](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-transform-filter-ingest-sql) | 0.20 | No-code transform and store to Azure SQL Database; tutorial without detailed configuration parameters or limits. |
 | [Visual Studio Code](https://learn.microsoft.com/en-us/azure/stream-analytics/quick-create-visual-studio-code) | 0.20 | Quickstart for using VS Code tools; focuses on basic creation and running of a job, not deep configuration or troubleshooting. |
+| [Process IoT streaming data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices) | 0.10 | Introductory getting-started tutorial for processing IoT data with Azure Stream Analytics; focuses on creating stream-processing logic and a sample solution, not on limits, configuration matrices, or troubleshooting details. |
 | [Welcome to Stream Analytics](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction) | 0.10 | High-level product introduction and capabilities overview without concrete limits, configs, or error details. |

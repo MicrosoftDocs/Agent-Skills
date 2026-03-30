@@ -41,10 +41,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 71
-- **Deleted Pages**: 1
+- **Unchanged**: 72
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
 ## Classification Statistics
@@ -61,14 +61,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 11 | 15.3% |
 
 ## Changes
-
-### New Pages
-
-- [Use packages from PyPI](https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops)
-
-### Deleted Pages
-
-- ~~Use packages from PyPi~~ (https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops)
 
 ## Classified Pages
 

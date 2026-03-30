@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-30'
 category_descriptions:
   security: 'Securing Azure Pipelines: agent auth, service connections, secrets/Key
     Vault, permissions, approvals/checks, secure variables/templates, artifact/repo
@@ -48,13 +48,13 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 - **Total Pages**: 567
 - **Fetched**: 567
 - **Fetch Failed**: 0
-- **Classified**: 512
-- **Unclassified**: 55
+- **Classified**: 511
+- **Unclassified**: 56
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 567
+- **Updated Pages**: 1
+- **Unchanged**: 566
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -66,14 +66,19 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | best-practices | 7 | 1.2% |
 | configuration | 353 | 62.3% |
 | decision-making | 3 | 0.5% |
-| deployment | 67 | 11.8% |
+| deployment | 66 | 11.6% |
 | integrations | 22 | 3.9% |
 | limits-quotas | 6 | 1.1% |
 | security | 43 | 7.6% |
 | troubleshooting | 7 | 1.2% |
-| *(Unclassified)* | 55 | 9.7% |
+| *(Unclassified)* | 56 | 9.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Deploy from multiple branches](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops)
+  - Updated: 2025-03-25T14:59:00.000Z → 2026-03-27T21:05:00.000Z
 
 ## Classified Pages
 
@@ -551,7 +556,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Create a multi-stage release](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops) | deployment | 0.65 | Shows detailed configuration of multiple stages, tasks, and environment settings in classic release pipelines. |
 | [Customize JavaScript](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/customize-javascript?view=azure-devops) | integrations | 0.65 | Customization article for JavaScript pipelines typically includes Azure Pipelines–specific YAML/task parameters (for npm, Node, Yarn, etc.), agent image details, and configuration patterns that are product-specific rather than generic CI; these are integration/config details LLMs are unlikely to know exactly. |
 | [Define container jobs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/container-phases?view=azure-devops) | configuration | 0.65 | Covers how to configure jobs to run in containers, typically with YAML keys and allowed values, which are product-specific configuration details. |
-| [Deploy from multiple branches](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops) | deployment | 0.65 | Explains artifact filters and branch-based deployment routing with classic release pipeline configuration. |
 | [Deploy pull request Artifacts](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-pull-request-builds?view=azure-devops) | deployment | 0.65 | Describes PR triggers, artifact filters, and deployment conditions with Azure Repos/GitHub integration settings. |
 | [Java apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?view=azure-devops) | integrations | 0.65 | Covers setting up pipelines for Java with Maven/Gradle/Ant and deployment to Azure services; such ecosystem pages usually contain task input names, YAML examples, and product-specific build/deploy configuration details. |
 | [Linux virtual machines](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops) | deployment | 0.65 | Shows how to target multiple Linux VMs via environments with Azure Pipelines, including environment/resource usage and deployment job configuration specific to the product. |
@@ -631,6 +635,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Create & manage agent pools](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/pools-queues?view=azure-devops) | 0.30 | Organizational concept for agent pools; summary doesn’t indicate numeric limits, config tables, or error mappings. |
 | [Create Classic pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/create-classic-pipelines?view=azure-devops) | 0.30 | Step-by-step Classic pipeline creation; mostly procedural without deep config matrices or limits. |
 | [Deploy a virtual machine scale set](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/azure/deploy-virtual-scale-set-java?view=azure-devops) | 0.30 | Tutorial-style VM scale set deployment; likely step-by-step CLI and pipeline example without detailed config matrices or product-specific constraints. |
+| [Deploy from multiple branches](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops) | 0.30 | Primarily a step-by-step tutorial on configuring classic release pipelines to deploy different branches to different stages. It does not expose detailed configuration parameter tables, limits, error codes, or product-specific decision matrices; it focuses on how to set up a particular pipeline scenario rather than expert reference knowledge. |
 | [File matching patterns](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/file-matching-patterns?view=azure-devops) | 0.30 | Reference for file matching patterns is largely generic globbing behavior; not focused on Azure-specific limits, configs, or error codes beyond what an LLM likely already knows. |
 | [Node.js tutorial](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/nodejs-tutorial?view=azure-devops) | 0.30 | Step-by-step tutorial to build and deploy a Node.js app; mainly workflow guidance without detailed config tables, limits, or product-specific error mappings. |
 | [Pipeline default branch](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/pipeline-default-branch?view=azure-devops) | 0.30 | Explains how to view and edit default branch; procedural, without parameter tables or numeric constraints. |

@@ -136,16 +136,12 @@
 | Use Azure Data Factory to ingest into Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-ingest-azure-data-factory |
 | Real-time ingestion from Stream Analytics to Cosmos DB PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-ingest-azure-stream-analytics |
 | Enable and use pgvector on Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-use-pgvector |
+| Connect to Azure Cosmos DB for PostgreSQL using Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-app-stacks-nodejs |
 | Use COPY command in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-copy-command |
 | SQL functions reference for Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-functions |
 | System tables and metadata in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-metadata |
 | Use pg_azure_storage extension with Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-pg-azure-storage |
-| Use .NET SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet |
-| Use Go SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go |
-| Use Java SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java |
-| Use Node.js SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs |
-| Use Python SDK to interact with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python |
-| Use Rust SDK (preview) with Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust |
+| Create and query Cosmos DB vector index with TypeScript | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript |
 | Implement vector search in Cosmos DB with Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs |
 | Use push and pull models to read Cosmos DB change feed | https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed |
 | Query Azure Cosmos DB resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/cosmos-db/resource-graph-samples |
@@ -325,15 +321,10 @@
 | Propagate last values with $locf in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$locf |
 | Rank documents with $rank window operator | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$rank |
 | Shift windowed values with $shift in DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/operators/window-operators/$shift |
-| Build a C# application with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet |
 | Use .NET with Azure DocumentDB vector search | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet-vector-search |
-| Build a Go application with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go |
 | Use Go with Azure DocumentDB vector search | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go-vector-search |
-| Build a Java application with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java |
 | Use Java with Azure DocumentDB vector search | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java-vector-search |
-| Build a Node.js application with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs |
 | Implement vector search in Azure DocumentDB with Node.js | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs-vector-search |
-| Build a Python application with Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python |
 | Implement vector search in Azure DocumentDB with Python | https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python-vector-search |
 | Build a MERN-style Node.js web app with DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/tutorial-nodejs-web-app |
 | Integrate Jaeger tracing with Cassandra managed instances for monitoring | https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/jaeger |

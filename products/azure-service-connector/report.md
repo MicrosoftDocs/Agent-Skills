@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-30'
 category_descriptions:
-  security: Details on what Microsoft Entra roles and permissions Service Connector
-    assigns or requires, least-privilege guidance, and how access is granted to target
-    services.
+  security: Details on what Microsoft Entra roles and resource permissions Service
+    Connector assigns or requires, and how those affect secure access to connected
+    Azure services.
   deployment: Info on where Service Connector is regionally supported per compute
     service and how to create connections using infrastructure-as-code tools.
   configuration: How to view and retrieve Service Connector-generated configs, choose
@@ -21,12 +21,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
   patterns, and deployment. Use when wiring apps to Azure DBs, messaging, storage,
-  Key Vault, OpenAI, or managing Service Connector auth and configs, and other Azure
-  Service Connector related development tasks. Not for Azure API Management (use azure-api-management),
-  Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps).
+  Key Vault, OpenAI, or managing auth, regions, and IaC for connections, and other
+  Azure Service Connector related development tasks. Not for Azure API Management
+  (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions
+  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 use_when: Use when wiring apps to Azure DBs, messaging, storage, Key Vault, OpenAI,
-  or managing Service Connector auth and configs, and other Azure Service Connector
+  or managing auth, regions, and IaC for connections, and other Azure Service Connector
   related development tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
   App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 63
+- **Updated Pages**: 2
+- **Unchanged**: 61
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -62,6 +62,13 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 28 | 44.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability)
+  - Updated: 2023-10-05T08:00:00.000Z → 2026-03-27T22:21:00.000Z
+- [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission)
+  - Updated: 2024-12-19T12:13:00.000Z → 2026-03-27T22:21:00.000Z
 
 ## Classified Pages
 
@@ -95,7 +102,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [SQL database in Microsoft Fabric](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-fabric-sql) | integrations | 0.86 | Describes integration of Fabric SQL databases including supported authentication, client types, and default environment variable names/values from Service Connector. |
 | [Azure Cosmos DB for Table](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-table) | integrations | 0.84 | Shows concrete integration details and default environment variable names/values for Cosmos DB Table when wired through Service Connector. |
 | [Get connection configurations](https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations) | configuration | 0.80 | Explains how to obtain connection configurations (e.g., connection strings) and configuration names for specific target service types; likely includes environment variable names and patterns, which are configuration details. |
-| [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission) | security | 0.80 | Describes specific permission requirements for various Azure resources and how Service Connector uses on-behalf-of tokens; likely lists required roles/permissions per resource, which is product-specific security configuration. |
+| [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission) | security | 0.80 | Described as outlining Service Connector permission requirements for various Azure resources. This implies specific RBAC roles/permissions per resource type, which are product-specific security configuration details that qualify as expert knowledge. |
 | [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | integrations | 0.78 | The article describes supported authentication methods and clients for connecting to Foundry Tools using Service Connector, and explicitly mentions default environment variable names and values created with the connection. These product-specific configuration details and code samples for integrating services match the integrations sub-skill definition. |
 | [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations) | limits-quotas | 0.78 | Limitations article is expected to enumerate concrete constraints and unsupported scenarios for Service Connector, which are product-specific expert details not derivable from general knowledge. |
 | [Provide correct parameters](https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters) | configuration | 0.75 | Focuses on fundamental properties and proper value formats when passing parameters via CLI; this implies specific parameter names, formats, and constraints, which are configuration details. |
@@ -112,7 +119,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Create passwordless connection to database](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-passwordless) | 0.45 | Passwordless connection tutorial; explains using managed identities in a scenario, but summary does not indicate detailed role tables or configuration matrices. |
 | [Store configuration in App Configuration](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-app-configuration-store) | 0.45 | Tutorial for storing configuration in App Configuration; scenario-focused, not a comprehensive configuration parameter or integration reference. |
 | [Store secrets in Key Vault](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-portal-key-vault) | 0.45 | Tutorial for storing secrets in Key Vault via Service Connector; primarily a scenario walkthrough, not a general configuration or security reference with role tables. |
-| [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability) | 0.40 | High availability overview; discusses zones and resiliency conceptually, likely with uptime targets but not detailed limits/quotas or configuration tables. |
+| [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability) | 0.40 | High availability overview for Service Connector; summary mentions 99.9% uptime but no indication of detailed configuration parameters, limits tables, or decision matrices. Likely conceptual HA description without product-specific numeric thresholds or settings. |
 | [Service Connector internals](https://learn.microsoft.com/en-us/azure/service-connector/concept-service-connector-internals) | 0.40 | Service Connector internals and architecture; conceptual explanation of internals and data flow, not focused on limits, configuration parameters, or decision matrices. |
 | [Connect AKS to Azure OpenAI](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-openai-workload-identity) | 0.35 | AKS to Azure OpenAI tutorial; focused on a specific scenario and workload identity usage, not on reusable configuration catalogs. |
 | [Connect to Azure Key Vault using CSI driver](https://learn.microsoft.com/en-us/azure/service-connector/tutorial-python-aks-keyvault-csi-driver) | 0.35 | AKS + Key Vault CSI driver tutorial; scenario-specific instructions, not a general configuration parameter or error reference. |

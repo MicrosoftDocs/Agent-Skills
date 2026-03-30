@@ -1,9 +1,9 @@
 ---
 name: azure-managed-lustre
-description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AML, integrating with Blob auto-import/export, AKS CSI, quotas, or performance tuning, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Network (use azure-virtual-network).
+description: Expert knowledge for Azure Managed Lustre development including troubleshooting, best practices, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when mounting AML filesystems, linking Blob (import/export), using AKS CSI, setting quotas, or tuning performance, and other Azure Managed Lustre related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp Files (use azure-netapp-files), Azure Blob Storage (use azure-blob-storage), Azure Elastic SAN (use azure-elastic-san).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Managed Lustre Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L47-L51 | Designing Azure Managed Lustre for high availability, regional redundancy, disaster recovery, and failover strategies across regions or zones |
 | Limits & Quotas | L52-L56 | Configuring and managing user, group, and project storage quotas in Azure Managed Lustre, including setup steps, commands, and best practices for capacity control. |
 | Security | L57-L66 | Securing Azure Managed Lustre: boot key setup, firewall/NSG access control, CMK encryption, root squash permissions, and virtual network encryption configuration and validation. |
-| Configuration | L67-L78 | Configuring Azure Managed Lustre: network/storage prerequisites, client install/upgrade, mounting (fstab), ARM/Bicep deployment, and monitoring/metrics/logs with Azure Monitor |
+| Configuration | L67-L78 | Setting up and managing Azure Managed Lustre: network/storage prereqs, client install/upgrade, mounting (incl. fstab), ARM/Bicep deployment, and monitoring/metrics with Azure Monitor. |
 | Integrations & Coding Patterns | L79-L88 | Configuring Azure Managed Lustre with Blob Storage (auto-import/export, manual jobs), Terraform provisioning, and integrating with AKS via the CSI driver. |
 
 ### Troubleshooting
@@ -67,7 +67,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure network and storage prerequisites for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites |
+| Prepare network and storage prerequisites for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites |
 | Configure fstab for automatic Azure Managed Lustre mounts | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/automount-clients-fstab |
 | Install supported Lustre client software for Azure Managed Lustre | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-install |
 | Upgrade Lustre client software for Azure Managed Lustre connectivity | https://learn.microsoft.com/en-us/azure/azure-managed-lustre/client-upgrade |

@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
   security: 'Securing Foundry: auth methods, Entra-only access, keys/Key Vault, CMK
     encryption, DLP, VNet rules, API key rotation, Azure Policy and regulatory compliance
     configuration'
-  limits-quotas: Quotas, rate limits, and throughput for Foundry Tools and Content
-    Moderator/Understanding APIs, including autoscale settings, image/list limits,
-    and supported language constraints.
+  limits-quotas: Configuring rate limits and autoscale, understanding quotas for Content
+    Moderator and Content Understanding (languages, image/list limits), and applying
+    these limits in .NET samples.
   deployment: 'Deploying Foundry Tools as containers: setup on Azure AI and Azure
     Container Instances, offline/disconnected deployment, and multi-container orchestration
     with Docker Compose.'
   configuration: 'Configuring Foundry environments and resources: credentials, subdomains,
     ARM provisioning, logging, and detailed setup for Content Understanding analyzers,
     layouts, images, faces, and routing.'
-  decision-making: Guidance on choosing Foundry pricing tiers, selecting Azure AI/Content
-    Understanding modes and tools, comparing Foundry vs Studio, migration steps, and
-    estimating Content Understanding costs.
+  decision-making: Guides for choosing Foundry pricing tiers, selecting Azure AI/Content
+    Understanding tools and modes, comparing Foundry vs Studio, migrating preview
+    to GA APIs, and estimating Content Understanding costs.
   integrations: 'Using Content Moderator and Content Understanding via REST/.NET:
     calling text/image/video APIs, managing term lists, and consuming/creating multimodal
     Markdown and custom analyzers.'
@@ -27,14 +27,14 @@ category_descriptions:
 skill_description: Expert knowledge for Microsoft Foundry Tools (aka Azure AI services,
   Azure Cognitive Services) development including best practices, decision making,
   architecture & design patterns, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Content Understanding analyzers,
-  Content Moderator APIs, Foundry containers, VNet/Key Vault security, or Entra auth,
-  and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry
+  & coding patterns, and deployment. Use when using Content Understanding/Moderator
+  APIs, analyzers & routing, containerized deployments, or Entra-only access, and
+  other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry
   (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic),
   Microsoft Foundry Local (use microsoft-foundry-local).
-use_when: Use when using Content Understanding analyzers, Content Moderator APIs,
-  Foundry containers, VNet/Key Vault security, or Entra auth, and other Microsoft
-  Foundry Tools related development tasks.
+use_when: Use when using Content Understanding/Moderator APIs, analyzers & routing,
+  containerized deployments, or Entra-only access, and other Microsoft Foundry Tools
+  related development tasks.
 confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry
   Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).
 ---
@@ -45,8 +45,15 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Total Pages**: 84
 - **Fetched**: 84
 - **Fetch Failed**: 0
-- **Classified**: 55
-- **Unclassified**: 29
+- **Classified**: 54
+- **Unclassified**: 30
+
+### Incremental Update
+- **New Pages**: 0
+- **Updated Pages**: 7
+- **Unchanged**: 77
+- **Deleted Pages**: 0
+- **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
 ## Classification Statistics
 
@@ -54,19 +61,38 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 |------|-------|------------|
 | architecture-patterns | 1 | 1.2% |
 | best-practices | 2 | 2.4% |
-| configuration | 15 | 17.9% |
+| configuration | 14 | 16.7% |
 | decision-making | 6 | 7.1% |
 | deployment | 4 | 4.8% |
 | integrations | 12 | 14.3% |
 | limits-quotas | 5 | 6.0% |
 | security | 10 | 11.9% |
-| *(Unclassified)* | 29 | 34.5% |
+| *(Unclassified)* | 30 | 35.7% |
+
+## Changes
+
+### Updated Pages
+
+- [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources)
+  - Updated: 2025-12-03T23:13:00.000Z → 2026-03-19T17:26:00.000Z
+- [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
+  - Updated: 2025-12-29T23:03:00.000Z → 2026-03-23T08:00:00.000Z
+- [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool)
+  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
+- [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits)
+  - Updated: 2026-03-06T18:06:00.000Z → 2026-03-23T08:00:00.000Z
+- [What are classifiers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier)
+  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview)
+  - Updated: 2025-12-29T23:03:00.000Z → 2026-03-27T06:03:00.000Z
+- [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview)
+  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits) | limits-quotas | 0.95 | Explicitly a quotas and limits article; these pages list numeric per-resource and per-operation limits that are not knowable from general training. |
+| [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits) | limits-quotas | 0.95 | Explicitly a quotas and limits article for Content Understanding. Such pages list concrete numeric limits, sizes, and timeouts that are not generally known from training and are product- and SKU-specific. |
 | [Increase rate limit](https://learn.microsoft.com/en-us/azure/ai-services/autoscale) | limits-quotas | 0.90 | Article about autoscale limits and higher rate limits; such pages normally include concrete numeric rate limits and scaling thresholds by resource or tier. |
 | [.NET SDK samples](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/samples-dotnet) | limits-quotas | 0.85 | Explicitly states maximum of 5 image lists and 5 term lists with up to 10,000 items each—clear numeric quotas. |
 | [Authenticate requests](https://learn.microsoft.com/en-us/azure/ai-services/authentication) | security | 0.85 | Authentication article will specify header formats, token scopes, and Entra ID vs API key usage with concrete parameter names. |
@@ -90,7 +116,7 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Use Azure key vault](https://learn.microsoft.com/en-us/azure/ai-services/use-key-vault) | security | 0.75 | Integration with Key Vault for secrets; likely includes configuration patterns and parameter names for securely retrieving credentials. |
 | [Analyzer Improvement](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/analyzer-improvement) | best-practices | 0.70 | Focuses on improving extraction quality and performance using specific features (confidence, grounding, labeled samples); likely includes concrete usage patterns and recommendations. |
 | [Check video content](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/video-moderation-api) | integrations | 0.70 | Provides code and parameter usage for video moderation APIs, which are product-specific integration patterns. |
-| [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool) | decision-making | 0.70 | Explicitly a comparative overview to help select between Content Understanding, Document Intelligence, and LLM solutions; likely includes scenario-based recommendations and criteria for choosing each option. |
+| [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool) | decision-making | 0.70 | Comparative guidance between Content Understanding, Document Intelligence, and LLM solutions for intelligent document processing. Described as a comparative overview to help evaluate and choose the most effective approach, which aligns with decision-making criteria. Likely includes scenario-based recommendations and selection criteria beyond generic marketing. |
 | [Copy and back up analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/copy-analyzers) | configuration | 0.70 | Describes copy operation behavior and supported scenarios, including cross-resource constraints; these are product-specific operational configuration details. |
 | [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | integrations | 0.70 | Tutorial using cURL and REST APIs to define custom analyzers; includes request bodies and parameters specific to this service, a clear integration pattern. |
 | [Create a custom analyzer with Content Understanding Studio](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio) | configuration | 0.70 | How-to for creating and improving custom analyzers; involves setting schemas, fields, and options, which are concrete configuration steps. |
@@ -106,7 +132,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Try Content Understanding REST API and SDKs](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) | integrations | 0.70 | REST API quickstart with concrete request examples and parameters for documents, images, audio, and video; these are product-specific integration patterns. |
 | [Use commitment tier pricing](https://learn.microsoft.com/en-us/azure/ai-services/commitment-tier) | decision-making | 0.70 | Covers commitment tier vs standard pricing; these pages usually include tier tables, usage thresholds, and selection guidance for workloads. |
 | [Use containers in disconnected environments](https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-containers) | deployment | 0.70 | Disconnected container docs usually include specific requirements (image versions, licensing, heartbeat/telemetry behavior) that are deployment-specific. |
-| [What are classifiers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier) | configuration | 0.70 | Classifier overview describes analyzer concepts like contentCategories and enableSegment, which are specific configuration parameters for classification workflows. |
 | [Check text against custom terms](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/term-lists-quickstart-dotnet) | integrations | 0.65 | Quickstart shows concrete C# SDK usage for custom term lists, including specific API operations and parameters unique to Content Moderator, which are product-specific integration details beyond generic SDK knowledge. |
 | [Classifier tutorial - Split and route](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/classification-content-understanding-studio) | configuration | 0.65 | Describes creating classification workflows and routing data to analyzers; likely includes configuration fields and options for routing logic. |
 | [Create CU Task in Foundry (classic) (Preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/content-understanding-foundry-classic) | configuration | 0.65 | How-to for creating Standard and Pro tasks likely details task configuration options and fields specific to Content Understanding in Foundry classic. |
@@ -132,26 +157,27 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | [Limited Access features](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-limited-access) | 0.40 | Limited Access policy overview; likely policy/process description without detailed technical configuration parameters. |
 | [Recover or purge deleted resources](https://learn.microsoft.com/en-us/azure/ai-services/recover-purge-resources) | 0.40 | Recover/purge resource guide; likely procedural without detailed limits beyond a single 48-hour name reuse rule, which alone is not enough to classify as limits-quotas. |
 | [Security features](https://learn.microsoft.com/en-us/azure/ai-services/security-features) | 0.40 | Security overview; summary suggests conceptual security features, not detailed RBAC roles or config parameters. |
-| [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview) | 0.40 | Video overview; mainly conceptual description of capabilities and scenarios, not detailed configuration or limits. |
 | [Disconnected containers FAQ](https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-container-faq) | 0.35 | FAQ for disconnected containers; summary doesn’t show concrete limits, error codes, or config matrices. |
 | [Create a Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource) | 0.30 | Quickstart for creating a Foundry resource; likely step-by-step portal usage without deep config tables. |
 | [Create a Microsoft Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/create-multi-service-resource) | 0.30 | Resource creation how-to for Microsoft Foundry; likely step-by-step portal/API instructions without detailed configuration parameter tables, limits, or security role mappings in the summary. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq) | 0.30 | FAQ content is usually mixed and high-level; summary doesn’t indicate detailed error codes, limits, or configuration tables. |
 | [General container FAQ](https://learn.microsoft.com/en-us/azure/ai-services/containers/container-faq) | 0.30 | FAQ for containers; summary doesn’t indicate specific error codes, limits, or config tables—likely general Q&A. |
-| [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.30 | Document overview; conceptual description of capabilities without clear indication of detailed configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/ai-services/responsible-use-of-ai-overview) | 0.30 | Responsible AI overview with links; conceptual guidance rather than concrete product configuration or limits. |
+| [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview) | 0.30 | Video solution overview describing capabilities like pre-built video analyzer and use cases (metadata, RAG, highlight generation). No evidence of specific limits, configuration parameters, or troubleshooting content in the summary. |
 | [What's new](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) | 0.30 | What's new / release notes; mostly change log and announcements, not stable expert configuration, limits, or troubleshooting guidance. |
-| [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources) | 0.25 | REST API reference index; just a list of links, not the detailed API parameter docs themselves. |
 | [Microsoft Foundry SDKs](https://learn.microsoft.com/en-us/azure/ai-services/reference/sdk-package-resources) | 0.25 | SDK reference index; mostly links to other docs, not detailed configuration or limits itself. |
 | [Build a face-data person directory (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/build-person-directory) | 0.20 | Face person directory tutorial describing capabilities (add/search faces, create profiles); summary suggests high-level usage, not detailed limits, configuration options, or troubleshooting mappings. |
 | [Build a retrieval-augmented generation solution](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/build-rag-solution) | 0.20 | Tutorial-style RAG walkthrough; summary indicates conceptual and procedural guidance without mention of concrete limits, config tables, error codes, or product-specific parameter references. |
 | [Build a robotic process automation solution](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/robotic-process-automation) | 0.20 | RPA scenario tutorial focused on workflow orchestration and concepts like STP and confidence scores; no evidence of numeric limits, configuration matrices, or detailed error/diagnostic content. |
 | [Export or delete account data](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/export-delete-data) | 0.20 | Data export/delete overview; likely procedural and policy-focused without detailed limits, config tables, or error mappings. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-support) | 0.20 | Language support index by service; summary doesn’t show detailed tables or constraints here. |
+| [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) | 0.20 | Document capabilities overview describing what Content Understanding can do with customizable analyzers; summary does not indicate numeric limits, configuration parameter tables, or decision matrices. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/encrypt-data-at-rest) | 0.20 | High-level statement that data is encrypted at rest; no indication of specific configuration parameters, roles, or algorithms. |
+| [What are classifiers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier) | 0.20 | Conceptual overview of classifier and analyzer concepts (contentCategories, enableSegment) without clear indication of detailed configuration tables, limits, or troubleshooting mappings in the summary. |
+| [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.20 | High-level overview of Azure Content Understanding capabilities and use cases without concrete limits, configs, error codes, or product-specific decision matrices. |
 | [What is Content Moderator?](https://learn.microsoft.com/en-us/azure/ai-services/content-moderator/overview) | 0.20 | Service overview and deprecation notice for Content Moderator; conceptual description without detailed technical parameters in the summary. |
+| [Microsoft Foundry REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources) | 0.10 | Navigation/overview page that only lists REST API references for Foundry Tools without exposing specific limits, configuration parameters, error codes, or decision matrices. |
 | [Support & help options](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-support-options) | 0.10 | Support and help options; meta information about getting assistance, not technical configuration or limits. |
 | [What are Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services) | 0.10 | High-level overview of Foundry Tools capabilities; no concrete limits, configs, or product-specific patterns. |
-| [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) | 0.10 | Service overview of Content Understanding; conceptual description without evidence of numeric limits, config tables, or detailed patterns. |
 | [What's new in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/whats-new-ai-services) | 0.10 | What's new summary for docs; no technical limits, configs, or troubleshooting content. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/glossary) | - | Glossary of terms; definitions are conceptual, not configuration, limits, or troubleshooting patterns. |

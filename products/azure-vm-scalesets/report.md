@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 90
+- **Updated Pages**: 0
+- **Unchanged**: 93
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -72,15 +72,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 10 | 10.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
-- [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
-- [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
 
 ## Classified Pages
 

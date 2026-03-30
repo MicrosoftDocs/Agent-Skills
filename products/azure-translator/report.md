@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 - **Unclassified**: 49
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 2
-- **Unchanged**: 112
-- **Deleted Pages**: 11
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 125
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
 ## Classification Statistics
@@ -70,41 +70,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 49 | 39.2% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
-- [Migrate to 2025-10-01-preview ](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
-- [REST API guide (2025-10-01-preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
-- [Get languages](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
-- [Translate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
-- [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
-- [Document translation SDK guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
-- [Document translation REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
-- [Container: Transliterate text ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
-- [Container: Translate documents ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
-- [Foundry Tools adaptive custom translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
-
-### Updated Pages
-
-- [Foundry Tools release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/release-notes)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
-  - Updated: 2025-11-18T15:37:00Z → 2026-03-19T06:06:00Z
-
-### Deleted Pages
-
-- ~~Container: Translate documents 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
-- ~~Container: Transliterate text 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
-- ~~Foundry Tools adaptive custom translation (preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
-- ~~Document translation SDK guide 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
-- ~~Document translation REST APIs 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
-- ~~Migrate to 2025-10-01-preview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
-- ~~Get languages 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
-- ~~Overview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
-- ~~REST API guide (2025-10-01-preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
-- ~~Translate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
-- ~~Transliterate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-pipelines
 description: Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing service connections/secrets, authoring YAML CI/CD, scaling agents, deploying to Azure/Kubernetes, or integrating external tools, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Pipelines Skill
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L84-L130 | Securing Azure Pipelines: agent auth, service connections, secrets/Key Vault, permissions, approvals/checks, secure variables/templates, artifact/repo protection, and compliance policies. |
 | Configuration | L131-L487 | Configuring Azure Pipelines YAML/classic pipelines: agents, triggers, stages/jobs/steps, variables, environments, artifacts, and detailed setup for built-in and security-related tasks. |
 | Integrations & Coding Patterns | L488-L513 | Patterns and scripts for integrating Azure Pipelines with languages, tools, services, secrets, notifications, and external systems (Slack, ServiceNow, Key Vault, Service Bus, Git, Selenium). |
-| Deployment | L514-L583 | Agent setup and scaling, CI/CD pipelines, and task refs for building, publishing, and deploying apps, containers, and databases to Azure, VMs, Kubernetes, and external feeds. |
+| Deployment | L514-L582 | Agent setup and scaling, CI/CD pipelines, and task refs for building, publishing, and deploying apps, containers, and databases to Azure, VMs, Kubernetes, and external feeds. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -546,7 +546,6 @@ This skill requires **network access** to fetch documentation content:
 | Create multistage CI/CD pipeline for App Service | https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline?view=azure-devops |
 | Configure artifact sources in classic release pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/artifacts?view=azure-devops |
 | Configure multi-stage classic release pipelines for ASP.NET Core | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops |
-| Deploy multiple branches to different stages in releases | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops |
 | Deploy pull request builds with classic release pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-pull-request-builds?view=azure-devops |
 | Deploy web apps to IIS on Windows VMs via deployment groups | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deploy-webdeploy-iis-deploygroups?view=azure-devops |
 | Configure deployment group jobs and targeting behavior | https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-group-phases?view=azure-devops |

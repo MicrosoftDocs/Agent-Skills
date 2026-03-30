@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
   configuration: Configuring ADF and integration runtimes (Azure, self-hosted, SSIS,
     Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring,
@@ -10,9 +10,9 @@ category_descriptions:
   decision-making: Guidance on ADF cost planning, runtimes and compute choices, connector
     upgrades, SAP/SSIS/Synapse/Fabric migrations, and when to use Workflow Orchestration
     Manager or Enterprise SSIS IR.
-  integrations: 'Using ADF with external systems: connector how-tos, copy/transform
-    patterns, SSIS/Databricks/Synapse/ML integration, REST/webhooks, SDK usage, and
-    pipeline templates for common ETL scenarios.'
+  integrations: Connecting ADF to many data sources, using connectors, data flows,
+    templates, and activities (Databricks, SSIS, ML, REST) to build, run, and monitor
+    end‑to‑end ETL/ELT pipelines.
   best-practices: 'Performance, reliability, and migration best practices for ADF:
     tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors,
     DataOps/BCDR, SAP CDC, and common migration patterns.'
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Factory development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key Vault,
-  or SAP/SSIS migrations, and other Azure Data Factory related development tasks.
+  building ADF pipelines, Mapping Data Flows, SHIR/SSIS IR, CI/CD deployments, or
+  secure networked runtimes, and other Azure Data Factory related development tasks.
   Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks
   (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
-  Logic Apps (use azure-logic-apps).
-use_when: Use when building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key
-  Vault, or SAP/SSIS migrations, and other Azure Data Factory related development
-  tasks.
+  Functions (use azure-functions).
+use_when: Use when building ADF pipelines, Mapping Data Flows, SHIR/SSIS IR, CI/CD
+  deployments, or secure networked runtimes, and other Azure Data Factory related
+  development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
   Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics),
-  Azure Logic Apps (use azure-logic-apps).
+  Azure Functions (use azure-functions).
 ---
 # Azure Data Factory Crawl Report
 
@@ -49,14 +49,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 521
 - **Fetched**: 521
 - **Fetch Failed**: 0
-- **Classified**: 449
-- **Unclassified**: 72
+- **Classified**: 448
+- **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 0
-- **Unchanged**: 519
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 518
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
 ## Classification Statistics
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 7 | 1.3% |
-| best-practices | 22 | 4.2% |
+| best-practices | 21 | 4.0% |
 | configuration | 132 | 25.3% |
 | decision-making | 18 | 3.5% |
 | deployment | 14 | 2.7% |
@@ -72,18 +72,18 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 2 | 0.4% |
 | security | 24 | 4.6% |
 | troubleshooting | 50 | 9.6% |
-| *(Unclassified)* | 72 | 13.8% |
+| *(Unclassified)* | 73 | 14.0% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Upgrade Azure Data Factory pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
-- [Upgrade Azure Synapse Analytics pipelines to Fabric](https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-synapse-analytics-pipelines-to-fabric-data-factory)
-
-### Deleted Pages
-
-- ~~Upgrade ADF pipelines to Fabric~~ (https://learn.microsoft.com/en-us/azure/data-factory/how-to-upgrade-your-azure-data-factory-pipelines-to-fabric-data-factory)
+- [What's new (recent months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new)
+  - Updated: 2024-09-25T08:00:00.000Z → 2026-03-26T22:23:00.000Z
+- [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade)
+  - Updated: 2026-01-29T06:14:00.000Z → 2026-03-27T11:11:00.000Z
+- [Microsoft Fabric Lakehouse](https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse)
+  - Updated: 2025-10-24T11:10:00.000Z → 2026-01-30T08:00:00.000Z
 
 ## Classified Pages
 
@@ -306,7 +306,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [How to parameterize](https://learn.microsoft.com/en-us/azure/data-factory/how-to-expression-language-functions) | configuration | 0.80 | How-to article with concrete examples of parameter and expression usage, including property paths and expression syntax specific to ADF. |
 | [Install licensed components for Azure-SSIS IR](https://learn.microsoft.com/en-us/azure/data-factory/how-to-develop-azure-ssis-ir-licensed-components) | configuration | 0.80 | Guides ISVs on packaging and installing licensed SSIS components, including configuration of licensing checks, deployment parameters, and possibly SHIR proxy settings, which are product-specific configuration patterns. |
 | [Manually promote a Resource Manager template for each environment](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-manual-promotion) | deployment | 0.80 | Covers manual promotion of ADF ARM templates with environment-specific considerations, a deployment-focused pattern unique to ADF. |
-| [Microsoft Fabric Lakehouse](https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse) | integrations | 0.80 | Fabric Lakehouse connector article describes how to configure Lakehouse endpoints, tables, and auth within ADF/Synapse, which are product-specific integration settings. |
 | [Microsoft Fabric Warehouse](https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-warehouse) | integrations | 0.80 | Fabric Warehouse connector docs include connection configuration, database/schema/table selection, and auth parameters unique to this integration. |
 | [Oracle Cloud Storage](https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage) | integrations | 0.80 | Describes how to configure Oracle Cloud Storage as a source, including endpoint formats, auth parameters, and dataset settings unique to this connector. |
 | [Overview](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery) | deployment | 0.80 | Describes CI/CD patterns, environment promotion, and ADF-specific deployment behaviors and constraints, including how artifacts move between environments. |
@@ -458,6 +457,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Switch activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-switch-activity) | configuration | 0.69 | Explains Switch activity properties (expression, cases, default) and nested activity configuration, with product-specific JSON schema. |
 | [Wait activity](https://learn.microsoft.com/en-us/azure/data-factory/control-flow-wait-activity) | configuration | 0.69 | Provides Wait activity property (wait time) details and JSON schema, defining how to pause pipeline execution with product-specific configuration. |
 | [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool) | configuration | 0.68 | Copy Data tool article describes tool-specific options and generated pipeline settings, including wizard parameters and mapping to activity properties, which are product-specific configuration details. |
+| [Microsoft Fabric Lakehouse](https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse) | integrations | 0.68 | Connector page for Microsoft Fabric Lakehouse in Azure Data Factory/Synapse typically includes connector-specific settings (such as supported authentication types, required properties, and parameter names) and detailed integration behavior that go beyond generic tutorial content. These product-specific connection properties and behaviors qualify as expert integration knowledge rather than just conceptual guidance. |
 | [Set Pipeline Return Value](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-pipeline-return-value) | configuration | 0.68 | Scenario guide showing concrete configuration of Set Variable and Execute Pipeline activities to pass values, including expression patterns specific to this product. |
 | [Aggregate](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate) | configuration | 0.67 | Explains Aggregate transformation settings (group by, aggregate columns, expressions) and UI/JSON options specific to mapping data flows. |
 | [Alter row](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-alter-row) | configuration | 0.67 | Details Alter row policies (insert, update, delete, upsert) and rule expressions, which are product-specific transformation configuration options. |
@@ -515,7 +515,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [New branch](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-new-branch) | configuration | 0.63 | Shows how to replicate streams and configure branching behavior, including product-specific UI/JSON options for multiple branches. |
 | [Parse](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-parse) | configuration | 0.63 | Describes Parse transformation settings (document format, schema mapping, error handling) specific to mapping data flows. |
 | [Amazon Web Services S3 to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/data-factory/load-azure-data-lake-storage-gen2) | integrations | 0.60 | Describes using ADF to load into ADLS Gen2, likely including connector-specific settings and patterns for file vs hierarchical namespace, which are integration-focused details. |
-| [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade) | best-practices | 0.60 | Describes how automatic upgrades are applied and likely includes recommendations and caveats for using them safely, which are product-specific operational best practices. |
 | [Build a copy pipeline using managed VNet and private endpoints](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal-private) | security | 0.60 | Tutorial focuses on using private endpoints for secure data copy; likely includes network/security-specific configuration steps and settings unique to ADF private endpoint usage. |
 | [Bulk copy from files to database](https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-from-files-to-database) | integrations | 0.60 | Shows a concrete template for ADLS Gen2→Synapse/SQL bulk loads, including staging, mappings, and ADF activity configuration. |
 | [Column patterns](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-column-pattern) | best-practices | 0.60 | Explains column pattern matching and how to generalize transformations; contains product-specific transformation patterns and usage recommendations. |
@@ -601,6 +600,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Copy data tool](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-tool) | 0.25 | Tutorial for copying from Blob to SQL via Copy Data tool; standard how-to without detailed config matrices or error-resolution mappings. |
 | [Hello World - How to copy data](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool) | 0.25 | Copy Data tool quickstart; procedural tutorial without structured config parameter tables or product-specific best-practice guidance. |
 | [User interface (UI)](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal) | 0.25 | Portal-based tutorial for copy pipeline; procedural steps rather than expert configuration or decision guidance. |
+| [Automatic connector upgrade](https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade) | 0.20 | From the summary, the page provides high-level guidance on the automatic connector upgrade process in Azure Data Factory, but does not clearly indicate the presence of specific limits, configuration parameter tables, error codes, or quantified decision criteria. It reads as conceptual guidance/best practices without product-specific numeric thresholds or detailed configuration references, so it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Connector overview](https://learn.microsoft.com/en-us/azure/data-factory/connector-overview) | 0.20 | Connector overview is primarily a catalog/navigation page listing supported connectors; it doesn’t focus on limits, configuration tables, or detailed patterns. |
 | [Create a data factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory) | 0.20 | Quickstart for creating a data factory via portal/Studio; mostly UI steps, not deep configuration or expert patterns. |
 | [FinOps in Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/apply-finops) | 0.20 | FinOps guidance is likely high-level cost management concepts and recommendations without product-specific numeric limits, configs, or error mappings. |
@@ -612,6 +612,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Introduction to Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction) | 0.10 | High-level introduction to Azure Data Factory; conceptual overview without detailed limits, configs, or error mappings. |
 | [Mapping data flow video tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-tutorials) | 0.10 | Index of video tutorials; navigation/marketing style content without technical details. |
 | [What's new (archived months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new-archive) | 0.10 | Archive of what's new items; primarily release notes and links, not structured expert guidance per the defined categories. |
-| [What's new (recent months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new) | 0.10 | What's new summary page; feature announcements without deep technical limits, configs, or troubleshooting matrices. |
+| [What's new (recent months)](https://learn.microsoft.com/en-us/azure/data-factory/whats-new) | 0.10 | Release notes and feature announcements without detailed limits, configuration parameters, troubleshooting mappings, or decision matrices; primarily high-level change log rather than deep technical reference. |
 | [List of tutorials](https://learn.microsoft.com/en-us/azure/data-factory/data-factory-tutorials) | 0.05 | Tutorials index; just links to other tutorials, no substantive technical content itself. |
 | [Training modules](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules) | 0.05 | Navigation page listing training modules; no technical details or expert configuration content. |

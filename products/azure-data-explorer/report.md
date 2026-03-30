@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-03-30'
 category_descriptions:
   security: 'Configuring ADX security: auth/RBAC, managed identities, encryption/CMK,
     network isolation (private endpoints, outbound/public access), policies, locks,
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: 'Cluster limits and behaviors: free cluster quotas, auto-stop, safe
     delete/recover, ingestion file size and invalid data handling, and supported data/compression
     formats.'
-  deployment: Provisioning ADX clusters, automating schema deployment with Azure DevOps,
-    and migrating clusters to availability zones or from VNet injection to private
-    endpoints
+  deployment: Provisioning and automating ADX environments, CI/CD schema deployment
+    with Azure DevOps, and migration steps for clusters, availability zones, VNets,
+    and private endpoints
   integrations: 'Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell,
     Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau,
     Python, MATLAB, Sisense, and more.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Data Explorer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring ADX clusters, KQL/T-SQL access, ingestion formats, follower
-  DBs, or integrations (Power BI, ODBC, Python), and other Azure Data Explorer related
-  development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics).
-use_when: Use when configuring ADX clusters, KQL/T-SQL access, ingestion formats,
-  follower DBs, or integrations (Power BI, ODBC, Python), and other Azure Data Explorer
-  related development tasks.
+  Use when configuring ADX auth/RBAC and private endpoints, CI/CD deployments, follower
+  DBs, streaming ingestion, or Power BI, and other Azure Data Explorer related development
+  tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream
+  Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure
+  Databricks (use azure-databricks).
+use_when: Use when configuring ADX auth/RBAC and private endpoints, CI/CD deployments,
+  follower DBs, streaming ingestion, or Power BI, and other Azure Data Explorer related
+  development tasks.
 confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Stream Analytics (use azure-stream-analytics).
+  Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight),
+  Azure Databricks (use azure-databricks).
 ---
 # Azure Data Explorer Crawl Report
 
@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 197
+- **Updated Pages**: 1
+- **Unchanged**: 196
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-explorer/azure-data-explorer.csv`
 
@@ -76,6 +76,11 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 89 | 45.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Pipelines](https://learn.microsoft.com/en-us/azure/data-explorer/devops)
+  - Updated: 2025-09-30T22:03:00.000Z → 2026-03-25T17:04:00.000Z
 
 ## Classified Pages
 
@@ -114,7 +119,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Add cluster principal](https://learn.microsoft.com/en-us/azure/data-explorer/add-cluster-principal) | security | 0.70 | Covers adding principals via C#, Python, and ARM. This is security/identity configuration with API-level details for managing access. |
 | [Add database principal](https://learn.microsoft.com/en-us/azure/data-explorer/add-database-principal) | security | 0.70 | Similar to cluster principals but at database scope; involves security roles and access configuration via SDKs/ARM. |
 | [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities) | security | 0.70 | Shows how to configure external tables to use managed identities for access; product-specific auth configuration. |
-| [Azure Pipelines](https://learn.microsoft.com/en-us/azure/data-explorer/devops) | deployment | 0.70 | Describes Azure Pipelines task for ADX, which likely includes task parameters, supported operations, and CI/CD constraints specific to deploying ADX schema—deployment-focused expert knowledge. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/data-explorer/policy-reference) | security | 0.70 | Policy reference lists specific built-in policy definitions, names, and effects for ADX resources, which are security/governance configuration artifacts. |
 | [Best practices for Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for a specific integration (Power BI with Azure Data Explorer). Such docs typically include concrete recommendations (query patterns, DirectQuery vs import, model design) that are product- and integration-specific and go beyond generic BI advice. |
 | [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview) | architecture-patterns | 0.70 | Business continuity overview discusses native capabilities and multiple DR configurations based on recoverability requirements; this is architecture guidance with ADX-specific patterns and trade-offs. |
@@ -161,6 +165,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Query data using Python](https://learn.microsoft.com/en-us/azure/data-explorer/python-query-data) | integrations | 0.68 | Shows Python client library usage with specific classes, methods, and connection parameters unique to Azure Data Explorer. |
 | [Formats for data ingestion](https://learn.microsoft.com/en-us/azure/data-explorer/ingestion-supported-formats) | limits-quotas | 0.66 | Lists supported ingestion and compression formats in table form; while not numeric limits, it’s effectively a capability matrix of allowed formats that an LLM wouldn’t reliably know and is closest to limits/quotas category. |
 | [Query data in MATLAB](https://learn.microsoft.com/en-us/azure/data-explorer/query-matlab) | integrations | 0.66 | Explains how to obtain and use auth tokens in MATLAB to call Azure Data Explorer, with API endpoints and parameters specific to this product. |
+| [Azure Pipelines](https://learn.microsoft.com/en-us/azure/data-explorer/devops) | deployment | 0.65 | Page describes the Azure Data Explorer - Pipeline Tools Azure DevOps task for CI/CD of schema changes. This is product-specific deployment guidance for using Azure Pipelines with Azure Data Explorer, which goes beyond generic deployment knowledge and fits the deployment sub-skill focused on CI/CD patterns for a specific service. |
 | [Check cluster health](https://learn.microsoft.com/en-us/azure/data-explorer/check-cluster-health) | troubleshooting | 0.65 | Shows commands and portal metrics (like Keep Alive) to assess health. This is symptom/metric → interpretation guidance, a troubleshooting-style diagnostic reference. |
 | [Clone database schema](https://learn.microsoft.com/en-us/azure/data-explorer/clone-database-schema) | configuration | 0.65 | Uses specific management commands to clone schemas. This is a configuration/management pattern unique to the product. |
 | [Ingestion behavior of invalid data](https://learn.microsoft.com/en-us/azure/data-explorer/ingest-invalid-data) | limits-quotas | 0.65 | Describes outcomes for malformed, unparsable, or oversized data with tables; likely includes size thresholds and behavior rules that are concrete ingestion constraints. |

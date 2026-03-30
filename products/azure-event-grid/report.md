@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-03-30'
 category_descriptions:
-  security: 'Securing Event Grid: auth for publishers/consumers (keys, SAS, Entra
-    ID, JWT, certs), RBAC, managed identities, TLS, IP/firewalls, private endpoints,
-    MQTT security, and Azure Policy controls.'
-  configuration: 'Configuring Event Grid and MQTT: topics, subscriptions, filters,
-    routing, retries, dead-lettering, monitoring, and detailed event schemas for many
-    Azure and Microsoft services.'
-  integrations: Patterns and tutorials for integrating Event Grid with Auth0, M365/Graph
-    apps, HTTP/webhooks, MQTT, Event Hubs, private endpoints, and using built‑in/proprietary
-    event schemas.
+  security: 'Securing Event Grid and MQTT: auth with keys, Entra ID, JWT, certs and
+    RBAC; managed identities; webhooks; IP/firewall, private endpoints, TLS; and security
+    via Azure Policy.'
+  configuration: 'Configuring Event Grid and MQTT: domains, topics, subscriptions,
+    filters, delivery/retry/dead-letter, monitoring, and detailed event schemas for
+    many Azure and Microsoft services.'
+  integrations: Patterns for publishing, routing, and consuming Event Grid events
+    with HTTP/webhooks, MQTT, Azure/M365/Security services, and partner sources like
+    Auth0, plus schema and handler configuration.
   decision-making: Guidance on choosing Event Grid tiers, matching event schemas,
     comparing Azure vs Kubernetes Event Grid, and migrating from Event Grid on IoT
     Edge to IoT Edge hub.
@@ -29,13 +29,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Event Grid development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing, retries/dead-lettering,
-  or Arc deployments, and other Azure Event Grid related development tasks. Not for
-  Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs),
-  Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when configuring Event Grid topics/subscriptions, MQTT brokers, filters/routing,
-  retries/dead-lettering, or Arc deployments, and other Azure Event Grid related development
-  tasks.
+  configuring Event Grid domains/topics, MQTT brokers, webhooks, filters/retries,
+  or Arc-enabled Kubernetes deployments, and other Azure Event Grid related development
+  tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use
+  azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure
+  Logic Apps (use azure-logic-apps).
+use_when: Use when configuring Event Grid domains/topics, MQTT brokers, webhooks,
+  filters/retries, or Arc-enabled Kubernetes deployments, and other Azure Event Grid
+  related development tasks.
 confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Event
   Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs),
   Azure Logic Apps (use azure-logic-apps).
@@ -44,16 +45,16 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ## Summary
 
-- **Total Pages**: 259
-- **Fetched**: 259
+- **Total Pages**: 260
+- **Fetched**: 260
 - **Fetch Failed**: 0
 - **Classified**: 180
-- **Unclassified**: 79
+- **Unclassified**: 80
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 259
+- **New Pages**: 1
+- **Updated Pages**: 12
+- **Unchanged**: 247
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -63,16 +64,47 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 |------|-------|------------|
 | architecture-patterns | 2 | 0.8% |
 | best-practices | 1 | 0.4% |
-| configuration | 77 | 29.7% |
+| configuration | 76 | 29.2% |
 | decision-making | 4 | 1.5% |
 | deployment | 1 | 0.4% |
-| integrations | 36 | 13.9% |
+| integrations | 37 | 14.2% |
 | limits-quotas | 7 | 2.7% |
 | security | 47 | 18.1% |
 | troubleshooting | 5 | 1.9% |
-| *(Unclassified)* | 79 | 30.5% |
+| *(Unclassified)* | 80 | 30.8% |
 
 ## Changes
+
+### New Pages
+
+- [Custom webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-webhook-authentication)
+
+### Updated Pages
+
+- [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication)
+  - Updated: 2025-09-09T05:11:00.000Z → 2026-03-24T06:16:00.000Z
+- [Email Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-email-events)
+  - Updated: 2025-01-22T05:32:00.000Z → 2026-03-27T22:21:00.000Z
+- [Azure Key Vault](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-key-vault)
+  - Updated: 2025-02-14T08:00:00.000Z → 2026-03-26T08:00:00.000Z
+- [Use cases](https://learn.microsoft.com/en-us/azure/event-grid/use-cases)
+  - Updated: 2025-02-05T23:02:00.000Z → 2026-03-27T06:14:00.000Z
+- [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-publish-and-subscribe-portal)
+  - Updated: 2024-12-13T08:00:00.000Z → 2026-03-27T22:21:00.000Z
+- [Receive events at HTTP endpoint](https://learn.microsoft.com/en-us/azure/event-grid/receive-events)
+  - Updated: 2025-02-12T23:02:00.000Z → 2026-03-27T22:21:00.000Z
+- [Set dead-letter location and retry policy](https://learn.microsoft.com/en-us/azure/event-grid/manage-event-delivery)
+  - Updated: 2025-02-16T12:10:00.000Z → 2026-03-27T08:00:00.000Z
+- [Deliver events securely over a private link](https://learn.microsoft.com/en-us/azure/event-grid/consume-private-endpoints)
+  - Updated: 2025-05-19T15:23:00.000Z → 2026-03-27T22:21:00.000Z
+- [Deliver events to Microsoft Entra protected endpoints](https://learn.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery)
+  - Updated: 2025-02-12T23:02:00.000Z → 2026-03-26T08:00:00.000Z
+- [Webhooks](https://learn.microsoft.com/en-us/azure/event-grid/handler-webhooks)
+  - Updated: 2025-02-12T08:00:00.000Z → 2026-03-27T22:21:00.000Z
+- [Endpoint validation with Event Grid event schema](https://learn.microsoft.com/en-us/azure/event-grid/end-point-validation-event-grid-events-schema)
+  - Updated: 2024-09-26T11:12:00.000Z → 2026-03-27T08:00:00.000Z
+- [Authorize access to Event Grid resources](https://learn.microsoft.com/en-us/azure/event-grid/security-authorization)
+  - Updated: 2024-12-16T08:00:00.000Z → 2026-03-27T15:55:00.000Z
 
 ## Classified Pages
 
@@ -83,7 +115,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Azure Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-event-grid-namespace) | configuration | 0.90 | Provides properties and schema for Event Grid namespace events, including event type names and payload structure, which are specific contracts. |
 | [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-event-hubs) | configuration | 0.90 | Lists Event Hubs event types and their schema, which are detailed, product-specific integration contracts. |
 | [Azure IoT Hub](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-iot-hub) | configuration | 0.90 | Describes IoT Hub event types and payload schema, which are detailed configuration contracts for event consumers. |
-| [Azure Key Vault](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-key-vault) | configuration | 0.90 | Provides event type names and detailed schema for Key Vault events, including CloudEvents mapping, which are product-specific configuration details. |
 | [Azure resource groups](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-resource-groups) | configuration | 0.90 | Provides properties and schema for resource group events, including event types for PUT/PATCH/POST/DELETE, which are specific event contracts. |
 | [Azure subscriptions](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-subscriptions) | configuration | 0.90 | Provides properties and schema for subscription events, including event types for resource changes, which are specific event contracts. |
 | [Delivery properties](https://learn.microsoft.com/en-us/azure/event-grid/namespace-delivery-properties) | limits-quotas | 0.90 | Explicitly states numeric limits (up to 10 headers, each ≤ 4096 bytes) and supported destinations, which are precise quotas. |
@@ -91,7 +122,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Troubleshoot errors](https://learn.microsoft.com/en-us/azure/event-grid/troubleshoot-errors) | troubleshooting | 0.90 | Explicit troubleshooting guide listing Event Grid error codes/messages with descriptions and recommended actions, matching the troubleshooting criteria. |
 | [Azure Service Bus](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-service-bus) | configuration | 0.88 | Provides properties and schema for Service Bus events and notes Premium-only support, which are specific configuration and capability details. |
 | [Chat Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-chat-events) | configuration | 0.88 | Provides detailed properties and schema for chat events, including field names and structures, which are precise product-specific configuration details. |
-| [Email Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-email-events) | configuration | 0.88 | Details event types and payload schema for email events, which are specific to this integration and required for correct handling. |
 | [Presence Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-presence-events) | configuration | 0.88 | Provides the exact schema and properties for presence events, which are configuration-level details for consuming these events. |
 | [Telephony and SMS Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-telephony-sms-events) | configuration | 0.88 | Lists SMS event types and their payload schema, which are specific event contract details needed for correct integration. |
 | [Troubleshoot subscription validation](https://learn.microsoft.com/en-us/azure/event-grid/troubleshoot-subscription-validation) | troubleshooting | 0.88 | Contains specific error message text for subscription validation failures, explains validation handshake behavior, and provides concrete steps and sample JSON payloads to diagnose and resolve endpoint validation issues. |
@@ -110,8 +140,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Azure SignalR](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-azure-signalr) | configuration | 0.86 | Lists SignalR Service event types and schema, which are detailed, product-specific event contracts. |
 | [Troubleshoot network connectivity issues](https://learn.microsoft.com/en-us/azure/event-grid/troubleshoot-network-connectivity) | troubleshooting | 0.86 | Troubleshooting guide for Event Grid connectivity with product-specific checks (firewall, IP firewall, service tags, private endpoints) and use of diagnostic commands and network traces; organized around symptoms and resolutions. |
 | [Authenticate with MQTT broker using OAuth 2.0 authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-json-web-tokens) | security | 0.85 | Details OAuth2/JWT parameters, token requirements, and namespace configuration for JWT auth, which are product-specific security settings. |
-| [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication) | security | 0.85 | Describes webhook/Function-based dynamic auth for MQTT connections, including Entra ID JWT validation and required payload/headers. |
-| [Deliver events to Microsoft Entra protected endpoints](https://learn.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) | security | 0.85 | Contains detailed Entra auth configuration for webhook endpoints, including required roles/permissions and an extra access check introduced on a specific date. |
+| [Deliver events to Microsoft Entra protected endpoints](https://learn.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) | security | 0.85 | Includes detailed steps for configuring Microsoft Entra applications, assigning specific roles, and wiring authentication between Event Grid and webhook endpoints, with product-specific RBAC and auth configuration that qualifies as security expert knowledge. |
 | [Microsoft Entra JWT authentication and RBAC authorization for clients](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-microsoft-entra-token-and-rbac) | security | 0.85 | Describes Microsoft Entra JWT authentication and Azure RBAC roles for publish/subscribe; includes specific role names and authorization patterns. |
 | [Troubleshoot MQTT runtime issues](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-troubleshoot-errors) | troubleshooting | 0.85 | Explicit troubleshooting guide likely organized by MQTT-specific errors, causes, and resolutions unique to Event Grid MQTT broker. |
 | [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/event-grid/microsoft-entra-events) | configuration | 0.84 | Provides properties and schema for Microsoft Entra events published via Microsoft Graph using CloudEvents, which are detailed configuration contracts. |
@@ -120,7 +149,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Authenticate publishing clients using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-entra-id-namespaces) | security | 0.82 | Authentication article will include specific Entra ID app registrations, roles, scopes, and token/audience configuration for Event Grid namespaces. These are detailed, product-specific security and auth settings. |
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-configure-firewall) | security | 0.80 | Describes IP firewall rules, allowed IP ranges in CIDR, and how they apply to MQTT clients; includes product-specific security configuration. |
 | [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-configure-private-endpoints) | security | 0.80 | Covers private endpoint setup, required settings, and behavior for MQTT over private link, which are product-specific security/network configurations. |
-| [Authorize access to Event Grid resources](https://learn.microsoft.com/en-us/azure/event-grid/security-authorization) | security | 0.80 | Describes specific Azure RBAC roles and permissions for Event Grid management operations, which are detailed security configuration mappings. |
 | [Azure Resource Management](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-resources) | configuration | 0.80 | Provides schema and properties for Resource Management events, which are specific event payload definitions for Event Grid. |
 | [Configure IP firewall](https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall) | security | 0.80 | Product-specific firewall configuration including CIDR-based allow lists and behavior (403 responses for non-allowed IPs). |
 | [Configure minimum required TLS version](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | security | 0.80 | Product-specific TLS configuration including default support (TLS 1.0+) and how to enforce higher minimum versions with resulting failure behavior. |
@@ -150,11 +178,14 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/azure/event-grid/transport-layer-security-configure-minimum-version) | security | 0.80 | Explains how to enforce minimum TLS versions and behavior of requests with older versions; product-specific security setting. |
 | [Allow access from specific IP addresses](https://learn.microsoft.com/en-us/azure/event-grid/configure-firewall-namespaces) | security | 0.78 | Firewall configuration for Event Grid namespaces will list specific setting names (allow/deny rules, default action, IPv4/CIDR formats, possibly portal/CLI parameters). These are product-specific security configuration details, not just conceptual guidance. |
 | [Allow access via private endpoints](https://learn.microsoft.com/en-us/azure/event-grid/configure-private-endpoints-pull) | security | 0.78 | Private endpoint setup for Event Grid namespaces requires specific configuration steps and parameters (subnet selection, private DNS, network policies). These are concrete, product-specific security/network configuration details. |
+| [Azure Key Vault](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-key-vault) | integrations | 0.78 | The page provides the concrete event types and schema for Azure Key Vault as an Event Grid source, including property names and structures. These are product-specific integration details required to build correct event handlers and are not generic knowledge. |
 | [Container Service Event Resources](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-containerservice-resources) | configuration | 0.78 | Describes Container Service Event Resources system topic with maintenance stages and provides schema links, which are specific event contracts and timing details (e.g., 7 days and 24 hours notifications). |
 | [Delivery and retry](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/delivery-retry) | configuration | 0.78 | Describes delivery semantics (at-least-once, HTTP 200 requirement) and fixed retry schedule/policy; includes product-specific behavior and configurable retry settings for event delivery. |
+| [Email Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-email-events) | integrations | 0.78 | The page defines the exact event types and JSON schema properties for Azure Communication Services email events when used with Event Grid. These are product-specific integration details (event names, property names, types, and meanings) that an LLM is unlikely to know reliably from training and are needed to correctly consume and handle these events in code. |
 | [Overview](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-communication-services) | configuration | 0.78 | Describes supported event types and schema details for Azure Communication Services with Event Grid, which are concrete contract/configuration details. |
 | [AKS resources](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-aks-resources) | configuration | 0.76 | Describes AKS resources events via Fleet Manager and Gate resources, with schema links; these are specific event and resource contract details. |
 | [Authenticate event delivery to event handlers](https://learn.microsoft.com/en-us/azure/event-grid/security-authentication) | security | 0.75 | Details product-specific authentication methods (keys, managed identities, secure webhooks) and how they apply to event delivery, including configuration nuances. |
+| [Authorize access to Event Grid resources](https://learn.microsoft.com/en-us/azure/event-grid/security-authorization) | security | 0.75 | Page is specifically about Event Grid access control using Azure RBAC. Such docs typically list built-in role names, scopes, and permissions for Event Grid operations (e.g., creating event subscriptions, managing topics), which are product-specific security configurations that qualify as expert knowledge. |
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-blob-storage) | integrations | 0.75 | Gives Blob Storage event schema and notes on supported storage account kinds. These are concrete integration details and product-specific constraints. |
 | [Cloud event schema](https://learn.microsoft.com/en-us/azure/event-grid/cloud-event-schema) | integrations | 0.75 | Explains how Event Grid implements CloudEvents v1.0 JSON and HTTP binding, including schema usage specifics unique to the service. |
 | [Enable diagnostic logs](https://learn.microsoft.com/en-us/azure/event-grid/enable-diagnostic-logs-topic) | configuration | 0.75 | Step-by-step configuration of diagnostic settings with a table of available log categories per resource type, which is detailed product-specific reference. |
@@ -169,6 +200,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Publish using HTTP](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-how-to-http-publish) | integrations | 0.75 | Details HTTP Publish API usage, authentication, and parameters to send MQTT messages over HTTP, which are product-specific integration patterns. |
 | [Routing event schema](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-event-schema) | configuration | 0.75 | Defines how MQTT messages are mapped to CloudEvents, including fields like data vs data_base64 and conditions; this is detailed schema configuration. |
 | [Transport Layer Security connection with MQTT broker](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-transport-layer-security-flow) | security | 0.75 | Describes mTLS connection establishment, ports (8883, 443), and secure-only behavior; detailed security transport configuration. |
+| [Authenticate with MQTT broker using webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/authenticate-with-namespaces-using-webhook-authentication) | security | 0.74 | The page describes concrete, product-specific security configuration for Azure Event Grid namespaces using webhook/Azure Function authentication, including how the broker invokes user-defined HTTP endpoints to validate credentials (such as SAS tokens) via Microsoft Entra ID JWT validation. This is detailed security/auth configuration behavior that is unlikely to be fully known from pretraining and maps best to the security sub-skill. |
 | [Batch event delivery](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/batch-event-delivery) | configuration | 0.72 | Explains batch delivery behavior (off by default) and how to enable it via event subscription configuration; includes product-specific settings that affect throughput and delivery semantics. |
 | [Access control for MQTT clients](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-access-control) | security | 0.70 | Describes role-based access control model for MQTT clients, including concepts like client groups and topic spaces; this is product-specific authorization configuration. |
 | [Assign custom domain name to a namespace](https://learn.microsoft.com/en-us/azure/event-grid/assign-custom-domain-name) | configuration | 0.70 | Shows concrete steps and settings to bind custom domains to Event Grid namespace hostnames; includes product-specific configuration parameters. |
@@ -191,14 +223,14 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Create, view, and manage namespace topics](https://learn.microsoft.com/en-us/azure/event-grid/create-view-manage-namespace-topics) | configuration | 0.70 | Operational guide for creating/managing topics with specific settings and options unique to Event Grid namespaces. |
 | [Cross-tenant delivery using managed identity](https://learn.microsoft.com/en-us/azure/event-grid/cross-tenant-delivery-using-managed-identity) | security | 0.70 | Cross-tenant delivery with user-assigned identity requires tenant-specific configuration, role assignments, and auth scopes. These are detailed security/identity configurations unique to Event Grid cross-tenant scenarios. |
 | [Custom domains for namespaces](https://learn.microsoft.com/en-us/azure/event-grid/custom-domains-namespaces) | security | 0.70 | Custom domain configuration for MQTT/HTTP hostnames is security/compliance-related and product-specific, likely with concrete settings. |
+| [Custom webhook authentication](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-client-webhook-authentication) | security | 0.70 | Describes product-specific authentication flow for MQTT clients using webhooks/Azure Functions, including Entra ID JWT validation and how the broker calls user-defined HTTP endpoints to validate SAS tokens, usernames, passwords, or certificates. This is concrete, service-specific security configuration and behavior. |
 | [Customer enabled disaster recovery](https://learn.microsoft.com/en-us/azure/event-grid/custom-disaster-recovery-client-side) | best-practices | 0.70 | Describes a checklist and concrete steps to build client-side failover across regions; product-specific disaster recovery patterns and gotchas. |
 | [Dead lettering for event subscriptions](https://learn.microsoft.com/en-us/azure/event-grid/dead-letter-event-subscriptions-namespace-topics) | configuration | 0.70 | Explains dead-letter behavior, supported destinations (Blob Storage only), and storage format; product-specific feature configuration. |
-| [Deliver events securely over a private link](https://learn.microsoft.com/en-us/azure/event-grid/consume-private-endpoints) | integrations | 0.70 | Describes a workaround pattern for push delivery using Private Link Service with Event Grid, including configuration specifics and constraints. |
+| [Deliver events securely over a private link](https://learn.microsoft.com/en-us/azure/event-grid/consume-private-endpoints) | configuration | 0.70 | Provides product-specific configuration steps and options for using private endpoints with Event Grid, including which delivery modes are supported and how to set up secure connectivity, which are concrete configuration details. |
 | [Deliver events securely using managed identities](https://learn.microsoft.com/en-us/azure/event-grid/deliver-events-using-managed-identity) | security | 0.70 | Describes using system/user-assigned managed identities from Event Grid to Event Hubs/Service Bus/Storage. This involves specific identity assignment, role names, and endpoint auth configuration, which are product-specific security patterns. |
 | [Enable managed identity for a partner topic](https://learn.microsoft.com/en-us/azure/event-grid/enable-identity-partner-topic) | security | 0.70 | Describes assigning system- and user-assigned managed identities to partner topics with concrete identity configuration behavior and limits (one system, two user-assigned). |
 | [Enable managed identity for namespace](https://learn.microsoft.com/en-us/azure/event-grid/event-grid-namespace-managed-identity) | security | 0.70 | Shows how to assign system/user-assigned identities and use them with Event Grid namespaces, including role/identity configuration details. |
 | [Endpoint validation with CloudEvents 1.0 schema](https://learn.microsoft.com/en-us/azure/event-grid/end-point-validation-cloud-events-schema) | security | 0.70 | Describes endpoint validation flow and abuse protection for CloudEvents, including specific validation event shapes and headers used for secure ownership proof. |
-| [Endpoint validation with Event Grid event schema](https://learn.microsoft.com/en-us/azure/event-grid/end-point-validation-event-grid-events-schema) | security | 0.70 | Covers webhook delivery and validation for the proprietary schema, including specific validation event formats and security-related behavior. |
 | [Event retention](https://learn.microsoft.com/en-us/azure/event-grid/event-retention) | limits-quotas | 0.70 | Retention behavior typically includes specific durations and storage rules for topics and subscriptions; these are numeric limits/constraints. |
 | [Event schema compatibility](https://learn.microsoft.com/en-us/azure/event-grid/event-schema-compatibility) | decision-making | 0.70 | Provides a compatibility table between input and output schemas when creating subscriptions, guiding decisions on schema selection with explicit matrix rules. |
 | [Event schemas](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/event-schemas) | configuration | 0.70 | Details supported event schemas (CloudEvents 1.0) and JSON format requirements for publishing events; these are product-specific schema and payload configuration requirements. |
@@ -211,13 +243,12 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Microsoft Teams](https://learn.microsoft.com/en-us/azure/event-grid/teams-events) | integrations | 0.70 | Lists concrete Microsoft Graph/Teams event types and their schemas for Event Grid integration, which are product-specific API details. |
 | [One Drive](https://learn.microsoft.com/en-us/azure/event-grid/one-drive-events) | integrations | 0.70 | Provides OneDrive event types and schema properties for Graph-published events, which are detailed integration contracts. |
 | [Publisher operations](https://learn.microsoft.com/en-us/azure/event-grid/publisher-operations) | integrations | 0.70 | Reference for publisher HTTP operations with specific REST endpoints, parameters, and behaviors unique to Event Grid namespaces. |
-| [Receive events at HTTP endpoint](https://learn.microsoft.com/en-us/azure/event-grid/receive-events) | integrations | 0.70 | Details the validation handshake, event formats, and deserialization patterns for HTTP endpoints consuming Event Grid events, including Azure Functions specifics. |
 | [Routing enrichments](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-enrichment) | configuration | 0.70 | Explains adding up to 20 custom key-value properties to messages; includes explicit limits and configuration behavior. |
 | [Security alerts](https://learn.microsoft.com/en-us/azure/event-grid/security-alert-events) | integrations | 0.70 | Lists Security Alert event types and schemas for Graph/Event Grid, including properties unique to this integration. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/event-grid/security-controls-policy) | security | 0.70 | Lists specific regulatory compliance controls and built-in policies for Event Grid; product-specific security/compliance configuration. |
 | [Send MQTT events to Microsoft Fabric](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-events-fabric) | integrations | 0.70 | How-to integration path MQTT → Event Grid → Event Hubs → Fabric eventstream with product-specific configuration and endpoint details beyond generic knowledge. |
 | [Send events to webhooks hosted in private destinations](https://learn.microsoft.com/en-us/azure/event-grid/send-events-webhooks-private-destinations) | integrations | 0.70 | Hybrid connectivity pattern using Azure Relay hybrid connections to reach private/on-prem webhooks, with Event Grid-specific configuration details. |
-| [Set dead-letter location and retry policy](https://learn.microsoft.com/en-us/azure/event-grid/manage-event-delivery) | configuration | 0.70 | How-to for setting dead-letter destinations and retry parameters on subscriptions, with product-specific configuration fields and behavior. |
+| [Set dead-letter location and retry policy](https://learn.microsoft.com/en-us/azure/event-grid/manage-event-delivery) | configuration | 0.70 | Describes how to configure dead-letter locations and retry policies for Event Grid subscriptions using portal/CLI/PowerShell, including product-specific subscription settings and parameters rather than just conceptual behavior. |
 | [SharePoint](https://learn.microsoft.com/en-us/azure/event-grid/share-point-events) | integrations | 0.70 | Contains SharePoint-specific event types and payload schemas for Event Grid, which are concrete API integration details. |
 | [Subscribe to Auth0 events](https://learn.microsoft.com/en-us/azure/event-grid/auth0-how-to) | integrations | 0.70 | How-to for wiring Auth0 to Event Grid partner topics with product-specific configuration steps and event type references; contains concrete integration patterns beyond generic knowledge. |
 | [Subscribe to Microsoft Graph API events](https://learn.microsoft.com/en-us/azure/event-grid/subscribe-to-graph-api-events) | integrations | 0.70 | Product-specific integration pattern between Microsoft Graph and Event Grid, including subscription configuration and event routing details. |
@@ -241,6 +272,7 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [MQTT features support](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-support) | limits-quotas | 0.65 | Describes which MQTT versions and features are supported; likely includes detailed capability matrices and constraints that are product-specific. |
 | [Monitor Event Grid namespaces](https://learn.microsoft.com/en-us/azure/event-grid/monitor-namespaces) | configuration | 0.65 | Reference-style description of Event Grid namespace metrics/logs and how to wire them into Azure Monitor, including metric names and dimensions. |
 | [Query event subscriptions](https://learn.microsoft.com/en-us/azure/event-grid/query-event-subscriptions) | configuration | 0.65 | Product-specific commands and parameters for listing subscriptions by scope and type using Azure tooling, beyond generic listing concepts. |
+| [Receive events at HTTP endpoint](https://learn.microsoft.com/en-us/azure/event-grid/receive-events) | integrations | 0.65 | Contains concrete C#/JavaScript patterns for validating and deserializing Event Grid HTTP payloads and handling Event Grid-specific headers and schema, which are product-specific integration details beyond generic webhooks. |
 | [Send Auth0 events to Azure Application Insights](https://learn.microsoft.com/en-us/azure/event-grid/auth0-log-stream-app-insights) | integrations | 0.65 | Shows a concrete pattern for routing Auth0 events through Event Grid into Azure Monitor Application Insights with product-specific configuration steps. |
 | [Send Auth0 events to Azure Blob Storage](https://learn.microsoft.com/en-us/azure/event-grid/auth0-log-stream-blob-storage) | integrations | 0.65 | End-to-end pattern using Event Grid + Functions to land Auth0 events in Blob Storage, with concrete wiring and configuration details specific to this integration. |
 | [Sparkplug B support](https://learn.microsoft.com/en-us/azure/event-grid/sparkplug-support) | configuration | 0.65 | Describes Sparkplug B support, including QoS, Retain, and LWT behavior; product-specific protocol configuration and capabilities. |
@@ -288,11 +320,11 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Relay hybrid connections](https://learn.microsoft.com/en-us/azure/event-grid/handler-relay-hybrid-connections) | 0.35 | Conceptual guidance on using Relay hybrid connections; no explicit expert-only configuration or limits indicated. |
 | [Storage queues](https://learn.microsoft.com/en-us/azure/event-grid/handler-storage-queues) | 0.35 | High-level description of using Queue Storage as handler; summary lacks detailed settings or quotas. |
 | [Webhook as event handler](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/create-topic-subscription) | 0.35 | Quickstart tutorial for creating a topic and subscription and sending a sample event; step-by-step usage without configuration matrices, limits, or advanced patterns. |
-| [Webhooks](https://learn.microsoft.com/en-us/azure/event-grid/handler-webhooks) | 0.35 | Primarily links to other content and conceptual description of webhooks; no concrete parameter tables or quotas. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-azure-functions-cli) | 0.30 | CLI tutorial for routing MQTT to Functions; similar to other tutorials, not a deep reference on configs or quotas. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-event-hubs-cli-namespace-topics) | 0.30 | Tutorial routing MQTT to Event Hubs via CLI; appears as a scenario walkthrough rather than a reference of settings, limits, or troubleshooting. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-azure-functions-portal) | 0.30 | Tutorial routing MQTT to Azure Functions; step-based guidance without indication of detailed expert-only configuration or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-routing-to-event-hubs-portal-namespace-topics) | 0.30 | Portal tutorial for routing MQTT to Event Hubs; scenario-focused, not a configuration reference or decision guide. |
+| [Endpoint validation with Event Grid event schema](https://learn.microsoft.com/en-us/azure/event-grid/end-point-validation-event-grid-events-schema) | 0.30 | Describes webhook delivery and endpoint validation flow for Event Grid schema. Likely focuses on handshake pattern and request/response shapes, but summary does not indicate detailed config tables, numeric limits, or error-code mappings; more of a conceptual protocol description. |
 | [Event Domains](https://learn.microsoft.com/en-us/azure/event-grid/event-domains) | 0.30 | Conceptual description of event domains and usage; no detailed config tables, limits, or error mappings. |
 | [Event Grid on Kubernetes concepts](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/concepts) | 0.30 | Concepts article describing core ideas of Event Grid on Kubernetes; primarily definitional and conceptual rather than detailed configuration, limits, or troubleshooting content. |
 | [Event handlers](https://learn.microsoft.com/en-us/azure/event-grid/event-handlers) | 0.30 | High-level overview of supported handlers; lacks detailed configuration parameters, limits, or error codes. |
@@ -320,13 +352,14 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Overview of system topics](https://learn.microsoft.com/en-us/azure/event-grid/system-topics) | 0.22 | System topics overview; conceptual explanation of how system topics represent events from Azure services, not a configuration/limits reference. |
 | [Stream data from Event Hubs](https://learn.microsoft.com/en-us/azure/event-grid/event-hubs-integration) | 0.22 | Tutorial moving Event Hubs captured data to Synapse; integration scenario, not a configuration/limits reference or troubleshooting guide. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-publish-and-subscribe-cli) | 0.20 | Quickstart using CLI to publish/subscribe; likely step-by-step tutorial without comprehensive config tables or expert-only details. |
-| [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-publish-and-subscribe-portal) | 0.20 | Portal quickstart for MQTT publish/subscribe; focused on basic getting-started steps, not deep configuration or limits. |
+| [Azure portal](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-publish-and-subscribe-portal) | 0.20 | Quickstart for publishing/subscribing via portal; mostly step-by-step creation of namespace, clients, and topic spaces without detailed configuration tables, limits, or troubleshooting mappings. |
 | [Email when IoT Hub device disconnects](https://learn.microsoft.com/en-us/azure/event-grid/publish-iot-hub-events-to-logic-apps) | 0.20 | IoT Hub to Logic Apps via Event Grid tutorial; primarily a scenario configuration, not a reference of limits, security roles, or troubleshooting codes. |
 | [Email when VM changes](https://learn.microsoft.com/en-us/azure/event-grid/monitor-virtual-machine-changes-logic-app) | 0.20 | Tutorial for monitoring VM changes with Logic Apps and Event Grid; scenario-focused, not a deep configuration or troubleshooting guide. |
 | [Overview](https://learn.microsoft.com/en-us/azure/event-grid/push-delivery-overview) | 0.20 | Push delivery overview is conceptual (resource model, delivery modes, basic behavior). It doesn’t focus on numeric limits, detailed configuration tables, or error-code troubleshooting. |
 | [Route to Hybrid Connection](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-to-hybrid-connection) | 0.20 | Tutorial using hybrid connections as event handler; step-by-step scenario, not focused on exhaustive configuration parameters or quotas. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/event-grid/concepts) | 0.20 | Concepts article for push delivery; primarily conceptual explanation of handlers, retries, formats, not detailed configuration or numeric limits. |
 | [Trigger Automation runbook](https://learn.microsoft.com/en-us/azure/event-grid/ensure-tags-exists-on-new-virtual-machines) | 0.20 | Tutorial integrating Automation and Event Grid to tag VMs; scenario walkthrough without detailed configuration tables or numeric thresholds. |
+| [Webhooks](https://learn.microsoft.com/en-us/azure/event-grid/handler-webhooks) | 0.20 | Appears to be a conceptual/overview page about using webhooks as Event Grid handlers and links to other articles. No indication of numeric limits, config parameter tables, error-code-based troubleshooting, or RBAC/security specifics. |
 | [What is Event Grid?](https://learn.microsoft.com/en-us/azure/event-grid/overview) | 0.20 | High-level service overview of Event Grid and MQTT/HTTP capabilities without detailed limits, configs, or error mappings. |
 | [Custom events to an Azure Queue storage](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-to-queue-storage) | 0.18 | Quickstart for sending events to Queue Storage; basic integration tutorial without detailed configuration parameter tables or numeric constraints. |
 | [Custom events to an Azure event hub](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-to-eventhub) | 0.18 | Quickstart for sending events to Event Hubs; focuses on basic CLI usage and flow, not on expert-level configuration or limits. |
@@ -341,4 +374,4 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | [Get support](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/get-support) | 0.10 | Support information page describing how to get help; procedural and administrative content without technical configuration, limits, or troubleshooting mappings. |
 | [Legal terms](https://learn.microsoft.com/en-us/azure/event-grid/kubernetes/legal-terms) | 0.10 | Legal terms and third-party notices; non-technical compliance text without configuration, limits, or troubleshooting details. |
 | [Terminology](https://learn.microsoft.com/en-us/azure/event-grid/mqtt-event-grid-namespace-terminology) | 0.10 | Terminology glossary for MQTT functionality; conceptual definitions rather than expert configuration or troubleshooting content. |
-| [Use cases](https://learn.microsoft.com/en-us/azure/event-grid/use-cases) | 0.10 | Use-case listing; conceptual scenarios only, no concrete configuration, limits, or troubleshooting content. |
+| [Use cases](https://learn.microsoft.com/en-us/azure/event-grid/use-cases) | 0.10 | Use-case listing for Event Grid MQTT/HTTP; no concrete limits, configs, error codes, or decision matrices. Primarily conceptual examples of scenarios. |

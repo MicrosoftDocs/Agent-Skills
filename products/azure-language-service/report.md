@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 94
 
 ### Incremental Update
-- **New Pages**: 7
-- **Updated Pages**: 3
-- **Unchanged**: 187
-- **Deleted Pages**: 7
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 197
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
 ## Classification Statistics
@@ -75,35 +75,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 94 | 47.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry)
-- [Try multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations)
-- [Build a multi-turn conversation model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model)
-- [Multi-turn conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations)
-- [Recognized entity categories](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories)
-- [Deploy a CQA agent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent)
-- [Azure tools and agents](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Redact PII from text](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-text-pii)
-  - Updated: 2026-02-06T06:03:00.000Z → 2026-03-17T08:00:00.000Z
-- [Migrate from Text Analytics API to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate-language-service-latest)
-  - Updated: 2026-01-23T06:04:00.000Z → 2026-03-19T06:06:00.000Z
-
-### Deleted Pages
-
-- ~~Azure tools and agents 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/foundry-tools-agents)
-- ~~Multi-turn conversations 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/multi-turn-conversations)
-- ~~Build a multi-turn conversation model 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/build-multi-turn-model)
-- ~~Try multi-turn conversations 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/quickstart-multi-turn-conversations)
-- ~~Migrate to Microsoft Foundry 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry)
-- ~~Recognized entity categories 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories)
-- ~~Deploy a CQA agent 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/deploy-agent)
 
 ## Classified Pages
 

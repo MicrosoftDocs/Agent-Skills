@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-03-30'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 127
+- **Unchanged**: 128
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -67,14 +67,10 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ## Changes
 
-### New Pages
-
-- [MANA on Network Virtual Appliances (NVAs) for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-network-virtual-appliance-opt-out)
-
 ### Updated Pages
 
-- [MANA support for existing VM sizes](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-existing-sizes)
-  - Updated: 2026-02-03T18:20:00.000Z → 2026-03-18T06:15:00.000Z
+- [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network)
+  - Updated: 2026-02-22T12:19:00.000Z → 2026-03-27T15:55:00.000Z
 
 ## Classified Pages
 
@@ -208,8 +204,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Configure Routing Preference for an AKS cluster](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-azure-kubernetes-service-cli) | 0.28 | Tutorial for AKS routing preference via CLI; focuses on how-to steps, not on limits, detailed configuration tables, or troubleshooting. |
 | [Configure internet routing preference for a virtual machine](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-routing-preference-virtual-machine) | 0.28 | Tutorial on configuring routing preference for a VM; procedural guidance without detailed numeric thresholds, limits, or troubleshooting mappings. |
 | [Configure mixed Routing Preference for a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-mixed-network-adapter-portal) | 0.28 | Tutorial for configuring both routing preferences using two NICs; scenario walkthrough rather than reference-style expert content. |
-| [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network) | 0.25 | Quickstart for creating a VNet; primarily procedural, not a reference of expert-only details. |
 | [Manage a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/manage-virtual-network) | 0.25 | Basic management article for creating/changing/deleting VNets; generic portal/CLI operations without expert-level configuration or troubleshooting content. |
+| [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network) | 0.20 | Quickstart tutorial showing multiple deployment methods (portal, CLI, PowerShell, ARM, Bicep, Terraform) to create a virtual network and test connectivity. It does not focus on limits, configuration matrices, error codes, or product-specific best practices with quantified impact; it's primarily step-by-step how-to content. |
 | [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | High-level overview of Azure Virtual Network routing appliances without visible numeric limits, configuration tables, error codes, or decision matrices. Primarily conceptual/marketing-style description of what the feature is and its benefits. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |

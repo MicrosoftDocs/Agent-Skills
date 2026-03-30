@@ -1,9 +1,9 @@
 ---
 name: azure-defender-for-cloud
-description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Azure VMs, AKS/containers, SQL/Storage, CI/CD integrations, or Defender for Servers plans, and other Azure Defender For Cloud related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection).
+description: Expert knowledge for Azure Defender For Cloud development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Azure VMs, AKS/containers, SQL/Storage, CI/CD integrations, or Defender for Servers plans, and other Azure Defender For Cloud related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure Firewall Manager (use azure-firewall-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Defender For Cloud Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L102-L112 | Architectural guidance for Defender for Servers/Containers: agentless scanning, malware/vuln detection on VMs/Kubernetes, data collection, residency, workspaces, and large-scale deployment. |
 | Limits & Quotas | L113-L123 | Limits, quotas, and prerequisites for Defender for Cloud features: free trials, data ingestion, APIs, DevOps, portal preview, alert export limits, and data collection extension changes. |
 | Security | L124-L200 | Security alerts, permissions, and hardening for Defender for Cloud: alert references by resource, RBAC/CIEM setup, data handling, policies, and remediation for SQL, storage, containers, VMs, APIs, and more. |
-| Configuration | L201-L269 | How to configure and customize Defender for Cloud features: enable scans and alerts, set policies, exemptions, exports, DevOps/containers/SQL/storage settings, and cross-tenant/security posture options. |
+| Configuration | L201-L269 | Configuring Defender for Cloud features: onboarding, policies, exemptions, notifications, exports, DevOps/CLI setup, agentless scans, container/SQL/storage security, and data/security posture settings. |
 | Integrations & Coding Patterns | L270-L298 | Integrating Defender for Cloud with CI/CD, SIEM, EDR, ITSM, and third‑party security tools, exporting data via APIs/ARG, and automating alerts, tickets, and vulnerability workflows. |
 | Deployment | L299-L327 | Deploying and managing Defender for Cloud plans and agents (Containers, SQL, Storage, Servers) across AKS/EKS/GKE and hybrid, including CI/CD, IaC, migration, and support matrices |
 
@@ -248,7 +248,7 @@ This skill requires **network access** to fetch documentation content:
 | SQL VA express configuration Azure CLI commands reference | https://learn.microsoft.com/en-us/azure/defender-for-cloud/express-configuration-azure-commands |
 | SQL VA express configuration PowerShell commands reference | https://learn.microsoft.com/en-us/azure/defender-for-cloud/express-configuration-powershell-commands |
 | SQL VA express configuration PowerShell wrapper module reference | https://learn.microsoft.com/en-us/azure/defender-for-cloud/express-configuration-sql-commands |
-| Enable and configure File Integrity Monitoring in Defender for Servers | https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-defender-endpoint |
+| Configure File Integrity Monitoring with Defender for Endpoint | https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-defender-endpoint |
 | Configure end-user and app context for AI security alerts | https://learn.microsoft.com/en-us/azure/defender-for-cloud/gain-end-user-context-ai |
 | Configure Microsoft Security DevOps GitHub Action | https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action |
 | Enable agentless container posture in Defender CSPM | https://learn.microsoft.com/en-us/azure/defender-for-cloud/how-to-enable-agentless-containers |

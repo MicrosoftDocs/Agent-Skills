@@ -1,9 +1,9 @@
 ---
 name: azure-functions
-description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue/event-triggered Functions, Durable orchestrations, containerized Functions, CI/CD, or Dapr/OpenAI integrations, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+description: Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building HTTP/queue/Service Bus triggers, Durable orchestrations, containerized Functions, or CI/CD deployments, and other Azure Functions related development tasks. Not for Azure Logic Apps (use azure-logic-apps), Azure App Service (use azure-app-service), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-03-30"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Functions Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L65 | Diagnosing and fixing Durable Functions/Task SDK issues, AZFD/AZFW error codes, storage and config problems, and runtime/deployment errors for Node.js, Python, and VM start/stop functions. |
-| Best Practices | L66-L96 | Patterns and guidance for robust, performant Azure Functions and Durable Functions: orchestration/entity design, versioning, error handling, DI, HTTP/connection usage, scaling, and language-specific best practices. |
-| Decision Making | L97-L125 | Guidance on choosing Functions hosting/scaling plans, estimating costs, networking/isolation, language/runtime lifecycles, and migrating or upgrading Functions and Durable Functions apps. |
+| Best Practices | L66-L95 | Patterns and guidance for robust, scalable Azure Functions and Durable Functions: orchestrator/entity constraints, versioning, retries, DI, HttpClient, idempotency, performance, and language-specific best practices. |
+| Decision Making | L96-L125 | Guidance on choosing Functions hosting, scaling, networking, storage, and billing models, plus migration paths (Durable, runtime versions, Service Bus, AWS Lambda, Express.js). |
 | Architecture & Design Patterns | L126-L132 | Running Functions in Linux containers, Durable Functions design with Azure Storage, and hosting Functions on Azure Container Apps for scalable, container-based architectures. |
 | Limits & Quotas | L133-L142 | Limits, quotas, and configuration for Azure Functions scale, concurrency, throughput, large payloads in Durable Task, and supported languages/runtime versions. |
 | Security | L143-L160 | Securing Functions apps: encryption at rest, storage and endpoint access, private networking, managed identities for triggers/bindings/SQL, roles, and Web PubSub/MCP security. |
-| Configuration | L161-L201 | Configuring Azure Functions apps: bindings, host/app settings, plans, networking, tracing/monitoring, Durable Functions, Core Tools/local dev, runtime versions, and run-from-package setup. |
-| Integrations & Coding Patterns | L202-L312 | Patterns and how-tos for wiring Functions to external systems (HTTP, data stores, messaging, AI/OpenAI, Dapr, MCP, APIs) using triggers/bindings and integration-specific configs. |
-| Deployment | L313-L348 | Deploying and updating Azure Functions: provisioning hosting (ARM/Bicep/Terraform), containers/Kubernetes/Container Apps, CI/CD (GitHub/Azure Pipelines), scaling, zero‑downtime, and migration tasks. |
+| Configuration | L161-L203 | Configuring Azure Functions apps: app/host settings, bindings, triggers, plans, networking, tracing/monitoring, Durable Functions/Durable Task Scheduler options, and runtime/version management. |
+| Integrations & Coding Patterns | L204-L313 | Patterns and how-tos for wiring Functions to external systems (DBs, messaging, OpenAI, Dapr, MCP, APIs) via triggers/bindings, plus sample workflows and integration-focused code. |
+| Deployment | L314-L349 | Deploying and updating Azure Functions: provisioning hosting (ARM/Bicep/Terraform), containers/Kubernetes/Container Apps, CI/CD (GitHub/Azure Pipelines), scaling, zero‑downtime, and migration tasks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -68,15 +68,14 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply Durable orchestrator code constraints correctly | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-code-constraints |
 | Implement Durable Entities in .NET with correct patterns | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-dotnet-entities |
-| Handle errors and retries in Durable orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-error-handling |
+| Handle errors and retries in Azure Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-error-handling |
 | Tune performance and scaling for Durable Functions apps | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-perf-and-scale |
 | Use Durable Functions Roslyn analyzer for safe orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-roslyn-analyzer |
 | Optimize data persistence and serialization in Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-serialization-and-persistence |
-| Implement singleton orchestrations in Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-singletons |
+| Implement singleton orchestrators in Azure Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-singletons |
 | Unit test Durable Functions and Durable Task orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-unit-testing |
 | Apply deployment-level versioning strategies in Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versioning |
 | Implement safe orchestration versioning in Durable Functions | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-orchestration-versioning |
-| Configure autopurge retention policies in Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-auto-purge |
 | Avoid async void in Azure Functions (AZF0001) | https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/sdk-rules/azf0001 |
 | Optimize HttpClient usage in Functions (AZF0002) | https://learn.microsoft.com/en-us/azure/azure-functions/errors-diagnostics/sdk-rules/azf0002 |
 | Apply Azure Functions design and coding best practices | https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices |
@@ -97,7 +96,8 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Decide when to use Azure Functions Consumption plan | https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan |
+| Select file access strategy for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/concept-file-access-options |
+| Assess legacy Azure Functions Consumption hosting | https://learn.microsoft.com/en-us/azure/azure-functions/consumption-plan |
 | Choose and use Azure Functions Dedicated hosting | https://learn.microsoft.com/en-us/azure/azure-functions/dedicated-plan |
 | Compare in-process vs isolated .NET Azure Functions models | https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-in-process-differences |
 | Understand Durable Functions billing behaviors | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-billing |
@@ -108,7 +108,7 @@ This skill requires **network access** to fetch documentation content:
 | Choose storage providers for Durable Functions and SDKs | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-storage-providers |
 | Choose and configure Durable Functions storage providers | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-storage-providers |
 | Plan costs with Durable Task Scheduler billing model | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-billing |
-| Understand Azure Functions Flex Consumption hosting | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan |
+| Evaluate Azure Functions Flex Consumption hosting | https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan |
 | Choose between Functions, Logic Apps, WebJobs, Power Automate | https://learn.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs |
 | Estimate and compare Azure Functions consumption plan costs | https://learn.microsoft.com/en-us/azure/azure-functions/functions-consumption-costs |
 | Choose Azure Functions networking and isolation options | https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options |
@@ -167,7 +167,9 @@ This skill requires **network access** to fetch documentation content:
 | Configure Durable Functions triggers, bindings, and host settings | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-bindings |
 | Configure Durable Functions triggers, bindings, and host settings | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-bindings |
 | Configure Durable Functions to publish events to Azure Event Grid | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-event-publishing |
+| Use HTTP features with Azure Durable Functions orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-http-features |
 | Manage Durable Functions orchestration instances via APIs | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-instance-management |
+| Configure autopurge retention for Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-auto-purge |
 | Use Durable Task Scheduler dashboard for orchestration management | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-dashboard |
 | Configure OpenTelemetry tracing for Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler-opentelemetry-tracing |
 | Configure recurring orchestration schedules in Durable Task Scheduler | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/durable-task-schedulers-schedules |
@@ -205,7 +207,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Python worker extensions for Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/develop-python-worker-extensions |
 | Integrate Azure Functions with .NET Aspire applications | https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-aspire-integration |
 | Use Durable Functions built-in HTTP management APIs | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-http-api |
-| Use HTTP features with Durable Functions orchestrations | https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-http-features |
 | Configure Event Grid triggers and bindings in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/event-grid-how-tos |
 | Integrate Azure Functions with Azure OpenAI completions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-openai-text-completion |
 | Use Azure SQL output bindings in Azure Functions (VS Code) | https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-azure-sql-vs-code |
@@ -290,7 +291,7 @@ This skill requires **network access** to fetch documentation content:
 | Handle SignalR Service messages with Functions trigger | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-signalr-service-trigger |
 | Integrate Azure Functions with Blob storage triggers | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob |
 | Use Blob storage input binding in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-input |
-| Use Blob storage output binding in Azure Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-output |
+| Use Azure Blob storage output binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-output |
 | Configure Azure Blob storage trigger for Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-trigger |
 | Integrate Azure Functions with Queue storage bindings | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue |
 | Create messages with Queue storage output binding in Functions | https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-output |
