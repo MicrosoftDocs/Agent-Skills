@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-04-05'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -34,41 +34,37 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ## Summary
 
-- **Total Pages**: 72
-- **Fetched**: 72
+- **Total Pages**: 73
+- **Fetched**: 73
 - **Fetch Failed**: 0
 - **Classified**: 61
-- **Unclassified**: 11
+- **Unclassified**: 12
 
 ### Incremental Update
 - **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 71
-- **Deleted Pages**: 1
+- **Unchanged**: 72
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 3 | 4.2% |
-| configuration | 8 | 11.1% |
-| decision-making | 3 | 4.2% |
+| best-practices | 3 | 4.1% |
+| configuration | 8 | 11.0% |
+| decision-making | 3 | 4.1% |
 | deployment | 1 | 1.4% |
-| integrations | 39 | 54.2% |
-| limits-quotas | 4 | 5.6% |
-| security | 3 | 4.2% |
-| *(Unclassified)* | 11 | 15.3% |
+| integrations | 39 | 53.4% |
+| limits-quotas | 4 | 5.5% |
+| security | 3 | 4.1% |
+| *(Unclassified)* | 12 | 16.4% |
 
 ## Changes
 
 ### New Pages
 
-- [Use packages from PyPI](https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops)
-
-### Deleted Pages
-
-- ~~Use packages from PyPi~~ (https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops)
+- [Upstream from internal feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/upstream-internal-feed?view=azure-devops)
 
 ## Classified Pages
 
@@ -143,6 +139,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Package graphs](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/package-graph?view=azure-devops) | 0.40 | Conceptual explanation of package graphs and dependency availability; summary does not indicate concrete configuration values, limits, or error mappings. |
 | [Symbols overview](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/symbols?view=azure-devops) | 0.40 | Conceptual explanation of symbol files and Azure Artifacts symbol server; summary does not indicate detailed configuration parameters or error mappings. |
 | [Package badges](https://learn.microsoft.com/en-us/azure/devops/artifacts/package-badges?view=azure-devops) | 0.30 | Describes using badges; likely UI-driven and conceptual, without deep config matrices or numeric constraints. |
+| [Upstream from internal feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/upstream-internal-feed?view=azure-devops) | 0.30 | Primarily a how-to/tutorial for configuring an internal feed as an upstream source in Azure Artifacts; it does not emphasize numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or decision matrices. The content is procedural rather than expert reference material. |
 | [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.25 | Tutorial on sharing packages publicly; summary doesn’t indicate detailed limits, config tables, or error codes. |
 | [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops) | 0.25 | Conceptual explanation of feed views; summary doesn’t show numeric thresholds or config tables. |
 | [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops) | 0.20 | Tutorial-style first package publish; summary shows no limits, config tables, or product-specific error codes. |

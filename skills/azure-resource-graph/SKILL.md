@@ -1,9 +1,9 @@
 ---
 name: azure-resource-graph
-description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query, handling paging/quotas, or deploying shared queries, and other Azure Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Cost Management (use azure-cost-management).
+description: Expert knowledge for Azure Resource Graph development including troubleshooting, best practices, decision making, limits & quotas, configuration, and integrations & coding patterns. Use when querying via CLI/PowerShell/REST, using GET/LIST vs Query APIs, shared queries, alerts, or Power BI, and other Azure Resource Graph related development tasks. Not for Azure Monitor (use azure-monitor), Azure Policy (use azure-policy), Azure Resource Manager (use azure-resource-manager), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Graph Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L46-L50 | Guidance on when to use Azure Resource Graph GET/LIST REST APIs vs the Query service, comparing capabilities, scenarios, and integration patterns. |
 | Limits & Quotas | L51-L58 | Understanding ARG request limits, pagination behavior, handling large result sets, and implementing efficient paging (including with PowerShell) to avoid quota issues. |
 | Configuration | L59-L66 | Configuring Resource Graph usage: keyboard shortcuts, supported resource types, and defining/deploying shared queries via Bicep and ARM templates. |
-| Integrations & Coding Patterns | L67-L77 | How to run Resource Graph queries via CLI, PowerShell, REST, Power BI, Logic Apps, and create shared queries and alerting/automation patterns using those integrations |
+| Integrations & Coding Patterns | L67-L78 | Running Resource Graph queries via CLI, PowerShell, REST, Logic Apps, Power BI; creating shared queries and alerts; and retrieving resource change history for automation and reporting. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -68,6 +68,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create Azure Resource Graph-based alerts with Log Analytics | https://learn.microsoft.com/en-us/azure/governance/resource-graph/alerts-query-quickstart |
+| Query Azure Resource Graph for resource change history | https://learn.microsoft.com/en-us/azure/governance/resource-graph/changes/get-resource-changes |
 | Run Azure Resource Graph queries with Azure CLI | https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-azurecli |
 | Query Azure Resource Graph using PowerShell cmdlets | https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-powershell |
 | Call Azure Resource Graph via REST API | https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api |

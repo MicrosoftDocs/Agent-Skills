@@ -1,9 +1,9 @@
 ---
 name: azure-ddos-protection
-description: Expert knowledge for Azure DDos Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when choosing DDoS tiers, configuring IP/Network Protection plans, analyzing DDoS logs, or enforcing Azure Policy, and other Azure DDos Protection related development tasks. Not for Azure Firewall (use azure-firewall), Azure Firewall Manager (use azure-firewall-manager), Azure Web Application Firewall (use azure-web-application-firewall), Azure Networking (use azure-networking).
+description: Expert knowledge for Azure DDos Protection development including troubleshooting, best practices, decision making, architecture & design patterns, security, and configuration. Use when enabling DDoS IP/Network Protection plans, parsing DDoS logs, using Rapid Response, or enforcing Azure Policy, and other Azure DDos Protection related development tasks. Not for Azure Firewall (use azure-firewall), Azure Web Application Firewall (use azure-web-application-firewall), Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure DDos Protection Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L34-L40 | Handling and investigating DDoS attacks: engaging Rapid Response, reading Defender for Cloud DDoS alerts, and analyzing DDoS Protection logs in Log Analytics for root cause and mitigation. |
 | Best Practices | L41-L48 | Guidance on DDoS Protection design, cost optimization, incident response planning, and safely running/simulating DDoS tests in Azure environments |
-| Decision Making | L49-L54 | Guidance on comparing Azure DDoS Protection tiers (Basic vs Standard), pricing, feature differences, and how to choose the right tier for your workloads and budget. |
-| Architecture & Design Patterns | L55-L60 | Reference architectures and design patterns for deploying Azure DDoS Protection, including integrating inline L7 protection with network virtual appliances (NVAs). |
-| Security | L61-L71 | How to deploy, enable, and manage Azure DDoS IP/Network Protection plans via portal, CLI, or PowerShell, including required permissions and configuration steps. |
-| Configuration | L72-L80 | Deploying and configuring Azure DDoS IP/Network Protection via ARM/Bicep, enabling monitoring and metrics, and enforcing protection using Azure Policy definitions. |
+| Decision Making | L49-L55 | Guidance on when to enable Azure DDoS Protection, comparing Standard tiers and pricing, and choosing the best tier for your app’s scale, risk, and cost requirements. |
+| Architecture & Design Patterns | L56-L61 | Reference architectures and design patterns for deploying Azure DDoS Protection, including integrating inline L7 protection with network virtual appliances (NVAs). |
+| Security | L62-L72 | How to deploy, enable, and manage Azure DDoS IP/Network Protection plans via portal, CLI, or PowerShell, including required permissions and configuration steps. |
+| Configuration | L73-L81 | Deploying and configuring Azure DDoS IP/Network Protection via ARM/Bicep, enabling monitoring and metrics, and enforcing protection using Azure Policy definitions. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -49,6 +49,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
+| Decide when and how to use Azure DDoS Protection | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-faq |
 | Compare pricing and choose Azure DDoS tiers | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-pricing-guide |
 | Choose the right Azure DDoS Protection tier | https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-sku-comparison |
 

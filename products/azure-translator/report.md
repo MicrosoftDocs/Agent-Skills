@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-04-05'
 category_descriptions:
   configuration: 'Configuring Azure Translator behavior: resource setup, Docker/container
     settings, profanity filters, content exclusion, dynamic dictionaries, word alignment,
@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 - **Unclassified**: 49
 
 ### Incremental Update
-- **New Pages**: 11
-- **Updated Pages**: 2
-- **Unchanged**: 112
-- **Deleted Pages**: 11
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 124
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
 ## Classification Statistics
@@ -71,40 +71,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 
 ## Changes
 
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
-- [Migrate to 2025-10-01-preview ](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
-- [REST API guide (2025-10-01-preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
-- [Get languages](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
-- [Translate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
-- [Transliterate](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
-- [Document translation SDK guide](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
-- [Document translation REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
-- [Container: Transliterate text ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
-- [Container: Translate documents ](https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
-- [Foundry Tools adaptive custom translation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
-
 ### Updated Pages
 
-- [Foundry Tools release notes](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/release-notes)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq)
-  - Updated: 2025-11-18T15:37:00Z → 2026-03-19T06:06:00Z
-
-### Deleted Pages
-
-- ~~Container: Translate documents 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/translate-document-parameters)
-- ~~Container: Transliterate text 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/containers/transliterate-text-parameters)
-- ~~Foundry Tools adaptive custom translation (preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/adaptive-custom-translation)
-- ~~Document translation SDK guide 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/document-sdk-overview)
-- ~~Document translation REST APIs 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/document-translation/reference/rest-api-guide)
-- ~~Migrate to 2025-10-01-preview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/how-to/migrate-to-preview)
-- ~~Get languages 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/get-languages)
-- ~~Overview 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/overview)
-- ~~REST API guide (2025-10-01-preview) 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/rest-api-guide)
-- ~~Translate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/translate-api)
-- ~~Transliterate 🆕~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/preview/transliterate-api)
+- [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new)
+  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-01T08:00:00.000Z
 
 ## Classified Pages
 
@@ -233,10 +203,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | [Sentence alignment](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/sentence-alignment) | 0.20 | Describes sentence alignment conceptually; no indication of numeric thresholds, config parameters, or error mappings. |
 | [Translator Pro FAQ](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/translator-pro/faq) | 0.20 | An FAQ for a mobile application is usually conceptual and usage-oriented (what it is, how to use, licensing, platforms) rather than containing numeric limits, configuration parameter tables, or structured troubleshooting content with error codes. The summary indicates general Q&A, not the expert-knowledge patterns required. |
 | [What are Azure Translator solutions?](https://learn.microsoft.com/en-us/azure/ai-services/translator/solutions/overview) | 0.20 | Overview of prebuilt solutions; marketing/introductory content without detailed limits, configs, or decision matrices. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new) | 0.20 | Release notes/what's new summary without visible technical tables, limits, or config parameters in the snippet. |
 | [BLEU score](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/concepts/bleu-score) | 0.10 | Defines BLEU score conceptually; no product-specific configuration or numeric thresholds beyond generic knowledge. |
 | [Bilingual Evaluation Understudies (BLEU) score](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/bleu-score) | 0.10 | Defines BLEU score conceptually; no product-specific configuration or numeric thresholds beyond generic knowledge. |
 | [What is Azure Translator in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview) | 0.10 | High-level product overview of Azure Translator; no concrete limits, configs, or error details. |
 | [What is Translator text translation?](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/overview) | 0.10 | Text translation overview; describes capabilities and doc structure without detailed limits or configs. |
 | [What is the Custom Translator portal?](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/overview) | 0.10 | Service overview and capabilities; marketing/introductory content without detailed limits, configs, or patterns. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/translator/whats-new) | 0.10 | Release notes and high-level 'what's new' overview without detailed limits, configuration tables, error codes, or decision matrices; primarily conceptual and informational rather than deep technical reference. |
 | [Custom translation key terms](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/azure-ai-foundry/key-terms) | - | Access-restricted key terms list; content not visible in summary and likely definitional rather than configuration/limits. |

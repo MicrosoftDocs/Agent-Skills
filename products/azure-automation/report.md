@@ -1,9 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
-  security: 'Securing Automation accounts: identities (system/user-assigned), Entra
-    auth, RBAC, encryption, private endpoints, policies, and safe use of credentials/certs
-    in runbooks and Terraform.'
+  security: 'Securing Automation accounts: identities, RBAC, auth methods, encryption,
+    certificates/credentials, private endpoints, Azure Policy, and Terraform-based
+    secure provisioning.'
   configuration: 'Configuring Azure Automation runbooks and DSC: alerts, schedules,
     parameters, hybrid workers, source control, Python/PowerShell modules, policy,
     and Change Tracking/Inventory at scale.'
@@ -27,17 +27,17 @@ category_descriptions:
     shared resources, and collecting support diagnostics.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when building Azure Automation runbooks/DSC,
-  Hybrid Runbook Workers, Change Tracking, CI/CD, or cross-cloud integrations, and
-  other Azure Automation related development tasks. Not for Azure Functions (use azure-functions),
+  & coding patterns, and deployment. Use when automating runbooks/DSC, Hybrid Runbook
+  Workers, Change Tracking, Azure/AWS/365 integrations, or migrations, and other Azure
+  Automation related development tasks. Not for Azure Functions (use azure-functions),
   Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler),
-  Azure Update Manager (use azure-update-manager).
-use_when: Use when building Azure Automation runbooks/DSC, Hybrid Runbook Workers,
-  Change Tracking, CI/CD, or cross-cloud integrations, and other Azure Automation
-  related development tasks.
+  Azure DevOps (use azure-devops).
+use_when: Use when automating runbooks/DSC, Hybrid Runbook Workers, Change Tracking,
+  Azure/AWS/365 integrations, or migrations, and other Azure Automation related development
+  tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager
-  (use azure-update-manager).
+  (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure DevOps (use
+  azure-devops).
 ---
 # Azure Automation Crawl Report
 
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 1
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -72,6 +72,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ## Changes
 
+### Updated Pages
+
+- [Disable local authentication](https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-02T11:11:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -79,7 +84,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Automation limits and quotas](https://learn.microsoft.com/en-us/azure/automation/automation-subscription-limits-faq) | limits-quotas | 0.95 | Explicitly described as providing default quotas and limits for Automation resources, including numeric values and constraints. |
 | [Best practices for security in Azure Automation](https://learn.microsoft.com/en-us/azure/automation/automation-security-guidelines) | security | 0.95 | Explicitly a security best-practices article with detailed guidance on securing Automation accounts, Hybrid workers, identities, and networks. |
 | [Automation network configuration details](https://learn.microsoft.com/en-us/azure/automation/automation-network-configuration) | configuration | 0.90 | Provides detailed network information (endpoints, ports, URLs) required by Automation features, which is product-specific configuration. |
-| [Disable local authentication](https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication) | security | 0.90 | Describes disabling local auth and using Entra authentication for Automation endpoints, including specific security settings. |
 | [Manage automation limits and quotas](https://learn.microsoft.com/en-us/azure/automation/automation-limits-quotas) | limits-quotas | 0.90 | Explicitly about Automation subscription limits and quotas and how to request changes; expected to list concrete numeric limits and quota behaviors. |
 | [Using system-assigned managed identity](https://learn.microsoft.com/en-us/azure/automation/enable-managed-identity-for-automation) | security | 0.90 | Shows how to configure system-assigned managed identity and use it to access resources, a core security/identity configuration. |
 | [Using user-assigned managed identity](https://learn.microsoft.com/en-us/azure/automation/add-user-assigned-identity) | security | 0.90 | Details adding and using user-assigned managed identities, including constraints with Hybrid Runbook Worker, which is product-specific security behavior. |
@@ -110,6 +114,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Manage certificates](https://learn.microsoft.com/en-us/azure/automation/shared-resources/certificates) | security | 0.75 | Details secure storage/encryption of certificate assets and how to access them via specific cmdlets; product-specific security configuration patterns. |
 | [Manage credentials](https://learn.microsoft.com/en-us/azure/automation/shared-resources/credentials) | security | 0.75 | Focuses on secure credential asset handling, encryption, and usage in runbooks/DSC; product-specific security configuration. |
 | [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data) | security | 0.75 | Explains how Automation secures and protects data, including product-specific security behaviors and controls. |
+| [Disable local authentication](https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication) | security | 0.72 | The page is focused on a concrete security configuration change (disabling local authentication) for Azure Automation, including its specific impact on features like webhooks, source control auto sync, and DSC, and the move to Microsoft Entra-based auth. This is product-specific security guidance with concrete implications and configuration behavior, fitting the security sub-skill. It is not just conceptual; it describes how this setting affects particular mechanisms and what alternatives to use. |
 | [At scale using Azure Policy](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-policy) | configuration | 0.70 | Uses Azure Policy for scale enablement; likely includes policy definitions, parameters, and assignment settings specific to this scenario. |
 | [Automation account authentication overview](https://learn.microsoft.com/en-us/azure/automation/automation-security-overview) | security | 0.70 | Authentication overview for Automation accounts with supported scenarios and permission scopes is product-specific security guidance. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/automation/policy-reference) | configuration | 0.70 | Index of built-in policy definitions; includes policy names, versions, and links to definitions, which are concrete configuration artifacts for managing Automation resources. |

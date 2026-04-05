@@ -1,9 +1,9 @@
 ---
 name: azure-stream-analytics
-description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Stream Analytics jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/Functions, or IoT Edge, and other Azure Stream Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics), Azure Event Hubs (use azure-event-hubs), Azure Data Explorer (use azure-data-explorer).
+description: Expert knowledge for Azure Stream Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building jobs with Event Hubs/Kafka, Cosmos DB/SQL outputs, ML/Functions integration, autoscale, or SU tuning, and other Azure Stream Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Event Hubs (use azure-event-hubs), Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Stream Analytics Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L56 | Diagnosing and fixing Stream Analytics job issues: error codes (config/data/external/internal), input/output connection failures, query/UDF bugs, and using diagrams, metrics, and resource logs to debug. |
-| Best Practices | L57-L75 | Guidance on designing, scaling, optimizing, and troubleshooting Stream Analytics jobs, including queries, partitions, time handling, inputs/outputs, metrics, alerts, and geospatial/ML patterns |
+| Best Practices | L57-L75 | Best practices for designing, scaling, and optimizing Stream Analytics jobs: query patterns, performance tuning, reliability, geospatial, time/late events, ML, Cosmos DB, SQL, and alerting. |
 | Decision Making | L76-L82 | Guidance on choosing Stream Analytics developer tools, migrating projects from Visual Studio to VS Code, and comparing Azure real-time/stream processing services for your scenario. |
-| Architecture & Design Patterns | L83-L88 | Architectural patterns and best practices for designing resilient, geo-redundant Azure Stream Analytics solutions, including reference topologies and high-availability job designs. |
-| Limits & Quotas | L89-L94 | Configuring and tuning Stream Analytics streaming units and clusters, including how to resize, scale performance, and understand capacity limits and resource quotas. |
-| Security | L95-L114 | Securing Stream Analytics jobs: managed identities for inputs/outputs, private endpoints/VNet integration, data protection, credential rotation, and Azure Policy compliance controls. |
-| Configuration | L115-L149 | Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility, monitoring, alerts, and error policies. |
-| Integrations & Coding Patterns | L150-L169 | Patterns for integrating Stream Analytics with Kafka, Azure ML, Functions, Schema Registry, and for writing UDFs/aggregates, parsing formats, and doing ML/anomaly detection. |
-| Deployment | L170-L185 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, plus CI/CD automation via ARM/Bicep, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
+| Architecture & Design Patterns | L83-L87 | Architectural patterns and best practices for designing resilient, geo-redundant Azure Stream Analytics solutions, including reference topologies and high-availability job designs. |
+| Limits & Quotas | L88-L93 | Configuring and tuning Stream Analytics streaming units and clusters, including how to resize, scale performance, and understand capacity limits and resource quotas. |
+| Security | L94-L113 | Securing Stream Analytics jobs: managed identities for inputs/outputs, private endpoints/VNet integration, data protection, credential rotation, and Azure Policy compliance controls. |
+| Configuration | L114-L148 | Configuring Stream Analytics jobs: inputs/outputs (SQL, Cosmos DB, Event Hubs, Kafka, Power BI, Delta Lake, etc.), partitioning, autoscale, compatibility, monitoring, alerts, and error policies. |
+| Integrations & Coding Patterns | L149-L168 | Patterns for integrating Stream Analytics with Kafka, Azure ML, Functions, Schema Registry, and for writing UDFs/aggregates, parsing formats, and doing ML/anomaly detection. |
+| Deployment | L169-L184 | Deploying, starting/stopping, scaling, and moving Stream Analytics jobs and clusters, plus CI/CD automation via ARM/Bicep, GitHub Actions, Azure DevOps, npm/NuGet, and IoT Edge/Stack Hub. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -71,7 +71,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize Azure SQL Database output performance for Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-sql-output-perf |
 | Apply common query patterns in Azure Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns |
 | Implement configurable threshold-based alerting in Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-threshold-based-rules |
-| Design time handling strategies in Azure Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling |
+| Design time handling and lateness in Azure Stream Analytics | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling |
 
 ### Decision Making
 | Topic | URL |
@@ -84,7 +84,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design geo-redundant Azure Stream Analytics job architectures | https://learn.microsoft.com/en-us/azure/stream-analytics/geo-redundancy |
-| Apply Azure Stream Analytics solution architecture patterns | https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-solution-patterns |
 
 ### Limits & Quotas
 | Topic | URL |

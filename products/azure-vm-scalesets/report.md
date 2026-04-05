@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-04-05'
 category_descriptions:
   configuration: 'Configuring VM Scale Sets: scaling rules, upgrades, networking,
     disks, images, health/repair, standby pools, instance mix, protection, and automation
@@ -19,26 +19,26 @@ category_descriptions:
   troubleshooting: Diagnosing and fixing VM Scale Sets issues with instance mix (spot/dedicated),
     autoscale not triggering or scaling incorrectly, and common configuration or quota-related
     errors.
-  limits-quotas: 'Limits, capacities, and behaviors of VM scale sets: instance/placement
-    group limits, standby pool constraints, maintenance notifications, and FAQs on
-    scaling and support scope.'
+  limits-quotas: VMSS capacity, instance and placement group limits, standby pool
+    constraints, maintenance notification behavior, and FAQs on supported scale, features,
+    and quotas
   integrations: Using CLI/PowerShell/DSC/custom script to deploy apps, configure,
     and manage VM Scale Sets, plus integrating standby pools with Log Analytics for
     monitoring and automation.
 skill_description: Expert knowledge for Azure Virtual Machine Scale Sets development
   including troubleshooting, decision making, architecture & design patterns, limits
   & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring VMSS autoscale/upgrade modes, zones/PPGs, Spot+standby pools,
-  ADE+Key Vault, or CLI/ARM deployments, and other Azure Virtual Machine Scale Sets
-  related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
-  (use azure-container-instances), Azure App Service (use azure-app-service).
-use_when: Use when configuring VMSS autoscale/upgrade modes, zones/PPGs, Spot+standby
-  pools, ADE+Key Vault, or CLI/ARM deployments, and other Azure Virtual Machine Scale
+  Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby pools,
+  or disk encryption with Key Vault, and other Azure Virtual Machine Scale Sets related
+  development tasks. Not for Azure Virtual Machines (use azure-virtual-machines),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service
+  (use azure-app-service), Azure Service Fabric (use azure-service-fabric).
+use_when: Use when configuring VMSS autoscale, upgrade modes, zones/PPGs, Spot/standby
+  pools, or disk encryption with Key Vault, and other Azure Virtual Machine Scale
   Sets related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Container Instances
-  (use azure-container-instances), Azure App Service (use azure-app-service).
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
+  azure-app-service), Azure Service Fabric (use azure-service-fabric).
 ---
 # Azure Virtual Machine Scale Sets Crawl Report
 
@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 90
+- **Updated Pages**: 1
+- **Unchanged**: 92
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -75,12 +75,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [Use Azure Resource Manager templates](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-azure-resource-manager)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
-- [Extension sequencing](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-extension-sequencing)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
-- [Azure Disk Encryption](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/disk-encryption-overview)
-  - Updated: 2025-12-02T06:02:00.000Z → 2025-12-05T06:07:00.000Z
+- [Scale Set FAQ](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq)
+  - Updated: 2025-12-29T23:04:00Z → 2026-04-02T17:04:00Z
 
 ## Classified Pages
 
@@ -93,6 +89,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Scaling Profile](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scaling-profile) | configuration | 0.80 | Scaling profile article describes VMSS model properties (image, SKU, OS profile, network profile) and how they are applied; includes property names and behaviors specific to VMSS. |
 | [Terminate notifications](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-terminate-notification) | configuration | 0.80 | Covers enabling termination notifications via Azure Metadata Service Scheduled Events, including delay timeout configuration and event behavior—detailed product-specific settings. |
 | [Working with large uniform scale sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups) | limits-quotas | 0.80 | Defines large scale sets, singlePlacementGroup property, and capacity up to 1,000 VMs with specific numeric thresholds and behaviors, which are concrete limits/quotas. |
+| [Scale Set FAQ](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq) | limits-quotas | 0.78 | FAQ pages for VM Scale Sets typically include concrete numeric constraints (for example, maximum number of VMs per scale set, regional limits, upgrade policy behaviors, and other capacity-related figures) that are not inferable from general training data. These are product-specific limits and behaviors that qualify as expert knowledge under the limits-quotas category. |
 | [Application Health extension](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension) | configuration | 0.75 | Details how to set up the Application Health extension, endpoints, and how it integrates with rolling upgrades and automatic repairs—specific configuration parameters and behaviors. |
 | [Automatic instance repairs](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-instance-repairs) | configuration | 0.75 | Details automatic repairs policy, including repair actions (delete, reimage, restart) and how health probes/extensions drive behavior—product-specific configuration and behavior. |
 | [Configure rolling upgrade policy](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-configure-rolling-upgrades) | configuration | 0.75 | Rolling upgrades involve batch sizes, health checks, and other parameters; article focuses on configuring these product-specific settings and behaviors. |
@@ -121,7 +118,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Reimage a virtual machine](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-reimage-virtual-machine) | configuration | 0.70 | Explains reimage behavior (OS disk replacement, what changes require reimage) and how to invoke it per instance—product-specific operational configuration. |
 | [Resilient create and delete (Preview)](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/resilient-vm-create-delete) | configuration | 0.70 | Explains enabling retries for VM provisioning/deletion failures, including behavior around provisioning timeouts and transient platform errors—specific feature configuration. |
 | [Rolling upgrades with MaxSurge](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-maxsurge) | configuration | 0.70 | Explains MaxSurge behavior (creating extra instances, then deleting old ones) and how to configure it; product-specific upgrade configuration. |
-| [Scale Set FAQ](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq) | limits-quotas | 0.70 | FAQ pages for VM Scale Sets typically include concrete instance count limits, regional constraints, and other numeric behaviors; these are product-specific limits and edge cases beyond generic LLM knowledge. |
 | [Setting the upgrade policy mode](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-set-upgrade-policy) | configuration | 0.70 | Details how to configure upgrade policy (default manual, options Rolling/Automatic/Manual) in portal/CLI/ARM, including default behavior—specific configuration parameters. |
 | [Specialized image version](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/instance-specialized-image-version) | deployment | 0.70 | Describes creating scale sets from specialized image versions, including constraints (no cross-tenant Flexible) and behavior (retained computer names)—deployment-specific details. |
 | [Spot Placement Score](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/spot-placement-score) | decision-making | 0.70 | Describes Spot Placement Score, including inputs (up to eight regions, five VM sizes) and score categories (High/Low), enabling quantified decision-making for where to deploy Spot VMs. |

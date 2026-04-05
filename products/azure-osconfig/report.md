@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   integrations: Patterns for using OSConfig with Azure IoT to run custom commands,
     manage Linux networking, firewall, packages, hostnames, reboots, and report device/OS
@@ -29,13 +29,13 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 - **Total Pages**: 31
 - **Fetched**: 31
 - **Fetch Failed**: 0
-- **Classified**: 16
-- **Unclassified**: 15
+- **Classified**: 15
+- **Unclassified**: 16
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 31
+- **Updated Pages**: 1
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
 
@@ -45,11 +45,16 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 |------|-------|------------|
 | configuration | 2 | 6.5% |
 | integrations | 10 | 32.3% |
-| security | 3 | 9.7% |
+| security | 2 | 6.5% |
 | troubleshooting | 1 | 3.2% |
-| *(Unclassified)* | 15 | 48.4% |
+| *(Unclassified)* | 16 | 51.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc)
+  - Updated: 2026-03-13T08:12:00.000Z → 2026-03-24T00:57:00.000Z
 
 ## Classified Pages
 
@@ -60,7 +65,6 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 | [About CommandRunner](https://learn.microsoft.com/en-us/azure/osconfig/concept-commandrunner) | integrations | 0.70 | Concept article on CommandRunner feature; likely details command payload formats, twin property names, and execution semantics unique to OSConfig. |
 | [Custom config and reporting](https://learn.microsoft.com/en-us/azure/osconfig/howto-customconfigreport) | integrations | 0.70 | Describes CommandRunner and custom configuration/reporting; includes product-specific behaviors, property names, and trade-offs, plus versioned naming changes. |
 | [Example queries for reporting scenarios](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-useful-queries) | integrations | 0.70 | Provides concrete Azure IoT Hub query examples using Azure CLI, including query syntax and output formatting; these are product-specific integration patterns and parameter usages that go beyond generic knowledge. |
-| [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc) | security | 0.70 | Describes configuring Windows LAPS via Azure Arc and Azure Policy/Machine Configuration, including product-specific security behavior for local administrator password management and backup locations. This is concrete, product-specific security configuration rather than a generic overview. |
 | [Quickstart: How to configure security baselines for Windows Server](https://learn.microsoft.com/en-us/azure/osconfig/osconfig-how-to-configure-security-baselines) | security | 0.70 | How-to for deploying Windows Server 2025 security baselines via OSConfig; likely includes concrete security settings, scenario definitions, and PowerShell/WAC configuration details specific to this product. |
 | [Device info (OS, CPU, etc.)](https://learn.microsoft.com/en-us/azure/osconfig/howto-deviceinfo) | integrations | 0.65 | Reporting hardware/OS info via Azure IoT and OSConfig will involve specific reported property schemas and field names, including versioned naming changes. |
 | [Firewall](https://learn.microsoft.com/en-us/azure/osconfig/howto-firewall) | integrations | 0.65 | Firewall management via OSConfig likely documents specific twin properties, rule representations, and behavior that are product-specific integration details. |
@@ -89,5 +93,6 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 | [Quickstart: How to configure LAPS for Azure Arc](https://learn.microsoft.com/en-us/azure/osconfig/quickstart-laps-azure-arc) | 0.30 | Quickstart focuses on step-by-step setup of LAPS for Azure Arc on a test machine. It is primarily a tutorial without detailed configuration parameter tables, limits, or product-specific troubleshooting/decision matrices, so it does not meet the expert-knowledge thresholds for the defined sub-skill types. |
 | [What is SSH Posture Control for Linux?](https://learn.microsoft.com/en-us/azure/osconfig/overview-ssh-posture-control-mc) | 0.30 | Conceptual overview of SSH Posture Control for Linux; summary mentions capabilities and integration but not specific sshd parameters or configuration tables. |
 | [What is SSH Posture Control for Windows?](https://learn.microsoft.com/en-us/azure/osconfig/overviewsshposture-control-windows) | 0.30 | Conceptual overview of SSH Posture Control for Windows; mentions customizing sshd parameters but not detailed parameter lists or config values in the summary. |
+| [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc) | 0.20 | Page is an overview of LAPS for Azure Arc, describing what it is and high-level integration with Azure Policy and Machine Configuration. From the summary, it does not appear to include specific configuration parameters, limits, RBAC roles, or troubleshooting details; it is primarily conceptual/introductory content rather than expert-knowledge reference material. |
 | [Overview for Linux](https://learn.microsoft.com/en-us/azure/osconfig/overview-osconfig-for-iot) | 0.20 | High-level product overview of OSConfig for Linux; no detailed configuration parameters, limits, or error mappings. |
 | [Recommended docs by audience](https://learn.microsoft.com/en-us/azure/osconfig/concept-audience) | 0.10 | Audience/navigation helper that routes readers to other docs; no technical details or expert configuration content. |

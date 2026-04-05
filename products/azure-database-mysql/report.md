@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-04-05'
 category_descriptions:
+  decision-making: 'Guidance on MySQL Flexible Server planning: version lifecycle,
+    HA/BCDR, performance features, sizing and pricing, and assessing, choosing methods
+    for, and executing migrations to Azure.'
   deployment: 'Automating MySQL Flexible Server deployments and maintenance: CI/CD
     with Azure Pipelines/GitHub Actions, backups/geo-restore, major version upgrades,
     and scheduled/automated management tasks.'
   best-practices: Best practices for monitoring, performance tuning, troubleshooting,
     safe operations, BCDR, and end-to-end migration/optimization for Azure Database
     for MySQL Flexible Server
-  decision-making: Guidance on sizing, HA/BCDR, performance features, and planning/choosing
-    methods for migrating and upgrading MySQL workloads to Azure Database for MySQL
-    Flexible Server
   architecture-patterns: Patterns for connecting AKS to MySQL Flexible Server, designing
     backup/restore, data-in/out replication, high availability (zone-redundant), and
     read-replica-based scaling.
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Database for MySQL development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when deploying MySQL Flexible Server, tuning performance, configuring HA/networking,
-  securing access, or integrating apps, and other Azure Database for MySQL related
+  Use when planning MySQL Flexible Server HA/BCDR, CI/CD deployments, VNet/Private
+  Link, read replicas, or AKS connectivity, and other Azure Database for MySQL related
   development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb),
   Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
-use_when: Use when deploying MySQL Flexible Server, tuning performance, configuring
-  HA/networking, securing access, or integrating apps, and other Azure Database for
-  MySQL related development tasks.
+use_when: Use when planning MySQL Flexible Server HA/BCDR, CI/CD deployments, VNet/Private
+  Link, read replicas, or AKS connectivity, and other Azure Database for MySQL related
+  development tasks.
 confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
   Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Database
   (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance).
@@ -47,16 +47,16 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 ## Summary
 
-- **Total Pages**: 178
-- **Fetched**: 178
+- **Total Pages**: 179
+- **Fetched**: 179
 - **Fetch Failed**: 0
-- **Classified**: 115
+- **Classified**: 116
 - **Unclassified**: 63
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 177
+- **Updated Pages**: 5
+- **Unchanged**: 173
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -64,22 +64,35 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 2.8% |
-| best-practices | 14 | 7.9% |
-| configuration | 27 | 15.2% |
-| decision-making | 13 | 7.3% |
+| architecture-patterns | 4 | 2.2% |
+| best-practices | 14 | 7.8% |
+| configuration | 27 | 15.1% |
+| decision-making | 15 | 8.4% |
 | deployment | 8 | 4.5% |
 | integrations | 7 | 3.9% |
 | limits-quotas | 5 | 2.8% |
-| security | 23 | 12.9% |
+| security | 23 | 12.8% |
 | troubleshooting | 13 | 7.3% |
-| *(Unclassified)* | 63 | 35.4% |
+| *(Unclassified)* | 63 | 35.2% |
 
 ## Changes
 
 ### New Pages
 
+- [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026)
+
+### Updated Pages
+
+- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
+  - Updated: 2026-03-05T18:37:00.000Z → 2026-03-30T22:08:00.000Z
+- [Backup & restore concepts](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore)
+  - Updated: 2025-11-25T08:00:00.000Z → 2026-03-30T22:08:00.000Z
 - [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql)
+  - Updated: 2026-03-18T06:16:00.000Z → 2026-03-18T08:00:00.000Z
+- [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy)
+  - Updated: 2026-01-30T23:09:00.000Z → 2026-03-27T22:08:00.000Z
+- [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index)
+  - Updated: 2026-01-18T12:03:00.000Z → 2026-04-01T22:14:00.000Z
 
 ## Classified Pages
 
@@ -150,6 +163,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Service tiers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-service-tiers-storage) | decision-making | 0.70 | Service tiers article typically includes vCore/memory/storage characteristics per tier and guidance on when to choose Burstable, General Purpose, or Memory-Optimized, which is SKU/tier selection decision-making. |
 | [Troubleshooting best practices](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-troubleshooting-best-practices) | best-practices | 0.70 | Offers specific recommendations to keep databases running smoothly and design schemas for performance, tailored to Azure Database for MySQL Flexible Server. |
 | [Tune performance using the sys_schema](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-troubleshoot-sys-schema) | best-practices | 0.70 | Provides concrete queries and patterns using sys_schema to find performance problems and maintain databases, which are actionable, product-specific practices. |
+| [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy) | decision-making | 0.70 | A version support policy page typically includes concrete lifecycle details such as specific major/minor versions supported, GA and end-of-support dates, and upgrade timelines. These are time-bound, product-specific facts that an LLM will not reliably know from training and are used to decide when to upgrade or which version to choose, fitting decision-making. |
 | [Data-in replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-data-in-replication) | architecture-patterns | 0.68 | Covers Azure-specific replication pattern from external MySQL into Flexible Server, with configuration details and constraints. |
 | [Data-out replication](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-data-out-replication) | architecture-patterns | 0.68 | Describes replication from Flexible Server to external MySQL; includes pattern-specific configuration and limitations. |
 | [High availability FAQ](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability-faq) | decision-making | 0.66 | FAQ on HA options, billing, performance impact, and best practices; helps choose HA configuration with product-specific details. |
@@ -168,6 +182,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-mysql-github-actions) | deployment | 0.65 | Quickstart for using GitHub Actions to deploy database updates to Azure MySQL; contains workflow YAML and product-specific deployment steps, fitting deployment patterns for CI/CD. |
 | [Java](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/connect-java) | integrations | 0.65 | Covers Java/JDBC integration including Microsoft Entra and MySQL authentication modes, which involves product-specific connection properties and auth configuration. |
 | [Major version upgrade](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade) | deployment | 0.65 | Covers how to upgrade major MySQL versions in-place, including constraints and process; this is a product-specific upgrade/deployment operation. |
+| [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026) | decision-making | 0.65 | A specific monthly release notes page will contain detailed, time-specific information about new behaviors, fixes, and security patches, plus dates when new servers default to this version and how upgrades roll out. These details are not inferable from training data and help users decide when and how to upgrade, aligning best with decision-making. |
 | [Migrate data from MySQL on-premises to Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro) | decision-making | 0.65 | Migration guide provides planning and execution guidance, likely including scenario-based recommendations and trade-offs for migration approaches. |
 | [Minimal downtime migration with DMS (classic)](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-online) | decision-making | 0.65 | Focuses on minimal-downtime migration using data-in replication, guiding when to choose this approach to reduce application downtime. |
 | [Move servers between regions](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-move-regions) | deployment | 0.65 | Describes region move using geo-restore, including prerequisites like geo-redundancy and steps for migration; this is a deployment/migration pattern specific to the service. |
@@ -180,7 +195,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Accelerated logs](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-accelerated-logs) | decision-making | 0.64 | Describes when to enable accelerated logs and which compute tiers support it; likely includes tier support matrix and performance trade-offs. |
 | [Azure Advisor and Azure Monitor](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-business-continuity-advisor-monitor) | best-practices | 0.64 | Shows how to apply Monitor and Advisor specifically to MySQL Flexible Server for resilience; likely includes concrete recommendations and checks. |
 | [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-aks) | architecture-patterns | 0.64 | Covers patterns for using AKS with MySQL Flexible Server, including connectivity and possibly secret/config patterns unique to this integration. |
-| [Backup & restore concepts](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore) | architecture-patterns | 0.64 | Backup/restore behavior (frequency, retention, PITR rules) is specific to this service and informs continuity architecture. |
 | [Private access](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-networking-vnet) | security | 0.62 | Private VNet connectivity article likely includes subnet, DNS, and NSG requirements specific to this service, which are security/network configuration details. |
 | [Public access](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-networking-public) | security | 0.62 | Public access networking article likely details IP rules, allowed ranges, and secure exposure patterns specific to Azure MySQL. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/connect-azure-cli) | integrations | 0.60 | Describes az mysql flexible-server connect/execute commands, which are product-specific CLI APIs with parameters and usage patterns. |
@@ -223,7 +237,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Migrate data with MySQL Workbench](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-import-export) | 0.40 | Explains common import/export approaches with MySQL Workbench; appears more like conceptual/tutorial content without detailed product-specific limits or configs. |
 | [Migrate data with mysqldump or phpmyadmin](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore) | 0.40 | Conceptual explanation of dump/restore approaches; summary does not indicate detailed limits, configs, or troubleshooting mappings beyond generic tooling usage. |
 | [Test Plans](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/06-test-plans) | 0.40 | Test plans article is likely procedural and conceptual (what to test) rather than containing product-specific error codes, configs, or quantified criteria; not clearly in any expert-knowledge category. |
-| [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy) | 0.40 | Version policy is lifecycle/availability guidance; summary suggests timelines but not detailed matrices or numeric thresholds for decisions. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-arm-template) | 0.35 | ARM template quickstart; focused on a sample deployment, not exhaustive configuration or limits. |
 | [Azure Logic Apps](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/tutorial-logic-apps-with-mysql) | 0.35 | Quickstart for Logic Apps with MySQL connector; mostly step-by-step workflow creation, not deep configuration or troubleshooting content. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-bicep) | 0.35 | Bicep quickstart; likely includes a minimal template but not a comprehensive configuration reference or best-practices guidance. |
@@ -255,10 +268,12 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-cli) | 0.20 | CLI quickstart; shows basic az commands but not detailed configuration parameter tables or limits. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-stop-start-server-portal) | 0.20 | Primarily a step-by-step portal how-to for stopping and starting Azure Database for MySQL Flexible Server. It does not focus on numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Any product-specific details are procedural rather than structured expert knowledge as defined by the sub-skill types. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal) | 0.20 | Portal quickstart for server creation; mostly step-by-step UI instructions without deep config matrices. |
-| [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, the page is a conceptual/marketing-style overview of Fabric mirroring for Azure Database for MySQL, describing benefits and high-level capabilities without exposing specific limits, configuration parameters, error codes, or decision matrices. No clear evidence of expert-knowledge details such as quotas, config tables, or troubleshooting mappings. |
-| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | The page is described as a conceptual overview of zone-redundant high availability for Azure Database for MySQL Flexible Server. The summary focuses on what HA is, automatic failover, and general behavior, without evidence of specific numeric limits, configuration parameter tables, error codes, or decision matrices. It does not match the strict criteria for limits-quotas, architecture-patterns, best-practices, troubleshooting, decision-making, security, integrations, configuration, or deployment. |
+| [Backup & restore concepts](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore) | 0.20 | Characterized as concepts of backup and restore for Azure Database for MySQL Flexible Server. Summary discusses automatic backups, storage redundancy, and point-in-time restore at a high level, but does not show specific retention numbers, configuration parameters, or troubleshooting details. No qualifying limits, configuration tables, or decision guidance are evident. |
+| [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, this page is a conceptual overview of mirroring Azure Database for MySQL into Microsoft Fabric/OneLake and its benefits (BI, AI, data engineering). It does not indicate the presence of specific limits, configuration tables, error codes, or decision matrices. Without evidence of concrete parameters, quotas, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
+| [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | Described as a conceptual overview of high availability for Azure Database for MySQL Flexible Server. Summary focuses on what HA is, automatic failover, and general behavior, without exposing concrete limits, configuration tables, error codes, or decision matrices. Does not meet any sub-skill detection criteria for expert, configuration-level knowledge. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |
+| [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index) | 0.20 | This is an index/landing page for release notes, describing structure and navigation rather than listing specific fixes, features, or configuration details. It does not itself contain expert technical data like limits, error codes, or configuration parameters. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/sample-scripts-azure-cli) | 0.20 | Index of CLI sample scripts; navigation content without detailed parameters or limits in this page itself. |
 | [Servers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concept-servers) | 0.20 | High-level server concepts and guidelines; summary suggests conceptual overview without detailed limits, configs, or error mappings. |
 | [Summary](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/14-summary) | 0.20 | Summary article recaps previous migration content; unlikely to introduce new detailed limits, configs, or troubleshooting information. |
@@ -266,5 +281,4 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [What is Azure Database for MySQL?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview) | 0.20 | High-level service overview without detailed limits, configs, or error mappings. |
 | [Partners](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/partners-migration-mysql) | 0.10 | Partner listing for migration tools; mainly catalog/marketing content without detailed technical guidance, limits, or configs. |
 | [Previous features](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new-archive) | 0.10 | Archive of past features; navigation/marketing style, not deep technical guidance. |
-| [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index) | 0.10 | Release notes index page; only links to other notes, no technical details itself. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/whats-new) | 0.10 | What's new summary; mostly release/feature announcements without structured limits, configs, or troubleshooting content. |

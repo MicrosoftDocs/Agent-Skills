@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-05'
 category_descriptions:
   integrations: Patterns and APIs for creating/managing STAC collections/items, bulk
     ingesting data, generating SAS tokens, and integrating Planetary Computer Pro
@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 45
+- **Updated Pages**: 1
+- **Unchanged**: 44
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-planetary-computer-pro/azure-planetary-computer-pro.csv`
 
@@ -63,6 +63,11 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 | *(Unclassified)* | 13 | 28.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart)
+  - Updated: 2025-11-25T23:25:00.000Z → 2026-04-01T06:12:00.000Z
 
 ## Classified Pages
 
@@ -107,7 +112,6 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 |-----------|------------|--------|
 | [Delete a Geocatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/delete-geocatalog-resource) | 0.40 | Delete GeoCatalog via portal/REST and mentions troubleshooting; summary doesn’t clearly indicate detailed error-code mappings or config tables. |
 | [Deploy a GeoCatalog resource](https://learn.microsoft.com/en-us/azure/planetary-computer/deploy-geocatalog-resource) | 0.30 | Deployment how-to for a GeoCatalog via portal/REST; appears procedural without configuration tables or tier constraints. |
-| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | 0.30 | A quickstart on working with data cube data is likely a step-by-step tutorial. The description doesn’t indicate detailed configuration matrices, limits, or error-code-based troubleshooting; more likely basic usage instructions. |
 | [Ingestion overview](https://learn.microsoft.com/en-us/azure/planetary-computer/ingestion-overview) | 0.30 | Ingestion fundamentals overview with a diagram; conceptual description of ingestion pipeline rather than detailed configs or limits. |
 | [Service usage meters](https://learn.microsoft.com/en-us/azure/planetary-computer/service-usage-meters) | 0.30 | Explains usage meters and pricing model conceptually; summary doesn’t indicate concrete meter names, units, or tier tables. |
 | [Use the explorer](https://learn.microsoft.com/en-us/azure/planetary-computer/use-explorer) | 0.30 | Quickstart on using Explorer UI; likely procedural navigation without deep configuration or troubleshooting reference. |
@@ -118,3 +122,4 @@ confusable_not_for: Not for Azure Open Datasets (use azure-open-datasets), Azure
 | [What is Microsoft Planetary Computer Pro?](https://learn.microsoft.com/en-us/azure/planetary-computer/microsoft-planetary-computer-pro-overview) | 0.20 | High-level product overview of Planetary Computer Pro and GeoCatalog; no detailed limits, configs, or error mappings. |
 | [What's new in Microsoft Planetary Computer Pro](https://learn.microsoft.com/en-us/azure/planetary-computer/whats-new) | 0.20 | What's new/change log style summary; no concrete limits, configs, or troubleshooting details indicated. |
 | [STAC overview](https://learn.microsoft.com/en-us/azure/planetary-computer/stac-overview) | 0.10 | Overview of STAC and how it’s used; conceptual, not configuration- or error-focused. |
+| [Get Started with data cubes](https://learn.microsoft.com/en-us/azure/planetary-computer/data-cube-quickstart) | - | Quickstart for working with data cubes in Planetary Computer Pro; primarily a how-to/tutorial without detailed limits, configuration tables, error-code mappings, or other expert-only reference content. |

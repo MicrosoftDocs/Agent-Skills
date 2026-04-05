@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-05'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Data Box/Disk issues: validation, unlock
     tool, SMB/REST copy, upload errors, time sync, and using audit/logs to track and
     troubleshoot import/export orders.'
-  security: 'Security and compliance for Data Box: custom TLS certs, Customer Lockbox,
-    customer-managed keys in Key Vault, and applying Azure Policy and regulatory controls.'
+  security: 'Securing Azure Data Box: certificates, CMKs in Key Vault, Customer Lockbox,
+    built‑in protections, and applying Azure Policy (including regulatory controls)
+    to Data Box and Data Box Disk.'
   configuration: 'Configuring and operating Data Box/Heavy/Disk: cabling, system/network
     requirements, local UI/portal admin, SMB/NFS/NAS copy workflows, and setting blob
     access tiers (Hot/Cool/Archive).'
@@ -20,17 +21,17 @@ category_descriptions:
     data import/export.
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when handling Data Box/Disk orders, SMB/NFS copies, TLS certs/CMK
-  in Key Vault, or VHD-to-managed-disk imports, and other Azure Data Box related development
-  tasks. Not for Azure Import Export (use azure-import-export), Azure Stack Edge (use
-  azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure Files (use
-  azure-files).
-use_when: Use when handling Data Box/Disk orders, SMB/NFS copies, TLS certs/CMK in
-  Key Vault, or VHD-to-managed-disk imports, and other Azure Data Box related development
+  patterns. Use when handling Data Box/Disk orders, SMB/NFS/REST copies, Key Vault
+  CMKs, blob tiering, or VHD-to-managed-disk flows, and other Azure Data Box related
+  development tasks. Not for Azure Import Export (use azure-import-export), Azure
+  Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Blob Storage (use azure-blob-storage).
+use_when: Use when handling Data Box/Disk orders, SMB/NFS/REST copies, Key Vault CMKs,
+  blob tiering, or VHD-to-managed-disk flows, and other Azure Data Box related development
   tasks.
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
-  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
-  Files (use azure-files).
+  Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
+  Azure Blob Storage (use azure-blob-storage).
 ---
 # Azure Data Box Crawl Report
 
@@ -39,13 +40,13 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 - **Total Pages**: 79
 - **Fetched**: 79
 - **Fetch Failed**: 0
-- **Classified**: 48
-- **Unclassified**: 31
+- **Classified**: 49
+- **Unclassified**: 30
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 79
+- **Updated Pages**: 1
+- **Unchanged**: 78
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
@@ -57,11 +58,16 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | configuration | 16 | 20.3% |
 | integrations | 7 | 8.9% |
 | limits-quotas | 4 | 5.1% |
-| security | 6 | 7.6% |
+| security | 7 | 8.9% |
 | troubleshooting | 13 | 16.5% |
-| *(Unclassified)* | 31 | 39.2% |
+| *(Unclassified)* | 30 | 38.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Review security](https://learn.microsoft.com/en-us/azure/databox/data-box-security)
+  - Updated: 2025-11-06T08:00:00.000Z → 2026-03-30T11:11:00.000Z
 
 ## Classified Pages
 
@@ -99,6 +105,7 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [Transfer ACLs and metadata](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-file-acls-preservation) | best-practices | 0.70 | Describes exactly which ACLs, attributes, and timestamps are preserved and how to copy them with specific tools on Windows/Linux; this is product-specific behavior and usage guidance. |
 | [Transfer ACLs and metadata](https://learn.microsoft.com/en-us/azure/databox/data-box-file-acls-preservation) | best-practices | 0.70 | Explains exactly which ACLs, attributes, and timestamps are preserved and how to copy them with specific Windows/Linux tools, which are product-specific behavioral details. |
 | [What is Data Box Next Gen?](https://learn.microsoft.com/en-us/azure/databox/data-box-overview) | limits-quotas | 0.70 | Overview includes specific maximum usable storage capacities (120 TB, 525 TB), which are concrete product limits. |
+| [Review security](https://learn.microsoft.com/en-us/azure/databox/data-box-security) | security | 0.68 | The page is focused on product-specific security behavior for Azure Data Box (device, service, and data protection). Data Box security details such as how data is protected on the device, how access is controlled, and how to securely delete personal data are implementation-specific and not derivable from generic security knowledge. While it’s an overview, it contains concrete, product-bound security mechanisms and operational steps (for example, how to delete personal data from the device/service for GDPR) that qualify as expert knowledge about this service’s security model. |
 | [2 - Set up](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-deploy-set-up) | configuration | 0.65 | Includes hardware encryption support constraints (regions, SATA III requirement, no USB) and OS-specific steps; these are product-specific configuration requirements and constraints. |
 | [Manage via Azure portal](https://learn.microsoft.com/en-us/azure/databox/data-box-portal-ui-admin) | configuration | 0.65 | Portal admin guide for complex workflows and management tasks (manage orders, disks, status) implies product-specific configuration operations and states. |
 | [Using Commvault](https://learn.microsoft.com/en-us/azure/databox/migrate-commvault-data-box) | integrations | 0.65 | Describes integration scenarios between Commvault and Data Box; likely includes product-specific configuration patterns and constraints for this combination. |
@@ -127,7 +134,6 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | [Via data copy service](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-deploy-copy-data-via-copy-service) | 0.45 | Data copy service tutorial describes usage but summary does not indicate detailed configuration matrices or limits; appears more procedural. |
 | [2 - Set up](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-deploy-set-up) | 0.40 | Set-up tutorial (cabling, connecting, turning on); mostly hardware steps, not detailed configuration parameters or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-faq) | 0.40 | FAQ likely mixes general and specific info but is not organized as limits, configs, or troubleshooting; summary doesn’t show strong expert-knowledge patterns. |
-| [Review security](https://learn.microsoft.com/en-us/azure/databox/data-box-security) | 0.40 | Security overview describes features conceptually; summary doesn’t indicate concrete RBAC roles, parameters, or config tables. |
 | [Use self-managed shipping](https://learn.microsoft.com/en-us/azure/databox/data-box-portal-customer-managed-shipping) | 0.40 | Self-managed shipping workflow is mostly logistical; summary doesn’t indicate technical limits, configuration parameters, or troubleshooting content. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-faq) | 0.35 | FAQ likely mixes conceptual and minor specifics; summary does not indicate structured limits, configs, or troubleshooting mappings required for expert classification. |
 | [1 - Order](https://learn.microsoft.com/en-us/azure/databox/data-box-deploy-export-ordered) | 0.30 | Export order tutorial; primarily workflow-focused, no clear evidence of limits tables or config parameter references in summary. |

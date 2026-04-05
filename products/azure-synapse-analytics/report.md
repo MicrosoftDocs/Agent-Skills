@@ -1,8 +1,9 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
-  deployment: Deploying and managing Synapse workspaces and dedicated SQL pools with
-    ARM/Bicep, CI/CD, source control, restore points, and automated SQL compute operations.
+  deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
+    ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows,
+    and automated compute management.'
   security: 'Securing Synapse workspaces end-to-end: auth and RBAC, network isolation,
     private endpoints, encryption, data exfiltration, policies, and secure access
     to storage, SQL, Spark, and migration scenarios.'
@@ -19,8 +20,8 @@ category_descriptions:
     SQL/serverless/Spark pools, data warehouse migrations, table design, ELT/PolyBase
     loading, and workload management.
   troubleshooting: 'Diagnosing and fixing Synapse issues: workspace/tenant moves,
-    Spark jobs and libraries, SQL pool performance/connectivity, Synapse Link failures,
-    Studio/network/storage connectivity.'
+    Spark jobs and libraries, SQL pools and queries, Synapse Link, Studio/storage
+    connectivity, and common errors/timeouts.'
   integrations: Patterns and code to integrate Synapse (Spark, serverless, dedicated
     SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus),
     and external tools via connectors, REST, and T-SQL.
@@ -30,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Synapse Analytics development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL, Synapse
-  Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics related
-  development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data
-  Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics).
-use_when: Use when using Synapse workspaces, Spark pools, dedicated/serverless SQL,
-  Synapse Link, or ADLS/Cosmos DB integrations, and other Azure Synapse Analytics
-  related development tasks.
+  Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, Delta
+  Lake, or Synapse Link workloads, and other Azure Synapse Analytics related development
+  tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer
+  (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight
+  (use azure-hdinsight).
+use_when: Use when designing Synapse workspaces, Spark pools, dedicated/serverless
+  SQL, Delta Lake, or Synapse Link workloads, and other Azure Synapse Analytics related
+  development tasks.
 confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure Data
   Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics).
+  HDInsight (use azure-hdinsight).
 ---
 # Azure Synapse Analytics Crawl Report
 
@@ -54,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 446
+- **Updated Pages**: 4
+- **Unchanged**: 442
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -67,14 +68,25 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | best-practices | 55 | 12.3% |
 | configuration | 47 | 10.5% |
 | decision-making | 16 | 3.6% |
-| deployment | 10 | 2.2% |
+| deployment | 11 | 2.5% |
 | integrations | 33 | 7.4% |
-| limits-quotas | 7 | 1.6% |
+| limits-quotas | 6 | 1.3% |
 | security | 55 | 12.3% |
 | troubleshooting | 22 | 4.9% |
 | *(Unclassified)* | 184 | 41.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/metadata/overview)
+  - Updated: 2022-10-12T17:06:00.000Z → 2026-03-31T17:12:00.000Z
+- [Maintenance schedule](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/maintenance-scheduling)
+  - Updated: 2024-08-07T16:42:00.000Z → 2026-03-20T22:11:00.000Z
+- [Troubleshoot Spark job failures](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error)
+  - Updated: 2025-02-27T08:00:00.000Z → 2026-03-31T06:10:00.000Z
+- [Data management](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/data-management)
+  - Updated: 2025-09-25T17:11:00.000Z → 2026-03-20T22:11:00.000Z
 
 ## Classified Pages
 
@@ -131,7 +143,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Synapse workspace IP firewall rules](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-ip-firewall) | security | 0.80 | Firewall configuration is a security/ connectivity control; article explains specific settings and how to configure them for Synapse. |
 | [System and user-assigned managed identity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-service-identity) | security | 0.80 | Explains Synapse-specific behavior and configuration of managed identities, including how they interact with Synapse resources. |
 | [Transactions best practices](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-best-practices-transactions) | best-practices | 0.80 | Explicitly about optimizing transactional code and minimizing long rollbacks in dedicated SQL pools, with concrete product-specific recommendations and edge cases. |
-| [Troubleshoot Spark job failures](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error) | troubleshooting | 0.80 | Explains mapping of LIVY_JOB_STATE_DEAD and other error codes to underlying causes with guidance on resolving Spark job failures. |
 | [Troubleshoot serverless SQL pools](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/resources-self-help-sql-on-demand) | troubleshooting | 0.80 | Explicitly a self-help troubleshooting article for serverless SQL pool; such pages typically list specific error messages, causes, and resolutions unique to the product. |
 | [Connect to Azure Synapse workspace with private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-connect-to-workspace-with-private-links) | security | 0.78 | How-to for configuring private links/endpoints to Synapse workspaces; includes security-related network configuration. |
 | [Enable encryption - T-SQL](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-encryption-tde-tsql) | security | 0.78 | Documents T-SQL-based configuration of TDE in Synapse, including specific commands and options that are product-specific security settings. |
@@ -141,6 +152,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Set up Managed private endpoints to data sources](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/how-to-create-managed-private-endpoints) | security | 0.78 | Step-by-step configuration of managed private endpoints for secure data access; product-specific security connectivity details. |
 | [Statistics](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-statistics) | best-practices | 0.78 | Provides concrete recommendations and examples for statistics management tailored to Synapse dedicated SQL pools, including product-specific behaviors and patterns not covered by generic SQL optimization knowledge. |
 | [Synapse workspace Managed private endpoints](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) | security | 0.78 | How-to style security article for Synapse managed private endpoints; likely includes specific Synapse/Private Link configuration steps and parameters beyond generic concepts. |
+| [Troubleshoot Spark job failures](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error) | troubleshooting | 0.78 | The page focuses on interpreting and handling Livy-related Spark job failures in Synapse Analytics. It describes specific error codes/messages (e.g., LIVY_JOB_STATE_DEAD and its more detailed successors) and how to use logs and other diagnostics to determine root causes and resolutions, matching the symptom → cause → solution troubleshooting pattern. |
 | [Troubleshoot Synapse Studio](https://learn.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-studio) | troubleshooting | 0.78 | Troubleshooting guide focused on connectivity symptoms and what diagnostic info to collect for support; product-specific steps. |
 | [Move workspace to another tenant](https://learn.microsoft.com/en-us/azure/synapse-analytics/how-to-recover-workspace-after-tenant-move) | troubleshooting | 0.76 | Addresses a specific failure (403 after tenant move) with steps to restore access; symptom-to-solution troubleshooting content. |
 | [Provision and secure a linked service with Managed VNet](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/linked-service) | security | 0.76 | Describes securing linked services via private endpoints in Managed VNet; product-specific secure connectivity configuration. |
@@ -227,7 +239,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Load external data using a Managed Identity](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/tutorial-external-tables-using-managed-identity) | security | 0.70 | Focuses on using managed identity for ADLS Gen2 access; likely details identity configuration, roles, and connection options specific to Synapse. |
 | [Low Shuffle Merge on Delta Lake](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/low-shuffle-merge-for-apache-spark) | best-practices | 0.70 | Explains Low Shuffle Merge optimization for Delta tables; contains product-specific behavior and guidance on when and how to use this optimization. |
 | [Machine learning predictions](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-predict) | integrations | 0.70 | Describes using the PREDICT T-SQL function with ONNX models; includes function parameters and usage patterns that are specific integration/coding patterns for Synapse. |
-| [Maintenance schedule](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/maintenance-scheduling) | limits-quotas | 0.70 | Maintenance scheduling article specifies rules like primary/secondary windows within a seven-day period and separation constraints; these are concrete time-window constraints that function as product-specific limits. |
+| [Maintenance schedule](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/maintenance-scheduling) | deployment | 0.70 | Describes the maintenance scheduling feature for Synapse SQL pools, including constraints such as needing a primary and secondary maintenance window within a seven-day period and that each window must be on separate day ranges. These are product-specific deployment/operations constraints that affect when platform updates are applied, fitting the deployment category’s focus on platform-specific requirements and timing details. |
 | [Manage Compute](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/manage-compute-with-azure-functions) | deployment | 0.70 | Shows how to use Azure Functions and a service principal with specific role requirements to manage compute, a product-specific deployment/automation pattern. |
 | [Manage Notebook session packages](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-manage-session-packages) | configuration | 0.70 | Details session-level library behavior and limitations; product-specific configuration pattern for Spark sessions. |
 | [Monitor Apache Spark Applications metrics with Prometheus and Grafana](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/use-prometheus-grafana-to-monitor-apache-spark-application-level-metrics) | integrations | 0.70 | Covers deploying metrics solution to AKS and wiring Grafana dashboards; expected to include connector settings, scrape configs, and product-specific parameters. |
@@ -406,7 +418,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Monitor Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitor-synapse-analytics) | 0.40 | High-level monitoring overview; likely conceptual and procedural without detailed config tables or error mappings. |
 | [Monitor Synapse Link](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-monitor-synapse-link-sql-server-2022) | 0.40 | Monitoring how-to for Synapse Link; summary suggests UI-driven steps without explicit mention of metrics tables, limits, or diagnostic codes. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/overview-cognitive-services) | 0.40 | Overview of Foundry Tools and SynapseML; mostly conceptual description of capabilities and deprecation note. |
-| [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/metadata/overview) | 0.40 | Shared metadata model overview; conceptual explanation of engine interoperability, not detailed config or limits. |
 | [Perform user readiness and onboarding plan review](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-perform-user-readiness-and-onboarding-plan-review) | 0.40 | User readiness and onboarding guidance is mostly process and training oriented; not focused on technical configuration, limits, or troubleshooting. |
 | [Pipeline runs](https://learn.microsoft.com/en-us/azure/synapse-analytics/monitoring/how-to-monitor-pipeline-runs) | 0.40 | Monitoring pipeline runs via Studio; summary suggests UI usage rather than detailed metrics, limits, or diagnostic mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/quickstart-create-a-workload-classifier-portal) | 0.40 | Quickstart for creating a workload classifier via portal; mostly a guided example with specific values for a demo scenario, not a broad best-practices or configuration reference. |
@@ -508,6 +519,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Machine learning](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-machine-learning-concept) | 0.20 | Conceptual overview of ML capabilities; no detailed Synapse-specific configuration or troubleshooting. |
 | [Notebooks](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-notebook-concept) | 0.20 | Overview of notebooks and capabilities; high-level, not a configuration or troubleshooting reference. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/proof-of-concept-playbook-overview) | 0.20 | High-level overview of a proof-of-concept playbook; methodology and framing only, no concrete limits, configs, error codes, or quantified decision criteria. |
+| [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/metadata/overview) | 0.20 | Primarily a conceptual overview of the shared metadata model between Spark and serverless SQL in Synapse. The summary does not indicate detailed configuration tables, limits with exact values, error codes, or decision matrices. The mention of 1,024 columns appears as an isolated note rather than a structured limits/quotas section, and there is no evidence of broader expert-only configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-manageability-monitoring) | 0.20 | High-level overview page that mainly links to other manageability and monitoring articles; lacks detailed settings, limits, or error mappings. |
 | [Partner solutions](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/browse-partners) | 0.20 | Partner discovery page; primarily navigation/marketplace-style content, not technical reference. |
 | [Serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) | 0.20 | High-level overview of serverless SQL pool capabilities; no detailed limits, configuration tables, or best-practice specifics. |
@@ -522,7 +534,7 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Apache Spark overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-overview) | 0.10 | High-level Apache Spark overview and scenarios; conceptual, not configuration or troubleshooting focused. |
 | [Business intelligence](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/business-intelligence) | 0.10 | Marketing-style partner listing for BI tools; no technical settings, limits, or patterns. |
 | [Data integration](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/data-integration) | 0.10 | Partner listing for data integration tools; informational/marketing, not technical expert content. |
-| [Data management](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/data-management) | 0.10 | Partner listing for data management tools; no product-specific configuration or troubleshooting details. |
+| [Data management](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/data-management) | 0.10 | Partner listing/marketing-style page that enumerates third-party data management tools supporting Azure Synapse Analytics without product-specific limits, configuration parameters, error codes, or decision matrices. |
 | [Deep learning (deprecated)](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/concept-deep-learning) | 0.10 | Conceptual deep learning overview and deprecation note; no indication of detailed product-specific parameters. |
 | [Machine learning and AI](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/machine-learning-ai) | 0.10 | Partner listing for ML/AI tools; marketing content without technical parameters or patterns. |
 | [System integration](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/system-integration) | 0.10 | System integrator partner listing; no technical guidance or configuration details. |

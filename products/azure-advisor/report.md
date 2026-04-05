@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   configuration: 'Setting up and customizing Azure Advisor: creating alerts (portal,
     ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring
@@ -37,13 +37,13 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 - **Total Pages**: 33
 - **Fetched**: 33
 - **Fetch Failed**: 0
-- **Classified**: 26
-- **Unclassified**: 7
+- **Classified**: 25
+- **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 33
+- **Updated Pages**: 2
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
@@ -51,15 +51,22 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 10 | 30.3% |
+| best-practices | 9 | 27.3% |
 | configuration | 6 | 18.2% |
 | decision-making | 5 | 15.2% |
 | integrations | 2 | 6.1% |
 | limits-quotas | 1 | 3.0% |
 | security | 2 | 6.1% |
-| *(Unclassified)* | 7 | 21.2% |
+| *(Unclassified)* | 8 | 24.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view)
+  - Updated: 2025-11-12T23:03:00.000Z → 2026-03-23T08:00:00.000Z
+- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
+  - Updated: 2026-03-10T08:00:00.000Z → 2026-03-24T08:00:00.000Z
 
 ## Classified Pages
 
@@ -82,7 +89,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Dismiss and postpone](https://learn.microsoft.com/en-us/azure/advisor/advisor-dismiss-postpone) | security | 0.65 | Specifically notes Contributor or Owner permissions are required to dismiss/postpone recommendations and references Advisor permissions; this is product-specific RBAC behavior. |
 | [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations) | best-practices | 0.65 | Operational excellence recommendations are concrete DO/DON’T guidance for operations in Azure; product-specific best practices rather than generic theory. |
 | [Performance](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations) | best-practices | 0.65 | Full list of performance recommendations with specific actions to improve responsiveness; product-specific tuning guidance. |
-| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | best-practices | 0.65 | Page is a catalog of concrete, product-specific reliability recommendations from Azure Advisor (DOs and DON'Ts tied to particular Azure services and configurations). While the summary is high level, the full reference list typically includes detailed, actionable guidance unique to Advisor recommendations rather than generic reliability theory. |
 | [Use Azure Advisor resiliency reviews](https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews) | best-practices | 0.65 | Custom resiliency reviews curated by Microsoft account teams with tailored recommendations; encapsulates product-specific resiliency optimization practices. |
 | [Use Azure Well Architected Framework Assessments](https://learn.microsoft.com/en-us/azure/advisor/advisor-assessments) | best-practices | 0.65 | Advisor-specific implementation of Well-Architected Framework assessments with how recommendations surface per subscription/workload; product-specific optimization workflow. |
 | [Bulk remediation for recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-quick-fix) | best-practices | 0.60 | Explains Quick Fix bulk remediation behavior and constraints for specific recommendations; contains product-specific remediation patterns and gotchas. |
@@ -98,8 +104,9 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 |-----------|------------|--------|
 | [Advisor score](https://learn.microsoft.com/en-us/azure/advisor/advisor-score) | 0.40 | Explains Advisor score and its logic conceptually; no clear indication of numeric thresholds, config parameters, or decision matrices. |
 | [Advisor portal basics](https://learn.microsoft.com/en-us/azure/advisor/advisor-get-started) | 0.30 | Portal getting-started guide; mostly navigation and basic usage. The 24-hour note is a single timing detail but not a structured limits/config reference. |
+| [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations) | 0.30 | Page is a catalog/list of reliability recommendations in Azure Advisor. It does not indicate presence of numeric limits, configuration tables, or detailed troubleshooting mappings; it is primarily descriptive reference, not expert configuration or decision content. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/advisor/view-recommendations) | 0.25 | Describes viewing and filtering recommendations to reduce noise; appears to be UI guidance without detailed config parameters or limits. |
-| [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view) | 0.20 | Covers UI filtering and grouping of recommendations; mostly portal usage without detailed configuration tables or expert-only patterns. |
+| [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view) | 0.20 | Page describes how to use UI filters and grouping in Azure Advisor. It is a usage/navigation guide without product-specific limits, configuration parameter tables, error codes, or decision matrices. |
 | [Use Service Upgrade and Retirement recommendations](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations) | 0.20 | Page explains how to view and act on Azure Advisor service upgrade/retirement recommendations but does not include numeric limits, configuration parameter tables, error-code-based troubleshooting, or detailed decision matrices with quantified trade-offs. It is primarily conceptual and procedural guidance rather than expert configuration, limits, or troubleshooting content. |
 | [What is Azure Advisor?](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview) | 0.20 | High-level introduction and FAQ for Azure Advisor; primarily conceptual overview without detailed limits, configs, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/advisor/advisor-release-notes) | 0.10 | Release notes and change log content; not a stable expert-knowledge skill pattern for the agent. |

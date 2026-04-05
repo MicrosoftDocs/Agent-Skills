@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-04-05'
 category_descriptions:
   deployment: 'Using App Configuration in CI/CD: exporting/importing settings, creating
     snapshots, integrating with Azure Pipelines, GitHub Actions, and Helm/Kubernetes
@@ -7,14 +7,14 @@ category_descriptions:
   decision-making: Guidance on App Configuration client library support lifecycles
     and how to upgrade Spring Boot apps to use App Configuration library v6.
   integrations: Patterns and code samples for integrating Azure App Configuration
-    into .NET, Go, JavaScript, Python, AKS, and AI apps, including dynamic config,
-    feature flags, Key Vault, and REST API usage.
+    into apps (web, Functions, AKS, AI), using providers, dynamic refresh, feature
+    flags/filters, Key Vault, and REST APIs.
   configuration: 'Configuring App Configuration behavior: feature flags, filters,
     snapshots, geo-replication, soft delete, Kubernetes provider, emulator, dynamic
     refresh, and AI/chat completion settings.'
-  security: 'Securing App Configuration: encryption, network isolation, private endpoints,
-    managed identities, Entra ID/RBAC, HMAC/auth models for REST, and Azure Policy/compliance
-    controls.'
+  security: 'Securing App Configuration: encryption, keys, RBAC/Entra ID, managed
+    identities, private endpoints, network lockdown, REST auth (HMAC/Entra), roles/permissions,
+    and Azure Policy compliance.'
   limits-quotas: Limits on key-value retention, point-in-time reads, soft delete behavior,
     preview API lifecycles, and REST API throttling/quotas for Azure App Configuration.
   best-practices: 'Guidance on designing and using App Configuration efficiently:
@@ -29,12 +29,13 @@ skill_description: Expert knowledge for Azure App Configuration development incl
   refresh, snapshots, Key Vault integration, or App Configuration REST APIs, and other
   Azure App Configuration related development tasks. Not for Azure App Service (use
   azure-app-service), Azure Key Vault (use azure-key-vault), Azure Automation (use
-  azure-automation).
+  azure-automation), Azure Policy (use azure-policy).
 use_when: Use when using feature flags, dynamic refresh, snapshots, Key Vault integration,
   or App Configuration REST APIs, and other Azure App Configuration related development
   tasks.
 confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key Vault
-  (use azure-key-vault), Azure Automation (use azure-automation).
+  (use azure-key-vault), Azure Automation (use azure-automation), Azure Policy (use
+  azure-policy).
 ---
 # Azure App Configuration Crawl Report
 
@@ -48,8 +49,8 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 161
+- **Updated Pages**: 2
+- **Unchanged**: 159
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-app-configuration/azure-app-configuration.csv`
 
@@ -68,6 +69,13 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | *(Unclassified)* | 29 | 18.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider)
+  - Updated: 2025-10-30T11:11:00.000Z → 2026-04-02T06:24:00.000Z
+- [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac)
+  - Updated: 2026-03-17T06:14:00.000Z → 2026-04-01T08:46:00.000Z
 
 ## Classified Pages
 
@@ -91,6 +99,7 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Point-in-time key-values](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-point-time-snapshot) | limits-quotas | 0.80 | Explicitly states history retention periods by tier (7 days for Free/Developer, 30 days for Standard/Premium), which are concrete numerical limits unique to the service. |
 | [Versioning](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-versioning) | integrations | 0.80 | Specifies required api-version parameter, SemVer format, lack of negotiation, and error responses; concrete protocol semantics. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-best-practices) | best-practices | 0.78 | The page focuses on concrete usage patterns for Azure App Configuration (key groupings, key-value composition, bootstrap patterns, etc.). These are product-specific DO/DON'T recommendations and patterns that go beyond generic configuration advice, fitting the best-practices category. |
+| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.78 | Page is focused on using Microsoft Entra ID and Azure RBAC with Azure App Configuration. It likely lists specific built-in roles, their permissions, and how to assign them to principals (users, managed identities, service principals), which are product-specific security configuration details rather than generic concepts. |
 | [Authorization](https://learn.microsoft.com/en-us/azure/azure-app-configuration/rest-api-authorization-index) | security | 0.75 | Details how authorization depends on chosen authentication method and lists models; product-specific access control behavior. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) | integrations | 0.75 | Quickstart for Azure Functions using .NET configuration provider; includes function-specific configuration patterns and provider usage. |
 | [Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-go-console-app) | integrations | 0.75 | Quickstart for Go provider; includes binding to structs, composition, prefix trimming, and Key Vault resolution—provider-specific integration details. |
@@ -100,10 +109,10 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [Dynamic configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python) | integrations | 0.75 | Dynamic configuration tutorial; uses Python provider’s caching and refresh APIs, which are integration-specific. |
 | [Encrypt data using customer-managed keys](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-customer-managed-keys) | security | 0.75 | Describes using Key Vault keys for encryption; likely includes key configuration, identity requirements, and rotation behavior specific to App Configuration. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-dotnet-provider) | integrations | 0.75 | Reference for .NET provider library with managed loading and extra functionality; contains product-specific API patterns and options. |
-| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider) | integrations | 0.75 | Reference for Go provider library with managed loading and added functionality; contains product-specific integration patterns. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-javascript-provider) | integrations | 0.75 | Reference for JavaScript provider library with managed loading and extra features; product-specific integration details. |
 | [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-python-provider) | integrations | 0.75 | Reference for Python provider library with managed loading and added functionality; includes product-specific integration patterns. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-chat-completion-config) | configuration | 0.75 | Describes model selection, prompts, temperature, token limits, etc.; likely includes concrete configuration schema and parameter names for chat completion. |
+| [Feature reference](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reference-go-provider) | integrations | 0.74 | Reference page for the Go configuration provider that describes product-specific integration patterns, including provider APIs, options, and parameters for loading configurations and feature flags from Azure App Configuration. This is concrete SDK/config usage unique to this service, beyond generic Go or configuration concepts. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-dotnet-core-push-refresh) | integrations | 0.70 | Push refresh model using App Configuration events; involves client library options, refresh triggers, and configuration parameters unique to this integration. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-chat-completion-dotnet) | integrations | 0.70 | Quickstart wiring App Configuration chat settings into a .NET app; includes code and configuration patterns specific to this integration. |
 | [.NET](https://learn.microsoft.com/en-us/azure/azure-app-configuration/reload-key-vault-secrets-dotnet) | integrations | 0.70 | Covers automatic reload of secrets and certificates; typically includes provider configuration options, refresh intervals, and flags unique to this integration. |
@@ -153,7 +162,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Key
 | [JavaScript SDK](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-javascript) | integrations | 0.70 | Quickstart shows concrete SDK usage patterns and provider behavior (Map-like access, composition, Key Vault resolution) that are product-specific integration details beyond generic SDK knowledge. |
 | [Load Configuration from Azure Front Door](https://learn.microsoft.com/en-us/azure/azure-app-configuration/how-to-load-azure-front-door-configuration-provider) | integrations | 0.70 | Describes how client applications load configuration from Azure App Configuration through Azure Front Door, which implies SDK or configuration provider usage, specific connection parameters, and product-specific integration patterns beyond generic tutorials. |
 | [Managed identities](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-integrate-azure-managed-service-identity) | security | 0.70 | Details managed identity support in App Configuration and client libraries; includes product-specific authentication configuration patterns. |
-| [Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-enable-rbac) | security | 0.70 | Page is about using Microsoft Entra ID and Azure RBAC to authorize access to App Configuration stores; such content typically includes specific RBAC role names, scope details, and permission mappings that are product-specific security configuration knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-app-configuration-event) | integrations | 0.70 | Describes App Configuration events via Event Grid; typically includes event types, schema, and subscription configuration parameters, which are integration-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-soft-delete) | limits-quotas | 0.70 | Soft delete feature description for Standard and Premium tiers; typically includes retention duration and behavior constraints, which are numeric and tier-specific. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-app-configuration/howto-feature-filters) | configuration | 0.70 | How-to for feature filters; includes filter types, parameters, and configuration patterns specific to App Configuration feature management. |

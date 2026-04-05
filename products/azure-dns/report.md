@@ -1,9 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   integrations: Using Azure CLI, PowerShell, or portal to create/manage DNS zones
     and records, and to delegate subdomains or import/export DNS zone files for automation
     and integration.
+  limits-quotas: DNS record, zone, and query limits for public and private Azure DNS,
+    including quotas, scaling behaviors, and constraints when designing Private DNS
+    zones and usage.
   security: Protecting DNS zones/records from deletion, configuring DNS security policies
     and logging, using DNSSEC for public zones, and securing Azure DNS with RBAC,
     alerts, and built-in protections.
@@ -15,21 +18,18 @@ category_descriptions:
     errors.
   decision-making: Guidance for planning and executing migration of legacy Azure Private
     DNS zones to the new DNS zone model, including compatibility, steps, and considerations.
-  limits-quotas: Private DNS zone scale limits, record count and name constraints,
-    performance and subscription quotas, and design considerations when planning large
-    private DNS deployments
   architecture-patterns: Designing resilient private DNS architectures in Azure, including
     when to use centralized vs distributed DNS Private Resolvers and how to shard
     Private DNS zones for high availability.
 skill_description: Expert knowledge for Azure DNS development including troubleshooting,
   decision making, architecture & design patterns, limits & quotas, security, configuration,
   and integrations & coding patterns. Use when managing Azure DNS zones/records, DNSSEC,
-  Private DNS + Resolvers, reverse DNS, or large-scale zone design, and other Azure
+  Private DNS/resolvers, reverse DNS, or zone file import/export, and other Azure
   DNS related development tasks. Not for Azure Traffic Manager (use azure-traffic-manager),
   Azure Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
   Azure Virtual Network Manager (use azure-virtual-network-manager).
-use_when: Use when managing Azure DNS zones/records, DNSSEC, Private DNS + Resolvers,
-  reverse DNS, or large-scale zone design, and other Azure DNS related development
+use_when: Use when managing Azure DNS zones/records, DNSSEC, Private DNS/resolvers,
+  reverse DNS, or zone file import/export, and other Azure DNS related development
   tasks.
 confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), Azure
   Front Door (use azure-front-door), Azure Virtual Network (use azure-virtual-network),
@@ -42,13 +42,13 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 - **Total Pages**: 75
 - **Fetched**: 75
 - **Fetch Failed**: 0
-- **Classified**: 28
-- **Unclassified**: 47
+- **Classified**: 30
+- **Unclassified**: 45
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 75
+- **Updated Pages**: 2
+- **Unchanged**: 73
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
@@ -60,12 +60,19 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | configuration | 9 | 12.0% |
 | decision-making | 1 | 1.3% |
 | integrations | 7 | 9.3% |
-| limits-quotas | 1 | 1.3% |
+| limits-quotas | 3 | 4.0% |
 | security | 7 | 9.3% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 47 | 62.7% |
+| *(Unclassified)* | 45 | 60.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq)
+  - Updated: 2025-07-08T05:11:00Z → 2026-03-25T22:12:00Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private)
+  - Updated: 2025-07-08T05:11:00Z → 2026-04-01T17:25:00Z
 
 ## Classified Pages
 
@@ -80,6 +87,8 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export) | configuration | 0.70 | CLI-focused guide for zone file import/export; includes command parameters and options specific to Azure DNS. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/dns/private-dns-import-export-portal) | configuration | 0.70 | How-to for importing/exporting zone files; likely includes specific options, constraints, and parameter usage for Azure Private DNS zone file operations. |
 | [Endpoints and rulesets](https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets) | configuration | 0.70 | Describes properties and settings of inbound/outbound endpoints and rulesets; likely includes parameter names, allowed values, and examples, which are product-specific configuration details. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | limits-quotas | 0.70 | FAQ pages for Azure DNS typically include concrete, product-specific details such as maximum number of record sets per zone, record size limits, propagation/TTL behaviors, and other numeric constraints that are not obvious from general knowledge. These are expert, service-specific limits and behaviors rather than conceptual explanations. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private) | limits-quotas | 0.70 | Azure Private DNS FAQ content commonly covers specific constraints such as maximum number of virtual networks links, record limits, zone limits per subscription, and other numeric or tightly-scoped behavioral details. These are expert, product-specific limits and operational behaviors beyond generic DNS knowledge. |
 | [Monitor Azure DNS](https://learn.microsoft.com/en-us/azure/dns/monitor-dns) | configuration | 0.70 | Describes which metrics and logs are available for Azure DNS and how to collect/analyze them; monitoring data types and configuration steps are product-specific. |
 | [Private DNS zone migration guide](https://learn.microsoft.com/en-us/azure/dns/private-dns-migration-guide) | decision-making | 0.70 | Migration guide from legacy to GA resource model with a deadline; includes concrete migration steps and considerations, which are product-specific decision and upgrade guidance. |
 | [Protect private DNS zones and records](https://learn.microsoft.com/en-us/azure/dns/dns-protect-private-zones-recordsets) | security | 0.70 | Similar to public zones protection but for Private DNS; likely details product-specific mechanisms (locks, permissions) and how they apply to private zones. |
@@ -136,8 +145,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | [Create a public zone - PowerShell](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-powershell) | 0.30 | PowerShell quickstart for creating DNS zones/records; procedural, no detailed configuration reference or limits. |
 | [Create a public zone - Terraform](https://learn.microsoft.com/en-us/azure/dns/dns-get-started-terraform) | 0.30 | Terraform quickstart; shows basic resource creation, not deep configuration or troubleshooting content. |
 | [Create a public zone - portal](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-portal) | 0.30 | Step-by-step portal quickstart; shows basic creation of zone and record without config matrices or product-specific edge cases. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq) | 0.30 | FAQ page but summary suggests general Q&A; no indication of detailed error codes, limits, or config tables. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/dns/dns-faq-private) | 0.30 | FAQ for Private DNS; summary does not indicate detailed error codes, numeric limits, or configuration tables. |
 | [Host your domain in Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns) | 0.30 | Tutorial for hosting a domain in Azure DNS; step-by-step configuration without detailed parameter or limits reference. |
 | [Private DNS resiliency](https://learn.microsoft.com/en-us/azure/dns/private-dns-resiliency) | 0.30 | High-level resiliency description; summary mentions global replication but not specific numeric SLAs, limits, or configuration parameters. |
 | [Private DNS scenarios](https://learn.microsoft.com/en-us/azure/dns/private-dns-scenarios) | 0.30 | Scenario-based conceptual guidance; no indication of numeric thresholds, decision matrices, or config tables. |

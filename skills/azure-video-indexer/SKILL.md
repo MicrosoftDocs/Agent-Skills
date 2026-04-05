@@ -3,7 +3,7 @@ name: azure-video-indexer
 description: Expert knowledge for Azure AI Video Indexer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Video Indexer APIs/widgets, live camera indexing, custom speech/brand models, or Azure OpenAI integrations, and other Azure AI Video Indexer related development tasks. Not for Azure AI services (use microsoft-foundry-tools), Azure AI Vision (use azure-ai-vision).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Video Indexer Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L56-L60 | Guidance on architecting disaster recovery and failover for Azure Video Indexer, including redundancy, regional failover, backup, and high-availability design considerations. |
 | Limits & Quotas | L61-L68 | Service limits, supported languages/capabilities, and how to use live camera indexing features like event summaries and viewing live recordings. |
 | Security | L69-L81 | Securing Video Indexer: roles and access control, restricted/limited features, custom person models, NSGs/service tags, private endpoints, and firewall-protected storage best practices. |
-| Configuration | L82-L99 | Configuring Video Indexer: custom models (brand, language, speech), transcripts and speakers, indexing/live presets, regions, monitoring, and advanced upload/search settings. |
-| Integrations & Coding Patterns | L100-L123 | Using Video Indexer APIs, widgets, and Logic Apps/Power Automate to extract, use, or redact insights (faces, objects, text, audio, topics) and integrate with Azure OpenAI. |
-| Deployment | L124-L129 | Guides for deploying Azure Video Indexer using Arc extensions, ARM, and Bicep templates, including provisioning accounts and configuring infrastructure as code. |
+| Configuration | L82-L98 | Configuring Video Indexer: custom models (brand, language, speech), transcripts and speakers, indexing/live presets, regions, monitoring, and advanced upload/search settings. |
+| Integrations & Coding Patterns | L99-L121 | Using Video Indexer APIs, widgets, and Logic Apps/Power Automate to extract, use, or redact insights (faces, objects, text, audio, topics) and integrate with Azure OpenAI. |
+| Deployment | L122-L127 | Guides for deploying Azure Video Indexer using Arc extensions, ARM, and Bicep templates, including provisioning accounts and configuring infrastructure as code. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -88,7 +88,6 @@ This skill requires **network access** to fetch documentation content:
 | Edit speaker identities in Azure Video Indexer transcripts | https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-speakers |
 | Edit and manage transcriptions in Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/edit-transcript-lines-portal |
 | Configure indexing options for Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/indexing-configuration-guide |
-| Configure custom live AI insights presets in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog |
 | Configure areas of interest for live camera analysis | https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-area-interest |
 | Configure Azure Video Indexer real-time extensions | https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-extension |
 | Configure monitoring for Azure Video Indexer with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer |
@@ -110,7 +109,6 @@ This skill requires **network access** to fetch documentation content:
 | Get labels identification insights from Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/labels-identification-insight |
 | Integrate Video Indexer with Logic Apps and Power Automate | https://learn.microsoft.com/en-us/azure/azure-video-indexer/logic-apps-connector-arm-accounts |
 | Use named entities extraction insights in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/named-entities-insight |
-| Access object detection insights from Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/object-detection-insight |
 | Use observed people and matched faces insights in Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/observed-matched-people-insight |
 | Enable featured clothing insights for observed people | https://learn.microsoft.com/en-us/azure/azure-video-indexer/observed-people-featured-clothing |
 | Get OCR insights from Azure Video Indexer | https://learn.microsoft.com/en-us/azure/azure-video-indexer/ocr-insight |

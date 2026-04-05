@@ -1,9 +1,9 @@
 ---
 name: azure-data-api-builder
-description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining DAB entities, securing Entra ID/JWT access, exposing REST/GraphQL, or deploying on Azure, and other Azure Data Api Builder related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure API Management (use azure-api-management), Azure SQL Database (use azure-sql-database).
+description: Expert knowledge for Azure Data Api Builder development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when defining DAB entities over SQL/Cosmos, exposing REST/GraphQL, securing auth/RLS, or deploying via Docker/Azure, and other Azure Data Api Builder related development tasks. Not for Azure API Management (use azure-api-management), Azure Functions (use azure-functions), Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Api Builder Skill
@@ -24,123 +24,128 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L36-L40 | FAQ-style fixes for common Data API builder problems: config and connection errors, auth/authorization issues, deployment/runtime failures, and tips to diagnose and resolve them. |
-| Best Practices | L41-L47 | Configuring DAB for reliability and performance, securing and connecting it to data sources, and adding semantic metadata to SQL MCP entities for AI consumption. |
-| Decision Making | L48-L52 | Guidance on selecting Azure hosting options for Data API builder, comparing services (e.g., App Service, Functions, Container Apps) and trade-offs like cost, scalability, and management. |
-| Limits & Quotas | L53-L59 | Configuring SQL command timeouts and controlling response sizes in Data API builder using GraphQL `first` and REST `$first` pagination limits. |
-| Security | L60-L71 | Configuring authentication/authorization for DAB: roles/permissions, Entra ID, EasyAuth, custom JWT, simulator auth, SQL row-level security, and SQL MCP Server auth. |
-| Configuration | L72-L124 | Configuring DAB: CLI-based config management, entities and data sources, caching, secrets/env configs, OpenAPI/GraphQL, logging/telemetry, health, and provider-specific settings. |
-| Integrations & Coding Patterns | L125-L137 | Using DAB from code/CLI: exporting GraphQL schemas, starting the runtime, shaping/filtering REST/GraphQL responses, controlling upserts and Location headers, and SQL MCP tools for AI agents. |
-| Deployment | L138-L146 | Deploying and running Data API builder and SQL MCP Server on Azure (Container Apps/Instances, Cosmos DB, Azure SQL, AZD/CLI), plus platform support, local dev, and Azure AI Foundry integration. |
+| Troubleshooting | L36-L47 | Diagnosing and fixing DAB issues: config/CLI errors, SQL/Cosmos/MySQL/Postgres connection or query problems, GraphQL schema/auth, REST routing, and CORS/endpoint failures. |
+| Best Practices | L48-L54 | Configuring Data API builder for reliability and performance, securing endpoints and auth, and adding semantic descriptions/metadata to SQL MCP entities for better AI integration. |
+| Decision Making | L55-L60 | Guidance on where and how to deploy Data API builder, plus feature-by-feature comparisons and limitations across supported databases. |
+| Limits & Quotas | L61-L68 | Configuring SQL timeouts, setting REST/GraphQL pagination limits, and understanding database-specific capabilities and constraints in Data API builder. |
+| Security | L69-L82 | Configuring auth and security for DAB: JWT/Entra/EasyAuth/Simulator/anonymous, OBO SQL access, row-level security and policies, and SQL MCP Server authentication. |
+| Configuration | L83-L128 | Configuring Data API builder: CLI-based config, entities and autoentities, data sources (SQL/Cosmos), REST/GraphQL exposure, caching, security/secrets, logging/telemetry, and MCP SQL tools. |
+| Integrations & Coding Patterns | L129-L142 | GraphQL/REST usage patterns in DAB: exporting schemas, transactional mutations, pagination, filtering, sorting, and shaping/projecting fields for API responses. |
+| Deployment | L143-L151 | Deploying and running Data API builder or SQL MCP Server using Docker, source builds, and Azure services (Container Apps, Container Instances, AKS) including setup and configuration. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Resolve common issues with Data API builder (FAQ) | https://learn.microsoft.com/en-us/azure/data-api-builder/faq |
+| Validate DAB configuration and interpret CLI exit codes | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-validate |
+| Troubleshoot Azure Cosmos DB issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/cosmos |
+| Troubleshoot GraphQL schema and authorization in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/graphql |
+| Diagnose and fix SQL MCP Server issues in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mcp |
+| Troubleshoot SQL Server issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mssql |
+| Troubleshoot MySQL issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/mysql |
+| Troubleshoot PostgreSQL issues in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/postgresql |
+| Troubleshoot REST endpoint and CORS issues in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/troubleshooting/rest |
 
 ### Best Practices
 | Topic | URL |
 |-------|-----|
-| Apply configuration best practices for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/best-practices-configuration |
-| Apply security and connectivity best practices for DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/best-practices-security |
-| Add semantic descriptions to SQL MCP entities for AI | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-add-descriptions |
+| Apply configuration best practices in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/best-practices |
+| Apply security best practices for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/best-practices |
+| Add semantic descriptions to SQL MCP Server entities | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-add-descriptions |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose Azure hosting options for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/hosting-options |
+| Choose a deployment option for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/ |
+| Compare Data API builder feature availability by database | https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Configure SQL Server command timeout in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/configure-timeout |
-| Control GraphQL page size with first in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-graphql |
-| Limit REST page size with $first in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-rest |
+| Configure SQL command timeouts for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/timeout |
+| Limit GraphQL page size with first in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-graphql |
+| Control REST page size with $first in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/first-rest |
+| Database-specific feature requirements for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/reference-database-specific-features |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure roles and permissions for authorization in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authorization |
-| Use Azure App Service EasyAuth with Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-authenticate-app-service |
-| Configure custom JWT authentication providers in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-authenticate-custom |
-| Configure Microsoft Entra ID authentication for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-authenticate-entra |
-| Use Simulator authentication for local DAB permission testing | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-authenticate-simulator |
-| Configure database policies for row-level filtering in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/how-to-configure-database-policies |
+| Select and configure authentication models in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/ |
+| Configure custom JWT providers for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-custom |
+| Configure Azure App Service EasyAuth with Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-easy-auth |
+| Configure Microsoft Entra ID auth for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-entra |
+| Configure On-Behalf-Of authentication for DAB SQL access | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-on-behalf-of |
+| Use Simulator authentication for local DAB testing | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-simulator |
+| Configure Unauthenticated provider and anonymous role in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authenticate-unauthenticated |
+| Configure database policies for row-level filtering in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/database-policies |
 | Implement SQL row-level security with DAB session context | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/row-level-security |
 | Configure authentication for SQL MCP Server and database | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-configure-authentication |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Use Data API builder CLI commands to manage configs | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/ |
-| Add entities to Data API builder configuration with CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add |
-| Configure Data API builder runtime and data source via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure |
-| Initialize Data API builder configuration files with CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init |
-| Update Data API builder entity definitions with CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update |
-| Validate Data API builder configuration files in CI/CD | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-validate |
-| Configure OpenAPI and Swagger for DAB REST APIs | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/openapi |
+| Use DAB CLI commands to manage configuration and runtime | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/ |
+| Add entity definitions using DAB CLI dab add | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add |
+| Configure DAB telemetry with OpenTelemetry and App Insights | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add-telemetry |
+| Create and manage autoentities via dab auto-config | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config |
+| Simulate autoentities matches with dab auto-config-simulate | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-auto-config-simulate |
+| Configure DAB runtime and data source via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure |
+| Initialize Data API builder config with dab init | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init |
+| Update DAB entity configuration with dab update | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update |
 | Control Data API builder caching via HTTP headers | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/http-headers |
-| Configure internal level 1 cache in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-1 |
-| Configure external Redis level 2 cache in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2 |
-| Load secrets from Azure Key Vault with @akv in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function |
-| Reference environment variables with @env in DAB config | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/env-function |
-| Use environment-specific config files in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/environments |
-| Configure multiple data sources and hybrid endpoints in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/multi-data-source |
-| Configure entity relationships for GraphQL in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/relationships |
-| Expose stored procedures as endpoints in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/stored-procedures |
-| Expose database views as DAB REST/GraphQL endpoints | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/views |
-| Configure Azure Application Insights monitoring for DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/application-insights |
-| Configure and use the /health endpoint in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/health-checks |
-| Configure Azure Log Analytics integration for DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-analytics |
-| Set filtered log levels in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-levels |
-| Enable OpenTelemetry tracing and metrics in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/open-telemetry |
-| Full configuration schema for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/ |
-| Reference schema for Data API builder configuration file | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/ |
-| Configure Data API builder data source section | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source |
+| Configure Redis-based level 2 cache in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2 |
+| Use @akv function with Azure Key Vault in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function |
+| Use auto configuration patterns in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/auto-config |
+| Use @env function for DAB configuration secrets | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/env-function |
+| Manage DAB configuration by environment variants | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/environments |
+| Configure multiple data sources for hybrid DAB endpoints | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/multi-config |
+| Configure Azure Cosmos DB for NoSQL with DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/set-up-cosmosdb |
+| Configure GraphQL aggregation and groupBy in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/aggregate-data |
+| Configure GraphQL entity relationships in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/relationships |
+| Expose stored procedures as GraphQL operations in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/stored-procedures |
+| Expose database views as GraphQL types in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/views |
+| Configure Azure Application Insights for DAB monitoring | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/application-insights |
+| Configure health checks and /health endpoint in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/health-checks |
+| Configure Azure Log Analytics for DAB logging | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-analytics |
+| Configure Data API builder logging levels and filters | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-levels |
+| Set up OpenTelemetry tracing and metrics in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/open-telemetry |
+| Configure If-Match header for DAB upserts | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/http-if-match |
+| Understand Location header behavior in DAB REST | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/http-location |
+| Configure OpenAPI and Swagger UI for DAB REST | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/openapi |
+| Expose stored procedures as REST endpoints in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/stored-procedures |
+| Expose database views as REST endpoints in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/views |
+| Configure role inheritance in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/role-inheritance |
+| Configure full Data API builder JSON schema | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/ |
+| Configure full Data API builder JSON schema | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/ |
+| Configure Data API builder autoentities rules | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/autoentities |
+| Configure Data API builder data source settings | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source |
 | Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure entities section in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
+| Configure Data API builder entity definitions | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities |
+| Configure runtime section of Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
 | Configure Data API builder runtime behavior | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure Data API builder runtime behavior | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure runtime settings for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure Data API builder runtime behavior | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure Data API builder runtime behavior | https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime |
-| Configure DAB for Azure Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/data-api-builder/how-to/set-up-cosmosdb |
-| Configure stdio transport mode for SQL MCP Server | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/stdio-transport |
+| Use SQL MCP Server DML tools for CRUD operations | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools |
+| Configure custom MCP tools for stored procedures in SQL MCP Server | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/how-to-configure-custom-tools |
+| Run SQL MCP Server in stdio transport mode | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/stdio-transport |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
 | Export GraphQL schemas using DAB CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-export |
-| Start Data API builder runtime via CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-start |
-| Control upsert behavior with If-Match in DAB REST | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/http-if-match |
-| Use Location header for created resources in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/http-location |
-| Use GraphQL filter argument in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/filter-graphql |
-| Use $filter in REST queries for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/filter-rest |
-| Shape REST and GraphQL payloads with select | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-graphql |
-| Project REST responses with $select in Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-rest |
-| Use SQL MCP Server DML tools for AI agents | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/data-manipulation-language-tools |
+| Execute multiple GraphQL mutations transactionally in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/concept/graphql/multiple-mutations |
+| Use after cursors for GraphQL pagination in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/after-graphql |
+| Implement cursor pagination with $after in DAB REST | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/after-rest |
+| Filter GraphQL queries with DAB-specific operators | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/filter-graphql |
+| Filter REST queries with $filter in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/filter-rest |
+| Sort GraphQL results with orderBy in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/orderby-graphql |
+| Sort REST results with $orderby in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/orderby-rest |
+| Shape GraphQL selections and internal columns in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-graphql |
+| Use $select to project REST fields in DAB | https://learn.microsoft.com/en-us/azure/data-api-builder/keywords/select-rest |
 
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Use the pre-deployment checklist for Data API builder | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/checklist |
-| Deploy Data API builder to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/how-to-publish-container-apps |
-| Deploy Data API builder to Azure Container Instances | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/how-to-publish-container-instances |
-| Review Data API builder feature availability by platform | https://learn.microsoft.com/en-us/azure/data-api-builder/feature-availability |
-| Deploy Data API builder with Azure SQL using AZD | https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/azure-sql |
-| Deploy Data API builder to Container Apps using Azure CLI | https://learn.microsoft.com/en-us/azure/data-api-builder/tutorial-deploy-container-app-cli |
+| Deploy Data API builder to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-container-apps |
+| Deploy Data API builder to Azure Container Instances | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-container-instances |
+| Deploy Data API builder to Azure Kubernetes Service | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/azure-kubernetes-service |
+| Run Data API builder in a Docker container | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/local-container |
+| Build and run Data API builder from source | https://learn.microsoft.com/en-us/azure/data-api-builder/deployment/run-from-source |
+| Deploy SQL MCP Server to Azure Container Apps | https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-azure-container-apps |

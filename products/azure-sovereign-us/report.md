@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   security: 'Security and compliance for Azure Government: FedRAMP/DoD scope, IL5
     isolation, TIC, secure configuration, identity/Entra auth, naming to avoid data
@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Arc (use azure-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 40
+- **Updated Pages**: 1
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sovereign-us/azure-sovereign-us.csv`
 
@@ -60,6 +60,11 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Arc (use azure-
 | *(Unclassified)* | 9 | 22.5% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap)
+  - Updated: 2026-03-05T23:11:00.000Z → 2026-04-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -108,5 +113,5 @@ confusable_not_for: Not for Azure Local (use azure-local), Azure Arc (use azure-
 | [Azure Government portal](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-portal) | 0.30 | Quickstart for connecting via portal; mostly step-by-step UI usage without detailed configuration matrices or product-specific constraints. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-ps) | 0.30 | Quickstart for connecting with PowerShell; procedural steps rather than deep configuration options or expert-only details. |
 | [Visual Studio](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-connect-vs) | 0.30 | Quickstart for connecting with Visual Studio; focuses on basic connection steps, not advanced configuration or constraints. |
-| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by government cloud and authorization level; no detailed limits, configuration parameters, error codes, or decision matrices with quantified criteria. |
+| [Azure Government product General Availability](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-product-roadmap) | 0.20 | Roadmap/availability overview by government cloud and authorization level; does not provide numeric limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. Primarily high-level product availability information rather than detailed expert configuration or troubleshooting content. |
 | [What is Azure Government?](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome) | 0.20 | High-level marketing/overview of Azure Government capabilities and compliance; no concrete limits, configs, or error mappings. |

@@ -1,9 +1,9 @@
 ---
 name: azure-data-factory
-description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ADF pipelines with IRs, data flows, CI/CD, secure networking/Key Vault, or SAP/SSIS migrations, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Data Factory development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing ADF pipelines, mapping data flows, SHIR/SSIS IR, SAP CDC, or CI/CD deployments, and other Azure Data Factory related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Databricks (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure Data Explorer (use azure-data-explorer).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-19"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Factory Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L90 | Diagnosing and fixing ADF issues: connector and format errors, pipeline/orchestration and data flow failures, CI/CD and Studio problems, SHIR/SSIS IR troubleshooting, and performance/debug guidance. |
-| Best Practices | L91-L116 | Performance, reliability, and migration best practices for ADF: tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors, DataOps/BCDR, SAP CDC, and common migration patterns. |
-| Decision Making | L117-L138 | Guidance on ADF cost planning, runtimes and compute choices, connector upgrades, SAP/SSIS/Synapse/Fabric migrations, and when to use Workflow Orchestration Manager or Enterprise SSIS IR. |
-| Architecture & Design Patterns | L139-L149 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
-| Limits & Quotas | L150-L155 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
-| Security | L156-L183 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
-| Configuration | L184-L319 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
-| Integrations & Coding Patterns | L320-L503 | Using ADF with external systems: connector how-tos, copy/transform patterns, SSIS/Databricks/Synapse/ML integration, REST/webhooks, SDK usage, and pipeline templates for common ETL scenarios. |
-| Deployment | L504-L520 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
+| Best Practices | L91-L115 | Performance, reliability, and migration best practices for ADF: tuning data flows/IRs, optimizing copy/source/sink, handling schema drift/errors, DataOps/BCDR, SAP CDC, and common migration patterns. |
+| Decision Making | L116-L136 | Guidance on ADF architecture, runtimes, connectors, costs, and migration/modernization (SSIS, Synapse, Fabric, data lakes/warehouses), including capacity planning and upgrade strategies. |
+| Architecture & Design Patterns | L137-L147 | Patterns and architectures for ADF pipelines: efficient mapping data flows, metadata‑driven copy at scale, SSIS IR with SQL/MI/VNet, Cosmos DB migration, and SAP CDC design. |
+| Limits & Quotas | L148-L152 | Info on ADF connector lifecycle stages and timelines, plus how reservation discounts work for Mapping Data Flows and how they affect cost and capacity planning |
+| Security | L153-L179 | Securing Data Factory with identity, encryption, Key Vault, network isolation (Private Link, managed VNets, private endpoints), firewall rules, policies, and secure runtimes/SQL access. |
+| Configuration | L180-L308 | Configuring ADF and integration runtimes (Azure, self-hosted, SSIS, Airflow), datasets, activities, data flows, triggers, formats, CDC, monitoring, logging, networking, and parameters. |
+| Integrations & Coding Patterns | L309-L490 | How to connect ADF to many data sources/targets, use connectors and mapping data flow functions, orchestrate SSIS/Databricks/Synapse/ML, and apply solution templates for common ETL patterns. |
+| Deployment | L491-L505 | CI/CD and deployment for ADF and Workflow Orchestration Manager: ARM/linked templates, Azure DevOps pipelines, hotfix flows, pre/post scripts, and integration runtime install/containerization |
 
 ### Troubleshooting
 | Topic | URL |
@@ -92,7 +92,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Apply DataOps practices to Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/apply-dataops |
-| Use automatic connector upgrades in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/automatic-connector-upgrade |
 | Use column patterns in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-column-pattern |
 | Reuse logic with flowlets in mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-flowlet |
 | Tune mapping data flow performance in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-performance |
@@ -117,11 +116,10 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Estimate costs with Workflow Orchestration Manager pricing | https://learn.microsoft.com/en-us/azure/data-factory/airflow-pricing |
 | Interpret pricing examples for ADF integration runtimes | https://learn.microsoft.com/en-us/azure/data-factory/better-understand-different-integration-runtime-charges |
 | Choose the right integration runtime architecture | https://learn.microsoft.com/en-us/azure/data-factory/choose-the-right-integration-runtime-configuration |
 | Choose compute environments for Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/compute-linked-services |
-| Decide when to use Workflow Orchestration Manager | https://learn.microsoft.com/en-us/azure/data-factory/concepts-workflow-orchestration-manager |
+| Choose Azure Data Factory connector release stages | https://learn.microsoft.com/en-us/azure/data-factory/connector-release-stages-and-timelines |
 | Use connector upgrade advisor for ADF and Synapse | https://learn.microsoft.com/en-us/azure/data-factory/connector-upgrade-advisor |
 | Plan and execute Azure Data Factory connector upgrades | https://learn.microsoft.com/en-us/azure/data-factory/connector-upgrade-guidance |
 | Buy and use ADF data flow reserved capacity | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-reserved-capacity-overview |
@@ -150,7 +148,6 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand connector release stages and timelines in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-release-stages-and-timelines |
 | Understand reservation discounts for ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-understand-reservation-charges |
 
 ### Security
@@ -165,7 +162,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure managed identities for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/data-factory-service-identity |
 | Security infrastructure and data movement in ADF | https://learn.microsoft.com/en-us/azure/data-factory/data-movement-security-considerations |
 | Enable Microsoft Entra authentication for Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/enable-aad-authentication-azure-ssis-ir |
-| Use Azure Key Vault as secrets backend for Airflow | https://learn.microsoft.com/en-us/azure/data-factory/enable-azure-key-vault |
 | Enable customer-managed keys (BYOK) for ADF encryption | https://learn.microsoft.com/en-us/azure/data-factory/enable-customer-managed-key |
 | Encrypt on-premises credentials for self-hosted IR | https://learn.microsoft.com/en-us/azure/data-factory/encrypt-credentials-self-hosted-integration-runtime |
 | Access secured Purview from Data Factory via private endpoints | https://learn.microsoft.com/en-us/azure/data-factory/how-to-access-secured-purview-account |
@@ -184,9 +180,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Reference supported Apache Airflow configurations in ADF | https://learn.microsoft.com/en-us/azure/data-factory/airflow-configurations |
-| Retrieve IP address of Workflow Orchestration Manager cluster | https://learn.microsoft.com/en-us/azure/data-factory/airflow-get-ip-airflow-cluster |
-| Install private Python packages in Airflow runtime | https://learn.microsoft.com/en-us/azure/data-factory/airflow-install-private-package |
 | Define and use global parameters in ADF | https://learn.microsoft.com/en-us/azure/data-factory/author-global-parameters |
 | Use the Azure Data Factory management hub | https://learn.microsoft.com/en-us/azure/data-factory/author-management-hub |
 | Configure express virtual network injection for Azure-SSIS integration runtime | https://learn.microsoft.com/en-us/azure/data-factory/azure-ssis-integration-runtime-express-virtual-network-injection |
@@ -224,7 +217,6 @@ This skill requires **network access** to fetch documentation content:
 | Preserve metadata and ACLs in Copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-preserve-metadata |
 | Configure schema and data type mapping in Copy activity | https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping |
 | Use Copy Data tool for guided ingestion | https://learn.microsoft.com/en-us/azure/data-factory/copy-data-tool |
-| Configure an Apache Airflow environment in ADF | https://learn.microsoft.com/en-us/azure/data-factory/create-airflow-environment |
 | Create and configure Azure integration runtime for Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/create-azure-integration-runtime |
 | Provision Azure-SSIS integration runtime in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime |
 | Create Azure-SSIS integration runtime via Azure portal | https://learn.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime-portal |
@@ -260,7 +252,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Window transformation in ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window |
 | Deactivate activities in Azure Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/deactivate-activity |
 | Configure Delete activity for file cleanup | https://learn.microsoft.com/en-us/azure/data-factory/delete-activity |
-| Configure diagnostics logs and metrics for Airflow IR | https://learn.microsoft.com/en-us/azure/data-factory/diagnostic-logs-and-metrics-for-workflow-orchestration-manager |
 | Configure Avro format in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/format-avro |
 | Configure Binary format handling in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/format-binary |
 | Configure Common Data Model format in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/format-common-data-model |
@@ -290,7 +281,6 @@ This skill requires **network access** to fetch documentation content:
 | Use trigger metadata parameters in ADF pipelines | https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-trigger-parameterization |
 | Join Azure-SSIS integration runtime to a virtual network via PowerShell | https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network-powershell |
 | Join Azure-SSIS integration runtime to a virtual network via portal | https://learn.microsoft.com/en-us/azure/data-factory/join-azure-ssis-integration-runtime-virtual-network-ui |
-| Configure Kubernetes secret for private container images | https://learn.microsoft.com/en-us/azure/data-factory/kubernetes-secret-pull-image-from-private-container-registry |
 | Reconfigure Azure-SSIS integration runtime settings in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/manage-azure-ssis-integration-runtime |
 | Configure diagnostic settings and Log Analytics for ADF | https://learn.microsoft.com/en-us/azure/data-factory/monitor-configure-diagnostics |
 | Monitor Azure Data Factory with Azure Monitor | https://learn.microsoft.com/en-us/azure/data-factory/monitor-data-factory |
@@ -305,7 +295,6 @@ This skill requires **network access** to fetch documentation content:
 | Apply naming rules for Azure Data Factory artifacts | https://learn.microsoft.com/en-us/azure/data-factory/naming-rules |
 | Parameterize linked services in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/parameterize-linked-services |
 | Parameterize mapping data flows in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/parameters-data-flow |
-| Change user passwords in Workflow Orchestration Manager | https://learn.microsoft.com/en-us/azure/data-factory/password-change-airflow |
 | Create SAP CDC linked services and datasets | https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-prepare-linked-service-source-dataset |
 | Configure prerequisites for the SAP CDC connector | https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-prerequisites-configuration |
 | Prepare self-hosted IR for SAP CDC workloads | https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-shir-preparation |
@@ -320,15 +309,14 @@ This skill requires **network access** to fetch documentation content:
 ### Integrations & Coding Patterns
 | Topic | URL |
 |-------|-----|
-| Sync GitHub repositories with Workflow Orchestration Manager | https://learn.microsoft.com/en-us/azure/data-factory/airflow-sync-github-repository |
 | Configure SAP CDC connector to load data into Fabric OneLake | https://learn.microsoft.com/en-us/azure/data-factory/change-data-capture-from-sap-to-onelake-with-azure-data-factory |
 | Use expression builder for ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-expression-builder |
 | Define and use UDFs in ADF mapping data flows | https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-udf |
 | Connect Azure Data Factory to Microsoft Purview | https://learn.microsoft.com/en-us/azure/data-factory/connect-data-factory-to-azure-purview |
 | Integrate Azure Data Factory with AWS Marketplace Web Service | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-marketplace-web-service |
-| Copy data from Amazon RDS for Oracle using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
+| Integrate Amazon RDS for Oracle with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-oracle |
 | Copy data from Amazon RDS for SQL Server with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-rds-for-sql-server |
-| Configure Azure Data Factory Amazon Redshift connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
+| Integrate Amazon Redshift with Azure Data Factory copy activity | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-redshift |
 | Copy data from S3-compatible storage using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-s3-compatible-storage |
 | Copy and transform data in Amazon S3 with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service |
 | Transform AppFigures data with ADF Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-appfigures |
@@ -374,12 +362,12 @@ This skill requires **network access** to fetch documentation content:
 | Configure HubSpot connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-hubspot |
 | Copy data from Impala using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-impala |
 | Copy data to and from IBM Informix with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-informix |
-| Configure Jira connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-jira |
+| Configure Azure Data Factory Jira connector for copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-jira |
 | Configure Magento connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-magento |
 | Copy data from MariaDB using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-mariadb |
 | Configure Marketo connector for Azure Data Factory copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-marketo |
 | Copy data to and from Microsoft Access with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-access |
-| Copy and transform data in Microsoft Fabric Lakehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse |
+| Use Fabric Lakehouse as source or sink in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-lakehouse |
 | Copy and transform data in Microsoft Fabric Warehouse | https://learn.microsoft.com/en-us/azure/data-factory/connector-microsoft-fabric-warehouse |
 | Copy data to and from MongoDB using ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb |
 | Copy data to and from MongoDB Atlas with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb-atlas |
@@ -389,7 +377,7 @@ This skill requires **network access** to fetch documentation content:
 | Set up Azure Data Factory OData connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-odata |
 | Use ODBC connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-odbc |
 | Copy and transform Microsoft 365 data with ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-office-365 |
-| Configure Oracle connector for Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
+| Configure Azure Data Factory Oracle connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle |
 | Connect Azure Data Factory to Oracle Cloud Storage | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-cloud-storage |
 | Use Oracle Eloqua connector with Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-eloqua |
 | Use Oracle Responsys connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-oracle-responsys |
@@ -402,10 +390,10 @@ This skill requires **network access** to fetch documentation content:
 | Transform Quickbase data with ADF data flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbase |
 | Configure QuickBooks Online connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-quickbooks |
 | Use REST connector for copy and transform in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-rest |
-| Configure Salesforce V2 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce |
+| Use Salesforce V2 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce |
 | Use Salesforce V1 connector in Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-legacy |
 | Connect Azure Data Factory to Salesforce Marketing Cloud | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-marketing-cloud |
-| Configure Salesforce Service Cloud V2 connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-service-cloud |
+| Use Salesforce Service Cloud V2 connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-service-cloud |
 | Use Salesforce Service Cloud V1 connector in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-salesforce-service-cloud-legacy |
 | Copy data from SAP BW using Azure Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse |
 | Copy from SAP BW via Open Hub in ADF | https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse-open-hub |
@@ -431,7 +419,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Twilio connector in Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-twilio |
 | Configure Azure Data Factory Vertica connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-vertica |
 | Use Web Table connector in Data Factory | https://learn.microsoft.com/en-us/azure/data-factory/connector-web-table |
-| Configure Azure Data Factory Xero connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-xero |
+| Configure Azure Data Factory Xero connector for copy | https://learn.microsoft.com/en-us/azure/data-factory/connector-xero |
 | Use Zendesk connector in Data Flows | https://learn.microsoft.com/en-us/azure/data-factory/connector-zendesk |
 | Configure Azure Data Factory Zoho connector | https://learn.microsoft.com/en-us/azure/data-factory/connector-zoho |
 | Run Azure Functions from Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/control-flow-azure-function-activity |
@@ -470,7 +458,6 @@ This skill requires **network access** to fetch documentation content:
 | Create Azure Data Factory with .NET SDK | https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-dot-net |
 | Create Azure Data Factory with Python SDK | https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-python |
 | Create Azure Data Factory using REST API | https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-rest-api |
-| Call Workflow Orchestration Manager IR via REST APIs | https://learn.microsoft.com/en-us/azure/data-factory/rest-apis-for-airflow-integrated-runtime |
 | Bulk copy from files to Azure databases template | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-from-files-to-database |
 | Bulk copy from databases using control table template | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-bulk-copy-with-control-table |
 | Use template to copy files from multiple containers | https://learn.microsoft.com/en-us/azure/data-factory/solution-template-copy-files-multiple-containers |
@@ -504,8 +491,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Import Airflow DAGs into Workflow Orchestration Manager | https://learn.microsoft.com/en-us/azure/data-factory/airflow-import-dags-blob-storage |
-| Apply CI/CD deployment patterns for Workflow Orchestration Manager | https://learn.microsoft.com/en-us/azure/data-factory/ci-cd-pattern-with-airflow |
 | Implement CI/CD for Azure Data Factory pipelines | https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery |
 | Automate ADF deployments with Azure Pipelines | https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-automate-azure-pipelines |
 | Use hotfix production environments with ADF CI/CD | https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-hotfix-environment |

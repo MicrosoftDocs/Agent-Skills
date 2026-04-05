@@ -1,6 +1,6 @@
 ---
 name: azure-playwright-workspaces
-description: Expert knowledge for Playwright Workspaces development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when managing Playwright Testing workspaces, tokens/RBAC, quotas, monitoring/metrics, or run/AADSTS7000112 issues, and other Playwright Workspaces related development tasks.
+description: Expert knowledge for Playwright Workspaces development including troubleshooting, best practices, decision making, limits & quotas, security, and configuration. Use when managing Playwright Testing workspaces, tokens/RBAC, quotas, monitoring/metrics, or run/AADSTS7000112 issues, and other Playwright Workspaces related development tasks. Not for Azure App Testing (use azure-app-testing), Azure DevOps (use azure-devops), Azure Pipelines (use azure-pipelines), Azure Test Plans (use azure-test-plans).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
   generated_at: "2026-02-28"

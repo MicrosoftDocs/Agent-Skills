@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
     routing, UI library, and SMS/email compliance.
-  security: 'Security, auth, and compliance for ACS: encryption, identities, HMAC
-    signing, Teams interop controls, caller ID/CNAM, captions/RTT/transcription data,
-    WhatsApp/email/SMTP setup, and emergency calling.'
+  security: 'Security, auth, and compliance for ACS: encryption, identities, HMAC,
+    webhooks, Teams interop controls, captions/RTT/transcription data, caller ID,
+    WhatsApp/email, and emergency calling.'
   decision-making: 'Guidance on ACS/Teams design decisions: PSTN options and pricing,
     phone numbers, Teams interop and licensing, gov cloud usage, and migrating from
     Twilio Video/Chat to ACS.'
@@ -31,14 +31,14 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers, Teams
-  interop, or Job Router/contact centers, and other Azure Communication Services related
-  development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
-  Azure Web PubSub (use azure-web-pubsub).
-use_when: Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers,
-  Teams interop, or Job Router/contact centers, and other Azure Communication Services
-  related development tasks.
+  Use when building ACS calling, chat, SMS, email, Teams interop, Job Router, or contact
+  center solutions, and other Azure Communication Services related development tasks.
+  Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use
+  azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure
+  Web PubSub (use azure-web-pubsub).
+use_when: Use when building ACS calling, chat, SMS, email, Teams interop, Job Router,
+  or contact center solutions, and other Azure Communication Services related development
+  tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
   Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
   Azure Web PubSub (use azure-web-pubsub).
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 - **Total Pages**: 516
 - **Fetched**: 516
 - **Fetch Failed**: 0
-- **Classified**: 414
-- **Unclassified**: 102
+- **Classified**: 415
+- **Unclassified**: 101
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 516
+- **Updated Pages**: 1
+- **Unchanged**: 515
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -71,11 +71,16 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | deployment | 2 | 0.4% |
 | integrations | 143 | 27.7% |
 | limits-quotas | 64 | 12.4% |
-| security | 22 | 4.3% |
+| security | 23 | 4.5% |
 | troubleshooting | 71 | 13.8% |
-| *(Unclassified)* | 102 | 19.8% |
+| *(Unclassified)* | 101 | 19.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
+  - Updated: 2026-02-19T06:12:00.000Z → 2026-03-26T22:23:00.000Z
 
 ## Classified Pages
 
@@ -243,6 +248,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Archive chats](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/archive-chat-threads) | integrations | 0.70 | How-to for moving chat messages to own storage in real time; implies concrete integration patterns and configuration with storage or other services. |
 | [Authentication overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-authentication-overview) | security | 0.70 | Explains authentication flows and artifacts for single-tenant/multitenant Entra apps using ACS Calling SDK, which involves product-specific auth configuration details. |
 | [Authentication service hero sample](https://learn.microsoft.com/en-us/azure/communication-services/samples/trusted-auth-sample) | best-practices | 0.70 | Hero sample for authentication service; described as using best practices to build a trusted backend, implying concrete patterns and configurations specific to ACS. |
+| [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government) | security | 0.70 | Page is specific to Azure Government, describing compliance posture (FedRAMP High, GCC High) and government-region–specific behavior and capabilities. These are product- and environment-specific security/compliance details that go beyond generic knowledge, fitting the security sub-skill focused on configuration/compliance requirements. |
 | [Azure Metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/metrics) | configuration | 0.70 | Defines ACS metrics available in Azure Metrics Explorer; likely includes metric names, dimensions, and meanings, which are product-specific configuration/monitoring details. |
 | [Benefits of migrating voice and video from Twilio Video to Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/concepts/migrate-to-azure-communication-services) | decision-making | 0.70 | Conceptual migration article compares Twilio Video and ACS Calling SDK, highlighting key differences and advantages; this is explicit technology selection and migration decision guidance. |
 | [Best practices for sender authentication support](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-authentication-best-practice) | security | 0.70 | Explicitly about DNS records and sender authentication methods for Azure email; likely includes concrete record types/values and product-specific guidance. |
@@ -530,7 +536,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Rooms logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/rooms-logs) | 0.35 | Rooms logs overview via Azure Monitor; summary indicates high-level logging capability description, not detailed schema, error codes, or config parameter tables. |
 | [Teams shared line appearance](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/teams-user/teams-shared-line-appearance) | 0.35 | Explains shared line appearance and delegate calling conceptually; no clear indication of product-specific configuration tables, limits, or troubleshooting mappings. |
 | [Try phone calling](https://learn.microsoft.com/en-us/azure/communication-services/concepts/telephony/try-phone-calling) | 0.35 | Describes a portal tool to test calling; mostly conceptual/procedural without deep configuration or limits. |
-| [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government) | 0.30 | Azure Government overview for Communication Services; mostly compliance and availability info, not detailed limits or configs. |
 | [Billing usage logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/billing-usage-log-schema) | 0.30 | Described as an overview of billing usage log schema; likely schema/field descriptions but no clear indication of configuration tables, limits, or troubleshooting mappings in the summary. |
 | [Design with UI Library Design Kit](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/ui-library/get-started-ui-kit) | 0.30 | Quickstart for Figma design kit is largely tooling and workflow guidance; unlikely to contain product runtime configuration or limits. |
 | [Insights dashboard](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/insights/insights-dashboard) | 0.30 | Insights dashboard description of visualizations; summary suggests conceptual monitoring/observability overview without specific config parameters, limits, or error mappings. |

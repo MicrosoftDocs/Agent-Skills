@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat, SMS/email/WhatsApp, PSTN/phone numbers, Teams interop, or Job Router/contact centers, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling, chat, SMS, email, Teams interop, Job Router, or contact center solutions, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L138-L153 | Guidance on ACS/Teams design decisions: PSTN options and pricing, phone numbers, Teams interop and licensing, gov cloud usage, and migrating from Twilio Video/Chat to ACS. |
 | Architecture & Design Patterns | L154-L159 | Designing scalable contact center solutions with ACS and patterns for integrating ACS with ExpressRoute for secure, private connectivity and network architecture. |
 | Limits & Quotas | L160-L227 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
-| Security | L228-L253 | Security, auth, and compliance for ACS: encryption, identities, HMAC signing, Teams interop controls, caller ID/CNAM, captions/RTT/transcription data, WhatsApp/email/SMTP setup, and emergency calling. |
-| Configuration | L254-L333 | Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video, SMS, email, calling, routing), plus configuration for Teams interop, domains, routing, UI library, and SMS/email compliance. |
-| Integrations & Coding Patterns | L334-L480 | End-to-end patterns for integrating ACS calling, chat, SMS, email, WhatsApp, Teams, Job Router, bots, AI, and UI libraries, including media control, events, push, and telephony features. |
-| Deployment | L481-L485 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
+| Security | L228-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, webhooks, Teams interop controls, captions/RTT/transcription data, caller ID, WhatsApp/email, and emergency calling. |
+| Configuration | L255-L334 | Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video, SMS, email, calling, routing), plus configuration for Teams interop, domains, routing, UI library, and SMS/email compliance. |
+| Integrations & Coding Patterns | L335-L481 | End-to-end patterns for integrating ACS calling, chat, SMS, email, WhatsApp, Teams, Job Router, bots, AI, and UI libraries, including media control, events, push, and telephony features. |
+| Deployment | L482-L486 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -233,6 +233,7 @@ This skill requires **network access** to fetch documentation content:
 | Understand ACS call flow topologies and encryption | https://learn.microsoft.com/en-us/azure/communication-services/concepts/detailed-call-flows |
 | Apply sender authentication best practices in Azure | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-authentication-best-practice |
 | Configure Azure email domains and authentication | https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-domain-and-sender-authentication |
+| Use Azure Communication Services in US Government clouds | https://learn.microsoft.com/en-us/azure/communication-services/concepts/government |
 | Configure authentication for single-tenant and multitenant ACS Teams apps | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/custom-teams-endpoint-authentication-overview |
 | Configure closed captions for ACS–Teams interop calls | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/enable-closed-captions |
 | Enable and license Teams interoperability for ACS users | https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/enable-interoperability-teams |

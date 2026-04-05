@@ -1,45 +1,46 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
-  configuration: Configuring IoT Edge runtime, modules, networking, storage, security,
-    metrics, and provisioning (including EFLOW, GPUs, gateways, proxies, DPS, and
-    X.509/symmetric key setups).
-  security: 'Securing IoT Edge: certificates (test/production, X.509), auth for downstream
-    devices, confidential computing modules, EST server, Private Link/endpoints, and
-    Linux-on-Windows security.'
+  configuration: 'Configuring IoT Edge devices and modules: networking, gateways,
+    EFLOW/VM, GPUs, storage, metrics/monitoring, proxies, and large-scale provisioning
+    with DPS, TPM, X.509, and symmetric keys.'
+  security: 'Certificates, auth, and network security for IoT Edge: X.509 provisioning,
+    cert management/rotation, EST server, confidential computing modules, Private
+    Link, and Linux-on-Windows security.'
   decision-making: Guidance on choosing IoT Edge/EFLOW platforms, provisioning methods,
     networking setups, and nested virtualization options for different deployment
     scenarios.
-  deployment: 'Deploying and updating IoT Edge: supported platforms (incl. EFLOW/Kubernetes),
-    runtime/security updates, CI/CD for modules, and managing automatic deployments
-    to device groups.'
-  integrations: 'Remote management patterns for IoT Edge: using direct methods to
-    control the edge agent, collect/upload logs, and build/package custom modules
-    for deployment.'
+  deployment: 'Deploying and updating IoT Edge at scale: CI/CD, CLI/manifest-based
+    module deployment, Kubernetes/EFLOW installs, platform support, and automatic
+    deployments for device groups.'
+  integrations: Remote management and logging via direct methods, building and packaging
+    custom IoT Edge modules, and managing IoT Edge on Windows with EFLOW PowerShell
+    functions
+  best-practices: Monitoring module twins for health/alerts and production-readiness
+    guidance for IoT Edge solutions (deployment hardening, reliability, security,
+    and operational best practices).
   troubleshooting: Diagnosing and fixing IoT Edge runtime, monitoring, networking,
     and EFLOW-on-Windows issues, including portal-based troubleshooting and common
-    error/resolution guides.
+    error/connection problems.
   architecture-patterns: Gateway design patterns for connecting downstream devices
     and patterns for handling offline/intermittent connectivity, local processing,
     and sync behavior in Azure IoT Edge setups.
   limits-quotas: 'Azure IoT Edge service and resource limits: max modules, routes,
     deployments, message sizes, throttling, and other scalability and quota constraints
     for edge solutions.'
-  best-practices: 'Guidance for hardening IoT Edge for production: security, deployment
-    planning, monitoring, scaling, lifecycle management, and operational best practices
-    for edge modules and devices.'
 skill_description: Expert knowledge for Azure IoT Edge development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring IoT Edge runtime/modules, EFLOW, DPS provisioning, gateways/downstream
-  devices, or CI/CD deployments, and other Azure IoT Edge related development tasks.
-  Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot), Azure IoT
-  Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
-use_when: Use when configuring IoT Edge runtime/modules, EFLOW, DPS provisioning,
-  gateways/downstream devices, or CI/CD deployments, and other Azure IoT Edge related
-  development tasks.
-confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use azure-iot),
+  configuring IoT Edge modules/devices, DPS provisioning, EFLOW on Windows, gateways,
+  or GPU-accelerated workloads, and other Azure IoT Edge related development tasks.
+  Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use azure-iot-central),
   Azure IoT Operations (use azure-iot-operations), Azure Stack Edge (use azure-stack-edge).
+use_when: Use when configuring IoT Edge modules/devices, DPS provisioning, EFLOW on
+  Windows, gateways, or GPU-accelerated workloads, and other Azure IoT Edge related
+  development tasks.
+confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central (use
+  azure-iot-central), Azure IoT Operations (use azure-iot-operations), Azure Stack
+  Edge (use azure-stack-edge).
 ---
 # Azure IoT Edge Crawl Report
 
@@ -48,13 +49,13 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 - **Total Pages**: 98
 - **Fetched**: 98
 - **Fetch Failed**: 0
-- **Classified**: 64
-- **Unclassified**: 34
+- **Classified**: 67
+- **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 98
+- **Updated Pages**: 7
+- **Unchanged**: 91
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -63,29 +64,45 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 2.0% |
-| best-practices | 1 | 1.0% |
-| configuration | 32 | 32.7% |
+| best-practices | 2 | 2.0% |
+| configuration | 31 | 31.6% |
 | decision-making | 3 | 3.1% |
-| deployment | 6 | 6.1% |
-| integrations | 3 | 3.1% |
+| deployment | 8 | 8.2% |
+| integrations | 4 | 4.1% |
 | limits-quotas | 1 | 1.0% |
 | security | 9 | 9.2% |
 | troubleshooting | 7 | 7.1% |
-| *(Unclassified)* | 34 | 34.7% |
+| *(Unclassified)* | 31 | 31.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Access TPM secrets](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-dtpm)
+  - Updated: 2025-06-06T05:14:00.000Z → 2026-04-01T08:00:00.000Z
+- [PowerShell functions](https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions)
+  - Updated: 2026-02-20T08:00:00.000Z → 2026-03-20T08:00:00.000Z
+- [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates)
+  - Updated: 2026-03-03T23:37:00.000Z → 2026-03-23T08:00:00.000Z
+- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-cli)
+  - Updated: 2025-05-08T22:03:00.000Z → 2026-04-01T08:00:00.000Z
+- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-cli-at-scale)
+  - Updated: 2025-05-19T17:08:00.000Z → 2026-04-01T08:00:00.000Z
+- [Monitor module twins](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-module-twins)
+  - Updated: 2025-06-09T22:05:00.000Z → 2026-04-01T08:00:00.000Z
+- [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot)
+  - Updated: 2026-03-02T23:28:00.000Z → 2026-04-01T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Configure device settings](https://learn.microsoft.com/en-us/azure/iot-edge/configure-device) | configuration | 0.90 | Detailed reference of config.toml sections, option names, and allowed values for IoT Edge devices. |
+| [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article for Azure IoT Edge. Typically includes specific error messages, diagnostic commands, log locations, and symptom→cause→solution flows that are unique to IoT Edge and not broadly known, matching the troubleshooting criteria. |
 | [Limits and restrictions](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-limits-and-restrictions) | limits-quotas | 0.90 | Explicitly documents IoT Edge limits and restrictions, including numeric constraints and supported maximums. |
 | [Resolve common errors](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-common-errors) | troubleshooting | 0.90 | Explicitly a troubleshooting article for IoT Edge provisioning, deployment, runtime, and networking. These pages list specific error codes/messages, likely docker/iotedge commands, and symptom→cause→resolution mappings unique to IoT Edge, which fits the troubleshooting sub-skill definition. |
-| [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot) | troubleshooting | 0.86 | The page is explicitly a troubleshooting guide for Azure IoT Edge, describing how to retrieve component status and logs. Such content typically includes specific commands, log locations, and symptom-to-solution mappings unique to IoT Edge, matching the troubleshooting sub-skill definition. |
 | [Diagnose virtual machine](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows) | troubleshooting | 0.85 | Dedicated troubleshooting guide with EFLOW-specific diagnostic commands, log locations, and symptom-to-solution mappings that are unique to this product. |
 | [Diagnose virtual machine networking](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot-iot-edge-for-linux-on-windows-networking) | troubleshooting | 0.85 | Focuses on EFLOW networking problems with specific diagnostics, commands, and resolutions for network-related symptoms, matching the troubleshooting criteria. |
-| [PowerShell functions](https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions) | configuration | 0.85 | Reference for EFLOW PowerShell functions with parameter names, behaviors, and usage patterns that are specific configuration interfaces for this product. |
 | [Automatic deployments](https://learn.microsoft.com/en-us/azure/iot-edge/module-deployment-monitoring) | deployment | 0.80 | Product-specific deployment mechanism for groups and layered deployments, including constraints and behavior. |
 | [Configure the API proxy module](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-api-proxy-module) | configuration | 0.80 | Documents configuration options for the API proxy module, including environment variables, port mappings, and routing rules; these are detailed, product-specific configuration parameters. |
 | [Connect a USB device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-usb-devices) | configuration | 0.80 | Gives concrete steps and configuration details to expose host USB devices to the EFLOW VM using USB over IP, including product-specific commands and settings. |
@@ -98,16 +115,18 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Shared folders](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-share-windows-folder-to-vm) | configuration | 0.80 | Explains EFLOW-specific file and folder sharing mechanisms, including configuration options and paths that are unique to EFLOW rather than generic file sharing. |
 | [Using Private Link with IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/using-private-link) | security | 0.80 | Product-specific secure networking pattern using Private Link, ExpressRoute, and DNS Private Resolver for IoT Edge. |
 | [Configure module build options](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-module-build-options) | configuration | 0.78 | The page explains the IoT Edge module.json schema and how it controls build and deployment behavior. It contains product-specific configuration fields, their meanings, and allowed values for IoT Edge modules, which are not generic knowledge. This aligns with the configuration sub-skill focused on specific setting names and their usage. |
-| [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates) | security | 0.78 | This page details how to install and manage certificates on IoT Edge devices for secure runtime–module and gateway–downstream communication. It includes product-specific certificate roles and management steps that are central to IoT Edge security configuration, fitting the security sub-skill. |
 | [Understand and use createOptions](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-use-create-options) | configuration | 0.78 | The page describes the IoT Edge-specific use of the Docker-compatible createOptions parameter in deployment manifests, including concrete JSON configuration patterns for networking, resource limits, and device access. These are product-specific configuration details (parameter names, structures, and allowed settings) that go beyond generic Docker knowledge and qualify as expert configuration knowledge. |
-| [Access TPM secrets](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-dtpm) | configuration | 0.75 | Describes how to enable/disable and expose the device TPM to the EFLOW VM with concrete EFLOW configuration steps and parameters that are specific to this product. |
+| [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-cli-at-scale) | deployment | 0.75 | Describes creating and managing Azure IoT Edge automatic deployments for many devices using Azure CLI. Includes product-specific deployment constructs (automatic deployments, labels, priorities, target conditions) and CLI parameters unique to IoT Hub/Edge scale deployments, which qualify as expert deployment knowledge. |
 | [Configure proxy support](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-configure-proxy-support) | configuration | 0.75 | Product-specific proxy configuration for runtime and modules, including environment variables and settings. |
 | [Create test certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates) | security | 0.75 | Describes required certificate types and how to generate/install them for secure communication between IoT Edge runtime, modules, and downstream devices. This is product-specific security configuration (certificate hierarchy, usage, and installation steps) that an LLM wouldn’t reliably infer without the documentation. |
 | [Production checklist](https://learn.microsoft.com/en-us/azure/iot-edge/production-checklist) | best-practices | 0.75 | Production checklist with prioritized DOs and configuration recommendations specific to IoT Edge deployments. |
 | [Virtual switch](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-virtual-switch) | configuration | 0.75 | Covers how to create the required Hyper-V virtual switch for EFLOW, especially on Windows Server, with specific commands and configuration values unique to this scenario. |
 | [IoT Edge certificates](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-certs) | security | 0.74 | The article explains how IoT Edge uses different certificate types with IoT Hub and gateway scenarios. It contains product-specific security behavior and certificate role details (device, module, downstream device validation) that are unique to IoT Edge’s security model, matching the security sub-skill. |
+| [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates) | security | 0.72 | The page provides product-specific, step-by-step guidance on installing and managing certificates for Azure IoT Edge, including concrete certificate roles (device CA, workload CA, root CA), file locations, and configuration details required for secure runtime and module communication. This is security-focused configuration and certificate management that goes beyond generic TLS concepts and is specific to Azure IoT Edge. |
+| [Access TPM secrets](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-dtpm) | configuration | 0.70 | Page describes how to enable/disable and configure access to the device TPM from the Azure IoT Edge for Linux on Windows VM. This is product-specific configuration, likely including concrete settings/commands unique to EFLOW and TPM access, which qualifies as expert configuration knowledge rather than a generic overview. |
 | [Access built-in metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-built-in-metrics) | configuration | 0.70 | Page is a how-to for accessing IoT Edge runtime metrics in Prometheus format and via the metrics-collector module. These docs typically include product-specific endpoint paths, port numbers, metric names, and configuration parameters for exposing and scraping metrics—details that are configuration-focused and not just conceptual. It is not primarily troubleshooting, limits, or architecture guidance. |
 | [Authenticate a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device) | security | 0.70 | Describes concrete options and parameters for authenticating downstream devices to IoT Hub via an IoT Edge gateway (for example, identity setup in IoT Hub, auth methods, and gateway declaration). This is product-specific security and identity configuration rather than conceptual security guidance. |
+| [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-cli) | deployment | 0.70 | How-to guide for pushing IoT Edge modules via Azure CLI using deployment manifests. Contains product-specific CLI commands, parameters, and manifest structure that an LLM is unlikely to fully know from training. Focus is on deployment mechanics for IoT Edge rather than generic CLI usage. |
 | [Collect and transport metrics](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-collect-and-transport-metrics) | configuration | 0.70 | Explains how to add and configure the metrics-collector module, including module settings and parameters for Azure Monitor integration; these are product-specific configuration options. |
 | [Confidential computing](https://learn.microsoft.com/en-us/azure/iot-edge/deploy-confidential-applications) | security | 0.70 | Describes using Open Enclave and secure enclaves with IoT Edge, including confidential application deployment patterns. |
 | [Configure a transparent gateway](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-transparent-gateway) | configuration | 0.70 | Step-by-step configuration of an IoT Edge device as a transparent gateway, including product-specific settings (gateway mode, certificates, connection strings, and IoT Edge runtime configuration). These are concrete configuration details unique to Azure IoT Edge rather than generic concepts. |
@@ -117,6 +136,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Connect a downstream device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device) | configuration | 0.70 | Covers detailed configuration steps and parameters to establish a trusted connection between downstream devices and an IoT Edge transparent gateway (cert trust, connection strings, gateway hostname, and client settings). These are specific configuration patterns unique to Azure IoT Edge. |
 | [Give modules access to a device's local storage](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-host-storage-from-module) | configuration | 0.70 | Uses environment variables and create options to mount host storage into modules; contains IoT Edge–specific configuration names and patterns for storage access. |
 | [IoT Edge device as a gateway](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) | architecture-patterns | 0.70 | Describes transparent, opaque, and proxy gateway patterns specific to IoT Edge and when to use each. |
+| [PowerShell functions](https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions) | integrations | 0.70 | Reference for EFLOW-specific PowerShell functions to deploy, provision, and get status of the IoT Edge VM. This is expert knowledge of product-specific APIs/commands and their parameters, fitting the integrations & coding patterns category because it documents concrete function names and usage patterns unique to this product. |
 | [Run IoT Edge on Kubernetes](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-kubernetes) | deployment | 0.70 | Product-specific deployment method using KubeVirt and Kubernetes, including environment and runtime constraints. |
 | [Symmetric key attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-on-windows-symmetric) | configuration | 0.70 | Shows how to autoprovision IoT Edge for Linux on Windows devices using symmetric keys with DPS, including DPS- and EFLOW-specific configuration fields and command usage that go beyond generic provisioning concepts. |
 | [TPM attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-on-windows-tpm) | configuration | 0.70 | Step-by-step autoprovisioning for IoT Edge for Linux on Windows using TPM and DPS, including EFLOW- and DPS-specific configuration values, registration IDs, and command parameters that are product-specific rather than generic concepts. |
@@ -130,6 +150,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [Update IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-update-iot-edge) | deployment | 0.66 | The article provides product-specific guidance on updating the IoT Edge runtime and security subsystem on devices when new versions are released. It covers how to move between versions in a production context, which is a deployment/upgrade concern rather than a generic tutorial. |
 | [Create an IoT Edge device](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-create-iot-edge-device) | decision-making | 0.65 | Article is explicitly about understanding platform, provisioning, and authentication options for creating IoT Edge devices and helping form a clear picture of which options to use; this is service-specific selection guidance, fitting decision-making. |
 | [Manage with DevOps tools](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-continuous-integration-continuous-deployment) | deployment | 0.65 | Shows YAML-based CI/CD using Azure IoT Edge tasks in Azure Pipelines; includes task names, inputs, and pipeline configuration specific to IoT Edge deployments. |
+| [Monitor module twins](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-module-twins) | best-practices | 0.65 | Explains how to interpret $edgeAgent and $edgeHub module twins to assess connectivity and health. Likely includes product-specific fields, status patterns, and recommended interpretations (for example, which twin properties indicate issues), which are concrete, IoT Edge–specific operational practices rather than generic concepts. |
 | [Retrieve logs with direct methods](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-retrieve-iot-edge-logs) | integrations | 0.65 | Describes IoT Edge agent direct methods for log retrieval and upload to Blob Storage, including method names and payload parameters; this is product-specific API integration detail. |
 | [Supported platforms](https://learn.microsoft.com/en-us/azure/iot-edge/support) | deployment | 0.65 | A supported platforms page typically includes detailed matrices of operating systems, runtimes, and container engines by version and support status. These are product-specific deployment constraints and compatibility details that qualify as expert knowledge under deployment. |
 | [X.509 certificate attestation](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-on-windows-x509) | configuration | 0.65 | Describes autoprovisioning EFLOW devices using DPS and X.509; includes enrollment configuration, attestation parameters, and device-side settings specific to this scenario. |
@@ -148,8 +169,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
-| [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-cli-at-scale) | 0.45 | CLI-based automatic deployment at scale; largely procedural with commands and high-level options, not deep configuration reference or quantified decision guidance. |
-| [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-cli) | 0.45 | CLI-based deployment tutorial using Azure CLI and IoT extension; mostly commands and basic manifest usage, not detailed configuration catalogs or expert troubleshooting content. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-at-scale) | 0.45 | Explains automatic deployments at scale via portal; focuses on process and concepts rather than detailed configuration parameter tables or decision matrices. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-portal) | 0.45 | Portal-based deployment walkthrough; focuses on using UI to push modules and configure manifests, without deployment matrices, limits, or deep configuration reference tables. |
 | [Debug modules with VS Code](https://learn.microsoft.com/en-us/azure/iot-edge/debug-module-vs-code) | 0.45 | Debugging tutorial in VS Code for IoT Edge modules; mainly step-by-step IDE usage and attach instructions, not structured troubleshooting mappings or product-specific error code references. |
@@ -163,7 +182,6 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT (use az
 | [End-to-end observability for IoT Edge](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-observability) | 0.40 | High-level observability concepts (measuring/monitoring and troubleshooting) for IoT Edge; more architectural and conceptual than parameter- or error-code–driven expert content. |
 | [Monitor IoT Edge deployments](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-iot-edge-deployments) | 0.40 | Monitoring overview for IoT Edge deployments; describes reported properties and metrics conceptually, without detailed metric reference tables or thresholds. |
 | [Monitor devices and modules](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-monitor-with-workbooks) | 0.40 | Monitoring tutorial using Azure Monitor workbooks; focuses on usage steps rather than config parameter reference. |
-| [Monitor module twins](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-module-twins) | 0.40 | Explains how to interpret module twins for health; primarily conceptual and interpretive, not a structured configuration or troubleshooting reference with codes and mappings. |
 | [Understand Azure IoT Edge modules](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-modules) | 0.35 | Conceptual explanation of modules and how they run; not a structured config or limits reference. |
 | [Deploy code to a Linux device](https://learn.microsoft.com/en-us/azure/iot-edge/quickstart-linux) | 0.30 | Quickstart tutorial for creating a device; step-by-step but not a catalog of settings, limits, or patterns. |
 | [Explore curated visualizations](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-explore-curated-visualizations) | 0.30 | Focuses on using Azure Monitor workbooks to visualize IoT Edge metrics. From the summary it appears to be a usage/visualization tutorial (ingesting metrics into Log Analytics and using curated workbook templates) without clear evidence of detailed configuration tables, parameter ranges, or other expert-only specifics. More of a guided visualization article than a deep configuration or troubleshooting reference. |

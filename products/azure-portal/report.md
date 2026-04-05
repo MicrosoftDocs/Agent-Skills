@@ -1,24 +1,22 @@
 ---
-generated_at: '2026-03-04'
+generated_at: '2026-04-05'
 category_descriptions:
   security: Tenant-wide portal security policies, RBAC-based dashboard sharing, and
     managing/protecting access to Azure via Intune MAM and the Azure mobile app.
   configuration: 'Configuring Azure portal behavior: dashboard JSON/templates, keyboard
     shortcuts, URL allowlists, mobile app alerts, and built-in Azure Policy definitions
     for portal governance.'
-  limits-quotas: Browser compatibility, OS/device requirements, and configuration
-    needed to reliably access and use the Azure portal across different platforms.
   troubleshooting: How to collect browser network traces, console logs, HAR files,
     and diagnostics to investigate and report Azure portal performance or UI issues
 skill_description: Expert knowledge for Azure Portal development including troubleshooting,
-  limits & quotas, security, and configuration. Use when setting portal security policies,
-  RBAC dashboards, dashboard JSON, mobile app access/alerts, or browser diagnostics,
-  and other Azure Portal related development tasks. Not for Azure Cloud Shell (use
-  azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor
-  (use azure-monitor), Azure Policy (use azure-policy).
-use_when: Use when setting portal security policies, RBAC dashboards, dashboard JSON,
-  mobile app access/alerts, or browser diagnostics, and other Azure Portal related
-  development tasks.
+  security, and configuration. Use when managing portal RBAC dashboard sharing, JSON
+  dashboards, URL allowlists, mobile app access/alerts, or HAR diagnostics, and other
+  Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell),
+  Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor),
+  Azure Policy (use azure-policy).
+use_when: Use when managing portal RBAC dashboard sharing, JSON dashboards, URL allowlists,
+  mobile app access/alerts, or HAR diagnostics, and other Azure Portal related development
+  tasks.
 confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource
   Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy
   (use azure-policy).
@@ -30,13 +28,13 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 - **Total Pages**: 30
 - **Fetched**: 30
 - **Fetch Failed**: 0
-- **Classified**: 12
-- **Unclassified**: 18
+- **Classified**: 11
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 30
+- **Updated Pages**: 1
+- **Unchanged**: 29
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -45,12 +43,16 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | Type | Count | Percentage |
 |------|-------|------------|
 | configuration | 6 | 20.0% |
-| limits-quotas | 1 | 3.3% |
 | security | 4 | 13.3% |
 | troubleshooting | 1 | 3.3% |
-| *(Unclassified)* | 18 | 60.0% |
+| *(Unclassified)* | 19 | 63.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Supported browsers and devices](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-supported-browsers-devices)
+  - Updated: 2025-06-19T08:00:00.000Z → 2026-04-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -67,7 +69,6 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | [Share an Azure dashboard](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboard-share-access) | security | 0.70 | Explains sharing dashboards via Azure RBAC and mentions role selection; likely lists specific RBAC roles and access scopes, which are product-specific security details. |
 | [Alerts and notifications](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/alerts-notifications) | configuration | 0.65 | Explains different options for configuring notifications; likely includes specific notification settings and options unique to the mobile app. |
 | [Set admin policies for the Azure portal](https://learn.microsoft.com/en-us/azure/azure-portal/admin-policies) | security | 0.65 | Targets portal-wide policies set by Global Administrator; likely includes specific policy options and their security impact, fitting product-specific security configuration. |
-| [Supported browsers and devices](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-supported-browsers-devices) | limits-quotas | 0.65 | Defines which browsers/devices are supported and requirements like JavaScript enabled; effectively a constraints/compatibility matrix, a form of product-specific limits. |
 
 ## Unclassified Pages
 
@@ -91,3 +92,4 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | [Get started with Azure Quickstart Center](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-quickstart-center) | 0.10 | Guided getting-started experience description; no detailed configuration parameters, limits, or decision matrices. |
 | [View and filter resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views) | 0.10 | Page describes how to view and filter resources in the Azure portal (UI usage). It does not contain numeric limits, configuration parameter tables, error codes, security roles, or decision matrices. This is general portal usage guidance, not product-specific expert knowledge as defined. |
 | [What is the Azure portal?](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview) | 0.10 | High-level overview of the Azure portal UI and capabilities; no product-specific limits, configs, or detailed patterns. |
+| [Supported browsers and devices](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-supported-browsers-devices) | - | Page is a high-level support/compatibility overview for Azure portal browsers and devices without detailed numeric limits, configuration parameters, or decision matrices. It lacks product-specific expert details such as quotas, config tables, or error mappings. |

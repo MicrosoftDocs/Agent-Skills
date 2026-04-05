@@ -1,11 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   configuration: 'Configuring Azure Payment HSM networking and access: VNets/peering,
-    FastPath, ARM deployments, IP setup, browser/VM access to payShield Manager, and
-    required resource provider/feature registration.'
-  security: Compliance standards, certification scope, and best practices for securing
-    Payment HSM networking, identities, access control, and key management in Azure.
+    FastPath, ARM/CLI deployment, IP layout (split/reused VNets), provider registration,
+    and payShield Manager browser access.'
+  security: 'Security setup for Payment HSM: configuring SSH/payShield manager access,
+    understanding compliance certifications/scope, and applying hardening and security
+    best practices.'
   decision-making: Guidance on choosing/changing Azure Payment HSM performance SKUs,
     and understanding support options, roles, and responsibilities for operating the
     service.
@@ -20,16 +21,17 @@ category_descriptions:
     or workarounds.
 skill_description: Expert knowledge for Azure Payment Hsm development including troubleshooting,
   best practices, decision making, architecture & design patterns, security, and configuration.
-  Use when designing Payment HSM VNets/FastPath, payShield Manager access, HA/DR topologies,
-  SKUs, or traffic inspection, and other Azure Payment Hsm related development tasks.
-  Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key Vault (use azure-key-vault),
-  Azure Cloud Hsm (use azure-cloud-hsm), Azure Security (use azure-security).
-use_when: Use when designing Payment HSM VNets/FastPath, payShield Manager access,
+  Use when configuring Payment HSM VNets/FastPath, payShield Manager access, HA/DR
+  topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related development
+  tasks. Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud Hsm (use
+  azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Information Protection
+  (use azure-information-protection).
+use_when: Use when configuring Payment HSM VNets/FastPath, payShield Manager access,
   HA/DR topologies, SKUs, or traffic inspection, and other Azure Payment Hsm related
   development tasks.
-confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Key
-  Vault (use azure-key-vault), Azure Cloud Hsm (use azure-cloud-hsm), Azure Security
-  (use azure-security).
+confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure Cloud
+  Hsm (use azure-cloud-hsm), Azure Key Vault (use azure-key-vault), Azure Information
+  Protection (use azure-information-protection).
 ---
 # Azure Payment Hsm Crawl Report
 
@@ -38,13 +40,13 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Total Pages**: 28
 - **Fetched**: 28
 - **Fetch Failed**: 0
-- **Classified**: 17
-- **Unclassified**: 11
+- **Classified**: 18
+- **Unclassified**: 10
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 28
+- **Updated Pages**: 5
+- **Unchanged**: 23
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -56,19 +58,32 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | best-practices | 1 | 3.6% |
 | configuration | 9 | 32.1% |
 | decision-making | 2 | 7.1% |
-| security | 2 | 7.1% |
+| security | 3 | 10.7% |
 | troubleshooting | 1 | 3.6% |
-| *(Unclassified)* | 11 | 39.3% |
+| *(Unclassified)* | 10 | 35.7% |
 
 ## Changes
+
+### Updated Pages
+
+- [Using SSH](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager-ssh)
+  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
+- [4. Delete a commissioned payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/remove-payment-hsm)
+  - Updated: 2025-12-12T05:41:00.000Z → 2026-03-27T06:02:00.000Z
+- [CLI](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-cli)
+  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
+- [Reuse an existing virtual network](https://learn.microsoft.com/en-us/azure/payment-hsm/reuse-vnet)
+  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
+- [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm)
+  - Updated: 2025-09-26T08:00:00.000Z → 2026-04-01T06:04:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Fastpathenabled](https://learn.microsoft.com/en-us/azure/payment-hsm/fastpathenabled) | configuration | 0.85 | Details both the subscription-level feature flag and VNet tag, including registration steps and support contact requirements; these are precise configuration mechanisms unique to the service. |
-| [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm) | security | 0.85 | Security-focused article with best practices for network security, identity, monitoring, and key management; expected to include product-specific security configurations and recommendations. |
 | [Peer payment HSM virtual networks](https://learn.microsoft.com/en-us/azure/payment-hsm/peer-vnets) | configuration | 0.80 | Specifically calls out the required 'fastpathenabled' tag on VNets and limitations of the Azure portal; these are concrete, product-specific configuration requirements. |
+| [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm) | security | 0.80 | Article explicitly focuses on securing Azure Payment HSM and likely includes product-specific security guidance such as RBAC roles, network security rules, identity configuration, and key management practices tailored to this service. |
 | [Azure Payment HSM service support guide](https://learn.microsoft.com/en-us/azure/payment-hsm/support-guide) | decision-making | 0.70 | Defines prerequisites, support channels, and division of responsibility, including S2 support dependency on specific HA deployment; this is decision guidance on supportability and deployment posture. |
 | [Azure Payment HSM traffic inspection](https://learn.microsoft.com/en-us/azure/payment-hsm/inspect-traffic) | best-practices | 0.70 | Guidance on bypassing UDR restrictions and inspecting traffic for a VNet-injected, delegated subnet service; likely includes specific network patterns and constraints unique to Payment HSM. |
 | [Certification and compliance](https://learn.microsoft.com/en-us/azure/payment-hsm/certification-compliance) | security | 0.70 | Details specific compliance standards and references to PCI reports and shared responsibility matrices; these are product-specific security/compliance requirements. |
@@ -81,20 +96,20 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Host and management ports in different VNets](https://learn.microsoft.com/en-us/azure/payment-hsm/create-different-vnet) | configuration | 0.65 | Describes creating host and management ports in different VNets using CLI/PowerShell; this typically involves specific parameter names, subnet/delegation requirements, and allowed settings unique to Payment HSM networking. |
 | [Host and management ports in different VNets (template)](https://learn.microsoft.com/en-us/azure/payment-hsm/create-different-vnet-template) | configuration | 0.65 | ARM template scenario for host and management ports in different VNets; implies detailed template parameters and constraints specific to Payment HSM networking configuration. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/payment-hsm/known-issues) | troubleshooting | 0.65 | Known-issues article; typically lists specific symptoms and configuration-related problems tied to deployment scenarios and solution design, with guidance to avoid or mitigate them. |
-| [Using SSH](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager-ssh) | configuration | 0.65 | Describes creating a VM in the same VNet and configuring access to payShield manager; likely includes specific network and access configuration parameters unique to Payment HSM. |
-| [Reuse an existing virtual network](https://learn.microsoft.com/en-us/azure/payment-hsm/reuse-vnet) | configuration | 0.60 | Explains how to attach Payment HSM to an existing VNet by skipping certain steps; implies specific subnet/delegation requirements unique to the service. |
+| [Using SSH](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager-ssh) | security | 0.65 | Tutorial for SSH access to payShield manager on a VM in the same VNet is likely to include product-specific network/identity/security configuration details (ports, protocols, access patterns) that are unique to Azure Payment HSM and not generic SSH knowledge. |
+| [CLI](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-cli) | configuration | 0.60 | CLI quickstart for creating/listing/updating/deleting Payment HSMs is likely to contain specific CLI commands, parameter names, and required values unique to this service, which fits configuration-focused expert knowledge. |
+| [Reuse an existing virtual network](https://learn.microsoft.com/en-us/azure/payment-hsm/reuse-vnet) | configuration | 0.60 | Guidance on reusing an existing VNet for Payment HSM will typically include specific subnet requirements, address space constraints, and configuration parameters unique to this service’s networking model. |
 
 ## Unclassified Pages
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
 | [ARM template](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-template) | 0.45 | ARM template quickstart for basic creation; likely shows a minimal template rather than a comprehensive configuration reference. |
-| [4. Delete a commissioned payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/remove-payment-hsm) | 0.40 | Covers decommissioning and deletion steps; summary suggests procedural lifecycle steps rather than detailed configuration or troubleshooting mappings. |
-| [CLI](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-cli) | 0.40 | CLI quickstart for create/show/list/update/delete; typically basic commands without extensive parameter tables or edge-case guidance. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/payment-hsm/faq) | 0.40 | FAQ likely mixes conceptual and basic usage questions; summary does not indicate detailed error codes, configuration tables, or quantified decision criteria. |
 | [Host and management ports in same VNet](https://learn.microsoft.com/en-us/azure/payment-hsm/create-payment-hsm) | 0.40 | Tutorial for creating a Payment HSM; likely basic provisioning steps without configuration matrices or product-specific best practices. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-powershell) | 0.40 | PowerShell quickstart; similar to CLI quickstart, focused on basic operations rather than deep configuration or troubleshooting. |
 | [2. View your payment HSMs](https://learn.microsoft.com/en-us/azure/payment-hsm/view-payment-hsms) | 0.30 | Viewing resources via CLI/PowerShell/portal is standard usage; unlikely to contain detailed configuration tables or product-specific troubleshooting. |
+| [4. Delete a commissioned payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/remove-payment-hsm) | 0.20 | Page is about decommissioning/removing a Payment HSM and appears to be a procedural tutorial; description/summary do not indicate specific limits, error codes, configuration tables, or other expert-only details. |
 | [Getting started with Azure Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/getting-started) | 0.20 | Getting started/onboarding article; likely step-by-step enablement without deep configuration tables or product-specific edge cases. |
 | [Lifecycle management](https://learn.microsoft.com/en-us/azure/payment-hsm/lifecycle-management) | 0.20 | Lifecycle overview of Azure Payment HSM with high-level description of service characteristics and responsibilities; no specific limits, configuration parameters, error codes, or decision matrices are evident from the summary. |
 | [Payment HSM overview](https://learn.microsoft.com/en-us/azure/payment-hsm/overview) | 0.20 | High-level service overview and positioning; no detailed limits, configs, or patterns beyond generic description. |

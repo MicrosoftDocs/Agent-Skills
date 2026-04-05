@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   deployment: 'Deploying and moving Azure resources with ARM/Bicep: CI/CD pipelines,
     template specs, deployment scripts, deployment stacks, and cross-subscription/region
@@ -13,12 +13,12 @@ category_descriptions:
   configuration: 'Authoring and configuring Bicep and ARM templates: syntax, types,
     functions, modules, parameters, tags, networking, monitoring, policy, custom providers,
     and ARM governance/preview settings.'
-  troubleshooting: 'Diagnosing and fixing Bicep/ARM deployment issues: detailed guides
-    for specific BCPxxx compiler errors, template syntax/type problems, scope/name/SKU/policy
-    failures, and common Azure deployment faults.'
-  limits-quotas: ARM/Bicep limits, quotas, throttling, and naming/tag rules; how to
-    design templates within resource/parameter/output/history caps and troubleshoot
-    quota and job-size deployment errors.
+  troubleshooting: 'Diagnosing and fixing Bicep/ARM deployment issues: specific BCP
+    error codes, syntax and type problems, decorator/scope issues, and common Azure
+    template and resource deployment failures.'
+  limits-quotas: 'ARM/Bicep limits and quotas: subscription/group caps, resources/params/variables/outputs,
+    tags and naming rules, deployment history, throttling, and quota‑related deployment
+    errors and fixes'
   security: 'Securing ARM/Bicep deployments: handling secrets, secure parameters,
     RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management
     group protection.'
@@ -31,16 +31,15 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Resource Manager development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when authoring Bicep/ARM templates, using template specs, deployment stacks,
-  CI/CD pipelines, or ARM REST/CLI, and other Azure Resource Manager related development
-  tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph),
-  Azure Portal (use azure-portal), Azure Blueprints (use azure-blueprints).
-use_when: Use when authoring Bicep/ARM templates, using template specs, deployment
-  stacks, CI/CD pipelines, or ARM REST/CLI, and other Azure Resource Manager related
-  development tasks.
-confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Graph
-  (use azure-resource-graph), Azure Portal (use azure-portal), Azure Blueprints (use
-  azure-blueprints).
+  Use when using Bicep/ARM templates, template specs, deployment stacks, CLI/PowerShell/REST,
+  or CI/CD pipelines, and other Azure Resource Manager related development tasks.
+  Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy),
+  Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
+use_when: Use when using Bicep/ARM templates, template specs, deployment stacks, CLI/PowerShell/REST,
+  or CI/CD pipelines, and other Azure Resource Manager related development tasks.
+confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Policy
+  (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal
+  (use azure-portal).
 ---
 # Azure Resource Manager Crawl Report
 
@@ -54,8 +53,8 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 462
+- **Updated Pages**: 2
+- **Unchanged**: 460
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-manager/azure-resource-manager.csv`
 
@@ -76,11 +75,19 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 
 ## Changes
 
+### Updated Pages
+
+- [Throttling requests](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling)
+  - Updated: 2026-02-27T08:00:00.000Z → 2026-04-03T17:16:00.000Z
+- [Invalid template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template)
+  - Updated: 2025-04-28T08:00:00.000Z → 2026-03-25T11:19:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Deployment quota exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/deployment-quota-exceeded) | limits-quotas | 0.95 | Documents the exact limit of 800 deployments per resource group and explains behavior when the limit is reached, which is precise quota information. |
+| [Throttling requests](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling) | limits-quotas | 0.95 | The page documents concrete ARM request limits and throttling behavior, including specific per-subscription request rates, how remaining requests are exposed via response headers, and how long to wait before retrying. These are precise numeric limits and timeout-related details that qualify as expert knowledge under the limits-quotas category. |
 | [Subscription and service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits) | limits-quotas | 0.92 | Explicitly lists common Azure limits/quotas with maximum values and guidance on increasing them—canonical limits-quotas reference. |
 | [Deployment history deletions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history-deletions) | limits-quotas | 0.90 | States the exact limit of 800 deployments per scope and describes automatic deletion behavior and date of change; this is precise quota information. |
 | [Resource instance limit](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resources-without-resource-group-limit) | limits-quotas | 0.90 | Specifically about the 800-instance-per-resource-group limit and lists resource types that exceed it, including notes on support exceptions—clear limits-quotas content. |
@@ -90,6 +97,7 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [BCP083](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp083) | troubleshooting | 0.86 | Covers BCP083, including the exact error text and that it’s raised when a property name appears to be a typo. This is a clear symptom → cause mapping for a specific compiler error. |
 | [BCP088](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp088) | troubleshooting | 0.86 | Describes BCP088 with its precise message and the scenario (property value type mismatch that looks like a typo). This is specific diagnostic guidance. |
 | [BCP089](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/diagnostics/bcp089) | troubleshooting | 0.86 | Explains BCP089, including the exact error and that it occurs when a property isn’t allowed on a type, often due to a typo. This is product-specific error resolution. |
+| [Invalid template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template) | troubleshooting | 0.86 | The article maps specific Azure Resource Manager deployment error messages (invalid template variants) to their causes and resolutions, including product-specific behaviors like circular dependencies and parameter validation. It is organized as symptom → cause → fix for ARM/Bicep deployments, which matches the troubleshooting sub-skill definition and contains expert, product-specific diagnostic guidance beyond generic debugging advice. |
 | [Resource name rules](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules) | limits-quotas | 0.86 | Summarizes naming rules and restrictions per resource type, including allowed characters, lengths, and case-sensitivity—effectively numeric and pattern limits. |
 | [All functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions) | configuration | 0.85 | Provides a comprehensive catalog of ARM template functions with exact names, signatures, and scope constraints, which are product-specific configuration primitives. |
 | [Array functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-array) | configuration | 0.85 | Lists specific array function names, behaviors, and usage patterns in ARM templates, which are detailed product-specific function references. |
@@ -113,7 +121,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Common deployment errors](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors) | troubleshooting | 0.85 | Catalogs common deployment error codes with their causes and resolutions, providing explicit symptom→cause→solution mappings. |
 | [Max asserts](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-max-asserts) | limits-quotas | 0.85 | Explicitly states a numeric limit (32) for predeployment conditions, which is a concrete quota tied to ARM/Bicep behavior. |
 | [Resource functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-resource) | configuration | 0.85 | Describes functions for retrieving resource values, including exact function names and scope behavior, which is ARM-specific configuration knowledge. |
-| [Throttling requests](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling) | limits-quotas | 0.85 | Known to include specific per-subscription request limits, throttling behavior, and response headers with remaining quota counts; these numeric limits and patterns are expert knowledge. |
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/governance/management-groups/troubleshoot/general) | troubleshooting | 0.85 | Explicit troubleshooting article for management groups with SDKs; expected to map specific errors to causes and resolutions, which is product-specific troubleshooting knowledge. |
 | [Troubleshoot installation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/installation-troubleshoot) | troubleshooting | 0.85 | Explicit troubleshooting article for Bicep installation; likely organized by specific error messages and resolutions, which are product-specific diagnostic mappings. |
 | [Use recent AZ PowerShell version](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/linter-rule-use-recent-az-powershell-version) | best-practices | 0.85 | Rule checks for Az PowerShell versions below 11.0 and recommends 14.0, providing explicit numeric version thresholds that are expert, product-specific guidance. |
@@ -167,7 +174,6 @@ confusable_not_for: Not for Azure Policy (use azure-policy), Azure Resource Grap
 | [Date functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-date) | configuration | 0.80 | Lists and explains ARM template date functions and their usage, which is specific to the ARM template language. |
 | [Deployment functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-deployment) | configuration | 0.80 | Describes deployment-related functions (e.g., retrieving deployment metadata) with exact names and behaviors, which are ARM-specific configuration tools. |
 | [Functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-functions) | deployment | 0.80 | Documents that hosting resources are region-specific and must be recreated, with redeployment of function code, a product-specific deployment pattern. |
-| [Invalid template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template) | troubleshooting | 0.80 | Explains specific invalid template error scenarios (syntax, parameters, circular dependencies) and how to resolve them, in a symptom→cause→solution style. |
 | [Job size exceeded](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-job-size-exceeded) | limits-quotas | 0.80 | Focuses on JobSizeExceededException and DeploymentJobSizeExceededException, which are quota-like constraints on template/job size with specific error codes. |
 | [Key Vault](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/relocation/relocation-key-vault) | deployment | 0.80 | States that Key Vault doesn’t support regional relocation and prescribes alternative steps, a critical deployment limitation and pattern. |
 | [Lambda functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions-lambda) | configuration | 0.80 | Explains ARM/Bicep lambda function syntax and constraints, including expression format and limitations, which is detailed language configuration. |

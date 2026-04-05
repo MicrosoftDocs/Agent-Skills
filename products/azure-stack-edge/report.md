@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-05'
 category_descriptions:
   limits-quotas: Limits, capacities, performance, and system requirements for Azure
     Stack Edge and Data Box Gateway devices, including supported VM sizes and moving
@@ -44,13 +44,13 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 - **Total Pages**: 237
 - **Fetched**: 237
 - **Fetch Failed**: 0
-- **Classified**: 145
-- **Unclassified**: 92
+- **Classified**: 144
+- **Unclassified**: 93
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 237
+- **Updated Pages**: 1
+- **Unchanged**: 236
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -58,7 +58,7 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 4 | 1.7% |
+| best-practices | 3 | 1.3% |
 | configuration | 50 | 21.1% |
 | decision-making | 5 | 2.1% |
 | deployment | 1 | 0.4% |
@@ -66,9 +66,14 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | limits-quotas | 8 | 3.4% |
 | security | 23 | 9.7% |
 | troubleshooting | 46 | 19.4% |
-| *(Unclassified)* | 92 | 38.8% |
+| *(Unclassified)* | 93 | 39.2% |
 
 ## Changes
+
+### Updated Pages
+
+- [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure)
+  - Updated: 2021-03-07T12:01:00.000Z → 2026-03-20T06:13:00.000Z
 
 ## Classified Pages
 
@@ -146,7 +151,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [Power cord specifications](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-technical-specifications-power-cords-regional) | configuration | 0.70 | Power cord specifications by Azure region imply detailed part numbers, voltage/current ratings, and regional variants, which are specific configuration details. |
 | [Power, access, connectivity](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-manage-access-power-connectivity-mode) | configuration | 0.70 | Covers device access, power states, and connectivity modes with specific options and behaviors unique to Azure Stack Edge. |
 | [Prepare certificates to upload on device](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-certificates-device-upload) | security | 0.70 | Covers conversion and formatting of certificates for this device; includes specific file formats and constraints for secure operation. |
-| [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure) | best-practices | 0.70 | Guidance on backing up configuration and data to handle failures; includes concrete product-specific recommendations and steps. |
 | [Review alerts](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-alerts) | troubleshooting | 0.70 | Described as a quick-reference for Azure Stack Edge alerts and severities; such pages typically list specific alert IDs/messages and meanings, which are product-specific symptom→meaning mappings. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-mini-r-system-requirements) | configuration | 0.70 | System requirements typically list specific OS versions, ports, bandwidth, and other numeric constraints that are product-specific configuration prerequisites. |
 | [Review requirements](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-system-requirements) | configuration | 0.70 | System requirements pages for a specific device typically list supported OS versions, network ports, and hardware/software prerequisites in tables, which are concrete configuration constraints not generally known. |
@@ -316,3 +320,4 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | [What is Azure Stack Edge Pro with GPU?](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-overview) | 0.20 | Product overview and benefits; primarily marketing/positioning content without detailed technical limits or configuration tables. |
 | [What is Data Box Gateway?](https://learn.microsoft.com/en-us/azure/databox-gateway/data-box-gateway-overview) | 0.20 | Overview of Data Box Gateway, benefits, and scenarios; no indication of numeric limits or detailed configs. |
 | [In other languages](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-pro-2-safety-languages) | 0.10 | Navigation to safety instructions in other languages; no technical expert configuration or limits content. |
+| [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure) | - | Appears to be a procedural guide on preparing for Azure Stack Edge Pro device failure and backing up configuration/data. No indication of numeric limits, detailed configuration parameter tables, error-code-based troubleshooting, or other expert-only reference data; more of an operational how-to. |

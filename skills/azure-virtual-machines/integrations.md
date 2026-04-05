@@ -41,6 +41,7 @@
 | PowerShell script to create managed disks from VHDs | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-managed-disk-from-vhd |
 | PowerShell script to create snapshots from VHDs for multiple managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-powershell-sample-create-snapshot-from-vhd |
 | Create Azure VM disk snapshots for backup and debugging | https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk |
+| Author ARM templates for Azure VM managed disks | https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments |
 | Create and encrypt Windows VM using Azure CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-cli-quickstart |
 | Create and encrypt Windows VM with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-powershell-quickstart |
 | Azure Disk Encryption sample scripts for Windows | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts |
@@ -50,3 +51,4 @@
 | Monitor Windows Azure VMs for scheduled maintenance events | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-event-service |
 | Use Scheduled Events on Windows Azure VMs via Metadata Service | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-events |
 | Deploy Oracle Database 19c on Azure VMs with CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-quick-create |
+| Integrate Oracle RMAN streaming backups with Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-rman-streaming-backup |

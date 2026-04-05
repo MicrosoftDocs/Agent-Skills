@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   troubleshooting: Diagnosing Azure Quantum connection/job failures and understanding
     support, escalation, and issue-handling policies for IonQ, PASQAL, Quantinuum,
@@ -15,11 +15,11 @@ category_descriptions:
   integrations: 'Integrating QDK with Azure Quantum: connecting via qdk.azure, running
     hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through
     QDK to Azure Quantum.'
-  deployment: Deploying and managing Azure Quantum workspaces via ARM/Bicep and Azure
-    CLI, and configuring VS Code to submit, run, and manage Q# programs on Azure Quantum.
-  configuration: Setting up QDK tools and environments, configuring simulators and
-    hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), and tuning/optimizing Quantum
-    Resource Estimator runs and parameters
+  deployment: Deploying Azure Quantum workspaces with Bicep and running/submitting
+    Q# quantum programs from VS Code to Azure Quantum backends
+  configuration: Configuring Azure Quantum workspaces, QDK tools, simulators, noise
+    models, and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), plus tuning
+    and batching resource estimator runs.
   architecture-patterns: Guidance on designing hybrid quantum-classical workflows
     in Azure Quantum, including architecture options, orchestration patterns, and
     when to offload tasks to quantum hardware.
@@ -29,13 +29,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Quantum development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti targets, QIR/OpenQASM,
-  or Resource Estimator, and other Azure Quantum related development tasks. Not for
+  using QDK/qdk.azure, hybrid jobs, QIR/OpenQASM/Pulser circuits, IonQ/PASQAL/Quantinuum/Rigetti,
+  or resource estimator, and other Azure Quantum related development tasks. Not for
   Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks
   (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
-use_when: Use when using QDK/qdk.azure, hybrid jobs, IonQ/PASQAL/Quantinuum/Rigetti
-  targets, QIR/OpenQASM, or Resource Estimator, and other Azure Quantum related development
-  tasks.
+use_when: Use when using QDK/qdk.azure, hybrid jobs, QIR/OpenQASM/Pulser circuits,
+  IonQ/PASQAL/Quantinuum/Rigetti, or resource estimator, and other Azure Quantum related
+  development tasks.
 confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use
   azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use
   azure-machine-learning).
@@ -44,17 +44,17 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 
 ## Summary
 
-- **Total Pages**: 135
-- **Fetched**: 135
+- **Total Pages**: 136
+- **Fetched**: 136
 - **Fetch Failed**: 0
-- **Classified**: 49
-- **Unclassified**: 86
+- **Classified**: 47
+- **Unclassified**: 89
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 135
-- **Deleted Pages**: 0
+- **New Pages**: 2
+- **Updated Pages**: 3
+- **Unchanged**: 131
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -63,16 +63,34 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 |------|-------|------------|
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 3 | 2.2% |
-| configuration | 15 | 11.1% |
+| configuration | 14 | 10.3% |
 | decision-making | 6 | 4.4% |
-| deployment | 3 | 2.2% |
+| deployment | 2 | 1.5% |
 | integrations | 6 | 4.4% |
 | limits-quotas | 3 | 2.2% |
-| security | 7 | 5.2% |
+| security | 7 | 5.1% |
 | troubleshooting | 5 | 3.7% |
-| *(Unclassified)* | 86 | 63.7% |
+| *(Unclassified)* | 89 | 65.4% |
 
 ## Changes
+
+### New Pages
+
+- [Work with Azure Quantum using Bicep](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-using-bicep)
+- [The circuit visualizer](https://learn.microsoft.com/en-us/azure/quantum/circuit-diagrams-qdk-overview)
+
+### Updated Pages
+
+- [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli)
+  - Updated: 2025-08-19T20:44:00.000Z → 2026-03-23T15:21:00.000Z
+- [Install QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-chemistry)
+  - Updated: 2026-02-19T00:19:00.000Z → 2026-04-03T22:11:00.000Z
+- [Visualize Q# circuit diagrams](https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits)
+  - Updated: 2025-12-08T17:40:00.000Z → 2026-04-01T16:52:00.000Z
+
+### Deleted Pages
+
+- ~~Work with Azure Quantum using the Azure Resource Manager~~ (https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-azure-resource-manager)
 
 ## Classified Pages
 
@@ -99,7 +117,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Python quantum language support in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-qiskit-cirq-overview) | integrations | 0.70 | Covers interoperability details between QDK and Qiskit/Cirq, including supported versions and ways to run programs on simulators and Azure Quantum; these are product-specific integration patterns. |
 | [Quantinuum provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum) | configuration | 0.70 | Technical details of Quantinuum provider; likely includes target identifiers, mid-circuit measurement capabilities, and constraints. |
 | [Submit a circuit with Cirq](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq) | integrations | 0.70 | Shows how to use the qdk.azure.cirq submodule to submit Cirq circuits; contains product-specific module names and usage patterns for integration. |
-| [Work with Azure Quantum using the Azure Resource Manager](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-azure-resource-manager) | deployment | 0.70 | Uses ARM/Bicep templates to create workspaces and linked resources; includes resource types and properties specific to Azure Quantum infrastructure-as-code deployment. |
+| [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli) | configuration | 0.70 | CLI-focused how-to that likely includes specific Azure Quantum workspace-related parameters, required resource types, and command options (for resource groups, storage accounts, and workspace creation/deletion). These are product-specific configuration details rather than generic concepts. |
 | [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing) | decision-making | 0.65 | Explains cost calculation and invoice management; likely includes provider-specific billing metrics and cost factors to guide usage decisions. |
 | [Build noise models for neutral atom simulations](https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models) | configuration | 0.65 | Describes supported noise models and how to include them in simulations; likely lists model types and parameters, which are product-specific configuration details. |
 | [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching) | configuration | 0.65 | Describes running estimates for multiple configurations and comparing them; likely includes specific API options or parameters for batching. |
@@ -113,11 +131,10 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Use known estimates](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-known-estimates) | configuration | 0.65 | Explains how to pass pre-calculated estimates as input; involves specific input parameters and usage patterns unique to the resource estimator. |
 | [Visual Studio Code agent mode](https://learn.microsoft.com/en-us/azure/quantum/qdk-vscode-agent-setup) | best-practices | 0.65 | Provides tips to get the most out of agent mode for QDK projects; likely includes product-specific recommendations and patterns for using the AI assistant with QDK. |
 | [Ways to run Q# programs](https://learn.microsoft.com/en-us/azure/quantum/qsharp-ways-to-work) | decision-making | 0.65 | Compares different environment options and helps choose the right one; environment selection guidance with criteria is decision-making content. |
-| [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli) | deployment | 0.65 | CLI-based workspace creation and management; likely includes specific CLI commands and required parameters unique to Azure Quantum deployment. |
+| [Work with Azure Quantum using Bicep](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-using-bicep) | deployment | 0.65 | Bicep-based infrastructure-as-code guide that likely defines Azure Quantum workspace resources with specific properties and schema fields. This is expert deployment/configuration knowledge for automating workspace provisioning, beyond generic Bicep usage. |
 | [Analyze cryptographic protocols](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-quantum-safe-planning) | decision-making | 0.60 | Guides using the estimator to analyze resources needed to break encryption; likely includes scenario-based guidance and criteria for assessing cryptographic strength and planning migration. |
 | [Debug and test your Q# code](https://learn.microsoft.com/en-us/azure/quantum/testing-debugging) | best-practices | 0.60 | Covers unit tests, assertions, and dump functions specific to Q# and QDK; these are product-specific debugging patterns and gotchas. |
 | [How to use the molecule visualizer](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-molecule-visualizer) | configuration | 0.60 | Describes how to install, open, and use the molecule visualizer; likely includes configuration steps and environment settings specific to this tool. |
-| [Install QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-chemistry) | configuration | 0.60 | Installation article for QDK/Chemistry; likely includes package names, version constraints, and environment-specific commands that are product-specific. |
 | [Install the neutral atom simulators](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-neutral-atom-simulators) | configuration | 0.60 | Describes installing simulation Python modules and running simulations; likely includes package names, commands, and possibly configuration options specific to these simulators. |
 | [Introduction to hybrid QC](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-overview) | architecture-patterns | 0.60 | Explains different hybrid implementation types and how to choose the best approach; this is explicit decision/architecture guidance specific to Azure Quantum hybrid models. |
 | [IonQ support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-ionq) | troubleshooting | 0.60 | Describes when Azure vs IonQ support handles issues; includes product-specific guidance on troubleshooting and escalation paths. |
@@ -126,7 +143,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Quantinuum support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-quantinuum) | troubleshooting | 0.60 | Describes support boundaries and escalation for Quantinuum targets; specific to Azure Quantum–Quantinuum integration. |
 | [Rigetti support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-rigetti) | troubleshooting | 0.60 | Defines how issues with Rigetti targets are handled between Azure and Rigetti support; unique troubleshooting and escalation guidance. |
 | [Submit jobs with Q# and VS Code](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs) | deployment | 0.60 | Explains how to submit Q# jobs to real hardware via VS Code, Python, and CLI; contains product-specific job submission patterns and constraints relevant to deployment. |
-| [Visualize Q# circuit diagrams](https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits) | configuration | 0.60 | Shows how to visualize circuits using QDK in VS Code and Jupyter; likely includes specific commands and options for circuit visualization. |
 
 ## Unclassified Pages
 
@@ -195,6 +211,7 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Statements in Q#](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/) | 0.20 | Overview of Q# statements; no product-specific limits, configs, or decision matrices. |
 | [Submit a circuit with Qiskit](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-qiskit) | 0.20 | Quickstart/tutorial for submitting Qiskit programs via QDK; primarily step-by-step usage in VS Code with no indication of limits, quotas, configuration tables, error-code mappings, or other product-specific expert reference details. |
 | [Variable declaration and reassignment](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/statements/variabledeclarationsandreassignments) | 0.20 | Covers let/mutable and variable reassignment in Q#; no configuration tables or limits. |
+| [Visualize Q# circuit diagrams](https://learn.microsoft.com/en-us/azure/quantum/how-to-visualize-circuits) | 0.20 | Tutorial-style guidance on creating and viewing circuit diagrams in VS Code and Jupyter; does not indicate presence of limits, configuration parameter tables, or error-code-based troubleshooting. |
 | [Work with Q# projects](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-qsharp-projects) | 0.20 | Explains how to create and manage Q# projects and libraries; likely a structural/how-to guide without numeric limits, decision matrices, or product-specific configuration tables. |
 | [Arithmetic expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/arithmeticexpressions) | 0.15 | Arithmetic operators and types; generic language semantics. |
 | [Conditional branching](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conditionalbranching) | 0.15 | If/elif/else branching semantics; generic language construct. |
@@ -206,12 +223,14 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (
 | [Comments](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/comments) | 0.10 | Basic syntax for comments in Q#; generic language knowledge. |
 | [Comparative expressions](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/comparativeexpressions) | 0.10 | Equality comparison expressions; basic language reference content. |
 | [Dirac notation](https://learn.microsoft.com/en-us/azure/quantum/concepts-dirac-notation) | 0.10 | Explains Dirac notation and its use in quantum computing; purely mathematical/conceptual, not product-configuration or troubleshooting focused. |
+| [Install QDK for chemistry](https://learn.microsoft.com/en-us/azure/quantum/install-qdk-chemistry) | 0.10 | Installation how-to for a Python library; likely step-by-step commands without detailed configuration matrices, limits, or specialized troubleshooting content. |
 | [Microsoft's quantum machine](https://learn.microsoft.com/en-us/azure/quantum/overview-microsoft-quantum-machine) | 0.10 | Describes Microsoft's research quantum machine at a high level; no concrete product limits, configs, or troubleshooting. |
 | [Multiple qubits](https://learn.microsoft.com/en-us/azure/quantum/concepts-multiple-qubits) | 0.10 | Conceptual treatment of multi-qubit states and gates; no Azure- or QDK-specific parameters, limits, or decision guidance. |
 | [Q#](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview) | 0.10 | High-level introduction to Q# and its role in Azure Quantum; no product-specific limits, configuration tables, or detailed patterns. |
 | [Quantum entanglement](https://learn.microsoft.com/en-us/azure/quantum/concepts-entanglement) | 0.10 | Conceptual overview of entanglement and correlations; does not provide product-specific settings, limits, or troubleshooting flows. |
 | [Self-consistent field calculations and active space selection](https://learn.microsoft.com/en-us/azure/quantum/overview-qdk-chem-scf-active-space) | 0.10 | Explains self-consistent field theory conceptually; not product-specific configuration or operational guidance. |
 | [The circuit editor](https://learn.microsoft.com/en-us/azure/quantum/qdk-circuit-editor) | 0.10 | Introduces the circuit editor feature and how to build/visualize circuits; appears to be a conceptual/usage overview without detailed configuration parameters, limits, or troubleshooting mappings. |
+| [The circuit visualizer](https://learn.microsoft.com/en-us/azure/quantum/circuit-diagrams-qdk-overview) | 0.10 | High-level overview of QDK circuit diagrams and interaction in VS Code; no numeric limits, configuration tables, error codes, or product-specific decision matrices. |
 | [The qubit](https://learn.microsoft.com/en-us/azure/quantum/concepts-the-qubit) | 0.10 | Conceptual explanation of qubits and single-qubit behavior; lacks product-specific configuration, limits, or troubleshooting content. |
 | [Vectors and matrices](https://learn.microsoft.com/en-us/azure/quantum/concepts-vectors-and-matrices) | 0.10 | Introductory linear algebra concepts (vectors, matrices) for quantum computing; no product-specific limits, configs, error codes, or decision matrices. |
 | [What is Azure Quantum?](https://learn.microsoft.com/en-us/azure/quantum/overview-azure-quantum) | 0.10 | High-level overview of Azure Quantum service; no detailed limits, configs, or error mappings. |

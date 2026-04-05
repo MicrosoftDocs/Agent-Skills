@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   security: 'Securing Batch accounts and pools: auth with Entra ID/managed identities,
     keys and CMK encryption, RBAC and policy, private endpoints/network perimeters,
     Key Vault access, and certificate/key rotation.'
   configuration: Configuring Batch pools, tasks, networking, containers, autoscale,
-    OS/images, filesystems, monitoring, diagnostics events, and alerts for reliable
-    job execution.
+    OS/images, filesystems, and setting up monitoring, diagnostics events, alerts,
+    and metrics/logs
   deployment: Deploying Azure Batch workloads using Azure Pipelines and CLI templates,
     including end-to-end job setup, automation, and integration into CI/CD workflows.
   integrations: 'Using Azure Batch programmatically and via CLI/PowerShell: SDK patterns
@@ -30,15 +30,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Batch pools/tasks, autoscale, containers, VM/Spot choices, or CI/CD
-  job deployments, and other Azure Batch related development tasks. Not for Azure
-  HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure
-  Stream Analytics (use azure-stream-analytics), Azure Functions (use azure-functions).
-use_when: Use when configuring Batch pools/tasks, autoscale, containers, VM/Spot choices,
-  or CI/CD job deployments, and other Azure Batch related development tasks.
+  configuring Batch pools/tasks, autoscale, containerized jobs, SDK/CLI workflows,
+  or render/MPI workloads, and other Azure Batch related development tasks. Not for
+  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
+  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines).
+use_when: Use when configuring Batch pools/tasks, autoscale, containerized jobs, SDK/CLI
+  workflows, or render/MPI workloads, and other Azure Batch related development tasks.
 confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databricks
-  (use azure-databricks), Azure Stream Analytics (use azure-stream-analytics), Azure
-  Functions (use azure-functions).
+  (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
+  Azure Virtual Machines (use azure-virtual-machines).
 ---
 # Azure Batch Crawl Report
 
@@ -52,8 +53,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
+- **Updated Pages**: 1
+- **Unchanged**: 113
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -74,6 +75,11 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Changes
 
+### Updated Pages
+
+- [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration)
+  - Updated: 2026-01-12T08:00:00.000Z → 2026-03-06T08:00:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
@@ -82,7 +88,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Role-based access control for Azure Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-role-based-access-control) | security | 0.90 | Describes Batch-specific built-in roles and permissions, including role names and scopes for managing Batch accounts. |
 | [Task runtime environment variables](https://learn.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables) | configuration | 0.90 | Reference for environment variables set on compute nodes; includes specific variable names and meanings, a configuration reference for task runtime. |
 | [Best practices](https://learn.microsoft.com/en-us/azure/batch/best-practices) | best-practices | 0.85 | Explicit best-practices article with product-specific tips to enhance performance and avoid design pitfalls in Batch solutions. |
-| [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration) | configuration | 0.85 | Provides Batch-specific endpoint configuration, including default ports, mapping behavior, and changes after specific API versions and dates. |
 | [Configure public network access with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/public-network-access) | security | 0.85 | Security/network configuration article with specific behavior (e.g., max 200 IP rules per endpoint) and guidance on IP network rules and Private Link. |
 | [Checking for pool and node errors](https://learn.microsoft.com/en-us/azure/batch/batch-pool-node-error-checking) | troubleshooting | 0.80 | Organized around detecting and avoiding background pool/node failures with Batch-specific error patterns and mitigation steps. |
 | [Classic compute node communication model](https://learn.microsoft.com/en-us/azure/batch/batch-pools-to-simplified-compute-node-communication-model-migration-guide) | decision-making | 0.80 | Migration guide for moving to the simplified communication model with explicit retirement date; provides product-specific migration considerations. |
@@ -98,6 +103,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices) | best-practices | 0.80 | Security-focused best-practices article with concrete guidance on securing Batch accounts, pools, and networking; product-specific recommendations. |
 | [Use Azure Spot VMs](https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms) | decision-making | 0.80 | Explains trade-offs, availability, and preemption behavior of Spot VMs for Batch, guiding cost vs reliability decisions. |
 | [VHD and Managed Images](https://learn.microsoft.com/en-us/azure/batch/batch-custom-image-pools-to-azure-compute-gallery-migration-guide) | decision-making | 0.80 | Migration guide with concrete timelines and guidance on moving from VHD/Managed Images to Azure Compute Gallery; supports migration decisions and steps. |
+| [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration) | configuration | 0.78 | Describes product-specific endpoint configuration for SSH/RDP on Batch pool nodes, including default ports, API version–dependent behavior, and changes after a specific date. This is concrete, service-specific configuration knowledge (endpoint/port behavior and mapping rules) that goes beyond generic concepts. |
 | [Create a pool in a virtual network](https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network) | configuration | 0.75 | Provides Batch-specific VNet configuration requirements and settings for pool subnets and connectivity. |
 | [Create a pool with public IP addresses](https://learn.microsoft.com/en-us/azure/batch/create-pool-public-ip) | configuration | 0.75 | Explains how to configure Batch pools to use a specified list of public IPs, including constraints and behavior over pool lifetime. |
 | [Create efficient query lists](https://learn.microsoft.com/en-us/azure/batch/batch-efficient-list-queries) | best-practices | 0.75 | Provides concrete guidance on using filters, select clauses, and query patterns to reduce data returned from Batch list operations, which are Batch-API-specific best practices. |

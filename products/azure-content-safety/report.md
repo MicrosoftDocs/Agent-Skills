@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-05'
 category_descriptions:
   troubleshooting: Diagnosing and resolving Azure AI Content Safety API errors, including
     HTTP status codes, common failure causes, and recommended fixes or retries.
@@ -19,19 +19,23 @@ category_descriptions:
     or unwanted content.
   limits-quotas: Language coverage, building and training custom safety categories,
     and detecting protected/third‑party code in model outputs.
+  integrations: Using the groundedness detection API to check if AI responses are
+    supported by source content, with request/response formats, parameters, and integration
+    patterns
 skill_description: Expert knowledge for Azure AI Content Safety development including
   troubleshooting, best practices, decision making, architecture & design patterns,
-  limits & quotas, security, configuration, and deployment. Use when using Content
-  Safety APIs, Docker containers, blocklists, custom safety categories, or prompt
-  shield, and other Azure AI Content Safety related development tasks. Not for Azure
-  Security (use azure-security), Azure Defender For Cloud (use azure-defender-for-cloud),
-  Azure Sentinel (use azure-sentinel), Azure Web Application Firewall (use azure-web-application-firewall).
-use_when: Use when using Content Safety APIs, Docker containers, blocklists, custom
-  safety categories, or prompt shield, and other Azure AI Content Safety related development
+  limits & quotas, security, configuration, integrations & coding patterns, and deployment.
+  Use when using Content Safety APIs, Docker containers, blocklists, groundedness
+  checks, or custom safety categories, and other Azure AI Content Safety related development
+  tasks. Not for Azure Information Protection (use azure-information-protection),
+  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
+  Defender For Cloud (use azure-defender-for-cloud).
+use_when: Use when using Content Safety APIs, Docker containers, blocklists, groundedness
+  checks, or custom safety categories, and other Azure AI Content Safety related development
   tasks.
-confusable_not_for: Not for Azure Security (use azure-security), Azure Defender For
-  Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure
-  Web Application Firewall (use azure-web-application-firewall).
+confusable_not_for: Not for Azure Information Protection (use azure-information-protection),
+  Azure Security (use azure-security), Azure Sentinel (use azure-sentinel), Azure
+  Defender For Cloud (use azure-defender-for-cloud).
 ---
 # Azure AI Content Safety Crawl Report
 
@@ -40,13 +44,13 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 - **Total Pages**: 34
 - **Fetched**: 34
 - **Fetch Failed**: 0
-- **Classified**: 14
-- **Unclassified**: 20
+- **Classified**: 15
+- **Unclassified**: 19
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 34
+- **Updated Pages**: 1
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -59,12 +63,18 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 | configuration | 1 | 2.9% |
 | decision-making | 2 | 5.9% |
 | deployment | 4 | 11.8% |
+| integrations | 1 | 2.9% |
 | limits-quotas | 3 | 8.8% |
 | security | 1 | 2.9% |
 | troubleshooting | 1 | 2.9% |
-| *(Unclassified)* | 20 | 58.8% |
+| *(Unclassified)* | 19 | 55.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness)
+  - Updated: 2025-09-16T08:00:00.000Z → 2026-02-26T23:09:00.000Z
 
 ## Classified Pages
 
@@ -76,6 +86,7 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/language-support) | limits-quotas | 0.70 | Lists exactly which natural languages are supported by specific Content Safety models and which are English-only; this is product-specific capability data that changes over time and isn’t derivable from general knowledge. |
 | [Migrate from public preview to GA](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/migrate-to-general-availability) | decision-making | 0.70 | Guides upgrading code from public preview to GA; involves product-specific migration steps and decisions about API/behavior changes. |
 | [Use a blocklist](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/use-blocklist) | configuration | 0.70 | Describes using custom blocklistItems to extend classifiers; the full article typically includes specific API parameters and structures for blocklists, which are product-specific configuration details. |
+| [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness) | integrations | 0.68 | Quickstart for a specific Azure AI Content Safety groundedness detection API, including concrete request/response patterns and parameters unique to this service. While primarily a tutorial, it exposes product-specific API usage details that qualify as integration-focused expert knowledge rather than generic LLM concepts. |
 | [Image analysis container](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/image-container) | deployment | 0.65 | Shows how to download, install, and run the image analysis container; product-specific deployment guidance. |
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/how-to/containers/install-run-container) | deployment | 0.65 | Product-specific instructions for downloading, installing, and running Content Safety containers; includes notes about disconnected container pricing/tiers, which are deployment-specific constraints. |
 | [Limited access](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/limited-access) | decision-making | 0.65 | Explains which features are limited access (disconnected containers, embedded SDK), for which use cases, and how to request access—guidance for choosing these options vs standard service. |
@@ -103,7 +114,6 @@ confusable_not_for: Not for Azure Security (use azure-security), Azure Defender 
 | [Task adherence (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-task-adherence) | 0.35 | Quickstart for Task Adherence; summary describes behavior and scenarios but not specific configuration parameters, limits, or error codes. |
 | [Text moderation](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-text) | 0.35 | Quickstart for text analysis; references input limits elsewhere but doesn’t itself list numeric limits or detailed configuration tables. |
 | [Azure AI Content Safety FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/faq) | 0.30 | FAQ reference; summary doesn’t indicate specific error codes, configs, or numeric limits, likely general Q&A. |
-| [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness) | 0.30 | Quickstart for groundedness detection; primarily a how-to flow, no explicit evidence of configuration tables, limits, or error mappings in summary. |
 | [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak) | 0.30 | Quickstart tutorial for Prompt Shields; summary references API input limits elsewhere but doesn’t itself contain the numeric limits or detailed config tables. |
 | [Protected material detection for text](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-protected-material) | 0.30 | Quickstart for protected material text; summary is conceptual and compliance-focused, not configuration/limits/troubleshooting-focused. |
 | [Use Content Safety in Foundry portal](https://learn.microsoft.com/en-us/azure/foundry-classic/ai-services/content-safety-overview) | 0.25 | Portal overview (classic) for Content Safety; primarily an interface/feature overview without detailed limits, configs, or troubleshooting mappings in summary. |

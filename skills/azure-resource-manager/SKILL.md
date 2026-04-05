@@ -1,9 +1,9 @@
 ---
 name: azure-resource-manager
-description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when authoring Bicep/ARM templates, using template specs, deployment stacks, CI/CD pipelines, or ARM REST/CLI, and other Azure Resource Manager related development tasks. Not for Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal), Azure Blueprints (use azure-blueprints).
+description: Expert knowledge for Azure Resource Manager development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Bicep/ARM templates, template specs, deployment stacks, CLI/PowerShell/REST, or CI/CD pipelines, and other Azure Resource Manager related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Policy (use azure-policy), Azure Resource Graph (use azure-resource-graph), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Resource Manager Skill
@@ -24,11 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L130 | Diagnosing and fixing Bicep/ARM deployment issues: detailed guides for specific BCPxxx compiler errors, template syntax/type problems, scope/name/SKU/policy failures, and common Azure deployment faults. |
+| Troubleshooting | L37-L130 | Diagnosing and fixing Bicep/ARM deployment issues: specific BCP error codes, syntax and type problems, decorator/scope issues, and common Azure template and resource deployment failures. |
 | Best Practices | L131-L176 | Best practices for authoring and linting Bicep/ARM templates: naming, parameters, locations, IDs, dependencies, API/module versions, test toolkit usage, and resilient tagging/endpoint design. |
 | Decision Making | L177-L190 | Guidance for planning and choosing between ARM deployment models, migration paths (ASM, ARM JSON, Blueprints), and strategies for large-scale or regional Azure workload relocations. |
 | Architecture & Design Patterns | L191-L198 | Bicep architecture patterns for reusable configs, flexible parameters, deterministic name generation, and sharing variables across templates for scalable ARM deployments. |
-| Limits & Quotas | L199-L225 | ARM/Bicep limits, quotas, throttling, and naming/tag rules; how to design templates within resource/parameter/output/history caps and troubleshoot quota and job-size deployment errors. |
+| Limits & Quotas | L199-L225 | ARM/Bicep limits and quotas: subscription/group caps, resources/params/variables/outputs, tags and naming rules, deployment history, throttling, and quota‑related deployment errors and fixes |
 | Security | L226-L252 | Securing ARM/Bicep deployments: handling secrets, secure parameters, RBAC, locks, Private Link, TLS, cross-tenant auth, policy mappings, and management group protection. |
 | Configuration | L253-L319 | Authoring and configuring Bicep and ARM templates: syntax, types, functions, modules, parameters, tags, networking, monitoring, policy, custom providers, and ARM governance/preview settings. |
 | Integrations & Coding Patterns | L320-L369 | Bicep/ARM functions, operators, and patterns plus CLI/PowerShell/Python/REST integrations for deploying, querying, tagging, and automating Azure resources and Kubernetes. |
@@ -116,7 +116,7 @@ This skill requires **network access** to fetch documentation content:
 | Create ARM templates for targeted troubleshooting | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/create-troubleshooting-template |
 | Enable debug logging for ARM deployments | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/enable-debug-logging |
 | Fix invalid resource name and type segment errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-name-segments |
-| Fix invalid template errors for ARM and Bicep | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template |
+| Diagnose and fix Azure ARM invalid template errors | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-invalid-template |
 | Resolve resource not found errors in Azure | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-not-found |
 | Fix parent resource dependency errors in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-parent-resource |
 | Resolve RequestDisallowedByPolicy errors in ARM | https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-policy-requestdisallowedbypolicy |
@@ -209,7 +209,7 @@ This skill requires **network access** to fetch documentation content:
 | Define and manage parameters in Bicep templates | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters |
 | Declare resources in Bicep and observe limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/resource-declaration |
 | Review Azure subscription and service limits and quotas | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits |
-| Understand ARM request throttling limits and headers | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling |
+| Handle Azure Resource Manager request throttling limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/request-limits-and-throttling |
 | Apply Azure resource naming rules and restrictions | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules |
 | Identify Azure resources exempt from 800-per-group limit | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resources-without-resource-group-limit |
 | Apply and understand Azure resource tag limits | https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-05'
 category_descriptions:
   decision-making: Guidance on selecting the right Azure Video Indexer account type
     and designing multi-tenant setups, including isolation, scaling, and management
@@ -43,17 +43,17 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ## Summary
 
-- **Total Pages**: 77
-- **Fetched**: 77
+- **Total Pages**: 79
+- **Fetched**: 79
 - **Fetch Failed**: 0
-- **Classified**: 58
-- **Unclassified**: 19
+- **Classified**: 56
+- **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 77
-- **Deleted Pages**: 0
+- **New Pages**: 3
+- **Updated Pages**: 2
+- **Unchanged**: 74
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
@@ -61,17 +61,34 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.3% |
-| best-practices | 4 | 5.2% |
-| configuration | 14 | 18.2% |
-| decision-making | 2 | 2.6% |
-| deployment | 3 | 3.9% |
-| integrations | 20 | 26.0% |
-| limits-quotas | 4 | 5.2% |
-| security | 9 | 11.7% |
+| best-practices | 4 | 5.1% |
+| configuration | 13 | 16.5% |
+| decision-making | 2 | 2.5% |
+| deployment | 3 | 3.8% |
+| integrations | 19 | 24.1% |
+| limits-quotas | 4 | 5.1% |
+| security | 9 | 11.4% |
 | troubleshooting | 1 | 1.3% |
-| *(Unclassified)* | 19 | 24.7% |
+| *(Unclassified)* | 23 | 29.1% |
 
 ## Changes
+
+### New Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog)
+- [Custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-overview)
+- [Create custom AI insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-create)
+
+### Updated Pages
+
+- [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes)
+  - Updated: 2026-02-06T08:00:00.000Z → 2026-03-31T08:00:00.000Z
+- [Object detection insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/object-detection-insight)
+  - Updated: 2025-10-06T08:00:00.000Z → 2026-03-31T17:16:00.000Z
+
+### Deleted Pages
+
+- ~~Create custom insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog)
 
 ## Classified Pages
 
@@ -105,7 +122,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Monitor Video Indexer](https://learn.microsoft.com/en-us/azure/azure-video-indexer/monitor-video-indexer) | configuration | 0.70 | Describes monitoring data generated and how it integrates with Azure Monitor; likely includes metric/log names and configuration details. |
 | [Named entities insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/named-entities-insight) | integrations | 0.70 | Describes how named entities are exposed; likely includes API fields and JSON structure unique to this service. |
 | [OCR insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/ocr-insight) | integrations | 0.70 | Describes how OCR results are exposed, supported languages, and likely JSON structure; this is concrete integration knowledge. |
-| [Object detection insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/object-detection-insight) | integrations | 0.70 | Shows how to retrieve object detection results via API/portal; includes product-specific response schema and usage. |
 | [Observed people detection & matched faces insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/observed-matched-people-insight) | integrations | 0.70 | Explains how to obtain and use observed people/matched faces insights, including access restrictions and JSON outputs. |
 | [Redact faces](https://learn.microsoft.com/en-us/azure/azure-video-indexer/face-redaction-with-api) | integrations | 0.70 | Describes the Face Redaction preset and API usage, including how to specify which faces to blur; this is a concrete integration/coding pattern. |
 | [Summarize videos](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-task) | integrations | 0.70 | Integration-focused article using Azure OpenAI deployments; likely includes model deployment names/parameters and how they connect to Video Indexer. |
@@ -114,7 +130,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Color bar detection insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/digital-patterns-color-bars-insight) | integrations | 0.65 | Describes how digital pattern/color bar detections are exposed and retrieved, which is product-specific insight integration. |
 | [Configure failover for disaster recovery](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-disaster-recovery) | architecture-patterns | 0.65 | Guides configuring failover and BCDR across regional pairs; includes product-specific DR pattern recommendations and constraints. |
 | [Create an account](https://learn.microsoft.com/en-us/azure/azure-video-indexer/create-account) | security | 0.65 | Includes concrete product-specific access constraints for face identification/customization/celebrity recognition and the required intake process, which are security/eligibility details beyond generic knowledge. |
-| [Create custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog) | configuration | 0.65 | Describes creating presets with AI models and applying them; likely includes preset parameters and model selection options specific to the product. |
 | [Create event summary](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-event-summary) | limits-quotas | 0.65 | Explicitly mentions summaries for up to six-hour segments; this is a concrete service limit relevant to feature usage. |
 | [Find and set your Azure region](https://learn.microsoft.com/en-us/azure/azure-video-indexer/regions) | configuration | 0.65 | Explains setting the location parameter to supported regions; contains product-specific API parameter behavior and region lists. |
 | [Limited access features](https://learn.microsoft.com/en-us/azure/azure-video-indexer/limited-access-features) | security | 0.65 | Describes product-specific access restrictions and eligibility for Face-related capabilities, including how to apply via specific intake forms, which is concrete security/permission behavior not inferable from general knowledge. |
@@ -150,12 +165,16 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [FAQ](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq) | 0.30 | FAQ page; typically mixed high-level answers without structured limits/configs; summary doesn’t indicate deep technical mappings. |
 | [Insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/insights-overview) | 0.30 | Overview of insight types and links out; lacks detailed configuration tables, limits, or error-resolution mappings. |
 | [Real-time analysis](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-analysis) | 0.30 | Real-time analysis overview; summary suggests capabilities description rather than detailed configuration or limits. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes) | 0.30 | Release notes and updates; while detailed, they are temporal change logs rather than stable expert configuration/limits content for skills. |
 | [Bring Your Own AI model](https://learn.microsoft.com/en-us/azure/azure-video-indexer/bring-your-own-model-overview) | 0.25 | Bring-your-own-model overview without clear indication of detailed configuration parameters or limits. |
 | [Textual summarization](https://learn.microsoft.com/en-us/azure/azure-video-indexer/text-summarization-overview) | 0.25 | Text summarization overview; likely conceptual with minimal product-specific configuration detail. |
 | [VI enabled by Arc](https://learn.microsoft.com/en-us/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview) | 0.25 | Service overview for Arc-enabled Video Indexer; primarily descriptive without deep configuration or limits. |
 | [Create a project](https://learn.microsoft.com/en-us/azure/azure-video-indexer/use-editor-create-project) | 0.20 | Editor usage tutorial for creating projects and clips; no deep configuration tables or limits. |
+| [Create custom AI insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-create) | 0.20 | How-to style description of creating custom insights using natural language and examples, but no parameter tables, numeric thresholds, or product-specific constraints that qualify as expert configuration or integration knowledge. |
+| [Custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-overview) | 0.20 | Conceptual overview of custom insights vs built-in insights and when to use them. No detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Object detection insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/object-detection-insight) | 0.20 | Page describes how to view and use object detection insights in Azure AI Video Indexer but, based on the summary, does not expose numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details. It appears to be a feature/how-to overview rather than deep configuration, limits, or troubleshooting content. |
+| [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog) | 0.20 | High-level description of live AI insights catalog and behavior; no numeric limits, configuration tables, error codes, or product-specific settings. Primarily conceptual overview of how insights work and are managed. |
 | [Try the VI web portal](https://learn.microsoft.com/en-us/azure/azure-video-indexer/try-vi-web-portal-quickstart) | 0.20 | Quickstart walkthrough of portal usage; no detailed configuration matrices, limits, or error mappings. |
 | [VI with generative AI](https://learn.microsoft.com/en-us/azure/azure-video-indexer/generative_ai_with_vi) | 0.20 | Conceptual discussion of generative AI usage with Video Indexer; no strong signal of detailed config, limits, or troubleshooting. |
 | [View closed captions](https://learn.microsoft.com/en-us/azure/azure-video-indexer/view-closed-captions) | 0.20 | How-to UI usage for viewing captions; no product-specific limits, configs, or error mappings. |
 | [What is Azure AI Video Indexer (VI)?](https://learn.microsoft.com/en-us/azure/azure-video-indexer/video-indexer-overview) | 0.20 | High-level service overview without numeric limits, configuration tables, or detailed API/error references. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes) | 0.10 | Release notes landing/overview page; summary indicates only that it lists updates. No specific limits, configuration details, or troubleshooting content in the described portion. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-05'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -39,13 +39,13 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 - **Total Pages**: 39
 - **Fetched**: 39
 - **Fetch Failed**: 0
-- **Classified**: 20
-- **Unclassified**: 19
+- **Classified**: 19
+- **Unclassified**: 20
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
+- **Updated Pages**: 1
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -55,13 +55,18 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 |------|-------|------------|
 | architecture-patterns | 1 | 2.6% |
 | configuration | 1 | 2.6% |
-| decision-making | 6 | 15.4% |
+| decision-making | 5 | 12.8% |
 | integrations | 5 | 12.8% |
 | security | 5 | 12.8% |
 | troubleshooting | 2 | 5.1% |
-| *(Unclassified)* | 19 | 48.7% |
+| *(Unclassified)* | 20 | 51.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights)
+  - Updated: 2025-11-18T16:11:00.000Z → 2026-04-02T08:00:00.000Z
 
 ## Classified Pages
 
@@ -75,7 +80,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Author API Management policies](https://learn.microsoft.com/en-us/azure/copilot/author-api-management-policies) | integrations | 0.70 | Shows how to generate APIM policies from requirements; involves product-specific policy syntax and configuration patterns. |
 | [Deploy and manage VMs](https://learn.microsoft.com/en-us/azure/copilot/deploy-vms-effectively) | decision-making | 0.70 | Focuses on selecting right VM sizes and cost-saving options; likely includes product-specific recommendations and trade-offs for VM deployment decisions. |
 | [Discover Azure Marketplace solutions](https://learn.microsoft.com/en-us/azure/copilot/discover-marketplace) | decision-making | 0.70 | Guides users to select Marketplace offers based on described needs; supports technology selection decisions using product-specific search behavior. |
-| [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights) | decision-making | 0.70 | Provides unique insights into storage growth, cost optimization, and security posture; supports decisions on storage configuration and optimization. |
 | [Generate Azure CLI scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-cli-scripts) | integrations | 0.70 | Focuses on generating CLI scripts with placeholders and commands specific to Azure; represents a coding/integration pattern for automating Azure via CLI. |
 | [Generate Kubernetes YAML files](https://learn.microsoft.com/en-us/azure/copilot/generate-kubernetes-yaml) | integrations | 0.70 | Covers generating and editing Kubernetes YAML for AKS with best practices; represents a concrete coding/config pattern for AKS integration. |
 | [Generate PowerShell scripts](https://learn.microsoft.com/en-us/azure/copilot/generate-powershell-scripts) | integrations | 0.70 | Provides patterns for generating Azure PowerShell scripts; product-specific cmdlet usage and script structure for integrating with Azure. |
@@ -109,5 +113,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Describes what the migration agent can help with (planning, assessing, strategizing) but does not expose specific configuration values, limits, error codes, or detailed decision criteria. |
 | [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview) | 0.20 | High-level overview of Agents (preview) in Azure Copilot describing capabilities and value; no concrete limits, configuration parameters, error codes, or decision matrices. |
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |
+| [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights) | 0.10 | Page appears to be a conceptual/marketing-style overview of Azure Storage Discovery with Copilot, describing visibility, cost optimization, and security posture at a high level. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, or detailed decision matrices. It focuses on what the service does, not specific expert configuration, limits, or troubleshooting details. |
 | [Example prompts](https://learn.microsoft.com/en-us/azure/copilot/example-prompts) | 0.10 | Example prompts are usage samples, not product-specific configuration, limits, or troubleshooting knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/copilot/overview) | 0.10 | High-level marketing/overview of Azure Copilot capabilities without concrete limits, configs, or error details. |

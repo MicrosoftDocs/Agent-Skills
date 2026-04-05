@@ -1,18 +1,18 @@
 ---
-generated_at: '2026-03-19'
+generated_at: '2026-04-05'
 category_descriptions:
-  integrations: Patterns and samples for integrating API Management with external
-    APIs, LLMs, logging/monitoring, OAuth, MCP, and Azure services (Event Hubs, Service
-    Bus, App Service, Service Fabric).
-  limits-quotas: Policies and limits for request rates, quotas, concurrency, tokens
-    (incl. Azure OpenAI/LLMs), protocol formats (OpenAPI/WSDL/WADL), validation rules,
-    WebSocket, and self-hosted gateway.
+  integrations: Patterns and samples for integrating API Management with AI/LLM backends,
+    OAuth/Graph, logging/monitoring, events, Service Bus, Service Fabric, MCP, and
+    importing/exporting APIs.
+  limits-quotas: 'Rate, quota, and validation limits in API Management: throttling,
+    per-key quotas, OpenAI/LLM token control, protocol format limits, WebSocket/self-hosted
+    gateway caps, and request/response validation.'
   security: 'Securing API Management and its portals: authN/Z (Entra ID, B2C, OAuth2,
-    JWT, certs, managed identity), TLS/certs, private access, DDoS/Defender, policies,
-    and self-hosted gateway security.'
-  decision-making: 'Guidance for strategic APIM decisions: choosing tiers, scaling
-    and costs, networking, DevOps/CI-CD, migrations (portals, workspaces, APIs, AWS),
-    analytics/monitoring, and monetization.'
+    JWT, mTLS, certs, RBAC, managed identity), secure gateways, DDoS/Defender, and
+    compliance policies.'
+  decision-making: Guidance for choosing APIM tiers/networking, scaling and cost planning,
+    DevOps/CI/CD, migrations (ARM, portals, workspaces, Amazon API Gateway), and monetization/analytics
+    transitions.
   troubleshooting: 'Diagnosing and fixing APIM issues: policies and error handling,
     request tracing/debugging, custom domain/Key Vault cert failures, SNAT timeouts,
     portal problems, and using Diagnose and Solve.'
@@ -22,26 +22,26 @@ category_descriptions:
   best-practices: Best practices for caching, throttling/quotas, self-hosted gateway
     on Kubernetes, server-sent events, and securing APIs against OWASP API Top 10
     in Azure API Management
-  configuration: 'Configuring Azure API Management behavior: policies, caching, logging/metrics,
-    networking/VNet, domains, credentials, subscriptions/users, self-hosted gateways,
-    and deployment templates.'
+  configuration: 'Configuring Azure API Management behavior: policies, caching, networking/VNet,
+    logging/metrics, credentials, subscriptions/users, self-hosted gateways, and developer
+    portal integration.'
   architecture-patterns: Patterns for placing API Management behind App Gateway/WAF,
     Azure Front Door, or AKS, including routing, security, and high‑availability reference
     architectures.
 skill_description: Expert knowledge for Azure API Management development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when integrating APIM with Azure services/LLMs, configuring policies/quotas,
-  securing gateways, or deploying self-hosted gateways, and other Azure API Management
-  related development tasks. Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
-use_when: Use when integrating APIM with Azure services/LLMs, configuring policies/quotas,
-  securing gateways, or deploying self-hosted gateways, and other Azure API Management
-  related development tasks.
+  Use when managing APIM policies, self-hosted gateways, VNet/App Gateway/Front Door
+  setups, quotas, or OAuth/JWT auth, and other Azure API Management related development
+  tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
+  Front Door (use azure-front-door), Azure Api Center (use azure-api-center), Azure
+  Web Application Firewall (use azure-web-application-firewall).
+use_when: Use when managing APIM policies, self-hosted gateways, VNet/App Gateway/Front
+  Door setups, quotas, or OAuth/JWT auth, and other Azure API Management related development
+  tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Web Application Firewall (use azure-web-application-firewall), Azure Functions
-  (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+  Azure Front Door (use azure-front-door), Azure Api Center (use azure-api-center),
+  Azure Web Application Firewall (use azure-web-application-firewall).
 ---
 # Azure API Management Crawl Report
 
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 - **Unclassified**: 49
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 274
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 19
+- **Unchanged**: 255
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-management/azure-api-management.csv`
 
 ## Classification Statistics
@@ -69,18 +69,62 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | configuration | 96 | 34.9% |
 | decision-making | 17 | 6.2% |
 | deployment | 17 | 6.2% |
-| integrations | 27 | 9.8% |
+| integrations | 28 | 10.2% |
 | limits-quotas | 17 | 6.2% |
-| security | 37 | 13.5% |
+| security | 36 | 13.1% |
 | troubleshooting | 6 | 2.2% |
 | *(Unclassified)* | 49 | 17.8% |
 
 ## Changes
 
+### New Pages
+
+- [Import a Logic App web API](https://learn.microsoft.com/en-us/azure/api-management/import-logic-app-as-api)
+
 ### Updated Pages
 
-- [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-17T08:00:00.000Z
+- [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview)
+  - Updated: 2026-02-26T23:12:00.000Z → 2026-03-23T08:00:00.000Z
+- [v2 service tiers](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview)
+  - Updated: 2026-02-05T08:00:00.000Z → 2026-03-30T17:14:00.000Z
+- [Create an instance - Portal](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance)
+  - Updated: 2025-06-23T22:10:00.000Z → 2026-03-31T22:19:00.000Z
+- [3 - Mock API responses](https://learn.microsoft.com/en-us/azure/api-management/mock-api-responses)
+  - Updated: 2025-04-03T22:05:00.000Z → 2026-03-12T08:00:00.000Z
+- [10 - Manage APIs in Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-management/visual-studio-code-tutorial)
+  - Updated: 2025-02-20T08:00:00.000Z → 2026-03-27T22:21:00.000Z
+- [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api)
+  - Updated: 2026-03-04T23:27:00.000Z → 2026-03-31T11:59:00.000Z
+- [Import an App Service web API](https://learn.microsoft.com/en-us/azure/api-management/import-app-service-as-api)
+  - Updated: 2025-04-01T11:23:00.000Z → 2026-03-31T22:19:00.000Z
+- [Import a Container App web API](https://learn.microsoft.com/en-us/azure/api-management/import-container-app-with-oas)
+  - Updated: 2025-04-01T22:03:00.000Z → 2026-03-11T08:00:00.000Z
+- [Import a Function App web API](https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api)
+  - Updated: 2025-09-09T11:11:00.000Z → 2026-03-27T22:21:00.000Z
+- [Import a WebSocket API](https://learn.microsoft.com/en-us/azure/api-management/websocket-api)
+  - Updated: 2026-03-06T17:59:00.000Z → 2026-03-27T22:21:00.000Z
+- [Import a SOAP API and convert to REST](https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api)
+  - Updated: 2025-03-27T08:00:00.000Z → 2026-03-31T22:19:00.000Z
+- [Import Open Data Protocol (OData) API](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-odata)
+  - Updated: 2025-10-08T08:00:00.000Z → 2025-10-10T06:02:00.000Z
+- [Import SAP OData metadata](https://learn.microsoft.com/en-us/azure/api-management/sap-api)
+  - Updated: 2025-04-16T22:02:00.000Z → 2026-03-27T22:21:00.000Z
+- [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies)
+  - Updated: 2025-03-07T23:05:00.000Z → 2026-03-31T22:19:00.000Z
+- [Mutual certificate authentication for backend](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates)
+  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-31T22:19:00.000Z
+- [llm-content-safety](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy)
+  - Updated: 2025-09-10T22:40:00.000Z → 2026-03-25T16:54:00.000Z
+- [Enable console OAuth support](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-oauth2)
+  - Updated: 2025-01-06T08:00:00.000Z → 2026-03-06T08:00:00.000Z
+- [Customize developer portal on WordPress](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-wordpress-plugin)
+  - Updated: 2025-01-10T08:00:00.000Z → 2026-03-31T22:19:00.000Z
+- [Authenticate with username and password](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication)
+  - Updated: 2025-05-22T22:09:00.000Z → 2026-03-27T22:21:00.000Z
+
+### Deleted Pages
+
+- ~~Import a Logic App~~ (https://learn.microsoft.com/en-us/azure/api-management/import-logic-app-as-api)
 
 ## Classified Pages
 
@@ -124,7 +168,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Authenticate and authorize to LLM APIs](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-ai-apis) | security | 0.80 | Describes concrete auth methods (API key, managed identity, OAuth 2.0) with policy usage; includes product-specific security configuration patterns and likely role/scope details. |
 | [Authenticate with Microsoft Entra ID - client secret](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-azure-ad) | security | 0.80 | Uses Entra app with client secret/cert; contains app registration details, scopes, and gateway config parameters specific to APIM. |
 | [Authenticate with Microsoft Entra ID - workload identity](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-workload-identity) | security | 0.80 | Shows how to use Entra workload identity; includes role assignments, identity configuration, and gateway settings unique to APIM. |
-| [Authenticate with username and password](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication) | security | 0.80 | Details how to configure username/password accounts for the portal; includes product-specific auth configuration steps and cautions. |
 | [Configure a custom domain](https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain) | security | 0.80 | Includes specific requirements for host headers, certificate bindings, and endpoint domain configuration, which are security-related settings. |
 | [Configure credential manager - Microsoft Graph API](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-azure-ad) | integrations | 0.80 | Provides step-by-step configuration of a managed connection to Microsoft Graph using Entra and authorization code flow, including provider-specific parameters. |
 | [Deploy a self-hosted gateway to Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-kubernetes-service) | deployment | 0.80 | AKS deployment guide for self-hosted gateway; contains product-specific deployment YAML/Helm values, ports, and resource requirements. |
@@ -132,7 +175,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Deploy to multiple Azure regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region) | deployment | 0.80 | Details Premium multi-region deployment, including configuring regional scale units and availability zones, which are product-specific deployment constraints. |
 | [Manage secrets using named values](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-properties) | configuration | 0.80 | Explains named values, including secrets and Key Vault integration, as a core configuration mechanism with product-specific behavior. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference) | configuration | 0.80 | Reference for metrics, logs, and dimensions emitted by API Management; includes names, meanings, and possibly units—detailed monitoring configuration/reference data. |
-| [Mutual certificate authentication for backend](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates) | security | 0.80 | Explains managing certificates and configuring APIs to use them for backend mutual TLS, including API Management-specific certificate handling. |
 | [Secure APIs using client certificate authentication](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates-for-clients) | security | 0.80 | Details mutual TLS and client certificate validation using API Management policies, including certificate property checks, which are product-specific security patterns. |
 | [Secure access to MCP servers](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers) | security | 0.80 | Focused on securing MCP servers; will include concrete security configuration options, auth methods, and possibly RBAC or policy details specific to MCP scenarios. |
 | [Semantic caching for LLM API requests](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-enable-semantic-caching) | configuration | 0.80 | Provides prerequisites and configuration steps for semantic caching, including specific settings for Redis and API Management policies/parameters. |
@@ -148,7 +190,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [choose](https://learn.microsoft.com/en-us/azure/api-management/choose-policy) | configuration | 0.80 | Explains policy structure for conditional execution with Boolean expressions, including child element ordering, which is detailed APIM configuration. |
 | [cors](https://learn.microsoft.com/en-us/azure/api-management/cors-policy) | configuration | 0.80 | Details policy elements for allowed origins, methods, headers, etc.; product-specific configuration syntax and behavior. |
 | [http-data-source](https://learn.microsoft.com/en-us/azure/api-management/http-data-source-policy) | configuration | 0.80 | Describes how to configure HTTP requests/responses as GraphQL resolvers, including policy elements, which are APIM-specific configuration options. |
-| [llm-content-safety](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy) | security | 0.80 | The llm-content-safety policy reference explains how prompts are sent to Azure AI Content Safety, the resulting 403 behavior, and category/category configuration semantics, which are product-specific security configuration details. |
 | [llm-token-limit](https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy) | limits-quotas | 0.80 | The llm-token-limit policy reference defines numeric token rate and quota limits and their resulting HTTP status codes (429, 403), which are explicit limits/quotas semantics unique to this product. |
 | [mock-response](https://learn.microsoft.com/en-us/azure/api-management/mock-response-policy) | configuration | 0.80 | Explains how the policy chooses between examples, schemas, or empty responses, which is detailed, product-specific behavior and configuration. |
 | [publish-event](https://learn.microsoft.com/en-us/azure/api-management/publish-event-policy) | configuration | 0.80 | Describes how to configure the policy in GraphQL resolvers and how events are published to clients, which is specific APIM GraphQL configuration. |
@@ -160,7 +201,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Authenticate with an access token](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-default-authentication) | security | 0.78 | Default token-based auth method; includes token format, endpoint URL usage, and gateway configuration fields unique to APIM. |
 | [Configure cloud metrics and logs for self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/how-to-configure-cloud-metrics-logs) | configuration | 0.78 | Details telemetry configuration, required outbound connectivity (port 443), and APIM-specific logging/metrics settings. |
 | [Email notifications and templates](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-configure-notifications) | configuration | 0.78 | Contains event types, notification settings, and template configuration specific to API Management; concrete configuration options rather than conceptual overview. |
-| [Enable console OAuth support](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-oauth2) | security | 0.78 | How-to for wiring OAuth 2.0 (Microsoft Entra ID) into the API Management developer portal test console with provider-specific endpoints and configuration fields; contains product-specific auth configuration details rather than generic concepts. |
 | [Export API as custom connector](https://learn.microsoft.com/en-us/azure/api-management/export-api-power-platform) | integrations | 0.78 | Provides concrete steps and parameters to export APIs as custom connectors for Copilot Studio, Power Apps, and Power Automate; product-specific integration pattern. |
 | [Manage protocols and ciphers](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-manage-protocols-ciphers) | security | 0.78 | TLS/cipher management article for APIM; typically lists supported TLS versions, cipher suite names, and configuration switches—product-specific security settings and constraints. |
 | [cache-remove-value](https://learn.microsoft.com/en-us/azure/api-management/cache-remove-value-policy) | configuration | 0.78 | Provides policy syntax and behavior for deleting cache entries by key, which is specific to APIM cache configuration. |
@@ -168,6 +208,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [forward-request](https://learn.microsoft.com/en-us/azure/api-management/forward-request-policy) | configuration | 0.78 | Documents how forward-request interacts with API settings and set-backend-service, including policy attributes, which are APIM-specific configuration details. |
 | [get-authorization-context](https://learn.microsoft.com/en-us/azure/api-management/get-authorization-context-policy) | security | 0.78 | Explains how to fetch and store tokens from configured credential providers via connections; product-specific auth/authorization configuration. |
 | [jsonp](https://learn.microsoft.com/en-us/azure/api-management/jsonp-policy) | configuration | 0.78 | Details policy elements to add JSONP support, including callback parameter configuration, which is specific to APIM policy behavior. |
+| [llm-content-safety](https://learn.microsoft.com/en-us/azure/api-management/llm-content-safety-policy) | configuration | 0.78 | Policy reference pages for Azure API Management typically list specific policy attributes, allowed values, defaults, and behavior (for example, how categories are specified, what happens on detection, HTTP status codes like 403, and how to configure calls to Azure AI Content Safety). These are product-specific configuration parameters and behaviors that qualify as expert knowledge beyond generic LLM training. The content is not just conceptual; it describes concrete policy usage and settings. |
 | [rate-limit-by-key](https://learn.microsoft.com/en-us/azure/api-management/rate-limit-by-key-policy) | limits-quotas | 0.78 | Policy reference pages include exact policy attributes, allowed values, and behavior (HTTP 429 on exceed) that are product-specific. This policy sets numeric call limits per time period, which are expert, implementation-level details. |
 | [redirect-content-urls](https://learn.microsoft.com/en-us/azure/api-management/redirect-content-urls-policy) | configuration | 0.78 | Documents specific policy configuration for rewriting links in response bodies, including behavior differences between inbound and outbound sections, which are APIM-specific settings. |
 | [rewrite-uri](https://learn.microsoft.com/en-us/azure/api-management/rewrite-uri-policy) | configuration | 0.78 | Gives exact policy syntax and options for URL rewriting in APIM, including attributes and usage constraints that are specific to this product’s policy engine. |
@@ -202,6 +243,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [validate-content](https://learn.microsoft.com/en-us/azure/api-management/validate-content-policy) | limits-quotas | 0.75 | Policy reference lists supported schema formats/content types and includes a 4 MB maximum schema size limit; explicit numeric constraint and behavior. |
 | [validate-status-code](https://learn.microsoft.com/en-us/azure/api-management/validate-status-code-policy) | limits-quotas | 0.75 | Policy reference includes a 4 MB maximum API schema size limit and notes on behavior when exceeded; explicit numeric limit plus configuration. |
 | [Configure credential manager - GitHub](https://learn.microsoft.com/en-us/azure/api-management/credentials-how-to-github) | integrations | 0.74 | How-to for managed GitHub connection with OAuth 2.0 authorization code flow; likely includes APIM credential manager parameters, redirect URIs, and provider-specific config values beyond generic OAuth theory. |
+| [Mutual certificate authentication for backend](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates) | security | 0.74 | The article provides product-specific security configuration details for Azure API Management, including how to manage client certificates, bind them to APIs/backends, and configure mutual TLS. It focuses on concrete configuration steps and settings unique to APIM security rather than generic TLS concepts, which qualifies as expert security knowledge. |
 | [Self-hosted gateway authentication options](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-authentication-options) | security | 0.74 | Summarizes gateway authentication modes; references configuration settings for authenticating to cloud APIM endpoint—product-specific security configuration. |
 | [azure-openai-semantic-cache-lookup](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-semantic-cache-lookup-policy) | configuration | 0.74 | The azure-openai-semantic-cache-lookup policy reference includes specific configuration such as similarity score thresholds, vector proximity behavior, and external cache settings, which are detailed product-specific configuration parameters. |
 | [azure-openai-semantic-cache-store](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-semantic-cache-store-policy) | configuration | 0.74 | The azure-openai-semantic-cache-store policy reference defines concrete policy elements and cache configuration for storing responses, which are expert configuration details unique to this integration. |
@@ -219,6 +261,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [API Management features availability](https://learn.microsoft.com/en-us/azure/api-management/api-management-features) | decision-making | 0.70 | Feature comparison of pricing tiers in table form to guide SKU selection; used for deciding which tier to use based on capabilities. Contains decision-enabling matrices even if not heavily numeric. |
 | [API version retirements (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/api-version-retirement-sep-2023) | decision-making | 0.70 | Specifies retirement of all API versions prior to 2021-08-01 and instructs updating tools/scripts to newer versions, which is concrete migration and version-selection decision guidance. |
 | [Add caching to improve performance](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache) | best-practices | 0.70 | Provides concrete guidance on configuring caching, including scope choices and behaviors specific to API Management’s built-in cache. |
+| [Authenticate with username and password](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication) | security | 0.70 | Describes concrete, product-specific steps and settings to configure basic authentication for the Azure API Management developer portal, including how user accounts and credentials are managed. These are specific security configuration details rather than generic authentication concepts. |
 | [Automate portal deployments](https://learn.microsoft.com/en-us/azure/api-management/automate-portal-deployments) | deployment | 0.70 | Describes migrating portal content via content management REST API; includes deployment patterns and API details unique to APIM. |
 | [Call external services from policies](https://learn.microsoft.com/en-us/azure/api-management/api-management-sample-send-request) | integrations | 0.70 | Uses send-request and related policies with specific configuration to integrate external services; product-specific policy integration patterns. |
 | [Configure Front Door](https://learn.microsoft.com/en-us/azure/api-management/front-door-api-management) | architecture-patterns | 0.70 | Describes a concrete pattern using Front Door for global load balancing, TLS offload, caching, and WAF in front of API Management, with product-specific behavior. |
@@ -233,6 +276,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Direct management API retirement (March 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/direct-management-api-retirement-march-2025) | decision-making | 0.70 | Specifies retirement date for the direct management API and instructs migration to ARM-based API, which is concrete API selection and migration guidance. |
 | [Enable Cross-Origin Resource Sharing (CORS) for interactive console](https://learn.microsoft.com/en-us/azure/api-management/enable-cors-developer-portal) | security | 0.70 | Shows how to configure CORS policy for APIM APIs to support the portal console; includes policy syntax and settings specific to APIM. |
 | [Enable Dapr support on self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-enable-dapr) | integrations | 0.70 | Dapr support article; includes configuration for exposing Dapr services as APIs, with APIM- and Dapr-specific parameters. |
+| [Enable console OAuth support](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-oauth2) | security | 0.70 | Contains product-specific OAuth 2.0 configuration steps and parameter values (authorization endpoints, client IDs/secrets, scopes, callback URLs) required to integrate external identity providers with the Azure API Management developer portal test console. These are concrete security/auth configuration details beyond generic OAuth concepts. |
 | [Export APIs to Postman for API development](https://learn.microsoft.com/en-us/azure/api-management/export-api-postman) | integrations | 0.70 | Describes how to export API definitions as Postman collections with product-specific options and constraints (e.g., what is exported vs not). |
 | [Expose REST API as MCP server](https://learn.microsoft.com/en-us/azure/api-management/export-rest-mcp-server) | integrations | 0.70 | How-to for exposing REST APIs as MCP servers; includes protocol-specific configuration, tool mappings, and endpoint settings unique to this integration. |
 | [Expose existing MCP server](https://learn.microsoft.com/en-us/azure/api-management/expose-existing-mcp-server) | integrations | 0.70 | Shows how to integrate existing MCP servers; requires specific configuration parameters and patterns for connecting and exposing tools via MCP. |
@@ -242,9 +286,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Import Amazon Bedrock API](https://learn.microsoft.com/en-us/azure/api-management/amazon-bedrock-passthrough-llm-api) | integrations | 0.70 | The article covers importing Amazon Bedrock LLM APIs as passthrough APIs in Azure API Management, using AI gateway policies. This is a cross-cloud, product-specific integration scenario with concrete API and configuration patterns that go beyond generic knowledge. |
 | [Import Azure OpenAI API](https://learn.microsoft.com/en-us/azure/api-management/azure-openai-api-from-specification) | integrations | 0.70 | Shows two concrete methods to import Azure OpenAI APIs; involves specific configuration values, endpoints, and parameters for this product integration. |
 | [Import Google Gemini API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-google-gemini-api) | integrations | 0.70 | The page focuses on importing an OpenAI-compatible Google Gemini API and managing a chat completions endpoint in Azure API Management. This implies specific configuration and endpoint details for Gemini models exposed via OpenAI-compatible semantics, which are product- and provider-specific integration patterns. |
-| [Import a SOAP API and convert to REST](https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api) | limits-quotas | 0.70 | Includes the same specific WSDL import restrictions as the SOAP import article, which are product-specific format limits. |
 | [Import a Simple Object Access Protocol (SOAP) API](https://learn.microsoft.com/en-us/azure/api-management/import-soap-api) | limits-quotas | 0.70 | Documents concrete WSDL import restrictions (unsupported directives) which are precise format limits for the product. |
-| [Import a WebSocket API](https://learn.microsoft.com/en-us/azure/api-management/websocket-api) | limits-quotas | 0.70 | The page explicitly mentions 'WebSocket limitations' for Azure API Management and, in this context, typically documents concrete constraints such as maximum message size, connection duration, and supported tiers. These are product- and tier-specific numeric limits that an LLM is unlikely to know reliably from training, fitting the limits-quotas sub-skill. Other aspects (how to add/import a WebSocket API) are more tutorial-like, but the limitations section constitutes expert knowledge. |
+| [Import a WebSocket API](https://learn.microsoft.com/en-us/azure/api-management/websocket-api) | limits-quotas | 0.70 | The page explicitly mentions WebSocket limitations and is likely to list concrete constraints (for example, message size, connection limits, or timeout values) for different API Management tiers, which qualifies as expert knowledge under limits-quotas. |
 | [Import agent-to-agent (A2A) API](https://learn.microsoft.com/en-us/azure/api-management/agent-to-agent-api) | integrations | 0.70 | Covers A2A protocol–compatible agent APIs; includes protocol-specific configuration, endpoints, and parameters unique to this integration. |
 | [Import language model API](https://learn.microsoft.com/en-us/azure/api-management/openai-compatible-llm-api) | integrations | 0.70 | The article describes how to import OpenAI-compatible and non-compatible LLM endpoints as REST APIs in Azure API Management, which typically includes product-specific endpoint shapes, request/response schemas, and configuration details unique to API Management’s AI gateway policies. This is concrete integration guidance rather than a conceptual overview. |
 | [Integrate Application Gateway in internal virtual network](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-integrate-internal-vnet-appgateway) | architecture-patterns | 0.70 | Describes a concrete architecture pattern combining internal-mode API Management with Application Gateway/WAF, including configuration and traffic flow trade-offs. |
@@ -267,18 +310,19 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Reuse policy configurations](https://learn.microsoft.com/en-us/azure/api-management/policy-fragments) | configuration | 0.70 | Describes how to define and apply reusable policy XML fragments, including limitations; product-specific configuration pattern. |
 | [Self-hosted gateway support policy](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-support-policies) | limits-quotas | 0.70 | Support policies article typically lists explicit limitations, supported versions, and constraints (for tiers, environments) that function as product-specific limits/quotas. |
 | [Send events to Event Grid](https://learn.microsoft.com/en-us/azure/api-management/how-to-event-grid) | integrations | 0.70 | Details specific API Management event types, subscription configuration, and Event Grid integration behavior, which are product-specific integration patterns. |
+| [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.70 | Explains how to configure policies via XML policy definitions and the policy editor. Policy configuration in API Management is highly product-specific and typically includes concrete policy names, XML elements, and allowed settings, which qualifies as expert configuration knowledge. |
 | [Upgrade and scale](https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale) | decision-making | 0.70 | Covers tier-specific scaling behavior, unit-based capacity guidance, and how to choose scale units/tiers for load, which is concrete decision guidance beyond generic knowledge. |
 | [Virtual network changes (March 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-mar-2023) | configuration | 0.70 | Describes specific new source IP addresses per region and required network configuration updates, which are concrete, product-specific configuration details. |
 | [Virtual network changes (September 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-sep-2023) | configuration | 0.70 | Provides exact new source IP address for Switzerland North and steps to adjust network configuration, which are concrete configuration details. |
 | [cross-domain](https://learn.microsoft.com/en-us/azure/api-management/cross-domain-policy) | configuration | 0.70 | Policy reference for enabling Flash/Silverlight cross-domain access with specific configuration elements; product-specific policy configuration. |
 | [emit-metric](https://learn.microsoft.com/en-us/azure/api-management/emit-metric-policy) | configuration | 0.70 | The emit-metric policy reference documents concrete policy attributes and formats for sending metrics to Application Insights, including configuration parameters unique to API Management. |
 | [trace](https://learn.microsoft.com/en-us/azure/api-management/trace-policy) | configuration | 0.70 | The trace policy reference defines specific policy elements and options for emitting traces to the test console, Application Insights, and logs, which are detailed configuration parameters. |
+| [v2 service tiers](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview) | decision-making | 0.70 | Tier/SKU-focused article that introduces v2 tiers and links to detailed comparison of API Management tiers; such content typically includes criteria for when to use each tier and trade-offs between v2 and classic tiers, supporting technology selection decisions. |
 | [validate-headers](https://learn.microsoft.com/en-us/azure/api-management/validate-headers-policy) | limits-quotas | 0.70 | Policy reference includes a specific maximum API schema size limit (4 MB) and behavior when exceeded; this is an explicit numeric limit/constraint. |
 | [validate-odata-request](https://learn.microsoft.com/en-us/azure/api-management/validate-odata-request-policy) | configuration | 0.70 | Policy reference for validating OData request URLs, headers, and parameters; includes product-specific configuration elements. |
 | [validate-parameters](https://learn.microsoft.com/en-us/azure/api-management/validate-parameters-policy) | limits-quotas | 0.70 | Includes explicit maximum API schema size (4 MB) and versioning caveats; numeric limit qualifies as limits-quotas plus configuration details. |
 | [Connect privately using private endpoint](https://learn.microsoft.com/en-us/azure/api-management/private-endpoint) | configuration | 0.68 | Page describes how to configure an inbound private endpoint for Azure API Management using Private Link, including product-specific settings and network configuration steps (VNet, private endpoint association, DNS behavior). This is concrete, product-specific configuration guidance rather than a conceptual overview, fitting the configuration sub-skill best. |
 | [Create subscriptions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-subscriptions) | configuration | 0.68 | Walkthrough for creating subscriptions; includes subscription key handling, scope options, and settings specific to APIM. |
-| [Customize developer portal on WordPress](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-wordpress-plugin) | configuration | 0.68 | Covers concrete plugin settings and wiring between WordPress and API Management developer portal; product-specific configuration details. |
 | [Metrics retirements (August 2023)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/metrics-retirement-aug-2023) | configuration | 0.68 | Details specific metric names being retired and the replacement metric, along with guidance to update monitoring and alert rules—product-specific monitoring configuration knowledge. |
 | [Monitor API Management](https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management) | configuration | 0.68 | Monitoring article usually lists specific metrics, log categories, and diagnostic settings for APIM in Azure Monitor—product-specific configuration details. |
 | [Manage user accounts](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-create-or-invite-developers) | configuration | 0.66 | User management how-to; likely includes specific user states, operations, and REST API entity details unique to APIM. |
@@ -293,12 +337,11 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Deploy self-hosted gateway to Kubernetes with OpenTelemetry Collector integration](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-opentelemetry) | integrations | 0.65 | The page describes deploying the self-hosted gateway with automatic export of metrics to an OpenTelemetry Collector. This implies product-specific integration details (collector configuration, metrics export behavior, and gateway–OpenTelemetry wiring) that go beyond generic concepts. These are concrete integration patterns between API Management and OpenTelemetry, fitting the integrations sub-skill. |
 | [DevOps and Continuous Integration/Continuous Deployment (CI/CD)](https://learn.microsoft.com/en-us/azure/api-management/devops-api-development-templates) | decision-making | 0.65 | Discusses specific decisions and patterns for structuring API DevOps pipelines with API Management, providing concrete guidance on approach selection. |
 | [How API Management supports monetization](https://learn.microsoft.com/en-us/azure/api-management/monetization-support) | decision-making | 0.65 | Maps API Management features to monetization scenarios and flows; provides implementation-oriented guidance for choosing features to support a monetization strategy. |
-| [Import an App Service web API](https://learn.microsoft.com/en-us/azure/api-management/import-app-service-as-api) | integrations | 0.65 | Integration guide for App Service APIs; includes specific configuration steps and parameters for binding a web app to API Management. |
+| [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api) | integrations | 0.65 | Describes importing Microsoft Foundry AI model endpoints as APIs and using AI gateway policies; this is a product-specific integration pattern likely including endpoint configuration details and API Management-specific settings. |
+| [Import a SOAP API and convert to REST](https://learn.microsoft.com/en-us/azure/api-management/restify-soap-api) | limits-quotas | 0.65 | Includes a dedicated note about WSDL import limitations and unsupported directives (wsdl:import, xsd:import, xsd:include). These are concrete product-specific constraints on supported WSDL structures, fitting the limits-quotas category as expert knowledge. |
 | [Import an OpenAPI Specification](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-oas) | integrations | 0.65 | Shows importing OpenAPI specs via portal/CLI/PowerShell; includes tool-specific parameters and API Management import options, plus version support and restrictions. |
 | [Move instances between regions](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-migrate) | deployment | 0.65 | Provides a concrete migration path using backup/restore operations and region-specific constraints, which are product-specific deployment/migration details. |
-| [Set or edit policies](https://learn.microsoft.com/en-us/azure/api-management/set-edit-policies) | configuration | 0.65 | Explains editing policy XML, scopes, and structure in detail; product-specific configuration behavior for policies. |
 | [Use capacity for scaling decisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-capacity) | decision-making | 0.65 | Explains specific Azure Monitor capacity metrics, their behavior, and how to interpret them to decide when to scale or upgrade an API Management instance. |
-| [v2 service tiers](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview) | decision-making | 0.65 | Describes v2 SKUs and compares them to classic tiers to guide tier selection; supports migration/upgrade decisions between SKUs. |
 | [Built-in analytics dashboard retirement (March 2027)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/analytics-dashboard-retirement-march-2027) | decision-making | 0.64 | Specifies retirement date for the built-in analytics dashboard and points to the Azure Monitor-based replacement, guiding monitoring solution choices and migration. |
 | [CAPTCHA endpoint update (September 2025)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/captcha-endpoint-change-sep-2025) | configuration | 0.64 | Provides a specific date and new CAPTCHA endpoint, requiring VNet/network configuration updates to keep the developer portal working—expert configuration detail. |
 | [Workspaces preview breaking changes (June 2024)](https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/workspaces-breaking-changes-june-2024) | decision-making | 0.64 | Describes specific breaking changes, dates, and which workspace configurations are affected, guiding users on when and how to update or recreate workspaces—migration/decision-focused expert guidance. |
@@ -309,6 +352,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Create an instance - ARM template](https://learn.microsoft.com/en-us/azure/api-management/quickstart-arm-template) | configuration | 0.60 | ARM template quickstart exposes specific resource types, properties, and parameter names for API Management configuration, which are product-specific settings. |
 | [Create an instance - Bicep](https://learn.microsoft.com/en-us/azure/api-management/quickstart-bicep) | configuration | 0.60 | Bicep quickstart typically includes resource properties and parameter names/values specific to API Management, which are configuration details beyond generic knowledge. |
 | [Create an instance - Terraform](https://learn.microsoft.com/en-us/azure/api-management/quickstart-terraform) | configuration | 0.60 | Terraform article will include provider-specific resource blocks and arguments for API Management, which are concrete configuration parameters unique to this product. |
+| [Import an App Service web API](https://learn.microsoft.com/en-us/azure/api-management/import-app-service-as-api) | integrations | 0.60 | Shows how to import an Azure App Service web API into API Management; this cross-service integration typically includes product-specific configuration such as URL formats, authentication linkage, and API import settings. |
 | [Manage using automation](https://learn.microsoft.com/en-us/azure/api-management/automation-manage-api-management) | deployment | 0.60 | Describes concrete use of Azure Automation to manage API Management, including product-specific runbook and management patterns beyond generic automation concepts. |
 | [Recover a deleted instance](https://learn.microsoft.com/en-us/azure/api-management/soft-delete) | configuration | 0.60 | Describes the soft-delete behavior and recovery process for API Management instances, including product-specific recovery configuration and constraints. |
 | [Use policy expressions](https://learn.microsoft.com/en-us/azure/api-management/api-management-policy-expressions) | integrations | 0.60 | Details syntax and available context objects for policy expressions; effectively an API surface for expressions with product-specific members and behaviors. |
@@ -334,20 +378,19 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Test self-hosted portal](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-testing) | 0.40 | Focuses on setting up unit and end-to-end tests for the self-hosted portal; likely a procedural tutorial without configuration matrices, limits, or product-specific troubleshooting mappings. |
 | [1 - Import your first API](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish) | 0.35 | Tutorial on importing and testing an API; mostly procedural without detailed config tables or limits. |
 | [2 - Create and publish a product](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-add-products) | 0.35 | Tutorial for creating and publishing a product; summary doesn’t show numeric quotas or detailed configuration tables, just conceptual usage quota mention. |
-| [3 - Mock API responses](https://learn.microsoft.com/en-us/azure/api-management/mock-api-responses) | 0.35 | Mock responses tutorial; focuses on applying a policy in the portal, not on detailed policy configuration matrices or limits. |
 | [9 - Customize developer portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize) | 0.35 | Developer portal customization tutorial; mostly UI-driven steps without deep configuration tables or security/limits details. |
 | [Caching overview](https://learn.microsoft.com/en-us/azure/api-management/caching-overview) | 0.35 | Caching overview; conceptual explanation of caching behavior without detailed config parameter tables or numeric limits. |
 | [Configure backends](https://learn.microsoft.com/en-us/azure/api-management/backends) | 0.35 | Backends overview; mostly conceptual with examples, not a configuration or limits reference. |
-| [Import SAP OData metadata](https://learn.microsoft.com/en-us/azure/api-management/sap-api) | 0.35 | SAP OData import example; primarily a scenario-based tutorial without deep configuration or limits reference. |
-| [10 - Manage APIs in Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-management/visual-studio-code-tutorial) | 0.30 | VS Code extension tutorial for importing and managing APIs; primarily tooling workflow, not configuration matrices or limits. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/api-management/policy-reference) | 0.30 | This is an index of Azure Policy built-in definitions for API Management, primarily navigational. It links out to definitions but does not itself contain detailed configuration tables or numeric thresholds. |
 | [Create an instance - CLI](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance-cli) | 0.30 | Quickstart showing CLI commands to create an instance; lacks parameter tables, limits, or advanced configuration beyond basic provisioning. |
 | [Create an instance - PowerShell](https://learn.microsoft.com/en-us/azure/api-management/powershell-create-service-instance) | 0.30 | PowerShell quickstart for instance creation; focuses on basic provisioning commands, not detailed configuration options or quotas. |
+| [Customize developer portal on WordPress](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-wordpress-plugin) | 0.30 | Primarily a customization/tutorial guide for using a WordPress plugin with the API Management developer portal. It does not emphasize detailed configuration parameter tables, limits, security roles, or troubleshooting mappings that would constitute expert knowledge under the defined categories. |
 | [Deploy a self-hosted gateway to Kubernetes (Helm)](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-helm) | 0.30 | The article is a step-by-step tutorial on deploying the self-hosted gateway to Kubernetes using Helm. From the summary, it appears to focus on procedural deployment steps without exposing tier-specific deployment matrices, constraints, or detailed configuration parameter tables. It reads as a standard deployment tutorial rather than a reference of expert configuration or limits. |
-| [Import Open Data Protocol (OData) API](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-odata) | 0.30 | OData import walkthrough; no detailed limits, config parameter tables, or troubleshooting content. |
-| [Import a Container App web API](https://learn.microsoft.com/en-us/azure/api-management/import-container-app-with-oas) | 0.30 | Step-by-step import tutorial for Container Apps into API Management; no config tables, limits, or product-specific troubleshooting details. |
-| [Import a Function App web API](https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api) | 0.30 | How-to import Function Apps as APIs; procedural content without limits, config matrices, or detailed error mappings. |
-| [Import a Logic App](https://learn.microsoft.com/en-us/azure/api-management/import-logic-app-as-api) | 0.30 | Logic App import walkthrough; no numeric limits, decision matrices, or deep configuration reference. |
+| [Import Open Data Protocol (OData) API](https://learn.microsoft.com/en-us/azure/api-management/import-api-from-odata) | 0.30 | Covers importing an OData-compliant service as an API; appears to be a how-to article without detailed numeric limits, configuration parameter tables, or troubleshooting mappings. |
+| [Import SAP OData metadata](https://learn.microsoft.com/en-us/azure/api-management/sap-api) | 0.30 | Describes importing SAP OData metadata into API Management; summary suggests a procedural tutorial without explicit limits, configuration matrices, or error-code-based troubleshooting. |
+| [Import a Container App web API](https://learn.microsoft.com/en-us/azure/api-management/import-container-app-with-oas) | 0.30 | Tutorial-style guide for importing an Azure Container App into API Management via the portal; no indication of numeric limits, configuration parameter tables, error-code mappings, or other expert-only details. |
+| [Import a Function App web API](https://learn.microsoft.com/en-us/azure/api-management/import-function-app-as-api) | 0.30 | Describes how to import a Function App as an API and notes automatic host key generation, but appears to be a step-by-step tutorial without detailed configuration tables, limits, or troubleshooting mappings. |
+| [Import a Logic App web API](https://learn.microsoft.com/en-us/azure/api-management/import-logic-app-as-api) | 0.30 | Shows how to import a Logic App (Consumption) as an API; content is procedural and high level, without numeric limits, decision matrices, or product-specific configuration parameter tables. |
 | [Manage API revisions](https://learn.microsoft.com/en-us/azure/api-management/api-management-revisions) | 0.30 | Conceptual explanation of revisions; no detailed configuration parameters or limits. |
 | [Manage API versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-versions) | 0.30 | Conceptual explanation of versions; lacks numeric thresholds, decision matrices, or product-specific config tables. |
 | [Monetization overview](https://learn.microsoft.com/en-us/azure/api-management/monetization-overview) | 0.30 | High-level monetization overview and strategy stages; primarily conceptual/business content without detailed technical limits, configs, or decision matrices. |
@@ -357,12 +400,13 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Edit an API](https://learn.microsoft.com/en-us/azure/api-management/edit-api) | 0.25 | Basic editing tutorial for APIs/Swagger in the portal; no deep config reference, limits, or troubleshooting mappings. |
 | [Understand the developer portal](https://learn.microsoft.com/en-us/azure/api-management/developer-portal-overview) | 0.25 | Developer portal overview; mostly conceptual description of features and capabilities, not detailed config or limits. |
 | [Workspaces overview](https://learn.microsoft.com/en-us/azure/api-management/workspaces-overview) | 0.25 | Workspaces overview; primarily conceptual description of feature and scenarios, not detailed configuration or limits. |
+| [10 - Manage APIs in Visual Studio Code](https://learn.microsoft.com/en-us/azure/api-management/visual-studio-code-tutorial) | 0.20 | Tutorial for using the API Management VS Code extension; mainly operational walkthrough without detailed configuration parameter tables, limits, or decision matrices. |
+| [3 - Mock API responses](https://learn.microsoft.com/en-us/azure/api-management/mock-api-responses) | 0.20 | Tutorial on mocking API responses using policies; focuses on how-to steps rather than product-specific configuration matrices, limits, or error-code-based troubleshooting. |
 | [8 - Add multiple versions](https://learn.microsoft.com/en-us/azure/api-management/api-management-get-started-publish-versions) | 0.20 | Tutorial on publishing multiple API versions; based on the summary it appears to be procedural guidance without specific limits, configuration tables, error codes, or decision matrices. No clear product-specific numeric limits, configuration parameter tables, or troubleshooting mappings are indicated. |
-| [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview) | 0.20 | Gateway overview and comparison is conceptual; summary doesn’t indicate concrete limits, configuration tables, or decision matrices with thresholds. |
-| [Create an instance - Portal](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance) | 0.20 | Portal-based quickstart for creating an instance; step-by-step tutorial without detailed configuration matrices or limits. |
+| [API Management gateways](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview) | 0.20 | High-level overview of API Management gateways and comparison of Azure-managed vs self-hosted gateways without concrete limits, configuration tables, or decision matrices with quantified trade-offs. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/api-management/api-management-faq) | 0.20 | FAQ page with general questions; summary does not indicate detailed error codes, configuration tables, or numeric thresholds. Likely high-level guidance rather than expert configuration or troubleshooting content. |
 | [GraphQL API options](https://learn.microsoft.com/en-us/azure/api-management/graphql-apis-overview) | 0.20 | GraphQL overview and capabilities; conceptual description of models without detailed config tables or numeric thresholds. |
-| [Import Microsoft Foundry API](https://learn.microsoft.com/en-us/azure/api-management/azure-ai-foundry-api) | 0.20 | Describes how to import Microsoft Foundry APIs into Azure API Management; summary suggests a how-to/tutorial style without detailed configuration parameter tables, limits, or error-code-based troubleshooting. No strong evidence of expert-only configuration or decision matrices. |
 | [Observability overview](https://learn.microsoft.com/en-us/azure/api-management/observability) | 0.20 | High-level overview of observability options; likely conceptual and navigational without detailed config tables or limits. |
 | [About API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts) | 0.10 | High-level overview of Azure API Management concepts and scenarios without numeric limits, configuration tables, or product-specific troubleshooting or security details. |
+| [Create an instance - Portal](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance) | 0.10 | Quickstart for creating an API Management instance via the portal; primarily step-by-step UI guidance without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Understand terminology](https://learn.microsoft.com/en-us/azure/api-management/api-management-terminology) | - | Terminology/definitions only; no configuration, limits, or troubleshooting content. |

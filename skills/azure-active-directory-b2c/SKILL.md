@@ -1,9 +1,9 @@
 ---
 name: azure-active-directory-b2c
-description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing B2C user flows/custom policies, MFA/IdP sign-in, app/API registration, CI/CD deployment, or logging, and other Azure Active Directory B2C related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Security (use azure-security), Azure Role-based access control (use azure-rbac), Azure Sentinel (use azure-sentinel).
+description: Expert knowledge for Azure Active Directory B2C development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing custom policies/user flows, MFA & IdP sign-in, app/API registration, CI/CD deployments, or Sentinel logging, and other Azure Active Directory B2C related development tasks. Not for Azure Information Protection (use azure-information-protection), Azure Role-based access control (use azure-rbac), Azure Security (use azure-security), Azure Portal (use azure-portal).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Active Directory B2C Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L62-L70 | Global Azure AD B2C customer identity architectures, comparing funnel- vs region-based designs, and step-by-step proof-of-concept implementations for each pattern |
 | Limits & Quotas | L71-L78 | Service limits, quotas, and restrictions for Azure AD B2C tenants, including directory size, token formats/constraints, and tenant creation and scaling limits. |
 | Security | L79-L95 | Security hardening for Azure AD B2C: MFA, Conditional Access, Identity Protection, CAPTCHA, keys/certs, TLS/ciphers, admin roles, tenant control, API connector security, and Sentinel logging. |
-| Configuration | L96-L210 | Configuring Azure AD B2C: custom policies, user flows, tokens, MFA, identity providers, app/API registration, UI/localization, claims, journeys, SSO, and advanced auth options for many app types. |
+| Configuration | L96-L210 | Configuring Azure AD B2C: custom policies, user flows, tokens, MFA, identity providers, claims/transformations, app/API registration, UI/localization, SSO, security, and advanced auth options. |
 | Integrations & Coding Patterns | L211-L323 | End-to-end patterns for integrating Azure AD B2C into apps and APIs, configuring identity providers, custom policies, fraud/risk tools, and securing traffic with proxies, WAFs, and monitoring. |
 | Deployment | L324-L328 | Automating deployment of Azure AD B2C custom policies using CI/CD pipelines, including setup steps, YAML examples, and best practices for Azure Pipelines and GitHub Actions. |
 
@@ -102,7 +102,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure token enrichment with external APIs in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-api-connector-token-enrichment |
 | Add external identity providers to Azure AD B2C tenant | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-identity-provider |
 | Add and configure native client apps in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-native-application |
-| Configure password change using custom policies in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy |
+| Configure Azure AD B2C custom policy for password change | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy |
 | Configure password reset user flows in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy |
 | Configure profile editing user flows in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-profile-editing-policy |
 | Configure resource owner password credentials (ROPC) flow in Azure AD B2C | https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-ropc-policy |

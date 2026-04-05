@@ -1,9 +1,9 @@
 ---
 name: azure-automation
-description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Azure Automation runbooks/DSC, Hybrid Runbook Workers, Change Tracking, CI/CD, or cross-cloud integrations, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager (use azure-update-manager).
+description: Expert knowledge for Azure Automation development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when automating runbooks/DSC, Hybrid Runbook Workers, Change Tracking, Azure/AWS/365 integrations, or migrations, and other Azure Automation related development tasks. Not for Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure DevOps (use azure-devops).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-05"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Automation Skill
@@ -28,7 +28,7 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L56 | Best practices for structuring, chaining, and managing runbooks, handling errors and output streams, ensuring resilient execution, and avoiding context-switching issues in Azure Automation. |
 | Decision Making | L57-L66 | Guidance on choosing Azure Automation runbook types and planning migrations (Orchestrator, Log Analytics agent, Hybrid workers, Run As accounts, AzureRM→Az, and agent-to-extension changes). |
 | Limits & Quotas | L67-L74 | Limits, quotas, and version/support details for Azure Automation: DSC extension changes, Automation resource limits, subscription quotas, and Change Tracking/Inventory support with AMA. |
-| Security | L75-L95 | Securing Automation accounts: identities (system/user-assigned), Entra auth, RBAC, encryption, private endpoints, policies, and safe use of credentials/certs in runbooks and Terraform. |
+| Security | L75-L95 | Securing Automation accounts: identities, RBAC, auth methods, encryption, certificates/credentials, private endpoints, Azure Policy, and Terraform-based secure provisioning. |
 | Configuration | L96-L136 | Configuring Azure Automation runbooks and DSC: alerts, schedules, parameters, hybrid workers, source control, Python/PowerShell modules, policy, and Change Tracking/Inventory at scale. |
 | Integrations & Coding Patterns | L137-L149 | Integrating Automation runbooks with Azure/AWS/Office 365/SQL, authenticating via identities/webhooks, deploying ARM, sending logs to Monitor, and emailing via SendGrid |
 | Deployment | L150-L158 | Guides for deploying resilient Automation accounts and Hybrid Runbook Workers (Windows/Linux), using availability zones, DR planning, and CI/CD with DSC and Chocolatey. |
@@ -82,7 +82,7 @@ This skill requires **network access** to fetch documentation content:
 | Apply security best practices for Azure Automation accounts | https://learn.microsoft.com/en-us/azure/automation/automation-security-guidelines |
 | Configure authentication methods for Azure Automation accounts | https://learn.microsoft.com/en-us/azure/automation/automation-security-overview |
 | Configure Microsoft Entra ID authentication for Azure Automation | https://learn.microsoft.com/en-us/azure/automation/automation-use-azure-ad |
-| Disable local authentication and enforce Entra auth in Automation | https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication |
+| Disable local authentication for Azure Automation securely | https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication |
 | Disable system-assigned managed identity on Automation accounts | https://learn.microsoft.com/en-us/azure/automation/disable-managed-identity-for-automation |
 | Enable system-assigned managed identity for Azure Automation | https://learn.microsoft.com/en-us/azure/automation/enable-managed-identity-for-automation |
 | Secure Azure Automation access with Private Link and private endpoints | https://learn.microsoft.com/en-us/azure/automation/how-to/private-link-security |
