@@ -1,9 +1,9 @@
 ---
 name: azure-communication-services
-description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling, chat, SMS, email, Teams interop, Job Router, or contact center solutions, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure Web PubSub (use azure-web-pubsub).
+description: Expert knowledge for Azure Communication Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email, Teams interop, or Job Router workloads, and other Azure Communication Services related development tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure SignalR Service (use azure-signalr-service).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Communication Services Skill
@@ -31,7 +31,7 @@ This skill requires **network access** to fetch documentation content:
 | Limits & Quotas | L160-L227 | Limits, quotas, regional availability, and restrictions for ACS calling, phone numbers, email, Teams interop, media features, and troubleshooting token/metric-related issues. |
 | Security | L228-L254 | Security, auth, and compliance for ACS: encryption, identities, HMAC, webhooks, Teams interop controls, captions/RTT/transcription data, caller ID, WhatsApp/email, and emergency calling. |
 | Configuration | L255-L334 | Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video, SMS, email, calling, routing), plus configuration for Teams interop, domains, routing, UI library, and SMS/email compliance. |
-| Integrations & Coding Patterns | L335-L481 | End-to-end patterns for integrating ACS calling, chat, SMS, email, WhatsApp, Teams, Job Router, bots, AI, and UI libraries, including media control, events, push, and telephony features. |
+| Integrations & Coding Patterns | L335-L481 | Patterns and code to integrate ACS calling, chat, SMS, email, Rooms, Job Router, and WhatsApp with apps, bots, Teams, OpenAI, push/events, media, and telephony features. |
 | Deployment | L482-L486 | Infrastructure and deployment guidance for Azure Communication Services: direct routing requirements and automating ACS/Email resource provisioning with PowerShell. |
 
 ### Troubleshooting
@@ -400,7 +400,7 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Android TelecomManager with ACS UI Library | https://learn.microsoft.com/en-us/azure/communication-services/how-tos/ui-library-sdk/telecommanager |
 | Download WhatsApp media from ACS Event Grid messages | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/download-media |
 | Integrate app with WhatsApp text and media messaging | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/get-started |
-| Subscribe to WhatsApp Advanced Messaging Event Grid events | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events |
+| Subscribe to WhatsApp Advanced Messaging events with Event Grid | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events |
 | Implement interactive WhatsApp messages with ACS SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-interactive-messages |
 | Send WhatsApp reaction messages using ACS SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-reaction-messages |
 | Send WhatsApp sticker messages with Advanced Messages SDK | https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/send-sticker-messages |

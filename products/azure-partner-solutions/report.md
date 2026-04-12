@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 - **Unclassified**: 76
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 11
-- **Unchanged**: 100
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-partner-solutions/azure-partner-solutions.csv`
 
@@ -63,35 +63,6 @@ confusable_not_for: Not for Azure Industry (use azure-industry), Azure Managed A
 | *(Unclassified)* | 76 | 67.9% |
 
 ## Changes
-
-### New Pages
-
-- [Connect Foundry agents to MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/connect-foundry-agents)
-
-### Updated Pages
-
-- [Dell PowerScale Preview](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/)
-  - Updated: 2025-11-03T16:04:00Z → 2026-03-30T20:20:00Z
-- [Informatica](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-31T22:19:00Z
-- [MongoDB Atlas](https://learn.microsoft.com/en-us/azure/partner-solutions/mongo-db/)
-  - Updated: 2026-03-17T22:33:00Z → 2026-03-25T22:12:00Z
-- [Configure pre-deployment](https://learn.microsoft.com/en-us/azure/partner-solutions/datadog/prerequisites)
-  - Updated: 2025-03-13T05:34:00.000Z → 2026-02-26T18:46:00.000Z
-- [What is Dell PowerScale?](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/overview)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-03-30T20:20:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/faq)
-  - Updated: 2026-01-07T06:10:00Z → 2026-03-30T20:20:00Z
-- [Create a resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/create)
-  - Updated: 2026-01-07T06:10:00.000Z → 2026-03-24T08:00:00.000Z
-- [Manage your resource](https://learn.microsoft.com/en-us/azure/partner-solutions/dell/manage)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Create an Informatica IDMC advanced serverless runtime](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/create-advanced-serverless)
-  - Updated: 2026-02-04T08:00:00.000Z → 2026-03-31T22:19:00.000Z
-- [Manage your Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage)
-  - Updated: 2026-02-18T18:42:00.000Z → 2026-03-31T22:19:00.000Z
-- [Manage your advanced serverless runtime and Informatica IDMC organization](https://learn.microsoft.com/en-us/azure/partner-solutions/informatica/manage-serverless)
-  - Updated: 2026-02-18T18:42:00.000Z → 2026-03-31T22:19:00.000Z
 
 ## Classified Pages
 

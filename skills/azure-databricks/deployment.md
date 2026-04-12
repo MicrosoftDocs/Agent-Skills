@@ -16,9 +16,8 @@
 | Set up Azure DevOps CI/CD pipelines for Databricks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/azure-devops |
 | Use Databricks GitHub Actions for CI/CD pipelines | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/github |
 | Prepare workspace and local environment for Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/configure-env |
-| Deploy Databricks apps via UI and CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/deploy |
 | Use Declarative Automation Bundles with Databricks VS Code | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/vscode-ext/bundles |
-| Deploy custom AI agents with Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent |
+| Deploy custom AI agents on Databricks Apps with Agent Framework | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent |
 | Author and deploy Databricks agents on Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/author-agent-model-serving |
 | Build and deploy a chat UI for Databricks agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/chat-app |
 | Deploy Databricks AI agents with Model Serving | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/deploy-agent |
@@ -39,6 +38,7 @@
 | Provision Lakebase resources with Terraform | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/automate-with-terraform |
 | Manage Databricks Git folders with Terraform | https://learn.microsoft.com/en-us/azure/databricks/repos/automate-with-terraform |
 | Integrate Databricks Git folders into CI/CD workflows | https://learn.microsoft.com/en-us/azure/databricks/repos/ci-cd |
+| Check Azure Databricks feature regional availability | https://learn.microsoft.com/en-us/azure/databricks/resources/feature-region-support |
 | Understand Azure Databricks platform release windows | https://learn.microsoft.com/en-us/azure/databricks/resources/platform-release |
 | Deploy Azure Databricks with VNet injection | https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/vnet-inject |
 | Use Databricks-hosted RStudio Server runtimes | https://learn.microsoft.com/en-us/azure/databricks/sparkr/hosted-rstudio-server |

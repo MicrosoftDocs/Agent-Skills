@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-12'
 category_descriptions:
   security: Managing identities and credentials for Azure DSVMs, including shared
     identity setup, managed identities, and securing secrets with Azure Key Vault.
@@ -41,13 +41,13 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 - **Total Pages**: 25
 - **Fetched**: 25
 - **Fetch Failed**: 0
-- **Classified**: 19
-- **Unclassified**: 6
+- **Classified**: 18
+- **Unclassified**: 7
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 25
+- **Updated Pages**: 1
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-science-vm/azure-data-science-vm.csv`
 
@@ -56,15 +56,20 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 2 | 8.0% |
-| configuration | 10 | 40.0% |
+| configuration | 9 | 36.0% |
 | decision-making | 1 | 4.0% |
 | deployment | 2 | 8.0% |
 | integrations | 1 | 4.0% |
 | security | 2 | 8.0% |
 | troubleshooting | 1 | 4.0% |
-| *(Unclassified)* | 6 | 24.0% |
+| *(Unclassified)* | 7 | 28.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Data platforms](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-platforms?view=azureml-api-2)
+  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-10T22:08:00.000Z
 
 ## Classified Pages
 
@@ -75,7 +80,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Secure resource access credentials](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-secure-access-keys?view=azureml-api-2) | security | 0.80 | Details using managed identities and Azure Key Vault for DSVM credential storage; includes product-specific security configuration patterns. |
 | [Integrate with Active Directory](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-common-identity?view=azureml-api-2) | security | 0.75 | Explains using Microsoft Entra ID or on-prem AD for shared accounts across DSVMs; includes product-specific identity configuration patterns and scopes. |
 | [Create an autoscaled Data Science Virtual Machine pool](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-pools?view=azureml-api-2) | architecture-patterns | 0.70 | Guides creation of shared DSVM pools, comparing approaches and discussing advantages; this is a DSVM-specific architecture pattern for team compute environments. |
-| [Data platforms](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-platforms?view=azureml-api-2) | configuration | 0.70 | Lists supported data platforms and local instances on DSVM; this is configuration of available data platform tooling. |
 | [Deep Learning and AI frameworks](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-deep-learning-frameworks?view=azureml-api-2) | configuration | 0.70 | Reference-style list of deep learning frameworks available on DSVM; this is effectively configuration of the image contents, which is product-specific. |
 | [Development tools](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-development?view=azureml-api-2) | configuration | 0.70 | Describes specific IDEs and development tools bundled with DSVM; product-specific environment configuration. |
 | [ML and data science tools](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-science?view=azureml-api-2) | configuration | 0.70 | Reference list of machine learning tools and libraries on DSVM; details what is configured in the image, which is expert, product-specific information. |
@@ -99,4 +103,5 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Samples](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-samples-and-walkthroughs?view=azureml-api-2) | 0.40 | Describes availability of sample code and walkthroughs; largely navigational and does not itself contain detailed configs, limits, or troubleshooting mappings. |
 | [Create a Windows Data Science Virtual Machine](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/provision-vm?view=azureml-api-2) | 0.30 | Quickstart for creating a Windows DSVM; primarily step-by-step provisioning without detailed config tables, limits, or troubleshooting mappings. |
 | [Create an Ubuntu Data Science Virtual Machine](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro?view=azureml-api-2) | 0.30 | Quickstart for creating an Ubuntu DSVM; focuses on basic provisioning steps rather than detailed configuration or expert troubleshooting content. |
+| [Data platforms](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-platforms?view=azureml-api-2) | 0.20 | Page is a catalog of supported data platforms/tools on Azure Data Science Virtual Machine without detailed limits, configuration parameter tables, error codes, or decision matrices. It’s primarily descriptive capability/feature listing rather than expert operational details. |
 | [What is the Data Science Virtual Machine (DSVM)?](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview?view=azureml-api-2) | 0.20 | High-level overview of DSVM capabilities and images; no detailed limits, configs, or product-specific troubleshooting. |

@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 34
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-content-safety/azure-content-safety.csv`
 
@@ -70,11 +70,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 19 | 55.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Groundedness detection (preview)](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-groundedness)
-  - Updated: 2025-09-16T08:00:00.000Z → 2026-02-26T23:09:00.000Z
 
 ## Classified Pages
 

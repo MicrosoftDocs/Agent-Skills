@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: 'Configuring Azure AI Language projects and containers: CLU, custom
     NER, text classification, CQA, sentiment, summarization, health, data formats,
@@ -16,9 +16,9 @@ category_descriptions:
   security: 'Security for Azure AI Language: encryption at rest, customer-managed
     keys, RBAC, managed identities, SAS tokens, and network isolation/Private Link
     for CQA resources.'
-  decision-making: Guidance on regions, resources, lifecycles, and migration decisions
-    for Azure Language apps, including moving from LUIS/QnA Maker/Text Analytics and
-    Language Studio to newer Language/Foundry setups
+  decision-making: Guidance on choosing regions and resources, lifecycle policies,
+    and migration paths from LUIS, QnA Maker, Text Analytics, and Language Studio
+    to Azure Language and Microsoft Foundry
   best-practices: Best practices for designing, labeling, and evaluating CLU, custom
     NER, text classification, and CQA projects, including multilingual handling, emojis,
     schemas, and autolabeling.
@@ -31,16 +31,16 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Language development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building CLU intents, custom NER, text classification, CQA/FAQ, sentiment, or summarization
-  solutions, and other Azure AI Language related development tasks. Not for Azure
-  AI Search (use azure-cognitive-search), Azure AI Document Intelligence (use azure-document-intelligence),
-  Azure AI Immersive Reader (use azure-immersive-reader), Azure Translator (use azure-translator).
-use_when: Use when building CLU intents, custom NER, text classification, CQA/FAQ,
-  sentiment, or summarization solutions, and other Azure AI Language related development
-  tasks.
+  building CLU intents, custom NER, text classification, CQA, sentiment/summarization,
+  or health text solutions, and other Azure AI Language related development tasks.
+  Not for Azure AI Search (use azure-cognitive-search), Azure AI Document Intelligence
+  (use azure-document-intelligence), Azure AI Speech (use azure-speech), Azure Translator
+  (use azure-translator).
+use_when: Use when building CLU intents, custom NER, text classification, CQA, sentiment/summarization,
+  or health text solutions, and other Azure AI Language related development tasks.
 confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
-  Document Intelligence (use azure-document-intelligence), Azure AI Immersive Reader
-  (use azure-immersive-reader), Azure Translator (use azure-translator).
+  Document Intelligence (use azure-document-intelligence), Azure AI Speech (use azure-speech),
+  Azure Translator (use azure-translator).
 ---
 # Azure AI Language Crawl Report
 
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 - **Unclassified**: 93
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 19
-- **Unchanged**: 176
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 196
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
 ## Classification Statistics
@@ -76,56 +76,10 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ## Changes
 
-### New Pages
-
-- [Use CNER Docker containers](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-containers)
-- [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/language-support)
-
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
-  - Updated: 2026-03-07T06:07:00.000Z → 2026-03-30T16:59:00.000Z
-- [Connect to Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
-  - Updated: 2026-03-07T06:07:00.000Z → 2026-03-30T16:59:00.000Z
-- [What is Azure Language in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
-  - Updated: 2026-01-23T06:04:00.000Z → 2026-03-30T16:59:00.000Z
-- [Region support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/regional-support)
-  - Updated: 2026-03-07T06:07:00.000Z → 2026-03-30T16:59:00.000Z
-- [Quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/data-limits)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-04T06:03:00.000Z
-- [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry)
-  - Updated: 2026-02-05T08:00:00.000Z → 2026-04-03T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview)
-  - Updated: 2026-02-06T06:03:00.000Z → 2026-03-30T08:00:00.000Z
-- [Redact PII from conversations](https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/how-to/redact-conversation-pii)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-04T06:03:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/overview)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/overview)
-  - Updated: 2025-12-15T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview)
-  - Updated: 2025-12-05T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview)
-  - Updated: 2025-12-15T08:00:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/overview)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview)
-  - Updated: 2026-01-17T08:00:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-30T16:59:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview)
-  - Updated: 2025-11-18T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Use Custom NER Docker containers~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/use-containers)
-- ~~language-detection/how-to/use-containers.mdanguage support~~ (https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/language-support)
+- [Migrate from LUIS or QnA Maker to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate)
+  - Updated: 2026-02-17T12:03:00.000Z → 2026-04-10T22:08:00.000Z
 
 ## Classified Pages
 
@@ -155,7 +109,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Fast Healthcare Interoperability Resources structuring](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/concepts/fhir) | integrations | 0.75 | Explains enabling FHIR bundle output by passing FHIR version in options; includes SDK/REST parameter names and values, which are concrete integration settings. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/language-support) | limits-quotas | 0.75 | Lists supported languages for both cloud API and containers; this is a product-specific capability/limit matrix. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/language-support) | limits-quotas | 0.75 | Details which languages and codes are supported, referencing BCP-47 and ISO standards; this is a product-specific capability matrix. |
-| [Migrate from LUIS or QnA Maker to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate) | decision-making | 0.75 | Migration guidance between LUIS/QnA Maker/Text Analytics and Azure Language; includes service comparisons, feature mappings, and recommendations for different scenarios. |
 | [Train a model](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/how-to/train-model) | limits-quotas | 0.75 | Mentions training jobs expiring after seven days and only one training job running at a time; these are explicit numeric and concurrency limits. |
 | [API version mapping](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/concepts/ga-preview-mapping) | configuration | 0.70 | Version-based mapping of entity types/tags vs category/subcategory; provides concrete mapping tables and version-specific behavior, which are configuration/compatibility details. |
 | [Add chit-chat](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/chit-chat) | configuration | 0.70 | Describes a CQA-specific chitchat dataset (~100 scenarios, personas like Professional/Friendly/Witty) and how to apply it; this is product-specific configuration behavior. |
@@ -184,6 +137,7 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/entity-linking/language-support) | limits-quotas | 0.70 | Language support lists are effectively capability limits (which languages are supported) and are product-specific enumerations not derivable from general knowledge. |
 | [Language support](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/language-support) | limits-quotas | 0.70 | Language support article listing which languages NER supports; this is a product-specific capability/limit matrix. |
 | [Markdown format](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/reference/markdown-format) | configuration | 0.70 | Reference list of supported markdown formats for answer text; product-specific rendering behavior and allowed syntax are configuration details. |
+| [Migrate from LUIS or QnA Maker to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate) | decision-making | 0.70 | The page helps determine whether and how to migrate from LUIS, QnA Maker, and Text Analytics to Azure Language, including service-specific migration guidance and scenarios. This is product-specific decision guidance about when to move between services and what to use instead, which fits the decision-making category. It goes beyond a conceptual overview by focusing on migration choices and applicability of the new unified service. |
 | [Migrate to Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/language-service/migration-studio-to-foundry) | decision-making | 0.70 | Migration guide with a specific deprecation date and concrete guidance on when and how to move projects; supports decision-making about migration timing and steps. |
 | [None intent](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/none-intent) | configuration | 0.70 | Describes None intent behavior and threshold; includes product-specific behavior and possibly configurable threshold values. |
 | [Prebuilt API](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/how-to/prebuilt) | integrations | 0.70 | Describes a prebuilt API that answers questions over a passage; likely includes request/response schema and parameters unique to this service. |

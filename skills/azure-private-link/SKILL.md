@@ -1,14 +1,14 @@
 ---
 name: azure-private-link
-description: Expert knowledge for Azure Private Link development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS/Private Resolver, High Scale limits, NSP/RBAC, or Azure Firewall inspection, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Firewall (use azure-firewall).
+description: Expert knowledge for Azure Private Link development including best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. Use when configuring Private Endpoints, DNS/Private Resolver, High Scale limits, NSP migrations, or Azure Firewall traffic control, and other Azure Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Private Link Skill
 
-This skill provides expert guidance for Azure Private Link. Covers troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Private Link. Covers best practices, decision making, architecture & design patterns, limits & quotas, security, and configuration. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,19 +24,12 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L35-L40 | Diagnosing and resolving Azure Private Endpoint/Private Link connectivity issues, including DNS, NSG/firewall, routing misconfigurations, and common failure patterns. |
-| Best Practices | L41-L45 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
-| Decision Making | L46-L51 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
-| Architecture & Design Patterns | L52-L56 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
-| Limits & Quotas | L57-L62 | Info on Private Link service availability per resource type and how to raise per‑VNet Private Endpoint limits using High Scale configuration |
-| Security | L63-L69 | RBAC setup for Private Link/Endpoint and Network Security Perimeter operations, plus inspecting and controlling Private Endpoint traffic with Azure Firewall. |
-| Configuration | L70-L81 | Configuring Private Link/endpoint behavior: subnet and service policies, DNS names, SNAT bypass, NSPs, diagnostics, monitoring data, and endpoint property management. |
-
-### Troubleshooting
-| Topic | URL |
-|-------|-----|
-| Diagnose Azure Private Endpoint connectivity issues | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity |
-| Diagnose and fix Azure Private Link connectivity issues | https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity |
+| Best Practices | L34-L38 | DNS design and configuration guidance for private endpoints, including zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS misconfigurations with Private Link |
+| Decision Making | L39-L44 | Guidance on planning/migrating to Network Security Perimeter and designing Azure Private Link architectures optimized for security, segmentation, and cost. |
+| Architecture & Design Patterns | L45-L49 | Designing DNS architectures for Private Endpoints using Azure Private Resolver, including name resolution patterns, forwarding rules, and integration with on-premises or hybrid networks |
+| Limits & Quotas | L50-L55 | Info on Private Link service availability per resource type and how to raise per‑VNet Private Endpoint limits using High Scale configuration |
+| Security | L56-L62 | RBAC setup for Private Link/Endpoint and Network Security Perimeter operations, plus inspecting and controlling Private Endpoint traffic with Azure Firewall. |
+| Configuration | L63-L74 | Configuring Private Link/endpoint behavior: subnet and service policies, DNS names, SNAT bypass, NSPs, diagnostics, monitoring data, and endpoint property management. |
 
 ### Best Practices
 | Topic | URL |

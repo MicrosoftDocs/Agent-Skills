@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   security: 'Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates,
     network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI,
     Edge RAG, SCVMM, and vSphere.'
-  decision-making: 'Guidance on planning and choosing Azure Arc options: services,
-    tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale
-    server/data/Kubernetes deployments.'
-  troubleshooting: 'Diagnosing and fixing Azure Arc issues: Kubernetes connectivity/GitOps,
-    storage and Key Vault, SQL/Edge RAG, servers/VM extensions/SSH, resource bridge,
-    site manager, and workload orchestration.'
+  decision-making: Guidance on planning, sizing, licensing, connectivity, platform
+    selection, and migration decisions for Azure Arc servers, Kubernetes, data services,
+    SQL, and Edge RAG workloads.
+  troubleshooting: Diagnosing and fixing Azure Arc issues across Kubernetes, servers,
+    SQL, storage, networking, identity, site manager, resource bridge, VMware/SCVMM,
+    and workload orchestration.
   limits-quotas: Limits, quotas, versions, and requirements for Arc-enabled Kubernetes,
     Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected
     machines and Windows Server.
@@ -34,13 +34,13 @@ skill_description: Expert knowledge for Azure Arc development including troubles
   managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or
   SCVMM/vSphere workloads, and other Azure Arc related development tasks. Not for
   Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware
-  Solution (use azure-vmware-solution).
+  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  Azure Stack Edge (use azure-stack-edge).
 use_when: Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource
   bridge, or SCVMM/vSphere workloads, and other Azure Arc related development tasks.
 confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge),
-  Azure VMware Solution (use azure-vmware-solution).
+  Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale
+  Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge).
 ---
 # Azure Arc Crawl Report
 
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 - **Unclassified**: 149
 
 ### Incremental Update
-- **New Pages**: 5
-- **Updated Pages**: 20
-- **Unchanged**: 392
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 415
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-arc/azure-arc.csv`
 
 ## Classification Statistics
@@ -76,62 +76,12 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ## Changes
 
-### New Pages
-
-- [Deploy applications using GitOps (Argo CD)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-argocd)
-- [Application deployment with GitOps (Argo CD)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-argocd)
-- [Application deployment with GitOps (Flux v2)](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2)
-- [Deploy Marketplace applications](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/deploy-marketplace)
-- [azcmagent upgrade](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-upgrade)
-
 ### Updated Pages
 
-- [Azure Arc-enabled Kubernetes >](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/overview)
-  - Updated: 2026-03-03T06:02:00.000Z → 2026-03-24T22:15:00.000Z
-- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/network-requirements-consolidated)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-arc/data/release-notes)
-  - Updated: 2026-02-27T23:07:00.000Z → 2026-03-31T17:22:00.000Z
-- [Network requirements](https://learn.microsoft.com/en-us/azure/azure-arc/servers/network-requirements)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [Simplify network configuration requirements](https://learn.microsoft.com/en-us/azure/azure-arc/servers/arc-gateway)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [Deployment options](https://learn.microsoft.com/en-us/azure/azure-arc/servers/deployment-options)
-  - Updated: 2026-02-26T06:05:00.000Z → 2026-03-27T22:11:00.000Z
-- [Connect machines to Azure Arc with PowerShell](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-powershell)
-  - Updated: 2025-10-23T17:10:00.000Z → 2026-03-27T22:11:00.000Z
-- [Connect machines using Ansible playbooks](https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-ansible-playbooks)
-  - Updated: 2025-12-19T05:31:00.000Z → 2026-03-27T06:03:00.000Z
-- [Manage agent](https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [What's new with Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/release-notes)
-  - Updated: 2025-11-03T22:12:00.000Z → 2026-03-24T17:13:00.000Z
-- [Agent overview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-agent-overview)
-  - Updated: 2024-10-02T22:02:00.000Z → 2026-03-30T08:00:00.000Z
-- [Available extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions-release)
-  - Updated: 2026-03-18T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [Reference](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/secret-store-extension-reference)
-  - Updated: 2025-11-18T19:04:00.000Z → 2026-03-26T17:15:00.000Z
-- [Platform issues](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/troubleshooting)
-  - Updated: 2024-11-01T08:00:00.000Z → 2026-03-31T06:03:00.000Z
-- [Connection issues](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/diagnose-connection-issues)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-30T22:11:00.000Z
-- [What's new with Connected Machine agent?](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-  - Updated: 2026-02-17T08:00:00.000Z → 2026-03-25T06:03:00.000Z
-- [Archive for Connected Machine agent release notes](https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes-archive)
-  - Updated: 2025-12-17T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Windows Server Management](https://learn.microsoft.com/en-us/azure/azure-arc/servers/windows-server-management-overview)
-  - Updated: 2025-03-13T08:00:00.000Z → 2026-04-01T22:16:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent)
-  - Updated: 2025-12-01T23:09:00.000Z → 2026-03-02T08:00:00.000Z
-- [azcmagent connect](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-connect)
-  - Updated: 2026-01-26T23:13:00.000Z → 2026-03-24T22:15:00.000Z
-
-### Deleted Pages
-
-- ~~Application deployment with GitOps~~ (https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2)
-- ~~Deploy Azure Marketplace applications~~ (https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/deploy-marketplace)
-- ~~Deploy applications using GitOps (ArgoCD)~~ (https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-argocd)
+- [Validated data services partners](https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program)
+  - Updated: 2025-11-30T08:00:00.000Z → 2026-04-08T08:00:00.000Z
+- [VM Extension issues](https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions)
+  - Updated: 2025-10-08T22:11:00.000Z → 2026-04-06T22:09:00.000Z
 
 ## Classified Pages
 
@@ -150,6 +100,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Blobs not uploaded or mirrored when using Managed Identity](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/blobs-not-uploaded) | troubleshooting | 0.88 | Focused on a specific failure mode (blobs not uploaded/mirrored with Managed Identity) and provides mitigation steps; this is symptom → cause → solution troubleshooting content. |
 | [Operate with least privilege](https://learn.microsoft.com/en-us/azure/azure-arc/data/least-privilege) | security | 0.86 | Security-focused article on least privilege; likely lists specific Azure and Kubernetes RBAC roles, scopes, and permissions required for common scenarios. |
 | [Troubleshoot common issues](https://learn.microsoft.com/en-us/azure/azure-arc/container-storage/troubleshooting) | troubleshooting | 0.86 | Dedicated troubleshooting article; likely organized by symptoms and includes product-specific commands, logs, and error patterns for Azure Container Storage enabled by Azure Arc. |
+| [VM Extension issues](https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions) | troubleshooting | 0.86 | The article is explicitly a troubleshooting guide for Azure Arc-enabled servers VM extensions. It focuses on resolving deployment/removal issues and is likely organized by specific symptoms and their resolutions (for example, particular error messages or failure states when managing VM extensions). This is product-specific troubleshooting content that goes beyond generic debugging advice. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/policy-reference) | security | 0.85 | Policy reference; lists specific policy definition names, effects, and scopes for Arc-enabled Kubernetes, which are security/governance configurations. |
 | [Built-in roles](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/built-in-roles) | security | 0.85 | Lists Azure built-in roles specific to Arc-enabled VMware vSphere with Actions/NotActions/DataActions; contains product-specific RBAC role names and permission scopes. |
 | [Configuration schema](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/configuring-schema) | configuration | 0.85 | Details YAML schema structure, property types, and validation rules for solution templates; includes product-specific schema fields and constraints. |
@@ -162,7 +113,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Troubleshoot](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/troubleshoot-resource-bridge) | troubleshooting | 0.85 | Dedicated troubleshooting article for deployment/use/removal; likely organized by symptoms and includes product-specific diagnostics and resolutions. |
 | [Use Azure RBAC for authorization checks](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/azure-rbac) | security | 0.85 | Covers Azure RBAC on Arc-enabled Kubernetes; such pages list specific built-in roles, scopes, and permission mappings between Azure RBAC and Kubernetes RBAC. |
 | [Use managed identities on server](https://learn.microsoft.com/en-us/azure/azure-arc/servers/managed-identity-authentication) | security | 0.85 | Explains how Arc exposes Instance Metadata Service and managed identities, including token request endpoints, scopes, and identity behavior specific to Arc-enabled servers. |
-| [VM Extension issues](https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions) | troubleshooting | 0.85 | Focused on diagnosing and resolving VM extension deployment/removal issues on Arc-enabled servers; will include error conditions and remediation steps specific to this extension platform. |
 | [azcmagent check](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-check) | configuration | 0.85 | Command reference for azcmagent check; includes specific options and output fields for connectivity tests to required endpoints, which are product-specific configuration/diagnostic parameters. |
 | [Create custom configuration profile](https://learn.microsoft.com/en-us/azure/azure-arc/data/create-custom-configuration-template) | configuration | 0.82 | Explains custom configuration templates and built-in profiles; includes JSON schema fields, profile names, and parameters like container registry/repository settings unique to Arc data controller. |
 | [Access secrets without local copies](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider) | configuration | 0.80 | How-to for Secrets Store CSI driver extension; includes extension parameters, volume configuration, and behavior differences (no persistent secrets by default). |
@@ -207,7 +157,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Upload prerequisites](https://learn.microsoft.com/en-us/azure/azure-arc/data/upload-metrics-and-logs-to-azure-monitor) | configuration | 0.80 | Detailed how-to for exporting and uploading usage, metrics, and logs; includes scripts with placeholders, parameter names, and product-specific data export behavior. |
 | [Use workload identity](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/workload-identity) | security | 0.80 | Step-by-step deployment of workload identity; typically includes Entra app registration settings, token audience/issuer values, and Kubernetes annotations specific to this feature. |
 | [VMware-specific agent installation errors for Linux VMs](https://learn.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/troubleshoot-guest-management-issues) | troubleshooting | 0.80 | Explicit troubleshooting article for guest management; expected to map symptoms to causes and resolutions, with product-specific diagnostics and possibly error messages. |
-| [Validated data services partners](https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program) | decision-making | 0.80 | Identifies partner solutions, Kubernetes versions, and SQL engine versions verified for data services; concrete compatibility matrix for platform selection. |
 | [Verify contributor role](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-contributor-permission) | security | 0.80 | Covers checking Contributor role at subscription scope; includes specific RBAC role names and scope requirements for Edge RAG. |
 | [Workload identity federation](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-workload-identity) | security | 0.80 | Workload identity federation configuration is security-focused, with specific identity, token, and trust configuration details unique to Arc-enabled Kubernetes. |
 | [azcmagent connect](https://learn.microsoft.com/en-us/azure/azure-arc/servers/azcmagent-connect) | integrations | 0.80 | Command-specific reference for `azcmagent connect` including required parameters (tenant, subscription, resource group, credentials) and their usage; this is product-specific API/CLI parameter knowledge that fits integrations & coding patterns. |
@@ -345,6 +294,7 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | [Upgrade agents](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/agent-upgrade) | deployment | 0.70 | Agent upgrade article covers automatic vs manual upgrades and version support policy—deployment/upgrade constraints and requirements specific to Arc agents. |
 | [Use service groups](https://learn.microsoft.com/en-us/azure/azure-arc/workload-orchestration/service-group) | configuration | 0.70 | Explains creating and configuring service groups as ARM resources; likely includes resource properties and configuration fields unique to service groups. |
 | [Validated Kubernetes partners](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/validation-program) | decision-making | 0.70 | Lists specific providers and versions validated for Arc; helps decide which Kubernetes distributions to use for compatibility. |
+| [Validated data services partners](https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program) | decision-making | 0.70 | Page lists specific partner solutions, their versions, supported Kubernetes versions, and SQL engine versions that are validated for Azure Arc-enabled data services. This is product- and version-specific compatibility information that an LLM is unlikely to know from training and directly supports deployment/technology selection decisions between distributions and versions. |
 | [Verify NFS server](https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-file-server) | configuration | 0.70 | Details file share configuration and connectivity requirements; likely includes specific protocol, path, and access settings needed by Edge RAG. |
 | [Version-managed extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/managed-extensions) | configuration | 0.70 | Describes how bundled, version-managed extensions are configured and constrained; includes product-specific extension set details and compatibility behavior. |
 | [View billing data (Azure)](https://learn.microsoft.com/en-us/azure/azure-arc/data/view-billing-data-in-azure) | configuration | 0.70 | How-to for exporting and uploading billing data; includes specific commands, file formats, and parameters for Arc-enabled data services billing integration. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   security: Tenant-wide portal security policies, RBAC-based dashboard sharing, and
     managing/protecting access to Azure via Intune MAM and the Azure mobile app.
@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 
 ### Updated Pages
 
-- [Supported browsers and devices](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-supported-browsers-devices)
-  - Updated: 2025-06-19T08:00:00.000Z → 2026-04-02T08:00:00.000Z
+- [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences)
+  - Updated: 2024-12-13T08:00:00.000Z → 2026-04-07T06:02:00.000Z
 
 ## Classified Pages
 
@@ -83,10 +83,10 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | [Create an Azure dashboard](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards) | 0.30 | Older dashboard experience creation/customization; appears as a how-to UI guide without deep configuration references. |
 | [Create and manage dashboards in Dashboard hub](https://learn.microsoft.com/en-us/azure/azure-portal/dashboard-hub) | 0.30 | Describes creating and customizing dashboards in the new Dashboard hub; summary does not indicate detailed JSON schema, limits, or config tables. |
 | [Get help through Priority Community Support](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/priority-community-support) | 0.30 | Describes Priority Community Support as a feature of some plans; appears marketing/overview without technical limits or configuration details. |
-| [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences) | 0.30 | Describes how to change portal preferences (theme, language, timeouts) but summary does not show concrete parameter tables or ranges. |
 | [Azure mobile app Home](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/home) | 0.20 | Describes the Home experience in the mobile app; primarily UI overview without expert-level technical content. |
 | [Find subscription and tenant IDs](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) | 0.20 | Explains where to find subscription and tenant IDs; procedural UI guidance without product-specific parameters or limits. |
 | [Learn about Azure](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/learn-training) | 0.20 | Shows how to access Microsoft Learn content from the mobile app; educational navigation, not technical configuration or limits. |
+| [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences) | 0.20 | Page describes how to change Azure portal UI preferences (theme, language, timeout, menu mode, etc.) without detailed configuration parameter tables, limits, quotas, or product-specific expert settings. It is primarily a UI walkthrough, not expert configuration or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-portal/mobile-app/overview) | 0.20 | Overview of Azure mobile app capabilities; no detailed configuration parameters, limits, or troubleshooting mappings indicated. |
 | [Add, remove, and sort favorites](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-add-remove-sort-favorites) | 0.10 | Explains adding/removing favorites in the portal; purely UI usage without expert-level technical details. |
 | [Get started with Azure Quickstart Center](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-quickstart-center) | 0.10 | Guided getting-started experience description; no detailed configuration parameters, limits, or decision matrices. |

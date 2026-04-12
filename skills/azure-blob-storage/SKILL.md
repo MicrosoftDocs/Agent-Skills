@@ -3,7 +3,7 @@ name: azure-blob-storage
 description: Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Data Lake, NFS/SFTP/BlobFuse, static website hosting, encryption options, or SDK-based blob operations, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp Files (use azure-netapp-files).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Blob Storage Skill
@@ -26,12 +26,12 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L36-L45 | Diagnosing and fixing Azure Blob Storage issues: Storage Mover networking/job errors, support bundles, BlobFuse mount/I/O problems, and known NFS 3.0 behavior and error scenarios. |
 | Best Practices | L46-L79 | Performance, cost, resiliency, and monitoring best practices for Blob Storage: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP, events, backups, and language-specific optimizations |
-| Decision Making | L80-L106 | Cost and architecture decisions for Blob Storage: pricing, cost estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection, connectivity, and migration/upgrade tool choices. |
-| Limits & Quotas | L107-L126 | Limits, quotas, performance, and known issues for Azure Blob Storage and related features (tiers, NFS/SFTP, static sites, replication, BlobFuse, Data Lake, Storage Mover). |
-| Security | L127-L184 | Configuring secure access to Blob Storage: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), private networking, and preventing anonymous access. |
-| Configuration | L185-L251 | Configuring and operating Blob Storage: monitoring, lifecycle, immutability, soft delete, snapshots/restore, NFS/SFTP/BlobFuse, Data Lake, static sites, and third‑party backup/migration tools. |
-| Integrations & Coding Patterns | L252-L387 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
-| Deployment | L388-L401 | Guides for deploying and configuring Blob Storage: static website hosting (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration tools (Data Box, WANdisco, Nasuni, Tiger Bridge). |
+| Decision Making | L80-L105 | Cost and architecture decisions for Blob Storage: pricing, cost estimation/optimization, tiers, protocols (NFS/SFTP/BlobFuse), data protection, connectivity, and migration/upgrade tool choices. |
+| Limits & Quotas | L106-L125 | Limits, quotas, performance, and known issues for Azure Blob Storage and related features (tiers, NFS/SFTP, static sites, replication, BlobFuse, Data Lake, Storage Mover). |
+| Security | L126-L183 | Configuring secure access to Blob Storage: RBAC/ABAC, Entra ID auth, SAS tokens, SFTP, ACLs, encryption (CSE, CPK, scopes), private networking, and preventing anonymous access. |
+| Configuration | L184-L250 | Configuring and operating Blob Storage: monitoring, lifecycle, immutability, soft delete, snapshots/restore, NFS/SFTP/BlobFuse, Data Lake, static sites, and third‑party backup/migration tools. |
+| Integrations & Coding Patterns | L251-L386 | SDK, CLI, and tooling patterns for integrating with Blob/Data Lake: connect from various languages, mount/file-system access, copy/migrate data, manage containers/blobs, leases, tiers, tags, and events. |
+| Deployment | L387-L400 | Guides for deploying and configuring Blob Storage: static website hosting (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration tools (Data Box, WANdisco, Nasuni, Tiger Bridge). |
 
 ### Troubleshooting
 | Topic | URL |
@@ -85,7 +85,6 @@ This skill requires **network access** to fetch documentation content:
 | Estimate and understand Azure Storage Mover migration costs | https://learn.microsoft.com/en-us/azure/storage-mover/billing |
 | Choose Azure private connectivity for Storage Mover | https://learn.microsoft.com/en-us/azure/storage-mover/cloud-to-cloud-private-network-configs |
 | Plan Azure Storage Mover deployments and migrations | https://learn.microsoft.com/en-us/azure/storage-mover/deployment-planning |
-| Optimize Blob Storage costs using smart tiering | https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart |
 | Calculate archive tier storage and retrieval costs | https://learn.microsoft.com/en-us/azure/storage/blobs/archive-cost-estimation |
 | Estimate AzCopy data transfer costs for Blob Storage | https://learn.microsoft.com/en-us/azure/storage/blobs/azcopy-cost-estimation |
 | Estimate end-to-end costs for Azure Blob Storage usage | https://learn.microsoft.com/en-us/azure/storage/blobs/blob-storage-estimate-costs |

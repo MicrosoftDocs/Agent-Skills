@@ -55,9 +55,9 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure E
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 6
-- **Unchanged**: 161
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 167
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stream-analytics/azure-stream-analytics.csv`
 
 ## Classification Statistics
@@ -76,25 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure E
 | *(Unclassified)* | 54 | 32.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-parquet-capture-tutorial)
-  - Updated: 2024-12-18T12:12:00.000Z → 2026-03-26T06:13:00.000Z
-- [Build real-time dashboards with no code editor](https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-power-bi-tutorial)
-  - Updated: 2024-03-29T22:04:00.000Z → 2026-03-26T06:13:00.000Z
-- [End-to-end solution patterns](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-solution-patterns)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-26T06:13:00.000Z
-- [Capture Event Hubs data in Parquet format](https://learn.microsoft.com/en-us/azure/stream-analytics/capture-event-hub-data-parquet)
-  - Updated: 2025-01-24T05:34:00.000Z → 2026-03-26T08:00:00.000Z
-- [Process IoT streaming data](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices)
-  - Updated: 2025-01-23T08:00:00.000Z → 2026-03-26T22:23:00.000Z
-- [Time handling considerations](https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-time-handling)
-  - Updated: 2025-02-19T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Build real-time dashboard with Power BI dataset~~ (https://learn.microsoft.com/en-us/azure/stream-analytics/no-code-build-power-bi-dashboard)
 
 ## Classified Pages
 

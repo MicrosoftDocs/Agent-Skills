@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 92
+- **Updated Pages**: 0
+- **Unchanged**: 93
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vm-scalesets/azure-vm-scalesets.csv`
 
@@ -72,11 +72,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 10 | 10.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Scale Set FAQ](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq)
-  - Updated: 2025-12-29T23:04:00Z → 2026-04-02T17:04:00Z
 
 ## Classified Pages
 

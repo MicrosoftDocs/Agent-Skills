@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   best-practices: 'Network performance and connectivity guidance: VNet design, NSGs,
     service endpoints, outbound access, MTU/TCP tuning, and tools to test throughput
@@ -47,8 +47,8 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 127
+- **Updated Pages**: 5
+- **Unchanged**: 124
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network/azure-virtual-network.csv`
 
@@ -69,10 +69,16 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 
 ### Updated Pages
 
-- [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network)
-  - Updated: 2026-02-22T12:19:00.000Z → 2026-03-27T15:55:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview)
-  - Updated: 2026-02-03T18:20:00.000Z → 2026-04-02T18:15:00.000Z
+- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-powershell)
+  - Updated: 2023-08-24T08:00:00.000Z → 2025-10-08T22:11:00.000Z
+- [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-cli)
+  - Updated: 2026-02-25T08:00:00.000Z → 2026-02-25T23:33:00.000Z
+- [Create public IP address - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-terraform)
+  - Updated: 2025-11-09T18:10:00.000Z → 2026-04-06T22:10:00.000Z
+- [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform)
+  - Updated: 2025-10-17T05:14:00.000Z → 2026-04-06T22:10:00.000Z
+- [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview)
+  - Updated: 2026-03-02T23:28:00.000Z → 2026-04-09T17:25:00.000Z
 
 ## Classified Pages
 
@@ -140,8 +146,6 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 |-----------|------------|--------|
 | [Create public IP address](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-portal) | 0.50 | Configures routing preference for public IPs; while it mentions default behavior and options, the summary does not indicate detailed parameter tables or numeric thresholds. |
 | [Assign private IP address prefixes to VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-private-ip-address-blocks-portal) | 0.45 | Shows how to add secondary IP configurations with a CIDR block; appears procedural rather than a full configuration reference with parameter tables or limits. |
-| [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-cli) | 0.45 | CLI-focused version of assigning multiple IPs; similar procedural content without explicit limits, decision matrices, or config tables. |
-| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-powershell) | 0.45 | PowerShell-focused version of assigning multiple IPs; primarily step-by-step commands rather than a configuration reference or limits guide. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-portal) | 0.45 | Describes multiple IPs per NIC/VM and capabilities; summary does not show numeric limits or detailed config parameter tables, so it reads as a how-to/tutorial. |
 | [Create multiple prefixes for a subnet](https://learn.microsoft.com/en-us/azure/virtual-network/how-to-multiple-prefixes-subnet) | 0.45 | Explains multiple prefixes per subnet and how to configure; may mention some constraints but primarily a how-to without detailed limits tables or decision matrices. |
 | [DPDK](https://learn.microsoft.com/en-us/azure/virtual-network/setup-dpdk) | 0.45 | Explains DPDK benefits and setup on Azure Linux VMs; mostly installation and basic configuration steps, not organized as best-practices, limits, or troubleshooting with error mappings. |
@@ -180,10 +184,10 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Create public IP prefix - Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-cli) | 0.34 | CLI quickstart for public IP prefix; step-by-step creation, not a detailed configuration or troubleshooting reference. |
 | [Create public IP prefix - Portal](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-portal) | 0.34 | Quickstart for public IP prefix via portal; tutorial-style instructions without detailed limits, configuration matrices, or error mappings. |
 | [Create public IP prefix - PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-powershell) | 0.34 | PowerShell quickstart for public IP prefix; similar to other quickstarts, focused on basic creation steps rather than expert reference content. |
-| [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.34 | Terraform quickstart for public IP prefix; example-focused, not a comprehensive parameter or limits reference. |
-| [Create public IP address - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-terraform) | 0.32 | Terraform quickstart for public IP creation; shows basic resource definitions but not a comprehensive configuration reference or troubleshooting matrix. |
 | [Add public IP address to existing VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/associate-public-ip-address-vm) | 0.30 | Basic association of public IP to VM via portal/CLI/PowerShell; no detailed configuration matrices, limits, or troubleshooting content. |
 | [Add, change, or delete a subnet](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-subnet) | 0.30 | Step-by-step subnet management tutorial; no indication of comprehensive configuration option tables or limits. |
+| [Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-cli) | 0.30 | CLI-based version of the same tutorial for assigning multiple IP addresses to a VM/NIC. It describes commands and workflow rather than detailed configuration parameter matrices, limits/quotas, or troubleshooting mappings. Content appears procedural, not expert-reference oriented. |
+| [Azure PowerShell](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-network-multiple-ip-addresses-powershell) | 0.30 | Primarily a step-by-step PowerShell tutorial for assigning multiple IP addresses to a VM/NIC. It focuses on how to create and configure resources, not on configuration option tables, limits, quotas, or product-specific troubleshooting/error codes. No dense parameter reference tables or expert-only constraints are indicated in the summary. |
 | [Bastion](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-public-ip-bastion) | 0.30 | How-to for associating public IPs with Bastion; primarily procedural without detailed config tables, limits, or product-specific error mappings. |
 | [Configure virtual network TAP - Azure CLI](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-tap-virtual-network-cli) | 0.30 | CLI tutorial for TAP; procedural content rather than a comprehensive config or troubleshooting guide. |
 | [Configure virtual network TAP - Azure portal](https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-virtual-network-tap-portal) | 0.30 | Portal tutorial for TAP creation; mainly step-by-step without clear indication of full configuration reference. |
@@ -206,8 +210,10 @@ confusable_not_for: Not for Azure Networking (use azure-networking), Azure Virtu
 | [Configure internet routing preference for a virtual machine](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/configure-routing-preference-virtual-machine) | 0.28 | Tutorial on configuring routing preference for a VM; procedural guidance without detailed numeric thresholds, limits, or troubleshooting mappings. |
 | [Configure mixed Routing Preference for a VM](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/routing-preference-mixed-network-adapter-portal) | 0.28 | Tutorial for configuring both routing preferences using two NICs; scenario walkthrough rather than reference-style expert content. |
 | [Manage a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/manage-virtual-network) | 0.25 | Basic management article for creating/changing/deleting VNets; generic portal/CLI operations without expert-level configuration or troubleshooting content. |
+| [Create public IP address - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP; primarily step-by-step resource creation with no detailed limits, quotas, configuration matrices, or product-specific best practices beyond generic Terraform usage. |
+| [Create public IP prefix - Terraform](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/create-public-ip-prefix-terraform) | 0.20 | Quickstart Terraform tutorial for creating a public IP prefix; focuses on basic creation/change/delete workflow without detailed configuration parameter tables, limits, or troubleshooting content. |
 | [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-overview) | 0.20 | Overview of Microsoft Azure Network Adapter (MANA) and its benefits; description suggests conceptual/performance overview without explicit limits, configuration tables, error codes, or decision matrices that meet the expert-knowledge criteria. |
-| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | High-level overview of Azure Virtual Network routing appliances without visible numeric limits, configuration tables, error codes, or decision matrices. Primarily conceptual/marketing-style description of what the feature is and its benefits. |
+| [Virtual network routing appliance](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-routing-appliance-overview) | 0.20 | Page is an overview of Azure Virtual Network routing appliances with conceptual description of what they are and their benefits. From the provided summary, it does not list numeric limits, configuration parameter tables, error codes, decision matrices, or other detailed product-specific settings. It reads as a high-level introduction rather than expert, configuration, or troubleshooting guidance. |
 | [What is Azure Virtual Network IP Services?](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/ip-services-overview) | 0.20 | High-level overview of IP services; no indication of numeric limits, detailed settings tables, or troubleshooting content. |
 | [What is Azure Virtual Network?](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) | 0.20 | High-level overview of Azure Virtual Network concepts and capabilities without detailed limits, configs, or error mappings. |
 | [Create a virtual network](https://learn.microsoft.com/en-us/azure/virtual-network/quickstart-create-virtual-network) | 0.10 | Quickstart tutorial showing multiple ways to create a virtual network and related resources; it is step-by-step how-to content without detailed limits, configuration parameter tables, error-code troubleshooting, or decision matrices. No product-specific expert details beyond what a generic LLM would already know. |

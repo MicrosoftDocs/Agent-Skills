@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 64
+- **Updated Pages**: 0
+- **Unchanged**: 66
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-redhat-openshift/azure-redhat-openshift.csv`
 
@@ -70,13 +70,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 13 | 19.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Deploy a JBoss EAP Java app](https://learn.microsoft.com/en-us/azure/openshift/howto-deploy-java-jboss-enterprise-application-platform-app)
-  - Updated: 2025-06-11T22:02:00.000Z → 2026-03-26T08:00:00.000Z
-- [Create cluster with managed identities](https://learn.microsoft.com/en-us/azure/openshift/howto-create-openshift-cluster)
-  - Updated: 2025-11-26T23:07:00.000Z → 2026-04-02T22:16:00.000Z
 
 ## Classified Pages
 

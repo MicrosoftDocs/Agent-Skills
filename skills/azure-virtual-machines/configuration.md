@@ -63,7 +63,6 @@
 | Configure VM Snapshot Windows extension for Azure Backup | https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/vmsnapshot-windows |
 | Enable and configure Azure Write Accelerator | https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator |
 | Understand HX-series VM architecture and topology | https://learn.microsoft.com/en-us/azure/virtual-machines/hx-series-overview |
-| Define and version images in Azure Compute Gallery | https://learn.microsoft.com/en-us/azure/virtual-machines/image-version |
 | Install Azure VM watch via ARM, PowerShell, or CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/install-vm-watch |
 | Attach persistent data disks to Linux VMs using CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/add-disk |
 | Attach new or existing data disks to Linux VMs in portal | https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal |

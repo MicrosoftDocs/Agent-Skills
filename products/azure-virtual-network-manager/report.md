@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 51
+- **Updated Pages**: 0
+- **Unchanged**: 52
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-network-manager/azure-virtual-network-manager.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 30 | 57.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Create Virtual Network Manager - Portal](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal)
-  - Updated: 2025-07-11T08:00:00.000Z → 2026-03-24T22:22:00.000Z
 
 ## Classified Pages
 

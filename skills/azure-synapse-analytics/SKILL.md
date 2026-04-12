@@ -3,7 +3,7 @@ name: azure-synapse-analytics
 description: Expert knowledge for Azure Synapse Analytics development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when designing Synapse workspaces, Spark pools, dedicated/serverless SQL, Delta Lake, or Synapse Link workloads, and other Azure Synapse Analytics related development tasks. Not for Azure Data Factory (use azure-data-factory), Azure Data Explorer (use azure-data-explorer), Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Synapse Analytics Skill
@@ -30,9 +30,9 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L142-L162 | Architecture and design guidance for Synapse workspaces, SQL/serverless/Spark pools, data warehouse migrations, table design, ELT/PolyBase loading, and workload management. |
 | Limits & Quotas | L163-L172 | Synapse SQL pool limits: maintenance windows, memory/concurrency by performance level, capacity caps, temp table behavior, serverless Delta Lake v1 querying, and Synapse Link feature limits/issues. |
 | Security | L173-L231 | Securing Synapse workspaces end-to-end: auth and RBAC, network isolation, private endpoints, encryption, data exfiltration, policies, and secure access to storage, SQL, Spark, and migration scenarios. |
-| Configuration | L232-L282 | Configuring Synapse workspaces, Spark pools, and SQL pools: environments, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML, SynapseML). |
-| Integrations & Coding Patterns | L283-L319 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |
-| Deployment | L320-L333 | Deploying and managing Synapse workspaces and dedicated SQL pools: ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows, and automated compute management. |
+| Configuration | L232-L280 | Configuring Synapse workspaces, Spark pools, and SQL pools: environments, scaling, libraries, monitoring/metrics, backups/restore, workload management, and integrations (Purview, AML, SynapseML). |
+| Integrations & Coding Patterns | L281-L317 | Patterns and code to integrate Synapse (Spark, serverless, dedicated SQL) with ADLS, Cosmos DB, Azure SQL, AML, monitoring (Log Analytics, Prometheus), and external tools via connectors, REST, and T-SQL. |
+| Deployment | L318-L331 | Deploying and managing Synapse workspaces and dedicated SQL pools: ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows, and automated compute management. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -233,7 +233,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Connect Synapse workspace to Microsoft Purview | https://learn.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview |
-| Configure SQL pool stored procedure activity in Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity |
 | Design Synapse development, test, and production environments | https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-evaluate-solution-development-environment-design |
 | Configure and review monitoring for Azure Synapse | https://learn.microsoft.com/en-us/azure/synapse-analytics/guidance/implementation-success-perform-monitoring-review |
 | Link Synapse workspace to Azure Machine Learning | https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/quickstart-integrate-azure-machine-learning |
@@ -278,7 +277,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure Synapse SQL connection strings for multiple clients | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/connection-strings |
 | Configure collation types for Synapse dedicated SQL pools | https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/reference-collation-types |
 | Monitor Synapse Link for Azure SQL Database with Studio and Azure Monitor | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-monitor-synapse-link-sql-database |
-| Configure Synapse notebook activity in pipelines | https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

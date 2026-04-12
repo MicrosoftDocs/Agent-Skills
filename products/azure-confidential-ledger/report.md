@@ -37,9 +37,9 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 - **Unclassified**: 11
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 25
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-confidential-ledger/azure-confidential-ledger.csv`
 
@@ -54,21 +54,6 @@ confusable_not_for: Not for Azure Confidential Computing (use azure-confidential
 | *(Unclassified)* | 11 | 36.7% |
 
 ## Changes
-
-### New Pages
-
-- [Authenticate ledger nodes](https://learn.microsoft.com/en-us/azure/confidential-ledger/authenticate-ledger-nodes)
-
-### Updated Pages
-
-- [About Azure confidential ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/overview)
-  - Updated: 2025-12-05T23:18:00.000Z → 2026-03-25T06:03:00.000Z
-- [Python](https://learn.microsoft.com/en-us/azure/confidential-ledger/quickstart-python)
-  - Updated: 2025-04-14T08:00:00.000Z → 2026-03-27T06:02:00.000Z
-- [Data organization](https://learn.microsoft.com/en-us/azure/confidential-ledger/data-organization)
-  - Updated: 2025-07-08T05:13:00.000Z → 2026-03-25T06:03:00.000Z
-- [Secure your Confidential Ledger](https://learn.microsoft.com/en-us/azure/confidential-ledger/secure-confidential-ledger)
-  - Updated: 2025-09-26T08:00:00.000Z → 2026-04-01T22:14:00.000Z
 
 ## Classified Pages
 

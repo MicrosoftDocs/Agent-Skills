@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 39
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 128
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 130
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-wan/azure-virtual-wan.csv`
 
@@ -68,15 +68,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 39 | 30.0% |
 
 ## Changes
-
-### New Pages
-
-- [Delete a VNet Connected to a Virtual WAN hub](https://learn.microsoft.com/en-us/azure/virtual-wan/howto-remove-vnet-connection)
-
-### Updated Pages
-
-- [Virtual hub routing preference](https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference)
-  - Updated: 2024-12-10T08:00:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 

@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 288
+- **Updated Pages**: 0
+- **Unchanged**: 289
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-active-directory-b2c/azure-active-directory-b2c.csv`
 
@@ -76,11 +76,6 @@ confusable_not_for: Not for Azure Information Protection (use azure-information-
 | *(Unclassified)* | 32 | 11.1% |
 
 ## Changes
-
-### Updated Pages
-
-- [Self-service password change](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-change-policy)
-  - Updated: 2025-05-01T11:17:00.000Z → 2026-03-24T17:13:00.000Z
 
 ## Classified Pages
 

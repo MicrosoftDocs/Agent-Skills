@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 23
+- **Updated Pages**: 0
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-payment-hsm/azure-payment-hsm.csv`
 
@@ -63,19 +63,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 10 | 35.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Using SSH](https://learn.microsoft.com/en-us/azure/payment-hsm/access-payshield-manager-ssh)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
-- [4. Delete a commissioned payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/remove-payment-hsm)
-  - Updated: 2025-12-12T05:41:00.000Z → 2026-03-27T06:02:00.000Z
-- [CLI](https://learn.microsoft.com/en-us/azure/payment-hsm/quickstart-cli)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
-- [Reuse an existing virtual network](https://learn.microsoft.com/en-us/azure/payment-hsm/reuse-vnet)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-27T06:02:00.000Z
-- [Secure your Payment HSM](https://learn.microsoft.com/en-us/azure/payment-hsm/secure-payment-hsm)
-  - Updated: 2025-09-26T08:00:00.000Z → 2026-04-01T06:04:00.000Z
 
 ## Classified Pages
 

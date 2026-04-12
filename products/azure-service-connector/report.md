@@ -1,32 +1,31 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   security: Details on what Azure and Microsoft Entra roles/permissions Service Connector
     needs or assigns, and how to review and manage those access requirements securely
   deployment: Info on where Service Connector is regionally supported per compute
     service and how to create connections using infrastructure-as-code tools.
-  configuration: How to view and retrieve Service Connector-generated configs, choose
-    and set up auth methods, and supply correct Azure CLI parameters when creating
-    or managing connections
-  integrations: How to use Azure Service Connector to securely connect apps to databases,
-    messaging, storage, AI, and caching services (Cosmos DB, Kafka, SQL, Redis, Key
-    Vault, OpenAI, etc.)
+  configuration: How to define and retrieve Service Connector connection settings,
+    choose and configure auth methods, and supply correct CLI/IaC parameters for creating
+    connections
+  integrations: Patterns and how-to guides for connecting apps to databases, messaging,
+    storage, AI, and config services using Azure Service Connector (auth options,
+    setup steps, language samples).
   troubleshooting: Diagnosing and resolving Service Connector errors and failures,
     including common error codes, connection issues, and steps to debug and fix failed
     connections.
-  limits-quotas: Details on current Service Connector feature gaps, unsupported scenarios,
-    resource limits, and constraints you must consider when designing or troubleshooting
-    connections.
+  limits-quotas: Limits on number/types of connections, supported scenarios, and guidance
+    to mitigate Service Connector constraints or unsupported configurations.
 skill_description: Expert knowledge for Azure Service Connector development including
   troubleshooting, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when wiring apps to Azure DBs, messaging, storage,
-  AI, or cache via Service Connector roles, CLI, and IaC, and other Azure Service
-  Connector related development tasks. Not for Azure API Management (use azure-api-management),
+  patterns, and deployment. Use when wiring Azure compute to DBs, messaging, storage,
+  AI, or config services via Service Connector APIs, and other Azure Service Connector
+  related development tasks. Not for Azure API Management (use azure-api-management),
   Azure App Service (use azure-app-service), Azure Functions (use azure-functions),
   Azure Logic Apps (use azure-logic-apps).
-use_when: Use when wiring apps to Azure DBs, messaging, storage, AI, or cache via
-  Service Connector roles, CLI, and IaC, and other Azure Service Connector related
-  development tasks.
+use_when: Use when wiring Azure compute to DBs, messaging, storage, AI, or config
+  services via Service Connector APIs, and other Azure Service Connector related development
+  tasks.
 confusable_not_for: Not for Azure API Management (use azure-api-management), Azure
   App Service (use azure-app-service), Azure Functions (use azure-functions), Azure
   Logic Apps (use azure-logic-apps).
@@ -43,8 +42,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 61
+- **Updated Pages**: 5
+- **Unchanged**: 58
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-connector/azure-service-connector.csv`
 
@@ -52,8 +51,8 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 3 | 4.8% |
-| deployment | 2 | 3.2% |
+| configuration | 4 | 6.3% |
+| deployment | 1 | 1.6% |
 | integrations | 26 | 41.3% |
 | limits-quotas | 1 | 1.6% |
 | security | 2 | 3.2% |
@@ -64,10 +63,16 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ### Updated Pages
 
-- [High availability](https://learn.microsoft.com/en-us/azure/service-connector/concept-availability)
-  - Updated: 2023-10-05T08:00:00.000Z → 2026-03-27T22:21:00.000Z
-- [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission)
-  - Updated: 2024-12-19T12:13:00.000Z → 2026-03-27T22:21:00.000Z
+- [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs)
+  - Updated: 2024-02-05T18:03:00.000Z → 2026-04-10T22:10:00.000Z
+- [Azure SignalR Service](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr)
+  - Updated: 2024-10-16T11:25:00.000Z → 2026-04-10T17:11:00.000Z
+- [Apache Kafka on Confluent Cloud](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka)
+  - Updated: 2024-09-11T11:20:00.000Z → 2026-04-10T22:10:00.000Z
+- [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations)
+  - Updated: 2024-10-23T11:25:00.000Z → 2026-04-10T17:11:00.000Z
+- [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools)
+  - Updated: 2024-12-18T08:00:00.000Z → 2026-04-10T17:11:00.000Z
 
 ## Classified Pages
 
@@ -78,7 +83,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob) | integrations | 0.90 | Details supported auth methods, clients, sample code, and default environment variable names/values for Blob Storage; clearly an integration pattern reference. |
 | [Azure Cache for Redis](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache) | integrations | 0.90 | Covers supported auth methods, clients, sample code, and default environment variable names/values for Azure Cache for Redis; fits integrations & coding patterns. |
 | [Microsoft Entra roles](https://learn.microsoft.com/en-us/azure/service-connector/concept-microsoft-entra-roles) | security | 0.90 | Explains which exact RBAC roles are assigned by default and how to choose different roles; includes specific role names and authorization behavior, which is product-specific security configuration. |
-| [Apache Kafka on Confluent Cloud](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka) | integrations | 0.88 | Apache Kafka on Confluent Cloud integration with supported auth/clients and default env var names/values or Spring Boot config unique to this Service Connector scenario. |
 | [Azure Database for MySQL](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-mysql) | integrations | 0.88 | MySQL-specific integration article with supported auth methods, client usage, and default env var names/values and configuration returned by Service Connector. |
 | [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-postgres) | integrations | 0.88 | Provides PostgreSQL-specific integration details including supported auth, client libraries, and default environment variable names/values from Service Connector. |
 | [Azure Key Vault](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-key-vault) | integrations | 0.88 | Key Vault integration article with product-specific auth behavior, supported clients, and default environment variable names/values from Service Connector. |
@@ -92,22 +96,23 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Azure Cosmos DB for Apache Gremlin](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-gremlin) | integrations | 0.86 | Provides concrete integration details: supported auth methods, client types, and default environment variable names/values for Cosmos DB Gremlin with Service Connector. |
 | [Azure Cosmos DB for MongoDB](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-db) | integrations | 0.86 | Contains product-specific integration patterns, including supported auth/clients and default env var names and Spring Boot config for Cosmos DB MongoDB. |
 | [Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-sql) | integrations | 0.86 | Lists supported authentication methods, client libraries, and default environment variable names/values or Spring Boot settings for Cosmos DB NoSQL integration. |
-| [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs) | integrations | 0.86 | Event Hubs integration page with concrete auth/client combinations and default env var names/values or Spring Boot config produced by Service Connector. |
 | [Azure File](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file) | integrations | 0.86 | Details Azure Files integration including supported authentication, client types, and default environment variable names/values or Spring Boot settings. |
 | [Azure Queue Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue) | integrations | 0.86 | Queue Storage integration page listing supported auth methods, client libraries, and default env var names/values or Spring Boot configuration. |
-| [Azure SignalR Service](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr) | integrations | 0.86 | Shows SignalR-specific supported authentication and client types plus default env var name/value or Spring Boot configuration for Service Connector connections. |
 | [Azure Table Storage](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-table) | integrations | 0.86 | Provides Table Storage-specific integration details including supported auth/clients and default env var names/values from Service Connector. |
 | [Azure Web PubSub](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-web-pubsub) | integrations | 0.86 | Web PubSub integration page listing supported authentication methods, client types, and default environment variable names/values for Service Connector. |
 | [SQL database in Microsoft Fabric](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-fabric-sql) | integrations | 0.86 | Describes integration of Fabric SQL databases including supported authentication, client types, and default environment variable names/values from Service Connector. |
 | [Azure Cosmos DB for Table](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-table) | integrations | 0.84 | Shows concrete integration details and default environment variable names/values for Cosmos DB Table when wired through Service Connector. |
 | [Get connection configurations](https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations) | configuration | 0.80 | Explains how to obtain connection configurations (e.g., connection strings) and configuration names for specific target service types; likely includes environment variable names and patterns, which are configuration details. |
 | [Permission requirements](https://learn.microsoft.com/en-us/azure/service-connector/concept-permission) | security | 0.80 | Page specifically outlines permission requirements for creating connections between Azure resources, which typically includes concrete RBAC roles and scopes unique to Service Connector usage. This matches the security category’s criteria for product-specific role/permission configuration. |
+| [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs) | integrations | 0.78 | The page documents product-specific integration details between Service Connector and Azure Event Hubs, including supported client types, authentication methods, default environment variable names/values, and Spring Boot configuration properties. These are concrete configuration and coding patterns unique to this integration, matching the integrations sub-skill criteria. |
+| [Azure SignalR Service](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr) | integrations | 0.78 | The article provides specific integration details for Azure SignalR Service via Service Connector, including supported client types, authentication options, default environment variables, and Spring Boot configuration keys. These product-specific parameters and code patterns qualify as expert integration knowledge. |
 | [Foundry Tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services) | integrations | 0.78 | The article describes supported authentication methods and clients for connecting to Foundry Tools using Service Connector, and explicitly mentions default environment variable names and values created with the connection. These product-specific configuration details and code samples for integrating services match the integrations sub-skill definition. |
-| [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations) | limits-quotas | 0.78 | Limitations article is expected to enumerate concrete constraints and unsupported scenarios for Service Connector, which are product-specific expert details not derivable from general knowledge. |
+| [Apache Kafka on Confluent Cloud](https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka) | integrations | 0.76 | The page describes how to integrate Apache Kafka on Confluent Cloud with Azure compute services using Service Connector, listing supported clients, authentication methods, and required environment variables. These concrete configuration parameters and integration patterns are product-specific and fit the integrations sub-skill. |
 | [Provide correct parameters](https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters) | configuration | 0.75 | Focuses on fundamental properties and proper value formats when passing parameters via CLI; this implies specific parameter names, formats, and constraints, which are configuration details. |
-| [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools) | deployment | 0.70 | Guides translating connected services into IaC templates for CI/CD; likely includes resource definitions, properties, and constraints specific to Service Connector, which are deployment-focused patterns. |
+| [Known limitations](https://learn.microsoft.com/en-us/azure/service-connector/known-limitations) | limits-quotas | 0.70 | A dedicated limitations page for Service Connector typically enumerates specific constraints (for example, unsupported scenarios, feature gaps, or numeric limits) and how to mitigate them. While not all limits may be numeric, such a 'known limitations' article usually contains concrete, product-specific constraints that an LLM would not reliably know, aligning best with limits-quotas among the available categories. |
 | [Manage authentication](https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication) | configuration | 0.70 | Covers how to select and manage authentication parameters and customize environment variables; likely includes specific parameter names and allowed values for different auth methods, fitting configuration. |
 | [Region support](https://learn.microsoft.com/en-us/azure/service-connector/concept-region-support) | deployment | 0.70 | Region support matrix for Service Connector across App Service, Functions, Container Apps, AKS, and Spring Apps is deployment-specific metadata that changes over time and is not generally known to LLMs; it is effectively a platform support matrix. |
+| [Build connections with IaC tools](https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools) | configuration | 0.68 | The article describes how to translate manually created Service Connector connections into IaC templates for CI/CD. This typically includes product-specific resource definitions and configuration parameters (for example, connection resource types, required properties, and their allowed values) that are unique to Azure Service Connector and not just generic IaC usage. While it’s framed as a how-to, the core value is enumerating the specific configuration fields and patterns needed to represent service connections as code, which aligns best with the configuration sub-skill. |
 
 ## Unclassified Pages
 

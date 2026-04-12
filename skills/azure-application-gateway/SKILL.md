@@ -3,7 +3,7 @@ name: azure-application-gateway
 description: Expert knowledge for Azure Application Gateway development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring listeners/routing, WAF/TLS, AGIC/AKS integration, autoscale/zone redundancy, or v1→v2 migration, and other Azure Application Gateway related development tasks. Not for Azure Front Door (use azure-front-door), Azure Load Balancer (use azure-load-balancer), Azure Traffic Manager (use azure-traffic-manager), Azure Firewall (use azure-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Application Gateway Skill
@@ -27,11 +27,11 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L36-L41 | Diagnosing and fixing Application Gateway runtime issues: backend health, 502s, certificates/Key Vault, listeners, session affinity, mTLS, redirects, AKS/ALB/containers, and HTTP response codes. |
 | Best Practices | L42-L46 | Guidance on designing Application Gateway for very high traffic: sizing, autoscaling, performance tuning, capacity planning, and configuration patterns to handle large loads reliably. |
 | Decision Making | L47-L56 | Guidance on choosing networking and pricing for Application Gateway, and planning migrations (AGIC to containers, v1 retirement, classic VMs to ARM) |
-| Limits & Quotas | L57-L63 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
-| Security | L64-L105 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
-| Configuration | L106-L170 | Configuring and monitoring Azure Application Gateway and Application Gateway for Containers: listeners, routing, probes, health, headers/URL rewrite, session affinity, diagnostics, and AKS/AGIC integration. |
-| Integrations & Coding Patterns | L171-L178 | Patterns for integrating App Gateway for Containers with monitoring, security, and scaling: Prometheus/Grafana, Istio, Sentinel/Defender, and autoscaling AKS pods via gateway metrics. |
-| Deployment | L179-L193 | Guides for deploying and migrating Application Gateway (v1→v2, IPv6, mTLS), configuring autoscale, and setting up/upgrading AGIC with AKS using portal, ARM, PowerShell, and Helm. |
+| Limits & Quotas | L57-L61 | Autoscaling and zone redundancy settings, gateway capacity and configuration limits, and guidance for migrating from Application Gateway v1 to v2. |
+| Security | L62-L103 | TLS/SSL, certificates, mTLS, WAF, DDoS, HSTS, and secure access patterns for Application Gateway and App Gateway for Containers, including Key Vault, cert-manager, and protocol/cipher policies |
+| Configuration | L104-L168 | Configuring and monitoring Azure Application Gateway and Application Gateway for Containers: listeners, routing, probes, health, headers/URL rewrite, session affinity, diagnostics, and AKS/AGIC integration. |
+| Integrations & Coding Patterns | L169-L176 | Patterns for integrating App Gateway for Containers with monitoring, security, and scaling: Prometheus/Grafana, Istio, Sentinel/Defender, and autoscaling AKS pods via gateway metrics. |
+| Deployment | L177-L191 | Guides for deploying and migrating Application Gateway (v1→v2, IPv6, mTLS), configuring autoscale, and setting up/upgrading AGIC with AKS using portal, ARM, PowerShell, and Helm. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -58,8 +58,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure autoscaling and zone redundancy for Application Gateway v2 | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant |
-| Reference common limits and behaviors for Azure Application Gateway | https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq |
-| Plan migration from Application Gateway v1 to v2 | https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2 |
 
 ### Security
 | Topic | URL |

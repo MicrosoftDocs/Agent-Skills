@@ -1,9 +1,9 @@
 ---
 name: azure-reliability
-description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing AZ/multi-region apps, MySQL Flexible Server HA, resilient Functions, or Azure Queue Storage limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Azure Site Recovery (use azure-site-recovery).
+description: Expert knowledge for Azure Reliability development including best practices, decision making, architecture & design patterns, limits & quotas, and deployment. Use when designing zone/multi-region apps, AZ-enabled MySQL, resilient Functions, AKS/DB HA, or Queue size limits, and other Azure Reliability related development tasks. Not for Azure Resiliency (use azure-resiliency), Azure Monitor (use azure-monitor), Azure Service Health (use azure-service-health), Chaos Studio (use azure-chaos-studio).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Reliability Skill
@@ -24,11 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Best Practices | L33-L65 | Patterns and guidance to design, configure, and harden high‑availability, disaster recovery, and fault‑tolerant architectures for specific Azure services and workloads |
-| Decision Making | L66-L70 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
-| Architecture & Design Patterns | L71-L77 | Designing zone-resilient and zonal workloads, hardening deployments for availability zones, and architecting multi-region solutions (including non‑paired regions) for high reliability. |
-| Limits & Quotas | L78-L82 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
-| Deployment | L83-L87 | Guidance on deploying Azure services and MySQL Flexible Server with availability zones, including configuring zone-redundant high availability and migration to zone-resilient setups. |
+| Best Practices | L33-L68 | Patterns and checklists for designing, configuring, and hardening high‑availability, resilient architectures for specific Azure services (AKS, DBs, messaging, networking, monitoring, DR). |
+| Decision Making | L69-L73 | Guidance on using availability zones, nonregional services, and resilient Azure Functions architectures to design highly available, fault-tolerant Azure solutions. |
+| Architecture & Design Patterns | L74-L80 | Designing Azure apps for high availability using zones and multi-region patterns, including planning zone-resilient workloads, hardening zonal deployments, and building in nonpaired regions. |
+| Limits & Quotas | L81-L85 | Details on Azure Queue Storage message size limits, including max message size, behavior when limits are exceeded, and best practices for handling large payloads. |
+| Deployment | L86-L89 | Guidance on deploying Azure services and MySQL Flexible Server with availability zones, including configuring zone-redundant high availability and migration to zone-resilient setups. |
 
 ### Best Practices
 | Topic | URL |
@@ -42,6 +42,8 @@ This skill requires **network access** to fetch documentation content:
 | Achieve high availability in Azure Cosmos DB NoSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db-nosql |
 | Design resilient Azure Data Explorer deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-explorer |
 | Harden Azure Data Factory for outages | https://learn.microsoft.com/en-us/azure/reliability/reliability-data-factory |
+| Harden Azure Database for MySQL for high availability | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
+| Design resilient Azure Database for MySQL deployments | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-mysql |
 | Implement high availability for Azure Database for PostgreSQL | https://learn.microsoft.com/en-us/azure/reliability/reliability-database-postgresql |
 | Implement resilient architectures in Azure Databricks | https://learn.microsoft.com/en-us/azure/reliability/reliability-databricks |
 | Ensure reliability for Azure Device Registry metadata | https://learn.microsoft.com/en-us/azure/reliability/reliability-device-registry |
@@ -57,11 +59,12 @@ This skill requires **network access** to fetch documentation content:
 | Design resilient architectures with Azure Load Balancer | https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer |
 | Design resilient workflows with Azure Logic Apps | https://learn.microsoft.com/en-us/azure/reliability/reliability-logic-apps |
 | Increase reliability of Azure Managed Redis caches | https://learn.microsoft.com/en-us/azure/reliability/reliability-managed-redis |
+| Implement resilient logging with Azure Monitor Logs | https://learn.microsoft.com/en-us/azure/reliability/reliability-monitor-logs |
 | Improve reliability of Azure Notification Hubs | https://learn.microsoft.com/en-us/azure/reliability/reliability-notification-hubs |
 | Design resilient disaster recovery with Azure Site Recovery | https://learn.microsoft.com/en-us/azure/reliability/reliability-site-recovery |
 | Implement resilient architectures in Azure SQL Database | https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database |
 | Increase reliability of Azure Stream Analytics jobs | https://learn.microsoft.com/en-us/azure/reliability/reliability-stream-analytics |
-| Plan high availability in Azure VMware Solution | https://learn.microsoft.com/en-us/azure/reliability/reliability-vmware-solution |
+| Design resilient workloads on Azure VMware Solution | https://learn.microsoft.com/en-us/azure/reliability/reliability-vmware-solution |
 
 ### Decision Making
 | Topic | URL |
@@ -73,7 +76,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Enable and plan zone-resilient Azure workloads | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-enable-zone-resiliency |
 | Design and harden zonal Azure resource deployments | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-zonal-resource-resiliency |
-| Architect multi-region solutions in nonpaired Azure regions | https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired |
+| Design multi-region solutions in nonpaired Azure regions | https://learn.microsoft.com/en-us/azure/reliability/regions-multi-region-nonpaired |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -84,4 +87,3 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Use Azure services with availability zone support | https://learn.microsoft.com/en-us/azure/reliability/availability-zones-service-support |
-| Migrate MySQL Flexible Server to zone-redundant HA | https://learn.microsoft.com/en-us/azure/reliability/migrate-database-mysql-flex |

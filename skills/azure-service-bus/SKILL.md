@@ -1,9 +1,9 @@
 ---
 name: azure-service-bus
-description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, filters, geo-replication, JMS/AMQP APIs, or migrating Standard→Premium, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Queue Storage (use azure-queue-storage), Azure Relay (use azure-relay).
+description: Expert knowledge for Azure Service Bus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using queues/topics, sessions, filters, geo-replication/DR, or Premium scaling and throughput limits, and other Azure Service Bus related development tasks. Not for Azure Event Hubs (use azure-event-hubs), Azure Event Grid (use azure-event-grid), Azure Relay (use azure-relay), Azure Queue Storage (use azure-queue-storage).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Bus Skill
@@ -29,10 +29,10 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L62-L72 | Guidance on choosing Service Bus vs other messaging services/tiers, configuring autoforwarding, geo-disaster recovery/replication, and migrating from Standard to Premium. |
 | Architecture & Design Patterns | L73-L81 | Patterns for designing resilient, federated, multi-namespace Service Bus systems, including partitioning, replication, and using NServiceBus for message-driven architectures. |
 | Limits & Quotas | L82-L87 | Service Bus message, entity, and namespace quotas (size, connections, throughput) and how throttling works, including limits, behaviors under load, and mitigation strategies. |
-| Security | L88-L110 | Authentication, encryption, network isolation, TLS, and policy/compliance for securing Service Bus (Entra ID, managed identities, SAS, CMK, firewalls, Private Link, VNets, Azure Policy). |
+| Security | L88-L110 | Securing Service Bus: identity-based auth, SAS, keys and encryption, TLS, network isolation (VNet, Private Link, firewall), Azure Policy, and compliance configuration. |
 | Configuration | L111-L134 | Configuring Service Bus entities, filters, sessions, partitioning, monitoring, and management via portal, PowerShell, ARM, and local emulator, plus message browsing, counts, and replication. |
 | Integrations & Coding Patterns | L135-L150 | Patterns and code for integrating Service Bus with JMS, AMQP, RabbitMQ, Event Grid/Logic Apps/Functions, subscription filters, and batch message operations/migration scenarios |
-| Deployment | L151-L161 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
+| Deployment | L151-L160 | Deploying and scaling Service Bus: autoscaling Premium messaging units and creating/moving namespaces, queues, topics, subscriptions, and rules using ARM templates or Bicep. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -151,7 +151,6 @@ This skill requires **network access** to fetch documentation content:
 ### Deployment
 | Topic | URL |
 |-------|-----|
-| Autoscale Service Bus Premium messaging units | https://learn.microsoft.com/en-us/azure/service-bus-messaging/automate-update-messaging-units |
 | Move an Azure Service Bus namespace across regions | https://learn.microsoft.com/en-us/azure/service-bus-messaging/move-across-regions |
 | Create a Service Bus namespace with ARM template | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace |
 | Deploy Service Bus namespace and queue with ARM template | https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-resource-manager-namespace-queue |

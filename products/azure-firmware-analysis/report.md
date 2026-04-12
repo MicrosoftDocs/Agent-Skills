@@ -43,9 +43,9 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 3
-- **Unchanged**: 10
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 15
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -62,20 +62,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 2 | 13.3% |
 
 ## Changes
-
-### New Pages
-
-- [Understanding and prioritizing weaknesses data in firmware analysis](https://learn.microsoft.com/en-us/azure/firmware-analysis/understand-weaknesses-data)
-- [UEFI firmware analysis capabilities](https://learn.microsoft.com/en-us/azure/firmware-analysis/unified-extensible-firmware-interface-firmware-analysis)
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-faq)
-  - Updated: 2025-09-26T05:10:00.000Z → 2026-03-31T22:19:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
-  - Updated: 2025-10-27T22:13:00.000Z → 2026-03-31T22:19:00.000Z
-- [Interpreting extractor paths from analysis results](https://learn.microsoft.com/en-us/azure/firmware-analysis/interpreting-extractor-paths)
-  - Updated: 2025-09-12T08:00:00.000Z → 2026-03-31T22:19:00.000Z
 
 ## Classified Pages
 

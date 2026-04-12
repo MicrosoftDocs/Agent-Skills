@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication/Data Sync, or securing with Entra/TDE, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication, elastic pools, Data Sync, or HA/DR, and other Azure SQL Database related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L101-L117 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
 | Limits & Quotas | L118-L131 | Limits, quotas, and resource caps for Azure SQL (free tiers, DTU/vCore, elastic pools, Hyperscale), plus how to request quota increases and watcher/operational constraints. |
 | Security | L132-L199 | Configuring Azure SQL security: authentication (Entra, managed identity, MFA), network/firewall, auditing, encryption (TDE, Always Encrypted), threat protection, compliance, and best practices. |
-| Configuration | L200-L265 | Configuring Azure SQL: monitoring, maintenance, backups/immutability, scaling and elastic pools, geo-replication/failover, Data Sync, networking/TLS/DNS, and deployment via CLI/PowerShell/ARM. |
+| Configuration | L200-L265 | Configuring Azure SQL databases: monitoring, backups, geo-replication/failover, security/immutability, scaling and elastic pools, Data Sync, maintenance windows, and CLI/PowerShell setup. |
 | Integrations & Coding Patterns | L266-L294 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python), sharding/elastic patterns, and automating management, replication, sync, and streaming via PowerShell/Spark/Stream Analytics |
 | Deployment | L295-L310 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/elastic pools, regional moves, feature availability, and dev environment setup. |
 
@@ -215,7 +215,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure time-based immutability for Azure SQL LTR backups | https://learn.microsoft.com/en-us/azure/azure-sql/database/backup-immutability-time-based?view=azuresql |
 | Configure MAXDOP for Azure SQL and Fabric databases | https://learn.microsoft.com/en-us/azure/azure-sql/database/configure-max-degree-of-parallelism?view=azuresql |
 | Configure TLS and connection policy for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/connectivity-settings?view=azuresql |
-| Configure and use soft delete to restore Azure SQL logical servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql |
+| Configure and use soft delete restore for Azure SQL logical servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql |
 | Configure and use DNS aliases for Azure SQL servers | https://learn.microsoft.com/en-us/azure/azure-sql/database/dns-alias-overview?view=azuresql |
 | Manage Azure SQL DNS aliases with PowerShell and CLI | https://learn.microsoft.com/en-us/azure/azure-sql/database/dns-alias-powershell-create?view=azuresql |
 | Understand DTU benchmark characteristics for Azure SQL Database | https://learn.microsoft.com/en-us/azure/azure-sql/database/dtu-benchmark?view=azuresql |

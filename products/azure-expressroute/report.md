@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   limits-quotas: ExpressRoute bandwidth, route, and gateway limits, FastPath constraints,
     rate limiting on provider circuits, and how to monitor advertised routes to stay
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 5
-- **Unchanged**: 90
+- **Updated Pages**: 1
+- **Unchanged**: 94
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -78,16 +78,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Updated Pages
 
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-prerequisites)
-  - Updated: 2025-05-22T22:09:00.000Z → 2026-03-24T02:22:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-custom-bgp-communities-portal)
-  - Updated: 2025-02-02T12:10:00.000Z → 2026-03-24T06:16:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/expressroute/gateway-migration)
-  - Updated: 2025-10-22T22:17:00.000Z → 2026-03-30T08:00:00.000Z
-- [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal)
-  - Updated: 2025-11-07T05:43:00.000Z → 2026-03-25T22:12:00.000Z
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-powershell)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-03-25T22:12:00.000Z
+- [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro)
+  - Updated: 2026-02-18T08:00:00.000Z → 2026-04-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -176,7 +168,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-gateway-migration-portal) | 0.30 | Primarily a portal-based step-by-step migration tutorial without detailed matrices, limits, or configuration tables; it mentions that higher SKUs provide more resources but does not include quantified trade-offs, limits, or SKU selection criteria beyond generic guidance. |
 | [Connect Azure to public cloud](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connect-azure-to-public-cloud) | 0.30 | Conceptual multicloud connectivity discussion; lacks concrete limits, configs, or troubleshooting details. |
 | [Create an ExpressRoute circuit - Bicep](https://learn.microsoft.com/en-us/azure/expressroute/quickstart-create-expressroute-vnet-bicep) | 0.30 | Quickstart Bicep deployment example; step-by-step tutorial without parameter tables, limits, or product-specific best-practice guidance. |
-| [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro) | 0.30 | Overview of ExpressRoute Metro; summary does not indicate detailed limits, configs, or decision matrices. |
 | [ExpressRoute for Cloud Solution Providers (CSP)](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-for-cloud-solution-providers) | 0.30 | Appears to be a program/offer overview for Cloud Solution Providers using ExpressRoute, likely focused on business/programmatic aspects and high-level APIs rather than detailed technical limits, configuration parameters, or troubleshooting. |
 | [Guidance](https://learn.microsoft.com/en-us/azure/expressroute/planned-maintenance) | 0.30 | Provides guidance for planned maintenance events (what happens and how to minimize impact) but is likely procedural/operational without specific numeric limits, config parameter tables, or error-code mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings) | 0.30 | Conceptual overview of circuits and peering; lacks detailed config tables, limits, or decision matrices. |
@@ -185,6 +176,7 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | [Azure portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) | 0.20 | Duplicate of index 1: portal quickstart for ExpressRoute circuits. Same reasoning: tutorial content without detailed limits, configuration matrices, or decision guidance, so it doesn’t qualify as expert knowledge under the defined categories. |
 | [Create an ExpressRoute circuit - Portal](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) | 0.20 | Quickstart for creating ExpressRoute circuits in the portal is a step-by-step tutorial. It focuses on how to create, update, and delete circuits, not on detailed limits, configuration parameter tables, or decision matrices. It doesn’t match any expert-knowledge sub-skill type as defined. |
 | [Create an ExpressRoute circuit - PowerShell](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-arm) | 0.20 | PowerShell quickstart for creating ExpressRoute circuits is procedural guidance. It shows commands and basic usage but not structured configuration option tables, limits, or troubleshooting mappings. It doesn’t meet the expert-knowledge criteria for any sub-skill type. |
+| [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro) | 0.20 | Page is an overview of ExpressRoute Metro and how it works, describing concepts like circuits and peering locations without specific numeric limits, configuration parameter tables, error codes, or decision matrices. It does not meet any of the expert-knowledge criteria for limits, configuration, troubleshooting, or decision-making. |
 | [Monitor ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/monitor-expressroute) | 0.20 | High-level guidance on monitoring ExpressRoute with Azure Monitor; appears to be an overview/start-here article linking to other resources, without specific limits, configuration tables, error codes, or product-specific parameters. |
 | [Network Insights](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-network-insights) | 0.20 | Describes viewing ExpressRoute metrics and topology via Network Insights but appears to be a conceptual/UX overview without detailed configuration parameters, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-global-reach) | 0.20 | Conceptual overview of ExpressRoute Global Reach; no detailed limits, configs, or decision matrices evident from summary. |

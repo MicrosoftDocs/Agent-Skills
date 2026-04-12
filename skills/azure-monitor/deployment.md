@@ -8,9 +8,8 @@
 | Topic | URL |
 |-------|-----|
 | Deploy and manage Azure Monitor Agent on VMs and Arc | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-manage |
-| Automatically install Azure Monitor Agent using Azure Policy | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
-| Install Azure Monitor Agent on Windows client devices | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-windows-client |
-| Use ARM template samples to deploy Azure Monitor agents | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/resource-manager-agent |
+| Use Azure Policy to deploy Azure Monitor Agent at scale | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-policy |
+| Deploy Azure Monitor and Log Analytics agents with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/agents/resource-manager-agent |
 | Deploy Azure Monitor alert rules via CLI, PowerShell, and ARM | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-rule-cli-powershell-arm |
 | Migrate Application Insights smart detection to alerts | https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration |
 | Deploy Azure Monitor resources with ARM templates | https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/resource-manager-samples |
@@ -22,8 +21,6 @@
 | Run Application Insights Profiler on Azure VMs and scale sets | https://learn.microsoft.com/en-us/azure/azure-monitor/profiler/profiler-vm |
 | Migrate Azure Monitor Grafana dashboards to Managed Grafana | https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/visualize-copy-to-managed-grafana |
 | Deploy Azure Monitor agent to Azure and hybrid VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-virtual-machine-agent |
-| Deploy the Performance Diagnostics VM extension for Windows | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-extension |
-| Install and run Performance Diagnostics reports on Azure VMs | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/performance-diagnostics-run |
 | Deploy VM monitoring at scale with Azure Monitor | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vm-enable-monitoring |
 | Upgrade and manage VM insights Dependency Agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-dependency-agent |
 | Migrate VM insights from Log Analytics agent to Azure Monitor agent | https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-migrate-agent |

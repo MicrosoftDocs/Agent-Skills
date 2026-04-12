@@ -42,8 +42,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 32
+- **Updated Pages**: 0
+- **Unchanged**: 33
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-resource-graph/azure-resource-graph.csv`
 
@@ -60,11 +60,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Policy (use
 | *(Unclassified)* | 11 | 33.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Get resource changes](https://learn.microsoft.com/en-us/azure/governance/resource-graph/changes/get-resource-changes)
-  - Updated: 2025-08-11T22:18:00.000Z → 2026-04-03T17:16:00.000Z
 
 ## Classified Pages
 

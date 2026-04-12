@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: Authoring, assigning, storing, and securing Machine Configuration
     (guest configuration) packages and policies, plus prerequisites, networking, remediation,
@@ -43,13 +43,13 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 - **Total Pages**: 156
 - **Fetched**: 156
 - **Fetch Failed**: 0
-- **Classified**: 97
-- **Unclassified**: 59
+- **Classified**: 96
+- **Unclassified**: 60
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 145
+- **Updated Pages**: 1
+- **Unchanged**: 155
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
@@ -58,40 +58,20 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 12 | 7.7% |
-| configuration | 12 | 7.7% |
+| configuration | 11 | 7.1% |
 | decision-making | 3 | 1.9% |
 | deployment | 7 | 4.5% |
 | integrations | 2 | 1.3% |
 | security | 58 | 37.2% |
 | troubleshooting | 3 | 1.9% |
-| *(Unclassified)* | 59 | 37.8% |
+| *(Unclassified)* | 60 | 38.5% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Exemption structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure)
-  - Updated: 2025-03-04T08:00:00.000Z → 2026-03-21T11:11:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 1.3.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-3-0)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CMMC Level 3](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cmmc-l3)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-soc-2)
-  - Updated: 2025-10-20T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 1.1.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-1-0)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 1.3.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-3-0)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 1.4.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-1-4-0)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 2.0.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cis-azure-2-0-0)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CMMC Level 3](https://learn.microsoft.com/en-us/azure/governance/policy/samples/cmmc-l3)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [SOC 2 Type 2](https://learn.microsoft.com/en-us/azure/governance/policy/samples/soc-2)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-03-19T08:00:00.000Z
-- [CIS Microsoft Azure Foundations Benchmark 1.1.0](https://learn.microsoft.com/en-us/azure/governance/policy/samples/gov-cis-azure-1-1-0)
-  - Updated: 2025-10-09T08:00:00.000Z → 2026-03-19T08:00:00.000Z
+- [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options)
+  - Updated: 2024-02-07T23:03:00.000Z → 2026-04-10T17:11:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +86,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Create a custom policy definition](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/create-policy-definition) | configuration | 0.80 | Includes required extensions, initiative names, and version requirements; detailed policy definition configuration for this feature. |
 | [Microsoft cloud security benchmark](https://learn.microsoft.com/en-us/azure/governance/policy/samples/azure-security-benchmark) | security | 0.80 | Maps Microsoft cloud security benchmark controls to Azure Policy initiatives; central reference for Azure security baseline implementation. |
 | [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/develop-custom-package/overview) | configuration | 0.80 | Covers authoring and validating custom packages, including GA limitations and usage constraints; product-specific package configuration details. |
-| [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) | configuration | 0.80 | Details required extensions, initiative names, and version thresholds for remediation; concrete configuration and version requirements. |
 | [Understand the baseline settings parameter format](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/understand-baseline-settings-parameter) | security | 0.80 | Explains baseline parameter format with JSON examples for CIS and Azure Security Baselines; product-specific security configuration schema. |
 | [Using Bicep](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-configuration/bicep) | deployment | 0.80 | Provides Bicep examples with specific resource types and properties; product-specific deployment syntax and constraints. |
 | [Using Rest API](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-configuration/rest-api) | deployment | 0.80 | Shows REST payloads with type names and parent references; detailed deployment API usage unique to this service. |
@@ -251,6 +230,7 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [System Policy](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy) | 0.30 | High-level guide to system policy capability; no detailed settings, limits, or troubleshooting mappings. |
 | [Virtual machine recommended policies](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/recommended-policies) | 0.30 | Describes recommended policies UI for VMs; no detailed technical configuration or numeric criteria in summary. |
 | [Compliance states](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/compliance-states) | 0.25 | Conceptual article on compliance states; summary shows no detailed configuration or numeric guidance. |
+| [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) | 0.20 | Content appears to describe remediation behavior and options for Azure Policy machine configuration at a conceptual level (continuous remediation, remediation tasks, Safe Deployment framework) without exposing concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It reads more like a feature explanation/how-to than a detailed reference with expert-only specifics. |
 | [What is Azure Machine Configuration?](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/01-overview-concepts) | 0.20 | Conceptual overview of Azure Machine Configuration; no detailed limits, configs, or error mappings. |
 | [What is Azure Policy?](https://learn.microsoft.com/en-us/azure/governance/policy/overview) | 0.20 | High-level overview of Azure Policy; mostly conceptual service description without detailed limits or configs. |
 | [Azure Policy glossary](https://learn.microsoft.com/en-us/azure/governance/policy/policy-glossary) | 0.10 | Glossary of terms; definitions but no configuration, limits, or troubleshooting mappings. |

@@ -3,7 +3,7 @@ name: azure-data-explorer
 description: Expert knowledge for Azure Data Explorer development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADX auth/networking, managing cluster limits, integrating via SQL/ODBC/Functions, or designing DR/BC, and other Azure Data Explorer related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure Stream Analytics (use azure-stream-analytics), Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Explorer Skill
@@ -27,12 +27,12 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L37-L47 | Diagnosing and fixing ADX cluster health, creation, connection, private endpoint, ingestion, and DB/table operation errors, including interpreting error codes and using Azure Resource Health. |
 | Best Practices | L48-L59 | Guidance on ADX performance and reliability: schema design, handling duplicates, JSON ingestion, monitoring queued ingestion, hot/cold data querying, high concurrency, and Power BI integration. |
 | Decision Making | L60-L73 | Guidance on choosing ADX cluster SKUs, scaling, confidential/isolated compute, streaming ingestion, migration from Elasticsearch, and optimizing/pricing with reservations and cost per GB. |
-| Architecture & Design Patterns | L74-L81 | Designing ADX architectures for DR, regional replication, business continuity, cross-cluster access via follower DBs, and multi-tenant deployment patterns. |
-| Limits & Quotas | L82-L92 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
-| Security | L93-L120 | Configuring ADX security: auth/RBAC, managed identities, encryption/CMK, network isolation (private endpoints, outbound/public access), policies, locks, and privacy/data purge. |
-| Configuration | L121-L137 | Configuring ADX clusters, schemas, policies, data connections, emulator, plugins, monitoring, and web UI (profiles, shortcuts), plus KQL scripts, Sync Kusto, and T-SQL access. |
-| Integrations & Coding Patterns | L138-L172 | Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell, Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, Python, MATLAB, Sisense, and more. |
-| Deployment | L173-L179 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones and from VNet injection to private endpoints. |
+| Architecture & Design Patterns | L74-L80 | Designing ADX architectures for DR, regional replication, business continuity, cross-cluster access via follower DBs, and multi-tenant deployment patterns. |
+| Limits & Quotas | L81-L91 | Cluster limits and behaviors: free cluster quotas, auto-stop, safe delete/recover, ingestion file size and invalid data handling, and supported data/compression formats. |
+| Security | L92-L119 | Configuring ADX security: auth/RBAC, managed identities, encryption/CMK, network isolation (private endpoints, outbound/public access), policies, locks, and privacy/data purge. |
+| Configuration | L120-L136 | Configuring ADX clusters, schemas, policies, data connections, emulator, plugins, monitoring, and web UI (profiles, shortcuts), plus KQL scripts, Sync Kusto, and T-SQL access. |
+| Integrations & Coding Patterns | L137-L171 | Integrating ADX with tools and services: SQL/JDBC/ODBC, PowerShell, Power Automate/Apps, Logic Apps, Functions, Grafana, Splunk, OpenTelemetry, Tableau, Python, MATLAB, Sisense, and more. |
+| Deployment | L172-L178 | Provisioning and automating ADX environments, deploying schema via Azure DevOps, and migrating clusters to availability zones and from VNet injection to private endpoints. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -75,7 +75,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Design ADX regional DR and replication solutions | https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-create-solution |
-| Plan ADX business continuity and DR architecture | https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview |
 | Use follower databases for cross-cluster ADX access | https://learn.microsoft.com/en-us/azure/data-explorer/follower |
 | Choose Azure Data Explorer multi-tenant architecture | https://learn.microsoft.com/en-us/azure/data-explorer/multi-tenant |
 

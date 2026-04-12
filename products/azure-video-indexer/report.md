@@ -50,10 +50,10 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 - **Unclassified**: 23
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 2
-- **Unchanged**: 74
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 79
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-video-indexer/azure-video-indexer.csv`
 
 ## Classification Statistics
@@ -72,23 +72,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | *(Unclassified)* | 23 | 29.1% |
 
 ## Changes
-
-### New Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog)
-- [Custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-overview)
-- [Create custom AI insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-custom-insights-create)
-
-### Updated Pages
-
-- [Release notes](https://learn.microsoft.com/en-us/azure/azure-video-indexer/release-notes)
-  - Updated: 2026-02-06T08:00:00.000Z → 2026-03-31T08:00:00.000Z
-- [Object detection insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/object-detection-insight)
-  - Updated: 2025-10-06T08:00:00.000Z → 2026-03-31T17:16:00.000Z
-
-### Deleted Pages
-
-- ~~Create custom insights~~ (https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog)
 
 ## Classified Pages
 

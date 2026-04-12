@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   integrations: Patterns and code for integrating Azure Maps into web/mobile/Power
     BI apps, using REST/SDKs, layers, drawing, search/routing/weather, Spatial IO,
@@ -44,9 +44,9 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 - **Unclassified**: 32
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 4
-- **Unchanged**: 142
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 146
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -66,20 +66,10 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 
 ## Changes
 
-### New Pages
-
-- [Migrate Azure Maps Search 1.0 APIs](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-search-v1-api)
-
 ### Updated Pages
 
-- [Best Practices using Search Service](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search)
-  - Updated: 2023-03-22T00:00:00.000Z → 2026-03-24T22:22:00.000Z
-- [Use private endpoints with Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/private-endpoints)
-  - Updated: 2026-03-13T22:12:00.000Z → 2026-03-26T08:00:00.000Z
-- [Get Imagery Metadata](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-get-imagery-metadata)
-  - Updated: 2024-05-17T00:05:00.000Z → 2026-03-24T22:22:00.000Z
-- [Calculate a Truck Route](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-calculate-truck-route)
-  - Updated: 2024-05-17T00:05:00.000Z → 2026-03-24T22:22:00.000Z
+- [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
+  - Updated: 2025-12-17T08:00:00.000Z → 2026-04-10T08:00:00.000Z
 
 ## Classified Pages
 
@@ -210,7 +200,6 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 | [Azure Maps geographic scope](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-scope) | 0.40 | Explains geographic scope and data residency conceptually; likely lacks numeric limits or detailed configuration parameter tables. |
 | [Consent management](https://learn.microsoft.com/en-us/azure/azure-maps/consent-management) | 0.40 | Consent management and data residency overview; mostly policy/behavior description rather than concrete configuration matrices or limits. |
 | [Manage accounts](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys) | 0.40 | Portal-based account and key management is mostly step-by-step UI guidance without detailed configuration tables, limits, or specialized patterns. |
-| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.40 | Release notes for Map Control; while detailed, they are change logs rather than structured skills content (limits, config matrices, troubleshooting, etc.). |
 | [Spatial IO module](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-spatial-module) | 0.40 | Release notes for Spatial IO Module; change log style, not structured expert guidance per the defined sub-skill types. |
 | [Open source projects](https://learn.microsoft.com/en-us/azure/azure-maps/open-source-projects) | 0.35 | Lists community open-source projects and samples; catalog-style content rather than configuration, limits, or troubleshooting guidance. |
 | [REST SDK Developer Guide](https://learn.microsoft.com/en-us/azure/azure-maps/rest-sdk-developer-guide) | 0.35 | Acts as a navigation/developer guide listing SDKs and linking to other how-to articles; does not itself contain detailed configuration tables or error mappings. |
@@ -230,6 +219,7 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 | [Create a store locator](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator) | 0.20 | Store locator tutorial; step-by-step app creation, not deep configuration, limits, or troubleshooting content. |
 | [Create a web app](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app) | 0.20 | Quickstart tutorial for building an interactive map; primarily step-by-step usage, not configuration matrices, limits, or troubleshooting. |
 | [Geographic coverage](https://learn.microsoft.com/en-us/azure/azure-maps/geographic-coverage) | 0.20 | Described as providing links to geographic coverage information. Likely a navigation/overview page pointing to external coverage details rather than containing concrete limits, configuration parameters, or decision matrices itself. Does not clearly match any expert-knowledge sub-skill type from the summary. |
+| [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control) | 0.20 | Release notes describe feature additions and changes over time but typically do not provide stable, reusable expert knowledge such as limits, configuration matrices, error-code mappings, or decision criteria. The summary indicates it's a change log for the Azure Maps Web SDK Map Control, not a reference for quotas, configuration parameters, troubleshooting, or best-practice guidance. |
 | [Maps API](https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps) | 0.20 | Page is a navigational/overview index of Azure Maps REST APIs with service descriptions and links, but no concrete limits, configuration tables, error codes, or other product-specific expert details. |
 | [Multiple routes by mode of travel](https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes) | 0.20 | Tutorial for multiple travel modes; appears as example usage without detailed configuration matrices or limits. |
 | [On-object interaction](https://learn.microsoft.com/en-us/azure/azure-maps/power-bi-visual-on-object-interaction) | 0.20 | On-object interaction article describes UI formatting interactions; no indication of detailed configuration parameters or expert constraints. |

@@ -3,7 +3,7 @@ name: azure-api-center
 description: Expert knowledge for Azure Api Center development including best practices, security, configuration, integrations & coding patterns, and deployment. Use when automating API linting/registration, customizing the portal, syncing with API gateways, or enforcing design-time governance, and other Azure Api Center related development tasks. Not for Azure API Management (use azure-api-management), Azure App Configuration (use azure-app-configuration), Azure Service Connector (use azure-service-connector).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-17"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Api Center Skill
@@ -26,9 +26,9 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Best Practices | L33-L37 | Best practices for enforcing API governance early in development using the Azure API Center VS Code extension, including policy checks, linting, and design-time validation. |
 | Security | L38-L43 | Configuring API authorization schemes for APIs in API Center and managing who can access the API Center portal via the VS Code extension |
-| Configuration | L44-L56 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup, and inventory management. |
-| Integrations & Coding Patterns | L57-L66 | Patterns and scripts for syncing APIs between API Center and platforms like API Management, Amazon API Gateway, and Copilot Studio, plus automation via Azure CLI and Logic Apps/Teams |
-| Deployment | L67-L72 | Automating API linting and registration to Azure API Center (e.g., via GitHub Actions) and instructions for self-hosting the Azure API Center portal. |
+| Configuration | L44-L54 | Configuring and deploying Azure API Center: setup via ARM/Bicep/CLI, portal customization, API linting/analysis, metadata schemas, MCP/A2A agent setup, and inventory management. |
+| Integrations & Coding Patterns | L55-L64 | Patterns and scripts for syncing APIs between API Center and platforms like API Management, Amazon API Gateway, and Copilot Studio, plus automation via Azure CLI and Logic Apps/Teams |
+| Deployment | L65-L70 | Automating API linting and registration to Azure API Center (e.g., via GitHub Actions) and instructions for self-hosting the Azure API Center portal. |
 
 ### Best Practices
 | Topic | URL |
@@ -46,12 +46,10 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Use managed API linting and analysis in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/enable-managed-api-analysis-linting |
 | Configure metadata schema for Azure API Center governance | https://learn.microsoft.com/en-us/azure/api-center/metadata |
-| Register and discover MCP servers in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server |
 | Configure and manage A2A agents in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/register-manage-agents |
 | Create Azure API Center via ARM template | https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-arm-template |
 | Provision Azure API Center using Azure CLI | https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-azure-cli |
 | Deploy Azure API Center with Bicep templates | https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-bicep |
-| Set up and customize the Azure API Center portal | https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal |
 | Define custom metadata schema in Azure API Center | https://learn.microsoft.com/en-us/azure/api-center/tutorials/add-metadata-properties |
 
 ### Integrations & Coding Patterns

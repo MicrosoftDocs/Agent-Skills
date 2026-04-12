@@ -1,15 +1,14 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
-  configuration: 'Configuring Azure AI Search: data sources, index schemas, skillsets
-    and enrichment, vector/semantic settings, relevance tuning, monitoring, and agentic
+  configuration: 'Configuring Azure AI Search: data sources, index schemas, enrichment
+    skillsets, vector/semantic settings, ranking, analyzers, monitoring, and agentic
     retrieval knowledge bases.'
-  decision-making: Guidance on Azure AI Search capacity, SKUs, and costs, plus how
-    to migrate/upgrade REST APIs, SDKs, skills, and service resources across versions
-    and tiers.
+  decision-making: Planning Azure AI Search capacity, SKUs, and costs, and upgrading/migrating
+    REST APIs, skills, SDKs, and service tiers for agentic retrieval and .NET apps
   integrations: Patterns and code for integrating Azure AI Search with data sources,
     vectorizers, skills, OData/Lucene queries, semantic/agentic retrieval, and exporting
-    knowledge to apps and BI tools.
+    knowledge to apps and BI tools
   limits-quotas: 'Limits, quotas, and scheduling for Azure AI Search: service/index/vector
     size caps by tier, indexer run windows, enrichment quotas, and related numeric
     constraints and FAQs.'
@@ -19,9 +18,8 @@ category_descriptions:
   best-practices: Design, scaling, and performance tuning of Azure AI Search indexing/querying,
     including enrichment pipelines, chunking/vectorization, data modeling, concurrency-safe
     updates, and vector optimization.
-  security: 'Securing Azure AI Search: RBAC, ACLs, keys, encryption, network isolation,
-    managed identities, indexer access to data sources, and enforcing document-level
-    and Purview-based query security.'
+  security: 'Securing Azure AI Search: RBAC, ACLs, keys, encryption, private networking,
+    firewalls, policies, and configuring secure indexer connections to data sources.'
   architecture-patterns: 'Architectural guidance for Azure AI Search: RAG patterns,
     knowledge store design, multitenancy and tenant isolation, and multi-region/high-availability
     deployment designs.'
@@ -31,15 +29,14 @@ skill_description: Expert knowledge for Azure AI Search development including tr
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
   designing indexes/skillsets, vector/semantic search, indexers, RAG knowledge bases,
-  or secure data access, and other Azure AI Search related development tasks. Not
+  or secure network access, and other Azure AI Search related development tasks. Not
   for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer),
-  Azure SQL Database (use azure-sql-database), Azure Synapse Analytics (use azure-synapse-analytics).
+  Azure Synapse Analytics (use azure-synapse-analytics).
 use_when: Use when designing indexes/skillsets, vector/semantic search, indexers,
-  RAG knowledge bases, or secure data access, and other Azure AI Search related development
-  tasks.
+  RAG knowledge bases, or secure network access, and other Azure AI Search related
+  development tasks.
 confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer
-  (use azure-data-explorer), Azure SQL Database (use azure-sql-database), Azure Synapse
-  Analytics (use azure-synapse-analytics).
+  (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).
 ---
 # Azure AI Search Crawl Report
 
@@ -52,9 +49,9 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 - **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 46
-- **Unchanged**: 252
+- **New Pages**: 0
+- **Updated Pages**: 12
+- **Unchanged**: 287
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cognitive-search/azure-cognitive-search.csv`
 
@@ -64,84 +61,62 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 |------|-------|------------|
 | architecture-patterns | 3 | 1.0% |
 | best-practices | 17 | 5.7% |
-| configuration | 90 | 30.1% |
+| configuration | 88 | 29.4% |
 | decision-making | 9 | 3.0% |
 | deployment | 5 | 1.7% |
 | integrations | 54 | 18.1% |
 | limits-quotas | 6 | 2.0% |
-| security | 34 | 11.4% |
+| security | 36 | 12.0% |
 | troubleshooting | 8 | 2.7% |
 | *(Unclassified)* | 73 | 24.4% |
 
 ## Changes
 
-### New Pages
-
-- [Troubleshoot storage metrics](https://learn.microsoft.com/en-us/azure/search/troubleshoot-storage-metrics)
-
 ### Updated Pages
 
-- [FAQ](https://learn.microsoft.com/en-us/azure/search/search-faq-frequently-asked-questions)
-  - Updated: 2026-03-18T22:23:00Z → 2026-03-26T17:13:00Z
-- [Connect to a search service](https://learn.microsoft.com/en-us/azure/search/search-get-started-rbac)
-  - Updated: 2025-11-20T23:12:00.000Z → 2026-03-25T08:00:00.000Z
-- [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-text)
-  - Updated: 2026-02-04T23:15:00.000Z → 2026-03-12T17:22:00.000Z
-- [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-semantic)
-  - Updated: 2026-03-04T23:12:00.000Z → 2026-03-25T08:00:00.000Z
-- [Supported regions](https://learn.microsoft.com/en-us/azure/search/search-region-support)
-  - Updated: 2026-03-16T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [Supported tiers](https://learn.microsoft.com/en-us/azure/search/search-sku-tier)
-  - Updated: 2025-11-06T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade)
-  - Updated: 2025-08-08T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [Alias an index](https://learn.microsoft.com/en-us/azure/search/search-how-to-alias)
-  - Updated: 2025-10-03T05:05:00.000Z → 2026-03-26T22:23:00.000Z
-- [Generate embeddings](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-generate-embeddings)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-25T08:00:00.000Z
-- [Run or reset an indexer](https://learn.microsoft.com/en-us/azure/search/search-howto-run-reset-indexers)
-  - Updated: 2025-10-02T08:00:00.000Z → 2026-03-26T08:00:00.000Z
-- [Index changed and deleted content](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-changed-deleted)
-  - Updated: 2025-10-09T05:03:00.000Z → 2026-03-26T17:13:00.000Z
-- [Sample custom skill (Bing Entity Search)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-create-custom-skill-example)
-  - Updated: 2025-01-18T08:00:00.000Z → 2026-03-26T17:13:00.000Z
-- [Use a multi-vector field](https://learn.microsoft.com/en-us/azure/search/vector-search-multi-vector-fields)
-  - Updated: 2025-08-27T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [What is multimodal search?](https://learn.microsoft.com/en-us/azure/search/multimodal-search-overview)
-  - Updated: 2026-02-26T06:06:00.000Z → 2026-03-25T08:00:00.000Z
-- [SharePoint in Microsoft 365](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-sharepoint-online)
-  - Updated: 2026-01-28T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Index plain text](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-plaintext)
-  - Updated: 2025-10-09T05:03:00.000Z → 2026-03-25T08:00:00.000Z
-- [Index Markdown](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-markdown)
-  - Updated: 2025-10-09T05:03:00.000Z → 2026-03-25T08:00:00.000Z
-- [Create a skillset (tutorial)](https://learn.microsoft.com/en-us/azure/search/tutorial-skillset)
-  - Updated: 2025-11-21T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [Configure BM25 ranking](https://learn.microsoft.com/en-us/azure/search/index-ranking-similarity)
-  - Updated: 2025-02-24T08:00:00.000Z → 2026-03-25T08:00:00.000Z
-- [Create an index for agentic retrieval](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-index)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-03-25T08:00:00.000Z
-- *...and 26 more*
+- [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new)
+  - Updated: 2026-03-13T08:00:00.000Z → 2026-04-08T22:11:00.000Z
+- [Azure blob](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-blob)
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-03-26T17:13:00.000Z
+- [OneLake](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-onelake)
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-03-26T17:13:00.000Z
+- [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed)
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-03-26T17:13:00.000Z
+- [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote)
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-03-26T17:13:00.000Z
+- [Query a knowledge base (APIs or MCP)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve)
+  - Updated: 2026-03-13T08:00:00.000Z → 2026-04-09T17:17:00.000Z
+- [Assign roles (users)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac)
+  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-07T17:20:00.000Z
+- [Connect through a shared private link](https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-private)
+  - Updated: 2026-01-23T08:00:00.000Z → 2026-04-10T08:00:00.000Z
+- [Connect to a SQL managed instance private endpoint](https://learn.microsoft.com/en-us/azure/search/search-indexer-how-to-access-private-sql)
+  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-17T08:00:00.000Z
+- [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys)
+  - Updated: 2025-09-18T08:00:00.000Z → 2026-04-08T22:11:00.000Z
+- [Preview features](https://learn.microsoft.com/en-us/azure/search/search-api-preview)
+  - Updated: 2025-12-17T08:00:00.000Z → 2026-04-08T22:11:00.000Z
+- [Upgrade the REST API](https://learn.microsoft.com/en-us/azure/search/search-api-migration)
+  - Updated: 2025-12-17T08:00:00.000Z → 2026-03-30T08:00:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Service limits](https://learn.microsoft.com/en-us/azure/search/search-limits-quotas-capacity) | limits-quotas | 0.95 | Explicitly documents maximum limits on storage, workloads, indexes, and requests per tier/SKU, used for capacity planning. |
-| [Assign roles (users)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac) | security | 0.90 | Explains which Azure roles provide which permissions, including document-level access via ADLS/Blob; contains specific RBAC role names and scope behaviors unique to this service. |
 | [Configure a managed identity](https://learn.microsoft.com/en-us/azure/search/search-how-to-managed-identities) | security | 0.90 | Describes using system- and user-assigned managed identities, plus role assignments for outbound connections; includes specific identity configuration steps and role usage patterns. |
 | [Understand vector quotas and limits](https://learn.microsoft.com/en-us/azure/search/vector-search-index-size) | limits-quotas | 0.90 | Explicitly about quotas on vector index size and how to estimate/monitor them; such limits are numeric and product-specific. |
-| [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys) | security | 0.88 | How-to for setting up CMK/BYOK with Key Vault or Managed HSM, including required identities, access policies, and service behavior. These are concrete security configuration steps. |
 | [Configure cross-tenant CMK](https://learn.microsoft.com/en-us/azure/search/search-security-managed-encryption-cross-tenant) | security | 0.86 | Explains using a multitenant Entra app to use a Key Vault key from another tenant. Contains tenant, app, and permission configuration specific to this scenario. |
 | [Enable role-based access](https://learn.microsoft.com/en-us/azure/search/search-security-enable-roles) | security | 0.86 | Describes enabling RBAC, including which roles apply and how to switch from key-based auth; includes specific role scopes and configuration flags. |
 | [Troubleshoot a private connection](https://learn.microsoft.com/en-us/azure/search/troubleshoot-shared-private-link-resources) | troubleshooting | 0.86 | Organized around resolving errors when managing shared private link resources, including provisioning states and likely error codes; symptom → cause → solution guidance. |
 | [Troubleshoot errors and warnings](https://learn.microsoft.com/en-us/azure/search/cognitive-search-common-errors-warnings) | troubleshooting | 0.86 | Maps specific indexer error/warning messages and codes to causes and solutions, including use of maxFailedItems and related settings. |
 | [Annotation reference language](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-annotation-language) | configuration | 0.85 | Reference for the annotation expression language used in skillsets; defines syntax and path rules that are unique configuration semantics. |
+| [Assign roles (users)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac) | security | 0.85 | Page is specifically about connecting using Azure roles and managing permissions via Microsoft Entra ID. It will enumerate built-in role names, scopes, and how they map to admin/developer/query permissions, which is product-specific security configuration expert knowledge. |
 | [Authenticate with keys](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) | security | 0.85 | Details key-based authentication, admin vs query keys, and configuration of key usage; includes product-specific authentication behavior and recommendations beyond generic API key usage. |
+| [Configure customer-managed keys (CMK)](https://learn.microsoft.com/en-us/azure/search/search-security-manage-encryption-keys) | security | 0.85 | Covers enabling CMK/BYOK for Azure AI Search using Azure Key Vault or Managed HSM, including product-specific encryption behavior, key management flows, and migration/rotation guidance. Contains concrete security configuration details (service behavior with CMK, use of Managed HSM, migration steps) that qualify as expert security knowledge. |
 | [Stopwords](https://learn.microsoft.com/en-us/azure/search/reference-stopwords) | configuration | 0.85 | Provides the exact stopword lists used by Microsoft language analyzers; these are detailed, product-specific lexical configuration values. |
 | [Assign roles (apps)](https://learn.microsoft.com/en-us/azure/search/search-security-rbac-client-code) | security | 0.84 | Shows how to use Azure Identity libraries and Entra ID for keyless auth, including specific configuration patterns and parameters; security-focused integration details. |
 | [Azure Storage](https://learn.microsoft.com/en-us/azure/search/search-howto-managed-identities-storage) | security | 0.84 | Details how to configure managed identity–based connections to Storage, including required roles and connection settings; product-specific secure configuration. |
-| [Connect to a SQL managed instance private endpoint](https://learn.microsoft.com/en-us/azure/search/search-indexer-how-to-access-private-sql) | configuration | 0.84 | Details configuring indexers to SQL Managed Instance via shared private link, including dnsZonePrefix and FQDN requirements. These are specific configuration parameters and constraints. |
 | [Azure OpenAI Embedding](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-azure-openai-embedding) | configuration | 0.83 | Details how to connect to deployed embedding models, geo behavior, and wizard-generated skillsets; product-specific configuration and integration details. |
 | [GenAI Prompt](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-genai-prompt) | configuration | 0.83 | Preview skill reference describing how to invoke chat completion models at indexing time, including constraints and configuration parameters; detailed product-specific configuration. |
 | [Overview](https://learn.microsoft.com/en-us/azure/search/cognitive-search-predefined-skills) | configuration | 0.83 | Skills reference enumerates all built-in skills, their inputs/outputs, and configuration options; this is detailed, product-specific configuration knowledge. |
@@ -149,7 +124,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Azure Content Understanding](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-content-understanding) | configuration | 0.82 | Skill reference for Azure Content Understanding, including how it analyzes and chunks documents and outputs; product-specific configuration and behavior. |
 | [Azure Vision multimodal embeddings](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-vision-vectorize) | configuration | 0.82 | Skill reference with parameters, preview API version, billing behavior, and usage constraints; detailed configuration for a specific built-in skill. |
 | [Configure semantic ranker](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-configure) | configuration | 0.82 | Explains adding semantic configurations to an index, including specific JSON schema fields and allowed values; this is detailed product configuration. |
-| [Connect through a shared private link](https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-private) | configuration | 0.82 | How-to for setting up shared private link/private endpoints for indexers, including service-specific parameters and wiring to other Azure resources. This is detailed configuration, not just concept. |
 | [Document Layout](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-document-intelligence-layout) | configuration | 0.82 | Describes how the Document Layout skill works, supported formats, and configuration options; product-specific skill configuration. |
 | [Image Analysis](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-image-analysis) | configuration | 0.82 | Reference for Image Analysis skill including supported image requirements and options; detailed configuration and constraints for this skill. |
 | [Map to index fields](https://learn.microsoft.com/en-us/azure/search/cognitive-search-output-field-mapping) | configuration | 0.82 | Explains indexer outputFieldMappings schema and how to map in-memory enrichment paths to index fields; includes parameter names and behavior. |
@@ -263,13 +237,15 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/search/search-manage-azure-cli) | configuration | 0.70 | Shows az search module commands and arguments for creating, scaling, and configuring services. |
 | [Azure Machine Learning (AML)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-aml-skill) | integrations | 0.70 | Describes the AML skill as a callable component in skillsets, including model catalog/AML endpoint integration and JSON contract details that are product-specific integration patterns. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/search/policy-reference) | security | 0.70 | Lists concrete built-in Azure Policy definitions specific to Azure AI Search, including their exact policy names and links to full definitions. These are product-specific security/governance configurations (policy assignments and effects) that go beyond generic knowledge and map directly to Azure RBAC/compliance controls. |
-| [Azure blob](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-blob) | configuration | 0.70 | Covers models and properties for indexer, data source, skillset, and index; likely includes detailed parameter names and allowed values for blob-based knowledge sources. |
+| [Azure blob](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-blob) | configuration | 0.70 | How-to page for defining a Blob knowledge source, which typically includes product-specific parameters (models, indexer, data source, skillset, index properties) and their allowed/required values for Azure AI Search agentic retrieval. This is configuration-focused rather than conceptual, and the exact parameter names/structures are not generally known from training. |
 | [Bicep](https://learn.microsoft.com/en-us/azure/search/search-get-started-bicep) | deployment | 0.70 | Provides Bicep resource definitions and properties for Azure AI Search, representing product-specific deployment configuration. |
 | [Chunk and vectorize by document layout](https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking) | best-practices | 0.70 | Describes using the Document Layout skill with specific chunking strategies for RAG, which are product-specific optimization patterns. |
 | [Conditional](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-conditional) | configuration | 0.70 | Conditional skill documentation defines specific skill configuration, inputs/outputs, and expression behavior unique to Azure AI Search enrichment pipelines. |
 | [Configure BM25 ranking](https://learn.microsoft.com/en-us/azure/search/index-ranking-similarity) | configuration | 0.70 | How-to page for enabling BM25 on services, likely includes specific service version conditions, configuration flags, and request parameters unique to Azure AI Search rather than just conceptual ranking theory. |
 | [Configure a search service](https://learn.microsoft.com/en-us/azure/search/search-manage) | security | 0.70 | Day-one configuration checklist covering RBAC, managed identities, and network security with product-specific settings. |
 | [Connect through a firewall](https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-ip-restricted) | security | 0.70 | Page is about configuring IP firewall rules so Azure AI Search indexers can reach IP-restricted resources. It likely includes product-specific details such as how to obtain the search service outbound IPs and how to apply them to Azure Storage firewall settings. These are concrete, service-specific security configuration steps (network access control) rather than generic concepts. |
+| [Connect through a shared private link](https://learn.microsoft.com/en-us/azure/search/search-indexer-howto-access-private) | security | 0.70 | How-to for configuring shared private link from Azure AI Search indexers to private resources. Contains product-specific networking and security configuration details (private link usage, connection behavior to VNet IPs, premium feature constraints) that go beyond generic concepts, fitting the security/secure connectivity configuration category. |
+| [Connect to a SQL managed instance private endpoint](https://learn.microsoft.com/en-us/azure/search/search-indexer-how-to-access-private-sql) | security | 0.70 | Describes configuring an indexer private connection to Azure SQL Managed Instance via shared private link and Private Link, including requirement that the FQDN include the DNS zone and use of a specific dnsZonePrefix parameter in the Management REST API. These are product-specific secure connectivity and parameter details, best aligned with security. |
 | [Create a hybrid query](https://learn.microsoft.com/en-us/azure/search/hybrid-search-how-to-query) | configuration | 0.70 | How-to for constructing hybrid queries with RRF; includes specific query parameters and configuration patterns unique to Azure AI Search hybrid search. |
 | [Create a search index](https://learn.microsoft.com/en-us/azure/search/tutorial-csharp-create-load-index) | limits-quotas | 0.70 | Tutorial mentions specific numeric limits: free tier limit is three indexes and Basic tier limit is 15. These are concrete, tier-specific quotas that qualify as expert knowledge on limits. |
 | [Create a workflow](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-logic-apps) | integrations | 0.70 | Describes Logic Apps-based ingestion pipeline template, including how it maps to indexer-like behavior and configuration in the Import data wizard. |
@@ -292,26 +268,24 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Multi-region deployment](https://learn.microsoft.com/en-us/azure/search/search-multi-region) | architecture-patterns | 0.70 | The page describes how to achieve multi-region reliability for a single-region service using multiple search services with identical configurations and custom failover logic. This is product-specific architectural guidance about when and how to use a multi-region pattern for Azure AI Search, which goes beyond generic concepts and constitutes expert knowledge. |
 | [Multi-tenancy](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications) | architecture-patterns | 0.70 | Covers tenant isolation strategies and design patterns for multitenant SaaS apps using Azure AI Search. |
 | [Normalize text for filters](https://learn.microsoft.com/en-us/azure/search/search-normalizers) | configuration | 0.70 | Covers defining normalizers on fields; likely includes parameter names, allowed values, and examples of configuration unique to Azure AI Search. |
-| [OneLake](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-onelake) | configuration | 0.70 | Describes properties that create an enrichment pipeline from OneLake; likely includes product-specific configuration fields and model settings. |
+| [OneLake](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-onelake) | configuration | 0.70 | Describes creating an indexed OneLake knowledge source with specific models and enrichment pipeline properties. This implies detailed configuration parameters and object schemas unique to Azure AI Search agentic retrieval, which qualifies as configuration expert knowledge. |
 | [OneLake](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-onelake-files) | integrations | 0.70 | Product-specific configuration of a OneLake indexer, including REST-based setup and parameters for extracting data and metadata from lakehouses. |
 | [Plan and manage capacity](https://learn.microsoft.com/en-us/azure/search/search-capacity-planning) | decision-making | 0.70 | Guides how to size replicas and partitions per workload; includes structured capacity planning logic specific to the service. |
 | [Plan and manage costs](https://learn.microsoft.com/en-us/azure/search/search-sku-manage-costs) | decision-making | 0.70 | Explains billing model, billable events, and cost-control strategies tied to capacity and features; supports cost-based decision making. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/search/search-manage-powershell) | configuration | 0.70 | Uses Az.Search module cmdlets with product-specific parameters for scaling, key management, and system info. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-vector) | integrations | 0.70 | Shows how to call Search REST and Python SDK for vector workloads with product-specific API operations and parameters. |
-| [Query a knowledge base (APIs or MCP)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve) | integrations | 0.70 | Page focuses on invoking the retrieve action via REST APIs, Azure SDKs, or MCP-compatible clients. This suggests detailed API/SDK usage, including action names, parameters, and possibly MCP endpoint specifics, which are product-specific integration patterns rather than generic tutorials. |
 | [Rewrite queries with semantic ranker](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-rewrite) | integrations | 0.70 | Describes query rewriting with semantic ranker, including request/response fields and parameters in preview APIs; these are concrete API-level integration details. |
 | [Schedule an indexer](https://learn.microsoft.com/en-us/azure/search/search-howto-schedule-indexers) | limits-quotas | 0.70 | Mentions a typical 2-hour processing window and scheduling cadence; full article likely includes concrete scheduling constraints and limits. |
 | [Search over blobs](https://learn.microsoft.com/en-us/azure/search/search-blob-storage-integration) | integrations | 0.70 | Describes blob content extraction, metadata mapping, and optional AI enrichment—product-specific integration workflow. |
 | [Secure access to external data](https://learn.microsoft.com/en-us/azure/search/search-indexer-securing-resources) | security | 0.70 | Describes outbound traffic patterns, supported network protections, and constraints for indexers accessing VNet-protected resources; product-specific security and networking behavior. |
 | [Sentiment (v2)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-sentiment) | configuration | 0.70 | Defines the sentiment score range (0–1) and how it maps to positive/negative sentiment, plus skill configuration; these numeric semantics and parameters are product-specific. |
 | [Shaper](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-shaper) | configuration | 0.70 | Shaper skill documentation provides detailed configuration for reshaping the enrichment tree and mapping to index/knowledge store structures, which is product-specific configuration. |
-| [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed) | configuration | 0.70 | How-to for ingesting SharePoint content into a search index; likely details specific configuration parameters for SharePoint connections and indexing behavior. |
-| [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.70 | Uses Copilot Retrieval API to query SharePoint directly; likely includes endpoint shapes, parameter names, and configuration flags unique to this integration. |
+| [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-indexed) | configuration | 0.70 | Covers how to create an indexed SharePoint knowledge source, including settings for ingesting SharePoint content into an Azure AI Search index. This will involve specific configuration fields, connection properties, and options that are product-specific and not just conceptual. |
+| [SharePoint](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-sharepoint-remote) | configuration | 0.70 | Explains how to set up a remote SharePoint knowledge source using the Copilot Retrieval API, which requires specific configuration parameters (endpoints, auth, query options) unique to this integration pattern. This is detailed configuration guidance rather than a high-level overview. |
 | [Simple query syntax](https://learn.microsoft.com/en-us/azure/search/query-simple-syntax) | integrations | 0.70 | Reference for a product-specific query language; includes operators, parameters, and syntax rules that function like an API surface for queries. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/search/search-get-started-terraform) | deployment | 0.70 | Includes Terraform resource blocks and arguments specific to Azure AI Search, a deployment-focused integration pattern. |
 | [Troubleshoot storage metrics](https://learn.microsoft.com/en-us/azure/search/troubleshoot-storage-metrics) | troubleshooting | 0.70 | Troubleshooting article focused on discrepancies between portal, REST, and SDK metrics. Likely includes specific metric names, collection intervals, and symptom→cause→resolution guidance unique to Azure AI Search monitoring behavior. |
 | [Upgrade a service](https://learn.microsoft.com/en-us/azure/search/search-how-to-upgrade) | decision-making | 0.70 | Upgrade article describes when and how to move to higher-capacity storage and processors, including which services are eligible and what changes (partition storage, vector index size) occur; this supports migration/upgrade decisions with product-specific details. |
-| [Upgrade the REST API](https://learn.microsoft.com/en-us/azure/search/search-api-migration) | decision-making | 0.70 | Details breaking changes between API versions and how to adjust code. Provides concrete guidance for when and how to upgrade, which is decision and migration focused. |
 | [Use embedding models from Microsoft Foundry](https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization-ai-studio) | integrations | 0.70 | Explains how to deploy and wire Foundry catalog models into Azure AI Search skillsets, including preview API usage—product-specific integration details. |
 | [Use security filters](https://learn.microsoft.com/en-us/azure/search/search-security-trimming-for-azure-search) | security | 0.70 | Describes a concrete security filter pattern with stepwise implementation for trimming results by user/group identity. Pattern is product-specific and actionable beyond generic security concepts. |
 | [Visualize resource logs](https://learn.microsoft.com/en-us/azure/search/search-monitor-logs-powerbi) | configuration | 0.70 | Shows how to route logs/metrics to Storage and use a specific Power BI template app. Includes configuration steps and schema expectations unique to this integration. |
@@ -338,6 +312,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Monitor data](https://learn.microsoft.com/en-us/azure/search/monitor-azure-cognitive-search) | configuration | 0.65 | Describes how Azure AI Search integrates with Azure Monitor, including which metrics/logs are emitted and how to configure collection. Product-specific monitoring configuration. |
 | [Move a service across regions](https://learn.microsoft.com/en-us/azure/search/search-howto-move-across-regions) | deployment | 0.65 | Describes manual steps and constraints for recreating services in another region, including export template limitations. |
 | [Named Entity Recognition (v2)](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-named-entity-recognition) | configuration | 0.65 | Describes the v2 NER skill behavior and configuration (entity types, outputs, scoring), which are specific skill parameters; also includes migration notes but core is configuration. |
+| [Query a knowledge base (APIs or MCP)](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-retrieve) | integrations | 0.65 | Describes querying a knowledge base using the retrieve action and MCP endpoint via REST, SDKs, or MCP clients. This likely includes API operation names, request/response schemas, and parameter details specific to Azure AI Search agentic retrieval, fitting integrations & coding patterns. |
 | [Run or reset an indexer](https://learn.microsoft.com/en-us/azure/search/search-howto-run-reset-indexers) | configuration | 0.65 | The article covers how to run and reset indexers, including execution behavior, duration, and concurrency. These are product-specific operational details and likely include parameters or options for controlling runs, which fits configuration-focused expert knowledge rather than generic concepts. |
 | [Sample shapes and projections](https://learn.microsoft.com/en-us/azure/search/knowledge-store-projection-example-long) | integrations | 0.65 | Detailed end-to-end example of shaping and projection for a rich skillset; includes concrete projection definitions and field mappings unique to Azure AI Search knowledge stores. |
 | [Scale out a custom skill](https://learn.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-scale) | best-practices | 0.65 | Focuses on tools and techniques for efficiently scaling custom skills for maximum throughput, which implies concrete, product-specific operational guidance and patterns for running custom skill web APIs at scale. This aligns with best-practices for this service rather than generic scaling theory. |
@@ -346,6 +321,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Text Merger](https://learn.microsoft.com/en-us/azure/search/cognitive-search-skill-textmerger) | configuration | 0.65 | Text Merge skill docs define the skill JSON, inputs, and output behavior for merging arrays of strings, which are concrete configuration details for Azure AI Search. |
 | [Update or rebuild an index](https://learn.microsoft.com/en-us/azure/search/search-howto-reindex) | best-practices | 0.65 | Schema vs content updates and incremental indexing typically include product-specific guidance and gotchas (when to rebuild vs partial reindex) that go beyond generic concepts. |
 | [Upgrade .NET management libraries](https://learn.microsoft.com/en-us/azure/search/search-dotnet-mgmt-sdk-migration) | decision-making | 0.65 | Explains which .NET management libraries map to which Management REST API versions and how to use them for capacity, keys, and network security. Helps decide appropriate management SDKs. |
+| [Upgrade the REST API](https://learn.microsoft.com/en-us/azure/search/search-api-migration) | decision-making | 0.65 | Guides migration between specific REST API versions, focusing on breaking changes and how to adjust code so behavior remains consistent. This is expert guidance for choosing and moving between API versions (an upgrade path/decision process), aligning best with decision-making about API lifecycle and migration. |
 | [Index Markdown](https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-markdown) | configuration | 0.64 | Page explains how to use the markdown parsing mode for Azure Blob, Files, and OneLake indexers, including preview-specific behavior and configuration of how Markdown files are indexed. These are concrete, product-specific configuration options, so it fits configuration. |
 | [What is retrieval-augmented generation (RAG)?](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview) | architecture-patterns | 0.64 | Covers RAG implementation challenges and Azure AI Search–specific approaches; provides product-specific architectural guidance for RAG solutions rather than just generic RAG theory. |
 | [Connect with Power BI](https://learn.microsoft.com/en-us/azure/search/knowledge-store-connect-power-bi) | integrations | 0.63 | Explains how to connect and query a knowledge store from Power BI using Power Query, including use of templates and table-based knowledge stores in Azure Storage. This is a concrete integration pattern between Azure AI Search knowledge stores and Power BI. |
@@ -360,7 +336,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 |-----------|------------|--------|
 | [Create a vector query](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-query) | 0.45 | How-to for building vector queries; examples but not structured as configuration reference or troubleshooting. |
 | [Index permissioned ADLS Gen2 files](https://learn.microsoft.com/en-us/azure/search/tutorial-adls-gen2-indexer-acls) | 0.45 | Tutorial for indexing ADLS Gen2 ACL/RBAC metadata and querying with permission filters. While it has step-by-step instructions, tutorials typically show one example rather than enumerating full configuration parameter sets or role definitions; more procedural than reference-level expert knowledge. |
-| [Preview features](https://learn.microsoft.com/en-us/azure/search/search-api-preview) | 0.45 | Preview feature list and how to call preview APIs; mostly catalog/overview rather than deep config or troubleshooting content. |
 | [Sample facets](https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation-examples) | 0.45 | Facet examples article; mostly syntax samples rather than structured config tables or decision/troubleshooting content. |
 | [Sample queries (Lucene syntax)](https://learn.microsoft.com/en-us/azure/search/search-query-lucene-examples) | 0.45 | Lucene syntax examples; while detailed, it's primarily query examples rather than product-specific configuration or troubleshooting. |
 | [Tutorial (REST)](https://learn.microsoft.com/en-us/azure/search/tutorial-multimodal) | 0.45 | Tutorial for building a multimodal pipeline; step-by-step but not a reusable configuration reference or troubleshooting guide. |
@@ -411,6 +386,7 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Java samples](https://learn.microsoft.com/en-us/azure/search/samples-java) | 0.20 | High-level index of Java sample links; no detailed configuration, limits, or troubleshooting content indicated. |
 | [JavaScript samples](https://learn.microsoft.com/en-us/azure/search/samples-javascript) | 0.20 | High-level index of JavaScript sample links; description suggests navigation, not deep reference or config details. |
 | [Other query types](https://learn.microsoft.com/en-us/azure/search/search-query-overview) | 0.20 | Overview of query types; descriptive rather than detailed configuration or decision-making content. |
+| [Preview features](https://learn.microsoft.com/en-us/azure/search/search-api-preview) | 0.20 | Primarily a status list of preview features and a conceptual explanation of how to call preview REST APIs. Does not expose detailed limits, configuration tables, or error mappings; mainly overview/reference of what is in preview. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-semantic) | 0.20 | Semantic ranking quickstart is a how-to for enabling semantic ranker on an index; it likely shows basic code and steps without detailed limits, configuration matrices, or decision guidance that would qualify as expert knowledge. |
 | [Programmatic](https://learn.microsoft.com/en-us/azure/search/search-get-started-text) | 0.20 | Full-text search quickstart is primarily a tutorial showing basic index creation and querying; it is unlikely to contain configuration tables, limits, or product-specific best-practice guidance beyond generic SDK usage. |
 | [Python samples](https://learn.microsoft.com/en-us/azure/search/samples-python) | 0.20 | High-level index of Python sample links; no indication of detailed parameter tables or product-specific patterns. |
@@ -423,7 +399,6 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [What is agentic retrieval?](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview) | 0.20 | High-level conceptual overview of agentic retrieval in Azure AI Search; summary indicates architecture description and intended use but no evidence of numeric limits, configuration tables, error codes, or decision matrices with quantified trade-offs. |
 | [What is full-text search?](https://learn.microsoft.com/en-us/azure/search/search-lucene-query-architecture) | 0.20 | Conceptual description of full text search architecture; no specific limits, configs, or decision matrices. |
 | [What's Azure AI Search?](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 0.20 | High-level introduction and use cases for Azure AI Search without product-specific limits, configs, or detailed patterns. |
-| [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new) | 0.20 | What's New page is primarily release notes and announcements; typically high-level feature descriptions and dates without detailed limits, configs, or troubleshooting matrices. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal) | 0.10 | Quickstart for full-text search via portal wizard is a step-by-step tutorial; it describes how to click through UI and run a sample, without detailed configuration tables, limits, or error mappings. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-image-search) | 0.10 | Quickstart for multimodal search is a how-to walkthrough; it explains using the wizard with sample data, not detailed expert configuration, limits, or decision matrices. |
 | [Portal](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal-import-vectors) | 0.10 | Quickstart for vector search via portal wizard is a guided tutorial; it focuses on basic usage, not on exhaustive configuration options, limits, or troubleshooting content. |
@@ -431,3 +406,4 @@ confusable_not_for: Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Ex
 | [Training](https://learn.microsoft.com/en-us/azure/search/resource-training) | 0.10 | Navigation/overview page linking to training modules; contains no product-specific configuration, limits, or troubleshooting details. |
 | [What is document-level security?](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview) | 0.10 | Described as a conceptual overview of document-level permissions. Likely explains concepts and scenarios without detailed configuration parameters, role names, or error mappings. |
 | [What is multimodal search?](https://learn.microsoft.com/en-us/azure/search/multimodal-search-overview) | 0.10 | The multimodal search overview focuses on concepts (what multimodal search is, typical pipeline steps, and high-level guidance). It does not appear to contain product-specific configuration parameters, limits, or troubleshooting mappings, so it does not qualify as expert knowledge under the defined sub-skill types. |
+| [What's new](https://learn.microsoft.com/en-us/azure/search/whats-new) | 0.10 | Release notes and what's-new overview; does not focus on structured limits, configuration matrices, troubleshooting mappings, or other expert-knowledge patterns defined in the sub-skill types. |

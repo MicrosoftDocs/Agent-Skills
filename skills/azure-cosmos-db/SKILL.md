@@ -1,9 +1,9 @@
 ---
 name: azure-cosmos-db
-description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB APIs (NoSQL, Mongo, Cassandra, Postgres), change feed, global distribution, vector search, or HTAP, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql).
+description: Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search, global distribution, or HTAP, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure Database for PostgreSQL (use azure-database-postgresql), Azure Database for MySQL (use azure-database-mysql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cosmos DB Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|----------|-------------|
 | Troubleshooting | L37-L91 | Diagnosing and fixing Cosmos DB issues: SDK errors, timeouts, 4xx/5xx codes, performance/RU analysis, metrics/log queries, CMK/backup problems, and API-specific (Mongo/Cassandra/Gremlin/Postgres) troubleshooting. |
 | Best Practices | L92-L151 | Performance, scaling, partitioning, indexing, cost optimization, SDK usage, and HA/DR best practices for Cosmos DB (NoSQL, MongoDB, Cassandra, PostgreSQL) and legacy DocumentDB. |
-| Decision Making | L152-L208 | Guidance on choosing Cosmos DB features, scaling, pricing, consistency, backup, and analytics options, plus migration/upgrade paths for Cassandra, MongoDB, DynamoDB, and PostgreSQL workloads |
+| Decision Making | L152-L208 | Guides for choosing Cosmos DB options (consistency, throughput, backup, analytics, vector search), estimating RU/costs, and planning/migrating workloads across APIs (Cassandra, MongoDB, PostgreSQL, DynamoDB). |
 | Architecture & Design Patterns | L209-L251 | Architectural patterns for Cosmos DB and PostgreSQL: multitenancy, sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory, vectors, and semantic caching. |
 | Limits & Quotas | L252-L292 | Limits, quotas, and behaviors for Cosmos DB (all APIs, backup, autoscale, serverless, free tier, fleets) and Cosmos DB for PostgreSQL, including RUs, storage, partitions, and performance. |
 | Security | L293-L359 | Securing Cosmos DB and related services: identity/RBAC, keys and encryption, network isolation (VNet, Private Link, firewalls), TLS, auditing, policies, and data‑level protections. |
@@ -203,8 +203,8 @@ This skill requires **network access** to fetch documentation content:
 | Choose and configure high performance storage for DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/high-performance-storage |
 | Assess MongoDB workloads and plan migration to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/how-to-assess-plan-migration-readiness |
 | Evaluate MongoDB compatibility across managed services including DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/managed-service-compatibility |
-| Choose offline or online MongoDB migration to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
-| Select offline or online MongoDB migration path to Azure DocumentDB | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
+| Choose and plan MongoDB to DocumentDB migration | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
+| Choose and plan MongoDB to DocumentDB migration | https://learn.microsoft.com/en-us/azure/documentdb/migration-options |
 
 ### Architecture & Design Patterns
 | Topic | URL |

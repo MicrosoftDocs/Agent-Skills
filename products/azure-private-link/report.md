@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   limits-quotas: Info on Private Link service availability per resource type and how
     to raise per‑VNet Private Endpoint limits using High Scale configuration
@@ -14,101 +14,62 @@ category_descriptions:
   best-practices: DNS design and configuration guidance for private endpoints, including
     zone setup, name resolution patterns, split-horizon DNS, and avoiding common DNS
     misconfigurations with Private Link
-  troubleshooting: Diagnosing and resolving Azure Private Endpoint/Private Link connectivity
-    issues, including DNS, NSG/firewall, routing misconfigurations, and common failure
-    patterns.
   architecture-patterns: Designing DNS architectures for Private Endpoints using Azure
     Private Resolver, including name resolution patterns, forwarding rules, and integration
     with on-premises or hybrid networks
-skill_description: Expert knowledge for Azure Private Link development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, and configuration. Use when configuring Private Endpoints, DNS/Private
-  Resolver, High Scale limits, NSP/RBAC, or Azure Firewall inspection, and other Azure
-  Private Link related development tasks. Not for Azure Virtual Network (use azure-virtual-network),
-  Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
-  Azure Firewall (use azure-firewall).
+skill_description: Expert knowledge for Azure Private Link development including best
+  practices, decision making, architecture & design patterns, limits & quotas, security,
+  and configuration. Use when configuring Private Endpoints, DNS/Private Resolver,
+  High Scale limits, NSP migrations, or Azure Firewall traffic control, and other
+  Azure Private Link related development tasks. Not for Azure Virtual Network (use
+  azure-virtual-network), Azure VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute
+  (use azure-expressroute), Azure Virtual WAN (use azure-virtual-wan).
 use_when: Use when configuring Private Endpoints, DNS/Private Resolver, High Scale
-  limits, NSP/RBAC, or Azure Firewall inspection, and other Azure Private Link related
-  development tasks.
+  limits, NSP migrations, or Azure Firewall traffic control, and other Azure Private
+  Link related development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   VPN Gateway (use azure-vpn-gateway), Azure ExpressRoute (use azure-expressroute),
-  Azure Firewall (use azure-firewall).
+  Azure Virtual WAN (use azure-virtual-wan).
 ---
 # Azure Private Link Crawl Report
 
 ## Summary
 
-- **Total Pages**: 49
-- **Fetched**: 49
+- **Total Pages**: 48
+- **Fetched**: 48
 - **Fetch Failed**: 0
-- **Classified**: 20
-- **Unclassified**: 29
+- **Classified**: 18
+- **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 25
-- **Unchanged**: 24
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 47
+- **Deleted Pages**: 2
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-private-link/azure-private-link.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 1 | 2.0% |
-| best-practices | 1 | 2.0% |
-| configuration | 9 | 18.4% |
-| decision-making | 2 | 4.1% |
-| limits-quotas | 2 | 4.1% |
-| security | 3 | 6.1% |
-| troubleshooting | 2 | 4.1% |
-| *(Unclassified)* | 29 | 59.2% |
+| architecture-patterns | 1 | 2.1% |
+| best-practices | 1 | 2.1% |
+| configuration | 9 | 18.8% |
+| decision-making | 2 | 4.2% |
+| limits-quotas | 2 | 4.2% |
+| security | 3 | 6.2% |
+| *(Unclassified)* | 30 | 62.5% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Monitor Private Link](https://learn.microsoft.com/en-us/azure/private-link/monitor-private-link)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Disable network policies for a Private Link service](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Manage private endpoints](https://learn.microsoft.com/en-us/azure/private-link/manage-private-endpoint)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Troubleshoot Private Link service connectivity problems](https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity)
-  - Updated: 2025-01-07T23:03:00.000Z → 2026-03-30T22:11:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli)
-  - Updated: 2025-08-05T16:10:00.000Z → 2025-10-08T22:11:00.000Z
-- [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview)
-  - Updated: 2025-10-12T22:18:00.000Z → 2026-03-30T08:00:00.000Z
-- [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview)
-  - Updated: 2025-01-08T18:02:00.000Z → 2026-03-30T08:00:00.000Z
-- [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/private-link/private-link-faq)
-  - Updated: 2025-07-17T22:14:00Z → 2026-04-02T06:24:00Z
-- [Create a Private Link service - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal)
-  - Updated: 2025-04-10T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Create a Private Link service - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-powershell)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Create a Private Link service - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-cli)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T22:11:00.000Z
-- [Create a Private Link service - Bicep](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-bicep)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Create a Private Link service - ARM template](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-template)
-  - Updated: 2025-03-25T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Disable SNAT for traffic through NVA](https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat)
-  - Updated: 2025-03-17T22:05:00.000Z → 2026-03-30T08:00:00.000Z
-- [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits)
-  - Updated: 2025-10-30T17:12:00.000Z → 2026-03-30T08:00:00.000Z
-- [Create a network security perimeter - Azure portal](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-portal)
-  - Updated: 2025-08-05T16:10:00.000Z → 2025-10-08T22:11:00.000Z
-- [Create a network security perimeter - PowerShell](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-powershell)
-  - Updated: 2025-08-05T16:10:00.000Z → 2025-10-08T22:11:00.000Z
-- [Create a network security perimeter - Azure CLI](https://learn.microsoft.com/en-us/azure/private-link/create-network-security-perimeter-cli)
-  - Updated: 2025-08-05T16:10:00.000Z → 2025-10-08T22:11:00.000Z
-- *...and 5 more*
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/private-link/private-link-support-help)
+
+### Deleted Pages
+
+- ~~Troubleshoot private endpoint connectivity problems~~ (https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity)
+- ~~Troubleshoot Private Link service connectivity problems~~ (https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity)
 
 ## Classified Pages
 
@@ -117,9 +78,7 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Increase Private Endpoint virtual network limits](https://learn.microsoft.com/en-us/azure/private-link/increase-private-endpoint-vnet-limits) | limits-quotas | 0.95 | Explicitly discusses numeric limits (1,000 private endpoints per VNet, 4,000 across peered VNets) and how to increase them via High Scale Private Endpoints; this is precise quota information unique to the product. |
 | [Private DNS zone values](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns) | configuration | 0.90 | DNS zone values page typically lists exact private DNS zone names and patterns per service, which are product-specific configuration parameters. |
 | [RBAC permissions](https://learn.microsoft.com/en-us/azure/private-link/rbac-permissions) | security | 0.90 | Explicitly lists required Azure RBAC built-in roles and custom role permissions for creating private endpoints and Private Link services; this is product-specific security configuration detail. |
-| [Troubleshoot private endpoint connectivity problems](https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity) | troubleshooting | 0.90 | Step-by-step connectivity troubleshooting for Azure Private Endpoint; such articles typically map specific connectivity symptoms and checks to causes and resolutions unique to Private Endpoint networking. |
 | [Role-based access control permissions](https://learn.microsoft.com/en-us/azure/private-link/network-security-perimeter-role-based-access-control-requirements) | security | 0.85 | Describes specific RBAC actions and permissions required for NSP profiles, rules, associations, and diagnostics, which is detailed security configuration guidance. |
-| [Troubleshoot Private Link service connectivity problems](https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-link-connectivity) | troubleshooting | 0.80 | Article is explicitly a step-by-step connectivity troubleshooting guide for Azure Private Link Service. While the summary is high-level, such pages typically map symptoms to validation steps and resolutions, often including product-specific checks and commands, fitting the troubleshooting sub-skill. |
 | [Availability](https://learn.microsoft.com/en-us/azure/private-link/availability) | limits-quotas | 0.70 | Describes which Azure services support Private Link; typically implemented as a service support/availability matrix, which is product-specific reference data not inferable from training. |
 | [Cost optimization](https://learn.microsoft.com/en-us/azure/private-link/private-link-cost-optimization) | decision-making | 0.70 | Cost optimization guidance for a specific service usually includes scenario-based recommendations and trade-offs between security and cost, qualifying as decision-making content. |
 | [Disable SNAT for traffic through NVA](https://learn.microsoft.com/en-us/azure/private-link/private-link-disable-snat) | configuration | 0.70 | Describes enabling SNAT bypass via a specific tag on NVA VMs; this is product-specific configuration behavior with named settings that an LLM is unlikely to know from training. |
@@ -168,3 +127,4 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | [Private Link service](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview) | 0.10 | Service overview for Azure Private Link service; primarily conceptual without expert-level numeric limits or config matrices. |
 | [What is Azure Private Link?](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) | 0.10 | High-level overview of Azure Private Link features and architecture without detailed limits, configuration tables, or error mappings. |
 | [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview) | 0.10 | Conceptual overview of private endpoints; no detailed quotas, config parameter tables, or troubleshooting content. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/private-link/private-link-support-help) | - | Support/help options page without technical limits, configuration parameters, error codes, or product-specific diagnostic details. |

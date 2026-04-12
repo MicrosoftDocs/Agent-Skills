@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 236
+- **Updated Pages**: 0
+- **Unchanged**: 237
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-stack-edge/azure-stack-edge.csv`
 
@@ -69,11 +69,6 @@ confusable_not_for: Not for Azure Data Box (use azure-data-box-family), Azure Io
 | *(Unclassified)* | 93 | 39.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Prepare for device failure](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-prepare-device-failure)
-  - Updated: 2021-03-07T12:01:00.000Z → 2026-03-20T06:13:00.000Z
 
 ## Classified Pages
 

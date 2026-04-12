@@ -13,11 +13,11 @@ category_descriptions:
   decision-making: Using Advisor workbooks and critical risk views to evaluate reliability,
     assess and optimize costs, and plan migrations based on service retirement and
     recommendation impact
-  security: Managing who can view or dismiss Azure Advisor recommendations using Azure
-    RBAC, including configuring roles, permissions, and access control for Advisor.
   limits-quotas: Advisor feature availability, limits, and differences when running
     in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations
     are supported.
+  security: Managing who can view or dismiss Azure Advisor recommendations using Azure
+    RBAC, including configuring roles, permissions, and access control for Advisor.
 skill_description: Expert knowledge for Azure Advisor development including best practices,
   decision making, limits & quotas, security, configuration, and integrations & coding
   patterns. Use when configuring Advisor alerts, workbooks, RBAC access, bulk fixes,
@@ -34,39 +34,36 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 
 ## Summary
 
-- **Total Pages**: 33
-- **Fetched**: 33
+- **Total Pages**: 32
+- **Fetched**: 32
 - **Fetch Failed**: 0
-- **Classified**: 25
+- **Classified**: 24
 - **Unclassified**: 8
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 31
-- **Deleted Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 32
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-advisor/azure-advisor.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 9 | 27.3% |
-| configuration | 6 | 18.2% |
-| decision-making | 5 | 15.2% |
-| integrations | 2 | 6.1% |
-| limits-quotas | 1 | 3.0% |
-| security | 2 | 6.1% |
-| *(Unclassified)* | 8 | 24.2% |
+| best-practices | 9 | 28.1% |
+| configuration | 6 | 18.8% |
+| decision-making | 5 | 15.6% |
+| integrations | 2 | 6.2% |
+| limits-quotas | 1 | 3.1% |
+| security | 1 | 3.1% |
+| *(Unclassified)* | 8 | 25.0% |
 
 ## Changes
 
-### Updated Pages
+### Deleted Pages
 
-- [Customize your view](https://learn.microsoft.com/en-us/azure/advisor/advisor-customize-view)
-  - Updated: 2025-11-12T23:03:00.000Z → 2026-03-23T08:00:00.000Z
-- [Reliability](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations)
-  - Updated: 2026-03-10T08:00:00.000Z → 2026-03-24T08:00:00.000Z
+- ~~Dismiss and postpone~~ (https://learn.microsoft.com/en-us/azure/advisor/advisor-dismiss-postpone)
 
 ## Classified Pages
 
@@ -86,7 +83,6 @@ confusable_not_for: Not for Azure Cost Management (use azure-cost-management), A
 | [Calculate total cost savings](https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-calculate-total-cost-savings) | best-practices | 0.65 | Provides concrete guidance on exporting cost savings data and aggregating yearly savings using Advisor’s cost fields; product-specific cost evaluation pattern. |
 | [Cost Optimization workbook](https://learn.microsoft.com/en-us/azure/advisor/advisor-workbook-cost-optimization) | decision-making | 0.65 | Cost Optimization workbook provides cost insights and recommendations aligned to Well-Architected cost pillar, helping choose optimization actions based on quantified data. |
 | [Digests](https://learn.microsoft.com/en-us/azure/advisor/advisor-recommendations-digest) | configuration | 0.65 | Covers setting up scheduled digests for recommendations; likely includes specific configuration options (frequency, scope, channels) that are product-specific. |
-| [Dismiss and postpone](https://learn.microsoft.com/en-us/azure/advisor/advisor-dismiss-postpone) | security | 0.65 | Specifically notes Contributor or Owner permissions are required to dismiss/postpone recommendations and references Advisor permissions; this is product-specific RBAC behavior. |
 | [Operational Excellence](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-operational-excellence-recommendations) | best-practices | 0.65 | Operational excellence recommendations are concrete DO/DON’T guidance for operations in Azure; product-specific best practices rather than generic theory. |
 | [Performance](https://learn.microsoft.com/en-us/azure/advisor/advisor-reference-performance-recommendations) | best-practices | 0.65 | Full list of performance recommendations with specific actions to improve responsiveness; product-specific tuning guidance. |
 | [Use Azure Advisor resiliency reviews](https://learn.microsoft.com/en-us/azure/advisor/advisor-resiliency-reviews) | best-practices | 0.65 | Custom resiliency reviews curated by Microsoft account teams with tailored recommendations; encapsulates product-specific resiliency optimization practices. |

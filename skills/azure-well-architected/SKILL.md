@@ -1,9 +1,9 @@
 ---
 name: azure-well-architected
-description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, SaaS, HPC, AVD/AVS workloads, or choosing regions/AZs with cost–reliability tradeoffs, and other Azure Well Architected related development tasks.
+description: Expert guidance for designing, assessing, and optimizing Azure workloads using Azure Well Architected. Covers design review checklists, recommendations, design principles, tradeoffs, service guides, workload patterns, and assessment questions. Use when designing AI, SAP, SaaS, HPC, AVD/AVS workloads, or choosing Azure regions/AZs for tradeoffs, and other Azure Well Architected related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Well Architected Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Design Principles | L116-L134 | Design principles and patterns for cost, reliability, security, performance, ops, and sustainability across Azure workloads like AI, SAP, Oracle, AVS, AVD, SaaS, HPC, and mission‑critical systems. |
 | Tradeoffs | L135-L144 | Guidance on balancing cost, reliability, performance, security, and operations in Azure designs, including region/AZ choices and cross-pillar tradeoff analysis for architecture decisions |
 | Service Guides | L145-L195 | End-to-end design, security, networking, operations, monitoring, and optimization guidance for specific Azure services, aligned to Well-Architected Framework best practices. |
-| Workload Patterns | L196-L256 | Designing, operating, and optimizing Azure workloads (AI, HPC, mission‑critical, SaaS, SAP, sustainable) using Well‑Architected principles for architecture, platforms, data, ops, security, and governance. |
+| Workload Patterns | L196-L256 | Designing, operating, and optimizing specialized Azure workloads (AI, HPC, mission‑critical, SaaS, SAP, sustainability) using Well‑Architected principles for architecture, data, ops, security, and cost. |
 | Assessment Questions | L257-L270 | Guided assessments and maturity models to evaluate AI, SaaS, AVD, AVS, and other Azure workloads against WAF pillars: cost, reliability, security, performance, and operations. |
 
 ### Design Review Checklists
@@ -214,7 +214,7 @@ This skill requires **network access** to fetch documentation content:
 | Design high-performance computing workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/hpc/ |
 | Apply Well-Architected guidance to Azure HPC workloads | https://learn.microsoft.com/en-us/azure/well-architected/hpc/get-started-overview |
 | Adopt a reference architecture pattern for Azure HPC | https://learn.microsoft.com/en-us/azure/well-architected/hpc/hpc-architecture-pattern |
-| Build mission-critical highly reliable workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/ |
+| Design and operate mission-critical workloads on Azure | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/ |
 | Design resilient applications for mission-critical workloads | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-application-design |
 | Choose application platforms for mission-critical Azure workloads | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-application-platform |
 | Adopt a reference architecture pattern for mission-critical workloads | https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-architecture-pattern |

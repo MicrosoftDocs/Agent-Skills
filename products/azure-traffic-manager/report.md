@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: Configuring Traffic Manager profiles, endpoints, routing methods
     (weighted, geographic, subnet, multivalue), DNS/IPv6, monitoring/logs, and using
@@ -38,14 +38,14 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Total Pages**: 44
 - **Fetched**: 44
 - **Fetch Failed**: 0
-- **Classified**: 29
-- **Unclassified**: 15
+- **Classified**: 28
+- **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
-- **Unchanged**: 44
-- **Deleted Pages**: 0
+- **Unchanged**: 43
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
 ## Classification Statistics
@@ -57,17 +57,24 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | configuration | 18 | 40.9% |
 | decision-making | 2 | 4.5% |
 | integrations | 2 | 4.5% |
-| troubleshooting | 2 | 4.5% |
-| *(Unclassified)* | 15 | 34.1% |
+| troubleshooting | 1 | 2.3% |
+| *(Unclassified)* | 16 | 36.4% |
 
 ## Changes
+
+### New Pages
+
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-support-help)
+
+### Deleted Pages
+
+- ~~Troubleshoot degraded state on Azure Traffic Manager~~ (https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-troubleshooting-degraded)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Country/Region hierarchy used by Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-geographic-regions) | configuration | 0.90 | Provides the full country/region hierarchy and codes used by geographic routing; this is a detailed configuration reference not inferable from general knowledge. |
-| [Troubleshoot degraded state on Azure Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-troubleshooting-degraded) | troubleshooting | 0.85 | Focused on resolving a 'Degraded' status for Traffic Manager profiles. Likely includes specific health status meanings, logging guidance, and symptom → cause → resolution steps unique to Traffic Manager, matching the troubleshooting criteria. |
 | [IPv6 and DNS record types](https://learn.microsoft.com/en-us/azure/traffic-manager/dns-record-types) | configuration | 0.75 | Explains supported DNS record types (A, AAAA, CNAME) and how to configure them for dual-stack environments; includes product-specific behavior and constraints. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/traffic-manager/configure-multivalue-routing-method-template) | configuration | 0.70 | ARM template article for nested Multivalue profiles and min-child feature; includes JSON schema and specific configuration parameters unique to this feature. |
 | [Add an endpoint to an existing profile - ARM Template](https://learn.microsoft.com/en-us/azure/traffic-manager/how-to-add-endpoint-existing-profile-template) | configuration | 0.70 | ARM template article for adding external endpoints; includes JSON properties and configuration fields specific to Traffic Manager endpoints. |
@@ -115,3 +122,4 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Create a Traffic Manager profile - PowerShell](https://learn.microsoft.com/en-us/azure/traffic-manager/quickstart-create-traffic-manager-profile-powershell) | 0.20 | PowerShell quickstart for creating a profile; focuses on basic creation steps, not expert configuration details. |
 | [Point your Internet domain to Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-point-internet-domain) | 0.20 | Primarily a how-to for creating a CNAME to point a custom domain to a Traffic Manager profile. No configuration tables, limits, error codes, or product-specific parameters beyond a basic DNS record example. |
 | [What is Traffic Manager?](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) | 0.20 | High-level product overview of Traffic Manager; no detailed limits, configs, or error mappings. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-support-help) | - | Support/help options page listing where to get assistance; no product-specific limits, configuration parameters, error-code troubleshooting, or decision matrices. Content is navigational/administrative rather than expert technical guidance. |

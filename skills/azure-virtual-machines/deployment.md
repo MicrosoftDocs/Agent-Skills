@@ -20,8 +20,6 @@
 | Move VM maintenance configurations between Azure regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration |
 | Move resources tied to VM maintenance configurations across regions | https://learn.microsoft.com/en-us/azure/virtual-machines/move-region-maintenance-configuration-resources |
 | FAQ for moving Azure VMs from regional to zonal availability | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-faq |
-| Move regional Azure VMs to zonal availability via portal | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-portal |
-| Move regional Azure VMs to zonal availability using PowerShell/CLI | https://learn.microsoft.com/en-us/azure/virtual-machines/move-virtual-machines-regional-zonal-powershell |
 | Use incremental snapshots for unmanaged disk backup | https://learn.microsoft.com/en-us/azure/virtual-machines/unmanaged-disks-incremental-snapshots |
 | Perform in-place Windows Server upgrades on Azure VMs | https://learn.microsoft.com/en-us/azure/virtual-machines/windows-in-place-upgrade |
 | Migrate Windows VMs from unmanaged to managed disks with PowerShell | https://learn.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks |

@@ -34,8 +34,8 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 30
+- **Updated Pages**: 0
+- **Unchanged**: 31
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-osconfig/azure-osconfig.csv`
 
@@ -50,11 +50,6 @@ confusable_not_for: Not for Azure Update Manager (use azure-update-manager), Azu
 | *(Unclassified)* | 16 | 51.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [LAPS for Azure Arc Overview](https://learn.microsoft.com/en-us/azure/osconfig/overview-laps-azure-arc)
-  - Updated: 2026-03-13T08:12:00.000Z → 2026-03-24T00:57:00.000Z
 
 ## Classified Pages
 

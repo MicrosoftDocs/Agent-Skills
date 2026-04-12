@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 38
+- **Updated Pages**: 0
+- **Unchanged**: 39
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -62,11 +62,6 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | *(Unclassified)* | 20 | 51.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights)
-  - Updated: 2025-11-18T16:11:00.000Z → 2026-04-02T08:00:00.000Z
 
 ## Classified Pages
 

@@ -3,7 +3,7 @@ name: azure-health-data-services
 description: Expert knowledge for Azure Health Data Services development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using FHIR/DICOM/MedTech services, de-identification APIs, bulk ops, Synapse pipelines, or Private Link, and other Azure Health Data Services related development tasks. Not for Azure Health Bot (use azure-health-bot), Azure API Management (use azure-api-management), Azure Data Factory (use azure-data-factory), Azure Synapse Analytics (use azure-synapse-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Health Data Services Skill
@@ -24,15 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L48 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, events, $convert-data, identity providers, MedTech deployment/log errors, and known platform problems. |
-| Best Practices | L49-L56 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
-| Decision Making | L57-L63 | Guidance on planning migrations off Azure API for FHIR, including choosing between FHIR service vs full Health Data Services and step-by-step migration considerations. |
-| Architecture & Design Patterns | L64-L70 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
-| Limits & Quotas | L71-L76 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
-| Security | L77-L117 | Configuring auth, RBAC, identities, keys, tokens, network/Private Link, and compliance policies for secure FHIR, DICOM, and de-identification services in Azure Health Data Services. |
-| Configuration | L118-L181 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
-| Integrations & Coding Patterns | L182-L218 | Coding patterns and integration guides for FHIR, DICOM, MedTech, and de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and connections to Synapse, ADF, AML, Power BI, and Teams. |
-| Deployment | L219-L235 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, MedTech) using portal, ARM, Bicep, CLI, PowerShell, and configure storage backends |
+| Troubleshooting | L37-L45 | Diagnosing and fixing Azure Health Data Services issues: FHIR access tokens, events, $convert-data, identity providers, MedTech deployment/log errors, and known platform problems. |
+| Best Practices | L46-L53 | Guidance on using customer-managed keys with FHIR/DICOM, optimizing FHIR performance, and safely running, monitoring, and managing FHIR reindex jobs. |
+| Decision Making | L54-L60 | Guidance on planning migrations off Azure API for FHIR, including choosing between FHIR service vs full Health Data Services and step-by-step migration considerations. |
+| Architecture & Design Patterns | L61-L67 | Architectural patterns for FHIR, DICOM, and de-identification: disaster recovery setup, reliable anonymization services, DICOM + Data Lake integration, and digital pathology workflow design. |
+| Limits & Quotas | L68-L73 | Autoscaling and performance tuning for Azure API for FHIR/FHIR service, plus supported languages and limits for the Azure Health de-identification service. |
+| Security | L74-L114 | Configuring auth, RBAC, identities, keys, tokens, network/Private Link, and compliance policies for secure FHIR, DICOM, and de-identification services in Azure Health Data Services. |
+| Configuration | L115-L172 | Configuring FHIR, DICOM, and MedTech services: bulk ops, profiles/validation, CORS, logging/metrics, de-identification, events, security (Private Link), and standards (CARIN, Da Vinci). |
+| Integrations & Coding Patterns | L173-L205 | Coding patterns and integration guides for FHIR, DICOM, MedTech, and de-identification APIs, including REST/SDK usage, bulk ops, data pipelines, and connections to Synapse, ADF, AML, Power BI, and Teams. |
+| Deployment | L206-L221 | How to deploy and move Azure Health Data Services (FHIR, DICOM, de-identification, MedTech) using portal, ARM, Bicep, CLI, PowerShell, and configure storage backends |
 
 ### Troubleshooting
 | Topic | URL |
@@ -41,9 +41,6 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshoot Azure Health Data Services events issues | https://learn.microsoft.com/en-us/azure/healthcare-apis/events/events-troubleshooting-guide |
 | Troubleshoot FHIR $convert-data operation failures | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/convert-data-troubleshoot |
 | Troubleshoot FHIR identity provider configuration issues | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/troubleshoot-identity-provider-configuration |
-| MedTech service FAQ on FHIR integration and issues | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/frequently-asked-questions |
-| Troubleshoot MedTech service deployment failures | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/troubleshoot-errors-deployment |
-| Diagnose MedTech errors using service logs | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/troubleshoot-errors-logs |
 | Resolve known issues in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/known-issues |
 
 ### Best Practices
@@ -172,12 +169,6 @@ This skill requires **network access** to fetch documentation content:
 | Use $member-match operation on FHIR service | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/tutorial-member-match |
 | Add custom headers to FHIR audit logs | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/use-custom-headers-diagnosticlog |
 | Validate FHIR resources against stored profiles | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/validation-against-profiles |
-| Configure and view MedTech performance metrics in Azure | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/configure-metrics |
-| Enable diagnostic settings for MedTech service logs | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-enable-diagnostic-settings |
-| Configure CalculatedContent templates for MedTech mappings | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-calculatedcontent-templates |
-| Use custom functions in MedTech device mappings | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-custom-functions |
-| Configure IotJsonPathContent templates for MedTech mappings | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-iotjsonpathcontent-templates |
-| Use MedTech monitoring and health check tabs | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/how-to-use-monitoring-and-health-checks-tabs |
 
 ### Integrations & Coding Patterns
 | Topic | URL |
@@ -211,10 +202,6 @@ This skill requires **network access** to fetch documentation content:
 | Use FHIR REST API capabilities in Azure Health Data Services | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/rest-api-capabilities |
 | Access Azure Health Data Services APIs with cURL | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl |
 | Access Azure Health Data Services using VS Code REST Client | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-rest-client |
-| Integrate MedTech service data with Azure Machine Learning | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/concepts-machine-learning |
-| Connect MedTech service data to Power BI reports | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/concepts-power-bi |
-| Send MedTech service alerts to Microsoft Teams | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/concepts-teams |
-| Route IoT Hub device messages to MedTech service | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/device-messages-through-iot-hub |
 
 ### Deployment
 | Topic | URL |
@@ -232,4 +219,3 @@ This skill requires **network access** to fetch documentation content:
 | Deploy FHIR service via Azure portal | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/deploy-azure-portal |
 | Deploy FHIR service using Bicep templates | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-bicep |
 | Deploy FHIR service using ARM templates | https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/fhir-service-resource-manager-template |
-| Choose MedTech service deployment method in Azure | https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/deploy-choose-method |

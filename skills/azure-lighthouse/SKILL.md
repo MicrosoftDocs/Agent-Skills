@@ -1,9 +1,9 @@
 ---
 name: azure-lighthouse
-description: Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when designing multi-tenant delegations, RBAC/AOBO/PIM access, policy-based onboarding, Arc/Sentinel integrations, or Marketplace offers, and other Azure Lighthouse related development tasks. Not for Azure Arc (use azure-arc), Azure Managed Applications (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager).
+description: Expert knowledge for Azure Lighthouse development including decision making, security, configuration, integrations & coding patterns, and deployment. Use when configuring Lighthouse delegations, AOBO/PIM access, Arc/Sentinel integrations, policies/remediation, or Marketplace offers, and other Azure Lighthouse related development tasks. Not for Azure Arc (use azure-arc), Azure Managed Applications (use azure-managed-applications), Azure Resource Manager (use azure-resource-manager), Azure Role-based access control (use azure-rbac).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Lighthouse Skill
@@ -24,16 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L33-L40 | Guidance on when and how to use Azure Lighthouse: multi-tenant enterprise setups, ISV SaaS patterns, comparing Lighthouse vs managed apps, and designing Managed Service offers. |
-| Security | L41-L48 | Securing Azure Lighthouse: tenant/user/role mapping, RBAC and AOBO controls, PIM and eligible authorizations, and recommended security hardening practices. |
-| Configuration | L49-L61 | Configuring and managing Azure Lighthouse delegations: onboarding via ARM/policy, updating/removing access, deploying/using policies (incl. built-ins), remediation with managed identities, and monitoring changes. |
-| Integrations & Coding Patterns | L62-L69 | Cross-tenant integration patterns for managing Arc servers, Sentinel workspaces, Migrate projects, and Monitor Logs at scale using Azure Lighthouse. |
-| Deployment | L70-L73 | Guidance for packaging, publishing, and managing Azure Lighthouse managed service offers in Azure Marketplace, including requirements, steps, and configuration details. |
+| Decision Making | L33-L39 | Guidance on when and how to use Azure Lighthouse: multi-tenant enterprise setups, ISV SaaS patterns, comparing Lighthouse vs managed apps, and designing Managed Service offers. |
+| Security | L40-L47 | Managing secure access in Azure Lighthouse: roles, tenants, AOBO, PIM eligible authorizations, and recommended security controls/practices for cross-tenant management. |
+| Configuration | L48-L60 | Configuring and managing Azure Lighthouse delegations: onboarding via ARM/policy, updating/removing access, deploying/using policies (incl. built-ins), remediation with managed identities, and monitoring changes. |
+| Integrations & Coding Patterns | L61-L68 | Cross-tenant integration patterns for managing Arc servers, Sentinel workspaces, Migrate projects, and Monitor Logs at scale using Azure Lighthouse. |
+| Deployment | L69-L72 | Guidance for packaging, publishing, and managing Azure Lighthouse managed service offers in Azure Marketplace, including requirements, steps, and configuration details. |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Use Azure Lighthouse in multi-tenant enterprises | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/enterprise |
 | Apply Azure Lighthouse in ISV SaaS scenarios | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/isv-scenarios |
 | Choose between Azure Lighthouse and managed applications | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/managed-applications |
 | Design Managed Service offers for Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/managed-services-offers |
@@ -43,8 +42,8 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Apply CSP AOBO and Lighthouse security controls | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/cloud-solution-provider |
 | Implement recommended security practices for Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/recommended-security-practices |
-| Map tenants, users, and roles for Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/tenants-users-roles |
-| Configure eligible authorizations and PIM for Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/how-to/create-eligible-authorizations |
+| Use tenants, users, and roles with Azure Lighthouse | https://learn.microsoft.com/en-us/azure/lighthouse/concepts/tenants-users-roles |
+| Configure eligible authorizations with Azure Lighthouse and PIM | https://learn.microsoft.com/en-us/azure/lighthouse/how-to/create-eligible-authorizations |
 
 ### Configuration
 | Topic | URL |

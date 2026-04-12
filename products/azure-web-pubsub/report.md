@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 - **Unclassified**: 31
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 8
-- **Unchanged**: 103
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 112
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-web-pubsub/azure-web-pubsub.csv`
 
@@ -72,29 +72,6 @@ confusable_not_for: Not for Azure SignalR Service (use azure-signalr-service), A
 | *(Unclassified)* | 31 | 27.7% |
 
 ## Changes
-
-### New Pages
-
-- [Wildcard group role patterns](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-wildcard-group-roles)
-
-### Updated Pages
-
-- [Service internals](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-service-internals)
-  - Updated: 2024-08-23T05:35:00.000Z → 2026-04-01T08:46:00.000Z
-- [Client protocol overview](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/concept-client-protocols)
-  - Updated: 2025-01-20T05:32:00.000Z → 2026-04-01T08:46:00.000Z
-- [Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-webpubsub-subprotocol)
-  - Updated: 2022-03-21T11:09:00.000Z → 2026-03-25T22:12:00.000Z
-- [Reliable JSON WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-json-reliable-webpubsub-subprotocol)
-  - Updated: 2024-11-27T12:14:00.000Z → 2026-03-25T22:12:00.000Z
-- [Reliable Protobuf WebSocket subprotocol](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/reference-protobuf-reliable-webpubsub-subprotocol)
-  - Updated: 2023-02-10T12:16:00.000Z → 2026-03-25T22:12:00.000Z
-- [What's new](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/whats-new)
-  - Updated: 2024-10-22T11:12:00.000Z → 2026-04-01T08:46:00.000Z
-- [How to connect MQTT WebSocket clients](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-connect-mqtt-websocket-client)
-  - Updated: 2024-08-14T05:35:00.000Z → 2026-04-01T08:46:00.000Z
-- [Generate client access URL](https://learn.microsoft.com/en-us/azure/azure-web-pubsub/howto-generate-client-access-url)
-  - Updated: 2024-09-11T11:20:00.000Z → 2026-04-01T08:46:00.000Z
 
 ## Classified Pages
 

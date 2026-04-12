@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-12'
 category_descriptions:
   integrations: Integrating Managed Grafana with Azure AI/Agent Framework, Prometheus,
     AKS, Azure Monitor, and Data Explorer, plus configuring data sources, alerts,
@@ -7,8 +7,8 @@ category_descriptions:
   security: 'Securing Managed Grafana: auth/permissions, Entra/Team Sync, roles, service
     accounts/tokens, private access/endpoints, outbound IPs, data encryption, and
     security best practices.'
-  configuration: 'Configuring Azure Managed Grafana workspaces: auth/access, instance
-    settings, plugins, metrics/diagnostics with Azure Monitor, and SMTP email alert
+  configuration: 'Configuring Azure Managed Grafana workspaces: access control, instance
+    settings, plugins, metrics/diagnostics via Azure Monitor, and SMTP email alert
     setup.'
   deployment: Designing highly available Azure Managed Grafana workspaces, including
     reliability features, SLAs, and enabling zone-redundant deployments for resiliency.
@@ -21,18 +21,16 @@ category_descriptions:
     access, configuration, and private endpoint connectivity and DNS problems.
 skill_description: Expert knowledge for Azure Managed Grafana development including
   troubleshooting, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when integrating Azure Monitor/Prometheus,
-  configuring data sources/alerts, Entra auth, private endpoints, or HA workspaces,
+  & coding patterns, and deployment. Use when integrating Azure Managed Grafana with
+  Azure Monitor/AKS, Entra auth, plugins, email alerts, or zone-redundant setups,
   and other Azure Managed Grafana related development tasks. Not for Azure Monitor
-  (use azure-monitor), Azure Application Gateway (use azure-application-gateway),
-  Azure Virtual Machines (use azure-virtual-machines), Azure Kubernetes Service (AKS)
-  (use azure-kubernetes-service).
-use_when: Use when integrating Azure Monitor/Prometheus, configuring data sources/alerts,
-  Entra auth, private endpoints, or HA workspaces, and other Azure Managed Grafana
+  (use azure-monitor), Azure Synapse Analytics (use azure-synapse-analytics), Azure
+  Data Explorer (use azure-data-explorer).
+use_when: Use when integrating Azure Managed Grafana with Azure Monitor/AKS, Entra
+  auth, plugins, email alerts, or zone-redundant setups, and other Azure Managed Grafana
   related development tasks.
-confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application Gateway
-  (use azure-application-gateway), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service).
+confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Synapse Analytics
+  (use azure-synapse-analytics), Azure Data Explorer (use azure-data-explorer).
 ---
 # Azure Managed Grafana Crawl Report
 
@@ -46,8 +44,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 43
+- **Updated Pages**: 1
+- **Unchanged**: 42
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-grafana/azure-managed-grafana.csv`
 
@@ -65,6 +63,11 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 | *(Unclassified)* | 8 | 18.6% |
 
 ## Changes
+
+### Updated Pages
+
+- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
+  - Updated: 2026-03-10T22:11:00.000Z → 2026-04-09T17:25:00.000Z
 
 ## Classified Pages
 
@@ -98,9 +101,9 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Application
 | [Manage plugins](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-manage-plugins) | configuration | 0.70 | Explains how to add/remove plugins via Azure portal rather than Grafana UI/CLI; product-specific configuration path and constraints. |
 | [Microsoft Foundry dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/azure-ai-foundry-dashboard) | integrations | 0.70 | Prebuilt dashboard for AI metrics (latency, throughput, token usage); includes specific metrics, queries, and panel configurations tied to Azure AI Foundry. |
 | [Migrate to Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-migrate) | decision-making | 0.70 | Migration guide with what can be migrated automatically and how; supports decision-making and concrete migration steps between environments. |
-| [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server) | configuration | 0.70 | Describes the built-in AMG-MCP endpoint for Azure Managed Grafana, including product-specific endpoint behavior and authentication mechanisms (Entra ID and Grafana service account token). This is concrete configuration knowledge for the MCP server that an LLM is unlikely to infer generically. |
 | [Use Azure Monitor alerts with Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-use-azure-monitor-alerts) | integrations | 0.70 | Explains how Azure Monitor and Grafana alerts interact, including plan-specific availability (Essential lacks Grafana alerts) and shared compute/query throttling limits. |
 | [Use service accounts](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-service-accounts) | security | 0.70 | Explains enabling service accounts and creating tokens for API access; product-specific identity and access configuration. |
+| [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server) | configuration | 0.68 | The page describes product-specific configuration for the built-in AMG-MCP endpoint on Azure Managed Grafana, including how it uses the same authentication mechanisms as the Grafana instance (Entra ID and service account tokens). This is concrete, service-specific configuration and integration behavior that isn't generic knowledge, but it doesn't focus on limits, troubleshooting, or architecture patterns. |
 | [Monitor using diagnostic settings](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-workspace) | configuration | 0.65 | Details diagnostic settings and event log categories for the service; product-specific logging configuration. |
 | [Monitor using metrics](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-monitor-managed-grafana-metrics) | configuration | 0.65 | Shows which workspace metrics are exposed and how to configure metric charts; includes specific metric names and usage patterns. |
 | [Upgrade to Grafana 12](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-upgrade-grafana-12) | decision-making | 0.65 | Provides product-specific guidance on upgrading workspaces from Grafana 11 to 12, including retirement and automatic-upgrade dates and conditions. This is expert decision and migration guidance (when and how to upgrade, implications of missing the deadline) that goes beyond generic upgrade concepts. |

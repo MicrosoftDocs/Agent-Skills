@@ -1,9 +1,9 @@
 ---
 name: azure-event-grid
-description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Event Grid endpoints, configuring topics/subscriptions, using MQTT, integrating webhooks/SaaS, or deploying on Arc Kubernetes, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Event Grid development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing Event Grid endpoints, configuring topics/subscriptions, using MQTT, routing Azure events, or deploying on Arc Kubernetes, and other Azure Event Grid related development tasks. Not for Azure Service Bus (use azure-service-bus), Azure Event Hubs (use azure-event-hubs), Azure Notification Hubs (use azure-notification-hubs), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Event Grid Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L59-L64 | Patterns for routing events across Event Grid namespace topics and implementing MQTT-based request/response command workflows using Event Grid. |
 | Limits & Quotas | L65-L75 | Event Grid delivery/retry behavior, custom headers, event retention, MQTT protocol support, and regional quotas/service limits for topics, namespaces, and brokers |
 | Security | L76-L127 | Securing Event Grid: auth (keys, SAS, Entra ID, JWT, OAuth), RBAC, managed identities, webhooks/MQTT, TLS, IP firewalls, private endpoints, network perimeters, and Azure Policy controls. |
-| Configuration | L128-L206 | Configuring Event Grid and MQTT: topics, subscriptions, filters, routing, dead-lettering, monitoring/metrics, and detailed event schemas for many Azure and Microsoft services. |
-| Integrations & Coding Patterns | L207-L247 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources (Auth0, Key Vault, Graph, Teams, SharePoint, OneDrive), and handlers like Event Hubs and Monitor |
+| Configuration | L128-L205 | Configuring Event Grid and MQTT: topics, subscriptions, filters, routing, dead-lettering, monitoring/metrics, and detailed event schemas for many Azure and Microsoft services. |
+| Integrations & Coding Patterns | L206-L247 | Patterns for publishing, routing, and consuming Event Grid events with HTTP/webhooks, MQTT, Azure/M365/SaaS sources, and handlers like Event Hubs, Monitor, Relay, and custom endpoints. |
 | Deployment | L248-L251 | Guides for deploying Event Grid on Azure Arc-enabled Kubernetes, including installing and configuring the Event Grid extension on Arc clusters. |
 
 ### Troubleshooting
@@ -129,7 +129,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Configure custom domains for Event Grid MQTT and HTTP | https://learn.microsoft.com/en-us/azure/event-grid/assign-custom-domain-name |
-| Advanced Messaging events schema for Azure Communication Services | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-advanced-messaging-events |
 | Azure Communication Services chat events schema for Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-chat-events |
 | Presence events schema for Azure Communication Services | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-presence-events |
 | Job Router events schema for Azure Communication Services | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-router-events |
@@ -212,6 +211,7 @@ This skill requires **network access** to fetch documentation content:
 | Stream Auth0 logs to Blob Storage using Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/auth0-log-stream-blob-storage |
 | Use CloudEvents v1.0 schema with Azure Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/cloud-event-schema |
 | Use Microsoft Cloud Printing events with Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/cloud-printing-events |
+| Use ACS Advanced Messaging events with Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-advanced-messaging-events |
 | Use Azure Communication Services email events with Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/communication-services-email-events |
 | Use Microsoft 365 Group Conversation events with Event Grid | https://learn.microsoft.com/en-us/azure/event-grid/conversation-events |
 | Understand Azure Event Grid proprietary event schema | https://learn.microsoft.com/en-us/azure/event-grid/event-schema |

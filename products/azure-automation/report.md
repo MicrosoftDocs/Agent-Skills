@@ -51,8 +51,8 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 114
+- **Updated Pages**: 0
+- **Unchanged**: 115
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -71,11 +71,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | *(Unclassified)* | 23 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Disable local authentication](https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication)
-  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-02T11:11:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-arc
-description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or SCVMM/vSphere workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Stack Edge (use azure-stack-edge), Azure VMware Solution (use azure-vmware-solution).
+description: Expert knowledge for Azure Arc development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Arc-enabled Kubernetes, servers, SQL MI, Edge RAG, resource bridge, or SCVMM/vSphere workloads, and other Azure Arc related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Arc Skill
@@ -24,9 +24,9 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Arc issues: Kubernetes connectivity/GitOps, storage and Key Vault, SQL/Edge RAG, servers/VM extensions/SSH, resource bridge, site manager, and workload orchestration. |
+| Troubleshooting | L37-L71 | Diagnosing and fixing Azure Arc issues across Kubernetes, servers, SQL, storage, networking, identity, site manager, resource bridge, VMware/SCVMM, and workload orchestration. |
 | Best Practices | L72-L79 | Best practices for Azure Arc storage and data services: filesystem behavior, avoiding out-of-space issues, static retain workflows for Edge Volumes, and common usage FAQs. |
-| Decision Making | L80-L101 | Guidance on planning and choosing Azure Arc options: services, tiers, sizing, platforms, connectivity, licensing/cost, migrations, and large-scale server/data/Kubernetes deployments. |
+| Decision Making | L80-L101 | Guidance on planning, sizing, licensing, connectivity, platform selection, and migration decisions for Azure Arc servers, Kubernetes, data services, SQL, and Edge RAG workloads. |
 | Architecture & Design Patterns | L102-L110 | Patterns for Arc data/compute design: container storage data flow, Arc Edge Volumes, HA/DR for Arc SQL MI and failover groups, and advanced Edge RAG data parsing. |
 | Limits & Quotas | L111-L126 | Limits, quotas, versions, and requirements for Arc-enabled Kubernetes, Edge RAG, Arc data services, resource bridge, and billing/ESU behavior for connected machines and Windows Server. |
 | Security | L127-L185 | Securing Azure Arc: identity, RBAC, AD/Entra auth, keytabs, TDE, certificates, network/Private Link, policies, and hardening for Kubernetes, servers, SQL MI, Edge RAG, SCVMM, and vSphere. |
@@ -57,7 +57,7 @@ This skill requires **network access** to fetch documentation content:
 | Handle disconnected scenarios for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-connectivity |
 | Troubleshoot Azure Arc ESU licensing and patch delivery | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-extended-security-updates |
 | Troubleshoot networking problems for Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-networking |
-| Resolve VM extension failures on Azure Arc-enabled servers | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions |
+| Diagnose and fix Azure Arc server VM extension failures | https://learn.microsoft.com/en-us/azure/azure-arc/servers/troubleshoot-vm-extensions |
 | Clarify Azure Arc vs VMware vSphere usage | https://learn.microsoft.com/en-us/azure/azure-arc/servers/vmware-faq |
 | Azure Arc site manager FAQ and behavioral clarifications | https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/faq |
 | Known issues and workarounds for Azure Arc site manager | https://learn.microsoft.com/en-us/azure/azure-arc/site-manager/known-issues |
@@ -86,7 +86,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan and purchase Azure Arc SQL reserved capacity | https://learn.microsoft.com/en-us/azure/azure-arc/data/reserved-capacity-overview |
 | Choose SQL Managed Instance Azure Arc service tiers | https://learn.microsoft.com/en-us/azure/azure-arc/data/service-tiers |
 | Size Azure Arc-enabled data services deployments | https://learn.microsoft.com/en-us/azure/azure-arc/data/sizing-guidance |
-| Select validated platforms for Arc-enabled data services | https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program |
+| Select validated Kubernetes platforms for Azure Arc data | https://learn.microsoft.com/en-us/azure/azure-arc/data/validation-program |
 | Select an appropriate language model for Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/prepare-language-model |
 | Choose and configure search types in Edge RAG | https://learn.microsoft.com/en-us/azure/azure-arc/edge-rag/search-types |
 | Use validated Kubernetes distributions for Arc-enabled Kubernetes | https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/validation-program |

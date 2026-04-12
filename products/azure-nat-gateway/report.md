@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-12'
 category_descriptions:
   limits-quotas: NAT Gateway FAQs plus limits on SNAT ports, IPs, throughput, connections,
     and other quotas, with guidance on capacity planning and scaling.
@@ -38,42 +38,54 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Load Bala
 
 ## Summary
 
-- **Total Pages**: 26
-- **Fetched**: 26
+- **Total Pages**: 24
+- **Fetched**: 24
 - **Fetch Failed**: 0
-- **Classified**: 22
-- **Unclassified**: 4
+- **Classified**: 19
+- **Unclassified**: 5
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 26
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 22
+- **Deleted Pages**: 3
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-nat-gateway/azure-nat-gateway.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 19.2% |
-| best-practices | 1 | 3.8% |
-| configuration | 5 | 19.2% |
-| decision-making | 2 | 7.7% |
-| deployment | 4 | 15.4% |
-| limits-quotas | 1 | 3.8% |
-| troubleshooting | 4 | 15.4% |
-| *(Unclassified)* | 4 | 15.4% |
+| architecture-patterns | 5 | 20.8% |
+| best-practices | 1 | 4.2% |
+| configuration | 5 | 20.8% |
+| decision-making | 2 | 8.3% |
+| deployment | 4 | 16.7% |
+| limits-quotas | 1 | 4.2% |
+| troubleshooting | 1 | 4.2% |
+| *(Unclassified)* | 5 | 20.8% |
 
 ## Changes
+
+### New Pages
+
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-support-help)
+
+### Updated Pages
+
+- [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2)
+  - Updated: 2026-03-09T17:11:00.000Z → 2026-04-09T06:11:00.000Z
+
+### Deleted Pages
+
+- ~~Troubleshoot NAT gateway~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat)
+- ~~Troubleshoot NAT gateway and Azure services~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat-and-azure-services)
+- ~~Troubleshoot NAT gateway connectivity~~ (https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat-connectivity)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot NAT gateway connectivity](https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat-connectivity) | troubleshooting | 0.80 | Focuses on outbound connectivity issues, causes, and solutions plus best practices for efficient outbound usage; matches troubleshooting with product-specific guidance. |
 | [Migrate NAT Gateway to Standard V2](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate) | decision-making | 0.75 | Provides migration guidance, including downtime impact and lack of in-place upgrade; this is SKU/upgrade decision and migration-path guidance. |
-| [Troubleshoot NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat) | troubleshooting | 0.75 | Explicit troubleshooting guide for configuration and deployment issues (add/remove NAT gateway, subnets, IPs); likely includes symptom-to-solution mappings. |
-| [Troubleshoot NAT gateway and Azure services](https://learn.microsoft.com/en-us/azure/nat-gateway/troubleshoot-nat-and-azure-services) | troubleshooting | 0.75 | Troubleshooting connectivity between NAT Gateway and services like App Service, AKS, Firewall, Databricks; includes service-specific causes and resolutions. |
 | [Create and configure NAT gateway after region move](https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway) | deployment | 0.70 | Covers constraints (cannot move NAT Gateway across regions) and the required deployment steps after using Azure Resource Mover; product-specific deployment constraint and workaround. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/nat-gateway/faq) | limits-quotas | 0.70 | FAQ pages for Azure networking services typically include concrete limits (SNAT ports, IP counts, supported scenarios); these numeric constraints are expert knowledge not derivable from general training. |
 | [Manage a Standard NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway) | configuration | 0.70 | Explains how to create/remove NAT gateway, associate subnets, and manage public IPs/prefixes; contains concrete configuration operations and parameters. |
@@ -100,4 +112,5 @@ confusable_not_for: Not for Azure Firewall (use azure-firewall), Azure Load Bala
 | [What is Azure NAT Gateway?](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview) | 0.30 | High-level overview of Azure NAT Gateway features and behavior; no detailed limits, configuration tables, or error mappings. |
 | [Create and validate a Standard Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway) | 0.20 | Quickstart/tutorial for creating a NAT gateway; primarily step-by-step portal/CLI instructions without expert-only configuration matrices or limits. |
 | [Create and validate a Standard V2 Azure NAT Gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2) | 0.20 | Quickstart for creating Standard V2 NAT Gateway; procedural content without detailed limits, decision matrices, or troubleshooting mappings. |
-| [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.20 | Page appears to be a how-to guide for creating, associating, and deleting a NAT Gateway v2 and managing its public IPs. The summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It looks like procedural/tutorial content rather than expert reference material. |
+| [Manage a Standard V2 NAT gateway](https://learn.microsoft.com/en-us/azure/nat-gateway/manage-nat-gateway-v2) | 0.20 | Page is a how-to guide for creating/removing and associating a NAT Gateway v2 with subnets and IPs. From the description it appears procedural without detailed configuration parameter tables, limits, quotas, or product-specific troubleshooting/error-code mappings. It reads as standard tutorial content rather than expert reference material. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-support-help) | - | Support/help options page that points to where to get assistance. Contains no technical configuration details, limits, error codes, or decision matrices. |

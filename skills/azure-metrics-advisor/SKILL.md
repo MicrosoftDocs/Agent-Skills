@@ -1,9 +1,9 @@
 ---
 name: azure-metrics-advisor
-description: Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when configuring data feeds, tuning anomaly detection, managing alert hooks, or integrating the Metrics Advisor APIs, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Machine Learning (use azure-machine-learning).
+description: Expert knowledge for Azure AI Metrics Advisor development including decision making, security, configuration, and integrations & coding patterns. Use when configuring data feeds, tuning anomaly detection, managing alert hooks, securing creds, or calling Metrics Advisor APIs, and other Azure AI Metrics Advisor related development tasks. Not for Azure AI Anomaly Detector (use azure-anomaly-detector), Azure Monitor (use azure-monitor), Azure Stream Analytics (use azure-stream-analytics).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Metrics Advisor Skill
@@ -24,26 +24,25 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Decision Making | L32-L36 | Guidance on estimating, optimizing, and controlling Azure Metrics Advisor costs, including pricing concepts, cost drivers, and budgeting/management best practices. |
-| Security | L37-L42 | Configuring Metrics Advisor security: encrypting data at rest with customer-managed keys and creating/using secure credential entities for data source access. |
-| Configuration | L43-L48 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
-| Integrations & Coding Patterns | L49-L54 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
+| Decision Making | L32-L36 | Guidance on estimating, controlling, and optimizing Metrics Advisor costs and usage, including pricing factors, quotas, and cost-management best practices. |
+| Security | L37-L42 | Encrypting Metrics Advisor data, configuring auth, and securely creating, storing, and managing data source credentials and keys for anomaly detection. |
+| Configuration | L43-L47 | Setting up Metrics Advisor: configuring alert hooks (email/webhook), alerting rules, data feed and detection settings, and tuning anomaly detection behavior for your instance. |
+| Integrations & Coding Patterns | L48-L52 | Connecting Metrics Advisor to various data sources, crafting valid ingestion queries, and using its REST API/SDKs to integrate anomaly detection into applications |
 
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Plan and manage Azure Metrics Advisor costs | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/cost-management |
+| Plan and manage Azure Metrics Advisor costs and usage | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/cost-management |
 
 ### Security
 | Topic | URL |
 |-------|-----|
-| Configure data-at-rest encryption for Metrics Advisor | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption |
-| Create secure credential entities for Metrics Advisor | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/credential-entity |
+| Configure Metrics Advisor data encryption and authentication | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption |
+| Create and manage Metrics Advisor credential entities securely | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/credential-entity |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure Metrics Advisor alert hooks and rules | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/alerts |
 | Configure Metrics Advisor instance and detection settings | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/configure-metrics |
 
 ### Integrations & Coding Patterns
@@ -51,4 +50,3 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Connect diverse data sources to Metrics Advisor | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/data-feeds-from-different-sources |
 | Use Metrics Advisor REST API and client SDKs | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/quickstarts/rest-api-and-client-library |
-| Write valid data ingestion queries for Metrics Advisor | https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/tutorials/write-a-valid-query |

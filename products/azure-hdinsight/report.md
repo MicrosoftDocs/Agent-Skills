@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 424
+- **Updated Pages**: 0
+- **Unchanged**: 425
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-hdinsight/azure-hdinsight.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 91 | 21.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [HDInsight retirements and action required](https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-component-retirements-and-action-required)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-23T17:14:00.000Z
 
 ## Classified Pages
 

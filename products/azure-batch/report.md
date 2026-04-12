@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 113
+- **Updated Pages**: 0
+- **Unchanged**: 114
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | *(Unclassified)* | 31 | 27.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration)
-  - Updated: 2026-01-12T08:00:00.000Z → 2026-03-06T08:00:00.000Z
 
 ## Classified Pages
 

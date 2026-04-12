@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 186
+- **Updated Pages**: 0
+- **Unchanged**: 190
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bot-service/azure-bot-service.csv`
 
@@ -74,17 +74,6 @@ confusable_not_for: Not for Azure Health Bot (use azure-health-bot), Azure Funct
 | *(Unclassified)* | 38 | 20.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Provision an Azure Bot resource](https://learn.microsoft.com/en-us/azure/bot-service/provision-azure-bot?view=azure-bot-service-4.0)
-  - Updated: 2024-12-19T01:00:00.000Z → 2025-12-16T01:01:00.000Z
-- [Answer user's questions using QnA Maker](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0)
-  - Updated: 2024-12-19T01:00:00.000Z → 2025-12-16T01:01:00.000Z
-- [Implement custom storage for your bot](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-custom-storage?view=azure-bot-service-4.0)
-  - Updated: 2024-10-09T08:00:00.000Z → 2025-12-16T01:01:00.000Z
-- [Provision an App Service resource](https://learn.microsoft.com/en-us/azure/bot-service/provision-app-service?view=azure-bot-service-4.0)
-  - Updated: 2024-12-19T01:00:00.000Z → 2025-12-16T01:01:00.000Z
 
 ## Classified Pages
 

@@ -1,14 +1,14 @@
 ---
 name: azure-service-health
-description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when integrating Service Health APIs/webhooks, configuring alerts via ARM/Bicep, querying events with Resource Graph, managing RBAC access, or diagnosing VM Resource Health issues, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
+description: Expert knowledge for Azure Service Health development including troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. Use when integrating Service Health via APIs/webhooks, configuring alerts, querying Resource Graph, or diagnosing VM health, and other Azure Service Health related development tasks. Not for Azure Monitor (use azure-monitor), Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Quotas (use azure-quotas).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Health Skill
 
-This skill provides expert guidance for Azure Service Health. Covers troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Service Health. Covers troubleshooting, limits & quotas, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,12 +24,11 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
-| Limits & Quotas | L39-L43 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types |
-| Security | L44-L52 | Managing access and roles for Azure Service Health, including tenant vs subscription RBAC, viewing security advisories, and configuring who can see health and security info. |
-| Configuration | L53-L61 | Configuring Azure Service Health and Resource Health alerts via ARM/Bicep/PowerShell, and querying health events using Azure Resource Graph tables and Kusto queries |
-| Integrations & Coding Patterns | L62-L72 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to query, route, and integrate Azure Service Health and Security advisories into external systems |
-| Deployment | L73-L76 | Using Azure Policy to create, configure, and manage Service Health alert rules at scale across subscriptions and resource groups |
+| Troubleshooting | L33-L37 | Understanding VM Resource Health annotations, diagnosing VM health issues, and troubleshooting platform or user-caused VM availability and performance problems |
+| Limits & Quotas | L38-L42 | Details on how long Azure Service Health notifications are kept, their lifecycle stages, and retention behavior for different event types |
+| Security | L43-L51 | Managing who can see Azure Service Health and security advisories using tenant admin roles, RBAC, and subscription vs tenant-level access configuration |
+| Configuration | L52-L60 | Configuring Azure Service Health and Resource Health alerts via ARM/Bicep/PowerShell, and querying health events using Azure Resource Graph tables and Kusto queries |
+| Integrations & Coding Patterns | L61-L70 | Using APIs, Resource Graph, webhooks, and connectors (OpsGenie, PagerDuty, ServiceNow) to query, route, and integrate Azure Service Health and Security advisories into external systems |
 
 ### Troubleshooting
 | Topic | URL |
@@ -45,7 +44,7 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand tenant admin roles for Service Health access | https://learn.microsoft.com/en-us/azure/service-health/admin-access-reference |
-| Use Health history and RBAC for Azure Service Health | https://learn.microsoft.com/en-us/azure/service-health/health-history-overview |
+| Use RBAC roles to access Azure Service Health history | https://learn.microsoft.com/en-us/azure/service-health/health-history-overview |
 | Configure subscription access for Azure Security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-add-subscription |
 | Access and view Azure Service Health security advisories | https://learn.microsoft.com/en-us/azure/service-health/security-advisories-elevated-access |
 | Configure tenant vs subscription access for Service Health | https://learn.microsoft.com/en-us/azure/service-health/subscription-vs-tenant |
@@ -69,8 +68,3 @@ This skill requires **network access** to fetch documentation content:
 | Forward Azure Service Health alerts to OpsGenie | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-opsgenie |
 | Integrate Azure Service Health alerts with PagerDuty webhooks | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-pagerduty |
 | Send Azure Service Health alerts to ServiceNow | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-webhook-servicenow |
-
-### Deployment
-| Topic | URL |
-|-------|-----|
-| Deploy Service Health alert rules at scale using Azure Policy | https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-deploy-policy |

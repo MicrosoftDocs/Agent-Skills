@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 16
-- **Unchanged**: 110
+- **Updated Pages**: 0
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -60,41 +60,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | *(Unclassified)* | 92 | 73.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Change column options](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/set-column-options?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-27T21:05:00.000Z
-- [2. Add tasks](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-03-27T21:05:00.000Z
-- [4. Adjust work to fit capacity](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/adjust-work?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-03-27T21:05:00.000Z
-- [5. Share your sprint plan](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/share-plan?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-03-27T21:05:00.000Z
-- [6. Update the Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/task-board?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-27T21:05:00.000Z
-- [Customize a Taskboard](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/customize-taskboard?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-27T21:05:00.000Z
-- [Scrum best practices](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/best-practices-scrum?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-27T21:05:00.000Z
-- [Set query permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/boards/queries/set-query-permissions?view=azure-devops)
-  - Updated: 2025-07-17T19:00:00.000Z → 2026-03-27T21:05:00.000Z
-- [Example query charts](https://learn.microsoft.com/en-us/azure/devops/boards/queries/example-query-charts?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-27T21:05:00.000Z
-- [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-03-27T21:05:00.000Z
-- [Manage bugs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops)
-  - Updated: 2026-02-28T08:00:00.000Z → 2026-04-03T13:05:00.000Z
-- [Manage issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops)
-  - Updated: 2026-03-04T02:02:00.000Z → 2026-03-27T21:05:00.000Z
-- [Query by assignment or workflow changes](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops)
-  - Updated: 2026-03-02T14:06:00.000Z → 2026-03-04T02:02:00.000Z
-- [Connect Azure Boards (cloud)](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops)
-  - Updated: 2025-02-18T16:47:00.000Z → 2026-03-27T21:05:00.000Z
-- [Add status badges](https://learn.microsoft.com/en-us/azure/devops/boards/github/configure-status-badges?view=azure-devops)
-  - Updated: 2025-07-29T19:13:00.000Z → 2026-03-27T21:05:00.000Z
-- [Dependency Tracker](https://learn.microsoft.com/en-us/azure/devops/boards/extensions/dependency-tracker?view=azure-devops)
-  - Updated: 2024-11-18T08:00:00.000Z → 2026-03-27T21:05:00.000Z
 
 ## Classified Pages
 

@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 329
+- **Updated Pages**: 0
+- **Unchanged**: 332
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-aks-edge-essentials/azure-aks-edge-essentials.csv`
 
@@ -75,15 +75,6 @@ confusable_not_for: Not for Azure Kubernetes Service (AKS) (use azure-kubernetes
 | *(Unclassified)* | 68 | 20.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Use GPUs](https://learn.microsoft.com/en-us/azure/aks/aksarc/deploy-gpu-node-pool)
-  - Updated: 2025-11-17T23:03:00.000Z → 2025-12-17T23:03:00.000Z
-- [Supported scale requirements](https://learn.microsoft.com/en-us/azure/aks/aksarc/scale-requirements)
-  - Updated: 2025-09-25T17:09:00.000Z → 2026-01-07T23:02:00.000Z
-- [Simplify outbound connectivity](https://learn.microsoft.com/en-us/azure/aks/aksarc/arc-gateway-aks-arc)
-  - Updated: 2025-07-15T08:00:00.000Z → 2026-03-20T22:06:00.000Z
 
 ## Classified Pages
 

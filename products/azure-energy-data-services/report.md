@@ -1,14 +1,14 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   decision-making: Guidance on choosing ADME deployment tiers (Developer vs Standard)
     and checking which OSDU data/compute services and capabilities are available in
     each tier.
   configuration: 'Configuring ADME behavior: managing data partitions, setting CORS,
     enabling/using audit logs, and controlling milestone upgrade settings.'
-  security: 'Security and access control in ADME: auth tokens, ACLs, encryption, legal
-    tags, user/group entitlements, API protection, private endpoints, managed identities,
-    and support access control.'
+  security: 'Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group
+    entitlements, API protection, private endpoints, managed identities, and support
+    access control.'
   deployment: Guides for deploying Azure Energy Data Services components, including
     Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager
     for Energy administration
@@ -23,13 +23,14 @@ category_descriptions:
     error patterns.
 skill_description: Expert knowledge for Azure Energy Data Services development including
   troubleshooting, decision making, architecture & design patterns, security, configuration,
-  integrations & coding patterns, and deployment. Use when configuring ADME partitions/CORS,
-  managing ACLs/legal tags, deploying Geospatial CZ/Admin UI, or debugging manifest
-  ingestion, and other Azure Energy Data Services related development tasks. Not for
-  Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics),
-  Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
-use_when: Use when configuring ADME partitions/CORS, managing ACLs/legal tags, deploying
-  Geospatial CZ/Admin UI, or debugging manifest ingestion, and other Azure Energy
+  integrations & coding patterns, and deployment. Use when configuring ADME tiers,
+  partitions & CORS, securing with ACLs/legal tags, deploying Geospatial CZ, or debugging
+  ingestion logs, and other Azure Energy Data Services related development tasks.
+  Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use
+  azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks
+  (use azure-databricks).
+use_when: Use when configuring ADME tiers, partitions & CORS, securing with ACLs/legal
+  tags, deploying Geospatial CZ, or debugging ingestion logs, and other Azure Energy
   Data Services related development tasks.
 confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse
   Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory),
@@ -46,10 +47,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 - **Unclassified**: 18
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 1
-- **Unchanged**: 50
-- **Deleted Pages**: 1
+- **Unchanged**: 51
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-energy-data-services/azure-energy-data-services.csv`
 
 ## Classification Statistics
@@ -67,18 +68,10 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 
 ## Changes
 
-### New Pages
-
-- [How to manage upgrade settings](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-upgrade-settings)
-
 ### Updated Pages
 
-- [Syncing Reference data values](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-reference-data-values)
-  - Updated: 2026-01-11T12:09:00.000Z → 2026-03-23T17:14:00.000Z
-
-### Deleted Pages
-
-- ~~How to enable Reservoir DDMS~~ (https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-reservoir-ddms)
+- [Set up Customer managed encryption keys (CMEK)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption)
+  - Updated: 2025-03-07T05:34:00.000Z → 2026-04-07T06:20:00.000Z
 
 ## Classified Pages
 
@@ -100,7 +93,7 @@ confusable_not_for: Not for Azure Data Explorer (use azure-data-explorer), Azure
 | [Manage ACLs](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-acls) | security | 0.70 | How-to for managing ACLs on data records; involves product-specific ACL fields and allowed values. |
 | [Manage legal tags](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-legal-tags) | security | 0.70 | Legal tags govern data ingestion and access; article likely lists required properties and configuration patterns unique to this service. |
 | [Manage users](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-users) | security | 0.70 | Describes managing users and memberships in OSDU groups via Entitlements APIs; likely includes specific group names, API calls, and permission scopes. |
-| [Set up Customer managed encryption keys (CMEK)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption) | security | 0.70 | Covers encryption at rest/in transit and customer-managed keys; likely includes key vault configuration and encryption settings specific to ADME. |
+| [Set up Customer managed encryption keys (CMEK)](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption) | security | 0.70 | Page focuses on concrete security configuration for Azure Data Manager for Energy, including how to set up customer-managed keys and specific encryption options (encryption at rest, in transit, TLS/HTTPS, Microsoft-managed vs customer-managed keys). This is product-specific security guidance rather than a generic overview. |
 | [Set up Lockbox](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-create-lockbox) | security | 0.70 | Explains how Lockbox requests are initiated and tracked for ADME; includes product-specific access control flows and settings. |
 | [Set up Managed Identity](https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-use-managed-identity) | security | 0.70 | How-to for using managed identities to access Azure Data Manager for Energy data/control planes from other Azure services. Likely includes product-specific scopes, endpoint URLs, and role/permission details that are configuration-level security knowledge, not just conceptual identity overview. |
 | [Tier details](https://learn.microsoft.com/en-us/azure/energy-data-services/concepts-tier-details) | decision-making | 0.70 | Tier concepts for Developer vs Standard SKU; typically includes comparison of capabilities and constraints to guide tier selection. |

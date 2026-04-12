@@ -1,9 +1,9 @@
 ---
 name: azure-api-management
-description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing APIM policies, self-hosted gateways, VNet/App Gateway/Front Door setups, quotas, or OAuth/JWT auth, and other Azure API Management related development tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure Front Door (use azure-front-door), Azure Api Center (use azure-api-center), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure API Management development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing APIM policies, VNet/self-hosted gateways, Entra/OAuth auth, multi-region setups, or AI/LLM backends, and other Azure API Management related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Application Gateway (use azure-application-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure API Management Skill
@@ -28,11 +28,11 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L47-L56 | Best practices for caching, throttling/quotas, self-hosted gateway on Kubernetes, server-sent events, and securing APIs against OWASP API Top 10 in Azure API Management |
 | Decision Making | L57-L77 | Guidance for choosing APIM tiers/networking, scaling and cost planning, DevOps/CI/CD, migrations (ARM, portals, workspaces, Amazon API Gateway), and monetization/analytics transitions. |
 | Architecture & Design Patterns | L78-L84 | Patterns for placing API Management behind App Gateway/WAF, Azure Front Door, or AKS, including routing, security, and high‑availability reference architectures. |
-| Limits & Quotas | L85-L105 | Rate, quota, and validation limits in API Management: throttling, per-key quotas, OpenAI/LLM token control, protocol format limits, WebSocket/self-hosted gateway caps, and request/response validation. |
-| Security | L106-L145 | Securing API Management and its portals: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, certs, RBAC, managed identity), secure gateways, DDoS/Defender, and compliance policies. |
-| Configuration | L146-L245 | Configuring Azure API Management behavior: policies, caching, networking/VNet, logging/metrics, credentials, subscriptions/users, self-hosted gateways, and developer portal integration. |
-| Integrations & Coding Patterns | L246-L277 | Patterns and samples for integrating API Management with AI/LLM backends, OAuth/Graph, logging/monitoring, events, Service Bus, Service Fabric, MCP, and importing/exporting APIs. |
-| Deployment | L278-L297 | Deploying and scaling API Management: multi-region, VNet and zone setups, self-hosted gateways (AKS/K8s/Docker/Arc), backup/restore, migration, and automation of operations/portal. |
+| Limits & Quotas | L85-L103 | Rate, quota, and validation limits in API Management: throttling, per-key quotas, OpenAI/LLM token control, protocol format limits, WebSocket/self-hosted gateway caps, and request/response validation. |
+| Security | L104-L141 | Securing API Management and its portals: authN/Z (Entra ID, B2C, OAuth2, JWT, mTLS, certs, RBAC, managed identity), secure gateways, DDoS/Defender, and compliance policies. |
+| Configuration | L142-L244 | Configuring Azure API Management behavior: policies (caching, routing, headers, LLM), networking/VNet, monitoring & metrics, domains/certs, identity/credentials, workspaces, and deployment templates. |
+| Integrations & Coding Patterns | L245-L276 | Patterns and samples for integrating API Management with AI/LLM backends, OAuth/Graph, logging/monitoring, events, Service Bus, Service Fabric, MCP, and importing/exporting APIs. |
+| Deployment | L277-L297 | Deploying and scaling API Management: multi-region, VNet and zone setups, self-hosted gateways (AKS/K8s/Docker/Arc), backup/restore, migration, automation, and certificate planning. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -86,10 +86,8 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | API format support restrictions for OpenAPI, WSDL, and WADL | https://learn.microsoft.com/en-us/azure/api-management/api-management-api-import-restrictions |
-| Enforce Azure OpenAI token rate and quota limits in API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-token-limit-policy |
 | Import SOAP APIs and handle WSDL restrictions in API Management | https://learn.microsoft.com/en-us/azure/api-management/import-soap-api |
 | Limit concurrent request execution in API Management | https://learn.microsoft.com/en-us/azure/api-management/limit-concurrency-policy |
-| Limit LLM token usage with API Management policies | https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy |
 | Configure quota-by-key policy for per-key limits | https://learn.microsoft.com/en-us/azure/api-management/quota-by-key-policy |
 | Configure quota policy for call and bandwidth limits | https://learn.microsoft.com/en-us/azure/api-management/quota-policy |
 | Configure per-key rate limiting in API Management | https://learn.microsoft.com/en-us/azure/api-management/rate-limit-by-key-policy |
@@ -123,8 +121,6 @@ This skill requires **network access** to fetch documentation content:
 | Use authentication-certificate policy for client certificate auth in API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-certificate-policy |
 | Configure authentication-managed-identity policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/authentication-managed-identity-policy |
 | Migrate API Management identity providers from ADAL to MSAL | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/identity-provider-adal-retirement-sep-2025 |
-| Plan for suspension of API Management managed certificates for custom domains | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
-| Configure custom domains and certificates for API Management endpoints | https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain |
 | Set up basic username/password auth for API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-basic-authentication |
 | Configure CORS for API Management developer portal test console | https://learn.microsoft.com/en-us/azure/api-management/enable-cors-developer-portal |
 | Retrieve authorization context with get-authorization-context policy | https://learn.microsoft.com/en-us/azure/api-management/get-authorization-context-policy |
@@ -161,6 +157,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable and configure semantic caching for LLM APIs in API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-enable-semantic-caching |
 | Use semantic cache lookup for Azure OpenAI in API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-semantic-cache-lookup-policy |
 | Store Azure OpenAI responses in semantic cache via API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-semantic-cache-store-policy |
+| Configure azure-openai-token-limit policy in API Management | https://learn.microsoft.com/en-us/azure/api-management/azure-openai-token-limit-policy |
 | Update network settings for API Management CAPTCHA endpoint change | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/captcha-endpoint-change-sep-2025 |
 | Migrate from retired API Management legacy metrics to Requests metric | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/metrics-retirement-aug-2023 |
 | Update VNet settings for API Management RP source IP change (Mar 2023) | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/rp-source-ip-address-change-mar-2023 |
@@ -174,6 +171,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure check-header policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/check-header-policy |
 | Configure choose policy for conditional logic in APIM | https://learn.microsoft.com/en-us/azure/api-management/choose-policy |
 | Configure multiple credential connections in API Management | https://learn.microsoft.com/en-us/azure/api-management/configure-credential-connection |
+| Configure custom domains and certificates for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/configure-custom-domain |
 | Configure API Management automatic service update settings | https://learn.microsoft.com/en-us/azure/api-management/configure-service-update-settings |
 | Configure CORS behavior with cors policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/cors-policy |
 | Configure cosmosdb-data-source policy for GraphQL resolvers | https://learn.microsoft.com/en-us/azure/api-management/cosmosdb-data-source-policy |
@@ -203,6 +201,7 @@ This skill requires **network access** to fetch documentation content:
 | Emit LLM token consumption metrics from API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy |
 | Configure semantic cache lookup for LLM APIs in API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-lookup-policy |
 | Store LLM responses in semantic cache via API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-semantic-cache-store-policy |
+| Configure llm-token-limit policy in Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy |
 | Configure mock-response policy to simulate APIs | https://learn.microsoft.com/en-us/azure/api-management/mock-response-policy |
 | Configure monitoring and alerts for Azure API Management | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management |
 | Monitoring data reference for Azure API Management with Azure Monitor | https://learn.microsoft.com/en-us/azure/api-management/monitor-api-management-reference |
@@ -288,6 +287,7 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure API Management to an external virtual network | https://learn.microsoft.com/en-us/azure/api-management/api-management-using-with-vnet |
 | Automate deployment of API Management developer portal content | https://learn.microsoft.com/en-us/azure/api-management/automate-portal-deployments |
 | Automate Azure API Management operations with Azure Automation | https://learn.microsoft.com/en-us/azure/api-management/automation-manage-api-management |
+| Plan for API Management managed certificate suspension 2025–2026 | https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/managed-certificates-suspension-august-2025 |
 | Self-host the Azure API Management developer portal | https://learn.microsoft.com/en-us/azure/api-management/developer-portal-self-host |
 | Enable availability zone support for API Management | https://learn.microsoft.com/en-us/azure/api-management/enable-availability-zone-support |
 | Deploy API Management gateway as Azure Arc extension | https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc |

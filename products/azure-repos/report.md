@@ -48,8 +48,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 195
+- **Updated Pages**: 0
+- **Unchanged**: 206
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-repos/azure-repos.csv`
 
@@ -68,31 +68,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | *(Unclassified)* | 74 | 35.9% |
 
 ## Changes
-
-### Updated Pages
-
-- [Commit history](https://learn.microsoft.com/en-us/azure/devops/repos/git/commit-history?view=azure-devops)
-  - Updated: 2025-07-15T16:57:00.000Z → 2026-03-24T21:04:00.000Z
-- [History in Git](https://learn.microsoft.com/en-us/azure/devops/repos/git/history?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-24T21:04:00.000Z
-- [Repository settings and policies](https://learn.microsoft.com/en-us/azure/devops/repos/git/repository-settings?view=azure-devops)
-  - Updated: 2025-12-17T18:06:00.000Z → 2026-03-26T08:00:00.000Z
-- [Set repository permissions (Security)](https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops)
-  - Updated: 2025-09-04T16:00:00.000Z → 2026-03-26T01:05:00.000Z
-- [Create a readme](https://learn.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-26T01:05:00.000Z
-- [Delete a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/delete-existing-repo?view=azure-devops)
-  - Updated: 2026-03-04T22:04:00.000Z → 2026-03-26T01:05:00.000Z
-- [Rename a repo](https://learn.microsoft.com/en-us/azure/devops/repos/git/repo-rename?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-26T01:05:00.000Z
-- [Find a file](https://learn.microsoft.com/en-us/azure/devops/repos/git/find-a-file?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-26T01:05:00.000Z
-- [Move a repo to another project](https://learn.microsoft.com/en-us/azure/devops/repos/git/move-git-repos-between-team-projects?view=azure-devops)
-  - Updated: 2025-10-27T22:02:00.000Z → 2026-03-26T01:05:00.000Z
-- [Remove large binaries from Git](https://learn.microsoft.com/en-us/azure/devops/repos/git/remove-binaries?view=azure-devops)
-  - Updated: 2025-10-30T14:05:00.000Z → 2026-03-26T01:05:00.000Z
-- [Configure GitHub Advanced Security](https://learn.microsoft.com/en-us/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops)
-  - Updated: 2026-01-05T22:06:00.000Z → 2026-03-25T21:04:00.000Z
 
 ## Classified Pages
 

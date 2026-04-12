@@ -1,8 +1,8 @@
 ---
-generated_at: '2026-03-17'
+generated_at: '2026-04-12'
 category_descriptions:
-  limits-quotas: ACI limits on CPU/memory (big containers), regional quota checks,
-    standby pool constraints, and networking limits when using virtual networks
+  limits-quotas: ACI limits on CPU/memory, regional quotas, standby pool constraints,
+    and how virtual network integration affects capacity and resource availability.
   architecture-patterns: Design patterns for giving ACI containers static inbound/outbound
     IPs using Application Gateway, firewalls, and NAT Gateway for controlled, predictable
     network egress/ingress.
@@ -30,13 +30,13 @@ skill_description: Expert knowledge for Azure Container Instances development in
   networking, standby pools, GitHub Actions deploys, Spot containers, or GPU workloads,
   and other Azure Container Instances related development tasks. Not for Azure Container
   Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
-  Azure App Service (use azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+  Azure Virtual Machines (use azure-virtual-machines), Azure App Service (use azure-app-service).
 use_when: Use when configuring ACI networking, standby pools, GitHub Actions deploys,
   Spot containers, or GPU workloads, and other Azure Container Instances related development
   tasks.
 confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azure
-  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure App Service (use
-  azure-app-service), Azure Virtual Machines (use azure-virtual-machines).
+  Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
+  (use azure-virtual-machines), Azure App Service (use azure-app-service).
 ---
 # Azure Container Instances Crawl Report
 
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 83
+- **Updated Pages**: 1
+- **Unchanged**: 82
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-instances/azure-container-instances.csv`
 
@@ -70,6 +70,11 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 29 | 34.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts)
+  - Updated: 2026-03-11T22:06:00.000Z → 2026-04-09T08:00:00.000Z
 
 ## Classified Pages
 
@@ -106,7 +111,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Set environment variables (env)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-environment-variables) | configuration | 0.70 | Shows concrete CLI/PowerShell/portal parameters and YAML schema fields for setting environment variables in ACI, including property names and usage patterns that are product-specific. |
 | [Use config maps](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-config-map) | configuration | 0.70 | Describes ACI-specific config map properties and update behavior, with concrete configuration fields and patterns distinct from generic environment variable usage. |
 | [View an instance's state](https://learn.microsoft.com/en-us/azure/container-instances/container-state) | troubleshooting | 0.70 | The article catalogs all possible provisioning, container, and container group state values for Azure Container Instances, explains what each state indicates, and where they appear in the platform. These state names and their precise meanings are product-specific operational details that LLMs are unlikely to fully know from training. While not organized strictly as symptom→cause→fix, this state mapping is core troubleshooting knowledge for diagnosing why a container is stuck or failing. |
-| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.68 | Page describes specific, product-enforced limitations for Azure Container Instances in virtual networks, including the requirement that NAT gateway is the only supported configuration for outbound connectivity from container groups in a VNet. This is concrete, product-specific behavior and a hard constraint that affects architecture and configuration, fitting best under limits-quotas. |
 | [About Azure Container Instances Spot containers](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-spot-containers-overview) | decision-making | 0.65 | Spot containers overview with quantified discount (up to 70%) and trade-offs for interruptible workloads; helps decide when to choose Spot vs regular ACI. |
 | [Create a standby pool](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-create) | configuration | 0.65 | Provides concrete configuration steps and parameters to define container group profiles and standby pools in ACI. |
 | [Deploy in a virtual network](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-vnet) | configuration | 0.65 | How-to article for deploying into vNets; likely includes specific CLI parameters, subnet requirements, and NAT gateway configuration details unique to ACI. |
@@ -122,6 +126,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Use GPU resources (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-gpu) | configuration | 0.65 | Provides ACI-specific YAML/CLI configuration for GPU resources (SKU names, counts) which are concrete service-specific settings. |
 | [Utilize predictive pooling (preview)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-prediction-results) | decision-making | 0.65 | Shows how to interpret prediction metrics from runtime view APIs to adjust pool size, providing quantitative guidance for capacity decisions. |
 | [Viewing logs in Azure portal](https://learn.microsoft.com/en-us/azure/container-instances/viewing-logs-in-portal) | configuration | 0.65 | Shows portal-based configuration and workspace linkage for ACI logs, including which blades and options to use for Log Analytics integration. |
+| [Virtual networking](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-network-concepts) | limits-quotas | 0.65 | The page describes specific, product-enforced limitations when deploying Azure Container Instances into a virtual network, including the requirement that a NAT gateway is the only supported configuration for outbound connectivity and references to other constraints. These are concrete platform limits/behaviors that are not generic networking knowledge and qualify as expert knowledge about ACI VNet scenarios and limitations. |
 | [Configure monitoring and alerts](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pools-monitor-pool-events) | configuration | 0.60 | Provides concrete configuration steps and query patterns to send and analyze standby pool events in Azure Monitor Logs. |
 | [Get pool and container details](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-standby-pool-get-details) | configuration | 0.60 | Explains how to query standby pool metadata and container group information via ACI APIs/commands, which is product-specific. |
 | [Monitor CPU and memory usage](https://learn.microsoft.com/en-us/azure/container-instances/monitor-azure-container-instances) | configuration | 0.60 | Same as index 31: service-specific guidance on enabling and using Azure Monitor metrics and logs for ACI. |

@@ -52,8 +52,8 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 114
+- **Updated Pages**: 0
+- **Unchanged**: 122
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -73,25 +73,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | *(Unclassified)* | 33 | 27.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Zone-redundant registries](https://learn.microsoft.com/en-us/azure/container-registry/zone-redundancy)
-  - Updated: 2026-03-18T17:34:00.000Z → 2026-03-26T06:03:00.000Z
-- [Container registry tiers and limits](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)
-  - Updated: 2026-02-11T06:07:00.000Z → 2026-03-25T08:00:00.000Z
-- [Registries, repositories, and images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-concepts)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-25T06:03:00.000Z
-- [Image storage](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-storage)
-  - Updated: 2024-09-19T17:07:00.000Z → 2026-03-26T06:03:00.000Z
-- [Geo-replication](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-geo-replication)
-  - Updated: 2026-02-27T23:07:00.000Z → 2026-03-20T22:12:00.000Z
-- [Soft delete policy](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy)
-  - Updated: 2025-12-10T23:11:00.000Z → 2026-03-25T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-built-in-roles-overview)
-  - Updated: 2025-05-04T05:21:00.000Z → 2026-03-25T08:00:00.000Z
-- [Azure ABAC repository permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions)
-  - Updated: 2025-12-11T23:13:00.000Z → 2026-03-19T22:17:00.000Z
 
 ## Classified Pages
 

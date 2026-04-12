@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
     from classic to current AVD, changing regions, using regional host pools, and
@@ -44,16 +44,16 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ## Summary
 
-- **Total Pages**: 148
-- **Fetched**: 148
+- **Total Pages**: 149
+- **Fetched**: 149
 - **Fetch Failed**: 0
 - **Classified**: 120
-- **Unclassified**: 28
+- **Unclassified**: 29
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 145
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 148
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -63,25 +63,20 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 |------|-------|------------|
 | architecture-patterns | 5 | 3.4% |
 | best-practices | 8 | 5.4% |
-| configuration | 56 | 37.8% |
+| configuration | 56 | 37.6% |
 | decision-making | 12 | 8.1% |
-| deployment | 6 | 4.1% |
+| deployment | 6 | 4.0% |
 | integrations | 4 | 2.7% |
-| limits-quotas | 2 | 1.4% |
+| limits-quotas | 2 | 1.3% |
 | security | 15 | 10.1% |
 | troubleshooting | 12 | 8.1% |
-| *(Unclassified)* | 28 | 18.9% |
+| *(Unclassified)* | 29 | 19.5% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-03-23T08:00:00.000Z
-- [SxS Network Stack](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new-sxs)
-  - Updated: 2026-03-16T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Identities and authentication](https://learn.microsoft.com/en-us/azure/virtual-desktop/authentication)
-  - Updated: 2026-02-12T18:44:00.000Z → 2026-04-02T20:39:00.000Z
+- [Deploy the MMR Preview Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension)
 
 ## Classified Pages
 
@@ -217,6 +212,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Configure personal desktop assignment](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) | 0.40 | Primarily conceptual and procedural assignment guidance for personal desktops; summary doesn’t indicate detailed config tables, numeric thresholds, or product-specific edge cases. |
 | [Connect to Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/connect-azure-virtual-desktop) | 0.40 | Connection overview for clients; mostly conceptual and basic usage without detailed config tables or product-specific limits. |
 | [Delete a host pool](https://learn.microsoft.com/en-us/azure/virtual-desktop/delete-host-pool) | 0.40 | Procedural deletion steps; summary doesn’t show detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Deploy the MMR Preview Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension) | 0.40 | The page is a step-by-step deployment/configuration tutorial for switching to the preview MMR extension via Intune. It does not expose structured configuration parameter tables, limits, quotas, error-code-based troubleshooting, or product-specific decision matrices. It mainly describes a process workflow rather than expert reference data that an LLM would lack. |
 | [Graphics encoding overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-encoding) | 0.40 | Described as explaining how graphics data is encoded and transmitted; likely conceptual without concrete configuration parameters or limits. |
 | [Prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites) | 0.40 | Prerequisites overview; likely lists requirements but summary does not indicate detailed config tables or numeric constraints. |
 | [Tag resources](https://learn.microsoft.com/en-us/azure/virtual-desktop/tag-virtual-desktop-resources) | 0.40 | Tagging usage is generic across Azure; summary suggests high-level cost organization without AVD-specific configuration parameters. |

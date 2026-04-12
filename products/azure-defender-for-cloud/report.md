@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 - **Unclassified**: 217
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 18
-- **Unchanged**: 454
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 473
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-defender-for-cloud/azure-defender-for-cloud.csv`
 
@@ -76,49 +76,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 | *(Unclassified)* | 217 | 45.9% |
 
 ## Changes
-
-### New Pages
-
-- [Discover AI models](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-model-security)
-
-### Updated Pages
-
-- [Enable API security posture with Defender CSPM](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-api-security-posture)
-  - Updated: 2026-01-04T12:05:00.000Z → 2026-03-31T11:04:00.000Z
-- [Support and prerequisites](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-apis-prepare)
-  - Updated: 2025-07-15T08:00:00.000Z → 2026-03-31T17:20:00.000Z
-- [Enable threat protection for AI services](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-onboarding)
-  - Updated: 2026-03-15T17:06:00.000Z → 2026-03-30T17:14:00.000Z
-- [What's new in Defender for Cloud features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes)
-  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-01T08:00:00.000Z
-- [What's new in recommendations, alerts, and incidents](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes-recommendations-alerts)
-  - Updated: 2026-03-04T18:19:00.000Z → 2026-03-29T08:00:00.000Z
-- [Azure portal vs Defender portal feature comparison](https://learn.microsoft.com/en-us/azure/defender-for-cloud/azure-portal-vs-defender-portal-comparison)
-  - Updated: 2025-11-25T14:31:00.000Z → 2026-03-30T11:04:00.000Z
-- [Defender for Cloud support matrices](https://learn.microsoft.com/en-us/azure/defender-for-cloud/support-matrix-defender-for-cloud)
-  - Updated: 2026-01-27T08:00:00.000Z → 2026-03-30T17:14:00.000Z
-- [Syntax](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-cli-syntax)
-  - Updated: 2026-02-18T23:08:00.000Z → 2026-03-30T17:14:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-overview)
-  - Updated: 2025-11-11T12:03:00.000Z → 2026-03-22T11:08:00.000Z
-- [Enable file integrity monitoring](https://learn.microsoft.com/en-us/azure/defender-for-cloud/file-integrity-monitoring-enable-defender-endpoint)
-  - Updated: 2025-06-25T17:25:00.000Z → 2026-03-22T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction)
-  - Updated: 2026-02-22T23:14:00.000Z → 2026-03-30T11:04:00.000Z
-- [Azure App Service recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-app-services)
-  - Updated: 2026-03-16T05:04:00.000Z → 2026-03-30T11:04:00.000Z
-- [Compute recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-compute)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Container recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-container)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-29T08:00:00.000Z
-- [Data recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-data)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-30T11:04:00.000Z
-- [Identity and access recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-identity-access)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-29T08:00:00.000Z
-- [Networking recommendations](https://learn.microsoft.com/en-us/azure/defender-for-cloud/recommendations-reference-networking)
-  - Updated: 2025-05-18T08:00:00.000Z → 2026-03-30T11:04:00.000Z
-- [Alerts for AI services](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-ai-workloads)
-  - Updated: 2026-02-22T08:00:00.000Z → 2026-03-25T08:00:00.000Z
 
 ## Classified Pages
 

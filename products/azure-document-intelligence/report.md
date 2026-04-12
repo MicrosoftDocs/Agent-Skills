@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-16'
+generated_at: '2026-04-12'
 category_descriptions:
   security: 'Securing Document Intelligence: creating SAS tokens, configuring data-at-rest
     encryption, and using managed identities and VNets to lock down access to resources.'
@@ -15,8 +15,9 @@ category_descriptions:
   decision-making: Choosing the right Document Intelligence model, understanding version
     changes, and migrating or updating apps to API v3.1 based on changelog and migration
     guidance
-  troubleshooting: Diagnosing and fixing Document Intelligence latency problems, plus
-    interpreting service error codes, causes, and recommended resolutions.
+  troubleshooting: 'Diagnosing and fixing Document Intelligence issues: latency/performance
+    problems, service error codes and meanings, and known Foundry-specific bugs and
+    workarounds.'
   configuration: Configuring Document Intelligence containers and building, training,
     and composing custom models for tailored document processing workflows.
   deployment: Deploying Document Intelligence via Docker/containers, including image
@@ -27,30 +28,30 @@ category_descriptions:
 skill_description: Expert knowledge for Azure AI Document Intelligence development
   including troubleshooting, best practices, decision making, architecture & design
   patterns, limits & quotas, security, configuration, integrations & coding patterns,
-  and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker,
-  SAS/managed identity, or VNets, and other Azure AI Document Intelligence related
-  development tasks. Not for Azure AI services (use microsoft-foundry-tools), Azure
-  AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service),
-  Azure AI Immersive Reader (use azure-immersive-reader).
-use_when: Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker,
-  SAS/managed identity, or VNets, and other Azure AI Document Intelligence related
+  and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers,
+  SAS/managed identity auth, or VNets, and other Azure AI Document Intelligence related
+  development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI
+  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+  Azure AI Speech (use azure-speech).
+use_when: Use when using AnalyzeDocument/Markdown APIs, custom models, containers,
+  SAS/managed identity auth, or VNets, and other Azure AI Document Intelligence related
   development tasks.
-confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azure
-  AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service),
-  Azure AI Immersive Reader (use azure-immersive-reader).
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure AI
+  Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision),
+  Azure AI Speech (use azure-speech).
 ---
 # Azure AI Document Intelligence Crawl Report
 
 ## Summary
 
-- **Total Pages**: 76
-- **Fetched**: 76
+- **Total Pages**: 77
+- **Fetched**: 77
 - **Fetch Failed**: 0
-- **Classified**: 35
+- **Classified**: 36
 - **Unclassified**: 41
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 76
 - **Deleted Pages**: 0
@@ -61,17 +62,21 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.3% |
-| best-practices | 7 | 9.2% |
+| best-practices | 7 | 9.1% |
 | configuration | 2 | 2.6% |
 | decision-making | 3 | 3.9% |
-| deployment | 4 | 5.3% |
-| integrations | 6 | 7.9% |
-| limits-quotas | 6 | 7.9% |
-| security | 4 | 5.3% |
-| troubleshooting | 2 | 2.6% |
-| *(Unclassified)* | 41 | 53.9% |
+| deployment | 4 | 5.2% |
+| integrations | 6 | 7.8% |
+| limits-quotas | 6 | 7.8% |
+| security | 4 | 5.2% |
+| troubleshooting | 3 | 3.9% |
+| *(Unclassified)* | 41 | 53.2% |
 
 ## Changes
+
+### New Pages
+
+- [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/known-issues?view=doc-intel-4.0.0)
 
 ## Classified Pages
 
@@ -90,6 +95,7 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0) | security | 0.80 | Shows how to create user delegation and SAS tokens with specific parameters and scopes for storage containers/blobs—security configuration details and parameterization. |
 | [Install and run containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/install-run?view=doc-intel-4.0.0) | deployment | 0.80 | Container deployment guide with product-specific requirements (images, ports, environment variables, resource constraints) for on-premises use. |
 | [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/encrypt-data-at-rest?view=doc-intel-4.0.0) | security | 0.80 | Covers Microsoft-managed vs customer-managed keys and how to enable/manage CMK for this service—product-specific encryption configuration and compliance details. |
+| [Known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/known-issues?view=doc-intel-4.0.0) | troubleshooting | 0.78 | The page is a 'known issues' reference that maps specific product behaviors and issues to their impact and mitigation steps. This is symptom → cause/impact → remediation guidance that is unique to Azure Document Intelligence in Foundry Tools, fitting the troubleshooting category. It goes beyond generic debugging and documents product-specific conditions that change over time. |
 | [Disconnected containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/containers/disconnected?view=doc-intel-4.0.0) | deployment | 0.75 | Explains how to operate containers without internet, including licensing, update, and connectivity constraints—product-specific deployment pattern. |
 | [Use Document Intelligence models](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/use-sdk-rest-api?view=doc-intel-4.0.0) | integrations | 0.75 | How-to for using SDKs/REST to add models to apps; likely includes request/response schemas, parameters, and version-specific endpoints—product-specific integration patterns. |
 | [Build a custom classification model](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-classifier?view=doc-intel-4.0.0) | best-practices | 0.70 | Describes classifier behavior and minimum training data (for example, five documents per class) plus model capabilities—product-specific training recommendations. |

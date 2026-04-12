@@ -1,9 +1,9 @@
 ---
 name: azure-energy-data-services
-description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME partitions/CORS, managing ACLs/legal tags, deploying Geospatial CZ/Admin UI, or debugging manifest ingestion, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
+description: Expert knowledge for Azure Energy Data Services development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when configuring ADME tiers, partitions & CORS, securing with ACLs/legal tags, deploying Geospatial CZ, or debugging ingestion logs, and other Azure Energy Data Services related development tasks. Not for Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Factory (use azure-data-factory), Azure Databricks (use azure-databricks).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Energy Data Services Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Troubleshooting | L35-L39 | Diagnosing and fixing manifest ingestion failures in Azure Data Manager for Energy using Airflow logs, including log analysis steps and common error patterns. |
 | Decision Making | L40-L45 | Guidance on choosing ADME deployment tiers (Developer vs Standard) and checking which OSDU data/compute services and capabilities are available in each tier. |
 | Architecture & Design Patterns | L46-L50 | Guidance on architecting resilient ADME deployments in Azure Energy Data Services, including zone redundancy, disaster recovery strategies, and high-availability design patterns. |
-| Security | L51-L64 | Security and access control in ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
+| Security | L51-L64 | Securing ADME: auth tokens, ACLs, encryption, legal tags, user/group entitlements, API protection, private endpoints, managed identities, and support access control. |
 | Configuration | L65-L72 | Configuring ADME behavior: managing data partitions, setting CORS, enabling/using audit logs, and controlling milestone upgrade settings. |
 | Integrations & Coding Patterns | L73-L90 | Patterns and APIs for integrating ADME/OSDU with external data sources, DDMS domain services, large file upload, and exporting logs/metrics to Azure Monitor and other tools |
 | Deployment | L91-L95 | Guides for deploying Azure Energy Data Services components, including Geospatial Consumption Zone on AKS and the OSDU Admin UI for Azure Data Manager for Energy administration |
@@ -55,7 +55,7 @@ This skill requires **network access** to fetch documentation content:
 | Enable legal tags for restricted country-of-origin data | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-enable-legal-tags-restricted-country-of-origin |
 | Generate auth and refresh tokens for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-generate-auth-token |
 | Configure and update ACLs on ADME data records | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-acls |
-| Configure data security and encryption for ADME | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption |
+| Configure data security and encryption for Azure Data Manager for Energy | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-data-security-and-encryption |
 | Create and manage legal tags for ADME data | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-legal-tags |
 | Manage users and OSDU group entitlements in ADME | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-manage-users |
 | Secure Azure Data Manager for Energy APIs with API Management | https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-secure-apis |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   deployment: 'Guides for deploying and configuring Blob Storage: static website hosting
     (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 - **Total Pages**: 407
 - **Fetched**: 407
 - **Fetch Failed**: 0
-- **Classified**: 335
-- **Unclassified**: 72
+- **Classified**: 334
+- **Unclassified**: 73
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 405
+- **Updated Pages**: 1
+- **Unchanged**: 406
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -62,22 +62,20 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 |------|-------|------------|
 | best-practices | 30 | 7.4% |
 | configuration | 63 | 15.5% |
-| decision-making | 23 | 5.7% |
+| decision-making | 22 | 5.4% |
 | deployment | 11 | 2.7% |
 | integrations | 132 | 32.4% |
 | limits-quotas | 16 | 3.9% |
 | security | 54 | 13.3% |
 | troubleshooting | 6 | 1.5% |
-| *(Unclassified)* | 72 | 17.7% |
+| *(Unclassified)* | 73 | 17.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Get Started on Storage Discovery reports](https://learn.microsoft.com/en-us/azure/storage-discovery/get-started-reports)
-  - Updated: 2025-09-25T05:11:00.000Z → 2026-04-01T22:41:00.000Z
-- [Change feed](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed)
-  - Updated: 2023-11-09T08:00:00.000Z → 2026-03-24T17:13:00.000Z
+- [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-07T22:12:00.000Z
 
 ## Classified Pages
 
@@ -391,7 +389,6 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Route events to a custom endpoint](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-quickstart) | integrations | 0.65 | Provides concrete CLI commands and parameters to subscribe to Blob events and route them to a webhook endpoint. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-dotnet) | integrations | 0.65 | Includes .NET methods and parameters to set access tiers on blobs, which are concrete integration details with the storage service. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-java) | integrations | 0.65 | Includes Java methods and parameters to configure blob access tiers; concrete integration details. |
-| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | decision-making | 0.65 | Describes smart tier behavior and when it’s ideal vs manual tiering, with product-specific rules about automatic movement between hot/cool/cold that drive cost decisions. |
 | [Static websites](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website) | limits-quotas | 0.65 | Static website overview often includes specific limitations (for example, supported status codes, index/error document behavior, feature gaps) that are concrete product constraints. |
 | [Upload blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload-java) | integrations | 0.65 | Shows Java methods and overloads for uploading blobs from various sources and with index tags; SDK-specific usage. |
 | [Use queries to retrieve data](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-query-acceleration-how-to) | integrations | 0.65 | How-to for using query acceleration likely includes request parameters, supported formats, and API options—product-specific integration/configuration details. |
@@ -484,6 +481,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) | 0.20 | High-level overview of Blob Storage lifecycle management without detailed numeric limits, configuration tables, or product-specific decision matrices; primarily conceptual cost-optimization description. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support) | 0.20 | This is primarily an overview of SFTP support for Azure Blob Storage and why/when to use it. The summary indicates conceptual description and positioning, not detailed limits, configuration tables, or error mappings. Without clear evidence of numeric limits, config matrices, or troubleshooting content, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Page blob features](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview) | 0.20 | Overview of page blobs and use cases; largely conceptual with high-level sizes already broadly known. |
+| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | 0.20 | Preview feature overview for Blob Storage smart tier; provided snippet is conceptual/marketing and does not show concrete limits, configuration tables, error codes, or decision matrices with quantified criteria. |
 | [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer) | 0.20 | Quickstart for Azure Storage Explorer; focuses on basic operations, not detailed configuration or limits. |
 | [What is Azure Storage Actions?](https://learn.microsoft.com/en-us/azure/storage-actions/overview) | 0.20 | High-level service overview without product-specific limits, configs, or error diagnostics. |
 | [What is Azure Storage Discovery?](https://learn.microsoft.com/en-us/azure/storage-discovery/overview) | 0.20 | Service overview for Storage Discovery; high-level description without detailed limits, configs, or troubleshooting. |

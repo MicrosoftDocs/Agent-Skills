@@ -50,9 +50,9 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery).
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 9
-- **Unchanged**: 383
-- **Deleted Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 392
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-backup/azure-backup.csv`
 
 ## Classification Statistics
@@ -71,31 +71,6 @@ confusable_not_for: Not for Azure Site Recovery (use azure-site-recovery).
 | *(Unclassified)* | 162 | 41.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [FAQ-Azure VM backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vm-backup-faq)
-  - Updated: 2026-02-26T12:27:00Z → 2026-04-03T11:10:00Z
-- [Restore a VM with Azure CLI](https://learn.microsoft.com/en-us/azure/backup/tutorial-restore-disk)
-  - Updated: 2025-12-31T08:00:00.000Z → 2026-04-01T06:12:00.000Z
-- [Back up and restore Azure VMs with Azure Backup Instant Restore](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability)
-  - Updated: 2025-09-25T05:11:00.000Z → 2026-04-01T06:12:00.000Z
-- [Migrate backups from standard to enhanced policy](https://learn.microsoft.com/en-us/azure/backup/backup-azure-vm-migrate-enhanced-policy)
-  - Updated: 2025-06-24T08:00:00.000Z → 2026-04-01T06:12:00.000Z
-- [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-alerts)
-  - Updated: 2025-12-09T08:00:00.000Z → 2026-03-19T11:16:00.000Z
-- [Support matrix](https://learn.microsoft.com/en-us/azure/backup/sql-support-matrix)
-  - Updated: 2026-02-13T08:00:00.000Z → 2026-03-31T11:59:00.000Z
-- [FAQ-Back up SAP HANA databases on Azure VMs](https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm)
-  - Updated: 2026-02-26T12:27:00Z → 2026-04-02T18:15:00Z
-- [Manage](https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-manage-backups)
-  - Updated: 2026-03-17T11:12:00.000Z → 2026-03-20T08:00:00.000Z
-- [FAQ-Back up Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-server-faq)
-  - Updated: 2025-07-18T17:15:00Z → 2026-03-20T11:20:00Z
-
-### Deleted Pages
-
-- ~~Overview of enhanced soft delete~~ (https://learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-about)
 
 ## Classified Pages
 

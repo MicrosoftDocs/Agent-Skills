@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 - **Unclassified**: 24
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 50
-- **Unchanged**: 34
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 85
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
@@ -74,54 +74,6 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | *(Unclassified)* | 24 | 28.2% |
 
 ## Changes
-
-### New Pages
-
-- [Scale outbound SNAT ports with zone redundancy](https://learn.microsoft.com/en-us/azure/firewall/integrate-with-nat-gateway-v2)
-
-### Updated Pages
-
-- [Best practices for performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-best-practices)
-  - Updated: 2025-10-14T22:15:00.000Z → 2026-03-29T11:12:00.000Z
-- [What is Azure Firewall?](https://learn.microsoft.com/en-us/azure/firewall/overview)
-  - Updated: 2025-12-12T05:44:00.000Z → 2026-03-29T11:12:00.000Z
-- [Choose the right SKU](https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku)
-  - Updated: 2025-10-01T05:10:00.000Z → 2026-03-30T20:37:00.000Z
-- [Preview features](https://learn.microsoft.com/en-us/azure/firewall/firewall-preview)
-  - Updated: 2025-05-28T05:33:00.000Z → 2026-03-29T11:12:00.000Z
-- [Policy rule sets](https://learn.microsoft.com/en-us/azure/firewall/policy-rule-sets)
-  - Updated: 2025-03-19T22:09:00.000Z → 2026-03-29T11:12:00.000Z
-- [Policy Analytics](https://learn.microsoft.com/en-us/azure/firewall/policy-analytics)
-  - Updated: 2023-05-15T22:01:00.000Z → 2026-03-29T11:12:00.000Z
-- [Web categories](https://learn.microsoft.com/en-us/azure/firewall/web-categories)
-  - Updated: 2023-10-20T18:38:00.000Z → 2026-03-29T11:12:00.000Z
-- [Rule processing logic](https://learn.microsoft.com/en-us/azure/firewall/rule-processing)
-  - Updated: 2026-02-25T06:24:00.000Z → 2026-04-02T06:24:00.000Z
-- [Forced tunneling](https://learn.microsoft.com/en-us/azure/firewall/forced-tunneling)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-29T11:12:00.000Z
-- [Management NIC](https://learn.microsoft.com/en-us/azure/firewall/management-nic)
-  - Updated: 2024-12-05T18:06:00.000Z → 2026-03-29T11:12:00.000Z
-- [Certifications](https://learn.microsoft.com/en-us/azure/firewall/compliance-certifications)
-  - Updated: 2023-04-28T22:04:00.000Z → 2026-03-29T11:12:00.000Z
-- [FTP support](https://learn.microsoft.com/en-us/azure/firewall/ftp-support)
-  - Updated: 2023-08-02T21:51:00.000Z → 2026-03-30T22:11:00.000Z
-- [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance)
-  - Updated: 2024-12-26T23:02:00.000Z → 2026-03-29T11:12:00.000Z
-- [TCP idle timeout behavior](https://learn.microsoft.com/en-us/azure/firewall/tcp-session-behavior)
-  - Updated: 2025-10-23T22:10:00.000Z → 2026-03-29T11:12:00.000Z
-- [Explicit Proxy](https://learn.microsoft.com/en-us/azure/firewall/explicit-proxy)
-  - Updated: 2025-10-14T22:15:00.000Z → 2026-03-29T11:12:00.000Z
-- [Integrate with load balancer](https://learn.microsoft.com/en-us/azure/firewall/integrate-lb)
-  - Updated: 2025-03-04T23:03:00.000Z → 2026-03-28T08:00:00.000Z
-- [Deploy Basic firewall](https://learn.microsoft.com/en-us/azure/firewall/deploy-firewall-basic-portal-policy)
-  - Updated: 2023-03-15T00:00:00.000Z → 2026-03-30T22:11:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal-policy)
-  - Updated: 2026-01-13T23:18:00.000Z → 2026-03-31T06:10:00.000Z
-- [PowerShell](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps)
-  - Updated: 2024-02-20T08:00:00.000Z → 2026-03-30T22:11:00.000Z
-- [Portal](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy)
-  - Updated: 2025-02-10T08:00:00.000Z → 2026-03-30T22:11:00.000Z
-- *...and 30 more*
 
 ## Classified Pages
 

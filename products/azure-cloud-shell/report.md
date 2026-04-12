@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   troubleshooting: Diagnosing and fixing common Cloud Shell errors, storage and connectivity
     issues, plus deployment and network problems when running Cloud Shell in private
@@ -31,10 +31,10 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 - **Unclassified**: 15
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 3
-- **Unchanged**: 13
-- **Deleted Pages**: 3
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 19
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
 ## Classification Statistics
@@ -48,27 +48,10 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 
 ## Changes
 
-### New Pages
-
-- [Use the window (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-new)
-- [Use the Cloud Shell editor (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-new)
-- [Use the window (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-classic)
-- [Use the Cloud Shell editor (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-classic)
-
 ### Updated Pages
 
-- [What is Azure Cloud Shell?](https://learn.microsoft.com/en-us/azure/cloud-shell/overview)
-  - Updated: 2024-04-11T17:03:00.000Z → 2026-04-01T08:00:00.000Z
 - [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-02-05T23:11:00.000Z → 2026-04-01T17:25:00.000Z
-- [Predictive IntelliSense in Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/cloud-shell-predictive-intellisense)
-  - Updated: 2023-03-30T00:00:00.000Z → 2026-04-01T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Use the window (New UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/new-ui-shell-window)
-- ~~Use the Cloud Shell editor (Classic UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/using-cloud-shell-editor)
-- ~~Use the window (Classic UI)~~ (https://learn.microsoft.com/en-us/azure/cloud-shell/using-the-shell-window)
+  - Updated: 2026-04-01T17:25:00.000Z → 2026-04-10T22:10:00.000Z
 
 ## Classified Pages
 
@@ -94,7 +77,7 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 | [Get started (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/ephemeral) | 0.20 | Explains ephemeral sessions conceptually (no persistence after session ends) but no numeric limits, config tables, or error mappings are indicated. |
 | [Get started with existing storage account (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/existing-storage) | 0.20 | How-to for using existing storage; appears procedural without detailed configuration option tables or numeric constraints in the summary. |
 | [Get started with new storage account (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/new-storage) | 0.20 | Tutorial for starting Cloud Shell with persistent storage; summary does not show specific configuration parameters, limits, or troubleshooting content. |
-| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.20 | Release notes summary; no detailed limits, configuration tables, error codes, or decision matrices in the provided content. Mostly high-level description of changes and criteria. |
+| [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes) | 0.20 | Release notes list changes, features, and fixes over time but are not organized as limits, configuration references, troubleshooting guides, or decision matrices. They typically lack structured numeric limits, config tables, or error-code mappings required by the defined sub-skill types. |
 | [Use the Cloud Shell editor (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-classic) | 0.10 | Classic editor overview; only general feature description without specific numeric constraints, config parameters, or diagnostic guidance. |
 | [Use the Cloud Shell editor (New UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-cloud-shell-editor-new) | 0.10 | Describes the integrated editor and its features at a high level; lacks numeric limits, config tables, or product-specific troubleshooting details. |
 | [Use the window (Classic UI)](https://learn.microsoft.com/en-us/azure/cloud-shell/use-the-shell-window-classic) | 0.10 | Classic UI usage overview; no expert-only limits, configuration matrices, or error-code-based troubleshooting. |

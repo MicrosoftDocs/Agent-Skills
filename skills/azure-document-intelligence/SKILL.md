@@ -1,9 +1,9 @@
 ---
 name: azure-document-intelligence
-description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers/Docker, SAS/managed identity, or VNets, and other Azure AI Document Intelligence related development tasks. Not for Azure AI services (use microsoft-foundry-tools), Azure AI Search (use azure-cognitive-search), Azure AI Language (use azure-language-service), Azure AI Immersive Reader (use azure-immersive-reader).
+description: Expert knowledge for Azure AI Document Intelligence development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AnalyzeDocument/Markdown APIs, custom models, containers, SAS/managed identity auth, or VNets, and other Azure AI Document Intelligence related development tasks. Not for Azure AI Search (use azure-cognitive-search), Azure AI Vision (use azure-ai-vision), Azure AI Custom Vision (use azure-custom-vision), Azure AI Speech (use azure-speech).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-03-16"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure AI Document Intelligence Skill
@@ -24,21 +24,22 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L42 | Diagnosing and fixing Document Intelligence latency problems, plus interpreting service error codes, causes, and recommended resolutions. |
-| Best Practices | L43-L53 | Improving custom model accuracy and confidence, labeling and table-tagging best practices, training/classification workflows, and managing the full Document Intelligence model lifecycle |
-| Decision Making | L54-L60 | Choosing the right Document Intelligence model, understanding version changes, and migrating or updating apps to API v3.1 based on changelog and migration guidance |
-| Architecture & Design Patterns | L61-L65 | Guidance on designing disaster recovery, redundancy, and failover strategies for Azure AI Document Intelligence models and deployments. |
-| Limits & Quotas | L66-L75 | Quotas, rate limits, capacity add-ons, batch processing scale, and supported languages/locales for OCR, prebuilt, and custom Document Intelligence models. |
-| Security | L76-L83 | Securing Document Intelligence: creating SAS tokens, configuring data-at-rest encryption, and using managed identities and VNets to lock down access to resources. |
-| Configuration | L84-L89 | Configuring Document Intelligence containers and building, training, and composing custom models for tailored document processing workflows. |
-| Integrations & Coding Patterns | L90-L99 | Using SDKs/REST to call Document Intelligence, handle AnalyzeDocument/Markdown outputs, and integrate with apps, Azure Functions, and Logic Apps for end‑to‑end document workflows |
-| Deployment | L100-L106 | Deploying Document Intelligence via Docker/containers, including image tags, offline/disconnected setups, and installing/running the service and sample labeling tool. |
+| Troubleshooting | L37-L43 | Diagnosing and fixing Document Intelligence issues: latency/performance problems, service error codes and meanings, and known Foundry-specific bugs and workarounds. |
+| Best Practices | L44-L54 | Improving custom model accuracy and confidence, labeling and table-tagging best practices, training/classification workflows, and managing the full Document Intelligence model lifecycle |
+| Decision Making | L55-L61 | Choosing the right Document Intelligence model, understanding version changes, and migrating or updating apps to API v3.1 based on changelog and migration guidance |
+| Architecture & Design Patterns | L62-L66 | Guidance on designing disaster recovery, redundancy, and failover strategies for Azure AI Document Intelligence models and deployments. |
+| Limits & Quotas | L67-L76 | Quotas, rate limits, capacity add-ons, batch processing scale, and supported languages/locales for OCR, prebuilt, and custom Document Intelligence models. |
+| Security | L77-L84 | Securing Document Intelligence: creating SAS tokens, configuring data-at-rest encryption, and using managed identities and VNets to lock down access to resources. |
+| Configuration | L85-L90 | Configuring Document Intelligence containers and building, training, and composing custom models for tailored document processing workflows. |
+| Integrations & Coding Patterns | L91-L100 | Using SDKs/REST to call Document Intelligence, handle AnalyzeDocument/Markdown outputs, and integrate with apps, Azure Functions, and Logic Apps for end‑to‑end document workflows |
+| Deployment | L101-L107 | Deploying Document Intelligence via Docker/containers, including image tags, offline/disconnected setups, and installing/running the service and sample labeling tool. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
 | Troubleshoot Azure Document Intelligence latency issues | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept/troubleshoot-latency?view=doc-intel-4.0.0 |
 | Interpret and resolve Document Intelligence error codes | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/how-to-guides/resolve-errors?view=doc-intel-4.0.0 |
+| Resolve known Azure Document Intelligence Foundry issues | https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/reference/known-issues?view=doc-intel-4.0.0 |
 
 ### Best Practices
 | Topic | URL |

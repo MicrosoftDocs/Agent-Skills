@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   troubleshooting: 'Diagnosing and fixing Data Box/Disk issues: validation, unlock
     tool, SMB/REST copy, upload errors, time sync, and using audit/logs to track and
@@ -16,22 +16,22 @@ category_descriptions:
   best-practices: Guidance on preserving NTFS ACLs, file permissions, and metadata
     when copying data to Azure Data Box and Data Box Disk using supported tools and
     settings
-  limits-quotas: Device capacity, disk size, share/volume and connection limits for
-    Data Box, Disk, and Heavy, plus how usage is calculated and constrained during
-    data import/export.
+  limits-quotas: Device capacities, disk/file size limits, and connection constraints
+    for Azure Data Box, Data Box Disk, and Data Box Heavy, plus guidance on planning
+    usage within those limits.
 skill_description: Expert knowledge for Azure Data Box development including troubleshooting,
   best practices, limits & quotas, security, configuration, and integrations & coding
-  patterns. Use when handling Data Box/Disk orders, SMB/NFS/REST copies, Key Vault
-  CMKs, blob tiering, or VHD-to-managed-disk flows, and other Azure Data Box related
+  patterns. Use when using Data Box/Disk/Heavy for bulk imports, SMB/NFS copy, Key
+  Vault CMKs, Customer Lockbox, or VHD-to-managed-disk, and other Azure Data Box related
   development tasks. Not for Azure Import Export (use azure-import-export), Azure
-  Stack Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Blob Storage (use azure-blob-storage).
-use_when: Use when handling Data Box/Disk orders, SMB/NFS/REST copies, Key Vault CMKs,
-  blob tiering, or VHD-to-managed-disk flows, and other Azure Data Box related development
-  tasks.
+  Stack Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage),
+  Azure Files (use azure-files).
+use_when: Use when using Data Box/Disk/Heavy for bulk imports, SMB/NFS copy, Key Vault
+  CMKs, Customer Lockbox, or VHD-to-managed-disk, and other Azure Data Box related
+  development tasks.
 confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure Stack
-  Edge (use azure-stack-edge), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Blob Storage (use azure-blob-storage).
+  Edge (use azure-stack-edge), Azure Blob Storage (use azure-blob-storage), Azure
+  Files (use azure-files).
 ---
 # Azure Data Box Crawl Report
 
@@ -66,15 +66,15 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ### Updated Pages
 
-- [Review security](https://learn.microsoft.com/en-us/azure/databox/data-box-security)
-  - Updated: 2025-11-06T08:00:00.000Z → 2026-03-30T11:11:00.000Z
+- [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-limits)
+  - Updated: 2024-05-21T20:17:00.000Z → 2026-04-09T11:14:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
+| [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-limits) | limits-quotas | 0.95 | The page explicitly documents Azure Data Box Disk system limits and recommended sizes, including concrete numeric constraints (for example, maximum data size per disk/order, file size limits, and other quantified boundaries). These are product-specific limits and quotas that an LLM wouldn't reliably know from training, matching the limits-quotas criteria. |
 | [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-limits) | limits-quotas | 0.95 | Explicitly describes system limits and recommended sizes in table form, matching the limits-quotas criteria. |
-| [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-limits) | limits-quotas | 0.92 | Explicitly about system limits and recommended sizes; such pages contain concrete numeric limits and constraints that qualify as limits-quotas. |
 | [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-heavy-limits) | limits-quotas | 0.92 | Explicitly about system limits and recommended sizes for components and connections; such pages contain numeric limits and constraints. |
 | [Data Box share access](https://learn.microsoft.com/en-us/azure/databox/data-box-troubleshoot-share-access) | troubleshooting | 0.90 | Explicit troubleshooting article mapping SMB connection symptoms to network causes and resolutions, likely with Data Box–specific checks and commands. |
 | [Unlock issues](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-troubleshoot-unlock) | troubleshooting | 0.88 | Explicit troubleshooting for unlock tool issues; likely includes specific error messages and workflows to resolve them, matching symptom → cause → solution. |

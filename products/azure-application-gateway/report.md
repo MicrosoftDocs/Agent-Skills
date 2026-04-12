@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: 'Configuring and monitoring Azure Application Gateway and Application
     Gateway for Containers: listeners, routing, probes, health, headers/URL rewrite,
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Total Pages**: 174
 - **Fetched**: 174
 - **Fetch Failed**: 0
-- **Classified**: 127
-- **Unclassified**: 47
+- **Classified**: 125
+- **Unclassified**: 49
 
 ### Incremental Update
 - **New Pages**: 0
@@ -63,19 +63,19 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | decision-making | 6 | 3.4% |
 | deployment | 12 | 6.9% |
 | integrations | 4 | 2.3% |
-| limits-quotas | 3 | 1.7% |
+| limits-quotas | 1 | 0.6% |
 | security | 38 | 21.8% |
 | troubleshooting | 2 | 1.1% |
-| *(Unclassified)* | 47 | 27.0% |
+| *(Unclassified)* | 49 | 28.2% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link)
-  - Updated: 2026-01-21T18:19:00.000Z → 2026-04-01T22:41:00.000Z
-- [Application Gateway for Containers components](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/application-gateway-for-containers-components)
-  - Updated: 2026-02-09T06:11:00.000Z → 2026-03-25T16:54:00.000Z
+- [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
+  - Updated: 2025-12-16T23:42:00.000Z → 2026-04-10T08:00:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
+  - Updated: 2026-01-26T18:11:00Z → 2026-04-10T06:11:00Z
 
 ## Classified Pages
 
@@ -119,7 +119,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Ingress for AKS via Helm (Brownfield)](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-install-existing) | deployment | 0.72 | Shows how to connect AGIC to an existing Application Gateway deployment; involves specific configuration for resource IDs, namespaces, and controller settings, which are deployment-focused expert knowledge. |
 | [Portal](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-create-probe-portal) | configuration | 0.72 | Covers configuring custom health probes with specific probe settings (path, interval, timeout, thresholds) in the portal; product-specific configuration options. |
 | [Add health probes to AKS pods](https://learn.microsoft.com/en-us/azure/application-gateway/ingress-controller-add-health-probes) | configuration | 0.70 | Shows how AGIC provisions default HTTP GET probes and how to customize them via readiness/liveness probes; includes probe properties and mappings, which are product-specific configuration details. |
-| [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | limits-quotas | 0.70 | Includes a concrete deprecation deadline (April 28, 2026) and support cutoff for v1 SKU, which is time-bound expert knowledge not inferable from general training data. |
 | [Autoscaling v2 SKU](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant) | limits-quotas | 0.70 | Describes autoscaling modes and behavior when changing maximum instance counts; includes product-specific scaling constraints and timing behavior, which are effectively limits/quotas. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/parameter-based-path-selection-portal) | configuration | 0.70 | Explains combining URL Rewrite with path-based routing to select backend pools based on headers, URL parts, or query strings; product-specific routing configuration. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-url-portal) | configuration | 0.70 | Documents URL Rewrite feature availability (Standard_v2/WAF_v2 only) and behavior with WAF evaluation; includes SKU constraints and configuration behavior specific to this product. |
@@ -203,7 +202,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [SSL termination - Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-cli) | security | 0.62 | Similar to the PowerShell article but using CLI; includes concrete flags/parameters for binding certificates to listeners, which are product-specific security settings. |
 | [SSL termination - PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-ssl-powershell) | security | 0.62 | Shows how to attach certificates for TLS termination via PowerShell; likely includes certificate parameter names, listener settings, and bindings that are product-specific security configuration details. |
 | [Configure Private Link](https://learn.microsoft.com/en-us/azure/application-gateway/private-link-configure) | configuration | 0.60 | How-to article for configuring Application Gateway Private Link via portal, PowerShell, or CLI, likely including specific parameters and commands unique to this feature, which constitutes product-specific configuration knowledge. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq) | limits-quotas | 0.60 | FAQ pages for this product usually include concrete numeric limits (site counts, ports, timeouts) and behavior clarifications that are expert knowledge. |
 | [Multi-site hosting](https://learn.microsoft.com/en-us/azure/application-gateway/multiple-site-overview) | configuration | 0.60 | Describes multi-site hosting with rule priority and evaluation order plus conditions/limitations; these are product-specific configuration behaviors. |
 | [Redirection](https://learn.microsoft.com/en-us/azure/application-gateway/redirect-overview) | configuration | 0.60 | Describes redirect capability between listeners and to external sites, including HTTP-to-HTTPS scenarios; involves product-specific rule configuration. |
 | [URL routing](https://learn.microsoft.com/en-us/azure/application-gateway/url-route-overview) | configuration | 0.60 | Covers UrlPathMap and PathBasedRouting rule configuration with concrete routing behavior, which is product-specific configuration knowledge. |
@@ -227,10 +225,12 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | [Application Gateway features](https://learn.microsoft.com/en-us/azure/application-gateway/features) | 0.30 | Feature overview and positioning; does not provide numeric limits, configuration parameter tables, or detailed decision matrices. |
 | [Application Gateway for Containers](https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview) | 0.30 | Conceptual overview of Application Gateway for Containers and architecture; no detailed limits, configuration parameter tables, or error mappings. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/application-gateway/ipv6-application-gateway-portal) | 0.30 | Primarily a step-by-step portal tutorial for creating an Application Gateway with IPv6; it notes capability constraints (no upgrade from IPv4-only, no IPv6 backends) but does not provide detailed limits/quotas, configuration parameter tables, error codes, or other structured expert knowledge as defined by the sub-skill types. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq) | 0.30 | FAQ page likely mixes various topics but description/summary do not indicate presence of specific limits, configuration tables, or error-code-based troubleshooting; treated as general Q&A rather than structured expert-knowledge content. |
 | [How Application Gateway works](https://learn.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) | 0.30 | Explains request flow conceptually; lacks specific configuration values, limits, or troubleshooting mappings. |
 | [Redirect web traffic using Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-redirect-powershell) | 0.22 | PowerShell tutorial for URL path-based redirection; despite mentioning 'production-ready', summary indicates a standard routing tutorial without explicit config matrices or limits. |
 | [About v1 retirement](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement) | 0.20 | High-level retirement announcement and dates; no technical limits, configuration parameters, or detailed migration decision matrices. |
 | [Application Gateway overview](https://learn.microsoft.com/en-us/azure/application-gateway/overview) | 0.20 | High-level product overview of Azure Application Gateway without detailed limits, configuration tables, or product-specific troubleshooting or security settings. |
+| [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2) | 0.20 | High-level overview of Application Gateway v2 and deprecation notice for v1; no detailed limits, configuration parameters, error codes, or decision matrices with quantified trade-offs. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-cli) | 0.20 | CLI tutorial for hosting multiple sites; mostly procedural without expert-level configuration details. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-url-route-cli) | 0.20 | CLI tutorial for URL-based routing; primarily walkthrough commands without deep configuration matrices or limits. |
 | [Azure PowerShell](https://learn.microsoft.com/en-us/azure/application-gateway/tutorial-multiple-sites-powershell) | 0.20 | PowerShell tutorial for hosting multiple sites; focuses on basic setup rather than detailed configuration options or constraints. |

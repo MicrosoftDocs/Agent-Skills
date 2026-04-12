@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Sentinel connectors, KQL analytics rules, Logic Apps playbooks, UEBA/SAP data, or ASIM schemas, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel connectors, KQL analytics rules, SOAR playbooks, UEBA/SAP data, or multi-workspace setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -30,8 +30,8 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L113-L126 | Architecting Sentinel deployments: multi-workspace/tenant patterns, MSSP setups, SOAR automation, BCDR/resiliency, cross-workspace data/incident ops, SAP, ML models, and Jupyter-based hunting. |
 | Limits & Quotas | L127-L138 | Limits, quotas, pricing, and retention tiers for Sentinel data, search jobs, watchlists, MCP servers, ASIM, and workspace removal impacts |
 | Security | L139-L154 | Security configuration for Microsoft Sentinel: RBAC and roles, row-level/resource-context access, playbook auth/restrictions, encryption keys, audit logs, SAP roles/params, and network/attack protections. |
-| Configuration | L155-L284 | Configuring Microsoft Sentinel and data lake: connectors, ingestion, retention, analytics/automation rules, ASIM schemas, UEBA, SAP, MCP/AI integrations, monitoring, and workspace management. |
-| Integrations & Coding Patterns | L285-L335 | Integrating Sentinel with external data, threat intel, MCP tools, and cloud services; building connectors, playbooks, custom graphs, APIs, and automation using KQL, REST, Logic Apps, and notebooks |
+| Configuration | L155-L283 | Configuring Microsoft Sentinel and data lake: connectors, ingestion, retention, analytics/automation rules, ASIM schemas, UEBA, SAP, MCP/AI integrations, monitoring, and workspace management. |
+| Integrations & Coding Patterns | L284-L335 | Integrating Microsoft Sentinel with external data, threat intel, MCP/LLM tools, and collaboration apps, plus APIs, codeless connectors, KQL/graph queries, automation, and solution packaging. |
 | Deployment | L336-L359 | Deploying and managing Microsoft Sentinel solutions and content (CI/CD, ARM, content hub, marketplace) and specialized connectors/agents for SAP, Power Platform, Dynamics, Azure Stack Hub, and hunting notebooks. |
 
 ### Troubleshooting
@@ -202,7 +202,6 @@ This skill requires **network access** to fetch documentation content:
 | Configure connectors and retention for Sentinel data lake tiers | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-connectors |
 | Onboard Sentinel data lake from Defender portal | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender |
 | Onboard tenants to Microsoft Sentinel data lake and graph | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding |
-| Configure Sentinel MCP connector for ChatGPT and Claude | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector |
 | Use Sentinel MCP data exploration tools | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool |
 | Configure and use the Microsoft Sentinel MCP server | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started |
 | Use Sentinel MCP tools with Microsoft Foundry AI agents | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-use-tool-azure-ai-foundry |
@@ -306,6 +305,7 @@ This skill requires **network access** to fetch documentation content:
 | Use Jupyter notebooks with Sentinel data lake in VS Code | https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks |
 | Use Sentinel graph provider API in Spark notebooks | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-provider-reference |
 | Leverage Sentinel MCP agent creation tool collection | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-agent-creation-tool |
+| Enable and use Microsoft Sentinel MCP connector with ChatGPT or Claude | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector |
 | Create custom Sentinel MCP tools from KQL queries | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-create-custom-tool |
 | Integrate Sentinel MCP tools into Azure Logic Apps | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-logic-apps |
 | Use Sentinel MCP triage tools for incident hunting | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool |

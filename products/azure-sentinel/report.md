@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: 'Configuring Microsoft Sentinel and data lake: connectors, ingestion,
     retention, analytics/automation rules, ASIM schemas, UEBA, SAP, MCP/AI integrations,
@@ -7,9 +7,9 @@ category_descriptions:
   decision-making: 'Guides for planning and decision-making: SIEM/SOAR migration to
     Sentinel, pricing and cost optimization, data tiers and retention, connector and
     platform choices, and deployment/geo strategy.'
-  integrations: Integrating Sentinel with external data, threat intel, MCP tools,
-    and cloud services; building connectors, playbooks, custom graphs, APIs, and automation
-    using KQL, REST, Logic Apps, and notebooks
+  integrations: Integrating Microsoft Sentinel with external data, threat intel, MCP/LLM
+    tools, and collaboration apps, plus APIs, codeless connectors, KQL/graph queries,
+    automation, and solution packaging.
   security: 'Security configuration for Microsoft Sentinel: RBAC and roles, row-level/resource-context
     access, playbook auth/restrictions, encryption keys, audit logs, SAP roles/params,
     and network/attack protections.'
@@ -30,12 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Sentinel development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  managing Sentinel connectors, KQL analytics rules, Logic Apps playbooks, UEBA/SAP
-  data, or ASIM schemas, and other Azure Sentinel related development tasks. Not for
-  Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security),
-  Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
-use_when: Use when managing Sentinel connectors, KQL analytics rules, Logic Apps playbooks,
-  UEBA/SAP data, or ASIM schemas, and other Azure Sentinel related development tasks.
+  configuring Sentinel connectors, KQL analytics rules, SOAR playbooks, UEBA/SAP data,
+  or multi-workspace setups, and other Azure Sentinel related development tasks. Not
+  for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use
+  azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
+use_when: Use when configuring Sentinel connectors, KQL analytics rules, SOAR playbooks,
+  UEBA/SAP data, or multi-workspace setups, and other Azure Sentinel related development
+  tasks.
 confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-cloud),
   Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network
   Watcher (use azure-network-watcher).
@@ -51,10 +52,10 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 - **Unclassified**: 103
 
 ### Incremental Update
-- **New Pages**: 16
-- **Updated Pages**: 20
-- **Unchanged**: 355
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 387
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sentinel/azure-sentinel.csv`
 
 ## Classification Statistics
@@ -63,10 +64,10 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 |------|-------|------------|
 | architecture-patterns | 10 | 2.6% |
 | best-practices | 23 | 5.9% |
-| configuration | 126 | 32.2% |
+| configuration | 125 | 32.0% |
 | decision-making | 33 | 8.4% |
 | deployment | 21 | 5.4% |
-| integrations | 47 | 12.0% |
+| integrations | 48 | 12.3% |
 | limits-quotas | 8 | 2.0% |
 | security | 12 | 3.1% |
 | troubleshooting | 8 | 2.0% |
@@ -74,71 +75,16 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 
 ## Changes
 
-### New Pages
-
-- [Create custom graph using AI](https://learn.microsoft.com/en-us/azure/sentinel/datalake/create-graphs-with-ai)
-- [GQL reference for Sentinel custom graph](https://learn.microsoft.com/en-us/azure/sentinel/datalake/gql-reference-for-sentinel-custom-graph)
-- [Graph REST API](https://learn.microsoft.com/en-us/azure/sentinel/datalake/graph-rest-api)
-- [Use MCP connector in ChatGPT or Claude](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector)
-- [KQL using the API](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-queries-api)
-- [Workbooks for Microsoft Sentinel data lake](https://learn.microsoft.com/en-us/azure/sentinel/datalake/workbooks-for-data-lake)
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/data-federation-overview)
-- [Set up federated tables](https://learn.microsoft.com/en-us/azure/sentinel/datalake/data-federation-setup)
-- [Using federated tables](https://learn.microsoft.com/en-us/azure/sentinel/datalake/using-data-federation)
-- [Graph visualization](https://learn.microsoft.com/en-us/azure/sentinel/datalake/graph-visualization)
-- [Custom graphs overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/custom-graphs-overview)
-- [Create custom graphs](https://learn.microsoft.com/en-us/azure/sentinel/datalake/create-custom-graphs)
-- [Microsoft Sentinel graph provider reference](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-provider-reference)
-- [Data transformation using filter and split](https://learn.microsoft.com/en-us/azure/sentinel/transformation-filter-split)
-- [Create custom connectors using AI agent in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector-builder-agent)
-- [Configure Microsoft Sentinel scoping (row-level RBAC)](https://learn.microsoft.com/en-us/azure/sentinel/scoping)
-
 ### Updated Pages
 
-- [View customized views with workbooks](https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data)
-  - Updated: 2025-08-26T11:22:00.000Z → 2026-03-24T02:22:00.000Z
-- [Plan roles and permissions](https://learn.microsoft.com/en-us/azure/sentinel/roles)
-  - Updated: 2025-07-22T12:54:00.000Z → 2026-01-07T08:00:00.000Z
-- [Plan costs](https://learn.microsoft.com/en-us/azure/sentinel/billing)
-  - Updated: 2025-09-11T08:00:00.000Z → 2026-04-01T17:25:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/ci-cd-custom-content)
-  - Updated: 2026-03-05T18:25:00.000Z → 2026-03-30T20:20:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/sap/solution-overview)
-  - Updated: 2025-03-18T22:06:00.000Z → 2026-04-01T17:25:00.000Z
-- [Data exploration](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool)
-  - Updated: 2026-02-16T08:00:00.000Z → 2026-04-03T06:12:00.000Z
-- [Billing, limits, and availability](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-billing)
-  - Updated: 2026-03-12T05:52:00.000Z → 2026-04-02T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-overview)
-  - Updated: 2025-09-30T12:49:00.000Z → 2026-04-01T08:46:00.000Z
-- [Run KQL queries](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-queries)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-03-26T08:00:00.000Z
-- [Create KQL jobs](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs)
-  - Updated: 2025-12-05T12:12:00.000Z → 2026-04-01T08:46:00.000Z
-- [Compare KQL jobs, summary rules, and search jobs](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs)
-  - Updated: 2025-09-30T12:49:00.000Z → 2026-03-29T08:00:00.000Z
-- [Run notebooks](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks)
-  - Updated: 2026-03-04T08:00:00.000Z → 2026-04-01T08:46:00.000Z
-- [Create and manage notebook jobs](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebook-jobs)
-  - Updated: 2025-09-30T12:49:00.000Z → 2026-03-26T08:00:00.000Z
-- [Transition to the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/move-to-defender)
-  - Updated: 2026-02-09T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Microsoft Sentinel graph overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview)
-  - Updated: 2025-12-01T12:18:00.000Z → 2026-04-01T08:46:00.000Z
-- [Aggregate insights from raw data into an Auxiliary table](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs)
-  - Updated: 2025-12-05T12:12:00.000Z → 2026-04-01T08:46:00.000Z
-- [Monitor costs](https://learn.microsoft.com/en-us/azure/sentinel/billing-monitor-costs)
-  - Updated: 2025-09-30T12:49:00.000Z → 2026-03-29T22:17:00.000Z
-- [Workspaces in the Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/workspaces-defender-portal)
-  - Updated: 2025-10-21T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Ingestion-time data transformation](https://learn.microsoft.com/en-us/azure/sentinel/data-transformation)
-  - Updated: 2025-06-03T08:00:00.000Z → 2026-04-01T08:46:00.000Z
-- [Windows security event sets](https://learn.microsoft.com/en-us/azure/sentinel/windows-security-event-id-reference)
-  - Updated: 2023-03-08T00:00:00.000Z → 2026-03-19T22:26:00.000Z
-
-### Deleted Pages
-
-- ~~Use Sentinel MCP connector in ChatGPT~~ (https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-connector)
+- [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new)
+  - Updated: 2026-03-05T18:25:00.000Z → 2026-04-10T08:00:00.000Z
+- [Use MCP connector in ChatGPT or Claude](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector)
+  - Updated: 2026-04-03T08:00:00.000Z → 2026-04-06T08:00:00.000Z
+- [Find data connector](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference)
+  - Updated: 2026-02-05T08:00:00.000Z → 2026-02-18T10:58:00.000Z
+- [Windows security events](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference)
+  - Updated: 2026-02-05T08:00:00.000Z → 2026-02-18T10:58:00.000Z
 
 ## Classified Pages
 
@@ -337,7 +283,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Supported triggers and actions in playbooks](https://learn.microsoft.com/en-us/azure/sentinel/automation/playbook-triggers-actions) | integrations | 0.70 | Catalog of supported triggers/actions for the Sentinel Logic Apps connector is product-specific integration detail, typically listing operation names, parameters, and behaviors that LLMs won’t reliably know from training. |
 | [Switch to simplified pricing tiers](https://learn.microsoft.com/en-us/azure/sentinel/enroll-simplified-pricing-tier) | decision-making | 0.70 | Explains how to switch to simplified pricing tiers and the impact; such pages typically include tier names, eligibility rules, and billing behavior details that drive SKU/tier selection decisions. |
 | [UEBA data sources and table schemas](https://learn.microsoft.com/en-us/azure/sentinel/ueba-reference) | configuration | 0.70 | Lists input data sources and enrichments UEBA adds; this is a reference of product-specific fields and enrichment schema, useful as configuration/field mapping knowledge. |
-| [Use MCP connector in ChatGPT or Claude](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector) | configuration | 0.70 | Explains enabling and using a custom MCP connector, which typically includes connector settings, endpoints, and configuration parameters specific to Sentinel MCP and these LLM hosts. |
+| [Use MCP connector in ChatGPT or Claude](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-chatgpt-claude-connector) | integrations | 0.70 | The article describes a product-specific integration pattern between Microsoft Sentinel and MCP-based clients (ChatGPT/Claude), including how to enable and use a custom Sentinel MCP connector. This is specialized integration knowledge that involves concrete configuration steps and parameters unique to this connector, which an LLM is unlikely to know from training. It is not just a conceptual overview but a how-to for a specific integration, fitting the integrations sub-skill. |
 | [Use SOC optimizations programmatically](https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-api) | integrations | 0.70 | API-focused article for SOC optimization recommendations; likely includes endpoint shapes, parameters, and request/response details specific to Sentinel's recommendations API, which are product-specific integration details. |
 | [Windows security event sets](https://learn.microsoft.com/en-us/azure/sentinel/windows-security-event-id-reference) | configuration | 0.70 | Page defines specific, named event collection sets (for example, 'All events') and exactly which Windows Security/AppLocker event IDs and channels each set includes. This is product-specific configuration knowledge for the Windows Security Events data connector in Microsoft Sentinel, not generic concepts. |
 | [Aggregate insights from raw data into an Auxiliary table](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs) | configuration | 0.68 | KQL jobs in the Sentinel data lake are a product-specific feature; this page describes how to configure one-time and scheduled jobs, including job parameters and behaviors for promoting data from the data lake tier to the analytics tier. These configuration details (job types, scheduling options, promotion behavior) are not generic KQL knowledge and qualify as expert, product-specific configuration guidance. |
@@ -477,7 +423,6 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Create and manage playbooks](https://learn.microsoft.com/en-us/azure/sentinel/automation/create-playbooks) | 0.40 | Create/manage playbooks article sounds procedural; summary does not indicate presence of specific config matrices, limits, or error-code-based troubleshooting. |
 | [Customize playbooks from templates](https://learn.microsoft.com/en-us/azure/sentinel/automation/use-playbook-templates) | 0.40 | Shows how to create playbooks from templates; appears to be a how-to tutorial without detailed configuration tables or product-specific numeric guidance. |
 | [Deploy and monitor decoy honeytokens](https://learn.microsoft.com/en-us/azure/sentinel/monitor-key-vault-honeytokens) | 0.40 | High-level pointer to a community-supported solution and GitHub docs; the expert details live in GitHub, not in this page. |
-| [Find data connector](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) | 0.40 | Connector reference index listing connectors and linking out; primarily navigation, not detailed configuration on this page itself. |
 | [Ingest-time normalization](https://learn.microsoft.com/en-us/azure/sentinel/normalization-ingest-time) | 0.40 | High-level explanation of ingest-time normalization; summary suggests conceptual description rather than detailed configuration parameters. |
 | [Microsoft Sentinel data lake overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-overview) | 0.40 | Overview of Sentinel data lake; conceptual description of capabilities and benefits without detailed config tables or numeric thresholds in the summary. |
 | [Multistage attack detection scenarios](https://learn.microsoft.com/en-us/azure/sentinel/fusion-scenario-reference) | 0.40 | Catalog of Fusion-detected scenarios grouped by threat classification. Useful, but not focused on configuration options, limits, or troubleshooting mappings. |
@@ -525,6 +470,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [Microsoft Sentinel SIEM overview](https://learn.microsoft.com/en-us/azure/sentinel/overview) | 0.25 | Another high-level overview of Sentinel SIEM capabilities; marketing/feature description without detailed expert-only configuration or limits. |
 | [ASIM asset entity schema](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-asset) | 0.20 | Asset Entity normalization schema reference is largely a schema/field definition. While detailed, it is not a configuration, limits, troubleshooting, or decision-making guide and does not fit any specified sub-skill category. |
 | [ASIM schemas](https://learn.microsoft.com/en-us/azure/sentinel/normalization-about-schemas) | 0.20 | Describes what ASIM schemas are and their role in normalization, but the summary indicates a conceptual explanation without concrete configuration parameters, limits, or product-specific error/decision matrices. |
+| [Find data connector](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) | 0.20 | Page is a catalog/list of Microsoft Sentinel data connectors with links out to individual connector deployment/configuration pages. It does not itself contain specific limits, configuration parameter tables, error codes, or decision matrices; it primarily serves as navigation to other documentation. |
 | [Microsoft Sentinel graph overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview) | 0.20 | Described as an overview of Sentinel graph and its benefits; likely conceptual architecture explanation without concrete thresholds, configs, or error mappings. |
 | [Onboard to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard) | 0.20 | Quickstart onboarding tutorial; focuses on basic enablement and a sample data connector, not deep configuration or expert-only details. |
 | [Overview](https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources) | 0.20 | This is a high-level description of Microsoft Sentinel data connectors and supported sources. The summary indicates an overview of connectors and integration examples, but not specific quotas, configuration parameter tables, or troubleshooting mappings, so it lacks the required expert-knowledge characteristics. |
@@ -536,7 +482,7 @@ confusable_not_for: Not for Azure Defender For Cloud (use azure-defender-for-clo
 | [View collected data on the Overview dashboard](https://learn.microsoft.com/en-us/azure/sentinel/get-visibility) | 0.20 | Overview dashboard description; mostly UI and conceptual monitoring, no indication of numeric limits, config tables, or troubleshooting mappings. |
 | [View customized views with workbooks](https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data) | 0.20 | Page is a how-to/tutorial on visualizing data with Microsoft Sentinel workbooks. It describes using templates and creating custom workbooks but does not expose product-specific limits, configuration parameter tables, error-code-based troubleshooting, or quantified decision criteria. Content is primarily conceptual and procedural, not expert reference material. |
 | [What is Microsoft Sentinel?](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-overview) | 0.20 | High-level product overview of Microsoft Sentinel as a SIEM/platform; no concrete limits, configs, roles, or error mappings. |
-| [Windows security events](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) | 0.20 | Acts as an index of data connectors with links; it doesn’t itself contain detailed configuration parameters or troubleshooting content. |
+| [Windows security events](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference) | 0.20 | Same page as index 0: a reference list of Sentinel data connectors and links, without embedded expert-level configuration details, limits, troubleshooting mappings, or decision criteria. |
 | [ASIM parsers](https://learn.microsoft.com/en-us/azure/sentinel/normalization-parsers-list) | 0.10 | Page is primarily a catalog/list of ASIM parsers without configuration parameters, limits, error codes, or decision matrices. It does not map to the defined sub-skill types and lacks the kind of expert numeric/configuration detail required. |
 | [Microsoft Sentinel skill-up training](https://learn.microsoft.com/en-us/azure/sentinel/skill-up-resources) | 0.10 | Training/learning path aggregator that links to other resources. No direct expert technical details like limits, configuration tables, or API references. |
-| [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new) | 0.10 | A rolling 'what's new' changelog/announcements page; primarily feature summaries and availability notes without detailed limits, configuration tables, error codes, or decision matrices. |
+| [What's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new) | 0.10 | Release notes and feature announcements for Microsoft Sentinel without detailed limits, configuration tables, error codes, or decision matrices; primarily high-level 'what's new' content rather than deep, product-specific expert guidance. |

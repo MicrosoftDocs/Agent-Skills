@@ -40,8 +40,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 10
+- **Updated Pages**: 0
+- **Unchanged**: 11
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-oracle/azure-oracle.csv`
 
@@ -57,11 +57,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | *(Unclassified)* | 4 | 36.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [Region availability](https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-regions)
-  - Updated: 2026-01-29T06:14:00.000Z → 2026-03-30T22:11:00.000Z
 
 ## Classified Pages
 

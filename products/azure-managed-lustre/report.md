@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 - **Unclassified**: 2
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 1
-- **Unchanged**: 28
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-managed-lustre/azure-managed-lustre.csv`
 
@@ -66,15 +66,6 @@ confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure NetApp 
 | *(Unclassified)* | 2 | 6.7% |
 
 ## Changes
-
-### New Pages
-
-- [Migrate data from on-premises POSIX file systems](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/migrate-data-from-linux)
-
-### Updated Pages
-
-- [Prerequisites](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-prerequisites)
-  - Updated: 2025-08-01T17:07:00.000Z → 2026-04-02T17:05:00.000Z
 
 ## Classified Pages
 

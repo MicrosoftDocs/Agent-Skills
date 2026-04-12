@@ -47,10 +47,10 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 - **Unclassified**: 40
 
 ### Incremental Update
-- **New Pages**: 94
-- **Updated Pages**: 11
-- **Unchanged**: 20
-- **Deleted Pages**: 92
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 125
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-api-builder/azure-data-api-builder.csv`
 
 ## Classification Statistics
@@ -68,79 +68,6 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | *(Unclassified)* | 40 | 32.0% |
 
 ## Changes
-
-### New Pages
-
-- [Log levels](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-levels)
-- [Level 1 cache (in-memory)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-1)
-- [Level 2 cache (distributed)](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2)
-- [Cache-Control headers](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/http-headers)
-- [What is Data API builder (DAB)?](https://learn.microsoft.com/en-us/azure/data-api-builder/overview)
-- [DAB 2.0 (Preview)](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0)
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/)
-- [SQL Databases](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-sql)
-- [NoSQL Databases](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/basic-nosql)
-- [Schema overview](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/)
-- [Property: Data Source](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/data-source)
-- [Property: Runtime](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/runtime)
-- [Property: Entities](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/entities)
-- [Property: Autoentities](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/autoentities)
-- [Environment variables](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/env-function)
-- [Azure Key Vault references](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function)
-- [Multiple data sources](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/multi-config)
-- [Environment-specific configs](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/environments)
-- [Auto configuration](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/auto-config)
-- [Best practices](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/best-practices)
-- *...and 74 more*
-
-### Updated Pages
-
-- [FAQ](https://learn.microsoft.com/en-us/azure/data-api-builder/faq)
-  - Updated: 2026-01-23T06:02:00Z → 2026-04-01T23:07:00Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/)
-  - Updated: 2026-03-06T18:03:00Z → 2026-04-01T23:07:00Z
-- [Data source files](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/)
-  - Updated: 2025-07-22T17:18:00.000Z → 2026-04-01T23:07:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/)
-  - Updated: 2025-12-19T18:09:00Z → 2026-04-01T23:07:00Z
-- [dab init](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-init)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-04-01T23:07:00.000Z
-- [dab add](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-add)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-04-01T23:07:00.000Z
-- [dab start](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-start)
-  - Updated: 2026-03-06T06:02:00.000Z → 2026-04-01T23:07:00.000Z
-- [dab configure](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-configure)
-  - Updated: 2026-01-27T06:02:00.000Z → 2026-04-03T17:03:00.000Z
-- [dab validate](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-validate)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-04-01T23:07:00.000Z
-- [dab update](https://learn.microsoft.com/en-us/azure/data-api-builder/command-line/dab-update)
-  - Updated: 2025-12-19T18:09:00.000Z → 2026-04-01T23:07:00.000Z
-- [What is SQL MCP Server?](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/overview)
-  - Updated: 2026-03-06T18:03:00.000Z → 2026-04-01T23:07:00.000Z
-
-### Deleted Pages
-
-- ~~Call GraphQL endpoints~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/graphql)
-- ~~Use If-Match header~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/http-if-match)
-- ~~Use Location header~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/http-location)
-- ~~Test with OpenAPI~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/openapi)
-- ~~Call REST endpoints~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/api/rest)
-- ~~Use Cache-Control header~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/http-headers)
-- ~~Use level 1 cache~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-1)
-- ~~Use level 2 cache~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/cache/level-2)
-- ~~Use akv() function~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/akv-function)
-- ~~Use environment variables~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/env-function)
-- ~~Use environment-specific configs~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/environments)
-- ~~Use multiple data sources~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/config/multi-data-source)
-- ~~Use table relationships~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/relationships)
-- ~~Use stored procedures~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/stored-procedures)
-- ~~Use database views~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/database/views)
-- ~~Use Application Insights~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/application-insights)
-- ~~Use health checks~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/health-checks)
-- ~~Use Log Analytics~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-analytics)
-- ~~Customize log verbosity~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/log-levels)
-- ~~Use OpenTelemetry~~ (https://learn.microsoft.com/en-us/azure/data-api-builder/concept/monitor/open-telemetry)
-- *...and 72 more*
 
 ## Classified Pages
 

@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 - **Unclassified**: 74
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 400
-- **Unchanged**: 3
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 404
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-fabric/azure-service-fabric.csv`
 
@@ -76,54 +76,6 @@ confusable_not_for: Not for Azure App Service (use azure-app-service), Azure Kub
 | *(Unclassified)* | 74 | 18.3% |
 
 ## Changes
-
-### New Pages
-
-- [Scale Services to Zero](https://learn.microsoft.com/en-us/azure/service-fabric/disable-enable-service)
-
-### Updated Pages
-
-- [Service Fabric managed clusters](https://learn.microsoft.com/en-us/azure/service-fabric/overview-managed-cluster)
-  - Updated: 2024-11-21T08:00:00.000Z → 2026-03-22T08:00:00.000Z
-- [What is Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-overview)
-  - Updated: 2026-01-23T08:00:00.000Z → 2026-03-22T08:00:00.000Z
-- [What's new for Service Fabric?](https://learn.microsoft.com/en-us/azure/service-fabric/whats-new)
-  - Updated: 2025-10-22T08:00:00.000Z → 2026-03-20T08:00:00.000Z
-- [Managed cluster with Azure portal](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-managed-cluster-portal)
-  - Updated: 2024-11-14T08:00:00.000Z → 2026-03-22T08:00:00.000Z
-- [Managed cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-managed-cluster-template)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Service Fabric cluster with Azure portal](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-classic-cluster-portal)
-  - Updated: 2024-11-14T08:00:00.000Z → 2026-03-22T08:00:00.000Z
-- [Service Fabric cluster with Bicep](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-bicep)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Service Fabric cluster with ARM template](https://learn.microsoft.com/en-us/azure/service-fabric/quickstart-cluster-template)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Create .NET application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Deploy a Linux container application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers-linux)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Deploy a Windows container application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Deploy a Spring Boot application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-spring-boot)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Deploy a Reliable Services application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-java-reliable-services)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [1- Deploy a Service Fabric managed cluster](https://learn.microsoft.com/en-us/azure/service-fabric/tutorial-managed-cluster-deploy)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [2- Scale out a managed cluster node type](https://learn.microsoft.com/en-us/azure/service-fabric/tutorial-managed-cluster-scale)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-23T06:02:00.000Z
-- [3- Add and remove managed cluster node types](https://learn.microsoft.com/en-us/azure/service-fabric/tutorial-managed-cluster-add-remove-node-type)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-23T06:02:00.000Z
-- [4- Connect to a managed cluster and deploy an application](https://learn.microsoft.com/en-us/azure/service-fabric/how-to-managed-cluster-app-deployment-template)
-  - Updated: 2025-01-22T08:00:00.000Z → 2026-03-22T08:00:00.000Z
-- [Build a .NET application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Deploy the application to a cluster](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- [Add an HTTPS endpoint for the application](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-dotnet-app-enable-https-endpoint)
-  - Updated: 2024-08-22T17:37:00.000Z → 2026-03-22T08:00:00.000Z
-- *...and 380 more*
 
 ## Classified Pages
 

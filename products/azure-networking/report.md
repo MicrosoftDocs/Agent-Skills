@@ -44,9 +44,9 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 - **Unclassified**: 10
 
 ### Incremental Update
-- **New Pages**: 6
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 22
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-networking/azure-networking.csv`
 
@@ -63,15 +63,6 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 | *(Unclassified)* | 10 | 35.7% |
 
 ## Changes
-
-### New Pages
-
-- [Design a secure hub-spoke network](https://learn.microsoft.com/en-us/azure/networking/cross-service-scenarios/design-secure-hub-spoke-network)
-- [Zero Trust network security recommendations](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-network-security)
-- [Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-ddos-protection)
-- [Azure Firewall](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-azure-firewall)
-- [Application Gateway WAF](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-application-gateway-waf)
-- [Azure Front Door WAF](https://learn.microsoft.com/en-us/azure/networking/security/zero-trust-front-door-waf)
 
 ## Classified Pages
 

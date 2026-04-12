@@ -1,9 +1,9 @@
 ---
 name: azure-test-plans
-description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and integrations & coding patterns. Use when configuring test fields, managing test access, or automating suites, runs, and configs via tcm.exe, and other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure App Testing (use azure-app-testing).
+description: Expert knowledge for Azure Test Plans development including limits & quotas, security, and integrations & coding patterns. Use when customizing test run fields, filtering/reporting results, managing test access, or automating via tcm.exe, and other Azure Test Plans related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Test Plans Skill
@@ -24,15 +24,14 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Limits & Quotas | L31-L36 | Configuring custom fields for test runs/results and understanding Azure Test Plans limits, quotas, and data retention policies. |
-| Security | L37-L41 | Managing permissions, access levels, and security roles for users and groups in Azure Test Plans manual testing features. |
-| Integrations & Coding Patterns | L42-L45 | Using tcm.exe CLI to manage Azure Test Plans: create and run test suites, import/export test cases, manage test configurations, and automate test management tasks |
+| Limits & Quotas | L31-L35 | Configuring and using custom fields on Azure Test runs and results to capture additional metadata, filter and report on tests, and tailor test management to specific project needs. |
+| Security | L36-L40 | Managing permissions, access levels, and security roles for users and groups in Azure Test Plans manual testing features. |
+| Integrations & Coding Patterns | L41-L44 | Using tcm.exe CLI to manage Azure Test Plans: create and run test suites, import/export test cases, manage test configurations, and automate test management tasks |
 
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Use custom fields for Azure test runs and results | https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops |
-| Understand Azure Test Plans limits and data retention | https://learn.microsoft.com/en-us/azure/devops/test/reference-qa?view=azure-devops |
+| Use custom fields for Azure Test runs and results | https://learn.microsoft.com/en-us/azure/devops/test/custom-fields?view=azure-devops |
 
 ### Security
 | Topic | URL |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   decision-making: Guidance on choosing Azure SQL services, pricing, licensing, HADR,
     and feature regions, plus planning and executing migrations (Db2, Oracle, SQL
@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 - **Unclassified**: 30
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 17
-- **Unchanged**: 109
+- **New Pages**: 0
+- **Updated Pages**: 2
+- **Unchanged**: 126
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-virtual-machines/azure-sql-virtual-machines.csv`
 
@@ -76,47 +76,12 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 
 ## Changes
 
-### New Pages
-
-- [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql)
-- [Updating SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/servicing-updates-guidelines?view=azuresql)
-
 ### Updated Pages
 
-- [Transaction log errors in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi)
-  - Updated: 2023-09-11T22:32:00.000Z → 2026-03-24T08:00:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-03-03T18:40:00.000Z → 2026-04-01T08:00:00.000Z
-- [SQL IaaS Agent extension](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management?view=azuresql)
-  - Updated: 2026-03-16T08:00:00.000Z → 2026-04-01T17:39:00.000Z
-- [Quick checklist](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist?view=azuresql)
-  - Updated: 2025-10-14T22:34:00.000Z → 2026-03-31T08:00:00.000Z
-- [Storage](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql)
-  - Updated: 2025-03-18T17:42:00.000Z → 2026-04-01T17:39:00.000Z
-- [Collect baseline](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-collect-baseline?view=azuresql)
-  - Updated: 2022-12-16T23:16:00.000Z → 2026-04-03T22:38:00.000Z
-- [Azure Key Vault Integration](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/azure-key-vault-integration-configure?view=azuresql)
-  - Updated: 2024-11-25T23:30:00.000Z → 2026-04-01T17:39:00.000Z
-- [Backup and restore using managed identities](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/backup-restore-to-url-using-managed-identities?view=azuresql)
-  - Updated: 2025-06-06T22:31:00.000Z → 2026-04-01T17:39:00.000Z
-- [VNN listener](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-vnn-azure-load-balancer-configure?view=azuresql)
-  - Updated: 2025-06-02T22:31:00.000Z → 2026-04-01T17:39:00.000Z
-- [DNN interoperability](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-dnn-interoperability?view=azuresql)
-  - Updated: 2023-10-03T17:31:00.000Z → 2026-04-01T17:39:00.000Z
-- [Azure shared disks](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?view=azuresql)
-  - Updated: 2025-03-17T08:00:00.000Z → 2026-04-01T17:39:00.000Z
-- [Storage Spaces Direct (Win2016+)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-storage-spaces-direct-manually-configure?view=azuresql)
-  - Updated: 2024-09-27T22:32:00.000Z → 2026-03-31T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2026-03-03T23:40:00Z → 2026-04-01T17:39:00Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql)
-  - Updated: 2026-03-13T08:00:00.000Z → 2026-04-02T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
-  - Updated: 2026-02-05T18:38:00.000Z → 2026-03-24T00:04:00.000Z
-- [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql)
-  - Updated: 2025-12-04T08:00:00.000Z → 2026-03-24T08:00:00.000Z
+- [What is a SQL Server VM?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview?view=azuresql)
+  - Updated: 2025-11-18T08:00:00.000Z → 2026-04-02T08:00:00.000Z
+- [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql)
+  - Updated: 2025-09-26T22:35:00.000Z → 2026-04-06T22:36:00.000Z
 
 ## Classified Pages
 
@@ -246,12 +211,12 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), Azure S
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Unified inventory (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/unified-inventory-sql-vm?view=azuresql) | 0.20 | Preview feature overview for unified inventory; describes the concept and resource type but no detailed configuration parameters, limits, or troubleshooting content. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new?view=azuresql) | 0.20 | Release notes and documentation change log; summary-style 'what's new' content without detailed limits, configs, or troubleshooting matrices. |
-| [What is a SQL Server VM?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview?view=azuresql) | 0.15 | Overview of SQL Server on Azure VMs; conceptual description without detailed configs or decision matrices. |
-| [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql) | 0.10 | High-level overview of SQL Server on Linux VMs; primarily conceptual and marketing-style description. |
+| [About Linux SQL Server VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/linux/sql-server-on-linux-vm-what-is-iaas-overview?view=azuresql) | 0.10 | High-level overview of SQL Server on Azure Linux VMs with general descriptions of regions, VM sizes, and image gallery; no specific limits, configuration parameters, error codes, or decision matrices that meet the expert-knowledge criteria. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes; primarily historical release-note navigation without detailed limits, configs, troubleshooting mappings, or decision matrices. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes for Managed Instance; functions as historical/navigation content rather than detailed technical guidance. |
 | [Azure SQL glossary of terms](https://learn.microsoft.com/en-us/azure/azure-sql/glossary-terms?view=azuresql) | 0.10 | Glossary of terms is definitional, not configuration, troubleshooting, or limits content. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Navigation hub for migration guides; no concrete technical details on this page. |
 | [SQL Server on Azure VMs](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' documentation changes for SQL Server on Azure VMs; primarily historical and navigational, not focused on limits, configuration tables, or troubleshooting mappings. |
 | [What is Azure SQL?](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql) | 0.10 | High-level overview of Azure SQL family (Database, Managed Instance, SQL Server on VM) without specific limits, configuration parameters, error codes, or decision matrices. |
+| [What is a SQL Server VM?](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview?view=azuresql) | 0.10 | High-level overview of SQL Server on Azure VMs without specific limits, configuration tables, error codes, or decision matrices; primarily conceptual/introductory content. |
 | [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/?view=azuresql) | 0.05 | Landing page listing concepts and tutorials; no specific expert configuration or limits. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   limits-quotas: Storage quotas, free allocation, and per-package size/count limits
     in Azure Artifacts, plus how to monitor, manage, and publish packages within those
@@ -37,12 +37,12 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 - **Total Pages**: 73
 - **Fetched**: 73
 - **Fetch Failed**: 0
-- **Classified**: 61
-- **Unclassified**: 12
+- **Classified**: 60
+- **Unclassified**: 13
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 0
+- **New Pages**: 0
+- **Updated Pages**: 1
 - **Unchanged**: 72
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-artifacts/azure-artifacts.csv`
@@ -52,19 +52,20 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 3 | 4.1% |
-| configuration | 8 | 11.0% |
+| configuration | 7 | 9.6% |
 | decision-making | 3 | 4.1% |
 | deployment | 1 | 1.4% |
 | integrations | 39 | 53.4% |
 | limits-quotas | 4 | 5.5% |
 | security | 3 | 4.1% |
-| *(Unclassified)* | 12 | 16.4% |
+| *(Unclassified)* | 13 | 17.8% |
 
 ## Changes
 
-### New Pages
+### Updated Pages
 
-- [Upstream from internal feeds](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/upstream-internal-feed?view=azure-devops)
+- [Search for packages in upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/search-upstream?view=azure-devops)
+  - Updated: 2024-06-07T20:33:00.000Z → 2026-04-08T01:04:00.000Z
 
 ## Classified Pages
 
@@ -129,7 +130,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Publish Python packages (CLI)](https://learn.microsoft.com/en-us/azure/devops/artifacts/quickstarts/python-cli?view=azure-devops) | integrations | 0.60 | Shows CLI-based publishing of Python packages using Azure Artifacts-specific endpoints. |
 | [Publish packages to NuGet.org](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/publish-to-nuget-org?view=azure-devops) | integrations | 0.60 | Covers publishing from Azure DevOps to NuGet.org, likely with specific API key and endpoint configuration. |
 | [Restore packages from upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/protect-oss-packages-with-upstream-sources?view=azure-devops) | best-practices | 0.60 | Tutorial on using upstream sources to protect against outages/compromised packages; likely includes recommended configurations and patterns specific to Azure Artifacts. |
-| [Search for packages in upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/search-upstream?view=azure-devops) | configuration | 0.60 | Walkthrough for enabling upstream sources and searching packages; includes product-specific search behavior and configuration steps. |
 | [What are upstream sources?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops) | best-practices | 0.60 | Concept page but explicitly mentions recommended best practices for upstream sources; these are product-specific usage recommendations beyond generic package management theory. |
 
 ## Unclassified Pages
@@ -143,6 +143,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Pipelines (us
 | [Share packages publicly](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/share-packages-publicly?view=azure-devops) | 0.25 | Tutorial on sharing packages publicly; summary doesn’t indicate detailed limits, config tables, or error codes. |
 | [What are feed views?](https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops) | 0.25 | Conceptual explanation of feed views; summary doesn’t show numeric thresholds or config tables. |
 | [Publish your first package](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-artifacts-ai?view=azure-devops) | 0.20 | Tutorial-style first package publish; summary shows no limits, config tables, or product-specific error codes. |
+| [Search for packages in upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/search-upstream?view=azure-devops) | 0.20 | Page is a how-to for searching and using upstream sources in Azure Artifacts. It appears to be procedural/tutorial content without detailed limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. No strong evidence of product-specific numeric limits, RBAC role lists, or configuration option tables that would qualify as expert knowledge under the defined categories. |
 | [Universal Packages upstream sources](https://learn.microsoft.com/en-us/azure/devops/artifacts/universal-packages/universal-packages-upstream?view=azure-devops) | 0.20 | Page is a how-to for configuring upstream sources for Universal Packages. It describes steps and concepts but does not include numeric limits/quotas, detailed configuration parameter tables with defaults/ranges, error-code-based troubleshooting, or decision matrices. Content is primarily procedural/tutorial rather than expert reference data. |
 | [Use packages from PyPI](https://learn.microsoft.com/en-us/azure/devops/artifacts/python/use-packages-from-pypi?view=azure-devops) | 0.20 | Primarily a how-to/tutorial for consuming PyPI packages via Azure Artifacts using upstream sources and command-line steps. It does not focus on limits, configuration matrices, security roles, or detailed troubleshooting with error codes. The content is procedural rather than reference-style expert knowledge as defined by the sub-skill types. |
 | [Package notifications](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/follow-package-notifications?view=azure-devops) | 0.15 | Explains notification behavior; summary shows no numeric limits, config tables, or error mappings. |

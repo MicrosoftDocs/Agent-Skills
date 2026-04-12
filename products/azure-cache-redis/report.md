@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 16
-- **Unchanged**: 47
+- **Updated Pages**: 0
+- **Unchanged**: 63
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cache-redis/azure-cache-redis.csv`
 
@@ -69,41 +69,6 @@ confusable_not_for: Not for Azure Managed Redis (use azure-managed-redis), Azure
 | *(Unclassified)* | 6 | 9.5% |
 
 ## Changes
-
-### Updated Pages
-
-- [Move between regions](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-moving-resources)
-  - Updated: 2025-03-31T22:36:00.000Z → 2025-10-09T05:15:00.000Z
-- [Publishing Azure Cache for Redis events](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-event-grid)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-02-24T23:11:00.000Z
-- [Configure your cache for high availability](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-high-availability)
-  - Updated: 2024-08-05T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Troubleshoot Redis server](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-server)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-02-26T06:24:00.000Z
-- [Troubleshoot data loss](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-troubleshoot-data-loss)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-03-25T22:12:00.000Z
-- [Azure Cache for Redis retirement FAQ](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq)
-  - Updated: 2026-02-03T06:44:00Z → 2026-03-26T06:13:00Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cli-samples)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-03-25T22:12:00.000Z
-- [Performance testing best practice](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-performance)
-  - Updated: 2025-08-18T08:00:00.000Z → 2026-02-24T06:10:00.000Z
-- [Kubernetes-hosted client applications best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-kubernetes)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-02-26T23:12:00.000Z
-- [Scaling best practices](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-scale)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-02-26T06:24:00.000Z
-- [Server load management best practice](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-best-practices-server-load)
-  - Updated: 2025-10-09T05:15:00.000Z → 2026-03-25T22:12:00.000Z
-- [Microsoft Entra ID for authentication](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-azure-active-directory-for-authentication)
-  - Updated: 2025-07-22T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Managed identity for storage accounts](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-managed-identity)
-  - Updated: 2025-04-22T05:11:00.000Z → 2026-03-25T22:12:00.000Z
-- [Migrate from VNet injection to Private Link](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-vnet-migration)
-  - Updated: 2021-12-22T23:23:00.000Z → 2026-03-25T22:12:00.000Z
-- [Import/Export data](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-import-export-data)
-  - Updated: 2025-05-08T22:03:00.000Z → 2026-03-25T22:12:00.000Z
-- [Configure disk encryption](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-encryption)
-  - Updated: 2025-07-11T05:10:00.000Z → 2025-10-09T05:15:00.000Z
 
 ## Classified Pages
 

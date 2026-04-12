@@ -1,9 +1,9 @@
 ---
 name: azure-security
-description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS and container images, SBOM/Notation pipelines, Key Vault vs HSM, or Customer Lockbox, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Sentinel (use azure-sentinel), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
+description: Expert knowledge for Azure Security development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS workloads, SBOMs, Notation image signing, Key Vault/HSM keys, or Customer Lockbox access, and other Azure Security related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Firewall (use azure-firewall), Azure DDos Protection (use azure-ddos-protection), Azure Web Application Firewall (use azure-web-application-firewall).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Security Skill
@@ -26,7 +26,7 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L39 | Diagnosing and resolving common Azure Customer Lockbox issues, including access request problems, approval/denial errors, and configuration or permission-related failures. |
 | Best Practices | L40-L58 | Security hardening checklists and patterns for Azure (IaaS/PaaS), covering identity, network, data encryption, secrets, DNS, and app/database protection best practices |
-| Decision Making | L59-L63 | Guidance on choosing between Azure Key Vault and dedicated HSMs, comparing security, compliance, performance, and management trade-offs for key management solutions. |
+| Decision Making | L59-L63 | Guidance on choosing Azure key management options (Key Vault, managed HSM, app-managed keys), including security, compliance, performance, and integration trade-offs. |
 | Security | L64-L94 | Securing Azure workloads: threat modeling mitigations, AKS image signing, crypto and data protection, ransomware defense, incident response, and Azure-specific security/operational best practices. |
 | Configuration | L95-L102 | Configuring Azure security features like antimalware, firewalls, container vulnerability tools, security logging/auditing, and upcoming managed TLS/DCV changes |
 | Integrations & Coding Patterns | L103-L107 | Guidance on generating signed SBOMs for container images, attaching them in CI/CD, and integrating software supply chain security into deployment workflows. |
@@ -59,7 +59,7 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Choose between Azure Key Vault and HSM key solutions | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
+| Select the right Azure key management solution | https://learn.microsoft.com/en-us/azure/security/fundamentals/key-management-choose |
 
 ### Security
 | Topic | URL |

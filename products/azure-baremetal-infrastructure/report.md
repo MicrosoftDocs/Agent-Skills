@@ -1,21 +1,21 @@
 ---
-generated_at: '2026-02-28'
+generated_at: '2026-04-12'
 category_descriptions:
   architecture-patterns: NC2 on Azure BareMetal architecture choices, deployment topologies,
     integration patterns with Azure services, and design considerations for performance,
     HA, and networking.
-  decision-making: Guidance on selecting NC2 on Azure regions and hardware SKUs, including
-    capacity, performance, and availability considerations for deployment planning.
+  decision-making: Guidance on choosing Azure regions and bare metal SKUs for Nutanix
+    Cloud Clusters, including capacity, performance, and availability considerations.
 skill_description: Expert knowledge for Azure Baremetal Infrastructure development
-  including decision making, and architecture & design patterns. Use when choosing
-  NC2 regions/SKUs, planning BareMetal topologies, or integrating NC2 with Azure networking/services,
-  and other Azure Baremetal Infrastructure related development tasks. Not for Azure
-  Large Instances (use azure-large-instances), Azure Virtual Machines (use azure-virtual-machines),
-  Azure Virtual Machine Scale Sets (use azure-vm-scalesets), SAP HANA on Azure Large
-  Instances (use azure-sap).
-use_when: Use when choosing NC2 regions/SKUs, planning BareMetal topologies, or integrating
-  NC2 with Azure networking/services, and other Azure Baremetal Infrastructure related
-  development tasks.
+  including decision making, and architecture & design patterns. Use when planning
+  NC2 on Azure BareMetal regions/SKUs, cluster sizing, HA layouts, and VNet/ExpressRoute
+  integration, and other Azure Baremetal Infrastructure related development tasks.
+  Not for Azure Large Instances (use azure-large-instances), Azure Virtual Machines
+  (use azure-virtual-machines), Azure Virtual Machine Scale Sets (use azure-vm-scalesets),
+  SAP HANA on Azure Large Instances (use azure-sap).
+use_when: Use when planning NC2 on Azure BareMetal regions/SKUs, cluster sizing, HA
+  layouts, and VNet/ExpressRoute integration, and other Azure Baremetal Infrastructure
+  related development tasks.
 confusable_not_for: Not for Azure Large Instances (use azure-large-instances), Azure
   Virtual Machines (use azure-virtual-machines), Azure Virtual Machine Scale Sets
   (use azure-vm-scalesets), SAP HANA on Azure Large Instances (use azure-sap).
@@ -32,8 +32,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 8
+- **Updated Pages**: 1
+- **Unchanged**: 7
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-baremetal-infrastructure/azure-baremetal-infrastructure.csv`
 
@@ -47,11 +47,16 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ## Changes
 
+### Updated Pages
+
+- [Available Regions and SKUs](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus)
+  - Updated: 2026-01-14T18:16:00.000Z → 2026-04-07T22:12:00.000Z
+
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Available Regions and SKUs](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus) | decision-making | 0.70 | Page focuses on available regions and three Ready Node/SKU types; such content typically includes SKU-specific capabilities/constraints and region availability tables that guide selection, fitting decision-making with product-specific details. |
+| [Available Regions and SKUs](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus) | decision-making | 0.74 | Page lists which Azure regions support Nutanix Cloud Clusters and which specific Ready Node/SKU types are available per region. This is product- and SKU-specific availability data that changes over time and isn't inferable from general training. It directly supports deployment and capacity planning decisions (which region/SKU combinations can be used), fitting the decision-making category better than limits-quotas since it focuses on availability matrices rather than numeric resource limits. |
 | [Architecture](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/architecture) | architecture-patterns | 0.65 | Describes architectural components and several configurations of NC2 on Azure; likely includes product-specific topology patterns and when to use particular configurations, which are not generic concepts. |
 
 ## Unclassified Pages

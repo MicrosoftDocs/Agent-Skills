@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   decision-making: 'Guidance on MySQL Flexible Server planning: version lifecycle,
     HA/BCDR, performance features, sizing and pricing, and assessing, choosing methods
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 - **Total Pages**: 179
 - **Fetched**: 179
 - **Fetch Failed**: 0
-- **Classified**: 116
-- **Unclassified**: 63
+- **Classified**: 115
+- **Unclassified**: 64
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 5
-- **Unchanged**: 173
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 178
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-database-mysql/azure-database-mysql.csv`
 
@@ -67,32 +67,20 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | architecture-patterns | 4 | 2.2% |
 | best-practices | 14 | 7.8% |
 | configuration | 27 | 15.1% |
-| decision-making | 15 | 8.4% |
+| decision-making | 14 | 7.8% |
 | deployment | 8 | 4.5% |
 | integrations | 7 | 3.9% |
 | limits-quotas | 5 | 2.8% |
 | security | 23 | 12.8% |
 | troubleshooting | 13 | 7.3% |
-| *(Unclassified)* | 63 | 35.2% |
+| *(Unclassified)* | 64 | 35.8% |
 
 ## Changes
 
-### New Pages
-
-- [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026)
-
 ### Updated Pages
 
-- [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
-  - Updated: 2026-03-05T18:37:00.000Z → 2026-03-30T22:08:00.000Z
-- [Backup & restore concepts](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore)
-  - Updated: 2025-11-25T08:00:00.000Z → 2026-03-30T22:08:00.000Z
-- [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql)
-  - Updated: 2026-03-18T06:16:00.000Z → 2026-03-18T08:00:00.000Z
-- [Version support policy](https://learn.microsoft.com/en-us/azure/mysql/concepts-version-policy)
-  - Updated: 2026-01-30T23:09:00.000Z → 2026-03-27T22:08:00.000Z
-- [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index)
-  - Updated: 2026-01-18T12:03:00.000Z → 2026-04-01T22:14:00.000Z
+- [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026)
+  - Updated: 2026-03-30T17:17:00.000Z → 2026-04-09T22:12:00.000Z
 
 ## Classified Pages
 
@@ -182,7 +170,6 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [GitHub Actions](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-mysql-github-actions) | deployment | 0.65 | Quickstart for using GitHub Actions to deploy database updates to Azure MySQL; contains workflow YAML and product-specific deployment steps, fitting deployment patterns for CI/CD. |
 | [Java](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/connect-java) | integrations | 0.65 | Covers Java/JDBC integration including Microsoft Entra and MySQL authentication modes, which involves product-specific connection properties and auth configuration. |
 | [Major version upgrade](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-upgrade) | deployment | 0.65 | Covers how to upgrade major MySQL versions in-place, including constraints and process; this is a product-specific upgrade/deployment operation. |
-| [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026) | decision-making | 0.65 | A specific monthly release notes page will contain detailed, time-specific information about new behaviors, fixes, and security patches, plus dates when new servers default to this version and how upgrades roll out. These details are not inferable from training data and help users decide when and how to upgrade, aligning best with decision-making. |
 | [Migrate data from MySQL on-premises to Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro) | decision-making | 0.65 | Migration guide provides planning and execution guidance, likely including scenario-based recommendations and trade-offs for migration approaches. |
 | [Minimal downtime migration with DMS (classic)](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-migrate-online) | decision-making | 0.65 | Focuses on minimal-downtime migration using data-in replication, guiding when to choose this approach to reduce application downtime. |
 | [Move servers between regions](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-move-regions) | deployment | 0.65 | Describes region move using geo-restore, including prerequisites like geo-redundancy and steps for migration; this is a deployment/migration pattern specific to the service. |
@@ -272,6 +259,7 @@ confusable_not_for: Not for Azure Database for MariaDB (use azure-database-maria
 | [Fabric mirroring](https://learn.microsoft.com/en-us/azure/mysql/integration/fabric-mirroring-mysql) | 0.20 | From the summary, this page is a conceptual overview of mirroring Azure Database for MySQL into Microsoft Fabric/OneLake and its benefits (BI, AI, data engineering). It does not indicate the presence of specific limits, configuration tables, error codes, or decision matrices. Without evidence of concrete parameters, quotas, or troubleshooting mappings, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [High availability](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) | 0.20 | Described as a conceptual overview of high availability for Azure Database for MySQL Flexible Server. Summary focuses on what HA is, automatic failover, and general behavior, without exposing concrete limits, configuration tables, error codes, or decision matrices. Does not meet any sub-skill detection criteria for expert, configuration-level knowledge. |
 | [June 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/june-2024) | 0.20 | Maintenance note focused on availability; lacks detailed technical mappings in the provided text. |
+| [March 2026](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/march-2026) | 0.20 | Release notes summary mentions a new version, upgrade timing, and general improvements without exposing specific limits, configuration parameters, error codes, or other detailed technical data that meet the expert-knowledge criteria. |
 | [May 2024](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/may-2024) | 0.20 | Maintenance summary; no explicit expert-level configuration or limits content shown. |
 | [Release notes index](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/release-notes/release-notes-index) | 0.20 | This is an index/landing page for release notes, describing structure and navigation rather than listing specific fixes, features, or configuration details. It does not itself contain expert technical data like limits, error codes, or configuration parameters. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/sample-scripts-azure-cli) | 0.20 | Index of CLI sample scripts; navigation content without detailed parameters or limits in this page itself. |

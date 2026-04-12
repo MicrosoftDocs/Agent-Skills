@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: 'Configuring and governing Network Watcher logging: AMA for Connection
     Monitor, NSG/VNet flow logs setup, schemas, filtering, templates (Bicep/ARM),
@@ -37,37 +37,46 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 
 ## Summary
 
-- **Total Pages**: 63
-- **Fetched**: 63
+- **Total Pages**: 64
+- **Fetched**: 64
 - **Fetch Failed**: 0
-- **Classified**: 30
-- **Unclassified**: 33
+- **Classified**: 29
+- **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 2
 - **Updated Pages**: 1
-- **Unchanged**: 62
-- **Deleted Pages**: 0
+- **Unchanged**: 61
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 12 | 19.0% |
-| decision-making | 3 | 4.8% |
-| integrations | 5 | 7.9% |
+| configuration | 12 | 18.8% |
+| decision-making | 3 | 4.7% |
+| integrations | 4 | 6.2% |
 | limits-quotas | 1 | 1.6% |
-| security | 3 | 4.8% |
-| troubleshooting | 6 | 9.5% |
-| *(Unclassified)* | 33 | 52.4% |
+| security | 3 | 4.7% |
+| troubleshooting | 6 | 9.4% |
+| *(Unclassified)* | 35 | 54.7% |
 
 ## Changes
 
+### New Pages
+
+- [Visualize flow logs with Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-power-bi)
+- [Rules impact analyzer](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-rule-impact-analyzer)
+
 ### Updated Pages
 
-- [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering)
-  - Updated: 2025-12-29T18:10:00.000Z → 2026-03-24T17:13:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview)
+  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-08T17:12:00.000Z
+
+### Deleted Pages
+
+- ~~Use Power BI~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi)
 
 ## Classified Pages
 
@@ -92,7 +101,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Monitor connectivity using Azure Monitor agent](https://learn.microsoft.com/en-us/azure/network-watcher/azure-monitor-agent-with-connection-monitor) | configuration | 0.70 | Describes using Azure Monitor Agent with Connection Monitor; likely includes agent-related configuration options and data collection settings specific to this integration. |
 | [Read flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-read) | integrations | 0.70 | Article on using a PowerShell script to parse flow logs created hourly and updated every few minutes; includes concrete script code and log schema usage, which are product-specific integration/coding patterns. |
 | [Schema and data aggregation](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-schema) | configuration | 0.70 | Schema and data aggregation documentation; such pages typically define field names, types, and aggregation rules for Traffic Analytics data, which are detailed configuration/schema references. |
-| [Use Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi) | integrations | 0.70 | Describes using Power BI to visualize NSG flow logs; such integration guides typically include dataset schemas, query parameters, and Power BI configuration steps specific to NSG logs. |
 | [VNet flow logs managed identity](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-managed-identity) | security | 0.70 | Describes using user-assigned managed identities for VNet flow logs to access storage; likely includes specific role assignments, scopes, and identity configuration steps, which are product-specific security details. |
 | [Integrate Microsoft Sentinel with traffic analytics](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-sentinel) | integrations | 0.68 | Integration guide between Traffic Analytics and Microsoft Sentinel likely includes product-specific configuration steps, parameter names, and settings unique to this integration (for example, how to connect flow logs, workspaces, and data connectors), which qualifies as expert integration knowledge beyond generic concepts. |
 | [VNet flow logs filtering](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-filtering) | configuration | 0.68 | The article describes product-specific filtering options for Azure Network Watcher virtual network flow logs (for example, filtering by flow state, action, IP ranges, ports, protocols, intra- vs inter-VNet traffic). These are concrete configuration capabilities and parameters unique to this service, not just conceptual logging guidance, fitting the configuration sub-skill best. |
@@ -113,7 +121,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Inspect to find anomalies](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-inspect) | 0.50 | Explains how to inspect capture files using external tools; more of a usage guide than a configuration or troubleshooting reference. |
 | [Install Azure Connected Machine agent](https://learn.microsoft.com/en-us/azure/network-watcher/connection-monitor-connected-machine-agent) | 0.50 | Agent install script usage; summary does not show detailed parameter tables or product-specific troubleshooting/error mappings. |
 | [Manage packet captures](https://learn.microsoft.com/en-us/azure/network-watcher/packet-capture-manage) | 0.50 | How-to manage packet captures (start/stop/download/delete); procedural without explicit limits tables or config references in summary. |
-| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) | 0.50 | Overview of Connection Troubleshoot; conceptual description of what issues it detects and responses, without detailed error code mappings or limits in summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-diagnostics-overview) | 0.50 | Overview of NSG diagnostics; summary does not show specific error codes, rule IDs, or configuration matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vpn-troubleshoot-overview) | 0.50 | Overview of VPN troubleshoot; conceptual description of capability, not detailed troubleshooting mappings or limits in summary. |
 | [Portal](https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-communication-problem-between-networks) | 0.50 | Tutorial for diagnosing VNet-to-VNet VPN issues; scenario-based but not a general troubleshooting reference with structured error/solution mappings. |
@@ -137,7 +144,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview) | 0.25 | Overview of NSG flow logs and retirement notice; summary does not indicate detailed configuration tables, limits, or troubleshooting mappings. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics) | 0.25 | High-level overview of Traffic Analytics capabilities and benefits; summary does not indicate detailed configuration parameters, limits, or troubleshooting content. |
 | [Monitor communication between VMs](https://learn.microsoft.com/en-us/azure/network-watcher/monitor-vm-communication) | 0.20 | Step-by-step tutorial using portal; no indication of detailed settings tables, limits, or troubleshooting codes. |
+| [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) | 0.20 | Page is an overview of the Network Watcher connection troubleshoot feature, describing what it does and the kinds of issues it can detect, but not providing specific error codes, diagnostic commands, configuration parameters, or numeric limits. It lacks the concrete symptom→cause→solution mappings or detailed settings required for troubleshooting or configuration classifications. |
 | [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) | 0.20 | Conceptual overview of virtual network flow logs and their uses; summary does not indicate detailed configuration parameters, limits, or troubleshooting mappings. |
+| [Rules impact analyzer](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-rule-impact-analyzer) | 0.20 | Page describes how to use Rule Impact Analyzer in Traffic Analytics via the Azure portal. It is a feature-usage guide without detailed limits, configuration tables, security role definitions, or troubleshooting mappings. No quantified decision criteria or expert-only reference data is evident from the summary. |
 | [Usage scenarios](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-usage-scenarios) | 0.20 | Usage scenarios article describing how Traffic Analytics can provide insights; scenario-focused but not clearly exposing configuration tables, limits, or error mappings. |
 | [VM Network Troubleshooter](https://learn.microsoft.com/en-us/azure/network-watcher/vm-network-troubleshooter) | 0.20 | Preview feature overview describing what VM Network Troubleshooter is and its purpose; no indication of concrete error codes, commands, or configuration specifics. |
+| [Visualize flow logs with Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-power-bi) | 0.20 | Page is a how-to/tutorial for visualizing Network Watcher flow logs in Power BI. It focuses on using Power BI to explore existing logs, without listing product-specific limits, configuration parameter tables, error codes, or decision matrices. Content is procedural rather than expert reference material. |
 | [What is Azure Network Watcher?](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview) | 0.20 | High-level overview of Network Watcher capabilities without detailed limits, configs, or error mappings. |

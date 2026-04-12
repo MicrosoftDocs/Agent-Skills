@@ -3,7 +3,7 @@ name: azure-data-science-vm
 description: Expert knowledge for Azure Data Science Virtual Machines development including troubleshooting, decision making, architecture & design patterns, security, configuration, integrations & coding patterns, and deployment. Use when managing DSVM images/tools, IaC deployment (Bicep/ARM), Key Vault secrets, MLflow, or GPU/Jupyter issues, and other Azure Data Science Virtual Machines related development tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Machine Learning (use azure-machine-learning), Azure Databricks (use azure-databricks), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-02-28"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Data Science Virtual Machines Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L40-L44 | Guidance for upgrading Azure Data Science VMs from Ubuntu 18.04 to 20.04, including migration steps, compatibility considerations, and preserving tools/configurations. |
 | Architecture & Design Patterns | L45-L50 | Designing scalable DSVM-based analytics environments, including architecture patterns, shared VM pools, team workflows, and resource management for data science teams. |
 | Security | L51-L56 | Managing identities and credentials for Azure DSVMs, including shared identity setup, managed identities, and securing secrets with Azure Key Vault. |
-| Configuration | L57-L70 | Details of all preinstalled tools, frameworks, languages, and images on Azure DSVMs, including ML/deep learning, data ingestion, dev/productivity tools, and release/version info. |
-| Integrations & Coding Patterns | L71-L75 | Using MLflow on Azure DSVMs to track experiments, log metrics/artifacts, and integrate runs with Azure Machine Learning for centralized experiment management |
-| Deployment | L76-L80 | How to deploy Azure Data Science VMs using infrastructure-as-code, including Bicep and ARM templates, parameters, and configuration best practices. |
+| Configuration | L57-L69 | Details of all preinstalled tools, frameworks, languages, and images on Azure DSVMs, including ML/deep learning, data ingestion, dev/productivity tools, and release/version info. |
+| Integrations & Coding Patterns | L70-L74 | Using MLflow on Azure DSVMs to track experiments, log metrics/artifacts, and integrate runs with Azure Machine Learning for centralized experiment management |
+| Deployment | L75-L79 | How to deploy Azure Data Science VMs using infrastructure-as-code, including Bicep and ARM templates, parameters, and configuration best practices. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -57,7 +57,6 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Review data platform tools on Azure DSVM | https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-platforms?view=azureml-api-2 |
 | Use preinstalled ML tools on Azure DSVM | https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-science?view=azureml-api-2 |
 | Check deep learning frameworks on Azure DSVM | https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-deep-learning-frameworks?view=azureml-api-2 |
 | Identify development tools available on DSVM | https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-development?view=azureml-api-2 |

@@ -46,9 +46,9 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 - **Unclassified**: 20
 
 ### Incremental Update
-- **New Pages**: 3
-- **Updated Pages**: 2
-- **Unchanged**: 62
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 67
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dev-box/azure-dev-box.csv`
 
@@ -67,19 +67,6 @@ confusable_not_for: Not for Azure DevTest Labs (use azure-devtest-labs), Azure V
 | *(Unclassified)* | 20 | 29.9% |
 
 ## Changes
-
-### New Pages
-
-- [Enable guest user access](https://learn.microsoft.com/en-us/azure/dev-box/how-to-enable-guest-access)
-- [Troubleshoot custom image validation](https://learn.microsoft.com/en-us/azure/dev-box/how-to-troubleshoot-custom-image-validation)
-- [Prepare a custom image](https://learn.microsoft.com/en-us/azure/dev-box/how-to-prepare-custom-image-dev-box)
-
-### Updated Pages
-
-- [Manage project access](https://learn.microsoft.com/en-us/azure/dev-box/how-to-manage-dev-box-access)
-  - Updated: 2025-09-14T22:14:00.000Z → 2026-04-03T06:12:00.000Z
-- [Microsoft Dev Box deployment guide](https://learn.microsoft.com/en-us/azure/dev-box/concept-dev-box-deployment-guide)
-  - Updated: 2025-08-22T08:00:00.000Z → 2026-03-31T22:19:00.000Z
 
 ## Classified Pages
 

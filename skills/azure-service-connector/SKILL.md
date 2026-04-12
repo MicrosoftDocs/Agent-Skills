@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring apps to Azure DBs, messaging, storage, AI, or cache via Service Connector roles, CLI, and IaC, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to DBs, messaging, storage, AI, or config services via Service Connector APIs, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -25,11 +25,11 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L34-L38 | Diagnosing and resolving Service Connector errors and failures, including common error codes, connection issues, and steps to debug and fix failed connections. |
-| Limits & Quotas | L39-L43 | Details on current Service Connector feature gaps, unsupported scenarios, resource limits, and constraints you must consider when designing or troubleshooting connections. |
+| Limits & Quotas | L39-L43 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
 | Security | L44-L49 | Details on what Azure and Microsoft Entra roles/permissions Service Connector needs or assigns, and how to review and manage those access requirements securely |
-| Configuration | L50-L56 | How to view and retrieve Service Connector-generated configs, choose and set up auth methods, and supply correct Azure CLI parameters when creating or managing connections |
-| Integrations & Coding Patterns | L57-L86 | How to use Azure Service Connector to securely connect apps to databases, messaging, storage, AI, and caching services (Cosmos DB, Kafka, SQL, Redis, Key Vault, OpenAI, etc.) |
-| Deployment | L87-L91 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
+| Configuration | L50-L57 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
+| Integrations & Coding Patterns | L58-L87 | Patterns and how-to guides for connecting apps to databases, messaging, storage, AI, and config services using Azure Service Connector (auth options, setup steps, language samples). |
+| Deployment | L88-L91 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -39,7 +39,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Understand current Service Connector limitations | https://learn.microsoft.com/en-us/azure/service-connector/known-limitations |
+| Service Connector limitations and mitigation guidance | https://learn.microsoft.com/en-us/azure/service-connector/known-limitations |
 
 ### Security
 | Topic | URL |
@@ -50,6 +50,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
+| Define Azure Service Connector IaC connection settings | https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools |
 | Retrieve Service Connector-added connection configurations | https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations |
 | Configure authentication options in Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication |
 | Provide correct CLI parameters to Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters |
@@ -60,13 +61,13 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Foundry Tools via Azure Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-ai-services |
 | Integrate Azure App Configuration via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-app-configuration |
 | Connect Azure AI multi-service via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cognitive-services |
-| Connect Confluent Cloud Kafka via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka |
+| Connect Confluent Cloud Kafka with Azure via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-confluent-kafka |
 | Connect Cosmos DB Cassandra via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-cassandra |
 | Connect Cosmos DB MongoDB via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-db |
 | Connect Cosmos DB Gremlin via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-gremlin |
 | Connect Cosmos DB NoSQL via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-sql |
 | Connect Cosmos DB Table via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-cosmos-table |
-| Connect Azure Event Hubs via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs |
+| Configure Service Connector integration with Azure Event Hubs | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-event-hubs |
 | Connect Fabric SQL database via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-fabric-sql |
 | Connect Azure Key Vault via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-key-vault |
 | Connect MongoDB Atlas via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-mongodb-atlas |
@@ -76,7 +77,7 @@ This skill requires **network access** to fetch documentation content:
 | Connect Azure Database for PostgreSQL via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-postgres |
 | Integrate Azure Cache for Redis using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-redis-cache |
 | Connect Azure Service Bus via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-service-bus |
-| Connect Azure SignalR Service via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr |
+| Integrate Azure SignalR Service using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr |
 | Connect Azure SQL Database via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-sql-database |
 | Integrate Azure Blob Storage with Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob |
 | Connect Azure Files via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file |
@@ -88,4 +89,3 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Check Service Connector regional support by compute service | https://learn.microsoft.com/en-us/azure/service-connector/concept-region-support |
-| Create Service Connector connections with IaC tools | https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools |

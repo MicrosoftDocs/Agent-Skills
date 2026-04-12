@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   security: 'Configuring ADX security: auth/RBAC, managed identities, encryption/CMK,
     network isolation (private endpoints, outbound/public access), policies, locks,
@@ -50,8 +50,8 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Total Pages**: 197
 - **Fetched**: 197
 - **Fetch Failed**: 0
-- **Classified**: 108
-- **Unclassified**: 89
+- **Classified**: 107
+- **Unclassified**: 90
 
 ### Incremental Update
 - **New Pages**: 0
@@ -64,7 +64,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 4 | 2.0% |
+| architecture-patterns | 3 | 1.5% |
 | best-practices | 8 | 4.1% |
 | configuration | 13 | 6.6% |
 | decision-making | 10 | 5.1% |
@@ -73,14 +73,14 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | limits-quotas | 7 | 3.6% |
 | security | 24 | 12.2% |
 | troubleshooting | 7 | 3.6% |
-| *(Unclassified)* | 89 | 45.2% |
+| *(Unclassified)* | 90 | 45.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Azure Pipelines](https://learn.microsoft.com/en-us/azure/data-explorer/devops)
-  - Updated: 2025-09-30T22:03:00.000Z → 2026-03-25T17:04:00.000Z
+- [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview)
+  - Updated: 2025-08-28T05:02:00.000Z → 2026-04-09T22:03:00.000Z
 
 ## Classified Pages
 
@@ -121,7 +121,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Authenticate external tables with managed identities](https://learn.microsoft.com/en-us/azure/data-explorer/external-tables-managed-identities) | security | 0.70 | Shows how to configure external tables to use managed identities for access; product-specific auth configuration. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/data-explorer/policy-reference) | security | 0.70 | Policy reference lists specific built-in policy definitions, names, and effects for ADX resources, which are security/governance configuration artifacts. |
 | [Best practices for Power BI](https://learn.microsoft.com/en-us/azure/data-explorer/power-bi-best-practices) | best-practices | 0.70 | Explicitly a best-practices article for a specific integration (Power BI with Azure Data Explorer). Such docs typically include concrete recommendations (query patterns, DirectQuery vs import, model design) that are product- and integration-specific and go beyond generic BI advice. |
-| [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview) | architecture-patterns | 0.70 | Business continuity overview discusses native capabilities and multiple DR configurations based on recoverability requirements; this is architecture guidance with ADX-specific patterns and trade-offs. |
 | [Cluster encryption overview](https://learn.microsoft.com/en-us/azure/data-explorer/cluster-encryption-overview) | security | 0.70 | Describes specific encryption models for data at rest and cached data; product-specific security configuration. |
 | [Conditional Access](https://learn.microsoft.com/en-us/azure/data-explorer/security-conditional-access) | security | 0.70 | Explains how to apply Conditional Access to Data Explorer clusters; product-specific security and access control configuration. |
 | [Configure customer-managed keys](https://learn.microsoft.com/en-us/azure/data-explorer/customer-managed-keys) | security | 0.70 | Contains product-specific security configuration details for using customer-managed keys with Azure Key Vault, including co-location requirements (same region) and service-specific encryption behavior that go beyond generic security concepts. |
@@ -279,6 +278,7 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | [Explore the results grid](https://learn.microsoft.com/en-us/azure/data-explorer/web-results-grid) | 0.25 | Results grid usage guide; UI operations rather than deep configuration or troubleshooting content. |
 | [Share queries](https://learn.microsoft.com/en-us/azure/data-explorer/web-share-queries) | 0.25 | Shows how to share queries and export results; mostly UI and workflow, not expert configuration or limits. |
 | [Visualization integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-visualize-overview) | 0.25 | Visualization integrations overview is primarily a catalog/marketing-style summary without deep configuration tables or limits. |
+| [Business continuity overview](https://learn.microsoft.com/en-us/azure/data-explorer/business-continuity-overview) | 0.20 | Content is an overview of business continuity and disaster recovery options (RPO/RTO, configurations, reliability options) without specific numeric limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It’s primarily conceptual guidance rather than detailed expert configuration, limits, or troubleshooting information. |
 | [Explore the sample gallery](https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-samples-query) | 0.20 | Sample data exploration tutorial; mainly KQL examples and navigation, not configuration or limits. |
 | [How Azure Data Explorer works](https://learn.microsoft.com/en-us/azure/data-explorer/how-it-works) | 0.20 | Explains how the service works conceptually; no specific configuration tables, limits, or troubleshooting mappings. |
 | [Integrations overview](https://learn.microsoft.com/en-us/azure/data-explorer/integrate-overview) | 0.20 | Integrations overview is explicitly high-level, listing connectors and links; no deep configuration, limits, or patterns indicated. |

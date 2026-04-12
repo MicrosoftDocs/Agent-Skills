@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: 'Configuring IoT Edge devices and modules: networking, gateways,
     EFLOW/VM, GPUs, storage, metrics/monitoring, proxies, and large-scale provisioning
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 7
-- **Unchanged**: 91
+- **Updated Pages**: 1
+- **Unchanged**: 97
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot-edge/azure-iot-edge.csv`
 
@@ -78,20 +78,8 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 
 ### Updated Pages
 
-- [Access TPM secrets](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-access-dtpm)
-  - Updated: 2025-06-06T05:14:00.000Z → 2026-04-01T08:00:00.000Z
-- [PowerShell functions](https://learn.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions)
-  - Updated: 2026-02-20T08:00:00.000Z → 2026-03-20T08:00:00.000Z
-- [Manage device certificates](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates)
-  - Updated: 2026-03-03T23:37:00.000Z → 2026-03-23T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-cli)
-  - Updated: 2025-05-08T22:03:00.000Z → 2026-04-01T08:00:00.000Z
-- [Azure CLI](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-deploy-cli-at-scale)
-  - Updated: 2025-05-19T17:08:00.000Z → 2026-04-01T08:00:00.000Z
-- [Monitor module twins](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-monitor-module-twins)
-  - Updated: 2025-06-09T22:05:00.000Z → 2026-04-01T08:00:00.000Z
-- [Diagnose IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/troubleshoot)
-  - Updated: 2026-03-02T23:28:00.000Z → 2026-04-01T08:00:00.000Z
+- [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module)
+  - Updated: 2026-02-27T08:00:00.000Z → 2026-04-06T08:00:00.000Z
 
 ## Classified Pages
 
@@ -192,7 +180,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Central
 | [About EFLOW](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows) | 0.20 | Described as an overview of Azure IoT Edge for Linux on Windows (EFLOW), explaining what it is and its high-level capabilities. This is conceptual/marketing-style content without clear indication of detailed configuration parameters, limits, or troubleshooting data. |
 | [Create a hierarchy of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge-for-linux-on-windows) | 0.20 | Tutorial on creating a hierarchy of IoT Edge for Linux on Windows devices (nested edge). From the summary it appears to be a step-by-step scenario/tutorial without detailed configuration tables, limits, or product-specific diagnostic/security parameters; more procedural than reference, so it likely doesn’t contain the kind of expert-only configuration or troubleshooting data required. |
 | [Create hierarchies of IoT Edge devices](https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-nested-iot-edge) | 0.20 | Tutorial on creating a nested hierarchy of IoT Edge devices. From the summary, it focuses on conceptual explanation and guided setup of hierarchical layers, without clear evidence of limits/quotas, decision matrices, security role tables, or other expert-knowledge-style configuration or troubleshooting content. |
-| [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module) | 0.20 | Primarily a step-by-step tutorial for developing and debugging IoT Edge modules in Visual Studio. The summary does not indicate presence of configuration parameter tables, limits, error-code-based troubleshooting, or product-specific best-practice guidance with quantified impact; it appears to be procedural how-to content. |
+| [Develop modules with Visual Studio](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module) | 0.20 | Primarily a how-to/tutorial for developing and debugging IoT Edge modules in Visual Studio. From the summary, it focuses on using templates and supported architectures, without indicating detailed configuration tables, limits, error-code mappings, or product-specific settings that meet the expert-knowledge criteria for any sub-skill type. |
 | [IoT Edge runtime](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime) | 0.20 | Described as an explanation of runtime and architecture responsibilities; this is primarily conceptual architecture/overview content without clear decision matrices, limits, or configuration tables in the summary. |
 | [Version history and release notes](https://learn.microsoft.com/en-us/azure/iot-edge/version-history) | 0.20 | Release history and notes; summary does not indicate numeric limits, configuration tables, error-code mappings, or other structured expert details—primarily version/lifecycle info. |
 | [Benefits](https://learn.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows-benefits) | 0.15 | The page focuses on benefits and reasons to use EFLOW, which is marketing/positioning content. It does not appear to contain specific configuration settings, limits, or decision matrices with quantified trade-offs. |

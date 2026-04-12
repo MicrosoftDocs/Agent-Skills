@@ -27,9 +27,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L34-L46 | Guidance on using Azure Advisor to assess architectures and apply cost, performance, operational excellence, and reliability recommendations, including bulk fixes and cost-savings calculations. |
 | Decision Making | L47-L55 | Using Advisor workbooks and critical risk views to evaluate reliability, assess and optimize costs, and plan migrations based on service retirement and recommendation impact |
 | Limits & Quotas | L56-L60 | Advisor feature availability, limits, and differences when running in Azure sovereign clouds (e.g., Azure Government, China), including which recommendations are supported. |
-| Security | L61-L66 | Managing who can view or dismiss Azure Advisor recommendations using Azure RBAC, including configuring roles, permissions, and access control for Advisor. |
-| Configuration | L67-L76 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
-| Integrations & Coding Patterns | L77-L81 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto queries and sample patterns to filter, analyze, and report on Advisor data at scale |
+| Security | L61-L65 | Managing who can view or dismiss Azure Advisor recommendations using Azure RBAC, including configuring roles, permissions, and access control for Advisor. |
+| Configuration | L66-L75 | Setting up and customizing Azure Advisor: creating alerts (portal, ARM, Bicep), email digests, tag-based filtering, and using workbooks for monitoring and insights. |
+| Integrations & Coding Patterns | L76-L80 | Querying Azure Advisor recommendations via Azure Resource Graph, using Kusto queries and sample patterns to filter, analyze, and report on Advisor data at scale |
 
 ### Best Practices
 | Topic | URL |
@@ -61,7 +61,6 @@ This skill requires **network access** to fetch documentation content:
 ### Security
 | Topic | URL |
 |-------|-----|
-| Control who can dismiss Azure Advisor recommendations | https://learn.microsoft.com/en-us/azure/advisor/advisor-dismiss-postpone |
 | Configure Azure Advisor access roles and permissions | https://learn.microsoft.com/en-us/azure/advisor/permissions |
 
 ### Configuration

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   decision-making: Choosing Azure SQL deployment, compute, and licensing options (DTU
     vs vCore, serverless, Hyperscale), cost/DR planning, migration paths, and automation/standby
@@ -7,9 +7,9 @@ category_descriptions:
   troubleshooting: 'Diagnosing and fixing Azure SQL issues: performance (CPU, memory,
     deadlocks, blocking), connectivity, capacity/scaling, geo‑replication, data sync,
     imports/exports, and transaction log errors.'
-  configuration: 'Configuring Azure SQL: monitoring, maintenance, backups/immutability,
-    scaling and elastic pools, geo-replication/failover, Data Sync, networking/TLS/DNS,
-    and deployment via CLI/PowerShell/ARM.'
+  configuration: 'Configuring Azure SQL databases: monitoring, backups, geo-replication/failover,
+    security/immutability, scaling and elastic pools, Data Sync, maintenance windows,
+    and CLI/PowerShell setup.'
   best-practices: 'Best practices for Azure SQL operations: monitoring, security,
     HA/DR, failover, maintenance, space management, read replicas, elastic pools,
     Data Sync, and post-migration T-SQL adaptation.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure SQL Database development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication/Data Sync,
-  or securing with Entra/TDE, and other Azure SQL Database related development tasks.
-  Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server
-  on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use
-  azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
-use_when: Use when choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication/Data
-  Sync, or securing with Entra/TDE, and other Azure SQL Database related development
+  choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication, elastic pools,
+  Data Sync, or HA/DR, and other Azure SQL Database related development tasks. Not
+  for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for
+  MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql),
+  Azure SQL Managed Instance (use azure-sql-managed-instance).
+use_when: Use when choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication,
+  elastic pools, Data Sync, or HA/DR, and other Azure SQL Database related development
   tasks.
-confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-instance),
-  SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos
-  DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
+confusable_not_for: Not for Azure Database for MariaDB (use azure-database-mariadb),
+  Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL
+  (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
 ---
 # Azure SQL Database Crawl Report
 
@@ -54,10 +54,10 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 - **Unclassified**: 123
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 27
-- **Unchanged**: 333
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 359
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-database/azure-sql-database.csv`
 
 ## Classification Statistics
@@ -77,58 +77,14 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 
 ## Changes
 
-### New Pages
-
-- [Elastic Query alternatives](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-horizontal-partitioning-migration?view=azuresql)
-- [Restore deleted server](https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql)
-
 ### Updated Pages
 
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-03-26T22:35:00.000Z
-- [Create users using service principals](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql)
-  - Updated: 2025-09-18T08:00:00.000Z → 2026-03-18T08:00:00.000Z
-- [T-SQL differences from SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/database/transact-sql-tsql-differences-sql-server?view=azuresql)
-  - Updated: 2026-02-19T08:00:00.000Z → 2026-04-02T08:00:00.000Z
-- [Auditing overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql)
-  - Updated: 2026-01-21T18:36:00.000Z → 2026-04-03T17:39:00.000Z
-- [Scale up / down](https://learn.microsoft.com/en-us/azure/azure-sql/database/scale-resources?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-04-03T22:38:00.000Z
-- [Block T-SQL CRUD](https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql)
-  - Updated: 2026-03-18T17:39:00.000Z → 2026-03-31T22:34:00.000Z
-- [Upgrade client library](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-upgrade-client-library?view=azuresql)
-  - Updated: 2025-12-10T18:36:00.000Z → 2026-03-19T17:42:00.000Z
-- [Create sharded app](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-get-started?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-03-19T17:42:00.000Z
-- [Query horizontally-sharded data](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-getting-started?view=azuresql)
-  - Updated: 2025-06-16T17:33:00.000Z → 2026-03-19T17:42:00.000Z
-- [Migrate sharded database](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-convert-to-use-elastic-tools?view=azuresql)
-  - Updated: 2025-06-17T22:32:00.000Z → 2026-03-19T17:42:00.000Z
-- [Create counters](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-perf-counters?view=azuresql)
-  - Updated: 2025-06-17T22:32:00.000Z → 2026-03-19T17:42:00.000Z
-- [Report across scaled-out data tier](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-horizontal-partitioning?view=azuresql)
-  - Updated: 2025-06-16T17:33:00.000Z → 2026-03-17T08:00:00.000Z
-- [Audit to storage account behind VNet or firewall](https://learn.microsoft.com/en-us/azure/azure-sql/database/audit-write-storage-account-behind-vnet-firewall?view=azuresql)
-  - Updated: 2025-06-11T22:31:00.000Z → 2026-04-03T17:39:00.000Z
-- [Manage file space](https://learn.microsoft.com/en-us/azure/azure-sql/database/file-space-manage?view=azuresql-db)
-  - Updated: 2025-01-28T08:00:00.000Z → 2026-03-25T17:35:00.000Z
-- [Private Link](https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql)
-  - Updated: 2025-06-24T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
-  - Updated: 2025-04-07T17:39:00.000Z → 2026-04-02T22:40:00.000Z
-- [Elastic queries](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-overview?view=azuresql)
-  - Updated: 2025-01-30T08:00:00.000Z → 2026-03-17T08:00:00.000Z
-- [Elastic client library](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-client-library?view=azuresql)
-  - Updated: 2025-06-17T22:32:00.000Z → 2026-03-19T17:42:00.000Z
-- [Query routing](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-data-dependent-routing?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-03-19T17:42:00.000Z
-- [Manage credentials](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-manage-credentials?view=azuresql)
-  - Updated: 2025-06-16T17:33:00.000Z → 2026-03-19T17:42:00.000Z
-- *...and 7 more*
-
-### Deleted Pages
-
-- ~~Deleted server restore~~ (https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql)
+- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql)
+  - Updated: 2025-11-24T18:39:00Z → 2026-04-06T22:36:00Z
+- [Intelligent applications and AI](https://learn.microsoft.com/en-us/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications?view=azuresql)
+  - Updated: 2025-11-18T15:49:00.000Z → 2026-04-06T22:36:00.000Z
+- [Restore deleted server](https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql)
+  - Updated: 2026-03-26T22:35:00.000Z → 2026-04-07T08:00:00.000Z
 
 ## Classified Pages
 
@@ -286,7 +242,7 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Request quota increases](https://learn.microsoft.com/en-us/azure/azure-sql/database/quota-increase-request?view=azuresql) | limits-quotas | 0.70 | Describes how to request increases for specific quotas and subscription access; while process-focused, it is directly tied to numeric quota limits and their management. |
 | [Reservations](https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql) | decision-making | 0.70 | Explains Azure Reservations for SQL Database and Managed Instance with cost/commitment trade-offs; supports SKU and term selection decisions. |
 | [Restore a database](https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/restore-database-powershell?view=azuresql) | integrations | 0.70 | Shows concrete Az PowerShell commands and parameters to perform point-in-time restore from automatic backups, a detailed product-specific scripting pattern. |
-| [Restore deleted server](https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql) | configuration | 0.70 | Describes how to configure soft delete retention for Azure SQL logical servers and restore deleted servers within the retention window using portal/PowerShell/Az CLI, including product-specific retention settings and restore behavior that go beyond generic knowledge. |
+| [Restore deleted server](https://learn.microsoft.com/en-us/azure/azure-sql/database/deleted-logical-server-restore?view=azuresql) | configuration | 0.70 | The article describes configuring soft delete retention for Azure SQL logical servers and restoring deleted servers via portal/PowerShell/Az CLI. This involves product-specific configuration parameters (soft delete retention period, retention window behavior) and operational steps unique to Azure SQL logical servers, which qualify as expert knowledge. It is not primarily about limits/quotas, troubleshooting, or deployment, but about how to configure and use the soft delete feature. |
 | [Reverse migrate from Hyperscale](https://learn.microsoft.com/en-us/azure/azure-sql/database/reverse-migrate-from-hyperscale?view=azuresql) | decision-making | 0.70 | Reverse migration guidance inherently covers when and how to move back from Hyperscale, including constraints and emergency scenarios—specialized migration/decision content. |
 | [Rotate TDE BYOK keys](https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation?view=azuresql) | security | 0.70 | Describes rotating the TDE protector backed by Azure Key Vault for Azure SQL Database/Managed Instance/Synapse. Includes concrete security operations and commands for changing the protector key, which are product-specific security configuration patterns rather than generic key-rotation theory. |
 | [SQL Data Sync retirement](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-data-sync-retirement-migration?view=azuresql) | decision-making | 0.70 | Focused on migration options and alternative replication/synchronization solutions, guiding users in choosing replacement technologies and approaches. |
@@ -438,7 +394,6 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Elastic client library](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-database-client-library?view=azuresql) | 0.20 | Page is about building scalable cloud databases with the Elastic Database client library but appears to be an overview/introduction; summary does not indicate detailed configuration parameters, limits, or troubleshooting patterns. |
 | [Elastic queries](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-query-overview?view=azuresql) | 0.20 | Elastic query overview describes capability and scenarios for cross-database queries; lacks detailed configuration tables, limits, or error-resolution content. |
 | [In-memory technology overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/in-memory-oltp-overview?view=azuresql) | 0.20 | High-level overview of in-memory technologies; does not expose detailed configuration parameters or limits. |
-| [Intelligent applications and AI](https://learn.microsoft.com/en-us/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications?view=azuresql) | 0.20 | Conceptual overview of AI and vectors with Azure SQL; does not emphasize numeric thresholds, config matrices, or error-resolution mappings. |
 | [Ledger](https://learn.microsoft.com/en-us/azure/azure-sql/database/ledger-landing?view=azuresql) | 0.20 | Landing page for ledger documentation; contains only navigation, no detailed technical content. |
 | [Long-term backup retention](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) | 0.20 | The page is a conceptual overview of long-term retention backups for Azure SQL Database and Managed Instance. While it mentions retention can be configured for up to 10 years, it does not provide detailed numeric limits tables, configuration parameters, or tier-specific constraints; it primarily explains what LTR is and points to other how-to content. |
 | [Move sharded data](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-configure-deploy-split-and-merge?view=azuresql) | 0.20 | The summary indicates this is a deployment/how-to page for the split-merge tool with a lifecycle note about Cloud Services (Classic). From the available text, there are no specific configuration parameter tables, limits, error codes, or decision matrices. It appears to be procedural guidance rather than detailed expert configuration, limits, or troubleshooting content. |
@@ -456,11 +411,12 @@ confusable_not_for: Not for Azure SQL Managed Instance (use azure-sql-managed-in
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' release-note links and documentation changes; no detailed limits, configs, troubleshooting mappings, or other structured expert data indicated. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive page summarizing older feature and documentation updates; functions as navigation/history, not detailed technical guidance with specific parameters or limits. |
 | [Copilot sample prompts](https://learn.microsoft.com/en-us/azure/azure-sql/copilot/copilot-prompts-list?view=azuresql) | 0.10 | List of example prompts; no product-specific configuration, limits, or troubleshooting content. |
-| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql) | 0.10 | Landing/navigation page listing concepts and quickstarts; no deep technical details. |
+| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/?view=azuresql) | 0.10 | Landing/overview page that aggregates concepts, quickstarts, and tutorials for Azure SQL Database; does not itself contain detailed limits, configuration tables, error codes, or other expert-only specifics. |
 | [Elastic pools](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-overview?view=azuresql) | 0.10 | Conceptual overview of elastic pools and pricing benefits; lacks concrete limits, configuration tables, or troubleshooting content. |
 | [Elastic tools FAQ](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-faq?view=azuresql) | 0.10 | Elastic Scale FAQ is likely Q&A style with general information; summary provides no indication of detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Glossary](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-glossary?view=azuresql) | 0.10 | Glossary page defining terms for elastic database tools; terminology explanations are conceptual, not expert configuration, limits, or troubleshooting content. |
 | [How to](https://learn.microsoft.com/en-us/azure/azure-sql/database/how-to-content-reference-guide?view=azuresql) | 0.10 | Content reference/navigation page that links to other guides; no direct expert configuration or troubleshooting content. |
+| [Intelligent applications and AI](https://learn.microsoft.com/en-us/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications?view=azuresql) | 0.10 | High-level overview of using AI and intelligent application patterns with Azure SQL and Fabric SQL; primarily conceptual and referential without detailed limits, configuration parameters, or troubleshooting mappings. |
 | [Logical servers](https://learn.microsoft.com/en-us/azure/azure-sql/database/logical-servers?view=azuresql) | 0.10 | Describes what a logical server is; mostly conceptual with no detailed configuration parameters or limits. |
 | [Microsoft Entra authentication documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-landing?view=azuresql) | 0.10 | Landing page for Microsoft Entra authentication docs; navigation without detailed settings. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Landing page for migration guides; navigation content without concrete technical details. |

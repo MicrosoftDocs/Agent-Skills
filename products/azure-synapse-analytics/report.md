@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   deployment: 'Deploying and managing Synapse workspaces and dedicated SQL pools:
     ARM/Bicep templates, CI/CD, source control, restore points, maintenance windows,
@@ -50,13 +50,13 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 - **Total Pages**: 446
 - **Fetched**: 446
 - **Fetch Failed**: 0
-- **Classified**: 262
-- **Unclassified**: 184
+- **Classified**: 260
+- **Unclassified**: 186
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 4
-- **Unchanged**: 442
+- **Updated Pages**: 2
+- **Unchanged**: 444
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -66,27 +66,23 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 |------|-------|------------|
 | architecture-patterns | 17 | 3.8% |
 | best-practices | 55 | 12.3% |
-| configuration | 47 | 10.5% |
+| configuration | 45 | 10.1% |
 | decision-making | 16 | 3.6% |
 | deployment | 11 | 2.5% |
 | integrations | 33 | 7.4% |
 | limits-quotas | 6 | 1.3% |
 | security | 55 | 12.3% |
 | troubleshooting | 22 | 4.9% |
-| *(Unclassified)* | 184 | 41.3% |
+| *(Unclassified)* | 186 | 41.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/metadata/overview)
-  - Updated: 2022-10-12T17:06:00.000Z → 2026-03-31T17:12:00.000Z
-- [Maintenance schedule](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/maintenance-scheduling)
-  - Updated: 2024-08-07T16:42:00.000Z → 2026-03-20T22:11:00.000Z
-- [Troubleshoot Spark job failures](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-handle-livy-error)
-  - Updated: 2025-02-27T08:00:00.000Z → 2026-03-31T06:10:00.000Z
-- [Data management](https://learn.microsoft.com/en-us/azure/synapse-analytics/partner/data-management)
-  - Updated: 2025-09-25T17:11:00.000Z → 2026-03-20T22:11:00.000Z
+- [Synapse notebook activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity)
+  - Updated: 2024-12-11T08:00:00.000Z → 2026-02-21T06:13:00.000Z
+- [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity)
+  - Updated: 2024-12-11T08:00:00.000Z → 2025-03-27T17:09:00.000Z
 
 ## Classified Pages
 
@@ -329,8 +325,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Query Azure Cosmos DB analytical store with serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/query-cosmos-db-analytical-store) | integrations | 0.65 | How-to for querying Cosmos DB via serverless SQL pool; expected to include OPENROWSET/EXTERNAL TABLE syntax and configuration options unique to this integration. |
 | [Resource utilization & query activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-concept-resource-utilization-query-activity) | configuration | 0.65 | Includes specific DMVs, portal metrics, and configuration of monitoring/logging for dedicated SQL pool. |
 | [Setup environment](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/setup-environment-cognitive-services) | configuration | 0.65 | Environment setup article; typically includes specific configuration steps, library versions, and settings for SynapseML/Foundry Tools. |
-| [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity) | configuration | 0.65 | Describes a specific pipeline activity; these pages usually include parameter names, types, and behavior for the activity configuration. |
-| [Synapse notebook activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity) | configuration | 0.65 | Activity articles typically document activity-specific settings and parameters; likely includes configuration options unique to Synapse notebook activity. |
 | [Temporary](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-temporary) | limits-quotas | 0.65 | Includes serverless-specific limitations and behavioral constraints for temporary tables (session scope, supported features) that are product-specific. |
 | [Views](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-views) | best-practices | 0.65 | Provides Synapse-specific guidance on view usage, performance, and interaction with distributed storage in dedicated and serverless pools. |
 | [Workload management monitoring](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management-portal-monitor) | configuration | 0.65 | Provides specific metrics, monitoring views, and configuration steps for tracking workload group utilization and query activity. |
@@ -525,6 +519,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | [Serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview) | 0.20 | High-level overview of serverless SQL pool capabilities; no detailed limits, configuration tables, or best-practice specifics. |
 | [Switch to dedicated SQL pool (formerly SQL DW) >](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) | 0.20 | High-level product/feature overview of dedicated SQL pool; no detailed limits, configs, or error mappings. |
 | [Synapse SQL architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-architecture) | 0.20 | Architecture overview of Synapse SQL; conceptual description of components and processing, not product-specific decision matrices or limits. |
+| [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity) | 0.20 | Explains how to use the SQL pool stored procedure activity in Synapse pipelines. From the summary it seems to be a transformation activity tutorial, without evidence of limits tables, config parameter matrices, or error-code troubleshooting content. Likely standard how-to documentation rather than expert reference material. |
+| [Synapse notebook activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity) | 0.20 | Appears to be a how-to/tutorial on creating and using a Synapse notebook activity in a pipeline. Summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. Likely procedural guidance rather than expert reference details. |
 | [Use a sample notebook from the gallery](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/quickstart-gallery-sample-notebook) | 0.20 | Quickstart for using a sample notebook; mostly workflow guidance, not configuration or limits. |
 | [Use serverless SQL pool](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-serverless-sql-pool) | 0.20 | Quickstart tutorial for querying files; mostly step-by-step usage without detailed config matrices or best-practice specifics. |
 | [Use the Retail AI solution](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/quickstart-industry-ai-solutions) | 0.20 | Industry AI solutions overview; appears marketing/overview oriented without detailed technical parameters. |

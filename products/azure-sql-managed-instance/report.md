@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   decision-making: Guidance for choosing Azure SQL Managed Instance vs other Azure
     SQL options, tiers, pools, networking, HA/DR options, ML differences, and planning
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 17
-- **Unchanged**: 223
+- **Updated Pages**: 2
+- **Unchanged**: 238
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sql-managed-instance/azure-sql-managed-instance.csv`
 
@@ -78,40 +78,10 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 
 ### Updated Pages
 
-- [Scale up / down](https://learn.microsoft.com/en-us/azure/azure-sql/database/scale-resources?view=azuresql)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-04-03T22:38:00.000Z
-- [Block T-SQL CRUD](https://learn.microsoft.com/en-us/azure/azure-sql/database/block-crud-tsql?view=azuresql)
-  - Updated: 2026-03-18T17:39:00.000Z → 2026-03-31T22:34:00.000Z
-- [Auditing](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/auditing-configure?view=azuresql)
-  - Updated: 2025-08-27T08:00:00.000Z → 2026-03-24T17:36:00.000Z
-- [Set up the incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql)
-  - Updated: 2024-11-04T08:00:00.000Z → 2026-04-01T17:39:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-03-31T22:34:00.000Z
-- [Try for free](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/free-offer?view=azuresql)
-  - Updated: 2026-03-18T11:48:00.000Z → 2026-03-19T17:42:00.000Z
-- [Frequently asked questions](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/frequently-asked-questions-faq?view=azuresql)
-  - Updated: 2025-12-18T23:35:00Z → 2026-03-24T17:36:00Z
-- [Instance pools](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/instance-pools-overview?view=azuresql)
-  - Updated: 2024-11-19T13:21:00.000Z → 2026-04-01T17:39:00.000Z
-- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/region-availability?view=azuresql)
-  - Updated: 2026-03-13T08:00:00.000Z → 2026-04-02T08:00:00.000Z
-- [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/region-availability?view=azuresql)
-  - Updated: 2026-02-05T18:38:00.000Z → 2026-03-24T00:04:00.000Z
-- [Common connection issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues?view=azuresql)
-  - Updated: 2025-12-04T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Transaction log errors in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues?view=azuresql-db)
-  - Updated: 2025-06-13T08:00:00.000Z → 2026-03-24T08:00:00.000Z
-- [Transaction log errors in Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/troubleshoot-transaction-log-errors-issues?view=azuresql-mi)
-  - Updated: 2023-09-11T22:32:00.000Z → 2026-03-24T08:00:00.000Z
-- [Configure service endpoint policies for SQL MI](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/service-endpoint-policies-configure?view=azuresql)
-  - Updated: 2025-01-15T18:31:00.000Z → 2026-04-01T17:39:00.000Z
-- [Configure private endpoint](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/private-endpoint-overview?view=azuresql)
-  - Updated: 2025-10-22T08:00:00.000Z → 2026-03-30T08:00:00.000Z
-- [TDE certificate](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/tde-certificate-migrate?view=azuresql)
-  - Updated: 2025-02-27T08:00:00.000Z → 2026-04-01T17:39:00.000Z
-- [Configure link with SSMS](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-configure-how-to-ssms?view=azuresql)
-  - Updated: 2024-10-09T08:00:00.000Z → 2026-04-01T17:39:00.000Z
+- [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql)
+  - Updated: 2025-11-24T18:39:00Z → 2026-04-06T22:36:00Z
+- [Restore sample database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-sample-database-quickstart?view=azuresql)
+  - Updated: 2025-09-11T08:00:00.000Z → 2026-04-09T22:36:00.000Z
 
 ## Classified Pages
 
@@ -317,7 +287,6 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/log-replay-service-overview?view=azuresql) | 0.40 | Overview of Log Replay Service; focuses on what it is and scenarios, not detailed configuration or limits in the summary. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/machine-learning-services-overview?view=azuresql) | 0.40 | Overview of Machine Learning Services; mostly conceptual description of capabilities (Python/R in-database) without detailed configuration or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) | 0.40 | High-level overview of Windows Authentication for Entra principals; primarily conceptual and marketing-style positioning without clear evidence of detailed configuration parameters or role mappings. |
-| [Restore sample database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-sample-database-quickstart?view=azuresql) | 0.40 | Quickstart for restoring a sample database; mostly procedural SSMS steps without broad configuration reference or limits. |
 | [Temporal tables](https://learn.microsoft.com/en-us/azure/azure-sql/temporal-tables?view=azuresql) | 0.40 | Intro to temporal tables; likely syntax and concepts rather than product-specific limits or configs beyond standard SQL knowledge. |
 | [Transactional replication](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/replication-transactional-overview?view=azuresql) | 0.40 | Transactional replication overview; describes feature and scenarios without clear indication of detailed configuration tables or limits. |
 | [Management operations overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-overview?view=azuresql) | 0.35 | Management operations overview; largely conceptual description of operation types and references to another article for durations, without detailed parameters here. |
@@ -347,6 +316,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Multi-model features](https://learn.microsoft.com/en-us/azure/azure-sql/multi-model-features?view=azuresql) | 0.20 | Explains multi-model capabilities conceptually (relational, graph, JSON, XML, spatial, key-value) without product-specific limits, configuration parameters, or decision matrices. |
 | [Query editor (Classic)](https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor-classic?view=azuresql) | 0.20 | Describes the classic Azure portal query editor experience and how to run T-SQL in the browser. It is a tool/UX overview without detailed configuration tables, limits, error-code mappings, or other expert-only specifics. |
 | [Reservations](https://learn.microsoft.com/en-us/azure/azure-sql/database/reservations-discount-overview?view=azuresql) | 0.20 | Overview of reservations discount; billing concept without technical limits or configuration parameters. |
+| [Restore sample database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/restore-sample-database-quickstart?view=azuresql) | 0.20 | Step-by-step quickstart showing how to restore a sample database using SSMS; procedural tutorial without product-specific limits, configuration option tables, or troubleshooting mappings. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/az-cli-script-samples-content-guide?view=azuresql) | 0.20 | High-level index of CLI samples; does not itself list parameters, limits, or detailed configs. |
 | [Samples overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/powershell-script-content-guide?view=azuresql) | 0.20 | Index page for PowerShell scripts; lacks detailed configuration tables or error mappings itself. |
 | [What is Azure SQL Managed Instance?](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) | 0.20 | High-level PaaS overview and marketing-style description; no detailed limits, configs, or decision matrices. |
@@ -354,7 +324,7 @@ confusable_not_for: Not for Azure SQL Database (use azure-sql-database), SQL Ser
 | [Always Encrypted](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql) | 0.10 | Landing page for Always Encrypted docs; no detailed content itself. |
 | [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive of 'what's new' release-note links and documentation changes; no detailed limits, configs, troubleshooting mappings, or other structured expert data indicated. |
 | [Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new-archive?view=azuresql) | 0.10 | Archive page summarizing older feature and documentation updates; functions as navigation/history, not detailed technical guidance with specific parameters or limits. |
-| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql) | 0.10 | Landing page for documentation; navigation/overview only. |
+| [Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/?view=azuresql) | 0.10 | Landing/overview documentation hub for Azure SQL Managed Instance; primarily navigation and conceptual description without detailed limits, configuration tables, error codes, or decision matrices. |
 | [Microsoft Entra authentication documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-landing?view=azuresql) | 0.10 | Landing page for Microsoft Entra authentication docs; no detailed configuration content itself. |
 | [Migrate to Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql) | 0.10 | Landing page linking to migration guides; no concrete technical details or parameters. |
 | [Public data sets](https://learn.microsoft.com/en-us/azure/azure-sql/public-data-sets?view=azuresql) | 0.10 | List of public datasets is informational; does not provide product-specific configuration, limits, or troubleshooting mappings. |

@@ -3,7 +3,7 @@ name: azure-policy
 description: Expert knowledge for Azure Policy development including troubleshooting, best practices, decision making, security, configuration, integrations & coding patterns, and deployment. Use when authoring Machine Configuration packages, deploying via ARM/Bicep/Terraform, enforcing security baselines, migrating from DSC, or querying compliance with Resource Graph, and other Azure Policy related development tasks. Not for Azure Blueprints (use azure-blueprints), Azure Role-based access control (use azure-rbac), Azure Resource Manager (use azure-resource-manager), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Policy Skill
@@ -28,9 +28,9 @@ This skill requires **network access** to fetch documentation content:
 | Best Practices | L42-L57 | Designing effective Azure Policy definitions: effects, logical/value operators, arrays, tags, initiatives, parameters, and testing/behavior of Machine/Guest Configuration. |
 | Decision Making | L58-L64 | Guidance for planning migrations from Azure Automation DSC, DSC extension, and Automanage Best Practices to Azure Policy/Machine Configuration, including mapping features and migration steps. |
 | Security | L65-L126 | Using Azure Policy and Machine Configuration for security baselines and mapping/enforcing compliance with standards (CIS, NIST, ISO, PCI, FedRAMP, HIPAA, SOC 2, regional regs). |
-| Configuration | L127-L142 | Authoring, assigning, storing, and securing Machine Configuration (guest configuration) packages and policies, plus prerequisites, networking, remediation, and compliance result analysis. |
-| Integrations & Coding Patterns | L143-L148 | Using Azure Resource Graph to query Azure Policy compliance data and guest configuration state across resources for reporting, auditing, and large-scale policy analysis |
-| Deployment | L149-L158 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish packages to storage, and use safe deployment practices with Azure Policy. |
+| Configuration | L127-L141 | Authoring, assigning, storing, and securing Machine Configuration (guest configuration) packages and policies, plus prerequisites, networking, remediation, and compliance result analysis. |
+| Integrations & Coding Patterns | L142-L147 | Using Azure Resource Graph to query Azure Policy compliance data and guest configuration state across resources for reporting, auditing, and large-scale policy analysis |
+| Deployment | L148-L157 | How to deploy and assign Machine Configuration packages via ARM/Bicep/Terraform/REST, publish packages to storage, and use safe deployment practices with Azure Policy. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -128,7 +128,6 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Understand Machine Configuration assignment resources and metadata | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/assignments |
-| Configure remediation options for Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options |
 | Assign built-in Machine Configuration policies | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-built-in-policies |
 | Create custom Machine Configuration policy definitions | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/create-policy-definition |
 | Install GuestConfiguration authoring module for Machine Configuration | https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/develop-custom-package/1-set-up-authoring-environment |

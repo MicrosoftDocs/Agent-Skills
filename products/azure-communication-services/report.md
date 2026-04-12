@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   configuration: Monitoring, logging, metrics, and diagnostics for ACS (chat, voice/video,
     SMS, email, calling, routing), plus configuration for Teams interop, domains,
@@ -19,9 +19,9 @@ category_descriptions:
   best-practices: Best practices for ACS calling, SMS, email, IDs, auth, Teams interop,
     network/quality, spam/opt-out compliance, and production-ready virtual visit and
     meeting experiences.
-  integrations: End-to-end patterns for integrating ACS calling, chat, SMS, email,
-    WhatsApp, Teams, Job Router, bots, AI, and UI libraries, including media control,
-    events, push, and telephony features.
+  integrations: Patterns and code to integrate ACS calling, chat, SMS, email, Rooms,
+    Job Router, and WhatsApp with apps, bots, Teams, OpenAI, push/events, media, and
+    telephony features.
   deployment: 'Infrastructure and deployment guidance for Azure Communication Services:
     direct routing requirements and automating ACS/Email resource provisioning with
     PowerShell.'
@@ -31,32 +31,32 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Communication Services development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when building ACS calling, chat, SMS, email, Teams interop, Job Router, or contact
-  center solutions, and other Azure Communication Services related development tasks.
-  Not for Azure AI Bot Service (use azure-bot-service), Azure Notification Hubs (use
-  azure-notification-hubs), Azure SignalR Service (use azure-signalr-service), Azure
-  Web PubSub (use azure-web-pubsub).
-use_when: Use when building ACS calling, chat, SMS, email, Teams interop, Job Router,
-  or contact center solutions, and other Azure Communication Services related development
-  tasks.
+  Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email, Teams interop,
+  or Job Router workloads, and other Azure Communication Services related development
+  tasks. Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
+  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
+  SignalR Service (use azure-signalr-service).
+use_when: Use when building ACS calling/chat apps, PSTN/phone numbers, SMS/email,
+  Teams interop, or Job Router workloads, and other Azure Communication Services related
+  development tasks.
 confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure Notification
-  Hubs (use azure-notification-hubs), Azure SignalR Service (use azure-signalr-service),
-  Azure Web PubSub (use azure-web-pubsub).
+  Hubs (use azure-notification-hubs), Azure Web PubSub (use azure-web-pubsub), Azure
+  SignalR Service (use azure-signalr-service).
 ---
 # Azure Communication Services Crawl Report
 
 ## Summary
 
-- **Total Pages**: 516
-- **Fetched**: 516
+- **Total Pages**: 517
+- **Fetched**: 517
 - **Fetch Failed**: 0
 - **Classified**: 415
-- **Unclassified**: 101
+- **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 515
+- **New Pages**: 1
+- **Updated Pages**: 2
+- **Unchanged**: 514
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -71,16 +71,22 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | deployment | 2 | 0.4% |
 | integrations | 143 | 27.7% |
 | limits-quotas | 64 | 12.4% |
-| security | 23 | 4.5% |
-| troubleshooting | 71 | 13.8% |
-| *(Unclassified)* | 101 | 19.6% |
+| security | 23 | 4.4% |
+| troubleshooting | 71 | 13.7% |
+| *(Unclassified)* | 102 | 19.7% |
 
 ## Changes
 
+### New Pages
+
+- [WhatsApp usernames and BSUIDs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview)
+
 ### Updated Pages
 
-- [Azure Government](https://learn.microsoft.com/en-us/azure/communication-services/concepts/government)
-  - Updated: 2026-02-19T06:12:00.000Z → 2026-03-26T22:23:00.000Z
+- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview)
+  - Updated: 2025-04-24T11:21:00.000Z → 2026-04-08T22:12:00.000Z
+- [Handle Advanced messaging events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events)
+  - Updated: 2026-01-12T23:36:00.000Z → 2026-04-08T22:12:00.000Z
 
 ## Classified Pages
 
@@ -287,7 +293,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Get a trial phone number](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/telephony/get-trial-phone-number) | limits-quotas | 0.70 | Quickstart for trial numbers; preview feature with likely explicit usage limits, capabilities, and constraints for trial numbers. |
 | [Get audio streams from a call](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/audio-streaming-concept) | integrations | 0.70 | Audio streaming concept describes bidirectional streaming APIs, supported modes, and integration with services like Azure OpenAI, which are detailed integration capabilities. |
 | [Govern meeting experience](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/virtual-visits/govern-meeting-experience) | best-practices | 0.70 | Explains how to use tenant configuration, policies, roles, meeting options, templates, and sensitivity labels to control meeting behavior; includes product-specific governance patterns and recommendations. |
-| [Handle Advanced messaging events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) | integrations | 0.70 | Covers configuring Event Grid for WhatsApp send/receive status events with Azure Communication Services, including event types and integration-specific patterns. |
 | [Integrate an OpenAI bot with chat](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/chat/openai-chat-bot-integration) | integrations | 0.70 | Describes end-to-end integration of OpenAI bot (Bot Framework + Semantic Kernel) with ACS chat; contains multi-service configuration and API usage patterns. |
 | [Known issues](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/limitations) | limits-quotas | 0.70 | A dedicated limitations page that (behind auth) typically enumerates concrete unsupported scenarios and constraints; by definition this is expert, product-specific limitation data not generally known. |
 | [Logs & metrics](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/monitor-logs-metrics) | troubleshooting | 0.70 | Identifies exactly which Azure and Teams logs/metrics (names and locations) are emitted for ACS external users and where admins review them, which is product-specific diagnostic information. |
@@ -344,6 +349,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Call summary logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/call-summary-log-schema) | configuration | 0.68 | Defines call summary log fields like participantId and endpointId and how logs are generated per participant; these are detailed schema definitions unique to ACS. |
 | [Call summary updates logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/call-summary-updates-log-schema) | configuration | 0.68 | Schema article describes specific log properties (for example, CallUpdatesVersion) and their meanings, which are detailed configuration/telemetry fields unique to ACS. |
 | [Enable closed captions for Teams interop](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/calling-sdk/closed-captions-teams-interop-how-to) | integrations | 0.68 | How-to for Teams interoperability captions will include ACS and Teams-specific configuration steps and constraints that are unique to this integration. |
+| [Handle Advanced messaging events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) | integrations | 0.68 | The page describes how to wire Azure Communication Services Advanced Messaging for WhatsApp into Azure Event Grid, including product-specific event types and event subscription configuration. This is an integration-focused, code/configuration pattern for connecting ACS WhatsApp messaging with Event Grid, which goes beyond generic SDK usage. It does not focus on limits, security, or deployment, but on how to receive and handle specific ACS WhatsApp events. |
 | [Hydrating messageId using EmailClient](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/send-email-advanced/hydrate-email-client-with-message-id) | integrations | 0.68 | Quickstart focused on a specific EmailClient capability (hydrating messageId) with SDK usage patterns and parameters that are product-specific and not generic email knowledge. |
 | [Integrate with data loss prevention policies](https://learn.microsoft.com/en-us/azure/communication-services/how-tos/chat-sdk/data-loss-prevention) | integrations | 0.68 | How-to for subscribing to real-time chat notifications to honor Teams DLP; includes event schemas and configuration specific to ACS–Teams integration. |
 | [Call client operations logs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/analytics/logs/call-client-operations-log-schema) | configuration | 0.67 | Describes client operations log fields and how they map to calling actions; schema-level configuration/telemetry details specific to ACS. |
@@ -560,6 +566,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Try Advanced Messaging Sandbox](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/whatsapp-sandbox-quickstart) | 0.30 | Quickstart sandbox tutorial for WhatsApp messaging; primarily step-by-step usage, not a catalog of configuration options, limits, or troubleshooting mappings. |
 | [User privacy](https://learn.microsoft.com/en-us/azure/communication-services/concepts/interop/guest/privacy) | 0.30 | High-level privacy responsibilities and API indication of recording/transcription without detailed parameters, limits, or configuration tables; mostly conceptual/legal guidance. |
 | [User support](https://learn.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/retrieve-support-files) | 0.30 | User support article is likely UX and process guidance for collecting feedback; summary does not indicate technical configuration, limits, or error mappings. |
+| [WhatsApp usernames and BSUIDs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview) | 0.30 | Conceptual explanation of upcoming WhatsApp usernames and BSUIDs and their impact; description suggests it explains what they are and how they affect integrations, but does not mention concrete configuration tables, limits, or error mappings. |
 | [Add Teams video calling to your app](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-with-voice-video-calling-custom-teams-client) | 0.25 | Quickstart for adding voice/video calling as a Teams user; focuses on basic SDK usage rather than enumerating configuration parameters, limits, or troubleshooting details. |
 | [Configure worker capacity](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/worker-capacity-concepts) | 0.25 | Worker capacity concepts article explains ideas like total capacity and cost per job; appears conceptual without concrete numeric limits or config tables. |
 | [Connect Teams users to Azure calls](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-interop-group-calls) | 0.25 | Quickstart for starting interop calls from ACS to Teams users; focused on example flow rather than expert reference data like limits or configuration matrices. |
@@ -568,7 +575,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Generate an access token for a Teams user](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/manage-teams-identity) | 0.25 | Quickstart for building a console app to get Entra token and exchange for ACS access token; primarily tutorial code, not a comprehensive configuration or security reference. |
 | [Manage distribution modes](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/distribution-concepts) | 0.25 | Distribution mode concepts describe strategies (round-robin, best-worker, etc.) conceptually; no clear expert-only numeric thresholds or decision matrices. |
 | [Matched jobs to workers](https://learn.microsoft.com/en-us/azure/communication-services/concepts/router/matching-concepts) | 0.25 | Describes how jobs are matched to workers at a conceptual level; lacks evidence of specific configuration matrices or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) | 0.25 | WhatsApp advanced messaging overview; primarily conceptual description of capabilities without detailed configs or limits indicated. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/ui-library/ui-library-overview) | 0.25 | UI Library overview is conceptual, describing components and composites; no indication of detailed configuration parameters or limits. |
 | [SMS SDK overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/sdk-features) | 0.25 | SMS SDK overview; likely describes capabilities at a high level rather than detailed parameter tables or troubleshooting content. |
 | [Samples index](https://learn.microsoft.com/en-us/azure/communication-services/samples/overview) | 0.25 | Samples overview page; primarily describes available sample categories and links out, without detailed configuration tables or limits. |
@@ -587,6 +593,7 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | [Learn modules](https://learn.microsoft.com/en-us/azure/communication-services/resources/learn-modules) | 0.20 | Navigation page listing Learn modules; no deep technical content or configuration details. |
 | [Message types](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Duplicate of chat concepts overview; same reasoning as index 21. |
 | [Messaging Connect](https://learn.microsoft.com/en-us/azure/communication-services/concepts/sms/messaging-connect) | 0.20 | Messaging Connect overview; appears conceptual/preview overview without detailed configuration tables or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) | 0.20 | High-level overview of Azure Communication Services Advanced Messaging for WhatsApp; summary indicates conceptual description of capabilities and scenarios without specific limits, configuration parameters, error codes, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/call-automation/call-automation) | 0.20 | High-level Call Automation overview; conceptual description of capabilities without concrete limits, configs, or decision matrices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/chat/concepts) | 0.20 | Chat concepts overview; conceptual description of features, not detailed limits, configs, or troubleshooting. |
 | [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/email/email-overview) | 0.20 | High-level overview of ACS email; primarily conceptual and marketing-style without detailed limits, configs, or error mappings. |

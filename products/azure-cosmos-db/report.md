@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-12'
 category_descriptions:
   integrations: SDK patterns, bulk ops, change feed, vector search, and integrations
     (Kafka, Spark, Functions, BI, AI/RAG) plus migration guides for Cosmos DB APIs
@@ -10,9 +10,9 @@ category_descriptions:
   architecture-patterns: 'Architectural patterns for Cosmos DB and PostgreSQL: multitenancy,
     sharding, HA/DR, change feed, HTAP, real-time analytics, and AI/LLM agents, memory,
     vectors, and semantic caching.'
-  decision-making: Guidance on choosing Cosmos DB features, scaling, pricing, consistency,
-    backup, and analytics options, plus migration/upgrade paths for Cassandra, MongoDB,
-    DynamoDB, and PostgreSQL workloads
+  decision-making: Guides for choosing Cosmos DB options (consistency, throughput,
+    backup, analytics, vector search), estimating RU/costs, and planning/migrating
+    workloads across APIs (Cassandra, MongoDB, PostgreSQL, DynamoDB).
   configuration: 'Configuring Cosmos DB and related services: throughput, indexing,
     TTL, backup/restore, global distribution, monitoring, emulators, SDK tuning, and
     deployment via Bicep/ARM/Terraform across all APIs.'
@@ -31,17 +31,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Cosmos DB development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using Cosmos DB APIs (NoSQL, Mongo, Cassandra, Postgres), change feed, global distribution,
-  vector search, or HTAP, and other Azure Cosmos DB related development tasks. Not
-  for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
-  Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL
-  (use azure-database-postgresql).
-use_when: Use when using Cosmos DB APIs (NoSQL, Mongo, Cassandra, Postgres), change
-  feed, global distribution, vector search, or HTAP, and other Azure Cosmos DB related
-  development tasks.
+  using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed, vector search,
+  global distribution, or HTAP, and other Azure Cosmos DB related development tasks.
+  Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database),
+  Azure Database for PostgreSQL (use azure-database-postgresql), Azure Database for
+  MySQL (use azure-database-mysql).
+use_when: Use when using Cosmos DB NoSQL/Mongo/Cassandra/PostgreSQL APIs, change feed,
+  vector search, global distribution, or HTAP, and other Azure Cosmos DB related development
+  tasks.
 confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure SQL
-  Database (use azure-sql-database), Azure Database for MySQL (use azure-database-mysql),
-  Azure Database for PostgreSQL (use azure-database-postgresql).
+  Database (use azure-sql-database), Azure Database for PostgreSQL (use azure-database-postgresql),
+  Azure Database for MySQL (use azure-database-mysql).
 ---
 # Azure Cosmos DB Crawl Report
 
@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 - **Unclassified**: 213
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 18
-- **Unchanged**: 961
+- **New Pages**: 0
+- **Updated Pages**: 4
+- **Unchanged**: 979
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cosmos-db/azure-cosmos-db.csv`
 
@@ -77,51 +77,16 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 
 ## Changes
 
-### New Pages
-
-- [Create a vector index with a Node.js app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-create-vector-index-typescript)
-- [Monitor activity logs for elastic (split/merge) operations](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-activity-logs-elastic-operations)
-- [Develop a Rust console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-rust)
-- [Migrate to Azure Database for PostgreSQL with Elastic Cluster](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/migrate-postgresql-elastic-cluster)
-
 ### Updated Pages
 
-- [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
-- [Use with a Python app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
-- [Use with a JavaScript app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
 - [Use with a Java app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
-- [Use with a Go app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
-- [Use with a Rust app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-25T08:00:00.000Z
-- [Sharded DiskANN for focused search](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann)
-  - Updated: 2025-04-22T22:04:00.000Z → 2026-03-23T17:21:00.000Z
-- [Throughput buckets overview](https://learn.microsoft.com/en-us/azure/cosmos-db/throughput-buckets)
-  - Updated: 2025-12-19T18:19:00.000Z → 2026-03-20T11:11:00.000Z
-- [Develop a Python console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-python)
-  - Updated: 2025-11-18T18:29:00.000Z → 2026-03-25T08:00:00.000Z
-- [Develop a TypeScript console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-nodejs)
-  - Updated: 2025-11-18T18:29:00.000Z → 2026-03-25T08:00:00.000Z
-- [Develop a C# console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-dotnet)
-  - Updated: 2025-11-18T18:29:00.000Z → 2026-03-25T08:00:00.000Z
-- [Develop a Java console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-java)
-  - Updated: 2025-11-18T18:29:00.000Z → 2026-03-25T08:00:00.000Z
-- [Develop a Go console application](https://learn.microsoft.com/en-us/azure/documentdb/quickstart-go)
-  - Updated: 2025-11-18T18:29:00.000Z → 2026-03-25T08:00:00.000Z
-- [Restore cluster](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-restore-portal)
-  - Updated: 2025-10-30T05:05:00.000Z → 2025-12-15T18:19:00.000Z
-- [Customer-managed keys](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/how-to-customer-managed-keys)
-  - Updated: 2025-10-30T05:05:00.000Z → 2025-12-19T18:19:00.000Z
-- [PostgreSQL versions](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-versions)
-  - Updated: 2025-10-30T05:05:00.000Z → 2025-12-15T18:19:00.000Z
-- [Supported extensions](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-extensions)
-  - Updated: 2025-10-30T05:05:00.000Z → 2025-12-15T18:19:00.000Z
-- [Node.js](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/quickstart-app-stacks-nodejs)
-  - Updated: 2025-10-30T05:05:00.000Z → 2025-12-15T18:19:00.000Z
+  - Updated: 2026-03-25T08:00:00.000Z → 2026-04-06T17:06:00.000Z
+- [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options)
+  - Updated: 2025-11-18T18:29:00.000Z → 2026-04-07T11:03:00.000Z
+- [Online migration tools](https://learn.microsoft.com/en-us/azure/documentdb/migration-options)
+  - Updated: 2025-11-18T18:29:00.000Z → 2026-04-07T11:03:00.000Z
+- [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension)
+  - Updated: 2025-11-18T18:29:00.000Z → 2026-04-07T11:03:00.000Z
 
 ## Classified Pages
 
@@ -569,7 +534,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Migrate to Azure DocumentDB](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/how-to-migrate-documentdb) | decision-making | 0.70 | Migration guide includes prerequisites, steps, and likely trade-offs/considerations when moving between services, which supports technology selection and migration decisions. |
 | [Migrate to Java V4 SDK](https://learn.microsoft.com/en-us/azure/cosmos-db/migrate-java-v4-sdk) | decision-making | 0.70 | Migration to v4 SDK includes comparison of features, behavior changes, and guidance on when/how to upgrade, which is version selection and migration decision-making. |
 | [Migration guide](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-from-kafka-connector-v1-to-v2) | decision-making | 0.70 | Migration guide between connector versions typically includes comparison of behaviors, breaking changes, and concrete guidance on when/how to move, which is version-selection and migration decision-making content. |
-| [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.70 | Compares offline vs online migration with concrete criteria like downtime tied to bulk copy duration and data change behavior; this is migration option selection guidance with scenario-based trade-offs. |
+| [Migration options](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.70 | Described as covering available migration tools, key phases, and best practices to reduce risk and downtime for MongoDB to Azure DocumentDB moves. This is migration-planning and option-selection guidance (which tools/approaches to use in which scenarios), fitting decision-making. It goes beyond a conceptual overview by providing concrete migration guidance, but doesn’t clearly match limits, configuration, or troubleshooting. |
 | [MongoDB feature compatibility](https://learn.microsoft.com/en-us/azure/documentdb/compatibility-features) | limits-quotas | 0.70 | Compatibility article includes tables of unsupported/limited MongoDB features in Azure DocumentDB, effectively defining product-specific functional limits and constraints. |
 | [MongoDB query language compatibility](https://learn.microsoft.com/en-us/azure/documentdb/compatibility-query-language) | limits-quotas | 0.70 | Provides version-wise tables of supported/unsupported MQL operators and commands for MongoDB 5.0–8.0, which are detailed capability limits per version. |
 | [Monitor diagnostics logs](https://learn.microsoft.com/en-us/azure/documentdb/how-to-monitor-diagnostics-logs) | limits-quotas | 0.70 | States that diagnostic logs feature is unavailable on compute tier M30 or lower and free-tier SKUs, which is a tier-specific capability/limit; this is concrete, SKU-bound behavior that affects usage. |
@@ -580,7 +545,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Multiple Azure Cosmos DB Triggers](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-create-multiple-cosmos-db-triggers) | configuration | 0.70 | Shows how to configure multiple triggers to work in parallel; includes binding configuration patterns and settings unique to Cosmos DB triggers. |
 | [Node DNS names](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-node-domain-name) | configuration | 0.70 | Describes exact DNS patterns and connection string formats for coordinator and worker nodes in this service, which are product-specific configuration details. |
 | [Nodetool commands](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/dba-commands) | configuration | 0.70 | Explains how to run DBA commands in a managed environment; likely includes command patterns, constraints, and environment-specific considerations. |
-| [Online migration tools](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.70 | Same content as index 11: compares offline vs online migration modes with implications for downtime and data change handling, guiding migration strategy decisions. |
+| [Online migration tools](https://learn.microsoft.com/en-us/azure/documentdb/migration-options) | decision-making | 0.70 | Same URL and summary as index 0; provides migration option comparisons and guidance on phases and risk/downtime reduction, which aligns with decision-making for migration strategy and tooling rather than generic overview content. |
 | [Optimize query and storage costs when upgrading](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/compression-cost-savings) | decision-making | 0.70 | Explains performance and cost impact of upgrading versions, including up to 90% savings; this is version-selection guidance with quantified trade-offs. |
 | [Optimize your Azure Cosmos DB costs](https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-costs) | best-practices | 0.70 | Cost optimization guidance for Cosmos DB generally includes concrete configuration choices (throughput modes, indexing, regions) and workload-specific recommendations, which are product-specific best practices. |
 | [Partial document update FAQ](https://learn.microsoft.com/en-us/azure/cosmos-db/partial-document-update-faq) | troubleshooting | 0.70 | FAQ for partial document update likely includes specific error codes, limitations, and edge cases, mapping symptoms to causes and resolutions. |
@@ -945,7 +910,6 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Integrate with Azure services](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/integrations-overview) | 0.40 | Integrations overview is likely high-level, listing possible integrations without detailed configuration tables or code; summary suggests conceptual overview. |
 | [Manage using Azure CLI](https://github.com/azure-samples/azure-cli-samples/tree/master/cosmosdb/table) | 0.40 | GitHub repo of Azure CLI samples; not a Learn documentation article and mainly scripts rather than structured expert reference content. |
 | [Manage using PowerShell](https://github.com/azure/azure-docs-powershell-samples/tree/master/cosmosdb/table) | 0.40 | GitHub repo of PowerShell samples; not a Learn documentation page and primarily code snippets without structured config/limits reference context. |
-| [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension) | 0.40 | VS Code migration extension tutorial; primarily step-by-step usage, not a configuration reference, limits table, or decision matrix. |
 | [Native tools](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-native-tools) | 0.40 | Tutorial using MongoDB native tools for offline migration; focuses on commands like mongoexport/mongoimport without product-specific config matrices or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/concepts-security-overview) | 0.40 | High-level security overview; likely conceptual description of information protection and network security without detailed RBAC roles, config parameters, or product-specific settings tables. |
 | [Product updates](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates) | 0.40 | Product updates/release notes; while specific, they are version history rather than reusable expert configuration, troubleshooting, or decision matrices. |
@@ -993,6 +957,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [Java SDK v4](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-v4) | 0.30 | Java SDK v4 release notes/resources; focused on versions and high-level performance notes, not detailed config or troubleshooting content. |
 | [Java bulk executor library v2 (legacy)](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-java-bulk-executor-v2) | 0.30 | Bulk Executor Java SDK release notes/resources; mainly lifecycle and migration guidance, not detailed configuration or error mappings. |
 | [Management operations](https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/management-operations) | 0.30 | Management responsibilities and supported operations; likely conceptual and role-based without detailed config tables, limits, or error mappings. |
+| [Migrate using Visual Studio Code extension](https://learn.microsoft.com/en-us/azure/documentdb/how-to-migrate-vs-code-extension) | 0.30 | Tutorial-style page on using the Azure DocumentDB Migration Extension in VS Code to run MongoDB-to-DocumentDB migrations. Based on the summary, it focuses on step-by-step usage and benefits (no extra infrastructure, secure connectivity, zero-cost usage) rather than detailed configuration tables, limits, or error-code-based troubleshooting. Lacks clear evidence of the structured expert knowledge required by the defined sub-skill types. |
 | [Model document data](https://learn.microsoft.com/en-us/azure/cosmos-db/modeling-data) | 0.30 | Conceptual data modeling guidance; likely general patterns and considerations rather than product-specific numeric limits or configuration parameters. |
 | [Monitoring solutions](https://learn.microsoft.com/en-us/azure/cosmos-db/monitoring-solutions) | 0.30 | High-level description of third-party monitoring tools; summary does not indicate detailed configuration parameters or metrics mappings. |
 | [Node.js](https://learn.microsoft.com/en-us/azure/cosmos-db/sdk-nodejs) | 0.30 | Node.js SDK release notes/resources; index-style page with versions and dates, not deep config or troubleshooting content. |
@@ -1098,7 +1063,7 @@ confusable_not_for: Not for Azure Table Storage (use azure-table-storage), Azure
 | [TypeScript](https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/quickstart-nodejs) | 0.20 | Quickstart for Node.js client; tutorial-style content without detailed config tables or limits. |
 | [Use with a .NET app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-dotnet) | 0.20 | Quickstart tutorial for .NET with Cosmos DB; primarily step-by-step sample app and basic SDK usage, no detailed limits, configuration tables, error-code mappings, or product-specific best-practice guidance. |
 | [Use with a Go app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-go) | 0.20 | Go quickstart for Cosmos DB; basic tutorial on using the Go SDK, lacking configuration parameter tables, numeric constraints, or product-specific best-practice/decision content. |
-| [Use with a Java app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java) | 0.20 | Java quickstart for Cosmos DB; step-by-step sample Spring app using SDK, without expert-level limits, quotas, security roles, or structured troubleshooting information. |
+| [Use with a Java app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-java) | 0.20 | Quickstart tutorial for deploying a Java Spring app with Azure Cosmos DB SDK; primarily step-by-step guidance without detailed configuration tables, limits, error-code mappings, or product-specific decision criteria. |
 | [Use with a JavaScript app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-nodejs) | 0.20 | Node.js quickstart for Cosmos DB; standard tutorial content showing how to connect and perform operations, not detailed configuration references, limits, or decision guidance. |
 | [Use with a Python app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-python) | 0.20 | Python quickstart for Cosmos DB; focuses on deploying a sample Flask app and basic CRUD via SDK, without numeric limits, configuration matrices, or troubleshooting/error-code content. |
 | [Use with a Rust app](https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-rust) | 0.20 | Rust quickstart for Cosmos DB (public preview); still a standard quickstart showing how to deploy and use the SDK, not a reference for limits, configuration options, or troubleshooting mappings. |

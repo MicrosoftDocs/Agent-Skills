@@ -3,7 +3,7 @@ name: azure-portal
 description: Expert knowledge for Azure Portal development including troubleshooting, security, and configuration. Use when managing portal RBAC dashboard sharing, JSON dashboards, URL allowlists, mobile app access/alerts, or HAR diagnostics, and other Azure Portal related development tasks. Not for Azure Cloud Shell (use azure-cloud-shell), Azure Resource Manager (use azure-resource-manager), Azure Monitor (use azure-monitor), Azure Policy (use azure-policy).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-12"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Portal Skill

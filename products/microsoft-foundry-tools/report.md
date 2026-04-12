@@ -46,9 +46,9 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 13
-- **Unchanged**: 38
-- **Deleted Pages**: 33
+- **Updated Pages**: 0
+- **Unchanged**: 51
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-tools/microsoft-foundry-tools.csv`
 
 ## Classification Statistics
@@ -65,59 +65,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 19 | 37.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Image](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/image/overview)
-  - Updated: 2026-01-14T06:03:00.000Z → 2026-03-31T08:00:00.000Z
-- [Create a custom analyzer](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer)
-  - Updated: 2026-02-01T12:03:00.000Z → 2026-03-30T22:09:00.000Z
-- [Copy and back up analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/copy-analyzers)
-  - Updated: 2026-01-31T06:05:00.000Z → 2026-04-02T22:14:00.000Z
-- [Build a retrieval-augmented generation solution](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/build-rag-solution)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-31T08:00:00.000Z
-- [Create a Microsoft Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/create-multi-service-resource)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-31T08:00:00.000Z
-- [What is Azure Content Understanding in Foundry Tools?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
-  - Updated: 2025-12-29T23:03:00.000Z → 2026-03-23T08:00:00.000Z
-- [Choose the right tool for document processing](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/choosing-right-ai-tool)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
-- [Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits)
-  - Updated: 2026-03-06T18:06:00.000Z → 2026-03-23T08:00:00.000Z
-- [Language and region support](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/language-region-support)
-  - Updated: 2025-11-18T19:04:00.000Z → 2026-03-30T22:09:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/faq)
-  - Updated: 2025-12-29T23:03:00Z → 2026-04-01T06:05:00Z
-- [What are classifiers?](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/classifier)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
-- [Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview)
-  - Updated: 2025-12-29T23:03:00.000Z → 2026-03-27T06:03:00.000Z
-- [Video Overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/video/overview)
-  - Updated: 2025-12-19T08:00:00.000Z → 2026-03-23T08:00:00.000Z
-
-### Deleted Pages
-
-- ~~Authenticate requests~~ (https://learn.microsoft.com/en-us/azure/ai-services/authentication)
-- ~~Increase rate limit~~ (https://learn.microsoft.com/en-us/azure/ai-services/autoscale)
-- ~~Foundry Tools containers overview~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-container-support)
-- ~~Custom subdomains for Foundry Tools~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-custom-subdomains)
-- ~~Configure data loss prevention~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-data-loss-prevention)
-- ~~Use environment variables~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-environment-variables)
-- ~~Limited Access features~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-limited-access)
-- ~~Support & help options~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-support-options)
-- ~~Use virtual networks~~ (https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks)
-- ~~Use commitment tier pricing~~ (https://learn.microsoft.com/en-us/azure/ai-services/commitment-tier)
-- ~~Deploy to Azure Container Instance~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/azure-container-instance-recipe)
-- ~~General container FAQ~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/container-faq)
-- ~~Container Reuse~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/container-reuse-recipe)
-- ~~Disconnected containers FAQ~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-container-faq)
-- ~~Use containers in disconnected environments~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-containers)
-- ~~Deploy with Docker Compose~~ (https://learn.microsoft.com/en-us/azure/ai-services/containers/docker-compose-recipe)
-- ~~Create a Foundry resource using an ARM template~~ (https://learn.microsoft.com/en-us/azure/ai-services/create-account-resource-manager-template)
-- ~~Diagnostic logging~~ (https://learn.microsoft.com/en-us/azure/ai-services/diagnostic-logging)
-- ~~Disable local authentication~~ (https://learn.microsoft.com/en-us/azure/ai-services/disable-local-auth)
-- ~~Configure customer-managed keys~~ (https://learn.microsoft.com/en-us/azure/ai-services/encryption/cognitive-services-encryption-keys-portal)
-- *...and 13 more*
 
 ## Classified Pages
 
