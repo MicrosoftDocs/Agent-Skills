@@ -1,9 +1,9 @@
 ---
 name: azure-aks-edge-essentials
-description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF workloads, TPM/Key Vault, or Azure Local, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
+description: Expert knowledge for Azure Kubernetes Service Edge Essentials development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing AKS Edge/Arc clusters, Arc connectivity, IoT/OPC/ONVIF edge workloads, TPM/Key Vault, or AI model deploys, and other Azure Kubernetes Service Edge Essentials related development tasks. Not for Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure IoT Edge (use azure-iot-edge), Azure Stack Edge (use azure-stack-edge), Azure Container Apps (use azure-container-apps).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Kubernetes Service Edge Essentials Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L95-L107 | Guidance on choosing AKS Edge/Arc vs cloud/on-prem, supported versions/add-ons, monitoring, pricing/licensing, support, and planning migrations or retirement of older AKS/Windows Server setups |
 | Architecture & Design Patterns | L108-L114 | Designing AKS on Windows Server for Azure Local: high availability on two-node setups, SDN VNet architectures, and deployment patterns for AKS Arc target clusters. |
 | Limits & Quotas | L115-L126 | Hardware, storage, IP, and VM requirements plus scale limits, quotas, and support policies for AKS Edge/Arc and AKS on Azure Local across Windows, VMware, and release versions |
-| Security | L127-L160 | Auth, RBAC, SSH, certificates, key/secret encryption, gMSA, and container security for AKS Edge/Arc/Hybrid clusters on Windows Server and Azure Local. |
+| Security | L127-L160 | Securing AKS Edge/Arc/hybrid clusters: auth (Entra ID, AD, gMSA, workload identity), RBAC, SSH hardening, cert and key management, and encrypting/securing secrets and container workloads. |
 | Configuration | L161-L240 | Configuring AKS Edge/Arc/hybrid clusters: networking, storage, load balancers, autoscaling, Arc connectivity, Windows/Linux node settings, monitoring, upgrades, and offline/host setup. |
 | Integrations & Coding Patterns | L241-L299 | Integrating AKS Edge/Arc/hybrid with Azure and on-prem services: REST/CLI/PowerShell management, storage/backup, CSI, networking, IoT/OPC/ONVIF, TPM, AI model deploy, and Key Vault secrets. |
 | Deployment | L300-L335 | Deploying, upgrading, and managing AKS Edge/AKS hybrid/AKS Arc clusters and node pools (Linux/Windows/GPU), including installs, updates, removals, offline/disconnected ops, and system requirements |

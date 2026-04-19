@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   architecture-patterns: NC2 on Azure BareMetal architecture choices, deployment topologies,
     integration patterns with Azure services, and design considerations for performance,
@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 
 ### Updated Pages
 
-- [Available Regions and SKUs](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/available-regions-skus)
-  - Updated: 2026-01-14T18:16:00.000Z → 2026-04-07T22:12:00.000Z
+- [Get started](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started)
+  - Updated: 2025-07-31T17:19:00.000Z → 2026-04-13T17:16:00.000Z
 
 ## Classified Pages
 
@@ -65,7 +65,7 @@ confusable_not_for: Not for Azure Large Instances (use azure-large-instances), A
 |-----------|------------|--------|
 | [FAQ](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/faq) | 0.40 | FAQ format; summary does not indicate presence of specific error codes, configuration tables, or numeric limits—likely general Q&A rather than deep technical reference. |
 | [Connect BareMetal instances in Azure](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/connect-baremetal-infrastructure) | 0.30 | Described as showing what you can do in the portal/CLI; appears to be a usage/navigation guide rather than detailed configuration or limits. |
-| [Get started](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started) | 0.30 | Get-started guide for sign-up and initial use; typically procedural without detailed limits, configuration matrices, or troubleshooting mappings. |
 | [Know the terms](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/know-baremetal-terms) | 0.30 | Defines terminology (stamp, revision, etc.) but lacks numeric limits, configuration parameters, or troubleshooting mappings. |
 | [About Nutanix Cloud Clusters on Azure](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/about-nc2-on-azure) | 0.20 | Overview of NC2 on Azure benefits and features; no indication of numeric thresholds, decision matrices, or detailed configuration. |
+| [Get started](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/workloads/nc2-on-azure/get-started) | 0.20 | Page is a getting-started guide for Nutanix Cloud Clusters on Azure, focused on sign-up and initial setup. It does not expose detailed limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined by the sub-skill types. |
 | [What is BareMetal Infrastructure?](https://learn.microsoft.com/en-us/azure/baremetal-infrastructure/concepts-baremetal-infrastructure-overview) | 0.20 | High-level overview of Azure BareMetal Infrastructure; no concrete limits, configuration tables, error codes, or product-specific settings. |

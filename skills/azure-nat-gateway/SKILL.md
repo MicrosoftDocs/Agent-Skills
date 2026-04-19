@@ -1,9 +1,9 @@
 ---
 name: azure-nat-gateway
-description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, configuration, and deployment. Use when planning SNAT capacity, configuring IPs/flow logs, fixing outbound failures, or choosing Standard vs StandardV2, and other Azure NAT Gateway related development tasks. Not for Azure Firewall (use azure-firewall), Azure Load Balancer (use azure-load-balancer), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure NAT Gateway development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, configuration, and deployment. Use when managing SNAT ports, outbound IPs, flow logs, hub-spoke egress, or Azure Firewall integration, and other Azure NAT Gateway related development tasks. Not for Azure Virtual Network (use azure-virtual-network), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan), Azure VPN Gateway (use azure-vpn-gateway).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure NAT Gateway Skill
@@ -26,11 +26,11 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L35-L39 | Diagnosing and fixing NAT Gateway issues: reading flow logs, resolving misconfigurations, connectivity failures with Azure services, and outbound internet connection problems. |
 | Best Practices | L40-L44 | Guidance on reducing SNAT port exhaustion and optimizing outbound connectivity patterns when using Azure NAT Gateway. |
-| Decision Making | L45-L50 | Guidance on when to use each Azure NAT Gateway SKU (Standard vs StandardV2), feature/cost tradeoffs, and how to plan and execute migration from Standard to StandardV2. |
-| Architecture & Design Patterns | L51-L59 | Design patterns for placing NAT Gateway in VNets, hub-spoke, with NVAs, and with internal/public load balancers, plus scaling outbound traffic and combining with Azure Firewall. |
-| Limits & Quotas | L60-L64 | NAT Gateway FAQs plus limits on SNAT ports, IPs, throughput, connections, and other quotas, with guidance on capacity planning and scaling. |
-| Configuration | L65-L73 | Configuring NAT Gateway (Standard and StandardV2), managing IPs/resources, setting up flow logs, and configuring monitoring, metrics, and alerts for gateway traffic. |
-| Deployment | L74-L80 | How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move outbound traffic from VMs/public IPs, and transition existing outbound access to Azure NAT Gateway. |
+| Decision Making | L45-L51 | Guidance on choosing NAT Gateway SKUs, migrating existing NAT Gateways to StandardV2, and moving outbound internet access from other methods to NAT Gateway. |
+| Architecture & Design Patterns | L52-L60 | Design patterns for placing NAT Gateway in VNets, hub-spoke, with NVAs, and with internal/public load balancers, plus scaling outbound traffic and combining with Azure Firewall. |
+| Limits & Quotas | L61-L65 | NAT Gateway limits, SNAT port quotas, connection scaling behavior, per-resource caps, and FAQs on throughput, IPs, and troubleshooting limit-related issues. |
+| Configuration | L66-L74 | Configuring NAT Gateway (Standard and StandardV2), managing IPs/resources, setting up flow logs, and configuring monitoring, metrics, and alerts for gateway traffic. |
+| Deployment | L75-L80 | How to deploy and redeploy NAT Gateway (ARM/Bicep), migrate or move outbound traffic from VMs/public IPs, and transition existing outbound access to Azure NAT Gateway. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -47,6 +47,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Migrate Azure NAT Gateway to StandardV2 | https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-v2-migrate |
 | Choose between Azure NAT Gateway SKUs | https://learn.microsoft.com/en-us/azure/nat-gateway/nat-sku |
+| Migrate Azure outbound access to NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat |
 
 ### Architecture & Design Patterns
 | Topic | URL |
@@ -60,7 +61,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure NAT Gateway FAQ and service limits | https://learn.microsoft.com/en-us/azure/nat-gateway/faq |
+| Azure NAT Gateway FAQs with limits and behavior | https://learn.microsoft.com/en-us/azure/nat-gateway/faq |
 
 ### Configuration
 | Topic | URL |
@@ -77,4 +78,3 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Standard V2 NAT Gateway with ARM/Bicep | https://learn.microsoft.com/en-us/azure/nat-gateway/quickstart-create-nat-gateway-v2-templates |
 | Redeploy NAT Gateway after cross-region resource move | https://learn.microsoft.com/en-us/azure/nat-gateway/region-move-nat-gateway |
 | Move VM public IP outbound traffic to NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-ilip-nat |
-| Migrate outbound access to Azure NAT Gateway | https://learn.microsoft.com/en-us/azure/nat-gateway/tutorial-migrate-outbound-nat |

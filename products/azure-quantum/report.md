@@ -1,21 +1,17 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
-  troubleshooting: Diagnosing Azure Quantum connection/job failures and understanding
-    support, escalation, and issue-handling policies for IonQ, PASQAL, Quantinuum,
-    and Rigetti providers.
-  decision-making: Guidance on Azure Quantum costs, provider pricing and regions,
-    workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography
-    with the resource estimator.
-  limits-quotas: Limits on jobs, shots, durations, and hardware per provider, plus
-    guidance for running long Q# experiments, using sessions, and avoiding timeouts
-    on Azure Quantum targets.
+  troubleshooting: 'Troubleshooting Azure Quantum provider issues: diagnosing job
+    failures and understanding support/escalation policies and limits for IonQ, PASQAL,
+    Quantinuum, and Rigetti.'
+  limits-quotas: Managing Azure Quantum quotas, job/session limits, timeouts, and
+    Rigetti-specific hardware constraints and target capabilities.
   security: 'Managing secure access to Azure Quantum workspaces: RBAC and access control,
     bulk user assignment, ARM locks, managed identities, service principals, and secure
     handling of access keys.'
-  integrations: 'Integrating QDK with Azure Quantum: connecting via qdk.azure, running
-    hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through
-    QDK to Azure Quantum.'
+  integrations: Using the Azure Quantum QDK and SDKs to connect workspaces and submit/run
+    circuits and programs (QIR, OpenQASM, Pulser, Qiskit, Cirq) and hybrid jobs with
+    Adaptive RI
   deployment: Deploying Azure Quantum workspaces with Bicep and running/submitting
     Q# quantum programs from VS Code to Azure Quantum backends
   configuration: Configuring Azure Quantum workspaces, QDK tools, simulators, noise
@@ -24,38 +20,41 @@ category_descriptions:
   architecture-patterns: Guidance on designing hybrid quantum-classical workflows
     in Azure Quantum, including architecture options, orchestration patterns, and
     when to offload tasks to quantum hardware.
+  decision-making: Guidance on Azure Quantum costs, provider pricing and regions,
+    workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography
+    with the resource estimator.
   best-practices: Best practices for using QDK in VS Code with Copilot, optimizing
     large Q# programs via resource estimation, and systematically testing and debugging
     quantum code.
 skill_description: Expert knowledge for Azure Quantum development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  using QDK/qdk.azure, hybrid jobs, QIR/OpenQASM/Pulser circuits, IonQ/PASQAL/Quantinuum/Rigetti,
-  or resource estimation, and other Azure Quantum related development tasks. Not for
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Machine Learning (use azure-machine-learning), Azure HPC Cache (use azure-hpc-cache).
-use_when: Use when using QDK/qdk.azure, hybrid jobs, QIR/OpenQASM/Pulser circuits,
-  IonQ/PASQAL/Quantinuum/Rigetti, or resource estimation, and other Azure Quantum
+  using Azure Quantum workspaces, QDK/Q#, QIR/OpenQASM circuits, IonQ/PASQAL/Quantinuum/Rigetti
+  targets, or hybrid jobs, and other Azure Quantum related development tasks. Not
+  for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure
+  Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
+use_when: Use when using Azure Quantum workspaces, QDK/Q#, QIR/OpenQASM circuits,
+  IonQ/PASQAL/Quantinuum/Rigetti targets, or hybrid jobs, and other Azure Quantum
   related development tasks.
-confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databricks
-  (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure
-  HPC Cache (use azure-hpc-cache).
+confusable_not_for: Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use
+  azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use
+  azure-machine-learning).
 ---
 # Azure Quantum Crawl Report
 
 ## Summary
 
-- **Total Pages**: 136
-- **Fetched**: 136
+- **Total Pages**: 135
+- **Fetched**: 135
 - **Fetch Failed**: 0
-- **Classified**: 47
-- **Unclassified**: 89
+- **Classified**: 45
+- **Unclassified**: 90
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 135
-- **Deleted Pages**: 0
+- **Updated Pages**: 6
+- **Unchanged**: 129
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-quantum/azure-quantum.csv`
 
 ## Classification Statistics
@@ -65,55 +64,66 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | architecture-patterns | 1 | 0.7% |
 | best-practices | 3 | 2.2% |
 | configuration | 13 | 9.6% |
-| decision-making | 6 | 4.4% |
+| decision-making | 5 | 3.7% |
 | deployment | 2 | 1.5% |
 | integrations | 6 | 4.4% |
-| limits-quotas | 4 | 2.9% |
-| security | 7 | 5.1% |
+| limits-quotas | 3 | 2.2% |
+| security | 7 | 5.2% |
 | troubleshooting | 5 | 3.7% |
-| *(Unclassified)* | 89 | 65.4% |
+| *(Unclassified)* | 90 | 66.7% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Rigetti provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti)
-  - Updated: 2025-08-12T18:39:00.000Z → 2026-04-10T21:22:00.000Z
+- [Overview of OpenQASM in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration)
+  - Updated: 2025-07-07T21:40:00.000Z → 2026-04-14T15:31:00.000Z
+- [Submit a circuit in provider-specific format](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format)
+  - Updated: 2026-01-14T01:12:00.000Z → 2026-04-13T22:05:00.000Z
+- [Azure Quantum quotas](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas)
+  - Updated: 2025-05-21T18:28:00.000Z → 2026-04-13T22:05:00.000Z
+- [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing)
+  - Updated: 2025-04-02T21:50:00.000Z → 2026-04-13T22:05:00.000Z
+- [Add or remove a provider](https://learn.microsoft.com/en-us/azure/quantum/how-to-add-a-provider)
+  - Updated: 2025-09-30T15:51:00.000Z → 2026-04-13T22:05:00.000Z
+- [Troubleshooting Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues)
+  - Updated: 2025-10-17T17:03:00.000Z → 2026-04-13T22:05:00.000Z
+
+### Deleted Pages
+
+- ~~Perform long-running experiments~~ (https://learn.microsoft.com/en-us/azure/quantum/how-to-long-running-experiments)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
 | [Authenticate using Access Keys](https://learn.microsoft.com/en-us/azure/quantum/security-manage-access-keys) | security | 0.90 | Covers enabling, disabling, regenerating access keys and connection strings; includes security recommendations and key usage patterns specific to Azure Quantum. |
-| [Azure Quantum quotas](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas) | limits-quotas | 0.90 | Explicit FAQ on limits and quotas; expected to list numeric quotas, usage caps, and possibly per-provider limits that are not generally known. |
+| [Azure Quantum quotas](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas) | limits-quotas | 0.90 | A quotas FAQ for a specific service is very likely to list concrete numeric limits (for example, job counts, shot limits, provider-specific caps) and how to request increases, which are product-specific values not inferable from general training data. |
 | [Share access to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-share-access-quantum-workspace) | security | 0.85 | Explicitly discusses assigning roles like Contributor and Quantum Workspace Data Contributor with differing permissions, which are product-specific security details. |
-| [Troubleshooting Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues) | troubleshooting | 0.85 | Explicit troubleshooting article; likely organized by symptoms with specific error messages and resolution steps for Azure Quantum. |
 | [Authenticate using a managed identity](https://learn.microsoft.com/en-us/azure/quantum/optimization-authenticate-managed-identity) | security | 0.80 | Describes configuring managed identities for Azure Quantum job submission; includes product-specific authentication scopes and configuration steps. |
 | [Authenticate using a service principal](https://learn.microsoft.com/en-us/azure/quantum/optimization-authenticate-service-principal) | security | 0.80 | Details how to configure service principal authentication for Azure Quantum; includes specific Azure AD app and permission settings relevant to this service. |
 | [Customize the target parameters for the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/overview-resources-estimator) | configuration | 0.80 | Explicitly about input parameters and customization; likely contains parameter names, allowed values, and defaults, which are core configuration knowledge. |
 | [Manage the access to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/manage-workspace-access) | security | 0.80 | Focuses on security principals and roles for workspace access; likely lists specific RBAC role names and scopes unique to Azure Quantum. |
-| [Submit a circuit in provider-specific format](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format) | integrations | 0.75 | Shows how to use qdk.azure to submit circuits in specific formats; contains format-specific configuration and API usage unique to Azure Quantum integrations. |
+| [Troubleshooting Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues) | troubleshooting | 0.80 | Explicitly a troubleshooting article for Azure Quantum; such pages typically map specific connection/job symptoms and error messages to causes and resolutions, which are product-specific diagnostic details. |
 | [VS Code reference for Q# programs](https://learn.microsoft.com/en-us/azure/quantum/vscode-qsharp-reference) | configuration | 0.75 | Reference guide for QDK commands in VS Code; includes command names, behaviors, and possibly settings, which are detailed configuration/usage knowledge. |
 | [Add a group to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/bulk-add-users-to-a-workspace) | security | 0.70 | Page describes concrete, product-specific steps to grant access to many users at once for an Azure Quantum workspace, which is an IAM/security operation. It likely includes specific role names or access patterns (e.g., workspace roles or Azure RBAC assignments) and CSV schema details that are not generic knowledge. This fits the security sub-skill as it focuses on configuring access control for the service. |
 | [Azure Quantum pricing](https://learn.microsoft.com/en-us/azure/quantum/pricing) | decision-making | 0.70 | Provider-defined pricing details and plan differences; likely includes tables and quantified cost criteria to choose between providers and plans. |
 | [Azure Quantum provider global availability](https://learn.microsoft.com/en-us/azure/quantum/provider-global-availability) | decision-making | 0.70 | Provides per-country/region availability tables for each provider; supports decisions on which provider can be used based on billing region. |
 | [IonQ provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-ionq) | configuration | 0.70 | Technical details of IonQ provider and targets; likely includes target IDs, supported operations, and constraints specific to IonQ integration. |
 | [PASQAL provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-pasqal) | configuration | 0.70 | Technical details of PASQAL simulators and QPU; likely includes target names, capabilities, and constraints unique to PASQAL. |
-| [Perform long-running experiments](https://learn.microsoft.com/en-us/azure/quantum/how-to-long-running-experiments) | limits-quotas | 0.70 | Discusses techniques for long-running experiments; such guidance typically includes job timeout limits, queue behavior, and possibly maximum runtimes or retry policies, which are expert limit/behavior details. |
 | [Protect Azure Quantum with resource locks](https://learn.microsoft.com/en-us/azure/quantum/how-to-set-resource-locks) | security | 0.70 | Shows how to apply ARM resource locks to workspaces and storage; product-specific security hardening guidance with concrete lock types and scenarios. |
 | [Python quantum language support in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-qiskit-cirq-overview) | integrations | 0.70 | Covers interoperability details between QDK and Qiskit/Cirq, including supported versions and ways to run programs on simulators and Azure Quantum; these are product-specific integration patterns. |
 | [Quantinuum provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-quantinuum) | configuration | 0.70 | Technical details of Quantinuum provider; likely includes target identifiers, mid-circuit measurement capabilities, and constraints. |
 | [Rigetti provider and targets](https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti) | limits-quotas | 0.70 | Provider technical details pages for specific quantum hardware typically list device-specific characteristics such as qubit counts, connectivity, gate times, sampling rates, and other numeric constraints that function as practical limits/quotas for jobs and circuits. These are expert, provider-specific values not inferable from general training data. |
 | [Submit a circuit with Cirq](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq) | integrations | 0.70 | Shows how to use the qdk.azure.cirq submodule to submit Cirq circuits; contains product-specific module names and usage patterns for integration. |
 | [Work with Azure Quantum using the Azure CLI](https://learn.microsoft.com/en-us/azure/quantum/how-to-manage-quantum-workspaces-with-the-azure-cli) | configuration | 0.70 | CLI-focused how-to that likely includes specific Azure Quantum workspace-related parameters, required resource types, and command options (for resource groups, storage accounts, and workspace creation/deletion). These are product-specific configuration details rather than generic concepts. |
-| [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing) | decision-making | 0.65 | Explains cost calculation and invoice management; likely includes provider-specific billing metrics and cost factors to guide usage decisions. |
 | [Build noise models for neutral atom simulations](https://learn.microsoft.com/en-us/azure/quantum/qdk-simulator-noise-models) | configuration | 0.65 | Describes supported noise models and how to include them in simulations; likely lists model types and parameters, which are product-specific configuration details. |
 | [Compare multiple configurations](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-batching) | configuration | 0.65 | Describes running estimates for multiple configurations and comparing them; likely includes specific API options or parameters for batching. |
 | [Connect to your Azure Quantum workspace](https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace) | integrations | 0.65 | Describes using qdk.azure Workspace class and connection strings; likely includes workspace parameter names and connection configuration details specific to Azure Quantum. |
 | [Different ways to run the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-re-jobs) | configuration | 0.65 | Explains how to work with the resource estimator across SDKs and IDEs; likely includes specific commands, options, and environment settings unique to this tool. |
 | [Manage sessions](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-sessions) | limits-quotas | 0.65 | Focuses on job failure policies and avoiding session timeouts; likely includes specific timeout values and constraints for sessions. |
 | [Migrate your Azure Quantum job data](https://learn.microsoft.com/en-us/azure/quantum/migration-guide) | decision-making | 0.65 | The migration guide explains how to move an Azure Quantum workspace to a new region and explicitly differentiates behavior based on managed vs unmanaged storage, including what data is preserved (job input/output) and what is lost (job history visibility). This is migration-focused decision guidance with product-specific consequences and constraints, which aligns with the decision-making sub-skill. |
-| [Overview of OpenQASM in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration) | integrations | 0.65 | Describes how to run OpenQASM code in the QDK with Azure Quantum integration; likely includes QDK/OpenQASM-specific APIs, parameters, and supported features beyond generic SDK usage. |
+| [Overview of OpenQASM in the QDK](https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration) | integrations | 0.65 | The page describes product-specific integration of OpenQASM with the Microsoft Quantum Development Kit and Azure Quantum, including how to run OpenQASM code in VS Code and Jupyter environments using QDK extensions. This is concrete integration guidance rather than a conceptual overview, but it focuses on environment setup and usage rather than limits, security, or deployment. |
 | [Run hybrid QC jobs](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated) | integrations | 0.65 | Describes implementation of integrated hybrid computing and submitting jobs using the Adaptive RI target profile; includes target profile names and usage patterns unique to this product. |
 | [Set up the QDK](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk) | configuration | 0.65 | Environment setup for QDK in VS Code with Python, Jupyter, and Azure CLI; likely includes specific extension IDs, settings, and configuration steps. |
 | [Use known estimates](https://learn.microsoft.com/en-us/azure/quantum/resource-estimator-known-estimates) | configuration | 0.65 | Explains how to pass pre-calculated estimates as input; involves specific input parameters and usage patterns unique to the resource estimator. |
@@ -130,6 +140,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [PASQAL support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal) | troubleshooting | 0.60 | Outlines support responsibilities and escalation for PASQAL targets; product-specific troubleshooting and support routing information. |
 | [Quantinuum support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-quantinuum) | troubleshooting | 0.60 | Describes support boundaries and escalation for Quantinuum targets; specific to Azure Quantum–Quantinuum integration. |
 | [Rigetti support policy](https://learn.microsoft.com/en-us/azure/quantum/provider-support-rigetti) | troubleshooting | 0.60 | Defines how issues with Rigetti targets are handled between Azure and Rigetti support; unique troubleshooting and escalation guidance. |
+| [Submit a circuit in provider-specific format](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format) | integrations | 0.60 | The article explains how to use the qdk.azure Python module to submit quantum circuits in specific formats (QIR, OpenQASM, Pulser SDK) to the Azure Quantum service. This is a product-specific coding and integration pattern for circuit submission, not just a conceptual overview, and aligns best with integrations & coding patterns. |
 | [Submit jobs with Q# and VS Code](https://learn.microsoft.com/en-us/azure/quantum/how-to-submit-jobs) | deployment | 0.60 | Explains how to submit Q# jobs to real hardware via VS Code, Python, and CLI; contains product-specific job submission patterns and constraints relevant to deployment. |
 
 ## Unclassified Pages
@@ -139,7 +150,6 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Get the output of the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/overview-resource-estimator-output-data) | 0.55 | Focuses on interpreting output and accessing results; while useful, it is more about reading data than configuring the product or listing limits. |
 | [Get started with sessions](https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-interactive) | 0.50 | Explains sessions architecture and how to create them; mostly conceptual and procedural without clear evidence of numeric limits or detailed config tables in the summary. |
 | [Types of target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles) | 0.50 | Overview of target profile types and capabilities; likely conceptual constraints rather than numeric limits or config tables. |
-| [Add or remove a provider](https://learn.microsoft.com/en-us/azure/quantum/how-to-add-a-provider) | 0.45 | How-to add/remove providers via portal; summary suggests UI steps and an error message, but not deep config tables or limits. |
 | [How to use the neutral atom device visualizers](https://learn.microsoft.com/en-us/azure/quantum/how-to-use-neutral-atom-visualizer) | 0.45 | Explains how to use a visualizer UI and create diagrams; summary suggests usage guidance rather than detailed configuration or limits. |
 | [Program implementation](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/programstructure/) | 0.45 | Explains components of a simple Q# program and how to run it; more of a basic tutorial than a configuration or limits reference. |
 | [Run your first resource estimate](https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-resources-estimator) | 0.45 | Quickstart for submitting a sample to the resource estimator; likely step-by-step tutorial without comprehensive configuration tables or limits. |
@@ -150,7 +160,9 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Sparse simulator](https://learn.microsoft.com/en-us/azure/quantum/sparse-simulator) | 0.40 | Describes the sparse simulator conceptually; summary does not indicate specific configuration parameters, limits, or error codes. |
 | [Work with jobs](https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-jobs) | 0.40 | Intro to jobs and lifecycle; summary suggests conceptual guidance without detailed limits, configs, or error mappings. |
 | [Get started with the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/intro-to-resource-estimation) | 0.35 | Introduction to the resource estimator; mostly conceptual description of what it does and high-level capabilities. |
+| [Add or remove a provider](https://learn.microsoft.com/en-us/azure/quantum/how-to-add-a-provider) | 0.30 | How-to for adding/removing providers in a workspace; likely step-by-step UI/API instructions without detailed configuration parameter tables, limits, or troubleshooting mappings. |
 | [Azure Quantum release notes](https://learn.microsoft.com/en-us/azure/quantum/release-notes) | 0.30 | Release notes; while detailed, they are temporal change logs rather than stable expert configuration or limits content for skills. |
+| [Billing and job costs in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing) | 0.30 | Described as guidelines to understand costs and manage invoices; this is typically conceptual billing guidance without numeric service limits, configuration tables, or decision matrices with thresholds. |
 | [Conditional loops](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conditionalloops) | 0.30 | Conditional loops and quantum hardware restrictions are described conceptually; no numeric hardware limits or configuration ranges. |
 | [Conjugations](https://learn.microsoft.com/en-us/azure/quantum/user-guide/language/expressions/conjugations) | 0.30 | Conjugations and quantum memory patterns are explained conceptually; no concrete limits, configs, or decision matrices. |
 | [Double-factorized chemistry with the resource estimator](https://learn.microsoft.com/en-us/azure/quantum/tutorial-resource-estimator-chemistry) | 0.30 | Resource estimator tutorial for quantum chemistry; shows how to use a tool but does not enumerate service limits, configs, or decision matrices. |

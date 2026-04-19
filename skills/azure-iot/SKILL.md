@@ -3,7 +3,7 @@ name: azure-iot
 description: Expert knowledge for Azure IoT development including architecture & design patterns, and integrations & coding patterns. Use when using MQTT, IoT Plug and Play, DPS/IoT Hub, SAP ERP integration, or industrial IoT reference architectures, and other Azure IoT related development tasks. Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (use azure-iot-edge), Azure IoT Central (use azure-iot-central), Azure Defender For Iot (use azure-defender-for-iot).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure IoT Skill

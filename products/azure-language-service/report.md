@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 196
+- **Updated Pages**: 0
+- **Unchanged**: 197
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-language-service/azure-language-service.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure 
 | *(Unclassified)* | 93 | 47.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Migrate from LUIS or QnA Maker to Language Service](https://learn.microsoft.com/en-us/azure/ai-services/language-service/reference/migrate)
-  - Updated: 2026-02-17T12:03:00.000Z → 2026-04-10T22:08:00.000Z
 
 ## Classified Pages
 

@@ -49,10 +49,10 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 - **Unclassified**: 50
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 122
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 125
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-translator/azure-translator.csv`
 
 ## Classification Statistics
@@ -70,21 +70,6 @@ confusable_not_for: Not for Azure AI Language (use azure-language-service), Azur
 | *(Unclassified)* | 50 | 40.0% |
 
 ## Changes
-
-### New Pages
-
-- [Azure Translator known issues and troubleshooting](https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/known-issues)
-- [Custom text translation](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/customization)
-
-### Updated Pages
-
-- [Custom Translator portal platform upgrade](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/platform-upgrade)
-  - Updated: 2025-11-18T15:37:00.000Z → 2026-04-10T22:08:00.000Z
-
-### Deleted Pages
-
-- ~~Custom text-translation/preview/get-languages.md~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/concepts/customization)
-- ~~Azure Translator known issues~~ (https://learn.microsoft.com/en-us/azure/ai-services/translator/reference/known-issues)
 
 ## Classified Pages
 

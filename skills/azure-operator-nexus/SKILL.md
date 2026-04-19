@@ -1,9 +1,9 @@
 ---
 name: azure-operator-nexus
-description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing Nexus fabrics, isolation domains, BGP/ACL/QoS policies, NPB TAP rules, or near‑edge storage designs, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Operator Nexus development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Nexus clusters/fabric, BGP/ACL/QoS, NPB TAP rules, near-edge storage, or Nexus AKS ETCD ops, and other Azure Operator Nexus related development tasks. Not for Azure Network Function Manager (use azure-network-function-manager), Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Operator Nexus Skill
@@ -29,7 +29,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L89-L96 | Guidance on choosing Nexus SKUs, VM sizes, storage software versions, and planning where to place Nexus Kubernetes resources in your deployment. |
 | Architecture & Design Patterns | L97-L101 | Designing near-edge storage for Azure Operator Nexus: architecture choices, data locality, performance, capacity planning, redundancy, and integration with Nexus network/compute. |
 | Limits & Quotas | L102-L114 | Limits, capacity planning, supported versions, and operational behaviors for Nexus clusters: quotas, storage sizing, node restarts, isolation domain requirements, upgrades, and log retention. |
-| Security | L115-L153 | Securing Nexus fabrics, clusters, and VMs: identity/RBAC, ACLs, SSH/serial access, break-glass, key/secret rotation, Defender/Policy, and cross-subscription or managed identity access. |
+| Security | L115-L153 | Securing Nexus: identity/RBAC, ACLs, SSH/serial access, break-glass, key/secret rotation, managed identities, Defender/Policy, TAP/ExpressRoute auth, and secure VM/cluster access. |
 | Configuration | L154-L216 | Configuring and updating Nexus clusters and network fabric: JSON templates, isolation domains, BGP/route policies, ACLs, QoS, maintenance, monitoring, and Kubernetes/node settings. |
 | Integrations & Coding Patterns | L217-L221 | Configuring Network Packet Broker TAP rules in Azure Operator Nexus, including rule creation, traffic mirroring, filtering, and integration patterns for network observability. |
 | Deployment | L222-L230 | Guides for upgrading and replacing Nexus fabric devices/terminal servers, running pre-validation and template-based fabric upgrades, and building/maintaining VM images for Operator Nexus. |
@@ -129,8 +129,8 @@ This skill requires **network access** to fetch documentation content:
 | Manage Azure Operator Nexus credential rotation lifecycle | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-credential-rotation |
 | Delete ACLs from Azure Operator Nexus resources | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-access-control-list |
 | Enable or disable vulnerability scanning in Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-disable-vulnerability-scanning |
-| Enable SAMI for Operator Nexus Network Fabric Controller | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-controller |
-| Configure SAMI on Operator Nexus Network Fabric resource | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource |
+| Configure system-assigned managed identity for Nexus NFC | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-controller |
+| Enable SAMI and roles for Nexus Network Fabric | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource |
 | Configure Entra ID RBAC for Nexus Kubernetes | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-aad-rbac |
 | Securely connect to Azure Operator Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-connect |
 | Install Defender for Containers on Nexus clusters | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-install-microsoft-defender |
@@ -141,7 +141,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Defender for Cloud for Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-defender-for-cloud-security |
 | Update ACL configurations on Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-access-control-list |
 | Update ExpressRoute authorization keys in Azure Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-expressroute-authorization-key |
-| Use customer-managed Key Vault with Operator Nexus fabrics | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault |
+| Use customer-managed Key Vault with Operator Nexus | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault |
 | Apply Azure Policy to secure Nexus resources | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-azure-policy |
 | Use Method D v2.0 break-glass access for Nexus fabric devices | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-break-glass-access |
 | Use Secret Rotation v1 for Nexus network fabric credentials | https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-password-rotation-v1 |

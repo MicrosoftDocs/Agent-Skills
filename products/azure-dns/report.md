@@ -42,10 +42,10 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 - **Unclassified**: 46
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 74
-- **Deleted Pages**: 1
+- **Unchanged**: 75
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-dns/azure-dns.csv`
 
 ## Classification Statistics
@@ -61,14 +61,6 @@ confusable_not_for: Not for Azure Traffic Manager (use azure-traffic-manager), A
 | *(Unclassified)* | 46 | 61.3% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/dns/dns-support-help)
-
-### Deleted Pages
-
-- ~~Troubleshoot public DNS~~ (https://learn.microsoft.com/en-us/azure/dns/dns-troubleshoot)
 
 ## Classified Pages
 

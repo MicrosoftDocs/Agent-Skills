@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   integrations: Integrating Managed Grafana with Azure AI/Agent Framework, Prometheus,
     AKS, Azure Monitor, and Data Explorer, plus configuring data sources, alerts,
@@ -39,8 +39,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Synapse Ana
 - **Total Pages**: 43
 - **Fetched**: 43
 - **Fetch Failed**: 0
-- **Classified**: 35
-- **Unclassified**: 8
+- **Classified**: 34
+- **Unclassified**: 9
 
 ### Incremental Update
 - **New Pages**: 0
@@ -56,18 +56,18 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Synapse Ana
 | configuration | 6 | 14.0% |
 | decision-making | 4 | 9.3% |
 | deployment | 1 | 2.3% |
-| integrations | 10 | 23.3% |
+| integrations | 9 | 20.9% |
 | limits-quotas | 2 | 4.7% |
 | security | 10 | 23.3% |
 | troubleshooting | 2 | 4.7% |
-| *(Unclassified)* | 8 | 18.6% |
+| *(Unclassified)* | 9 | 20.9% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Remote MCP server](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-mcp-server)
-  - Updated: 2026-03-10T22:11:00.000Z → 2026-04-09T17:25:00.000Z
+- [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard)
+  - Updated: 2025-11-19T12:10:00.000Z → 2026-04-14T17:11:00.000Z
 
 ## Classified Pages
 
@@ -92,7 +92,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Synapse Ana
 | [Use deterministic outbound IPs](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-deterministic-ip) | security | 0.75 | Describes deterministic outbound IP feature, plan requirement (Standard), and firewall rule configuration; product-specific networking and security behavior. |
 | [Add an Azure Monitor workspace](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-connect-azure-monitor-workspace) | integrations | 0.70 | Product-specific integration between Azure Monitor workspace (managed Prometheus) and Managed Grafana with configuration steps and parameters. |
 | [Agent Framework Workflow dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-workflow-dashboard) | integrations | 0.70 | Prebuilt dashboard for multi-agent workflows with OpenTelemetry and Application Insights; product-specific metrics and visualization patterns. |
-| [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | integrations | 0.70 | Prebuilt dashboard for Agent Framework with Application Insights; includes specific metrics, dimensions, and visualization patterns unique to this integration. |
 | [Configure MCP for AI Foundry agents](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-configure-mcp-for-ai-foundry) | integrations | 0.70 | Covers how to wire the Azure Managed Grafana MCP endpoint into Azure AI Foundry agents so they can query Azure resources, metrics, logs, and dashboards. This is a product-specific integration pattern between two Azure services with concrete configuration steps and parameters. |
 | [Connect to self-hosted Prometheus through managed private endpoint](https://learn.microsoft.com/en-us/azure/managed-grafana/tutorial-mpe-oss-prometheus) | integrations | 0.70 | Product-specific integration pattern between AKS-hosted Prometheus and Azure Managed Grafana via managed private endpoint, likely with concrete endpoint settings and constraints. |
 | [Enable Grafana Enterprise](https://learn.microsoft.com/en-us/azure/managed-grafana/how-to-grafana-enterprise) | decision-making | 0.70 | Describes prerequisites (Standard plan), plan options, and how to update plans; supports decision-making about Enterprise add-on usage and access to plugins. |
@@ -118,6 +117,7 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Synapse Ana
 | [FAQ](https://learn.microsoft.com/en-us/azure/managed-grafana/faq) | 0.30 | FAQ pages are often mixed, but based on the description this appears to be general Q&A about Azure Managed Grafana (what it is, availability, support, pricing, etc.) rather than detailed limits, configuration tables, or error-code-based troubleshooting. Without evidence of specific numeric limits, config parameter tables, or error mappings, it doesn't meet the expert-knowledge criteria for any sub-skill type. |
 | [Grafana UI](https://learn.microsoft.com/en-us/azure/managed-grafana/grafana-app-ui) | 0.30 | Reference for Grafana UI components linking to upstream Grafana docs; mostly conceptual UI overview without Azure-specific expert configuration or limits. |
 | [About Azure Managed Grafana](https://learn.microsoft.com/en-us/azure/managed-grafana/overview) | 0.20 | High-level product overview and benefits; no concrete limits, configs, or decision matrices. |
+| [Agent Framework dashboard](https://learn.microsoft.com/en-us/azure/managed-grafana/agent-framework-dashboard) | 0.20 | From the summary, the page is a how-to guide for creating and customizing an Agent Framework dashboard in Azure Managed Grafana. It describes using a prebuilt dashboard to visualize performance, token usage, costs, and errors, but there is no indication of specific limits, configuration parameter tables, error-code mappings, or other product-specific expert details as defined in the sub-skill types. It appears to be primarily tutorial/usage content rather than expert reference material. |
 | [Create a workspace - Azure CLI](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-cli) | 0.10 | Quickstart for creating a workspace via CLI; procedural tutorial, not configuration reference or limits. |
 | [Create a workspace - Portal](https://learn.microsoft.com/en-us/azure/managed-grafana/quickstart-managed-grafana-portal) | 0.10 | Quickstart for creating a workspace via portal; step-by-step tutorial without detailed limits, configs, or troubleshooting matrices. |
 | [Support](https://learn.microsoft.com/en-us/azure/managed-grafana/find-help-open-support-ticket) | 0.10 | This page describes how to find help and open a support ticket, which is process/navigation content. It doesn't contain product-specific limits, configuration parameters, error-code mappings, or decision matrices, so it doesn't qualify as expert knowledge for any sub-skill type. |

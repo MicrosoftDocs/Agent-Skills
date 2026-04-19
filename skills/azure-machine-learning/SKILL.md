@@ -1,9 +1,9 @@
 ---
 name: azure-machine-learning
-description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML jobs/pipelines, AutoML, prompt flow, online/batch endpoints, or feature store, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
+description: Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure ML workspaces, AutoML, Prompt Flow, online/batch endpoints, or the Python SDK/CLI, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Machine Learning Skill
@@ -30,7 +30,7 @@ This skill requires **network access** to fetch documentation content:
 | Architecture & Design Patterns | L125-L131 | Designing Azure ML inference architectures: choosing endpoint types, planning real-time online endpoints, and structuring data movement and multistep pipeline components. |
 | Limits & Quotas | L132-L140 | Info on Azure ML regional/sovereign availability, VM SKUs, and service limits, plus how to view, plan, and manage quotas and capacity for model deployments and endpoints. |
 | Security | L141-L194 | Securing Azure ML workspaces, data, and endpoints with encryption, identity/RBAC, Key Vault, policies, and network isolation (VNets, private access, exfiltration prevention). |
-| Configuration | L195-L467 | How to configure Azure ML components, jobs, compute, networking, monitoring, AutoML, prompt flow, and YAML/CLI resources for training, deployment, and responsible AI. |
+| Configuration | L195-L467 | Configuring Azure ML: designer components, AutoML, compute, networking, data, monitoring, registries, prompt flow, and full CLI/SDK/YAML setup for training, deployment, and ops. |
 | Integrations & Coding Patterns | L468-L511 | Integrating Azure ML with data sources, Spark/Databricks/Synapse, MLflow, REST/HTTP, prompt flow, and batch/online endpoints, plus patterns for logging, storage, and deployment. |
 | Deployment | L512-L553 | Deploying and operationalizing models and prompt flows: online/batch endpoints, AKS/ACI, CI/CD, MLOps/GenAIOps, blue‑green rollouts, pipelines, and cross-workspace consumption. |
 
@@ -441,7 +441,7 @@ This skill requires **network access** to fetch documentation content:
 | Author batch deployment YAML for Azure ML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-deployment-batch?view=azureml-api-2 |
 | Define Kubernetes online deployments in Azure ML YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-deployment-kubernetes-online?view=azureml-api-2 |
 | Configure managed online deployments via YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-deployment-managed-online?view=azureml-api-2 |
-| Author deployment template YAML for Azure ML CLI v2 | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-deployment-template?view=azureml-api-2 |
+| Configure Azure ML deployment template YAML schema | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-deployment-template?view=azureml-api-2 |
 | Author batch endpoint YAML for Azure ML CLI v2 | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-endpoint-batch?view=azureml-api-2 |
 | Configure Azure ML online endpoints with YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-endpoint-online?view=azureml-api-2 |
 | Reference schema for Azure ML environment YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-environment?view=azureml-api-2 |
@@ -457,7 +457,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Spark jobs in Azure ML with YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-job-spark?view=azureml-api-2 |
 | Define sweep (hyperparameter) jobs with Azure ML YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-job-sweep?view=azureml-api-2 |
 | Reference schema for Azure ML MLTable YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-mltable?view=azureml-api-2 |
-| Define Azure ML models using CLI v2 YAML schema | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-model?view=azureml-api-2 |
+| Define Azure ML models with CLI v2 YAML schema | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-model?view=azureml-api-2 |
 | Create model monitoring schedules with Azure ML YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-monitor?view=azureml-api-2 |
 | Navigate Azure ML CLI v2 YAML schema references | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-overview?view=azureml-api-2 |
 | Define Azure ML registries using CLI v2 YAML | https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-registry?view=azureml-api-2 |

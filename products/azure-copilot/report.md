@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   decision-making: 'Using Copilot to compare options and make cost‑efficient Azure
     decisions: VM sizing, workload templates, Marketplace offers, storage estate insights,
@@ -44,8 +44,8 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 39
+- **Updated Pages**: 1
+- **Unchanged**: 38
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-copilot/azure-copilot.csv`
 
@@ -62,6 +62,11 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | *(Unclassified)* | 20 | 51.3% |
 
 ## Changes
+
+### Updated Pages
+
+- [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent)
+  - Updated: 2026-03-12T22:17:00.000Z → 2026-04-15T22:10:00.000Z
 
 ## Classified Pages
 
@@ -105,7 +110,7 @@ confusable_not_for: Not for Azure AI services (use microsoft-foundry-tools), Azu
 | [Understand service health](https://learn.microsoft.com/en-us/azure/copilot/understand-service-health) | 0.25 | Service health usage scenarios; no indication of specific configuration parameters, limits, or troubleshooting mappings. |
 | [Use Azure Copilot with AI Shell](https://learn.microsoft.com/en-us/azure/copilot/ai-shell-overview) | 0.25 | Overview of using Copilot via AI Shell; summary does not indicate detailed parameter tables or constraints beyond generic CLI usage. |
 | [Capabilities](https://learn.microsoft.com/en-us/azure/copilot/capabilities) | 0.20 | Capabilities overview and how to open Copilot; no detailed configs, limits, or troubleshooting content. |
-| [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Describes what the migration agent can help with (planning, assessing, strategizing) but does not expose specific configuration values, limits, error codes, or detailed decision criteria. |
+| [Migration](https://learn.microsoft.com/en-us/azure/copilot/migration-agent) | 0.20 | Summary describes high-level capabilities of Azure Copilot migration agents (planning, assessing, strategizing, moving workloads, creating business cases and assessments, setting up landing zones) without exposing concrete limits, configuration parameters, error codes, or decision matrices. Content appears conceptual/marketing rather than detailed technical guidance, so no sub-skill type applies. |
 | [Overview](https://learn.microsoft.com/en-us/azure/copilot/agents-preview) | 0.20 | High-level overview of Agents (preview) in Azure Copilot describing capabilities and value; no concrete limits, configuration parameters, error codes, or decision matrices. |
 | [Write effective prompts](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | 0.15 | Prompt engineering guidance is conceptual and broadly known; not specific to Azure Copilot configuration or limits. |
 | [Discover storage insights](https://learn.microsoft.com/en-us/azure/copilot/discover-storage-estate-insights) | 0.10 | Page appears to be a conceptual/marketing-style overview of Azure Storage Discovery with Copilot, describing visibility, cost optimization, and security posture at a high level. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, or detailed decision matrices. It focuses on what the service does, not specific expert configuration, limits, or troubleshooting details. |

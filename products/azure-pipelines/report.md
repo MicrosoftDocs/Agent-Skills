@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   security: 'Securing Azure Pipelines: agent auth, service connections, secrets/Key
     Vault, permissions and approvals, secure variables/files, repo access, signing,
@@ -52,9 +52,9 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 - **Unclassified**: 56
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 10
-- **Unchanged**: 557
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 568
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-pipelines/azure-pipelines.csv`
 
@@ -75,33 +75,10 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 
 ## Changes
 
-### New Pages
-
-- [Access Azure DevOps with Microsoft Entra workload identity](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops)
-- [AzureCLI@3](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-cli-v3?view=azure-pipelines)
-
 ### Updated Pages
 
-- [Task index](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T08:00:00.000Z
-- [stages.stage](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/stages-stage?view=azure-pipelines)
-  - Updated: 2026-03-02T08:00:00.000Z → 2026-04-02T08:00:00.000Z
-- [Set retention policies](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops)
-  - Updated: 2025-12-17T18:06:00.000Z → 2026-04-07T22:39:00.000Z
-- [AzureCLI@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/azure-cli-v2?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T08:00:00.000Z
-- [CargoAuthenticate@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/cargo-authenticate-v0?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
-- [MavenAuthenticate@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/maven-authenticate-v0?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
-- [PyPIPublisher@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/py-pi-publisher-v0?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
-- [PipAuthenticate@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/pip-authenticate-v1?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
-- [TwineAuthenticate@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/twine-authenticate-v1?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
-- [npmAuthenticate@0](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/npm-authenticate-v0?view=azure-pipelines)
-  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-07T21:00:00.000Z
+- [Sign up for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops)
+  - Updated: 2025-03-13T21:37:00.000Z → 2026-04-14T01:03:00.000Z
 
 ## Classified Pages
 
@@ -679,5 +656,5 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Boards (use a
 | [Release pipelines overview](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops) | 0.20 | High-level overview of classic release pipelines; primarily conceptual without detailed configuration tables or constraints. |
 | [View pipeline history (Classic)](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/history?view=azure-devops) | 0.20 | How to view Classic pipeline history; navigation/usage content without expert-level configuration or limits. |
 | [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) | 0.10 | Conceptual explanation of key Azure Pipelines concepts; describes terms and components but not detailed limits, configuration matrices, or error-resolution mappings. |
-| [Sign up for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops) | 0.10 | Sign-up and onboarding walkthrough; no detailed configuration matrices, limits, or troubleshooting content. |
+| [Sign up for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops) | 0.10 | Sign-up/get-started guide for Azure Pipelines without detailed limits, configuration matrices, or product-specific error/decision data; primarily onboarding/tutorial content rather than expert reference material. |
 | [What is Azure Pipelines?](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) | 0.10 | High-level overview of Azure Pipelines (what it is and general capabilities) without specific limits, configuration tables, error codes, or decision matrices. |

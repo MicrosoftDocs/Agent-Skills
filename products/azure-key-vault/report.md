@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   integrations: 'Using Key Vault from code and services: JS/Go/.NET/Python client
     patterns for keys/secrets/certs, rotation and backup, plus integrations with Event
@@ -47,9 +47,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 84
-- **Unchanged**: 78
-- **Deleted Pages**: 5
+- **Updated Pages**: 2
+- **Unchanged**: 160
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-key-vault/azure-key-vault.csv`
 
 ## Classification Statistics
@@ -70,55 +70,10 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 
 ### Updated Pages
 
-- [Java](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-java)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-04-09T08:00:00.000Z
-- [Bicep](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-bicep)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-10T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-template)
-  - Updated: 2025-11-19T08:00:00.000Z → 2026-04-10T08:00:00.000Z
-- [Import HSM-protected keys (overview)](https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys)
-  - Updated: 2026-01-08T23:13:00.000Z → 2026-04-10T17:16:00.000Z
-- [Import HSM-protected keys (BYOK)](https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-byok)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-04-10T17:16:00.000Z
-- [Get Started](https://learn.microsoft.com/en-us/azure/key-vault/keys/javascript-developer-guide-get-started)
-  - Updated: 2026-02-10T23:09:00.000Z → 2026-04-10T17:16:00.000Z
-- [Key types, algorithms, and operations](https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details)
-  - Updated: 2026-03-12T06:17:00.000Z → 2026-04-09T08:00:00.000Z
-- [Secure your Key Vault keys](https://learn.microsoft.com/en-us/azure/key-vault/keys/secure-keys)
-  - Updated: 2025-12-02T23:14:00.000Z → 2026-04-10T08:00:00.000Z
-- [Configure automated key rotation](https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-04-10T08:00:00.000Z
-- [Bring your own key specification](https://learn.microsoft.com/en-us/azure/key-vault/keys/byok-specification)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-09T08:00:00.000Z
 - [CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-cli)
-  - Updated: 2026-03-26T17:08:00.000Z → 2026-04-07T22:10:00.000Z
+  - Updated: 2026-04-07T22:10:00.000Z → 2026-04-14T08:00:00.000Z
 - [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-powershell)
-  - Updated: 2026-03-26T22:17:00.000Z → 2026-03-30T08:00:00.000Z
-- [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-template)
-  - Updated: 2026-03-26T17:08:00.000Z → 2026-03-30T08:00:00.000Z
-- [.NET SDK](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quickstart-dotnet)
-  - Updated: 2026-03-21T06:07:00.000Z → 2026-03-30T08:00:00.000Z
-- [Python SDK](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quickstart-python)
-  - Updated: 2026-03-26T17:08:00.000Z → 2026-04-07T22:10:00.000Z
-- [JavaScript SDK](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quickstart-javascript)
-  - Updated: 2026-03-21T06:07:00.000Z → 2026-03-30T08:00:00.000Z
-- [Manage with the Azure CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/key-management)
-  - Updated: 2026-03-26T17:08:00.000Z → 2026-04-07T22:10:00.000Z
-- [Managed HSM role management](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/role-management)
-  - Updated: 2026-03-26T22:17:00.000Z → 2026-03-30T08:00:00.000Z
-- [Import HSM-protected keys to Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/hsm-protected-keys-byok)
-  - Updated: 2026-03-26T17:08:00.000Z → 2026-03-30T08:00:00.000Z
-- [Secure access to your Managed HSM](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/how-to-secure-access)
-  - Updated: 2026-03-21T06:07:00.000Z → 2026-03-30T08:00:00.000Z
-- *...and 64 more*
-
-### Deleted Pages
-
-- ~~Import HSM-protected keys (nCipher)~~ (https://learn.microsoft.com/en-us/azure/key-vault/keys/hsm-protected-keys-ncipher)
-- ~~About managed storage account keys (Legacy)~~ (https://learn.microsoft.com/en-us/azure/key-vault/secrets/about-managed-storage-account-keys)
-- ~~Managed storage accounts with CLI (legacy)~~ (https://learn.microsoft.com/en-us/azure/key-vault/secrets/overview-storage-keys)
-- ~~Managed storage accounts with PowerShell (legacy)~~ (https://learn.microsoft.com/en-us/azure/key-vault/secrets/overview-storage-keys-powershell)
-- ~~Fetch SAS tokens in code (legacy)~~ (https://learn.microsoft.com/en-us/azure/key-vault/secrets/storage-keys-sas-tokens-code)
+  - Updated: 2026-03-30T08:00:00.000Z → 2026-04-14T08:00:00.000Z
 
 ## Classified Pages
 
@@ -259,10 +214,8 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [.NET](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-net) | 0.25 | Quickstart for .NET Key Vault keys client library; primarily introductory sample code without deep configuration tables, limits, or product-specific edge cases. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-template) | 0.25 | ARM template quickstart for Managed HSM; shows one template pattern rather than a full configuration reference or decision/limits guide. |
 | [CLI](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-cli) | 0.25 | Quickstart tutorial for creating and retrieving a key via CLI; shows basic commands but not comprehensive configuration matrices, limits, or advanced patterns beyond generic usage. |
-| [CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-cli) | 0.25 | Managed HSM quickstart via CLI; focuses on basic provisioning steps, not on comprehensive configuration matrices, limits, or advanced patterns. |
 | [Portal](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal) | 0.25 | Portal quickstart for creating a key and vault; primarily introductory, not detailed configuration or troubleshooting. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-powershell) | 0.25 | Quickstart tutorial for creating and retrieving a key via PowerShell; focuses on basic steps rather than detailed configuration options, limits, or troubleshooting. |
-| [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-powershell) | 0.25 | Managed HSM quickstart via PowerShell; primarily a step-by-step example without detailed configuration options or expert troubleshooting/limits. |
 | [Python](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-python) | 0.25 | Quickstart for Python Key Vault client library; introductory usage without detailed configuration parameters, limits, or structured troubleshooting guidance. |
 | [.NET](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-net) | 0.20 | Quickstart for .NET secrets client library. Focused on basic CRUD examples; summary does not indicate advanced configuration parameters or constraints. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-template) | 0.20 | ARM template quickstart for creating a key vault and key; focuses on a single example template, not comprehensive configuration or expert patterns. |
@@ -272,6 +225,7 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Bicep](https://learn.microsoft.com/en-us/azure/key-vault/keys/quick-create-bicep) | 0.20 | Bicep quickstart to create a key vault and key; step-by-step deployment example without configuration matrices, limits, or specialized guidance. |
 | [CLI](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-cli) | 0.20 | Basic quickstart for creating a vault and storing a certificate with CLI; primarily step-by-step tutorial without detailed config tables or limits. |
 | [CLI](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-cli) | 0.20 | CLI quickstart to create a vault; basic provisioning steps, not configuration matrices, limits, or security role definitions. |
+| [CLI](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-cli) | 0.20 | Quickstart focused on provisioning and activating Managed HSM via Azure CLI; primarily step-by-step commands without configuration tables, limits, error-code mappings, or product-specific decision matrices. Does not meet thresholds for limits, configuration, troubleshooting, or other expert-knowledge categories. |
 | [CLI](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-cli) | 0.20 | Quickstart for setting/retrieving a secret via CLI. Standard tutorial flow without indication of detailed configuration tables, limits, or product-specific edge cases. |
 | [Control your data in the cloud](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/mhsm-control-data) | 0.20 | Described as a deep dive on security controls and compliance posture; likely a conceptual/compliance overview without specific RBAC role lists, config parameters, or error mappings. |
 | [Go](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-go) | 0.20 | Go secrets client quickstart. Introductory CRUD operations; no indication of advanced configuration or product-specific edge cases. |
@@ -284,6 +238,7 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | [Portal](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) | 0.20 | Portal quickstart to create a vault; introductory tutorial without detailed configuration options, limits, or troubleshooting mappings. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-powershell) | 0.20 | Quickstart tutorial for basic PowerShell usage; focuses on step-by-step creation and retrieval, not on configuration matrices, limits, or detailed best practices. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-powershell) | 0.20 | PowerShell quickstart to create a Key Vault; basic provisioning steps, not deep expert configuration or limits. |
+| [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/quick-create-powershell) | 0.20 | Quickstart for creating and activating Managed HSM using PowerShell; mainly procedural instructions and basic usage. Lacks detailed limits, configuration parameter tables, security role breakdowns, or troubleshooting mappings required for expert-knowledge classification. |
 | [PowerShell](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-powershell) | 0.20 | Quickstart for PowerShell secret operations. Typical getting-started content; no evidence of expert-only configuration, limits, or troubleshooting details. |
 | [Python](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python) | 0.20 | Python secrets client quickstart. Basic usage examples; not focused on expert configuration, limits, or troubleshooting. |
 | [Third party solutions](https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/third-party-solutions) | 0.20 | Lists third-party solutions and marketplace links; primarily catalog/marketing content without deep technical configuration or limits. |

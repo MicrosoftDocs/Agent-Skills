@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   deployment: 'Guides for deploying and configuring Blob Storage: static website hosting
     (CDN, GitHub Actions, Terraform), feature support, Data Lake enablement, and hybrid/migration
@@ -16,9 +16,9 @@ category_descriptions:
   best-practices: 'Performance, cost, resiliency, and monitoring best practices for
     Blob Storage: access tiers, lifecycle, concurrency, client tuning, retries, NFS/SFTP,
     events, backups, and language-specific optimizations'
-  limits-quotas: Limits, quotas, performance, and known issues for Azure Blob Storage
-    and related features (tiers, NFS/SFTP, static sites, replication, BlobFuse, Data
-    Lake, Storage Mover).
+  limits-quotas: Blob Storage limits, quotas, performance and scale caps, protocol-specific
+    constraints (NFS, SFTP, BlobFuse, ADLS), archive rules, replication SLAs, and
+    cost/tier optimization rules.
   troubleshooting: 'Diagnosing and fixing Azure Blob Storage issues: Storage Mover
     networking/job errors, support bundles, BlobFuse mount/I/O problems, and known
     NFS 3.0 behavior and error scenarios.'
@@ -27,14 +27,14 @@ category_descriptions:
     containers/blobs, leases, tiers, tags, and events.'
 skill_description: Expert knowledge for Azure Blob Storage development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when using Data Lake, NFS/SFTP/BlobFuse,
-  static website hosting, encryption options, or SDK-based blob operations, and other
-  Azure Blob Storage related development tasks. Not for Azure Files (use azure-files),
-  Azure Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage),
+  & coding patterns, and deployment. Use when using Data Lake features, NFS/SFTP/BlobFuse,
+  static website hosting, SAS/RBAC auth, or SDK-based blob operations, and other Azure
+  Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure
+  Table Storage (use azure-table-storage), Azure Queue Storage (use azure-queue-storage),
   Azure NetApp Files (use azure-netapp-files).
-use_when: Use when using Data Lake, NFS/SFTP/BlobFuse, static website hosting, encryption
-  options, or SDK-based blob operations, and other Azure Blob Storage related development
-  tasks.
+use_when: Use when using Data Lake features, NFS/SFTP/BlobFuse, static website hosting,
+  SAS/RBAC auth, or SDK-based blob operations, and other Azure Blob Storage related
+  development tasks.
 confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (use
   azure-table-storage), Azure Queue Storage (use azure-queue-storage), Azure NetApp
   Files (use azure-netapp-files).
@@ -43,16 +43,16 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 
 ## Summary
 
-- **Total Pages**: 407
-- **Fetched**: 407
+- **Total Pages**: 408
+- **Fetched**: 408
 - **Fetch Failed**: 0
-- **Classified**: 334
+- **Classified**: 335
 - **Unclassified**: 73
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 406
+- **New Pages**: 1
+- **Updated Pages**: 4
+- **Unchanged**: 403
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-blob-storage/azure-blob-storage.csv`
 
@@ -61,27 +61,37 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | Type | Count | Percentage |
 |------|-------|------------|
 | best-practices | 30 | 7.4% |
-| configuration | 63 | 15.5% |
+| configuration | 63 | 15.4% |
 | decision-making | 22 | 5.4% |
 | deployment | 11 | 2.7% |
 | integrations | 132 | 32.4% |
-| limits-quotas | 16 | 3.9% |
-| security | 54 | 13.3% |
+| limits-quotas | 17 | 4.2% |
+| security | 54 | 13.2% |
 | troubleshooting | 6 | 1.5% |
 | *(Unclassified)* | 73 | 17.9% |
 
 ## Changes
 
+### New Pages
+
+- [Understand egress insights](https://learn.microsoft.com/en-us/azure/storage-discovery/egress-insights)
+
 ### Updated Pages
 
+- [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration)
+  - Updated: 2025-12-18T18:11:00.000Z → 2026-04-16T06:12:00.000Z
+- [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets)
+  - Updated: 2023-09-12T11:19:00.000Z → 2025-06-26T22:19:00.000Z
+- [Access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
+  - Updated: 2025-12-02T08:00:00.000Z → 2026-04-13T22:10:00.000Z
 - [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-07T22:12:00.000Z
+  - Updated: 2026-04-07T22:12:00.000Z → 2026-04-13T22:10:00.000Z
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets) | limits-quotas | 0.95 | Scalability targets pages list concrete per-account and per-blob request rates, bandwidth caps, and other numeric limits in tables, which are exact quotas and performance ceilings. |
+| [Blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets) | limits-quotas | 0.95 | This reference page documents concrete scalability and performance targets (request rates, bandwidth, object counts) for Azure Blob Storage accounts, including specific numeric limits and constraints that are not inferable from general knowledge. |
 | [Premium block blob storage accounts](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-block-blobs) | limits-quotas | 0.95 | Premium block blob scalability targets include specific maximum IOPS, throughput, capacity, and request rate numbers per account and per blob, which are numeric limits not inferable from general training. |
 | [Premium page blob storage accounts](https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets-premium-page-blobs) | limits-quotas | 0.95 | Premium page blob scalability targets document exact IOPS, throughput, and capacity limits per disk/account in tabular form, matching limits-quotas criteria. |
 | [Troubleshooting](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-troubleshooting) | troubleshooting | 0.95 | Explicit troubleshooting article with symptom-based issues and guidance; likely includes specific error messages and steps to resolve. |
@@ -323,6 +333,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Service SAS](https://learn.microsoft.com/en-us/azure/storage/blobs/sas-service-create-javascript) | security | 0.70 | Provides JavaScript client patterns and parameters for service SAS creation, including permissions and constraints. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-javascript) | integrations | 0.70 | Uses JavaScript client methods and allowed tier values for Azure block blobs, which are concrete integration details. |
 | [Set or change a blob's access tier](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-use-access-tier-python) | integrations | 0.70 | Uses Python client methods and allowed tier values for Azure block blobs, which are concrete integration details. |
+| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | limits-quotas | 0.70 | Describes smart tier behavior with specific inactivity thresholds (for example, 30 and 90 days) that trigger automatic movement between hot, cool, and cold tiers; these are concrete numeric rules governing the feature’s operation, fitting the limits/quotas category. |
 | [Soft delete for blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview) | configuration | 0.70 | Explains blob-level soft delete semantics and retention period behavior; product-specific configuration feature. |
 | [Soft delete for containers](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-container-overview) | configuration | 0.70 | Describes container soft delete retention period configuration and behavior; product-specific setting names and semantics. |
 | [StorageX getting started guide](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/storagex-quick-start-guide) | configuration | 0.70 | Deployment and operational guidance for StorageX in Azure; expected to include detailed configuration steps, prerequisites, and product-specific options for analyzing and moving data. |
@@ -443,12 +454,10 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Scenarios](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-scenarios) | 0.40 | Scenario descriptions for using storage tasks; more conceptual usage patterns than concrete limits/configs. |
 | [Supported Azure services](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-azure-services) | 0.40 | Lists Azure services that support ADLS with links; mostly catalog/overview, not detailed configuration parameters or decision matrices. |
 | [Supported open source platforms](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-supported-open-source-platforms) | 0.40 | List of open source platforms that support ADLS; catalog-style content without deep config tables or numeric limits. |
-| [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration) | 0.40 | Get-started guide for Azure-to-Azure Blob migration; description suggests procedural steps (configure endpoints, create job) rather than detailed config tables or limits. |
 | [Tutorial: Upload and process image files](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-upload-function-trigger) | 0.40 | End-to-end tutorial scenario; mostly step-by-step usage of Functions, Blob Storage, and AI services without detailed config tables or limits. |
 | [.NET](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-dotnet) | 0.35 | .NET quickstart; likely shows basic client usage, not a full SDK parameter or config reference. |
 | [Deploy Storage Discovery and access insights](https://learn.microsoft.com/en-us/azure/storage-discovery/get-storage-estate-insights) | 0.35 | Getting-started tutorial; focuses on basic deployment and usage, not deep configuration or limits. |
 | [ARM](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-arm) | 0.30 | ARM template quickstart; shows one deployment example rather than full configuration reference. |
-| [Access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview) | 0.30 | Conceptual overview of access tiers (hot, cool, cold, archive) and general guidance; no detailed numeric thresholds or configuration tables indicated. |
 | [Azure CLI](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-cli) | 0.30 | Quickstart using Azure CLI; focuses on basic usage, not exhaustive configuration or limits. |
 | [Azure Storage Migration Program Solutions](https://learn.microsoft.com/en-us/azure/storage/solution-integration/validated-partners/data-management/azure-file-migration-program-solutions) | 0.30 | Program overview and engagement details for Storage Migration Program; more about process and partners than technical decision matrices or configuration. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/storage-task-quickstart-portal) | 0.30 | Quickstart using Azure portal; likely step-by-step tutorial without deep config tables or limits. |
@@ -473,6 +482,7 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [What is BlobFuse?](https://learn.microsoft.com/en-us/azure/storage/blobs/blobfuse2-what-is) | 0.30 | Conceptual overview of BlobFuse; does not emphasize detailed configuration parameters, limits, or troubleshooting. |
 | [Cloud migration basics](https://learn.microsoft.com/en-us/azure/storage-mover/migration-basics) | 0.25 | Cloud migration basics; generic strategy content rather than product-specific expert details. |
 | [What is Azure Storage Mover?](https://learn.microsoft.com/en-us/azure/storage-mover/service-overview) | 0.25 | Introduction/overview of Azure Storage Mover; conceptual description of service and scenarios. |
+| [Access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview) | 0.20 | Primarily an overview of access tiers (hot, cool, cold, archive) and cost/usage concepts; while it may mention that capacity limits are at the account level, it does not focus on detailed numeric limits, configuration parameters, or decision matrices with quantified thresholds. |
 | [Azure Storage Actions documentation](https://learn.microsoft.com/en-us/azure/storage-actions/storage-tasks/) | 0.20 | Hub/landing page that routes to other docs; no detailed limits, configs, or troubleshooting content. |
 | [Azure portal](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) | 0.20 | Quickstart using Azure portal; mostly step-by-step UI instructions without deep configuration tables or limits. |
 | [Get Started on Storage Discovery reports](https://learn.microsoft.com/en-us/azure/storage-discovery/get-started-reports) | 0.20 | Page describes the structure and use of Azure Storage Discovery reports (capacity, activity, errors) and top-level filters. It appears to be a conceptual/UX overview of how insights are presented, without specific limits, configuration parameter tables, error-code mappings, or other product-specific numeric thresholds or settings. |
@@ -481,8 +491,9 @@ confusable_not_for: Not for Azure Files (use azure-files), Azure Table Storage (
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) | 0.20 | High-level overview of Blob Storage lifecycle management without detailed numeric limits, configuration tables, or product-specific decision matrices; primarily conceptual cost-optimization description. |
 | [Overview](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support) | 0.20 | This is primarily an overview of SFTP support for Azure Blob Storage and why/when to use it. The summary indicates conceptual description and positioning, not detailed limits, configuration tables, or error mappings. Without clear evidence of numeric limits, config matrices, or troubleshooting content, it does not meet the expert-knowledge criteria for any sub-skill type. |
 | [Page blob features](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview) | 0.20 | Overview of page blobs and use cases; largely conceptual with high-level sizes already broadly known. |
-| [Smart tiering](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) | 0.20 | Preview feature overview for Blob Storage smart tier; provided snippet is conceptual/marketing and does not show concrete limits, configuration tables, error codes, or decision matrices with quantified criteria. |
 | [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer) | 0.20 | Quickstart for Azure Storage Explorer; focuses on basic operations, not detailed configuration or limits. |
+| [Transfer from Azure Blob to Blob](https://learn.microsoft.com/en-us/azure/storage-mover/azure-to-azure-migration) | 0.20 | The page is a step-by-step getting-started guide for configuring an Azure Storage Mover Blob-to-Blob migration job. It describes creating endpoints and running a migration, but based on the summary it does not emphasize specific limits/quotas, configuration parameter tables, error-code-based troubleshooting, or other detailed product-specific settings that meet the expert-knowledge criteria. It appears to be primarily procedural tutorial content rather than a reference for limits, configuration, or troubleshooting. |
+| [Understand egress insights](https://learn.microsoft.com/en-us/azure/storage-discovery/egress-insights) | 0.20 | Page appears to describe how to view and interpret egress insights and patterns in Azure Storage Discovery, but the summary does not indicate presence of numeric limits, configuration parameter tables, error-code-based troubleshooting, or concrete decision matrices. It reads as conceptual/analytical guidance about understanding egress rather than product-specific expert details that match any sub-skill type. |
 | [What is Azure Storage Actions?](https://learn.microsoft.com/en-us/azure/storage-actions/overview) | 0.20 | High-level service overview without product-specific limits, configs, or error diagnostics. |
 | [What is Azure Storage Discovery?](https://learn.microsoft.com/en-us/azure/storage-discovery/overview) | 0.20 | Service overview for Storage Discovery; high-level description without detailed limits, configs, or troubleshooting. |
 | [Introduction to Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) | 0.10 | Introductory overview of Blob Storage; no expert-level numeric limits, configs, or troubleshooting content. |

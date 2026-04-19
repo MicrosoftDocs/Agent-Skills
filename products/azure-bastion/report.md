@@ -20,19 +20,16 @@ category_descriptions:
   architecture-patterns: 'Architectural options and patterns for Azure Bastion: hub/spoke
     and peered VNets, private-only deployments, network/topology design, and deployment
     guidance for secure remote access.'
-  troubleshooting: 'Diagnosing and resolving common Azure Bastion problems: connection
-    failures (RDP/SSH), portal access issues, network/NSG misconfig, and troubleshooting
-    steps/logs.'
-skill_description: Expert knowledge for Azure Bastion development including troubleshooting,
-  best practices, decision making, architecture & design patterns, limits & quotas,
-  security, configuration, and integrations & coding patterns. Use when accessing
-  VMs via Bastion (SSH/RDP), AKS private clusters, hub/spoke VNets, Entra ID auth,
-  or native clients, and other Azure Bastion related development tasks. Not for Azure
-  Virtual Network (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines),
+skill_description: Expert knowledge for Azure Bastion development including best practices,
+  decision making, architecture & design patterns, limits & quotas, security, configuration,
+  and integrations & coding patterns. Use when configuring Bastion for AKS private
+  clusters, VM scale sets, Entra ID auth, hub/spoke VNets, or native SSH/RDP clients,
+  and other Azure Bastion related development tasks. Not for Azure Virtual Network
+  (use azure-virtual-network), Azure Virtual Machines (use azure-virtual-machines),
   Azure VPN Gateway (use azure-vpn-gateway), Azure Firewall (use azure-firewall).
-use_when: Use when accessing VMs via Bastion (SSH/RDP), AKS private clusters, hub/spoke
-  VNets, Entra ID auth, or native clients, and other Azure Bastion related development
-  tasks.
+use_when: Use when configuring Bastion for AKS private clusters, VM scale sets, Entra
+  ID auth, hub/spoke VNets, or native SSH/RDP clients, and other Azure Bastion related
+  development tasks.
 confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), Azure
   Virtual Machines (use azure-virtual-machines), Azure VPN Gateway (use azure-vpn-gateway),
   Azure Firewall (use azure-firewall).
@@ -41,16 +38,16 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 ## Summary
 
-- **Total Pages**: 41
-- **Fetched**: 41
+- **Total Pages**: 40
+- **Fetched**: 40
 - **Fetch Failed**: 0
-- **Classified**: 25
+- **Classified**: 24
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 38
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 40
 - **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-bastion/azure-bastion.csv`
 
@@ -58,38 +55,25 @@ confusable_not_for: Not for Azure Virtual Network (use azure-virtual-network), A
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 7.3% |
-| best-practices | 1 | 2.4% |
-| configuration | 8 | 19.5% |
-| decision-making | 3 | 7.3% |
-| integrations | 5 | 12.2% |
-| limits-quotas | 1 | 2.4% |
-| security | 3 | 7.3% |
-| troubleshooting | 1 | 2.4% |
-| *(Unclassified)* | 16 | 39.0% |
+| architecture-patterns | 3 | 7.5% |
+| best-practices | 1 | 2.5% |
+| configuration | 8 | 20.0% |
+| decision-making | 3 | 7.5% |
+| integrations | 5 | 12.5% |
+| limits-quotas | 1 | 2.5% |
+| security | 3 | 7.5% |
+| *(Unclassified)* | 16 | 40.0% |
 
 ## Changes
 
-### New Pages
-
-- [Troubleshoot](https://learn.microsoft.com/en-us/troubleshoot/azure/bastion/welcome-azure-bastion)
-
-### Updated Pages
-
-- [What's new in Bastion?](https://learn.microsoft.com/en-us/azure/bastion/whats-new)
-  - Updated: 2026-03-17T17:17:00.000Z → 2026-04-11T06:13:00.000Z
-- [Configure session recording](https://learn.microsoft.com/en-us/azure/bastion/session-recording)
-  - Updated: 2025-11-24T18:21:00.000Z → 2026-04-11T06:13:00.000Z
-
 ### Deleted Pages
 
-- ~~Troubleshoot~~ (https://learn.microsoft.com/en-us/azure/bastion/troubleshoot)
+- ~~Troubleshoot~~ (https://learn.microsoft.com/en-us/troubleshoot/azure/bastion/welcome-azure-bastion)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Troubleshoot](https://learn.microsoft.com/en-us/troubleshoot/azure/bastion/welcome-azure-bastion) | troubleshooting | 0.90 | This is explicitly a troubleshooting landing page for Azure Bastion. These articles are organized around problems and solutions and typically include specific error messages, causes, and resolution steps unique to Bastion, matching the troubleshooting criteria. |
 | [Bastion SKU comparison](https://learn.microsoft.com/en-us/azure/bastion/bastion-sku-comparison) | decision-making | 0.80 | SKU comparison pages for Azure services usually include feature/limit comparison tables and guidance on when to choose each tier; this directly supports tier/SKU selection with criteria and trade-offs, matching the decision-making category. |
 | [Secure Bastion](https://learn.microsoft.com/en-us/azure/bastion/secure-bastion) | security | 0.80 | Security guidance aligned to Microsoft Cloud Security Benchmark will include Bastion-specific security settings, RBAC, and configuration recommendations. |
 | [Work with NSGs](https://learn.microsoft.com/en-us/azure/bastion/bastion-nsg) | security | 0.80 | NSG configuration for Bastion necessarily involves specific inbound/outbound rules, ports, and possibly service tags that are product-specific security settings; this matches the security category with concrete configuration guidance. |

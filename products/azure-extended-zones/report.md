@@ -1,9 +1,8 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
-  configuration: Configuring Extended Zones via Azure Policy and subscription registration,
-    including creating custom policy definitions and enabling subscriptions to use
-    Extended Zones.
+  configuration: 'Configuring Extended Zones access and governance: registering subscriptions,
+    creating custom Azure Policy, and deploying Azure Firewall within Extended Zones.'
   security: How to encrypt Extended Zone VM disks using customer-managed keys, including
     setup steps, key vault integration, and security configuration details.
   decision-making: Guidance on cost optimization for Azure Extended Zones, including
@@ -13,13 +12,13 @@ category_descriptions:
     for resources, and understand limits that may block deployments or scaling
 skill_description: Expert knowledge for Azure Extended Zones development including
   decision making, limits & quotas, security, and configuration. Use when setting
-  Azure Policy for Extended Zones, encrypting VM disks with CMK, optimizing reservations,
-  or managing quotas, and other Azure Extended Zones related development tasks. Not
-  for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency),
-  Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when setting Azure Policy for Extended Zones, encrypting VM disks with
-  CMK, optimizing reservations, or managing quotas, and other Azure Extended Zones
-  related development tasks.
+  up Extended Zones access, Azure Policy, Firewall, CMK disk encryption, or quota/limit
+  management, and other Azure Extended Zones related development tasks. Not for Azure
+  Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure
+  Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+use_when: Use when setting up Extended Zones access, Azure Policy, Firewall, CMK disk
+  encryption, or quota/limit management, and other Azure Extended Zones related development
+  tasks.
 confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Resiliency
   (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure
   Virtual WAN (use azure-virtual-wan).
@@ -28,14 +27,14 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 
 ## Summary
 
-- **Total Pages**: 17
-- **Fetched**: 17
+- **Total Pages**: 18
+- **Fetched**: 18
 - **Fetch Failed**: 0
-- **Classified**: 5
+- **Classified**: 6
 - **Unclassified**: 12
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 1
 - **Updated Pages**: 0
 - **Unchanged**: 17
 - **Deleted Pages**: 0
@@ -45,13 +44,17 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| configuration | 2 | 11.8% |
-| decision-making | 1 | 5.9% |
-| limits-quotas | 1 | 5.9% |
-| security | 1 | 5.9% |
-| *(Unclassified)* | 12 | 70.6% |
+| configuration | 3 | 16.7% |
+| decision-making | 1 | 5.6% |
+| limits-quotas | 1 | 5.6% |
+| security | 1 | 5.6% |
+| *(Unclassified)* | 12 | 66.7% |
 
 ## Changes
+
+### New Pages
+
+- [Deploy Azure Firewall in an Extended Zone (Preview)](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-azure-firewall)
 
 ## Classified Pages
 
@@ -60,6 +63,7 @@ confusable_not_for: Not for Azure Reliability (use azure-reliability), Azure Res
 | [Create a custom Azure Policy in an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/create-azure-policy) | configuration | 0.80 | Explains that only custom policies are supported and references specific policy fields like extendedLocation, extendedLocation.name, and extendedLocation.type; these are product-specific configuration parameters. |
 | [Encrypt disks with customer-managed keys in an Azure Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/key-vault-encrypt-azure-extended-zone-disk) | security | 0.80 | Describes how to use Key Vault and Disk Encryption Sets specifically for Extended Zones, including the constraint that assigning a DES is currently supported only via CLI; this is product-specific security configuration behavior. |
 | [Request access to an Extended Zone](https://learn.microsoft.com/en-us/azure/extended-zones/request-access) | configuration | 0.70 | Describes explicit subscription registration requirements and likely includes specific PowerShell/CLI commands and parameter names (for extendedLocation registration), which are product-specific configuration details. |
+| [Deploy Azure Firewall in an Extended Zone (Preview)](https://learn.microsoft.com/en-us/azure/extended-zones/deploy-azure-firewall) | configuration | 0.68 | The article includes ARM template snippets and specific routing and firewall rule configuration details for Azure Firewall in Azure Extended Zones. These are product-specific configuration patterns and parameters (template properties, routing setup, validation steps) that go beyond generic deployment guidance and represent expert knowledge about how this service must be configured in this specialized environment. |
 | [Purchase reservations and savings plans](https://learn.microsoft.com/en-us/azure/extended-zones/purchase-reservations-savings-plans) | decision-making | 0.65 | Covers when and how to use reservations vs savings plans for Extended Zones, with meter support constraints and timing (for example, support by end of 2025); this is product-specific cost/plan selection guidance. |
 | [Request quota increase](https://learn.microsoft.com/en-us/azure/extended-zones/request-quota-increase) | limits-quotas | 0.65 | Quota-increase article for a specific platform typically includes current quota values, per-subscription or per-region limits, and possibly SKU-specific constraints; these numeric limits are expert knowledge. |
 

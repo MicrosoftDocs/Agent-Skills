@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   integrations: Patterns and code for integrating devices via MQTT and IoT Plug and
     Play, building device/service apps, formatting payloads, using DPS/IoT Hub, and
@@ -24,32 +24,37 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 
 ## Summary
 
-- **Total Pages**: 8
-- **Fetched**: 8
+- **Total Pages**: 9
+- **Fetched**: 9
 - **Fetch Failed**: 0
 - **Classified**: 3
-- **Unclassified**: 5
+- **Unclassified**: 6
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 8
-- **Deleted Pages**: 1
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 7
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-iot/azure-iot.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 2 | 25.0% |
-| integrations | 1 | 12.5% |
-| *(Unclassified)* | 5 | 62.5% |
+| architecture-patterns | 2 | 22.2% |
+| integrations | 1 | 11.1% |
+| *(Unclassified)* | 6 | 66.7% |
 
 ## Changes
 
-### Deleted Pages
+### New Pages
 
-- ~~Develop IoT devices~~ (https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks)
+- [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development)
+
+### Updated Pages
+
+- [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction)
+  - Updated: 2025-10-07T08:00:00.000Z → 2026-04-15T11:11:00.000Z
 
 ## Classified Pages
 
@@ -65,6 +70,7 @@ confusable_not_for: Not for Azure IoT Hub (use azure-iot-hub), Azure IoT Edge (u
 |-----------|------------|--------|
 | [Secure your solution](https://learn.microsoft.com/en-us/azure/iot/iot-overview-security) | 0.30 | Security overview and best practices at a high level; summary does not indicate specific RBAC roles, config values, or compliance settings. |
 | [Choose an Azure IoT service](https://learn.microsoft.com/en-us/azure/iot/iot-services-and-technologies) | 0.20 | Describes available Azure IoT services; appears as catalog/overview without detailed decision matrices or quantified comparisons. |
+| [IoT device development](https://learn.microsoft.com/en-us/azure/iot/iot-overview-device-development) | 0.10 | Overview of IoT device development concepts and components; does not expose concrete configuration tables, quotas, error mappings, or product-specific best-practice details. |
 | [Support and help options](https://learn.microsoft.com/en-us/azure/iot/iot-support-help) | 0.10 | Support and help options; meta-information, not technical configuration or troubleshooting content. |
-| [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT and solution components; no concrete limits, configs, patterns, or error details. |
+| [What is Azure IoT?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction) | 0.10 | High-level introduction to Azure IoT portfolio and concepts without specific limits, configuration parameters, error codes, or decision matrices. |
 | [IoT glossary](https://learn.microsoft.com/en-us/azure/iot/iot-glossary) | - | Glossary of IoT terms is conceptual reference, not expert configuration, limits, troubleshooting, or decision-making content. |

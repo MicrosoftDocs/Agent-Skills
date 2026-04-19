@@ -3,7 +3,7 @@ name: azure-firmware-analysis
 description: Expert knowledge for Azure Firmware Analysis development including troubleshooting, best practices, limits & quotas, security, integrations & coding patterns, and deployment. Use when scanning firmware images, interpreting SBOM paths, using UEFI analysis, or automating uploads via CLI/PowerShell/Python, and other Azure Firmware Analysis related development tasks. Not for Azure Defender For Iot (use azure-defender-for-iot), Azure IoT Edge (use azure-iot-edge), Azure IoT Hub (use azure-iot-hub), Azure Confidential Computing (use azure-confidential-computing).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Firmware Analysis Skill

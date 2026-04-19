@@ -74,7 +74,6 @@
 | Query Cosmos DB items using JavaScript SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-query-items |
 | Index and query vector data in Cosmos DB with JavaScript | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-javascript-vector-index-query |
 | Migrate data to Azure Cosmos DB using Data Migration Tool | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-desktop-tool |
-| Create Cosmos DB containers using Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-create-container |
 | Create Cosmos DB databases with Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-create-database |
 | Connect to Cosmos DB for NoSQL using Python SDK | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started |
 | Index and query vector data in Cosmos DB with Python | https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-vector-index-query |
@@ -140,7 +139,10 @@
 | SQL functions reference for Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-functions |
 | System tables and metadata in Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-metadata |
 | Use pg_azure_storage extension with Cosmos DB for PostgreSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/reference-pg-azure-storage |
+| Implement Azure Cosmos DB vector search with Go | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-go |
+| Implement Azure Cosmos DB vector search with Java | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-java |
 | Implement vector search in Cosmos DB with Node.js | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-nodejs |
+| Implement Azure Cosmos DB vector search with Python | https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-vector-store-python |
 | Use push and pull models to read Cosmos DB change feed | https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed |
 | Query Azure Cosmos DB resources with Azure Resource Graph | https://learn.microsoft.com/en-us/azure/cosmos-db/resource-graph-samples |
 | Use Azure CLI samples for Cosmos DB for NoSQL | https://learn.microsoft.com/en-us/azure/cosmos-db/samples-cli |

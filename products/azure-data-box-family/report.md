@@ -45,8 +45,8 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 78
+- **Updated Pages**: 0
+- **Unchanged**: 79
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-box-family/azure-data-box-family.csv`
 
@@ -63,11 +63,6 @@ confusable_not_for: Not for Azure Import Export (use azure-import-export), Azure
 | *(Unclassified)* | 30 | 38.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Understand limits](https://learn.microsoft.com/en-us/azure/databox/data-box-disk-limits)
-  - Updated: 2024-05-21T20:17:00.000Z → 2026-04-09T11:14:00.000Z
 
 ## Classified Pages
 

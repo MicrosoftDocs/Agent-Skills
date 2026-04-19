@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   decision-making: Guidance on choosing Azure Firewall SKUs (Basic/Standard/Premium),
     comparing features and performance, and planning or changing deployments based
@@ -10,9 +10,8 @@ category_descriptions:
   configuration: Configuring Azure Firewall policies, rules (DNAT/SNAT/app), IP Groups,
     DNS/proxy/FTP, maintenance windows, monitoring/logging, and advanced Premium/PowerShell
     management.
-  limits-quotas: Azure Firewall capacity limits, SNAT port scaling (multi-IP, NAT
-    Gateway/V2), prescaling ranges, FAQs on quotas/behavior, and configuring TCP session
-    idle timeouts
+  limits-quotas: Azure Firewall capacity, IP/port/session limits, SNAT scaling with
+    NAT Gateway, prescaling ranges, and TCP idle timeout behaviors and configuration.
   troubleshooting: Diagnosing Azure Firewall issues using known limitations, packet
     captures, and Sentinel log analysis for malware detection and traffic investigation.
   best-practices: Best practices for Azure Firewall DNS proxy/caching, performance
@@ -29,17 +28,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Firewall development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  choosing Firewall SKUs, designing hub-spoke/forced tunneling, configuring DNAT/SNAT/app
-  rules, TLS inspection, or DNS proxy, and other Azure Firewall related development
-  tasks. Not for Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when choosing Firewall SKUs, designing hub-spoke/forced tunneling, configuring
-  DNAT/SNAT/app rules, TLS inspection, or DNS proxy, and other Azure Firewall related
-  development tasks.
-confusable_not_for: Not for Azure Web Application Firewall (use azure-web-application-firewall),
-  Azure Firewall Manager (use azure-firewall-manager), Azure Virtual Network (use
-  azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+  configuring Azure Firewall SKUs, policies/rules, TLS inspection, hub-spoke DNAT,
+  or SFTP to Storage, and other Azure Firewall related development tasks. Not for
+  Azure Application Gateway (use azure-application-gateway), Azure Front Door (use
+  azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure DDos Protection (use azure-ddos-protection).
+use_when: Use when configuring Azure Firewall SKUs, policies/rules, TLS inspection,
+  hub-spoke DNAT, or SFTP to Storage, and other Azure Firewall related development
+  tasks.
+confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
+  Azure Front Door (use azure-front-door), Azure Web Application Firewall (use azure-web-application-firewall),
+  Azure DDos Protection (use azure-ddos-protection).
 ---
 # Azure Firewall Crawl Report
 
@@ -48,14 +47,14 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 - **Total Pages**: 85
 - **Fetched**: 85
 - **Fetch Failed**: 0
-- **Classified**: 61
-- **Unclassified**: 24
+- **Classified**: 60
+- **Unclassified**: 25
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 85
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 83
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firewall/azure-firewall.csv`
 
 ## Classification Statistics
@@ -70,10 +69,23 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | integrations | 1 | 1.2% |
 | limits-quotas | 6 | 7.1% |
 | security | 10 | 11.8% |
-| troubleshooting | 3 | 3.5% |
-| *(Unclassified)* | 24 | 28.2% |
+| troubleshooting | 2 | 2.4% |
+| *(Unclassified)* | 25 | 29.4% |
 
 ## Changes
+
+### New Pages
+
+- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/firewall/support-help)
+
+### Updated Pages
+
+- [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq)
+  - Updated: 2026-03-06T12:21:00Z → 2026-04-15T17:15:00Z
+
+### Deleted Pages
+
+- ~~Known issues and limitations~~ (https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues)
 
 ## Classified Pages
 
@@ -93,7 +105,7 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | [Enterprise CA Certificates](https://learn.microsoft.com/en-us/azure/firewall/premium-deploy-certificates-enterprise-ca) | security | 0.75 | Guides creating and managing Enterprise PKI intermediate CA certificates for TLS inspection; deep, product-specific security configuration. |
 | [FTP support](https://learn.microsoft.com/en-us/azure/firewall/ftp-support) | configuration | 0.75 | Specifies that Passive FTP is enabled and Active FTP disabled by default due to security concerns, and that Active FTP can be enabled only via PowerShell/CLI/ARM; these are concrete product-specific configuration behaviors. |
 | [Roles and permissions](https://learn.microsoft.com/en-us/azure/firewall/roles-permissions) | security | 0.75 | Describes roles and permissions needed across dependent resources for Azure Firewall operations; such pages typically list specific RBAC roles and scopes, which are product-specific security configuration details. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | limits-quotas | 0.74 | The FAQ includes product-specific numeric details such as maximum number of public IP addresses per firewall, SNAT port allocations, and other concrete capacity/limit values that are not generic knowledge. These are explicit service limits rather than conceptual descriptions, matching the limits-quotas category best among the available options. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/firewall/firewall-faq) | limits-quotas | 0.74 | The FAQ includes concrete, product-specific numeric limits and behaviors (for example, maximum number of IP groups, rule collection limits, SNAT port allocations, throughput expectations, and other capacity-related figures) that are unlikely to be reliably known from general training data. These are expressed as exact values and constraints, fitting the limits-quotas category better than the others. |
 | [Azure Firewall features by SKU](https://learn.microsoft.com/en-us/azure/firewall/features-by-sku) | decision-making | 0.70 | Provides SKU-by-SKU feature breakdown to support choosing Basic, Standard, or Premium; comparison content is SKU-specific and used for selection decisions. |
 | [CLI](https://learn.microsoft.com/en-us/azure/firewall/deploy-ps-policy) | configuration | 0.70 | Covers deploying and configuring Azure Firewall Policy with PowerShell; such articles typically list cmdlets and parameter names/values for rules and policies, which are product-specific configuration details. |
 | [Choose the right SKU](https://learn.microsoft.com/en-us/azure/firewall/choose-firewall-sku) | decision-making | 0.70 | Explicitly positioned as a comparison guide to choose between Basic, Standard, and Premium; SKU selection guidance is product-specific decision-making even if summary is brief. |
@@ -107,7 +119,6 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | [Firewall with DDoS protection](https://learn.microsoft.com/en-us/azure/firewall/tutorial-protect-firewall-ddos) | deployment | 0.70 | Shows how to deploy Firewall with DDoS-protected VNet and includes cost/overage details (over 100 public IPs); these are deployment-specific constraints and considerations. |
 | [Implementation guide](https://learn.microsoft.com/en-us/azure/firewall/premium-features) | configuration | 0.70 | Implementation guide for TLS inspection, IDPS, URL filtering, and web categories; likely includes product-specific configuration steps and parameters for these features. |
 | [Integrate with load balancer](https://learn.microsoft.com/en-us/azure/firewall/integrate-lb) | architecture-patterns | 0.70 | Provides design guidance on using internal vs public load balancers and warns about asymmetric routing; this is a product-specific integration and architecture pattern. |
-| [Known issues and limitations](https://learn.microsoft.com/en-us/azure/firewall/firewall-known-issues) | troubleshooting | 0.70 | A 'known issues and limitations' page for a specific service typically lists concrete symptoms, product-specific behaviors, and workarounds that aren't inferable from general knowledge. While it references a separate limits page for quotas, this article itself is used to plan, deploy, and troubleshoot Azure Firewall by documenting current issues and their impact, which aligns best with troubleshooting-focused expert knowledge. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/dns-details) | best-practices | 0.70 | Describes implementation details like FQDN caching, TTL handling, and how DNS proxy affects rule filtering; these are nuanced, product-specific behaviors and gotchas that qualify as expert knowledge/best practices. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firewall/ip-groups) | configuration | 0.70 | Explains how IP Groups behave (top-level resource, allowed contents, uniqueness of names) and where they can be used (DNAT, network, application rules); these are product-specific configuration semantics. |
 | [Performance](https://learn.microsoft.com/en-us/azure/firewall/firewall-performance) | decision-making | 0.70 | Provides performance data and throughput benchmarks for Basic, Standard, and Premium across use cases; supports SKU/tier selection and capacity planning with quantified trade-offs. |
@@ -169,3 +180,4 @@ confusable_not_for: Not for Azure Web Application Firewall (use azure-web-applic
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/deploy-terraform) | 0.20 | Terraform quickstart for Availability Zones; step-by-step deployment content, not expert reference material with limits or specialized patterns. |
 | [Terraform](https://learn.microsoft.com/en-us/azure/firewall/quick-create-multiple-ip-terraform) | 0.20 | Quickstart Terraform deployment tutorial; shows how to deploy but not detailed limits, quotas, or specialized configuration references. |
 | [What is Azure Firewall?](https://learn.microsoft.com/en-us/azure/firewall/overview) | 0.20 | High-level product overview of Azure Firewall SKUs and capabilities without concrete limits, configs, or error details. |
+| [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/firewall/support-help) | - | Support/help options page; no technical limits, configuration parameters, error codes, or product-specific expert details—primarily guidance on where to get assistance. |

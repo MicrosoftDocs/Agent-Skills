@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   deployment: 'Guides for deploying and migrating AVD: adding session hosts, moving
     from classic to current AVD, changing regions, using regional host pools, and
     deploying Windows clients via Intune/ConfigMgr.'
-  configuration: Configuring AVD host pools, images, autoscale, networking, RDP/peripheral
-    redirection, licensing, monitoring, and app delivery (MSIX/App Attach, RemoteApp,
-    Teams, OneDrive, language packs).
+  configuration: 'Configuring AVD environments: images, autoscale, networking, RDP/redirection,
+    Teams/media, licensing, updates, monitoring, and client/RemoteApp settings for
+    optimized session hosts.'
   troubleshooting: 'Diagnosing and fixing AVD issues: agent updates, MSIX App Attach,
     autoscale, FQDN/connectivity, connection quality, graphics, session host health,
     Teams, and Log Analytics-based troubleshooting'
@@ -21,39 +21,41 @@ category_descriptions:
   decision-making: 'Planning and cost/licensing decisions for AVD: deployment models,
     autoscale, host pool and tool choices, storage/FSLogix, data locations, ESU, Local/Extended
     Zones, and Insights cost estimation'
-  security: 'Security configuration for AVD: SSO (Entra ID/AD FS), MFA/Conditional
-    Access, RBAC/roles, external identities, clipboard/screen protection, watermarking,
-    WebAuthn, Kerberos, and Purview forensic onboarding'
+  security: 'Securing Azure Virtual Desktop: SSO (Entra ID/AD FS), MFA/Conditional
+    Access, RBAC/roles, managed identities, external identities, session protections
+    (watermarking, screen capture, clipboard), and auditing.'
   limits-quotas: Guidance on RDP bandwidth requirements and optimizing Microsoft Teams
     (audio/video, collaboration features) performance and configuration in Azure Virtual
     Desktop.
 skill_description: Expert knowledge for Azure Virtual Desktop development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when working with FSLogix profiles, MSIX/App Attach, autoscale/Start VM on Connect,
-  Teams optimization, or SSO/MFA, and other Azure Virtual Desktop related development
+  Use when working with FSLogix profiles, MSIX App Attach, autoscale/Start VM on Connect,
+  Teams optimization, or AVD SSO, and other Azure Virtual Desktop related development
   tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Dev Box
-  (use azure-dev-box).
-use_when: Use when working with FSLogix profiles, MSIX/App Attach, autoscale/Start
-  VM on Connect, Teams optimization, or SSO/MFA, and other Azure Virtual Desktop related
+  (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution), Azure Data
+  Science Virtual Machines (use azure-data-science-vm).
+use_when: Use when working with FSLogix profiles, MSIX App Attach, autoscale/Start
+  VM on Connect, Teams optimization, or AVD SSO, and other Azure Virtual Desktop related
   development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Dev Box (use azure-dev-box).
+  Dev Box (use azure-dev-box), Azure VMware Solution (use azure-vmware-solution),
+  Azure Data Science Virtual Machines (use azure-data-science-vm).
 ---
 # Azure Virtual Desktop Crawl Report
 
 ## Summary
 
-- **Total Pages**: 149
-- **Fetched**: 149
+- **Total Pages**: 150
+- **Fetched**: 150
 - **Fetch Failed**: 0
-- **Classified**: 120
+- **Classified**: 121
 - **Unclassified**: 29
 
 ### Incremental Update
 - **New Pages**: 1
-- **Updated Pages**: 0
-- **Unchanged**: 148
+- **Updated Pages**: 2
+- **Unchanged**: 147
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-virtual-desktop/azure-virtual-desktop.csv`
 
@@ -61,22 +63,29 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 5 | 3.4% |
-| best-practices | 8 | 5.4% |
-| configuration | 56 | 37.6% |
-| decision-making | 12 | 8.1% |
+| architecture-patterns | 5 | 3.3% |
+| best-practices | 8 | 5.3% |
+| configuration | 57 | 38.0% |
+| decision-making | 12 | 8.0% |
 | deployment | 6 | 4.0% |
 | integrations | 4 | 2.7% |
 | limits-quotas | 2 | 1.3% |
-| security | 15 | 10.1% |
-| troubleshooting | 12 | 8.1% |
-| *(Unclassified)* | 29 | 19.5% |
+| security | 15 | 10.0% |
+| troubleshooting | 12 | 8.0% |
+| *(Unclassified)* | 29 | 19.3% |
 
 ## Changes
 
 ### New Pages
 
-- [Deploy the MMR Preview Extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-preview-extension)
+- [Network connectivity for 169.254.169.254 and 168.63.129.16](https://learn.microsoft.com/en-us/azure/virtual-desktop/azurecommunicationips)
+
+### Updated Pages
+
+- [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint)
+  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-13T15:06:00.000Z
+- [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection)
+  - Updated: 2026-02-05T04:10:00.000Z → 2026-04-17T04:06:00.000Z
 
 ## Classified Pages
 
@@ -87,6 +96,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Session host status and health checks](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-status-health-checks) | troubleshooting | 0.90 | Lists specific health check statuses and what each means, plus how to act on them—direct symptom (status) → cause → resolution mappings unique to AVD. |
 | [Session host statuses and health checks](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-status-health-checks) | troubleshooting | 0.90 | Duplicate of index 21: contains detailed mappings of health check statuses to meanings and actions, which is core troubleshooting knowledge. |
 | [Uniform Resource Identifier schemes](https://learn.microsoft.com/en-us/azure/virtual-desktop/uri-scheme) | integrations | 0.90 | Details URI commands and parameters for the Remote Desktop client (parameter names, formats, and constraints), which are integration-focused API/URI configuration patterns. |
+| [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint) | configuration | 0.86 | The article is a product-specific allowlist of required FQDNs and endpoints for Azure Virtual Desktop session hosts and users. It enumerates concrete hostnames/URLs that must be permitted through firewalls or proxies, which are configuration parameters unique to this service and not inferable from general knowledge. This fits the configuration category as it defines exact network settings needed for correct operation. |
 | [Available RBAC roles for Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/rbac) | security | 0.85 | Lists Azure Virtual Desktop–specific RBAC roles and their permissions, which are product-specific security configuration details. |
 | [Diagnosing graphics performance issues](https://learn.microsoft.com/en-us/azure/virtual-desktop/remotefx-graphics-performance-counters) | troubleshooting | 0.85 | Explains how to use specific RemoteFX graphics performance counters in PerfMon to diagnose graphics bottlenecks—product-specific counters and interpretation steps. |
 | [Administrative template](https://learn.microsoft.com/en-us/azure/virtual-desktop/administrative-template) | configuration | 0.80 | Covers adding ADMX templates and configuring features via Intune/Group Policy; implies specific policy names and settings unique to AVD. |
@@ -98,7 +108,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Configure single sign-on using AD FS](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-adfs-sso) | security | 0.80 | Product-specific SSO configuration using AD FS, with concrete settings and integration steps, fits security configuration. |
 | [Configure single sign-on using Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on) | security | 0.80 | Describes enabling SSO with Entra ID tokens, including configuration steps and parameters specific to this product’s SSO behavior. |
 | [Enforce Microsoft Entra multifactor authentication](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa) | security | 0.80 | Shows how to enforce MFA via Conditional Access, including policy configuration specific to Azure Virtual Desktop sign-ins. |
-| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.80 | Security feature configuration that affects screenshots and screen sharing; likely includes specific policy/configuration settings and client requirements. |
+| [Network connectivity for 169.254.169.254 and 168.63.129.16](https://learn.microsoft.com/en-us/azure/virtual-desktop/azurecommunicationips) | configuration | 0.80 | The page describes two specific Azure platform IP addresses required for Azure Virtual Desktop and Windows 365 Cloud PCs, and how traffic to them must be handled. These are concrete, product-specific network configuration values (IP addresses and handling rules) that qualify as expert configuration knowledge rather than general concepts. |
 | [Session host update diagnostic queries](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update-diagnostics) | troubleshooting | 0.80 | Provides concrete Kusto queries for diagnostics; this is product-specific troubleshooting and diagnostics guidance. |
 | [Set custom RDP properties](https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties) | configuration | 0.80 | Explicitly about RDP properties with default values and overrides; includes property names, allowed values, and behavior unique to AVD host pools. |
 | [USB](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-usb) | configuration | 0.80 | Describes opaque USB redirection with specific configuration keys, supported device classes, and RDP settings, which are detailed product-specific configuration options. |
@@ -112,7 +122,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [MSIXMGR tool parameters](https://learn.microsoft.com/en-us/azure/virtual-desktop/msixmgr-tool-syntax-description) | configuration | 0.78 | Contains command-line parameter reference and syntax for MSIXMGR, including parameter names, allowed values, and behavior—classic configuration reference content. |
 | [MTP and PTP](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-plug-play-mtp-ptp) | configuration | 0.78 | Explains how to configure redirection for MTP/PTP devices using specific RDP/Group Policy settings and flags, which are product-specific configuration parameters. |
 | [Printers](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers) | configuration | 0.78 | Printer redirection setup uses concrete RDP properties and policy names to control which printers are redirected, representing detailed configuration knowledge. |
-| [Required FQDNs and endpoints](https://learn.microsoft.com/en-us/azure/virtual-desktop/required-fqdn-endpoint) | configuration | 0.78 | Lists specific required FQDNs/endpoints that must be allowed through firewalls or proxies for Azure Virtual Desktop to function. These are product-specific configuration details (hostnames/URLs and their roles), fitting the configuration category. |
 | [Send diagnostic data to Log Analytics](https://learn.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics) | troubleshooting | 0.78 | Describes AVD diagnostics categories and how to use Log Analytics to identify connection issues, including specific log categories and queries—symptom-to-diagnosis troubleshooting content. |
 | [Serial/COM ports](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-serial-com-ports) | configuration | 0.78 | Serial/COM redirection requires specific RDP property names and policy settings, which are product-specific configuration details not captured by generic knowledge. |
 | [Smart cards](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-smart-cards) | configuration | 0.78 | Smart card redirection involves concrete RDP/Group Policy settings and possibly flags for enabling/disabling, which are detailed configuration parameters. |
@@ -124,6 +133,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Increase chroma value to 4:4:4](https://learn.microsoft.com/en-us/azure/virtual-desktop/graphics-chroma-value-increase-4-4-4) | configuration | 0.75 | Article explicitly shows how to set chroma value via Intune or Group Policy, implying specific policy names, registry keys, and allowed values (4:2:0 vs 4:4:4). |
 | [Onboard to Purview forensic evidence](https://learn.microsoft.com/en-us/azure/virtual-desktop/purview-forensic-evidence) | security | 0.75 | Integration with Purview Insider Risk forensic evidence; involves specific policies, triggers, and onboarding steps that are security-focused and product-specific. |
 | [Scale with a runbook and logic app](https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script) | configuration | 0.75 | How-to for configuring the scaling script; likely includes runbook parameters, schedules, and Logic Apps settings that are product-specific. |
+| [Screen capture protection](https://learn.microsoft.com/en-us/azure/virtual-desktop/screen-capture-protection) | security | 0.74 | The page describes how to enable and configure Screen Capture Protection for Azure Virtual Desktop and Windows 365, including product-specific security behavior (what is blocked/allowed, client/OS requirements, and interaction with watermarking). This is concrete, product-specific security configuration guidance rather than a conceptual overview. |
 | [Add and manage App Attach applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) | configuration | 0.72 | Management of App Attach apps uses AVD-specific portal and PowerShell parameters, including configuration of package sources, registration options, and assignment settings. |
 | [Launch OneDrive with RemoteApp](https://learn.microsoft.com/en-us/azure/virtual-desktop/onedrive-remoteapp) | configuration | 0.72 | Describes a workaround for the standard OneDrive autostart setting not working with RemoteApp, implying specific script/configuration steps unique to AVD. |
 | [Microsoft Entra joined session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts) | configuration | 0.72 | Entra-joined host deployment typically requires specific identity settings, enrollment options, and conditional access-related parameters that are product-specific configuration details. |

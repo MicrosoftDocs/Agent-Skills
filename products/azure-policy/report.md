@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   configuration: Authoring, assigning, storing, and securing Machine Configuration
     (guest configuration) packages and policies, plus prerequisites, networking, remediation,
@@ -40,38 +40,48 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 
 ## Summary
 
-- **Total Pages**: 156
-- **Fetched**: 156
+- **Total Pages**: 158
+- **Fetched**: 158
 - **Fetch Failed**: 0
 - **Classified**: 96
-- **Unclassified**: 60
+- **Unclassified**: 62
 
 ### Incremental Update
-- **New Pages**: 0
+- **New Pages**: 3
 - **Updated Pages**: 1
-- **Unchanged**: 155
-- **Deleted Pages**: 0
+- **Unchanged**: 154
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-policy/azure-policy.csv`
 
 ## Classification Statistics
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 12 | 7.7% |
-| configuration | 11 | 7.1% |
+| best-practices | 12 | 7.6% |
+| configuration | 11 | 7.0% |
 | decision-making | 3 | 1.9% |
-| deployment | 7 | 4.5% |
+| deployment | 7 | 4.4% |
 | integrations | 2 | 1.3% |
-| security | 58 | 37.2% |
+| security | 58 | 36.7% |
 | troubleshooting | 3 | 1.9% |
-| *(Unclassified)* | 60 | 38.5% |
+| *(Unclassified)* | 62 | 39.2% |
 
 ## Changes
 
+### New Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/)
+- [Windows agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows)
+- [Linux agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux)
+
 ### Updated Pages
 
-- [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options)
-  - Updated: 2024-02-07T23:03:00.000Z → 2026-04-10T17:11:00.000Z
+- [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule)
+  - Updated: 2025-03-20T22:03:00.000Z → 2026-04-17T22:08:00.000Z
+
+### Deleted Pages
+
+- ~~What's new in the agent~~ (https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent)
 
 ## Classified Pages
 
@@ -199,7 +209,6 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Manual](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-manual) | 0.40 | Explains manual effect and attestations at a conceptual level; no specific error codes, parameters, or numeric guidance. |
 | [Modify](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-modify) | 0.40 | Overview of modify effect and remediation; summary does not indicate detailed config tables or numeric constraints. |
 | [Remediation structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/remediation-structure) | 0.40 | Explains remediation task structure conceptually; no numeric constraints or detailed parameter tables indicated. |
-| [What's new in the agent](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent) | 0.40 | Agent release notes and FAQ; mostly version history and high-level issues, not structured troubleshooting or config tables as defined. |
 | [Add user assign identities to virtual machines](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/modify-virtual-machine-identity) | 0.35 | Tutorial assigning user-assigned managed identities to VMs via Azure Policy; mostly procedural with one note about enforcement mode but no structured security/RBAC tables or config matrices. |
 | [Aliases](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-alias) | 0.35 | Describes alias conceptually and how to discover aliases using tools; the detailed alias list is external, so this page itself is more conceptual than reference. |
 | [Apply MFA self-enforcement through Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/mfa-enforcement) | 0.35 | Guide to self-enforce MFA using Azure Policy; high-level enforcement flow without specific RBAC role tables, auth parameters, or compliance configuration details. |
@@ -221,15 +230,18 @@ confusable_not_for: Not for Azure Blueprints (use azure-blueprints), Azure Role-
 | [Create and manage Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/create-and-manage) | 0.30 | Tutorial on building policies; focuses on general usage patterns rather than detailed limits, configs, or troubleshooting. |
 | [Deny](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-deny) | 0.30 | Overview of deny effect; no expert-only numeric constraints or configuration matrices. |
 | [Disallow resource types](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/disallowed-resources) | 0.30 | Tutorial applying built-in 'Not allowed resource types' policy; focuses on how to assign and manage, not on limits, decision matrices, or detailed configuration options. |
+| [Linux agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/linux) | 0.30 | Linux agent release notes likely list changes and issues, but the summary does not expose concrete limits, configuration tables, error-code mappings, or other structured expert details matching the defined sub-skill categories. |
 | [Manage tag governance](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/govern-tags) | 0.30 | Tutorial on using Azure Policy modify effect for tag governance; mainly procedural guidance without deep configuration matrices, limits, or error-code-based troubleshooting. |
 | [Parameters](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-parameters) | 0.30 | Conceptual description of policy parameters and their purpose; lacks detailed parameter catalogs, default values, or numeric constraints that would constitute expert configuration knowledge. |
-| [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule) | 0.30 | Explains if/then structure and logical operators at a conceptual level; does not provide extensive product-specific matrices, limits, or configuration tables. |
 | [Route policy state change events](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/route-state-change-events) | 0.30 | Tutorial wiring Azure Policy state change events to Event Grid via CLI; shows commands but not detailed parameter tables, limits, or diagnostic mappings. |
 | [Scope](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/scope) | 0.30 | Explains scope conceptually; no expert-only configuration tables, limits, or decision matrices. |
 | [Security baselines overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/how-to/assign-security-baselines/overview-page) | 0.30 | High-level overview of security baselines; summary suggests conceptual description without detailed settings or parameters. |
 | [System Policy](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/systempolicy) | 0.30 | High-level guide to system policy capability; no detailed settings, limits, or troubleshooting mappings. |
 | [Virtual machine recommended policies](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/recommended-policies) | 0.30 | Describes recommended policies UI for VMs; no detailed technical configuration or numeric criteria in summary. |
+| [Windows agent release notes](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/windows) | 0.30 | Windows agent release notes likely contain version changes and issues, but the provided summary does not show specific configuration parameters, limits, error codes, or structured troubleshooting/decision content required by any sub-skill type. |
 | [Compliance states](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/compliance-states) | 0.25 | Conceptual article on compliance states; summary shows no detailed configuration or numeric guidance. |
+| [Overview](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/agent/) | 0.20 | High-level overview page that just links to platform-specific release notes; no concrete limits, configuration parameters, error codes, or decision matrices are evident in the summary. |
+| [Policy rule](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule) | 0.20 | Primarily explains Azure Policy rule structure (if/then, logical operators, effects). No specific limits, configuration tables, error codes, or product-specific numeric thresholds; it's a conceptual/structural reference rather than expert-only operational details. |
 | [Remediation options](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) | 0.20 | Content appears to describe remediation behavior and options for Azure Policy machine configuration at a conceptual level (continuous remediation, remediation tasks, Safe Deployment framework) without exposing concrete limits, configuration parameter tables, error codes, or decision matrices with quantified trade-offs. It reads more like a feature explanation/how-to than a detailed reference with expert-only specifics. |
 | [What is Azure Machine Configuration?](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/overview/01-overview-concepts) | 0.20 | Conceptual overview of Azure Machine Configuration; no detailed limits, configs, or error mappings. |
 | [What is Azure Policy?](https://learn.microsoft.com/en-us/azure/governance/policy/overview) | 0.20 | High-level overview of Azure Policy; mostly conceptual service description without detailed limits or configs. |

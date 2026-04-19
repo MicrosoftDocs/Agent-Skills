@@ -8,7 +8,6 @@
 | Topic | URL |
 |-------|-----|
 | Query Databricks billable usage for storage cost tracking | https://learn.microsoft.com/en-us/azure/databricks/admin/usage/default-storage |
-| Configure notification destinations and webhooks for Databricks | https://learn.microsoft.com/en-us/azure/databricks/admin/workspace-settings/notification-destinations |
 | Manage AI/BI assets using Databricks REST APIs | https://learn.microsoft.com/en-us/azure/databricks/ai-bi/admin/use-apis |
 | Use legacy ABS-AQS streaming connector in Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/azure/aqs |
 | Read and write data between Databricks and Azure Cosmos DB | https://learn.microsoft.com/en-us/azure/databricks/archive/azure/cosmosdb |
@@ -36,11 +35,8 @@
 | Set up SQL Server DDL capture for Databricks | https://learn.microsoft.com/en-us/azure/databricks/archive/connectors/sql-server-ddl-legacy |
 | Configure Azure Databricks connector for Synapse | https://learn.microsoft.com/en-us/azure/databricks/archive/connectors/synapse-analytics |
 | Connect Azure Databricks to Azure Synapse dedicated SQL pool | https://learn.microsoft.com/en-us/azure/databricks/archive/connectors/synapse-analytics-dedicated-pool |
-| Manage Databricks cluster policies with legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/cluster-policies-cli |
 | Use legacy Databricks clusters CLI commands | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/clusters-cli |
-| Manage Databricks instance pools with legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/instance-pools-cli |
 | Run and manage Databricks jobs with legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/jobs-cli |
-| Manage Databricks libraries using the legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/libraries-cli |
 | Work with Databricks repos via the legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/repos-cli |
 | Manage Databricks job runs with the legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/runs-cli |
 | Manage Databricks workspace objects with legacy CLI | https://learn.microsoft.com/en-us/azure/databricks/archive/dev-tools/cli/workspace-cli |
@@ -77,8 +73,9 @@
 | Configure legacy WASB connector for Azure Blob Storage | https://learn.microsoft.com/en-us/azure/databricks/archive/storage/wasb-blob |
 | Implement advanced metric view calculations in Databricks | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/advanced-techniques |
 | Use LOD expressions in Databricks metric views | https://learn.microsoft.com/en-us/azure/databricks/business-semantics/metric-views/level-of-detail |
+| Configure Azure Databricks connections to external data | https://learn.microsoft.com/en-us/azure/databricks/connect/ |
 | Configure JDBC Unity Catalog connections to external databases | https://learn.microsoft.com/en-us/azure/databricks/connect/jdbc-connection |
-| Connect Databricks Structured Streaming to Apache Kafka | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/kafka/ |
+| Connect Azure Databricks streaming to Apache Kafka | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/kafka/ |
 | Integrate Google Pub/Sub with Azure Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/pub-sub |
 | Configure Apache Pulsar streaming source on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/connect/streaming/pulsar |
 | Use Unity Catalog service credentials to call cloud APIs | https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-services/use-service-credentials |
@@ -175,21 +172,16 @@
 | Manage workspace files and folders via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/workspace-commands |
 | Update advanced workspace settings via Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/workspace-conf-commands |
 | Manage workspace entity tag assignments via CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/reference/workspace-entity-tag-assignments-commands |
-| Use Unity Catalog UDFs as Databricks app resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/functions |
-| Integrate Genie spaces as Databricks app resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/genie |
-| Connect Lakeflow Jobs as Databricks app resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/lakeflow |
-| Attach MLflow experiments as Databricks app resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/mlflow |
-| Add SQL warehouses as Databricks app compute resources | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/sql-warehouse |
-| Add vector search indexes to Databricks apps for RAG | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-apps/vector-search |
 | Use Databricks Connect within Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/notebooks |
-| Use Databricks Connect for Python in applications | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/ |
 | Use Databricks Utilities with Databricks Connect for Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/databricks-utilities |
-| Python code examples for Databricks Connect | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/examples |
+| Use Databricks Connect for Python code patterns | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/examples |
 | Install and configure Databricks Connect for Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/install |
 | Develop a Databricks app locally using Databricks Connect | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/tutorial-apps |
 | Run PyCharm code on classic Databricks compute | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/tutorial-cluster |
 | Run Python code on serverless compute with Databricks Connect | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/tutorial-serverless |
 | Implement user-defined functions with Databricks Connect Python | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/python/udf |
+| Use Databricks Utilities via Databricks Connect for Scala | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/databricks-utilities |
+| Use Databricks Connect for Scala code examples | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/examples |
 | Install Databricks Connect client for Scala | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/install |
 | Build and deploy Scala JARs to Databricks serverless | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect/scala/jar-compile |
 | Run Databricks SQL queries using the SQL CLI | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/databricks-sql-cli |
@@ -210,12 +202,16 @@
 | Automate Unity Catalog deployment with Databricks Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/automate-uc |
 | Provision Databricks clusters, notebooks, and jobs with Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/cluster-notebook-job |
 | Manage Azure Databricks workspace resources using Terraform | https://learn.microsoft.com/en-us/azure/databricks/dev-tools/terraform/workspace-management |
+| Use Unity REST API from external Delta clients | https://learn.microsoft.com/en-us/azure/databricks/external-access/unity-rest |
 | Unzip and read compressed files in Databricks | https://learn.microsoft.com/en-us/azure/databricks/files/unzip-files |
+| Parse documents using Databricks Document Parsing | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/document-parsing |
+| Create information extraction agents with Databricks | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/key-info-extraction |
+| Orchestrate Databricks multi-agent systems with Supervisor | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/multi-agent-supervisor |
 | Implement Databricks AI agent tools with MCP and Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/agent-tool |
 | Integrate Anthropic SDK with Databricks Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/anthropic-uc-integration |
 | Use the Databricks Python code interpreter tool in AI agents | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/code-interpreter-tools |
 | Create custom Databricks AI agent tools with Unity Catalog functions | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/create-custom-tool |
-| Connect Databricks AI agents to external services with MCP and OAuth | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/external-connection-tools |
+| Connect Databricks agents to external services and APIs | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/external-connection-tools |
 | Integrate LangChain workflows with Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/langchain-uc-integration |
 | Integrate LlamaIndex workflows with Databricks Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/llamaindex-uc-integration |
 | Integrate OpenAI workflows with Databricks Unity Catalog tools | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/openai-uc-integration |
@@ -225,34 +221,36 @@
 | Integrate Databricks AI agents with Microsoft Teams via OAuth OBO | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/teams-agent |
 | Use Unity Catalog tools with third-party gen AI frameworks | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/unity-catalog-tool-integration |
 | Connect Databricks AI agents to unstructured data with Vector Search | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-framework/unstructured-retrieval-tools |
-| Use Databricks managed MCP servers to access Unity Catalog and Vector Search | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/managed-mcp |
-| Integrate Genie via API into custom applications | https://learn.microsoft.com/en-us/azure/databricks/genie/conversation-api |
+| Use Databricks managed MCP servers to connect agents to data | https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/managed-mcp |
+| Connect Genie Code to external MCP servers | https://learn.microsoft.com/en-us/azure/databricks/genie-code/mcp |
+| Integrate Genie natural language querying via API | https://learn.microsoft.com/en-us/azure/databricks/genie/conversation-api |
+| Incrementally clone Parquet and Iceberg to Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/ingestion/data-migration/clone-parquet |
+| Convert Parquet and Iceberg tables to Delta Lake | https://learn.microsoft.com/en-us/azure/databricks/ingestion/data-migration/convert-to-delta |
 | Ingest Google Drive files into Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/google-drive |
 | Ingest OpenTelemetry data via Zerobus OTLP | https://learn.microsoft.com/en-us/azure/databricks/ingestion/opentelemetry/ |
 | Query OpenTelemetry traces, logs, and metrics in Databricks | https://learn.microsoft.com/en-us/azure/databricks/ingestion/opentelemetry/queries |
-| Ingest SFTP server data with Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sftp |
+| Ingest data from SFTP using Lakeflow Connect | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sftp |
 | Ingest SharePoint files into Delta tables | https://learn.microsoft.com/en-us/azure/databricks/ingestion/sharepoint |
-| Use Zerobus Ingest connector with Lakeflow | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-ingest |
+| Ingest data with Zerobus Ingest connector | https://learn.microsoft.com/en-us/azure/databricks/ingestion/zerobus-ingest |
 | Configure OAuth SSO from Tableau Server to Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/configure-oauth-tableau |
-| Use Azure Databricks Excel Add-in for data queries | https://learn.microsoft.com/en-us/azure/databricks/integrations/excel-query |
-| Configure Databricks Connector for Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/ |
-| Configure Databricks Connector for Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/connect |
+| Use Databricks Connector to access data from Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/ |
+| Set up Databricks Connector for Google Sheets | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/connect |
+| Query Databricks data from Google Sheets with SQL | https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/query-data |
 | Use GraphFrames with Scala on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/integrations/graphframes/user-guide-scala |
-| Use the open source Databricks JDBC driver with tools | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/ |
 | Use Databricks JDBC metadata for metric views | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/metadata |
 | Java API reference for the Databricks JDBC driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/reference |
 | Manage Unity Catalog volume files via Databricks JDBC | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc-oss/volumes |
 | Manage Unity Catalog volume files via legacy JDBC driver | https://learn.microsoft.com/en-us/azure/databricks/integrations/jdbc/volumes |
+| Connect Lovable no-code apps to Databricks via OAuth | https://learn.microsoft.com/en-us/azure/databricks/integrations/lovable |
 | Add Databricks Genie MCP server to Microsoft Foundry | https://learn.microsoft.com/en-us/azure/databricks/integrations/microsoft-foundry |
 | Connect Python and R clients to Databricks via ODBC | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/connect-databricks-excel-python-r |
 | Manage Unity Catalog volume files via Databricks ODBC | https://learn.microsoft.com/en-us/azure/databricks/integrations/odbc/volumes |
 | Automate Databricks job management with CLI, SDK, and REST | https://learn.microsoft.com/en-us/azure/databricks/jobs/automate |
-| Configure dbt tasks to run dbt projects on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/jobs/dbt |
 | Orchestrate dbt platform jobs with Azure Databricks dbt platform tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/dbt-platform |
 | Orchestrate Lakeflow Jobs with Apache Airflow integration | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-airflow-with-jobs |
 | Integrate dbt Core transformations with Lakeflow Jobs | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-dbt-in-workflows |
 | Configure Python wheel tasks in Lakeflow Jobs workflows | https://learn.microsoft.com/en-us/azure/databricks/jobs/how-to/use-python-wheels-in-workflows |
-| Access job and task parameters from Databricks code | https://learn.microsoft.com/en-us/azure/databricks/jobs/parameter-use |
+| Access Databricks job parameters from task code | https://learn.microsoft.com/en-us/azure/databricks/jobs/parameter-use |
 | Configure Power BI tasks to orchestrate semantic models from Databricks | https://learn.microsoft.com/en-us/azure/databricks/jobs/powerbi |
 | Pass task values between Databricks job tasks | https://learn.microsoft.com/en-us/azure/databricks/jobs/task-values |
 | Use Azure Databricks AI Functions from SQL and Python | https://learn.microsoft.com/en-us/azure/databricks/large-language-models/ai-functions |
@@ -261,7 +259,6 @@
 | Clone Hive metastore pipelines to Unity Catalog via REST | https://learn.microsoft.com/en-us/azure/databricks/ldp/clone-hms-to-uc |
 | Replicate external RDBMS tables with AUTO CDC | https://learn.microsoft.com/en-us/azure/databricks/ldp/database-replication |
 | Create and manage Databricks SQL materialized views | https://learn.microsoft.com/en-us/azure/databricks/ldp/dbsql/materialized |
-| Use Genie Code AI agent for pipeline development | https://learn.microsoft.com/en-us/azure/databricks/ldp/de-agent |
 | Define Lakeflow pipeline datasets with Python decorators | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/definition-function |
 | Use append_flow decorator for pipeline append-only flows | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-python-ref-append-flow |
 | Use create_auto_cdc_flow for pipeline CDC processing | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/ldp-python-ref-apply-changes |
@@ -284,19 +281,18 @@
 | Develop Lakeflow pipeline code using SQL | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/sql-dev |
 | SQL language reference for Lakeflow Spark pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/developer/sql-ref |
 | Use Azure Event Hubs as a Lakeflow data source | https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs |
-| Use ForEachBatch sink for custom streaming outputs | https://learn.microsoft.com/en-us/azure/databricks/ldp/for-each-batch |
+| Use ForEachBatch sink in Lakeflow streaming pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/for-each-batch |
 | Import Python modules from Git or workspace into pipelines | https://learn.microsoft.com/en-us/azure/databricks/ldp/import-workspace-files |
 | Develop and debug Databricks pipelines using legacy notebooks | https://learn.microsoft.com/en-us/azure/databricks/ldp/notebook-devex |
 | Run Lakeflow pipelines from Jobs, Airflow, or Data Factory | https://learn.microsoft.com/en-us/azure/databricks/ldp/workflows |
+| Use Serverless GPU Python API for multi-GPU training | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/distributed-training |
 | Get started with H100 serverless GPU using serverless_gpu API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-api-h100-starter |
 | Train CNN image classifier on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-cnn-mnist |
-| Distributed LoRA fine-tuning of Qwen2-0.5B on serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b |
 | Distributed fine-tuning of gpt-oss-20b on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-gpt-oss-20b |
 | Train Transformers with PyTorch FSDP on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-pytorch-fsdp |
-| Fine-tune Llama-3.2-3B with Unsloth on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-llama-unsloth |
-| Distributed fine-tune Llama-3.2-3B with Unsloth on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-llama-unsloth-distributed |
+| Distributed Unsloth finetuning of Llama-3.2-3B on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-llama-unsloth-distributed |
 | Fine-tune Qwen2-0.5B with LoRA on Databricks AI Runtime | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen2-0.5b |
-| Fine-tune OpenAI GPT-OSS 120B on Databricks GPUs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-gpt-oss-120b-ddp-fsdp |
+| Distributed GPT-OSS 120B finetuning with DDP/FSDP on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-gpt-oss-120b-ddp-fsdp |
 | Fine-tune Llama 3.1 8B with Mosaic LLM Foundry | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-llama3-8b-llmfoundry |
 | Fine-tune Olmo3 7B with Axolotl on Databricks serverless GPU | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-olmo3-7b-lora-axolotl |
 | Distributed two-tower recommender training with Lightning on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-recommender-system-lightning |
@@ -317,24 +313,25 @@
 | Publish Databricks feature tables to third-party online stores | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/publish-features |
 | Integrate third-party online stores with Feature Store | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/third-party-online-stores |
 | Train models and run batch inference with Databricks feature tables | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/train-models-with-feature-store |
-| Use Databricks Foundation Model REST API endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/api-reference |
+| Use Databricks Foundation Model REST APIs | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/foundation-model-apis/api-reference |
 | Use Mosaic Streaming to load Spark data into PyTorch | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/load-data/streaming |
 | Save and load TFRecord data with Spark on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/load-data/tfrecords-save-load |
 | Create and call Databricks foundation model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/create-foundation-model-endpoints |
 | Deploy custom Python logic with Databricks Model Serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/deploy-custom-python-code |
-| Implement function calling with Databricks model serving | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/function-calling |
+| Implement function calling on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/function-calling |
 | Call provider-native OpenAI, Anthropic, and Gemini APIs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/provider-native-apis |
-| Use Anthropic Messages API with Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-anthropic-messages |
+| Query Databricks Anthropic models with Messages API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-anthropic-messages |
 | Write and send chat model queries on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-chat-models |
 | Query embedding models via Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-embedding-models |
 | Integrate Google Gemini API with Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-gemini-api |
 | Use OpenAI Responses API with Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-openai-responses |
-| Call reasoning models with Foundation Model API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-reason-models |
+| Query reasoning models using Foundation Model API | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-reason-models |
 | Query route-optimized Databricks serving endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-route-optimization |
-| Send vision model queries to Mosaic AI endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-vision-models |
+| Query vision foundation models via Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/query-vision-models |
 | Send scoring requests to Databricks custom model endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-custom-model-endpoints |
-| Send foundation model queries to Databricks endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-foundation-models |
+| Send query requests to Databricks foundation models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/score-foundation-models |
 | Use structured outputs with Databricks LLM endpoints | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/structured-outputs |
+| Use web search grounding with Databricks models | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/model-serving/web-search |
 | Featurize data for transfer learning with pandas UDFs on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/preprocess-data/transfer-learning-tensorflow |
 | Combine Spark and Ray in one Databricks environment | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/connect-spark-ray |
 | Integrate MLflow tracking with Ray on Databricks | https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ray/ray-mlflow |
@@ -397,35 +394,36 @@
 | Trace txtai embeddings and LLM workflows with MLflow | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/integrations/txtai |
 | Use MLflow MCP server to manage traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/mlflow-mcp |
 | Access MLflow trace metadata and spans via SDK | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/access-trace-data |
-| Query MLflow traces programmatically with search_traces | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/query-via-sdk |
+| Query MLflow GenAI traces programmatically via SDK | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/query-via-sdk |
 | Example queries using mlflow.search_traces() | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tracing/observe-with-traces/search-traces-examples |
 | Create custom MLflow scorers for RAG evaluation | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tutorials/examples/custom-scorers |
 | Optimize chained prompts with MLflow multi-prompt workflows | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tutorials/examples/multi-prompt-optimization |
 | Implement MLflow prompt optimization with GEPA and GPT-OSS | https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/tutorials/examples/prompt-optimization-quickstart |
-| Share and modularize code between Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/share-code |
+| Use Genie Code agent for Databricks data science | https://learn.microsoft.com/en-us/azure/databricks/notebooks/ds-agent |
+| Use Databricks notebook features for code development | https://learn.microsoft.com/en-us/azure/databricks/notebooks/notebooks-code |
+| Share and modularize code across Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/notebooks/share-code |
 | Connect to and query Lakebase database instances | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/query/ |
 | Query Lakebase instances from Databricks notebooks | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/query/notebook |
 | Connect external SQL clients to Lakebase instances | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/query/psql |
 | Register Lakebase instances with Unity Catalog | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/register-uc |
 | Integrate Lakebase with Unity Catalog and synced data | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/sync-data/ |
-| Serve lakehouse data via Lakebase Provisioned synced tables | https://learn.microsoft.com/en-us/azure/databricks/oltp/instances/sync-data/sync-table |
-| Use Lakebase Autoscaling APIs and SDKs programmatically | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/api-usage |
+| Use Lakebase Autoscaling APIs, CLI, and SDKs | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/api-usage |
 | Manage Lakebase with the Databricks CLI | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/cli |
 | Connect to Lakebase using DBeaver | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-dbeaver |
 | Connect and monitor Lakebase with pgAdmin | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-pgadmin |
-| Monitor Lakebase Postgres with PgHero | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-pghero |
-| Connect to Lakebase using psql | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-psql |
-| Use Lakebase Data API for Postgres access | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/data-api |
+| Monitor Lakebase Postgres performance with PgHero | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-pghero |
+| Connect to Lakebase Postgres using psql | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/connect-psql |
+| Use Lakebase Data API for RESTful Postgres access | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/data-api |
+| Integrate Lakebase Postgres with Databricks Apps | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/databricks-apps |
 | Connect external apps to Lakebase via SDK | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/external-apps-connect |
 | Connect external apps to Lakebase via REST API | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/external-apps-manual-api |
 | Integrate external monitoring tools with Lakebase Postgres | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/external-monitoring-tools |
 | Back Databricks Online Feature Stores with Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/feature-store |
 | Use frameworks to connect to Lakebase | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/framework-examples |
-| Backup Lakebase using pg_dump and pg_restore | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/pg-dump-restore |
+| Backup and restore Lakebase with pg_dump/pg_restore | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/pg-dump-restore |
 | Use Postgres clients with Lakebase databases | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/postgres-clients |
 | Query Lakebase from Lakehouse SQL editor | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/query-sql-editor |
 | Store AI agent state in Lakebase Postgres | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/state-management |
-| Connect Databricks apps to Lakebase securely | https://learn.microsoft.com/en-us/azure/databricks/oltp/projects/tutorial-databricks-apps-autoscaling |
 | Apply pandas function APIs to PySpark DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pandas/pandas-function-apis |
 | Convert between PySpark and pandas DataFrames with Arrow | https://learn.microsoft.com/en-us/azure/databricks/pandas/pyspark-pandas-conversion |
 | Connect Databricks to ingestion partners via Partner Connect | https://learn.microsoft.com/en-us/azure/databricks/partner-connect/ingestion |
@@ -439,9 +437,8 @@
 | Connect MicroStrategy Workstation to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/microstrategy |
 | Connect Mode analytics to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/mode |
 | Configure ADBC vs ODBC drivers for Power BI with Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-adbc |
-| Configure Power BI Desktop integration with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-desktop |
-| Enable BI compatibility mode for Databricks metric views in Power BI | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-metric-views |
-| Publish Azure Databricks data to Power BI service | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-service |
+| Connect Power BI Desktop to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-desktop |
+| Publish Azure Databricks datasets to Power BI service | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi-service |
 | Integrate Preset BI with Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/preset |
 | Connect Qlik Sense to Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/qlik-sense |
 | Connect Sigma BI to Databricks SQL warehouses | https://learn.microsoft.com/en-us/azure/databricks/partners/bi/sigma |
@@ -472,36 +469,405 @@
 | Connect AtScale semantic layer to Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/semantic-layer/atscale |
 | Integrate Stardog semantic layer with Databricks | https://learn.microsoft.com/en-us/azure/databricks/partners/semantic-layer/stardog |
 | Implement PySpark custom data sources on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/datasources |
-| Use PySpark Catalog API on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog |
-| Work with PySpark Column objects on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column |
-| Use PySpark DataFrame API on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe |
+| Use PySpark Catalog API on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog |
+| Cache tables with PySpark Catalog.cacheTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/cachetable |
+| Clear cached tables with Catalog.clearCache | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/clearcache |
+| Create tables using Catalog.createTable in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/createtable |
+| Get current catalog with Catalog.currentCatalog | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/currentcatalog |
+| Get current database with Catalog.currentDatabase | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/currentdatabase |
+| Check database existence with Catalog.databaseExists | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/databaseexists |
+| Drop global temp views with Catalog.dropGlobalTempView | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/dropglobaltempview |
+| Drop local temp views with Catalog.dropTempView | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/droptempview |
+| Check function existence with Catalog.functionExists | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/functionexists |
+| Retrieve databases with Catalog.getDatabase in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/getdatabase |
+| Retrieve functions with Catalog.getFunction in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/getfunction |
+| Retrieve tables and views with Catalog.getTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/gettable |
+| Check table cache status with Catalog.isCached | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/iscached |
+| List catalogs in session with Catalog.listCatalogs | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/listcatalogs |
+| List table columns with Catalog.listColumns | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/listcolumns |
+| List databases with Catalog.listDatabases in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/listdatabases |
+| List registered functions with Catalog.listFunctions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/listfunctions |
+| List tables and views with Catalog.listTables | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/listtables |
+| Recover table partitions with Catalog.recoverPartitions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/recoverpartitions |
+| Refresh cached data by path with Catalog.refreshByPath | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/refreshbypath |
+| Refresh cached tables with Catalog.refreshTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/refreshtable |
+| Use Catalog.setCurrentCatalog in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/setcurrentcatalog |
+| Use Catalog.setCurrentDatabase in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/setcurrentdatabase |
+| Check table existence with Catalog.tableExists in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/tableexists |
+| Remove cached tables with Catalog.uncacheTable in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/catalog/uncachetable |
+| Work with the Column class in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column |
+| Assign aliases to columns with Column.alias in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/alias |
+| Sort columns ascending with Column.asc in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/asc |
+| Sort ascending with nulls first using Column.asc_nulls_first | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/asc_nulls_first |
+| Sort ascending with nulls last using Column.asc_nulls_last | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/asc_nulls_last |
+| Cast column types with Column.astype in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/astype |
+| Filter values within ranges using Column.between in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/between |
+| Compute bitwise AND with Column.bitwiseAND in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/bitwiseand |
+| Compute bitwise OR with Column.bitwiseOR in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/bitwiseor |
+| Compute bitwise XOR with Column.bitwiseXOR in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/bitwisexor |
+| Change column data types with Column.cast in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/cast |
+| Check substring presence with Column.contains in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/contains |
+| Sort columns descending with Column.desc in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/desc |
+| Sort descending with nulls first using Column.desc_nulls_first | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/desc_nulls_first |
+| Sort descending with nulls last using Column.desc_nulls_last | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/desc_nulls_last |
+| Remove struct fields with Column.dropFields in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/dropfields |
+| Check string suffixes with Column.endswith in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/endswith |
+| Perform null-safe equality with Column.eqNullSafe in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/eqnullsafe |
+| Access struct fields with Column.getField in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/getfield |
+| Access array or map elements with Column.getItem in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/getitem |
+| Use case-insensitive pattern matching with Column.ilike in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/ilike |
+| Test membership in value lists with Column.isin in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/isin |
+| Detect NaN values with Column.isNaN in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/isnan |
+| Filter non-null values with Column.isNotNull in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/isnotnull |
+| Filter null values with Column.isNull in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/isnull |
+| Use SQL LIKE pattern matching with Column.like in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/like |
+| Rename columns using Column.name alias in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/name |
+| Provide default values with Column.otherwise in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/otherwise |
+| Apply window specifications with Column.over in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/over |
+| Use regex pattern matching with Column.rlike in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/rlike |
+| Check string prefixes with Column.startswith in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/startswith |
+| Extract substrings with Column.substr in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/substr |
+| Safely cast column types with Column.try_cast in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/try_cast |
+| Implement conditional logic with Column.when in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/when |
+| Add or replace struct fields with Column.withField in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/column/withfield |
+| Use the DataFrame class in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe |
+| Use DataFrame.agg for aggregations in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/agg |
+| Apply aliases to DataFrames with alias() in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/alias |
+| Compute approximate quantiles with DataFrame.approxQuantile | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/approxquantile |
+| Convert DataFrames to table arguments with asTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/astable |
+| Cache DataFrames with default storage level in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/cache |
+| Checkpoint DataFrames and manage logical plans in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/checkpoint |
+| Repartition DataFrames with coalesce(numPartitions) | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/coalesce |
+| Collect all DataFrame rows into driver with collect() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/collect |
+| Select columns by regex with DataFrame.colRegex | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/colregex |
+| Access DataFrame column names via columns property | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/columns |
+| Compute column correlation with DataFrame.corr | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/corr |
+| Count DataFrame rows with count() in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/count |
+| Calculate sample covariance with DataFrame.cov | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/cov |
+| Create global temporary views from DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/createglobaltempview |
+| Create or replace global temp views with DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/createorreplaceglobaltempview |
+| Create or replace local temp views from DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/createorreplacetempview |
+| Create local temporary views with createTempView | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/createtempview |
+| Perform cartesian products with DataFrame.crossJoin | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/crossjoin |
+| Build contingency tables with DataFrame.crosstab | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/crosstab |
+| Create aggregation cubes with DataFrame.cube | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/cube |
+| Compute basic column statistics with DataFrame.describe | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/describe |
+| Return distinct DataFrame rows with distinct() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/distinct |
+| Drop DataFrame columns with drop() in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/drop |
+| Remove duplicate rows with DataFrame.dropDuplicates | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/dropduplicates |
+| Drop duplicates within watermark in streaming DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/dropduplicateswithinwatermark |
+| Drop null or NaN rows with DataFrame.dropna | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/dropna |
+| Inspect DataFrame column names and types via dtypes | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/dtypes |
+| Subtract DataFrames with duplicates using exceptAll | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/exceptall |
+| Inspect query execution details with DataFrame.executionInfo | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/executioninfo |
+| Build EXISTS subqueries with DataFrame.exists | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/exists |
+| Print logical and physical plans with DataFrame.explain | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/explain |
+| Fill null values in DataFrames with fillna() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/fillna |
+| Filter DataFrame rows with filter() conditions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/filter |
+| Retrieve the first row of a DataFrame with first() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/first |
+| Apply functions to each DataFrame row with foreach() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/foreach |
+| Process DataFrame partitions with foreachPartition() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/foreachpartition |
+| Find frequent items in columns with DataFrame.freqItems | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/freqitems |
+| Group DataFrames for aggregation with groupBy() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/groupby |
+| Create multi-dimensional aggregations with groupingSets() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/groupingsets |
+| Return first n rows of a DataFrame with head() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/head |
+| Use DataFrame.hint for query optimization in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/hint |
+| Retrieve composing files with DataFrame.inputFiles | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/inputfiles |
+| Compute DataFrame intersections with intersect | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/intersect |
+| Preserve duplicates using DataFrame.intersectAll | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/intersectall |
+| Check for empty DataFrames with isEmpty | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/isempty |
+| Detect local collect capability with isLocal | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/islocal |
+| Work with streaming DataFrames using isStreaming | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/isstreaming |
+| Join DataFrames with DataFrame.join in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/join |
+| Perform lateral joins with DataFrame.lateralJoin | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/lateraljoin |
+| Limit DataFrame result rows with limit | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/limit |
+| Use localCheckpoint for DataFrame logical plan truncation | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/localcheckpoint |
+| Apply Arrow-based batch transforms with mapInArrow | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/mapinarrow |
+| Apply pandas batch transforms with mapInPandas | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/mapinpandas |
+| Unpivot wide DataFrames using melt/unpivot | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/melt |
+| Merge source changes into target tables with mergeInto | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/mergeinto |
+| Access logical metadata columns with metadataColumn | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/metadatacolumn |
+| Handle missing values via DataFrame.na functions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/na |
+| Define and capture DataFrame metrics with observe | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/observe |
+| Skip initial rows using DataFrame.offset | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/offset |
+| Sort DataFrames using orderBy/sort aliases | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/orderby |
+| Convert PySpark DataFrames to pandas-on-Spark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/pandas_api |
+| Create visualizations with DataFrame.plot accessor | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/plot |
+| Inspect DataFrame schemas with printSchema | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/printschema |
+| Randomly split DataFrames with randomSplit | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/randomsplit |
+| Access underlying RDDs via DataFrame.rdd | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/rdd |
+| Hash partition DataFrames with repartition | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/repartition |
+| Partition DataFrames by column identifier with repartitionById | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/repartitionbyid |
+| Range partition DataFrames with repartitionByRange | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/repartitionbyrange |
+| Replace values in DataFrames with replace | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/replace |
+| Create multi-dimensional aggregations with rollup | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/rollup |
+| Compare DataFrame logical plans with sameSemantics | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/samesemantics |
+| Sample subsets of DataFrames with sample | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/sample |
+| Perform stratified sampling with sampleBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/sampleby |
+| Use scalar subqueries via DataFrame.scalar | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/scalar |
+| Inspect DataFrame schema via schema property | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/schema |
+| Project columns and expressions with select | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/select |
+| Project SQL expressions with selectExpr | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/selectexpr |
+| Generate logical plan hashes with semanticHash | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/semantichash |
+| Display DataFrame rows in console with show | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/show |
+| Use DataFrame.sort in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/sort |
+| Use sortWithinPartitions for partitioned sorting | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/sortwithinpartitions |
+| Access DataFrame.sparkSession in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/sparksession |
+| Use DataFrame.stat for statistics in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/stat |
+| Check DataFrame.storageLevel in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/storagelevel |
+| Use DataFrame.subtract to diff DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/subtract |
+| Compute DataFrame.summary statistics in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/summary |
+| Use DataFrame.tail to get last rows | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/tail |
+| Use DataFrame.take to get first rows | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/take |
+| Reconcile DataFrame schema with to() in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/to |
+| Convert DataFrame to PyArrow Table in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/toarrow |
+| Rename DataFrame columns with toDF in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/todf |
+| Convert DataFrame to JSON RDD in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/tojson |
+| Iterate over all DataFrame rows with toLocalIterator | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/tolocaliterator |
+| Convert Spark DataFrame to pandas in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/topandas |
+| Chain custom DataFrame.transform operations | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/transform |
+| Transpose a DataFrame in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/transpose |
+| Union two DataFrames with union in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/union |
+| Union DataFrames by column name with unionByName | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/unionbyname |
+| Unpersist a DataFrame in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/unpersist |
+| Unpivot wide DataFrames to long format in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/unpivot |
+| Filter DataFrames using where alias in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/where |
+| Add or replace columns with withColumn in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withcolumn |
+| Rename a DataFrame column with withColumnRenamed | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withcolumnrenamed |
+| Add multiple columns with withColumns in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withcolumns |
+| Rename multiple columns with withColumnsRenamed | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withcolumnsrenamed |
+| Update column metadata with withMetadata in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withmetadata |
+| Define event-time watermarks with withWatermark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/withwatermark |
+| Write non-streaming DataFrames to storage in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/write |
+| Write streaming DataFrames with writeStream in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/writestream |
+| Configure v2 data source writes with writeTo | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframe/writeto |
 | Handle nulls with DataFrameNaFunctions in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframenafunctions |
-| Load data with PySpark DataFrameReader on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader |
-| Compute statistics with DataFrameStatFunctions in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions |
-| Write data with PySpark DataFrameWriter on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter |
-| Use DataFrameWriterV2 for advanced writes in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2 |
-| Implement custom PySpark DataSource on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource |
-| Implement Arrow-based DataSourceArrowWriter in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcearrowwriter |
-| Implement custom DataSourceReader for PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcereader |
-| Register custom data sources with DataSourceRegistration | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourceregistration |
-| Implement Arrow-based streaming writers in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamarrowwriter |
-| Implement custom PySpark streaming data source reader | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader |
-| Implement streaming DataSourceStreamWriter in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamwriter |
-| Implement custom DataSourceWriter for PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcewriter |
-| Use PySpark Geography class on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geography |
-| Use PySpark Geometry class on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geometry |
+| Drop null or NaN rows with DataFrameNaFunctions.drop | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframenafunctions/drop |
+| Fill null values with DataFrameNaFunctions.fill | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframenafunctions/fill |
+| Replace values with DataFrameNaFunctions.replace | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframenafunctions/replace |
+| Load data with DataFrameReader in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader |
+| Read CSV files with DataFrameReader.csv in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/csv |
+| Read Excel files using DataFrameReader.excel in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/excel |
+| Specify input data source format with DataFrameReader.format | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/format |
+| Read database tables via JDBC with DataFrameReader.jdbc | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/jdbc |
+| Read JSON and JSON Lines with DataFrameReader.json | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/json |
+| Load data from sources with DataFrameReader.load | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/load |
+| Set single input option with DataFrameReader.option | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/option |
+| Set multiple input options with DataFrameReader.options | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/options |
+| Read ORC files with DataFrameReader.orc in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/orc |
+| Read Parquet files with DataFrameReader.parquet | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/parquet |
+| Define input schema with DataFrameReader.schema | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/schema |
+| Load tables as DataFrames with DataFrameReader.table | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/table |
+| Read text files with DataFrameReader.text in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/text |
+| Read XML files with DataFrameReader.xml in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframereader/xml |
+| Use DataFrameStatFunctions for statistics in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions |
+| Compute approximate quantiles with approxQuantile | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/approxquantile |
+| Calculate column correlation with DataFrameStatFunctions.corr | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/corr |
+| Compute sample covariance with DataFrameStatFunctions.cov | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/cov |
+| Generate crosstab frequency tables with DataFrameStatFunctions.crosstab | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/crosstab |
+| Use freqItems for frequent value detection in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/freqitems |
+| Stratified sampling with sampleBy in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframestatfunctions/sampleby |
+| Write DataFrames with DataFrameWriter in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter |
+| Bucket output data with DataFrameWriter.bucketBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/bucketby |
+| Cluster data for performance with DataFrameWriter.clusterBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/clusterby |
+| Write CSV files with DataFrameWriter.csv in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/csv |
+| Write Excel files with DataFrameWriter.excel in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/excel |
+| Specify output data source with DataFrameWriter.format | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/format |
+| Insert DataFrame rows into tables with DataFrameWriter.insertInto | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/insertinto |
+| Write DataFrames to databases via DataFrameWriter.jdbc | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/jdbc |
+| Write JSON output with DataFrameWriter.json in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/json |
+| Control overwrite behavior with DataFrameWriter.mode | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/mode |
+| Set single output option with DataFrameWriter.option | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/option |
+| Set multiple output options with DataFrameWriter.options | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/options |
+| Write ORC files with DataFrameWriter.orc in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/orc |
+| Write Parquet output with DataFrameWriter.parquet | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/parquet |
+| Partition output data with DataFrameWriter.partitionBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/partitionby |
+| Save DataFrames to data sources with DataFrameWriter.save | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/save |
+| Save DataFrames as tables with DataFrameWriter.saveAsTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/saveastable |
+| Sort bucketed output with DataFrameWriter.sortBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/sortby |
+| Write text files with DataFrameWriter.text in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/text |
+| Write XML files with DataFrameWriter.xml in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriter/xml |
+| Write tables using DataFrameWriterV2 in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2 |
+| Append data to tables with DataFrameWriterV2.append | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/append |
+| Cluster data using DataFrameWriterV2.clusterBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/clusterby |
+| Create new tables with DataFrameWriterV2.create | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/create |
+| Use DataFrameWriterV2.createOrReplace in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/createorreplace |
+| Set write options with DataFrameWriterV2.option | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/option |
+| Configure multiple write options with options() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/options |
+| Use DataFrameWriterV2.overwrite for conditional updates | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/overwrite |
+| Use overwritePartitions with DataFrameWriterV2 | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/overwritepartitions |
+| Partition tables with DataFrameWriterV2.partitionedBy | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/partitionedby |
+| Replace tables using DataFrameWriterV2.replace | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/replace |
+| Add table properties via tableProperty() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/tableproperty |
+| Specify data source providers with using() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/dataframewriterv2/using |
+| Implement custom PySpark DataSource in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource |
+| Define custom data source name() identifier | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/name |
+| Provide a DataSource.reader implementation | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/reader |
+| Infer custom data source schema() in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/schema |
+| Implement simpleStreamReader for custom sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/simplestreamreader |
+| Implement streamReader for streaming data sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/streamreader |
+| Implement streamWriter for streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/streamwriter |
+| Provide DataSource.writer for custom sinks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasource/writer |
+| Use DataSourceArrowWriter for Arrow-based sinks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcearrowwriter |
+| Implement write() in DataSourceArrowWriter | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcearrowwriter/write |
+| Implement DataSourceReader for custom inputs | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcereader |
+| Define partitions() in DataSourceReader for parallelism | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcereader/partitions |
+| Implement pushFilters() for filter pushdown | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcereader/pushfilters |
+| Implement read() in DataSourceReader partitions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcereader/read |
+| Register custom DataSource with DataSourceRegistration | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourceregistration |
+| Use register() to expose custom data sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourceregistration/register |
+| Use DataSourceStreamArrowWriter for streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamarrowwriter |
+| Implement write() in DataSourceStreamArrowWriter | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamarrowwriter/write |
+| Implement DataSourceStreamReader for streaming inputs | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader |
+| Handle commit() in DataSourceStreamReader offsets | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/commit |
+| Use getDefaultReadLimit in streaming sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/getdefaultreadlimit |
+| Define initialOffset() for streaming data sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/initialoffset |
+| Implement latestOffset() with read limits | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/latestoffset |
+| Define partitions() for DataSourceStreamReader | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/partitions |
+| Implement read() in DataSourceStreamReader | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/read |
+| Report latest offsets with reportLatestOffset() | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/reportlatestoffset |
+| Stop streaming sources with stop() in DataSourceStreamReader | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamreader/stop |
+| Implement DataSourceStreamWriter for streaming sinks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamwriter |
+| Handle abort() in DataSourceStreamWriter failures | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamwriter/abort |
+| Commit microbatches with DataSourceStreamWriter.commit | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamwriter/commit |
+| Implement custom streaming sinks with DataSourceStreamWriter.write | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcestreamwriter/write |
+| Implement custom batch data sources with DataSourceWriter | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcewriter |
+| Handle failed batch writes with DataSourceWriter.abort | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcewriter/abort |
+| Commit successful batch writes with DataSourceWriter.commit | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcewriter/commit |
+| Write partition data in custom sources with DataSourceWriter.write | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datasourcewriter/write |
+| Load streaming DataFrames with DataStreamReader | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader |
+| Read table change data capture with DataStreamReader.changes | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/changes |
+| Stream CSV data into DataFrames with DataStreamReader.csv | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/csv |
+| Stream Excel files into DataFrames with DataStreamReader.excel | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/excel |
+| Specify streaming input formats with DataStreamReader.format | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/format |
+| Stream JSON data with DataStreamReader.json | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/json |
+| Load generic streaming sources with DataStreamReader.load | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/load |
+| Name streaming sources for checkpoint evolution with DataStreamReader.name | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/name |
+| Stream ORC data into DataFrames with DataStreamReader.orc | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/orc |
+| Stream Parquet data into DataFrames with DataStreamReader.parquet | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/parquet |
+| Create streaming DataFrames from tables with DataStreamReader.table | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/table |
+| Stream text files into DataFrames with DataStreamReader.text | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/text |
+| Stream XML data into DataFrames with DataStreamReader.xml | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamreader/xml |
+| Write streaming DataFrames with DataStreamWriter | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter |
+| Process streaming rows with custom foreach writers | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/foreach |
+| Process micro-batches with DataStreamWriter.foreachBatch | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/foreachbatch |
+| Select streaming output data source with DataStreamWriter.format | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/format |
+| Start streaming queries with DataStreamWriter.start | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/start |
+| Write streaming results to tables with DataStreamWriter.table | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/table |
+| Stream DataFrame output into tables with DataStreamWriter.toTable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/datastreamwriter/totable |
+| Work with geography values using the Geography class | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geography |
+| Create Geography objects from WKB with Geography.fromWKB | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geography/fromwkb |
+| Export Geography values to WKB with Geography.getBytes | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geography/getbytes |
+| Retrieve SRID from Geography objects with Geography.getSrid | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geography/getsrid |
+| Work with geometry values using the Geometry class | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geometry |
+| Use Geometry.fromWKB in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geometry/fromwkb |
+| Return Geometry WKB bytes with getBytes | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geometry/getbytes |
+| Retrieve Geometry SRID using getSrid in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/geometry/getsrid |
 | Work with GroupedData aggregations in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata |
+| Compute custom aggregates with GroupedData.agg | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/agg |
+| Calculate group averages with GroupedData.avg | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/avg |
+| Count records per group with GroupedData.count | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/count |
+| Get maximum values per group with GroupedData.max | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/max |
+| Use GroupedData.mean alias for averages | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/mean |
+| Get minimum values per group with GroupedData.min | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/min |
+| Pivot DataFrame columns with GroupedData.pivot | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/pivot |
+| Sum numeric columns per group with GroupedData.sum | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/groupeddata/sum |
+| Implement custom InputPartition for PySpark data sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/inputpartition |
 | Capture DataFrame metrics with Observation in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/observation |
-| Generate plots from PySpark DataFrames on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor |
-| Use the Row class in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/row |
-| Use SparkSession API in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession |
-| Define and use PySpark UserDefinedFunction on Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udf |
-| Register and manage UDFs with UDFRegistration | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udfregistration |
-| Implement UserDefinedTableFunction in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtf |
-| Register and manage UDTFs with UDTFRegistration | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtfregistration |
+| Retrieve observed metrics using Observation.get | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/observation/get |
+| Generate plots from PySpark DataFrames with PySparkPlotAccessor | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor |
+| Draw stacked area plots with PySparkPlotAccessor.area | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/area |
+| Create vertical bar charts with PySparkPlotAccessor.bar | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/bar |
+| Create horizontal bar charts with PySparkPlotAccessor.barh | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/barh |
+| Build box-and-whisker plots with PySparkPlotAccessor.box | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/box |
+| Plot DataFrame histograms with PySparkPlotAccessor.hist | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/hist |
+| Generate KDE plots with PySparkPlotAccessor.kde | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/kde |
+| Plot DataFrame lines with PySparkPlotAccessor.line | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/line |
+| Create pie charts from DataFrames with PySparkPlotAccessor.pie | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/pie |
+| Visualize correlations with PySparkPlotAccessor.scatter | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/plotaccessor/scatter |
+| Use the Row class for PySpark DataFrames | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/row |
+| Convert Row objects to dictionaries with asDict | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/row/asdict |
+| Implement SimpleDataSourceStreamReader for lightweight streaming | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/simpledatasourcestreamreader |
+| Commit processed offsets with SimpleDataSourceStreamReader.commit | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/simpledatasourcestreamreader/commit |
+| Determine initial streaming offsets with SimpleDataSourceStreamReader.initialOffset | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/simpledatasourcestreamreader/initialoffset |
+| Read streaming data and next offset with SimpleDataSourceStreamReader.read | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/simpledatasourcestreamreader/read |
+| Re-read batches deterministically with SimpleDataSourceStreamReader.readBetweenOffsets | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/simpledatasourcestreamreader/readbetweenoffsets |
+| Use SparkSession as the entry point for Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession |
+| Access the active SparkSession with SparkSession.active | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/active |
+| Use SparkSession.addArtifacts in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/addartifacts |
+| Tag operations with SparkSession.addTag in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/addtag |
+| Access Spark catalog via SparkSession.catalog | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/catalog |
+| Clear Spark progress handlers with clearProgressHandlers | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/clearprogresshandlers |
+| Manage Spark operation tags with clearTags | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/cleartags |
+| Create DataFrames with SparkSession.createDataFrame | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/createdataframe |
+| Register data sources via SparkSession.dataSource | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/datasource |
+| Retrieve current Spark session with getActiveSession | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/getactivesession |
+| Inspect current Spark operation tags with getTags | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/gettags |
+| Interrupt all operations in a Spark session | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/interruptall |
+| Cancel specific Spark operations with interruptOperation | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/interruptoperation |
+| Cancel tagged Spark operations with interruptTag | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/interrupttag |
+| Create isolated Spark sessions with newSession | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/newsession |
+| Profile Spark performance via SparkSession.profile | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/profile |
+| Generate numeric ranges with SparkSession.range | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/range |
+| Read data as DataFrames with SparkSession.read | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/read |
+| Read streaming data with SparkSession.readStream | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/readstream |
+| Register Spark progress handlers with registerProgressHandler | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/registerprogresshandler |
+| Remove Spark progress handlers with removeProgressHandler | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/removeprogresshandler |
+| Remove Spark operation tags with removeTag | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/removetag |
+| Access underlying SparkContext via SparkSession.sparkContext | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/sparkcontext |
+| Run SQL queries with SparkSession.sql in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/sql |
+| Stop Spark applications with SparkSession.stop | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/stop |
+| Manage streaming queries via SparkSession.streams | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/streams |
+| Load tables as DataFrames with SparkSession.table | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/table |
+| Call table-valued functions via SparkSession.tvf | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/tvf |
+| Register UDFs with SparkSession.udf in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/udf |
+| Register UDTFs with SparkSession.udtf in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/sparksession/udtf |
+| Control streaming queries with StreamingQuery in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery |
+| Inspect streaming failures with StreamingQuery.exception | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/exception |
+| Explain streaming query plans with StreamingQuery.explain | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/explain |
+| Check streaming query activity with isActive | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/isactive |
+| Get last progress update via lastProgress | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/lastprogress |
+| Process all available streaming data with processAllAvailable | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/processallavailable |
+| Use StreamingQuery.runId in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/runid |
+| Access StreamingQuery.status in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/status |
+| Stop a StreamingQuery in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquery/stop |
+| Implement StreamingQueryListener for Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerylistener |
+| Handle onQueryIdle events in StreamingQueryListener | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerylistener/onqueryidle |
+| Use onQueryProgress for streaming status updates | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerylistener/onqueryprogress |
+| React to onQueryStarted events in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerylistener/onquerystarted |
+| Handle onQueryTerminated events in StreamingQueryListener | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerylistener/onqueryterminated |
+| Manage streaming queries with StreamingQueryManager | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager |
+| List active streaming queries in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/active |
+| Register StreamingQueryListener with StreamingQueryManager | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/addlistener |
+| Use awaitAnyTermination on StreamingQueryManager | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/awaitanytermination |
+| Get streaming query by ID in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/get |
+| Remove StreamingQueryListener from StreamingQueryManager | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/removelistener |
+| Reset terminated streaming queries in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/streamingquerymanager/resetterminated |
+| Work with UserDefinedFunction in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udf |
+| Mark PySpark UserDefinedFunction as nondeterministic | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udf/asnondeterministic |
+| Register UDFs with UDFRegistration in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udfregistration |
+| Register Python functions as SQL UDFs in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udfregistration/register |
+| Register Java UDFs as SQL functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udfregistration/registerjavafunction |
+| Register Java UDAFs as SQL functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udfregistration/registerjavaudaf |
+| Use UserDefinedTableFunction in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtf |
+| Mark UserDefinedTableFunction as deterministic | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtf/asdeterministic |
+| Use UDTFRegistration for table functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtfregistration |
+| Register Python UDTFs as SQL table functions | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/udtfregistration/register |
 | Work with VariantVal type in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/variantval |
-| Define window specifications with PySpark Window | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window |
-| Use WindowSpec for PySpark window operations | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec |
+| Parse JSON into VariantVal in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/variantval/parsejson |
+| Convert VariantVal to JSON with time zone control | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/variantval/tojson |
+| Convert VariantVal to native Python structures | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/variantval/topython |
+| Define window specifications with Window in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window |
+| Specify ordering for Window in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window/orderby |
+| Specify partitioning for Window in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window/partitionby |
+| Define rangeBetween frames for Window in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window/rangebetween |
+| Define rowsBetween frames for Window in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/window/rowsbetween |
+| Use WindowSpec to configure windowing in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec |
+| Set ordering columns on WindowSpec in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec/orderby |
+| Set partitioning columns on WindowSpec in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec/partitionby |
+| Configure rangeBetween on WindowSpec in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec/rangebetween |
+| Configure rowsBetween on WindowSpec in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/windowspec/rowsbetween |
+| Use WriterCommitMessage in Databricks data sources | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/classes/writercommitmessage |
 | Use abs numeric function in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/abs |
 | Use acos inverse cosine in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/acos |
 | Use acosh inverse hyperbolic cosine in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/acosh |
@@ -513,7 +879,6 @@
 | Compute approximate percentiles with approx_percentile | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/approx_percentile |
 | Create array columns with array function in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array |
 | Aggregate values into arrays with array_agg | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array_agg |
-| Append elements to arrays with array_append | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array_append |
 | Remove nulls from arrays with array_compact | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array_compact |
 | Test array membership with array_contains in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array_contains |
 | Remove duplicates from arrays with array_distinct | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/array_distinct |
@@ -537,6 +902,7 @@
 | Validate array predicates with forall in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/forall |
 | Format numbers as strings with PySpark in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/format_number |
 | Use format_string printf-style formatting in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/format_string |
+| Use from_avro in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_avro |
 | Parse CSV strings to rows with from_csv in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_csv |
 | Parse JSON strings to complex types with from_json in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_json |
 | Convert Unix epoch seconds to timestamps with from_unixtime in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/from_unixtime |
@@ -661,6 +1027,7 @@
 | Use percent_rank window function in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/percent_rank |
 | Compute exact percentiles with percentile in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/percentile |
 | Compute approximate percentiles with percentile_approx in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/percentile_approx |
+| Use randstr PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/randstr |
 | Use repeat PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/repeat |
 | Use replace PySpark function in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/replace |
 | Reverse strings and arrays with PySpark in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/reverse |
@@ -670,7 +1037,6 @@
 | Round numeric values with PySpark round in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/round |
 | Generate row numbers with PySpark window functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/row_number |
 | Right-pad strings with PySpark rpad in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/rpad |
-| Trim trailing spaces with PySpark rtrim in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/rtrim |
 | Infer schema from CSV strings with PySpark in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/schema_of_csv |
 | Infer schema from JSON strings with PySpark in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/schema_of_json |
 | Get SQL schema of variant values in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/schema_of_variant |
@@ -684,7 +1050,6 @@
 | Shift bits left with PySpark shiftleft in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/shiftleft |
 | Signed right bit shift with PySpark shiftright in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/shiftright |
 | Unsigned right bit shift with PySpark shiftrightunsigned in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/shiftrightunsigned |
-| Randomly shuffle arrays with PySpark in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/shuffle |
 | Compute sign of values with PySpark sign in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/sign |
 | Compute signum of values with PySpark signum in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/signum |
 | Compute sine values with PySpark sin in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/sin |
@@ -818,10 +1183,13 @@
 | Compute time differences with time_diff in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/time_diff |
 | Create TIME values from microseconds in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/time_from_micros |
 | Create TIME values from milliseconds in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/time_from_millis |
+| Use to_avro in PySpark on Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/to_avro |
 | Convert values to Geography in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/to_geography |
 | Convert values to Geometry in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/to_geometry |
-| Use try_make_timestamp_ltz in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_make_timestamp_ltz |
-| Use try_make_timestamp_ntz in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_make_timestamp_ntz |
+| Apply trim string function in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/trim |
+| Create timestamps with try_make_timestamp in Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_make_timestamp |
+| Use try_make_timestamp_ltz for local-timezone timestamps | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_make_timestamp_ltz |
+| Use try_make_timestamp_ntz for local date-time values | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_make_timestamp_ntz |
 | Use try_mod for safe modulo in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_mod |
 | Use try_multiply for overflow-safe multiplication | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_multiply |
 | Parse JSON safely with try_parse_json in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_parse_json |
@@ -840,6 +1208,7 @@
 | Validate UTF-8 safely with try_validate_utf8 in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_validate_utf8 |
 | Extract sub-variants with try_variant_get in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_variant_get |
 | Decompress Zstandard data with try_zstd_decompress | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/try_zstd_decompress |
+| Use TableValuedFunction.explode in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/tvf-explode |
 | Use TableValuedFunction.explode_outer in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/tvf-explode_outer |
 | Use TableValuedFunction.inline in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/tvf-inline |
 | Use TableValuedFunction.inline_outer in Azure Databricks | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/tvf-inline_outer |
@@ -853,7 +1222,7 @@
 | Create user-defined table functions (UDTF) in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/udtf |
 | Decode Base64 strings with unbase64 in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/unbase64 |
 | Convert hex strings to bytes with unhex in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/unhex |
-| Generate random values with uniform in Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/uniform |
+| Use the uniform random function in Azure Databricks PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/uniform |
 | Get days since epoch with unix_date in PySpark | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/unix_date |
 | Get microseconds since epoch with unix_micros | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/unix_micros |
 | Get milliseconds since epoch with unix_millis | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/unix_millis |
@@ -895,7 +1264,7 @@
 | Decompress Zstandard data with zstd_decompress | https://learn.microsoft.com/en-us/azure/databricks/pyspark/reference/functions/zstd_decompress |
 | Configure Databricks Lakehouse Federation for BigQuery | https://learn.microsoft.com/en-us/azure/databricks/query-federation/bigquery |
 | Federate Databricks queries across workspaces | https://learn.microsoft.com/en-us/azure/databricks/query-federation/databricks |
-| Connect Databricks Lakehouse Federation to HTTP APIs | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http |
+| Create Unity Catalog HTTP connections for external APIs | https://learn.microsoft.com/en-us/azure/databricks/query-federation/http |
 | Set up Lakehouse Federation for MySQL | https://learn.microsoft.com/en-us/azure/databricks/query-federation/mysql |
 | Configure Databricks Lakehouse Federation for Oracle | https://learn.microsoft.com/en-us/azure/databricks/query-federation/oracle |
 | Set up Lakehouse Federation for PostgreSQL | https://learn.microsoft.com/en-us/azure/databricks/query-federation/postgresql |
@@ -908,7 +1277,7 @@
 | Federate Databricks queries to Snowflake with Entra ID | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-entra |
 | Federate Databricks queries to Snowflake with OAuth tokens | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-oauth-access-token |
 | Federate Databricks queries to Snowflake with Okta OAuth | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-okta |
-| Federate Databricks queries to Snowflake with PEM keys | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-pem |
+| Configure Databricks federated queries to Snowflake with PEM | https://learn.microsoft.com/en-us/azure/databricks/query-federation/snowflake-pem |
 | Configure Databricks Lakehouse Federation for SQL Server | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sql-server |
 | Configure Databricks federated queries to Azure Synapse | https://learn.microsoft.com/en-us/azure/databricks/query-federation/sqldw |
 | Read and write Avro files on Databricks | https://learn.microsoft.com/en-us/azure/databricks/query/formats/avro |
@@ -942,17 +1311,23 @@
 | Forecast time series with ai_forecast in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_forecast |
 | Generate content using ai_gen in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_gen |
 | Mask sensitive entities with ai_mask in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_mask |
-| Parse documents with ai_parse_document in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_parse_document |
-| Prepare RAG search data with ai_prep_search in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_prep_search |
+| Use ai_parse_document in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_parse_document |
+| Prepare documents for RAG with ai_prep_search | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_prep_search |
 | Call model serving endpoints with ai_query in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_query |
 | Compute semantic similarity with ai_similarity in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_similarity |
 | Summarize text using ai_summarize in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_summarize |
 | Translate text with ai_translate in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_translate |
+| Use approx_top_k aggregate in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_top_k |
+| Accumulate top-K sketches with approx_top_k_accumulate | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_top_k_accumulate |
+| Combine top-K sketches with approx_top_k_combine | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/approx_top_k_combine |
+| Remove duplicates with array_distinct in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_distinct |
+| Insert elements with array_insert in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_insert |
+| Remove elements with array_remove in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_remove |
+| Create repeated arrays with array_repeat in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_repeat |
+| Sort arrays with array_sort in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/array_sort |
 | Use bitmap_and_agg for Databricks SQL bitmaps | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/bitmap_and_agg |
 | Construct bitmap aggregates with bitmap_construct_agg | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/bitmap_construct_agg |
-| Round values with bround in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/bround |
 | Implement CASE expressions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/case |
-| Cast values between types in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/cast |
 | Compute cube roots with cbrt in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/cbrt |
 | Query Auto Loader state with cloud_files_state | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/cloud_files_state |
 | Aggregate values into arrays with collect_list | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/collect_list |
@@ -963,8 +1338,14 @@
 | Use hyperbolic cosine via cosh in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/cosh |
 | Compute cotangent with cot in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/cot |
 | Use Databricks SQL event_log table-valued function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/event_log |
+| Use Databricks SQL flatten function on nested arrays | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/flatten |
+| Cast values to FLOAT with Databricks SQL float | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/float |
+| Round numbers down using Databricks SQL floor | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/floor |
 | Use from_avro to parse Avro data in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/from_avro |
-| Use from_json to parse JSON into structs in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/from_json |
+| Parse CSV strings with Databricks SQL from_csv | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/from_csv |
+| Parse JSON strings with Databricks SQL from_json | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/from_json |
+| Parse XML to structs with Databricks SQL from_xml | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/from_xml |
+| Read individual bits using Databricks SQL getbit | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/getbit |
 | Use h3_boundaryasgeojson in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_boundaryasgeojson |
 | Use h3_boundaryaswkb in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_boundaryaswkb |
 | Use h3_boundaryaswkt in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_boundaryaswkt |
@@ -981,7 +1362,6 @@
 | Detect pentagon H3 cells with h3_ispentagon in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_ispentagon |
 | Validate H3 cell IDs with h3_isvalid in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_isvalid |
 | Get H3 k-ring neighborhoods with h3_kring in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_kring |
-| Get H3 k-ring cells and distances with h3_kringdistances | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_kringdistances |
 | Convert longitude/latitude to H3 BIGINT with h3_longlatash3 | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_longlatash3 |
 | Convert longitude/latitude to H3 string with h3_longlatash3string | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_longlatash3string |
 | Get maximum child H3 cell with h3_maxchild in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_maxchild |
@@ -998,21 +1378,17 @@
 | Safely cover geography with H3 BIGINT using h3_try_coverash3 | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_try_coverash3 |
 | Safely cover geography with H3 strings using h3_try_coverash3string | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/h3_try_coverash3string |
 | Invoke Java methods from Databricks SQL with java_method | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/java_method |
-| Use kll_merge_agg_bigint in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_bigint |
-| Use kll_merge_agg_double in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_double |
-| Use kll_merge_agg_float in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_float |
+| Use kll_merge_agg_bigint for KLL sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_bigint |
+| Use kll_merge_agg_double for KLL sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_double |
+| Use kll_merge_agg_float for KLL sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_merge_agg_float |
 | Use kll_sketch_agg_bigint in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_agg_bigint |
 | Use kll_sketch_agg_double in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_agg_double |
 | Use kll_sketch_agg_float in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_agg_float |
 | Query item count from bigint KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_n_bigint |
 | Query item count from double KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_n_double |
 | Query item count from float KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_n_float |
-| Get quantiles from bigint KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_quantile_bigint |
-| Get quantiles from double KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_quantile_double |
-| Get quantiles from float KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_quantile_float |
-| Get rank of value in bigint KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_rank_bigint |
-| Get rank of value in double KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_rank_double |
-| Get rank of value in float KLL sketch | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_rank_float |
+| Use kll_sketch_get_rank_double in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_rank_double |
+| Use kll_sketch_get_rank_float in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_get_rank_float |
 | Merge bigint KLL sketches in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_merge_bigint |
 | Merge double KLL sketches in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_merge_double |
 | Merge float KLL sketches in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kll_sketch_merge_float |
@@ -1022,25 +1398,46 @@
 | Calculate kurtosis with Databricks SQL function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/kurtosis |
 | Use lag window function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/lag |
 | Pattern matching with like in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/like |
+| Use make_date in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/make_date |
+| Build day-time intervals with make_dt_interval | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/make_dt_interval |
+| Create intervals with deprecated make_interval | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/make_interval |
+| Construct timestamps using make_timestamp | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/make_timestamp |
+| Create year-month intervals with make_ym_interval | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/make_ym_interval |
+| Build map literals with Databricks SQL map | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/map |
+| Merge maps using map_concat in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/map_concat |
+| Create maps from arrays with map_from_arrays | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/map_from_arrays |
+| Build maps from entries using map_from_entries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/map_from_entries |
+| Calculate averages with mean aggregate function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/mean |
+| Use binary minus operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/minussign |
+| Use unary minus operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/minussignunary |
+| Compute remainders with mod in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/mod |
+| Negate numeric values with negative function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/negative |
+| Find next weekday date with next_day function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/next_day |
+| Use parse_json in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/parse_json |
+| Use parse_timestamp in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/parse_timestamp |
+| Extract URL components with parse_url in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/parse_url |
+| Calculate exact percentiles in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/percentile |
+| Use modulo % operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/percentsign |
+| Use plus + operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/plussign |
+| Compute positive modulo with pmod in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/pmod |
 | Use pow function in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/pow |
 | Use power function in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/power |
 | Cast with ?:: operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/questiondoublecolonsign |
 | Use radians function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/radians |
+| Raise custom SQL errors in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/raise_error |
 | Generate random numbers with rand in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/rand |
 | Generate random numbers with random in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/random |
-| Use read_files TVF in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_files |
+| Read files with read_files table function in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_files |
 | Query Kafka with read_kafka in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_kafka |
 | Stream from Amazon Kinesis using read_kinesis TVF | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_kinesis |
 | Read Google Pub/Sub streams with read_pubsub in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_pubsub |
 | Consume Pulsar streams via read_pulsar in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_pulsar |
 | Access streaming state with read_statestore in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/read_statestore |
 | Aggregate arrays with reduce in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/reduce |
-| Match strings with regexp operator in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/regexp |
-| Use regexp_like for regex matching in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/regexp_like |
 | Compute regression mean with regr_avgx in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/regr_avgx |
 | Compute regression SXX with regr_sxx in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/regr_sxx |
 | Compute regression SXY with regr_sxy in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/regr_sxy |
-| Query remote databases with remote_query in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/remote_query |
+| Use remote_query to access external databases in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/remote_query |
 | Use sql_keywords function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/sql_keywords |
 | Manipulate linestrings with st_addpoint in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_addpoint |
 | Compute geometry area with st_area in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_area |
@@ -1088,7 +1485,6 @@
 | Use st_geomfromtext to parse WKT geometry with SRID | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_geomfromtext |
 | Use st_geomfromwkb to parse WKB geometry with SRID | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_geomfromwkb |
 | Use st_geomfromwkt to parse WKT geometry with SRID | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_geomfromwkt |
-| Use st_interiorringn to access polygon interior rings | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_interiorringn |
 | Use st_intersection to compute geometry intersections | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_intersection |
 | Use st_intersects to test geometry intersections | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_intersects |
 | Use st_isempty to test empty geography or geometry | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_isempty |
@@ -1112,7 +1508,6 @@
 | Use st_reverse to reverse geospatial geometries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_reverse |
 | Use st_rotate to rotate geometries around Z axis | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_rotate |
 | Use st_scale to scale geometries in X, Y, and Z | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_scale |
-| Use st_setpoint geography function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_setpoint |
 | Use st_setsrid to change SRID of geospatial values | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_setsrid |
 | Use st_simplify to simplify geometries with Douglas-Peucker | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_simplify |
 | Use st_srid to read SRID from geography or geometry | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/st_srid |
@@ -1122,31 +1517,70 @@
 | Use stddev aggregate function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/stddev |
 | Use stddev_pop aggregate function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/stddev_pop |
 | Use stddev_samp aggregate function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/stddev_samp |
+| Use str_to_map in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/str_to_map |
 | Use string_agg aggregate function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/string_agg |
 | Create structs with struct function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/struct |
+| Apply sum aggregate in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/sum |
 | Use tan trigonometric function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tan |
 | Use tanh hyperbolic function in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tanh |
-| Use to_char formatting in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_char |
-| Use to_number formatting in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_number |
-| Use to_varchar formatting in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_varchar |
+| Compute theta_difference on Databricks Theta Sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_difference |
+| Use theta_intersection with Databricks Theta Sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_intersection |
+| Aggregate Theta Sketch intersections in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_intersection_agg |
+| Build Theta Sketch aggregates in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_sketch_agg |
+| Estimate unique counts from Theta Sketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_sketch_estimate |
+| Union Theta Sketches with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_union |
+| Aggregate Theta Sketch unions across partitions | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/theta_union_agg |
+| Convert microseconds to timestamp in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/timestamp_micros |
+| Convert milliseconds to timestamp in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/timestamp_millis |
+| Convert seconds to timestamp in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/timestamp_seconds |
+| Cast expressions to TINYINT in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tinyint |
+| Convert values to BINARY with to_binary | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_binary |
+| Format values as strings using to_char | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_char |
+| Cast expressions to DATE with to_date | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_date |
+| Convert formatted strings to DECIMAL with to_number | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_number |
+| Cast expressions to TIMESTAMP with to_timestamp | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_timestamp |
+| Get UNIX epoch from timestamps with to_unix_timestamp | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_unix_timestamp |
+| Format values as VARCHAR using to_varchar | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_varchar |
 | Convert complex types to VARIANT objects in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/to_variant_object |
-| Handle overflow with try_avg in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_avg |
-| Use unix_timestamp in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/unix_timestamp |
+| Transform map keys with transform_keys function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/transform_keys |
+| Compute averages safely with try_avg aggregate | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_avg |
+| Safely access array or map elements with try_element_at | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_element_at |
+| Parse timestamps safely with try_parse_timestamp | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_parse_timestamp |
+| Retrieve Databricks secrets with try_secret function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_secret |
+| Convert formatted strings to DECIMAL with try_to_number | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_to_number |
+| Use try_to_timestamp in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/try_to_timestamp |
+| Compute tuple_difference_double in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_difference_double |
+| Compute tuple_difference_integer in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_difference_integer |
+| Aggregate tuple_intersection_agg_double sketches in SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_intersection_agg_double |
+| Aggregate tuple_intersection_agg_integer sketches in SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_intersection_agg_integer |
+| Use tuple_intersection_double on TupleSketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_intersection_double |
+| Use tuple_intersection_integer on TupleSketches | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_intersection_integer |
+| Create TupleSketches with tuple_sketch_agg_double | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_agg_double |
+| Create TupleSketches with tuple_sketch_agg_integer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_agg_integer |
+| Estimate unique keys with tuple_sketch_estimate_double | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_estimate_double |
+| Estimate unique keys with tuple_sketch_estimate_integer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_estimate_integer |
+| Summarize TupleSketch doubles with tuple_sketch_summary_double | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_summary_double |
+| Summarize TupleSketch integers with tuple_sketch_summary_integer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_sketch_summary_integer |
+| Union multiple TupleSketches with tuple_union_agg_double | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_union_agg_double |
+| Union multiple TupleSketches with tuple_union_agg_integer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_union_agg_integer |
+| Merge two TupleSketches with tuple_union_double | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_union_double |
+| Merge two TupleSketches with tuple_union_integer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/tuple_union_integer |
+| Use unix_timestamp in Azure Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/unix_timestamp |
 | Convert strings to uppercase with Databricks upper | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/upper |
-| Decode URL-encoded strings in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/url_decode |
+| Decode URL-encoded strings with url_decode | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/url_decode |
 | Encode strings as URLs in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/url_encode |
 | Get current user with Databricks user function | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/user |
 | Unnest VARIANT data with variant_explode in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/variant_explode |
 | Outer explode VARIANT data with variant_explode_outer | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/variant_explode_outer |
-| Extract typed values from VARIANT with variant_get | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/variant_get |
-| Aggregate vectors with vector_avg in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_avg |
+| Use variant_get to extract values from VARIANT columns in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/variant_get |
+| Compute element-wise vector averages with vector_avg in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_avg |
 | Compute vector cosine similarity in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_cosine_similarity |
 | Compute vector inner product in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_inner_product |
 | Compute vector L2 distance in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_l2_distance |
 | Calculate vector norms with vector_norm in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_norm |
 | Normalize vectors with vector_normalize in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_normalize |
 | Query Mosaic AI Vector Search indexes via SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_search |
-| Aggregate vectors with vector_sum in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_sum |
+| Compute element-wise vector sums with vector_sum in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/vector_sum |
 | Compute week of year with Databricks weekofyear | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/weekofyear |
 | Bucket numeric values with width_bucket in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/width_bucket |
 | Define sliding time windows with Databricks window | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/window |
@@ -1161,7 +1595,7 @@
 | Replace NULL with zero using zeroifnull in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zeroifnull |
 | Merge arrays element-wise with zip_with in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zip_with |
 | Use zstd_compress in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zstd_compress |
-| Use zstd_decompress in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zstd_decompress |
+| Decompress data with zstd_decompress in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/zstd_decompress |
 | Invoke built-in and user-defined functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-function-invocation |
 | Implement user-defined aggregate functions in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-aggregate |
 | Integrate Hive UDFs, UDAFs, UDTFs with Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-functions-udf-hive |
@@ -1176,6 +1610,7 @@
 | Use ST geospatial functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-st-geospatial-functions |
 | Alphabetical reference of ST functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-st-geospatial-functions-alpha |
 | Use CALL to invoke Databricks SQL procedures | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-call |
+| Set and manage QUERY_TAGS in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-conf-mgmt-set-query-tags |
 | GET files from volumes using Databricks SQL Connector | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-get |
 | Upload local files to volumes with PUT INTO | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-put-into |
 | Remove volume files using Databricks SQL Connector REMOVE | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-connector-remove |
@@ -1196,6 +1631,7 @@
 | Use SHOW CREATE TABLE in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-create-table |
 | Use SHOW DATABASES (SCHEMAS) in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-databases |
 | List functions with SHOW FUNCTIONS in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-functions |
+| Use SHOW GOVERNED TAGS in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-governed-tags |
 | List groups with SHOW GROUPS in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-groups |
 | Enumerate table partitions with SHOW PARTITIONS in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-partitions |
 | Discover stored procedures with SHOW PROCEDURES in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-aux-show-procedures |
@@ -1225,17 +1661,36 @@
 | Use DECLARE VARIABLE for session variables in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-declare-variable |
 | Drop user-defined functions with DROP FUNCTION in Databricks | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-drop-function |
 | Use INSERT syntax in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-dml-insert-into |
-| Compose queries with Databricks SQL SELECT | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select |
-| Use VALUES clause to create inline tables | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-values |
-| Use window functions in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-window-functions |
+| Author SQL pipelines in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-pipeline |
+| Compose queries in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-query |
+| Write SELECT subqueries in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select |
+| Project columns with SELECT clause in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-column-list |
+| Use CTEs in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-cte |
+| GROUP BY and advanced aggregates in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-groupby |
+| Filter grouped results with HAVING in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-having |
+| Join tables using Databricks SQL JOIN | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-join |
+| Use and migrate from LATERAL VIEW in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-lateral-view |
+| Limit query result rows in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-limit |
+| Define reusable WINDOW specifications in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-named-window |
+| Paginate results with OFFSET in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-offset |
+| Sort query results with ORDER BY in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-orderby |
+| Apply piped operations in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-pipeop |
+| Transform rows with PIVOT in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-pivot |
+| Use set operators in Databricks SQL queries | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-setops |
+| Invoke table-valued functions in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-tvf |
+| Use UNPIVOT to rotate columns in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-unpivot |
+| Create inline tables with VALUES in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-values |
+| Apply WATERMARK for streaming in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-watermark |
+| Filter rows with WHERE in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-select-where |
+| Use star (*) expansion in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-qry-star |
 | Use new Databricks SQL 2023 language and functions | https://learn.microsoft.com/en-us/azure/databricks/sql/release-notes/2023 |
 | Use named parameter markers in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-parameters |
 | Create and use query snippets in Databricks SQL | https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-snippets |
+| Implement custom stateful streaming with transformWithState | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/ |
 | Implement example custom stateful streaming apps | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/examples |
 | Use legacy arbitrary stateful operators on Databricks | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/legacy |
 | Handle schema evolution in transformWithState state store | https://learn.microsoft.com/en-us/azure/databricks/stateful-applications/schema-evolution |
 | Use Avro and Schema Registry with Kafka streaming on Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/avro-dataframe |
-| Implement Delta Lake streaming reads and writes in Databricks | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/delta-lake |
 | Structured Streaming integration patterns with external systems | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/examples |
 | Write custom streaming sinks with foreachBatch | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/foreach |
 | Serialize and deserialize protocol buffers in Databricks streaming | https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/protocol-buffers |

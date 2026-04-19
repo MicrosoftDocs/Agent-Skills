@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 24
+- **Updated Pages**: 0
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-personalizer/azure-personalizer.csv`
 
@@ -58,31 +58,6 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | *(Unclassified)* | 26 | 74.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [What's new](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/whats-new)
-  - Updated: 2024-08-28T16:59:00.000Z → 2025-07-25T22:07:00.000Z
-- [Guidance for integration and responsible use](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/responsible-guidance-integration)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Run an offline evaluation](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/how-to-offline-evaluation)
-  - Updated: 2024-08-28T16:59:00.000Z → 2025-10-09T05:03:00.000Z
-- [How Personalizer works](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/how-personalizer-works)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Terminology](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/terminology)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Learning policy](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concept-active-learning)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Active and inactive events](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concept-active-inactive-events)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Reinforcement learning](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-reinforcement-learning)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Exploration](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-exploration)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Auto-optimization](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concept-auto-optimization)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
-- [Scalability and performance](https://learn.microsoft.com/en-us/azure/ai-services/personalizer/concepts-scalability-performance)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-01-23T23:20:00.000Z
 
 ## Classified Pages
 

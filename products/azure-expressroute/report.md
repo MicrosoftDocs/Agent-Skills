@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 94
+- **Updated Pages**: 0
+- **Unchanged**: 95
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-expressroute/azure-expressroute.csv`
 
@@ -75,11 +75,6 @@ confusable_not_for: Not for Azure Internet Peering (use azure-internet-peering),
 | *(Unclassified)* | 25 | 26.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [ExpressRoute Metro](https://learn.microsoft.com/en-us/azure/expressroute/metro)
-  - Updated: 2026-02-18T08:00:00.000Z → 2026-04-07T08:00:00.000Z
 
 ## Classified Pages
 

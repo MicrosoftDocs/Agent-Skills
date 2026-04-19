@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   configuration: 'Configuring AVS environments: networking, storage, backup/DR, monitoring,
     DNS, SNAT, vSAN, Cloud Director, Arc, and integrations like NetApp, Elastic SAN,
@@ -16,9 +16,9 @@ category_descriptions:
   deployment: 'Guides for deploying AVS workloads: Citrix Virtual Apps/Desktops, JetStream
     DR for AVS/on-prem, and integrating VMware Cloud Director service with Azure VMware
     Solution.'
-  troubleshooting: Diagnosing and fixing AVS deployment failures, known platform issues,
-    and disaster recovery problems (connectivity, replication, failover/failback)
-    in Azure VMware Solution.
+  troubleshooting: 'Diagnosing and fixing Azure VMware Solution issues: deployment
+    failures, known platform errors, and disaster recovery problems (replication,
+    failover, and recovery).'
   best-practices: Best practices for AVS private cloud maintenance, security hardening,
     and tuning NSX scale/performance specifically for HCX migration scenarios.
   integrations: 'Networking, migration, and integration patterns for AVS: VPN/ExpressRoute,
@@ -30,17 +30,17 @@ category_descriptions:
 skill_description: Expert knowledge for Azure VMware Solution development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when designing AVS with vSAN, NSX networking, HCX migrations, ExpressRoute/VPN,
-  or Citrix/Horizon workloads, and other Azure VMware Solution related development
-  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Large
-  Instances (use azure-large-instances), SAP HANA on Azure Large Instances (use azure-sap),
-  Azure Migrate (use azure-migrate).
-use_when: Use when designing AVS with vSAN, NSX networking, HCX migrations, ExpressRoute/VPN,
-  or Citrix/Horizon workloads, and other Azure VMware Solution related development
-  tasks.
+  Use when designing AVS networking/storage, HCX migrations, Citrix/Horizon VDI, JetStream
+  DR, or NetApp Files integrations, and other Azure VMware Solution related development
+  tasks. Not for Azure Virtual Machines (use azure-virtual-machines), Azure Virtual
+  Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge),
+  Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
+use_when: Use when designing AVS networking/storage, HCX migrations, Citrix/Horizon
+  VDI, JetStream DR, or NetApp Files integrations, and other Azure VMware Solution
+  related development tasks.
 confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines), Azure
-  Large Instances (use azure-large-instances), SAP HANA on Azure Large Instances (use
-  azure-sap), Azure Migrate (use azure-migrate).
+  Virtual Machine Scale Sets (use azure-vm-scalesets), Azure Stack Edge (use azure-stack-edge),
+  Azure Baremetal Infrastructure (use azure-baremetal-infrastructure).
 ---
 # Azure VMware Solution Crawl Report
 
@@ -54,8 +54,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 8
-- **Unchanged**: 127
+- **Updated Pages**: 1
+- **Unchanged**: 134
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-vmware-solution/azure-vmware-solution.csv`
 
@@ -78,22 +78,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Updated Pages
 
-- [Enable Managed SNAT for Azure VMware Solution workloads](https://learn.microsoft.com/en-us/azure/azure-vmware/enable-managed-snat-for-workloads)
-  - Updated: 2024-03-22T08:00:00.000Z → 2026-04-07T22:12:00.000Z
-- [2 - Create a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-create-private-cloud)
-  - Updated: 2023-12-20T23:04:00.000Z → 2026-04-03T08:00:00.000Z
-- [3 - Configure networking](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-configure-networking)
-  - Updated: 2024-06-21T00:28:00.000Z → 2026-04-06T08:00:00.000Z
-- [4 - Access a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-access-private-cloud)
-  - Updated: 2024-04-01T22:15:00.000Z → 2026-04-02T08:00:00.000Z
-- [5 - Create an NSX Tier-1 Gateway](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-nsx-tier-1-gateway)
-  - Updated: 2024-12-12T18:02:00.000Z → 2026-04-07T22:12:00.000Z
-- [6 - Create an NSX network segment](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-nsx-t-network-segment)
-  - Updated: 2024-06-12T17:07:00.000Z → 2026-04-02T08:00:00.000Z
-- [9 - Delete a private cloud](https://learn.microsoft.com/en-us/azure/azure-vmware/tutorial-delete-private-cloud)
-  - Updated: 2024-02-21T18:06:00.000Z → 2026-04-07T22:12:00.000Z
-- [Configure Trusted Launch](https://learn.microsoft.com/en-us/azure/azure-vmware/configure-virtual-trusted-platform-module)
-  - Updated: 2026-04-01T22:41:00.000Z → 2026-04-07T22:12:00.000Z
+- [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues)
+  - Updated: 2026-04-02T08:00:00.000Z → 2026-04-13T22:10:00.000Z
 
 ## Classified Pages
 
@@ -145,7 +131,7 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | [Hub and spoke](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-hub-and-spoke) | decision-making | 0.70 | Describes three primary patterns for inbound/outbound internet with criteria like security, visibility, and capacity, guiding pattern selection. |
 | [Install Cloud Backup for Virtual Machines](https://learn.microsoft.com/en-us/azure/azure-vmware/install-cloud-backup-virtual-machines) | integrations | 0.70 | Covers installing a specific Cloud Backup for Virtual Machines plug-in within Azure VMware Solution to back up Azure NetApp Files datastores and VMs. This is a product-specific integration pattern between AVS and NetApp, likely including configuration steps and parameters unique to this integration, which qualifies as integrations-focused expert knowledge. |
 | [Internet connectivity design considerations](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-design-public-internet-access) | architecture-patterns | 0.70 | Network design considerations and solutions for AVS-specific use cases constitute product-specific architecture patterns. |
-| [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues) | troubleshooting | 0.70 | A known-issues article usually maps specific symptoms to causes and workarounds, often with product-specific behaviors and resolutions. This aligns with troubleshooting (symptom → cause → solution) and contains expert operational knowledge not obvious from general training. |
+| [Known issues](https://learn.microsoft.com/en-us/azure/azure-vmware/azure-vmware-solution-known-issues) | troubleshooting | 0.70 | The page is a product-specific known issues list that maps concrete symptoms to resolutions or workarounds and sometimes includes timing for fixes. This is effectively troubleshooting guidance (symptom → cause → workaround) that an LLM wouldn't reliably know from training, so it qualifies as expert knowledge under the troubleshooting sub-skill. |
 | [License SQL Server, Windows Server and Linux in Azure VMware Solution](https://learn.microsoft.com/en-us/azure/azure-vmware/license-sql-windows-in-avs) | decision-making | 0.70 | Provides detailed, product-specific licensing considerations for SQL Server, Windows Server, and Linux on Azure VMware Solution, including how Azure Hybrid Benefit applies and compliance implications. This is specialized decision guidance not derivable from generic knowledge. |
 | [Migrate](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-migrate) | configuration | 0.70 | Contains product-specific behavior (ICMP disabled, interaction with default routes) and configuration steps for Managed SNAT. |
 | [Multi-AZ with stretched clusters](https://learn.microsoft.com/en-us/azure/azure-vmware/architecture-stretched-clusters) | security | 0.70 | Covers vCenter/NSX access, Cloud admin role and restricted permissions, which are product-specific IAM/security configuration details. |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   limits-quotas: Managing Azure Boards limits for test artifacts and work item attachments,
     including size/quantity constraints and how to restore deleted test-related items.
@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 126
+- **Updated Pages**: 1
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-boards/azure-boards.csv`
 
@@ -60,6 +60,11 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | *(Unclassified)* | 92 | 73.0% |
 
 ## Changes
+
+### Updated Pages
+
+- [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops)
+  - Updated: 2026-03-04T02:02:00.000Z → 2026-04-17T17:04:00.000Z
 
 ## Classified Pages
 
@@ -141,7 +146,6 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | [Implement SAFe® with Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/plans/safe-configure-boards?view=azure-devops) | 0.30 | Comprehensive SAFe implementation guide; largely methodology and configuration walkthroughs, but summary does not indicate numeric thresholds, limits, or decision matrices with quantified trade-offs. |
 | [Manage queries & query folders](https://learn.microsoft.com/en-us/azure/devops/boards/queries/organize-queries?view=azure-devops) | 0.30 | Managing and organizing queries via folders/favorites; UI-level organization, no deep configuration or limits. |
 | [Query quick reference](https://learn.microsoft.com/en-us/azure/devops/boards/queries/query-index-quick-ref?view=azure-devops) | 0.30 | Index/quick reference to query examples; navigation aid, not a concentrated expert-knowledge page. |
-| [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops) | 0.30 | Describes removing, deleting, and restoring work items conceptually; no specific quotas, configuration matrices, or error-code diagnostics. |
 | [Sample work item templates](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/work-item-template-examples?view=azure-devops) | 0.30 | Provides example templates; guidance is descriptive without product-specific numeric thresholds or configuration matrices. |
 | [Send email of items or print](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/email-work-items?view=azure-devops) | 0.30 | Describes sending emails with work items and printing lists; straightforward feature usage without expert-only configuration or limits. |
 | [Use your board](https://learn.microsoft.com/en-us/azure/devops/boards/boards/kanban-quickstart?view=azure-devops) | 0.30 | Quickstart for using a board; step-by-step usage without detailed configuration tables, limits, or decision matrices. |
@@ -184,6 +188,7 @@ confusable_not_for: Not for Azure DevOps (use azure-devops), Azure Test Plans (u
 | [Query by links or attachments](https://learn.microsoft.com/en-us/azure/devops/boards/queries/linking-attachments?view=azure-devops) | 0.20 | Explains querying by link/attachment counts and types; while it references fields, the summary does not indicate detailed config tables, limits, or troubleshooting mappings. Likely standard feature usage. |
 | [Query history and discussion](https://learn.microsoft.com/en-us/azure/devops/boards/queries/history-and-auditing?view=azure-devops) | 0.20 | Describes querying work item history for auditing; lacks error codes, numeric thresholds, or detailed configuration options. Primarily conceptual and procedural. |
 | [Quick reference - concepts and tasks](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/quick-ref?view=azure-devops) | 0.20 | Quick reference/navigation to concepts and tasks; summary doesn’t indicate detailed limits, configs, or troubleshooting mappings. |
+| [Remove, delete, or restore](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/remove-delete-work-items?view=azure-devops) | 0.20 | Page is a how-to guide for removing, deleting, and restoring work items in Azure Boards. It appears to focus on UI steps and process guidance without numeric limits, configuration parameter tables, error-code-based troubleshooting, or other product-specific expert details as defined in the sub-skill types. |
 | [Roadmap and features timeline](https://learn.microsoft.com/en-us/azure/devops/boards/github/features-timeline?view=azure-devops) | 0.20 | Features timeline/roadmap is release/marketing information, not technical expert knowledge for skills. |
 | [Set WIP limits](https://learn.microsoft.com/en-us/azure/devops/boards/boards/wip-limits?view=azure-devops) | 0.20 | Page explains what WIP limits are and how to use them conceptually in Azure Boards; no evidence of product-specific numeric limits, quotas, or configuration tables with exact values. |
 | [Set up your backlogs & boards](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops) | 0.20 | Covers creating and managing a product backlog; general process and UI usage without specific limits, configuration ranges, or troubleshooting details. |

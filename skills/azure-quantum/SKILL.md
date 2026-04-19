@@ -1,9 +1,9 @@
 ---
 name: azure-quantum
-description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using QDK/qdk.azure, hybrid jobs, QIR/OpenQASM/Pulser circuits, IonQ/PASQAL/Quantinuum/Rigetti, or resource estimation, and other Azure Quantum related development tasks. Not for Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning), Azure HPC Cache (use azure-hpc-cache).
+description: Expert knowledge for Azure Quantum development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Azure Quantum workspaces, QDK/Q#, QIR/OpenQASM circuits, IonQ/PASQAL/Quantinuum/Rigetti targets, or hybrid jobs, and other Azure Quantum related development tasks. Not for Azure HPC Cache (use azure-hpc-cache), Azure Batch (use azure-batch), Azure Databricks (use azure-databricks), Azure Machine Learning (use azure-machine-learning).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Quantum Skill
@@ -24,20 +24,20 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L37-L45 | Diagnosing Azure Quantum connection/job failures and understanding support, escalation, and issue-handling policies for IonQ, PASQAL, Quantinuum, and Rigetti providers. |
+| Troubleshooting | L37-L45 | Troubleshooting Azure Quantum provider issues: diagnosing job failures and understanding support/escalation policies and limits for IonQ, PASQAL, Quantinuum, and Rigetti. |
 | Best Practices | L46-L52 | Best practices for using QDK in VS Code with Copilot, optimizing large Q# programs via resource estimation, and systematically testing and debugging quantum code. |
-| Decision Making | L53-L62 | Guidance on Azure Quantum costs, provider pricing and regions, workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography with the resource estimator. |
-| Architecture & Design Patterns | L63-L67 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
-| Limits & Quotas | L68-L75 | Limits on jobs, shots, durations, and hardware per provider, plus guidance for running long Q# experiments, using sessions, and avoiding timeouts on Azure Quantum targets. |
-| Security | L76-L86 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
-| Configuration | L87-L103 | Configuring Azure Quantum workspaces, QDK tools, simulators, noise models, and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), plus tuning and batching resource estimator runs. |
-| Integrations & Coding Patterns | L104-L113 | Integrating QDK with Azure Quantum: connecting via qdk.azure, running hybrid jobs, and submitting QIR/OpenQASM/Pulser, Qiskit, and Cirq circuits through QDK to Azure Quantum. |
-| Deployment | L114-L118 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
+| Decision Making | L53-L61 | Guidance on Azure Quantum costs, provider pricing and regions, workspace migration, choosing Q# dev tools, and planning quantum-safe cryptography with the resource estimator. |
+| Architecture & Design Patterns | L62-L66 | Guidance on designing hybrid quantum-classical workflows in Azure Quantum, including architecture options, orchestration patterns, and when to offload tasks to quantum hardware. |
+| Limits & Quotas | L67-L73 | Managing Azure Quantum quotas, job/session limits, timeouts, and Rigetti-specific hardware constraints and target capabilities. |
+| Security | L74-L84 | Managing secure access to Azure Quantum workspaces: RBAC and access control, bulk user assignment, ARM locks, managed identities, service principals, and secure handling of access keys. |
+| Configuration | L85-L101 | Configuring Azure Quantum workspaces, QDK tools, simulators, noise models, and hardware targets (IonQ, PASQAL, Quantinuum, Rigetti), plus tuning and batching resource estimator runs. |
+| Integrations & Coding Patterns | L102-L111 | Using the Azure Quantum QDK and SDKs to connect workspaces and submit/run circuits and programs (QIR, OpenQASM, Pulser, Qiskit, Cirq) and hybrid jobs with Adaptive RI |
+| Deployment | L112-L116 | Deploying Azure Quantum workspaces with Bicep and running/submitting Q# quantum programs from VS Code to Azure Quantum backends |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot common Azure Quantum connection and job issues | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues |
+| Diagnose and fix common Azure Quantum issues | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-common-issues |
 | Support and escalation policy for IonQ on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-ionq |
 | Support policy for PASQAL on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-pasqal |
 | Support policy for Quantinuum on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-support-quantinuum |
@@ -53,7 +53,6 @@ This skill requires **network access** to fetch documentation content:
 ### Decision Making
 | Topic | URL |
 |-------|-----|
-| Understand Azure Quantum job costs and billing | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-job-cost-billing |
 | Migrate Azure Quantum workspace data between regions | https://learn.microsoft.com/en-us/azure/quantum/migration-guide |
 | Compare Azure Quantum provider pricing plans | https://learn.microsoft.com/en-us/azure/quantum/pricing |
 | Check regional availability of Azure Quantum providers | https://learn.microsoft.com/en-us/azure/quantum/provider-global-availability |
@@ -68,8 +67,7 @@ This skill requires **network access** to fetch documentation content:
 ### Limits & Quotas
 | Topic | URL |
 |-------|-----|
-| Azure Quantum provider limits and quotas | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas |
-| Run long-duration Q# experiments on Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/how-to-long-running-experiments |
+| Review and manage Azure Quantum usage quotas | https://learn.microsoft.com/en-us/azure/quantum/azure-quantum-quotas |
 | Manage Azure Quantum sessions and avoid timeouts | https://learn.microsoft.com/en-us/azure/quantum/how-to-work-with-sessions |
 | Rigetti provider targets and hardware limits in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/provider-rigetti |
 
@@ -106,7 +104,7 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Connect to Azure Quantum workspace via qdk.azure | https://learn.microsoft.com/en-us/azure/quantum/how-to-connect-workspace |
 | Run integrated hybrid quantum jobs with Adaptive RI in Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/hybrid-computing-integrated |
-| Run OpenQASM programs in the Quantum Development Kit | https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration |
+| Run OpenQASM programs with Azure Quantum QDK | https://learn.microsoft.com/en-us/azure/quantum/qdk-openqasm-integration |
 | Use Qiskit and Cirq with the Quantum Development Kit | https://learn.microsoft.com/en-us/azure/quantum/qdk-qiskit-cirq-overview |
 | Submit Cirq circuits to Azure Quantum with QDK | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-cirq |
 | Submit QIR, OpenQASM, and Pulser circuits to Azure Quantum | https://learn.microsoft.com/en-us/azure/quantum/quickstart-microsoft-provider-format |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   security: 'Securing Azure Container Registry: auth methods, RBAC/ABAC and tokens,
     network isolation (firewall, Private Link, IP/service tags), data exfiltration
@@ -7,9 +7,6 @@ category_descriptions:
   configuration: 'Configuring ACR behavior: caching, purge/retention/soft delete,
     delete locks, tasks (YAML, timers, multi-step, patching, agent pools), webhooks,
     wildcard cache rules, and monitoring.'
-  architecture-patterns: 'Patterns for ACR performance and governance: caching image
-    pulls, geo-replication strategies, connected registries for edge/offline, and
-    gated import workflows for public images.'
   decision-making: Guidance on choosing ACR auth for Kubernetes, planning geo-replication,
     and migrating image signing from Docker Content Trust to Notary Project.
   best-practices: 'Best practices for ACR operations: managing public image dependencies,
@@ -25,6 +22,9 @@ category_descriptions:
     calculated and constrained.
   deployment: Using ARM templates to automate ACR quick tasks and data transfer, and
     deploying/managing ACR connected registries via Azure Arc extension
+  architecture-patterns: 'Patterns for ACR performance and governance: caching image
+    pulls, geo-replication strategies, connected registries for edge/offline, and
+    gated import workflows for public images.'
 skill_description: Expert knowledge for Azure Container Registry development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
@@ -47,13 +47,13 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 - **Total Pages**: 122
 - **Fetched**: 122
 - **Fetch Failed**: 0
-- **Classified**: 89
-- **Unclassified**: 33
+- **Classified**: 88
+- **Unclassified**: 34
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 122
+- **Updated Pages**: 1
+- **Unchanged**: 121
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-container-registry/azure-container-registry.csv`
 
@@ -61,7 +61,7 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| architecture-patterns | 3 | 2.5% |
+| architecture-patterns | 2 | 1.6% |
 | best-practices | 4 | 3.3% |
 | configuration | 14 | 11.5% |
 | decision-making | 3 | 2.5% |
@@ -70,9 +70,14 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | limits-quotas | 2 | 1.6% |
 | security | 36 | 29.5% |
 | troubleshooting | 12 | 9.8% |
-| *(Unclassified)* | 33 | 27.0% |
+| *(Unclassified)* | 34 | 27.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview)
+  - Updated: 2025-12-01T23:09:00.000Z → 2026-04-14T22:12:00.000Z
 
 ## Classified Pages
 
@@ -154,7 +159,6 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Content trust](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-content-trust) | security | 0.65 | Contains product-specific steps and constraints for enabling DCT on ACR, including tier requirement (Premium) and deprecation timelines; focuses on configuring signed image workflows rather than generic concepts. |
 | [Delete image data - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-delete) | best-practices | 0.65 | Focuses on strategies and concrete CLI patterns for deleting images and manifests to manage storage; product-specific operational guidance and gotchas, fitting best practices. |
 | [Deploy connected registry to Azure Arc](https://learn.microsoft.com/en-us/azure/container-registry/quickstart-connected-registry-arc-cli) | deployment | 0.65 | Covers deployment of a specific extension on Arc-enabled Kubernetes with secure-by-default settings; product-specific deployment pattern. |
-| [Overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview) | architecture-patterns | 0.65 | Explains artifact cache feature, scenarios, and how it leverages geo-replication and zones; ACR-specific performance pattern guidance. |
 | [Pull images from connected registry](https://learn.microsoft.com/en-us/azure/container-registry/pull-images-from-connected-registry) | security | 0.65 | Shows how to configure client tokens and credentials for access; includes ACR-specific auth configuration parameters. |
 | [Scan with Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/container-registry/scan-images-defender) | security | 0.65 | Describes enabling Defender for container registries at subscription level and how it scans ACR images; includes product-specific security configuration and integration behavior. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/container-registry/security-controls-policy) | security | 0.65 | Lists specific built-in policy definitions and compliance controls for ACR; includes product-specific security/compliance settings. |
@@ -204,4 +208,5 @@ confusable_not_for: Not for Azure Container Apps (use azure-container-apps), Azu
 | [Create container registry - CLI](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli) | 0.20 | Quickstart showing basic creation and push/pull via CLI; no detailed limits, configs tables, or troubleshooting content. |
 | [Create container registry - Portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal) | 0.20 | Portal quickstart for creating a registry and pushing/pulling an image; procedural, not expert reference material. |
 | [Create container registry - PowerShell](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-powershell) | 0.20 | PowerShell quickstart for basic registry usage; no product-specific limits, configs, or error mappings. |
+| [Overview](https://learn.microsoft.com/en-us/azure/container-registry/artifact-cache-overview) | 0.20 | The page is an overview of Azure Container Registry artifact cache, describing benefits like faster pulls, geo-replication, and private access. The summary does not indicate presence of numeric limits, configuration parameter tables, error codes, or decision matrices. It appears to be conceptual/feature overview rather than detailed configuration, limits, or troubleshooting content. |
 | [Registries, repositories, and images](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-concepts) | 0.10 | Introductory concepts page explaining registries, repositories, images, and artifacts. It is a conceptual overview without numeric limits, configuration parameters, error codes, or decision matrices. Does not meet any expert-knowledge sub-skill criteria. |

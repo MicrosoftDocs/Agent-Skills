@@ -32,8 +32,8 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 19
+- **Updated Pages**: 0
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-shell/azure-cloud-shell.csv`
 
@@ -47,11 +47,6 @@ confusable_not_for: Not for Azure Portal (use azure-portal), Azure Resource Mana
 | *(Unclassified)* | 15 | 75.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Release notes](https://learn.microsoft.com/en-us/azure/cloud-shell/release-notes)
-  - Updated: 2026-04-01T17:25:00.000Z → 2026-04-10T22:10:00.000Z
 
 ## Classified Pages
 

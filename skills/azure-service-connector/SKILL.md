@@ -1,9 +1,9 @@
 ---
 name: azure-service-connector
-description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to DBs, messaging, storage, AI, or config services via Service Connector APIs, and other Azure Service Connector related development tasks. Not for Azure API Management (use azure-api-management), Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps).
+description: Expert knowledge for Azure Service Connector development including troubleshooting, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Azure compute to Cosmos DB, Key Vault, Redis, Kafka, OpenAI, or external services via Service Connector, and other Azure Service Connector related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Logic Apps (use azure-logic-apps), Azure API Management (use azure-api-management).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Service Connector Skill
@@ -24,17 +24,17 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L34-L38 | Diagnosing and resolving Service Connector errors and failures, including common error codes, connection issues, and steps to debug and fix failed connections. |
+| Troubleshooting | L34-L38 | Diagnosing and resolving Azure Service Connector failures, including common error codes, connection issues, and step-by-step troubleshooting for misconfigurations. |
 | Limits & Quotas | L39-L43 | Limits on number/types of connections, supported scenarios, and guidance to mitigate Service Connector constraints or unsupported configurations. |
-| Security | L44-L49 | Details on what Azure and Microsoft Entra roles/permissions Service Connector needs or assigns, and how to review and manage those access requirements securely |
-| Configuration | L50-L57 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
-| Integrations & Coding Patterns | L58-L87 | Patterns and how-to guides for connecting apps to databases, messaging, storage, AI, and config services using Azure Service Connector (auth options, setup steps, language samples). |
+| Security | L44-L50 | Service Connector security, required permissions and Microsoft Entra roles, and how to configure and choose authentication methods for connected services |
+| Configuration | L51-L57 | How to define and retrieve Service Connector connection settings, choose and configure auth methods, and supply correct CLI/IaC parameters for creating connections |
+| Integrations & Coding Patterns | L58-L87 | How to connect Azure compute to databases, messaging, storage, AI, and external services (Cosmos DB, Kafka, Redis, Key Vault, OpenAI, etc.) using Service Connector integration patterns |
 | Deployment | L88-L91 | Info on where Service Connector is regionally supported per compute service and how to create connections using infrastructure-as-code tools. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Troubleshoot Service Connector errors and failures | https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error |
+| Diagnose and fix Azure Service Connector errors | https://learn.microsoft.com/en-us/azure/service-connector/how-to-troubleshoot-front-end-error |
 
 ### Limits & Quotas
 | Topic | URL |
@@ -46,13 +46,13 @@ This skill requires **network access** to fetch documentation content:
 |-------|-----|
 | Review Microsoft Entra roles assigned by Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/concept-microsoft-entra-roles |
 | Understand Service Connector permission requirements in Azure | https://learn.microsoft.com/en-us/azure/service-connector/concept-permission |
+| Configure authentication options for Azure Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication |
 
 ### Configuration
 | Topic | URL |
 |-------|-----|
 | Define Azure Service Connector IaC connection settings | https://learn.microsoft.com/en-us/azure/service-connector/how-to-build-connections-with-iac-tools |
 | Retrieve Service Connector-added connection configurations | https://learn.microsoft.com/en-us/azure/service-connector/how-to-get-configurations |
-| Configure authentication options in Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-manage-authentication |
 | Provide correct CLI parameters to Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-provide-correct-parameters |
 
 ### Integrations & Coding Patterns
@@ -80,10 +80,10 @@ This skill requires **network access** to fetch documentation content:
 | Integrate Azure SignalR Service using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-signalr |
 | Connect Azure SQL Database via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-sql-database |
 | Integrate Azure Blob Storage with Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-blob |
-| Connect Azure Files via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file |
-| Connect Azure Queue Storage via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue |
+| Connect Azure Files to compute with Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-file |
+| Integrate Azure Queue Storage via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-queue |
 | Connect Azure Table Storage via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-storage-table |
-| Connect Azure Web PubSub via Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-web-pubsub |
+| Connect Azure Web PubSub using Service Connector | https://learn.microsoft.com/en-us/azure/service-connector/how-to-integrate-web-pubsub |
 
 ### Deployment
 | Topic | URL |
