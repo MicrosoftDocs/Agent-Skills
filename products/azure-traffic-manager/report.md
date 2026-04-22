@@ -42,10 +42,10 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 - **Unclassified**: 16
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 43
-- **Deleted Pages**: 1
+- **Unchanged**: 44
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-traffic-manager/azure-traffic-manager.csv`
 
 ## Classification Statistics
@@ -61,14 +61,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 16 | 36.4% |
 
 ## Changes
-
-### New Pages
-
-- [Support and troubleshooting](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-support-help)
-
-### Deleted Pages
-
-- ~~Troubleshoot degraded state on Azure Traffic Manager~~ (https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-troubleshooting-degraded)
 
 ## Classified Pages
 

@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 11
-- **Unchanged**: 13
+- **Updated Pages**: 0
+- **Unchanged**: 24
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-anomaly-detector/azure-anomaly-detector.csv`
 
@@ -55,31 +55,6 @@ confusable_not_for: Not for Azure AI Metrics Advisor (use azure-metrics-advisor)
 | *(Unclassified)* | 17 | 70.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Service limits](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/service-limits)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-01-23T23:20:00.000Z
-- [Identify anomalies in your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/identify-anomalies)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-04-09T17:17:00.000Z
-- [Deploy to IoT Edge](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-11-25T23:07:00.000Z
-- [Use container instances](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Create an Anomaly Detector Resource](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/create-resource)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-01-27T18:30:00.000Z
-- [Prepare and upload your data](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/prepare-data)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-04-09T17:17:00.000Z
-- [Streaming inference](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/how-to/streaming-inference)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Predictive maintenance architecture (multivariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/concepts/multivariate-architecture)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-01-27T18:30:00.000Z
-- [Azure Data Explorer integration](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/azure-data-explorer)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Visualize anomalies as a batch using Power BI (univariate)](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-10-09T11:03:00.000Z
-- [Region support details](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/regions)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-01-27T18:30:00.000Z
 
 ## Classified Pages
 

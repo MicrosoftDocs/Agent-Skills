@@ -40,10 +40,10 @@ use_when: Use when configuring Community Training on Azure, Teams app embedding,
 - **Unclassified**: 1
 
 ### Incremental Update
-- **New Pages**: 1
+- **New Pages**: 0
 - **Updated Pages**: 0
-- **Unchanged**: 0
-- **Deleted Pages**: 77
+- **Unchanged**: 1
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-industry/azure-industry.csv`
 
 ## Classification Statistics
@@ -51,34 +51,6 @@ use_when: Use when configuring Community Training on Azure, Teams app embedding,
 *No classified pages*
 
 ## Changes
-
-### New Pages
-
-- [CT Retirement Notice](https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/get-started/ga-retirement)
-
-### Deleted Pages
-
-- ~~Analytics - Overview~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/analytics-overview)
-- ~~Category View~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/in-built-reports/category-view-report)
-- ~~Course View~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/in-built-reports/course-view-report)
-- ~~Group View~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/in-built-reports/group-view-report)
-- ~~Learner Report Card View~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/in-built-reports/learner-report-card-view)
-- ~~Overall Summary View~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/analytics/in-built-reports/overall-summary)
-- ~~Content Management - Overview~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/content-management-overview)
-- ~~Add assessments to a course~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/add-assessments-to-a-course)
-- ~~Add feedback form for a course~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/add-feedback-form-for-a-course)
-- ~~Add subtitles or captions to video content~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/add-subtitles-or-captions-to-video-content)
-- ~~Content Marketplace~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/content-marketplace)
-- ~~Create a category~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/create-a-category)
-- ~~Create a new course~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/create-a-new-course)
-- ~~Publish a course on the training portal~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/publishing-course)
-- ~~Upload content to a course~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-course-category/upload-content-to-a-course)
-- ~~Add course to a Learning path~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-learning-path/add-course-to-a-learning-path)
-- ~~Create a Learning path~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-learning-path/create-a-learning-path)
-- ~~Publish a Learning Path on the Portal~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/create-content/create-learning-path/publish-a-learning-path-on-the-portal)
-- ~~Add an administrator for a course~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/manage-content/manage-course-category/add-an-administrator-for-a-course)
-- ~~Change Category details~~ (https://learn.microsoft.com/en-us/azure/industry/training-services/microsoft-community-training/ga-version/content-management/manage-content/manage-course-category/change-category-details)
-- *...and 57 more*
 
 ## Classified Pages
 

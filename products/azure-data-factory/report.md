@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 - **Unclassified**: 80
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 283
-- **Unchanged**: 221
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 505
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-factory/azure-data-factory.csv`
 
@@ -75,54 +75,6 @@ confusable_not_for: Not for Azure Synapse Analytics (use azure-synapse-analytics
 | *(Unclassified)* | 80 | 15.8% |
 
 ## Changes
-
-### New Pages
-
-- [Shopify](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-shopify)
-
-### Updated Pages
-
-- [Manage data flow canvas](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-manage-graph)
-  - Updated: 2023-10-20T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Expression language](https://learn.microsoft.com/en-us/azure/data-factory/data-transformation-functions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-25T22:12:00.000Z
-- [Aggregate functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-aggregate-functions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-02-27T23:17:00.000Z
-- [Cached lookup functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-cached-lookup-functions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-02-26T06:24:00.000Z
-- [Map functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-map-functions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-02-26T23:12:00.000Z
-- [Metafunctions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-metafunctions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-25T22:12:00.000Z
-- [Window functions](https://learn.microsoft.com/en-us/azure/data-factory/data-flow-window-functions)
-  - Updated: 2025-11-18T18:43:00.000Z → 2026-03-25T22:12:00.000Z
-- [User defined functions](https://learn.microsoft.com/en-us/azure/data-factory/concepts-data-flow-udf)
-  - Updated: 2024-01-05T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Data wrangling overview](https://learn.microsoft.com/en-us/azure/data-factory/wrangling-overview)
-  - Updated: 2024-05-15T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Supported functions](https://learn.microsoft.com/en-us/azure/data-factory/wrangling-functions)
-  - Updated: 2024-05-15T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Change data capture](https://learn.microsoft.com/en-us/azure/data-factory/concepts-change-data-capture)
-  - Updated: 2025-02-13T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Change data capture resource](https://learn.microsoft.com/en-us/azure/data-factory/concepts-change-data-capture-resource)
-  - Updated: 2024-07-29T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Create data factory - ARM](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-resource-manager-template)
-  - Updated: 2025-03-31T08:00:00.000Z → 2025-10-08T05:12:00.000Z
-- [Create data factory - .NET](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-dot-net)
-  - Updated: 2025-03-31T08:00:00.000Z → 2025-09-07T11:48:00.000Z
-- [Create data factory - REST](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-rest-api)
-  - Updated: 2025-02-13T08:00:00.000Z → 2025-10-08T05:12:00.000Z
-- [Create data factory - Bicep](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-bicep)
-  - Updated: 2025-06-06T08:00:00.000Z → 2025-10-08T05:12:00.000Z
-- [Visually author data factories](https://learn.microsoft.com/en-us/azure/data-factory/author-visually)
-  - Updated: 2024-09-26T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Iterative development and debugging](https://learn.microsoft.com/en-us/azure/data-factory/iterative-development-debugging)
-  - Updated: 2024-05-15T08:00:00.000Z → 2026-03-25T22:12:00.000Z
-- [Deactivate and reactivate](https://learn.microsoft.com/en-us/azure/data-factory/deactivate-activity)
-  - Updated: 2024-01-05T08:00:00.000Z → 2026-02-26T06:24:00.000Z
-- [Management hub](https://learn.microsoft.com/en-us/azure/data-factory/author-management-hub)
-  - Updated: 2023-10-20T08:00:00.000Z → 2026-02-24T23:11:00.000Z
-- *...and 263 more*
 
 ## Classified Pages
 

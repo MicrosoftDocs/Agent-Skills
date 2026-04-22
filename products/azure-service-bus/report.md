@@ -53,9 +53,9 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 - **Unclassified**: 34
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 120
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 123
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-bus/azure-service-bus.csv`
 
@@ -75,17 +75,6 @@ confusable_not_for: Not for Azure Event Hubs (use azure-event-hubs), Azure Event
 | *(Unclassified)* | 34 | 27.6% |
 
 ## Changes
-
-### New Pages
-
-- [Azure PowerShell](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-tutorial-topics-subscriptions-powershell)
-
-### Updated Pages
-
-- [Network security perimeter](https://learn.microsoft.com/en-us/azure/service-bus-messaging/network-security-perimeter)
-  - Updated: 2026-04-02T22:11:00.000Z → 2026-04-10T22:10:00.000Z
-- [Automatically update messaging units](https://learn.microsoft.com/en-us/azure/service-bus-messaging/automate-update-messaging-units)
-  - Updated: 2025-02-04T23:08:00.000Z → 2026-04-08T06:10:00.000Z
 
 ## Classified Pages
 

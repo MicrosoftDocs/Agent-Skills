@@ -28,10 +28,14 @@ skill_description: Expert knowledge for Azure Maps development including trouble
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, and integrations & coding patterns. Use when using Azure
   Maps web SDK, search/geocoding, routing/traffic, weather APIs, or migrating from
-  Bing/Google Maps, and other Azure Maps related development tasks.
+  Bing/Google Maps, and other Azure Maps related development tasks. Not for Azure
+  AI Search (use azure-cognitive-search), Azure Digital Twins (use azure-digital-twins),
+  Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
 use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, weather
   APIs, or migrating from Bing/Google Maps, and other Azure Maps related development
   tasks.
+confusable_not_for: Not for Azure AI Search (use azure-cognitive-search), Azure Digital
+  Twins (use azure-digital-twins), Azure IoT (use azure-iot), Azure IoT Hub (use azure-iot-hub).
 ---
 # Azure Maps Crawl Report
 
@@ -45,8 +49,8 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 146
+- **Updated Pages**: 0
+- **Unchanged**: 147
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-maps/azure-maps.csv`
 
@@ -65,11 +69,6 @@ use_when: Use when using Azure Maps web SDK, search/geocoding, routing/traffic, 
 | *(Unclassified)* | 32 | 21.8% |
 
 ## Changes
-
-### Updated Pages
-
-- [Map control](https://learn.microsoft.com/en-us/azure/azure-maps/release-notes-map-control)
-  - Updated: 2025-12-17T08:00:00.000Z → 2026-04-10T08:00:00.000Z
 
 ## Classified Pages
 

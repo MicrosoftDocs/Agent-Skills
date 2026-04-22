@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   configuration: 'Configuring Azure Files and Azure File Sync: networking/VPN and
     private endpoints, monitoring/alerts, cloud tiering, DFS integration, redundancy,
@@ -10,9 +10,9 @@ category_descriptions:
   best-practices: Disaster recovery, lifecycle, and performance best practices for
     Azure Files and Azure File Sync, including failover planning, server/drive replacement,
     large directory handling, and VDI/FSLogix usage.
-  security: 'Securing Azure Files: identity-based SMB/NFS auth (AD DS, Entra ID, Kerberos),
-    ACLs/permissions, TLS and SMB hardening, and network/firewall/proxy/perimeter
-    configuration.'
+  security: Securing Azure Files with identity-based auth (AD DS, Entra ID, Kerberos),
+    NTFS/share permissions, TLS/SMB/NFS hardening, and network/firewall/proxy configuration
+    for secure access.
   deployment: Guides for migrating and syncing data to Azure Files/Azure File Sync
     from NAS, Linux, GlusterFS, SMB/NFS shares, and moving File Sync resources safely
     across scopes.
@@ -24,14 +24,13 @@ category_descriptions:
     and Python integration guides.
 skill_description: Expert knowledge for Azure Files development including best practices,
   decision making, limits & quotas, security, configuration, integrations & coding
-  patterns, and deployment. Use when configuring Azure File shares/File Sync, SMB/NFS
-  access, cloud tiering, DR/failover, or RAG over file data, and other Azure Files
-  related development tasks. Not for Azure Blob Storage (use azure-blob-storage),
-  Azure NetApp Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
+  patterns, and deployment. Use when configuring Azure Files/File Sync, SMB/NFS access,
+  DFS/VDI setups, RAG over files, or data migrations, and other Azure Files related
+  development tasks. Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
+  Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
   Azure Virtual Machines (use azure-virtual-machines).
-use_when: Use when configuring Azure File shares/File Sync, SMB/NFS access, cloud
-  tiering, DR/failover, or RAG over file data, and other Azure Files related development
-  tasks.
+use_when: Use when configuring Azure Files/File Sync, SMB/NFS access, DFS/VDI setups,
+  RAG over files, or data migrations, and other Azure Files related development tasks.
 confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure NetApp
   Files (use azure-netapp-files), Azure Managed Lustre (use azure-managed-lustre),
   Azure Virtual Machines (use azure-virtual-machines).
@@ -47,9 +46,9 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 - **Unclassified**: 19
 
 ### Incremental Update
-- **New Pages**: 17
-- **Updated Pages**: 12
-- **Unchanged**: 97
+- **New Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 125
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-files/azure-files.csv`
 
@@ -68,52 +67,10 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 
 ## Changes
 
-### New Pages
-
-- [Use Haystack with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-weaviate/tutorial-haystack-weaviate)
-- [Use Haystack with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-qdrant/tutorial-haystack-qdrant)
-- [What is retrieval-augmented generation?](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/overview)
-- [LangChain](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/orchestrations/langchain)
-- [LlamaIndex](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/orchestrations/llamaindex)
-- [Haystack](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/orchestrations/haystack)
-- [Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/pinecone)
-- [Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/weaviate)
-- [Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/vector-databases/qdrant)
-- [Get started](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/setup)
-- [Use LangChain with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-pinecone/tutorial-langchain-pinecone)
-- [Use LangChain with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-weaviate/tutorial-langchain-weaviate)
-- [Use LangChain with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/langchain-qdrant/tutorial-langchain-qdrant)
-- [Use LlamaIndex with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-pinecone/tutorial-llamaindex-pinecone)
-- [Use LlamaIndex with Weaviate](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-weaviate/tutorial-llamaindex-weaviate)
-- [Use LlamaIndex with Qdrant](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/llamaindex-qdrant/tutorial-llamaindex-qdrant)
-- [Use Haystack with Pinecone](https://learn.microsoft.com/en-us/azure/storage/files/artificial-intelligence/retrieval-augmented-generation/open-source-frameworks/tutorials/haystack-pinecone/tutorial-haystack-pinecone)
-
 ### Updated Pages
 
-- [What is Azure File Sync?](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction)
-  - Updated: 2025-09-08T22:37:00.000Z → 2026-04-09T22:25:00.000Z
-- [Cloud tiering overview](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-cloud-tiering-overview)
-  - Updated: 2025-07-16T08:00:00.000Z → 2026-04-09T22:25:00.000Z
-- [SMB file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol)
-  - Updated: 2026-03-02T23:28:00.000Z → 2026-04-09T06:11:00.000Z
-- [NFS file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-nfs-protocol)
-  - Updated: 2026-03-11T05:11:00.000Z → 2026-04-08T17:12:00.000Z
-- [Create a classic file share](https://learn.microsoft.com/en-us/azure/storage/files/create-classic-file-share)
-  - Updated: 2026-01-30T08:00:00.000Z → 2026-04-09T22:25:00.000Z
-- [Overview of identity-based authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview)
-  - Updated: 2026-02-21T06:13:00.000Z → 2026-04-07T06:20:00.000Z
-- [Assign share-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-04-07T11:16:00.000Z
 - [Configure directory/file-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions)
-  - Updated: 2026-03-26T22:23:00.000Z → 2026-04-07T08:00:00.000Z
-- [Mount SMB file share on Windows](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows)
-  - Updated: 2026-04-03T22:18:00.000Z → 2026-04-09T06:11:00.000Z
-- [Migrate to SMB Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview)
-  - Updated: 2025-08-28T08:00:00.000Z → 2026-04-09T17:25:00.000Z
-- [Networking considerations for direct access](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview)
-  - Updated: 2025-07-02T08:00:00.000Z → 2026-04-08T17:12:00.000Z
-- [Encryption in transit for NFS shares](https://learn.microsoft.com/en-us/azure/storage/files/encryption-in-transit-for-nfs-shares)
-  - Updated: 2025-08-20T22:15:00.000Z → 2026-04-08T17:12:00.000Z
+  - Updated: 2026-04-07T08:00:00.000Z → 2026-04-16T22:31:00.000Z
 
 ## Classified Pages
 
@@ -133,7 +90,6 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Configure Azure Files network endpoints](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints) | configuration | 0.80 | Explains configuring SMB/NFS endpoints, including private link and access restrictions on storage accounts; includes product-specific endpoint settings and behaviors. |
 | [Configure DNS forwarding for Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-dns) | configuration | 0.80 | Contains DNS zone names, record patterns, and forwarding rules required for Azure Files private endpoints. These are precise configuration details (FQDN formats, record types) that qualify as expert configuration knowledge. |
 | [Configure File Sync proxy and firewall settings](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-firewall-and-proxy) | security | 0.80 | Details ports, networks, and special Azure connections; product-specific security/network configuration parameters and allowed endpoints. |
-| [Configure directory/file-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions) | security | 0.80 | Describes configuring Windows/NTFS ACLs for Azure file shares with Active Directory authentication. It will contain specific permission entries, inheritance behaviors, and interactions with Azure RBAC share-level permissions, which are product-specific security configuration details. |
 | [Configure root squash (NFS shares)](https://learn.microsoft.com/en-us/azure/storage/files/nfs-root-squash) | security | 0.80 | Provides concrete configuration of root squash settings for NFS Azure file shares, including allowed options and their security implications, which are product-specific security configurations. |
 | [Enable authentication for hybrid identities on legacy clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust) | security | 0.80 | Describes establishing Microsoft Entra Kerberos authentication and cloud trust between on-prem AD DS and Entra ID for Azure Files, with product-specific identity configuration steps and parameters that qualify as expert security configuration knowledge. |
 | [Enable authentication for hybrid or cloud-only identities](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable) | security | 0.80 | Explains configuring Microsoft Entra Kerberos authentication for hybrid and cloud-only identities with Azure Files, including product-specific identity, RBAC, and security configuration details. |
@@ -143,6 +99,7 @@ confusable_not_for: Not for Azure Blob Storage (use azure-blob-storage), Azure N
 | [Assign share-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions) | security | 0.78 | Page is focused on configuring identity-based access to Azure Files via share-level permissions. It likely includes specific Azure RBAC role names, how to assign them to Microsoft Entra users/groups, and product-specific permission scopes for SMB shares. This is concrete security configuration rather than conceptual guidance. |
 | [Azure Files and Azure NetApp Files comparison](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-netapp-comparison) | decision-making | 0.78 | The page is explicitly a comparison to help determine which storage service to use for specific workloads. Such comparison articles typically include feature and capability matrices (performance, scalability, protocol support, scenarios) that guide service selection. This is product-specific decision guidance rather than a generic overview, fitting the decision-making sub-skill. |
 | [Configure Linux clients](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-linux-kerberos-enable) | security | 0.78 | Details Kerberos-based identity configuration for Linux SMB clients with Azure Files, including specific Entra/AD DS sync requirements and security-related configuration steps unique to this scenario. |
+| [Configure directory/file-level permissions](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-configure-file-level-permissions) | security | 0.78 | The page gives product-specific, stepwise guidance for configuring Windows ACLs/NTFS permissions on Azure Files with Active Directory authentication, including required RBAC share-level permissions and how they interact with file-level ACLs. This is concrete security configuration knowledge (roles, permission layers, and configuration behavior) that goes beyond generic security concepts. |
 | [Enable AD DS authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-ad-ds-enable) | security | 0.78 | How-to guide for configuring AD DS authentication on Azure Files, including product-specific identity/security settings, required parameters, and step sequences that go beyond generic knowledge of SMB or Active Directory. |
 | [Enable Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-domain-services-enable) | security | 0.78 | Covers enabling Microsoft Entra Domain Services for SMB Azure file shares with concrete configuration steps, roles, and identity/security settings specific to Azure Files. |
 | [Choose how to authorize access to file data in the Azure portal](https://learn.microsoft.com/en-us/azure/storage/files/authorize-data-operations-portal) | security | 0.76 | Explains how portal requests to Azure Files are authorized, with specific details on using Entra accounts vs access keys and required permissions, which are product-specific security behaviors. |

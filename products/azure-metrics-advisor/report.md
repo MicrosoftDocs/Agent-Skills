@@ -35,8 +35,8 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 14
-- **Unchanged**: 5
+- **Updated Pages**: 0
+- **Unchanged**: 19
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-metrics-advisor/azure-metrics-advisor.csv`
 
@@ -51,37 +51,6 @@ confusable_not_for: Not for Azure AI Anomaly Detector (use azure-anomaly-detecto
 | *(Unclassified)* | 13 | 68.4% |
 
 ## Changes
-
-### Updated Pages
-
-- [What is Metrics Advisor?](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/overview)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [What's new?](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/whats-new)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-02-24T23:08:00.000Z
-- [Web portal](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/quickstarts/web-portal)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-10-09T05:03:00.000Z
-- [Onboard your data](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/onboard-your-data)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Create a credential entity](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/credential-entity)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-07-13T11:02:00.000Z
-- [Manage data feeds](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/manage-data-feeds)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Configure alerts and get notifications using a hook](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/alerts)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-04-09T17:17:00.000Z
-- [Diagnose an incident](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/diagnose-an-incident)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Adjust anomaly detection using feedback](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/anomaly-feedback)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Build a metrics graph](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/how-tos/metrics-graph)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Use customer-managed keys](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/encryption)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Cost management](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/cost-management)
-  - Updated: 2025-06-12T08:00:00.000Z → 2026-01-23T23:20:00.000Z
-- [Enable notifications through different channel](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/tutorials/enable-anomaly-notification)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
-- [Write a valid query](https://learn.microsoft.com/en-us/azure/ai-services/metrics-advisor/tutorials/write-a-valid-query)
-  - Updated: 2025-06-12T08:00:00.000Z → 2025-06-13T05:29:00.000Z
 
 ## Classified Pages
 

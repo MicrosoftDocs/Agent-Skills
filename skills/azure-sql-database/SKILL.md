@@ -1,9 +1,9 @@
 ---
 name: azure-sql-database
-description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore/serverless/Hyperscale, configuring geo‑replication, elastic pools, Data Sync, or HA/DR, and other Azure SQL Database related development tasks. Not for Azure Database for MariaDB (use azure-database-mariadb), Azure Database for MySQL (use azure-database-mysql), Azure Database for PostgreSQL (use azure-database-postgresql), Azure SQL Managed Instance (use azure-sql-managed-instance).
+description: Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing vCore/DTU/Hyperscale/serverless, configuring geo‑replication, elastic pools, Data Sync, or HA/DR, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Database for PostgreSQL (use azure-database-postgresql).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure SQL Database Skill
@@ -26,10 +26,10 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L59 | Diagnosing and fixing Azure SQL issues: performance (CPU, memory, deadlocks, blocking), connectivity, capacity/scaling, geo‑replication, data sync, imports/exports, and transaction log errors. |
 | Best Practices | L60-L76 | Best practices for Azure SQL operations: monitoring, security, HA/DR, failover, maintenance, space management, read replicas, elastic pools, Data Sync, and post-migration T-SQL adaptation. |
-| Decision Making | L77-L100 | Choosing Azure SQL deployment, compute, and licensing options (DTU vs vCore, serverless, Hyperscale), cost/DR planning, migration paths, and automation/standby configuration decisions. |
+| Decision Making | L77-L100 | Guidance for choosing Azure SQL deployment, pricing, and HA/DR options: vCore vs DTU, Hyperscale, serverless, reservations, licensing, migration paths, and cost/DR/automation planning. |
 | Architecture & Design Patterns | L101-L117 | Architectural patterns for Azure SQL: geo-replication, HA/DR, backups, connectivity, sharding/elastic scale-out, multi-tenant SaaS models, and rolling upgrade/failover designs. |
 | Limits & Quotas | L118-L131 | Limits, quotas, and resource caps for Azure SQL (free tiers, DTU/vCore, elastic pools, Hyperscale), plus how to request quota increases and watcher/operational constraints. |
-| Security | L132-L199 | Configuring Azure SQL security: authentication (Entra, managed identity, MFA), network/firewall, auditing, encryption (TDE, Always Encrypted), threat protection, compliance, and best practices. |
+| Security | L132-L199 | Securing Azure SQL: authentication (Entra, MFA, managed identity), network/firewall, encryption (TDE, Always Encrypted), auditing/Defender, data masking/classification, and compliance best practices. |
 | Configuration | L200-L265 | Configuring Azure SQL databases: monitoring, backups, geo-replication/failover, security/immutability, scaling and elastic pools, Data Sync, maintenance windows, and CLI/PowerShell setup. |
 | Integrations & Coding Patterns | L266-L294 | Connecting apps and tools to Azure SQL (EF Core, .NET, Node.js, Python), sharding/elastic patterns, and automating management, replication, sync, and streaming via PowerShell/Spark/Stream Analytics |
 | Deployment | L295-L310 | Deploying and scaling Azure SQL databases/MI: automation (GitHub, ARM, Bicep, Terraform), Hyperscale/elastic pools, regional moves, feature availability, and dev environment setup. |
@@ -148,7 +148,7 @@ This skill requires **network access** to fetch documentation content:
 | Configure Microsoft Entra authentication for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql |
 | Understand Directory Readers role requirements for Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql |
 | Use Microsoft Entra authentication with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview?view=azuresql |
-| Configure Entra service principals for Azure SQL user creation | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql |
+| Configure Entra service principals for Azure SQL access | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql |
 | Use Entra service principals with Azure SQL | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal?view=azuresql |
 | Create Azure SQL server with Entra-only authentication | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-only-authentication-create-server?view=azuresql |
 | Create Azure SQL logical server with user-assigned managed identity | https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity-create-server?view=azuresql |

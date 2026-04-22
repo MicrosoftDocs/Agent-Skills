@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 - **Unclassified**: 60
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 14
-- **Unchanged**: 82
-- **Deleted Pages**: 2
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 100
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-sre-agent/azure-sre-agent.csv`
 
 ## Classification Statistics
@@ -64,49 +64,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 60 | 60.0% |
 
 ## Changes
-
-### New Pages
-
-- [Manage global tools](https://learn.microsoft.com/en-us/azure/sre-agent/manage-global-tools)
-- [Azure Monitor alerts](https://learn.microsoft.com/en-us/azure/sre-agent/azure-monitor-alerts)
-- [Tools and skills](https://learn.microsoft.com/en-us/azure/sre-agent/global-tools-page)
-- [Azure Data Explorer connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-cluster-grouping)
-
-### Updated Pages
-
-- [Set up Kusto connector](https://learn.microsoft.com/en-us/azure/sre-agent/kusto-connector)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T22:12:00.000Z
-- [Connect ADO repo with managed identity](https://learn.microsoft.com/en-us/azure/sre-agent/connect-ado-repo-managed-identity)
-  - Updated: 2026-04-03T21:52:00.000Z → 2026-04-09T06:11:00.000Z
-- [Data privacy and residency](https://learn.microsoft.com/en-us/azure/sre-agent/data-privacy)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-06T17:23:00.000Z
-- [Pricing and billing](https://learn.microsoft.com/en-us/azure/sre-agent/pricing-billing)
-  - Updated: 2026-04-02T18:15:00.000Z → 2026-04-06T17:23:00.000Z
-- [Anthropic subprocessor](https://learn.microsoft.com/en-us/azure/sre-agent/anthropic-sub-processor)
-  - Updated: 2026-03-24T22:22:00.000Z → 2026-04-07T22:12:00.000Z
-- [Create and set up](https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up)
-  - Updated: 2026-04-02T18:15:00.000Z → 2026-04-07T17:12:00.000Z
-- [User roles and permissions](https://learn.microsoft.com/en-us/azure/sre-agent/user-roles)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T06:20:00.000Z
-- [Connectors](https://learn.microsoft.com/en-us/azure/sre-agent/connectors)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T17:12:00.000Z
-- [Deep context](https://learn.microsoft.com/en-us/azure/sre-agent/workspace-tools)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T06:20:00.000Z
-- [Connect knowledge](https://learn.microsoft.com/en-us/azure/sre-agent/connect-knowledge)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T17:12:00.000Z
-- [Diagnose with Azure observability](https://learn.microsoft.com/en-us/azure/sre-agent/diagnose-azure-observability)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-01T08:00:00.000Z
-- [Favorites and Mine filter](https://learn.microsoft.com/en-us/azure/sre-agent/favorites-mine-filter)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T17:12:00.000Z
-- [Track incident value](https://learn.microsoft.com/en-us/azure/sre-agent/track-incident-value)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T17:12:00.000Z
-- [Create scheduled tasks](https://learn.microsoft.com/en-us/azure/sre-agent/create-scheduled-task)
-  - Updated: 2026-03-27T15:55:00.000Z → 2026-04-07T17:12:00.000Z
-
-### Deleted Pages
-
-- ~~Remove resources from scope~~ (https://learn.microsoft.com/en-us/azure/sre-agent/configuration-deletion)
-- ~~Managed identity for ADO repos~~ (https://learn.microsoft.com/en-us/azure/sre-agent/managed-identity-ado-repos)
 
 ## Classified Pages
 

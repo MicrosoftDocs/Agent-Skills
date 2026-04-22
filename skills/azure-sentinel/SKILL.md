@@ -1,9 +1,9 @@
 ---
 name: azure-sentinel
-description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel connectors, KQL analytics rules, SOAR playbooks, UEBA/SAP data, or multi-workspace setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Security (use azure-security), Azure Monitor (use azure-monitor), Azure Network Watcher (use azure-network-watcher).
+description: Expert knowledge for Azure Sentinel development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Sentinel data connectors, analytics rules, SOAR playbooks, UEBA/ASIM content, or multi-workspace setups, and other Azure Sentinel related development tasks. Not for Azure Defender For Cloud (use azure-defender-for-cloud), Azure Defender For Iot (use azure-defender-for-iot), Azure Monitor (use azure-monitor), Azure Security (use azure-security).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Sentinel Skill
@@ -26,13 +26,13 @@ This skill requires **network access** to fetch documentation content:
 |----------|-------|-------------|
 | Troubleshooting | L37-L48 | Diagnosing and fixing Microsoft Sentinel ingestion, connector, KQL/data lake, analytics rule (auto-disable), MCP tools, and SAP/AWS/Blob/CEF/Syslog integration issues. |
 | Best Practices | L49-L75 | Best practices for SOC operations in Microsoft Sentinel: rule tuning, automation/playbooks, incident tasks/metrics, watchlists, data collection, solution lifecycle, and monitoring/health. |
-| Decision Making | L76-L112 | Guides for planning and decision-making: SIEM/SOAR migration to Sentinel, pricing and cost optimization, data tiers and retention, connector and platform choices, and deployment/geo strategy. |
+| Decision Making | L76-L112 | Planning Sentinel deployments, pricing, and data tiers; choosing connectors and content; and migrating detections, automation, and historical data from MMA, ArcSight, QRadar, and Splunk. |
 | Architecture & Design Patterns | L113-L126 | Architecting Sentinel deployments: multi-workspace/tenant patterns, MSSP setups, SOAR automation, BCDR/resiliency, cross-workspace data/incident ops, SAP, ML models, and Jupyter-based hunting. |
 | Limits & Quotas | L127-L138 | Limits, quotas, pricing, and retention tiers for Sentinel data, search jobs, watchlists, MCP servers, ASIM, and workspace removal impacts |
 | Security | L139-L154 | Security configuration for Microsoft Sentinel: RBAC and roles, row-level/resource-context access, playbook auth/restrictions, encryption keys, audit logs, SAP roles/params, and network/attack protections. |
-| Configuration | L155-L283 | Configuring Microsoft Sentinel and data lake: connectors, ingestion, retention, analytics/automation rules, ASIM schemas, UEBA, SAP, MCP/AI integrations, monitoring, and workspace management. |
-| Integrations & Coding Patterns | L284-L335 | Integrating Microsoft Sentinel with external data, threat intel, MCP/LLM tools, and collaboration apps, plus APIs, codeless connectors, KQL/graph queries, automation, and solution packaging. |
-| Deployment | L336-L359 | Deploying and managing Microsoft Sentinel solutions and content (CI/CD, ARM, content hub, marketplace) and specialized connectors/agents for SAP, Power Platform, Dynamics, Azure Stack Hub, and hunting notebooks. |
+| Configuration | L155-L283 | Configuring Microsoft Sentinel data connectors, retention, analytics/automation rules, ASIM schemas, UEBA, SAP/Power Platform content, data lake, MCP tools, and health/auditing settings. |
+| Integrations & Coding Patterns | L284-L336 | APIs, connectors, and code patterns for ingesting data, threat intel, and incidents into Sentinel, querying the data lake/graphs, and integrating with playbooks, MCP, Teams, Power BI, and Logic Apps |
+| Deployment | L337-L360 | Deploying and managing Microsoft Sentinel solutions and content (CI/CD, ARM, content hub, marketplace) and specialized connectors/agents for SAP, Power Platform, Dynamics, Azure Stack Hub, and hunting notebooks. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -93,7 +93,7 @@ This skill requires **network access** to fetch documentation content:
 | Plan Sentinel deployment for geography and data residency | https://learn.microsoft.com/en-us/azure/sentinel/geographical-availability-data-residency |
 | Choose data tiers and retention for Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/manage-data-overview |
 | Use Microsoft Sentinel within the Defender portal | https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal |
-| Plan migration from legacy SIEMs to Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/migration |
+| Plan and phase a migration to Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/migration |
 | Migrate ArcSight SOAR automation to Sentinel rules and playbooks | https://learn.microsoft.com/en-us/azure/sentinel/migration-arcsight-automation |
 | Map and migrate ArcSight detection rules to Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/migration-arcsight-detection-rules |
 | Export ArcSight historical data for Sentinel migration | https://learn.microsoft.com/en-us/azure/sentinel/migration-arcsight-historical-data |
@@ -202,8 +202,8 @@ This skill requires **network access** to fetch documentation content:
 | Configure connectors and retention for Sentinel data lake tiers | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-connectors |
 | Onboard Sentinel data lake from Defender portal | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboard-defender |
 | Onboard tenants to Microsoft Sentinel data lake and graph | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding |
-| Use Sentinel MCP data exploration tools | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool |
-| Configure and use the Microsoft Sentinel MCP server | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started |
+| Configure data exploration tools in Sentinel MCP server | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool |
+| Configure and use Microsoft Sentinel MCP server tools | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started |
 | Use Sentinel MCP tools with Microsoft Foundry AI agents | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-use-tool-azure-ai-foundry |
 | Configure Sentinel MCP tools in Microsoft Copilot Studio | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-use-tool-copilot-studio |
 | Add Sentinel MCP tools to Microsoft Security Copilot | https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-use-tool-security-copilot |
@@ -287,6 +287,7 @@ This skill requires **network access** to fetch documentation content:
 | Create Sentinel Data Collection Rules via API examples | https://learn.microsoft.com/en-us/azure/sentinel/api-dcr-reference |
 | Use Sentinel Logic Apps triggers and actions in playbooks | https://learn.microsoft.com/en-us/azure/sentinel/automation/playbook-triggers-actions |
 | Integrate Sentinel incidents with Microsoft Teams collaboration | https://learn.microsoft.com/en-us/azure/sentinel/collaborate-in-microsoft-teams |
+| Ingest AWS EKS audit logs into Microsoft Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/connect-aws-eks |
 | Build Azure Functions-based connectors to ingest data into Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/connect-azure-functions-template |
 | Use Logstash with DCR-based API to stream logs to Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/connect-logstash-data-connection-rules |
 | Enable Defender Threat Intelligence data connector in Sentinel | https://learn.microsoft.com/en-us/azure/sentinel/connect-mdti-data-connector |

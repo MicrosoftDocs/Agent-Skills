@@ -46,8 +46,8 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 24
+- **Updated Pages**: 0
+- **Unchanged**: 25
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-data-science-vm/azure-data-science-vm.csv`
 
@@ -65,11 +65,6 @@ confusable_not_for: Not for Azure Virtual Machines (use azure-virtual-machines),
 | *(Unclassified)* | 7 | 28.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Data platforms](https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-tools-data-platforms?view=azureml-api-2)
-  - Updated: 2024-08-28T16:59:00.000Z → 2026-04-10T22:08:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-extended-zones
-description: Expert knowledge for Azure Extended Zones development including decision making, limits & quotas, security, and configuration. Use when setting Azure Policy for Extended Zones, encrypting VM disks with CMK, optimizing reservations, or managing quotas, and other Azure Extended Zones related development tasks. Not for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
+description: Expert knowledge for Azure Extended Zones development including decision making, limits & quotas, security, and configuration. Use when setting up Extended Zones access, Azure Policy, Firewall, CMK disk encryption, or quota/limit management, and other Azure Extended Zones related development tasks. Not for Azure Reliability (use azure-reliability), Azure Resiliency (use azure-resiliency), Azure Virtual Network (use azure-virtual-network), Azure Virtual WAN (use azure-virtual-wan).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Extended Zones Skill
@@ -27,7 +27,7 @@ This skill requires **network access** to fetch documentation content:
 | Decision Making | L32-L36 | Guidance on cost optimization for Azure Extended Zones, including when and how to buy reservations or savings plans, pricing tradeoffs, and purchase workflows. |
 | Limits & Quotas | L37-L41 | How to view current Azure Extended Zones quotas, request quota increases for resources, and understand limits that may block deployments or scaling |
 | Security | L42-L46 | How to encrypt Extended Zone VM disks using customer-managed keys, including setup steps, key vault integration, and security configuration details. |
-| Configuration | L47-L51 | Configuring Extended Zones via Azure Policy and subscription registration, including creating custom policy definitions and enabling subscriptions to use Extended Zones. |
+| Configuration | L47-L52 | Configuring Extended Zones access and governance: registering subscriptions, creating custom Azure Policy, and deploying Azure Firewall within Extended Zones. |
 
 ### Decision Making
 | Topic | URL |
@@ -48,4 +48,5 @@ This skill requires **network access** to fetch documentation content:
 | Topic | URL |
 |-------|-----|
 | Create custom Azure Policy definitions for Extended Zones | https://learn.microsoft.com/en-us/azure/extended-zones/create-azure-policy |
+| Configure Azure Firewall deployment in Extended Zones | https://learn.microsoft.com/en-us/azure/extended-zones/deploy-azure-firewall |
 | Register subscriptions to access Azure Extended Zones | https://learn.microsoft.com/en-us/azure/extended-zones/request-access |

@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   integrations: Patterns and samples for integrating Logic Apps with Azure/IBM/SAP
     systems, B2B/EDI, AI/OpenAI, storage, messaging, custom code/connectors, and automated
@@ -7,9 +7,9 @@ category_descriptions:
   limits-quotas: 'Limits, quotas, and performance behaviors in Logic Apps: message
     size/chunking, pagination, SQL timeouts/results, inline JavaScript limits, configuration
     caps, and metering/billing rules.'
-  configuration: Configuring Logic Apps runtime, workflows, B2B/integration accounts,
-    on-premises access, inline code, control flow, schemas/maps, and monitoring/diagnostic
-    logging.
+  configuration: 'Configuring Logic Apps workflows, runtime, and B2B: app/host settings,
+    control flow, schemas/maps, integration accounts, monitoring/logging, on-premises
+    access, and SQL/PowerShell features.'
   security: 'Securing Logic Apps: auth (managed identity, Entra, OAuth/OBO, Easy Auth),
     private endpoints/storage, certificates, cross-tenant/connector blocking, and
     Azure Policy/Defender governance.'
@@ -30,13 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Logic Apps development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  building Logic Apps with B2B/EDI, SAP/IBM, AI/OpenAI, hybrid/on-prem access, or
-  BizTalk/Power Automate migrations, and other Azure Logic Apps related development
-  tasks. Not for Azure Functions (use azure-functions), Azure API Management (use
-  azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event Grid
-  (use azure-event-grid).
-use_when: Use when building Logic Apps with B2B/EDI, SAP/IBM, AI/OpenAI, hybrid/on-prem
-  access, or BizTalk/Power Automate migrations, and other Azure Logic Apps related
+  building B2B/EDI flows, AI/OpenAI integrations, hybrid/on-premises access, BizTalk
+  migrations, or DR/HA designs, and other Azure Logic Apps related development tasks.
+  Not for Azure Functions (use azure-functions), Azure API Management (use azure-api-management),
+  Azure Service Bus (use azure-service-bus), Azure Event Grid (use azure-event-grid).
+use_when: Use when building B2B/EDI flows, AI/OpenAI integrations, hybrid/on-premises
+  access, BizTalk migrations, or DR/HA designs, and other Azure Logic Apps related
   development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Management
   (use azure-api-management), Azure Service Bus (use azure-service-bus), Azure Event
@@ -49,13 +48,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 - **Total Pages**: 229
 - **Fetched**: 229
 - **Fetch Failed**: 0
-- **Classified**: 186
-- **Unclassified**: 43
+- **Classified**: 187
+- **Unclassified**: 42
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 226
+- **Updated Pages**: 1
+- **Unchanged**: 228
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-logic-apps/azure-logic-apps.csv`
 
@@ -65,25 +64,21 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 |------|-------|------------|
 | architecture-patterns | 13 | 5.7% |
 | best-practices | 4 | 1.7% |
-| configuration | 36 | 15.7% |
+| configuration | 37 | 16.2% |
 | decision-making | 6 | 2.6% |
 | deployment | 19 | 8.3% |
 | integrations | 78 | 34.1% |
 | limits-quotas | 6 | 2.6% |
 | security | 13 | 5.7% |
 | troubleshooting | 11 | 4.8% |
-| *(Unclassified)* | 43 | 18.8% |
+| *(Unclassified)* | 42 | 18.3% |
 
 ## Changes
 
 ### Updated Pages
 
-- [Call workflows from Power Apps](https://learn.microsoft.com/en-us/azure/logic-apps/call-from-power-apps)
-  - Updated: 2025-04-01T22:03:00.000Z → 2026-04-09T06:11:00.000Z
-- [Certificates](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-certificates)
-  - Updated: 2024-08-29T05:56:00.000Z → 2026-04-10T22:10:00.000Z
-- [Create and run .NET code](https://learn.microsoft.com/en-us/azure/logic-apps/create-run-custom-code-functions)
-  - Updated: 2025-07-01T22:25:00.000Z → 2026-04-11T06:13:00.000Z
+- [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text)
+  - Updated: 2026-03-11T08:00:00.000Z → 2026-04-13T08:00:00.000Z
 
 ## Classified Pages
 
@@ -237,6 +232,7 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [Call Azure Functions](https://learn.microsoft.com/en-us/azure/logic-apps/call-azure-functions-from-workflows) | integrations | 0.68 | The page describes product-specific patterns for invoking Azure Functions from Logic Apps workflows, including trigger/action configuration details and function-calling patterns that go beyond generic SDK usage. It focuses on how to wire Logic Apps to Functions with concrete, service-specific integration steps rather than just conceptual guidance. |
 | [Call workflows from Power Apps](https://learn.microsoft.com/en-us/azure/logic-apps/call-from-power-apps) | integrations | 0.68 | Page describes exporting Azure Logic Apps (Consumption) as custom connectors for Power Apps, which typically includes connector-specific configuration details (host, base URL, authentication type, operation definitions, and parameter mappings) that are product- and scenario-specific. This falls under integrations & coding patterns rather than generic tutorial content. |
 | [Create and run .NET code](https://learn.microsoft.com/en-us/azure/logic-apps/create-run-custom-code-functions) | integrations | 0.68 | The page describes product-specific patterns for running inline .NET code inside Azure Logic Apps Standard workflows, including how to define and call custom functions, debug them, and deploy them from VS Code. This is an integration/coding pattern unique to Logic Apps Standard rather than a generic tutorial, and likely includes specific function configuration details and constraints that go beyond general LLM knowledge. |
+| [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text) | configuration | 0.68 | The page describes product-specific behavior and parameters of the 'Parse a document' and 'Chunk text' Data Operations actions in Azure Logic Apps, including how they transform content into tokenized strings for Azure AI Search and Azure OpenAI actions. It likely includes specific action settings/fields and their effects, which are configuration details unique to Logic Apps rather than generic concepts. While limits are mentioned conceptually (token limits for downstream actions), the core expert content is how to configure and use these actions within workflows. |
 | [ARM template](https://learn.microsoft.com/en-us/azure/logic-apps/quickstart-create-deploy-azure-resource-manager-template) | deployment | 0.65 | Shows how to deploy Logic Apps Consumption workflows using ARM templates; includes Logic Apps-specific resource definitions and deployment structure, which are product-specific deployment details beyond generic knowledge. |
 | [Add and run C# scripts](https://learn.microsoft.com/en-us/azure/logic-apps/add-run-csharp-scripts) | integrations | 0.65 | Describes using the Execute CSharp Script Code inline action, including how to embed and run C# within workflows. This is a product-specific coding/integration pattern with specific action names and behavior, fitting integrations & coding patterns. |
 | [Add control functions to rules](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/add-rules-control-functions) | best-practices | 0.65 | Focuses on optimizing rules execution using specific control functions (Assert, Clear, Halt, Retract, RetractByType, Reassert, Update) in the Logic Apps Rules Engine; this is product-specific guidance on how and when to use these functions, including gotchas around working memory and fact management. |
@@ -304,7 +300,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure API Man
 | [Manage logic apps - Visual Studio](https://learn.microsoft.com/en-us/azure/logic-apps/manage-logic-apps-with-visual-studio) | 0.30 | Deprecated Visual Studio tooling article; mostly guidance on using the tool, not deep product-specific configuration or error mapping. |
 | [Manage logic apps - Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/manage-logic-apps-visual-studio-code) | 0.30 | Covers managing Logic Apps in VS Code with extensions; primarily operational UI steps and generic management actions, not deep configuration references, limits, or error mappings. |
 | [Navigate the Standard workflow designer](https://learn.microsoft.com/en-us/azure/logic-apps/designer-overview) | 0.30 | Designer navigation guide; mostly UI usage without detailed configuration parameter tables or limits. |
-| [Parse or chunk content](https://learn.microsoft.com/en-us/azure/logic-apps/parse-document-chunk-text) | 0.30 | Primarily describes using built-in Data Operations actions (Parse a document, Chunk text) conceptually; summary does not indicate detailed parameter tables, limits, or configuration values that would qualify as expert knowledge. |
 | [Scheduled recurring workflows](https://learn.microsoft.com/en-us/azure/logic-apps/concepts-schedule-automated-recurring-tasks-workflows) | 0.30 | Conceptual explanation of recurring schedules; no explicit mention of numeric limits or config matrices in the summary. |
 | [Business rules engine integration](https://learn.microsoft.com/en-us/azure/logic-apps/rules-engine/rules-engine-overview) | 0.25 | Rules Engine overview for decision management; largely conceptual description of capabilities and use cases, without detailed configuration tables or numeric thresholds. |
 | [Create Consumption schedule-based workflow](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow) | 0.25 | Scenario tutorial for a scheduled workflow; mostly step-by-step designer usage without deep config or limits. |

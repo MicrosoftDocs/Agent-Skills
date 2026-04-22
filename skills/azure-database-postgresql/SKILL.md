@@ -1,9 +1,9 @@
 ---
 name: azure-database-postgresql
-description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector, Azure AI/OpenAI embeddings, VNet/private endpoints, PITR/backup-restore, or elastic sharding, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
+description: Expert knowledge for Azure Database for PostgreSQL development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using pgvector search, Azure AI/OpenAI embeddings, VNet/private endpoints, geo-replication, or CI/CD deploys, and other Azure Database for PostgreSQL related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Database for PostgreSQL Skill
@@ -25,14 +25,14 @@ This skill requires **network access** to fetch documentation content:
 | Category | Lines | Description |
 |----------|-------|-------------|
 | Troubleshooting | L37-L60 | Diagnosing and fixing Azure PostgreSQL issues: connectivity/TLS/auth, HA health, migration validation, autovacuum, performance (CPU/IOPS/memory/slow queries), scaling, CLI, and extension errors. |
-| Best Practices | L61-L78 | Performance, security, migration, and tooling best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and backups. |
-| Decision Making | L79-L93 | Guidance on choosing compute tiers, versions, and hosting, planning upgrades and geo-replication, and sizing, validating, and reserving capacity for Azure Database for PostgreSQL. |
-| Architecture & Design Patterns | L94-L104 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
-| Limits & Quotas | L105-L124 | Backup/restore behavior, storage and performance limits, quotas, replication, elastic cluster capacities, and known migration and tooling limitations for Azure Database for PostgreSQL. |
-| Security | L125-L156 | Securing Azure Database for PostgreSQL: network/VNet and firewall, TLS/SSL, identities and auth (Entra, SCRAM, managed identities), encryption, auditing, Defender, and security policies. |
-| Configuration | L157-L245 | Configuring Azure Database for PostgreSQL servers: parameters, extensions, logging, monitoring, HA, networking, maintenance, scaling, vector search, and migration-related settings. |
-| Integrations & Coding Patterns | L246-L275 | Integrating Azure PostgreSQL with AI/ML and apps: Azure AI/OpenAI embeddings, LangChain, Foundry/MCP, SDKs (C#, Java, Python, Go, PHP), VS Code, Storage, Data Factory, and migration tools. |
-| Deployment | L276-L287 | Deploying and upgrading Azure PostgreSQL (CI/CD, Bicep, AKS/Django, Web Apps), managing networking (VNet, private endpoints), maintenance behavior, and point-in-time restore. |
+| Best Practices | L61-L79 | Performance, migration, and security best practices for Azure PostgreSQL: tuning queries, extensions, pooling, bulk load, stats, partitioning, pgvector, Oracle migration, and maintenance. |
+| Decision Making | L80-L94 | Guidance on choosing compute tiers, versions, and hosting, planning upgrades and geo-replication, and sizing, validating, and reserving capacity for Azure Database for PostgreSQL. |
+| Architecture & Design Patterns | L95-L105 | Patterns for using Azure PostgreSQL (often with OpenAI) to build recommendation/semantic search apps, microservices, multitenancy, real-time dashboards, and sharded/elastic data architectures. |
+| Limits & Quotas | L106-L125 | Backup/restore behavior, storage and performance limits, quotas, client/replica caps, elastic cluster limits, and known migration/conversion constraints for Azure Database for PostgreSQL. |
+| Security | L126-L157 | Securing Azure Database for PostgreSQL: network/VNet and firewall, TLS/SSL, identities and auth (Entra, SCRAM, managed identities), encryption, auditing, Defender, and security policies. |
+| Configuration | L158-L246 | Configuring Azure Database for PostgreSQL servers: parameters, extensions, logging, monitoring, HA, networking, maintenance, scaling, vector search, and migration-related settings. |
+| Integrations & Coding Patterns | L247-L276 | Integrating Azure PostgreSQL with AI/ML and apps: Azure AI/OpenAI embeddings, LangChain, Foundry/MCP, SDKs (C#, Java, Python, Go, PHP), VS Code, Storage, Data Factory, and migration tools. |
+| Deployment | L277-L287 | Deploying and upgrading Azure PostgreSQL (CI/CD, Bicep, AKS/Django, Web Apps), managing networking (VNet, private endpoints), maintenance behavior, and point-in-time restore. |
 
 ### Troubleshooting
 | Topic | URL |
@@ -68,6 +68,7 @@ This skill requires **network access** to fetch documentation content:
 | Optimize pgvector performance on Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-optimize-performance-pgvector |
 | Use best practices for Oracle-to-Azure PostgreSQL migrations | https://learn.microsoft.com/en-us/azure/postgresql/migrate/best-practices-oracle-to-postgresql |
 | Apply best practices for migrating to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/migrate/migration-service/best-practices-migration-service-postgresql |
+| Apply best practices for Oracle-to-PostgreSQL app conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-application-conversions/app-conversions-best-practices |
 | Apply best practices for Oracle-to-PostgreSQL schema conversion | https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-best-practices |
 | Apply query store best practices in PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/monitor/concepts-query-store-best-practices |
 | Apply security best practices to Azure PostgreSQL | https://learn.microsoft.com/en-us/azure/postgresql/security/security-overview |
@@ -282,6 +283,5 @@ This skill requires **network access** to fetch documentation content:
 | Deploy Azure PostgreSQL flexible server using Bicep | https://learn.microsoft.com/en-us/azure/postgresql/developer/create-server-bicep |
 | Deploy Django on AKS with Azure PostgreSQL backend | https://learn.microsoft.com/en-us/azure/postgresql/developer/django-aks-database |
 | Deploy Azure Web App and PostgreSQL in same VNet | https://learn.microsoft.com/en-us/azure/postgresql/developer/webapp-server-vnet |
-| Migrate Azure PostgreSQL from VNet injection to private endpoints | https://learn.microsoft.com/en-us/azure/postgresql/network/how-to-migrate-vnet-private-endpoint-capable-server |
 | Understand PostgreSQL maintenance release rollout behavior | https://learn.microsoft.com/en-us/azure/postgresql/release-notes-maintenance/release-notes-maintenance-index |
 | Restore PostgreSQL flexible server to a point in time | https://learn.microsoft.com/en-us/azure/postgresql/samples/sample-point-in-time-restore |

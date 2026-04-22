@@ -37,10 +37,10 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 9
-- **Updated Pages**: 11
-- **Unchanged**: 0
-- **Deleted Pages**: 7
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 20
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/microsoft-foundry-local/microsoft-foundry-local.csv`
 
 ## Classification Statistics
@@ -54,53 +54,6 @@ confusable_not_for: Not for Microsoft Foundry (use microsoft-foundry), Microsoft
 | *(Unclassified)* | 7 | 35.0% |
 
 ## Changes
-
-### New Pages
-
-- [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
-- [Build a multi-turn chat assistant](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-chat-assistant)
-- [Build an AI assistant with tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-tool-calling-assistant)
-- [Build a voice-to-text note taker](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-voice-to-text-note-taker)
-- [Build a document summarizer](https://learn.microsoft.com/en-us/azure/foundry-local/tutorials/tutorial-build-document-summarizer)
-- [Use the Foundry Local CLI (preview)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-foundry-local-cli)
-- [CLI (preview) guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli)
-- [CLI REST (preview) API](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest)
-- [CLI (preview) best practice and troubleshooting](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice)
-
-### Updated Pages
-
-- [Get Started](https://learn.microsoft.com/en-us/azure/foundry-local/get-started)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-09T17:17:00.000Z
-- [Foundry Local Architecture](https://learn.microsoft.com/en-us/azure/foundry-local/concepts/foundry-local-architecture)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-09T17:17:00.000Z
-- [Use native chat completions API](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-native-chat-completions)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-- [Use chat completions via REST server](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-integrate-with-inference-sdks)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-09T17:17:00.000Z
-- [Transcribe audio (speech-to-text)](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-transcribe-audio)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-- [Integrate with LangChain](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-langchain-with-foundry-local)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-09T17:17:00.000Z
-- [Compile Hugging Face models to run on Foundry Local](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-compile-hugging-face-models)
-  - Updated: 2026-02-27T23:08:00.000Z → 2026-04-09T17:17:00.000Z
-- [Use tool calling](https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-use-tool-calling-with-foundry-local)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-- [SDK guide](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-current)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-- [Legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-legacy)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-- [Guidance for migrating from the legacy SDK](https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-sdk-migration)
-  - Updated: 2026-03-11T05:31:00.000Z → 2026-04-09T17:17:00.000Z
-
-### Deleted Pages
-
-- ~~Integrate with Open WebUI~~ (https://learn.microsoft.com/en-us/azure/foundry-local/how-to/how-to-chat-application-with-open-web-ui)
-- ~~Best practice and troubleshooting~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-best-practice)
-- ~~Catalog API~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-catalog-api)
-- ~~Foundry Local CLI~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-cli)
-- ~~REST API~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/reference-rest)
-- ~~Foundry Local on Windows Server 2025~~ (https://learn.microsoft.com/en-us/azure/foundry-local/reference/windows-server-frequently-asked-questions)
-- ~~What is Foundry Local (preview)?~~ (https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local)
 
 ## Classified Pages
 

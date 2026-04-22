@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   architecture-patterns: 'Architectural patterns for Azure Front Door: apex domain
     setup, blue/green deployments, manual failover with Traffic Manager, static blob
@@ -80,7 +80,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 ### Updated Pages
 
 - [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq)
-  - Updated: 2026-02-24T18:11:00Z → 2026-04-08T17:12:00Z
+  - Updated: 2026-04-08T17:12:00Z → 2026-04-14T22:21:00Z
 
 ## Classified Pages
 
@@ -114,7 +114,7 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Configure HTTPS on a custom domain](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain) | security | 0.70 | Security-focused configuration of HTTPS with Azure-managed and customer-managed certificates; includes product-specific TLS/certificate settings. |
 | [Configure delivery rules](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/front-door-add-rules-cli) | integrations | 0.70 | CLI-focused tutorial that includes specific commands and parameters to add delivery rules; product-specific integration pattern with Azure CLI. |
 | [DHE Cipher FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/diffie-hellman-ciphers) | security | 0.70 | Lists specific cipher suites and deprecation date; provides product-specific TLS/cipher configuration and compliance guidance. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.70 | Azure Front Door FAQ pages typically include concrete, product-specific details such as maximum routing rules, backend pool limits, WAF policy limits, propagation times, and other numeric constraints that are not obvious from general knowledge. These are expert, implementation-level facts that match the limits-quotas category better than the others, even though they are embedded in an FAQ rather than a dedicated limits page. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-faq) | limits-quotas | 0.70 | FAQ pages for Azure networking services typically include concrete, product-specific details such as maximum endpoints, routing rules, WAF limits, propagation times, and other numeric constraints and behaviors that are not obvious from general training data. These align with the limits-quotas category because they expose exact values and service behaviors that guide real-world usage. |
 | [Front Door and CDN comparison](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison) | decision-making | 0.70 | Comparison article between Azure Front Door and Azure CDN service tiers; intended to guide service/tier selection. Likely includes feature comparison tables and criteria for when to use each, which is product-specific decision guidance beyond generic knowledge. |
 | [Front Door monitoring data reference](https://learn.microsoft.com/en-us/azure/frontdoor/monitor-front-door-reference) | configuration | 0.70 | A monitoring data reference typically lists concrete metric names, dimensions, log categories, and schema fields specific to Azure Front Door and Azure Monitor, which are product-specific configuration/telemetry details not inferable from general training. |
 | [Health probes](https://learn.microsoft.com/en-us/azure/frontdoor/health-probes) | configuration | 0.70 | Describes how health probes work and how to configure them; likely includes probe interval, path, protocol, and evaluation behavior specific to Front Door. |

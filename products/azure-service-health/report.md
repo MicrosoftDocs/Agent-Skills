@@ -38,8 +38,8 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 44
+- **Updated Pages**: 0
+- **Unchanged**: 47
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-service-health/azure-service-health.csv`
 
@@ -55,15 +55,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Reliability
 | *(Unclassified)* | 28 | 59.6% |
 
 ## Changes
-
-### Updated Pages
-
-- [Billing updates overview](https://learn.microsoft.com/en-us/azure/service-health/billing-elevated-access)
-  - Updated: 2026-03-27T08:00:00.000Z → 2026-04-10T22:08:00.000Z
-- [Health history overview](https://learn.microsoft.com/en-us/azure/service-health/health-history-overview)
-  - Updated: 2026-03-30T08:00:00.000Z → 2026-04-06T22:09:00.000Z
-- [Deploy Service Health alert rules at scale using Azure Policy](https://learn.microsoft.com/en-us/azure/service-health/service-health-alert-deploy-policy)
-  - Updated: 2025-07-22T22:13:00.000Z → 2026-04-10T22:08:00.000Z
 
 ## Classified Pages
 

@@ -1,9 +1,9 @@
 ---
 name: azure-cloud-adoption-framework
-description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing CAF landing zones, AKS/AVD/AVS platforms, SAP/Oracle on Azure, AI agent workloads, or Arc setups, and other Azure Cloud Adoption Framework related development tasks.
+description: Expert guidance for planning and executing cloud adoption using Azure Cloud Adoption Framework. Covers strategy, planning, readiness & landing zones, adoption patterns, governance, security, operations & management, organization & teams, and adoption scenarios. Use when designing Azure landing zones, AVS/VMware, SAP/Oracle, AKS, or AI/analytics workloads, and other Azure Cloud Adoption Framework related development tasks.
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-12"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Cloud Adoption Framework Skill
@@ -24,7 +24,7 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Strategy | L37-L55 | Strategic cloud and AI adoption guidance: business cases, exec alignment, cost, resiliency, security, sustainability, and workload-specific strategies (SAP, Oracle, AVD, VMware, analytics, hybrid/multicloud). |
+| Strategy | L37-L55 | Strategic cloud planning: defining business goals, exec strategy, cost, resiliency, security, sustainability, and workload-specific plans (AI agents, data, VDI, VMware, SAP, Oracle, hybrid/multicloud). |
 | Planning | L56-L84 | Planning cloud adoption, migration waves, modernization roadmaps, cost/skills readiness, and detailed plans for workloads (AI, data, Oracle, SAP, AVS, AVD, analytics) on Azure. |
 | Readiness & Landing Zones | L85-L216 | Designing and operating Azure landing zones: network topology, identity, subscriptions, governance, automation/DevOps, multitenancy, and workload‑specific patterns (SAP, AVS, analytics, Oracle, etc.). |
 | Adoption Patterns | L217-L253 | Patterns and step-by-step guides for planning, migrating, modernizing, and operating workloads on Azure (apps, data, AI agents, AVD, SAP, Oracle, VMware) using CAF best practices. |
@@ -32,7 +32,7 @@ This skill requires **network access** to fetch documentation content:
 | Security | L295-L331 | Security design and governance for Azure landing zones, including Zero Trust, IAM, encryption, DevOps, AKS, analytics, SAP/Oracle, Arc, and ongoing security operations. |
 | Operations & Management | L332-L377 | Operating, monitoring, securing, and optimizing Azure environments and workloads (including AI, AKS, Arc, AVS, Oracle, SAP, analytics) plus BCDR, DevOps, and platform-level governance. |
 | Organization & Teams | L378-L400 | Designing org structures, roles, RACI, and team topologies (governance, ops, data/analytics, security, cost, DevOps, AI agents) needed to run and scale Azure cloud adoption. |
-| Adoption Scenarios | L401-L482 | CAF-aligned landing zone, security, networking, identity, governance, BCDR, and operations patterns for adopting specific workloads (AKS, AVD, Citrix, AVS, RHEL, ARO, AIS, SAP, Oracle, analytics, data mesh, AI agents). |
+| Adoption Scenarios | L401-L482 | End-to-end adoption and landing zone guidance for specific Azure scenarios (AI agents, AKS, RHEL, ARO, AIS, AVD/Citrix, AVS, Oracle, SAP, analytics/data mesh), covering identity, network, security, ops, BCDR, and governance. |
 
 ### Strategy
 | Topic | URL |
@@ -50,7 +50,7 @@ This skill requires **network access** to fetch documentation content:
 | Incorporate cost efficiency into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/cost-efficiency |
 | Plan resiliency as part of cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/resiliency |
 | Integrate security considerations into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/security |
-| Embed sustainability goals into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability |
+| Incorporate sustainability objectives into cloud strategy | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/inform/sustainability |
 | Define motivations, mission, and objectives for cloud | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations |
 
 ### Planning
@@ -477,6 +477,6 @@ This skill requires **network access** to fetch documentation content:
 | Implement SAP on Azure landing zone accelerator | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/enterprise-scale-landing-zone |
 | Design SAP-to-Azure data integration reference architecture | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-example-architecture |
 | Implement SAP and Power Platform integration workflow | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow |
-| Extend SAP landing zone to support Power Platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone |
+| Extend SAP landing zones to integrate with Power Platform | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone |
 | Apply SAP and Power Platform integration fundamentals | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-fundamental |
 | Define strategy for SAP adoption on Azure | https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy |

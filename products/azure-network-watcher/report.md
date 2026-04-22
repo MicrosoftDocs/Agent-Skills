@@ -44,10 +44,10 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 - **Unclassified**: 35
 
 ### Incremental Update
-- **New Pages**: 2
-- **Updated Pages**: 1
-- **Unchanged**: 61
-- **Deleted Pages**: 1
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 64
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-network-watcher/azure-network-watcher.csv`
 
 ## Classification Statistics
@@ -63,20 +63,6 @@ confusable_not_for: Not for Azure Monitor (use azure-monitor), Azure Networking 
 | *(Unclassified)* | 35 | 54.7% |
 
 ## Changes
-
-### New Pages
-
-- [Visualize flow logs with Power BI](https://learn.microsoft.com/en-us/azure/network-watcher/flow-logs-power-bi)
-- [Rules impact analyzer](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics-rule-impact-analyzer)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview)
-  - Updated: 2025-11-18T17:01:00.000Z → 2026-04-08T17:12:00.000Z
-
-### Deleted Pages
-
-- ~~Use Power BI~~ (https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi)
 
 ## Classified Pages
 

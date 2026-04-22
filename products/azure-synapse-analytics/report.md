@@ -55,8 +55,8 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 444
+- **Updated Pages**: 0
+- **Unchanged**: 446
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-synapse-analytics/azure-synapse-analytics.csv`
 
@@ -76,13 +76,6 @@ confusable_not_for: Not for Azure Data Factory (use azure-data-factory), Azure D
 | *(Unclassified)* | 186 | 41.7% |
 
 ## Changes
-
-### Updated Pages
-
-- [Synapse notebook activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/synapse-notebook-activity)
-  - Updated: 2024-12-11T08:00:00.000Z → 2026-02-21T06:13:00.000Z
-- [Synapse SQL pool stored procedure activity](https://learn.microsoft.com/en-us/azure/synapse-analytics/data-integration/sql-pool-stored-procedure-activity)
-  - Updated: 2024-12-11T08:00:00.000Z → 2025-03-27T17:09:00.000Z
 
 ## Classified Pages
 

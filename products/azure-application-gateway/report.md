@@ -49,8 +49,8 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 172
+- **Updated Pages**: 0
+- **Unchanged**: 174
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-application-gateway/azure-application-gateway.csv`
 
@@ -69,13 +69,6 @@ confusable_not_for: Not for Azure Front Door (use azure-front-door), Azure Load 
 | *(Unclassified)* | 49 | 28.2% |
 
 ## Changes
-
-### Updated Pages
-
-- [Application Gateway v2](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
-  - Updated: 2025-12-16T23:42:00.000Z → 2026-04-10T08:00:00.000Z
-- [FAQ](https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
-  - Updated: 2026-01-26T18:11:00Z → 2026-04-10T06:11:00Z
 
 ## Classified Pages
 

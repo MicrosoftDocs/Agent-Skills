@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   security: Managing secure access to Azure Firmware Analysis using service principals
     and configuring role-based access control (RBAC) permissions for users and apps
@@ -36,16 +36,16 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 ## Summary
 
-- **Total Pages**: 15
-- **Fetched**: 15
+- **Total Pages**: 16
+- **Fetched**: 16
 - **Fetch Failed**: 0
 - **Classified**: 13
-- **Unclassified**: 2
+- **Unclassified**: 3
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 15
+- **New Pages**: 1
+- **Updated Pages**: 1
+- **Unchanged**: 14
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-firmware-analysis/azure-firmware-analysis.csv`
 
@@ -53,15 +53,24 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 3 | 20.0% |
-| deployment | 3 | 20.0% |
-| integrations | 3 | 20.0% |
-| limits-quotas | 1 | 6.7% |
-| security | 2 | 13.3% |
-| troubleshooting | 1 | 6.7% |
-| *(Unclassified)* | 2 | 13.3% |
+| best-practices | 3 | 18.8% |
+| deployment | 3 | 18.8% |
+| integrations | 3 | 18.8% |
+| limits-quotas | 1 | 6.2% |
+| security | 2 | 12.5% |
+| troubleshooting | 1 | 6.2% |
+| *(Unclassified)* | 3 | 18.8% |
 
 ## Changes
+
+### New Pages
+
+- [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry)
+
+### Updated Pages
+
+- [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes)
+  - Updated: 2026-03-31T22:19:00.000Z → 2026-04-14T22:21:00.000Z
 
 ## Classified Pages
 
@@ -85,5 +94,6 @@ confusable_not_for: Not for Azure Defender For Iot (use azure-defender-for-iot),
 
 | TOC Title | Confidence | Reason |
 |-----------|------------|--------|
+| [Firmware analysis integration with Azure Device Registry](https://learn.microsoft.com/en-us/azure/firmware-analysis/firmware-analysis-integration-with-azure-device-registry) | 0.30 | Describes conceptual integration between Firmware analysis and Azure Device Registry; summary does not indicate specific configuration parameters, code, limits, or troubleshooting details required for any sub-skill type. |
 | [Overview](https://learn.microsoft.com/en-us/azure/firmware-analysis/overview-firmware-analysis) | 0.20 | High-level overview of firmware analysis and IoT security concerns without product-specific limits, configs, or detailed procedures. |
-| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.20 | Release notes list new features and changes but generally do not provide stable, reusable expert knowledge like limits, configuration matrices, or troubleshooting mappings. They are temporal update logs rather than skill-enabling reference content. |
+| [What's new?](https://learn.microsoft.com/en-us/azure/firmware-analysis/release-notes) | 0.20 | Release notes listing new features and enhancements; no clear indication of detailed limits, configuration tables, error codes, or other structured expert data per the defined categories. |

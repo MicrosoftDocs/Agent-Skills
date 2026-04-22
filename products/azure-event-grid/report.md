@@ -53,8 +53,8 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 261
+- **Updated Pages**: 0
+- **Unchanged**: 262
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-event-grid/azure-event-grid.csv`
 
@@ -74,11 +74,6 @@ confusable_not_for: Not for Azure Service Bus (use azure-service-bus), Azure Eve
 | *(Unclassified)* | 82 | 31.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Advanced Messaging Events](https://learn.microsoft.com/en-us/azure/event-grid/communication-services-advanced-messaging-events)
-  - Updated: 2026-01-12T23:36:00.000Z → 2026-04-08T22:12:00.000Z
 
 ## Classified Pages
 

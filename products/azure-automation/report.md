@@ -1,15 +1,15 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   security: 'Securing Automation accounts: identities, RBAC, auth methods, encryption,
-    certificates/credentials, private endpoints, Azure Policy, and Terraform-based
-    secure provisioning.'
-  configuration: 'Configuring Azure Automation runbooks and DSC: alerts, schedules,
-    parameters, hybrid workers, source control, Python/PowerShell modules, policy,
-    and Change Tracking/Inventory at scale.'
-  deployment: Guides for deploying resilient Automation accounts and Hybrid Runbook
-    Workers (Windows/Linux), using availability zones, DR planning, and CI/CD with
-    DSC and Chocolatey.
+    certificates/credentials, private endpoints, and policy/compliance for secure
+    runbooks and access.'
+  configuration: Configuring and managing Azure Automation runbooks, DSC/State Configuration,
+    Hybrid Runbook Workers, alerts, schedules, source control, policies, packages,
+    and deployment/runtime settings.
+  deployment: Guides for deploying resilient Automation accounts, setting up DR and
+    continuous deployment, and installing/migrating Windows/Linux Hybrid Runbook Workers
+    and agents.
   best-practices: Best practices for structuring, chaining, and managing runbooks,
     handling errors and output streams, ensuring resilient execution, and avoiding
     context-switching issues in Azure Automation.
@@ -27,17 +27,17 @@ category_descriptions:
     shared resources, and collecting support diagnostics.'
 skill_description: Expert knowledge for Azure Automation development including troubleshooting,
   best practices, decision making, limits & quotas, security, configuration, integrations
-  & coding patterns, and deployment. Use when automating runbooks/DSC, Hybrid Runbook
-  Workers, Change Tracking, Azure/AWS/365 integrations, or migrations, and other Azure
-  Automation related development tasks. Not for Azure Functions (use azure-functions),
-  Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use azure-scheduler),
-  Azure DevOps (use azure-devops).
-use_when: Use when automating runbooks/DSC, Hybrid Runbook Workers, Change Tracking,
-  Azure/AWS/365 integrations, or migrations, and other Azure Automation related development
-  tasks.
+  & coding patterns, and deployment. Use when building runbooks, DSC/State Configuration,
+  Hybrid Runbook Workers, webhooks/identities auth, or Azure/AWS/SQL integrations,
+  and other Azure Automation related development tasks. Not for Azure Functions (use
+  azure-functions), Azure Logic Apps (use azure-logic-apps), Azure Scheduler (use
+  azure-scheduler), Azure Update Manager (use azure-update-manager).
+use_when: Use when building runbooks, DSC/State Configuration, Hybrid Runbook Workers,
+  webhooks/identities auth, or Azure/AWS/SQL integrations, and other Azure Automation
+  related development tasks.
 confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic Apps
-  (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure DevOps (use
-  azure-devops).
+  (use azure-logic-apps), Azure Scheduler (use azure-scheduler), Azure Update Manager
+  (use azure-update-manager).
 ---
 # Azure Automation Crawl Report
 
@@ -46,13 +46,13 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 - **Total Pages**: 115
 - **Fetched**: 115
 - **Fetch Failed**: 0
-- **Classified**: 92
-- **Unclassified**: 23
+- **Classified**: 91
+- **Unclassified**: 24
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 115
+- **Updated Pages**: 6
+- **Unchanged**: 109
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-automation/azure-automation.csv`
 
@@ -62,15 +62,30 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 |------|-------|------------|
 | best-practices | 6 | 5.2% |
 | configuration | 37 | 32.2% |
-| decision-making | 6 | 5.2% |
-| deployment | 6 | 5.2% |
+| decision-making | 5 | 4.3% |
+| deployment | 7 | 6.1% |
 | integrations | 9 | 7.8% |
-| limits-quotas | 4 | 3.5% |
+| limits-quotas | 3 | 2.6% |
 | security | 17 | 14.8% |
 | troubleshooting | 7 | 6.1% |
-| *(Unclassified)* | 23 | 20.0% |
+| *(Unclassified)* | 24 | 20.9% |
 
 ## Changes
+
+### Updated Pages
+
+- [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Configure servers to a desired state and manage drift](https://learn.microsoft.com/en-us/azure/automation/tutorial-configure-servers-desired-state)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-04-14T11:11:00.000Z
+- [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers)
+  - Updated: 2025-04-07T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive)
+  - Updated: 2023-08-01T08:00:00.000Z → 2026-03-05T08:00:00.000Z
+- [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data)
+  - Updated: 2025-11-17T08:00:00.000Z → 2026-03-05T08:00:00.000Z
 
 ## Classified Pages
 
@@ -96,7 +111,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Disaster recovery for Automation accounts](https://learn.microsoft.com/en-us/azure/automation/automation-disaster-recovery) | deployment | 0.80 | Provides DR strategy for Automation accounts and dependent resources, including product-specific deployment and recovery patterns. |
 | [Handle errors in graphical runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-graphical-error-handling) | best-practices | 0.80 | Provides concrete patterns for handling success, expected, and unexpected errors in graphical runbooks; product-specific error-handling design guidance. |
 | [Manage role permissions and security](https://learn.microsoft.com/en-us/azure/automation/automation-role-based-access-control) | security | 0.80 | Describes Automation-specific RBAC usage; likely lists roles, scopes, and permission mappings for Automation resources. |
-| [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers) | decision-making | 0.80 | Retirement timelines and migration guidance between worker types; helps decide migration approach and understand trade-offs/benefits. |
 | [Security controls by Azure Policy](https://learn.microsoft.com/en-us/azure/automation/security-controls-policy) | security | 0.80 | Lists specific built-in policy definitions and controls for Automation, which are product-specific security/compliance configurations. |
 | [Start a runbook from a webhook](https://learn.microsoft.com/en-us/azure/automation/automation-webhooks) | integrations | 0.80 | Describes webhook URL, headers, payload, and TLS requirements for starting runbooks from services like GitHub and Azure DevOps; integration-focused with concrete parameters. |
 | [Supported regions](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix) | limits-quotas | 0.80 | Explicitly a support matrix and limitations page; likely includes region support tables, OS/version support, and specific constraints that qualify as limits/quotas. |
@@ -108,7 +122,6 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Manage Python 3 packages](https://learn.microsoft.com/en-us/azure/automation/python-3-packages) | configuration | 0.75 | Details Python 3 package handling, including version support notes and requirements for Hybrid Runbook Workers; product-specific configuration nuances. |
 | [Manage certificates](https://learn.microsoft.com/en-us/azure/automation/shared-resources/certificates) | security | 0.75 | Details secure storage/encryption of certificate assets and how to access them via specific cmdlets; product-specific security configuration patterns. |
 | [Manage credentials](https://learn.microsoft.com/en-us/azure/automation/shared-resources/credentials) | security | 0.75 | Focuses on secure credential asset handling, encryption, and usage in runbooks/DSC; product-specific security configuration. |
-| [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data) | security | 0.75 | Explains how Automation secures and protects data, including product-specific security behaviors and controls. |
 | [Disable local authentication](https://learn.microsoft.com/en-us/azure/automation/disable-local-authentication) | security | 0.72 | The page is focused on a concrete security configuration change (disabling local authentication) for Azure Automation, including its specific impact on features like webhooks, source control auto sync, and DSC, and the move to Microsoft Entra-based auth. This is product-specific security guidance with concrete implications and configuration behavior, fitting the security sub-skill. It is not just conceptual; it describes how this setting affects particular mechanisms and what alternatives to use. |
 | [At scale using Azure Policy](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-policy) | configuration | 0.70 | Uses Azure Policy for scale enablement; likely includes policy definitions, parameters, and assignment settings specific to this scenario. |
 | [Automation account authentication overview](https://learn.microsoft.com/en-us/azure/automation/automation-security-overview) | security | 0.70 | Authentication overview for Automation accounts with supported scenarios and permission scopes is product-specific security guidance. |
@@ -133,12 +146,15 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Manage runbooks](https://learn.microsoft.com/en-us/azure/automation/manage-runbooks) | best-practices | 0.70 | Includes recommended patterns and best practices for runbook design specific to Azure Automation, beyond generic scripting advice. |
 | [Manage schedules](https://learn.microsoft.com/en-us/azure/automation/shared-resources/schedules) | configuration | 0.70 | Details supported schedule types (once, hourly, daily, weekly, monthly, specific days) and how they behave; concrete configuration options for scheduling. |
 | [Manage variables](https://learn.microsoft.com/en-us/azure/automation/shared-resources/variables) | configuration | 0.70 | Describes Automation variable asset behavior and management via portal/PowerShell/runbooks; includes specific patterns for sharing values across jobs and runbooks. |
+| [Management of Azure Automation data](https://learn.microsoft.com/en-us/azure/automation/automation-managing-data) | security | 0.70 | Article is specifically about how Azure Automation protects and secures data. Such pages typically include product-specific security mechanisms, data handling behaviors, and possibly RBAC or identity details unique to the service, which qualify as expert security configuration knowledge. |
 | [Migrate from Orchestrator to Azure Automation (Beta)](https://learn.microsoft.com/en-us/azure/automation/automation-orchestrator-migration) | decision-making | 0.70 | Migration guidance from Orchestrator to Automation, including how to convert integration packs and runbooks; supports technology selection and migration decisions. |
 | [Runtime environment scenarios](https://learn.microsoft.com/en-us/azure/automation/manage-runtime-environment) | configuration | 0.70 | Covers creation and management of runtime environments via portal and REST; likely includes environment properties and constraints specific to Automation. |
 | [Send an email from a runbook](https://learn.microsoft.com/en-us/azure/automation/automation-send-email) | integrations | 0.70 | Shows how to integrate SendGrid with Automation runbooks; likely includes API keys, connection parameters, and PowerShell patterns specific to this integration. |
 | [Start a runbook](https://learn.microsoft.com/en-us/azure/automation/start-runbooks) | configuration | 0.70 | Includes a comparison table of start methods and lifecycle behavior; product-specific configuration of how runbooks are triggered. |
 | [Update Azure PowerShell modules](https://learn.microsoft.com/en-us/azure/automation/automation-update-azure-modules) | configuration | 0.70 | Explains how default/global modules are updated and managed, including runtime environment behavior; product-specific module configuration details. |
 | [Use source control integration](https://learn.microsoft.com/en-us/azure/automation/source-control-integration) | configuration | 0.70 | Covers one-way sync setup with GitHub/Azure DevOps; likely includes specific configuration fields, connection settings, and schedules unique to Automation source control. |
+| [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history) | configuration | 0.70 | Version history pages typically list extension versions with specific behaviors, configuration changes, and sometimes parameter defaults unique to the product, which qualify as expert configuration knowledge not inferable from general training. |
+| [Migrate existing Agent-based Hybrid Workers to Extension-based Workers](https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers) | deployment | 0.68 | The article gives concrete, product-specific migration guidance from agent-based to extension-based hybrid workers, including sequencing, prerequisites, and platform-specific steps that affect how production workers are deployed and operated. This is migration/deployment-focused expert knowledge rather than a generic overview, but it does not center on limits, security roles, or configuration parameter tables. |
 | [At scale using Azure portal - Machines blade (New)](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-machines-blade) | configuration | 0.65 | Portal-based scale enablement; likely includes specific configuration options, data sources, and parameter values for enabling the feature on many VMs. |
 | [Configure data at scale](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-config-data-at-scale) | configuration | 0.65 | Focuses on configuring data at scale for State Configuration, likely including specific configuration patterns and structures. |
 | [Configure data based on STIG](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-configuration-based-on-stig) | configuration | 0.65 | STIG-based configuration data for State Configuration implies detailed configuration structures and parameters unique to this feature. |
@@ -161,13 +177,11 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Automation runbook types](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types) | decision-making | 0.60 | Compares runbook types and considerations for choosing among them, which is product-specific decision guidance. |
 | [Availability zones](https://learn.microsoft.com/en-us/azure/automation/automation-availability-zones) | deployment | 0.60 | Describes availability zone support and regional behavior for Automation, relevant to deployment and high-availability planning. |
 | [Azure Automation extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-authoring) | configuration | 0.60 | Describes VS Code extension capabilities and operations for runbook management, including product-specific configuration of tooling. |
-| [Configure servers to a desired state and manage drift](https://learn.microsoft.com/en-us/azure/automation/tutorial-configure-servers-desired-state) | configuration | 0.60 | Tutorial for configuring machines via State Configuration; typically includes DSC configuration examples and node settings specific to Azure Automation. |
 | [Get started with State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-getting-started) | configuration | 0.60 | Getting-started guide for State Configuration typically includes concrete steps, parameters, and configuration examples specific to this service. |
 | [Hybrid Runbook Worker overview](https://learn.microsoft.com/en-us/azure/automation/automation-hybrid-runbook-worker) | configuration | 0.60 | Hybrid Runbook Worker overview includes installation and environment-specific configuration details unique to this feature. |
 | [Remediate noncompliant State Configuration servers](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-remediate) | configuration | 0.60 | Describes on-demand reapplication of configurations; likely includes commands and settings for triggering remediation unique to Automation DSC. |
 | [Runbook execution overview](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-execution) | best-practices | 0.60 | Discusses runbook execution behavior and restart semantics, requiring product-specific guidance on how to author runbooks to handle interruptions. |
 | [Track updated files with watcher task](https://learn.microsoft.com/en-us/azure/automation/automation-scenario-using-watcher-task) | configuration | 0.60 | Watcher task scenario; likely includes watcher configuration intervals, runbook bindings, and limitations specific to Azure Automation watcher tasks. |
-| [Work with State Configuration extension version history](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-extension-history) | limits-quotas | 0.60 | Version history article typically lists specific extension versions, dates, and behavior changes; this is detailed product metadata not generally known. |
 
 ## Unclassified Pages
 
@@ -186,13 +200,14 @@ confusable_not_for: Not for Azure Functions (use azure-functions), Azure Logic A
 | [Enable Desired State Configuration for a machine](https://learn.microsoft.com/en-us/azure/automation/quickstarts/dsc-configuration) | 0.35 | Quickstart for configuring a VM with DSC; likely procedural without detailed config option tables or limits in the summary. |
 | [Install Hybrid Worker extension - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/install-hybrid-worker-extension) | 0.35 | Quickstart for installing Hybrid Worker extension; appears as a basic tutorial without detailed configuration parameter tables. |
 | [About Change tracking and inventory](https://learn.microsoft.com/en-us/azure/azure-change-tracking-inventory/overview-monitoring-agent) | 0.30 | Overview of Change Tracking and Inventory with AMA; summary suggests high-level features and benefits without detailed configuration tables or limits. |
+| [Configure servers to a desired state and manage drift](https://learn.microsoft.com/en-us/azure/automation/tutorial-configure-servers-desired-state) | 0.30 | Tutorial-style guidance for configuring machines to a desired state; likely step-by-step instructions without structured limits, configuration parameter tables, or troubleshooting mappings. |
 | [Create a PowerShell Workflow runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual) | 0.30 | Tutorial on creating a PowerShell Workflow runbook; mostly authoring steps, not configuration matrices or limits. |
 | [Create a Python 3 runbook](https://learn.microsoft.com/en-us/azure/automation/learn/automation-tutorial-runbook-textual-python-3) | 0.30 | Tutorial for Python runbook creation; basic how-to without expert-level configuration or limits. |
 | [FAQ](https://learn.microsoft.com/en-us/azure/automation/automation-faq) | 0.30 | FAQ description is generic; no indication of specific error codes, limits, or config parameters in the summary. |
 | [Use Automation extension for Visual Studio Code](https://learn.microsoft.com/en-us/azure/automation/how-to/runbook-authoring-extension-for-vscode) | 0.30 | Explains using VS Code extension to author runbooks; mostly tooling workflow, not configuration matrices, limits, or product-specific troubleshooting. |
 | [Create Automation account - Azure portal](https://learn.microsoft.com/en-us/azure/automation/quickstarts/create-azure-automation-account-portal) | 0.20 | Quickstart for creating an Automation account via portal; step-by-step tutorial without config matrices or limits. |
-| [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview) | 0.20 | Overview of Azure Automation State Configuration; primarily conceptual and retirement notice without detailed config tables or troubleshooting content. |
+| [Overview](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview) | 0.20 | Overview of Azure Automation State Configuration and retirement notice; no detailed limits, configuration tables, error codes, or product-specific decision matrices. |
 | [What are the various Automation services in Azure?](https://learn.microsoft.com/en-us/azure/automation/automation-services) | 0.20 | Conceptual comparison of automation services; no detailed decision matrices, limits, or config tables evident from summary. |
 | [What is Azure Automation?](https://learn.microsoft.com/en-us/azure/automation/overview) | 0.20 | High-level overview of Azure Automation capabilities without concrete limits, configs, or error mappings. |
-| [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.10 | Archive of release notes; historical change log, not stable expert guidance. |
+| [Archive for What's new](https://learn.microsoft.com/en-us/azure/automation/whats-new-archive) | 0.10 | Archive of release notes and high-level change log information; does not focus on concrete limits, configuration parameters, or other structured expert details as defined by the sub-skill types. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/automation/whats-new) | 0.10 | Monthly 'what's new' changelog/updates page; primarily release notes and high-level feature announcements without structured limits, configuration tables, error mappings, or decision matrices that match the defined expert-knowledge sub-skill types. |

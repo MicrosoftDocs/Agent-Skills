@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-03-02'
+generated_at: '2026-04-19'
 category_descriptions:
   configuration: 'Configuring Azure Load Balancer behavior: backends/frontends (incl.
     cross-subscription, IP-based, outbound-only), rules, health probes, traffic distribution,
@@ -7,19 +7,20 @@ category_descriptions:
   best-practices: Guidance on deploying Azure Load Balancer with VM scale sets, configuring
     inbound NAT, and building custom HTTP/HTTPS health probes (Python) using recommended
     best practices.
-  integrations: Using Azure IMDS and Monitor to programmatically query load balancer/VM
-    IP metadata and retrieve load balancer metrics via CLI and REST APIs.
+  integrations: Using IMDS, Azure Monitor CLI, and REST APIs to query load balancer/VM
+    IPs, retrieve metadata, and collect/load metrics for integration and automation.
   decision-making: Guidance on choosing the right Load Balancer SKU and planning/migrating
     configurations, including Basic→Standard, NAT rules v1→v2, and AWS NLB→Azure Load
     Balancer.
+  limits-quotas: 'Limits, behaviors, and configuration of Load Balancer connections:
+    SNAT/flow limits, TCP idle timeout settings, and when/why TCP resets occur and
+    how to control them'
   troubleshooting: 'Diagnosing and fixing Azure Load Balancer issues: deployment errors,
     health events/logs, probes, connectivity/backend traffic, SNAT/timeouts, IMDS
     errors, and resource health/availability.'
   architecture-patterns: Design patterns for outbound internet connectivity using
     Azure Load Balancer, including egress-only architectures and SNAT configuration,
     scaling, and best practices.
-  limits-quotas: Configuring Azure Load Balancer TCP idle timeouts and reset options,
-    and understanding how and when TCP resets are triggered and affect client connections.
   deployment: 'Guides for deploying Load Balancers: replicating configurations across
     regions and automating upgrades from Basic to Standard using PowerShell.'
   security: 'Security guidance for Azure Load Balancer: hardening, access controls,
@@ -27,33 +28,33 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Load Balancer development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when configuring frontends/backends, health probes, SNAT/outbound, IMDS/metrics
-  APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
+  Use when configuring frontends/backends, SNAT/outbound rules, health probes, NAT
+  rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related development
   tasks. Not for Azure Application Gateway (use azure-application-gateway), Azure
-  Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
-  Azure NAT Gateway (use azure-nat-gateway).
-use_when: Use when configuring frontends/backends, health probes, SNAT/outbound, IMDS/metrics
-  APIs, or Basic→Standard migrations, and other Azure Load Balancer related development
-  tasks.
+  Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
+  Azure Virtual Network (use azure-virtual-network).
+use_when: Use when configuring frontends/backends, SNAT/outbound rules, health probes,
+  NAT rules v2, or IMDS/Monitor integrations, and other Azure Load Balancer related
+  development tasks.
 confusable_not_for: Not for Azure Application Gateway (use azure-application-gateway),
-  Azure Front Door (use azure-front-door), Azure Traffic Manager (use azure-traffic-manager),
-  Azure NAT Gateway (use azure-nat-gateway).
+  Azure Traffic Manager (use azure-traffic-manager), Azure Front Door (use azure-front-door),
+  Azure Virtual Network (use azure-virtual-network).
 ---
 # Azure Load Balancer Crawl Report
 
 ## Summary
 
-- **Total Pages**: 94
-- **Fetched**: 94
+- **Total Pages**: 87
+- **Fetched**: 87
 - **Fetch Failed**: 0
-- **Classified**: 48
+- **Classified**: 41
 - **Unclassified**: 46
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 94
-- **Deleted Pages**: 0
+- **New Pages**: 1
+- **Updated Pages**: 3
+- **Unchanged**: 83
+- **Deleted Pages**: 8
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-load-balancer/azure-load-balancer.csv`
 
 ## Classification Statistics
@@ -61,37 +62,54 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | Type | Count | Percentage |
 |------|-------|------------|
 | architecture-patterns | 1 | 1.1% |
-| best-practices | 4 | 4.3% |
-| configuration | 17 | 18.1% |
-| decision-making | 4 | 4.3% |
-| deployment | 2 | 2.1% |
-| integrations | 4 | 4.3% |
-| limits-quotas | 2 | 2.1% |
-| security | 2 | 2.1% |
-| troubleshooting | 12 | 12.8% |
-| *(Unclassified)* | 46 | 48.9% |
+| best-practices | 4 | 4.6% |
+| configuration | 17 | 19.5% |
+| decision-making | 4 | 4.6% |
+| deployment | 2 | 2.3% |
+| integrations | 4 | 4.6% |
+| limits-quotas | 3 | 3.4% |
+| security | 2 | 2.3% |
+| troubleshooting | 4 | 4.6% |
+| *(Unclassified)* | 46 | 52.9% |
 
 ## Changes
+
+### New Pages
+
+- [Support and troubleshooting for Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-support-help)
+
+### Updated Pages
+
+- [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds)
+  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
+- [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer)
+  - Updated: 2026-01-29T08:00:00.000Z → 2026-04-14T22:21:00.000Z
+- [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs)
+  - Updated: 2026-02-23T23:22:00Z → 2026-04-14T22:21:00Z
+
+### Deleted Pages
+
+- ~~Common deployment errors~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-common-deployment-errors)
+- ~~Troubleshoot Azure Load Balancer~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot)
+- ~~Backend pool (VM) traffic~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
+- ~~Troubleshoot load balancer health event logs~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-event-logs)
+- ~~Health Probe status~~ (https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-probe-status)
+- ~~Common error codes for Azure Instance Metadata Service (IMDS)~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-load-balancer-imds)
+- ~~Troubleshoot SNAT exhaustion and connection timeouts~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-outbound-connection)
+- ~~Resource health and inbound availability issues~~ (https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-rhc)
 
 ## Classified Pages
 
 | TOC Title | Type | Confidence | Reason |
 |-----------|------|------------|--------|
-| [Common error codes for Azure Instance Metadata Service (IMDS)](https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-load-balancer-imds) | troubleshooting | 0.95 | Explicitly about common error codes and mitigation methods for Azure Instance Metadata Service when retrieving load balancer info. Error code→meaning→fix mapping is core troubleshooting expert knowledge. |
 | [Configure TCP reset and idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-idle-timeout) | limits-quotas | 0.95 | Explicitly states default timeout (4 minutes) and range (4–100 minutes) for multiple rule types; these numeric limits and ranges are classic limits-quotas content. |
-| [Common deployment errors](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-common-deployment-errors) | troubleshooting | 0.90 | Describes common deployment errors and how to resolve them. This is clearly a troubleshooting guide for deployment-time issues, with specific error codes/messages and resolutions. |
-| [Health Probe status](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-probe-status) | troubleshooting | 0.90 | Dedicated to troubleshooting health probe status, which typically includes specific probe states, causes, and resolutions. This is product-specific symptom→cause→solution guidance. |
-| [Troubleshoot Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot) | troubleshooting | 0.90 | Explicit troubleshooting article for common problems, with symptoms like unavailable connectivity and likely mappings to causes and fixes (e.g., client IP in NSG). This is classic symptom→cause→solution content specific to Azure Load Balancer. |
-| [Troubleshoot SNAT exhaustion and connection timeouts](https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-outbound-connection) | troubleshooting | 0.90 | Focused on outbound connectivity, SNAT exhaustion, and connection timeouts. This necessarily involves product-specific behavior, limits, and mitigation patterns (e.g., using individual public IPs, connection efficiency), which are detailed troubleshooting patterns. |
 | [Load balancer best practices](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-best-practices) | best-practices | 0.85 | Explicit best-practices article with DO/DON'T guidance derived from field experience; contains product-specific recommendations and gotchas for configuring and deploying Load Balancer. |
-| [Resource health and inbound availability issues](https://learn.microsoft.com/en-us/azure/load-balancer/troubleshoot-rhc) | troubleshooting | 0.85 | Uses metrics and resource health to investigate degraded or unavailable frontends/backends. This is a diagnostic guide mapping health states and metrics (like Data Path Availability) to availability issues and resolutions, fitting troubleshooting. |
-| [Troubleshoot load balancer health event logs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-health-event-logs) | troubleshooting | 0.85 | Covers common health event logs and how to troubleshoot them. This is a mapping from specific log entries to causes and remediation steps, which is product-specific troubleshooting knowledge. |
-| [Backend pool (VM) traffic](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot-backend-traffic) | troubleshooting | 0.80 | Troubleshooting article for backend traffic issues. These pages usually enumerate specific symptoms (no traffic, uneven distribution, etc.) and map them to configuration or platform causes and fixes, which is expert troubleshooting knowledge. |
 | [Create a custom HTTP/HTTPS health probe](https://learn.microsoft.com/en-us/azure/load-balancer/create-custom-http-health-probe-howto) | best-practices | 0.80 | Shows a concrete pattern using Python, Flask, and psutil to mark instances unhealthy when CPU > 75%; this is a product-specific, quantified health probe implementation pattern. |
 | [Load Balancer Health Event Logs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-health-event-logs) | troubleshooting | 0.80 | Explicitly about health event logs, including severity definitions, event types, and publishing frequency. This is a symptom→event→meaning mapping for a specific log category (LoadBalancerHealthEvent), which is product-specific troubleshooting information. |
 | [Manage health probes](https://learn.microsoft.com/en-us/azure/load-balancer/manage-probes-how-to) | configuration | 0.80 | Management article for health probes; includes probe types, properties, and the specific probe source IP 168.63.129.16 that must be allowed, which is product-specific configuration detail. |
 | [Secure your load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/secure-load-balancer) | security | 0.80 | Explicitly a security hardening article for Azure Load Balancer; likely includes product-specific security settings, NSG guidance, and RBAC considerations. |
 | [Upgrade options and guidance](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-basic-upgrade-guidance) | decision-making | 0.80 | Upgrade guidance between SKUs with recommendations, differences, and migration considerations; helps decide how and when to move to Standard. |
+| [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | limits-quotas | 0.78 | The FAQ includes product-specific numeric limits and behaviors (for example, SNAT port counts, backend pool size limits, timeout values, and other concrete constraints) that qualify as limits-quotas expert knowledge beyond generic conceptual information. |
 | [Manage admin state](https://learn.microsoft.com/en-us/azure/load-balancer/manage-admin-state-how-to) | configuration | 0.75 | Describes Admin State feature with specific values (Up, Down, None) and how to set/update/remove via portal/CLI/PowerShell; clearly a product-specific configuration option. |
 | [Migrate Inbound NAT Pools to NAT Rules](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-nat-pool-migration) | decision-making | 0.75 | Migration guide between NAT rules versions with a retirement date and upgrade guidance; contains product-specific migration considerations and when/how to move. |
 | [Backend Pool management](https://learn.microsoft.com/en-us/azure/load-balancer/backend-pool-management) | configuration | 0.70 | Backend pool management article focusing on configuration by IP address and VNet ID; includes product-specific backend pool configuration options and behaviors. |
@@ -102,7 +120,8 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Migrate AWS Network Load Balancing](https://learn.microsoft.com/en-us/azure/load-balancer/network-load-balancing-aws-to-azure-how-to) | decision-making | 0.70 | Migration guide with feature mappings and step-by-step planning/execution guidance between AWS NLB and Azure Load Balancer; this cross-cloud mapping and migration detail is product-specific decision guidance not generally known. |
 | [Monitor and alert with LoadBalancerHealthEvent logs](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-monitor-alert-health-event-logs) | troubleshooting | 0.70 | Focuses on using LoadBalancerHealthEvent resource logs to identify and troubleshoot issues; maps health events to diagnosing load balancer health problems, which is troubleshooting guidance. |
 | [Monitoring data reference](https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer-reference) | configuration | 0.70 | A 'monitoring data reference' page for a specific Azure service typically lists all supported metrics, dimensions, log categories, and their exact names/semantics. These are product-specific parameters and schema details that LLMs won't reliably know, fitting the configuration category for monitoring/telemetry settings. |
-| [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer) | integrations | 0.70 | Details using IMDS REST API at 169.254.169.254 to retrieve load balancer and VM IP metadata; includes endpoint behavior and fields, which are integration-specific. |
+| [Retrieve information using the Azure Instance Metadata Service](https://learn.microsoft.com/en-us/azure/load-balancer/instance-metadata-service-load-balancer) | integrations | 0.70 | Describes using Azure Instance Metadata Service to retrieve load balancer and VM IP information, which generally includes specific REST paths, query structure, and metadata schema fields. These are concrete, product-specific API usage details that fit the integrations sub-skill type rather than a conceptual overview. |
+| [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds) | integrations | 0.70 | A 'how-to' for retrieving load balancer and VM IP metadata via Azure Instance Metadata Service typically includes the exact IMDS endpoint (169.254.169.254), REST paths, required headers, and example requests/responses. These are product-specific API integration details and configuration parameters that qualify as expert knowledge under the integrations category. |
 | [SKUs](https://learn.microsoft.com/en-us/azure/load-balancer/skus) | decision-making | 0.70 | SKU overview pages typically include comparison tables of Basic, Standard, and Gateway with capabilities and constraints to guide selection, which is product-specific decision guidance. |
 | [TCP reset on idle timeout](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset) | limits-quotas | 0.70 | Explains TCP reset on idle timeout; likely includes specific idle timeout behavior and packet handling details that are product-specific and not generic knowledge. |
 | [Testing inbound frontend IP address reachability](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-test-frontend-reachability) | troubleshooting | 0.70 | Shows how to use ping and traceroute for diagnosing inbound connectivity issues to Standard Public Load Balancer frontends. While somewhat procedural, it is clearly framed as a troubleshooting technique for a specific product scenario. |
@@ -122,7 +141,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Deploy public load balancer with DDoS protection](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-protect-load-balancer-ddos) | security | 0.60 | Tutorial on configuring DDoS Protection for public load balancers; includes product-specific security configuration steps and mentions cost/overage behavior for protected public IPs. |
 | [Monitor Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/monitor-load-balancer) | configuration | 0.60 | Central article on monitoring Load Balancer via Azure Monitor and Insights; likely includes which metrics/logs are emitted and how to configure collection, which are product-specific monitoring configuration details. |
 | [Move a load balancer across regions](https://learn.microsoft.com/en-us/azure/load-balancer/move-across-regions-azure-load-balancer) | deployment | 0.60 | Covers moving an internal or external load balancer to another region using ARM templates; includes product-specific deployment pattern for DR/testing scenarios. |
-| [Retrieve metadata using the Azure IMDS](https://learn.microsoft.com/en-us/azure/load-balancer/howto-load-balancer-imds) | integrations | 0.60 | Shows how to retrieve load balancer metadata via Azure Instance Metadata Service; involves specific REST endpoint usage and fields, which are integration details. |
 | [SNAT for outbound connections to internet](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections) | architecture-patterns | 0.60 | Explains how SNAT is used for outbound connectivity, mapping backend IPs to frontend IPs and preventing inbound connections; this is a product-specific connectivity pattern. |
 | [Standard Load Balancer and Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-virtual-machine-scale-sets) | best-practices | 0.60 | Guidance article with specific recommendations for combining VM scale sets and Standard Load Balancer; contains product-specific behavioral guidance and gotchas. |
 
@@ -134,7 +152,6 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [Add IPv6 to an IPv4 application- PowerShell](https://learn.microsoft.com/en-us/azure/load-balancer/ipv6-add-to-existing-vnet-powershell) | 0.40 | PowerShell tutorial for adding IPv6 to an existing IPv4 app; appears to be a step-by-step upgrade scenario rather than a config reference. |
 | [Deploy a dual-stack Internal load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/ipv6-dual-stack-standard-internal-load-balancer-powershell) | 0.40 | PowerShell-focused tutorial for dual-stack internal load balancer; mostly procedural without configuration matrices or error/limit details. |
 | [Deploy a dual-stack Public load balancer](https://learn.microsoft.com/en-us/azure/load-balancer/deploy-ipv4-ipv6-dual-stack-standard-load-balancer) | 0.40 | Scenario tutorial for deploying dual-stack app with Standard Load Balancer; primarily step-by-step resource creation, not a configuration reference or limits guide. |
-| [FAQ](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-faqs) | 0.40 | FAQ page; may contain scattered facts but not organized as limits, configuration tables, or systematic troubleshooting mappings per the defined categories. |
 | [High Availability ports](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) | 0.40 | Overview of HA ports; mostly conceptual description of behavior, not a configuration reference with parameters or limits. |
 | [Manage Load Balancer health status](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-manage-health-status) | 0.40 | Describes the health status feature and its purpose. Summary does not indicate detailed error codes, configuration tables, or numeric thresholds; it appears more like a feature explanation than expert-level troubleshooting or configuration reference. |
 | [Components](https://learn.microsoft.com/en-us/azure/load-balancer/components) | 0.35 | Explains key components (frontends, backend pools, rules) conceptually; not primarily a detailed configuration parameter reference. |
@@ -176,3 +193,4 @@ confusable_not_for: Not for Azure Application Gateway (use azure-application-gat
 | [What is Azure Load Balancer?](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) | 0.20 | High-level overview of Azure Load Balancer features and scenarios; no detailed limits, configuration tables, or error mappings. |
 | [What's new?](https://learn.microsoft.com/en-us/azure/load-balancer/whats-new) | 0.20 | What's new / release notes index; mostly announcements and links, not structured limits, configuration, or troubleshooting guidance. |
 | [Inbound NAT rules overview](https://learn.microsoft.com/en-us/azure/load-balancer/inbound-nat-rules) | 0.10 | Conceptual overview of inbound NAT rules; describes what and why without detailed configuration parameters or limits. |
+| [Support and troubleshooting for Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-support-help) | 0.10 | Support/help options page; no technical limits, configuration parameters, error codes, or product-specific patterns. Primarily guidance on where to get assistance, not expert implementation knowledge. |

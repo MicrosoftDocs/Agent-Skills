@@ -1,12 +1,12 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   configuration: 'Configuring and updating Nexus clusters and network fabric: JSON
     templates, isolation domains, BGP/route policies, ACLs, QoS, maintenance, monitoring,
     and Kubernetes/node settings.'
-  security: 'Securing Nexus fabrics, clusters, and VMs: identity/RBAC, ACLs, SSH/serial
-    access, break-glass, key/secret rotation, Defender/Policy, and cross-subscription
-    or managed identity access.'
+  security: 'Securing Nexus: identity/RBAC, ACLs, SSH/serial access, break-glass,
+    key/secret rotation, managed identities, Defender/Policy, TAP/ExpressRoute auth,
+    and secure VM/cluster access.'
   troubleshooting: Diagnosing and fixing Nexus bare-metal, network, storage, and Kubernetes
     issues, including provisioning failures, connectivity, performance, pod/VM errors,
     and collecting diagnostic logs.
@@ -30,13 +30,13 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Operator Nexus development including
   troubleshooting, best practices, decision making, architecture & design patterns,
   limits & quotas, security, configuration, integrations & coding patterns, and deployment.
-  Use when managing Nexus fabrics, isolation domains, BGP/ACL/QoS policies, NPB TAP
-  rules, or near‑edge storage designs, and other Azure Operator Nexus related development
+  Use when configuring Nexus clusters/fabric, BGP/ACL/QoS, NPB TAP rules, near-edge
+  storage, or Nexus AKS ETCD ops, and other Azure Operator Nexus related development
   tasks. Not for Azure Network Function Manager (use azure-network-function-manager),
   Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
   Azure Virtual WAN (use azure-virtual-wan).
-use_when: Use when managing Nexus fabrics, isolation domains, BGP/ACL/QoS policies,
-  NPB TAP rules, or near‑edge storage designs, and other Azure Operator Nexus related
+use_when: Use when configuring Nexus clusters/fabric, BGP/ACL/QoS, NPB TAP rules,
+  near-edge storage, or Nexus AKS ETCD ops, and other Azure Operator Nexus related
   development tasks.
 confusable_not_for: Not for Azure Network Function Manager (use azure-network-function-manager),
   Azure Networking (use azure-networking), Azure Virtual Network Manager (use azure-virtual-network-manager),
@@ -53,10 +53,10 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 - **Unclassified**: 53
 
 ### Incremental Update
-- **New Pages**: 4
-- **Updated Pages**: 4
-- **Unchanged**: 204
-- **Deleted Pages**: 12
+- **New Pages**: 0
+- **Updated Pages**: 3
+- **Unchanged**: 209
+- **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-operator-nexus/azure-operator-nexus.csv`
 
 ## Classification Statistics
@@ -76,38 +76,14 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 
 ## Changes
 
-### New Pages
-
-- [Creating Access Control Lists (ACLs)](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-create-access-control-list)
-- [Apply ACLs to resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-apply-access-control-list)
-- [Updating ACL on resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-access-control-list)
-- [Delete ACLs associated with resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-access-control-list)
-
 ### Updated Pages
 
-- [How to upgrade os of terminal server](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-os-of-terminal-server)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-04-08T22:04:00.000Z
-- [Network Fabric Upgrades](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-upgrade-nexus-fabric)
-  - Updated: 2026-03-27T22:03:00.000Z → 2026-04-09T17:04:00.000Z
-- [Network Packet Broker](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-packet-broker)
-  - Updated: 2026-02-03T18:10:00.000Z → 2026-04-07T17:03:00.000Z
-- [Nexus Instance Deployment Template](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-nexus-instance-deployment-template)
-  - Updated: 2025-09-17T16:51:00.000Z → 2026-04-07T17:03:00.000Z
-
-### Deleted Pages
-
-- ~~Network-to-Network Interconnect~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-network-to-network-interconnect)
-- ~~Apply ACLs to Network-to-Network Interconnects (NNI)~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-apply-access-control-list-to-network-to-network-interconnects)
-- ~~Cluster Inspect Action~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-inspect-action)
-- ~~Cluster Manager Relay Private Endpoint~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-manager-relay-private-endpoint)
-- ~~Creating Access Control Lists (ACLs)~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-create-access-control-list-for-network-to-network-interconnects)
-- ~~Delete ACLs associated with Network-to-Network Interconnects (NNI)~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-delete-access-control-list-network-to-network-interconnect)
-- ~~Managing ETCD Health in Nexus Kubernetes Cluster~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-kubernetes-cluster-manage-data-store-health)
-- ~~Rotate NAKS certificates~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-rotate-naks-certificates)
-- ~~Updating ACL on Network-for-Network Interconnects (NNI)~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-update-access-control-list-for-network-to-network-interconnects)
-- ~~Assign network traffic to Private Relay and Arc enroll virtual machines using managed identities~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/howto-virtual-machines-arc-enroll-using-private-relay-with-managed-identities)
-- ~~Troubleshoot Azure Prerequisites Validation~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-azure-prerequisites-validation)
-- ~~Troubleshoot Nexus Kubernetes VM scheduling failures due to topology spread constraints~~ (https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-kubernetes-cluster-vm-scheduling-topology-spread)
+- [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-controller)
+  - Updated: 2026-04-02T22:02:00.000Z → 2026-04-17T17:09:00.000Z
+- [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric resource](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource)
+  - Updated: 2026-04-02T22:02:00.000Z → 2026-04-17T17:09:00.000Z
+- [How-to usage guide for Customer Managed Key Vault](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault)
+  - Updated: 2026-04-02T17:05:00.000Z → 2026-04-17T17:09:00.000Z
 
 ## Classified Pages
 
@@ -148,6 +124,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Troubleshoot VM errors after BMM restart](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-vm-error-after-reboot) | troubleshooting | 0.85 | Guides remediation when VM errors appear in Azure portal after cordoning and restarting BMMs in Nexus. |
 | [Troubleshoot issues with Azure Arc enrollment for virtual machines with managed identities](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-virtual-machines-arc-enroll-with-managed-identities) | troubleshooting | 0.85 | Covers common pitfalls and fixes when enrolling Nexus VMs with managed identities into Azure Arc, including product-specific steps. |
 | [Troubleshooting dual-stack configuration issues for Nexus Kubernetes cluster](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-kubernetes-cluster-dual-stack-configuration) | troubleshooting | 0.85 | Details configuration checks and fixes for dual-stack IP issues in Nexus clusters, beyond generic Kubernetes dual-stack guidance. |
+| [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric resource](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource) | security | 0.82 | Describes enabling SAMI for Network Fabric resources, supported identity modes, constraints after association, identity transition rules, lock/commit behavior, and role requirements. These are detailed, product-specific identity and RBAC behaviors that go beyond generic managed identity knowledge. |
 | [How to set up break glass access](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access) | security | 0.82 | Covers IAM policies, identity model changes from v1.5 to v2.0, and specific configuration for emergency access; includes product-specific roles and security flows. |
 | [BareMetal Run-Read Execution](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-baremetal-run-read) | troubleshooting | 0.80 | Provides curated read-only diagnostic commands via run-read; symptom-oriented troubleshooting using Nexus-specific CLI. |
 | [Best Practices for Bare Metal Machine Operations](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-bare-metal-best-practices) | best-practices | 0.80 | Explicit best-practices article with concrete prerequisites and pitfalls for BMM replace/reimage; product-specific operational guidance. |
@@ -162,8 +139,8 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Credential Manager Key Vault](https://learn.microsoft.com/en-us/azure/operator-nexus/how-to-credential-manager-key-vault) | security | 0.80 | Step-by-step Key Vault setup for managed credential rotation; will include specific Key Vault access policies, identities, and configuration parameters unique to Operator Nexus. |
 | [Disable Border Gateway Protocol neighbors](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-disable-border-gateway-protocol-neighbors) | configuration | 0.80 | Provides concrete examples of RW commands to disable BGP neighbors; includes product-specific command syntax and behavior. |
 | [Gather trace IDs for PersistentVolumeClaim failures](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-gather-pvc-trace-id) | troubleshooting | 0.80 | Explains how to extract Nexus-specific trace IDs from nexus-volume and nexus-shared storage classes to diagnose stuck ContainerCreating pods. |
-| [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric resource](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-resource) | security | 0.80 | Describes enabling system-assigned managed identity for the Network Fabric resource with identity transition rules, lock/commit behavior, and role requirements. This is product-specific security configuration, including RBAC and identity lifecycle nuances that qualify as expert knowledge. |
 | [How to use-break-glass-access](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-use-break-glass-access) | security | 0.80 | Walks through SSH key generation, permission grants, and role assignments (NNF built-in roles to Entra groups); detailed security configuration patterns. |
+| [How-to usage guide for Customer Managed Key Vault](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault) | security | 0.80 | Covers how Network Fabric uses Key Vault, regional replication gaps (specific to West US 3 and Brazil South), and the workaround using a customer-managed Key Vault for password rotation and regional outage protection. This is concrete, product- and region-specific security/key management guidance. |
 | [Install CLI Extension](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-install-cli-extensions) | configuration | 0.80 | Lists required CLI extensions, names, and flags (for example --allow-preview=True) specific to interacting with Nexus resources. |
 | [Metrics](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-operator-nexus-observability-metrics) | configuration | 0.80 | Reference for observability metrics; likely includes metric names, dimensions, and semantics specific to Nexus Network Fabric. |
 | [Neighbor Group Configuration Overview](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-neighbor-group-configuration) | configuration | 0.80 | A 'configuration details and examples' page for neighbor groups will define resource properties, allowed endpoint types, and usage patterns across TAPs and rules—product-specific configuration parameters. |
@@ -179,7 +156,7 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Cross-subscription deployments and required RBAC for Network Fabric](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-cross-subscription-deployments-required-rbac-for-network-fabric) | security | 0.78 | Details required permissions and linked access checks for cross-subscription management; includes specific RBAC roles/behaviors unique to Nexus fabric. |
 | [How to Configure NNF with Bring Your Own (BYO) Storage](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bring-your-own-storage-network-fabric) | configuration | 0.78 | Shows how to wire a customer-managed storage account and user-assigned managed identity into NNF; includes specific resource properties and identity scopes. |
 | [How to Configure Network TAP Rules with User Assigned Managed Identity (UAMI) in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-network-tap-rules-with-user-assigned-managed-identity) | security | 0.78 | Shows how TAP rules use UAMI to access storage and other services; includes identity-based authentication configuration and Trusted Microsoft Services alignment. |
-| [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-controller) | security | 0.78 | How-to for enabling system-assigned managed identity on the Network Fabric Controller, likely including specific Azure role assignments, identity properties, and product-specific steps/constraints for secure access—these are configuration/security details that go beyond generic managed identity concepts. |
+| [How to enable System Assigned Managed Identity (SAMI) for the Network Fabric Controller](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-enable-system-assigned-managed-identity-for-network-fabric-controller) | security | 0.78 | How-to for enabling and validating a system-assigned managed identity on the Network Fabric Controller. This is product-specific identity/security configuration (SAMI behavior for this resource type), not generic concepts, and includes concrete steps and constraints unique to Azure Operator Nexus. |
 | [Instance to on-premises WAN Connectivity](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-customer-edge-provider-edge-connectivity) | configuration | 0.78 | A 'reference ... connectivity' page for PE configuration will list concrete interconnectivity parameters (field names, allowed values, protocol settings) specific to Operator Nexus PE-CE, which are product-specific configuration details not generally known to LLMs. |
 | [Supported Software Versions](https://learn.microsoft.com/en-us/azure/operator-nexus/reference-supported-software-versions) | limits-quotas | 0.78 | The page enumerates the exact software versions that are currently supported for Azure Operator Nexus as of a specific release (2602.2) and states support policy (up to N-2 versions). These are precise, product-specific support constraints that function as limits on which versions are allowed, and they change over time, so they qualify as expert knowledge. Among the categories, this best aligns with limits-quotas because it defines concrete version support boundaries rather than configuration, architecture, or deployment patterns. |
 | [Troubleshoot Bare Metal Server Problems](https://learn.microsoft.com/en-us/azure/operator-nexus/troubleshoot-reboot-reimage-replace) | troubleshooting | 0.78 | The page is a symptom-driven guide for resolving Azure Operator Nexus bare metal machine issues using Restart, Reimage, and Replace. It focuses on when and how to use each action to remediate server problems, which is product-specific troubleshooting knowledge beyond generic reboot guidance. |
@@ -188,7 +165,6 @@ confusable_not_for: Not for Azure Network Function Manager (use azure-network-fu
 | [Configure Virtual Routing and Forwarding (VRF) route prefix limits (IPv4 and IPv6) on AON CE devices for Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-virtual-routing-forwarding-route-prefix-limits-on-devices) | configuration | 0.76 | Extends prefix limiting to VRF level with specific behavior when limits are exceeded; Nexus-specific configuration semantics. |
 | [How to configure BGP prefix limit on Customer Edge (CE) devices for Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-configure-bgp-prefix-limit-on-customer-edge-devices) | configuration | 0.76 | Product-specific BGP overload protection with concrete configuration on CE devices and VRFs; includes parameters and behaviors unique to Nexus fabric. |
 | [How to set up break-glass access using In-Band management](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-set-up-break-glass-access-using-in-band-management) | security | 0.76 | Describes in-band management break-glass feature to mitigate management switch SPOF; includes product-specific access paths and security controls. |
-| [How-to usage guide for Customer Managed Key Vault](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-usage-guide-for-customer-managed-key-vault) | security | 0.76 | Covers how Network Fabrics use Key Vault for secrets, regional replication gaps, and a customer-managed Key Vault workaround. This involves product-specific secret storage patterns, region-specific behavior, and secure configuration steps that are not generic Key Vault knowledge. |
 | [A / B staged configuration update - commit workflow in Azure Operator Nexus](https://learn.microsoft.com/en-us/azure/operator-nexus/concepts-ab-staged-commit-configuration-update-commit-workflow) | configuration | 0.75 | Explains staged rollout model with commit workflow semantics (lock-validate-commit) and CE-only staging; product-specific configuration pattern. |
 | [Arc enroll virtual machines with managed identities for authentication and access token](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-virtual-machines-arc-enroll-with-managed-identities) | security | 0.75 | Contains detailed steps and parameters for Azure Arc enrollment of Nexus VMs using managed identities with traffic via public relay. |
 | [Cluster Managed Identity and User Provided Resources](https://learn.microsoft.com/en-us/azure/operator-nexus/howto-cluster-managed-identity-user-provided-resources) | security | 0.75 | Describes managed identity usage and user-provided resource model; likely includes specific identity scopes, resource types, and security configuration patterns unique to Operator Nexus. |

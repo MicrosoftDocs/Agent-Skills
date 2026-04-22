@@ -37,9 +37,9 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 - **Unclassified**: 7
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 3
-- **Unchanged**: 16
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 20
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-cloud-hsm/azure-cloud-hsm.csv`
 
@@ -55,19 +55,6 @@ confusable_not_for: Not for Azure Dedicated HSM (use azure-dedicated-hsm), Azure
 | *(Unclassified)* | 7 | 35.0% |
 
 ## Changes
-
-### New Pages
-
-- [Configure Event Hub for logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-configure-event-hub)
-
-### Updated Pages
-
-- [Operation event logging](https://learn.microsoft.com/en-us/azure/cloud-hsm/tutorial-operation-event-logging)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-09T17:19:00.000Z
-- [Secure your Cloud HSM](https://learn.microsoft.com/en-us/azure/cloud-hsm/secure-cloud-hsm)
-  - Updated: 2026-04-01T17:22:00.000Z → 2026-04-08T08:00:00.000Z
-- [Troubleshooting](https://learn.microsoft.com/en-us/azure/cloud-hsm/troubleshoot)
-  - Updated: 2026-03-26T08:00:00.000Z → 2026-04-08T08:00:00.000Z
 
 ## Classified Pages
 

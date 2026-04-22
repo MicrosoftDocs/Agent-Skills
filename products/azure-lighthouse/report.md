@@ -41,8 +41,8 @@ confusable_not_for: Not for Azure Arc (use azure-arc), Azure Managed Application
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 3
-- **Unchanged**: 25
+- **Updated Pages**: 0
+- **Unchanged**: 28
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-lighthouse/azure-lighthouse.csv`
 
@@ -58,15 +58,6 @@ confusable_not_for: Not for Azure Arc (use azure-arc), Azure Managed Application
 | *(Unclassified)* | 7 | 25.0% |
 
 ## Changes
-
-### Updated Pages
-
-- [Tenants, roles, and users](https://learn.microsoft.com/en-us/azure/lighthouse/concepts/tenants-users-roles)
-  - Updated: 2025-03-27T08:00:00.000Z → 2026-04-06T22:09:00.000Z
-- [Enterprise scenarios](https://learn.microsoft.com/en-us/azure/lighthouse/concepts/enterprise)
-  - Updated: 2025-06-13T05:28:00.000Z → 2026-04-06T22:09:00.000Z
-- [Create eligible authorizations](https://learn.microsoft.com/en-us/azure/lighthouse/how-to/create-eligible-authorizations)
-  - Updated: 2025-04-28T08:00:00.000Z → 2026-04-06T22:09:00.000Z
 
 ## Classified Pages
 

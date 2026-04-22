@@ -1,14 +1,14 @@
 ---
 name: azure-oracle
-description: Expert knowledge for Azure Oracle development including troubleshooting, decision making, security, configuration, and integrations & coding patterns. Use when configuring Oracle TDE with Key Vault, VNET topology, Exadata deployment, region selection, or Azure Monitor/Sentinel logs, and other Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
+description: Expert knowledge for Azure Oracle development including troubleshooting, security, configuration, and integrations & coding patterns. Use when setting up Oracle TDE with Key Vault, Oracle AI DB VNets, private endpoints, Exadata log export, or Sentinel, and other Azure Oracle related development tasks. Not for Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), SAP HANA on Azure Large Instances (use azure-sap).
 compatibility: Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.
 metadata:
-  generated_at: "2026-04-05"
+  generated_at: "2026-04-19"
   generator: "docs2skills/1.0.0"
 ---
 # Azure Oracle Skill
 
-This skill provides expert guidance for Azure Oracle. Covers troubleshooting, decision making, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
+This skill provides expert guidance for Azure Oracle. Covers troubleshooting, security, configuration, and integrations & coding patterns. It combines local quick-reference content with remote documentation fetching capabilities.
 
 ## How to Use This Skill
 
@@ -24,22 +24,15 @@ This skill requires **network access** to fetch documentation content:
 
 | Category | Lines | Description |
 |----------|-------|-------------|
-| Troubleshooting | L33-L38 | Operational FAQs and fixes for common Oracle Database@Azure issues, including connectivity, performance, deployment, configuration, and known platform limitations. |
-| Decision Making | L39-L43 | Guidance on where Oracle Database@Azure is available, checking supported regions, and using the regional availability tool before deployment. |
-| Security | L44-L48 | Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key Vault, including key management, integration steps, and security best practices. |
-| Configuration | L49-L54 | Onboarding Oracle Database@Azure, required prerequisites, and designing secure virtual network topologies (subnets, connectivity, routing) for Oracle DB deployments in Azure. |
-| Integrations & Coding Patterns | L55-L58 | Configuring Oracle Exadata log collection and pipelines into Azure Monitor and Microsoft Sentinel for monitoring, analytics, and security SIEM/SOAR use cases. |
+| Troubleshooting | L32-L36 | Operational FAQs and fixes for common Oracle Database@Azure issues, including connectivity, performance, deployment, configuration, and known platform limitations. |
+| Security | L37-L41 | Configuring Oracle Transparent Data Encryption (TDE) to use Azure Key Vault, including key management, integration steps, and security best practices. |
+| Configuration | L42-L46 | Designing and setting up network connectivity for Oracle AI Database@Azure, including VNet planning, private endpoints, security, and integration with on-premises or other Azure services. |
+| Integrations & Coding Patterns | L47-L50 | Configuring Oracle Exadata log export to Azure Monitor and Microsoft Sentinel, including pipelines, data formats, and setup for monitoring and security analytics. |
 
 ### Troubleshooting
 | Topic | URL |
 |-------|-----|
-| Answer operational FAQs for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/faq-oracle-database-azure |
 | Resolve common Oracle Database@Azure known issues | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-known-issues |
-
-### Decision Making
-| Topic | URL |
-|-------|-----|
-| Check regional availability for Oracle Database@Azure | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-regions |
 
 ### Security
 | Topic | URL |
@@ -49,8 +42,7 @@ This skill requires **network access** to fetch documentation content:
 ### Configuration
 | Topic | URL |
 |-------|-----|
-| Configure onboarding for Oracle Database@Azure deployments | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/onboard-oracle-database |
-| Plan Oracle Database@Azure virtual network topology | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan |
+| Plan and configure networking for Oracle AI Database@Azure | https://learn.microsoft.com/en-us/azure/oracle/oracle-db/oracle-database-network-plan |
 
 ### Integrations & Coding Patterns
 | Topic | URL |

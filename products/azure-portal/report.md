@@ -33,8 +33,8 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 1
-- **Unchanged**: 29
+- **Updated Pages**: 0
+- **Unchanged**: 30
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-portal/azure-portal.csv`
 
@@ -48,11 +48,6 @@ confusable_not_for: Not for Azure Cloud Shell (use azure-cloud-shell), Azure Res
 | *(Unclassified)* | 19 | 63.3% |
 
 ## Changes
-
-### Updated Pages
-
-- [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences)
-  - Updated: 2024-12-13T08:00:00.000Z → 2026-04-07T06:02:00.000Z
 
 ## Classified Pages
 

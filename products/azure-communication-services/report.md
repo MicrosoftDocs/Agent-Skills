@@ -54,9 +54,9 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 - **Unclassified**: 102
 
 ### Incremental Update
-- **New Pages**: 1
-- **Updated Pages**: 2
-- **Unchanged**: 514
+- **New Pages**: 0
+- **Updated Pages**: 0
+- **Unchanged**: 517
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-communication-services/azure-communication-services.csv`
 
@@ -76,17 +76,6 @@ confusable_not_for: Not for Azure AI Bot Service (use azure-bot-service), Azure 
 | *(Unclassified)* | 102 | 19.7% |
 
 ## Changes
-
-### New Pages
-
-- [WhatsApp usernames and BSUIDs](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview)
-
-### Updated Pages
-
-- [Overview](https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview)
-  - Updated: 2025-04-24T11:21:00.000Z → 2026-04-08T22:12:00.000Z
-- [Handle Advanced messaging events](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events)
-  - Updated: 2026-01-12T23:36:00.000Z → 2026-04-08T22:12:00.000Z
 
 ## Classified Pages
 

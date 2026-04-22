@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-05'
+generated_at: '2026-04-19'
 category_descriptions:
   security: 'Securing Batch accounts and pools: auth with Entra ID/managed identities,
     keys and CMK encryption, RBAC and policy, private endpoints/network perimeters,
@@ -12,9 +12,9 @@ category_descriptions:
   integrations: 'Using Azure Batch programmatically and via CLI/PowerShell: SDK patterns
     (JavaScript, .NET, Linux workloads), storing task output in Storage, and adding
     telemetry with Application Insights.'
-  decision-making: Guidance on choosing VM sizes, images, Spot/ephemeral options,
-    cost planning, and migration paths (custom images, low-priority to Spot, node
-    comms) for Azure Batch pools.
+  decision-making: Guidance on choosing VM sizes/images, using Spot VMs, managing
+    Batch costs, and deciding/migrating between custom image options, Compute Gallery,
+    and simplified node communication.
   best-practices: Performance, scaling, scheduling, security, and data/output best
     practices for designing, monitoring, and optimizing large or specialized Azure
     Batch workloads (MPI, rendering, high task counts).
@@ -30,13 +30,12 @@ category_descriptions:
 skill_description: Expert knowledge for Azure Batch development including troubleshooting,
   best practices, decision making, architecture & design patterns, limits & quotas,
   security, configuration, integrations & coding patterns, and deployment. Use when
-  configuring Batch pools/tasks, autoscale, containerized jobs, SDK/CLI workflows,
-  or render/MPI workloads, and other Azure Batch related development tasks. Not for
-  Azure HDInsight (use azure-hdinsight), Azure Databricks (use azure-databricks),
-  Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines
-  (use azure-virtual-machines).
-use_when: Use when configuring Batch pools/tasks, autoscale, containerized jobs, SDK/CLI
-  workflows, or render/MPI workloads, and other Azure Batch related development tasks.
+  configuring Batch pools/tasks, autoscale, Spot VMs, CI/CD job deployment, or render/MPI
+  workloads, and other Azure Batch related development tasks. Not for Azure HDInsight
+  (use azure-hdinsight), Azure Databricks (use azure-databricks), Azure Kubernetes
+  Service (AKS) (use azure-kubernetes-service), Azure Virtual Machines (use azure-virtual-machines).
+use_when: Use when configuring Batch pools/tasks, autoscale, Spot VMs, CI/CD job deployment,
+  or render/MPI workloads, and other Azure Batch related development tasks.
 confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databricks
   (use azure-databricks), Azure Kubernetes Service (AKS) (use azure-kubernetes-service),
   Azure Virtual Machines (use azure-virtual-machines).
@@ -45,17 +44,17 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 
 ## Summary
 
-- **Total Pages**: 114
-- **Fetched**: 114
+- **Total Pages**: 113
+- **Fetched**: 113
 - **Fetch Failed**: 0
-- **Classified**: 83
+- **Classified**: 82
 - **Unclassified**: 31
 
 ### Incremental Update
 - **New Pages**: 0
-- **Updated Pages**: 0
-- **Unchanged**: 114
-- **Deleted Pages**: 0
+- **Updated Pages**: 1
+- **Unchanged**: 112
+- **Deleted Pages**: 1
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-batch/azure-batch.csv`
 
 ## Classification Statistics
@@ -64,16 +63,25 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 |------|-------|------------|
 | architecture-patterns | 2 | 1.8% |
 | best-practices | 10 | 8.8% |
-| configuration | 35 | 30.7% |
-| decision-making | 8 | 7.0% |
+| configuration | 35 | 31.0% |
+| decision-making | 7 | 6.2% |
 | deployment | 2 | 1.8% |
-| integrations | 7 | 6.1% |
+| integrations | 7 | 6.2% |
 | limits-quotas | 1 | 0.9% |
-| security | 15 | 13.2% |
-| troubleshooting | 3 | 2.6% |
-| *(Unclassified)* | 31 | 27.2% |
+| security | 15 | 13.3% |
+| troubleshooting | 3 | 2.7% |
+| *(Unclassified)* | 31 | 27.4% |
 
 ## Changes
+
+### Updated Pages
+
+- [Use Azure Spot VMs](https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms)
+  - Updated: 2026-02-24T18:11:00.000Z → 2026-04-14T22:21:00.000Z
+
+### Deleted Pages
+
+- ~~Low-priority virtual machines~~ (https://learn.microsoft.com/en-us/azure/batch/low-priority-vms-retirement-migration-guide)
 
 ## Classified Pages
 
@@ -91,12 +99,10 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Configure managed identities](https://learn.microsoft.com/en-us/azure/batch/managed-identity-pools) | security | 0.80 | Details Batch-specific Identity property usage to attach user-assigned managed identities and obtain tokens for Azure resources. |
 | [Create a simplified node communication pool without public IP addresses](https://learn.microsoft.com/en-us/azure/batch/simplified-node-communication-pool-no-public-ip) | configuration | 0.80 | Describes Batch-specific requirements (simplified communication, region support) and configuration for pools without public IP addresses. |
 | [Enable certificate rotation](https://learn.microsoft.com/en-us/azure/batch/automatic-certificate-rotation) | security | 0.80 | Explains how to use user-assigned managed identities and Key Vault to automatically renew certificates in Batch pools. |
-| [Low-priority virtual machines](https://learn.microsoft.com/en-us/azure/batch/low-priority-vms-retirement-migration-guide) | decision-making | 0.80 | Migration guide with specific retirement dates and system-initiated migration behavior; helps decide and plan migration from low-priority to Spot VMs. |
 | [Microsoft Entra ID with Batch Management](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth-management) | security | 0.80 | Provides concrete guidance for authenticating Batch Management operations via MSAL/Entra ID with product-specific scopes and flows. |
 | [Microsoft Entra ID with Batch service](https://learn.microsoft.com/en-us/azure/batch/batch-aad-auth) | security | 0.80 | Details Batch-specific Entra ID auth patterns (integrated vs service principal) and how they apply to Batch service APIs. |
 | [Mount a virtual file system](https://learn.microsoft.com/en-us/azure/batch/virtual-file-mount) | configuration | 0.80 | Provides Batch-specific configuration for mounting cloud or external file systems via the Management .NET library, plus troubleshooting guidance. |
 | [Security best practices](https://learn.microsoft.com/en-us/azure/batch/security-best-practices) | best-practices | 0.80 | Security-focused best-practices article with concrete guidance on securing Batch accounts, pools, and networking; product-specific recommendations. |
-| [Use Azure Spot VMs](https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms) | decision-making | 0.80 | Explains trade-offs, availability, and preemption behavior of Spot VMs for Batch, guiding cost vs reliability decisions. |
 | [VHD and Managed Images](https://learn.microsoft.com/en-us/azure/batch/batch-custom-image-pools-to-azure-compute-gallery-migration-guide) | decision-making | 0.80 | Migration guide with concrete timelines and guidance on moving from VHD/Managed Images to Azure Compute Gallery; supports migration decisions and steps. |
 | [Configure access to compute nodes](https://learn.microsoft.com/en-us/azure/batch/pool-endpoint-configuration) | configuration | 0.78 | Describes product-specific endpoint configuration for SSH/RDP on Batch pool nodes, including default ports, API version–dependent behavior, and changes after a specific date. This is concrete, service-specific configuration knowledge (endpoint/port behavior and mapping rules) that goes beyond generic concepts. |
 | [Create a pool in a virtual network](https://learn.microsoft.com/en-us/azure/batch/batch-virtual-network) | configuration | 0.75 | Provides Batch-specific VNet configuration requirements and settings for pool subnets and connectivity. |
@@ -144,6 +150,7 @@ confusable_not_for: Not for Azure HDInsight (use azure-hdinsight), Azure Databri
 | [Use private endpoints with Batch accounts](https://learn.microsoft.com/en-us/azure/batch/private-connectivity) | security | 0.70 | Describes product-specific network security configuration for Batch using Private Link and private endpoints, including required subnet and access behavior details. |
 | [Use simplified compute node communication](https://learn.microsoft.com/en-us/azure/batch/simplified-compute-node-communication) | configuration | 0.70 | Describes Batch-specific communication modes and required network configuration (NSGs, rules) for simplified mode. |
 | [User accounts for running tasks](https://learn.microsoft.com/en-us/azure/batch/batch-user-accounts) | configuration | 0.70 | Describes concrete Batch-specific user account types and how to configure them for tasks, including properties/flags that control elevation and isolation. These are product-specific configuration details beyond generic OS accounts. |
+| [Use Azure Spot VMs](https://learn.microsoft.com/en-us/azure/batch/batch-spot-vms) | decision-making | 0.68 | The page discusses trade-offs of using Spot VMs for Azure Batch, including when workloads are suitable or not due to eviction risk and surplus capacity variability. It provides product-specific guidance on choosing Spot vs regular VMs for different workload characteristics, which aligns with decision-making criteria, even though it may not include strict numeric limits. |
 | [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/batch/policy-reference) | security | 0.65 | Indexes Batch-specific Azure Policy built-in definitions, which are concrete governance/security controls and policy names unique to this service. |
 | [Batch analytics](https://learn.microsoft.com/en-us/azure/batch/batch-analytics) | configuration | 0.65 | Provides reference information for Batch analytics events and alerts, including event schemas and categories, which are service-specific monitoring/diagnostic details. |
 | [Count resources by state](https://learn.microsoft.com/en-us/azure/batch/batch-get-resource-counts) | best-practices | 0.65 | Describes Batch-specific operations like Get Task Counts and how to use them instead of list queries, which are concrete product features and usage patterns. |

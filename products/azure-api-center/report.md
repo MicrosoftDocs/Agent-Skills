@@ -1,5 +1,5 @@
 ---
-generated_at: '2026-04-12'
+generated_at: '2026-04-19'
 category_descriptions:
   security: Configuring API authorization schemes for APIs in API Center and managing
     who can access the API Center portal via the VS Code extension
@@ -30,16 +30,16 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 ## Summary
 
-- **Total Pages**: 35
-- **Fetched**: 35
+- **Total Pages**: 36
+- **Fetched**: 36
 - **Fetch Failed**: 0
 - **Classified**: 19
-- **Unclassified**: 16
+- **Unclassified**: 17
 
 ### Incremental Update
-- **New Pages**: 0
-- **Updated Pages**: 2
-- **Unchanged**: 33
+- **New Pages**: 1
+- **Updated Pages**: 0
+- **Unchanged**: 35
 - **Deleted Pages**: 0
 - **Compared With**: `/home/vsts/work/1/s/Agent-Skills/products/azure-api-center/azure-api-center.csv`
 
@@ -47,21 +47,18 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| best-practices | 1 | 2.9% |
-| configuration | 7 | 20.0% |
-| deployment | 3 | 8.6% |
-| integrations | 6 | 17.1% |
-| security | 2 | 5.7% |
-| *(Unclassified)* | 16 | 45.7% |
+| best-practices | 1 | 2.8% |
+| configuration | 7 | 19.4% |
+| deployment | 3 | 8.3% |
+| integrations | 6 | 16.7% |
+| security | 2 | 5.6% |
+| *(Unclassified)* | 17 | 47.2% |
 
 ## Changes
 
-### Updated Pages
+### New Pages
 
-- [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server)
-  - Updated: 2026-02-25T06:24:00.000Z → 2026-04-02T08:00:00.000Z
-- [Enable and customize API Center portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal)
-  - Updated: 2026-02-26T23:12:00.000Z → 2026-04-02T08:00:00.000Z
+- [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace)
 
 ## Classified Pages
 
@@ -101,6 +98,7 @@ confusable_not_for: Not for Azure API Management (use azure-api-management), Azu
 | [Create an API center - portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center) | 0.30 | Quickstart for creating an API Center via portal; primarily step-by-step UI guidance, not configuration reference or limits. |
 | [Overview](https://learn.microsoft.com/en-us/azure/api-center/agent-to-agent-overview) | 0.30 | Agent registry overview; primarily conceptual description of capabilities and scenarios. |
 | [Enable and customize API Center portal](https://learn.microsoft.com/en-us/azure/api-center/set-up-api-center-portal) | 0.20 | Page explains how to set up and customize the API Center portal. The summary indicates a setup/customization walkthrough, not detailed configuration reference (no parameter tables with defaults), limits, troubleshooting codes, or decision criteria. It is primarily a step-by-step portal setup guide, so it does not meet the expert-knowledge thresholds for any sub-skill type. |
+| [Enable plugin marketplace](https://learn.microsoft.com/en-us/azure/api-center/enable-api-center-plugin-marketplace) | 0.20 | From the summary, the page is a how-to for enabling a plugin marketplace endpoint and integrating it with tools like GitHub Copilot or Claude Code. It does not clearly indicate the presence of configuration parameter tables, limits, error codes, or other detailed product-specific settings that meet the expert-knowledge criteria for any sub-skill type. It appears to be a feature enablement/tutorial-style article rather than a deep configuration, limits, or troubleshooting reference. |
 | [Frequently asked questions](https://learn.microsoft.com/en-us/azure/api-center/frequently-asked-questions) | 0.20 | FAQ-style content; summary suggests general Q&A without detailed error codes, limits, or configuration tables. |
 | [Register and discover MCP servers](https://learn.microsoft.com/en-us/azure/api-center/register-discover-mcp-server) | 0.20 | Page describes how to register and discover MCP servers in Azure API Center, but from the summary it appears to be a procedural/overview article without specific limits, configuration parameter tables, error-code-based troubleshooting, or decision matrices. It reads as a how-to/tutorial for using the portal rather than expert reference content. |
 | [Register and discover skills](https://learn.microsoft.com/en-us/azure/api-center/register-discover-skills) | 0.20 | Appears to be a conceptual/how-to guide for registering skills in API Center, without clear indication of detailed configuration tables, limits, or error-code-based troubleshooting. Likely more procedural than reference-style expert knowledge. |
